@@ -17,6 +17,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JRadioButton;
 import javax.swing.JTabbedPane;
+import javax.swing.ToolTipManager;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
@@ -26,17 +27,23 @@ public class AaRightOptionsPanel extends JTabbedPane implements ChangeListener {
 
 	private static final long serialVersionUID = 1L;
 
-	public AaropPreferences ropPreferences;
-	public AaRopDealChoices ropDealChoices;
+	public AaRopPrefs1_DealChoices p1_DealChoices;
+	public AaRopPrefs2_SeatChoice p2_SeatChoice;
+	public AaRopPrefs3_AutoPlay p3_AutoPlay;
+	public AaRopPrefs4_StartUp p4_StartUp;
 
 	AaRightOptionsPanel() { /* Constructor */
 
 		addChangeListener(this);
-		ropPreferences = new AaropPreferences();
-		ropDealChoices = new AaRopDealChoices();
-		addTab("Deal Choices", ropDealChoices);
-		addTab("Preferences", ropPreferences);
-
+		p1_DealChoices = new AaRopPrefs1_DealChoices();
+		p2_SeatChoice = new AaRopPrefs2_SeatChoice();
+		p3_AutoPlay = new AaRopPrefs3_AutoPlay();
+		p4_StartUp = new AaRopPrefs4_StartUp();
+		addTab("Deal Choices", null, p1_DealChoices, "What shape of hand do you want to be delt?  ");
+		addTab("Seat", null, p2_SeatChoice, "Seat Choice  -  Play or Defend  (Play recommended)  ");
+		addTab("AutoPlay", null, p3_AutoPlay, "Pause at end of trick  and  AutoPlay  options   ");
+		addTab("Start Up", null, p4_StartUp, "Start Up,  Button Display  and  Saved file Clean Up  options  ");
+		ToolTipManager.sharedInstance().setDismissDelay(12000);
 	}
 
 	public void stateChanged(ChangeEvent e) {

@@ -8,15 +8,16 @@
  * Contributors:
  *     Roger Pfister - initial API and implementation
  ******************************************************************************/
-package version;
+package com.rogerpf.aabridge.model;
 
-//@formatter:off
+public class Qstr_2nd {
 
-public class Version {
+	static void act(Strategy stra, Gather g) {
+		// Hand h = g.hand;
+		// ****************************** STRATEGY - 2nd 2nd 2nd Declarer and Dummy (index 1) ******************************
 
-	public static String v = "    ver 1.0.4.1216    built on   2013 June 16"; // <=============== Version
+		Qstr_3rd.act(stra, g);
 
-	// 2013-06-16  1216  With INNO installer
-	
-	
+	}
+
 }

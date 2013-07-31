@@ -31,6 +31,7 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener {
 
 	JSlider bidSpeed;
 	JSlider playSpeed;
+	JSlider eotDelay;
 
 	public AaLowerOptionsPanel() {
 		setLayout(new MigLayout("insets 0 0 0 0, gap 0! 0!, flowy ", "5[]30[]", "5[center][center]"));
@@ -52,19 +53,37 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener {
 		playSpeed.setLabelTable(labTab);
 		playSpeed.setPaintLabels(true);
 		playSpeed.setValue(pluseToPercent(App.playPluseTimerMs));
+
+		Hashtable<Integer, JLabel> labTab2 = new Hashtable<Integer, JLabel>();
+		labTab2.put(new Integer(0), new JLabel("No extra"));
+		labTab2.put(new Integer(9), new JLabel("Longer"));
+
+		add(new JLabel("End of Trick Pause"), "center");
+		add(eotDelay = new JSlider(JSlider.HORIZONTAL), "wrap");
+		eotDelay.addChangeListener(this);
+		eotDelay.setInverted(true);
+		eotDelay.setLabelTable(labTab2);
+		eotDelay.setPaintLabels(true);
+		eotDelay.setValue(App.eotExtendedDisplay);
+		eotDelay.setMinimum(0);
+		eotDelay.setMaximum(9);
+
 	}
 
 	public void stateChanged(ChangeEvent e) {
 
 		JSlider source = (JSlider) e.getSource();
 
-		int pluse = percentToPluse(source.getValue());
-
 		if (source == bidSpeed) {
+			int pluse = percentToPluse(source.getValue());
 			App.bidPluseTimerMs = pluse;
 		}
 		else if (source == playSpeed) {
+			int pluse = percentToPluse(source.getValue());
 			App.playPluseTimerMs = pluse;
+		}
+		else if (source == eotDelay) {
+			App.eotExtendedDisplay = source.getValue();
 		}
 	}
 

@@ -13,6 +13,7 @@ package com.rogerpf.aabridge.controller;
 import java.util.prefs.Preferences;
 
 import com.rogerpf.aabridge.model.Deal;
+import com.rogerpf.aabridge.model.Zzz;
 import com.rogerpf.aabridge.view.AaOuterFrame;
 import com.rogerpf.aabridge.view.GreenBaizePanel;
 
@@ -22,8 +23,13 @@ import com.rogerpf.aabridge.view.GreenBaizePanel;
  */
 public class App {
 
+	public static String autoSavesPath;
+	public static String quickSavesPath;
 	public static String savesPath;
-	static String dealExt = "aaBridge";
+	public static String testsPath;
+	public static String resultsPath;
+	public static String dealExt = "aaBridge";
+	public static String dotDealExt = '.' + dealExt;
 	
 	static int mode = Aaa.NORMAL;
 	
@@ -77,61 +83,14 @@ public class App {
 
 	/**   
 	 */
-	static public void setEwVisible(boolean visible) {
-		visCards = visCardsOpts[(visible) ? Aaa.VisC__SHOW_ALL : Aaa.VisC__SHOW_NS_ONLY];
+	static public void calcCompassPhyOffset() {
+		compassPhyOffset = (App.showDeclarerInSouthZone && (!App.deal.isBidding() && (App.deal.contract != App.deal.PASS))) 
+			? ((App.deal.contractCompass - Zzz.South)+4) % 4 : 0;
 	};
+	
 
-	/**   
-	 */
-	static public boolean isEwVisible() {
-		return (visCards == visCardsOpts[Aaa.VisC__SHOW_ALL]);  
-	};
-
-	/**   
-	 */
-	static public void setEwVisibleOnFinishedState() {
-		setEwVisible(App.deal.isFinished());
-	};
-
-	private static int compassPhyOffset = 0; // 0 to 3
-           
-	
-	public static boolean visCardsOptsAlways[][] = {
-		{true,  true,  true,  true},   
-	    {true,  true,  true,  true}    
-		};
-	public static boolean visCardsOptsStandard[][] = {
-		{true,  false, true, false},   
-	    {true,  true,  true, true }    
-		};
-	public static boolean visCardsOpts[][] = {
-		{true,  false, true, false},    // 0 show N S only 
-	    {true,  true,  true, true }     // 1  show all
-		};
-	public static boolean visCards[] = visCardsOpts[Aaa.VisC__SHOW_NS_ONLY]; 
-	
-	
-	public static boolean autoBidOptsAll[][] = {
-		{false, false, false, false},
-		{true,  true,  true, true },  
-		};
-	public static boolean autoBidOptsStd[][] = {  
-		{false, false, false, false},  
-		{true,  true,  false, true }, 
-	};
-	public static boolean autoBidOpts[][] = { // nesw
-		{false, false, false, false},  // 0  NONE
-		{true,  true,  false, true },  // 1  ALL_BUT_SOUTH  
-		};
-	public static boolean autoBid[] = autoBidOpts[Aaa.ABid__ALL_BUT_SOUTH];
-	
-	
-	public static boolean autoPlayOptions[][] = { // nesw
-		{false, false, false, false},  // 0  NONE
-		{false, true,  false, true },  // 1  EW_ONLY  
-		};
-	public static boolean autoPlay[] = autoPlayOptions[Aaa.APlay__EW_ONLY];
-	
+	private static int compassPhyOffset = 0; // 0 to 3	
+	public static boolean localShowHidden = false;
 	
 	//************* Preferences that are saved and restored - start *****************
 	public static int frameLocationX = 75;
@@ -146,69 +105,112 @@ public class App {
 	
 	public static boolean showBidPlayMsgs = true;
 	public static boolean showWelcome = true;
-	public static boolean alwaysShowEW = false;
+	public static boolean alwaysShowHidden = false;
 	public static boolean showPoints = false;
-	public static boolean nsAutoAdjacent = true;
+	public static boolean showLTC = false;
+	public static boolean youAutoAdjacent = true;
 
-	public static boolean nsAutoSingletons = false;
+	public static boolean youAutoSingletons = false;
 
-	public static boolean nsAutoplayAlways = false;
-	public static boolean nsAutoplayPause = false;
+	public static boolean youAutoplayAlways = false;
+	public static boolean youAutoplayPause = true;
+	public static boolean youDeclarerPause = true;
+	public static boolean youDefenderPause = true;
 	
-	public static boolean nsFinessesMostlyFail = false;
+	public static boolean yourFinnessesMostlyFail = false;
            
+	public static boolean showEditPlay2Btn = false;
+	public static boolean deleteQuickSaves = false;
+	public static boolean deleteAutoSaves = false;
 	public static boolean showRotationBtns = false;
+	public static boolean showPlayAgain = true;
+	public static boolean showEasySave  = true;
 	public static boolean fillHandDisplay = false;
-	public static boolean unusedRPanelT = false;
-	public static boolean unusedRPanelV = false;
+	public static boolean startWithDoneHand = false;
+	public static boolean runTestsAtStartUp = false;
+	public static boolean showTestsLogAtEnd = true;
 	
-	public static String dealCriteria = "userBids";
+	public static String dealCriteria = "twoSuitSlam_E";
 	public static boolean watchBidding = true;
 
-
+	public static int eotExtendedDisplay = 2;
+	
 	public static int playPluseTimerMs = 600;
 	public static int bidPluseTimerMs = 750;
+	public static int finalCardTimerMs = 1200;
+	
+	public static int     youSeatForNewDeal = Zzz.South;  
+	
+	public static boolean showDeclarerInSouthZone = true;  // not (yet) saved or setable
+	
+	public static final int scoringFollowsYou = 0;     
+	public static final int scoringFollowsDeclarer = 1;     
+	public static final int scoringFollowsSouthZone = 2;     
+	public static int     scoringFollows   = scoringFollowsYou;    // not (yet) saved or setable
+	
+
 	//************* Preferences that are saved and restored - end   *****************
 	
 
 	public static void loadPreferences() {
 		Preferences appPrefs = Preferences.userRoot().node("com.rogerpf.aabridge.prefs");
 
-		frameLocationX   = appPrefs.getInt("frameLocationX", 150);
-		frameLocationY   = appPrefs.getInt("frameLocationY", 100);
-		frameWidth       = appPrefs.getInt("frameWidth", 720);
-		frameHeight      = appPrefs.getInt("frameHeight", 500);
-		maximized        = appPrefs.getBoolean("maximized",        false);
-		horzDividerLocation = appPrefs.getInt("horzDividerLocation", 99999);
-		vertDividerLocation = appPrefs.getInt("vertDividerLocation", 99999);
-		ropSelPrevTabIndex	= appPrefs.getInt("ropSelectedTabIndex", 0);	
+		frameLocationX     = appPrefs.getInt("frameLocationX", 150);
+		frameLocationY     = appPrefs.getInt("frameLocationY", 100);
+		frameWidth         = appPrefs.getInt("frameWidth", 720);
+		frameHeight        = appPrefs.getInt("frameHeight", 500);
+		maximized          = appPrefs.getBoolean("maximized",        false);
+		horzDividerLocation= appPrefs.getInt("horzDividerLocation", 99999);
+		vertDividerLocation= appPrefs.getInt("vertDividerLocation", 99999);
+		ropSelPrevTabIndex = appPrefs.getInt("ropSelectedTabIndex", 0);	
 		
-		showWelcome      = appPrefs.getBoolean("showWelcome",      true);
-		showBidPlayMsgs  = appPrefs.getBoolean("showBidPlayMsgs",  true);
-		showPoints       = appPrefs.getBoolean("showPoints",       false);
-		nsAutoSingletons = appPrefs.getBoolean("nsAutoSingletons", false);
-		nsAutoAdjacent   = appPrefs.getBoolean("nsAutoAdjacent",   true);
+		showWelcome        = appPrefs.getBoolean("showWelcome",      true);
+		showBidPlayMsgs    = appPrefs.getBoolean("showBidPlayMsgs",  true);
+		showPoints         = appPrefs.getBoolean("showPoints",       false);
+		showLTC            = appPrefs.getBoolean("showLTC",          false);
+		youAutoSingletons  = appPrefs.getBoolean("youAutoSingletons", false);
+		youAutoAdjacent    = appPrefs.getBoolean("youAutoAdjacent",   true);
 		
-		nsFinessesMostlyFail = appPrefs.getBoolean("nsFinessesMostlyFail", false);
+		yourFinnessesMostlyFail = appPrefs.getBoolean("yourFinnessesMostlyFail", false);
 
-		alwaysShowEW     = appPrefs.getBoolean("alwaysShowEW",     false);
-		nsAutoplayAlways = appPrefs.getBoolean("nsAutoplayAlways", false);
-		nsAutoplayPause  = appPrefs.getBoolean("nsAutoplayPause",  true);
-		showRotationBtns = appPrefs.getBoolean("showRotationBtns", false);
-		//fillHandDisplay  = appPrefs.getBoolean("fillHandDisplay", false); - not saved or restored
-		unusedRPanelT    = appPrefs.getBoolean("unusedRPanelT",    false);
-		unusedRPanelV    = appPrefs.getBoolean("unusedRPanelV",   false);
+		alwaysShowHidden   = appPrefs.getBoolean("alwaysShowHidden", false);
+		youAutoplayAlways  = appPrefs.getBoolean("youAutoplayAlways", false);
+		youAutoplayPause   = appPrefs.getBoolean("youAutoplayPause",  true);
+		youDeclarerPause   = appPrefs.getBoolean("youDeclarerPause",  true);
+		youDefenderPause   = appPrefs.getBoolean("youDefenderPause",  true);
+		showEditPlay2Btn   = appPrefs.getBoolean("showEditPlay2Btn", false);
+		showRotationBtns   = appPrefs.getBoolean("showRotationBtns", false);
+		showEasySave       = appPrefs.getBoolean("showEasySave",     false);
+		showPlayAgain      = appPrefs.getBoolean("showPlayAgain",    false);
+		deleteQuickSaves   = appPrefs.getBoolean("deleteQuickSaves", true);
+		deleteAutoSaves    = appPrefs.getBoolean("deleteAutoSaves",  true);
+		//fillHandDisplay    = appPrefs.getBoolean("fillHandDisplay", false); - not saved or restored
+		startWithDoneHand  = appPrefs.getBoolean("startWithDoneHand",false);
+		runTestsAtStartUp  = appPrefs.getBoolean("runTestsAtStartUp",false);
+		showTestsLogAtEnd  = appPrefs.getBoolean("showTestsLogAtEnd",true);
 		
-		playPluseTimerMs = appPrefs.getInt("playPluseTimerMs", 600);
-		bidPluseTimerMs  = appPrefs.getInt("bidPluseTimerMs",  750);
-		dealCriteria     = appPrefs.get("dealCriteria",      "twoSuitSlam_E");
-		dealCriteria     = Deal.validateDealCriteria( dealCriteria);
+		playPluseTimerMs   = appPrefs.getInt("playPluseTimerMs", 600);
+		bidPluseTimerMs    = appPrefs.getInt("bidPluseTimerMs",  750);
+		eotExtendedDisplay = appPrefs.getInt("eotExtendedDisplay",  2);
+		youSeatForNewDeal  = appPrefs.getInt("youSeatForNewDeal",  Zzz.South);
+		dealCriteria       = appPrefs.get("dealCriteria",  "twoSuitSlam_M1");
+		dealCriteria       = Deal.validateDealCriteria( dealCriteria);
 		
-		watchBidding     = appPrefs.getBoolean("watchBidding",  true);
+		watchBidding       = appPrefs.getBoolean("watchBidding",  true);
 
-		implement_alwaysShowEW();
         implement_showRotationBtns();
-        setAutoBidOpts();
+        implement_showEasySave();
+        implement_showPlayAgain();
+	}
+	
+	public static boolean isPauseAtEotClickWanted() {	
+		return      (youAutoplayAlways && youAutoplayPause)
+			   ||  
+			         !youAutoplayAlways 
+			   && (   youDeclarerPause && deal.isYouSeatDeclarerAxis() && (deal.countCardsPlayed() > 0)
+				    || youDefenderPause && deal.isYouSeatDefenderAxis() && (deal.countCardsPlayed() > 0)
+				    )
+				   ;
 	}
 
 	public static void savePreferences() {
@@ -223,38 +225,71 @@ public class App {
 		appPrefs.putInt("vertDividerLocation", vertDividerLocation);
 		appPrefs.putInt("ropSelectedTabIndex", ropSelectedTabIndex);
 		
-		appPrefs.putBoolean("showWelcome",      showWelcome);
-		appPrefs.putBoolean("showBidPlayMsgs",  showBidPlayMsgs);
-		appPrefs.putBoolean("alwaysShowEW",     alwaysShowEW);
-		appPrefs.putBoolean("showPoints",       showPoints);
-		appPrefs.putBoolean("nsAutoSingletons", nsAutoSingletons);
-		appPrefs.putBoolean("nsAutoAdjacent",   nsAutoAdjacent);
+		appPrefs.putBoolean("showWelcome",       showWelcome);
+		appPrefs.putBoolean("showBidPlayMsgs",   showBidPlayMsgs);
+		appPrefs.putBoolean("alwaysShowHidden",  alwaysShowHidden);
+		appPrefs.putBoolean("showPoints",        showPoints);
+		appPrefs.putBoolean("showLTC",           showLTC);
+		appPrefs.putBoolean("youAutoSingletons", youAutoSingletons);
+		appPrefs.putBoolean("youAutoAdjacent",   youAutoAdjacent);
 		
-		appPrefs.putBoolean("nsFinessesMostlyFail", nsFinessesMostlyFail);
+		appPrefs.putBoolean("yourFinnessesMostlyFail", yourFinnessesMostlyFail);
 		
-		appPrefs.putBoolean("nsAutoplayAlways", nsAutoplayAlways);
-		appPrefs.putBoolean("nsAutoplayPause",  nsAutoplayPause);
-		appPrefs.putBoolean("showRotationBtns", showRotationBtns);
-		//appPrefs.putBoolean("fillHandDisplay",  fillHandDisplay);  - not saved or restored
-		appPrefs.putBoolean("unusedRPanelT",    unusedRPanelT);
-		appPrefs.putBoolean("unusedRPanelV",    unusedRPanelV);
+		appPrefs.putBoolean("youAutoplayAlways", youAutoplayAlways);
+		appPrefs.putBoolean("youAutoplayPause",  youAutoplayPause);
+		appPrefs.putBoolean("youDeclarerPause",  youDeclarerPause);
+		appPrefs.putBoolean("youDefenderPause",  youDefenderPause);
+		appPrefs.putBoolean("showEditPlay2Btn",  showEditPlay2Btn);
+		appPrefs.putBoolean("deleteQuickSaves",  deleteQuickSaves);
+		appPrefs.putBoolean("deleteAutoSaves",   deleteAutoSaves);
+		appPrefs.putBoolean("showRotationBtns",  showRotationBtns);
+		appPrefs.putBoolean("showEasySave",      showEasySave);
+		appPrefs.putBoolean("showPlayAgain",     showPlayAgain);
+	  //appPrefs.putBoolean("fillHandDisplay",   fillHandDisplay);  - not saved or restored
+		appPrefs.putBoolean("startWithDoneHand", startWithDoneHand);
+		appPrefs.putBoolean("runTestsAtStartUp", runTestsAtStartUp);
+		appPrefs.putBoolean("showTestsLogAtEnd", showTestsLogAtEnd);
 		
 		appPrefs.putInt("playPluseTimerMs",     playPluseTimerMs);
 		appPrefs.putInt("bidPluseTimerMs",      bidPluseTimerMs);
+		appPrefs.putInt("eotExtendedDisplay",   eotExtendedDisplay);
+		appPrefs.putInt("youSeatForNewDeal",    youSeatForNewDeal);
 		appPrefs.put("dealCriteria",         dealCriteria);
 		appPrefs.putBoolean("watchBidding",      watchBidding);
 	}
 	
 	// @formatter:on
 
-	public static void implement_alwaysShowEW() {
-		visCardsOpts = (App.alwaysShowEW ? App.visCardsOptsAlways : App.visCardsOptsStandard);
-		visCards = App.visCardsOpts[(App.alwaysShowEW ? Aaa.VisC__SHOW_ALL : Aaa.VisC__SHOW_NS_ONLY)];
+	public static void implement_youAutoplayAlways() {
+		if (allConstructionComplete) {
+			if (App.mode == Aaa.NORMAL && App.youAutoplayAlways) {
+				App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
+			}
+			App.gbp.matchPanelsToDealState();
+		}
 	}
 
 	public static void implement_showRotationBtns() {
 		if (allConstructionComplete) {
 			App.gbp.c0_0__tlp.setRotationBtnsVisibility();
+		}
+	}
+
+	public static void implement_showEasySave() {
+		if (allConstructionComplete) {
+			App.gbp.c0_0__tlp.setEasySaveVisibility();
+		}
+	}
+
+	public static void implement_showPlayAgain() {
+		if (allConstructionComplete) {
+			App.gbp.c0_0__tlp.setPlayAgainVisibility();
+		}
+	}
+
+	public static void implement_showEditPlay2Btn() {
+		if (allConstructionComplete) {
+			App.gbp.matchPanelsToDealState();
 		}
 	}
 
@@ -264,22 +299,24 @@ public class App {
 		}
 	}
 
-	public static void setAutoBidOpts() {
-		autoBidOpts = (Deal.southBiddingRequired(App.dealCriteria) ? App.autoBidOptsStd : App.autoBidOptsAll);
-		autoBid = App.autoBidOpts[Aaa.ABid__ALL_BUT_SOUTH];
+	/**   
+	 */
+	public static boolean isFilenameThrowAway(String filename) {
+		// ************************************************************************
+		return filename == null || filename.isEmpty() || filename.contains("__Your_text_here_");
 	}
 
 	/**   
 	 */
 	public static boolean isMode(int modeV) {
+		// ************************************************************************
 		return (mode == modeV);
 	};
 
 	/** 
-	 *   
 	 */
 	static public void setMode(int newMode) {
-
+		// ************************************************************************
 		if (/* old */mode == Aaa.EDIT_BIDDING) {
 			if (newMode == Aaa.NORMAL) {
 				; // do nothing
@@ -300,9 +337,7 @@ public class App {
 		switch (mode) {
 
 		case Aaa.NORMAL:
-			autoBid = autoBidOpts[Aaa.ABid__ALL_BUT_SOUTH];
-			autoPlay = autoPlayOptions[Aaa.APlay__EW_ONLY];
-			App.setEwVisibleOnFinishedState();
+			App.localShowHidden = false;
 			App.gbp.c2_2__bbp.startAutoBidDelayTimerIfNeeded();
 			App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
 			break;
@@ -317,31 +352,122 @@ public class App {
 			break;
 
 		case Aaa.EDIT_CHOOSE:
-			App.setEwVisible(true);
 			break;
 
 		case Aaa.EDIT_HANDS:
-			App.setEwVisible(true);
 			break;
 
 		case Aaa.EDIT_BIDDING:
 			App.deal.wipeContractAndPlay();
 			App.deal.removeAnyFinalPasses();
-			autoBid = autoBidOpts[Aaa.ABid__NONE];
-			App.setEwVisible(true);
 			break;
 
 		case Aaa.EDIT_PLAY:
 			App.deal.finishBiddingIfIncomplete();
-			autoPlay = autoPlayOptions[Aaa.APlay__NONE];
 			App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
-			App.setEwVisible(true);
 			break;
 		}
 
 		App.gbp.matchPanelsToDealState();
 	};
 
+	/**   
+	 */
+	static public boolean isModeAnyEdit() {
+		// ************************************************************************
+		return (mode >= Aaa.EDIT_CHOOSE /* includes all edit modes */);
+	}
+
+	/**   
+	 */
+	static public boolean isSeatVisible(int compass) {
+		// ************************************************************************
+		if (alwaysShowHidden || (mode >= Aaa.EDIT_CHOOSE /* includes all edit modes */)) {
+			return true;
+		}
+
+		if ((mode == Aaa.NORMAL) && App.deal.isFinished() || ((mode == Aaa.REVIEW_BIDDING || mode == Aaa.REVIEW_PLAY) && localShowHidden)) {
+			return true;
+		}
+
+		boolean declarerValid = App.deal.isDeclarerValid();
+		int youSeatHint = App.deal.youSeatHint;
+		int youSeatHintAxis = youSeatHint % 2;
+		int compassAxis = compass % 2;
+
+		if (!declarerValid) {
+			if (compassAxis == Zzz.NS && youSeatHintAxis == Zzz.NS)
+				return true;// yes for both North and South
+			else
+				return compass == youSeatHint;
+		}
+
+		int declarer = App.deal.contractCompass;
+		int dummy = (declarer + 2) % 4;
+		int youSeat = (youSeatHint == dummy) ? declarer : youSeatHint;
+
+		if (compass == youSeat)
+			return true;
+
+		if (compass == dummy) {
+			if (youSeat == declarer && App.youAutoplayAlways)
+				return true; // we need to see the full two hands before play starts
+			return App.deal.countCardsPlayed() > 0;
+		}
+
+		return false;
+	};
+
+	/**   
+	 */
+	static public boolean isAutoPlay(int compass) {
+		// ************************************************************************
+
+		if ((mode == Aaa.EDIT_HANDS) || (mode == Aaa.EDIT_BIDDING) || (mode == Aaa.EDIT_PLAY) || !App.deal.isPlaying()) {
+			return false;
+		}
+
+		if (App.youAutoplayAlways) {
+			return true;
+		}
+
+		int youSeatHint = App.deal.youSeatHint;
+		int declarer = App.deal.contractCompass;
+		int dummy = (declarer + 2) % 4;
+		int youSeat = (youSeatHint == dummy) ? declarer : youSeatHint;
+
+		if (compass == youSeat) {
+			return false; // manual play if you are the - youSeat
+		}
+
+		if (compass == dummy && youSeat == declarer) {
+			return false; // manual play if you are the - dummy AND partner of the youSeat
+		}
+
+		return true;
+	};
+
+	/**   
+	 */
+	static public boolean isAutoBid(int compass) {
+		// ************************************************************************
+
+		if ((mode == Aaa.EDIT_HANDS) || (mode == Aaa.EDIT_BIDDING) || (mode == Aaa.EDIT_PLAY) || !App.deal.isBidding()) {
+			return false;
+		}
+
+		int youSeatHint = App.deal.youSeatHint;
+		int compassAxis = compass % 2;
+
+		if (compassAxis == Zzz.NS && App.dealCriteria.contentEquals("userBids")) {
+			// you only bid (AutoBid == false) if you are the youSeatHint
+			return !(compass == youSeatHint);
+		}
+
+		return true;
+	};
+
+	public static String[] args;
 	public static AaOuterFrame frame = null;
 	public static Controller con = new Controller();
 	public static GreenBaizePanel gbp = null;

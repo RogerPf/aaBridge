@@ -97,7 +97,7 @@ public class CompletedTricksPanel extends ClickPanel {
 		 */
 		public void mouseExited(MouseEvent e) {
 			// System.out.println("Mouse Exited WeTheyDisplayPanel");
-			mouseMoved( e);
+			mouseMoved(e);
 		}
 
 		public void mouseClicked(MouseEvent e) {
@@ -164,11 +164,20 @@ public class CompletedTricksPanel extends ClickPanel {
 
 		RoundRectangle2D.Float rr = new RoundRectangle2D.Float();
 
-		// We display the cards as seen by the player in the phypos 'South' seat
-		// (the target)
-
-		int compassTarget = App.deal.hands[App.compassFromPhyScreenPos(Zzz.SOUTH)].compass;
-		int compassPartner = (compassTarget + 2) % 4;
+		// We display the cards as seen by - 'the target'
+		int targetSeat = 0;
+		switch (App.scoringFollows) {
+		case App.scoringFollowsYou:
+			targetSeat = App.deal.getTheYouSeat();
+			break;
+		case App.scoringFollowsDeclarer:
+			targetSeat = App.deal.getDeclarerOrTheDefaultYouSeat();
+			break;
+		case App.scoringFollowsSouthZone:
+			targetSeat = App.deal.hands[App.compassFromPhyScreenPos(Zzz.South)].compass;
+			break;
+		}
+		int targetAxis = targetSeat % 2;
 
 		cardRectsCache.clear();
 
@@ -185,7 +194,7 @@ public class CompletedTricksPanel extends ClickPanel {
 				}
 			}
 
-			boolean won = (winner.compass == compassTarget) || (winner.compass == compassPartner);
+			boolean won = winner.axis() == targetAxis;
 
 			float height = (won) ? cardHeight : cardWidth;
 			float width = (won) ? cardWidth : cardHeight;
@@ -218,24 +227,24 @@ public class CompletedTricksPanel extends ClickPanel {
 		g2.setColor(Color.white);
 		g2.draw(rd);
 
-		// Player Name / Direction (compass) text
+		// Player Direction (compass) text
 		// ------------------------------------------------------------------
 
 		x = scoreLozengeX;
 		y = scoreLozengeY + scoreLozengeHeight * (1.0f - 0.23f);
 
-		int contractLevel = App.deal.contract.getLevelValue();
-		int contractSuit = App.deal.contract.getSuitValue();
+		int contractLevel = App.deal.contract.getLevel();
+		int contractSuit = App.deal.contract.getSuit();
 		int contractCompass = App.deal.contractCompass;
 
-		Font cardFaceFont = BridgeFonts.faceAndSymbFont.deriveFont(scoreLozengeHeight * 0.7f);
-		Font suitSymbolsFont = BridgeFonts.faceAndSymbFont.deriveFont(scoreLozengeHeight * 0.65f);
+		Font cardFaceFont = BridgeFonts.faceAndSymbFont.deriveFont(scoreLozengeHeight * 0.8f);
+		Font suitSymbolsFont = BridgeFonts.faceAndSymbFont.deriveFont(scoreLozengeHeight * 0.70f);
 		Font stdTextFont = BridgeFonts.bridgeLightFont.deriveFont(scoreLozengeHeight * 0.6f);
 		Font scoreFont = BridgeFonts.bridgeBoldFont.deriveFont(scoreLozengeHeight * 0.8f);
 		Font DoubleRedoubleFont = BridgeFonts.bridgeBoldFont.deriveFont(scoreLozengeHeight * 0.80f);
 
 		if (App.deal.contract == App.deal.PASS) {
-			x += scoreLozengeWidth * 0.02f;
+			x += scoreLozengeWidth * 0.01f;
 			g2.setColor(Color.BLACK);
 			g2.setFont(stdTextFont);
 			g2.drawString("Passed Out", x, y);
@@ -244,16 +253,16 @@ public class CompletedTricksPanel extends ClickPanel {
 			x += scoreLozengeWidth * 0.02f;
 			g2.setColor(Color.BLACK);
 			g2.setFont(cardFaceFont);
-			g2.drawString(Zzz.levelValue_to_levelSt[contractLevel] + "", x, y);
+			g2.drawString(Zzz.level_to_levelSt[contractLevel] + "", x, y);
 
-			x += scoreLozengeWidth * 0.055f;
+			x += scoreLozengeWidth * 0.065f;
 			g2.setColor(Aaa.cdhsColors[contractSuit]);
 			g2.setFont(suitSymbolsFont);
-			g2.drawString(Zzz.suitValue_to_cdhsntSt[contractSuit], x, y);
+			g2.drawString(Zzz.suit_to_cdhsntSt[contractSuit], x, y);
 
 			{ // Double and redouble or by
 				g2.setColor(Color.BLACK);
-				float x2 = x + scoreLozengeWidth * 0.11f;
+				float x2 = x + scoreLozengeWidth * 0.12f;
 				String dblRdbl = App.deal.doubleOrRedoubleString();
 				if (dblRdbl.length() > 0) {
 					g2.setFont(DoubleRedoubleFont);
@@ -272,18 +281,24 @@ public class CompletedTricksPanel extends ClickPanel {
 		}
 
 		// Now we do the tricks won so far
-		Point score = App.deal.getContractTrickCountSoFar();
-		int firstPairTrickCount = (App.compassFromPhyScreenPos(Zzz.NORTH) % 2 == 0) ? score.x : score.y;
-		int secondPairTrickCount = (App.compassFromPhyScreenPos(Zzz.NORTH) % 2 == 0) ? score.y : score.x;
-		String firstPair = Zzz.compass_to_ns_ew_st[App.compassFromPhyScreenPos(App.deal.contractCompass)];
-		String secondPair = Zzz.compass_to_ns_ew_st[App.compassFromPhyScreenPos((App.deal.contractCompass + 1) % 4)];
+		Point score = App.deal.getContractTrickCountToTrick(App.isMode(Aaa.REVIEW_PLAY) ? (App.reviewTrick + App.reviewCard / 4) : 999);
+		boolean declareAdj = (targetAxis == (App.deal.contractAxis()));
+		int firstPairTrickCount = declareAdj ? score.x : score.y;
+		int secondPairTrickCount = declareAdj ? score.y : score.x;
+		String firstPair = Zzz.compass_to_ns_ew_st[targetAxis];
+		String secondPair = Zzz.compass_to_ns_ew_st[((targetAxis + 1) % 2)];
+		if ((App.deal.getTheYouSeat() % 2) == targetAxis) {
+			firstPair = "You";
+		}
+		else {
+			secondPair = "You";
+		}
 
-		x = scoreLozengeX + scoreLozengeWidth * 0.46f; // jump to the middle of
-														// the lozenge
+		x = scoreLozengeX + scoreLozengeWidth * 0.43f; // jump to the middle of the lozenge
 		g2.setFont(stdTextFont);
 		g2.drawString(String.format("%s", firstPair), x, y);
 
-		x += scoreLozengeWidth * 0.14f;
+		x += scoreLozengeWidth * 0.15f;
 		g2.setFont(scoreFont);
 		g2.drawString(String.format("%d", firstPairTrickCount), x, y);
 
@@ -295,8 +310,7 @@ public class CompletedTricksPanel extends ClickPanel {
 		g2.setFont(scoreFont);
 		g2.drawString(String.format("%d", secondPairTrickCount), x, y);
 
-		// System.out.println( String.format( "%d    %d", trickRequested,
-		// trickShowing));
+		// System.out.println( String.format( "%d    %d", trickRequested, trickShowing));
 
 		if ((trickRequested == -1) || (trickRequested == trickShowing))
 			return;
@@ -347,8 +361,8 @@ public class CompletedTricksPanel extends ClickPanel {
 			assert (compass == hand.compass);
 
 			Card card = hand.played.get(trickRequested);
-			int suitValue = card.getSuitValue();
-			int faceValue = card.getFaceValue();
+			int suit = card.getSuit();
+			int rank = card.getRank();
 
 			int phyPos = App.phyScreenPosFromCompass(hand.compass);
 			float left = marginLeft + activityWidth * leftTopPercent[phyPos].x + ((float) trickRequested) / 13.0f * activityWidth * 0.52f;
@@ -366,23 +380,23 @@ public class CompletedTricksPanel extends ClickPanel {
 			g2.setPaint(Color.white);
 			g2.fill(rr);
 
-			g2.setColor(Aaa.cdhsWeakColors[suitValue]);
+			g2.setColor(Aaa.cdhsWeakColors[suit]);
 
 			g2.setStroke(new BasicStroke(colorLineWidth * ((hand == trickWinner) ? 1.95f : 1)));
 			g2.draw(rr);
 
 			// Suit Value
 			{
-				g2.setColor(Aaa.cdhsWeakColors[suitValue]);
+				g2.setColor(Aaa.cdhsWeakColors[suit]);
 				g2.setFont(symbolFont);
-				g2.drawString(Zzz.suitValue_to_cdhsntSt[suitValue], symbolLeft, symbolBottom);
+				g2.drawString(Zzz.suit_to_cdhsntSt[suit], symbolLeft, symbolBottom);
 			}
 
 			// Face Value
 			{
-				g2.setColor(Aaa.cdhsColors[suitValue]);
+				g2.setColor(Aaa.cdhsColors[suit]);
 				g2.setFont(faceFont);
-				g2.drawString(Zzz.faceValue_to_faceSt[faceValue] + "", faceLeft, faceBottom);
+				g2.drawString(Zzz.rank_to_rankSt[rank] + "", faceLeft, faceBottom);
 			}
 
 		}

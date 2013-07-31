@@ -11,10 +11,13 @@
 package com.rogerpf.aabridge.view;
 
 import java.awt.AWTEvent;
+import java.awt.Desktop;
 import java.awt.Dimension;
 import java.awt.KeyboardFocusManager;
 import java.awt.Point;
 import java.awt.Toolkit;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.Transferable;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ComponentEvent;
@@ -34,10 +37,12 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JRadioButtonMenuItem;
 import javax.swing.JSplitPane;
+import javax.swing.TransferHandler;
 
-import version.Version;
+import version.VersionAndBuilt;
 
 import com.rogerpf.aabridge.controller.App;
+import com.rogerpf.aabridge.controller.CmdHandler;
 import com.rogerpf.aabridge.model.Deal;
 import com.rpsd.ratiolayout.AspectBoundable;
 import com.rpsd.ratiolayout.PreferredSizeGridLayout;
@@ -69,15 +74,16 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 	// ----------------------------------------
 	public AaOuterFrame() { /* Constructor */
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setTitle("aaBridge" + Version.v);
+
+		setVisible(false); // set true by the timer below
 		java.net.URL imageFileURL = AaOuterFrame.class.getResource("aaBridge_proto_icon.png");
 		setIconImage(Toolkit.getDefaultToolkit().createImage(imageFileURL));
-		
+
 		this.addWindowListener(this);
 		this.addComponentListener(this);
 		App.loadPreferences();
-
-		App.deal = Deal.nextBoard(0, (App.watchBidding == false), App.dealCriteria);
+		
+		App.deal = new Deal(Deal.makeDoneHand, App.youSeatForNewDeal);
 
 		aaDragGlassPane = new AaDragGlassPane(this);
 		setGlassPane(aaDragGlassPane);
@@ -95,32 +101,78 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 		menuBar.add(menu);
 
 		// Open
-		menuItem = new JMenuItem("Open", KeyEvent.VK_O);
-		menuItem.setActionCommand("menuOpen");
-		menuItem.addActionListener(App.con);
-		menu.add(menuItem);
-
-		// Quick Save
-		menuItem = new JMenuItem("Quick Save", KeyEvent.VK_Q);
-		menuItem.setActionCommand("menuQuickSave");
-		menuItem.addActionListener(App.con);
-		menu.add(menuItem);
-
-		// Save
-		menuItem = new JMenuItem("Save", KeyEvent.VK_S);
-		menuItem.setActionCommand("menuSave");
-		menuItem.addActionListener(App.con);
-		menu.add(menuItem);
-
+//		menuItem = new JMenuItem("Open  a Saved Deal  -  you can instead just  'Drag and Drop' .aaBridge files", KeyEvent.VK_O);
+//		menuItem.setActionCommand("menuOpen");
+//		menuItem.addActionListener(App.con);
+//		menu.add(menuItem);
+//
+//		// Save
+//		menuItem = new JMenuItem("Save", KeyEvent.VK_S);
+//		menuItem.setActionCommand("menuSave");
+//		menuItem.addActionListener(App.con);
+//		menu.add(menuItem);
+//
 		// Save As
-		menuItem = new JMenuItem("Save As", KeyEvent.VK_A);
+		menuItem = new JMenuItem("Save As        -  Save the deal,  this is the way you get to choose the file name", KeyEvent.VK_A);
 		menuItem.setActionCommand("menuSaveAs");
 		menuItem.addActionListener(App.con);
 		menu.add(menuItem);
 
-		// Show Saves Folder
-		menuItem = new JMenuItem("Open 'saves' folder and show the contents", KeyEvent.VK_F);
+		// Quick Save
+		menuItem = new JMenuItem("Quick Save  -  Save the deal to the 'saves' folder, using the current time and date in the file name", KeyEvent.VK_Q);
+		menuItem.setActionCommand("menuQuickSave");
+		menuItem.addActionListener(App.con);
+		menu.add(menuItem);
+
+		// Easy Save
+		menuItem = new JMenuItem("Easy Save    -  Save using the file name you last set with 'Save As'", KeyEvent.VK_E);
+		menuItem.setActionCommand("menuEasySave");
+		menuItem.addActionListener(App.con);
+		menu.add(menuItem);
+
+		// Play Again
+		menuItem = new JMenuItem("Again             -  Quick Save to the 'autosaves' folder then wipe the play, for you to play that deal again", KeyEvent.VK_G);
+		menuItem.setActionCommand("menuPlayAgain");
+		menuItem.addActionListener(App.con);
+		menu.add(menuItem);
+
+		menu.addSeparator();
+
+		// Open Saves Folder
+		menuItem = new JMenuItem("Open  'saves'  folder       -       THEN    -     use 'Drag and Drop' to open any deal", KeyEvent.VK_F);
 		menuItem.setActionCommand("openSavesFolder");
+		menuItem.addActionListener(App.con);
+		menu.add(menuItem);
+
+		// Open quickSaves Folder
+		menuItem = new JMenuItem("Open  'quicksaves'  folder");
+		menuItem.setActionCommand("openQuickSavesFolder");
+		menuItem.addActionListener(App.con);
+		menu.add(menuItem);
+
+		// Open autoSaves Folder
+		menuItem = new JMenuItem("Open  'autosaves'  folder");
+		menuItem.setActionCommand("openAutoSavesFolder");
+		menuItem.addActionListener(App.con);
+		menu.add(menuItem);
+
+		// menu.addSeparator();
+
+		// Open Results Folder
+		menuItem = new JMenuItem("Open  'results'  folder");
+		menuItem.setActionCommand("openResultsFolder");
+		menuItem.addActionListener(App.con);
+		menu.add(menuItem);
+
+		// Open Tests Folder
+		menuItem = new JMenuItem("Open  'tests'   folder");
+		menuItem.setActionCommand("openTestsFolder");
+		menuItem.addActionListener(App.con);
+		menu.add(menuItem);
+
+		// Run Tests
+		menuItem = new JMenuItem("Run Tests", KeyEvent.VK_T);
+		menuItem.setActionCommand("runTests");
 		menuItem.addActionListener(App.con);
 		menu.add(menuItem);
 
@@ -129,32 +181,50 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 		menu.setMnemonic(KeyEvent.VK_O);
 		menuBar.add(menu);
 
-		// Right Panel - Preferences
-		menuItem = new JMenuItem("Show - Preferences", KeyEvent.VK_R);
-		menuItem.setActionCommand("rightPanelPreferences");
+		// Right Panel - Prefs 1 DealChoices
+		menuItem = new JMenuItem("Deal Choices", KeyEvent.VK_D);
+		menuItem.setActionCommand("rightPanelPrefs1_DealChoices");
 		menuItem.addActionListener(this);
 		menu.add(menuItem);
 
-		// Right Panel - DealChoices
-		menuItem = new JMenuItem("Show - Deal Choices", KeyEvent.VK_R);
-		menuItem.setActionCommand("rightPanelDealChoices");
+		// Right Panel - Prefs 1 DealChoices
+		menuItem = new JMenuItem("Seat Choice  and  Watching the Bidding", KeyEvent.VK_S);
+		menuItem.setActionCommand("rightPanelPrefs2_SeatChoice");
+		menuItem.addActionListener(this);
+		menu.add(menuItem);
+
+		// Right Panel - Prefs 3 AutoPlay
+		menuItem = new JMenuItem("Pause  and  AutoPlay  options", KeyEvent.VK_A);
+		menuItem.setActionCommand("rightPanelPrefs3_AutoPlay");
+		menuItem.addActionListener(this);
+		menu.add(menuItem);
+
+		// Right Panel - Prefs 4 StartUp
+		menuItem = new JMenuItem("StartUp  and  Button display  options", KeyEvent.VK_U);
+		menuItem.setActionCommand("rightPanelPrefs4_StartUp");
 		menuItem.addActionListener(this);
 		menu.add(menuItem);
 
 		// Bottom Panel
-		menuItem = new JMenuItem("Show - Speed Selection", KeyEvent.VK_L);
+		menuItem = new JMenuItem("Speed Selection", KeyEvent.VK_P);
 		menuItem.setActionCommand("lowerPanel");
 		menuItem.addActionListener(this);
 		menu.add(menuItem);
-		
+
 		// Help - MENU
 		menu = new JMenu("Help");
 		menu.setMnemonic(KeyEvent.VK_H);
 		menuBar.add(menu);
-		
+
 		// Help About
 		menuItem = new JMenuItem("Help", KeyEvent.VK_H);
 		menuItem.setActionCommand("menuHelpHelp");
+		menuItem.addActionListener(this);
+		menu.add(menuItem);
+
+		// Help LookAtWebsite
+		menuItem = new JMenuItem("Show Website - so you can look and see if you have the latest version", KeyEvent.VK_W);
+		menuItem.setActionCommand("menuLookAtWebsite");
 		menuItem.addActionListener(this);
 		menu.add(menuItem);
 
@@ -164,10 +234,8 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 		menuItem.addActionListener(this);
 		menu.add(menuItem);
 
+		// -----------------------------------------------------
 
-
-		//-----------------------------------------------------
-		
 		// Make the inner a fixed ratio (AspectBoundable) so creating the middle panel
 		payloadPanel = new AaPayloadPanel();
 		PreferredSizeGridLayout psgl = new PreferredSizeGridLayout(1, 1);
@@ -197,20 +265,39 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 
 		String appHomePath = System.getProperty("user.home") + File.separator + ".aaBridge" + File.separator;
 
+		App.autoSavesPath = appHomePath + "autosaves" + File.separator;
+		App.quickSavesPath = appHomePath + "quicksaves" + File.separator;
 		App.savesPath = appHomePath + "saves" + File.separator;
+		App.testsPath = appHomePath + "tests" + File.separator;
+		App.resultsPath = appHomePath + "results" + File.separator;
 
 		File appHome = new File(appHomePath);
+		File autoSaves = new File(App.autoSavesPath);
+		File quickSaves = new File(App.quickSavesPath);
 		File saves = new File(App.savesPath);
+		File tests = new File(App.testsPath);
+		File results = new File(App.resultsPath);
 
 		appHome.mkdir();
+		autoSaves.mkdir();
+		quickSaves.mkdir();
 		saves.mkdir();
+		tests.mkdir();
+		results.mkdir();
 
-		setVisible(false); // set true by the timer below
+		if (App.deleteQuickSaves)
+			clearOutOldDealsFromFolder(App.quickSavesPath, 30);
+
+		if (App.deleteAutoSaves)
+			clearOutOldDealsFromFolder(App.autoSavesPath, 7);
+
+		setTitleAsRequired();
 
 		App.con.postContructionInitTimer.start();
+
+		setTransferHandler(handler);
 	}
-	
-	
+
 	public boolean isSplashTimerRunning() {
 		return aaDragGlassPane.splashScreenCompleteTimer.isRunning();
 	}
@@ -231,13 +318,21 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 
 	public void actionPerformed(ActionEvent e) {
 		String cmd = e.getActionCommand();
-		if (cmd == "rightPanelPreferences") {
-			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth() - 230);
+		if (cmd == "rightPanelPrefs1_DealChoices") {
+			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth() - 320);
+			App.frame.rop.setSelectedIndex(0);
+		}
+		if (cmd == "rightPanelPrefs2_SeatChoice") {
+			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth() - 320);
 			App.frame.rop.setSelectedIndex(1);
 		}
-		if (cmd == "rightPanelDealChoices") {
-			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth() - 230);
-			App.frame.rop.setSelectedIndex(0);
+		if (cmd == "rightPanelPrefs3_AutoPlay") {
+			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth() - 320);
+			App.frame.rop.setSelectedIndex(2);
+		}
+		if (cmd == "rightPanelPrefs4_StartUp") {
+			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth() - 320);
+			App.frame.rop.setSelectedIndex(3);
 		}
 		else if (cmd == "lowerPanel") {
 			App.frame.splitPaneVert.setDividerLocation(App.frame.getHeight() - 130);
@@ -245,19 +340,23 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 		else if (cmd == "menuHelpHelp") {
 			new AaHelp();
 		}
+		else if (cmd == "menuLookAtWebsite") {
+			try {
+				Desktop.getDesktop().browse(new java.net.URI("http://rogerpf.com/z_bridge_area/bridge/aaBridge.php"));
+			} catch (Exception ev) {
+			}
+
+		}
 		else if (cmd == "menuHelpAbout") {
 			java.net.URL imageFileURL = AaOuterFrame.class.getResource("aaBridge_proto_icon.png");
 			final ImageIcon icon = new ImageIcon(imageFileURL);
 //			final ImageIcon icon = Toolkit.getDefaultToolkit().createImage(imageFileURL);
 
-			String  s = "AaBridge written by Roger Pfister\n\n"
-					+ "This is " + Version.v + "\n\n"
-					+ "see - http://RogerPf.com \n\n" 
-					+ "Open source (written in Java), sources\n"
-					+ "available from (to be added before release)";
+			String s = "AaBridge written by Roger Pfister\n\n" + "This is version -  " + VersionAndBuilt.getVer() + "\n" + "Build Number -    "
+					+ VersionAndBuilt.getBuildNo() + "\n" + "Built on         -    " + VersionAndBuilt.getBuilt() + "\n\n" + "see - http://RogerPf.com\n\n"
+					+ "Open source, available from\n" + "   http://github/RogerPf/aaBridge";
 			;
 			JOptionPane.showMessageDialog(this, s, "About - aaBridge", JOptionPane.INFORMATION_MESSAGE, icon);
-
 		}
 
 	}
@@ -305,4 +404,83 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 
 	public void windowDeactivated(WindowEvent e) {
 	}
+
+	public void setTitleAsRequired() {
+		String s = "aaBridge   " + VersionAndBuilt.all();
+		if ((App.deal.lastSavedAsFilename != null) && (App.deal.lastSavedAsFilename.length() > 0)) {
+			s += "    -    " + App.deal.lastSavedAsFilename;
+		}
+		setTitle(s);
+	}
+
+	/**
+	 *  drag and drop support for externaly (outside java from host OS) dropped deal files
+	 */
+	private TransferHandler handler = new TransferHandler() {
+
+		private static final long serialVersionUID = 1L;
+
+		public boolean canImport(TransferHandler.TransferSupport support) {
+			if (!support.isDataFlavorSupported(DataFlavor.javaFileListFlavor)) {
+				return false;
+			}
+			support.setDropAction(COPY);
+			return true;
+		}
+
+		public boolean importData(TransferHandler.TransferSupport support) {
+			if (!canImport(support)) {
+				return false;
+			}
+
+			Transferable t = support.getTransferable();
+
+			try {
+
+				@SuppressWarnings("unchecked")
+				java.util.List<File> list = (java.util.List<File>) t.getTransferData(DataFlavor.javaFileListFlavor);
+
+				for (File f : list) {
+					CmdHandler.readDealIfExists(f.getPath(), "");
+					return true; // we ONLY EVER care about the first item in the list
+				}
+			} catch (Exception e) {
+				return false;
+			}
+
+			return false;
+		}
+	};
+
+	/**   
+	 */
+	static void clearOutOldDealsFromFolder(String folderNameAndPath, long deleteAfterDays) {
+		// ==============================================================================================
+
+		// Get the list of all the potential tests
+		File[] files = null;
+		try {
+			files = new File(folderNameAndPath).listFiles();
+			long now = System.currentTimeMillis();
+			long deleteEarlierThan = now - (deleteAfterDays * 24L * 60L * 60L * 1000L);
+			// deleteEarlierThan = now - (30L*1000L); // testing only
+			for (File file : files) {
+				if (file.isFile() == false)
+					continue;
+				if (file.getName().startsWith("20") == false)
+					continue;
+				if (file.getName().endsWith(App.dotDealExt) == false)
+					continue;
+				if (file.lastModified() > deleteEarlierThan)
+					continue;
+
+				file.delete();
+
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return;
+		}
+	}
+
 }

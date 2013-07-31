@@ -22,37 +22,38 @@ import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 
-import version.Version;
+import version.VersionAndBuilt;
 
-public class AaHelp extends JFrame{
+public class AaHelp extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 
 	AaHelp() {
 //		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setTitle("Help for aaBridge    " + Version.v);
+		setTitle("Help for aaBridge    " + VersionAndBuilt.all());
 		java.net.URL imageFileURL = AaOuterFrame.class.getResource("aaBridge_proto_icon.png");
 		setIconImage(Toolkit.getDefaultToolkit().createImage(imageFileURL));
 
-        JEditorPane editorPane = new RpfEditorPane();
-        editorPane.setEditable(false);
-        
+		JEditorPane editorPane = new RpfEditorPane();
+		editorPane.setEditable(false);
+
 		JScrollPane scroller = new JScrollPane(editorPane);
 		scroller.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 		scroller.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 		scroller.setBorder(BorderFactory.createEmptyBorder());
-        setContentPane( scroller);
-        
-        java.net.URL helpFileURL = AaHelp.class.getResource("AaHelp.html"); // file with the class
-        if (helpFileURL != null) {
-            try {
-                editorPane.setPage(helpFileURL);
-            } catch (IOException e) {
-                System.err.println("Attempted to read a bad URL: " + helpFileURL);
-            }
-        } else {
-            System.err.println("Couldn't find file");
-        }
+		setContentPane(scroller);
+
+		java.net.URL helpFileURL = AaHelp.class.getResource("AaHelp.html"); // file with the class
+		if (helpFileURL != null) {
+			try {
+				editorPane.setPage(helpFileURL);
+			} catch (IOException e) {
+				System.err.println("Attempted to read a bad URL: " + helpFileURL);
+			}
+		}
+		else {
+			System.err.println("Couldn't find file");
+		}
 
 		// set the outer starting size and position
 		setSize(720, 600);
@@ -61,11 +62,11 @@ public class AaHelp extends JFrame{
 		setVisible(true);
 	}
 }
-	
-class RpfEditorPane extends JEditorPane implements MouseListener{
+
+class RpfEditorPane extends JEditorPane implements MouseListener {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	RpfEditorPane() {
 		addMouseListener(this);
 	}

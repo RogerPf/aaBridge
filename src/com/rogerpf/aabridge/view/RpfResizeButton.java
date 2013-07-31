@@ -69,6 +69,7 @@ public class RpfResizeButton extends JButton implements MouseListener {
 		this.fontToHeightRatio = fontToHeightRatio;
 		setBorder(new EmptyBorder(0, 0, 0, 0));
 		setFocusable(false);
+		setMinimumSize(new Dimension(1, 1));
 
 		addMouseListener(this);
 

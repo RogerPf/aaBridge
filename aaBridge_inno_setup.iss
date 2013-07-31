@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "aaBridge"
-#define MyAppVersion "1.0.4.1216"
+#define MyAppVersion "1.0.6.1372"
 #define MyAppPublisher "RogerPf.com"
 #define MyAppURL "http:/RogerPf.com/"
 #define MyAppExeName "aaBridge.exe"
@@ -22,10 +22,11 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 OutputDir=C:\a
-OutputBaseFilename=aaBridge_setup_{#MyAppVersion}
-SetupIconFile=C:\c\e_wk\421_AaB\aaBridge\aaBridge.ico
+OutputBaseFilename=aaBridge_{#MyAppVersion}_setup
+SetupIconFile=C:\c\e_wk\430_aaB\aaBridge\aaBridge.ico
 Compression=lzma
 SolidCompression=yes
+ChangesAssociations=yes
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
@@ -43,3 +44,9 @@ Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: 
 
 [Run]
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
+
+[Registry]
+Root: HKCR; Subkey: ".aaBridge"; ValueType: string; ValueName: ""; ValueData: "aabridge__rogerpf_com"; Flags: uninsdeletevalue 
+Root: HKCR; Subkey: "aabridge__rogerpf_com"; ValueType: string; ValueName: ""; ValueData: "aaBridge Deal"; Flags: uninsdeletekey 
+Root: HKCR; Subkey: "aabridge__rogerpf_com\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\aaBridge.exe,0" 
+Root: HKCR; Subkey: "aabridge__rogerpf_com\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\aaBridge.exe"" ""%1""" 

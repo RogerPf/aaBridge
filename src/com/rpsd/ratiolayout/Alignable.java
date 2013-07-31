@@ -18,13 +18,13 @@ package com.rpsd.ratiolayout;
 
 public interface Alignable {
 	int NORTHWEST = 1;
-	int NORTH = 2;
+	int North = 2;
 	int NORTHEAST = 3;
-	int EAST = 4;
+	int East = 4;
 	int SOUTHEAST = 5;
-	int SOUTH = 6;
+	int South = 6;
 	int SOUTHWEST = 7;
-	int WEST = 8;
+	int West = 8;
 	int CENTER = 9;
 
 	public int getAlignment();

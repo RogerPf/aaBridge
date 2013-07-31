@@ -25,6 +25,7 @@ public class AaBridge extends Applet {
 	private static final long serialVersionUID = 1L;
 
 	public static void main(String[] args) {
+		App.args = args;
 		// Schedule a job for the event-dispatching thread:
 		// creating and showing this application's GUI.
 		javax.swing.SwingUtilities.invokeLater(new Runnable() {

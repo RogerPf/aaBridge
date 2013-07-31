@@ -38,7 +38,6 @@ public class GreenBaizePanel extends ClickPanel {
 	//@formatter:off
 	public TopLeftPanel             c0_0__tlp  = new TopLeftPanel();
 	public BottomLeftPanel          c0_2__blp  = new BottomLeftPanel();
-	public UndoButtonPanel          c0_2__ubp  = new UndoButtonPanel();
 	public DarkGrayBgPanel          C0_9__empt = new DarkGrayBgPanel();
 	public ReviewBarBiddingPart0    C0_9__rbb0 = new ReviewBarBiddingPart0();
 	public ReviewBarPlayPart0       C0_9__rbp0 = new ReviewBarPlayPart0();
@@ -127,7 +126,7 @@ public class GreenBaizePanel extends ClickPanel {
 
 		c0.setLayout(new MigLayout("flowy, " + simple, "", "1%[28.35%][33.3%][28.35%]3%[6%]"));
 		c0.add(c0_0__tlp, hm3oneHun);
-		c0.add(hdps[Zzz.WEST], hm3oneHun);
+		c0.add(hdps[Zzz.West], hm3oneHun);
 		c0.add(c0_2__blp, hm3oneHun);
 		c0.add(C0_9__empt, hm3oneHun);
 		c0.add(C0_9__rbb0, hm3oneHun);
@@ -136,12 +135,12 @@ public class GreenBaizePanel extends ClickPanel {
 		c0.add(C0_9__empp, hm3oneHun);
 
 		c1.setLayout(new MigLayout("flowy, " + simple, "", "1%[33.3%][23.4%][33.3%]3%[6%]"));
-		c1.add(hdps[Zzz.NORTH], hm3oneHun);
+		c1.add(hdps[Zzz.North], hm3oneHun);
 		c1.add(c1_1__empt, hm3oneHun);
 		c1.add(c1_1__bfdp, hm3oneHun);
 		c1.add(c1_1__tfdp, hm3oneHun);
 		c1.add(c1_1__mdp, hm3oneHun);
-		c1.add(hdps[Zzz.SOUTH], hm3oneHun);
+		c1.add(hdps[Zzz.South], hm3oneHun);
 		c1.add(C1_9__empt, hm3oneHun);
 		c1.add(C1_9__rbb1, hm3oneHun);
 		c1.add(C1_9__rbp1, hm3oneHun);
@@ -151,7 +150,7 @@ public class GreenBaizePanel extends ClickPanel {
 		c2.setLayout(new MigLayout("flowy, " + simple, "", "1%[28.35%][33.3%][28.35%]3%[6%]"));
 		c2.add(c2_0__btp, hm3oneHun);
 		c2.add(c2_0__btpBlank, hm3oneHun);
-		c2.add(hdps[Zzz.EAST], hm3oneHun);
+		c2.add(hdps[Zzz.East], hm3oneHun);
 		c2.add(c2_2__empt, hm3oneHun);
 		c2.add(c2_2__bbp, hm3oneHun);
 		c2.add(c2_2__ctp, hm3oneHun);
@@ -195,7 +194,8 @@ public class GreenBaizePanel extends ClickPanel {
 			c1_1__empt.setVisible(false);
 			c1_1__bfdp.setVisible(false);
 			c1_1__tfdp.setVisible(false);
-			c1_1__mdp.textArea.setText("Drag and Drop the\ncards from one hand\nto another.");
+			c1_1__mdp.textArea.setText("Drag and Drop the cards from\none hand to another.\n"
+					+ "First, for all hands, move ALL\nthe spades, ONLY THEN\nstart on the hearts ...");
 			c1_1__mdp.setVisible(true);
 
 			c2_0__btpBlank.setVisible(true);

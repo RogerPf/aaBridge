@@ -27,6 +27,8 @@ public class TopLeftPanel extends ClickPanel {
 	public VunerabilityDisplayPanel c0_0__vdp = new VunerabilityDisplayPanel();
 
 	RpfResizeButton quicksave;
+	RpfResizeButton playagain;
+	RpfResizeButton easySave;
 	RpfResizeButton clock;
 	RpfResizeButton anti;
 
@@ -41,18 +43,24 @@ public class TopLeftPanel extends ClickPanel {
 
 		descEntry.setText(App.deal.description);
 
-		quicksave = new RpfResizeButton(1, "menuQuickSave", 40, 14, 0.7f);
-		clock = new RpfResizeButton(1, "mainClock", 5, 18, 0.8f);
-		anti = new RpfResizeButton(1, "mainAnti", 5, 18, 0.8f);
+		quicksave = new RpfResizeButton(1, "menuQuickSave", 30, 14, 0.7f);
+		easySave = new RpfResizeButton(1, "menuEasySave", 27, 14, 0.7f);
+		playagain = new RpfResizeButton(1, "menuPlayAgain", 20, 14, 0.7f);
+		clock = new RpfResizeButton(1, "mainClock", 7, 14, 0.9f);
+		anti = new RpfResizeButton(1, "mainAnti", 7, 14, 0.9f);
 
 		setRotationBtnsVisibility();
+		setEasySaveVisibility();
+		setPlayAgainVisibility();
 
-		setLayout(new MigLayout("insets 0 0 0 0, gap 0! 0!, flowy", "[60%][]5%", "5%[15%]3%[16%]20%[16%]"));
+		setLayout(new MigLayout("insets 0 0 0 0, gap 0! 0!, flowy", "[60%][]5%", "5%[15%]8%[12%]8%[12%]8%[12%]2%[1%]"));
 		add(descEntry, "pushx, align right, wmin 90%, wmax 90%, span 2");
-		add(c0_0__vdp, "gapx 5%, wmin 52%, hmin 72%, span 1 3, wrap");
-		add(quicksave, "gapx 5%, wmin 10%, hmin 10%");
-		add(anti, "hidemode 1, split 2, gapx 5%, wmin 10%, hmin 10%, flowx");
-		add(clock, "hidemode 1, gapx 5%, wmin 10%, hmin 10% ");
+		add(c0_0__vdp, "gapx 4%, wmin 52%, hmin 72%, spany, wrap");
+		add(quicksave, "gapx 4%, wmin 10%, hmin 10%, align left");
+		add(easySave, "hidemode 3, gapx 4%, wmin 10%, hmin 10%");
+		add(playagain, "split3, gapx 4%, wmin 4%, hmin 10%, flowx");
+		add(anti, "gapx 4%, wmin 6%, hmin 10%");
+		add(clock, "gapx 2%, wmin 6%, hmin 10%");
 
 	}
 
@@ -61,6 +69,18 @@ public class TopLeftPanel extends ClickPanel {
 	public void setRotationBtnsVisibility() {
 		clock.setVisible(App.showRotationBtns);
 		anti.setVisible(App.showRotationBtns);
+	}
+
+	/**   
+	 */
+	public void setEasySaveVisibility() {
+		easySave.setVisible(App.showEasySave);
+	}
+
+	/**   
+	 */
+	public void setPlayAgainVisibility() {
+		playagain.setVisible(App.showPlayAgain);
 	}
 
 	/**   

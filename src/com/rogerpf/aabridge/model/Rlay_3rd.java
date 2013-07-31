@@ -10,47 +10,47 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.model;
 
-public class Play_3rd {
+public class Rlay_3rd {
 
-	static Card act(Hand h, PlayGen g) {
-		// ****************************** 3rd 3rd 3rd ******************************
+	static Card act(Gather g) {
+		Hand h = g.hand;
+		// ****************************** 3rd 3rd 3rd Defender ******************************
 		Card card = null;
 
-		if (g.haveLedSuit) {
+		if (g.haveSuitLed) {
 			// we have some of the led suit so
 
 			if (g.bestByTrumping) { // nothing we can do
 				card = g.lowestOfLed;
 			}
 			else if (g.areWeWinning) {
-				if (g.bestCard.faceValue > g.highestOfLed.faceValue) {
+				if (g.bestCard.rank > g.highestOfLed.rank) {
 					card = g.lowestOfLed;
 				}
-				// CHEAT unless LHO is dummy CHEAT CHEAT CHEAT CHEAT CHEAT
-				else if (g.LHO_haveLedSuit == false) { // the LHO does not have this suit
+				else if (g.LHO_hasLedSuit == false) { // the LHO does not have this suit
 					card = g.lowestOfLed;
 				}
 				else { // the LHO has this suit
-					if (g.LHO.frags[g.suitValueLed].getLowestThatBeats(g.bestCard.faceValue) == null) {
+					if (g.LHO.frags[g.suitLed].getLowestThatBeats(g.z, g.bestCard.rank) == null) {
 						// No - LHO cannot beat partners winning cards
 						card = g.lowestOfLed;
 					}
-					else {
-						int LHO_best = g.LHO.frags[g.suitValueLed].getCard(0).faceValue;
-						card = h.frags[g.suitValueLed].getLowestThatBeats(LHO_best);
-						if (card == null && g.LHO.frags[g.suitValueLed].size() > 1) {
+					else { // yes LHO I can beat partners card
+						/**
+						 * Should I try to force a higher card to be played ?
+						 * What is the highest card in the LHO (4th Hand) that partners lead
+						 * can currenlty beat?
+						 * And Can I do better ?
+						 */
+						Card LHO_plt = g.LHO.frags[g.suitLed].getHighestThatLosesTo(g.bestCard.rank);
+						Card LHO_mlt = g.LHO.frags[g.suitLed].getHighestThatLosesTo(g.fragLed.get(0).rank);
 
-							int LHO_2ndBest = g.LHO.frags[g.suitValueLed].getCard(1).faceValue;
-							card = h.frags[g.suitValueLed].getLowestThatBeats(LHO_2ndBest);
-						}
-						if (card == null && g.LHO.frags[g.suitValueLed].size() > 2) {
-							int LHO_3rdBest = g.LHO.frags[g.suitValueLed].getCard(2).faceValue;
-							card = h.frags[g.suitValueLed].getLowestThatBeats(LHO_3rdBest);
-						}
-						if (card == null) {
+						if (LHO_mlt == LHO_plt) { // our best can do no better
 							card = g.lowestOfLed;
 						}
-						// more DEEP STUDY here :)
+						else {
+							card = g.fragLed.getLowestThatBeats(g.z, LHO_mlt.rank);
+						}
 					}
 				}
 			}
@@ -58,26 +58,38 @@ public class Play_3rd {
 			else { // we are NOT winning this trick
 
 				// cover if we can - yes it migh be trumped
-				Card pos = h.frags[g.suitValueLed].getLowestThatBeats(g.bestCard.faceValue);
-				if (pos == null) {
+				Card posib = g.fragLed.getLowestThatBeats(g.z, g.bestCard.rank);
+				if (posib == null) {
 					card = g.lowestOfLed;
 				}
 
-				// Note - We have a candidate that covers the winner in - poss
+				// We have a candidate that covers the current winner in - posib
 
-				else if (g.LHO_haveLedSuit == false) { // the LHO does not have this suit
-					card = pos;
+				else if (g.LHO_hasLedSuit == false) { // the LHO does not have this suit
+					card = posib;
 				}
 				// the LHO has this suit
-				else if (g.LHO.frags[g.suitValueLed].getLowestThatBeats(pos.faceValue) == null) {
-					// No - LHO cannot beat our poss card
-					card = pos;
-				}
 				else {
-					int LHO_best = g.LHO.frags[g.suitValueLed].getCard(0).faceValue;
-					card = h.frags[g.suitValueLed].getLowestThatBeats(LHO_best);
-					if (card == null) {
-						card = pos; // cover the card even though we know it will be beaten
+					Card LHO_posib_beater = g.LHO.frags[g.suitLed].getLowestThatBeats(g.z, posib.rank);
+					if (LHO_posib_beater == null) {
+						// No - LHO cannot beat our posibs card
+						card = posib;
+					}
+					else {
+						// LHO can beat our current 'posib' - can we do better
+						Card LHO_mlt = g.LHO.frags[g.suitLed].getHighestThatLosesTo(g.fragLed.get(0).rank);
+						if (LHO_mlt == null) {
+							card = posib;
+						}
+						else if (LHO_mlt.rank < posib.rank) {
+							card = posib;
+						}
+						else {
+							card = g.fragLed.getLowestThatBeats(g.z, LHO_mlt.rank);
+							if (card == null) {
+								card = posib;
+							}
+						}
 					}
 				}
 			}
@@ -89,9 +101,9 @@ public class Play_3rd {
 			else if (g.areWeWinning) { // YES
 
 				if (g.haveTrumps) {
-					if (g.LHO_haveLedSuit) {
+					if (g.LHO_hasLedSuit) {
 						// will we still be winning after LHO plays
-						if (g.LHO.frags[g.suitValueLed].getLowestThatBeats(g.bestCard.faceValue) == null) {
+						if (g.LHO.frags[g.suitLed].getLowestThatBeats(g.z, g.bestCard.rank) == null) {
 							// No - LHO cannot beat partners winning cards
 							card = h.pickBestDiscard(g);
 						}
@@ -113,19 +125,15 @@ public class Play_3rd {
 			}
 			else { // No we are loosing this trick
 
-				if (g.haveLedSuit && !g.bestByTrumping) {
-					// we have some of the led suit
-					card = h.frags[g.suitValueLed].getLowestThatBeatsOrLowest(g.bestCard.faceValue);
-				}
-				else if (g.haveTrumps) {
+				if (g.haveTrumps) {
 					if (g.bestByTrumping) {
-						card = h.frags[g.trumpSuit].getLowestThatBeats(g.bestCard.faceValue);
+						card = h.frags[g.trumpSuit].getLowestThatBeats(g.z, g.bestCard.rank);
 						if (card == null) {
 							card = h.pickBestDiscard(g);
 						}
 					}
 					else {
-						if (g.LHO_haveLedSuit) {
+						if (g.LHO_hasLedSuit) {
 							card = g.lowestTrump; // ruff low
 						}
 						else {

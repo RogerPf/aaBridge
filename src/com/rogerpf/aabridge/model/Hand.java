@@ -32,11 +32,14 @@ public class Hand implements Serializable, Comparable<Hand> {
 	public final Cal played = new Cal();
 	public final Bal bids = new Bal();
 
+	transient char compassCh; // for easy viewing when in debug
+
 	/** 
 	 */
 	public Hand(Deal dealV, int compassV) { // constructor
 		deal = dealV;
 		compass = compassV;
+		compassCh = Zzz.compass_to_nesw_ch[compass];
 		playerName = "";
 		for (int sv : Zzz.cdhs) {
 			fOrgs[sv] = new Frag(this, sv);
@@ -87,7 +90,7 @@ public class Hand implements Serializable, Comparable<Hand> {
 
 	/** 
 	 */
-	Hand partner() {
+	public Hand partner() {
 		return nextHand().nextHand();
 	}
 
@@ -105,9 +108,9 @@ public class Hand implements Serializable, Comparable<Hand> {
 
 	/** 
 	 */
-	void AddDeltCard(Card card) {
-		fOrgs[card.suitValue].addDeltCard(card);
-		frags[card.suitValue].addDeltCard(card);
+	void addDeltCard(Card card) {
+		fOrgs[card.suit].addDeltCard(card);
+		frags[card.suit].addDeltCard(card);
 	}
 
 	/** 
@@ -115,13 +118,12 @@ public class Hand implements Serializable, Comparable<Hand> {
 	public void playCard(Card card) {
 		assert (played.size() < deal.prevTrickWinner.size());
 
-		frags[card.suitValue].remove(card);
+		frags[card.suit].remove(card);
 		played.add(card);
 
 		assert (played.size() == deal.prevTrickWinner.size());
 
 		deal.cardJustPlayed();
-
 	}
 
 	/** 
@@ -135,13 +137,13 @@ public class Hand implements Serializable, Comparable<Hand> {
 		if (prevWinner == this)
 			return true; // we are on lead
 
-		int ledSuitValue = prevWinner.played.getCard(curTrickIndex).suitValue;
+		int suitLed = prevWinner.played.getCard(curTrickIndex).suit;
 
-		if (ledSuitValue == frag.suitValue)
+		if (suitLed == frag.suit)
 			return true; // we are selecting the
 							// led suit
 
-		if (frags[ledSuitValue].isEmpty())
+		if (frags[suitLed].isEmpty())
 			return true; // we have none of the
 							// led suit
 
@@ -150,12 +152,12 @@ public class Hand implements Serializable, Comparable<Hand> {
 
 	/** 
 	 */
-	public int faceSelectableCount(int faceValue) {
+	public int cardSelectableCount(int rank) {
 		int count = 0;
 		for (Frag frag : frags) {
 			for (Card card : frag) {
-				if (card.faceValue == faceValue) {
-					if (isSuitSelectable(card.suitValue)) {
+				if (card.rank == rank) {
+					if (isSuitSelectable(card.suit)) {
 						count++;
 						break;
 					}
@@ -167,11 +169,11 @@ public class Hand implements Serializable, Comparable<Hand> {
 
 	/** 
 	 */
-	public Card faceSelectableGetOnlyCard(int faceValue) {
+	public Card cardSelectableGetOnlyCard(int rank) {
 		for (Frag frag : frags) {
 			for (Card card : frag) {
-				if (card.faceValue == faceValue) {
-					if (isSuitSelectable(card.suitValue)) {
+				if (card.rank == rank) {
+					if (isSuitSelectable(card.suit)) {
 						return card;
 					}
 				}
@@ -183,9 +185,9 @@ public class Hand implements Serializable, Comparable<Hand> {
 
 	/** 
 	 */
-	public boolean isSuitSelectable(int suitValue) {
+	public boolean isSuitSelectable(int suit) {
 
-		if (frags[suitValue].isEmpty())
+		if (frags[suit].isEmpty())
 			return false; // we have none of the
 							// selected suit
 
@@ -194,12 +196,12 @@ public class Hand implements Serializable, Comparable<Hand> {
 		if (prevWinner == this)
 			return true; // we are on lead
 
-		int ledSuitValue = prevWinner.played.getCard(curTrickIndex).suitValue;
+		int suitLed = prevWinner.played.getCard(curTrickIndex).suit;
 
-		if (ledSuitValue == suitValue)
+		if (suitLed == suit)
 			return true; // we are selecting the led suit
 
-		if (frags[ledSuitValue].isEmpty())
+		if (frags[suitLed].isEmpty())
 			return true; // we have none of the led suit
 
 		return false;
@@ -207,20 +209,20 @@ public class Hand implements Serializable, Comparable<Hand> {
 
 	/** 
 	 */
-	public Card getCardIfSingletonInSuit(int suitValue) {
+	public Card getCardIfSingletonInSuit(int suit) {
 
-		if (frags[suitValue].size() != 1)
+		if (frags[suit].size() != 1)
 			return null; // not singleton
 
-		return frags[suitValue].get(0);
+		return frags[suit].get(0);
 	}
 
 	/** 
 	 */
-	public Card getCardIfMatching(int suitValue, int faceValue) {
+	public Card getCardIfMatching(int suit, int rank) {
 
-		for (Card card : frags[suitValue]) {
-			if (card.faceValue == faceValue)
+		for (Card card : frags[suit]) {
+			if (card.rank == rank)
 				return card;
 		}
 		return null;
@@ -228,16 +230,38 @@ public class Hand implements Serializable, Comparable<Hand> {
 
 	/** 
 	 */
+	public Card getCardIfMatchingRankRel(int suit, int rankRel) {
+
+		for (Card card : frags[suit]) {
+			if (card.rankRel == rankRel)
+				return card;
+		}
+		return null;
+	}
+
+	/** 
+	 */
+	public int getRankIfMatchingRankRel(int suit, int rankRel) {
+
+		for (Card card : frags[suit]) {
+			if (card.rankRel == rankRel)
+				return card.rank;
+		}
+		return 0;
+	}
+
+	/** 
+	 */
 	private int makeSuitSuggestionIfOnlyOneSuit() {
-		int suitValue = -1;
+		int suit = -1;
 		for (Frag frag : frags) {
 			if (frag.size() == 0)
 				continue;
-			if (suitValue != -1)
+			if (suit != -1)
 				return -1;
-			suitValue = frag.suitValue;
+			suit = frag.suit;
 		}
-		return suitValue;
+		return suit;
 	}
 
 	/** 
@@ -252,10 +276,10 @@ public class Hand implements Serializable, Comparable<Hand> {
 			return makeSuitSuggestionIfOnlyOneSuit();
 		}
 
-		int ledSuitValue = prevWinner.played.getCard(curTrickIndex).suitValue;
+		int suitLed = prevWinner.played.getCard(curTrickIndex).suit;
 
-		if (frags[ledSuitValue].size() > 0) {
-			return ledSuitValue;
+		if (frags[suitLed].size() > 0) {
+			return suitLed;
 		}
 
 		return makeSuitSuggestionIfOnlyOneSuit();
@@ -274,9 +298,9 @@ public class Hand implements Serializable, Comparable<Hand> {
 				return null;
 		}
 		else {
-			int ledSuitValue = prevWinner.played.getCard(curTrickIndex).suitValue;
-			if (frags[ledSuitValue].size() > 0) {
-				suitIndex = ledSuitValue;
+			int suitLed = prevWinner.played.getCard(curTrickIndex).suit;
+			if (frags[suitLed].size() > 0) {
+				suitIndex = suitLed;
 			}
 			else { // we have none of the led suit
 				suitIndex = makeSuitSuggestionIfOnlyOneSuit();
@@ -297,8 +321,8 @@ public class Hand implements Serializable, Comparable<Hand> {
 		Card high = frag.get(0);
 		for (int i = 1; i < frag.size(); i++) {
 			Card mid = frag.get(i);
-			for (int j = high.faceValue - 1; j > mid.faceValue; j--) {
-				if (deal.isActiveCard(frag, j, frag.suitValue))
+			for (int j = high.rank - 1; j > mid.rank; j--) {
+				if (deal.isActiveCard(frag, j, frag.suit))
 					return null;
 			}
 			high = mid;
@@ -308,13 +332,13 @@ public class Hand implements Serializable, Comparable<Hand> {
 
 //	/** 
 //	 */
-//	private boolean hasBeenPlayed(int faceValue, int suitValue) {
+//	private boolean hasBeenPlayed(int rank, int suit) {
 //		for (Hand hand : deal.hands) {
-//			if (frags[suitValue].getIfFaceExists(faceValue) != null) {
+//			if (frags[suit].getIfRankExists(rank) != null) {
 //				return false;
 //			}
 //			if (played.size() == deal.prevTrickWinner.size()
-//					&& played.getLast().matches(faceValue, suitValue)) {
+//					&& played.getLast().matches(rank, suit)) {
 //				return false;
 //			}
 //		}
@@ -327,13 +351,28 @@ public class Hand implements Serializable, Comparable<Hand> {
 
 		int from = (int) (Math.random() * 4);
 
-		for (int i = 0; i < 4; i++) {
+		for (int i : Zzz.cdhs) {
 			Frag frag = frags[(i + from) % 4];
 			if (frag.size() == 0)
 				continue;
-			if (isSuitSelectable(frag.suitValue)) {
+			if (isSuitSelectable(frag.suit)) {
 				return frag.get((int) (Math.random() * frag.size()));
 			}
+		}
+		return null;
+	}
+
+	/** 
+	 */
+	public Card getAnyCard() {
+
+		int from = (int) (Math.random() * 4);
+
+		for (int i : Zzz.cdhs) {
+			Frag frag = frags[(i + from) % 4];
+			if (frag.size() == 0)
+				continue;
+			return frag.get(0); // the first is any
 		}
 		return null;
 	}
@@ -356,12 +395,14 @@ public class Hand implements Serializable, Comparable<Hand> {
 	public void undoLastPlay() {
 		assert (played.size() >= 1);
 
+		deal.clearStrategy();
+
 		if (deal.isCurTrickComplete()) {
 			deal.prevTrickWinner.removeLast();
 		}
 
 		Card card = played.removeLast();
-		frags[card.suitValue].addDeltCard(card);
+		frags[card.suit].addDeltCard(card);
 	}
 
 	/** 
@@ -370,6 +411,16 @@ public class Hand implements Serializable, Comparable<Hand> {
 		int v = 0;
 		for (Frag fOrg : fOrgs) {
 			v += fOrg.countPoints();
+		}
+		return v;
+	}
+
+	/** 
+	 */
+	public int countLosingTricks_x2() {
+		int v = 0;
+		for (Frag fOrg : fOrgs) {
+			v += fOrg.countLosingTricks_x2();
 		}
 		return v;
 	}
@@ -389,7 +440,7 @@ public class Hand implements Serializable, Comparable<Hand> {
 				if (played.size() < i)
 					continue;
 				Card card = played.get(i);
-				fr[card.suitValue].remove(card);
+				fr[card.suit].remove(card);
 			}
 
 			Hand trickLeader = deal.prevTrickWinner.get(reviewTrick);
@@ -400,7 +451,7 @@ public class Hand implements Serializable, Comparable<Hand> {
 				if (hand != this || i >= reviewCard)
 					continue;
 				Card card = hand.played.get(reviewTrick);
-				fr[card.suitValue].remove(card);
+				fr[card.suit].remove(card);
 				break;
 			}
 		}
@@ -416,32 +467,6 @@ public class Hand implements Serializable, Comparable<Hand> {
 
 	/** 
 	 */
-	public Frag getLongestSuitNotTrumps() {
-		int ln = -1;
-		Frag fr = null;
-		for (Frag f : frags) {
-			if (f.suitValue == deal.contract.suitValue)
-				continue;
-			if (f.size() > ln) {
-				ln = f.size();
-				fr = frags[f.suitValue];
-			}
-		}
-
-		return fr;
-	}
-	
-
-
-//	/** 
-//	 */
-//	private int outstandingTrumps_not_cur_used() { // Assumes we are NOT in no trumps
-//		int ts = deal.contract.suitValue;
-//		return 13 - deal.countTrumpsPlayed() - (frags[ts].size() + partner().frags[ts].size());
-//	}
-//
-	/** 
-	 */
 	public boolean areWeWinning() {
 
 		Hand leader = deal.getCurTrickLeader();
@@ -454,7 +479,7 @@ public class Hand implements Serializable, Comparable<Hand> {
 			if (hand.played.size() < leader.played.size())
 				break; // end of played cards in this trick
 			Card card = hand.played.getLast();
-			if (card.isBetterThan(bestCard, deal.contract.suitValue)) {
+			if (card.isBetterThan(bestCard, deal.contract.suit)) {
 				bestHand = hand;
 				bestCard = card;
 			}
@@ -476,7 +501,7 @@ public class Hand implements Serializable, Comparable<Hand> {
 			if (hand.played.size() < leader.played.size())
 				break; // end of played cards in this trick
 			Card card = hand.played.getLast();
-			if (card.isBetterThan(bestCard, deal.contract.suitValue)) {
+			if (card.isBetterThan(bestCard, deal.contract.suit)) {
 				bestCard = card;
 				bestHand = hand;
 			}
@@ -515,9 +540,10 @@ public class Hand implements Serializable, Comparable<Hand> {
 	/**
 	 */
 	public boolean doesHandHaveAKingOrAce() {
+		// ==============================================================================================
 		for (Frag frag : frags) {
 			for (Card card : frag) {
-				if (card.faceValue == Zzz.KING || card.faceValue == Zzz.ACE)
+				if (card.rank == Zzz.King || card.rank == Zzz.Ace)
 					return true;
 			}
 		}
@@ -527,8 +553,9 @@ public class Hand implements Serializable, Comparable<Hand> {
 	/**
 	 */
 	public void addPartnersCurrentCards(Frag cpys[]) {
+		// ==============================================================================================
 		for (Frag f : cpys) {
-			for (Card card : partner().frags[f.suitValue]) {
+			for (Card card : partner().frags[f.suit]) {
 				f.addDeltCard(card);
 			}
 		}
@@ -536,25 +563,26 @@ public class Hand implements Serializable, Comparable<Hand> {
 
 	/**
 	 */
-	boolean areOurTopHoldingsContigious(int suitValue) {
+	boolean areOurTopHoldingsContigious(int suit) {
+		// ==============================================================================================
 		Hand hand = this;
 		Hand partner = hand.partner();
-		Frag myFrag = hand.frags[suitValue];
-		Frag pnFrag = partner.frags[suitValue];
+		Frag myFrag = hand.frags[suit];
+		Frag pnFrag = partner.frags[suit];
 		if (myFrag.size() == 0 || pnFrag.size() == 0)
 			return false;
 		int low;
 		Frag highF;
-		if (((highF = myFrag).get(0).faceRel) > (low = pnFrag.get(0).faceRel)) {
+		if (((highF = myFrag).get(0).rankRel) > (low = pnFrag.get(0).rankRel)) {
 		}
 		else {
 			highF = pnFrag;
-			low = myFrag.get(0).faceValue;
+			low = myFrag.get(0).rank;
 		}
 
-		int prevH = highF.get(0).faceRel + 1;
+		int prevH = highF.get(0).rankRel + 1;
 		for (int i = 0; i < highF.size(); i++) {
-			int high = highF.get(i).faceRel;
+			int high = highF.get(i).rankRel;
 			if ((prevH == high + 1) && (high - 1 == low))
 				return true;
 			if (prevH != high + 1)
@@ -564,131 +592,141 @@ public class Hand implements Serializable, Comparable<Hand> {
 		return false;
 	}
 
-	boolean doesPartnerHaveMaster(int suitValue) {
-		if (partner().frags[suitValue].size() > 0) {
-			return partner().frags[suitValue].get(0).faceRel == Zzz.ACE;
+	boolean doesPartnerHaveMaster(int suit) {
+		// ==============================================================================================
+		if (partner().frags[suit].size() > 0) {
+			return partner().frags[suit].get(0).rankRel == Zzz.Ace;
 		}
 		return false;
 	}
 
-	/**
-	 *  
-	 */
-	public boolean outstandingTrumpIsMaster() {
-		// can assume that there is one and only one trump outstanding
-		Card card = nextHand().frags[deal.contract.suitValue].getLast();
-		if (card != null)
-			return (card.faceRel == Zzz.ACE);
+	static int oppsMax(Gather g, int suit) {
+		// ==============================================================================================
+		return Math.max(g.LHO.frags[suit].size(), g.RHO.frags[suit].size());
+	}
 
-		card = prevHand().frags[deal.contract.suitValue].getLast();
-		return (card.faceRel == Zzz.ACE);
+	static int oppsAceDownRunDepth(Gather g, int suit) {
+		// ==============================================================================================
+		int d = 0;
+		int t = Zzz.Ace;
+		for (Card card : g.oppsBoth[suit]) {
+			if (card.rankRel != t--)
+				break;
+			d++;
+		}
+		return Math.min(d, oppsMax(g, suit));
+	}
+
+	static int ourInnerRunDepth(Gather g, int suit, int ord) {
+		// ==============================================================================================
+		int d = 0;
+		int t = Zzz.Ace - ord;
+		for (Card card : g.ourBoth[suit]) {
+			if (card.rankRel != t--)
+				break;
+			d++;
+		}
+		return d;
 	}
 
 	/**
-	 *  
 	 */
-	public Card pickBestDiscard(PlayGen g) {
-		Card best = null;
-		float score = 0;
-		
-		for (int i : Zzz.rota[(int)((Math.random()*4.0f)%4.0f)]){
-			Frag frag = frags[i];
-			Card card = frag.getLast();
-			if (card == null) continue;
-			float cs = scoreDiscard(g, frag, card);
-			if (best == null || (cs > score)) {
-				best = card;
-				score = cs;
+	public Card pickBestDiscard(Gather g) {
+		// ==============================================================================================
+		return Play_5_Discard.pickBest(g);
+	}
+
+	public void clearStrategy() {
+		// ==============================================================================================
+		deal.clearStrategy(this);
+	}
+
+	public void setStrategy(Strategy stra) {
+		// ==============================================================================================
+		deal.setStrategy(this, stra);
+	}
+
+	public Strategy getStrategy() {
+		// ==============================================================================================
+		return deal.getStrategy(this);
+	}
+
+	public void calcStrategy() {
+		// ==============================================================================================
+		// note - we are in a ****** hand ******
+
+		if (getStrategy() == null) {
+			// print a message if we are the first of the two stratergies to be created
+			if (deal.testId == 0 && deal.hands[(compass + 1) % 4].getStrategy() == null) {
+				System.out.println("Board no " + deal.boardNo + "     cycle " + (++(deal.cycle))
+						+ "  ----------------------------------------------------------------------");
 			}
+
+			Deal d2 = deal.deepClone();
+			d2.wipePlay((axis() == deal.contractAxis()) /* keepFirstCardPlayed */);
+
+			Strategy stra = new Strategy(d2);
+			setStrategy(stra);
+			stra.update();
 		}
-		return best;
-	}
 
-	private float scoreDiscard(PlayGen g, Frag frag, Card card) {
+		/** 
+		 * We now go through each played card updating the statergy after each play
+		 * This is only needed as it re-creates all the history of a Strategy lost
+		 * because of an UNDO or a 'load'.  So 99% of the time this will do nothing
+		 */
+		Strategy stra = getStrategy();
 
-		if (card.getSuitValue() == g.trumpSuit)
-			return -1.0f;
-		
-		return scoreByImportance(g, frag, card);
-	}
-
-	private float scoreByImportance(PlayGen g, Frag frag, Card card) {
-
-		int countPlayed = deal.countPlayedOfSuit(card.suitValue);
-		
-		Frag f = frag;		
-		if (isPartnerVisible()) {
-			f = g.bothHands[frag.suitValue];
+		Deal d2 = stra.getEmdeddedDeal();
+		int played_d = deal.countCardsPlayed();
+		int played_d2 = d2.countCardsPlayed();
+		assert (played_d >= played_d2); // which is why undo etc must clear the strategies
+		for (int i = played_d2; i < played_d; i++) {
+			Card card = deal.getCardThatWasPlayed(i);
+			d2.playCardExternal(card.suit, card.rank);
+			stra.update();
 		}
-		
-		int ourContig = f.countContigious();		
-		int oppsMaxHolding = (13 - countPlayed - f.size());
-		int ourExcess = ourContig - oppsMaxHolding;		
-		if (ourExcess < 0) return 1.0f;
-		
-		if (frag.size() <= g.partner.frags[card.suitValue].size()) {
-			// we have the smaller holding
-			return 0.5f;	
-		}
-		return 0.0f;
-	}
 
-	private boolean isPartnerVisible() { // yes if we are the contract holders
-		return (deal.contractCompass%2 == compass%2);
 	}
 
 	/**
 	 */
 	public Card dumbAuto() {
-
+		// ==============================================================================================
 		Card card = null;
-		
-		// card = getSelfPlayableCard(true /* we always want to play adjacent */);
 
-		if (card == null) {
-			card = dumbAutoInner();
+		calcStrategy();
+
+		Gather g = new Gather(this, /* strategyCreated */false);
+
+		// @formatter:off
+		if (g.ourContract) {
+			switch(g.positionInTrick) {
+			case 0: card = Qlay_1st__Declarer.act(g); break;
+			case 1: card = Qlay_2nd.act(g); break;
+			case 2: card = Qlay_3rd.act(g); break;
+			case 3: card = Qlay_4th.act(g); break;
+			default: assert(false);
+			}
 		}
+		else {
+			switch(g.positionInTrick) {
+			case 0: { if (g.trickNumb == 0) { 
+					card = Rlay_0th__TheOpeningLead.act(g); break; }
+			 else { card = Rlay_1st__Defender.act(g); break; } }
+			case 1: card = Rlay_2nd.act(g); break;
+			case 2: card = Rlay_3rd.act(g); break;
+			case 3: card = Rlay_4th.act(g); break;
+			default: assert(false);
+			}
+		}
+		// @formatter:on
 
 		if (card == null) {
 			card = getRandomPlayableCard();
+			System.out.println("===>   ERROR  -  dumbAuto picked    NULL   - instead of a card");
 		}
 
-		return card;
-	}
-
-	/**
-	 */
-	public Card dumbAutoInner() {
-		
-		Card card = null;
-		
-		PlayGen g = new PlayGen(this);
-
-		if (g.leaderUs) {
-			
-			if (g.ourContract)  
-				card = Play_1st_DummyDeclarerLead.act( this, g);
-			else
-				card = Play_1st_DefenderLead.act( this, g);
-
-		} 
-		else if (g.RHO == g.leader)  
-		 
-			card = Play_2nd.act( this, g);
-			
-		else if (g.partner == g.leader) 
-
-			card = Play_3rd.act( this, g);
-			
-		else if (g.LHO == g.leader)
-		
-			card = Play_4th.act( this, g);
-			
-		else {
-
-			assert(false); // should never happen
-		}
-			
 		return card;
 	}
 

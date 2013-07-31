@@ -61,19 +61,19 @@ public class BoundableComponentPlacement implements BoundableInterface {
 		switch (position) {
 		case Alignable.NORTHWEST:
 			return new Point(west, north);
-		case Alignable.NORTH:
+		case Alignable.North:
 			return new Point(centerX, north);
 		case Alignable.NORTHEAST:
 			return new Point(east, north);
-		case Alignable.EAST:
+		case Alignable.East:
 			return new Point(east, centerY);
 		case Alignable.SOUTHEAST:
 			return new Point(east, south);
-		case Alignable.SOUTH:
+		case Alignable.South:
 			return new Point(centerX, south);
 		case Alignable.SOUTHWEST:
 			return new Point(west, south);
-		case Alignable.WEST:
+		case Alignable.West:
 			return new Point(west, centerY);
 		case Alignable.CENTER:
 			return new Point(centerX, centerY);

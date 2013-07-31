@@ -29,10 +29,6 @@ public class BottomLeftPanel extends ClickPanel {
 	public UndoPanel c0_2_0__undo = new UndoPanel();
 	public NextBoardButtonPanel c0_2_1__nbbp = new NextBoardButtonPanel();
 
-	RpfResizeButton quicksave;
-	RpfResizeButton clock;
-	RpfResizeButton anti;
-
 	/**
 	 */
 	BottomLeftPanel() { /* Constructor */
@@ -73,19 +69,19 @@ public class BottomLeftPanel extends ClickPanel {
 		else if (App.deal.isBidding() || App.isMode(Aaa.EDIT_BIDDING)) {
 
 			c0_2_0__empt.setVisible(false);
-			boolean showMsg = (!App.autoBid[App.deal.getNextHandToBid().compass]) && !App.isMode(Aaa.EDIT_BIDDING) && App.showBidPlayMsgs;
+			boolean showMsg = (!App.isAutoBid(App.deal.getNextHandToBid().compass)) && !App.isMode(Aaa.EDIT_BIDDING) && App.showBidPlayMsgs;
 			c0_2_0__undo.setVisible(!showMsg);
-			c0_2_0__mdp.textArea.setText("Please BID using the\nBidding Panel and or\nyour Keyboard.");
+			c0_2_0__mdp.textArea.setText("\nPlease BID using the Bidding\nPanel and or your Keyboard.");
 			c0_2_0__mdp.setVisible(showMsg);
 			c0_2_0__wtsp.setVisible(false);
 		}
 		else if (App.deal.isPlaying()) {
 
 			c0_2_0__empt.setVisible(false);
-			boolean showMsg = (!App.autoPlay[App.deal.getNextHandToPlay().compass]) && !App.isMode(Aaa.EDIT_PLAY) && App.showBidPlayMsgs
+			boolean showMsg = (!App.isAutoPlay(App.deal.getNextHandToPlay().compass)) && !App.isMode(Aaa.EDIT_PLAY) && App.showBidPlayMsgs
 					&& App.deal.lessThanTwoCardsPlayed();
 			c0_2_0__undo.setVisible(!showMsg);
-			c0_2_0__mdp.textArea.setText("PLAY by clicking on\na CARD or by using\nyour Keyboard.");
+			c0_2_0__mdp.textArea.setText("\nPLAY by clicking on a CARD\nor by using your Keyboard.");
 			c0_2_0__mdp.setVisible(showMsg);
 			c0_2_0__wtsp.setVisible(false);
 		}
@@ -97,10 +93,13 @@ public class BottomLeftPanel extends ClickPanel {
 			c0_2_0__wtsp.setVisible(!showUndo);
 		}
 		else {
-			assert(false);
+			assert (false);
 		}
 
 		c0_2_1__nbbp.setReviewButtonText();
+
+		// setEotClickLabelVisibility();
+		c0_2_0__undo.editPlay2.setVisible(App.showEditPlay2Btn && (App.isMode(Aaa.NORMAL) || App.isMode(Aaa.REVIEW_BIDDING) || App.isMode(Aaa.REVIEW_PLAY)));
 
 	}
 
@@ -114,15 +113,21 @@ class UndoPanel extends ClickPanel {
 	 */
 	private static final long serialVersionUID = 1L;
 
+	public RpfResizeButton editPlay2;
+
 	/**
 	 */
 	UndoPanel() { /* Constructor */
 
-		setLayout(new MigLayout("insets 0 0 0 0, gap 0! 0!", "push[]5%", "12%[]"));
+		setLayout(new MigLayout("insets 0 0 0 0, gap 0! 0!, flowy", "5%[]push[]5%", "12%[]20%[]"));
+
+		editPlay2 = new RpfResizeButton(1, "editPlay2", 30, 18);
+		// editPlay2.setForeground(Aaa.heartsColor);
+		add(editPlay2, "");
 
 		RpfResizeButton b;
 		b = new RpfResizeButton(1, "mainUndo", -3, 25);
-		add(b, "align right");
+		add(b, "cell 1 0, align right");
 	}
 
 	/**

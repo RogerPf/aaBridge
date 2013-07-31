@@ -25,9 +25,17 @@ class EditBarChoosePart0 extends ClickPanel {
 	private static final long serialVersionUID = 1L;
 
 	EditBarChoosePart0() { /* Constructor */
-		setLayout(new MigLayout("insets 1 1 1 1, gap 0! 0!", "push[c]push", "push[c]push"));
+		setLayout(new MigLayout("insets 1 1 1 1, gap 0! 0!", "3%[6%]2%[6%]push[c]push", "push[c]push"));
 
 		JButton b;
+		b = new RpfResizeButton(1, "editHandsRotateAnti", 5, 70);
+		b.setForeground(Aaa.heartsColor);
+		add(b);
+
+		b = new RpfResizeButton(1, "editHandsRotateClock", 5, 70);
+		b.setForeground(Aaa.heartsColor);
+		add(b);
+
 		b = new RpfResizeButton(1, "editHands", -7, 70);
 		b.setForeground(Aaa.heartsColor);
 		add(b);

@@ -70,11 +70,27 @@ public class WeTheyScorePanel extends ClickPanel {
 		g2.draw(rr);
 		g2.setFont(BridgeFonts.bridgeLightFont.deriveFont(lozWidth * 0.065f));
 
-		// We display the cards as seen by the player in the phypos 'South'
-		int compassWe = App.deal.hands[App.compassFromPhyScreenPos(Zzz.SOUTH)].compass;
+		// We display the cards as seen by - 'the target'
 
-		g2.drawString("We (" + Zzz.compass_to_ns_ew_st[compassWe] + ")", x1, y1);
-		g2.drawString("They (" + Zzz.compass_to_ns_ew_st[(compassWe + 1) % 4] + ")", x1 + lozWidth * 0.42f, y1);
+		int targetSeat = 0; // No Instead just have the North South as the left and column
+//		switch (App.scoringFollows) {
+//		case App.scoringFollowsYou: targetSeat = App.deal.getTheYouSeat(); break;
+//		case App.scoringFollowsDeclarer: targetSeat = App.getDeclarerOrTheDefaultYouSeat(); break;
+//		case App.scoringFollowsSouthZone: targetSeat = App.deal.hands[App.compassFromPhyScreenPos(Zzz.South)].compass; break;
+//		}
+		int targetAxis = targetSeat % 2;
+
+		String firstPair = "We";
+		String secondPair = "They";
+		if ((App.deal.getTheYouSeat() % 2) == targetAxis) {
+			firstPair = "You";
+		}
+		else {
+			secondPair = "You";
+		}
+
+		g2.drawString(firstPair + " (" + Zzz.compass_to_ns_ew_st[targetAxis] + ")", x1, y1);
+		g2.drawString(secondPair + " (" + Zzz.compass_to_ns_ew_st[(targetAxis + 1) % 2] + ")", x1 + lozWidth * 0.42f, y1);
 
 		float inset = lozWidth * 0.10f;
 		float left = leftInset + inset;
@@ -87,9 +103,9 @@ public class WeTheyScorePanel extends ClickPanel {
 		float lTop = topInset + lozHeight * 0.10f;
 		g2.draw(new Line2D.Float(leftHalf, lTop, leftHalf, lTop + lozHeight * 0.81f));
 
-		Point score = new Point(-500, -120);
+		Point score = App.deal.getBoardScore();
 
-		score = App.deal.getBoardScore();
+//		if ()
 
 		int mult = ((score.x + score.y > 0) ? 1 : -1);
 		int side = ((score.x + score.y < 0) ? 1 : 0);

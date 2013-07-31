@@ -57,15 +57,15 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 			autoBidDelayTimer.setInitialDelay(App.bidPluseTimerMs);
 			if (App.deal.isBidding()) {
 				Hand hand = App.deal.getNextHandToBid();
-				if (App.autoBid[hand.compass]) {
+				if (App.isAutoBid(hand.compass)) {
 					clearHalfBids();
 					Bid bid;
-					if (hand.compass == Zzz.SOUTH /* && App.isMode(Aaa.NORMAL) */) {
+					if (hand.compass == Zzz.South /* && App.isMode(Aaa.NORMAL) */) {
 						bid = App.deal.generateSouthBid(App.dealCriteria);
 					}
-					else if (hand.compass == Zzz.NORTH) {
+					else if (hand.compass == Zzz.North) {
 						bid = App.deal.PASS;
-					} 
+					}
 					else {
 						bid = App.deal.generateEastWestBid(hand);
 					}
@@ -126,7 +126,7 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 		}
 
 		for (int i = 0; i < 5; i++) {
-			b = new RpfResizeButton(0, Zzz.suitValue_to_cdhsntSt[i], ((i == 4) ? -2 : -1), 20);
+			b = new RpfResizeButton(0, Zzz.suit_to_cdhsntSt[i], ((i == 4) ? -2 : -1), 20);
 			b.addActionListener(this);
 			b.setHoverColor(Aaa.strongHoverColor);
 			b.setBackground(Aaa.bidButsBkColor);
@@ -197,7 +197,7 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 	 */
 	public void actionPerformed(ActionEvent e) {
 
-		if (!App.visCards[App.deal.getNextHandToBid().compass])
+		if (!App.isSeatVisible(App.deal.getNextHandToBid().compass))
 			return;
 
 		String a = e.getActionCommand();
@@ -217,7 +217,7 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 				}
 			}
 			for (int i = 0; i < 5; i++) {
-				if (a == Zzz.suitValue_to_cdhsntSt[i]) {
+				if (a == Zzz.suit_to_cdhsntSt[i]) {
 					setHalfBidSuit(i);
 					break;
 				}
@@ -246,13 +246,13 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 		}
 		else if ((cmd & Zzz.CMD_SUITN) != 0) { // *** The user has pressed a
 												// Suit Key (inc N)
-			int suitValue = (cmd & 0xff);
-			setHalfBidSuit(suitValue);
+			int suit = (cmd & 0xff);
+			setHalfBidSuit(suit);
 		}
 		else if ((cmd & Zzz.CMD_LEVEL) != 0) { // *** The user has pressed a
 												// level Key (1 - 7)
-			int levelValue = (cmd & 0xff);
-			setHalfBidLevel(levelValue);
+			int level = (cmd & 0xff);
+			setHalfBidLevel(level);
 		}
 
 		if (halfBidLevel > -1 && halfBidSuit > -1) {
@@ -271,11 +271,11 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 	public void startAutoBidDelayTimerIfNeeded() {
 		if (App.deal.isBidding()) {
 			Hand hand = App.deal.getNextHandToBid();
-			if (App.autoBid[hand.compass]) {
+			if (App.isAutoBid(hand.compass)) {
 				autoBidDelayTimer.start();
 			}
-			App.gbp.c2_2__empt.setVisible(App.autoBid[hand.compass] == true);
-			App.gbp.c2_2__bbp.setVisible(App.autoBid[hand.compass] == false);
+			App.gbp.c2_2__empt.setVisible(App.isAutoBid(hand.compass) == true);
+			App.gbp.c2_2__bbp.setVisible(App.isAutoBid(hand.compass) == false);
 		}
 	}
 

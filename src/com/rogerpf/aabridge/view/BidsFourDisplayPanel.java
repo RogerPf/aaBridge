@@ -187,7 +187,7 @@ public class BidsFourDisplayPanel extends JPanel {
 			at.addAttribute(TextAttribute.FONT, df, 0, t.length());
 			// at.addAttribute(TextAttribute.FOREGROUND, Aaa.weedyBlack, 0, t.length());
 			at.addAttribute(TextAttribute.FONT, bf, 0, 1 + ctLen);
-			at.addAttribute(TextAttribute.FOREGROUND, Aaa.cdhsColors[App.deal.contract.getSuitValue()], 1, 1 + ctLen);
+			at.addAttribute(TextAttribute.FOREGROUND, Aaa.cdhsColors[App.deal.contract.getSuit()], 1, 1 + ctLen);
 			FontRenderContext frc = g2.getFontRenderContext();
 			TextLayout tl = new TextLayout(at.getIterator(), frc);
 
@@ -258,7 +258,7 @@ public class BidsFourDisplayPanel extends JPanel {
 
 		int startCompass = (nextToBid.compass + 1) % 4;
 
-		for (int i = 0; i < 4; i++) {
+		for (int i : Zzz.zto3) {
 
 			Hand hand = App.deal.getHand((startCompass + i) % 4);
 
@@ -268,8 +268,8 @@ public class BidsFourDisplayPanel extends JPanel {
 
 			Bid bid = null;
 
-			int levelValue = -1;
-			int suitValue = -1;
+			int level = -1;
+			int suit = -1;
 
 			float left = marginLeft + activityWidth * leftTopPercent[phyPos].x;
 			float top = marginTop + activityHeight * leftTopPercent[phyPos].y;
@@ -286,15 +286,15 @@ public class BidsFourDisplayPanel extends JPanel {
 				if (bids.isEmpty())
 					continue;
 				bid = bids.getLast(); // get their last bid
-				levelValue = bid.getLevelValue();
-				suitValue = bid.getSuitValue();
+				level = bid.getLevel();
+				suit = bid.getSuit();
 			}
 			else if (i == 3 && App.isMode(Aaa.REVIEW_BIDDING)) {
 				continue;
 			}
-			else if (App.autoBid[hand.compass] == false) {
-				levelValue = App.gbp.c2_2__bbp.getHalfBidLevel();
-				suitValue = App.gbp.c2_2__bbp.getHalfBidSuit();
+			else if (App.isAutoBid(hand.compass) == false) {
+				level = App.gbp.c2_2__bbp.getHalfBidLevel();
+				suit = App.gbp.c2_2__bbp.getHalfBidSuit();
 
 				// fill the lozenge
 				// ----------------------------------------------
@@ -313,34 +313,34 @@ public class BidsFourDisplayPanel extends JPanel {
 				g2.setColor(Color.BLACK);
 				if (bid == App.deal.PASS) {
 					g2.setFont(PassFont);
-					g2.drawString(Zzz.call_to_string[bid.getCallValue()], left + cardWidth * 0.1f, levelBottom);
+					g2.drawString(Zzz.call_to_string[bid.getCall()], left + cardWidth * 0.1f, levelBottom);
 				}
 				else if (bid == App.deal.DOUBLE) {
 					g2.setFont(DoubleFont);
-					g2.drawString(Zzz.call_to_string[bid.getCallValue()], left + cardWidth * 0.1f, levelBottom);
+					g2.drawString(Zzz.call_to_string[bid.getCall()], left + cardWidth * 0.1f, levelBottom);
 				}
 				else if (bid == App.deal.REDOUBLE) {
 					g2.setFont(RedoubleFont);
-					g2.drawString(Zzz.call_to_string[bid.getCallValue()], left - /* cardWidth */0.1f, levelBottom);
+					g2.drawString(Zzz.call_to_string[bid.getCall()], left - /* cardWidth */0.1f, levelBottom);
 				}
 			}
 			else {
 
-				Color cardColor = (suitValue < 0) ? Aaa.noChosenSuit : Aaa.cdhsColors[suitValue];
+				Color cardColor = (suit < 0) ? Aaa.noChosenSuit : Aaa.cdhsColors[suit];
 				g2.setColor(cardColor);
 
 				// Level Value
-				if (1 <= levelValue && levelValue <= 7) {
+				if (1 <= level && level <= 7) {
 					g2.setColor(Color.BLACK);
 					g2.setFont(levelFont);
-					g2.drawString(Zzz.levelValue_to_levelSt[levelValue], levelLeft, levelBottom);
+					g2.drawString(Zzz.level_to_levelSt[level], levelLeft, levelBottom);
 				}
 
 				// Suit Value
-				if (0 <= suitValue && suitValue <= 4) {
+				if (0 <= suit && suit <= 4) {
 					g2.setColor(cardColor);
 					g2.setFont(symbolFont);
-					g2.drawString(Zzz.suitValue_to_cdhsntSt[suitValue], symbolLeft, symbolBottom);
+					g2.drawString(Zzz.suit_to_cdhsntSt[suit], symbolLeft, symbolBottom);
 				}
 			}
 

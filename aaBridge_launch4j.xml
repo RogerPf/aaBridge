@@ -1,17 +1,7 @@
-<!--
-  Copyright (c) 2013 Roger Pfister.
-  All rights reserved. This program and the accompanying materials
-  are made available under the terms of the GNU Public License v2.0
-  which accompanies this distribution, and is available at
-  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-  
-  Contributors:
-      Roger Pfister - initial API and implementation
--->
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>C:\a\aaBridge_1.0.4.1216.jar</jar>
+  <jar>C:\a\aaBridge_1.0.6.1372.jar</jar>
   <outfile>C:\a\aaBridge.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
@@ -25,17 +15,17 @@
   <icon>\aaBridge.ico</icon>
   <jre>
     <path></path>
-    <minVersion>1.7.0_21</minVersion>
+    <minVersion>1.6.0</minVersion>
     <maxVersion></maxVersion>
     <jdkPreference>preferJre</jdkPreference>
   </jre>
   <versionInfo>
-    <fileVersion>1.0.4.1214</fileVersion>
-    <txtFileVersion>1.0.4.1214</txtFileVersion>
+    <fileVersion>1.0.6.1372</fileVersion>
+    <txtFileVersion>1.0.6.1372</txtFileVersion>
     <fileDescription>Bridge Card Playing Program</fileDescription>
     <copyright>(c) 2013 Roger Pfister</copyright>
-    <productVersion>1.0.4.1216</productVersion>
-    <txtProductVersion>1.0.4.1216</txtProductVersion>
+    <productVersion>1.0.6.1372</productVersion>
+    <txtProductVersion>1.0.6.1372</txtProductVersion>
     <productName>aaBridge</productName>
     <companyName></companyName>
     <internalName>aaBridge</internalName>

@@ -18,6 +18,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.geom.Ellipse2D;
 import java.awt.geom.Point2D;
 import java.awt.geom.RoundRectangle2D;
 
@@ -42,14 +43,21 @@ public class TricksFourDisplayPanel extends JPanel {
 
 	public boolean showCompletedTrick = false;
 	public boolean showThinBox = true;
+	// public boolean finalCardSpecial = false;
+
+	int endOfTrickDownCounter = 0;
 
 	// -----------------------------
 	class Suggestion {
-		int face;
+		int rank;
 		int suit;
 
 		Suggestion() { /* Constructor */
-			face = -1;
+			clear();
+		}
+
+		void clear() {
+			rank = -1;
 			suit = -1;
 		}
 	}
@@ -71,19 +79,42 @@ public class TricksFourDisplayPanel extends JPanel {
 			normalTrickDisplayTimer.stop();
 			normalTrickDisplayTimer.setInitialDelay(App.playPluseTimerMs);
 
-			if (App.deal.isPlaying()) {
+			// App.deal.hideFinish = false; // just in case
+
+			if (App.deal.isPlaying() && App.isMode(Aaa.NORMAL)) {
 				Hand hand = App.deal.getNextHandToPlay();
-				if (hand == null) {
-					assert (false); // can this happen ? stray at end of board ?
+
+				if (showCompletedTrick) {
+
+					// End of trick - click to continue
+					if (App.isPauseAtEotClickWanted() && App.isPauseAtEotClickWanted() && App.isAutoPlay(hand.compass)) {
+						// go around again - we are waiting for showCompletedTrick to be cleared by mouse click
+						App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
+						return;
+					}
+
+					if (App.isAutoPlay(hand.compass) && (App.eotExtendedDisplay > 0)) {
+						if (endOfTrickDownCounter == 0) {
+							endOfTrickDownCounter = 1 + App.eotExtendedDisplay;
+						}
+						if (--endOfTrickDownCounter > 0) {
+							App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
+							return;
+						}
+						showCompletedTrick = false;
+					}
 				}
 
-				if (/*(App.deal.countCardsPlayed() > 3) && */showCompletedTrick && App.isMode(Aaa.NORMAL) && App.nsAutoplayAlways && App.nsAutoplayPause) {
-					// go around again - we are waiting for showCompledTrick to be cleared by mouse click
-					App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
-					return;
+				int played = App.deal.countCardsPlayed();
+				if (played == 52) {
+					return; // happens because we are messing with 'isFinshed()'
 				}
 
-				if (App.autoPlay[hand.compass]) {
+				if (played == 51) {
+					App.deal.hideFinish = true;
+				}
+
+				if (App.isAutoPlay(hand.compass)) {
 					App.con.autoPlayRequest(hand);
 				}
 				else {
@@ -92,7 +123,30 @@ public class TricksFourDisplayPanel extends JPanel {
 					repaint();
 					App.gbp.hdps[hand.compass].repaint();
 				}
+
+				played = App.deal.countCardsPlayed();
+				if (played == 52) {
+					App.deal.hideFinish = true; // Yes well - I know it is already set to true
+					finalCardUnDisplayTimer.start();
+				}
+				else if (App.deal.hideFinish == true) {
+					App.deal.hideFinish = false; // the self play opportunity did not happen
+					// App.gbp.repaint();
+				}
+
 			}
+		}
+	});
+
+	/**
+	*/
+	public Timer finalCardUnDisplayTimer = new Timer(App.finalCardTimerMs, new ActionListener() {
+		public void actionPerformed(ActionEvent evt) {
+			finalCardUnDisplayTimer.stop();
+			// finalCardUnDisplayTimer.setInitialDelay(App.finalCardTimerMs);
+			App.deal.hideFinish = false;
+			App.gbp.matchPanelsToDealState();
+			App.gbp.repaint();
 		}
 	});
 
@@ -120,16 +174,16 @@ public class TricksFourDisplayPanel extends JPanel {
 
 	/**   
 	 */
-	public int getSuggestedFace(int phyScreenPos) {
+	public int getSuggestedRank(int phyScreenPos) {
 		int compass = App.compassFromPhyScreenPos(phyScreenPos);
-		return suggestions[compass].face;
+		return suggestions[compass].rank;
 	}
 
 	/**   
 	 */
-	public void setSuggestedFace(int phyScreenPos, int face) {
+	public void setSuggestedRank(int phyScreenPos, int rank) {
 		int compass = App.compassFromPhyScreenPos(phyScreenPos);
-		suggestions[compass].face = face;
+		suggestions[compass].rank = rank;
 	}
 
 	/**   
@@ -158,14 +212,22 @@ public class TricksFourDisplayPanel extends JPanel {
 
 	/**   
 	 */
+	public void clearAllCardSuggestions() {
+		for (Suggestion sug : suggestions) {
+			sug.clear();
+		}
+	}
+
+	/**   
+	 */
 	public void makeCardSuggestions() {
 		Hand hand = App.deal.getNextHandToPlay();
 		if (hand == null)
 			return; // end of board?
-		int suitValue = hand.makeSuitSuggestion();
-		if (suitValue > -1) {
-			suggestions[hand.compass].suit = suitValue;
-		}
+		int suit = hand.makeSuitSuggestion();
+		// if (suit > -1) {
+		suggestions[hand.compass].suit = suit;
+		// }
 	}
 
 	/**   
@@ -196,9 +258,6 @@ public class TricksFourDisplayPanel extends JPanel {
 		Graphics2D g2 = (Graphics2D) g;
 		Aaa.commonGraphicsSettings(g2);
 
-		// preset the as many common values as possible
-		// ----------------------------------------------
-
 		Dimension panelSize = getSize();
 
 		float panelWidth = (float) panelSize.width;
@@ -208,7 +267,7 @@ public class TricksFourDisplayPanel extends JPanel {
 
 			RoundRectangle2D.Float rr = new RoundRectangle2D.Float();
 
-			float marginLeft = panelWidth * 0.10f;
+			float marginLeft = panelWidth * 0.09f;
 			float marginTop = panelHeight * 0.18f;
 			float marginBottom = panelHeight * 0.18f;
 			float curve = panelWidth * 0.00f;
@@ -218,10 +277,14 @@ public class TricksFourDisplayPanel extends JPanel {
 
 			float fontSize = activityHeight * 0.37f;
 
-			int trickDiff = App.deal.getContractTrickCountSoFar().x - (6 + App.deal.contract.levelValue);
+			int trickDiff = App.deal.getContractTrickCountSoFar().x - (6 + App.deal.contract.level);
 
 			String text = "";
-			if (App.deal.contract == App.deal.PASS) {
+			if (App.deal.isDoneHand()) {
+				g2.setColor(Aaa.diamondsColor);
+				text = "Welcome";
+			}
+			else if (App.deal.contract == App.deal.PASS) {
 				g2.setColor(Aaa.diamondsColor);
 //				fontSize *= 0.8f; 
 				text = "Passed Out";
@@ -250,11 +313,14 @@ public class TricksFourDisplayPanel extends JPanel {
 
 			g2.setFont(BridgeFonts.bridgeBoldFont.deriveFont(activityHeight * 0.16f));
 
-			text = "Click  'Next Board'  bottom left";
+			text = "Click  - Next Board -  bottom left";
 			Aaa.drawCenteredString(g2, text, marginLeft, marginTop + activityHeight * 0.5f, activityWidth, activityHeight * 0.6f);
 
 			return;
 		}
+
+		// preset the as many common values as possible
+		// ----------------------------------------------
 
 		float marginLeft = panelWidth * 0.00f;
 		float marginRight = panelWidth * 0.02f;
@@ -286,7 +352,7 @@ public class TricksFourDisplayPanel extends JPanel {
 
 		RoundRectangle2D.Float rr = new RoundRectangle2D.Float();
 
-		// We display the cards as seen by the player in the phyiscal Pos
+		// We display the cards as seen by the player in the physical Pos
 		// 'South' seat (the target)
 
 		int trickRequested = 0;
@@ -296,16 +362,27 @@ public class TricksFourDisplayPanel extends JPanel {
 			trickRequested = App.reviewTrick;
 			if (trickRequested < 0)
 				return;
-			if (App.reviewCard%4 == 0)
-				trickWinner = App.deal.prevTrickWinner.get(trickRequested);
+			if (App.reviewCard % 4 == 0) {
+				trickWinner = App.deal.prevTrickWinner.get(trickRequested); // was bug in 1362 had trickRequested + 1
+			}
 		}
-		else { // normall mode
+		else { // normal mode
 			trickRequested = App.deal.getCurTrickIndex();
 
 			if (showCompletedTrick && (trickRequested > 0) && App.deal.isCurTrickComplete()) {
 				trickWinner = App.deal.prevTrickWinner.get(trickRequested);
 				trickRequested--;
 			}
+		}
+
+		// Display the 'eot click required' indication (a dot)
+		if (showCompletedTrick && App.isMode(Aaa.NORMAL) && App.isPauseAtEotClickWanted() && App.isAutoPlay(App.deal.getNextHandToPlay().compass)) {
+			double x = marginLeft + activityWidth * 0.04;
+			double y = marginTop + activityHeight * 0.90;
+			g2.setColor(Aaa.eotDotColor);
+			double diameter = activityWidth * 0.04;
+			Ellipse2D.Double circle = new Ellipse2D.Double(x, y, diameter, diameter);
+			g2.fill(circle);
 		}
 
 		// System.out.println( trickRequested );
@@ -334,18 +411,18 @@ public class TricksFourDisplayPanel extends JPanel {
 			}
 
 			if ((card == null)
-					&& (App.autoPlay[hand.compass] || (App.deal.getNextHandToPlay() != hand) || ((App.deal.getNextHandToPlay() == hand) && (showThinBox == false)))) {
+					&& (App.isAutoPlay(hand.compass) || (App.deal.getNextHandToPlay() != hand) || ((App.deal.getNextHandToPlay() == hand) && (showThinBox == false)))) {
 				return;
 			}
 
-			int faceValue = suggestions[hand.compass].face;
-			int suitValue = suggestions[hand.compass].suit;
+			int rank = suggestions[hand.compass].rank;
+			int suit = suggestions[hand.compass].suit;
 
 			if (card != null) {
-				suggestions[hand.compass].face = -1;
+				suggestions[hand.compass].rank = -1;
 				suggestions[hand.compass].suit = -1;
-				faceValue = card.getFaceValue();
-				suitValue = card.getSuitValue();
+				rank = card.getRank();
+				suit = card.getSuit();
 			}
 
 			float left = marginLeft + activityWidth * leftTopPercent[phyPos].x;
@@ -375,25 +452,25 @@ public class TricksFourDisplayPanel extends JPanel {
 				g2.fill(rr);
 			}
 
-			Color cardColor = (suitValue < 0) ? Aaa.noChosenSuit : Aaa.cdhsSugColors[suitValue];
+			Color cardColor = (suit < 0) ? Aaa.noChosenSuit : Aaa.cdhsSugColors[suit];
 			g2.setColor(cardColor);
 
 			float stkSize = (card == null) ? blackLineWidth : (colorLineWidth * ((hand == trickWinner) ? 2.5f : 1));
 			g2.setStroke(new BasicStroke(stkSize));
 			g2.draw(rr);
 
-			// Suit Value
-			if (0 <= suitValue && suitValue <= 3) {
-				g2.setColor((card == null) ? cardColor : Aaa.cdhsWeakColors[suitValue]);
+			// Suit
+			if (0 <= suit && suit <= 3) {
+				g2.setColor((card == null) ? cardColor : Aaa.cdhsWeakColors[suit]);
 				g2.setFont(symbolFont);
-				g2.drawString(Zzz.suitValue_to_cdhsntSt[suitValue], symbolLeft, symbolBottom);
+				g2.drawString(Zzz.suit_to_cdhsntSt[suit], symbolLeft, symbolBottom);
 			}
 
-			// Face Value
-			if (2 <= faceValue && faceValue <= 14) {
-				g2.setColor((card == null) ? cardColor : Aaa.cdhsColors[suitValue]);
+			// Rank
+			if (2 <= rank && rank <= 14) {
+				g2.setColor((card == null) ? cardColor : Aaa.cdhsColors[suit]);
 				g2.setFont(faceFont);
-				g2.drawString(Zzz.faceValue_to_faceSt[faceValue] + "", faceLeft, faceBottom);
+				g2.drawString(Zzz.rank_to_rankSt[rank] + "", faceLeft, faceBottom);
 			}
 		}
 

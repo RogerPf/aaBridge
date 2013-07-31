@@ -16,11 +16,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
+import java.io.File;
 
 import javax.swing.Timer;
 
 import com.rogerpf.aabridge.model.Bid;
 import com.rogerpf.aabridge.model.Card;
+import com.rogerpf.aabridge.model.Deal;
 import com.rogerpf.aabridge.model.Hand;
 
 /**   
@@ -33,7 +35,40 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 		public void actionPerformed(ActionEvent evt) {
 			postContructionInitTimer.stop();
 
-			//CmdHandler.readDealIfExists("test21.aaBridge"); // <<<<<<<<<<<<<<<<<<< TEST <<<<<<<<<<<<<<
+			for (String s : App.args) {
+				System.out.println(s);
+			}
+
+			// Is there a deal on the command line - as used by windows file associations
+			boolean dealLoaded = false;
+			if (App.args != null && App.args.length != 0 && App.args[0] != null && !App.args[0].isEmpty()) {
+				File file = new File(App.args[0]);
+				if (file.exists()) {
+					String path = (file.getParentFile().getPath());
+					if (path.endsWith(File.separator) == false)
+						path += File.separator;
+					String fileName = file.getName();
+					dealLoaded = CmdHandler.readDealIfExists(path, fileName);
+				}
+			}
+			
+			// Is there a deal called test in the saves folder?
+			if (dealLoaded == false) {
+				String dealName = "test";
+				dealLoaded = CmdHandler.readDealIfExists(App.savesPath, dealName + App.dotDealExt);
+			}
+			
+			/** 
+			 * The 'donehand' has already been constructed.
+			 * To use it all we need to do it to - do nothing
+			 * Otherwise we can create the deal with the correct criteria
+			 */
+			if (dealLoaded == false) {
+				if (App.startWithDoneHand == false) {
+					App.deal = Deal.nextBoard(0, (App.watchBidding == false), App.dealCriteria, App.youSeatForNewDeal);
+				}
+			}
+
 
 			App.frame.splitPaneHorz.setDividerLocation(App.horzDividerLocation);
 			App.frame.splitPaneVert.setDividerLocation(App.vertDividerLocation);
@@ -41,7 +76,9 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 
 			App.gbp.matchPanelsToDealState();
 			App.gbp.c2_2__bbp.startAutoBidDelayTimerIfNeeded();
-
+			if (App.deal.isPlaying()) {
+				App.gbp.c1_1__tfdp.makeCardSuggestions(); // for the "test" file if loaded
+			}
 			App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
 
 			App.gbp.dealMajorChange();
@@ -66,22 +103,23 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 			App.allConstructionComplete = true;
 			App.frame.setVisible(true);
 
-			extraTestTimer.start();
+			if (App.runTestsAtStartUp) {
+				CmdHandler.runTests();
+			}
+
+//			extraTestTimer.start();
 		}
 	});
 
-	/**
-	 */
-	Timer extraTestTimer = new Timer(500, new ActionListener() {
-		public void actionPerformed(ActionEvent evt) {
-			extraTestTimer.stop();
-//			
-//			App.setMode(Aaa.REVIEW_BIDDING);
-//			
-//			App.gbp.matchPanelsToDealState();
-//			App.frame.repaint();
-		}
-	});
+//	/**
+//	 */
+//	Timer extraTestTimer = new Timer(500, new ActionListener() {
+//		public void actionPerformed(ActionEvent evt) {
+//			extraTestTimer.stop();
+//
+//		}
+//		
+//	});
 
 	private static char previous_char = 0;
 	private static long previous_time = 0;
@@ -165,8 +203,10 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 		if (b != null) { // real bid
 			App.deal.makeBid(b);
 			if (App.deal.isAuctionFinished()) {
+				App.calcCompassPhyOffset();
+				App.gbp.dealDirectionChange();
 				if (App.deal.contract == App.deal.PASS)
-					voiceTheBid(null);
+					voiceTheBid(null); // recursive
 				else
 					App.gbp.c1_1__bfdp.biddingCompleteDelayTimer.start();
 				return;
@@ -189,18 +229,14 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 
 	/**
 	 */
-	public void selfPlayOpportunity(Hand hand) { // Only the NS get here
+	public void selfPlayOpportunity(Hand hand) {
+
+		assert (App.isAutoPlay(hand.compass) == false); // only non autoplay hands are allowed to call this
 
 		Card card = null;
 
-		if (App.nsAutoSingletons && App.isMode(Aaa.NORMAL)) {
-			card = hand.getSelfPlayableCard(App.nsAutoAdjacent);
-		}
-
-		if (card == null) {
-			if (App.nsAutoplayAlways && App.isMode(Aaa.NORMAL)) {
-				card = hand.dumbAuto();
-			}
+		if (App.youAutoSingletons && App.isMode(Aaa.NORMAL)) {
+			card = hand.getSelfPlayableCard(App.youAutoAdjacent);
 		}
 
 		if (card != null) {

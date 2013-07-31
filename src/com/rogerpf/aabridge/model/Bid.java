@@ -10,6 +10,8 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.model;
 
+import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.Serializable;
 
 /**
@@ -22,73 +24,90 @@ public class Bid implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 6958033952065344529L;
-	public final int levelValue;
-	final int suitValue;
+	public int level;
+	public int suit;
 	transient char suitCh;
 
 	public Bid(int levelV, int suitV) {
 		assert (1 <= levelV && levelV <= 7);
-		assert (suitV == Zzz.CLUBS || suitV == Zzz.DIAMONDS || suitV == Zzz.HEARTS || suitV == Zzz.SPADES || suitV == Zzz.NOTRUMPS);
-		levelValue = levelV;
-		suitValue = suitV;
-		suitCh = (char) Zzz.suitValue_to_cdhsnCh[suitValue];
+		assert (suitV == Zzz.Clubs || suitV == Zzz.Diamonds || suitV == Zzz.Hearts || suitV == Zzz.Spades || suitV == Zzz.Notrumps);
+		level = levelV;
+		suit = suitV;
+		suitCh = (char) Zzz.suit_to_cdhsnCh[suit];
 	}
 
 	public Bid(int c) {
 		assert (c == Zzz.NULL_BID || c == Zzz.PASS || c == Zzz.DOUBLE || c == Zzz.REDOUBLE);
-		levelValue = c;
-		suitValue = -1;
+		level = c;
+		suit = -1;
+	}
+
+	private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
+		ObjectInputStream.GetField fields = in.readFields(); // magic
+
+		// field renamed on 2013-July-09
+		if (fields.defaulted("level")) {
+			level = fields.get("levelValue", (int) 0xdeadbeef);
+		}
+		else {
+			level = fields.get("level", (int) 0xdeadbeef);
+		}
+
+		// field renamed on 2013-July-09
+		if (fields.defaulted("suit")) {
+			suit = fields.get("suitValue", (int) 0xdeadbeef);
+		}
+		else {
+			suit = fields.get("suit", (int) 0xdeadbeef);
+		}
 	}
 
 	public boolean isCall() {
-		return (suitValue == -1);
+		return (suit == -1);
 	}
 
 	// --------------------------------
-	public int getCallValue() {
-		return (isCall()) ? levelValue : -1;
+	public int getCall() {
+		return (isCall()) ? level : -1;
 	}
 
-	// public char getCallCh() {
-	// return (isCall()) ? Zzz.callValue_to_char[suitValue] : '?';
-	// }
 	public String getCallSt() {
-		return (isCall()) ? Zzz.call_to_string[levelValue] : "?";
+		return (isCall()) ? Zzz.call_to_string[level] : "?";
 	}
 
 	public String getCallStShort() {
-		return (isCall()) ? Zzz.call_to_string_short[levelValue] : "?";
+		return (isCall()) ? Zzz.call_to_string_short[level] : "?";
 	}
 
 	// --------------------------------
-	public int getLevelValue() {
-		return (isCall()) ? -1 : levelValue;
+	public int getLevel() {
+		return (isCall()) ? -1 : level;
 	}
 
 	public char getLevelCh() {
-		return (isCall()) ? '?' : Zzz.levelValue_to_levelCh[levelValue];
+		return (isCall()) ? '?' : Zzz.level_to_levelCh[level];
 	}
 
 	public String getLevelSt() {
-		return (isCall()) ? "?" : Zzz.levelValue_to_levelSt[levelValue];
+		return (isCall()) ? "?" : Zzz.level_to_levelSt[level];
 	}
 
 	// --------------------------------
-	public int getSuitValue() {
-		return (isCall()) ? -1 : suitValue;
+	public int getSuit() {
+		return (isCall()) ? -1 : suit;
 	}
 
 	public char getSuitCh() {
-		return (isCall()) ? '?' : Zzz.suitValue_to_cdhsnCh[suitValue];
+		return (isCall()) ? '?' : Zzz.suit_to_cdhsnCh[suit];
 	}
 
 	public String getSuitSt() {
-		return (isCall()) ? "?" : Zzz.suitValue_to_cdhsntSt[suitValue];
+		return (isCall()) ? "?" : Zzz.suit_to_cdhsntSt[suit];
 	}
 
 	// --------------------------------
 	public String toString() {
-		return (isCall() == false) ? getLevelSt() + getSuitSt() : Zzz.call_to_string[levelValue];
+		return (isCall() == false) ? getLevelSt() + getSuitSt() : Zzz.call_to_string[level];
 	}
 
 	/**
@@ -99,14 +118,14 @@ public class Bid implements Serializable {
 							// compariator
 		if (cb.isCall())
 			return false; // they should not do this
-		if (levelValue > cb.levelValue)
+		if (level > cb.level)
 			return false;
-		if (levelValue < cb.levelValue)
+		if (level < cb.level)
 			return true;
 		// equal levels
-		if (suitValue > cb.suitValue)
+		if (suit > cb.suit)
 			return false;
-		if (suitValue < cb.suitValue)
+		if (suit < cb.suit)
 			return true;
 		return true; // this incomming bid is the same and so invalid hence we
 						// return true

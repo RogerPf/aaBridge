@@ -41,10 +41,4 @@ public class Bal extends ArrayList<Bid> implements Serializable {
 		else
 			return remove(size() - 1);
 	}
-
-	public Bid getSafe(int i) {
-		if (0 <= i && i < size())
-			return get(i);
-		return null;
-	}
 }

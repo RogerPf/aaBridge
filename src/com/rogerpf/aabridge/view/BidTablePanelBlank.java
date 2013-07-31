@@ -33,7 +33,7 @@ public class BidTablePanelBlank extends ClickPanel implements ActionListener {
 
 		Font stdTextFont = BridgeFonts.bridgeLightFont.deriveFont(14f);
 
-		RpfResizeButton b = new RpfResizeButton(0, "Show Bidding", 45, 15, 0.8f);
+		RpfResizeButton b = new RpfResizeButton(0, "Show Bidding", 50, 15, 0.8f);
 		b.addActionListener(this);
 		b.setFont(stdTextFont);
 		add(b);

@@ -76,6 +76,9 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 
 	int phyScreenPos;
 	public Hand hand = null;
+
+	Rectangle2D youDisplayRect;
+
 	FragDisplayInfo[] fdiA = new FragDisplayInfo[4];
 
 	void repaintTl(FragDisplayInfo fdi) {
@@ -126,9 +129,9 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 		Aaa.commonGraphicsSettings(g2);
 
 		g2.setFont(BridgeFonts.faceAndSymbFont.deriveFont(width * 0.8f));
-		g2.setColor(Aaa.cdhsColors[card.getSuitValue()]);
+		g2.setColor(Aaa.cdhsColors[card.getSuit()]);
 
-		String text = card.getFaceSt();
+		String text = card.getRankSt();
 		Aaa.drawCenteredString(g2, text, 0, 0, width, width);
 
 		App.con.setDragImage(dragImage);
@@ -176,27 +179,27 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 		assert (App.deal.getNextHandToPlay() == hand);
 
 		Boolean playing = App.deal.isPlaying();
-		if (!playing || playing && !App.visCards[hand.compass])
+		if (!playing || playing && !App.isSeatVisible(hand.compass))
 			return;
 
 		Card card = null;
 		boolean repaintNeeded = false;
-		int faceValueSuggested = App.gbp.c1_1__tfdp.getSuggestedFace(phyScreenPos);
-		int suitValueSuggested = App.gbp.c1_1__tfdp.getSuggestedSuit(phyScreenPos);
+		int rankSuggested = App.gbp.c1_1__tfdp.getSuggestedRank(phyScreenPos);
+		int suitSuggested = App.gbp.c1_1__tfdp.getSuggestedSuit(phyScreenPos);
 
 		if ((cmd & Aaa.CMD_SUIT) != 0) { // *** The user has pressed a Suit Key
-			int suitValue = (cmd & 0xff);
-			if (hand.isSuitSelectable(suitValue)) {
+			int suit = (cmd & 0xff);
+			if (hand.isSuitSelectable(suit)) {
 				repaintNeeded = true;
 				// set/clear these two values now, but it will often have been
 				// unneeded
-				App.gbp.c1_1__tfdp.setSuggestedFace(phyScreenPos, -1);
-				App.gbp.c1_1__tfdp.setSuggestedSuit(phyScreenPos, suitValue);
+				App.gbp.c1_1__tfdp.setSuggestedRank(phyScreenPos, -1);
+				App.gbp.c1_1__tfdp.setSuggestedSuit(phyScreenPos, suit);
 
-				card = hand.getCardIfSingletonInSuit(suitValue);
+				card = hand.getCardIfSingletonInSuit(suit);
 				if (card == null) { // must have at least two as suit isselectable
-					if (faceValueSuggested > 0) {
-						card = hand.getCardIfMatching(suitValue, faceValueSuggested);
+					if (rankSuggested > 0) {
+						card = hand.getCardIfMatching(suit, rankSuggested);
 					}
 				}
 			}
@@ -204,23 +207,23 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 		}
 		else if ((cmd & Aaa.CMD_FACE) != 0) { // *** The user has pressed a Face
 												// Key
-			int faceValue = (cmd & 0xff);
-			int count = hand.faceSelectableCount(faceValue);
+			int rank = (cmd & 0xff);
+			int count = hand.cardSelectableCount(rank);
 			if (count > 0) {
 				// set/clear these two values now, but it will often have been unneeded
-				App.gbp.c1_1__tfdp.setSuggestedFace(phyScreenPos, faceValue);
+				App.gbp.c1_1__tfdp.setSuggestedRank(phyScreenPos, rank);
 				App.gbp.c1_1__tfdp.setSuggestedSuit(phyScreenPos, -1);
 
 				if (count == 1) {
-					card = hand.faceSelectableGetOnlyCard(faceValue);
+					card = hand.cardSelectableGetOnlyCard(rank);
 					if (card == null) {
-						if (suitValueSuggested > -1) {
-							card = hand.getCardIfMatching(suitValueSuggested, faceValue);
+						if (suitSuggested > -1) {
+							card = hand.getCardIfMatching(suitSuggested, rank);
 						}
 					}
 				}
 				else { // (count > 1)
-					App.gbp.c1_1__tfdp.setSuggestedFace(phyScreenPos, faceValue);
+					App.gbp.c1_1__tfdp.setSuggestedRank(phyScreenPos, rank);
 					repaintNeeded = true;
 				}
 			}
@@ -246,10 +249,13 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 		public void mouseMoved(MouseEvent e) {
 			// System.out.println("Mousemoved");
 
+			if (App.youAutoplayAlways && App.isMode(Aaa.NORMAL) && App.deal.isPlaying())
+				return;
+
 			Boolean editing = App.isMode(Aaa.EDIT_HANDS);
 			Boolean playing = App.isMode(Aaa.EDIT_PLAY) || App.isMode(Aaa.NORMAL) && App.deal.isPlaying();
 
-			if (!(editing || playing && App.visCards[hand.compass] && !App.autoPlay[hand.compass]))
+			if (!(editing || playing && App.isSeatVisible(hand.compass) && !App.isAutoPlay(hand.compass)))
 				return;
 
 			Point ep = e.getPoint();
@@ -257,7 +263,7 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 			Frag[] frags = getAppropriateFrags();
 
 			for (Frag frag : frags) {
-				FragDisplayInfo fdi = fdiA[frag.suitValue];
+				FragDisplayInfo fdi = fdiA[frag.suit];
 				if (fdi.tl == null)
 					continue; // no cards displayed in this frag
 								// at the moment
@@ -268,7 +274,7 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 			}
 
 			for (Frag frag : frags) {
-				FragDisplayInfo fdi = fdiA[frag.suitValue];
+				FragDisplayInfo fdi = fdiA[frag.suit];
 				if (fdi.tl == null)
 					continue; // no cards displayed in this frag at the moment
 
@@ -312,15 +318,25 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 				return;
 			}
 
-			Boolean playing = App.isMode(Aaa.EDIT_PLAY) || App.isMode(Aaa.NORMAL) && App.deal.isPlaying();
-			if (!(playing && App.visCards[hand.compass] && !App.autoPlay[hand.compass]))
+			if (App.isMode(Aaa.EDIT_PLAY) && youDisplayRect.contains(e.getPoint())) {
+				App.deal.youSeatHint = hand.compass;
+				App.gbp.dealMajorChange();
+				App.frame.repaint();
 				return;
+			}
+
+			App.gbp.c1_1__tfdp.ClearShowCompletedTrick();
+
+			Boolean playing = App.isMode(Aaa.EDIT_PLAY) || App.isMode(Aaa.NORMAL) && App.deal.isPlaying();
+			if (!(playing && App.isSeatVisible(hand.compass) && !App.isAutoPlay(hand.compass))) {
+				return;
+			}
 
 			Frag[] frags = getAppropriateFrags();
 
 			// Action existing selected card (if any)
 			for (Frag frag : frags) {
-				FragDisplayInfo fdi = fdiA[frag.suitValue];
+				FragDisplayInfo fdi = fdiA[frag.suit];
 				if ((fdi.highlightIndex > -1) && fdi.highlightSel) {
 					card = frag.get(fdi.highlightIndex);
 					fdi.clearHighlight();
@@ -331,7 +347,7 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 			}
 
 			for (Frag frag : frags) {
-				FragDisplayInfo fdi = fdiA[frag.suitValue];
+				FragDisplayInfo fdi = fdiA[frag.suit];
 				if (fdi.tl == null)
 					continue; // no cards displayed in this suit
 								// at the moment
@@ -363,15 +379,13 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 			Boolean editing = App.isMode(Aaa.EDIT_HANDS);
 			Boolean playing = App.isMode(Aaa.EDIT_PLAY) || App.isMode(Aaa.NORMAL) && App.deal.isPlaying();
 
-			if (!(editing || playing && App.visCards[hand.compass] && !App.autoPlay[hand.compass]))
+			if (!(editing || playing && App.isSeatVisible(hand.compass) && !App.isAutoPlay(hand.compass)))
 				return;
-
-			// App.gbp.c1_1__tfdp.ClearShowCompletedTrick();
 
 			Frag[] frags = getAppropriateFrags();
 
 			for (Frag frag : frags) {
-				FragDisplayInfo fdi = fdiA[frag.suitValue];
+				FragDisplayInfo fdi = fdiA[frag.suit];
 				if (fdi.tl == null)
 					continue; // no cards displayed in this suit
 								// at the moment
@@ -414,7 +428,7 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 			Frag[] frags = getAppropriateFrags();
 
 			for (Frag frag : frags) {
-				FragDisplayInfo fdi = fdiA[frag.suitValue];
+				FragDisplayInfo fdi = fdiA[frag.suit];
 				if (fdi.highlightIndex == -1)
 					continue;
 				if (fdi.tl == null)
@@ -485,46 +499,45 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 
 	/**
 	*/
-	// @SuppressWarnings("unusedLocal")
 	public String generateTestCards(Frag frag) {
-		if (hand.compass == Zzz.NORTH) {
-			if (frag.suitValue == Zzz.SPADES)
+		if (hand.compass == Zzz.North) {
+			if (frag.suit == Zzz.Spades)
 				return new String("AKQJT98765432");
-			if (frag.suitValue == Zzz.HEARTS)
+			if (frag.suit == Zzz.Hearts)
 				return new String("AKQJT9876543");
-			if (frag.suitValue == Zzz.DIAMONDS)
+			if (frag.suit == Zzz.Diamonds)
 				return new String("AKQJT987654");
-			if (frag.suitValue == Zzz.CLUBS)
+			if (frag.suit == Zzz.Clubs)
 				return new String("AKQJT98765");
 		}
-		else if ((hand.compass == Zzz.EAST)) {
-			if (frag.suitValue == Zzz.SPADES)
+		else if ((hand.compass == Zzz.East)) {
+			if (frag.suit == Zzz.Spades)
 				return new String("AKQJT9876");
-			if (frag.suitValue == Zzz.HEARTS)
+			if (frag.suit == Zzz.Hearts)
 				return new String("JT9876543");
-			if (frag.suitValue == Zzz.DIAMONDS)
+			if (frag.suit == Zzz.Diamonds)
 				return new String("AKQJT987");
-			if (frag.suitValue == Zzz.CLUBS)
+			if (frag.suit == Zzz.Clubs)
 				return new String("J9876543");
 		}
-		else if ((hand.compass == Zzz.SOUTH)) {
-			if (frag.suitValue == Zzz.SPADES)
+		else if ((hand.compass == Zzz.South)) {
+			if (frag.suit == Zzz.Spades)
 				return new String("AKQJT98");
-			if (frag.suitValue == Zzz.HEARTS)
+			if (frag.suit == Zzz.Hearts)
 				return new String("J987654");
-			if (frag.suitValue == Zzz.DIAMONDS)
+			if (frag.suit == Zzz.Diamonds)
 				return new String("AKQJT9");
-			if (frag.suitValue == Zzz.CLUBS)
+			if (frag.suit == Zzz.Clubs)
 				return new String("JT9876");
 		}
-		else if ((hand.compass == Zzz.WEST)) {
-			if (frag.suitValue == Zzz.SPADES)
+		else if ((hand.compass == Zzz.West)) {
+			if (frag.suit == Zzz.Spades)
 				return new String("QT98");
-			if (frag.suitValue == Zzz.HEARTS)
+			if (frag.suit == Zzz.Hearts)
 				return new String("AQ7");
-			if (frag.suitValue == Zzz.DIAMONDS)
+			if (frag.suit == Zzz.Diamonds)
 				return new String("");
-			if (frag.suitValue == Zzz.CLUBS)
+			if (frag.suit == Zzz.Clubs)
 				return new String("KJ7432");
 		}
 		return new String("");
@@ -565,36 +578,27 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 		g2.setColor(Aaa.handAreaOffWhite);
 		g2.draw(rd);
 
-		// fill the nameLozenge
+		// fill the you Lozenge
 		// ---------------------------------------------------
 
-		float nameLozengeHeight = (dealLozengeHeight) * 0.18f;
+		float youLozengeHeight = (dealLozengeHeight) * 0.18f;
 
-		rd = new Rectangle2D.Float(boarderThickness, boarderThickness, dealLozengeWidth, nameLozengeHeight);
+		/* kept */youDisplayRect = new Rectangle2D.Float(boarderThickness, boarderThickness, dealLozengeWidth, youLozengeHeight);
 
-//		boolean auto = ((App.deal.isBidding()) ? App.autoBid : App.autoPlay)[hand.compass];
-//		boolean activeB = (App.deal.getNextHandToAct() == hand) && !auto && App.gbp.c1_1__tfdp.showThinBox;
+		boolean youSeatUs = (App.deal.getTheYouSeat() == hand.compass);
 
-		boolean activeB = false;
-
-		Color bannerColor = (activeB) ? Aaa.handActiveColor : Aaa.handBannerBg;
-		Color pointsColor = (activeB) ? Aaa.veryVeryWeedyYel : Aaa.handBannerText;
-
-//		if (App.nsAutoplayAlways)  
-//		{ 
-//			pointsColor = Aaa.veryVeryWeedyBlack;
-//			bannerColor = Aaa.handBanner;
-//		}
+		Color bannerColor = (youSeatUs) ? Aaa.youSeatBannerBk : Aaa.handBannerBk;
+		Color pointsColor = (youSeatUs) ? Aaa.handBannerText : Aaa.handBannerText;
 
 		g2.setColor(bannerColor);
-		g2.fill(rd);
+		g2.fill(youDisplayRect);
 
 		g2.setStroke(ourOutline);
 		g2.setColor(Color.white);
-		g2.draw(rd);
+		g2.draw(youDisplayRect);
 
 		float xy = boarderThickness;
-		float nlh = nameLozengeHeight;
+		float nlh = youLozengeHeight;
 
 		// fill the NESW indicator
 		// -----------------------------------------------------
@@ -617,47 +621,75 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 		g2.setColor(Color.WHITE);
 		Aaa.drawCenteredString(g2, letter, xy, xy, nlh, nlh);
 
-		// show the points
-		// -----------------------------------------------------
-		boolean visCards = App.visCards[hand.compass] || App.deal.isFinished();
+		g2.setColor(pointsColor); // Also used by the 'You' field
 
-		if (App.showPoints && visCards) {
-			g2.setColor(pointsColor);
-			Font pointsFont = BridgeFonts.bridgeBoldFont.deriveFont(nlh * 1.0f);
+		// show the points
+		// ------------------------------------------------------------------
+		boolean visSeat = App.isSeatVisible(hand.compass);
+		String hiddenText = "hidden";
+		if (App.deal.isDoneHand()) {
+			hiddenText = "Welcome";
+			visSeat = false;
+		}
+
+		Font pointsFont = BridgeFonts.bridgeBoldFont.deriveFont(nlh * 1.0f);
+		if (App.showPoints && visSeat) { // && isModeAnyEdit()
 			g2.setFont(pointsFont);
 			Aaa.drawCenteredString(g2, Integer.toString(hand.countPoints()), dealLozengeWidth * 0.88f, xy, nlh, nlh);
 		}
 
-		// // Player Direction (compass) text
-		// // ------------------------------------------------------------------
-		//
-		// float playerNameFontSize = bridgeLightFontSize * 1.3f;
-		// Font playerNameFont =
-		// BridgeFonts.bridgeLightFont.deriveFont(playerNameFontSize);
-		// g2.setFont(playerNameFont);
-		//
-		// g2.drawString(hand.playerName, (int) (xy + nlh * 1.5),
-		// (int) (xy + nlh - playerNameFontSize * 0.16f) );
+		boolean showLTC = App.showLTC && visSeat && App.isModeAnyEdit() == false;
+		if (showLTC) { //
+			g2.setFont(pointsFont);
+			int v = hand.countLosingTricks_x2();
+			float p = 0.57f;
+			Aaa.drawCenteredString(g2, Integer.toString(v / 2), dealLozengeWidth * p, xy, nlh, nlh);
+			if (v % 2 == 1) {
+				p += 0.09;
+				Aaa.drawCenteredString(g2, "" + (char) 0xbd, dealLozengeWidth * p, xy, nlh, nlh);
+			}
+		}
+
+		// The "You" text
+		// ------------------------------------------------------------------
+		if (youSeatUs) {
+			float youTextFontSize = bridgeLightFontSize * 1.2f;
+			Font youTextFont = BridgeFonts.bridgeLightFont.deriveFont(youTextFontSize);
+			g2.setFont(youTextFont);
+			String s = (showLTC) ? "   " : "       ";
+			g2.drawString(s + "You", (int) (xy + nlh * 1.5), (int) (xy + nlh - youTextFontSize * 0.16f));
+		}
+		else if (App.isMode(Aaa.EDIT_PLAY)) {
+			if (App.deal.isDeclarerValid() && App.deal.contractCompass == hand.partner().compass) {
+				// nothing we don't want to show this on the dummy hand
+			}
+			else {
+				float youTextFontSize = bridgeLightFontSize * 1.0f;
+				Font youTextFont = BridgeFonts.bridgeLightFont.deriveFont(youTextFontSize);
+				g2.setFont(youTextFont);
+				g2.drawString("Click to be You", (int) (xy + nlh * 1.5), (int) (xy + nlh - youTextFontSize * 0.16f));
+			}
+		}
 
 		// The four Suits
 		// ------------------------------------------------------------------
 
 		// the four hands
 
-		float suitAreaHeight = (float) (dealLozengeHeight - nameLozengeHeight);
+		float suitAreaHeight = (float) (dealLozengeHeight - youLozengeHeight);
 
 		float suitLineHeight = (float) suitAreaHeight / 4.0f;
 
-		float suitLineStartY = (float) (boarderThickness + lineThickness + nameLozengeHeight);
+		float suitLineStartY = (float) (boarderThickness + lineThickness + youLozengeHeight);
 
 		float suitLineStartX = (float) (boarderThickness + lineThickness);
 
 		float handFontSize = (float) (suitLineHeight) * 0.97f;
 
-		if (!visCards) {
+		if (!visSeat) {
 			g2.setFont(BridgeFonts.bridgeLightFont.deriveFont(handFontSize));
 			g2.setColor(Aaa.veryWeedyBlack);
-			g2.drawString("hidden", dealLozengeWidth * 0.3f, dealLozengeHeight * 0.650f);
+			g2.drawString(hiddenText, dealLozengeWidth * 0.3f, dealLozengeHeight * 0.650f);
 		}
 
 		Font suitSymbolsFont = BridgeFonts.faceAndSymbFont.deriveFont(handFontSize * 0.65f);
@@ -667,10 +699,10 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 
 		for (Frag frag : frags) {
 
-			FragDisplayInfo fdi = fdiA[frag.suitValue];
+			FragDisplayInfo fdi = fdiA[frag.suit];
 
 			// Spades on the top row down to clubs last
-			int row = Zzz.SPADES - frag.suitValue;
+			int row = Zzz.Spades - frag.suit;
 			fdi.tl = null;
 
 			String rawCards = frag.toScrnStr();
@@ -692,14 +724,14 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 
 			// Suit Symbol
 			if (showSuitSymbol) {
-				g2.setColor(Aaa.cdhsWeakColors[frag.suitValue]);
+				g2.setColor(Aaa.cdhsWeakColors[frag.suit]);
 				g2.setFont(suitSymbolsFont);
 				g2.drawString(frag.getSuitSt(), lhs, y - suitLineStartY * 0.09f);
 				g2.setColor(Color.black);
 			}
 
 			// Cards of the frag
-			if (cards.isEmpty() || !visCards)
+			if (cards.isEmpty() || !visSeat)
 				continue;
 
 			AttributedString astr = new AttributedString(cards);
@@ -713,7 +745,7 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 			fdi.tl = new TextLayout(astr.getIterator(), frc);
 			fdi.layoutOriginX = x;
 			fdi.layoutOriginY = y;
-			g2.setColor(Aaa.cdhsColors[frag.suitValue]);
+			g2.setColor(Aaa.cdhsColors[frag.suit]);
 			fdi.tl.draw(g2, x, y);
 
 			// Compute the mouse click location relative to

@@ -68,7 +68,7 @@ public class MsgDisplayPanel extends ClickPanel implements ComponentListener {
 
 		textArea.setBorder(BorderFactory.createCompoundBorder(BorderFactory.createLineBorder(Aaa.weedyBlack, bt), BorderFactory.createEmptyBorder(0, mt, 0, mt)));
 
-		textArea.setFont(BridgeFonts.bridgeLightFont.deriveFont(panelWidth * 0.092f));
+		textArea.setFont(BridgeFonts.bridgeLightFont.deriveFont(panelWidth * 0.064f));
 
 	}
 

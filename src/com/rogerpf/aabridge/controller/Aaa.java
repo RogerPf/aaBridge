@@ -64,6 +64,7 @@ public class Aaa {
 	                    
 	public static final Color weedyBlack       = new Color(110, 110, 110);
 	public static final Color veryWeedyBlack   = new Color(200, 200, 200);
+	public static final Color eotDotColor      = new Color(160, 160, 160);
 	public static final Color veryVeryWeedyBlack= new Color(232, 232, 232);
 	public static final Color veryVeryWeedyYel = new Color(215, 200, 130);
 	public static final Color bidRequestLine   = new Color(255, 110, 255);
@@ -72,6 +73,8 @@ public class Aaa {
 	public static final Color bidButsBkColor   = new Color(199, 230, 240);
  	public static final Color bidTableBkColor  = new Color(205, 230, 230);
                         
+	public static final Color optionsTitleGreen= new Color( 20,  90,  20);
+
 	public static final Color cardClickedOn    = new Color(150, 150, 150);
 //	public static final Color cardHover        = new Color(255, 206, 0);
 	public static final Color cardHover        = new Color(240, 190, 0);
@@ -87,7 +90,8 @@ public class Aaa {
 	public static final Color vunerableColor   = new Color(203, 120, 120);
 	public static final Color vunerabilityBox  = new Color(153, 204, 204);
 	public static final Color vunOffWhite      = new Color(245, 245, 245);
-	public static final Color handBannerBg     = new Color(240, 240, 240);
+	public static final Color handBannerBk     = new Color(235, 235, 235);
+	public static final Color youSeatBannerBk  = new Color(250, 235, 235);
 	public static final Color handBannerText   = new Color(220, 220, 220);
 	public static final Color genOffWhite      = new Color(245, 245, 245);
 	public static final Color passButtonColor  = new Color(140, 200, 140);
@@ -120,6 +124,7 @@ public class Aaa {
 	/**
 	 */
 	public static void commonGraphicsSettings(Graphics2D g2) {
+		// ************************************************************************
 		g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_LCD_HRGB);
 		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 		g2.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
@@ -127,8 +132,9 @@ public class Aaa {
 
 	/**
 	 */
-	public static float drawCenteredString(Graphics2D g2, String text, float xOrg, float yOrg, float wOrg, float hOrg) {
-
+	public static float drawCenteredString(Graphics2D g2, String text, 
+			float xOrg, float yOrg, float wOrg, float hOrg) {
+		// ************************************************************************
 		FontMetrics fm = g2.getFontMetrics(g2.getFont());
 		Rectangle2D rect = fm.getStringBounds(text, g2);
 		int textHeight = (int) (rect.getHeight());
@@ -140,18 +146,11 @@ public class Aaa {
 		g2.drawString(text, x, y);
 		return x;
 	}
-
 	
-	public static final int CLUBS    = 0;
-	public static final int DIAMONDS = 1;
-	public static final int HEARTS   = 2;
-	public static final int SPADES   = 3;
-	public static final int NOTRUMPS = 4;
-
 	/**   
 	 */
 	public static int cmdFromChar(char c) {
-
+		// ************************************************************************
 		if (('1' <= c) && (c <= '9')) {
 			return ((('2' <= c) && (c <= '9')) ? Aaa.CMD_FACE : 0) | ((('1' <= c) && (c <= '7')) ? Aaa.CMD_LEVEL : 0)
 					| (c - '0');
@@ -160,19 +159,19 @@ public class Aaa {
 		switch (c) {
 		case 'c':
 		case 'C':
-			return Aaa.CMD_SUITN | Aaa.CMD_SUIT | Zzz.CLUBS;
+			return Aaa.CMD_SUITN | Aaa.CMD_SUIT | Zzz.Clubs;
 		case 'd':
 		case 'D':
-			return Aaa.CMD_SUITN | Aaa.CMD_SUIT | Zzz.DIAMONDS;
+			return Aaa.CMD_SUITN | Aaa.CMD_SUIT | Zzz.Diamonds;
 		case 'h':
 		case 'H':
-			return Aaa.CMD_SUITN | Aaa.CMD_SUIT | Zzz.HEARTS;
+			return Aaa.CMD_SUITN | Aaa.CMD_SUIT | Zzz.Hearts;
 		case 's':
 		case 'S':
-			return Aaa.CMD_SUITN | Aaa.CMD_SUIT | Zzz.SPADES;
+			return Aaa.CMD_SUITN | Aaa.CMD_SUIT | Zzz.Spades;
 		case 'n':
 		case 'N':
-			return Aaa.CMD_SUITN | Aaa.NOTRUMPS;
+			return Aaa.CMD_SUITN | Zzz.Notrumps;
 
 		case '1':
 		case 't':
@@ -206,5 +205,5 @@ public class Aaa {
 		}
 		return 0;
 	}
-
+	
 }

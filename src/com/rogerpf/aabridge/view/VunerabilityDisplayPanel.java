@@ -49,10 +49,12 @@ class VunerabilityDisplayPanel extends JPanel implements MouseListener {
 	}
 
 	public void mouseReleased(MouseEvent e) {
-		App.deal.setNextDealerAndVunerability(App.deal.boardNo);
-		App.deal.wipeContractBiddingAndPlay();
-		App.gbp.dealMajorChange();
-		App.frame.repaint();
+		if (App.isMode(Aaa.EDIT_HANDS)) {
+			App.deal.setNextDealerAndVunerability(App.deal.boardNo);
+			App.deal.wipeContractBiddingAndPlay();
+			App.gbp.dealMajorChange();
+			App.frame.repaint();
+		}
 	}
 
 	public void mouseEntered(MouseEvent e) {
@@ -151,14 +153,14 @@ class VunerabilityDisplayPanel extends JPanel implements MouseListener {
 		float northSouthWidth = useableWidth - (vulLozengeThickness + gap) * 2.0f;
 		float eastWestHeight = useableHeight - (vulLozengeThickness + gap) * 2.0f;
 
-		fillSeat(g2, Zzz.WEST, insetFromLeft, insetFromLeft + vulLozengeThickness + gap, vulLozengeThickness, eastWestHeight, curve);
+		fillSeat(g2, Zzz.West, insetFromLeft, insetFromLeft + vulLozengeThickness + gap, vulLozengeThickness, eastWestHeight, curve);
 
-		fillSeat(g2, Zzz.EAST, insetFromLeft + vulLozengeThickness + northSouthWidth + gap * 2, insetFromLeft + vulLozengeThickness + gap, vulLozengeThickness,
+		fillSeat(g2, Zzz.East, insetFromLeft + vulLozengeThickness + northSouthWidth + gap * 2, insetFromLeft + vulLozengeThickness + gap, vulLozengeThickness,
 				eastWestHeight, curve);
 
-		fillSeat(g2, Zzz.NORTH, insetFromLeft + vulLozengeThickness + gap, insetFromLeft, northSouthWidth, vulLozengeThickness, curve);
+		fillSeat(g2, Zzz.North, insetFromLeft + vulLozengeThickness + gap, insetFromLeft, northSouthWidth, vulLozengeThickness, curve);
 
-		fillSeat(g2, Zzz.SOUTH, insetFromLeft + vulLozengeThickness + gap, insetFromLeft + vulLozengeThickness + eastWestHeight + gap * 2, northSouthWidth,
+		fillSeat(g2, Zzz.South, insetFromLeft + vulLozengeThickness + gap, insetFromLeft + vulLozengeThickness + eastWestHeight + gap * 2, northSouthWidth,
 				vulLozengeThickness, curve);
 
 		fillCenterBox(g2, insetFromLeft + vulLozengeThickness + gap, insetFromLeft + vulLozengeThickness + gap, northSouthWidth, eastWestHeight);

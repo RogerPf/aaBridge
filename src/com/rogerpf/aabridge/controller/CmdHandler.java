@@ -42,41 +42,49 @@ public final class CmdHandler {
 	public final static RpfBtnDef[] buttonDefs = {
 		// ==============================================================================================
 		// @formatter:off
+		//             "openAutoSavesFolder" entry EXISTS but not as a button
+		//             "openQuickSavesFolder" entry EXISTS but not as a button
 		//             "openSavesFolder" entry EXISTS but not as a button
 		//             "menuOpen"        entry EXISTS but not as a button
 		//             "menuSave"        entry EXISTS but not as a button
 		//             "menuSaveAs"      entry EXISTS but not as a button
-		new RpfBtnDef( "menuQuickSave",				"Quick Save",		"Save the deal now, using the curent time and date in the file name"),
-		                                                                
-		new RpfBtnDef( "mainClock",					">",				"Rotate the seats Clockwise"),
-		new RpfBtnDef( "mainAnti",					"<",				"Rotate the seats Anti-clockwise"),
-		new RpfBtnDef( "mainShowBidding",			"Show Bidding",		""),
-		new RpfBtnDef( "mainUndo",					"Undo",				""),
-		new RpfBtnDef( "mainNextBoard",				"Next Board",		"Discard the existing hands, shuffle and deal the next board"),
-		new RpfBtnDef( "mainReview",				"Review",			"Swap between 'Review' and 'Normal Play'"), 
-                                                                        
-		new RpfBtnDef( "reviewBidding",				"Bidding",			"Review the Bidding"), 
- 		new RpfBtnDef( "reviewBackToStartOfPlay",	"<<<",				"Rewind to the start of play"),
- 		new RpfBtnDef( "reviewFwdToEndOfPlay",  	">>>",				"Jump forward the end of play"),
-		new RpfBtnDef( "reviewBackOneTrick",		"<<",				"Jump back one trick"),
-		new RpfBtnDef( "reviewFwdOneTrick",			">>",				"Jump forward one trick"),
-		new RpfBtnDef( "reviewFwdShowOneTrick",		"Show 1",			"Forward 1 trick showing each card being played"),
-		new RpfBtnDef( "reviewBackOneCard",			"<",		  		"Go back one card"),
-		new RpfBtnDef( "reviewFwdOneCard",			">",		  		"Go forward one card"),
-		new RpfBtnDef( "reviewShowEW",				"Show/Hide EW", 	""),
-		new RpfBtnDef( "reviewEdit",				"Edit",				"Swap between 'Edit' and 'Review'"),
+		//             "runTests"        entry EXISTS but not as a button
+		new RpfBtnDef( "menuQuickSave",				"Quick Save",		"Saves the deal to the 'saves' folder, using the current time and date in the file name.  "),
+		new RpfBtnDef( "menuEasySave",				"Easy Save",		"Does a Save using the filename you set with 'Save As'  "),
+		new RpfBtnDef( "menuPlayAgain",				"Again",			"If the deal has just been finised then it 'undoes' the final two tricks, otherwise all the card play is wiped so you can play tha deal again.  (Does an AutoSave first)  "),
 
-		new RpfBtnDef( "reviewPlay",				"Review the Play",	"Review the Play"), 
- 		new RpfBtnDef( "reviewBackToStartOfBidding","<<<",				"Rewind to the start of the bidding"),
-		new RpfBtnDef( "reviewFwdShowBidding",		"Show Bidding",		"Forward Showing all the bidding"),
-		new RpfBtnDef( "reviewBackOneBid",			"<",		  		"Go back one bid"),
-		new RpfBtnDef( "reviewFwdOneBid",			">",		  		"Go forward one bid"),
+		new RpfBtnDef( "mainAnti",					"<",				"Rotate the seats Anti-clockwise  "),
+		new RpfBtnDef( "mainClock",					">",				"Rotate the seats Clockwise  "),
+		new RpfBtnDef( "mainShowBidding",			"Show Bidding",		""),
+		new RpfBtnDef( "editPlay2",					"Set Play",			"Set the Play - Jump straight to 'Set the Play' mode, normally got to via 'Review', 'Edit' and 'Set the Play'  "),
+		new RpfBtnDef( "mainUndo",					"Undo",				""),
+		new RpfBtnDef( "mainNextBoard",				"Next Board",		"Discard the existing hands, shuffle and deal the next board  (always does and AutoSave first)  "),
+		new RpfBtnDef( "mainReview",				"Review",			"Swap between 'Review' and 'Normal Play'  "), 
                                                                         
-		new RpfBtnDef( "editHands",					"Set the Hands",	"Drag and Drop the cards from hand to hand"),
-		new RpfBtnDef( "editBidding",				"Set the Bidding",	"Add Bidding for all four hands"),
-		new RpfBtnDef( "editBiddingXall",			"X all",			"Remove All the existing BIDDING"),
-		new RpfBtnDef( "editPlay",					"Set the Play",		"Add play for all four hands"),
-		new RpfBtnDef( "editPlayXall",				"X all",			"Remove All the existing PLAY"),
+		new RpfBtnDef( "reviewBidding",				"Bidding",			"Review the Bidding  "), 
+ 		new RpfBtnDef( "reviewBackToStartOfPlay",	"<<<",				"Rewind to the start of play  "),
+ 		new RpfBtnDef( "reviewFwdToEndOfPlay",  	">>>",				"Jump forward the end of play  "),
+		new RpfBtnDef( "reviewBackOneTrick",		"<<",				"Jump back one trick  "),
+		new RpfBtnDef( "reviewFwdOneTrick",			">>",				"Jump forward one trick  "),
+		new RpfBtnDef( "reviewFwdShowOneTrick",		"Play 1",			"Play Forward 1 trick showing each card being played  "),
+		new RpfBtnDef( "reviewBackOneCard",			"<",		  		"Go back one card  "),
+		new RpfBtnDef( "reviewFwdOneCard",			">",		  		"Go forward one card  "),
+		new RpfBtnDef( "reviewShowEW",				"Show Hidden", 	    "Show / Hide the normally hidden hands "),
+		new RpfBtnDef( "reviewEdit",				"Edit",				"Swap between 'Edit' and 'Review'  "),
+
+		new RpfBtnDef( "reviewPlay",				"Review the Play",	"Review the Play  "), 
+ 		new RpfBtnDef( "reviewBackToStartOfBidding","<<<",				"Rewind to the start of the bidding  "),
+		new RpfBtnDef( "reviewFwdShowBidding",		"Show Bidding",		"Forward Showing all the bidding  "),
+		new RpfBtnDef( "reviewBackOneBid",			"<",		  		"Go back one bid  "),
+		new RpfBtnDef( "reviewFwdOneBid",			">",		  		"Go forward one bid  "),
+                                                                        
+		new RpfBtnDef( "editHands",					"Set the Hands",	"Drag and Drop the cards from hand to hand  "),
+		new RpfBtnDef( "editHandsRotateAnti",		"<",				"Rotate the CARDS Anti-clockwise - this is a TRUE ROTATE - the SEATS 'N S E W' do NOT move  "),
+		new RpfBtnDef( "editHandsRotateClock",		">",				"Rotate the CARDS Clockwise - this is a TRUE ROTATE - the SEATS 'N S E W' do NOT move  "),
+		new RpfBtnDef( "editBidding",				"Set the Bidding",	"Add Bidding for all four hands  "),
+		new RpfBtnDef( "editBiddingXall",			"X all",			"Remove All the existing BIDDING  "),
+		new RpfBtnDef( "editPlay",					"Set the Play",		"Add play for all four hands  "),
+		new RpfBtnDef( "editPlayXall",				"X all",			"Remove All the existing PLAY  "),
 		// @formatter:on                    		
 	};
 
@@ -114,8 +122,13 @@ public final class CmdHandler {
 	 */
 	static void mainUndo() {
 		// ==============================================================================================
+		if (App.deal.isDoneHand()) // so we skip the 'done hand'
+			return;
+
+		App.deal.clearStrategy();
+
 		if (App.deal.isBidding() || App.isMode(Aaa.EDIT_BIDDING)) {
-			if (App.autoBid[App.deal.getNextHandToBid().compass]) {
+			if (App.isAutoBid(App.deal.getNextHandToBid().compass)) {
 				// We have to (do we?) wait until the autoplayer has finished
 				// return;
 			}
@@ -123,72 +136,132 @@ public final class CmdHandler {
 				Hand hand = App.deal.getLastHandThatBid();
 				if (hand == null)
 					break;
-				boolean wasAuto = App.autoBid[hand.compass];
+				boolean wasAuto = App.isAutoBid(hand.compass);
 				hand.undoLastBid();
 				if (!wasAuto)
 					break;
 			}
-			App.frame.repaint();
 			App.gbp.c2_2__bbp.startAutoBidDelayTimerIfNeeded();
-		}
-		else if (App.deal.isPlaying() || App.isMode(Aaa.EDIT_PLAY)) {
-
-			if (App.autoPlay[App.deal.getNextHandToPlay().compass]) {
-				// We have to wait until the autoplayer has finished
-				return;
-			}
-			while (true) {
-				Hand hand = App.deal.getLastHandThatPlayed();
-				if (hand == null)
-					break;
-				if (App.deal.countCardsPlayed() == 0)
-					break;
-				boolean wasAuto = App.autoPlay[hand.compass];
-				hand.undoLastPlay();
-				if (!wasAuto)
-					break;
-			}
-			App.gbp.c1_1__tfdp.ClearShowCompletedTrick();
-			App.gbp.c1_1__tfdp.makeCardSuggestions();
-
 			App.frame.repaint();
-			App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
+			return;
 		}
+
+		// all the rest of the ifs cover HAND editing
+
+		if (App.isMode(Aaa.NORMAL) && App.deal.isFinished()) {
+
+			while ((App.deal.countCardsPlayed()) > 44) {
+				Hand hand = App.deal.getLastHandThatPlayed();
+				hand.undoLastPlay();
+			}
+			App.gbp.c1_1__tfdp.SetShowCompletedTrick();
+			App.gbp.c1_1__tfdp.makeCardSuggestions();
+			App.gbp.matchPanelsToDealState();
+		}
+
+		else if (App.isMode(Aaa.EDIT_PLAY)) {
+
+			if (App.deal.countCardsPlayed() > 0) {
+				Hand hand = App.deal.getLastHandThatPlayed();
+				hand.undoLastPlay();
+			}
+			App.gbp.c1_1__tfdp.SetShowCompletedTrick();
+		}
+
+		else if (App.isMode(Aaa.NORMAL) && App.deal.isPlaying() && App.youAutoplayAlways) {
+
+			// as all hands are on auto we can't just undo until we get to one that is not auto
+			// instead we just go back the last number of cards that made a whole trick
+			int played;
+			while ((played = App.deal.countCardsPlayed()) > 0) {
+				Hand hand = App.deal.getLastHandThatPlayed();
+				hand.undoLastPlay();
+				if (((played - 1) % 4) == 0)
+					break;
+			}
+			App.gbp.c1_1__tfdp.SetShowCompletedTrick();
+			App.gbp.c1_1__tfdp.makeCardSuggestions();
+		}
+
+		else if (App.isMode(Aaa.NORMAL) && App.deal.isPlaying()) {
+
+			while (App.deal.countCardsPlayed() > 0) {
+				Hand hand = App.deal.getLastHandThatPlayed();
+				hand.undoLastPlay();
+				if (App.isAutoPlay(hand.compass) == false) {
+					if (App.youAutoSingletons) {
+						if (hand.getSelfPlayableCard(App.youAutoAdjacent) != null)
+							continue; // undo this one as well
+					}
+					break;
+				}
+			}
+			App.gbp.c1_1__tfdp.SetShowCompletedTrick();
+			App.gbp.c1_1__tfdp.makeCardSuggestions();
+		}
+
+		App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
+		App.frame.repaint();
+
 	}
 
 	/**   
 	 */
 	static void mainNextBoard() {
 		// ==============================================================================================
+		quickSaveOrAutoSave(true /* useAutoFolder */);
+
 		App.setMode(Aaa.NORMAL);
-		App.setEwVisible(false);
 		App.reviewTrick = 0;
 		App.reviewCard = 0;
 		App.reviewBid = 0;
+		App.gbp.c1_1__tfdp.clearAllCardSuggestions();
 
-		App.deal = Deal.nextBoard(App.deal.boardNo, (App.watchBidding == false), App.dealCriteria);
+		App.deal = Deal.nextBoard(App.deal.boardNo, (App.watchBidding == false), App.dealCriteria, App.youSeatForNewDeal);
+
+		App.calcCompassPhyOffset();
+		App.frame.setTitleAsRequired();
 
 		App.gbp.dealMajorChange();
 		App.gbp.matchPanelsToDealState();
 		App.frame.repaint();
-		if (App.nsAutoplayAlways && App.nsAutoplayPause) {
+		if (App.isPauseAtEotClickWanted()) {
 			App.gbp.c1_1__tfdp.showCompletedTrick = true;
 		}
 		App.gbp.c2_2__bbp.startAutoBidDelayTimerIfNeeded();
 		App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
 	}
-	
 
 	/**   
 	 */
 	static void setFcPreferredSize(JFileChooser fc) {
 		// ==============================================================================================
 		Dimension wh = App.frame.getSize();
-		wh.width = (wh.width * 110) / 100;
-		wh.height = (wh.height * 70) / 100;
+		wh.width = (wh.width * 95) / 100;
+		wh.height = (wh.height * 80) / 100;
 		fc.setPreferredSize(wh);
 	}
-	
+
+	/**   
+	 */
+	static void openAutoSavesFolder() {
+		// ==============================================================================================
+		try {
+			Desktop.getDesktop().open(new File(App.autoSavesPath));
+		} catch (IOException e) {
+		}
+	}
+
+	/**   
+	 */
+	static void openQuickSavesFolder() {
+		// ==============================================================================================
+		try {
+			Desktop.getDesktop().open(new File(App.quickSavesPath));
+		} catch (IOException e) {
+		}
+	}
+
 	/**   
 	 */
 	static void openSavesFolder() {
@@ -198,7 +271,27 @@ public final class CmdHandler {
 		} catch (IOException e) {
 		}
 	}
-	
+
+	/**   
+	 */
+	static void openResultsFolder() {
+		// ==============================================================================================
+		try {
+			Desktop.getDesktop().open(new File(App.resultsPath));
+		} catch (IOException e) {
+		}
+	}
+
+	/**   
+	 */
+	static void openTestsFolder() {
+		// ==============================================================================================
+		try {
+			Desktop.getDesktop().open(new File(App.testsPath));
+		} catch (IOException e) {
+		}
+	}
+
 	/**   
 	 */
 	static void menuOpen() {
@@ -210,65 +303,186 @@ public final class CmdHandler {
 
 		int returnVal = fc.showOpenDialog(App.frame);
 		if (returnVal == JFileChooser.APPROVE_OPTION) {
-
-			Deal d = null;
-
-			try {
-				File fileIn = fc.getSelectedFile();
-				FileInputStream fis = new FileInputStream(fileIn);
-				ObjectInputStream in = new ObjectInputStream(fis);
-				d = (Deal) in.readObject();
-				d.restoreTransientSuitChForClearerDebug();
-				d.origFilename = fileIn.getName();
-				in.close();
-				fis.close();
-			} catch (IOException i) {
-				//i.printStackTrace();
-				return;
-			} catch (ClassNotFoundException c) {
-				//System.out.println("Deal? class not found");
-				//c.printStackTrace();
-				return;
+			String pathWithSep = fc.getSelectedFile().getParent();
+			if (pathWithSep != null && !pathWithSep.contentEquals("")) {
+				pathWithSep += File.separator;
 			}
 
-			App.deal = d;
-			App.gbp.dealMajorChange();
-			App.setMode(Aaa.NORMAL);
-			App.frame.repaint();
-			App.gbp.c2_2__bbp.startAutoBidDelayTimerIfNeeded();
+			readDealIfExists(pathWithSep, fc.getSelectedFile().getName());
 		}
 
+	}
+
+	/**   
+	 */
+	public static boolean readDealIfExists(String pathWithSep, String dealName) {
+		// ==============================================================================================
+		Deal d = null;
+
+		if (pathWithSep == null || pathWithSep.contentEquals("")) {
+			pathWithSep = App.savesPath;
+		}
+
+		File fileIn = new File(pathWithSep + dealName);
+		if (!fileIn.exists()) {
+			return false;
+		}
+
+		try {
+			FileInputStream fis = new FileInputStream(fileIn);
+			ObjectInputStream in = new ObjectInputStream(fis);
+			d = (Deal) in.readObject();
+			d.PostReadObjectFixups();
+			in.close();
+			fis.close();
+
+			d.lastSavedAsPathWithSep = fileIn.getParent() + File.separator;
+			d.lastSavedAsFilename = fileIn.getName();
+
+			App.deal = d;
+			App.calcCompassPhyOffset();
+			App.gbp.dealMajorChange();
+			App.setMode(Aaa.NORMAL);
+			App.gbp.matchPanelsToDealState();
+			App.frame.repaint();
+			App.gbp.c2_2__bbp.startAutoBidDelayTimerIfNeeded();
+			if (App.deal.isPlaying()) {
+				App.gbp.c1_1__tfdp.clearAllCardSuggestions();
+				App.gbp.c1_1__tfdp.makeCardSuggestions(); // for the "test" file if loaded
+			}
+
+		} catch (IOException i) {
+			System.out.println("aaBrdige file, bad format?");
+			// App.deal = new Deal(Deal.makeDoneHand, App.youSeatForNewDeal);
+			// i.printStackTrace();
+			return false;
+		} catch (ClassNotFoundException c) {
+			System.out.println("Deal? class not found");
+			// App.deal = new Deal(Deal.makeDoneHand, App.youSeatForNewDeal);
+			// c.printStackTrace();
+			return false;
+		}
+
+		App.frame.setTitleAsRequired();
+		return true;
+	}
+
+//	/**   
+//	 */
+//	public static void deepCloneDealAndUse() { // TESTING ONLY !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//		// ==============================================================================================
+//		Deal d_old = App.deal;
+//
+//		if (d_old == null)
+//			return;
+//
+//		Deal d = d_old.deepClone();
+//
+//		App.deal = d;
+//
+//		App.gbp.dealMajorChange();
+//		App.setMode(Aaa.NORMAL);
+//		App.gbp.matchPanelsToDealState();
+//		App.frame.repaint();
+//		App.gbp.c2_2__bbp.startAutoBidDelayTimerIfNeeded();
+//
+//		App.frame.setTitleAsRequired();
+//	}
+
+	/**   
+	 */
+	static void quickSaveOrAutoSave(boolean useAutoFolder) {
+		// ==============================================================================================
+		if (App.deal.isDoneHand()) { // so we skip the 'done hand'
+			return;
+		}
+
+		App.deal.description = App.gbp.c0_0__tlp.descEntry.getText();
+		String dealName = makeDealFileNameAndPath(useAutoFolder, "", "");
+		try {
+			FileOutputStream fileOut = new FileOutputStream(dealName);
+			ObjectOutputStream out = new ObjectOutputStream(fileOut);
+			out.writeObject(App.deal);
+			out.close();
+			fileOut.close();
+		} catch (IOException i) {
+			i.printStackTrace();
+		}
+
+		if (App.isFilenameThrowAway(App.deal.lastSavedAsFilename)) {
+			File f = new File(dealName);
+			App.deal.lastSavedAsFilename = f.getName();
+		}
+
+		App.frame.setTitleAsRequired();
 	}
 
 	/**   
 	 */
 	static void menuQuickSave() {
 		// ==============================================================================================
-		App.deal.description = App.gbp.c0_0__tlp.descEntry.getText();
-		String dealName = makeFileNameAndPath("");
-		try {
-			FileOutputStream fileOut = new FileOutputStream(dealName);
-			ObjectOutputStream out = new ObjectOutputStream(fileOut);
-			out.writeObject(App.deal);
-			out.close();
-			fileOut.close();
-		} catch (IOException i) {
-			i.printStackTrace();
+		quickSaveOrAutoSave(false /* useAutoFolder */);
+	}
+
+	/**   
+	 */
+	static void menuEasySave() {
+		// ==============================================================================================
+		if (App.deal.isDoneHand()) { // so we skip the 'done hand'
+			return;
 		}
-	
-		if (App.deal.origFilename.contentEquals("")) {
-			File f = new File(dealName);
-			App.deal.origFilename = f.getName();
+		if (App.isFilenameThrowAway(App.deal.lastSavedAsFilename)) {
+			menuSaveAs();
+		}
+		else {
+			menuSave();
 		}
 
+	}
+
+	/**   
+	 */
+	static void menuPlayAgain() {
+		// ==============================================================================================
+		if (App.deal.isDoneHand()) { // so we skip the 'done hand'
+			return;
+		}
+		quickSaveOrAutoSave(true /* useAutoFolder */);
+
+		if (App.isMode(Aaa.NORMAL) && App.deal.isFinished()) {
+			mainUndo();
+			return;
+		}
+
+		// App.deal.lastSavedAsFilename = "";
+		App.frame.setTitleAsRequired();
+
+		editPlayXall();
+		App.reviewTrick = 0;
+		App.reviewCard = 0;
+		App.reviewBid = 0;
+
+		App.gbp.dealMajorChange();
+		App.setMode(Aaa.NORMAL);
+		App.gbp.matchPanelsToDealState();
+		App.frame.repaint();
+//		if (App.isPauseAtEotClickWanted()) {
+//			App.gbp.c1_1__tfdp.showCompletedTrick = true;
+//		}
+		App.gbp.c2_2__bbp.startAutoBidDelayTimerIfNeeded();
+		App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
 	}
 
 	/**   
 	 */
 	static void menuSave() {
 		// ==============================================================================================
+		if (App.deal.isDoneHand()) { // so we skip the 'done hand'
+			return;
+		}
+
 		App.deal.description = App.gbp.c0_0__tlp.descEntry.getText();
-		String dealName = makeFileNameAndPath(App.deal.origFilename);
+		String dealName = makeDealFileNameAndPath(false /* useAutoFolder */, App.deal.lastSavedAsPathWithSep, App.deal.lastSavedAsFilename);
 		try {
 			FileOutputStream fileOut = new FileOutputStream(dealName);
 			ObjectOutputStream out = new ObjectOutputStream(fileOut);
@@ -278,44 +492,56 @@ public final class CmdHandler {
 		} catch (IOException i) {
 			i.printStackTrace();
 		}
-	
-		if (App.deal.origFilename.contentEquals("")) {
-			File f = new File(dealName);
-			App.deal.origFilename = f.getName();
-		}
 
+		App.deal.lastSavedAsFilename = new File(dealName).getName();
+
+		App.frame.setTitleAsRequired();
 	}
 
 	/**   
 	 */
 	static void menuSaveAs() {
 		// ==============================================================================================
+		if (App.deal.isDoneHand()) { // so we skip the 'done hand'
+			return;
+		}
+
 		JFileChooser fc = new JFileChooser();
 		fc.setFileFilter(new FileNameExtensionFilter("aabridge Deals", App.dealExt));
-		fc.setCurrentDirectory(new File(App.savesPath));
+
+		String pathWithSep = App.deal.lastSavedAsPathWithSep;
+		if (pathWithSep == null || pathWithSep.contentEquals("")) {
+			pathWithSep = App.savesPath;
+		}
+
+		fc.setCurrentDirectory(new File(pathWithSep));
 		fc.setDialogTitle("Save As");
 		App.deal.description = App.gbp.c0_0__tlp.descEntry.getText();
-		String dealName = makeFileNameAndPath(App.deal.origFilename);
-		
+		String dealName = makeDealFileNameAndPath(false /* useAutoFolder */, pathWithSep, App.deal.lastSavedAsFilename);
+
 		fc.setSelectedFile(new File(dealName));
 		setFcPreferredSize(fc);
 
 		int returnVal = fc.showSaveDialog(App.frame);
 		if (returnVal == JFileChooser.APPROVE_OPTION) {
-			dealName = checkExtension( fc.getSelectedFile().getAbsolutePath());
+			dealName = checkExtension(fc.getSelectedFile().getAbsolutePath());
 			try {
 				FileOutputStream fileOut = new FileOutputStream(dealName);
 				ObjectOutputStream out = new ObjectOutputStream(fileOut);
 				out.writeObject(App.deal);
 				out.close();
 				fileOut.close();
+
+				App.deal.lastSavedAsPathWithSep = new File(dealName).getParent() + File.separator;
+				App.deal.lastSavedAsFilename = new File(dealName).getName();
+
 			} catch (IOException i) {
 				i.printStackTrace();
 			}
 		}
-	}
-	
 
+		App.frame.setTitleAsRequired();
+	}
 
 	/**   
 	 */
@@ -379,6 +605,8 @@ public final class CmdHandler {
 		}
 
 		if (App.isMode(Aaa.NORMAL)) {
+			App.localShowHidden = App.deal.isFinished();
+
 			if (App.deal.isBidding()) {
 				App.setMode(Aaa.REVIEW_BIDDING);
 				reviewBackToStartOfBidding(); // index set
@@ -429,8 +657,13 @@ public final class CmdHandler {
 	 */
 	static void reviewFwdOneTrick() {
 		App.gbp.c1_1__tfdp.reviewTrickDisplayTimer.stop(); // just in case
-		App.reviewTrick++;
-		App.reviewCard = 4;
+		if (App.reviewTrick == 0 && App.reviewCard == 0) {
+			App.reviewCard = 4;
+		}
+		else {
+			App.reviewTrick++;
+			App.reviewCard = 4;
+		}
 		validateReviewIndexes();
 		App.frame.repaint();
 	}
@@ -465,7 +698,7 @@ public final class CmdHandler {
 	/**   
 	 */
 	static void reviewShowEW() {
-		App.setEwVisible(!App.isEwVisible());
+		App.localShowHidden = !App.localShowHidden;
 		App.frame.repaint();
 	}
 
@@ -578,6 +811,10 @@ public final class CmdHandler {
 		App.frame.repaint();
 	}
 
+	static void editPlay2() {
+		editPlay();
+	}
+
 	static void editPlay() {
 		App.setMode(Aaa.EDIT_PLAY);
 		App.gbp.matchPanelsToDealState();
@@ -585,16 +822,34 @@ public final class CmdHandler {
 	}
 
 	static void editPlayXall() {
-		App.deal.wipePlay();
+		App.deal.wipePlay(false /* (don't) keepFirstCardPlayed */);
 		App.gbp.dealMajorChange();
 		App.frame.repaint();
+	}
+
+	static void editHandsRotateAnti() {
+		App.deal.rotateHands(-1);
+		App.gbp.dealMajorChange();
+		App.gbp.matchPanelsToDealState();
+		App.frame.repaint();
+	}
+
+	static void editHandsRotateClock() {
+		App.deal.rotateHands(+1);
+		App.gbp.dealMajorChange();
+		App.gbp.matchPanelsToDealState();
+		App.frame.repaint();
+	}
+
+	static void runTests() {
+		TestSystemRunner.performAllTests();
 	}
 
 	/**   
 	 */
 	public static void actionPerfString(String actCmd) { // called but the Controller who is the ActionListener
 		// ==============================================================================================
-		System.out.println(actCmd + " invoked");
+		// System.out.println(actCmd + " invoked");
 		try {
 
 			CmdHandler.class.getDeclaredMethod(actCmd).invoke(CmdHandler.class);
@@ -614,52 +869,35 @@ public final class CmdHandler {
 
 	/**   
 	 */
-	static void readDealIfExists(String dealName) {
+	public static String checkExtension(String s) {
 		// ==============================================================================================
-		Deal d = null;
-
-		File fileIn = new File(App.savesPath + dealName);
-		if (fileIn.exists() == false)
-			return;
-
-		{
-			try {
-				FileInputStream fis = new FileInputStream(fileIn);
-				ObjectInputStream in = new ObjectInputStream(fis);
-				d = (Deal) in.readObject();
-				d.restoreTransientSuitChForClearerDebug();
-				d.origFilename = fileIn.getName();
-				in.close();
-				fis.close();
-			} catch (IOException i) {
-				i.printStackTrace();
-				return;
-			} catch (ClassNotFoundException c) {
-				System.out.println("Deal? class not found");
-				c.printStackTrace();
-				return;
-			}
+		if (s.endsWith(App.dotDealExt) == false) {
+			s += App.dotDealExt;
 		}
-
-		App.deal = d;
-		App.gbp.dealMajorChange();
-		App.gbp.matchPanelsToDealState();
-		App.frame.repaint();
-		App.gbp.c2_2__bbp.startAutoBidDelayTimerIfNeeded();
+		return s;
 	}
 
 	/**   
 	 */
-	public static String makeFileNameAndPath(String origName) {
+	public static String makeDealFileNameAndPath(boolean useAutoFolder, String pathWithSep, String origName) {
 		// ==============================================================================================
 		String s;
+
+		if (pathWithSep == null || pathWithSep.contentEquals("")) {
+			pathWithSep = useAutoFolder ? App.autoSavesPath : App.quickSavesPath;
+		}
+
+		if (App.isFilenameThrowAway(origName)) {
+			origName = "";
+		}
+
 		if (origName.contentEquals("")) {
-			
+
 			SimpleDateFormat sdfDate = new SimpleDateFormat("yyyy-MM-dd__HH-mm-ss");
-			s = App.savesPath + sdfDate.format(new Date()) + "__";
-	
+			s = pathWithSep + sdfDate.format(new Date()) + "__";
+
 			s += App.deal.contractAndResult();
-	
+
 			if (App.deal.description.length() > 0) {
 				StringBuilder good = new StringBuilder();
 				for (char c : App.deal.description.toCharArray()) {
@@ -675,21 +913,10 @@ public final class CmdHandler {
 			s += "_";
 		}
 		else {
-			s = App.savesPath + origName;
+			s = pathWithSep + origName;
 		}
-		
+
 		return checkExtension(s);
-	}
-	
-	
-	/**   
-	 */
-	public static String checkExtension(String s) {
-		// ==============================================================================================
-		if (s.endsWith("." + App.dealExt) == false) {
-			s += "." + App.dealExt;
-		}
-		return s;
 	}
 
 }

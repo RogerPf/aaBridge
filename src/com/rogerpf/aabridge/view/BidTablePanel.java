@@ -100,7 +100,7 @@ class BidTablePanelHeader extends ClickPanel {
 		float x = width * 0.04f;
 		float y = height * (1 - 0.17f);
 		int c = 0;
-		for (Hand hand : App.deal.rota[App.compassFromPhyScreenPos(Zzz.WEST)]) {
+		for (Hand hand : App.deal.rota[App.compassFromPhyScreenPos(Zzz.West)]) {
 			boolean vun = App.deal.vunerability[hand.compass % 2];
 			g2.setColor((vun) ? Aaa.vunerableColor : Aaa.handAreaOffWhite);
 			g2.fill(new Rectangle2D.Float(xBlk, 0, sep + 0.5f + ((++c == 4) ? 100 : 0), height));
@@ -172,7 +172,7 @@ class BidTablePanel2 extends ClickPanel implements MouseListener {
 		Font DoubleRedoubleFont = BridgeFonts.bridgeBoldFont.deriveFont(lineHeight * 0.75f);
 
 		int dealer = App.deal.dealer;
-		int cell = ((4 + dealer - App.compassFromPhyScreenPos(Zzz.WEST)) % 4) - 1;
+		int cell = ((4 + dealer - App.compassFromPhyScreenPos(Zzz.West)) % 4) - 1;
 
 		int rounds;
 		if (App.isMode(Aaa.REVIEW_BIDDING)) {
@@ -220,7 +220,7 @@ class BidTablePanel2 extends ClickPanel implements MouseListener {
 					g2.drawString(bid.getLevelSt(), x, y);
 
 					x += lineHeight * 0.50f;
-					g2.setColor(Aaa.cdhsWeakColors[bid.getSuitValue()]);
+					g2.setColor(Aaa.cdhsWeakColors[bid.getSuit()]);
 					g2.setFont(suitSymbolsFont);
 					g2.drawString(bid.getSuitSt(), x, y);
 				}
