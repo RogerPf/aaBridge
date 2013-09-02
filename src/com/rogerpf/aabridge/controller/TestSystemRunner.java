@@ -25,6 +25,7 @@ import java.util.Date;
 
 import com.rogerpf.aabridge.model.Card;
 import com.rogerpf.aabridge.model.Deal;
+import com.rogerpf.aabridge.model.Deal.DumbAutoDirectives;
 import com.rogerpf.aabridge.model.Hand;
 import com.rogerpf.aabridge.model.Zzz;
 
@@ -93,8 +94,8 @@ public final class TestSystemRunner {
 	 */
 	public static String checkExtension(String s) {
 		// ==============================================================================================
-		if (s.endsWith(App.dotDealExt) == false) {
-			s += App.dotDealExt;
+		if (s.endsWith(App.dotAaBridgeExt) == false) {
+			s += App.dotAaBridgeExt;
 		}
 		return s;
 	}
@@ -243,7 +244,7 @@ public final class TestSystemRunner {
 		int run = 0;
 		int failCount = 0;
 		int succeeded = 0;
-		String ending = (App.dotDealExt);
+		String ending = (App.dotAaBridgeExt);
 		for (File test : tests) {
 			String testName = test.getName();
 
@@ -272,7 +273,9 @@ public final class TestSystemRunner {
 
 			d.testId = ti.testId;
 
-			Card cardActual = hand.dumbAuto(); // <<<< -------- THE TEST --------
+			DumbAutoDirectives dumbAutoDir = new DumbAutoDirectives();
+
+			Card cardActual = hand.dumbAuto(dumbAutoDir); // <<<< -------- THE TEST --------
 
 			d.testId = 0;
 

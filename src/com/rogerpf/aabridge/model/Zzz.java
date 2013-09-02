@@ -18,6 +18,9 @@ public class Zzz {
 	public final static boolean[] falseTrue = { false, true};
 	public final static boolean[] trueFalse = { true, false};
 
+	public final static int Me = 0;
+	public final static int Pn = 1;
+
 	public final static int North = 0;
 	public final static int East = 1;
 	public final static int South = 2;
@@ -30,8 +33,13 @@ public class Zzz {
 
 	public final static int[][] rota = { nesw, eswn, swne, wnes };
 	
-	public static final int MatchAsSelf    = 0;
-	public static final int MatchAsPartner = 2;
+	public final static int NoSignals = 0;
+	public final static int StdEvenCount = 1;
+	public final static int UdcOddCount = 2;
+	public final static int HighestSignal = 2;
+
+	public final static int MatchAsSelf    = 0;
+	public final static int MatchAsPartner = 2;
 
 	public final static int Leader_Pos = 0;
 	public final static int Second_Pos = 1;
@@ -43,17 +51,11 @@ public class Zzz {
 	public final static int Hearts = 2;
 	public final static int Spades = 3;
 	public final static int Notrumps = 4;
-
-	public final static int CMD_SUIT  = 0x0100; //  C D H S
-	public final static int CMD_SUITN = 0x0200; //  C D H S N
-	public final static int CMD_FACE  = 0x0400; //  2 to 14
-	public final static int CMD_LEVEL = 0x0800; //  1 to 7
-	public final static int CMD_CALL  = 0x1000; //  Pass Double Redouble
 	
 	public static final String[] playOrd_st = { "-1-", "2nd", "3rd", "4th" };
-	//public static final String[] playOrd_st = { "Fst", "Sec", "Thr", "Fou" };
 	
 	public final static int[] zN2 =  { 0, 2 }; // Like North and South but more general
+	public final static int[] zto1 = { 0, 1 }; 
 	public final static int[] zto2 = { 0, 1, 2 }; 
 	public final static int[] zto3 = { 0, 1, 2, 3 }; // really the same a cdhs BUT used when the items are not in suit order
 	public final static int[] cdhs = { Clubs, Diamonds, Hearts, Spades };
@@ -64,8 +66,6 @@ public class Zzz {
 	public final static int DOUBLE = 2;
 	public final static int REDOUBLE = 3;
 	
-	public final static int UNDO = 'U';
-
 	public final static char[]   compass_to_nesw_ch     = { 'N', 'E', 'S', 'W' };
 	public final static String[] compass_to_nesw_st     = { "N", "E", "S", "W" };
 	public final static String[] compass_to_nesw_st_long= { "North", "East", "South", "West" };
@@ -89,6 +89,8 @@ public class Zzz {
 	public final static int      Queen                  = 12;
 	public final static int      Jack                   = 11;
 	public final static int      Ten                    = 10;
+	public final static int      Nine                   =  9;
+
 	public final static int[]    allThriteenCards       = { 2, 3, 4, 5, 6, 7, 8, 9, Ten, Jack, Queen, King, Ace };
 	
 	public static final int NS = 0;
@@ -154,6 +156,17 @@ public class Zzz {
 
 	/**   
 	 */
+	public static String neswToString(char c) {
+		switch (c) {
+			case 'N': case 'n': return "North";
+			case 'E': case 'e': return "East";
+			case 'S': case 's': return "South";
+			case 'W': case 'w': return "West";
+		}
+		return c + "";
+	}
+	/**   
+	 */
 	public static int rankChToRank(char c) {
 
 		if (('2' <= c) && (c <= '9')) {
@@ -169,5 +182,31 @@ public class Zzz {
 		
 		return Ace + 1; // so that others are never "lowest"
 	}
+	
+	public static int convertOutstandingToDepth(int outstanding, boolean secondPlayerFollowedSuit) {
+
+		if (secondPlayerFollowedSuit == false)
+			return 0; // as all the cards are AFTER us, we use 0 (zero) to make us to play high
+		
+		// the second players card * IS * included in the outstanding param value
+		
+		if (outstanding <= 1)
+			return 0;         // So the only outstanding card has just been played
+		
+		if (outstanding <= 2)
+			return 1;
+		
+		if (outstanding <= 3)
+			return 1;
+		
+		if (outstanding <= 4)
+			return 3;
+		
+		if (outstanding <= 5)
+			return 4;
+		
+		return 5;
+	}
+
 
 }

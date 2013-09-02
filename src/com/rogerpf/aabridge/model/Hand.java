@@ -12,6 +12,8 @@ package com.rogerpf.aabridge.model;
 
 import java.io.Serializable;
 
+import com.rogerpf.aabridge.model.Deal.DumbAutoDirectives;
+
 /**
  * 
  * Hand
@@ -26,13 +28,16 @@ public class Hand implements Serializable, Comparable<Hand> {
 	final Deal deal;
 
 	public int compass;
-	public final String playerName;
+	public String playerName;
 	public final Frag[] fOrgs = new Frag[4];
 	public final Frag[] frags = new Frag[4];
 	public final Cal played = new Cal();
 	public final Bal bids = new Bal();
 
 	transient char compassCh; // for easy viewing when in debug
+
+	transient Deal dealClone = null;
+	transient Strategy strategy = null;
 
 	/** 
 	 */
@@ -45,6 +50,12 @@ public class Hand implements Serializable, Comparable<Hand> {
 			fOrgs[sv] = new Frag(this, sv);
 			frags[sv] = new Frag(this, sv);
 		}
+	}
+
+	/** 
+	 */
+	public String toString() {
+		return Zzz.compass_to_nesw_st_long[compass];
 	}
 
 	/** 
@@ -395,7 +406,7 @@ public class Hand implements Serializable, Comparable<Hand> {
 	public void undoLastPlay() {
 		assert (played.size() >= 1);
 
-		deal.clearStrategy();
+		deal.clearAllStrategies();
 
 		if (deal.isCurTrickComplete()) {
 			deal.prevTrickWinner.removeLast();
@@ -565,39 +576,17 @@ public class Hand implements Serializable, Comparable<Hand> {
 	 */
 	boolean areOurTopHoldingsContigious(int suit) {
 		// ==============================================================================================
-		Hand hand = this;
-		Hand partner = hand.partner();
-		Frag myFrag = hand.frags[suit];
-		Frag pnFrag = partner.frags[suit];
+		Frag myFrag = frags[suit];
+		Frag pnFrag = partner().frags[suit];
 		if (myFrag.size() == 0 || pnFrag.size() == 0)
 			return false;
-		int low;
-		Frag highF;
-		if (((highF = myFrag).get(0).rankRel) > (low = pnFrag.get(0).rankRel)) {
-		}
-		else {
-			highF = pnFrag;
-			low = myFrag.get(0).rank;
-		}
-
-		int prevH = highF.get(0).rankRel + 1;
-		for (int i = 0; i < highF.size(); i++) {
-			int high = highF.get(i).rankRel;
-			if ((prevH == high + 1) && (high - 1 == low))
-				return true;
-			if (prevH != high + 1)
-				return false;
-			prevH = high;
-		}
-		return false;
+		return myFrag.get(0).rankEqu == pnFrag.get(0).rankEqu;
 	}
 
 	boolean doesPartnerHaveMaster(int suit) {
 		// ==============================================================================================
-		if (partner().frags[suit].size() > 0) {
-			return partner().frags[suit].get(0).rankRel == Zzz.Ace;
-		}
-		return false;
+		Frag pnFrag = partner().frags[suit];
+		return (pnFrag.size() > 0) && (pnFrag.get(0).rankRel == Zzz.Ace);
 	}
 
 	static int oppsMax(Gather g, int suit) {
@@ -633,71 +622,117 @@ public class Hand implements Serializable, Comparable<Hand> {
 	 */
 	public Card pickBestDiscard(Gather g) {
 		// ==============================================================================================
-		return Play_5_Discard.pickBest(g);
+		if (g.declarerAxis == axis())
+			return Qlay_5_Discard.pickBest(g);
+		else
+			return Rlay_5_Discard.pickBest(g);
 	}
 
 	public void clearStrategy() {
 		// ==============================================================================================
-		deal.clearStrategy(this);
-	}
-
-	public void setStrategy(Strategy stra) {
-		// ==============================================================================================
-		deal.setStrategy(this, stra);
+		dealClone = null;
+		strategy = null;
 	}
 
 	public Strategy getStrategy() {
 		// ==============================================================================================
-		return deal.getStrategy(this);
+		return strategy;
 	}
 
-	public void calcStrategy() {
+	public void calcStrategy(DumbAutoDirectives dumbAutoDir) {
 		// ==============================================================================================
 		// note - we are in a ****** hand ******
 
+		boolean skipFirst = true;
+
 		if (getStrategy() == null) {
-			// print a message if we are the first of the two stratergies to be created
-			if (deal.testId == 0 && deal.hands[(compass + 1) % 4].getStrategy() == null) {
+			// print a message if we are the first of the stratergies to be created
+			if (deal.testId == 0 && deal.hands[(compass + 3) % 4].getStrategy() == null) {
 				System.out.println("Board no " + deal.boardNo + "     cycle " + (++(deal.cycle))
 						+ "  ----------------------------------------------------------------------");
 			}
 
 			Deal d2 = deal.deepClone();
-			d2.wipePlay((axis() == deal.contractAxis()) /* keepFirstCardPlayed */);
-
-			Strategy stra = new Strategy(d2);
-			setStrategy(stra);
-			stra.update();
+			d2.wipePlay();
+			dealClone = d2;
+			strategy = new Strategy(d2, this);
+			skipFirst = false;
 		}
 
 		/** 
-		 * We now go through each played card updating the statergy after each play
+		 * We now go through each played card updating the statergy before each play
 		 * This is only needed as it re-creates all the history of a Strategy lost
 		 * because of an UNDO or a 'load'.  So 99% of the time this will do nothing
+		 * 
+		 * Actually we are re-creating the play to update the embedded deals,
+		 * it is the side effects on the embedded deals that we need to recreate
+		 * as the (relativly) transient stratergies are updated.
 		 */
-		Strategy stra = getStrategy();
+		Card cardThatWould;
+		int mainDealPlayed = deal.countCardsPlayed();
+		Deal d2 = dealClone;
+		int d2Played = d2.countCardsPlayed();
 
-		Deal d2 = stra.getEmdeddedDeal();
-		int played_d = deal.countCardsPlayed();
-		int played_d2 = d2.countCardsPlayed();
-		assert (played_d >= played_d2); // which is why undo etc must clear the strategies
-		for (int i = played_d2; i < played_d; i++) {
+		for (int i = d2Played; i < mainDealPlayed; i++) {
+
 			Card card = deal.getCardThatWasPlayed(i);
+			int h2compass = deal.getCompassThatWasPlayed(i);
+
+			Hand h2 = dealClone.hands[h2compass];
+
+			if (h2compass == compass) {
+				// update the strategy - which MAY alter the cloneDeal (but does not currently)
+				if (skipFirst) {
+					// we are skipping because this update would have been done on the last round
+					// the thing that did not happen was that the card was not played (as it was yet to be chosen)
+					skipFirst = false;
+				}
+				else {
+					Gather g2 = strategy.update(dumbAutoDir);
+					// for now we assume we can call this for all defenders
+					if (h2.axis() == d2.defenderAxis()) {
+						cardThatWould = h2.dumbAutoInner(g2);
+						if (cardThatWould != null && (cardThatWould.rank != card.rank || cardThatWould.suit != cardThatWould.suit)) {
+							System.out.println(" RERUN ===  " + card + " was played,  this time would play  " + cardThatWould);
+						}
+						cardThatWould = null;
+					}
+				}
+			}
+
+			// we can now update the clone deal
 			d2.playCardExternal(card.suit, card.rank);
-			stra.update();
 		}
 
+		strategy.update(dumbAutoDir);
+
+		// now we can go off to have a new card played for real
 	}
 
 	/**
 	 */
-	public Card dumbAuto() {
+	public Card dumbAuto(DumbAutoDirectives dumbAutoDir) {
+		// ==============================================================================================
+
+		calcStrategy(dumbAutoDir);
+
+		Gather g = new Gather(this, dumbAutoDir, /* strategyCreated */false);
+
+		Card card = dumbAutoInner(g);
+
+		if (card == null) {
+			card = getRandomPlayableCard();
+			System.out.println("===>   ERROR  -  dumbAuto picked    NULL   - instead of a card");
+		}
+
+		return card;
+	}
+
+	/**
+	 */
+	public Card dumbAutoInner(Gather g) {
 		// ==============================================================================================
 		Card card = null;
-
-		calcStrategy();
-
-		Gather g = new Gather(this, /* strategyCreated */false);
 
 		// @formatter:off
 		if (g.ourContract) {
@@ -721,11 +756,6 @@ public class Hand implements Serializable, Comparable<Hand> {
 			}
 		}
 		// @formatter:on
-
-		if (card == null) {
-			card = getRandomPlayableCard();
-			System.out.println("===>   ERROR  -  dumbAuto picked    NULL   - instead of a card");
-		}
 
 		return card;
 	}

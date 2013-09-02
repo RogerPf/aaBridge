@@ -102,4 +102,9 @@ class QLabel extends JLabel {
 		super(label);
 		setToolTipText(label);
 	}
+
+	QLabel(String label, String tip) {
+		super(label);
+		setToolTipText(tip);
+	}
 }

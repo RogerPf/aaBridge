@@ -18,7 +18,7 @@ public class Qlay_2nd {
 		Card card = null;
 
 		int brk = 0;
-		if (g.trickNumb == 2)
+		if (g.trickNumb == 1)
 			if (g.compass == 2)
 				brk++; // put your breakpoint here :)
 
@@ -27,14 +27,28 @@ public class Qlay_2nd {
 
 		if (g.haveSuitLed) { // we have some of the led suit
 
-			if (g.bestCard.rank > g.highestOfLed.rank) {
-				card = g.lowestOfLed; // nothing we can do
+			if (card == null) {
+				if (g.bestCard.rank > g.highestOfLed.rank) {
+					card = g.lowestOfLed; // nothing we can do
+				}
+			}
+
+			if (card == null) {
+				if (g.faLed.pnFragLen == 1 && g.pnFragLed.get(0).rank > g.highestOfLed.rank) {
+					card = g.lowestOfLed; // nothing we can do
+				}
+			}
+
+			if (card == null) {
+				if (g.faLed.pnFragLen == 1 && g.pnFragLed.get(0).rankEqu >= g.highestOfLed.rankEqu) {
+					card = g.lowestOfLed; // Let Partner just play her singleton
+				}
 			}
 
 			if (card == null) {
 				if (g.bestCard.rankEqu == Zzz.King && g.highestOfLed.rankEqu == Zzz.Ace) {
 					if (g.pnHighestOfLedRank != Zzz.Ace)
-						card = g.highestOfLed;
+						card = g.fragLed.getHighest(g.z);
 					else {
 						// TODO: MORE (non pattern) 2nd player anal
 					}
@@ -49,7 +63,7 @@ public class Qlay_2nd {
 
 			if (card == null) {
 				if (h.getStrategy().containsGetToHand(h.compass)) {
-					card = g.highestOfLed;
+					card = g.fragLed.getHighest(g.z);
 				}
 			}
 
@@ -58,11 +72,16 @@ public class Qlay_2nd {
 			}
 
 			if (card == null) {
-				Card ptnr_card = g.pnFragLed.getLowestThatBeats(g.z, g.bestCard.rank);
-				if (ptnr_card != null) {
-					// can partner beat the current lead
+				if (g.faLed.ourTopTricksCor > 0) { // we have top tricks in this suit
+					if (g.faLed.pnFragLen > 0 && g.pnFragLed.get(0).rankEqu != Zzz.Ace)
+						card = g.fragLed.getHighest(g.z);
+				}
+			}
 
-					card = g.lowestOfLed; // we will play low and let partner do her stuff
+			if (card == null) {
+				if (g.faLed.ourInnerRun > 1) { // we have an innerrun
+					if (g.faLed.pnFragLen > 0 && g.pnFragLed.get(0).rankEqu != Zzz.King)
+						card = g.fragLed.getHighest(g.z);
 				}
 			}
 

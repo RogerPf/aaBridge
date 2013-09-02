@@ -10,7 +10,7 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.model;
 
-class Play_5_Discard {
+class Qlay_5_Discard {
 	// ---------------------------------- CLASS -------------------------------------
 
 	public static Card pickBest(Gather g) {

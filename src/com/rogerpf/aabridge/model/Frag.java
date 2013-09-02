@@ -27,13 +27,15 @@ public class Frag extends Cal implements Serializable, Comparable<Frag> {
 
 	public Hand hand;
 	public int suit;
-	transient char suitCh;
+	public transient char suitCh;
+	public transient boolean signalHasHappened;
 
 	Frag(Hand handV, int suitV) { /* Constructor */
 		super();
 		hand = handV;
 		suit = suitV;
 		suitCh = Zzz.suit_to_cdhsnCh[suitV];
+		signalHasHappened = false;
 	}
 
 	private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
@@ -185,10 +187,49 @@ public class Frag extends Cal implements Serializable, Comparable<Frag> {
 		return getLast();
 	}
 
+	public Card getLowestThatBeatsOrLowestEqu(boolean contigHigh, int rankToBeat) {
+		// ==============================================================================================
+		for (int i = size() - 1; i >= 0; i--) {
+			if (get(i).rankEqu > rankToBeat) {
+				if (!contigHigh) {
+					return get(i);
+				}
+				else {
+					int rankEqu = get(i).rankEqu;
+					for (int k = 0; k <= i; k++) {
+						if (get(k).rankEqu == rankEqu)
+							return get(k);
+					}
+				}
+			}
+		}
+		return getLast();
+	}
+
 	public Card getLowestThatBeats(boolean contigHigh, int rankToBeat) {
 		// ==============================================================================================
 		for (int i = size() - 1; i >= 0; i--) {
 			if (get(i).rank > rankToBeat) {
+				if (!contigHigh) {
+					return get(i);
+				}
+				else {
+					int rankEqu = get(i).rankEqu;
+					for (int k = 0; k <= i; k++) {
+						if (get(k).rankEqu == rankEqu) {
+							return get(k);
+						}
+					}
+				}
+			}
+		}
+		return null;
+	}
+
+	public Card getLowestThatBeatsEqu(boolean contigHigh, int rankToBeat) {
+		// ==============================================================================================
+		for (int i = size() - 1; i >= 0; i--) {
+			if (get(i).rankEqu > rankToBeat) {
 				if (!contigHigh) {
 					return get(i);
 				}

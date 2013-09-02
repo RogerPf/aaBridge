@@ -18,11 +18,10 @@ import com.rogerpf.aabridge.controller.Aaa;
 /**   
  */
 class EmptyPanel extends ClickPanel {
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 
+	// -------------------------------------
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		setBackground(Aaa.baizeGreen);
@@ -34,9 +33,7 @@ class EmptyPanel extends ClickPanel {
 /**   
  */
 class NoFillPanel extends ClickPanel {
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 
 	// -------------------------------------
@@ -50,12 +47,29 @@ class NoFillPanel extends ClickPanel {
 
 /**   
  */
-class DarkGrayBgPanel extends ClickPanel {
-	/**
-	 * 
-	 */
+class DarkGrayHiddenPanel extends ClickPanel {
+
 	private static final long serialVersionUID = 1L;
 
+	// -------------------------------------
+	DarkGrayHiddenPanel() { // constructor
+		setVisible(false);
+	}
+
+	// -------------------------------------
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		setBackground(Aaa.darkGrayBg);
+	}
+}
+
+/**   
+ */
+class DarkGrayBgPanel extends ClickPanel {
+
+	private static final long serialVersionUID = 1L;
+
+	// -------------------------------------
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		setBackground(Aaa.darkGrayBg);
@@ -67,11 +81,10 @@ class DarkGrayBgPanel extends ClickPanel {
 /**   
  */
 class PinkBgPanel extends ClickPanel {
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 
+	// -------------------------------------
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		setBackground(Aaa.baizePink);

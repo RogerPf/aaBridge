@@ -40,7 +40,6 @@ public class Qlay_4th {
 							Card pCard = g.pnFragLed.getLowestThatBeatsOrLowest(g.z, g.bestCard.rank);
 							if (pCard.rank > g.bestCard.rank) {
 								h.deal.moveCardToHandDuringPlay(pCard, h, card);
-								// App.gbp.dealMajorChange();
 								card = pCard;
 							}
 						}

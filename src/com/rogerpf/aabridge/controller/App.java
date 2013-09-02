@@ -7,13 +7,15 @@
  * 
  * Contributors:
  *     Roger Pfister - initial API and implementation
- ******************************************************************************/
+ *******************************************************************************/
 package com.rogerpf.aabridge.controller;
 
 import java.util.prefs.Preferences;
 
 import com.rogerpf.aabridge.model.Deal;
+import com.rogerpf.aabridge.model.Lin;
 import com.rogerpf.aabridge.model.Zzz;
+import com.rogerpf.aabridge.view.AaLinButtonsPanel;
 import com.rogerpf.aabridge.view.AaOuterFrame;
 import com.rogerpf.aabridge.view.GreenBaizePanel;
 
@@ -29,7 +31,9 @@ public class App {
 	public static String testsPath;
 	public static String resultsPath;
 	public static String dealExt = "aaBridge";
-	public static String dotDealExt = '.' + dealExt;
+	public static String dotAaBridgeExt = '.' + dealExt;
+	public static String linExt = "lin";
+	public static String dotLinExt = '.' + linExt;
 	
 	static int mode = Aaa.NORMAL;
 	
@@ -53,7 +57,7 @@ public class App {
 	 * 
 	 */
 
-	/**   
+	/**
 	 */
 	static public void incOffsetClockwise() {
 		compassPhyOffset = (compassPhyOffset + 3) % 4;
@@ -61,7 +65,7 @@ public class App {
 		frame.repaint();
 	};
 
-	/**   
+	/**
 	 */
 	static public void incOffsetAntiClockwise() {
 		compassPhyOffset = (compassPhyOffset + 1) % 4;
@@ -69,22 +73,22 @@ public class App {
 		frame.repaint();
 	};
 
-	/**   
+	/**
 	 */
 	static public int compassFromPhyScreenPos(int phyPos) {
 		return (phyPos + compassPhyOffset) % 4;
 	};
 
-	/**   
+	/**
 	 */
 	static public int phyScreenPosFromCompass(int compass) {
 		return (compass + 4 - compassPhyOffset) % 4;
 	};
 
-	/**   
+	/**
 	 */
 	static public void calcCompassPhyOffset() {
-		compassPhyOffset = (App.showDeclarerInSouthZone && (!App.deal.isBidding() && (App.deal.contract != App.deal.PASS))) 
+		compassPhyOffset = (App.putDeclarerSouth && (!App.deal.isBidding() && (App.deal.contract != App.deal.PASS))) 
 			? ((App.deal.contractCompass - Zzz.South)+4) % 4 : 0;
 	};
 	
@@ -104,6 +108,7 @@ public class App {
 	public static int ropSelectedTabIndex = 0;	
 	
 	public static boolean showBidPlayMsgs = true;
+	public static boolean showSuitSymbols = true;
 	public static boolean showWelcome = true;
 	public static boolean alwaysShowHidden = false;
 	public static boolean showPoints = false;
@@ -120,6 +125,7 @@ public class App {
 	public static boolean yourFinnessesMostlyFail = false;
            
 	public static boolean showEditPlay2Btn = false;
+	public static boolean showClaimBtn = false;
 	public static boolean deleteQuickSaves = false;
 	public static boolean deleteAutoSaves = false;
 	public static boolean showRotationBtns = false;
@@ -130,8 +136,13 @@ public class App {
 	public static boolean runTestsAtStartUp = false;
 	public static boolean showTestsLogAtEnd = true;
 	
-	public static String dealCriteria = "twoSuitSlam_E";
+	public static String  dealCriteria = "twoSuitSlam_E";
 	public static boolean watchBidding = true;
+	public static int     youSeatForNewDeal = Zzz.South;  
+	public static int     youSeatForLinDeal = Zzz.South;  // South => declarer
+	public static int     defenderSignals = Zzz.NoSignals; 
+	public static boolean putDeclarerSouth = true;
+	public static boolean showOldFinAsReview = false;
 
 	public static int eotExtendedDisplay = 2;
 	
@@ -139,9 +150,7 @@ public class App {
 	public static int bidPluseTimerMs = 750;
 	public static int finalCardTimerMs = 1200;
 	
-	public static int     youSeatForNewDeal = Zzz.South;  
 	
-	public static boolean showDeclarerInSouthZone = true;  // not (yet) saved or setable
 	
 	public static final int scoringFollowsYou = 0;     
 	public static final int scoringFollowsDeclarer = 1;     
@@ -166,6 +175,7 @@ public class App {
 		
 		showWelcome        = appPrefs.getBoolean("showWelcome",      true);
 		showBidPlayMsgs    = appPrefs.getBoolean("showBidPlayMsgs",  true);
+		showSuitSymbols    = appPrefs.getBoolean("showSuitSymbols",  true);
 		showPoints         = appPrefs.getBoolean("showPoints",       false);
 		showLTC            = appPrefs.getBoolean("showLTC",          false);
 		youAutoSingletons  = appPrefs.getBoolean("youAutoSingletons", false);
@@ -179,6 +189,7 @@ public class App {
 		youDeclarerPause   = appPrefs.getBoolean("youDeclarerPause",  true);
 		youDefenderPause   = appPrefs.getBoolean("youDefenderPause",  true);
 		showEditPlay2Btn   = appPrefs.getBoolean("showEditPlay2Btn", false);
+		showClaimBtn       = appPrefs.getBoolean("showClaimBtn", false);
 		showRotationBtns   = appPrefs.getBoolean("showRotationBtns", false);
 		showEasySave       = appPrefs.getBoolean("showEasySave",     false);
 		showPlayAgain      = appPrefs.getBoolean("showPlayAgain",    false);
@@ -189,14 +200,20 @@ public class App {
 		runTestsAtStartUp  = appPrefs.getBoolean("runTestsAtStartUp",false);
 		showTestsLogAtEnd  = appPrefs.getBoolean("showTestsLogAtEnd",true);
 		
+		youSeatForNewDeal  = appPrefs.getInt("youSeatForNewDeal",  Zzz.South);
+		youSeatForLinDeal  = appPrefs.getInt("youSeatForLinDeal",  Zzz.South);
+		dealCriteria       = appPrefs.get("dealCriteria",  "twoSuitSlam_M1");
+		dealCriteria       = Deal.validateDealCriteria( dealCriteria);
+		watchBidding       = appPrefs.getBoolean("watchBidding",  true);
+		
+		defenderSignals    = appPrefs.getInt("defenderSignals", Zzz.NoSignals);
+		if (defenderSignals > Zzz.HighestSignal) defenderSignals = Zzz.NoSignals;
+		putDeclarerSouth   = appPrefs.getBoolean("putDeclarerSouth",  true);
+		showOldFinAsReview = appPrefs.getBoolean("showOldFinAsReview",  false);
+		
 		playPluseTimerMs   = appPrefs.getInt("playPluseTimerMs", 600);
 		bidPluseTimerMs    = appPrefs.getInt("bidPluseTimerMs",  750);
 		eotExtendedDisplay = appPrefs.getInt("eotExtendedDisplay",  2);
-		youSeatForNewDeal  = appPrefs.getInt("youSeatForNewDeal",  Zzz.South);
-		dealCriteria       = appPrefs.get("dealCriteria",  "twoSuitSlam_M1");
-		dealCriteria       = Deal.validateDealCriteria( dealCriteria);
-		
-		watchBidding       = appPrefs.getBoolean("watchBidding",  true);
 
         implement_showRotationBtns();
         implement_showEasySave();
@@ -216,6 +233,8 @@ public class App {
 	public static void savePreferences() {
 		Preferences appPrefs = Preferences.userRoot().node("com.rogerpf.aabridge.prefs");
 		
+		App.maximized = (App.frame.getExtendedState() == java.awt.Frame.MAXIMIZED_BOTH);
+		
 		appPrefs.putInt("frameLocationX",  frameLocationX);
 		appPrefs.putInt("frameLocationY",  frameLocationY);
 		appPrefs.putInt("frameWidth",      frameWidth);
@@ -227,6 +246,7 @@ public class App {
 		
 		appPrefs.putBoolean("showWelcome",       showWelcome);
 		appPrefs.putBoolean("showBidPlayMsgs",   showBidPlayMsgs);
+		appPrefs.putBoolean("showSuitSymbols",   showSuitSymbols);
 		appPrefs.putBoolean("alwaysShowHidden",  alwaysShowHidden);
 		appPrefs.putBoolean("showPoints",        showPoints);
 		appPrefs.putBoolean("showLTC",           showLTC);
@@ -240,6 +260,7 @@ public class App {
 		appPrefs.putBoolean("youDeclarerPause",  youDeclarerPause);
 		appPrefs.putBoolean("youDefenderPause",  youDefenderPause);
 		appPrefs.putBoolean("showEditPlay2Btn",  showEditPlay2Btn);
+		appPrefs.putBoolean("showClaimBtn",      showClaimBtn);
 		appPrefs.putBoolean("deleteQuickSaves",  deleteQuickSaves);
 		appPrefs.putBoolean("deleteAutoSaves",   deleteAutoSaves);
 		appPrefs.putBoolean("showRotationBtns",  showRotationBtns);
@@ -249,13 +270,19 @@ public class App {
 		appPrefs.putBoolean("startWithDoneHand", startWithDoneHand);
 		appPrefs.putBoolean("runTestsAtStartUp", runTestsAtStartUp);
 		appPrefs.putBoolean("showTestsLogAtEnd", showTestsLogAtEnd);
-		
-		appPrefs.putInt("playPluseTimerMs",     playPluseTimerMs);
-		appPrefs.putInt("bidPluseTimerMs",      bidPluseTimerMs);
-		appPrefs.putInt("eotExtendedDisplay",   eotExtendedDisplay);
-		appPrefs.putInt("youSeatForNewDeal",    youSeatForNewDeal);
-		appPrefs.put("dealCriteria",         dealCriteria);
+		appPrefs.putInt("youSeatForNewDeal",     youSeatForNewDeal);
+		appPrefs.putInt("youSeatForLinDeal",     youSeatForLinDeal);
+		appPrefs.put("dealCriteria",             dealCriteria);
 		appPrefs.putBoolean("watchBidding",      watchBidding);
+		appPrefs.putInt("defenderSignals",       defenderSignals);
+		appPrefs.putBoolean("showOldFinAsReview",showOldFinAsReview);
+		appPrefs.putBoolean("putDeclarerSouth",  putDeclarerSouth);
+		
+		
+		
+		appPrefs.putInt("playPluseTimerMs",      playPluseTimerMs);
+		appPrefs.putInt("bidPluseTimerMs",       bidPluseTimerMs);
+		appPrefs.putInt("eotExtendedDisplay",    eotExtendedDisplay);
 	}
 	
 	// @formatter:on
@@ -293,6 +320,12 @@ public class App {
 		}
 	}
 
+	public static void implement_showClaimBtn() {
+		if (allConstructionComplete) {
+			App.gbp.matchPanelsToDealState();
+		}
+	}
+
 	public static void implement_fillHandDisplay() {
 		if (allConstructionComplete) {
 			App.frame.repaint();
@@ -302,21 +335,21 @@ public class App {
 	/**   
 	 */
 	public static boolean isFilenameThrowAway(String filename) {
-		// ************************************************************************
+		// ========================================================================
 		return filename == null || filename.isEmpty() || filename.contains("__Your_text_here_");
 	}
 
 	/**   
 	 */
 	public static boolean isMode(int modeV) {
-		// ************************************************************************
+		// ========================================================================
 		return (mode == modeV);
 	};
 
 	/** 
 	 */
 	static public void setMode(int newMode) {
-		// ************************************************************************
+		// ========================================================================
 		if (/* old */mode == Aaa.EDIT_BIDDING) {
 			if (newMode == Aaa.NORMAL) {
 				; // do nothing
@@ -374,14 +407,14 @@ public class App {
 	/**   
 	 */
 	static public boolean isModeAnyEdit() {
-		// ************************************************************************
+		// ========================================================================
 		return (mode >= Aaa.EDIT_CHOOSE /* includes all edit modes */);
 	}
 
 	/**   
 	 */
 	static public boolean isSeatVisible(int compass) {
-		// ************************************************************************
+		// ========================================================================
 		if (alwaysShowHidden || (mode >= Aaa.EDIT_CHOOSE /* includes all edit modes */)) {
 			return true;
 		}
@@ -421,7 +454,7 @@ public class App {
 	/**   
 	 */
 	static public boolean isAutoPlay(int compass) {
-		// ************************************************************************
+		// ========================================================================
 
 		if ((mode == Aaa.EDIT_HANDS) || (mode == Aaa.EDIT_BIDDING) || (mode == Aaa.EDIT_PLAY) || !App.deal.isPlaying()) {
 			return false;
@@ -450,7 +483,7 @@ public class App {
 	/**   
 	 */
 	static public boolean isAutoBid(int compass) {
-		// ************************************************************************
+		// ========================================================================
 
 		if ((mode == Aaa.EDIT_HANDS) || (mode == Aaa.EDIT_BIDDING) || (mode == Aaa.EDIT_PLAY) || !App.deal.isBidding()) {
 			return false;
@@ -467,10 +500,77 @@ public class App {
 		return true;
 	};
 
+	/**   
+	 */
+	static void reviewBackToStartOfPlay() {
+		// ========================================================================
+		App.reviewTrick = 0;
+		App.reviewCard = 0;
+		App.frame.repaint();
+	}
+
+	/**
+	 */
+	public static void switchToDeal(Deal deal) {
+		// ========================================================================
+
+		App.deal = deal;
+		App.calcCompassPhyOffset();
+		App.gbp.dealMajorChange();
+
+		App.reviewTrick = 0;
+		App.reviewCard = 0;
+
+		App.setMode(Aaa.NORMAL);
+
+		if (App.lin != null) {
+			if (App.deal.isBidding()) {
+				App.deal.youSeatHint = Zzz.South;
+			}
+			else {
+				// South as a value represents the Declarer etc
+				App.deal.youSeatHint = (App.deal.contractCompass + (App.youSeatForLinDeal - Zzz.South) + 4) % 4;
+			}
+		}
+
+		if (App.showOldFinAsReview && App.deal.isFinished()) {
+			App.setMode(Aaa.REVIEW_PLAY);
+			App.localShowHidden = false;
+			App.reviewTrick = 0;
+			App.reviewCard = 0;
+		}
+
+		App.gbp.matchPanelsToDealState();
+		App.frame.repaint();
+		App.gbp.c2_2__bbp.startAutoBidDelayTimerIfNeeded();
+		if (App.deal.isPlaying()) {
+			App.gbp.c1_1__tfdp.clearAllCardSuggestions();
+			App.gbp.c1_1__tfdp.makeCardSuggestions(); // for the "test" file if loaded
+		}
+		App.frame.setTitleAsRequired();
+	}
+
+	/**   
+	 */
+	public static void switchToNewLin(Lin lin) {
+		// ========================================================================
+
+		App.lin = lin;
+
+		App.linBtns.matchToAppLin();
+
+		if (lin != null) {
+			App.switchToDeal(lin.get(0).deepClone());
+		}
+		App.frame.validate();
+	}
+
 	public static String[] args;
 	public static AaOuterFrame frame = null;
 	public static Controller con = new Controller();
 	public static GreenBaizePanel gbp = null;
+	public static AaLinButtonsPanel linBtns = null;
 	public static Deal deal = null;
+	public static Lin lin = null;
 
 }

@@ -27,7 +27,7 @@ public class TopLeftPanel extends ClickPanel {
 	public VunerabilityDisplayPanel c0_0__vdp = new VunerabilityDisplayPanel();
 
 	RpfResizeButton quicksave;
-	RpfResizeButton playagain;
+	RpfResizeButton playWipe;
 	RpfResizeButton easySave;
 	RpfResizeButton clock;
 	RpfResizeButton anti;
@@ -35,6 +35,8 @@ public class TopLeftPanel extends ClickPanel {
 	/**
 	 */
 	TopLeftPanel() { /* Constructor */
+
+		RpfResizeButton b;
 
 		descEntry.setBorder(Aaa.emptyBorder);
 		descEntry.setFocusable(false);
@@ -45,22 +47,36 @@ public class TopLeftPanel extends ClickPanel {
 
 		quicksave = new RpfResizeButton(1, "menuQuickSave", 30, 14, 0.7f);
 		easySave = new RpfResizeButton(1, "menuEasySave", 27, 14, 0.7f);
-		playagain = new RpfResizeButton(1, "menuPlayAgain", 20, 14, 0.7f);
-		clock = new RpfResizeButton(1, "mainClock", 7, 14, 0.9f);
-		anti = new RpfResizeButton(1, "mainAnti", 7, 14, 0.9f);
+		playWipe = new RpfResizeButton(1, "menuPlayWipe", 14, 14, 0.7f);
+		b /*   */= new RpfResizeButton(0, "invis", 50, 14, 0.7f);
+		b.setVisible(false);
+		clock = new RpfResizeButton(1, "mainClock", 7, 12, 0.9f);
+		anti = new RpfResizeButton(1, "mainAnti", 7, 12, 0.9f);
 
 		setRotationBtnsVisibility();
 		setEasySaveVisibility();
 		setPlayAgainVisibility();
 
-		setLayout(new MigLayout("insets 0 0 0 0, gap 0! 0!, flowy", "[60%][]5%", "5%[15%]8%[12%]8%[12%]8%[12%]2%[1%]"));
+		setLayout(new MigLayout("insets 0 0 0 0, gap 0! 0!, flowy", "[60%][]5%", "5%[15%]8%[12%]8%[12%]8%[12%]2%[12%]"));
 		add(descEntry, "pushx, align right, wmin 90%, wmax 90%, span 2");
-		add(c0_0__vdp, "gapx 4%, wmin 52%, hmin 72%, spany, wrap");
+		add(c0_0__vdp, "align left, gapx 4%, wmin 52%, wmax 52%, hmin 70%, hmax 70%, spany, wrap");
 		add(quicksave, "gapx 4%, wmin 10%, hmin 10%, align left");
 		add(easySave, "hidemode 3, gapx 4%, wmin 10%, hmin 10%");
-		add(playagain, "split3, gapx 4%, wmin 4%, hmin 10%, flowx");
-		add(anti, "gapx 4%, wmin 6%, hmin 10%");
-		add(clock, "gapx 2%, wmin 6%, hmin 10%");
+		add(playWipe, "gapx 4%, wmin 4%, hmin 10%");
+		add(b, "split3, gapx 4%, wmin 4%, hmin 6%, flowx");
+		add(anti, "hidemode 3, gapx 4%, wmin 6%, hmin 6%");
+		add(clock, "hidemode 3, gapx 3%, wmin 6%, hmin 6%");
+
+		// earlier version
+
+//		setLayout(new MigLayout("insets 0 0 0 0, gap 0! 0!, flowy", "[60%][]5%", "5%[15%]8%[12%]8%[12%]8%[12%]2%[1%]"));
+//		add(descEntry, "pushx, align right, wmin 90%, wmax 90%, span 2");
+//		add(c0_0__vdp, "gapx 4%, wmin 52%, hmin 72%, spany, wrap");
+//		add(quicksave, "gapx 4%, wmin 10%, hmin 10%, align left");
+//		add(easySave, "hidemode 3, gapx 4%, wmin 10%, hmin 10%");
+//		add(playWipe, "split3, gapx 4%, wmin 4%, hmin 10%, flowx");
+//		add(anti, "gapx 4%, wmin 6%, hmin 10%");
+//		add(clock, "gapx 2%, wmin 6%, hmin 10%");
 
 	}
 
@@ -80,7 +96,7 @@ public class TopLeftPanel extends ClickPanel {
 	/**   
 	 */
 	public void setPlayAgainVisibility() {
-		playagain.setVisible(App.showPlayAgain);
+		playWipe.setVisible(App.showPlayAgain);
 	}
 
 	/**   

@@ -20,13 +20,11 @@ import java.io.Serializable;
  */
 public class Bid implements Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 6958033952065344529L;
 	public int level;
 	public int suit;
-	transient char suitCh;
+	public boolean alert = false; // added in 1398 - 2013
+	public transient char suitCh;
 
 	public Bid(int levelV, int suitV) {
 		assert (1 <= levelV && levelV <= 7);
@@ -34,12 +32,14 @@ public class Bid implements Serializable {
 		level = levelV;
 		suit = suitV;
 		suitCh = (char) Zzz.suit_to_cdhsnCh[suit];
+		alert = false;
 	}
 
 	public Bid(int c) {
 		assert (c == Zzz.NULL_BID || c == Zzz.PASS || c == Zzz.DOUBLE || c == Zzz.REDOUBLE);
 		level = c;
 		suit = -1;
+		alert = false;
 	}
 
 	private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
@@ -59,6 +59,14 @@ public class Bid implements Serializable {
 		}
 		else {
 			suit = fields.get("suit", (int) 0xdeadbeef);
+		}
+
+		// field added added in 1.0.7.1398 - 2013 August 13
+		if (fields.defaulted("alert")) {
+			alert = false;
+		}
+		else {
+			alert = fields.get("alert", false);
 		}
 	}
 
@@ -97,6 +105,17 @@ public class Bid implements Serializable {
 		return (isCall()) ? -1 : suit;
 	}
 
+	// --------------------------------
+	public boolean getAlert() {
+		return (isCall()) ? false : alert;
+	}
+
+	// --------------------------------
+	public void setAlert(boolean halfBidAlert) {
+		if (isCall() == false)
+			alert = halfBidAlert;
+	}
+
 	public char getSuitCh() {
 		return (isCall()) ? '?' : Zzz.suit_to_cdhsnCh[suit];
 	}
@@ -130,5 +149,4 @@ public class Bid implements Serializable {
 		return true; // this incomming bid is the same and so invalid hence we
 						// return true
 	}
-
 }

@@ -19,36 +19,48 @@ public class Qlay_3rd {
 
 		int brk = 0;
 		if (g.trickNumb == 6)
-			if (g.compass == 0)
+			if (g.compass == 2)
 				brk++; // put your breakpoint here :)
 
-		for (StraStep step : h.getStrategy()) {
-			if (step.idea == Strategy.PlayCard) {
-				// --------------------------------------------------
-//				assert (step.suit == g.suitLed);
-				card = h.frags[step.suit].getIfRelExist(step.rankRel);
-				if (card == null) {
-					@SuppressWarnings("unused")
-					int x = 0; // put your breakpoint here
-				}
-				assert (card != null);
-				return card;
-			}
+		if (brk > 0)
+			brk++; // put your breakpoint here :)
 
-			if (step.idea == Strategy.GetToHand) {
-				// --------------------------------------------------
-				if (step.compass == g.compass) {
-					if (g.faLed.myFragLen > 0) {
-						card = g.fragLed.getHighest(g.z);
-						return card;
-					}
-					if (g.haveTrumps && !g.bestByTrumping) {
-						card = g.lowestTrump;
-						return card;
-					}
+		if (g.haveSuitLed) {
+			if (card == null) {
+				if (g.bestCard.rank > g.highestOfLed.rank) {
+					card = g.lowestOfLed; // nothing we can do
 				}
 			}
+		}
 
+		if (card == null) {
+			for (StraStep step : h.getStrategy()) {
+				if (step.idea == Strategy.PlayCard) {
+					// --------------------------------------------------
+					assert (step.suit == g.suitLed);
+					card = h.frags[step.suit].getIfRelExist(step.rankRel);
+					if (card == null) {
+						brk++; // put your breakpoint here :)
+					}
+					assert (card != null);
+					break;
+				}
+
+				if (step.idea == Strategy.GetToHand) {
+					// --------------------------------------------------
+					if (step.compass == g.compass) {
+						if (g.bestByTrumping == false && g.highestOfLed != null && g.highestOfLed.rank > g.bestCard.rank) {
+							card = g.fragLed.getHighest(g.z);
+							break;
+						}
+
+						if (!g.haveSuitLed && g.haveTrumps && !g.bestByTrumping) {
+							card = g.lowestTrump;
+							break;
+						}
+					}
+				}
+			}
 		}
 
 		if (brk > 0)
@@ -105,7 +117,12 @@ public class Qlay_3rd {
 			}
 
 			if (card == null) {
+				if (g.cardLed.rankEqu < Zzz.Ace && g.faLed.ourTopTricksCor >= g.faLed.myFragLen) {
+					card = g.fragLed.getLowestThatBeatsEqu(g.z, Zzz.King);
+				}
+			}
 
+			if (card == null) {
 				if (g.areWeWinning) {
 					// TODO: rd 3rd 3rd Declarer and Dummy - WHEN currently winning
 					// we need to estimate what LHO may hold - but the pattern matching should do a lot to help
@@ -124,8 +141,8 @@ public class Qlay_3rd {
 						// cover if we can - yes it migh be trumped
 					card = g.fragLed.getLowestThatBeats(g.z, g.bestCard.rank);
 				}
-
 			}
+
 			if (card == null) {
 				card = g.lowestOfLed;
 				if (card.rank > g.bestCard.rank)
@@ -135,19 +152,23 @@ public class Qlay_3rd {
 		}
 		else { // we have NONE of the led suit
 
-			if (g.noTrumps) {
-
-				card = h.pickBestDiscard(g);
-
+			if (card == null) {
+				if (g.noTrumps) {
+					card = h.pickBestDiscard(g);
+				}
 			}
-			else if (g.areWeWinning) { // YES
 
-				card = h.pickBestDiscard(g);
-
+			if (card == null) {
+				if (g.areWeWinning) { // YES
+					if (g.cardLed.rankEqu == Zzz.Ace)
+						card = h.pickBestDiscard(g);
+				}
 			}
-			else { // No we are loosing this trick
 
+			if (card == null) {
 				if (g.haveTrumps) {
+					// so we will ALWAYS ruff partners lead
+					// Need to add patterns for ruffing finness if you want it otherwise
 					if (g.bestByTrumping) {
 						card = h.frags[g.trumpSuit].getLowestThatBeats(false, g.bestCard.rank);
 					}

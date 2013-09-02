@@ -33,23 +33,25 @@ public class Aaa {
 	public static final int EDIT_BIDDING = 5;
 	public static final int EDIT_PLAY = 6;
 	
-	public static int VisC__SHOW_NS_ONLY = 0;
-	public static int VisC__SHOW_ALL = 1;
+	public static final int VisC__SHOW_NS_ONLY = 0;
+	public static final int VisC__SHOW_ALL = 1;
 
-	public static int ABid__NONE = 0;
-	public static int ABid__ALL_BUT_SOUTH = 1;
+	public static final int ABid__NONE = 0;
+	public static final int ABid__ALL_BUT_SOUTH = 1;
 	
-	public static int APlay__NONE = 0;
-	public static int APlay__EW_ONLY = 1;	
+	public static final int APlay__NONE = 0;
+	public static final int APlay__EW_ONLY = 1;
 	
+	public static final int UNDO = 'U';
+	public static final int ALERT = '!';
+
 	public static final int CMD_SUIT  = 0x0100; //  C D H S
 	public static final int CMD_SUITN = 0x0200; //  C D H S N
 	public static final int CMD_FACE  = 0x0400; //  2 to 14
 	public static final int CMD_LEVEL = 0x0800; //  1 to 7
 	public static final int CMD_CALL  = 0x1000; //  Pass Double Redouble
 	public static final int CMD_ADMIN = 0x2000; //  e.g. Undo
-                        
-	public static final int GrayBoarderThickness = 0;
+	public static final int CMD_ALERT = 0x4000; //  e.g. ! (alert)
                         
 	public static final EmptyBorder emptyBorder = new EmptyBorder(0, 5, 2, 5);
                         
@@ -83,16 +85,18 @@ public class Aaa {
 	public static final Color handAreaOffWhite = new Color(245, 240, 240);
 	public static final Color handBkColorStd   = new Color(235, 230, 230);
 	public static final Color handBkColorDummy = new Color(220, 215, 215);
+	public static final Color vunOffWhite      = new Color(245, 245, 245);
+	public static final Color youSeatBannerBk  = new Color(255, 230, 230);
+	public static final Color othersBannerBk   = new Color(235, 235, 235);
+	public static final Color youSeatBannerTxt = new Color(205, 205, 205);
+	public static final Color othersBannerTxt  = new Color(205, 205, 205);
 	public static final Color scoreBkColor     = new Color(190, 210, 220);
 	public static final Color cardBackColor    = new Color(150, 150, 200);
+	public static final Color cardBackColorClm = new Color(190, 190, 230);
 	public static final Color handNeswBkColor  = new Color(141, 203, 193);
 	public static final Color handActiveColor  = new Color(235, 216, 140);
 	public static final Color vunerableColor   = new Color(203, 120, 120);
 	public static final Color vunerabilityBox  = new Color(153, 204, 204);
-	public static final Color vunOffWhite      = new Color(245, 245, 245);
-	public static final Color handBannerBk     = new Color(235, 235, 235);
-	public static final Color youSeatBannerBk  = new Color(250, 235, 235);
-	public static final Color handBannerText   = new Color(220, 220, 220);
 	public static final Color genOffWhite      = new Color(245, 245, 245);
 	public static final Color passButtonColor  = new Color(140, 200, 140);
 	public static final Color dblButtonColor   = new Color(180,  60,  60);
@@ -157,6 +161,14 @@ public class Aaa {
 		}
 
 		switch (c) {
+		
+		case 'u':
+		case 'U':
+			return Aaa.CMD_ADMIN | Aaa.UNDO;
+
+		case '!':
+			return Aaa.CMD_ALERT | Aaa.ALERT;
+			
 		case 'c':
 		case 'C':
 			return Aaa.CMD_SUITN | Aaa.CMD_SUIT | Zzz.Clubs;
@@ -199,9 +211,6 @@ public class Aaa {
 		case 'R':
 			return Aaa.CMD_CALL | Zzz.REDOUBLE;
 			
-		case 'u':
-		case 'U':
-			return Aaa.CMD_ADMIN | Zzz.UNDO;
 		}
 		return 0;
 	}

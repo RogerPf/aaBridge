@@ -11,7 +11,6 @@
 package com.rogerpf.aabridge.view;
 
 import java.awt.Graphics;
-import java.awt.SystemColor;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
@@ -29,12 +28,14 @@ class AaRopPrefs4_StartUp extends ClickPanel implements ItemListener {
 	QCheckBox showWelcome;
 	QCheckBox startWithDoneHand;
 	QCheckBox showBidPlayMsgs;
+	QCheckBox showSuitSymbols;
 	QCheckBox showPoints;
 	QCheckBox showLTC;
 	QCheckBox showEasySave;
 	QCheckBox showPlayAgain;
 	QCheckBox showRotationBtns;
 	QCheckBox showEditPlay2Btn;
+	QCheckBox showClaimBtn;
 	QCheckBox deleteQuickSaves;
 	QCheckBox deleteAutoSaves;
 
@@ -44,18 +45,20 @@ class AaRopPrefs4_StartUp extends ClickPanel implements ItemListener {
 		setLayout(new MigLayout("insets 0 0 0 0, gap 0! 0!, flowy"));
 
 		// @formatter:off
-		add(topLine  = new QLabel("Start Up and Button display  options"), "gapy 5");
+		add(topLine  = new QLabel("Start Up and Button display  options"), "gapy 8");
 		topLine.setForeground(Aaa.optionsTitleGreen);
 		add(showWelcome         = new QCheckBox(this, App.showWelcome,      "At Start - Show Welcome Splash screen"), "gapy 5");
 		add(startWithDoneHand   = new QCheckBox(this, App.startWithDoneHand,"At Start - Show the 'Blue Welcome Box' -  When unchecked the first deal will start straight away  "));
 		add(showBidPlayMsgs     = new QCheckBox(this, App.showBidPlayMsgs,  "Show the 'Bid' and 'Play' prompt messages"));
+		add(showSuitSymbols     = new QCheckBox(this, App.showSuitSymbols,  "Show the four Suit Symbols in the hand display area"));
 		add(showPoints          = new QCheckBox(this, App.showPoints,       "Show the Point Count"));
 		add(showLTC             = new QCheckBox(this, App.showLTC,          "Show the Losing Trick Count - See Wikipedia - Losing Trick Count with refinements"));
-		add(showEasySave        = new QCheckBox(this, App.showEasySave,     "Show the 'Easy Save' button - Saves the file, if you have set at filename otherwise it does a 'SaveAs'  "), "gapy 8");
-		add(showPlayAgain       = new QCheckBox(this, App.showPlayAgain,    "Show the 'Again' button - 'Again' gives a fast wipe of played cards, so you can replay that same deal  "));
+		add(showEasySave        = new QCheckBox(this, App.showEasySave,     "Show the 'Easy Save' button - Saves the file, if you have set at filename otherwise it does a 'SaveAs'  "), "gapy 10");
+		add(showPlayAgain       = new QCheckBox(this, App.showPlayAgain,    "Show the 'Wipe' button - 'Wipe' gives a fast wipe of played cards, so you can replay that same deal  "));
 		add(showRotationBtns    = new QCheckBox(this, App.showRotationBtns, "Show the Clockwise and Anti-clockwise rotation buttons  "));
 		add(showEditPlay2Btn    = new QCheckBox(this, App.showEditPlay2Btn, "Show the 'Set Play' button - gives faster access to editing of play  "));
-		add(deleteQuickSaves    = new QCheckBox(this, App.deleteQuickSaves, "Delete any QuickSaves that are 30 days old,  only QuickSaves in the QuickSave folder are examined  "), "gapy 8");
+		add(showClaimBtn        = new QCheckBox(this, App.showClaimBtn,     "Show the 'Claim' button - Allows you to end a hand with a claim  "));
+		add(deleteQuickSaves    = new QCheckBox(this, App.deleteQuickSaves, "Delete any QuickSaves that are 30 days old,  only QuickSaves in the QuickSave folder are examined  "), "gapy 10");
 		add(deleteAutoSaves     = new QCheckBox(this, App.deleteAutoSaves,  "Delete any AutoSaves that are 7 days old,  only AutoSaves in the AutoSave folder are examined  "));
 		// @formatter:on
 	}
@@ -76,6 +79,9 @@ class AaRopPrefs4_StartUp extends ClickPanel implements ItemListener {
 		else if (source == showBidPlayMsgs) {
                        App.showBidPlayMsgs = b;
 		}
+		else if (source == showSuitSymbols) {
+                       App.showSuitSymbols = b;
+        }
 		else if (source == showPoints) {
 			           App.showPoints = b;
 		}
@@ -98,25 +104,28 @@ class AaRopPrefs4_StartUp extends ClickPanel implements ItemListener {
                        App.showEditPlay2Btn = b;
              App.implement_showEditPlay2Btn();
 		}
+		else if (source == showClaimBtn) {
+                       App.showClaimBtn = b;
+             App.implement_showClaimBtn();
+}
 		else if (source == deleteQuickSaves) {
                        App.deleteQuickSaves = b;
         }
 		else if (source == deleteAutoSaves) {
                        App.deleteAutoSaves = b;
-}
-
-
+        }
 
 		// @formatter:on
 
 		if (App.allConstructionComplete) {
+			App.savePreferences();
 			App.frame.repaint();
 		}
 	}
 
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		setBackground(SystemColor.control);
+		// setBackground(SystemColor.control);
 	}
 
 }

@@ -227,14 +227,15 @@ public class BidsFourDisplayPanel extends JPanel {
 
 		Font levelFont = BridgeFonts.faceAndSymbFont.deriveFont(levelFontSize);
 		Font symbolFont = BridgeFonts.faceAndSymbFont.deriveFont(symbolFontSize);
-		Font PassFont = BridgeFonts.bridgeLightFont.deriveFont(cardHeight * 0.6f);
-		Font DoubleFont = BridgeFonts.bridgeBoldFont.deriveFont(cardHeight * 0.60f);
-		Font RedoubleFont = BridgeFonts.bridgeBoldFont.deriveFont(cardHeight * 0.50f);
+		Font passFont = BridgeFonts.bridgeLightFont.deriveFont(cardHeight * 0.6f);
+		Font doubleFont = BridgeFonts.bridgeBoldFont.deriveFont(cardHeight * 0.60f);
+		Font redoubleFont = BridgeFonts.bridgeBoldFont.deriveFont(cardHeight * 0.50f);
+		Font alertFont = BridgeFonts.bridgeBoldFont.deriveFont(cardHeight * 0.70f);
 
 		// ------------------------------------------------------------------
 
-		float boarderLeft = cardWidth * 0.17f;
-		float boarderInLeft = cardWidth * 0.51f;
+		float boarderLeft = cardWidth * 0.12f;
+		float boarderInLeft = cardWidth * 0.44f;
 		float symbolBoarderBot = cardHeight * 0.20f;
 		float levelBoarderBot = cardHeight * 0.20f;
 
@@ -270,6 +271,7 @@ public class BidsFourDisplayPanel extends JPanel {
 
 			int level = -1;
 			int suit = -1;
+			boolean alert = false;
 
 			float left = marginLeft + activityWidth * leftTopPercent[phyPos].x;
 			float top = marginTop + activityHeight * leftTopPercent[phyPos].y;
@@ -282,12 +284,16 @@ public class BidsFourDisplayPanel extends JPanel {
 			float symbolLeft = left + boarderInLeft;
 			float symbolBottom = top + cardHeight - symbolBoarderBot;
 
+			float alertLeft = left + boarderInLeft + (boarderInLeft - boarderLeft) * 1.01f;
+			float alertBottom = top + cardHeight - levelBoarderBot;
+
 			if (i < 3) {
 				if (bids.isEmpty())
 					continue;
 				bid = bids.getLast(); // get their last bid
 				level = bid.getLevel();
 				suit = bid.getSuit();
+				alert = bid.getAlert();
 			}
 			else if (i == 3 && App.isMode(Aaa.REVIEW_BIDDING)) {
 				continue;
@@ -295,6 +301,7 @@ public class BidsFourDisplayPanel extends JPanel {
 			else if (App.isAutoBid(hand.compass) == false) {
 				level = App.gbp.c2_2__bbp.getHalfBidLevel();
 				suit = App.gbp.c2_2__bbp.getHalfBidSuit();
+				alert = App.gbp.c2_2__bbp.getHalfBidAlert();
 
 				// fill the lozenge
 				// ----------------------------------------------
@@ -312,15 +319,15 @@ public class BidsFourDisplayPanel extends JPanel {
 			if (bid != null && bid.isCall()) {
 				g2.setColor(Color.BLACK);
 				if (bid == App.deal.PASS) {
-					g2.setFont(PassFont);
+					g2.setFont(passFont);
 					g2.drawString(Zzz.call_to_string[bid.getCall()], left + cardWidth * 0.1f, levelBottom);
 				}
 				else if (bid == App.deal.DOUBLE) {
-					g2.setFont(DoubleFont);
+					g2.setFont(doubleFont);
 					g2.drawString(Zzz.call_to_string[bid.getCall()], left + cardWidth * 0.1f, levelBottom);
 				}
 				else if (bid == App.deal.REDOUBLE) {
-					g2.setFont(RedoubleFont);
+					g2.setFont(redoubleFont);
 					g2.drawString(Zzz.call_to_string[bid.getCall()], left - /* cardWidth */0.1f, levelBottom);
 				}
 			}
@@ -342,6 +349,14 @@ public class BidsFourDisplayPanel extends JPanel {
 					g2.setFont(symbolFont);
 					g2.drawString(Zzz.suit_to_cdhsntSt[suit], symbolLeft, symbolBottom);
 				}
+
+				// Aert
+				if (alert) {
+					g2.setColor(Aaa.heartsColor);
+					g2.setFont(alertFont);
+					g2.drawString("!", alertLeft, alertBottom);
+				}
+
 			}
 
 		}

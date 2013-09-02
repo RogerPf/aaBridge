@@ -11,14 +11,16 @@
 package com.rogerpf.aabridge.view;
 
 import java.awt.Graphics;
-import java.awt.SystemColor;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+
+import javax.swing.ButtonGroup;
 
 import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
 import com.rogerpf.aabridge.controller.App;
+import com.rogerpf.aabridge.model.Zzz;
 
 /**   
  */
@@ -26,6 +28,16 @@ class AaRopPrefs3_AutoPlay extends ClickPanel implements ItemListener {
 
 	private static final long serialVersionUID = 1L;
 
+	QLabel yourFinnLab;
+	QCheckBox yourFinnessesMostlyFail;
+
+	QLabel defSig;
+	ButtonGroup rbGroupSig = new ButtonGroup();
+	QRadioButton noSignal;
+	QRadioButton stdEvenCount;
+	QRadioButton udcOddCount;
+
+	QLabel pauseLab;
 	QCheckBox youDeclarerPause;
 	QCheckBox youDefenderPause;
 	QCheckBox youAutoSingletons;
@@ -38,24 +50,35 @@ class AaRopPrefs3_AutoPlay extends ClickPanel implements ItemListener {
 	QCheckBox runTestsAtStartUp;
 	QCheckBox showTestsLogAtEnd;
 
-	QLabel topLine;
 	QLabel testingText;
 
 	public AaRopPrefs3_AutoPlay() {
 		setLayout(new MigLayout("insets 0 0 0 0, gap 0! 0!, flowy"));
 
 		String cbInset = "gapx 10";
+		String rbInset = "gapx 7";
 
 		// @formatter:off
-		add(topLine  = new QLabel("Pause at end of trick  and  AutoPlay options"), "gapy 5");
-		topLine.setForeground(Aaa.optionsTitleGreen);
+		add(yourFinnLab  = new QLabel("Make YOUR finnesses mostly fail"), "gapy 8");
+		yourFinnLab.setForeground(Aaa.optionsTitleGreen);
+
+		add(yourFinnessesMostlyFail= new QCheckBox(this, App.yourFinnessesMostlyFail, "Make YOUR finnesses mostly fail - so you have to think harder  (applies to declarer play only)  "), "gapy 2, gapx 5");
+
+		add(defSig      = new QLabel("Defender Signaling  -  Defenders, when just following suit / discarding, will use a 'peter' HIGH then LOW to show ?"), "gapy 18");
+		defSig.setForeground(Aaa.optionsTitleGreen);
+		add(noSignal    = new QRadioButton(this, rbGroupSig,  App.defenderSignals == Zzz.NoSignals,     "NoSignal",     "Nothing -  defenders won't signal"), rbInset);
+		add(stdEvenCount= new QRadioButton(this, rbGroupSig,  App.defenderSignals == Zzz.StdEvenCount,  "StdEvenCount", "Std   -  an EVEN number in the suit EXCEPT Trumps when shows an ODD number.     Ten and above are not used to signal  "), rbInset);
+		add(udcOddCount = new QRadioButton(this, rbGroupSig,  App.defenderSignals == Zzz.UdcOddCount,   "UdcOddCount",  "UDC  -  an ODD number in the suit including Trumps,  (UDC => Updside Down Count).     Ten and above are not used to signal  "), rbInset);
+
+		add(pauseLab  = new QLabel("Pause at end of trick  and  AutoPlay options"), "gapy 20");
+		pauseLab.setForeground(Aaa.optionsTitleGreen);
 
 		add(youDeclarerPause     = new QCheckBox(this, App.youDeclarerPause,  "Declarer Pause After   -   Pause AFTER each trick (only when you are the Declarer)  -  click anywhere to continue  "), " gapy 5");
 		add(youDefenderPause     = new QCheckBox(this, App.youDefenderPause,  "Defender Pause After   -   Pause AFTER each trick (only when you are a Defender)  -  click anywhere to continue  "));
 		add(youAutoSingletons    = new QCheckBox(this, App.youAutoSingletons, "You AutoPlay Singletons  "));
 		add(youAutoAdjacent      = new QCheckBox(this, App.youAutoAdjacent,   "You AutoPlay Equal Cards  "), cbInset);
 		
-		add(testingText = new QLabel(" TESTING - The options below are for testing   -   however  you are welcome to try them out  "), "gapy 22");
+		add(testingText = new QLabel(" TESTING - The options below are for testing   -   however  you are welcome to try them out  "), "gapy 32");
 		testingText.setForeground(Aaa.optionsTitleGreen);
 
 		add(youAutoplayAlways    = new QCheckBox(this, App.youAutoplayAlways, "You AutoPlay ALWAYS  (for fun)  "), "gapy 5");
@@ -75,7 +98,21 @@ class AaRopPrefs3_AutoPlay extends ClickPanel implements ItemListener {
 		Object source = e.getItemSelectable();
 
 		// @formatter:off
-		if (source == youAutoSingletons) {
+		if (source == yourFinnessesMostlyFail) {
+			           App.yourFinnessesMostlyFail = b;
+		}
+		
+		else if (source == noSignal) {
+			           App.defenderSignals = Zzz.NoSignals;
+		}
+		else if (source == stdEvenCount) {
+			           App.defenderSignals = Zzz.StdEvenCount;
+		}
+		else if (source == udcOddCount) {
+			           App.defenderSignals = Zzz.UdcOddCount;
+		}
+
+		else if (source == youAutoSingletons) {
 			           App.youAutoSingletons = b;
 		}
 		else if (source == youAutoAdjacent) {
@@ -86,7 +123,7 @@ class AaRopPrefs3_AutoPlay extends ClickPanel implements ItemListener {
         } 
 		else if (source == youAutoplayAlways) {
 			           App.youAutoplayAlways = b;
-			 App.implement_youAutoplayAlways();
+			           App.implement_youAutoplayAlways();
 		}
 		else if (source == youAutoplayPause) {
 	                   App.youAutoplayPause = b;
@@ -99,7 +136,7 @@ class AaRopPrefs3_AutoPlay extends ClickPanel implements ItemListener {
 		}
 		else if (source == fillHandDisplay) {
                        App.fillHandDisplay = b;
-             App.implement_fillHandDisplay();
+                       App.implement_fillHandDisplay();
 		}
 		else if (source == runTestsAtStartUp) {
 	                   App.runTestsAtStartUp = b;
@@ -111,13 +148,14 @@ class AaRopPrefs3_AutoPlay extends ClickPanel implements ItemListener {
 		// @formatter:on
 
 		if (App.allConstructionComplete) {
+			App.savePreferences();
 			App.frame.repaint();
 		}
 	}
 
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		setBackground(SystemColor.control);
+		// setBackground(SystemColor.control);
 	}
 
 }

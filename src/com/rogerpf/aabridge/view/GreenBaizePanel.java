@@ -26,9 +26,6 @@ import com.rogerpf.aabridge.model.Zzz;
  */
 public class GreenBaizePanel extends ClickPanel {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	JPanel c0 = new DarkGrayBgPanel();
@@ -114,17 +111,27 @@ public class GreenBaizePanel extends ClickPanel {
 
 	/**   
 	 */
+	public void biddingDisplayTrue() {
+		boolean showBidTable = true;
+		App.gbp.c2_0__btp.setVisible(showBidTable);
+		App.gbp.c2_0__btpBlank.setVisible(!showBidTable);
+		App.frame.repaint();
+	}
+
+	/**   
+	 */
 	public GreenBaizePanel() { /* Constructor */
 
 		Dimension ratio = new Dimension(400, 270);
+		Dimension ratioMin = new Dimension(40, 27);
 		setPreferredSize(ratio); // Really sets the RATIO of the sides
-		setMinimumSize(ratio);
+		setMinimumSize(ratioMin);
 
 		// Set up the content pane.
 		String hm3oneHun = "hidemode 3, width 100%, height 100%";
 		String simple = "gap 0!, insets 0 0 0 0"; // , nocache";
 
-		c0.setLayout(new MigLayout("flowy, " + simple, "", "1%[28.35%][33.3%][28.35%]3%[6%]"));
+		c0.setLayout(new MigLayout("flowy, " + simple, "", "1%[28.35%][33.3%][28.35%]2%[6%]1%"));
 		c0.add(c0_0__tlp, hm3oneHun);
 		c0.add(hdps[Zzz.West], hm3oneHun);
 		c0.add(c0_2__blp, hm3oneHun);
@@ -134,7 +141,7 @@ public class GreenBaizePanel extends ClickPanel {
 		c0.add(C0_9__ech0, hm3oneHun);
 		c0.add(C0_9__empp, hm3oneHun);
 
-		c1.setLayout(new MigLayout("flowy, " + simple, "", "1%[33.3%][23.4%][33.3%]3%[6%]"));
+		c1.setLayout(new MigLayout("flowy, " + simple, "", "1%[33.3%][23.4%][33.3%]2%[6%]1%"));
 		c1.add(hdps[Zzz.North], hm3oneHun);
 		c1.add(c1_1__empt, hm3oneHun);
 		c1.add(c1_1__bfdp, hm3oneHun);
@@ -147,7 +154,7 @@ public class GreenBaizePanel extends ClickPanel {
 		c1.add(C1_9__ech1, hm3oneHun);
 		c1.add(C1_9__xall, hm3oneHun);
 
-		c2.setLayout(new MigLayout("flowy, " + simple, "", "1%[28.35%][33.3%][28.35%]3%[6%]"));
+		c2.setLayout(new MigLayout("flowy, " + simple, "", "1%[28.35%][33.3%][28.35%]2%[6%]1%"));
 		c2.add(c2_0__btp, hm3oneHun);
 		c2.add(c2_0__btpBlank, hm3oneHun);
 		c2.add(hdps[Zzz.East], hm3oneHun);
@@ -174,6 +181,8 @@ public class GreenBaizePanel extends ClickPanel {
 		// c0_0__ltp is always visible
 		// c0_2__blp is always visible
 
+		boolean alwaysShowBidding = (App.deal.isBiddingInteresting());
+
 		if (App.isMode(Aaa.EDIT_CHOOSE)) {
 
 			c1_1__empt.setVisible(true);
@@ -181,8 +190,8 @@ public class GreenBaizePanel extends ClickPanel {
 			c1_1__tfdp.setVisible(false);
 			c1_1__mdp.setVisible(false);
 
-			c2_0__btpBlank.setVisible(true);
-			c2_0__btp.setVisible(false);
+			c2_0__btpBlank.setVisible(!alwaysShowBidding);
+			c2_0__btp.setVisible(alwaysShowBidding);
 
 			c2_2__empt.setVisible(true);
 			c2_2__bbp.setVisible(false);
@@ -198,8 +207,8 @@ public class GreenBaizePanel extends ClickPanel {
 					+ "First, for all hands, move ALL\nthe spades, ONLY THEN\nstart on the hearts ...");
 			c1_1__mdp.setVisible(true);
 
-			c2_0__btpBlank.setVisible(true);
-			c2_0__btp.setVisible(false);
+			c2_0__btpBlank.setVisible(!alwaysShowBidding);
+			c2_0__btp.setVisible(alwaysShowBidding);
 
 			c2_2__empt.setVisible(true);
 			c2_2__bbp.setVisible(false);
@@ -230,8 +239,8 @@ public class GreenBaizePanel extends ClickPanel {
 			c1_1__tfdp.setVisible(true);
 			c1_1__mdp.setVisible(false);
 
-			c2_0__btpBlank.setVisible(true);
-			c2_0__btp.setVisible(false);
+			c2_0__btpBlank.setVisible(!alwaysShowBidding);
+			c2_0__btp.setVisible(alwaysShowBidding);
 
 			c2_2__empt.setVisible(false);
 			c2_2__bbp.setVisible(false);
@@ -258,6 +267,19 @@ public class GreenBaizePanel extends ClickPanel {
 
 		applyReviewBarVisiblity();
 
+//		Dimension sz = getSize();
+//		Dimension szSml = new Dimension();
+//		szSml.height = (sz.height * 48)/100;
+//		szSml.width = (sz.width * 48)/100;
+//
+//		doLayout();
+//		setSize(szSml);
+//		doLayout();
+//		setSize(sz);
+//		doLayout();
+
+//		setSize(szSml);
+//		setSize(sz);
 		validate();
 	}
 
@@ -298,10 +320,87 @@ public class GreenBaizePanel extends ClickPanel {
 
 	/**   
 	 */
+	public void kick() { // GreenBaizePanel
+		// this helps to get column 0 re-laying out - goodness knows why
+		c0.setVisible(false);
+		c0.setVisible(true);
+	}
+
+	/**   
+	 */
+	public boolean areAllThreeColumnsMatchedInSize(int ticksRemaining) { // GreenBaizePanel
+		{
+			Dimension dAy[] = { c0.getSize(), c1.getSize(), c2.getSize() };
+
+			for (int i : Zzz.zto1) {
+				Dimension da = dAy[i];
+				Dimension db = dAy[i + 1];
+
+				if (ticksRemaining > 34) {
+					if (da.width != db.width || da.width != db.width)
+						return false;
+					if (da.height != db.height || da.height != db.height)
+						return false;
+				}
+				else if (ticksRemaining > 30) {
+					if (da.width + 1 < db.width || da.width == db.width)
+						return false;
+					if (da.height + 1 < db.height || da.height == db.height)
+						return false;
+				}
+				else {
+					if (da.width + 1 < db.width || da.width - 1 > db.width)
+						return false;
+					if (da.height + 1 < db.height || da.height - 1 > db.height)
+						return false;
+				}
+			}
+		}
+
+		{
+			Dimension dAy[] = { C0_9__rbp0.getSize(), C1_9__rbp1.getSize(), C2_9__rbc2.getSize() };
+
+			for (int i : Zzz.zto1) {
+				Dimension da = dAy[i];
+				Dimension db = dAy[i + 1];
+
+				if (ticksRemaining > 34) {
+					if (da.width != db.width || da.width != db.width)
+						return false;
+					if (da.height != db.height || da.height != db.height)
+						return false;
+				}
+				else if (ticksRemaining > 30) {
+					if (da.width + 1 < db.width || da.width == db.width)
+						return false;
+					if (da.height + 1 < db.height || da.height == db.height)
+						return false;
+				}
+				else {
+					if (da.width + 1 < db.width || da.width - 1 > db.width)
+						return false;
+					if (da.height + 1 < db.height || da.height - 1 > db.height)
+						return false;
+				}
+
+			}
+		}
+
+		return true;
+	}
+
+	/**   
+	 */
 	public void paintComponent(Graphics g) { // GreenBaizePanel
 
 		super.paintComponent(g);
 		setBackground(Aaa.darkGrayBg);
+
+	}
+
+	public void hideClaimButtonsIfShowing() {
+
+		c0_2__blp.hideClaimButtonsIfShowing();
 
 	}
 

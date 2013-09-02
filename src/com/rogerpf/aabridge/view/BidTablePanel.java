@@ -46,7 +46,7 @@ public class BidTablePanel extends ClickPanel { /* Constructor */
 	// ----------------------------------------
 	BidTablePanel() { /* Constructor */
 
-		setLayout(new MigLayout("flowy, insets 0 0 0 0, gap 0! 0!", "2%[98.5%]", "[15%][79%]2%"));
+		setLayout(new MigLayout("flowy, insets 0 0 0 0, gap 0! 0!", "push[98%]", "[15%][79%]push"));
 
 		JScrollPane scroller = new JScrollPane(new BidTablePanel2());
 		scroller.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -223,6 +223,13 @@ class BidTablePanel2 extends ClickPanel implements MouseListener {
 					g2.setColor(Aaa.cdhsWeakColors[bid.getSuit()]);
 					g2.setFont(suitSymbolsFont);
 					g2.drawString(bid.getSuitSt(), x, y);
+					if (bid.alert) {
+						x += lineHeight * 0.65f;
+						y -= lineHeight * 0.02f;
+						g2.setColor(Aaa.heartsWeakColor);
+						g2.setFont(DoubleRedoubleFont);
+						g2.drawString("!", x, y);
+					}
 				}
 			}
 			int wantedHeight = (int) (((cell + 3) / 4) * lineHeight);

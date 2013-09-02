@@ -18,7 +18,7 @@ public class Qlay_1st__Declarer {
 		Card card = null;
 
 		int brk = 0;
-		if (g.trickNumb == 6)
+		if (g.trickNumb == 8)
 			if ((g.compass == 0))
 				brk++; // put your breakpoint here :)
 
@@ -27,94 +27,91 @@ public class Qlay_1st__Declarer {
 
 		Strategy stra = h.getStrategy();
 		assert (stra != null);
-		if (stra != null) {
-			for (StraStep step : stra) {
+		for (StraStep step : stra) {
 
-				if (step.idea == Strategy.DrawTrumps) {
-					// --------------------------------------------------
-					assert (!(g.outstandingTrumps == 0 || (g.outstandingTrumps == 1 && g.isTopOutstandingTrumpMaster)));
+			if (step.idea == Strategy.DrawTrumps) {
+				// --------------------------------------------------
+				assert (!(g.outstandingTrumps == 0 || (g.outstandingTrumps == 1 && g.isTopOutstandingTrumpMaster)));
 
-					if (g.myTrumps <= g.partnersTrumps) {
+				if (g.myTrumps <= g.pnTrumps) {
+					card = g.highestTrump;
+				}
+				else { // partners trumps are shorter
+					boolean topContig = h.areOurTopHoldingsContigious(g.trumpSuit);
+					if (topContig)
+						card = g.lowestTrump;
+					else
 						card = g.highestTrump;
-					}
-					else { // partners trumps are shorter
-						boolean topContig = h.areOurTopHoldingsContigious(g.trumpSuit);
-						if (topContig)
-							card = g.lowestTrump;
-						else
-							card = g.highestTrump;
-					}
-
-					if (card != null)
-						break;
 				}
 
-				if (step.idea == Strategy.PlayCard) {
-					// --------------------------------------------------
-					card = h.frags[step.suit].getIfRelExist(step.rankRel);
-					if (card == null) {
-						@SuppressWarnings("unused")
-						int x = 0; // put your breakpoint here
-					}
-					assert (card != null);
-
-					// step.completed = true; // done should not need to do this
-					if (card != null)
-						break;
-				}
-
-				if (step.idea == Strategy.RunSuit) {
-					// ----------------------------------------------------
-					int sv = step.suit;
-					int myHolding = h.frags[sv].size();
-					if (myHolding == 0)
-						continue;
-					int pnHolding = h.partner().frags[sv].size();
-					if (myHolding <= pnHolding) {
-						card = h.frags[sv].get(0);
-					}
-					else { // partners suit is shorter
-						boolean topContig = h.areOurTopHoldingsContigious(sv);
-						if (topContig) {
-							card = h.frags[sv].getLast();
-						}
-						else {
-							card = h.frags[sv].get(0);
-						}
-					}
-					if (card != null)
-						break;
-				}
-
-				if (step.idea == Strategy.RunTopTricksInSuit) {
-					// ----------------------------------------------------
-					int sv = step.suit;
-					int myHolding = h.frags[sv].size();
-					if (myHolding == 0)
-						continue;
-					int pnHolding = h.partner().frags[sv].size();
-					if ((h.frags[sv].get(0).rankEqu != Zzz.Ace) && (pnHolding > 0) && (g.partner.frags[sv].get(0).rankEqu != Zzz.Ace)) {
-						continue;
-					}
-					if (myHolding <= pnHolding) {
-						card = h.frags[sv].get(0);
-					}
-					else { // partners suit is shorter
-						boolean topContig = h.areOurTopHoldingsContigious(sv);
-						if (topContig) {
-							card = h.frags[sv].getLast();
-						}
-						else {
-							card = h.frags[sv].get(0);
-						}
-					}
-					if (card != null)
-						break;
-				}
-
-				System.out.println("Strategy **USE**  Time - Unknown Step - " + step.idea);
-
+				if (card != null)
+					break;
 			}
+
+			if (step.idea == Strategy.PlayCard) {
+				// --------------------------------------------------
+				card = h.frags[step.suit].getIfRelExist(step.rankRel);
+				if (card == null) {
+					@SuppressWarnings("unused")
+					int x = 0; // put your breakpoint here
+				}
+				assert (card != null);
+
+				if (card != null)
+					break;
+			}
+
+			if (step.idea == Strategy.RunSuit) {
+				// ----------------------------------------------------
+				int sv = step.suit;
+				int myHolding = h.frags[sv].size();
+				if (myHolding == 0)
+					continue;
+				int pnHolding = h.partner().frags[sv].size();
+				if (myHolding <= pnHolding) {
+					card = h.frags[sv].get(0);
+				}
+				else { // partners suit is shorter
+					boolean topContig = h.areOurTopHoldingsContigious(sv);
+					if (topContig) {
+						card = h.frags[sv].getLast();
+					}
+					else {
+						card = h.frags[sv].get(0);
+					}
+				}
+				if (card != null)
+					break;
+			}
+
+			if (step.idea == Strategy.RunTopTricksInSuit) {
+				// ----------------------------------------------------
+				int sv = step.suit;
+				int myHolding = h.frags[sv].size();
+				if (myHolding == 0)
+					continue;
+				int pnHolding = h.partner().frags[sv].size();
+				if ((h.frags[sv].get(0).rankEqu != Zzz.Ace) && (pnHolding > 0) && (g.partner.frags[sv].get(0).rankEqu != Zzz.Ace)) {
+					continue;
+				}
+				if (myHolding <= pnHolding) {
+					card = h.frags[sv].get(0);
+				}
+				else { // partners suit is shorter
+					boolean topContig = h.areOurTopHoldingsContigious(sv);
+					if (topContig) {
+						card = h.frags[sv].getLast();
+					}
+					else {
+						card = h.frags[sv].get(0);
+					}
+				}
+				if (card != null)
+					break;
+			}
+
+			System.out.println("Strategy **USE**  Time - Unknown Step - " + step.idea);
+
 		}
 
 		if (card == null) {
@@ -127,7 +124,7 @@ public class Qlay_1st__Declarer {
 					; // card is still null
 				}
 				else { // (outstandingTrumps > 0)
-					if (g.myTrumps <= g.partnersTrumps) {
+					if (g.myTrumps <= g.pnTrumps) {
 						card = g.highestTrump;
 					}
 					else { // partners trumps are shorter

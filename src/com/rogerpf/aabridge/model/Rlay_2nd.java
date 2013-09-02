@@ -21,7 +21,8 @@ public class Rlay_2nd {
 
 		int brk = 0;
 		if (g.trickNumb == 1)
-			if (g.compass == 3)
+//			if (g.deal.testId == 5056)
+			if (g.compass == 1)
 				brk++; // put your breakpoint here :)
 
 		if (brk > 0)
@@ -46,7 +47,7 @@ public class Rlay_2nd {
 			}
 
 			if (card == null && (g.bestCard.rankEqu == Zzz.King) && (g.highestOfLed.rankEqu == Zzz.Ace)) {
-				card = g.highestOfLed;
+				card = g.fragLed.getHighest(g.z);
 			}
 
 			if (card == null) {
@@ -152,6 +153,8 @@ public class Rlay_2nd {
 			if (card2 != null)
 				card = card2;
 		}
+
+		card = Rlay_5_Discard.ChangeIntoSignalIfAppropriate(g, card);
 
 		return card;
 	}

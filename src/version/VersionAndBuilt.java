@@ -14,8 +14,51 @@ package version;
 
 public class VersionAndBuilt {
 
-	public static int buildNo = 1372;    static String built = "2013 July 30";
+	public static int buildNo = 1417;    static String built = "2013 August 25";
 
+	// 2013-08-25  1416  Release
+	// 2013-08-25  1415	 If a lin file is missing the results they are now generated
+	// 2013-08-25  1414  The Again Button renamed to be the "Wipe" button
+	// 2013-08-22  1413  Scoring bug fixed (double not being counted re 100 point hurdle)
+	// 2013-08-21  1412  Release
+	// 2013-08-21  1411  Saving missed values and implementing lin dealer choice
+	// 2013-08-21  1410  More options to show or not show parts of old deals (lin)
+	// 2013-08-21  1409  Suit Symbols in hand display area can now be not shown
+	// 2013-08-21  1408  Now also reads single bbo 'hands' site produced lin files
+	// 2013-08-21  1407  Put the +1 back in - see TricksFourDisplyPanel - wrong card highlighted as winning card
+	// 2013-08-16  1406  Release  -  claim score display now slightly better
+	// 2013-08-16  1405  You Seat can now be changed at Any Time
+	// 2013-08-15  1404  Release
+	// 2013-08-15  1403  Adding the Claim buttons
+	// 2013-08-14  1402  Alert button added
+	// 2013-08-14  1401  multi lin files both teams and one table now handled OK
+	// 2013-08-14  1400  Fixed three handed lin deals [sigh]
+	// 2013-08-14  1399  Starting to be reasonable
+	// 2013-08-14  1398  Safety while working on adding claim display
+	// 2013-08-13  1397  Much effort to make the layouts giggle down to a good layout look
+	// 2013-08-12  1396  Release - (correction to the date 12th not 14th !)
+	// 2013-08-11  1394  Release
+	// 2013-08-11  1393  lin buttons now moved to be next to the main payload panel
+	// 2013-08-11  1392  Cleaner
+	// 2013-08-11  1391  Basicaly working but the lin table needs to display correctly
+	// 2013-08-11  1390  Safety - Working on adding lin multi deal display panel 3
+	// 2013-08-10  1389  Safety - Working on adding lin multi deal display panel 2
+	// 2013-08-10  1388  Safety - Working on adding lin multi deal display panel
+	// 2013-08-10  1387  Bug fixing and reader (not displayer) can read multi
+	// 2013-08-10  1386  Will now read a single deal lin file - needs claim display ability
+	// 2013-08-09  1385  Working on Reading Lin Files 
+	// 2013-08-07  1384  Release
+	// 2013-08-06  1383  More tweeks from play tests
+	// 2013-08-06  1382  More tweeks Release
+	// 2013-08-05  1381  Added simple crossruff when short of target tricks
+	// 2013-08-04  1380  Release and More of Same - Minor Play fixes
+	// 2013-08-04  1379  Minor Play fixes - worked through the ugg list
+	// 2013-08-03  1378  Release
+	// 2013-08-02  1377  Safety - each hand has its own dealClone and own Strategy
+	// 2013-08-02  1376  Changes to defence sig text
+	// 2013-08-02  1375  Safety - while adding defence Signalling - working?
+	// 2013-08-02  1374  Safety - while adding defence Signalling
+	// 2013-07-30  1373  Tidy ups
 	// 2013-07-30  1372  Release
 	// 2013-07-30  1371  File association support added - needs installer this added to the windows inno one
 	// 2013-07-30  1370  Added - Show the 'Losing Trick Count'
@@ -174,7 +217,7 @@ public class VersionAndBuilt {
 		return ver + "." + buildNo + " - " + built;
 	}
 	
-	static String ver = "1.0.6";
+	static String ver = "1.0.7";
 	
 	public static String getVer() {
 		return ver;

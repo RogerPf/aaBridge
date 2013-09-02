@@ -20,12 +20,12 @@ import com.rogerpf.aabridge.controller.App;
 /**   
  */
 class AaPayloadPanel extends ClickPanel implements ComponentListener {
-	/**
-	 * 
-	 */
+	// ---------------------------------- CLASS -------------------------------------
+
 	private static final long serialVersionUID = 1L;
 
 	AaPayloadPanel() {
+		// -------------------------------------
 		addComponentListener(this);
 	}
 
@@ -45,6 +45,68 @@ class AaPayloadPanel extends ClickPanel implements ComponentListener {
 
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
+		setBackground(Aaa.darkGrayBg);
+	}
+}
+
+/**    
+ */
+class AaPayloadCasePanel extends ClickPanel implements ComponentListener {
+	// ---------------------------------- CLASS -------------------------------------
+
+	private static final long serialVersionUID = 1L;
+
+	AaPayloadCasePanel() {
+		// -------------------------------------
+		addComponentListener(this);
+	}
+
+	public void componentResized(ComponentEvent e) {
+		App.frame.payloadPanelHasResized();
+	}
+
+	public void componentMoved(ComponentEvent e) {
+	}
+
+	public void componentShown(ComponentEvent e) {
+	}
+
+	public void componentHidden(ComponentEvent e) {
+	}
+
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		setBackground(Aaa.darkGrayBg);
+	}
+}
+
+/**    
+ */
+class AaLinAndPayloadCasePanel extends ClickPanel implements ComponentListener {
+	// ---------------------------------- CLASS -------------------------------------
+
+	private static final long serialVersionUID = 1L;
+
+	AaLinAndPayloadCasePanel() {
+		// -------------------------------------
+		addComponentListener(this);
+	}
+
+	public void componentResized(ComponentEvent e) {
+	}
+
+	public void componentMoved(ComponentEvent e) {
+	}
+
+	public void componentShown(ComponentEvent e) {
+	}
+
+	public void componentHidden(ComponentEvent e) {
+	}
+
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		// never never have two calls to setBackground
 		setBackground(Aaa.darkGrayBg);
 	}
 }

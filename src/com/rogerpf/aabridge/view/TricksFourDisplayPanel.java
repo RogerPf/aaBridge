@@ -84,7 +84,7 @@ public class TricksFourDisplayPanel extends JPanel {
 			if (App.deal.isPlaying() && App.isMode(Aaa.NORMAL)) {
 				Hand hand = App.deal.getNextHandToPlay();
 
-				if (showCompletedTrick) {
+				if (showCompletedTrick /* && App.deal.haveAllHandsPlayedTheSameNumberOfCards() */) {
 
 					// End of trick - click to continue
 					if (App.isPauseAtEotClickWanted() && App.isPauseAtEotClickWanted() && App.isAutoPlay(hand.compass)) {
@@ -107,7 +107,7 @@ public class TricksFourDisplayPanel extends JPanel {
 
 				int played = App.deal.countCardsPlayed();
 				if (played == 52) {
-					return; // happens because we are messing with 'isFinshed()'
+					return; // happens because we are messing with 'isFinished()'
 				}
 
 				if (played == 51) {
@@ -363,7 +363,18 @@ public class TricksFourDisplayPanel extends JPanel {
 			if (trickRequested < 0)
 				return;
 			if (App.reviewCard % 4 == 0) {
-				trickWinner = App.deal.prevTrickWinner.get(trickRequested); // was bug in 1362 had trickRequested + 1
+				// 1362 the "+1" was removed
+				// 1407 the "+1" below was restored - RPf the issue is that the
+				// winning card is being MISS displayed - assume that the value of
+				// trickRequested is being 'defined' elsewhere !!!
+				// OR
+				// There issue appears to be about hands that are claimed during the first trick
+				// so there is never a 'normal' winner of the first trick
+				// We currently just return the declarer as the winner - lin files need better checking?
+				if (App.deal.prevTrickWinner.size() > trickRequested + 1)
+					trickWinner = App.deal.prevTrickWinner.get(trickRequested + 1);
+				else
+					trickWinner = App.deal.hands[App.deal.contractCompass]; // declarer
 			}
 		}
 		else { // normal mode
@@ -376,7 +387,8 @@ public class TricksFourDisplayPanel extends JPanel {
 		}
 
 		// Display the 'eot click required' indication (a dot)
-		if (showCompletedTrick && App.isMode(Aaa.NORMAL) && App.isPauseAtEotClickWanted() && App.isAutoPlay(App.deal.getNextHandToPlay().compass)) {
+		if (showCompletedTrick /* && App.deal.isCurTrickComplete() */&& App.isMode(Aaa.NORMAL) && App.isPauseAtEotClickWanted()
+				&& App.isAutoPlay(App.deal.getNextHandToPlay().compass)) {
 			double x = marginLeft + activityWidth * 0.04;
 			double y = marginTop + activityHeight * 0.90;
 			g2.setColor(Aaa.eotDotColor);

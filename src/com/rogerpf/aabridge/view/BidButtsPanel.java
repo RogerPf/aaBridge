@@ -42,6 +42,7 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 
 	int halfBidLevel = -1;
 	int halfBidSuit = -1;
+	boolean halfBidAlert = false;
 
 	JButton doubleBtn;
 	JButton redoubleBtn;
@@ -132,9 +133,19 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 			b.setBackground(Aaa.bidButsBkColor);
 			b.setForeground(Aaa.cdhsColors[i]);
 			b.setFont(cardFaceFont);
-			add(b, ((i == 4) ? "span 2, wrap" : ""));
+			add(b, ((i == 4) ? "span 2" : ""));
 		}
 
+		{
+			b = new RpfResizeButton(0, "!", -1, 20);
+			b.addActionListener(this);
+			b.setHoverColor(Aaa.strongHoverColor);
+			b.setBackground(Aaa.bidButsBkColor);
+			b.setForeground(Aaa.heartsColor);
+			b.setFont(bridgeBoldFont);
+			b.setToolTipText("Alert");
+			add(b, "");
+		}
 		setVisible(true);
 	}
 
@@ -143,14 +154,16 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 	public void dealMajorChange() {
 		halfBidLevel = -1;
 		halfBidSuit = -1;
+		halfBidAlert = false;
 		setBidButtonVisibility();
 	}
 
 	/**
 	 */
-	void clearHalfBids() {
+	public void clearHalfBids() {
 		halfBidLevel = -1;
 		halfBidSuit = -1;
+		halfBidAlert = false;
 		App.gbp.c1_1__bfdp.repaint();
 	}
 
@@ -168,6 +181,12 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 
 	/**
 	 */
+	public boolean getHalfBidAlert() {
+		return halfBidAlert;
+	}
+
+	/**
+	 */
 	private void setHalfBidLevel(int level) {
 		halfBidLevel = (App.deal.isLevelAllowed(level) == false) ? -1 : level;
 		App.gbp.c1_1__bfdp.repaint();
@@ -177,6 +196,13 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 	 */
 	private void setHalfBidSuit(int suit) {
 		halfBidSuit = suit;
+		App.gbp.c1_1__bfdp.repaint();
+	}
+
+	/**
+	 */
+	private void setHalfBidAlert() {
+		halfBidAlert = !halfBidAlert;
 		App.gbp.c1_1__bfdp.repaint();
 	}
 
@@ -222,6 +248,11 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 					break;
 				}
 			}
+			{
+				if (a == "!") {
+					setHalfBidAlert();
+				}
+			}
 		}
 		// we can now process it as if it was a key Command
 		keyCommand(cmd);
@@ -244,19 +275,24 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 				b = App.deal.REDOUBLE;
 			}
 		}
-		else if ((cmd & Zzz.CMD_SUITN) != 0) { // *** The user has pressed a
+		else if ((cmd & Aaa.CMD_SUITN) != 0) { // *** The user has pressed a
 												// Suit Key (inc N)
 			int suit = (cmd & 0xff);
 			setHalfBidSuit(suit);
 		}
-		else if ((cmd & Zzz.CMD_LEVEL) != 0) { // *** The user has pressed a
-												// level Key (1 - 7)
+		else if ((cmd & Aaa.CMD_LEVEL) != 0) { // *** The user has pressed a
+			// level Key (1 - 7)
 			int level = (cmd & 0xff);
 			setHalfBidLevel(level);
+		}
+		else if ((cmd & Aaa.CMD_ALERT) != 0) { // *** The user has pressed a
+			// level Key (1 - 7)
+			setHalfBidAlert();
 		}
 
 		if (halfBidLevel > -1 && halfBidSuit > -1) {
 			b = new Bid(halfBidLevel, halfBidSuit);
+			b.setAlert(halfBidAlert);
 		}
 
 		if (b != null) {

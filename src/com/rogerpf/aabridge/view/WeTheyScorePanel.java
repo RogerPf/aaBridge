@@ -80,12 +80,14 @@ public class WeTheyScorePanel extends ClickPanel {
 //		}
 		int targetAxis = targetSeat % 2;
 
-		String firstPair = "We";
-		String secondPair = "They";
+		String firstPair;
+		String secondPair;
 		if ((App.deal.getTheYouSeat() % 2) == targetAxis) {
 			firstPair = "You";
+			secondPair = "They";
 		}
 		else {
+			firstPair = "They";
 			secondPair = "You";
 		}
 
@@ -103,9 +105,10 @@ public class WeTheyScorePanel extends ClickPanel {
 		float lTop = topInset + lozHeight * 0.10f;
 		g2.draw(new Line2D.Float(leftHalf, lTop, leftHalf, lTop + lozHeight * 0.81f));
 
-		Point score = App.deal.getBoardScore();
+		if (App.deal.isDoneHand())
+			return;
 
-//		if ()
+		Point score = App.deal.getBoardScore();
 
 		int mult = ((score.x + score.y > 0) ? 1 : -1);
 		int side = ((score.x + score.y < 0) ? 1 : 0);

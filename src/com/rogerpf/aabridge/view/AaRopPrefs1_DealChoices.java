@@ -11,7 +11,6 @@
 package com.rogerpf.aabridge.view;
 
 import java.awt.Graphics;
-import java.awt.SystemColor;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
@@ -57,7 +56,7 @@ class AaRopPrefs1_DealChoices extends ClickPanel implements ItemListener {
 		String rbInset = "gapx 7";
 
 		// @formatter:off	
-		add(topLine  = new QLabel("New Deals  -  Choose one of the Deal Options below  (NS always get the best hands)"), "gapy 5");
+		add(topLine  = new QLabel("New Deals  -  Choose one of the Deal Options below  (NS always get the best hands)"), "gapy 8");
 		topLine.setForeground(Aaa.optionsTitleGreen);
 		add(userBids       = new QRadioButton(this, rbGroupDeal, "userBids",       "23+ points,  YOU pick the contract - you need to be declarer to pick the contract  "), rbInset + ", gapy 5");
 		add(chosenGame28   = new QRadioButton(this, rbGroupDeal, "chosenGame28",   "28    Game -  EASY  "), rbInset);
@@ -139,13 +138,14 @@ class AaRopPrefs1_DealChoices extends ClickPanel implements ItemListener {
 		}
 
 		if (App.allConstructionComplete) {
+			App.savePreferences();
 			App.frame.repaint();
 		}
 	}
 
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		setBackground(SystemColor.control);
+		// setBackground(SystemColor.control);
 	}
 
 }

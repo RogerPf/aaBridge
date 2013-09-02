@@ -17,8 +17,8 @@ public class Qstr_3rd {
 
 		// ****************************** STRATEGY - 3rd 3rd 3rd Declarer and Dummy (index 2) ******************************
 		int brk = 0;
-		if (g.trickNumb == 6)
-			if ((g.compass == 0))
+		if (g.trickNumb == 1)
+			if ((g.compass == 2))
 				brk++; // put your breakpoint here :)
 
 		if (brk > 0)
@@ -39,6 +39,12 @@ public class Qstr_3rd {
 			// is there a finnesse/positional play that we we should be taking NOW
 			if (g.suitLed == g.trumpSuit) {
 				if (g.haveTrumps && g.positionInTrick == g.positionInTrick) {
+					g.finMaDepth = Zzz.convertOutstandingToDepth(g.faTrumps.outstanding, g.secondPlayerFollowedSuit);
+					// lets make a silly exception
+					if (g.faTrumps.outstanding == 3 && g.faTrumps.myOrigFragLen == 5) {
+						g.finMaDepth = 2; // it would normally be 1 (a tripple finnesse has ? already succeeded - really!)
+					}
+
 					if (Play_Mpat.isPatternMatch(g, g.trumpSuit, g.positionInTrick, Zzz.MatchAsSelf)) {
 						stra.add(new StraStep(Strategy.PlayCard, "3rd in hand takes finnesse in trumps", g.mpatRtn.rankRel, g.trumpSuit, -1));
 						return;
@@ -76,12 +82,13 @@ public class Qstr_3rd {
 		 *  So think NO TRUMPS
 		 */
 
-		if (g.ourTopTricksTot >= g.ourTarget) {
-			stra.add(new StraStep(Strategy.RunTopTricksInSuit, "", -1, g.suitLed, -1));
-		}
-
 		if (brk > 0)
-			brk++;
+			brk++; // put your breakpoint here
+
+		if (g.ourTopTricksTot >= g.tricksRemaining || g.ourTopTricksTot >= g.ourTarget) {
+			stra.add(new StraStep(Strategy.RunTopTricksInSuit, "", -1, g.suitLed, -1));
+			return;
+		}
 
 		/** 
 		 * we are NOT on lead but may want to take the lead
@@ -91,16 +98,21 @@ public class Qstr_3rd {
 			//
 			// Is there a finnesse/positional play that we we should be taking NOW
 			//
+			g.finMaDepth = Zzz.convertOutstandingToDepth(g.faLed.outstanding, g.secondPlayerFollowedSuit);
+			// lets make a silly exception
+			if (g.faLed.outstanding == 3 && g.faLed.myOrigFragLen == 5) {
+				g.finMaDepth = 2; // it would normally be 1 (a tripple finnesse has ? already succeeded - really!)
+			}
+
 			Play_Mpat.isPatternMatch(g, g.suitLed, g.positionInTrick, Zzz.MatchAsSelf);
 			// FragAnal fa = g.fragAnals[g.suitLed];
 			if (g.mpatRtn.matchEntryId > 0) {
 				Card card = h.frags[g.suitLed].getIfRelExist(g.mpatRtn.rankRel);
 				if (card == null) {
-					@SuppressWarnings("unused")
-					int x = 0; // put your breakpoint here
+					brk++; // put your breakpoint here
 				}
 				assert (card != null);
-				System.out.println(Zzz.compass_to_nesw_st_long[h.compass] + "  TakeFinnesse non trump" + card);
+				System.out.println(Zzz.compass_to_nesw_st_long[h.compass] + "  TakeFinnesse non trump  " + card);
 				stra.add(new StraStep(Strategy.PlayCard, "3rd(2/4) in hand takes finnesse (not trumnps)", g.mpatRtn.rankRel, g.suitLed, -1));
 				return;
 			}

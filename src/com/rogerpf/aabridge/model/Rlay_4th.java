@@ -10,14 +10,20 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.model;
 
-import com.rogerpf.aabridge.controller.App;
-
 public class Rlay_4th {
 
 	static Card act(Gather g) {
 		Hand h = g.hand;
 		// ****************************** 4th 4th 4th Defender ******************************
 		Card card = null;
+
+		int brk = 0;
+		if (g.trickNumb == 11)
+			if (g.compass == 1)
+				brk++; // put your breakpoint here :)
+
+		if (brk > 0)
+			brk++; // put your breakpoint here :)
 
 		if (g.haveSuitLed) {
 			// we have some of the led suit
@@ -35,12 +41,11 @@ public class Rlay_4th {
 				}
 				else {
 					card = g.fragLed.getLowestThatBeatsOrLowest(g.z, g.bestCard.rank);
-					if (card.rank < g.bestCard.rank && (h.axis() == Zzz.EW) && App.yourFinnessesMostlyFail) {
+					if (card.rank < g.bestCard.rank && (h.axis() == Zzz.EW) && g.dumbAutoDir.yourFinnessesMostlyFail) {
 						if (g.pnFragLed.size() > 0) {
 							Card pCard = g.pnFragLed.getLowestThatBeatsOrLowest(g.z, g.bestCard.rank);
 							if (pCard.rank > g.bestCard.rank) {
 								h.deal.moveCardToHandDuringPlay(pCard, h, card);
-								// App.gbp.dealMajorChange();
 								card = pCard;
 							}
 						}
@@ -75,6 +80,9 @@ public class Rlay_4th {
 				}
 			}
 		}
+
+		card = Rlay_5_Discard.ChangeIntoSignalIfAppropriate(g, card);
+
 		return card;
 	}
 }

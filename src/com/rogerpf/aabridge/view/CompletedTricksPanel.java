@@ -181,20 +181,51 @@ public class CompletedTricksPanel extends ClickPanel {
 
 		cardRectsCache.clear();
 
-		int step = -2;
-		for (Hand winner : App.deal.prevTrickWinner) {
-			step++;
-			if (step < 0) {
-				continue;
-			} // skip the zeroth as it the leader to the first trick
+		int countWon = 0;
+		int countLost = 0;
+
+		int actualTricksPlayed = App.deal.prevTrickWinner.size() - 1;
+		int actualCardsPlayed = App.deal.countCardsPlayed();
+
+		int reviewCardIncTricks = App.reviewTrick * 4 + App.reviewCard;
+
+		boolean youSeatDeclarer = App.deal.isYouSeatDeclarerAxis();
+
+		for (int step = 0; step < 13; step++) {
+			// note - the zeroth is the leader to the first trick
 
 			if (App.isMode(Aaa.REVIEW_PLAY)) {
-				if ((step > App.reviewTrick) || (step == App.reviewTrick && App.reviewCard < 4)) {
-					continue;
+				if (reviewCardIncTricks < actualCardsPlayed) { // we WILL want to stop if we have gone to high
+					if (step <= actualTricksPlayed) {
+						if ((step > App.reviewTrick) || (step == App.reviewTrick && App.reviewCard < 4))
+							break;
+					}
 				}
+//				else {
+//					if (App.deal.endedWithClaim == false && actualCardsPlayed < 52) {
+//						break;
+//					}
+//				}
 			}
 
-			boolean won = winner.axis() == targetAxis;
+			boolean won = true;
+			boolean claimed = false;
+
+			if (step < actualTricksPlayed) { // step starts from 0
+				Hand winner = App.deal.prevTrickWinner.get(step + 1);
+				won = winner.axis() == targetAxis;
+			}
+			else {
+				if (App.deal.endedWithClaim == false)
+					break;
+				claimed = true;
+				won = (youSeatDeclarer) ? (countWon < App.deal.tricksClaimed) : !(countLost < App.deal.tricksClaimed);
+			}
+
+			if (won)
+				countWon++;
+			else
+				countLost++;
 
 			float height = (won) ? cardHeight : cardWidth;
 			float width = (won) ? cardWidth : cardHeight;
@@ -205,12 +236,12 @@ public class CompletedTricksPanel extends ClickPanel {
 			g2.setColor(Color.white);
 			g2.fill(rr);
 
-			g2.setColor(Color.black);
+			g2.setColor(claimed ? Aaa.weedyBlack : Color.black);
 			g2.setStroke(new BasicStroke(blackLineWidth));
 			g2.draw(rr);
 
 			rr.setRoundRect(marginLeft + (cardSpacing * step) + wbw, top + wbw, width - 2 * wbw, height - 2 * wbw, curve, curve);
-			g2.setColor(Aaa.cardBackColor);
+			g2.setColor(claimed ? Aaa.cardBackColorClm : Aaa.cardBackColor);
 			g2.fill(rr);
 
 			/* cache the hittest version */
@@ -241,7 +272,8 @@ public class CompletedTricksPanel extends ClickPanel {
 		Font suitSymbolsFont = BridgeFonts.faceAndSymbFont.deriveFont(scoreLozengeHeight * 0.70f);
 		Font stdTextFont = BridgeFonts.bridgeLightFont.deriveFont(scoreLozengeHeight * 0.6f);
 		Font scoreFont = BridgeFonts.bridgeBoldFont.deriveFont(scoreLozengeHeight * 0.8f);
-		Font DoubleRedoubleFont = BridgeFonts.bridgeBoldFont.deriveFont(scoreLozengeHeight * 0.80f);
+		Font doubleRedoubleFont = BridgeFonts.bridgeBoldFont.deriveFont(scoreLozengeHeight * 0.80f);
+		Font claimFont = BridgeFonts.bridgeBoldFont.deriveFont(scoreLozengeHeight * 0.90f);
 
 		if (App.deal.contract == App.deal.PASS) {
 			x += scoreLozengeWidth * 0.01f;
@@ -249,7 +281,7 @@ public class CompletedTricksPanel extends ClickPanel {
 			g2.setFont(stdTextFont);
 			g2.drawString("Passed Out", x, y);
 		}
-		else { // we have a normall contact
+		else { // we have a normal contact
 			x += scoreLozengeWidth * 0.02f;
 			g2.setColor(Color.BLACK);
 			g2.setFont(cardFaceFont);
@@ -265,7 +297,7 @@ public class CompletedTricksPanel extends ClickPanel {
 				float x2 = x + scoreLozengeWidth * 0.12f;
 				String dblRdbl = App.deal.doubleOrRedoubleString();
 				if (dblRdbl.length() > 0) {
-					g2.setFont(DoubleRedoubleFont);
+					g2.setFont(doubleRedoubleFont);
 					g2.drawString(dblRdbl, x2, y + scoreLozengeWidth * 0.022f);
 				}
 				else {
@@ -281,10 +313,9 @@ public class CompletedTricksPanel extends ClickPanel {
 		}
 
 		// Now we do the tricks won so far
-		Point score = App.deal.getContractTrickCountToTrick(App.isMode(Aaa.REVIEW_PLAY) ? (App.reviewTrick + App.reviewCard / 4) : 999);
-		boolean declareAdj = (targetAxis == (App.deal.contractAxis()));
-		int firstPairTrickCount = declareAdj ? score.x : score.y;
-		int secondPairTrickCount = declareAdj ? score.y : score.x;
+		Point score = new Point(countWon, countLost); // declarers count is always in the 'x' value
+		int firstPairTrickCount = score.x;
+		int secondPairTrickCount = score.y;
 		String firstPair = Zzz.compass_to_ns_ew_st[targetAxis];
 		String secondPair = Zzz.compass_to_ns_ew_st[((targetAxis + 1) % 2)];
 		if ((App.deal.getTheYouSeat() % 2) == targetAxis) {
@@ -353,52 +384,64 @@ public class CompletedTricksPanel extends ClickPanel {
 		new Point2D.Float(0.17f, 0.57f), /* S */
 		new Point2D.Float(0.00f, 0.28f) /* W */};
 
-		Hand trickWinner = App.deal.prevTrickWinner.get(trickRequested + 1);
-		Hand leader = App.deal.prevTrickWinner.get(trickRequested);
+		if (trickRequested + 1 >= App.deal.prevTrickWinner.size()) {
+			// we just assume that this is the result of asking to show a claim trick
 
-		for (int compass : Zzz.rota[leader.compass]) {
-			Hand hand = App.deal.hands[compass];
-			assert (compass == hand.compass);
+			float left = marginLeft + activityWidth * leftTopPercent[Zzz.South].x + ((float) trickRequested) / 13.0f * activityWidth * 0.52f;
+			float bot = marginTop + activityHeight * 1.2f * leftTopPercent[Zzz.South].y;
+			g2.setColor(Aaa.cardBackColor);
+			g2.setFont(claimFont);
+			g2.drawString(" claim", left, bot);
 
-			Card card = hand.played.get(trickRequested);
-			int suit = card.getSuit();
-			int rank = card.getRank();
+		}
+		else {
+			Hand trickWinner = App.deal.prevTrickWinner.get(trickRequested + 1);
+			Hand leader = App.deal.prevTrickWinner.get(trickRequested);
 
-			int phyPos = App.phyScreenPosFromCompass(hand.compass);
-			float left = marginLeft + activityWidth * leftTopPercent[phyPos].x + ((float) trickRequested) / 13.0f * activityWidth * 0.52f;
-			float top = marginTop + activityHeight * leftTopPercent[phyPos].y;
+			for (int compass : Zzz.rota[leader.compass]) {
+				Hand hand = App.deal.hands[compass];
+				assert (compass == hand.compass);
 
-			float symbolLeft = left + boarderLeft;
-			float symbolBottom = top + cardHeight - symbolBoarderBot;
+				Card card = hand.played.get(trickRequested);
+				int suit = card.getSuit();
+				int rank = card.getRank();
 
-			float faceLeft = left + boarderInLeft;
-			float faceBottom = top + cardHeight - faceBoarderBot;
+				int phyPos = App.phyScreenPosFromCompass(hand.compass);
+				float left = marginLeft + activityWidth * leftTopPercent[phyPos].x + ((float) trickRequested) / 13.0f * activityWidth * 0.52f;
+				float top = marginTop + activityHeight * leftTopPercent[phyPos].y;
 
-			// fill the lozenge ----------------------------------------------
-			rr.setRoundRect(left, top, cardWidth, cardHeight, curve, curve);
+				float symbolLeft = left + boarderLeft;
+				float symbolBottom = top + cardHeight - symbolBoarderBot;
 
-			g2.setPaint(Color.white);
-			g2.fill(rr);
+				float faceLeft = left + boarderInLeft;
+				float faceBottom = top + cardHeight - faceBoarderBot;
 
-			g2.setColor(Aaa.cdhsWeakColors[suit]);
+				// fill the lozenge ----------------------------------------------
+				rr.setRoundRect(left, top, cardWidth, cardHeight, curve, curve);
 
-			g2.setStroke(new BasicStroke(colorLineWidth * ((hand == trickWinner) ? 1.95f : 1)));
-			g2.draw(rr);
+				g2.setPaint(Color.white);
+				g2.fill(rr);
 
-			// Suit Value
-			{
 				g2.setColor(Aaa.cdhsWeakColors[suit]);
-				g2.setFont(symbolFont);
-				g2.drawString(Zzz.suit_to_cdhsntSt[suit], symbolLeft, symbolBottom);
-			}
 
-			// Face Value
-			{
-				g2.setColor(Aaa.cdhsColors[suit]);
-				g2.setFont(faceFont);
-				g2.drawString(Zzz.rank_to_rankSt[rank] + "", faceLeft, faceBottom);
-			}
+				g2.setStroke(new BasicStroke(colorLineWidth * ((hand == trickWinner) ? 1.95f : 1)));
+				g2.draw(rr);
 
+				// Suit Value
+				{
+					g2.setColor(Aaa.cdhsWeakColors[suit]);
+					g2.setFont(symbolFont);
+					g2.drawString(Zzz.suit_to_cdhsntSt[suit], symbolLeft, symbolBottom);
+				}
+
+				// Face Value
+				{
+					g2.setColor(Aaa.cdhsColors[suit]);
+					g2.setFont(faceFont);
+					g2.drawString(Zzz.rank_to_rankSt[rank] + "", faceLeft, faceBottom);
+				}
+
+			}
 		}
 	}
 

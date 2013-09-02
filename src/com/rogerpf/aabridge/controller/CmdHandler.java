@@ -27,6 +27,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 import com.rogerpf.aabridge.model.Deal;
 import com.rogerpf.aabridge.model.Hand;
+import com.rogerpf.aabridge.model.Lin;
 
 public final class CmdHandler {
 
@@ -49,14 +50,15 @@ public final class CmdHandler {
 		//             "menuSave"        entry EXISTS but not as a button
 		//             "menuSaveAs"      entry EXISTS but not as a button
 		//             "runTests"        entry EXISTS but not as a button
+		//             "nullCommand"     entry EXISTS but not as a button
 		new RpfBtnDef( "menuQuickSave",				"Quick Save",		"Saves the deal to the 'saves' folder, using the current time and date in the file name.  "),
 		new RpfBtnDef( "menuEasySave",				"Easy Save",		"Does a Save using the filename you set with 'Save As'  "),
-		new RpfBtnDef( "menuPlayAgain",				"Again",			"If the deal has just been finised then it 'undoes' the final two tricks, otherwise all the card play is wiped so you can play tha deal again.  (Does an AutoSave first)  "),
+		new RpfBtnDef( "menuPlayWipe",				"Wipe",				"If the deal is finished then it 'undoes' the final two tricks - otherwise, all the card play is wiped so you can play the deal again.  (Does an AutoSave first)  "),
 
 		new RpfBtnDef( "mainAnti",					"<",				"Rotate the seats Anti-clockwise  "),
 		new RpfBtnDef( "mainClock",					">",				"Rotate the seats Clockwise  "),
-		new RpfBtnDef( "mainShowBidding",			"Show Bidding",		""),
-		new RpfBtnDef( "editPlay2",					"Set Play",			"Set the Play - Jump straight to 'Set the Play' mode, normally got to via 'Review', 'Edit' and 'Set the Play'  "),
+		new RpfBtnDef( "editPlay2",					"Set Pl",				"Set the Play - Jump straight to 'Set the Play' mode, normally got to via 'Review', 'Edit' and 'Set the Play'  "),
+		new RpfBtnDef( "claimBtn",					"Claim",			"Claim  -  Claim as many of the remaining tricks as you wish.  Your claim we be accepted and not tested.  "),
 		new RpfBtnDef( "mainUndo",					"Undo",				""),
 		new RpfBtnDef( "mainNextBoard",				"Next Board",		"Discard the existing hands, shuffle and deal the next board  (always does and AutoSave first)  "),
 		new RpfBtnDef( "mainReview",				"Review",			"Swap between 'Review' and 'Normal Play'  "), 
@@ -69,7 +71,7 @@ public final class CmdHandler {
 		new RpfBtnDef( "reviewFwdShowOneTrick",		"Play 1",			"Play Forward 1 trick showing each card being played  "),
 		new RpfBtnDef( "reviewBackOneCard",			"<",		  		"Go back one card  "),
 		new RpfBtnDef( "reviewFwdOneCard",			">",		  		"Go forward one card  "),
-		new RpfBtnDef( "reviewShowEW",				"Show Hidden", 	    "Show / Hide the normally hidden hands "),
+		new RpfBtnDef( "reviewShowEW",				"Show / Hide", 	    "Show / Hide the normally hidden hands "),
 		new RpfBtnDef( "reviewEdit",				"Edit",				"Swap between 'Edit' and 'Review'  "),
 
 		new RpfBtnDef( "reviewPlay",				"Review the Play",	"Review the Play  "), 
@@ -103,19 +105,28 @@ public final class CmdHandler {
 
 	/**   
 	 */
+	static void nullCommand() {
+		// ==============================================================================================
+	}
+
+	/**   
+	 */
 	static void mainAnti() {
 		// ==============================================================================================
+		if (App.deal.isDoneHand()) // so we skip the 'done hand'
+			return;
+
 		App.incOffsetAntiClockwise(); // includes repaint
-		return;
 	}
 
 	/**   
 	 */
 	static void mainClock() {
 		// ==============================================================================================
+		if (App.deal.isDoneHand()) // so we skip the 'done hand'
+			return;
+
 		App.incOffsetClockwise(); // includes repaint
-		App.savePreferences();
-		return;
 	}
 
 	/**   
@@ -125,9 +136,17 @@ public final class CmdHandler {
 		if (App.deal.isDoneHand()) // so we skip the 'done hand'
 			return;
 
-		App.deal.clearStrategy();
+		if (App.isMode(Aaa.REVIEW_BIDDING))
+			return;
+
+		App.deal.clearPlayerNames();
+
+		App.deal.clearAllStrategies();
 
 		if (App.deal.isBidding() || App.isMode(Aaa.EDIT_BIDDING)) {
+
+			App.gbp.c2_2__bbp.clearHalfBids();
+
 			if (App.isAutoBid(App.deal.getNextHandToBid().compass)) {
 				// We have to (do we?) wait until the autoplayer has finished
 				// return;
@@ -143,28 +162,41 @@ public final class CmdHandler {
 			}
 			App.gbp.c2_2__bbp.startAutoBidDelayTimerIfNeeded();
 			App.frame.repaint();
-			return;
 		}
 
 		// all the rest of the ifs cover HAND editing
 
-		if (App.isMode(Aaa.NORMAL) && App.deal.isFinished()) {
+		if (App.deal.isFinished()) {
 
-			while ((App.deal.countCardsPlayed()) > 44) {
-				Hand hand = App.deal.getLastHandThatPlayed();
-				hand.undoLastPlay();
+			if (App.deal.endedWithClaim) {
+				App.deal.endedWithClaim = false;
+				App.deal.tricksClaimed = 0;
 			}
+			else {
+				while ((App.deal.countCardsPlayed()) > 44) {
+					Hand hand = App.deal.getLastHandThatPlayed();
+					hand.undoLastPlay();
+				}
+			}
+			if (App.isMode(Aaa.REVIEW_PLAY)) {
+				App.setMode(Aaa.NORMAL);
+			}
+
 			App.gbp.c1_1__tfdp.SetShowCompletedTrick();
 			App.gbp.c1_1__tfdp.makeCardSuggestions();
 			App.gbp.matchPanelsToDealState();
 		}
 
-		else if (App.isMode(Aaa.EDIT_PLAY)) {
+		else if (App.isMode(Aaa.EDIT_PLAY) || App.isMode(Aaa.REVIEW_PLAY)) {
 
 			if (App.deal.countCardsPlayed() > 0) {
 				Hand hand = App.deal.getLastHandThatPlayed();
 				hand.undoLastPlay();
 			}
+			if (App.isMode(Aaa.REVIEW_PLAY)) {
+				App.setMode(Aaa.NORMAL);
+			}
+
 			App.gbp.c1_1__tfdp.SetShowCompletedTrick();
 		}
 
@@ -202,7 +234,6 @@ public final class CmdHandler {
 
 		App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
 		App.frame.repaint();
-
 	}
 
 	/**   
@@ -210,6 +241,8 @@ public final class CmdHandler {
 	static void mainNextBoard() {
 		// ==============================================================================================
 		quickSaveOrAutoSave(true /* useAutoFolder */);
+
+		App.switchToNewLin(null);
 
 		App.setMode(Aaa.NORMAL);
 		App.reviewTrick = 0;
@@ -226,7 +259,7 @@ public final class CmdHandler {
 		App.gbp.matchPanelsToDealState();
 		App.frame.repaint();
 		if (App.isPauseAtEotClickWanted()) {
-			App.gbp.c1_1__tfdp.showCompletedTrick = true;
+			App.gbp.c1_1__tfdp.SetShowCompletedTrick();
 		}
 		App.gbp.c2_2__bbp.startAutoBidDelayTimerIfNeeded();
 		App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
@@ -292,30 +325,49 @@ public final class CmdHandler {
 		}
 	}
 
+//	/**   
+//	 */
+//	static void menuOpen() {
+//		// ==============================================================================================
+//		JFileChooser fc = new JFileChooser();
+//		fc.setFileFilter(new FileNameExtensionFilter("aabridge Deals", App.dealExt));
+//		fc.setCurrentDirectory(new File(App.savesPath));
+//		setFcPreferredSize(fc);
+//
+//		int returnVal = fc.showOpenDialog(App.frame);
+//		if (returnVal == JFileChooser.APPROVE_OPTION) {
+//			String pathWithSep = fc.getSelectedFile().getParent();
+//			if (pathWithSep != null && !pathWithSep.contentEquals("")) {
+//				pathWithSep += File.separator;
+//			}
+//			
+//			CmdHandler.quickSaveOrAutoSave(true /* useAutoFolder */);
+//			readFileIfExists(pathWithSep, fc.getSelectedFile().getName());
+//		}
+//
+//	}
+
 	/**   
 	 */
-	static void menuOpen() {
+	public static boolean readFileIfExists(String pathWithSep, String dealName) {
 		// ==============================================================================================
-		JFileChooser fc = new JFileChooser();
-		fc.setFileFilter(new FileNameExtensionFilter("aabridge Deals", App.dealExt));
-		fc.setCurrentDirectory(new File(App.savesPath));
-		setFcPreferredSize(fc);
 
-		int returnVal = fc.showOpenDialog(App.frame);
-		if (returnVal == JFileChooser.APPROVE_OPTION) {
-			String pathWithSep = fc.getSelectedFile().getParent();
-			if (pathWithSep != null && !pathWithSep.contentEquals("")) {
-				pathWithSep += File.separator;
-			}
+		String s = (pathWithSep + dealName).toLowerCase();
 
-			readDealIfExists(pathWithSep, fc.getSelectedFile().getName());
+		if (s.endsWith(App.dotAaBridgeExt.toLowerCase())) {
+			return readAaBridgeFileIfExists(pathWithSep, dealName);
 		}
 
+		if (s.endsWith(App.dotLinExt.toLowerCase())) {
+			return readLinFileIfExists(pathWithSep, dealName);
+		}
+
+		return false;
 	}
 
 	/**   
 	 */
-	public static boolean readDealIfExists(String pathWithSep, String dealName) {
+	public static boolean readAaBridgeFileIfExists(String pathWithSep, String dealName) {
 		// ==============================================================================================
 		Deal d = null;
 
@@ -329,27 +381,18 @@ public final class CmdHandler {
 		}
 
 		try {
+
 			FileInputStream fis = new FileInputStream(fileIn);
 			ObjectInputStream in = new ObjectInputStream(fis);
-			d = (Deal) in.readObject();
-			d.PostReadObjectFixups();
-			in.close();
-			fis.close();
 
+			d = (Deal) in.readObject();
+
+			d.PostReadObjectFixups();
 			d.lastSavedAsPathWithSep = fileIn.getParent() + File.separator;
 			d.lastSavedAsFilename = fileIn.getName();
 
-			App.deal = d;
-			App.calcCompassPhyOffset();
-			App.gbp.dealMajorChange();
-			App.setMode(Aaa.NORMAL);
-			App.gbp.matchPanelsToDealState();
-			App.frame.repaint();
-			App.gbp.c2_2__bbp.startAutoBidDelayTimerIfNeeded();
-			if (App.deal.isPlaying()) {
-				App.gbp.c1_1__tfdp.clearAllCardSuggestions();
-				App.gbp.c1_1__tfdp.makeCardSuggestions(); // for the "test" file if loaded
-			}
+			in.close();
+			fis.close();
 
 		} catch (IOException i) {
 			System.out.println("aaBrdige file, bad format?");
@@ -363,7 +406,46 @@ public final class CmdHandler {
 			return false;
 		}
 
-		App.frame.setTitleAsRequired();
+		App.switchToNewLin(null); // kill any existing lin
+
+		App.switchToDeal(d);
+
+		return true;
+	}
+
+	/**   
+	 */
+	public static boolean readLinFileIfExists(String pathWithSep, String dealName) {
+		// ==============================================================================================
+
+		if (pathWithSep == null || pathWithSep.contentEquals("")) {
+			pathWithSep = App.savesPath;
+		}
+
+		File fileIn = new File(pathWithSep + dealName);
+		if (!fileIn.exists()) {
+			return false;
+		}
+
+		Lin lin = null;
+
+		try {
+
+			FileInputStream fis = new FileInputStream(fileIn);
+
+			lin = new Lin(fis, fileIn, App.dotAaBridgeExt, App.showOldFinAsReview);
+
+			fis.close();
+
+		} catch (IOException i) {
+			System.out.println("lin file rejected, tutorial format? bad format?");
+			// App.deal = new Deal(Deal.makeDoneHand, App.youSeatForNewDeal);
+			// i.printStackTrace();
+			return false;
+		}
+
+		App.switchToNewLin(lin);
+
 		return true;
 	}
 
@@ -391,11 +473,10 @@ public final class CmdHandler {
 
 	/**   
 	 */
-	static void quickSaveOrAutoSave(boolean useAutoFolder) {
+	public static void quickSaveOrAutoSave(boolean useAutoFolder) {
 		// ==============================================================================================
-		if (App.deal.isDoneHand()) { // so we skip the 'done hand'
+		if (App.deal.isDoneHand()) // so we skip the 'done hand'
 			return;
-		}
 
 		App.deal.description = App.gbp.c0_0__tlp.descEntry.getText();
 		String dealName = makeDealFileNameAndPath(useAutoFolder, "", "");
@@ -442,14 +523,14 @@ public final class CmdHandler {
 
 	/**   
 	 */
-	static void menuPlayAgain() {
+	static void menuPlayWipe() {
 		// ==============================================================================================
 		if (App.deal.isDoneHand()) { // so we skip the 'done hand'
 			return;
 		}
 		quickSaveOrAutoSave(true /* useAutoFolder */);
 
-		if (App.isMode(Aaa.NORMAL) && App.deal.isFinished()) {
+		if ((App.isMode(Aaa.NORMAL) || App.isMode(Aaa.REVIEW_PLAY)) && App.deal.isFinished()) {
 			mainUndo();
 			return;
 		}
@@ -467,7 +548,7 @@ public final class CmdHandler {
 		App.gbp.matchPanelsToDealState();
 		App.frame.repaint();
 //		if (App.isPauseAtEotClickWanted()) {
-//			App.gbp.c1_1__tfdp.showCompletedTrick = true;
+//			App.gbp.c1_1__tfdp.SetShowCompletedTrick();
 //		}
 		App.gbp.c2_2__bbp.startAutoBidDelayTimerIfNeeded();
 		App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
@@ -600,6 +681,10 @@ public final class CmdHandler {
 	 */
 	static void mainReview() { // button also shows with name 'Normal'
 		// ==============================================================================================
+		if (App.deal.isDoneHand()) { // so we skip the 'done hand'
+			return;
+		}
+
 		if (App.isMode(Aaa.EDIT_BIDDING)) {
 			// App.deal.finishBiddingIfIncomplete();
 		}
@@ -794,12 +879,14 @@ public final class CmdHandler {
 	/**   
 	 */
 	static void editHands() {
+		App.deal.clearPlayerNames();
 		App.setMode(Aaa.EDIT_HANDS);
 		App.gbp.matchPanelsToDealState();
 		App.frame.repaint();
 	}
 
 	static void editBidding() {
+		App.deal.clearPlayerNames();
 		App.setMode(Aaa.EDIT_BIDDING);
 		App.gbp.matchPanelsToDealState();
 		App.frame.repaint();
@@ -816,12 +903,14 @@ public final class CmdHandler {
 	}
 
 	static void editPlay() {
+		App.deal.clearPlayerNames();
 		App.setMode(Aaa.EDIT_PLAY);
 		App.gbp.matchPanelsToDealState();
 		App.frame.repaint();
 	}
 
 	static void editPlayXall() {
+		App.deal.clearPlayerNames();
 		App.deal.wipePlay(false /* (don't) keepFirstCardPlayed */);
 		App.gbp.dealMajorChange();
 		App.frame.repaint();
@@ -871,8 +960,8 @@ public final class CmdHandler {
 	 */
 	public static String checkExtension(String s) {
 		// ==============================================================================================
-		if (s.endsWith(App.dotDealExt) == false) {
-			s += App.dotDealExt;
+		if (s.endsWith(App.dotAaBridgeExt) == false) {
+			s += App.dotAaBridgeExt;
 		}
 		return s;
 	}

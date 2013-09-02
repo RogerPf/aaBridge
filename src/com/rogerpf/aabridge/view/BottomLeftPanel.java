@@ -10,12 +10,17 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.view;
 
+import java.awt.Font;
 import java.awt.Graphics;
+import java.awt.Point;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
 import com.rogerpf.aabridge.controller.App;
+import com.rpsd.bridgefonts.BridgeFonts;
 
 /**
  */
@@ -100,34 +105,69 @@ public class BottomLeftPanel extends ClickPanel {
 
 		// setEotClickLabelVisibility();
 		c0_2_0__undo.editPlay2.setVisible(App.showEditPlay2Btn && (App.isMode(Aaa.NORMAL) || App.isMode(Aaa.REVIEW_BIDDING) || App.isMode(Aaa.REVIEW_PLAY)));
+		c0_2_0__undo.claimBtn.setVisible(App.showClaimBtn && (App.isMode(Aaa.NORMAL) || App.isMode(Aaa.EDIT_PLAY)));
+	}
 
+	public void hideClaimButtonsIfShowing() {
+		// TODO Auto-generated method stub
+		c0_2_0__undo.hideClaimButtonsIfShowing();
 	}
 
 }
 
 /**   
  */
-class UndoPanel extends ClickPanel {
-	/**
-	 * 
-	 */
+class UndoPanel extends ClickPanel implements ActionListener {
+
 	private static final long serialVersionUID = 1L;
 
 	public RpfResizeButton editPlay2;
+	public RpfResizeButton claimBtn;
+	RpfResizeButton claimValBtns[] = new RpfResizeButton[14];
 
 	/**
 	 */
 	UndoPanel() { /* Constructor */
 
-		setLayout(new MigLayout("insets 0 0 0 0, gap 0! 0!, flowy", "5%[]push[]5%", "12%[]20%[]"));
+		Font cardFaceFont = BridgeFonts.faceAndSymbFont.deriveFont(24f);
 
-		editPlay2 = new RpfResizeButton(1, "editPlay2", 30, 18);
-		// editPlay2.setForeground(Aaa.heartsColor);
-		add(editPlay2, "");
+		setLayout(new MigLayout("insets 0 0 0 0, gap 0! 0!, flowx", "5%[]push[]5%", "12%[]10%[]5%[]"));
 
 		RpfResizeButton b;
+
+		b = new RpfResizeButton(1, "editPlay2", 22, 18);
+		add(b, "");
+		editPlay2 = b;
+
 		b = new RpfResizeButton(1, "mainUndo", -3, 25);
-		add(b, "cell 1 0, align right");
+		add(b, "align right, wrap");
+
+		b = new RpfResizeButton(0, "Claim", 22, 18);
+		b.addActionListener(this);
+		add(b, "hidemode 0, span 2, split 8");
+		claimBtn = b;
+
+		for (int i = 0; i <= 5; i++) {
+			b = new RpfResizeButton(0, String.valueOf(i), 8, 16);
+			b.addActionListener(this);
+			b.setFont(cardFaceFont);
+			add(b, "hidemode 3" + ((i == 5) ? ", wrap" : "") + ((i == 0) ? ", gapx 4%" : ""));
+			b.setVisible(false);
+			claimValBtns[i] = b;
+		}
+
+		b = new RpfResizeButton(0, "invis", 5, 16);
+		add(b, "hidemode 0, span 2, split 9");
+		b.setVisible(false);
+
+		for (int i = 6; i <= 13; i++) {
+			b = new RpfResizeButton(0, String.valueOf(i), 8, 16);
+			b.addActionListener(this);
+			b.setFont(cardFaceFont);
+			add(b, "hidemode 3");
+			b.setVisible(false);
+			claimValBtns[i] = b;
+		}
 	}
 
 	/**
@@ -135,5 +175,62 @@ class UndoPanel extends ClickPanel {
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		setBackground(Aaa.baizeGreen);
+	}
+
+	public void hideClaimButtonsIfShowing() {
+		if (claimValBtns[0].isVisible()) {
+			for (RpfResizeButton b : claimValBtns) {
+				b.setVisible(false);
+			}
+		}
+	}
+
+	public void actionPerformed(ActionEvent e) {
+
+		String cmd = e.getActionCommand();
+
+		if (cmd.contentEquals("Claim")) {
+
+			if (claimValBtns[0].isVisible()) {
+				hideClaimButtonsIfShowing();
+				return;
+			}
+
+			if (!(App.deal.isPlaying() && (App.isMode(Aaa.NORMAL) || App.isMode(Aaa.EDIT_PLAY)))) {
+				hideClaimButtonsIfShowing();
+				return;
+			}
+
+			Point score = App.deal.getContractTrickCountSoFar();
+			int remainingTricks = 13 - (score.x + score.y);
+			if (remainingTricks == 0)
+				hideClaimButtonsIfShowing();
+			else
+				for (int i = 0; i < remainingTricks + 1; i++) {
+					claimValBtns[i].setVisible(true);
+				}
+			return;
+		}
+
+		Object source = e.getSource();
+		for (int i = 0; i < claimValBtns.length; i++) {
+			if (claimValBtns[i] == source) {
+
+				Point score = App.deal.getContractTrickCountSoFar();
+				int ourScore = (App.deal.isYouSeatDeclarerAxis() ? score.x : score.y);
+				// int remainingTricks = 13 - (score.x + score.y);
+				int claim = ourScore + i;
+
+				// we need to turn this into the declarer perspective
+				if (App.deal.isYouSeatDeclarerAxis() == false) {
+					claim = 13 - claim;
+				}
+				hideClaimButtonsIfShowing();
+				App.deal.claimTricks(claim);
+				App.gbp.matchPanelsToDealState();
+				App.frame.repaint();
+			}
+		}
+
 	}
 }

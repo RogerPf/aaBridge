@@ -13,6 +13,7 @@ package com.rogerpf.aabridge.model;
 import java.awt.Point;
 import java.util.Arrays;
 
+import com.rogerpf.aabridge.model.Deal.DumbAutoDirectives;
 import com.rogerpf.aabridge.model.Play_Mpat.Mpat;
 
 /**
@@ -73,12 +74,21 @@ class Gather {
 		Arrays.sort(fragAnals);
 	}
 	
-	public void sort_finnesseSuitablity(int i) {
+	public void sort_finnesseSuitablity(int who) {
 		for (FragAnal fa : fragAnals) {
-			fa.calc_finnesseSuitablity(i);
+			fa.calc_finnesseSuitablity(who);
 		}
 		Arrays.sort(fragAnals);
 	}
+	
+	public void sort_crossruffSuitability(int who) {
+		for (FragAnal fa : fragAnals) {
+			fa.calc_crossruffSuitablity(who);
+		}
+		Arrays.sort(fragAnals);
+	}
+
+	DumbAutoDirectives dumbAutoDir;
 	
 	Hand    hand				;
 	Deal    deal				;
@@ -87,6 +97,8 @@ class Gather {
 	Hand    declarer			;
 	int		declarerCompass		;
 	int		declarerAxis		;
+	boolean	declarersSide		;
+	boolean	defendersSide		;
 	Hand    leader				;
 	boolean leaderUs 			;
 	int     positionInTrick		;
@@ -102,9 +114,11 @@ class Gather {
 	boolean ourContract 		;
 	boolean z					;   // viZ   Declarer/Dummy mormally play highest of touching Defence lowest
 	int 	myTrumps 			;
-	int 	partnersTrumps 		;
+	int 	pnTrumps 			;
 	boolean haveSuitLed 		;
+	boolean pnHaveSuitLed 		;
 	boolean haveTrumps 			;
+	boolean pnHaveTrumps 		;
 	int 	outstandingTrumps	;
 	Hand 	bestCardPlayer 		;
 	Card 	bestCard 			;
@@ -118,6 +132,8 @@ class Gather {
 	
 	Card    pnHighestOfLed		;
 
+	int     tricksPlayed		;
+	int     tricksRemaining		;
 	int     declarersTarget		;
 	int     defendersTarget		;
 	int		ourTarget			;
@@ -130,7 +146,10 @@ class Gather {
 	boolean LHO_hasLedSuit 		;
 	boolean LHO_hasTrumps 		;
 	
+	Hand    winnerSoFar			;
+	
 	boolean isTopOutstandingTrumpMaster;
+	boolean secondPlayerFollowedSuit = false;
 	
 	boolean drawTrumpsHint      ; // meaningfull only to the declaring side
 	boolean trumpsRunable       ; //   "                    "
@@ -155,15 +174,19 @@ class Gather {
 	boolean  pnHasSuitLed = false;
 	int      pnHighestOfLedRank;
 	int      debug_suit = -1;
+	
+	int      finMaDepth = 9; // used by Finnesse paternMatching to pass down the finesse depth param, 9 means there will be no limit
 
 
-	Gather(Hand h, boolean strategyCreated) { // Constructor and everything
+
+	Gather(Hand h, DumbAutoDirectives dumbAutoDir, boolean strategyCreated) { // Constructor and everything
 		// ==============================================================================================
 		/** 
 		 * Early on we must create the Epat entires and more importatly the
 		 * Rel and Equ values for all the active cards.  This way
 		 * they are available for all the other analysis functions to use.
 		 */
+		this.dumbAutoDir	= dumbAutoDir;
 		hand				= h;
 		deal				= h.deal;
 		leader 				= deal.getCurTrickLeader();
@@ -188,6 +211,9 @@ class Gather {
 		declarerAxis		= h.deal.contractAxis();
 		leaderUs 			= (h == leader);
 		posFromDeclarer		= (4 + h.compass - declarerCompass) % 4;
+		
+		declarersSide		= posFromDeclarer % 2 == 0;
+		defendersSide		= posFromDeclarer % 2 == 1;
 
 		cardLed 			= (leaderUs) ? null : leader.played.getLast();
 		rankLed 			= (cardLed == null) ? -1 : cardLed.rank;
@@ -199,9 +225,11 @@ class Gather {
 		ourContract 		= (deal.contractAxis()) == h.axis();
 		z					= ourContract;
 		myTrumps 			= (noTrumps) ? 0 : h.frags[trumpSuit].size();
-		partnersTrumps 		= (noTrumps) ? 0 : h.partner().frags[trumpSuit].size();
+		pnTrumps 			= (noTrumps) ? 0 : h.partner().frags[trumpSuit].size();
 		haveSuitLed 		= (cardLed == null) ? false : (h.frags[suitLed].size() > 0);
+		pnHaveSuitLed 		= (cardLed == null) ? false : (h.partner().frags[suitLed].size() > 0);
 		haveTrumps 			= (!noTrumps && (myTrumps > 0));
+		pnHaveTrumps 		= (!noTrumps && (pnTrumps > 0));
 		bestCardPlayer 		= (leaderUs) ? null : h.getBestCardOfTrickPlayer();
 		bestCard 			= (leaderUs) ? null : bestCardPlayer.played.getLast();
 		bestByTrumping 		= (leaderUs) ? false : suitLed != bestCard.suit;
@@ -212,11 +240,15 @@ class Gather {
 		highestTrump 		= (noTrumps) ? null : h.frags[trumpSuit].getCard(0);
 		highestOfLed		= (leaderUs) ? null : h.frags[suitLed].getCard(0);
 		
+		tricksPlayed		= trickNumb;
+		tricksRemaining     = 13 - tricksPlayed;
 		Point trickCountPt  = h.deal.getContractTrickCountSoFar();
 		declarersTarget     = 6 + h.deal.contract.level - trickCountPt.x;
 		defendersTarget     = 13 - declarersTarget + 1  - trickCountPt.y;
 		ourTarget			= (ourContract) ? declarersTarget : defendersTarget;
 		oppsTarget			= (ourContract) ? defendersTarget : declarersTarget;
+		
+		secondPlayerFollowedSuit = (positionInTrick <= 1) ? false : leader.LHO().played.getLast().suit == cardLed.suit;
 		
 		partner				= h.partner();
 		LHO					= h.LHO();
@@ -343,6 +375,8 @@ class Gather {
 		
 		drawTrumpsHint = (noTrumps) ? false : !(outstandingTrumps == 0 || (outstandingTrumps == 1 && isTopOutstandingTrumpMaster));
 		trumpsRunable  = (noTrumps) ? false : (faTrumps.ourTopTricksCor >= Math.min(4, outstandingTrumps));
+		
+		winnerSoFar = deal.winnerSoFar();
 	
 		deal.setAllrankRelEquMpat_part2(true); // see comment above
 
@@ -552,11 +586,11 @@ class FragAnal implements Comparable<FragAnal> {
 
 	/**
 	 */
-	public int calc_finnesseSuitablity(int i) { // 0 = my, 1 = partner
+	public int calc_finnesseSuitablity(int who) { // 0 = me, 1 = partner
 		// ==============================================================================================
 		MpatRtn rtn = mpatRtn;
 		// @ formatter:off
-		if (fragLen[i] == 0)
+		if (fragLen[who] == 0)
 			return rtn.rating = -4;
 		if (isTrumps)
 			return rtn.rating = -3;
@@ -565,6 +599,33 @@ class FragAnal implements Comparable<FragAnal> {
 		// @ formatter:on
 
 		return rtn.rating = 20 + ourOrigCombLen - oppsOrigCombLen;
+	}
+
+	/**
+	 */
+	public int calc_crossruffSuitablity(int who) { // 0 = my, 1 = partner
+		// ==============================================================================================
+		MpatRtn rtn = mpatRtn;
+
+		// @ formatter:off
+		if (isTrumps)
+			return 0;
+
+		if (fragLen[who] == 0) // the whole point is to be able to lead them
+			return 0;
+
+		int oth = (who == Zzz.Me) ? Zzz.Pn : Zzz.Me;
+
+		if (fragLen[oth] > 0) // and the other person should have none
+			return 0;
+
+		int losersInSuit = fragLen[who] - ourTopTricksCor;
+		if (losersInSuit == 0) // we have all top tricks in this suit
+			return 0;
+
+		// @ formatter:on
+
+		return rtn.rating = losersInSuit;
 	}
 
 }

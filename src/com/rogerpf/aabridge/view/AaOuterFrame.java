@@ -37,8 +37,10 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JRadioButtonMenuItem;
 import javax.swing.JSplitPane;
+import javax.swing.Timer;
 import javax.swing.TransferHandler;
 
+import net.miginfocom.swing.MigLayout;
 import version.VersionAndBuilt;
 
 import com.rogerpf.aabridge.controller.App;
@@ -58,6 +60,12 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 	public AaLowerOptionsPanel lop;
 	public AaRightOptionsPanel rop;
 	AaPayloadPanel payloadPanel;
+	AaPayloadCasePanel plcp;
+	DarkGrayHiddenPanel rjp; // RightJigglePanel
+	DarkGrayHiddenPanel bjp; // BottomJigglePanel
+
+	AaLinAndPayloadCasePanel linPlcp;
+
 	public JSplitPane splitPaneHorz;
 	public JSplitPane splitPaneVert;
 
@@ -82,7 +90,7 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 		this.addWindowListener(this);
 		this.addComponentListener(this);
 		App.loadPreferences();
-		
+
 		App.deal = new Deal(Deal.makeDoneHand, App.youSeatForNewDeal);
 
 		aaDragGlassPane = new AaDragGlassPane(this);
@@ -130,16 +138,25 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 		menuItem.addActionListener(App.con);
 		menu.add(menuItem);
 
-		// Play Again
-		menuItem = new JMenuItem("Again             -  Quick Save to the 'autosaves' folder then wipe the play, for you to play that deal again", KeyEvent.VK_G);
-		menuItem.setActionCommand("menuPlayAgain");
+		// Play Wipe
+		menuItem = new JMenuItem("Wipe              -  Quick Save to the 'autosaves' folder then wipe the play, for you to play that deal again", KeyEvent.VK_G);
+		menuItem.setActionCommand("menuPlayWipe");
 		menuItem.addActionListener(App.con);
 		menu.add(menuItem);
 
 		menu.addSeparator();
 
 		// Open Saves Folder
-		menuItem = new JMenuItem("Open  'saves'  folder       -       THEN    -     use 'Drag and Drop' to open any deal", KeyEvent.VK_F);
+		menuItem = new JMenuItem(
+				"                        also plays    '.lin'  files   -   use   'Drag and Drop'   (plays both single hands and 16 board matches)");
+		menuItem.setActionCommand("nullCommand");
+		menuItem.addActionListener(App.con);
+		menu.add(menuItem);
+
+		menu.addSeparator();
+
+		// Open Saves Folder
+		menuItem = new JMenuItem("Open  'saves'  folder       -       THEN    -   use   'Drag and Drop'    to open any deal", KeyEvent.VK_F);
 		menuItem.setActionCommand("openSavesFolder");
 		menuItem.addActionListener(App.con);
 		menu.add(menuItem);
@@ -237,11 +254,28 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 		// -----------------------------------------------------
 
 		// Make the inner a fixed ratio (AspectBoundable) so creating the middle panel
-		payloadPanel = new AaPayloadPanel();
 		PreferredSizeGridLayout psgl = new PreferredSizeGridLayout(1, 1);
 		psgl.setBoundableInterface(new AspectBoundable());
+		payloadPanel = new AaPayloadPanel();
 		payloadPanel.setLayout(psgl);
 		payloadPanel.add(App.gbp);
+
+		rjp = new DarkGrayHiddenPanel();
+		bjp = new DarkGrayHiddenPanel();
+
+		plcp = new AaPayloadCasePanel();
+
+		plcp.setLayout(new MigLayout("insets 0 0 0 0, gap 0! 0!", "[grow][]", "[grow][]"));
+		plcp.add(payloadPanel, "growx, growy");
+		plcp.add(rjp, "hidemode 2, growy, wrap");
+		plcp.add(bjp, "hidemode 2, growx, spanx 2");
+
+		linPlcp = new AaLinAndPayloadCasePanel();
+
+		linPlcp.setLayout(new MigLayout("insets 0 0 0 0, gap 0! 0!", "[][grow]", "[grow]"));
+		App.linBtns = new AaLinButtonsPanel();
+		linPlcp.add(App.linBtns, "hidemode 2, growy, center, hmin 0");
+		linPlcp.add(plcp, "growx, growy");
 
 		rop = new AaRightOptionsPanel();
 		lop = new AaLowerOptionsPanel();
@@ -249,7 +283,7 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 		lop.setMinimumSize(new Dimension(0, 0));
 
 		// Create a split pane with the two scroll panes in it.
-		splitPaneVert = new JSplitPane(JSplitPane.VERTICAL_SPLIT, true, payloadPanel, lop);
+		splitPaneVert = new JSplitPane(JSplitPane.VERTICAL_SPLIT, true, linPlcp, lop);
 		splitPaneVert.setOneTouchExpandable(true);
 		splitPaneVert.setResizeWeight(1.0);
 
@@ -298,6 +332,50 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 		setTransferHandler(handler);
 	}
 
+	static int resizeTicks = 0;
+	static int resizeTicksTot = 40;
+
+	/**
+	*/
+	public void payloadPanelHasResized() {
+		// =============================================================
+		if (afterPlpResizedTimer.isRunning())
+			afterPlpResizedTimer.stop();
+
+		App.gbp.hideClaimButtonsIfShowing();
+
+		afterPlpResizedTimer.start();
+		resizeTicks = resizeTicksTot;
+	}
+
+	/**
+	*/
+	public Timer afterPlpResizedTimer = new Timer(100, new ActionListener() {
+		public void actionPerformed(ActionEvent evt) {
+			// =============================================================
+			afterPlpResizedTimer.setDelay(50);
+			if (resizeTicks == resizeTicksTot)
+				App.gbp.kick();
+
+			resizeTicks--;
+
+			boolean odd = (resizeTicks % 2 == 1);
+
+			if (odd && App.gbp.areAllThreeColumnsMatchedInSize(resizeTicks)) {
+				afterPlpResizedTimer.stop();
+				return;
+			}
+
+			rjp.setVisible(odd);
+			bjp.setVisible(odd);
+
+			if (resizeTicks <= 0 && !odd)
+				afterPlpResizedTimer.stop();
+		}
+	});
+
+	/**
+	*/
 	public boolean isSplashTimerRunning() {
 		return aaDragGlassPane.splashScreenCompleteTimer.isRunning();
 	}
@@ -386,7 +464,6 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 	}
 
 	public void windowClosing(WindowEvent e) {
-		App.maximized = (this.getExtendedState() == MAXIMIZED_BOTH);
 		App.savePreferences();
 	}
 
@@ -441,7 +518,8 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 				java.util.List<File> list = (java.util.List<File>) t.getTransferData(DataFlavor.javaFileListFlavor);
 
 				for (File f : list) {
-					CmdHandler.readDealIfExists(f.getPath(), "");
+					CmdHandler.quickSaveOrAutoSave(true /* useAutoFolder */);
+					CmdHandler.readFileIfExists(f.getPath(), "");
 					return true; // we ONLY EVER care about the first item in the list
 				}
 			} catch (Exception e) {
@@ -469,7 +547,7 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 					continue;
 				if (file.getName().startsWith("20") == false)
 					continue;
-				if (file.getName().endsWith(App.dotDealExt) == false)
+				if (file.getName().endsWith(App.dotAaBridgeExt) == false)
 					continue;
 				if (file.lastModified() > deleteEarlierThan)
 					continue;
@@ -482,5 +560,4 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 			return;
 		}
 	}
-
 }

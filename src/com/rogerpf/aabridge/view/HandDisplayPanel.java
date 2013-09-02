@@ -29,7 +29,6 @@ import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.text.AttributedString;
 
-import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
 import com.rogerpf.aabridge.controller.Aaa;
@@ -68,7 +67,7 @@ class FragDisplayInfo {
 
 /**
  */
-public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
+public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPanel
 
 	private static final long serialVersionUID = 1L;
 
@@ -253,7 +252,7 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 				return;
 
 			Boolean editing = App.isMode(Aaa.EDIT_HANDS);
-			Boolean playing = App.isMode(Aaa.EDIT_PLAY) || App.isMode(Aaa.NORMAL) && App.deal.isPlaying();
+			Boolean playing = App.deal.isPlaying() && (App.isMode(Aaa.EDIT_PLAY) || App.isMode(Aaa.NORMAL));
 
 			if (!(editing || playing && App.isSeatVisible(hand.compass) && !App.isAutoPlay(hand.compass)))
 				return;
@@ -318,7 +317,7 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 				return;
 			}
 
-			if (App.isMode(Aaa.EDIT_PLAY) && youDisplayRect.contains(e.getPoint())) {
+			if (/*App.isMode(Aaa.EDIT_PLAY) && */youDisplayRect.contains(e.getPoint())) {
 				App.deal.youSeatHint = hand.compass;
 				App.gbp.dealMajorChange();
 				App.frame.repaint();
@@ -487,7 +486,12 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 	private Frag[] getAppropriateFrags() {
 
 		if (App.isMode(Aaa.REVIEW_PLAY)) {
-			return hand.makeFragsAsOf(App.reviewTrick, App.reviewCard);
+			int reviewCardTot = App.reviewTrick * 4 + App.reviewCard;
+			int cardsPlayed = App.deal.countCardsPlayed();
+			if (App.deal.endedWithClaim == false || reviewCardTot <= cardsPlayed - 1)
+				return hand.makeFragsAsOf(App.reviewTrick, App.reviewCard);
+			else
+				return hand.frags;
 		}
 		else if ((App.isMode(Aaa.NORMAL) && App.deal.isPlaying()) || App.isMode(Aaa.EDIT_PLAY)) {
 			return hand.frags;
@@ -587,8 +591,8 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 
 		boolean youSeatUs = (App.deal.getTheYouSeat() == hand.compass);
 
-		Color bannerColor = (youSeatUs) ? Aaa.youSeatBannerBk : Aaa.handBannerBk;
-		Color pointsColor = (youSeatUs) ? Aaa.handBannerText : Aaa.handBannerText;
+		Color bannerColor = (youSeatUs) ? Aaa.youSeatBannerBk : Aaa.othersBannerBk;
+		Color pointsColor = (youSeatUs) ? Aaa.youSeatBannerTxt : Aaa.othersBannerTxt;
 
 		g2.setColor(bannerColor);
 		g2.fill(youDisplayRect);
@@ -652,7 +656,7 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 
 		// The "You" text
 		// ------------------------------------------------------------------
-		if (youSeatUs) {
+		if (youSeatUs && hand.playerName.isEmpty()) {
 			float youTextFontSize = bridgeLightFontSize * 1.2f;
 			Font youTextFont = BridgeFonts.bridgeLightFont.deriveFont(youTextFontSize);
 			g2.setFont(youTextFont);
@@ -669,6 +673,12 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 				g2.setFont(youTextFont);
 				g2.drawString("Click to be You", (int) (xy + nlh * 1.5), (int) (xy + nlh - youTextFontSize * 0.16f));
 			}
+		}
+		else if (hand.playerName.isEmpty() == false) {
+			float youTextFontSize = bridgeLightFontSize * 1.2f;
+			Font youTextFont = BridgeFonts.bridgeLightFont.deriveFont(youTextFontSize);
+			g2.setFont(youTextFont);
+			g2.drawString(hand.playerName, (int) (xy + nlh * 1.5), (int) (xy + nlh - youTextFontSize * 0.16f));
 		}
 
 		// The four Suits
@@ -711,7 +721,7 @@ public class HandDisplayPanel extends JPanel { // ============ HandDisplayPanel
 			}
 			String cards = addPadding(rawCards);
 
-			boolean showSuitSymbol = true;
+			boolean showSuitSymbol = App.showSuitSymbols;
 			float lhs = suitLineStartX + suitLineHeight / 8f;
 			float normStart = lhs + suitLineHeight * 1.1f;
 			float x = normStart;

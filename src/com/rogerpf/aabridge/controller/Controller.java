@@ -16,13 +16,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
-import java.io.File;
 
 import javax.swing.Timer;
 
 import com.rogerpf.aabridge.model.Bid;
 import com.rogerpf.aabridge.model.Card;
 import com.rogerpf.aabridge.model.Deal;
+import com.rogerpf.aabridge.model.Deal.DumbAutoDirectives;
 import com.rogerpf.aabridge.model.Hand;
 
 /**   
@@ -35,40 +35,39 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 		public void actionPerformed(ActionEvent evt) {
 			postContructionInitTimer.stop();
 
-			for (String s : App.args) {
-				System.out.println(s);
-			}
-
-			// Is there a deal on the command line - as used by windows file associations
+			// Is there a file on the command line - as used by windows file associations
 			boolean dealLoaded = false;
 			if (App.args != null && App.args.length != 0 && App.args[0] != null && !App.args[0].isEmpty()) {
-				File file = new File(App.args[0]);
-				if (file.exists()) {
-					String path = (file.getParentFile().getPath());
-					if (path.endsWith(File.separator) == false)
-						path += File.separator;
-					String fileName = file.getName();
-					dealLoaded = CmdHandler.readDealIfExists(path, fileName);
-				}
+				dealLoaded = CmdHandler.readFileIfExists(App.args[0], "");
 			}
-			
-			// Is there a deal called test in the saves folder?
+
+			// Is there a file called test.aaBridge in the saves folder?
 			if (dealLoaded == false) {
 				String dealName = "test";
-				dealLoaded = CmdHandler.readDealIfExists(App.savesPath, dealName + App.dotDealExt);
+				dealLoaded = CmdHandler.readFileIfExists(App.savesPath, dealName + App.dotAaBridgeExt);
 			}
-			
+
+			// Is there a file called lin_test.lin in the saves folder?
+			if (dealLoaded == false) {
+				String dealName = "lintest";
+				dealLoaded = CmdHandler.readFileIfExists(App.savesPath, dealName + App.dotLinExt);
+			}
+
 			/** 
 			 * The 'donehand' has already been constructed.
-			 * To use it all we need to do it to - do nothing
-			 * Otherwise we can create the deal with the correct criteria
+			 * To use it, we need do nothing
+			 * otherwise we create a new deal with the requested criteria
+			 *  nextBoard is a 'factory' that makes deals.
 			 */
 			if (dealLoaded == false) {
 				if (App.startWithDoneHand == false) {
 					App.deal = Deal.nextBoard(0, (App.watchBidding == false), App.dealCriteria, App.youSeatForNewDeal);
+					if (App.deal.isPlaying()) {
+						if (App.isPauseAtEotClickWanted())
+							App.gbp.c1_1__tfdp.SetShowCompletedTrick();
+					}
 				}
 			}
-
 
 			App.frame.splitPaneHorz.setDividerLocation(App.horzDividerLocation);
 			App.frame.splitPaneVert.setDividerLocation(App.vertDividerLocation);
@@ -124,6 +123,8 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 	private static char previous_char = 0;
 	private static long previous_time = 0;
 
+	DumbAutoDirectives dumbAutoDir = new DumbAutoDirectives();
+
 	/**   
 	 */
 	public boolean dispatchKeyEvent(KeyEvent e) {
@@ -142,6 +143,8 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 
 		if (App.deal.isPlaying())
 			App.gbp.c1_1__tfdp.ClearShowCompletedTrick();
+
+		App.gbp.hideClaimButtonsIfShowing();
 
 		// System.out.println( c );
 		int cmd = Aaa.cmdFromChar(c);
@@ -242,17 +245,17 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 		if (card != null) {
 			App.con.tableTheCard(hand, card);
 		}
-		else {
-			App.gbp.c1_1__tfdp.showThinBox = true;
-			App.gbp.c1_1__tfdp.repaint();
-		}
 	}
 
 	/**
 	 */
 	public void autoPlayRequest(Hand hand) {
 
-		Card card = hand.dumbAuto();
+		dumbAutoDir.yourFinnessesMostlyFail = App.yourFinnessesMostlyFail;
+		dumbAutoDir.defenderSignals = App.defenderSignals;
+
+		Card card = hand.dumbAuto(dumbAutoDir);
+
 		App.con.tableTheCard(hand, card);
 	}
 

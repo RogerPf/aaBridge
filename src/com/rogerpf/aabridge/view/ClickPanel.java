@@ -47,6 +47,7 @@ public class ClickPanel extends JPanel implements MouseListener {
 		if (App.gbp.c0_0__tlp.descEntry.hasFocus()) {
 			App.gbp.c0_0__tlp.descEntry.setFocusable(false);
 		}
+		App.gbp.hideClaimButtonsIfShowing();
 	}
 
 }

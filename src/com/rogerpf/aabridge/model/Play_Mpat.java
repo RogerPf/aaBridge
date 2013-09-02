@@ -54,7 +54,7 @@ final static Mpat[][] knownCases = {
 	
 },{
 //					 -1-       2nd       3rd      4th   What did they play?        Should play (in response as appropriate)
-//                                                       actual  play                (should)   resp
+//                                                       actual  play               (should)   resp
 	new Mpat( Equ,  "xxx.",   "KJ9.",   "AQT8.",  ".",     "x", "KJ9x", "",    0,   "x", "x", "AQT8", "",   "2001-4" ),
 	new Mpat( Equ,  "Qxx.",   "KJJ.",   "AQQ+.",  ".",     "Q", "KJx",  "",    0,   "Q", "K", "AQx",  "",   "2001-4" ),
 	new Mpat( Equ,  "Qxx.",   "KJJ.",   "AQQ+.",  ".",     "x", "KJx",  "",    0,   "Q", "x", "AQQ",  "",   "2001-4" ),
@@ -64,15 +64,22 @@ final static Mpat[][] knownCases = {
 	new Mpat( Equ,  "Q+.",    "KJx.",   "A.",     ".",     "x", "KJx",  "",    0,   "Q", "K", "Ax",   "",   "2034" ),
 	new Mpat( Equ,  "Q+.",    "KJx.",   "A.",     ".",     "x", "KJx",  "",    0,   "x", "x", "Ax",   "",   "2034" ),
 	new Mpat( Equ,  "QQx.",   "K.",     "AQxx.",  ".",     "Q", "Kx",   "",    0,   "Q", "x", "Ax",   "",   "2041" ),
-	
 	new Mpat( Equ,  "QQx.",   "K.",     "AQxx.",  ".",     "x", "Kx",   "",    0,   "x", "x", "AQ",   "",   "2041" ),
+
 	new Mpat( Equ,  "QQx.",   "K.",     "Axx.",   ".",     "Q", "Kx",   "",    0,   "Q", "x", "Ax",   "",   "2042" ),
 	new Mpat( Equ,  "QQx.",   "K.",     "Axx.",   ".",     "x", "Kx",   "",    0,   "Q", "x", "Ax",   "",   "2042" ),
+	new Mpat( Equ,  "Q.",     "Kx",     "AAx.",   ".",     "Q", "Kx",   "",    0,   "Q", "K", "Ax",   "",   "2062" ),
 	new Mpat( Equ,  "Q+.",    "Kx.",    "AQ+.",   ".",     "x", "Kx",   "",    0,   "Q", "x", "Ax",   "",   "2062" ),
+	new Mpat( Equ,  "Q+.",    "KJ.",    "AQ+.",   ".",     "Q", "Kx",   "",    0,   "Q", "K", "Ax",   "",   "2062" ),
+
 	new Mpat( Equ,  "Q+.",    "Kx.",    "AQ+.",   ".",     "Q", "Kx",   "",    0,   "Q", "x", "Ax",   "",   "2062" ),
 	new Mpat( Equ,  "Qx.",    "K.",     "AQ.",    ".",     "Q", "Kx",   "",    0,   "Q", "K", "Ax",   "",   "2062" ),
+	new Mpat( Equ,  "x.",     "Kx.",    "AQQ.",   ".",     "x", "Kx",   "",    0,   "x", "x", "AQ",   "",   "2062" ),
 	new Mpat( Equ,  "x.",     "K.",     "AQ.",    ".",     "x", "Kx",   "",    0,   "x", "x", "AQ",   "",   "2008-9" ),
 	new Mpat( Equ,  "+.",     "KK.",    "AAQ.",   ".",     "x", "Kx",   "",    0,   "x", "x", "AQ",   "",   "2034" ),
+	
+	new Mpat( Equ,  "Q.",     "KJ.",    "AAx.",   ".",     "Q", "Kx",   "",    0,   "Q", "K", "Ax",   "",   "2034" ),
+	new Mpat( Equ,  "Q.",     "KK.",    "AQ.",    ".",     "Q", "Kx",   "",    0,   "Q", "K", "Ax",   "",   "2034" ),
 
 }};
 
@@ -185,6 +192,8 @@ final static Mpat[][] knownCases = {
 
 			if (isWhatToPlayWanted) {
 
+				int maxDepth = g.finMaDepth;
+
 				for (i = 0; i < callerPositionInTrick; i++) {
 
 					// j is the index into the "real" match info (ma)
@@ -194,8 +203,7 @@ final static Mpat[][] knownCases = {
 						brk++; // put your breakpoint here
 
 					if (real.pd[j].length() != 1) {
-						@SuppressWarnings("unused")
-						int x = 0; // put your breakpoint here
+						brk++; // put your breakpoint here
 						System.out.println("ERR === > Mpat 'checkAgaints' Real played missing   j = " + j + "   " + real);
 					}
 					assert (real.pd[j].length() == 1);
@@ -205,10 +213,14 @@ final static Mpat[][] knownCases = {
 					int len = pd[i].length();
 					if (r_pd == '*') {
 						// they did not follow suit - so treat as a match of the lowest
-						k = len - 1;
+						k = (maxDepth <= len - 1) ? maxDepth : len - 1;
 					}
 					else {
 						for (k = 0; k < len; k++) {
+
+							if (k == maxDepth)
+								break; // success - the caller wants us to treat this as a match at this level
+
 							char c_pd = pd[i].charAt(k);
 							if (r_pd == c_pd)
 								break; // success - the real pd == candidate pd

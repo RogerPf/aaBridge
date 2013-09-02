@@ -147,6 +147,9 @@ public class Rlay_3rd {
 				}
 			}
 		}
+
+		card = Rlay_5_Discard.ChangeIntoSignalIfAppropriate(g, card);
+
 		return card;
 	}
 }

@@ -12,11 +12,13 @@ package com.rogerpf.aabridge.model;
 
 import java.awt.Point;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
 import version.VersionAndBuilt;
 
+import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Play_Mpat.Mpat;
 import com.rogerpf.aabridge.model.Zzz.BoardData;
 
@@ -32,9 +34,10 @@ public class Deal implements Serializable {
 	transient public String lastSavedAsFilename = "";
 	transient public NsSummary nsSummary = new NsSummary();
 	transient public int testId = 0;
-	transient private Strategy[] strategy = new Strategy[2];
 	transient public int cycle = 0; // debug message use only
 	transient public boolean hideFinish = false;
+	transient public String linRowText = "";
+	transient public String linResult = "";
 
 	public String description = "Your text here";
 
@@ -47,6 +50,8 @@ public class Deal implements Serializable {
 	public int dealer = 0; /* compass nesw */
 	public boolean vunerability[] = { false, false }; // ns, ew
 	public int contractCompass = 0;
+	public boolean endedWithClaim = false;
+	public int tricksClaimed = 0;
 
 	public Bid contract = NULL_BID;
 	public Bid contractDblRe = NULL_BID;
@@ -67,7 +72,6 @@ public class Deal implements Serializable {
 		// ==============================================================================================
 
 		nsSummary = null; // never used by
-		strategy = new Strategy[2];
 
 		for (Card card : packPristine) {
 			card.suitCh = (char) Zzz.suit_to_cdhsnCh[card.suit];
@@ -78,9 +82,11 @@ public class Deal implements Serializable {
 
 			for (Frag frag : hand.frags) {
 				frag.suitCh = Zzz.suit_to_cdhsnCh[frag.suit];
+				frag.signalHasHappened = false; // needs to be recalculated for each card in each trick
 			}
 			for (Frag fOrg : hand.fOrgs) {
 				fOrg.suitCh = Zzz.suit_to_cdhsnCh[fOrg.suit];
+				fOrg.signalHasHappened = false;
 			}
 			for (Bid bid : hand.bids) {
 				if (bid.isCall() == false) {
@@ -104,12 +110,34 @@ public class Deal implements Serializable {
 		if (buildNumber == 0) {
 			youSeatHint = Zzz.South;
 		}
+
+		// 2013 August 13 RPf - buildNumber 1398 is the first to save endedWithClaim field
+		if (buildNumber < 1398) {
+			endedWithClaim = false;
+			tricksClaimed = 0;
+		}
 		else {
 			@SuppressWarnings("unused")
 			int x = 0; // put your breakpoint here
 		}
 
 		buildNumber = VersionAndBuilt.buildNo;
+	}
+
+	/**
+	 */
+	public static class DumbAutoDirectives {
+		// ---------------------------------- CLASS -------------------------------------
+		public boolean yourFinnessesMostlyFail = false;
+		public int defenderSignals = Zzz.NoSignals;
+
+		public DumbAutoDirectives() { // constructor
+		}
+
+		public DumbAutoDirectives(boolean yourFin, int defSig) { // constructor
+			yourFinnessesMostlyFail = yourFin;
+			defenderSignals = defSig;
+		}
 	}
 
 	/**
@@ -243,6 +271,8 @@ public class Deal implements Serializable {
 			}
 		}
 
+		buildNumber = VersionAndBuilt.buildNo;
+
 		contractCompass = 0;
 		contract = NULL_BID;
 		contractDblRe = NULL_BID;
@@ -282,8 +312,6 @@ public class Deal implements Serializable {
 		makeBid(PASS);
 		makeBid(PASS);
 		makeBid(new Bid(7, Zzz.Notrumps));
-		makeBid(DOUBLE);
-		makeBid(REDOUBLE);
 		makeBid(PASS);
 		makeBid(PASS);
 		makeBid(PASS);
@@ -291,11 +319,13 @@ public class Deal implements Serializable {
 		// now, which is the whole point, we can play out the hand to the end by ONLY RANDOM cards
 		// the dumb auto player can remain unused and so easier to test using the 'tests'.
 
-		for (int i = 0; i < 13; i++) {
-			for (Hand hand : rota[Zzz.West]) {
-				hand.playCard(hand.getAnyCard());
-			}
-		}
+		endedWithClaim = true;
+		tricksClaimed = 0;
+//		for (int i = 0; i < 13; i++) {
+//			for (Hand hand : rota[Zzz.West]) {
+//				hand.playCard(hand.getAnyCard());
+//			}
+//		}
 	}
 
 	// formatter:off
@@ -317,6 +347,10 @@ public class Deal implements Serializable {
 
 	public int contractAxis() {
 		return contractCompass % 2;
+	}
+
+	public int defenderAxis() {
+		return (contractCompass + 1) % 2;
 	}
 
 	/** 
@@ -390,13 +424,14 @@ public class Deal implements Serializable {
 			hands[2] = hands[3];
 			hands[3] = kep;
 		}
-		else { // should be 1
+		else if (amountOfRotaion == 1) {
 			Hand kep = hands[3];
 			hands[3] = hands[2];
 			hands[2] = hands[1];
 			hands[1] = hands[0];
 			hands[0] = kep;
 		}
+		// else assume it is nothing
 
 		// fix the old now broken compass points
 		for (int i : Zzz.nesw) {
@@ -441,7 +476,13 @@ public class Deal implements Serializable {
 		d.contractCompass = contractCompass;
 
 		d.youSeatHint = youSeatHint; // but who cares
+		d.description = description;
 		// d.buildNumber in construct time field def
+
+		d.lastSavedAsPathWithSep = lastSavedAsPathWithSep;
+		d.lastSavedAsFilename = lastSavedAsFilename;
+		d.endedWithClaim = endedWithClaim;
+		d.tricksClaimed = tricksClaimed;
 
 		// contract
 		if (contract.isCall()) {
@@ -479,7 +520,9 @@ public class Deal implements Serializable {
 		for (int i : Zzz.nesw) {
 			Hand o_hand = hands[i];
 			Hand d_hand = d.hands[i];
-			// compass, playerName all preset
+
+			d_hand.playerName = o_hand.playerName;
+			// compass, is preset
 
 			// fOrgs
 			for (int k : Zzz.cdhs) {
@@ -528,7 +571,12 @@ public class Deal implements Serializable {
 						d_bid = d.REDOUBLE;
 				}
 				else {
-					d_bid = new Bid(bid.level, bid.suit);
+					if ((contract != null) && (bid.level == contract.level && bid.suit == contract.suit))
+						d_bid = d.contract;
+					else
+						d_bid = new Bid(bid.level, bid.suit);
+
+					d_bid.alert = bid.alert;
 				}
 				d_hand.bids.add(d_bid);
 			}
@@ -544,6 +592,15 @@ public class Deal implements Serializable {
 		// restoreDealTransients();
 
 		return d;
+	}
+
+	/**
+	 */
+	public void setDealer(int dealerCompass) {
+		// ==============================================================================================
+		dealer = dealerCompass;
+		assert (prevTrickWinner.size() <= 1);
+		prevTrickWinner.add(hands[dealer]);
 	}
 
 	/**
@@ -923,9 +980,11 @@ public class Deal implements Serializable {
 		// ==============================================================================================
 		dealer = (dealer + amountOfRotaion + 4) % 4;
 
-		boolean kept = vunerability[0];
-		vunerability[0] = vunerability[1];
-		vunerability[1] = kept;
+		if ((amountOfRotaion + 4) % 2 == 1) {
+			boolean kept = vunerability[0];
+			vunerability[0] = vunerability[1];
+			vunerability[1] = kept;
+		}
 
 		// find the boardnumber that matches
 		boardNo = 0; // so misses will be harmless - but there should not be any
@@ -933,6 +992,7 @@ public class Deal implements Serializable {
 			BoardData b = Zzz.getBoardData(i);
 			if (b.dealer == dealer && vunerability[0] == b.vunerability[0] && vunerability[1] == b.vunerability[1]) {
 				boardNo = i;
+				break;
 			}
 		}
 	}
@@ -1034,6 +1094,41 @@ public class Deal implements Serializable {
 
 	/** 
 	 */
+	public String contractAndResShort(boolean hideResults) {
+		// ==============================================================================================
+		if (contract == NULL_BID) {
+			return "- bid";
+		}
+		if (contract == PASS) {
+			return "- PO";
+		}
+
+		Point score = getContractTrickCountSoFar();
+
+		String s;
+		s = Zzz.compass_to_nesw_st[contractCompass] + " ";
+		s += contract.getLevelCh() + "" + contract.getSuitCh() + doubleOrRedoubleStringX();
+
+		if (isFinished() && hideResults == false) {
+
+			int trickDiff = score.x - (6 + contract.level);
+
+			if (trickDiff > 0) {
+				s += "+" + Integer.toString(trickDiff);
+			}
+			else if (trickDiff == 0) {
+				s += "=";
+			}
+			else {
+				s += "-" + Integer.toString(-trickDiff);
+			}
+		}
+
+		return s;
+	}
+
+	/** 
+	 */
 	public String contractAndResult() {
 		// ==============================================================================================
 		if (contract == NULL_BID) {
@@ -1090,6 +1185,26 @@ public class Deal implements Serializable {
 		if (contractDblRe == REDOUBLE)
 			return new String("xx");
 		return new String("");
+	}
+
+	/**
+	 * The incomming playerNames start from the SOUTH seat  where as the aaBridge has North at index 0;
+	 */
+	public void setPlayerNames(ArrayList<String> as) {
+		// ==============================================================================================
+		for (int i : Zzz.zto3) {
+			hands[i].playerName = as.get((i + 2) % 4);
+		}
+	}
+
+	/**
+	 * The incomming playerNames start from the SOUTH seat  where as the aaBridge has North at index 0;
+	 */
+	public void clearPlayerNames() {
+		// ==============================================================================================
+		for (int i : Zzz.zto3) {
+			hands[i].playerName = "";
+		}
 	}
 
 	/**
@@ -1167,13 +1282,13 @@ public class Deal implements Serializable {
 	/**
 	 */
 	public boolean isPlaying() {
-		return isContractReal() && ((prevTrickWinner.size() < 14) || ((prevTrickWinner.size() == 14) && (hideFinish == true)));
+		return isContractReal() && !endedWithClaim && (prevTrickWinner.size() < 14 || ((prevTrickWinner.size() == 14) && (hideFinish == true)));
 	}
 
 	/**
 	 */
 	public boolean isFinished() {
-		return ((contract == PASS) || (prevTrickWinner.size() == 14) && (hideFinish == false));
+		return (contract == PASS) || endedWithClaim || (prevTrickWinner.size() == 14 && (hideFinish == false));
 	}
 
 	/**
@@ -1283,9 +1398,29 @@ public class Deal implements Serializable {
 
 	/**
 	 */
+	public void wipePlay() {
+		// set the frags to match the original cards and wipe the played
+		clearAllStrategies();
+
+		for (Hand hand : rota[Zzz.North]) {
+			for (int i : Zzz.cdhs) {
+				hand.frags[i] = (Frag) hand.fOrgs[i].clone();
+			}
+			hand.played.clear();
+		}
+
+		// leave only the original leader
+		while (prevTrickWinner.size() > 1) {
+			prevTrickWinner.removeLast();
+		}
+	}
+
+	/**
+	 */
 	public void wipePlay(boolean keepFirstCardPlayed) {
 		// set the frags to match the original cards and wipe the played
-		clearStrategy();
+		clearAllStrategies();
+		App.deal.endedWithClaim = false;
 
 		Card first = null;
 		if (keepFirstCardPlayed && !prevTrickWinner.isEmpty()) {
@@ -1313,6 +1448,8 @@ public class Deal implements Serializable {
 	 */
 	public void wipeContractAndPlay() {
 		// set the frags to match the original cards and wipe the played
+		App.deal.endedWithClaim = false;
+
 		for (Hand hand : rota[Zzz.North]) {
 			for (int i : Zzz.cdhs) {
 				hand.frags[i] = (Frag) hand.fOrgs[i].clone();
@@ -1323,13 +1460,15 @@ public class Deal implements Serializable {
 		contract = NULL_BID;
 		contractDblRe = NULL_BID;
 		contractCompass = 0;
-		clearStrategy();
+		clearAllStrategies();
 	}
 
 	/**
 	 */
 	public void wipeContractBiddingAndPlay() {
 		// set the frags to match the original cards and wipe the played
+		App.deal.endedWithClaim = false;
+
 		for (Hand hand : rota[Zzz.North]) {
 			for (int i : Zzz.cdhs) {
 				hand.frags[i] = (Frag) hand.fOrgs[i].clone();
@@ -1341,7 +1480,7 @@ public class Deal implements Serializable {
 		contract = NULL_BID;
 		contractDblRe = NULL_BID;
 		contractCompass = 0;
-		clearStrategy();
+		clearAllStrategies();
 		// the dealer has been preset by the user, that is why this routine exists
 	}
 
@@ -1448,6 +1587,15 @@ public class Deal implements Serializable {
 		return ourPlayer.played.get(trick);
 	}
 
+	public int getCompassThatWasPlayed(int index) {
+		int trick = index / 4;
+		int turn = index % 4;
+		if (prevTrickWinner.size() < trick)
+			return 0;
+		int histLeaderCompass = prevTrickWinner.get(trick).compass;
+		return (histLeaderCompass + turn) % 4;
+	}
+
 	/**
 	 */
 	private Hand getHandThatMadeBid(Bid bid) {
@@ -1509,6 +1657,24 @@ public class Deal implements Serializable {
 			}
 		}
 		return last;
+	}
+
+	/**
+	 */
+	public boolean isBiddingInteresting() {
+		int rounds = hands[dealer].bids.size();
+		int interesting = 0;
+		for (int r = 0; r < rounds; r++) {
+			for (Hand hand : rota[dealer]) {
+				if (hand.bids.size() == r)
+					break;
+				Bid cb = hand.bids.get(r);
+				if (cb == PASS)
+					continue;
+				interesting++;
+			}
+		}
+		return (interesting > 1);
 	}
 
 	/**
@@ -1613,11 +1779,12 @@ public class Deal implements Serializable {
 	/**
 	 */
 	public boolean haveAllHandsPlayedTheSameNumberOfCards() {
-		int s[] = { 0, 0, 0, 0 };
-		for (int compass : Zzz.nesw) {
-			s[compass] = hands[compass].played.size();
-		}
-		return ((s[0] == s[1]) && (s[1] == s[2]) && (s[2] == s[3]));
+//		int s[] = { 0, 0, 0, 0 };
+//		for (int compass : Zzz.nesw) {
+//			s[compass] = hands[compass].played.size();
+//		}
+//		return ((s[0] == s[1]) && (s[1] == s[2]) && (s[2] == s[3]));
+		return (countCardsPlayed() % 4 == 0);
 	}
 
 	/**
@@ -1658,26 +1825,39 @@ public class Deal implements Serializable {
 //		return ((s[0] == s[1]) && (s[1] == s[2]) && (s[2] == s[3] + 1));
 	}
 
+	public void claimTricks(int i) {
+		// ==============================================================================================
+		endedWithClaim = true;
+		tricksClaimed = i;
+	}
+
 	/**
 	 * returns a point - x is the decelarers tricks and y is defenders
 	 */
 	public Point getContractTrickCountSoFar() {
 		Point trickCount = new Point(); // comes set to 0,0
-		boolean skipFirst = true;
-		int plA = contractCompass;
-		int plB = (contractCompass + 2) % 4;
-		int opA = (contractCompass + 1) % 4;
-		int opB = (contractCompass + 3) % 4;
 
-		for (Hand winner : prevTrickWinner) {
-			if (skipFirst) {
-				skipFirst = false;
-				continue;
-			} // skip the first as it the leader to the first trick
-			if (winner.compass == plA || winner.compass == plB)
-				trickCount.x++;
-			if (winner.compass == opA || winner.compass == opB)
-				trickCount.y++;
+		if (endedWithClaim) {
+			trickCount.x = tricksClaimed;
+			trickCount.y = 13 - trickCount.x;
+		}
+		else {
+			boolean skipFirst = true;
+			int plA = contractCompass;
+			int plB = (contractCompass + 2) % 4;
+			int opA = (contractCompass + 1) % 4;
+			int opB = (contractCompass + 3) % 4;
+
+			for (Hand winner : prevTrickWinner) {
+				if (skipFirst) {
+					skipFirst = false;
+					continue;
+				} // skip the first as it the leader to the first trick
+				if (winner.compass == plA || winner.compass == plB)
+					trickCount.x++;
+				if (winner.compass == opA || winner.compass == opB)
+					trickCount.y++;
+			}
 		}
 		return trickCount;
 	}
@@ -1736,6 +1916,35 @@ public class Deal implements Serializable {
 
 	/**
 	 */
+	Hand winnerSoFar() {
+
+		int cardsPlayed = countCardsPlayed() % 4;
+		if (cardsPlayed == 0)
+			return null;
+
+		int curTrickIndex = getCurTrickIndex();
+		Hand leader = getCurTrickLeader();
+		if (cardsPlayed == 1)
+			return leader;
+
+		Hand bestHand = leader;
+		Card bestCard = leader.played.getCard(curTrickIndex);
+		Hand hand = leader;
+
+		for (int i = 1; i < cardsPlayed; i++) {
+			hand = leader.nextHand();
+			Card card = hand.played.getCard(curTrickIndex);
+
+			if (card.isBetterThan(bestCard, contract.suit)) {
+				bestHand = hand;
+				bestCard = card;
+			}
+		}
+		return bestHand;
+	}
+
+	/**
+	 */
 	public boolean isNextCardLastInTrick() {
 		return isCurTrickThreeCards();
 	}
@@ -1756,11 +1965,12 @@ public class Deal implements Serializable {
 			return score;
 
 		int reMult = (contractDblRe == REDOUBLE) ? 2 : 1;
+		int dblMult = (contractDblRe == DOUBLE) ? 2 : 1;
 
 		int trickDiff = getContractTrickCountSoFar().x - (contract.level + 6);
 
 		if (trickDiff >= 0) { // they made
-			score.y = contract.level * Zzz.scoreRate[contract.suit] + ((contract.suit == Zzz.Notrumps) ? 10 : 0);
+			score.y = (contract.level * Zzz.scoreRate[contract.suit] + ((contract.suit == Zzz.Notrumps) ? 10 : 0)) * dblMult;
 
 			int vunMult = (vunerability[contractAxis()]) ? 2 : 1;
 
@@ -2012,7 +2222,7 @@ public class Deal implements Serializable {
 		Card card = null;
 		Hand handFrom = null;
 
-		clearStrategy();
+		clearAllStrategies();
 
 		for (Hand hand : rota[Zzz.North]) {
 			// We scan the original cards, of course
@@ -2091,21 +2301,10 @@ public class Deal implements Serializable {
 		handFrom.fOrgs[altCard.suit].addDeltCard(altCard);
 	}
 
-	public void clearStrategy() {
-		strategy[Zzz.NS] = null;
-		strategy[Zzz.EW] = null;
-	}
-
-	public void clearStrategy(Hand h) {
-		strategy[h.axis()] = null;
-	}
-
-	public Strategy getStrategy(Hand h) {
-		return strategy[h.axis()];
-	}
-
-	public void setStrategy(Hand h, Strategy stra) {
-		strategy[h.axis()] = stra;
+	public void clearAllStrategies() {
+		for (Hand hand : rota[Zzz.North]) {
+			hand.clearStrategy();
+		}
 	}
 
 	public void playCardExternal(int suit, int rank) {

@@ -18,12 +18,9 @@ public class Qstr_1st__Declarer {
 		// ****************************** STRATEGY - 1st Declarer and Dummy (index 0) ******************************
 
 		int brk = 0;
-		if (g.trickNumb == 6)
+		if (g.trickNumb == 4)
 			if (g.compass == 0)
 				brk++; // put your breakpoint here :)
-
-		if (brk > 0)
-			brk++; // put your breakpoint here :)
 
 		if (g.drawTrumpsHint) {
 
@@ -39,7 +36,7 @@ public class Qstr_1st__Declarer {
 				return;
 			}
 
-			boolean tryToEnterPartner = (g.myTrumps == 0 && g.partnersTrumps > 0); // of course we still want to draw them
+			boolean tryToEnterPartner = (g.myTrumps == 0 && g.pnTrumps > 0); // of course we still want to draw them
 
 			if (!tryToEnterPartner) { // much work here
 				// would we be better off leading from the other hand ?
@@ -73,18 +70,43 @@ public class Qstr_1st__Declarer {
 		 *  or you just have no entry to to the trump drawing hand - umm not so !
 		 *  
 		 *  So think NO TRUMPS
+		 *  
+		 *  UNLESS we can crossruff
 		 */
 
-		if (g.ourTopTricksTot >= g.ourTarget) {
+		if (g.ourTopTricksTot >= g.tricksRemaining || g.ourTopTricksTot >= g.ourTarget) {
 			g.sort_topTricksButWithBadEntriesFirst();
 			stra.add(new StraStep(Strategy.RunTopTricksInSuit, "", -1, g.fragAnals[0].suit, -1));
 			return;
 		}
 
-		if (g.trickNumb == 1) {
-			if ((h.compass == 2)) {
-				@SuppressWarnings("unused")
-				int x = 0; // put your breakpoint here
+		if (brk > 0)
+			brk++; // put your breakpoint here :)
+
+		/**
+		 *  OK so we dont have enought top tricks but we MAY be able to many others by a cross ruff
+		 */
+		if (g.haveTrumps && g.pnHaveTrumps) {
+
+			if (g.myTrumps >= g.pnTrumps) {
+				g.sort_crossruffSuitability(Zzz.Me);
+				FragAnal fa = g.fragAnals[0];
+				if (fa.mpatRtn.rating > 0) {
+					stra.add(new StraStep(Strategy.PlayCard, "for Partner to Ruff", fa.myFrag.getLast().rankRel, fa.suit, -1));
+				}
+			}
+
+			if (g.myTrumps <= g.pnTrumps) { // pn has more trumps that I do (or equal and no Xruff earlier)
+				g.sort_crossruffSuitability(Zzz.Pn);
+				FragAnal fa = g.fragAnals[0];
+				if (fa.mpatRtn.rating > 0) {
+					Card card = Strategy.selectBestEntryIntoPartner(g);
+					if (card != null) {
+						System.out.println(Zzz.compass_to_nesw_st_long[h.compass] + "  GetToPartner " + card);
+						stra.add(new StraStep(Strategy.PlayCard, "get to partner", card.rankRel, card.suit, h.partner().compass));
+						return;
+					}
+				}
 			}
 		}
 
@@ -94,7 +116,7 @@ public class Qstr_1st__Declarer {
 			Play_Mpat.isPatternMatch(g, fa.suit, Zzz.Leader_Pos, Zzz.MatchAsSelf);
 		}
 		// now we can sort on this info
-		g.sort_finnesseSuitablity(0);
+		g.sort_finnesseSuitablity(Zzz.Me);
 		// well do we have a good finnesse to take ?
 		{
 			FragAnal fa = g.fragAnals[0];
@@ -117,7 +139,7 @@ public class Qstr_1st__Declarer {
 			Play_Mpat.isPatternMatch(g, fa.suit, Zzz.Leader_Pos, Zzz.MatchAsPartner);
 		}
 		// now we can sort on this info
-		g.sort_finnesseSuitablity(1);
+		g.sort_finnesseSuitablity(Zzz.Pn);
 		// well do we have a good finnesse for *partner* to take ?
 		{
 			FragAnal fa = g.fragAnals[0];
@@ -125,7 +147,7 @@ public class Qstr_1st__Declarer {
 				Card card = Strategy.selectBestEntryIntoPartner(g);
 				if (card != null) {
 					System.out.println(Zzz.compass_to_nesw_st_long[h.compass] + "  GetToPartner " + card);
-					stra.add(new StraStep(Strategy.GetToHand, "get to partner", card.rankRel, fa.suit, h.partner().compass));
+					stra.add(new StraStep(Strategy.PlayCard, "get to partner", card.rankRel, card.suit, h.partner().compass));
 					return;
 				}
 			}

@@ -12,6 +12,8 @@ package com.rogerpf.aabridge.model;
 
 import java.util.ArrayList;
 
+import com.rogerpf.aabridge.model.Deal.DumbAutoDirectives;
+
 class StraStep {
 	// ---------------------------------- CLASS -------------------------------------
 	String idea;
@@ -46,9 +48,13 @@ public class Strategy extends ArrayList<StraStep> {
 
 	private static final long serialVersionUID = 1L;
 
-	int axis;
+	Hand hExt;
+
 	Deal d;
-	boolean drawTrumpsHint = false; // this is calculated every time (for declarer)
+	Hand h;
+
+	boolean drawTrumpsHint = false;
+	boolean signalWanted[] = { true, true, true, true };
 
 	public static final String PlayCard = "PlayCard";
 	public static final String DrawTrumps = "DrawTrumps";
@@ -92,20 +98,22 @@ public class Strategy extends ArrayList<StraStep> {
 	 * 
 	 * @param d   a deapclone of the current deal that the strategy keeps for its life
 	 */
-	Strategy(Deal d) { // constructor
+	Strategy(Deal d, Hand hExt) { // constructor
 		// ==============================================================================================
 		this.d = d;
-		Hand h = d.getNextHandToPlay(); // reminds us that every Stratergy is focused on a hand / axis
-		axis = h.axis(); // for now we have only two strategies in existance at once EW and NS
+		this.hExt = hExt;
+		this.h = d.hands[hExt.compass]; // reminds us that every Stratergy is focused on a hand
+		this.h.strategy = this; // set the clone hand to have its us as its strategy
+		this.h.dealClone = d; // set the clone hand to have its us as its strategy
 
 		// A Strategy is always *CREATED* when and only when that side is ready to play their first card
 
-		if (h.axis() == d.contractAxis()) {
-			assert (d.countCardsPlayed() == 1);
-		}
-		else {
-			assert (d.countCardsPlayed() == 0);
-		}
+//		if (h.axis() == d.contractAxis()) {
+//			assert (d.countCardsPlayed() == 1);
+//		}
+//		else {
+//			assert (d.countCardsPlayed() == 0);
+//		}
 
 		String s = (d.testId == 0) ? "" : "test_" + d.testId + "  ";
 		System.out.println(s + "Strategy Created  " + d.countCardsPlayed() + "  " + Zzz.axis_st[h.axis()] + "  Tk " + (d.countCardsPlayed() / 4 + 1) + " "
@@ -127,7 +135,7 @@ public class Strategy extends ArrayList<StraStep> {
 	/**
 	 * 
 	 */
-	public void update() {
+	public Gather update(DumbAutoDirectives dumbAutoDir) {
 		// ==============================================================================================
 		Hand h = d.getNextHandToPlay(); // reminds us that every Stratergy is focused on a hand / axis
 
@@ -135,16 +143,16 @@ public class Strategy extends ArrayList<StraStep> {
 
 		// assert( axis == h.axis());
 
-		if (axis != h.axis()) // super protective
-			return; // no need to / MUST NOT / analyse unless it is our sides turn to play
+		// assert(axis != h.axis()); // no need to / MUST NOT / analyse unless it is our sides turn to play
 
-		if (axis != d.contractAxis())
-			return; // for now we just want the declarer side
-
-		Gather g = new Gather(h, /* strategyCreated */true);
+		Gather g = new Gather(h, dumbAutoDir, /* strategyCreated */true);
 
 		String s = (d.testId == 0) ? "" : "test_" + d.testId + " ";
-		System.out.println(s + "Strgy Upd  Tk " + (d.countCardsPlayed() / 4) + "  " + Zzz.axis_st[h.axis()] + " " + Zzz.playOrd_st[d.countCardsPlayed() % 4]);
+		System.out.println(s + "Strgy Upd  Tk " + (d.countCardsPlayed() / 4) + "  " + Zzz.compass_to_nesw_st[h.compass] + " "
+				+ Zzz.playOrd_st[d.countCardsPlayed() % 4]);
+
+		if (h.axis() != d.contractAxis())
+			return g; // for now we just want the declarer side
 
 		// @formatter:off
 		if (g.ourContract) {
@@ -168,6 +176,8 @@ public class Strategy extends ArrayList<StraStep> {
 //			}
 		}
 		// @formatter:on
+
+		return g;
 	}
 
 	static Card selectBestEntryIntoPartner(Gather g) {
