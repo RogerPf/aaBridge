@@ -86,7 +86,7 @@ public class BottomLeftPanel extends ClickPanel {
 			boolean showMsg = (!App.isAutoPlay(App.deal.getNextHandToPlay().compass)) && !App.isMode(Aaa.EDIT_PLAY) && App.showBidPlayMsgs
 					&& App.deal.lessThanTwoCardsPlayed();
 			c0_2_0__undo.setVisible(!showMsg);
-			c0_2_0__mdp.textArea.setText("\nPLAY by clicking on a CARD\nor by using your Keyboard.");
+			c0_2_0__mdp.textArea.setText("PLAY by clicking on a CARD\nor by using your Keyboard.\n\n Grey dot   means   click green");
 			c0_2_0__mdp.setVisible(showMsg);
 			c0_2_0__wtsp.setVisible(false);
 		}
@@ -135,7 +135,7 @@ class UndoPanel extends ClickPanel implements ActionListener {
 
 		RpfResizeButton b;
 
-		b = new RpfResizeButton(1, "editPlay2", 22, 18);
+		b = new RpfResizeButton(1, "editPlay2", 28, 18);
 		add(b, "");
 		editPlay2 = b;
 

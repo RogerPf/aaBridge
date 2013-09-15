@@ -16,7 +16,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.ObjectInputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -27,6 +26,7 @@ import com.rogerpf.aabridge.model.Card;
 import com.rogerpf.aabridge.model.Deal;
 import com.rogerpf.aabridge.model.Deal.DumbAutoDirectives;
 import com.rogerpf.aabridge.model.Hand;
+import com.rogerpf.aabridge.model.Lin;
 import com.rogerpf.aabridge.model.Zzz;
 
 public final class TestSystemRunner {
@@ -46,7 +46,7 @@ public final class TestSystemRunner {
 		log.add("For example at the moment that West has to discard correctly in a squeeze attempt.");
 		log.add("Save the deal and move it to the tests folder.  The format of the file name needs to be");
 		log.add("");
-		log.add("        test_<anything1>__xFS__<anything2>__.aaBridge");
+		log.add("        test_<anything1>__xFS__<anything2>__.lin");
 		log.add("");
 		log.add("          x   is  optional  if present it means NOT so x7H  means NOT the 7 of hearts");
 		log.add("          F   is  the desired card Face -  AKQJT98765432");
@@ -74,30 +74,22 @@ public final class TestSystemRunner {
 	 */
 	static Deal readTestDeal(File test, ArrayList<String> log) {
 		// ==============================================================================================
-		Deal d = null;
+		Lin lin;
+
 		try {
+
 			FileInputStream fis = new FileInputStream(test);
-			ObjectInputStream in = new ObjectInputStream(fis);
-			d = (Deal) in.readObject();
-			d.PostReadObjectFixups();
-			d.lastSavedAsFilename = test.getName();
-			in.close();
+
+			lin = new Lin(fis, test, App.dotLinExt, false);
+
 			fis.close();
+
 		} catch (Exception e) {
 			log.add(new String(test.getName() + " - deal did not read correctly, threw exception"));
-			d = null;
+			return null;
 		}
-		return d;
-	}
 
-	/**   
-	 */
-	public static String checkExtension(String s) {
-		// ==============================================================================================
-		if (s.endsWith(App.dotAaBridgeExt) == false) {
-			s += App.dotAaBridgeExt;
-		}
-		return s;
+		return lin.get(0).deepClone();
 	}
 
 	/** 
@@ -244,7 +236,7 @@ public final class TestSystemRunner {
 		int run = 0;
 		int failCount = 0;
 		int succeeded = 0;
-		String ending = (App.dotAaBridgeExt);
+		String ending = (App.dotLinExt);
 		for (File test : tests) {
 			String testName = test.getName();
 
@@ -252,7 +244,9 @@ public final class TestSystemRunner {
 				continue;
 			if (testName.endsWith(ending) == false)
 				continue;
+
 			Deal d = readTestDeal(test, log);
+
 			if (d == null)
 				continue;
 			TestInfo ti = validateNameAndExtractDesiredResult(test, log, d);
@@ -349,9 +343,9 @@ public final class TestSystemRunner {
 			bw.close();
 			fw.close();
 
-			if (App.showTestsLogAtEnd) {
-				Desktop.getDesktop().open(new File(logFilePath));
-			}
+//			if (App.showTestsLogAtEnd) {
+			Desktop.getDesktop().open(new File(logFilePath));
+//			}
 
 		} catch (IOException e) {
 			// Sigh - what do they expect to be done !

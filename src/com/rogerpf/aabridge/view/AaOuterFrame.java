@@ -120,50 +120,29 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 //		menuItem.addActionListener(App.con);
 //		menu.add(menuItem);
 //
+		// Save Std
+		menuItem = new JMenuItem("Save               -  Save using the file name you last set with 'Save As'", KeyEvent.VK_S);
+		menuItem.setActionCommand("menuSaveStd");
+		menuItem.addActionListener(App.con);
+		menu.add(menuItem);
+
 		// Save As
 		menuItem = new JMenuItem("Save As        -  Save the deal,  this is the way you get to choose the file name", KeyEvent.VK_A);
 		menuItem.setActionCommand("menuSaveAs");
 		menuItem.addActionListener(App.con);
 		menu.add(menuItem);
 
-		// Quick Save
-		menuItem = new JMenuItem("Quick Save  -  Save the deal to the 'saves' folder, using the current time and date in the file name", KeyEvent.VK_Q);
-		menuItem.setActionCommand("menuQuickSave");
-		menuItem.addActionListener(App.con);
-		menu.add(menuItem);
-
-		// Easy Save
-		menuItem = new JMenuItem("Easy Save    -  Save using the file name you last set with 'Save As'", KeyEvent.VK_E);
-		menuItem.setActionCommand("menuEasySave");
-		menuItem.addActionListener(App.con);
-		menu.add(menuItem);
-
-		// Play Wipe
-		menuItem = new JMenuItem("Wipe              -  Quick Save to the 'autosaves' folder then wipe the play, for you to play that deal again", KeyEvent.VK_G);
-		menuItem.setActionCommand("menuPlayWipe");
-		menuItem.addActionListener(App.con);
-		menu.add(menuItem);
-
-		menu.addSeparator();
-
-		// Open Saves Folder
-		menuItem = new JMenuItem(
-				"                        also plays    '.lin'  files   -   use   'Drag and Drop'   (plays both single hands and 16 board matches)");
-		menuItem.setActionCommand("nullCommand");
-		menuItem.addActionListener(App.con);
-		menu.add(menuItem);
+//		// Play Wipe
+//		menuItem = new JMenuItem("Wipe              -  Wipe the play, for you to play that deal again", KeyEvent.VK_G);
+//		menuItem.setActionCommand("menuPlayWipe");
+//		menuItem.addActionListener(App.con);
+//		menu.add(menuItem);
 
 		menu.addSeparator();
 
 		// Open Saves Folder
 		menuItem = new JMenuItem("Open  'saves'  folder       -       THEN    -   use   'Drag and Drop'    to open any deal", KeyEvent.VK_F);
 		menuItem.setActionCommand("openSavesFolder");
-		menuItem.addActionListener(App.con);
-		menu.add(menuItem);
-
-		// Open quickSaves Folder
-		menuItem = new JMenuItem("Open  'quicksaves'  folder");
-		menuItem.setActionCommand("openQuickSavesFolder");
 		menuItem.addActionListener(App.con);
 		menu.add(menuItem);
 
@@ -175,23 +154,23 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 
 		// menu.addSeparator();
 
-		// Open Results Folder
-		menuItem = new JMenuItem("Open  'results'  folder");
-		menuItem.setActionCommand("openResultsFolder");
-		menuItem.addActionListener(App.con);
-		menu.add(menuItem);
-
-		// Open Tests Folder
-		menuItem = new JMenuItem("Open  'tests'   folder");
-		menuItem.setActionCommand("openTestsFolder");
-		menuItem.addActionListener(App.con);
-		menu.add(menuItem);
-
-		// Run Tests
-		menuItem = new JMenuItem("Run Tests", KeyEvent.VK_T);
-		menuItem.setActionCommand("runTests");
-		menuItem.addActionListener(App.con);
-		menu.add(menuItem);
+//		// Open Results Folder
+//		menuItem = new JMenuItem("Open  'results'  folder");
+//		menuItem.setActionCommand("openResultsFolder");
+//		menuItem.addActionListener(App.con);
+//		menu.add(menuItem);
+//
+//		// Open Tests Folder
+//		menuItem = new JMenuItem("Open  'tests'   folder");
+//		menuItem.setActionCommand("openTestsFolder");
+//		menuItem.addActionListener(App.con);
+//		menu.add(menuItem);
+//
+//		// Run Tests
+//		menuItem = new JMenuItem("Run Tests", KeyEvent.VK_T);
+//		menuItem.setActionCommand("runTests");
+//		menuItem.addActionListener(App.con);
+//		menu.add(menuItem);
 
 		// Options - MENU
 		menu = new JMenu("Options");
@@ -199,19 +178,25 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 		menuBar.add(menu);
 
 		// Right Panel - Prefs 1 DealChoices
-		menuItem = new JMenuItem("Deal Choices", KeyEvent.VK_D);
+		menuItem = new JMenuItem("Deals  -  Deal Choices", KeyEvent.VK_D);
 		menuItem.setActionCommand("rightPanelPrefs1_DealChoices");
 		menuItem.addActionListener(this);
 		menu.add(menuItem);
 
-		// Right Panel - Prefs 1 DealChoices
-		menuItem = new JMenuItem("Seat Choice  and  Watching the Bidding", KeyEvent.VK_S);
+		// Right Panel - Prefs 5 Bidding
+		menuItem = new JMenuItem("Bids  -  Watching the Bidding", KeyEvent.VK_S);
+		menuItem.setActionCommand("rightPanelPrefs5_Bidding");
+		menuItem.addActionListener(this);
+		menu.add(menuItem);
+
+		// Right Panel - Prefs 2 SeatChoices
+		menuItem = new JMenuItem("Seat Choices", KeyEvent.VK_S);
 		menuItem.setActionCommand("rightPanelPrefs2_SeatChoice");
 		menuItem.addActionListener(this);
 		menu.add(menuItem);
 
 		// Right Panel - Prefs 3 AutoPlay
-		menuItem = new JMenuItem("Pause  and  AutoPlay  options", KeyEvent.VK_A);
+		menuItem = new JMenuItem("AutoPlay  and  Pause  options", KeyEvent.VK_A);
 		menuItem.setActionCommand("rightPanelPrefs3_AutoPlay");
 		menuItem.addActionListener(this);
 		menu.add(menuItem);
@@ -221,6 +206,8 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 		menuItem.setActionCommand("rightPanelPrefs4_StartUp");
 		menuItem.addActionListener(this);
 		menu.add(menuItem);
+
+		menu.addSeparator();
 
 		// Bottom Panel
 		menuItem = new JMenuItem("Speed Selection", KeyEvent.VK_P);
@@ -233,14 +220,34 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 		menu.setMnemonic(KeyEvent.VK_H);
 		menuBar.add(menu);
 
-		// Help About
-		menuItem = new JMenuItem("Help", KeyEvent.VK_H);
+		// Help general
+		menuItem = new JMenuItem("Introduction", KeyEvent.VK_H);
 		menuItem.setActionCommand("menuHelpHelp");
 		menuItem.addActionListener(this);
 		menu.add(menuItem);
 
+		menu.addSeparator();
+
+		// Help Swap lin file player
+		menuItem = new JMenuItem("How do I  -  Swap between aaBridge and BBO as the (dblclick) .lin file player");
+		menuItem.setActionCommand("menuSwapLinFilePlayer");
+		menuItem.addActionListener(this);
+		menu.add(menuItem);
+
+		menuItem = new JMenuItem("How do I  -  Use aaBridge to practice my Hand Counting");
+		menuItem.setActionCommand("menuPracticeCounting");
+		menuItem.addActionListener(this);
+		menu.add(menuItem);
+
+		menuItem = new JMenuItem("What is a  -  .Lin file");
+		menuItem.setActionCommand("menuWhatIsALinFile");
+		menuItem.addActionListener(this);
+		menu.add(menuItem);
+
+		menu.addSeparator();
+
 		// Help LookAtWebsite
-		menuItem = new JMenuItem("Show Website - so you can look and see if you have the latest version", KeyEvent.VK_W);
+		menuItem = new JMenuItem("Show aaBridge Website - so you can check to see if you have the latest version", KeyEvent.VK_W);
 		menuItem.setActionCommand("menuLookAtWebsite");
 		menuItem.addActionListener(this);
 		menu.add(menuItem);
@@ -300,27 +307,21 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 		String appHomePath = System.getProperty("user.home") + File.separator + ".aaBridge" + File.separator;
 
 		App.autoSavesPath = appHomePath + "autosaves" + File.separator;
-		App.quickSavesPath = appHomePath + "quicksaves" + File.separator;
 		App.savesPath = appHomePath + "saves" + File.separator;
 		App.testsPath = appHomePath + "tests" + File.separator;
 		App.resultsPath = appHomePath + "results" + File.separator;
 
 		File appHome = new File(appHomePath);
 		File autoSaves = new File(App.autoSavesPath);
-		File quickSaves = new File(App.quickSavesPath);
 		File saves = new File(App.savesPath);
 		File tests = new File(App.testsPath);
 		File results = new File(App.resultsPath);
 
 		appHome.mkdir();
 		autoSaves.mkdir();
-		quickSaves.mkdir();
 		saves.mkdir();
 		tests.mkdir();
 		results.mkdir();
-
-		if (App.deleteQuickSaves)
-			clearOutOldDealsFromFolder(App.quickSavesPath, 30);
 
 		if (App.deleteAutoSaves)
 			clearOutOldDealsFromFolder(App.autoSavesPath, 7);
@@ -400,17 +401,21 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth() - 320);
 			App.frame.rop.setSelectedIndex(0);
 		}
-		if (cmd == "rightPanelPrefs2_SeatChoice") {
+		if (cmd == "rightPanelPrefs5_Bidding") {
 			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth() - 320);
 			App.frame.rop.setSelectedIndex(1);
 		}
-		if (cmd == "rightPanelPrefs3_AutoPlay") {
+		if (cmd == "rightPanelPrefs2_SeatChoice") {
 			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth() - 320);
 			App.frame.rop.setSelectedIndex(2);
 		}
-		if (cmd == "rightPanelPrefs4_StartUp") {
+		if (cmd == "rightPanelPrefs3_AutoPlay") {
 			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth() - 320);
 			App.frame.rop.setSelectedIndex(3);
+		}
+		if (cmd == "rightPanelPrefs4_StartUp") {
+			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth() - 320);
+			App.frame.rop.setSelectedIndex(4);
 		}
 		else if (cmd == "lowerPanel") {
 			App.frame.splitPaneVert.setDividerLocation(App.frame.getHeight() - 130);
@@ -423,7 +428,24 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 				Desktop.getDesktop().browse(new java.net.URI("http://rogerpf.com/z_bridge_area/bridge/aaBridge.php"));
 			} catch (Exception ev) {
 			}
-
+		}
+		else if (cmd == "menuSwapLinFilePlayer") {
+			try {
+				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.rogerpf.com/2013/08/swap-between-aabridge-and-bbo-as-lin.html"));
+			} catch (Exception ev) {
+			}
+		}
+		else if (cmd == "menuPracticeCounting") {
+			try {
+				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.rogerpf.com/2013/08/counting-hand-1.html"));
+			} catch (Exception ev) {
+			}
+		}
+		else if (cmd == "menuWhatIsALinFile") {
+			try {
+				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.rogerpf.com/2013/08/aabridge-and-lin-files.html"));
+			} catch (Exception ev) {
+			}
 		}
 		else if (cmd == "menuHelpAbout") {
 			java.net.URL imageFileURL = AaOuterFrame.class.getResource("aaBridge_proto_icon.png");
@@ -431,8 +453,7 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 //			final ImageIcon icon = Toolkit.getDefaultToolkit().createImage(imageFileURL);
 
 			String s = "AaBridge written by Roger Pfister\n\n" + "This is version -  " + VersionAndBuilt.getVer() + "\n" + "Build Number -    "
-					+ VersionAndBuilt.getBuildNo() + "\n" + "Built on         -    " + VersionAndBuilt.getBuilt() + "\n\n" + "see - http://RogerPf.com\n\n"
-					+ "Open source, available from\n" + "   http://github/RogerPf/aaBridge";
+					+ VersionAndBuilt.getBuildNo() + "\n" + "Built on         -    " + VersionAndBuilt.getBuilt() + "\n\n" + "see - http://RogerPf.com\n\n";
 			;
 			JOptionPane.showMessageDialog(this, s, "About - aaBridge", JOptionPane.INFORMATION_MESSAGE, icon);
 		}
@@ -465,6 +486,7 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 
 	public void windowClosing(WindowEvent e) {
 		App.savePreferences();
+		CmdHandler.doAutoSave();
 	}
 
 	public void windowClosed(WindowEvent e) {
@@ -483,7 +505,7 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 	}
 
 	public void setTitleAsRequired() {
-		String s = "aaBridge   " + VersionAndBuilt.all();
+		String s = "aaBridge  " + VersionAndBuilt.verAndBuildNo();
 		if ((App.deal.lastSavedAsFilename != null) && (App.deal.lastSavedAsFilename.length() > 0)) {
 			s += "    -    " + App.deal.lastSavedAsFilename;
 		}
@@ -518,7 +540,7 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 				java.util.List<File> list = (java.util.List<File>) t.getTransferData(DataFlavor.javaFileListFlavor);
 
 				for (File f : list) {
-					CmdHandler.quickSaveOrAutoSave(true /* useAutoFolder */);
+					CmdHandler.doAutoSave();
 					CmdHandler.readFileIfExists(f.getPath(), "");
 					return true; // we ONLY EVER care about the first item in the list
 				}
@@ -547,7 +569,7 @@ public class AaOuterFrame extends JFrame implements ComponentListener, ActionLis
 					continue;
 				if (file.getName().startsWith("20") == false)
 					continue;
-				if (file.getName().endsWith(App.dotAaBridgeExt) == false)
+				if (file.getName().endsWith(".aaBridge") == false && file.getName().endsWith(App.dotLinExt) == false)
 					continue;
 				if (file.lastModified() > deleteEarlierThan)
 					continue;

@@ -65,7 +65,7 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 						bid = App.deal.generateSouthBid(App.dealCriteria);
 					}
 					else if (hand.compass == Zzz.North) {
-						bid = App.deal.PASS;
+						bid = new Bid(Zzz.PASS);
 					}
 					else {
 						bid = App.deal.generateEastWestBid(hand);
@@ -108,8 +108,8 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 		b = new RpfResizeButton(0, Zzz.call_to_string[Zzz.REDOUBLE], -3, 20, 0.75f);
 		b.addActionListener(this);
 		b.setFont(bridgeBoldFont);
-		b.setHoverColor(Aaa.heartsColor);
-		b.setBackground(Aaa.dblButtonColor);
+		b.setHoverColor(Aaa.diamondsWeakColor);
+		b.setBackground(Aaa.diamondsColor);
 		b.setForeground(Color.WHITE);
 		add(b, "hidemode 2, span 3, wrap");
 		redoubleBtn = b;
@@ -209,8 +209,8 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 	/**
 	 */
 	private void setBidButtonVisibility() {
-		doubleBtn.setVisible(App.deal.isCallAllowed(App.deal.DOUBLE));
-		redoubleBtn.setVisible(App.deal.isCallAllowed(App.deal.REDOUBLE));
+		doubleBtn.setVisible(App.deal.isCallAllowed(Zzz.DOUBLE));
+		redoubleBtn.setVisible(App.deal.isCallAllowed(Zzz.REDOUBLE));
 
 		int levelAllowed = App.deal.getHighestLevelAllowed();
 
@@ -265,15 +265,8 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 
 		if ((cmd & Aaa.CMD_CALL) != 0) {
 			int call = (cmd & 0xff);
-			if (call == Zzz.PASS) {
-				b = App.deal.PASS;
-			}
-			else if (call == Zzz.DOUBLE) {
-				b = App.deal.DOUBLE;
-			}
-			else if (call == Zzz.REDOUBLE) {
-				b = App.deal.REDOUBLE;
-			}
+			b = new Bid(call);
+			b.setAlert(halfBidAlert);
 		}
 		else if ((cmd & Aaa.CMD_SUITN) != 0) { // *** The user has pressed a
 												// Suit Key (inc N)

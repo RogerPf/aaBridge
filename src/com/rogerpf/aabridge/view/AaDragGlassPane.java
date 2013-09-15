@@ -148,10 +148,10 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 			float panelWidth = (float) getWidth();
 			float panelHeight = (float) getHeight();
 
-			float marginLeft = panelWidth * 0.22f;
-			float marginRight = panelWidth * 0.22f;
-			float marginTop = panelHeight * 0.22f;
-			float marginBottom = panelHeight * 0.22f;
+			float marginLeft = panelWidth * 0.26f;
+			float marginRight = panelWidth * 0.26f;
+			float marginTop = panelHeight * 0.26f;
+			float marginBottom = panelHeight * 0.26f;
 
 			float activityWidth = panelWidth - (marginLeft + marginRight);
 			float activityHeight = panelHeight - (marginTop + marginBottom);

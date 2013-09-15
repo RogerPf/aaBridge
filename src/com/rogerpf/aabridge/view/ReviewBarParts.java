@@ -101,10 +101,10 @@ class ReviewBarPlayPart1 extends ClickPanel {
 		b = new RpfResizeButton(1, "reviewBackOneTrick", 11, 70);
 		add(b);
 
-		b = new RpfResizeButton(1, "reviewFwdOneTrick", 11, 70);
+		b = new RpfResizeButton(1, "reviewFwdOneTrick", 15, 78, 1.05f);
 		add(b);
 
-		b = new RpfResizeButton(1, "reviewFwdShowOneTrick", 40, 70, 1.0f);
+		b = new RpfResizeButton(1, "reviewFwdShowOneTrick", 40, 78, 1.0f);
 		add(b);
 
 		b = new RpfResizeButton(1, "reviewBackOneCard", 10, 70);

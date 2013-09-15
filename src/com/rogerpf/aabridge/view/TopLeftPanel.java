@@ -26,9 +26,9 @@ public class TopLeftPanel extends ClickPanel {
 	public RpfTextField descEntry = new RpfTextField(90, 13);
 	public VunerabilityDisplayPanel c0_0__vdp = new VunerabilityDisplayPanel();
 
-	RpfResizeButton quicksave;
+	RpfResizeButton saveAs;
 	RpfResizeButton playWipe;
-	RpfResizeButton easySave;
+	RpfResizeButton saveStd;
 	RpfResizeButton clock;
 	RpfResizeButton anti;
 
@@ -45,8 +45,8 @@ public class TopLeftPanel extends ClickPanel {
 
 		descEntry.setText(App.deal.description);
 
-		quicksave = new RpfResizeButton(1, "menuQuickSave", 30, 14, 0.7f);
-		easySave = new RpfResizeButton(1, "menuEasySave", 27, 14, 0.7f);
+		saveStd = new RpfResizeButton(1, "menuSaveStd", 18, 14, 0.7f);
+		saveAs = new RpfResizeButton(1, "menuSaveAs", 24, 14, 0.7f);
 		playWipe = new RpfResizeButton(1, "menuPlayWipe", 14, 14, 0.7f);
 		b /*   */= new RpfResizeButton(0, "invis", 50, 14, 0.7f);
 		b.setVisible(false);
@@ -54,18 +54,19 @@ public class TopLeftPanel extends ClickPanel {
 		anti = new RpfResizeButton(1, "mainAnti", 7, 12, 0.9f);
 
 		setRotationBtnsVisibility();
-		setEasySaveVisibility();
-		setPlayAgainVisibility();
+		setSaveAsVisibility();
+		setSaveStdVisibility();
+		setWipeVisibility();
 
 		setLayout(new MigLayout("insets 0 0 0 0, gap 0! 0!, flowy", "[60%][]5%", "5%[15%]8%[12%]8%[12%]8%[12%]2%[12%]"));
 		add(descEntry, "pushx, align right, wmin 90%, wmax 90%, span 2");
 		add(c0_0__vdp, "align left, gapx 4%, wmin 52%, wmax 52%, hmin 70%, hmax 70%, spany, wrap");
-		add(quicksave, "gapx 4%, wmin 10%, hmin 10%, align left");
-		add(easySave, "hidemode 3, gapx 4%, wmin 10%, hmin 10%");
+		add(saveStd, "gapx 4%, wmin 10%, hmin 10%");
+		add(saveAs, "gapx 4%, wmin 10%, hmin 10%, align left");
 		add(playWipe, "gapx 4%, wmin 4%, hmin 10%");
 		add(b, "split3, gapx 4%, wmin 4%, hmin 6%, flowx");
-		add(anti, "hidemode 3, gapx 4%, wmin 6%, hmin 6%");
-		add(clock, "hidemode 3, gapx 3%, wmin 6%, hmin 6%");
+		add(anti, "hidemode 1, gapx 4%, wmin 6%, hmin 6%");
+		add(clock, "hidemode 1, gapx 3%, wmin 6%, hmin 6%");
 
 		// earlier version
 
@@ -73,7 +74,7 @@ public class TopLeftPanel extends ClickPanel {
 //		add(descEntry, "pushx, align right, wmin 90%, wmax 90%, span 2");
 //		add(c0_0__vdp, "gapx 4%, wmin 52%, hmin 72%, spany, wrap");
 //		add(quicksave, "gapx 4%, wmin 10%, hmin 10%, align left");
-//		add(easySave, "hidemode 3, gapx 4%, wmin 10%, hmin 10%");
+//		add(saveStd, "hidemode 1, gapx 4%, wmin 10%, hmin 10%");
 //		add(playWipe, "split3, gapx 4%, wmin 4%, hmin 10%, flowx");
 //		add(anti, "gapx 4%, wmin 6%, hmin 10%");
 //		add(clock, "gapx 2%, wmin 6%, hmin 10%");
@@ -89,14 +90,20 @@ public class TopLeftPanel extends ClickPanel {
 
 	/**   
 	 */
-	public void setEasySaveVisibility() {
-		easySave.setVisible(App.showEasySave);
+	public void setSaveAsVisibility() {
+		saveAs.setVisible(App.showSaveAs);
 	}
 
 	/**   
 	 */
-	public void setPlayAgainVisibility() {
-		playWipe.setVisible(App.showPlayAgain);
+	public void setSaveStdVisibility() {
+		saveStd.setVisible(App.showSaveStd);
+	}
+
+	/**   
+	 */
+	public void setWipeVisibility() {
+		playWipe.setVisible(App.showWipe);
 	}
 
 	/**   

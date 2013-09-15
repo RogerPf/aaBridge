@@ -31,16 +31,19 @@ public class AaRightOptionsPanel extends JTabbedPane implements ChangeListener {
 	public AaRopPrefs2_SeatChoice p2_SeatChoice;
 	public AaRopPrefs3_AutoPlay p3_AutoPlay;
 	public AaRopPrefs4_StartUp p4_StartUp;
+	public AaRopPrefs5_Bidding p5_Bidding;
 
 	AaRightOptionsPanel() { /* Constructor */
 
 		addChangeListener(this);
 		p1_DealChoices = new AaRopPrefs1_DealChoices();
+		p5_Bidding = new AaRopPrefs5_Bidding();
 		p2_SeatChoice = new AaRopPrefs2_SeatChoice();
 		p3_AutoPlay = new AaRopPrefs3_AutoPlay();
 		p4_StartUp = new AaRopPrefs4_StartUp();
-		addTab("Deal Choices", null, p1_DealChoices, "What shape of hand do you want to be delt?  ");
-		addTab("Seat", null, p2_SeatChoice, "Seat Choice  -  Play or Defend  (Play recommended)  ");
+		addTab("Deals", null, p1_DealChoices, "What shape of hand do you want to be delt ?  ");
+		addTab("Bids", null, p5_Bidding, "Do you want to watch the bidding happen ?  ");
+		addTab("Seat", null, p2_SeatChoice, "Seat Choice  and  Watching the Bidding  -  Play or Defend  (Play recommended)  ");
 		addTab("AutoPlay", null, p3_AutoPlay, "Pause at end of trick  and  AutoPlay  options   ");
 		addTab("Start Up", null, p4_StartUp, "Start Up,  Button Display  and  Saved file Clean Up  options  ");
 		ToolTipManager.sharedInstance().setDismissDelay(12000);

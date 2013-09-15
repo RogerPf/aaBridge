@@ -28,9 +28,6 @@ class AaRopPrefs3_AutoPlay extends ClickPanel implements ItemListener {
 
 	private static final long serialVersionUID = 1L;
 
-	QLabel yourFinnLab;
-	QCheckBox yourFinnessesMostlyFail;
-
 	QLabel defSig;
 	ButtonGroup rbGroupSig = new ButtonGroup();
 	QRadioButton noSignal;
@@ -59,12 +56,7 @@ class AaRopPrefs3_AutoPlay extends ClickPanel implements ItemListener {
 		String rbInset = "gapx 7";
 
 		// @formatter:off
-		add(yourFinnLab  = new QLabel("Make YOUR finnesses mostly fail"), "gapy 8");
-		yourFinnLab.setForeground(Aaa.optionsTitleGreen);
-
-		add(yourFinnessesMostlyFail= new QCheckBox(this, App.yourFinnessesMostlyFail, "Make YOUR finnesses mostly fail - so you have to think harder  (applies to declarer play only)  "), "gapy 2, gapx 5");
-
-		add(defSig      = new QLabel("Defender Signaling  -  Defenders, when just following suit / discarding, will use a 'peter' HIGH then LOW to show ?"), "gapy 18");
+		add(defSig      = new QLabel("Defender Signaling  -  Defenders, when just following suit / discarding, will use a 'peter' HIGH then LOW to show ?"), "gapy 8");
 		defSig.setForeground(Aaa.optionsTitleGreen);
 		add(noSignal    = new QRadioButton(this, rbGroupSig,  App.defenderSignals == Zzz.NoSignals,     "NoSignal",     "Nothing -  defenders won't signal"), rbInset);
 		add(stdEvenCount= new QRadioButton(this, rbGroupSig,  App.defenderSignals == Zzz.StdEvenCount,  "StdEvenCount", "Std   -  an EVEN number in the suit EXCEPT Trumps when shows an ODD number.     Ten and above are not used to signal  "), rbInset);
@@ -87,7 +79,7 @@ class AaRopPrefs3_AutoPlay extends ClickPanel implements ItemListener {
 		alwaysShowHidden.setForeground(Aaa.heartsColor);
 		add(fillHandDisplay      = new QCheckBox(this, App.fillHandDisplay,  "Fill the hands with cards   -   for testing ONLY  "), " gapy 15");
 		add(runTestsAtStartUp    = new QCheckBox(this, App.runTestsAtStartUp,"Tests - Always run the tests at start up  "));
-		add(showTestsLogAtEnd    = new QCheckBox(this, App.showTestsLogAtEnd,"Show the test results file, once the tests have completed  "));
+//		add(showTestsLogAtEnd    = new QCheckBox(this, App.showTestsLogAtEnd,"Show the test results file, once the tests have completed  "));
 		// @formatter:on
 	}
 
@@ -98,11 +90,7 @@ class AaRopPrefs3_AutoPlay extends ClickPanel implements ItemListener {
 		Object source = e.getItemSelectable();
 
 		// @formatter:off
-		if (source == yourFinnessesMostlyFail) {
-			           App.yourFinnessesMostlyFail = b;
-		}
-		
-		else if (source == noSignal) {
+		if (source == noSignal) {
 			           App.defenderSignals = Zzz.NoSignals;
 		}
 		else if (source == stdEvenCount) {

@@ -10,6 +10,7 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.model;
 
+import java.awt.geom.RoundRectangle2D;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.Serializable;
@@ -23,8 +24,12 @@ public class Bid implements Serializable {
 	private static final long serialVersionUID = 6958033952065344529L;
 	public int level;
 	public int suit;
-	public boolean alert = false; // added in 1398 - 2013
+	public boolean alert = false; // added in 1398
+	public transient String alertText;
 	public transient char suitCh;
+	public transient RoundRectangle2D.Float rr2dBid = null;
+	public transient RoundRectangle2D.Float rr2dAlertText = null;
+	public transient boolean hover;
 
 	public Bid(int levelV, int suitV) {
 		assert (1 <= levelV && levelV <= 7);
@@ -33,6 +38,8 @@ public class Bid implements Serializable {
 		suit = suitV;
 		suitCh = (char) Zzz.suit_to_cdhsnCh[suit];
 		alert = false;
+		alertText = "";
+		hover = false;
 	}
 
 	public Bid(int c) {
@@ -40,6 +47,24 @@ public class Bid implements Serializable {
 		level = c;
 		suit = -1;
 		alert = false;
+		alertText = "";
+		hover = false;
+	}
+
+	public boolean isNullBid() {
+		return (suit == -1) && (level == Zzz.NULL_BID);
+	}
+
+	public boolean isPass() {
+		return (suit == -1) && (level == Zzz.PASS);
+	}
+
+	public boolean isDouble() {
+		return (suit == -1) && (level == Zzz.DOUBLE);
+	}
+
+	public boolean isReDouble() {
+		return (suit == -1) && (level == Zzz.REDOUBLE);
 	}
 
 	private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
@@ -107,13 +132,12 @@ public class Bid implements Serializable {
 
 	// --------------------------------
 	public boolean getAlert() {
-		return (isCall()) ? false : alert;
+		return alert;
 	}
 
 	// --------------------------------
 	public void setAlert(boolean halfBidAlert) {
-		if (isCall() == false)
-			alert = halfBidAlert;
+		alert = halfBidAlert;
 	}
 
 	public char getSuitCh() {
@@ -127,6 +151,11 @@ public class Bid implements Serializable {
 	// --------------------------------
 	public String toString() {
 		return (isCall() == false) ? getLevelSt() + getSuitSt() : Zzz.call_to_string[level];
+	}
+
+	// --------------------------------
+	public String toStringForLin() {
+		return (isCall() == false) ? getLevelSt() + Zzz.suit_to_cdhsnSt[suit] : Zzz.call_to_string_lin[level];
 	}
 
 	/**

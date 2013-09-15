@@ -30,7 +30,7 @@ public class AaHelp extends JFrame {
 
 	AaHelp() {
 //		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setTitle("Help for aaBridge    " + VersionAndBuilt.all());
+		setTitle("Help for aaBridge  " + VersionAndBuilt.verAndBuildNo());
 		java.net.URL imageFileURL = AaOuterFrame.class.getResource("aaBridge_proto_icon.png");
 		setIconImage(Toolkit.getDefaultToolkit().createImage(imageFileURL));
 

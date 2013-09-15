@@ -165,7 +165,12 @@ public class RpfResizeButton extends JButton implements MouseListener {
 		g2.setFont(font.deriveFont(getHeight() * fontToHeightRatio));
 		g2.setColor(fgColor);
 
-		Aaa.drawCenteredString(g2, getText(), 0, 0, getWidth(), getHeight());
+		int height = getHeight();
+		String text = getText();
+		char first = (text.length() > 0) ? text.charAt(0) : 0x00;
+		float nudgeUp = ((first == '>') || (first == '<')) ? - 0.04f * height * fontToHeightRatio : 0.0f;
+		
+		Aaa.drawCenteredString(g2, text, 0, nudgeUp, getWidth(), height);
 
 	}
 

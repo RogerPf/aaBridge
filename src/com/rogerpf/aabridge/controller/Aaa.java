@@ -71,6 +71,9 @@ public class Aaa {
 	public static final Color veryVeryWeedyYel = new Color(215, 200, 130);
 	public static final Color bidRequestLine   = new Color(255, 110, 255);
                         
+	public static final Color bubbleAnotateCol = new Color(182, 171, 223);
+	public static final Color bidAlertColor    = new Color(235, 225, 200);
+	public static final Color bidEmpAlertColor = new Color(215, 215, 180);
 	public static final Color biddingBkColor   = new Color(235, 225, 200);
 	public static final Color bidButsBkColor   = new Color(199, 230, 240);
  	public static final Color bidTableBkColor  = new Color(205, 230, 230);
@@ -84,10 +87,10 @@ public class Aaa {
 	public static final Color generalLightGray = new Color(203, 203, 203);
 	public static final Color handAreaOffWhite = new Color(245, 240, 240);
 	public static final Color handBkColorStd   = new Color(235, 230, 230);
-	public static final Color handBkColorDummy = new Color(220, 215, 215);
+	public static final Color handBkColorDummy = new Color(217, 213, 213);
 	public static final Color vunOffWhite      = new Color(245, 245, 245);
 	public static final Color youSeatBannerBk  = new Color(255, 230, 230);
-	public static final Color othersBannerBk   = new Color(235, 235, 235);
+	public static final Color othersBannerBk   = new Color(235, 233, 233);
 	public static final Color youSeatBannerTxt = new Color(205, 205, 205);
 	public static final Color othersBannerTxt  = new Color(205, 205, 205);
 	public static final Color scoreBkColor     = new Color(190, 210, 220);

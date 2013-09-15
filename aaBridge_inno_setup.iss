@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "aaBridge"
-#define MyAppVersion "1.0.7.1416"
+#define MyAppVersion "1.2.0.1628"
 #define MyAppPublisher "RogerPf.com"
 #define MyAppURL "http:/RogerPf.com/"
 #define MyAppExeName "aaBridge.exe"
@@ -36,6 +36,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 Source: "C:\a\aaBridge.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\c\e_wk\430_aaB\aaBridge\lin.ico"; DestDir: "{app}";
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
@@ -46,7 +47,7 @@ Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: 
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
 
 [Registry]
-Root: HKCR; Subkey: ".aaBridge"; ValueType: string; ValueName: ""; ValueData: "aabridge__rogerpf_com"; Flags: uninsdeletevalue 
-Root: HKCR; Subkey: "aabridge__rogerpf_com"; ValueType: string; ValueName: ""; ValueData: "aaBridge Deal"; Flags: uninsdeletekey 
-Root: HKCR; Subkey: "aabridge__rogerpf_com\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\aaBridge.exe,0" 
+Root: HKCR; Subkey: ".lin"; ValueType: string; ValueName: ""; ValueData: "aabridge__rogerpf_com"; Flags: uninsdeletevalue 
+Root: HKCR; Subkey: "aabridge__rogerpf_com"; ValueType: string; ValueName: ""; ValueData: "Bridge Movie"; Flags: uninsdeletekey 
+Root: HKCR; Subkey: "aabridge__rogerpf_com\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\lin.ico" 
 Root: HKCR; Subkey: "aabridge__rogerpf_com\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\aaBridge.exe"" ""%1""" 

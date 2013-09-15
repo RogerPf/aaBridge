@@ -36,17 +36,17 @@ public class Qstr_3rd {
 			 * we are NOT on lead but still want trumps to be drawn
 			 */
 
-			// is there a finnesse/positional play that we we should be taking NOW
+			// is there a finesse/positional play that we we should be taking NOW
 			if (g.suitLed == g.trumpSuit) {
 				if (g.haveTrumps && g.positionInTrick == g.positionInTrick) {
 					g.finMaDepth = Zzz.convertOutstandingToDepth(g.faTrumps.outstanding, g.secondPlayerFollowedSuit);
 					// lets make a silly exception
 					if (g.faTrumps.outstanding == 3 && g.faTrumps.myOrigFragLen == 5) {
-						g.finMaDepth = 2; // it would normally be 1 (a tripple finnesse has ? already succeeded - really!)
+						g.finMaDepth = 2; // it would normally be 1 (a tripple finesse has ? already succeeded - really!)
 					}
 
 					if (Play_Mpat.isPatternMatch(g, g.trumpSuit, g.positionInTrick, Zzz.MatchAsSelf)) {
-						stra.add(new StraStep(Strategy.PlayCard, "3rd in hand takes finnesse in trumps", g.mpatRtn.rankRel, g.trumpSuit, -1));
+						stra.add(new StraStep(Strategy.PlayCard, "3rd in hand takes finesse in trumps", g.mpatRtn.rankRel, g.trumpSuit, -1));
 						return;
 					}
 				}
@@ -57,7 +57,7 @@ public class Qstr_3rd {
 
 			// trumps were NOT led
 
-			// is there a finnesse/positional play that we might like to take - IF WE WERE THE LEADER ?
+			// is there a finesse/positional play that we might like to take - IF WE WERE THE LEADER ?
 			if (g.haveTrumps) {
 				if (Play_Mpat.isPatternMatch(g, g.trumpSuit, Zzz.Leader_Pos, Zzz.MatchAsSelf)) {
 					stra.add(new StraStep(Strategy.GetToHand, "", -1, -1, g.compass));
@@ -96,12 +96,12 @@ public class Qstr_3rd {
 
 		if (g.haveSuitLed) {
 			//
-			// Is there a finnesse/positional play that we we should be taking NOW
+			// Is there a finesse/positional play that we we should be taking NOW
 			//
 			g.finMaDepth = Zzz.convertOutstandingToDepth(g.faLed.outstanding, g.secondPlayerFollowedSuit);
 			// lets make a silly exception
 			if (g.faLed.outstanding == 3 && g.faLed.myOrigFragLen == 5) {
-				g.finMaDepth = 2; // it would normally be 1 (a tripple finnesse has ? already succeeded - really!)
+				g.finMaDepth = 2; // it would normally be 1 (a tripple finesse has ? already succeeded - really!)
 			}
 
 			Play_Mpat.isPatternMatch(g, g.suitLed, g.positionInTrick, Zzz.MatchAsSelf);
@@ -112,26 +112,26 @@ public class Qstr_3rd {
 					brk++; // put your breakpoint here
 				}
 				assert (card != null);
-				System.out.println(Zzz.compass_to_nesw_st_long[h.compass] + "  TakeFinnesse non trump  " + card);
-				stra.add(new StraStep(Strategy.PlayCard, "3rd(2/4) in hand takes finnesse (not trumnps)", g.mpatRtn.rankRel, g.suitLed, -1));
+				// System.out.println(Zzz.compass_to_nesw_st_long[h.compass] + "  TakeFinesse non trump  " + card);
+				stra.add(new StraStep(Strategy.PlayCard, "3rd(2/4) in hand takes finesse (not trumnps)", g.mpatRtn.rankRel, g.suitLed, -1));
 				return;
 			}
 		}
 
 		//
-		// Is there a finnesse/positional play that we might like to take - IF WE WERE THE LEADER ?
+		// Is there a finesse/positional play that we might like to take - IF WE WERE THE LEADER ?
 		//
 		for (FragAnal fa : g.fragAnals) {
 			// results are stored in fa[suit].mpatRtn
 			Play_Mpat.isPatternMatch(g, fa.suit, Zzz.Leader_Pos, Zzz.MatchAsSelf);
 		}
 		// now we can sort on this info
-		g.sort_finnesseSuitablity(0);
-		// well, do we have a good finnesse to take ?
+		g.sort_finesseSuitablity(0);
+		// well, do we have a good finesse to take ?
 		{
 			FragAnal fa = g.fragAnals[0];
 			if (fa.mpatRtn.rating > 0) {
-				System.out.println(Zzz.compass_to_nesw_st_long[h.compass] + "  Get To Hand, try to win");
+				// System.out.println(Zzz.compass_to_nesw_st_long[h.compass] + "  Get To Hand, try to win");
 				stra.add(new StraStep(Strategy.GetToHand, "", -1, -1, g.compass));
 				return;
 			}
@@ -145,8 +145,8 @@ public class Qstr_3rd {
 			Play_Mpat.isPatternMatch(g, fa.suit, Zzz.Leader_Pos, Zzz.MatchAsPartner);
 		}
 		// now we can sort on this info
-		g.sort_finnesseSuitablity(1);
-		// well, do we have a good finnesse to take ?
+		g.sort_finesseSuitablity(1);
+		// well, do we have a good finesse to take ?
 		{
 			FragAnal fa = g.fragAnals[0];
 			if (fa.mpatRtn.rating > 0) {

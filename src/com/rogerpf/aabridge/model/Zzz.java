@@ -73,6 +73,7 @@ public class Zzz {
 
 	public final static String[] call_to_string         = { "-", "Pass", "Dbl", "ReDbl" };
 	public final static String[] call_to_string_short   = { "",  "P", "*", "**" };
+	public final static String[] call_to_string_lin     = { "",  "p", "d", "r" };
 	public final static char[]   suit_to_cdhsnCh        = { 'C', 'D', 'H', 'S', 'N' };
 	public final static String[] suit_to_cdhsnSt        = { "C", "D", "H", "S", "N" };
 	public final static String[] suit_to_cdhsnStLong    = { "Clubs", "Diamonds", "Hearts", "Spades", "No_Trumps" };
@@ -156,6 +157,18 @@ public class Zzz {
 
 	/**   
 	 */
+	public static int charToCompass(char c) {
+		switch (c) {
+			case 'N': case 'n': return Zzz.North;
+			case 'E': case 'e': return Zzz.East;
+			case 'S': case 's': return Zzz.South;
+			case 'W': case 'w': return Zzz.West;
+		}
+		return Zzz.North;
+	}
+	
+	/**   
+	 */
 	public static String neswToString(char c) {
 		switch (c) {
 			case 'N': case 'n': return "North";
@@ -165,6 +178,7 @@ public class Zzz {
 		}
 		return c + "";
 	}
+	
 	/**   
 	 */
 	public static int rankChToRank(char c) {

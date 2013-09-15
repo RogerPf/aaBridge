@@ -61,7 +61,7 @@ public class Strategy extends ArrayList<StraStep> {
 	public static final String RunSuit = "RunSuit";
 	public static final String RunTopTricksInSuit = "RunTopTricksInSuit";
 	public static final String GetToHand = "GetToHand";
-	public static final String TakeFinnesse = "TakeFinnesse";
+	public static final String TakeFinesse = "TakeFinesse";
 	public static final String PlayGivenCard = "PlayGivenCard";
 
 	public Deal getEmdeddedDeal() {
@@ -115,9 +115,9 @@ public class Strategy extends ArrayList<StraStep> {
 //			assert (d.countCardsPlayed() == 0);
 //		}
 
-		String s = (d.testId == 0) ? "" : "test_" + d.testId + "  ";
-		System.out.println(s + "Strategy Created  " + d.countCardsPlayed() + "  " + Zzz.axis_st[h.axis()] + "  Tk " + (d.countCardsPlayed() / 4 + 1) + " "
-				+ Zzz.playOrd_st[d.countCardsPlayed() % 4]);
+		// String s = (d.testId == 0) ? "" : "test_" + d.testId + "  ";
+		// System.out.println(s + "Strategy Created  " + d.countCardsPlayed() + "  " + Zzz.axis_st[h.axis()] + "  Tk " + (d.countCardsPlayed() / 4 + 1) + " "
+		// + Zzz.playOrd_st[d.countCardsPlayed() % 4]);
 
 		if (h.axis() == d.contractAxis()) {
 			// This is INITIAL declarer strategy **********
@@ -147,9 +147,9 @@ public class Strategy extends ArrayList<StraStep> {
 
 		Gather g = new Gather(h, dumbAutoDir, /* strategyCreated */true);
 
-		String s = (d.testId == 0) ? "" : "test_" + d.testId + " ";
-		System.out.println(s + "Strgy Upd  Tk " + (d.countCardsPlayed() / 4) + "  " + Zzz.compass_to_nesw_st[h.compass] + " "
-				+ Zzz.playOrd_st[d.countCardsPlayed() % 4]);
+		// String s = (d.testId == 0) ? "" : "test_" + d.testId + " ";
+		// System.out.println(s + "Strgy Upd  Tk " + (d.countCardsPlayed() / 4) + "  " + Zzz.compass_to_nesw_st[h.compass] + " "
+		// + Zzz.playOrd_st[d.countCardsPlayed() % 4]);
 
 		if (h.axis() != d.contractAxis())
 			return g; // for now we just want the declarer side

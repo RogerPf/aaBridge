@@ -77,7 +77,7 @@ public class Rlay_2nd {
 				}
 
 				if (card == null) {
-					if (App.yourFinnessesMostlyFail && g.pnFragLed.size() > 0) {
+					if (App.yourFinessesMostlyFail && g.pnFragLed.size() > 0) {
 						// if we are in a finessing situaton we can duck this one
 						Card myBest = g.fragLed.get(0);
 						if ((myBest.rank > g.bestCard.rank) && (myBest.rank < g.LHO.frags[g.suitLed].get(0).rank))

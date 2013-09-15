@@ -1,7 +1,7 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>C:\a\aaBridge_1.0.7.1416.jar</jar>
+  <jar>C:\a\aaBridge_1.2.0.1628.jar</jar>
   <outfile>C:\a\aaBridge.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
@@ -20,12 +20,12 @@
     <jdkPreference>preferJre</jdkPreference>
   </jre>
   <versionInfo>
-    <fileVersion>1.0.7.1416</fileVersion>
-    <txtFileVersion>1.0.7.1416</txtFileVersion>
-    <fileDescription>Bridge Card Playing Program</fileDescription>
+    <fileVersion>1.2.0.1628</fileVersion>
+    <txtFileVersion>1.2.0.1628</txtFileVersion>
+    <fileDescription>aaBridge.exe - .lin file player</fileDescription>
     <copyright>(c) 2013 Roger Pfister</copyright>
-    <productVersion>1.0.7.1416</productVersion>
-    <txtProductVersion>1.0.7.1416</txtProductVersion>
+    <productVersion>1.2.0.1628</productVersion>
+    <txtProductVersion>1.2.0.1628</txtProductVersion>
     <productName>aaBridge</productName>
     <companyName></companyName>
     <internalName>aaBridge</internalName>

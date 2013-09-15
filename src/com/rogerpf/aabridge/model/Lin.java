@@ -1,6 +1,7 @@
 package com.rogerpf.aabridge.model;
 
 import java.awt.Point;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -100,6 +101,15 @@ public class Lin extends ArrayList<Deal> {
 				}
 			}
 		}
+
+		int qxCount = 0;
+		for (BarBlock bb : bbAy) {
+			if (bb.type.contentEquals("qx")) {
+				qxCount++;
+			}
+		}
+		boolean multiDealLin = (qxCount > 1);
+
 		/**
 		 *  qx appears to be the main 'new hand' marker  we add an extra one
 		 *   to force the final deal to be saved more easily
@@ -119,7 +129,16 @@ public class Lin extends ArrayList<Deal> {
 		Deal deal = null;
 		String qxText = "";
 
-		for (BarBlock bb : bbAy) {
+		boolean skipToNext_qx = false;
+
+		int bbAySize = bbAy.size();
+		for (int bbInd = 0; bbInd < bbAySize; bbInd++) {
+
+			BarBlock bb = bbAy.get(bbInd);
+			BarBlock bbNext = (bbInd + 1 < bbAySize) ? bbAy.get(bbInd + 1) : bbAy.get(0) /* any valid bb */;
+
+			if (skipToNext_qx && !bb.type.contentEquals("qx"))
+				continue;
 
 			if (bb.type.contentEquals("vg")) { // vg => view graph ?
 				if (bb.size() >= 8) {
@@ -179,14 +198,15 @@ public class Lin extends ArrayList<Deal> {
 			}
 
 			if (bb.type.contentEquals("qx")) { // qx => who knows? shows start end of hand
+				skipToNext_qx = false;
 				dealCount++;
 
 				if (deal != null) {
 					/**  here we all all the final values for the actual Deal - before we 
 					 *   then go and and read in all the values for the next deal
 					 */
-					if (deal.isPlaying() || deal.isFinished()) {
-						deal.youSeatHint = deal.contractCompass; // override the original
+					if (!deal.youSeatInLoadedLin && !deal.isBidding()) {
+						deal.youSeatHint = deal.contractCompass; // override the simple default of South
 					}
 
 					if (madeClaim != null && madeClaim.size() > 0) {
@@ -258,7 +278,12 @@ public class Lin extends ArrayList<Deal> {
 
 					deal.lastSavedAsPathWithSep = fileIn.getParent() + File.separator;
 					String sFile = fileIn.getName();
-					deal.lastSavedAsFilename = sFile.substring(0, sFile.lastIndexOf('.')) + "_hand_" + sHandNo + "  " + deal.description + "  " + dotExt;
+
+					String s = sFile.substring(0, sFile.lastIndexOf('.'));
+					if (multiDealLin) {
+						s += " hand " + sHandNo + "  " + deal.description;
+					}
+					deal.lastSavedAsFilename = s + dotExt;
 
 					add(deal); // DONE - deal is now complete
 
@@ -276,14 +301,19 @@ public class Lin extends ArrayList<Deal> {
 
 			if (bb.type.contentEquals("md")) { // md => maKe deal ?
 
+				if ((bb.size() != 3) && (bb.size() != 4)) { // we must have 3 or 4 hands
+					// lin_bp();
+					// throw new IOException();
+					// BBO can produce such files if there are less than three players at the moment of dealing
+					// at the table
+					skipToNext_qx = true;
+					dealCount--;
+					continue;
+				}
+
 				/************************************/
 				deal = new Deal("", Zzz.South); // Zzz.South will be overriden if/when we know the declarer
 				/************************************/
-
-				if (bb.size() != 4) { // we must have 4 hands
-					lin_bp();
-					throw new IOException();
-				}
 
 				Cal packPristCopy = deal.packPristine;
 
@@ -295,7 +325,7 @@ public class Lin extends ArrayList<Deal> {
 					for (int j = 0; j < hs.length(); j++) {
 						char c = hs.charAt(j);
 						if (i == 0 && j == 0 && '1' <= c && c <= '4') {
-							dealer = ((c - '0') + 1) % 4; // lin '1'=South, '4'=East, aaBridge 2=South, 0=North
+							dealer = ((c - '0') + 1) % 4; // for lin '1'=South, '4'=East, aaBridge internal 2=South, 0=North
 							deal.setDealer(dealer);
 							deal.setPlayerNames((dealCount % 2 == 0 ? playerNamesOpen : playerNamesClosed));
 							if (dealCount == 6) {
@@ -325,7 +355,7 @@ public class Lin extends ArrayList<Deal> {
 						hand.fOrgs[suit].addDeltCard(card);
 						hand.frags[suit].addDeltCard(card);
 
-						System.out.println(hand + " " + card + "  ");
+						// System.out.println(hand + " " + card + "  ");
 					}
 				}
 
@@ -358,15 +388,15 @@ public class Lin extends ArrayList<Deal> {
 					if (c == '-')
 						continue;
 					if (c == 'p') {
-						deal.makeBid(deal.PASS);
+						deal.makeBid(prevBid = new Bid(Zzz.PASS));
 						continue;
 					}
 					if (c == 'd') {
-						deal.makeBid(deal.DOUBLE);
+						deal.makeBid(prevBid = new Bid(Zzz.DOUBLE));
 						continue;
 					}
 					if (c == 'r') {
-						deal.makeBid(deal.REDOUBLE);
+						deal.makeBid(prevBid = new Bid(Zzz.REDOUBLE));
 						continue;
 					}
 					if ('1' <= c && c <= '7') {
@@ -394,11 +424,15 @@ public class Lin extends ArrayList<Deal> {
 					}
 					prevBid = new Bid(level, suit);
 
-					System.out.println(deal.getNextHandToBid() + " " + prevBid + "  ");
+					// System.out.println(deal.getNextHandToBid() + " " + prevBid + "  ");
 
 					deal.makeBid(prevBid);
 					level = -1;
 					suit = -1;
+				}
+				if (prevBid != null && bbNext.type.contentEquals("an") && bbNext.size() == 1) { // anouncement ?
+					prevBid.alert = true;
+					prevBid.alertText = bbNext.get(0);
 				}
 
 				continue;
@@ -451,6 +485,52 @@ public class Lin extends ArrayList<Deal> {
 				deal.rotateDealerAndVunerability(0); // NOTE - rotation is zero so just gets correct board no.
 				continue;
 			}
+
+			if (bb.type.contentEquals("kp")) { // kp => kibitz player RPf invention !!!!!!!!!!
+
+				if ((bb.size() != 1) || (bb.get(0).length() != 1)) { // we should have 1 and only one entry
+					lin_bp();
+					// throw new IOException();
+					continue; // just ignore it as we 'invented' it
+				}
+
+				deal.youSeatInLoadedLin = true;
+				deal.youSeatHint = Zzz.South;
+
+				// @formatter:off
+				char ch = bb.get(0).charAt(0);
+				switch (ch) {
+					case 'N': case 'n':
+					case 'S': case 's':
+					case 'E': case 'e':
+					case 'W': case 'w': 
+						deal.youSeatHint = Zzz.charToCompass(ch);
+				}
+				// @formatter:on
+				continue;
+			}
+
+			if (bb.type.contentEquals("pg")) { // pg => page which we currently ignore
+				continue;
+			}
+
+			if (bb.type.contentEquals("st")) { // st => single table we currently ignore
+				continue;
+			}
+
+			if (bb.type.contentEquals("an")) { // an => anotation (on a bid only?)
+				continue;
+			}
+
+			if (bb.type.contentEquals("ah")) { // ah => (alphabetic?) Board header
+				continue;
+			}
+
+			if (bb.type.contentEquals("rh")) { // rh => appears to be always null
+				continue;
+			}
+
+			System.out.println("Unknown lin code: " + bb.type);
 		}
 
 		if (size() == 0) { // if there are no deals then this lin is (for us) counted as being invalid
@@ -461,4 +541,65 @@ public class Lin extends ArrayList<Deal> {
 		@SuppressWarnings("unused")
 		int x = 0; // put your breakpoint here
 	}
+
+	static public void saveDealAsSingleLinFile(Deal deal, BufferedWriter w) throws IOException {
+		// ===================================================================================
+		String unixEOL = "" + (char) 0x0a; // works either way but lets pick one that is ultra common
+
+		w.write("pn|");
+		for (Hand hand : deal.rota[Zzz.South]) {
+			w.write(hand.playerName);
+			if (hand.compass != Zzz.East)
+				w.write(",");
+		}
+		w.write("|");
+		w.write(unixEOL);
+
+		w.write("st||md|"); // st => single table ?? who knows md => make deal ?
+
+		// now as the **** first character of the South hand defintion **** we write the dealer id
+		// for lin '1'=South, '4'=East, aaBridge internal 2=South, 1=East
+
+		w.write("" + (char) (((deal.dealer + 2) % 4 + 1 + '0')));
+
+		// write out the first three hands leaving East's to be deduced
+		for (Hand hand : deal.rota[Zzz.South]) {
+			if (hand.compass == Zzz.East)
+				break;
+			w.write(hand.cardsForLinSave());
+			w.write(",");
+		}
+		w.write("|");
+		w.write(unixEOL);
+
+		w.write("rh||ah|Board " + deal.boardNo + "|");
+
+		// sv => side vunerability
+		w.write("sv|");
+
+		if (deal.vunerability[Zzz.NS] && deal.vunerability[Zzz.EW])
+			w.write("b|");
+		else if (deal.vunerability[Zzz.NS])
+			w.write("n|");
+		else if (deal.vunerability[Zzz.EW])
+			w.write("e|");
+		else
+			w.write("e|");
+
+		// Add the bidding
+
+		w.write(deal.bidsForLinSave());
+		w.write(unixEOL);
+
+		// Add the card play
+
+		w.write(deal.cardPlayForLinSave());
+		// adds its own unixEOL // w.write(unixEOL);
+
+		// kp => Kibitz Player is an RPf extension - of course someone else may have also used it - eeek
+		w.write("kp|" + Zzz.compass_to_nesw_st[deal.youSeatHint].toLowerCase() + "|");
+		w.write(unixEOL);
+
+	}
+
 }

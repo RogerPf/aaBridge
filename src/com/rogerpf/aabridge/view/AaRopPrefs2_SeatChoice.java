@@ -28,12 +28,7 @@ class AaRopPrefs2_SeatChoice extends ClickPanel implements ItemListener {
 
 	private static final long serialVersionUID = 1L;
 
-	QLabel newDealsLabel;
 	QLabel watchLabel;
-	ButtonGroup rbGroupBids = new ButtonGroup();
-	QRadioButton biddingShow;
-	QRadioButton biddingHide;
-
 	QLabel changeLabel;
 
 	QLabel whichSeatNew;
@@ -43,6 +38,10 @@ class AaRopPrefs2_SeatChoice extends ClickPanel implements ItemListener {
 	QRadioButton westNew;
 
 	QLabel existingDealsLabel;
+
+	ButtonGroup rbRespectLinYou = new ButtonGroup();
+	QRadioButton useLinYou;
+	QRadioButton overrideLinYou;
 
 	QLabel whichSeatLin;
 	ButtonGroup rbGroupSeatLin = new ButtonGroup();
@@ -60,21 +59,19 @@ class AaRopPrefs2_SeatChoice extends ClickPanel implements ItemListener {
 	QRadioButton showFinAsFinished;
 	QRadioButton showFinReview;
 
+	QLabel unFinLabel;
+	ButtonGroup rbGroupUnFin = new ButtonGroup();
+	QRadioButton showUnFinAsPlay;
+	QRadioButton showUnFinReview;
+
 	public AaRopPrefs2_SeatChoice() {
 		setLayout(new MigLayout("insets 0 0 0 0, gap 0! 0!, flowy", "[][]", "[][]"));
 
 		String rbInset = "gapx 7";
 
-		// @formatter:off		
-		add(newDealsLabel  = new QLabel("For   NEW    deals ...  "), "gapy 8");
-		newDealsLabel.setForeground(Aaa.optionsTitleGreen);
+		// @formatter:off
 
-		add(watchLabel  = new QLabel("  Watch the Bidding?  -  Do you want to watch the bidding happen?  -  This is for NEW deals   "), "gapy 8");
-		watchLabel.setForeground(Aaa.optionsTitleGreen);
-		add(biddingShow = new QRadioButton(this, rbGroupBids,  App.watchBidding, "biddingShow", "Yes - show the bidding  "), rbInset);
-		add(biddingHide = new QRadioButton(this, rbGroupBids, !App.watchBidding, "biddingHide", "No - go straight to the play  "), rbInset);
-		
-		add(whichSeatNew   = new QLabel("  Which Seat is You?  -  Declarer (recommended) or defend sitting East / West  -  This is for NEW deals   "), "gapy 12");
+		add(whichSeatNew   = new QLabel("For  NEW  deals - Which Seat is You?  -  Declarer (recommended) or defend sitting East / West  -  This is for NEW deals   "), "gapy 8");
 		whichSeatNew.setForeground(Aaa.optionsTitleGreen);
 		
 		boolean eastVal  = (App.youSeatForNewDeal == Zzz.East);
@@ -85,32 +82,37 @@ class AaRopPrefs2_SeatChoice extends ClickPanel implements ItemListener {
 		add(eastNew        = new QRadioButton(this, rbGroupSeatNew,  eastVal,  "east",  "East"), "flowy");
 		add(southNew       = new QRadioButton(this, rbGroupSeatNew,  southVal, "south", "South  (Declarer)"), "gapx 37");
 
-		add(changeLabel   = new QLabel("You can change the  'YOU Seat'  at ANY TIME by clicking on that hands compass banner area "), "gapy 12");
+		add(changeLabel    = new QLabel("You can change the  'You Seat'  at ANY TIME by clicking on that hands compass banner area  "), "gapy 12");
 		changeLabel.setForeground(Aaa.heartsColor);
 
-		add(whichSeatLin  = new QLabel("For  '.lin'  files.     Which Seat is You?  "), "gapy 15");
-		whichSeatLin.setForeground(Aaa.optionsTitleGreen);
+		add(watchLabel     = new QLabel("When loading  existing  deals  -  Which Seat is You?  "), "gapy 12");
+		watchLabel.setForeground(Aaa.optionsTitleGreen);
+		add(useLinYou      = new QRadioButton(this, rbRespectLinYou, !App.respectLinYou, "useLinYou", "Use the  'You Seat'  set in the deal  (if any)   use for preset bridge problems"), rbInset);
+		add(overrideLinYou = new QRadioButton(this, rbRespectLinYou,  App.respectLinYou, "overrideLinYou", "Use the  'You Seat'  set below"), rbInset);
 
 		boolean eastValLin  = (App.youSeatForLinDeal == Zzz.East);
 		boolean westValLin  = (App.youSeatForLinDeal == Zzz.West);
 		boolean southValLin = !(eastValLin || westValLin);
 		
-		add(westLin        = new QRadioButton(this, rbGroupSeatLin,  westValLin,  "LHO  ",  "LHO"), "split2, gapx 5, flowx");
+		add(westLin        = new QRadioButton(this, rbGroupSeatLin,  westValLin,  "LHO  ",  "LHO"), "split2, gapx 3, flowx");
 		add(eastLin        = new QRadioButton(this, rbGroupSeatLin,  eastValLin,  "RHO",  "RHO"), "flowy");
-		add(southLin       = new QRadioButton(this, rbGroupSeatLin,  southValLin, "Declarer", "Declarer"), "gapx 37");
+		add(southLin       = new QRadioButton(this, rbGroupSeatLin,  southValLin, "Declarer", "Declarer"), "gapx 35");
 
-		add(watchLabel  = new QLabel("When loading existing deals the  'South'  seat should have ?   "), "gapy 12");
+		add(watchLabel     = new QLabel("When loading  existing  deals  -  the bottom (South) seat should be ?   "), "gapy 12");
 		watchLabel.setForeground(Aaa.optionsTitleGreen);
-		add(oldSouthSouth = new QRadioButton(this, rbGroupOldSouth,  !App.putDeclarerSouth, "oldSouthSouth", "Actual South hand  "), rbInset);
+		add(oldSouthSouth  = new QRadioButton(this, rbGroupOldSouth,  !App.putDeclarerSouth, "oldSouthSouth", "Actual South hand  "), rbInset);
 		add(oldSouthDeclarer = new QRadioButton(this, rbGroupOldSouth, App.putDeclarerSouth, "oldSouthDeclarer", "Declarer  "), rbInset);
 
-		add(finLabel  = new QLabel("When loading  'Finished'  deals   "), "gapy 12");
+		add(finLabel  = new QLabel("When loading existing  finished  deals -  "), "gapy 12");
 		finLabel.setForeground(Aaa.optionsTitleGreen);
-		add(showFinAsFinished = new QRadioButton(this, rbGroupFin,  !App.showOldFinAsReview, "showFinAsFinished", "Show as Finished  -  all 4 hands visible  "), rbInset);
-		add(showFinReview = new QRadioButton(this, rbGroupFin, App.showOldFinAsReview, "showFinReview", "Show in Review Mode  -  opps hands hidden  (any  'lin file'  results are also not shown)  "), rbInset);
+		add(showFinAsFinished = new QRadioButton(this, rbGroupFin,  !App.showFinAsReview, "showFinAsFinished", "Show as Finished  -  all 4 hands visible   (normal)"), rbInset);
+		add(showFinReview     = new QRadioButton(this, rbGroupFin, App.showFinAsReview, "showFinReview", "Show in Review Mode  -  opps hands hidden  (any  'lin file'  results are also not shown)  "), rbInset);
 
-		//		add(existingDealsLabel  = new QLabel("For   Existing    deals ...  "), "gapy 15");
-//		existingDealsLabel.setForeground(Aaa.optionsTitleGreen);
+		add(unFinLabel  = new QLabel("When loading existing  Un-finished  deals -  "), "gapy 25");
+		unFinLabel.setForeground(Aaa.optionsTitleGreen);
+		add(showUnFinAsPlay   = new QRadioButton(this, rbGroupUnFin,  !App.showUnFinAsReview, "showUnFinAsPlay", "Show in Play / Bidding mode   (normal)  "), rbInset);
+		add(showUnFinReview   = new QRadioButton(this, rbGroupUnFin, App.showUnFinAsReview, "showUnFinReview", "Show in Review Mode  -  opps hands hidden  "), rbInset);
+
 
 		// @formatter:on
 	}
@@ -125,12 +127,6 @@ class AaRopPrefs2_SeatChoice extends ClickPanel implements ItemListener {
 		if (b == false) {
 			; // do nothing
 		}
-		else if (source == biddingShow) {
-			App.watchBidding = true;
-		}
-		else if (source == biddingHide) {
-			App.watchBidding = false;
-		}
 
 		else if (source == southNew) {
 			App.youSeatForNewDeal = Zzz.South;
@@ -140,6 +136,13 @@ class AaRopPrefs2_SeatChoice extends ClickPanel implements ItemListener {
 		}
 		else if (source == eastNew) {
 			App.youSeatForNewDeal = Zzz.East;
+		}
+
+		else if (source == useLinYou) {
+			App.respectLinYou = true;
+		}
+		else if (source == overrideLinYou) {
+			App.respectLinYou = false;
 		}
 
 		else if (source == southLin) {
@@ -160,10 +163,17 @@ class AaRopPrefs2_SeatChoice extends ClickPanel implements ItemListener {
 		}
 
 		else if (source == showFinAsFinished) {
-			App.showOldFinAsReview = false;
+			App.showFinAsReview = false;
 		}
 		else if (source == showFinReview) {
-			App.showOldFinAsReview = true;
+			App.showFinAsReview = true;
+		}
+
+		else if (source == showUnFinAsPlay) {
+			App.showUnFinAsReview = false;
+		}
+		else if (source == showUnFinReview) {
+			App.showUnFinAsReview = true;
 		}
 
 		if (App.allConstructionComplete) {

@@ -760,4 +760,18 @@ public class Hand implements Serializable, Comparable<Hand> {
 		return card;
 	}
 
+	public String cardsForLinSave() {
+		// ==============================================================================================
+		String s = "";
+		for (int i : Zzz.shdc) {
+			s += Zzz.suit_to_cdhsnSt[i];
+			Frag fOrg = fOrgs[i];
+			int sl = fOrg.size();
+			for (int j = sl - 1; j >= 0; j--) {
+				s += fOrg.get(j).getRankSt();
+			}
+		}
+		return s;
+	}
+
 }

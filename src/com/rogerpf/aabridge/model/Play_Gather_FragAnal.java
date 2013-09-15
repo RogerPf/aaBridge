@@ -74,9 +74,9 @@ class Gather {
 		Arrays.sort(fragAnals);
 	}
 	
-	public void sort_finnesseSuitablity(int who) {
+	public void sort_finesseSuitablity(int who) {
 		for (FragAnal fa : fragAnals) {
-			fa.calc_finnesseSuitablity(who);
+			fa.calc_finesseSuitablity(who);
 		}
 		Arrays.sort(fragAnals);
 	}
@@ -175,7 +175,7 @@ class Gather {
 	int      pnHighestOfLedRank;
 	int      debug_suit = -1;
 	
-	int      finMaDepth = 9; // used by Finnesse paternMatching to pass down the finesse depth param, 9 means there will be no limit
+	int      finMaDepth = 9; // used by Finesse paternMatching to pass down the finesse depth param, 9 means there will be no limit
 
 
 
@@ -586,7 +586,7 @@ class FragAnal implements Comparable<FragAnal> {
 
 	/**
 	 */
-	public int calc_finnesseSuitablity(int who) { // 0 = me, 1 = partner
+	public int calc_finesseSuitablity(int who) { // 0 = me, 1 = partner
 		// ==============================================================================================
 		MpatRtn rtn = mpatRtn;
 		// @ formatter:off

@@ -12,12 +12,12 @@ package com.rogerpf.aabridge.controller;
 
 import java.awt.Desktop;
 import java.awt.Dimension;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.OutputStreamWriter;
 import java.lang.reflect.InvocationTargetException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -44,20 +44,16 @@ public final class CmdHandler {
 		// ==============================================================================================
 		// @formatter:off
 		//             "openAutoSavesFolder" entry EXISTS but not as a button
-		//             "openQuickSavesFolder" entry EXISTS but not as a button
 		//             "openSavesFolder" entry EXISTS but not as a button
-		//             "menuOpen"        entry EXISTS but not as a button
-		//             "menuSave"        entry EXISTS but not as a button
-		//             "menuSaveAs"      entry EXISTS but not as a button
 		//             "runTests"        entry EXISTS but not as a button
 		//             "nullCommand"     entry EXISTS but not as a button
-		new RpfBtnDef( "menuQuickSave",				"Quick Save",		"Saves the deal to the 'saves' folder, using the current time and date in the file name.  "),
-		new RpfBtnDef( "menuEasySave",				"Easy Save",		"Does a Save using the filename you set with 'Save As'  "),
+		new RpfBtnDef( "menuSaveStd",				"Save",				"Does a standard Save, offering you a file name if one has not been set.  ALWAYS automaticaly overwrites an older file  "),
+		new RpfBtnDef( "menuSaveAs",				"Save As",			"Saves the deal, you always get a chance to set or change the filename  "),
 		new RpfBtnDef( "menuPlayWipe",				"Wipe",				"If the deal is finished then it 'undoes' the final two tricks - otherwise, all the card play is wiped so you can play the deal again.  (Does an AutoSave first)  "),
 
 		new RpfBtnDef( "mainAnti",					"<",				"Rotate the seats Anti-clockwise  "),
 		new RpfBtnDef( "mainClock",					">",				"Rotate the seats Clockwise  "),
-		new RpfBtnDef( "editPlay2",					"Set Pl",				"Set the Play - Jump straight to 'Set the Play' mode, normally got to via 'Review', 'Edit' and 'Set the Play'  "),
+		new RpfBtnDef( "editPlay2",					"Set Play",			"Set the Play - Jump straight to 'Set the Play' mode, normally got to via 'Review', 'Edit' and 'Set the Play'  "),
 		new RpfBtnDef( "claimBtn",					"Claim",			"Claim  -  Claim as many of the remaining tricks as you wish.  Your claim we be accepted and not tested.  "),
 		new RpfBtnDef( "mainUndo",					"Undo",				""),
 		new RpfBtnDef( "mainNextBoard",				"Next Board",		"Discard the existing hands, shuffle and deal the next board  (always does and AutoSave first)  "),
@@ -65,7 +61,7 @@ public final class CmdHandler {
                                                                         
 		new RpfBtnDef( "reviewBidding",				"Bidding",			"Review the Bidding  "), 
  		new RpfBtnDef( "reviewBackToStartOfPlay",	"<<<",				"Rewind to the start of play  "),
- 		new RpfBtnDef( "reviewFwdToEndOfPlay",  	">>>",				"Jump forward the end of play  "),
+ 		new RpfBtnDef( "reviewFwdToEndOfPlay",  	">>>",				"Jump forward to the end of play  "),
 		new RpfBtnDef( "reviewBackOneTrick",		"<<",				"Jump back one trick  "),
 		new RpfBtnDef( "reviewFwdOneTrick",			">>",				"Jump forward one trick  "),
 		new RpfBtnDef( "reviewFwdShowOneTrick",		"Play 1",			"Play Forward 1 trick showing each card being played  "),
@@ -240,7 +236,7 @@ public final class CmdHandler {
 	 */
 	static void mainNextBoard() {
 		// ==============================================================================================
-		quickSaveOrAutoSave(true /* useAutoFolder */);
+		doAutoSave();
 
 		App.switchToNewLin(null);
 
@@ -270,8 +266,8 @@ public final class CmdHandler {
 	static void setFcPreferredSize(JFileChooser fc) {
 		// ==============================================================================================
 		Dimension wh = App.frame.getSize();
-		wh.width = (wh.width * 95) / 100;
-		wh.height = (wh.height * 80) / 100;
+		wh.width = (wh.width * 85) / 100;
+		wh.height = (wh.height * 70) / 100;
 		fc.setPreferredSize(wh);
 	}
 
@@ -281,16 +277,6 @@ public final class CmdHandler {
 		// ==============================================================================================
 		try {
 			Desktop.getDesktop().open(new File(App.autoSavesPath));
-		} catch (IOException e) {
-		}
-	}
-
-	/**   
-	 */
-	static void openQuickSavesFolder() {
-		// ==============================================================================================
-		try {
-			Desktop.getDesktop().open(new File(App.quickSavesPath));
 		} catch (IOException e) {
 		}
 	}
@@ -330,7 +316,7 @@ public final class CmdHandler {
 //	static void menuOpen() {
 //		// ==============================================================================================
 //		JFileChooser fc = new JFileChooser();
-//		fc.setFileFilter(new FileNameExtensionFilter("aabridge Deals", App.dealExt));
+//		fc.setFileFilter(new FileNameExtensionFilter("aabridge Deals", App.linExt));
 //		fc.setCurrentDirectory(new File(App.savesPath));
 //		setFcPreferredSize(fc);
 //
@@ -341,7 +327,7 @@ public final class CmdHandler {
 //				pathWithSep += File.separator;
 //			}
 //			
-//			CmdHandler.quickSaveOrAutoSave(true /* useAutoFolder */);
+//			CmdHandler.doAutoSave();
 //			readFileIfExists(pathWithSep, fc.getSelectedFile().getName());
 //		}
 //
@@ -354,63 +340,11 @@ public final class CmdHandler {
 
 		String s = (pathWithSep + dealName).toLowerCase();
 
-		if (s.endsWith(App.dotAaBridgeExt.toLowerCase())) {
-			return readAaBridgeFileIfExists(pathWithSep, dealName);
-		}
-
 		if (s.endsWith(App.dotLinExt.toLowerCase())) {
 			return readLinFileIfExists(pathWithSep, dealName);
 		}
 
 		return false;
-	}
-
-	/**   
-	 */
-	public static boolean readAaBridgeFileIfExists(String pathWithSep, String dealName) {
-		// ==============================================================================================
-		Deal d = null;
-
-		if (pathWithSep == null || pathWithSep.contentEquals("")) {
-			pathWithSep = App.savesPath;
-		}
-
-		File fileIn = new File(pathWithSep + dealName);
-		if (!fileIn.exists()) {
-			return false;
-		}
-
-		try {
-
-			FileInputStream fis = new FileInputStream(fileIn);
-			ObjectInputStream in = new ObjectInputStream(fis);
-
-			d = (Deal) in.readObject();
-
-			d.PostReadObjectFixups();
-			d.lastSavedAsPathWithSep = fileIn.getParent() + File.separator;
-			d.lastSavedAsFilename = fileIn.getName();
-
-			in.close();
-			fis.close();
-
-		} catch (IOException i) {
-			System.out.println("aaBrdige file, bad format?");
-			// App.deal = new Deal(Deal.makeDoneHand, App.youSeatForNewDeal);
-			// i.printStackTrace();
-			return false;
-		} catch (ClassNotFoundException c) {
-			System.out.println("Deal? class not found");
-			// App.deal = new Deal(Deal.makeDoneHand, App.youSeatForNewDeal);
-			// c.printStackTrace();
-			return false;
-		}
-
-		App.switchToNewLin(null); // kill any existing lin
-
-		App.switchToDeal(d);
-
-		return true;
 	}
 
 	/**   
@@ -433,7 +367,7 @@ public final class CmdHandler {
 
 			FileInputStream fis = new FileInputStream(fileIn);
 
-			lin = new Lin(fis, fileIn, App.dotAaBridgeExt, App.showOldFinAsReview);
+			lin = new Lin(fis, fileIn, App.dotLinExt, App.showFinAsReview);
 
 			fis.close();
 
@@ -473,22 +407,15 @@ public final class CmdHandler {
 
 	/**   
 	 */
-	public static void quickSaveOrAutoSave(boolean useAutoFolder) {
+	public static void doAutoSave() {
 		// ==============================================================================================
 		if (App.deal.isDoneHand()) // so we skip the 'done hand'
 			return;
 
 		App.deal.description = App.gbp.c0_0__tlp.descEntry.getText();
-		String dealName = makeDealFileNameAndPath(useAutoFolder, "", "");
-		try {
-			FileOutputStream fileOut = new FileOutputStream(dealName);
-			ObjectOutputStream out = new ObjectOutputStream(fileOut);
-			out.writeObject(App.deal);
-			out.close();
-			fileOut.close();
-		} catch (IOException i) {
-			i.printStackTrace();
-		}
+		String dealName = makeDealFileNameAndPath("", "");
+
+		saveDealAsSingleLinFile(dealName);
 
 		if (App.isFilenameThrowAway(App.deal.lastSavedAsFilename)) {
 			File f = new File(dealName);
@@ -500,35 +427,12 @@ public final class CmdHandler {
 
 	/**   
 	 */
-	static void menuQuickSave() {
-		// ==============================================================================================
-		quickSaveOrAutoSave(false /* useAutoFolder */);
-	}
-
-	/**   
-	 */
-	static void menuEasySave() {
-		// ==============================================================================================
-		if (App.deal.isDoneHand()) { // so we skip the 'done hand'
-			return;
-		}
-		if (App.isFilenameThrowAway(App.deal.lastSavedAsFilename)) {
-			menuSaveAs();
-		}
-		else {
-			menuSave();
-		}
-
-	}
-
-	/**   
-	 */
 	static void menuPlayWipe() {
 		// ==============================================================================================
 		if (App.deal.isDoneHand()) { // so we skip the 'done hand'
 			return;
 		}
-		quickSaveOrAutoSave(true /* useAutoFolder */);
+		doAutoSave();
 
 		if ((App.isMode(Aaa.NORMAL) || App.isMode(Aaa.REVIEW_PLAY)) && App.deal.isFinished()) {
 			mainUndo();
@@ -556,39 +460,44 @@ public final class CmdHandler {
 
 	/**   
 	 */
-	static void menuSave() {
+	static void menuSaveStd() {
 		// ==============================================================================================
 		if (App.deal.isDoneHand()) { // so we skip the 'done hand'
 			return;
 		}
 
-		App.deal.description = App.gbp.c0_0__tlp.descEntry.getText();
-		String dealName = makeDealFileNameAndPath(false /* useAutoFolder */, App.deal.lastSavedAsPathWithSep, App.deal.lastSavedAsFilename);
-		try {
-			FileOutputStream fileOut = new FileOutputStream(dealName);
-			ObjectOutputStream out = new ObjectOutputStream(fileOut);
-			out.writeObject(App.deal);
-			out.close();
-			fileOut.close();
-		} catch (IOException i) {
-			i.printStackTrace();
+		if (App.isFilenameThrowAway(App.deal.lastSavedAsFilename)) {
+			saveCommon("Save");
 		}
+		else {
+			App.deal.description = App.gbp.c0_0__tlp.descEntry.getText();
+			String dealName = makeDealFileNameAndPath(App.deal.lastSavedAsPathWithSep, App.deal.lastSavedAsFilename);
 
-		App.deal.lastSavedAsFilename = new File(dealName).getName();
+			saveDealAsSingleLinFile(dealName);
 
-		App.frame.setTitleAsRequired();
+			App.deal.lastSavedAsFilename = new File(dealName).getName();
+
+			App.frame.setTitleAsRequired();
+		}
 	}
 
 	/**   
 	 */
 	static void menuSaveAs() {
 		// ==============================================================================================
+		saveCommon("SaveAs");
+	}
+
+	/**   
+	 */
+	static void saveCommon(String type) {
+		// ==============================================================================================
 		if (App.deal.isDoneHand()) { // so we skip the 'done hand'
 			return;
 		}
 
 		JFileChooser fc = new JFileChooser();
-		fc.setFileFilter(new FileNameExtensionFilter("aabridge Deals", App.dealExt));
+		fc.setFileFilter(new FileNameExtensionFilter("Bridge .lin file", App.linExt));
 
 		String pathWithSep = App.deal.lastSavedAsPathWithSep;
 		if (pathWithSep == null || pathWithSep.contentEquals("")) {
@@ -596,32 +505,49 @@ public final class CmdHandler {
 		}
 
 		fc.setCurrentDirectory(new File(pathWithSep));
-		fc.setDialogTitle("Save As");
+		fc.setDialogTitle(type);
 		App.deal.description = App.gbp.c0_0__tlp.descEntry.getText();
-		String dealName = makeDealFileNameAndPath(false /* useAutoFolder */, pathWithSep, App.deal.lastSavedAsFilename);
+		String dealName = makeDealFileNameAndPath(pathWithSep, App.deal.lastSavedAsFilename);
 
 		fc.setSelectedFile(new File(dealName));
 		setFcPreferredSize(fc);
 
 		int returnVal = fc.showSaveDialog(App.frame);
 		if (returnVal == JFileChooser.APPROVE_OPTION) {
-			dealName = checkExtension(fc.getSelectedFile().getAbsolutePath());
-			try {
-				FileOutputStream fileOut = new FileOutputStream(dealName);
-				ObjectOutputStream out = new ObjectOutputStream(fileOut);
-				out.writeObject(App.deal);
-				out.close();
-				fileOut.close();
 
-				App.deal.lastSavedAsPathWithSep = new File(dealName).getParent() + File.separator;
-				App.deal.lastSavedAsFilename = new File(dealName).getName();
+			File chosen = fc.getSelectedFile();
+			App.deal.lastSavedAsPathWithSep = chosen.getParent() + File.separator;
+			App.deal.lastSavedAsFilename = checkExtension(chosen.getName());
 
-			} catch (IOException i) {
-				i.printStackTrace();
-			}
+			dealName = checkExtension(chosen.getAbsolutePath());
+
+			saveDealAsSingleLinFile(dealName);
 		}
 
 		App.frame.setTitleAsRequired();
+	}
+
+	/**   
+	 */
+	static void saveDealAsSingleLinFile(String dealName) {
+		// ==============================================================================================
+		try {
+			FileOutputStream fileOut = new FileOutputStream(dealName);
+
+//			ObjectOutputStream out = new ObjectOutputStream(fileOut);
+//			out.writeObject(App.deal);
+//			out.close();
+
+			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(fileOut, "utf-8"));
+			Lin.saveDealAsSingleLinFile(App.deal, writer);
+			writer.close();
+
+			fileOut.close();
+
+		} catch (IOException i) {
+			i.printStackTrace();
+		}
+
 	}
 
 	/**   
@@ -742,12 +668,12 @@ public final class CmdHandler {
 	 */
 	static void reviewFwdOneTrick() {
 		App.gbp.c1_1__tfdp.reviewTrickDisplayTimer.stop(); // just in case
-		if (App.reviewTrick == 0 && App.reviewCard == 0) {
+		if (App.reviewCard < 3) {
 			App.reviewCard = 4;
 		}
 		else {
 			App.reviewTrick++;
-			App.reviewCard = 4;
+			App.reviewCard = 4; // it will already be 4
 		}
 		validateReviewIndexes();
 		App.frame.repaint();
@@ -960,20 +886,20 @@ public final class CmdHandler {
 	 */
 	public static String checkExtension(String s) {
 		// ==============================================================================================
-		if (s.endsWith(App.dotAaBridgeExt) == false) {
-			s += App.dotAaBridgeExt;
+		if (s.endsWith(App.dotLinExt) == false) {
+			s += App.dotLinExt;
 		}
 		return s;
 	}
 
 	/**   
 	 */
-	public static String makeDealFileNameAndPath(boolean useAutoFolder, String pathWithSep, String origName) {
+	public static String makeDealFileNameAndPath(String pathWithSep, String origName) {
 		// ==============================================================================================
 		String s;
 
 		if (pathWithSep == null || pathWithSep.contentEquals("")) {
-			pathWithSep = useAutoFolder ? App.autoSavesPath : App.quickSavesPath;
+			pathWithSep = App.autoSavesPath;
 		}
 
 		if (App.isFilenameThrowAway(origName)) {

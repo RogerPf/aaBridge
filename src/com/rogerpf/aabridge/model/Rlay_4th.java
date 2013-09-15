@@ -41,7 +41,7 @@ public class Rlay_4th {
 				}
 				else {
 					card = g.fragLed.getLowestThatBeatsOrLowest(g.z, g.bestCard.rank);
-					if (card.rank < g.bestCard.rank && (h.axis() == Zzz.EW) && g.dumbAutoDir.yourFinnessesMostlyFail) {
+					if (card.rank < g.bestCard.rank && (h.axis() == Zzz.EW) && g.dumbAutoDir.yourFinessesMostlyFail) {
 						if (g.pnFragLed.size() > 0) {
 							Card pCard = g.pnFragLed.getLowestThatBeatsOrLowest(g.z, g.bestCard.rank);
 							if (pCard.rank > g.bestCard.rank) {

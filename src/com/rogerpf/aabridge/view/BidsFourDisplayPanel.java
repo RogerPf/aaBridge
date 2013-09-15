@@ -318,15 +318,15 @@ public class BidsFourDisplayPanel extends JPanel {
 
 			if (bid != null && bid.isCall()) {
 				g2.setColor(Color.BLACK);
-				if (bid == App.deal.PASS) {
+				if (bid.isPass()) {
 					g2.setFont(passFont);
 					g2.drawString(Zzz.call_to_string[bid.getCall()], left + cardWidth * 0.1f, levelBottom);
 				}
-				else if (bid == App.deal.DOUBLE) {
+				else if (bid.isDouble()) {
 					g2.setFont(doubleFont);
 					g2.drawString(Zzz.call_to_string[bid.getCall()], left + cardWidth * 0.1f, levelBottom);
 				}
-				else if (bid == App.deal.REDOUBLE) {
+				else if (bid.isReDouble()) {
 					g2.setFont(redoubleFont);
 					g2.drawString(Zzz.call_to_string[bid.getCall()], left - /* cardWidth */0.1f, levelBottom);
 				}
@@ -349,16 +349,14 @@ public class BidsFourDisplayPanel extends JPanel {
 					g2.setFont(symbolFont);
 					g2.drawString(Zzz.suit_to_cdhsntSt[suit], symbolLeft, symbolBottom);
 				}
-
-				// Aert
-				if (alert) {
-					g2.setColor(Aaa.heartsColor);
-					g2.setFont(alertFont);
-					g2.drawString("!", alertLeft, alertBottom);
-				}
-
 			}
 
+			// Aert
+			if (alert) {
+				g2.setColor(Aaa.heartsColor);
+				g2.setFont(alertFont);
+				g2.drawString("!", alertLeft, alertBottom);
+			}
 		}
 	}
 }

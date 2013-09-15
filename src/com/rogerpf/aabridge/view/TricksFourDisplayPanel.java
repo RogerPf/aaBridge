@@ -284,7 +284,7 @@ public class TricksFourDisplayPanel extends JPanel {
 				g2.setColor(Aaa.diamondsColor);
 				text = "Welcome";
 			}
-			else if (App.deal.contract == App.deal.PASS) {
+			else if (App.deal.contract.isPass()) {
 				g2.setColor(Aaa.diamondsColor);
 //				fontSize *= 0.8f; 
 				text = "Passed Out";

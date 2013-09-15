@@ -220,7 +220,7 @@ class Rlay_5_Discard {
 				card2 = c;
 			}
 
-			System.out.println("Signal " + card2 + " substituted for " + card);
+			// System.out.println("Signal " + card2 + " substituted for " + card);
 			card = card2;
 		}
 

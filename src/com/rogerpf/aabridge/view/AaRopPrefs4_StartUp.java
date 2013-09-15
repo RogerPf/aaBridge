@@ -31,12 +31,12 @@ class AaRopPrefs4_StartUp extends ClickPanel implements ItemListener {
 	QCheckBox showSuitSymbols;
 	QCheckBox showPoints;
 	QCheckBox showLTC;
-	QCheckBox showEasySave;
-	QCheckBox showPlayAgain;
+	QCheckBox showSaveAs;
+	QCheckBox showSaveStd;
+	QCheckBox showWipe;
 	QCheckBox showRotationBtns;
 	QCheckBox showEditPlay2Btn;
 	QCheckBox showClaimBtn;
-	QCheckBox deleteQuickSaves;
 	QCheckBox deleteAutoSaves;
 
 	QLabel topLine;
@@ -49,17 +49,17 @@ class AaRopPrefs4_StartUp extends ClickPanel implements ItemListener {
 		topLine.setForeground(Aaa.optionsTitleGreen);
 		add(showWelcome         = new QCheckBox(this, App.showWelcome,      "At Start - Show Welcome Splash screen"), "gapy 5");
 		add(startWithDoneHand   = new QCheckBox(this, App.startWithDoneHand,"At Start - Show the 'Blue Welcome Box' -  When unchecked the first deal will start straight away  "));
-		add(showBidPlayMsgs     = new QCheckBox(this, App.showBidPlayMsgs,  "Show the 'Bid' and 'Play' prompt messages"));
-		add(showSuitSymbols     = new QCheckBox(this, App.showSuitSymbols,  "Show the four Suit Symbols in the hand display area"));
+		add(showBidPlayMsgs     = new QCheckBox(this, App.showBidPlayMsgs,  "Show the 'Bid' and 'Play' prompt messages"), "gapy 12");
+		add(showSuitSymbols     = new QCheckBox(this, App.showSuitSymbols,  "Show the four Suit Symbols in each hand display area"));
 		add(showPoints          = new QCheckBox(this, App.showPoints,       "Show the Point Count"));
 		add(showLTC             = new QCheckBox(this, App.showLTC,          "Show the Losing Trick Count - See Wikipedia - Losing Trick Count with refinements"));
-		add(showEasySave        = new QCheckBox(this, App.showEasySave,     "Show the 'Easy Save' button - Saves the file, if you have set at filename otherwise it does a 'SaveAs'  "), "gapy 10");
-		add(showPlayAgain       = new QCheckBox(this, App.showPlayAgain,    "Show the 'Wipe' button - 'Wipe' gives a fast wipe of played cards, so you can replay that same deal  "));
+		add(showSaveStd         = new QCheckBox(this, App.showSaveStd,      "Show the 'Save' button  "), "gapy 12");
+		add(showSaveAs          = new QCheckBox(this, App.showSaveAs,       "Show the 'Save As' button  "));
+		add(showWipe            = new QCheckBox(this, App.showWipe,         "Show the 'Wipe' button - 'Wipe' gives a fast wipe of played cards, so you can replay that same deal  "));
 		add(showRotationBtns    = new QCheckBox(this, App.showRotationBtns, "Show the Clockwise and Anti-clockwise rotation buttons  "));
-		add(showEditPlay2Btn    = new QCheckBox(this, App.showEditPlay2Btn, "Show the 'Set Play' button - gives faster access to editing of play  "));
+		add(showEditPlay2Btn    = new QCheckBox(this, App.showEditPlay2Btn, "Show the 'Set Play' button - gives faster access to editing of play  "), "gapy 12");
 		add(showClaimBtn        = new QCheckBox(this, App.showClaimBtn,     "Show the 'Claim' button - Allows you to end a hand with a claim  "));
-		add(deleteQuickSaves    = new QCheckBox(this, App.deleteQuickSaves, "Delete any QuickSaves that are 30 days old,  only QuickSaves in the QuickSave folder are examined  "), "gapy 10");
-		add(deleteAutoSaves     = new QCheckBox(this, App.deleteAutoSaves,  "Delete any AutoSaves that are 7 days old,  only AutoSaves in the AutoSave folder are examined  "));
+		add(deleteAutoSaves     = new QCheckBox(this, App.deleteAutoSaves,  "Delete any AutoSaves that are 7 days old,  only AutoSaves in the AutoSave folder are examined  "), "gapy 15");
 		// @formatter:on
 	}
 
@@ -88,13 +88,17 @@ class AaRopPrefs4_StartUp extends ClickPanel implements ItemListener {
 		else if (source == showLTC) {
 	                   App.showLTC = b;
 		}
-		else if (source == showEasySave) {
-                       App.showEasySave = b;
-             App.implement_showEasySave();
+		else if (source == showSaveAs) {
+                       App.showSaveAs = b;
+             App.implement_showSaveAs();
         }
-		else if (source == showPlayAgain) {
-                       App.showPlayAgain = b;
-             App.implement_showPlayAgain();
+		else if (source == showSaveStd) {
+                       App.showSaveStd = b;
+             App.implement_showSaveStd();
+        }
+		else if (source == showWipe) {
+                       App.showWipe = b;
+             App.implement_showWipe();
         }
 		else if (source == showRotationBtns) {
                        App.showRotationBtns = b;
@@ -107,10 +111,7 @@ class AaRopPrefs4_StartUp extends ClickPanel implements ItemListener {
 		else if (source == showClaimBtn) {
                        App.showClaimBtn = b;
              App.implement_showClaimBtn();
-}
-		else if (source == deleteQuickSaves) {
-                       App.deleteQuickSaves = b;
-        }
+		}
 		else if (source == deleteAutoSaves) {
                        App.deleteAutoSaves = b;
         }

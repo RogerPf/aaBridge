@@ -275,7 +275,7 @@ public class CompletedTricksPanel extends ClickPanel {
 		Font doubleRedoubleFont = BridgeFonts.bridgeBoldFont.deriveFont(scoreLozengeHeight * 0.80f);
 		Font claimFont = BridgeFonts.bridgeBoldFont.deriveFont(scoreLozengeHeight * 0.90f);
 
-		if (App.deal.contract == App.deal.PASS) {
+		if (App.deal.contract.isPass()) {
 			x += scoreLozengeWidth * 0.01f;
 			g2.setColor(Color.BLACK);
 			g2.setFont(stdTextFont);

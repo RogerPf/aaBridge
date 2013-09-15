@@ -30,9 +30,9 @@ public class Qstr_1st__Declarer {
 				return;
 			}
 
-			// is there a finnesse/positional play that we would do well to take ?
+			// is there a finesse/positional play that we would do well to take ?
 			if (Play_Mpat.isPatternMatch(g, g.trumpSuit, Zzz.Leader_Pos, Zzz.MatchAsSelf)) {
-				stra.add(new StraStep(Strategy.PlayCard, "a finnesse in trumps", g.mpatRtn.rankRel, g.trumpSuit, -1));
+				stra.add(new StraStep(Strategy.PlayCard, "a finesse in trumps", g.mpatRtn.rankRel, g.trumpSuit, -1));
 				return;
 			}
 
@@ -102,7 +102,7 @@ public class Qstr_1st__Declarer {
 				if (fa.mpatRtn.rating > 0) {
 					Card card = Strategy.selectBestEntryIntoPartner(g);
 					if (card != null) {
-						System.out.println(Zzz.compass_to_nesw_st_long[h.compass] + "  GetToPartner " + card);
+						// System.out.println(Zzz.compass_to_nesw_st_long[h.compass] + "  GetToPartner " + card);
 						stra.add(new StraStep(Strategy.PlayCard, "get to partner", card.rankRel, card.suit, h.partner().compass));
 						return;
 					}
@@ -110,14 +110,14 @@ public class Qstr_1st__Declarer {
 			}
 		}
 
-		// is there a finnesse/positional play that we might like to take ?
+		// is there a finesse/positional play that we might like to take ?
 		for (FragAnal fa : g.fragAnals) {
 			// results are stored in fa[suit].mpatRtn
 			Play_Mpat.isPatternMatch(g, fa.suit, Zzz.Leader_Pos, Zzz.MatchAsSelf);
 		}
 		// now we can sort on this info
-		g.sort_finnesseSuitablity(Zzz.Me);
-		// well do we have a good finnesse to take ?
+		g.sort_finesseSuitablity(Zzz.Me);
+		// well do we have a good finesse to take ?
 		{
 			FragAnal fa = g.fragAnals[0];
 			if (fa.mpatRtn.rating > 0) {
@@ -127,26 +127,26 @@ public class Qstr_1st__Declarer {
 					int x = 0; // put your breakpoint here
 				}
 				assert (card != null);
-				System.out.println(Zzz.compass_to_nesw_st_long[h.compass] + "  TakeFinnesse " + card);
-				stra.add(new StraStep(Strategy.PlayCard, "take finnesse", fa.mpatRtn.rankRel, fa.suit, -1));
+				// System.out.println(Zzz.compass_to_nesw_st_long[h.compass] + "  TakeFinesse " + card);
+				stra.add(new StraStep(Strategy.PlayCard, "take finesse", fa.mpatRtn.rankRel, fa.suit, -1));
 				return;
 			}
 		}
 
-		// is there a finnesse/positional play that we might *partner* to take ?
+		// is there a finesse/positional play that we might *partner* to take ?
 		for (FragAnal fa : g.fragAnals) {
 			// results are stored in fa[suit].mpatRtn
 			Play_Mpat.isPatternMatch(g, fa.suit, Zzz.Leader_Pos, Zzz.MatchAsPartner);
 		}
 		// now we can sort on this info
-		g.sort_finnesseSuitablity(Zzz.Pn);
-		// well do we have a good finnesse for *partner* to take ?
+		g.sort_finesseSuitablity(Zzz.Pn);
+		// well do we have a good finesse for *partner* to take ?
 		{
 			FragAnal fa = g.fragAnals[0];
 			if (fa.mpatRtn.rating > 0) {
 				Card card = Strategy.selectBestEntryIntoPartner(g);
 				if (card != null) {
-					System.out.println(Zzz.compass_to_nesw_st_long[h.compass] + "  GetToPartner " + card);
+					// System.out.println(Zzz.compass_to_nesw_st_long[h.compass] + "  GetToPartner " + card);
 					stra.add(new StraStep(Strategy.PlayCard, "get to partner", card.rankRel, card.suit, h.partner().compass));
 					return;
 				}

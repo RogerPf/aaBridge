@@ -41,15 +41,9 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 				dealLoaded = CmdHandler.readFileIfExists(App.args[0], "");
 			}
 
-			// Is there a file called test.aaBridge in the saves folder?
+			// Is there a file called start_with.lin in the saves folder?
 			if (dealLoaded == false) {
-				String dealName = "test";
-				dealLoaded = CmdHandler.readFileIfExists(App.savesPath, dealName + App.dotAaBridgeExt);
-			}
-
-			// Is there a file called lin_test.lin in the saves folder?
-			if (dealLoaded == false) {
-				String dealName = "lintest";
+				String dealName = "startup";
 				dealLoaded = CmdHandler.readFileIfExists(App.savesPath, dealName + App.dotLinExt);
 			}
 
@@ -93,7 +87,7 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 
 //			// set the outer starting size and position
 //			App.frame.setSize(720, 500);
-//			App.frame.setLocation(1620, 0);
+//			App.frame.setLocation(1622, 0);
 
 			if (App.showWelcome) {
 				App.frame.aaDragGlassPane.showSplashScreen();
@@ -208,7 +202,7 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 			if (App.deal.isAuctionFinished()) {
 				App.calcCompassPhyOffset();
 				App.gbp.dealDirectionChange();
-				if (App.deal.contract == App.deal.PASS)
+				if (App.deal.contract.isPass())
 					voiceTheBid(null); // recursive
 				else
 					App.gbp.c1_1__bfdp.biddingCompleteDelayTimer.start();
@@ -251,7 +245,7 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 	 */
 	public void autoPlayRequest(Hand hand) {
 
-		dumbAutoDir.yourFinnessesMostlyFail = App.yourFinnessesMostlyFail;
+		dumbAutoDir.yourFinessesMostlyFail = App.yourFinessesMostlyFail;
 		dumbAutoDir.defenderSignals = App.defenderSignals;
 
 		Card card = hand.dumbAuto(dumbAutoDir);

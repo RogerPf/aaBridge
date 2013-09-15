@@ -26,7 +26,6 @@ import com.rogerpf.aabridge.view.GreenBaizePanel;
 public class App {
 
 	public static String autoSavesPath;
-	public static String quickSavesPath;
 	public static String savesPath;
 	public static String testsPath;
 	public static String resultsPath;
@@ -88,7 +87,7 @@ public class App {
 	/**
 	 */
 	static public void calcCompassPhyOffset() {
-		compassPhyOffset = (App.putDeclarerSouth && (!App.deal.isBidding() && (App.deal.contract != App.deal.PASS))) 
+		compassPhyOffset = (App.putDeclarerSouth && (!App.deal.isBidding() && (App.deal.contract.isPass() == false))) 
 			? ((App.deal.contractCompass - Zzz.South)+4) % 4 : 0;
 	};
 	
@@ -122,15 +121,15 @@ public class App {
 	public static boolean youDeclarerPause = true;
 	public static boolean youDefenderPause = true;
 	
-	public static boolean yourFinnessesMostlyFail = false;
+	public static boolean yourFinessesMostlyFail = false;
            
 	public static boolean showEditPlay2Btn = false;
 	public static boolean showClaimBtn = false;
-	public static boolean deleteQuickSaves = false;
 	public static boolean deleteAutoSaves = false;
 	public static boolean showRotationBtns = false;
-	public static boolean showPlayAgain = true;
-	public static boolean showEasySave  = true;
+	public static boolean showWipe = true;
+	public static boolean showSaveAs  = false;
+	public static boolean showSaveStd  = false;
 	public static boolean fillHandDisplay = false;
 	public static boolean startWithDoneHand = false;
 	public static boolean runTestsAtStartUp = false;
@@ -142,7 +141,10 @@ public class App {
 	public static int     youSeatForLinDeal = Zzz.South;  // South => declarer
 	public static int     defenderSignals = Zzz.NoSignals; 
 	public static boolean putDeclarerSouth = true;
-	public static boolean showOldFinAsReview = false;
+	public static boolean respectLinYou    = true;
+	public static boolean showFinAsReview = false;
+	public static boolean showUnFinAsReview = false;
+	
 
 	public static int eotExtendedDisplay = 2;
 	
@@ -173,32 +175,32 @@ public class App {
 		vertDividerLocation= appPrefs.getInt("vertDividerLocation", 99999);
 		ropSelPrevTabIndex = appPrefs.getInt("ropSelectedTabIndex", 0);	
 		
-		showWelcome        = appPrefs.getBoolean("showWelcome",      true);
-		showBidPlayMsgs    = appPrefs.getBoolean("showBidPlayMsgs",  true);
-		showSuitSymbols    = appPrefs.getBoolean("showSuitSymbols",  true);
+		showWelcome        = appPrefs.getBoolean("showWelcome",       true);
+		startWithDoneHand  = appPrefs.getBoolean("startWithDoneHand", true);
+		showBidPlayMsgs    = appPrefs.getBoolean("showBidPlayMsgs",   true);
+		showSuitSymbols    = appPrefs.getBoolean("showSuitSymbols",   true);
 		showPoints         = appPrefs.getBoolean("showPoints",       false);
 		showLTC            = appPrefs.getBoolean("showLTC",          false);
-		youAutoSingletons  = appPrefs.getBoolean("youAutoSingletons", false);
+		youAutoSingletons  = appPrefs.getBoolean("youAutoSingletons",false);
 		youAutoAdjacent    = appPrefs.getBoolean("youAutoAdjacent",   true);
 		
-		yourFinnessesMostlyFail = appPrefs.getBoolean("yourFinnessesMostlyFail", false);
+		yourFinessesMostlyFail = appPrefs.getBoolean("yourFinessesMostlyFail", false);
 
 		alwaysShowHidden   = appPrefs.getBoolean("alwaysShowHidden", false);
-		youAutoplayAlways  = appPrefs.getBoolean("youAutoplayAlways", false);
+		youAutoplayAlways  = appPrefs.getBoolean("youAutoplayAlways",false);
 		youAutoplayPause   = appPrefs.getBoolean("youAutoplayPause",  true);
 		youDeclarerPause   = appPrefs.getBoolean("youDeclarerPause",  true);
 		youDefenderPause   = appPrefs.getBoolean("youDefenderPause",  true);
 		showEditPlay2Btn   = appPrefs.getBoolean("showEditPlay2Btn", false);
-		showClaimBtn       = appPrefs.getBoolean("showClaimBtn", false);
-		showRotationBtns   = appPrefs.getBoolean("showRotationBtns", false);
-		showEasySave       = appPrefs.getBoolean("showEasySave",     false);
-		showPlayAgain      = appPrefs.getBoolean("showPlayAgain",    false);
-		deleteQuickSaves   = appPrefs.getBoolean("deleteQuickSaves", true);
-		deleteAutoSaves    = appPrefs.getBoolean("deleteAutoSaves",  true);
+		showClaimBtn       = appPrefs.getBoolean("showClaimBtn",     false);
+		showRotationBtns   = appPrefs.getBoolean("showRotationBtns",  true);
+		showSaveAs         = appPrefs.getBoolean("showSaveAs",       false);
+		showSaveStd        = appPrefs.getBoolean("showSaveStd",      false);
+		showWipe           = appPrefs.getBoolean("showWipe",         false);
+		deleteAutoSaves    = appPrefs.getBoolean("deleteAutoSaves",   true);
 		//fillHandDisplay    = appPrefs.getBoolean("fillHandDisplay", false); - not saved or restored
-		startWithDoneHand  = appPrefs.getBoolean("startWithDoneHand",false);
 		runTestsAtStartUp  = appPrefs.getBoolean("runTestsAtStartUp",false);
-		showTestsLogAtEnd  = appPrefs.getBoolean("showTestsLogAtEnd",true);
+		showTestsLogAtEnd  = appPrefs.getBoolean("showTestsLogAtEnd", true);
 		
 		youSeatForNewDeal  = appPrefs.getInt("youSeatForNewDeal",  Zzz.South);
 		youSeatForLinDeal  = appPrefs.getInt("youSeatForLinDeal",  Zzz.South);
@@ -208,16 +210,19 @@ public class App {
 		
 		defenderSignals    = appPrefs.getInt("defenderSignals", Zzz.NoSignals);
 		if (defenderSignals > Zzz.HighestSignal) defenderSignals = Zzz.NoSignals;
-		putDeclarerSouth   = appPrefs.getBoolean("putDeclarerSouth",  true);
-		showOldFinAsReview = appPrefs.getBoolean("showOldFinAsReview",  false);
+		putDeclarerSouth   = appPrefs.getBoolean("putDeclarerSouth",   true);
+		respectLinYou      = appPrefs.getBoolean("respectLinYou",      true);
+		showFinAsReview    = appPrefs.getBoolean("showFinAsReview",   false);
+		showUnFinAsReview  = appPrefs.getBoolean("showUnFinAsReview", false);
 		
 		playPluseTimerMs   = appPrefs.getInt("playPluseTimerMs", 600);
 		bidPluseTimerMs    = appPrefs.getInt("bidPluseTimerMs",  750);
 		eotExtendedDisplay = appPrefs.getInt("eotExtendedDisplay",  2);
 
         implement_showRotationBtns();
-        implement_showEasySave();
-        implement_showPlayAgain();
+        implement_showSaveAs();
+        implement_showSaveStd();
+        implement_showWipe();
 	}
 	
 	public static boolean isPauseAtEotClickWanted() {	
@@ -253,7 +258,7 @@ public class App {
 		appPrefs.putBoolean("youAutoSingletons", youAutoSingletons);
 		appPrefs.putBoolean("youAutoAdjacent",   youAutoAdjacent);
 		
-		appPrefs.putBoolean("yourFinnessesMostlyFail", yourFinnessesMostlyFail);
+		appPrefs.putBoolean("yourFinessesMostlyFail", yourFinessesMostlyFail);
 		
 		appPrefs.putBoolean("youAutoplayAlways", youAutoplayAlways);
 		appPrefs.putBoolean("youAutoplayPause",  youAutoplayPause);
@@ -261,11 +266,12 @@ public class App {
 		appPrefs.putBoolean("youDefenderPause",  youDefenderPause);
 		appPrefs.putBoolean("showEditPlay2Btn",  showEditPlay2Btn);
 		appPrefs.putBoolean("showClaimBtn",      showClaimBtn);
-		appPrefs.putBoolean("deleteQuickSaves",  deleteQuickSaves);
+
 		appPrefs.putBoolean("deleteAutoSaves",   deleteAutoSaves);
 		appPrefs.putBoolean("showRotationBtns",  showRotationBtns);
-		appPrefs.putBoolean("showEasySave",      showEasySave);
-		appPrefs.putBoolean("showPlayAgain",     showPlayAgain);
+		appPrefs.putBoolean("showSaveAs",        showSaveAs);
+		appPrefs.putBoolean("showSaveStd",       showSaveStd);
+		appPrefs.putBoolean("showWipe",     showWipe);
 	  //appPrefs.putBoolean("fillHandDisplay",   fillHandDisplay);  - not saved or restored
 		appPrefs.putBoolean("startWithDoneHand", startWithDoneHand);
 		appPrefs.putBoolean("runTestsAtStartUp", runTestsAtStartUp);
@@ -275,10 +281,9 @@ public class App {
 		appPrefs.put("dealCriteria",             dealCriteria);
 		appPrefs.putBoolean("watchBidding",      watchBidding);
 		appPrefs.putInt("defenderSignals",       defenderSignals);
-		appPrefs.putBoolean("showOldFinAsReview",showOldFinAsReview);
+		appPrefs.putBoolean("showFinAsReview",   showFinAsReview);
+		appPrefs.putBoolean("showUnFinAsReview", showUnFinAsReview);
 		appPrefs.putBoolean("putDeclarerSouth",  putDeclarerSouth);
-		
-		
 		
 		appPrefs.putInt("playPluseTimerMs",      playPluseTimerMs);
 		appPrefs.putInt("bidPluseTimerMs",       bidPluseTimerMs);
@@ -302,15 +307,21 @@ public class App {
 		}
 	}
 
-	public static void implement_showEasySave() {
+	public static void implement_showSaveAs() {
 		if (allConstructionComplete) {
-			App.gbp.c0_0__tlp.setEasySaveVisibility();
+			App.gbp.c0_0__tlp.setSaveAsVisibility();
 		}
 	}
 
-	public static void implement_showPlayAgain() {
+	public static void implement_showSaveStd() {
 		if (allConstructionComplete) {
-			App.gbp.c0_0__tlp.setPlayAgainVisibility();
+			App.gbp.c0_0__tlp.setSaveStdVisibility();
+		}
+	}
+
+	public static void implement_showWipe() {
+		if (allConstructionComplete) {
+			App.gbp.c0_0__tlp.setWipeVisibility();
 		}
 	}
 
@@ -524,8 +535,8 @@ public class App {
 		App.setMode(Aaa.NORMAL);
 
 		if (App.lin != null) {
-			if (App.deal.isBidding()) {
-				App.deal.youSeatHint = Zzz.South;
+			if (App.respectLinYou && App.deal.youSeatInLoadedLin) {
+				; // the youSeatHint was preset at (lin) load time
 			}
 			else {
 				// South as a value represents the Declarer etc
@@ -533,7 +544,14 @@ public class App {
 			}
 		}
 
-		if (App.showOldFinAsReview && App.deal.isFinished()) {
+		if (App.showFinAsReview && App.deal.isFinished()) {
+			App.setMode(Aaa.REVIEW_PLAY);
+			App.localShowHidden = false;
+			App.reviewTrick = 0;
+			App.reviewCard = 0;
+		}
+
+		if (App.showUnFinAsReview && App.deal.isFinished() == false) {
 			App.setMode(Aaa.REVIEW_PLAY);
 			App.localShowHidden = false;
 			App.reviewTrick = 0;
