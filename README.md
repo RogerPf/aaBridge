@@ -1,4 +1,4 @@
 aaBridge
 ========
 
-A standalone, non network, Bridge program (card playing app AND .lin file reader/editor) written in Java with eclipse project included. The interface is based on the BBO (Bridge Base Online) design. As a card playing app is intended for novices and those practicing their card evaluation skills. It generates strong hands and lets the user play them.  It includes a hand editor (Drag and drop). It reads and saves deals as BBO compatible .lin files.
+Please go to - http://RogerPf.com/aaBridge - for the .exe or built .jar - - - aaBridge is a standalone (non network) Bridge (Card playing) program in Java with eclipse project included.  It is a full .lin file (aka Bridge Movie) player.  When used as a Bridge Playing program is good for both novices and those practicing their card evaluation skills.  It will generate strong hands and let the user play them. -    http://RogerPf.com/aaBridge
