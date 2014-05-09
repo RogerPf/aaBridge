@@ -1,0 +1,82 @@
+%% Navigation Bar
+%% Last edited  2013 Dec 03
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|150|ff|1Arial|fb|19|fm|1|       1 large
+fh|236|ff|2Arial|fb|29|fm|2|       2 med
+fh|342|ff|3Arial|fb|39|fm|3|       2 med+
+
+cr|3200|cg|3255|cb|3255|     3  light blue
+cr|4070|cg|4090|cb|4255|     4  blue
+cr|516|cg|5128|cb|516|       5  green 
+cr|7230|cg|70|cb|70|         7  red
+
+bt||
+fp|1|at|
+
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp|9|
+mn|   Navigation Bar   |
+ht|d|
+at|^^|fp||at|^z@3
+^b@2Most of the main  Deal Display Screen  is easy to understand @- however the Navigation Bar deserves a few words.
+
+The  |cp|7|at|^*bNavigation Bar^*n|cp||at| is the cream and grey line, with bobbles on it, at the bottom of this window. Clicking on this bar will move you that point in the current lin file - try it now.
+
+For the technically minded the bumps are where the writer of the file has put a QX marker.  Where it can,  aaBridge  will try to show you the first four characters of the name of that QX marker.  Narrower bumps are where there are fewer "pages" also called PG markers)  between the  QX's.   None of this matters to you as a user, just click on it to move about.
+
+On VuGraph lin files the  QX marker names are a letter  "o"  or  "c"  followed by a number.  The "o" stands for Open Room and the "c" for Closed room.
+
+There are actually two different  "Navigation Bars".  These are 
+
+^c@.   The one you see below, which shows whenever you are inside a deal.
+
+^c@.   The @2second kind which, unsurprisingly, you see whenever you are inside a deal. This form lets you see how much of the play has been completed and lets you move to the point of the play of each card.
+
+|
+ht|z|at|@0
+^r Roger Pfister   -   December 2013|
+
+ht|x
+|
+pg||
+
+qx|Nav1|
+at|^b@2Some text |
+pg||
+
+at| additional text |
+pg||
+
+qx|Nav2|
+at| guess what - text |
+pg||
+
+at| guess what - text |
+pg||
+
+at| guess what - text |
+pg||
+
+qx|Nav3|
+at| more  text |
+pg||
+
+qx|Nav4|
+at| and more text |
+pg||
+at| and more text .|
+pg||
+at| and more text ..|
+pg||
+at| also more text ...|
+pg||
+
+qx|Nav5|
+at| and yet text text |
+pg||
+at| and yet text text |
+pg||
+|
+ht|z|at|@0
+^r Roger Pfister   -   December 2013|

@@ -1,0 +1,41 @@
+%% Symbols
+%% Last edited  2013 Dec 04
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+bt||
+at|
+^b@2^*bSymbols^*n|
+at|
+
+There are a number of inline  !at!<text>!  sequences that produce symbols.
+^c@2
+@@s ^e@s     each suit symbols uses the color set in the, suit color selection option.
+@@h ^e@h
+@@d ^e@d
+@@c ^e@c
+
+@@- ^e@-
+@@@@ ^e@@
+#### ^e##
+@^@^ ^enew line   @-   however, most authors just insert an actual new line into the text.
+
+
+@{ ^ebox begin
+@} ^ebox end
+
+@^- ^ecentering begin  ^*band^*n  centering end
+
+
+
+@^@@ ^e@^   ^gthis is an|cp|7|at| aaBridge only|cp||at| feature, added so that this documentation could be written.
+@@@{ ^e@{             ^j|cp|7|at|"        "|cp||at|
+@@@} ^e@}             ^j|cp|7|at|"        "|cp||at|
+
+@@. ^e@. ^gbullet point ^j|cp|7|at|"        "|cp||at|
+|
+ht|z|at|@0
+^*b end ^*n|
+

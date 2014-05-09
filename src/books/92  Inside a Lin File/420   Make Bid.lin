@@ -1,0 +1,60 @@
+%% Make Bid
+%% Last edited  2013 Dec 31
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+st||
+qx|mb1|
+
+md|1S9H8TQD3469JAC7TQ,S248TJAH29DQC69JA,S57QH457KAD2KC234|
+
+at|^b@2^*bMake Bid^*n^f^*b!mb! ... !^*n|at|^z@3|
+pg||
+mb|1d!|
+at|
+
+^c@2!mb!1d|cp|7|at|^*b!^*n|cp||at|! ^f@2This is the most common form.  The exclamation mark following the bid makes it an (un-annotated) alert.
+|
+pg||
+mb|2dd!r|
+at|
+^c!mb!2dd|cp|7|at|^*b!^*n|cp||at|r! ^f@2This is the more complex form, where there is an unlimited string of bids. Notice how the letter  'd'  can be both the  'd'  of diamond and the  'd'  of double,  and that  'r'  is redouble. The |cp|7|at|^*b!^*n|cp||at| exclamation mark of an alert must again  ^*b follow^*n  the alerted bid.
+|
+
+pg||
+nt||
+qx|an|
+at|^b@2^*bAnnotation^*n^f^*b!an! <text> !^*n|at|^z@3|
+
+at|
+
+^c@2Single bids can be immediately followed by an annotation.
+
+|
+pg||
+mb|4d|an|This is getting silly|   
+at|!mb!4d!an! This is getting silly !                 @2Hover over the  4@d  bid in the bid display panel (top-right) to see the annotation.
+|
+pg||
+
+nt||
+qx|ub|
+at|^b@2^*bUndo Bid^*n^f^*b!ub!99!^*n|at|^z@3|
+pg||
+
+ub||
+at|
+
+!ub!!   ^ghas just  "undone"  the  4@d  bid.
+|
+pg||
+
+ub|2|
+at|
+!ub!2!  ^ghas just  "undone"  the two bids before that.
+|
+
+ht|z|at|@0
+^*b end ^*n|

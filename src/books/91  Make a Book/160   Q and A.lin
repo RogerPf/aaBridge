@@ -1,0 +1,52 @@
+%% Q and A
+%% Last edited  2013 Dec 03
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|150|ff|1Arial|fb|19|fm|1|       1 large
+fh|236|ff|2Arial|fb|29|fm|2|       2 med
+fh|342|ff|3Arial|fb|39|fm|3|       2 med+
+fh|664|ff|6Arial|fb|69|fm|6|       6 v large
+fh|925|ff|9Arial|fb|99|fm|9|       very small for faking 'buttons'
+
+cr|3200|cg|3255|cb|3255|     3  light blue
+cr|4170|cg|4190|cb|4255|     4  med blue
+cr|516|cg|5128|cb|516|       5  green 
+cr|7230|cg|70|cb|70|         7  red
+
+bt||
+fp|1|at|
+
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp|9|
+mn|     Questions & Answers      |
+fp||
+qx|Q&A|at|^b@2
+
+
+^b@2^*bQ.^*n   How do I get aaBridge to start in MultiBook mode, for a ^*b new user^*n ?
+
+^*bA.^*n   Inside@2 the book  '90  Welcome Help...'  is a file with a name containing the text  DEFAULT_TO_SINGLE_BOOK  change that name (only slightly so switching back is easy) for example to  xEFAULT_TO_SINGLE_BOOK.
+
+
+
+^b@2^*bQ.^*n   How do I get a  'nice title'  for my book showing in the Menu ?
+
+^*bA.^*n   Look at the example title definition file in   @-  "91  Make a Book".
+
+
+
+^b@2^*b@2Q.^*n   How do I get aaBridge to run in  devMode ?
+
+^*bA.^*n   Create a file called    _aaBridge_dev.txt    at the root of your file system or in /a/  ,  C:\a\
+^j devMode is nothing special just a few extra menu options.
+
+
+
+^b@2^*b@2Q.^*n   Where can I find the   |cp|7|at|^*b.java  source^*n|cp||at|   files for ^*b aaBridge ^*n?
+
+^*bA.^*n   The should be together with the  .class  files in the aaBridge .jar.   They should also (eventually) be put on github.
+^g^*h http://github.com/RogerPf/aaBridge ^*n
+
+|
+ht|z|at|@0
+^r Roger Pfister   -   December 2013|

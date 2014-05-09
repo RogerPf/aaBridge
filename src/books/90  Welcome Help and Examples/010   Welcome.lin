@@ -1,0 +1,105 @@
+%% Help - Welcome
+%% Last edited  2013 Dec 03
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|150|ff|1Arial|fb|19|fm|1|       1 large
+fh|236|ff|2Arial|fb|29|fm|2|       2 med
+fh|342|ff|3Arial|fb|39|fm|3|       2 med+
+fh|664|ff|6Arial|fb|69|fm|6|       6 v large
+fh|925|ff|9Arial|fb|99|fm|9|       very small for faking 'buttons'
+
+cr|3200|cg|3255|cb|3255|     3  light blue
+cr|4170|cg|4190|cb|4255|     4  med blue
+cr|516|cg|5128|cb|516|       5  green 
+cr|7230|cg|70|cb|70|         7  red
+
+bt||
+tu|y|
+mn|   Welcome to    -    aaBridge   |
+qx|Welc|
+fp|1|at|
+
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp|9|
+ht|d|
+at|^^|fp||at|
+^d Click on one of the   ^*bPlay Bridge^*n   buttons    |fp|1|at|^*bOR^*n|fp||at|  @-|
+
+at|
+@0@1^n@2^w@3|
+ht|c|fp|9|at|^^ ^^ ^^|cs|3|fp|2|at|
+ ^-{ ^*h https://www.youtube.com/channel/UCjqx0Cofc7-TT-N0tfYR8rg/videos?flow=grid&view=0 ^*n aaBridge on YouTube ^*x|at|
+} ^-  |fp|4|at|
+|cs|4|
+
+at|
+@0@1^t@2^z@3
+|
+ht|c|fp|9|at|^^ ^^ ^^|cs|3|fp|2|at|
+ ^-{ ^*h http://www.youtube.com/results?search_query=intitle:'aaBridge+Extra'^*n Extra ^*x|at|
+} ^-  |fp|4|at|
+|cs|4|
+
+
+ht|f|cs|3|at|^c@2^j@3
+|
+ht|g|at||
+fp|9|at| 
+ ^- { 
+ |fp|1|at|^*f playBridge_playBridge,   Play Bridge   ^*n|at|
+} ^-  |fp|9|at| 
+ ^- { 
+|fp|1|at|^*f playBridge_and_dealChoice,    Play Bridge   ^*n|fp|||at|
+|fp||at|^*f playBridge_and_dealChoice, and show Deal Choices^*n
+} ^-  |fp|9|at|
+|fp||at|
+ ^-{ ^*f playBridge_distrFlashCards,Distribution Flash Cards^*n|at|
+} ^-  |fp|9|
+cs|4|at|
+ ^- { 
+|fp|1|at|^*f playBridge_openMainBook, Watson's Book ^*n|fp|||at|
+|fp||at|^*f playBridge_openMainBook, (the purpose of this app)^*n
+} ^-
+|cs|3|fp||at| 
+^- { |fp||at|^*f tutorial_idealSize,     Book Mode     ^*n|fp|||at|
+|fp||at|^*f tutorial_idealSize, set ideal size and layout ^*n
+} ^- |
+fp||at|
+^- { |fp||at|^*f tutorial_idealSize_noExtra, set ideal size, no extra   ^*n
+} ^- |
+fp||at| 
+^- { |fp||at|^*f showStartUpOpts, Show  Start-Up  options ^*n
+} ^-
+|
+|ht|m|at|
+
+
+@0@1^i|cp|7||fp|3|at|^*b  *New^*n@2 |fp|4|cp||
+at|
+@0@1^m@2
+|ht|g|
+at|
+
+ Use the |cp|7||fp|3|at| ^*b^*uB^*n^*books^*n |fp||cp||at| menu drop-down above to select a book.
+
+
+ Use the |fp|2|at| ^*b^*uF^*n^*bile^*n |fp||at| menu drop-down above to open your
+^o^*bSaves^*n folder and   ^*bdrag n drop^*n   a file from there.
+			  
+
+|fp|2|at| ^*bDrag n Drop^*n|fp||at|   group of, any single, or a folder containing
+^o lin files.  They will open as a book.
+
+			  
+|fp|2|at| ^*bClick^*n |fp||at|on any of the  |fp|2|at|^*bHelp^*n|fp||at|  or  |fp|2|at|^*bExample^*n|fp||at|  files you can
+^osee listed in the tall gray column on your left.
+
+
+|fp||at| Use the  ^*bShow  Start-Up  options^*n|fp||at|  to set what  ^*baaBridge^*n
+^o will show you at the next start-up.
+
+ Click the   ^*bStep >^*n   button below to read the next Help file.
+
+|
+ht|z|at|@0
+^r Roger Pfister   -   December 2013|

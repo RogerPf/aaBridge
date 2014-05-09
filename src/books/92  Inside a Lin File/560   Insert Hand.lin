@@ -1,0 +1,47 @@
+%% Insert Hand  -  ih
+%% Last edited  2013 Nov 29
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+bt||
+qx|ih|
+at|
+^b@2^*BInsert Hand  -  !ih! . . .^*N|at|^y@3
+
+!ih!p4s2hj7654d843ckqjt,sj965h32dq92c8732,sq743hak98dk76ca6,sakt8hqtdajt5c954!
+
+The hand definitions follow the flow of the text.  Up to four hands or part hands, south first. Any missing hand is NOT auto filled in.|
+ih|p4s2hj7654d843ckqjt,sj965h32dq92c8732,sq743hak98dk76ca6,sakt8hqtdajt5c954|
+at|Please note that the example shown above has a 'p' as the first character in the South hand, it means pictures. Pictures and any other first character options are not supported and are ignored.
+
+Also NOT supported and ignored are  !hc!<cards>!    highlight  cards    and    !lc!<cards>!   lowlight  cards.
+
+
+A one hand example   !ih!p4s6kh5679jkd57t!|ih|p4s6kh5679jkd57tc3q|
+at|More on the next page|
+
+pg||nt|
+^b@2^*BInsert Hand  -  !ih! . . .^*N|at|         (a two handed example)^z@3
+
+!ih!,,sq743hak98dk76ca6,sakt8hqtdajt5c954!|
+
+ih|,,sq743hak98dk76ca6,sakt8hqtdajt5c954|
+
+at|again the hands are inline.
+|
+at|Where existing tutorial lin files overlay hand one upon another (probably assuming they would be displayed as picture cards) then the code attempts to shrink the hands to improve visibility.  This will not be perfect but it is judged the best that can be done.|
+
+HT|n|va|6|at|^b  {|ih|psAT53H6542DK32CKQ|at|} |HT|m|AT|
+^K@2^Y@3The hand has 11 Starting Points-12 HCP|HC|SADKCKQ|AT|, no length points, subtract 1 for @CKQ Dubious Doubleton.|lC|SADKCKQ|
+
+HT|q|at|^b  {|ih|pSK9852HKQ86D83CA5|at|}|HT|p|AT|
+^K@2^Y@3The Starting Points count is 13. |hc|SKHKQCA|at|12 HCP + 1 spade length point and no dubious singletons. @CA5 is not a dubious doubleton.|lc|SKHKQCA|
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+HT|s|at|^b  {|ih|pSQJ53HAj5Dj342CJ4|at|}|HT|s|AT|
+^K@2^Y@39 is the Starting Points value of this hand-10 HCP,|HC|sQJHAjcj4dj|AT| -1 for dubious Doubleton clubs.|LC|sQJHAjcj4dj|
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+HT|v|at|^b  {|ih|pST532H8654Da2Ct98|at|}|HT|u|AT|
+^K@2^Y@34 Starting Points are the value of this hand. 4 HCP|HC|DA|at|. No length or Dubious Doubletons. diamond A2 is not dubious. According to the Bergen methodology a doubleton with an ace is never dubious.|
+
+ht|z|at|@0
+^*B end ^*N|

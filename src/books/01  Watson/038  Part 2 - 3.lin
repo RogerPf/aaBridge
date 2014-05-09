@@ -1,0 +1,481 @@
+%%CH-3-P-2.lin
+%%By Kia
+%%%Last 12-24, 2011  Eillen1a  
+mn|  End Plays     Part II - Chapter III  |
+bt||
+%%Font and color codes
+fh|155|ff|1Arial|fb|19|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|36|fm|3|                           FOR 3
+fh|430|ff|4Arial|fi|4y|fm|4|     %%Larger than default— italic
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|30|cg|30|cb|3128|                dark Blue 3
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|664|cg|6255|cb|6255|             6=TURQUOISE
+cr|70|cg|7235|cb|7235|              green/blue 7
+cr|8255|cg|80|cb|80|                red 8
+cr|9128|cg|950|cb|90|               Reddish-brown 9
+%%%
+tu|1|cs|6|ht|e|fp|3|at|^-
+WATSON's Classic Book on The Play of the Hand at Bridge
+
+Part II, Advanced Play and Expert Technique
+
+Chapter III,  End Plays
+^-|FP||ht|k|at|
+^*U^DTABLE OF TOPICS ^*N|cp|1|AT|
+ 
+^d^*G3p2B01,End Plays^*N  ^q    ^*G3p2B13,A Brilliant End-Play "COUP"^*N
+^d    @2^*G3p2B02,A Simple End Play ^*N ^q    ^*G3p2B14,Another End-Play "COUP"^*N   
+^d    @2^*Gxx,Throwing the Lead in the Suit Desired as the Return^*N ^q    ^*G3p2B15,An End Play in Trumps^*N 
+^d    @2^*G3p2B04,An Elimination End Play^*N ^q    ^*G3p2SUM,Summary^*N
+^d    @2^*G3p2B05,Choosing Between an End Play and a Finesse^*N  
+^d    @2^*G3p2B06,Making an End Play For an Extra Trick^*N  
+^d    @2^*G3p2B07,The End Play at a Suit Contract^*N  
+^d    @2^*G3p2B08,Another End Play When There is a Trump Suit^*N 
+^d    @2^*G3p2B09,A Throw-In With Another Suit^*N  
+^d    @2^*G3p2B10,An End Play by Giving Up a Trick That Might Be Saved^*N  
+^d    @2^*G3p2B11,An Optimistic Try For an End Play^*N
+^d    @2^*G3p2B12,Another End Play as the Only Chance^*n|CP||at|
+
+^C@2^Y@3 |PG||cp||nt|| 
+%%%%%%%%%%%%%%%%%%
+qx|3p2B01,End Play  |nt||HT|E|at|^B@2^Y@3The ^*Iend play^*N|cp|8|fp|1|at|*|FP||cp||at| is perhaps the most interesting of the advanced plays in Contract Bridge. For this reason it has often been written about, and very often maltreated and given an air of complexity which it really does not deserve. Broadly speaking, the end play is but another application of a principle which is described in the elementary section (Part I) of this book—namely, that it is usually more advisable to force an Opponent to lead up to your tenace holdings than it is to lead away from those holdings yourself. This is really all there is to an end play, except that to execute this more advanced form of the situation a certain amount of preliminary sparring must be done to secure the right opening. Furthermore, the true end play, properly executed, does not give the Opponents any chance of protecting themselves.|PG||AT|
+
+|cp|8|fp|1|at|*|FP||cp||at|^*I It would appear that an end play, if properly named, must occur toward the end of a hand—say at the 10th trick or later. Broadly speaking, any strategic play which takes place at the 10th trick or later might be called an end play. But the term end play by virtue of its long use in a particular sense, has come to mean just one form of play toward the end of a hand—that form of play which forces an Opponent to lead as desired by putting him in the lead when he can lead back only to the Declarer's advantage. The preparation for an end play, of course, may begin at the first trick, and, as a matter of fact, the climax may on occasion occur in the very middle of the hand.
+^TSam Fry, Jr.^*N|PG||AT|
+
+The end play has been given many names. It has been called ^*Ithe elimination play, the strip play, the throw-in play, the forced-lead play, etc^*N. These names are mostly variants of the same thing, and they are quite unnecessary. Some end play situations require elimination of side suits, but others do not, and such a variation can be taken care of very easily when it comes along. After all, it does not matter what the play is called just so long as the player knows how to execute it.|PG||ht|z|AT|
+The following is a simple illustration:|PG||NT||
+%%%%%%%%%%%%
+pn|Declarer,,Dummy,|st||MD|1hkt3,,haj4,|rh||AH|Board 1|AH|End Plays|NT|^B@2
+The heart distribution shown here offers South (Declarer) a two-way finesse.|PG||AT| If you, as South, decide that West has the missing Queen, |pg||AT|^*B you should finesse the |HC|HJ|AT|Jack against West,|PG||MD|0,hq76,0,0|PG||AT| but if you think it more likely that East has the Queen,|lc|HJ|MD|1hkt3,h9852,haj4,hq76|pg||at| you must finesse the Ten.|HC|HT|PG||md|1hkt3,,haj4,|lc|HT|AT| In other words, the whole decision rests on guesswork—which means accident. |PG||NT|^B@2
+Sometimes you will be right, and sometimes wrong. But if it should happen that either Opponent has the lead and must lead a heart, before any hearts have been played at all, your troubles are over. As soon as either East or West leads a heart, you no longer care which one of them has the Queen, for it is sure to be picked up. Clearly, then, it is to your advantage to place one of the Opponents in the lead—if you can do so.|PG||NT||
+%% 1a
+st||MD|hkt3d2,,haj4d3,|rh||AH|Board 1a|AH|End Plays|NT|^B@2
+Perhaps the remaining cards in the deal are as shown above.|PG||AT| Suppose you are sitting South and the lead is in the Dummy (North). Unwilling to guess which Opponent has the missing Queen of hearts,|PG||AT| you simply lead your low diamond and force West to win with his Ace.|MD|0,hq76da,0,h9852d-|PG||ha|y|wt|n|tc|c|pc|d3h2d2da|PG||tc|r|AT| Any heart which he now leads will assure you of 3 tricks in the suit, and you are not even curious to know whether West has the Queen or whether East has it.|PG||NT|^B@2
+Naturally, the example just given is an invented, artificially set up situation. Yet you could plan from the beginning, or fairly early in the hand, so that such a situation might develop. You could actually make sure that the Opponents hold no more cards in any of the other suits, so that a heart lead will be the only one available to them. This requires careful planning, of course, but that is all it takes.
+ |PG||NT||
+Board 2
+ST||MD|saqh5,,s52h4,|rh||AH|Board 2|ah|End Plays|NT|^B@2
+Frequently an end play must be made when it is not a question of dodging an issue at all. Sometimes the result is a certainty, and at other times some risk is involved.|PG||NT|^B@2
+Consider this situation at the end of the tenth trick. |PG||AT| Suppose that the lead is now in the Dummy (North) and that you (South) must win 2 out of the 3 remaining tricks. It is true that the spade finesse offers about a fifty-fifty chance of success, but if you can avoid this chance of losing you must certainly do so. |PG||AT|^*BIf you have studied the cards already played, you know, let us say, that West must hold the high heart (six-spot) and two spades. ^*N|MD|0,sk3h6,0,0|PG||NT|^B@2
+You know that you can place West in the lead and force him to lead back a spade. This takes care of the possibility that the spade finesse will not work.|PG||AT| In other words, here you have a mode of play which will work 100 times in 100 trials, as against a finesse which can work only 50 times in 100 trials (on the average). Why take a chance when you have a sure thing?|wt|N|tc|C|pc|h4|MD|0,0,0,s86h2|pc|h2h5h6|tc|c|PG||tc|r|NT|^B@2
+A certain amount of preliminary work is necessary, as a rule, to develop an end-play situation. This is planned by the Declarer, and comes about as an accident only on rare occasions.|PG||AT|
+
+Look at the next diagram:|PG||NT||
+Board 3
+ST||MD|saqhad5,sk5h4da,s73hqd2,s86h6d3|HA|Y|rh||AH|Board 3|ah|End Plays|NT|^B@2
+This is substantially the same situation as in the preceding example, except that now the tenth trick has not been played and everyone holds at least one card in three suits instead of only two suits. |PG||AT|^*BYou can lead a diamond (from the South position) and force West into the lead, but he will not have to lead back a spade. ^*I|tc|c|PC|d5dad2d3|PG||tc|r|NT|^B@2
+He still has a heart which he can throw to the four winds, and thus put the lead right back in your hand—and you will be forced to lead spades to him. |PC|h4hqh6ha|PG||AT|^*BWest will thus have the advantage—not you.|PG||AT| The first thing you must do at this stage (at the tenth trick), then, is to get rid of that heart all round. ^*I|PG||UP|8|pg||NT|^B@2 
+You take your Ace of hearts, therefore, before throwing West in the lead. |PC|hah4hqh6|pg||AT|^*B You lead your low diamond at the eleventh trick, and West is caught. He has to lead back a spade.^*N|PC|d5dad2d3|PG||NT|^B@2
+This play of the heart suit first is the elimination or strip play which is preparing for the end play. Before you can force West to lead spades, you must make sure that he holds no cards of any other suit to lead back to you. As soon as you have eliminated all other suits, the rest of the play is as easy as falling off a log.|PG||NT||BT||
+%%%%%%%%%%%%%%%%%%%%%page
+HT|E|at|^B@2^Y@3Y|FP||AT|ou may think it is much more difficult when an entire hand has to be stripped in preparation for an end play. It is somewhat more difficult, of course, but not really much more difficult. All that you need is enough imagination to recognize the fact that certain card combinations are bound to be more valuable to you if the Opponents can be induced to lead into them. |PG||AT|
+
+Once you have this fact well learned, it is not such a hard matter to start the preparations for an end situation in which you leave a luckless Opponent with no choice but to lead the suit you wish. Imagination plus the ability to count up to thirteen—scarcely more than this is required to execute end plays with the touch of a master.|PG||AT|
+
+The following deals illustrate different types (|fp|1|cp|8|at|*|FP||cp||at|) of end plays, but they are all of the same fundamental character.|cp|8|fp||at|" |FP||CP||AT|They all involve reaching a situation in which an Opponent can be thrown in the lead at a moment when he can lead back only what the Declarer desires.|PG||fp|1|cp|8|at|^B@2^Y@3*|FP||cp||at| Some writers have divided end plays into two or more classes or groups. This seems rather pointless, since there is essentially no difference between them in principle. To classify merely for the sake of classifying in Bridge is about as idle a pastime as one can imagine, though when classification aids the student there is some value to it. It is true that elimination at no-trump, in preparation for an end play, means leading out high cards, and that elimination at a suit means ruffing outside suits—but this difference is not a characteristic of end plays, but a characteristic of no-trump as contrasted with suit play.
+^TSam Fry, Jr.|PG||AT|
+
+Before taking up the first example, it must be emphasized that any understanding of end plays requires very careful watching of all the cards as they are played. End plays are made, as a rule, to avoid taking finesses, because they offer a better chance of success than a finesse. However, a finesse is sometimes the better play; sometimes the hand which you can throw in the lead will be one holding nothing but good tricks, and one which will never be forced to lead the suit you wish. Under such circumstances, you must prefer the finesse.|PG||NT||
+%%%%%%%%%%%%%%% 3p2B02
+qx|3p2B02,A SIMPLE END PLAY|
+nt||HT|d|cs|1|cp|4|fp||at|
+^-{    A SIMPLE END PLAY    }
+^-|cp||at|
+^B@2The following deal shows a simple end play in which the preparatory process brings about the desired result of a lead into a heart tenace as surely as two and two make four.|PG||NT||
+%% Board 1E
+pn|,,,|st||SK||md|1SAJ64HAQ5DAJTCA63,S87HKJ6D543CJT984,SKQ5H874DKQ7CKQ72,ST932HT932D9862C5|HA||sv|N|rh||AH|Board 1E|ah|End Plays|AT|^B@2
+With North and South vulnerable, the bidding has gone as shown above.|mb|2N|mb|p|mb|6N|mb|p|mb|p|mb|p|pg||at| The play goes as follows:|pc|cJ|pg||AT|^*B South immediately comes to the conclusion that West is probably long in clubs. Nevertheless, he makes a mental reservation that West may be leading from a short suit.^*N|PG||pc|c2|pc|c5|pc|cA|pg||NT|^B@2
+The Declarer may just as well cash in his spade tricks.|
+pc|s4|pc|s7|pc|sQ|pc|s2|pg||
+pc|sK|pc|s3|pc|s6|pc|s8|pg||
+pc|s5|pc|s9|pc|sJ|NT|^B@2
+West discards @d3.|pc|d3|pg||NT|^B@2
+By now South knows something more—West held but two spades originally, which increases the chances of his being long in clubs.|PG||
+pc|sA|pc|c4|pc|h4|pc|sT|pg||
+pc|c3|pc|c8|pc|cQ|pc|d2|at|^*B East discards @D2. East shows out of clubs, and the Declarer knows that West held five clubs originally. Already seven of the cards originally held by West are known.|PG||
+pc|d7|pc|d6|pc|dA|pc|d4|PG||
+pc|dJ|pc|d5|pc|dQ|pc|d8|pg||
+pc|dK|pc|d9|pc|dT|pc|h6|pg||at|^*B The pattern of distribution is now complete in the Declarer's mind, as follows:|PG||NT|^B@2
+West has already thrown off a diamond, has followed suit on two diamond leads, and has failed to follow suit on the third round. Therefore he held originally three diamonds—and it was previously shown that he originally held five clubs and two spades.^*N|PG||NT|^B@2
+That means that his original hand contained three hearts, of which he has discarded one. Therefore he still holds two hearts. Furthermore, South knows that West's remaining cards consist of two clubs—exactly the Ten and nine—and two hearts, (denomination unknown). The possible end play is no longer a shot in the dark.|PG||
+pc|cK|pc|h2|pc|c6|pc|c9|pg||AT|^*B The situation at this point is as you see now:^*N|SK||PG||NT|^B@2
+The last 3 tricks are played as follows:|pg||
+pc|c7|pc|h3|pc|h5|pc|cT|pg||NT|^B@2
+Here West is thrown in the lead, when South knows that he has only two hearts left and nothing else.|PG||
+pc|hJ|pc|h7|pc|h9|pc|hQ|pg||
+PC|HAHKH8HT|pg||sc|Y|up|52|NT|^B@2
+This end play, which took place at the eleventh and twelfth tricks, was absolutely sure to work, because South's count on West's hand was perfect. Even if West did not hold the King of hearts, the contract was sure to be made, as West would have to lead the heart suit anyway. It is equally apparent that a heart finesse would have lost the contract, as South needed 2 heart tricks to complete his required total of 12. |PG||NT|^B@2
+At the beginning of the hand he could see 4 sure spade tricks, 1 sure heart trick, 3 sure diamond tricks and 3 sure club tricks, 11 tricks in all. The heart Queen offered the only chance of making the twelfth trick. Finessing would have meant losing the card altogether, as East and West also held the Jack, Ten, and nine.|PG||NT|^B@2
+Before leaving this example deal, it should be added that West might have made things very trying for South [Let us move to the beginning of trick five when South led the spades Ace].|pg||
+pn||sk||MD|1sahaq5dajtc63,hkj6d54ct984,ckq7h874dkq7,ht932std9862|mb|2np6nppp|sc||wt|s|pc|sA|wt|w|PC|c4|
+at| If, instead of discarding a club,|pg||up|1|at| West had thrown off the Jack of hearts,|PG||pc|hJh4sT|at| a different result might have come about.|pg||
+pc|c3c8cQd2|pg||
+pc|d7d6dAd4|pg||
+pc|dJd5dQd8|pg||
+pc|dKd9dTh6|pg||
+pc|cKh2c6c4|pg||NT|^B@2
+West's last three cards would then have been the Ten and nine of clubs, and the singleton King of hearts. This would put the Declarer in a terrific dilemma. He would know that West held only one heart, but he would have no way of telling it was the King. The discard of the Jack might indicate that West had blanked the King of hearts, but this would not be conclusive.|PG||NT|^B@2
+South would have to reach a decision from what he knew of the psychology of the West layer.|cp|8|at|*
+|
+cp|8|AT|
+^B@2* |CP||AT|^*I It should be clear that with West holding two clubs and one heart at the eleventh trick, the end play is out. If South leads a club, West makes 2 club tricks. The dilemma South faces is whether to finesse his Queen or lay down the Ace of hearts for the drop.—Sam Fry, Jr.^*N|PG||NT||
+%%%% DD play
+%%%% DD play
+st||pn|,,,|SK||md|1SAJ64HAQ5DAJTCA63,S87HKJ6D543CJT984,SKQ5H874DKQ7CKQ72,ST932HT932D9862C5|sv|N|rh||AH|Board 1E|ah|End Plays|mb|2N|mb|p|mb|6N|mb|p|mb|p|mb|p|PG||nt||sc||cs|6|ht|c|
+at|^-{You may now play this hand double dummy. @CJ was the opening lead.
+  The most recently played card may be taken back by clicking the backward arrow  
+or the undo button. When finished or if not interested in the double dummy
+play please tap the forward arrow to move to the next section.}
+^-|pf|y|pg||NT||pf||bt||
+%%%%%%%%%%%%%%%%%%%%%
+QX|XX,THROWING|HT|d|cs|1|cp|4|fp||
+at|
+^-{    THROWING THE LEAD IN THE SUIT DESIRED AS THE RETURN    }
+^-|
+cp||fp||at|^B@2^Y@3T|FP||AT|he following deal is an interesting example of an end play in clubs. It is normal except that the Opponent is thrown in the lead in the same suit in which the return lead is desired:|PG||NT||
+pn|,,,|st||SK||md|1SAKQHK86DAQ62C543,,S7652HAQ5DKJ4CAQ9,|sv|N|rh||AH|Board 2E|ah|End Plays|NT|^B@2
+With North and South vulnerable, the bidding has gone as shown above.|mb|1N|mb|p|mb|4N|mb|p|mb|6N|mb|p|mb|p|mb|p|pg||AT|^*b The bidding is unusual, but perfectly logical. Neither North nor South have a suit really worth mentioning, but they have a plethora of high cards. North feels that if South is strong enough to open with one no-trump when vulnerable, he is strong enough to withstand a Slam invitation, and results bear him out.^*n|pg||sk|s|md|0,ST983HJ9743DT9C86,0,SJ4HT2D8753CKJT72|NT|^B@2
+The play then proceeds as follows:|pc|h4|PG||
+pc|hQ|pc|h2|pc|h6|pg||at| South is going to try to establish his fourth spade in the Dummy.|pg||
+pc|s2|pc|s4|pc|sQ|pc|s3|pg||pc|sK|pc|s8|pc|s5|pc|sJ|pg||NT|^B@2
+The plan fails, for West is left with the high spade.|
+pc|sA|pc|s9|pc|s6|pc|d3|pg||
+NT|^B@2
+South has attacked the diamond suit in an endeavor to obtain some sort of count on the Opponents' hands.|pc|d2|pc|d9|pc|dJ|pc|d5|PG||
+pc|dK|pc|d7|pc|d6|pc|dT|pg||sk||
+pc|d4|pc|d8|pc|dQ|pc|h3|pg||NT|^B@2
+Trick 8. South leads @DA,|pc|dA|PG||AT| West discards @C6,|PG||AT| Declarer throws off Dummy's now useless spade, |pc|c6|pc|s7|AT|and East discards @C2.|pc|c2|PG||AT| He also finds that East originally held four diamonds and two spades. Note particularly East's throwing off of the deuce of clubs on this trick. East fears the end play which he sees coming and is trying to befuddle the Declarer.|pg|| 
+pc|h8|pc|h7|pc|hA|pc|hT|pg||AT| East now shows out of hearts. He has already failed to follow on both diamonds and spades, and so he has nothing left now but clubs! The next play is as compulsory as obeying a military command.|PG||
+pc|h5|pc|c7|pc|hK|pc|h9|pg||
+pc|c3|pc|c8|pc|c9|pc|cT|NT|^B@2
+Nothing could be more simple than this play. Once South knows that East has nothing but clubs, he knows that his contract is made.|pg||
+PC|cjc4stcq|pg||
+PC|cackc5hj|sc|Y|pg||NT|^B@2
+Note also that a simple finesse of the Queen of clubs will cost the Declarer his contract. |PG||sc||up|20|SK||
+cp|8|at|
+^B@2^Z@3Movie Maker|cp||at|: Let us look at such situation [as shown above].|PG||
+PC|h8h7haht|pg||
+PC|h5c7hkh9|pg||
+PC|c3c8cqck|pg||
+PC|cjc4stca|pg||
+NT|^B@2
+The play is a sure thing no matter how the clubs are divided. Even if West held either the Jack or the Ten, and played this card, it would make no difference. |pg||cp|8|at|
+^B@2^Z@3Movie Maker|cp||at|: Let us look at such situation also and move club eight to East and club Jack to West.|pg||sc||
+st||md|hk8c543,hj97cj6,ha5caq9,htckt87|HA|Y|wt|s|
+PC|h8h7haht|pg||
+qx||PC|h5c7hkh9|pg||NT|^B@2
+Suppose, for instance,|PG||AT|^*B that West played the club Jack. ^*N|PC|c3Cj|PG||at| The Queen would be played from the Dummy,|PC|CQ|PG||AT| and if East won with his King, |PC|CK|pg||AT| he would still be forced to lead away from the Ten into Dummy's Ace-nine tenace. |PG||nt||ha||
+%%%% Double Dummy
+pn|,,,|st||SK||md|1SAKQHK86DAQ62C543,ST983HJ9743DT9C86,S7652HAQ5DKJ4CAQ9,SJ4HT2D8753CKJT72|sv|N|rh||AH|Board 2E-double Dummy|ah|End Plays|mb|1N|mb|p|mb|4N|mb|p|mb|6N|mb|p|mb|p|mb|p|pf|Y|sc||nt|
+^B@2|CP|8|at|Movie Maker|cp||at|: You can play this hand double dummy. The opening lead by Watson was heart four. However, you may select a different lead. When finished or if not interested in double dummy feature, please click the forward arrow to move to the next section.|PG||nt||PF||BT||
+%%%%%%%%%%%
+QX|3p2B04,AN ELIMINATION END PLAY|
+HT|d|CS|1|CP|4|AT|
+^-{    AN ELIMINATION END PLAY    }
+^-|
+CS||CP||fp||AT|^B@2^Y@3The club end play in this deal differs from the preceding principally in the fact that the honors which the Declarer must lead in preparation are all placed in the same hand.|PG||NT||
+pn|,,,|st||SK|S|md|1SAKQHAKQDA542CA43,S76H54DKQJT8CK762,SJ843HJT92D763CQ5,ST952H8763D9CJT98|ha||sv|O|rh||AH|Board 3E|ah|End Plays|NT|^B@2
+With neither side vulnerable, the bidding has gone as shown above [Watson does not give the bidding except for the contract by South is 3N].|mb|3N|mb|p|mb|p|mb|p|pg||at| The play proceeds as follows:|PG||AT|
+Trick 1. West leads @DK, North plays @D3, East plays @D9, and South plays @d2.|PG||AT| West wins, because South holds up his Ace, partly to make sure that the East hand will be exhausted of this suit, and partly to obtain some information as to the adverse distribution. Incidentally, he sees that his chief difficulty is the lack of a sure entry into the Dummy's hand.|
+pc|dK|pc|d3|pc|d9|pc|d2|pg||NT|^B@2
+Trick 2. West leads @DQ, North plays @D6, East discards @H3, and South plays @D4. Though East shows out of diamonds, South continues to hold up—he has formed a plan.|
+pc|dQ|pc|d6|pc|h3|pc|d4|pg||
+pc|dJ|pc|d7|pc|h6|pc|dA|pg||
+pc|sA|pc|s6|pc|s3|pc|s2|pg||
+pc|sK|pc|s7|pc|s4|pc|s5|pg||NT|^B@2
+South has now stripped West of spades.|pc|sQ|pc|c2|pc|s8|pc|s9|pg||
+pc|hA|pc|h4|pc|h2|pc|h7|pg||
+pc|hK|pc|h5|pc|h9|pc|h8|pg||NT|^B@2
+The West hand is now stripped of hearts also, and the stage is set if West holds the King of clubs.|pc|hQ|pc|c6|pc|hT|pc|sT|pg||SK||
+pc|d5|pc|d8|pc|hJ|pc|c8|pg||NT|^B@2
+Trick 11. West leads @D10,|pc|dT|PG||AT| North discards @SJ,|pc|sJ|PG||AT| East discards @C9, and South discards @C3.|pc|c9|pc|c3|PG||AT| West is completely helpless and is forced to lead away from his King of clubs at the twelfth trick.|pg||pc|c7|pc|cQ|pc|cT|pc|c4|pg||
+PC|c5cjcack|pg||UP|52|NT|^B@2
+The manner of playing this hand—hoping right along that West holds the club King—is common with expert players. It is colloquially termed "playing for the best chance," which means to play the hand in a way that will make the contract if the adverse cards are placed right. |PG||NT|^B@2
+In this deal, if East should hold the club King, the contract cannot be made anyway. South loses nothing, and has everything to gain, therefore, by playing as though the club King were placed in the West hand. His optimism was rewarded; such optimism—playing for the best chance—is really good Bridge, for it is playing to win some of the time as against always losing.|PG||pf|Y|sc||nt|
+^B@2|CP|8|at|Movie Maker|cp||at|: You can play this hand double dummy. The opening lead by Watson was diamond King. However, you may select a different lead. When finished or if not interested in double dummy feature, please click the forward arrow to move to the next section.|PG||nt||PF||BT||
+%%%%%%%%%%%
+QX|3p2B05,CHOOSING BETWEEN AN END PLAY AND A FINESSE|
+HT|d|CS|1|CP|4|AT|
+^-{    CHOOSING BETWEEN AN END PLAY AND A FINESSE    }
+^-|
+CS||CP||fp||AT|^B@2^Y@3I|FP||AT|n the next deal, a finesse in spades would be quite as successful, it happens, as the end play in the same suit. But, since the Opponents' hands cannot be seen, the direction of the finesse must be guessed, while the end play is practically a certainty.|PG||NT||
+pn|,,,|st||SK|S|md|1SKT5HA72DQJT4CAK2,S943HQJTD86CT7643,SAJ2HK85DAK32CQJ8,SQ876H9643D975C95|sv|O|rh||AH|Board 4E|ah|End Plays|NT|^B@2
+With neither side vulnerable, the bidding has gone as shown above.|mb|1N|mb|p|mb|6N|mb|p|mb|p|mb|p|pg||AT|^*b The play proceeds as follows:^*N|PG||
+pc|c4|pc|c8|pc|c9|pc|cK|pg||
+pc|dQ|pc|d6|pc|d2|pc|d5|pg||
+pc|dJ|pc|d8|pc|d3|pc|d7|pg||
+pc|d4|pc|c3|pc|dK|pc|d9|pg||
+pc|dA|pc|h3|pc|dT|pc|c6|pg||at|^*B  West is shedding his clubs madly as it is obvious that this suit, though he opened it, can never be established. He thinks his best play is to get rid of them while he has the chance, though it will appear later that these were not his best discards (but there is almost no way for West to know this soon enough to do him any good).^*N|pc|cJ|pc|c5|pc|c2|pc|c7|pg||NT|^B@2
+Trick 7. North leads @CQ,|pc|cQ|PG||AT| East discards @H4,|pc|h4|PG||AT| South plays @CA, and West plays @C10.|pc|cAct|PG||at|^*B South notes with satisfaction that both Opponents have now been stripped of clubs and diamonds. He also notes that East has thrown off two hearts, which leaves only five hearts outstanding.^*N|pg||
+pc|h2|pc|hT|pc|hK|pc|h6|pg||
+pc|h5|pc|h9|pc|hA|pc|hJ|pg||NT|^B@2
+Now there is only one heart remaining—the Queen. South has available a two-way spade finesse, but he does not know in which direction to take it, as both Opponents have assiduously refrained from discarding any spades lest they give a clue. However, South does know that whichever hand wins the third round of hearts will win it with the Queen, and that this hand will be absolutely forced to lead spades.^*N|PG||NT|^B@2
+Trick 10. South leads @H7, West wins with @HQ, North plays @H8, East discards @S6.|pc|h7|pc|hQ|pc|h8|pc|s6|pg||sk||at|^*B
+This is the situation at the beginning of the eleventh trick. West, thrown in the lead on the tenth trick, must lead one of his three spades—whichever he chooses, the Declarer makes the 3 last tricks.^*N|PG||SK||mc|12|PG||UP|40|NT|^B@2
+Of course, it may be contended that South could have guessed the finesse right—but what of that? The end play by throwing West in with a heart is much surer—in fact, it is a dead certainty. Incidentally, note West's discards. If he had only known, he might have kept an extra club, and Declarer would not then have dared to throw him in with a heart. However, in this particular deal, he would have been forced to discard a spade instead of the club, which would probably have enabled the Declarer to mark East with the Queen. |PG||pf|Y|sc||nt|
+^B@2|CP|8|at|Movie Maker|cp||at|: You can play this hand double dummy. The opening lead by Watson was club 4. However, you may select a different lead. When finished or if not interested in double dummy feature, please click the forward arrow to move to the next section.|PG||nt||PF||BT||
+%%%%%%%%%%%%%%
+qx|3p2B06,MAKING AN END PLAY FOR AN EXTRA TRICK|
+HT|d|CS|1|cp|4|AT|^-
+{    MAKING AN END PLAY FOR AN EXTRA TRICK    }
+^-|
+CS||cp||fp||AT|^B@2^Y@3O|FP||AT|ne more example of an end play at a no-trump contract, and then we go on to the much more frequent use of end plays at a suit declaration. In the following deal an end play is used to secure an extra trick in the spade suit after the contract has been made secure.|PG||NT||
+pn|,,,|st||SK|S|md|1SK85HA42DAKQ5CKJ6,SAQTHQJT9DT42C732,S762HK85DJ763CAQ4,SJ943H763D98CT985|ha||sv|O|rh||AH|Board 5E|ah|End Plays|NT|^B@2
+With neither side vulnerable, the bidding has gone as shown above.|mb|1D|mb|p|mb|2D|mb|p|mb|2N|mb|p|mb|3N|mb|p|mb|p|mb|p|pg||at| The play proceeds as follows:|PG||AT| Trick 1. West leads @HQ,|PC|Hq|pg||AT|^*B North plays @H5, East plays @h3, and South wins with @HA.  South immediately sees 9 tricks in sight, and decides that he may as well take them before something unforeseen occurs.^*N|
+pc|h5|pc|h3|pc|hA|pg||
+pc|dA|pc|d2|pc|d3|pc|d8|pg||
+pc|dK|pc|d4|pc|d6|pc|d9|pg||
+pc|dQ|pc|dT|pc|d7|pc|h6|pg||
+pc|d5|pc|c2|pc|dJ|pc|s3|pg||
+pc|c4|pc|c5|pc|cK|pc|c3|pg||
+pc|c6|pc|c7|pc|cQ|pc|c8|pg||
+pc|cA|pc|c9|pc|cJ|pc|sT|pg||NT|^B@2
+Trick 9. North leads @HK, East plays @H7, South plays @H2, and West plays @H9.|PG||AT| This makes the ninth trick won by South—his contract is made. But he sees a way of making a trick with his King of spades if West holds the remaining hearts, which is probable.|PG||
+pc|hK|pc|h7|pc|h2|pc|h9|pg||NT|^B@2
+Trick 10. North leads @H8, East discards @C10, South plays @H4, and West wins with @HJ.|
+pc|h8|pc|cT|pc|h4|pc|hJ|pg||
+pc|hT|pc|s2|pc|s4|pc|s5|pg||SK||
+PC|sas6s9s8|pg||
+PC|sqs7sjsk|sc|Y|PG||NT|^B@2
+It should be obvious that if the Declarer blindly led spades up to his King in the vague hope of stabbing at a finesse, he would have lost all 4 of the last tricks instead of losing but 3 of them. The end play gives him an overtrick. |PG||UP|52|pf|Y|sc||nt|
+^B@2|CP|8|at|Movie Maker|cp||at|: You can play this hand double dummy. The opening lead by Watson was heart Queen. However, you may select a different lead. When finished or if not interested in double dummy feature, please click the forward arrow to move to the next section.|PG||nt||PF||BT|| 
+%%%%%%%%%%%%%%%%%
+qx|3p2B07,THE END PLAY AT A SUIT CONTRACT|
+HT|d|CS|1|cp|4|AT|^-
+{    THE END PLAY AT A SUIT CONTRACT    }
+^-|
+CS||cp||fp||AT|^B@2^Y@3C|FP||AT|ontrary to the general belief, the execution of an end play at a suit contract is comparatively simple, requiring only an average amount of knowledge of fundamentals. This type of play is not difficult to recognize.|cp|8|at| Whenever you see a combination of cards in your hand that will gain in trick-taking value if led up to, that is the time to look around for a chance to eliminate the other suits in preparation for an end play.|cp||at| The following deal contains a particularly clear situation, with J 10 9 in one hand and A x x in the other, which is one of the most common combinations leading eventually to end plays.|PG||NT||BT||
+pn|,,,|st||SK|S|md|1SAK862HA75DA43C52,S73HKQ84DKT6CAKQJ,SQJT94HJT9D5C7643,S5H632DQJ9872CT98|ha||sv|B|rh||AH|Board 6E|ah|End Plays|NT|^B@2
+With both sides vulnerable, the bidding has gone as shown above.|PG||mB|1S|mb|d|mb|3S|mb|p|mb|4S|mb|p|mb|p|mb|p|pg||at| The play proceeds as follows:|pc|cK|PG||
+pc|c3|pc|c8|pc|c2|pg||
+pc|cQ|pc|c4|pc|c9|pc|c5|pg||
+pc|cJ|pc|c6|pc|cT|pc|s2|pg||
+pc|sA|pc|s7|pc|s4|pc|s5|pg||NT|^B@2
+Trick 5. South leads @SK, West plays @S3,|pc|sK|pc|s3|PG||AT| North plays @S9,|pc|s9|PG||AT| and East discards @D2. All the adverse trumps are now drawn,|pc|d2|pg||at| and South sees that a perfect end-play situation can be created if both clubs and diamonds are removed from his own hand and the Dummy's.|PG||
+pc|dA|pc|d6|pc|d5|pc|d7|pg||
+pc|d3|pc|dT|pc|sT|pc|d8|pg||
+pc|c7|pc|h2|pc|s6|pc|cA|pg||NT|^B@2
+Trick 9. South leads @D4|PC|D4|PG||AT| West Plays @dKing,|pc|dk|PG||AT| North ruffs with @SJack, and East plays @D9.|PC|SJD9|PC||AT| Again Dummy's ruffing-trick—the deadly cross-ruff is being used for elimination purposes. |pg||NT|^B@2
+At this point, neither the Declarer's nor the Dummy's hand contain any suits but spades and hearts. The situation is as we see now.|SK||PG||NT|^B@2
+Trick 10. North leads @HJack, |PC|hj|pg||AT| Easy plays @H3,|PC|H3|PG||AT| South plays @H5, and West wins with @HQ|pc|h5|pc|hQ|pg||sc|Y|NT|^B@2
+At the eleventh trick, West must lead back a heart, for he holds nothing else.|PG||at|
+It makes no difference whether he leads the King or a small card. Even if he held a club or a diamond, he could still not make any tricks. If he held a club or a diamond, and led it, Declarer could retaliate in one of two ways: he could discard a heart from the Dummy and ruff in his own hand, or he could ruff in the Dummy and discard his own losing heart. |pg||NT|^B@2
+In other words, the lead of a suit in which both his hands are blank, permits the Declarer to use both of two remaining trumps separately and make 2 tricks instead of 1. It is apparent that the possible play of taking two finesses in hearts will fail, as West holds both the King and the Queen.|PG||up|40|pf|Y|sc||nt|
+^B@2|CP|8|at|Movie Maker|cp||at|: You can play this hand double dummy. The opening lead by Watson was club King. However, you may select a different lead. When finished or if not interested in double dummy feature, please click the forward arrow to move to the next section.|PG||nt||PF||BT||
+%%%%%%%%%%%%%%%%%
+qx|3p2B08,ANOTHER END PLAY WHEN THERE IS A TRUMP SUIT|
+HT|d|CS|1|cp|4|AT|^-
+{    ANOTHER END PLAY WHEN THERE IS A TRUMP SUIT    }
+^-|
+CS||cp||fp||AT|^B@2^Y@3T|FP||AT|he end play in clubs in the following deal belongs in the same category with the one just preceding, the only difference being in the card combinations involved:|PG||NT||
+pn|,,,|st||SK|S|md|1S2HAQT842DA63CAQT,SKQJ9H9DQT94CKJ84,SA43HKJ763D2C7632,ST8765H5DKJ875C95|sv|B|rh||AH|Board 7E|ah|End Plays|NT|^B@2
+With both sides vulnerable, the bidding has gone as shown above.|
+mb|1H|mb|1S|mb|3H|mb|3S|mb|6H|mb|p|mb|p|mb|p|pg||NT|^B@2
+The play proceeds as follows:|PG||
+pc|sK|pg||pc|sA|pc|s5|pc|s2|pg||
+pc|h3|pc|h5|pc|hA|pc|h9|pg||
+pc|dA|pc|d4|pc|d2|pc|d5|pg||
+pc|d3|pc|d9|pc|h6|pc|d7|pg||
+pc|s3|pc|s6|pc|h2|pc|s9|pg||NT|^B@2
+Trick 6. South leads @D6, West plays @D10, North ruffs with @H7, and East plays @d8. Dummy's ruffing-trick—the value of the cross ruff in stripping down the hands is clearly seen here.|PG||
+pc|d6|pc|dT|pc|h7|pc|d8|pg||NT|^B@2
+Trick 7. North leads @s4, East plays @s7, South ruffs with @h4, and West plays @sJ. South finishes his elimination of diamonds and spades from his own and Dummy's hands. However, the club lead must come from Dummy's hand, so he is forced to waste a trump.|PG||
+pc|s4|pc|s7|pc|h4|pc|sJ|pg||
+pc|h8|pc|c4|pc|hJ|pc|s8|pg||NT|^B@2
+The situation is as you see above.|SK||PG||at| West is now to be thrown in the lead.|PG||at|
+
+Trick 9. North leads @C2, East plays @C5, South plays @C10, and West wins with @CJ.|PG||
+pc|c2|pc|c5|pc|cT|pc|cJ|pg||NT|^B@2
+In taking this double finesse, South is not particularly interested in which card wins the trick. West is now in the lead and has a choice of three suits for his return—anything but a trump (hearts). Certainly a club is out of the question, for it will plunge right into Declarer's Ace-Queen tenace. A spade or a diamond amounts to the same thing—that is, they are the same in effect—so let us suppose that West returns his spade Queen.|PG||NT|^B@2
+Trick 10. West leads @SQ, North ruffs with @HK, East plays @S10, and South discards @CQ. The Declarer ruffs in the Dummy and discards his losing club from his own hand. He now holds two trumps and the Ace of clubs—clearly the rest of the tricks are his.|
+pc|sQ|pc|hK|pc|sT|NT|^B@2
+Notice one thing—the Declarer must discard the club from his own hand. To discard a club from the Dummy will avail him nothing, as, even with the discard, the Dummy would still hold two clubs, one of which must lose.|PG||pc|cQ|pg||mc|12|sc|y|nt|^B@2
+You have probably observed by this time that the elimination or stripping which takes place in preparing for an end play at a suit contract occurs in both Declarer's Dummy's hands—so that the suits which, at no-trump, it would be undesirable for the Opponent to lead, can be controlled by Declarer's or Dummy's remaining trumps.|PG||NT|^B@2
+In this way, if the player forced to lead to the Declarer chooses to avoid the suit in which the Declarer holds a tenace over him, he must lead a suit of which the Declarer and Dummy are void, thereby enabling the Declarer to ruff in one hand and to throw off from the other hand that subordinate part of the tenace which a lead in that suit would have enabled him to win. |PG||NT|^B@2
+In other words, an end play at a suit contract is slightly more complex only in that it permits the Declarer to benefit even when the tenaced suit is not led. The player thrown in the lead has to lead into a tenace or lead a suit which will give the Declarer a ruff and a discard.|uP|40|pf|Y|sc||nt|
+^B@2|CP|8|at|Movie Maker|cp||at|: You can play this hand double dummy. The opening lead by Watson was spade King. However, you may select a different lead. When finished or if not interested in double dummy feature, please click the forward arrow to move to the next section.|PG||nt||PF||BT||
+%%%%%%%%%%%%%%%%%
+qx|3p2B09,A THROW-IN WITH ANOTHER SUIT|
+HT|d|CS|1|cp|4|AT|^-
+{    A THROW-IN WITH ANOTHER SUIT    }
+^-|
+CS||cp||fp||AT|^B@2^Y@3T|FP||AT|he following deal illustrates the same principle as that just preceding, except that the player forced to lead is thrown in a side suit.|PG||NT||
+pn|,,,|st||SK|S|md|1SKQJ64HA4DAK5CAQ3,S732HKQT9DJ76CK85,SAT98HJ2DQT43C762,S5H87653D982CJT94|sv|N|rh||AH|Board 8E|ah|End Plays|NT|^B@2
+With North and South vulnerable, the bidding has gone as shown above.|
+mb|2s|an|strong two|PG||MB|p3sp4dp5dp|MB|6S|AN| Sam Fry, Jr. called it an overbid.|PG||MB|ppp|pg||NT|^B@2
+The play proceeds as follows:|pc|hK|PG||
+pc|h2|pc|h3|pc|hA|pg||
+pc|sK|pc|s2|pc|s8|pc|s5|pg||
+pc|sQ|pc|s3|pc|s9|pc|h5|pg||
+pc|s4|pc|s7|pc|sT|pc|h6|pg||
+pc|d3|pc|d2|pc|dK|pc|d6|pg||
+pc|dA|pc|d7|pc|d4|pc|d8|pg||
+pc|d5|pc|dJ|pc|dQ|pc|d9|pg||
+pc|dT|pc|h7|pc|c3|pc|h9|pg||NT|^B@2
+The stage is now set for the end play. West's lead of the King of hearts showed that he had the Queen (the Declarer himself had the Ace), and can be put in the lead.|sk||PG||
+pc|hJ|pc|h8|pc|h4|pc|hQ|PG||NT|^B@2
+Now in the lead, West must return either a heart, permitting Declarer to ruff in the Dummy and discard the Queen of clubs from his own hand; or a club, allowing Declarer to make 2 club tricks.|PG||mc|12|PG||UP|36|pf|Y|sc||nt|
+^B@2|CP|8|at|Movie Maker|cp||at|: You can play this hand double dummy. The opening lead by Watson was heart King. However, you may select a different lead. When finished or if not interested in double dummy feature, please click the forward arrow to move to the next section.|PG||nt||PF||BT||
+%%%%%%%%%%%%%%%%%
+qx|3p2B10,AN END PLAY BY GIVING UP A TRICK THAT MIGHT BE SAVED|
+HT|d|CS|1|cp|4|AT|^-
+{    AN END PLAY BY GIVING UP A TRICK THAT MIGHT BE SAVED    }
+^-|
+CS||cp||fp||AT|^B@2^Y@3T|FP||AT|he end play to avoid a club finesse in this deal involves giving up a trick which does not necessarily have to be lost.|PG||NT||
+pn|,,,|st||SK|S|md|1SKQJT986DJT4CAQ8,S5HAQJT98D976CKJ9,SA432HK75DAKQC643,S7H6432D8532CT752|sv|E|rh||AH|Board 9E|ah|End Plays|NT|^B@2
+With East and West vulnerable, the bidding has gone as shown above.|mb|1s2h3sp4hp5dp6sppp|pg||at| The play proceeds as follows:|PG||
+pc|d9|pg||pc|dQ|pc|d2|pc|d4|pg||NT|^B@2
+Trick 2. North leads @H5, East plays @H2, South ruffs with @S8, and West plays @H8. Note that the Declarer starts stripping hearts even before drawing trumps. This is not absolutely necessary, but by doing this he makes sure that he will not lose his tempo.|PG||
+pc|h5|pc|h2|pc|s8|pc|h8|pg||
+pc|sK|pc|s5|pc|sA|pc|s7|pg||NT|^B@2
+Trick 4. North leads @H7, East plays @H3, South ruffs with @S6, and West plays @H9. South's ruffing-trick, continuing the elimination of hearts.|PG||
+pc|h7|pc|h3|pc|s6|pc|h9|pg||
+pc|dT|pc|d6|pc|dK|pc|d3|pg||
+pc|dA|pc|d5|pc|dJ|pc|d7|pg||NT|^B@2
+Trick 7. North leads @HK, East plays @H4, South discards @C8, and West wins with @HA. This is the important play, throwing West in the lead.|PG||
+pc|hK|pc|h4|pc|c8|pc|hA|pg||sk||NT|^B@2
+Declarer could, of course, ruff the heart King, but if he does so the success of his contract will still depend on the club finesse. He therefore throws off the club which he must lose later anyway, in order to make sure that West will have to lead up to him. Note that this play renders West as helpless as a baby.|PG||NT|^B@2
+To lead a heart permits South to discard his losing eight of clubs (as he did in the last trick), while the club lead eliminates another club loser since it enables South's tenace to win. Of course, the play would not work if the Declarer did not first remove the low hearts from the Dummy. This is absolutely essential.|PG||SK||mc|12|PG||UP|28|pf|Y|sc||nt|
+^B@2|CP|8|at|Movie Maker|cp||at|: You can play this hand double dummy. The opening lead by Watson was diamond nine. However, you may select a different lead. When finished or if not interested in double dummy feature, please click the forward arrow to move to the next section.|PG||nt||PF||BT|| 
+%%%%%%%%%%%%%%%%%
+qx|3p2B11,AN OPTIMISTIC TRY FOR AN END PLAY|
+HT|d|CS|1|cp|4|AT|^-
+{    AN OPTIMISTIC TRY FOR AN END PLAY    }
+^-|
+CS||cp||fp||AT|^B@2^Y@3T|FP||at|he end play in this particular deal is extremely rare, and it is a little harder to recognize than the majority of similar situations. It takes a good deal of optimism to attempt this play, since it can succeed only against certain distributions.|PG||NT||
+pn|,,,|st||SK|S|md|1S2HAK7642DA43CA85,SJT987HT3DK985CKQ,SKQ5HQJ5D762CT742,SA643H98DQJTCJ963|sv|B|rh||AH|Board 10E|ah|End Plays|NT|^B@2
+With both sides vulnerable, the bidding has gone as shown above.|mb|1hp1np3hp4hppp|pg||at| The play proceeds as follows:|PG||
+pc|sJ|pg||pc|sQ|pc|sA|pc|s2|pg||
+pc|dQ|pc|d3|pc|d9|pc|d2|pg||at| Against East's diamond attack, South holds up his Ace. By thus deliberately letting East retain the lead, he begins somewhat craftily the process of elimination which he earnestly desires.|PG||
+pc|dJ|pc|dA|pc|d5|pc|d6|pg||
+pc|h2|pc|h3|pc|hJ|pc|h8|pg||NT|^B@2
+In shifting to spades, South does not draw the second round of trumps. He leaves the heart Queen in the Dummy to serve as an entry.|
+pc|sK|pc|s3|pc|d4|pc|s7|pg||
+pc|s5|pc|s4|pc|h6|pc|s8|pg||NT|^B@2
+That Queen puts the Declarer back in the Dummy. What is more, the adverse trumps have broken 2-2, which is a help, but the Declarer is far from being out of the woods yet.^*N|
+pc|h7|pc|hT|pc|hQ|pc|h9|pg||
+pc|d7|pc|dT|pc|h4|pc|d8|pg||at|^*B The spades and diamonds have now been eliminated from Declarer's two hands.^*N|PG||
+pc|cA|pc|cQ|pc|c2|pc|c3|pg||
+pc|c5|pc|cK|pc|c4|SK||at|^*B West is thrown in the lead and has no choice but to lead a spade or a diamond. Whichever he selects, South will ruff in the Dummy and discard his losing club.|pc|c6|PG||AT| South, by playing for the best chance (which is here the only chance) makes his contract.^*N|PG||mc|10|sc|Y|pg||NT|^B@2
+It may be true that the situation in this deal, is a little far-fetched. The trumps must break 2-2, and the clubs must be divided in such a way that the Opponent who obtains the lead on the second round cannot continue them. However, the play is the only one that has a chance of fulfilling the contract, and consequently should be tried.|PG||UP|40|pf|Y|sc||nt|
+^B@2|CP|8|at|Movie Maker|cp||at|: You can play this hand double dummy. The opening lead by Watson was spade Jack. However, you may select a different lead. When finished or if not interested in double dummy feature, please click the forward arrow to move to the next section.|PG||nt||PF||BT||
+%%%%%%%%%%%%%%%%%
+qx|3p2B12,ANOTHER END PLAY AS THE ONLY CHANCE|
+HT|d|CS|1|cp|4|AT|^-
+{    ANOTHER END PLAY AS THE ONLY CHANCE    }
+^-|
+CS||cp||fp||AT|^B@2^Y@3I|FP||AT|t is quite true that some end plays are attempted when there is perhaps very little hope of their succeeding—that is to say, the preparatory plays leading up to the end play itself may not work out as hoped. However, such a play is often the only chance of making the contract, as in this deal:|PG||NT||
+pn|,,,|st||SK|S|md|1SAKT98H8532D94CQ6,S643HJT4DJ3CT9842,SQJ5HA976DAQ52CA3,S72HKQDKT876CKJ75|sv|N|rh||AH|Board 11E|ah|End Plays|NT|^B@2
+With North and South vulnerable, the bidding has gone as shown above.|mb|pp1dp1Sp2sp3sp3np4sppp|pg||NT|^B@2
+The play proceeds as follows:|
+pc|cT|PG||pc|c3|pc|cK|pc|c6|pg||at|^*B East wins the trick. South's first hope fails to materialize, namely, that the King of clubs was on his left.^*N|PG||
+pc|c5|pc|cQ|pc|c2|pc|cA|pg||NT|^B@2
+The club is as good a return lead as any East can make. As a matter of fact, any return at this point would work out in the same way.|PG||
+pc|sQ|pc|s2|pc|s8|pc|s3|pg||
+pc|s5|pc|s7|pc|s9|pc|s4|pg||NT|^B@2
+The Declarer now stops to consider. He has lost 1 trick already, and is sure to lose at least 2 more tricks (in hearts). The contract therefore seems to depend on a diamond finesse, as the one trump which is still outstanding seems to prevent any elimination play. However, he sees one chance and goes after it.|PG||
+pc|h2|pc|h4|pc|hA|pc|hQ|pg||
+pc|h6|pc|hK|pc|h3|pc|hT|pg||SK||NT|^B@2
+Here East is thrown in the lead for an end play at the seventh trick. He holds no more spades and no more hearts. A diamond lead eliminates the finesse in this suit and a club lead permits the Declarer to discard a diamond.|PG||NT|^B@2
+South really did not think he would succeed when he made this play, but he simply took advantage of this extra possibility. The hearts have to be lost anyway, so why not lose them at once? The missing trump is not at all dangerous and can just as well be left alone for a while.|PG||mc|10|pg||UP|24|pf|Y|sc||nt|
+^B@2|CP|8|at|Movie Maker|cp||at|: You can play this hand double dummy. The opening lead by Watson was club ten. However, you may select a different lead. When finished or if not interested in double dummy feature, please click the forward arrow to move to the next section.|PG||nt||PF||BT||
+%%%%%%%%%%%%%%%%%
+qx|3p2B13,A BRILLIANT END-PLAY "COUP"|
+HT|d|CS|1|cp|4|AT|^-
+{    A BRILLIANT END-PLAY "COUP"    }
+^-|
+CS||cp||fp||AT|^B@2^Y@3T|FP||AT|he brilliance of the end play in the next deal gives it a good many aspects of the coup. Certainly it is spectacular. It is really an end play, and not a coup, since a certain amount of elimination is necessary for its operation. It aims to capture an apparently impregnable King of spades, and is indeed a rare situation.|PG||NT||
+pn|,,,|st||sk|S|md|1SQJT98HA2DAK3CK75,SK642HJ95D965CT86,SA75HK64D8742CAQ4,S3HQT873DQJTCJ932|sv|N|rh||AH|Board 12E|ah|End Plays|NT|^B@2
+With North and South vulnerable, the bidding has gone as shown above.|mb|1sp2np4np5sp6Sppp|pg||at| The play proceeds as follows:|
+pc|d9|PG||pc|d2|pc|dT|pc|dK|pg||
+pc|sQ|pc|s2|pc|s5|pc|s3|pg||NT|^B@2
+It becomes apparent at once to South that he must lose 1 diamond trick. The success of the hand therefore depends upon the trump finesse. South is very pleased to see that it is successful.|PG||
+pc|sJ|pc|s4|pc|s7|pc|h3|pg||NT|^B@2
+At this point South receives a jolt. The spade King is correctly located, but it still cannot be caught by any ordinary means. The only chance now is to try an elimination play.|PG||
+pc|cK|pc|c6|pc|c4|pc|c2|pg||
+pc|c5|pc|c8|pc|cQ|pc|c3|pg||
+pc|cA|pc|c9|pc|c7|pc|cT|pg||
+pc|h4|pc|h7|pc|hA|pc|h5|pg||
+pc|h2|pc|h9|pc|hK|pc|h8|pg||
+pc|h6|pc|hT|pc|s8|pc|hJ|pg||
+pc|dA|pc|d5|pc|d4|pc|dJ|pg||NT|^B@2
+This is the situation with South in the lead.|sk||PG||NT|^B@2
+East is thrown in the lead and must return either a heart or a club, either of which will bring about the result desired by the Declarer.|pc|d3|pc|d6|pc|d7|pc|dQ|pg||mc|11|pg||sc|Y|NT|^B@2
+What happens here is that, no matter what card East leads back, South simply ruffs with the nine of spades and West must either overtrump or under trump—and either way his King cannot make a trick. A seemingly uncatchable King has been nicely trapped!|PG||NT|^B@2
+The principal characteristic of this end play, which also has something of the glamour of the coup, is that the player thrown in the lead, instead of being forced to lead into Declarer's tenace or to lead a suit providing Declarer with a ruff and a discard, is forced to lead a suit of which both Partner and Dummy are void, so that poor West is obliged to ruff under the Dummy's Ace of trumps.|PG||UP|44|pf|Y|sc||nt|
+^B@2|CP|8|at|Movie Maker|cp||at|: You can play this hand double dummy. The opening lead by Watson was diamond nine. However, you may select a different lead. When finished or if not interested in double dummy feature, please click the forward arrow to move to the next section.|PG||nt||PF||BT|| 
+%%%%%%%%%%%%%%%%%
+qx|3p2B14,ANOTHER END-PLAY "COUP"|
+HT|d|CS|1|cp|4|AT|^-
+{    ANOTHER END-PLAY "COUP"    }
+^-|
+CS||cp||fp||AT|^B@2^Y@3T|FP||AT|his example is very much like the preceding one, in that in some respects it resembles a coup more than it does an end play. But the fact that certain suits are eliminated first casts the ballot in favor of calling it an end play. In this hand two apparently certain trump losers are reduced to one.|PG||NT||
+pn|,,,|st||SK|S|md|1SAKT976HA75DK84C3,SQJ52HT82DQJTCT84,S843HKQ3DA2CAK976,HJ964D97653CQJ52|sv|B|rh||AH|Board 13E|ah|End Plays|NT|^B@2
+With both sides vulnerable, the bidding has gone as shown above.|mb|1sp3cp3sp3np5sp6Sppp|pg||at| The play proceeds as follows:|
+pc|dQ|PG||pc|d2|pc|d3|pc|dK|pg||
+pc|sA|pc|s2|pc|s3|pc|d5|pg||NT|^B@2
+The blow falls. West seems to hold 2 spade tricks that belong to him as naturally as his skin. However, an elimination play is possible.|PG||
+pc|c3|pc|c4|pc|cA|pc|c2|pg||
+pc|c6|pc|c5|pc|s6|pc|c8|pg||
+pc|d4|pc|dT|pc|dA|pc|d6|pg||
+pc|c7|pc|cJ|pc|s7|pc|cT|pg||
+pc|d8|pc|dJ|pc|s4|pc|d7|pg||
+pc|h3|pc|h4|pc|hA|pc|h2|pg||
+pc|h5|pc|h8|pc|hQ|pc|h6|pg||
+pc|hK|pc|h9|pc|h7|pc|hT|pg||NT|^B@2
+This is the situation now with North still in the lead.|SK||PG||at|^*B  West can now be thrown in the lead and his 2 natural spade tricks reduced to 1, thus:^*N|PG||
+pc|s8|pc|d9|pc|s9|pc|sJ|pg||NT|^B@2
+West can do nothing but kiss his second spade trick goodbye, for he has to lead into Declarer's King-Ten.|PG||mc|12|UP|44|pf|Y|sc||nt|
+^B@2|CP|8|at|Movie Maker|cp||at|: You can play this hand double dummy. The opening lead by Watson was diamond Queen. However, you may select a different lead. When finished or if not interested in double dummy feature, please click the forward arrow to move to the next section.|PG||nt||PF||BT||
+%%%%%%%%%%%%%%%%%
+qx|3p2B15,AN END PLAY IN TRUMPS|
+HT|d|CS|1|cp|4|AT|^-
+{    AN END PLAY IN TRUMPS    }
+^-|
+CS||cp||fp||AT|^B@2^Y@3C|FP||AT|onsider the following deal. You will remember this hand as occurring in Part I, Chapter XXIV. It was used there as an example of a reverse discard by East and it was pointed out at the time that Declarer could actually fulfill his contract of three diamonds by means of an end play.|PG||NT||
+pn|,,,|st||sk|s|md|4S643HQJ7DAKQ5CAQ4,ST82HAK9632D3C763,SAQ75HT4DJ842CKJT,SKJ9H85DT976C9852|rh||AH|Board 14E|ah|End Plays|mb|p|mb|3D|mb|p|mb|p|mb|p|
+pc|hA|NT|^B@2
+West wins the first 2 tricks with the Ace and King of hearts and continues the suit.|PG||
+pc|hT|pc|h8|pc|h7|pg||
+pc|hK|pc|h4|pc|h5|SB|SNice echo by East.|PG||pc|hJ|pg||sb|S|pc|h9|PG||at| Declarer, noticing East's echo should now go up with the Jack of diamonds in Dummy.|PG||
+pc|dJ|pc|c2|pc|hQ|pg||SB|S|at| East's best discard is a club.|pg||NT|^B@2
+Now three rounds of trumps are led|
+pc|d2|pc|d6|pc|dQ|pc|d3|pg||
+pc|dK|pc|h2|pc|d4|pc|d7|pg||
+pc|dA|pc|s2|pc|d8|pg||at|^*B disclosing the unfortunate break in the suit. ^*N|pc|d9|PG||NT|^B@2
+Three rounds of clubs follow, Declarer taking care to wind up in his own hand.|PG||
+PC|c4c3ckc5|PG||
+PC|cjc8cqc6|PG||
+PC|cac7ctc9|PG||at|^*B The last trump is then led, throwing East into the lead with the Ten of diamonds and forcing him to lead into Dummy's Ace-Queen of spades.^*N|PG||SK|| 
+pc|d5|pc|s8|pc|s5|pc|dT|pg||at|
+East obtains the last spade trick but the contract of three diamonds is nevertheless made.|PG||mc|9|pg||NT|^B@2
+Note that this course involves no danger as East is marked with holding the last trump and has already shown out of hearts. Note also that if East discards a spade instead of a club at the third trick the situation is the same. The end play simply occurs at the twelfth trick instead of at the eleventh trick.|PG||UP|40|pf|Y|sc||nt|
+^B@2|CP|8|at|Movie Maker|cp||at|: You can play this hand double dummy. The opening lead by Watson was heart Ace. However, you may select a different lead. When finished or if not interested in double dummy feature, please click the forward arrow to move to the next section.|PG||nt||PF||BT|| 
+%%%%%%%%%%%%%%%%
+qx|3p2SUM,Summary|HT|d|CS|1|CP|4|AT|^-
+{    Summary    }
+^-|CS||CP||fp||AT|^B@2^Y@3A|FP||AT|ll end plays have one characteristic in common—|cp||at|they occur toward the end of a hand, seldom earlier, indeed, than the tenth trick|cp||at|. |PG||AT|
+
+An end play, as the term is used by the majority of writers on Bridge and related games, occurs when an Opponent is put in the lead at a time when he can lead back only to the Declarer's advantage. The "Declarer's advantage" may be any one of a number of situations. |PG||AT|
+
+The Opponent may be forced to lead into a tenace, thus destroying the value of his own guarded honor or honors, or |PG||AT|
+
+he may be forced to lead a suit which the Declarer can ruff in one hand and throw off on in the other. |PG||AT|
+
+Only the first type of end play—that which forces an Opponent to lead into a tenace—is possible at a no-trump contract. At a suit contract, both kinds just mentioned are possible, and one or two variations. |PG||AT|
+
+One rare sort of end play occurs when an Opponent is forced to lead a suit of which both his Partner and one of the Declarer's hands is void, so that Partner is forced to trump under the Declarer's commanding trumps.|PG||AT|
+
+A certain amount of preparation is necessary for most end plays. This preparation consists of |PG||AT|
+
+eliminating those suits which it is not desirable for the Opponent to return when he is thrown in the lead. Often, when the end play is designed to give the Declarer a ruff and a discard, the elimination is from the Declarer's partnership hands instead of from the hand of the Opponent who is to be thrown in.|PG||nt||
+%%%%%%%%%%%%%%Page
+HT|d|CS|1|CP|4|AT|^-
+{    Summary - Continued    }
+^-|CS||CP||fp||AT|^B@2^Y@3T|FP||AT|he beauty of an end play is that it frequently offers a practical certainty in place of a doubtful finesse, or, at best, a finesse which depends on a fifty-fifty chance. Not all end plays are dead certainties, of course; in fact, the Opponents may occasionally circumvent the Declarer as he tries to approach an end play.
+|PG||ht|w|AT|^B@2This is the end of  Part II - Chapter III. |pg||LF|CH-4-P-2.LIN| 

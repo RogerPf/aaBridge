@@ -1,0 +1,35 @@
+%% Add header
+%% Last edited  2013 Dec 30
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+st||
+qx|ah0|
+
+at|^b@2^*bAdd Header^*n^f^*b!ah! ... !^*n|at|^z@3
+|
+pg||
+at|^d!rh!!  ^ithink   ^*bRemove Header^*n       clears the current header.
+|
+rh||
+pg||
+at|^d!ah! stuff !    ^ithink   ^*bAdd Header^*n      adds new stuff to the current header.
+|
+ah| stuff |
+pg||
+ah| more |
+at|^d!ah! more !    ^imore adds more
+|
+pg||
+ah| Board 777 |
+at|^d!ah! Board 777 !    ^iwill put the number, into the Board number area
+|
+pg||
+ah| Board A23b |
+at|^d!ah! Board A23b !    ^iwill put the text, into the Board number area
+|
+
+ht|z|at|@0
+^*b end ^*n|

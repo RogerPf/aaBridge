@@ -1,0 +1,95 @@
+%% Welcome
+%% Last edited  2013 Dec 03
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|150|ff|1Arial|fb|19|fm|1|       large
+fh|236|ff|2Arial|fb|29|fm|2|       med
+fh|342|ff|3Arial|fb|39|fm|3|       med+
+fh|425|ff|4Arial|fb|49|fm|4|       very small for faking 'buttons'
+
+cr|3200|cg|3255|cb|3255|     3  light blue
+cr|4170|cg|4190|cb|4255|     4  med blue
+cr|516|cg|5128|cb|516|       5  green 
+cr|7230|cg|70|cb|70|         7  red
+
+
+
+bt||
+tu|y|
+mn|             Louis H. Watson's                 The Play of the Hand at Bridge     |
+qx|Welc|
+fp|1|at|
+
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp|4|
+ht|d|
+at|^^|fp||at|
+^d@2^z@3
+^bWelcome to the    |fp||at|^*baaBridge Watson Edition^*n|fp||at|    which is a combination of  
+ 
+
+@.   ^*bLouis H. Watson's  @-  The Play of the Hand at Bridge^*n
+^b and
+@.   ^*baaBridge^*n, a simple Bridge playing program, which is included to allow novices and beginners 
+^o to get some practice at the card play in the book.
+
+
+^c Click on either of the   ^*bPlay Bridge^*n   buttons    |fp|1|at|^*bOR^*n  |fp||at| @-|
+
+
+cs|3|at|^c@2^j@3|
+fp|9|at| 
+ ^- { 
+ |fp|1|at|^*f playBridge_playBridge,   Play Bridge   ^*n|at|
+} ^-  |fp|4|at| 
+ ^- { 
+|fp|1|at|^*f playBridge_and_dealChoice,    Play Bridge   ^*n|fp|||at|
+|fp||at|^*f playBridge_and_dealChoice, and show Deal Choices^*n
+} ^-  |fp||at|
+|
+fp|4|at|
+ ^-{ ^*f playBridge_distrFlashCards,Distribution Flash Cards^*n|at|
+} ^-  |fp|4|at|
+|cs|4|ht|v|at|
+
+
+@0@1^i|cp|7||fp|3|at|^*b   *New^*n@2 |fp|4|cp||at|includes  Learning to Count|
+
+at|
+@0@1^n@2^w@3
+|
+ht|k|fp|9|at|^^ ^^ ^^|cs|3|fp|2|at|
+ ^-{ ^*h https://www.youtube.com/channel/UCjqx0Cofc7-TT-N0tfYR8rg/videos?flow=grid&view=0 ^*n aaBridge on YouTube ^*x|at|
+} ^-  |fp|4|at|
+|cs|4|
+
+at|
+@0@1^t@2^z@3
+|
+ht|k|fp|9|at|^^ ^^ ^^|cs|3|fp|2|at|
+ ^-{ ^*h http://www.youtube.com/results?search_query=intitle:'aaBridge+Extra'^*n Extra ^*x|at|
+} ^-  |fp|4|at|
+|cs|4|
+
+ht|m|
+at|
+@0@1^m@2
+
+
+
+Use the |cp|7||fp|3|at| ^*bStep >^*n |fp||cp||at| button below to read - |fp|9|at| 
+|fp||at|^q^*bMoving Around in the Presentation^*n
+
+
+Or you can   |fp|2|at|^*bDrag n Drop^*n|fp||at|   any downloaded, single or
+^o group of lin files.  They will open as a book.
+|
+
+ht|y|at|@0@1^b@2
+
+In future, please press   ^*bStep >^*n   or   ^*bFlow >^*n
+|
+
+ht|z|at|@0
+^r Roger Pfister   -   December 2013|
+|
+

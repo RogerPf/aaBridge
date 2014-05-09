@@ -1,0 +1,43 @@
+%% Speech Bubble  -  sb
+%% Last edited  2013 Nov 17
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+bt||
+st||
+qx|sb|
+at|^b@2^*BSpeech Bubble  -  sb^*N^y@3
+
+Known Issue    -    ^*BSometimes^*N     the left-hand column speech bubbles show as covered / partly covered.  However in actual use, when clicking the Step and Play buttons this does not happen. This is therefore not considered a problem.|
+sb|NNorth Sed ut perspiciatis undeomnis iste natus error sit vo luptatem accusantium dolor emque sed iste da|
+sb|EEast Sed ut perspiciatis undeomnis iste natus error sit vo luptatem accusantium dolor emque sed iste da|
+sb|SSouth Sed ut perspiciatis undeomnis iste natus error sit vo luptatem accusantium dolor emque sed iste da|
+sb|WWest Sed ut perspiciatis undeomnis iste natus error sit vo luptatem accusantium dolor emque sed iste da|
+
+pg||
+nt|^b@2^*BSpeech Bubble  -  sb^*N^y@3
+
+^d!sb!E What you want the seat to say goes here, up to 100 chars with a compass point as the first !
+|
+sb|E What you want the seat to say goes here, up to 100 chars with a compass point as the first |
+sb|N|
+sb|S|
+sb|W|
+pg||
+
+at|
+^d!sb!E! ^iClears it, for that one seat only
+|
+sb|E|
+pg||
+
+sk||md|4SQ862HQ8D85CKJ743,SK93HKT92DAKJT2CA,S4HAJ54D743CQT852,SAJT75H763DQ96C96|sv|o|mb|p|mb|p|mb|1D|mb|p|mb|1S|mb|p|mb|2H|mb|p|mb|3D|mb|p|mb|3S|mb|p|mb|4S|
+
+sb|E What happens when I become the declarer? |
+pg||
+
+mb|p|mb|p|mb|p|
+
+at|
+^iIf you move, the speech bubble moves with you|
+ht|z|at|@0
+^*B end ^*N|

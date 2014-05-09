@@ -1,0 +1,18 @@
+%% Standard Table
+%% Last edited  2013 Dec 30
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+st||
+
+at|^b@2^*bStandard Table^*n^g^*b!st!!^*n|at|^z@3
+|
+at|
+This is a standard table created by the   ^*b!st!!^*n   command. This is the default for new lin files.
+
+You need to use a  Bare Text   ^*b!bt!!^*n   at the start of your lin file to get an empty full screen.
+| 
+ht|z|at|@0
+^*B end ^*N|

@@ -1,0 +1,108 @@
+%% Vertical Position
+%% Last edited  2013 Dec 03
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+bt||
+at|
+^b@2^*bVertical Position^*n
+
+You can set the current vertical position (where, up or down the page the next line of text will appear) by using a two letter pair 'bar command'.  Unfortunately this command has about the worst name possible.
+
+^c!^*bht^*n!<letter>!    @-   think        ^*bH^*nell of a silly name for vertical ^*bT^*next position         (or whatever)   [sigh]
+
+<letter> is  a to z,  or  A to Z.  Every page is divided up into 25 zones (not the same as the height of a line) the top of the page is at zone 'a' and zone 'z' is little up from the bottom of the page.   (26 letters, 25 zones).
+
+
+
+
+
+!nt!!
+mn!A big double height mn-header goes here taking a lot of space
+|cp|7|at|^*b!ht!e!^*n|cp||at|
+at!
+^b@2A safe place to put text that misses the mn-header
+!
+
+
+
+
+
+Note @- when an  !st!  Standard Table  is showing  ^*b there are still 25 zones ^*n @- but they are much narrower!
+
+|
+
+pg||
+qx|Vpos2|
+nt||
+at|line 1
+line 2                 ^g^*bVertical Position^*n
+line 3
+line 4
+line 5
+line 6
+line 7
+line 8
+line 9
+line 10
+line 11
+line 12
+line 13
+line 14
+line 15
+line 16
+line 17
+line 18
+line 19
+line 20
+line 21
+line 22
+line 23
+line 24
+line 25
+line 26
+line 27
+line 28
+line 20
+line 30
+line 31
+line 32
+line 33
+line 34
+|cp|5|at|^*b
+^c@2|
+ht|a|at|zone a|
+ht|b|at|zone b|
+ht|c|at|zone c|
+ht|d|at|zone d|
+ht|e|at|zone e|
+ht|f|at|zone f|
+ht|g|at|zone g|
+ht|h|at|zone h|
+ht|i|at|zone i|
+ht|j|at|zone j|
+ht|k|at|zone k|
+ht|l|at|zone l|
+ht|m|at|zone m|
+ht|n|at|zone n|
+ht|o|at|zone o|
+ht|p|at|zone p|
+ht|q|at|zone q|
+ht|r|at|zone r|
+ht|s|at|zone s|
+ht|t|at|zone t|
+ht|u|at|zone u|
+ht|v|at|zone v|
+ht|w|at|zone w|
+ht|x|at|zone x|
+ht|y|at|zone y|
+ht|z|at|zone z|
+|cp||at|^*n|
+
+ht|m|at| ^gUsing zones you can jump anywhere on the screen and there start adding lines of text.
+|
+
+ht|z|at|
+^g^*b end ^*n|

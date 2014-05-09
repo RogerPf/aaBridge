@@ -1,0 +1,379 @@
+%%%%CH-7-8-P-1.lin
+%% Update 01/02/2012
+%%By Kia
+mn|       ESTABLISHING A SUIT AT NO-TRUMP              Chapter - 7 and 8            |
+TU|y|bt||
+%%Font and color codes
+fh|155|ff|1Arial|fb|19|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|36|fm|3|                           FOR 3
+fh|430|ff|4Arial|fi|4y|fm|4|     %%Larger than default— italic
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|30|cg|30|cb|3128|                dark Blue 3
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|664|cg|6255|cb|6255|             6=TURQUOISE
+cr|70|cg|7235|cb|7235|              green/blue 7
+cr|8255|cg|80|cb|80|                red 8
+cr|9128|cg|950|cb|90|               Reddish-brown 9
+%%% 
+cs|6|ht|f|fp|3|at|^-
+WATSON's Classic Book on The Play of the Hand at Bridge
+Part I, Fundamentals of  Play
+Chapter VII and VIII, ESTABLISHING A SUIT AT NO-TRUMP
+^-|FP||ht|K|at|
+^*U^DTABLE OF TOPICS ^*N
+
+|cp|1|AT|^D^*G7B01,Establishing a Suit at No-trump - Chapter VII ^*N  
+^e^*G7B02,Establishing a Suit Before Eliminating Entries ^*N  
+^E^*G7B03,Choosing Between Two Establishable Suits ^*N 
+^E^*G7SUM,Summary, Chapter VII^*N
+
+^D^*G8B04,Establishing a Suit at No-trump - Chapter VIII^*N 
+^E^*G8B05,The Time Element in Establishing a Suit^*N  
+^E^*G8B06,Establishing a Suit by Finessing^*N
+^E^*G8B07,A second Look at Double Finesse ^*N
+^E^*G8B08,Reserving an Entry For a Second Finesse^*N
+^E^*G8SUM1,Summary, Chapter VIII^*N
+^d^*GHOW,Establishing 8 and 9 card suits missing two honors - comments by Howard Schutzman^*N
+|CP||at|
+
+^b@2^Y@3 |PG||cp||nt|| 
+%%%%%%%%%%%%%%%%%%
+qx|7B01, Establishing a Suit at No-trump - Part I|
+nt||HT|e|at|^b@2^z@3The preceding pages (in the book) have taught you how to treat various card combinations in a suit in order to obtain the greatest possible number of tricks from each combination. The next step is for you to learn how to discriminate—how to choose between the different suit holdings which exist in your hand. You must learn how and why one suit is selected for development rather than another.|PG||AT|
+
+We shall continue to assume that every hand is played at a no-trump contract, mainly because most principles we shall take up are common to both no-trump and suit play. The special aspects peculiar to suit play will be taken up later. By the time the principles of no-trump play are mastered, the peculiarities of suit play will be very easy to comprehend.|PG||AT|
+
+The characteristic feature of no-trump play is that all suits are of equal rank in trick-taking power, so that, as a consequence, high cards lord it over the others. However, even high cards become helpless when one side is winning tricks by leading out a series of established winners in low cards. The high cards will probably win tricks eventually, but they should frequently be made to play a wholly secondary role for the time being.|PG||AT|
+
+We have already emphasized that the chief object of the Declarer at a no-trump contract is to win as many tricks as he can. Now it is true of his hand that the high cards he holds will generally take care of themselves, and are almost certain to take tricks some time. The low cards, however, are not sure winners. They require |cp|8|FP|2|at|development |cp||FP||at|and |cp|8|FP|2|at|establishment|cp||FP||at|, and to develop and establish low cards is impossible without some definite ^*Iplan of play^*N.|pg||CS|1|cp|4|fp|2|AT|^- 
+
+{ 
+    Anyone can win with Aces and Kings,          
+    but it takes a fair amount of skill and strategic foresight to win with sevens and eights.    
+ }
+^-|PG||fp||cs||cp||NT||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% page 2
+HT|e|at|^b@2^z@3When you stop to think that there are only twenty honors (high cards) in the whole deal, as against thirty-two cards ranking nine or lower, you suddenly see how important the manipulation of low cards becomes. |pg||CS|4|FP|2|cs|1|cp|4|AT|^-
+
+{    In fact, no one can ever play Contract Bridge successfully    
+    without learning how to make the most of low card.    }
+^-|PG||FP||cp||cs||AT|
+
+Though high cards must be led or played at some stage of the game, in order to cash in the tricks they represent, they should always be led or played with some purpose in the player's mind. |cp|8|at|Many beginners (and, no matter how much they play, many persons never pass beyond the beginner stage) think they must take all their tricks as quickly as possible. They suffer under the delusion that if they do not cash in their high cards immediately, they will lose them.|PG||cp||at|
+
+What is the result of this foolhardy mode of play? The result is that after the Declarer has taken all his high-card tricks, the Opponents swoop down like hungry birds of prey and snap up the remaining tricks with the lowly sevens and eights which the Declarer so generously established for them.  |PG||AT|
+	
+Contrary to the beginner's notion, it is not necessarily disastrous to lose the lead by letting an Opponent take a trick. In fact, it is often advisable. Remember that the most advantageous position for you, if you are holding certain tenaces, is for your left-hand Opponent to lead. However, |CP|8|AT|you should never give up the lead to an Opponent unless you know why you are doing it, and have a good reason for so doing. |CP||AT|If you concede a trick to one of the Opponents' honors, you should be planning to take tricks later with some lower cards which cannot be utilized until they are established. Any sacrifice of tricks must be made to secure the promotion of lower cards to positions of importance. The following deal is a simple example: |PG||nt||
+%%%%
+st||pn|You,,,|sk||md|4SAK4HQ63DK82CKJT3,,SQT5HAK2DAQ5CQ976,|rh||ah|Board 1|sv|0|mb|p6nppp|nt| 
+^B@2Let us say that you are playing a contract of six no-trump, which, in view of the cards you and your partner (South and North) hold, is not unduly ambitious. |pg||AT|
+
+Suppose that the opening lead is a spade|sk|s|md|0,SJ987H9874DT76CA2,0,S632HJT5DJ943C854|pg||pc|s7|PG||AT| which you win with the Ace in your own hand. The fact that you should win this first trick is an obvious result of your spade holding, which cannot help taking the first three rounds.|PG||
+nt||AT|^B@2
+Normally, however, as soon as the opening lead is made, you should stop for a few moments ^*Ito study the hand and mentally explore its possibilities^*N.|PG||AT| This momentary hesitation is always important. It should determine where you want the lead placed at the second trick, whether you wish to develop a suit, whether you may have to finesse, and a number of other things which you will learn anon.|PG||AT| Even at this stage of your knowledge, you can make some plan of play. It may not be the right plan. When you know more, you may find better plans. But the habit of stopping to look ahead is the important thing.|PG||NT|^B@2
+In the hand, you win the first trick.|pc|s5|pc|s2|pc|sa|PG||at| You pause then to see what is ahead of you, bearing in mind that you must win 11 more tricks.|PG||AT| You see at once that you can be sure of 2 more spade tricks,|HC|SKQ|pg||at| 3 heart tricks,|HC|HAKQ|PG||AT| and 3 diamond tricks,|HC|DAKQ|PG||AT| making a total of 9 tricks. After these tricks are taken, the only outstanding high card will be the Ace of clubs. Your King or Queen of clubs will drive out the Ace, leaving you the remainder of the club tricks. In other words, it looks very much as though the Opponents will win just 1 trick—with their club Ace.|PG||LC|SKQHAKQDAKQ|
+NT|^B@2
+Suppose, then, that you proceed with cashing in the tricks in the order in which you have mentally noted them. You take 3 spade tricks, 3 heart tricks, and 3 diamond tricks. |PG||PC|s4|PC|s8|PC|sq|PC|s3|PG||
+PC|st|PC|s6|PC|sk|PC|s9|PG||
+PC|hq|PC|h4|PC|h2|PC|h5|PG||
+PC|h3|PC|h7|PC|hk|PC|ht|PG||
+PC|ha|PC|hj|PC|h6|PC|h8|PG||
+PC|d5|PC|d3|PC|dk|PC|d6|PG||
+PC|d2|PC|d7|PC|dq|PC|d4|PG||
+PC|da|PC|d9|PC|d8|PC|dt|PG||NT||AT|^B@2
+If you are watching each trick like a hawk (as you should, no matter how simple the play may seem to be), you will notice that every player follows suit on the three rounds of spades, three rounds of hearts, and three rounds of diamonds. That leaves one card outstanding in each of these suits. |PG||NT|^B@2
+As you can see in the example, since the hands are all exposed, |SK||AT|West is left with the Jack of spades, the nine of hearts, and the Ace and deuce of clubs. You know that a diamond is also outstanding (the Jack), and you can see in the diagram that this is held by East. |PG||AT|
+
+Now suppose that you lead your club Queen to force out the Ace. |PG||
+PC|cq|PC|c4|PC|c3|PC|ca|PG||NT|^B@2
+West wins the trick and what happens? Do you think he will lead back clubs to you so that you can cash in those last 3 club tricks?|PG||AT| Not by a long shot—if West is a player who knows how to count. He will know that he has 2 other tricks: the Jack of spades and the nine of hearts. By leading these two cards (which you have established for him), he will set your Small Slam contract by 2 tricks. |PG||
+PC|sj|PC|c6|PC|c5|PC|ct|PG||
+PC|h9|PC|c7|PC|c8|PC|cj|pg||mc|10|pg||up|48|nT|^B@2
+In other words,|PG||AT| by recklessly taking your high-card tricks in spades,|HC|sakq|PG||AT| hearts,|HC|hAKQ|PG||AT| and diamonds|HC|dAKQ|PG||AT| without a moment's thought for the future, you have established 2 long-suit tricks for the Opponents. (You have actually established 3 long-suit tricks, but East cannot cash his in because he has no entry.)|PG||AT| The situation would be even worse for you if West held the Ace of clubs singleton, and had one more diamond, for he would then hold the fourth diamond also, to cash in against you if you play as first planned.|PG||NT|^B@2
+It is easy enough to see where the mistake was made. In your partnership hands you had originally only six spades,|HC|sakqt54|PG||AT| six hearts,|HC|hakq632|PG||AT| and six diamonds.|HC|dakq852|pg||at|
+
+In other words, even if the adverse cards of these suits are divided as evenly as possible between the Opponents, four in one hand and three in the other, the immediate play of the three rounds by you will automatically establish at least one card in each suit for the Opponents.|PG||lc|sakqt54hakq632dakq852|NT|^B@2
+Therefore, to cash in your high-card tricks immediately is lacking in purpose, for it accomplishes nothing for your side. It helps the Opponents, not you. It cannot possibly help you, no matter how the Opponents' cards are distributed. Nor can the postponement of cashing in these tricks cause you to lose any of them.|PG||LC|SAKQHAKQDAKQ|NT|^B@2
+What, then, should your plan of play be?|PG||AT| You should endeavor to establish your clubs at once. In the example given, this is very easy. You simply lead the King of clubs, sacrificing it to West's Ace at the second trick. (If West holds up his Ace, you win the trick, and lead another club to your Queen.) |PG||
+pc|s7|pc|s5|pc|s2|pc|sa|pg||
+PC|ck|PC|c2|PC|c6|PC|c4|PG||AT|As soon as West takes his Ace of clubs, at the second or third trick, he must lead a card which you will be able to win |PG||
+PC|cj|PC|ca|PC|c7|PC|c5|PG||
+PC|s8|PC|st|PC|s3|PC|sk|PG||at| and the rest of the tricks are yours to claim.|cp|8|at|^*B*^*N|PG||NT||cp|8|at|
+^B@2^*B*^*N|CP||AT| When the remaining tricks unquestionably belong to the Declarer (or to any other player), that player may lay down his cards and claim the rest of the tricks, indicating any particular mode of play if such is necessary for him to secure the tricks he claims. This procedure of claiming obvious tricks is commonly followed by all good players in order to save time which would be consumed in actually playing the hand out without any benefit (in pleasure and experience) to either side. |PG||NT|
+^B@2^*IThat is, no good player considers it "fun" to lead out and haul in tricks that belong to him as surely as the nose on his face. The beginner should be warned, however, not to claim the rest of the tricks in this fashion unless he is sure they belong to him no matter how the Opponents may play. The correct procedure for claiming tricks and for penalizing a player who falsely claims the rest is covered in the Laws of Contract Bridge, October 1, 1948.
+
+^W@2^*ISam Fry, Jr.|PG||NT||
+%%%%%%%%%%%%%%%%B01page 3
+bt||HT|e|at|^b@2^Y@3T|fp||cp||at|he principles involved in the example hand just given are the fundamental principles of all no-trump play. |pg||cs|1|cp|4|fp|2|at|^-
+
+{    |VA|4|at|You should, as a rule, never attempt to establish a suit in which the Opponents hold    
+
+more cards than you do,
+
+    and you should not play your high cards until it is absolutely necessary.    |VA|4|at|
+    } 
+
+^-|PG||cp||fp||at|This latter admonition is a modification of the earlier principle of not giving up control of any suit without an excellent reason for so doing. The Opponents may also be establishing their suits at the same time. It is extremely important to watch every card that is played to every trick. You should form the habit of counting the cards in each suit as they are played or discarded. |PG||AT|
+
+Your mental calculation might go something as follows:|PG||AT|
+
+"^*BLet's see now. Spades have gone around twice. I still hold two spades, and the Dummy has one. Since everybody followed suit on the two rounds, that makes eight plus three—eleven spades have been accounted for. Therefore there are two outstanding. One Opponent may have both of them, or each Opponent may have one.^*N" |PG||AT|
+
+A mental calculation similar to this should be gone through for each suit during the play of every deal. You should always know how many cards of each suit, and, if possible, their denominations, remain unplayed at any point in the game. |PG||NT|| 
+
+%%%%%%%%%%%%%%%%B02
+qx|7B02, ESTABLISHING A SUIT BEFORE ELIMINATING ENTRIES|Ht|E|va|6|cs|1|cp|4|fp|2|3d|3|at|^-{    ESTABLISHING A SUIT BEFORE ELIMINATING ENTRIES    }
+^-|cp||fp||cp||at|^b@2^y@3T|fp||cp||At|he following deal is slightly more complex. It illustrates the importance of establishing a suit before taking out entries which may be required to cash in the established low cards later in the play:|pg||nt||
+st||sk|s|md|4SAK62HAK4DT94CAK8,SQT75HT92D62CJ643,S83HQJ85DKQJ85C92,SJ94H853DA73CQT75|rh||AH|Board 2A|sv|0|mb|P6NTPPP|nt|^B@2
+Suppose you are the Declarer (South) playing a contract of six no-trump.|PG||AT| West's opening lead is the five of spades,|PC|s5|PG||AT| on which, since there is nothing to be gained from playing the eight-spot, you play the trey from Dummy.|pc|S3|PG||sk|E|AT| East plays the Jack (not the four, since he wishes to drive out as high a card as possible from your hand).|PC|SJ|PG||sk|S|AT| Naturally, you win the trick with the King. You do not need to hesitate about taking this first trick with your King, for you still have the Ace to keep control of the spade suit.|PC|SK|PG||NT|^B@2
+At this point you should start planning your play. Your first object will be to try and develop the suit containing the greatest number of potential tricks.|PG||AT| You can already see 1 more trick in spades,|HC|SA|PG||AT| and no more than 2 tricks in clubs.|HC|CAK|PG||AT| Your hearts are very strong:|HC|HAKQJ|PG||AT| you have the greatest possible high-card strength, consisting of the four top honors, and you also have seven cards of the suit, leaving only six divided between the Opponents. In fact, you have 4 sure heart tricks.|PG||NT|^B@2
+Having won the first trick with the King of spades, you might then proceed to cash in those 4 heart tricks, which, with another spade trick, and 2 club tricks, will make 8 tricks. But what of the other 4 tricks you need? If for no other reason than that you have not yet planned how to make your whole contract, to cash in your sure heart tricks at once is certainly imprudent.|PG||NT|^B@2
+Indeed, it would be insane, as events will prove. You have the four top honors in hearts and control of every other suit eventually; there is, therefore, no reason for being precipitate in hearts. You can cash in those heart tricks whenever it suits you to do so.|PG||NT|^B@2
+Look now at that diamond suit. You have eight diamonds—five in the Dummy's|HC|DKQJ85|PG||AT| hand and three in your own.|HC|DT94|PG||AT| Your sequence is complete from the King down to the eight-spot. That is, the only outstanding card which can beat you in diamonds is the Ace. |PG||NT|^B@2
+Don't you think, then, that it might not be a bad idea to get rid of that diamond Ace first of all? As soon as that Ace is eliminated, you can draw a breath of relief, for nothing will be left to interfere with your cashing in your remaining tricks. The only possibility of calamity in this particular hand lies in that outstanding diamond Ace, which is a menace as long as it is unplayed.|PG||NT|^B@2
+The proper playing plan, therefore, is to lead the Ten of diamonds to the second trick, playing the five from Dummy. (Or the four could be led from your hand, and the eight played from Dummy.)|
+PC|dt|PC|d2|PC|d5|PG||AT| Your object is to force the Opponents to play their Ace if they wish to win this diamond trick. If East at once takes the Ten with his Ace,|PC|da|PG||at| you can count your sure tricks as follows: 1 spade trick already won, 1 spade trick to come, 4 heart tricks, 4 diamond tricks (now sure), and 2 club tricks, making a total of 12. Thus you will make your contract of six no-trump.|PG||
+nt|^B@2
+However, suppose that East does not play his Ace on your lead of the Ten of diamonds.|pg||UP||sk||pg||pc|d3|PG||at| What then?|PG||AT| Ah, something happens which is the particular lesson you are to learn from this hand.|PG||AT| Your Ten of diamonds wins the second trick.|PG||AT| Thereupon you lead the nine, which is allowed to win the trick.|PC|d9|PC|d6|PC|d8|PC|d7|PG||at| Now you lead the four, playing the Jack from Dummy (the eight and five having already been played). East, now having only the Ace, is forced to play it and win the third round of diamonds.|PC|d4|PC|c4|PC|dj|PC|da|PG||nt|^B@2
+All very well, you say, for now, no matter what East leads, you can win the next trick and proceed to make your contract.|PG||AT|
+
+Yes, it is indeed all very well since you have developed your diamonds at once.|PG||NT||LC|SAHAQKJCAKDKQJT9854|
+%%%%%%%%%%%%%%5
+st||sk||md|4SAK62HAK4DT94CAK8,SQT75HT92D62CJ643,S83HQJ76DKQJ85C92,SJ94H853DA73CQT75|rh||AH|Board 2B|sv|0|mb|P6NTPPP|NT|^B@2
+But pause for a moment and consider what would have happened if you had cashed in your 4 heart tricks before establishing your diamonds.|pg||
+PC|s5|PC|S3|PC|SJ|PC|SK|PG||
+PC|HK|PC|H2|PC|H6|PC|H3|PG||
+PC|HA|PC|H9|PC|H7|PC|H5|PG||
+PC|H4|PC|HT|PC|HQ|PC|H8|PG||
+PC|HJ|PC|C5|PC|S2|PC|C3|pg||NT|^B@2
+You would then be faced with the situation as shown above.|PG||at|
+
+Four rounds of hearts exhausted the hearts from Dummy, and on the fourth round you discarded a spade from your hand.|PG||
+PC|d5|PC|d3|PC|dt|PC|d2|PG||
+PC|d9|PC|d6|PC|d8|PC|d7|PG||
+PC|d4|PC|c4|PC|dj|PC|da|PG||
+nt|^B@2
+Three rounds of diamonds exhausted all the diamonds in your hand. You have taken 1 spade trick, 4 heart tricks, and 2 diamond tricks. But now you cannot get over to the Dummy to cash in those 2 good diamonds.|pg||NT|^B@2
+East would not lead a diamond even if he had one, and you have no diamonds left which you can lead yourself. In other words, your King and Queen of diamonds are rendered useless. How did this happen?|PG||AT| It happened because you took your heart tricks too soon, eliminating entries from the Dummy. |PG||NT||
+%%%
+st||sk||md|4SA62HAK4CAK8,SQT7HT92CJ64,S8HQJ76DKQC92,SJ94H853DA73CQT7|rh||ah|Board 2C|sv|0|ha|Y|NT|^B@2
+By playing according to the other plan, developing diamonds before playing hearts [after East wins with the diamond Ace at trick 4], the situation develops as is shown above.|PG||At|
+
+Now, no matter what East leads, you win the trick. After two rounds of hearts which you win with your Ace and King, the four of hearts led to Dummy will enable you to enter Dummy's hand to cash in your remaining heart tricks and also those 2 good diamonds.|PG||wt|e|
+PC|S9|PC|SA|PC|S7|PC|S8|PG||
+PC|HK|PC|H2|PC|H6|PC|H3|PG||
+PC|HA|PC|H9|PC|H7|PC|H5|PG||
+PC|H4|PC|HT|PC|HQ|PC|H8|PG||NT||cp|8|at|^B@2
+Your hearts are, therefore, useful to you as ^*Ientries.^*N|cp||pg||at|
+
+Remember what you learned about the importance of entries. Not only does the immediate play of the hearts accomplish nothing to your advantage in this hand, but it also costs you 2 tricks and your contract. The problem of establishing suits is always closely linked with keeping adequate entries available in both hands. |PG||NT||ha||
+
+%%%%%%%%%%%%%%%55B03
+qx|7B03, CHOOSING BETWEEN TWO ESTABLISHABLE SUITS|BT||ht|e|va|6|CS|1|CP|4|fp|2|3d|3|at|^-{    CHOOSING BETWEEN TWO ESTABLISHABLE SUITS    }
+^-|cp||fp||
+at|^b@2^Y@3Q|CP||FP||AT|uite often a no-trump hand will contain more than one suit which should be established without delay. The natural thing is to try and establish them both, but sometimes there is not time enough for you to do this. You must therefore decide which suit is to be established first.|PG||AT| The answer |CP|8|AT|is to try to establish the longer suit first in most instances.|CP||pg||AT| For example, suppose you have to choose between spades and hearts, ignoring all other factors, thus:
+ 
+^F@S K J 9 8 2
+^F@H Q T 3
+
+^f@S Q T
+^F@HK J 9 6 5 2|PG||AT|
+
+In both suits you have a solid sequence with only the Ace missing. However, you have nine hearts and only seven spades. By driving out the Ace of hearts first, you establish 5 tricks, whereas, by driving out the Ace of spades first, you establish only 4 tricks. Clearly you should proceed first with what yields the larger profit, namely, establishing the 5 heart tricks.|PG||nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% page
+HT|E|va|6|cp|4|cs|1|cp|4|fp|2|3d|3|at|^-{    CHOOSING BETWEEN TWO ESTABLISHABLE SUITS - Continued    }
+^-|cp||fp||cp||
+at|^b@2^Y@3I|CP||FP||AT|f the hand contains two suits of equal length both of which are establishable, prefer the suit which offers the greatest number of tricks. Consider, for example, the following deal:|PG||NT|| 
+%%%%%%%%%% BOARD 3
+st||sk|s|md|4SK9HKQ32DKT76CKT8,SQJT73HJ98DA32CA6,SA6HA4DQJ98CQJ743,S8542HT765D54C952|rh||AH|Board 3|sv|0|ha||mb|P3NTPPP|NT|^B@2
+The contract is three no-trump; you are Declarer (South)|PG||PC|SQ|AT| West opens the spade suit (with the Queen), and, since the question of which hand wins the trick is not of immediate importance, you win in your own hand with the King.|pg||PC|s6|PC|s2|PC|sk|PG||NT|^B@2
+Now is the time to stop and plan your play. You have 2 certain spade tricks and 3 certain heart tricks (4 tricks in hearts are out of the question since the Opponents hold seven hearts to your six). These 5 tricks are the only ones on which you can absolutely rely.|PG||NT|^B@2
+However, your diamond and club sequences contain potential tricks if you can drive out the opposing Aces. Which of these two suits do you try to develop first?|PG||lb|*mWhich suit do you try to develop first? The quiz is not in the book.^Clubs~Diamonds^1|NT|^B@2
+If you drive out the diamond Ace, you will be able to take 3 diamond tricks, but if you drive out the club Ace, you will be able to take 4 club tricks. This difference exists in spite of the fact that you have an equal number of diamonds and clubs; the explanation lies in the distribution of the cards. Your diamonds are evenly divided, but your clubs are longer in Dummy's hand than in your own.|PG||NT|^B@2
+The most advantageous suit to develop first is therefore clubs. You immediately play your club King, and continue the suit until, eventually, West is forced to win with his Ace, giving you 4 sure club tricks.|PG||
+PC|ck|PC|c6|PC|c3|PC|c2|PG||
+PC|ct|PC|ca|PC|c4|PC|c5|PG||
+PC|sj|PC|sa|PC|s4|PC|s9|PG||at|
+Your contract is now assured. Two Spades, three Hearts and four Clubs.|PG||NT|^B@2
+You are curious to see what would happen if you develop diamonds first? All right; let's delve a little deeper into this hand. Suppose that, after winning the first trick with the spade King, |UP|12|sk||at| you decide to play diamonds.|PG||
+PC|dk|PC|da|PC|d8|PC|d4|PG||at|
+
+West wins the first round of diamonds with his Ace and returns a spade.|PG||
+PC|sj|PC|sa|PC|s4|PC|s9|PG||at|
+
+You can now take 2 spade tricks, 3 heart tricks, and 3 diamond tricks, making a total of 8 tricks. |PG||
+PC|ha|PC|h5|PC|h2|PC|h8|PG||
+PC|h4|PC|h6|PC|hk|PC|h9|PG||
+PC|hq|PC|hj|PC|c3|PC|h7|PG||
+PC|dt|PC|d3|PC|d9|PC|d5|PG||
+PC|d6|PC|d2|PC|dj|PC|c2|PG||
+PC|dq|PC|s5|PC|d7|PC|c6|PG||NT|^B@2
+What are you going to do next?|PG||AT| Develop clubs, you say.|PG||AT| Very well; you do so,|PG||
+PC|c4|PC|c5|PC|ct|PC|ca|at| and West wins the first round with his Ace of clubs |PG||at| and cashes in his 3 established spade tricks against you, defeating your contract. |PG||NT|^B@2
+Thus you see that, by developing the least profitable suit first, you did not secure enough tricks to make your contract before West could drive out your controlling spades and get in the lead to cash in his spade tricks. |cp|8|at|Therefore, when you, hold two establishable suits, ^*Ialways try to establish first that suit which promises the greater number of tricks by being established.^*N|PG||nt||BT||
+%%%Summary - I
+qx|7SUM, Summary - I|HT|E|va|6|cs|1|cp|4|3d|3|fp|2|at|^-{  Summary, Chapter VII  }
+^-|CP||fp||at|^b@2^Y@3You have learned in this Chapter the primary steps you must undertake to make sure of deriving the greatest possible profit from your low cards in long, establishable suits. The lessons embodied are pithily summarized in the following precepts:|PG||CP|8|AT|
+
+When you are Declarer, as soon as the opening lead is made, stop to study the hand and formulate some fairly definite plan of play.|PG||AT|
+
+Never attempt to establish a suit in which the Opponents hold more cards than you do.|PG||AT|
+
+Do not play your high cards in suits of which you hold fewer cards than the Opponents, until absolutely necessary.|PG||AT|
+
+Count the cards of each suit as they are played or discarded so that you will always know how many remain unplayed at any point in the game.|PG||AT|
+
+When you hold two establishable suits, always try to establish first that suit which promises the greater number of tricks by bring established.|PG||HT|X|CP||AT|^b@2^Y@3Chapter VII ends here. Chapter VIII is next.|PG||CP||NT||
+%%%%%%%%%%%%%%%%%%%%%B04
+qx|8B04,Establishing a Suit at No-trump   Part II, Chapter VIII|
+ht|e|va|6|cs|1|cp|4|fp|2|3d|3|at|^-{    ESTABLISHING A SUIT AT NO-TRUMP - Chapter VIII    }
+^-|cp||
+ht|f|fp||at|^b@2^Y@3A|FP||CP||AT|lthough you may not have noticed it at that time, the examples of suit establishment given in the preceding Chapter were confined to those suits in which the Declarer held but one losing card the Ace. Naturally, it is often necessary to try to establish suits against which the Opponents hold more than one winning card. As a matter of fact, most suits which the Declarer ever tries to establish contain more than one losing trick, or at least 1 sure loser and 1 possible loser. However, this should not discourage anyone from trying to set up |FP|2|AT||CP|8|AT|*|CP||AT||FP||AT| his low cards in such suits. |PG||
+ht|f|fp||at|^b@2^Y@3A|FP||CP||AT|lthough you may not have noticed it at that time, the examples of suit establishment given in the preceding Chapter were confined to those suits in which the Declarer held but one losing card the Ace. Naturally, it is often necessary to try to establish suits against which the Opponents hold more than one winning card. As a matter of fact, most suits which the Declarer ever tries to establish contain more than one losing trick, or at least 1 sure loser and 1 possible loser. However, this should not discourage anyone from trying to set up |FP|2|AT||CP|8|AT|*|CP||AT||FP||AT| his low cards in such suits.|HT|m|FP|2|AT|^B@2|CP|8|AT|*|CP||AT||FP||AT|^*I Set up is a familiar synonym for establish.—Sam Fry, Jr.^*N|PG||at|
+
+Admittedly his task is more difficult than in the hands you have already studied, but this is overcome by somewhat greater skill. If the Opponents are bound to win 2 tricks in a suit, do not let this upset you. The following hand is a good example for study:
+|PG||NT||
+%%%%%%%%%%%
+st||sk|s|md|4SAKQHA7DQ84CQJT76,SJT983H96DT932CAK,S76HKQ85DAK75C984,S542HJT432DJ6C532|RH||AH|Board A1|sv|0|mb|p3nppp|NT|^B@2
+Again you are Declarer (South), with a contract of three no-trump. West's opening lead is the spade Jack,|pg||PC|sj|pg||at|  which you naturally win in your own hand with any one of your three top honors (say, the Queen). |PG||AT|
+
+Now comes your pause to consider your plan of play. You first look for the suit which promises the most tricks if established. |pg||at|In spades you are sure of 3 tricks,|hc|SAkq|pg||at| and in hearts you are sure of 3 tricks.|hc|Hakq|PG||NT|^B@2
+You cannot hope to take more than 3 heart tricks because you have only six hearts against the seven held by the Opponents, so that it is quite likely that one Opponent will have a winning heart set up after you have taken the first three rounds. |PG||AT|You have 3 certain diamond tricks, and you may find a 4th diamond trick if the adverse diamonds are evenly divided. |HC|dakq|at|In clubs you have 3 sure tricks if the Opponents can be forced to play their Ace and King.|PG||NT|^B@2
+You know by this time that your solid high cards will win at any time. There is no reason for you to cash in your 3 spade tricks, 3 heart tricks, and 3 diamond tricks right away. Your first objective must be to attack the suit in which you have to drive out opposing higher cards. It is true that your potential winners in diamonds number 4, which is 1 more than you can ever expect to win in clubs.|HC|DAKQ|PG||NT|^B@2
+However, you are sure of 3 of those diamond tricks no matter what happens. The 3 club tricks are merely possibilities until the Ace and King are played. Therefore, after considering everything, you are going to try to develop 3 club tricks first, instead of the 1 long-suit trick in diamonds. Though at first glance it seems that the diamond suit is more profitable, actually the club suit is the best bet. By trying clubs first, you may gain 3 tricks, and you can lose 1 diamond.|PG||
+pc|s6|pc|s2|pc|sq|PG||NT|^B@2
+To the second trick, then, you lead a club—any club, since you hold a solid sequence from the Queen down to the six-spot. Say, you lead the Queen. West wins this trick with his King and returns a spade. |pg||
+pc|cq|pc|ck|pc|c4|pc|c2|pg||
+pc|st|PG||NT|^B@2
+This does not worry you, for you win the trick and still retain control.|PG||pc|s7|pc|s4|pc|sk|PG||at| Now you lead another club which must drive out West's Ace. |PG||
+pc|c6|pc|ca|pc|c8|pc|c5|PG||LC|sakqhakqdakq|NT|^B@2
+Your 3 club tricks are now assured, and-you do not need that 4th diamond trick. |HC|CJT7|at|You can discard the fourth diamond on one of those 3 club tricks. It is not necessary for you to take any chance that the adverse diamonds are not evenly divided.|PG||NT|^B@2
+Indeed, if you had tried to develop a 4th diamond trick before going after those 3 club tricks, you would have found out, in this particular hand, that West held four diamonds originally and East only two. |PG||UP|16|SK||NT|^B@2
+In other words, West would be presented with an established diamond trick which he would cash in the moment you led a club. By developing clubs first you made 11 tricks. By developing diamonds first you can make only 10 tricks. To be sure, the difference is only 30 points, an extra trick, but inasmuch as your contract is never jeopardized, you may as well play for it.|PG||NT|^B@2 
+In choosing between establishing a suit in which you hold the top cards but wish to promote some lower card, and establishing a suit in which the Opponents hold the top cards but you have the long cards, the latter is generally the best hope. A 4th long-suit trick depending on twelve cards falling on the first three rounds of a suit—depending, that is, on a 4-3-3-3 distribution of the suit—is a possibility which can be tried any time.|LC|sakqhakqdakqcjt7|PG||NT||
+
+%%%%%%%%%%%%%%%%%%%%B05
+qx|8B05, THE TIME ELEMENT IN ESTABLISHING A SUIT|
+BT||ht|e|va|6|cs|1|cp|4|fp|2|3d|3|at|^-{    THE TIME ELEMENT IN ESTABLISHING A SUIT    }
+^-|cp||fp||at|^b@2^Y@3I|FP||CP||AT|n the example hand just discussed, West returned a spade at his first opportunity to do so. He was attempting to establish his long spades by driving out your Ace, King and Queen. Meanwhile you were attempting to establish your long clubs by driving out West's Ace and King. You won the race, as Declarer, because your battle was against only two controlling clubs while West's battle was against your three controlling spades—the ^*Itime element again.^*N|PG||AT|
+
+This matter, of time may be reduced to units. Every lead is a time unit, for the lead gives a player the chance to lead the suit he wishes to establish. The right to lead may be called an ^*Ioffensive^*N unit (attacking unit). Every high card held is also a factor, for it represents one more obstacle which the adversary must overcome in trying to establish the suit. A controlling high card may be called a ^*Idefensive^*N time unit. West was one offensive unit ahead of the Declarer, in the example just given, for he had the first or opening lead. But against this the Declarer held one additional defensive unit—the third controlling spade. |PG||AT|
+
+To illustrate this point, a slightly different deal suffices:|PG||NT||
+
+st||sk|s|md|4SAKHA7DQ84CQJT762,SQJT983H96DT93CAK,S76HKQ85DAK75C984,S542HJT432DJ62C53|RH||AH|Board A2|sv|0|mb|p3nppp|NT|^B@2
+South is still playing a contract of ^*Ithree^*N no-trump. West opens the spade Queen |PC|SQ|PG||AT|which Declarer has to win with the King (or Ace). |PC|S6|PC|S2|PC|SK|PG||AT|  If Declarer leads a club, |pc|CQ|pg||at|West wins with his King. |pc|CK|pc|C4|pc|C3|pg||at|Now West leads his second spade,|pc|SJ|PC|S7|pc|S4|at| driving out Declarer's Ace.|pc|SA|pg||NT|^B@2
+Declarer's only two defensive units in spades (Ace-King) are now gone, but West still has one of his two defensive units in clubs. Now if West obtains the lead, Declarer's contract will be defeated, for West will immediately cash in his good spades, |pg||pc|CJ|pc|CA|pc|C8|pc|C5|pg||sk||at| of which Declarer knows that he holds at least three.|CP|8|AT|^*B*|PG||at|
+^B@2* ^*I|CP||AT|Actually West will cash in four spade tricks if he gets the lead at this time. Declarer knows that the opponent must have at least three spade tricks because there five spades are outstanding, of which the best possible distribution for Declarer is 3-2. The fact that the five are distributed 4-1 in this hand means only that the Declarer is worse off than he might be.—Sam Fry, Jr.^*N|PG||NT|
+^B@2What should Declarer do?|PG||AT| He must abandon all hope of establishing the club suit, because it would be fatal for him to relinquish the lead at this juncture. The only course open to him, with any hope of making his contract (three no-trump), is to turn his attention to some other suit.|PG||NT|^B@2
+Now the diamonds come into their own, for there is the possibility of a 4th diamond trick. What was not worth considering as long as there was a chance to make 3 club tricks now be comes Declarer's only hope. [the board is re-loaded.|PG||UP|16|SK|S|PC|SQ|NT|^B@2
+Just what is the trick situation? Counting, we learn that Declarer has 2 spade tricks,|HC|Sak|PG||AT| 3 diamond tricks |HC|Dakq|PG||AT|and 3 heart tricks|hc|hakq|PG||AT| —a total of 8. If Declarer is lucky enough to find the outstanding six diamonds divided 3-3 he can still make his contract of 9 tricks.|PG||pc|s6|PC|s2|PC|sk|PG||AT| The proper lead here is therefore the diamond Queen, followed by a small diamond which is won by Dummy's King. |PG||
+PC|dq|PC|d3|PC|d5|PC|d2|PG||
+PC|d4|PC|d9|PC|dk|PC|d6|PG||sk||
+NT|^B@2
+Now the Ace is led and, as can be seen from the diagram, both Opponents have to follow suit, leaving Dummy's fourth diamond set up for the needed 9th trick. |PG||
+PC|da|PC|dj|PC|d8|PC|dt|PG||at|
+
+Now that Declarer's contract is assured (he makes sure of it by taking his 3 heart tricks and that 4th diamond trick before he does anything else),|PG||
+PC|d7|PC|h2|PC|c2|PC|h6|PG||
+PC|h5|PC|h3|PC|ha|PC|h9|PG||
+PC|h7|PC|s3|PC|hk|PC|h4|PG||
+PC|hq|PC|ht|PC|c6|PC|s8|PG||
+PC|s7|PC|s4|PC|sa|PC|s9|PG||AT| he can experiment with the clubs.|PG||lc|sakhakqdakq|at| However, it is hopeless, for the moment he leads a club West |sk||at|claims the rest of the tricks with his club Ace and remaining good spades.|PG||NT|^B@2
+The two hands just given—|PG||AT| in the first (now shown above)|st||sk||md|4SAKQHA7DQ84CQJT76,SJT983H96DT932CAK,S76HKQ85DAK75C984,S542HJT432DJ6C532|RH||AH|Board A1|sv|0|mb|p3nppp|PG||AT| you establish 3 club tricks |PG||AT| and in the second (now shown above)|st||sk||md|4SAKHA7DQ84CQJT762,SQJT983H96DT93CAK,S76HKQ85DAK75C984,S542HJT432DJ62C53|RH||AH|Board A2|sv|0|mb|p3nppp|PG||AT| Declarer establishes instead a 4th diamond trick—will repay careful study.|PG||NT|^B@2
+^*IThey illustrate two very important Principles of play, as follows:|PG||ht|g|AT|
+^*B (1) when you are not crowded for time, do not be afraid to lose the lead by letting an Opponent win tricks which are his anyway; and|PG||ht|g|AT|
+^*B (1) when you are not crowded for time, do not be afraid to lose the lead by letting an Opponent win tricks which are his anyway; and
+
+(2) when an Opponent, on obtaining the lead, may be able to cash in enough established tricks to defeat your contract, try to keep the lead while doing the best you can with whatever winners you have left.^*N|PG||NT||lc|sakqhakqdakq|
+%%%%%%%%%%%%%%%%%% 8B06
+qx|8B06, ESTABLISHING A SUIT BY FINESSING|
+BT||ht|e|va|6|cs|1|cp|4|fp|2|3d|3|at|^-{    ESTABLISHING A SUIT BY FINESSING    }
+^-|cp||fp||at|^b@2^Y@3S|FP||CP||AT|uit establishment does not always take place by the lead of cards of equal value in order to drive out opposing high cards. The missing high card or cards can often be eliminated by finessing. Such a finesse must be taken boldly when it gives some chance of making an otherwise impossible contract, |pg||CP|8|AT|for some chance is better than none|CP||AT|, as you recall.|PG||AT| Even though, if the finesse fails, an Opponent may be given the opportunity to cash in several established low cards, this is no reason for you to get panicky and decide to take your high-card tricks in other suits at once. |pg||CP|8|AT|Your best procedure is always to take the chance of losing by a finesse rather than to accept the certainty of losing by foolishly abandoning your only hope of winning!|CP||PG||nt||
+%%%%%%
+st||sk||md|4SK753HA642D432CAK,,SA6HK5DAQT85C7632,|RH||AH|Board 4|sv|0|mb|p4nppp|NT|^B@2
+Take, for example, the deal shown above. |PG||at| You are playing a contract of four no-trump, against which West opens the club Queen.|PG||cp|8|AT|
+
+^B@2^*BMovie Maker: ^*N|cp||at|Please note that Watson did not give the bidding sequence for this deal. He only stated, "You are playing a contract of four no-trump."|PG||MD|0,SJ2HT873DK96CQJT9,0,SQT984HQJ9DJ7C854|sk|s|pc|cq|PG||NT|^B@2
+In your examination of the possibilities, you find no promise in the spade, heart and club suits beyond the 2 certain tricks in each guaranteed by the two top honors. |HC|sakhakcak|PG||AT|But that makes only 6 tricks, to which you may add the sure trick represented by the diamond Ace.|HC|DA|PG||AT| More than the Ace must be developed in diamonds in order to make your contract. |PG||
+PC|c2|PC|c4|PC|ck|PG||
+NT|^B@2
+In spite of the fact that two diamond honors are out against you, you must do what you can. You may lose a trick to each of them, or to neither. But you must take the chance of losing in order to have any hope of winning.|PG||AT| You proceed against the adverse King and Jack of diamonds, not by leading your high cards, but by finessing as you learned in preceding chapters. The finesse here offers a better chance of gain than the direct lead of honors. |PG||NT|^B@2
+Therefore you lead a low diamond from your own hand toward Dummy's Ace-Queen tenace. When West plays the six, you play Dummy's Ten, finessing it against both the King and Jack (a double finesse, you recall).| 
+PC|d2|PC|d6|PC|dt|PG||NT|^B@2
+Of course, as you can see, East wins with the Jack. |pc|dj|PG||AT| This is momentarily discouraging, and the gloom increases when East (as was to be expected) returns a club (his partner's suit).|PG||
+PC|c5|PC|ca|PC|c9|PC|c3|PG||NT|^B@2
+This trick you can win, but it takes out your last defensive unit in clubs. However, you still have a chance. Just because East held the Jack is no reason to suppose that he holds the diamond King also.|PG||AT| If West has the King, you can still make your contract. Therefore you lead another low diamond and, |PG||PC|d3|PC|d9|PG||at|when West plays the nine, you boldly finesse Dummy's Queen.|PC|dq|PC|d7|PG||NT|^B@2
+The trick is yours! East follows suit, and your count tells you that eight diamonds have been played. |SK||AT|Since your hand and Dummy's contain four more, you know that West's King must drop on your Ace and all your remaining diamonds will be established, giving you 2 spade tricks, 2 heart tricks, 4 diamond tricks and 2 club tricks-a total of 10 tricks.|PG||lc|sakhakdakqcak|NT||
+%%%%%%%%%%%%%%% page
+BT||
+qx|8B07,|ht|e|va|6|cs|1|cp|4|fp|2|3d|3|at|^-{    A SECOND LOOK AT THE DOUBLE FINESSE    }
+^-|cp||fp||at|^b@2^Y@3L|FP||CP||AT|et us digress a moment to look at that diamond finesse again. You may say that the finesse of the Ten was futile because it fell prey to East's Jack. |PG||NT||
+st||sk||md|4SK753HA642D432CAK,SJ2HT873DK96CQJT9,SA6HK5DAQT85C7632,SQT984HQJ9DJ7C854 |RH||AH|Board 4a|sv|0|mb|p4nppp|NT||cp|8|AT|
+^B@2^*BMovie Maker: ^*N|cp||at|This hand is reloaded from previous chapter.|pg||pc|cq|PC|c2|PC|c4|PC|ck|PG||NT|^B@2
+Suppose you finessed the Queen instead of the ten.|PC|d4d6dqd7|pg||at| You would win the first round of diamonds,|PG||AT| drop East's Jack with your Ace on the second round|PC|dadjd2d9|pg||AT| and concede 1 trick to West's King.|PC|d5|PC|c5|PC|d3dk|pg||AT| The result is the same as before—you have lost 1 diamond trick.|PG||NT|^B@2
+The finesse of the Ten loses 1 trick to the Jack; the finesse of the Queen ultimately loses 1 trick to the King. What difference does it make?|PG||AT| The finesse of the Ten is better, for by finessing the Ten first you have a chance of making all 5 diamond tricks.|PG||NT|^B@2
+You also have a chance of forcing the King immediately which leaves only the Jack out against you. To finesse the Queen first gains nothing and costs you all hope of making 5 diamond tricks.|PG||NT|^B@2
+The number of diamonds you hold makes a difference, though. When you have eight diamonds against the Opponents' five, to finesse the Ten first is the best play. But if you are lucky enough to hold nine diamonds against the Opponents' four, you must bear in mind that there is an excellent chance that those four adverse diamonds will be evenly divided, two in West's hand and two in East's.|PG||NT|^B@2
+In this situation, the better play is to finesse the Queen first (hoping West has the King), following it with the Ace (hoping to drop the last two diamonds).|PG||NT||
+
+%%%%%%%%%%%%%%%55 B08
+BT||
+qx|8B08, RESERVING AN ENTRY FOR A SECOND FINESSE|ht|e|va|6|cs|1|cp|4|fp|2|3d|3|at|^-{    RESERVING AN ENTRY FOR A SECOND FINESSE    }
+^-|cp||fp||at|^b@2^Y@3N|FP||CP||AT|ever lose sight of the necessity for reserving an entry against a possible emergency, especially when the establishment of a suit may depend on it. Blind leads of high cards can never be justified. You should lead out high cards only when you have a purpose, or when all the remaining tricks are clearly yours. The following deal shows how true this is:|PG||NT||
+
+st||sk|s|md|4SAK2HAQDKJT94CQJ4,SQJ8HKJ97DA6C9832,S976H8532D532CAK5,ST543HT64DQ87CT76|RH||AH|Board 5|sv|0|mb|p3nppp|NT|^B@2
+Study the hand as though you were South, playing as Declarer to make a contract of three no-trump. |PG||AT|The opening lead is a lucky break for you—a small heart up to your Ace-Queen tenace, giving you an automatic finesse.|PC|h7|PG||AT| That makes you sure of 2 heart tricks. But there seem to be only 6 more sure tricks, namely, 1 more heart trick,|HC|HAQ|PG||AT| 2 spade tricks, |HC|SAK|PG||AT|and 3 club tricks. |HC|CAKQ|PG||
+PC|h2|PC|h4|PC|hq|PG||
+NT|^B@2
+It is apparent that your only hope of more tricks lies in the diamond suit. Also, to make these diamond tricks, you must lead from the Dummy. Since the first trick, which you won with the heart Queen, places the lead in your hand, you must enter the Dummy. To do this you lead a low club to Dummy's Ace-King, winning with the King. |PG||
+PC|c4|PC|c3|PC|ck|PC|c6|PG||at|
+
+Notice that you cannot follow this up by taking your Ace of clubs at once, for you need that Ace as a second entry. You therefore lead a low diamond, and, when East plays low, you finesse the nine-spot. |PG||
+PC|d2|PC|d7|PC|d9|PG||NT|^B@2
+As you should remember in connection with finessing, you are not hoping that the nine will win. You are hoping that East holds the Queen and West the Ace, and that the nine will drive out the Ace. If West wins the nine with his Ace, your King is established, and something more|pc|da|PG||NT|^B@2
+—you now know that East holds the Queen, and your King-Jack is in perfect tenace position over him.|PG||NT|^B@2
+Having won with his diamond Ace, if West returns a heart, you must win the trick with the Ace in your hand, and lead another club to Dummy's Ace in order to re-enter that hand for the second diamond lead.|PG|| 
+PC|h9|PC|h3|PC|h6|PC|ha|PG||
+PC|cj|PC|c2|PC|ca|PC|c7|PG||
+PC|d5|PG||at|
+This time you finesse the Ten if East plays low. You know that West does not have the Queen, for if he had it, he would have played it on your nine before. |PG||PC|d8|PC|dt|pc|D6|PG||sk||at| The Ten holds, and your count of diamonds tells you that the Queen must drop on the next round under your King. |PG||AT|You may claim 6 more tricks at this point, since they will easily be won with your remaining high cards.|MC|11|PG||lc|sakqjt98765432|NT||bt||
+%%%%%%%%%%%%%%%%SUM   Summary - II
+bt|| 
+qx|8SUM1, Summary - II|ht|e|va|6|cs|1|cp|4|fp|2|at|^-{    Summary - Chapter VIII    }
+^-|
+CP||fp||at|^b@2^Y@3Y|FP||CP||AT|ou have added to your knowledge of the technique of establishing suits that it is better to seek to gain long-suit tricks by driving out high cards held by the Opponents, or by capturing such high cards by a finessing maneuver, than to hope for the development of long-suit tricks by dropping outstanding cards on the successive leads of your own high honors. This is true, of course, only when you have a choice. When there is no choice, you must make the best of whatever you have to work with.|PG||AT|
+
+In successfully handling the time element, you have found that offensive and defensive units are invaluable. Whichever player has the advantage in these units will win the race for suit establishment, provided he makes the most of his holdings. When you are not crowded for time, you do not need to be afraid to lose the lead by letting an Opponent win tricks which are his anyway, sooner or later. But when an Opponent, on obtaining the lead, may be able to cash in enough established tricks to defeat your contract, try to keep the lead while doing the best you can with what ever winners you have left.|pg|
+|HT|X|AT|^bThis is the end of Establishing a suit at no-trump Chapters VII and VIII  |PG||NT||
+%%Howard Comment
+qx|HOW,Establishing 8 and 9 card suits missing two honors - by Howard^*N|ht|e|cs|1|cp|4|fp|2|
+at|
+^-{  Establishing eight and nine card suits missing two honors  }
+
+{  This section is provided by Mr. Howard Schutzman  }
+^-|CP|8|FP|2|AT|^B@2^Y@3
+Howard: |CP||FP||AT|Let us start with the following 8 card suit. You have AQ10x in dummy and xxxx in your hand. More often than not, you should be able to take at least 3 tricks in the suit. Let us look at some examples.|PG||NT||
+QX||ST||sk|s|rh||ah|Board  H1|sv|0|sk||md|1s2346,SK98,SAQT5,SJ7|ha|Y|PG||NT|^B@2
+You do that by leading low from your hand and playing the 10. |SK|S|PC|s2|PC|s8|SK|N|PC|st|PC|sj|PG||at|
+If it loses to the Jack, |SK||at|you eventually return to your hand and lead low to the Q. If that wins, and both opponents follow, playing the Ace will drop the king, and your low card will be good. Basically, you will win 3 tricks any time the suit is divided 3-2 and your left hand opponent has at least one honor.|PG||nT|^B@2
+Now let us change the suit slightly and give you a 9 card suit, AQ10xx in dummy and xxxx in your hand. |PG||
+QX||ST||sk||rh||ah|Board H2|sv|0|md|1s2346,Sj97,SAQT85,Sk|ha|Y|PG||NT|^B@2
+The big difference with the 9 card suit is the opponents only have 4 against you rather than 5. That means there is a significant chance that one of your opponents holds a singleton honor. If you want to maximize your chances of winning at least 4 tricks in this suit, your play is much different than with the 8 card suit. In this case, you cash the Ace first, hoping that one of your opponents has a singleton honor.|PG||sk|S|pc|s2|PC|s7|sk|N|PC|sa|PC|sk|PG||sk||NT|^B@2
+If that is the case, you knock out the other honor and will take the other 4 tricks. |PG||NT|^B@2
+If neither of your opponents has a singleton honor,|PG||
+QX||ST||sk|s|rh||ah|Board  H3|sv|0|sk||md|1s2346,Sj7,SaQT5,Sk8|ha|Y|PG||NT|^B@2
+then after playing the Ace|pc|s2|PC|s7|sk|N|PC|sa|PC|s8|PG||sk||PG||NT|^B@2
+you return to your hand and lead low towards the Q10. If your left hand opponent follows, it must be with either the King or Jack (since those are the only remaining cards out). If your left hand opponent follows with the king, obviously you play low; when you get the lead back, the Q will knock out the J. If your left hand opponent plays the J, you cover with the Q. Either that will win, or lose to the King. In either case, you end up losing only one trick. |PG||NT|^B@2
+If you are very lucky, cashing the Ace first will result in 5 tricks. Say your right hand opponent drops the king under the Ace. You then return to your hand, and lead low towards the Q10, finessing the 10 if your left hand opponent plays low.|PG||NT|^B@2
+The same technique applies when you are missing the K and Q. Say you have an eight card fit, with AJ10x in dummy and xxxx in your hand. |PG||
+QX||ST||sk|s|rh||ah|Board  H4|sv|0|sk||md|1s2346,Sk9,SAjT5,Sq87|ha|Y|NT|^B@2
+The best way to establish 2 tricks is to lead low towards the AJ10 and play the 10. Most of the time that will lose to an honor. When you get the lead back, you now lead low towards the AJ and play the J. You will take three tricks any time the suit divides 3-2 and your left hand opponent has at least one of the missing honors. However, with a nine card fit, the play is different. |PG||
+QX||ST||sk|s|rh||ah|Board  H5|sv|0|sk||md|1s2346,Sq97,SAjT85,Sk|ha|Y|NT|^B@2
+In this example, you have AJ10xx opposite xxxx. Now, you should cash the Ace first, hoping for a singleton honor. If that is the case, the J will drive out the other honor, and you will take 4 tricks. If a singleton honor does not drop, you play another round of the suit and hope for a 2-2 break. So, the only time you will not take 4 tricks in that suit is when one of the opponents holds the KQ and another card, which is of fairly low probability.
+|PG||
+LF|CH-9-P-1.LIN| 
+ 

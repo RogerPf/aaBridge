@@ -1,0 +1,37 @@
+%% Margins H Position
+%% Last edited  2013 Dec 03
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+bt||
+
+at|
+^b@2^*bMargins^*n^z@3|
+at|
+
+So far, if you have been reading these files in order, all the commands have been of the form  !xy!<text>!    This topic introduces another form of command, the in-line character sequences that you find in the text following an   !at!   (and of course !nt!).
+
+^c@@2 ^eSets the left hand margin (to the current position). ^q@@1 ^sClears the left hand margin.
+
+^c@@3 ^eSets the right hand margin (to the current position). ^q@@0 ^sClears the right hand margin.
+
+
+
+^b@2^*bHorizontal Position^*n
+
+You can set the current horizontal position, where on the line next piece of text will appear, by using  @^<letter>  where <letter> is  a to z,  or  A to Z.  Every line is divided up into 25 segments the far left is at position 'a'  and the far right at position 'z'.   (26 letters, 25 gaps).
+
+It is considered good practice to start every page (after an !nt!) with a sequence that sets the left hand margin to position b.  So a fragment like the following is common @-
+
+
+!nt!!
+at!
+|cp|7|at|^*b@^b@@2|cp||at|^*nThis would appear on the second line of the page, exactly where the word   ^*bMargins^*n   can now be seen. 
+!
+
+
+|
+ht|z|at|@0
+^*b end ^*n|

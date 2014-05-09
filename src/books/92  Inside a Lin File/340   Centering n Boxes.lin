@@ -1,0 +1,111 @@
+%% Centering and Boxes
+%% Last edited  2013 Dec 04
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+bt||
+at|
+^b@2^*bCentering  ^f@^-^*n text^*b @^- ^*n|
+at|
+
+A sequence like         !at!|cp|7|at|^*b@^-^*n|cp||at|This text will be centered.|cp|7|at|^*b@^-^*n|cp||at|!        will center the text on that line. 
+
+|cp|5|at|^-This text will be centered.^-|cp||at|
+
+^b@2If your require  100% compatibility with older lin file players then you had best write it in your lin file as @-
+
+^c!at!|cp|7|at|^*b@^-^*n|cp||at|This text will be centered.|cp|7|at|
+^c^*b@^-^*n|cp||at|!
+
+^bdoing this avoids known  'lost text'  issues associated with older players player.
+
+|cp|5|at|^-This text will be centered.
+^-|cp||at|
+
+
+^b^*bCentering Respects Margins ^*n     
+
+^cHere a left margin has been put at    >@2L   and a right margin has been placed immediately after    >R@3
+
+|cp|5|at|^-This text will be centered.^-|cp||at|
+
+
+
+
+|cp|5|at|^-This text will be centered. As will this text which spreads out over 
+multiple lines when seen ^^ on the screen and also contains an in line 'new line' early on and a new line @^@^ towards the end.^-|cp||at|
+|
+ht|u|at|^b@2
+^*bMultiple lines^*n  @-  are fine too
+|
+
+pg||nt||
+qx|Box|
+at|
+^b@2^*bBoxes ^f@{ ^*ntext^*b @}^*n|
+at|
+
+Text can be boxed,    !at!|cp|7|at|^*b@{^*n|cp||at| boxed text |cp|7|at|^*b@}^*n|cp||at|!    will appear as  { boxed text }
+
+
+Put a newline between the words,    !at!|cp|7|at|^*b@{^*n|cp||at| boxed @^@^ text |cp|7|at|^*b@}^*n|cp||at|!     and it will appear as
+
+^n{ boxed ^^ text }
+
+
+More reasonably, center the text as well     !at!|cp|7|at|^*b@^- @{^*n|cp||at| boxed @^@^ text |cp|7|at|^*b@} @^- ^*n|cp||at|! 
+
+^-{ boxed ^^ text }^-
+
+
+Or, if trying to avoid  NetBridgeVu's  'lost text'  issues write it as @-
+
+^c!at!|cp|7|at|^*b@^- @{^*n|cp||at| boxed
+^ctext |cp|7|at|^*b@} 
+^c@^- ^*n|cp||at|!
+
+
+which will also show as @-
+^-{ boxed 
+text }
+^-
+|
+pg||nt||
+qx|BCol|
+at|
+^b@2^*bBoxes and Fill Colors^h@{ ^*ntext^*b @}^*n|
+at|
+
+The   !cs!|cp|7|at|^*b7^*n|cp||at|!   (fill) Color Select    command,   sets the fill color for boxes.  The digit is one of your defined colors.
+
+^c!cs!|cp|7|at|^*b7^*n|cp||at|!at!|cp|7|at|^*b@^- @{^*n|cp||at| boxed
+^ctext |cp|7|at|^*b@} 
+^c@^- ^*n|cp||at|!
+
+shows as 
+|cs|7|at|^-{ boxed 
+text }
+^-
+Boxes can overlap
+|cs|5|at|^-{ boxed 
+text }
+^-
+|ht|l|at|^d@2
+|cs||at|^-{ boxed 
+text }
+^-
+^b@2!cs!!   Clears the set color.
+
+^z@3
+
+^b@2Some lin file players show the thin black boarder around all boxes not just around the default fill color box.  AaBridge does not.
+
+
+Some lin file players support a   !3d!!    command, aaBridge does not.  Why? Too much of an early 1990's "early graphics" look to it, which does not fit well with aaBridge's display policy.
+
+|
+ht|z|at|@0
+^*b end ^*n|
+

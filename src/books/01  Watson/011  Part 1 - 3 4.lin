@@ -1,0 +1,289 @@
+%%%%%%%%%%%%%%CH-3-4-P-1.lin
+%%Last edited 01/03/2012 
+mn|  Chapter III   and   Chapter IV  |
+bt||
+%%Font and color codes
+fh|155|ff|1Arial|fb|19|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|36|fm|3|                           FOR 3
+fh|430|ff|4Arial|fi|4y|fm|4|     %%Larger than default— italic
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|30|cg|30|cb|3128|                dark Blue 3
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|664|cg|6255|cb|6255|             6=TURQUOISE
+cr|70|cg|7235|cb|7235|              green/blue 7
+cr|8255|cg|80|cb|80|                red 8
+cr|9128|cg|950|cb|90|               Reddish-brown 9
+%%%
+TU|1|HT|e|fp|3|at|^-
+WATSON's Classic Book on The Play of the Hand at Bridge
+Part I, Fundamentals of Play
+^-|AT|
+
+^DChapter III, ^jDOUBLE AND COMBINATION FINESSES   
+^DChapter IV, ^jWHEN NOT TO FINESSE
+
+|CP||fp||ht|m|at|
+^D^*UTABLE OF TOPICS ^*N|CP|1|AT|
+
+^D^*G3B01,Double and Combination Finesses  ^*N
+^e^*G3B03,Finessing Against Lower Honors than the King  ^*N
+^e^*G3B05,Some Miscellaneous Examples ^*N
+^e^*G3B06,Summary to Chapter III^*N
+^D^*G4B01,When not to Finesse - Chapter IV ^*n
+^e^*G4B02,Summary to Chapter IV^*N
+^D^*G4HOW,Comments by Howard Schutzman^*N |CP||at|
+
+^C@2^Y@3 
+
+|cp|8|AT|^c@2^*BMovie Maker: ^*N|cp||at|I combined the chapters III and IV.  
+|PG||fp||nt||tu||
+%%%%%%%%%%%%%%%%%%%%
+qx|3B01, DOUBLE AND COMBINATION FINESSES|HT|b|cs|1|cp|4|fp|1|3d|3|at|^-{                DOUBLE AND COMBINATION FINESSES                }
+^-|
+cp||fp||at|^B@2^Y@3A rule was laid down in the preceding chapter, to the effect that to win as many tricks as possible with honors not in sequence, you should lead from the weaker holding toward the stronger. This rule applies equally well to the more complicated finesses, when more than one card is finessed against. In the double finesse, for example, an endeavor is made to encircle two outstanding higher cards, as shown in the following:|PG||NT||
+%%%%%%%%%% 
+st||pn||ha|y|md|H432,,HAQT,|sv|0|rh||AH|Board 1|nt|^B@2
+You first apply the principle of leading from the weaker toward the stronger hand. You must therefore, as Declarer, lead from your own hand (South), the deuce.|pg||
+PC|h2|AT| If West now plays the nine,|
+MD|0,h9,0,0|AT| your first impulse may be to try to encircle only the King, and finesse Dummy's Queen.|
+PC|H9|PG||AT| However, this would be an unfortunate choice, as it would eliminate any chance you might have of making 3 heart tricks.|
+PG||NT|^B@2
+For if the Queen is played and holds,|PC|hq|md|0,0,0,h5|pc|h5|pg||AT| the King and Jack are still left outstanding, one of which must win a trick.|MD|0,HKJ,0,H876|PG||AT| How can you play for 3 tricks in this suit, then?|PG||AT| Simply by finessing the Ten,|UP|2|pc|ht|PC|h5|PG||NT|^B@2
+which, in this instance, will hold the trick, and you have only to return to your own hand, lead the trey, and finesse the Queen on the second round. No matter how West plays, if you follow this procedure your left-hand Opponent's holding of @H K J 9 becomes worthless.|PG||nt||bt||
+%%%%%%%% Page
+HT|b|cs|1|cp|4|fp|1|3d|3|at|^-{                DOUBLE AND COMBINATION FINESSES                }
+^-|
+cp||fp||at|^B@2^Y@3The logical objection to this line of play is that it really stands very little chance of success. The probabilities are that at least one of the missing honors (King or Jack) is located on your right. However, you must not forget the definition of a finesse. |cs|1|cp|4|pg||fp|2|
+at|
+
+^-{
+      A finesse, you recall, is not a gamble—that is,    
+    you do not risk something to make something more.   
+  }^-|PG||fp||cs||cp||at|
+
+You risk nothing. You merely play to get something half the time which you would otherwise not get at all! So even if East, in the preceding heart situation, does hold one of the missing honors, he will only win a trick that the Opponents must win anyway—so nothing has been gained, but also nothing has been lost. In fact; if East has to win the Ten with the King, your Ace and Queen are both of them commanding cards in the suit. If East wins with the Jack, you can still re-enter your hand and take a second finesse against the King. Even if East has both King and Jack, you have lost nothing, for if they are guarded, they must win anyway.|PG||at| 
+ 
+So much for the simple and double finesse. The combination finesse, so called, is probably even more common, for it can take many different forms.|PG||NT||
+%%%%%%%% Board 2--DQ98 --DK76
+st||ha|y|md|DAJT,,D432,|sv|0|rh||AH|Board 2|at|^B@2
+Study this diamond distribution:|PG||AT| This is one of the examples used in the first Chapter to illustrate the advantages of the lead being made by an Opponent rather than by the Declarer (South). It was shown that if West is obliged to lead diamonds, South must win 2 tricks in the suit. |PG||NT|^B@2
+Unfortunately, however, it is not always possible to compel your Opponents to lead as you wish, so that you are frequently forced to launch the attack yourself. Suppose that you are faced with the diamond distribution given above. Can you be sure of 2 diamond tricks even if you have to lead the suit yourself? You can.|PG||wt|n|NT|
+^B@2You lead a low diamond (the deuce) from Dummy,|PC|d2|pg||AT| on which East will play low.|md|0,0,0,d6|PC|d6|pg||AT| You then play your Ten (not the Ace), not with any expectation that the Ten will win, but in order to establish a future finesse.|PC|dt|pg||AT| Here West wins the Ten with his Queen,|md|0,dq,0,0|PC|dq|pg||at| but your Jack has now been promoted one position. |PG||NT|^B@2
+With the first round out of the way, the situation is:|MD|0,d98,0,DK7|pg||at| This is a simple finessing situation. You simply re-enter Dummy's hand and lead low through East. You have thus placed yourself in a position to take a simple finesse against East's King. You are sure of 2 tricks in the suit whenever the King and Queen are divided.|PG||AT|  But there are two other possible combinations, as follows:|PG||NT||
+%%%%%%%%% Board 2A
+st||ha|Y|MD|DAJT,D965,D432,DKQ87|sv|0|rh||AH|Board 2A|ah|First Combination|NT|^B@2
+In this situation, first possible combination, it is still essential for you to lead low from Dummy, and, if East plays low, your Ten will hold the trick. You still make 2 diamond tricks, for if East plays one of his honors, you win with your Ace and then either your Jack or Ten will drive out the other honor, leaving you an established trick.|PG||NT||
+%%%%%% Board 2B
+st||ha|Y|MD|DAJT,DKQ87,D432,D965|sv|0|rh||AH|Board 2b|ah|Second Combination|NT|^B@2
+In the second combination, the situation above, all your strategy will fail, since the Ten must lose to the Queen, and on the second round the Jack will lose to the King. |PG||cp|8|at|  However, our original argument is still sound, for nothing has been lost which would not have been lost anyway, and you have the satisfaction of having played the best way to have a chance of making 2 tricks.|cp||PG||NT||bt||
+%%%%%%%% 3B03
+qx|3B03, FINESSING AGAINST LOWER HONORS THAN THE KING|
+NT||HT|B|cs|1|cp|4|fp|1|3d|3|at|^-{   FINESSING AGAINST LOWER HONORS THAN THE KING    }
+^-|cp||fp||at|
+^B@2So far we have given no specific examples of finessing against honors other than the King; yet it should be apparent that occasion for finessing against some lower honor must often occur. Suppose we consider a finesse against an outstanding Queen, as in the two situations given below. Though these two examples may seem at first glance to resemble each other very much, they are actually quite different.|
+HT|k|at|^d@H A J 2  |AT|^J@H A J 10|AT|
+1.)                                |AT|^I2.)|AT|
+^d@H K 7 5  |AT|^J@H K 7 5 |PG||
+
+ht|k|at|^d@H A J 2  |AT|^J@H A J|CP|8|at| 10 *|cp||AT|
+1.)                                |AT|^I2.)
+^d@H K 7 5  |AT|^J@H K 7 5
+
+The vital difference in these two situations lies in the fact that in the second the Dummy (North) has the Ten (an honor instead of a small card). Before proceeding to the explanation which follows, it would be a good idea for the reader to consider the aspects of these two situations very carefully.|PG||AT|
+
+In the first situation, the Declarer has only one chance of securing 3 tricks in suit. In the second situation, the Declarer has two chances of making 3 tricks—that is, he has open to him two possible methods of play. In No. 1, if you wish to finesse against the Queen of hearts, your only chance lies in leading low from your own hand (South), and playing the Jack from Dummy if West plays low. In other words, 3 heart tricks are possible in No. 1 only when West holds the Queen. |PG||AT|
+
+Why can't you lead the Jack from Dummy and hope to capture the Queen if East holds it? Simply because, if you do this, East will cover your Jack with his Queen, and you will be forced to win the trick with the King, leaving you with @H A 7 5 2, a combination which can obviously win but 1 more heart trick. The situation is exactly analogous to the situation in the preceding Chapter when the Declarer held the Queen and two small cards in one hand and the Ace and two small cards in the other hand. You will remember that leading the Queen could not possibly gain anything in that situation. For the same reason, leading the Jack cannot gain anything in No. 1 above.|PG||
+%%%%%%%%%%%%%%
+NT||HT|B|cs|1|cp|4|fp|1|3d|3|at|^-{   FINESSING AGAINST LOWER HONORS THAN THE KING    }
+^-|
+cp||fp||
+at|^B@2
+
+^d@H A J 2  |AT|^J@H A J |CP|8|AT|10|CP||AT|
+1.)                                |AT|^I2.)|AT|
+^d@H K 7 5  |AT|^J@H K 7 5
+
+The difference in No. 2 should be at once apparent. You can play low and finesse either the Ten or the Jack if West plays low also. However, if you think it more advisable, you can also finesse against the Queen by leading your Jack from Dummy, when, if East covers with his Queen, you can win the trick with your King, thus promoting your Ten to equal rank with your Ace, completely commanding the heart suit. You thus see that we are retracing our steps—we are refusing to take a certain type of finesse (that in which an honor is led) unless we hold honors in sequence. |PG||AT|
+
+The natural question arises as to which play is the right one in the second Situation just analyzed. The answer is that, lacking additional information, the chances are exactly even. It is a pure guess which Opponent holds the missing Queen. Later on, when we study card reading, we will find that it is often possible for a skillful player to locate cards from information disclosed during the bidding or revealed by discards of the Opponents during the play. Yet even the most skillful player must at times resort to mere guesswork in such a situation as No. 2, since the Opponents do not always give information as to the key cards they hold. |PG||AT|
+
+For the present, you may believe that the position of the Queen depends wholly on a guess—with a fifty-fifty chance of any player guessing it right, and let it go at that.|PG||NT||
+%%%%%%%%%%%%%%%%%%%%% 3B04
+HT|B|cs|1|cp|4|fp|1|3d|3|at|^-{   FINESSING AGAINST LOWER HONORS THAN THE KING     }
+^-|cp||fp||at|
+^B@2The finesse against the Queen also occurs in the following situations, in which the cards of Nos. 1 and 2 are arranged somewhat differently:|HT|g|AT|
+
+^j@HK J 2  |AT|^n@H K T 2|AT|
+^i3.)                                |AT|^m4.)|AT|
+^j@H A 7 5  |AT|^n@H A J 5
+
+In No. 3 your only hope of success is to lead low from your own hand (South) and finesse the Jack from the Dummy. In No. 4 you have a clear choice; that is, if you think West holds the Queen, you should lead low from your own hand and finesse the Ten, but if you think East holds the Queen, you should lead low from Dummy and finesse the Jack. |PG||AT|  There are even more intricate ways of encircling adverse Queens.|PG||NT||
+%%%%%%%%%%% Board 3   
+st||pn|You,,,|md|S432,,SKJT,|sv|0|RH||AH|Board 3|AH|Finesse Against the Queen|ha|y|at|^B@2
+Consider, for example, the current spade situation:|PG||AT| The same old principle applies: you must lead first from the weak hand (South).|PC|s2|pg||at| Clearly West will play low, |MD|0,s5,0,0|pc|s5|AT| and you must finesse the Ten.|PC|st|at| Just as when you held @SAJ10 in a previous example, you do not expect Dummy's Ten to hold the trick.|PG||NT|^B@2
+In other words, you are not making any wild attempt to finesse around the Ace.|MD|0,0,0,sa|pc|sa|pg||AT| The only card you are interested in circumventing is the Queen, and you are hoping that West holds it, for if he does, East will be forced to capture the Ten with the Ace if he wants to win the trick.|MD|0,sq6,0,s987|PG||NT|^B@2
+If East does win with the Ace, you plan to re-enter your own hand and lead low again in order to finesse the Jack. In this fashion your negligible spade holding of K J 10 may succeed in winning 2 tricks against the Opponents' powerful combination of both Ace and Queen.|PG||NT||bt||
+%%%%%%%%%%%%%%%%% more of 3B04
+HT|B|cs|1|cp|4|fp|1|3d|3|at|^-{   FINESSING AGAINST LOWER HONORS THAN THE KING     }
+^-|
+cp||fp||at|
+^B@2An objection to this play is bound to occur to everybody, and that is that the Ten will lose to the Queen whenever East holds it and West has the Ace, so that the first trick in the suit could actually have been won with the King. The answer is that, if this is done, only 1 trick will be won in the suit anyway. In fact, if the K J 10 combination is led in rotation, one of the three honors must win a trick, netting you 1 trick no matter where the Ace and Queen are located. Your only hope of making 2 tricks is to proceed as explained above.|PG||AT|
+
+The following situation is likely to arise frequently in our ensuing general discussion of hands: 
+
+^E@D K J 2 ^h@D 4 3
+				 
+Let us assume that you need to win only 1 trick in this suit. To do this, you lead the trey or the four-spot toward the Dummy's King-Jack. Now if South plays low, you may play the King, hoping that North does not have the Ace though he may have the Queen, or you may play the Jack, hoping that North does not have the Queen though he may have the Ace. It merely is guesswork; the chances are even.|PG||AT|
+
+The combination of K J 10, to carry this principle further, may be variously divided, thus: 
+
+^E@C K T 2 |AT|^J@C K J 2 |AT|
+1.) |AT|^H2.)|AT|
+^E@C J 9 3 |AT|^J@C T 9 3
+
+In both situations, the proper play is to lead the honor from the weak hand and play low from Dummy if West plays low. However, note one very essential factor in both these situations which was lacking in preceding examples. This factor is the presence of the nine-spot an extremely important card here. This brings us back to the principles governing the proper way to play Ace and two small cards in one hand and Queen and two small cards in the other. |PG||NT||
+
+%%%%%%%%%%%% more of 3B04
+HT|B|cs|1|cp|4|fp|1|3d|3|at|^-{   FINESSING AGAINST LOWER HONORS THAN THE KING     }
+^-|
+cp||
+fp||at|
+^B@2To make this clearer, consider the combination when the nine-spot is missing: 
+
+^E@S K T 2
+
+@S Q 9 8 7 |AT|^g@S A 6 5 |AT|
+
+^E@S J 4 3
+
+If Declarer (South) plays the Jack, and West follows with the Queen, North must play the King and East the Ace. This is an extreme example of the promotional power of honors. All four top honors have gone on one trick, and the Dummy's Ten has suddenly become the commanding card, gaining four positions. Note that something else has happened. West's seven, eight, and nine have also been promoted, so West can be sure of winning the third round of the suit.|PG||AT|
+
+We may therefore come to the conclusion that a holding of K J 10 (divided between the two hands) without the nine-spot is not a particularly attractive finessing combination. In fact, the chances are that such a suit should not be attacked by the Declarer at all. It is true that, even without the nine, the suit is very valuable if West holds both Ace and Queen, but such a distribution is unlikely. The same principle holds true for lower cards than K J 10. In fact, a holding of Q 10 9 should be treated in the same fashion.|PG||AT|
+
+There is a kinship of pattern between K J 10 and Q 10 9 which a moment's thought should make as clear as daylight. If the Dummy holds Q 10 9 and you have three small cards in your hand, you lead always remember!—^*Ifrom the weak hand toward the stronger^*N. It would be excellent practice if you would go back to the finessing situations thus far given and substitute, in the examples, lower cards for those given. For the King substitute the Queen; for the Ten the nine-spot.  Cards below honors may be finessed in exactly the same way as honors. |PG||NT||
+
+%%%%%%%%%%%% 3B05
+qx|3B05, SOME MISCELLANEOUS EXAMPLES|
+HT|B|cs|1|cp|4|fp|1|3d|3|at|^-{  SOME MISCELLANEOUS EXAMPLES  }
+^-|
+cp||
+fp||at|
+^B@2The reader must surely comprehend the finessing principle by this time. However, it is sufficiently important to justify including here certain combinations which it may be well to recognize when they occur. |PG||AT|Note, for example, the difference between the following two situations:
+
+^E@H A K 4 3 |AT|^k@H A K 4 3 |AT|
+1.)       |AT|^i2.)
+^E@H J 7 5  |AT|^k@H J (|CP|8|AT|10|CP||AT|) 5  
+
+In No. 1, if you play the Jack first, you cannot hope to gain anything, for the simple reason that if the Queen is played the Opponents' Ten and nine-spot must be promoted into potential trick takers. In No. 2, however, if the Jack is led and the Queen is played on it by West, you can win the trick with Dummy's Ace or King, and your own Ten will be promoted to a commanding position. In the first instance, the lead of the Jack needlessly wastes an honor; in the second, the lead of the Jack hopes to gain a trick.|PG||AT|
+
+While we are discussing these particular suit distributions, take note of the fact that they contain seven cards for the partnership and therefore have extremely good chances of developing a small card as a trick. In the first situation of the two just given, it is impossible to take all 4 tricks. In the second situation, however, it is entirely possible to take 4 tricks if the adverse cards are evenly divided and if West has the Queen, thus:
+
+^E@H A K 4 3
+
+@HQ98 |AT|^G@H 7 6 2 |AT|
+
+^E@H J 10 5
+ 
+Leading the Jack on the first round nets the Declarer 4 heart tricks.|PG||NT||
+%%%%%%%%%%%% more of 3B05
+HT|B|va|6|cs|1|cp|4|fp|1|3d|3|at|^-{  SOME MISCELLANEOUS EXAMPLES  }
+^-|
+cp||fp||at|
+^B@2Another rather common finessing situation is the following: |PG||NT||
+st||ha|Y|MD|C6432,,CAKJ5,|sv|0|RH||AH|Board 4|AH|Postponed Finesse|NT|^B@2This presents a slight variation known, for want of a better name, as a "postponed finesse." The finesse undergoes postponement simply because a sure winner is led before any finesse is considered. This play is made to secure the maximum degree of safety in the event that a certain peculiar distribution happens to exist, such as the following:|PG||NT|^B@2
+The normal way to finesse in this situation (the adverse distribution being, of course, unknown) would be to lead a low card from the weak hand, finessing the Jack.|PC|c2|MD|0,c7,0,0|pc|c7cJ|pg||AT| With the Opponents' cards distributed as shown, this play will lose a trick to the Queen held by East.|MD|0,0,0,cq|pc|cq|pg||AT| To insure against this situation, |UP|3|PG||AT|it is a wise play for the Declarer first to win a  trick with the Ace or the King, |PC|c7|PC|ca|pg||AT| postponing his finesse of the Jack until the second round.|MD|0,ct98,0,cq|pc|cq|pg||AT| The degree of safety is worthwhile.|PG||NT||bt||
+%%%%%%%%%%%%%%%%%%%%%Summary
+qx|3B06, Summary|HT|B|cs|1|cp|4|fp|1|3d|3|at|^-{    Summary - Chapter III    }
+^-|
+cp||fp||at|
+^b@2You have learned in this Chapter how to finesse against more than one outstanding higher card. You have also learned how to finesse against lower honors than the King. The manner in which you attempt to encircle an adversary's honor should now be an open book to you, and you should find it as simple a matter as the proverbial rolling off a log. The names of the finesses you have learned do not matter; they are merely convenient tags to use in discussing them in a textbook of this kind.
+
+|ht|w|at|This is the end of Chapter III. Next is Chapter IV. |PG||ha||
+%%%%%%%%%%%%%%%%%  
+qx|4B01, WHEN NOT TO FINESSE - Chapter IV|tu||
+nt||HT|b|cs|1|cp|4|fp|1|3d|3|at|^-{     WHEN NOT TO FINESSE                           Chapter IV    }
+^-|
+cp||fp||at|^b@2^Y@3The thoroughness with which we have gone into the subject of tenaces and finessing may give the reader the wrong impression that finesses are compulsory whenever a finessing position appears. Please be patient and do not take anything for granted; by the time you have finished this book you will be able to decide for yourself which may be the better play in any given situation.|PG||CP|8|AT| A warning may very appropriately be inserted at this point to the effect that just because certain combinations of honors are held, and other honors are missing, you need not feel obliged to attempt to encircle the honors not held.|PG||CP||FP||AT|  In fact, ^*Iwhen a suit is divided in the two hands in such a way that a missing honor seems likely to drop on the lead of a higher honor, to finesse against the missing honor is usually not a good play^*N. Consider the following diamond situation:
+
+
+|HT|k|va|6|AT|^M@D 6 5 4 3
+|HT|l|va|6|AT|^M@D A Q J 10 9 8 7 |PG||AT|
+
+You have seven diamonds, and Dummy has four. The Opponents, therefore, have only two diamonds, and the chances are good that each Opponent holds one. If so, you will capture both adverse diamonds by leading your Ace; the King then drops. Of course, one Opponent may hold both missing diamonds. In this event, the lead of your Ace will not capture the King. You may assert that to finesse would have been better; but a finesse will work only when East holds both missing diamonds.|CP|8|AT|*| 
+HT|u|fp|2|AT|^B@2* |CP||fp||AT|The missing diamonds may be divided in any one of the four following patterns:
+^C  W   ^D  E    ^F  W ^G  E ^j  W ^l E ^NW ^O E
+^C@DK ^D@D2      ^F@D2 ^G@Dk   ^j@DK2 ^l - ^N- ^O@DK2
+^B@2Obviously, an attempted finesse made by a low lead from Dummy (North) will apparently succeed half the time. Actually, in the second situation, when East has the King alone, the attempted finesse develops at once into the drop, for East must play the King willy-nilly, whereupon South puts on the Ace. The King therefore drops half the time, whether the Ace is led or is played on a low lead from Dummy.—^*ISam Fry, Jr. ^*N|PG||                                          
+%%%%%%%%%page 2
+HT|c|at|^b@2^Y@3 @4The fact remains that experience has shown that it is better in a situation like this, to play for the drop (by playing the Ace on the first round) than to finesse. To be sure, you thereby give up any chance of encircling the King if it does not drop. That is unfortunate, but it is not your fault. You have made the best play under the circumstances.|PG||AT|
+
+However, reconsider the preceding diamond situation with one less diamond in your hand and Dummy's. The Opponents then have three diamonds, thereby greatly reducing your chances of dropping the King. Your best play is then to finesse, by leading from Dummy's hand toward your Ace-Queen tenace, hoping East holds the King.|PG||AT|
+
+The same principle can be extended to Queens and Jacks, as, for example, in the following spade situation:
+
+^E@S A 10 9 8 
+^E@S K J 7 6 5
+
+You have nine spades in your two hands, including the two top honors. The Opponents have only four spades, one of which is the Queen. With your two top spades, you have two leads on which the Queen may drop. Whenever the adverse spades are evenly divided, you can drop the Queen, and to finesse may lose. Also, if the Queen is alone in one hand, it will drop on the first round. If an Opponent holds the Queen twice guarded (Queen and two small spades), the honor will not drop. However, unless you have obtained some information from the bidding or from some previous play which locates the Queen for you, to play for the drop is a better play, all things considered, than to finesse for the Queen.|PG||AT|
+
+As a matter of fact, when you hold two top honors in a suit, it is always better to lay down one of them on the first round, so that if the missing honor happens to be a singleton|CP|8|AT|^*B*^*N|CP||AT|, it will drop—even when a finesse is indicated as the best play on the second round.
+
+|CP|8|at|^*B*^*N|CP||AT| "Singleton" as a term for only one card of a suit dealt originally has been common for centuries in the language of card games. By a similar word-formation, "doubleton" for a two-card suit and, less common, "tripleton" for a three-card suit have come into use.—Sam Fry, Jr.|PG||
+ 
+%%%%%%%%%% Page
+HT|c|at|^B@2^Y@3 @4Consider now the following heart situation:
+
+^E@H K 10 9 8 7 
+
+^E@H J 6 5 4
+
+Following the principle of finessing, you must lead from your own hand first, as it is the weaker hand. If West plays low, you must decide whether to attempt a finesse against the Queen, or to capture the Queen. The Opponents hold only two heart honors. If West holds  @H Q 3 and East @H A 2, your best play is the seven-spot from Dummy. But if West holds @H A 2 and East @H Q 3, the King would be a better play because it would hold the trick and the Queen would fall automatically on West's Ace on the next round. The play is essentially a guess, though information disclosed during the bidding or previous play may often eliminate the guess.|PG||AT|
+	
+Note that here you had nine cards in the suit in the combined hands so that if you guess (correctly) to play the King on the first round there is a good chance that the Ace and Queen will fall together on the second round. But if your combined holding consists of eight or fewer cards, the Queen, not the Ace, should be finessed against on the first round as clearly the best chance of losing only one trick in the suit.|PG||nt||ha||
+
+%%%%%%%%%%%%%%%%%%%%%Summary to Chapter IV
+qx|4B02, Summary to Chapter IV|HT|b|cs|1|cp|4|fp|1|3d|3|at|^-{        WHEN NOT TO FINESSE                   Chapter IV          
+Summary} 
+^-|
+cp||fp||at|
+^b@2In this short but important chapter, you have been warned that occasions arise when a finesse is not advisable; that is, when some other method of play against a missing honor offers better chances of success.  In fact, when a suit is divided in the two hands in such a way that a missing honor seems likely to drop on the lead of a higher honor, to finesse against the missing honor is usually not a good play.|PG||AT|
+
+Whenever your partnership hands contain nine or more cards of a suit, it is worth considering whether to play for the drop is not more likely to succeed than to play for the finesse.  With nine cards against the Queen, or with eleven cards against the King, it is best to play for the drop.|PG||ht|w|at|This is the end of Chapter IV.  |PG||nt||
+%%%Comments by Howard
+QX|4HOW,Comments by Howard Schutzman|
+HT|d|cs|1|cp|4|fp|2|3d|3|
+at|
+^-{    Comments by Howard Schutzman   }
+^-|fp||cs||cp|8|AT|
+^B@2^*BMovie Maker: ^*N|cp||at|We are fortunate to have Howard explain this rather complicated topic further. Please click the forward arrow to see what he usually teaches his students concerning the "drop" versus "not-drop" along with a short description of |cp|8|at|Restricted Choice.|cp||PG||cp|8|AT|
+
+^B@2^*Bhondo717: ^*N|cp||at|All things being equal, if you have a nine card fit missing the Q, the odds favor playing for the |cp|8|at|drop|cp||at| rather than finessing for the Q. However, the odds are only slightly in your favor (barely over 50%), and there are often other clues you can use. If someone shows a long suit, 5 cards in length or longer, you should finesse their partner for the Q (playing for the drop on the first round in case there is a singleton Q). |PG||cp|8|AT|
+
+^B@2^*Bhondo717: ^*N|cp||at|Let me give an example to explain why you do this. Assume your RHO has bid a weak 2S, and the opponents have an 8 card spade fit. Further, assume you have a 9 card heart fit, missing the queen. Since you know RHO has six spades, there are 7 cards remaining that may or may not include the Q of hearts. You also know that LHO has two spades, leaving 11 cards remaining that may or may not include the Q of hearts. Therefore the odds are |cp|8|at|11 to 7 (11 cards vs 7 cards)|cp||at| that LHO has the Q of hearts. 
+
+And if you play the A or K first, hoping for a singleton Q, your odds are improved even more (even if the Q does not drop and the weak 2 bidder does not show out, the odds go down to 10 to 6 since you now know one more card in each hand).|PG||
+nt||HT|d|cs|1|cp|4|
+fp|2|3d|3|
+at|
+^-{    Comments by Howard Schutzman   }
+^-|
+cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||at|Now, a  summary of the law of |cp|8|at|Restricted Choice|cp||at|:
+
+There is a declarer play technique known as the "Law of Restricted Choice" which applies when you hold the A, K, 10, and 9 (usually) and are missing the Q and J. I will give an example with a 9 card fit, but it applies to lesser fits as well. Assume you hold the following heart combination:|PG||AT|
+
+|HT|m|AT|^L@HK973
+
+|HT|p|AT|^L@HA10654 |PG||AT|
+
+You are in dummy, play the K, and your LHO drops the J or Q. LHO might have QJ or might have a singleton honor. It turns out, mathematically, that the odds greatly favor a singleton honor (75%). Therefore, the correct play is to lead low from dummy and finesse RHO for the missing honor by playing the 10.|pg||at|
+
+For those of you interested in where the "Restricted Choice" terminology comes from, it has to do with the choices LHO has. If he has a singleton honor, then his choices are "restricted", he must play the honor. If he has a doubleton honor, then his choices are not restricted, he can play either the Q or J. Without getting into all the math, since his choices are "restricted" with a singleton honor, whereas with a doubleton honor he can just as easily play either honor, it turns out that the "restriction" causes the odds to favor playing for a singleton honor.|PG||cp|8|AT|
+
+^B@2^*BMovie Maker: ^*N|cp||at|That concludes Howard's comments. |pg||
+LF|CH-5-P-1.LIN|
+

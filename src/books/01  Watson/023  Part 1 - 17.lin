@@ -1,0 +1,307 @@
+%%CH-17-P-1.lin
+%%%%%%%%%%%%%% ELEMENTARY DEFENSE AGAINST NO-TRUMP Chapter 
+%%%by Kia
+%%12-25-2011 done
+mn|ELEMENTARY DEFENSE AGAINST NO-TRUMP  Chapter  XVII|
+TU||bt||
+%%Font and color codes
+fh|155|ff|1Arial|fb|19|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|36|fm|3|                           FOR 3
+fh|430|ff|4Arial|fi|4y|fm|4|     %%Larger than default— italic
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|30|cg|30|cb|3128|                dark Blue 3
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|664|cg|6255|cb|6255|             6=TURQUOISE
+cr|70|cg|7235|cb|7235|              green/blue 7
+cr|8255|cg|80|cb|80|                red 8
+cr|9128|cg|950|cb|90|               Reddish-brown 9
+%%%
+tu|1|cs|6|ht|e|fp|2|at|^-
+WATSON's Classic Book on The Play of the Hand at Bridge
+
+Part I, Fundamentals of Play
+
+Chapter XVII, ELEMENTARY DEFENSE AGAINST NO-TRUMP
+^-|FP||ht|j|at|
+^*U^DTABLE OF TOPICS ^*N|cp|1|AT|
+
+^D^*G17ELM,Elementary Defense Against No-Trump^*N  
+^D^*G17B01,Opening Lead Against No-Trump^*N    
+^e^*G17B02,The Honor-Sequence Length Lead^*N    
+^e^*G17B03,The Plain Length Lead^*N
+^E^*G17B03a,Lead From Ace-King Suits ^*N
+^E^*G17B03b,Continuation Honor Lead ^*N
+^e^*G17B04,Leading the Ace^*N   
+^e^*G17B05,Choosing Between Two Length Leads^*N   
+^e^*G17B06,Short-Suit Sequence Leads^*N
+^e^*G17B07,Short-Suit Leads (Desperation)^*N
+^D^*G17B08,Leading Partner's Suit^*N
+^D^*G17B09,Choosing Between Your Own Suit and Partner's ^*N
+^D^*G17SUM,Summary^*N
+^E^*G17SUMa,When Partner Has Not Bid^*N
+^E^*G17SUNb,When Partner Has Bid a Suit^*N|CP||at|
+^C@2^Y@3 |PG||cp||nt|| 
+%%%%17ELM
+qx|17ELM,ELEMENTARY DEFENSE AGAINST NO-TRUMP |
+nt||HT|e|at|^b@2^Z@3The preceding chapters have given the first essentials of play by the Declarer, both at no-trump and at a suit contract. Every situation could not be covered, for the very good reason that Declarer's play is governed, to a very large extent, by what the Opponents do. Therefore, before taking up the more complex aspects of the play of the hand, we must turn for a bit to the Defending Partnership, not only to teach the reader how to defend against an adverse Declarer, but also to teach him to understand, when Declarer, what his Opponents may be up to.|PG||AT|
+
+Most expert players agree that defensive play is the most difficult phase of Contract Bridge. Bidding can become pretty well standardized between any pair of players, and even two players who have no common bidding system can generally coordinate their ideas of bidding to such an extent that they will have some notion of what each is doing. The play of the Declarer is comparatively simple, for he always manipulates half the cards in the deck (twenty-six in all, his own hand and Dummy's), all of which he can see. |PG||AT|
+
+Generally there is nothing to prevent the Declarer from making the maximum number of tricks his hands afford, except, of course, lack of knowledge, or possibly the complexity of a hand  which offers more than one likely method of play. |PG||AT|
+
+The player on the Defending Side has no such advantage. He can see his own thirteen cards, and he can also see the Dummy's thirteen cards. But the only cards he can play as he chooses are his own thirteen, and he cannot see his Partner's hand at all. Even though the sight of the Dummy does help each defending player, it cannot ever be of as much help to the Defending Side as to the Declarer (the Attacking Side). |PG||AT|
+
+Of course, the auction, with its opportunity for each player to make a bid, provides some information as to partnership holdings. It is quite possible that the players who find themselves defending against an adverse contract have made one or more bids during the auction preceding the play. |PG||NT||
+%%%%%%%%%%%%%%%%
+nt||HT|e|at|^b@2^Y@3By bidding honestly a player can very often give his Partner clues to his holding which will prove of great value in the subsequent play. Even a pass (the absence of a bid) can imply the negative information that sufficient strength for a bid was not held. The distribution may also be indicated by the bids of a partnership. From the partnership bidding, and from the inferences which must also be drawn from the Opponents' bidding, certain ideas may be logically arrived at before the play starts. |PG||AT|
+
+The inferences to be drawn from the bidding, of course, depend very largely upon what bidding system the players are using,|cp|8|at| (*)|cp||at| and how closely they stick to its principles, and how well they apply those principles. It is assumed that the reader is already using some bidding system. Discussion of this phase of the game is not within the scope of this book. |cp|8|at|^*I
+
+* |cp||at|^*IIt should be made known to all the players at a table what system of bidding each player is using. In tournament play, only recognized bidding systems and conventions may be used, unless the individual variation, if any, can be simply explained in a very few words before the game begins.
+^tSam Fry, Jr.^*n|PG||AT|
+
+After the auction has ended, the player at the left of the Declarer makes the first or opening lead. He will naturally select a card which seems to him to be of some advantage to his side. From the opening lead, then, all the other players may draw certain inferences also, which tell something about the leader's hand. In fact, every subsequent lead during the play, and to a great extent every card played, tells its own story.|PG||AT| 
+
+If two rounds of spades have been played, and everyone has followed suit, the good player knows that eight spades have gone—two from each player's hand, and he has noted which two each player played. From this, and from other inferences he has drawn as to high-card holdings and distribution, he may have a fairly good notion where the other five spades (such as he does not hold himself and are not in the Dummy) are located.|PG||NT||
+%%%%%%%%%%%%%%
+nt||HT|e|at|^b@2^Y@3Still more information can be conveyed by the fall of the cards. Certain conventions|cp|8|at| (*) |cp||at|of leads, and to some extent of plays, particularly discards, are now in fairly general use by all good players. Some of these have come down from the days of Whist, which was a card game in which all four hands were concealed, so that no player had any more idea of his Partner's hand than what he could deduce from the fall of the cards. Indeed, in Whist there was no bidding, so that the play of each deal started entirely in the dark (except that the Dealer's last card was turned up, or exposed, to indicate the trump suit, and this one card became known to all the players). |cp|8|at|^*I
+
+(*) |cp||at|^*IA convention, whether of bidding, leading, or playing, is a generally understood agreement with respect to the meaning of the bid, lead, or play, respectively. The convention, to be ethical, must be a known one.—Sam Fry, Jr.^*N|PG||at|
+
+The value of signals |cp|8|at|^*B**^*N|cp||at| in the play can thus be well understood, and the best of these signals have been carried on into Contract Bridge, with a few new ones which have come about as a natural development of the modern game.|cp|8|at|^*I 
+
+** |cp||at|^*IBy "signals" the use of well-understood playing conventions is meant. The signal is made entirely by the denomination of the card played, and not by any special manner of playing it or by any gesture of the player himself, any signal other than the denomination of the card, or any private understanding whatever between partners, is unethical and is absolutely taboo among all Bridge players worthy of the name, who spurn the use of any language other than the language of bidding and the legitimate language of the cards. A good Bridge player who plays the game for the intellectual enjoyment he gets out of it would not think of marring his pleasure by using any unethical tools. 
+
+Sam Fry, Jr.|PG||NT||
+%%%%%%%%%%%%%%%%
+nt||HT|e|at|^b@2^Y@3When a player has a choice of cards to play, therefore, he must bear in mind not only the advantage to himself, but what his Partner may infer from the card he chooses. No player can afford to play his cards in haphazard fashion. If you play carelessly, your Partner may deduce something about your hand which is not true. Of course, the Declarer may play as he wishes, for he manipulates the Dummy himself and is not therefore able to deceive his "Partner," but we are speaking now of defensive play. The information that can be conveyed by leads and discards is, after all, limited, so you must always make the most of whatever opportunity you have.|PG||AT|	 
+
+But, you may say, if we play in such a way that our Partner learns something about our hand, and if that signal is known and understood by the Declarer too, will it not "give away" our hand to the Declarer? True, but you must also remember that your partner may be in a better position to interpret your signal than is the Declarer, and also that even if the Declarer interprets the signal correctly, it may be of far more value to your Partner than to the Declarer. |PG||AT|
+
+In fact, to the Declarer it may often be the handwriting on the wall, telling him that he is about to be defeated unless your Partner is as blind as a bat. If, when you become more expert, you are able to satisfy yourself that to signal your partner will give valuable information to the Declarer, you may then—and not until then—modify your play on a particular hand. But never forget that whenever you undertake to mislead the Declarer, you run the risk of misleading your partner also. |PG||NT||
+%%%%% (2)17B01
+qx|17B01,OPENING LEAD AGAINST NO-TRUMP - GENERAL|
+nt||HT|e|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    OPENING LEAD AGAINST NO-TRUMP - GENERAL    }
+^-|CP||CS||FP||at|^b@2^Y@3First, let it be understood that for the time being, in setting forth the elementary principles of making the opening lead, we are going to assume that every lead is made "blind"—that is, we are going to ignore the bidding so far as our own partnership is concerned. You have entered upon the play of each hand without you or your partner having made any sort of bid (except a pass). In other words, you know nothing about your partner's hand beyond the fact that he never made a bid. |PG||AT|
+
+The object of the Defending Side, incidentally, is the same as the object of the Declarer—to win as many tricks as possible. If the tricks won are sufficient in number to defeat the Declarer's contract, so much the better, but even if the adverse contract is not defeated, every trick won by the Defending Side means that that trick at least cannot be scored by the Declarer as an extra trick. In other words, every trick won defensively represents a certain number of points, either saved from being scored by the Declarer, or scored by the Defending Side in penalties.|PG||AT|		
+
+Now, the Defending Side has no time to lose in developing tricks, for the Declarer already has the advantage of manipulating twenty-six cards visible to him. The moment the Declarer gains full control of the hand, he will make his contract without more ado, and perhaps extra tricks as well. It behooves the Defending Side, then, to get busy right from the start, and there can be no better beginning than the opening lead.|PG||NT||
+%%%%% page
+nt||HT|e|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    OPENING LEAD AGAINST NO-TRUMP - GENERAL    }
+^-|CP||CS||FP||at|^b@2^Y@3The better to understand the situation, review for a moment how Declarer goes about making a no-trump contract. He first endeavors to establish a long suit as soon as he gets the lead, of course. He will let the Defending Side win tricks, perhaps, but he will always be endeavoring to line up enough tricks to make his contract, and as soon as he does that, he will cash them in.|PG||AT|
+
+The Defending Side at no-trump, then, should do precisely the same to establish their long suit. The trouble is that the Defending Side cannot be sure what is their best suit. The longest suit of one defending player may be the shortest suit in his Partner's hand. When neither Partner has made a bid, the choice of the suit to develop depends entirely on the player's own hand until he hears from his Partner by means of the cards Partner plays on his leads.|PG||AT|
+
+You also remember from the principles of Declarer's play that certain tenace combinations, such as holdings headed by Ace-Queen, King-Jack, and the like, are worth more tricks when led up to than when led away from. This is just as true of a hand in a defending position. Therefore, it is often unwise to lead from such tenaces, and better to wait until the suit is led by Partner or by Declarer, if you are to make the most of such holdings. Generally speaking, there are four types of leads against no-trump, namely,|PG||cs|4|cp|8|FP|2|at|^*B
+
+{ The Honor Sequence Length Lead } |PG||AT|
+
+{ The Plain Length Lead             }|PG||AT|
+
+{ The Short-Suit Sequence Lead     }    and   |PG||AT|
+
+{ The Desperation Short-Suit Lead } ^*N|PG||cs||cp||NT||
+%% 3) 17B02 
+qx|17B02,THE HONOR SEQUENCE LENGTH LEAD|
+nt||HT|e|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    THE HONOR-SEQUENCE LENGTH     }
+^-|cp||fp||at|^b@2^Y@3When holding four cards or more of a suit headed by three honors in sequence, or by two honors in sequence and the third card not more than one step lower, the top card |cp|8|at|(except when it is the Ace)|cp||at| should always be led.|FP|2|CP|8|AT|*|CP||FP||AT| Partner may then readily infer that you hold the next two lower cards in the suit, or the next lower card and the third not more than one rank lower. If you lead anything but the top card from such a sequence, Partner will be more or less in the dark about your holding in that suit. The top card, if consistently led, will give Partner definite information right away. 
+
+|CP|8|FP|2|AT|* |CP||FP||AT|^*IIn the present discussion, "lead" must always be taken to mean "opening lead," and any reference to leading is meant to apply to the first lead of the deal.|PG||AT|
+
+For example, in the following suit holdings the card in BOLD RED should be led:
+|at|^f@2
+@s|cp|8|at|^*BK^*N|cp||at| Q J 3 2|cp|8|at|^*B^k(K)^*N|cp||at|
+@c|cp|8|at|^*BQ^*N|CP||at| J 10 3 2|cp|8|at|^*B^k(Q)^*N|cp||at|
+@s|cp|8|at|^*BJ^*N|cp||at| T 9 3 2|cp|8|at|^*B^k(J)^*N|cp||at|
+@c|cp|8|at|^*BK^*N|cp||at| Q 10 3 2|cp|8|at|^*B^k(K)^*N|cp||at|
+@s|cp|8|at|^*BQ^*N|cp||at| J 9 3 2|cp|8|at|^*B^k(Q)^*N|cp||at|
+@c|cp|8|at|^*BJ^*N|cp||at| 10 8 3 2|cp|8|at|^*B^k(J)^*N|cp||PG||at|
+^b@2^Y@3
+Note that in every one of these holdings, the top card is led. The first three holdings show three honors in sequence, or three cards at the head of the suit in sequence. The second three show three cards almost in sequence the top two in sequence, but the third one rank below. Remember this lead, for it is one of the best leads against no-trump: the highest card from a sequence of three cards, or the highest card from a sequence of two cards if the third card is not more than one step lower. |PG||NT||
+%%%%% page
+nt||HT|e|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    THE HONOR SEQUENCE-LENGTH    }
+^-|cp||fp||at|^b@2^Y@3Do you see why these leads are the best choice against no-trump? First of all, the lead of the top of a sequence attacks the suit without delay, forcing out a higher card held by the Declarer if he wishes to win the trick, and thereby is effective in establishing the suit. The King from King-Queen-Jack is the only lead required to set up the suit immediately. From a suit headed by Queen-Jack-Ten, two leads are theoretically required, but Partner will now and then hold one of the missing honors. The lead of the Jack from Jack-Ten-Nine is perhaps not quite so promising as the others, but it starts the definite establishment of tricks in a suit of five or more cards. Do not overlook the fact that your position as the first leader gives you automatically one time unit advantage over the Declarer. |PG||AT|
+
+To lead the King from a suit headed by King-Queen-Ten establishes that suit at once when Partner holds the Jack. Similarly, to lead the Queen from Queen-Jack-Nine establishes the suit when Partner holds the King. By leading the Jack from a five-card suit headed by Jack-Ten-Eight, you may start the ball rolling in plenty of time to get some long-suit tricks if Partner holds even King-Nine or Queen-Nine, The following suit combinations also belong in this category, and are known as ^*Iintermediate^*n sequence leads. |PG||AT|
+
+In each holding, the card in BOLD RED should be led—the top of an inner sequence:|at|
+@SA|cp|8|at| ^*BQ^*N|cp||at| J 5 4  |AT|^k(Q)
+@SA|cp|8|at| ^*BJ^*N|cp||at| l0 5 4 |AT|^k(J)
+@CA|cp|8|at| ^*B10^*N|cp||at| 9 5 4 |AT|^k(10)
+@CK|cp|8|at| ^*BJ^*N|cp||at| 10 5 4 |AT|^k(J)
+@SK|cp|8|at| ^*B10^*N|cp||at| 9 5 4 |AT|^k(10)
+@SQ|cp|8|at| ^*B10^*N|cp||at| 9 5 4 |AT|^k(10)|PG||
+at|
+^B@2^Y@3Any other honor combination requires different treatment. A holding of A 9 8 3 2 or of Q J 8 3 2, for example, requires the lead of a low card rather than a high card, and comes under the classification of a length lead.|PG||NT||
+%%%%%%%%%%%%%% 4) 17B03
+qx|17B03, The Plain Length Lead |
+nt||HT|e|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    THE PLAIN LENGTH LEAD    }
+^-|cp||fp||at|^b@2^Y@3Roughly speaking, the lead of a low card from a suit of four or more cards is the second most advantageous opening lead against no-trump. The reason is, again, that it is the second most likely lead to develop into establishing 1 or more tricks in the suit. For example, if you hold @C Q J 8 3 2, and lead a low card, the suit is established at once if Partner plays the King, forcing Declarer's Ace. Even with a combination of cards not quite so strong as that just given, you have a chance of finding the Declarer with no more than two stoppers in that suit, which means that the suit must be set up eventually.|PG||AT|
+
+All length leads, needless to say, are not made with any definite hope of profit. Yet such a lead may be the ^*Ibest^*n hope that the hand affords, even if it is from a suit as weak as @D 10 7 6 3. And even that hope may occasionally materialize, as witness the following possible distribution of the suit:|PG||NT||
+     
+pn||st||md|dK92,Dt763,DA84,DQJ5|rh||ah|Example 1|sv|o|mb|1nppp|NT|^B@2
+Let us say you are West, leading against South's no-trump contract. It is clear that only two leads in diamonds are necessary to give your side 2 tricks.|CS|1|CP|4|AT|
+^-
+{ In leading a low card from a long suit (four or more cards), 
+ the card selected should always be the^*I fourth best^*n, counting down from the top. }
+^-|CS||CP||PG||NT|^B@2
+This is of very great importance to your Partner, for, if you stick to this rule of leading the fourth best when you do not lead the top card of an honor sequence, you will enable him to apply what is called the Rule of Eleven (explained in the next chapter). Even though the fourth best card is not the lowest card, you should lead it. Any lead but the fourth best will upset Partner's count and may ruin his entire defense for the rest of the hand. |pc|d3d8djdk|pg||NT||BT||
+%%%% page
+nt||HT|e|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    THE PLAIN LENGTH LEAD    }
+^-|cp||fp||at|
+^b@2^Y@3For example, from the following holdings lead the high-lighted cards:
+|ih|pSQJ8(3)2|HC|S3| 
+ih|pdT76(3)|hc|D3|
+ih|pHJ93(2)|hc|H2| 
+ih|pCQ87(5)432|HC|c5|PG||NT||bt||
+%%%%5) 17B03a
+qx|17B03a,Leads From Ace-King Suits|HT|e|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    LEADS FROM ACE-KING SUITS    }
+^-|CP||FP||AT|^b@2^Y@3A suit headed by Ace-King presents one of the most difficult problems in defending against no-trump. Some excellent players recommend the lead of the King first if the suit contains four or more cards; others recommend the lead of a low card even when  such a suit contains six cards (provided the Queen and Jack are not also held.)  With Ace-King alone, or Ace-King and one small card, it is just as well, generally speaking, not to select the suit for the opening lead, for the simple reason that your shortness in the suit indicates that the Declarer may have length in it, and you will only aid him to set up his suit. Furthermore, these cards may prove to be valuable entries to your longer suit.|PG||AT| Consider the following Ace-King combinations:
+
+^e1. |IH|pSA(K)Q2|hc|sk|at|      2. |ih|pHAKJ2|hc|Hk|LC|H2|at|    3. |ih|pDAkT9|hc|dk|pg||at|
+
+^b@2With these combinations, whether of four cards or more, the King is generally the best opening lead. |PG||AT|
+In No. 1 the advantage is obvious for the Queen can be led to the second round, and control of the suit is retained. |PG||AT|
+
+In No. 2, the King may be led so that if it subsequently develops that Partner can lead through Declarer's Queen, that advantage may be gained. |PG||AT|
+
+In No. 3, the King is led to explore the suit, but the suit is to be discontinued if Declarer seems to hold the Queen, for then Partner's Jack can be led through and the Queen captured.|PG||NT||
+%%% 5 continued
+HT|e|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    LEADS FROM ACE-KING SUITS    }
+^-|CP||FP||AT|^b@2^Y@3With practically all other combinations of four or more cards, of which the top two cards are the Ace and King, the best lead is usually a low card. The low card is sent out to reconnoiter, as it were, while you still have two sure stoppers in the suit. If Partner holds Queen, the whole suit may be established at once.|PG||AT|
+
+In Ace-King suits the proper lead is never the top card of the sequence. This is the only exception to the rule that the top card sequence should be led. If you wonder how your Partner is going to tell from your King lead whether you hold the Queen or the Ace since the King may be led from either sort of sequence, the answer is that your Partner probably cannot tell unless he holds the missing card himself. However, he should be satisfied with the information that you hold either the Ace or Queen, and he will know before long which one you have—or, if he cannot deduce it after a while, he is not the sort of player you will want for a Partner over any great length of time.|PG||NT||hc|sq|
+%%%%%%%%%%%%%%%%%%%% 6) 17B03b
+qx|17B03b,Continuation Honor Lead|HT|e|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    CONTINUATION HONOR LEAD    }
+^-|CP||FP||ht|g|AT|^b@2^Y@3With honor combinations such as ^i|IH|pSAKQ|at|^m  |IH|pSKQj|at|^r  |IH|pSQJT|ht|m|FP|1|at|^m^*B, ^q, or ^v,|FP||pg||AT| the problem very often arises as to the proper procedure if your first card led holds the trick. For instance, which should you continue from @S A K Q after your King has won? As a rule, it pays to lead the card which gives Partner the maximum amount of information. In the @S A K Q instance, the Queen is the best continuation, because the lead of the Ace the second time fails to tell Partner anything about the location of the Queen, while the lead of the Queen informs Partner definitely (except under certain desperation circumstances) that the Ace is held.|PG||AT|
+
+The reason for the above is apparent when the same principle is applied to the lower honor combinations. With a holding of @S K Q J, for example, the King should be opened and the Jack continued. This card affirms the possession of the Queen. Similarly, from @S Q J 10, the opening of the Queen and continuance of the Ten shows the Jack.|PG||NT||lc|SKQ|
+%% 7) 17B04 LEADING THE ACE 
+qx|17B04,LEADING THE ACE |
+nt||HT|e|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    LEADING THE ACE    }
+^-|cp||fp||at|
+^b@2As a matter of sober fact, very few expert players ever lead the Ace of a suit as their opening lead against no-trump. This is so universal that it is almost safe to tell the beginner never to make an Ace his opening lead against any no-trump contract, for the Ace is a key card which the Declarer is always burning up to locate.|PG||AT|
+
+Occasionally, when revealing the location of the Ace cannot help the Declarer, the Ace may be the first lead. But such occasions are rare, for only some such holding as @H A K Q J 3 2 justifies leading the Ace to start with. With such a powerful six-card suit, you may as well lead the Ace and follow right down the line with the rest of the suit. Since you will take 6 tricks nine times out of ten, your lead makes little difference to anybody, but it is a fairly well-established convention to lead the Ace first with such a six-card suit, and also with @SA K Q 7 6 3 2 (a seven-card suit). The only advantage gained, incidentally, is a rather negligible one. In fact, it involves only a question of discarding. This will be discussed later.|PG||NT||
+%%%%%%%%%%%%%%%%%%%%% (8)17B05,Choosing Between Two Lengths
+qx|17B05,  CHOOSING BETWEEN TWO LENGTHS|
+nt||HT|e|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    CHOOSING BETWEEN TWO LENGTH LEADS    }
+^-|CP||FP||CS||AT|^C@2^Y@3When you have a choice of opening leads between two suits of some length, let us say, you should prefer the longer suit except when the shorter suit offers an honor sequence length lead. For example, suppose you hold:|FP|1|at|
+1.|LC|SK|IH|PSKJ86HJ8763DQ5CT3|hc|h6|AT|
+^mor |FP|1|at|^o2. |IH|PS(Q)JT9HQ9843DQ5CT3|fp||pg||AT|
+
+In No. 1, you have two long suits available spades and hearts. The six of hearts is a better opening lead than the six of spades, principally because the heart suit is longer and may develop more tricks. |PG||AT|
+
+But in No. 2,|HC|SQ|pg||AT| the spade Queen is the better opening lead because it will develop tricks more quickly than a plain length lead in hearts (four-spot). Sure developable tricks are better than doubtful developable tricks.|PG||nt||lc|h6sq|
+%%%%%% Page
+nt||HT|e|Va|6|cs|1|cp|4|fp||3d|3|
+at|^-{    CHOOSING BETWEEN TWO LENGTHS LEADS   }
+^-|cp||HT|f|fp||at|^b@2^Y@3When the choice is between two honor sequence length leads, the decision is never difficult. When the suits are of the same length, the stronger should be preferred; when the equally long suits are of the same strength, the one should be chosen in which the fourth or fifth card is the higher. When all cards in the two suits are exactly the same, you might just as well toss a coin. There is little justification for preferring a major suit to a minor.|PG||AT|
+
+When the choice is between two plain length leads, the decision is more difficult. As a general thing, the weaker of two four-card suits should be preferred, because this enables the stronger suit to be retained to furnish a possible entry, while the lead of the stronger suit immediately would probably leave practically no hope of an entry at all. For instance, if the choice is between|
+HT|O|Va|6|at|^c|LC|sat32|IH|PSAT32|ht|r|at|^h  and|ht|o|Va|6|at|^K|lc|HK932|IH|pHK932|HT|q|at|^P@2^Y@3the latter (the heart) should be opened.|HC|h2|PG||AT|And, if the choice is between|HT|u|AT|^C|LC|HKT64|IH|pHKT64|ht|x|AT|^h and |HT|u|at|^k|lc|DJ983|IH|pDJ983|HT|w|AT|^P@2^Y@3the latter (the diamond) should be opened.|hc|d3|PG||nt||LC|D3H2|
+%%%%% Page
+nt||HT|e|Va|6|cs|1|cp|4|fp||3d|3|
+at|^-{    CHOOSING BETWEEN TWO LENGTHS LEADS   }
+^-|cp||fp||at|
+^b@2In fact, even if the choice is between|HT|H|AT|^C|ih|pDQ973|ht|j|at|^h and|HT|H|at|^k|ih|pSt764|HC|s4|ht|g|ht|i|AT|^p@2^Y@3the latter (spade 4) should still be opened in preference, for it will generally prove more advantageous in the long run.  |PG||HT|O|AT|^C@2This principle of selection cannot be adhered to relentlessly. With
+|IH|pCQ763|HC|C3|HT|q|AT|^h and |HT|p|AT|^k|LC|H8642|HT|p|AT|^K|IH|PH8642|HT|p|at|^P@2^Y@3@2for example, the suit headed by the Queen is the better one to open—club 3.|PG||HT|v|at|^C@2^Y@3
+When the choice is between two five-card suits, the principle should be reversed and the stronger suit opened, because this offers more chance of developing sufficient tricks to set the contract immediately. As for two six-card suits there is no particular need to consider the question, for with such a holding you are most likely to be the Declarer yourself !|PG||NT||
+%%%%% (9)17B06,Short-Suit Sequence Leads
+qx|17B06, SHORT-SUIT SEQUENCE LEADS  |
+nt||HT|e|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    SHORT-SUIT SEQUENCE LEADS    }
+^-|
+CP||FP||AT|^b@2^z@3The so-called short-suit sequence leads consist of the lead of the top card of a sequence from a three-card or shorter suit. This lead has two objectives:|PG||CS|4|AT|
+
+^C(1) @2the hope that this particular suit will turn out to be Partner's long suit and that he will be able to develop it before the Declarer can establish his suit; and |PG||AT|
+
+^C(2) @2the desire to avoid leading from tenace combinations since to do so may give the Declarer tricks he would not otherwise make. |PG||AT|  A typical hand calling for such a lead is the following:|HT|m|AT|^b|IH|pSKJ85HJt3DQt75CkJ|PG||HT|n|AT|^jIf the bidding is:  {|ia|1np2np3nppp|at|}|HT|q|AT|
+^b@2^Y@3by the Opponents, any lead looks unattractive.|PG||AT| But, since you are compelled to lead from this hand, the heart Jack is by far the best choice. It cannot really sacrifice a trick, and if partner should have four hearts to the King-Nine or Queen-Nine (or better), the development of 2 heart tricks is in the offing. Another lead may look better, and on some distributions may be better, such as the five of diamonds, but this runs a greater risk than the heart Jack as it may plunge right into Declarer's holding of @D A K J. |PG||AT|
+
+The short-suit sequence lead can also be the top of such suit holdings as ^*U@HQ^*N J 2, ^*U@C10^*N 9 2, or even ^*U@SQ^*N J, ^*U@DJ^*N 10 or ^*U@H10^*N 9. A lead from any King-Queen short suit is not recommended, for it is very dangerous and loses a trick more often than not. It is possible now and then to open the King from three cards headed by Ace-King, but it is almost always better to preserve this suit for entry purposes. In fact, strictly speaking, a lead of this kind comes under the heading of a desperation short-suit lead.|PG||NT||lc|s2d3|
+%%%%% (10)17B07,Short-Suit Leads (Desperation)
+qx|17B07, SHORT-SUIT LEADS (DESPERATION)|
+Nt||HT|e|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    SHORT-SUIT LEADS (DESPERATION)    }
+^-|CP||FP||AT|^b@2^Y@3The desperation short-suit lead is indicated when you have nothing you care to develop, no entry cards, and very little hope of doing the Declarer any damage. With such a barren hand, the top card of a doubleton or of a three-card worthless suit may blindly hit upon Partner's best suit now and then. For example, suppose you hold:|HT|k|AT|^c|IH|pS982H754DT742CJ86|PG||HT|j|AT|^k@2^Y@3It is obvious that a length lead in diamonds is hopeless, for even if your fourth diamond should become established, you will never get in the lead to use it. The best chance is to lead the nine of spades|HC|S9|pg||AT| or the|HC|H7|AT| seven of hearts and pray for luck. Most good players would select the nine of spades, feeling that a nine-spot is more likely to aid in developing Partner's suit than a seven spot, and after all whether Partner's suit is spades or hearts is entirely a guess. |PG||AT|
+^C@2^Y@3Do not confuse desperation short-suit leads with short-suit sequence leads. The latter are made|cp|8|at| ^*Ito avoid leading from tenace;|cp||at| ^*N|cp||at|the former are made ^*I|cp|8|at|only when there is no hope^*N.|cp||at| |PG||AT| For example, the following hand does not call for a short-suit lead:|HT|s|AT|^c|LC|S4h7|IH|PSKT84H97DQT43CK62|PG||AT|
+
+Here the best lead|HC|D3|AT| is the diamond trey, with a gay hope of finding one or more diamond honors in Partner's hand. To lead the nine of hearts may get you into a spot where you will have to begin discarding very soon—before you have gained any inkling of what Partner may hold.|PG||Nt||lc|d3s9|
+%%%% Page
+Nt||HT|e|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    SHORT-SUIT LEADS (DESPERATION)    }
+^-|CP||FP||AT|^b@2
+@D@DThe preceding example is repeated below.
+|AT|^c|LC|S4|IH|PSKT84H97DQT43CK62|HC|D3|at|
+
+It is only fair to say that not all expert players agree with the preceding paragraphs. However, the author has found in his long tournament experience that short-suit opening leads very rarely pay any dividends when the leader holds one or two suits of his own which stand some chance of becoming established. It is true that the weaker you are in a suit, the stronger your Partner is likely to be. At the same time, Partner has to be very strong for a lead from such a suit as hearts, in this example, to prove profitable.|PG||AT| If the nine of hearts|HC|H9|at| is to gain anything, your Partner must have |HT|r|AT|^e|IH|PHKJT|HT|s|AT|^K or |HT|r|AT|^O|IH|PHQJT|HT|w|AT|
+^b@2 a pretty long gamble. The diamond lead can easily gain an advantage if Partner holds as little as the Jack.|PG||NT||lc|d3|
+%%%%% (11)17B08,Leading Partner's Suit
+qx|17B08, LEADING PARTNER'S SUIT|
+Nt||HT|e|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    LEADING PARTNER'S SUIT    }
+^-|
+CP||FP||AT|^b@2^Y@3The preceding "blind" leads, made when Partner has made no bid, are listed approximately in the order of their value. This scale of values is based on average expectation; there is nothing mysterious about it at all. Any player will find that these leads work out in practice over a large number of no-trump hands just about as analyzed here. |PG||AT|
+
+We come now to the vastly different situation when Partner has made one or more bids. Assuming that the Opponents are playing the hand at three no-trump, if Partner has named a suit during the auction the Opening Leader's selection of a good lead becomes much more standardized. |PG||cs|8|cp|4|at|
+
+{ When you hold four or more cards in the suit bid by Partner },|VA|4|cp||at| you should lead the fourth best (counting down from the top).|cp||PG||AT| The importance of this will become apparent in the next chapter, when the Rule of Eleven is explained.|PG||AT|  Only one exception occurs to this rule, and that is when the suit is headed by some sort of sequence. |
+HT|q|va|6|AT|^C|IH|PdQJ72|AT|^H|IH|PSKQ72|AT|^M|IH|PHJT73|PG||HT|w|AT|^b@2In each of the abovee situations, the top card should be led.|HT|q|va|6|AT|^C|IH|PdQJ72|HC|DQ|AT|^H|IH|PSKQ72|hc|SK|AT|^M|IH|PHJT73|HC|HJ|PG||ht|x|AT|
+You will notice the disregard of the rule of holding a card only two steps below the lowest ranking honor. This is of no importance so long as your Partner has bid the suit. Combination honors or split honors require slightly different treatment. |PG||NT||lC|DQSKHJ|
+%%%%%%% Page
+HT|e|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    LEADING PARTNER'S SUIT    }
+^-|
+CP||FP||AT|^b@2^Y@3When you hold only three cards of Partner's suit, and the top card is an honor higher than the Ten (such as the Ace, King, Queen, or Jack), lead the lowest card. This may appear speculative, but you must consider that the Declarer, who sits on your right, may hold a potential double stopper in the suit which you can discount only by holding on to that honor in back of him.|PG||NT|| 
+%%%%%%%%%%%%%%%%% 
+pn|,,,|st||SK|W|md|hkj2,hq86,h43,hat975|HA|y|LC|HJ2|sv|o|rh||AH|Example 2|NT|^B@2 
+For example, consider the following heart distribution. Declarer has what may become a double stopper in hearts.|PG||AT| If you lead the|cp|8|at| QUEEN|hc|hq|sk||cp||at| (as West), you automatically assure the Declarer of his double stopper, for he must then make 2 heart tricks no matter what happens. |PG||AT|  But if you open the|lc|HQ|HC|H6|at| six spot, your Partner wins with the Ace and returns a low card. Since you play after the Declarer, his King-Jack is held to 1 trick.|SK||PG||NT|^B@2^*I 
+This is the first time that modern practice differs at all from Watson's 1934 script. But it differs only in degree. It subscribes wholeheartedly to Watson's principle but goes a bit further.  Next, you can read this section.—Sam Fry, Jr.|PG||NT||BT||
+%%%%%%%%%%%%%%%%%%%%
+HT|E|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    LEADING PARTNER'S SUIT  -  Explanation by Sam Fry, Jr.    }
+^-|CP||FP|2|AT|^B@2^Y@3What do you lead from three-card suits?|PG||FP||AT| ^*IThe passing of time has brought one unanimous minor change from Louis' writings on this subject and another more drastic change which has received only partial acceptance in expert circles. For the latter reason because nothing is truly definitive—we will be brief in our discussion of this subject and tend to generalize. Keep two things in mind. That "|cp|8|at|never say never|cp||at|" adage applies doubly to the subject of which card to lead from a three-card suit. If you and your Partner happen to agree to lead the lowest from 9 7 2, the bidding of the very next hand may give you good and sufficient reasons to prefer the nine that time. So never say never, lead the nine or the seven or the deuce. The other thing to keep in mind, whatever method of leading you choose, is to be sure you and your Partner know what each other tends to do.|PG||fp|2|AT|
+
+When Partner has bid a suit|PG||FP||AT|^*I Lead Ace from A x x against a suit bid and low against no-trump. Lead low from K x x, Q x x and J x x against either a suit bid or no-trump. (That J x x combination is the one definite swing away from Louis. He preferred the Jack but only slightly.) With 10 x x and x x x we have differences of opinion. The low card rather than the top card from both of these holdings in Partner's bid suit is now preferred by most top players. (The middle card is preferred by no one.) If you and Partner agree to lead low from these worthless tripletons you have this corollary going for you: If you have raised the suit during the auction you will then lead the top card. Partner, because of your raise, still knows you have three.^*N|PG||FP|2|AT|
+
+In leading an unbid suit|PG||FP||AT|^*I If you hold x x x against either a suit or no-trump contract, a sizeable block of experts votes for the low lead. We won't give the arguments pro and con—they are too lengthy and get one almost into metaphysics. We personally have come around to preferring the low lead as a general thing, reserving the right to make many exceptions depending on exact hands and exact bidding. We believe Louis Watson would also belong to that school today. But either method is playable so long as it is not played woodenly  and so long as Partner is let in on your secrets.^*N|PG||NT||
+%%%%%%%%%%%%%%%%%%
+HT|e|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    LEADING PARTNER'S SUIT    }
+^-|
+CP||FP||AT|^b@2^Y@3
+With all holdings of three-cards headed by the Ten or lower and with all two-card holdings of Partner's suit, always lead the highest card. The reason for this is that it gives Partner a partial reading on the hand even though the lead itself may not be particularly constructive. If such a lead is the Ten or lower, Partner knows that you have three cards or fewer. If the lead is an honor, he knows that it must be from a sequence containing four cards or more, or that it indicates only a doubleton and he can tell which very soon after he sees the Dummy and looks again at his own hand. |PG||AT|
+
+In choosing the proper card to lead from combinations containing two honors, the same general rules apply. The top of two touching honors should always be led, such as the King from |HT|o|AT|^D|IH|pKQ2|HC|SK|HT|p|AT|^H or the Queen from |HT|o|AT|^O|IH|pHQJ3|HC|HQ|AT|. |PG||ht|w|AT|
+With |HT|u|AT|^D|LC|DK|IH|PDKT3|HC|D3|ht|w|va|8|AT|^H  or   |ht|u|at|^O|IH|PQT3|HC|S3|AT|,|HT|z|AT|^B@2^Y@3etc., the question is very close. As a rule, however, the low card is preferable.|pg||nt||
+%%%%%%% (12)17B09,Choosing Between Your....
+qx|17B09, CHOOSING BETWEEN YOUR OWN SUIT AND PARTNER'S|
+Nt||HT|e|Va|6|cs|1|cp|4|fp||3d|3|at|^-{    CHOOSING BETWEEN YOUR OWN SUIT AND PARTNER'S    }
+^-|
+CP||FP||AT|^b@2^Y@3 
+You may occasionally hold a hand from which Partner's suit does not appear to be the best lead, particularly if Partner has bid his suit only once. The decision must depend on which suit seems likely to develop the most tricks the most quickly. You may take it as a safe rule that you should always lead Partner's suit when you hold four or more cards, or when you hold three cards headed by an honor, in that suit. With less than this, you should prefer to make an honor sequence length lead of a King or a Queen in some other suit. |PG||AT|
+
+The top card of three little ones of Partner's suit should be preferred to the lead of Jack from Jack-Ten in some other suit, and should also be preferred to almost any other length lead. If you have only a doubleton or singleton in partner's suit—well, a point is now reached when so many other factors, psychological and otherwise, enter into the situation that it is best, temporarily, to duck the subject.|PG||cp|8|at|
+
+In conclusion, for the time being, it can only be said that this discussion of leads has been kept on a general footing, but as you learn more about defensive play the matter of opening leads will tend to become clearer, in one sense, and will become more complex, in another sense, for you will discover why even expert players are very frequently baffled when it comes to selecting the best possible opening lead. No one is clairvoyant, after all, and, if one were, the game of Contract Bridge would lose its element of variety which is its greatest charm.|cp|at|PG||NT||
+%%%%%%%%%%%%(13)SUMMARY
+qx|17SUM, Summary|HT|e|Va|6|cs|1|cp|4|3d|3|fp||at|^-{    SUMMARY    }
+^-|
+CP||fp||at|^B@2^Y@3In summarizing opening leads against no-trump, it seems best to make a somewhat arbitrary list, in the order of preference, of the choices the leader is likely to be confronted with. The following tabulation of the more common type of leads should guide the beginner until he knows that some other lead is better under the particular circumstances. |PG||NT||
+%%%a
+QX|17SUMa,WHEN PARTNER HAS NOT BID|HT|e|Va|6|cs|1|cp|4|3d|3|fp||at|^-{ WHEN PARTNER HAS NOT BID }
+^-|
+CP||fp||at|^B@2^Y@31. The highest card from four or more cards headed by a sequence of three cards (except when the top card is the Ace). (|cp|8|at|^*UK^*N|cp||at| Q J 2)
+2. Same as No. 1 if the sequence consists of two cards with the third not more than one step lower. (|cp|8|at|^*UQ^*N|cp||at| J 9 8)
+3. The top card of an inner sequence of two or more cards, from a suit of five or more cards, when there is a skip between the sequence and the top card. (K |cp|8|at|^*UJ^*N|cp||at| 10 3 2)
+4. Fourth best from four or more cards not headed by an honor sequence.
+5. The top of a two-card sequence (if an honor) from a three-card suit.
+6. The top card of a worthless three card suit or a doubleton.|PG||NT||
+%%%%%%%%%b
+QX|17SUMb,WHEN PARTNER HAS BID A SUIT|HT|e|Va|6|cs|1|cp|4|3d|3|fp||at|^-{ WHEN PARTNER HAS BID A SUIT }
+^-|
+CP||fp||at|^B@2^Y@31. From four or more cards, fourth best unless an honor sequence of two or more cards heads the suit, when the top honor should be led.
+2. From three cards, the lowest card if the top card is an honor higher than the Ten, but the highest card otherwise.
+3. From two cards, the highest card always.
+4. A singleton — ^*Imore often than not a suit of your own is chosen.^*N |PG||HT|w|cp||at|^B@2^Z@3
+
+This is the end of Chapter XVII.|pg||LF|CH-18-P-1.LIN| 

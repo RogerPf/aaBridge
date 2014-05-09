@@ -1,0 +1,40 @@
+%% Screen Layout
+%% Last edited  2013 Dec 03
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|150|ff|1Arial|fb|19|fm|1|       1 large
+fh|236|ff|2Arial|fb|29|fm|2|       2 med
+fh|342|ff|3Arial|fb|39|fm|3|       2 med+
+
+cr|3200|cg|3255|cb|3255|     3  light blue
+cr|4170|cg|4190|cb|4255|     4  med blue
+cr|516|cg|5128|cb|516|       5  green 
+cr|7230|cg|70|cb|70|         7  red
+
+bt||
+fp|1|at|
+
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp||at|^z@3|
+mn|   Screen Layout   |
+qx|ScrL|
+ht|d|
+at|^^|fp||at|
+^b@2^*bAaBridge^*n has been designed to be as intuitive as possible.  So most items on the screen can be understood by just looking and clicking.  However it helps to have names for all the parts of the screen.
+
+^c@2@.   The @2tall gray column on the left is called the |cp|7|at|^*bChapter Column^*n|cp||at|.  In it you can see the titles of the chapters of the current book.  You are currently in the  'Welcome Help & Examples'  book reading the  'Screen Layout'  chapter.    The current chapter title shows as black text in a white box.
+
+^c@2@.   The next column, which is currently not showing, is the |cp|7|at|^*bVuGraph Column^*n|cp||at|.  Covered in the next chapter.
+
+^c@2@.   The next area, where you are reading this text, is the main tutorial and  |cp|7|at|^*bDeal display area^*n|cp||at|.  More later.
+
+^c@2@.   To th@2e right of this display area is an adjustable divider.   Please grab it and move it left-right.  As you move the divider you reveal or hide the  |cp|7|at|^*bOption Tabs^*n|cp||at|.  Please click on any of the option tabs (top of that column) and look at the options that are available.  They are also accessible via the menu bar (top of page) ^*bOptions^*n.
+
+^c@2@.   Below@2 the display area is another adjustable divider.   Please grab it and move it up-down.  As you move the divider you reveal or hide the  |cp|7|at|^*bSpeed Sliders^*n|cp||at|.  These control the rate of display of bids and cards when you click on the  ^*bFlow >^*n  button or when you are playing a hand of bridge.  They are also accessible via the menu bar (top of page) ^*bOptions^*n.
+
+
+
+^b@2Click the     ^*bStep >^*n     button below to open the next chapter.        |cp|5|at|^*iPlease do this at the end of all pages^*n|cp||at|
+|
+ht|z|at|@0
+^r Roger Pfister   -   December 2013|
