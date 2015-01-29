@@ -34,7 +34,7 @@ public class SeglinePanel extends ClickPanel {
 	boolean skip__mn_text = false;
 
 	public static final float FONT_SCALE_FRAC = 0.604f;
-	public static final float LINE_SEPARTATION_FRAC = 0.921f;
+	public static final float LINE_SEPARTATION_FRAC = 0.908f; // 0.921f;
 
 	public static final float LIN_STANDARD_WIDTH = 1016;
 	public static final float LIN_STANDARD_HEIGHT = 685;
@@ -273,6 +273,23 @@ public class SeglinePanel extends ClickPanel {
 		int mnBox[] = { -1 };
 
 		int curBox = 0;
+
+		/**
+		 *  as a quick fix we want to suppress all boxes around hands in segs
+		 */
+		for (int i = 0; i < segs.size(); i++) {
+			Seg seg = segs.get(i);
+
+			if (seg.boxNumber > 0 && seg.surpressBox) {
+				int supBox = seg.boxNumber;
+
+				for (int k = 0; k < segs.size(); k++) {
+					Seg segI = segs.get(k);
+					if (segI.boxNumber == supBox)
+						segI.boxNumber = 0;
+				}
+			}
+		}
 
 		/**
 		 * First we calcualte all the positions of all the boxes

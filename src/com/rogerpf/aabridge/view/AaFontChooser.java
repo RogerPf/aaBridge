@@ -15,7 +15,8 @@ import javax.swing.ListCellRenderer;
 
 import com.rogerpf.aabridge.controller.App;
 
-public class AaFontChooser extends JComboBox {
+//  @SuppressWarnings("rawtypes")
+public class AaFontChooser extends JComboBox<Object> {
 
 	private static final long serialVersionUID = 1L;
 
@@ -45,6 +46,7 @@ public class AaFontChooser extends JComboBox {
 		return false;
 	}
 
+//	@SuppressWarnings("unchecked")
 	public AaFontChooser(final Component... components) {
 
 		final String[] families = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
@@ -89,7 +91,7 @@ public class AaFontChooser extends JComboBox {
 //		comp.setFont(font.deriveFont(size));
 //	}
 
-	class MyCellRenderer extends JLabel implements ListCellRenderer {
+	class MyCellRenderer extends JLabel implements ListCellRenderer<Object> {
 		private static final long serialVersionUID = 1L;
 
 		// Color selectedColor = new Color(113, 142, 170);
@@ -99,7 +101,7 @@ public class AaFontChooser extends JComboBox {
 			setOpaque(true);
 		}
 
-		public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+		public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
 
 			setText(value.toString());
 

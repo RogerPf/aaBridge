@@ -17,6 +17,7 @@ public class BridgeFonts {
 
 	public final static Font bridgeLightFont = readResourceFont("BridgeLight.ttf");
 	public final static Font bridgeBoldFont = readResourceFont("BridgeBold.ttf");
+	public final static Font bridgeTextStdFont = readResourceFont("BridgeTextStd.ttf");
 	public final static Font faceAndSymbFont = readResourceFont("BridgeFaceAndSymbols.ttf");
 
 	/*

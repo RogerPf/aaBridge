@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "aaBridge"
-#define MyAppVersion "2.0.1.2230"
+#define MyAppVersion "2.4.0.2406"
 #define MyAppPublisher "RogerPf.com"
 #define MyAppURL "http:/RogerPf.com/"
 #define MyAppExeName "aaBridge.exe"
@@ -46,11 +46,10 @@ Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
 Name: "{commondesktop}\{#MyAppName} Watson Edition"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 
 [Run]
-Filename: "{app}\{#MyAppExeName}"; Parameters: "x"; Flags:
-Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: postinstall skipifsilent
 
 [Registry]
-Root: HKCR; Subkey: ".lin"; ValueType: string; ValueName: ""; ValueData: "aabridge__rogerpf_com"; Flags: createvalueifdoesntexist
+Root: HKCR; Subkey: ".lin"; ValueType: string; ValueName: ""; ValueData: "aabridge__rogerpf_com"; Flags: uninsdeletevalue
 Root: HKCR; Subkey: "aabridge__rogerpf_com"; ValueType: string; ValueName: ""; ValueData: "Bridge Movie"; Flags: uninsdeletekey 
 Root: HKCR; Subkey: "aabridge__rogerpf_com\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\lin.ico" 
 Root: HKCR; Subkey: "aabridge__rogerpf_com\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\{#MyAppExeName}"" ""%1"""

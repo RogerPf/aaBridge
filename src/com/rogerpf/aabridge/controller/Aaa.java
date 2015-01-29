@@ -51,8 +51,7 @@ public class Aaa {
 	public static final int			ALERT				= '!';
 
 	public static final int			upperLowerDif 		= ((int) 'a' - (int) 'A');
-
-
+	
 	// See RpfResizeButton
 	public static final int			s_SelfCmd			=  0;
 	public static final int			s_Std				=  1;

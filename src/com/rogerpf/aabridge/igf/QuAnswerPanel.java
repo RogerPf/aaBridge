@@ -264,32 +264,115 @@ public class QuAnswerPanel extends ConsumePanel {
 
 		setCurSegEol();
 		startNewSeg();
-		// gi.capEnv.centered = false;
+		gi.capEnv.centered = false;
 
-		Card trueAns = Card.singleCardFromLinStr(gi.bb.get(4));
+		String trueAnsStr[] = gi.bb.get(4).split(",");
+
+		Suit suitU[] = { Suit.Invalid };
+
+//		Suit   suit[] = new Suit[trueAnsStr.length];
+//		Level level[] = new Level[trueAnsStr.length];
+		Card trueAns[] = new Card[trueAnsStr.length];
+
+		for (int i = 0; i < trueAnsStr.length; i++) {
+			trueAns[i] = Card.singleCardFromLinStr(trueAnsStr[i]);
+		}
+
 		boolean told = gi.userAns.contentEquals("tellme");
-		Card userAns = (told) ? trueAns : Card.singleCardFromLinStr(gi.userAns);
 
-		Suit suit[] = { Suit.Invalid };
-		String rankText = userAns.toLinAnswerString(suit);
+		if (told == false) {
 
-		if (trueAns.toString().contentEquals(userAns.toString())) {
-			gi.text = (told ? "" : "Yes  -  ") + "The correct card is    ";
+			Card userAns = Card.singleCardFromLinStr(gi.userAns);
+
+			suitU[0] = Suit.Invalid;
+			String userAnsLevel = userAns.toLinAnswerString(suitU); // includes <space> NT on end if NoTrumps
+
+			int correct = -1;
+			String ua = userAns.toString();
+			for (int i = 0; i < trueAnsStr.length; i++) {
+				if (trueAns[i].toString().contentEquals(ua)) {
+					correct = i;
+					break;
+				}
+			}
+
+			if (correct != -1) {
+				gi.text = "   Yes  -  " + ((trueAnsStr.length > 1) ? "A" : "The") + " correct card is    ";
+			}
+			else {
+				gi.text = "   You clicked " + userAns.toInnocuousAnswer() + ".    Incorrect answer";
+				suitU[0] = Suit.Invalid;
+				userAnsLevel = "";
+			}
+			consume_at(gi);
+
+			if (suitU[0] != Suit.Invalid) {
+				gi.numb = suitU[0].v;
+				consume_suitSymbol(gi);
+			}
+
+			if (userAnsLevel.length() > 0) {
+				gi.capEnv.bold = true;
+				gi.text = userAnsLevel;
+				consume_at(gi);
+			}
+
 		}
 		else {
-			gi.text = "You clicked " + suit[0].toStr().toLowerCase() + rankText + ".    Incorrect answer";
-			suit[0] = Suit.Invalid;
-		}
-		consume_at(gi);
 
-		if (suit[0] != Suit.Invalid) {
-			gi.numb = suit[0].v;
-			consume_suitSymbol(gi);
+			gi.text = "  The correct card is   ";
+			consume_at(gi);
 
 			gi.capEnv.bold = true;
-			gi.text = rankText;
-			consume_at(gi);
+
+			for (int i = 0; i < trueAnsStr.length; i++) {
+				Card ta = trueAns[i];
+
+				String userAnsLevel = ta.toLinAnswerString(suitU); // includes <space> NT on end if NoTrumps
+
+				if (i > 0) {
+					gi.text = "  or  ";
+					gi.capEnv.bold = false;
+					consume_at(gi);
+					gi.text = "";
+				}
+
+				if ((ta.suit != Suit.Invalid) && (ta.suit.v >= Suit.Clubs.v) && (ta.suit.v <= Suit.Spades.v)) {
+					gi.numb = ta.suit.v;
+					consume_suitSymbol(gi);
+				}
+
+				gi.capEnv.bold = true;
+				gi.text = userAnsLevel;
+				consume_at(gi);
+				gi.capEnv.bold = false;
+			}
 		}
+
+//		Card trueAns = Card.singleCardFromLinStr(gi.bb.get(4));
+//		boolean told = gi.userAns.contentEquals("tellme");
+//		Card userAns = (told) ? trueAns : Card.singleCardFromLinStr(gi.userAns);
+//
+//		Suit suit[] = { Suit.Invalid };
+//		String rankText = userAns.toLinAnswerString(suit);
+//
+//		if (trueAns.toString().contentEquals(userAns.toString())) {
+//			gi.text = (told ? "" : "Yes  -  ") + "The correct card is    ";
+//		}
+//		else {
+//			gi.text = "You clicked " + suit[0].toStr().toLowerCase() + rankText + ".    Incorrect answer";
+//			suit[0] = Suit.Invalid;
+//		}
+//		consume_at(gi);
+//
+//		if (suit[0] != Suit.Invalid) {
+//			gi.numb = suit[0].v;
+//			consume_suitSymbol(gi);
+//
+//			gi.capEnv.bold = true;
+//			gi.text = rankText;
+//			consume_at(gi);
+//		}
 
 		setCurSegEol();
 		startNewSeg();
@@ -381,8 +464,11 @@ public class QuAnswerPanel extends ConsumePanel {
 	public void ans_lb_m_and_y(GraInfo gi, char c) {
 		// =============================================================================
 
-		leftMargin = 1f * columnWidth;
-		rightMargin = 25f * columnWidth;
+//		leftMargin = 1f * columnWidth;
+//		rightMargin = 25f * columnWidth;
+
+		leftMargin = 0;
+		rightMargin = 27f * columnWidth;
 
 		yRow = -10 /* rowConstA */* rowSpacing + topAdjust;
 		xCol = leftMargin;
@@ -416,7 +502,13 @@ public class QuAnswerPanel extends ConsumePanel {
 		boolean told = gi.userAns.contentEquals("tellme");
 		String userAns = (told) ? trueAns : gi.userAns;
 
-		if (trueAns.contentEquals(userAns)) {
+		String shortTrueAns = trueAns;
+
+		if (userAns.length() < trueAns.length()) {
+			shortTrueAns = trueAns.substring(0, userAns.length());
+		}
+
+		if (shortTrueAns.contentEquals(userAns)) {
 			gi.text = (told ? "The " : "Well done, the ") + "correct answer is  -   ";
 		}
 		else {
@@ -424,7 +516,7 @@ public class QuAnswerPanel extends ConsumePanel {
 		}
 		consume_at(gi);
 
-		if (trueAns.contentEquals(userAns)) {
+		if (shortTrueAns.contentEquals(userAns)) {
 			gi.text = trueAns;
 			gi.capEnv.bold = true;
 			consume_at(gi);
@@ -537,7 +629,7 @@ public class QuAnswerPanel extends ConsumePanel {
 
 			gi.text = "" + frag.size();
 
-			gi.capEnv.font_slot_fp = 11; // Bridge Face and symbol font
+			gi.capEnv.font_slot_fp = 12; // Bridge Face and symbol font LARGE size
 			gi.capEnv.color_cp = Cc.BlackStrong;
 			gi.capEnv.bold = false;
 

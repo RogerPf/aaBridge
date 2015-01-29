@@ -36,29 +36,25 @@ public class BridgeLoader {
 		// ==============================================================================================
 
 		/**
-		 *  if there is a directory the list then the first gets tried first (no recursion)
-		 *  
-		 *  First it is tried as a Bookshelf and it that fails it is tried as a book
+		 *  if there are any directories the list then they are tried in order (no recursion)
 		 */
 		for (File file : files) {
 			if (file.isDirectory()) {
-
-				boolean success = makeBookshelfFromPath(file.getPath());
-				if (success)
-					return true;
-
-				success = makeBookFromPath(file.getPath(), null);
+				boolean success = makeBookFromPath(file.getPath(), null);
 				if (success)
 					return true;
 			}
 		}
 
 		/**
-		 *  if there is a jar in the list
+		 *  if there is a zip in the list
+		 *  note - deeper in  we can handle a .jar specifically ourselves BUT at this level .jars 
+		 *  are not dropable
 		 */
 		for (File file : files) {
-			if (file.isFile() && file.getName().toLowerCase().endsWith(".jar")) {
-				boolean success = makeBookshelfFromPath(file.getPath());
+			String low = file.getName().toLowerCase();
+			if (file.isFile() && (low.endsWith(".zip") || low.endsWith(".linzip"))) {
+				boolean success = makeBookFromPath(file.getPath(), null);
 				if (success)
 					return true;
 			}
@@ -77,15 +73,6 @@ public class BridgeLoader {
 			}
 		}
 
-//		if (linCount == 1) {
-//			boolean success = BridgeLoader.readLinFileIfExists(firstLin.getPath(), "");
-//			if (success) {
-//				App.book = new Book(); // clear away the prev book if any
-//				App.setVisualMode(App.visualMode); // to hide the book panel
-//			}
-//			return success;
-//		}
-
 		if (linCount > 0) {
 			String parentPath = firstLin.getParent();
 			boolean success = makeBookFromPath(parentPath, files);
@@ -95,47 +82,12 @@ public class BridgeLoader {
 		return false;
 	}
 
-	public static int droppedBookshelfCount = 1;
-
-	public static boolean makeBookshelfFromPath(String path) {
-		// ==============================================================================================
-		/** 
-		 * Path should here not be empty
-		 */
-		Bookshelf bs = new Bookshelf();
-		bs.fillWithBooks(path);
-		if (bs.size() == 0)
-			return false;
-
-		String p2 = File.separator + path;
-		int pos = p2.lastIndexOf(File.separator);
-		bs.shelfDesc = p2.substring(pos + 1);
-
-		Book b = bs.getBookByIndex(0);
-		if (b != null) {
-			boolean chapterLoaded = b.loadChapterByIndexNoShow(0);
-			if (chapterLoaded) {
-				App.book = b;
-				App.bookPanel.matchToAppBook();
-				App.bookPanel.showChapterAsSelected(0);
-				App.droppedBookshelf = bs;
-				App.frame.createAndAddAllMenus(droppedBookshelfCount++);
-				// App.frame.revalidate(); java7 only
-				App.frame.invalidate();
-				App.frame.validate();
-				App.frame.repaint();
-				return true;
-			}
-		}
-		return false;
-	}
-
 	public static boolean makeBookFromPath(String bookPath, File[] onlyThese) {
 		// ==============================================================================================
 		/** 
 		 * Path should now not be empty
 		 */
-		Book b = new Book(bookPath, onlyThese);
+		Book b = new Book(bookPath, onlyThese, "" /* not used */);
 		boolean chapterLoaded = false;
 		if (b.size() > 0) {
 			chapterLoaded = b.loadChapterByIndex(0);
@@ -269,8 +221,8 @@ public class BridgeLoader {
 		}
 
 		SimpleDateFormat sdfDate = new SimpleDateFormat("yyyy-MM-dd__HH-mm-ss");
-		String asFile = App.autoSavesPath + "1 " /* number removed later */+ fileIn.getName() + "                          " + sdfDate.format(new Date())
-				+ "  .lin";
+		String asFile = App.autoSavesPath + "01  " /* number removed later */+ fileIn.getName() + "                          " + sdfDate.format(new Date())
+				+ App.getDotAndExtension(fileIn.getName());
 
 		File fileOut = new File(asFile);
 

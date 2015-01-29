@@ -10,21 +10,27 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.igf;
 
+import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.font.TextAttribute;
+import java.util.Map;
 
 import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
 import com.rogerpf.aabridge.controller.App;
+import com.rogerpf.aabridge.controller.q_;
+import com.rogerpf.aabridge.igf.MassGi.FontBlock;
+import com.rogerpf.aabridge.igf.MassGi.GraInfo;
 import com.rogerpf.aabridge.model.Deal;
 import com.rogerpf.aabridge.model.Dir;
 import com.rogerpf.aabridge.view.BidButtsPanel;
-import com.rogerpf.aabridge.view.ClickPanel;
 import com.rogerpf.aabridge.view.HandDisplayPanel;
 
-public class QuestionPanel extends ClickPanel {
+public class QuestionPanel extends ConsumePanel {
 	// ---------------------------------- CLASS -------------------------------------
 	private static final long serialVersionUID = 1L;
 
@@ -139,6 +145,45 @@ public class QuestionPanel extends ClickPanel {
 		// ==============================================================================================
 		setBackground(backgroundDarker ? Aaa.questionPanelBkColor : Aaa.tutorialBackground);
 		super.paintComponent(g);
+
+		display_page_number(g);
+	}
+
+	public void display_page_number(Graphics g) {
+		// ==============================================================================================
+
+		GraInfo gi_o = App.mg.giAy.get(App.mg.end_pg);
+
+		int page_numb_display = gi_o.capEnv.page_numb_display;
+
+		if (page_numb_display == 0 || (gi_o.qt == q_.lb && (page_numb_display < 11 || page_numb_display >= 99999)))
+			return; // we do not display on the zero'th page (opening screen)
+
+		g2 = (Graphics2D) g;
+
+		Aaa.commonGraphicsSettings(g2);
+
+		FontBlock fb = App.mg.fbAy[0];
+
+		@SuppressWarnings("unchecked")
+		Map<TextAttribute, Object> attributes = (Map<TextAttribute, Object>) fb.font.getAttributes();
+
+		scaleFrac = getWidth() / LIN_STANDARD_WIDTH;
+		fontScaleFrac = FONT_SCALE_FRAC * scaleFrac;
+
+		attributes.put(TextAttribute.SIZE, ((float) fb.linFontSize) * fontScaleFrac);
+		attributes.put(TextAttribute.FOREGROUND, Color.BLACK);
+
+		Font font = fb.font.deriveFont(attributes);
+
+		g2.setFont(font);
+
+		int x = (int) (getWidth() * DIS_NUMB_X);
+		int y = (int) (getHeight() * DIS_NUMB_SML_Y);
+
+		page_numb_display++; // as we are one behind the (next) number in the pg/
+
+		g2.drawString("" + page_numb_display, x, y);
 	}
 
 }

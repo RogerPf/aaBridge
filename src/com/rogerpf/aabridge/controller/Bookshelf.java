@@ -37,66 +37,69 @@ public class Bookshelf extends ArrayList<Book> {
 	public boolean book = false;
 	public String basePath = "";
 	public File file;
-	boolean success = false;
-	String shelfDesc = "";
+	public boolean success = false;
+	public String shelfname;
+	public String shelfDisplayName;
+	public int ind;
 
 	/**   
 	 */
-	public Bookshelf() {
+	public Bookshelf(int i) {
 		// ==============================================================================================
+		ind = i;
+		String digit = (i == 1) ? "" : i + "";
+		shelfname = "books" + digit;
+		shelfDisplayName = "Books" + digit;
 	}
-
-	private final String booksSlash = "books/";
-	private final int booksSlashLength = booksSlash.length();
 
 	private final static String sep = File.separator;
 
-	public JMenu addToMenuBar(ActionListener aListener, JMenuBar menuBar, String desc, int keyEvent, boolean obeySingleBook, int droppedCount) {
+	public JMenu addToMenuBar(ActionListener aListener, JMenuBar menuBar) {
 		// ==============================================================================================
 
 		if (size() == 0)
 			return null;
 
+		String desc = shelfDisplayName;
+
 		JMenu menu = new JMenu(desc);
-		menu.setMnemonic(keyEvent);
+		menu.setMnemonic((ind == 1) ? KeyEvent.VK_B : KeyEvent.VK_0 + ind);
 
 		menuBar.add(menu);
 
-		if (droppedCount > 0)
-			menu.setForeground(Cc.GreenStrong);
-		else if (droppedCount < 0)
+		if (ind == 1)
 			menu.setForeground(Cc.RedStrong);
+		else
+			menu.setForeground(Cc.GreenStrong);
 
 		for (Book book : this) {
-			if (obeySingleBook && App.singleBookOnly && (book.frontNumber != 01))
-				continue;
-			if (book.frontNumber >= 90)
-				break;
+			if ((book.frontNumber >= 90) && shelfname.contentEquals("books" /* ie shelf 1 */))
+				continue; // these are added as a special case
 			JMenuItem menuItem = new JMenuItem(book.displayTitle);
 			menuItem.setActionCommand(basePath + book.displayTitle);
 			menuItem.addActionListener(aListener);
 			menu.add(menuItem);
 		}
-		if ((obeySingleBook && App.singleBookOnly) == false)
-			menu.addSeparator();
 
-		add90sToMenu(aListener, menu, obeySingleBook);
+		menu.addSeparator();
+
+		addShelf1_90sToMenu(aListener, menu);
 
 		return menu;
 	}
 
-	public void add90sToMenu(ActionListener aListener, JMenu menu, boolean obeySingleBook) {
+	static public void addShelf1_90sToMenu(ActionListener aListener, JMenu menu) {
 		// ==============================================================================================
-		if (obeySingleBook && App.singleBookOnly)
-			return;
 
-		for (Book book : this) {
+		Bookshelf shelf1 = App.bookshelfArray.get(1);
+
+		for (Book book : shelf1) {
 			if (book.frontNumber < 90)
 				continue;
 			if (book.frontNumber > 95 && App.devMode == false)
-				break;
+				continue;
 			JMenuItem menuItem = new JMenuItem(book.displayTitle);
-			menuItem.setActionCommand(basePath + book.displayTitle);
+			menuItem.setActionCommand(shelf1.basePath + book.displayTitle);
 			menuItem.addActionListener(aListener);
 			if (book.frontNumber == 90)
 				menuItem.setMnemonic(KeyEvent.VK_H);
@@ -107,66 +110,38 @@ public class Bookshelf extends ArrayList<Book> {
 	public Book getBookByIndex(int index) { // the caller must check the range
 		// ==============================================================================================
 		Book book = get(index);
-		book.shelfDesc = shelfDesc;
+		book.shelfDisplayName = shelfDisplayName; // I know this is an ugly way to do it
 		return book;
-	}
-
-	public Book getAutoOpenBook() { // the caller must check the range
-		// ==============================================================================================
-		for (int i = 0; i < size(); i++) {
-			Book book = get(i);
-			if (book.autoOpen) {
-				book.shelfDesc = shelfDesc;
-				return book;
-			}
-		}
-		return get(0);
 	}
 
 	public Book getBookWithChapterPartName(String chapterPartName) {
 		// ==============================================================================================
 
-		if (App.multiBookDisplay) { // note we scan backwards to kind the one in then welcome book (if there)
-			for (int i = size() - 1; i >= 0; i--) {
-				Book book = get(i);
-				LinChapter chapter = book.getChapterByDisplayNamePart(chapterPartName);
-				if (chapter != null) {
-					return book;
-				}
-			}
-		}
-		else {
-			for (int i = 0; i < size(); i++) {
-				Book book = get(i);
-				LinChapter chapter = book.getChapterByDisplayNamePart(chapterPartName);
-				if (chapter != null) {
-					return book;
-				}
+		// note we scan backwards to find the one in the welcome book (if there)
+
+		for (int i = size() - 1; i >= 0; i--) {
+			Book book = get(i);
+			LinChapter chapter = book.getChapterByDisplayNamePart(chapterPartName);
+			if (chapter != null) {
+				return book;
 			}
 		}
 		return null;
 	}
 
 	public String getFirstWordOfBook01Title() {
+		// ==============================================================================================
 		Book book = getBookByFrontNumb(01);
 		if (book == null)
 			return "";
 		return book.getFirstWordOfTitle();
 	}
 
-	public boolean isDefaultToSingleBook() {
-		// ==============================================================================================
-		Book book = getBookByFrontNumb(90);
-		if (book == null)
-			return false;
-		return book.defaultToSingleBook;
-	}
-
 	public Book getBookByFrontNumb(int frontNumb) {
 		// ==============================================================================================
 		for (Book book : this) {
 			if (book.frontNumber == frontNumb) {
-				book.shelfDesc = shelfDesc;
+				book.shelfDisplayName = shelfDisplayName; // I know this is an ugly way to do it
 				return book;
 			}
 		}
@@ -177,12 +152,14 @@ public class Bookshelf extends ArrayList<Book> {
 		// ==============================================================================================
 		for (Book book : this) {
 			if (s.contentEquals(basePath + book.displayTitle)) {
-				book.shelfDesc = shelfDesc;
+				book.shelfDisplayName = shelfDisplayName; // I know this is an ugly way to do it
 				return book;
 			}
 		}
 		return null;
 	}
+
+	static String all_books_in_this_shelf = "all_books_in_this_shelf";
 
 	public void fillWithBooks(String basePathIn) {
 		// ==============================================================================================
@@ -205,7 +182,7 @@ public class Bookshelf extends ArrayList<Book> {
 
 			basePath = locationMethodFile.getPath();
 
-			if (basePath.endsWith(".jar") == false) {
+			if ((basePath.toLowerCase().endsWith(".jar") || basePath.toLowerCase().endsWith(".zip")) == false) {
 
 				/* Bodge ALERT ***************************** start */
 				/**
@@ -214,7 +191,7 @@ public class Bookshelf extends ArrayList<Book> {
 				 * get updated so we can see them.   NOTE we must be at dev time loading here
 				 * as the origin   basePath   given to us was empty.
 				 */
-				if (basePath.endsWith("bin")) {
+				if (basePath.toLowerCase().endsWith("bin")) {
 					String baseSrc = basePath.substring(0, basePath.length() - 3) + "src";
 					if ((new File(baseSrc).isDirectory()))
 						basePath = baseSrc;
@@ -224,7 +201,7 @@ public class Bookshelf extends ArrayList<Book> {
 				/**
 				 * Add the books subfolder as normal
 				 */
-				basePath += sep + "books";
+				basePath += sep + shelfname;
 			}
 
 			/**
@@ -232,12 +209,12 @@ public class Bookshelf extends ArrayList<Book> {
 			 * right here switch to an external jar for testing the book loader while still running
 			 * ALL code in the eclipse debugger.
 			 */
-			// basePath = "C:\\a\\aaBridge_2.0.1.2020.jar"; // >>>>>>> FOR simple testing ONLY <<<<<<<<
+//			basePath = "C:\\a\\aaBridge_Watson_Edition_2.4.0.2421.jar"; // >>>>>>> FOR simple testing ONLY <<<<<<<<
 		}
 
-		if (basePath.endsWith(".jar")) {
+		if ((basePath.toLowerCase().endsWith(".jar") || basePath.toLowerCase().endsWith(".zip"))) {
 			/** 
-			 * A jar file name has been fed to us (eg by being dropped) or we are one
+			 * A jar file name is us or fake us above for testing - zip must be a dropped file
 			 */
 			File jarFile = new File(basePath);
 			if (!jarFile.exists()) {
@@ -245,20 +222,51 @@ public class Bookshelf extends ArrayList<Book> {
 				return;
 			}
 
-			Pattern pattern = Pattern.compile("books/[0-9][0-9][ |_].*[.lin]");
+			Pattern pattern = Pattern.compile(shelfname + "/[0-9][0-9][ |_].*[.lin|.reldate]");
 
 			ArrayList<String> contents = (ArrayList<String>) ResourceList.getResourcesFromJarFile(jarFile, pattern);
 
-			StringAmalgum gum = new StringAmalgum();
-			for (String s : contents) {
-				gum.addFolderOnly(s);
+			boolean process_as_normal = true;
+
+			// parse for whole shelf reldate
+			if (App.observeReleaseDates) {
+				for (String sFile : contents) {
+					if (sFile.endsWith(".reldate") == false)
+						continue;
+					if (sFile.contains(all_books_in_this_shelf) == false)
+						continue;
+					if (Book.isValidReldateAndInFuture(sFile) == false)
+						continue;
+
+					process_as_normal = false;
+					break;
+				}
 			}
 
-			for (String s : gum) {
-				Book book = new Book(basePath, s);
-				if (book.size() > 0)
-					add(book);
+			if (process_as_normal) {
+				StringAmalgum gum = new StringAmalgum();
+
+				for (String s : contents) {
+					if (s.contains("books9/10")) {
+						@SuppressWarnings("unused")
+						int z = 0;
+					}
+					if (s.endsWith(".lin")) {
+						gum.addFolderOnly(s);
+					}
+				}
+
+				for (String s : gum) {
+					if (s.contains("B and C")) {
+						@SuppressWarnings("unused")
+						int z = 0;
+					}
+					Book book = new Book(basePath, s, shelfname);
+					if (book.size() > 0)
+						add(book);
+				}
 			}
+
 		}
 
 		else {
@@ -283,15 +291,36 @@ public class Bookshelf extends ArrayList<Book> {
 			File[] folders = null;
 			try {
 				folders = baseFolder.listFiles();
-				for (File folder : folders) {
-					if (!folder.isDirectory())
-						continue;
-					String name = folder.getName();
-					final boolean accept = pattern.matcher(name).matches();
-					if (accept) {
-						Book book = new Book(basePath, name);
-						if (book.size() > 0)
-							add(book);
+
+				boolean process_as_normal = true;
+
+				// parse for whole shelf reldate
+				if (App.observeReleaseDates) {
+					for (File file : folders) {
+						String sFile = file.getName();
+						if (sFile.endsWith(".reldate") == false)
+							continue;
+						if (sFile.contains(all_books_in_this_shelf) == false)
+							continue;
+						if (Book.isValidReldateAndInFuture(sFile) == false)
+							continue;
+
+						process_as_normal = false;
+						break;
+					}
+				}
+
+				if (process_as_normal) {
+					for (File folder : folders) {
+						if (!folder.isDirectory())
+							continue;
+						String name = folder.getName();
+						final boolean accept = pattern.matcher(name).matches();
+						if (accept) {
+							Book book = new Book(basePath, name, shelfname);
+							if (book.size() > 0)
+								add(book);
+						}
 					}
 				}
 			} catch (Exception e) {
@@ -311,6 +340,44 @@ public class Bookshelf extends ArrayList<Book> {
 
 	}
 
+	public static String getBasePathOfJarOrEquivalent() { // just used by deep finesse integreration
+		// ==============================================================================================
+
+		/**
+		 * Where is our own 'java' code  i.e. 'us'  is located?
+		 */
+		URL locationMethodUrl = AaBridge.class.getProtectionDomain().getCodeSource().getLocation();
+		File locationMethodFile;
+
+		try {
+			locationMethodFile = new File(locationMethodUrl.toURI());
+		} catch (Exception e1) {
+			System.out.println("Bookshelf:getBsePath... - locationMethodUrl FAILED  help! - " + e1.getMessage());
+			return sep;
+		}
+
+		String basePath = locationMethodFile.getPath();
+
+		if (basePath.toLowerCase().endsWith(".jar")) {
+
+			basePath = locationMethodFile.getParent();
+
+		}
+		else if (basePath.toLowerCase().endsWith("bin")) {
+
+			basePath = locationMethodFile.getParent();
+//			basePath = "C:\\ProgramSmall\\aaBridge"; // >>>>>>> Makes testing simpler <<<<<<<<
+//			if (App.devMode)
+//				basePath = "C:\\a";
+		}
+		else {
+			// assert(false); why are we here !
+			basePath = locationMethodFile.getPath();
+		}
+
+		return basePath + sep;
+	}
+
 	/**   
 	 */
 	class StringAmalgum extends ArrayList<String> {
@@ -320,15 +387,22 @@ public class Bookshelf extends ArrayList<Book> {
 		/**
 		 * Should only be called by code combining Jar entries
 		 */
-		// ==============================================================================================
 		public void addFolderOnly(String name) {
-			assert (name.startsWith(booksSlash));
+			// ==============================================================================================
 
-			int secondSlashInd = name.indexOf('/', booksSlashLength);
-			if (secondSlashInd < booksSlashLength + 1)
+			String shelfnameSlash = shelfname + '/';
+			int shelfnameSlashLen = shelfnameSlash.length();
+
+			if (name.startsWith(shelfnameSlash) == false) {
+				@SuppressWarnings("unused")
+				int z = 0;
+			}
+
+			int secondSlashInd = name.indexOf('/', shelfnameSlashLen);
+			if (secondSlashInd < shelfnameSlashLen + 1)
 				return;
 
-			String folder = name.substring(booksSlashLength, secondSlashInd);
+			String folder = name.substring(shelfnameSlashLen, secondSlashInd);
 
 			for (String s : this) {
 				if (s.contentEquals(folder))
@@ -336,6 +410,63 @@ public class Bookshelf extends ArrayList<Book> {
 			}
 			add(folder);
 		}
+
+		public void addFolderOnlyXXX(String name) {
+			// ==============================================================================================
+
+			String shelfnameSlash = shelfname + '/';
+			int shelfnameSlashLen = shelfnameSlash.length();
+
+			if (name.startsWith(shelfnameSlash) == false) {
+				@SuppressWarnings("unused")
+				int z = 0;
+			}
+
+			int secondSlashInd = name.indexOf('/', shelfnameSlashLen);
+			if (secondSlashInd < shelfnameSlashLen + 1)
+				return;
+
+			String folder = name.substring(shelfnameSlashLen, secondSlashInd);
+
+			for (String s : this) {
+				if (s.contentEquals(folder))
+					return;
+			}
+			add(folder);
+		}
+	}
+
+	public boolean hasValidBooksForMenu() {
+		// ==============================================================================================
+		return size() > 0;
+	}
+
+	public double getLinWeighting() {
+		// ==============================================================================================
+		double tot_book_weighting = 0;
+		for (Book book : this) {
+			if (ind == 1 && book.frontNumber >= 95)
+				continue; // so we skip any special dev books
+
+			tot_book_weighting += book.getLinWeighting();
+		}
+		return tot_book_weighting;
+	}
+
+	public LinChapter pickRandomLinFile() {
+		// ==============================================================================================
+		double chosen_book = getLinWeighting() * Math.random();
+		double weight = 0;
+		for (Book book : this) {
+			if (ind == 1 && book.frontNumber >= 95)
+				continue; // so we skip any special dev books
+
+			weight += book.getLinWeighting();
+			if (chosen_book < weight) {
+				return book.pickRandomLinFile();
+			}
+		}
+		return null;
 	}
 
 }

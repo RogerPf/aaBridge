@@ -77,6 +77,15 @@ public class Hand implements Comparable<Hand> {
 		}
 	}
 
+	// ==============================================================================================
+	public boolean didHandStartWith13Cards() {
+		int tot = 0;
+		for (Suit suit : Suit.cdhs) {
+			tot += fOrgs[suit.v].size();
+		}
+		return (tot == 13);
+	}
+
 	/** 
 	 */
 	public String toString() {
@@ -685,10 +694,10 @@ public class Hand implements Comparable<Hand> {
 
 		if (getStrategy() == null) {
 			// print a message if we are the first of the stratergies to be created
-			if (deal.testId == 0 && deal.hands[(compass.v + 3) % 4].getStrategy() == null) {
-				System.out.println("Board no " + deal.realBoardNo + "     cycle " + (++(deal.cycle))
-						+ "  ----------------------------------------------------------------------");
-			}
+//			if (deal.testId == 0 && deal.hands[(compass.v + 3) % 4].getStrategy() == null) {
+//				System.out.println("Board no " + deal.realBoardNo + "     cycle " + (++(deal.cycle))
+//						+ "  ----------------------------------------------------------------------");
+//			}
 
 			Deal d2 = deal.deepClone();
 			d2.wipePlay();
@@ -812,6 +821,27 @@ public class Hand implements Comparable<Hand> {
 		return s;
 	}
 
+	public String cardsForDepFinSave() {
+		// ==============================================================================================
+		String s = "";
+		for (Suit su : Suit.shdc) { // Spades first
+			Frag fOrg = fOrgs[su.v];
+			int sl = fOrg.size();
+			if (sl == 0) {
+				s += "-";
+			}
+			else {
+				for (int j = 0; j < sl; j++) {
+					s += fOrg.get(j).rank.toStr();
+				}
+			}
+
+			if (su != Suit.Clubs)
+				s += " ";
+		}
+		return s;
+	}
+
 	public int countOriginalCards() {
 		// ==============================================================================================
 		int tot = 0;
@@ -820,6 +850,34 @@ public class Hand implements Comparable<Hand> {
 			tot += fOrg.size();
 		}
 		return tot;
+	}
+
+	/**
+	 */
+	public void fillHandDepFin(String dfh) {
+		// ==============================================================================================
+		String s = dfh + " - - - -";
+		String[] ay = s.split(" +", 5);
+
+		for (Suit suit : Suit.shdc) {
+			int i = 3 - suit.v;
+			s = ay[i];
+			if (s.charAt(0) == '-') {
+				continue;
+			}
+
+			int sl = s.length();
+			for (int j = 0; j < sl; j++) {
+				Rank rank = Rank.charToRank(s.charAt(j));
+				Card card = deal.packPristine.getIfRankAndSuitExists(rank, suit);
+
+				deal.packPristine.remove(card);
+
+				// now we can add it to this hand
+				fOrgs[suit.v].addDeltCard(card);
+				frags[suit.v].addDeltCard(card);
+			}
+		}
 	}
 
 }

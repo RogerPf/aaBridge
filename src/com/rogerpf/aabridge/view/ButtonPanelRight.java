@@ -42,9 +42,9 @@ public class ButtonPanelRight extends JPanel {
 		setLayout(new MigLayout(App.simple + ", flowy, align right", "[]", "33%[][]3%[]"));
 		// @formatter:on
 
-		add(hiddenHandsClick1_b = new RpfResizeButton(Aaa.s_Label, "hiddenHandsClick1", 70, 4));
-		add(hiddenHandsClick2_b = new RpfResizeButton(Aaa.s_Label, "hiddenHandsClick2", 70, 4));
-		add(hiddenHandsShowHide_b = new RpfResizeButton(Aaa.s_Std, "hiddenHandsShowHide", 70, 4));
+		add(hiddenHandsClick1_b = new RpfResizeButton(Aaa.s_Label, "hiddenHandsClick1", 75, 4));
+		add(hiddenHandsClick2_b = new RpfResizeButton(Aaa.s_Label, "hiddenHandsClick2", 75, 4));
+		add(hiddenHandsShowHide_b = new RpfResizeButton(Aaa.s_Std, "hiddenHandsShowHide", 65, 6));
 	}
 
 	/**   

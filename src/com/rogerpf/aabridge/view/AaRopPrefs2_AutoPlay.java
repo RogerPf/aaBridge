@@ -65,7 +65,10 @@ class AaRopPrefs2_AutoPlay extends ClickPanel implements ItemListener {
 		String rbInset = "gapx 7";
 
 		// @formatter:off
-		add(defSig      = new QLabel("Defender Signaling  -  Defenders, when just following suit / discarding, will use a 'peter' HIGH then LOW to show ?"), "gapy 5");
+		add(anyLabel  = new QLabel("AutoPlay"), "gapy 5");
+		anyLabel.setForeground(Aaa.optionsTitleGreen);
+
+		add(defSig      = new QLabel("Defender Signaling  -  Defenders, when just following suit / discarding, will use a 'peter' HIGH then LOW to show ?"), "gapy 10");
 		defSig.setForeground(Aaa.optionsTitleGreen);
 		add(noSignal    = new QRadioButton(this, rbGroupSig,  bdr4, App.defenderSignals == Zzz.NoSignals,     "NoSignal",     "Nothing -  defenders won't signal"), rbInset);
 		add(stdEvenCount= new QRadioButton(this, rbGroupSig,  bdr4, App.defenderSignals == Zzz.StdEvenCount,  "StdEvenCount", "Std   -  an EVEN number in the suit EXCEPT Trumps when shows an ODD number.     Ten and above are not used to signal  "), rbInset);

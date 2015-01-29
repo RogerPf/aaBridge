@@ -99,11 +99,40 @@ public class QuAskButtsPanel extends ConsumePanel implements ActionListener {
 			setLayout(new MigLayout("insets 0 0 0 0, gap 1%! 0!", "push[][][][][][][][][]push", "push[]push"));
 		}
 
-		String s[] = gi.bb.getSafe(3).split("\\~");
+		String a[] = gi.bb.getSafe(3).split("\\~");
+
+		if (c == 'm') {
+			// we need to make some effort to shrink the answers if they are too long
+
+			int max = 90;
+			int allowed = 50;
+			int shrinkBy = 2;
+			int totLen = 0;
+
+			for (int i = 0; i < a.length; i++) {
+				totLen += a[i].length() + ((a[i].length() < 4) ? 4 : 2);
+			}
+
+			while (totLen > max) {
+				int n = 0;
+				for (int i = 0; i < a.length; i++) {
+					String s = a[i];
+					int len = s.length();
+					if (len > allowed) {
+						s = s.substring(0, allowed - 1);
+						a[i] = s;
+						len = s.length();
+					}
+					n += len + ((len < 4) ? 4 : 2);
+				}
+				totLen = n;
+				allowed -= shrinkBy;
+			}
+		}
 
 		RpfResizeButton b;
-		for (int i = 0; i < s.length; i++) {
-			b = new RpfResizeButton(Aaa.s_SelfCmd, s[i], 0, 50);
+		for (int i = 0; i < a.length; i++) {
+			b = new RpfResizeButton(Aaa.s_SelfCmd, a[i], 0, 52);
 			b.setForeground(Color.black);
 			b.addActionListener(this);
 			add(b);

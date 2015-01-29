@@ -185,12 +185,16 @@ public class ConsumePanel extends SeglinePanel {
 	public void consume_insertHand(GraInfo gi) {
 		// =============================================================================
 
-//		float x = xCol;
-//		float y = yRow;
-
 		int wh[] = { 0, 0 };
 
-		gi.hdg.setPositionReturnSize((int) xCol, (int) (yRow), App.tup.getWidth(), wh);
+		float yRowAdjust = heightOfNextLine * 0.70f;
+
+		if (yRow < yRowAdjust)
+			yRowAdjust = 0;
+
+		yRow -= yRowAdjust;
+
+		gi.hdg.setPositionReturnSize((int) xCol, (int) yRow, App.tup.getWidth(), wh);
 
 		xCol += wh[0];
 		heightOfNextLine = wh[1] + lineSeparation;
@@ -200,15 +204,28 @@ public class ConsumePanel extends SeglinePanel {
 			yRow += heightOfNextLine;
 			heightOfNextLine = lineSeparation;
 		}
+
+		yRow += yRowAdjust;
+
+		if (gi.capEnv.centered) {
+			Ras ras = new Ras("", gi.hdg);
+			ras.y = yRow;
+			ras.height = wh[0];
+			ras.width = wh[1];
+			getCurSeg().open = false;
+			Seg seg = segs.addPart(ras, gi, false); // so we have a one ras seg
+			seg.surpressBox = true;
+		}
+		else {
+			Seg seg = getCurSeg();
+			seg.surpressBox = true;
+		}
 	}
 
 	/**
 	 */
 	public void consume_insertAuction(GraInfo gi) {
 		// =============================================================================
-
-//		float x = xCol;
-//		float y = yRow;
 
 		int wh[] = { 0, 0 };
 
@@ -222,6 +239,21 @@ public class ConsumePanel extends SeglinePanel {
 			yRow += heightOfNextLine;
 			heightOfNextLine = lineSeparation;
 		}
+
+		if (gi.capEnv.centered) {
+			Ras ras = new Ras("", gi.btp);
+			ras.y = yRow;
+			ras.height = wh[0];
+			ras.width = wh[1];
+			getCurSeg().open = false;
+			Seg seg = segs.addPart(ras, gi, false); // so we have a one ras seg
+			seg.surpressBox = true;
+		}
+		else {
+			Seg seg = getCurSeg();
+			seg.surpressBox = true;
+		}
+
 	}
 
 	final float SYMBOL_SCALE_FRAC = 1.15f;
@@ -341,10 +373,6 @@ public class ConsumePanel extends SeglinePanel {
 		yRow = 0.0f + topAdjust;
 		xCol = leftMargin;
 
-//		if (gi.capEnv.mn_hideable_by_pg) {
-//			gi.capEnv.mn_showing = false;
-//		}
-
 		consume_at(gi); // uses the standard 'text'
 	}
 
@@ -366,7 +394,7 @@ public class ConsumePanel extends SeglinePanel {
 		// =============================================================================
 
 		// Nasty wide area flag that tells us we are in reduce window mode
-		if (skip__mn_text || gi.capEnv.mn_showing == false)
+		if (skip__mn_text || gi.capEnv.mn_show_tu == false)
 			return;
 
 		String mn_text = gi.capEnv.mn_text;
@@ -450,6 +478,43 @@ public class ConsumePanel extends SeglinePanel {
 			seg.mnBox = true;
 		}
 		startNewSeg().boxNumber = 0;
+	}
+
+	public static float DIS_NUMB_X = 0.96f;
+	public static float DIS_NUMB_TALL_Y = 0.985f;
+	public static float DIS_NUMB_SML_Y = 0.947f;
+
+	/**
+	 */
+	public void consume_add_fake_page_number(GraInfo gi) {
+		// =============================================================================
+
+		if (gi.capEnv.page_numb_display == 0)
+			return; // we do not display on the zero'th page (opening screen)
+
+		// This only called as the last item of a screen paint so it can do no real harm
+		// as of course screen paints are discarded directly after being painted
+
+		FontBlock fb = mg.fbAy[0];
+		@SuppressWarnings("unchecked")
+		Map<TextAttribute, Object> attributes = (Map<TextAttribute, Object>) fb.font.getAttributes();
+		attributes.put(TextAttribute.SIZE, ((float) fb.linFontSize) * fontScaleFrac);
+
+		Font font = fb.font.deriveFont(attributes);
+		g2.setFont(font);
+
+		float x = width * DIS_NUMB_X;
+		float y = height * ((gi.capEnv.visualModeRequested == App.Vm_TutorialOnly) ? DIS_NUMB_TALL_Y : DIS_NUMB_SML_Y);
+
+		Ras ras = new Ras("" + gi.capEnv.page_numb_display);
+
+		ras.addAttribute(TextAttribute.FONT, font);
+		ras.addAttribute(TextAttribute.FOREGROUND, Color.BLACK);
+
+		ras.calcLayout(frc, x, y);
+
+		Seg seg = segs.addPart(ras, gi, false /* true => leaveOpen */);
+		seg.lineCentered = false;
 	}
 
 	static String forceFontZero = "forceFontZero";

@@ -11,8 +11,6 @@
 package com.rogerpf.aabridge.view;
 
 import java.awt.SystemColor;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
@@ -27,7 +25,7 @@ import com.rogerpf.aabridge.controller.App;
 
 /**   
  */
-class AaRopPrefs5_DSizeFont extends ClickPanel implements ItemListener, ActionListener {
+class AaRopPrefs5_DSizeFont extends ClickPanel implements ItemListener {
 
 	private static final long serialVersionUID = 1L;
 
@@ -45,8 +43,6 @@ class AaRopPrefs5_DSizeFont extends ClickPanel implements ItemListener, ActionLi
 	QRadioButton size3;
 	QRadioButton size4;
 
-	QButton resetAllPrefs;
-
 	public AaRopPrefs5_DSizeFont() {
 		setOpaque(true); // remember - we derive from ClickPanel which is setOpaque(false)
 		setBackground(SystemColor.control);
@@ -54,7 +50,7 @@ class AaRopPrefs5_DSizeFont extends ClickPanel implements ItemListener, ActionLi
 		setLayout(new MigLayout(App.simple + ", flowy"));
 
 		// @formatter:off
-		add(anyLabel  = new QLabel("Deal Size  and   Movie Font override options"), "gapy 5");
+		add(anyLabel  = new QLabel("Size & Font   -   Deal Size  and   Movie Font override options"), "gapy 5");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
 		
 
@@ -79,16 +75,6 @@ class AaRopPrefs5_DSizeFont extends ClickPanel implements ItemListener, ActionLi
 		fontChooser.setMaximumRowCount(25);
 
 		// @formatter:on
-	}
-
-	public void actionPerformed(ActionEvent e) {
-
-		if ("Reset & Close".equals(e.getActionCommand())) {
-			if (App.allConstructionComplete) {
-				App.SetOptionsToDefaultAndClose();
-				// it never comes back !!
-			}
-		}
 	}
 
 	/** This listens for the check box changed event */

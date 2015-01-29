@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.controller.q_;
 
 public class Lin {
@@ -175,7 +176,7 @@ public class Lin {
 					continue;
 				}
 				e2Seen = 0;
-				System.out.println( ">>>>>>>>>>>>>>>>>>>>>>>>" + (int)e1 + "  " + (int)c );
+				System.out.println( lineNumber + " >>>>>>>>>>>>>>>>>>>>>>>> " + (int)e1 + "  " + (int)c );
 				if (e1 == 0x80 && i == 0x94) {
 					s += "@";
 					c = '-';
@@ -190,6 +191,12 @@ public class Lin {
 			if (i == 0xe2) {
 				// System.out.println("e2 e2 e2" + c + " " + i);
 				e2Seen = 1; // uggly ..... we eat the next two chars
+				continue;
+			} 
+			
+			if (i == 0xc2) {
+				// System.out.println("c2 seen);font
+				// uggly ..... we just eat it   copyright sometimes next char
 				continue;
 			} 
 			
@@ -329,7 +336,7 @@ public class Lin {
 					continue;
 				}
 				if (c == '^') {
-					bb.add(s);
+					bb.add(s.trim()); // trim added to stop card decode bug 2014 May 21
 					s = "";
 					continue;
 				}
@@ -377,11 +384,13 @@ public class Lin {
 		if (!ahText.isEmpty()) {
 			w.write("ah|" + ahText.trim() + "|");
 		}
+		String signfBoardId = (App.deal.signfBoardId.trim().isEmpty() ? "Board" : App.deal.signfBoardId);
+
 		if (deal.displayBoardId.length() > 0) {
-			w.write("ah|Board " + deal.displayBoardId + "|");
+			w.write("ah|" + signfBoardId + " " + deal.displayBoardId + "|");
 		}
 		else {
-			w.write("ah|Board " + deal.realBoardNo + "|");
+			w.write("ah|" + signfBoardId + " " + deal.realBoardNo + "|");
 		}
 
 		// sv => side vulnerability

@@ -6,6 +6,61 @@ cr|516|cg|5128|cb|516|      5  green
 cr|7255|cb|70|cg|70|        7  red
 
 bt||
+mn|A Simple Mn Header|
+qx|mn 1|
+
+ht|e|at|
+^b@2^*bMn @- Headers^*n^z@3|
+at|
+	 ^g !mn!A simple Mn Header! 
+|
+pg||
+
+at|
+Its apperance is suppressed by the next  pg   (that is the one ^*b after ^*n it has been displayed)
+
+|	
+pg||
+
+tu||mn|Another Simple Mn Header|  
+at|
+		^g !tu!!   mn!Another Simple Mn Header!
+		
+!tu!!    suppresses even that first appearance          (correct - you can't see it currently)
+
+|
+pg||
+
+tu|y|
+at|	
+		^g !tu!Y!
+		
+!tu!Y!   both restores any current mn-header  and / or makes it immune to the clearing effects of   !pg!! 
+|	
+pg||
+qx|mn1b|
+at|
+
+Still not cleared
+|	
+pg||
+at|Again still not cleared
+|
+pg||
+tu||	
+at|
+
+!tu!!   but now because of the  !tu!!   its appearance is suppressed
+|
+pg||
+at|
+
+Once you have used   !tu!Y!   or   !tu!!    for the first time there is no way back to the  'visible for one !pg!! only'  mode.   You will have to keep using    !tu!Y!   or   !tu!!    yourself to control the visibility.
+|
+pg||nt||
+
+qx|mn 2|
+tu|Y|
 mn|An Mn Header All on One line Just as Wanted|
 
 ht|e|at|
@@ -15,13 +70,12 @@ at|
 
 	 ^e !mn!An Mn Header All on One line Just as Wanted!
 	 
-	 
 
-An  !mn!  Header has its own weird and wonderful rules @- 
+An  !mn!  Header has its own rules @- 
 ^c@2
 It always puts itself at the top of the page. 
 
-It decides its own color (but there is an option to fix it at green).
+It decides its own color.
 
 It ignores any margins you may have set. 
 
@@ -34,7 +88,7 @@ Go over that size and @-
 | 
 
 pg||
-qx|mn 0|
+qx|mn 3|
 nt||
 mn|An Mn Header All on One line Just as Wanted +|
 
@@ -53,77 +107,8 @@ Go over that size and @-
 
 
 |
-pg||
-qx|mn 1|
-
-at|
-
-Unexpectedly it is cleared by the  ^*b next^*n   !pg!  command,  NOT by the  !nt!  as Ronald's docs states.
-
-       (that is the   !pg!   command that comes  ^*bafter^*n  the one on which the system stops to display the mn-header)
-
-
-
-
-|
-
-pg||
-nt||
-qx|mn 2|
-
-mn|An Mn Header All on One line Just as Wanted|
-
-ht|e|at|
-^b@2^*bMn @- Headers^*n^z@3|
-at|
-
-
-	 ^e !mn!An Mn Header All on One line Just as Wanted!
-	 
-	 
-The  !mn!  header can be preserved from the clearing effects of the   !pg!   command by the use of 
-
-^g !tu!y!  
-|
-pg||
-nt||
-qx|mn 3|
-tu|y|
-
-ht|m|At|
-^cThe   !mn!   header has been preserved while everything else has been swept away.
-
-|pg||at|^b@2Still Preserved
-
-|pg||at|Still Preserved
-
-|pg||at|
-
-
-
-    However the clearing power of   !pg!   can be restored.
-
-|
-pg||
-qx|mn 4|
-
-tu||
-at|
-    !tu!!    has just been called and the   !pg!   we have just stopped on has swept the mn-header away
-|
-pg||
-nt||
-qx|mn 5|
-tu|y|
-ht|e|at|
-^b@2^*bMn @- Headers^*n^z@3|
-at|
-
-
-But it is restored by the simple         !tu!y!
-|
 pg||nt||
-qx|mn 6|
+qx|mn 4|
 
 
 mn|  Very long mn-header mn-header mn-header mn-header mn-header mn-header mn-header mn-header mn-header mn-header mn-header mn-header   |
@@ -138,7 +123,7 @@ If you write a    huge  mn-header     that would spill on to a third line then  
 |
 
 pg||nt||
-qx|mn 7|
+qx|mn 5|
 
 at|
  
@@ -176,7 +161,7 @@ but only the last value (the one before the end !pg! of the page) counts.
 
 tu|y|
 pg||
-qx|mn 8|
+qx|mn 6|
 
 ht|z|at|@0
 ^*b end ^*n|

@@ -57,14 +57,16 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 			// Is there a file on the command line - as used by windows file associations
 			boolean chapterLoaded = false;
 			boolean keepTrying = true;
+
 			if (App.args != null && App.args.length >= 1 && App.args[0] != null && !App.args[0].isEmpty()) {
 				File file = BridgeLoader.copyFileToAutoSavesFolderIfLinFileExists(App.args[0]);
 				if (file != null) {
 					File fAy[] = { file };
-					/* boolean success = */BridgeLoader.makeBookFromPath(file.getParent(), fAy);
+//					chapterLoaded = BridgeLoader.makeBookFromPath(file.getParent(), fAy);
+					chapterLoaded = BridgeLoader.processDroppedList(fAy);
 				}
 
-				keepTrying = false; // the user will be expecting her file to load so we should not do something else
+				keepTrying = !chapterLoaded; // the user will be expecting her file to load so should not do something else ?
 			}
 
 			// Is there a test linFile we want to start with
@@ -72,11 +74,17 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 				String dealName = "";
 
 //				App.lbx_modeExam = true; // testing only
-
 //				dealName = "Distr Flash Cards";
+
+//				dealName = "LinesZonesFonts";
+//				dealName = "mentoring 2013 06c";
+//				dealName = "bergenhandevaluation";
+//				dealName = "dotw195";
+//				dealName = "second_hand_low_";
+//				dealName = "Take Out Doubles 1";
 //				dealName = "Work Bench";
+//				dealName = "Centering Hands";
 //				dealName = "Agumperz";
-//				dealName = "aaa";
 //				dealName = "Make Deal";
 //				dealName = "Make Book - How to";
 //				dealName = "Collect Material";
@@ -144,7 +152,7 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 				if (dealName.length() > 0) {
 					int a[] = { 01, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99 };
 					for (int x : a) {
-						Book b = App.ourBookshelf.getBookByFrontNumb(x);
+						Book b = App.bookshelfArray.get(1).getBookByFrontNumb(x);
 						if (b != null) {
 							LinChapter chapter = b.getChapterByDisplayNamePart(dealName);
 							if (chapter != null) {
@@ -160,39 +168,14 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 			/**
 			 *  look at the user set start-up option
 			 */
-//			if (keepTrying && App.startUpOption == App.startUp_2__playBridge) {
-//				/** 
-//				 * The 'donehand' has already been constructed.
-//				 * and to use it, we just do nothing
-//				 */
-//				chapterLoaded = true;
-//				keepTrying = false;
+
+			if (chapterLoaded == false && keepTrying) {
+				ShowHelpAndWelcome();
+			}
+
+//			if (App.devMode) {
+//				CmdHandler.mainNewBoard();
 //			}
-//			else
-
-			if (chapterLoaded == false && keepTrying && App.multiBookDisplay == false) {
-
-				Book b = App.ourBookshelf.getAutoOpenBook();
-				if (b != null) {
-					LinChapter chapter = b.getChapterByIndex(0);
-					if (chapter != null) {
-						chapterLoaded = chapter.loadWithShow("replaceBookPanel");
-					}
-				}
-			}
-
-			else if (chapterLoaded == false && keepTrying && App.multiBookDisplay == true) {
-
-				Book b = App.ourBookshelf.getBookByFrontNumb(90 /* The Main Welcome & Help */);
-				if (b != null) {
-					chapterLoaded = b.loadChapterByIndex(0);
-					if (chapterLoaded) {
-						App.book = b;
-						App.bookPanel.matchToAppBook();
-						App.bookPanel.showChapterAsSelected(0);
-					}
-				}
-			}
 
 			App.frame.splitPaneHorz.setDividerLocation(App.horzDividerLocation);
 			App.frame.splitPaneVert.setDividerLocation(App.vertDividerLocation);
@@ -272,6 +255,19 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 		// afterPlpShakerTimer.stop(); or this one
 
 		App.con.autoBidDelayTimer.stop();
+	}
+
+	public void ShowHelpAndWelcome() {
+
+		Book b = App.bookshelfArray.get(1).getBookByFrontNumb(90 /* The Main Welcome & Help */);
+		if (b != null) {
+			boolean chapterLoaded = b.loadChapterByIndex(0);
+			if (chapterLoaded) {
+				App.book = b;
+				App.bookPanel.matchToAppBook();
+				App.bookPanel.showChapterAsSelected(0);
+			}
+		}
 	}
 
 	/**   
@@ -587,6 +583,9 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 				}
 			}
 		}
+
+//		App.calcApplyBarVisiblity();
+
 	}
 
 	public static void loadBookChapter_prev(boolean show_end) {

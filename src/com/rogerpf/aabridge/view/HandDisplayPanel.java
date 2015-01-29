@@ -742,12 +742,12 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 			}
 
 			Font pointsFont = BridgeFonts.bridgeBoldFont.deriveFont(nlh * 1.0f);
-			if (App.showPoints && !deal.dfcDeal && visSeat) { // && isModeAnyEdit()
+			if (App.showPoints && !deal.dfcDeal && visSeat && hand.didHandStartWith13Cards()) { // && isModeAnyEdit()
 				g2.setFont(pointsFont);
 				Aaa.drawCenteredString(g2, Integer.toString(hand.countHighCardPoints()), dealLozengeWidth * 0.88f, xy, nlh, nlh);
 			}
 
-			boolean showLTC = App.showLTC && !deal.dfcDeal && visSeat && App.isModeAnyEdit() == false;
+			boolean showLTC = App.showLTC && !deal.dfcDeal && visSeat && !App.isModeAnyEdit() && hand.didHandStartWith13Cards();
 			if (showLTC) { //
 				g2.setFont(pointsFont);
 				int v = hand.countLosingTricks_x2();
@@ -761,12 +761,13 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 
 			// The "You" text
 			// ------------------------------------------------------------------
+			float yAdj = 0.22f;
 			if (youSeatUs && hand.playerName.isEmpty()) {
 				float youTextFontSize = bridgeLightFontSize * 1.2f;
 				Font youTextFont = BridgeFonts.bridgeLightFont.deriveFont(youTextFontSize);
 				g2.setFont(youTextFont);
 				String s = (showLTC) ? "   " : "       ";
-				g2.drawString(s + "You", (int) (xy + nlh * 1.5), (int) (xy + nlh - youTextFontSize * 0.16f));
+				g2.drawString(s + "You", (int) (xy + nlh * 1.5), (int) (xy + nlh - youTextFontSize * yAdj));
 			}
 			else if (App.isMode(Aaa.EDIT_PLAY)) {
 				if (deal.isDeclarerValid() && deal.contractCompass == hand.partner().compass) {
@@ -776,14 +777,14 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 					float youTextFontSize = bridgeLightFontSize * 1.0f;
 					Font youTextFont = BridgeFonts.bridgeLightFont.deriveFont(youTextFontSize);
 					g2.setFont(youTextFont);
-					g2.drawString("Click to be You", (int) (xy + nlh * 1.5), (int) (xy + nlh - youTextFontSize * 0.16f));
+					g2.drawString("Click to be You", (int) (xy + nlh * 1.5), (int) (xy + nlh - youTextFontSize * yAdj));
 				}
 			}
 			else if (hand.playerName.isEmpty() == false) {
 				float youTextFontSize = bridgeLightFontSize * 1.2f;
 				Font youTextFont = BridgeFonts.bridgeLightFont.deriveFont(youTextFontSize);
 				g2.setFont(youTextFont);
-				g2.drawString(hand.playerName, (int) (xy + nlh * 1.5), (int) (xy + nlh - youTextFontSize * 0.16f));
+				g2.drawString(hand.playerName, (int) (xy + nlh * 1.5), (int) (xy + nlh - youTextFontSize * yAdj));
 			}
 		}
 

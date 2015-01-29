@@ -37,12 +37,14 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 
 	QButton resetPrefs;
 	QCheckBox outlineCardEdge;
+	QCheckBox movieBidFlowDoesFlow;
 	JSlider colorIntensity;
 	JSlider colorTint;
 	JSlider bidSpeed;
 	JSlider playSpeed;
 	JSlider eotDelay;
 	JLabel label;
+	JLabel bidSpeelabel;
 
 	public AaLowerOptionsPanel() {
 		setBackground(SystemColor.control);
@@ -81,12 +83,17 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 		labTab.put(new Integer(10), new JLabel("Slow"));
 		labTab.put(new Integer(90), new JLabel("Fast"));
 
-		add(new JLabel("Bid Display Speed"), "center");
+		add(movieBidFlowDoesFlow = new QCheckBox(this, App.movieBidFlowDoesFlow, "",
+				"When  UN-checked  then for   Bridge Movie BID display   makes   Flow >   instantly show the bidding  "), "spany 2, wrap");
+
+		add(bidSpeelabel = new JLabel("Bid Display Speed"), "center");
 		add(bidSpeed = new JSlider(JSlider.HORIZONTAL), "wmax 130, wrap");
 		bidSpeed.addChangeListener(this);
 		bidSpeed.setLabelTable(labTab);
 		bidSpeed.setPaintLabels(true);
 		bidSpeed.setValue(pluseToPercent(App.bidPluseTimerMs));
+		bidSpeed.setEnabled(App.movieBidFlowDoesFlow);
+		bidSpeelabel.setEnabled(App.movieBidFlowDoesFlow);
 
 		add(new JLabel("Play Display Speed"), "center");
 		add(playSpeed = new JSlider(JSlider.HORIZONTAL), "wmax 130, wrap");
@@ -186,6 +193,11 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 		// @formatter:off
 		if      (source == outlineCardEdge) {
             App.outlineCardEdge = b;
+        }
+		else if      (source == movieBidFlowDoesFlow) {
+            App.movieBidFlowDoesFlow = b;
+            bidSpeed.setEnabled(App.movieBidFlowDoesFlow);
+    		bidSpeelabel.setEnabled(App.movieBidFlowDoesFlow);
         }
 		// @formatter:on
 

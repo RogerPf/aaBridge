@@ -20,6 +20,8 @@ import java.util.ArrayList;
 
 import com.rogerpf.aabridge.controller.Aaa;
 import com.rogerpf.aabridge.igf.MassGi.GraInfo;
+import com.rogerpf.aabridge.view.BidTablePanel;
+import com.rogerpf.aabridge.view.HandDisplayGrid;
 
 /**
  */
@@ -30,14 +32,28 @@ class Ras extends AttributedString {
 	// ---------------------------------- CLASS ----------------------------------------
 	TextLayout tl;
 	boolean hidden = false;
-	float x;
-	float y;
-	float height;
-	float width;
+	HandDisplayGrid hdg = null;
+	BidTablePanel btp = null;
+	float x = 0.0f;
+	float y = 0.0f;
+	float height = 0.0f;
+	float width = 0.0f;
 
 	Ras(String text) { // Constructor
 		// =============================================================================
 		super(text);
+	}
+
+	Ras(String text, HandDisplayGrid toBeCenteredHdg) { // Constructor
+		// =============================================================================
+		super(text);
+		hdg = toBeCenteredHdg;
+	}
+
+	Ras(String text, BidTablePanel toBeCenteredBtp) { // Constructor
+		// =============================================================================
+		super(text);
+		btp = toBeCenteredBtp;
 	}
 
 	Rectangle2D getCorrectedBounds() {
@@ -69,6 +85,7 @@ public class Seg extends ArrayList<Ras> {
 	boolean open = true; // Closed means that we are still (possibly) on the same line
 	boolean lineCentered = false;
 	int boxNumber = 0;
+	boolean surpressBox = false;
 	boolean mnBox = false;
 	boolean overlappedBox = false;
 	float width = 0;
@@ -141,6 +158,16 @@ public class Seg extends ArrayList<Ras> {
 			for (Ras ras : this) {
 				if (ras.hidden)
 					continue;
+
+				if (ras.hdg != null) {
+					ras.hdg.setAlteredPosition((int) ras.x);
+					continue; // hdg is drawn by its own panel
+				}
+
+				if (ras.btp != null) {
+					ras.btp.setAlteredPosition((int) ras.x);
+					continue; // hdg is drawn by its own panel
+				}
 
 //				AttributedCharacterIterator charIterator = ras.getIterator();
 //				String s = "" + charIterator.first();

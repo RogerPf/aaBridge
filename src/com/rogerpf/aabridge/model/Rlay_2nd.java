@@ -50,9 +50,10 @@ public class Rlay_2nd {
 				card = g.fragLed.getHighest(g.z);
 			}
 
-			if (card == null) {
-				card = Play_Mpat.cardByPatternMatch(g, g.suitLed, Zzz.Second_Pos);
-			}
+//          removed - trying to make second player play low more often
+//			if (card == null) {
+//				card = Play_Mpat.cardByPatternMatch(g, g.suitLed, Zzz.Second_Pos);
+//			}
 
 			if (card == null && g.LHO_hasLedSuit) {
 

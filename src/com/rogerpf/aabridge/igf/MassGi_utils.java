@@ -134,6 +134,80 @@ public class MassGi_utils {
 		App.frame.repaint();
 	}
 
+	public static void do_tutorialIntoDealEdit() {
+		// ==========================================================================
+
+		if (App.visualMode != App.Vm_DealAndTutorial)
+			return;
+
+		/** We are in a tutorial mode and wish to  PLAY  the current App.deal
+		 */
+		if (App.deal.isSaveable() == false)
+			return;
+
+		App.localShowHidden = false;
+
+		if (App.respectLinYou == false) { // full complex tutorials do their own thing
+			App.deal.youSeatHint = App.deal.contractCompass.rotate(App.youSeatForLinDeal.rotate(Dir.South));
+		}
+
+		App.setVisualMode(App.Vm_InsideADeal);
+
+		if (App.deal.isBidding()) {
+			App.setMode(Aaa.EDIT_BIDDING);
+//			App.reviewBid = 0;
+//			App.reviewTrick = 0;
+//			App.reviewCard = 0;
+		}
+		else {
+			if ((App.mg.lin.linType == Lin.FullMovie) && App.showRedEditArrow)
+				App.gbo.showEditHint();
+
+			App.setMode(Aaa.EDIT_PLAY);
+//			App.reviewBid = 0;
+//			App.reviewTrick = 0;
+//			App.reviewCard = (App.deal.countCardsPlayed() > 0) ? 1 : 0;
+		}
+
+	}
+
+	public static void do_tutorialIntoDealPlay() {
+		// ==========================================================================
+
+		if (App.visualMode != App.Vm_DealAndTutorial)
+			return;
+
+		/** We are in a tutorial mode and wish to  PLAY  the current App.deal
+		 */
+		if (App.deal.isSaveable() == false)
+			return;
+
+		App.localShowHidden = false;
+
+		if (App.respectLinYou == false) { // full complex tutorials do their own thing
+			App.deal.youSeatHint = App.deal.contractCompass.rotate(App.youSeatForLinDeal.rotate(Dir.South));
+		}
+
+		App.setVisualMode(App.Vm_InsideADeal);
+
+		if (App.deal.isBidding()) {
+			App.setMode(Aaa.NORMAL_ACTIVE);
+//			App.reviewBid = 0;
+//			App.reviewTrick = 0;
+//			App.reviewCard = 0;
+		}
+		else {
+			if ((App.mg.lin.linType == Lin.FullMovie) && App.showRedEditArrow)
+				App.gbo.showEditHint();
+
+			App.setMode(Aaa.NORMAL_ACTIVE);
+//			App.reviewBid = 0;
+//			App.reviewTrick = 0;
+//			App.reviewCard = (App.deal.countCardsPlayed() > 0) ? 1 : 0;
+		}
+
+	}
+
 	public static void do_tutorialIntoDealStd() {
 		// ==========================================================================
 
@@ -153,20 +227,22 @@ public class MassGi_utils {
 
 		App.setVisualMode(App.Vm_InsideADeal);
 
-		if (App.deal.isBidding()) {
+		App.reviewBid = 0;
+		App.reviewTrick = 0;
+		App.reviewCard = 0;
+
+		if (App.deal.isBidding() || App.reviewFromPlay == false) {
 			App.setMode(Aaa.REVIEW_BIDDING);
-			App.reviewBid = 0;
-			App.reviewTrick = 0;
-			App.reviewCard = 0;
 		}
 		else {
+			App.setMode(Aaa.REVIEW_PLAY);
+
+			if ((App.deal.countCardsPlayed() > 0) && App.showOpeningLead) {
+				App.reviewCard = 1;
+			}
+
 			if ((App.mg.lin.linType == Lin.FullMovie) && App.showRedEditArrow)
 				App.gbo.showEditHint();
-
-			App.setMode(Aaa.REVIEW_PLAY);
-			App.reviewBid = 0;
-			App.reviewTrick = 0;
-			App.reviewCard = (App.deal.countCardsPlayed() > 0) ? 1 : 0;
 		}
 
 	}
@@ -831,7 +907,7 @@ class Capture_gi_env {
 
 	Color color_bg; // bg is the background color
 	Color color_cp; // cp is font color
-	Color color_cq; // cq is question box fill color
+//	Color color_cq; // cq is question box fill color
 	Color color_cs; // cs is self made box fill
 
 	int lb_position; // /* question position override - 'u' 20th letter counting 'a' = 0 means bottom of the screen as normal */
@@ -844,10 +920,10 @@ class Capture_gi_env {
 
 	Hyperlink hyperlink;
 
-	boolean mn_showing;
-	boolean mn_hideable_by_pg;
+	boolean mn_show_tu;
 	int mn_lines;
 	int mn_pg_countDown;
+	int page_numb_display;
 	String mn_text;
 
 	/**
@@ -864,7 +940,7 @@ class Capture_gi_env {
 
 		color_bg = o.color_bg;
 		color_cp = o.color_cp; // This is the default colour used by font 0
-		color_cq = o.color_cq;
+//		color_cq = o.color_cq;
 		color_cs = o.color_cs;
 
 		lb_position = o.lb_position;
@@ -877,10 +953,11 @@ class Capture_gi_env {
 
 		hyperlink = o.hyperlink;
 
-		mn_showing = o.mn_showing;
-		mn_hideable_by_pg = o.mn_hideable_by_pg;
+		mn_show_tu = o.mn_show_tu;
 		mn_lines = o.mn_lines;
 		mn_pg_countDown = o.mn_pg_countDown;
+		page_numb_display = o.page_numb_display;
+
 		mn_text = o.mn_text;
 	}
 
@@ -898,7 +975,7 @@ class Capture_gi_env {
 
 		color_bg = Color.WHITE;
 		color_cp = Color.BLACK; // This is the default colour used by font 0
-		color_cq = Color.WHITE;
+//		color_cq = Color.WHITE;
 		color_cs = Color.WHITE;
 
 		lb_position = 20; /* 'u' 20th letter counting 'a' = 0  means bottom of the screen as normal */
@@ -911,10 +988,10 @@ class Capture_gi_env {
 
 		hyperlink = null;
 
-		mn_showing = true;
-		mn_hideable_by_pg = true;
+		mn_show_tu = true;
 		mn_lines = 0;
-		mn_pg_countDown = 0;
+		mn_pg_countDown = 0; //
+		page_numb_display = 99999; // should not be used util set by pg of question
 		mn_text = "";
 
 	}
@@ -938,11 +1015,9 @@ class Capture_gi_env {
 
 		hyperlink = null;
 
-		// mn_showing unchanged pg clear mn-showing;
-
+		// mn_show_tu unchanged note - pg clears mn_show_tu;
 		// mn_lines unchanged
 		// mn_text unchanged
-
 		// visualModeRequested unchanged
 	}
 
@@ -1062,6 +1137,8 @@ class Hyperlink_h_ext extends Hyperlink {
 	public void actionLink() {
 		// =============================================================================
 		String origUrl = getLinkInfo();
+
+		origUrl = origUrl.replace("##", "#");
 
 		long now = new Date().getTime();
 

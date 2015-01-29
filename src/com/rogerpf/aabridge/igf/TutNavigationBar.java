@@ -26,6 +26,7 @@ import javax.swing.JPanel;
 
 import com.rogerpf.aabridge.controller.Aaa;
 import com.rogerpf.aabridge.controller.App;
+import com.rogerpf.aabridge.controller.CmdHandler;
 import com.rogerpf.aabridge.model.Cc;
 import com.rpsd.bridgefonts.BridgeFonts;
 
@@ -80,10 +81,17 @@ public class TutNavigationBar extends JPanel implements MouseListener {
 	 */
 	public void mouseReleased(MouseEvent e) {
 		// =============================================================
+		if (App.hideCommandBar)
+			return;
+
 		float relLoc = convertXcoordToRelLoc((float) e.getX());
 		int gi_index = mg.jpPointAy.relLocToGiIndex(relLoc);
 		mg.tutNavBarClicked(gi_index);
 		App.frame.repaint();
+		if (e.getButton() == MouseEvent.BUTTON3) {
+			// so the "other button" will take us into the deal
+			CmdHandler.tutorialIntoDealClever();
+		}
 	}
 
 	public void mouseEntered(MouseEvent arg0) {

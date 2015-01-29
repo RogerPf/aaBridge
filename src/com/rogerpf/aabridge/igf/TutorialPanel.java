@@ -140,9 +140,9 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 	 */
 	public void action_VT(GraInfo gi) {
 		// =============================================================================
-		xCol = (float) gi.numb * columnWidth;
-//		if (xCol < leftMargin)
-//			xCol = leftMargin;
+		float gi_numb_good = (gi.numb > 0) ? (float) gi.numb : LEFT_MARGIN_DEFAULT;
+
+		xCol = gi_numb_good * columnWidth;
 	}
 
 	/**
@@ -161,6 +161,11 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 
 		case 2:
 			leftMargin = xCol;
+			if (leftMargin < LEFT_MARGIN_DEFAULT * columnWidth) {
+				leftMargin = LEFT_MARGIN_DEFAULT * columnWidth;
+				xCol = leftMargin;
+			}
+
 			if (leftMargin > rightMargin - minMarginSeparation)
 				leftMargin = LEFT_MARGIN_DEFAULT * columnWidth;
 			break;
@@ -381,7 +386,7 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 			if (t == q_.sk) { /* nothing at this time */ continue; } 
 			if (t == q_.ha) { /* nothing at this time */ continue; } 
 			if (t == q_.tu) { /* nothing at this time */ continue; } 
-			if (t == q_.pg) { /* nothing at this time */ continue; } 
+//			if (t == q_.pg) { /* nothing at this time */ continue; } 
 			if (t == q_.ub) { /* nothing at this time */ continue; } 
 			if (t == q_.up) { /* nothing at this time */ continue; } 
 			if (t == q_.mc) { /* nothing at this time */ continue; } 
@@ -399,6 +404,12 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 			if (t == q_.xx) { /* nothing at this time */ continue; } 
 							
 			// @formatter:on
+
+			if (t == q_.pg) {
+				if (i == mg.end_pg)
+					consume_add_fake_page_number(gi);
+				continue;
+			}
 
 			System.out.println("Tutorial Panel UnProcessed-gi: " + gi.type);
 		}

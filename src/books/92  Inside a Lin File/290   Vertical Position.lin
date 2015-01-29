@@ -1,8 +1,14 @@
 %% Vertical Position
-%% Last edited  2013 Dec 03
+%% Last edited  2014 Nov 03
 %%%% by Roger Pfister
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|135|ff|1Arial|fb|10|fm|1|       Font def 1
+fh|240|ff|2Arial|fb|20|fm|2| 
+fh|350|ff|3Arial|fb|30|fm|3| 
+fh|460|ff|4Arial|fb|40|fm|4|
+
 cr|516|cg|5128|cb|516|      5  green 
+cr|60|cg|60|cb|6255|        6  blue
 cr|7255|cb|70|cg|70|        7  red
 
 bt||
@@ -37,42 +43,50 @@ Note @- when an  !st!  Standard Table  is showing  ^*b there are still 25 zones 
 pg||
 qx|Vpos2|
 nt||
-at|line 1
-line 2                 ^g^*bVertical Position^*n
-line 3
-line 4
-line 5
-line 6
-line 7
-line 8
-line 9
-line 10
-line 11
-line 12
-line 13
-line 14
-line 15
-line 16
-line 17
-line 18
-line 19
-line 20
-line 21
-line 22
-line 23
-line 24
-line 25
-line 26
-line 27
-line 28
-line 20
-line 30
-line 31
-line 32
-line 33
-line 34
-|cp|5|at|^*b
-^c@2|
+%% Vertical Position
+%% Last edited  2014 Nov 25
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+bt||
+nt||
+at|line 1 ^z!
+line 2                 ^h^*bVertical Position   -   Lines Zones   -   Font Size Demo^*n^z!
+line 3 ^z!
+line 4 ^z!
+line 5 ^z!
+line 6 ^z!
+line 7 ^z!
+line 8 ^z!
+line 9 ^z!
+line 10 ^z!
+line 11 ^z!
+line 12 ^z!
+line 13 ^z!
+line 14 ^z!
+line 15 ^z!
+line 16 ^z!
+line 17 ^z!
+line 18 ^z!
+line 19 ^z!
+line 20 ^z!
+line 21 ^z!
+line 22 ^z!
+line 23 ^z!
+line 24 ^z!
+line 25 ^z!
+line 26 ^z!
+line 27 ^z!
+line 28 ^z!
+line 20 ^z!
+line 30 ^z!
+line 31 ^z!
+line 32 ^z!
+line 33 ^z!
+line 34 ^z!
+|cp|5|at|
+^c@2^*b|
 ht|a|at|zone a|
 ht|b|at|zone b|
 ht|c|at|zone c|
@@ -98,11 +112,29 @@ ht|v|at|zone v|
 ht|w|at|zone w|
 ht|x|at|zone x|
 ht|y|at|zone y|
-ht|z|at|zone z|
-|cp||at|^*n|
+ht|z|at|zone z^*n|
 
-ht|m|at| ^gUsing zones you can jump anywhere on the screen and there start adding lines of text.
+ht|d|cp|6|at|^fUsing zones you can jump anywhere on the screen and there start adding lines of text.
 |
+ht|g|cp|7|at|@0
+^fThe 26 red letters show the 26    @^<letter>    tab positions
 
-ht|z|at|
-^g^*b end ^*n|
+^aa ^bb ^cc ^dd ^ee ^ff ^gg ^hh ^ii ^jj ^kk ^ll ^mm ^nn ^oo ^pp ^qq ^rr ^ss ^tt ^uu ^vv ^ww ^xx ^yy ^zz
+|
+cp||ht|k|at|^g@2
+|fp| |at|Non bold  Arial  lin size  30   Font 0   the built-in default
+|fp|1|at|Non bold  Arial  lin size  35   Font 1   FORCED down to size 30 for compatability 
+|fp|2|at|Non bold  Arial  lin size  40 
+|fp|3|at|Non bold  Arial  lin size  50 
+|fp|4|at|Non bold  Arial  lin size  60  @0 ^e  @2|
+
+ht|t|fp||at|
+Arial  abcdefghijklmnopqrstuvwxyz   ABCDEFGHIJKLMNOPQRSTUVWXYZ    built-in
+|fp|1|at|Arial  abcdefghijklmnopqrstuvwxyz   ABCDEFGHIJKLMNOPQRSTUVWXYZ    35
+
+|fp| |at|^*bArial  abcdefghijklmnopqrstuvwxyz   ABCDEFGHIJKLMNOPQRSTUVWXYZ    built-in bold
+|fp|1|at|^*bArial  abcdefghijklmnopqrstuvwxyz   ABCDEFGHIJKLMNOPQRSTUVWXYZ    35 bold 
+
+
+|fp||ht|z|cp||at|
+^x^*b end ^*n|

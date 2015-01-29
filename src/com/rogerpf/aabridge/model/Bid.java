@@ -88,6 +88,11 @@ public class Bid {
 	}
 
 	// --------------------------------
+	public String toDepFinString() {
+		return (isCall()) ? call.toString() : level.toStr() + suit.toStrNt();
+	}
+
+	// --------------------------------
 	public String toInnocuousAnswer() {
 		return (isCall()) ? call.toCmdString() : level.toStr() + suit.toStrLower();
 	}

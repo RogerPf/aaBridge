@@ -136,10 +136,31 @@ public class GreenBaizeOverlay extends JPanel implements AWTEventListener {
 
 	// ----------------------------------------------------------------------
 
+	Boolean showNewBoardHint = false;
+	/**
+	*/
+	public Timer newBoardHintTimer = new Timer(1500 /* ms */, new ActionListener() {
+		public void actionPerformed(ActionEvent evt) {
+			newBoardHintTimer.stop();
+			showNewBoardHint = false;
+			setVisible(false);
+		}
+	});
+
+	public void showNewBoardHint() {
+		if (showDividerHint)
+			return;
+		newBoardHintTimer.start();
+		showNewBoardHint = true;
+		setVisible(true);
+	}
+
+	// ----------------------------------------------------------------------
+
 	Boolean showDividerHint = false;
 	/**
 	*/
-	public Timer dividerHintTimer = new Timer(3000 /* ms */, new ActionListener() {
+	public Timer dividerHintTimer = new Timer(4000 /* ms */, new ActionListener() {
 		public void actionPerformed(ActionEvent evt) {
 			dividerHintTimer.stop();
 			showDividerHint = false;
@@ -148,6 +169,8 @@ public class GreenBaizeOverlay extends JPanel implements AWTEventListener {
 	});
 
 	public void showDividerHint() {
+		if (showNewBoardHint)
+			return;
 		dividerHintTimer.start();
 		showDividerHint = true;
 		setVisible(true);
@@ -188,6 +211,30 @@ public class GreenBaizeOverlay extends JPanel implements AWTEventListener {
 			g2.setColor(Color.white);
 
 			g2.drawString("&    Wipe  or  Undo", to_w * 1.20f, tf_h * 1.015f);
+		}
+
+		if (showNewBoardHint) {
+
+			float from_w = width * 0.42f;
+			float to_w = width * 0.25f;
+
+			float tf_h = height * 0.95f;
+
+			Point from = new Point((int) from_w, (int) tf_h);
+			Point to = new Point((int) to_w, (int) tf_h);
+
+			Shape arrow = App.createArrowShape(from, to);
+
+			g2.setColor(Cc.RedStrong);
+			g2.fill(arrow);
+			g2.setColor(Cc.BlackStrong);
+			g2.draw(arrow);
+
+			Font font = BridgeFonts.bridgeBoldFont.deriveFont((float) height * 0.033f);
+			g2.setFont(font);
+			g2.setColor(Color.white);
+
+			g2.drawString("Click   New Board", to_w * 1.08f, tf_h * 1.01f);
 		}
 
 		if (showVuGraphHint) {

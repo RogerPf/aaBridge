@@ -16,6 +16,8 @@ import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.ComponentEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -399,5 +401,35 @@ class BookNameBtn extends JButton implements MouseListener {
 		float nudgeUp = ((first == '>') || (first == '<')) ? -0.04f * height * 1 : 0.0f;
 
 		Aaa.drawCenteredString(g2, text, 0, nudgeUp, getWidth(), height);
+	}
+}
+
+/** *********************************************************************************  
+ */
+class AaHomeBtnPanel extends ClickPanel implements ActionListener {
+	// ---------------------------------- CLASS -------------------------------------
+	private static final long serialVersionUID = 1L;
+
+	QLabel anyLabel;
+
+	QButton homeButton;
+
+	public AaHomeBtnPanel() { // Constructor
+		// ==============================================================================================
+
+		setLayout(new MigLayout(App.simple + ", flowy"));
+
+		add(homeButton = new QButton(this, "Home"), "gapx4, gapy4");
+		homeButton.setBorder(BorderFactory.createEmptyBorder(0, 4, 1, 4));
+		homeButton.setToolTipText("Jump to the  -  Welcome  page");
+
+	}
+
+	public void actionPerformed(ActionEvent e) {
+		// ==============================================================================================
+
+		if ("Home".equals(e.getActionCommand())) {
+			App.con.ShowHelpAndWelcome();
+		}
 	}
 }

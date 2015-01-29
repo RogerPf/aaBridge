@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "aaBridge"
-#define MyAppVersion "2.2.0.2308"
+#define MyAppVersion "2.4.0.2426"
 #define MyAppPublisher "RogerPf.com"
 #define MyAppURL "http:/RogerPf.com/"
 #define MyAppExeName "aaBridge.exe"
@@ -49,6 +49,7 @@ Name: "{commondesktop}\{#MyAppName} Watson Edition"; Filename: "{app}\{#MyAppExe
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: postinstall skipifsilent
 
 [Registry]
+Root: HKCR; Subkey: ".linzip"; ValueType: string; ValueName: ""; ValueData: "aabridge__rogerpf_com"; Flags: uninsdeletevalue
 Root: HKCR; Subkey: ".lin"; ValueType: string; ValueName: ""; ValueData: "aabridge__rogerpf_com"; Flags: uninsdeletevalue
 Root: HKCR; Subkey: "aabridge__rogerpf_com"; ValueType: string; ValueName: ""; ValueData: "Bridge Movie"; Flags: uninsdeletekey 
 Root: HKCR; Subkey: "aabridge__rogerpf_com\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\lin.ico" 

@@ -59,6 +59,11 @@ public class Card {
 		return suit.toStr() + rank.toStr();
 	}
 
+	// --------------------------------
+	public String toInnocuousAnswer() {
+		return suit.toStr() + rank.toStr();
+	}
+
 	public static Card singleCardFromLinStr(String hs) {
 		if (hs.length() != 2)
 			return null;

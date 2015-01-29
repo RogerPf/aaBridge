@@ -44,11 +44,14 @@ public class Deal {
 
 	public int realBoardNo = 0;
 	public String displayBoardId = "";
+	public String signfBoardId = "";
 	public Dir dealer = Dir.Invalid; /* compass.v nesw */
 	public boolean vulnerability[] = { false, false }; // ns, ew
 	public Dir contractCompass = Dir.Invalid;
 	public boolean endedWithClaim = false;
 	public int tricksClaimed = 0;
+
+	public boolean tc_suppress_pc_display = false;
 
 	public Bid contract = new Bid(Call.NullBid);
 	public Bid contractDblRe = new Bid(Call.NullBid);
@@ -217,6 +220,18 @@ public class Deal {
 		return tot == 52;
 	}
 
+//	/**
+//	 */
+//	// ==============================================================================================
+//	public boolean didAnyHandStartWith13Cards() {
+//		for (Dir dir : Dir.nesw) {
+//			if (hands[dir.v].didHandStartWith13Cards()) {
+//				return true;
+//			}
+//		}
+//		return false;
+//	}
+
 	/**
 	 */
 	public Deal(int localId /* ignored */) { /* Constructor */// used by Make_giAY
@@ -329,7 +344,6 @@ public class Deal {
 //		}
 	}
 
-	// formatter:off
 	public Hand north() {
 		return hands[Dir.North.v];
 	}
@@ -539,7 +553,8 @@ public class Deal {
 			}
 		}
 
-		displayBoardId = "";
+		// displayBoardId = "";
+		// signfBoardId = "";
 		// ahHeader = ""; nope
 
 		endedWithClaim = false;
@@ -1252,6 +1267,15 @@ public class Deal {
 
 	/**
 	 */
+	public void clearAllBubbleText() {
+		// ==============================================================================================
+		for (Hand hand : hands) {
+			hand.bubbleText = "";
+		}
+	}
+
+	/**
+	 */
 	public void setBubbleText(char c, String text) {
 		// ==============================================================================================
 		Dir dir = Dir.directionFromChar(c);
@@ -1268,10 +1292,13 @@ public class Deal {
 		d.localId = localId;
 		d.localLast_pg = 0;
 
+		d.tc_suppress_pc_display = tc_suppress_pc_display;
+
 		d.testId = testId; // a transient
 
 		d.realBoardNo = realBoardNo;
 		d.displayBoardId = displayBoardId;
+		d.signfBoardId = signfBoardId;
 		d.dealer = dealer; /* compass.v nesw */
 		d.vulnerability[Dir.NS] = vulnerability[Dir.NS];
 		d.vulnerability[Dir.EW] = vulnerability[Dir.EW];
@@ -2608,6 +2635,7 @@ public class Deal {
 			hand.played.clear();
 		}
 		displayBoardId = "";
+		signfBoardId = "";
 		prevTrickWinner.clear();
 		contract = new Bid(Call.NullBid);
 		contractDblRe = new Bid(Call.NullBid);
@@ -2748,6 +2776,34 @@ public class Deal {
 
 		if (endedWithClaim) {
 			s += "mc|" + tricksClaimed + "|" + Zzz.lin_EOL;
+		}
+
+		return s;
+	}
+
+	/**
+	 */
+	public String cardPlayForDepFinSave(String def) {
+
+		int countPlayed = countCardsPlayed();
+
+		if ((contract.isValidBid() == false) && (countCardsPlayed() == 0)) {
+			return def;
+		}
+
+		String s = "";
+
+		if (countPlayed > 48)
+			countPlayed = 48; // DeepFinesse never wants to be told about the play of the last four cards
+
+		int tk = 0;
+		for (int i = 0; i < countPlayed; i++) {
+			Card card = getCardThatWasPlayed(i);
+			s += card.suit.toChar() + "" + card.rank.toChar() + " ";
+			tk = (tk + 1) % 4;
+			if (tk == 0) {
+				s += " ";
+			}
 		}
 
 		return s;
@@ -3542,15 +3598,17 @@ public class Deal {
 		return (card != null);
 	}
 
-	public void playCardExternal(Suit suit, Rank rank) {
+	public boolean playCardExternal(Suit suit, Rank rank) {
 		Hand hand = getNextHandToPlay();
 		Card card = hand.frags[suit.v].getIfRankExists(rank);
 		if (card == null) {
 			@SuppressWarnings("unused")
 			int z = 0; // put your breakpoint here
+			return false;
 		}
 		assert (card != null);
 		hand.playCard(card);
+		return true;
 	}
 
 	public void setLastTrickWinnerExternal(String s) {
@@ -3597,7 +3655,7 @@ public class Deal {
 		if (i <= 3490) return  n * 22;
 		if (i <= 3990) return  n * 23;
 		               return  n * 24;
-		// @formatter:off
+		// @formatter:on
 	}
 
 	public int completenessScore() {
@@ -3616,22 +3674,23 @@ public class Deal {
 	public void ShuffleWeakestAxisHands() {
 		if (isSaveable() == false)
 			return;
-		
+
 		int ns = hands[Dir.North.v].countHighCardPoints() + hands[Dir.South.v].countHighCardPoints();
 		int ew = hands[Dir.East.v].countHighCardPoints() + hands[Dir.West.v].countHighCardPoints();
-		
+
 		Hand hds[] = new Hand[2];
-		
+
 		if (ns >= ew) {
 			hds[0] = hands[Dir.East.v];
 			hds[1] = hands[Dir.West.v];
-		} else {
+		}
+		else {
 			hds[0] = hands[Dir.North.v];
 			hds[1] = hands[Dir.South.v];
 		}
-		
+
 		wipePlay();
-		
+
 		Cal cards = new Cal(26);
 		for (Hand hand : hds) {
 			for (Cal frag : hand.frags) {
@@ -3642,14 +3701,68 @@ public class Deal {
 				fOrg.clear();
 			}
 		}
-		
-		assert(cards.size() == 26);
-		
+
+		assert (cards.size() == 26);
+
 		Collections.shuffle(cards);
-		
+
 		for (int i = 0; i < cards.size(); i++) {
-			hds[i%2].addDeltCard(cards.get(i));
+			hds[i % 2].addDeltCard(cards.get(i));
 		}
+	}
+
+	public boolean playCardsDepFinExternal(String play) {
+
+		if (packPristine.size() != 0)
+			return false; // the card must be in the four hands
+
+		if (play.isEmpty() == false) {
+			for (String cs : play.split(" +")) {
+				// System.out.println(crd);
+				if (cs.length() != 2)
+					return false;
+
+				Suit suit = Suit.charToSuit(cs.charAt(0));
+				Rank rank = Rank.charToRank(cs.charAt(1));
+
+				boolean ok = playCardExternal(suit, rank);
+
+				if (!ok)
+					return false;
+			}
+		}
+
+		if (countCardsPlayed() >= 48) {
+			while (countCardsPlayed() != 52) {
+				Hand hand = getNextHandToPlay();
+				hand.playCard(hand.getAnyCard()); // there is only one card left in each hand
+			}
+		}
+
+		return true;
+	}
+
+	public boolean isOrigCardsSame(Deal ad) {
+
+		for (Dir p : Dir.nesw) {
+			Hand i_hand = hands[p.v];
+			Hand a_hand = ad.hands[p.v];
+
+			// fOrgs
+			for (Suit su : Suit.cdhs) {
+				Frag i_fOrg = i_hand.fOrgs[su.v];
+				Frag a_fOrg = a_hand.fOrgs[su.v];
+				if (i_fOrg.size() != a_fOrg.size())
+					return false;
+				for (int i = 0; i < i_fOrg.size() - 1; i++) {
+					Card i_card = i_fOrg.get(i);
+					Card a_card = a_fOrg.get(i);
+					if (i_card.rank != a_card.rank)
+						return false;
+				}
+			}
+		}
+		return true;
 	}
 
 }

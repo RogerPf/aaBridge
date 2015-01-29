@@ -12,10 +12,14 @@ package com.rogerpf.aabridge.controller;
 
 import java.awt.Desktop;
 import java.awt.Dimension;
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.lang.reflect.InvocationTargetException;
 import java.text.SimpleDateFormat;
@@ -27,6 +31,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import com.rogerpf.aabridge.igf.MassGi;
 import com.rogerpf.aabridge.igf.MassGi_utils;
 import com.rogerpf.aabridge.model.Deal;
+import com.rogerpf.aabridge.model.DepFin;
 import com.rogerpf.aabridge.model.Dir;
 import com.rogerpf.aabridge.model.Hand;
 import com.rogerpf.aabridge.model.Lin;
@@ -52,6 +57,9 @@ public final class CmdHandler {
 		new RpfBtnDef( "menuSaveStd",				"Save",				"Does a standard Save, offering you a file name if one has not been set.  ALWAYS automaticaly overwrites an older file  "),
 		new RpfBtnDef( "menuSaveAs",				"Save As",			"Saves the deal, you always get a chance to set or change the filename  "),
 
+		new RpfBtnDef( "depFinOut",					"df Exp",			"deepFinesse - Write (export) the current deal to the file  -  " + App.depFinOutInBoth + "  "),
+		new RpfBtnDef( "depFinIn",					"Im",				"deepFinesse - Read (import) the 'LAST' deal from the file  -  " + App.depFinOutInBoth + "  "),
+
 		new RpfBtnDef( "mainAnti",					"<",				"Rotate the seats Anti-clockwise  "),
 		new RpfBtnDef( "mainClock",					">",				"Rotate the seats Clockwise  "),
 		new RpfBtnDef( "claimBtn",					"Claim",			"Claim  -  Claim as many of the remaining tricks as you wish.  Your claim we be accepted and not tested.  "),
@@ -70,8 +78,8 @@ public final class CmdHandler {
 		new RpfBtnDef( "reviewBackOneCard",			"<",				"Go back one card  "),
 		new RpfBtnDef( "reviewFwdOneCard",			">",		  		"Go forward one card  "),
 		new RpfBtnDef( "hiddenHandsShowHide",		"Show", 			"Show / Hide the normally hidden hands "),
-		new RpfBtnDef( "hiddenHandsClick1",			"Click", 			"Click a name panel - to show (and become) that hand  "),
-		new RpfBtnDef( "hiddenHandsClick2",			"a Name", 			"Click a name panel - to show (and become) that hand  "),
+		new RpfBtnDef( "hiddenHandsClick1",			"Click  ", 			"Click a name panel - to show (and become) that hand  "),
+		new RpfBtnDef( "hiddenHandsClick2",			"a Name  ", 		"Click a name panel - to show (and become) that hand  "),
 
  		new RpfBtnDef( "reviewBackToStartOfBidding","<<<",				"Rewind to the start of the bidding  "),
 		new RpfBtnDef( "reviewFwdShowBidding",		"Show Bidding",		"Forward Showing all the bidding  "),
@@ -91,8 +99,9 @@ public final class CmdHandler {
 		new RpfBtnDef( "tutorialStepFwd",			"Step  >",			"Jump Forward to the next stopping point  "),
 		new RpfBtnDef( "tutorialFlowFwd",			"Flow  >",			"Run Forward to the next stopping point - showing each being bid made or card being played  "),
 		new RpfBtnDef( "tutorialBackToMovie",		"Back  to Movie",	"Continues the  Tutorial  also know as - Bridge movie  "),
-		new RpfBtnDef( "tutorialIntoDealStd",		"E",	            "Older form of   Enter the Deal   - does NOT try to find the most complete play of the deal  "),
-		new RpfBtnDef( "tutorialIntoDealClever",	"Enter the Deal",	"Lets you  Play  and investigate the deal  "),
+		new RpfBtnDef( "tutorialIntoDealEdit",		"Edit",	            "Enter the Deal  and go into   'Edit' mode   so you can invesigate the deal Double Dummy - use  Wipe or Undo  if needed  "),
+		new RpfBtnDef( "tutorialIntoDealPlay",		"Play",	            "Enter the Deal  and go into   'Play' mode   with active 'playing' opponents - good for  pre-set problems  "),
+		new RpfBtnDef( "tutorialIntoDealClever",	"Enter the Deal",	"Enter the Deal  and go into   'Review' mode  so you have fine control over the replay of the deal   "),
 
 		new RpfBtnDef( "questionTellMe",			"Tell Me",			"Shows you the Answer  "),
 		new RpfBtnDef( "question_z_Next",			"New",				"New - Show New  Hand Shape  question  "),
@@ -256,6 +265,10 @@ public final class CmdHandler {
 		// ==============================================================================================
 		doAutoSave();
 
+		boolean refreshSeatChoice = (App.respectLinYou == false);
+
+		App.respectLinYou = true;
+
 		App.flowOnlyCommandBar = false; // ugly should not need to do this here DO WE?
 		App.hideCommandBar = false; // ugly should not need to do this here DO WE?
 		App.hideTutNavigationBar = false; // ugly should not need to do this here DO WE?
@@ -285,6 +298,9 @@ public final class CmdHandler {
 			App.con.startAutoBidDelayTimerIfNeeded();
 		else
 			App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
+
+		if (refreshSeatChoice)
+			App.frame.rop.p1_SeatChoice.respectLinYouChanged();
 	}
 
 	/**   
@@ -865,6 +881,90 @@ public final class CmdHandler {
 		TestSystemRunner.performAllTests();
 	}
 
+	/**
+	 */
+	public static void depFinOut() {
+
+		if (App.deal.isDoneHand())
+			return;
+
+		int bNumb = 1;
+
+		FileInputStream fis = null;
+		BufferedReader reader = null;
+
+		boolean pre_create_folder = false;
+
+		try {
+			fis = new FileInputStream(App.depFinOutInBoth);
+			reader = new BufferedReader(new InputStreamReader(fis));
+
+			bNumb = DepFin.extractLastBoardNumber(reader);
+			bNumb++;
+
+			fis.close();
+		} catch (Exception e) {
+			pre_create_folder = true;
+			bNumb = 1;
+		}
+
+		if (pre_create_folder) {
+			try {
+				File to_from_folder = new File(App.depFinOutInPath);
+				to_from_folder.mkdir();
+			} catch (Exception e) {
+			}
+		}
+
+		try {
+			FileWriter fileOut = new FileWriter(App.depFinOutInBoth, true /* true => append */);
+
+			BufferedWriter writer = new BufferedWriter(fileOut);
+			DepFin.appendDealInDeepFinesseFormat(App.deal, writer, bNumb);
+			writer.close();
+
+			fileOut.close();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		@SuppressWarnings("unused")
+		int z = 0;
+	}
+
+	/**
+	 */
+	public static void depFinIn() {
+
+		FileInputStream fis = null;
+		BufferedReader reader = null;
+
+		try {
+			fis = new FileInputStream(App.depFinOutInBoth);
+			reader = new BufferedReader(new InputStreamReader(fis));
+
+			Deal deal = DepFin.extractLastDeal(reader, App.deal);
+
+			fis.close();
+
+			if (deal != null) {
+				App.deal = deal;
+				App.reviewTrick = 0;
+				App.reviewCard = 0;
+				if (App.deal.countCardsPlayed() > 0)
+					App.reviewCard = 1;
+				App.localShowHidden = true;
+				App.setMode(Aaa.REVIEW_PLAY);
+				App.dealMajorChange();
+				App.gbp.matchPanelsToDealState();
+				App.frame.repaint();
+			}
+
+		} catch (Exception e) {
+			return;
+		}
+	}
+
 	/**   
 	 */
 	public static void actionPerfString(String actCmd) { // called by the Controller who is the ActionListener
@@ -967,7 +1067,7 @@ public final class CmdHandler {
 	static void tutorialFlowFwd() {
 
 		if (App.isVmode_Tutorial())
-			App.mg.tutorialFlowFwd();
+			App.mg.tutorialFlowFwd((App.movieBidFlowDoesFlow == false) && App.isMode(Aaa.NORMAL_ACTIVE));
 		else if (App.isMode(Aaa.REVIEW_BIDDING))
 			reviewFwdShowBidding();
 		else if (App.isMode(Aaa.REVIEW_PLAY))
@@ -981,6 +1081,20 @@ public final class CmdHandler {
 	 */
 	static void tutorialBackToMovie() {
 		MassGi_utils.do_tutorialBackToMovie();
+		App.frame.repaint();
+	}
+
+	/**
+	 */
+	public static void tutorialIntoDealEdit() {
+		MassGi_utils.do_tutorialIntoDealEdit();
+		App.frame.repaint();
+	}
+
+	/**
+	 */
+	public static void tutorialIntoDealPlay() {
+		MassGi_utils.do_tutorialIntoDealPlay();
 		App.frame.repaint();
 	}
 
@@ -1043,6 +1157,14 @@ public final class CmdHandler {
 		App.deal = new Deal(Deal.makeDoneHand, Dir.South);
 		App.mg = new MassGi(App.deal);
 		App.switchToDeal(App.deal);
+
+		if (App.showRedNewBoardArrow) {
+			App.gbo.showNewBoardHint();
+		}
+
+		if (App.showRedDividerArrow) {
+			App.gbo.showDividerHint();
+		}
 	}
 
 }

@@ -145,6 +145,15 @@ public class BidTablePanel extends ClickPanel { /* Constructor */
 		// System.out.println("BidTablePanel - setPositionReturnSize" + x + " " + y + " " + wh[0] + " " + wh[1] + " tup width " + App.tup.getWidth());
 	}
 
+	/**
+	 */
+	public void setAlteredPosition(int x) {
+		// ==============================================================================================
+		assert (floating);
+
+		setLocation(x, getLocation().y); // keep our y position
+	}
+
 }
 
 /**   

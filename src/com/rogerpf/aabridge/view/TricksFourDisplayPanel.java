@@ -361,7 +361,7 @@ public class TricksFourDisplayPanel extends JPanel {
 		else { // normal mode
 			trickRequested = App.deal.getCurTrickIndex();
 
-			if (showCompletedTrick && (trickRequested > 0) && App.deal.isCurTrickComplete()) {
+			if (!App.deal.tc_suppress_pc_display && showCompletedTrick && (trickRequested > 0) && App.deal.isCurTrickComplete()) {
 				trickWinner = App.deal.prevTrickWinner.get(trickRequested);
 				trickRequested--;
 			}

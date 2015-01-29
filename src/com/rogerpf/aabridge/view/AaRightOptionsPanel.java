@@ -36,7 +36,8 @@ public class AaRightOptionsPanel extends JTabbedPane implements ChangeListener {
 	public AaRopPrefs3_SuitColors p3_SuitColors;
 	public AaRopPrefs4_DFC p4_DFC;
 	public AaRopPrefs5_DSizeFont p5_DSizeFont;
-	public AaRopPrefs6_StartUp p6_StartUp;
+	public AaRopPrefs6_RedHints p6_RedHints;
+	public AaRopPrefs7_ShowBtns p7_ShowBtns;
 
 	AaRightOptionsPanel() { /* Constructor */
 
@@ -47,15 +48,17 @@ public class AaRightOptionsPanel extends JTabbedPane implements ChangeListener {
 		p3_SuitColors = new AaRopPrefs3_SuitColors();
 		p4_DFC = new AaRopPrefs4_DFC();
 		p5_DSizeFont = new AaRopPrefs5_DSizeFont();
-		p6_StartUp = new AaRopPrefs6_StartUp();
+		p6_RedHints = new AaRopPrefs6_RedHints();
+		p7_ShowBtns = new AaRopPrefs7_ShowBtns();
 
 		addTab("Deals", null, p0_DealChoices, "What shape of hand do you want to be delt ?   ");
 		addTab("Seat", null, p1_SeatChoice, "Seat Choice  and  Play or Defend  (Play recommended)   ");
 		addTab("AutoPlay", null, p2_AutoPlay, "Pause at end of trick  and  AutoPlay  options   ");
 		addTab("Suit Colors", null, p3_SuitColors, "Suit Symbol Colors");
-		addTab("DFC", null, p4_DFC, "DFC        Disrtribution Flash Card  options  ");
-		addTab("Size & Font", null, p5_DSizeFont, "Deal Size and  Movie Font override ");
-		addTab("Start Up", null, p6_StartUp, "Start Up,  Button Display  and  Reset all options ");
+		addTab("DFC", null, p4_DFC, "DFC        Disrtribution Flash Card  options   ");
+		addTab("Size & Font", null, p5_DSizeFont, "Deal Size and  Movie Font override   ");
+		addTab("Red Hints", null, p6_RedHints, "Red Hints   ");
+		addTab("Show", null, p7_ShowBtns, "Show,  Button Display  and  Reset all options   ");
 
 		ToolTipManager.sharedInstance().setDismissDelay(12000);
 	}

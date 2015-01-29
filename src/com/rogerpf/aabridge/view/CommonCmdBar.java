@@ -123,7 +123,10 @@ public class CommonCmdBar extends ClickPanel {
 
 		boolean S_vm = (App.visualMode == App.Vm_InsideADeal) || App.hideCommandBar;
 		boolean T_vm = !S_vm;
+		boolean T_vmComp = T_vm && !lin_virgin_or_single;
 		boolean deal_review = S_vm && App.isModeAnyReview();
+		
+		boolean deal_enterable = App.deal.isSaveable() && (App.visualMode == App.Vm_DealAndTutorial);
 
 		T0_9__empt.setVisible( S_vm );
 		T0_9__tbp0.setVisible( T_vm );
@@ -134,13 +137,13 @@ public class CommonCmdBar extends ClickPanel {
 		T2_9__empt.setVisible( !(T_vm || deal_review));
 		T2_9__tbp2.setVisible(  (T_vm || deal_review));
 
-		T3_9__empt.setVisible( !deal_review && !(!lin_virgin_or_single && !S_vm));
+		T3_9__empt.setVisible( !deal_review && !(App.showEdPyCmdBarBtns && T_vmComp && deal_enterable));
+		T3_9__tbp3.setVisible( !deal_review &&  (App.showEdPyCmdBarBtns && T_vmComp && deal_enterable));
 		T3_9__rvb3.setVisible(  deal_review );
-		T3_9__tbp3.setVisible( !deal_review &&  (!lin_virgin_or_single && !S_vm));
 
 		T4_9__empt.setVisible(  lin_virgin_or_single         );
 		T4_9__movm.setVisible( !lin_virgin_or_single &&  S_vm);
-		T4_9__tbp4.setVisible( !lin_virgin_or_single && !S_vm);
+		T4_9__tbp4.setVisible( !lin_virgin_or_single && !S_vm && deal_enterable);
 		// @formatter:on
 	}
 }
@@ -241,11 +244,10 @@ class CommonBar3 extends ClickPanel {
 	CommonBar3() { /* Constructor */
 		// =============================================================
 		setOpaque(false);
+		setLayout(new MigLayout(App.simple, "push[]3%[]3%", "push[]push"));
 
-//		if (App.devMode) {
-//			setLayout(new MigLayout(App.simple, "80%[]", "push[]push"));
-//			add(new RpfResizeButton(Aaa.s_Std, "tutorialIntoDealStd", 15, 60, 0.90f));
-//		}
+		add(new RpfResizeButton(Aaa.s_Std, "tutorialIntoDealEdit", 16, 48, 0.77f));
+		add(new RpfResizeButton(Aaa.s_Std, "tutorialIntoDealPlay", 16, 48, 0.77f));
 
 		setVisible(false);
 	}

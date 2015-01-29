@@ -1,0 +1,104 @@
+%% Help - Welcome
+%% Last edited  2013 Dec 03
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|150|ff|1Arial|fb|15|fm|1|       1 large
+fh|342|ff|3Arial|fb|35|fm|3|       2 med+
+fh|730|ff|7Arial|fb|75|fm|7|       7
+fh|836|ff|8Arial|fb|85|fm|8|       8 med  greater than 4 as it is in the 30 - 39 zone
+fh|925|ff|9Arial|fb|95|fm|9|       9 very small for faking 'buttons'
+
+cr|3200|cg|3255|cb|3255|     3  light blue
+cr|4170|cg|4190|cb|4255|     4  med blue
+cr|516|cg|5128|cb|516|       5  green 
+cr|7230|cg|70|cb|70|         7  red
+
+bt||
+tu|y|
+mn|   Welcome to    -    aaBridge  2.4  |
+qx|Welc|
+fp|1|at|
+
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp|9|
+ht|d|
+at|^^|fp||at|
+^d     Click on one of the buttons           @-  |fp|1|at|^*bOR^*n|fp||at|  @-|
+
+at|
+@0@1^o  @2^y@3|
+ht|c|fp|9|at|^^ ^^ ^^|cs|3|fp|8|at|
+ ^-{ ^*h https://www.youtube.com/channel/UCjqx0Cofc7-TT-N0tfYR8rg/videos?flow=grid&view=0 ^*n aaBridge on YouTube ^*x|at|
+} ^-  |fp|4|at|
+|cs|4|
+
+at|
+@0@1^w   @2^z@3
+|
+ht|c|fp|9|at|^^ ^^ ^^|cs|3|fp|8|at|
+ ^-{ ^*h http://www.youtube.com/results?search_query=intitle:'aaBridge+Extra'^*n Extra ^*x|at|
+} ^-  |fp|4|at|
+|cs|4|
+
+
+ht|f|cs|3|at|^c@2^j@3
+|
+ht|g|at||
+  |fp|9|at| 
+ ^- { 
+|fp|1|at|^*f playBridge_and_dealChoice,    Play Bridge   ^*n
+|fp||at|^*f playBridge_and_dealChoice, and show Deal Choices^*n
+} ^-  |fp|9|at| 
+ ^- { 
+ |fp|1|at|^*f playBridge_playBridge,   Play Bridge   ^*n|at|
+} ^-|fp|9|cs|4|at|
+|fp||at| ^-{ ^*f playBridge_distrFlashCards, Distribution Flash Cards ^*n|at|
+} ^-  |fp|9|cs|4|at|
+ ^- { 
+|fp|1|at|^*f open_Welcome_Watsons_Book, Watson's Book ^*n|fp|||at|
+|fp||at|^*f open_Welcome_Watsons_Book, (first book of this app)^*n
+} ^-
+|cs|3|fp||at| 
+^- { |fp||at|^*f showRedHintsOpts, Show  Red Hints  options ^*n
+} ^-|
+fp||at| 
+^- { |fp||at|^*f tutorial_idealSize,     Book Mode     ^*n|fp|||at|
+|fp||at|^*f tutorial_idealSize,  set ideal size and layout  ^*n
+} ^- |
+fp||at|
+^- { |fp||at|^*f tutorial_idealSize_noExtra,   set ideal size, no extra   ^*n
+} ^- |
+|
+ht|o|at|@0@1^i|cp|7||fp|7|at|^*b     *Try this^*n@2 |fp|4|cp||
+ht|q|at|@0@1^i|cp|7||fp|8|at|^*b    *Try this^*n@2 |fp|4|cp||
+
+
+at|
+@0@1^m@2
+|ht|g|
+at|
+
+ Use the |cp|7||fp|3|at| ^*b^*uB^*n^*books^*n |fp||cp||at| menu drop-down above to select a book.
+
+
+ Use the |fp|8|at| ^*b^*uF^*n^*bile^*n |fp||at| menu drop-down above to open your
+^o^*bSaves^*n folder and   ^*bdrag n drop^*n   a file from there.
+			  
+
+|fp|8|at| ^*bDrag n Drop^*n|fp||at|   group of, any single, or a folder containing
+^o ^*b.lin^*n files, they will open.    (also any ^*b.zip^*n or ^*b.linzip^*n file)
+
+			  
+|fp|8|at| ^*bClick^*n |fp||at|on any of the  |fp|8|at|^*bHelp^*n|fp||at|  or  |fp|8|at|^*bExample^*n|fp||at|  files you can
+^osee listed in the tall gray column on your left.
+
+
+|fp||at| Use the  ^*bShow  Red Hints  options^*n|fp||at|  to set the hints  ^*baaBridge^*n
+^o shows you.
+
+
+|fp|9|at|^qSee - ^*h http://musingsonbridge.blogspot.com/2014/06/deep-finesse-to-from-aabridge.html ^*n Deep Finesse & aaBridge ^*x |
+cp||at|*Windows Only|cp||fp||
+
+ht|z|at|@0
+^r Roger Pfister   -   December 2013|

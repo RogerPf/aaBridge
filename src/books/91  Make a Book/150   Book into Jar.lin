@@ -21,9 +21,9 @@ fp|9|
 mn|     Book into Jar             Page 1|
 qx|jar1|
 ht|d|
-at|^^|fp||at|^b@2Your lin file (or files) are written and tested and in a folder that ^*bmust^*n start with, two digits and a space. If you are making a "Single Book" edition, it must be "01 " for a multi-book edition it has to be between "01 " and "89 ".  
+at|^^|fp||at|^b@2Your lin file (or files) are written and tested and in a folder that ^*bmust^*n start with, two digits and a space, the digits must be between "01 " and "89 ".  
 
-Starting from the most up to date  ^*baaBridge_^*n<version>^*b.jar^*n  that you have (this one should be fine).  Make a copy and rename it to   ^*baaBridge_^*nnewTitleGoesHere_^*n<version>^*b.|cp|7|at|^*bzip^*n|cp||at|.    We will rename it back to .|cp|7|at|^*bjar^*n|cp||at| later.
+Starting from the most up to date  ^*baaBridge_^*nn.n.n.nnnn^*b.jar^*n  that you have (this one should be fine).  Make a copy and rename it to ^*baaBridge_^*nnewTitleGoesHere_^*nn.n.n.nnnn^*b.|cp|7|at|^*bzip^*n|cp||at|.    We will rename it back to .|cp|7|at|^*bjar^*n|cp||at| later.  The win aaBridge jar launcher, when choosing which ^*baaBridge...jar^*n to launch, picks the jar with the highest version number in the name.
 
 Use the standard method of your operating system to unzip this file to a folder.
 
@@ -31,7 +31,7 @@ You can now make changes to the newly created folder. These are -
 
 ^c@.   Delete any unwanted books that inside the books folder.   |cp|7|at|^*bPlease leave^*n|cp||at|  the Help and How To's,   90 ... 99
 
-^c@.   Copy your finished book, in its folder, into the ^*b books ^*n folder
+^c@.   Copy your finished book, with its folder, into the ^*b books,  book2 ... book9^*n  folder,  there is no book1 folder.
 
 ^c@.   Re-zip the expanded folder containing your changes to produce a ^*bzip^*n file.
 

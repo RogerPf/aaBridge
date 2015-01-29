@@ -105,6 +105,7 @@ public class q_ {
 	public final static int ha = q("ha");
 	public final static int ih = q("ih");
 	public final static int ia = q("ia");
+	public final static int tc = q("tc"); // BBO system to hide show card display updates - so you can jump forward
 
 	public final static int dr = q("dr"); // aaBridge Deal Random normaly - user restriceted to the south hand
 
@@ -125,7 +126,6 @@ public class q_ {
 	public final static int wb = q("wb"); // bitmap positioning x
 	public final static int hb = q("hb"); // bitmap positioning y
 	public final static int lf = q("lf"); // part of the (unused) BBO link system
-	public final static int tc = q("tc"); // part of the (unused) BBO system on off card display updates
 
 	public final static int xx = q("xx"); // RPf only used to 'kill' (turn off) an existing command
 

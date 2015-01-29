@@ -104,4 +104,19 @@ public class HandDisplayGrid extends JPanel {
 		// System.out.println("setPositionReturnSize " + x + " " + y + " " + wh[0] + " " + wh[1] + " tup width " + App.tup.getWidth());
 	}
 
+	public void setAlteredPosition(int x) {
+		// ==============================================================================================
+		/** We base all size calculations on the WIDTH of the current Tutorial Panel
+		 *  Note we are being called at 'paint time' so these value must exist valid
+		 */
+		if (hUnits == 3 || wUnits == 3) {
+			@SuppressWarnings("unused")
+			int z = 0;
+		}
+		setLocation(x, getLocation().y); // keep our y position
+
+		// setBounds(x, y, wh[0], wh[1]);
+		// System.out.println("setPositionReturnSize " + x + " " + y + " " + wh[0] + " " + wh[1] + " tup width " + App.tup.getWidth());
+	}
+
 }

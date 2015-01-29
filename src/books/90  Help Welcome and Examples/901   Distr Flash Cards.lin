@@ -5,9 +5,6 @@
 
 %%    This is NOT a normal  .lin  file  please leave it alone    :)
 
-fh|172|ff|1Arial|fb|15|fm|1|   %% font slot 1  Arial large - used by the  internal code  for size of answer
-fh|256|ff|2Arial|fb|20|fm|2|   %% font slot 2  Arial med - used by the  internal code  for size of some spaces
-
 bt||                           %%   currently needed to ensure that the sk work correctly  to be investigated
 
 %%     This is a special internally used .lin file - best to leave it alone - Its NAME must contain the text   "Distr Flash Cards"

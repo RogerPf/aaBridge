@@ -59,13 +59,13 @@ class AaRopPrefs3_SuitColors extends ClickPanel implements ItemListener {
 
 		add(label  = new QLabel("Suit Colors    -    Colors of the Suits and Suit symbols"), "gapy 5");
 		label.setForeground(Aaa.optionsTitleGreen);
-		add(scrnColors = new QButton(App.frame, "Screen Colors"), "split 2, flowx, gapx8, gapy");
+		add(scrnColors = new QButton(App.frame, "Screen Colors"), "split 2, flowx, gapx8, gapy 8");
 		add(label  = new QLabel("setting will be visible in the bottom left  "), "flowy");
 		scrnColors.setActionCommand("lowerPanel");
 		scrnColors.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
 		scrnColors.setToolTipText("Show the Screen Color Settings  ");
 
-		add(label  = new QLabel("Colors of the Suit Symbols   "), "gapy 8");
+		add(label  = new QLabel("Colors of the Suit Symbols   "), "gapy 12");
 		label.setForeground(Aaa.optionsTitleGreen);
 		add(dkCol0 = new QRadioButton(this, dkColGroup,  bdr1, Cc.deckColorStyle == Cc.Dk__Green_Blue_Red_Black,    "dkCol0", "4 Color - C Green, D Blue,  H Red, S Black  -  As used in actual 4 Color Decks  "), rbInset);
 		add(dkCol1 = new QRadioButton(this, dkColGroup,  bdr1, Cc.deckColorStyle == Cc.Dk__Green_Orange_Red_Blue,   "dkCol1", "4 Color - C Green, D Orange, H Red, S Blue  -  Bidding Box Colors  "), rbInset);

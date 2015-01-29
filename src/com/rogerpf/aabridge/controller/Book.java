@@ -12,9 +12,13 @@ package com.rogerpf.aabridge.controller;
 
 import java.io.File;
 import java.net.URL;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.regex.Pattern;
 
 import com.version.VersionAndBuilt;
@@ -30,11 +34,7 @@ public class Book extends ArrayList<Book.LinChapter> {
 	public String bookFolderName = "";
 	public String displayTitle = "";
 	public String bookPath = "";
-	public String shelfDesc = "";
-	public int linCount = 0;
-	public boolean autoOpen = false;
-
-	public boolean defaultToSingleBook = false;
+	public String shelfDisplayName = "";
 
 	public int lastChapterIndexLoaded = -1;
 
@@ -80,6 +80,9 @@ public class Book extends ArrayList<Book.LinChapter> {
 				break;
 			}
 			displayNoNumb = s = s.trim();
+			if (displayNoNumb.endsWith("regen")) {
+				s = displayNoNumb = displayNoNumb.substring(0, displayNoNumb.length() - 5);
+			}
 			s = s.replace('_', ' ');
 			displayNoUscore = s = s.trim();
 
@@ -92,13 +95,20 @@ public class Book extends ArrayList<Book.LinChapter> {
 			// =============================================================
 			String s = "aaBridge  " + VersionAndBuilt.verAndBuildNo();
 
-			s += "   -   ";
+			s += "                                ";
 
-			if (shelfDesc.length() > 0) {
-				s += shelfDesc + " / ";
+			if (shelfDisplayName.length() > 0) {
+				s += shelfDisplayName.trim() + "  /  ";
+			}
+			else {
+				s += "OUTSIDE" + "  /  ";
 			}
 
-			s += displayTitle + " / " + displayNoUscore;
+			if (displayTitle.length() > 0) {
+				s += displayTitle + "  /  ";
+			}
+
+			s += displayNoUscore;
 
 			App.frame.setTitle(s);
 		}
@@ -146,6 +156,14 @@ public class Book extends ArrayList<Book.LinChapter> {
 
 			return false;
 		}
+
+		public boolean matchAndActionReleaseDate(String sFile) {
+			// ==============================================================================================
+			if (sFile.contentEquals(displayNoExt) == false)
+				return false;
+
+			return true;
+		}
 	}
 
 	public Book() { // Constructor of an empty book
@@ -159,29 +177,34 @@ public class Book extends ArrayList<Book.LinChapter> {
 
 	public Book(String basePathIn) { // Constructor from a path
 		// ==============================================================================================
-		commonBookConstructor(basePathIn, "", null);
+		commonBookConstructor(basePathIn, "", null, "");
 	}
 
-	public Book(String basePathIn, File[] onlyThese) { // Constructor from a path
+	public Book(String basePathIn, File[] onlyThese, String shelfname) { // Constructor from a path
 		// ==============================================================================================
-		commonBookConstructor(basePathIn, "", onlyThese);
+		commonBookConstructor(basePathIn, "", onlyThese, shelfname);
 	}
 
-	public Book(String basePathIn, String extraPath) {
+	public Book(String basePathIn, String extraPath, String shelfname) {
 		// ==============================================================================================
-		commonBookConstructor(basePathIn, extraPath, null);
+		commonBookConstructor(basePathIn, extraPath, null, shelfname);
 	}
 
 	private final static String sep = File.separator;
-	private final static String auto_open_first = "auto_open_this_book_first.txt";
 
-	public void commonBookConstructor(String basePathIn, String extraPath, File[] onlyThese) {
+	static String all_lin_files_in_this_book = "all_lin_files_in_this_book";
+
+	public void commonBookConstructor(String basePathIn, String extraPath, File[] onlyThese, String shelfname) {
 		// ==============================================================================================
 
 		String basePath = basePathIn;
 
 		if (extraPath.length() > 0) {
 			frontNumber = Aaa.extractPositiveInt(extraPath);
+//			if (frontNumber == 19) {
+//				@SuppressWarnings("unused")
+//				int z = 0;
+//			}
 		}
 
 		if (basePath.isEmpty()) {
@@ -199,46 +222,77 @@ public class Book extends ArrayList<Book.LinChapter> {
 			}
 
 			if (basePath.endsWith(".jar") == false)
-				basePath = locMethodFile.getPath() + sep + "books";
+				basePath = locMethodFile.getPath() + sep + shelfname;
 		}
 
 		/** for basic testing only
 		 */
-//		basePath = "C:\\a\\aaBridge_2.0.1.2120.jar";
+//		basePath = "C:\\a\\aaBridge_Watson_Edition_2.4.0.2421.jar";   // for local testing only
 
-		if (basePath.endsWith(".jar")) {
+		if (basePath.toLowerCase().endsWith(".jar") || basePath.toLowerCase().endsWith(".zip") || basePath.toLowerCase().endsWith(".linzip")) {
 			/** 
 			 * clearly we are in a jar file
 			 */
 			File jarFile = new File(basePath);
 			if (!jarFile.exists()) {
-				System.out.println("Book (cons) - Given a jar file name that does not exist " + basePath);
+				System.out.println("Book (cons) - Given a jar/zip file name that does not exist " + basePath);
 				return;
 			}
 
 			bookJarName = jarFile.getPath();
-			bookJarExtra = "books/" + extraPath;
+			if (basePath.endsWith(".jar"))
+				bookJarExtra = shelfname + "/" + extraPath;
 
 			// We are running in a .jar on either windows, mac or linux or ...
 
-			Pattern pattern = Pattern.compile(bookJarExtra + ".*[.lin|.title|" + auto_open_first + "]");
+			Pattern pattern = Pattern.compile(bookJarExtra + ".*[.lin|.title|.reldate]");
 
 			ArrayList<String> ret = (ArrayList<String>) ResourceList.getResourcesFromJarFile(jarFile, pattern);
 
-			for (String sFile : ret) {
-				if (sFile.toLowerCase().endsWith(".title"))
-					setDisplayTitle(sFile, "/");
+			boolean process_as_normal = true;
 
-				if (sFile.toLowerCase().endsWith(".txt") && sFile.toUpperCase().contains("DEFAULT_TO_SINGLE_BOOK"))
-					defaultToSingleBook = true;
+			// parse for whole book reldate
+			if (App.observeReleaseDates) {
+				for (String sFile : ret) {
+					if (sFile.endsWith(".reldate") == false)
+						continue;
+					if (sFile.contains(all_lin_files_in_this_book) == false)
+						continue;
+					if (isValidReldateAndInFuture(sFile) == false)
+						continue;
 
-				if (sFile.toLowerCase().endsWith(".lin")) {
-					new LinChapter('r', bookJarName, sFile);
-					linCount++;
+					process_as_normal = false;
+					break;
 				}
-				if (sFile.contains(auto_open_first))
-					autoOpen = true;
 			}
+
+			// parse each of the files realy for the .lin files
+			if (process_as_normal) {
+				for (String sFile : ret) {
+					if (sFile.toLowerCase().endsWith(".title"))
+						setDisplayTitle(sFile, "/");
+
+					if (sFile.toLowerCase().endsWith(".lin")) {
+						new LinChapter('r', bookJarName, sFile);
+					}
+				}
+			}
+
+			// parse for specific lin file rel dates
+			if (App.observeReleaseDates) {
+				for (String sFile : ret) {
+					if (isValidReldateAndInFuture(sFile) == false)
+						continue;
+					String filenameNoLin = extract_linfilename(sFile);
+					for (LinChapter ch : this) {
+						if (filenameNoLin.contentEquals(ch.displayNoExt)) {
+							remove(ch);
+							break;
+						}
+					}
+				}
+			}
+
 			if (displayTitle.isEmpty())
 				setDisplayTitle(bookJarExtra, "/");
 
@@ -265,36 +319,67 @@ public class Book extends ArrayList<Book.LinChapter> {
 				files = new File(bookFolderName).listFiles();
 				if (files != null) {
 
-					for (File file : files) {
-						String sFile = file.getName();
+					boolean load_lins_as_normal = true;
 
-						/** filter the files by  the onlyThese  list
-						 */
-						if (onlyThese != null) {
-							boolean found = false;
-							for (File f : onlyThese) {
-								if (sFile.contentEquals(f.getName())) {
-									found = true;
+					// parse for whole book reldate
+					if (App.observeReleaseDates) {
+						for (File file : files) {
+							String sFile = file.getName();
+							if (sFile.endsWith(".reldate") == false)
+								continue;
+							if (sFile.contains(all_lin_files_in_this_book) == false)
+								continue;
+							if (isValidReldateAndInFuture(sFile) == false)
+								continue;
+
+							load_lins_as_normal = false;
+							break;
+						}
+					}
+
+					// parse each of the files realy for the .lin files
+					if (load_lins_as_normal) {
+						for (File file : files) {
+							String sFile = file.getName();
+
+							/** filter the files by  the onlyThese  list
+							 */
+							if (onlyThese != null) {
+								boolean found = false;
+								for (File f : onlyThese) {
+									if (sFile.contentEquals(f.getName())) {
+										found = true;
+										break;
+									}
+								}
+								if (!found)
+									continue;
+							}
+
+							if (sFile.toLowerCase().endsWith(".title"))
+								setDisplayTitle(sFile, sep);
+
+							if (sFile.toLowerCase().endsWith(".lin"))
+								new LinChapter('f', "", sFile);
+						}
+					}
+
+					if (App.observeReleaseDates) {
+						for (File file : files) {
+							String sFile = file.getName();
+							if (isValidReldateAndInFuture(sFile) == false)
+								continue;
+							String filenameNoLin = extract_linfilename(sFile);
+							for (LinChapter ch : this) {
+								if (filenameNoLin.contentEquals(ch.displayNoExt)) {
+									remove(ch);
 									break;
 								}
 							}
-							if (!found)
-								continue;
 						}
-
-						if (sFile.toLowerCase().endsWith(".title"))
-							setDisplayTitle(sFile, sep);
-
-						if (sFile.toLowerCase().endsWith(".txt") && sFile.toUpperCase().contains("DEFAULT_TO_SINGLE_BOOK"))
-							defaultToSingleBook = true;
-
-						if (sFile.toLowerCase().endsWith(".lin"))
-							new LinChapter('f', "", sFile);
-
-						if (sFile.contains(auto_open_first))
-							autoOpen = true;
 					}
 				}
+
 			} catch (Exception e) {
 				e.printStackTrace();
 				return;
@@ -315,9 +400,55 @@ public class Book extends ArrayList<Book.LinChapter> {
 		}
 	}
 
+	private String extract_linfilename(String sFile) {
+		// ==============================================================================================
+		int p = sFile.lastIndexOf('/');
+		if (p != -1) {
+			sFile = sFile.substring(p + 1); // in zips and jars we get the full pusdo path
+		}
+
+		int len = sFile.length();
+		if (len < 21)
+			return "";
+		return sFile.substring(0, len - 20);
+	}
+
+	static DateFormat reldateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+	static boolean isValidReldateAndInFuture(String sFile) {
+		// ==============================================================================================
+
+		int p = sFile.lastIndexOf('/');
+		if (p != -1) {
+			sFile = sFile.substring(p + 1); // in zips and jars we get the full psudo path
+		}
+
+		int len = sFile.length();
+		if (len < 21)
+			return false;
+
+		if (sFile.toLowerCase().endsWith(".reldate") == false) {
+			return false;
+		}
+
+		if (sFile.substring(len - 20, len - 18).contentEquals("__") == false) {
+			return false;
+		}
+
+		Date reldate;
+
+		try {
+			reldate = reldateFormat.parse(sFile.substring(len - 18, len - 8));
+		} catch (ParseException e) {
+			return false;
+		}
+
+		return reldate.after(new Date() /* now */);
+	}
+
 	public String getFirstWordOfTitle() {
 		// ==============================================================================================
-		String[] parts = displayTitle.split(" ");
+		String[] parts = displayTitle.split(" ", 1);
 		if (parts.length > 0)
 			return parts[0];
 		return "";
@@ -411,6 +542,16 @@ public class Book extends ArrayList<Book.LinChapter> {
 			if (!found)
 				remove(h);
 		}
+	}
+
+	public double getLinWeighting() {
+		// ==============================================================================================
+		return Math.sqrt((double) this.size());
+	}
+
+	public LinChapter pickRandomLinFile() {
+		// ==============================================================================================
+		return get((int) ((double) size() * Math.random()));
 	}
 
 }

@@ -62,6 +62,9 @@ public class MassGi {
 	public JpPointAy jpPointAy = null;
 	public DualDealAy ddAy = null;
 
+	public boolean buildTime__tc_suppress_pc_display = false;
+	public boolean pc_autoClear__buildTime__tc_suppress_pc_display = false;
+
 	StringBuilder outBuf = new StringBuilder();
 
 	int graInfo_nextIndex = 0;
@@ -71,6 +74,8 @@ public class MassGi {
 	int middle_pg = 0;
 	public int end_pg = 0;
 	int stop_gi = 0;
+
+	int page_numb_display = 0; // used by pg and questoins to show page number
 
 	Capture_gi_env capEnv = new Capture_gi_env();
 
@@ -286,7 +291,8 @@ public class MassGi {
 		}
 	}
 
-	int LIN_MIN_AND_STD_FONT_SIZE = 30;
+	int LIN_STD_FONT_SIZE__smaller_than_min = 30;
+	int LIN_MIN_FONT_SIZE__bigger_than_standard = 35;
 
 	int fontBlockIndex = 0;
 
@@ -296,7 +302,7 @@ public class MassGi {
 		// ---------------------------------- CLASS -------------------------------------
 		int index = 0;
 		boolean active = false;
-		float linFontSize = LIN_MIN_AND_STD_FONT_SIZE;
+		float linFontSize = LIN_STD_FONT_SIZE__smaller_than_min;
 		String family = App.fontfamilyStandard;
 		int bold = 0;
 		boolean italic = false;
@@ -306,12 +312,20 @@ public class MassGi {
 		FontBlock() { // Constructor
 			// =============================================================================
 			index = fontBlockIndex++;
-			if (index == 10) { // 0 is built in default, 10 is the white font for 'mn' headers, 11 is for lb z
+			if (index == 0) { // 0 is built in default
+				linFontSize = LIN_STD_FONT_SIZE__smaller_than_min;
+			}
+
+			if (index == 10) { // 10 is the white font for 'mn' headers
 				linFontSize = 56;
 				bold = 5;
 			}
 
-			if (index == 11) { // 0 is built in default, 10 is the white font for 'mn' headers, 11 is for lb z
+			if (index == 11) { // 11 is used for BIG symbols on opening page
+				linFontSize = 39;
+			}
+
+			if (index == 12) { // 12 lb z questoins
 				linFontSize = 78;
 			}
 
@@ -322,17 +336,20 @@ public class MassGi {
 		public void fontMake() {
 			// =============================================================================
 			// System.out.println( " fontMake " + index);
-			if (active)
-				return;
-			active = true; // you only get one official make font chance
-
-			String fontFamily = family;
+//			if (active)
+//				return;
+			active = true; // (not any more) you only get one official make font chance
 
 			if (index <= 10) {
 				if (App.useFamilyOverride && App.fontfamilyOverride.length() > 0) {
-					fontFamily = App.fontfamilyOverride;
+					font = new Font(App.fontfamilyOverride, 0, 0);
 				}
-				font = new Font(fontFamily, 0, 0); // pre make them anyway
+				else if (family.contentEquals(App.fontfamilyStandard) && App.fontfamilyStandardAvailable == false) {
+					font = BridgeFonts.bridgeTextStdFont;
+				}
+				else {
+					font = new Font(family, 0, 0); //
+				}
 			}
 			else { // index = 11
 				font = BridgeFonts.faceAndSymbFont;
@@ -348,7 +365,8 @@ public class MassGi {
 			 new FontBlock(), new FontBlock(), new FontBlock(),
 			 new FontBlock(), //  0 - 9 (10 of them) are the aaBridge standard fonts
 			 new FontBlock(), // 10 is for mn headers
-			 new FontBlock(), // 11 is for lb z  question answers
+			 new FontBlock(), // 11 used on front pages ??
+			 new FontBlock(), // 12 is for lb z  question answers BIG NUMBER FONT
 	};
 	// @formatter:on
 
@@ -360,16 +378,33 @@ public class MassGi {
 			return;
 
 		int slot = (int) ns.charAt(0) - '0';
-		if (slot < 1 || slot > 9)
+		if (slot < 1 || 9 < slot)
 			return;
 
 		if (fbAy[slot].active)
 			return; // Thou shalt not mess with a 'made' font
 
 		int val = Aaa.extractPositiveInt(ns.substring(1));
-		int minSize = LIN_MIN_AND_STD_FONT_SIZE / (slot > 4 ? 2 : 1);
-		if (val < minSize || val > 999)
-			val = minSize;
+
+		int minSize = LIN_MIN_FONT_SIZE__bigger_than_standard;
+		int standardSize = LIN_STD_FONT_SIZE__smaller_than_min;
+
+		if (val > 120) {
+			val = 120;
+		}
+
+		if (slot <= 4) {
+			if (val < minSize) {
+				val = minSize;
+			}
+			// try to mimic netbridgevu strange font sizes
+			if ((30 <= val && val <= 35)) {
+				val = standardSize; // 30 i.e. SMALLER than min
+			}
+			else if ((36 <= val && val <= 39)) {
+				val = standardSize + (val - 35) * 2;
+			}
+		}
 
 		fbAy[slot].linFontSize = val;
 	}
@@ -395,8 +430,13 @@ public class MassGi {
 	 */
 	void insertFontBold(String ns) {
 		// =============================================================================
-		if (ns.length() < 2)
+		if (ns.length() < 1)
 			return;
+		if (ns.length() == 1)
+			ns += '0';
+
+		if (ns.charAt(1) < '0' || ns.charAt(1) > '9')
+			ns = ns.charAt(0) + "9"; // so y etc converts to 9
 
 		int slot = (int) ns.charAt(0) - '0';
 		if (slot < 1 || slot > 9)
@@ -406,8 +446,8 @@ public class MassGi {
 		if (val < 0 || val > 9) // we have a boolean cutoff <= 4 and 5 >=
 			return;
 
-		if (fbAy[slot].active)
-			return; // Thou shalt not mess with a 'made' font
+//		if (fbAy[slot].active)
+//			return; // Thou shalt not mess with a 'made' font
 
 		fbAy[slot].bold = val;
 	}
@@ -440,8 +480,8 @@ public class MassGi {
 		if (slot < 1 || slot > 9)
 			return;
 
-		if (fbAy[slot].active)
-			return; // Thou shalt not mess with a 'made' font
+//		if (fbAy[slot].active)
+//			return; // Thou shalt not mess with a 'made' font
 
 		fbAy[slot].underline = true;
 	}
@@ -457,8 +497,8 @@ public class MassGi {
 		if (slot < 1 || slot > 9)
 			return;
 
-		if (fbAy[slot].active)
-			return; // Thou shalt not mess with a 'made' font
+//		if (fbAy[slot].active)
+//			return; // Thou shalt not mess with a 'made' font
 
 		fbAy[slot].fontMake();
 	}
@@ -475,6 +515,7 @@ public class MassGi {
 			slot = 0;
 
 		capEnv.font_slot_fp = slot;
+		capEnv.bold = false;
 	}
 
 	/**
@@ -509,34 +550,33 @@ public class MassGi {
 		capEnv.color_cp = cAy_std[slot];
 	}
 
-	/**
-	 */
-	void setColor_cq(String ns) {
-		// =============================================================================
-		if (ns.length() != 1) {
-			capEnv.color_cq = Color.WHITE;
-			return;
-		}
-
-		int slot = (int) ns.charAt(0) - '0';
-		if (slot < 1 || slot > 9)
-			slot = 0;
-
-		capEnv.color_cq = cAy_fill[slot];
-	}
+//	/**
+//	 */
+//	void setColor_cq(String ns) {
+//		// =============================================================================
+//		if (ns.length() != 1) {
+//			capEnv.color_cq = Color.WHITE;
+//			return;
+//		}
+//
+//		int slot = (int) ns.charAt(0) - '0';
+//		if (slot < 1 || slot > 9)
+//			slot = 0;
+//
+//		capEnv.color_cq = cAy_fill[slot];
+//	}
 
 	/**
 	 */
 	void setColor_cs(String ns) {
 		// =============================================================================
-		if (ns.length() != 1) {
+		ns += '0';
+
+		int slot = (int) ns.charAt(0) - '0';
+		if (slot < 1 || slot > 9) {
 			capEnv.color_cs = Color.WHITE;
 			return;
 		}
-
-		int slot = (int) ns.charAt(0) - '0';
-		if (slot < 1 || slot > 9)
-			slot = 0;
 
 		capEnv.color_cs = cAy_fill[slot];
 	}
@@ -591,9 +631,9 @@ public class MassGi {
 	void process_tu(BarBlock bb) {
 		// =============================================================================
 		String s = bb.get(0);
-		capEnv.mn_hideable_by_pg = (s.length() == 0);
-		capEnv.mn_showing = (s.length() > 0);
-		capEnv.mn_pg_countDown = (s.length() > 0) ? 2 : 0;
+		capEnv.mn_show_tu = (s.length() > 0);
+		if (capEnv.mn_pg_countDown != -1)
+			capEnv.mn_pg_countDown = (s.length() > 0) ? -1 : 2;
 		new GraInfo("tu", s);
 	}
 
@@ -603,6 +643,7 @@ public class MassGi {
 		// =============================================================================
 		String s = bb.get(0);
 		capEnv.visualModeRequested = App.Vm_DealAndTutorial;
+		App.deal.clearAllBubbleText();
 		new GraInfo("st", s);
 	}
 
@@ -710,6 +751,16 @@ public class MassGi {
 
 	/**
 	 */
+	public void refresh_for_youseat_change() {
+		// =============================================================================
+		if (stop_gi >= giAy.size() - 1)
+			return;
+		tutorialStepFwd();
+		tutorialBackOne();
+	}
+
+	/**
+	 */
 	public void tutorialBackOne() {
 		// =============================================================================
 		int stop_gi_OLD = stop_gi;
@@ -769,8 +820,9 @@ public class MassGi {
 	/**
 	 * We never set the read points only
 	 *   setTheReadPoints    does that
+	 * @param stepIfBidding 
 	 */
-	public void setTheReadPoints_FwdMini() {
+	public void setTheReadPoints_FwdMini(boolean stepIfBidding) {
 		// =============================================================================
 		int lastInd = giAy.size() - 1;
 		if (stop_gi >= lastInd)
@@ -801,7 +853,7 @@ public class MassGi {
 			GraInfo gi = giAy.get(i);
 			int t = gi.qt;
 
-			if (t == q_.pc || t == q_.mb) { // for now just these two
+			if (t == q_.pc || (t == q_.mb && !stepIfBidding)) { // for now just these two
 				if (first_back_seen == false) {
 					first_back_seen = true;
 					continue;
@@ -948,7 +1000,8 @@ public class MassGi {
 		 */
 		boolean floaterSeen = false;
 		App.tup.clearAllFloatersIncQp();
-		for (int i = start_nt; i < end_pg; i++) {
+//		for (int i = start_nt; i < end_pg; i++) {
+		for (int i = end_pg - 1; i >= start_nt; i--) {
 			GraInfo gi = giAy.get(i);
 			if (gi.qt == q_.ih) {
 				gi.hdg = App.tup.addFloatingHand(gi.hdg, gi.deal_ih_ia);
@@ -1047,8 +1100,6 @@ public class MassGi {
 			App.localShowHidden = giStop.capEnv.pdl_allSeatsVisible;
 		}
 
-		App.tutorialShowAuction = giStop.capEnv.pdl_auctionVisible;
-
 		GraInfo gi_end_pg = giAy.get(end_pg);
 		if (gi_end_pg.deal == null) {
 			@SuppressWarnings("unused")
@@ -1057,6 +1108,9 @@ public class MassGi {
 
 		assert (gi_end_pg.deal != null);
 		App.deal = gi_end_pg.deal.deepClone();
+
+		App.tutorialShowAuction = giStop.capEnv.pdl_auctionVisible; // don't do this - && (App.deal != null) && App.deal.didAnyHandStartWith13Cards(); /* i.e.
+																	// has 52 cards */
 
 		if (App.mg.lin.linType == Lin.VuGraph) {
 			App.deal.youSeatHint = App.youSeatHint;
@@ -1117,13 +1171,13 @@ public class MassGi {
 		// ---------------------------------- Timer -------------------------------------
 		public void actionPerformed(ActionEvent evt) {
 			// =============================================================================
-			tutorialFlowFwd();
+			tutorialFlowFwd(false);
 		}
 	});
 
 	/**
 	 */
-	public void tutorialFlowFwd() {
+	public void tutorialFlowFwd(boolean stepIfBidding) {
 		// =============================================================================
 		tutorialPlayTimer.stop(); // in case it is running
 
@@ -1132,7 +1186,7 @@ public class MassGi {
 			return;
 		}
 
-		setTheReadPoints_FwdMini();
+		setTheReadPoints_FwdMini(stepIfBidding);
 	}
 
 	/**
@@ -1154,21 +1208,22 @@ public class MassGi {
 		// =============================================================================
 		assert (bb.qt == q_.mn);
 
-		int mn_lines = bb.size();
-		if (mn_lines > 2)
-			return; // cos BBO only allows a max of one newline in an 'mn' header
+		int lines = bb.size();
+		String text = bb.get(0) + (lines > 1 ? bb.get(1) : "");
 
-		String text = bb.get(0) + (mn_lines == 2 ? bb.get(1) : "");
+		if (lines > 2) {
+			text = "";
+			lines = 0; // cos BBO only allows a max of one newline in an 'mn' header
+		}
 
-		if (text.length() == 0)
-			return; // as per BBO app
-
-		// build this 'gi' by hand as it is such a 'one off'
-		capEnv.mn_showing = true;
-		capEnv.mn_pg_countDown = (capEnv.mn_hideable_by_pg ? 2 : 0);
-		capEnv.mn_lines = mn_lines;
+		// set capEnv values
+		capEnv.mn_lines = lines;
 		capEnv.mn_text = text;
-		capEnv.mn_pg_countDown = 2;
+
+		if (capEnv.mn_pg_countDown >= 0 && capEnv.mn_show_tu) {
+			capEnv.mn_pg_countDown = 2;
+		}
+
 		new GraInfo("mn");
 	}
 
@@ -1522,15 +1577,20 @@ public class MassGi {
 		capEnv.font_slot_fp = 0; // cos that's a side effect of BBO
 		GraInfo gi = new GraInfo(bb);
 
+		capEnv.page_numb_display = page_numb_display++;
+
 		if ((gi.qt == q_.lb && gi.bb.size() == 5) && (gi.bb.get(0).length() == 1) && (gi.bb.get(0).charAt(0) == '*') && (gi.bb.get(1).length() == 1)
 				&& (gi.bb.get(1).contentEquals("m"))) {
-			String s = gi.bb.get(3).replace("&", "");
+			String s = gi.bb.get(3);
+			s = s.replace("&&", "&"); // cos that is what other lin file players do
+			s = s.replace("@", ""); // better than nothing clean up of the four suits we can't do the symbols
 			gi.bb.set(3, s);
 		}
 
 		if (gi.bb.get(1).contentEquals("z")) { // z => Dirtribution training and exam question
 			App.deal.dfcDeal = true;
 			App.deal.changed = true;
+			// capEnv.page_numb_display = -1; // we dont want this for Z questions (does not do the job)
 
 			String stage = gi.bb.get(2);
 
@@ -1617,10 +1677,13 @@ public class MassGi {
 		// =============================================================================
 		if (capEnv.mn_pg_countDown > 0) {
 			capEnv.mn_pg_countDown--;
-			if (capEnv.mn_pg_countDown == 0 && capEnv.mn_hideable_by_pg) {
-				capEnv.mn_showing = false;
+			if (capEnv.mn_pg_countDown == 0) {
+				capEnv.mn_pg_countDown = -1;
+				capEnv.mn_show_tu = false;
 			}
 		}
+
+		capEnv.page_numb_display = page_numb_display++;
 
 		GraInfo gi = new GraInfo(bb);
 		// prev_clone = null;
@@ -1650,6 +1713,10 @@ public class MassGi {
 		// =============================================================================
 		App.deal.changed = true;
 		App.deal.undoLastPlays_ignoreTooMany(Aaa.parseIntWithFallback(bb.get(0), 1));
+		App.deal.endedWithClaim = false;
+		App.deal.tricksClaimed = 0;
+		App.deal.tc_suppress_pc_display = true;
+		pc_autoClear__buildTime__tc_suppress_pc_display = true;
 		new GraInfo(bb);
 	}
 
@@ -1698,7 +1765,7 @@ public class MassGi {
 		String s = bb.get(0);
 		if (s.length() > 0)
 			App.deal.setYouSeatHint(s);
-		capEnv.pdl_allSeatsVisible = s.isEmpty() || (s.length() > 0) && (s.charAt(0)=='y' || s.charAt(0)=='Y');
+		capEnv.pdl_allSeatsVisible = s.isEmpty() || (s.length() > 0) && (s.charAt(0) == 'y' || s.charAt(0) == 'Y');
 		// GraInfo gi = new GraInfo(bb);
 		// System.out.println("gi.index :" + gi.index + " s: " + s + "-");
 	}
@@ -1742,32 +1809,47 @@ public class MassGi {
 		new GraInfo(bb);
 	}
 
+	private final static String[] brdSignfAy = { "board", "brd", "example", "hand", "deal" };
+
 	/**
 	 */
 	public void pdl__ah(BarBlock bb) { // add to header
 		// =============================================================================
 		App.deal.changed = true;
 
+		boolean stillNeedToAdd = true;
+
+//		if (App.deal.ahHeader.trim().isEmpty()) {
+//			App.deal.signfBoardId = "";
+//		}
+
+//		if (App.deal.signfBoardId.isEmpty()) {
+
 		String h = bb.get(0).toLowerCase();
-		int p = h.indexOf("board");
-		int q = h.indexOf("brd");
-		String s = "";
-		if ((p == -1 && q == -1) /* || App.deal.displayBoardId.isEmpty() */) {
+
+		int from = -1;
+		int to = -1;
+		for (String signf : brdSignfAy) {
+			from = h.indexOf(signf);
+			if (from > -1) {
+				to = from + signf.length();
+				h = bb.get(0) + "  "; // this time we have kept the case
+				App.deal.signfBoardId = h.substring(from, to);
+
+				h = h.substring(to).trim() + " ";
+
+				App.deal.displayBoardId = h.substring(0, h.indexOf(' '));
+
+				stillNeedToAdd = false;
+				break;
+			}
+		}
+//		}
+
+		if (stillNeedToAdd) {
 			App.deal.ahHeader += bb.get(0) + " ";
 		}
-		else {
 
-			h = bb.get(0) + "  "; // restore
-			if (p > -1)
-				s = h.substring(p + 6);
-			else
-				s = h.substring(p + 4);
-			s = s.trim() + " ";
-			h = s.substring(0, s.indexOf(' '));
-			// int n = Aaa.extractPositiveInt(h);
-
-			App.deal.displayBoardId = h;
-		}
 		new GraInfo(bb);
 	}
 
@@ -1878,7 +1960,7 @@ public class MassGi {
 
 	/**
 	 */
-	public void pdl__wt(BarBlock bb) { // set vulnerability
+	public void pdl__wt(BarBlock bb) { // whose trick ?
 		// =============================================================================
 		App.deal.changed = true;
 		App.deal.setLastTrickWinnerExternal(bb.get(0));
@@ -1887,7 +1969,21 @@ public class MassGi {
 
 	/**
 	 */
-	public void pdl__pc(BarBlock bb) { // Make Deal
+	public void pdl__tc(BarBlock bb) { // c = suppress updates other eg. (r) restore?
+		// =============================================================================
+		char v = (bb.get(0) + 'r').toLowerCase().charAt(0); // so the default if empty is r
+		boolean old = buildTime__tc_suppress_pc_display;
+		buildTime__tc_suppress_pc_display = (v == 'c'); // c = conceal ? r = reveal ?
+
+		if ((old != /* new */buildTime__tc_suppress_pc_display == false)) {
+			App.deal.changed = true;
+		}
+
+	}
+
+	/**
+	 */
+	public void pdl__pc(BarBlock bb) { // Play card
 		// =============================================================================
 		App.deal.changed = true;
 		String cds = bb.get(0);
@@ -1897,6 +1993,17 @@ public class MassGi {
 		// PC|qd3| causes NetBridgeVu to play the lowest diamond
 		// when neither the q or 3 are present in the hand
 		// we need to mimic this PC|d| plays the lowest diamond
+
+		App.deal.tc_suppress_pc_display = buildTime__tc_suppress_pc_display;
+		if (buildTime__tc_suppress_pc_display) { // so we need to stop the view time display
+			bb.type = "xx";
+			bb.qt = q_.xx;
+		}
+
+		if (pc_autoClear__buildTime__tc_suppress_pc_display) {
+			pc_autoClear__buildTime__tc_suppress_pc_display = false;
+			buildTime__tc_suppress_pc_display = false;
+		}
 
 		if (App.deal.prevTrickWinner.size() == 0) {
 			/**
@@ -1959,7 +2066,7 @@ public class MassGi {
 					continue;
 				}
 				rank = card2.rank;
-				System.out.println(bb.lineNumber + " pdl__pc - 'Below all' selected: " + suit + " " + rank);
+				// System.out.println(bb.lineNumber + " pdl__pc - 'Below all' selected: " + suit + " " + rank);
 			}
 
 			if (App.deal.checkCardExternal(suit, rank) == false) {
@@ -1968,6 +2075,7 @@ public class MassGi {
 			}
 			String oCard = suit.toLinStr() + rank.toStr();
 			App.deal.playLinCard(oCard);
+
 			new GraInfo(activeBb); // clones the deal
 
 			suit = Suit.Invalid; // so we will get the next
@@ -2036,7 +2144,7 @@ public class MassGi {
 			
 			if (t == q_.fp)  { setFont_fp(s);               	continue; }
 			if (t == q_.cp)  { setColor_cp(s);              	continue; }
-			if (t == q_.cq)  { setColor_cq(s);              	continue; }
+			if (t == q_.cq)  { /* setColor_cq(s); */           	continue; }
 			if (t == q_.cs)  { setColor_cs(s);              	continue; }
 			
 			if (t == q_.hf)  { setQuestPosition_hf(s);       	continue; }
@@ -2066,12 +2174,14 @@ public class MassGi {
 			if (t == q_.ub)  { pdl__ub(bb);                 	continue; }
 			if (t == q_.mc)  { pdl__mc(bb);                 	continue; }
 			if (t == q_.pc)  { pdl__pc(bb);                 	continue; }
+			if (t == q_.tc)  { pdl__tc(bb);                 	continue; } // show hide pc and bid? updates
 			if (t == q_.sv)  { pdl__sv(bb);                 	continue; }
 			if (t == q_.rh)  { pdl__rh(bb);                 	continue; }
 			if (t == q_.ah)  { pdl__ah(bb);                 	continue; }
 			if (t == q_.wt)  { pdl__wt(bb);                 	continue; }
 			if (t == q_.ih)  { pdl__ih(bb);                 	continue; }
 			if (t == q_.ia)  { pdl__ia(bb);                 	continue; }
+
 			if (t == q_.sc)  { /* ignored */                	continue; }
 			if (t == q_.pf)  { /* ignored */                	continue; }
 			if (t == q_.va)  { /* ignored */                	continue; }
@@ -2092,7 +2202,6 @@ public class MassGi {
 			if (t == q_.rs)  { /* ignored */                	continue; }
 			if (t == q_.mp)  { /* ignored */                	continue; }
 			if (t == q_.lf)  { /* ignored */                	continue; }
-			if (t == q_.tc)  { /* ignored */                	continue; }
  			
 			
 			System.out.println(bb.lineNumber + " Make_gi oneTimeParse - unknown bb type -" + bb.type + "- " + s);

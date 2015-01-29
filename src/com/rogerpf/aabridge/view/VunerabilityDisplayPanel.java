@@ -114,7 +114,7 @@ class VulnerabilityDisplayPanel extends JPanel implements MouseListener {
 
 		}
 		else {
-			String text = "Board";
+			String text = (App.deal.signfBoardId.trim().isEmpty() ? "Board" : App.deal.signfBoardId);
 			String bNumbText = (App.deal.displayBoardId.length() > 0) ? App.deal.displayBoardId : App.deal.realBoardNo + "";
 			if (App.mg.lin.linType == Lin.VuGraph) {
 				if (App.mg.ddAy.twoColumn) {
