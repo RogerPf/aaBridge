@@ -11,6 +11,8 @@
 package com.rogerpf.aabridge.controller;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import com.rogerpf.aabridge.controller.Book.LinChapter;
 
@@ -24,9 +26,36 @@ public class BookshelfArray extends ArrayList<Bookshelf> {
 	 */
 	public BookshelfArray() {
 		// ==============================================================================================
-		for (int i = 0; i <= 9; i++) {
-			add(new Bookshelf(i)); // note 0 is never used BUT uses up the zero index
+
+		add(new Bookshelf("")); // always added even if empty
+
+		for (char c = '1'; c <= '9'; c++) {
+			Bookshelf shelf = new Bookshelf("" + c);
+			if (!shelf.isEmpty()) {
+				add(shelf);
+			}
 		}
+
+		for (char c = 'A'; c <= 'Z'; c++) {
+			Bookshelf shelf = new Bookshelf("" + c);
+			if (!shelf.isEmpty()) {
+				add(shelf);
+			}
+		}
+
+		// sort by read insort order
+		Collections.sort(this, new Comparator<Bookshelf>() {
+			public int compare(Bookshelf bs1, Bookshelf bs2) {
+				if (bs1.sort_order == bs2.sort_order) {
+					return (bs1.shelfname.compareTo(bs2.shelfname));
+				}
+				return ((bs1.sort_order < bs2.sort_order) ? -1 : 1);
+			}
+		});
+
+		// add cosmetic spaces to the last shelf display name in the array
+		get(size() - 1).shelfDisplayName += "       ";
+
 	}
 
 	public LinChapter pickRandomLinFile() {
@@ -34,38 +63,20 @@ public class BookshelfArray extends ArrayList<Bookshelf> {
 
 		double total_weight = 0;
 		for (Bookshelf shelf : this) {
-			total_weight += shelf.getLinWeighting();
+			total_weight += Math.sqrt(shelf.randAdjustedSize());
 		}
 
 		double chosenShelf = total_weight * Math.random();
 
 		double weight = 0;
 		for (Bookshelf shelf : this) {
-			weight += shelf.getLinWeighting();
-			if (chosenShelf < weight) {
+			weight += Math.sqrt(shelf.randAdjustedSize());
+			if (chosenShelf <= weight) {
+//				System.out.print( shelf.shelfname + " of " + size());
 				return shelf.pickRandomLinFile();
 			}
 		}
 		return null;
-	}
-
-	public void fillWithBooks() {
-		// ==============================================================================================
-		for (Bookshelf shelf : App.bookshelfArray) {
-			if (shelf.ind == 0)
-				continue; // skip zero to stop users from trying to create and use it
-			shelf.fillWithBooks("");
-		}
-
-		// add cosmetic spaces to the last shelf in the list
-		for (int i = 9; i >= 0; i--) {
-			Bookshelf shelf = App.bookshelfArray.get(i);
-			if (shelf.hasValidBooksForMenu()) {
-				shelf.shelfDisplayName += "       ";
-				break;
-			}
-		}
-
 	}
 
 }

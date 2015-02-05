@@ -36,117 +36,542 @@ Chapter XI, Ducking
 ^E^*G11SUM,Summary^*N|cp||AT|
  
 
-^C@2^Y@3 |PG||cp||nt||
+^C@2^Y@3 |
+PG| ***** 0 ***** |
+
+
+cp||nt||
 %%%%%%%%%% 
 %%%%%%%%%%%%%%%%%%
 qx|DU1, Ducking|
 nt||HT|d|cs|1|cp|4|cs||cp||fp||AT|
-^b@2^z@3T|fp||at|he mode of playing a suit known as ^*Iducking^*N closely resembles the hold-up, but it differs in the object of the procedure. The hold-up is intended to prevent the Opponents from establishing their suit until it is too late for them to cash in the remaining cards. Ducking is intended to preserve entries for the Declarer so that he may cash in his good cards. |cs|1|fp|2|Cp|4|pg||AT|
+^b@2^z@3T|fp||at|he mode of playing a suit known as ^*Iducking^*N closely resembles the hold-up, but it differs in the object of the procedure. The hold-up is intended to prevent the Opponents from establishing their suit until it is too late for them to cash in the remaining cards. Ducking is intended to preserve entries for the Declarer so that he may cash in his good cards. |cs|1|fp|2|Cp|4|
+pg| ***** 1 ***** |
+
+
+AT|
 ^-
 { 
 Sometimes to duck is an essential play; 
           sometimes the player ducks purely for reasons of greater safety.          
 	  }
-^-|pg||fp||cp||at|
+^-|
+pg| ***** 2 ***** |
+
+
+fp||cp||at|
 
 The following heart situation illustrates ducking in its most elementary form:
 
 |HT|q|AT|^C@h A K 8 7 5
 
-|HT|t|AT|^c@H 4 3 |PG||ht|p|va|4|at|^f@2^y@3You have seven hearts, and you are in a situation where you must establish hearts in order to fulfill your contract. Suppose that the Dummy (North) contains no entries outside this suit. It looks as though 2 heart tricks are all you can expect, but, on analyzing the situation, you discover that the Opponents have only six hearts between them, which may break 3-3. If the adverse hearts break thus evenly, you can drop four of them on the lead of your Ace and King, concede the third round to the Opponents, and have 2 established hearts left in the Dummy. |PG||AT|^B@2^Y@3
+|HT|t|AT|^c@H 4 3 |
+PG| ***** 3 ***** |
 
-However, if it is the third round that you concede to your Opponents, you cannot use those 2 good hearts left in Dummy, for you have no entries.|pg||nt||ht|e|at|^B@2^Y@3You have only one chance of making more than 2 heart tricks with this suit holding. You must lead a small heart and play low from Dummy, no matter what West plays. Or, if an Opponent leads hearts, you must play low from both hands on the first round, thereby "ducking" the trick by holding up your Ace and King. This is called ducking rather than holding up because here you, as the Declarer, are trying to establish your suit—not trying to keep the Opponents from establishing theirs. You thus concede the first round to the Opponent, so that, if the adverse cards are evenly divided, your winners will drop them on the second and subsequent rounds, leaving you with the lead in the hand which contains the established cards if the ducking play succeeds. |PG||AT|
 
-By leading the Ace and King immediately, you stand no chance of making more than 2 heart tricks. By giving up the first trick, even though one tempo or time unit is sacrificed, you have some chance of establishing the suit and of being able to cash in all the good cards in it.  |pg||at|The following hand shows the ducking principle carried to an extreme:|PG||ht|W|cp|8|AT|Movie Maker: |CP||AT|I have used a coding format which is different from the book to illustrate the diagrams and the deals. The bidding in most instances are merely to serve the main goal of showing the proper play of the cards. |PG||NT||
+ht|p|va|4|at|^f@2^y@3You have seven hearts, and you are in a situation where you must establish hearts in order to fulfill your contract. Suppose that the Dummy (North) contains no entries outside this suit. It looks as though 2 heart tricks are all you can expect, but, on analyzing the situation, you discover that the Opponents have only six hearts between them, which may break 3-3. If the adverse hearts break thus evenly, you can drop four of them on the lead of your Ace and King, concede the third round to the Opponents, and have 2 established hearts left in the Dummy. |
+PG| ***** 4 ***** |
+
+
+AT|^B@2^Y@3
+
+However, if it is the third round that you concede to your Opponents, you cannot use those 2 good hearts left in Dummy, for you have no entries.|
+pg| ***** 5 ***** |
+
+
+nt||ht|e|at|^B@2^Y@3You have only one chance of making more than 2 heart tricks with this suit holding. You must lead a small heart and play low from Dummy, no matter what West plays. Or, if an Opponent leads hearts, you must play low from both hands on the first round, thereby "ducking" the trick by holding up your Ace and King. This is called ducking rather than holding up because here you, as the Declarer, are trying to establish your suit—not trying to keep the Opponents from establishing theirs. You thus concede the first round to the Opponent, so that, if the adverse cards are evenly divided, your winners will drop them on the second and subsequent rounds, leaving you with the lead in the hand which contains the established cards if the ducking play succeeds. |
+PG| ***** 6 ***** |
+
+
+AT|
+
+By leading the Ace and King immediately, you stand no chance of making more than 2 heart tricks. By giving up the first trick, even though one tempo or time unit is sacrificed, you have some chance of establishing the suit and of being able to cash in all the good cards in it.  |
+pg| ***** 7 ***** |
+
+
+at|The following hand shows the ducking principle carried to an extreme:|
+PG| ***** 8 ***** |
+
+
+ht|W|cp|8|AT|Movie Maker: |CP||AT|I have used a coding format which is different from the book to illustrate the diagrams and the deals. The bidding in most instances are merely to serve the main goal of showing the proper play of the cards. |
+PG| ***** 9 ***** |
+
+
+NT||
 %%%%%%%%%%%
 st||pn|You,,,|sk|S|md|1SAK83HAT4DAK2C943,ST5HK975DT843C765,S97H832D765CAKt82,SQJ642HQJ6DQJ9CQJ|sv|0|rh||AH|Example 1|mb|3nppp|pc|h5|NT|^B@2
-Suppose that West opens the five of hearts against your three no-trump contract.|PG||AT| You play low from Dummy, and East plays the Jack. You naturally hold up in this suit, playing the four-spot from your hand, as you have no lower cards which you can hope to establish.|PC|h2hjh4|pg||AT| East returns the Queen of hearts, and again you play low. |PC|hqhth7h3|PG||NT|^B@2
-You are forced to win the third round of hearts with the Ace,|PC|h6hah9h8|PG||AT| but you have watched the cards played and noted with inward satisfaction that only one heart is left outstanding.|PG||NT|^B@2
-Taking stock at this point, you note that you have lost 2 tricks, and can afford to lose at the most 2 more (9 tricks are necessary to fulfill your contract). You have only 6 sure tricks left in your hands,|HC|CAKSAKDAK|at| now that the heart Ace has been cashed in. |PG||NT|^B@2
-Obviously, then, you must look for 2 tricks among your lower cards. The club suit is the only one long enough to be worth trying to establish.|PG||AT| You therefore, at the fourth trick, lead a low club|PC|c3c5|PG||AT| toward Dummy's hand, playing the Ace, on which East drops the Jack, making it look very much as though East had only a doubleton to start with (Queen-Jack), at the most. If this is true, the Queen will drop on the King, giving you 5 club tricks, 2 spade tricks, 2 diamond tricks, and 1 heart trick—a total of 10 tricks.|PC|cacj|pg||NT|^B@2 
-So far your reasoning is all right, except that you have not considered the possibility that East's Jack might have been a singleton. In this case, by leading the King you give up every chance of ever establishing enough clubs to make your contract, for the Dummy contains no outside entry and there is no chance of discovering any hidden entry in that slag heap of small spades, clubs, and diamonds.|PG||NT|^B@2
-You are now faced with an important choice: is it better to hope that East had a doubleton in clubs originally, and play for 10 tricks on that basis, or to consider that East had a singleton originally, and play West for the Queen? |PG||NT|^B@2 
-For, if East's Jack was a singleton, you can return to your own hand and lead the nine of clubs, passing it if West plays low. This way you can also make 10 tricks if West turns out to have the Queen, but make only 9 tricks if East has this card in his hand.|pg||NT|^B@2
-Again the guiding principle of Contract play comes to the fore. Always make sure of your contract whenever that is possible. It is much safer in this hand to assume that East's Jack may have been a singleton and plan to concede him his Queen if he turns out to have held it, for in this way you are absolutely sure of making 2 spade tricks, 1 heart trick, 2 diamond tricks, and 4 club tricks just three no-trump. Furthermore, you are not worried about any other suit as you hold control of all of them.|PG||NT|^B@2
-You therefore, at the fifth trick, return to your own hand (in spades or diamonds)|PC|d5d9dkd3|PG||AT| and lead the nine of clubs, playing low from Dummy when West plays low.|PC|c9c6c2|PG||AT| East wins with his Queen, it so happens—but do not kick yourself for not taking a chance! Your contract is certain, for no matter what East leads you can cash in your remaining tricks.|PC|cq|PG||sk||NT|^B@2
-Had you gambled and led out both Ace and King immediately, and had East's Jack actually been a singleton, you would have been hoping to make 30 extra points by your gambling play but, in failing, you would have sacrificed 100 points for the game plus the value of that game toward winning the rubber. The ducking play is the only correct one, considering the odds.|PG||NT|^B@2
+Suppose that West opens the five of hearts against your three no-trump contract.|
+PG| ***** 10 ***** |
 
-In the following deal we have an extreme application of the ducking principle. This hand actually occurred in a game among experts:|PG||NT||LC|SAKCAKDAK|
+
+AT| You play low from Dummy, and East plays the Jack. You naturally hold up in this suit, playing the four-spot from your hand, as you have no lower cards which you can hope to establish.|PC|h2hjh4|
+pg| ***** 11 ***** |
+
+
+AT| East returns the Queen of hearts, and again you play low. |PC|hqhth7h3|
+PG| ***** 12 ***** |
+
+
+NT|^B@2
+You are forced to win the third round of hearts with the Ace,|PC|h6hah9h8|
+PG| ***** 13 ***** |
+
+
+AT| but you have watched the cards played and noted with inward satisfaction that only one heart is left outstanding.|
+PG| ***** 14 ***** |
+
+
+NT|^B@2
+Taking stock at this point, you note that you have lost 2 tricks, and can afford to lose at the most 2 more (9 tricks are necessary to fulfill your contract). You have only 6 sure tricks left in your hands,|HC|CAKSAKDAK|at| now that the heart Ace has been cashed in. |
+PG| ***** 15 ***** |
+
+
+NT|^B@2
+Obviously, then, you must look for 2 tricks among your lower cards. The club suit is the only one long enough to be worth trying to establish.|
+PG| ***** 16 ***** |
+
+
+AT| You therefore, at the fourth trick, lead a low club|PC|c3c5|
+PG| ***** 17 ***** |
+
+
+AT| toward Dummy's hand, playing the Ace, on which East drops the Jack, making it look very much as though East had only a doubleton to start with (Queen-Jack), at the most. If this is true, the Queen will drop on the King, giving you 5 club tricks, 2 spade tricks, 2 diamond tricks, and 1 heart trick—a total of 10 tricks.|PC|cacj|
+pg| ***** 18 ***** |
+
+
+NT|^B@2 
+So far your reasoning is all right, except that you have not considered the possibility that East's Jack might have been a singleton. In this case, by leading the King you give up every chance of ever establishing enough clubs to make your contract, for the Dummy contains no outside entry and there is no chance of discovering any hidden entry in that slag heap of small spades, clubs, and diamonds.|
+PG| ***** 19 ***** |
+
+
+NT|^B@2
+You are now faced with an important choice: is it better to hope that East had a doubleton in clubs originally, and play for 10 tricks on that basis, or to consider that East had a singleton originally, and play West for the Queen? |
+PG| ***** 20 ***** |
+
+
+NT|^B@2 
+For, if East's Jack was a singleton, you can return to your own hand and lead the nine of clubs, passing it if West plays low. This way you can also make 10 tricks if West turns out to have the Queen, but make only 9 tricks if East has this card in his hand.|
+pg| ***** 21 ***** |
+
+
+NT|^B@2
+Again the guiding principle of Contract play comes to the fore. Always make sure of your contract whenever that is possible. It is much safer in this hand to assume that East's Jack may have been a singleton and plan to concede him his Queen if he turns out to have held it, for in this way you are absolutely sure of making 2 spade tricks, 1 heart trick, 2 diamond tricks, and 4 club tricks just three no-trump. Furthermore, you are not worried about any other suit as you hold control of all of them.|
+PG| ***** 22 ***** |
+
+
+NT|^B@2
+You therefore, at the fifth trick, return to your own hand (in spades or diamonds)|PC|d5d9dkd3|
+PG| ***** 23 ***** |
+
+
+AT| and lead the nine of clubs, playing low from Dummy when West plays low.|PC|c9c6c2|
+PG| ***** 24 ***** |
+
+
+AT| East wins with his Queen, it so happens—but do not kick yourself for not taking a chance! Your contract is certain, for no matter what East leads you can cash in your remaining tricks.|PC|cq|
+PG| ***** 25 ***** |
+
+
+sk||NT|^B@2
+Had you gambled and led out both Ace and King immediately, and had East's Jack actually been a singleton, you would have been hoping to make 30 extra points by your gambling play but, in failing, you would have sacrificed 100 points for the game plus the value of that game toward winning the rubber. The ducking play is the only correct one, considering the odds.|
+PG| ***** 26 ***** |
+
+
+NT|^B@2
+
+In the following deal we have an extreme application of the ducking principle. This hand actually occurred in a game among experts:|
+PG| ***** 27 ***** |
+
+
+NT||LC|SAKCAKDAK|
 %%%%%%%%%%%%%%%%
 st||pn|You,,,|sk|S|md|1SAK75HA852DAK2C43,ST2HJ9DQJT85CJT65,S43H74D96CAKQ9872,SQJ986 HKQT63D743C-|sv|0|rh||AH|Example 2|mb|3nppp|pc|dq|NT|^B@2 
-The opening lead by West was the diamond Queen against South's contract of three no-trump.|PG||AT| South won with his Ace,|PC|d6d3da|PG||AT| and, holding nine clubs in the partnership hands, he now led a low club and won it with Dummy's Ace.|PC|c3c5ca|PG||NT|^B@2
-West had played the five-spot, and East showed a void in clubs by discarding another suit.|PC|s6|PG||sk||AT| Already South is irrevocably committed to being defeated by 1 trick, no matter what he does from this point on! |PG||NT|^B@2
-Yet he could have made this contract by remembering what surety the simplest of ducking plays would offer. Holding the controlling cards in the other three suits, all he had to do was|pg||UP|4|PG||at| to lead a small club from his hand|PC|c3c5|pc||pg||at| and play low from the Dummy, as, say, the seven-spot on West's five.|PC|c7s6|pg||NT|^B@2
-By thus ducking the first round of clubs he would be taking out full insurance against the possibility that East would be void, and, even if East were void, South's contract would be as sure as sunrise. In spite of the fact that the 4-0 break in clubs would occur only about once in a hundred times with this distribution, the ducking play is the only sure way to make this contract.|PG||NT|^B@2
-In Bridge, only the sure way is always the only correct way. As a matter of fact, in this hand, Dummy's seven of clubs will hold the first round, winning West's five-spot—but South would make the play, not to win the trick, but to safeguard 4 club tricks if East is void, for West's thrice-guarded Jack will then stop the club suit, and South has no outside entries in the Dummy. |PG||NT||
+The opening lead by West was the diamond Queen against South's contract of three no-trump.|
+PG| ***** 28 ***** |
+
+
+AT| South won with his Ace,|PC|d6d3da|
+PG| ***** 29 ***** |
+
+
+AT| and, holding nine clubs in the partnership hands, he now led a low club and won it with Dummy's Ace.|PC|c3c5ca|
+PG| ***** 30 ***** |
+
+
+NT|^B@2
+West had played the five-spot, and East showed a void in clubs by discarding another suit.|PC|s6|
+PG| ***** 31 ***** |
+
+
+sk||AT| Already South is irrevocably committed to being defeated by 1 trick, no matter what he does from this point on! |
+PG| ***** 32 ***** |
+
+
+NT|^B@2
+Yet he could have made this contract by remembering what surety the simplest of ducking plays would offer. Holding the controlling cards in the other three suits, all he had to do was|
+pg| ***** 33 ***** |
+
+
+UP|4|
+PG| ***** 34 ***** |
+
+
+at| to lead a small club from his hand|PC|c3c5|pc||
+pg| ***** 35 ***** |
+
+
+at| and play low from the Dummy, as, say, the seven-spot on West's five.|PC|c7s6|
+pg| ***** 36 ***** |
+
+
+NT|^B@2
+By thus ducking the first round of clubs he would be taking out full insurance against the possibility that East would be void, and, even if East were void, South's contract would be as sure as sunrise. In spite of the fact that the 4-0 break in clubs would occur only about once in a hundred times with this distribution, the ducking play is the only sure way to make this contract.|
+PG| ***** 37 ***** |
+
+
+NT|^B@2
+In Bridge, only the sure way is always the only correct way. As a matter of fact, in this hand, Dummy's seven of clubs will hold the first round, winning West's five-spot—but South would make the play, not to win the trick, but to safeguard 4 club tricks if East is void, for West's thrice-guarded Jack will then stop the club suit, and South has no outside entries in the Dummy. |
+PG| ***** 38 ***** |
+
+
+NT||
 %%%%%%%%%%%%%%%%%%%%%% DU2
 qx|DU2,DUCKING TWICE TO ESTABLISH A SUIT|bt||
 HT|E|CS|1|CP|4|AT|^-{    DUCKING TWICE TO ESTABLISH A SUIT    }
-^-|CS||CP||HT|f|AT|^B@2^Y@3Frequently it is necessary to duck twice in order to establish a suit. Such a play may seem rather hopeless to the beginner unless he gives proper weight to the probabilities of suit distribution. It is also well to bear  in mind that in Bridge there is no such thing as a hopeless hand. The old admonition to keep a stiff upper lip even when things look dark is Never truer than in Bridge. No matter how discouraging the prospects of a hand look at first glance, there is always some chance of developing sufficient tricks. |cp|8|at|In no-trump play, particularly, you must remember that the worst distribution should not be expected (except when you are in a position to make a play that will insure you against the worst distribution, as in the previous hand.)|cp||pg||at|
+^-|CS||CP||HT|f|AT|^B@2^Y@3Frequently it is necessary to duck twice in order to establish a suit. Such a play may seem rather hopeless to the beginner unless he gives proper weight to the probabilities of suit distribution. It is also well to bear  in mind that in Bridge there is no such thing as a hopeless hand. The old admonition to keep a stiff upper lip even when things look dark is Never truer than in Bridge. No matter how discouraging the prospects of a hand look at first glance, there is always some chance of developing sufficient tricks. |cp|8|at|In no-trump play, particularly, you must remember that the worst distribution should not be expected (except when you are in a position to make a play that will insure you against the worst distribution, as in the previous hand.)|cp||
+pg| ***** 39 ***** |
 
-Consider, for example, the following deal:|PG||NT||
+
+at|
+
+Consider, for example, the following deal:|
+PG| ***** 40 ***** |
+
+
+NT||
 %%%%%%
 st||pn|You,,,|sk|s|md|1SAKQHT83DAK72CKQ9,SJ43HJ72DQJT85CJ6,S975HA9654D63C852,ST862HKQD94CAT743 |sv|0|rh||AH|Example 3|mb|3nppp|pc|dq|NT|^B@2
-Having to make a contract of three no-trump, you find yourself confronted with the opening lead of the diamond Queen.|PG||AT| The situation in this deal does look rather gloomy. You hold a few top tricks (exactly 7), but no suit looks easily establishable.|PG||NT|^B@2
-However, this is not the time to act like a coward by cashing in all the available tricks without more ado. |cp|8|at|You may as well inject a little hope into a hopeless situation!|cp||at| There is a right way to play, even here, which may yet pull you out of the morass.|pg||NT|^B@2
-You win the first trick with your diamond King, realizing that to hold up can be of little avail, particularly in view of the fact that the club suit is also dangerous.|PC|d3d4dk|PG||AT| Your only long suit is hearts, so you attack in this suit without delay. But observe that you cannot take the Ace of hearts out of the Dummy at once, as to do so will eliminate your only entry into that hand. |PG||NT|^B@2
-There is no finessing possibility at all, so you must content yourself with leading the trey from your hand,|PC|h3|PG||AT| and, assuming that West plays the deuce, you play the four from Dummy, conceding the trick to East,|PC|h2h4|PG||at| who wins it with the Queen.|PC|HQ|PG||NT|^B@2
-East returns the nine of diamonds,|PC|d9|PG||AT| and you play low on this trick,|PC|d2|PG||AT| figuring that it will do no harm to make sure that your right-hand Opponent is stripped of diamonds before you lose control of the suit.|PG||AT| West overtakes the trick with the Ten,|PC|dtd6|PG||AT| and returns the Jack of diamonds.|PC|dj|PG||NT|^B@2
-You win this trick with your Ace, as there is no purpose in holding up further, since East discards a club.|pc|s5c3da|pg||NT|^B@2
-Now the time has come for your desperation play—even if it is a forlorn hope, it is hope. You lead the eight of hearts and,|pc|h8h7|PG||AT| when West plays the seven, you again duck the trick by playing low from the Dummy.|PC|h5|PG||AT| This is a double ducking play, and is the only way you can ever hope to make 9 tricks on this deal.|PG||NT|^B@2
-As it turns out, East is forced to win the trick with his King,|PC|hk|PG||sk||AT| and has to lead back either a spade or a club. Whichever East does, you are assured of your game, for you have, against the odds, developed 3 good heart tricks in the Dummy, in which the Ace still remains as an entry. You have already taken 2 diamond tricks and hold also 3 spade tricks and 1 club trick.|PG||NT||bt||
+Having to make a contract of three no-trump, you find yourself confronted with the opening lead of the diamond Queen.|
+PG| ***** 41 ***** |
+
+
+AT| The situation in this deal does look rather gloomy. You hold a few top tricks (exactly 7), but no suit looks easily establishable.|
+PG| ***** 42 ***** |
+
+
+NT|^B@2
+However, this is not the time to act like a coward by cashing in all the available tricks without more ado. |cp|8|at|You may as well inject a little hope into a hopeless situation!|cp||at| There is a right way to play, even here, which may yet pull you out of the morass.|
+pg| ***** 43 ***** |
+
+
+NT|^B@2
+You win the first trick with your diamond King, realizing that to hold up can be of little avail, particularly in view of the fact that the club suit is also dangerous.|PC|d3d4dk|
+PG| ***** 44 ***** |
+
+
+AT| Your only long suit is hearts, so you attack in this suit without delay. But observe that you cannot take the Ace of hearts out of the Dummy at once, as to do so will eliminate your only entry into that hand. |
+PG| ***** 45 ***** |
+
+
+NT|^B@2
+There is no finessing possibility at all, so you must content yourself with leading the trey from your hand,|PC|h3|
+PG| ***** 46 ***** |
+
+
+AT| and, assuming that West plays the deuce, you play the four from Dummy, conceding the trick to East,|PC|h2h4|
+PG| ***** 47 ***** |
+
+
+at| who wins it with the Queen.|PC|HQ|
+PG| ***** 48 ***** |
+
+
+NT|^B@2
+East returns the nine of diamonds,|PC|d9|
+PG| ***** 49 ***** |
+
+
+AT| and you play low on this trick,|PC|d2|
+PG| ***** 50 ***** |
+
+
+AT| figuring that it will do no harm to make sure that your right-hand Opponent is stripped of diamonds before you lose control of the suit.|
+PG| ***** 51 ***** |
+
+
+AT| West overtakes the trick with the Ten,|PC|dtd6|
+PG| ***** 52 ***** |
+
+
+AT| and returns the Jack of diamonds.|PC|dj|
+PG| ***** 53 ***** |
+
+
+NT|^B@2
+You win this trick with your Ace, as there is no purpose in holding up further, since East discards a club.|pc|s5c3da|
+pg| ***** 54 ***** |
+
+
+NT|^B@2
+Now the time has come for your desperation play—even if it is a forlorn hope, it is hope. You lead the eight of hearts and,|pc|h8h7|
+PG| ***** 55 ***** |
+
+
+AT| when West plays the seven, you again duck the trick by playing low from the Dummy.|PC|h5|
+PG| ***** 56 ***** |
+
+
+AT| This is a double ducking play, and is the only way you can ever hope to make 9 tricks on this deal.|
+PG| ***** 57 ***** |
+
+
+NT|^B@2
+As it turns out, East is forced to win the trick with his King,|PC|hk|
+PG| ***** 58 ***** |
+
+
+sk||AT| and has to lead back either a spade or a club. Whichever East does, you are assured of your game, for you have, against the odds, developed 3 good heart tricks in the Dummy, in which the Ace still remains as an entry. You have already taken 2 diamond tricks and hold also 3 spade tricks and 1 club trick.|
+PG| ***** 59 ***** |
+
+
+NT||bt||
 %%%%%%%%%%%
 HT|E|CS|1|CP|4|AT|^-{    DUCKING TWICE TO ESTABLISH A SUIT - Continued    }
-^-|CS||CP||HT|f|AT|^B@2^Y@3True, if West held the Ace of clubs, you would be set 2 tricks in spite of your "|cp|8|at|double duck|cp||at|" in hearts, for that card would serve as an entry for West to cash in 2 good diamond tricks. However, you remember that you held up on the second round of diamonds in the hope that East would be stripped of the suit and not be able to lead a diamond, assuming that he has the club Ace and will ultimately gain the lead. Everything worked out as you hoped.|PG||AT|
+^-|CS||CP||HT|f|AT|^B@2^Y@3True, if West held the Ace of clubs, you would be set 2 tricks in spite of your "|cp|8|at|double duck|cp||at|" in hearts, for that card would serve as an entry for West to cash in 2 good diamond tricks. However, you remember that you held up on the second round of diamonds in the hope that East would be stripped of the suit and not be able to lead a diamond, assuming that he has the club Ace and will ultimately gain the lead. Everything worked out as you hoped.|
+PG| ***** 60 ***** |
 
-Right here is a good place to state that you do not know, of course, that the cards are distributed as you hope they are. Not even an expert knows that, on a deal such as that just discussed. You merely analyze the situation and discover that, |cp|8|at|IF|cp||at| the cards are distributed so-and-so against you, you have a chance of making your contract by playing on that assumption—but you cannot make your contract if you play any other way (no matter how the cards are really distributed). Let us look at the preceding deal at the point after East wins the second round of hearts wit his king.|PG||NT||
+
+AT|
+
+Right here is a good place to state that you do not know, of course, that the cards are distributed as you hope they are. Not even an expert knows that, on a deal such as that just discussed. You merely analyze the situation and discover that, |cp|8|at|IF|cp||at| the cards are distributed so-and-so against you, you have a chance of making your contract by playing on that assumption—but you cannot make your contract if you play any other way (no matter how the cards are really distributed). Let us look at the preceding deal at the point after East wins the second round of hearts wit his king.|
+PG| ***** 61 ***** |
+
+
+NT||
 st||PN||MD|1SAKQHTD7CKQ9,SJ43HJDQ8CJ6,S975HA96DC85,ST862hhdCAt74|rh||AH|Board 3a|ha|Y|NT|^B@2
-At the point where East wins the second round of hearts with his King after your second duck, the situation is as shown above.|PG||NT|^B@2
+At the point where East wins the second round of hearts with his King after your second duck, the situation is as shown above.|
+PG| ***** 62 ***** |
+
+
+NT|^B@2
 Let us assume that East returns a spade, which you win with the Ace.|wt|E|
-pc|s2|pc|sa|pc|s3|pc|s5|pg||at| You now lead your Ten of hearts and win with Dummy's Ace, which places you in that hand to lead the nine and six, both of which are now good.|
-pc|hT|pc|hJ|pc|hA|pc|c4|pg||
-pc|h9|pc|c7|pc|d7|pc|d8|pg||
-pc|h6|pc|ct|pc|c9|pc|s4|pg||at| East discards clubs on these three rounds of hearts. You discard the nine of clubs and seven of diamonds on the last two rounds, from your own hand. |PG||NT|^B@2
-Now you must not lead out your King and Queen of spades, for, if you do this, you will immediately establish the long spade in East's hand, and he will win the last 2 tricks with the Ten of spades and the Ace of clubs.|PG||AT| You must first, therefore, play clubs to drive out the Ace.|pc|c5cacqc6|pg||NT|^B@2
-No matter what East returns, you can then win the last 3 tricks.|mc|9|PG||NT||ha||
+pc|s2|pc|sa|pc|s3|pc|s5|
+pg| ***** 63 ***** |
+
+
+at| You now lead your Ten of hearts and win with Dummy's Ace, which places you in that hand to lead the nine and six, both of which are now good.|
+pc|hT|pc|hJ|pc|hA|pc|c4|
+pg| ***** 64 ***** |
+
+
+pc|h9|pc|c7|pc|d7|pc|d8|
+pg| ***** 65 ***** |
+
+
+pc|h6|pc|ct|pc|c9|pc|s4|
+pg| ***** 66 ***** |
+
+
+at| East discards clubs on these three rounds of hearts. You discard the nine of clubs and seven of diamonds on the last two rounds, from your own hand. |
+PG| ***** 67 ***** |
+
+
+NT|^B@2
+Now you must not lead out your King and Queen of spades, for, if you do this, you will immediately establish the long spade in East's hand, and he will win the last 2 tricks with the Ten of spades and the Ace of clubs.|
+PG| ***** 68 ***** |
+
+
+AT| You must first, therefore, play clubs to drive out the Ace.|pc|c5cacqc6|
+pg| ***** 69 ***** |
+
+
+NT|^B@2
+No matter what East returns, you can then win the last 3 tricks.|mc|9|
+PG| ***** 70 ***** |
+
+
+NT||ha||
 %%%%%%%%%%%%%%
 bt|y|HT|E|CS|1|CP|4|AT|^-{    DUCKING TWICE TO ESTABLISH A SUIT - Continued    }
-^-|CS||CP||HT|f|AT|^B@2^Y@3This example [the preceding] presents three very interesting points. The most important point is the development of the heart suit. Five hearts were outstanding, and the Dummy had no outside entry. If you played the Ace on the first round of hearts, the hand would then have been hopeless indeed, for you could not have secured any long-suit tricks in hearts at all. By ducking twice, keeping the Ace until the third round, you still had a small card in your own hand to lead to the Dummy at the proper time. Thus, instead of but 1 heart trick, you made 3!|PG||AT|
+^-|CS||CP||HT|f|AT|^B@2^Y@3This example [the preceding] presents three very interesting points. The most important point is the development of the heart suit. Five hearts were outstanding, and the Dummy had no outside entry. If you played the Ace on the first round of hearts, the hand would then have been hopeless indeed, for you could not have secured any long-suit tricks in hearts at all. By ducking twice, keeping the Ace until the third round, you still had a small card in your own hand to lead to the Dummy at the proper time. Thus, instead of but 1 heart trick, you made 3!|
+PG| ***** 71 ***** |
 
-The second interesting point is the hold-up in diamonds on the second round of that suit. If East had held three diamonds and West only four, you would have lost your contract by taking the second round of diamonds with the Ace. This would have given the Opponents a total of 2 diamond tricks, 2 heart tricks, and 1 club trick, defeating you by 1 trick. The fact that the hold-up was unnecessary on this particular hand does not affect the correctness of the play. You have the best chance of making the hand by holding up on the second round of diamonds. |cp|8|at|In the long run, it is the odds that count, not the particular hand.|cp||PG||AT|
 
-The third interesting point concerns the location of the club Ace. If West had held this card, you would have lost 2 more tricks than you did. But there was no reason to proceed on the assumption that West held it, since to do so would do you no good whatever. You hoped that East held it, which was your only chance of making the contract. |PG||NT||bt||
+AT|
+
+The second interesting point is the hold-up in diamonds on the second round of that suit. If East had held three diamonds and West only four, you would have lost your contract by taking the second round of diamonds with the Ace. This would have given the Opponents a total of 2 diamond tricks, 2 heart tricks, and 1 club trick, defeating you by 1 trick. The fact that the hold-up was unnecessary on this particular hand does not affect the correctness of the play. You have the best chance of making the hand by holding up on the second round of diamonds. |cp|8|at|In the long run, it is the odds that count, not the particular hand.|cp||
+PG| ***** 72 ***** |
+
+
+AT|
+
+The third interesting point concerns the location of the club Ace. If West had held this card, you would have lost 2 more tricks than you did. But there was no reason to proceed on the assumption that West held it, since to do so would do you no good whatever. You hoped that East held it, which was your only chance of making the contract. |
+PG| ***** 73 ***** |
+
+
+NT||bt||
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 qx|DU3,HOW TO DECIDE WHETHER TO DUCK|
 HT|E|CS|1|CP|4|AT|^-{    HOW TO DECIDE WHETHER TO DUCK    }
 ^-|CS||CP||HT|f|AT|^B@2^Y@3Consider the following diagrams of heart distribution:
 |ht|H|at|^D@H A K 8 7 6 5 ^L@H A K 8 7 6 5 |HT|I|FP|2|AT|^B1 ^J2|
-HT|J|fp||AT|^D@h 4 3      ^L@H 4 3 2 |PG||AT|
+HT|J|fp||AT|^D@h 4 3      ^L@H 4 3 2 |
+PG| ***** 74 ***** |
+
+
+AT|
  
-The first shows a partnership holding of eight cards headed by Ace-King; the second, a partnership holding of nine cards headed by Ace-King. Naturally, the second combination is considerably better than the first. The first is a simple illustration of the necessity to duck a round of hearts in order to preserve an entry: you merely concede the first round of the suit to your Opponents, hoping that the distribution of the five adverse hearts is 3-2 (if they are otherwise distributed, there is nothing you can do about it—to duck is still your best play).|PG||AT|
+The first shows a partnership holding of eight cards headed by Ace-King; the second, a partnership holding of nine cards headed by Ace-King. Naturally, the second combination is considerably better than the first. The first is a simple illustration of the necessity to duck a round of hearts in order to preserve an entry: you merely concede the first round of the suit to your Opponents, hoping that the distribution of the five adverse hearts is 3-2 (if they are otherwise distributed, there is nothing you can do about it—to duck is still your best play).|
+PG| ***** 75 ***** |
 
-The second situation is somewhat different. With only four hearts outstanding against you, you can lead the Ace and King and drop all four if they are divided 2-2. But it is altogether possible—and even likely—that the four adverse hearts are distributed 3-1. What, then, should you do? The answer is that you cannot tell without seeing the rest of the outstanding cards. If the Dummy contains a re-entry outside the heart suit, the proper play is to lead the Ace and King pronto, and, if these two leads fail to capture all the adverse hearts, you should lead another heart right away. |PG||AT|
 
-But if the Dummy does not contain a re-entry, you cannot afford to take the chance of finding the adverse hearts divided 2-2, particularly if you hold a certain degree of control over the other three suits. In other words, if you can see your way clear to making your contract even though you concede 1 heart trick to the Opponents, |cp|8|at|you should lose that trick faster than you can say Jack Robinson|cp||at|—so that you can be sure of 5 heart tricks eventually, and not hope for 6 heart tricks and perhaps take only 2! You do this, of course, by leading a low heart from your hand, and ducking in the Dummy no matter what West plays.|PG||NT||
+AT|
+
+The second situation is somewhat different. With only four hearts outstanding against you, you can lead the Ace and King and drop all four if they are divided 2-2. But it is altogether possible—and even likely—that the four adverse hearts are distributed 3-1. What, then, should you do? The answer is that you cannot tell without seeing the rest of the outstanding cards. If the Dummy contains a re-entry outside the heart suit, the proper play is to lead the Ace and King pronto, and, if these two leads fail to capture all the adverse hearts, you should lead another heart right away. |
+PG| ***** 76 ***** |
+
+
+AT|
+
+But if the Dummy does not contain a re-entry, you cannot afford to take the chance of finding the adverse hearts divided 2-2, particularly if you hold a certain degree of control over the other three suits. In other words, if you can see your way clear to making your contract even though you concede 1 heart trick to the Opponents, |cp|8|at|you should lose that trick faster than you can say Jack Robinson|cp||at|—so that you can be sure of 5 heart tricks eventually, and not hope for 6 heart tricks and perhaps take only 2! You do this, of course, by leading a low heart from your hand, and ducking in the Dummy no matter what West plays.|
+PG| ***** 77 ***** |
+
+
+NT||
 HT|E|CS|1|CP|4|AT|^-{    HOW TO DECIDE WHETHER TO DUCK - Continued    }
-^-|CS||CP||HT|f|AT|^B@2^Y@3If, in the end, it turns out that your ducking play in the second instance has actually lost you a trick on this particular deal, the number of points you have sacrificed is not great enough to offset the safety value of the ducking play. Again, if the situation is so desperate that you cannot afford to give up 1 heart trick at once, thereby losing the lead, you cannot afford, naturally, to play safe. |FP|2|cp|8|at|The man who is dying of starvation cannot afford to pay for life insurance!|FP||cp||at| But whenever you are certain that the loss of a few tricks at once, to insure a measure of safety, will not in any event cost you your contract, you must "|FP|2|cp|8|at|play safe|cp||AT|."|PG||NT||bt||
+^-|CS||CP||HT|f|AT|^B@2^Y@3If, in the end, it turns out that your ducking play in the second instance has actually lost you a trick on this particular deal, the number of points you have sacrificed is not great enough to offset the safety value of the ducking play. Again, if the situation is so desperate that you cannot afford to give up 1 heart trick at once, thereby losing the lead, you cannot afford, naturally, to play safe. |FP|2|cp|8|at|The man who is dying of starvation cannot afford to pay for life insurance!|FP||cp||at| But whenever you are certain that the loss of a few tricks at once, to insure a measure of safety, will not in any event cost you your contract, you must "|FP|2|cp|8|at|play safe|cp||AT|."|
+PG| ***** 78 ***** |
+
+
+NT||bt||
 %%%%%%%%%%%%%%%%%%%
 qx|DU4,DUCKING BY REFUSING A FINESSE|
 HT|E|CS|1|CP|4|AT|^-{    DUCKING BY REFUSING A FINESSE    }
-^-|CS||CP||HT|f|AT|^B@2^Y@3One rather unusual type of ducking play involves the deliberate refusal of a finesse. Before studying this play, recollect what you learned about the promotional value of honors, and store away in your mind the fact that honors may be thus promoted defensively (by the Declarer's Opponents) as well as by the Declarer. Then look at next deal:|PG||NT||
+^-|CS||CP||HT|f|AT|^B@2^Y@3One rather unusual type of ducking play involves the deliberate refusal of a finesse. Before studying this play, recollect what you learned about the promotional value of honors, and store away in your mind the fact that honors may be thus promoted defensively (by the Declarer's Opponents) as well as by the Declarer. Then look at next deal:|
+PG| ***** 79 ***** |
+
+
+NT||
 %%%%%%%%%%%%%
 st||pn|You,,,|sk|s|md|1SQJ2HAK5DKQ3CA973,SKT5HT96 DJT542CKJ,SA8764 H732 D98CT64,S93HQJ84DA76CQ852|sv|0|rh||AH|Example 4|mb|3nppp|pc|d4|NT|^B@2
-Let us say that West's opening lead against your three no-trump contract is the four of diamonds.|PG||AT| East wins with his Ace and returns the seven-spot,|PC|d8dad3|PG||pc|d7|AT| which you win with the Queen.|PC|dqd2d9|PG||NT|^B@2
-Your spades offer what is apparently your only chance for development of long-suit tricks, and since you hold the Jack too, you are perfectly safe in laying down the Queen. West covers with the King.|PC|sqsk|PG||AT| Your first impulse is now to win with Dummy's Ace, thus capturing West's King by a finessing maneuver. However, just stop and think a moment.|PG||AT| The Opponents hold five spades, including the Ten and nine, besides the King which West has just played. That all these cards will fall together is very unlikely.|PG||NT|^B@2
-Just suppose you do win with Dummy's Ace,|PC|sas3|PG||AT| and take the second round of the suit with your Jack.|PC|s4s9sjs5|PG||sk||AT| West's play of the King on the Queen has promoted the Ten or the nine as a winning card for the Opponents, since it is impossible for five cards to fall on two rounds.|PG||NT|^B@2
-But notice what has happened to you. You have completely shut yourself out of Dummy's hand. You can avoid shutting yourself out of Dummy's hand by a |cp|8|at|ducking play|cp||at|. Since you may have to lose a spade trick,|FP|2|CP|8|AT|*|FP||CP||AT| why not lose it at once?|PG||up|6|pg||AT| By letting West's King hold the trick, you refuse the finesse and,|PC|s4s3|PG||AT| if the suit is divided 3-2, you are sure of 4 spade tricks eventually.|PG||NT|^B@2
-West wins the trick, then, and returns (for lack of anything better) another diamond.|PC|djc4d6|PG||AT| You win with the King|PC|dk|PG||AT| and play the spade Jack.|PC|sjs5s6s9|PG||AT| Both Opponents follow suit, which means that there is now but one spade remaining in their hands. You lead your last spade,|PC|s2stsac2|PG||AT| winning with Dummy's Ace, which places you in position to run off the last 2 tricks in that suit.|PG||NT|^B@2
-You thus have 4 spade tricks and 2 diamond tricks, needing only 3 more tricks to make your contract, which are assured by your Ace and King of hearts and Ace of clubs.|PG||up|24|sc|Y|NT||CP|8|AT| ^B@2^Y@3*|CP||AT| Footnote: The play of Dummy's Ace can win against a 3-2 distribution of the adverse spades only when West has K 5 3 and East 10 9—a remote possibility.^*I—Sam Fry, Jr.^*N|pg||nt||
+Let us say that West's opening lead against your three no-trump contract is the four of diamonds.|
+PG| ***** 80 ***** |
+
+
+AT| East wins with his Ace and returns the seven-spot,|PC|d8dad3|
+PG| ***** 81 ***** |
+
+
+pc|d7|AT| which you win with the Queen.|PC|dqd2d9|
+PG| ***** 82 ***** |
+
+
+NT|^B@2
+Your spades offer what is apparently your only chance for development of long-suit tricks, and since you hold the Jack too, you are perfectly safe in laying down the Queen. West covers with the King.|PC|sqsk|
+PG| ***** 83 ***** |
+
+
+AT| Your first impulse is now to win with Dummy's Ace, thus capturing West's King by a finessing maneuver. However, just stop and think a moment.|
+PG| ***** 84 ***** |
+
+
+AT| The Opponents hold five spades, including the Ten and nine, besides the King which West has just played. That all these cards will fall together is very unlikely.|
+PG| ***** 85 ***** |
+
+
+NT|^B@2
+Just suppose you do win with Dummy's Ace,|PC|sas3|
+PG| ***** 86 ***** |
+
+
+AT| and take the second round of the suit with your Jack.|PC|s4s9sjs5|
+PG| ***** 87 ***** |
+
+
+sk||AT| West's play of the King on the Queen has promoted the Ten or the nine as a winning card for the Opponents, since it is impossible for five cards to fall on two rounds.|
+PG| ***** 88 ***** |
+
+
+NT|^B@2
+But notice what has happened to you. You have completely shut yourself out of Dummy's hand. You can avoid shutting yourself out of Dummy's hand by a |cp|8|at|ducking play|cp||at|. Since you may have to lose a spade trick,|FP|2|CP|8|AT|*|FP||CP||AT| why not lose it at once?|
+PG| ***** 89 ***** |
+
+
+up|6|
+pg| ***** 90 ***** |
+
+
+AT| By letting West's King hold the trick, you refuse the finesse and,|PC|s4s3|
+PG| ***** 91 ***** |
+
+
+AT| if the suit is divided 3-2, you are sure of 4 spade tricks eventually.|
+PG| ***** 92 ***** |
+
+
+NT|^B@2
+West wins the trick, then, and returns (for lack of anything better) another diamond.|PC|djc4d6|
+PG| ***** 93 ***** |
+
+
+AT| You win with the King|PC|dk|
+PG| ***** 94 ***** |
+
+
+AT| and play the spade Jack.|PC|sjs5s6s9|
+PG| ***** 95 ***** |
+
+
+AT| Both Opponents follow suit, which means that there is now but one spade remaining in their hands. You lead your last spade,|PC|s2stsac2|
+PG| ***** 96 ***** |
+
+
+AT| winning with Dummy's Ace, which places you in position to run off the last 2 tricks in that suit.|
+PG| ***** 97 ***** |
+
+
+NT|^B@2
+You thus have 4 spade tricks and 2 diamond tricks, needing only 3 more tricks to make your contract, which are assured by your Ace and King of hearts and Ace of clubs.|
+PG| ***** 98 ***** |
+
+
+up|24|sc|Y|NT||CP|8|AT| ^B@2^Y@3*|CP||AT| Footnote: The play of Dummy's Ace can win against a 3-2 distribution of the adverse spades only when West has K 5 3 and East 10 9—a remote possibility.^*I—Sam Fry, Jr.^*N|
+pg| ***** 99 ***** |
+
+
+nt||
 %%%%%%%%%%%%%%%
 st||pn|You,,,|sk||md|1SQJtHAK5DKQ3CA973,SK25HT96 DJT542CKJ,SA8764 H732 D98CT64,S93HQJ84DA76CQ852|sv|0|rh||AH|Example 4a|mb|3nppp|sc||pc|d4|NT|^B@2
-Here is a slight variation of the same situation. These cards are the same as in the foregoing example, except that the deuce (in South's hand) has become the Ten.|PG||at| Does this alter the problem?|PG||
-PC|d8dad3|PG||PC|d7dqd2d9|PG||PC|sqsk|PG||AT| When you lead the spade Queen, which West covers with the King, should you now win with Dummy's Ace where you previously ducked? You have the Ten yourself, so you need not fear its establishment in the Opponents' hands. Therefore you think, perhaps, that you can well afford to go up with the Ace.|pg||NT|^B@2
-As a matter of fact, if the rest of Dummy's hand is the same as in the foregoing example, |cp|8|at|you must still let West's King win|cp||at|. You must duck the trick in order to unblock the suit, for, if you win with Dummy's Ace, your own Jack and Ten are high, preventing you from getting into the Dummy for those last two small spades. In this particular situation, the ducking play—in order to unblock—is just as essential with a practically solid suit as it was before with a suit that was not solid.|pg||nt||bt|| 
+Here is a slight variation of the same situation. These cards are the same as in the foregoing example, except that the deuce (in South's hand) has become the Ten.|
+PG| ***** 100 ***** |
+
+
+at| Does this alter the problem?|
+PG| ***** 101 ***** |
+
+
+PC|d8dad3|
+PG| ***** 102 ***** |
+
+
+PC|d7dqd2d9|
+PG| ***** 103 ***** |
+
+
+PC|sqsk|
+PG| ***** 104 ***** |
+
+
+AT| When you lead the spade Queen, which West covers with the King, should you now win with Dummy's Ace where you previously ducked? You have the Ten yourself, so you need not fear its establishment in the Opponents' hands. Therefore you think, perhaps, that you can well afford to go up with the Ace.|
+pg| ***** 105 ***** |
+
+
+NT|^B@2
+As a matter of fact, if the rest of Dummy's hand is the same as in the foregoing example, |cp|8|at|you must still let West's King win|cp||at|. You must duck the trick in order to unblock the suit, for, if you win with Dummy's Ace, your own Jack and Ten are high, preventing you from getting into the Dummy for those last two small spades. In this particular situation, the ducking play—in order to unblock—is just as essential with a practically solid suit as it was before with a suit that was not solid.|
+pg| ***** 106 ***** |
+
+
+nt||bt|| 
 %%%%%%%%%%%%%%%%
 qx|DU5, Ducking in Desperation|
 HT|E|CS|1|CP|4|AT|^-{    DUCKING IN DESPERATION    }
@@ -155,22 +580,58 @@ HT|E|CS|1|CP|4|AT|^-{    DUCKING IN DESPERATION    }
  
 
 |HT|k|AT|^c@D 4 2
-|PG||HT|h|AT|^i@2^Y@3Assume that with this distribution, you must make 4 diamond tricks, or you are lost. You must play, then, as follows: 
-(1) lead the deuce and, no matter what West plays, play low from the Dummy, deliberately losing the trick—thus four diamonds are gone, Dummy still has four, and you hold one, making a total of nine accounted for; |PG||HT|m|AT|^B@2^Y@3(2) praying that the four remaining diamonds are divided adversely, 2-2, and that West has the King, you lead your four-spot as soon as you regain the lead, and finesse the Queen—if the Queen holds, |cp|8|at|part of your prayer has been granted|cp||at|; |PG||AT|
+|
+PG| ***** 107 ***** |
 
-(3) you then lead the Ace and, if both Opponents follow suit again, you have won your required 4 diamond tricks. The success of this ducking play is only a slender hope, but there occur situations in which such |cp|8|at|desperate plays are the only choice|cp||at|.|PG||NT||
+
+HT|h|AT|^i@2^Y@3Assume that with this distribution, you must make 4 diamond tricks, or you are lost. You must play, then, as follows: 
+(1) lead the deuce and, no matter what West plays, play low from the Dummy, deliberately losing the trick—thus four diamonds are gone, Dummy still has four, and you hold one, making a total of nine accounted for; |
+PG| ***** 108 ***** |
+
+
+HT|m|AT|^B@2^Y@3(2) praying that the four remaining diamonds are divided adversely, 2-2, and that West has the King, you lead your four-spot as soon as you regain the lead, and finesse the Queen—if the Queen holds, |cp|8|at|part of your prayer has been granted|cp||at|; |
+PG| ***** 109 ***** |
+
+
+AT|
+
+(3) you then lead the Ace and, if both Opponents follow suit again, you have won your required 4 diamond tricks. The success of this ducking play is only a slender hope, but there occur situations in which such |cp|8|at|desperate plays are the only choice|cp||at|.|
+PG| ***** 110 ***** |
+
+
+NT||
 %%%%%%%%%%%%%
 HT|E|CS|1|CP|4|AT|^-{    DUCKING IN DESPERATION - Continued    }
 ^-|CS||CP||HT|f|AT|^B@2^Y@3Another interesting ducking situation is the following:
 |HT|h|AT|^d@c A Q 10 4 3 2|HT|j|AT|^B@C K
  
 
-|HT|l|AT|^d@c 7 6 5 |PG||HT|g|AT|^h@2^Y@3Assume that the distribution of your other suits is such that you cannot enter the Dummy outside the club suit. Your problem is to retain a low club in your own hand after the suit has been established. If you do not succeed in doing this, you will find yourself unable to take advantage of that pretty length in the Dummy. |PG||AT|
+|HT|l|AT|^d@c 7 6 5 |
+PG| ***** 111 ***** |
 
-Hence, when you lead the five from your hand, and West plays the King, your best hope is to let the King hold the trick. The fact that West plays the King seems to indicate that he held a singleton originally, which means that East has three clubs to the Jack. If this is so, and you play your Ace-Queen on the first two rounds, you will have to lose the third round of clubs. Without an outside entry to the Dummy your remaining clubs are useless. |PG||HT|q|AT|^B@2^y@3This suit distribution may be played in a still better way. Assuming that your own hand contains the necessary re-entries, you can capture the King with Dummy's Ace and return to your hand by means of some outside entry card. You then lead another low club, and, if West fails to follow suit, you give up the trick to East's Jack on the second round, leaving you with one low club in your hand which you can use to get into the Dummy later. |PG||AT|
+
+HT|g|AT|^h@2^Y@3Assume that the distribution of your other suits is such that you cannot enter the Dummy outside the club suit. Your problem is to retain a low club in your own hand after the suit has been established. If you do not succeed in doing this, you will find yourself unable to take advantage of that pretty length in the Dummy. |
+PG| ***** 112 ***** |
+
+
+AT|
+
+Hence, when you lead the five from your hand, and West plays the King, your best hope is to let the King hold the trick. The fact that West plays the King seems to indicate that he held a singleton originally, which means that East has three clubs to the Jack. If this is so, and you play your Ace-Queen on the first two rounds, you will have to lose the third round of clubs. Without an outside entry to the Dummy your remaining clubs are useless. |
+PG| ***** 113 ***** |
+
+
+HT|q|AT|^B@2^y@3This suit distribution may be played in a still better way. Assuming that your own hand contains the necessary re-entries, you can capture the King with Dummy's Ace and return to your hand by means of some outside entry card. You then lead another low club, and, if West fails to follow suit, you give up the trick to East's Jack on the second round, leaving you with one low club in your hand which you can use to get into the Dummy later. |
+PG| ***** 114 ***** |
+
+
+AT|
 
 Of course, this accomplishes the same result as the first suggested way of playing, as you still concede 1 club trick to the Opponents, but it is a better method of play because it allows for the rather remote possibility that West held the King-Jack doubleton originally. |cp|8|at|Of course, if getting back into your hand after winning the first round of clubs with Dummy's Ace seems at all problematical, or if it cannot be done without removing an important controlling card, the first method of play must be followed|cp||at|.
-|PG||NT||bt||
+|
+PG| ***** 115 ***** |
+
+
+NT||bt||
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 qx|DU6,A MATTER OF JUDGMENT|
 HT|E|CS|1|CP|4|AT|^-{    A MATTER OF JUDGMENT    }
@@ -178,11 +639,23 @@ HT|E|CS|1|CP|4|AT|^-{    A MATTER OF JUDGMENT    }
 |HT|K|AT|^H@h K 9 8 7 6 4 |ht|M|at|^D@H Q J 10 ^L@H 2
  
 
-|HT|N|AT|^H@H A 5 3 |pg||at|
- 
-Suppose you (South) must establish this suit, and the Dummy contains no outside entries. You naturally lead your Ace, on which West drops the Ten and East plays the deuce. You now play the five, on which West plays the Jack. At this point only the Queen is outstanding. You note that, if |cp|8|at|East|cp||at| has the Queen, you can take all 6 tricks in hearts by going up with your King on this round. |PG||AT|
+|HT|N|AT|^H@H A 5 3 |
+pg| ***** 116 ***** |
 
-However, if West should hold the Queen (as he does in the example given), this card will win the third round and take away your only means of running off the remainder of the suit. This is the time to make a sacrifice for the good of the entire hand—a principle quite as worthwhile in Bridge as in other forms of human activity. |FP|2|CP|8|AT|You must make sure of winning 5 heart tricks, rather than hoping to win 6 at the risk of losing all but 2|FP||CP||AT|.  Even if the Queen shows up in East's hand after you have let West's Jack hold the second round, you must not be disappointed, for you have made the best play. |PG||NT|| 
+
+at|
+ 
+Suppose you (South) must establish this suit, and the Dummy contains no outside entries. You naturally lead your Ace, on which West drops the Ten and East plays the deuce. You now play the five, on which West plays the Jack. At this point only the Queen is outstanding. You note that, if |cp|8|at|East|cp||at| has the Queen, you can take all 6 tricks in hearts by going up with your King on this round. |
+PG| ***** 117 ***** |
+
+
+AT|
+
+However, if West should hold the Queen (as he does in the example given), this card will win the third round and take away your only means of running off the remainder of the suit. This is the time to make a sacrifice for the good of the entire hand—a principle quite as worthwhile in Bridge as in other forms of human activity. |FP|2|CP|8|AT|You must make sure of winning 5 heart tricks, rather than hoping to win 6 at the risk of losing all but 2|FP||CP||AT|.  Even if the Queen shows up in East's hand after you have let West's Jack hold the second round, you must not be disappointed, for you have made the best play. |
+PG| ***** 118 ***** |
+
+
+NT|| 
 %%%%%%%%%%%%%%%%%%%
 qx|11SUM,SUMMARY|
 HT|E|CS|1|CP|4|AT|^-{    Summary    }
@@ -195,4 +668,8 @@ Whenever giving up a trick that does not lose your contract guarantees that you 
 
 The ducking play either gives you your only chance of getting the most out of a suit, or it gives you security against the worst possible distribution of the adverse cards. It is not a good play, of course, if losing the trick by ducking means the certain defeat of your contract.
 
-|HT|w|AT|This is the end of Chapter XI. |PG||LF|CH-12-P-1.LIN|
+|HT|w|AT|This is the end of Chapter XI. |
+PG| ***** 119 ***** |
+
+
+LF|CH-12-P-1.LIN|

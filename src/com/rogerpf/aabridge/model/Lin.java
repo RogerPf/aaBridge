@@ -271,7 +271,8 @@ public class Lin {
 				 * be more resilient to bad scripts that get out of sync with their bars
 				 */
 				if (q_.isQtKnown(a0, a1) == false) {
-					System.out.println(lineNumber + " 'linFileToBbArray' command letter pair unknown to aaBridge -" + a0 + "" + a1 + "-");
+					System.out
+							.println(linName + "  line " + lineNumber + "  'linFileToBbArray' command letter pair unknown to aaBridge -" + a0 + "" + a1 + "-");
 					continue;
 				}
 

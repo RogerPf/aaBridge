@@ -1,0 +1,356 @@
+afterpartnerntovercall.lin
+%% Last edited  10-07-2013 
+%%%% By Kia, BBO nickname "nome"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|155|ff|1Arial|fb|110|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|35|fm|3|                           FOR 3
+fb|49|fm|4|fb|4|fm|4|
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|3255|cg|3255|cb|3255|            White
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|6124|cb|6250|cg|6200|             6=TURQUOISE
+cr|70|cb|7220|cg|7235|              green/blue 7
+cr|8255|cb|80|cg|80|                red 8
+cr|9128|cb|90|cg|950|               Reddish-brown 9
+%%%%===================
+bt||cs|6|ht|b|fp|1|at|^-{           Responding to Partner's Notrump Overcall          }
+^-|FP||AT|
+You are at a bridge table and your left hand opponent opens the bidding in a suit and your partner overcalls in notrump. First let us figure out what does the overcall promises and then how to respond to it based on your hand and the action by the right hand opponent.|
+pg| ***** 0 ***** |
+
+
+ht|f|at|
+^a{|ia|1h1np|at|}|
+pg| ***** 1 ***** |
+
+
+ht|g|at|^l@2North has a balanced hand with about 15-18 points. He must have heart stopper.|
+PG| ***** 2 ***** |
+
+
+ht|j|
+at|^a{|ia|1d1np|at|}|
+pg| ***** 3 ***** |
+
+
+ht|j|at|^l@2North has a balanced hand with about 15-18 points. He must have diamond stopper.|
+PG| ***** 4 ***** |
+
+
+ht|m|va|3|
+at|^a{|ia|2s2np|at|}|
+pg| ***** 5 ***** |
+
+
+ht|m|va|3|at|^l@2North has a balanced hand with about 15-18 points. He must have spade stopper.|
+PG| ***** 6 ***** |
+
+
+ht|p|va|5|
+at|^a{|ia|3h3np|at|}|
+pg| ***** 7 ***** |
+
+
+ht|p|va|5|at|^l@2North has a balanced hand with about 15-18 points--maybe a few points more. He must have heart stopper.|
+PG| ***** 8 ***** |
+
+
+ht|s|at|
+^a@2Yes the 15-18 points in all the auctions are correct. Occasionally overcaller may be a bit stronger with 3N after 3 level pre-empt. But he needs solid stoppers for the opener's suit. Regardless responder, overcaller's partner, should not expect more than 15-18. There is one more NT overcall which is in the balancing seat. Let us look at it too.|
+PG| ***** 9 ***** |
+
+
+ht|v|va|5|at|
+^a{|ia|1spp1n|at|}|
+pg| ***** 10 ***** |
+
+
+ht|w|at|^l@2An overcall in balancing seat promises a balanced hand with about 11-14 points and stopper. You have a little more flexibility in balancing seat and might even make a balancing 1NT overcall with a questionable stopper  (particularly if the opening bid was 1 of a minor) if no other good bid is available.|
+PG| ***** 11 ***** |
+
+
+NT||
+%%%second page
+bt||cs|6|ht|b|fp|1|at|^-{           Responding to Partner's Notrump Overcall                  }
+^-|FP||AT|
+Now with that information, what should you do if partner overcalls 1NT and your RHO passes.|
+PG| ***** 12 ***** |
+
+
+AT| The answer is very simple. You simply play "Front of Card" (FOC), referring to the section on responding to 1NT that appears on the ACBL Convention Card. Simply said, you use exactly the same methods you use when partner opens 1NT. They are you know:|
+PG| ***** 13 ***** |
+
+
+at|
+^-
+{    2@C is Stayman    }|
+PG| ***** 14 ***** |
+
+
+AT|
+
+{    2@D is a transfer to hearts    }|
+PG| ***** 15 ***** |
+
+
+AT|
+
+{    2@H is a transfer to spades    }|
+PG| ***** 16 ***** |
+
+
+AT|
+
+{    2@S is transfer to minors if you play that convention    }|
+PG| ***** 17 ***** |
+
+
+AT|
+
+{    Let us look at a few examples.    }
+^-|
+pg| ***** 18 ***** |
+
+
+NT|| 
+%%Example 1
+st||pn|You,Opener,Partner (overcaller),|RH||ah|Example 1|md|2SK Q 98 H 87 D A 654 C854,,,|sv|o|MB|1h1np?|lb|*bWhat bid would you make?^^2c|NT|^B@2
+You bid 2@C to ask if partner has a 4-card spade suit. Notrumper knows you are asking for a 4+-card spade suit and not heart suit (opener bid 1@H). Just as over a 1NT opening, you generally needs at least an invitational strength hand to use the Stayman convention.|mb|2c|
+PG| ***** 20 ***** |
+
+
+NT||
+%%Example 2
+st||pn|You,Opener,Partner (overcaller),|RH||ah|Example 2|md|2SQ T 984 H 7 D 763 C J 987,,,|sv|o|MB|1H1NP?|lb|*bWhat bid would you make?^^2h|NT|^B@2
+You bid 2@H as a transfer to 2@S, planning to pass and leave partner in a partscore of 2@S.|mb|2h|
+PG| ***** 22 ***** |
+
+
+AT| Exactly the same action as if partner had opened 1NT. |
+PG| ***** 23 ***** |
+
+
+NT|^B@2
+Could you, in this bidding cycle, have a hand requiring a 2@D, transferring to 2@H?|
+PG| ***** 24 ***** |
+
+
+NT|^B@2
+Given a 1@H opener, responder to 1NT could never have a hand where a 2@D transfer to 2@H is right, even if responder had 5+ hearts (highly unlikely). Having said that, it is too complicated to play 2@D as anything but a transfer (basically it is an impossible bid; only an expert partnership would come up with some other meaning).|
+PG| ***** 25 ***** |
+
+
+NT||
+%%Example 2a
+st||pn|You,Opener,Partner (overcaller),|RH||ah|Example 2a|md|2ST 7  H 87 c QJT8976 d J 8,,,|sv|o|MB|1H1NP?|lb|*bWhat bid would you make?^^2S|NT|^B@2
+If you play transfer to minors you need to bid 2@S here and then pass after partner's expected 3@C rebid.|mb|2S|
+pg| ***** 27 ***** |
+
+
+NT||
+
+%%Example 2b
+st||pn|You,Opener,Partner (overcaller),|RH||ah|Example 2b|md|2ST 7  H 8 D QJT8976 C J 8 7,,,|sv|o|MB|1H1NP?|lb|*bWhat bid would you make?^^2S|NT|^B@2
+If you play transfer to minors you need to bid 2@S here and then bid 3@D after partner's expected 3@C rebid.|mb|2S|
+pg| ***** 29 ***** |
+
+
+NT|^B@2
+Next let us look at your option if East (RHO) bids following your partner's overcall. If responder's right—hand opponent bids, then the partnership continues to use the same methods as when an opponent interferes after an opening 1NT.|
+PG| ***** 30 ***** |
+
+
+NT||
+
+%%
+%%Example 3
+st||pn|You,Opener,Partner (overcaller),|RH||ah|Example 3|md|2sA J 986h8D986CJ t 98,,,|sv|o|NT|^B@2
+You have the hand as is shown above, your LHO opens 1@H,|MB|1H|
+PG| ***** 31 ***** |
+
+
+AT| partner overcalls 1N,|MB|1N|
+PG| ***** 32 ***** |
+
+
+AT| and your RHO bids 2@H|MB|2H?|
+pg| ***** 33 ***** |
+
+
+NT||lb|*bWhat bid would you make?^^x|NT|^B@2
+With this hand, you have two good options. You double|MB|X|AT| if your partnership plays "Systems On-^*BStolen Bid^*N" where a double here says "East stole my bid. I was going to bid 2@H as a transfer to spades."|
+PG| ***** 35 ***** |
+
+
+NT|^B@2
+If your partnership does not play "Systems On-Stolen Bid" then you can bid 2@S|UB||
+PG| ***** 36 ***** |
+
+
+MB|2S|AT| as a competitive bid and non forcing. |
+PG| ***** 37 ***** |
+
+
+NT||
+%%Example 4
+st||pn|You,Opener,Partner (overcaller),|RH||ah|Example 4|md|2SA J 8 7 5H 4 3DK Q 5C 7 6 4,,,|sv|o|NT|^B@2
+With the above hand (which is stronger than the previous hand) your LHO bids 1@H,|MB|1H|
+PG| ***** 38 ***** |
+
+
+AT| your partner overcalls 1N and the RHO bids 2@H.|MB|1N2H?|
+pg| ***** 39 ***** |
+
+
+lb|*bWhat bid would you make?^^3s|NT|^B@2
+Some partnership do not play "Systems On-Stolen Bid." Because if they do the 2@S by notrumper is not forcing and the South hand is strong enough which can play either in 3N or 4@S. Therefore, you bid 3@S|MB|3S|AT| and giving overcaller the choice of setting the contract in either 3N or 4@S.|
+PG| ***** 41 ***** |
+
+
+NT|^B@2
+Other partnerships think "Systems On-Stolen Bid" certainly works on this hand. You double as a spade transfer and then bid 3@H which denies a spade stopper. Pard will usually then bid 4@S or 3N. With only 2 card spade support and no heart stopper pard will either bid 3@S or a 5-card minor.
+|
+PG| ***** 42 ***** |
+
+
+NT|^B@2
+BTW, if your partnership plays "Systems On-Stolen Bid" then you can use conventions such as four-suit transfers and Texas transfers as they would apply after the 1NT open.|
+PG| ***** 43 ***** |
+
+
+NT||
+%%Example 5
+st||pn|You,Opener,Partner (overcaller),|RH||ah|Example 5|md|2S8 4HK J 8 5DA Q 7 3CQ 9 4,,,|sv|o|NT|^B@2
+In this example your LHO pre-empts 2@s and|MB|2S|
+PG| ***** 44 ***** |
+
+
+AT| your partner overcalls 2N with your RHO passing.|MB|2nP?|
+pg| ***** 45 ***** |
+
+
+NT||lb|*bWhat bid would you make?^^3c|NT|^B@2
+It is easy now. Your partnership also can play "Systems On-Stolen Bid" after a 2N overcall except the levels are higher.|mb|3c|
+PG| ***** 47 ***** |
+
+
+NT|^B@2 
+Just like responding to 2N opener,  3@C would be Stayman, 3@D would be a transfer to hearts, and 3@S probably would mean transfer to minors. Again with LHO bidding 2@S, South hardly ever would have a hand needing transfer to spades. So 3@H bid by South would never be a needed. |
+PG| ***** 48 ***** |
+
+
+NT|^B@2
+With this hand, you bid 3@C as the Stayman convention, to see if partner has at four-card heart suit. You have 12 HCP, which would be enough to consider a slam if North had opened 2NT, showing 20-21 points. North's 2NT overcall as you know, however, only shows about 15-18 points. So forget the slam.|
+PG| ***** 49 ***** |
+
+
+NT||
+%%Example 6
+st||pn|You,Opener,Partner (overcaller),|RH||ah|Example 6|md|2S7HA Q 8 6 3D7 4CA K J 6 2,,,|sv|o|MB|2S2NP?|lb|*bWhat bid would you make?^^3d|NT|^B@2
+The correct bid is 3@D. Also this hand is much stronger and you can explore slam even though overcaller only showing 15-18 points.|mb|3d|
+PG| ***** 51 ***** |
+
+
+NT||
+%%Example 6a
+st||pn|You,Opener,Partner (overcaller),|RH||ah|Example 6a|md|2,,,|sv|o|MB|3S3NP?|NT|^B@2
+After a 3N overcall by partner you do not have much room for bidding and reaching the best contract and avoid misunderstanding when your LHO pre-empts at 3 level. Notrumper has a bit stronger than a 15-18 HCP hand.|
+PG| ***** 52 ***** |
+
+
+NT|^B@2
+Many partnerships use the same pattern as with 1NT and 2NT overcalls. Therefore, 4@C would be Stayman, and 4@D and 4@H would be transfer bids. Further, it is possible, assuming you have enough room, to play "Systems On-Stolen Bid."|
+PG| ***** 53 ***** |
+
+
+NT||
+%%Example 7
+st||pn|You,Opener,Partner (overcaller),|RH||ah|Example 7|md|2SQ T 8 7 6 4H6 2D3CA 9 6 3,,,|sv|o|MB|3d3np?|lb|*bWhat bid would you make?^^4s|NT|^B@2
+This is a tough one. You have no rooms for misunderstanding. You may consider bidding 4@H as transfer to spade and partner can pass. So unless you have a firm partnership agreement take the safest route and bid 4@S.|mb|4s|
+PG| ***** 55 ***** |
+
+
+NT|^B@2
+It is highly unlikely partner misunderstand the 4@S. On the other hand, it would bother you to say the least, if you bid 4@H as transfer and you see 3 passes followed your bid with a smile on you partner's face -:). However, some mature partnership safely use "Systems On-Stolen Bid" with no accident and 4@H to transfer to spades.|
+PG| ***** 56 ***** |
+
+
+NT|^B@2
+Next we will look at responding to a Balancing 1NT overcall by your partner.|
+PG| ***** 57 ***** |
+
+
+NT||
+%%Example 8
+st||pn|You,Opener,Partner (overcaller),|RH||ah|Example 8|sk|n|md|4SJ 3HJ 8 7 6 3D7 2 CA Q 6 4,,,|sv|o|NT|^B@2
+East opens1@D, you and your LHO pass,|MB|1dpP1Np?|at| with your partner in the balancing seat overcalls 1N.|
+pg| ***** 58 ***** |
+
+
+NT||sk||lb|*bWhat bid would you make with this hand?^^2d|NT|^B@2
+As we discussed a balancing 1N overcall promises only 11-14 points. With 9 points you have enough strength to invite game if partner had opened 1NT or overcalled 1NT in the direct position. But with 11-14 promised by North you only can play in the best partscore-hearts. Again your partnership can use "^*BSystems On^*N - Stolen Bid" and bid 2@D a transfer to hearts-only the ^*BSystems On^*N.|MB|2d|
+PG| ***** 60 ***** |
+
+
+NT||
+%%Example 8a
+st||pn|You,Opener,Partner (overcaller),|RH||ah|Example 8a|sk|n|md|4,,,|sv|o|NT|^B@2
+East opens2@D, you and your LHO pass,|MB|2spP2Np?|at| with your partner in the balancing seat overcalls 2N.|NT|^B@2
+After a balancing 2NT overcall the situation is exactly the same as if partner had overcalled 2NT directly over the weak two—bid. Most partnerships again opt to play the first part of "^*BSystems On^*N-Stolen Bid." Let us look at an example.|
+PG| ***** 61 ***** |
+
+
+NT||
+%%Example 9
+st||pn|You,Opener,Partner (overcaller),|RH||ah|Example 9|md|4S8 2HA J 9 8 3DK Q 7 6C 4 2,,,|sv|o|MB|2sPP2NP?|sk|s|lb|*bWhat bid would you make?^^3d|NT|^B@2
+Again use "^*BSystems On^*N-Stolen Bid"--the first part--but note that 2NT in balancing seat shows l5-18 points. With this hand, you can bid 3@D, transfer to hearts and then bid 3NT, giving partner a choice of games--3N or 4@H.|mb|3d|
+PG| ***** 63 ***** |
+
+
+AT|
+
+Next you will see Howard's comment concerning example 8 and 9.|
+PG| ***** 64 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|To be precise "Systems on - Stolen Bid" only refers to what you do over interference. But if you want to think about it as what you do even without interference, I guess that is ok but kind of weird logic.|
+PG| ***** 65 ***** |
+
+
+NT||bt||
+%%
+ht|d|fp|1|cp|4|cs|1|at|^-
+{     So if Your Partner    }|
+PG| ***** 66 ***** |
+
+
+at|
+
+{           Overcalls Notrump           }|
+PG| ***** 67 ***** |
+
+
+AT|
+
+{    "Systems On" - "Stolen Bid"    }|
+PG| ***** 68 ***** |
+
+
+AT|
+
+{    is your guide.    }|
+PG| ***** 69 ***** |
+
+
+AT|
+
+{  |fp||at|This is the end of this synopsis  }
+
+^-|
+PG| ***** 70 ***** |
+
+

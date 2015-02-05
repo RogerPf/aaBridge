@@ -34,7 +34,8 @@ public class Book extends ArrayList<Book.LinChapter> {
 	public String bookFolderName = "";
 	public String displayTitle = "";
 	public String bookPath = "";
-	public String shelfDisplayName = "";
+	public String originText = "";
+	public boolean dividerBefore = false;
 
 	public int lastChapterIndexLoaded = -1;
 
@@ -42,6 +43,7 @@ public class Book extends ArrayList<Book.LinChapter> {
 
 	public class LinChapter {
 		// ---------------------------------- CLASS -------------------------------------
+		Book book;
 		char type;
 		String parentOrJar;
 		public String filenamePlus;
@@ -55,8 +57,9 @@ public class Book extends ArrayList<Book.LinChapter> {
 			return displayNoUscore;
 		}
 
-		public LinChapter(char type, String base, String filenameIn) { // Constructor
+		public LinChapter(Book book, char type, String base, String filenameIn) { // Constructor
 			// ==============================================================================================
+			this.book = book;
 			this.type = type;
 			this.parentOrJar = base;
 			filenamePlus = filenameIn;
@@ -97,15 +100,10 @@ public class Book extends ArrayList<Book.LinChapter> {
 
 			s += "                                ";
 
-			if (shelfDisplayName.length() > 0) {
-				s += shelfDisplayName.trim() + "  /  ";
-			}
-			else {
-				s += "OUTSIDE" + "  /  ";
-			}
+			s += originText + "   /   ";
 
-			if (displayTitle.length() > 0) {
-				s += displayTitle + "  /  ";
+			if (!displayTitle.isEmpty()) {
+				s += displayTitle + "   /   ";
 			}
 
 			s += displayNoUscore;
@@ -123,10 +121,12 @@ public class Book extends ArrayList<Book.LinChapter> {
 
 			if (type == 'r') {
 				success = BridgeLoader.readLinResourseIfExists(bookJarName, filenamePlus);
+				App.debug_pathlastLinLoaded = "";
 			}
 
 			if (type == 'f') {
 				success = BridgeLoader.readLinFileIfExists(bookFolderName, filenamePlus);
+				App.debug_pathlastLinLoaded = book.bookFolderName + filename;
 			}
 
 			if (success) {
@@ -175,29 +175,27 @@ public class Book extends ArrayList<Book.LinChapter> {
 		return bookJarName + " " + bookFolderName;
 	}
 
-	public Book(String basePathIn) { // Constructor from a path
+	public Book(String basePathIn, File[] onlyThese) { // Constructor from an external source - drag drop
 		// ==============================================================================================
-		commonBookConstructor(basePathIn, "", null, "");
+		commonBookConstructor(basePathIn, "", onlyThese, "", basePathIn);
 	}
 
-	public Book(String basePathIn, File[] onlyThese, String shelfname) { // Constructor from a path
+	public Book(String basePathIn, String extraPath, String shelfname, String shelfDisplayName, boolean dividerBefore) {
 		// ==============================================================================================
-		commonBookConstructor(basePathIn, "", onlyThese, shelfname);
-	}
-
-	public Book(String basePathIn, String extraPath, String shelfname) {
-		// ==============================================================================================
-		commonBookConstructor(basePathIn, extraPath, null, shelfname);
+		this.dividerBefore = dividerBefore;
+		commonBookConstructor(basePathIn, extraPath, null, shelfname, shelfDisplayName);
 	}
 
 	private final static String sep = File.separator;
 
 	static String all_lin_files_in_this_book = "all_lin_files_in_this_book";
 
-	public void commonBookConstructor(String basePathIn, String extraPath, File[] onlyThese, String shelfname) {
+	public void commonBookConstructor(String basePathIn, String extraPath, File[] onlyThese, String shelfname, String originText) {
 		// ==============================================================================================
 
 		String basePath = basePathIn;
+
+		this.originText = originText;
 
 		if (extraPath.length() > 0) {
 			frontNumber = Aaa.extractPositiveInt(extraPath);
@@ -273,7 +271,7 @@ public class Book extends ArrayList<Book.LinChapter> {
 						setDisplayTitle(sFile, "/");
 
 					if (sFile.toLowerCase().endsWith(".lin")) {
-						new LinChapter('r', bookJarName, sFile);
+						new LinChapter(this, 'r', bookJarName, sFile);
 					}
 				}
 			}
@@ -360,7 +358,7 @@ public class Book extends ArrayList<Book.LinChapter> {
 								setDisplayTitle(sFile, sep);
 
 							if (sFile.toLowerCase().endsWith(".lin"))
-								new LinChapter('f', "", sFile);
+								new LinChapter(this, 'f', "", sFile);
 						}
 					}
 
@@ -544,14 +542,16 @@ public class Book extends ArrayList<Book.LinChapter> {
 		}
 	}
 
-	public double getLinWeighting() {
+	public int randAdjustedSize(boolean first) {
 		// ==============================================================================================
-		return Math.sqrt((double) this.size());
+		return (first && frontNumber >= 90) ? 0 : size();
 	}
 
 	public LinChapter pickRandomLinFile() {
 		// ==============================================================================================
-		return get((int) ((double) size() * Math.random()));
+		int ind = (int) ((double) size() * Math.random());
+//		System.out.print( "    Chapter " + (ind+1) + " of " + size() + "\n");
+		return get(ind);
 	}
 
 }

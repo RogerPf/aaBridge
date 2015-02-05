@@ -67,6 +67,8 @@ public class App {
 	public static String depFinOutInPath     = "C:\\ProgramSmall\\Deep Finesse\\aaBridge_to_from";
 	public static String depFinOutInFilename = "Sample Deals.txt";
 	public static String depFinOutInBoth     = depFinOutInPath + "\\" + depFinOutInFilename;
+	
+	public static String debug_pathlastLinLoaded = "";
 
 	public static boolean observeReleaseDates = true;
 
@@ -1047,12 +1049,12 @@ public class App {
 
 	public static Dir youSeatHint = Dir.South;
 	public static boolean devMode = false;
+	public static boolean showDevTestLins = false;
 
 	public static final VersionAndBuilt vnb = new VersionAndBuilt();
 
-	public static BookshelfArray bookshelfArray = new BookshelfArray();
-//	public static Bookshelf shelf1 = bookshelfArray.get(1); // for debug viewing only
-//	public static Bookshelf shelf2 = bookshelfArray.get(2); // for degug viewing only
+	public static BookshelfArray bookshelfArray = null;
+
 	public static String[] args;
 	public static AaaOuterFrame frame = null;
 	public static Controller con = new Controller();

@@ -229,7 +229,7 @@ public final class TestSystemRunner {
 	static void performAllTests__inner(ArrayList<String> log) {
 		// ==============================================================================================
 
-		Book book = App.bookshelfArray.get(1).getBookByFrontNumb(96 /* The Play Engine tests */);
+		Book book = App.bookshelfArray.get(0).getBookByFrontNumb(96 /* The Play Engine tests */);
 
 		if (book == null) {
 			log.add("Can't load the 'tests' book - 96");

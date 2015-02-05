@@ -1,0 +1,84 @@
+%% Lastly
+%% Last edited  2013 Dec 03
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|150|ff|1Arial|fb|19|fm|1|       1 large
+fh|236|ff|2Arial|fb|29|fm|2|       2 med
+fh|342|ff|3Arial|fb|39|fm|3|       2 med+
+fh|664|ff|6Arial|fb|69|fm|6|       6 v large
+fh|925|ff|9Arial|fb|99|fm|9|       very small for faking 'buttons'
+
+cr|3200|cg|3255|cb|3255|     3  light blue
+cr|4170|cg|4190|cb|4255|     4  med blue
+cr|516|cg|5128|cb|516|       5  green 
+cr|7230|cg|70|cb|70|         7  red
+
+bt||
+fp|1|at|
+
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp|9|
+mn|         Lastly                   Page 1   |
+qx|Lst1|
+ht|d|
+at|
+
+|fp||at|^b@2So you have created a working    ^*baaBridge_^*nnewTitleGoesHere_<version>.|cp|7|at|^*bjar^*n|cp||at|    well done.
+
+Of course you can email it to whoever you want.  That is the easy part, while it feels that Java is installed everywhere these days your recipient may not have it.  In that case tell them to visit. ^*h http://www.java.com/ ^*n
+
+If you are on a windows system - where should you put you nice new |cp|7|at|^*bjar^*n|cp||at| file?   The best place is where the aaBridge windows installer would want it put.
+
+^dC:\program^*bSmall^*n\aaBridge
+
+Once you have copied you jar there, you need to double click it.  This registers your jar with the  ^*baaBridge.exe^*n  tiny app as being the jar it should run when invoked either through the windows menu or when you double click on a lin file.
+
+Note that - any  aaBridge.jar  you run (no matter where it is) will be registered as the default jar you want run.  It is of course easy to re-assign the one you want to be the default, just dbl-click it.
+
+^*bQ.^*n   But what if I move (or delete) the last aaBridge.jar that was run?
+
+^*bA.^*n   In @2that case the  aaBridge.exe  (tiny app) will look in its install folder (normally as shown above) for any files of the form   ^*baaBridge_^*nanything^*b_<version>.jar^*n. and it will pick whatever windows takes as the "last one" when sorted by name.
+
+^b@2But remember, all you have to do is to double click on the one you want to be  the default  and it is sorted.
+
+
+Click   ^*bStep >^*n 
+|
+pg| ***** 0 ***** |
+
+
+nt||
+fp|1|at|
+
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp|9|
+mn|         Lastly                   Page 2   |
+qx|Lst2|
+ht|d|at|
+
+|
+at|^^|fp||at|^b@2If you want to build a    ^*baaBridge_^*nmyTitle^*b_<version>_setup.|cp|7|at|^*bexe^*n|cp||at|^*n    version.         (this is an advanced topic) 
+
+You will need the following -
+
+^c@2@.   Your jar (of course)    :)
+
+@.   the  ^*baaBridge.exe^*n  mini app  from   C:\program^*bSmall^*n\aaBridge
+
+@.   the  ^*blin.ico^*n  also in the above folder
+
+@.   the  Inno Setup script (an .iss file) that I tweeked @2  to do this job.  I will put it in
+the  "91  Make a Book"  in the aaBridge .jar
+
+^c@2@.   the  ^*baaBridge.ico^*n  also in the above "91 "  folder.
+
+@.   the FREE  Windows Inno Setup app   from  ^*h http://www.jrsoftware.org/isinfo.php ^*n http://www.jrsoftware.org/ ^*x
+
+Basically what you have to do is install the  'Inno Setup' software.  Edit the above .iss script to set the correct paths for your files and run the app with the script to produce the     ^*baaBridge_^*nmyTitle^*b_setup.|cp|7|at|^*bexe^*n|cp||at|^*n    file.
+
+I agree this is not trivial but neither is it hard.  If you can't do it you should not be trying to do it.   :)   -  Have fun
+
+and remember to enjoy your bridge.
+|
+ht|z|at|@0
+^r Roger Pfister   -   December 2013|

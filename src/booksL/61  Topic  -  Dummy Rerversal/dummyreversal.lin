@@ -1,0 +1,1093 @@
+%%%Board 8 <<<<<<<<<<< PROOFREAD
+%%%dummyrversal.lin
+%%by Kia, BBO nickname nome
+%%11-2-2012
+bt||
+fh|160|ff|1Arial|fb|110|fm|1|        
+fh|235|ff|2Arial|fb|28|fm|2|                            
+fh|340|ff|3Arial|fb|35|fm|3|                            
+fh|420|ff|4Arial|fb|420|fm|4|
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|30|cg|30|cb|3128|                dark Blue 3
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|664|cb|6255|cg|6255|             6=TURQUOISE
+cr|70|cb|7220|cg|7235|              green/blue 7
+cr|8255|cb|80|cg|80|                red 8
+cr|9128|cb|90|cg|950|               Reddish-brown 9
+cs|1|cp|4|fp|1|ht|g|at|^a{ |ht|j|at|^z  
+^z   }
+|ht|g|at|
+^c Dummy Reversal
+|fp||ht|l|at|^mA tutorial by Kia, BBO nickname, nome aka Movie Maker
+
+|cs||cp||ht|o|AT|^b@2
+Sources :
+Howard Schutzman BBO nickname, hondo717;  |CP|1|AT|^m^*Hwww.bridgesights.com/hondobridge ^*N|CP||AT|
+Wikipedia; |CP|1|AT|^m^*Hen.wikipedia.org/wiki/Ruff_(cards)^*N|CP||AT|
+Bridge Contract with Michael Furstner;|CP|1|AT|^m^*Hwww.jazclass.aust.com/bridge/br12.htm#05^*N|CP||AT|
+Larry Cohen;|CP|1|AT|^m^*htiny.cc/6cxtkw^*n|CP||AT|
+New York Times;|CP|1|AT|^m^*Htiny.cc/pzaukw^*N|CP||AT|
+Bridge @S Bum;|CP|1|AT|^m^*Hwww.bridgebum.com/dummy_reversal.php^*N|CP||AT|
+Richard Pavlicek;|CP|1|AT|^m^*Hwww.rpbridge.net/7b03.htm^*N|CP||AT|
+Brian Gunnell;|CP|1|AT|^m^*Htiny.cc/v7kllw^*N|CP||AT|
+
+Date:  ^mNovember, 2012
+
+|
+PG| ***** 0 ***** |
+
+
+NT|^b@2
+As requested by a few of his students, in September, 2012 Howard explained the Dummy Reversal in one of his two weekly mentoring sessions. The lesson was great and along with other students I understood it well-I thought. You will get to see his explanation shortly. But, uncommon as Dummy Reversal may be, soon after the lesson I declared two boards with bad results. Had I learned the lesson well I could recognize the obvious, Dummy Reversal, and make both contracts. This presentation is my attempt to fully learn the issue and hope to recognize the Dummy Reversal when I confront it next time at a bridge table.|
+PG| ***** 1 ***** |
+
+
+AT| 
+
+To prepare it I searched the web, collected the best information on the topic, run them by Howard for his comments, and finally arranged them in how I like to learn it. In doing so I will be presenting the topic in a different format than Howard's lesson on September 12, 2012. The format is simple. Howard tries to answer questions in a way that might help it burn on Movie Maker's mind. |
+PG| ***** 2 ***** |
+
+
+AT|
+
+As usual in game of bridge nothing is set in stone and for sure you may find different views. The presentation has 9 boards. You can view all by clicking the "Next Page" box or you can jump from each board to the next by clicking the "Next Topic" box. |
+PG| ***** 3 ***** |
+
+
+AT|
+
+BTW, I did not have the privilege of a proofreader for this presentation (Howard had to do double duty) and you have it warts and all :). Please click the "Next Page" to begin the tutorial.|
+PG| ***** 4 ***** |
+
+
+NT|| 
+%%%%%%%%%%%%%%
+cp|1|AT|
+^B@2^*BMM: ^*N|cp||at|It is difficult to find a clear definition for "Dummy Reversal" in the bridge literature. The following from Wikipedia seems more to my liking. |
+PG| ***** 5 ***** |
+
+
+AT|
+
+"Dummy reversal (also known as reverse dummy) is a technique in contract bridge whereby declarer uses trump cards to ruff from the hand with longer trumps, and retains the trumps in the other hand to draw the opponents' remaining trumps. This technique can be adapted for use in other trick-taking games.
+ 
+In the ^*Bnormal^*n technique, the ruffs are taken from the hand with shorter trumps, retaining trumps in longer hand for control. Since player which first mentions the trump suit in the bidding becomes the declarer, typically the hand with long trumps will be declarer's one – thus the name ^*Breverse dummy^*n, as the normal roles of dummy's and declarer's trumps are reversed."|
+PG| ***** 6 ***** |
+
+
+cp|8|AT|
+
+^B@2^*BHoward: ^*N|cp||at|I agree with the definition. However, there is some misconception about what the term means. Some people think it means you are reversing dummy any time you set up dummy. I don't really care what you call that, so long as you understand what it means to set up dummy. A dummy reversal is when you set up dummy and dummy is shorter in trumps. That happens rarely, but it does happen. And you need to understand how to count trump tricks to understand when it is right to do a dummy reversal. |
+PG| ***** 7 ***** |
+
+
+cp|8|AT|
+
+^B@2^*BHoward: ^*N|cp||at|Further, when most people play a hand, the approach they usually take is to "set up their hand." That means they look at their own hand and figure out how to generate winners and throw off their losers. That is often the correct way to play the hand but not always.|
+PG| ***** 8 ***** |
+
+
+cp|1|AT|
+
+^B@2^*BMM: ^*N|cp||at|The part in Wikipedia also says the fallowing:
+"The sole purpose of dummy reversal is to yield more tricks than the normal technique.
+ 
+Some indicators that a hand may lend itself to dummy reversal are:
+
+- shortness (singleton or void) in declarer's hand with length in the same suit in dummy
+- loser(s) in declarer's hand that cannot be ruffed or discarded on a side suit.
+- adequate trump strength and length in dummy (typically a three or four card trump suit with at least two honors for drawing the final trumps) 
+- entries to dummy outside of the trump suit"|
+PG| ***** 9 ***** |
+
+
+NT||
+cp|8|AT|
+
+^B@2^*BHoward: ^*N|cp||at|One thing to keep in mind is that usually, especially in a suit, declarer is the one with long trumps but not always. For example, if you open 1NT and pard transfers then you end up as declarer with shorter trump than dummy. In that case, it often is right to set up dummy, because, although by the rules you are declarer, logically, it makes more sense to think of the hand with long trumps as "declarer" and try to set up dummy.|
+PG| ***** 10 ***** |
+
+
+cp|1|AT|
+
+^B@2^*BMM: ^*N|cp||at|Are there other situations?|
+PG| ***** 11 ***** |
+
+
+cp|8|AT|
+
+^B@2^*BHoward: ^*N|cp||at|Another common situation is when you have a 4-4 fit. There neither hand is longer in trumps. So sometimes it pays to set up declarer's hand, other times it makes more sense to set up dummy. 
+
+One final situation, is if partner makes a 2 suited overcall, showing 5/5. You are being asked to choose one of the overcaller's suits. In that case you might have as little as 2 or 3 trump so you end up as "declarer" but logically pard is declarer because they are the one with long trumps. So it usually pays to set up the hand with long trump.|
+PG| ***** 12 ***** |
+
+
+cp|1|AT|
+
+^B@2^*BMM: ^*N|cp||at|So far so good. But what is the difference between having the trumps spread even or uneven in both declarer and dummy's hand?|
+PG| ***** 13 ***** |
+
+
+cp|8|AT|
+
+^B@2^*BHoward: ^*N|cp||at|That is the main point. Dummy Reversals are hard to grasp until you are comfortable with how to count trump winners. Let me explain it. |
+PG| ***** 14 ***** |
+
+
+AT|
+
+- The way to think about it is to designate one of the hands the ^*bmaster hand^*N. In the master hand, you count your trump tricks based on length. So, if the master hand has a 5-card suit and you have no missing trump honors, the master hand will generate 5 trump tricks. If, for example, you are missing the trump ace and no other high cards, then the master hand will take 4 trump tricks. In other words, the master hand takes the same ## of tricks as you would playing NT.|
+PG| ***** 15 ***** |
+
+
+AT|
+
+- The way to generate additional trump tricks is to ruff in the non-master hand. So if you ruff once, you get one extra trump trick. If you ruff twice, you get 2 extra trump tricks. Usually, the master hand is the hand with longer trumps. But you can make the hand with shorter trumps the master hand. You still use the same procedure to count trump tricks -- you count the ## of tricks based on length in the master hand, plus the ## of ruffs in the non-master hand.|
+PG| ***** 16 ***** |
+
+
+NT||
+cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Almost always, you maximize your ## of trump tricks by having the long hand be the master hand. But every once in a while, you generate more trump tricks by designating the shorter hand as the master hand. Therefore, you can think of a dummy reversal as when you designate the hand with shorter trump as the master hand.|
+PG| ***** 17 ***** |
+
+
+cp|1|AT|
+
+^B@2^*BMM: ^*N|cp||at|Let us pick up your illustration from the recent lesson. First you start with a standard hand where declarer has long trumps.|
+PG| ***** 18 ***** |
+
+
+NT||
+%%First board from the lesson
+qx||pn|hondo717,hondo717,hondo717,hondo717|st||sk|s|md|4SQJ954HKDJ8743CA7,ST32H872DAT9CKQJ8,SAK6HAT953D5C9643,S87HQJ64DKQ62CT52|rh||ah|Dummy Reversal|ah|Standard Board|ah|B1|mb|p|mb|4S|mb|p|mb|p|mb|p|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|The bidding is not important. This is a normal hand, where declarer has the long trump suit. |
+pg| ***** 19 ***** |
+
+
+pc|CK|NT||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Let us count winners. 5 spade tricks, 2 heart tricks, 1 club trick  for 8 tricks. We need 2 more tricks. Some people incorrectly think if I ruff hearts in my hand I am creating extra trump tricks. That is not correct. South has 5 spade tricks whether he plays 5 rounds of spades or ruffs some hearts. There is no difference between ruffing a heart or leading a spade and once dummy is out, throwing a heart.|
+PG| ***** 20 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|The point is South has 5 spade tricks period. The way you normally create extra trump tricks is to ruff in the short hand. On this hand I can take 7 spade tricks, if I ruff two diamonds in dummy-the 5 spades in my hand plus 2 ruffs in dummy. And that is how I get to 10 tricks. Let us play the hand.|
+PG| ***** 21 ***** |
+
+
+pc|C3|pc|C2|pc|CA|
+pg| ***** 22 ***** |
+
+
+pc|D3|pc|D9|pc|D5|pc|D2|
+pg| ***** 23 ***** |
+
+
+pc|S2|pc|S6|pc|S7|pc|S9|
+pg| ***** 24 ***** |
+
+
+sk||pc|D4|pc|DT|pc|SK|pc|D6|
+pg| ***** 25 ***** |
+
+
+pc|H3|pc|H4|pc|HK|pc|H2|
+pg| ***** 26 ***** |
+
+
+pc|D7|pc|DA|pc|SA|pc|DQ|
+pg| ***** 27 ***** |
+
+
+pc|HA|pc|H6|pc|C7|pc|H7|
+pg| ***** 28 ***** |
+
+
+mc|10|
+pg| ***** 29 ***** |
+
+
+NT||up|28|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|To summarize, I always had 5 spade tricks in my hand. Where I got the extra tricks was ruffing twice in the other hand. That allowed me to play a spade trick without using one of my 5 spade tricks.|
+PG| ***** 30 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Let me go to the next board which is an actual board I recently played. Again it is not important how we arrived at the contract.|
+PG| ***** 31 ***** |
+
+
+NT||
+%%Second Board
+qx||pn|hondo717,hondo717,hondo717,hondo717|st||sk|s|md|2HAQT73DAJ953CQ42,SKQJ53H5DQ872CJ76,ST964HKJ98D64CAK5,SA872H642DKTCT983|rh||ah|Dummy Reversal|ah|Dummy Reversal Board|ah|B2|mb|p|mb|p|mb|p|mb|6H|mb|p|mb|p|mb|p|pc|SK|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Let's count my tricks. On the surface, I have 5 hearts 3 clubs and 1 diamond-only 9 tricks. But there is actually a way to take 8 heart tricks and make the hand. It is a "dummy reversal." If I ruff 4 spades in the South hand that gives me 8 tricks with and North 4 trump tricks. What I am going to do is shorten South's trumps so much that North becomes the hand with long trump. Watch how it is done.|
+PG| ***** 32 ***** |
+
+
+pc|S4|sk||pc|S2|pc|H3|sb|SOne trump trick.|
+pg| ***** 33 ***** |
+
+
+pc|C2|sb|S|pc|C6|pc|CA|pc|C3|
+pg| ***** 34 ***** |
+
+
+pc|S6|pc|S7|pc|H7|pc|S3|sb|STwo trump tricks (both by South)|
+pg| ***** 35 ***** |
+
+
+pc|CQ|sb|S|pc|C7|pc|C5|pc|C8|sb|SNote South is already shorter than North.|
+pg| ***** 36 ***** |
+
+
+pc|C4|sb|S|pc|CJ|pc|CK|pc|C9|
+pg| ***** 37 ***** |
+
+
+pc|S9|pc|S8|pc|HA|pc|S5|SB|SThird trump tricks.|
+pg| ***** 38 ***** |
+
+
+pc|HT|SB|S|pc|H5|pc|HK|pc|H2|
+pg| ***** 39 ***** |
+
+
+pc|ST|pc|SA|pc|HQ|pc|SJ|SB|STrump trick number 4.|
+pg| ***** 40 ***** |
+
+
+pc|DA|sb|S|pc|D2|pc|D4|pc|DT|
+pg| ***** 41 ***** |
+
+
+pc|D3|pc|D7|pc|D6|pc|DK|
+pg| ***** 42 ***** |
+
+
+mc|12|
+pg| ***** 43 ***** |
+
+
+up|40|NT||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|By ruffing 4 times in South, I turned South's trump length from 5 trumps down to one trump meaning North had the length. So North had 4 trump tricks by length, and South had 4 trump tricks by ruffing = 8 trump tricks.
+That is a "dummy reversal." I reversed the (very) usual procedure of creating trump tricks by ruffing in the long hand.|
+PG| ***** 44 ***** |
+
+
+NT||
+cp|1|AT|
+^B@2^*BMM: ^*N|cp||at|Let me bring my observations to your attention one by one. 1. Probably the contract can be made by ruffing diamonds in dummy. Would that work to take 12 tricks here?|
+PG| ***** 45 ***** |
+
+
+cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Yes it would. And it might even be a better way to play the hand. However, at the time I decided to play it dummy reversal as it would be more interesting :). Also trump lead would probably make it not possible to do a dummy reversal. What else have you noticed?|
+PG| ***** 46 ***** |
+
+
+NT||
+cp|1|AT|
+^B@2^*BMM: ^*N|cp||at|2. You have commanding solid trump suit with a 3-1 distribution in opponent's hands, dummy has a useless 4-card suit, declarer has a void in that useless suit, and there is no problem with transportation. A change in any of those could upset the dummy reversal play.|
+PG| ***** 47 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Those are all valid observations. In every hand you declare, the supreme rule is right after the opening lead hits the table you ^*Bmust^*N count your tricks. Then make a ^*Bplan^*N to take the number of tricks required. In most auction the plan would be a simple one. However, occasionally you really need to evaluate all your options-your trick taking tools. Dummy reversal is another trick taking tool.|
+PG| ***** 48 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Ruffing and cross-ruffing, Ruffing Finesse, and Trump Coup are other tools in the same category. I know that you hardly can wait to discuss the board in Wikipedia. I would be glad to comment on it.|
+PG| ***** 49 ***** |
+
+
+NT||
+%%%Third board Wiki
+qx||st||sk|s|md|1SQT853H6D954CJ853,S2,SAKJHA854DAK2CA64,|sv|0|rh||ah|Dummy Reversal - Wiki|ah|B3|mb|4sppp|pc|s2|cp|1|AT|
+^B@2^*BMM: ^*N|cp||at|South is declaring a 4S contract and the opening lead is spade 2. East/Wests' hands are blocked and again the bidding is not important. Please make your plan before clicking the forward arrow to see how it is done. Afterward you would be able to play the hand double dummy.|
+pg| ***** 50 ***** |
+
+
+NT||
+md|0,S64HQ932DQT6CKQT,0,S97HKJT7DJ873C972|cp|1|AT|
+^B@2^*BHoward: ^*N|cp||at|Playing the usual way, trying to set up declarer's hand, South has nine tricks - 5 trumps, 3 aces, and the @DK. There is no chance for 10 tricks. But, if you can find a way to take 6 trump tricks, that gives you 10 tricks. By making North the "master hand" and ruffing 3 hearts in South, you can take 6 trump tricks -- the 3 trump tricks in the North hand plus 3 ruffs by South.|
+PG| ***** 51 ***** |
+
+
+NT||cp|1|AT|
+^B@2^*BHoward: ^*N|cp||at|There are other important points here. The declarer should ruff each hearts with progressively higher trump card which makes an overruff impossible if the heart breaks badly. The declarer plan also based on a 3-2 trump distribution-most frequent. We can go ahead and continue with your play.|
+pg| ***** 52 ***** |
+
+
+pc|sJ|pc|s7|pc|s3|
+pg| ***** 53 ***** |
+
+
+pc|hA|pc|h7|pc|h6|pc|h2|
+pg| ***** 54 ***** |
+
+
+pc|h4|pc|hT|pc|s8|pc|h3|
+pg| ***** 55 ***** |
+
+
+pc|c3|pc|cT|pc|cA|pc|c2|
+pg| ***** 56 ***** |
+
+
+pc|h5|pc|hJ|pc|st|pc|h9|
+pg| ***** 57 ***** |
+
+
+pc|d4|pc|d6|pc|dA|pc|d3|
+pg| ***** 58 ***** |
+
+
+pc|h8|pc|hK|pc|sQ|pc|hQ|
+pg| ***** 59 ***** |
+
+
+sk||
+pc|d5|pc|dT|pc|dK|pc|d7|
+pg| ***** 60 ***** |
+
+
+mc|10|
+pg| ***** 61 ***** |
+
+
+up|32|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|The contract will fail if the declarer tries to pull all the trumps or let the opponent gain the lead in clubs. Because they will lead another trump.|
+PG| ***** 62 ***** |
+
+
+nt||sc||cs|6|ht|c|
+at|
+^-{You may now play this hand double dummy. You can do it with a different opening lead.
+  The most recently played card may be taken back by clicking the backward arrow  
+or the the undo button. When finished or if not interested in the double dummy
+play please tap the forward arrow to move to the next section.}
+^-|pf|y|
+pg| ***** 63 ***** |
+
+
+NT||pf||bt||
+%%4th Board weak nt - jaz
+qx||st||pn||md|3HAQJ32DJ8762CT65,,SJ742HKT9DA43CAK7,|rh||ah|Dummy Reversal - Jaz|ah|B4|cp|1|AT|
+^B@2^*BMM: ^*N|cp||at|Howard you love this board as North/South play weak NT. The board is from Michael Furstner's web site. I changed the bidding cycle to make South declarer and shortened the explanation.|
+PG| ***** 64 ***** |
+
+
+sv|0|mb|1c|an|playing 12-14 NT|
+pg| ***** 65 ***** |
+
+
+MB|p|MB|1h|MB|p|MB|1n|an|15-17 points|
+pg| ***** 66 ***** |
+
+
+MB|p|MB|2c|an|checkback Stayman, similar to NMF|
+PG| ***** 67 ***** |
+
+
+MB|p|MB|2h|an|3-card heart support|
+PG| ***** 68 ***** |
+
+
+MB|p|MB|4hppp|
+pg| ***** 69 ***** |
+
+
+md|0,sk,0,0|pc|sk|cp|8|AT|
+^B@2^*BMovie Maker: ^*N|cp||at|Go ahead and make your plan. Then click the forward arrow to see the proper line of play.|
+pg| ***** 70 ***** |
+
+
+NT||sk|s|
+md|0,Sq65H654DKQ95Cj2,0,SaT983H87DTCQ4983|cp|1|AT|
+^B@2^*BMovie Maker: ^*N|cp||at|The trumps are most likely 3-2. So drawing trumps early would not be a good plan. Further, the defenders would not allow you to ruff all your diamond losers in dummy before drawing their trumps. They will shorten your trumps as soon as they gain lead in diamonds. So the best line of play would be a dummy reversal. let us follow the suggested line of play.|
+PG| ***** 71 ***** |
+
+
+NT||cp|1|AT|
+^B@2^*BMM: ^*N|cp||at|East/West hand would stay blocked during the play. You can select your play before clicking the forward arrow. Further, you always can click the closed hand and open it or double click a hand to open all hands.|
+PG| ***** 72 ***** |
+
+
+pc|s2|pc|s3|pc|h2|
+pg| ***** 73 ***** |
+
+
+pc|d2|pc|d5|pc|dA|pc|dT|
+pg| ***** 74 ***** |
+
+
+pc|s4|pc|s8|pc|hJ|pc|s5|
+pg| ***** 75 ***** |
+
+
+pc|c5|pc|c2|pc|cA|pc|c3|
+pg| ***** 76 ***** |
+
+
+pc|s7|pc|s9|pc|hQ|pc|s6|
+pg| ***** 77 ***** |
+
+
+pc|c6|pc|cJ|pc|cK|pc|c4|
+pg| ***** 78 ***** |
+
+
+pc|sJ|pc|sT|pc|hA|pc|sQ|NT||cp|1|AT|
+^B@2^*BMM: ^*N|cp||at|Please note that for the last three Spade ruffs in above deal Declarer uses his high trump cards (A, Q and J) so that the opponents are unable to over ruff.|
+pg| ***** 79 ***** |
+
+
+sk||pc|h3|pc|h4|pc|hK|pc|h7|
+pg| ***** 80 ***** |
+
+
+pc|hT|pc|h8|pc|d6|pc|h5|
+pg| ***** 81 ***** |
+
+
+pc|h9|pc|c8|pc|d7|pc|h6|
+pg| ***** 82 ***** |
+
+
+mc|10|
+pg| ***** 83 ***** |
+
+
+up|40|NT||cp|1|AT|
+^B@2^*BMM: ^*N|cp||at|Additional comments from Mr. Furstner are:|
+pg| ***** 84 ***** |
+
+
+HT|i|AT|1. Dummy's trumps must be high enough to be able to draw the enemy trumps.|
+PG| ***** 85 ***** |
+
+
+HT|i|AT|1. Dummy's trumps must be high enough to be able to draw the enemy trumps.|
+HT|m|AT|2. Dummy must have length in Declarer's singleton or voided suit.|
+PG| ***** 86 ***** |
+
+
+HT|i|AT|1. Dummy's trumps must be high enough to be able to draw the enemy trumps.|
+HT|m|AT|2. Dummy must have length in Declarer's singleton or voided suit.|
+HT|q|AT|3. Dummy must have enough entries to lead the ruff suit back to Declarer.|
+PG| ***** 87 ***** |
+
+
+HT|i|AT|1. Dummy's trumps must be high enough to be able to draw the enemy trumps.|
+HT|m|AT|2. Dummy must have length in Declarer's singleton or voided suit.|
+HT|q|AT|3. Dummy must have enough entries to lead the ruff suit back to Declarer.|
+HT|u|AT|4. Declarer should have high trump cards too, so that they can not be over ruffed by the enemy.|
+PG| ***** 88 ***** |
+
+
+nt||sc||cs|6|ht|c|
+at|
+^-{You may now play this hand double dummy.
+  The most recently played card may be taken back by clicking the backward arrow  
+or the the undo button. When finished or if not interested in the double dummy
+play please tap the forward arrow to move to the next section.}
+^-|pf|y|
+pg| ***** 89 ***** |
+
+
+NT||pf||bt||
+%%B5 Larry Cohen
+qx||st||md|1S5HKQJ95DA98CKQ92,,S9876HAT2DKQ2CA43,|sv|b|rh||ah|Dummy Reversal - Larry Cohen|sv|b|ah|B5|cp|1|AT|
+^B@2^*BMM: ^*N|cp||at|This deal is from Mr. Larry Cohen's web site and is from the 2009 Team Trials played in White Plains. The bidding is as shown above.|mb|1hp1sp2cp2d|an|4th suit forcing|
+PG| ***** 90 ***** |
+
+
+MB|p2np4np5sp6hppp|
+pg| ***** 91 ***** |
+
+
+NT||cp|1|AT|
+^B@2^*BMM: ^*N|cp||at|However, Howard does not like the bidding and suggested a better bidding sequence which again ends in 6H contract played by South.|
+PG| ***** 92 ***** |
+
+
+at| Let us look at his bidding as shown above.|Ub|18|MB|1HP1SP2CP4HP4NP5HP6HPPP|
+pg| ***** 93 ***** |
+
+
+nt|^b@2
+West leads spade ace followed by a small spade.|
+PG| ***** 94 ***** |
+
+
+md|0,SA,0,0|pc|SAs6|MD|0,0,0,s3|PC|s3s5|
+pg| ***** 95 ***** |
+
+
+md|0,s4,0,0|pc|s4s7|md|0,0,0,sq|pc|sq|cp|1|AT|
+
+^B@2^*BMM: ^*N|cp||at|What is your plan.|
+PG| ***** 96 ***** |
+
+
+AT| It is best to let Mr. Cohen do the teaching.|
+PG| ***** 97 ***** |
+
+
+NT||
+cp|1|AT|
+^B@2^*BLarry Cohen: ^*N|cp||at|The only possible loser in your hand is the fourth round of clubs. If clubs split 3-3 you will have 12 easy tricks (unless hearts are 5-0, but that wouldn't be fair).  What if clubs are 4-2? You still might survive in one of two ways:|
+PG| ***** 98 ***** |
+
+
+NT||
+cp|1|AT|
+^B@2^*BLarry Cohen: ^*N|cp||at|1) West has doubleton jack or doubleton ten (or doubleton jack-ten). Then you can cash two top clubs and guess to finesse your C9. |
+PG| ***** 99 ***** |
+
+
+AT|
+
+2) Maybe one defender has only two hearts and two clubs; then you can draw only two rounds of trumps and ruff the fourth club in dummy.|
+PG| ***** 100 ***** |
+
+
+AT| I am just playing with you. This is one of those hands where you have to consider a dummy reversal.|
+PG| ***** 101 ***** |
+
+
+NT||
+cp|1|AT|
+^B@2^*Blarry Cohen: ^*N|cp||at|What if you can ruff three spades in your hand?|
+PG| ***** 102 ***** |
+
+
+AT| Now we're talking. As long as there are no bad splits (especially 4-1 trumps), you will have 12 tricks regardless of how clubs behave. Furthermore, if you time it right, you can combine all your chances.|
+PG| ***** 103 ***** |
+
+
+NT||
+cp|1|AT|
+^B@2^*BLaryy Cohen: ^*N|cp||at|After ruffing the spade,|PC|h5|
+PG| ***** 104 ***** |
+
+
+AT| you lay down your HK|pc|hK|sk|s|MD|0,SJTH87DJT3CJ765,0,SKQ32H643D7654CT8|pc|h7|pc|h2|pc|h3|
+pg| ***** 105 ***** |
+
+
+at| (all following) and then continue with a second heart to dummy.|
+pc|h9|pc|h8|pc|hT|pc|h4|
+pg| ***** 106 ***** |
+
+
+at| Why draw two rounds of trump if you are planning on reversing the dummy?|
+PG| ***** 107 ***** |
+
+
+NT||cp|1|AT|
+^B@2^*BLarry Cohen: ^*N|cp||at|Because if trumps are 4-1, you can't ruff even one more spade in your hand--you will let the opponent with four trumps end up with more trumps than you. If you find out hearts are 4-1, you will abandon the dummy reversal plan. But, when everyone follows on the second heart you are in business.|
+PG| ***** 108 ***** |
+
+
+NT||cp|1|AT|
+^B@2^*BLarry Cohen: ^*N|cp||at|In dummy, you can ruff another spade in your hand.|pc|s8|pc|s2|pc|hJ|pc|sT|
+pg| ***** 109 ***** |
+
+
+at| Then you cross to the CA and ruff dummy's last small spade with your last trump.|pc|c2|pc|c5|pc|cA|pc|c8|
+pg| ***** 110 ***** |
+
+
+pc|s9|pc|sK|pc|hQ|pc|sJ|
+pg| ***** 111 ***** |
+
+
+sk||at|  All that is left is to travel to dummy in diamonds and draw their last trump.|pc|d8|pc|d3|pc|dK|pc|d4|
+pg| ***** 112 ***** |
+
+
+at| On that last trump, you throw away a small club |pc|hA|pc|h6|pc|c9|pc|c6|
+pg| ***** 113 ***** |
+
+
+mc|12|at| and claim.|
+pg| ***** 114 ***** |
+
+
+up|36|NT||cp|1|AT|
+^B@2^*BLarry Cohen: ^*N|cp||at|This is a textbook example of a dummy reversal with the added twist that you can change plans in midstream if the trumps don't split.|
+PG| ***** 115 ***** |
+
+
+AT| (In real life, I hate to say, trumps were 4-1 and clubs were 6-0-the wrong way- as it is shown above so I had no chance to make my slam.)|md|1S5HK Q J 9 5 DA 9 8 CK Q 9 2,sAJT4 H3 DJT CJT8765,S9 8 7 6 HA T 2 DK Q 2 CA 4 3,SK Q 3 2H8764D76543 C|mb|6hPPP|
+PG| ***** 116 ***** |
+
+
+AT| However, if I were dealing the cards,|md|1S5HKQJ95DA98CKQ92,SAJT4H87DJT3CJ765,S9876HAT2DKQ2CA43,SKQ32H643D7654CT8|sv|b|
+pg| ***** 117 ***** |
+
+
+AT| this-the one we discussed-would have been the Real Deal :).|
+PG| ***** 118 ***** |
+
+
+NT||cp|1|AT|
+^B@2^*BMM: ^*N|cp||at|With that interesting note from Mr. Cohen we can go to the next board which is based on October 10, 2008 New York Times, reporting the results from the World Mind Sports Games held in Beijing.|
+PG| ***** 119 ***** |
+
+
+NT||
+%%Board 6 from NYT<<<<<<<<<<<<<
+qx||st||pn|Tor helness-Norway,,Carlos Pellegrini-Argentina,|sk|s|md|4SaQ3 HT82 DAJ9 CKT98,s4,SKT76 H-DQT852 CA743,|rh||ah|Dummy Reversal - NY Times|ah|B6|SV|O|cp|1|AT|
+^B@2^*BMM: ^*N|cp||at|The bidding sequence which you will see next is above my pay grade and Howard had a few objections and comments. However, each bid will be explained as outlined in the article. Again this is a tutorial on dummy reversal and not the bidding. But an exercise in pretending to be a world class player may be fun :).|
+pg| ***** 120 ***** |
+
+
+mb|p|NT||lb|*bSelect your bid^^1n|
+MB|1N|SB|SI upgraded my hand to 15 points because of the excellent intermediates.|
+PG| ***** 122 ***** |
+
+
+mb|P|sk|n|
+lb|*bSelect your bid^^2c|
+mb|2C|AN|Stayman|sb|S|
+PG| ***** 124 ***** |
+
+
+mb|p|sk|s|
+lb|*bSelect your bid^^2d|
+mb|2D|AN|No 4-card major|
+PG| ***** 126 ***** |
+
+
+mb|P|sk|n|
+lb|*bSelect your bid^^3d|
+MB|3D|AN|game force-diamonds|
+PG| ***** 128 ***** |
+
+
+MB|P|sk|s|
+lb|*bSelect your bid^^3s|
+MB|3S|AN|Spade control; no heart control|
+PG| ***** 130 ***** |
+
+
+mb|P|sk|n|
+lb|*bSelect your bid^^4c|
+MB|4C|AN|control cuebid-clubs|
+PG| ***** 132 ***** |
+
+
+mb|P|sk|s|
+lb|*bSelect your bid^^4d|
+MB|4D|AN|waiting to hear further information from partner|
+PG| ***** 134 ***** |
+
+
+mb|P|sk|n|
+lb|*bSelect your bid^^4h|
+MB|4H|an|control cuebid-hearts|
+PG| ***** 136 ***** |
+
+
+mb|P|sk|s|
+lb|*bSelect your bid^^4s|
+MB|4S|AN|2nd control bid showing 1st round control|
+PG| ***** 138 ***** |
+
+
+MB|P|sk|n|
+lb|*bSelect your bid^^4n|
+MB|4N|AN|roman key cards-1430|
+PG| ***** 140 ***** |
+
+
+MB|P|sk|s|
+lb|*bSelect your bid^^5h|
+MB|5H|AN|two key cards - no DQ|
+PG| ***** 142 ***** |
+
+
+sk|n|MB|P6DPPP|
+PG| ***** 143 ***** |
+
+
+pc|s4|sk|s|cp|1|AT|
+^B@2^*BMM: ^*N|cp||at|Please plan to make 6D before clicking the forward arrow.|
+pg| ***** 144 ***** |
+
+
+NT||cp|1|AT|
+^B@2^*BMM: ^*N|cp||at|South was confident that the opening lead was a singleton. But declarer could see a possible late spade loser, a possible diamond loser and a probable club loser. He decided that the best line was a dummy reversal, ruffing losers in the longer trump hand (here, the dummy) and drawing trumps from the shorter hand. Let us follow the play. Again you can choose your card before clicking the forward arrow-just to quiz yourself.|
+PG| ***** 145 ***** |
+
+
+NT||md|0,SHKJ9653 D764 CQ52,0,SJ9852 HAQ74 DK3 CJ6|cp|1|AT|
+^B@2^*BMM: ^*N|cp||at|South won the first trick with his spade ace,|pc|s6|pc|s8|pc|sA|
+PG| ***** 146 ***** |
+
+
+AT| ruffed a heart in the dummy|
+pc|h2|pc|h3|pc|d2|pc|h4|
+pg| ***** 147 ***** |
+
+
+at| and led a diamond to his nine.|pc|d5|pc|d3|pc|d9|pc|d4|
+pg| ***** 148 ***** |
+
+
+at| When that held, South ruffed a heart with dummy’s diamond ten|pc|h8|pc|h5|pc|dT|pc|h7|
+pg| ***** 149 ***** |
+
+
+at| and played a club to his eight, losing his club trick without letting East get on lead.|
+pc|c3|pc|c6|pc|c8|pc|cQ|
+pg| ***** 150 ***** |
+
+
+sk||nt||cp|1|AT|
+^B@2^*BMM: ^*N|cp||at|Now South can easily claim all the remaining tricks and collect 15 match points out of 16.|
+pg| ***** 151 ***** |
+
+
+mc|12|
+pg| ***** 152 ***** |
+
+
+up|20|nt||sc||cs|6|ht|c|
+at|
+^-{You may now play this hand double dummy.
+  The most recently played card may be taken back by clicking the backward arrow  
+or the the undo button. When finished or if not interested in the double dummy
+play please tap the forward arrow to move to the next section.}
+^-|pf|y|
+pg| ***** 153 ***** |
+
+
+NT||pf||bt||
+%%%Board 7 <<<<<<<<<<<
+qx||st||pn|Declarer,,Dummy,|sk|s|md|3SAK986 HT62 D8742 C6,S543 HKJ3 DAQ CQ8542,SQJT7 HA54 DJ5 CAT73,S2 HQ987 DKT963CKJ9|SV|O|rh||ah|Dummy Reversal - BRIDGEBUM|ah|B7|cp|1|AT|
+^B@2^*BMM: ^*N|cp||at|This board is from Bridgebum web site. With Howard's help the following bidding sequence seems to be the best way to get South to declare 3S as required in the example. Further, the first three tricks are played as indicated by the author.|MB|1CP1SP2Sx3SPPP|
+PG| ***** 154 ***** |
+
+
+nt|^B@2
+"A dummy reversal is a ruffing strategy employed in suit contracts. Normally when a declarer holds a long trump suit in hand, he uses the short trump suit in dummy to ruff losers. A dummy reversal flips this concept around so that declarer's long trumps are used for ruffs, and dummy's suit is used to draw trumps."|
+PG| ***** 155 ***** |
+
+
+NT||sk|w|lb|*CWhich card would be a safe lead ?^^s3^S543 HKJ3CQ8542DAQ|PC|S3|sk|s|nt|^b@2
+Declarer has 5 trump tricks, 1 heart, and 1 club. To secure two more tricks declarer plans to ruff two diamonds in the dummy. Let us follow this plan.|
+pg| ***** 157 ***** |
+
+
+sk|s|PC|s7s2s8|
+PG| ***** 158 ***** |
+
+
+PC|d2dqd5d6|at| West wins the  DQ and leads another trump.|
+PG| ***** 159 ***** |
+
+
+pc|s4|nt|^b@2
+South wins again and |PC|std3sk|
+pg| ***** 160 ***** |
+
+
+at| plays another diamond.|PC|d4|
+PG| ***** 161 ***** |
+
+
+AT| West wins again|PC|dadjd9|
+pg| ***** 162 ***** |
+
+
+AT| and leads his last trump.|PC|s5sjh7sa|nt|^b@2
+This is the the layout which declarer faces at trick six.|SK||
+PG| ***** 163 ***** |
+
+
+at| As is obvious declarer can only ruff one diamond loser in dummy and the contract is defeated.|
+PG| ***** 164 ***** |
+
+
+nt|^b@2
+Let us go back and plan differently|UP|19|
+PG| ***** 165 ***** |
+
+
+at| After you made your winning plan please click the forward for the explanation.|
+PG| ***** 166 ***** |
+
+
+nt|^b@2
+Dummy reversal is the winning plan. Let us look at it.|
+PG| ***** 167 ***** |
+
+
+AT| South wins the opening lead in the dummy and plays club Ace.|
+PC|s7s2s6|
+PG| ***** 168 ***** |
+
+
+PC|cac9c6c2|
+PG| ***** 169 ***** |
+
+
+nt|^b@2
+Now declarer ruffs a club in hand and returns back to the dummy playing trumps.|PC|c3cjs8c4|
+PG| ***** 170 ***** |
+
+
+PC|s9s4sqd3|
+PG| ***** 171 ***** |
+
+
+pc|c7ckskc5|
+pg| ***** 172 ***** |
+
+
+at| Declarer now crosses to the heart Ace|PC|h2h3hah8|
+pg| ***** 173 ***** |
+
+
+at| and ruffs dummy's last club for his seventh trick.|PC|ctd6sac8|
+PG| ***** 174 ***** |
+
+
+mc|9|AT| Dummy's remaining spades provide the eight and ninth. Mission accomplished.|
+pg| ***** 175 ***** |
+
+
+NT||
+%%%Board 8 <<<<<<<<<<<
+qx||st||pn||rh||ah|by Richard Pavlicek|ah|B8|sk|s|MD|1SA75 HAKQT3 D2 CAKQ3,SKT43 H654 DKQT8 C76,SJ82 HJ987 DA743 C92,SQ96 H2 DJ965 CJT854|SV|O|lb|*bWhat would you bid?^^2c|MB|2CP2DP|lb|*bWhat would you bid?^^2h|MB|2HP|sk|n|lb|*bWhat would you bid?^^3h|MB|3HP|sk|s|lb|*bWhat would you bid?^^3s|MB|3s|an|1st or 2nd control in spades|
+PG| ***** 180 ***** |
+
+
+MB|P|sk|n|lb|*bWhat would you bid?^^4d|MB|4D|an|diamond control; no club control|
+PG| ***** 182 ***** |
+
+
+MB|P|sk|s|lb|*bWhat would you bid?^^6h|MB|6H|MB|PPP|
+PG| ***** 184 ***** |
+
+
+sk||pf|Y|sc||cs|6|ht|c|
+at|
+^-{  You may now play this hand double dummy.
+  Diamond King is the opening lead and ^*B dummy reversal^*n is the key to success.  
+The most recently played card may be taken back by clicking the backward arrow  
+or the the undo button. When finished or if not interested in the double dummy
+  play please tap the forward arrow to see the recommended line by Richard Pavlicek.  }
+^-|PC|DK|
+pg| ***** 185 ***** |
+
+
+NT||pf||
+st||pn||rh||ah|by Richard Pavlicek|ah|B8-shortened bidding|MD|1SA75 HAKQT3 D2 CAKQ3,SKT43 H654 DKQT8 C76,SJ82 HJ987 DA743 C92,SQ96 H2 DJ965 CJT854|SV|O|mb|6hppp|pc|dK|pc|dA|pc|d5|pc|d2|At|^B@2
+After winning the diamond ace,|
+PG| ***** 186 ***** |
+
+
+nt|^B@2
+a diamond is ruffed high in the South hand.|
+pc|d3|pc|d6|pc|hQ|pc|d8|
+pg| ***** 187 ***** |
+
+
+nt|^B@2
+Two top clubs are cashed (this could have been postponed as the cards lie, but is technically correct),| 
+pc|cA|pc|c6|pc|c2|pc|c4|
+pg| ***** 188 ***** |
+
+
+pc|cK|pc|c7|pc|c9|pc|c5|
+pg| ***** 189 ***** |
+
+
+nt|^B@2
+followed by a low trump to dummy|
+pc|h3|pc|h4|pc|h7|pc|h2|
+pg| ***** 190 ***** |
+
+
+nt|^B@2
+and another diamond ruffed high.|
+pc|d4|pc|d9|pc|hK|pc|dT|
+pg| ***** 191 ***** |
+
+
+nt|^B@2
+The heart 10 is overtaken by dummy’s jack|
+pc|hT|pc|h5|pc|hJ|pc|c8|
+pg| ***** 192 ***** |
+
+
+nt|^B@2
+and the last diamond is ruffed by South.|
+pc|d7|pc|dJ|pc|hA|pc|dQ|
+pg| ***** 193 ***** |
+
+
+nt|^B@2
+Dummy is entered by ruffing South’s small club|
+pc|c3|pc|s3|pc|h8|pc|cT|
+pg| ***** 194 ***** |
+
+
+nt|^B@2
+and the last enemy trump was drawn.|
+pc|h9|pc|s6|pc|s5|pc|h6|
+pg| ***** 195 ***** |
+
+
+pc|s2|pc|s9|pc|sA|pc|s4|
+pg| ***** 196 ***** |
+
+
+nt|^B@2
+One of dummy’s spade losers could then be discarded on South’s high club|pc|cQ|pc|sT|pc|s8|pc|cJ|
+pg| ***** 197 ***** |
+
+
+nt|^B@2
+That made the 12th trick.|
+pc|s7|pc|sK|pc|sJ|pc|sQ|
+pg| ***** 198 ***** |
+
+
+sc||up|52|at| Notice that the recommended line required that only two clubs be cashed instead of three-a fact which proved to be the winning edge.|
+PG| ***** 199 ***** |
+
+
+NT||
+%%%Board 8 <<<<<<<<<<<
+%%A DUMMY REVERSAL - Brian Gunnell
+qx||st||pn|You,,Partner,|md|1S KT953 H Q432 D C AK75,da,S AQJ H 875 D 7532 C QJ8,|sv|0|rh||ah|ACBL - Brian Gunnell|AH|B9|mb|1sxr2dpp2s3d3sp4sppp|nt|^B@2 
+"You and Partner stumble into 4S and West leads @DA.|PC|da|
+PG| ***** 200 ***** |
+
+
+AT|
+You can count five Spade tricks and four Clubs That’s 9, where’s the 10th?"
+|
+PG| ***** 201 ***** |
+
+
+nt|^B@2
+"A ruff in the 'short hand' is a common ploy for an extra trick, and you could try to ruff a Heart in Dummy. Playing on Hearts would have two ways to win. The suit might be 3-3 with the thirteenth Heart providing the 10th trick or eventually you can ruff the fourth round of Hearts on the board."
+|
+PG| ***** 202 ***** |
+
+
+nt|^B@2
+"The snag is that the trump suit might be 4-1 and the defense might lead a trump each time that they get in with a Heart. There’s a better line,|
+PG| ***** 203 ***** |
+
+
+AT| what is it?" |
+PG| ***** 204 ***** |
+
+
+nt|^B@2
+"Ruffing the opening Diamond lead does not generate a 10th trick. No, that is a ruff in the long hand, that still leaves you with only five trump tricks." 
+|
+PG| ***** 205 ***** |
+
+
+nt|^B@2
+"But suppose that you ruff three Diamonds. Now you do get six trump tricks via Dummy’s three high trumps plus three ruffs in your hand (the long hand). |
+PG| ***** 206 ***** |
+
+
+AT|
+
+In effect, Dummy becomes the master hand, the one which will be used to draw the enemy trumps after your hand has got your three ruffs."
+|
+PG| ***** 207 ***** |
+
+
+nt|^B@2 
+"Therefore, the sequence of plays is:|sk|s|MD|0,S87HAJT9DK86CT92,0,S642HK6DQJT94C643|nt|^B@2
+ruff the Diamond lead,|
+pc|d5|pc|d4|pc|s3|
+pg| ***** 208 ***** |
+
+
+nt|^B@2
+cross to the @SQ,|
+pc|s5|pc|s7|pc|sQ|pc|s2|
+pg| ***** 209 ***** |
+
+
+nt|^B@2
+ruff another Diamond,|
+pc|d2|pc|d9|pc|s9|pc|d6|
+pg| ***** 210 ***** |
+
+
+nt|^B@2
+cross to the @SJ,|
+pc|sT|pc|s8|pc|sJ|pc|s4|
+pg| ***** 211 ***** |
+
+
+nt|^B@2
+ruff a third Diamond,|
+pc|d3|pc|dT|pc|sK|pc|d8|
+pg| ***** 212 ***** |
+
+
+nt|^B@2
+cross to the @CQ,|
+pc|c5|pc|c2|pc|cQ|pc|c3|
+pg| ***** 213 ***** |
+
+
+sk||nt|^B@2
+draw the remaining enemy trump.|
+pc|sA|pc|s6|pc|h2|pc|h9|
+pg| ***** 214 ***** |
+
+
+pc|cJ|pc|c4|pc|c7|pc|c9|nt|^B@2
+This line works whenever trumps are 3-2."|
+pg| ***** 215 ***** |
+
+
+pc|c8|pc|c6|pc|cK|pc|cT|
+pg| ***** 216 ***** |
+
+
+pc|cA|pc|hT|pc|h5|pc|dJ|
+pg| ***** 217 ***** |
+
+
+mc|10|
+pg| ***** 218 ***** |
+
+
+up|40|sk||nt|^B@2
+"The thing to remember here is that Declarer needs three ruffs for the Dummy Reversal to produce an extra trick.  It’s that third ruff which reduces Declarer’s trumps to a shorter length than Dummy’s. Actually, it would even be possible for Declarer to get a fourth ruff, but there are insufficient entries to take advantage of this."
+|
+PG| ***** 219 ***** |
+
+
+nt||cp|1|AT|
+^B@2^*BMM: ^*N|cp||at|This concludes the tutorial. |
+PG| ***** 220 ***** |
+
+
+ 
+
+
+
+
+
+
+

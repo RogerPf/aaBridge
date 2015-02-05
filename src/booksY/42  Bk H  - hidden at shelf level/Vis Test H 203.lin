@@ -1,0 +1,43 @@
+%% Collect Material
+%% Last edited  2013 Dec 03
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|150|ff|1Arial|fb|19|fm|1|       1 large
+fh|236|ff|2Arial|fb|29|fm|2|       2 med
+fh|342|ff|3Arial|fb|39|fm|3|       2 med+
+fh|664|ff|6Arial|fb|69|fm|6|       6 v large
+fh|925|ff|9Arial|fb|99|fm|9|       very small for faking 'buttons'
+
+cr|3200|cg|3255|cb|3255|     3  light blue
+cr|4170|cg|4190|cb|4255|     4  med blue
+cr|516|cg|5128|cb|516|       5  green 
+cr|7230|cg|70|cb|70|         7  red
+
+bt||
+fp|1|at|
+
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp|9|
+mn|   Vis TesT  -  h 201   |
+qx|VT|
+ht|d|
+at|^^|fp||at|
+
+
+^bHello there
+
+
+^c@2@.   Noting more to say.
+
+@.   Please have a nice day.
+
+@.   I do mean it.
+
+@.   Well I do a little bit.
+
+
+
+
+|
+ht|z|at|@0
+^r Roger Pfister|

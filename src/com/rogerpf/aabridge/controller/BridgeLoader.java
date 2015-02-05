@@ -87,7 +87,7 @@ public class BridgeLoader {
 		/** 
 		 * Path should now not be empty
 		 */
-		Book b = new Book(bookPath, onlyThese, "" /* not used */);
+		Book b = new Book(bookPath, onlyThese);
 		boolean chapterLoaded = false;
 		if (b.size() > 0) {
 			chapterLoaded = b.loadChapterByIndex(0);
@@ -169,6 +169,12 @@ public class BridgeLoader {
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
+
+		/* We still need to run on MACs (Snow Leopard and earlier that use Java 6
+		 * and Java 6 has no way of freeing the loaded class, ven if one could work
+		 * out WHEN that should be done.
+		 */
+		@SuppressWarnings("resource")
 		URLClassLoader classLoader = new URLClassLoader(urls);
 
 		try {

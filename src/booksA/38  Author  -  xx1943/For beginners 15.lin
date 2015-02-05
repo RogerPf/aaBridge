@@ -1,0 +1,877 @@
+%% Suit-contracts(7) Elimination Play
+%% For beginners(15)
+mn| Al (xx1943) teaching : Declarer play for beginners Lesson 15: Play a suit-contract 7|
+tu||
+
+%% Font definition:
+fh|150|ff|1Arial|fb|110|fm|1|
+fh|235|ff|2Arial|fb|28|fm|2|
+fh|340|ff|3Arial|fb|35|fm|3|
+fb|49|fm|4|fb|4|fm|4|
+
+%% color definition
+cr|116|cg|116|cb|1255|              blau = blue
+cr|2255|cg|2255|cb|264|             gelb = yellow
+cr|30|cg|30|cb|3128|                dunkelblau = dark blue
+cr|4255|cg|4255|cb|40|              dunkleres gelb = dark yellow
+cr|516|cg|5128|cb|516|              grün = green
+cr|6245|cb|6220|cg|6235|            beige
+cr|70|cb|7220|cg|7235|              grün-blau = green-blue
+cr|8255|cb|8200|cg|8200|            rosa = pink
+cr|9200|cb|90|cg|9150|              braun = brown
+
+cm||
+%% -----------------------------------menu-------------------------------------------
+qx|Menu|
+set background color
+bg|6|
+bt||nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|#3^-{ Al teaching:  Declarer play for beginners (suit contract 7)}
+#4{An other type of Plan 3: Elimination Play}
+^-|
+cp||fp||
+
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+ht|d|
+cs|3|
+cp|4|
+^-
+fp|1|3d|0|
+cp||
+fp||
+cs|2|
+ht|f|
+at|^c@2^x@3{
+^*GIntroduction,     What you learn in this lesson - please read it first^*N
+
+{
+^*Go1,     The Elimination Technique^*N
+^*Go2,     Exiting in the problem suit - Magic AQ10^*N
+^*Go3,     Save a guess^*N
+^*Go4,     Loser on loser^*N
+^*Go5,     Problem suit: Qxx - Jxx^*N
+
+{
+^*Gintro, ^c     About this series of lessons^*N 
+
+{^x@3
+^*Gbooks,     Recommendations^*N
+^*Ghelp,     How to navigate in this movie ^*N
+^*Gcredits,     Credits ^*N
+}|
+pg| ***** 0 ***** |
+
+
+%%--------------------------summary--What to learn in this lesson---------
+qx|Introduction|
+
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {This is what you'll learn in this lesson ^z}
+|
+cp||cs|8|fp||
+ht|d| %% Vertikale position
+at|#3The play of a suit contract is in general much more complicated than to play a NTcontract. 
+To get a better idea you might look up this page:
+^*Hwww.albrecht-hollstein.de/Bridge/Lessons/Play a suit contract/How to play Suit-contract summary.htm^*N|
+
+ht|h|fp|3|cs|7|cp|9|at|
+#3^c@2{This is a general rule in suit-contracts too:
+Make your plan of play, BEFORE you touch a card in dummy!!! ^z}
+|
+cs|2|fp||cp||
+at|#4{^c@2In the last lessons we learned that in a suit contract we count primarily the number of losers, not the sure tricks. 
+You count the losers of the main hand which is generally the one with the more trumps. ^z}|
+cs|8|
+at|
+#5{^c@2The ways to avoid losers are:
+^d Plan 1: Ruff with dummy's trumps.
+^d Plan 2: Discard on dummy's long suit.
+^d Plan 3: Make tricks with lower honors by finessing.
+^d Plan 4: Score extra tricks in trumps
+^e      (e.g. cross-ruff; dummy reversal; trump coup).
+
+{^c@2In this lesson we shall see a variant of Plan 3, the elimination play: It is described as the situation in which an opponent has to choose between leading towards a tenace or conceding a ruff and discard.  ^z}@0|
+cs|2|
+
+
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+pg| ***** 1 ***** |
+
+
+ht|h|at|#7@4
+{^c@2Questions you should always ask yourself before you adopt an elimination play:
+^d1. Do I have a problem suit where I have to make a guess or where leading the suit (breaking it) may cost a trick?
+^d2. Do I have enough trumps in both hands to make a ruff and sluff possible?
+^d3. Is it possible to eliminate the side suits?
+^d4. How will I put a defender on lead? ^z}|
+cs|2|
+
+at|
+
+{^c@2Most elimination plays rely on a tenace in some suit. Often it is a holding which will benefit from a lead by an opponent. Let's see some examples:
+^d1. Qxx  Jxx One trick is certain if suit is lead by an opponent.
+^d2. AQT  xxx Two tricks are certain if neither opponent has a safe exit.
+^d3.  AJx  KTx Three tricks are certain. ^z}
+
+
+@0@1|
+
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+pg| ***** 2 ***** |
+
+
+%% --------------------------hand number 1 ------------------------------------
+%% Mollo and Gardener - Card Play Technique - page 236
+qx|o1|
+cm||st||nt||sk|S|%small text set kibbing South
+md|3sAK98HKQ9DAJ8CA75,sQJ2h82d9642cqj93,sT7643HA43DKT7CK2,|
+sv|0|%%set vulnerability
+rh||ah|Board 1|ah|Elimination|ah|Technique| %%set description box
+mb|pp2Np3H|an|@stransfer|mb|p4S|an|super accept|mb|p6sppp| %% bidding
+pc|cJ|
+pg| ***** 3 ***** |
+
+
+at|masterhand?|
+pg| ***** 4 ***** |
+
+
+sb|sdummy!|at|
+losers?|
+pg| ***** 5 ***** |
+
+
+sb|s2S+0H+1D+0C = 3 losers|
+pg| ***** 6 ***** |
+
+
+at|declarerplan?|
+pg| ***** 7 ***** |
+
+
+sb|sIf i can force a defender to lead a diamond i could be home.|
+pg| ***** 8 ***** |
+
+
+at|
+Let's see how the elimination or end play works out in practice....Watch carefully as you will play the next hands.|
+pg| ***** 9 ***** |
+
+
+sb|sOk. I look forward to use this new technique.|
+pg| ***** 10 ***** |
+
+
+pc|ckcc|
+pg| ***** 11 ***** |
+
+
+pc|sssas|
+pg| ***** 12 ***** |
+
+
+at|
+Unfortunately @ss are 3-1. What now? Should declarer rely on a 50% @d finesse to make his bid?|
+pc|sKssc6|
+pg| ***** 13 ***** |
+
+
+sb|sOnly SQ is still loser. Now throwin must eliminate the D-loser|
+at|
+Nope. The contract is safe. First, let's eliminate the side suits.|
+pg| ***** 14 ***** |
+
+
+pc|caccc|
+pg| ***** 15 ***** |
+
+
+pc|ccsc|
+pg| ***** 16 ***** |
+
+
+at|
+The club suit is now eliminated.|
+pg| ***** 17 ***** |
+
+
+sb|s|
+pc|HhhKh|
+pg| ***** 18 ***** |
+
+
+pc|hhhah|
+pg| ***** 19 ***** |
+
+
+pc|hhhd|
+nt|The heart suit is now eliminated too. Was there a danger of a ruff? Nope. West was welcomed to ruff if he had the @sQ. He would then have been forced to break the @d suit or to give a ruff-and-discard.|
+pg| ***** 20 ***** |
+
+
+nt|Now we lead a @s and claim our bid. It does not matter who has that 3rd @s or what he does when he gets in with it. The luckless defender can do one of two things: play into the @d tenace, or give declarer a ruff and discard.|
+pg| ***** 21 ***** |
+
+
+pc|sssh|
+pg| ***** 22 ***** |
+
+
+sk||hc|cqd7s8|at|
+If west plays @cQ then you get rid of a @dloser in dummy and ruff in hand.
+At last you can now see that you use your last trump in dummy to ruff the third @d in your hand.|
+pg| ***** 23 ***** |
+
+
+lc|c8skcqd7s8|sc|y|
+pg| ***** 24 ***** |
+
+
+%% --------------------------hand number 2 ------------------------------------
+qx|o2|
+%% Hand 2 Al's elimination movie
+%% Magic AQT
+st||sk|s|sc||%small text set kibbing South
+md|4SAQT4HA7DK6CKQJT3,SKJ9HJT932DT87C84,S753H6DAQ54CA9762,S862HKQ854DJ932C5|
+sv|n|%%set vulnerability
+rh||ah|Board 2|ah|Magic AQT| %%set description box
+mb|p1cp2c|an|10+Hcps 4+@cs no 4 card major|mb|p4c|an|rkc for @cs|mb|p4S|an|2 keys w/o @cQ|mb|p4N|an|king ask|mb|p6cppp|nt|| %% bidding
+pc|hJ|nt|You have reached a nice slam contract. You have 11 sure tricks. What is your plan to make your bid?|
+pg| ***** 25 ***** |
+
+
+sb|s I have 3 spade losers. One can be discarded on the extra diamond winner. |
+pg| ***** 26 ***** |
+
+
+sb|sFor the 12th trick I could lead twice a small spade from dummy making a double finesse?|
+pg| ***** 27 ***** |
+
+
+at|
+This is not a bad plan. It has very good probabilities to work out (75%). But can you think of a plan that is totally safe (100%)?|
+pg| ***** 28 ***** |
+
+
+sb|sGrrr... On a spade lead I had 12 tricks on top....|
+pg| ***** 29 ***** |
+
+
+at|
+Exactly! Maybe you can make an opponent do just that. As we saw previously there is a plan to make the opponent play through your tenace or give you a ruff and discard. Always consider using an elimination play when looking for an extra trick, with lots of trumps in both hands, and the possibility of eliminating the side suits.|
+pg| ***** 30 ***** |
+
+
+sb|sOk. I will try the end play technique.|
+pg| ***** 31 ***** |
+
+
+pc|hhhA|
+pg| ***** 32 ***** |
+
+
+sb|sFirst things, first! Let's clear the trump suit.|
+pc|cKccc|
+pg| ***** 33 ***** |
+
+
+pc|cqccah|
+pg| ***** 34 ***** |
+
+
+sb|sNow we eliminate the diamond suit.|
+pg| ***** 35 ***** |
+
+
+pc|dddKd|sb|s|
+pg| ***** 36 ***** |
+
+
+pc|dddAd|
+pg| ***** 37 ***** |
+
+
+pc|dQdsd|
+pg| ***** 38 ***** |
+
+
+pc|ddch|
+pg| ***** 39 ***** |
+
+
+sb|sWe do the same with the heart suit.|
+pg| ***** 40 ***** |
+
+
+pc|hhch|
+pg| ***** 41 ***** |
+
+
+sb|sI now return to dummy to lead the problem suit.|
+at|
+Correct! Sometimes you can put a defender on lead in the problem suit itself.|nt||
+pg| ***** 42 ***** |
+
+
+at|Here, you only need to cover the East card and West will be endplayed. He will have to lead from @sK into your @sAQ tenace or concede a ruff and sluff. |sb|s|sk||
+
+nt||at|Try to see this is true with this distribution!|
+pg| ***** 43 ***** |
+
+
+md|0,s2,,sk|at|
+But also with this one!|
+pg| ***** 44 ***** |
+
+
+pc|sssTsJ|
+pg| ***** 45 ***** |
+
+
+sb|wWell done opponent!|
+pg| ***** 46 ***** |
+
+
+at|Well done! You can claim 12 tricks.|sb|w|
+pg| ***** 47 ***** |
+
+
+mc|12|lc|c8|sk||sc|y|
+pg| ***** 48 ***** |
+
+
+%% --------------------------hand number 3 ------------------------------------
+qx|o3|
+%% David Bird - Bridge Endplays for everyone - pge 10
+st||sk|s|sc||%small text set kibbing South
+md|1Skqt72hkt4da4c974,s964hj62dj83ckj62,saj83hq93dk75cat3,|
+sv|e|%%set vulnerability
+rh||ah|Board 3|ah|Save a guess| %%set description box
+mb|1sp2n|an|4+@ss 12+Hcps no single or void|mb|p4sppp| %% bidding
+pc|s6|nt|Now make your plan before you touch a card in dummy!!!!!!!!!!!!|
+pg| ***** 49 ***** |
+
+
+sb|s2 losers in both red suits and no possibility of plan 1 or plan 2.|
+pg| ***** 50 ***** |
+
+
+at|
+Correct. Which suit is your 'problem suit'?|
+pg| ***** 51 ***** |
+
+
+sb|sThe heart suit is 'problematic' since if I play the suit I need to guess the Jack location.|
+pg| ***** 52 ***** |
+
+
+at|
+Exactly! And how can you save yourself a guess?|
+pg| ***** 53 ***** |
+
+
+sb|sBy an elimination play. But I can't eliminate the club suit??|
+pg| ***** 54 ***** |
+
+
+at|
+Think about it this way. You have always 2 losers in the suit. Let the defenders cash them and have no other choice than lead your problem suit for you or give you a ruff and discard....|
+pg| ***** 55 ***** |
+
+
+sb|sI have my plan. Clear trumps and the diamond suit, cash the club Ace and then let the opps help me...|
+Pg| ***** 56 ***** |
+
+
+at|
+Sounds like a perfect plan to me.|
+pg| ***** 57 ***** |
+
+
+pc|sAss7|
+pg| ***** 58 ***** |
+
+
+sb|s|
+pc|sh8sKs|
+pg| ***** 59 ***** |
+
+
+pc|sqssd|
+pg| ***** 60 ***** |
+
+
+pc|dAddd|
+pg| ***** 61 ***** |
+
+
+pc|dddKd|
+pg| ***** 62 ***** |
+
+
+pc|ddsd|
+pg| ***** 63 ***** |
+
+
+pc|cccAc|
+pg| ***** 64 ***** |
+
+
+sb|sExiting with a club and waiting for an opp to lead the heart suit for me....|
+pg| ***** 65 ***** |
+
+
+pc|ccccJ|
+pg| ***** 66 ***** |
+
+
+sb|s|
+pc|cKccc|
+pg| ***** 67 ***** |
+
+
+sb|wGrrrr I have no safe exit card...|
+pg| ***** 68 ***** |
+
+
+sk||
+pc|hhhah|sb|w|
+pg| ***** 69 ***** |
+
+
+nt|Well played! You can claim now.|
+pg| ***** 70 ***** |
+
+
+mc|10|sc|y|
+pg| ***** 71 ***** |
+
+
+%% --------------------------hand number 4 ------------------------------------
+%% 
+qx|o4|
+%% Hand 9 Al's elimination movie
+nt||st||sk|s|sc||%small text set kibbing South
+md|2SAK9632HA32DAQ2C2,S5HQ765DKJ6CKQT95,SQJT4HK4D543CAJ43,|
+sv|n|%%set vulnerability
+rh||ah|Board 4|ah|Loser on loser.| %%set description box
+mb|1cppdp2N|an|balanced 11-12 hcps stoppers|mb|p3Sp4Sp4Np5c|an|1 key|mb|p5d|an|queen ask|mb|p6h|an|queen + king of heart|mb|p6sppp| %% bidding
+pc|cK|nt|Now make your plan before you touch a card in dummy!!!!!!!!!!!!|
+pg| ***** 72 ***** |
+
+
+sb|s3 losers in the red suits. The heart loser can be ruffed in dummy. A diamond finesse maybe?|
+pg| ***** 73 ***** |
+
+
+at|
+Think about the bidding and the lead? What have you learned?|
+pg| ***** 74 ***** |
+
+
+sb|sThe diamond finesse is doomed since from bidding West must have the King.|
+pg| ***** 75 ***** |
+
+
+sb|sOn the lead West promised the club Queen. Having opened 1 club, must have 3+ clubs.|
+pg| ***** 76 ***** |
+
+
+at|
+How does this help you with your plan?|
+pg| ***** 77 ***** |
+
+
+sb|sI see that my only chance is to end play West possibly with a club exit.|
+pg| ***** 78 ***** |
+
+
+at|
+Excellent! But tell us how you will prepare this end play.|
+pg| ***** 79 ***** |
+
+
+sb|sTake the lead, ruff a club, pull trumps, eliminate hearts, and play on clubs...|
+pg| ***** 80 ***** |
+
+
+sb|sIf West started with 3 club cards, my club J is now good. If not, my last club will end play West.|
+pg| ***** 81 ***** |
+
+
+at|
+Amazing, you are really getting good at this. So when end playing West you will discard a small @d from your hand. This is called a loser on loser play and is used often in elimination plays.|sb|s|
+pg| ***** 82 ***** |
+
+
+pc|cacc|
+pg| ***** 83 ***** |
+
+
+pc|ccsac|
+pg| ***** 84 ***** |
+
+
+pc|sssQs|
+pg| ***** 85 ***** |
+
+
+pc|ccs9c|
+pg| ***** 86 ***** |
+
+
+sb|sGreat! we learned West started with 4 or 5 clubs and that he will be end played on the last club.|
+pg| ***** 87 ***** |
+
+
+pc|shsJs|
+pg| ***** 88 ***** |
+
+
+sb|s|
+pc|hKhhh|
+pg| ***** 89 ***** |
+
+
+pc|hhhAh|
+pg| ***** 90 ***** |
+
+
+pc|hhsh|
+pg| ***** 91 ***** |
+
+
+sb|sNow we have eliminated all possible exit cards with West. He has only clubs and diamonds.|
+pg| ***** 92 ***** |
+
+
+pc|chdcQ|sb|s|
+pg| ***** 93 ***** |
+
+
+sb|wWell done opps - I concede the last tricks.|
+pg| ***** 94 ***** |
+
+
+at|
+Well done! You can claim 12 tricks.|sk||
+pg| ***** 95 ***** |
+
+
+mc|12|sk||sb|s|sc|y|
+pg| ***** 96 ***** |
+
+
+%% --------------------------hand number 5 ------------------------------------
+%% William Root - How to play a bridge hand - page 261
+qx|o5|
+sc||st||nt||sk|s|%small text set kibbing South
+md|3sAT9643haqdj72cA8,sjhkt864da93cjt92,skq872h32dq54ck65,|
+sv|n|%%set vulnerability
+rh||ah|Board 5|ah|Problem Suit|ah|Qxx - Jxx| %%set description box
+mb|pp1sp3c|an|Rev. Bergen: 4+@ss 10+pts|mb|p4sppp| %% bidding
+pc|cj|at|Make your plan before you touch a card in dummy!!!!!!!!!!!!|
+pg| ***** 97 ***** |
+
+
+sb|SWe have 1 possible heart loser and 3 possible diamond losers if we lead the suit.|
+pg| ***** 98 ***** |
+
+
+sb|sI will clear the trumps and the club suit, then try the heart finesse...|
+pg| ***** 99 ***** |
+
+
+sb|sIf it fails I hope the opps will play the diamond suit for me.|
+pg| ***** 100 ***** |
+
+
+at|
+Ok. Give it a try!|
+pg| ***** 101 ***** |
+
+
+sb|s|
+pc|cccA|
+pg| ***** 102 ***** |
+
+
+pc|sssKs|
+pg| ***** 103 ***** |
+
+
+pc|cKccc|
+pg| ***** 104 ***** |
+
+
+pc|ccsc|
+pg| ***** 105 ***** |
+
+
+pc|sh8sqd8|
+pg| ***** 106 ***** |
+
+
+pc|hhhQhK|
+pg| ***** 107 ***** |
+
+
+pc|hhhhA|
+pg| ***** 108 ***** |
+
+
+sb|sGrrrr good defense, now I have to lead the problem suit....|
+pg| ***** 109 ***** |
+
+
+pc|dddQdK|sb|s|
+pg| ***** 110 ***** |
+
+
+sb|eIf I play a club or heart I give a discard, so a diamond return is obligatory here...|
+pg| ***** 111 ***** |
+
+
+pc|ddJdAd|sb|e|
+pg| ***** 112 ***** |
+
+
+pc|dddTd|
+pg| ***** 113 ***** |
+
+
+sb|sWell done opps! Perfect defense against an imperfect plan...|
+pg| ***** 114 ***** |
+
+
+at|
+Now wait while I give you an other chance at the play.|sb|s|
+pg| ***** 115 ***** |
+
+
+at|
+Your plan failed because you gave a chance to the defenders to end play you... Do you see how you could avoid being put in hand by the opps and force them to play the diamond suit for you or give you a discard?|
+pg| ***** 116 ***** |
+
+
+sb|sWell, the heart finesse was a sucker play. I can do probably better without it... |
+pg| ***** 117 ***** |
+
+
+sb|sPls. give me that 2nd chance pls.|
+pg| ***** 118 ***** |
+
+
+at|
+OK. Here it comes...|up|39|
+pg| ***** 119 ***** |
+
+
+sb|sThanks. Same play as first time but without the heart finesse...|
+pg| ***** 120 ***** |
+
+
+pc|cccA|
+pg| ***** 121 ***** |
+
+
+sb|s|
+pc|sssKs|
+pg| ***** 122 ***** |
+
+
+pc|cKccc|
+pg| ***** 123 ***** |
+
+
+pc|ccs9c|
+pg| ***** 124 ***** |
+
+
+pc|sh8sqd8|
+pg| ***** 125 ***** |
+
+
+pc|hhhAh|
+pg| ***** 126 ***** |
+
+
+sb|sAnd now I concede the heart trick but I make sure of my bid....|
+pg| ***** 127 ***** |
+
+
+pc|hQhKhh|
+pg| ***** 128 ***** |
+
+
+sb|sI have always one more trick coming as long as I play low in dummy if a diamond is lead...|
+pg| ***** 129 ***** |
+
+
+pc|dddTdJ|
+pg| ***** 130 ***** |
+
+
+sb|s|
+sb|eI had to hope for AJ in West|
+pg| ***** 131 ***** |
+
+
+at|
+Well done! You can claim 10 tricks!|sb|e|
+pg| ***** 132 ***** |
+
+
+mc|10|sk||sb|s|sc|y|
+pg| ***** 133 ***** |
+
+
+%% ------------------------General notes--------------------------------
+qx|intro|
+bt||
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^-{ Al teaching:  }
+
+{About this series of lessons}
+^-|
+cp||cs|2|fp||
+ht|g|
+at|^c@2{My target group are absolutely beginners ^z}
+
+{My topic is the DECLARER PLAY; not the bidding not the defense ^z}
+
+{I presuppose only a few things about bridge which you find e.g.:
+^d@2^*Hwww.rpbridge.net/1a00.htm^*N Learn to play bridge with Richard Pavlicek
+^*Hwww.rpbridge.net/1t05.htm ^*N Introduction to R. Pavlicek lessons
+^*Hwww.prairienet.org/bridge/start.htm^*N Getting started with Karen's bridge library
+^*Hwww.prairienet.org/bridge/glos.htm^*N Glossary for Beginners in Karen's bridge library
+^z}
+
+{^c@2 If you have any questions feel free to mail me to albrecht.hollstein@@freenet.de ^z}
+|
+fp|2|at|
+{If you like my lessons, tell it to others, if you dislike something, tell it to me. ^z}@0@1|
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+pg| ***** 134 ***** |
+
+
+%%--------------------recommendations----------------------------------
+qx|books|
+nt||
+bg|6|nt||cs|3|cp|4|fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {Recommendations ^z}
+|
+
+cs|8|cp||fp|2|at|^e@2
+{^f@2Recommended books:
+|
+fp||at|#31) Robert Berthe, Norbert Lebely: "Step by Step" Vol1 NT-declarer-play.   
+   This is the best book to learn the basics
+#32) Victor Mollo, Nico Gardener: Card Play technique
+   A classical from 1955, but useful forever
+#33) William S. Root: How to play a bridge hand.
+   12 easy chapters to winning bridge
+#34) Louis H. Watson: Play of the hand at bridge
+   Another classical from 1934; very instructive, but you need time
+#35) Seagram/Bird: 25 ways to take more tricks as declarer
+   A great book from 2002 concerning the basics very suited for beginners
+   ^z}|
+cs|9|cp||fp|2|at|
+^f@2#4{
+Recommended software:
+|
+fp||at|#31) Learn to play bridge; A great introduction and it is free.
+   ^*Hweb3.acbl.org/internet/websiteForms.nsf/ltpbForm?OpenForm^*N     
+#32) Bridge Master 2000 by Fred Gitelman;
+   the best software to learn declarer play.
+   ^*Hbbi.bridgebase.com/software/bmdesc.html^*N
+   ^z}|
+pg| ***** 135 ***** |
+
+
+%% ------------------ credits ------------------------------------
+
+qx|credits|
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }    {Credits}
+|
+cs||cp||fp|2|at|^c@2
+
+|
+cp||cs||fp||
+ht|g|
+at|^c@2
+{Hand 1: Mollo and Gardener - Card Play Technique - page 236}
+
+{Hand 3: David Bird - Bridge Endplays for Everyone - page 10}
+
+{Hand 5: William Root - How to play a bridge hand - page 261}}
+
+
+
+
+{Many thanks to Mihailo, Yvon and Ronald for help and hints and suggestions}@0@1|
+ht|z|
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+pg| ***** 136 ***** |
+
+
+%% ---------- HELP ----------
+qx|Help, Help notes|
+bt||nt||cs|2|fp|2|ht|b|at|^-{ Help }
+^-|
+fp||ht|e|at|
+Short instruction on how to navigate through the movie:
+
+ ^$6  Previous page, permits you to read the previous page of this movie.
+ ^$40  Next page, permits you to read the next page of this movie.
+ ^$7  Previous chapter, takes you back to the first page of the previous topic.
+ ^$41  Next chapter, takes you forward to the first page of the next topic.
+ ^$119  Takes you back to the first page of this movie.
+
+You can display any hand at any time if you click on the player's name. Double clicking the name will show all hands.|
+
+ht|u|
+fp|2|at|^-
+{If you like my lessons, tell it to others, if you dislike something, tell it to me.
+mail to: albrecht.hollstein@@freenet.de}
+^-|
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+
+%% ------------------------------------------------------------------------
+
+
+
+
+
+

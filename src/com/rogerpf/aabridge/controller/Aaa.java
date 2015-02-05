@@ -136,7 +136,7 @@ public class Aaa {
 	public static final Color		tutMnGreenStrong	= new Color( 20,  90,  20);
 	public static final Color		tutMnGreenWeak		= new Color(110, 150, 110);
 	public static final Color		questionPanelBkColor= new Color(240, 233, 233);
-	public static final Color		tut_old_text_gray	= new Color(160, 150, 150);
+	public static final Color		tut_old_text_gray	= new Color(140, 130, 130);
 	public static final Color		tut_old_suit_gray	= new Color(171, 160, 160);
 	public static final Color		tutorialLinkNorm_f	= new Color(  0,   0,   0);
 	public static final Color		tutorialLinkNorm_g	= new Color( 16,  16, 225);

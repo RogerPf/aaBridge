@@ -1,0 +1,369 @@
+%%rule11.lin
+%% Last edited  08-04-2013 
+%%%% By Kia, BBO nickname "nome"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|155|ff|1Arial|fb|110|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|35|fm|3|                           FOR 3
+fb|49|fm|4|fb|4|fm|4|
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|3255|cg|3255|cb|3255|            White
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|6124|cb|6250|cg|6200|             6=TURQUOISE
+cr|70|cb|7220|cg|7235|              green/blue 7
+cr|8255|cb|80|cg|80|                red 8
+cr|9128|cb|90|cg|950|               Reddish-brown 9
+
+%%%%===================
+bt||
+ht|b|CS|1|CP|4|HT|b|FP|3|at|^-{      Rule of 11      }
+^-|CP||fp||at|
+After an opening lead, usually in NT contract and if it is 4th best, Rule of 11 is a simple calculation indicating how many cards higher than the card lead, are there in the hands of Dummy, Declarer and opener's partner combined.
+
+For example in a NT contract West leads let us say spot 7, dummy comes down and both declarer and the opener's partner (East) can make the following simple Rule of 11 calculation.
+
+This calculation can be used by both declarer and the opening leader's partner. For declarer, he can calculate how many cards higher than the card led are held by his right hand opponent. For example, if the opening lead is the 7 and there are 3 cards higher than the 7 between dummy and declarer's hand, his right hand opponent holds exactly 1 card higher than the 7. Similarly, opening leader's partner can calculate how many cards higher than the card led are held by declarer.
+
+You cannot use rule of 11 if the opener is leading a card in partner's suit bid or it is an honor including the ten. This information greatly can help the declarer and the defender—although admittedly most non-expert defenders do very little counting.
+
+The explanation why such calculation works is outside the scope of this short synopsis. However, you can refer to this |CP|1|AT|^*Hwww.jazclass.aust.com/bridge/rule_11/rule11.htm^*N|CP||AT| link for a nice and simple explanation. However, in the next few panels there would be ample material to make its application understood.|
+PG| ***** 0 ***** |
+
+
+NT||
+%%%example 1
+st||sk|e|md|1sakq2,sj943,s87,st65,|sv|o|rh||ah|Rule 11|ah|Example 1|mb|3nppp|NT|^B@2
+You are defending a 3N by N/S and partner leads @S3|
+PG| ***** 1 ***** |
+
+
+pc|s3|
+PG| ***** 2 ***** |
+
+
+NT||lb|*mHow many spades higher than 3 is in declarer's hand?^8~7~6~5~4~3^6|NT|^B@2
+Three. 11 - 3 = 8. East can see 2 higher cards in the dummy and he has 3 of them—8 - 5 = 3|
+PG| ***** 4 ***** |
+
+
+sk||NT|^B@2
+This is the spade distribution.|
+PG| ***** 5 ***** |
+
+
+AT| Declarer can make similar calculations. He has three spades higher than @S3 and there are two more in the dummy. Therefore, East as the other three.|
+PG| ***** 6 ***** |
+
+
+NT||
+%%%example 2
+st||sk|e|md|1skqj2,st983,s47,sa65,|sv|o|rh||ah|Rule 11|ah|Example 2|mb|3nppp|NT|^B@2
+You are defending a 3N by N/S and partner leads @S10|
+PG| ***** 7 ***** |
+
+
+pc|st|
+PG| ***** 8 ***** |
+
+
+NT||lb|*yIs Rule of 11 useful here^^n|NT|^B@2
+The lead is not 4th. best and Rule of 11 is not useful.|
+PG| ***** 10 ***** |
+
+
+NT||
+%%%example 3
+st||sk|s|md|1sa95,st86,sq7,skj432,|sv|o|rh||ah|Rule 11|ah|Example 3|mb|1np2d2spp3nppp|NT|^B@2
+In this auction partner opens @s6|pc|s6|
+PG| ***** 11 ***** |
+
+
+lb|*yCan either East or Declarer use Rule of 11^^n|NT|^B@2
+No. Opener merely leading partner's bid suit and most likely it is not the 4th. best.|
+PG| ***** 13 ***** |
+
+
+NT||bt||
+%%%
+ht|b|CS|1|CP|4|HT|b|FP|3|at|^-{      Rule of 11      }
+^-|CP||fp||at|
+The major principles of the Rule of 11 are:|
+PG| ***** 14 ***** |
+
+
+cp|4|cs|1|fp|3|at|^-
+
+{  Rule of 11 mostly used at notrump contract.  }|
+PG| ***** 15 ***** |
+
+
+AT|
+
+{  Rule of 11 is used both by declarer and defense.  }|
+PG| ***** 16 ***** |
+
+
+AT| 
+
+{  Rule of 11 applies only to the opening lead.  }|
+PG| ***** 17 ***** |
+
+
+AT|
+
+{  Rule of 11 is applicable when the opening lead was "4th-best."  }|
+PG| ***** 18 ***** |
+
+
+cp||cs||fp||AT|
+
+
+^B@2^*BMM: ^*NNext please note what Marty Bergen said about Rule of 11 in his recent Marty Bergen Audio Visual Lesson—How To Play 3NT|
+PG| ***** 19 ***** |
+
+
+NT||
+%%
+cs|1|cp|4|fp|3|ht|b|at|^c{ |ht|k|at|^y
+^y }
+|ht|c|at|
+^-We also have to keep the Rule of 11 in mind 
+any time the opening lead appears to be 4th best.
+This is never the case when an opponent leads an honor.
+And obviously if an opponent leads his partner's suit,
+he may not have as many as four cards, 
+so the Rule of 11 won't apply if he is leading 
+a suit with 2 or 3 cards.
+^-|fp||cs||cp||
+PG| ***** 20 ***** |
+
+
+ht|n|AT|We  will have more from Mr. Bergen later. But for now let us review more what does the Rule of 11 tell us. |
+PG| ***** 21 ***** |
+
+
+NT||
+%%
+%%example a
+st||pn|You,,Partner,|md|1,h6,hj983,|sv|o|rh||ah|Rule 11|ah|Example A|mb|3nppp|NT|^B@2
+Let us assume in this board you are playing 3N and the opening lead is @H6.|pc|h6|
+PG| ***** 22 ***** |
+
+
+NT|B@2
+You assume that @H6 is fourth-best leads. You subtract the value of the opening lead (6 here) from 11. That determines the number of outstanding cards above the rank of the card led. |
+PG| ***** 23 ***** |
+
+
+NT|^B@2
+11 - 6 = 5 outstanding cards above the heart 6. Dummy contains the heart @HJ 9 8 3 (three above the cards above the heart 6). Therefore, opener's partner (East) and declarer (South) have the 2 remaining cards above the @H6. South has one—@HA.|md|0ha,0,0,0|
+PG| ***** 24 ***** |
+
+
+NT|^B@2
+East has the other. It can be either @HK, or @HQ, or @H10 or @H7. |
+PG| ***** 25 ***** |
+
+
+NT|^B@2 
+You plays the @H3 from the dummy and East plays @H10 and you win the trick with @HA.|md|0,0,0,ht|pc|h3|pc|ht|
+PG| ***** 26 ***** |
+
+
+NT|^B@2
+Since East normally tries to win the trick with the lowest necessary winner (lowest equal first), now with the play of the @H10 and @HA, all the players know West has all the other outstanding cards above the heart 6—@hKQ7|md|0,hkq7,0,0|
+PG| ***** 27 ***** |
+
+
+NT|^B@2
+Therefore, again everyone knows that West has the @HK Q 7. The other three hearts—@H5 4 2 could be with either West, East or South.|
+PG| ***** 28 ***** |
+
+
+NT|^B@2
+That much information is great by itself but you can learn more from Rule of 11, For example the opener must have exactly 4 cards in the suit led if the opening lead—assuming it is the fourth best—is a 2.|
+PG| ***** 29 ***** |
+
+
+NT|^B@2
+The reasoning behind it is simple because with five cards holding in a suit the opening lead must be higher than spot 2.|
+PG| ***** 30 ***** |
+
+
+NT|^B@2 
+One more deduction. If the opening lead is 3 and the 2 is in dummy or in declarer's had again opener has exactly 4 cards in that suit..  Opening with a 3 with the Dummy exposing a 2 in the suit would lead to the same deduction - leader held 4 cards.|
+PG| ***** 31 ***** |
+
+
+NT||
+%%%%%example b
+st||pn|You,,Partner,|md|1SA 6 4 3,s5,SJ 9 7,|sv|o|rh||ah|Rule 11|ah|Example B|mb|3nppp|NT|^B@2
+Here again let us assume you are playing in 3N contract and West opens with @S5.|
+PG| ***** 32 ***** |
+
+
+pc|s5|NT|^B@2
+As declarer you subtract 5 from 11(11 - 5 = 6). Therefore, North, East and South have six spades higher than @S5. Declarer see three of them in the dummy—@SJ 9 7—and two in his hand—@SA 6. So East must have one of those. It can be either @SK, or @SQ, or @S10 or @s8. But which one?|
+PG| ***** 33 ***** |
+
+
+NT|^B@2
+It cannot be @S8 because from @SKQT5 West would have led the King. So by deduction East most likely has the @SQ or @SK. On the other hand @S10 is possible but not likely if West decided to lead low from KQ, which is the correct play, because you only lead top of a sequence in NT from a 3 card sequence or a broken 3 card sequence Further, west most likely has more that 4 spades. |
+PG| ***** 34 ***** |
+
+
+NT|^B@2
+Therefore this is the complete distribution of spades in four hands.|MD|0,sK t 8 2,0,SQ|sk||
+PG| ***** 35 ***** |
+
+
+NT||
+%%%%%example C
+st||pn|,Partner,, You|sk|e|md|1S4 3,SQ T 8 7,SK 6 5,SAJ92|sv|o|rh||ah|Rule 11|ah|Example C|mb|3nppp|NT|^B@2
+Defenders can also benefit from Rule of 11. For example in this board you are sitting East and defending 3N. Partner opens @s7 and declarer plays @S5 from dummy.|
+pg| ***** 36 ***** |
+
+
+pc|s7|pc|s5|
+PG| ***** 37 ***** |
+
+
+NT||lb|*CWhich card should East play? Click that card on the right.^^s2^SAJ92|NT|^B@2
+You assumes partner lead 4th best. 11 - 7 = 4. Therefore, Dummy, declarer and you have only four spades higher than 7.|
+PG| ***** 39 ***** |
+
+
+NT|^B@2
+You can see one in the dummy and three in your hand. So declarer cannot beat @S7 and you play low and partner continue the suit.|
+pg| ***** 40 ***** |
+
+
+sk||
+PG| ***** 41 ***** |
+
+
+NT||bt||
+%%
+cs|1|cp|4|fp|3|ht|b|at|^c{ |ht|j|at|^y
+^y }
+|ht|c|at|
+^-The Rule of 11 is reliable and easy to remember.
+Frankly, though, it doesn't come up very often.
+It is worth knowing, but don't expect to use it
+more than once every dozen sessions you play.
+^-|fp||ht|j|at|^pLarry Cohen|
+PG| ***** 42 ***** |
+
+
+NT||
+Example d
+st||pn|You,,Partner,|sk|s|md|1SQ86 HAQ63 DA94 CKQ4,SJ542 HK54 DKT76 CT6,SAK97 H987 DQJ53 CJ8,ST3 HJT2 D82 CA97532|sv|o|rh||ah|Rule 11|ah|Example D|mb|3nppp|NT|^B@2 
+The contract is 3N. Let us see the information gleaned by the declarer (South) and the opener's partner (East) from the opening lead using Rule of 11.|
+PG| ***** 43 ***** |
+
+
+NT|^B@2
+West opens @D6—4th. best.|pc|d6|
+PG| ***** 44 ***** |
+
+
+NT|^B@2 
+Using Rule of 11 the declarer subtracts the number 6 from 11 establishing there are 5 cards higher than the @D6 in his, the dummy, and the East hand. |
+PG| ***** 45 ***** |
+
+
+NT|^B@2
+This is a very friendly lead for declarer because he and the dummy hold four of those cards leaving only one in East hand.|hc|daqj9|
+PG| ***** 46 ***** |
+
+
+sk|e|NT|^B@2
+East does the same calculation (11 -6 = 5) and deducts there are 5 cards higher than @D6 in the his hand, the dummy and declarer. Two are in the dummy and he has one.|hc|d8|
+PG| ***** 47 ***** |
+
+
+NT|^B@2
+Therefore, declarer must have the other two.|
+PG| ***** 48 ***** |
+
+
+lc|daqj98|NT||
+%%example E 
+st||pn|You,,Partner,|sk|s|md|1SA K 5 HA Q 5 D9 7 3 2 CQ J 4,SQ T 8 HT 7 6 DJ 4 CK 9 8 6 3,SJ 7HK JDQ 6CA T 7 2,S9 6 4 3 H9 4 3 2 DA K T 8 C5|sv|o|rh||ah|Bergen Online Voice Lesson|ah|How To Play 3NT|ah|Example MB|MB|1NP3NPPP|NT|^B@2
+This deal is from Marty Bergen's Online Voice Lesson and the contract is 3NT. Declarer's succeed only by using Rule of 11. Let us read his narrative.|
+PG| ***** 49 ***** |
+
+
+NT|^B@2
+West leads the @C6.|pc|c6|
+PG| ***** 50 ***** |
+
+
+NT|^B@2
+As declarer you see this contract is certainly not cold. You have 3 heart winners. Unfortunately, despite having the top 4 heart honors, you can't win more than 3 heart tricks.  Two spade tricks gets you up to 5 tricks. Unless West has both the @DA and @DK, you are not going to be able to establish a diamond trick. |
+PG| ***** 51 ***** |
+
+
+NT|^B@2
+And then there are the clubs. It's nice that West has led your strongest suit and a suit in which you have 7 cards. You are going to try to do the best you can in clubs. Hopefully West has the @CK, which is suggested by his opening club lead.|
+PG| ***** 52 ***** |
+
+
+NT|^B@2
+How can we maximize our tricks in clubs. The first step is to rely on the Rule of 11. West led the @C6. Using the Rule of 11, 11 minus 6 equals 5. That says there are 5 clubs higher than the 6 in the North, East, and South hands. North has 3 clubs above the 6. South has 2 clubs above the 6. Therefore, you know for a fact that East can't beat the 6 of clubs because he has nothing above it.|
+PG| ***** 53 ***** |
+
+
+NT||lb|*CWhich card should you play from dummy? Click that card on the right.^^C7^cat72|NT|^B@2
+Well, the opening lead guarantees that the @C7 will be a winner. Take advantage of West's unfortunate lead (for his side) and win the @C7 here and now. If you don't, you will never have a chance to win that card.|pc|c7|pc|c5|pc|c4|
+PG| ***** 55 ***** |
+
+
+sk||
+pg| ***** 56 ***** |
+
+
+NT|^B@2
+If you played 2nd hand low and figured “I'll think about it later”, you will win the first trick with a club honor in your hand. When you lead your other club honor, West is going to cover with the @CK. Because West has the @C9 and @C8, you are never going to win North's @C7.|
+PG| ***** 57 ***** |
+
+
+NT|^B@2
+Fortunately, sometimes the opponent's normal opening lead is not the best one for their side. You must take advantage of it. So play the @C7 at trick 1 which wins a nice cheap trick. You play low from your hand after East follows with the @C5.|
+PG| ***** 58 ***** |
+
+
+NT|^B@2
+Now, you are looking good. You play to your @HA at trick 2. Lead one of your club honors. It doesn't matter whether West covers or not. You still have your @CQ and @CJ and dummy's @CA and @CT. With all those club honors intact, you are going to win a total of 4 club tricks. This combines nicely with the 3 heart tricks and 2 spade tricks to give you a total of 9 tricks.|
+PG| ***** 59 ***** |
+
+
+NT|^B@2
+North and South, both with 4-3-3-3 distribution, do not have much potential to develop long suit tricks. But when West led his 5-card suit and his partner did not have any help for him, you had the opportunity to make the hand, as long as you were alert at trick 1 and did your homework before playing a card.|
+PG| ***** 60 ***** |
+
+
+up|4|
+pg| ***** 61 ***** |
+
+
+NT|^B@2
+This is the entire hand again.|
+PG| ***** 62 ***** |
+
+
+NT|^B@2
+Rule of 11 is mostly useful in NT contract because generally a good opening lead in NT is 4th. best from the longest and strongest suit. However, it could also be useful in a suit contract if it is certain the lead is 4th. best.|
+PG| ***** 63 ***** |
+
+
+NT||AT|
+
+^B@2^*BMM: ^*NThis is the end.|
+pg| ***** 64 ***** |
+
+
+ 
+ 

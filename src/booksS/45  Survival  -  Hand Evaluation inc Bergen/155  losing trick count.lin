@@ -1,0 +1,328 @@
+LosingtrickCount.lin
+%% Last edited  01-06-2014
+%%%% By Kia, BBO nickname "nome"
+%%%%%
+fh|155|ff|1Arial|fb|110|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|               FOR 2
+fh|340|ff|3Arial|fb|35|fm|3|               FOR 3
+fb|46|fm|4|fb|4|fm|4|
+cr|116|cg|116|cb|1255|           blue 1
+cr|2255|cg|2255|cb|264|          gold 2
+cr|3255|cg|3255|cb|3255|         White
+cr|4255|cg|4255|cb|40|           dark Gold 4
+cr|564|cg|5255|cb|564|           green 5
+cr|6124|cb|6250|cg|6200|         6=TURQUOISE
+cr|70|cb|7220|cg|7235|           green/blue 7
+cr|8255|cb|80|cg|80|             red 8
+cr|9128|cb|90|cg|950|            Reddish-brown 9
+bt||
+
+qx|BLTC,     Losing Trick Count (LTC)|cs|6|fp|3|at|
+^-{    Losing Trick Count (LTC)    
+by Howard Schutzman}
+^-|FP||cp||AT|
+This method has been popularized by the Australian expert Ron Klinger. Those interested in learning all the details should read his book on the subject. The first thing you do is calculate the number of losers in your hand, using the following rules:|HT|f|
+PG| ***** 0 ***** |
+
+
+AT|
+
+1. For suits with 3 or more cards, you start with 3 losers, and subtract 1 loser for each Ace, King, or Queen in the suit. Hence, xxxx is a 3 loser suit, whereas KQxx is a one loser suit. |
+PG| ***** 1 ***** |
+
+
+HT|f|AT|
+
+1. For suits with 3 or more cards, you start with 3 losers, and subtract 1 loser for each Ace, King, or Queen in the suit. Hence, xxxx is a 3 loser suit, whereas KQxx is a one loser suit.
+
+2. For suits with 2 cards, you start with 2 losers, and subtract 1 loser for each Ace or King in the suit. Hence xx is a two loser suit, and Ax is a one loser suit. |
+PG| ***** 2 ***** |
+
+
+HT|f|AT|
+
+1. For suits with 3 or more cards, you start with 3 losers, and subtract 1 loser for each Ace, King, or Queen in the suit. Hence, xxxx is a 3 loser suit, whereas KQxx is a one loser suit.
+
+2. For suits with 2 cards, you start with 2 losers, and subtract 1 loser for each Ace or King in the suit. Hence xx is a two loser suit, and Ax is a one loser suit. |AT|
+
+3. For suits with 1 card, you have one loser unless the singleton is an Ace.|
+PG| ***** 3 ***** |
+
+
+HT|f|AT|
+
+1. For suits with 3 or more cards, you start with 3 losers, and subtract 1 loser for each Ace, King, or Queen in the suit. Hence, xxxx is a 3 loser suit, whereas KQxx is a one loser suit.
+
+2. For suits with 2 cards, you start with 2 losers, and subtract 1 loser for each Ace or King in the suit. Hence xx is a two loser suit, and Ax is a one loser suit. 
+
+3. For suits with 1 card, you have one loser unless the singleton is an Ace.
+
+4. If you have a void, you have no losers in that suit. ^*N|
+PG| ***** 4 ***** |
+
+
+AT|
+
+Between you and your partner, you have a potential of 24 losers (2 partners x 4 suits x 3 losers). If you add together the number of losers in each hand and subtract from 24, that tells you how many winners you have. For example, as we know, an opening hand vs. an opening hand usually produces game. An opening hand is typically a 7 loser hand. So if both partners have an opening hand, they have 14 losers and, hence, 10 winners. So they should be able to take ten tricks, which is a major suit or no trump game. |
+PG| ***** 5 ***** |
+
+
+AT| 
+
+Many good players are very enthusiastic about using Losing Trick Count. It is easy to learn. However, I do not share their enthusiasm. For distributional hands, it is not bad, but it is less accurate for flatter hands. And, I think it has some major flaws. For example, Qxx and Axx are both two loser suits, but clearly Axx is much better. To be fair, the Klinger book talks about adjustments to take care of some of these problems. The one place I do use LTC is when I have a borderline bidding decision. If LTC indicates I should make the more aggressive bid, then I will do so.|
+PG| ***** 6 ***** |
+
+
+AT|
+
+^*BMM: ^*NCurrently Howard uses and teaches Bergen's Hand evaluation. You can find extensive tutorial on the topic both at his web site |CP|1|AT|^*Hwww.bridgesights.com/hondobridge/^*N|CP||AT| or at BIL library at |CP|1|AT|^*Hwww.bilbridge.com^*N|CP||AT|. However, next we compare point count and losing trick count. |
+PG| ***** 7 ***** |
+
+
+NT||
+%%
+ht|b|CS|2|AT|^-
+{Determining If You Should Bid Game Based on the Three Methods}
+^-|ht|e|AT|^B@2As opening bidder, your hand falls in one of three categories:
+|HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|
+PG| ***** 8 ***** |
+
+
+ht|e|AT|^B@2As opening bidder, your hand falls in one of three categories:
+|HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|j|AT|^B@2Similarly, as responder, your hand falls in one of three categories:
+|HT|k|AT|^*UBased on Traditional Method^*N|HT|k|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|
+PG| ***** 9 ***** |
+
+
+%%2
+ht|e|AT|^B@2As opening bidder, your hand falls in one of three categories:
+|HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|
+HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|j|AT|^B@2Similarly, as responder, your hand falls in one of three categories:
+|HT|k|AT|^*UBased on Traditional Method^*N|HT|k|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|ht|n|AT|
+^BRemember, game requires that the combined partnership assets be at least 25 points.|
+PG| ***** 10 ***** |
+
+
+%%%%repeat
+ht|e|AT|^B@2As opening bidder, your hand falls in one of three categories:
+|HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|
+HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|j|AT|^B@2Similarly, as responder, your hand falls in one of three categories:
+|HT|k|AT|^*UBased on Traditional Method^*N|HT|k|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|ht|n|AT|
+^BRemember, game requires that the combined partnership assets be at least ^*B25^*N points.|
+HT|f|at|^K^*UBased on Bergen's Method^*N|HT|f|at|
+^L1. minimum (13-16 points)
+^L2. medium (17-19 points)
+^L3. maximum (20+ points) |HT|k|AT|^K^*UBased on Bergen's Method^*N|HT|k|AT|
+^L1. minimum (6-9 points)
+^L2. medium (10-12 points)
+^L3. maximum (12+ points)|ht|o|AT|
+Remember with Bergen's method, game requires that the combined partnership assets be at least ^*B26^*N points.|
+PG| ***** 11 ***** |
+
+
+ht|e|AT|^B@2As opening bidder, your hand falls in one of three categories:
+|HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|
+%%%% LTC chart
+ht|e|AT|^B@2As opening bidder, your hand falls in one of three categories:
+|HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|
+HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|j|AT|^B@2Similarly, as responder, your hand falls in one of three categories:
+|HT|k|AT|^*UBased on Traditional Method^*N|HT|k|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|ht|n|AT|
+^BRemember, game requires that the combined partnership assets be at least ^*B25^*N points.|
+HT|f|at|^K^*UBased on Bergen's Method^*N|HT|f|at|
+^L1. minimum (13-16 points)
+^L2. medium (17-19 points)
+^L3. maximum (20+ points) |HT|k|AT|^K^*UBased on Bergen's Method^*N|HT|k|AT|
+^L1. minimum (6-9 points)
+^L2. medium (10-12 points)
+^L3. maximum (12+ points)|ht|o|AT|
+Remember with Bergen's method, game requires that the combined partnership assets be at least ^*B26^*N points.|ht|e|AT|^B@2As opening bidder, your hand falls in one of three categories:
+|HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|f|AT|^t^*ULosing Trick Count^*N|HT|f|AT|
+^r1. Minimum (7 losers)
+^r2. Medium (6 losers)
+^r3. Max (5 losers or less)|HT|k|AT|^t^*ULosing Trick Count^*N|HT|k|AT|
+^r1. Minimum (9 losers)
+^r2. Medium (8 losers)
+^r3. Maximum (7 losers or less)|ht|p|AT|
+Remember with Losing Trick Count method, game requires that the combined partnership should have ^*B14 or fewer losers^*N.|
+PG| ***** 12 ***** |
+
+
+%%%% X starts here<<<<<<<<<<<<<<<<<<<<<<<<<<
+ht|e|AT|^B@2As opening bidder, your hand falls in one of three categories:
+|HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|j|AT|^B@2Similarly, as responder, your hand falls in one of three categories:
+|HT|k|AT|^*UBased on Traditional Method^*N|HT|k|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|
+ht|e|AT|^B@2As opening bidder, your hand falls in one of three categories:
+|HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|
+HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|j|AT|^B@2Similarly, as responder, your hand falls in one of three categories:
+|HT|k|AT|^*UBased on Traditional Method^*N|HT|k|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|ht|n|AT|
+^BRemember, game requires that the combined partnership assets be at least 25 points.|ht|e|AT|^B@2As opening bidder, your hand falls in one of three categories:
+|HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|
+HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|j|AT|^B@2Similarly, as responder, your hand falls in one of three categories:
+|HT|k|AT|^*UBased on Traditional Method^*N|HT|k|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|ht|n|AT|
+^BRemember, game requires that the combined partnership assets be at least ^*B25^*N points.|
+HT|f|at|^K^*UBased on Bergen's Method^*N|HT|f|at|
+^L1. minimum (13-16 points)
+^L2. medium (17-19 points)
+^L3. maximum (20+ points) |HT|k|AT|^K^*UBased on Bergen's Method^*N|HT|k|AT|
+^L1. minimum (6-9 points)
+^L2. medium (10-12 points)
+^L3. maximum (12+ points)|ht|o|AT|
+Remember with Bergen's method, game requires that the combined partnership assets be at least ^*B26^*N points.|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|f|AT|^t^*ULosing Trick Count^*N|HT|f|AT|
+^r1. Minimum (7 losers)
+^r2. Medium (6 losers)
+^r3. Max (5 losers or less)|HT|k|AT|^t^*ULosing Trick Count^*N|HT|k|AT|
+^r1. Minimum (9 losers)
+^r2. Medium (8 losers)
+^r3. Maximum (7 losers or less)|ht|p|AT|
+Remember with Losing Trick Count method, game requires that the combined partnership should have ^*B14 or fewer losers^*N.
+
+The following table summarizes how the partnership can tell whether or not they have enough points to bid game:
+
+^H^*UOpener
+Responder^*N           Minimum   Medium  Maximum
+Minimum               No           No           Yes
+Medium                No           Yes          Yes
+Maximum              Yes          Yes          Yes|
+pg| ***** 13 ***** |
+
+
+ht|e|AT|^B@2As opening bidder, your hand falls in one of three categories:
+|HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|j|AT|^B@2Similarly, as responder, your hand falls in one of three categories:
+|HT|k|AT|^*UBased on Traditional Method^*N|HT|k|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|
+ht|e|AT|^B@2As opening bidder, your hand falls in one of three categories:
+|HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|
+HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|j|AT|^B@2Similarly, as responder, your hand falls in one of three categories:
+|HT|k|AT|^*UBased on Traditional Method^*N|HT|k|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|ht|n|AT|
+^BRemember, game requires that the combined partnership assets be at least 25 points.|ht|e|AT|^B@2As opening bidder, your hand falls in one of three categories:
+|HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|
+HT|f|AT|^*UBased on Traditional Method^*N|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|j|AT|^B@2Similarly, as responder, your hand falls in one of three categories:
+|HT|k|AT|^*UBased on Traditional Method^*N|HT|k|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|ht|n|AT|
+^BRemember, game requires that the combined partnership assets be at least ^*B25^*N points.|
+HT|f|at|^K^*UBased on Bergen's Method^*N|HT|f|at|
+^L1. minimum (13-16 points)
+^L2. medium (17-19 points)
+^L3. maximum (20+ points) |HT|k|AT|^K^*UBased on Bergen's Method^*N|HT|k|AT|
+^L1. minimum (6-9 points)
+^L2. medium (10-12 points)
+^L3. maximum (12+ points)|ht|o|AT|
+Remember with Bergen's method, game requires that the combined partnership assets be at least ^*B26^*N points.|HT|f|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|f|AT|^t^*ULosing Trick Count^*N|HT|f|AT|
+^r1. Minimum (7 losers)
+^r2. Medium (6 losers)
+^r3. Max (5 losers or less)|HT|k|AT|^t^*ULosing Trick Count^*N|HT|k|AT|
+^r1. Minimum (9 losers)
+^r2. Medium (8 losers)
+^r3. Maximum (7 losers or less)|ht|p|AT|
+Remember with Losing Trick Count method, game requires that the combined partnership should have ^*B14 or fewer losers^*N.
+
+The following table summarizes how the partnership can tell whether or not they have enough points to bid game:
+
+^h^*UOpener
+Responder^*N           Minimum   Medium  Maximum
+Minimum               No           No           Yes
+Medium                No           Yes          Yes
+Maximum              Yes          Yes          Yes|HT|x|at|
+During the auction, both partners should always be thinking about whether it is still possible to bid game. For example, if your partner opens and you, as responder, have a maximum (12+) hand, you should bid game. Similarly, if you open with a maximum (18+ with traditional count and 20+ with Bergen's count) and get any response from partner, you should bid game. |
+PG| ***** 14 ***** |
+
+
+at|^m ^*BThis is the end.^*N|
+PG| ***** 15 ***** |
+
+
+NT||

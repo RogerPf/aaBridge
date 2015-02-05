@@ -53,6 +53,7 @@ import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.controller.Book;
 import com.rogerpf.aabridge.controller.Book.LinChapter;
 import com.rogerpf.aabridge.controller.Bookshelf;
+import com.rogerpf.aabridge.controller.BookshelfArray;
 import com.rogerpf.aabridge.controller.BridgeLoader;
 import com.rogerpf.aabridge.controller.CmdHandler;
 import com.rogerpf.aabridge.igf.BubblePanel;
@@ -108,6 +109,14 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+		{
+			// Spin the random number generator - well old habits die hard
+			int n = (int) ((System.currentTimeMillis() % 1000) & 0x3f) + 10;
+			for (int i = 0; i < n; i++) {
+				Math.random();
+			}
+		}
+
 		try {
 			URL locationMethodUrl = AaBridge.class.getProtectionDomain().getCodeSource().getLocation();
 			File locMethodFile = new File(locationMethodUrl.toURI());
@@ -125,6 +134,9 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 			}
 			if (new File(base + File.separator + "_aaBridge_b__use_devmode.txt").exists()) {
 				App.devMode = true;
+			}
+			if (new File(base + File.separator + "_aaBridge_c__show_dev_test_lins.txt").exists()) {
+				App.showDevTestLins = true;
 			}
 		} catch (Exception e1) {
 		}
@@ -158,7 +170,7 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 			// App.startedWithCleanSettings = false;
 		}
 
-		App.bookshelfArray.fillWithBooks();
+		App.bookshelfArray = new BookshelfArray(); // this is the only instance
 
 		createAndAddAllMenus(0);
 
@@ -654,38 +666,17 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		menuItem.addActionListener(this);
 		menu.add(menuItem);
 
-		// Play Bridge - MENU
-		menu = new JMenu("Play Bridge       ");
-		menu.setMnemonic(KeyEvent.VK_P);
+		// Ideal Size - MENU
+		menu = new JMenu("Ideal Size       ");
+		menu.setMnemonic(KeyEvent.VK_I);
 		menuBar.add(menu);
 
-		// Play Bridge
-		menuItem = new JMenuItem("Play Bridge          -   Play Bridge", KeyEvent.VK_P);
-		menuItem.setActionCommand("playBridge_playBridge");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		// Play Bridge and deal choices
-		menuItem = new JMenuItem("Play Bridge          -   Play Bridge  &  show Deal Choices", KeyEvent.VK_B);
-		menuItem.setActionCommand("playBridge_and_dealChoice");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		// Distr Flash Cards
-		menuItem = new JMenuItem("D. Flash Cards    -   Distribution Flash Cards", KeyEvent.VK_D);
-		menuItem.setActionCommand("playBridge_distrFlashCards");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		menu.addSeparator();
-		// Play Bridge and deal choices
-
-		menuItem = new JMenuItem("Book Mode          -  Set Ideal size and layout", KeyEvent.VK_O);
+		menuItem = new JMenuItem("Set Ideal size and layout", KeyEvent.VK_Y);
 		menuItem.setActionCommand("tutorial_idealSize");
 		menuItem.addActionListener(this);
 		menu.add(menuItem);
 
-		menuItem = new JMenuItem("Book Mode          -  Set Ideal size no extra", KeyEvent.VK_K);
+		menuItem = new JMenuItem("Set Ideal size no extra", KeyEvent.VK_N);
 		menuItem.setActionCommand("tutorial_idealSize_noExtra");
 		menuItem.addActionListener(this);
 		menu.add(menuItem);
@@ -756,21 +747,12 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		}
 
 		// Help - MENU
-		menu = new JMenu("Help & Welcome");
+		menu = new JMenu("Help  &  How Do I ?");
 		menu.setMnemonic(KeyEvent.VK_H);
 		menuBar.add(menu);
 
-		Bookshelf.addShelf1_90sToMenu(this, menu);
-		menu.addSeparator();
-
-		// Help Swap lin file player
-		menuItem = new JMenuItem("How do I             Swap between aaBridge and another app as the (dblclick) .lin file player  ");
-		menuItem.setActionCommand("menuSwapLinFilePlayer");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		menuItem = new JMenuItem("How do I             Use  Deep Finesse  &  aaBridge  together  ");
-		menuItem.setActionCommand("menuUseDeepFinesse");
+		menuItem = new JMenuItem("How do I             Use commented deals and aaBridge to practice Defense Counting  ");
+		menuItem.setActionCommand("menuPracticeDefense");
 		menuItem.addActionListener(this);
 		menu.add(menuItem);
 
@@ -784,11 +766,20 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		menuItem.addActionListener(this);
 		menu.add(menuItem);
 
-		menuItem = new JMenuItem("How do I             Use the HondoBridge Archives  &  aaBridge to practice Defense  ");
-		menuItem.setActionCommand("menuPracticeDefense");
+		menuItem = new JMenuItem("How do I             Use  Deep Finesse  and  aaBridge  together  ");
+		menuItem.setActionCommand("menuUseDeepFinesse");
 		menuItem.addActionListener(this);
 		menu.add(menuItem);
 
+		// Help Swap lin file player
+		menuItem = new JMenuItem("How do I             Swap between aaBridge and another app as the (dblclick) .lin file player  ");
+		menuItem.setActionCommand("menuSwapLinFilePlayer");
+		menuItem.addActionListener(this);
+		menu.add(menuItem);
+
+		menu.addSeparator();
+
+		Bookshelf.addFirstShelf_90s_toMenu(this, menu);
 		menu.addSeparator();
 
 		// RogerPf - Blog
@@ -887,7 +878,7 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		}
 
 		if (cmd.contentEquals("open_FirstShelf_Book01")) {
-			Book b = App.bookshelfArray.get(1).getBookByFrontNumb(01 /* shelf 1 book 01   was always 'Watsons' book */);
+			Book b = App.bookshelfArray.get(0).getBookByFrontNumb(01 /* shelf 1 book 01   was always 'Watsons' book */);
 			if (b != null) {
 				LinChapter chapter = b.getChapterByIndex(0);
 				if (chapter != null) {
@@ -897,9 +888,19 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		}
 
 		if (cmd.contentEquals("open_Welcome_Watsons_Book")) {
-			Book b = App.bookshelfArray.get(1).getBookByFrontNumb(90 /* shelf 1 book 90   Help & Welcome */);
+			Book b = App.bookshelfArray.get(0).getBookByFrontNumb(90 /* shelf 1 book 90   Help & Welcome */);
 			if (b != null) {
 				LinChapter chapter = b.getChapterByDisplayNamePart("Watsons Book");
+				if (chapter != null) {
+					/* chapterLoaded */chapter.loadWithShow("replaceBookPanel");
+				}
+			}
+		}
+
+		if (cmd.contentEquals("open_Welcome_New_User")) {
+			Book b = App.bookshelfArray.get(0).getBookByFrontNumb(90 /* shelf 1 book 90   Help & Welcome */);
+			if (b != null) {
+				LinChapter chapter = b.getChapterByDisplayNamePart("New User");
 				if (chapter != null) {
 					/* chapterLoaded */chapter.loadWithShow("replaceBookPanel");
 				}
@@ -915,7 +916,7 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 
 		if (cmd.contentEquals("playBridge_distrFlashCards")) {
 			String chapterPartName = "Distr Flash Cards";
-			Book b = App.bookshelfArray.get(1).getBookWithChapterPartName(chapterPartName);
+			Book b = App.bookshelfArray.get(0).getBookWithChapterPartName(chapterPartName);
 			if (b != null) {
 				LinChapter chapter = b.getChapterByDisplayNamePart(chapterPartName);
 				if (chapter != null) {
@@ -995,7 +996,7 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 			App.frame.splitPaneVert.setDividerLocation(App.frame.getHeight() - BOTTOM_OPT_PANEL_HEIGHT);
 		}
 		else if (cmd == "menuHelpHelp") {
-			Book b = App.bookshelfArray.get(1).getBookByFrontNumb(91 /* The Standard Help */);
+			Book b = App.bookshelfArray.get(0).getBookByFrontNumb(91 /* The Standard Help */);
 			if (b != null) {
 				boolean chapterLoaded = b.loadChapterByIndex(0);
 				if (chapterLoaded) {
@@ -1043,7 +1044,7 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		}
 		else if (cmd == "menuLookAtWebsite") {
 			try {
-				Desktop.getDesktop().browse(new java.net.URI("http://rogerpf.com/z_bridge_area/bridge/aaBridge.php"));
+				Desktop.getDesktop().browse(new java.net.URI("http://rogerpf.com/aaBridge"));
 			} catch (Exception ev) {
 			}
 		}

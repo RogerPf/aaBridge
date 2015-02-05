@@ -1,0 +1,574 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% File       : Peterb370c_Winning Techniques in Declarer Play_ 2011-04-07.lin
+%% Description: Peter's teaching session on Declarer play, BIL, 2011-04-07
+%% Programmer : Vanyvon
+%% Version    : 
+%%            : 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+mn| Peterb370c:Winning Techniques in Declarer Play,2011-04-07|tu||bt||nt||
+
+%% --- Definitions ---
+cr|116|cg|116|cb|1255|        %% blue
+cr|2255|cg|2255|cb|264|       %% yellow
+cr|316|cg|3128|cb|316|        %% dark green
+cr|4255|cb|40|cg|40|          %% red
+fh|120|ff|1Arial|fb|14|fm|1|  %% smaller light
+fh|220|ff|2Arial|fb|26|fm|2|  %% smaller bold
+fh|330|ff|3Arial|fb|34|fm|3|  %% larger light
+fh|430|ff|4Arial|fb|46|fm|4|  %% larger bold
+%% --- End Definitions ---
+
+%% --- Main ---
+qx|Main|
+cs|1|cp|2|fp|4|
+at|
+^-{ Peter Brennan (Peterb370c): Winning Techniques in Declarer Play, 1st lesson,
+   teaching at BIL, April 07, 2011. }
+^-|
+fp|2|cp||ht|f|at|   @2The LIN presentation of Peter 's lesson on Winning Techniques in Declarer Play in the Beginner Intermediate Lounge, 2011-04-07.|
+ht|i|cp||cs|2|
+at|^i   @2{
+
+             ^*GIntroduction, Introduction^*N
+
+^*GB01,    Board 01- maximizing your chances^*N
+
+^*GB02,    Board 02- combining chances^*N
+
+^*GB03,    Board 03- entry management^*N
+
+^*GB04,    Board 04- right suit to develop?^*N
+
+^*GB05,    Board 05- combo play^*N
+
+^*GB06,    Board 06- elimination and endplay^*N
+
+
+              ^*GFinal notes, Final notes^*N
+
+} @0|
+ht|z|at|   @2^*GHelp,Click here for help^*N
+
+(c) Peter & Bridge Base Online – Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|fp|1|at|^y Vanyvon|
+pg| ***** 0 ***** |
+
+
+%% --- End Main ---
+
+%% ---------- INTRODUCTION ----------
+qx|Introduction|
+nt||cs|1|cp|2|
+at|
+^-{ Introduction }
+^-|
+cp||ht|x|at|@0
+^*GHelp, Click here for help^*N
+
+(c) Peter & Bridge Base Online – Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|fp|1|at|^y Vanyvon|
+ht|e|fp|1|
+at|Peter Brennan: The purpose of this course is to acquaint you with some useful tools when you declare a hand. Hopefully, by seeing a number of examples in random order you'll recognize these situations when they pop up in your game.  
+
+Each hand features a common challenge of some sort:  dealing with bad suit breaks, handling tricky entry situations, making inferences from the bidding or play, counting enemy distribution and/or points, when to draw trumps, basic end plays, etc.
+
+|
+pg| ***** 1 ***** |
+
+
+%% ---------------------------
+
+
+qx|B01,BOARD 1|
+rh||ah|Board 1|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|4SAQJ97532H7DA2C43,SK4HKJ643DT64CAKT,S8HA82DQJ975CQ986,ST6HQT95DK83CJ752|mb|p|mb|1S|mb|2H|mb|p|mb|3H|mb|4S|mb|p|mb|p|mb|p|sk|S|%small text set kibbing South|
+nt|Bridge is a game filled with decisions and here's a common one.  With two @c losers you need a successful finesse in either @s or @d.  If you could take both, your game would make 75% of the time.  But dummy has only one entry!  You'll have to decide which finesse to take when you're in dummy for the first and only time.  Good luck!|pc|CA|
+pg| ***** 2 ***** |
+
+
+pc|C6|pc|C7|pc|C3|
+pg| ***** 3 ***** |
+
+
+pc|H4|pc|HA|pc|HT|pc|H7|
+pg| ***** 4 ***** |
+
+
+at|
+This hand was from a BBO VuGraph presentation last year.  The teams were playing to represent the United States in the World Championship for players under 21 years of age.  The play followed the same line as at our table and at trick 3 declarer was faced with the same choice.  What do you think our star declarer played?  Why?|
+pg| ***** 5 ***** |
+
+
+pc|DQ|nt|Actually, there are several good reasons to take the @d finesse.  First, assume that whichever finesse declarer takes, in @s or @d, loses. Then his only chance would be to drop a singleton king in the other suit, which was much more likely to happen in @s than in @d.
+(A singleton @sK occurs approximately 12.5% of the time; the stiff @dK less than 2.5%)|
+pg| ***** 6 ***** |
+
+
+at|
+Also if East has @sKxx or @sKxxx the finesse will work but declarer will still lose a @s trick and probably go down.  But a winning diamond finesse brings home the contract with 7 @s, 2 @d and the@hA.|
+pg| ***** 7 ***** |
+
+
+pc|D3|pc|D2|pc|D4|
+pg| ***** 8 ***** |
+
+
+pc|S8|pc|S6|pc|SJ|pc|SK|
+pg| ***** 9 ***** |
+
+
+pc|CK|pc|C8|pc|C2|pc|C4|
+pg| ***** 10 ***** |
+
+
+mc|10|sk||sc|y|
+pg| ***** 11 ***** |
+
+
+nt|Here's the lesson text from the hand:  We have 2@c losers and finesse positions in@s and@d but only one entry to dummy. It is correct to take the@d finesse because all we need to make our contract is East having the@dK.  In@s, we need either the stiff @sK or@sKx onside to make our game.|
+pg| ***** 12 ***** |
+
+
+at|
+BTW, the declarer on VuGraph, Richard Jeng from Atlanta, Georgia, took the @s finesse at trick 3 and went down.  Six months before Richard had set the record to become the youngest ever ACBL Life Master at the incredible age of 9 years, 6 months and 12 days!  
+Since he was 10 when this deal occurred perhaps he was showing signs of aging!  :)|
+pg| ***** 13 ***** |
+
+
+nt|A word about the bidding – would any of you open the South hand 4@s?|
+pg| ***** 14 ***** |
+
+
+at|
+The four-spade opening in the second position is not a good idea. One opponent has already passed, and you might easily miss a slam. As dealer or in the third seat (Pass – Pass to you), opening four spades is OK; and you should probably do so in the fourth position too.|
+pg| ***** 15 ***** |
+
+
+qx|B02,BOARD 2|
+rh||ah|Board 2|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|1SAK63HA2DK63CA953,SJ8HJT975DT82CK42,S952H83DAJ754CQJT,SQT74HKQ64DQ9C876|mb|1C|mb|p|mb|1D|mb|p|mb|2N|mb|p|mb|3N|mb|p|mb|p|mb|p|sk|S|sc||%small text set kibbing South|pc|HJ|nt|The opponents are poised to take at least 4 @h tricks so you must take your 9 tricks without losing the lead.  You'll need 6 tricks from the minor suits – either 5@d and @cA or 4 @c and @dAK.  Can you find the best line of play?  Good luck!|
+pg| ***** 16 ***** |
+
+
+at|
+The lesson in this hand is COMBINING CHANCES which can  give the declarer an edge in landing some contracts.  So, if you took the @d finesse and lost to the @dQ you were unlucky.  
+If you tried the @c finesse and it lost you were unlucky.  But, there's an important lesson here.  It involves bridge mathematics.|
+pg| ***** 17 ***** |
+
+
+at|
+WARNING!!! MATHEMATICS AHEAD!  (I'm legally required to issue this warning because, unfortunately, in previous classes peoples' heads have exploded when math is mentioned!)|
+pg| ***** 18 ***** |
+
+
+nt|The 5 missing @d will divide 3 – 2 about 2/3 of the time (68%).  FYI – a 4 – 1 split occurs 28% of  the time and 5 – 0 only 4%.|
+pg| ***** 19 ***** |
+
+
+at|
+Looking just at the 3 – 2 splits, there are only 10 different arrangements of the missing @d and 4 of the 10 feature the @dQ as part of the doubleton.  I'll let this sink in a bit.  (If it bounced off, ask away.)|
+pg| ***** 20 ***** |
+
+
+at|
+What this really means is you should plan to take the@c finesse but, before you do, it can't hurt to cash the@dAK.  If your luck is in that day you'll drop the @dQ so you won't need the @c finesse.|
+pg| ***** 21 ***** |
+
+
+at|
+It's not such a long shot, either.  The Queen should drop singleton or doubleton about 32% of the time. Cashing the @d honors cost nothing if the@dQ does not drop.  You still have the 50% chance of the @c finesse working.|
+pg| ***** 22 ***** |
+
+
+pc|H3|pc|H6|pc|HA|
+pg| ***** 23 ***** |
+
+
+pc|DK|pc|D2|pc|D4|pc|D9|
+pg| ***** 24 ***** |
+
+
+pc|D3|pc|D8|pc|DA|pc|DQ|
+pg| ***** 25 ***** |
+
+
+pc|DJ|mc|9|sk||sc|y|
+pg| ***** 26 ***** |
+
+
+nt|Here's the lesson text:  With 3 tricks in the majors declarer needs 6 tricks from the minor suits.  Either 5 @d and 1 @c or 2 @d and 4 @c will do.  Before you take the @c finesse cash the @dK and the @dA.  If you're lucky enough to drop the @dQ you won't need the @c finesse after all.  If the @dQ is still out you will be able to take the @c finesse and make your contract if East has the@cK.|
+pg| ***** 27 ***** |
+
+
+qx|B03,BOARD 3|
+rh||ah|Board 3|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|1SK92HAK65DAK82CK6,SAT74HQJ7DQT43CA8,SQJ83H82D75CQJT94,S65HT943DJ96C7532|mb|2N|mb|p|mb|3C|mb|p|mb|3H|mb|p|mb|3N|mb|p|mb|p|mb|p|sk|S|sc||
+nt|It seems the @c and @s will provide plenty of tricks.  Good luck!|pc|S4|
+pg| ***** 28 ***** |
+
+
+at|
+There's not a lot to comment about the play of this hand. The whole contract depends on how you play the 1st trick.|
+pg| ***** 29 ***** |
+
+
+at|
+You need to keep both low @ss in hand to insure an entry to dummy's @cs.|
+pg| ***** 30 ***** |
+
+
+at|
+Another way to look at it is say you're defending and partner leads a low @s.  With K9x you'd surely go up with the King as an unblocking play.  It's the same idea here.|
+pg| ***** 31 ***** |
+
+
+pc|S3|pc|S5|pc|SK|
+pg| ***** 32 ***** |
+
+
+pc|CK|pc|C8|pc|C4|pc|C5|
+pg| ***** 33 ***** |
+
+
+pc|C6|pc|CA|pc|C9|pc|C2|
+pg| ***** 34 ***** |
+
+
+pc|D3|pc|D5|pc|DJ|pc|DA|
+pg| ***** 35 ***** |
+
+
+pc|S9|pc|S7|pc|SJ|pc|S6|
+pg| ***** 36 ***** |
+
+
+pc|CT|pc|C3|pc|H5|pc|D4|
+pg| ***** 37 ***** |
+
+
+pc|CQ|pc|C7|pc|D2|pc|H7|
+pg| ***** 38 ***** |
+
+
+pc|CJ|pc|H3|pc|S2|pc|ST|
+pg| ***** 39 ***** |
+
+
+pc|D7|pc|D6|pc|DK|pc|DT|
+pg| ***** 40 ***** |
+
+
+mc|10|sk||sc|y|nt|Here's the lesson text:  It pays not to be greedy in this game!  If you win the first trick with the @s9 you'll go down because you won't be able to reach the board to cash your @c tricks.|
+pg| ***** 41 ***** |
+
+
+qx|B04,BOARD 4|
+rh||ah|Board 4|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|4SAK42HAQ6DKT72CK3,SQJT95HJ85DA84CA6,S87HK72DQJ6CQJ754,S63HT943D953CT982|mb|p|mb|1d|mb|1s|mb|2c|mb|p|mb|3Nppp|sk|S|sc||
+nt|With 2 top @ss and 3 top@hs you'll need to find 4 tricks between @ds and @cs.  If you're not careful the defense may take 3@ss and the minor suit Aces for -1.  Good luck!|pc|SQ|
+pg| ***** 42 ***** |
+
+
+at|
+A good reason to hold up on the first@s lead is to see if West overcalled with 5 or 6 @ss.  The missing honor cards of interest are the @sQJ10, @dA and @cA; if West,  vulnerable, has a 5-card @s suit he probably has them all.  However, if West had 6 @ss with just one Ace he may have decided to overcall at the one-level. |
+pg| ***** 43 ***** |
+
+
+at|
+BTW, never hold up if the defense could shift to a suit better for them.  Here that is not the case.  Any shift from @s would help you.|
+pg| ***** 44 ***** |
+
+
+pc||pc|S7|pc|S6|pc|S2|
+pg| ***** 45 ***** |
+
+
+pc|SJ|pc|S8|pc|S3|pc|SK|
+pg| ***** 46 ***** |
+
+
+at| We're pretty sure West, with only 5@ss, has the @cA.  If so, there's an underused tactic declarer has available here.  At trick 3 lead the@c3 toward dummy's @cQJ!|
+pg| ***** 47 ***** |
+
+
+pc|C3|nt|Now consider West's plight.  If he rises with the @cA you retain the @cKQJ so you can handle a 4 – 2 @c split as well as a 3 – 3.|
+pg| ***** 48 ***** |
+
+
+at|
+Do you see leading the@cK instead of the@c3 doesn't work?|
+pg| ***** 49 ***** |
+
+
+at|
+West can't save the defense by ducking the @c3 either.  If he ducks, declarer wins with a high @c and switches to @d to set up 3 tricks in that suit.  Those 3 and the 1 in @c give declarer 9 tricks.|
+pg| ***** 50 ***** |
+
+
+pc|C6|pc|CJ|pc|C8|
+pg| ***** 51 ***** |
+
+
+pc|DQ|pc|D3|pc|D2|pc|DA|
+pg| ***** 52 ***** |
+
+
+pc|ST|pc|H2|pc|H3|pc|SA|
+pg| ***** 53 ***** |
+
+
+pc|D7|pc|D4|pc|DJ|pc|D5|
+pg| ***** 54 ***** |
+
+
+pc|D6|pc|D9|pc|DK|pc|D8|
+pg| ***** 55 ***** |
+
+
+pc|DT|pc|H5|pc|C4|pc|H4|
+pg| ***** 56 ***** |
+
+
+pc|H6|pc|H8|pc|HK|pc|H9|
+pg| ***** 57 ***** |
+
+
+pc|H7|pc|HT|pc|HA|pc|HJ|
+pg| ***** 58 ***** |
+
+
+pc|HQ|pc|S5|pc|C5|pc|C2|
+pg| ***** 59 ***** |
+
+
+mc|9|sk||sc|y|nt|Here's the lesson text:  With 5 tricks in the majors, you'll need 4 from the minors.  Since it's likely West has the @cA for his overcall, there's a sure path to 9 tricks.  Duck the first @s (to see if West has 6) and win the second trick.  Leading the@c3 puts West in an impossible situation.  If he plays the@cA "on air" you'll make 4 @c tricks when they break 4 - 2 or 3 - 3 (84%).  And if West plays a low @c you win with the @cQ and turn your attention to@ds.  The 3 tricks in @d and the 1 @c bring your total to 9.|
+pg| ***** 60 ***** |
+
+
+qx|B05,BOARD 5|
+rh||ah|Board 5|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|1SAJ87642H3D854C42,HJT876DQJ97CKQT9,S953HKQ4DAK2CA763,SKQTHA952DT63CJ85|mb|3S|mb|p|mb|4S|mb|p|mb|p|mb|p|sk|S|sc||nt|There are too many losers for comfort here.  One each in @h, @d and @c along with a  possible one or two more in @s.  Can you find a way to make this contract?  Good luck!|pc|CK|
+pg| ***** 61 ***** |
+
+
+at|
+This hand shows how important Aces and Kings are in bridge.  They control the play and give you the time you need to set up an extra @h trick to take care of one of your losers.|
+pg| ***** 62 ***** |
+
+
+at|
+Actually, ten tricks are in sight via 6@ss, 1 @h, 2 @ds and @cA.  The first thing you must do is set up a @h.|
+pg| ***** 63 ***** |
+
+
+pc|C3|pc|C5|pc|C2|
+pg| ***** 64 ***** |
+
+
+pc|CQ|pc|CA|pc|C8|pc|C4|
+pg| ***** 65 ***** |
+
+
+pc|HK|pc|HA|pc|H3|pc|H6|
+pg| ***** 66 ***** |
+
+
+pc|CJ|pc|S8|pc|C9|pc|C6|
+pg| ***** 67 ***** |
+
+
+at|
+With that done, we turn our attention to trumps.  Having lost 2 tricks already we can afford one @s loser.  What's the best way to draw trump?|
+pg| ***** 68 ***** |
+
+
+nt|Here are the percentages - missing 3  cards in a suit expect a 2 – 1 split 78% of the time.  In that case, just play the @sA.  Each opponent will follow suit; one top honor will be played with a singleton honor remaining.|
+pg| ***** 69 ***** |
+
+
+at|
+What about the 3 – 0 split?  Leading the @sA will capture the @s10 and the lucky defender will have both high honors remaining;  you'll lose 2 tricks in the suit.  Is there anything we  can do?|
+pg| ***** 70 ***** |
+
+
+at|
+Just like real estate, it's all about location.  If the opponent sitting on your left (referred to as your LHO) has the @sKQ10 you'll lose 2 tricks.  There's nothing you can do to prevent it. But, if your RHO (right-hand opponent) has 3@ss you can limit your loss to 1 trick.|
+pg| ***** 71 ***** |
+
+
+at|
+Lead a @s from the table toward your @sAJ and cover whatever “righty” plays.|
+pg| ***** 72 ***** |
+
+
+pc|D4|pc|D7|pc|DK|pc|D3|
+pg| ***** 73 ***** |
+
+
+pc|HQ|pc|H2|pc|D5|pc|H7|
+pg| ***** 74 ***** |
+
+
+pc|S3|pc|ST|
+pg| ***** 75 ***** |
+
+
+nt|It can't cost to cover the @s10 with the @sJ.  If it loses to LHO it means the @s are 2 – 1 and the @sA will drop the remaining honor.|
+pg| ***** 76 ***** |
+
+
+at|
+If RHO splits his honors (plays the @sK or @sQ) you cover with the @sA.  Now, if West shows out return to the board (you did save a @d entry in case you needed it for this play, right?) and lead another @s toward the@sJ.  This limits East to only 1 @s trick.|
+pg| ***** 77 ***** |
+
+
+pc|SJ|pc|H8|
+pg| ***** 78 ***** |
+
+
+mc|10|sk||sc|y|nt|Here's the lesson text:  This hand demonstrates why Aces and King-Queen combinations are so important.  It appears we have a loser in each suit.  But our power cards control the timing of the hand.  We'll be able to set up the@h for a discard of one of our losers before the defenders can take 4 tricks.|
+pg| ***** 79 ***** |
+
+
+qx|B06,BOARD 6|
+rh||ah|Board 6|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|2SKQJT65HA3DJ4CJ42,S2HJ986DKQT76CA96,SA984HK74DA3CQ753,S73HQT52D9852CKT8|mb|p|mb|1C|mb|p|mb|1S|mb|2D|mb|2S|mb|p|mb|4S|mb|p|mb|p|mb|p|sk|S|sc||nt|With 6@ss, 2@hs and the @dA you're almost there.  The @cs may provide the all-important 10th trick. Good luck!|pc|DK|
+pg| ***** 80 ***** |
+
+
+at|
+In this hand the @c suit is known as a “frozen suit.”  It will cost a trick for whichever side leads it. |
+pg| ***** 81 ***** |
+
+
+at|
+Smart defenders will sit back and wait for declarer to break the suit.  Smart declarers will try to force the defense into leading the suit for them.|
+pg| ***** 82 ***** |
+
+
+at|   
+Of course, if either opponent holds the @cAK (West with a 2-level overcall is more likely in this hand) all we have to do is lead towards the honor sitting behind that opponent.  Here we'd lead towards dummy's@cQ.|
+pg| ***** 83 ***** |
+
+
+at|
+But there are two reasons why we suspect the @c honors are divided between West and East.  What are they?|
+pg| ***** 84 ***** |
+
+
+at|
+Good.  What a smart crowd!|
+pg| ***** 85 ***** |
+
+
+nt|1.  With @dKQxxx(x) (notation for a 5+ suit headed by the KQ) and@cAK West probably would have opened the bidding.|
+pg| ***** 86 ***** |
+
+
+at|
+2.  Barry Crane, master point leader for many years, said, “The reason God gives us AK combinations is so we don't have to think about what to lead.”  It's a strong inference declarer should remember any time he's missing the AK of a suit which wasn't led against a suit contract.|
+pg| ***** 87 ***** |
+
+
+at|
+OK.  Back to this hand.  After calculating the @c honors are split so we can't benefit from leading the suit ourself, we must force one of the defenders to lead @c for us.  :)  But how best to do that?  First, is there a benefit in ducking the @dK?|
+pg| ***** 88 ***** |
+
+
+at|
+Absolutely not!!  We must give up the@d trick when West has been stripped of his safe exit cards.  If we played our @d3 now, West would win and exit safely with a @h or a @s and eventually we'd have to play @c ourself.|
+pg| ***** 89 ***** |
+
+
+nt|So we set about removing those exit cards from West's hand.  Draw trump and play @h ruffing the third round.|
+pg| ***** 90 ***** |
+
+
+pc|DA|pc|D5|pc|D4|
+pg| ***** 91 ***** |
+
+
+pc|SA|pc|S3|pc|S5|pc|S2|
+pg| ***** 92 ***** |
+
+
+pc|S4|pc|S7|pc|SK|pc|D6|
+pg| ***** 93 ***** |
+
+
+pc|HA|pc|H6|pc|H4|pc|H5|
+pg| ***** 94 ***** |
+
+
+pc|H3|pc|H8|pc|HK|pc|H2|
+pg| ***** 95 ***** |
+
+
+pc|H7|pc|HT|pc|SQ|pc|HJ|
+pg| ***** 96 ***** |
+
+
+at|
+At trick 7 the stage is now set.  We lead the @d3 to give the lead to West.  (Some endplays are positional but on this hand East would be in a similar fix if he had the @dQ.)|
+pg| ***** 97 ***** |
+
+
+pc|DJ|pc|DQ|pc|D3|pc|D2|
+pg| ***** 98 ***** |
+
+
+at|
+Poor West.  He has no @s to exit with.  If he chooses to lead a red card, we'll ruff on the table and sluff the @c2 from our hand.  Then we'll lose only 2 @c tricks.  Understand?|
+pg| ***** 99 ***** |
+
+
+at|
+If West leads a@c we'll play low from dummy and East will play a high honor.  (Either @cA or K.)  Now our @cQ and @cJ are equals against the outstanding @c honor so, again, we'll only lose 2 @c tricks.|
+pg| ***** 100 ***** |
+
+
+pc|C6|pc|C3|pc|CK|pc|C2|
+pg| ***** 101 ***** |
+
+
+pc|HQ|pc|S6|pc|H9|pc|C5|
+pg| ***** 102 ***** |
+
+
+pc|C4|pc|CA|pc|C7|pc|C8|
+pg| ***** 103 ***** |
+
+
+pc|C9|pc|CQ|mc|10|sk||sc|y|nt|Lesson text:  Declarer is in danger of losing a@d and, if forced to break @c, three@c also.  Declarer prevails by stripping out the defenders safe exit cards and giving up the lead when the defense must unwillingly help declarer.  This tactic is called an ENDPLAY.|
+pg| ***** 104 ***** |
+
+
+%% ---------- FINAL NOTES ----------
+qx|Final notes|
+bt||pf||nt||cs|1|cp|2|fp|4|
+at|
+^-{ Final notes }
+^-|
+ht|h|cp||fp|2|at|   @2Thanks, all.  Looking forward to see you all at the next lesson on winning techniques in declarer play. :)|
+ht|z|at|
+
+(c)Peter & Bridge Base Online – Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|fp|1|at|^y Vanyvon|
+pg| ***** 105 ***** |
+
+
+%% --- End Final notes ---
+
+%% --- Help ---
+qx|Help, Help notes|
+bt||pf||nt||cs|2|fp|3|ht|b|at|^-{ Help }
+^-|
+hb|z|wb|b|bm|BIL.bmp|
+fp|2|ht|e|at|^b@2
+Short instruction on how to navigate through the movie:
+
+ ^$6  Previous page, go back one page.
+ ^$40  Next page, go forward one page.
+ ^$7  Previous chapter (the first page of the previous chapter).
+ ^$41  Next chapter (the first page of the next chapter).
+ ^$119  The first page of this movie. Once a trick is complete, click on the first card of the next trick. |
+%% --- End Help ---
+
+%% EOF

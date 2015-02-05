@@ -1,0 +1,325 @@
+
+supportdoubles.lin
+%%%10-26-2013,<<<<< READY TO GO
+%%kia
+bt||
+fh|155|ff|1Arial|fb|110|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|35|fm|3|                           FOR 3
+fb|46|fm|4|fb|4|fm|4|
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|3255|cg|3255|cb|3255|            White
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|6124|cb|6250|cg|6200|             6=TURQUOISE
+cr|70|cb|7220|cg|7235|              green/blue 7
+cr|8255|cb|80|cg|80|                red 8
+cr|9128|cb|90|cg|950|               Reddish-brown 9
+qx|A5, Support Doubles|cs|6|ht|b|fp|1|at|^-{               SUPPORT DOUBLES                  }
+^-|FP||AT|
+^B@2Support Doubles occurs after four consecutive bids. It is the fifth bid in the sequence. Support double is a convention that allows opener, in a competitive auction, to differentiate between 3-card and 4-card support when responder has bid a major. Let us see how it happens at the bridge table.|
+PG| ***** 0 ***** |
+
+
+NT||
+st||pn|You,LHO,Partner,RHO|rh||ah|Support Doubles - Take 1|md|,,,|sv|0|AT|
+^B@2Let us assume you open 1@C and|mb|1c|
+PG| ***** 1 ***** |
+
+
+AT| the LHO bids anything from pass, double, or a 1-level bid. Here he bids 1@D|mb|1D|
+pg| ***** 2 ***** |
+
+
+at| Now Partner bids 1@H|mb|1h|
+PG| ***** 3 ***** |
+
+
+AT| and the RHO overcalls 1@S (this opponents has to make a bid (1-level bid),|mb|1S|
+PG| ***** 4 ***** |
+
+
+AT| and you double-fifth bid.|MB|x|an|support double|
+PG| ***** 5 ***** |
+
+
+NT|^B@2
+The double by you is a Support Double.|
+PG| ***** 6 ***** |
+
+
+AT| So, what does a Support Double promises?|
+PG| ***** 7 ***** |
+
+
+AT| Let us have the drum roll.|
+pg| ***** 8 ***** |
+
+
+SB|SPartner I have 3-card support for your suit. I will tell you more if you are interested!|
+PG| ***** 9 ***** |
+
+
+NT|^B@2
+For now you are only announcing a 3-card support for the suit bid by partner-hearts here. You could have a minimum hand as is shown next.|
+PG| ***** 10 ***** |
+
+
+MD|0SKJ3 HA43 cKJ765 d32,0,0,0|hc|HA43|
+PG| ***** 11 ***** |
+
+
+AT| or a hand like the next.|
+pg| ***** 12 ***** |
+
+
+st||pn|You,LHO,Partner,RHO|rh||ah|Support Doubles - Take 1|md|1SKJ3 HA43 cKJ765 dak,0,0,0,,,|sv|0|mb|1c1d1h1sx|an|support double|SB|SPartner I have 3-card support for your suit. I will tell you more if you are interested!|
+PG| ***** 13 ***** |
+
+
+AT| You may have many "what if"s. Let us deal with some. We will keep the auction the same until it is your time to bid on the second round.|
+PG| ***** 14 ***** |
+
+
+NT||lc|ha43|
+%%what ifs
+st||pn|You,LHO,Partner,RHO|rh||ah|Support Doubles - Take 2|md|1SKJ3 HA543 cKJ76 d32,0,0,0,,,|hc|HA543|sv|0|mb|1c1d1h1s?|NT|^B@2
+What if you had 4-card support?|lb|*bWhat would you bid with this hand?^^2h|mb|2H|
+PG| ***** 16 ***** |
+
+
+AT| It is simple. With a minimum opener you raise. With a stronger hand you could make an invitational 3@H bid or even consider game in hearts with much stronger hand. That is all.|
+PG| ***** 17 ***** |
+
+
+NT||lc|HA543|   
+%%what ifs
+st||pn|You,LHO,Partner,RHO|rh||ah|Support Doubles - Take 3|md|1SKJ HA42 cKJ765 d643,,,|sv|0|hc|skj|mb|1c1h1s2h?|NT|^B@2
+What if you had only 2-card support-as is shown above-you may ask. Well, I guess you have to make some other bid. You cannot find all your bridge questions here :). Pass seems to be a good and safe option here.|
+PG| ***** 18 ***** |
+
+
+NT||lb|*mBTW, how many spades your Partner is promising?^4~5+^2|NT|^B@2
+Of course he should have 5 or more spades. With only 4 spades partner would double-Negative Double.|
+PG| ***** 20 ***** |
+
+
+AT| Before we do one more round let me share a pearl from Howard's recent mentoring session related to what we discussed.|
+PG| ***** 21 ***** |
+
+
+lc|skj|NT||cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|On the auction 1 minor-1@H-?, there is only 1 unbid major (spades). But there are 2 bids available to show spades, a negative double and 1@S. So experts differentiate between the meanings of the 2 bids. A negative double shows exactly 4 spades. And a bid of 1@S shows 5 or more spades.|
+pg| ***** 22 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|If the auction goes 1 minor-1@S-?, it is true that both double and 2@H show hearts. But 2@H promises 10+ and 5+ hearts. You would negative double if a) you only have 4 hearts or b) you have fewer than 10 points (or both). So the auction 1 minor-1@H-dbl has a somewhat different meaning than the auction 1 minor-1@S-dbl.)|
+PG| ***** 23 ***** |
+
+
+NT||
+
+%% take 4
+st||pn|You,LHO,Partner,RHO|rh||ah|Support Doubles - Take 4|md|1,,,|sv|0|mb||NT|^B@2
+You open a suit at 1-level.|sb|SI open the bidding at 1-level.|
+PG| ***** 24 ***** |
+
+
+AT| Your LHO either passes or bids something like a double or a bid at 1-level.|SB|WI pass or overcall anything at 1-level.|
+PG| ***** 25 ***** |
+
+
+AT| Your Partner bids|SB|nAnd I bid a suit.|
+PG| ***** 26 ***** |
+
+
+AT| and finally-the most important-the RHO make a 1-level bid|SB|EAnd I take a critical bid generally at 1-level.|
+PG| ***** 27 ***** |
+
+
+AT| and you have 3-card support for Partner.|
+PG| ***** 28 ***** |
+
+
+AT| Now, you bring down the hammer and double.|SB|SI bid a Support Double to announce my 3-card support for my partner.|
+PG| ***** 29 ***** |
+
+
+NT|^B@2
+That Support Double tells the world that you have 3-card support and the other secrets of your hand is still secret|
+PG| ***** 30 ***** |
+
+
+AT|. That brings us to the complicated alert issue. To sum all the information on alerting support double I would like to have the following quote from Larry Cohen.|
+PG| ***** 31 ***** |
+
+
+NT|^B@2
+"I alert every single action by opener. If asked what the ALERT to “Pass” means, I just say: “Denies three spades.” I can’t see how it can ever be a problem to “over- alert” when you have information which your opponents are entitled to know."|
+PG| ***** 32 ***** |
+
+
+NT|^B@2
+As you noticed the action by your RHO (the opponent to the right of the opener) is critical for bidding a Support Double. Generally, most partnerships use Support Doubles when the fourth-bid (the bid by RHO) is at 1-level even a 1NT and is not above 2-of-responder’s (Partner's) suit.|
+PG| ***** 33 ***** |
+
+
+AT| Therefore, if the bidding goes as is shown next,|
+PG| ***** 34 ***** |
+
+
+NT||
+%%take 5
+st||pn|You,LHO,Partner,RHO|rh||ah|Support Doubles - Take 5|md|1,,,|sv|0|mb|1dp1s2h|NT|^B@2
+You still can make a Support Double.|
+pg| ***** 35 ***** |
+
+
+mb|X|
+pg| ***** 36 ***** |
+
+
+at| However, if the RHO bids at a higher level|
+pg| ***** 37 ***** |
+
+
+UB|2|
+pg| ***** 38 ***** |
+
+
+mb|3C|at| for example 3@C as is shown above then you are promising extra value in addition to 3-card support. It needs partnership thorough discursion.|
+PG| ***** 39 ***** |
+
+
+NT||
+%%take 5a
+st||pn|You,LHO,Partner,RHO|rh||ah|Support Doubles - Take 5a|md|1,,,|sv|0|NT|^B@2
+Moreover, there is a Support Redouble.|
+PG| ***** 40 ***** |
+
+
+AT| If the auction goes 1C-P-1S-dbl-redbl|mb|1Cp1sXR|
+pg| ***** 41 ***** |
+
+
+NT|^B@2
+That is a "support redouble" again showing 3-card support.|
+PG| ***** 42 ***** |
+
+
+AT|
+
+Next, let's look at more examples.|
+PG| ***** 43 ***** |
+
+
+NT||bt||
+%%examples
+HT|B|AT|^B{|ia|1DP1H1Sx|at|}|HF|g|lb|*yIs the double a Support Double?^^y|ht|g|AT|^b@2The opener double is a support Double promising 3-card support for partner. |
+PG| ***** 45 ***** |
+
+
+NT||
+ht|b|AT|^B{|ia|1CP1D1HX|at|}|HF|g|lb|*yIs the double by West a Support Double?^^y|ht|g|AT|^b@2It is a Support Double promising 3-card diamonds support. It is ok to play a support double if responder bids 1@D. But many people play support doubles only apply when responder's suit is a major.|
+PG| ***** 47 ***** |
+
+
+NT||
+
+ht|b|AT|^B{|ia|1DX1H1SX|at|}|HF|g|lb|*yIs the double by West a Support Double?^^y|ht|g|AT|^b@2It is a Support Double promising 3-card heart support.|
+PG| ***** 49 ***** |
+
+
+NT||
+
+ht|b|AT|^B{|ia|1HP1S1NX|at|}|HF|g|lb|*yIs the double by West a Support Double?^^y|ht|g|AT|^b@2Yes, it is a Support Double promising 3-card spade support.|
+PG| ***** 51 ***** |
+
+
+NT||
+
+ht|b|AT|^B{|ia|1C1H1S1NX|at|}|HF|g|lb|*yIs the double by West a Support Double?^^y|ht|g|AT|^b@2Yes. But, some may say,"There is not as much need to differentiate between 3-card support and 4-card support. If opener knows that partner has 5+ spades, he can comfortably raise to 2@S with 3-card support knowing that their side has at least an 8-card fit." Of course we are advanced and know about the negative doubles. So, the support double here still is a good bid and clearly tells partne that there are 3-card support is available. But as Howard says, "Both have merit -:).|
+pg| ***** 53 ***** |
+
+
+NT||
+
+ht|b|AT|^B{|ia|1C1H1S1NX|at|}|HF|g|lb|*mEast has^Exactly 4 spades~5+ spades~2 spades^2|ht|g|AT|^b@2East would double (Negative Double) with exactly 4 spades.|
+PG| ***** 55 ***** |
+
+
+ht|k|AT|^B@2Next is the quiz section.|
+PG| ***** 56 ***** |
+
+
+NT||
+%%SKQJ43H953D853CA6
+st||md|1SAT2 H72 DAT CKQ7543,,,|sv|0|rh||AH|Support Doubles - Take 6|mb|1C1H1S2H?|lb|*bPlease make a bid^^x|mb|d|AN|3-card spade support|hc|SAT2|
+PG| ***** 58 ***** |
+
+
+NT||lc|SAT2|
+
+st||md|1SJT5 HKT2 DAKQ5CAJ4,,,|sv|0|RH||ah|Support Doubles - Take 7|mb|1DP1S2H?|lb|*bPlease make a bid^^x|mb|d|AN|Support Double - 3-card spade support|hc|SJT5|
+PG| ***** 60 ***** |
+
+
+NT||lc|SJT5|
+
+st||md|1SK65 HAK864  DA642 C7,,,|sv|0|RH||ah|Support Doubles - Take 8|mb|1HP1S1N?|lb|*bPlease make a bid^^x|mb|d|AN|support double|hc|SK65|
+PG| ***** 62 ***** |
+
+
+NT||lc|SK65|
+
+st||md|1SA764HAJ9D6CAK984,,,|sv|0|RH||ah|Support Doubles - Take 9|mb|1CP1H2D?|lb|*bPlease make a bid^^x|mb|d|AN|3-card heart support|hc|HAJ9|
+PG| ***** 64 ***** |
+
+
+NT||lc|HAJ9|
+
+st||md|1SQ42HAK42DAQJ83 C9,,,|sv|0|RH||ah|Support Doubles - Take 10|mb|1DP1Sd?|lb|*bPlease make a bid^^r|mb|r|AN|Support Redouble - 3-card support|hc|SQ42|
+PG| ***** 66 ***** |
+
+
+NT||lc|SQ42|
+%%%
+%%As opener, would you make a Support Double after: 
+%%OPENER OPPONENT RESPONDER OPPONENT 
+%%1DP1H1S?? with: 
+ST||SV|O|RH||AH|F|MD|1S832 HA2 DAQ876 CQT3,,,|MB|1DP1H1S?|lb|*yCould you bid support Double with this hand?^^n|nt|^B@2
+No. You can bid Support Double when you have 3-card support.|
+PG| ***** 68 ***** |
+
+
+NT||
+ST||SV|O|RH||AH|G|MD|1SKJ3 HA43 DKJ765 C32,,,|MB|1DP1H1S?|lb|*yCould you bid support Double with this hand?^^y|nt|^B@2
+Yes. With a minimum opener and 3-card support you have a Support Double.|
+PG| ***** 70 ***** |
+
+
+ 
+ST||SV|O|RH||AH|H|MD|1SAQT H432 DKQJ7 CQ76,,,|MB|1DP1H1S?|lb|*yShould you make a support double with this hand?^^n|nt|^B@2
+No. You do not have to bid Support Double just because you are an expert in it. You have 3-card support but you have a more descriptive bid-1N. |
+PG| ***** 72 ***** |
+
+
+NT||  
+ST||SV|O|RH||AH|I|MD|1SA2 HKQJ DAQJ76 CJ32,,,|MB|1DP1H1S?|lb|*yCould you bid support Double with this hand?^^y|nt|^B@2
+Sure, Support Double is a great bid. You will get a chance to show your strength later. There is no limit for the hand strength. Of course you would have opened 2@C if you had a stronger hand.|
+PG| ***** 74 ***** |
+
+
+NT||bt||
+%%end
+ht|k|at|^-
+This is the end of this synopsis.
+
+BTW, this synopsis was based in part on an Article by Larry Cohen at |CP|1|AT|^*Htinyurl.com/n2wlc46^*N|CP||AT|
+^-
+|
+PG| ***** 75 ***** |
+
+

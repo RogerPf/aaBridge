@@ -1,0 +1,2336 @@
+%%%%%Last edited April 19, 2011
+%%%%%%%%%%%%%%Bergen Hand Evaluation- First Lesson
+%%%%%%%% By Kia, BBO nickname "nome"
+fh|155|ff|1Arial|fb|110|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|35|fm|3|                           FOR 3
+fh|420|ff|4Arial|fb|15|fm|4|                           FOR 3
+cr|1255|cg|1255|cb|10|
+cr|264|cg|2255|cb|2255|
+cr|364|cg|3255|cb|364|
+cr|4255|cg|464|cb|4255|
+cr|5255|cg|516|cb|516|3d|5|
+TU|Y|bt||mn|             Hand Evaluation - Bergen's Method Howard Schutzman Lessons on BBO         |HT|f|cs|4|at|^-
+{AS SOON AS YOU PICK UP YOUR HAND YOU SHOULD COUNT YOUR STARTING POINTS}
+^-|ht|h|at|^nBy Marty Bergen in Better Slam Bidding with Bergen. 
+^c@2^Y@3Marty Bergen has just released an excellent new book, Slam Bidding Made Easier. Howard BBO nickname "hondo717" had the privilege of being one of the editors, and he highly recommends it.   
+
+He held the first of a free 4 week lesson series on slam bidding on Tuesday January 27, 2009 on BBO at 10 PM Eastern. And there will be 3 more lessons on the 3 following Tuesdays. The material for the lessons is from Marty Bergen's excellent new book.  This Tutorial is based on Howard's first lesson.| 
+cs|1|ht|p|at|^c{ |ht|w|at|^y
+^y }
+|ht|p|va|4|at|^-TABLE OF TOPICS
+^-^D^*GB00,  ^d-  Howard, our Mentor  ^*N
+^D^*GB01,  ^d-  A Note by Kia    ^*N
+^D^*GSP,  ^d-  Starting Points^*N
+^D^*GRAW,  ^d-  Raw HCP and Length Points    ^*N
+^D^*GQU,  ^d-  Quality Suit Points    ^*N
+^D^*GDB,  ^d-  Dubious Doubletons/Singletons^*N
+^D^*GADJ,  ^d-  Adjust-3^*N
+^D^*G2C,  ^d-  When to bid 2@C^*N
+^D^*GQ,  ^d-  Quizzes  ^*N|ht|X|AT|
+
+Please click the red "HELP" icon if you need help to view this presentation.
+ 
+|HT|z|AT|
+^o^*BPrepared by Kia, BBO nickname "nome"|
+PG| ***** 0 ***** |
+
+
+NT||
+
+qx|B00, Howard or Mentor| 
+CP||fp||ht|f|at|
+^c@e@2Howard Schutzman is a teacher and expert player on Bridge Base Online. His nickname  on BBO is hondo717. @E@3He has been playing duplicate bridge for more than 40 years. Over the years, he has developed articles and notes on learning to play bridge. This material is presented at ^*Hwww.bridgesights.com/hondobridge ^*Nand is available for anyone to download at no charge. 
+
+Howard runs several free weekly teaching sessions on BBO. Kibitzers are always welcome at these sessions, and encouraged to chat with Howard. His current schedule is posted on his web site. This BBO movie covers his recent session.
+
+Students are encouraged to mark Howard as a BBO friend, and welcome to watch him play and ask questions any time he is online. He will also gladly answer any questions sent to him via BBO e-mail. He also maintains an e-mail list for interested students to whom he sends these movies, his puzzle column, and other materials of interest. You may sign up for his e-mail list at his web site.|
+
+
+cp||
+fp|2|
+ht|u|
+at|
+©^*B Howard Schutzman "hondo717"    ^*N   
+    ^*Hwww.bridgesights.com/hondobridge   ^*N
+^*B    hschutzman@@alum.mit.edu ^s      |
+PG| ***** 1 ***** |
+
+
+NT||
+ 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% +++++++++++>>>>>
+qx|B01, a Note by kia|
+HT|E|FP|2|AT|
+^c@2^x@3What you will view next is my best attempt to bring you Howard's first session on slam bidding. It is not easy to edit and summarize several thousand chat lines into informative and pleasing presentation of this size.  Further, in this presentation my object has been  to use all means to bring out the most important part of the his teaching and repeat them as often as possible. Further, great effort has gone into preparing a large quiz section to practice the hand evaluation based on Bergen's method.
+
+Further, I have tried to make the presentation as close to the live event as possible. Again, please note that I spent my resources mainly to bring you the real message and the spelling and the grammar have not been my concerns. 
+
+As usual Howard graciously have assisted me in this work. I hope that I have succeeded in my attempt. I would be delighted to receive your kind critique and suggestions by emailing them to kiaaziz@@yahoo.com.
+
+Now, Please click the forward arrow and feast on Howard's vast knowledge.
+
+|HT|w|AT|^Rnome
+|HT|X|AT|^RJanuary 30, 2009
+
+
+|
+PG| ***** 2 ***** |
+
+
+NT||
+qx|SP,Starting Points|
+HT|E|FP||cp|5|AT|
+^B@2^z@3^*Bhondo717: ^*N|cp||at|This is the first of 4 lessons on slam bidding, based on Marty Bergen's excellent new book, Slam Bidding Made Easier. If you have not obtained it yet, I suggest you do so. You can go to my web site, ^*Hwww.bridgesights.com/hondobridge^*N, to see the lesson outline, chapters covered, and to purchase the book. The 4 lessons will be as follows: 
+
+^b@2^z@3The first lesson, tonight, will be on starting points, that is figuring out how good your hand is prior to the auction
+^b@2^z@3The second lesson is on declarer and dummy points, which is re-evaluating your hand once the auction starts.
+
+The first two lessons are the most important. They apply to all hands, part scores and games, as well as slams.
+
+The third lesson will be on the specific slam bidding techniques of control bids and Roman Key Card Blackwood.
+
+The 4th. lesson will talk about 2 common conventions, Splinters and Jacoby 2N, which are useful in getting you to slam.
+
+Tonights lesson is on "|cp|5|at|Starting Points|cp||at|", chapters 1-4 in Bergen's book.|
+PG| ***** 3 ***** |
+
+
+NT||
+%%%%%%%%%%%
+HT|E|FP||cp|5|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||at|Suppose for the moment, we changed the rules of bridge, so that partner could tell you exactly what he had in his hand. For example, suppose partner could say "I have AK32 of spades, QJ104 of hearts", and so forth. That would make the game a lot less interesting, for sure. However, you would not need to count partner's HCP to figure out where you wanted to play. You would simply look at what you had combined with what partner had, and figure out the best contract. Obviously that is against the rules in bridge. So, you have to use the bidding to describe what you have in your hand. But, there are billions of possible bridge hands, and only 38 legal bids. Therefore, you cannot possibly tell partner exactly what you have with the bidding.  But, what you can do, is give him an idea of how strong your hand is, and what your distribution is. So, the idea behind hand evaluation is to figure out how good your hand is and communicate that to partner. |
+PG| ***** 4 ***** |
+
+
+cp|5|AT|
+
+^B@2^*Bhondo717: ^*N|cp||at|I assume all of you are familiar with basic hand evaluation.  That is HCP, A = 4 points, K = 3 points, Q = 2 points, and J = 1 point. And also distribution. either shortness (void = 3 points, singleton = 2 points, doubleton = 1 point) or length (1 point for each card over 4.) That is actually a pretty good system, and works well on a lot of hands. But, it is not perfect, particularly because the value of your hand changes as the auction proceeds. What I have been teaching you thus far is how to apply judgement, and upgrade or downgrade your hand based on the auction. What Marty Bergen has done, even better, is to come up with some rules that allow you to quantify how many points to upgrade and downgrade your hand.|
+PG| ***** 5 ***** |
+
+
+cp|5|AT|
+
+^B@2^*Bhondo717: ^*N|cp||at|Those rules are what I will be teaching you in these first 2 lessons. They are not just for slam hands, but for all hands.|
+PG| ***** 6 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%
+qx|RAW, Raw HCP and Length Points|
+HT|E|FP||cp|5|AT|^B@2^Y@3^*Bhondo717: ^*N|cp||at|Now to illustrate how HCP are not always accurate let me present the following two hands and give you a choice. Which hand would you rather hold when your partner bids 2@S?
+|HT|i|cs|2|3d|5|at|^b  {|ih|pSHKQJ86DKQJ2CKQJ5|at|} 
+|HT|o|cs|2|3d|5|at|^b  {|ih|pST9853H6D3C987543|at|}|
+PG| ***** 7 ***** |
+
+
+HT|H|cp|5|AT|^K@2^Y@3^*Bhondo717: ^*N|cp||AT|It is quite possible that you can make 4@S with the 2nd hand, even if partner has as little as AJxxxx of spades and a stiff club. But you might not even  make 2 spades with the first hand. The point is, HCP by themselves do not constitute good hand evaluation.|cp|5|at|Distribution and fit with partner is often even more important.|cp||
+PG| ***** 8 ***** |
+
+
+AT|
+^K@2^Y@3I don't know how many times I have heard someone say, "I cannot believe they made game against me with my 20 HCP."  HCP per se do not take tricks. Good fits and distribution are what counts. Having said that, let us discuss how you figure out how good your hand is before the auction begins. In order to do that we need to find out the hand's |cp|5|at|Starting Points|cp||at|.|
+PG| ***** 9 ***** |
+
+
+cp|5|AT|^K@2^Y@3^*Bhondo717: ^*N|cp||at|To do so, Marty Bergen presents several Rules. I will go over each one in turn, and present examples. The first 2 rules are the easiest, and the ones most of you are familiar with. They are |cp|5|at|HCP|cp||at| and |cp|5|at|Length Points|cp||at|.|
+PG| ***** 10 ***** |
+
+
+HT|v|CS|4|AT|^B@2^Y@3
+
+{Actually I will call the first rule "|CP||at|raw HCP|cp||at|" - Ace = 4, K = 3, Q = 2, J = 1}|
+PG| ***** 11 ***** |
+
+
+cp|5|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||at|Length Points or the second rule work as follows:|cp|5|at|
+You count 1 point for each card in each suit that has more than 4 cards in it.|cp||at| So a 5 card suit is worth 1 point, six card suit 2 points, etc. Let us go over a few examples. I will show you a hand. You do the calculation and next I will give the correct answer.|
+PG| ***** 12 ***** |
+
+
+NT||
+%%%%%%%%%%
+HT|E|FP||cp|5|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||at|Tell me how many starting points are in these hands focusing only on HCP and Length.
+|HT|h|cs|2|3d|5|at|^b  {|ih|pSSAT953HKQ86DK32C5|at|} |
+PG| ***** 13 ***** |
+
+
+HT|g|cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|13 is correct. 12 HCP and 1 length point. For now, just count HCP and length for starting points,|
+PG| ***** 14 ***** |
+
+
+HT|K|cs|2|3d|5|at|^b  {|ih|pSSAT953HKQ862DK3C5|at|} |
+PG| ***** 15 ***** |
+
+
+HT|j|cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|This is the same as the last hand, except I added a 5th heart, so 14 is the correct answer. 12 HCP + 1 each for hearts and spades. You add length points, regardless of the suit quality. Even a 76543 holding is still worth one length point. We will discuss tens later.|
+PG| ***** 16 ***** |
+
+
+HT|n|cs|2|3d|5|at|^b  {|ih|pSSAT9632HKQ86DK3C5|at|} |HT|N|
+PG| ***** 17 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|Correct answer is 14 Starting Points. 12 HCP + 2 points for 6 card spade suit.|
+PG| ***** 18 ***** |
+
+
+HT|q|cs|2|3d|5|at|^b  {|ih|pSAT53HKQ86DK32C95|at|} |HT|P|
+PG| ***** 19 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|12 it is. No length points, just 12 raw HCP.|
+PG| ***** 20 ***** |
+
+
+AT|^K@2^Y@3
+
+sshmj: Can we open this hand? Because Rule of 20 requires us to open it though it only has 12 starting points?|
+PG| ***** 21 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|Good question about rule of 20. will discuss that later. But, for now let us go onto the next rule of hand evaluation -- |cp|5|at|Dubious Singletons and Doubletons. |cp||at||
+PG| ***** 22 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%
+qx|DB,Dubious Doubletons/Singletons|
+HT|E|FP||cp|5|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||at|A singleton honor, other than the ace, is not worth as much, because it may not take a trick. And a doubleton Q or doubleton J is also not worth as much. Dubious Singleton honors are easy to spot. However, |cp|5|at|Dubious Doubletons|cp||at| are a bit harder. Bergen enumerates all of the |cp|5|at|Dubious Doubletons|cp||at|. But I think it is easier to define a Dubious Doubleton as |
+PG| ***** 23 ***** |
+
+
+FP|2|CP|5|AT|
+
+^-ANY DOUBLETON THAT CONTAINS A Q OR J AND DOES NOT CONTAIN 
+THE ACE AS THE OTHER CARD}
+^-|
+PG| ***** 24 ***** |
+
+
+FP||CP||AT|^B@2^Y@3
+For example, Qx and Jx are clearly Dubious Doubletons.  Kx is not a Dubious Doubleton, because the K is not forced to be played under the ace. Other examples of Dubious Doubletons are KQ,  QJ, and KJ.  Basically, as I said, Dubious Doubletons are defined as any doubleton with a Q or J and not the ace. According to Bergen's method you deduct one point for each |cp|5|at|Dubious Doubleton|cp||at| or |cp|5|at|Singleton|cp||at|. Let us practice Starting Points calculation with added parameter of Dubious Doubletons/Singletons.|
+PG| ***** 25 ***** |
+
+
+AT|
+ 
+|HT|r|cs|2|3d|5|at|^b  {|ih|psAT53H8654DK32CKQ|at|} |HT|q|
+PG| ***** 26 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|11 it is. 12 HCP, no length points, subtract 1 for KQ Dubious Doubleton.|
+PG| ***** 27 ***** |
+
+
+AT|
+
+|HT|u|cs|2|3d|5|at|^b  {|ih|pSAK985HKQ86D832C5|at|} |HT|t|
+PG| ***** 28 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|Correct answer is 13. 12 HCP + 1 spade length point and no dubious singletons. |
+PG| ***** 29 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+HT|f|FP||cp|5|cs|2|3d|5|at|^b  {|ih|pSAT53H8654DK32CKJ|at|} |HT|f|
+PG| ***** 30 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|10 is correct 11 HCP -1 for dubious Doubleton.|
+PG| ***** 31 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+HT|k|cs|2|3d|5|at|^b  {|ih|pSAT53H8654DK32CAJ|at|} |HT|k|
+PG| ***** 32 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|12 starting Points. 12 HCP No length or Dubious Doubletons. club AJ is not dubious. A doubleton with an ace is never dubious, according to the Bergen methodology.|
+PG| ***** 33 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+qx|QU, Quality Suite Points| 
+HT|e|Va|6|cp|5|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||at|We have learned 3 rules thus far -- raw HCP, length, dubious singletons/doubletons. There are 2 more rules to go.  The 4th. rule is "|cp|5|at|quality suits|cp||at|" which  is defined as a 4 card or longer suit which contains 3 honors (and the 10 counts as an honor.) So KQ10x is considered a "quality suit" but KQ10 is not (only 3 cards.) You should add one point for each quality suit in your hand. That is a fairly easy rule. And let us quickly look at some example again. I post the hand on screen and a few seconds later I will give you the correct answer.
+
+OK, let us look at the first hand.|
+PG| ***** 34 ***** |
+
+
+HT|p|cs|2|3d|5|at|^b  {|ih|pSAT732HAKT8DJ2C82|at|} |HT|o|
+PG| ***** 35 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|Correct answer is 13 Starting Points. 12 HCP, 1 point for spade length and 1 point for quality heart suit and -1 for Diamond Dubious Doubleton.|
+PG| ***** 36 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+HT|s|cs|2|3d|5|at|^b  {|ih|pSAKT95HKQT6D832C5|at|} |HT|r|
+PG| ***** 37 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|15 is correct. 12 HCP, 1 for spade length,  1 for quality spades and 1 for quality hearts There are no Dubious Doubleton/Singletons.|
+PG| ***** 38 ***** |
+
+
+NT||
+%%%%%%%%%%%%
+qx|ADJ,Adjust3|
+HT|E|FP||cp|5|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||at|The last rule is the most complicated. If you find this rule too complicated, you can skip it, because it more often than not does not apply to most hands. However, the basic concept is good to know. The basic idea is that the 4-3-2-1 method for counting points is not completely accurate. With the help of computer, some smart people have done mathematical analysis and come up with more accurate point counts. Using a 10 point system, more accurately these are the point counting based on computer calculations:|cp|5|at|
+^-
+A = 4.5,  K = 3,  Q = 1.5,  J = .75,  10 = .25
+^-|
+PG| ***** 39 ***** |
+
+
+cp||
+cp|5|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||at|However, most of us would have trouble figuring out our points using this set of points count. The beauty of 4-3-2-1 is it is relatively easy. Marty Bergen came up with a way of approximating these points count, which he calls "adjust-3" and is much easier to use. The idea is, with the standard points count, aces and 10s are under valued, and queens and jacks are over valued. Therefore, if your hand contains lots more aces and 10s, you should add something and if it contains lots more Queens and Jacks, you should subtract something. This is how adjust-3 works. Count up the number of aces and 10s, count up the number of queens and jacks.|
+PG| ***** 40 ***** |
+
+
+FP|2|CP|5|AT|^-
+If the number of Aces and 10s is greater by 3 but less than 6 (for example you have 4 Aces 
+and 10s and only 1 queen), you add (adjust) 1 point to your hand.
+|
+PG| ***** 41 ***** |
+
+
+AT|
+Similarly, if the number of queens and jacks exceed the number of Aces and 10s by 3
+but less than 6 (say you have 5 Queens and Jacks, and 2 Aces), you subtract (adjust) 1 point.|
+PG| ***** 42 ***** |
+
+
+AT|
+
+If the difference is 6+ in either situations add/subtract (adjust) 2.
+And finally,Do nothing if the difference is 2 or less.
+^-
+|
+PG| ***** 43 ***** |
+
+
+FP||CP||NT||
+%%%%%% Adjust 3
+HT|E|cp|5|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||at| This is rather most difficult part of Bergen's method. If you don't want to bother, most of the time it wont make a difference. What you can do instead is look at your hand. If there are lots of queens and jacks, or lots of aces and 10s, then you can try to apply adjust-3, otherwise don't need to bother.  In other words,  if Aces+Tens outnumber quacks by 3 or more add a point.  If Quacks outnumber Aces+tens by 3 or more, subtract a point. Adjust 2 if one group or the other outnumber by 6+. So, let us practice a few hands and figure out the Starting Points for each.|
+PG| ***** 44 ***** |
+
+
+HT|l|cs|2|3d|5|at|^b  {|ih|pSQJ4HKJ63DKQ64CAQ|at|} |HT|k|
+PG| ***** 45 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|Yes 17 is correct. 18 HCP (5 quacks - 1 ace means subtract 1.) No points for length or Quality suits and no Dubious doubletons/singletons.|
+PG| ***** 46 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+HT|o|cs|2|3d|5|at|^b  {|ih|pSK83HA976DA853CA5|at|} |HT|n|
+PG| ***** 47 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|16 starting Points. 15 HCP + 1 for 3 aces (no quacks.)|
+PG| ***** 48 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+HT|r|cs|2|3d|5|at|^b  {|ih|pSKQ4HAJ85DKJ83CKT|at|} |HT|q|
+PG| ***** 49 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|17 Starting Points is correct, and this is more typical of hands in real life. 17 HCP, 1 ace, 1 ten, and 3 quacks, so no adjustments. And no length, quality suits or Dubious doubletons/Singletons.|
+PG| ***** 50 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+HT|u|cs|2|3d|5|at|^b  {|ih|pSAT4HT943DAK96CK2|at|} |HT|u|
+PG| ***** 51 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|There are 15 Starting points in this hand. 14 HCP plus 1 for 4 aces/10s and no quacks. No other additions or subtraction.|
+PG| ***** 52 ***** |
+
+
+AT|
+
+Now, for those of you who are math geniuses, and want to use the actual fractional HCP scale, go right ahead, as that is the most accurate. But for us mortals, adjust-3 is close enough.|
+PG| ***** 53 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+HT|E|cp|5|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||at|Next we are going to have a  few general practice hands  and then I will discuss the rule of 20 with this new hand evaluation method. And finally we will review when to open 2@C. Here is the first all around  practice hand.|
+PG| ***** 54 ***** |
+
+
+HT|I|cs|2|3d|5|at|^b  {|ih|pSAT732HAKT8DJ2C82|at|} |HT|H|
+PG| ***** 55 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|Correct answer is 14 Starting Points. 12 HCP  + 1 length point + 1 heart quality suit - 1 for @DJx + 1 for adjust-3|
+PG| ***** 56 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+HT|l|cs|2|3d|5|at|^b  {|ih|pS9HAQJ754DAKJ3C75|at|} |HT|K|
+PG| ***** 57 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|19 Starting Points is the answer. 15 HCP + 2 for heart length  + 2 for quality red suits.|
+PG| ***** 58 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+HT|o|cs|2|3d|5|at|^b  {|ih|pSKJHQJ75DQ87643CQ|at|} |HT|n|
+PG| ***** 59 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||AT|10 Starting Points is correct. 11 HCP.  Adjustments are 2 length points, no quality suits, -2 dubious doubleton/singleton, -1 adjust-3.
+
+Based on Rule 20 this hand is an opener. And I would like to discuss the implications of Bergen's method on Rule 20 opening.|
+PG| ***** 60 ***** |
+
+
+HT|u|AT|^B@2^Y@3Currently, I do not have enough experience with this type of hand evaluation and the rule of 20 to give a definite recommendation. However, I will tell you my current style. I am going to try for a while determining my hand values using only the HCP, Quality suits, Bergen Adjust-3 and Dubious shortness and not length. Then if my points and the two longest suits is 20 or more, I will open. With that in mind and ignoring the length,  the last hand is only 8 Starting Points. Therefore, I would not open it using Rule 20 because 8 + 4 (Hearts) + 6 (Diamonds) = 18. I will open the last hand 2@D.|
+PG| ***** 61 ***** |
+
+
+NT||
+HT|E|cp|5|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||at|I will let you know in a month or two whether or not it does work or not. For now, that means that some hands I used to open will no longer be opened. The other rule I will use is that if the Bergen starting points come to 13, I will open the hand regardless. Bergen recommends 13 starting points as a "real" opener. |
+PG| ***** 62 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% When to open 2C
+qx|2C, when to open 2@C|
+HT|E|cp|5|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||at|Now, the final topic, is when to open 2@C. However, first we have to talk about "Quick Tricks" or QTs. |
+PG| ***** 63 ***** |
+
+
+AT|
+
+Bergen defines QTs as the number of tricks you expect to win in a suit on the first two rounds of that suit. Only 2 Qts per suit. Here are the available QTs for each suit. |
+PG| ***** 64 ***** |
+
+
+AT|
+AK ^C= 2
+AQ ^C= 1.5
+A  ^C= 1
+KQ ^C= 1
+KX ^C= .5 |
+PG| ***** 65 ***** |
+
+
+AT|
+
+According to Bergen, to bid 2@C and rebid 2@H or 2@S the key number is "FOUR."
+
+^CA. ^DHaving no more than |cp|5|at|FOUR|cp||at| losers. Losers are tricks you expect to lose if partner has no help.
+
+^CB. ^DHaving no less than |cp|5|at|FOUR|cp||at| QTs.
+
+The hand should satisfy both A and B.  
+
+Let me show you a few examples. First, we should count the QTs and then the Losers. We can open the hand 2@C if both conditions are present.|
+PG| ***** 66 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%
+HT|E|va|4|cs|2|3d|5|at|^b  {|ih|pSAJHKQJT762DAK4C8|at|} |HT|d|
+PG| ***** 67 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|4 quick tricks, A of spades = 1,  KQ of hearts = 1,  AK of diamonds = 2.  There are 4 Losers. 1 spade loser, 1 heart loser, 1 diamond loser and 1 club loser. We can open this hand 2@C.|
+PG| ***** 68 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+HT|h|cs|2|3d|5|at|^b  {|ih|pSAKQT3HAKQJ2D42C8|at|} |HT|g|
+PG| ***** 69 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|This hand has 4 quick tricks (AK of hearts, AK of spades, each 2), and 3 losers in the minors. So you can open this hand 2@C.|
+PG| ***** 70 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+HT|k|cs|2|3d|5|at|^b  {|ih|pSAKQJ9874H72D65CA|at|} |HT|j|
+PG| ***** 71 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|According to Bergen this hand has 3 QTs and 4 Losers and should not open 2@C.  I am neutral at this point about Bergen's 2@C recommendation, as I have no experience yet. However, Bergen is very smart, so I would tend to use his rules all things considered.|
+PG| ***** 72 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+HT|n|cs|2|3d|5|at|^b  {|ih|pSAHAQ643DK763CAKJ|at|} |HT|n|
+PG| ***** 73 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|This hand has 5 quick tricks. However, Bergen counts 5 losers, 2 diamonds, 1 club, and 2 hearts. Remember Bergen defines a loser when you expect no help from partner. He would not open this hand 2@C.|
+PG| ***** 74 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+HT|r|cs|2|3d|5|at|^b  {|ih|pSAKT54HAK5DAKT3C8|at|} |HT|r|
+PG| ***** 75 ***** |
+
+
+cp|5|AT|
+^K@2^Y@3^*Bhondo717: ^*N|cp||at|This is a 2@C opener There are 4 losers and 6 quick tricks.|
+PG| ***** 76 ***** |
+
+
+HT|y|AT|^B@2^Y@3@D@D@DThis concludes the presentation made based on Howard's lesson on January 27, 2009. Next is the quiz section.|
+PG| ***** 77 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Qizzes
+qx|Q, Quizzes|
+HT|e|CS|4|AT|^-
+{      Quizzes      }
+
+(Starting Points)
+^- 
+^B@2^Y@3In each panel you see a hand quiz on Starting Points. Choose your answer by clicking the appropriate box or hit the "tell me" box to see the correct answer. In the answer panel you will find the correct count. For your reference there is a summary of Bergen's guideline on how to count Starting Points. The hands are random and there is no theme or pattern. I suggest you do a portion at one time as the number of quizzes may overwhelm you at first.
+
+Please click the forward arrow and good luck.|
+PG| ***** 78 ***** |
+
+
+NT|| 
+md||ht|E|va|6|at|^BBoard D1|HT|E|va|6|cs|1|at|^F{|ih|psa72hj873d4cqt872|at|} 
+|hf|q|cq|2|lb|*mHow many Starting Points in this hand ? ^9~8~10~11^2|
+ 
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(8)|CP||AT|  Starting Points.
+
+^C     7 Raw HCP
+^C   + 1 point for length points
+^C   No quality suit points
+^C   No dubious singleton/doubleton
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 80 ***** |
+
+
+nt||
+
+%%%%%%%%%%%%%%%%%%%%%%%%============>>>>>>>>>>>>> D2
+md||ht|E|va|6|at|^BBoard D2|HT|E|va|6|cs|1|at|^F{|ih|ps43hqjt5dk3cqj876|at|} 
+|hf|q|cq|2|lb|*mHow many Starting Points in this hand ? ^11~8~10~12^3|
+ 
+HT|K|AT|^C@2^Z@3This hand is worth  |CP|5|AT|(10)|CP||AT|  Starting Points.
+
+^C     9 Raw HCP
+^C   + 1 point for length points
+^C   + 1 quality suit points (heart)
+^C   - 1 for quacks exceed aces/tens
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 82 ***** |
+
+
+nt||
+
+%%%%%%%%%%%%%%%%%%%%%%%%============>>>>>>>>>>>>> D3
+md||ht|E|va|6|at|^BBoard D3|HT|E|va|6|cs|1|at|^F{|ih|ps4hqjt5dk43cqj876|at|} 
+|hf|q|cq|2|lb|*mHow many Starting Points in this hand ? ^10~12~11^1|
+ 
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(10)|CP||AT|  Starting Points.
+ 
+^C     9 Raw HCP
+^C   + 1 point for length points
+^C   + 1 quality suit points
+^C   - 1 for quacks exceed aces/tens
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 84 ***** |
+
+
+nt||
+
+%%%%%%%%%%%%%%%%%%%%%%%%============>>>>>>>>>>>>> D4
+md||ht|E|va|6|at|^BBoard 4|HT|E|va|6|cs|1|at|^F{|ih|ps2hk9876d32ca6543|at|} 
+|hf|q|cq|2|lb|*mHow many Starting Points in this hand ? ^11~9~10~12^2|
+ 
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(9)|CP||AT|  Starting Points.
+ 
+^C     7 Raw HCP
+^C   + 2 point for length points
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 86 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%============>>>>>>>>>>>>> D5
+md||ht|E|va|6|at|^BBoard D5|HT|E|va|6|cs|1|at|^F{|ih|pst974h9876c3dakq7|at|} 
+|hf|q|cq|2|lb|*mHow many Starting Points in this hand ? ^11~12~9~10^4|
+  
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(10)|CP||AT|  Starting Points.
+ 
+^C     9 Raw HCP
+^C     + 1 quality suit points --Diamonds
+^C   No dubious singleton/doubleton
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 88 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%============>>>>>>>>>>>>> D6
+md||ht|E|va|6|at|^BBoard D6|HT|E|va|6|cs|1|at|^F{|ih|psj654haqt985ct96|at|} 
+|hf|q|cq|2|lb|*mHow many Starting Points in this hand ? ^7~10~13~12^2|
+ 
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(10)|CP||AT|  Starting Points.
+ 
+^C     7 Raw HCP
+^C   + 2 point for length points
+^C   + 1 quality suit points
+^C   No dubious singleton/doubleton
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 90 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%============>>>>>>>>>>>>> D7
+ 
+md||ht|E|va|6|at|^BBoard D7|HT|E|va|6|cs|1|at|^F{|ih|pskqj54ht72ca7da93|at|} 
+|hf|q|cq|2|lb|*mHow many Starting Points in this hand ? ^19~18~17~16^4|
+ 
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(16)|CP||AT|  Starting Points.
+ 
+^C     14 Raw HCP
+^C   + 1 point for length points
+^C   + 1 quality suit points
+^C   No dubious singleton/doubleton
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 92 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%============>>>>>>>>>>>>> D8
+ 
+md||ht|E|va|6|at|^BBoard D8|HT|E|va|6|cs|1|at|^F{|ih|pskt3ha8652d4c8743|at|} 
+|hf|q|cq|2|lb|*mHow many Starting Points in this hand ? ^9~8~10~7^2|
+ 
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(8)|CP||AT|  Starting Points.
+ 
+^C     7 Raw HCP
+^C   + 1 point for length points
+^C   No quality suit points
+^C   No dubious singleton/doubleton
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 94 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%============>>>>>>>>>>>>> D9
+md||ht|E|va|6|at|^BBoard D9|HT|E|va|6|cs|1|at|^F{|ih|psaq85hq854ct32d54|at|} 
+|hf|q|cq|2|lb|*mHow many Starting Points in this hand ? ^8~10~9^1|
+ 
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(8)|CP||AT|  Starting Points.
+ 
+^C     8 Raw HCP
+^C   No point for length points
+^C   No quality suit points
+^C   No dubious singleton/doubleton
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 96 ***** |
+
+
+nt||
+
+%%%%%%%%%%%%%%%%%%%%%%%%============>>>>>>>>>>>>> D10
+qx||md||ht|E|va|6|at|^BBoard D10|HT|E|va|6|cs|1|at|^F{|ih|psq654hqj2dt62cq43|at|} 
+|hf|q|cq|2|lb|*mHow many Starting Points in this hand ? ^6~8~7^1|
+ 
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(6)|CP||AT|  Starting Points.
+
+^C1- Starting Points = 6
+^C     7 Raw HCP 
+^C    -1 more quacks exceed aces/tens 
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+PG| ***** 98 ***** |
+
+
+NT||
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+qx||
+%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard 1 ^f{|ih|psa72hj873d4cqt872|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^11~8~10~9^2|HT|k|aT|
+^B7 traditional HCP
+    ^D+ 1 length points
+    ^DNo quality suit points
+    ^DNo dubious singleton/doubleton
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(8)|CP||AT|  Starting Points. 
+ 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)
+ |
+pg| ***** 100 ***** |
+
+
+nt||
+qx||md||ht|e|va|6|cs|2|at|^CBoard a1 ^f{|ih|psHKQJ86DKQJ2CKQJ5|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^18~22~20~19^3|HT|k|aT|
+^B18 Raw HCP
+    ^D+ 1 length points
+    ^D+ 3 quality suit points
+    ^DNo dubious singleton/doubleton
+    ^D-2 quacks exceed aces/tens by six 
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(20)|CP||AT|  Starting Points. 
+ 
+|cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 102 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%5
+md||ht|e|va|6|cs|2|at|^CBoard 2 ^f{|ih|ps5TJQKAH289D79JCQ|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^12~15~16~18^2|HT|K|aT|
+^B13 traditional HCP
+    ^D+ 2 length points (6-card suit)
+    ^D+ 1 quality suit points (spades)
+    ^D- 1 for a Singleton @CQ 
+    ^DNo adjustment for Overvalued/Undervalued Honors
+^B@2^Y@3The hand is worth  |CP|5|AT|(15)|CP||AT|  Starting Points. 
+|cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 104 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%5555
+md||ht|e|va|6|cs|2|at|^CBoard A2 ^f{|ih|pSAQT53HKQ86DK32C5|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^15~14~16~17^3|HT|k|aT|
+^B14 Raw HCP
+    ^D+ 1 length points  --5-car spades
+    ^D+ 1 quality suit points --spades
+    ^DNo dubious singleton/doubleton
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(16)|CP||AT|  Starting Points. 
+ 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 106 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard 3 ^f{|ih|ps2368AH4D2346TJCQ|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^10~11~6~9^4|HT|K|aT|
+^B7 traditional HCP
+    ^D+ 3 length points ( a six card Diamond and a five card spade suit)
+    ^DNo quality suit points
+    ^D- 1 FOR dubious singleton/doubleton (@CQ)
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(9)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 108 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%
+md||ht|e|va|6|at|^CBoard A3 ^f{|ih|ps58TJQAH56DJC23JA|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^12~15~16~10^2|
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(15)|CP||AT|  Starting Points.
+
+^B13 Raw HCP
+    ^D+ 2 length points
+    ^D+ 1 quality spade suit 
+    ^D- 1 for dubious singleton @DJ of diamonds
+    ^DNo adjustment for Overvalued/Undervalued Honors
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 110 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard 4 ^f{|ih|psS7H2JD58QKAC46tKA|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^22~17~20~18^3|HT|K|aT|
+^B17 traditional HCP
+    ^D+ 2 for length points ( two 5-card suits)
+    ^D+ 2 for quality suit points
+    ^D- 1 for  dubious singleton/doubleton (@HJ2)
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(20)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 112 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard A4 ^f{|ih|psAT953HKQ862DK3C5|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^12~11~10~14^4|HT|k|aT|
+^B12 Raw HCP
+    ^D+ 2 length points - Spades and Hearts
+    ^DNo quality suit points
+    ^DNo dubious singleton/doubleton. @Kx is not a dubious Doubleton.
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(14)|CP||AT|  Starting Points. 
+ 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 114 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard 5 ^f{|ih|pS489JKAH2349D2ACQ|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^17~14~16^3|HT|K|aT|
+^B14 traditional HCP
+    ^D+ 2 for length points (6-card suit)
+    ^D+ 1 for quality suit points
+    ^D- 1 for dubious singleton/doubleton (@CQ)
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(16)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 116 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard A5 ^f{|ih|psAT9632HKQ86DK3C5|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^14~12~15~11^1|HT|k|aT|
+^B12 Raw HCP
+    ^D+ 2 for 6-card spade suit
+    ^DNo quality suit points
+    ^DNo dubious singleton/doubleton
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(14)|CP||AT|  Starting Points. 
+ 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 118 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+qx||md||ht|e|va|6|cs|2|at|^CBoard 6 ^f{|ih|pS4JH45JD68JQKAC57|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^13~12~14~10^1|HT|K|aT|
+^B12 traditional HCP
+    ^D+ 2 for length points (a 6-card suit)
+    ^D+ 1 for quality suit points
+    ^D- 1 for dubious  (@SJx)
+    ^D- 1 quacks exceed aces/tens
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(13)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 120 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard A6 ^f{|ih|psAT53HKQ86DK32C95|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^11~8~12~9^3|HT|k|aT|
+^B12 Raw HCP
+    ^DNo 1 length points
+    ^DNo quality suit points
+    ^DNo dubious singleton/doubleton
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(12)|CP||AT|  Starting Points. 
+|cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 122 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard 7 ^f{|ih|pS259QKAH4TDQAC58A|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^19~22~24~18^2|HT|K|aT|
+^B19 traditional HCP
+    ^D+ 2 length points (6-card Suit)
+    ^D+ 1 for quality suit points
+    ^DNo dubious singleton/doubleton
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(22)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 124 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard A7 ^f{|ih|psAKT95HKQ86D832C5|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^11~14~10~12^2|HT|k|aT|
+^B12 Raw HCP
+    ^D+ 1 length points
+    ^D+ 1 for quality spades suit
+    ^DNo dubious singleton/doubleton
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(14)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 126 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+qx|8|md||ht|e|va|6|cs|2|at|^CBoard 8 ^f{|ih|pSQJHQJ987DKJ98CQ9|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^11~8~10~9^4|HT|K|aT|
+^B12 traditional HCP
+    ^D- 2 for quacks exceed aces/tens  6
+    ^D+ 1 for length points (5-card Heart)
+    ^D  No  quality suit points
+    ^D- 2 for two dubious doubleton (@SQJ and @CQ10)
+^B@2^Y@3The hand is worth  |CP|5|AT|(9)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 128 ***** |
+
+
+nt||
+%%%%%%%%%%%%%
+
+md||ht|e|va|6|cs|2|at|^CBoard A8 ^f{|ih|psAKT95HKQT6D832Ct|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^16~15~14~13^1|HT|k|aT|
+^B12 Raw HCP
+    ^D+ 1 length points --spades
+    ^D+ 2 for quality suits
+    ^DNo dubious singleton/doubleton
+    ^D+ 1 for aces/tens exceed quacks
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(16)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 130 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+md||ht|e|va|6|cs|2|at|^CBoard 9 ^f{|ih|psAQT973Ht5C953DAK|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^14~17~15~16^2|HT|k|aT|
+^B13 Raw HCP
+    ^D+ 2 length points --SPADES
+    ^D+ 1 quality suit points --Spades
+    ^DNo dubious singleton/doubleton
+    ^D+ 1 aces/tens exceed quack by 3
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(17)|CP||AT|  Starting Points. 
+|cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 132 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+qx||md||ht|e|va|6|cs|2|at|^CBoard A9 ^f{|ih|pSAT53H8654DK32CKQ|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^11~12~10~9^1|HT|k|aT|
+^B12 Raw HCP
+    ^D- 1 for @CKJ Dubious Doubleton
+    ^DNo length points
+    ^DNo quality suit points
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(11)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 134 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard A10 ^f{|ih|psT953HQ865DK32CK|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^7~8~10~9^1|HT|k|aT|
+^B8 Raw HCP
+    ^DNo length points
+    ^DNo quality suit points
+    ^D-1 for @CK Dubious singleton
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(7)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 136 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard A11 ^f{|ih|psAKT54HAK5DAKT3C8|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^21~26~24~25^4|HT|k|aT|
+^B21 Raw HCP
+    ^D+ 1 length points
+    ^D+ 2 for quality suits  --spade and diamond 
+    ^DNo dubious singleton/doubleton
+    ^D+ 1 aces/tens exceed quacks
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(25)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 138 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+md||ht|e|va|6|cs|2|at|^CBoard A12 ^f{|ih|psKT953HQ865DK32CA|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^11~12~13~14^3|HT|k|aT|
+^B12 Raw HCP
+    ^D+ 1 length points --spades
+    ^DNo quality suit points
+    ^DNo dubious singleton/doubleton
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(13)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 140 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard A13 ^f{|ih|psQJ4HKJ63DKQ64CAQ|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^16~18~17~19^3|HT|k|aT|
+^B18 Raw HCP
+    ^DNo length points
+    ^DNo quality suit points
+    ^DNo dubious singleton/doubleton
+    ^D-  1 for Adjust 3. There are 5 quacks vs 1 ace means subtract 1
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(17)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 142 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard A14 ^f{|ih|psAT53H8654DK32CKJ|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^11~8~10~9^3|HT|k|aT|
+^B11 Raw HCP
+    ^DNo length points
+    ^DNo quality suit points
+    ^D-  1 for Dubious Doubleton  --@CKJ
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(10)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 144 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+qx||md||ht|e|va|6|cs|2|at|^CBoard A15 ^f{|ih|psAHAQ643DK763CAKJ|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^21~23~22~25^3|HT|k|aT|
+^B21 Raw HCP
+    ^D+ 1 length points 
+    ^DNo dubious singleton/doubleton
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(22)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 146 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+md||ht|e|va|6|cs|2|at|^CBoard A16 ^f{|ih|psAT53H8654DK32CAJ|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^11~12~10~9^2|HT|k|aT|
+^B12 Raw HCP
+    ^DNo length points
+    ^DNo quality suit points
+    ^DNo dubious singleton/doubleton
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(12)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 148 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+md||ht|e|va|6|cs|2|at|^CBoard A17 ^f{|ih|psKJHQJ75DQ87643CQ|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^11~8~10~9^3|HT|k|aT|
+^B11 Raw HCP
+    ^D+ 2 length points
+    ^DNo quality suit points
+    ^D- 2 for dubious singleton/doubleton  --@SKJ and @CQ
+    ^D- 1 adjust3. There are 5 quacks and no aces/tens
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(10)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 150 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard A18 ^f{|ih|psK83HA976DA853CA5|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^15~16~14~13^2|HT|k|aT|
+^B15 Raw HCP
+    ^DNo 1 length points
+    ^DNo quality suit points
+    ^DNo dubious singleton/doubleton
+    ^D+  1 adjust 3 --3 aces and no quacks
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(16)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 152 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard A19 ^f{|ih|psAJHKQJT762DAK4C8|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^21~18~20~22^4|HT|k|aT|
+^B18 Raw HCP
+    ^D+ 3 length points
+    ^D+ 1 for heart quality suit
+    ^DNo dubious singleton/doubleton
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(22)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 154 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard A20 ^f{|ih|psKQ4HAJ85DKJ83CKT|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^17~18~20~19^1|HT|k|aT|
+^B17 Raw HCP
+    ^DNo 1 length points
+    ^DNo quality suit points
+    ^DNo dubious singleton/doubleton
+    ^DNo adjustment 1 ace, 1 ten and 3 quacks.
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(17)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 156 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+qx||md||ht|e|va|6|cs|2|at|^CBoard A21 ^f{|ih|psAKQT3HAKQJ2D42C8|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^23~24~20~19^1|HT|k|aT|
+^B19 Raw HCP
+    ^D+ 2 length points (5 spades and hearts)
+    ^D+ 2 for spade and heart quality suit
+    ^DNo dubious singleton/doubleton
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(23)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 158 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard A22 ^f{|ih|psAT4HT943DAK96CK2|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^12~14~15~13^3|HT|k|aT|
+^B14 Raw HCP
+    ^DNo length points
+    ^DNo quality suit points
+    ^DNo dubious singleton/doubleton
+    ^D+  1 for adjust 3 --4 aces/10s and no quacks
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(15)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 160 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+qx||md||ht|e|va|6|cs|2|at|^CBoard A23 ^f{|ih|psAKQJ9874H72D65CA|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^14~18~20~19^4|HT|k|aT|
+^B14 Raw HCP
+    ^D+ 4 length points
+    ^D+ 1 for spade quality suit
+    ^DNo dubious singleton/doubleton
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(19)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 162 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+md||ht|e|va|6|cs|2|at|^CBoard A24 ^f{|ih|psAT732HAKT8DJ2C82|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^11~14~13~12^2|HT|k|aT|
+^B12 Raw HCP
+    ^D+ 1 length points
+    ^D+ 1 quality suit --heart
+    ^D- 1 for dubious @DJx
+    ^D+ 1 Adjust. There are 4 aces/tens vs 1 quack
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(14)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 164 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard A25 ^f{|ih|ps9HAQJ754DAKJ3C75|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^17~18~20~19^4|HT|k|aT|
+^B15 Raw HCP
+    ^D+ 2 for 6-card Heart 
+    ^D+ 2 for quality red suit  
+    ^DNo dubious singleton/doubleton
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(19)|CP||AT|  Starting Points. 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 166 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%
+md||ht|e|va|6|cs|2|at|^CBoard A26 ^f{|ih|psAT953HKQ86DK32C5|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^11~13~10~12^2|HT|k|aT|
+^B12 Raw HCP
+    ^D+ 1 length points - 5-card spades
+    ^DNo quality suit points
+    ^DNo dubious singleton/doubleton
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(13)|CP||AT|  Starting Points. 
+ 
+ |cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 168 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%
+
+qx||md||ht|e|va|6|cs|2|at|^CBoard S1 ^f{|ih|ps58TJQAH56DJC23JA|at|}
+|hf|k|cq|2|lb|*mHow many Starting Points in this hand? ^12~15~16~10^2|HT|k|aT|
+^B13 Raw HCP
+    ^D+ 2 length points
+    ^D+ 1 quality spade suit 
+    ^D- 1 for dubious singleton @DJ
+    ^DNo adjustment for Overvalued/Undervalued Honors
+ ^B@2^Y@3The hand is worth  |CP|5|AT|(15)|CP||AT|  Starting Points. 
+|cs|2|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT| A|Cp||FP||AT|   = Adjust Raw HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from  HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from  HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT| L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at| Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT| D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 170 ***** |
+
+
+nt||
+%%%%%%%%%%%%%
+ht|E|va|6|at|^BBoard S2|HT|E|va|6|cs|1|at|^F{|ih|pS8haqj732dakj2c54|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^19~23~22~20^1|
+
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(19)|CP||AT|  Starting Points.
+
+    ^C15 Raw HCP
+    ^C+ 2 length points
+    ^C+ 2 quality red suit 
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)    |
+PG| ***** 172 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%+++++++++++++++++++==Next decl Board 3
+ht|E|va|6|AT|^BBoard S3|HT|E|va|6|cs|1|at|^F{|ih|pSakqjt3h982cqdj97|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^15~19~16~20^1|
+ 
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(15)|CP||AT|  Starting Points as
+
+    ^c13 Raw HCP
+    ^c+ 2 length points
+    ^c+ 1 for quality spade suit
+    ^c- 1 dubious singleton @CQ
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)    |
+PG| ***** 174 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%%%%%Next Declarer Board 4
+
+ht|E|va|6|at|^BBoard S4|HT|E|va|6|cs|1|at|^F{|ih|pSat962hjcaq5daj43|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^17~19~16~18^3|
+
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(16)|CP||AT|  Starting Points as
+
+    ^C16 Raw HCP
+    ^C+ 1 length points
+    ^C- 1 dubious singleton @HJ
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)   |
+pg| ***** 176 ***** |
+
+
+nt|| 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%Next Declarer Board 5
+ht|E|va|6|at|^BBoard S5|HT|E|va|6|cs|1|at|^F{|ih|pS3hak742ckt975djt|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^12~15~14~13^1|
+
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(12)|CP||AT|  Starting Points as
+
+    ^C11 Raw HCP
+    ^C+ 2 length points
+    ^C- 1 dubious doubleton @DJx  
+    
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)    |
+pg| ***** 178 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%% A6
+ht|E|va|6|at|^BBoard S6|HT|E|va|6|cs|1|at|^F{|ih|pSAkj87543h85cak8|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^18~19~20~17^3|
+
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(20)|CP||AT|  Starting Points as
+
+    ^C15 Raw HCP
+    ^C+ 4 length points
+    ^C+ 1 for spade Quality suit
+ |ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)     |
+pg| ***** 180 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%% A7 book
+ht|E|va|6|at|^BBoard S 7|HT|E|va|6|cs|1|at|^F{|ih|pSa987654h8dat8c64|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^11~8~12^3|
+
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(12)|CP||AT|  Starting Points as
+
+    ^C8 Raw HCP
+    ^C+ 3 length points
+    ^C+ 1 Upgrade 2 aces/one ten
+     
+ |ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)     |
+pg| ***** 182 ***** |
+
+
+nt|| 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% A8
+ht|E|va|6|at|^BBoard S8|HT|E|va|6|cs|1|at|^F{|ih|pSkjhk9432caj2dk97|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^14~16~15^3|
+
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(15)|CP||AT|  Starting Points as
+
+    ^C15 Raw HCP
+    ^C+ 1 length points
+    ^C- 1 Dubious Doubleton --@SKJ
+     
+ |ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)     |
+pg| ***** 184 ***** |
+
+
+nt|| 
+
+%%%%%%%%%%%%%%%%%%%%% A9 from book
+ht|E|va|6|at|^BBoard S9|HT|E|va|6|cs|1|at|^F{|ih|pS98653hk8dkq9ckj5|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^13~12~14^1|
+
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(13)|CP||AT|  Starting Points as
+
+    ^C12 Raw HCP
+    ^C+ 1 length point
+     
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)     |
+pg| ***** 186 ***** |
+
+
+nt||
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% A10
+ht|E|va|6|at|^BBoard S10|HT|E|va|6|cs|1|at|^F{|ih|pSk4hj2c85dakq9653|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^13~16~14~15^2|
+
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(16)|CP||AT|  Starting Points as
+
+    ^C13 Raw HCP
+    ^C+ 3 length points
+    ^C+ 1 quality diamond suit
+    ^C-  1 dubious singleton @hJ
+     
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)     |
+pg| ***** 188 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%%%% A 11
+ht|E|va|6|at|^BBoard S11|HT|E|va|6|cs|1|at|^F{|ih|pSkj965haq4cj2dk65|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^15~14~16^2|
+ 
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(14)|CP||AT|  Starting Points as
+
+    ^C14 Raw HCP
+    ^C+ 1 length points
+    ^C-  1 dubious singleton @CJ 
+      
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 190 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%%%%% A12
+ht|E|va|6|at|^BBoard S12|HT|E|va|6|cs|1|at|^F{|ih|pSakjt87hkq97c4dq5|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^18~17~16~15^2|
+ 
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(17)|CP||AT|  Starting Points as
+
+    ^C15 Raw HCP
+    ^C+ 2 length points
+    ^C+ 1 quality spade suit
+    ^C- 1 dubious  @DQx 
+     
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)    |
+pg| ***** 192 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%% A13
+ht|E|va|6|at|^BBoard S13|HT|E|va|6|cs|1|at|^F{|ih|pS4hq8653cat63dakq|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^14~15~16~17^3|
+ 
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(16)|CP||AT|  Starting Points as
+
+    ^C15 Raw HCP
+    ^C+ 1 length points 
+     
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)     |
+pg| ***** 194 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%%%%%% A14
+ht|E|va|6|at|^BBoard S14|HT|E|va|6|cs|1|at|^F{|ih|pSqj7hkqj52cj7dkq4|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^14~15~16^1|
+
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(14)|CP||AT|  Starting Points as
+
+    ^C15 Raw HCP
+    ^C+ 1 length points
+    ^C+ 1 quality Heart suit
+    ^C- 1 dubious @CJx 
+    ^C- 2 for six overvalued honors
+     
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)      |
+pg| ***** 196 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%% A15
+ht|E|va|6|at|^BBoard S15|HT|E|va|6|cs|1|at|^F{|ih|pS4dq8643cakqt763|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^15~14~16^3|
+ 
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(16)|CP||AT|  Starting Points as
+
+    ^C11 Raw HCP
+    ^C+ 4 length points (5-card @D and 7-card @C)
+    ^C+ 1 quality Club suit  
+     
+ |ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)    |
+pg| ***** 198 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%%%%%%%%%% A16
+ht|E|va|6|at|^BBoard S16|HT|E|va|6|cs|1|at|^F{|ih|pSaqt842hqjt9c2da5|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^18~19~17~14^3|
+ 
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(17)|CP||AT|  Starting Points as
+
+    ^C13 Raw HCP
+    ^C+ 2 length points
+    ^C+ 2 quality suits (Spades and Hearts)
+     
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)     |
+pg| ***** 200 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%%%%%%%%%% A17
+ht|E|va|6|at|^BBoard S17|HT|E|va|6|cs|1|at|^F{|ih|pSjt5hakc9765dakj4|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^17~19~16~18^1|
+ 
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(17)|CP||AT|  Starting Points as
+
+    ^C16 Raw HCP
+    ^C+ 1 quality Diamond suit
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)     |
+pg| ***** 202 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%%%%%%%%%% A18
+ht|E|va|6|at|^BBoard S18|HT|E|va|6|cs|1|at|^F{|ih|pS75432ha8cajdaqt8|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^18~19~17~20^3|
+ 
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(17)|CP||AT|  Starting Points as
+
+    ^C15 Raw HCP
+    ^C+ 1 length points
+    ^C+ 1 quality Diamond suit
+    ^C  No points adjusted for over/under valued honors
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)     |
+pg| ***** 204 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%% A18a
+ht|E|va|6|at|^BBoard S18a|HT|E|va|6|cs|1|at|^F{|ih|pSt5432hatcajdaqt8|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^18~19~17~15^1|
+
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(18)|CP||AT|  Starting Points as
+
+    ^C15 Raw HCP
+    ^C+ 1 length points
+    ^C+ 1 quality diamond suit
+    ^C+ 1 points for more aces/tens
+     
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)     |
+pg| ***** 206 ***** |
+
+
+nt||
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% A19
+
+ht|E|va|6|at|^BBoard S19|HT|E|va|6|cs|1|at|^F{|ih|pSjt872hac7432dakj|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^13~14~16~11^2|
+
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(14)|CP||AT|  Starting Points as
+
+    ^C13 Raw HCP
+    ^C+ 1 length points 
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)     |
+pg| ***** 208 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%%%%%%%%%% A20
+
+ht|E|va|6|at|^BBoard S20|HT|E|va|6|cs|1|at|^F{|ih|pS4hak62daqt86432|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^18~19~16~13^1|
+
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(18)|CP||AT|  Starting Points as
+
+    ^C13 Raw HCP
+    ^C+ 4 length points  - 8-card Diamond
+    ^C+ 1 quality Diamond suit 
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)     |
+pg| ***** 210 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%%%%%%%%%% A21
+ht|E|va|6|at|^BBoard S21|HT|E|va|6|cs|1|at|^F{|ih|pSq7hat983ck96daj9|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^12~14~16~10^2|
+ 
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(14)|CP||AT|  Starting Points as
+
+    ^C14 Raw HCP
+    ^C+ 1 length points --5-card Heart 
+    ^C- 1 dubious singleton @SQx
+
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)      |
+pg| ***** 212 ***** |
+
+
+nt||qx||
+%%%%%%%%%%%%%%%===================================== A22
+ht|E|va|6|at|^BBoard S22|HT|E|va|6|cs|1|at|^F{|ih|pSkqj63hk74ca3da84|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand? ^18~19~17^2|
+ 
+HT|K|va|6|AT|^CThis hand is worth  |CP|5|AT|(19)|CP||AT|  Starting Points as
+
+    ^C17 Raw HCP
+    ^C+ 1 length points
+    ^C+ 1 quality spade suit 
+     
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)    |
+pg| ***** 214 ***** |
+
+
+nt||
+
+%%%%%%%%%%%%%%%% ======================A 23 FROM HIS BOOK
+qx||ht|E|va|6|at|^BBoard S23|HT|E|va|6|cs|1|at|^F{|ih|pSA875432H2D4CAK95|at|}
+|hf|p|cq|2|lb|*mHow many Starting Points in this hand ?^11~14~12^2|
+ 
+HT|K|AT|^B@2^Z@3This hand is worth  |CP|5|AT|(14)|CP||AT|  Starting Points as
+
+    ^C  11 Raw HCP
+    ^C+ 3 length points 
+|ht|r|at|^a{ |ht|z|at|^y
+^y }
+|ht|r|at|According to Bergen's Guideline hand's Starting Points is the sum of |cp|5|at|A|cp||at|, |cp|5|at|L|cp||at|, |cp|5|at|Q|cp||at| and |cp|5|at|D|cp||at| ( 1 through 4.)
+
+1. |CP|5|FP|2|AT|A|Cp||FP||AT|   = Adjust HCP according to the following guideline:
+ ^C   a. Add 1 to HCP when Aces+Tens exceed Quacks by 3.
+ ^C   b. Add 2 to HCP when Aces+Tens exceed quacks by 6 or more.
+ ^C   c. Subtract 1 from HCP when Quacks exceed Aces+Tens by 3.
+ ^C   d. Subtract 2 from HCP when Quacks exceed Aces+Tens by 6 or more.
+2. |CP|5|FP|2|AT|L|Cp||FP||AT|   = Add 1 point for every card Longer than 4 in any suit.
+3. |CP|5|FP|2|at|Q|Cp||FP||AT|   = Add 1 point for every Quality suit (a 4-card suit holding 3 top honors)
+4. |CP|5|FP|2|AT|D|Cp||FP||AT|   = deduct 1 point for every Dubious Singleton/Doubletons. (^*BK, Q, J and KQ, KJ, QJ, Qx, Jx^*N)|
+pg| ***** 216 ***** |
+
+
+nt||
+
+%%%%%%%%%%%%%End
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% end
+qx|END,END|
+BT||ht|K|AT|^-
+
+{     This is the end     }
+
+Prepared by Kia, BBO nickname "nome"
+
+^-|
+PG| ***** 217 ***** |
+
+
+ 
+
+ 

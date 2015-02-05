@@ -1,0 +1,1081 @@
+%% 
+%% This is an extract from the free Windows prog - 'Learn to Play Bridge Bridge2'
+%%     available from     https://web.acbl.org/LearnToPlayBridge
+%%
+%% Original filename      ltpb2_5.2__Other_responses_to_1NT_opening_bids.lin
+%%     file last changed  2014-Dec-07    bversion 0.18
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%                                    Font  'blank'  is size 30   
+%%                                    (sizes 30 to 35 shrink to 30  for legacy compatibility)
+fh|136|ff|1Arial|fb|10|fm|1|      Font 1   36  shrinks to size 32    
+fh|238|ff|2Arial|fb|20|fm|2|      Font 2   37  shrinks to size 34
+fh|339|ff|3Arial|fb|30|fm|3|      Font 3
+fh|440|ff|4Arial|fb|40|fm|4|      Font 4
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|60|fm|6|      Font 6
+fh|770|ff|7Arial|fb|70|fm|7|      Font 7
+fh|880|ff|8Arial|fb|80|fm|8|      Font 8
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1248|cg|1231|cb|1189|   Beige Cream
+cr|2185|cg|2201|cb|2195|   Beige grey green
+cr|3198|cg|3205|cb|3229|   grey medium
+cr|4160|cg|4174|cb|4228|   blue grey
+cr|5198|cg|5205|cb|5229|   light grey
+cr|6122|cg|6000|cb|6049|   dark maroon
+cr|9255|cg|9255|cb|9255|   'white'
+
+
+bt||nt|^b@2^z@3|
+
+
+%%   Top bar header box and Text
+ht|b|cp|9|cs|6|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|9|at|^^^^^^^^|fp|6|at|^-Learn to Play Bridge2          ^*bChapter 5   Section 2^*n^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|1|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|f|fp|9|at|^^^^^^^^^^|fp|7|at|^-^*bOther Responses to 1 No-trump opening^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+at|This Bridge Movie (.lin file) is an unaltered extract from  ^*bLearn to Play Bridge2^*n  a Windows program.  The original program can be downloaded from the ACBL at @-
+
+^d^*h https://web.acbl.org/LearnToPlayBridge ^*n
+    
+The ACBL requires an email address from you and will send you the download instructions  ^*bOR^*n  you can download it directly from ^*hhttp://www.bridgebase.com/index.php^*nhere^*x. (See the links, center left, on that web page.)
+
+^*bLearn to Play Bridge^*n comes as two programs.  Program 1 is for beginners, including an introduction to card play and Standard American bidding.  Program 2 (the source of this tutorial) covers material for the 'intermediate' player.
+
+An ^*bAcol^*n version of Program 1 can be downloaded from the ^*bEBU^*n ^*hhttp://www.ebu.co.uk/education/ltpb^*nhere^*x.
+ 
+
+A different set of extracts from  ^*bLearn to Play Bridge2^*n  are available for on-line play (in your browser) at @-
+
+^d^*h http://www.bridgesights.com/hondobridge/##fglb ^*n
+
+
+Our thanks goes to the ^*bACBL^*n for providing these two exceptional Bridge programs for free.
+|
+pg| ***** 0 ***** |
+
+
+qx|oth|
+
+
+nt|^b@2^z@3|
+cs|5|cp|6|fp|4|
+at|
+^-{ Other responses to 1NT opening bids }
+^-|fp||cp||at|
+Hopefully you have been convinced that Jacoby transfer bids are an excellent convention. However, it would be a mistake to think that there are no disadvantages to using Jacoby transfers. In fact, almost every convention suffers from the same disadvantage:
+
+|
+pg| ***** 1 ***** |
+
+
+cs|2|At|^-{ Replacing a natural bid with an artificial bid 
+ means that the natural bid is no longer available. }
+^-
+|
+pg| ***** 2 ***** |
+
+
+cs|1|at|In the case of Jacoby transfers after a 1NT opening bid, the critical natural bid that is being replaced by an artificial bid is the 2@D response to 1NT:
+
+^-{ |ia|o1n!2d|at| }
+^-
+|
+pg| ***** 3 ***** |
+
+
+at|If Jacoby transfer bids are not being used, the 2@D response to a 1NT opening bid is available as a signoff bid in diamonds. If a partnership is using Jacoby, however, the 2@D response becomes a transfer to hearts. As such, there is no way for the responder to sign off in 2@D in the SAYC bidding system when his partner opens the bidding with 1NT.
+
+|
+pg| ***** 4 ***** |
+
+
+at|Although you may not have thought about this before, you have seen other examples of this sort of tradeoff. Consder the use of the Stayman 2@C convention. If a partnership is using Stayman (as almost every partnership does), they have no way to sign off in 2@C after a 1NT opening bid.
+
+|
+pg| ***** 5 ***** |
+
+
+tb||
+
+
+nt|^b@2^z@3|cs|2|at|
+^-{ For a convention to be effective, the gain from using that convention must be 
+ greater than the loss that comes from replacing a natural bid with an artificial bid. }
+^-
+|
+pg| ***** 6 ***** |
+
+
+cs|1|at|^D{ |ia|o1n!2c|at| } ^O{ |ia|o1n!2d|at| }
+
+In the judgment of bridge authorities, the benefits of using the Stayman convention and Jacoby transfer bids are more than enough to compensate for the fact that the responder to a 1NT opening bid can no longer sign off in 2@C or 2@D when these conventions are being used. That is why almost all serious bridge players prefer to use both of these conventions with their regular partners. Still, these players will sometimes be dealt a hand like one of the following:
+|
+pg| ***** 7 ***** |
+
+
+va|5|hc|cjt8742dqj98652|cs|3|at|^E{ |ih|ps6hj5dt743cjt8742|at| } ^P{ |ih|ps954h5dqj98652c53|at| }
+
+|
+pg| ***** 8 ***** |
+
+
+at|These are both weak and unbalanced hands containing long minor suits. If your partner opened 1NT and you were dealt one of these hands, you would like to get out of 1NT and into the safety of playing with your long minor as trump at as low a level as possible. Neither of these hands rates to win very many tricks in a notrump contract, but both of these hands rate to win several tricks with their respective long minors as trump.
+
+|
+pg| ***** 9 ***** |
+
+
+nt|^b@2^z@3|cs|1|ht|b|at|^-{ |ia|o1n!2s|at| }
+
+^-|cs|3|at|^E{ |ih|ps6hj5dt743cjt8742|at| } ^P{ |ih|ps954h5dqj98652c53|at| }
+
+|cs|2|At|^-{ There is no way to sign off in 2@C or 2@D after a 1NT opening in the SAYC bidding system, 
+ but it is possible to sign off in 3@C or 3@D. To do this, respond 2@S to your partner's 1NT. }
+^-
+|
+pg| ***** 10 ***** |
+
+
+at|Yes, this 2@S response to 1NT is another new convention, but given that we are using Jacoby transfer bids, this particular convention does not really replace a useful natural bid. 
+
+If we were not using Jacoby, the 2@S response to a 1NT opening bid would be a signoff bid. Now that we are using Jacoby transfers there is no need to use the 2@S bid this way. We already have a way to sign off in 2@S - by bidding 2@H as a Jacoby transfer and passing when our partner completes the transfer.
+
+|
+pg| ***** 11 ***** |
+
+
+cs|1|at|^-{ When Jacoby transfers are being used, the 2@S response to 1NT is ^*Ifreed up^*N since it is no
+ longer needed as a natural bid. SAYC uses the 2@S response to sign off in 3@C or 3@D. }
+^-
+|
+pg| ***** 12 ***** |
+
+
+nt|^b@2^z@3
+So how do we get from 2@S to 3@C or 3@D?
+
+|ht|d|cs|1|at|^-{ |ia|o1n2s?|at| }
+^-
+|
+pg| ***** 13 ***** |
+
+
+ht|d|cs|1|at|^-{ |ia|o1n2s!3c|at| }
+
+|va|5|at|
+|cs|2|At|{ In SAYC the 2@S response to a 1NT opening bid asks the opener to bid 3@C. Responder 
+ will pass 3@C if his long minor suit is clubs and bid 3@D if his long minor suit is diamonds. }
+^-
+|
+pg| ***** 14 ***** |
+
+
+va|3|cs|3|at|^B{ |ih|ps6hj5dt743cjt8742|at| }    @2
+|ht|o|va|7|at|If the responder has the first example hand we have been considering (a weak hand with long clubs), he will respond 2@S to 1NT. The 1NT opener will rebid 3@C and the responder will then pass. 3@C will become the final contract.
+@0
+|ht|d|cs|1|at|^-{ |ia|o1n2s3c!p|at| }
+^-
+|
+pg| ***** 15 ***** |
+
+
+lc|cjt8742|cs|3|ht|u|va|5|at|^B{ |ih|ps954h5dqj98652c53|at| }    @2
+
+|ht|v|at|If the responder has the second example hand (a weak hand with long diamonds), he will similarly respond 2@S to 1NT. The 1NT opener will rebid 3@C as before, but this time the responder will bid 3@D instead of passing. The opener must now pass and 3@D will become the final contract.
+@0
+|ht|d|cs|1|at|^-{ |ia|o1n2s3c!3d!p|at| }
+^-
+|
+pg| ***** 16 ***** |
+
+
+hc|cjt8742|
+
+nt|^b@2^z@3
+To summarize, here is how the 2@S response to 1NT works in the SAYC bidding system:
+
+|cs|1|at|^D{ |ia|o1n2s3cp|at| } ^O{ |ia|o1n2s3c3dp|at| }
+
+|cs|3|at|^E{ |ih|ps6hj5dt743cjt8742|at| } ^P{ |ih|ps954h5dqj98652c53|at| }
+
+|cs|2|at|^-{ A 2@S response to a 1NT opening bid forces the opener to rebid 3@C. The responder will 
+ pass 3@C if he has long clubs and rebid 3@D (which the opener will pass) with long diamonds. }
+^-
+|
+pg| ***** 17 ***** |
+
+
+cs|4|at|^-{ Unlike Jacoby transfers where the opener may super-accept with an appropriate 
+ hand, the opener has no such option over the 2@S response to his 1NT opening bid. }
+^-
+|
+pg| ***** 18 ***** |
+
+
+at|In the case of the 2@S response to 1NT, the opener must ^*Ialways^*N rebid 3@C. Furthermore, if the responder bids 3@D next, the opener must ^*Ialways^*N pass. It does not matter how good or bad the opener's hand is for either minor. He must do as he is told when this convention is invoked!
+
+|
+pg| ***** 19 ***** |
+
+
+lc|cjt8742dqj98652|
+
+
+nt|^b@2^z@3
+There are 2 main reasons why the opener should do exactly as he is told when the responder bids 2@S over 1NT:
+
+|
+pg| ***** 20 ***** |
+
+
+cs|4|at|^-{ 1. The 2@S response is always based on a hand that wants to sign off in 3 of a minor. 
+ The opener has already described his hand - he should respect his partner's judgment! }
+
+|
+pg| ***** 21 ***** |
+
+
+cs|2|at|{ 2. In the SAYC bidding system the responder can bid 3@C or 3@D directly 
+ over 1NT to describe a hand with invitational strength and a long minor suit. }
+
+|
+pg| ***** 22 ***** |
+
+
+at|^-Consider the following hands:
+|va|5|cs|3|at|^E{ |ih|ps74h95d752caqt976|at| } ^P{ |ih|ps9h863dkqj943c852|at| }
+
+|
+pg| ***** 23 ***** |
+
+
+hc|caqdkqj|at|Each of these hands has 6 HCP |
+pg| ***** 24 ***** |
+
+
+hc|ct976d943|at|and 2 long suit points for their respective 6-card minor suits. 9 total points is enough for a game invitation opposite a 15-17 HCP 1NT opening bid. If the opener has an appropriate hand (specifically with a fitting high card in the responder's long minor and stoppers in the other 3 suits), 3NT rates to be a good contract. Otherwise, a partial with a long minor suit as trump will be a reasonable place to be.
+
+|
+pg| ***** 25 ***** |
+
+
+cs|1|at|^-{ When the responder has such a hand, he needs the opener's help to select the contract. }
+
+|
+pg| ***** 26 ***** |
+
+
+nt|^b@2^z@3|cs|1|at|
+^D{ |ia|o1n!3c|at| } ^O{ |ia|o1n!3d|at| }
+|va|7|cs|3|at|^E{ |ih|ps74h95d752caqt976|at| } ^P{ |ih|ps9h863dkqj943c852|at| }
+
+|cs|2|at|^-{ In the SAYC bidding system, direct jumps to 3@C and 3@D over a 1NT opening are used 
+ to describe invitational strength hands with a strong 6-card suit in the suit that was bid. }
+
+|
+pg| ***** 27 ***** |
+
+
+cs|4|at|{ When the responder bids 3@C or 3@D over a 1NT opening, the opener should bid 3NT if 
+ he thinks he can win 9 tricks in notrump opposite such a hand. Otherwise, he should pass. }
+^-
+|
+pg| ***** 28 ***** |
+
+
+at|In most situations in bridge, an invitational bid is a suggestion that a game contract will be a good bet only if the partner of the player who made that bid has a maximum hand given the bidding to that point. This situation is different. There are some minimum hands with which the opener should bid 3NT over a 3@C or 3@D response to his 1NT opening and there are some maximum hands with which the opener should pass in this situation.
+
+|
+pg| ***** 29 ***** |
+
+
+cs|1|at|^-{ The opener's decision as to whether or not he should bid 3NT after a 3@C or 3@D response to
+ his 1NT opening is more about judgment than it is about whether he is minimum or maximum. }
+
+|
+pg| ***** 30 ***** |
+
+
+nt|^b@2^z@3|cs|3|ht|b|
+at|^C{ |ih|psak32hjt76da6ck84|at| } |cs|1|va|5|at|^N{ |ia|o1n3c!3N|at| }
+
+|hc|sakhjckda|va|7|at|For example, the hand shown above has only 15 HCP making it a minimum for a 15-17 1NT opening bid.  Nevertheless, once this hand opens 1NT and the responder bids 3@C (suggesting an invitational hand with a strong 6-card club suit), the opener should go on to 3NT.
+
+|
+pg| ***** 31 ***** |
+
+
+cs|3|lc|sakhjckda|at|^C{ |ih|ps74h95d752caqt976|at| }    @2
+|ht|n|at|The reason is that the opener should expect to make 3NT opposite a typical hand for the responder like the one we have been considering. 
+@0
+
+|
+pg| ***** 32 ***** |
+
+
+hc|ck84|va|3|at|The opener's @CK is a very big card. He should know that his @CK means that there is an excellent chance that 6 club tricks will be available in notrump. |
+pg| ***** 33 ***** |
+
+
+lc|caqt976ck84|hc|sakda|at|His @SA, @SK, and @DA will provide the other 3 winners that the partnership will need to succeed in 3NT. Furthermore, these cards will also provide stoppers in their respective suits. |
+pg| ***** 34 ***** |
+
+
+lc|dasak|hc|hjt76|at|Finally note that the opener's heart holding, although nothing special, is sufficient to prevent the defenders from getting rich in that suit.
+
+|
+pg| ***** 35 ***** |
+
+
+lc|hjt76|
+cs|2|at|^-{ The opener has a good reason to bid 3NT - he expects to succeed in that game contract! }
+
+|
+pg| ***** 36 ***** |
+
+
+nt|^b@2^z@3|cs|3|ht|b|
+at|^C{ |ih|psakq5hj42dt2caqj7|at| } |cs|1|va|5|at|^N{ |ia|o1n3d!p|at| }
+
+|hc|sakqhjcaqj|va|7|at|This example hand represents the other side of the coin. Here, the opener has 17 HCP - an absolute maximum for his opening bid. Still the opener's judgment should tell him to pass when his partner responds with 3@D over his 1NT.
+
+|
+pg| ***** 37 ***** |
+
+
+cs|3|at| ^C{ |ih|ps9h863dkqj943c852|at| }    @2
+|lc|sakqhjcajq|ht|n|at|The reason is that the opener should expect 3NT to fail if his partner has a hand like the example hand that we have been considering.
+
+@0
+|
+pg| ***** 38 ***** |
+
+
+va|5|hc|dt2|at|The opener's weak holding in diamonds, his partner's long suit, is especially worrisome for notrump purposes. Assuming the defenders are familiar with the hold up play, they will be able to prevent the declarer in notrump from utilizing the responder's fine diamonds. |
+pg| ***** 39 ***** |
+
+
+lc|dt2dkqj943|hc|hj42|at|Furthermore, opener's lack of a heart stopper is another reason to suspect that 3NT will fail.
+
+|
+pg| ***** 40 ***** |
+
+
+lc|hj42|cs|2|at|^-{ The opener has a good reason to pass 3@D - he expects that 3NT will fail and that 3@D will 
+ have a chance. It turns out that 3@D is a big favorite opposite responder's example hand. }
+
+|
+pg| ***** 41 ***** |
+
+
+nt|^b@2^z@3|cs|1|at|
+^B{ |ia|o1n!2s|at| } 
+
+^B{ |ia|o1n!3c|at| } 
+
+^B{ |ia|o1n!3d|at| } 
+
+|
+
+ht|b|at|^L @2The 3 bidding sequences that you see to the left are used by the responder after a 1NT opening bid to describe hands will long minor suits.
+
+|
+pg| ***** 42 ***** |
+
+
+at|The 2@S response is used to sign off in either 3@C or 3@D. The direct 3@C and 3@D responses are used to describe hands with invitational strength containing strong 6-card minor suits. When the responder uses either of these latter two bids, the opener is being asked to choose between playing 3 of a minor or 3NT.
+
+@0
+|
+pg| ***** 43 ***** |
+
+
+cs|2|at|^-{ When the responder uses any of these bids, he promises at least 6 cards in his long minor. }
+^-
+|
+pg| ***** 44 ***** |
+
+
+at|Recall that for the responder to use a Jacoby transfer bid (his primary tool for responding to 1NT when he has a long major suit), he needs only 5 cards in the suit that he transfers to. The reason that a 6th card is required in order to use the 2@S, 3@C, or 3@D responses to 1NT is that these bids force the partnership to the 3-level. If the partnership ends up playing in 3@C or 3@D (as they often will if any of these bids are used), that extra trump will usually result in an extra trick.
+
+|
+pg| ***** 45 ***** |
+
+
+cs|4|At|^-{ When the responder's longest suit is a 5-card minor, he will usually be better off to ignore
+ his minor and remain in notrump (by either passing 1NT or by raising to 2NT or 3NT). }
+^-
+|
+pg| ***** 46 ***** |
+
+
+nt|^b@2^z@3|va|5|at|We have now discussed many of responder's possible actions in the SAYC bidding system after his partner opens the bidding with 1NT. Some good news for you is that all of the other responses to 1NT have almost the same meaning in SAYC as they do in the bidding system that was taught in the original Learn to Play Bridge program.
+
+We will not go into much detail about most of these bids here since these sequences were covered extensively in the original Learn to Play Bridge program. For the sake of completeness, however, a summary of the meanings of other responses to a 1NT opening bid will now be presented. First, here are the meanings of various notrump responses to a 1NT opening bid:
+
+|
+pg| ***** 47 ***** |
+
+
+cs|4|at|^-{ 2NT - Invitational to 3NT. Opener passes with a minimum and bids 3NT with a maximum. }
+
+|
+pg| ***** 48 ***** |
+
+
+cs|2|at|{ 3NT - a signoff bid. The opener should always pass. }
+
+|
+pg| ***** 49 ***** |
+
+
+cs|1|at|{ 4NT - Invitational to 6NT. Opener passes with a minimum and bids 6NT with a maximum. }
+
+|
+pg| ***** 50 ***** |
+
+
+cs|3|at|{ 5NT - Invitational to 7NT. Opener bids 6NT with a minimum and bids 7NT with a maximum. }
+
+|
+pg| ***** 51 ***** |
+
+
+cs|4|at|{ 6NT - a signoff bid. The opener should always pass. }
+
+|
+pg| ***** 52 ***** |
+
+
+cs|2|at|{ 7NT - a signoff bid. There is nowhere left for the opener to go! }
+
+|
+pg| ***** 53 ***** |
+
+
+at|^-If the reponder has less than game invitational strength, no 5-card (or longer) major suit, and no 6-card (or longer) minor suit, he should pass his partner's 1NT opening bid. 1NT may not always be the best contract in this case, but it is the best you can do using SAYC.|
+pg| ***** 54 ***** |
+
+
+nt|^b@2^z@3|at|
+We have already studied the various 2-level suit responses to a 1NT opening bid in SAYC. 2@C is Stayman, 2@D and 2@H are Jacoby transfer bids, and 2@S asks the opener to bid 3@C for the purposes of signing off in either 3@C or 3@D. We have also covered the direct 3@C and 3@D responses to 1NT.
+
+If you were paying very close attention, you might have noticed that something was missing during our extensive study of Jacoby transfer bids: the way that Jacoby transfers are used in SAYC, the responder has no way of suggesting interest in slam with a 6-card (or longer) major suit. The responder has a lot of options after he uses a Jacoby transfer and the opener completes the transfer, but describing a strong hand with a long major suit is not in his bag of tricks.
+
+|
+pg| ***** 55 ***** |
+
+
+cs|1|at|^D{ |ia|o1n!3h|at| } ^O{ |ia|o1n!3s|at| }
+
+|cs|2|at|^-{ SAYC uses the direct 3@H and 3@S responses to a 1NT opening to suggest at least 6 
+ cards in the suit that was bid and a hand that is strong enough to be interested in slam. }
+^-
+|
+pg| ***** 56 ***** |
+
+
+cs|3|At|^-{ When the responder to a 1NT opening has a 5-card (or longer) major, he almost always 
+ responds with a Jacoby transfer. The 3@H and 3@S responses are an exception to this. }
+^-
+|
+pg| ***** 57 ***** |
+
+
+ 
+at|The only other exception to this principle is when the responder has 5-4 in the majors and a hand with at least invitational strength. As we have seen, the responder to a 1NT opening bid should use Stayman (and not transfer) when he has this sort of hand.
+
+|
+pg| ***** 58 ***** |
+
+
+nt|^b@2^z@3|va|5|at|Here are some examples of hands that would use the 3@H and 3@S responses to a 1NT opening:
+
+|cs|1|at|^D{ |ia|o1n!3h|at| } ^O{ |ia|o1n!3s|at| }
+|va|7|cs|3|at|^E{ |ih|psS54haqj932dat6ck9|at| } ^P{ |ih|psakj9862hk5caqcd84|at| }
+
+|
+pg| ***** 59 ***** |
+
+
+hc|haqjckda|at|The first hand has 14 HCP |
+pg| ***** 60 ***** |
+
+
+lc|haqjckda|hc|hajq932|at|and 2 long suit points for the 6-card heart suit. A small slam is a definite possibility and the responder should express this by jumping to 3@H over his partner's 1NT opening bid. This bid promises at least 6 cards in hearts so the opener will know that he does not require 3-card support to make hearts an adequate trump suit.
+
+|
+pg| ***** 61 ***** |
+
+
+lc|haqj932|hc|sakjhkcaq|at|The second hand is so strong that even a grand slam might be possible. This hand has 17 HCP |
+pg| ***** 62 ***** |
+
+
+lc|hkcaq|hc|s9862|at|and 3 long suit points for the 7-card spade suit. With 20 total points facing 15-17 HCP in the opener's hand, the partnership is certain to reach at least a small slam contract. 
+
+|
+pg| ***** 63 ***** |
+
+
+lc|sakj9862|at|When the responder bids 3@H or 3@S directly over his partner's 1NT opening bid, the opener can raise to game if he does not like his hand for slam purposes. If the opener's hand is maximum, contains good trump support, and/or a lot of Aces and Kings, he can cooperate with the responder's slam investigation by cuebidding an Ace in a new suit.
+
+|
+pg| ***** 64 ***** |
+
+
+nt|^b@2^z@3
+While the meanings of the 3@H and 3@S responses to a 1NT opening bid in SAYC are similar to those that were presented in Learn to Play Bridge there are 2 important differences:
+
+|cs|1|at|^D{ |ia|o1n!3h|at| } ^O{ |ia|o1n!3s|at| }
+
+|
+pg| ***** 65 ***** |
+
+
+cs|4|at|^-{ 1. In SAYC these bids promise at least 6 cards in the responder's major suit. In the
+ other bidding system, these bids can be based on suits with only 5 cards in them. }
+^-
+|
+pg| ***** 66 ***** |
+
+
+cs|2|at|^-{ 2. In SAYC these bids suggest that at least a small slam might be possible. In the other
+ bidding system, these bids are forcing to game, but they do not promise slam interest. }
+^-
+|
+pg| ***** 67 ***** |
+
+
+at|In other words, the 3@H and 3@S responses to 1NT are more narrowly defined (both in terms of strength and in terms of distribution) in SAYC than they are in most bidding systems that do not use Jacoby transfers. The reason for this is that when Jacoby transfers are being used, a lot of the hands that would respond 3@H or 3@S in the absence of transfers can be bid more accurately with the help of Jacoby.
+|
+pg| ***** 68 ***** |
+
+
+hs|ss|va|5|cs|3|at|^B{ |ih|pskqt94h6daj32ct65|at|}    @2
+|ht|u|va|7|at|For example, this hand calls for a 3@S response to 1NT if Jacoby transfers are not being used. With transfers, however, there is a better way to bid this hand. Start with 2@H as a transfer to spades and followup with 3@D (a natural game forcing bid) when the opener completes the transfer. 
+|
+pg| ***** 69 ***** |
+
+
+ls|ss|
+
+nt|^b@2^z@3|va|7|cs|1|at|^-{ The only other suit response to a 1NT opening that is defined in SAYC is 4@C. As in 
+ most bidding systems the 4@C response to 1NT is the Gerber convention in SAYC. }
+^-
+|
+pg| ***** 70 ***** |
+
+
+at|Recall that the Gerber convention is used to asked for Aces when the last bid made was in notrump. The Blackwood 4NT convention is used to ask for Aces in most bidding sequences, but a 4NT response to a 1NT opening is a quantitative raise, not Blackwood. The Gerber convention was designed to give the responder an easy way to ask for Aces in bidding sequences in which Blackwood is not available. Here is a reminder of the responses to Gerber:
+
+|
+pg| ***** 71 ***** |
+
+
+cs|3|at|^J{ 4@D - Either 0 Aces or all 4 Aces 
+^J 4@H - 1 Ace
+^J 4@S - 2 Aces
+^J 4NT - 3 Aces }
+
+|
+pg| ***** 72 ***** |
+
+
+at|After the opener responds to Gerber, the responder can either sign off in any contract or continue with 5@C to ask the opener how many Kings he was dealt. The opener responds to the King ask as follows:
+|
+pg| ***** 73 ***** |
+
+
+cs|2|at|^J{ 5@D - Either 0 Kings or all 4 Kings 
+^J 5@H - 1 King
+^J 5@S - 2 Kings
+^J 5NT - 3 Kings }
+
+|
+pg| ***** 74 ***** |
+
+
+cs|4|at|^-{ Remember, the Gerber 4@C bid is used to ask for Aces and Kings after a 1NT opening bid! 
+ A 4NT response to 1NT is a quantitative raise - it is not the Blackwood convention. }
+|
+pg| ***** 75 ***** |
+
+
+nt|^b@2^z@3
+Some bridge players get confused when it comes to asking for Aces and Kings after either Stayman or a Jacoby transfer bid has been used. Here are some guidelines that can be used to clarify this subject:
+
+|
+pg| ***** 76 ***** |
+
+
+cs|1|at|^-{ If the responder uses Stayman or Jacoby and then rebids 4NT, that bid 
+ is always a quantitative raise (as opposed to the Blackwood convention). }
+^-
+|
+pg| ***** 77 ***** |
+
+
+cs|2|at|^-{ If the responder rebids 4@C after using Stayman that bid is always Gerber. }
+^-
+|
+pg| ***** 78 ***** |
+
+
+cs|3|at|^-{ The responder has no way to ask for Aces with his rebid after a Jacoby transfer. To show 
+ a long major and then ask for Aces, start with 3@H or 3@S and then rebid 4NT as Blackwood. }
+^-
+|
+pg| ***** 79 ***** |
+
+
+at|All suit responses at the 4-level and higher other than Gerber 4@C are undefined in the SAYC bidding system. You should avoid using these bids unless you have discussed them thoroughly with your regular partner. If your partner responds to your 1NT opening with an undefined bid, your best course of action is to pass (and to discuss his bid when the current deal is finished).
+
+|
+pg| ***** 80 ***** |
+
+
+at|The SAYC bidding system does not attempt to define every possible bidding sequence after a 1NT opening bid. Some bridge players and partnerships delight in trying to do just that (and not only after 1NT). If you do this in an intelligent manner, you can improve your bidding system, but most bridge players find that there is a point where the benefits of increased bidding accuracy are outweighed by the burden of having to remember the meanings of obscure bids that rarely arise in practice. It is really up to each partnership to find a comfortable medium that is maximally effective for them. SAYC is designed to be that medium for the average partnership.
+
+|
+pg| ***** 81 ***** |
+
+
+qx|revex2,Other responses to 1NT opening bids - Review and Exercises|
+
+nt|^b@2^z@3|cs|5|cp|6|tb|y|at|
+^-{ Other responses to 1NT opening bids - Review and Exercises }
+^-
+|cp||at|At the beginning of this topic we reviewed some of the issues involved in deciding on whether or not a convention should be added into a bidding system. One of the main dangers of using conventions is:
+|
+pg| ***** 82 ***** |
+
+
+cs|2|At|^-{ Replacing a natural bid with an artificial bid 
+ means that the natural bid is no longer available. }
+^-
+|
+pg| ***** 83 ***** |
+
+
+cs|4|at|^-{ For a convention to be effective, the gain from using that convention must be 
+ greater than the loss that comes from replacing a natural bid with an artificial bid. }
+^-|
+pg| ***** 84 ***** |
+
+
+va|8|
+at|In the case of Jacoby transfer bids, the 2@D response to a 1NT opening bid (which would be a signoff in diamonds in the absence of transfers) is used artificially as a transfer to hearts. While most bridge authorities believe that giving up this natural bid is a small price to pay for the use of Jacoby transfers, the fact remains that the responder to a 1NT opening bid will sometimes want to sign off in diamonds (or clubs for that matter).
+
+|
+pg| ***** 85 ***** |
+
+
+cs|1|At|^-{ There is no way to sign off in 2@C or 2@D after a 1NT opening in the SAYC bidding system, 
+ but it is possible to sign off in 3@C or 3@D. To do this, respond 2@S to your partner's 1NT. }
+^-
+|
+pg| ***** 86 ***** |
+
+
+cs|3|at|^-{ When Jacoby transfers are being used, the 2@S response to 1NT is ^*Ifreed up^*N since it is no
+ longer needed as a natural bid. SAYC uses the 2@S response to sign off in 3@C or 3@D. }
+^-|
+pg| ***** 87 ***** |
+
+
+va|8|at|A 2@S signoff after a 1NT opening is not needed in SAYC because the responder can bid 2@H to transfer to spades and pass when the opener completes the transfer. |
+pg| ***** 88 ***** |
+
+
+tb||
+
+nt|^b@2^z@3
+|cs|2|at|^-{ A 2@S response to a 1NT opening bid forces the opener to rebid 3@C. The responder will 
+ pass 3@C if he has long clubs and rebid 3@D (which the opener will pass) with long diamonds. }
+^-
+|
+pg| ***** 89 ***** |
+
+
+cs|4|at|^-{ Unlike Jacoby transfers where the opener may super-accept with an appropriate 
+ hand, the opener has no such option over the 2@S response to his 1NT opening bid. }
+^-
+|
+pg| ***** 90 ***** |
+
+
+at|There are 2 main reasons why the opener should do exactly as he is told when the responder bids 2@S over 1NT:
+
+|
+pg| ***** 91 ***** |
+
+
+cs|1|at|^-{ 1. The 2@S response is always based on a hand that wants to sign off in 3 of a minor. 
+ The opener has already described his hand - he should respect his partner's judgment! }
+
+|
+pg| ***** 92 ***** |
+
+
+cs|3|at|{ 2. In the SAYC bidding system the responder can bid 3@C or 3@D directly over 
+ 1NT to describe a hand with invitational strength and a long, strong minor suit. }
+^-
+|
+pg| ***** 93 ***** |
+
+
+at|In other words, if the responder has a long minor suit and he is interested in hearing the opener's opinion as to the final contract, he will bid something other than 2@S over 1NT.
+
+|
+pg| ***** 94 ***** |
+
+
+cs|2|at|^-{ When the responder bids 3@C or 3@D over a 1NT opening, the opener should bid 3NT if 
+ he thinks he can win 9 tricks in notrump opposite such a hand. Otherwise, he should pass. }
+^-
+|
+pg| ***** 95 ***** |
+
+
+at|In most invitational bidding sequences, the player who is being invited is being asked if he has a minimum or a maximum hand for the bidding that has already taken place. The 1NT opener's decision process is different when his partner responds with 3@C or 3@D to his 1NT opening bid.
+
+|
+pg| ***** 96 ***** |
+
+
+nt|^b@2^z@3
+While Jacoby transfer bids are often used on hands with 6-card or longer major suits, it is also perfectly acceptable to invoke Jacoby with a hand that contains a 5-card major. The 2@S, 3@C, and 3@D responses to 1NT should not be used with hands that contain a 5-card minor:
+
+|
+pg| ***** 97 ***** |
+
+
+cs|1|at|^-{ When the responder bids 2@S, 3@C, or 3@D, he promises at least 6 cards in his long minor. }
+^-
+|
+pg| ***** 98 ***** |
+
+
+cs|4|At|^-{ When the responder's longest suit is a 5-card minor, he will usually be better off to ignore
+ his minor and remain in notrump (by either passing 1NT or by raising to 2NT or 3NT). }
+^-
+|
+pg| ***** 99 ***** |
+
+
+at|In the SAYC bidding system, the 3@H and 3@S responses to a 1NT opening bid have similar meanings as they do in most other bidding systems that do not use Jacoby transfer bids:
+
+|
+pg| ***** 100 ***** |
+
+
+cs|3|at|^-{ SAYC uses the direct 3@H and 3@S responses to a 1NT opening to suggest at least 6 
+ cards in the suit that was bid and a hand that is strong enough to be interested in slam. }
+^-
+|
+pg| ***** 101 ***** |
+
+
+cs|2|At|^-{ When the responder to a 1NT opening has a 5-card (or longer) major, he almost always 
+ responds with a Jacoby transfer. The 3@H and 3@S responses are an exception to this. }
+^-
+|
+pg| ***** 102 ***** |
+
+
+ 
+at|The only other exception to this principle is when the responder has 5-4 in the majors and a hand with at least invitational strength. As we have seen, the responder to a 1NT opening bid should use Stayman (and not transfer) when he has this sort of hand.
+
+After a 3@H or 3@S response to a 1NT opening bid, the opener can raise to game if he does not like his hand or cuebid an Ace if his hand seems suitable for slam purposes. |
+pg| ***** 103 ***** |
+
+
+nt|^b@2^z@3|va|5|at|Here is a summary of all of the defined responses to a 1NT opening bid in SAYC. All direct responses to 1NT that are not listed here are currently not defined (and thus presumed natural):
+
+|
+pg| ***** 104 ***** |
+
+
+cs|1|at|^-{ 2@C - Stayman. The opener rebids a 4-card major if he has one and 2@D otherwise. }
+
+|
+pg| ***** 105 ***** |
+
+
+cs|3|at|{ 2@D and 2@H - Jacoby transfer bids. The opener usually completes the transfer. }
+
+|
+pg| ***** 106 ***** |
+
+
+cs|2|at|{ 2@S - Used to sign off in 3@C or 3@D. The opener must rebid 3@C over 2@S. }
+
+|
+pg| ***** 107 ***** |
+
+
+cs|4|at|{ 2NT - Invitational to 3NT. Opener passes with a minimum and bids 3NT with a maximum. }
+
+|
+pg| ***** 108 ***** |
+
+
+cs|1|at|{ 3@C and 3@D - Invitational to 3NT. These bids promise a strong 6-card suit.}
+
+|
+pg| ***** 109 ***** |
+
+
+cs|3|at|{ 3@H and 3@S - Interest in playing at least a small slam with at least 6 cards in the suit bid. }
+
+|
+pg| ***** 110 ***** |
+
+
+cs|2|at|{ 3NT - A signoff bid. The opener should always pass. }
+
+|
+pg| ***** 111 ***** |
+
+
+cs|4|at|{ 4@C - The Gerber convention (asking the opener how many Aces he was dealt). }
+
+|
+pg| ***** 112 ***** |
+
+
+cs|1|at|{ 4NT - Invitational to 6NT. Opener passes with a minimum and bids 6NT with a maximum. }
+
+|
+pg| ***** 113 ***** |
+
+
+cs|3|at|{ 5NT - Invitational to 7NT. Opener bids 6NT with a minimum and bids 7NT with a maximum. }
+
+|
+pg| ***** 114 ***** |
+
+
+cs|2|at|{ 6NT and 7NT - Signoff bids. The opener should always pass. }
+
+|
+pg| ***** 115 ***** |
+
+
+nt|^b@2^z@3|va|5|At|In each of the following exercises, your partner opens the bidding with 1NT. You are the responder. Think about the action that you would take with each of the following hands.
+
+|ha||mb|1np2dp2hp|cs|1|ht|d|va|8|at|^-{ |ia|o1n?|at| }
+^-
+
+|va|5|
+pg| ***** 116 ***** |
+
+
+md||ha||mb|1np|cs|3|at|^-{ |ih|ps9hj54dt32ckt8762|at| }
+^-
+|hf|q|lb|*BWhat call would you make?^^2s|cs|1|ht|d|va|8|at|^-{ |ia|o1n!2s|at| }
+^-|
+hs|sc|at|
+
+
+
+
+
+
+
+
+Respond 2@S. This artificial bid is used in the SAYC bidding system to sign off in either 3@C or 3@D. In this case your intention is to sign off in 3@C. Your 6-card club suit counts for 2 long suit points, |
+pg| ***** 118 ***** |
+
+
+ls|sc|hc|ckhj|At|but you have only 4 HCP. |
+pg| ***** 119 ***** |
+
+
+hs|sc|lc|ckhj|at|With only 6 total points, this hand is not strong enough for a game invitation and 3@C rates to be a better contract than 1NT. 
+
+
+|
+pg| ***** 120 ***** |
+
+
+mb|2sp3c|cs|1|ht|d|va|8|at|^-{ |ia|o1n2s3c?|at| }
+^-
+|ls|sc|hf|v|lb|*BYour partner rebids 3 clubs. What call would you make?^^p|
+ht|v|hs|sc|at|You should pass. 3@C is the contract that you would like to play in and you will arrive in that contract if you pass now. It is possible that 1NT would have been a better place to play, but your long minor suit coupled with the unbalanced nature of your hand suggests that 3@C will usually be the contract of choice (given that there is no way to sign off in 2@C in SAYC).
+
+|cs|1|ht|d|va|8|at|^-{ |ia|o1n2s3c!p|at| }
+^-|
+pg| ***** 122 ***** |
+
+
+ls|sc|
+
+nt|^b@2^z@3|md||ha||mb|1np|cs|1|ht|b|at|^-{ |ia|o1n?|at| }
+^-|va|7|cs|3|at|^-{ |ih|psa87hqjt542dak4c6|at| }
+^-|
+hf|l|lb|*BWhat call would you make?^^3h|cs|1|ht|b|at|^-{ |ia|o1n!3h|at| }
+^-|
+va|9|hs|sh|at|
+
+
+
+
+
+Respond 3@H. In SAYC, the 3@H and 3@S responses to 1NT describe hands with 6 cards in the suit bid that are strong enough to at least try for a small slam. You certainly have the heart suit that this call promises |
+pg| ***** 124 ***** |
+
+
+ls|sh|hc|sadakhqj|at|and your 14 HCP |
+pg| ***** 125 ***** |
+
+
+lc|sadakhqj|hs|sh|At|and 2 long suit points give you 16 total points - a small slam is certainly a possibility given that your partner promised 15-17 HCP when he opened 1NT. Do not use a Jacoby transfer bid of 2@D with this hand as you would have no satisfying rebid. The direct 3@H response was made for hands like this one.
+
+Your partner's rebid will tell you if he likes his hand for the purposes of a slam contract in hearts. Your 3@H bid (which showed 6 or more hearts) has informed him that hearts will be an adequate trump suit since at least an 8-card fit must be present. 
+
+|
+pg| ***** 126 ***** |
+
+
+at|If your partner has a maximum hand or perhaps a minimum with some good cards in hearts and a lot of Aces and Kings he will cooperate in your slam investigation (perhaps by cuebidding a new suit). Otherwise, he will bid 4@H and leave any further exploration to you. You will have a tough decision if your partner rebids 4@H, but you can cross that bridge when you come to it!
+
+|cs|1|ht|b|at|^-{ |ia|o1n!3h|at| }
+
+|
+pg| ***** 127 ***** |
+
+
+ls|sh|
+
+nt|^b@2^z@3|ls|sc|md||ha||mb|1np|cs|1|ht|b|at|^-{ |ia|o1n?|at| }
+^-|va|7|cs|3|at|^-{ |ih|ps6hj765dqj832ct87|at| }
+^-|
+hf|l|lb|*BWhat call would you make?^^p|
+cs|1|ht|b|at|^-{ |ia|o1n!p|at| }
+^-|ht|l|va|5|hs|ss|at|You must pass 1NT even though you have a singleton and thus an unbalanced hand. |
+pg| ***** 129 ***** |
+
+
+ls|ss|hs|Sh|at|You do have a 4-card major, but it would be too dangerous to use the Stayman convention with this hand. This action would work fine if your partner were to respond 2@D or 2@H (you could pass in either case), |
+pg| ***** 130 ***** |
+
+
+ls|Sh|hs|ss|at|but if your partner were to respond 2@S, you would be really stuck.
+
+|
+pg| ***** 131 ***** |
+
+
+ls|ss|Hs|Sd|at|A better way to escape from 1NT would be to try to sign off in 3@D via a 2@S response. While this course of action might improve the contract, it might also make things worse. You really should have a 6-card minor suit in order to invoke the 2@S convention. Unbalanced hands with 5-card minors tend to play better in 1NT than they do at the 3-level of the minor.
+
+It is not unlikely that 2@D is a better contract than 1NT, but there is no way to sign off in 2@D in SAYC since a direct 2@D response to 1NT would be a Jacoby transfer bid. This hand illustrates one of the few disadvantages of using Jacoby transfers.
+|
+pg| ***** 132 ***** |
+
+
+ls|sd|
+
+nt|^b@2^z@3|ls|sc|md||ha||mb|1np|cs|1|ht|b|at|^-{ |ia|o1n?|at| }
+^-|va|7|cs|3|at|^-{ |ih|pskqj97632htd7cakq|at| }
+^-|
+hf|l|lb|*BWhat call would you make?^^4c|
+cs|1|ht|b|at|^-{ |ia|o1n!4c|at| }
+^-|ht|l|va|5|hs|ss|at|You might get away with a direct 3@S response (to show a hand with slam interest and at least 6 spades), but why beat around the bush? All you need to know is how many Aces your partner was dealt and the Gerber 4@C convention will tell you that immediately.
+
+|
+pg| ***** 134 ***** |
+
+
+at|This incredible hand is completely solid except for the 3 missing Aces. If your partner responds 4NT to your Gerber inquiry (promising 3 Aces), you can bid 7NT with confidence. 
+
+|
+pg| ***** 135 ***** |
+
+
+at|If instead he responds 4@S to show 2 Aces, the partnership will be missing an Ace and you can place the contract in 6@S. 
+
+|
+pg| ***** 136 ***** |
+
+
+at|In the unlikely event that your partner has only 1 Ace, he will bid 4@H over your 4@C bid. With 2 Aces outstanding, there would be no slam in the cards. You can sign off in 4@S and expect your partner to pass. The player who asks for Aces is in charge of setting the final contract. Your partner should not overrule your decision regardless of the rest of his hand.|
+pg| ***** 137 ***** |
+
+
+ls|ss|
+
+nt|^b@2^z@3|ls|sc|md||ha||mb|1np|cs|1|ht|b|at|^-{ |ia|o1n?|at| }
+^-|va|7|cs|3|at|^-{ |ih|psqt2h7d984cajt762|at| }
+^-|
+hf|l|lb|*BWhat call would you make?^^3c|
+
+cs|1|ht|b|at|^-{ |ia|o1n!3c|at| }
+^-|ht|l|va|5|at|You should jump to 3@C, describing an invitational hand with a strong 6-card club suit. |
+pg| ***** 139 ***** |
+
+
+ls|Sc|hc|cajsq|at|This hand has 7 HCP |
+pg| ***** 140 ***** |
+
+
+lc|cajsq|hs|Sc|at|and 2 long suit points for the 6-card club suit. 9 total points makes this hand worth a game invitation and SAYC has the perfect bid available for this occasion.
+
+|
+pg| ***** 141 ***** |
+
+
+at|3@C is an excellent description of your hand. Your partner will be well-placed to select the final contract. If he thinks that he can make 3NT opposite the sort of hand that you have described (note that he will sometimes bid 3NT with a minimum 1NT opening), then he will rebid 3NT. If he thinks that 3NT will be a poor contract (which might be the case even when he has a maximum hand), he will pass 3@C.
+
+|
+pg| ***** 142 ***** |
+
+
+at|In either case, there is a very good chance that the partnership will end up in the best possible contract. With this hand you could guess between 3@C and 3NT yourself, but there is no reason for you to have to guess. 3@C will tell your partner what your hand is all about. You should make that bid and put your trust in your partner's judgment.
+
+
+|
+pg| ***** 143 ***** |
+
+
+ls|sd|
+
+nt|^b@2^z@3|ls|sc|md||ha||mb|1np|cs|1|ht|b|at|^-{ |ia|o1n?|at| }
+
+^-|va|9|cs|3|at|^-{ |ih|pst65c972dt876432|at| }
+^-|
+hf|m|lb|*BWhat call would you make?^^2s|
+hs|sd|at|
+Respond 2@S as a prelude to signing off in 3@D. It is rare to be dealt a hand with 0 HCP, but at least this hand has a redeeming quality - it has a 7-card diamond suit. It would be nice to be able to get out in 2@D, but you cannot do that in SAYC. Still, the odds are very strong that 3@D will be a better contract than 1NT and you must start by bidding 2@S in order to get to 3@D.
+
+|cs|1|ht|b|at|^-{ |ia|o1n!2s|at| }
+^-
+|
+pg| ***** 145 ***** |
+
+
+cs|1|ht|b|at|^-{ |ia|o1n2s3c?|at| }
+^-|
+
+mb|3cp|ls|Sd|hf|r|lb|*BYour partner rebids 3 clubs. What call would you make?^^3d|
+cs|1|ht|b|at|^-{ |ia|o1n2s3c!3d|at| }
+^-|hs|sd|ht|s|at|Rebid 3@D and expect your partner to pass this signoff bid. You can assume that your partner is just as familiar with the SAYC bidding system as you are. He should know that he must bid 3@C when you respond 2@S to his 1NT opening bid. He should also know that when you rebid 3@D over his 3@C bid that you are expecting him to pass.
+
+Every bridge player has a responsibility to his partner to be familiar with the bidding system that they are using. Bridge is not nearly as much fun for any of the players at the table when partners do not understand each others' bids!
+|
+pg| ***** 147 ***** |
+
+
+|bt||nt||cs|5|cp|6|fp|4|ht|i|at|^-{^^End^^ 
+      Learn to Play Bridge2          ^*bChapter 5   Section 2^*n       ^^ ^^ ^^Other Responses to 1 No-trump opening^^ ^^ }^- |

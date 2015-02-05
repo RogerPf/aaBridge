@@ -1988,7 +1988,9 @@ public class MassGi {
 		App.deal.changed = true;
 		String cds = bb.get(0);
 
-		// System.out.println(bb.lineNumber + " pdl__pc arrive: " + cds);
+		String bbinf = "Line " + bb.lineNumber + "  pg " + page_numb_display + "   ";
+
+		// System.out.println(bbinf + "pdl__pc arrive: " + cds);
 
 		// PC|qd3| causes NetBridgeVu to play the lowest diamond
 		// when neither the q or 3 are present in the hand
@@ -2045,7 +2047,7 @@ public class MassGi {
 			else {
 				rank = Rank.charToRank(c);
 				if (rank == Rank.Invalid) {
-					System.out.println(bb.lineNumber + " pdl__pc - Invalid Rank: " + cds + " " + suit + " " + c);
+					System.out.println(bbinf + "pdl__pc - Invalid Rank: " + cds + " " + suit + " " + c);
 					continue;
 				}
 			}
@@ -2053,7 +2055,7 @@ public class MassGi {
 			if (rank != Rank.BelowAll) {
 				if (App.deal.checkCardExternal(suit, rank) == false) {
 					if (!lowestForced)
-						System.out.println(bb.lineNumber + " pdl__pc - Card played not in hand!: " + suit + " " + rank + "  will try to play lowest");
+						System.out.println(bbinf + "pdl__pc - Card played not in hand!: " + suit + " " + rank + "  will try to play lowest");
 					rank = Rank.BelowAll; // so it will try the lowest
 				}
 			}
@@ -2061,16 +2063,16 @@ public class MassGi {
 			if (rank == Rank.BelowAll) {
 				Card card2 = App.deal.getLowestCardExternal(suit);
 				if (card2 == null) {
-					System.out.println(bb.lineNumber + " pdl__pc - No lowest card in suit: " + cds + " " + suit);
+					System.out.println(bbinf + "pdl__pc - No lowest card in suit: " + cds + " " + suit);
 					suit = Suit.Invalid;
 					continue;
 				}
 				rank = card2.rank;
-				// System.out.println(bb.lineNumber + " pdl__pc - 'Below all' selected: " + suit + " " + rank);
+				// System.out.println(bbinf + "pdl__pc - 'Below all' selected: " + suit + " " + rank);
 			}
 
 			if (App.deal.checkCardExternal(suit, rank) == false) {
-				System.out.println(bb.lineNumber + " pdl__pc - Card not found: " + cds + " " + rank + " " + suit);
+				System.out.println(bbinf + "pdl__pc - Card not found: " + cds + " " + rank + " " + suit);
 				continue;
 			}
 			String oCard = suit.toLinStr() + rank.toStr();
@@ -2080,7 +2082,7 @@ public class MassGi {
 
 			suit = Suit.Invalid; // so we will get the next
 
-			// System.out.println(bb.lineNumber + " pdl__pc depart: " + oCard);
+			// System.out.println(bbinf + "pdl__pc depart: " + oCard);
 		}
 
 	}
@@ -2204,7 +2206,7 @@ public class MassGi {
 			if (t == q_.lf)  { /* ignored */                	continue; }
  			
 			
-			System.out.println(bb.lineNumber + " Make_gi oneTimeParse - unknown bb type -" + bb.type + "- " + s);
+			System.out.println("line " + bb.lineNumber + "  Make_gi oneTimeParse - unknown bb type -" + bb.type + "- " + s);
 
 			// @formatter:on
 		}

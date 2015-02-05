@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "aaBridge"
-#define MyAppVersion "2.4.0.2426"
+#define MyAppVersion "3.0.0.2724"
 #define MyAppPublisher "RogerPf.com"
 #define MyAppURL "http:/RogerPf.com/"
 #define MyAppExeName "aaBridge.exe"
@@ -22,8 +22,8 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName=\ProgramSmall\{#MyAppName}
 DefaultGroupName={#MyAppName}
 OutputDir=C:\a
-OutputBaseFilename={#MyAppName}_Watson_Edition_{#MyAppVersion}_setup
-SetupIconFile=C:\c\e_wk\431_aaB\aaBridge\aaBridge.ico
+OutputBaseFilename={#MyAppName}_{#MyAppVersion}_setup
+SetupIconFile=C:\c\e_wk\441_aaB\aaBridge\aaBridge.ico
 Compression=lzma
 SolidCompression=yes
 ChangesAssociations=yes
@@ -37,13 +37,13 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 Source: "C:\a\aaBridge.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\a\{#MyAppName}_Watson_Edition_{#MyAppVersion}.jar"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\c\e_wk\431_aaB\aaBridge\lin.ico"; DestDir: "{app}";
+Source: "C:\a\{#MyAppName}_{#MyAppVersion}.jar"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\c\e_wk\441_aaB\aaBridge\lin.ico"; DestDir: "{app}";
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
-Name: "{commondesktop}\{#MyAppName} Watson Edition"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
+Name: "{commondesktop}\{#MyAppName} 3"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 
 [Run]
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: postinstall skipifsilent

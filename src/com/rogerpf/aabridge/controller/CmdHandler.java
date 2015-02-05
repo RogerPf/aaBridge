@@ -64,7 +64,7 @@ public final class CmdHandler {
 		new RpfBtnDef( "mainClock",					">",				"Rotate the seats Clockwise  "),
 		new RpfBtnDef( "claimBtn",					"Claim",			"Claim  -  Claim as many of the remaining tricks as you wish.  Your claim we be accepted and not tested.  "),
 		new RpfBtnDef( "mainUndo",					"Undo",				""),
-		new RpfBtnDef( "mainNewBoard",				"New Board",		"Discard the existing hands, shuffle and deal the next board  (always does and AutoSave first)  "),
+		new RpfBtnDef( "mainNewBoard",				"New Board",		"Discard the existing hands, shuffle and deal the next board  (always does an AutoSave first)  "),
 
 		new RpfBtnDef( "leftWingReview",			"Review",			"Review - change mode so you can  Review  the hand  "), 
 		new RpfBtnDef( "leftWingNormal",			"Play",		        "Bid-Play - change mode so you can  Bid or Play  the hand'  "), 
@@ -97,7 +97,7 @@ public final class CmdHandler {
 
 		new RpfBtnDef( "tutorialBackOne",			"<",				"Go back one step  "),
 		new RpfBtnDef( "tutorialStepFwd",			"Step  >",			"Jump Forward to the next stopping point  "),
-		new RpfBtnDef( "tutorialFlowFwd",			"Flow  >",			"Run Forward to the next stopping point - showing each being bid made or card being played  "),
+		new RpfBtnDef( "tutorialFlowFwd",			"Flow  >",			"Run Forward to the next stopping point - showing each card being played  "),
 		new RpfBtnDef( "tutorialBackToMovie",		"Back  to Movie",	"Continues the  Tutorial  also know as - Bridge movie  "),
 		new RpfBtnDef( "tutorialIntoDealEdit",		"Edit",	            "Enter the Deal  and go into   'Edit' mode   so you can invesigate the deal Double Dummy - use  Wipe or Undo  if needed  "),
 		new RpfBtnDef( "tutorialIntoDealPlay",		"Play",	            "Enter the Deal  and go into   'Play' mode   with active 'playing' opponents - good for  pre-set problems  "),

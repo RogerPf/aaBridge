@@ -1,0 +1,114 @@
+%% Play Card
+%% Last edited  2013 Dec 31
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+st||
+qx|pc|
+
+md|1S9H8TQD3469JAC7TQ,S248TJAH29DQC69JA,S57QH457KAD2KC234|
+
+at|^b@2^*bPlayCard^*n^f^*b!pc! ... !^*n|at|^z@3|
+mb|4dppp|
+pg| ***** 0 ***** |
+
+
+pc|h9|
+at|
+
+^c@2!pc!h|cp|7|at|^*b9^*n|cp||at|! ^fThis is the standard single card form.
+|
+pg| ***** 1 ***** |
+
+
+pc|h|
+at|^c@2!pc!|cp|7|at|^*bh^*n|cp||at|! ^fIf you specify only the suit the lowest will be played.
+|
+pg| ***** 2 ***** |
+
+
+pc|hA|
+at|^c@2!pc!h|cp|7|at|^*bA^*n|cp||at|! ^fIf you specify a card that is not in the hand the lowest will be played.
+|
+pg| ***** 3 ***** |
+
+
+pc|dJ|
+at|^c@2!pc!d|cp|7|at|^*bJ^*n|cp||at|! ^fIf you specify a card that you have but it is not valid to play, it ^*b will ^*n be played.
+^gYes @- you can command a revoke in lin file players !|
+pg| ***** 4 ***** |
+
+
+nt||
+qx|pc m|
+up|4|
+at|^b@2^*bPlayCard^*n^f^*b!pc! ... !^*n|at|^z@3|
+at|
+
+|
+pg| ***** 5 ***** |
+
+
+pc|h9h7h6|
+at|^c!pc!h9h7h6dJ! ^hYou can specify more than one card.|
+pg| ***** 6 ***** |
+
+
+up|3|at| (now undone) |
+pg| ***** 7 ***** |
+
+
+pc|h9hh|
+at|
+
+^c!pc!h9hh! ^hThe card rank can be omitted, it then plays the lowest rank of that suit.
+|
+pg| ***** 8 ***** |
+
+
+nt||
+qx|wt m|
+pc|hQ|
+at|^b@2^*bWhose Trick^*n^f^*b!wt! <nsew> !^*n|at|^z@3|
+at|
+
+^c@2 You can override whoever is to lead to the next trick. Here South has won with the @hQ.
+|
+pg| ***** 9 ***** |
+
+
+wt|w|pc|d|
+at|
+^c!wt!w!pc!d! ^gBut it is the West hand that leads to the next trick.
+|
+pg| ***** 10 ***** |
+
+
+at||
+
+nt||
+qx|up|
+up|2|
+pc|hq|
+at|^b@2^*bUndo Play^*n^f^*b!up!99!^*n|at|^z@3|
+at|
+^d@2As with bidding you can 'undo' the play.
+|
+pg| ***** 11 ***** |
+
+
+up|| 
+at|
+!up!! ^g undoes one card|
+pg| ***** 12 ***** |
+
+
+up|2| 
+at|
+!up!2! ^g will attempt to undo two cards
+|
+
+ht|z|at|@0
+^*b end ^*n|

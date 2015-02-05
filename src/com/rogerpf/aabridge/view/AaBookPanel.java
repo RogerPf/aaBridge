@@ -22,6 +22,7 @@ import java.awt.event.ComponentEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.geom.Rectangle2D;
+import java.io.File;
 import java.util.ArrayList;
 
 import javax.swing.BorderFactory;
@@ -413,16 +414,29 @@ class AaHomeBtnPanel extends ClickPanel implements ActionListener {
 	QLabel anyLabel;
 
 	QButton homeButton;
+	QButton randTest;
+	QButton linEdit;
 
 	public AaHomeBtnPanel() { // Constructor
 		// ==============================================================================================
 
-		setLayout(new MigLayout(App.simple + ", flowy"));
+		setLayout(new MigLayout(App.simple + ", flowx"));
 
 		add(homeButton = new QButton(this, "Home"), "gapx4, gapy4");
 		homeButton.setBorder(BorderFactory.createEmptyBorder(0, 4, 1, 4));
 		homeButton.setToolTipText("Jump to the  -  Welcome  page");
 
+		homeButton.setFont(homeButton.getFont().deriveFont((float) (homeButton.getFont().getSize() * 1.2)));
+
+		if (App.devMode) {
+			add(randTest = new QButton(this, "Rn"), "gapx8, gapy4");
+			randTest.setBorder(BorderFactory.createEmptyBorder(0, 2, 1, 4));
+			randTest.setToolTipText("Random Lin Quick test");
+
+			add(linEdit = new QButton(this, "Ed"), "gapx8, gapy4");
+			linEdit.setBorder(BorderFactory.createEmptyBorder(0, 4, 1, 4));
+			linEdit.setToolTipText("Attempt to edit the current .lin file");
+		}
 	}
 
 	public void actionPerformed(ActionEvent e) {
@@ -430,6 +444,22 @@ class AaHomeBtnPanel extends ClickPanel implements ActionListener {
 
 		if ("Home".equals(e.getActionCommand())) {
 			App.con.ShowHelpAndWelcome();
+		}
+
+		else if ("Rn".equals(e.getActionCommand())) {
+			App.frame.executeCmd("open_random_lin_file");
+		}
+
+		else if ("Ed".equals(e.getActionCommand())) {
+			if (App.debug_pathlastLinLoaded.isEmpty())
+				return;
+			if (new File(App.debug_pathlastLinLoaded).exists() == false)
+				return;
+
+			try {
+				Runtime.getRuntime().exec(new String[] { "notepad.exe", App.debug_pathlastLinLoaded });
+			} catch (Exception e1) {
+			}
 		}
 	}
 }

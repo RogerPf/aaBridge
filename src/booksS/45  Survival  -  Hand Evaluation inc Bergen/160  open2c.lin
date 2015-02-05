@@ -1,0 +1,808 @@
+2Copen.lin
+%% Last edited  11-26-2013 
+%%%% By Kia, BBO nickname "nome"
+%%http://www.betterbridge.com/misc/StandardArticles/Standard200505.pdf
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|155|ff|1Arial|fb|110|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|35|fm|3|                           FOR 3
+fb|49|fm|4|fb|4|fm|4|
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|3255|cg|3255|cb|3255|            White
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|6124|cb|6250|cg|6200|             6=TURQUOISE
+cr|70|cb|7220|cg|7235|              green/blue 7
+cr|8255|cb|80|cg|80|                red 8
+cr|9128|cb|90|cg|950|               Reddish-brown 9
+
+%%%%===================
+bt||cs|6|ht|b|fp|1|at|^-{           The 2@C Opening, Responses, and How to Interfere          }
+^-|FP||VA|4|AT|^B@2All one level opening bids have range of strength up to 21 points and are not forcing. Responder may and can pass with less than 6 points. There are hands, however, so strong (22+) that game is likely even if responder has fewer than 6 points. Therefore, responder cannot pass. All such strong hands are opened with an artificial, forcing 2@C.  |
+PG| ***** 0 ***** |
+
+
+AT|
+
+The 22+ hands further can be divided into:|fp|2|CS|6|at|^-
+{    BALANCED    }
+
+|FP||at|or|
+pg| ***** 1 ***** |
+
+
+FP|2|at|
+
+{    UNBALANCED    }
+^-|FP||
+PG| ***** 2 ***** |
+
+
+AT|
+The 22+ balanced hands are the easy ones which we will address first. However, let us review the opening bid for balanced hands with fewer than 22 points.|
+PG| ***** 3 ***** |
+
+
+AT|
+
+^B{  I have a 12-14 balanced hand  }|
+PG| ***** 4 ***** |
+
+
+va|4|cs|4|AT|
+^f{  Open one of a suit, planning to rebid notrump at the cheapest level.  }|
+PG| ***** 5 ***** |
+
+
+va|4|cs|6|AT|
+^B{  I have a 15-17 BALANCED HAND  }|
+PG| ***** 6 ***** |
+
+
+va|4|cs|4|AT|
+^f{  Open 1NT.  }|
+PG| ***** 7 ***** |
+
+
+va|4|cs|6|AT|
+^B{  I have an 18-19 BALANCED HAND  }|
+PG| ***** 8 ***** |
+
+
+va|4|cs|4|AT|
+^f{  Open one of a suit, planning to rebid 2NT.  }|
+PG| ***** 9 ***** |
+
+
+va|4|cs|6|AT|
+^B{  I have a 20-21 BALANCED HAND  }|
+PG| ***** 10 ***** |
+
+
+va|4|cs|4|AT|
+^f{  Open 2NT. It is not forcing of course.  }|
+PG| ***** 11 ***** |
+
+
+fp|2|cs|6|AT|^-
+
+{  I have a 22+ BALANCED HAND  }|
+PG| ***** 12 ***** |
+
+
+cs|4|AT|
+
+{  Open 2@C first (it is forcing!). Next Bid 2NT with 22-24 points or 3NT with 25-27 points and so on.  }
+^-|fp||cs||
+PG| ***** 13 ***** |
+
+
+va|4|AT|
+^BNext we will look at 22+ unbalanced hands.|
+pg| ***** 14 ***** |
+
+
+NT||
+%%%%
+
+at|^B@2
+There are books and articles out there covering when and how to open a 22+ unbalanced hand 2@C. For your additional review, below we have listed a few of them.|
+PG| ***** 15 ***** |
+
+
+AT|
+
+^*ISlam Bidding Made easier^*N by Marty Bergen page 57
+
+^*IBetter Bidding With Bergen^*N by Marty Bergen page 117
+
+2@C STRONG ARTIFICIAL OPENING in ^*I25 Bridge Conventions^*N by Barbara Seagram 
+
+Your 2@C Bidding Structure by Karen Walker at |CP|1|AT|^*Hhome.comcast.net/~kwbridge/bb/b_2c.htm^*N|CP||
+PG| ***** 16 ***** |
+
+
+AT|
+
+In this simple synopsis we look at only two methods.|
+PG| ***** 17 ***** |
+
+
+AT| 
+
+A. You open 2@C a 22+ unbalanced hand when you have 9+ tricks in your hand (preferred by Howard Schutzman).|
+PG| ***** 18 ***** |
+
+
+AT|
+
+B. You open 2@C a 22+ unbalanced hand using Bergen's Method when it satisfies his "4 and 4" rule.|
+PG| ***** 19 ***** |
+
+
+AT|
+
+Method A is straightforward. All you need is counting your tricks. If there are 9 then open 2@C. One important note. Open a hand 1@D when the longest suit is diamond and you have 9 tricks. Howard will address that later.|
+PG| ***** 20 ***** |
+
+
+AT|
+
+Option B (Bergen's Method) is next.|
+PG| ***** 21 ***** |
+
+
+NT||
+%%Page
+bt||cs|6|ht|b|fp|1|at|^-{           The 2@C Opening Bergen's Method          }
+^-|FP||VA|4|AT|^B@2^*BMM: ^*NThis section is provided by Howard Schutzman. More on this topic at the end of this presentation by Tommy Solberg.|
+PG| ***** 22 ***** |
+
+
+cp|8|AT|
+
+^B@2^*BHoward Schutzman: ^*N|cp||at|Marty Bergen uses the "4 and 4" rule when determining whether or not to open 2@C when your long suit is a major. The "4 and 4 rule" states you should open 2@C when your hand contains at least 4 quick tricks and has no more than 4 losers.|
+PG| ***** 23 ***** |
+
+
+AT|
+
+Counting your quick tricks is easy. There are only 5 holdings you need to consider. AK = 2  quick tricks, A = 1 quick trick, KQ = 1 quick trick, AQ = 1.5 quick tricks, and Kx = .5 quick trick.|
+PG| ***** 24 ***** |
+
+
+AT|
+
+Counting losers the way Bergen intended is more difficult. You do not use the common Losing Trick Count method to determine losers. You count what you expect to be your actual losers in the suit, based on an average length (with no high cards or help) in partner's hands. |
+PG| ***** 25 ***** |
+
+
+AT|
+
+Sometimes counting losers is fairly easy. For example, if you hold AKQxxxx, that is no losers; since there are 6 cards out, on average partner will hold 2, so you will rarely lose any tricks in that suit. Even AKQxxx can be considered zero losers; with 7 cards missing, partner on average will have slightly over 2 cards in the suit, and with an 8 card fit, if the suit breaks 3-2, you will have no losers. |
+PG| ***** 26 ***** |
+
+
+AT|
+
+As another example, Axxx is a  3 loser suit, because partner on average will have 3 cards in the suit, but a 3-3 break is not likely. You can consider AQ a half loser suit (you may or may not lose a trick depending on which defender  has the King). |
+PG| ***** 27 ***** |
+
+
+AT|
+
+Similarly Kx is a 1.5 loser suit (which defender has the A determines whether or not you will lose 2 tricks). KQx is 1.5 losers (whether you lose 1 or 2 tricks depends on where the A is located).  KQ doubleton is one loser.|
+PG| ***** 28 ***** |
+
+
+AT|
+
+^B@2^*BMM: ^*NNext we will have responding to 2@C opener. |
+PG| ***** 29 ***** |
+
+
+NT||
+%%Page
+bt||cs|6|ht|b|fp|1|at|^-{           Responding to 2@C Opening          }
+^-|FP||VA|4|AT|^B@2^*BMM: ^*NAgain, there are many schemes for responding to 2@C, but we review only the 2@D waiting which is the most popular and straightforward. Responder may have range of hands from a few points to enough that slam is likely. One point is clear. If partner opens 2@C, responder may not pass below game except if it goes 2@C-P-2@D-P-2N, and even then only with 0 to a bad 2 and no 5-card major. Basically 2@C establishes a game force. There are other rare occasions, we will look at them later, when with less than 3 points responder may pass below game. |
+PG| ***** 30 ***** |
+
+
+AT|
+
+Adopting 2@D waiting response, responder bids 2@D first then for his second response, with a good hand he makes a positive bid and with three points or less he makes a negative bid.|
+PG| ***** 31 ***** |
+
+
+AT|
+
+Responder, using an adjunct scheme, can bypass initial 2@D response when his hand is strong enough where he would have made a positive second bid after a 2@D waiting first bid. An initial positive response requires 8+ points. Those first positive response are 2@H, 2@S, 2N 3@C, or 3@D. 2N shows a balanced hand.|
+PG| ***** 32 ***** |
+
+
+AT|
+
+^B@2^*BMM: ^*NHoward has additional note regarding initial response of 3@C or 3@D, "I would tend to avoid bidding 3@C or 3@D over a 2@C opener, even if responder has the requirements to do so (5-card suit with 2 of top 3 or 6+ card suit with 2 of top 4). It takes up too much room. Bidding 2@D and then hearing why opener opened 2@C usually results in a much better auction."|
+PG| ***** 33 ***** |
+
+
+AT|
+
+Next, let us put a spot light on couple important issues by looking at some examples.|
+PG| ***** 34 ***** |
+
+
+NT||
+%%example 1
+st||pn|You,,Partner,|md|3S 8 6 3 H 9 7 4 2D 6 4C 8 6 5 2,,,|sv|o|rh||ah|2C Open and Responses|ah|Example 1|NT|^B@2
+Partner opens 2@C and your RHO passes.|MB|2cp?|
+PG| ***** 35 ***** |
+
+
+NT||lb|*bPlease make a bid with your hand.^^2d|NT|^B@2
+If you play 2@D waiting response to 2@C opener you should bid 2@D regardless of your points.|MB|2d|
+PG| ***** 37 ***** |
+
+
+NT|^B@2
+You can inform your partner of the bad news with your second response. We have a section on this issue later.|
+PG| ***** 38 ***** |
+
+
+nt||
+%%example 2
+st||pn|You,,Partner,|md|3S A Q 9 84 H 6 D K 8 3 C 8 76 4 ,,,|sv|o|rh||ah|2C Open and Responses|ah|Example 2|NT|^B@2
+Partner opens 2@C and your RHO passes.|MB|2cp?|
+PG| ***** 39 ***** |
+
+
+NT||lb|*bPlease make a bid with your hand.^^2d|NT|^B@2
+You have 2 choice. Either respond 2@D waiting|MB|2d|AT| and make a positive bid on your next term. Or,|
+PG| ***** 41 ***** |
+
+
+ub||AT| bypass the 2@D waiting and go directly to your positive bid which here would be 2@S.|MB|2s|
+PG| ***** 42 ***** |
+
+
+NT|^B@2  
+A positive first bid in a suit, beside promising 8+ points, requires a 5-card suit—2 of the top 3 honors or a 6-card or longer suit with 2 of the top four honors. It also commits the partnership to at least game in that suit and shows interest in reaching slam. |
+PG| ***** 43 ***** |
+
+
+NT||
+%%example 3
+st||pn|You,,Partner,|md|3S K 7 H A 9 D Q 9 875 C J 8 76 ,,,|sv|o|rh||ah|2C Open and Responses|ah|Example 3|NT|^B@2
+Partner opens 2@C and your RHO passes.|MB|2cp?|
+PG| ***** 44 ***** |
+
+
+NT||lb|*bPlease make a bid with your hand.^^2d|mb|2d|cp|8|AT|
+^B@2^*BHoward Schutzman: ^*N|cp||at|2N is a good option. But I like 2@D better because that makes it likely that the stronger hand will be declarer and also keeps the bidding at a lower level. Slam is likely when you hold 10 HCP and partner opens 2@C. |
+PG| ***** 46 ***** |
+
+
+NT||
+%%example 4
+st||pn|You,,Partner,|md|3S Q8 3H Q J6 D K 87 C J 8 76 ,,,|sv|o|rh||ah|2C Open and Responses|ah|Example 4|NT|^B@2
+Partner opens 2@C and your RHO passes.|MB|2cp?|
+PG| ***** 47 ***** |
+
+
+NT||lb|*bPlease make a bid with your hand.^^2d|NT|^B@2
+Sure you can bid 2@D waiting.|mb|2D|
+PG| ***** 49 ***** |
+
+
+AT| or bypass the 2@D response as your hand has 9 HCP and you can make a first positive response.|UB||
+PG| ***** 50 ***** |
+
+
+NT|^B@2
+With a balanced 8+ points hand the first positive response is 2N.|MB|2N|
+PG| ***** 51 ***** |
+
+
+NT|^B@2 
+On the other hand, this is not played by many experts as it takes up bidding room. Therefore, the first positive response of 2N is reserved only for balanced hands of about 8-12 points populated mostly by Queens and Jacks with no more than one ace or king. However, Howard has the next point which again supports bidding 2@D with this hand.|
+PG| ***** 52 ***** |
+
+
+NT||
+cp|8|AT|
+^B@2^*BHoward Schutzman: ^*N|cp||at|Some people play you should only bid 2N with 3 or more "controls". You count 2 controls for an ace and 1 control for a king. So, if you play that way, a 2NT response guarantees at least 1 ace and 1 king or 3 kings. I think this is a better way to play than the way suggested, where the 2N bid denies controls. With a lack of controls, 2@D is a better bid.|
+PG| ***** 53 ***** |
+
+
+NT|^B@2
+BTW, the auction develops naturally when responder makes a positive response after the 2@C opening either on the first round or the second round. |
+PG| ***** 54 ***** |
+
+
+NT||
+%%example 5
+st||pn|You,,Partner,|md|3,,,|sv|o|rh||ah|2C Open and Responses|ah|Example 5|NT|^B@2
+Further, if the 2@C opener rebids 2N showing a balanced hand of 22-24 points|MB|2cp2dp2n|AN|22-24 point balanced hand, non-forcing|
+pg| ***** 55 ***** |
+
+
+pc|p|AT| the responder, with enough points, should bid as partner initially had opened 2N. Based on shape and hand's strength, those possible bids  are:|
+PG| ***** 56 ***** |
+
+
+NT|^B@2
+3@C Stayman
+3@D Transfer to hearts (or 4@D as Texas transfer to hearts)
+3@H Transfer to spades (or 4@H as Texas transfer to spades)
+3NT To play in game (or jump to 6N)
+4@C Gerber (ace asking)
+4NT Invitational to slam
+6NT To play in slam|
+PG| ***** 57 ***** |
+
+
+NT||
+NT|^B@2
+On the other hand, by rebidding 2N which no longer is forcing, opener has limited his hand to 22-24 range and game is not possible opposite a very weak hand. Therefore, this is another rare bidding sequence where, with less than 3 points, responder can pass. Let us see an example.|
+PG| ***** 58 ***** |
+
+
+NT||
+%%example 5a
+st||pn|You,,Partner,|md|3S 8 6 3 H 9 7 4 2D 6 4C 8 6 5 2,,,|sv|o|rh||ah|2C Open and Responses|ah|Example 5a|NT|^B@2 
+What if you, as a responder have a really bad hand, 3 points or less, and the bidding goes as is shown above.|MB|2cp2dp2np|
+pg| ***** 59 ***** |
+
+
+lb|*bPlease make a bid for South.^^p|mb|p|NT|^B@2
+Pass by South with less than 3 points is now allowed as opener's rebid has limited his hand and game is not possible.|sb|S|
+PG| ***** 61 ***** |
+
+
+NT||
+%% example 6
+st||pn|You,,Partner,|md|3,,,|sv|o|rh||ah|2C Open and Responses|ah|Example 6|NT|^B@2 
+What if you, as a responder have a really bad hand, 3 points or less, and the bidding goes as is shown above with partner biding his real suit.|MB|2cp2dp2sp|sb|S|
+PG| ***** 62 ***** |
+
+
+NT|^B@2
+You now bid the cheaper minor (usually 3@C after opener's rebids of a major).|MB|3C|
+PG| ***** 63 ***** |
+
+
+NT|^B@2
+What if opener rebids 3@C.|ub|3|mb|3cp?|
+PG| ***** 64 ***** |
+
+
+NT|^B@2
+Holding a hand with 3 points or less you bid the cheaper minor, 3@D here which warns your partner of the bad news.|MB|3D|
+PG| ***** 65 ***** |
+
+
+NT||
+cp|8|AT|
+^B@2^*BHoward Schutzman: ^*N|cp||at|You can decide not to play 3@D shows a bust hand over 3@C (e.g. there is no way to show a bust hand over 3@C). The reason is opener should be reluctant to open 2@C with an unbalanced hand with clubs, because the auction 2@C-2@D-3@C takes up so much room. Same thing (even worse) when opener has diamonds (2@C-2@D-3@D). It is often better to make a slight underbid by opening 1@C or 1@D.|
+PG| ***** 66 ***** |
+
+
+NT||
+%%example 7
+st||pn|You,,Partner,|md|3,,,|sv|o|rh||ah|2C Open and Responses|ah|Example 7|mb|2cp2dp3dp?|NT|^B@2
+And finally what should you bid if the bidding goes as is shown above?|
+PG| ***** 67 ***** |
+
+
+NT|^B@2
+^*BMM: ^*NSee the comment for last example. Also please view next board from another Howard's recent mentoring session explaining how to respond to 2@C with a bust and when partner does not rebid 2N.|
+PG| ***** 68 ***** |
+
+
+NT||
+%%BUST
+%%%% Board 4
+pn|hondo717,),,|st||md|2S2347H5679D49QC9J,S58JAH234QADKAC8A,S6TKH8JD356TC26TK,|rh||ah|Board 4|ah|hondo717 mentoring session|ah|October 16, 2013|sv|b|mb|2C|mb|p|mb|2D!|an|waiting|mb|p|mb|2H|mb|p|mb|3C|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|Let me discuss the 3@C bid and the way some people show a "bust" hand as responder over 2@C. There are a few alternatives. One is to not worry about showing a bust hand. The other is to play that 2@D over 2@C promises at least 1 ace or king and with no aces or kings responder bids 2@H. The problem I have with that approach is that sometimes wrong sides the contract when the 2@C bidder has hearts. so I don't particularly care for that approach although it is reasonably popular.|
+PG| ***** 69 ***** |
+
+
+NT|^B@2
+I play something called "2nd negative" which means if it goes 2@C-2@D-2@H or 2@S-?, a 3@C rebid by responder shows a bust hand (no aces or kings). For example if I were playing with one of my regular partners I could not bid 3@C with East's hand. That is obviously a problem on this hand. But I have found that you usually have a reasonable alternative, such as 2N or raising. As you know responder with a bust can pass a 2N rebid by opener.|
+PG| ***** 70 ***** |
+
+
+NT|^B@2
+Therefore, I would have to bid 2N with East's hand (or 3@D perhaps). To think about it, actually with East's hand I might even bid 3@H with my 2 honors. The 2@C bidder almost always has a 6 card suit or a good 5 card suit. With @HK10 I would guess (and be wrong on this hand) that the 2@C bidder has a 6 card suit. But if you don't play 2nd negative, then 3@C is obviously the best bid. |
+PG| ***** 71 ***** |
+
+
+NT|^B@2
+BTW, 2nd negative is not standard. I am not sure there is a standard. Basically if playing with an unfamiliar pard, I would assume they are playing nothing, but I would avoid bidding 3@C even with a bust hand. For now we let 3@c stand and go through the rest of the bidding.|
+PG| ***** 72 ***** |
+
+
+mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 73 ***** |
+
+
+NT|^B@2
+Now let me critique the entire bidding. West certainly has a 2@C opener. The question is what should she bid over 2@D? Bidding 2@H is a reasonable alternative. But because her heart suit is rather weak (no intermediate cards, 10, 9, 8) and only 2 honors I might choose to bid 2N. Also that right sides the contract if responder has either 4 card major. |
+PG| ***** 74 ***** |
+
+
+NT|^B@2
+They might occasionally miss a 5-3 heart fit. But in general, if you have a bid that resembles a NT bid that narrows down your point range and distribution you should strongly consider making it. In fact, even with a 5 card major, I will sometimes over call 1NT with 15-18 if I have a good stopper and a so-so 5 card suit. NT bids narrowly define your hand and make it much more likely that your side will get to the best spot.|
+PG| ***** 75 ***** |
+
+
+NT|^B@2
+So my bidding after 2@D would be|ub|9|
+pg| ***** 76 ***** |
+
+
+mb|p2np3nppp|at| see above.|
+PG| ***** 77 ***** |
+
+
+AT|
+
+^B@2^*BMM: ^*NNext board is how to handle an interference.|
+PG| ***** 78 ***** |
+
+
+NT||
+
+%%TO INTERFERE 
+pn|hondo717,,,|st||sk|e|md|3S379JH2389QADC579,S245H7TD2359TC4TJ,S8TH56JD678QC23KA,|rh||ah|Board 1|ah|hondo717 mentoring session|sv|o|AT|
+^B@2^*BMM: ^*NThis is another board from one of Howard's mentoring sessions where he is outlining responder's options after opener's 2@C is overcalled.|
+PG| ***** 79 ***** |
+
+
+mb|p|mb|2C|NT||cp|8|AT|
+^B@2^*BHoward Schutzman: ^*N|cp||at|If there is an overcall of 2@C open as it is now,|mb|2H|at| the responder has the following options.|
+PG| ***** 80 ***** |
+
+
+NT||mb|d|an|weak hand, no Aces or Kings.|
+PG| ***** 81 ***** |
+
+
+cp|8|AT|
+^B@2^*BHoward Schutzman: ^*N|cp||at|Double is only informational -- it simply informs the 2@C opener that responder has no aces or kings (for those who play the 2@H bust response to 2@C, it shows the same sort of hand as a 2@H = bust bid).|
+PG| ***** 82 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BHoward Schutzman: ^*N|cp||at|It is in no way a suggestion that responder wants to double the overcalled contract. The 2@C opener may choose to pass, converting the double to penalty, but that is up to opener, given the information that responder has no defense.|
+PG| ***** 83 ***** |
+
+
+uB||NT||cp|8|AT|
+^B@2^*BHoward Schutzman: ^*N|cp||at|The other option is a pass. Pass shows at least 1 ace or king.|MB|P|an|positive bid--at least one Ace or King|
+PG| ***** 84 ***** |
+
+
+AT| The double and pass are counter intuitive if you are not aware of the convention.|
+PG| ***** 85 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BHoward Schutzman: ^*N|cp||at|The other option is bidding suit—spades for example. |uB||
+PG| ***** 86 ***** |
+
+
+NT||mb|2S|AN|Natural|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|Suits are natural, 5+ card suit with 2 of the top 3 honors usually.|
+PG| ***** 87 ***** |
+
+
+AT| Now, let us look at the hand and choose the bid for West.|ub||
+pg| ***** 88 ***** |
+
+
+nt||SK|W|lb|*bPlease make a bid for West based on above information.^^x|mb|D|an|partner I have nothing.|
+PG| ***** 90 ***** |
+
+
+NT||
+%%
+pn|hondo717,,,|st||sk|n|md|2,,S8KA HQK D89TqkA C97,|rh||ah|Board 3|ah|hondo717 mentoring session|ah|Aug 1, 2013|sv|b|AT|
+^B@2^*BMM: ^*NThis board is from another one of Howard's mentoring sessions. He is explaining why it is not a good approach opening 2@C when diamonds is the suit. North has a hand which satisfy the 9 trick rule but Howard recommends 1@D opening.|mb|p1dp|
+pg| ***** 91 ***** |
+
+
+NT||cp|8|AT|^B@2
+^*BHoward Schutzman: ^*N|cp||at|1@D is the correct bid. You should be reluctant to open 2@C when your suit is diamonds. Because the auction is likely to go 2@C-P-2@D-P-3@D|UB|2|
+PG| ***** 92 ***** |
+
+
+MB|2cp2dp3dP|at| and there you are with the contract wrong sided and the first natural bid at the 3-level. Sometimes, however, it cannot be helped, but that is why opening 2@C with a diamond suit is very problematical.|
+PG| ***** 93 ***** |
+
+
+NT||
+%%
+pn|hondo717,,,|st||sk|n|md|2,,S8KA dQK h89TqkA C97,|rh||ah|Board 3a|ah|hondo717 mentoring session|ah|Aug 1, 2013|sv|b|cp|8|AT|^B@2
+^*BHoward Schutzman: ^*N|cp||at|However, lets imagine that North's red suits are swapped such that she has @SAK87 @HAKQ1098 @DKQ @C97. In that case, the hand, as is shown above, meets 22+ unbalanced hand and the Marty Bergen "4 and 4" rule for opening 2@C when your suit is a major.|mb|p2C|
+PG| ***** 94 ***** |
+
+
+NT||bt||
+at|
+We always have learned better when we were at a table with real hands. So let us go through examples covering what we have learned so far. Please note, as always, some experts may not agree with all the bidding.|
+PG| ***** 95 ***** |
+
+
+NT|| 
+%%quiz section
+%%example Q1
+st||pn|You,,Partner,|sk|s|md|1S K q 8 H A K D K J T 6 C K j 8 3,,,|sv|o|rh||ah|2C opener|ah|Q1|lb|*bWhat would you bid with this hand?.^^2n|mb|2n|NT|^B@2
+The best bid is 2N. This is a balanced with 20 HCP. The 2N opening is not forcing and responder can pass with very weak hand and no interest in reaching game.|
+PG| ***** 97 ***** |
+
+
+nt||
+%%example Q 2
+st||pn|You,,Partner,|sk|s|md|1S A Q J HA J854 D K Q J C K J,,,|sv|o|rh||ah|2C opener|ah|Q 2|lb|*bWhat would you bid with this hand?.^^2c|mb|2c|NT|^B@2
+With 22 HCP and a balanced hand 2@C is the correct bid. It is forcing. |
+PG| ***** 99 ***** |
+
+
+mb|p2dp|at| Rebid 2N after expected 2@D bid by partner.|mb|2n|
+PG| ***** 100 ***** |
+
+
+NT||
+%%example Q 3
+st||pn|You,,Partner,|sk|s|md|1S A Q H Aq8 D A K Q T 9 C k J5,,,|sv|o|rh||ah|2C opener|ah|Q 3|lb|*bWhat would you bid with this hand?.^^2c|mb|2c|NT|^B@2
+This hand has 25 HCP, 27 Starting Points and you need to bid 2@C. |
+PG| ***** 102 ***** |
+
+
+mb|p2dp|NT|^B@2
+Then bid 3N after expected 2@D bid by partner.|mb|3n|
+PG| ***** 103 ***** |
+
+
+NT||
+%%example Q 4
+st||pn|You,,Partner,|sk|s|md|1S K Q 97H A 86D A Q J 8C K Q J,,S J T 86H 7 2D K 876C 876,|sv|o|rh||ah|2C opener|ah|Q 4|lb|*bWhat would you bid with this hand?.^^2c|mb|2c|NT|^B@2
+With 22 HCP, you bid 2@C and rebids 2NT after the 2@D waiting response.|
+PG| ***** 105 ***** |
+
+
+sk|n|mb|P2DP2NP|NT||lb|*bPlease make a bid for North.^^3c|NT|^B@2
+Partner has only 4 HCP and 4-card spades. Therefore, game is likely and partner bids Stayman, 3@C.|mb|3cp|
+pg| ***** 107 ***** |
+
+
+sk|s|NT||lb|*bPlease make a bid for South.^^3s|sk||NT|^B@2
+The rest is simple. South bid 3@S to show his 4-card spades and North raises to game.|mb|3sp4sppp|
+PG| ***** 109 ***** |
+
+
+NT|^B@2
+South has only one spade loser, one heart loser, and one club loser while the 3N would be defeated.|
+PG| ***** 110 ***** |
+
+
+NT|^B@2
+Some experts like to play "Puppet Stayman" which allows responder to discover if opener has either a 4-card major or a 5-card major. However, discussing Puppet Stayman is outside the scope of this presentation.
+|
+PG| ***** 111 ***** |
+
+
+NT||
+%%example Q 5
+st||pn|You,,Partner,|md|1S K Jt 74H A K 8D K Q 7C A K J,,S Q 5 H J 76 D A 76 C Q T 765
+,|sv|o|rh||ah|2C opener|ah|Q 5|lb|*bWhat would you bid with this hand?.^^2c|mb|2cp2dp|lb|*bPlease make a bid for South.^^2n|mb|2np4Np|B@2
+With a balanced hand and 24 HCP, you opens 2@C. You rebid 2N after expected 2@D bid partner. With 10 Starting points North knows the partnership is in slam range and invites slam.|
+PG| ***** 114 ***** |
+
+
+NT|^B@2
+The 4N is quantitative and you accept the invitation and raise to 6N.|MB|6nppp|
+PG| ***** 115 ***** |
+
+
+NT|^B@2
+South has two heart tricks, three diamond tricks, and five club tricks. Therefore needs 2 spade trick which should not be very difficult to get.|
+PG| ***** 116 ***** |
+
+
+NT||
+%%example Q 6
+st||pn|You,,Partner,|sk|s|md|1SA K 4HA K 2DK Q JCA 9 5 2,,SJ 87H8 765D876c876,|sv|o|rh||ah|2C opener|ah|Q 6|lb|*bWhat would you bid with this hand?.^^2C|mb|2CP2DP|lb|*bPlease make a bid for South.^^2N|mb|2n|an|22-24 balanced hand|
+pg| ***** 119 ***** |
+
+
+mb|p|sk||lb|*bPlease make a bid for North.^^p|NT|^B@2
+The 2N by South is not forcing with a 22-24 HCP range. With 1 HCP North has no hope for game anywhere. So a pass is prudent. This one of two occasions that responder can pass after 2@C bid without reaching game. We will see the other soon.|
+PG| ***** 121 ***** |
+
+
+NT||
+%%example Q 7
+st||pn|You,,Partner,|sk|s|md|1SA K Q 98HA K Q 98DK QC5,,S7H76 5 3D987C9 7 643,|sv|o|rh||ah|2C opener|ah|Q 7|lb|*bWhat would you bid with this hand?.^^2C|mb|2CP2DP|NT|^B@2
+All considered 2@c is the correct opening bid for south.|
+PG| ***** 123 ***** |
+
+
+NT||lb|*bPlease make a bid for South.^^2s|mb|2sp|NT|^B@2
+After 2@D waiting bid by North, South bid his higher ranking 5-card suit, 2@S. This is forcing. Now the spot light is on North.|
+PG| ***** 125 ***** |
+
+
+NT||sk|n|lb|*bPlease make a bid for North.^^3c|mb|3Cp|NT|^B@2
+North invokes his first negative bid after 2@D waiting and bids 3@C (the cheapest minor-second negative).|
+PG| ***** 127 ***** |
+
+
+NT||sk||lb|*bPlease make a bid for South.^^3H|mb|3HP|NT|^B@2
+South bids his second 5-card suit, 3@H. That is good news for North who places the partnership at 4@H|mb|4hppp|
+PG| ***** 129 ***** |
+
+
+NT||
+%%example Q 8
+st||pn|You,,Partner,|sk|s|md|1A K Q 9876hK 4dA K 9cK Q,,sJ 74hA Q J 87d876c97,|sv|o|rh||ah|2C opener|ah|Q 8|lb|*bWhat would you bid with this hand?.^^2c|mb|2cp|sk|n|NT||lb|*bPlease make a bid for North.^^2H|mb|2hp|NT|^B@2
+North has 8 HCP and a 5-card heart suit. North can bid 2@D waiting first or can bypass it and make a 2@H positive bid.|
+PG| ***** 132 ***** |
+
+
+sk||mb|2sp3sp|NT|^B@2
+The rest is simple. With a fit in spades assured, South bids 4N, asking for key cards |MB|4np5c|an|1 Keycard - 1430 RKCP|
+pg| ***** 133 ***** |
+
+
+mb|p|at| and after establishing 4 key cards plus the trump Queen places the contract at 6@S which is a fine contract.|MB|6sppp|
+PG| ***** 134 ***** |
+
+
+NT|| 
+%%example Q 9
+st||pn|You,,Partner,|sk|S|md|1SA K QHA K T 987DK QC97,,S9876H65D9876CJ 86,|sv|o|rh||ah|2C opener|ah|Q 9|lb|*bWhat would you bid with this hand?.^^2C|mb|2CP2DP|
+PG| ***** 136 ***** |
+
+
+lb|*bPlease make a bid for North.^^2h|mb|2HP|sk||lb|*bPlease make a bid for North.^^3c|mb|3cp|NT|^B@2
+North bids 2@D waiting response followed by 2@H by South. North has only 1 HCP and bids the first negative response of 3@C. South gets the bad news and bids 3@H which North passes.|mb|3hppp|
+PG| ***** 139 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*bHoward Schutzman: ^*N|cp||at|I know many experts claim you can pass 3@H in that auction. But I prefer to play that 2@C is unconditionally game forcing and that 3@H cannot be passed. Yes, on this example, 3@H makes and 4@H goes down, but I have never encountered a hand in real life where that occurred.|
+PG| ***** 140 ***** |
+
+
+NT|^B@2
+This is the second occasion that the partnership does not reach game after a 2@C opener.|
+PG| ***** 141 ***** |
+
+
+NT||bt||
+%%
+ht|a|AT|
+^B@2^*BMM: ^*NThis synopsis would be incomplete without the following blog by Tommy Solberg at |CP|1|AT|^*Htommybridgeblog.blogspot.com/2010/09/revisiting-two-club-opening-bids.html ^*N|CP||
+PG| ***** 142 ***** |
+
+
+cs|6|fp|3|ht|d|AT|^-{
+                    2 club overuse syndrome                    
+      |fp||at|Saturday, September 11
+Tommy Solberg
+}^-|fp||ht|i|cp||CS||AT|
+In June of 2009 I led (more or less) a discussion about when to open 2 clubs. The discussion centered around 2 hands sent to me by a reader. Rather than simply respond, I asked my readers to select the appropriate opening bid. The hands were:
+
+|HT|m|at|^c  {|ih|pSSKQ432 HQ DAQ32 CAKT|at|}|ht|o|at|^mand |ht|m|at|^p  {|ih|pSSAQ876 HAKT2 DAQJ C2|at|}|
+PG| ***** 143 ***** |
+
+
+AT|
+
+I got a lot of varied responses. The only things the responses had in common were that none of them were equivocal and all lacked any discussion of standards that would be useful to my blog readers in the heat of battle. Almost everyone vilified hand one [hand on the left] as a perfect example of abuse and overuse of the 2 club opening bid. Hand 2 [right hand] gained more support and there was almost an even balance between 1 spade and 2 clubs.|
+PG| ***** 144 ***** |
+
+
+AT|
+
+Always practical and useful, enter Marty Bergen who has it all figured out and reveals his answer in depth in Chapter 4 of Slam Bidding Made Easier (2008), my summer beach book. His standard for opening 2 clubs is based on a combination of Quick Tricks and Losers (tricks you would expect to lose if partner shows up with no help at all).|
+PG| ***** 145 ***** |
+
+
+NT|^B@2
+Note that there is a distinct difference between the concept of "losing tricks" in opener's hand and "Losing Trick Count." Losing Trick Count (see my earlier blogs) is a valuable valuation tool when a fit has been established with partner, but of dubious value when there has been no bidding.|
+PG| ***** 146 ***** |
+
+
+AT|
+
+Most of you know the definition of Quick Tricks since it has been around from the early days of Bridge. A=1, AK= 2, Kx= ½, AQ= 1 ½ KQ=1. That's it, and there can only be a maximum of 2 Quick Tricks in each suit.|
+PG| ***** 147 ***** |
+
+
+AT|
+
+Now you are ready for the Bergen Gold Standard:
+
+(a) If the hand is balanced (4333 or 4432) open 2 clubs only if you have 22 high card points. Opener intends to rebid 2NT.
+
+(b) If the hand is semi-balanced (5332) or unbalanced only open if the hand has 4 or fewer losers and the hand also has 4 or more quick tricks. Thus in Marty speak, "4+4." Astute observers and mathematicians may point out that if you have only 4 losers, the hand also has 9 winners. Does that standard sound familiar?|
+PG| ***** 148 ***** |
+
+
+AT|
+
+Marty is not going to open either Hand 1 or 2 with 2 clubs [repeated below]. They both meet the 4 quick trick requirement but also have too many losing tricks. 
+|HT|p|at|^c  {|ih|pSSKQ432 HQ DAQ32 CAKT|at|}|ht|r|at|^mand |ht|p|at|^p  {|ih|pSSAQ876 HAKT2 DAQJ C2|at|}|
+PG| ***** 149 ***** |
+
+
+AT|
+
+
+Let's look at some example hands from Chapter 4 of Marty's book.|
+PG| ***** 150 ***** |
+
+
+NT||
+%%example Q 10
+st||pn|You,,Partner,|md|1SAJ HKQJT762 DAK4 C8,,,|sv|o|rh||ah|2C opener|ah|Q 10|lb|*bWhat would you bid with this hand?.^^2c|mb|2c|NT|^B@2 
+(4 losers and 4 quick tricks). Open 2 clubs.|
+PG| ***** 152 ***** |
+
+
+NT||
+%%example Q 11
+st||pn|You,,Partner,|md|1AKQJ9874 H72 D65 CA,,,|sv|o|rh||ah|2C opener|ah|Q 11|lb|*bWhat would you bid with this hand?.^^1s|mb|1S|NT|^B@2
+Open 1 spade, only 4 losers, but just 3 quick tricks.|
+PG| ***** 154 ***** |
+
+
+NT||
+%%example Q 12
+st||pn|You,,Partner,|md|1sAKQT2 hAKQJ2 d42 c8,,,|sv|o|rh||ah|2C opener|ah|Q 12|lb|*bWhat would you bid with this hand?.^^2c|mb|2c|NT|^B@2
+Open 2 clubs, 3 losers and 4 quick tricks.|
+PG| ***** 156 ***** |
+
+
+NT||
+%%example Q 13
+st||pn|You,,Partner,|md|1sA hAQ643 dK763 cAKJ,,,|sv|o|rh||ah|2C opener|ah|Q 13|lb|*bWhat would you bid with this hand?.^^1h|mb|1h|NT|^B@2
+Open 1 heart. 5 quick tricks, but at least 5 losers. The hand should also be downgraded for the singleton A of spades. Aces that are not supported with other honors in the suit or are in short suits have diminished value. If you don't have firm control of the trump suit, you also run the risk of a "pumping defense" in spades.|
+PG| ***** 158 ***** |
+
+
+NT||
+%%example Q 14
+st||pn|You,,Partner,|md|1sAKT54 hAK5 dAKT3 c8,,,|sv|o|rh||ah|2C opener|ah|Q 14|lb|*bWhat would you bid with this hand?.^^2c|mb|2c|NT|^B@2
+Open 2 clubs. Marty sez any hand with 6+ quick tricks is too strong to open with 1 spade or 1 heart.|
+PG| ***** 160 ***** |
+
+
+NT||bt||
+%%
+AT|^B@2
+What is the downside of the "2 club overuse syndrome?" In three words, "loss of communication." You are starting the auction on the 2 level and by the time you get through with responses and rebids, it is no trick at all to be on the 3 level and not know much more than you did when you first sorted the cards. If your hand is one that deserves to play in game no matter what partner has, then opening 2 clubs is an effective way to tell him that. You don't need a lot of bidding room. If your hand is not that strong, then give yourself the optimum opportunity to gain helpful information from partner by a one level opening.|
+PG| ***** 161 ***** |
+
+
+AT|
+
+What? Worried about getting passed out? Trust me, in this day and age good partners are looking for reasons to bid, not reasons to pass. Even if partner does not have a minimum bid, the chances are very good that the opponents will either overcall or balance. This sucker is not going to die, and on the rare occasion when it does, you are probably in the right spot.|
+PG| ***** 162 ***** |
+
+
+AT|
+
+So what do we have? Marty Bergen who said "Bridge is a Bidder Game" rejects the current fad to reduce standards for forcing 2 club opening bids and goes traditional on us. When you have one of the World's most aggressive bidders saying "Pull in your horns", maybe it is time to listen. So consider making 4+4 your partnership standard.|
+PG| ***** 163 ***** |
+
+
+CS|6|ht|y|at|^-{  The End  }
+^-|cs||
+pg| ***** 164 ***** |
+
+

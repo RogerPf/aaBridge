@@ -1,0 +1,469 @@
+%%%Bergen'sStarting Points.lin
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|155|ff|1Arial|fb|110|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|35|fm|3|                           FOR 3
+fb|49|fm|4|fb|4|fm|4|
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|3255|cg|3255|cb|3255|            White
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|6124|cb|6250|cg|6200|             6=TURQUOISE
+cr|70|cb|7220|cg|7235|              green/blue 7
+cr|8255|cb|80|cg|80|                red 8
+cr|9128|cb|90|cg|950|               Reddish-brown 9
+bt||
+%%A0
+ht|b|fp|2|cs|1|cp|4|at|^-{    Components of Starting Points    }
+^-|cp||FP||CS||
+%%1
+ht|c|AT|^b
+The most popular hand evaluation method is counting the HCP along with its various modifications. I am sure you know that by now. Then there is Losing Trick Count (LTC)  |CP|1|AT|^*Htinyurl.com/9wpedyd^*N|CP||AT|, Quick Tricks |CP|1|AT|^*Htinyurl.com/bksyean^*N|CP||AT| and others which are not the focus of this synopsis. BTW, the links given in this synopsis are for the Viewer Version which you can use on any device which has browsing capability. You can also find the BBO version for download both at BIL library at|CP|1|AT|^*Hwww.bilbridge.com^*N|CP||AT| or Howard's web site at |CP|1|AT|^*Hwww.bridgesights.com/hondobridge/^*N|CP||AT|.
+
+First and most important part of Bergen's method is counting the Starting Points of a given hand-that is to evaluate the hand before any bidding. It has five parts. You calculate each part and the sum is the hand's value before any bidding-Starting Points. They are:|
+pg| ***** 0 ***** |
+
+
+%%2
+ht|c|AT|^b
+The most popular hand evaluation method is counting the HCP along with its various modifications. I am sure you know that by now. Then there is Losing Trick Count (LTC)  |CP|1|AT|^*Htinyurl.com/9wpedyd^*N|CP||AT|, Quick Tricks |CP|1|AT|^*Htinyurl.com/bksyean^*N|CP||AT| and others which are not the focus of this synopsis. BTW, the links given in this synopsis are for the Viewer Version which you can use on any device which has browsing capability. You can also find the BBO version for download both at BIL library at|CP|1|AT|^*Hwww.bilbridge.com^*N|CP||AT| or Howard's web site at |CP|1|AT|^*Hwww.bridgesights.com/hondobridge/^*N|CP||AT|.
+
+First and most important part of Bergen's method is counting the Starting Points of a given hand-that is to evaluate the hand before any bidding. It has five parts. You calculate each part and the sum is the hand's value before any bidding-Starting Points. They are:|
+HT|m|cp|1|AT|^B^*GA1,Raw High Card Points (HCP)^*N|cp|| 
+HT|n|cp|1|AT|^B^*GA2,Length Points^*N|cp|| 
+HT|o|cp|1|AT|^B^*GA3,Quality Suit Points^*N|cp|| 
+HT|p|cp|1|AT|^B^*GA4,Dubious Doubletons/Singletons^*N|cp|| 
+HT|q|cp|1|AT|^B^*GA5,Adjust-3^*N|cp||
+PG| ***** 1 ***** |
+
+
+%%3
+ht|c|AT|^b
+The most popular hand evaluation method is counting the HCP along with its various modifications. I am sure you know that by now. Then there is Losing Trick Count (LTC)  |CP|1|AT|^*Htinyurl.com/9wpedyd^*N|CP||AT|, Quick Tricks |CP|1|AT|^*Htinyurl.com/bksyean^*N|CP||AT| and others which are not the focus of this synopsis. BTW, the links given in this synopsis are for the Viewer Version which you can use on any device which has browsing capability. You can also find the BBO version for download both at BIL library at|CP|1|AT|^*Hwww.bilbridge.com^*N|CP||AT| or Howard's web site at |CP|1|AT|^*Hwww.bridgesights.com/hondobridge/^*N|CP||AT|.
+
+First and most important part of Bergen's method is counting the Starting Points of a given hand-that is to evaluate the hand before any bidding. It has five parts. You calculate each part and the sum is the hand's value before any bidding-Starting Points. They are:|
+HT|m|cp|1|AT|^B^*GA1,Raw High Card Points (HCP)^*N|cp|| 
+HT|n|cp|1|AT|^B^*GA2,Length Points^*N|cp|| 
+HT|o|cp|1|AT|^B^*GA3,Quality Suit Points^*N|cp|| 
+HT|p|cp|1|AT|^B^*GA4,Dubious Doubletons/Singletons^*N|cp|| 
+HT|q|cp|1|AT|^B^*GA5,Adjust-3^*N|cp||
+ht|t|at|^B@2Counting the Declarer and Dummy Points are the second and third legs of Bergen's Hand Evaluation. Please click any of the above blue links to go that topic.|qx|B|
+pg| ***** 2 ***** |
+
+
+NT||pf||bt||
+%%%% A1 
+qx|A1,Raw HCP|ht|b|fp|2|CP|4|CS|1|AT|^-
+{    Raw HCP    }
+^-|CP||FP||CS||AT|^b
+In this part you simply count the High Card Points.
+A = 4, K = 3, Q = 2, and J = 1. To refresh our memory let us count the High Card Points for the following hand.|
+PG| ***** 3 ***** |
+
+
+NT||
+st||SV|o|Rh||AH|Example 1|md|sAKQJT HkQT CA98 D98|NT|^B@2
+The hand shown above has 19 High Card Points. |
+PG| ***** 4 ***** |
+
+
+HC|sAKQJ|AT| Ten High Card Points in spades. @SA = 4, @SK = 3, @SQ = 2, and @SJ = 1. |
+PG| ***** 5 ***** |
+
+
+LC|sAKQJ|NT||at|
+^B@25 High Card Points in hearts. @HK = 3 and @HQ = 2.|HC|HkQ|
+PG| ***** 6 ***** |
+
+
+LC|HkQ|NT||at|
+^B@2And 4 High Card Points in clubs. @CA = 4. There are no HCP in diamonds.|HC|CA|
+PG| ***** 7 ***** |
+
+
+lc|sAKQJHkQCA|
+pg| ***** 8 ***** |
+
+
+NT|^B@2
+Next is Length Points. However, if you wish click |CP|1|AT|^*GB,here ^*N|CP||AT| to return to the frist page if you wish.|
+PG| ***** 9 ***** |
+
+
+NT||bt||
+%%%%%A2
+qx|A2,Length Points|ht|b|fp|2|CP|4|CS|1|AT|^-
+{    Length Points    }
+^-|CP||FP||CS||AT|
+To evaluate a hand HCP are not always accurate. Let us look at the following two hands.|
+PG| ***** 10 ***** |
+
+
+AT| Which hand would you rather hold when your partner bids 2@S-first hand with 18 HCP|HC|SHKQJDKQJCKQJ|at| or second with zero HCP? 
+|HT|g|cs|1|at|^b  {|ih|pSHKQJ86DKQJ2CKQJ5|at|} 
+|HT|m|cs|1|at|^b  {|ih|pST9853H6D3C987543|at|}|
+PG| ***** 11 ***** |
+
+
+HT|g|cp||AT|^K@2^Y@3It is quite possible that you can make 4@S with the 2nd hand, even if partner has as little as AJxxxx of spades and a stiff club. But you might not even  make 2 spades with the first hand. The point is, HCP by themselves do not constitute good hand evaluation.|cp|8|at|Distribution and fit with partner is often even more important.|cp||
+PG| ***** 12 ***** |
+
+
+AT|
+
+^K@2^Y@3How many times you have heard someone say, "I cannot believe they made game against me with my 20 HCP."|
+PG| ***** 13 ***** |
+
+
+AT| HCP per se do not take tricks. Good fits and distribution are what counts. |
+PG| ***** 14 ***** |
+
+
+ht|r|at|^b
+
+Length Points or the second part works as follows:|
+PG| ***** 15 ***** |
+
+
+AT|^*B
+You count 1 point for each card in each suit that has more than 4 cards in it. So a 5 card suit is worth 1 point, six card suit 2 points, etc.|
+PG| ***** 16 ***** |
+
+
+AT| Let us go over a few examples calculating the Staring Points solely based on the two parts we have reviewed so far-HCP and Length Points.^*N|
+PG| ***** 17 ***** |
+
+
+NT||lc|SHKQJDKQJCKQJ|bt||
+%%% Examp
+HT|b|FP||AT|
+^BHow many starting points are in these hands focusing only on HCP and Length.
+|HT|f|cs|1|at|^b  {|ih|pSSAT953HKQ86DK32C5|at|} |
+PG| ***** 18 ***** |
+
+
+HT|e|AT|
+^K@2^Y@313 is correct.|HC|SAHKQDK|AT| 12 HCP and 1 length point in spades.|
+PG| ***** 19 ***** |
+
+
+HT|K|cs|1|at|^b  {|ih|pSSAT953HKQ862DK3C5|at|} |
+PG| ***** 20 ***** |
+
+
+HT|j|AT|
+^K@2^Y@3This is the same as the last hand, except a 5th heart added , so 14 is the correct answer. 12 HCP + 1 each for hearts and spades. You add length points, regardless of the suit quality. Even a 76543 holding is still worth one length point. |
+PG| ***** 21 ***** |
+
+
+HT|p|cs|1|at|^b  {|ih|pSSAT9632HKQ86DK3C5|at|} |HT|p|
+PG| ***** 22 ***** |
+
+
+AT|
+^K@2^Y@3Correct answer is 14 Starting Points. 12 HCP + 2 points for 6 card spade suit.|
+PG| ***** 23 ***** |
+
+
+HT|u|cs|1|at|^b  {|ih|pSAT53HKQ86DK32C95|at|} |HT|v|
+PG| ***** 24 ***** |
+
+
+AT|12 it is. No length points, just 12 raw HCP.|
+PG| ***** 25 ***** |
+
+
+HT|X|AT|
+Next is Dubious Doubletons/Singletons. However, if you wish click |CP|1|AT|^*GB,here ^*N|CP||AT| to return to the frist page if you wish.|
+PG| ***** 26 ***** |
+
+
+LC|SAHKQDK|NT||
+%%%%%%%%%% A3
+qx|A3,Dubious Doubletons/Singletons|
+ht|b|fp|2|CP|4|CS|1|AT|^-
+{    Dubious Doubletons/Singletons    }
+^-|CP||FP||CS||AT|
+A singleton honor, other than the ace, is not worth as much, because it may not take a trick. And a doubleton Q or doubleton J is also not worth as much. Dubious Singleton honors are easy to spot. However, Dubious Doubletons are a bit harder to spot. Bergen lists all of the Dubious Doubletons. Howard, however, thinks it is easier to define a Dubious Doubleton as |
+PG| ***** 27 ***** |
+
+
+FP|2|cs|1|CP|4|AT|
+^-
+{    ANY DOUBLETON THAT CONTAINS THE Q OR J AND DOES NOT CONTAIN    
+THE ACE AS THE OTHER CARD}
+^-|
+PG| ***** 28 ***** |
+
+
+cs||FP||CP||AT|
+For example, Qx and Jx are clearly Dubious Doubletons.  Kx is not a Dubious Doubleton, because the K is not forced to be played under the ace. Other examples of Dubious Doubletons are KQ,  QJ, and KJ.  Basically, Dubious Doubletons are defined as any doubleton with a Q or J and not the ace. According to Bergen's method you deduct one point for each Dubious Doubleton or Singleton. Let us count Starting Points of the next examples with added parameter of Dubious Doubletons/Singletons.|
+PG| ***** 29 ***** |
+
+
+ 
+HT|n|va|6|at|^b  {|ih|psAT53H6542DK32CKQ|at|} |HT|m|
+PG| ***** 30 ***** |
+
+
+AT|
+^K@2^Y@3The hand has 11 Starting Points-12 HCP|HC|SADKCKQ|AT|, no length points, subtract 1 for @CKQ Dubious Doubleton.|
+PG| ***** 31 ***** |
+
+
+lC|SADKCKQ|
+
+HT|q|at|^b  {|ih|pSK9852HKQ86D83CA5|at|}|HT|p|
+PG| ***** 32 ***** |
+
+
+AT|
+^K@2^Y@3The Starting Points count is 13. |hc|SKHKQCA|at|12 HCP + 1 spade length point and no dubious singletons. @CA5 is not a dubious doubleton.|
+PG| ***** 33 ***** |
+
+
+lc|SKHKQCA|
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+HT|s|at|^b  {|ih|pSQJ53HAj5Dj342CJ4|at|}|HT|s|
+PG| ***** 34 ***** |
+
+
+AT|
+^K@2^Y@39 is the Starting Points value of this hand-10 HCP,|HC|sQJHAjcj4dj|AT| -1 for dubious Doubleton clubs.|
+PG| ***** 35 ***** |
+
+
+LC|sQJHAjcj4dj|
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+HT|v|at|^b  {|ih|pST532H8654Da2Ct98|at|}|HT|u|
+PG| ***** 36 ***** |
+
+
+AT|
+^K@2^Y@34 Starting Points are the value of this hand. 4 HCP|HC|DA|at|. No length or Dubious Doubletons. diamond A2 is not dubious. According to the Bergen methodology a doubleton with an ace is never dubious.|
+PG| ***** 37 ***** |
+
+
+HT|y|AT|
+Next is Quality Suit Points. However, if you wish click |CP|1|AT|^*GB,here ^*N|CP||AT| to return to the frist page if you wish.|
+PG| ***** 38 ***** |
+
+
+LC|DA|NT||bt||
+
+%%%%%%%%%% A4
+qx|A4, Quality Suit Points|ht|b|fp|2|CP|4|CS|1|AT|^-
+{    Quality Suit Points    }
+^-|CP||FP||CS||AT|
+A quality suit is defined as a 4-card or longer suit which contains three of the top five honors. Ace, King, Queen, Jack and Ten are the honors. You add one point for each quality suit in the hand-Quality Suite Point. For example KQ10x is considered a "quality suit" and equals one point. However, there would be no points for KQ10-only three cards. Following are several hands holding quality suits. The total number of Quality Suits Points is printed under each hand.|
+PG| ***** 39 ***** |
+
+
+ht|j|at|^bHand 1|HT|k|cs|6|at|^b{|ih|akj3hakt6daqj2c3|at|}|HT|p|at|^B3 Quality Suits|
+PG| ***** 40 ***** |
+
+
+ht|j|CS||at|^fHand 2|HT|k|cs|6|at|^f{|ih|akj3hakt6daqjc34|at|}|HT|p|at|^f2 Quality Suits|
+PG| ***** 41 ***** |
+
+
+ht|j|CS||at|^jHand 3|HT|k|cs|6|at|^j{|ih|akj3hak6daqjct43|at|}|HT|p|at|^j1 Quality Suits|
+PG| ***** 42 ***** |
+
+
+ht|j|CS||at|^nHand 4|HT|k|cs|6|at|^n{|ih|kj3hat6daq2ct983|at|}|HT|p|at|^nNo Quality Suits|
+PG| ***** 43 ***** |
+
+
+ht|j|CS||at|^rHand 5|HT|k|cs|6|at|^r{|ih|ak83hakt6daqj2c3|at|}|HT|p|at|^r2 Quality Suits|
+PG| ***** 44 ***** |
+
+
+ht|j|CS||at|^vHand 6|HT|k|cs|6|at|^v{|ih|ak3hakjt64daqjc3|at|}|HT|p|at|^v1 Quality Suits|
+PG| ***** 45 ***** |
+
+
+ht|q|at|
+ 
+I am sure you noticed that the Quality suit in the hand 6 is a Long suit too. Therefore, with what we have learned so far its Starting Points are 25.|
+PG| ***** 46 ***** |
+
+
+NT||
+HT|d|Cs|1|cp|4|AT|
+^-{ Number of Quality Suits }
+^-|cp||at|
+^B@2^Z@3The following is the list all quality suits for Hearts in order of their HCP. 
+
+^c 3  HCP: ^E@HQJ10x
+^c 4  HCP: ^E@HKJ10x
+^c 5  HCP: ^E@HKQ10x  ^H@HAJ10x
+^c 6  HCP: ^E@HKQJx   ^H@HKQJ10   ^K@HAQ10x
+^c 7  HCP: ^E@HAQJx   ^H@HAQ10  ^K@HAK10x
+^c 8  HCP: ^E@HAKJx   ^H@HAKJ10 
+^c 9  HCP: ^E@HAKQx   ^H@HAKQ10 
+^c10 HCP: ^E@HAKQJ|
+PG| ***** 47 ***** |
+
+
+HT|y|AT|
+Next is Adjust-3. However, if you wish click |CP|1|AT|^*GB,here ^*N|CP||AT| to return to the frist page if you wish.|
+PG| ***** 48 ***** |
+
+
+NT||  
+%%%%%B5
+qx|A5,Adjust-3|ht|b|fp|2|CP|4|CS|1|AT|^-
+{    Adjust-3    }
+^-|CP||FP||CS||AT|
+Adjust-3, the last part, is the most complicated but does not apply to most hands. The old method of assigning values of 4, 3, 2, 1 to Ace, King, Queen, and Jack respectively is not completely accurate. Based on recent mathematical analysis, using a 10 point system, the more accurate values are:^*B
+^-
+A = 4.5,  K = 3,  Q = 1.5,  J = .75,  10 = .25
+^-|
+PG| ***** 49 ***** |
+
+
+AT|
+^*NBut the beauty of 4-3-2-1 is, it is relatively easy and most have trouble remembering the more accurate new set of points count. Marty Bergen came up with a way of approximating these points count, which he calls "Adjust-3" and is much easier to use. The standard points count under values Aces and 10s and over values Queens and Jacks (Quacks). Therefore, if the hand contains lots more Aces and 10s, add something and if it contains lots more Queens and Jacks, subtract something. Therefore, for each hand, count up the number of Aces and 10s and count up the number of Queens and Jacks (Quacks).|
+PG| ***** 50 ***** |
+
+
+FP|2|AT|
+^-
+If the number of Aces and 10s is greater by 3 but less than 6 (for example you have 4 Aces 
+and 10s and only 1 queen), add (adjust) 1 point to the hand's value.
+|
+PG| ***** 51 ***** |
+
+
+AT|
+Similarly, if the number of Queens and Jacks exceed the number of Aces and 10s by 3
+but less than 6 (say you have 5 Queens and Jacks, and 2 Aces), you subtract (adjust) 1 point.|
+PG| ***** 52 ***** |
+
+
+AT|
+
+If the difference is 6+ in either situations add/subtract (adjust) 2.
+And finally, Do nothing if the difference is 2 or less.
+^-
+|
+PG| ***** 53 ***** |
+
+
+FP||CP||NT||
+%%%%%% Adjust 3
+AT|
+Doing Adjust-3 is rather most difficult part of Bergen's method. If you don't want to bother, most of the time it won't make a difference. What you can do instead is look at your hand. If there are lots of Queens and Jacks, or lots of Aces and 10s, then you can try to apply Adjust-3, otherwise don't need to bother. However, it is good to remember if Aces+Tens outnumber Quacks by 3 or more (but less than 6) add one point. If Quacks outnumber Aces+tens by 3 or more (but less than 6), subtract one point. Adjust 2 points if one group or the other outnumbers by 6+. Let us practice a few examples and figure out the Starting Points for each hand using the complete Bergen's method.|
+PG| ***** 54 ***** |
+
+
+HT|g|at|^b  {|ih|pSQJ4HKJ63DKQ64CAQ|at|} |HT|f|
+PG| ***** 55 ***** |
+
+
+AT|
+^K@2^Y@3The hand is worth 17 Starting Points. Subtract 1 from 18 HCP. Five quacks - 1 ace = 4 which means subtract 1. There are no points for length or Quality suits and no Dubious Doubletons/singletons.|
+PG| ***** 56 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+HT|l|at|^b  {|ih|pSK83HA976DA853CA5|at|} |HT|k|
+PG| ***** 57 ***** |
+
+
+AT|
+^K@2^Y@316 Starting Points is the count for this hand. 15 HCP + 1 for 3 aces (no quacks.)|
+PG| ***** 58 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+HT|q|at|^b  {|ih|pSKQ4HAJ85DKJ83CKT|at|} |HT|p|
+PG| ***** 59 ***** |
+
+
+AT|
+^K@2^Y@317 Starting Points are the count. 17 HCP and no Adjust-3 (1 ace, 1 ten, and 3 quacks). And no points for length, quality suits or Dubious Doubletons/Singletons.|
+PG| ***** 60 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+HT|v|at|^b  {|ih|pSAT4HT943DAK96CK2|at|} |HT|u|
+PG| ***** 61 ***** |
+
+
+AT|
+^K@2^Y@3There are 15 Starting points in this hand. 14 HCP plus 1 for Adjust-3 (4 Aces/10s and no quacks). No other additions or subtraction.|
+PG| ***** 62 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+HT|b|at|^b  {|ih|pSAT732HAKT8DJ2C82|at|} |HT|a|
+PG| ***** 63 ***** |
+
+
+AT|
+^K@2^Y@3The hand has 14 Starting Points. 12 HCP,  + 1 spades length point, + 1 heart quality suit, - 1 for @DJx, and + 1 for Adjust-3 (more Aces+Tens than Quacks).|
+PG| ***** 64 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+HT|g|at|^b  {|ih|pS9HAQJ754DAKJ3C75|at|} |HT|g|
+PG| ***** 65 ***** |
+
+
+AT|
+^K@2^Y@3There are 19 Starting Points in this hand. 15 HCP, + 2 for heart length, and + 2 for quality red suits (1 for each).|
+PG| ***** 66 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+HT|l|at|^b  {|ih|pSKJHQJ75DQ87643CQ|at|} |HT|l|
+PG| ***** 67 ***** |
+
+
+AT|
+^K@2^Y@310 Starting Points are the value of the hand. 11 HCP.  Adjustments are 2 length points, no quality suits, -2 for Dubious doubleton/singleton, and -1 for Adjust-3. |
+PG| ***** 68 ***** |
+
+
+ht|r|at|
+^b@2Based on standard Rule 20 (combined length of two longest suits plus HCP) this hand is an opener. However, based on the implications of Bergen's method on Rule 20 this hand is not an opener. In Bergen's method Rule 20 is the combined length of two longest suits plus ^*Uadjusted^*N HCP. The ^*Uadjusted^*N HCP is the sum of regular HCP, quality suits, Adjust-3, and Dubious Singleton/Doubletons. In another word it is Starting Points without length points.|
+PG| ***** 69 ***** |
+
+
+AT|
+
+The last hand has 8 ^*Uadjusted^*N HCP (11 HCP less 2 points for Dubious Singleton/Doubletons, and less one point for Adjust-3). Therefore, 4 (Hearts) + 6 (Diamonds) + 8 ^*Uadjusted^*N HCP = 18 and you cannot open it. This conflict only occurs with hands holding many Quacks and Dubious Singleton/Doubleton.|
+PG| ***** 70 ***** |
+
+
+HT|z|AT|
+
+Next is Summary. However, if you wish click |CP|1|AT|^*GB,here ^*N|CP||AT| to return to the frist page if you wish.|
+PG| ***** 71 ***** |
+
+
+NT||bt||
+%%% a summary
+ht|b|fp|2|cs|1|cp|4|at|^-{    Summary    }
+^-|HT|E|fp||AT|^-{Below are the five steps to calculate the Starting Points.}|at|
+
+{          count the RAW HCP          }
+
+{          add points for LENGTH          }
+
+{          subtract points for DUBIOUS HONORS         }
+
+{          add points for QUALITY SUITS          }
+
+{          QUACK ADJUSTMENTS          } 
+^-
+|HT|y|cp||AT|
+This is the end of this section. However, if you wish click |CP|1|AT|^*GB,here ^*N|CP||AT| to return to the frist page if you wish.|
+PG| ***** 72 ***** |
+
+

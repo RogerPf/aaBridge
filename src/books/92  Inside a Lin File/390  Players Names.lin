@@ -1,0 +1,25 @@
+%% Players Names
+%% Last edited  2013 Dec 30
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+st||
+qx|pn0, Any text here you like - it won't be seen|
+
+at|^b@2^*bPlayer Names^*n^f^*b!pn! , , , !^*n|at|^z@
+|at|
+^iAll four player names are blank, except  'You'  is showing over the "You Seat"
+|
+pg| ***** 0 ***** |
+
+
+pn|Alice,Bob,Ted,Carol|
+at|
+^b!pn!Alice,Bob,Ted,Carol!^ithe names have been added staring from South.
+|
+
+
+ht|z|at|@0
+^*b end ^*n|

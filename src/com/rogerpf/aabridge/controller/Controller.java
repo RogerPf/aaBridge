@@ -42,7 +42,7 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 	DumbAutoDirectives dumbAutoDir = new DumbAutoDirectives();
 
 	/**
-	 * This of this a the constructor except that is does not happen until all
+	 * This ia a logical 'constructor' except that is does not happen until all
 	 * the initial views are constructed and ready to be "controled"
 	 */
 	public Timer postContructionInitTimer = new Timer(100, new ActionListener() {
@@ -54,114 +54,49 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 				CmdHandler.runTests();
 			}
 
-			// Is there a file on the command line - as used by windows file associations
 			boolean chapterLoaded = false;
 			boolean keepTrying = true;
 
+			// Is there a file on the command line - as used by windows file associations
 			if (App.args != null && App.args.length >= 1 && App.args[0] != null && !App.args[0].isEmpty()) {
 				File file = BridgeLoader.copyFileToAutoSavesFolderIfLinFileExists(App.args[0]);
 				if (file != null) {
 					File fAy[] = { file };
-//					chapterLoaded = BridgeLoader.makeBookFromPath(file.getParent(), fAy);
 					chapterLoaded = BridgeLoader.processDroppedList(fAy);
 				}
-
-				keepTrying = !chapterLoaded; // the user will be expecting her file to load so should not do something else ?
+				keepTrying = !chapterLoaded; // the user will be expecting her/his file to load so we should not do something else ?
 			}
 
-			// Is there a test linFile we want to start with
+			// Is there a (dev mode) linFile we want to start with
+			//
 			if (App.devMode && (chapterLoaded == false) && keepTrying) {
 				String dealName = "";
 
 //				App.lbx_modeExam = true; // testing only
-//				dealName = "Distr Flash Cards";
+//				dealName = "Distr Flash Cards"'
 
+//				dealName = "weaktwobids";
+//				dealName = "mentoring1406a2";
+//				dealName = "book into jar";
+//				dealName = "Make Claim";
+//				dealName = "Play Card";
+//				dealName = "Table Conceal";
+//				dealName = "Speech bubble";
 //				dealName = "LinesZonesFonts";
 //				dealName = "mentoring 2013 06c";
 //				dealName = "bergenhandevaluation";
-//				dealName = "dotw195";
-//				dealName = "second_hand_low_";
-//				dealName = "Take Out Doubles 1";
-//				dealName = "Work Bench";
-//				dealName = "Centering Hands";
-//				dealName = "Agumperz";
-//				dealName = "Make Deal";
-//				dealName = "Make Book - How to";
-//				dealName = "Collect Material";
-//				dealName = "Write the lin file";
-//				dealName = "Test as you Write";
-//				dealName = "Book into jar";
-
-//				dealName = "Screen Layout";
-//				dealName = "VuGraph Column";
-//				dealName = "Suggestions";
-
-//				dealName = "Bergen Hand";
-
-//				dealName = "SingleDeal";
-//				dealName = "SD Whole Trick";
-//				dealName = "Passed_out";
-//				dealName = "SD Bidding";
-//				dealName = "Single_Full";
-//				dealName = "K Hearts move";
-//				dealName = "mentoring1301a";
-//				dealName = "vg Difficult 6";
-
-//				dealName = "What is a lin file";
-//				dealName = "Where to find them";
-//				dealName = "Lin file Structure";
-//				dealName = "Font Definitions";
-//				dealName = "Color Definitions";
-// 				dealName = "Bare Text";
-//				dealName = "Mn - Headers";
-//				dealName = "Margins H Position";
-//				dealName = "Vertical Position";
-//				dealName = "Bold Underline Italic";
-//				dealName = "Internal Link";
-//				dealName = "External Link - Url";
-//				dealName = "Symbols";
-//				dealName = "Centering n Boxes";
-//				dealName = "Standard Table";
-//				dealName = "Make Deal";
-//				dealName = "Add Header";
-//				dealName = "Seat Kibitz";
-//				dealName = "Set Vulnerability";
-//				dealName = "Hide Auction";
-//				dealName = "Make Bid";
-//				dealName = "Play Card";
-//				dealName = "Speech Bubble";
-//				dealName = "Question Type b";
-//				dealName = "Question Type c";
-//				dealName = "Question Type h";
-//				dealName = "Question Type L";
-//				dealName = "Question Type m";
-//				dealName = "Question Type p";
-//				dealName = "Question Type t";
-//				dealName = "Question Type y";
-//				dealName = "Insert Hand";
-//				dealName = "Insert Auction";
-//				dealName = "Combined ia ih lb";
-//				dealName = "Ronalds Original";
-
-//				dealName = "Examples ";
-//				dealName = "1957 Bermuda Bowl";
-//				dealName = "Mentoring 2013 06c";
-//				dealName = "Watson - End Plays";
-//				dealName = "K Hearts Moves";
 
 				if (dealName.length() > 0) {
-					int a[] = { 01, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99 };
-					for (int x : a) {
-						Book b = App.bookshelfArray.get(1).getBookByFrontNumb(x);
-						if (b != null) {
-							LinChapter chapter = b.getChapterByDisplayNamePart(dealName);
+					for (Bookshelf shelf : App.bookshelfArray) {
+						for (Book book : shelf) {
+							LinChapter chapter = book.getChapterByDisplayNamePart(dealName);
 							if (chapter != null) {
 								chapterLoaded = chapter.loadWithShow("replaceBookPanel");
 								break;
 							}
 						}
 					}
-					keepTrying = false;
+					keepTrying = false;// the DEV user (you) will be expecting her/his file to load so we should not do something else ?
 				}
 			}
 
@@ -259,7 +194,7 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 
 	public void ShowHelpAndWelcome() {
 
-		Book b = App.bookshelfArray.get(1).getBookByFrontNumb(90 /* The Main Welcome & Help */);
+		Book b = App.bookshelfArray.get(0).getBookByFrontNumb(90 /* The Main Welcome & Help */);
 		if (b != null) {
 			boolean chapterLoaded = b.loadChapterByIndex(0);
 			if (chapterLoaded) {
