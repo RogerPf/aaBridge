@@ -252,6 +252,7 @@ public class DualDealListButtonsPanel extends ClickPanel implements ItemListener
 					App.setMode(Aaa.NORMAL_ACTIVE);
 					App.setVisualMode(App.Vm_DealAndTutorial);
 					App.mg.setTheReadPoints(App.mg.findPgIdBeforeThisBarBlock(ed.qx_bb), false /* fwd__not_currently_used */);
+					App.ddsAnalyserVisible = false;
 					App.gbp.matchPanelsToDealState();
 					return;
 				}
@@ -267,6 +268,7 @@ public class DualDealListButtonsPanel extends ClickPanel implements ItemListener
 						App.dealMajorChange();
 						CmdHandler.tutorialIntoDealStd();
 						App.setVisualMode(App.Vm_InsideADeal);
+						App.ddsAnalyserVisible = false;
 						App.gbp.matchPanelsToDealState();
 						App.frame.repaint();
 					}

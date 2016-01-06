@@ -12,9 +12,9 @@ package com.rogerpf.aabridge.view;
 
 import java.awt.AWTEvent;
 import java.awt.BasicStroke;
+import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Dimension;
-import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Point;
@@ -22,12 +22,8 @@ import java.awt.event.AWTEventListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
-import java.awt.font.FontRenderContext;
-import java.awt.font.TextAttribute;
-import java.awt.font.TextLayout;
 import java.awt.geom.RoundRectangle2D;
 import java.awt.image.BufferedImage;
-import java.text.AttributedString;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -37,9 +33,7 @@ import javax.swing.Timer;
 import com.rogerpf.aabridge.controller.Aaa;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Cc;
-import com.rogerpf.aabridge.model.Suit;
 import com.rpsd.bridgefonts.BridgeFonts;
-import com.version.VersionAndBuilt;
 
 /** ***************************
  * See https://weblogs.java.net/blog/2006/09/20/well-behaved-glasspane
@@ -63,7 +57,7 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 
 	/**
 	*/
-	public void showExpiredScreen() {
+	public void showMouseWheelScreen() {
 		splashScreenCompleteTimer.start();
 		setVisible(true);
 		// App.frame.repaint();
@@ -71,14 +65,10 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 
 	/**
 	*/
-	public Timer splashScreenCompleteTimer = new Timer(4500, new ActionListener() {
+	public Timer splashScreenCompleteTimer = new Timer(2500, new ActionListener() {
 		public void actionPerformed(ActionEvent evt) {
 			splashScreenCompleteTimer.stop();
 			setVisible(false);
-			// App.frame.repaint();
-			if (VersionAndBuilt.hasExpired()) {
-				System.exit(0);
-			}
 		}
 	});
 
@@ -138,63 +128,57 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 		if (dragImage != null && mouseWas != null) {
 			g2.drawImage(dragImage, null, mouseWas.x - offset.width, mouseWas.y - offset.height);
 		}
-		else if (splashScreenCompleteTimer.isRunning() || VersionAndBuilt.hasExpired()) {
+		else if (splashScreenCompleteTimer.isRunning()) {
 
 			float panelWidth = (float) getWidth();
 			float panelHeight = (float) getHeight();
 
-			float marginLeft = panelWidth * 0.26f;
-			float marginRight = panelWidth * 0.26f;
-			float marginTop = panelHeight * 0.26f;
-			float marginBottom = panelHeight * 0.26f;
+			float marginLeft = panelWidth * 0.36f;
+			float marginRight = panelWidth * 0.30f;
+			float marginTop = panelHeight * 0.36f;
+			float marginBottom = panelHeight * 0.45f;
 
 			float activityWidth = panelWidth - (marginLeft + marginRight);
 			float activityHeight = panelHeight - (marginTop + marginBottom);
 
-			float curve = panelHeight * 0.25f;
+			float curve = panelHeight * 0.001f;
 
 			RoundRectangle2D.Float rr = new RoundRectangle2D.Float();
 
 			// fill the lozenge ----------------------------------------------
-			g2.setColor(Aaa.biddingBkColor);
+			g2.setColor(Cc.RedWeak);
 			rr.setRoundRect(marginLeft, marginTop, activityWidth, activityHeight, curve, curve);
 			g2.fill(rr);
 
 			g2.setStroke(new BasicStroke(activityWidth * 0.03f));
-			g2.setColor(Aaa.weedyBlack);
+			g2.setColor(Color.darkGray);
 			g2.draw(rr);
 
 			// Add in the text
-			float fontSize = activityHeight * 0.25f;
+			float fontSize = activityWidth * 0.14f;
 
-			String t1 = "Welcome to";
-			String t2 = " aaBridge ";
-			if (VersionAndBuilt.hasExpired()) {
-				t1 = "This Software";
-				t2 = "Time Expired";
-			}
+			String t1 = "aaBridge is best with a";
+			String t2 = "Wheel Mouse";
 
+			g2.setColor(Aaa.genOffWhite);
 			g2.setFont(BridgeFonts.bridgeBoldFont.deriveFont(fontSize * 0.5f));
-			Aaa.drawCenteredString(g2, t1, marginLeft, marginTop + activityHeight * 0.10f, activityWidth, activityHeight * 0.20f);
+			Aaa.drawCenteredString(g2, t1, marginLeft, marginTop + activityHeight * 0.10f, activityWidth, activityHeight * 0.35f);
 
 			g2.setFont(BridgeFonts.bridgeBoldFont.deriveFont(fontSize * 0.75f));
-			float x = Aaa.drawCenteredString(g2, t2, marginLeft, marginTop + activityHeight * 0.30f, activityWidth, activityHeight * 0.35f);
+			Aaa.drawCenteredString(g2, t2, marginLeft, marginTop + activityHeight * 0.30f, activityWidth, activityHeight * 0.70f);
 
-			String t3 = "C D H S ";
-			AttributedString at = new AttributedString(t3);
-			Font bf = BridgeFonts.faceAndSymbFont.deriveFont(fontSize);
-			at.addAttribute(TextAttribute.FONT, bf, 0, t3.length());
+//			String t3 = "C D H S ";
+//			AttributedString at = new AttributedString(t3);
+//			Font bf = BridgeFonts.faceAndSymbFont.deriveFont(fontSize);
+//			at.addAttribute(TextAttribute.FONT, bf, 0, t3.length());
+//
+//			for (Suit suit : Suit.cdhs) {
+//				at.addAttribute(TextAttribute.FOREGROUND, suit.color(Cc.Ce.Strong), suit.v * 2, suit.v * 2 + 1);
+//			}
+//			FontRenderContext frc = g2.getFontRenderContext();
+//			TextLayout tl = new TextLayout(at.getIterator(), frc);
+//			tl.draw(g2, x /* marginLeft + activityWidth * 0.12f */, marginTop + activityHeight * 0.90f);
 
-			for (Suit suit : Suit.cdhs) {
-				at.addAttribute(TextAttribute.FOREGROUND, suit.color(Cc.Ce.Strong), suit.v * 2, suit.v * 2 + 1);
-			}
-			FontRenderContext frc = g2.getFontRenderContext();
-			TextLayout tl = new TextLayout(at.getIterator(), frc);
-			tl.draw(g2, x /* marginLeft + activityWidth * 0.12f */, marginTop + activityHeight * 0.90f);
-
-			if (VersionAndBuilt.hasExpired()) {
-				App.frame.aaDragGlassPane.showExpiredScreen();
-			}
 		}
 	}
 }

@@ -10,6 +10,7 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.igf;
 
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -17,6 +18,7 @@ import java.awt.GradientPaint;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
+import java.awt.event.InputEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.geom.Rectangle2D;
@@ -77,6 +79,18 @@ public class TutNavigationBar extends JPanel implements MouseListener {
 		return x;
 	}
 
+//	/**
+//	 */
+//	boolean isInsideWheelButton(MouseEvent e) {
+//		// =============================================================
+//		float bWidth = width * Aaa.butWheelWidthFraction;
+//		float bHeight = height * Aaa.butWheelHeightFraction;
+//		float xBut = width - bWidth;
+//		float yBut = height * (1.0f - Aaa.butWheelHeightFraction);
+//
+//		return (new Rectangle2D.Float(xBut, yBut, bWidth, bHeight)).contains(new Point.Float(e.getX(), e.getY()));
+//	}
+
 	/**   
 	 */
 	public void mouseReleased(MouseEvent e) {
@@ -84,9 +98,24 @@ public class TutNavigationBar extends JPanel implements MouseListener {
 		if (App.hideCommandBar)
 			return;
 
+//		if (isInsideWheelButton(e)) {
+//			App.useMouseWheel = !App.useMouseWheel;
+//			App.frame.repaint();
+//			return;
+//		}
+
 		float relLoc = convertXcoordToRelLoc((float) e.getX());
 		int gi_index = mg.jpPointAy.relLocToGiIndex(relLoc);
 		mg.tutNavBarClicked(gi_index);
+		boolean ctrlKey_depressed = ((e.getModifiers() & InputEvent.CTRL_MASK) == InputEvent.CTRL_MASK);
+		if (ctrlKey_depressed) {
+			if (App.mg.mruChap != null) {
+				int current_pg_numb = App.mg.get_current_pg_number_display();
+				App.mg.mruChap.toggleChapterMark(current_pg_numb);
+				App.frame.repaint();
+				App.aaHomeBtnPanel.mruDelayedSaveTimer_Short_Start();
+			}
+		}
 		App.frame.repaint();
 		if (e.getButton() == MouseEvent.BUTTON3) {
 			// so the "other button" will take us into the deal
@@ -94,24 +123,24 @@ public class TutNavigationBar extends JPanel implements MouseListener {
 		}
 	}
 
-	public void mouseEntered(MouseEvent arg0) {
+	public void mouseEntered(MouseEvent e) {
 		if (entered == false) {
 			entered = true;
 			repaint();
 		}
 	}
 
-	public void mouseExited(MouseEvent arg0) {
+	public void mouseExited(MouseEvent e) {
 		if (entered == true) {
 			entered = false;
 			repaint();
 		}
 	}
 
-	public void mousePressed(MouseEvent arg0) {
+	public void mousePressed(MouseEvent e) {
 	}
 
-	public void mouseClicked(MouseEvent arg0) {
+	public void mouseClicked(MouseEvent e) {
 	}
 
 	/**   
@@ -200,6 +229,56 @@ public class TutNavigationBar extends JPanel implements MouseListener {
 				g2.setColor((playedLineEnd > x) ? Cc.g(Cc.navUnplayedEntered) : playedColor);
 				g2.setFont(font);
 				Aaa.drawCenteredString(g2, jp.name, x, yb - h, mark, h * 0.65f);
+			}
+		}
+
+		if (mg.mruChap != null) {
+			float mh = hl * 1.8f;
+			float mw = hl * 0.8f;
+			float curve = hl * 0.4f;
+
+			float xAdjustPos = mw * 0.8f;
+
+			float xAdjustTest = mw * 0.1f;
+
+			float y2 = yb - (mh + hl * 0.65f);
+
+			Color rimColor;
+			Color fillColor;
+
+			for (int marked_pg : mg.mruChap.marks) {
+				int giInd = mg.get_gi_numb_from_pg_number_display(marked_pg);
+				float markLoc = mg.jpPointAy.giIndexToRelLoc(giInd);
+				// System.out.println("mark: " + marked_pg + "  gi: " + giInd + "  markLoc: " + markLoc);
+
+				float x2 = line_end_gap + lengthMainLine * markLoc - xAdjustPos;
+
+				float lowPoint = x2 - xAdjustTest;
+				float highPoint = x2 + xAdjustTest;
+
+				float plEnd_adj = playedLineEnd - xAdjustPos;
+
+				if (plEnd_adj < lowPoint) {
+					fillColor = Cc.BlackWeak;
+					rimColor = playedColor;
+				}
+				else if (highPoint < plEnd_adj) {
+					fillColor = Cc.BlackWeedy;
+					rimColor = Cc.BlackStrong;
+				}
+				else {
+					fillColor = Aaa.hoverColor;
+					fillColor = Aaa.buttonBkgColorStd;
+					rimColor = Cc.BlackStrong;
+				}
+
+				RoundRectangle2D mShape = new RoundRectangle2D.Float(x2, y2, mw, mh, curve, curve);
+				g2.setColor(fillColor);
+				g2.fill(mShape);
+
+				g2.setStroke(new BasicStroke(hl * 0.2f));
+				g2.setColor(rimColor);
+				g2.draw(mShape);
 			}
 		}
 

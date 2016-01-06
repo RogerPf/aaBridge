@@ -24,7 +24,6 @@ public class Bid {
 	public transient String alertText;
 	public transient char suitCh;
 	public transient RoundRectangle2D.Float rr2dBid = null;
-	public transient RoundRectangle2D.Float rr2dAlertText = null;
 	public transient boolean hover;
 
 	public Bid(Level level, Suit suit) {

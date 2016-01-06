@@ -45,6 +45,7 @@ public class GreenBaizePanel extends ClickPanel {
 
 	public BidTablePanel            c2_0__btp  = new BidTablePanel();
 	public BidTablePanelBlank       c2_0__btpBlank = new BidTablePanelBlank();
+	public DdsAnalyserPanel         c2_0__ddsAnal = new DdsAnalyserPanel();
 	public JPanel                   c2_2__empt = new TransparentPanel();
 	public CompletedTricksPanel     c2_2__ctp  = new CompletedTricksPanel();
 	public BidButtsPanel            c2_2__bbp  = new BidButtsPanel(true /* greenBackground */);
@@ -149,6 +150,7 @@ public class GreenBaizePanel extends ClickPanel {
 		c2.setLayout(new MigLayout(App.simple + ", flowy", "", App.frame.layOut_rowsA__gbp));
 		c2.add(c2_0__btp, App.hm3oneHun);
 		c2.add(c2_0__btpBlank, App.hm3oneHun);
+		c2.add(c2_0__ddsAnal, App.hm3oneHun);
 		c2.add(hdps[Dir.East.v], App.hm3oneHun);
 		c2.add(c2_2__empt, App.hm3oneHun);
 		c2.add(c2_2__bbp, App.hm3oneHun);
@@ -176,10 +178,13 @@ public class GreenBaizePanel extends ClickPanel {
 
 		boolean tutorial = App.isVmode_Tutorial();
 
-		boolean tutForceAuctionShow = tutorial && App.tutorialShowAuction;
+		// boolean tutForceAuctionShow = tutorial && App.tutorialShowAuction;
 		// boolean tutForceAuctionHide = tutorial && !App.tutorialShowAuction;
 
-		boolean alwaysShowBidding = (!tutorial || tutForceAuctionShow); // (App.deal.isBiddingInteresting());
+		boolean alwaysShowAnal = (!tutorial && App.ddsAnalyserVisible && App.ddsScoreShow);
+		// boolean alwaysShowBidding = (tutorial && App.tutorialShowAuction || !tutorial && !alwaysShowAnal);
+		boolean alwaysShowBidding = (App.tutorialShowAuction && !alwaysShowAnal);
+		boolean alwaysShowBlank = !alwaysShowAnal && !alwaysShowBidding;
 
 		if (App.isMode(Aaa.EDIT_HANDS)) {
 
@@ -190,8 +195,9 @@ public class GreenBaizePanel extends ClickPanel {
 					+ "First, for all hands, move ALL\nthe spades, ONLY THEN\nstart on the hearts ...");
 			c1_1__mdp.setVisible(true);
 
-			c2_0__btpBlank.setVisible(!alwaysShowBidding);
+			c2_0__btpBlank.setVisible(alwaysShowBlank);
 			c2_0__btp.setVisible(alwaysShowBidding);
+			c2_0__ddsAnal.setVisible(alwaysShowAnal);
 
 			c2_2__empt.setVisible(true);
 			c2_2__bbp.setVisible(false);
@@ -201,15 +207,16 @@ public class GreenBaizePanel extends ClickPanel {
 		else if (App.deal.isBidding() || App.isMode(Aaa.EDIT_BIDDING) || App.isMode(Aaa.REVIEW_BIDDING)) {
 
 			boolean showBB = !App.isMode(Aaa.REVIEW_BIDDING) && App.isVmode_InsideADeal() && (App.deal.isBidding() || App.isMode(Aaa.EDIT_BIDDING));
-			boolean showCentralBidding = tutForceAuctionShow || (!App.deal.isIncomplete()); // 1 to 51 cards delt so far
+			boolean showCentralBidding = (tutorial && App.tutorialShowAuction) || (!App.deal.isIncomplete()); // 1 to 51 cards delt so far
 
 			c1_1__empt.setVisible(false);
 			c1_1__bfdp.setVisible(showCentralBidding);
 			c1_1__tfdp.setVisible(!showCentralBidding);
 			c1_1__mdp.setVisible(false);
 
-			c2_0__btpBlank.setVisible(!alwaysShowBidding);
+			c2_0__btpBlank.setVisible(alwaysShowBlank);
 			c2_0__btp.setVisible(alwaysShowBidding);
+			c2_0__ddsAnal.setVisible(alwaysShowAnal);
 
 			c2_2__empt.setVisible(!showBB);
 			c2_2__bbp.setVisible(showBB);
@@ -223,8 +230,9 @@ public class GreenBaizePanel extends ClickPanel {
 			c1_1__tfdp.setVisible(true);
 			c1_1__mdp.setVisible(false);
 
-			c2_0__btpBlank.setVisible(!alwaysShowBidding);
+			c2_0__btpBlank.setVisible(alwaysShowBlank);
 			c2_0__btp.setVisible(alwaysShowBidding);
+			c2_0__ddsAnal.setVisible(alwaysShowAnal);
 
 			c2_2__empt.setVisible(false);
 			c2_2__bbp.setVisible(false);
@@ -238,16 +246,15 @@ public class GreenBaizePanel extends ClickPanel {
 			c1_1__tfdp.setVisible(true);
 			c1_1__mdp.setVisible(false);
 
-			c2_0__btpBlank.setVisible(false);
-			c2_0__btp.setVisible(true);
+			c2_0__btpBlank.setVisible(!alwaysShowBidding && !alwaysShowAnal);
+			c2_0__btp.setVisible(alwaysShowBidding);
+			c2_0__ddsAnal.setVisible(alwaysShowAnal);
 
 			c2_2__empt.setVisible(false);
 			c2_2__bbp.setVisible(false);
 			c2_2__ctp.setVisible(true);
 
 		}
-
-		c2_0__btpBlank.showBiddingBtn.setVisible(App.isVmode_Tutorial() == false);
 
 		c0_2__blp.matchPanelsToDealState();
 

@@ -44,11 +44,11 @@ public class ConsumePanel extends SeglinePanel {
 		attributes.put(TextAttribute.SIZE, (float) fb.linFontSize * fontScaleFrac);
 		Font font = fb.font.deriveFont(attributes);
 		g2.setFont(font);
-		lineSeparation = lineSeparationFrac * (float) g2.getFontMetrics().getHeight();
-		if (heightOfNextLine < lineSeparation)
-			heightOfNextLine = lineSeparation;
+		heightOfCurFont = heightOfCurFontFrac * (float) g2.getFontMetrics().getHeight();
+		if (maxHeightOnCurLine < heightOfCurFont)
+			maxHeightOnCurLine = heightOfCurFont;
 
-//		System.out.println(">>>>>>>++++++++++++++  " + gi.capEnv.font_slot_fp + "  " + lineSeparation + "   " + lineSeparationFrac + "  "
+//		System.out.println(">>>>>>>++++++++++++++  " + gi.capEnv.font_slot_fp + "  " + heightOfCurFont + "   " + heightOfCurFontFrac + "  "
 //				+ g2.getFontMetrics().getHeight());
 
 		String oneChar = " ";
@@ -68,10 +68,27 @@ public class ConsumePanel extends SeglinePanel {
 
 		setCurSegEol();
 
-		xCol = leftMargin;
-		yRow = yRow + heightOfNextLine;
-		heightOfNextLine = lineSeparation;
+		newLine__sets_yRow_xCol();
 
+		maxHeightOnCurLine = heightOfCurFont;
+	}
+
+	/**
+	 */
+	public void newLine__sets_yRow_xCol() {
+		// =============================================================================
+		float spacing = heightOfCurFont * lineSpacing_multiplier;
+
+		if (nonFont_on_this_line && (maxHeightOnCurLine > spacing)) {
+			yRow += maxHeightOnCurLine;
+		}
+		else {
+			yRow += spacing;
+		}
+
+		nonFont_on_this_line = false;
+		xCol = leftMargin;
+		// heightOfCurFont should be cleared if appropriate by the caller
 	}
 
 	/**
@@ -155,7 +172,7 @@ public class ConsumePanel extends SeglinePanel {
 
 		Seg seg = startNewSeg();
 		seg.wipeToEndOfScreen = true;
-		seg.fillColor = gi.capEnv.color_bg;
+		seg.fillColor = Aaa.tutorialBackground;
 
 		FontBlock fb = mg.fbAy[gi.capEnv.font_slot_fp];
 
@@ -187,7 +204,7 @@ public class ConsumePanel extends SeglinePanel {
 
 		int wh[] = { 0, 0 };
 
-		float yRowAdjust = heightOfNextLine * 0.70f;
+		float yRowAdjust = maxHeightOnCurLine * 0.70f;
 
 		if (yRow < yRowAdjust)
 			yRowAdjust = 0;
@@ -197,12 +214,11 @@ public class ConsumePanel extends SeglinePanel {
 		gi.hdg.setPositionReturnSize((int) xCol, (int) yRow, App.tup.getWidth(), wh);
 
 		xCol += wh[0];
-		heightOfNextLine = wh[1] + lineSeparation;
+		maxHeightOnCurLine = wh[1]; // + heightOfCurFont;
+		nonFont_on_this_line = true;
 
 		if (xCol > rightMargin) {
-			xCol = leftMargin;
-			yRow += heightOfNextLine;
-			heightOfNextLine = lineSeparation;
+			newLine__sets_yRow_xCol();
 		}
 
 		yRow += yRowAdjust;
@@ -229,15 +245,15 @@ public class ConsumePanel extends SeglinePanel {
 
 		int wh[] = { 0, 0 };
 
-		gi.btp.setPositionReturnSize((int) xCol, (int) (yRow - lineSeparation), App.tup.getWidth(), wh);
+		gi.btp.setPositionReturnSize((int) xCol, (int) (yRow - heightOfCurFont), App.tup.getWidth(), wh);
 
 		xCol += wh[0];
-		heightOfNextLine = wh[1];
+		maxHeightOnCurLine = wh[1];
+		nonFont_on_this_line = true;
 
 		if (xCol > rightMargin) {
-			xCol = leftMargin;
-			yRow += heightOfNextLine;
-			heightOfNextLine = lineSeparation;
+			newLine__sets_yRow_xCol();
+			// maxHeightOnCurLine = heightOfCurFont;
 		}
 
 		if (gi.capEnv.centered) {
@@ -271,9 +287,9 @@ public class ConsumePanel extends SeglinePanel {
 		attributes.put(TextAttribute.SIZE, (float) fb.linFontSize * fontScaleFrac);
 		Font font_fp = fb.font.deriveFont(attributes);
 		g2.setFont(font_fp);
-		lineSeparation = lineSeparationFrac * (float) g2.getFontMetrics().getHeight();
-		if (heightOfNextLine < lineSeparation)
-			heightOfNextLine = lineSeparation;
+		heightOfCurFont = heightOfCurFontFrac * (float) g2.getFontMetrics().getHeight();
+		if (maxHeightOnCurLine < heightOfCurFont)
+			maxHeightOnCurLine = heightOfCurFont;
 
 		// now we make our real symbol font
 		float fontSize = fb.linFontSize * fontScaleFrac * SYMBOL_SCALE_FRAC;
@@ -286,9 +302,8 @@ public class ConsumePanel extends SeglinePanel {
 		float available = rightMargin - xCol;
 		float wanted = (float) g2.getFontMetrics().stringWidth(oneChar);
 		if (wanted > available) {
-			xCol = leftMargin;
-			yRow += heightOfNextLine;
-			heightOfNextLine = lineSeparation;
+			newLine__sets_yRow_xCol();
+			maxHeightOnCurLine = heightOfCurFont;
 			setCurSegEol();
 		}
 
@@ -297,7 +312,8 @@ public class ConsumePanel extends SeglinePanel {
 
 		Ras ras = new Ras(oneChar);
 		ras.addAttribute(TextAttribute.FONT, font);
-		Color useColor = (use_gray_text && !isBoxed() ? Aaa.tut_old_suit_gray : Suit.cdhs[gi.numb].color(Ce.Strong));
+//		Color useColor = (use_gray_text ? Suit.cdhs[gi.numb].color(Ce.Weak) : Suit.cdhs[gi.numb].color(Ce.Strong));
+		Color useColor = Suit.cdhs[gi.numb].color(Ce.Strong);
 		ras.addAttribute(TextAttribute.FOREGROUND, useColor);
 
 		ras.calcLayout(frc, x, y);
@@ -332,13 +348,14 @@ public class ConsumePanel extends SeglinePanel {
 		attributes.put(TextAttribute.SIZE, (float) fb.linFontSize * fontScaleFrac);
 		Font font = fb.font.deriveFont(attributes);
 		// g2.setFont(font);
-		// lineSeparation = lineSeparationFrac * (float) g2.getFontMetrics().getHeight();
+		// heightOfCurFont = heightOfCurFontFrac * (float) g2.getFontMetrics().getHeight();
 
 		String oneChar = "" + char16b;
 
 		Ras ras = new Ras(oneChar);
 		ras.addAttribute(TextAttribute.FONT, font);
-		Color useColor = (use_gray_text && !isBoxed() ? Aaa.tut_old_text_gray : gi.capEnv.color_cp);
+//		Color useColor = (use_gray_text && !isBoxed() ? Aaa.tut_old_text_gray : gi.capEnv.color_cp);
+		Color useColor = gi.capEnv.color_cp;
 		ras.addAttribute(TextAttribute.FOREGROUND, useColor);
 		if (gi.capEnv.underline) {
 			ras.addAttribute(TextAttribute.UNDERLINE, TextAttribute.UNDERLINE_ON);
@@ -348,8 +365,7 @@ public class ConsumePanel extends SeglinePanel {
 		float wanted = (float) g2.getFontMetrics().stringWidth(oneChar);
 		if (wanted > available) {
 			// emDash ignores the EOL but sets it for others to obay
-			// xCol = leftMargin;
-			// yRow += lineSepartion;
+			// newLine__sets_yRow_xCol();
 			setCurSegEol();
 		}
 
@@ -373,6 +389,8 @@ public class ConsumePanel extends SeglinePanel {
 		yRow = 0.0f + topAdjust;
 		xCol = leftMargin;
 
+		lineSpacing_multiplier = 1; // as we calc this at display time not via capenv.
+
 		consume_at(gi); // uses the standard 'text'
 	}
 
@@ -393,7 +411,7 @@ public class ConsumePanel extends SeglinePanel {
 	public void consume_mn_TEXT(GraInfo gi) {
 		// =============================================================================
 
-		// Nasty wide area flag that tells us we are in reduce window mode
+		// Nasty wide area flag that tells us we are in reduced window mode
 		if (skip__mn_text || gi.capEnv.mn_show_tu == false)
 			return;
 
@@ -402,7 +420,7 @@ public class ConsumePanel extends SeglinePanel {
 		if (mn_text_len == 0)
 			return;
 
-		FontBlock fb = mg.fbAy[10]; // yes 10, one after the std fonts
+		FontBlock fb = mg.fbAy[MassGi.mn_header_font_slot]; //
 		@SuppressWarnings("unchecked")
 		Map<TextAttribute, Object> attributes = (Map<TextAttribute, Object>) fb.font.getAttributes();
 		attributes.put(TextAttribute.SIZE, ((float) fb.linFontSize) * fontScaleFrac);
@@ -540,11 +558,12 @@ public class ConsumePanel extends SeglinePanel {
 		}
 		Font font = fb.font.deriveFont(attributes);
 		g2.setFont(font);
-		lineSeparation = lineSeparationFrac * (float) g2.getFontMetrics().getHeight();
-		if (heightOfNextLine < lineSeparation)
-			heightOfNextLine = lineSeparation;
+		heightOfCurFont = heightOfCurFontFrac * (float) g2.getFontMetrics().getHeight();
 
-		// System.out.println(">>>>>>>>>>" + lineSeparation + "   " + lineSeparationFrac + "  " + g2.getFontMetrics().getHeight());
+		if (maxHeightOnCurLine < heightOfCurFont)
+			maxHeightOnCurLine = heightOfCurFont;
+
+		// System.out.println(">>>>>>>>>>" + heightOfCurFont + "   " + heightOfCurFontFrac + "  " + g2.getFontMetrics().getHeight());
 
 		String remainder = gi.text;
 		String thisBite = "";
@@ -553,9 +572,9 @@ public class ConsumePanel extends SeglinePanel {
 
 			int okChars = calcBiteSize(remainder);
 			if (okChars == 0) {
-				xCol = leftMargin;
-				yRow += heightOfNextLine;
-				heightOfNextLine = lineSeparation;
+				newLine__sets_yRow_xCol();
+				maxHeightOnCurLine = heightOfCurFont;
+				// heightOfCurFont unchanged
 				continue;
 			}
 
@@ -569,10 +588,11 @@ public class ConsumePanel extends SeglinePanel {
 			ras.addAttribute(TextAttribute.FONT, font);
 
 			Color useColor = gi.capEnv.color_cp;
-			if (use_gray_text && !isBoxed()) {
-				useColor = Aaa.tut_old_text_gray;
-			}
-			else {
+//			if (use_gray_text && !isBoxed()) {
+//				useColor = Aaa.tut_old_text_gray;
+//			}
+//			else 
+			{
 				Hyperlink hyperlink = getCurSeg().hyperlink;
 				if (hyperlink != null) {
 					useColor = hyperlink.getLinkColor(gi.capEnv.color_cp);
@@ -591,8 +611,9 @@ public class ConsumePanel extends SeglinePanel {
 
 			if (remainder.length() > 0) {
 				xCol = leftMargin;
-				yRow += heightOfNextLine;
-				heightOfNextLine = lineSeparation;
+				newLine__sets_yRow_xCol();
+				maxHeightOnCurLine = heightOfCurFont;
+				// heightOfCurFont unchanged
 				continue;
 			}
 

@@ -1,0 +1,85 @@
+%% Color Definitions
+%% Last edited  2015 Oct 29
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+bt||
+
+at|@1@2
+^b@2^*bColor Definitions^*n|at|     Page 1         The following ^*b built-in ^*n colors were added in ^*b aaBridge ^*nbuild |cp|blue|at|^*b 2814^*n|cp||at|
+
+Built in colors have unique letter pairs and require NO COLOR DEFFINITON ^r|cp|red|at|(next page for ^*b 1 character colors^*n)|cp||at|
+                                                                         ^r|cp|blue|at|  inc. the new 26 possible col defs |cp||at|
+Eg. usage    !cp!|cp|green|at|^*bgr^*n|cp||at|!
+^iLetter Pair  ^q    Fill
+^i@-@-@-@-   ^q   @-@-@-
+           ^c|cp|Sp|at|Std Color   Spades      ^g    ^h  |cp||at|@s   ^i     Sp   ^k|cp|spades   |at| @s ^*b ^L  Bold Spades     ^p  Color ^*n|cp||cs|Sp|at|{       }    These 4 colors follow the suit
+           ^c|cp|He|at|Std Color   Hearts      ^g    ^h  |cp||at|@h   ^i     He   ^k|cp|hearts   |at| @h ^*b ^L  Bold Hearts     ^p  Color ^*n|cp||cs|He|at|{       }    color choice selected in the right-
+           ^c|cp|Di|at|Std Color   Diamonds    ^g    ^h  |cp||at|@d   ^i     Di   ^k|cp|diamonds |at| @d ^*b ^L  Bold Diamonds   ^p  Color ^*n|cp||cs|Di|at|{       }    hand column, see ^*b Suit Colors^*n.
+           ^c|cp|Cl|at|Std Color   Clubs       ^g    ^h  |cp||at|@c   ^i     Cl   ^k|cp|clubs    |at| @c ^*b ^L  Bold Clubs      ^p  Color ^*n|cp||cs|Cl|at|{       }      Reload page to see the change. 
+                                                                                                                                   
+|fh|s26||fp|s|at|^b  (the next two are shown with a  Light Gray  Lg  background)|fp||at|                                                         
+|cs|Lg|at|{^c|cp|Wh|at|Std Color   White       ^g    ^h  @. |cp||at|  ^i     Wh   ^k|cp|white    |at| @. ^*b ^L  Bold White      ^p  Color ^*n}|cp||cs|wh|at|{       } 'White' fill uses  Bg  color
+|cs|Lg|at|{^c|cp|Bg|at|Std Color   Background  ^g    ^h  @. |cp||at|  ^i     Bg   ^k|cp|bground  |at| @. ^*b ^L  Bold Background ^p  Color ^*n}|cp||cs|bg|at|{       } 
+           ^c|cp|Lg|at|Std Color   Light Gray  ^g    ^h  @. |cp||at|  ^i     Lg   ^k|cp|lGray    |at| @. ^*b ^L  Bold Light Gray ^p  Color ^*n|cp||cs|lg|at|{       }
+           ^c|cp|Mg|at|Std Color   Med Gray    ^g    ^h  @. |cp||at|  ^i     Mg   ^k|cp|mGray    |at| @. ^*b ^L  Bold Med Gray   ^p  Color ^*n|cp||cs|mg|at|{       }
+           ^c|cp|Dg|at|Std Color   Dark Gray   ^g    ^h  @. |cp||at|  ^i     Dg   ^k|cp|dGgray   |at| @. ^*b ^L  Bold Dark Gray  ^p  Color ^*n|cp||cs|dg|at|{       }
+                                                                                                                                   
+           ^c|cp|Re|at|Std Color   Red         ^g    ^h  @. |cp||at|  ^i     Re   ^k|cp|red      |at| @. ^*b ^L  Bold Red        ^p  Color ^*n|cp||cs|re|at|{       }
+           ^c|cp|Bl|at|Std Color   Blue        ^g    ^h  @. |cp||at|  ^i     Bl   ^k|cp|blue     |at| @. ^*b ^L  Bold Blue       ^p  Color ^*n|cp||cs|bl|at|{       }
+           ^c|cp|Gr|at|Std Color   Green       ^g    ^h  @. |cp||at|  ^i     Gr   ^k|cp|green    |at| @. ^*b ^L  Bold Green      ^p  Color ^*n|cp||cs|gr|at|{       }
+           ^c|cp|Mu|at|Std Color   Mustard     ^g    ^h  @. |cp||at|  ^i     Mu   ^k|cp|mustard  |at| @. ^*b ^L  Bold Mustard    ^p  Color ^*n|cp||cs|mu|at|{       }
+                                                                                                                                   
+           ^c|cp|  |at|Std Color   default     ^g    ^h  @. |cp||at|  ^i    none  ^k|cp|default  |at| @. ^*b ^L  Bold default    ^p  Color ^*n|cp||cs||at  |{       } 'default' fill uses  Bg  color
+           ^c|cp|u |at|Std Color   undefined   ^g    ^h  @. |cp||at|  ^i     ???  ^k|cp|undefined|at| @. ^*b ^L  Bold undefined  ^p  Color ^*n|cp||cs|u |at|{       } 'undefined' fill uses  Bg  color
+
+		   
+When using ^*b ANY ^*n color you can have ^*b ANY ^*n text as the 3rd and later characters      eg. usage        !cp!|cp|Green|at|^*bgr^*n|cp||at|een! 
+	
+The two character letter pairs (all listed above) are case insensitive.	      eg. usage        !cp!|cp|Green|at|^*bGr^*n|cp||at|een! 
+|
+
+
+
+
+
+
+
+pg||
+nt|^b@2^z@3|
+at|^z@3
+^b@2^*bColor Definitions^*n     Page 2  
+
+Color definitions, are commonly put at the start of the lin file with the fonts. They consist of a set of commands normally all written on one line. For example @- 
+
+^d  cr!|cp|7|at|^*b7^*n|cp||at|255!   cb!|cp|7|at|^*b7^*n|cp||at|0!   cg!|cp|7|at|^*b7^*n|cp||at|0!                  (it is safe to add a comment here, like @-)    7 red
+
+The above is a definition for   Color |cp|7|at|^*b7^*n|cp||at|  there can be up to a maxium of 9 colors numbered from  1 to 9.
+
+                                                                    ^d since ^*b aaBridge ^*n build |cp|blue|at|^*b2814^*n|cp||cs|mu|at|  there are { an ADDITIONAL  26 configurable colors }  ^*b a - z ^*n   eg.   !cg!|cp|7|at|^*bk^*n|cp||at|255!
+																	
+^c !cr!|cp|7|at|^*b7^*n|cp||at|255!    ^gRed component      @-  255
+
+^c !cg!|cp|7|at|^*b7^*n|cp||at|0!    ^gGreen component   @-  0
+
+^c !cb!|cp|7|at|^*b7^*n|cp||at|0!    ^gBlue component      @-  0
+
+While, unlike fonts, you can change the values of colors in the middle of the file. However, I recommend you keep these numbered colors at the same color value through out your lin file.  You will find life simpler that way.
+
+
+^b@2^*bUsing the Color^*n^z@3|
+at|
+
+You switch to using the color  |cp|7|at|^*b7^*n|cp||at|  with the command     !cp!|cp|7|at|^*b7^*n|cp||at|!     while     !cp!!    will restore the default of black.
+
+All the red |cp|7|at|^*b7^*n|cp||at|'s on this page are being displayed using this color definition.
+
+There is also the  !cs!|cp|7|at|^*b7^*n|cp||at|!   command that sets the fill color of any boxes you create, |cs|7|at| covered { later }.   !cs!!  restores this fill color to the default background.
+
+	^*b In-Color Comment ^*n   -   You can add a  HYPHEN  and then a comment when USING a color   eg.     !cp!|cp|7|at|^*b7^*n|cp||at|-red!
+
+|
+ht|z|at|@0
+^*b end ^*n|

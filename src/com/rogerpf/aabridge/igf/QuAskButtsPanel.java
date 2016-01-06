@@ -101,6 +101,10 @@ public class QuAskButtsPanel extends ConsumePanel implements ActionListener {
 
 		String a[] = gi.bb.getSafe(3).split("\\~");
 
+		for (int i = 0; i < a.length; i++) {
+			a[i] = Aaa.deAtQuestionText(a[i]);
+		}
+
 		if (c == 'm') {
 			// we need to make some effort to shrink the answers if they are too long
 

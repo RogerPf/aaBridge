@@ -20,10 +20,10 @@ public class Rlay_2nd {
 		Card card = null;
 
 		int brk = 0;
-		if (g.trickNumb == 1)
-//			if (g.deal.testId == 5056)
-			if (g.compass.v == 1)
-				brk++; // put your breakpoint here :)
+		if (g.trickNumb == 4)
+			if (g.deal.testId == 1001)
+				if (g.compass.v == 3)
+					brk++;
 
 		if (brk > 0)
 			brk++; // put your breakpoint here :)
@@ -54,6 +54,17 @@ public class Rlay_2nd {
 //			if (card == null) {
 //				card = Play_Mpat.cardByPatternMatch(g, g.suitLed, Zzz.Second_Pos);
 //			}
+
+			if (card == null) { // self promotion cover
+				Card myBeats = g.fragLed.getLowestThatBeats(g.z, g.bestCard.rank);
+				Card myHighLoser = g.fragLed.getHighestThatLosesTo(g.bestCard.rank);
+				if (brk > 0)
+					brk++;
+				if ((myBeats != null && myHighLoser != null) && (myBeats.rankRel.v == myHighLoser.rankRel.v + 2)) {
+					card = myBeats;
+				}
+
+			}
 
 			if (card == null && g.LHO_hasLedSuit) {
 
@@ -155,6 +166,9 @@ public class Rlay_2nd {
 			if (card2 != null)
 				card = card2;
 		}
+
+		if (brk > 0)
+			brk++; // put your breakpoint here :)
 
 		card = Rlay_5_Discard.ChangeIntoSignalIfAppropriate(g, card);
 

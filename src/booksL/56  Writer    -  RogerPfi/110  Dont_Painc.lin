@@ -1,0 +1,338 @@
+
+
+fh|440|ff|4Arial|fb|40|fm|4|      Font 4
+
+cr|5000|cg|5000|cb|5255|   full blue
+cr|6230|cg|6220|cb|6220|   light grey
+cr|7130|cg|7120|cb|7120|   darker grey
+cr|8255|cg|8000|cb|8000|   red for emphasis
+
+
+bt||
+nt|^b@2^z@3|
+
+mn|Don't  Panic    -    a Bridge Movie|
+ht|f|at|^sRoger Pfister    -    Oct  2015|
+
+ht|L|at|This bridge movie requires  ^*b aaBridge ^*n  to play correctly.       Available from     >     |cp|5|at|^*hrogerpf.com/aaBridge^*n|cp||
+ht|x|cp|7|at|You can easily switch between   ^*b aaBridge ^*n  and the  ^*b BBO Player ^*n  as the default  Bridge Movie (lin file) player.|
+ht|y|at|After  aaBridge  is installed.  |cp||at|        Menubar   >  Help & How do I ? |cp|7|at|         >    click on the last of the      How  do  I's|cp||
+ip||%% non compliant lin file layers may freeze at this point
+ht|g|at|@4|%%comment - goto 'g' and from there down clear the screen - only compliant players will get here
+
+
+
+gf|| %% turn off the  gray fade  an aaBridge only feature
+
+ht|h|at|The other day I played the following hand and was genuinely surprised to find, from the  ^*bTraveller|cp|8|at| **  |cp||at|^*n that a| 
+
+ht|i|at|number of  GOOD  intermediate players had also played that hand, and had gone down.
+
+The only reason I can think of,  for the cause,  is that they must have  -  panicked.
+
+That is enough of a clue  (for now).  :)
+
+Before we see the hand, we need to cover   -   How to use aaBridge to play against Computer Opponents.  
+
+
+|ht|q|at|At time of writing the latest ^*b aaBridge ^*n is version  ^*b3.1.0.2806^*n  look in the very top left  hand corner to see yours. 
+|ht|r|at|You can get the actual latest version at     ^*h rogerpf.com/aaBridge ^*n
+|ht|t|
+cp|6|at|@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-|cp||at|
+^*b|cp|8|at|**|cp||at| How to View the  Traveler^*n     (in case you don't know)
+
+On  ^*h www.bridgebase.com/myhands ^*n  login to BBO  and give the ID of whoever's play it is that you want to view.
+ 
+Click the   ^*n{ Get Hands }^*n   button,  roughly in the middle of that web page.   The next page,  the one with all the hands listed has the  ^*btravellers^*n  in the final column.  Click the one you want to view.
+
+That page also has  ^*b.lin^*n  file links.   Those lin files will play in  aaBridge.   Click one to download the lin file.   The Google Chrome Browser  is very good for this.| 
+pg| ***** 0 ***** |
+
+
+nt|^b@2^z@3|at|^^^^|
+fp|4|at|How to use  ^*b aaBridge ^*n  to   Play  a hand against Computer Opponents|fp||
+at|^^^^^^
+When the deal is showing,  in the bottom right hand corner is the    { ^*bEnter  the Deal^*n }    button.  You need to click it.
+
+then on the left, on the green baize, are three blue buttons:
+ 
+ 
+^c@2
+{    ^*bEdit^*n    }
+
+{    ^*bPlay^*n   }
+
+ ^*bReview^*n               (the  'Review'  button  will start  'clicked'  and so shows differently.)
+^b@2
+ 
+ 
+ 
+|cp|8|at|^*bYou need to click^*n|cp||at|    {    ^*bPlay^*n   }   and  then click on the |cp|8|at|^*b card ^*n|cp||at| you want to play from  dummy / your hand (South).
+^^^^^^
+^*baaBridge ^*n  is Bridge learning tool for  grown-ups,  so if you want to look at the cards straight way that is fine. 
+
+If you don't want to use  {   ^*bPlay^*n   }  to play against the computer then  ^*binstead^*n  you can click on
+
+
+the  {    ^*bEdit^*n   }  button.   You will then  ^*bget to see all four hand^*n   and will need to pick EVERY card.|
+pg| ***** 1 ***** |
+
+
+%%----------------------------------------------------------------------------
+qx|Bid,wide|
+st||
+pn|RogerPfi,West,North,East|ah|Don't  Panic|ah|Hand 1|sv|n|sk|s|
+%% 1SA2HK43DAT742CKQ6,SHT952DKQJ96C8542,SKT9654HA6D3CAJ97,SQJ873HQJ87D85CT3
+md|1SA2HK43DAT742CKQ6,,SKT9654HA6D3CAJ97,|
+nt|^b@2^z@3|at|^^|
+cp|8|at|^*bRogerPfi^*n|cp||at|   The bidding was fairly standard and went like this on most tables.|
+mb|?|
+pg| ***** 2 ***** |
+
+
+mb|1N|an|15-17 hcp|
+pg| ***** 3 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 4 ***** |
+
+
+mb|2H|an|transfer to !S|
+pg| ***** 5 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 6 ***** |
+
+
+mb|2S|an|as ordered|
+pg| ***** 7 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 8 ***** |
+
+
+mb|4s|
+pg| ***** 9 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 10 ***** |
+
+
+sj|c|sk||
+mb|p|
+pg| ***** 11 ***** |
+
+
+sj|c|
+pn|RogerPfi,West,Dummy,East|
+mb|p|
+
+md|0,dK,,|sk|s|
+pc|dK|
+at|^^^^West's lead on my table,  and in most cases,  was the perfectly good  @DK.|
+pg| ***** 12 ***** |
+
+
+qx|Scan,wide|
+at|^^^^A quick scan shows 8 top tricks plus and additional 4 in trump length.  What can go wrong, nothing really !
+
+So let's start as one should by drawing trumps.|
+pg| ***** 13 ***** |
+
+
+nt|^b@2^z@3|at|^^|
+cp|8|at|^*bRogerPfi^*n|cp||at|     ^*bHint^*n   - Click the   { Flow > }  button  (just once) before  going back to using the  ^*bmouse wheel^*n. 
+^^^^First run the lead round to the @DA.|
+pg| ***** 14 ***** |
+
+
+md|0,,,D5|
+pc|D3|pc|D5|pc|dA|
+pg| ***** 15 ***** |
+
+
+at|^^^^Cash the Ace of Trumps.|
+pg| ***** 16 ***** |
+
+
+md|0,C2,,S3|
+pc|SA|pc|C2|pc|S4|pc|S3|
+pg| ***** 17 ***** |
+
+
+nt|^b@2^z@3|at|^^|
+cp|8|at|^*bRogerPfi^*n|cp||at|    This,  I assume,  is where the declarers came off the rails.
+^^They panicked, with confused thoughts of  5-0  'bad splits'  and  @sQJ  to  five!  sitting after the their  poor  @s10 9  in dummy.
+^^But 5-0 splits are normal and natural,  they happen 4% of the time,  that is 1 time in 25  (when you have an 8 card fit).|
+pg| ***** 18 ***** |
+
+
+nt|^b@2^z@3|at|^^|
+cp|8|at|^*bRogerPfi^*n|cp||at|    This is where (for now) I am going to leave you to you play the rest. 
+^^It's not hard,  I am sure you can make the 10 tricks (as long as you don't panic).   :)
+^^^^One more   Mouse Wheel forward   please.|
+pg| ***** 19 ***** |
+
+
+qx|Try,wide|
+md|0,SHT952DQJ96C854,,SQJ873HQJ87D8CT3|
+nt|^b@2^z@3|at|^^|
+cp|8|at|^*bRogerPfi^*n|cp||at|      ^*bImportant^*n   ^*bImportant^*n   ^*bImportant^*n       now   you  need to        ^s Click    { ^*bEnter  the Deal^*n }   below
+^^^^then on the left - click  { ^*bPlay^*n }      then click on the ^*b card ^*n you want to play from your hand (South).
+^^^^(  You can use the  { Back to Movie }  button to return  and then   Flow >   or   mouse wheel   as normal  )|
+pg| ***** 20 ***** |
+
+
+qx|Ans,wide|
+md|1SA2HK43DAT742CKQ6,dKc2,SKT9654HA6D3CAJ97,D5s3|
+mb|1N|an|15-17 hcp|
+mb|p|mb|2H|an|transfer to !S|
+mb|p|mb|2S|an|as ordered|
+mb|p|mb|4s|
+mb|p|mb|p|mb|p|
+tc|c|
+pc|DK|pc|D3|pc|D5|pc|dA|
+pc|SA|pc|C2|pc|S4|
+tc|r|
+pc|S3|
+nt|^b@2^z@3|at|^^|
+cp|8|at|^*bRogerPfi^*n|cp||at|      We are back at the moment of discovery.|
+pg| ***** 21 ***** |
+
+
+at|   What is the clear headed way to think about this ?|
+pg| ***** 22 ***** |
+
+
+at|^^^^East started with five @s's and West with none.    What actual @s's  did East start with / does East have have left ?|
+pg| ***** 23 ***** |
+
+
+at|^^^^All the other @s's are vivible on the table.  So East started with  @sQJ873  and the 3 has been played, leaving ?|
+pg| ***** 24 ***** |
+
+
+nt|^b@2^z@3|at|^^|
+cp|8|at|^*bRogerPfi^*n|cp||at|      Leaving East with the  @sQJ87.|
+pg| ***** 25 ***** |
+
+
+at|    Let's show them.     They are nothing to be scared of.|  
+md|0,,,sQJ87|sk||
+pg| ***** 26 ***** |
+
+
+at|^^^^We have 2 tricks in the bag and on table the 2 top @h's  4 four top @c's.     So what is the worst that could happen ?|
+pg| ***** 27 ***** |
+
+
+at|^^^^East could ruff with all  4  for of her remaining trumps.   How can we stop this ?|
+pg| ***** 28 ***** |
+
+
+at|    Easy just draw one.   What then ?|
+pg| ***** 29 ***** |
+
+
+at|^^^^We can let East ruff with her 3 remaining trumps,  while we play off our 6 top winners.|
+pg| ***** 30 ***** |
+
+
+nt|^b@2^z@3|at|^^|
+cp|8|at|^*bRogerPfi^*n|cp||at|   Could this be dangerous ?|pg||at|   We have  5  trumps, she has  4  ^*band^*n  she will always have to trump first.
+^^So trump control is no problem.   But we must make sure East does not score her  4th  trump.|
+pg| ***** 31 ***** |
+
+
+at|^^^^In a sense we are just sticking to the standard plan  -  Draw trumps while we can.|
+pg| ***** 32 ***** |
+
+
+at|^^^^As we are going to stick to our plan 'come what may',  we might as well look at all the cards.|
+pg| ***** 33 ***** |
+
+
+md|0,SHT952DQJ96C854,,HQJ87D8CT3|sk||
+nt|^b@2^z@3|at|^^|
+cp|8|at|^*bRogerPfi^*n|cp|
+pg||
+
+at|  Let's start by crossing to the @sK.|  
+pg| ***** 34 ***** |
+
+
+pc|S2|pc|C4|pc|SK|pc|S7|
+pg| ***** 35 ***** |
+
+
+pc|HA|pc|H7|pc|H3|pc|H2|
+pg| ***** 36 ***** |
+
+
+pc|H6|pc|H8|pc|HK|pc|H5|
+pg| ***** 37 ***** |
+
+
+pc|CK|pc|C5|pc|C7|pc|C3|
+pg| ***** 38 ***** |
+
+
+pc|CQ|pc|C8|pc|C9|pc|CT|
+pg| ***** 39 ***** |
+
+
+pc|C6|pc|D6|pc|CJ|pc|S8|
+at|^^^^East can try and draw two of our trumps if she wants but it is really all over.|
+pg| ***** 40 ***** |
+
+
+pc|HQ|pc|H4|pc|H9|pc|S5|
+pg| ***** 41 ***** |
+
+
+pc|CA|pc|SJ|pc|D2|pc|D9|
+pg| ***** 42 ***** |
+
+
+pc|SQ|
+at|^^^^With three trumps against one it is clear that we must get  two  of the last  three  tricks.|
+pg| ***** 43 ***** |
+
+
+nt|^b@2|at|^^|
+cp|8|at|^*bRogerPfi^*n|cp||at|  If at this point you are thinking.   Yes of course,  ^*bhow could  anybody go down^*n.|
+pg| ***** 44 ***** |
+
+
+at|^^^^GOOD that is how you should be thinking.  This hand is NOT about Bridge technique, it is about mental self control.|
+pg| ***** 45 ***** |
+
+
+at|^^^^Next time you get a shock at the Bridge table.|
+pg| ***** 46 ***** |
+
+
+at|              ^*b Stop |
+pg| ***** 47 ***** |
+
+
+at|         Don't Panic |
+pg| ***** 48 ***** |
+
+
+at|        THINK ^*n    :)|
+pg| ***** 49 ***** |
+
+
+qx||
+ht|y|at|
+^w^*bThe End^*n|
+

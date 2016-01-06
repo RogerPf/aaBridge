@@ -30,11 +30,11 @@ public class AaRightOptionsPanel extends JTabbedPane implements ChangeListener {
 
 	private static final long serialVersionUID = 1L;
 
-	public AaRopPrefs0_DealChoices p0_DealChoices;
-	public AaRopPrefs1_SeatChoice p1_SeatChoice;
-	public AaRopPrefs2_AutoPlay p2_AutoPlay;
-	public AaRopPrefs3_SuitColors p3_SuitColors;
-	public AaRopPrefs4_DFC p4_DFC;
+	public AaRopPrefs0_NewDealChoices p0_NewDealChoices;
+	public AaRopPrefs1_AutoPlay p1_AutoPlay;
+	public AaRopPrefs2_SeatChoice p2_SeatChoice;
+	public AaRopPrefs3_DFC p3_DFC;
+	public AaRopPrefs4_SuitColors p4_SuitColors;
 	public AaRopPrefs5_DSizeFont p5_DSizeFont;
 	public AaRopPrefs6_RedHints p6_RedHints;
 	public AaRopPrefs7_ShowBtns p7_ShowBtns;
@@ -42,20 +42,20 @@ public class AaRightOptionsPanel extends JTabbedPane implements ChangeListener {
 	AaRightOptionsPanel() { /* Constructor */
 
 		addChangeListener(this);
-		p0_DealChoices = new AaRopPrefs0_DealChoices();
-		p1_SeatChoice = new AaRopPrefs1_SeatChoice();
-		p2_AutoPlay = new AaRopPrefs2_AutoPlay();
-		p3_SuitColors = new AaRopPrefs3_SuitColors();
-		p4_DFC = new AaRopPrefs4_DFC();
+		p0_NewDealChoices = new AaRopPrefs0_NewDealChoices();
+		p1_AutoPlay = new AaRopPrefs1_AutoPlay();
+		p2_SeatChoice = new AaRopPrefs2_SeatChoice();
+		p3_DFC = new AaRopPrefs3_DFC();
+		p4_SuitColors = new AaRopPrefs4_SuitColors();
 		p5_DSizeFont = new AaRopPrefs5_DSizeFont();
 		p6_RedHints = new AaRopPrefs6_RedHints();
 		p7_ShowBtns = new AaRopPrefs7_ShowBtns();
 
-		addTab("Deals", null, p0_DealChoices, "What shape of hand do you want to be delt ?   ");
-		addTab("Seat", null, p1_SeatChoice, "Seat Choice  and  Play or Defend  (Play recommended)   ");
-		addTab("AutoPlay", null, p2_AutoPlay, "Pause at end of trick  and  AutoPlay  options   ");
-		addTab("Suit Colors", null, p3_SuitColors, "Suit Symbol Colors");
-		addTab("DFC", null, p4_DFC, "DFC        Disrtribution Flash Card  options   ");
+		addTab("New Deals", null, p0_NewDealChoices, "What shape of hand do you want to be delt ?   ");
+		addTab("AutoPlay", null, p1_AutoPlay, "Pause at end of trick  and  AutoPlay  options   ");
+		addTab("Seat Choice", null, p2_SeatChoice, "Seat Choice    for   Bridge Movies   and   'Entered Deals'  ");
+		addTab("DFC", null, p3_DFC, "DFC        Disrtribution Flash Card  options   ");
+		addTab("Suit Colors", null, p4_SuitColors, "Suit Symbol Colors   ");
 		addTab("Size & Font", null, p5_DSizeFont, "Deal Size and  Movie Font override   ");
 		addTab("Red Hints", null, p6_RedHints, "Red Hints   ");
 		addTab("Show", null, p7_ShowBtns, "Show,  Button Display  and  Reset all options   ");

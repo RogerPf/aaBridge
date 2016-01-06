@@ -213,6 +213,7 @@ public class TricksFourDisplayPanel extends JPanel {
 	/**   
 	 */
 	public void dealMajorChange() {
+		clearAllCardSuggestions();
 	}
 
 	/**   
@@ -293,7 +294,7 @@ public class TricksFourDisplayPanel extends JPanel {
 			g2.setFont(BridgeFonts.bridgeBoldFont.deriveFont(activityHeight * 0.16f));
 
 			if (showInstructions) {
-				text = "Click  - New Board -  center left";
+				text = "Click  - New Board -  look left";
 				Aaa.drawCenteredString(g2, text, marginLeft, marginTop + activityHeight * 0.5f, activityWidth, activityHeight * 0.6f);
 			}
 
@@ -345,7 +346,7 @@ public class TricksFourDisplayPanel extends JPanel {
 				return;
 			if (App.reviewCard % 4 == 0) {
 				// 1362 the "+1" was removed
-				// 1407 the "+1" below was restored - RPf the issue is that the
+				// 1407 the "+1" below was restored - the issue is that the
 				// winning card is being MISS displayed - assume that the value of
 				// trickRequested is being 'defined' elsewhere !!!
 				// OR
@@ -391,28 +392,44 @@ public class TricksFourDisplayPanel extends JPanel {
 
 		Hand leader = App.deal.prevTrickWinner.get(trickRequested);
 
+		boolean review_outline = false;
+
 		int revInd = -1;
 		for (Dir compass : Dir.rota[leader.compass.v]) {
 			revInd++;
-			if (App.isMode(Aaa.REVIEW_PLAY) && (revInd >= App.reviewCard) || App.deal.dfcDeal) {
+			if (App.isMode(Aaa.REVIEW_PLAY) && (revInd >= App.reviewCard + 1) || App.deal.dfcDeal) {
 				return;
 			}
+			if (App.isMode(Aaa.REVIEW_PLAY) && (revInd == App.reviewCard)) {
+				review_outline = true;
+				if (App.gbp.c1_1__tfdp.reviewTrickDisplayTimer.isRunning())
+					return;
+			}
+
 			Hand hand = App.deal.hands[compass.v];
 			assert (compass.v == hand.compass.v);
 
 			Dir phyPos = App.phyScreenPosFromCompass(hand.compass);
 
 			Card card = null;
-			if (trickRequested < hand.played.size()) {
+			if ((trickRequested < hand.played.size())) {
 				card = hand.played.get(trickRequested);
 			}
 
-			// @foramtter:off
-			if ((card == null)
-					&& (App.isAutoPlay(hand.compass) || (App.deal.getNextHandToPlay() != hand) || ((App.deal.getNextHandToPlay() == hand) && (showThinBox == false)))) {
+			if (review_outline) {
+				card = null;
+			}
+
+			// @formatter:off
+			if ( (card == null) && !review_outline &&
+					(    App.isAutoPlay(hand.compass) 
+					|| ( App.deal.getNextHandToPlay() != hand) 
+					|| ((App.deal.getNextHandToPlay() == hand) && (showThinBox == false))
+					)
+			   ) {
 				return;
 			}
-			// @foramtter:on
+			// @formatter:on
 
 			Rank rank = suggestions[hand.compass.v].rank;
 			Suit suit = suggestions[hand.compass.v].suit;
@@ -434,8 +451,8 @@ public class TricksFourDisplayPanel extends JPanel {
 			float faceBottom = top + cardHeight - faceBoarderBot;
 
 			if (card == null) {
-				// shink the the thin line lozenge as it can look too big -
-				// optincal illusion
+				// Shrink the the thin line lozenge as it can look too big -
+				// Optical illusion
 				float pc = 0.02f;
 				left += cardWidth * pc;
 				cardWidth -= cardWidth * 2f * pc;
@@ -458,12 +475,20 @@ public class TricksFourDisplayPanel extends JPanel {
 				g2.setStroke(new BasicStroke(stkSize + colorLineWidth * 0.80f));
 				g2.draw(rr2);
 			}
-			Color outlineColor = (suit == Suit.Invalid) ? Cc.NoChosenSuit : suit.color(Cc.Ce.Weak);
-			g2.setColor(outlineColor);
-			g2.setStroke(new BasicStroke(stkSize));
+
+			if (review_outline) { // faint dots added to the review play back so the user knows the mode they are in
+				g2.setColor(Cc.BlackStrong);
+				float dash[] = { 0.005f * cardWidth, 0.05f * cardWidth };
+				g2.setStroke(new BasicStroke(blackLineWidth, BasicStroke.CAP_BUTT, BasicStroke.JOIN_MITER, 2.0f, dash, 2.0f));
+			}
+			else {
+				g2.setColor((suit == Suit.Invalid) ? Cc.NoChosenSuit : suit.color(Cc.Ce.Weak));
+				g2.setStroke(new BasicStroke(stkSize));
+			}
 			g2.draw(rr);
 
 			Color cardColor = (suit == Suit.Invalid) ? Cc.NoChosenSuit : suit.color(Cc.Ce.Weak);
+
 			// Suit
 			if (suit != Suit.Invalid && Suit.Clubs.v <= suit.v && suit.v <= Suit.Spades.v) {
 				g2.setColor((card == null) ? cardColor : suit.color(Cc.Ce.Weak));
@@ -478,7 +503,5 @@ public class TricksFourDisplayPanel extends JPanel {
 				g2.drawString(rank.toStr(), faceLeft, faceBottom);
 			}
 		}
-
 	}
-
 }

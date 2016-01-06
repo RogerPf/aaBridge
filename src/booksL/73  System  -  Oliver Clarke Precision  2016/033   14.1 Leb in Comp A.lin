@@ -1,0 +1,1145 @@
+%%
+%%
+%% <--SECT_HEAD-->=Chapter 14.1               Leb  in  Competition A
+%%
+%%
+%%  Date last Edited    2015-12-05        set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   aaBridge players are screened just before the first  'pg'
+%%
+
+fh|t40|                    Font   t  t-title      section titles within chapters
+fh|b50|                    Font   b  b-bigTitle
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  OLD STYLE  position adjustment 
+
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|y198|cg|y205|cb|y229|   fill   y  y-chapterGray    on Title Pages
+cr|p000|cg|p095|cb|p169|   fill   p  p-precisionBlue  on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|p-precisionBlue|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Oliver Clarke Precision       -       Simple System  ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|y-chapterGray|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bChapter 14.1               Leb  in  Competition A^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+
+qx|14.1|
+fp|t-title|at|^d@2^z@3|
+at|
+^*gGS,Leb in Competition A  ^*n
+|fp||at|^^^^|
+fp|t-title|at|^*gOliv,Oliver  on     Leb in Competition A|fp||at|   starts HERE^*n       |fp||cp|red|at|<<< First time ?  Click title|fp||cp||at|
+
+
+^*gPrac,      Practice Hands  -   What would You Bid ? ^*n|
+
+
+ht|w|cp|p|at|The ^*b Navbar ^*n below is used for navigation,  think of it as a line of a 100 buttons.|cp||at|
+
+
+
+|fp||ht|y|at|^b@2@1|at|
+^*bClick^*n  -   one of the above  ^hor    in the  NavBar  ^mor      use your   mouse wheel|
+ht|z|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+%%
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2814|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2814 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+qx|GS,hide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Leb  in  Competition A|fp||at|^s(An Extract from the Lesson)^^^^|
+
+lg|m|n^|4|
+cp|red|at|^^^*bOliverC:^*n|cp||at|  Lebensohl in Competition applies when
+^c@2|n^|e|at|
+@.    We're in a natural bidding sequence and both sides have bid.
+@.    The bidding has reached the 2-level (below 2NT), and
+@.    2NT is NOT required for some other purpose.
+|n^|8|at|
+
+^bTo summarise: 
+^c^*b 1.  ^*n2@2-level bids merely competitive.
+^c^*b 2.  ^*nDirect (fast) raises of partner's suit tend to be pre-emptive.
+^c^*b 3.  ^*nSlow raises of partner's suit are invitational if they could have been bid competitively at the 2-level,
+|n^|6|at|but merely competitive if not.
+^c^*b 4.  ^*nSlow and fast bids of 3NT are natural and promise (slow) or deny (fast) a stop in Opps' suit.
+^c^*b 5.  ^*nSlow and fast cue-bids of their suit are normally game-forcing raises in PARTNER's suit and 
+|n^|6|at|Show (slow) or Deny (fast) 1st or 2nd Round Control of their suit.
+^c^*b 6.  ^*nFast new-suit bids at the next level are stronger/more encouraging than slow new-suit bids at the next level.
+|n^|6|at|FAST new suit bids tend to imply support/tolerance for partner's suit.
+^b@2|	
+pg| ***** 1 ***** |
+
+
+ht|z|n#|5|at|
+^a ^*bend^*n|
+pg| ***** 2 ***** |
+
+
+-----------------------------------------------------------------------------------------------  
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,wide|
+nt|^z@3^b@2|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|y-chapterGray|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class              Leb  in  Competition A^*n^-^^|cs||fp||cp||at|^^|
+lg|d|
+cp|red|at|^*bOliverC:^*n|cp||at|   Hi Everyone and welcome to today's session, in which we'll be continuing our look at Defensive and Competitive Bidding.
+
+Last time we looked at Overcalls, 2-suited Overcalls and Unassuming Cue-Bids (UCBs).
+
+Tonight I'm intending to introduce you to the mysteries of Lebensohl in Competition.
+
+Let me stress that this is not a part of Precision (no aspect of defensive bidding really belongs to one system or another) and does not really affect any other part of the system.
+
+Similarly, you can happily use (or not use) these methods WHATEVER system you are playing.
+
+If you have not already done so, please have a look at the notes I have prepared on tonight's topic.
+
+You can find these on: ^*h http://bbo.pigpen.org.uk/index.php ^*n
+
+The section on Defensive Bidding can be accessed from there ^*h http://bbo.pigpen.org.uk/Defensive.php^*n
+
+You can also find info on Lebensohl at ^*h http://bbo.pigpen.org.uk/Lebensohl.php ^*n
+
+I am only covering this one topic tonight and you might think we'll breeze through it quickly.  Experience of trying to explain these methods over a few years has shown that this is actually one of the toughest parts of the whole course to get your head around.|
+pg| ***** 3 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Leb  Over  1NT|fp||at|      ^^^^|
+lg|d|
+cp|red|at|^*bOliverC:^*n|cp||at|  In case there are any of you here who have never encountered Lebensohl before:  Lebensohl was ^*b originally ^*n devised to give the partner of a 1NT Opener the ability to compete effectively when the intervening opponent overcalls at the 2-level.
+
+In those circumstances 2NT is not used in its natural sense, but as a request for Opener to bid  3@c.
+
+This creates 3 kinds of sequences:
+^c@2|n^|8|at|
+^*b 1.  ^*n Competitive suit bids at the 2-level 
+^*b 2.  ^*n Forcing  bids made immediately at the 3-level ("Fast" sequences) 
+^*b 3.  ^*n Competiti@2ve   (or sometimes invitational if that suit could have been bid at the 2-level) 
+|n^|2|at|bids   made at the 3-level via   2NT   -   3@c ("Slow" sequences).
+^b@2
+Lebensohl ALWAYS uses this concept of   "slow"   and   "fast"   sequences.
+
+It also distinguishes between slow and fast cue-bids of Opp's suit and between slow and fast bids of 3NT.
+
+In 1NT sequences, cue-bids of their suit tend to be Staymanic in character, and bids of 3NT showing game values but ^*b no Major suit interest ^*n.
+
+Slow ones show a stop in Opp's suit and fast ones deny a stop.|
+pg| ***** 4 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Leb  in  Competition|fp||at|      ^^^^|
+lg|c|n^|4|
+cp|red|at|^*bOliverC:^*n|cp||at|  Using Lebensohl in competitive sequences is much the same in many respects.
+|n^|4|at|
+If both sides are bidding (whoever opened) and the bidding has reached the 2-level, then similar considerations apply.
+|n^|4|at|
+2NT ceases to be a natural bid and is simply a request for partner to bid  3@c.
+|n^|4|at|
+^*bNote ^*n that this normally only applies in wholly NATURAL sequences.
+|n^|4|at|
+If you have a sequence where 2NT normally has a specific artificial meaning, then normally Lebensohl would not apply.  For example:
+|n^|8|at|
+^C 1@s   -   2@s   -   (X)   -   2NT
+|n^|8|at|
+Here (if you play Romex) 2NT would be asking to make a short-suit trial bid and that would take precedence over a Lebensohl 2NT.
+|n^|4|at|
+Another example, suppose you are playing our continuations over a 1@d Opening, in which 1@d-2NT shows 16+ balanced and is a forcing enquiry.   The bidding goes      
+|n^|8|at|
+^c1@d   -   (1@h)   -   2NT      
+|n^|8|at|
+then the  2NT  there would STILL be the  16+ (Precision balanced enquiry over 1@d)   rather than  Lebensohl in Competition.
+|n^|4|at|
+Generally FAST sequences tend to be forcing and more encouraging in nature whereas SLOW sequences tend to be merely competitive or invitational depending on the circumstances.
+|n^|4|at|
+This often depends, however, on whether you can or cannot bid your or partner's suit COMPETITIVELY at the 2-level.
+
+Time for an example hand.|
+pg| ***** 5 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 1,wide|
+st||
+pn|South,West,North,East|rh||ah|Teach 1|sv|-|sk|n|sk||
+%% 3s97hQJ5dAJ865cKQ7,sKT42hA973d4cAT32,sQJ5hT2dQT97cJ986,sA863hK864dK32c54
+md|3s97hQJ5dAJ865cKQ7,,sQJ5hT2dQT97cJ986,|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 1          This is the hand that was randomly showing at the start of the class.|
+pg| ***** 6 ***** |
+
+
+mb|p|
+pg| ***** 7 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 8 ***** |
+
+
+sj|L|
+mb|1D|
+pg| ***** 9 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 10 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 11 ***** |
+
+
+sj|L|
+mb|2H|
+pg| ***** 12 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 13 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 14 ***** |
+
+
+sj|L|
+mb|?|
+at|^^Imagine we're playing Standard American.
+Here we are in a wholly natural but competitive sequence.
+The bidding has reached the 2-level.
+Both sides have bid.|
+pg| ***** 15 ***** |
+
+
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Now if North decides they want to show their Diamond Support, they can do so in one of 2 ways.
+They can bid a FAST 3@d (which would be more encouraging, but can hardly be invitational given their initial pass and pass over the Double).|
+pg| ***** 16 ***** |
+
+
+mb|3D|
+pg| ***** 17 ***** |
+
+
+ub|1|
+mb|?|
+n#|6|
+at|^^Alternatively they can bid a SLOW 3@d         2NT   -   3@c   -   3@d            which would be STRICTLY Competitive.|
+pg| ***** 18 ***** |
+
+
+mb|2N|an|Leb, forces 3@c|
+pg| ***** 19 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 20 ***** |
+
+
+sj|L|
+mb|3C|an|forced|
+pg| ***** 21 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 22 ***** |
+
+
+sj|L|
+mb|3D|an|competitive only|
+pg| ***** 23 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 24 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 25 ***** |
+
+
+sj|L|
+mb|3H|
+pg| ***** 26 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 27 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 28 ***** |
+
+
+sj|L|
+mb|p|
+md|0s97hQJ5dAJ865cKQ7,sKT42hA973d4cAT32,sQJ5hT2dQT97cJ986|
+pg| ***** 29 ***** |
+
+
+pf|Y|
+pc|cK|
+pg| ***** 30 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Leb  in  Competition|fp||at|      continued^^^^|
+lg|c|n^|4|
+cp|red|at|^*bOliverC:^*n|cp||at|  Let's look at a typical sequence where Lebensohl is in use in this way: 
+|n^|4|at|
+South opens 1@s,  West overcalls 2@c,  North bids  2@h and East passes.       1@s  -  (2@c)  -   2@h   -  ???
+|n^|4|at|
+Here we are in a wholly natural competitive sequence and the bidding has reached the 2-level
+|n^|6|at| 
+^c^*b 1.  ^*nIf South bids 2@s here this is simply competitive, showing no additional values.
+^f 1@s   -   (2@c)   -   2@h   -   2@s
+|n^|8|at|
+^c^*b 2.  ^*nIf @2South bids a fast 3@s then this is strong and highly invitational but given the limited nature of the 
+1@s Opening (In Precision, anyway), it cannot be considered game-forcing 
+^f 1@s   -   (2@c)   -   2@h   -   3@s     ^pbut might be in 2/1 or Std American
+|n^|8|at|
+^c^*b 3.  ^*nIf South bids 2NT, then this tells North to bid 3@c after which South can make an invitational bid in either Hearts or Spades
+^f 1@s   -   (2@c)   -   2@h   -   2NT(Leb)   -   3@c(forced)   -   3@h/3@s 
+if the bid is 3@s then this shows a hand that is less strong and/or shorter Spades than would a fast 3@s.
+^b@2
+Bear in mind that in the example hand (I bid earlier), Opps' Heart suit was HIGHER-ranking than our Diamond suit.
+
+That meant that North couldn't compete at the 2-level over East's 2@h bid.
+
+Worth noting here that in  THIS  example OUR suits (@h's and @s's) are both HIGHER-RANKING than Opps suit.
+
+This means we can bid COMPETITIVELY at the same level.
+
+That in turn means that a SLOW bid in either of our suits at the NEXT level (ie: the 3-level) after ... 2NT  -  3@c  is invitational.
+
+All of that side of things is very similar to how we treat Normal Lebensohl over a 1NT Opening.|
+pg| ***** 31 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Leb  in  Competition|fp||at|      continued^^^^|
+lg|c|n^|4|
+cp|red|at|^*bOliverC:^*n|cp||at|  If we can compete at the 2-level over their interference at the 2-level, then SLOW 3-level suit bids in that suit are invitational.
+
+Everyone following this?      Good.
+
+If Opps suit is HIGHER-RANKING than ours, this this changes the sense of SLOW and FAST bids in our suit(s).
+
+Now a SLOW bid in our suit is competitive and less encouraging, and the FAST bid is more encouraging.  Eg:
+
+^c1@s     -   (p)   -   2@d   -   (2@h)        ^jNow ...
+|n^|6|at|  
+^c2NT   -   (p)   -   3@c   -     (p)
+^c3@d  ^jfrom Opener is just competitive in Diamonds rather than invitational,   but
+|n^|6|at| 
+^c2NT   -   (p)   -   3@c   -     (p)
+^c3@s ^jis invitational, because Opener could have rebid their Spades at the
+^u 2-level competitively.
+|n^|9|at| 
+The other thing to notice is that in the example on the previous page, NORTH is also in a position to use Lebensohl over the overcall of 2@c, so their initial 2@h bid is merely competitive.             ^*bMM:^*n Use your Mouse wheel to look.
+|n^|4|at|
+If North bids 2NT over 2@c then this is ALSO Lebensohl forcing 3@c from South and now North could make an invitational bid in Hearts or Spades.
+
+Similarly a "fast" 3@h bid would be strong and forcing in nature.
+
+Heads spinning yet?               ^*b whiz: ^*n yes          ^*b dhart: ^*n  getting there.
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  :)                   Next example hand|
+pg| ***** 32 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 2,wide|
+st||
+pn|South,West,North,East|rh||ah|Teach 2|sv|-|sk|n|sk||
+%% 3SQ4DKJ96CKQT8532,SK7HAQT98D743CA64,SJT8652H64D852CJ7,SA93HKJ7532DAQTC9
+md|3,SK7HAQT98D743CA64,,SA93HKJ7532DAQTC9|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 2|
+pg| ***** 33 ***** |
+
+
+mb|p|
+pg| ***** 34 ***** |
+
+
+sj|L|
+mb|1H|
+pg| ***** 35 ***** |
+
+
+sj|L|
+mb|2C|
+pg| ***** 36 ***** |
+
+
+mb|?|
+at|     Playing my system the bidding can go    1@h   -   (2@c)   -   3@c[asking in @h]       OR |
+pg| ***** 37 ***** |
+
+
+sj|L|
+mb|2N|an|Leb, forces 3@c|
+at|^^West could, of course, just blast 4@h, but they're too good for that really  OR  they could use Leb.
+|n#|9|at|This is how we tend to play ^*b this kind of sequence ^*n in my system.
+Your mileage might differ, of course.|
+pg| ***** 38 ***** |
+
+
+sj|c|
+mb|p|mb|3C|an|forced|
+pg| ***** 39 ***** |
+
+
+sj|c|
+mb|p|mb|4C|an|GF in @h, @c Control|
+pg| ***** 40 ***** |
+
+
+sj|c|
+mb|p|mb|4D|an|cue|
+pg| ***** 41 ***** |
+
+
+sj|c|
+mb|p|mb|4H|an|Rolling|
+pg| ***** 42 ***** |
+
+
+sj|c|
+mb|p|mb|4S|an|Cue|
+pg| ***** 43 ***** |
+
+
+sj|c|
+mb|p|mb|4N|an|Still Rolling|
+pg| ***** 44 ***** |
+
+
+sj|c|
+mb|p|mb|5C|an|cue|
+pg| ***** 45 ***** |
+
+
+sj|c|
+mb|p|mb|6H|mb|p|mb|p|
+pg| ***** 46 ***** |
+
+
+nt|^z@3^b@2|Lg|h|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  The key thing to note here is not how the sequence develops, but the fact that the    2NT   -   3@c    Leb sequence, doesn't HAVE to mean that the subsequent sequence has to be weak and competitive.
+|n^|b|at|
+The SLOW cue with 4@c is clearly not interested in a mere game and as we play that it unequivocably agrees Hearts, East can launch immediately into a cue-bidding sequence.
+|n^|b|at|
+Any questions?                    Hopefully you are beginning to get the picture.|
+pg| ***** 47 ***** |
+
+
+sj|L|
+mb|p|
+md|0SQ4DKJ96CKQT8532,SK7HAQT98D743CA64,SJT8652H64D852CJ7|
+pg| ***** 48 ***** |
+
+
+pf|Y|
+pc|cK|
+pg| ***** 49 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Leb  in  Competition|fp||at|      continued^^^^|
+lg|c|n^|4|
+cp|red|at|^*bOliverC:^*n|cp||at|  Let's try another sequence: Suppose South Opens 1@d, West bids 1@h, North bids 1@s and East supports with 2@h      So:
+|n^|6|at|
+^e1@d   -   (1@h)   -   1@s   -   (2@h)   -   ??? 
+|n^|6|at|
+^c^*b 1.  ^*nA fast bid of 3@d is strong and encouraging, and implies a reasonable partial fit for Spades, whereas.
+
+^c^*b 2.  ^*nA @2"slow" bid of 3@d is less encouraging, showing long Diamonds but a weakish hand and no good fit 
+^w for Spades.
+^c^*b 3.  ^*n2@s would be just competitive, probably a weaker hand but with decent Spade support.
+
+^c^*b 4.  ^*nA "slow" bid of 3@s is genuinely invitational and a "fast" bid of 3@s is pre-emptive If you were playing a system where the 1@d Opening was NOT limited as Precision's 1@d opening is, then you might play a FAST 3@s as being forcing rather than pre-emptive.
+
+^c^*b 5.  ^*nIf South bids a FAST 3NT, then this shows a strong hand, presumably with long running Diamonds, but no good Heart stop.
+
+^c^*b 6.  ^*nA "slow" bid of 3NT, however, also shows a strong hand, but now PROMISES decent Heart values as well.  (In Precision, that kind of action would be improbable, since Opener is limited to a maximum of 15 hcp)
+^b@2
+In competitive sequence like this when Opps opened and we've overcalled, my system tends to use slow and fast cue-bids of Opps' suit to show good game-forcing raises in partner's suit and to show or deny a 1st or 2nd-round control of Opp's suit.   ^*bSlow shows ^*n and ^*b Fast denies^*n, as is usual.|
+pg| ***** 50 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Leb  in  Competition|fp||at|      continued^^^^|
+lg|c|n^|4|
+cp|red|at|^*bOliverC:^*n|cp||at|  If we opened a Major, then a fast cue of their suit is an Asking Bid (Gamma).
+
+We saw an example of that in the hand shown earlier.
+
+In the absence of the above, then if there is an UNBID Major at this stage of the bidding, then slow and fast cues can be Staymanic.  So:
+
+^c 1@h   -     (p)    -   1NT   -   (p)
+^c 2@c   -   (2@d)   -     ?
+^b@2|n^|8|at|
+Now                ^f     2NT   -   (p) 
+^c 3@c   -     (p)    -   3@d    ^j@2from Responder would be showing game values, a Diamond stop and 4-card Spades, and a fast 3@d the same but without the Diamond stop.
+^b@2
+Note that an immediate 2@s from Responder would be Gamma in Hearts (Relay in cheapest new suit).
+
+Any questions at this stage ?  
+
+ok.|
+pg| ***** 51 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Leb  in  Competition|fp||at|      continued^^^^|
+lg|c|n^|4|
+cp|red|at|^*bOliverC:^*n|cp||at|  The use of Lebensohl in competitive sequences doesn't mean that other items in our arsenal fall by the wayside.
+
+So Unassuming Cue Bids are still available when partner has overcalled (if used immediately), Competitive Doubles and Support Doubles (if you use them) are also available.
+
+Competitive Doubles are very useful when Opps suit is higher-ranking than ours.
+
+Now a slow raise of partner's suit is competitive rather than invitational and the Competitive Double helps to distinguish between pre-emptive and invitational hands.
+
+Similarly, Support Doubles can be useful when you have defensive values and 3-card support for partner's suit rather than 4-card support.
+
+We cover Competitive, Support, 4th Suit and other doubles later in the Series.
+
+Obviously how you weave all this into your existing methods is entirely a matter for you.
+
+The main thing to take away tonight is that you CAN, very successfully, incorporate the Lebensohl method into ANY competitive sequence at the 2-level when 2NT is not required for something else.|
+pg| ***** 52 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Leb  in  Competition|fp||at|      continued^^^^|
+lg|m|n^|4|
+cp|red|at|^*bOliverC:^*n|cp||at|  So Lebensohl in Competition applies when
+^c@2|n^|e|at|
+@.    We're in a natural bidding sequence and both sides have bid.
+@.    The bidding has reached the 2-level (below 2NT), and.
+@.    2NT is NOT required for some other purpose.
+|n^|8|at|
+^bTo summarise: 
+^c^*b 1.  ^*n2@2-level bids merely competitive.
+^c^*b 2.  ^*nDirect (fast) raises of partner's suit tend to be pre-emptive.
+^c^*b 3.  ^*nSlow raises of partner's suit are invitational if they could have been bid competitively at the 2-level,
+|n^|6|at|but merely competitive if not.
+^c^*b 4.  ^*nSlow and fast bids of 3NT are natural and promise (slow) or deny (fast) a stop in Opps' suit.
+^c^*b 5.  ^*nSlow and fast cue-bids of their suit are normally game-forcing raises in PARTNER's suit and 
+|n^|6|at|Show (slow) or Deny (fast) 1st or 2nd Round Control of their suit.
+^c^*b 6.  ^*nFast new-suit bids at the next level are stronger/more encouraging than slow new-suit bids at the next level.
+|n^|6|at|FAST new suit bids tend to imply support/tolerance for partner's suit.
+^b@2|
+Lg|b|
+
+at|Note: Every sequence is different and there will often be some where it is difficult to figure out the exact nuance behind partner's choice of sequence, but the general guidelines outlined above should assist you.
+
+Remember though, that these considerations only apply when the bidding is AT the 2-level and you have the opportunity to distinguish between SLOW and FAST sequences by bidding the   2NT  -  3@c   relay.
+
+If the bidding has already reached the 3-level (or someone has already bid 2NT), then NONE of this applies.|
+pg| ***** 53 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Leb  in  Competition|fp||at|      continued^^^^|
+lg|c|n^|4|
+cp|red|at|^*bOliverC:^*n|cp||at|  Also, for those who have attended my sessions on Lebensohl over 1NT etc, please note that it is NORMAL Lebensohl in use here, and TRANSFER LEBENSOHL is NOT an option I would encourage.
+
+You can, if you wish, even try Lebensohl at the 1-level in competition, but there is less advantage to be gained here since 1NT is a far more useful natural bid than 2NT.
+
+Jason Hackett and I tried that (briefly), but decided that 1NT was a FAR too useful response (unlike 2NT) to be given up.
+
+Lastly, this really is NOT an easy topic to get to grips with (Ask any member of my Precision Team), but persistence will repay the time and effort you invest in trying this.
+
+Expect, however, to have some disasters in the early days, though.
+
+You and partner will forget Leb is "there" and available occasionally and so miss the nuance behind the bid made.
+
+Moreover it is quite hard to get used to NOT bidding 2NT naturally, so expect to have some "natural" 2NT bids made when it's really Lebensohl or to have your 2NT Leb bid passed out!! Don't be put off, however.
+
+Leb in Competition really does work and extends the range of what you can show hugely.
+
+Time for the last example hand.|
+pg| ***** 54 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 3,wide|
+st||
+pn|South,West,North,East|rh||ah|Teach 3|sv|n|sk|e|sk||
+%% 4S763HA98DT65CJT74,SQ52HQT6DQ3CK9653,S8H542DAKJ742CQ82,SAKJT94HKJ73D98CA
+md|4,SQ52HQT6DQ3CK9653,,SAKJT94HKJ73D98CA|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 3          Imagine we playing 2/1|
+pg| ***** 55 ***** |
+
+
+mb|1S|
+pg| ***** 56 ***** |
+
+
+sj|c|
+mb|p|mb|1N|an|forcing no trump|
+pg| ***** 57 ***** |
+
+
+sj|L|
+mb|2D|
+pg| ***** 58 ***** |
+
+
+sj|L|
+mb|2H|
+pg| ***** 59 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+at|   West feels they need to do more that just give preference with  2@s.|
+pg| ***** 60 ***** |
+
+
+mb|2N|an|Leb, forces 3@c|
+pg| ***** 61 ***** |
+
+
+sj|c|
+mb|p|mb|3C|an|forced|
+pg| ***** 62 ***** |
+
+
+sj|c|
+mb|p|mb|3S|an|invitational|
+at|^^Here you could assign whatever meaning you like to a FAST 3@s (Pre-emptive, forcing, whatever) but if West was strong enough to want to FORCE in Spades, here they could bid a SLOW cue-bid of 3@d, which, in my system, would be GF in one of East's Majors but with NO 1st or 2nd round control of Diamonds.|
+pg| ***** 63 ***** |
+
+
+sj|c|
+mb|p|mb|4S|
+pg| ***** 64 ***** |
+
+
+nt|^z@3^b@2|Lg|k|n#|9|
+mb|p|mb|p|
+cp|red|at|^*bOliverC:^*n|cp||at|  Likewise a slow raise of Hearts is stronger than a fast raise (since our suit is higher ranking).
+But you might decide you want to play the fast raise as forcing in those circumstances, rather than pre-emptive.
+The meaning you apply to each sequence in a given situation is ^*b not ^*n what matters, it's using 2NT to give yourselves more than one possible sequence, so you CAN apply different meanings to them.|
+pg| ***** 65 ***** |
+
+
+mb|p|
+md|0S763HA98DT65CJT74,SQ52HQT6DQ3CK9653,S8H542DAKJ742CQ82|
+pg| ***** 66 ***** |
+
+
+pf|Y|
+pc|cK|
+pg| ***** 67 ***** |
+
+
+--------------------------------------------------------------------
+qx|Prac,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Practice / Demo  Hands|fp||at|^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  ok, let's practice some hands showing this sort of thing.
+
+Please do not worry if it takes you some weeks and lots of practice before you really get your head around this concept.
+
+Can we have an EW pair, please? 
+
+c'mon, peops, just one more.|
+pg| ***** 68 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 1,hide|
+st||
+pn|lute57,OliverC,RogerPfi,Eszter5|rh||ah|Practice 1|sv|e|sk|s|sk||
+md|1S5HT764DKJT6CT765,SKQ873HKJ3D5CAJ94,SA964H9DAQ98743C8,SJT2HAQ852D2CKQ32|
+md|1,SKQ873HKJ3D5CAJ94,,SJT2HAQ852D2CKQ32|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 1     |
+pg| ***** 69 ***** |
+
+
+mb|p|
+pg| ***** 70 ***** |
+
+
+sj|L|
+mb|1S|
+pg| ***** 71 ***** |
+
+
+sj|L|
+mb|2D|
+pg| ***** 72 ***** |
+
+
+sj|L|
+mb|2N!|an|Leb forces 3@c|
+pg| ***** 73 ***** |
+
+
+sj|c|
+mb|p|mb|3C|an|forced|
+pg| ***** 74 ***** |
+
+
+sj|c|
+mb|p|mb|3S|
+at|So this is invitational in Spades, since Eszter could have bid 2@s competitively
+but in essence we could have been playing almost ANY system and the sequence would have been very similar.|
+pg| ***** 75 ***** |
+
+
+sj|c|
+mb|p|mb|4S|
+pg| ***** 76 ***** |
+
+
+mb|p|mb|p|
+at|^^^^^*blute57: ^*N nice job Eszter|
+pg| ***** 77 ***** |
+
+
+mb|p|
+md|0S5HT764DKJT6CT765,SKQ873HKJ3D5CAJ94,SA964H9DAQ98743C8|
+pg| ***** 78 ***** |
+
+
+pf|Y|
+pc|cK|
+pg| ***** 79 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared|
+pg| ***** 80 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2,wide|
+st||
+pn|lute57,lakewes,RogerPfi,Eszter5|rh||ah|Practice 2|sv|b|sk|w|sk||
+%% 2S652HQ8764D974CT8,SAT984HTDKJ865C53,H532DAT32CAQJ976,SKQJ73HAKJ9DQCK42
+md|2,SAT984HTDKJ865C53,,SKQJ73HAKJ9DQCK42|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2     |
+pg| ***** 81 ***** |
+
+
+mb|p|
+pg| ***** 82 ***** |
+
+
+sj|L|
+mb|2c|an|11-15  with 6+ @C   OR   5@C + 4@H/@S|
+pg| ***** 83 ***** |
+
+
+sj|L|
+mb|2S|
+at|2@s is better than a double here, despite East's apparent 19-count, as the Q@d not really worth anything at this stage.|
+pg| ***** 84 ***** |
+
+
+sj|c|
+mb|p?|
+at|^^So now  3@c  (Cue bid of Opps suit) from West would, in my methods, be GF in Spades, but DENYING 1st or 2nd round control of Clubs.|
+pg| ***** 85 ***** |
+
+
+mb|3S|
+at|^^As it is 3@s was just pre-emptive|
+pg| ***** 86 ***** |
+
+
+sj|c|
+mb|p|mb|4H|
+at|,    and  4@h a cue, showing a strong hand.|
+pg| ***** 87 ***** |
+
+
+sj|c|
+mb|p|mb|4S|
+pg| ***** 88 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+
+
+at|     ok, well done|
+pg| ***** 89 ***** |
+
+
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  You don't HAVE to play our system of slow and fast cue's of their suit being GF with or without control of their suit.    So if you prefer to leave that on the sideline and use UCB's instead, that's fine Indeed, we tend to give UCB's precedence over that system in any case.
+^*blute57: ^*n Are UCBs only available in the Advancer seat ? 
+|cp|red|at|^*bOliverC:^*n|cp||at|  Yes - UCB's  MUST  happen immediately over the overcall.|
+pg| ***** 90 ***** |
+
+
+mb|p|
+md|0S652HQ8764D974CT8,SAT984HTDKJ865C53,H532DAT32CAQJ976|
+pg| ***** 91 ***** |
+
+
+pf|Y|
+pc|s5|
+pg| ***** 92 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared |
+pg| ***** 93 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 3,wide|
+st||
+pn|lute57,lakewes,RogerPfi,Eszter5|rh||ah|Practice 3|sv|n|sk|n|sk||
+md|3S9854HADQT63CKQJ5,SJ6H873DKJ98542C4,SAT72HJT4DACAT963,SKQ3HKQ9652D7C872|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 3     |
+pg| ***** 94 ***** |
+
+
+mb|2C!|an|11-15  with 6+ @C   OR   5@C + 4@H/@S|
+pg| ***** 95 ***** |
+
+
+sj|L|
+mb|2H|
+pg| ***** 96 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 97 ***** |
+
+
+mb|d|
+at|Just because Leb in Competition is available doesn't mean it has to be used at the first opportunity.  Here a Negative Double sums up South's hand perfectly.|
+pg| ***** 98 ***** |
+
+
+sj|L|
+mb|2N|an|Leb forces 3@c|
+pg| ***** 99 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 100 ***** |
+
+
+sj|L|
+mb|3C!|an|forced|
+pg| ***** 101 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 102 ***** |
+
+
+sj|L|
+mb|3D|
+pg| ***** 103 ***** |
+
+
+sj|L|
+mb|3S|
+pg| ***** 104 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 105 ***** |
+
+
+sj|L|
+mb|4S|
+pg| ***** 106 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 107 ***** |
+
+
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  okay, wd, 
+A couple of very good points to be made here: 
+^*bFirstly^*n, I think I would be bidding 3@s over 2NT with the North hand rather than passing.  Having 3 aces counts for something.  South pretty much HAS to have 4-card Spades for their negative Double.|
+pg| ***** 108 ***** |
+
+
+nt|^z@3^b@2|Lg|f|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  ^*bSecondly^*n, I'm all for playing in the weaker hand's suit when possible to maximise their value to the partnership, but with the West hand, I would be bidding 3@h (known 9-card fit) rather than a SLOW 3@d, which tends to suggest no good tolerance, let alone support, for East's Hearts.
+After all, West has a ruffing value in Clubs AND Spades.
+(Side note - a Double of a 2@d Overcall (instead of the 2@h we see above), would be the equivalent of our 2@d Inquiry bid and not a Takeout Double).|
+pg| ***** 109 ***** |
+
+
+mb|p|
+pf|Y|
+pc|d7|
+pg| ***** 110 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared |
+pg| ***** 111 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 4,wide|
+st||
+pn|lute57,OliverC,RogerPfi,Eszter5|rh||ah|Practice 4|sv|n|sk|n|sk||
+%% 4SQJ92H3DAQ32CQJT9,ST743H96D98764C32,SAK5HQJT8DJCK8654,S86HAK7542DKT5CA7
+md|4SQJ92H3DAQ32CQJT9,,SAK5HQJT8DJCK8654,|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 4     |
+pg| ***** 112 ***** |
+
+
+mb|1H|
+pg| ***** 113 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 114 ***** |
+
+
+sj|L|
+mb|p|mb|2H!|an|Cue bid  (GF)|
+pg| ***** 115 ***** |
+
+
+sj|c|
+mb|p|mb|3N|an|denying a H stopper|
+pg| ***** 116 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|  So here we saw a GF cue of 2@h, followed by a FAST 3NT bid from South, DENYING a @h stop.
+Other possible sequence over 2@h would be a simple 2@s from South, and then a SLOW 3NT by North to PROMISE the @h's covered.
+Any questions?|
+pg| ***** 117 ***** |
+
+
+mb|p|
+md|0SQJ92H3DAQ32CQJT9,ST743H96D98764C32,SAK5HQJT8DJCK8654|
+pg| ***** 118 ***** |
+
+
+pf|Y|
+pc|h9|
+pg| ***** 119 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared |
+pg| ***** 120 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 5,wide|
+st||
+pn|lute57,OliverC,RogerPfi,Eszter5|rh||ah|Practice 5|sv|b|sk|s|sk||
+md|1S4H94D87632CK7643,SJ83HAQJ865DA95CJ,SKQ765HT3DKQTC985,SAT92HK72DJ4CAQT2|
+md|1,SJ83HAQJ865DA95CJ,,SAT92HK72DJ4CAQT2|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 5     |
+pg| ***** 121 ***** |
+
+
+mb|p|
+pg| ***** 122 ***** |
+
+
+sj|L|
+mb|1H|
+pg| ***** 123 ***** |
+
+
+sj|L|
+mb|1S|
+pg| ***** 124 ***** |
+
+
+sj|L|
+mb|2C|
+pg| ***** 125 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 126 ***** |
+
+
+sj|L|
+mb|2H|
+pg| ***** 127 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 128 ***** |
+
+
+sj|L|
+mb|4H|
+pg| ***** 129 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|  Maybe 1NT (standard Forcing NT) would be better than  2@c  OR  2@s (Gamma ask in Hearts) or even 2@c and then 4@h, just as you did.
+^^^*bmaysie: ^*n Immediate GAMMA bid of Opps suit here of 2@S would be more efficient as less info conveyed to Opps.|
+pg| ***** 130 ***** |
+
+
+nt|^z@3^b@2|Lg|k|n#|9| 
+at|^*bEszter5: ^*n Is my hand (East) strong enough for gamma ?
+|cp|red|at|^*bOliverC:^*n|cp||at|  Well it's a matter of East taking control of the sequence with Gamma or choosing a more natural conversational approach. 
+^*blute57: ^*n Notes say 16+ HCP, but in practice - over partner's 1M Opening - lots of us use 14+ hcp.
+|cp|red|at|^*bOliverC:^*n|cp||at|  I'd happily use Gamma here with or without the 1@s overcall.
+The fact is you're heading to AT LEAST 4@h as soon as partner opens 1@h.|
+pg| ***** 131 ***** |
+
+
+nt|^z@3^b@2|Lg|k|n#|9| 
+at||cp|red|at|^*bOliverC:^*n|cp||at|  If you decide to use Gamma, YOU decide when to bail out.  Partner has no say in the matter :)
+
+^*bEszter5: ^*n   :)| 
+
+
+mb|p|
+md|0S4H94D87632CK7643,SJ83HAQJ865DA95CJ,SKQ765HT3DKQTC985|
+pg| ***** 132 ***** |
+
+
+pf|Y|
+pc|c9|
+pg| ***** 133 ***** |
+
+
+
+Goodbyes--------------------------------------------------------------------
+qx|end,thin|
+bt||
+nt|^b@2^z@3|at|^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   With your permission we'll leave it there for tonight.
+
+Next week we will have more practice on this topic.
+
+kritter2:  tyvm Oliver ;)
+
+RogerPfi: thank you Oliver
+
+
+
+lute57:  Oliver thanks for giving us another masterpiece lesson - it gets clearer each time I go through these
+
+maysie:  ty
+
+
+
+|cp|red|at|^*bOliverC:^*n|cp||at|   seeya next week
+   
+bye for now, night all

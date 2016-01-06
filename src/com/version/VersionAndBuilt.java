@@ -19,57 +19,56 @@ import com.rogerpf.aabridge.controller.App;
 //@formatter:off
 
 public class VersionAndBuilt {
-	static String ver = "3.0.0.";
+	static String ver = "3.1.0.";  public static String devExtra = "";    // extra is dev only, normally null
 
-	public static int buildNo = 2724;    static String y = "2015", m = "Feb", d = "05";
+	public static int buildNo = 2822;    static String y = "2016", m = "Jan", d = "03";
 
-	// 2015-02-05  2724  Release
-	// 2015-02-05  2723  prepareing for release
-	// 2015-02-05  2722  lin files - multiple clean up
-	// 2015-02-05  2721  Fixed lost dividers in .jar runner
-	// 2015-02-04  2720  Release
-	// 2015-02-04  2719  Going for release a ...20
-	// 2015-02-04  2718  Not - First release with full lin file collection
-	// 2015-02-04  2717  Preparing for 3.0 release
-	// 2015-02-04  2716  3.x First release - no change of mind we are scrapping 3.1 name    3.0 it is
-	// 2015-02-04  2715  Small lin file corrections
-	// 2015-02-04  2714  improved pg and card play error debugging
-	// 2015-02-04  2713  better debug added for lin files pg reporting in debugger
-	// 2015-02-03  2712  build a full 'release' of 3.1  NOT for release
-	// 2015-02-03  2711  added all the lins and the 'books'
-	// 2015-02-03  .     changed .gitignore to allow back in all the 'books'
-	// 2015-02-03  2710  re-added 3.0 post process so the same source can be built as 3.1 or 3.0
-	// 2015-02-03  2709  manual menu divider added (between books)
-	// 2015-02-03  2708  Shelf ordering overide in jars and Thank you added
-	// 2015-02-03  2707  Menubar Shelf ordering added
-	// 2015-02-03  2706  Another attempt at a better r-andom lin picker
-	// 2015-02-02  2705  Mass rename of lins to keep to 2 spaces after nn number
-	// 2015-02-02  2704  digit 3 added to desktop aaBridge icon under text
-	// 2015-02-02  2703  Changed version number
-	// 2015-02-02  2702  More mentoring lins added to git system
-	// 2015-02-02  2701  Starting work on 3.1
+
+	// 2016-01-03  2822  Release Candidate
+	// 2016-01-03  2821  _d   More Lin tweeks
+	// 2016-01-03  2821  _c   Hondo lins for 2015 made public
+	// 2015-12-28  2821  _b   build procedure doc updated - hondo lins
+	// 2015-12-16  2821  _a   OCP added
+	// 2015-12-15  2820  Release Candidate
+	// 2015-12-15  2819  _f   Ability to remove and autoadd cards added (rc and aa cmnds)
+	// 2015-12-15  2819  _e   add latest OCP
+	// 2015-12-12  2819  _d   Only Marked Chapters in Menu  -  Recently viewed removed
+	// 2015-12-06  2819  _c   OCP and Hondo lin added
+	// 2015-12-01  2819  _b   Third DlaE button added
+	// 2015-12-01  2819  _a   Tweak to text on the two Seat Cho-ice DlaE buttons  
+	// 2015-11-30  2818  Release Candidate
+	// 2015-11-30  2817  _f   Quick Paste now only works nears the Step and Flow buttons
+	// 2015-11-29  2817  _e   More drag drop link fiddles
+	// 2015-11-19  2817  _d   Tweeks to right and bottom panel text
+	// 2015-11-19  2817  _c   now always creates a a non-existent saves folder
+	// 2015-11-19  2817  _b   Users can now set their own Saves Folder
+	// 2015-11-16  2817  _a   drag drop link text bug (alert text) fixed
+	// 2015-11-16  2816  Release Candidate
+	// 2015-11-15  2815  _d   typo fixed
+	// 2015-11-15  2815  _c   jar now re-compressed to make it smaller
+	// 2015-11-14  2815  _b   DLaE new button reset and DFC default tweek
+	// 2015-11-14  2815  _a   Another DLAE settings bug  [sigh]
+	// 2015-11-13  2814  Release Candidate
+	// 2015-11-12  2813  _o   all OCP 2D revisited and 2814 needed
+	// 2015-11-12  2813  _n   Deal to BBO two buggets fixed
+	// 2015-11-10  2813  _m   Deal to BBO link added to men u etc
+	// 2015-11-08  2813  _l   massive change of hondo lins removing  fb!110
+	// 2015-11-08  2813  _k   reduced eating of spaces to one after double up arrow
+	// 2015-11-08  2813  _j   tweek to make 'pf' message reset line spacing
+	// 2015-11-08  2813  _i   added bbo hand link text drag and paste  click
+	// 2015-11-06  2813  _h	  now have 4 NSEW visibility override checkboxes
+	// 2015-11-05  2813  _g   tweeks to box positions
+	// 2015-11-05  2813  _f   one tweek to lin
 	//
-	// 2015-02-02  2618  3.0  First Release
-	// 2015-02-02  2617  Navbar lin doc improvements
-	// 2015-02-02  2616  Other mentorings lins added
-	// 2015-02-02  2615  Starting to add more mentorings
-	// 2015-02-02  2614  3.0 Release Candidate 1
-	// 2015-02-02  2613  Randlin tweeks
-	// 2015-02-01  2612  mentoring2014  (reduced set)  added to git
-	// 2015-02-01  2611  booksY booksZ  Visibility Test lins   added to git
-	// 2015-02-01  2610  Unfixable classloader resource warning suppressed
-	// 2015-02-01  2609  More adjustments
-	// 2015-02-01  2608  More welcome page cleaning
-	// 2015-02-01  2607  shelves now  "" and  1-9  A-Z
-	// 2015-02-01  2606  Added video 'button' to for DFC  Removed EXTRA
-	// 2015-01-31  2605  Start of version 3.0
+	//                          Migrated to repo 09
 	//
-	// 2015-01-31  2442  Release of 2.4  (again)
-	// 2015-01-31  2440  Additional early entry
-	// 2015-01-31  2439  final tweek
-	//
-	// 2015-01-31  0000  repo on lucca   java__aaBridge06.git    created
-	//
+	// 2015-11-05  2813  _d   misplaced demo
+	// 2015-11-05  2813  _c   rq now kill  nt  as well as  at
+	// 2015-11-05  2813  _b   lin doc added for Lg  
+	// 2015-11-04  2813  _a   lg  line gap (spacing)  added
+	//             2812         skipped
+
+	// see    repo_08  for more
 
 	
 	static String built = y + " " + m + " " + d;
@@ -119,7 +118,7 @@ public class VersionAndBuilt {
 	}
 
 	public static String verAndBuildNo() {
-		return ver + buildNo;
+		return ver + buildNo + devExtra;
 	}
 
 	public static String getStatus() {
@@ -131,7 +130,7 @@ public class VersionAndBuilt {
 	}
 
 	public static String getBuildNo() {
-		return "" + buildNo;
+		return "" + buildNo + devExtra;
 	}
 
 	public static String getBuilt() {

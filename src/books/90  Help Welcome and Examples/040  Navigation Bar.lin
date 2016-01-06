@@ -20,13 +20,13 @@ tu|y|
 mn|   Navigation Bar   |
 ht|d|
 at|^^|fp||at|^z@3
-^b@2Most of the main  Deal Display Screen  is easy to understand @- however the Navigation Bar deserves a few words.
+^b@2Most of the main  Deal Display Screen  is easy to understand @- however the Navigation Bar needs a few words.
 
 The  |cp|7|at|^*bNavigation Bar^*n|cp||at| is the cream and grey line, with bobbles on it, at the bottom of this window. 
 
 ^*bClicking on this bar^*n will move you that point in the current lin file - |cp|7|at|^*bPlease try this, a few times, now^*n|cp||at|.
 
-^d@2^*bTechnical aside^*n @- the bumps are where the writer of the lin file has put a QX marker.  When there is room aaBridge will show you the first four characters of the name of that QX marker.  Narrower bumps are where there are fewer 'pages' (PG markers) between the  QX's.   None of this matters to you as a user, just click on it to move about.
+^d@2^*bTechnical aside^*n @- (non-techies skip this paragraph) the bumps are where the writer of the lin file has put a QX marker.  When there is room aaBridge will show you the first four characters of the name of that QX marker.  Narrower bumps are where there are fewer 'pg' pages.
 
 When playing VuGraph lin files, the QX marker names show as the letter  "o"  or  "c"  followed by a number.  The "o" stands for Open Room and the "c" for Closed room.
 
@@ -35,65 +35,69 @@ When playing VuGraph lin files, the QX marker names show as the letter  "o"  or 
 ^c@.   The one you see below, which shows whenever you are NOT inside a deal.
 
 ^c@.   The @2second kind which, unsurprisingly, you see whenever you are inside a deal.  This form lets you see how much of the play has been completed and lets you move to the point when any particular card is played.
-|
 
-ht|z|at|@0
+
+^b|cp|4|at|^*bMouse Wheel^*n|cp||cs|3|at|  -  turning the  ^*bMouse Wheel^*n  moves you backwards or forwards one unit on the  Navbar.
+^q|cp|7|at|   ^*bPlease try this, a few times, now^*n|cp||at|.
+
+^cThe mouse wheel will do a  ^*bStep^*n  or a  ^*bFlow^*n  depending on which of those two buttons you last clicked.  
+|at|@0
 ^r Roger Pfister   -   December 2013|
 
-ht|x|
+at|^a|
 pg| ***** 0 ***** |
 
 
 qx|Nav1|
-at|^b@2Some text |
+at|^b@2|cp|7|at|^*bSome Text^*n|cp||at| |
 pg| ***** 1 ***** |
 
 
-at| additional text |
+at|    M|
 pg| ***** 2 ***** |
 
 
 qx|Nav2|
-at| guess what - text |
+at| o|
 pg| ***** 3 ***** |
 
 
-at| guess what - text |
+at| r|
 pg| ***** 4 ***** |
 
 
-at| guess what - text |
+at| e|
 pg| ***** 5 ***** |
 
 
-qx|Nav3|
-at| more  text |
+qx|Nav3,wide|
+at|   +  |
 pg| ***** 6 ***** |
 
 
 qx|Nav4|
-at| and more text |
+at| more |
 pg| ***** 7 ***** |
 
 
-at| and more text .|
+at| + |
 pg| ***** 8 ***** |
 
 
-at| and more text ..|
+at| $ |
 pg| ***** 9 ***** |
 
 
-at| also more text ...|
+at| $ |
 pg| ***** 10 ***** |
 
 
 qx|Nav5|
-at| and yet text text |
+at| . . . .  |
 pg| ***** 11 ***** |
 
 
-at| and yet text text |
+at| Last |
 pg| ***** 12 ***** |
 
 

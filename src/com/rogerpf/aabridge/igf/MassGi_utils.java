@@ -20,17 +20,21 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLDecoder;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.StringTokenizer;
 
 import com.rogerpf.aabridge.controller.AaBridge;
 import com.rogerpf.aabridge.controller.Aaa;
 import com.rogerpf.aabridge.controller.App;
+import com.rogerpf.aabridge.controller.CmdHandler;
 import com.rogerpf.aabridge.controller.q_;
 import com.rogerpf.aabridge.igf.MassGi.GraInfo;
 import com.rogerpf.aabridge.model.Bid;
@@ -121,7 +125,7 @@ public class MassGi_utils {
 		// @formatter:on
 	}
 
-	public static void do_tutorialBackToMovie() {
+	public static void do_dealmodeBackToMovie() {
 		// ==========================================================================
 
 		/** So we must want to transition  into 'tutorial' aka movie mode
@@ -134,80 +138,6 @@ public class MassGi_utils {
 		App.frame.repaint();
 	}
 
-	public static void do_tutorialIntoDealEdit() {
-		// ==========================================================================
-
-		if (App.visualMode != App.Vm_DealAndTutorial)
-			return;
-
-		/** We are in a tutorial mode and wish to  PLAY  the current App.deal
-		 */
-		if (App.deal.isSaveable() == false)
-			return;
-
-		App.localShowHidden = false;
-
-		if (App.respectLinYou == false) { // full complex tutorials do their own thing
-			App.deal.youSeatHint = App.deal.contractCompass.rotate(App.youSeatForLinDeal.rotate(Dir.South));
-		}
-
-		App.setVisualMode(App.Vm_InsideADeal);
-
-		if (App.deal.isBidding()) {
-			App.setMode(Aaa.EDIT_BIDDING);
-//			App.reviewBid = 0;
-//			App.reviewTrick = 0;
-//			App.reviewCard = 0;
-		}
-		else {
-			if ((App.mg.lin.linType == Lin.FullMovie) && App.showRedEditArrow)
-				App.gbo.showEditHint();
-
-			App.setMode(Aaa.EDIT_PLAY);
-//			App.reviewBid = 0;
-//			App.reviewTrick = 0;
-//			App.reviewCard = (App.deal.countCardsPlayed() > 0) ? 1 : 0;
-		}
-
-	}
-
-	public static void do_tutorialIntoDealPlay() {
-		// ==========================================================================
-
-		if (App.visualMode != App.Vm_DealAndTutorial)
-			return;
-
-		/** We are in a tutorial mode and wish to  PLAY  the current App.deal
-		 */
-		if (App.deal.isSaveable() == false)
-			return;
-
-		App.localShowHidden = false;
-
-		if (App.respectLinYou == false) { // full complex tutorials do their own thing
-			App.deal.youSeatHint = App.deal.contractCompass.rotate(App.youSeatForLinDeal.rotate(Dir.South));
-		}
-
-		App.setVisualMode(App.Vm_InsideADeal);
-
-		if (App.deal.isBidding()) {
-			App.setMode(Aaa.NORMAL_ACTIVE);
-//			App.reviewBid = 0;
-//			App.reviewTrick = 0;
-//			App.reviewCard = 0;
-		}
-		else {
-			if ((App.mg.lin.linType == Lin.FullMovie) && App.showRedEditArrow)
-				App.gbo.showEditHint();
-
-			App.setMode(Aaa.NORMAL_ACTIVE);
-//			App.reviewBid = 0;
-//			App.reviewTrick = 0;
-//			App.reviewCard = (App.deal.countCardsPlayed() > 0) ? 1 : 0;
-		}
-
-	}
-
 	public static void do_tutorialIntoDealStd() {
 		// ==========================================================================
 
@@ -218,8 +148,6 @@ public class MassGi_utils {
 		 */
 		if (App.deal.isSaveable() == false)
 			return;
-
-		App.localShowHidden = false;
 
 		if (App.respectLinYou == false) { // full complex tutorials do their own thing
 			App.deal.youSeatHint = App.deal.contractCompass.rotate(App.youSeatForLinDeal.rotate(Dir.South));
@@ -237,12 +165,27 @@ public class MassGi_utils {
 		else {
 			App.setMode(Aaa.REVIEW_PLAY);
 
-			if ((App.deal.countCardsPlayed() > 0) && App.showOpeningLead) {
+			if (App.deal.eb_blocker && ((App.reviewTrick * 4 + App.reviewCard) < App.deal.eb_min_card)) {
+				App.reviewTrick = App.deal.eb_min_card / 4;
+				App.reviewCard = App.deal.eb_min_card % 4;
+			}
+			else if ((App.deal.countCardsPlayed() > 0) && App.showOpeningLead) {
 				App.reviewCard = 1;
 			}
+		}
 
-			if ((App.mg.lin.linType == Lin.FullMovie) && App.showRedEditArrow)
-				App.gbo.showEditHint();
+		if (App.localShowHiddPolicy != 2) {
+			App.localShowHidden = (App.localShowHiddPolicy == 1);
+		}
+
+		if (!App.dealEnteredOnce) {
+			App.dealEnteredOnce = true;
+			App.frame.executeCmd("showSeatChoiceOpts_noSizeChange");
+			App.frame.repaint();
+		}
+
+		if ((App.mg.lin.linType == Lin.FullMovie) && App.showRedEditArrow) {
+			App.gbo.showEditHint();
 		}
 
 	}
@@ -310,6 +253,8 @@ public class MassGi_utils {
 			pg = mg.getPrevPg(pg);
 			GraInfo gi = mg.giAy.get(pg);
 			Deal deal = gi.deal;
+			if (deal.eb_blocker)
+				break;
 			if (deal_bckCand.coreEqualTo(deal) == false)
 				break;
 			int score = deal.completenessScore();
@@ -348,7 +293,7 @@ public class MassGi_utils {
 
 		// save the results to a log file
 		try {
-			String logFilePath = App.autoSavesPath + File.separator + "aaBridge__launch_lin_file__log.txt";
+			String logFilePath = App.autoSavesPath + "aaBridge__launch_lin_file__log.txt";
 			FileWriter fw = new FileWriter(logFilePath);
 			BufferedWriter bw = new BufferedWriter(fw);
 			for (String line : log) {
@@ -402,7 +347,7 @@ public class MassGi_utils {
 		// runTargetName = "C:\\a\\aaBridge_1.2.0.1111.jar";
 		// locMethodFile = new File(runTargetName);
 
-		if (runTargetName.endsWith(".jar")) {
+		if (runTargetName.toLowerCase().endsWith(".jar")) {
 
 			// We are running in a .jar on either windows, mac or linux or ...
 			pwdFile = locMethodFile.getParentFile();
@@ -890,6 +835,151 @@ public class MassGi_utils {
 		}
 	}
 
+	@SuppressWarnings("deprecation")
+	public static String createLinFileFromText(String in) {
+		// =============================================================================
+
+		in = in.trim();
+		if ((in.startsWith("\"") && in.endsWith("\"")) || (in.startsWith("'") && in.endsWith("'"))) {
+			in = in.substring(1, in.length() - 1);
+		}
+
+		String proofLin1 = "bbo=y&lin=";
+		String proofLin2 = "bbo=y&amp;lin=";
+
+		boolean b1 = false;
+
+		if ((b1 = in.contains(proofLin1)) || in.contains(proofLin2)) {
+			int start = (b1) ? (in.indexOf(proofLin1) + proofLin1.length()) : (in.indexOf(proofLin2) + proofLin2.length());
+			String lin = in.substring(start);
+			lin = URLDecoder.decode(lin);
+
+			Deal deal = new Deal(0);
+			String dealName = CmdHandler.makeDealFileNameAndPath(deal, "", "");
+
+			dealName = dealName.replace("Not-Yet-Bid", "dropped_text");
+
+			try {
+				FileOutputStream fileOut = new FileOutputStream(dealName);
+
+				BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(fileOut, "utf-8"));
+				writer.write(lin);
+				writer.close();
+
+				fileOut.close();
+
+			} catch (Exception e) {
+				return ""; // fail
+			}
+
+			return dealName;
+		}
+
+		int qPos = in.indexOf("?");
+
+		if (qPos > 0)
+			in = in.substring(qPos + 1);
+
+		in = in.replace("%20", " ");
+
+		Deal deal = new Deal(0 /*ignored */);
+
+		StringTokenizer st = new StringTokenizer(in, "&");
+
+		String s = "", w = "", n = "", e = "", auction = "", play = "";
+		int claim = -1, linDealer = 1; // = North(0) + 1
+
+		while (st.hasMoreTokens()) {
+
+			String pair = st.nextToken();
+
+			StringTokenizer tp = new StringTokenizer(pair, "=");
+
+			if (tp.countTokens() != 2)
+				continue;
+
+			String type = tp.nextToken();
+			String val = tp.nextToken();
+
+			if (type.contentEquals("sn")) {
+				deal.hands[Dir.South.v].playerName = URLDecoder.decode(val);
+			}
+			else if (type.contentEquals("wn")) {
+				deal.hands[Dir.West.v].playerName = URLDecoder.decode(val);
+			}
+			else if (type.contentEquals("nn")) {
+				deal.hands[Dir.North.v].playerName = URLDecoder.decode(val);
+			}
+			else if (type.contentEquals("en")) {
+				deal.hands[Dir.East.v].playerName = URLDecoder.decode(val);
+			}
+			else if (type.contentEquals("s")) {
+				s = val;
+			}
+			else if (type.contentEquals("w")) {
+				w = val;
+			}
+			else if (type.contentEquals("n")) {
+				n = val;
+			}
+			else if (type.contentEquals("e")) {
+				e = val;
+			}
+			else if (type.contentEquals("d")) { // dealer
+				Dir dir = Dir.directionFromChar((val + "n").charAt(0));
+				// for lin '1'=South, '4'=East, aaBridge internal 2=South, 0=North
+				linDealer = ((dir.v + 2) % 4) + 1; // the + 1 is adding the BBO extra code value of 0
+			}
+			else if (type.contentEquals("a")) {
+				auction = val;
+			}
+			else if (type.contentEquals("v")) {
+				deal.setVulnerability(val);
+			}
+			else if (type.contentEquals("b")) {
+				deal.realBoardNo = Aaa.extractPositiveInt(val);
+				deal.displayBoardId = val;
+			}
+			else if (type.contentEquals("p")) {
+				play = val;
+			}
+			else if (type.contentEquals("c")) {
+				claim = Aaa.parseIntWithFallback(val, -1);
+			}
+		}
+
+		ArrayList<String> h = new ArrayList<String>();
+
+		h.add(linDealer + s);
+		h.add(w);
+		h.add(n);
+		h.add(e);
+
+		deal.fillDealExternal(h, "yesFill");
+
+		deal.makeLinBid_RearAlert(auction);
+
+		for (int i = 0; (i + 1) < play.length(); i += 2) {
+			String card = play.substring(i, i + 2);
+			deal.playLinCard(card);
+		}
+
+		if (claim > -1) {
+			deal.endedWithClaim = true;
+			deal.tricksClaimed = claim;
+		}
+
+		String dealName = CmdHandler.makeDealFileNameAndPath(deal, "", "");
+
+		String msg = CmdHandler.saveDealAsSingleLinFile(deal, dealName);
+		if (!msg.isEmpty()) {
+			System.out.print("createLinFileFromText - FAILED  " + msg + "  " + dealName);
+			return null;
+		}
+
+		return dealName;
+	}
+
 }
 
 /**
@@ -905,10 +995,10 @@ class Capture_gi_env {
 	boolean underline;
 	boolean boxed;
 
-	Color color_bg; // bg is the background color
 	Color color_cp; // cp is font color
-//	Color color_cq; // cq is question box fill color
-	Color color_cs; // cs is self made box fill
+	Color color_cs; // cs is 'user made box' fill color
+
+	public boolean gray_fade;
 
 	int lb_position; // /* question position override - 'u' 20th letter counting 'a' = 0 means bottom of the screen as normal */
 
@@ -938,10 +1028,10 @@ class Capture_gi_env {
 
 		boxed = o.boxed;
 
-		color_bg = o.color_bg;
 		color_cp = o.color_cp; // This is the default colour used by font 0
-//		color_cq = o.color_cq;
 		color_cs = o.color_cs;
+
+		gray_fade = o.gray_fade;
 
 		lb_position = o.lb_position;
 
@@ -973,10 +1063,10 @@ class Capture_gi_env {
 
 		boxed = false;
 
-		color_bg = Color.WHITE;
-		color_cp = Color.BLACK; // This is the default colour used by font 0
-//		color_cq = Color.WHITE;
-		color_cs = Color.WHITE;
+		color_cp = Color.BLACK; // black This is the default colour used by font 0
+		color_cs = Aaa.tutorialBackground;
+
+		gray_fade = false; // since build 2014 gray_fade is disabled but could be reinstated
 
 		lb_position = 20; /* 'u' 20th letter counting 'a' = 0  means bottom of the screen as normal */
 
@@ -1008,6 +1098,9 @@ class Capture_gi_env {
 
 		font_slot_fp = 0;
 		color_cp = Color.BLACK;
+		color_cs = Aaa.tutorialBackground;
+
+		// gray_fade unchanged
 
 		// lb_position unchanged
 
@@ -1061,6 +1154,11 @@ class Hyperlink {
 	public void actionLink() {
 		// =============================================================================
 		assert (false); // always overridden
+	}
+
+	public String getLabelText() {
+		// =============================================================================
+		return linkInfo;
 	}
 
 }

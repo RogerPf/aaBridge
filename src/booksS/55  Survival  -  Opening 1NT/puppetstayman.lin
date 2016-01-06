@@ -2,9 +2,10 @@
 %%Last edited October 9, 2013
 %%%% By Kia, BBO nickname "nome"
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-fh|155|ff|1Arial|fb|110|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|155|ff|1Arial|fb|17|fm|1|       FONT SIZE AND TYPE FOR 1
 fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
 fh|340|ff|3Arial|fb|35|fm|3|                           FOR 3
+fh|460|ff|4Arial|fb|45|fm|4|                           FOR 4
 fb|49|fm|4|fb|4|fm|4|
 cr|116|cg|116|cb|1255|              blue 1
 cr|2255|cg|2255|cb|264|             gold 2
@@ -15,7 +16,8 @@ cr|6124|cb|6250|cg|6200|             6=TURQUOISE
 cr|70|cb|7220|cg|7235|              green/blue 7
 cr|8255|cb|80|cg|80|                red 8
 cr|9128|cb|90|cg|950|               Reddish-brown 9
-bt||ht|b|FP|2|cs|1|CP|4|at|^-{    Puppet Stayman    }
+bt||ht|b|FP|4|cs|1|CP|4|at|
+^-{    Puppet Stayman    }
 ^-|fp||cs||cp||at|^B@2
 This short synopsis on Puppet Stayman is mainly based on an article from The Bidding Toolkit series by ACBL with Howard's supervision. The original link from ACBL listed on the article is no longer working. However, you can get it from this new |CP|1|AT|^*Htiny.cc/2z4zyw^*N|CP||AT| link.|
 PG| ***** 0 ***** |
@@ -23,7 +25,20 @@ PG| ***** 0 ***** |
 
 %%%http://web2.acbl.org/documentLibrary/play/Commonly_Used_Conventions/puppetstayman.pdf
 
-ht|g|AT|^B@2Puppet Stayman is a version of Stayman used in response to a 2NT opening bid. Puppet Stayman also applies when it goes 2@C-P-2@D-P-2N-P-3@C. In general, whatever you play over a 2N opener, you also play over when opener bids 2@C and then rebids 2N. Usually, 2NT opener promises a balanced hand with 20 to 21 high-card points—with or without 5-card majors. Therefore, a 5-3 major suit fit could be missed if responder has only 3-card in the suit which opener has 5-cards. Puppet Stayman is intended to remedy that problem. Let us look at  a few examples. In all examples the opponents are silent.|
+ht|g|AT|
+
+
+
+^B@2Puppet Stayman is a version of Stayman used in response to a 2NT opening bid. (20-21 hcp)
+
+Puppet Stayman also applies when it goes 2@C-P-2@D-P-2N-P-3@C. (22+ hcp)
+
+In general, whatever you play over a 2N opener, you also play over when opener bids 2@C and then rebids 2N. Usually, 2NT opener promises a balanced hand with 20 to 21 high-card points—with or without 5-card majors. 
+
+Therefore, a 5-3 major suit fit could be missed if responder has only 3-card in the suit which opener has 5-cards. Puppet Stayman is intended to remedy that problem. Let us look at  a few examples. 
+
+
+In all examples the opponents are silent.|
 PG| ***** 1 ***** |
 
 

@@ -258,16 +258,16 @@ final static Mpat[][] knownCases = {
 			}
 
 			// Success we have (some sort of a) a match
-			{
-				String s = (g.deal.testId > 0) ? "test_" + g.deal.testId + " " : "         ";
-				s += (pdMatch ? " " : "X") + " ";
-				s += "Tk " + g.trickNumb;
-				s += "  Pos " + Zzz.playOrd_st[g.positionInTrick] + " " + g.hand.compass.toStr();
-				s += "  mPos " + Zzz.playOrd_st[matchPosition];
-				// s += "  Lead " + g.leader.compass.toStr();
-				s += "  " + this + "   " + g.debug_suit.toString() + (plChar == 0 ? "" : (" " + plChar));
-				System.out.println(s);
-			}
+//			{
+//				String s = (g.deal.testId > 0) ? "test_" + g.deal.testId + " " : "         ";
+//				s += (pdMatch ? " " : "X") + " ";
+//				s += "Tk " + g.trickNumb;
+//				s += "  Pos " + Zzz.playOrd_st[g.positionInTrick] + " " + g.hand.compass.toStr();
+//				s += "  mPos " + Zzz.playOrd_st[matchPosition];
+//				// s += "  Lead " + g.leader.compass.toStr();
+//				s += "  " + this + "   " + g.debug_suit.toString() + (plChar == 0 ? "" : (" " + plChar));
+//				System.out.println(s);
+//			}
 
 			if (brk > 0)
 				brk++; // put your breakpoint here
@@ -275,10 +275,10 @@ final static Mpat[][] knownCases = {
 			// we only report the rank to be played if the caller is in the seat asked about
 			if (isWhatToPlayWanted) {
 				if (pdMatch == false || (pl[matchPosition].length() <= k)) {
-					if (i > 0) {
-						System.out.println("ERROR ====> Mpat " + ((g.deal.testId > 0) ? "test_" + g.deal.testId : " ") + " matchPosition " + g.positionInTrick
-								+ " missing pl[] entry 'what to play' -  Mpat " + this);
-					}
+//					if (i > 0) {
+//						System.out.println("ERROR ====> Mpat " + ((g.deal.testId > 0) ? "test_" + g.deal.testId : " ") + " matchPosition " + g.positionInTrick
+//								+ " missing pl[] entry 'what to play' -  Mpat " + this);
+//					}
 					return false;
 				}
 

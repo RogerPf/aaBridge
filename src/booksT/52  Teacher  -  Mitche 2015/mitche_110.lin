@@ -1,0 +1,841 @@
+fh|130|ff|1Times New Roman|fb|14|fm|1|                       
+fh|240|ff|2Times New Roman|fb|24|fm|2|
+fh|340|ff|3Times New Roman|fb|3y|fm|3|fu|3y|
+fh|490|ff|4Times New Roman|fb|49|fm|4| 
+cr|164|cg|1255|cb|1255|         Neon Green 1
+cr|2000|cg|2000|cb|2139|        Dark Blue 2        
+cr|3255|cg|3250|cb|3205|        White   3
+cr|416|cg|4128|cb|416|           Green   4
+cr|5065|cg|5105|cb|5255|        Light Blue 5
+cr|6238|cg|6106|cb|6080|         Red  
+cr|8255|cg|8250|cb|8205|          Red 8
+cr|9176|cg|9048|cb|9096|        black  blank
+bt||
+bg|2|
+ht|e|
+fp|4|cs|1|cp|1|AT|^d@2^x@3{
+^-"Bid, Play and Discuss" 
+     
+2/1 with
+  
+"MITCHE" 
+|fp|2|cs|1|cp|2|at|     
+BILies Retreat, 08-09-2015 (mitche 110) 
+Tuesdays at 20.30 Eastern time
+^-}|
+ht|z|fp|1|cp|1|at|^b©Moviemakers: GG_Bridge & Karen10            click   ^$40   to start| 
+pg| ***** 0 ***** |
+
+
+nt|| 
+
+bg|3|
+tu||
+fp|3|cp|2|cs||ht|c|3d|3|at|^b{ Table of Content  }|cs|1|at|
+
+^b{^*GIntro,^*B Introduction: ^*N  }
+
+^b{^*GXtra,^*BExtra:  Convention Card (part 2): Major Suit Opening   ^*N  }
+
+^b{^*GB1,^*B Board 1:   Declarer: "defense" against bad splits  ^*N }
+
+^b{^*GB2,^*B Board 2:   Cuebid by Responder + Defense: read partner's opening lead^*N }  
+
+^b{^*GB3,^*B Board 3:   Balancing ^*N } 
+
+^b{^*GB4,^*B Board 4:   Preempt early  ^*N }  
+
+^b{^*GB5,^*B Board 5:   Balancing ^*N } 
+
+
+
+
+^bYou can use the  ^$40  to turn the pages
+^buse ^$41  to skip to the next board.   and ^$7  to go back to first page current board 
+ ^b You can use these links for fast referral
+
+|
+pg| ***** 1 ***** |
+
+
+nt|| 
+
+bg|3|
+qx|kmps,T|
+tu||
+mn|Settings|
+fp|3|cp|2|cs|1|ht|c|3d|3|at|{^f Settings for .lin presentations   }|
+fp|1|cp|9|cs|3|ht|e|at|
+^b@2MM: The recommended screen resolution for .lin movies is 1440 x 900 pixels 
+(rightclick on your desktop,select "personalize" "screen defenitions")
+Also, make sure you have "widescreen" checked in your windows BBO-version
+(If you're not sure about your settings log into your BBO windows version then:  
+click the yellow tool at bottom and under the "general" tab check "widescreen" and save)
+This will prevent the "cutting off" of the bottom parts or scrambling of your text in these presentations.
+
+If you downloaded BBO recently, you will not be able to get online with the windows version...
+You can still change or check your settings: 
+Go to your C disc, and under "programs" find the Bridge Base Online folder
+Open it and find the "profiles" folder
+Open and scroll to find: BBO_Default_Settings 
+line 71 should read: WIDE_CLIENT=1
+If your setting is 0, change it to 1 and save.
+
+As an ALTERNATIVE: Open your aaBridge program and simply drag and drop the file of this presentation 
+on the aaBridge screen. 
+If you don't have aaBridge yet, here is a link for the download of the latest** version:|cp|2|at|  
+
+^*hrogerpf.com/aaBridge^*n
+
+|cp||at|^*b**Please note that with Roger's latest release of aaBridge, there is a WONDERFUL defense tool built in!!^*n
+|cp|6|at|In aaBridge, click the file "Defend Expert", at the bottom of the left column.
+The PDF file (that you can download to your desktop as well) will explain it all!
+Also on aaBridge's Welcome page, check out the |cp||at|^*BDFC^*N|cp|6|at| (Distribution Flash Cards) training tool with 
+video and "exam/quiz" options.|
+pg| ***** 2 ***** |
+
+
+nt||
+
+
+bg|3|
+qx|Intro,T|
+tu||
+mn|Introduction|
+fp|3|cp|2|cs|1|ht|c|3d|3|at|{^f Mitch Edelman, aka MITCHE  }|
+fp||cp|2|cs|3|ht|e|at|
+^b@2Mitch (now happily retired) is a computer scientist and was an adjunct faculty member at UMBC 
+(in the Computer Science department). 
+Mitch lives in Finksburg, Md, a suburb of Baltimore with his wife Sue (who loves puttering with the plants in the back 
+yard), 3 (spoiled) rescue cats and aquaria.
+
+Mitch is also an active bridge player. 
+Mitch learned bridge while in college and took a 20 year break from tournament bridge for graduate school, 
+career and marriage.
+
+Mitch is an avid amateur photographer, whose shots have appeared in a number of books of poetry.
+
+Mitch joined the BIL’s Mentoring Team February 24, 2010 – Play and Discuss 2/1 
+most suited to the improving/upper intermediate player
+
+When a bridge player starts to get serious about improving his/her game, s/he discovers an exciting 
+and challenging world of bidding systems, conventions and techniques.
+
+"Intuition and card-sense provide a floor for our level of bridge expertise. Improving our proficiency at bridge 
+takes practice and study. 
+They say that “practice makes perfect”, but that is only half the story.
+
+Perfect Practice makes for perfect performance, and in our 2/1 bid, play and discuss” sessions, 
+we will transform practice into perfect practice.|
+pg| ***** 3 ***** |
+
+
+nt||cp|2|at|^b@2
+
+We will use the popular 2 over 1 standard bidding system, probably the most widely-used system in North 
+America, if not the world. We will cover those conventions and treatments most commonly used by tournament 
+players. We will also discuss play from declarer’s and defenders’ perspective.
+
+We will cover the 2/1 system and the thinking that goes into bidding and play. My goal is to improve your 
+technical skills in a friendly environment, so that you can hold your own at the table, be it on BBO or in a 
+club or tournament game.
+
+I recommend a few bidding tools for all of us: 
+first, forcing No Trump, Jacoby 2NT, Bergen Raises, and Key Card Blackwood (1430 recommended).
+Also, I suggest using Jacoby Transfers and, if you know them, Texas Transfers.
+Negative doubles are standard thru 2@s (or if you're OK with them, thru 3@d.),
+and best that you stick to standard signals and carding.
+
+Questions are always OK, so please ask if you need explanations.
+I will assume that you have learned SAYC, have played a bit, are interested in improving and seriously 
+committed to enjoying yourself too.
+
+The objectives: "To acquire bidding judgment and avoiding common mistakes in play."
+Mitch Edelman aka mitche 
+
+@h@h Many thanks to Eileen (wyoming33) for saving the hands and editing the chatlog!  @h@h
+|
+pg| ***** 4 ***** |
+
+
+nt|| 
+
+bg|3|
+qx|Xtra,T|mn|Convention Card: Part 2 Major Opening|
+tu||
+fp|3|cp|2|cs|1|ht|c|3d|3|at|{^f Convention Card: Part 2  Major Opening  }|
+fp||cp|2|cs|3|ht|e|at|^b@2^*BPart 2: Major Openings ++^*N
+
+Tonight we will do part 2 of our study "filling out the Convention Card": opening bids of 1 of a Major.
+
+We use a few conventions and treatments playing 1 of a Major: 
+In first or second seat: a 1M opening promises 5 cards or longer 
+In third or 4th seat, very rarely open with a strong 4 card suit.  
+Example: with   @SAx   @HAKQ10   @DQxx   @Cxxxx     open 1@h in third or 4th seat.  
+You want a heart led, not a club, and if the opps overcall 1@S, you may lose the @h suit.
+
+In the RESPONSES section:
+- double raise is WEAK (alertable).  
+- after overcall, double raise is WEAK. 
+
+Conventional raise:  we check 2NT and Splinter (both alertable).
+In the Other section:  Bergen Raises (some people play reverse Bergen).
+
+1NT Forcing by unpassed hand and we check 1NT SEMI-FORCING by passed hand. 
+Some people use 1NT forcing by passed hand, but I agree with Bergen here - semiforcing over a passed hand. 
+What is "semi-forcing?" |
+pg| ***** 5 ***** |
+
+
+at| 
+Essentially, if third seat opens a subminimum hand, something like  @SKJxxx   @HAxx   @Dxxx   @CQx    you will pass a semi-forcing 1NT.      You write "UPH" over forcing, "PH" over semi-forcing ( UPH = unpassed hand).
+
+We also play 2-way reverse Drury.|
+pg| ***** 6 ***** |
+
+
+nt||ht|c|cp|2|at|^b@2Other treatments and understandings:  
+1) a single raise is constructive, showing 3-card support and an 8-loser hand. 
+2) Because we play 2 over 1 GF,  we use these CONVENTIONAL CALLS:
+  a) NEW MINOR FORCING is a 1 round force and is alertable, 
+  b) WEAK JUMP SHIFTS, only into majors after opening 1@C or 1@d, and always in competition;  
+  c) FOURTH SUIT FORCING: my preference is to use it as game forcing. If you want to use it as 1 round force, that is 
+     acceptable, but I think not as useful as game force (alertable). 
+4) The auction 1@S--1NT/ 2@C--2@S shows a hand too weak to make a constructive raise. 
+5) 1M - 3NT = 3334 shape, no 4-card Major, 13-15 HCP.  The reason for this response is that it defines responder's 
+   hand very narrowly, and opener knows immediately whether to make a slam try.
+
+BERGEN RAISES: A Bergen raise shows 4-card support and less than game-forcing values:  
+1@S - 3@s = 0 to 6 points; 
+1@S - 3@c = 7 to 9+ dummy points; 
+1@S - 3@D = 10 to 12 dummy points.  I do not recommend reverse Bergen, because you are more likely to need a game 
+try after a 7 to 9 point raise than after a 10 to 12 point raise.
+
+Developments after 1@S -- 3@C:  Opener rebids 3@D as game try.  Responder signs off at 3@S with minimum hand, 
+any other bid shows a MAXIMUM (8 or 9 dummy points); 
+if responder bids a new suit over 3@D, it shows both a maximum and a feature (A or K). 
+
+Developments after 1@S-- 2@S:  After a single raise, a new suit by opener is a HELP SUIT GAME TRY.  
+Opener asks responder to look only at the second suit.  If responder can help avoid 3 quick losers in that suit, s/he bids game. Otherwise, sign off at 3 of the Major. 
+If opener bids again after a signoff, it cancels the meaning of Help Suit.  Opener is showing a genuine 2-suiter with
+extras, something like  @SKQ10xx   @hAx   @dAK109x   @Cx   where there is a good chance for slam.
+Example responder raised to 2@S with:    @sAxx   @hKJxx   @DJxxx   @cxx      Now slam is at worst 50%.
+The auction:   1@s - 2@s/3@D - 3@S/4@C* - 4@H* / 4NT - 5@C (RKC 1430) / 6@s  
+(4@c + 4@h are Italian control bids, see later  *ICB) |
+pg| ***** 7 ***** |
+
+
+nt||ht|c|cp|2|at|^b@2
+Self-Splinter: the auction 1@h - 2@h / 3@S (or 4@C or 4@D) shows a game-going hand, usually 6 or fewer losers AND a 
+singleton or void, e.g    @sKQ10xx   @hAxx   @dAKJx   @cx 
+
+Note the first hand had 5-5 shape, this one is 5341. By using the HSGT followed by another bid, opener can distinguish 
+between strong 5521 hands, or self-splinter with strong 5431 hands.
+
+Optional: 1@H - 2@H/ 2NT:  If opener bids 2NT after a constructive raise, responder bids his worthless short suit 
+(2 or fewer cards). This allows opener to judge how well hands fit without disclosing it to the defenders. 
+Example:    Kx   AK10xx   xx   AJ10x 
+Since no HSGT will tell opener what she needs to know, she bids 2NT over 2@H raise. 
+If responder has worthless shortness in either minor, game chances are good. 
+
+There are many other gadgets that can be added to this structure. We did not discuss dealing with overcalls or doubles,
+which are treated on the back of the card. We will deal with them later on.
+This presentation represents a fairly standard treatment of Major suit bids on BBO.
+If you play duplicate, this is also pretty standard among tournament players.
+There are some local variations - e.g. some people use limit raises instead of Bergen, and use the 3NT bid over 1@S 
+as 16-18.
+
+Another treatment: 1@S  - 1NT / 2 any - 2NT = 10-11 (or horrible 12) HCP.
+Also, very important: 1@S - 1NT / 2 any - 3NT = 16-18 HCP.
+Using those treatments, responder can describe balanced hands without going past 3NT.
+
+*ICB = Italian Control Bids. Here is how they work: 
+Let’s suppose that the auction begins 1@C - 1@H / 3@H. Opener has 16-18 support points and we are in a game forcing auction with Hearts as trumps. A new suit now by either partner is a control-showing bid. If the control bid is below game level, it shows first or second round control in the suit. |
+pg| ***** 8 ***** |
+
+
+nt||ht|c|cp|2|at|^b@2
+Also, you show controls UP THE LINE. If the control bid is ABOVE game, it promises first round control. 
+Here is an example:
+
+1@c - 1@H / 3@H - 4@C shows extra values (slam try) by responder, either @CA, @CK, void or singleton (you can clarify later) 
+AND since we bid controls up the line, it denies a spade control. 
+
+Let’s suppose that opener, having heard the 4@C bid, now bids 4@D, also a control bid. Since responder is known not to 
+have spade control (bypassed 3@S), the 4@D bid promises a diamond control AND ALSO a spade control 
+(if opener didn’t have a spade control, he just stops at 4@H because spades are wide open). 
+
+The idea of showing A or K is to discover below game level if you have more than one fast loser in a side suit. 
+Key Card Blackwood will handle trump losers, so ICB’s will help stay out of 33 point slams off the AK of a suit. 
+
+OK, let's play some bridge! 
+
+click ^$40 for Board 1
+
+MM: In "real time" bidding was discussed after the play.
+In this presentation it will be discussed right after the bidding.
+|
+pg| ***** 9 ***** |
+
+
+nt||
+
+%%%%%%%%%Board 1
+mn|Board 1|
+qx|B1,T|st||pn|johnny cra,CarlieG,ANON,don211
+
+
+|md|3S6JKH48QAD34QC67A,S2357TQH26JDTC9TQ,S9H59KD2789KAC3JK,
+
+|rh||ah|Board 1|st||sv|o|sk|s|
+
+mb|1D|mb|p|lb|*bWhat should South bid?^^1H|mb|1H|sk|w|lb|*bWhat should West bid?^^p|mb|p|sk|s|mb|2D|mb|p|lb|*bWhat should South bid?^^3N|mb|3N|sk||mb|p|mb|p|mb|p
+
+|
+pg| ***** 13 ***** |
+
+
+at|mitche: Bidding: Unless North overbids with 3@D, I think it's really hard to get to 6@d.  
+So 3NT is probably the contract that everyone will get to, just as N/S did here.
+Note: West's hand is just too cruddy for a 2@s WJO over 1@H.
+
+
+|
+pg| ***** 14 ***** |
+
+
+nt||sk|s|
+
+pc|S5|pc|S9|pc|SA|pc|S6|
+pg| ***** 15 ***** |
+
+
+pc|S8|pc|SK|pc|S2|pc|C3|
+pg| ***** 16 ***** |
+
+
+lb|*cWhat should card should South lead^^dQ^SjHAQ84CA76DQ43|
+pc|DQ|sk||pc|DT|pc|D2|pc|D5|
+pg| ***** 18 ***** |
+
+
+pc|D3|pc|H2|pc|DA|pc|D6|
+pg| ***** 19 ***** |
+
+
+pc|DK|pc|DJ|pc|D4|pc|H6|
+pg| ***** 20 ***** |
+
+
+pc|D9|pc|C2|pc|SJ|pc|HJ|
+pg| ***** 21 ***** |
+
+
+pc|HK|pc|H3|pc|H4|pc|S3|
+pg| ***** 22 ***** |
+
+
+pc|H9|pc|H7|pc|H8|pc|S7|
+pg| ***** 23 ***** |
+
+
+pc|H5|pc|HT|pc|HQ|pc|ST|
+pg| ***** 24 ***** |
+
+
+pc|HA|pc|C9|pc|CJ|pc|C4|
+pg| ***** 25 ***** |
+
+
+pc|C6|pc|CT|pc|CK|pc|C5|
+pg| ***** 26 ***** |
+
+
+pc|D8|pc|S4|pc|C7|pc|CQ|
+pg| ***** 27 ***** |
+
+
+pc|D7|pc|C8|pc|CA|pc|SQ
+
+|
+pg| ***** 28 ***** |
+
+
+sk||up|52|pf|y|
+
+at|mitche:  Play:   Only 1 item to consider: how to play the @D suit.  If they split 4-0 and EAST has all 4, declarer can
+do nothing about it.  But if WEST has @dJ1065, declarer should play the @DQ first.  Then, if East discards, declarer can 
+finesse twice in @D to pick up the suit.  So South made the "book" play with the @DQ.
+You should pay attention to these standard positions, like Qxx(x) opposite AK98x(x) as they come up pretty often.
+
+MM: By clicking on the cards, you can play the hand Double Dummy.  To continue with the next deal click  ^$40  
+|
+pg| ***** 29 ***** |
+
+
+pf||nt||
+
+
+%%%%%%%Board 2      
+mn|Board 2|
+qx|B2,T|pn|johnny cra,CarlieG,ANON,don211
+
+
+
+|md|4S57QH259D7C4578TK,S23KAH37JAD69JC26,S9THQD345TQAC39JQ,
+
+|rh||ah|Board 2|st||sv|n|sk|s|
+
+mb|1H|lb|*bWhat should South bid?^^P|mb|1S|sk|w|lb|*bWhat should West bid?^^2S|mb|2S|an|limit+ raise|sk||mb|3D|mb|3H|mb|p|mb|4H|mb|p|mb|p|mb|p
+
+|
+pg| ***** 32 ***** |
+
+
+at|mitche: Bidding: I wonder what 1@S was; if it was a misclick, then please ask for undo.
+If South intended to bid clubs, this hand is too weak for 2@C, and the club suit is too thin for 3@C, so best idea for
+South would be to pass.  
+Anyway, the 1@S bid gave West a chance to bid 2@S, to show 10+ dummy points and 4 hearts.
+And E/W eventually got to a good 4@h contract.  A cue bid by responder here is a 1 round force, and it shows either a
+limit raise (+) OR a game-forcing hand with responder having  her own good suit.  A free bid by responder is 1 round
+force in SA, so most of the time, the cue bid shows the limit raise.|
+pg| ***** 33 ***** |
+
+
+nt||
+at|mitche: I use a treatment called "negative free bids" in my standard partnerships, so I need to use either a negative
+X or cue bid to show a big hand.  Also, I will use the cue bid over a Major to show good 3-card support, K10x or so.
+There are other treatments available, but they tend to get kind of complicated.
+Well, cue = limit raise (+) is pretty standard, and over a double, 2NT as limit raise is the Jordan convention.  
+As for the opening 1@H, sure, why not -- 2 quick tricks, 4-5 in the Majors, Bergen 20.  I would like the @CA to be better placed, 
+and that is a negative on the hand, but I like opening any reasonable chance I get.
+
+
+|
+pg| ***** 34 ***** |
+
+
+nt||sk|n|
+
+pc|D7|pc|D9|pc|DA|pc|D2|
+pg| ***** 35 ***** |
+
+
+lb|*cWhat should North lead?^^D3^ST9HQDQT543CQJ93|pc|CQ|pc|CA|pc|C8|pc|C2|
+pg| ***** 37 ***** |
+
+
+sk||
+pc|H4|pc|H2|pc|HA|pc|HQ|
+pg| ***** 38 ***** |
+
+
+pc|H3|pc|D3|pc|HT|pc|H5|
+pg| ***** 39 ***** |
+
+
+pc|H6|pc|H9|pc|HJ|pc|D4|
+pg| ***** 40 ***** |
+
+
+pc|D6|pc|DT|pc|DK|pc|C4|
+pg| ***** 41 ***** |
+
+
+pc|S4|pc|S5|pc|S2|pc|S9|
+pg| ***** 42 ***** |
+
+
+pc|DQ|pc|D8|pc|C5|pc|DJ|
+pg| ***** 43 ***** |
+
+
+pc|D5|pc|S6|pc|C7|pc|H7|
+pg| ***** 44 ***** |
+
+
+pc|SA|pc|ST|pc|S8|pc|S7|
+pg| ***** 45 ***** |
+
+
+pc|SK|pc|C3|pc|SJ|pc|SQ|
+pg| ***** 46 ***** |
+
+
+mc|10
+
+|
+pg| ***** 47 ***** |
+
+
+sk||up|44|pf|y|
+
+at|mitche: Play: At trick 1, North missed an inference.  She sees the @D7 as opening lead, and the only cards she cannot
+see in the suit are K82.  When declarer plays the 2, North knows that all the cards but the K8 are accounted for, yes?
+So she should ask, "from what @D holding would South lead the 7"?  
+Clearly, it would not be from K7 or 87 doubleton.  And if it isn’t from either of those holdings, it is either from the K87 or
+singleton 7.  So the story the 7 tells is either K87 or singleton.  Either way, North can work out that it is 100% safe to lead
+a small @D at trick 2 (small for suit preference, showing something good in clubs). |
+pg| ***** 48 ***** |
+
+
+nt||
+at|mitche: It is a fundamental defensive principle.. try to work out suit placement based on cards you see at trick 1.
+South will ruff the @D, and if declarer guesses to play the @DK (he should not), the contract will fail by 1 trick.
+
+As for the losing spade finesse.. on the bidding, I would have taken the finesse too, but I would also wonder if South 
+has @sQ109xx and did not give his partner a ruff.
+
+MM: By clicking on the cards, you can play the hand Double Dummy.  To continue with the next deal click  ^$40  
+|
+pg| ***** 49 ***** |
+
+
+pf||nt||
+
+
+%%%%%%%%%%%Board 3
+mn|Board 3|
+qx|B3,T|pn|johnny cra,CarlieG,ANON,don211
+
+|md|1S36TH6TDJQKC478KA,S47JH89QAD2356TC5,S28QKH257JD89C369,
+
+|rh||ah|Board 3|st||sv|e|sk||
+
+mb|1C|mb|p|mb|1H|mb|p|mb|1N|mb|p|mb|p|mb|p
+
+|
+pg| ***** 50 ***** |
+
+
+at|mitche: Bidding: East needs to balance in. East can work out that West is not broke.
+
+
+
+
+
+|
+pg| ***** 51 ***** |
+
+
+nt||sk|s|
+
+pc|D3|pc|D8|pc|D4|pc|DJ|
+pg| ***** 52 ***** |
+
+
+pc|S3|pc|S4|pc|SK|pc|S5|
+pg| ***** 53 ***** |
+
+
+lb|*mWhat should declarer play from Dummy?^Spade~Heart~Diamond~Club^4|
+pc|D9|pc|DA|pc|DK|pc|D2|sk||
+pg| ***** 55 ***** |
+
+
+pc|D7|pc|DQ|pc|D5|pc|S2|
+pg| ***** 56 ***** |
+
+
+pc|S6|pc|S7|pc|SQ|pc|SA|
+pg| ***** 57 ***** |
+
+
+pc|CQ|pc|CK|pc|C5|pc|C3|
+pg| ***** 58 ***** |
+
+
+pc|HT|pc|HA|pc|H2|pc|H4|
+pg| ***** 59 ***** |
+
+
+pc|DT|pc|C6|pc|C2|pc|C4|
+pg| ***** 60 ***** |
+
+
+pc|D6|pc|C9|pc|S9|pc|C7|
+pg| ***** 61 ***** |
+
+
+pc|H8|pc|H5|pc|HK|pc|H6|
+pg| ***** 62 ***** |
+
+
+pc|H3|pc|ST|pc|HQ|pc|H7|
+pg| ***** 63 ***** |
+
+
+pc|H9|pc|HJ|pc|CT|pc|C8|
+pg| ***** 64 ***** |
+
+
+pc|S8|pc|CJ|pc|CA|pc|SJ
+
+|
+pg| ***** 65 ***** |
+
+
+sk||up|52|pf|y|
+
+at|mitche:  Play:   After the @SK is allowed to win at trick 2, declarer should play a club from dummy and cover East's 
+card as cheaply as possible.  If East plays an honor, South can play A, K and a third club to assure at least 6 tricks,
+and the 7th trick comes from one of the majors.  What declarer cannot afford to do is to part with his @D stopper until
+after he sets up clubs.  
+
+MM: By clicking on the cards, you can play the hand Double Dummy.  To continue with the next deal click  ^$40  
+|
+pg| ***** 66 ***** |
+
+
+pf||nt||
+
+
+%%%%%%%%Board 4
+mn|Board 4|
+
+qx|B4,T|pn|calligal,Realrowdy,kat827,CarlieG
+
+|md|2S39KH4TKD24TJQC3K,S246TJQH39QD56AC8,S7AH56AD8KC245TQA,
+
+|rh||ah|Board 4|st||sv|b|sk|w|lb|*bWhat could West bid?^^2S|
+
+mb|p|sk||mb|1C|mb|p|mb|1D|mb|2S|mb|3C|mb|p|mb|3N|mb|p|mb|p|mb|p
+
+|
+pg| ***** 68 ***** |
+
+
+at|mitche: Bidding: What do you all think of Norths 3@c bid? What would you have bid?|
+pg| ***** 69 ***** |
+
+
+at|
+First thought:   West's pass gave N/S a free run  - If she thought the hand was good enough to make a jump overcall 
+over 1@D, then she might have opened 2@S in first seat, BEFORE N/S  had the chance to exchange all that information.
+So can we agree that 2@S in first position is a better idea than 2@S over 1@D? As a general point, you are almost always 
+better off to get the first bid in.|
+pg| ***** 70 ***** |
+
+
+nt||
+at|Realrowdy:  Do you open weak in 1st seat?  Have heard so many views on that never know what is right.
+mitche:  Liza, I think that a first/second seat DISCIPLINED weak 2 is a pretty good idea, especially when the opps are
+vulnerable.  Here, 2@S means North has the choice of an offshape 2NT or a 3@C underbid.
+And North won't like either one.  So 2@S is --
+a) safe, with the @SQJ10xxx and 
+b) effective in disrupting N/S bidding.|
+pg| ***** 71 ***** |
+
+
+nt||
+at|mitche:  Now, on to 3@C.  I think that North has 3 plausible bids: 3@C, 3NT, or X. 
+3@C is an underbid.   3NT is a pretty fair guess, and if I am going to guess, I am gonna guess the bid that, if it works, 
+gives me the best score.  
+And X, if it isn't a support X, should be a "card-showing" double, asking responder to do something smart.  
+Here, South would bid 2NT (or maybe 3NT.)
+
+
+|
+pg| ***** 72 ***** |
+
+
+nt||sk|s|
+
+pc|SQ|pc|S7|pc|S8|lb|*cWhat should South play from hand?^^S3^SK93|pc|SK|
+pg| ***** 74 ***** |
+
+
+sk||pc|DQ|pc|D5|pc|D8|pc|D3|
+pg| ***** 75 ***** |
+
+
+pc|CK|pc|C8|pc|C2|pc|C6|
+pg| ***** 76 ***** |
+
+
+pc|C3|pc|D6|pc|CA|pc|C7|
+pg| ***** 77 ***** |
+
+
+pc|HA|pc|H2|pc|H4|pc|H3|
+pg| ***** 78 ***** |
+
+
+pc|CQ|pc|C9|pc|D2|pc|S2|
+pg| ***** 79 ***** |
+
+
+pc|CT|pc|CJ|pc|D4|pc|S4|
+pg| ***** 80 ***** |
+
+
+pc|S5|pc|S3|pc|S6|pc|SA|
+pg| ***** 81 ***** |
+
+
+pc|C5|pc|D7|pc|DT|pc|H9|
+pg| ***** 82 ***** |
+
+
+pc|C4|pc|H7|pc|DJ|pc|ST|
+pg| ***** 83 ***** |
+
+
+pc|H5|pc|H8|pc|HK|pc|HQ|
+pg| ***** 84 ***** |
+
+
+pc|HT|pc|SJ|pc|H6|pc|HJ|
+pg| ***** 85 ***** |
+
+
+pc|D9|pc|S9|pc|DA|pc|DK
+
+|
+pg| ***** 86 ***** |
+
+
+sk||up|52|pf|y|
+
+at|mitche: Play: I think that declarer's play should be to duck the first spade, win the second, and then clear the 
+clubs.  Once the clubs are cleared, she can go after diamonds in complete safety.
+At Matchpoints, the problem is a bit different. If you want to maximize your chances for overtricks, you must win 
+the first spade and hope to bring in 6 clubs, 2 spades, 2 hearts, and 4 diamonds.
+So lead small @D to K, and then a second @D to hand.
+Reason... If west has long spades, it is about 60% chance that East will be the only one who can win a club trick. |
+pg| ***** 87 ***** |
+
+
+nt||
+at|mitche:  (The @DA would be West's only entry to the spade suit - we want to remove the entry to the long suit as soon as we can.)  When East gets in with a club, she is unable to return a spade; you ducked the first spade.
+
+MM: By clicking on the cards, you can play the hand Double Dummy.  To continue with the next deal click  ^$40  
+|
+pg| ***** 88 ***** |
+
+
+pf||nt||
+
+%%%%%%%%%%%%board 5
+
+mn|Board 5|
+qx|B5,T|pn|calligal,Realrowdy,kat827,CarlieG
+
+|md|3S4H2589JD37QKC68K,S23678TJH36QDJCJA,S5QHTKAD2569AC79T,
+
+|rh||ah|Board 5|st||sv|n|sk|w|
+
+mb|1D|mb|p|mb|1H|lb|*bWhat should West bid?^^1S|mb|2S|sk|s|mb|p|mb|p|lb|*yShould South reopen the bidding?^^Y|mb|p
+
+|sk||
+pg| ***** 91 ***** |
+
+
+at|mitche: Bidding: With a defensive trick, I think I would bid 1@S rather than preempting. 
+I am not worried about being outbid when I have 7 spades, and I want to tell pard I have some cards outside the @s suit.
+But, I think that (even at this vulnerability), N/S can't sell out to 2@S.  South might balance with a double - with a
+decent 9 count, SOUTH knows that N/S have the balance of strength and with spade shortness, N/S will have a fit somewhere.
+If South is averse to doubling, she can make a slight underbid of 3@D (North did open 1@D, and the odds are pretty 
+good that she has 4 of them).|
+pg| ***** 92 ***** |
+
+
+nt||
+at|mitche: And that leads me to East's pass of 2@S.  
+When pard preempts and I have AK9 of her suit, I raise.  Do not wait!  When you make a delayed raise, you give the
+opponents a "fielder's choice."  They can either let you play or look for their own fit or double.   
+That is why West wants to show a defensive value, by the way.  East won't be taking a "phantom save" when she knows 
+that West has some defense, too.  (Actually, if East raises to 3@S, West will take a 4-level "sacrifice" and make it.)
+
+
+
+|
+pg| ***** 93 ***** |
+
+
+nt||sk|n|
+
+pc|HA|pc|H4|pc|H2|pc|H3|
+pg| ***** 94 ***** |
+
+
+lb|*ySouth played a discouraging card on Heart Ace - should North continue with the Heart King?^^y|sk|w|pc|HK|pc|H7|pc|H5|pc|H6|
+pg| ***** 96 ***** |
+
+
+pc|CT|pc|C2|pc|C6|pc|CJ|
+pg| ***** 97 ***** |
+
+
+lb|*cWhat should West play next?^^ca^Sjt87632HQCADj|
+pc|S2|pc|S5|pc|SA|pc|S4|
+pg| ***** 99 ***** |
+
+
+sk||
+pc|SK|pc|D3|pc|S3|pc|SQ|
+pg| ***** 100 ***** |
+
+
+pc|C3|pc|C8|pc|CA|pc|C7|
+pg| ***** 101 ***** |
+
+
+pc|HQ|pc|HT|pc|S9|pc|H8|
+pg| ***** 102 ***** |
+
+
+pc|CQ|pc|CK|pc|S6|pc|C9|
+pg| ***** 103 ***** |
+
+
+pc|SJ|pc|D9|pc|D4|pc|H9|
+pg| ***** 104 ***** |
+
+
+pc|ST|pc|D2|pc|D8|pc|HJ|
+pg| ***** 105 ***** |
+
+
+mc|10|
+pg| ***** 106 ***** |
+
+
+up|40|pf|y|
+
+at|mitche:  Play:  What card did South play on the @HA at trick 1?  It was the 2.
+What does the 2 mean?  It means, "No @HQ."
+It is discouraging -- So North may wish to look for a reasonable shift.
+Now here, North may reason that the club suit might give declarer a few discards (it will), so cashing the @HK makes 
+sense here.
+But the important thing: the @H2 says that South has no great love of hearts.|
+pg| ***** 107 ***** |
+
+
+nt||
+at|mitche: When declarer gets a club shift to her J, she then should play off the @CA and then a trump to dummy, followed by a club ruff.       When the outstanding clubs divide 3-3, she discards the losing @D and takes 11 tricks.
+OK, let's summarize the key points from these hands:
+a) If you have a hand worth bidding in first/second seat, it is to your advantage to do so. Getting the first bid in 
+is a great advantage.
+b) When third hand sees the opening lead, she should try to work out what the opening leader's holding is in that suit. 
+Sometimes you will be able to work out the entire suit at trick 1.|
+pg| ***** 108 ***** |
+
+
+nt||
+at|mitche:   
+OK.. thanks to Eileen for her generous assistance, and to all of you for your courteous attention and questions.
+
+
+MM: By clicking on the cards, you can play the hand Double Dummy.
+This concludes this presentation, I hope you enjoyed, Karen10 & GG_Bridge
+|
+pg| ***** 109 ***** |
+
+
+pf||
+
+
+
+
+

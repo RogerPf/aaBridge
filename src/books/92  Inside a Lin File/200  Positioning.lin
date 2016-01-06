@@ -1,0 +1,58 @@
+%% Positioning
+%% Last edited  2014 Nov 03
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|135|ff|1Arial|fb|10|fm|1|       Font def 1
+fh|240|ff|2Arial|fb|20|fm|2| 
+fh|350|ff|3Arial|fb|30|fm|3| 
+fh|460|ff|4Arial|fb|40|fm|4|
+
+fh|570|ff|5Arial|fb|50|fm|5|
+fh|680|ff|6Arial|fb|60|fm|6|
+
+cr|516|cg|5128|cb|516|      5  green 
+cr|60|cg|60|cb|6255|        6  blue
+cr|7255|cb|70|cg|70|        7  red
+
+qx|vPos|
+bt||
+at|
+^b@2^*bPositioning   ^*n              ^*bht^*n!|cp|Red|at|^*ba^*n|cp||at|!       ^*bVertical Position^*n        ^p(always puts you on the left margin)
+  
+You can set the current vertical position (where, up or down the page the next line of text will appear) by using a two letter pair 'bar command'.  Unfortunately this command has about the worst name possible.
+
+^c!^*bht^*n!|cp|Red|at|^*ba^*n|cp||at|!    @-   think        ^*bH^*nell of a silly name for vertical ^*bT^*next position         (or whatever)   [sigh]
+
+Where  |cp|Red|at|^*ba^*n|cp||at|   is  a to z,  or  A to Z.     Every page is divided up into 26 zones (not the same as the height of a line) the top of the page is at zone 'a' and zone 'z' is little up from the bottom of the page. When a table shows, the zones are thiner.
+
+       
+^b@2^*bNudges      |cp|blue|at|Added in ^*b aaBridge  ^*nbuild |cp|7|at|^*b 2814^*n|cp||
+
+at|^n ^*bn##^*n!|cp|green|at|^*bb^*n|cp||at|!   ^p   ^*bn##^*n!|cp|red|at|^*ba^*n|cp|gr|at|^*bb^*n|cp||at|!   ^s Nudge  ^*bDown^*n
+   ^n ^*bn@^^*n!|cp|green|at|^*bb^*n|cp||at|!   ^p   ^*bn@^^*n!|cp|red|at|^*ba^*n|cp|gr|at|^*bb^*n|cp||at|!   ^s Nudge  ^*bUp^*n
+   ^n ^*bn<^*n!|cp|green |at|^*bb^*n|cp||at|!   ^p   ^*bn<^*n!|cp|red |at|^*ba^*n|cp|gr|at|^*bb^*n|cp||at|!   ^s Nudge  ^*bLeft^*n
+   ^n ^*bn>^*n!|cp|green |at|^*bb^*n|cp||at|!   ^p   ^*bn>^*n!|cp|red |at|^*ba^*n|cp|gr|at|^*bb^*n|cp||at|!   ^s Nudge  ^*bRight^*n|
+   
+ht|l|n^|7|at|
+^cwhere  |cp|red  |at|^*ba^*n|cp||at|   is    a to z,    A to Z
+^cwhere  |cp|green|at|^*bb^*n|cp||at|   is    a to z,    A to Z    or   0 to 9
+
+The more common  ^*bxx^*n!|cp|gr|at|^*bb^*n|cp||at|!  style ^*b nudges ^*n the current wirting position  Up, Down, Left or Right  by a small amount.
+
+The  |cp|red|at|^*ba^*n|cp|gr|at|^*bb^*n|cp||at|  style does the same but ^*b first ^*n takes you to the  |cp|red|at|^*ba^*n|cp||at|  letter position, as appropriate.    For Up and Down this is the same as the  ^*bht^*n!|cp|red|at|^*ba^*n|cp||at|!  command covered above (but without jumpting to the left margin).
+
+For Left and Right this is the same as first doing the inline text command   ^*bat^*n!...^*n|cp|red|at|^*b^@a^*n|cp||at|...!
+
+Note  -  you cannot jump with an  |cp|red|at|^*ba^*n|cp||at|  unless you also have a  |cp|gr|at|^*bb^*n|cp||at|  but you can use        ^*bxx^*n!|cp|red|at|^*ba^*n|cp||at|^*b0^*n!    (0  is zero)
+
+
+^*bExample^*n
+^e Text |n#|7|at|can be nudged down|n^|e|at| and up  or |n>|z|at|RIGHT or |n<|5|at|LEFT|at|                  
+
+
+^e Text ^*b|cp|red|at|!n##!7!at!|cp||at|^*n can be nudged down ^*b|cp|red|at|!n@^!b!at!|cp||at|^*n and up  or ^*b|
+cp|red|at|!n>!z!at!|cp||at|^*n  RIGHT or ^*b|cp|red|at|!n<!5!at!|cp||at|^*n LEFT
+
+
+|fp||ht|z|cp||at|
+^a^*b end ^*n|

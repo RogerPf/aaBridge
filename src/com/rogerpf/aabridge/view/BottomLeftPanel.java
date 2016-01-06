@@ -59,13 +59,16 @@ public class BottomLeftPanel extends ClickPanel {
 	public void matchPanelsToDealState() {
 
 		if (App.isVmode_Tutorial()) {
-			c0_2_0__empt.setVisible(!App.deal.isFinished());
+			boolean showScore = App.deal.isFinished() && App.tutorialShowAuction;
+			c0_2_0__empt.setVisible(!showScore);
 			c0_2_0__clam.setVisible(false);
 			c0_2_0__mdp.setVisible(false);
-			c0_2_0__wtsp.setVisible(App.deal.isFinished());
+			c0_2_0__wtsp.setVisible(showScore);
 		}
 		else if (App.isMode(Aaa.REVIEW_PLAY) || App.isMode(Aaa.REVIEW_BIDDING) || App.isModeAnyEdit()) {
-			boolean show_wtsp = App.isMode(Aaa.REVIEW_PLAY) && App.deal.isFinished() && ((App.reviewTrick * 4 + App.reviewCard) >= App.deal.countCardsPlayed());
+
+			boolean show_wtsp = App.tutorialShowAuction && App.isMode(Aaa.REVIEW_PLAY) && App.deal.isFinished()
+					&& ((App.reviewTrick * 4 + App.reviewCard) >= App.deal.countCardsPlayed());
 			c0_2_0__empt.setVisible(!show_wtsp);
 			c0_2_0__clam.setVisible(false);
 			c0_2_0__mdp.setVisible(false);
@@ -91,11 +94,13 @@ public class BottomLeftPanel extends ClickPanel {
 			c0_2_0__wtsp.setVisible(false);
 		}
 		else if (App.deal.isFinished()) {
-			boolean showUndo = (App.isMode(Aaa.EDIT_PLAY) || App.isMode(Aaa.EDIT_BIDDING));
-			c0_2_0__empt.setVisible(false);
-			c0_2_0__clam.setVisible(showUndo);
+
+			// boolean showUndo = (App.isMode(Aaa.EDIT_PLAY) || App.isMode(Aaa.EDIT_BIDDING));
+			boolean showScore = (App.tutorialShowAuction);
+			c0_2_0__empt.setVisible(!showScore);
+			c0_2_0__clam.setVisible(false);
 			c0_2_0__mdp.setVisible(false);
-			c0_2_0__wtsp.setVisible(!showUndo);
+			c0_2_0__wtsp.setVisible(showScore);
 		}
 		else {
 			assert (false);

@@ -1,0 +1,312 @@
+%%
+%%  Demo 2814.lin
+%%
+%%  Date last Edited    2015-11-05          set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+
+%%            %%
+%%            %%  Tell users of  old win player  they need aaBridge
+%%            %%
+bt||ht|j|at|^c This  Bridge Movie ^*b requires ^*n the   FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|   ^*hrogerpf.com/aaBridge^*n|
+ip||          %%  non aaBridge  lin file players  will  STOP  on this  'ip'  command
+nt||          %%  Clean up the above  and leave the screen clear for your movie as normal
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, older  aaBridge players are screened out later
+%%
+
+fh|b64|                    Font   b  b-big  font size in masthead
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastHead color
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Masthead  Tile  (box and text)
+%%
+ht|b|cp|bGround|cs|m-mastHead|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|b-big|at|^-A demo of the new developer features in 2814^*n^-^^|cs||fp||cp||
+
+ht|e|n#|8|at|^r Roger Pfister   -   November 2015|
+
+
+ht|f|n#|0|at|@1
+You can play this Bridge Movie on
+^c@2
+@.    The old  'windows only'  lin file player
+
+@.    Any older version of ^*b aaBridge ^*n
+
+@.    |cp|red|at|^*baaBridge ^*n|cp||at| build ^*b 2814 ^*n and later
+^b@2
+On the first two, it will tell you that you need to use the latest  |cp|red|at|^*baaBridge ^*n|cp||at| and on the third it will just play.
+
+
+The suggestion is that movie writers can use ^*b this ^*n first page as a template for their own movies.
+|n#|7|at|By using such a first page, movie developers can be sure that all users will have a good experience.
+
+
+
+^*b    Nothing has been removed ^*n -  all your old Bridge Movies will play just as well on aaBridge as they always have.
+
+
+
+What follows is a selection of updated pages from the   |cp|blue|at|^*b What goes on inside a Lin File|cp||at|^*n   movie inside ^*b aaBridge^*n.
+
+
+^dPlease   Mouse Wheel  forward    or just click  ^*b Flow > ^*n|
+
+%%
+%%           These two commands 'rq' followed by an at tell the user they the the correct aaBridge build number
+%%           They must be put just before the 'pg' that ends your front page.
+%%
+rq|2814|nt|^^^^^^^^^^^^^^^^ ^c This  Bridge Movie   requires ^*b aaBridge ^*n build ^*b 2814 ^*n  or later  available from    ^*h rogerpf.com/aaBridge ^*n|
+pg| ***** 0 ***** |
+
+
+qx|Colo,wide|
+nt|^b@2^z@3^*bBuilt-in  Colors ^*n        The following ^*b built-in ^*n colors were added in ^*b aaBridge ^*nbuild |cp|blue|at|^*b 2814^*n|cp||at|
+
+Built in colors have unique letter pairs and require NO COLOR DEFFINITON ^r|cp|red|at|(next page for ^*b 1 character colors^*n)|cp||at|
+                                                                         ^r|cp|blue|at|  inc. the new 26 possible col defs |cp||at|
+Eg. usage    !cp!|cp|green|at|^*bgr^*n|cp||at|!
+^iLetter Pair  ^q     Fill
+^i@-@-@-@-@-   ^q   @-@-@-
+           ^c|cp|Sp|at|Std Color   Spades      ^g    ^h  |cp||at|@s   ^i     Sp   ^k|cp|spades   |at| @s ^*b ^L  Bold Spades     ^p  Color ^*n|cp||cs|Sp|at|{       }
+           ^c|cp|He|at|Std Color   Hearts      ^g    ^h  |cp||at|@h   ^i     He   ^k|cp|hearts   |at| @h ^*b ^L  Bold Hearts     ^p  Color ^*n|cp||cs|He|at|{       }
+           ^c|cp|Di|at|Std Color   Diamonds    ^g    ^h  |cp||at|@d   ^i     Di   ^k|cp|diamonds |at| @d ^*b ^L  Bold Diamonds   ^p  Color ^*n|cp||cs|Di|at|{       }
+           ^c|cp|Cl|at|Std Color   Clubs       ^g    ^h  |cp||at|@c   ^i     Cl   ^k|cp|clubs    |at| @c ^*b ^L  Bold Clubs      ^p  Color ^*n|cp||cs|Cl|at|{       }
+                                                                                                                                   
+|fh|s26|fp|s|at|^b  (the next two are shown with a  Light Gray  Lg  background)|fp||at|                                                         
+|cs|Lg|at|{^c|cp|Wh|at|Std Color   White       ^g    ^h  @. |cp||at|  ^i     Wh   ^k|cp|white    |at| @. ^*b ^L  Bold White      ^p  Color ^*n}|cp||cs|wh|at|{       } 'White' fill uses  Bg  color
+|cs|Lg|at|{^c|cp|Bg|at|Std Color   Background  ^g    ^h  @. |cp||at|  ^i     Bg   ^k|cp|bground  |at| @. ^*b ^L  Bold Background ^p  Color ^*n}|cp||cs|bg|at|{       } 
+           ^c|cp|Lg|at|Std Color   Light Gray  ^g    ^h  @. |cp||at|  ^i     Lg   ^k|cp|lGray    |at| @. ^*b ^L  Bold Light Gray ^p  Color ^*n|cp||cs|lg|at|{       }
+           ^c|cp|Mg|at|Std Color   Med Gray    ^g    ^h  @. |cp||at|  ^i     Mg   ^k|cp|mGray    |at| @. ^*b ^L  Bold Med Gray   ^p  Color ^*n|cp||cs|mg|at|{       }
+           ^c|cp|Dg|at|Std Color   Dark Gray   ^g    ^h  @. |cp||at|  ^i     Dg   ^k|cp|dGgray   |at| @. ^*b ^L  Bold Dark Gray  ^p  Color ^*n|cp||cs|dg|at|{       }
+                                                                                                                                   
+           ^c|cp|Re|at|Std Color   Red         ^g    ^h  @. |cp||at|  ^i     Re   ^k|cp|red      |at| @. ^*b ^L  Bold Red        ^p  Color ^*n|cp||cs|re|at|{       }
+           ^c|cp|Bl|at|Std Color   Blue        ^g    ^h  @. |cp||at|  ^i     Bl   ^k|cp|blue     |at| @. ^*b ^L  Bold Blue       ^p  Color ^*n|cp||cs|bl|at|{       }
+           ^c|cp|Gr|at|Std Color   Green       ^g    ^h  @. |cp||at|  ^i     Gr   ^k|cp|green    |at| @. ^*b ^L  Bold Green      ^p  Color ^*n|cp||cs|gr|at|{       }
+           ^c|cp|Mu|at|Std Color   Mustard     ^g    ^h  @. |cp||at|  ^i     Mu   ^k|cp|mustard  |at| @. ^*b ^L  Bold Mustard    ^p  Color ^*n|cp||cs|mu|at|{       }
+                                                                                                                                   
+           ^c|cp|  |at|Std Color   default     ^g    ^h  @. |cp||at|  ^i    none  ^k|cp|default  |at| @. ^*b ^L  Bold default    ^p  Color ^*n|cp||cs|  |at|{       } 'default' fill uses  Bg  color
+           ^c|cp|u |at|Std Color   undefined   ^g    ^h  @. |cp||at|  ^i     ???  ^k|cp|undefined|at| @. ^*b ^L  Bold undefined  ^p  Color ^*n|cp||cs|u |at|{       } 'undefined' fill uses  Bg  color
+
+		   
+When using ^*b ANY ^*n color you can have ^*b ANY ^*n text as the 3rd and later characters      eg. usage        !cp!|cp|Green|at|^*bgr^*n|cp||at|een! 
+	
+The two character letter pairs (all listed above) are case insensitive.	      eg. usage        !cp!|cp|Green|at|^*bGr^*n|cp||at|een!|
+%%
+rq|2814|nt|^^^^^^^^^^^^^^^^ ^c This  Bridge Movie   requires ^*b aaBridge ^*n build ^*b 2814 ^*n  or later  available from    ^*h rogerpf.com/aaBridge ^*n|
+pg| ***** 1 ***** |
+
+
+qx|Font,wide|
+nt|^b@2^z@3|
+at|
+^b@2^*bColor Definitions^*n                there are now 36     0-9   and    a-z     (A-Z)   
+
+
+^d since ^*b aaBridge ^*n build |cp|blue|at|^*b2814^*n|cp||cs|mu|at|  there are { an ADDITIONAL  26 configurable colors }  ^*b a - z ^*n  eg.   !cg!|cp|red|at|^*bp^*n|cp||at|195!
+
+^*b In-color  comment ^*n   -   You can add a  HYPHEN  and a comment when USING a color,     eg.     !cp!|cp|red|at|^*bp^*n|cp||at|-purple!
+    
+^^^^^^^^   
+    
+^b@2^*bFont Definitions^*n                there are now 36     0-9   and    a-z     (A-Z)
+
+^dsince ^*b aaBridge ^*n build |cp|blue|at|^*b2814^*n|cp||cs|mu|at|  there are { an ADDITIONAL  26 configurable fonts }  ^*b a - z ^*n      eg.   !fp!|cp|red|at|^*bm^*n|cp||at|!
+
+Fonts definitions, if used, are normally set at the start of the lin file. They consist of a set of commands normally all written on one line. For example @- 
+
+^d fh!|cp|red|at|^*bm^*n|cp||at|66!   ff!|cp|red|at|^*bm^*n|cp||at|Arial!   fb!|cp|red|at|^*bm^*n|cp||at|5!  fm!|cp|red|at|^*bm^*n|cp||at|!
+
+
+Since ^*b aaBridge ^*n build |cp|blue|at|^*b2814^*n|cp||cs|mu|at|  you  ONLY  need the Font Height     eg.       !fh!|cp|red|at|^*bm^*n|cp||at|40!
+
+If you define any part of a font more than once,  then the ^*b LAST ^*n definition will be used throughout the Movie.
+
+^m (FYI - the  Font Makes  eg.   fm!|cp|red|at|^*bm^*n|cp||at|!  are now ignored)
+
+^*b In-font  comment ^*n   -   You can add a  HYPHEN  and a comment when USING a font,     eg.     !fp!|cp|red|at|^*bm^*n|cp||at|-masthead!|
+%%
+rq|2814|nt|^^^^^^^^^^^^^^^^ ^c This  Bridge Movie   requires ^*b aaBridge ^*n build ^*b 2814 ^*n  or later  available from    ^*h rogerpf.com/aaBridge ^*n|
+pg| ***** 2 ***** |
+
+
+qx|Pos|
+nt||
+at|
+^b@2^*bPositioning   ^*n              ^*bht^*n!|cp|Red|at|^*ba^*n|cp||at|!       ^*bVertical Position^*n        ^p(always puts you on the left margin)
+  
+You can set the current vertical position (where, up or down the page the next line of text will appear) by using a two letter pair 'bar command'.  Unfortunately this command has about the worst name possible.
+
+^c!^*bht^*n!|cp|Red|at|^*ba^*n|cp||at|!    @-   think        ^*bH^*nell of a silly name for vertical ^*bT^*next position         (or whatever)   [sigh]
+
+Where  |cp|Red|at|^*ba^*n|cp||at|   is  a to z,  or  A to Z.     Every page is divided up into 26 zones (not the same as the height of a line) the top of the page is at zone 'a' and zone 'z' is little up from the bottom of the page. When a table shows, the zones are thiner.
+^^       
+^b@2^*bNudges      |cp|blue|at|Added in ^*b aaBridge  ^*nbuild |cp|7|at|^*b 2814^*n|cp||
+
+at|^n ^*bn##^*n!|cp|green|at|^*bb^*n|cp||at|!   ^p   ^*bn##^*n!|cp|red|at|^*ba^*n|cp|gr|at|^*bb^*n|cp||at|!   ^s Nudge  ^*bDown^*n
+   ^n ^*bn@^^*n!|cp|green|at|^*bb^*n|cp||at|!   ^p   ^*bn@^^*n!|cp|red|at|^*ba^*n|cp|gr|at|^*bb^*n|cp||at|!   ^s Nudge  ^*bUp^*n
+   ^n ^*bn<^*n!|cp|green |at|^*bb^*n|cp||at|!   ^p   ^*bn<^*n!|cp|red |at|^*ba^*n|cp|gr|at|^*bb^*n|cp||at|!   ^s Nudge  ^*bLeft^*n
+   ^n ^*bn>^*n!|cp|green |at|^*bb^*n|cp||at|!   ^p   ^*bn>^*n!|cp|red |at|^*ba^*n|cp|gr|at|^*bb^*n|cp||at|!   ^s Nudge  ^*bRight^*n|
+   
+ht|l|n^|7|at|
+^cwhere  |cp|red  |at|^*ba^*n|cp||at|   is    a to z,    A to Z
+^cwhere  |cp|green|at|^*bb^*n|cp||at|   is    a to z,    A to Z    or   0 to 9
+
+The more common  ^*bxx^*n!|cp|gr|at|^*bb^*n|cp||at|!  style ^*b nudges ^*n the current wirting position  Up, Down, Left or Right  by a small amount.
+
+The  |cp|red|at|^*ba^*n|cp|gr|at|^*bb^*n|cp||at|  style does the same but ^*b first ^*n takes you to the  |cp|red|at|^*ba^*n|cp||at|  letter position, as appropriate.    For Up and Down this is the same as the  ^*bht^*n!|cp|Red|at|^*ba^*n|cp||at|!  command covered above (but without jumpting to the left margin).
+
+For Left and Right this is the same as first doing the inline text command   ^*bat^*n!...^*n|cp|red|at|^*b^@a^*n|cp||at|...!
+
+Note  -  you cannot jump with an  |cp|red|at|^*ba^*n|cp||at|  unless you also have a  |cp|gr|at|^*bb^*n|cp||at|  but you can use        ^*bxx^*n!|cp|red|at|^*ba^*n|cp||at|^*b0^*n!    (0  is zero)
+^^
+^*bExample^*n
+^e Text |n#|7|at|can be nudged down|n^|e|at| and up  or |n>|z|at|RIGHT or |n<|5|at|LEFT|at|                  
+^^
+^e Text ^*b|cp|red|at|!n##!7!at!|cp||at|^*n can be nudged down ^*b|cp|red|at|!n@^!b!at!|cp||at|^*n and up  or ^*b|
+cp|red|at|!n>!z!at!|cp||at|^*n  RIGHT or ^*b|cp|red|at|!n<!5!at!|cp||at|^*n LEFT|
+%
+rq|2814|nt|^^^^^^^^^^^^^^^^ ^c This  Bridge Movie   requires ^*b aaBridge ^*n build ^*b 2814 ^*n  or later  available from    ^*h rogerpf.com/aaBridge ^*n|
+pg| ***** 3 ***** |
+
+
+qx|Line,wide|
+fh|k50|
+nt|^b@2^z@3
+^*bLine Spacing   ^*n              ^*bLg^*n!|cp|Red|at|^*bv^*n|cp||at|!      line gap           (capital  L  used  only  for clarity)
+
+In ^*b aaBridge ^*n text flows naturally from one line to the next.  The line separation is set at the natural value for the particular font in use. If at the end of the line you are using a |fp|k|at|large|fp||at| font you will get a |fp|k|at|large|fp||at| separation for the start of the next line.  it follows then that a word or two in a different font will not normally effect the line separation.
+
+^d using    ^*bLg^*n!|cp|Red|at|^*bv^*n|cp||at|!  ^k where    |cp|Red|at|^*bv^*n|cp||at|   is   0-9   and   a to z    (A to Z)   will change this.
+
+The values of  |cp|red|at|^*bv^*n|cp||at| are ^*b NON ^*n obvious
+^e@2^^
+|Lg|f
+|cp|red|at|^*bv^*n|cp||at|  ^f is      0 ^h (digit zero)   ^k       0%    no line separation at all.  The next will will overwrite
+|cp|red|at|^*bv^*n|cp||at|  ^f is      1 ^h                ^k     55%    a LOT of overlap of lines
+|cp|red|at|^*bv^*n|cp||at|  ^f is      9 ^h                ^k     95%    the lines will look a little close
+|cp|red|at|^*bv^*n|cp||at|  ^f is        ^h  (blank)       ^k  100%     reset to normal 
+|cp|red|at|^*bv^*n|cp||at|  ^f is      a ^h                ^k  100%     reset to normal    (think ^*b a ^*n = 10 equals 100%)
+|cp|red|at|^*bv^*n|cp||at|  ^f is      b ^h                ^k  105% 
+|cp|red|at|^*bv^*n|cp||at|  ^f is      c ^h                ^k  110%
+etc.
+^b@2
+The table above is displayed using    |cp|blue|at|^*bLg^*n!f!|cp||at|    the text below  (from a speech by Cicero)  is using    |cp|blue|at|^*bLg^*n!c!|cp||at|
+|Lg|c|at|
+Video, patres conscripti, in me omnium vestrum ora atque oculos esse conversos, video vos non solum de vestro ac rei publicae, verum etiam, si id depulsum sit, de meo periculo esse sollicitos. Est mihi iucunda in malis et grata in dolore vestra erga me voluntas, sed eam, per deos inmortales, deponite atque obliti salutis meae de vobis ac de vestris liberis cogitate. 
+
+^i As you would expected    |cp|blue|at|^*bnt^*n!!|cp||at|    resets the line separation   to  100%|
+%%
+rq|2814|nt|^^^^^^^^^^^^^^^^ ^c This  Bridge Movie   requires ^*b aaBridge ^*n build ^*b 2814 ^*n  or later  available from    ^*h rogerpf.com/aaBridge ^*n|
+pg| ***** 4 ***** |
+
+
+qx|Play,wide|
+nt|^b@2^z@3^^|
+at|^b@2^*bPlay Example  ^*n |
+fh|h40|                    Font   h heading
+at|^^^^
+The final section of this demo is a play example.   
+
+The subject happens to be the standard ending of a  Simple Squeeze.
+
+
+The point of this movie is so that you (as movie writer / potential movie writer) can see the use of the feature.
+
+
+In a couple of pages time   you will be asked to click   { ^*b Enter the Deal ^*n }   button
+
+after that please experiment with the  buttons   (on the left)
+
+
+ {  ^*b  Edit   ^*n }
+
+ {  ^*b  Play  ^*n } 
+ 
+ ^*b Review ^*n                         The ^*b Review ^*n button appears differently from the others as it will be  'selected'. 
+ 
+ 
+What I would like you to notice is that,  a student can both review the cards and if they want to, play against the computer with the East West cards hidden.  
+
+|n^|8|at|While all the time being constrained to stay in the  three tricks  pre-set at the beginning.   (Try Undo)
+
+|n#|3|at|And while they are going this, the full features of aaBridge  e.g.  Double Dummy analyser are available (if required).
+
+
+To return back to this movie,  (from  'in Deal'  mode)  you just need to click on the  { ^*b Back to Movie ^*n }  button.|
+%%
+rq|2814|nt|^^^^^^^^^^^^^^^^ ^c This  Bridge Movie   requires ^*b aaBridge ^*n build ^*b 2814 ^*n  or later  available from    ^*h rogerpf.com/aaBridge ^*n|
+pg| ***** 5 ***** |
+
+
+st||
+ha|y|
+md|1 s2 h dA c, sKQ hA d c, sAJ hK d c, s h d c|  
+nt|^z@3^b@2|n#|8|
+fp|h|at|The  Simple  Squeeze|fp||
+at|^^^^This is the ending position.|
+pg| ***** 6 ***** |
+
+
+md|0 s h d c2, s h d c, s h d c, s43 h d c4| 
+at|^^^^Add in the missing cards.  They are useless to declarer,  but are needed so you can ^*b play ^*n the hand.|  
+pg| ***** 7 ***** |
+
+
+md|1S2HDAKQJT9CAKQJT2,SKQT87HAJT9843D2C,SAJ965HKQ7652D76C,S43HD8543C9876543|
+tc|c|
+mb|7Nppp|
+pc|D2|pc|D6|pc|D8|pc|D9|
+pc|CA|pc|H3|pc|H2|pc|C9|
+pc|CK|pc|H4|pc|H5|pc|C8|
+pc|CQ|pc|H8|pc|H6|pc|C7|
+pc|CJ|pc|H9|pc|H7|pc|C6|
+pc|CT|pc|S8|pc|S9|pc|C3|
+pc|DK|pc|S7|pc|D7|pc|D5|
+pc|DQ|pc|ST|pc|S5|pc|D4|
+pc|DJ|pc|HT|pc|S6|pc|D3|
+pc|DT|pc|HJ|pc|HQ|pc|C5|
+pc|DA|
+tc|r|
+eb|Y|
+cs||
+nt|^z@3^b@2|n#|8|
+fp|h|at|The  Simple  Squeeze|fp||
+at|^^^^When the  ^*bsqueeze card^*n,  (@dA)  is played, West is powerless, pressured by North's ^*b one card menace ^*n (@hK),
+^^to throw a top spade  or  by North's  ^*b two card menace^*n  (@sAJ)  to throw the @hA.    West will not win a trick.
+^^But notice, it only works because South has communication (@s2)  to the ^*b two card card menace^*n.|
+pg| ***** 8 ***** |
+
+
+ht|f|at|@4@2^^|
+ht|L|Lg|t|
+at|You can now,  View a line of Play  (click ^*b Flow ^*n once then use your ^*b Mouse Wheel^*n)   |cp|blue|at|^*b OR ^*n|cp||at|  click   { ^*b Enter the Deal ^*n }
+then click   {  ^*b Edit ^*n  }    and  play the cards for all 4 hands. |cp|blue|at| ^*b OR  ^*n  |cp|red|at|^*b after  clicking   |cp||at| Edit^*n     click   {  ^*b Play ^*n  }   and play South (as declarer) against the computer.|
+pg| ***** 8 ***** |
+
+
+pc|SQ|pc|HK|pc|S3|
+pg| ***** 9 ***** |
+
+
+pc|S2|pc|SK|pc|SA|pc|S4|
+pg| ***** 10 ***** |
+
+
+pc|SJ|pc|C4|pc|C2|pc|HA|
+pg| ***** 11 ***** |
+
+
+md|1,,,|
+nt|^b@2^^|at||
+ht|z|at|^a ^*b end ^*n|
+pg| ***** 12 ***** |

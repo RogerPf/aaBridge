@@ -1,0 +1,1630 @@
+%% 
+%% This is an extract from the free Windows prog - 'Learn to Play Bridge Bridge2'
+%%     available from     https://web.acbl.org/LearnToPlayBridge
+%%
+%% Original filename      ltpb2_6.3__Michaels_and_Unusual_NT.lin
+%%     file last changed  2014-Dec-07    bversion 0.18
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%                                    Font  'blank'  is size 30   
+%%                                    (sizes 30 to 35 shrink to 30  for legacy compatibility)
+fh|136|ff|1Arial|fb|10|fm|1|      Font 1   36  shrinks to size 32    
+fh|238|ff|2Arial|fb|20|fm|2|      Font 2   37  shrinks to size 34
+fh|339|ff|3Arial|fb|30|fm|3|      Font 3
+fh|440|ff|4Arial|fb|40|fm|4|      Font 4
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|60|fm|6|      Font 6
+fh|770|ff|7Arial|fb|70|fm|7|      Font 7
+fh|880|ff|8Arial|fb|80|fm|8|      Font 8
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1248|cg|1231|cb|1189|   Beige Cream
+cr|2185|cg|2201|cb|2195|   Beige grey green
+cr|3198|cg|3205|cb|3229|   grey medium
+cr|4160|cg|4174|cb|4228|   blue grey
+cr|5198|cg|5205|cb|5229|   light grey
+cr|6122|cg|6000|cb|6049|   dark maroon
+cr|9255|cg|9255|cb|9255|   'white'
+
+
+bt||nt|^b@2^z@3|
+
+
+%%   Top bar header box and Text
+ht|b|cp|9|cs|6|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|9|at|^^^^^^^^|fp|6|at|^-Learn to Play Bridge2          ^*bChapter 6   Section 3^*n^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|1|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|f|fp|9|at|^^^^^^^^^^|fp|7|at|^-^*bMichaels and Unusual Notrump^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+at|This Bridge Movie (.lin file) is an unaltered extract from  ^*bLearn to Play Bridge2^*n  a Windows program.  The original program can be downloaded from the ACBL at @-
+
+^d^*h https://web.acbl.org/LearnToPlayBridge ^*n
+    
+The ACBL requires an email address from you and will send you the download instructions  ^*bOR^*n  you can download it directly from ^*hhttp://www.bridgebase.com/index.php^*nhere^*x. (See the links, center left, on that web page.)
+
+^*bLearn to Play Bridge^*n comes as two programs.  Program 1 is for beginners, including an introduction to card play and Standard American bidding.  Program 2 (the source of this tutorial) covers material for the 'intermediate' player.
+
+An ^*bAcol^*n version of Program 1 can be downloaded from the ^*bEBU^*n ^*hhttp://www.ebu.co.uk/education/ltpb^*nhere^*x.
+ 
+
+A different set of extracts from  ^*bLearn to Play Bridge2^*n  are available for on-line play (in your browser) at @-
+
+^d^*h http://www.bridgesights.com/hondobridge/##fglb ^*n
+
+
+Our thanks goes to the ^*bACBL^*n for providing these two exceptional Bridge programs for free.
+|
+pg| ***** 0 ***** |
+
+
+qx|2 su|
+
+
+nt|^b@2^z@3|
+cs|5|cp|6|fp|4|
+at|
+^-{ The Unusual Notrump and Michaels Cuebids }
+^-|fp||cp||at|
+This chapter is all about competitive bidding, but most of what you have learned so far has been about how the partnership that opened the bidding can deal with interference (in the form of a takeout double or an overcall) from the opponents. It is time to give the other partnership (the one that did not open the bidding) some new tools to help them with their decisions in competitive auctions.
+
+|
+pg| ***** 1 ***** |
+
+
+at|In the early days of bridge, there were 2 bids available that could be used to show very strong hands after an opening bid by the opponents:
+
+|cs|1|at|^b{ |ia|  1h!2n|at| } ^o{ |ia|  1s!2s|at| }
+
+|
+pg| ***** 2 ***** |
+
+
+at|In the first auction, South jumps to 2NT after East's opening bid (which is 1@H in this example). Traditionally, this 2NT overcall was used to describe a hand that would have opened the bidding with 2NT.
+
+|
+pg| ***** 3 ***** |
+
+
+at|In the second auction, South cuebids the suit that East opened (spades in this case). When bridge was a new game, a direct cuebid of the suit that was opened by an opponent was used to describe a hand that would have opened the bidding with a strong 2-bid (that is, a hand rich in high cards that was strong enough to make a game contract all on its own).
+
+|
+pg| ***** 4 ***** |
+
+
+tb||
+
+nt|^b@2^z@3
+|cs|1|at|^b{ |ia|  1h!2n|at| } ^o{ |ia|  1s!2s|at| }
+
+Nowadays most bidding systems (including SAYC) do not use the 2NT overcall or the direct cuebid of the opener's suit to show strong hands. Modern bridge players have come to realize that the traditional meanings of these bids are not very useful. There are 2 reasons for this:
+
+|
+pg| ***** 5 ***** |
+
+
+cs|2|at|^-{ It is very rare to be dealt a hand strong enough for a 2NT opening or a 
+ strong 2-bid when one of the opponents has opened the bidding. }
+
+|
+pg| ***** 6 ***** |
+
+
+cs|4|at|{ If you are dealt such a strong hand and hear an opponent open the bidding in front 
+ of you, there are other ways in which you can describe your hand to your partner. }
+^-
+|
+pg| ***** 7 ***** |
+
+
+at|Specifically, you can start by making a takeout double. At your next turn you can bid notrump, jump in notrump, bid a new suit, jump in a new suit, or cuebid the opener's suit. These followups can be used by a player who made a takeout double to describe various types of strong hands. These auctions were described in detail in the original Learn to Play Bridge program.
+
+So it makes sense to assign new meanings to the 2NT overcall and the direct cuebid after an opponent opens the bidding at the 1-level. There are no universally accepted meanings for these bids. The way in which these bids are used in the SAYC bidding system is certainly as popular and arguably as effective as any of the alternatives that have been devised so far.
+
+|
+pg| ***** 8 ***** |
+
+
+nt|^b@2^z@3
+|cs|1|at|^b{ |ia|  1h!2n|at| } ^o{ |ia|  1c!2n|at| }
+
+|cs|3|at|^-{ A jump to 2NT after an opponent's 1-level opening bid describes a hand with at least 
+ 5-5 in the 2 lowest ranking unbid suits. This convention is called the Unusual notrump. }
+^-
+|
+pg| ***** 9 ***** |
+
+
+at|In the first example auction, South's 2NT overcall would show at least 5-5 in the minors (since clubs and diamonds are the 2 lowest ranking unbid suits). In the second example auction, the lowest ranking unbid suits are diamonds and hearts and South's 2NT would show at least 5-5 in those 2 suits. We will consider the strength promised by the Unusual notrump soon.
+
+|
+pg| ***** 10 ***** |
+
+
+cs|1|at|^b{ |ia|  1d!2d|at| } ^o{ |ia|  1s!2s|at| }
+
+|cs|2|at|^-{ A direct cuebid of an opponent's minor suit opening bid 
+ describes a hand with at least 5-5 in the major suits. }
+^-
+|
+pg| ***** 11 ***** |
+
+
+cs|4|at|^-{ A direct cuebid of an opponent's major suit opening bid describes a hand with 
+ at least 5 cards in the unbid major and at least 5 cards in one of the minors. }
+^-
+|
+pg| ***** 12 ***** |
+
+
+at|In the first example, South's 2@D cuebid promises at least 5 hearts and at least 5 spades. In the second auction, South's 2@S cuebid shows at least 5 hearts and at least 5 cards in either diamonds or clubs. In both cases, this convention is known as the Michaels cuebid.
+|
+pg| ***** 13 ***** |
+
+
+nt|^b@2^z@3
+|cs|2|at|^B{ Historical note} |cs|1|at|^G{ @2The Unusual notrump convention was devised in 1948 by Alvin Roth @3
+of New York City (the same person who helped to develop the negative double). The Michaels cuebid was invented in the early 1960s by Michael Michaels of Miami Beach, a close associate of Charles Goren. } @0@1|
+pg| ***** 14 ***** |
+
+
+at|
+The next question to explore is how strong your hand should be in order to make an Unusual 2NT overcall or a Michaels cuebid. As we will see, this is not a simple question to answer, but here is a rough guideline that you can go by:
+
+|
+pg| ***** 15 ***** |
+
+
+cs|4|at|^-{ In most cases, 10 or more total points are required to use one of these conventions, but a 
+ Michaels cuebid of a minor suit opening bid can be made with as few as 8 total points. }
+^-
+|
+pg| ***** 16 ***** |
+
+
+va|8|cs|1|at|^B{ |ia|  1c!2cp?|at| }    @2
+|ht|o|at|Why is it that a Michaels cuebid of a minor suit opening bid can be made with only 8 total points while at least 10 total points are required in all other cases? Consider what happens ^*Iafter^*N one of these conventions is used.
+@0
+|
+pg| ***** 17 ***** |
+
+
+cs|2|at|^-{ When responding to one of these conventions, you should bid one of your partner's suits. 
+ Bid your longer of these suits and bid the lower ranking of these suits if you have equal length. }
+^-
+|
+pg| ***** 18 ***** |
+
+
+at|In the case of the auction shown above, the partner of the player who bids Michaels can bid at the 2-level. In all other Michaels and Unusual 2NT auctions, the partner of the player who uses one of these conventions might have to go to the 3-level to bid one of his partner's long suits.
+
+|
+pg| ***** 19 ***** |
+
+
+nt|^b@2^z@3|va|5|at|When an Unusual 2NT overcall is used, the partner of the player who made that bid always knows exactly which 2 long suits have been shown. The same is true when a Michaels cuebid of a minor suit opening has been made. 
+
+|
+pg| ***** 20 ***** |
+
+
+at|After a Michaels cuebid of a major suit opening, things are different. The partner of the player who makes such a bid knows only one of the long suits that have been shown (the unbid major). He knows that his partner has at least 5 cards in one of the minor suits as well, but how does he find out if that suit is clubs or diamonds?
+
+|ht|k|cs|1|at|^b{ |ia|  1h!2hp?|at| } ^o{ |ia|  1s!2sp?|at| }
+
+|
+pg| ***** 21 ***** |
+
+
+va|3|cs|2|at|^-{ Bid 2NT in response to a Michaels cuebid of a major suit 
+ opening bid to ask your partner to bid his long minor suit. }
+^-
+|ht|k|cs|1|at|^b{ |ia|  1h2hp!2np?|at| } ^o{ |ia|  1s2sp!2np?|at| }
+|
+pg| ***** 22 ***** |
+
+
+ht|t|at|In both of the above auctions, the 2NT bid asks South to bid 3@C if his other 5-card suit is clubs and to bid 3@D if his other 5-card suit is diamonds. Since the Michaels cuebid could be based on a very strong hand, South can bid something else (jumping to 4@C or 4@D for example), but most of the time he will simply bid his long minor suit at the 3-level.
+
+|
+pg| ***** 23 ***** |
+
+
+cs|4|at|^-{ The Michaels cuebid and the Unusual notrump have no upper limit in terms of strength. }
+
+|
+pg| ***** 24 ***** |
+
+
+nt|^b@2^z@3|va|5|At|Let's return to the question of which types of hands are appropriate for a Michaels cuebid or an Unusual notrump overcall. As we have seen, at least 10 total points are required to use these conventions in most cases, but 8 total points is enough for a Michaels cuebid of a minor suit opening bid. Furthermore, these conventions should not be used without at least 5 cards in 2 suits. Some bridge players make the mistake of using these conventions on occasion with 5-4 (or 6-4) in their 2 long suits. Don't be one of them!
+
+|
+pg| ***** 25 ***** |
+
+
+at|Another mistake that some bridge players make is to use these conventions whenever they have the appropriate strength and distribution to do so. Deciding whether or not a Michaels cuebid or Unusual 2NT overcall should be used on a given hand that meets the requirements is a matter of judgment. We will explore several factors that should be considered:
+
+|
+pg| ***** 26 ***** |
+
+
+cs|2|at|^-{ If most of your high cards are in your long suits, your hand is more suitable for these bids. 
+ If most of your high cards are in your short suits, you should consider some other action. }
+^-
+|
+pg| ***** 27 ***** |
+
+
+at|For example, both of the hands shown below have the same distribution and the same number of high card points,  but the first hand is more appropriate for an Unusual 2NT overcall of a major suit opening bid than the second hand. The reason is that the first hand has most of its strength in its long suits while the second hand has most of its strength in its short suits.
+
+|ht|u|va|8|hc|sahkqdjckcqda|cs|3|at|^D{|ih|ps3h76daj754ckqt86|at|} ^P{|ih|pssahkqdj7543ct8654|at|} 
+
+|
+pg| ***** 28 ***** |
+
+
+lc|sahkqdjckcqda|
+
+
+nt|^b@2^z@3
+The vulnerability plays a key role is deciding whether or not you should make a Michaels cuebid or an Unusual 2NT overcall when you have a borderline hand for these actions:
+
+|
+pg| ***** 29 ***** |
+
+
+cs|4|at|^-{ If you are vulnerable you should be less aggressive in using these conventions. }
+^-
+|
+pg| ***** 30 ***** |
+
+
+at|It is a fact of life that sometimes your partner will not have a fit for either one of your suits when you use a Michaels cuebid or an Unusual 2NT overcall. When this happens, the opponents may double whatever contract you play in. If you are not vulnerable, the size of the penalty that they collect will be less!
+
+|
+pg| ***** 31 ***** |
+
+
+cs|1|at|^-{If the opponents are vulnerable you should be more aggressive in using these conventions.}
+^-
+|
+pg| ***** 32 ***** |
+
+
+at|Getting doubled in a contract that fails is not always a disaster. If the opponents can make a game or slam contract of their own, it is ok to let them collect a penalty instead by doubling your contract (assuming the penalty is not too big). If this is the case you will be taking a sacrifice. 
+
+If the opponents are vulnerable they will collect more bonus points for bidding and making a game or slam contract than they will collect if they are not vulnerable. As a result, you can afford to fail by more tricks in a doubled contract when the opponents are vulnerable.
+
+|
+pg| ***** 33 ***** |
+
+
+ht|w|va|8|at|There are 4 possible vulnerabilities in bridge. You should be most aggressive in using conventions like the Michaels cuebid and the Unusual notrump when only the opponents are vulnerable. Be a little more careful when neither side is vulnerable, considerably more careful when both sides are vulnerable, and extremely careful when only your side is vulnerable!
+
+|
+pg| ***** 34 ***** |
+
+
+nt|^b@2^z@3|va|5|at|For example, here is a borderline hand for an Unusual 2NT overcall after a 1@S opening bid:
+
+|ht|c|cs|3|at|^C{|ih|ps8h63dkqt96cqjt84|at|} |ht|d|cs|1|at|^N{ |ia|  1s?|at| }
+
+
+|
+pg| ***** 35 ***** |
+
+
+va|5|hc|cqjdkq|at|This hand has 8 HCP |
+pg| ***** 36 ***** |
+
+
+lc|cqjdkq|hs|scsd|at|and 2 long suit points (1 for each of the 5-card minors). With 10 total points, this hand is just strong enough to consider making an Unusual 2NT overcall. Whether or not such a bid should be made is largely a matter of judgment and the vulnerability should be one of the factors that you should consider when you are faced with this decision.
+
+|
+pg| ***** 37 ***** |
+
+
+at|If only the opponents were vulnerable it would be a good time to bid 2NT. Your partnership may not end up buying the contract. If your side does buy the contract, you may get doubled and fail by several tricks. Still, this vulnerability favors sacrificing since the bonus points that the opponents score for succeeding in a game or slam is greater when they are vulnerable and the bonus points they score for collecting doubled undertricks is smaller when you are not vulnerable.
+|ht|d|cs|1|sv|e|fa|1|at|^N{ |ia|  1s!2n|at| }
+|
+pg| ***** 38 ***** |
+
+
+ht|d|cs|1|sv|n|fa|1|at|^N{ |ia|  1s!p|at| }
+|ht|u|va|9|at|If only your side was vulnerable then the tables would be turned. Now you should pass since the opponents would collect a bigger penalty if they doubled you and they would collect fewer bonus points if they succeeded in a game or slam contract.
+
+|
+pg| ***** 39 ***** |
+
+
+ht|z|at|If neither side was vulnerable or both sides were vulnerable the decision would be closer. What call should South make under these circumstances? That is really a matter of judgment!|
+ht|d|cs|1|sv|e|fa||at|^N{ |ia|  1s!?|at| }
+|
+pg| ***** 40 ***** |
+
+
+nt|^b@2^z@3
+Here is another important factor to consider in deciding whether or not to make a Michaels cuebid or an Unusual 2NT overcall:
+
+|
+pg| ***** 41 ***** |
+
+
+cs|2|at|^-{ Having strong spot cards in your long suits is a plus factor for using these conventions. }
+^-
+|
+pg| ***** 42 ***** |
+
+
+ls|scsd|
+at|For example, let's take another look at the problem we just saw. It was stated that whether or not South should overcall 2NT with this hand is a close decision when neither side is vulnerable:
+
+|ht|j|cs|3|at|^C{|ih|ps8h63dkqt96cqjt84|at|} |ht|k|cs|1|at|^N{ |ia|  1s?|at| }
+
+
+|
+pg| ***** 43 ***** |
+
+
+hc|ct8dt9|va|5|at|Notice that this hand has some excellent spot cards in its long suits. The @D10, @D9, @C10, and @C8 all help to make this hand strong in terms of its potential to win tricks with one of the minor suits as trump.
+
+|
+pg| ***** 44 ***** |
+
+
+cs|3|at|^C{|ih|ps8h63dkq653cqj542|at|}     @2
+|hc|c52d53|ht|u|va|2|at|If the beautiful spot cards in the above hand were replaced by the horrible spot cards in this hand, the decision is much less close. This is still a question of judgment, but the judgment of this author is that South should pass over 1@S with this hand due to its poor spot cards in the minors.|
+pg| ***** 45 ***** |
+
+
+lc|c52d53ct8dt9|
+
+
+nt|^b@2^z@3|Va|5|at|Have you had enough yet? Hopefully you are still willing to listen to some more considerations that should come into play when deciding whether or not to use one of these 2-suited overcalls:
+
+|
+pg| ***** 46 ***** |
+
+
+cs|2|at|^-{ A serious disparity in the quality of your 2 suits is a minus factor for using these conventions. }
+^-
+|
+pg| ***** 47 ***** |
+
+
+ht|f|va|5|cs|3|at|^C{|ih|psaqj86ht9742dk6ct|at|} |ht|g|va|5|cs|1|at|^N{ |ia|  1d?|at| }
+
+
+|
+pg| ***** 48 ***** |
+
+
+va|5|hs|sssh|at|This hand is certainly strong enough for a Michaels cuebid of 2@D and, with 5 spades and 5 hearts, it has the correct distribution. |
+pg| ***** 49 ***** |
+
+
+ls|sh|at|However, there are 2 reasons why a 1@S overcall might work out better in practice and both of these reasons have to do with the fact that the spade suit is much stronger than the heart suit in this hand. |
+ht|g|va|5|cs|1|at|^N{ |ia|  1d!1s|at| }
+|
+pg| ***** 50 ***** |
+
+
+ht|r|ls|ss|hs|Sh|at|First, if South used Michaels and North was dealt the same number of cards in hearts and spades, he should bid his hearts (because hearts is the lower ranking of the 2 suits that South would be showing). South's hearts are weak |
+pg| ***** 51 ***** |
+
+
+ls|sh|Hs|ss|at|and his spades are strong. If North has the same number of cards in the majors, it is likely that more tricks will be available if spades are trump.
+
+|
+pg| ***** 52 ***** |
+
+
+at|Second, if the opponents end up playing the contract and North is to be the opening leader, South has a strong preference for a spade opening lead. If South overcalls 1@S, then his partner is likely to lead that suit. If South uses a Michaels cuebid, his partner will not know which of the majors he should lead. |
+pg| ***** 53 ***** |
+
+
+nt|^b@2^z@3|ht|b|cs|3|at|^C{|ih|psaqj86ht9742dk6ct|at|} |ht|c|cs|1|at|^N{ |ia|  1d!1s|at| }
+
+
+|va|5|At|One of the nice things about overcalling 1@S with this hand |
+pg| ***** 54 ***** |
+
+
+hs|Sh|at|(as opposed to using a Michaels cuebid to show both majors) |
+pg| ***** 55 ***** |
+
+
+ls|ss|hs|sh|at|is that South can later bid his hearts if it seems like a good idea to do so. Things would be different if South's major suits were reversed:
+
+|
+pg| ***** 56 ***** |
+
+
+ls|sh|lc|saqj86|
+ht|l|va|5|cs|3|at|^C{|ih|phaqj86st9742dk6ct|at|} |ht|m|va|5|cs|1|at|^N{ |ia|  1d?|at| }
+
+
+|
+pg| ***** 57 ***** |
+
+
+hc|haqj86|
+va|5|At|Now South's hearts are much stronger |
+pg| ***** 58 ***** |
+
+
+lc|haqj86|hc|st9742|at|than his spades |
+pg| ***** 59 ***** |
+
+
+lc|st9742|hc|haqj86|at|and that suggests that a 1@H overcall might work better |
+pg| ***** 60 ***** |
+
+
+hc|st9742|at|than a Michaels cuebid of 2@D. The problem with this action is that if South overcalls 1@H and later bids spades, North will think that South's hearts are longer than his spades (since a player would normally overcall in the higher ranking of 2 5-card suits). 
+
+|
+pg| ***** 61 ***** |
+
+
+at|Again, this is a judgment situation, but the judgment of the author of this program is that a Michaels cuebid of 2@D is the correct bid with this hand even though a 1@S overcall was recommended with the very similar hand shown at the top of this page.
+
+|ht|m|va|5|cs|1|at|^N{ |ia|  1d!2d|at| }
+
+|
+pg| ***** 62 ***** |
+
+
+lc|haqj86st9742|
+
+
+nt|^b@2^z@3
+|cs|1|at|^B{ |ia|  1d!1S|at| } ^o{ |ia|  1d!2d|at| }
+
+|cs|3|at|^C   {|ih|psaqj86ht9742dk6ct|at|} ^p   { |ih|phaqj86st9742dk6ct|at|}
+
+So a 1@S overcall is the recommended bid with the first hand and a Michaels cuebid of 2@D is the recommended bid with the second hand. There is an important lesson to be learned from this:
+
+|
+pg| ***** 63 ***** |
+
+
+cs|2|at|^-{ In deciding between making an overcall and using Michaels or the Unusual notrump, 
+ consider the implications of the overcall as far as your second 5-card suit is concerned. }
+^-
+|
+pg| ***** 64 ***** |
+
+
+ls|ss|lc|haqj86|Hc|ht9742|at|With the first hand, the 1@S overcall has a lot to recommend to it because South may still get a chance to show his (weaker) heart suit later in the auction. |
+pg| ***** 65 ***** |
+
+
+lc|ht9742|hc|st9742|at|With the second hand, there is no point in overcalling 1@S since the spades |
+pg| ***** 66 ***** |
+
+
+lc|st9742|hc|haqj86|at|are so much weaker than the hearts. A 1@H overcall is unappetizing for a different reason: if South overcalls 1@H he will never be able to show his spade suit at all. Michaels gives the partnership a chance to play in either suit and North will bid hearts if he has equal length in the majors.
+
+|
+pg| ***** 67 ***** |
+
+
+cs|4|at|^-{ Knowing that your partner will bid the lower ranking suit with equal length can be helpful! }
+^-
+|
+pg| ***** 68 ***** |
+
+
+lc|haqj86|
+
+nt|^b@2^z@3|va|5|at|So far all of the example hands that we have looked at have contained exactly 5-5 in the 2 long suits. Some special considerations arise when the hand in question has at least 6-5 in the 2 suits:
+
+|
+pg| ***** 69 ***** |
+
+
+cs|4|At|^-{ The more distribution you have, the more you should strive to bid something! }
+^-
+|
+pg| ***** 70 ***** |
+
+
+at|This should not come as a surprise to you. For one thing, a hand with 6-5 distribution has 1 more long suit point than a similar hand with 5-5 distribution. More important, the more distributional a hand is, the more tricks it is likely to win on offense and the less tricks it is likely to win on defense. That is a very good reason to get involved in the bidding (as opposed to passing)!
+
+|
+pg| ***** 71 ***** |
+
+
+cs|2|at|^-{ Some hands with unequal length in the long suits should overcall instead of using Michaels 
+ or the Unusual notrump as these conventions could lead to a contract in the wrong suit. }
+^-
+|
+pg| ***** 72 ***** |
+
+
+at|Here is an example of this principle at work:
+
+|ht|p|va|5|cs|3|at|^C{|ih|pskqjt62h8djcaq653|at|} |ht|q|va|5|cs|1|at|^N{ |ia|  1h?|at| }
+
+
+|
+pg| ***** 73 ***** |
+
+
+hs|sssc|va|5|at|This hand has the necessary distribution and strength for a Michaels cuebid (to show spades and one of the minors in this case), |
+pg| ***** 74 ***** |
+
+
+at|but there is a lot of be said for the alternative of a 1@S overcall. Can you see how a 1@S overcall might work out better than a Michaels cuebid of 2@D when South has this hand?
+|ht|q|va|5|cs|1|at|^N{ |ia|  1h!1s|at| }
+|
+pg| ***** 75 ***** |
+
+
+nt|^b@2^z@3|ht|b|cs|3|at|^C{|ih|pskqjt62h8djcaq653|at|} |ht|c|cs|1|at|^N{ |ia|  1h!2hp?|at| }
+
+|va|5|at|The advantage of using a Michaels cuebid with this hand is that this bid tells your partner that you have a 2-suiter. |
+pg| ***** 76 ***** |
+
+
+ls|ss|at|Furthermore, bidding 2@H as Michaels increases your chances of playing in a contract with clubs as trump when that is right. Unfortunately, a Michaels cuebid also increases your chances of playing clubs when that is wrong. Perhaps North has some non-descript hand like the following:
+|
+pg| ***** 77 ***** |
+
+
+ls|sc|hc|s95|va|5|cs|3|at|^C{|ih|ps95hqt93dt976ckt4|at| }     @2
+|hs|ss|ht|o|at|This hand has only 2 cards in spades and North has no way of knowing that you have a 6-card spade suit. North will not bid 2@S if he has a hand like this one. |
+pg| ***** 78 ***** |
+
+
+ls|ss|lc|s95|hs|sc|hc|dt976|at|He will bid 2NT to ask you to bid your long minor in order to ensure that the partnership plays in at least an 8-card trump fit.
+@0
+|ht|c|cs|1|at|^N{ |ia|  1h2hp!2np?|at| }
+
+|
+pg| ***** 79 ***** |
+
+
+ht|c|cs|1|at|^N{ |ia|  1h2hp2np!3c|at| }
+|lc|dt976|ht|u|va|5|at|Playing in 3@C does not rate to be the end of the world. If clubs are trump, 10 tricks will be available with a little bit of luck. |
+pg| ***** 80 ***** |
+
+
+ls|sc|Hs|ss|at|The bad news is that it takes even less luck for North-South to win 10 tricks in spades and that is enough to succeed in the game contract of 4@S. It is the case that North-South may not be able to bid to 4@S after a 1@S overcall. Still, this example does illustrate the danger of using a Michaels cuebid on a hand like South's.|
+pg| ***** 81 ***** |
+
+
+ls|ss|
+
+nt|^b@2^z@3
+We have now seen several factors that a player should use to decide between using a Michaels cuebid or Unusual 2NT overcall to describe a 2-suited hand with a single bid (compared to passing or overcalling in a long suit):
+
+|
+pg| ***** 82 ***** |
+
+
+cs|2|at|^-{ If most of your high cards are in your long suits, your hand is more suitable for these bids. 
+ If most of your high cards are in your short suits, you should consider some other action. }
+^-
+|
+pg| ***** 83 ***** |
+
+
+cs|4|at|^-{ If you are vulnerable you should be less aggressive in using these conventions. }
+^-
+|
+pg| ***** 84 ***** |
+
+
+cs|1|at|^-{If the opponents are vulnerable you should be more aggressive in using these conventions.}
+^-
+|
+pg| ***** 85 ***** |
+
+
+cs|3|at|^-{ Having strong spot cards in your long suits is a plus factor for using these conventions. }
+^-
+|
+pg| ***** 86 ***** |
+
+
+cs|2|at|^-{ A serious disparity in the quality of your 2 suits is a minus factor for using these conventions. }
+^-
+|
+pg| ***** 87 ***** |
+
+
+cs|4|at|^-{ In deciding between making an overcall and using Michaels or the Unusual notrump, 
+ consider the implications of the overcall as far as your second 5-card suit is concerned. }
+^-
+|
+pg| ***** 88 ***** |
+
+
+cs|1|At|^-{ The more distribution you have, the more you should strive to bid something! }
+^-
+|
+pg| ***** 89 ***** |
+
+
+cs|3|at|^-{ Some hands with unequal length in the long suits should overcall instead of using Michaels 
+ or the Unusual notrump as these conventions could lead to a contract in the wrong suit. }
+^-
+|
+pg| ***** 90 ***** |
+
+
+at|That's 8 things to think about. 8 is a lot of factors to have to consider in making any decision!|
+pg| ***** 91 ***** |
+
+
+nt|^b@2^z@3|Va|5|at|Now please don't try to memorize the entire list that was presented on the previous page! If you consciously try to consider all of these factors every time you have a hand that might be suitable for a Michaels cuebid or an Unusual 2NT overcall, not only will you probably get overwhelmed by all of the things you have to consider, but the bridge games that you play in will slow down to a snail's pace as a result!
+
+So how is a bridge player supposed to weigh all of these considerations when he is faced with a bidding decision like the ones we have been considering? You probably guessed the answer - he has to rely on his judgment. Judgment is that mysterious thing that comes from experience. The more times you are faced with a particular type of hand in a particular type of auction, the better your chances will be to come up with the winning decision the next time you face such a problem.
+
+It does help to keep in mind the reason why conventions like the Michaels cuebid and the Unusual notrump should be used in the first place:
+|
+pg| ***** 92 ***** |
+
+
+va|9|
+cs|1|at|^-{ These conventions tell your partner that you think it might be a 
+ good idea to play in a contract with one of your long suits as trump. }
+^-
+|
+pg| ***** 93 ***** |
+
+
+at|That doesn't mean that you should always expect to succeed in a contract that your partnership arrives in after using one of these conventions. Sometimes a contract that fails is a good contract, even if it is doubled. As long as the opponents can make a contract of their own, a failing contract by your partnership can be a good sacrifice.
+|
+pg| ***** 94 ***** |
+
+
+va|9|
+cs|3|at|^-{ Becoming familiar with how bridge is scored will help you to judge well in sacrifice situations. 
+ One of the appendices of this program contains a summary of how the scoring works in bridge. }
+|
+pg| ***** 95 ***** |
+
+
+nt|^b@2^z@3
+We have spent a lot of time considering the types of hands that are appropriate for a Michaels cuebid or an Unusual notrump overcall, but the advantages and disadvantages of using these conventions have not really been mentioned yet. 
+
+It has been noted that there are alternative ways of bidding hands that contain at least 5-5 in 2 suits and enough strength to enter the bidding after an opponent opens at the 1-level. Since that is the case, why do we need these conventions at all? There are 2 reasons:
+
+|
+pg| ***** 96 ***** |
+
+
+cs|2|at|^-{ 1. These conventions tell your partner a lot about the nature of your hand in a single bid. }
+^-
+|
+pg| ***** 97 ***** |
+
+
+cs|4|at|^-{ 2. If you try overcalling in one of your long suits with the hope of bidding your 
+ other long suit later in the auction, it is possible that "later" will never come! }
+^-
+|
+pg| ***** 98 ***** |
+
+
+at|The first advantage shown above speaks for itself. The more your partner knows about your hand, the better the decisions that he will be able to make in the bidding (and on defense if one of the opponents ends up as declarer).
+
+|
+pg| ***** 99 ***** |
+
+
+at|In terms of the second advantage, can you think of why "later" may never come for your second suit if you overcall instead of using one of the conventions that we have been studying?
+
+|
+pg| ***** 100 ***** |
+
+
+at|There are a couple of ways that this might happen. First, it is possible that all 3 players will pass after you overcall. If this happens, you may well find yourself in an inferior trump fit. Second, the opponents might do some more bidding and the auction may be at a level too high for you to comfortably show your second suit when your next turn to bid comes along.
+
+|
+pg| ***** 101 ***** |
+
+
+nt|^b@2^z@3
+There are also 2 main disadvantages to Michaels cuebids and Unusual notrump overcalls:
+
+|
+pg| ***** 102 ***** |
+
+
+cs|1|at|^-{ 1. These conventions force your partner to bid one of your long suits at a fairly high 
+ level. Sometimes your partner will not have a good fit for either one of your suits. }
+^-
+|
+pg| ***** 103 ***** |
+
+
+cs|3|at|^-{2. These conventions tell your opponents a lot about the nature of your hand in a single bid.}
+^-
+|
+pg| ***** 104 ***** |
+
+
+at|When the first disadvantage shown above rears its ugly head, your partnership may find itself doubled in an unhappy contract. Furthermore, on some of these deals, a simple overcall of one of your long suits would have kept your partnership out of danger (an overcall will usually come at a lower level than a Michaels cuebid or an Unusual 2NT overcall).
+
+Don't be too frightened about the first disadvantage displayed above. If you use good judgment in terms of when you invoke these conventions, you will not suffer very many serious penalties and those that you do give up will often represent good sacrifices.
+
+|
+pg| ***** 105 ***** |
+
+
+at|There are several ways in which the second disadvantage can bite you. If one of the opponents ends up as the declarer, it may make it easier for him to play the hand if he knows that you have at least 5-5 distribution. Similarly, if you end up as the declarer, the defenders will have an easier time figuring out the contents of the unseen hands if they know that you have at least 5-5 distribution. Finally, these conventions sometimes help your opponents make accurate decisions in the bidding. On some deals, for example, a Michaels cuebid or Unusual 2NT overcall will warn your opponents that suits may not be breaking very well.
+
+|
+pg| ***** 106 ***** |
+
+
+nt|^b@2^z@3
+Notice that the main disadvantage that most conventions suffer from does not really apply in the case of the Michaels cuebid or the Unusual 2NT overcall. Most conventions have the disadvantage of replacing a useful natural bid. As we saw when we first started studying these conventions, the natural bids that they replace are not very useful. Furthermore, we saw that there are other ways of bidding the types of hands that would have overcalled 2NT or cuebid the opener's suit.
+
+So the question is: do the advantages of using Michaels cuebids and the Unusual notrump outweigh the disadvantages that these conventions have?
+
+|
+pg| ***** 107 ***** |
+
+
+cs|1|at|^-{ The designers of SAYC must think so or they would not be part of that bidding system! }
+^-
+|
+pg| ***** 108 ***** |
+
+
+at|Fortunately, it is not just the designers of SAYC who like these conventions. The majority of the world's serious bridge players (especially in North America) use both the Unusual notrump and Michaels cuebid conventions. 
+
+Also, in the judgment of your author (for whatever that's worth), both of these conventions gain much more than they lose, especially if you use them with care. Do not use a Michaels cuebid or an Unusual 2NT overcall with a given hand just because you can. Wait until you have a hand with which the deck seems to be stacked in your favor (no pun intended) and then pounce!
+
+|
+pg| ***** 109 ***** |
+
+
+cs|2|At|^-{ When bridge players learn a new convention their natural tendency is to try to use
+ it as often as possible. Conventions do not work very well when they are abused! }
+^-
+|
+pg| ***** 110 ***** |
+
+
+nt|^b@2^z@3
+The next issue to explore is what you are supposed to bid when your partner makes a Michaels cuebid or an Unusual 2NT overcall.
+
+|cs|1|at|^b{ |ia|  1h!2np?|at| } ^o{ |ia|  1c!2cp?|at| }
+
+|
+pg| ***** 111 ***** |
+
+
+at|This is a complex subject and it gets more complex if the responder to the opening bid (West in the auctions shown above) does not pass (as will often be the case in practice). Here are a couple of guidelines that you can follow in the case where the responder to the opening bid makes a call other than pass:
+
+|
+pg| ***** 112 ***** |
+
+
+cs|4|at|^-{ If your partner's Michaels cuebid or Unusual notrump overcall is doubled, 
+ it is usually best to make the same bid you would have made without the double. }
+^-
+|
+pg| ***** 113 ***** |
+
+
+at|The main exception to this principle occurs when you have a weak hand with equal length in your partner's suits. It is usally best to pass with such hands when a 2-suited overcall is doubled.
+
+|
+pg| ***** 114 ***** |
+
+
+cs|2|at|^-{ Passing the double of a Michaels cuebid or an Unusual notrump overcall is a 
+ request for your partner to bid the longer and stronger of the 2 suits that he has shown. }
+^-
+|
+pg| ***** 115 ***** |
+
+
+cs|3|at|^-{ If your partner uses a Michaels cuebid or an Unusual notrump overcall and the next 
+ hand makes any bid, you should usually pass unless you know that your side has a good fit. }
+^-
+|
+pg| ***** 116 ***** |
+
+
+nt|^b@2^z@3
+|ht|b|cs|1|at|^b{ |ia|  1h2n!d?|at| } ^o{ |ia|  1h2n!3h?|at| }
+
+|cs|3|at|^c   {|ih|psq9865hj876dk2cj7|at| }     @2
+|ht|h|at|Suppose you have this hand, for example, and West either doubles your partner's unusual 2NT or bids 3@H over it. |
+pg| ***** 117 ***** |
+
+
+hs|sc|at|If West had passed you would have bid 3@C (bid the lower ranking of partner's suits when you have equal length). What about when West doubles or bids 3@H?
+@0
+|
+pg| ***** 118 ***** |
+
+
+hs|sd|
+ht|b|cs|1|at|^b{ |ia|  1h2nd!p|at| } ^o{ |ia|  1h2n3h!p|at| }
+|ht|n|at|In both cases you should pass. In the first auction (where West doubled), your partner will have another chance to bid and it is best to let him choose which minor suit to play in. Perhaps he is 6-5 in the minors. In this case he will bid his 6-card suit and the partnership will find its best fit. If you had a strong preference between the minors you would tell your partner about it by bidding your longer minor suit. With this hand, it is best to let your partner make the decision.
+
+|
+pg| ***** 119 ***** |
+
+
+at|In the second auction (where West bid 3@H), you should be grateful to him for doing so! You have a poor fit for both of your partner's suits and you were not looking forward to having to play a contract of 3 of minor in what rated to be a 7-card trump fit. West's 3@H bid has taken you off this hook. You do not have to bid a minor suit at the 4-level now and you would only do that if you had a good fit for one of your partner's suits.
+|
+pg| ***** 120 ***** |
+
+
+va|8|cs|2|at|^-{ If you have nothing to say and if you are not obliged to speak, it is best to keep quiet! }
+|
+pg| ***** 121 ***** |
+
+
+nt|^b@2^z@3
+|cs|1|at|^b{ |ia|  1h!2np?|at| } ^o{ |ia|  1c!2cp?|at| }
+
+When your partner uses a Michaels cuebid or an Unusual 2NT overcall and the next hand passes, you are obliged to speak. Also, if the next hand bids or doubles, sometimes you should want to to say something to your partner.
+
+In these cases, the question of which suit to bid is easy to answer. If your length in your partner's suits is not equal, bid the suit in which you have the greater length. If your length in these suits is equal, bid the lower ranking suit irrespective of your relative strength in your partner's 2 suits.
+
+|
+pg| ***** 122 ***** |
+
+
+at|The question as to which level you should bid at is much more difficult to answer. In most of the bidding situations that you have seen, we add our high card points to either our long suit points or our short suit points in order to figure out how many total points a hand is worth. We then decide how high to bid based on the number of total points our hand contains.
+
+|
+pg| ***** 123 ***** |
+
+
+cs|2|at|^-{ While point count is a valuable tool in many bidding situations, the accuracy of point count 
+ tends to break down in competitive auctions, especially when both partnerships have a fit. }
+^-
+|
+pg| ***** 124 ***** |
+
+
+cs|4|at|^-{ In these auctions the degree of the fit that you have for your partner and the specific high 
+ cards that your hand contains is much more important than your number of total points. }
+^-
+|
+pg| ***** 125 ***** |
+
+
+ls|sdsc|
+
+nt|^b@2^z@3|va|5|at|Here is an example of this principle in action:
+
+|ht|c|cs|3|at|^D   {|ih|ps7h9754dk86ckt762|at|}  |ht|d|cs|1|at|^N{ |ia|  1h2n3h?|at|}
+
+|
+pg| ***** 126 ***** |
+
+
+va|5|hc|ckdk|at|This hand has only 6 HCP |
+pg| ***** 127 ***** |
+
+
+lc|dkck|hs|ss|at|and, if you really want to try to figure out how many total points this hand is worth, you might as well count 3 short suit points for the singleton spade. That adds up to 9 total points - certainly not a very impressive total!
+
+|
+pg| ***** 128 ***** |
+
+
+ls|ss|hs|sc|at|Due to the massive club fit that the partnership is known to have, this hand is worth its weight in gold. |
+pg| ***** 129 ***** |
+
+
+ls|sc|hc|ckdk|at|The 2 high cards in this hand are certain to be helpful since they are both in your partner's long suits. |
+pg| ***** 130 ***** |
+
+
+lc|ckdk|hs|ss|at|The singleton spade ensures that the partnership will have at most one loser in that suit. |
+pg| ***** 131 ***** |
+
+
+ls|ss|hs|Sh|at|Even the heart suit offers some hope as there is every reason to believe that South is short in hearts. If that is the case, then there won't be very many heart losers either.
+
+|
+pg| ***** 132 ***** |
+
+
+ls|Sh|hs|sc|at|In fact, you would be showing excellent judgment if you jumped all the way to 5@C with this meager hand (meager in terms of point count that is)! There are several ways that this bid might work out. First, you might well make 5@C. Second, even if you don't make 5@C, it might be a good sacrifice. Third, your 5@C bid may succeed in pushing the opponents into 5@H. 
+
+|ht|d|cs|1|at|^N{ |ia|  1h2n3h!5c|at|}
+
+|
+pg| ***** 133 ***** |
+
+
+ht|z|cs|2|at|^-{ Bids that could succeed in several different ways are attractive bids to make! }
+|
+pg| ***** 134 ***** |
+
+
+hs|sh|ls|sc|
+
+nt|^b@2^z@3|va|5|at|Let's look at some example hands that your partner might hold for his Unusual 2NT overcall when you hold the hand we have just seen. Note that all of these hands are short in hearts. That should not come as a surprise since the opponents have bid and raised hearts and your hand has 4 cards in that suit:
+
+|ht|f|cs|3|at|^B{|ih|ps7h9754dk86ckt762|at|}  |ht|g|cs|1|at|^N{ |ia|  1h2n3h!5c|at|}
+
+|
+pg| ***** 135 ***** |
+
+
+va|5|ls|sh|cs|3|at|^B{|ih|ps65h2daqt53ca9843|at|}    @2
+|hs|sc|ht|m|va|3|at|Opposite this hand, the only way that 5@C will fail is if one of the opponents has all 3 missing clubs (the @CQJ5). If that is the case and they want to double you, that is fine as the opponents will be able to make at least 5@H (or 5@S) in this case. Even if 5@C fails, it is certain to be a good sacrifice.
+@0
+|
+pg| ***** 136 ***** |
+
+
+ls|sc|hc|dqcq|va|2|ls|sh|cs|3|at|^B{|ih|ps65h2da9753caq843|at|}    @2
+
+|ht|t|va|1|at|This similar hand has the @CQ instead of the @DQ. There will not be any trump losers in 5@C, but there will be a diamond loser now. 5@C will fail by 1 trick, but that will represent a good sacrifice against 4@H (or 4@S). If the opponents push on to 5@H, there is a chance that they will not make that contract.
+@0
+|
+pg| ***** 137 ***** |
+
+
+va|1|lc|dqcq|hs|sc|cs|2|at|^-{ The sky is the limit when your partnership has a big trump fit! }
+|
+pg| ***** 138 ***** |
+
+
+ls|sc|
+
+nt|^b@2^z@3
+|ht|b|cs|1|at|^B{ |ia|  1c2cp?|at| }    @2
+
+|cs|3|ht|b|at|Suppose your partner makes a Michaels cuebid of East's 1@C opening and you have one of these 2 hands as North. Which of these hands is better and why is it better?
+@0
+|cs|3|at|^c    {|ih|psa975hjt4dqj6ckj3|at|} ^q{|ih|psa975hjt4da87c542|at|}
+|
+pg| ***** 139 ***** |
+
+
+va|7|hs|sssh|at|Both hands have the same distribution and identical (and good) holdings in both of South's long suits. |
+pg| ***** 140 ***** |
+
+
+ls|sssh|hc|hckjdqj|at|The first hand has 7 HCP in the minors |
+pg| ***** 141 ***** |
+
+
+lc|ckjdqj|hc|da|at|while the second hand has only 4 HCP in those suits. As such, it may surprise you to learn that the second hand is really better than the first hand as far as this auction is concerned. The reason is that the @DA is almost certain to take care of one of South's losers, |
+pg| ***** 142 ***** |
+
+
+lc|da|hc|ckjdqj|at|while the minor suit honor cards in the first hand are of questionable value. 
+|
+pg| ***** 143 ***** |
+
+
+hs|ss|lc|ckjdqj|va|5|cs|3|at|^B {|ih|pskqt62hkq984c7dt3|at|}    @2
+|ht|t|va|1|at|If South has this hand, for example, 4@S has no hope opposite the first hand (there are 4 certain losers), but it is a big favorite to make opposite the second hand. There is nothing special about this example hand for South - it is a minimum Michaels cuebid in terms of both strength and distribution.
+@0
+|
+pg| ***** 144 ***** |
+
+
+ht|z|va|5|cs|2|at|^-{ Having the right cards in the right suits can be more important than having a lot of high cards! }
+|
+pg| ***** 145 ***** |
+
+
+nt|^b@2^z@3
+|ht|b|cs|1|at|^B{ |ia|  1c2cp?|at| } ^o{ |ia|  1c2cp?|at| } 
+|va|7|cs|3|at|^c    {|ih|psa975hjt4dqj6ckj3|at|} ^p   {|ih|psa975hjt4da87c542|at|}
+
+|at|Both of these hands are sufficiently strong opposite a Michaels cuebid to make some kind of positive noise (as opposed to bidding 2@S - a bid that could be based on a worthless hand with no real fit for spades). 
+
+|
+pg| ***** 146 ***** |
+
+
+at|With the first hand, a jump to 3@S is enough. This is an invitational bid that asks South to go on to 4@S if he has some extra values for his Michaels cuebid. |ht|b|cs|1|at|^B{ |ia|  1c2cp!3s|at| }
+
+|
+pg| ***** 147 ***** |
+
+
+ht|b|cs|1|at|^o{ |ia|  1c2cp!4s|at| }
+|ht|u|va|3|at|With the second hand you should take the bull by the horns and jump all the way to 4@S yourself. Since 4@S will often be a good contract opposite a minimum Michaels cuebid, it would be a bad idea to offer South a mere game invitation when you hold this hand.
+
+|
+pg| ***** 148 ***** |
+
+
+cs|2|at|^-{ If you expect a game contract to have good chances when your partner has a  
+ minimum for his bidding, do not make an invitational bid - just bid game yourself! }
+|
+pg| ***** 149 ***** |
+
+
+nt|^b@2^z@3
+|ht|b|cs|1|at|^B{ |ia|  1h2np?|at| } ^o{ |ia|  1c2cp?|at| } 
+
+|at|Deciding how aggressively to bid facing a Michaels cuebid or an Unusual 2NT overcall is, like most other aspects of competitive bidding, more a question of judgment than anything else. The example hands we have seen reveal some useful guidelines that can be used to help you to judge accurately when these auctions arise:
+
+|
+pg| ***** 150 ***** |
+
+
+cs|4|at|^-{ The more cards you have in your partner's long suits, the better your hand is. }
+^-
+|
+pg| ***** 151 ***** |
+
+
+cs|2|at|^-{ Any high cards that you have in your partner's long suits are likely to be valuable. }
+^-
+|
+pg| ***** 152 ***** |
+
+
+cs|3|at|^-{ Aces in your partner's short suits are good cards to hold (but not as good as Aces in his 
+ long suits). Kings, Queens, and Jacks in your partner's short suits are often worthless. }
+^-
+|
+pg| ***** 153 ***** |
+
+
+cs|1|at|^-{ Try to picture typical hands that your partner could have for his bidding 
+ and think about how both partnerships rate to fare in various contracts. }
+^-
+|
+pg| ***** 154 ***** |
+
+
+cs|4|at|^-{ Consider the vulnerability and the number of points each partnership will score
+ in various contracts when you are faced with a competitive bidding decision. }
+^-
+|
+pg| ***** 155 ***** |
+
+
+cs|2|at|^-{ Having a good fit is more important than having a lot of high card points in these auctions. }
+|
+pg| ***** 156 ***** |
+
+
+qx|revex3,The Unusual Notrump and Michaels Cuebids - Review and Exercises|ls|ss|
+
+nt|^b@2^z@3|cs|5|cp|6|tb|y|at|
+^-{ The Unusual Notrump and Michaels Cuebids - Review and Exercises }
+^-
+|cp||at|The purpose of this topic was to introduce 2 conventions that are used in the SAYC bidding system to help your partnership with its competitive bidding after an opponent's 1-level opening bid. 
+
+These conventions are called the Unusual notrump and the Michaels cuebid and they are used in auctions like the following:
+
+|cs|1|at|^b{ |ia|  1h!2n|at| } ^o{ |ia|  1s!2s|at| }
+
+|
+pg| ***** 157 ***** |
+
+
+at|In the early days of bridge, the 2NT jump overcall was used to show a hand that would have opened the bidding 2NT. The direct cuebid of the opener's suit (2@S in the auction on the right) was used to show a hand that would have opened with a strong 2-bid. There are 2 reasons why modern bidding theorists disagreed with the traditional meanings assigned to these bids:
+
+|
+pg| ***** 158 ***** |
+
+
+cs|2|at|^-{ It is very rare to be dealt a hand strong enough for a 2NT opening or a 
+ strong 2-bid when one of the opponents has opened the bidding. }
+
+|
+pg| ***** 159 ***** |
+
+
+cs|4|at|{ If you are dealt such a strong hand and hear an opponent open the bidding in front 
+ of you, there are other ways in which you can describe your hand to your partner. }
+^-
+|
+pg| ***** 160 ***** |
+
+
+tb||
+
+nt|^b@2^z@3
+Here is a reminder of how the Unusual 2NT overcall works:
+
+|cs|1|at|^b{ |ia|  1h!2n|at| } ^o{ |ia|  1c!2n|at| }
+
+|cs|3|at|^-{ A jump to 2NT after an opponent's 1-level opening bid describes a hand with at least 
+ 5-5 in the 2 lowest ranking unbid suits. This convention is called the Unusual notrump. }
+^-
+|
+pg| ***** 161 ***** |
+
+
+at|Note that unbid is a key word in this definition. The 2NT bid in the first auction shows clubs and diamonds, but the 2NT bid in the second auction shows diamonds and hearts.
+
+|
+pg| ***** 162 ***** |
+
+
+at|The Michaels cuebid convention is a little bit more complicated:
+
+|cs|1|at|^b{ |ia|  1d!2d|at| } ^o{ |ia|  1s!2s|at| }
+
+|
+pg| ***** 163 ***** |
+
+
+cs|2|at|^-{ A direct cuebid of an opponent's minor suit opening bid 
+ describes a hand with at least 5-5 in the major suits. }
+^-
+|
+pg| ***** 164 ***** |
+
+
+cs|4|at|^-{ A direct cuebid of an opponent's major suit opening bid describes a hand with 
+ at least 5 cards in the unbid major and at least 5 cards in one of the minors. }
+^-
+|
+pg| ***** 165 ***** |
+
+
+nt|^b@2^z@3|va|5|At|Having the right distribution to use a Michaels cuebid or an Unusual 2NT overcall is only part of the story. Here is a rough estimation of the minimum point count required to use these conventions, but recall that judgment is a better guide than point count in these situations:
+
+|
+pg| ***** 166 ***** |
+
+
+cs|4|at|^-{ In most cases, 10 or more total points are required to use one of these conventions, but a 
+ Michaels cuebid of a minor suit opening bid can be made with as few as 8 total points. }
+^-
+|
+pg| ***** 167 ***** |
+
+
+cs|1|at|^-{ The Michaels cuebid and the Unusual notrump have no upper limit in terms of strength. }
+^-
+|
+pg| ***** 168 ***** |
+
+
+at|What are you supposed to do when your partner makes a Michaels cuebid or an Unusual 2NT overcall? Of course, the answer depends on the cards that you were dealt:
+
+|
+pg| ***** 169 ***** |
+
+
+cs|2|at|^-{ When responding to one of these conventions, you should bid one of your partner's suits. 
+ Bid your longer of these suits and bid the lower ranking of these suits if you have equal length. }
+^-
+|
+pg| ***** 170 ***** |
+
+
+at|There is one time when the partner of a player who used Michaels will not know exactly which of the 2 suits his partner was dealt. In this case, if he wants to find out, there is a way for him to do so:
+
+|
+pg| ***** 171 ***** |
+
+
+cs|3|at|^-{ Bid 2NT in response to a Michaels cuebid of a major suit 
+ opening bid to ask your partner to bid his long minor suit. }
+^-
+|
+pg| ***** 172 ***** |
+
+
+at|As we have seen, there are times when it is appropriate to jump in one of your partner's long suits in response to a Michaels cuebid or an Unusual 2NT overcall. The factors to be considered when deciding whether or not you should jump will be reviewed soon.|
+pg| ***** 173 ***** |
+
+
+nt|^b@2^z@3|va|5|at|Just because you have the appropriate strength and distribution to make a Michaels cuebid or an Unusual 2NT overcall, it does not follow that you should actually do so. You will do better with some of these hands if you pass and on others you will do better if you overcall in one of your long suits. Here are some factors to think about when you are faced with a hand that is marginal for either a Michaels cuebid or an Unusual 2NT overcall:
+
+|
+pg| ***** 174 ***** |
+
+
+cs|2|at|^-{ If most of your high cards are in your long suits, your hand is more suitable for these bids. 
+ If most of your high cards are in your short suits, you should consider some other action. }
+^-
+|
+pg| ***** 175 ***** |
+
+
+cs|4|at|^-{ If you are vulnerable you should be less aggressive in using these conventions. }
+^-
+|
+pg| ***** 176 ***** |
+
+
+cs|1|at|^-{If the opponents are vulnerable you should be more aggressive in using these conventions.}
+^-
+|
+pg| ***** 177 ***** |
+
+
+cs|3|at|^-{ Having strong spot cards in your long suits is a plus factor for using these conventions. }
+^-
+|
+pg| ***** 178 ***** |
+
+
+cs|2|at|^-{ A serious disparity in the quality of your 2 suits is a minus factor for using these conventions. }
+^-
+|
+pg| ***** 179 ***** |
+
+
+cs|4|at|^-{ In deciding between making an overcall and using Michaels or the unusual notrump, 
+ consider the implications of the overcall as far as your second 5-card suit is concerned. }
+^-
+|
+pg| ***** 180 ***** |
+
+
+cs|1|At|^-{ The more distribution you have, the more you should strive to bid something! }
+^-
+|
+pg| ***** 181 ***** |
+
+
+cs|3|at|^-{ Some hands with unequal length in the long suits should overcall instead of using Michaels 
+ or the Unusual notrump as these conventions could lead to a contract in the wrong suit. }
+^-
+|
+pg| ***** 182 ***** |
+
+
+nt|^b@2^z@3|Va|5|At|Instead of trying to memorize the list on the previous page as guidelines to use every time you are faced with a decision as to whether or not you should make a Michaels cuebid or an Unusual 2NT overcall, it is more practical to keep in mind the primary purpose of using these 
+conventions:
+|va|9|
+pg| ***** 183 ***** |
+
+
+cs|1|at|^-{ These conventions tell your partner that you think it might be a 
+ good idea to play in a contract with one of your long suits as trump. }
+^-
+|
+pg| ***** 184 ***** |
+
+
+at|Furthermore, remember that a good contract is not always a contract that succeeds. Sometimes a partnership can do well by playing in a contract that fails. As long as the other partnership could have succeeded in a contract of their own, a failing contract can be a good sacrifice.
+|va|9|
+pg| ***** 185 ***** |
+
+
+cs|4|at|^-{ Becoming familiar with how bridge is scored will help you to judge well in sacrifice situations. 
+ One of the appendices of this program contains a summary of how the scoring works in bridge. }
+^-
+|
+pg| ***** 186 ***** |
+
+
+at|What if your partner uses a 2-suited overcall and the next player does not pass?
+|va|9|
+pg| ***** 187 ***** |
+
+
+cs|2|at|^-{ If your partner's Michaels cuebid or Unusual notrump overcall is doubled, 
+ it is usually best to make the same bid you would have made without the double. }
+^-
+|
+pg| ***** 188 ***** |
+
+
+cs|3|at|^-{ Passing the double of a Michaels cuebid or an Unusual notrump overcall is a 
+ request for your partner to bid the longer and stronger of the 2 suits that he has shown. }
+^-
+|
+pg| ***** 189 ***** |
+
+
+cs|1|at|^-{ If your partner makes a Michaels cuebid or an Unusual notrump overcall and the next 
+ hand makes any bid, you should usually pass unless you know that your side has a good fit. }
+^-
+|
+pg| ***** 190 ***** |
+
+
+nt|^b@2^z@3
+There are 2 main advantages to using Michaels cuebids and Unusual notrump overcalls:
+
+|
+pg| ***** 191 ***** |
+
+
+cs|2|at|^-{ 1. These conventions tell your partner a lot about the nature of your hand in a single bid. }
+^-
+|
+pg| ***** 192 ***** |
+
+
+cs|4|at|^-{ 2. If you try overcalling in one of your long suits with the hope of bidding your 
+ other long suit later in the auction, it is possible that "later" will never come! }
+^-
+|
+pg| ***** 193 ***** |
+
+
+at|There are also 2 main disadvantages to using these conventions:
+
+|
+pg| ***** 194 ***** |
+
+
+cs|1|at|^-{ 1. These conventions force your partner to bid one of your long suits at a fairly high 
+ level. Sometimes your partner will not have a good fit for either one of your suits. }
+^-
+|
+pg| ***** 195 ***** |
+
+
+cs|3|at|^-{2. These conventions tell your opponents a lot about the nature of your hand in a single bid.}
+^-
+|
+pg| ***** 196 ***** |
+
+
+at|In the judgment of the people who designed the SAYC bidding system (as well as that of most of the leading bridge players and theorists in the world), the advantages of using Michaels cuebids and the Unusual notrump outweigh the disadvantages. This is particularly true if you are able to use good judgment as to when these conventions should be used.
+
+|
+pg| ***** 197 ***** |
+
+
+cs|2|At|^-{ When bridge players learn a new convention their natural tendency is to try to use
+ it as often as possible. Conventions do not work very well when they are abused! }
+^-
+|
+pg| ***** 198 ***** |
+
+
+cs|4|at|^-{ Don't make the mistake of using a convention just because you can! }
+^-
+|
+pg| ***** 199 ***** |
+
+
+nt|^b@2^z@3|va|5|
+at|Figuring out the best suit to bid when your partner has made a Michaels cuebid or an Unusual 2NT overcall is not difficult. Figuring out the right level at which to bid that suit is more complicated and is much more about judgment than it is about point count:
+|va|9|
+pg| ***** 200 ***** |
+
+
+cs|2|at|^-{ While point count is a valuable tool in many bidding situations, the accuracy of point count 
+ tends to break down in competitive auctions, especially when both partnerships have a fit. }
+^-
+|
+pg| ***** 201 ***** |
+
+
+at|Here are some factors to consider when your partner uses a 2-suited overcall and you are thinking of bidding one of his suits at a higher level than the one at which he forced you to bid:
+|va|9|
+pg| ***** 202 ***** |
+
+
+cs|4|at|^-{ In these auctions the degree of the fit that you have for your partner and the specific high 
+ cards that your hand contains is much more important than your number of total points. }
+^-
+|
+pg| ***** 203 ***** |
+
+
+cs|1|at|^-{ The more cards you have in your partner's long suits, the better your hand is. }
+^-
+|
+pg| ***** 204 ***** |
+
+
+cs|3|at|^-{ Any high cards that you have in your partner's long suits are likely to be valuable. }
+^-
+|
+pg| ***** 205 ***** |
+
+
+cs|2|at|^-{ Aces in your partner's short suits are good cards to hold (but not as good as Aces in his 
+ long suits). Kings, Queens, and Jacks in your partner's short suits are often worthless. }
+^-
+|
+pg| ***** 206 ***** |
+
+
+cs|4|at|^-{ Try to picture typical hands that your partner could have for his bidding 
+ and think about how both partnerships rate to fare in various contracts. }
+^-
+|
+pg| ***** 207 ***** |
+
+
+cs|1|at|^-{ Consider the vulnerability and the number of points each partnership will score
+ in various contracts when you are faced with a competitive bidding decision. }
+^-
+|
+pg| ***** 208 ***** |
+
+
+nt|^b@2^z@3|va|5|at|In each of the following exercises, East opens the bidding. You are sitting South and you have to decide if you would pass, overcall, or use a Michaels cuebid or an Unusual 2NT overcall.
+
+|
+pg| ***** 209 ***** |
+
+
+md||ha||mb|1d?|ht|d|cs|3|at|^C {|ih|ps7hkq985ckqjt6dk3|at|} |cs|1|ht|e|at|^O{ |ia|  1d?|at| }
+
+
+|hf|k|cq|4|lb|*BWhat call would you make?^^2n|
+
+hc|hkq985ckqjt6|cs|1|ht|e|at|^O{ |ia|  1d!2n|at| }
+
+
+|va|5|At|Make an Unusual 2NT overcall. This bid shows at least 5 cards in both of the 2 lowest ranking unbid suits. That's clubs and hearts given East's 1@D opening bid. This hand has sound values for an Unusual notrump and 2 strong 5-card suits. What more could you ask for?
+
+|
+pg| ***** 211 ***** |
+
+
+md||ha||mb|1c|ht|n|cs|3|at|^C {|ih|psj8652hajt4daca98|at|} |cs|1|ht|o|at|^O{ |ia|  1c?|at| }
+
+
+|hf|v|cq|4|lb|*BWhat call would you make?^^1s|
+cs|1|ht|o|at|^O{ |ia|  1c!1s|at| }
+
+
+|va|5|hc|hsj8652|at|Overcall 1@S. Your 5-card spade suit is weak, but your hand is sufficiently strong to warrant some kind of action. |
+pg| ***** 213 ***** |
+
+
+lc|sj8652|hc|hajt4|at|All of the alternatives have more serious flaws. This hand contains only 4 hearts and, although your hearts are strong, your partner would expect you to have at least 5 of them if you made a Michaels cuebid. |
+pg| ***** 214 ***** |
+
+
+lc|hajt4|hc|da|at|A takeout double, with only 1 card in diamonds, is even more unappealing. |
+pg| ***** 215 ***** |
+
+
+lc|Da|hc|sj8652|at|Overcalling with a weak 5-card suit should be avoided if possible, but misleading your partner about the distribution of your hand is a more serious transgression! |
+pg| ***** 216 ***** |
+
+
+lc|hkq895ckqjt6|lc|sj8652|
+
+nt|^b@2^z@3|
+md||ha||mb|1h?|ht|b|cs|3|at|^C {|ih|psqt642h7dkj762ct3|at|} |cs|1|ht|c|at|^O{ |ia|  1h?|at| }
+
+
+|hf|i|cq|4|lb|*BWhat call would you make?^^p|
+cs|1|ht|c|at|^O{ |ia|  1h!p|at| }
+
+
+|hs|sssd|va|5|at|You should pass even though you have the right distribution to make a Michaels cuebid of 2@H. |
+pg| ***** 218 ***** |
+
+
+ls|sssd|hc|sqdkj|at|This hand has only 6 HCP. |
+pg| ***** 219 ***** |
+
+
+lc|sqdkj|hc|sqt642dkj762|at|Even when you include 2 long suit points for the 2 5-card suits, you get only 8 total points. Your partner would normally expect you to have at least 10 HCP to make a Michaels cuebid of a major suit opening. Using Michaels with this hand is asking for trouble!
+
+|
+pg| ***** 220 ***** |
+
+
+md||ha||mb|1s|ht|n|cs|3|at|^C {|ih|pskhaqdt9543cq6542|at|} |cs|1|ht|o|at|^O{ |ia|  1s?|at| }
+
+
+|hf|v|cq|4|lb|*BWhat call would you make?^^p|
+cs|1|ht|o|at|^O{ |ia|  1s!p|at| }
+
+
+|hc|cq6452dt9543|va|5|At|Pass again even though your distribution and strength make this hand appropriate for an Unusual 2NT overcall. |
+pg| ***** 222 ***** |
+
+
+lc|cq6542dt9543|hc|skhaq|at|Most of the high card strength in this hand is in its short suits (the majors) and that should be taken as a warning sign that an Unusual 2NT overcall should be rejected. This hand is more suitable for defense |
+pg| ***** 223 ***** |
+
+
+lc|skhaq|hc|cq6542dt9543|at|than it is for playing in a contract with one of the minor suits as 
+trump. As for the thought of overcalling in one of the minors, it is best to get that out of your head! A 2-level overcall on a weak 5-card suit is something that should be avoided if there is any reasonable alternative. Passing certainly qualifies as a reasonable alternative with this hand.|
+pg| ***** 224 ***** |
+
+
+lc|sqt642dkj762cq6542dt9543|
+
+
+nt|^b@2^z@3|
+md||ha||mb|1c?|ht|b|cs|3|at|^C {|ih|pskt976hqt9843d6c4|at|} |cs|1|ht|c|at|^O{ |ia|  1c?|at| }
+
+
+|hf|i|cq|4|lb|*BWhat call would you make?^^2c|
+
+cs|1|ht|c|at|^O{ |ia|  1c!2c|at| }
+
+
+|hc|skt976hqt9843|va|5|At|Make a Michaels cuebid of 2@C to show both majors. |
+pg| ***** 226 ***** |
+
+
+lc|skt976hqt9843|hc|skhq|at|This hand has only 5 HCP, |
+pg| ***** 227 ***** |
+
+
+hc|skt976hqt9843|at|but 3 long suit points should be counted (1 for the 5-card spade suit and 2 for the 6-card heart suit). 8 total points is enough for a Michaels cuebid of a minor suit opening. Another plus factor is that this hand has strong spot cards in its long suits. Finally, this hand has the "right" 6-card suit as North will bid hearts if he has equal length in the majors. All of these signs point to using Michaels.
+
+|
+pg| ***** 228 ***** |
+
+
+md||ha||mb|1d|ht|n|cs|3|at|^C {|ih|psaqj83hj5d9caqj98|at|} |cs|1|ht|o|at|^O{ |ia|  1d?|at| }
+
+
+|hf|v|cq|4|lb|*BWhat call would you make?^^1s|
+cs|1|ht|o|at|^O{ |ia|  1d!1s|at| }
+
+
+|va|5|hc|saqj83|
+at|You should overcall 1@S |
+pg| ***** 230 ***** |
+
+
+hc|caqj98|at|because you have the wrong suits for either a Michaels cuebid or an Unusual 2NT overcall. Michaels would show hearts and spades while an Unusual notrump would show hearts and clubs. This hand contains spades and clubs and, in the SAYC bidding system, there is no way to show both of these suits with a single bid after a 1@D opening by the opponents. Show your spades now and hope to have a convenient chance to show your clubs later in the auction. This hand is ideal for a 2-suited overcall, but there is no 2-suited overcall available to show these particular 2 suits.
+|
+pg| ***** 231 ***** |
+
+
+lc|skt976hqt9843saqj83caqj98|
+
+
+nt|^b@2^z@3|
+md||ha||mb|1h?|ht|b|cs|3|at|^C {|ih|ph8cakqt87dakjt94|at|} |cs|1|ht|c|at|^O{ |ia|  1h?|at| }
+
+
+|hf|i|cq|4|lb|*BWhat call would you make?^^2n|
+cs|1|ht|c|at|^O{ |ia|  1h!2n|at| }
+
+
+|va|5|hc|dakjt94cakqt87|at|Overcall with an Unusual 2NT to show both minors. It is rare to have a hand that is this powerful, especially when one of the opponents has opened the bidding. Fortunately, there is no upper limit in terms of strength for an Unusual 2NT overcall (or a Michaels cuebid for that matter). This particular hand is so strong that it would not be unreasonable to raise your partner's expected 3@C or 3@D reply all the way to slam!
+
+|
+pg| ***** 233 ***** |
+
+
+md||ha||mb|1s|ht|n|cs|3|at|^C {|ih|phakqt64dq8752c63|at|} |cs|1|ht|o|at|^O{ |ia|  1s?|at| }
+
+
+|hf|v|cq|4|lb|*BWhat call would you make?^^2h|
+cs|1|ht|o|at|^O{ |ia|  1s!2h|at| }
+
+
+|hc|hakqt64|va|5|at|Overcall 2@H |
+pg| ***** 235 ***** |
+
+
+hc|dq8752|at|even though you have a Michaels cuebid available to show hearts and one of the minors. The problem with using Michaels with this hand is that your hearts are not only much stronger than your diamonds, they are also longer. On top of that, hearts is a major suit and diamonds is a lowly minor. If you made a Michaels cuebid with this hand, you would sometimes end up in diamonds when you belonged in hearts. |
+pg| ***** 236 ***** |
+
+
+lc|dq8752|at|A 2@H overcall will increase the partnership's chances of ending up in the right trump suit. |
+pg| ***** 237 ***** |
+
+
+lf|play1.lin|p1|102,0,39,700,48,Times New Roman,700,36,Times New Roman,7,32,30,40|
+cr|023|cg|076|cb|056|cd|0|nl|Y|
+cr|1248|cg|1231|cb|1189|
+cr|2185|cg|2201|cb|2195|
+cr|3198|cg|3205|cb|3229|
+cr|4142|cg|4156|cb|4204|
+cr|5198|cg|5205|cb|5229|
+cr|6102|cg|60|cb|639|cq|3|
+
+bt||nt||cs|5|cp|6|fp|4|ht|i|at|^-{^^End^^ 
+      Learn to Play Bridge2          ^*bChapter 6   Section 3^*n       ^^ ^^ ^^Michaels and Unusual Notrump^^ ^^ }^- |

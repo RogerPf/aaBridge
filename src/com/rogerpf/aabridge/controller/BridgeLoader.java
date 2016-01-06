@@ -66,7 +66,7 @@ public class BridgeLoader {
 		File firstLin = null;
 		int linCount = 0;
 		for (File file : files) {
-			if (file.isFile() && file.getName().toLowerCase().endsWith(".lin")) {
+			if (file.isFile() && (file.getName().toLowerCase().endsWith(".lin") || file.getName().toLowerCase().endsWith(".pbn"))) {
 				linCount++;
 				if (firstLin == null)
 					firstLin = file;
@@ -95,17 +95,17 @@ public class BridgeLoader {
 		if (chapterLoaded) {
 			App.book = b;
 		}
-		App.bookPanel.matchToAppBook();
+		App.aaBookPanel.matchToAppBook();
 		return chapterLoaded;
 	}
 
 	/**   
 	 */
-	public static boolean readLinFileIfExists(String pathWithSep, String dealName) {
+	public static boolean readLinOrPbnFileIfExists(String pathWithSep, String dealName) {
 		// ==============================================================================================
 
 		if (pathWithSep == null || pathWithSep.contentEquals("")) {
-			pathWithSep = App.savesPath;
+			pathWithSep = App.realSavesPath;
 		}
 
 		File fileIn = new File(pathWithSep + dealName);
@@ -120,7 +120,9 @@ public class BridgeLoader {
 		try {
 			fis = new FileInputStream(fileIn);
 
-			lin = new Lin(fis, pathWithSep, dealName, App.dotLinExt);
+			boolean isLin = dealName.toLowerCase().endsWith(App.dotLinExt);
+
+			lin = new Lin(fis, pathWithSep, dealName, isLin);
 
 			fis.close();
 
@@ -153,7 +155,7 @@ public class BridgeLoader {
 
 	/**   
 	 */
-	public static boolean readLinResourseIfExists(String jarName, String resName) {
+	public static boolean readLinOrPbnResourseIfExists(String jarName, String resName) {
 		// ==============================================================================================
 
 		Lin lin = null;
@@ -163,7 +165,7 @@ public class BridgeLoader {
 		URL[] urls = null;
 		try {
 
-			System.out.println("jarname " + jarName);
+			// System.out.println("jarname " + jarName);
 
 			urls = new URL[] { new File(jarName).toURI().toURL() };
 		} catch (MalformedURLException e) {
@@ -171,7 +173,7 @@ public class BridgeLoader {
 		}
 
 		/* We still need to run on MACs (Snow Leopard and earlier that use Java 6
-		 * and Java 6 has no way of freeing the loaded class, ven if one could work
+		 * and Java 6 has no way of freeing the loaded class, even if one could work
 		 * out WHEN that should be done.
 		 */
 		@SuppressWarnings("resource")
@@ -180,7 +182,9 @@ public class BridgeLoader {
 		try {
 			is = classLoader.getResourceAsStream(resName);
 
-			lin = new Lin(is, "_not_", "_used_", App.dotLinExt);
+			boolean isLin = resName.toLowerCase().endsWith(App.dotLinExt);
+
+			lin = new Lin(is, "_not_", "_used_", isLin);
 
 			is.close();
 

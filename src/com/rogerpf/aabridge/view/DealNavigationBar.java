@@ -48,7 +48,7 @@ public class DealNavigationBar extends JPanel implements MouseListener {
 
 	public boolean entered = false;
 
-	/**   
+	/**
 	 */
 	public DealNavigationBar() { /* Constructor */
 		// =============================================================
@@ -58,6 +58,18 @@ public class DealNavigationBar extends JPanel implements MouseListener {
 		addMouseListener(this);
 	}
 
+//	/**
+//	 */
+//	boolean isInsideWheelButton(MouseEvent e) {
+//		// =============================================================
+//		float bWidth = width * Aaa.butWheelWidthFraction;
+//		float bHeight = height * Aaa.butWheelHeightFraction;
+//		float xBut = width - bWidth;
+//		float yBut = height * (1.0f - Aaa.butWheelHeightFraction);
+//
+//		return (new Rectangle2D.Float(xBut, yBut, bWidth, bHeight)).contains(new Point.Float(e.getX(), e.getY()));
+//	}
+
 	/**   
 	 */
 	public void mouseReleased(MouseEvent e) {
@@ -66,6 +78,12 @@ public class DealNavigationBar extends JPanel implements MouseListener {
 
 		if (App.deal.isDoneHand()) // so we skip the 'done hand'
 			return;
+
+//		if (isInsideWheelButton(e)) {
+//			App.useMouseWheel = !App.useMouseWheel;
+//			App.frame.repaint();
+//			return;
+//		}
 
 		for (int i = 0; i < App.dePointAy.size(); i++) {
 			boolean last = (i == App.dePointAy.size() - 1);
@@ -93,13 +111,14 @@ public class DealNavigationBar extends JPanel implements MouseListener {
 					App.setMode(Aaa.REVIEW_PLAY);
 					App.reviewTrick = dp.trickInd;
 					App.reviewCard = dp.cardInd;
-//					CmdHandler.validateReviewIndexes();
+					CmdHandler.validateReviewIndexes();
 				}
 			}
 		}
 
 		App.gbp.matchPanelsToDealState();
 		App.frame.repaint();
+		App.con.controlerInControl();
 	}
 
 	public void mouseEntered(MouseEvent arg0) {
@@ -207,11 +226,29 @@ public class DealNavigationBar extends JPanel implements MouseListener {
 		if (futureStart == 0) {
 			futureStart = mainTo;
 		}
+		float gig = 0.05f;
 		g2.setColor(unplayedColor);
-		g2.fill(new Rectangle2D.Float(futureStart, yb - hl, mainTo - futureStart, hl));
+		g2.fill(new Rectangle2D.Float(futureStart, yb - hl * (1 + gig), mainTo - futureStart, hl * (1 - gig)));
 
-		@SuppressWarnings("unused")
-		int z = 0; // put your breakpoint here
+		// Mouse Wheel on off button display
+//		{
+//			g2.setColor(App.useMouseWheel ? Cc.GreenWeak : Aaa.navClaimedIntense);
+//
+//			float bWidth = width * Aaa.butWheelWidthFraction;
+//			float bHeight = height * Aaa.butWheelHeightFraction;
+//			float xBut = width - bWidth;
+//			float yBut = height * (1.0f - Aaa.butWheelHeightFraction);
+//
+//			bWidth = bWidth * 0.9f;
+//			bHeight = bHeight * 0.9f;
+//
+//			g2.fill(new Rectangle2D.Float(xBut, yBut, bWidth, bHeight));
+//
+//			g2.setColor(entered ? Cc.g(Cc.rpfDefBtnColor) : unplayedColor);
+//
+//			Aaa.drawCenteredString(g2, "W", xBut, yBut, bWidth, bHeight);
+//		}
+
 	}
 
 }

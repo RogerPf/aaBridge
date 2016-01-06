@@ -37,6 +37,8 @@ public class Hand implements Comparable<Hand> {
 
 	public String bubbleText = "";
 
+	public boolean ddsValuesAssigned;
+
 	/** 
 	 */
 	public Hand(Deal dealV, Dir compass) { // constructor
@@ -44,6 +46,7 @@ public class Hand implements Comparable<Hand> {
 		this.compass = compass;
 		compassCh = compass.toLowerChar();
 		playerName = "";
+		ddsValuesAssigned = false;
 		for (Suit su : Suit.cdhs) {
 			fOrgs[su.v] = new Frag(this, su);
 			frags[su.v] = new Frag(this, su);
@@ -426,7 +429,7 @@ public class Hand implements Comparable<Hand> {
 
 	/** 
 	 */
-	public void undoLastPlay() {
+	public Card undoLastPlay() {
 		assert (played.size() >= 1);
 
 		deal.clearAllStrategies();
@@ -437,6 +440,7 @@ public class Hand implements Comparable<Hand> {
 
 		Card card = played.removeLast();
 		frags[card.suit.v].addDeltCard(card);
+		return card;
 	}
 
 	/** 
@@ -740,7 +744,7 @@ public class Hand implements Comparable<Hand> {
 					if (h2.axis() == d2.defenderAxis()) {
 						cardThatWould = h2.dumbAutoInner(g2);
 						if (cardThatWould != null && (cardThatWould.rank != card.rank || cardThatWould.suit != cardThatWould.suit)) {
-							System.out.println(" RERUN ===  " + card + " was played,  this time would play  " + cardThatWould);
+//							System.out.println(" RERUN ===  " + card + " was played,  this time would play  " + cardThatWould);
 						}
 						cardThatWould = null;
 					}
@@ -811,10 +815,11 @@ public class Hand implements Comparable<Hand> {
 		// ==============================================================================================
 		String s = "";
 		for (Suit su : Suit.shdc) { // Spades first
-			s += su.toStr();
+			s += su.toStr().toLowerCase();
 			Frag fOrg = fOrgs[su.v];
 			int sl = fOrg.size();
-			for (int j = sl - 1; j >= 0; j--) {
+//			for (int j = sl - 1; j >= 0; j--) {  // is this low to high ?
+			for (int j = 0; j < sl; j++) {
 				s += fOrg.get(j).rank.toStr();
 			}
 		}

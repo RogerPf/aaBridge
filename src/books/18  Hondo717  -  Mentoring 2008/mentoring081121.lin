@@ -1,6 +1,6 @@
 mn|Howard Schutzman (hondo717) Mentoring Nov 18, 19 && 20, 2008|
 
-fh|155|ff|1Arial|fb|110|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|155|ff|1Arial|fb|17|fm|1|       FONT SIZE AND TYPE FOR 1
 fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
 fh|340|ff|3Arial|fb|35|fm|3|                           FOR 3
 fb|49|fm|4|fb|4|fm|4|
@@ -909,13 +909,15 @@ cr|364|cg|3255|cb|364|
 cr|4255|cg|464|cb|4255|
 cr|5255|cg|564|cb|564|
 3d|5|sr|y|
+tu|y|
 nt||bt||mn|        Control Bids - Howard Schutzman        |
-ht|e|at|^b@2Control bids are a method some experts use as a way of exploring for slam. They are used to discover if the partnership @E@3has first and/or second round control of the non-trump suit. First round control means the partnership can capture the first trick in the suit (e.g. someone has the ace or a void in the suit). Second round control means the partnership can capture the second trick in the suit (e.g. someone has the king or a singleton in the suit). To bid a small slam, you need first round control of at least 3 suits and second round control of the remaining suit. To bid a grand slam, you need first round control of all suits.
+at|^z@3|
+ht|e|at|^b@2Control bids are a method some experts use as a way of exploring for slam. They are used to discover if the partnership has first and/or second round control of the non-trump suit. First round control means the partnership can capture the first trick in the suit (e.g. someone has the ace or a void in the suit). Second round control means the partnership can capture the second trick in the suit (e.g. someone has the king or a singleton in the suit). To bid a small slam, you need first round control of at least 3 suits and second round control of the remaining suit.  To bid a grand slam, you need first round control of all suits.
 
 A control bidding sequence is initiated once a partnership has established a game forcing auction and has agreed upon a trump suit. For example, in the sequence |HT|M|CS|1|at|^H {|ia|1hp2np3hp4c|at|}     4@C is a control bid, showing |HT|N|AT|^Sa control in clubs.|HT|Q|AT|^B
 Italian control bids are the simplest and most effective way to play control bids. With Italian control bids, the first time a suit is bid, the bidder is guaranteeing either first or second round control in that suit. Also, if the bidder skips a suit, the bidder is denying a control in that suit. So, in the example auction above, the 4@C bid shows first or second round control of clubs, and denies first or second round control of spades.|
 
-HT|V|cs|1|AT|^d@2 {|ih|psq96hj984dak4ck32|at|}^mor|HT|V|cs|1|AT|^P {|ih|psq96hj984dak4ca32|at|}
+HT|V|cs|1|AT|^d@2 {|ih|psq96hj984dak4ck32|at|}^lor|HT|V|cs|1|AT|^R {|ih|psq96hj984dak4ca32|at|}
 
 |
 PG| ***** 192 ***** |
@@ -939,8 +941,7 @@ PG| ***** 193 ***** |
 
 
 NT||
-
-
+tu||
 %%%%%%%%%%%%%%%%%%%%% Pearls 
 BT||
 qx|10, the Pearls|cs|1|cp|4|fp|1|

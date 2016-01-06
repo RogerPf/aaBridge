@@ -3,7 +3,7 @@ standardcountsignals.lin
 %%%% By Kia, BBO nickname "nome"
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 bt||
-fh|155|ff|1Arial|fb|110|fm|1|        
+fh|155|ff|1Arial|fb|17|fm|1|        
 fh|235|ff|2Arial|fb|28|fm|2|                            
 fh|340|ff|3Arial|fb|35|fm|3|                            
 fh|420|ff|4Arial|fb|420|fm|4|
@@ -17,7 +17,7 @@ cr|70|cb|7220|cg|7235|              green/blue 7
 cr|8255|cb|80|cg|80|                red 8
 cr|9128|cb|90|cg|950|               Reddish-brown 9
 %%%%% Count Signals
-qx|A6|BT||tu||HT|a|va|4|cs|1|cp|4|fp|3|at|^-{    Count Signals - Standard    }
+qx|A6|BT||tu||HT|b|va|4|cs|1|cp|4|fp|3|at|^-{    Count Signals - Standard    }
 ^-|CP||FP||at|^B@2Knowing the counts in a suit is a great tool for the defenders. Giving count signals enables them to achieve this knowledge. When you and your partner know Declarer's count in a suit (based on the bidding), it is not necessary to give count to each other. Giving count would only help Declarer (if she/he pays attention).|
 PG| ***** 0 ***** |
 
@@ -72,7 +72,7 @@ PG| ***** 8 ***** |
 
 NT||
 %%page
-HT|a|va|4|cs|1|cp|4|fp|3|at|^-{    Count Signals - Standard    }
+HT|b|va|4|cs|1|cp|4|fp|3|at|^-{    Count Signals - Standard    }
 ^-|CP||FP||at|^B@2When you lead the Ace of a suit you bid (and partner did not support), and K Q x (x) shows up in dummy, partner gives count. Many times, that will tell you, Lavinthal, or not you can give partner a ruff.|
 PG| ***** 9 ***** |
 
@@ -418,7 +418,7 @@ PG| ***** 81 ***** |
 nt||bt||pf||
 %%
 %%page
-HT|a|va|4|cs|1|cp|4|fp|3|at|^-{    Count Signals - Standard    }
+HT|b|va|4|cs|1|cp|4|fp|3|at|^-{    Count Signals - Standard    }
 ^-|CP||FP||at|^B@2That was a short synopsis on count signals the way Movie Maker does understand it. There are many great article on the subject. One noteworthy is Howard's article on signals at |CP|1|AT|^*Hwww.bridgesights.com/hondobridge/signaling.pdf^*N|CP||AT| and the BBO movie adaptation from his 202 lessons in BIL at |CP|1|AT|^*Hwww.bridgesights.com/hondobridge/hondoviewer/hondoviewer.php?sf=signaling^*N|CP||AT| from his web site or from  BIL library at |CP|1|AT|^*Hwww.bilbridge.com^*N|CP||AT| .|
 PG| ***** 82 ***** |
 

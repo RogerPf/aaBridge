@@ -2,7 +2,7 @@ stayman.lin
 %% Last edited  10-13-2013 
 %%%% By Kia, BBO nickname "nome"
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-fh|155|ff|1Arial|fb|110|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|155|ff|1Arial|fb|17|fm|1|       FONT SIZE AND TYPE FOR 1
 fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
 fh|340|ff|3Arial|fb|35|fm|3|                           FOR 3
 fb|49|fm|4|fb|4|fm|4|
@@ -17,26 +17,11 @@ cr|8255|cb|80|cg|80|                red 8
 cr|9128|cb|90|cg|950|               Reddish-brown 9
 
 %%%%===================
-bt||cs|1|ht|b|fp|1|cp|4|at|^-{  The Stayman Convention  }
-|FP||AT|{  By Howard Schutzman  }
-^-|FP||cp||AT|
-^-October 2013
-^-|ht|j|cs||fp||at|^-
-To begin the presentation
-
-in BBO click the forward arrow, right bottom of the screen   ^$40
-
-in the Viewer click Next Page, top of the screen left
- 
-^-|
-PG| ***** 0 ***** |
-
-
+bt||
 %%
 ht|h|at|@4|cs|1|ht|b|fp|1|cp|4|at|^-{  The Stayman Convention  }
 |FP||AT|{  By Howard Schutzman  }
-^-|FP||cp||AT|
-^-October 2013
+^-|FP||cp||AT|^-October 2013
 ^-|
 ht|e|va|4|fp||AT|^B@2
 This short synopsis is based "Fundamentals of Constructive Bidding" Howard Schutzman, BBO nickname "hondo717" held in the BIL in 2010. You can find the original lesson material under "Introduction to Constructive Bidding" in the "Tutorials" section from his web site at |CP|1|at|^*Hwww.bridgesights.com/hondobridge^*N|CP||at| or in the BIL library at |CP|1|AT|^*Hwww.bilbridge.com^*N|CP||AT|.|qx|B, beginning|at|
@@ -49,9 +34,12 @@ To start this presentation from the beginning please click one of the blue link 
 ^*GB05,     Quizzes^*N
 ^-|
  
-cp||ht|u|AT|^b@2Prepared by Kia (BBO nickname "nome"), aka ^*BMovie Maker ^*N who also wishes to thank Marge DeFries (BBO nickname "mardef") for editing these presentations. |
-ht|w|cp||at|
-Click ^*GHELP,|cp|1|at|How to Navigate ^*N|cp||cs||at| if you need help navigating through this presentation. Additional help is available from the  {?Help}  |VA|4|AT|icon in the Viewer (top right) and the |cs|8|CP|3|AT| {HELP} |CP||cs||AT| box (bottom right) in the BBO. Click |CP|1|at|^*GBI,Beginner Intermediate Lounge^*N|CP||AT| to read |VA|4|AT|an introduction for BIL and click |cp|1|AT|^*GHOW,Howard^*N|CP||AT| to read an introduction for Howard|
+cp||ht|u|AT|
+
+
+
+^b@2Prepared by Kia (BBO nickname "nome"), aka ^*BMovie Maker ^*N who also wishes to thank Marge DeFries (BBO nickname "mardef") for editing these presentations. |
+
 PG| ***** 1 ***** |
 
 
@@ -594,78 +582,3 @@ cp||fp|2|ht|v|at|©^*B Howard Schutzman "hondo717"    ^*N
 
 Please click |CP|1|at|^*GB,here^*N|CP||AT| to return to the start of this presentation.|
 PG| ***** 74 ***** |
-
-
-NT||
-%%%%%%%%%%%%%%55 Help
-qx|HELP,How to Navigate Through This Presentation|
-cs|1|bt||mn|How to Navigate Through This Presentation|tu|1|at|
-
-
-
-
-Use the toolbar buttons at the top of this window (if using the Viewer) or at the bottom of this window (if using the BBO program) to move around this presentation. The buttons either have text labels as in the Viewer such as "^*BNext page^*N" for the forward arrow or "^*BPrevious Page^*N" for the back arrow. In the BBO toolbar you can see the function of each button by rolling the cursor over it. 
-
-Click the "^*BNext Page^*N" or the forward arrow button to move to the next page or the "^*BPrevious Page^*N" button to move back a page. The chapters are broken down into several ^*Itopics^*N. The "^*BNext topic^*N" button is used to skip ahead to the first page of the following topic. You can go back to the first page of the previous topic by clicking the "^*BPrevious topic^*N" button if you are already on the first page of the current topic. Regardless. to enjoy this presentation all you need is clicking the ^*BNext page^*N button again and again.
-
-This presentation, like the book, has a table of contents. To return to the table of contents at any time you can either click the second button on the left of the toolbar in BBO or the "^*BFirst page^*N" button in the Viewer. You should also know that if you are ever having trouble figuring out how to use this presentation, you can always click the  |cs||CP|8|at|{HELP}|CP||AT|  button. 
-
-However, please note that, on a computer that is running Windows Vista, Windows 7, Windows Server 2008, or Windows Server2008 R2, you may be unable to use the Help feature in many programs including this presentation. When you try to use the Help feature, you may receive the following message in the Windows Help and Support window:|CS|6|cp||va|6|at|
-^-{    Why can't I get Help from this program?    }
-^-|CP||AT|
-For additional information and down loading the needed file please click the |CP|1|AT| ^*Hsupport.Microsoft.Com/kb/917607^*N|CP||AT| site. If you have a 64 bit machine then you need to down load the necessary file from|CP|1|AT| ^*Hwww.delphi7.nl/download.php?file=Windows6.1-KB917607-x64.msu&typefile=tutorials^*N|CP||AT|. BTW, Viewer does not have this issue.
-
-BTW, Many blue color links such as the one above are hyperlinks. A new notice box will appear informing you of the expected action when you move your cursor over it. clicking over the blue line will move you to the intended information. Try it now. Move your cursor over the blue link but do not click.  |
-pg| ***** 75 ***** |
-
-
-cp||nt||
-%%page 2
-CS|6|AT|
-
-
-
-^-
-{    HOW TO PLAY DOUBLE DUMMY    }
-^-|CS||AT|
-To play a board double dummy, play free, means you can manually play out the cards seeing all 4 hands. This is a great way to practice. To do so, click on the card you wish to play from that hand on lead. Click on the cards from the next 3 hands in order of the play to complete the trick. Click on the trick to "close" it. Continue this procedure until all 13 tricks are played.
-
-You can place your cursor over any closed trick to review the cards played to that trick. You can undo a play by clicking on the back arrow button in the BBO toolbar or the undo button in the viewer. To cancel double dummy play and move to the next section, click forward arrow button.|CS|6|AT|^-
-
-{    HOW TO OPEN A CLOSED FORMAT DEAL    }
-^-|CS||AT| 
-As you may know, you can see the cards in all hand diagrams, examples, and deals. In this presentation, in many instances again to enhance its teaching, they are presented in a closed format similar to as you experience at a bridge table. Some may not like this feature and prefer an open format. A ^*Ione^*N left click on the seat will open that hand, if closed, and a ^*Itwo^*n left click will open all four hands. You can reverse your action by another left click. |CS|6|AT|^-
-
-{    Navigation USING YOUR KEYBOARD    }
-^-|CS||AT|
-In addition to buttons in the BBO toolbar, you can also use the keyboard to move around this presentation, as follows:
-
-^cThe right arrow is equivalent to the Next Page. 
-^cThe left arrow is equivalent to the Previous Page. 
- 
-
-
-|
-PG| ***** 76 ***** |
-
-
-NT||
-%%Page 3
-cs|6|at|
-
-
-
-^-
-{    How TO ANSWER A QUIZ    }
-^-|CS||AT| 
-Simple. Select the bid or the card from the available choices and click it. BBO software will reward you with one of its approving melodies if you answer correctly.|
-cs|6|at|^-
-
-{    WHAT IF YOU CANNOT SEE THE ENTIRE PAGE    }
-^-|CS||AT|
-In order to enjoy this presentation you need to be in "Wide Screen BBO Mode" and your display resolution should be higher than 800 X 600. The best viewing resolution is 1600 X 1200. There is a comprehensive instruction on these subjects in BIL library web site at|CP|1|AT| ^*Hwww.bilbridge.Com/^*N|CP||AT|. Further, in that site, those who are using Apple devices can get information in how to enjoy this presentation.
-
-Please click |CP|1|at|^*GB, here^*N|CP||AT| to return to the start of this presentation.|
-PG| ***** 77 ***** |
-
-

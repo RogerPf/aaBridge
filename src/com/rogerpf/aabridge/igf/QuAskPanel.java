@@ -67,9 +67,11 @@ public class QuAskPanel extends ConsumePanel {
 
 		scaleFrac = width / LIN_STANDARD_WIDTH;
 		fontScaleFrac = FONT_SCALE_FRAC * scaleFrac;
-		lineSeparationFrac = LINE_SEPARTATION_FRAC; // no mult this is a const // * scaleFrac;
-		lineSeparation = 0;
-		heightOfNextLine = 0; // set later by calc
+		heightOfCurFontFrac = LINE_SEPARTATION_FRAC; // no mult this is a const // * scaleFrac;
+		lineSpacing_multiplier = 1;
+		heightOfCurFont = 0;
+		maxHeightOnCurLine = 0; // set later by calc
+		nonFont_on_this_line = false;
 
 		columnWidth = COLUMN_WIDTH_FRAC * width;
 		// OLD WAY rowSpacing = ROW_HEIGHT_FRAC * width; // yes width - NEVER the 'two value' height
@@ -113,7 +115,7 @@ public class QuAskPanel extends ConsumePanel {
 		case 'd':
 		case 't':
 		case 'y':
-			gi.text = gi.bb.get(2);
+			gi.text = Aaa.deAtQuestionText(gi.bb.get(2));
 			break;
 		case 'z':
 			gi.text = "";

@@ -30,7 +30,7 @@ public class SeglinePanel extends ClickPanel {
 
 	MassGi mg;
 
-	boolean use_gray_text = false;
+//	boolean use_gray_text = false;
 	boolean skip__mn_text = false;
 
 	public static final float FONT_SCALE_FRAC = 0.604f;
@@ -57,9 +57,11 @@ public class SeglinePanel extends ClickPanel {
 	protected float height;
 
 	protected float fontScaleFrac;
-	protected float lineSeparationFrac;
-	protected float lineSeparation;
-	protected float heightOfNextLine;
+	protected float lineSpacing_multiplier;
+	protected float heightOfCurFontFrac;
+	protected float heightOfCurFont;
+	protected float maxHeightOnCurLine;
+	protected boolean nonFont_on_this_line;
 
 	protected float topAdjust;
 	protected float columnWidth;
@@ -195,13 +197,13 @@ public class SeglinePanel extends ClickPanel {
 			Ras rasLast = seg.get(seg.size() - 1);
 
 			if (i == from) { // first ras of first seg
-				top = rasFirst.y - rasFirst.tl.getAscent();// + rasFirst.tl.getDescent();
+				top = rasFirst.y - 1.0f * rasFirst.tl.getAscent(); // + rasFirst.tl.getDescent();
 				fill_color = seg.fillColor;
 				segBox = seg;
 			}
 
 			if (i == to) { // first ras of first seg - yes last ras would work as well)
-				bottom = rasFirst.y + 2 * rasFirst.tl.getDescent();
+				bottom = rasFirst.y + 1.7f * rasFirst.tl.getDescent();
 			}
 
 			if (left > rasFirst.x)
@@ -226,9 +228,9 @@ public class SeglinePanel extends ClickPanel {
 
 		segBox.boxRect = new Rectangle2D.Float(left, top, width, height);
 
-		if (fill_color != null && fill_color.getRGB() == Color.WHITE.getRGB()) {
-			fill_color = Aaa.tutorialBackground;
-		}
+//		if (fill_color != null && fill_color.getRGB() == Color.WHITE.getRGB()) {
+//			fill_color = Aaa.tutorialBackground;
+//		}
 		segBox.fillColor = fill_color;
 
 //		g2.setColor(new Color(200, 10, 10));

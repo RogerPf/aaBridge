@@ -1,0 +1,817 @@
+%% Suit-contracts(3) Some examples for plan 1: Use dummy's shortness
+%% For beginners(11)
+mn| Al (xx1943) teaching :  Declarer play for beginners Lesson 11: (Play a suit-contract 3)|
+tu||
+
+%% Font definiton:
+fh|150|ff|1Arial|fb|17|fm|1|
+fh|235|ff|2Arial|fb|28|fm|2|
+fh|340|ff|3Arial|fb|35|fm|3|
+fb|49|fm|4|fb|4|fm|4|
+
+%% color definition
+cr|116|cg|116|cb|1255|              blau = blue
+cr|2255|cg|2255|cb|264|             gelb = yellow
+cr|30|cg|30|cb|3128|                dunkelblau = dark blue
+cr|4255|cg|4255|cb|40|              dunkleres gelb = dark yellow
+cr|516|cg|5128|cb|516|              grün = green
+cr|6245|cb|6220|cg|6235|            beige
+cr|70|cb|7220|cg|7235|              grün-blau = green-blue
+cr|8255|cb|8200|cg|8200|            rosa = pink
+cr|9200|cb|90|cg|9150|              braun = brown
+
+%% -----------------------------------menu-------------------------------------------
+qx|Menu|
+set background color
+bg|6|
+bt||nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^-{ Al teaching:  Declarer play for beginners (suit contract 3)}
+
+{Plan ##1: Ruff loser in the short hand. Some examples}
+^-|
+cp||fp||
+
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+ht|d|
+cs|3|
+cp|4|
+^-
+fp|1|3d|0|
+cp||
+fp||
+cs|2|
+ht|f|
+at|^c@2^x@3{
+^*GIntroduction,     What you learn in this lesson - please read it first^*N
+
+{
+^*Go1,     Example 1 : Plan 1 Ruff losers^*N
+^*Go1f,     Example 1 : Free play^*N
+^*Go2,     Example 2 : Plan 1 Determine the master-hand^*N
+^*Go3,     Example 3 : How to manage to draw exactly 2 rounds of trumps.^*N
+^*Go3f,     Example 3 : Free play^*N
+
+{
+^*Gintro, ^c     About this series of lessons^*N 
+
+{^x@3
+^*Gbooks,     Recommendations^*N
+^*Ghelp,     How to navigate in this movie ^*N
+^*Gcredits,     Credits ^*N
+}|
+pg| ***** 0 ***** |
+
+
+%% ------------------------------------------------------------------------
+
+%%--------------------------summary--What to learn in this lesson---------
+qx|Introduction|
+
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {This is what you'll learn in this lesson ^z}
+|
+cp||cs|8|fp||
+ht|c| %% Vertikale position
+at|
+The play of a suit contract is in general much more complicated than to play a NT-contract. 
+To get a better idea you might look up this page:
+^*Hwww.albrecht-hollstein.de/Bridge/Lessons/Play a suit contract/How to play Suit-contract summary.htm^*N|
+at|
+
+^c@2{This is a general rule in suit-contracts too: Make your plan of play, BEFORE you touch a card in dummy!!! ^z}
+|
+cs|2|
+at|
+{^c@2In suit contract we count primarily the number of losers in the master-hand, not the sure tricks. ^z}
+
+{^c@2In this lesson we are concerned with 2 problems:
+
+^c1. How to determine the master-hand. Use these criteria, in order of importance:
+
+    @21.1 The trump length: choose the hand with longer trumps. 
+^d   Rare exceptions are the subject of the advanced lessons. 
+
+1.2 The trump quality: choose the hand with better trumps.
+^d  This enables you to ruff your losers with small trumps, preventing trump promotion for defenders.
+
+1.3 The number of losers: choose the hand with fewer losers.
+
+1.4 How easy these losers are to avoid: choose the hand which losers are easier to be avoided.
+
+^c2. How to manage to draw exactly as many rounds of trumps as necessary. ^z}
+@0@1|
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+pg| ***** 1 ***** |
+
+
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {This is what you'll learn in this lesson ^z}
+|
+cp||cs|8|fp||
+ht|c| %% Vertikale position
+at|
+{^c@2Questions you should always ask yourself before playing the first card:
+
+^d1. Which hand is the "master-hand"?
+^d2. How many losers do I have?
+^d3. Are those losers unavoidable or delayed?
+^d4. How can I get rid of some losers?
+^d5. Shall I draw the trumps right away and how many (to make my bid safely)?
+^d6. What may be dangerous for my bid? ^z}
+
+{^c@2The most important decision declarer has to make is if he should draw opponent's trumps at once or if he must postpone this. ^z}
+
+@0@1|
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+pg| ***** 2 ***** |
+
+
+%% ------------------------------------------------------------------------
+
+%% --------------------------hand number 1 ------------------------------------
+qx|o1|
+%%% Berthe Lebely hand B
+st||nt||sk|S|%small text set kibbing South
+md|3sjt963h87dq52ca54,s872hkj63da964cjt,sakqhat54dk3ck872,|
+sv|0|%%set vulnerability
+rh||ah|Board 1|ah|Plan 1|ah|Ruff losers| %%set description box
+mb|1cp1sp2n|an|18-19 HCP|mb|p3c|an|CheckBack Stayman asking for 3 !Ss or 4 !Hs|mb|p3sp4sppp| %% bidding
+pc|cj|at|Make your plan before you touch a card in dummy!!!!!!!!!!!!|
+pg| ***** 3 ***** |
+
+
+nt|The master-hand is the one with the longer trumps (South).
+We count the losers: |
+pg| ***** 4 ***** |
+
+
+at|1@h +|hc|h8|
+pg| ***** 5 ***** |
+
+
+at|2@d +|hc|d5d2|
+pg| ***** 6 ***** |
+
+
+at|1@c = 4.|hc|c5|
+pg| ***** 7 ***** |
+
+
+lc|h8d5d2c5|at|
+@h7 and @c4 are not counted as losers in the South because they are covered by honors in dummy.|hc|hackh7c4|
+pg| ***** 8 ***** |
+
+
+at|
+@dQ is a high card after dummy's K is taken by the A.|lc|hackh7c4|
+pg| ***** 9 ***** |
+
+
+at|
+We have to avoid one of the 4 losers.|
+pg| ***** 10 ***** |
+
+
+nt|A possible line of play is to hope for @c to be distributed 3-3 to get a discard. But this line has only 36% of success.
+So it is better to ruff a @d in dummy.|
+pg| ***** 11 ***** |
+
+
+nt|You must ask yourself some questions:
+1) Where do you take the first trick? |
+pg| ***** 12 ***** |
+
+
+at| In dummy, because you need the @cA as entry to your hand later.|
+pc|ckcc|
+pg| ***** 13 ***** |
+
+
+at|
+2) Do you draw trumps?|
+pg| ***** 14 ***** |
+
+
+at| 1 round of trumps is OK, a second would be deadly, because defenders may lead a third round after getting in with @dA.|
+pc|ssss|
+pg| ***** 15 ***** |
+
+
+at|
+3) How do you tackle the @d?|
+pg| ***** 16 ***** |
+
+
+at| Play the K first for communication reasons.|
+pc|dkddd|
+pg| ***** 17 ***** |
+
+
+pc|dddd|
+pg| ***** 18 ***** |
+
+
+pc|ssss|
+pg| ***** 19 ***** |
+
+
+pc|cccac|nt|Remind how important the @cA is as entry.|
+pg| ***** 20 ***** |
+
+
+pc|ddsd|at|
+Well done! You can claim your bid.|
+pg| ***** 21 ***** |
+
+
+sb|SI have 3 more spade tricks and the heart A|hc||
+pg| ***** 22 ***** |
+
+
+mc|10|sk||sc|y|lc|sjt9hA|sb|s|
+pg| ***** 23 ***** |
+
+
+%% ----------------------------------------------------------------------------
+
+%% --------------------------hand number 1 - Free play ------------------------
+qx|o1f|
+md|3sjt963h87dq52ca54,s872hkj63da964cjt,sakqhat54dk3ck872,|
+sv|0|%%set vulnerability
+rh||ah|Board 1|ah|Free play| %%set description box
+mb|1cp1sp2n|an|18-19 HCP|mb|p3c|an|CheckBack Stayman asking for 3 !Ss or 4 !Hs|mb|p3sp4sppp| %% bidding
+sc||nt|You can test now different lines of play on any lead both as declarer and defense. 
+Try to make the contract on the same @CJ lead if:
+a) The first trick is taken in hand;
+b) You draw two rounds of trumps;
+c) You play the diamonds differently.
+|
+pg| ***** 24 ***** |
+
+
+nt||
+cs|2|at|
+^-{Just click on the card you wish to play. The most recently played card may be taken back by clicking on ^$6 , Undo.
+Once a trick is complete, click on the first card of the next trick. Inspect a played trick by pointing at it with the mouse.}|
+pf|y|
+pg| ***** 25 ***** |
+
+
+%% ----------------------------------------------------------------------------
+
+%% --------------------------hand number 2 ------------------------------------
+qx|o2|
+%% Berthe lebeley II hand 11
+%% 
+st||sk|s|sc||pf||%small text set kibbing South
+md|4Sk763hk42dk2ca754,sjt8hj87dq63ckqjt,sa542ha9da987c863,|
+sv|n|%%set vulnerability
+rh||ah|Board 2|ah|Determine the|ah|master-hand| %%set description box
+mb|p1cp1dp1sp4sppp| %% bidding
+pc|ck|nt|Now make your plan before you touch a card in dummy!!!!!!!!!!!!|
+pg| ***** 26 ***** |
+
+
+nt|Before we start to count the losers we must determine which hand is the master-hand. These are the criteria for that decision:
+1. The trump length. ^fSouth: |
+pg| ***** 27 ***** |
+
+
+hc|sK763|at| 4.
+^fNorth: |
+pg| ***** 28 ***** |
+
+
+lc|sK763|hc|sA542|at| 4, the same.|
+pg| ***** 29 ***** |
+
+
+lc|sA542|at|
+2. The trump quality. ^fSouth: |
+pg| ***** 30 ***** |
+
+
+hc|sK763|at| Hxxx (one honour and 3 small). 
+^fNorth: |
+pg| ***** 31 ***** |
+
+
+lc|sK763|hc|sA542|at| Hxxx, the same.|
+pg| ***** 32 ***** |
+
+
+lc|sA542|at|
+If North had @sAKQ2 and South had @S8743, it would be best to use North as the master-hand for the loser count. This is especially true if you consider to ruff losers in dummy (the Plan 1). You would not want to ruff using your big trumps since this could promote a trump trick for the defenders.|ls|nsss|
+pg| ***** 33 ***** |
+
+
+nt|3. The number of losers. ^gSouth: |
+pg| ***** 34 ***** |
+
+
+at| 1 @s (hoping for a 3-2 distribution) +|hc|s3|
+pg| ***** 35 ***** |
+
+
+at| 1 @h +|hc|h2|
+pg| ***** 36 ***** |
+
+
+at| 3 @cs = 5.|hc|c754|
+pg| ***** 37 ***** |
+
+
+lc|s3h2c754|at|
+^gNorth: |
+pg| ***** 38 ***** |
+
+
+at| 1 @s (hoping for a 3-2 distribution) +|hc|s2|
+pg| ***** 39 ***** |
+
+
+at| 2 @ds +|hc|d78|
+pg| ***** 40 ***** |
+
+
+at| 2 @cs = 5, the same.|hc|c36|
+pg| ***** 41 ***** |
+
+
+lc|s2d78c36|at|
+4. How easy these losers can be avoided. 
+South: |hc|s3h2c754|
+pg| ***** 42 ***** |
+
+
+at| The @h can be ruffed in dummy.|
+pg| ***** 43 ***** |
+
+
+at| The 3rd @c loser maybe avoided only if the suit is distributed 3-3, because you must be afraid of an overruff else.|
+pg| ***** 44 ***** |
+
+
+at|
+North: |lc|s3h2c754|hc|s2d78c36|
+pg| ***** 45 ***** |
+
+
+at| The black losers are inevitable, but the 2 @ds can be ruffed in declarer's hand.|
+pg| ***** 46 ***** |
+
+
+lc|s2d78c36|nt||cs|2|at|
+^-{So we take North's hand as the master-hand, because the losers are easier to avoid.
+This technique is called Dummy reversal, as dummy's hand is the master-hand.}|
+pg| ***** 47 ***** |
+
+
+nt|There is no reason to hold up the lead. You plan to lose one @s and two @cs.|
+pc|ccca|
+pg| ***** 48 ***** |
+
+
+at|
+Do you draw trumps?|
+pg| ***** 49 ***** |
+
+
+at| Yes exactly 2 rounds. Then it doesn't matter if one of the @ds is overruffed with the high trump.|
+pg| ***** 50 ***** |
+
+
+at|
+Do you have enough entries to dummy to execute 2 ruffs without losing the lead?|
+pg| ***** 51 ***** |
+
+
+at|
+Yes, the 2 red Aces provide the 2 entries needed.
+Here we go!!|pc|sssas|
+pg| ***** 52 ***** |
+
+
+pc|sssks|
+pg| ***** 53 ***** |
+
+
+pc|dkddd|
+pg| ***** 54 ***** |
+
+
+pc|dddad|
+pg| ***** 55 ***** |
+
+
+pc|ddsd|
+pg| ***** 56 ***** |
+
+
+pc|hhhah|
+pg| ***** 57 ***** |
+
+
+pc|dds|
+sk||nt|Clap clap clap you can claim now. It doesn't matter if West overruffs or not. You'll score the @hK and two @ss (dummy's @s5 and @s4 if West overruffs or @s7 and @s4 if not).|
+hc|hKs457|
+pg| ***** 58 ***** |
+
+
+lc|hKs457|up|32|mc|10|sc|y|
+pg| ***** 59 ***** |
+
+
+%% ----------------------------------------------------------------------------
+
+%% --------------------------hand number 3 ------------------------------------
+qx|o3|
+%% Berthe lebely II hand 19
+%% 
+pf||st||sk|S|sc||%small text set kibbing South
+md|1Sa643ha2dkq7ck865,skqthqt7d42cjt972,s9752h8654dajtca3,|
+sv|e|%%set vulnerability
+rh||ah|Board 3|ah|Draw exactly 2|ah|rounds of trumps!!| %%set description box
+mb|1np2cp2sp4sppp| %% bidding
+pc|cj|nt|Now make your plan before you touch a card in dummy!!!!!!!!!!!!|
+pg| ***** 60 ***** |
+
+
+nt|Let's repeat the procedure of determining the master-hand and counting losers.
+1. The trump length. ^fSouth: |
+pg| ***** 61 ***** |
+
+
+hc|sA643|at| 4.
+^fNorth: |
+pg| ***** 62 ***** |
+
+
+lc|sA643|hc|s9752|at| 4, the same.|
+pg| ***** 63 ***** |
+
+
+lc|s9752|at|
+2. The trump quality. ^fSouth: |
+pg| ***** 64 ***** |
+
+
+hc|sA643|at| Hxxx (one honour and 3 small). 
+^fNorth: |
+pg| ***** 65 ***** |
+
+
+lc|sA643|hc|s9752|at| xxxx, slightly weaker.|
+pg| ***** 66 ***** |
+
+
+lc|s9752|nt|3. The number of losers. ^gSouth: |
+pg| ***** 67 ***** |
+
+
+at| 2 @ss (hoping for a 3-2 distribution) +|hc|s43|
+pg| ***** 68 ***** |
+
+
+at| 1 @h +|hc|h2|
+pg| ***** 69 ***** |
+
+
+at| 2 @cs = 5.|hc|c65|
+pg| ***** 70 ***** |
+
+
+lc|s43h2c65|at|
+^gNorth: |
+pg| ***** 71 ***** |
+
+
+at| 2 @ss (hoping for a 3-2 distribution) +|hc|s52|
+pg| ***** 72 ***** |
+
+
+at| 3 @hs = 5, the same.|hc|h654|
+pg| ***** 73 ***** |
+
+
+lc|s52h654|at|
+4. How How easy these losers can be avoided. 
+South: |hc|s43h2c65|
+pg| ***** 74 ***** |
+
+
+at| Inevitable losers are two @ss and one @h. Two @c losers can be ruffed in dummy, without giving the lead.|
+pg| ***** 75 ***** |
+
+
+at|
+North: |lc|s43h2c65|hc|s52h654|
+pg| ***** 76 ***** |
+
+
+at| Inevitable losers are two @ss and one @h. Two @h losers can be ruffed in South's hand giving the lead once.|
+pg| ***** 77 ***** |
+
+
+lc|s52h654|at|
+
+In this case the South hand has both slightly better trumps and easier to avoid losers, so it is the master-hand.|
+pg| ***** 78 ***** |
+
+
+nt|The Plan 1 (ruffing losers in the short hand) appears right away as the best plan. 
+Before making ruffs, what do we usually do to prevent overruffs?|
+pg| ***** 79 ***** |
+
+
+sb|sWe try to remove as many trumps as possible. I will try 1 round.|
+%% 1st try: ruff drawing only 1 round of trumps:
+pg| ***** 80 ***** |
+
+
+at|
+OK, let's try with only one round of trumps...|pc|cacc|sb|s|
+pg| ***** 81 ***** |
+
+
+pc|sssas|
+pg| ***** 82 ***** |
+
+
+pc|ckccc|
+pg| ***** 83 ***** |
+
+
+pc|ccs9s|sb|SOuch!!!|sk||at|
+You'll lose two more @ss and one @h and go down 1. The plan was not good enough.|
+hc|skqhk|
+
+%% 2nd try:  draw 2 rounds of trumps:
+pg| ***** 84 ***** |
+
+
+up|15|nt|Try it once more.|lc|skqhk|sb|s|sk|S|
+pg| ***** 85 ***** |
+
+
+sb|SI must draw 2 rounds of trump.|
+pg| ***** 86 ***** |
+
+
+at|
+OK, let's try...|pc|cacc|sb|s|
+pg| ***** 87 ***** |
+
+
+pc|sssas|
+pg| ***** 88 ***** |
+
+
+pc|ssss|sb|s|
+pg| ***** 89 ***** |
+
+
+pc|sscs|sk||sb|SOuch again!!|at|
+Now you have only 1 trump left to ruff two @cs. You'll lose a @h and a @c for -1.
+Playing the @sA and a small @s is incorrect. If you play this way, the defender with 3 trumps will be able to play a 3rd round, taking away from you one necessary ruff.|hc|h2c8|
+
+%% 3rd try:  Coup en blanc to manage to draw exactly 2 rounds of trumps:
+pg| ***** 90 ***** |
+
+
+sb|S|sk|s|lc|h2c8|at|
+Do you see the solution now? Remember how important card the A is to control the suit. How can you manage to draw exactly 2 rounds of trumps?|
+pg| ***** 91 ***** |
+
+
+sb|sI got it. I need to do Coup en blanc....|
+pg| ***** 92 ***** |
+
+
+up|15|nt|Try it once more.|
+pc|cacc|sb|s|
+pg| ***** 93 ***** |
+
+
+pc|ssssT|
+at|
+Exactly. By keeping the @sA you kept the trump suit under control.
+Now the play is easy. You take every return, play the @sA (if defenders didn't return trump) and ruff 2 clubs in dummy. Good @ds provide enough entries to do so.|
+pg| ***** 94 ***** |
+
+
+pc|SKsssA|
+pg| ***** 95 ***** |
+
+
+pc|cKccc|
+pg| ***** 96 ***** |
+
+
+pc|ccsh9|
+pg| ***** 97 ***** |
+
+
+pc|dddKd|
+pg| ***** 98 ***** |
+
+
+pc|ccsd|
+pg| ***** 99 ***** |
+
+
+sk||at|
+Well done. Please claim now. You lose 2 more tricks, 1 @h and 1 @s, making your bid.|hc|s6h2|
+pg| ***** 100 ***** |
+
+
+mc|10|lc|s6h2|at||
+pg| ***** 101 ***** |
+
+
+%% Alternative route
+sk|S|nt|Finally let's go back to our discussion of which hand should be the master-hand. Do you see why South has easier to avoid losers?|up|28|
+pg| ***** 102 ***** |
+
+
+sb|sNot really. Both hands appear the same. In North we could also ruff heart losers in dummy.|
+pg| ***** 103 ***** |
+
+
+at|
+Yes, both hands have the same number of trumps (4), similar trump quality (Hxxx vs xxxx) and the same number of losers (5). The key difference is the last criteria, the difficulty to avoid the losers. The clear advantage of the South hand is the preparedness to ruff clubs at once, without giving the lead to opponents.|sb|s|
+pg| ***** 104 ***** |
+
+
+nt|If you elect the North hand as the master-hand, you will note that not only you lose the lead for the necessary Coup en blanc in the trump suit but also once more in @h to prepare the ruff. Let me demonstrate it...|
+pc|cJcacc|
+pg| ***** 105 ***** |
+
+
+pc|ssssT|
+pg| ***** 106 ***** |
+
+
+pc|SKsssA|
+pg| ***** 107 ***** |
+
+
+pc|hAhhh|
+pg| ***** 108 ***** |
+
+
+pc|hhhh|
+pg| ***** 109 ***** |
+
+
+pc|ssds|
+sk||at|
+Now you don't have enough trumps left to ruff your losers.|
+pg| ***** 110 ***** |
+
+
+sb|SI see. Thank you.|
+pg| ***** 111 ***** |
+
+
+sb|s|
+%% ----------------------------------------------------------------------------
+
+%% --------------------------hand number 3 - Free play ------------------------
+qx|o3f|
+md|1Sa643ha2dkq7ck865,skqthqt7d42cjt972,s9752h8654dajtca3,|
+sv|e|%%set vulnerability
+rh||ah|Board 3|ah|Free play| %%set description box
+mb|1np2cp2sp4sppp| %% bidding
+sc||nt|You can test now different lines of play on any lead both as declarer and defense. 
+Try to make the contract on the same @CJ lead if the North is the master-hand and defense:
+a) Force trumps (play it on every occasion);
+b) Eliminate side suit (clubs, hearts) preparing for overruff.
+|
+pg| ***** 112 ***** |
+
+
+nt||
+cs|2|at|
+^-{Just click on the card you wish to play. The most recently played card may be taken back by clicking on ^$6 , Undo.
+Once a trick is complete, click on the first card of the next trick. Inspect a played trick by pointing at it with the mouse.}|
+pf|y|
+pg| ***** 113 ***** |
+
+
+%% ----------------------------------------------------------------------------
+
+%% ------------------------General notes--------------------------------
+qx|intro|
+bt||
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {About this series of lessons ^z}
+|
+cp||cs|2|fp||
+ht|g|
+at|^c@2{My target group are absolutely beginners ^z}
+
+{My topic is the DECLARER PLAY; not the bidding not the defense ^z}
+
+{I presuppose only a few things about bridge which you find e.g.:
+^d@2^*Hwww.rpbridge.net/1a00.htm^*N Learn to play bridge with Richard Pavlicek
+^*Hwww.rpbridge.net/1t05.htm ^*N Introduction to R. Pavlicek lessons
+^*Hwww.prairienet.org/bridge/start.htm^*N Getting started with Karen's bridge library
+^*Hwww.prairienet.org/bridge/glos.htm^*N Glossary for Beginners in Karen's bridge library
+^z}
+
+{^c@2 If you have any questions feel free to mail me to albrecht.hollstein@@freenet.de ^z}
+|
+fp|2|at|
+{If you like my lessons, tell it to others, if you dislike something, tell it to me. ^z}@0@1|
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+pg| ***** 114 ***** |
+
+
+%% ------------------------------------------------------------------------
+
+%%--------------------recommendations----------------------------------
+qx|books|
+nt||
+bg|6|nt||cs|3|cp|4|fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {Recommendations ^z}
+|
+
+cs|8|cp||fp|2|at|^e@2
+
+{
+^f@2Recommended books:
+|
+fp||at|
+1) Robert Berthe, Norbert Lebely: "Step by Step" Vol II 
+^g Declarer-play in a suit-contract.   
+^g This is the best book to learn the basics
+2) Victor Mollo, Nico Gardener: Card Play technique
+^g A classical from 1955, but useful forever
+3) William S. Root: How to play a bridge hand
+^g12 easy chapters to winning bridge
+4) Louis H. Watson: Play of the hand at bridge
+^g Another classical from 1934; very instructive, but you need time
+^z}|
+cs|9|cp||fp|2|at|^e@2
+#4{
+^f@2Recommended software:
+|
+fp||at|#31) Learn to play bridge; A great introduction and it is free.
+^g ^*Hweb3.acbl.org/internet/websiteForms.nsf/ltpbForm?OpenForm^*N     
+#32) Bridge Master 2000 by Fred Gitelman;
+^g the best software to learn declarer play.
+^g ^*Hbbi.bridgebase.com/software/bmdesc.html^*N
+^z}|
+pg| ***** 115 ***** |
+
+
+%% ------------------------------------------------------------------------
+
+%% ------------------ credits ------------------------------------
+qx|credits|
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {Credits ^z}
+|
+cs||cp||fp|2|at|^c@2
+
+|
+cp||cs||fp||
+ht|g|
+at|^c@2
+{Example 1: Berthe/Lebely "Pas a pas II" page 124 hand B}}
+
+{Example 2: Berthe/Lebely "Pas a pas II" page 30 hand 11}}
+
+{Example 3: Berthe/Lebely "Pas a pas II" page 47 hand 19}}
+
+The great book "Pas a pas" from which I take the most of my examples is only available in French or in German.
+The English version "Step by Step" is out of order. You mhbin p<                       à  { " d e b u g " : n u l l , " e i " : " r 1 T 0 T 5 r Y B 8 2 s 8 Q P R s J m 2 B w " , " f r o m V i s u a l S n i p p e t " : f a l s e , " h a s E b m T i d b i t s " : t r u e , " h r e f " : " h t t p : / / w w w . a n y a n g - w i n d o w . c o m . c n / t a g / j a v a - j a r / " , " h t m l T i d b i t s " : [ " < e m > B e a n S o f t < / e m >   S t u d i o   l i u c h a n g j i o n g @ y a h o o . c o m . c n " , " N e x t ,   I   w o u l d   l i k e   t o   b r i e f l y   d i s c u s s   h o w   t o   u s e   t o o l s   t o   < e m > c r e a t e < / e m >   J A R   J A R   f i l e ,   t h e   t o o l   c a n   b e   /   B i n   f i n d ,   i n   t h e " , " M F   < e m > n a m e < / e m > ) ,   w r i t e   t o   t h i s   f i l e   w i t h   t h e   J A R   u s e   t h e   s a m e   t o o l s ,   t h e n   t h e   n e e d   f o r   a   M E T A - I N F " , " I m p l e m e n t a t i o n - T i t l e :   J a v a S e r v e r   P a g e s   S t a n d a r d   < e m > T a g   L i b r a r y   A P I < / e m >   R e f e r e " ] , " m i n i m i z e d " : f a l s e , " q u e r y " : " e r r o r   c r e a t i n g   b e a n   w i t h   n a m e   ' i n s t a n c e   T a g L i b r a r y A p i ' " , " s e a r c h U r l " : " h t t p s : / / w w w . g o o g l e . c o . u k / s e a r c h ? s o u r c e i d = n a v c l i e n t & a q = f & o q = e r r o r + c r e a t i n g + b e a n + w i t h + n a m e + ' i n s t a n c e + T a g L i b r a r y A p i ' & i e = U T F - 

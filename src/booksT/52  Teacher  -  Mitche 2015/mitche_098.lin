@@ -1,0 +1,889 @@
+fh|130|ff|1Times New Roman|fb|14|fm|1|                       
+fh|240|ff|2Times New Roman|fb|24|fm|2|
+fh|340|ff|3Times New Roman|fb|3y|fm|3|fu|3y|
+fh|490|ff|4Times New Roman|fb|49|fm|4| 
+cr|164|cg|1255|cb|1255|         Neon Green 1
+cr|2000|cg|2000|cb|2139|        Dark Blue 2        
+cr|3255|cg|3250|cb|3205|        White   3
+cr|416|cg|4128|cb|416|           Green   4
+cr|5065|cg|5105|cb|5255|        Light Blue 5
+cr|6238|cg|6106|cb|6080|         Red  
+cr|8255|cg|8250|cb|8205|          Red 8
+cr|9176|cg|9048|cb|9096|        black  blank
+bt||
+bg|2|
+ht|e|
+fp|4|cs|1|cp|1|AT|^d@2^x@3{
+^-"Bid, Play and Discuss" 
+     
+2/1 with
+  
+"MITCHE" 
+|fp|2|cs|1|cp|2|at|     
+BILies Retreat, 02-06-2015 (Mitche 98) 
+Tuesdays at 20.30 Eastern time
+^-}|
+ht|z|fp|1|cp|1|at|^b©Moviemakers: GG_Bridge & Karen10            click   ^$40   to start| 
+pg| ***** 0 ***** |
+
+
+nt|| 
+
+bg|3|
+tu||
+fp|3|cp|2|cs||ht|c|3d|3|at|^b{ Table of Content  }|cs|1|at|
+
+^b{^*GIntro,^*B Introduction: ^*N  }
+
+
+^b{^*GB1,^*B Board 1: Law of Total Tricks (LTT), ROMEX X  & Opening Lead  ^*N }
+
+^b{^*GB2,^*B Board 2: Unusual NT  ^*N }  
+
+^b{^*GB3,^*B Board 3: Michael's Cuebid ^*N } 
+
+^b{^*GB4,^*B Board 4: Endplay ^*N }  
+
+^b{^*GB5,^*B Board 5: Preempt  ^*N } 
+
+^b{^*GB6,^*B Board 6: Slam bidding & Lightener X ^*N } 
+ 
+   
+
+^bYou can use the  ^$40  to turn the pages
+^buse ^$41  to skip to the next board.   and ^$7  to go back to first page current board 
+ ^b You can use these links for fast referral
+
+|
+pg| ***** 1 ***** |
+
+
+nt|| 
+
+bg|3|
+qx|kmps,T|
+tu||
+mn|Settings|
+fp|3|cp|2|cs|1|ht|c|3d|3|at|{^f Settings for .lin presentations   }|
+fp|1|cp|9|cs|3|ht|e|at|
+^b@2
+MM: The recommended screen resolution for .lin movies is 1440 x 900 pixels 
+(rightclick on your desktop,select "personalize" "screen defenitions")
+Also, make sure you have "widescreen" checked in your windows BBO-version
+(If you're not sure about your settings log into your BBO windows version then:  
+click the yellow tool at bottom and under the "general" tab check "widescreen" and save)
+This will prevent the "cutting off" of the bottom parts or scrambling of your text in these presentations.
+
+If you downloaded BBO recently, you will not be able to get online with the windows version...
+You can still change or check your settings: 
+Go to your C disc, and under "programs" find the Bridge Base Online folder
+Open it and find the "profiles" folder
+Open and scroll to find: BBO_Default_Settings 
+line 71 should read: WIDE_CLIENT=1
+If your setting is 0, change it to 1 and save.
+
+As an ALTERNATIVE: Open your aaBridge program and simply drag and drop the file of this presentation 
+on the aaBridge screen. 
+If you don't have aaBridge yet, here is a link for the download:|cp|2|at|  
+
+^*hrogerpf.com/aaBridge^*n|
+pg| ***** 2 ***** |
+
+
+nt||
+
+
+bg|3|
+qx|Intro,T|
+tu||
+mn|Introduction|
+fp|3|cp|2|cs|1|ht|c|3d|3|at|{^f Mitch Edelman, aka "mitche"  }|
+fp||cp|2|cs|3|ht|d|at|
+^b@2Mitch (now happily retired) is a computer scientist and was an adjunct faculty member at UMBC 
+(in the Computer Science department). 
+Mitch lives in Finksburg, Md, a suburb of Baltimore with his wife Sue (who loves puttering with the plants in the back 
+yard), 3 (spoiled) rescue cats and aquaria.
+
+Mitch is also an active bridge player. 
+Mitch learned bridge while in college and took a 20 year break from tournament bridge for graduate school, 
+career and marriage.
+
+Mitch is an avid amateur photographer, whose shots have appeared in a number of books of poetry.
+
+Mitch joined the BIL’s Mentoring Team February 24, 2010 – Play and Discuss 2/1 
+most suited to the improving/upper intermediate player
+
+When a bridge player starts to get serious about improving his/her game, s/he discovers an exciting 
+and challenging world of bidding systems, conventions and techniques.
+
+"Intuition and card-sense provide a floor for our level of bridge expertise. Improving our proficiency at bridge 
+takes practice and study. 
+They say that “practice makes perfect”, but that is only half the story.
+
+Perfect Practice makes for perfect performance, and in our 2/1 bid, play and discuss” sessions, 
+we will transform practice into perfect practice.
+
+We will use the popular 2 over 1 standard bidding system, probably the most widely-used system in North 
+America, if not the world. We will cover those conventions and treatments most commonly used by tournament 
+players. We will also discuss play from declarer’s and defenders’ perspective.|
+pg| ***** 3 ***** |
+
+
+nt||cp|2|at|^b@2
+
+We will cover the 2/1 system and the thinking that goes into bidding and play. My goal is to improve your 
+technical skills in a friendly environment, so that you can hold your own at the table, be it on BBO or in a 
+club or tournament game.
+
+I recommend a few bidding tools for all of us: 
+first, forcing No Trump, Jacoby 2NT, Bergen Raises, and Key Card Blackwood (1430 recommended).
+Also, I suggest using Jacoby Transfers and, if you know them, Texas Transfers.
+Negative doubles are standard thru 2@s (or if you're OK with them, thru 3@d.),
+and best that you stick to standard signals and carding.
+
+Questions are always OK, so please ask if you need explanations.
+I will assume that you have learned SAYC, have played a bit, are interested in improving and seriously 
+committed to enjoying yourself too.
+
+The objectives: "To acquire bidding judgment and avoiding common mistakes in play."
+Mitch Edelman aka "mitche" 
+
+click ^$40 for Board 1
+
+MM: In "real time" bidding was discussed after the play.
+In this presentation it will be discussed right after the bidding.
+Thank you Eileen (wyoming33) for sending the hands and editing the chatlog! @h
+
+|
+pg| ***** 4 ***** |
+
+
+nt|| 
+
+
+
+
+
+%%%%%%%%%Board 1
+mn|Board 1|
+qx|B1,T|st||pn|mitche,mitche,mitche,mitche
+
+
+
+|md|3S37TQHD5TQC39TQKA,S2JAH234TAD8JAC68,S456KH57KD279C45J,
+
+|rh||ah|Board 1|st||sv|o|sk|w|
+
+mb|p|mb|p|mb|1C|lb|*mWhat should West bid?^1@H~X^1|mb|1H|sk|n|lb|*mWhat should North bid?^1@s~1NT~X~Pass^3|
+mb|d|sk|E|lb|*mWhat should East bid?^XX~2@H~3@H~4@H^4|mb|4H|sk|s|lb|*YShould South bid 4@S?^^y|mb|4S|sk|w|lb|*mShould 
+West bid 5@H or pass?^5@H~pass^2|mb|p|sk||mb|p|mb|p
+
+|
+pg| ***** 10 ***** |
+
+
+at|mitche:  Bidding:  After West's 1@H bid,  East's choices are    a) XX, b) 2@H, c) 3@H, d) 4@H  
+East should NEVER pass with this hand.  
+A 2@C cue bid by East would show 10+ dummy  points.
+
+I think that 4@h is right for 2 reasons: 
+a) Law of total tricks bid, 
+b) if we have a fit, so do they.  Make life tough on opps.|
+pg| ***** 11 ***** |
+
+
+nt||
+
+at|mitche:  And 4@h is wrong for 2 reasons: 
+a) cruddy shape,  
+b) a defensive card (@DK).  
+An alternative bid is 3@c, a "mixed raise" showing 4 card support (usually) and 7-10 dummy points.
+
+OK.. tick-tock 3@h or 4@h?|
+pg| ***** 12 ***** |
+
+
+nt||
+at|mitche:  Someone asked if 2NT might be better than 3@C.
+2NT should be natural, stopper in black suits, @h doubleton or so, and just below an opening bid.
+I am a believer in natural bidding when natural bids work well.
+
+OK, so I am going to say 4@h (over 3@h, South has an easy 3@s). But what should he do over 4@h?
+Mike Lawrence says, "when faced with a number of bids, and 4@S is alternative, bid 4@s."|
+pg| ***** 13 ***** |
+
+
+nt||
+at|mitche:  OK, let's ask how many trumps we have:  8 trump. 
+And they have 10 or 11 trumps
+So there are 18 or 19 total trumps.
+Which means that if they can make 4@h we are down 1 (or 2) at 4@s.
+And if we can take 10 tricks, they should be down 1 at 4@h -- Just applying total tricks thinking.
+So 4@s X is -300, but then 4@h makes for +420.  And if 4@s makes, we should beat 4@h 300 (doubled).|
+pg| ***** 14 ***** |
+
+
+nt||
+at|mitche:  Either that or both sides take 9 tricks.
+The decision is pretty straightforward.  We need to bid 4@s and take the phantom save.
+
+What should West do over 4@s?
+jonnyquest:  Smile?
+WestElsdon:  pass
+
+
+
+|
+pg| ***** 15 ***** |
+
+
+nt||sk|w|lb|*cWhat should West lead?^^C8^SAJ2HAT432C86DAJ8|
+
+pc|C8|pc|C4|pc|C7|pc|CQ|
+pg| ***** 17 ***** |
+
+
+sk||pc|S3|pc|S2|pc|SK|pc|S8|
+pg| ***** 18 ***** |
+
+
+pc|S4|pc|S9|pc|ST|pc|SJ|
+pg| ***** 19 ***** |
+
+
+pc|D8|pc|D2|pc|DK|pc|D5|
+pg| ***** 20 ***** |
+
+
+pc|D3|pc|DT|pc|DJ|pc|D9|
+pg| ***** 21 ***** |
+
+
+pc|DA|pc|D7|pc|D4|pc|DQ|
+pg| ***** 22 ***** |
+
+
+pc|HA|pc|H5|pc|H6|pc|S7|
+pg| ***** 23 ***** |
+
+
+pc|C3|pc|C6|pc|CJ|pc|C2|
+pg| ***** 24 ***** |
+
+
+pc|C5|pc|H8|pc|CK|pc|SA|
+pg| ***** 25 ***** |
+
+
+mc|8
+
+|
+pg| ***** 26 ***** |
+
+
+sk||
+
+up|36|
+
+at|mitche:  Play:  What should West lead?
+Heart lead lets 4@s make. 
+Remember the rule not to lead unsupported ace against suit contract?
+jonnyquest:  There may be two trump tricks, so can't lead a @S. Unsupported Aces are painful and someone may be short.  
+mitche:  @DA is unsupported too.  So a passive @C?
+If leading an unsupported Ace is an error, under leading one at trick 1 is a crime!|
+pg| ***** 27 ***** |
+
+
+nt||
+at|mitche:  Now South thinks someone may have a singleton, and counts 2 or 3 diamond  and 1 or 2 trump losers.
+So best hope is to find @SJ and also the @DJ.  Too bad.
+Now, the defense has to play very safe.  West doesn’t know if the @cJ is an entry.The only shot to defeat the 
+contract now is to under lead the @DA at trick 5.
+But I don’t think it's possible to find that at the table.
+DECLARER concedes a trick to the @sA.|
+pg| ***** 28 ***** |
+
+
+nt||
+at|mitche:  The thing to see here is the thinking that would make E/W decide not to save against 4@s.
+West has 3 or 4 pretty sure tricks on defense, but the LOTT tells him not to bid 5@h.
+4@h loses a spade, a heart, and 2 clubs.
+
+"Supported Ace" specifically means "with the King" or "proof that pard has the K."
+And proof may be in the form of a "Romex double" or some other bid that shows a high honor.|
+pg| ***** 29 ***** |
+
+
+nt||
+at|mitche:  a “Romex” double works like this: 
+You are advancer, partner overcalls opener’s suit. Example:  1@H on your left, 2@C by pard, 2@H on your right. 
+You have @cKx  (one of top 2 honors).   Your double to say, “I have the A or K of your suit”. 
+This allows overcaller to lead from a suit with an unsupported Ace or to put you in for a shift thru declarer’s hand.
+You give up the ability to make a double of a suit bid by RHO.  
+Also, Romex Redouble is possible:    1@H - 2@C - X - XX |
+pg| ***** 30 ***** |
+
+
+nt||at|
+By the way, against SLAMS, leading an unsupported ace may be the best lead.   
+
+MM: By clicking on the cards, you can play the hand Double Dummy.
+To continue with the next deal click  ^$40  
+|pf|y|
+pg| ***** 31 ***** |
+
+
+pf||nt||
+
+
+%%%%%%%Board 2      
+mn|Board 2|
+qx|B2,T|pn|WestElsdon,jonnyquest,kat827,calligal
+
+
+
+|md|4S24KH2369TD28TJC5,S8TJH478JKD9C28TJ,S5AHD4567AC369QKA,
+
+|rh||ah|Board 2|st||sv|n|sk|w|
+
+mb|1S|mb|p|lb|*mHow many losers does West count?^8~10~9^3|lb|*mWhat should West bid?^2@H~2@s~1NT^2|mb|2S|sk|e|mb|2N|an|minors|lb|*mWhat should East bid?^3@H~3@s~4@s~pass~other^4|mb|p|sk|w|mb|3D|lb|*YDoes West have another bid??^^n|mb|3S|sk|n|lb|*mHow many losers does North count?^4~3~5^2|lb|*mWhat should North bid?^X~4@d~5@d^2|mb|p|sk|e|lb|*mHow many losers does East count?^5~6~7^2|lb|*mShould East bid or pass?^Bid after partner's 3@s~Pass^1|mb|4S|sk||mb|p|mb|p|mb|p
+
+|
+pg| ***** 40 ***** |
+
+
+at|mitche: Bidding: If you play "constructive" raises of 1@H or 1@S, then West has to decide if he should bid 1NT or 2@s.
+Here is the guideline. How many losers does he have?
+Looks like 9 to me.
+So with 9 losers, he should bid 2@s.
+Now, East has how many losers?   Six of them.
+9+6 = 15, which means she expects to take 24-15 = 9 tricks.
+That means that 4 spades is a bad idea.|
+pg| ***** 41 ***** |
+
+
+nt||
+at|mitche:   BUT west found 3@s so East may decide that 4 is a good bid.
+Should West bid 3@s?
+I think not.  Why?
+A) his hand had 9 losers and no extras,  
+B) he already said he has 9 losers. 
+My friend, Maryann Dufresne used to say, "don’t tell the same story twice."
+The 3@s bid told more than the same story twice.|
+pg| ***** 42 ***** |
+
+
+nt||
+at|mitche:  Now, should North bid 2NT?
+I don’t know if most pairs treat 2NT as unusual here, but let's assume they treat it that way, so 2NT means bid a minor.
+South obediently does.  Now North should not pass over 3@S.  She has a 3 loser hand and should bid 4@d,
+Vulnerable that shows a whale of a hand, and if fact, 5@d is on ice.
+
+South would bid 3@d with xxx, xxxx, KJx, xxx and 5@D is still cold.
+As long as South has 3 diamonds, 4@d is a probable make.|
+pg| ***** 43 ***** |
+
+
+nt||
+at|mitche:  Point here is that when you use a 2-suited overcall, I recommend this treatment:
+If the hand is weak (less than a minimum opener) then the hand passes at its next opportunity. 
+If the hand is more than a king bigger than a minimum opening bid (16+ points), then a single raise shows that.
+Here, 4@d shows the big hand.
+If the hand is in between, then do not use Unusual2NT (or Michaels) but bid your 2 suits .
+North bids 3@d and then 4@c (treating the hand as a 2-suiter) 
+or Double, followed by correcting hearts by pard to clubs... to show the big, big hand.|
+pg| ***** 44 ***** |
+
+
+nt||
+at|mitche:  The thing North knows is that South is broke.
+And she has to decide how best to proceed.  I think if 2NT is on your card, bid it and raise.
+
+Note also that a double jump (e.g. to 5@d over 3@s) is a sacrifice bid showing a freakish hand.
+Mitche: The single raise also shows defensive values.
+
+
+|
+pg| ***** 45 ***** |
+
+
+nt||sk|S|lb|*cWhat should South lead?^^C5^SK42HT9632C5DJT82|
+
+pc|DJ|sk||pc|D9|pc|DA|pc|D3|
+pg| ***** 47 ***** |
+
+
+pc|CA|pc|C4|pc|C5|pc|C2|
+pg| ***** 48 ***** |
+
+
+pc|CK|pc|C7|pc|H2|pc|C8|
+pg| ***** 49 ***** |
+
+
+pc|CQ|pc|S9|pc|SK|pc|CT|
+pg| ***** 50 ***** |
+
+
+pc|HT|pc|H4|pc|S5|pc|H5|
+pg| ***** 51 ***** |
+
+
+pc|SA|pc|S3|pc|S2|pc|S8|
+pg| ***** 52 ***** |
+
+
+pc|C9|pc|SQ|pc|D2|pc|CJ|
+pg| ***** 53 ***** |
+
+
+mc|7
+
+|sk||
+pg| ***** 54 ***** |
+
+
+up|28|
+
+at|mitche: Play: I think with South hand, I might lead the @C5 instead of a @D because I hope to use that suit to put pard
+in for a ruff.
+Imagine that declarer wins the @CA and takes a @S finesse to South's king,  then a @D lead might get that ruff in.
+The idea: singleton leads work well, especially if you think you might win an early trump lead.
+
+MM: By clicking on the cards, you can play the hand Double Dummy.
+To continue with the next deal click the  ^$40 
+|pf|y|
+pg| ***** 55 ***** |
+
+
+pf||nt||
+
+
+%%%%%%%%%%%Board 3
+mn|Board 3|
+qx|B3,T|pn|WestElsdon,jonnyquest,kat827,calligal
+
+|md|1S578AH678QKD67QC8,S239TQH2JDTC56JKA,S4JKH349TD489KC4T,
+
+|rh||ah|Board 3|st||sv|e|sk|w|
+
+mb|1H|lb|*bWhat might be West's best bid?^^2H|mb|1S|sk|n|lb|*bWhat should North bid?^^3H|mb|3H|sk|s|mb|p|lb|*bWhat should South bid?^^p|mb|4H|sk||
+pg| ***** 59 ***** |
+
+
+mb|p|mb|p|mb|p
+
+|
+
+at|mitche: Bidding: With the West hand, I might try a 2@h Michaels cue-bid here, rather than 1@s. 
+West has 2 decent 5-card suits and not quite a full opener. 
+(It's a bergen 20, so maybe I would overcall, but the problem is I may not be able to get clubs in below the 4-level).
+Now: what should North do over 1@s?
+We agree that  3@h is weak-- right?
+Here, North has too much good stuff for a 3@h bid, and 2@h is junk.|
+pg| ***** 60 ***** |
+
+
+nt||
+at|mitche:  My preference here is to use Bergen raises over 1-level overcalls but that is very not standard.
+Also not standard is to use BROMAD over 1@S overcalls.
+Bidding standard, my preference is to lie with 3@h (after all the hand has 9 losers) rather than lie with 2@h.
+Reason - I'd bid 3@h without the @SJ.
+It is not an easy hand for North.
+But over 3@h, South should pass. 
+
+|
+pg| ***** 61 ***** |
+
+
+nt||sk|W|lb|*cWhat should West lead?^^DT^SQT932HJ2CAKJ65DT|
+
+pc|CA|sk|E|pc|C4|lb|*cWhat should East play?^^C9^S6HA5CQ9732dAJ532|pc|C2|sk||pc|C8|
+pg| ***** 64 ***** |
+
+
+pc|DT|pc|D4|pc|DA|pc|D6|
+pg| ***** 65 ***** |
+
+
+pc|C9|pc|H6|pc|C5|pc|CT|
+pg| ***** 66 ***** |
+
+
+pc|S5|pc|S3|pc|SJ|pc|S6|
+pg| ***** 67 ***** |
+
+
+pc|H3|pc|H5|pc|HQ|pc|H2|
+pg| ***** 68 ***** |
+
+
+pc|D7|pc|HJ|pc|D8|pc|D2|
+pg| ***** 69 ***** |
+
+
+pc|S9|pc|S4|pc|D3|pc|SA|
+pg| ***** 70 ***** |
+
+
+pc|HK|pc|C6|pc|H4|pc|HA|
+pg| ***** 71 ***** |
+
+
+pc|D5|mc|9
+
+|
+pg| ***** 72 ***** |
+
+
+sk||up|33|
+
+at|mitch:  Play:   What card did East play under the @CA opening lead? 
+I think it should be an encouraging card, not the @c2.
+Reason: East has no reason to suspect club length with West, and with the @CQ, East should expect the defense to be 
+able to cash 2 clubs, and 2 Aces.
+In fact, East defended that way, by playing a CLUB, not a Diamond when she won her @DA.|
+pg| ***** 73 ***** |
+
+
+nt||
+at|mitche:  So West should either continue with the @CK at trick 2 or lead the @D10 at trick 1.
+When West does NOT lead the @D10 at trick 1, there is a strong inference that it is not a singleton.
+South received a (temporary) reprieve at trick 3 and took advantage of it.. leading a spade to the Jack (West bid spades).
+And a heart to hand is OK as long as East has the @HA
+When the @HK scores, he should play another trump immediately, hoping for 2-2 split.
+But the fact is that the diamond to the King was the correct play.|
+pg| ***** 74 ***** |
+
+
+nt||
+at|mitche:  West did not lead his singleton at trick 1, so the inference that it was not singleton is so strong, the @DK 
+should be a  winner.  In other words, Declarer played the hand correctly.
+
+MM:  By clicking on the cards, you can play the hand Double Dummy, 
+To continue with the next deal click the  ^$40
+|pf|y|
+pg| ***** 75 ***** |
+
+
+pf||nt||
+
+
+%%%%%%%%Board 4
+mn|Board 4|
+
+qx|B4,T|pn|WestElsdon,jonnyquest,kat827,calligal
+
+|md|2S23KH259KD9TKC37Q,S46TH8JQAD8AC249K,S5789H3467D235CTA,
+
+|rh||ah|Board 4|st||sv|b|sk|e|
+
+mb|1C|mb|p|mb|1D|mb|p|mb|1H|mb|p|lb|*bWhat should East bid?^^2n|mb|1N|sk||mb|p|mb|p|mb|p
+
+|
+pg| ***** 77 ***** |
+
+
+at|mitche: Bidding:  East should bid 2NT, I think, showing 11-12 HCP at her second turn, inviting 3NT.
+1NT shows about 6-9 or a terrible 10 HCP.
+And East has more:  a 5-card suit and 11 HCP.
+West would be charmed to bid 3NT.  And 3NT should make.
+
+|sk||
+pg| ***** 78 ***** |
+
+
+nt||
+
+pc|S2|pc|S4|pc|S5|pc|SJ|
+pg| ***** 79 ***** |
+
+
+pc|CJ|pc|CQ|pc|C2|pc|CT|
+pg| ***** 80 ***** |
+
+
+pc|D9|pc|D8|pc|D2|pc|DJ|
+pg| ***** 81 ***** |
+
+
+pc|C8|pc|C7|pc|C4|pc|CA|
+pg| ***** 82 ***** |
+
+
+pc|S9|pc|SQ|pc|SK|pc|S6|
+pg| ***** 83 ***** |
+
+
+pc|S3|pc|ST|pc|S7|pc|SA|
+pg| ***** 84 ***** |
+
+
+pc|HT|pc|H2|pc|H8|pc|H4|
+pg| ***** 85 ***** |
+
+
+pc|C5|pc|C3|pc|CK|pc|D3|
+pg| ***** 86 ***** |
+
+
+pc|DA|pc|D5|pc|D4|pc|DT|
+pg| ***** 87 ***** |
+
+
+pc|HA|pc|H3|pc|D6|pc|H5|
+pg| ***** 88 ***** |
+
+
+pc|HJ|pc|H6|pc|D7|pc|HK|
+pg| ***** 89 ***** |
+
+
+pc|DK|pc|C9|pc|H7|pc|DQ|
+pg| ***** 90 ***** |
+
+
+pc|H9|pc|HQ|pc|S8|pc|C6
+
+|SK||
+pg| ***** 91 ***** |
+
+
+at|mitche: Play:  Let's rewind the position to trick 9 when West has @HAQJ, @DA, and the @C9.|
+pg| ***** 92 ***** |
+
+
+up|20|at|
+Cash the @c9 first , then exit with the @HQ or J.  South can take his @HK but is end played
+Declarer has remaining tricks, making 3NT.  If South does not take his King, declarer has rest of tricks, making 4NT.
+
+MM:  By clicking on the cards, you can play this Double Dummy, 
+To continue with the next deal click the  ^$40
+|pf|y|
+pg| ***** 93 ***** |
+
+
+pf||nt||
+
+%%%%%%%%%%%%board 5
+
+mn|Board 5|
+qx|B5,T|pn|WestElsdon,jonnyquest,kat827,mojila
+
+|md|3S5H24JKAD248AC238,S4TH57QD9KC579TQA,SJQH389TD357TC6JK,
+
+|rh||ah|Board 5|st||sv|n|sk|e|
+
+mb|p|lb|*bWhat should East bid?^^4S|mb|4S|sk|w|mb|p|lb|*bWhat should West bid^^p|mb|p|mb|p
+
+|
+pg| ***** 96 ***** |
+
+
+sk||
+
+at|mitche: Bidding:  I agree with all bids. East has 8 spades and zilch outside.  So why not?
+And the vulnerability should (and did) shut N/S up.
+
+
+|
+pg| ***** 97 ***** |
+
+
+sk|s|nt||
+
+pc|HA|pc|H5|pc|H3|pc|H6|
+pg| ***** 98 ***** |
+
+
+lb|*yShould South continue in Hearts? ^^n|pc|C8|pc|CA|pc|C6|pc|C4|
+pg| ***** 100 ***** |
+
+
+sk||pc|S4|pc|SJ|pc|SA|pc|S5|
+pg| ***** 101 ***** |
+
+
+pc|SK|pc|H4|pc|ST|pc|SQ|
+pg| ***** 102 ***** |
+
+
+pc|D6|pc|DA|pc|D9|pc|D5|
+pg| ***** 103 ***** |
+
+
+pc|C2|mc|11
+
+
+|SK||
+pg| ***** 104 ***** |
+
+
+up|21|
+
+at|mitche:  Play:  Play was pretty straightforward.
+South saw the @HQ at trick 1 (and parner's discouraging signal, good!) and decided to shift to a club, also a good idea. 
+So that's that on this hand.
+
+MM:  By clicking on the cards, you can play the hand Double Dummy, 
+To continue with the next deal click the  ^$40
+|pf|y|
+pg| ***** 105 ***** |
+
+
+pf||nt||
+
+
+
+%%%%%%%%%%%%board 6
+
+mn|Board 6|
+qx|B6,T|pn|WestElsdon,jonnyquest,kat827,mojila
+
+|md|4S2457TH6D389C348K,S38QH379QKD67TJAC,S69JAH4AD25QKC67J,
+
+|rh||ah|Board 6|st||sv|e|sk|W|
+
+mb|1H|mb|p|lb|*bWhat should West bid?^^2N|mb|4C|an|shortness - 4+ !H support|
+pg| ***** 107 ***** |
+
+
+mb|p|mb|4D|mb|p|mb|4H|mb|P|sk|e|lb|*bWhat should East bid?^^p|mb|4N|
+pg| ***** 109 ***** |
+
+
+sk||mb|p|mb|5N|an|Even number of keys and void|mb|p|mb|6H|mb|p|mb|p|mb|d|mb|p|mb|p|mb|p|
+
+
+
+at|mitche: Bidding: Not sure that I open East hand.   
+It doesn’t have 2 quick tricks.. and the singleton King is not 3 points either.|
+pg| ***** 110 ***** |
+
+
+at|
+A couple of points on splinters:
+They should be limited to 13-15 dummy points, so Jacoby 2NT might be a better idea than 4@c here.
+West has a hand worth about 16 dummy points as I count things so I start 2NT.|
+pg| ***** 111 ***** |
+
+
+nt||
+at|mitche:  East's 1@h opening might not be the choice of several players:  
+a) There are not 2 quick tricks (single king is not 1/2 defense trick .. sorry),  
+b) @H suit is pretty thin.
+
+Yes, it's almost a Bergen 20 but the poor suit quality might make this a hand to soft-pedal.
+OTOH, modern style is to open these kinds of hands because it pays to get the first blow in. 
+In other words it is a matter of style whether to open this hand.  |
+pg| ***** 112 ***** |
+
+
+nt||
+at|mitche:  My style playing standard is not to ... 
+but I don't object very strenuously to those who do open 1@h.
+After the splinter, East has to do some quick reassessing.  
+The club Ace opposite shortness is a good thing, but the @CQ is wasted.  
+And there may be some argument that responder's strength and club weakness make it more likely that the @SK is worth something.  But I do not like my hand all that much, and might very well just bid 4@h here, and if West has 
+the magic hand I pay off.|
+pg| ***** 113 ***** |
+
+
+nt||
+at|mitche:  But West needs at least 3 key cards for slam to be a good idea.
+My rule of thumb for Blackwood is that the BW bidder needs at least 1 key card  AND the trump Queen to inquire
+If you don’t have the trump Q you need 2 key cards for Blackwood.
+So over West's 4@h I pass.
+Remember that - it'll keep you out of a lot of bad slams.   
+The Blackwood bidder promises at least 1 key card and the trump Q or 2 key cards.
+I think the double of 6@h is the kind of bid that often backfires.  What happens if East is void in spades?|
+pg| ***** 114 ***** |
+
+
+nt||
+at|mitche: A double of a voluntarily bid slam should always be Lightener X  (asking for unusual lead), 
+usually dummy's first bid suit.
+WestElsdon:  West's splinter said he had a void in Clubs, logical that he did not have 2 voids.
+mitche:  West's splinter says singleton or void, Tom.
+East might be bidding on a giraffe (which he is).
+
+
+|
+pg| ***** 115 ***** |
+
+
+sk|n|nt||
+
+pc|ST|pc|S3|pc|SA|pc|SK|
+pg| ***** 116 ***** |
+
+
+lb|*cWhat should North lead for trick 2?^^DK^SJ96HA4CJ76DKQ52|pc|HA|sk||pc|H2|pc|H6|pc|H3|
+pg| ***** 118 ***** |
+
+
+pc|S6|pc|H8|pc|S2|pc|S8|
+pg| ***** 119 ***** |
+
+
+pc|HJ|pc|D3|pc|H7|pc|H4|
+pg| ***** 120 ***** |
+
+
+pc|D4|pc|D8|pc|DA|pc|D5|
+pg| ***** 121 ***** |
+
+
+pc|DJ|pc|DQ|pc|H5|pc|D9|
+pg| ***** 122 ***** |
+
+
+pc|C2|pc|C3|pc|H9|pc|C6|
+pg| ***** 123 ***** |
+
+
+pc|DT|pc|D2|pc|C5|pc|S4|
+pg| ***** 124 ***** |
+
+
+pc|D7|pc|DK|pc|HT|pc|S5|
+pg| ***** 125 ***** |
+
+
+pc|CA|pc|C4|pc|SQ|pc|C7|
+pg| ***** 126 ***** |
+
+
+pc|C9|pc|C8|pc|HQ|pc|CJ|
+pg| ***** 127 ***** |
+
+
+pc|HK|pc|S9|pc|CT|pc|S7|
+pg| ***** 128 ***** |
+
+
+pc|D6|pc|SJ|pc|CQ|pc|CK
+
+
+
+|SK||
+pg| ***** 129 ***** |
+
+
+up|52|
+at|mitche: Play:  After the spade lives, North should play the @DK.    Why?
+The trump Ace is very likely to be a winner :)  so North should try to set up a trick with the @DKQ.
+East did well to escape for down 1. 
+A better line might be to play for a complete cross ruff.  As the only trump left outstanding is the 4, 
+no over ruffs will occur and declarer has 3 outside winners and 9 trumps after losing his 2 Aces.
+
+MM: You can play the hand Double Dummy if you wish
+This concludes this presentation, hope you enjoyed, Karen10 & GG_Bridge
+|pf|y|
+pg| ***** 130 ***** |
+
+
+pf||
+
+
+

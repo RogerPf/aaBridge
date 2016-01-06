@@ -22,12 +22,22 @@ public enum Suit {
 
 	public final int v;
 
+	/* External interfacing to from the dds
+	 * */
+	public int vX() {
+		return (v == 4) ? 4 : 3 - v;
+	}
+
 	public static Suit suitFromInt(int value) {
 		return instAy[value & 0x0f];
 	}
 
 	public char toChar() {
 		return suit_to_cdhsnCh[v];
+	}
+
+	public char toCharLower() {
+		return suit_to_cdhsnLowCh[v];
 	}
 
 	public String toLinStr() {
@@ -65,6 +75,7 @@ public enum Suit {
 	public final static Suit[] shdc = { Spades, Hearts,   Diamonds, Clubs  };
 
 	private final static char[]   suit_to_cdhsnCh     = { 'C', 'D', 'H', 'S', 'N' };
+	private final static char[]   suit_to_cdhsnLowCh  = { 'c', 'd', 'h', 's', 'n' };
 	private final static String[] suit_to_cdhsnLowSt  = { "c", "d", "h", "s", "n" };
 	private final static String[] suit_to_cdhsnSt     = { "C", "D", "H", "S", "N" };
 	private final static String[] suit_to_cdhsnuSt    = { "C", "D", "H", "S", "NU" }; // yes NU (becomes)=> NT via the font

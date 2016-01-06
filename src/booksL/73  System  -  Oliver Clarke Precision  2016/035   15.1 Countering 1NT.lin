@@ -1,0 +1,1339 @@
+%%
+%%
+%% <--SECT_HEAD-->=Chapter 15                        Countering 1NT
+%%
+%%
+%%  Date last Edited    2015-12-19        set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   aaBridge players are screened just before the first  'pg'
+%%
+
+fh|t40|                    Font   t  t-title      section titles within chapters
+fh|b50|                    Font   b  b-bigTitle
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  OLD STYLE  position adjustment 
+
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|y198|cg|y205|cb|y229|   fill   y  y-chapterGray    on Title Pages
+cr|p000|cg|p095|cb|p169|   fill   p  p-precisionBlue  on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|p-precisionBlue|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Oliver Clarke Precision       -       Simple System  ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|y-chapterGray|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bChapter 15                        Countering 1NT^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+
+qx|15|
+fp|t-title|at|^d@2^z@3|
+at|
+^*gGS,Countering 1NT   ^*n
+|fp||at|^^^^|
+fp|t-title|at|^*gOliv,Oliver  on     Countering 1NT|fp||at|   starts HERE^*n       |fp||cp|red|at|<<< First time ?  Click title|fp||cp||at|
+
+
+^*gPrac,      Practice Hands  -   What would You Bid ? ^*n|
+
+
+ht|w|cp|p|at|The ^*b Navbar ^*n below is used for navigation,  think of it as a line of a 100 buttons.|cp||at|
+
+
+
+|fp||ht|y|at|^b@2@1|at|
+^*bClick^*n  -   one of the above  ^hor    in the  NavBar  ^mor      use your   mouse wheel|
+ht|z|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+%%
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2814|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2814 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+qx|GS,hide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Countering 1NT|fp||at|^s(An Extract from the Lesson)^^^^|
+ht|h|
+
+at|^b@2^*bMM:^*n  Rather than provide extracts as a summary here I suggest you use the larger "bumps"  on the Navbar below.
+
+
+         ^e^*b Capp^*n          ^h Cappelletti                  
+		 
+		 ^e^*b TWST^*n          ^i "Oliver's Twist"  -  an effective style of continuation"      
+		 
+		 ^e^*b DONT^*n          ^h DONT   -  Disturb Opponents No Trump               
+		 
+		 ^e^*b Broz^*n          ^h Brozel  and  Modified Brozel
+		 
+		 ^e^*b ModB^*n          ^h Brozel  and  Modified Brozel   WEB version transcribed 
+		 
+		 ^e^*b Suck^*n          ^h Suckion
+	
+	^f |
+	
+pg| ***** 1 ***** |
+
+
+ht|z|n#|5|at|
+^a ^*bend^*n|
+pg| ***** 2 ***** |
+
+
+-----------------------------------------------------------------------------------------------  
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,wide|
+nt|^z@3^b@2|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|y-chapterGray|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class                     Countering 1NT^*n^-^^|cs||fp||cp||at|^^|
+lg|d|
+cp|red|at|^*bOliverC:^*n|cp||at|   Hi Everyone and welcome to today's session, in which we'll be taking a look at defences against our opponents' 1NT Opening.
+
+If you have not already done so, please have a look at the notes I have prepared on Precision Club bidding.
+
+You can find these on: ^*h http://bbo.pigpen.org.uk ^*n 
+
+The notes on these defences can be found at ^*h http://bbo.pigpen.org.uk/Defences.php ^*n 
+
+
+Clearly every defence has its strong points and weak points.
+
+You must decide for yourselves what works for YOU and your partner.
+
+As with most defensive or competitive bidding, these topics have little or nothing to do with what SYSTEM you play, so you're free to choose what artificial defences (if any) you want to play.
+
+Today we're going to look at one very specific area: We'll be looking at various defences to 1NT Openings by Opps.  In particular we will look at DONT, Capp, Brozel and Suction.|
+pg| ***** 3 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Countering 1NT|fp||at|      ^^^^|
+lg|c|n^|4|
+cp|red|at|^*bOliverC:^*n|cp||at|   Three of these (DONT, Brozel and standard "plain" Suction) are only really effective against a STRONG 1NT Opening (15+), but are more effective there than Defences in which a Double is penalty-orientated such as Capp.
+
+By the same token, Conventions such as DONT and Brozel are NOT very effective when playing against a weak 1NT(13-15) or mini 1NT(10-12) Opening, because the double is NOT penalty-orientated.
+
+Against a weak or mini 1NT, CAPP or other gadgets where double IS penalty orientated are much more effective.
+
+Against a weak or mini 1NT, you really need to have a big axe available. So you might want to consider having TWO gadgets available to you, one to play against a weak or mini 1NT and a second one to use against a strong 1NT Opening.
+
+Alternatively, you can modify some gadgets such as Brozel to give it a penalty double .
+
+The list of defences to 1NT is long and, for the most part, fairly distinguished.
+
+There are literally hundreds of defences, some just variations on a theme and some wildly different.
+
+Some are very simple and some much more comprehensive, but also more complex to master.
+
+Most defences to 1NT allow you to show various combinations of 2-suited hands and single-suited hands Some allow you a penalty double, others do not A very few allow 3-suited hands to be shown as well.
+
+I'm only going to take a look at FOUR tonight (Cappelletti, DONT, Brozel and Suction), and only one of those (Brozel - my favourite) in any great depth.|
+pg| ***** 4 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Countering 1NT|fp||at|      continued^^^^|
+lg|c|n^|4|
+cp|red|at|^*bOliverC:^*n|cp||at|  I make no apologies if I'm not covering your favourite, but there really aren't enough hours in the day :) What defence you play is entirely up to you and I make no claims about one defence necessarily being better than another.
+
+The fact is that some defences will work better on some hands than other defences, but will perform poorly by comparison with other defences on other hands.
+
+'You pays yer money and you takes yer choice'.
+
+In my view the test of a good defence is whether it gives you the opportunity to compete on the broad majority of hand-types where you're likely to WANT to compete.
+
+The other test is whether you can penalise Opps when appropriate.
+
+I've mentioned that some of these defences are only really appropriate against a STRONG 1NT Opening.
+
+That is because they use DOUBLE for something OTHER than penalties.
+
+That's a decent tactic against a STRONG 1NT Opening (15+), since it is difficult for you to obtain a decent penalty when one opponent is that strong.
+
+If you are playing against Opps who are using an intermediate 1NT (12-15 range) and particularly if they are using a mini (10-12) 1NT, you want and NEED to have a penalty double available, since the prospect of getting a decent penalty is now much more clear.
+
+So if you currently use DONT or Brozel or similar defences, be aware that it's worth discussing having a DIFFERENT defence available that does use a penalty double.|
+pg| ***** 5 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Overcaller's Length and Strength|fp||at|      ^^^^|
+lg|c|n^|4|
+cp||at|^*bMM:^*n|cp||at|  Oliver's lesson plan deliberately allows for students to ask questions and raise topics not specifically covered in his introduction.  While that works well for a live class come revision time it is probably clearer to have all such material gather together, hence I present it here.
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  As with most defences, the key to making them work FOR you is having an agreed standard for using it with partner.
+
+Sometimes you see people using a 'two suit showing' bid on 4432 shape hands and tram-tickets and then on another hand with a 5521 17-count.
+
+Sitting South East your right hand Opp opens the bidding with  1NT(13-15)  and you hold:    
+
+^c @sKQT52  @h-  @dKT987  @cQJ3                          ^*bMM:^*n    This hand is used in a number of examples that follow.
+
+So I would suggest that the hand here is a typically GOOD hand on which to intervene.  We're in the Intermediate range (11-15 hcp) and have a good  5-5  distribution.
+
+If South wanted to intervene with fewer HCP than this, they might want more extreme distribution.
+
+Similarly, if they were 5-4 shape, they might want to be further towards the 15 HCP mark to compensate for the lack of distribution.
+
+Sticking to that kind of standard allows partner much more confidence as to. when to:  just give preference, when to invite, and when to just move to game.
+
+If you start coming in with this kind of bid when you have a  4432  8-count, how is partner supposed to have the faintest idea what to do when they have a 13-count with good support ?|
+pg| ***** 6 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Overcaller's Length and Strength|fp||at|      continued^^^^|
+lg|c|
+cp||at|^*bRuah:^*n|cp||at|  I thought  you would have to have  5-5  always ?
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Yes, Jean, but I don't like making "rules". All I am saying is this: 
+
+If you ue Capp or any other defence on a 5-4 hand, better to have a bit more than 10 or 11-HCP to compensate for the fact that (1) it might take you till the 3-level to find a fit and (2) you might not find a good fit at all.
+
+When you are 5-5, you are unlucky not to find at least an 8-card fit with partner.
+
+So generally stick to reasonable 5-5 distribution hands with your points mainly in your long suits. 5-4 is also acceptable when not vulnerable or with compensating extra strength.|
+pg| ***** 7 ***** |
+
+
+--------------------------------------------------------------------
+qx|Capp,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Cappelletti|fp||at|      ^^^^|
+lg|c|n^|4|
+cp|red|at|^*bOliverC:^*n|cp||at|  Cappelletti, more commonly referred to as Capp (and sometimes as Hamilton, or Pottage), is a very popular defence to 1NT.
+|n^|5|at|
+It is relatively simple to understand and to use, and does allow for penalty doubles, and also to show single-suiters and 2-suited hands: 
+|n^|9|at|
+^c(1NT)   -    ^*bX^*n ^g is strictly for penalties 
+^c(1NT)   -   2@c     ^g shows a single   -   suited hand (in ANY suit) 
+^c(1NT)   -   2@d     ^g shows both Majors (1NT)   -   2@h shows Hearts and a Minor 
+^c(1NT)   -   2@s     ^g shows Spades and a Minor (1NT)   -   2NT shows both Minors 
+^c(1NT)   -   3@c@d@h@s         ^g     are all natural
+|n^|5|at|
+So Capp certainly fits my description of allowing most of the common hand types to be shown.
+
+|fp|t-title|at|Cappelletti|fp||at|      Continuations^^|
+n^|9|at|             
+^c(1NT)   -   2@c    ^J @2partner makes an automatic relay of  2@d  and the  2@c  bidder now passes (with Diamonds) or bids their suit.
+^c@2(1NT)   -   2@c   -   (p)   -   2@h 
+(1NT)   -   2@c   -   (p)   -   2@s  ^j are rescues with a weak hand and a long suit.
+(1NT)   -   2@c   -   (p)   -   2NT ^j is a forcing bid showing  11+  balanced and wanting more information.
+(1NT)   -   2@h/@s - (p)   -   2NT ^j @2is a forcing relay asking partner to show their Minor.  If they then support the known Major this is invitational with 10-12 points.
+|n^|5|at|
+^c(1NT)   -   2@d    @2most continuations are strictly natural, with 2@h and 2@s merely showing preference, and 3@h/3@s being invitational with good trump support.
+
+^b@2As I said before, just as with most defences, the key to making this work FOR you is having an agreed standard for using it with partner.
+^h Let's have our first example hand.|
+pg| ***** 8 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 1,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 1|sv|n|sk|e|sk||
+%% 4SKQT52DKT987CQJ3,S4HJ97643D62C9762,SJ986HAK52DJ54CA5,SA73HQT8DAQ3CKT84
+md|4SKQT52DKT987CQJ3,,SJ986HAK52DJ54CA5,|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 1 |
+pg| ***** 9 ***** |
+
+
+mb|1N|an|13-15|
+pg| ***** 10 ***** |
+
+
+sj|L|
+mb|2S|an|@s + a Minor|
+pg| ***** 11 ***** |
+
+
+sj|c|
+mb|p|mb|2N|an|forcing enquiry|
+pg| ***** 12 ***** |
+
+
+sj|c|
+mb|p|mb|3D|an|2nd suit|
+pg| ***** 13 ***** |
+
+
+sj|c|
+mb|p|mb|4S|
+pg| ***** 14 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 15 ***** |
+
+
+at|
+^*bMrsD12345:^*n  Why doesn't North go directly to  4@s ?   Aren't you just giving info to the Opps ?|
+pg| ***** 16 ***** |
+
+
+at|^^|cp|red|at|^*bOliverC:^*n|cp||at|  OK, What if South was a bit stronger than this and still just bids  2@s  over the 1NT.   The possibility of a slam is not out of the question if South rebids 4@d rather than 3@d 
+^d(1NT)   -   2@s   -   2NT   -   4@d  would show a STRONG hand, probably with at least this distribution.|
+pg| ***** 17 ***** |
+
+
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Give South       @sKQxxx,  @hxxx,  @d-  @cKQJxx            no more HCP than this and 6@s is trivial.
+^d 1NT   -   2@s   -   4@s            gives NS absolutely no chance of ferreting that out.
+|n^|9|at|
+If you worry TOO much about giving info away to Opps, when you need to exchange that info to get to the right contract, you are doing yourselves a disservice.|
+pg| ***** 18 ***** |
+
+
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  I'm all for keeping Opps in the dark when it doesn't matter too much to US, but not when it DOES matter to us.    If you stick to that yardstick, you will not go far wrong, and partner will find it much easier to know when to compete further or to invite game and you will have fewer instances of missing game or getting too high.|
+pg| ***** 19 ***** |
+
+
+mb|p|
+md|0SKQT52DKT987CQJ3,S4HJ97643D62C9762,SJ986HAK52DJ54CA5,|
+pg| ***** 20 ***** |
+
+
+pf|Y|
+pc|h6|
+pg| ***** 21 ***** |
+
+
+--------------------------------------------------------------------
+qx|Twst,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Oliver's Twist|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  One last thing: Some of you may have heard of something called Oliver's Twist.
+|n^|5|at|
+Don't ask me how it got that name, because the original concept wasn't mine: After
+|n^|5|at|
+^c(1NT)   -   2@c(Capp)   -   (p)   -   ???
+|n^|5|at|
+You might consider using  Oliver's Twist,  which basically means that partner bids the CHEAPEST suit that they would NOT SUPPORT at a higher level.
+
+If partner hits your suit, then you know to pass.
+
+If they've not reached your suit,  you now show it    and they then   pass   OR   bid on.
+
+If they have BYPASSED your suit, then you know they can support your suit at a higher level, either because they are strong, but more likely because they also have great support for your suit.
+
+So after 
+|n^|5|at|
+^c(1NT)   -   2@c(Capp, any single-suited hand),    
+|n^|5|at|
+partner bids 2@d with ANY weak hand (doesn't want to compete at a higher level whatever partner's suit.
+
+They might also bid 2@d with an intermediate or stronger hand, but with a Diamond weakness ie: if partner has Diamonds, they have no further interest, but if they correct to a Major or Clubs, then partner might be interested in pushing further.|
+pg| ***** 22 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Oliver's Twist|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  
+|n^|5|at|
+Similarly, if the bidding starts
+|n^|5|at|
+^c(1NT)   -   2@c(any single-suited)   -   (p)   -   2@s                     now partner is showing 
+|lg|h|n^|5|at|^d@2
+NO game interest if the 2@c bidder has Spades, 
+DEFINITE game interest if partner has either red suit (because they bypassed that), 
+and doesn't say anything about their Club support.
+|lg|c|at|^b@2
+Oliver's Twist derives from the way the initial responses to the   Super Precision Multi 2@d Opening   work.
+|n^|5|at|
+You can profitably use it over a Brozel or DONT Double (both of which show a single-suited hand with the suit unspecified) and elsewhere too.
+
+Any questions? 
+
+Ok so on to the next hand.|
+pg| ***** 23 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 2,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 2|sv|n|sk|n|sk||
+%% 3S9653HJ9D962CQ832,SKT8H4DK7543CA964,SAQ42HK87DAJTCJT7,SJ7HAQT6532DQ8CK5
+md|3,SKT8H4DK7543CA964,,SJ7HAQT6532DQ8CK5|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 2 |
+pg| ***** 24 ***** |
+
+
+mb|1N|an|13-15|
+pg| ***** 25 ***** |
+
+
+sj|L|
+mb|2C|an|Capp, Any single-suited hand|
+pg| ***** 26 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 27 ***** |
+
+
+sj|L|
+mb|2H|an|[Oliver's twist] Good @d support.  No interest in @h|
+at|    So here West is showing potential game interest in Diamonds, because they bypassed Diamonds, but showing no interest in going further if East has Hearts (their shortage).  The 2@h bid says nothing about their support for Spades or Clubs, though, because they didn't bypass either of those suits. So if East has Spades or Clubs, and corrects to either of them, West would then be free to continue, or not, depending on their support.            ^*bNOTE^*n  it is  ^*bonly ^*n DIAMONDS that they've flagged as having game interest.|
+pg| ***** 28 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|   Anyone with comments or questions about this technique?
+|n^|9|at|
+It can potentially be used when partner has shown a 2-suited hand with only 1 suit specified, but it's mainly of use when partner has shown an unspecified single-suiter.
+|n^|9|at|
+^*bCurls77:^*n  very interesting|
+pg| ***** 29 ***** |
+
+
+sj|L|
+mb|p|
+md|0S9653HJ9D962CQ832,SKT8H4DK7543CA964,SAQ42HK87DAJTCJT7,|
+pg| ***** 30 ***** |
+
+
+pf|Y|
+pc|cj|
+pg| ***** 31 ***** |
+
+
+--------------------------------------------------------------------
+qx|DONT,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|DONT|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  DONT is the brainchild of Marty Bergen and Larry Cohen and is another popular defence to 1NT.
+|n^|5|at|
+As with Brozel, DONT is normally only meant to be used against STRONG 1NT Openings.
+|n^|5|at|
+Against a Mini or Weak 1NT you need a penalty double available.
+|n^|5|at|
+If playing DONT, therefore, you need to have something ELSE available as well in case you meet a pair playing a Mini or Weak 1NT, as I said above.
+|n^|5|at|
+Much the same strictures for Capp apply to DONT as well.
+|n^|5|at|
+Make sure you and your partner agree on the basic minimum standards for interfering, since THAT is what partner should assume you have.
+
+The scheme of responses for DONT are as follows: 
+^c@2|n^|9|at|
+(1NT)   -    ^*bX^*n  ^g any single suited hand 
+(1NT)   -   2@c   	  ^g Clubs and another suit 
+(1NT)   -   2@d 	  ^g Diamonds and a Major 
+(1NT)   -   2@h 	  ^g both Majors 
+(1NT)   -   2@s 	  ^g weak with 6+ Spades.
+
+^b@2As an aside, you might consider playing Oliver's Twist over a DONT 2@c (as well as over a DONT double).
+
+So if you are  5251  shape with 12-HCP and partner bids 2@c (your singleton), you might bid 2@h (your 2-card suit) to show GOOD support for Diamonds, a preference for Hearts over Clubs, but no further interest in Hearts, 
+|n^|9|at|
+and then spring into life again if partner corrects to 2@s (your 5-card suit).|
+pg| ***** 32 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|DONT|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  Over the Double the standard way of proceeding is that of :
+|n^|7|at|
+   1. @2Partner relays with 2@c and the doubler now passes with Clubs or bids their suit.    If partner does anything OTHER than bid 2@c this is showing a GOOD long suit of their own.
+
+^d Another way of proceeding over the double you might want to try is that of :
+|n^|9|at|^b@2
+   2. [Oliver's Twist].  So over the double partner bids the CHEAPEST suit they would NOT support at a higher level 
+
+You can imagine, I strongly suggest the 2nd of those two alternatives above.   So over partner's Double you'd be showing game interest in any suit you BYPASS.
+
+Effectively with an invitational strength hand (opposite partner's agreed minimum) you bid your SHORTEST suit.
+
+The nice thing about the  Oliver's Twist  method is that if you bid anything other than  2@c  partner immediately knows you are Inv+ and can indicate with their rebid whether they'd accept an invitation or not  AND  know to pass if you've bid their suit (unless they are very strong).
+
+Any questions on DONT?
+
+Back to the first hand we looked at. |
+pg| ***** 33 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 3,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 3|sv|n|sk|e|sk||
+%% 4SKQT52DKT987CQJ3,S4HJ97643D62C9762,SJ986HAK52DJ54CA5,SA73HQT8DAQ3CKT84
+md|4SKQT52DKT987CQJ3,,SJ986HAK52DJ54CA5,|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 3 |
+pg| ***** 34 ***** |
+
+
+mb|1N|an|13-15|
+pg| ***** 35 ***** |
+
+
+sj|L|
+mb|2D|an|@d + a Major|
+pg| ***** 36 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 37 ***** |
+
+
+sj|L|
+mb|2N|an|Forcing Enquiry|
+pg| ***** 38 ***** |
+
+
+sj|c|
+mb|p|mb|3S|an|2nd Suit @s,  Lower range|
+pg| ***** 39 ***** |
+
+
+sj|c|
+mb|p|mb|4S|
+pg| ***** 40 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|     You could work out some fancy sequences here.   I never play DONT, so there may be some special enquiries specified in online articles but I don't know what they might cover. 
+^^Any questions? |
+pg| ***** 41 ***** |
+
+
+mb|p|
+md|0SKQT52DKT987CQJ3,S4HJ97643D62C9762,SJ986HAK52DJ54CA5,|
+pg| ***** 42 ***** |
+
+
+pf|Y|
+pc|h6|
+pg| ***** 43 ***** |
+
+
+--------------------------------------------------------------------
+qx|Broz,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Brozel  and  Modified Brozel|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  Next up is Brozel and Modified Brozel:  Brozel is one of my favourite defences against a strong 1NT.
+
+I like it because it caters for single-suiters, 2-suiters AND 3-suiters and, like DONT, doesn't waste a bid trying to get a penalty double out of a strong 1NT.
+
+Most of the Opps I end up playing against tend to use a Strong 1NT :)    The scheme for Brozel is as follows:
+|n^|5|at|^c@2 
+(1NT)   -    ^*bX^*n  ^g shows any single-suited hand.     (Continuations as for DONT - including Oliver's Twist).
+|n^|9|at|
+(1NT)   -   2@c  ^g Clubs and Hearts 
+(1NT)   -   2@d  ^g Diamonds and Hearts 
+(1NT)   -   2@h  ^g both Majors 
+(1NT)   -   2@s  ^g Spades and a Minor 
+(1NT)   -   2NT  ^g both Minors.
+|n^|9|at|
+(1NT)   -   3@c@d@h@s   ^g    shows a 3-suited hand with a SHORTAGE in the suit bid.   
+
+^b@2In my Precision system, for consistency with the rest of the system, we bid the suit BELOW our shortage rather than bidding the short suit itself.
+
+Unless you have some use for a cheap bid in partner's short suit, it's not worth copying that.  Just bid your short suit.
+
+Over the Double partner can choose to Pass for penalties (eg: with 11+ balanced).
+
+If not, then choose one of the continuations methods shown for DONT earlier.|
+pg| ***** 44 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Brozel  and  Modified Brozel|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  Continuations over the 2-level suit bids are similar in character to those for DONT in the sense that with a weak hand, partner passes or corrects.
+
+Over (1NT)-2@s partner bids 2NT to ascertain which Minor ...so playing Brozel...
+
+The 3-suited overcalls are relatively infrequent but if used, partner passes or gives preference.
+
+In my Precision system they can bid the short suit as a Range Beta ask but must then set the final contract over the response.
+
+As with DONT, Brozel, as described above, only works properly over a STRONG 1NT.
+
+Over a Mini or Weak 1NT better to modify it so that the Double IS penalty-orientated with either a strong balanced hand or a strong single-suiter (Modified Brozel), or play something else such as Capp.
+
+The system notes on the site describe Brozel AND Modified Brozel.  
+
+^c^*h http://bbo.pigpen.org.uk/Defences.php##Brozel ^*n
+
+We use Lebensohl in Competition to help us to proceed (except where the 2NT bid has a specific meaning).  So after 
+|n^|5|at|
+^c(1NT)   -   2@s   -   (p)   -    2NT                    the  2NT  here  is  Leb.        See  ^*b Chapter 14 ^*n
+
+
+OK let's bring back our favourite hand this time using Brozel to counter the 1NT opening.|
+pg| ***** 45 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 4,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 4|sv|n|sk|e|sk||
+%% 4SKQT52DKT987CQJ3,S4HJ97643D62C9762,SJ986HAK52DJ54CA5,SA73HQT8DAQ3CKT84
+md|4SKQT52DKT987CQJ3,,SJ986HAK52DJ54CA5,|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 4 |
+pg| ***** 46 ***** |
+
+
+mb|1N|an|13-15|
+pg| ***** 47 ***** |
+
+
+sj|L|
+mb|2S|an|@s + a Minor|
+pg| ***** 48 ***** |
+
+
+sj|c|
+mb|p|mb|2N|an|Forcing Enquiry|
+pg| ***** 49 ***** |
+
+
+sj|c|
+mb|p|mb|3D|an|Other suit|
+pg| ***** 50 ***** |
+
+
+sj|c|
+mb|p|mb|4S|
+pg| ***** 51 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^Any questions on   Brozel  or  Modified Brozel ? |
+pg| ***** 52 ***** |
+
+
+mb|p|
+md|0SKQT52DKT987CQJ3,S4HJ97643D62C9762,SJ986HAK52DJ54CA5,|
+pg| ***** 53 ***** |
+
+
+pf|Y|
+pc|h6|
+pg| ***** 54 ***** |
+
+
+--------------------------------------------------------------------
+qx|ModB,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Brozel  and  Modified Brozel   from the Website|fp||at|      ^^^^|
+lg|c|
+at|^^|
+at|^*bMM:^*n  As  Modified Brozel  is so highly recommended by Oliver, what follows is a copy of the website (early 2016).
+^^
+|cp|red|at|^*bOliverC:^*n|cp||at|  Brozel uses 2-level bids that are identical to those of Pinpoint Astro, but also includes a double that shows a single-suited hand with a 6+ card suit somewhere and 3-level bids that show relatively strong 3-suited hands.
+
+Brozel is preferred to other conventional defences against 1NT simply because of its flexibility and its ability to deal with a wide range of hands.
+
+The modification to Brozel for this system relates to the 3-suited hands where instead of bidding the singleton suit as specified in standard Brozel, we bid the suit below the singleton.
+
+In Teams events there is a further optional modification you can use against a weak 1NT Opening somewhere in the 10-14 range, which is that the Double is mainly for penalties and shows either a strong balanced hand or a strongish single-suited hand.
+
+Regardless of the strength of the No Trump opened, the decision as to whether to pass or bid when the Brozel Double is used will often depend on vulnerability as well as the strength and distribution of responder's hand.
+
+
+   The full scheme for Brozel is as follows:|
+pg| ***** 55 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Brozel  and  Modified Brozel   from the Website|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|
+
+(1NT)  -   ^*bX^*n ^h ^*bStrong NT:^*n    ^k Aga@2inst a strong No Trump Opening (15+) this shows a reasonably strong single-suited hand.   ^*bContinuations^*n  are as follows:
+^c
+
+^b(1NT)  -   ^*bX^*n   -  (p)  -  Pass  ^h Shows a hand wanting to defend against 1NT Doubled. 
+   ^nThis will normally be a balanced hand with 8+ points.
+
+^b(1NT)  -   ^*bX^*n   -  (p)  -  2@c   ^h Sho@2ws any weak hand not wanting to proceed further than a partscore, or a hand with potential game interest only opposite a suit other than Clubs. The system here is that with an invitational or strong hand that does  ^*bNOT^*n  want to pass the Double for penalties, Responder bids the cheapest suit they are  ^*bNOT^*n  prepared to support further, so the Doubler is able to pass whatever responder bids if that is their suit, or they convert to their suit. Thus Responder is showing game interest in any suit that they bypass,
+
+^b(1NT)  -   ^*bX^*n   -  (p)  -  2@d   ^h Shows a hand not wishing to proceed further if the Doubler has Diamonds, but with game interest if the Doubler has Clubs. It may conceal game+ interest if the Doubler has the Majors. |
+pg| ***** 56 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Brozel  and  Modified Brozel   from the Website|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   
+
+(1NT)  -   ^*bX^*n ^h ^*bWeak NT:^*n    ^k Aga@2inst a weak No Trump Opening (10-14) this is penalty-orientated and shows either a similar hand to that over the strong No Trump or a strong balanced hand:
+^b@2  
+^b(1NT)  -   ^*bX^*n   -  (p)  -  Pass  ^h Shows any hand happy to defend 1NT Doubled.
+  
+^b(1NT)  -   ^*bX^*n   -  (p)  -  2@c   ^h Sho@2ws any weak single-suited hand unable to support the Penalty Double. The Doubler relays with 2@d and responder now passes or converts to their suit. 
+ 
+^b(1NT)  -   ^*bX^*n   -  (p)  -  2@d   ^h Sho@2ws a weak 2-suited hand unable to support the Penalty Double. The Doubler initially chooses between the Majors and responder either passes, bids 2? (space permitting with Spades and a Minor), bids 2NT with both Minors, and bids 3?/? with that Minor and the other Major.
+  
+^b(1NT)  -   ^*bX^*n   -  (p)  -  2@h   ^h Sho@2ws a game-going distributional 2-suited hand (at least 5-5) without Spades. The Doubler relays with 2? and now Responder bids 2NT with both Minors and 3?/? with that Minor and Hearts.  
+
+^b(1NT)  -   ^*bX^*n   -  (p)  -  2@s   ^h Sho@2ws a game-going distributional 2-suited hand (at least 5-5) with Spades. The Doubler relays with 2NT and now Responder shows their second suit.  |
+pg| ***** 57 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Brozel  and  Modified Brozel   from the Website|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   
+
+(1NT)  -   ^*b2@c   ^f ^*b2^*n   suited  hand  Clubs  &  Hearts  
+
+(1NT)  -   ^*b2@d   ^f ^*b2^*n   suited  hand  Diamonds  &  Hearts 
+
+(1NT)  -   ^*b2@h   ^f ^*b2^*n   suited  hand  both Majors  
+
+(1NT)  -   ^*b2@s   ^f ^*b2^*n   suited  hand  Spades  &  a Minor.                  If necessary Responder relays with  ^*b2NT^*n 
+^q  and now the second suit can be shown. 
+
+
+(1NT)  -   ^*b2NT   ^f ^*b2^*n   suited  hand  both Minors 
+
+ 
+(1NT)  -   ^*b3@c   ^f strongish  ^*b3^*n   suited  hand  a  Diamond  shortage         The bid in one below the shortage.
+^s  so the shortag can be bid.                                                           
+(1NT)  -   ^*b3@d   ^f strongish  ^*b3^*n   suited  hand  a  Heart  shortage 
+                                                           
+(1NT)  -   ^*b3@h   ^f strongish  ^*b3^*n   suited  hand  a  Spade  shortage  
+                                                           
+(1NT)  -   ^*b3@s   ^f strongish  ^*b3^*n   suited  hand  a  Club  shortage |
+pg| ***** 58 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Brozel  and  Modified Brozel   from the Website|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   
+^^
+Over the bids that show the 2 suited and 3 suited hands, continuations are almost entirely natural and non-forcing.
+
+The only exception is that where a 3 suited hand has been shown a bid in the suit of the shortage is Beta on the Strong scale (because the 3-suited hands are always 14+ in strength and usually 16+.
+
+If you are not using Asking Bids you can play a bid in the short suit as being Blackwood, but otherwise unless a bid is obviously invitational 
+
+^c(1NT)   -   3?   -   (p)   -   5?
+
+then any bid in one of the suits that the Brozel bidder has promised is strictly "to play".
+
+^^^^^*bMM:^*n   Now back to the lesson and Oliver's coverage of  Suction.|
+pg| ***** 59 ***** |
+
+
+ 
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Suction|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  Okay Last up is Suction:   Suction is actually a surprisingly simple defence to explain and to play but it is also fairly easy for Opp's to cope with in its simplest form.
+
+The scheme for Suction is as follows: Essentially the 2-level suit bids show  
+|n^|9|at|
+^cEITHER
+|n^|9|at|
+^dA single-suiter with the suit ABOVE the suit bid, 
+^cOR 
+^d(a 2-suiter with the two touching suits above that, 
+|n^|9|at|
+Hence:
+^c@2|n^|9|at|
+(1NT)   -   2@c ^f   EITHER  ^i@d  Diamonds ^l    OR     @S + @h ^p both Majors
+(1NT)   -   2@d ^f   EITHER  ^i@h  Hearts   ^l    OR     @s + @c ^p Spades + Clubs
+(1NT)   -   2@h ^f   EITHER  ^i@s  Spades   ^l    OR     @d + @c ^p both Minors
+(1NT)   -   2@s ^f   EITHER  ^i@c  Clubs    ^l    OR     @d + @h ^p Diamonds + Hearts
+|n^|9|at|
+(1NT)   -   ^*bX^*n ^i@d + @s     Diamonds + Spades 
+(1NT)   -   2NT     ^i@h + @c     Hearts + Clubs.
+|n^|6|at|^b^*bOR^*n
+|n^|6|at|(1NT)   -   2NT  ^iEITHER   non-touching 2-suiter           @d + @s      @h + @c 
+keeping  (^*bX^*n) Double as Penalties.
+^b@2
+Partner assumes you have the single-suiter and normally relays in the next suit.
+|n^|9|at|
+The overcaller then corrects if they have the 2-suiter by bidding the lowest of their 2 suits and partner then passes or corrects.
+
+^*bbrian_m^*n  Just for sake of completeness, Oliver, there are those who play Suction against a strong 1NT with 
+^c(1NT)   -   2NT        any non-touching                    &               (1NT)   -   ^*bX^*n           @c's  OR   BOTH red suits.
+|
+pg| ***** 60 ***** |
+
+
+--------------------------------------------------------------------
+qx|Suck,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Suction|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  Easy enough to work out some special sequences when partner is strong, especially if they have good support for the single-suiter option.So if the bidding starts: 
+
+^c(1NT)   -   2@c(@d or @h+@s)   -   ???
+
+Now partner with a great responding hand for Diamonds, might bypass that and show their preference between the Majors, assuming they have no great game interest there.
+
+Suction in this form is easy to play, but also easy to defend against, since 
+
+^c1.  you NEVER have the suit you bid and 
+
+^c2. the @2partner of the 1NT Opener is ALWAYS safe to pass initially on the basis that on the NEXT round of bidding they'll know what RHO has and can use, for example, Lebensohl to proceed.
+^b@2
+There are a number of variations to the Suction concept.
+
+These make it more difficult to defend against and the usual difference is that you MIGHT have the suit bid (Check out Psycho Suction etc etc) (Psycho Suction very aptly named LOL)
+
+The scheme of Suction shown above is only applicable against a STRONG 1NT.
+
+You might want to look at Twerb Suction against a Mini or Weak 1NT (because the Double is for Penalties).
+
+Once again, back to the first example hand|
+pg| ***** 61 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 5,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 5|sv|n|sk|e|sk||
+%% 4SKQT52DKT987CQJ3,S4HJ97643D62C9762,SJ986HAK52DJ54CA5,SA73HQT8DAQ3CKT84
+md|4SKQT52DKT987CQJ3,,SJ986HAK52DJ54CA5,|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 5 |
+pg| ***** 62 ***** |
+
+
+mb|1N|an|13-15|
+pg| ***** 63 ***** |
+
+
+sj|L|
+mb|d|an|Suction, @d + @s|
+pg| ***** 64 ***** |
+
+
+sj|c|
+mb|p|mb|2N|an|Forcing enquiry|
+pg| ***** 65 ***** |
+
+
+sj|c|
+mb|p|mb|3C|an|Club Fragment (@h shortage)|
+at|       (or however you want to craft your responses)|
+pg| ***** 66 ***** |
+
+
+sj|c|
+mb|p|mb|4S|
+pg| ***** 67 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 68 ***** |
+
+
+at|^^If you decide to use 2NT for ANY "odd" 2-suiter, then it would go 
+^c(1NT)   -   2NT   -   4@h(Pass or Correct)   -   4@s       North has fewer options here.  |
+
+
+mb|p|
+md|0SKQT52DKT987CQJ3,S4HJ97643D62C9762,SJ986HAK52DJ54CA5,|
+pg| ***** 69 ***** |
+
+
+pf|Y|
+pc|h6|
+pg| ***** 70 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Countering  1NT  Summary|fp||at|      ^^^^|
+lg|c|n^|4|
+cp|red|at|^*bOliverC:^*n|cp||at|   Ok, so the main thing to take away today is that there are lots of defences available.
+
+You need to consider whether the one you choose can be used sensibly against all strength 1NT Openings and have an alternative lined up if it isn't.
+
+The other thing is that you need to have agreed standards for these overcalls and to stick to them so that partner has a clue whether to compete/invite/force if they have a suitable hand themselves.
+
+If you DO NOT do this, then your results will be very variable.
+
+Similarly you need to discuss CONTINUATIONS with partner so that you are both on the same wavelength if responder has a decent hand and wants to invite or to find out more about the overcaller's hand.
+
+If you've not come across it, please consider using "Oliver's Twist" if/when partner shows an unspecified single-suited hand of any kind, or when they show a 2-suiter with only 1 suit specified.
+
+It really works and helps refine your responses.|
+pg| ***** 71 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Countering  1NT  Summary|fp||at|      continued^^^^|
+lg|c|n^|4|
+at|^*bCurls77:^*n  I wasn't here from the start, so I apologize if this was covered.  
+
+What about a hand in the balancing position, can we use same tools, even if we are possibly already a passed hand ?
+
+|cp|red|at|^*bOliverC:^*n|cp||at|    Depends on a lot of things, but essentially  Yes, you can passed hand or NOT.
+
+A passed hand is fairly important in that it certainly defines what HCP range you're likely to be in, but I'd not tinker too much with the HCP and distribution requirements when you are NOT a passed.
+
+If you ARE, then clearly you're more likely to be in the region of 9-10 HCP but with decent distribution (at least 5-5).
+
+Anything else if foolhardy, IMHO, because you have no guarantee of reaching a satisfactory fit at a decently low level Lastly, don't forget that:
+
+^c   it  IS  permitted to "Pass" when your Opps open 1NT.
+
+It is often the case that intervening on an inappropriate hand will get them out of a hole or give them a better opportunity to reach the right contract or land YOU in trouble.
+
+If they end up declaring, you have given them quite a lot of useful information about your hand.
+
+I see the occasional really GRUESOME 2-suited intervention over 1NT, showing a 2-suited hand when they are 4432 shape with not many HCP, vul against not :) just because they feel they HAVE to make a noise of some kind, just to get their money's worth from being sat at a table Partner says "Bad Luck, p" when they go for -1100 :) but it's just foolhardy :) |
+pg| ***** 72 ***** |
+
+
+--------------------------------------------------------------------
+qx|Prac,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Practice / Demo  Hands|fp||at|^^^^|
+lg|c|n^|4|
+cp|red|at|^*bOliverC:^*n|cp||at|   Okay, I have a few practice hands. Can I have 4 volunteers please
+
+ALL of the hands assume the use of a 13-15 1NT Opening. 
+
+Please discuss WHAT method of defence against 12NT you're going to use.
+
+
+
+kritter2: Hi Roger
+
+RogerPfi: Hi Shirl
+
+
+|cp|red|at|^*bOliverC:^*n|cp||at|   2 more, please
+
+
+kritter2: DONT against 13-15 NT   
+
+RogerPfi: fine
+
+
+
+gypsy1308: capp against weak nt  mod brozel strong nt|
+pg| ***** 73 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 1,thin|
+st||
+pn|RogerPfi,brian_m,kritter2,gypsy1308|rh||ah|Practice 1|sv|e|sk|s|sk||
+%% 1SQT83HQ72DK9CAKJT,SK2HAKJ863DJ42C97,S9765H95D8765CQ52,SAJ4HT4DAQT3C8643
+md|1,SK2HAKJ863DJ42C97,,SAJ4HT4DAQT3C8643|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 1     |
+pg| ***** 74 ***** |
+
+
+mb|1N|an|13-15 hcp|
+pg| ***** 75 ***** |
+
+
+sj|L|
+mb|2C|an|Capp, single-suited|
+pg| ***** 76 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 77 ***** |
+
+
+sj|L|
+mb|2h|an|Oliver's Twist|
+at|  Here East's 2@H (Oliver's Twist) shows some enthusiasm for @D, but none for @H.|
+pg| ***** 78 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 79 ***** |
+
+
+sj|L|
+mb|p|
+at|^^Any questions or comments ?|
+pg| ***** 80 ***** |
+
+
+sj|L|
+mb|p|
+md|0SQT83HQ72DK9CAKJT,SK2HAKJ863DJ42C97,S9765H95D8765CQ52,|
+pg| ***** 81 ***** |
+
+
+pf|Y|
+pc|h6|
+pg| ***** 82 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared|
+pg| ***** 83 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2,thin|
+st||
+pn|RogerPfi,brian_m,kritter2,gypsy1308|rh||ah|Practice 2|sv|b|sk|w|sk||
+%% 2SJ432HADJ982CA852,SAQ87HK54DK3CQJT4,HJT9873DAQT764C3,SKT965HQ62D5CK976
+md|2SJ432HADJ982CA852,,HJT9873DAQT764C3,|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2     |
+pg| ***** 84 ***** |
+
+
+mb|1N|an|13-15 hcp|
+pg| ***** 85 ***** |
+
+
+sj|L|
+mb|2D|an|D & Higher|
+pg| ***** 86 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 87 ***** |
+
+
+sj|L|
+mb|p|
+at|LOL, mised a 17-HCP Grand slam that would have made John (Lute57) have kittens :)
+^*bkritter2:^*n  lol  :)
+|cp|red|at|^*bOliverC:^*n|cp||at|   I think (1NT)   -   2@d   -   2NT   -   3@h   -   5@d          not unreasonable here  or perhaps  ... 3@h - 4@d - 5@d
+^q6610 has LOADS of playing strength|
+pg| ***** 88 ***** |
+
+
+sj|L|
+mb|p|
+md|0SJ432HADJ982CA852,SAQ87HK54DK3CQJT4,HJT9873DAQT764C3,|
+pg| ***** 89 ***** |
+
+
+pf|Y|
+pc|sT|
+pg| ***** 90 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared|
+pg| ***** 91 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 3,thin|
+st||
+pn|RogerPfi,brian_m,kritter2,gypsy1308|rh||ah|Practice 3|sv|w|sk|e|sk||
+md|4S653HA987DAK84CAT,SAQT987H2DQTCKQ82,S2HQJT543D92C7654,SKJ4HK6DJ7653CJ93|
+md|4,SAQT987H2DQTCKQ82,,SKJ4HK6DJ7653CJ93|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 3     |
+pg| ***** 92 ***** |
+
+
+mb|p|
+pg| ***** 93 ***** |
+
+
+sj|L|
+mb|1N|an|13-15 hcp|
+pg| ***** 94 ***** |
+
+
+sj|L|
+mb|2C!|an|Capp, ANY single suiter|
+pg| ***** 95 ***** |
+
+
+sj|L|
+mb|2H|
+pg| ***** 96 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 97 ***** |
+
+
+sj|L|
+mb|3H|
+pg| ***** 98 ***** |
+
+
+sj|L|
+mb|3S|
+pg| ***** 99 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 100 ***** |
+
+
+sj|L|
+mb|p|at|Well I suspect 4@h is making for NS, and 3@s likely to make for EW, so that's a great result for EW.    East might have ventured a 2@s bid over 2@h, not encouraging game, but happy to compete
+^*bkritter2:^*m   Would you go to 4 hearts with my hand?
+|cp|red|at|^*bOliverC:^*n|cp||at|  No, Shirl, I think you pushed the boat out enough with 2@h.  
+4@s is -1, but everything sitting very nicely for a Heart contract by NS.|
+pg| ***** 101 ***** |
+
+
+sj|L|
+mb|p|
+md|0S653HA987DAK84CAT,SAQT987H2DQTCKQ82,S2HQJT543D92C7654,|
+pg| ***** 102 ***** |
+
+
+pf|Y|
+pc|hQ|
+pg| ***** 103 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared|
+pg| ***** 104 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 4,thin|
+st||
+pn|RogerPfi,brian_m,kritter2,gypsy1308|rh||ah|Practice 4|sv|b|sk|s|sk||
+%% 1SQJT3HK98DAJ83CA6,S2HAJT52D5CKQJT83,SK985H43DQ9762C95,SA764HQ76DKT4C742
+md|1,S2HAJT52D5CKQJT83,,SA764HQ76DKT4C742|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 4     |
+pg| ***** 105 ***** |
+
+
+mb|1N|an|13-15|
+pg| ***** 106 ***** |
+
+
+sj|L|
+mb|2H|an|@h and a minor|
+pg| ***** 107 ***** |
+
+
+sj|c|
+mb|p|mb|3H|
+at|   East getting brave with her flat 9-count|
+pg| ***** 108 ***** |
+
+
+sj|c|
+mb|p|mb|4H|
+at|^^Automatic bid for game by West|
+pg| ***** 109 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^wd|
+pg| ***** 110 ***** |
+
+
+sj|L|
+mb|p|
+md|0SQJT3HK98DAJ83CA6,S2HAJT52D5CKQJT83,SK985H43DQ9762C95|
+pg| ***** 111 ***** |
+
+
+pf|Y|
+pc|d6|
+pg| ***** 112 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared|
+pg| ***** 113 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 5,thin|
+st||
+pn|RogerPfi,brian_m,kritter2,gypsy1308|rh||ah|Practice 5|sv|b|sk|s|sk||
+md|2S874H842D8653CA63,SQ2HAJ95DK92CKQ52,SAKJT653H73DAJTCT,S9HKQT6DQ74CJ9874|
+md|2S874H842D8653CA63,,SAKJT653H73DAJTCT,|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 5     |
+pg| ***** 114 ***** |
+
+
+mb|1N|an|13-15|
+pg| ***** 115 ***** |
+
+
+sj|L|
+mb|d|an|DONT, single suiter|
+pg| ***** 116 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 117 ***** |
+
+
+sj|L|
+mb|2C|an|forced relay|
+pg| ***** 118 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 119 ***** |
+
+
+sj|L|
+mb|2S|
+at|  With DONT this way of bidding  2@S  shows a stronger hand than a direct bid of  2@s.|
+pg| ***** 120 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 121 ***** |
+
+
+sj|L|
+mb|p|
+at|^^wd |
+pg| ***** 122 ***** |
+
+
+sj|L|
+mb|p|
+md|0S874H842D8653CA63,SQ2HAJ95DK92CKQ52,SAKJT653H73DAJTCT,|
+pg| ***** 111 ***** |
+
+
+pf|Y|
+pc|hk|
+pg| ***** 112 ***** |
+
+
+Goodbyes--------------------------------------------------------------------
+qx|end,thin|
+bt||
+nt|^b@2^z@3|at|^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  ok, wd everyone
+
+My thanks to those playing
+
+kritter2:  thx  everyone HNY@h
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  HNY all  
+Okay, I think we can leave it there for now. I hope you've found this session useful and that it will give you more confidence in defending against Opps 1NT Openings.
+
+Next week's session will be on how to cope with the situation where Opps Double OUR 1NT Opening for Penalties and we'll be looking mainly at the INTRO convention. 
+
+See you then.
+
+
+RogerPfi: HNY Oliver       thanks for the lesson
+
+Curls77:  tyvm Oliver & hny :)
+
+gypsy1308:  thks all
+
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  bye for now. Night all

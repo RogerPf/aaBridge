@@ -85,6 +85,7 @@ public class RpfResizeButton extends JButton implements MouseListener {
 			setText(cmd);
 		}
 		else if (type == Aaa.s_Std || type == Aaa.m_Std) {
+//			System.out.println(cmd);
 			setActionCommand(cmd);
 			rpfButtonDef = CmdHandler.getDef(cmd);
 			setText(rpfButtonDef.btnText);
@@ -95,6 +96,9 @@ public class RpfResizeButton extends JButton implements MouseListener {
 			rpfButtonDef = CmdHandler.getDef(cmd);
 			setToolTipText(rpfButtonDef.tooltip);
 			setText(rpfButtonDef.btnText);
+		}
+		else if (type == Aaa.s_SelfLabel) { // fake (self) label - no actionListener
+			setText(cmd);
 		}
 		else {
 			assert (false);
@@ -119,6 +123,8 @@ public class RpfResizeButton extends JButton implements MouseListener {
 		else if (type == Aaa.m_Hidden) {
 			setEnabled(false);
 		}
+
+		setVisible(type != Aaa.m_Hidden);
 
 		current_type = type;
 	}
@@ -237,7 +243,7 @@ public class RpfResizeButton extends JButton implements MouseListener {
 		Graphics2D g2 = (Graphics2D) g.create();
 		Aaa.commonGraphicsSettings(g2);
 
-		if (current_type == Aaa.s_Label || current_type == Aaa.m_Label || current_type == Aaa.m_Hidden) {
+		if (current_type == Aaa.s_Label || current_type == Aaa.m_Label || current_type == Aaa.s_SelfLabel || current_type == Aaa.m_Hidden) {
 			g2.setColor(Aaa.baizeGreen);
 		}
 		else {

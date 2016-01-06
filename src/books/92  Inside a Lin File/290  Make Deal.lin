@@ -1,0 +1,119 @@
+%% Make Deal
+%% Last edited  2013 Dec 30
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+bt||
+qx|md0|
+
+at|
+^b@2^*bMake Deal^*n^e^*b!md! ... !^*n|at|^z@3
+|
+at|
+
+When it comes to showing the cards, this is the command that does the heavy lifting.
+
+
+^d!md!|cp|7|at|^*b3^*n|cp||at||cp|5|at|^*bs^*n|cp||at|4j|cp|5|at|^*bh^*n|cp||at|89a|cp|5|at|^*bd^*n|cp||at|26t|cp|5|at|^*bc^*n|cp||at|39tjk,sh467jqd389qc478q,s235qah23d457ac5a,!
+
+
+The (optional) digit at the front of the first hand, here a three (|cp|7|at|^*b3^*n|cp||at|), says the dealer is North. 
+1 = South,   2 = West,   3 = North,   4 = East    If omitted then the default is 2 = South.
+
+A zero (|cp|7|at|^*b0^*n|cp||at|) has a special meaning - the cards listed in the hands are to be inserted.  In other words any cards still in the hand will not be cleared away first, as is normal.  More on this later.
+
+There can be up to 4 hands defined.   If the number of unplaced cards matches the number missing from a single hand then they will be filled in for you.   The three commas (,) in this example shows that there are four hands.
+
+The first hand is always South.
+
+The letters in green - |cp|5|at|^*bs^*n|cp||at| - (shown for the first hand only) mark the start of each suit. You can use capitals or lower case.
+
+^d@2In pracrtice most hands are just cut and pasted from exiting hands. Alternatively, you can make them and save them as a lin file with the 'drag n drop' hand editor that is in aaBridge.
+
+^b@2For the cards order is unimportant, use capitals or lower case and use  t (or T)  for a ten.
+
+
+Please click   ^*bStep > ^*n  to see this example displayed|
+pg| ***** 0 ***** |
+
+
+qx|md1|
+
+nt|^b@2^*bMake Deal^e!md! ... !^*n^z@3
+|
+st||
+md|3s4jh89ad26tc39tjk,sh467jqd389qc478q,s235qah23d457ac5a,|
+at|
+
+^d!md!|cp|7|at|^*b3^*n|cp||at||cp|5|at|^*bs^*n|cp||at|4j|cp|5|at|^*bh^*n|cp||at|89a|cp|5|at|^*bd^*n|cp||at|26t|cp|5|at|^*bc^*n|cp||at|39tjk,sh467jqd389qc478q,s235qah23d457ac5a,!
+
+
+Please click   ^*bStep > ^*n|
+pg| ***** 1 ***** |
+
+
+qx|md2|
+
+nt|^b@2^*bMake Deal^e!md! ... !^*n^z@3|
+
+md|1SKQ2HK,SAT96H642DKT54C32,S74HQ97DJ92CJT876,SJ853HAT3DAQ876C9|
+
+at|
+
+If you fill in three of the hands completely any extra cards are automaticaly put into the incomplete hand.
+
+^d!md!1Skq2Hk,Sat96H642Dkt54C32,S74Hq97Dj92Cjt876,Sj853Hat3Daq876C9!
+|
+pg| ***** 2 ***** |
+
+
+qx|md3|
+
+nt|^b@2^*bMake Deal^e!md! ... !^*n^z@3|at|
+
+You can show just fragments of each hand
+
+^d!md!hkj,s97,st4,hq6! |
+md|hkj,s97,st4,hq6|
+pg| ***** 3 ***** |
+
+
+qx|md4|
+
+nt|^b@2^*bMake Deal^e!md! ... !^*n^z@3|at|
+
+With a zero (0) in front of a hand the command becomes more of an insert/edit, here moving the @hQ      click   ^*bStep >^*n
+
+^d!md!hkj,s97,st4,hq6!
+|
+pg| ***** 4 ***** |
+
+
+md|0,,hq,|
+at|^d!md!|cp|7|at|^*b0^*n|cp||AT|,,hq,!|
+at|^kNote - examples that show zeros other than in the first position 
+^k  like     !md!|cp|7|at|^*b0^*n|cp||AT|,0,0hq,0!    are misleading, those 3 extra zeros are ignored.|
+pg||
+
+
+qx|rc|
+nt|^b@2^*bRemove Cards^f!rc! ... !  ^iadded in ^*b aaBridge ^*n|cp|red|at|^*b2820^*n|cp||at|^*n^z@3|at|                     
+If you want to change a card or cards for another.  You need to remove them.  They MUST be unplayed cards.|
+pg||
+
+
+at|^^^^^d!rc!s97!|
+|rc|s97|
+pg||
+
+
+at| ^hAdd re-add them
+^d!md!0,s86!|
+md|0,s86|
+pg| ***** 4 ***** |
+
+
+ht|z|at|@0
+^*b end ^*n|

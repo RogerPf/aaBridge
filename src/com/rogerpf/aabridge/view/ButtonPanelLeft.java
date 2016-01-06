@@ -45,6 +45,7 @@ public class ButtonPanelLeft extends JPanel {
 	RpfResizeButton editPlay_b;
 	RpfResizeButton editPlayWipe_b;
 
+	RpfResizeButton ehere_b;
 	RpfResizeButton edit_b;
 	RpfResizeButton normal_b;
 	RpfResizeButton review_b;
@@ -62,14 +63,13 @@ public class ButtonPanelLeft extends JPanel {
 		// @formatter:off
 		setLayout(new MigLayout(App.simple + ", flowy", "[c]", 
 		   
-		 "[]"			     // SaveAs  (Save is no longer shown)
-		 + "2%[]"            // DeepFinesse Exp Imp - later split into 2
-		 + "7%[]"            // score - later split into 2
+		 "[]"			     // SaveAs  (Save is no longer shown)          
+		 + "11%[]"            // score - later split into 2
 		 + "push"
-		 + "[]0.5%[][]"           // Edit Hands - (shuff weak first) note the third field is split (later)
-		 + "2.5%[][]"           // Edit Bidding + wipe
-		 + "2.5%[][]"           // Edit Play + wipe
-		 + "12%[]6%[]6%[]"   // Edit - Normal - Review
+		 + "[]0.5%[][]"      // Edit Hands - (shuff weak first) note the third field is split (later)
+		 + "2.5%[][]"        // Edit Bidding + wipe
+		 + "2.5%[][]"        // Edit Play + wipe
+		 + "12%[]6%[]6%[]" // EditHere - Edit - Normal - Review
 		 + "5%"
 		 ));
 
@@ -77,9 +77,6 @@ public class ButtonPanelLeft extends JPanel {
 
 // 		add(saveStd_b = new RpfResizeButton(Aaa.s_Std, "menuSaveStd", 55, 3));   no longer shown
 		add(saveAs_b = new RpfResizeButton(Aaa.s_Std, "menuSaveAs", 55, 3));
-
-		add(depFinOut_b = new RpfResizeButton(Aaa.s_Std, "depFinOut", 37, 3), "flowx, split 2");
-		add(depFinIn_b = new RpfResizeButton(Aaa.s_Std, "depFinIn", 15, 3), "flowy");
 
 		add(blueScore_b = new RpfResizeButton(Aaa.s_SelfCmd, " ", 30, 3, 0.95f), "flowx, split 2");
 		blueScore_b.setBackground(Aaa.teamBannerColorAy[0][0]);
@@ -96,10 +93,10 @@ public class ButtonPanelLeft extends JPanel {
 		editHandsRotateClock_b.setForeground(Cc.RedStrong);
 
 		add(editBidding_b = new RpfResizeButton(Aaa.m_Std, "editBidding", 70, 4));
-		add(editBiddingWipe_b = new RpfResizeButton(Aaa.s_Std, "editBiddingWipe", 30, 3));
+		add(editBiddingWipe_b = new RpfResizeButton(Aaa.s_Std, "editBiddingWipe", 34, 4));
 
 		add(editPlay_b = new RpfResizeButton(Aaa.m_Std, "editPlay", 70, 4));
-		add(editPlayWipe_b = new RpfResizeButton(Aaa.s_Std, "editPlayWipe", 30, 3));
+		add(editPlayWipe_b = new RpfResizeButton(Aaa.s_Std, "editPlayWipe", 34, 4));
 
 		add(edit_b = new RpfResizeButton(Aaa.m_Std, "leftWingEdit", 75, 6));
 
@@ -127,8 +124,6 @@ public class ButtonPanelLeft extends JPanel {
 		
 //		saveStd_b.setVisible( insideADeal && App.showSaveBtns);  no longer shown
 		saveAs_b.setVisible(  insideADeal && App.showSaveBtns);
-		depFinOut_b.setVisible(  insideADeal && App.showDepFinBtns);
-		depFinIn_b.setVisible(  insideADeal && App.showDepFinBtns);
 		
 		setScoreDisplayVisibility();
 

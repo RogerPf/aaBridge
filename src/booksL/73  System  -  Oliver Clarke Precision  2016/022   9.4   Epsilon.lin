@@ -1,0 +1,1360 @@
+%%
+%%
+%% <--SECT_HEAD-->=Chapter 9.4                              Epsilon Ask
+%%
+%%
+%%  Date last Edited    2015-05-30        set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   aaBridge players are screened just before the first  'pg'
+%%
+
+fh|t40|                    Font   t  t-title      section titles within chapters
+fh|b50|                    Font   b  b-bigTitle
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  OLD STYLE  position adjustment 
+
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|y198|cg|y205|cb|y229|   fill   y  y-chapterGray    on Title Pages
+cr|p000|cg|p095|cb|p169|   fill   p  p-precisionBlue  on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|p-precisionBlue|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Oliver Clarke Precision       -       Simple System  ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|y-chapterGray|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bChapter 9.4                              Epsilon Ask^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+
+qx|9.4|
+fp|t-title|at|^d@2^z@3|
+at|
+^*gGS, Epsilon  Response  Tables     (extracts from the class and web)^*n|
+fp||at|
+
+^*gGS,    ^*n
+|
+fp|z|at|^^^^^^^^^^
+|fp|t-title|at|
+^*gOliv, Oliver's class on   Epsilon Ask            |fp||at|Starts HERE^*n  |fp||cp|red|at|<<< First time ?  Click title|fp||cp||at|
+
+
+^*gPrac,    Practice Hands    -     What would You Bid ? ^*n|
+
+
+fp||ht|y|at|^b@2@1|at|
+^*bClick^*n  -   one of the above  ^ior   ^k^*bFlow >^*n ^oor  ^panywhere in the NavBar below.|
+ht|z|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+%%
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2814|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2814 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+qx|GS,hide|
+mn|Epsilon     Response     Tables|
+tu|y|
+nt|^z@3^b@2|
+ht|h|
+fp|b-bigTitle|at|Epsilon  First  Response^*n|fp||at|     
+                                                ^k    (shortage)
+^^                                              ^k         Min   ^n     Extra
+^b    Steps    ^f     Shows                     ^k      Length   ^n    Honour       ^q  BOTH          
+^b    @-@-@-^d     @-@-@-@-@-@-@-@-@-@-@-@-@-   ^k     @-@-@-@-  ^n  @-@-@-@-@-     ^q @-@-@-      
+^c 1^d     None   ^*bor^*n  ^g 1st  + 2nd       ^l  ^*b A           ^n   AKx ^o    ^*n(x)^*b ^q       ^*n           
+^c 2                        ^g 3rd              ^l  ^*b xx          ^n   Qxx ^o    ^*n(x)^*b ^q   Qx  ^*n
+        |cp|d|at|^c@-@-@-@-@-@-@-@-@-@-@-|cp||at|       
+^c 3                        ^g 2nd              ^l  ^*b x           ^n   Kxx ^o    ^*n(x)^*b ^q   K   ^*n      
+^c 4                        ^g 2nd + 3rd        ^l  ^*b Kx          ^n   KQx ^o    ^*n(x)^*b ^q   KQ  ^*n
+        |cp|d|at|^c@-@-@-@-@-@-@-@-@-@-@-|cp||at|
+^c 5                        ^g 1st              ^l  ^*b  -          ^n   Axx ^o    ^*n(x)^*b ^q       ^*n      
+^c 6                        ^g 1st  + 3rd       ^l  ^*b Ax          ^n   AQx ^o    ^*n(x)^*b ^q   AQ  ^*n      
+^c 7                        ^g 1st  + 2nd + 3rd ^l  ^*b AK          ^n   AKQ ^o    ^*n(x)^*b ^q       ^*n      
+
+
+^*bHint:^*n  First row is   ^*b 0 1 2 ^*n   the next is   ^*b 3 ^*n   the next two both start with  ^*b 2 ^*n     the next three all start with  ^*b 1 ^*n|
+
+ht|z|at|^b^*bMM:^*n  The following pages are extracts from the class plus material from  ^*h bbo.pigpen.org.uk/Epsilon.php ^*n|
+pg| ***** 1 ***** |
+
+
+nt|^z@3^b@2|
+ht|h|
+fp|b-bigTitle|at|Repeat  Epsilon  Responses       |fp||at|majority of cases|fp||at|
+^^                                        ^k    @-  The Number  of  Steps  in  the  First  Response  @-
+^^                                        ^k   1      ^m   2      ^o   3      ^q   4     ^s   5     ^u   6     ^w   7
+                                          ^k @-@-     ^m @-@-     ^o @-@-     ^q @-@-    ^s @-@-    ^u @-@-    ^w @-@-
+^c 1   step     ^f Min  Length^*n         ^k          ^m xx       ^o x        ^q Kx      ^s         ^u Ax      ^w 
+^c 2   steps    ^f Extra  Honour^*n       ^k          ^m Qxx      ^o Kxx      ^q KQx     ^s         ^u AQx     ^w 
+^c 3   steps    ^f BOTH^*n                ^k          ^m Qx       ^o K        ^q KQ      ^s         ^u AQ      ^w 
+  
+^c 4   steps    ^f Suit (4+)  NO  Jack    ^k          ^m Qxxx (x) ^o Kxxx (x) ^q KQxx (x)^s         ^u AQxx (x)^w 
+^c 5   steps    ^f Suit (4+)    +   Jack  ^k          ^m QJxx (x) ^o KJxx (x) ^q KQJx (x)^s         ^u AQJx (x)^w 
+
+                                          ^k @-@-     ^m @-@-     ^o @-@-     ^q @-@-    ^s @-@-    ^u @-@-    ^w @-@-
+                                          ^k0 1+2     ^m    3     ^o    2     ^q  2+3    ^s  1+3    ^u  1+2    ^w 1+2+3    |
+pg| ***** 2 ***** |
+
+
+nt|^z@3^b@2|
+ht|h|
+fp|b-bigTitle|at|Repeat  Epsilon  Responses       |fp||at|following a|fp|b-bigTitle|at|  1 step        |fp||at| first response
+^^                                        ^k    @-  The Number  of  Steps  in  the  First  Response  @-
+^^                                        ^k   1      ^m   2      ^o   3      ^q   4     ^s   5     ^u   6     ^w   7
+                                          ^k @-@-     ^m @-@-     ^o @-@-     ^q @-@-    ^s @-@-    ^u @-@-    ^w @-@-
+^c 1   step  ^f |cp|red|at|No Control       ^k  xxx (x)|cp||at|  
+^c 2   steps ^f Min  Length^*n          ^k  A   
+^c 3   steps ^f Extra  Honour^*n          ^k  AKx    
+  
+^c 4   steps ^f Suit (4+)  NO  Jack       ^k  AKxx (x)    
+^c 5   steps ^f Suit (4+)    +   Jack     ^k  AKJx (x)    
+
+                                          ^k @-@-     ^m @-@-     ^o @-@-     ^q @-@-    ^s @-@-    ^u @-@-    ^w @-@-
+                                          ^k0 1+2     ^m    3     ^o    2     ^q  2+3    ^s  1+3    ^u  1+2    ^w 1+2+3|
+pg| ***** 3 ***** |
+
+
+nt|^z@3^b@2|
+ht|h|
+fp|b-bigTitle|at|Repeat  Epsilon  Responses       |fp||at|following a|fp|b-bigTitle|at|  5|fp||at| or |fp|b-bigTitle|at|7 step   |fp||at|first response
+^^                                        ^k    @-  The Number  of  Steps  in  the  First  Response  @-
+^^                                        ^k   1      ^m   2      ^o   3      ^q   4     ^s   5     ^u   6     ^w   7
+                                          ^k @-@-     ^m @-@-     ^o @-@-     ^q @-@-    ^s @-@-    ^u @-@-    ^w @-@-
+^c 1   step     ^f Min  Length^*n         ^k                                             ^s    -               ^w AK
+^c 2   steps    ^f Extra  Honour          ^k                                             ^s  Axx               ^w AKQ   
+                                                                                                               
+^c 3   steps    ^f Suit (4+)  NO  Jack    ^k                                             ^s  Axxx (x)          ^w AKQx (x)
+^c 4   steps    ^f Suit (4+)    +   Jack  ^k                                             ^s  AJxx (x)          ^w AKQJ (x)
+
+
+                                          ^k @-@-     ^m @-@-     ^o @-@-     ^q @-@-    ^s @-@-    ^u @-@-    ^w @-@-
+                                          ^k0 1+2     ^m    3     ^o    2     ^q  2+3    ^s  1+3    ^u  1+2    ^w 1+2+3|
+pg| ***** 4 ***** |
+
+
+nt|^z@3^b@2|
+ht|h|
+fp|b-bigTitle|at|Repeat  Epsilon  Responses       |fp||at|following a|fp|b-bigTitle|at|  5|fp||at| or |fp|b-bigTitle|at|7 step   |fp||at|first resp & known  ^*b3+^*n  card len
+^^                                        ^k    @-  The Number  of  Steps  in  the  First  Response  @-
+^^                                        ^k   1      ^m   2      ^o   3      ^q   4     ^s   5     ^u   6     ^w   7
+                                          ^k @-@-     ^m @-@-     ^o @-@-     ^q @-@-    ^s @-@-    ^u @-@-    ^w @-@-
+^c 1   steps    ^f Extra  Honour^*n       ^k                                             ^s  Axx               ^w AKQ   
+                                                                                                               
+^c 2   steps    ^f Suit (4+)  NO  Jack    ^k                                             ^s  Axxx (x)          ^w AKQx (x)
+^c 3   steps    ^f Suit (4+)    +   Jack  ^k                                             ^s  AJxx (x)          ^w AKQJ (x)
+    
+
+
+                                          ^k @-@-     ^m @-@-     ^o @-@-     ^q @-@-    ^s @-@-    ^u @-@-    ^w @-@-
+                                          ^k0 1+2     ^m    3     ^o    2     ^q  2+3    ^s  1+3    ^u  1+2    ^w 1+2+3|
+pg| ***** 5 ***** |
+
+
+nt|^z@3^b@2|
+ht|h|
+fp|b-bigTitle|at|Repeat  Epsilon  Responses       |fp||at|responder has a|fp|b-bigTitle|at|  4+ card   |fp||at|known suit length
+^^                                        ^k    @-  The Number  of  Steps  in  the  First  Response  @-
+^^                                        ^k   1      ^m   2      ^o   3      ^q   4     ^s   5     ^u   6     ^w   7
+                                          ^k @-@-     ^m @-@-     ^o @-@-     ^q @-@-    ^s @-@-    ^u @-@-    ^w @-@-
+^c 1   steps    ^f Suit (4+)  NO  Jack    ^k AKxx (x) ^m Qxxx (x) ^o Kxxx (x) ^q KQxx (x) ^s Axxx (x) ^u AQxx (x) ^w AKQx (x)
+^c 2   steps    ^f Suit (4+)    +   Jack  ^k AKJx (x) ^m QJxx (x) ^o KJxx (x) ^q KQJx (x) ^s AJxx (x) ^u AQJx (x) ^w AKQJ (x)     
+
+^^^^^^
+                                          ^k @-@-     ^m @-@-     ^o @-@-     ^q @-@-    ^s @-@-    ^u @-@-    ^w @-@-
+                                          ^k0 1+2     ^m    3     ^o    2     ^q  2+3    ^s  1+3    ^u  1+2    ^w 1+2+3|
+pg| ***** 6 ***** |
+
+
+nt|^z@3^b@2|
+ht|h|
+fp|b-bigTitle|at|Repeat  Epsilon  Responses       |fp||at|responder has a|fp|b-bigTitle|at|  4+ card   |fp||at|known suit length
+^^                                        ^k             ^n simplified
+^^                                        ^k         
+                                          ^k
+^c 1   steps    ^f Suit (4+)  NO  Jack    ^k
+^c 2   steps    ^f Suit (4+)    +   Jack  ^k   
+
+^^^^^^
+                                          ^k
+                                          ^k|
+pg| ***** 7 ***** |
+
+
+mn|Epsilon  in  a  Singleton  Suit|
+nt|^z@3^b@2|
+ht|g|
+fp|b-bigTitle|at|Epsilon  First  Response^*n|fp||at|     when ask is in known singleton of a |fp|b-bigTitle|at|   4441   |fp||at|hand
+^^
+^b    ^*bSteps              ^g Shows ^*n    
+^b    @-@-@-                ^g@-@-@-@-@- 
+^c 1                        ^g  ^*bx^*n     or   ^*b J ^*n    
+^c 2                        ^g  ^*bQ^*n    or   ^*b K ^*n   
+^c 3                        ^g  ^*bA^*n
+^^
+^^
+|fp|t-title|at|Repeat  Response^*n|fp||at|
+^^                                        ^e       @-  Steps  in  the  First  Resp. @-
+^^                          ^g   1         ^i   2   
+                            ^g @-@-        ^i @-@-  
+^c 1   step                 ^g  ^*b x ^*n  ^i  ^*b Q ^*n
+^c 2   steps                ^g  ^*b J ^*n  ^i  ^*b K ^*n
+|
+pg| ***** 8 ***** |
+
+
+nt|^z@3^b@2|
+ht|g|
+fp|b-bigTitle|at|Epsilon  First  Response^*n|fp||at|     when ask is in known shortage of a |fp|b-bigTitle|at|  Splinter   |fp||at|
+^^
+^b    ^*bSteps              ^g Shows ^*n    
+^b    @-@-@-                ^g@-@-@-@-@- 
+^c 1                        ^g  ^*bx^*n     including  ^*b Q ^*n    
+^c 2                        ^g  ^*bK^*n
+^c 3                        ^g void
+^c 4                        ^g  ^*bA^*n
+
+^^
+|fp|t-title|at|Repeat  Response^*n|fp||at|
+^^                                        ^e       @-  Steps  in  the  First  Resp. @-
+^^                          ^g   1          
+                            ^g @-@-        
+^c 1   step                 ^g  ^*b x ^*n  
+^c 2   steps                ^g  ^*b Q ^*n |
+pg| ***** 9 ***** |
+
+
+nt|^z@3^b@2|
+tu||
+at|^^^^|
+fp|b-bigTitle|at|Epsilon  First  Response|fp||at|      ^qA  memory aid  approach^*n   
+                                                ^k     (shortage)
+^^                                              ^k         Min   ^n     Extra
+^b    Steps    ^f     Shows                     ^k      Length   ^n    Honour       ^q  BOTH       ^u Control^*n   
+^b    @-@-@-^d     @-@-@-@-@-@-@-@-@-@-@-@-@-   ^k     @-@-@-@-  ^n  @-@-@-@-@-     ^q @-@-@-@-      ^u @-@-@-@-
+^c 1^d     None   ^*bor^*n  ^g 1st  + 2nd       ^l  ^*b A           ^n   AKx ^o    ^*n(x)^*b ^q   ^t ^*n     0,^u      ^*b1     2^*n   
+^c 2                        ^g 3rd              ^l  ^*b xx          ^n   Qxx ^o    ^*n(x)^*b ^q   Qx ^*n       ^u      ^*b3^*n
+        |cp|d-feint|at|^c@-@-@-@-@-@-@-@-@-@-@-|cp||at|                                                      
+^c 3                        ^g 2nd              ^l  ^*b x           ^n   Kxx ^o    ^*n(x)^*b ^q   K  ^*n       ^u      ^*b2^*n  
+^c 4                        ^g 2nd + 3rd        ^l  ^*b Kx          ^n   KQx ^o    ^*n(x)^*b ^q   KQ ^*n       ^u      ^*b2^*n    3
+        |cp|d-feint|at|^c@-@-@-@-@-@-@-@-@-@-@-|cp||at|                                                     
+^c 5                        ^g 1st              ^l  ^*b  -          ^n   Axx ^o    ^*n(x)^*b ^q      ^*n       ^u      ^*b1^*n
+^c 6                        ^g 1st  + 3rd       ^l  ^*b Ax          ^n   AQx ^o    ^*n(x)^*b ^q   AQ ^*n       ^u      ^*b1^*n    2
+^c 7                        ^g 1st  + 2nd + 3rd ^l  ^*b AK          ^n   AKQ ^o    ^*n(x)^*b ^q      ^*n       ^u      ^*b1^*n    2    3
+
+^*bHint:^*n  First row is   ^*b 0 1 2 ^*n   the next is   ^*b 3 ^*n   the next two both start with  ^*b 2 ^*n     the next three all start with  ^*b 1 ^*n
+
+To recreate the table in your mind,  learn the pattern of the  ^*bControl^*n  column  (described above),  then:
+  
+When partner reports, for example  ^*b2nd^*n and ^*b3rd^*n,  you just, bring to mind the  |cp|r|at|^*bthree card^*n|cp||at|  sequence (ending with  '^*bx^*n')  that gives this level of control,  eg:   ^*bKQx^*n     this is always the value in the  |cp|h-highlight|at|middle|cp||at|  column.  
+
+IF  you can remove any of the  '^*bx^*n's  and still have the same level of control (this time via ruffing),  eg:   ^*bKQ^*n    THEN  this is the value in the  |cp|h-highlight|at|second|cp||at|  column.
+
+Starting from the previous value, remove an honour (replacing it with an  '^*bx^*n'  if need be) of course keeping the same level of control, eg:   ^*bQx^*n     this is always the value in the the  |cp|h-highlight|at|first|cp||at|  column.|
+ht|z|at|
+^b^*bend^*n|
+pg| ***** 10 ***** |
+
+
+-----------------------------------------------------------------------------------------------
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,wide|
+nt|^z@3^b@2|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|y-chapterGray|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class                           Epsilon Ask^*n^-^^|cs||fp||cp||at|^^|
+
+ht|f|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Hi Everyone and welcome to today's Precision Club session, in which the plan is that we'll be continuing our look at Precision Asking Bids.
+
+Specifically, tonight we're going to look at Epsilon, which is the "lowest" Ask on our totem pole.
+
+This is certainly not a "basic" topic and familiarity with the earlier material is essential.
+
+
+If you have not already done so, please have a look at the notes I have prepared on Precision Club bidding.
+
+You can find these on:  ^*h http://bbo.pigpen.org.uk ^*n  
+
+
+You will DEFINITELY want to have these on screen in the background for reference during this session.  :) 
+
+
+The notes on Epsilon can be found at  ^*h http://bbo.pigpen.org.uk/Epsilon.php ^*n
+
+
+If you want download one of the Precision system documents on the site    eg:  Precision Teaching.pdf
+
+^gsee   ^*h http://bbo.pigpen.org.uk/Documents.php ^*n|
+pg| ***** 11 ***** |
+
+
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|The  Epsilon  Ask|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  The Asking bid we're going to deal with today is called Epsilon.
+
+Epsilon asks about the  SPECIFIC DEGREE OF CONTROL  that Responder holds in a SIDE suit.
+
+It is only ever used AFTER trumps have definitely been agreed using an Asking Bid sequence, or when trumps have been definitely agreed in a natural sequence and a high-level Beta has been used.
+
+If we don't know what trumps are, we can't ask about side suits.
+
+Once trumps have been agreed using Asking Bids, however, then ANY bid in a SIDE-SUIT is, by definition, Epsilon, UNLESS it is Beta    (eg:  4@C  and  4@D  Beta takes precedence over 4@C and 4@D Epsilon), 
+
+Or unless the Captain jump-shifts into a new suit (which is normally to play, as we discussed in a previous class).
+
+So let me stress this:  ^*bEpsilon is not normally available UNLESS we've agreed trumps using Asking Bids^*n.
+
+Even then, Beta takes precedence over Epsilon.
+
+Once we have agreed trumps, though, Epsilon is pretty much the only Asking Bid available, except for repeat Trump Asks in the agreed suit, and Beta if required.|
+pg| ***** 12 ***** |
+
+
+nt|^z@3^b@2|at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|    Take the following sequence:    
+
+^c 1@C  -  1@H  -  1NT(Beta)  -   2@D(3 ctrls)   -   2@H(Gamma)  -  2NT(Hxxxx)  -  3@D...
+
+^d here  3@D  is Epsilon in Diamonds.
+
+Hearts have been firmly agreed by the use of Gamma, so 3@D is Epsilon rather than a trump asking bid.  Indeed, a sequence that ended  3@C  or  3@S  would ALSO be Epsilon Asks.    Contrast this with the following sequence: 
+
+^c 1@C  -  1@H  -  1NT(Beta)  -  2@C(0-2 ctrls)  -  2@H(Gamma)  -  2NT(Hxxxx)  -  3@C...
+
+^d here  3@C  is  ^*bNOT^*n Epsilon.
+
+Instead it is the  Relay Beta  over the "positive" response to the  2@H  Gamma Ask.
+
+Responder's exact level of controls is not yet known, so the Relay Beta takes precedence over Epsilon (General Controls are more important that suit-specific controls).
+
+Lastly Now look at the following sequence: 
+
+^c 1@C  -  1@S(bal)  -  2@C(Alpha)  -  2@H(Neg, 0-3)  -  2@S...       Here  2@S  is NOT Epsilon.
+
+Since 2@H is a NEGATIVE response to the 2@C Alpha Ask, trumps have not yet been agreed.
+
+2@S is, therefore, the trump Asking bid Iota (which we'll come to in a couple of weeks).
+
+
+Any questions thus far on when a bid CAN and CANNOT be Epsilon?
+
+Alright, let's move on...|
+pg| ***** 13 ***** |
+
+
+nt|^z@3^b@2|
+ht|a|at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  As I said above, Epsilon asks about the specific DEGREE of control held in a side-suit and is just as interested in shortages as in honours.
+
+With Epsilon we are interested  in: ^j    3rd ^k    round control   (Doubleton  or  Queen), 
+                                    ^j    2nd ^k    round control   (Singleton   or  King)
+                                    ^j    1st ^k    round control   (Void          or    Ace)      ^*bAND^*n     all combinations.
+^b@24th round control counts as  ^*bNo^*n control.
+
+
+|fp|b-bigTitle|at|Epsilon  First  Response^*n|fp||at|    ^k    |cp|u|at|(shortage)|cp||at|
+^*b                                             ^k         Min   ^n     Extra
+^b    Steps    ^f     Shows                     ^k      Length   ^n    Honour       ^q  BOTH       ^t Steps^*n   
+^b    @-@-@-^d     @-@-@-@-@-@-@-@-@-@-@-@-@-   ^k     @-@-@-@-  ^n  @-@-@-@-@-     ^q @-@-@-      ^t @-@-@-
+^c 1^d     None   ^*bor^*n  ^g 1st  + 2nd       ^l   A           ^n   AKx ^o    (x) ^q             ^t     1   
+^c 2                        ^g 3rd              ^l   xx          ^n   Qxx ^o    (x) ^q   Qx        ^t     2
+^c 3                        ^g 2nd              ^l   x           ^n   Kxx ^o    (x) ^q   K         ^t     3
+^c 4                        ^g 2nd + 3rd        ^l   Kx          ^n   KQx ^o    (x) ^q   KQ        ^t     4
+^c 5                        ^g 1st              ^l    -          ^n   Axx ^o    (x) ^q             ^t     5
+^c 6                        ^g 1st  + 3rd       ^l   Ax          ^n   AQx ^o    (x) ^q   AQ        ^t     6
+^c 7                        ^g 1st  + 2nd + 3rd ^l   AK          ^n   AKQ ^o    (x) ^q             ^t     7
+
+Except for the doubling up of  1st + 2nd round control  with  None (^*bNo^*n control),  it is an entirely logical and progressive sequence.
+
+We double up on  0 / 1+2  to save space and because it is normally possible for the asker to know immediately which of those two it is.
+
+Where there are alternatives above, the first shows  MIN LENGTH  (shortage), the second an  EXTRA HONOUR, and the third shows  BOTH   Min Length (shortage)  AND  the Extra Honour.
+
+The importance of this will become apparent in a minute.|
+pg| ***** 14 ***** |
+
+
+nt|^z@3^b@2|
+ht|a|at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  So take   3rd round control  (2 Steps)  as an example,  the entry reads     ^*bxx     Qxx     Qx^*n
+ 
+The 3rd rd ctrl will be one of   ^*bxx^*n   a shortage,    ^*bQxx^*n   an honour  and      ^*bQx^*n    both a shortage AND an honour.
+
+But bear in mind that a singleton Queen counts as a SECOND round control as would, for example, a singleton Two.  
+
+Eg:
+
+^c1@C  -  1NT(@s's)  -  2@S(Gamma)  -  3@C(5-card, 1 Top H)  -  3@H(Epsilon in @H's)  -  4@C  shows  2nd  rd ctrl.
+
+And
+
+^c1@C  -  1@H  -  1@S(Alpha)  -  2@S(Good Sup + 4 ctrls)  -  3@C(Epsilon)  -  3@D  is  1st + 2nd  ^*bOR^*n  No control  of Clubs.
+
+
+It is worth stressing at this stage that (4 steps)   ^*bKx^*n   is   2nd + 3rd   round control, not just  2nd  round control.
+
+Similarly (6 steps)   ^*bAx^*n   is    1st + 3rd    rather than just   1st.
+
+Showing those two holdings as    only "2nd"    and as   only "1st"    are two of the more common mistakes by those getting used to Epsilon.
+
+
+
+Any questions on the stepped responses to Epsilon and the different kinds of holding each stepped response can show?|
+pg| ***** 15 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Repeat  Epsilon|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Just when you thought it was safe to uncover your ears, let me tell you that (yes, you guessed it) 
+
+you can have REPEAT Epsilons.
+^^^^
+|fp|t-title|at|Repeat  Epsilon  Responses  |fp||at| ^l standard case^*n    ^r (^*bMM:^*n Also see first section)
+
+The stepped responses to a repeat Epsilon are: 
+^c@2
+1    step     ^f SHORTAGE  (Min Length)   ^l    -,  x,  xx,  Kx,  Ax 
+2    steps    ^f HONOUR                   ^l    Qxx,  Kxx,  Axx,  KQx,  AQx
+3    steps    ^f BOTH                     ^l    Qx,  K,  AQ,  A
+4    steps    ^f Suit (4+)  NO  Jack      ^l    Qxxx(x),  Kxxx(x),  Axxx(x)
+5    steps    ^f Suit (4+)    +   Jack    ^l    QJxx(x),  KJxx(x),  AJxx(x)
+^b@2
+
+
+^*bMM:^*n  @2Later in the class Oliver explains that there are other response tables and details can be found on the website. 
+
+HOWEVER - All the tables from the website are available provided in the first section of this bridge movie.
+
+You can always click on the Navbar to jump straight there.
+
+^b@2
+|cp|red|at|^*bOliverC:^*n|cp||at|  Time for an example hand.|
+pg| ***** 16 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 1,wide|
+st||
+pn|South,West,North,East|rh||ah|Teach 1|sv|n|sk|e|sk||
+%% 4SKT82H854DT9843C3,SA543HK92D2CKQJ75,SJ9H76DQJ76CT9864,SQ76HAQJT3DAK5CA2
+md|4,SA543HK92D2CKQJ75,,SQ76HAQJT3DAK5CA2|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 1    |
+pg| ***** 17 ***** |
+
+
+mb|1C|an|16+ Any dist except 16-23 4441|
+pg| ***** 18 ***** |
+
+
+sj|c|
+mb|p|mb|2C|an|8+, 5+ @C, GF|
+pg| ***** 19 ***** |
+
+
+sj|c|
+mb|p|mb|2D|an|Low Beta|
+pg| ***** 20 ***** |
+
+
+sj|c|
+mb|p|mb|2N|an|4 Controls|
+pg| ***** 21 ***** |
+
+
+sj|c|
+mb|p|mb|3H|an|Theta asking about @H|
+at|    The  3@H  bid is an ask we've not yet come to, called  Theta.     It asks specifically what partner's holding is in the suit.|
+pg| ***** 22 ***** |
+
+
+sj|c|
+mb|p|mb|4D|an|HH or Hxx in @H|
+pg| ***** 23 ***** |
+
+
+at|^^^^West has earlier shown 4 controls so West MUST have the  @SA.  This means that asking in @S would be an expensive option but since we've now agreed trumps and we know West's exact number of controls, Epsilon is now the ONLY Asking Bid left open to us.|
+pg| ***** 24 ***** |
+
+
+sj|c|
+mb|p|mb|5C|an|Epsilon in Clubs|
+nt|^z@3^b@2|
+ht|a|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|    |
+pg| ***** 25 ***** |
+
+
+sj|c|
+mb|p|mb|5N|an|2nd AND 3rd round control|
+pg| ***** 26 ***** |
+
+
+sj|c|
+mb|p|mb|6C|an|Repeat Epsilon in @C|
+pg| ***** 27 ***** |
+
+
+sj|c|
+mb|p|mb|7C|an|5+ card suit inc the Jack|
+at|  Now you might point out that we could shorten this 5 step response (6@c - 7@c), since West (by originally responding 2@c) is already KNOWN to have a 5-card or longer holding in the suit.|
+pg| ***** 28 ***** |
+
+
+at|^^^^We ALWAYS try to conserve space when we can, as sometimes this can be critical  So, when Responder is KNOWN to have a 4-card or longer holding in the suit, the repeat Epsilon ONLY asks whether or not they have the Jack.|
+pg| ***** 29 ***** |
+pg| ***** 30 ***** |
+
+
+ub|1|
+mb|?|
+pg| ***** 31 ***** |
+
+
+mb|6h|an|Jack held|
+pg| ***** 32 ***** |
+
+
+at|^^^^You will find full details of this on the website.      ^r(^*bMM:^*n and in the first section)|
+pg| ***** 33 ***** |
+
+
+sj|c|
+mb|p|mb|7H|
+pg| ***** 34 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+
+nt|^z@3^b@2|
+ht|a|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|    We can count 5 @H tricks, since we know West has the @HK and on this occasion, 7@H a bit safer than 7NT just in case West has a singleton or doubleton @D and someone has 5-card Clubs.
+
+Any questions? 
+
+^*bdkgrab:^*n  awesome bidding| 
+pg| ***** 35 ***** |
+
+
+pf|Y|
+md|0SKT82H854DT9843C3,SA543HK92D2CKQJ75,SJ9H76DQJ76CT9864|
+mb|p|
+pc|h4|
+pg| ***** 36 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 37 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 2,wide|
+st||
+pn|South,West,North,East|rh||ah|Teach 2|sv||sk|w|sk||
+%% 2SJT63HAQT4DA6CJT5,SA7DKQJT972CAK62,S84HK9863D54C9843,SKQ952HJ752D83CQ7
+md|2,SA7DKQJT972CAK62,,SKQ952HJ752D83CQ7|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 2    |
+pg| ***** 38 ***** |
+
+
+mb|1C|an|16+ Any dist except 16-23 4441|
+at|    This will introduce yet another asking bid that we've not covered yet, Zeta. |
+pg| ***** 39 ***** |
+
+
+sj|c|
+mb|p|mb|1N|an|8+ with 5+ SPADES, GF|
+pg| ***** 40 ***** |
+
+
+sj|c|
+mb|p|mb|3D|an|Sets @D as trumps, Asks Controls|
+at|^^^^Zeta is a  JUMP-SHIFT  over a positive response to 1@C.
+^^It sets the suit unconditionally, and asks about controls in exactly the same way as Beta.  
+
+We'll come to Zeta in a few weeks.|
+pg| ***** 41 ***** |
+
+
+sj|c|
+mb|p|mb|3H|an|0-2 Controls|
+pg| ***** 42 ***** |
+
+
+sj|c|
+mb|p|mb|4C|an|Beta (again)|
+pg| ***** 43 ***** |
+
+
+sj|c|
+mb|p|mb|4H|an|1 Control exactly|
+pg| ***** 44 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+nt|^z@3^b@2|
+ht|a|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|     So far we have an agreed trump suit, and know exactly how many controls East has, so Epsilon is the ONLY Asking Bid left in the basket.|
+pg| ***** 45 ***** |
+
+
+mb|4S|an|Asking about @S Controls|
+pg| ***** 46 ***** |
+
+
+sj|c|
+mb|p|mb|5H|an|2nd and 3rd round control|
+pg| ***** 47 ***** |
+
+
+sj|c|
+mb|p|mb|6D|
+pg| ***** 48 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 49 ***** |
+
+
+at|^^^^I concede, this is taking quite a BIG chance on the Clubs.
+
+In practice, Zeta probably wouldn't be my favourite choice of route here since we NEED  @S 3-3,  OR  for East to have help in Clubs or a ruffing value there.|
+pg| ***** 50 ***** |
+
+
+nt|^z@3^b@2|
+ht|a|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|     We've not had the space to find out much about East's hand.
+^^One disadvantage of using Zeta is that we can NEVER find out what partner's trump holding is (except perhaps by a process of elimination with multiple Epsilons) but on this hand I suspect West will ALWAYS be struggling for the space to agree Diamonds as trumps by any other means, AND to ascertain East's Club holding with any certainty.
+^^Any questions?|
+pg| ***** 51 ***** |
+
+
+pf|Y|
+md|0SJT63HAQT4DA6CJT5,SA7DKQJT972CAK62,S84HK9863D54C9843|
+mb|p|
+pc|h3|
+pg| ***** 52 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 53 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 3,wide|
+st||
+pn|South,West,North,East|rh||ah|Teach 3|sv||sk|n|sk||
+%% 3SAJ982H96DKJ74CA4,S654HKQ4DT95CQJT7,SKQT7HA7DAQ62CK96,S3HJT8532D83C8532
+md|3SAJ982H96DKJ74CA4,,SKQT7HA7DAQ62CK96,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 3    |
+pg| ***** 54 ***** |
+
+
+mb|1C|an|16+ Any dist except 16-23 4441|
+pg| ***** 55 ***** |
+
+
+sj|c|
+mb|p|mb|1N|an|8+ with 5+ SPADES, GF|
+pg| ***** 56 ***** |
+
+
+sj|c|
+mb|p|mb|2C|an|Low Beta|
+pg| ***** 57 ***** |
+
+
+sj|c|
+mb|p|mb|2N|an|5 Controls (Ace = 2, King = 1)|
+pg| ***** 58 ***** |
+
+
+sj|c|
+mb|p|mb|3S|an|Asking about @S (Gamma)|
+pg| ***** 59 ***** |
+
+
+sj|c|
+mb|p|mb|4C|an|Hxxxx in @S|
+pg| ***** 60 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+at|    At this stage we KNOW South has the Black Aces and ONE of the red suit kings.
+
+Just need to find out which one.             |
+pg| ***** 61 ***** |
+
+
+mb|4H|an|Asking about @H Controls|
+at|4@H Epsilon to the rescue.|
+pg| ***** 62 ***** |
+
+
+at|^^^^Redbird44:     Why start with @H's ?   Wouldn't @D's save space ? 
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Glad you asked that.|
+pg| ***** 63 ***** |
+
+
+nt|^z@3^b@2|
+ht|a|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  If we START asking in @D ANY response South makes will take us past 4@H, so our next will have to be 5@H
+
+However, if we ask about @H first, this has two advantages.   Firstly, if South doesn't have the K@H, their response will likely be 1 or 2 steps only, which means our next ask can be 5@D (one bid CHEAPER, not more expensive).  
+
+Secondly, we don't really WANT partner to have the  King of @H's.|
+pg| ***** 64 ***** |
+
+
+nt|^z@3^b@2|
+ht|a|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  We'd much rather they had the DIAMOND king because that fits better with out hand.
+^^So if South SHOWS the @H king, that more expensive response will be something of a warning to us, especially if they have something like  Kx  (generating a 4-step Epsilon response),  which will mean that we (North) can't ask about @D with 5@D's.| 
+pg| ***** 65 ***** |
+
+
+mb|p|mb|4N|an|3rd round control of @H|
+pg| ***** 66 ***** |
+
+
+sj|c|
+mb|p|mb|5D|an|Asking about @D Controls|
+pg| ***** 67 ***** |
+
+
+sj|c|
+mb|p|mb|5N|an|2nd round control|
+pg| ***** 68 ***** |
+
+
+sj|c|
+mb|p|mb|6D|an|Asking again about @D|
+pg| ***** 69 ***** |
+
+
+sj|c|
+mb|p|mb|7D|an|4+-card suit WITH the Jack|
+pg| ***** 70 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+
+
+at|^^^^This (the 6@d bid) might seem unnecessary, but...|
+pg| ***** 71 ***** |
+
+
+nt|^z@3^b@2|
+ht|a|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  If South had Kxx in @D, we could still play in 6@S.
+ 
+However, the ONLY Grand Slam we can make is 7@D,   everyone follow?    7@S can't make here.
+
+^*bkritter2:^*n(Shirl)   Declarer has to have spades to discard losers because the @C ruff is in the hand with the longer trumps, so the Club ruff gains us nothing.|
+pg| ***** 72 ***** |
+
+
+nt|^z@3^b@2|
+ht|a|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Exactly Shirl,  whereas in 7@D, we can ruff the Club in the South hand and still have a long trump in the north hand, giving us our 13th trick, and the losing @H goes on the long spade  
+
+^*bRedbird44:^*n   Oliver I see that you will know this from the bidding.   Not sure i would recoginze it myself.
+
+So good lesson for me.|
+pg| ***** 73 ***** |
+
+
+nt|^z@3^b@2|
+ht|a|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Let me change the hand a little in your imagination: 
+
+Suppose South did NOT have the Jack of @d's, but a small one.   Now his response to the repeat Epsilon would be 7@C How to play in 7@D NOW?
+
+For most purposes a 3rd bid in an Epsilon suit is always "TO PLAY".|
+pg| ***** 74 ***** |
+
+
+nt|^z@3^b@2|
+ht|a|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   The only exception is where responder has shown a singleton or void AND their exact number of controls is not yet known, in which case it would be...|
+pg| ***** 75 ***** |
+
+
+at|  (you guessed it) ... Beta|
+pg| ***** 76 ***** |
+
+
+at|^^^^So, if the sequence above ended   ...  -  6@D  -  7@C  -  ???     now   7@D   would be "to play".|
+pg| ***** 77 ***** |
+
+
+pf|Y|
+md|0SAJ982H96DKJ74CA4,S654HKQ4DT95CQJT7,SKQT7HA7DAQ62CK96|
+mb|p|
+pc|hJ|
+pg| ***** 78 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Let me just repeat the stuff about repeat Epsilons:     Just when you thought it was safe to uncover your ears, let me tell you that you can have REPEAT Epsilons.
+
+
+The stepped responses to a repeat Epsilon are: 
+^c@2
+1    step     ^f SHORTAGE  (Min Length)   ^l    -,  x,  xx,  Kx,  Ax 
+2    steps    ^f HONOUR                   ^l    Qxx,  Kxx,  Axx,  KQx,  AQx
+3    steps    ^f BOTH                     ^l    Qx,  K,  AQ,  A
+4    steps    ^f Suit (4+)  NO  Jack      ^l    Qxxx(x),  Kxxx(x),  Axxx(x)
+5    steps    ^f Suit (4+)    +   Jack    ^l    QJxx(x),  KJxx(x),  AJxx(x)
+^b@2
+
+An exception is where the first Epsilon response showed   No Control   OR  1st AND 2nd,  in which case it is  
+^c@2
+1   step      ^f No Control,^i  
+2   steps     ^f Stiff Ace  ^i (shortage - min length), 
+3   steps     ^f AKx        ^i (honour)
+4   steps     ^f AKxx(x)    ^i (Suit minus the Jack)
+5   steps     ^f AKJx(x)    ^i (Suit with the Jack)
+^b@2
+So you cannot have  1st & 2nd  round control and "both"  min length  and an  extra honour.    As an Example - 
+
+^c 1@C  -  1@S  -  1NT(Beta)  -  2@D  -  2@S(Gamma)  -  3@D  -  3@H(Epsilon)  -  3NT(3rd)  -  4@H(Rep)  -  ???
+
+^d 4@S ^f shows ^i a small doubleton in Spades (xx).
+^d 4NT ^f shows ^i Qxx, 
+^d 5@C ^f shows ^i the doubleton Queen, 
+^d 5@D ^f shows ^i Qxxx(x) 
+^d 5@H ^f shows ^i QJxx(x)|
+pg| ***** 79 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Worth noting also that the repeat ask doesn't have to follow IMMEDIATELY on from the first Epsilon ask.
+
+^d 1@C                 ^i -      1@H 
+^d 1NT(Beta)           ^i -      2@D 
+^d 2@H(Gamma)          ^i -      2NT 
+^d 3@D(Epsilon)        ^i -      3@S(3rd) 
+^d 4@C(Epsilon)        ^i -      5@C(1st) 
+^d 5@D(Repeat Epsilon) ^i -      5@H(@Hxx)...
+
+I would expect that you're reeling a bit by now.
+
+There is provision for an Epsilon Ask in the Singleton Suit when a 4441 hand has been shown by responder.
+
+I'm not going to cover that here and now, but it is covered in the Notes on the website.      (^*bMM:^*n And in first section)
+
+The responses distinguish between small and honour singletons.
+
+So there you have Epsilon.
+
+The main thing to remember about Epsilon is that it is NEVER available UNLESS and UNTIL we've agreed a trump suit using Asking Bids, or UNTIL we've agreed trumps naturally AND used a High-level Beta (by the strong hand).
+
+Similarly, Once those conditions HAVE been satisfied, Epsilon is the ONLY Asking bid still in the game except for repeat asks in the trump suit or Relay/High Beta is that's still required.
+
+Lastly, Epsilon is the "lowest" Asking Bid in the pecking order, so remember that 4@C/4@D Beta and Relay Beta ALWAYS take precedence over Epsilon (General controls more important than specific Controls).|
+pg| ***** 80 ***** |
+
+
+qx|Prac,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Practice / Demo  Hands|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Any questions on Epsilon before we play some practice hands?
+^^^^^^
+OK Thanks guys, thanks for sitting so promptly.|
+pg| ***** 81 ***** |
+
+
+------------------------------------------------------------------------------------------------  
+%% Alert Insert start --------------------------------------------------------------------------
+nt|^z@3^b@2|
+at|^^^^|
+%%   header box with text
+ht|b|cs|y|fp||at|^b{ ^^|
+ht|c|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^|fp|x-insertAlert|at|^- A small insert on Alerts^*n^-^^|cs||fp||cp||at|^^|
+
+ht|d|at|^^|
+cp||at|^*bMM:^*n|cp||at|  We all know we have to alert when playing  'proper'  bridge.
+
+The laws of the game say that what we have to put in the alert is  ^*b our agreement with partner ^*n about that bid.
+
+While creating these bridge movies, I have gone through and added to, or amended, many of the alerts that were in the original text.
+
+I have changed them from being ^*b REAL ^*n alerts, that you should give to real opponents, and have replaced them with ^*b STUDY ^*n alerts.   Study alerts are only useful to students of Oliver's Precision.  Of course in many cases no changes were needed.   For example    1@c     16+ Any dist except 16-23 4441
+
+It is particularly important that we make the alerts for  ^*b Asking bids and their responses^*n,  as clear as possible
+
+	    ^c ^*b Study Alert ^*n           ^i ^*b Real Alert ^*n                ^o ^*b It would be great if you could add ^*n
+     ^b      @-@-@-@-@-@-@-@-@-@- ^h       @-@-@-@-@-@-@-@-@-@-   ^n       @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-
+		^c Beta    Relay Beta ...          ^i Gen Ctrl Ask                    ^o A = 2,  K = 1 
+		^c Alpha                           ^i Asking  in                      ^o Trump ...
+		^c Gamma                           ^i Asking  in partners suit        ^o Trump ...
+		^c Epsilon                         ^i Specific Ctrl Ask               ^o in ... 
+		^c Hxx                             ^i Hxx                             ^o in ... 
+		^c none  or  1st & 2nd             ^i none  or  1st & 2nd             ^o [xxx, AKx(x)]
+		^c 3rd rd ctrl                     ^i 3rd rd ctrl                     ^o [xx, Qxx(x), Qx]
+		
+An easy mistake in reply to an Epsilon is when, say, you hold ^*b Q76 ^*n in the suit, and so give only ^*b Qxx ^*n in the alert.   THAT  IS  WRONG.  The agreement is ^*b 3rd round control ^*n and that is what should be told to the opps.   
+
+The ^*b ethical ^*n problem with telling too much to your opps is that it disadvantages the other pairs who will play your opponents cards.|
+%% Alert Insert End ----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------  
+pg| ***** 82 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 1,hide|
+st||
+pn|Uof FL Jen,RogerPfi,Redbird44,Eszter5|rh||ah|Practice 1|sv|n|sk|e|sk||
+%% 4S52H62D87CT987543,SQJ84HAK94DQ95CQ6,S976HT875DAKJT42,SAKT3HQJ3D63CAKJ2
+md|4,SQJ84HAK94DQ95CQ6,,SAKT3HQJ3D63CAKJ2|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 1 |
+pg| ***** 83 ***** |
+
+
+mb|1C!|an|16+ Any dist except 16-23 4441|
+pg| ***** 84 ***** |
+
+
+sj|c|
+mb|p|mb|1S|an|8+ BALANCED or semi-bal with 5-minor, GF|
+pg| ***** 85 ***** |
+
+
+sj|L|
+mb|2D|
+pg| ***** 86 ***** |
+
+
+at|     Over 2@D, Pass is Beta.|
+pg| ***** 87 ***** |
+
+
+sj|L|
+mb|p!|an|Beta - asking for controls|
+pg| ***** 88 ***** |
+
+
+at|         Responding to  Pass,    Double shows  0-2   and   2@H shows 3.|
+pg| ***** 89 ***** |
+
+
+sj|c|
+mb|p|mb|2H|an|3 controls|
+pg| ***** 90 ***** |
+
+
+sj|c|
+mb|p|mb|2N|an|HOC - Hand over Control to partner|
+pg| ***** 91 ***** |
+
+
+at|^^^^ After the  2NT  we now revert to natural bidding to try to find a trump fit so we just bid 4-card suits "upwards".|
+pg| ***** 92 ***** |
+
+
+sj|c|
+mb|p|mb|3H|
+pg| ***** 93 ***** |
+
+
+sj|c|
+mb|p|mb|3S|
+pg| ***** 94 ***** |
+
+
+sj|c|
+mb|p|mb|4S|
+pg| ***** 95 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+
+at|^^^^  Apologies, this was clearly a hand intended for a different class  (no Epsilon in this one).|
+pg| ***** 96 ***** |
+
+
+pf|Y|
+md|0S52H62D87CT987543,SQJ84HAK94DQ95CQ6,S976HT875DAKJT42|
+mb|p|
+pc|DA|
+pg| ***** 97 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 98 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2,wide|
+pn|Uof FL Jen,RogerPfi,Redbird44,Eszter5|rh||ah|Practice 2|sv|e|sk|s|sk||
+%% 1SAJT92HK9DA954CJ3,S65HQT54D7CK98654,SKQ87HAJ83DKQJT2,S43H762D863CAQT72
+md|1SAJT92HK9DA954CJ3,,SKQ87HAJ83DKQJT2,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2    |
+pg| ***** 99 ***** |
+
+
+mb|1S|an|5+ @S, 11-15 hcp|
+pg| ***** 100 ***** |
+
+
+sj|c|
+mb|p|mb|1N|an|Forcing No Trump|
+pg| ***** 101 ***** |
+
+
+sj|c|
+mb|p|mb|2D|an|Maybe only 3-card|
+pg| ***** 102 ***** |
+
+
+sj|c|
+mb|p|mb|2H|an|Gamma  in @s|
+at|  The  2@H  bid is Gamma in @S,  as it is a relay in the cheapest new suit over Opener's rebid.|
+pg| ***** 103 ***** |
+
+
+sj|c|
+mb|p|mb|2N|an|One Top Honor  min length|
+pg| ***** 104 ***** |
+
+
+sj|c|
+mb|p|mb|3H|an|Epsilon  ( in @h )|
+at|^^^^3@C  would have been Beta.   3@H is a decent shot, since we're not interested in anything South might have in Clubs.|
+pg| ***** 105 ***** |
+
+
+sj|c|
+mb|p|mb|4D|an|2nd and 3rd  rd ctrl|
+at|^^^^4@D  shows   2nd and 3rd   round control of @H, and so MUST be   Kx   or   KQx.   
+
+South cannot have a 4-card  @H suit  or she would have rebid  2@H  (not 2@d)  initially.|
+pg| ***** 106 ***** |
+
+
+sj|c|
+mb|p|mb|5D|an|Epsilon  ( in @D )|
+pg| ***** 107 ***** |
+
+
+sj|c|
+mb|p|mb|6D|an|1st rd ctrl only|
+nt|^z@3^b@2|
+ht|a|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|       The  6@d  shows just   1st  rd ctrl   so   must be Axx(x)  as South has already shown three.   |
+pg| ***** 108 ***** |
+
+
+sj|c|
+mb|p|mb|7S|
+at|^^^^yeehah!|
+pg| ***** 109 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^^^^*blute57:^*n  another 29 HCP Grand in the books.|
+pg| ***** 110 ***** |
+
+
+pf|Y|
+md|0SAJT92HK9DA954CJ3,S65HQT54D7CK98654,SKQ87HAJ83DKQJT2|
+mb|p|
+pc|s6|
+pg| ***** 111 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 112 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 3,wide|
+st||
+pn|Uof FL Jen,RogerPfi,Redbird44,Eszter5|rh||ah|Practice 3|sv|b|sk|w|sk||
+%% 2S9532HK973DT94C65,SKJ64HQ65DA3CQJ98,ST87HAJT82D752C43,SAQH4DKQJ86CAKT72
+md|2,SKJ64HQ65DA3CQJ98,,SAQH4DKQJ86CAKT72,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 3      |
+pg| ***** 113 ***** |
+
+
+mb|1N|an|13-15, bal   OR   semi-bal with a 5cm|
+pg| ***** 114 ***** |
+
+
+sj|c|
+mb|p|mb|3D|an|16+, Alpha Trump Ask in @d|
+at|   Good,   Very important to make the Alpha in @D rather than Clubs, 
+^^because ANY negative response to 3@D will allow a 4@C repeat.
+^^Asking in Clubs first makes the sequence more expensive in the long run since your repeat will be 4@D rather than 4@C.|
+pg| ***** 115 ***** |
+
+
+sj|c|
+mb|p|mb|3H|an|0-3 Ctrls,   less than Qxx or xxxx in @h|
+pg| ***** 116 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 117 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Due to the  Double       Pass  =>  Iota in @C           ReDouble  =>   Repeat Alpha in @D|   
+pg| ***** 118 ***** |
+
+
+sj|L|
+mb|p|an|Iota  asking in @C|
+at|^^^^^*blute57:^*n  Pass is Iota in clubs (as Roger is known to be balanced)|
+pg| ***** 119 ***** |
+
+
+at|^^
+^*bRedbird44:^*n  I am starting to see how opp's bidding can save space  :)
+^^|cp|red|at|^*bOliverC:^*n|cp||at|  Well you saved EW nearly a whole round of bidding space here.|
+pg| ***** 120 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  As East was able to ask with a  Pass  this adds ReDouble into the bids for available encoding.
+
+Both asker and responder will allow for this.   So  @cQxxx  (5 steps from 3@h) will be encoded as  4@D  not  4@h.  |
+pg| ***** 121 ***** |
+
+
+sj|c|
+mb|p|mb|4D|an|KQx  or  Qxxx|
+pg| ***** 122 ***** |
+
+
+sj|c|
+mb|p|mb|4H|an|Beta|
+pg| ***** 123 ***** |
+
+
+sj|c|
+mb|p|mb|5D|an|3 controls|
+at|^^^^The Beta response is on the weak scale as West is already limited to  0-3  by the earlier  3@h  response.|
+pg| ***** 124 ***** |
+
+
+sj|c|
+mb|p|mb|6C|
+pg| ***** 125 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^wd Roger and Eszter|
+
+
+pf|Y|
+md|0S9532HK973DT94C65,SKJ64HQ65DA3CQJ98,ST87HAJT82D752C43|
+mb|p|
+pc|hK|
+pg| ***** 126 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 127 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 4,wide|
+st||
+pn|Uof FL Jen,RogerPfi,Redbird44,Eszter5|rh||ah|Practice 4|sv|n|sk|n|sk||
+%% 3SQHJ62DAQJ74CAT94,S854H5DT985CKQJ73,SAK2HAK9874DK62C6,SJT9763HQT3D3C852
+md|3SQHJ62DAQJ74CAT94,,SAK2HAK9874DK62C6,| 
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 4      |
+pg| ***** 128 ***** |
+
+
+mb|1C|an|16+ hcp,   any distribution except   (16-23)  4441|
+pg| ***** 129 ***** |
+
+
+sj|c|
+mb|p|mb|2D|an|8+ HCP with 5+ @d,  GF|
+pg| ***** 130 ***** |
+
+
+sj|c|
+mb|p|mb|2H|an|Beta Ask|
+pg| ***** 131 ***** |
+
+
+sj|c|
+mb|p|mb|3C|an|4 controls|
+pg| ***** 132 ***** |
+
+
+sj|c|
+mb|p|mb|3D|an|Gamma Trump Ask (agrees trumps)|
+pg| ***** 133 ***** |
+
+
+sj|c|
+mb|p|mb|3N|an|2 or 3 Top hons min len|
+pg| ***** 134 ***** |
+
+
+sj|c|
+mb|p|mb|4H|an|Epsilon  ( in @H )|
+pg| ***** 135 ***** |
+
+
+sj|c|
+mb|p|mb|4S!|an|no controls or 1st and 2nd round|
+at|This  (4@s)  cannot possibly be  1st and 2nd round control,  so must be @Hxxx(x)|
+pg| ***** 136 ***** |
+
+
+sj|c|
+mb|p|mb|5S|an|Epsilon  ( in @s )|
+pg| ***** 137 ***** |
+
+
+sj|c|
+mb|p|mb|6d|an|2nd round control|
+pg| ***** 138 ***** |
+
+
+at|^^^^^*bRedbird44:^*n  (thinking)    I know South has   3 low @H,   @cA,     @dAQ  and at least 3 others.|
+pg| ***** 139 ***** |
+
+
+sj|c|
+mb|p|mb|7D|
+at|        So I go  7@d|
+pg| ***** 140 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  7@D is not a bad contract, but today with this East West you are unlucky.|
+
+
+pf|Y|
+md|0SQHJ62DAQJ74CAT94,S854H5DT985CKQJ73,SAK2HAK9874DK62C6|
+mb|p|
+pc|h5|
+pg| ***** 141 ***** |
+
+
+Goodbyes--------------------------------------------------------------------
+bt||
+qx|end,thin|
+bt||
+nt|^b@2^z@3|
+at|^^^^|
+cp|red|at|^*bOliver:^*n|cp||at|    One point I was going to make earlier is that when you KNOW there's a @D fit, and you can agree @D cheaply, better to do so, that go looking for a second fit in a major.
+
+Okay, we're definitely going to leave it there for tonight. 
+
+
+I apologise for giving you all headaches 4 weeks on the trot. 
+
+All I can say is that next week WILL be a lot easier. ^o ^*bMM:^*n   He said that last week,  he realy did.   :)
+
+
+
+Please do check out the notes on the website.  The  PrecisionTeaching.doc  and PrecisionTeaching.pdf files that can be downloaded are the full description of what I teach on BBO. 
+
+These notes cover the Asking Bids in considerably more detail  than I've been able to do today.
+
+
+kritter2:  tyvm Oliver ;)  great explanations :)
+
+RogerPfi:  thank you oliver
+
+|cp|red|at|^*bOliver:^*n|cp||at|  I gotta go, guys. Thanks for dropping in and see ya next week
+^dnight all. bye for now
+
+
+johnnyhilo: thx
+
+Redbird44:  Ty ty ty @H
+ 

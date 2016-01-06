@@ -233,4 +233,12 @@ public class Frag extends Cal {
 		return target;
 	}
 
+	public int asDdsBits() {
+		int bits = 0;
+		for (Card card : this) {
+			bits |= (1 << card.rank.v);
+		}
+		return bits;
+	}
+
 }

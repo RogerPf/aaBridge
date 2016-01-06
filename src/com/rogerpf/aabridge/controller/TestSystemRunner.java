@@ -64,7 +64,8 @@ public final class TestSystemRunner {
 		// ==============================================================================================
 		String s;
 
-		SimpleDateFormat sdfDate = new SimpleDateFormat("yyyy-MM-dd__HH-mm-ss");
+//		SimpleDateFormat sdfDate = new SimpleDateFormat("yyyy-MM-dd__HH-mm-ss");
+		SimpleDateFormat sdfDate = new SimpleDateFormat("yyyy-MM-dd");
 		s = App.autoSavesPath + "results__" + sdfDate.format(new Date()) + "__.txt";
 		return s;
 	}
@@ -236,6 +237,10 @@ public final class TestSystemRunner {
 			return;
 		}
 
+		int ONE_TEST_ONLY_ID = 1001;
+
+		Boolean oneTestOnly = false;
+
 		int FAILS_FROM_ID = 7000;
 
 		boolean postedHighTestMessage = false;
@@ -263,6 +268,9 @@ public final class TestSystemRunner {
 
 			TestInfo ti = validateNameAndExtractDesiredResult(test, log, d);
 			if (ti == null)
+				continue;
+
+			if (oneTestOnly && (ti.testId != ONE_TEST_ONLY_ID))
 				continue;
 
 			if (postedHighTestMessage == false && ti.testId >= FAILS_FROM_ID) {

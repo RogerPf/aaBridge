@@ -1,0 +1,75 @@
+%%
+%%
+%%
+%%     Common Header for  .... (see below)
+%%
+%%     TOP_HEAD   see below is also the marker meaning  COMMON_HEADER_START
+
+%% <--TOP_HEAD-->=Oliver Clarke Precision       -       Simple System  
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   aaBridge players are screened just before the first  'pg'
+%%
+
+fh|t40|                    Font   t  t-title      section titles within chapters
+fh|b50|                    Font   b  b-bigTitle
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  OLD STYLE  position adjustment 
+
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|y198|cg|y205|cb|y229|   fill   y  y-chapterGray    on Title Pages
+cr|p000|cg|p095|cb|p169|   fill   p  p-precisionBlue  on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|p-precisionBlue|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Oliver Clarke Precision       -       Simple System  ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|y-chapterGray|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b<--SECT_HEAD-->^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <--COMMON_HEADER_END->
+
+
+%% <--FOOTER_CMN_START->
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2814|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2814 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <--FOOTER_CMN_END->
+
+
+
+
+
+
+
+

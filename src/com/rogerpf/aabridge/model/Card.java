@@ -20,9 +20,11 @@ public class Card {
 	 * 
 	 */
 	public final Rank rank;
-	transient char rankCh;
-	transient Rank rankRel;
-	transient Rank rankEqu;
+	char rankCh;
+	Rank rankRel;
+	Rank rankEqu;
+	int ddsScore;
+	boolean ddsNextCard;
 
 	public Suit suit;
 	transient char suitCh;
@@ -34,6 +36,8 @@ public class Card {
 		rankEqu = Rank.Invalid;
 		this.suit = suit;
 		suitCh = suit.toChar();
+		ddsScore = -1; // magic value meaning - not set
+		ddsNextCard = false;
 	}
 
 	public String toString() {
@@ -42,6 +46,10 @@ public class Card {
 
 	public boolean matches(Rank rank, Suit suit) {
 		return (this.rank == rank && this.suit == suit);
+	}
+
+	public boolean matches(Card card) {
+		return (this.rank == card.rank && this.suit == card.suit);
 	}
 
 	public boolean isBetterThan(Card bestSoFar, Suit suitTrumps) {
@@ -82,6 +90,36 @@ public class Card {
 	public String toLinAnswerString(Suit suitV[]) {
 		suitV[0] = suit;
 		return rank == Rank.Ten ? "10" : rank.toStr();
+	}
+
+	public int getDdsScore() {
+		return ddsScore;
+	}
+
+	public void setDdsScore(int ddsScore) {
+		this.ddsScore = ddsScore;
+	}
+
+	public String getDisplayScore(int wonSoFar) {
+		// @formatter:off
+		int adjustedScore = ddsScore + wonSoFar;
+		switch (adjustedScore) {
+		    case  1: return "1>"; // shows as 1 a bit to the left
+			case 10: return "T";  // shows as 10
+			case 11: return "X";  // shows as 11
+			case 12: return "Y";  // shows as 12
+			case 13: return "Z";  // shows as 13
+			default: return adjustedScore + "";
+		}
+		// @formatter:on
+	}
+
+	public void setDdsNextCard(boolean ddsNextCard) {
+		this.ddsNextCard = ddsNextCard;
+	}
+
+	public boolean getDdsNextCard() {
+		return ddsNextCard;
 	}
 
 }

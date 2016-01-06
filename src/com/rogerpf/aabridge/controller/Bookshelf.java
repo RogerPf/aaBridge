@@ -13,7 +13,14 @@ package com.rogerpf.aabridge.controller;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLClassLoader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -24,7 +31,9 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
 import com.rogerpf.aabridge.controller.Book.LinChapter;
+import com.rogerpf.aabridge.igf.MassGi;
 import com.rogerpf.aabridge.model.Cc;
+import com.rogerpf.aabridge.model.Lin;
 
 /**   
  */
@@ -190,7 +199,7 @@ public class Bookshelf extends ArrayList<Book> {
 		return null;
 	}
 
-	public Book getBookByBasePathAndDisplayTitle(String s) {
+	public Book getBookByBasePathAndBookDisplayTitle(String s) {
 		// ==============================================================================================
 		for (Book book : this) {
 			if (s.contentEquals(basePath + book.displayTitle)) {
@@ -249,7 +258,13 @@ public class Bookshelf extends ArrayList<Book> {
 		 * right here switch to an external jar for testing the book loader while still running
 		 * ALL code in the eclipse debugger.
 		 */
-//		basePath = "C:\\a\\aaBridge_3.1.0.2708.jar"; // >>>>>>> FOR simple testing ONLY <<<<<<<<
+
+		/** for basic testing only
+		 */
+		if (App.debug_using_ghost_jar && basePath.startsWith(App.thisAppBaseFolder)) {
+			basePath = App.thisAppBaseJarIncPath;
+			;
+		}
 
 		if ((basePath.toLowerCase().endsWith(".jar") || basePath.toLowerCase().endsWith(".zip"))) {
 			/** 
@@ -297,7 +312,7 @@ public class Bookshelf extends ArrayList<Book> {
 						divider_next = true;
 						continue;
 					}
-					if (s.endsWith(".lin")) {
+					if (s.endsWith(".lin") || s.endsWith(".pbn")) {
 						gum.addFolderOnly(s, divider_next);
 						divider_next = false;
 					}
@@ -431,11 +446,7 @@ public class Bookshelf extends ArrayList<Book> {
 
 		}
 		else if (basePath.toLowerCase().endsWith("bin")) {
-
 			basePath = locationMethodFile.getParent();
-//			basePath = "C:\\ProgramSmall\\aaBridge"; // >>>>>>> Makes testing simpler <<<<<<<<
-//			if (App.devMode)
-//				basePath = "C:\\a";
 		}
 		else {
 			// assert(false); why are we here !
@@ -523,6 +534,205 @@ public class Bookshelf extends ArrayList<Book> {
 			}
 		}
 		return null;
+	}
+
+	/**   
+	 */
+	public static boolean readLinFileIfExists(String pathWithSep, String dealName) {
+		// ==============================================================================================
+
+		if (pathWithSep == null || pathWithSep.contentEquals("")) {
+			pathWithSep = App.realSavesPath;
+		}
+
+		File fileIn = new File(pathWithSep + dealName);
+		if (!fileIn.exists()) {
+			return false;
+		}
+
+		Lin lin = null;
+
+		FileInputStream fis = null;
+
+		try {
+			fis = new FileInputStream(fileIn);
+
+			boolean isLin = dealName.toLowerCase().endsWith(App.dotLinExt);
+
+			lin = new Lin(fis, pathWithSep, dealName, isLin);
+
+			fis.close();
+
+		} catch (IOException i) {
+			System.out.println("lin file rejected, bad format? - but lets try to process it anyway");
+			// i.printStackTrace();
+			try {
+				fis.close();
+			} catch (IOException e) {
+				System.out.println("lin file fis - failed to close");
+				e.printStackTrace();
+			}
+			// return false;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		if (lin == null) {
+			return false;
+		}
+
+		lin.filename = fileIn.getName();
+
+		App.mg = new MassGi(lin);
+
+		App.switchToNewMassGi("");
+
+		return true;
+	}
+
+	/**   
+	 */
+	public void copy_file_to_desktop_and_autosaves_folder(int frontNumb, String doc_name) {
+		// ==============================================================================================
+
+		// we look at the first book and chapter to see what file type we have jar or dev source
+
+		Book b = getBookByFrontNumb(frontNumb);
+		LinChapter ch = b.get(0);
+
+		// String pathWithSep = b.
+
+		if (ch.type == 'r') {
+			copyResourseToDesktopAndAutosavesFolder(b.bookJarName, b.bookJarExtra, doc_name);
+		}
+
+		if (ch.type == 'f') {
+			copyFileToDesktopAndAutosavesFolder(b.bookFolderName, b.bookJarExtra, doc_name);
+		}
+
+		@SuppressWarnings("unused")
+		int z = 0;
+
+	}
+
+	/**   
+	 */
+	public static void copyResourseToDesktopAndAutosavesFolder(String jarName, String extra, String resName) {
+		// ==============================================================================================
+
+		InputStream is = null;
+
+		URL[] urls = null;
+		try {
+
+			// System.out.println("jarname " + jarName);
+
+			urls = new URL[] { new File(jarName).toURI().toURL() };
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+
+		/*  The following line of code can generate the warning
+		 *
+		 *            Resource leak: 'classLoader' is never closed
+		 *
+		 *  As this code has to be Java 6 compatible I have no solution to the issue,
+		 *  as Java 6 has no 'close method' for this.
+		 *
+		 *  However after some thought I now take the view that the 'lost' resource per user loaded
+		 *  lin file is trivial and will be released when the user closes the aaBridge app and
+		 *  with it the JVM.
+		 */
+		// @SuppressWarnings("resource")
+		URLClassLoader classLoader = new URLClassLoader(urls);
+
+		String[] dest_folders = { App.autoSavesPath, App.desktopFolderPath };
+
+		try {
+
+			for (String dest_folder : dest_folders) {
+
+				is = classLoader.getResourceAsStream(extra + "/" + resName);
+				File fileOut = new File(dest_folder + resName);
+
+				try {
+					OutputStream out = new FileOutputStream(fileOut);
+
+					// Transfer bytes from in to out
+					byte[] buf = new byte[1024];
+					int len;
+					while ((len = is.read(buf)) > 0) {
+						out.write(buf, 0, len);
+					}
+					out.close();
+				} catch (IOException e) {
+				}
+				is.close();
+			}
+
+		} catch (IOException i) {
+			System.out.println("can't find - " + resName);
+			try {
+				is.close();
+			} catch (IOException e) {
+			}
+			// return false;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	/**   
+	 */
+	public static void copyFileToDesktopAndAutosavesFolder(String pathWithSep, String extra, String docName) {
+		// ==============================================================================================
+
+		String filename = pathWithSep + docName;
+		File fileIn = new File(filename);
+		if (!fileIn.exists()) {
+			return;
+		}
+
+		FileInputStream is = null;
+
+		String[] dest_folders = { App.autoSavesPath, App.desktopFolderPath };
+
+		try {
+
+			for (String dest_folder : dest_folders) {
+
+				is = new FileInputStream(filename);
+				File fileOut = new File(dest_folder + docName);
+
+				try {
+					OutputStream out = new FileOutputStream(fileOut);
+
+					// Transfer bytes from in to out
+					byte[] buf = new byte[1024];
+					int len;
+					while ((len = is.read(buf)) > 0) {
+						out.write(buf, 0, len);
+					}
+					out.close();
+				} catch (IOException e) {
+				}
+
+				is.close();
+			}
+
+		} catch (IOException i) {
+			System.out.println("can't find - " + filename);
+			// i.printStackTrace();
+			try {
+				is.close();
+			} catch (IOException e) {
+			}
+			// return false;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 
 }

@@ -10,7 +10,6 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.view;
 
-import java.awt.SystemColor;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
@@ -32,6 +31,7 @@ class AaRopPrefs6_RedHints extends ClickPanel implements ItemListener, ActionLis
 
 	QLabel anyLabel;
 
+	QCheckBox showMouseWheelSplash;
 	QCheckBox showRedEditArrow;
 	QCheckBox showRedNewBoardArrow;
 	QCheckBox showRedDividerArrow;
@@ -43,16 +43,19 @@ class AaRopPrefs6_RedHints extends ClickPanel implements ItemListener, ActionLis
 
 	public AaRopPrefs6_RedHints() {
 		setOpaque(true); // remember - we derive from ClickPanel which is setOpaque(false)
-		setBackground(SystemColor.control);
+//		setBackground(SystemColor.control);
 
 		setLayout(new MigLayout(App.simple + ", flowy"));
 
 		Border bdr4 = BorderFactory.createEmptyBorder(1, 4, 1, 4);
 
 		// @formatter:off
-		add(anyLabel  = new QLabel("Red Hints  -  Hide or Show"), "gapy 5");
+		add(anyLabel  = new QLabel("  Red Hints              -  Hide or Show"), "gapy 5");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
 		
+		add(showMouseWheelSplash = new QCheckBox(this, App.showMouseWheelSplash, "'Mouse Wheel' hint   "), "gapy 3");
+		    showMouseWheelSplash.setBorder(bdr4);
+
 		add(anyLabel  = new QLabel("Red Arrows"), "gapy 10");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
 
@@ -78,18 +81,19 @@ class AaRopPrefs6_RedHints extends ClickPanel implements ItemListener, ActionLis
 
 		add(anyLabel  = new QLabel("Reset ALL Options to the default"), "gapy 25");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
-		add(resetAllPrefs = new QButton(this, "Reset & Close"), "gapx12");
+		add(resetAllPrefs = new QButton(this, "Reset & Close"), "gapx4");
+		if (App.onMac == false)
 		    resetAllPrefs.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
 		// @formatter:on
 	}
 
 	public void actionPerformed(ActionEvent e) {
 
-		if ("Reset & Close".equals(e.getActionCommand())) {
-			if (App.allConstructionComplete) {
-				App.SetOptionsToDefaultAndClose();
-				// it never comes back !!
-			}
+		Object source = e.getSource();
+
+		if (source == resetAllPrefs) {
+			App.SetOptionsToDefaultAndClose();
+			// it never comes back !!
 		}
 	}
 
@@ -102,7 +106,10 @@ class AaRopPrefs6_RedHints extends ClickPanel implements ItemListener, ActionLis
 		Object source = e.getItemSelectable();
 
 		// @formatter:off
-		if      (source == showRedEditArrow) {
+		if      (source == showMouseWheelSplash) {
+            App.showMouseWheelSplash = b;
+        }
+		else if (source == showRedEditArrow) {
             App.showRedEditArrow = b;
         }
 		else if (source == showRedDividerArrow) {
@@ -120,7 +127,6 @@ class AaRopPrefs6_RedHints extends ClickPanel implements ItemListener, ActionLis
 		else if (source == showBidPlayMsgs) {
             App.showBidPlayMsgs = b;
         }
-
 
 		if (App.allConstructionComplete) {
 			App.savePreferences();

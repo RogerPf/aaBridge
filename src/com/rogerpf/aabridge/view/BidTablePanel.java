@@ -10,22 +10,31 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.view;
 
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Point;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
+import java.awt.font.LineBreakMeasurer;
+import java.awt.font.TextAttribute;
+import java.awt.font.TextLayout;
 import java.awt.geom.Rectangle2D;
 import java.awt.geom.RoundRectangle2D;
+import java.text.AttributedCharacterIterator;
+import java.text.AttributedString;
 
 import javax.swing.BorderFactory;
+import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
+import javax.swing.Timer;
 
 import net.miginfocom.swing.MigLayout;
 
@@ -38,6 +47,7 @@ import com.rogerpf.aabridge.model.Cc;
 import com.rogerpf.aabridge.model.Deal;
 import com.rogerpf.aabridge.model.Dir;
 import com.rogerpf.aabridge.model.Hand;
+import com.rogerpf.aabridge.model.Suit;
 import com.rpsd.bridgefonts.BridgeFonts;
 
 /**   
@@ -90,7 +100,7 @@ public class BidTablePanel extends ClickPanel { /* Constructor */
 		}
 
 		btph = new BidTablePanelHeader(deal, floating);
-		btp2 = new BidTablePanel2(deal, floating);
+		btp2 = new BidTablePanel2(deal, floating, this);
 
 		scroller = new JScrollPane(btp2);
 		scroller.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -152,6 +162,32 @@ public class BidTablePanel extends ClickPanel { /* Constructor */
 		assert (floating);
 
 		setLocation(x, getLocation().y); // keep our y position
+	}
+
+	/**
+	*/
+	public Timer scrollToEndDelayTimer = new Timer(0 /* millisecs*/, new ActionListener() {
+		// ---------------------------------- Timer -------------------------------------
+		public void actionPerformed(ActionEvent evt) {
+			// =============================================================================
+			scrollToEndDelayTimer.stop();
+			JScrollBar sb = scroller.getVerticalScrollBar();
+			sb.setIgnoreRepaint(false);
+			sb.setValue(sb.getMaximum()); // 100% far end
+		}
+	});
+
+	public void biddingTableHasExpanded_ind() {
+		// ==============================================================================================
+		JScrollBar sb = scroller.getVerticalScrollBar();
+		sb.setIgnoreRepaint(true);
+		sb.setUnitIncrement(4);
+		sb.setValue(sb.getMaximum());
+		scrollToEndDelayTimer.start();
+	}
+
+	public void displayFinalAnotation(boolean showIt) {
+		btp2.displayFinalAnotation(showIt);
 	}
 
 }
@@ -232,14 +268,45 @@ class BidTablePanel2 extends ClickPanel implements MouseListener, MouseMotionLis
 	int reportedHeight = 0;
 	int requestedHeight = 0;
 
-	public BidTablePanel2(Deal deal, Boolean floating) { // constructor
+	boolean lastBidAlertDisplay = true;
+	int previousBidCount = 0;
+
+	BidTablePanel owner = null;
+
+	public BidTablePanel2(Deal deal, Boolean floating, BidTablePanel owner_p) { // constructor
 		// ==============================================================================================
+		owner = owner_p;
 		setOpaque(true);
 		setBackground(Aaa.bidTableBkColor);
 		this.deal = deal;
 		this.floating = floating;
 		addMouseMotionListener(this);
 	}
+
+	public void displayFinalAnotation(boolean showIt) {
+
+		if (showIt) {
+			if (anotationAssistTimer.isRunning() == false) {
+				anotationAssistTimer.start();
+			}
+		}
+		else {
+			lastBidAlertDisplay = false;
+		}
+	}
+
+	/**
+	*/
+	public Timer anotationAssistTimer = new Timer(50, new ActionListener() {
+		public void actionPerformed(ActionEvent evt) {
+			// =============================================================
+			anotationAssistTimer.stop();
+			anotationAssistTimer.setDelay(50);
+			lastBidAlertDisplay = true;
+			// System.out.println(" set lastBidAlertDisplay ON");
+			invalidate();
+		}
+	});
 
 	/**   
 	 */
@@ -253,11 +320,14 @@ class BidTablePanel2 extends ClickPanel implements MouseListener, MouseMotionLis
 
 	public void mouseEntered(MouseEvent e) {
 		// ==============================================================================================
+		lastBidAlertDisplay = false;
 	}
 
 	public void mouseExited(MouseEvent e) {
 		// ==============================================================================================
 //		System.out.println("MouseExited");
+		lastBidAlertDisplay = false;
+
 		Dir dealer = deal.dealer;
 		int rounds;
 		if (App.isMode(Aaa.REVIEW_BIDDING)) {
@@ -293,20 +363,24 @@ class BidTablePanel2 extends ClickPanel implements MouseListener, MouseMotionLis
 	}
 
 	public void mousePressed(MouseEvent e) {
+		lastBidAlertDisplay = false;
 	}
 
 	public void mouseReleased(MouseEvent e) {
+		lastBidAlertDisplay = false;
 	}
 
 	public void mouseClicked(MouseEvent e) {
-		App.gbp.biddingDisplayToggle();
+		lastBidAlertDisplay = false;
 	}
 
 	public void mouseDragged(MouseEvent e) {
+		lastBidAlertDisplay = false;
 	}
 
 	public void mouseMoved(MouseEvent e) {
 		// System.out.println("Mousemoved");
+		lastBidAlertDisplay = false;
 
 		Point ep = e.getPoint();
 
@@ -365,6 +439,7 @@ class BidTablePanel2 extends ClickPanel implements MouseListener, MouseMotionLis
 	/**
 	 */
 	public void paintComponent(Graphics g) {
+		// ==============================================================================================
 		super.paintComponent(g);
 
 		Graphics2D g2 = (Graphics2D) g;
@@ -382,11 +457,15 @@ class BidTablePanel2 extends ClickPanel implements MouseListener, MouseMotionLis
 
 		Dir dealer = deal.dealer;
 		int rounds;
+		int countBids = 0;
 		if (App.isMode(Aaa.REVIEW_BIDDING)) {
 			rounds = App.gbp.c1_1__bfdp.bidA[dealer.v].size();
+			countBids = App.gbp.c1_1__bfdp.bidA[0].size() + App.gbp.c1_1__bfdp.bidA[1].size() + App.gbp.c1_1__bfdp.bidA[2].size()
+					+ App.gbp.c1_1__bfdp.bidA[3].size();
 		}
 		else {
 			rounds = deal.hands[dealer.v].bids.size();
+			countBids = deal.countBids();
 		}
 
 		boolean qmShowing = deal.showBidQuestionMark;
@@ -395,21 +474,34 @@ class BidTablePanel2 extends ClickPanel implements MouseListener, MouseMotionLis
 			rounds++;
 		}
 
-		float lineHeight = widthScroller * singleLineHeightAsRatioOfWidth * 4 / deal.columnsInBidTable;
+		float lineHeight = (widthScroller * singleLineHeightAsRatioOfWidth * 4) / deal.columnsInBidTable;
 
-		float sep = widthScroller / 4.1f;
+		float sep = widthScroller / 3.9f;
 		x = 0;
 		y = 0;
 
 		Font cardFaceFont = BridgeFonts.faceAndSymbFont.deriveFont(lineHeight * 0.80f);
 		Font suitSymbolsFont = BridgeFonts.faceAndSymbFont.deriveFont(lineHeight * 0.80f);
 		Font stdTextFont = BridgeFonts.bridgeLightFont.deriveFont(lineHeight * 0.6f);
+		Font alertFont = BridgeFonts.bridgeBoldFont.deriveFont(lineHeight * 0.75f);
+		Font alertSymbolsFont = BridgeFonts.faceAndSymbFont.deriveFont(lineHeight * 0.75f);
 		Font doubleRedoubleFont = BridgeFonts.bridgeBoldFont.deriveFont(lineHeight * 0.75f);
 
 		int cell = ((4 + dealer.v - App.cpeFromPhyScreenPos(Dir.West).v) % 4) - 1;
 
+		if (cell == 0 /*1st column*/&& rounds >= 5 && (countBids % 4 == 0)) {
+			// we are trying to fix the case where the last bid should be displayed in an extended table but is ignored
+			rounds++;
+		}
+
+		int bidCount = 0;
+		Bid lastBid = null;
+
+		// lastBidAlertDisplay = false; // now set externally when we enter tutorial mode
+
 		for (int r = 0; r < rounds; r++) {
 			for (Dir p : Dir.rota[dealer.v]) {
+				cell++; // so we are on zero if west
 				Bal bids;
 				if (floating) {
 					bids = deal.hands[p.v].bids;
@@ -421,16 +513,19 @@ class BidTablePanel2 extends ClickPanel implements MouseListener, MouseMotionLis
 					bids = deal.hands[p.v].bids;
 				}
 
+				bidCount += bids.size();
+
 				if (qmShowing && (p == dirNextToBid)) {
 					bids = (Bal) bids.clone(); // so we don't mess up the original
 					bids.add(new Bid(Call.NullBid)); // will show as a Question mark
 				}
 
-//				Hand hand = deal.hands[i];
-				cell++;
 				if (bids.size() == r)
 					break;
+
 				Bid bid = bids.get(r);
+				lastBid = bid;
+
 				x = (cell % 4) * sep;
 				y = lineHeight * (1 + cell / 4) - (lineHeight * 0.2f);
 
@@ -453,27 +548,15 @@ class BidTablePanel2 extends ClickPanel implements MouseListener, MouseMotionLis
 						float topBorder = height * 0.07f;
 						float botBorder = height * 0.07f;
 						height = height - topBorder - botBorder;
-						g2.setPaint(bid.alertText.isEmpty() ? Aaa.bidEmpAlertColor : Aaa.bidAlertColor);
 						bid.rr2dBid = new RoundRectangle2D.Float(x + leftBorder, yB, width, height, curve, curve);
-						g2.fill(bid.rr2dBid);
-
-						if (bid.hover && bid.alert && bid.alertText.isEmpty() == false) {
-							g2.setFont(stdTextFont);
-							FontMetrics fm = g2.getFontMetrics();
-							int strWidth = fm.stringWidth(bid.alertText + "a");
-							float xA = 0;
-							if (cell % 4 == 3) {
-								xA = 4 * sep * 0.95f - strWidth;
-							}
-							else if (cell % 4 > 0)
-								xA = 2 * sep - strWidth / 2;
-
-							float yA = yB - lineHeight * 0.1f;
-							if (cell > 16)
-								yA = yB - lineHeight * 2 + lineHeight * 0.1f;
-
-							bid.rr2dAlertText = new RoundRectangle2D.Float(xA + leftBorder, yA + lineHeight, strWidth, height, curve * 2, curve * 2);
+						if (bid.alertText.isEmpty() == false) {
+							g2.setPaint(Aaa.bidAlertHasTxtColor);
+							g2.fill(bid.rr2dBid);
 						}
+						// outline the actual alert box
+						g2.setColor(Cc.RedStrong);
+						g2.setStroke(new BasicStroke(lineHeight * 0.06f));
+						g2.draw(bid.rr2dBid);
 					}
 
 					if (bid.isPass()) {
@@ -508,19 +591,25 @@ class BidTablePanel2 extends ClickPanel implements MouseListener, MouseMotionLis
 				}
 			}
 		}
+
+		if (bidCount != previousBidCount) {
+			lastBidAlertDisplay = true;
+			previousBidCount = bidCount;
+		}
+
 		int activeLines = (cell + 3) / 4;
 		int wantedHeight = (int) (0.5f + activeLines * lineHeight);
 
 		if (reportedHeight > 0 && requestedHeight != wantedHeight) {
 			requestedHeight = wantedHeight;
-			// System.out.println( wantedHeight);
 			setPreferredSize(new Dimension(getWidth(), wantedHeight));
+			owner.biddingTableHasExpanded_ind();
 			revalidate();
 		}
 
 		reportedHeight = wantedHeight;
 
-		// second parse for the annotations
+		// second parse for the annotations / alerts
 
 		cell = ((4 + dealer.v - App.cpeFromPhyScreenPos(Dir.West).v) % 4) - 1;
 
@@ -534,27 +623,183 @@ class BidTablePanel2 extends ClickPanel implements MouseListener, MouseMotionLis
 					bids = deal.hands[p.v].bids;
 				}
 
-				if (qmShowing && (p == dirNextToBid)) {
-					bids = (Bal) bids.clone(); // so we don't mess up the original
-					bids.add(new Bid(Call.NullBid)); // will show as a Question mark
-				}
-
-//				Hand hand = deal.hands[p.v];
 				cell++;
 				if (bids.size() == r)
 					break;
 				Bid bid = bids.get(r);
 
-				if (bid.hover && bid.rr2dAlertText != null && bid.alert && bid.alertText.isEmpty() == false) {
-					g2.setFont(stdTextFont);
-					g2.setColor(Aaa.bubbleAnotateCol);
-					g2.fill(bid.rr2dAlertText);
-					g2.setColor(Color.black);
-					Aaa.drawCenteredString(g2, bid.alertText, bid.rr2dAlertText.x, bid.rr2dAlertText.y, bid.rr2dAlertText.width, bid.rr2dAlertText.height);
+				if ((bid.rr2dBid == null || (!bid.hover && !(this.lastBidAlertDisplay && (bid == lastBid))) || bid.alertText.isEmpty())) {
+					continue;
 				}
+
+				// we have alert text to display
+
+				// first outline the select alert box
+				{
+					float pc = 0.05f;
+					float ax = bid.rr2dBid.width * pc, ax2 = ax * 2f;
+					float ay = bid.rr2dBid.height * pc * 2f, ay2 = ay * 2f;
+					RoundRectangle2D.Float rbigger = new RoundRectangle2D.Float(bid.rr2dBid.x - ax, bid.rr2dBid.y - ay, bid.rr2dBid.width + ax2,
+							bid.rr2dBid.height + ay2, bid.rr2dBid.arcwidth, bid.rr2dBid.archeight);
+
+					g2.setColor(Aaa.bidAlertBubbleCol);
+					g2.setStroke(new BasicStroke(lineHeight * 0.30f));
+					g2.draw(rbigger);
+
+					// replace the alert box that has just been overwritten
+
+					g2.setColor(Cc.RedStrong);
+					g2.setStroke(new BasicStroke(lineHeight * 0.055f));
+					g2.draw(bid.rr2dBid);
+				}
+
+				String sIn = bid.alertText;
+				sIn = sIn.trim();
+				String sTemp = sIn.replace("@", "");
+				if (sTemp.length() <= 7) {
+					if (sTemp.length() < 3) {
+						sIn = "     " + sIn + "     ";
+					}
+					else if (sTemp.length() < 4) {
+						sIn = "   " + sIn + "   ";
+					}
+					else if (sTemp.length() < 5) {
+						sIn = "  " + sIn + "  ";
+					}
+					else
+						sIn = " " + sIn + " ";
+				}
+				String sPs = sIn.replace("@", "");
+				AttributedString astr = new AttributedString(sPs);
+
+				astr.addAttribute(TextAttribute.FONT, alertFont);
+
+				boolean prevWasAt = false;
+				for (int i = 0, j = 0; i < sIn.length(); i++) {
+					char c = sIn.charAt(i);
+					if (c == '@') {
+						prevWasAt = true;
+						continue;
+					}
+					j++;
+					if (prevWasAt == false)
+						continue;
+					prevWasAt = false;
+
+					Suit suit = Suit.charToSuit(c);
+					if (suit == Suit.Invalid)
+						continue;
+
+					astr.addAttribute(TextAttribute.FONT, alertSymbolsFont, j - 1, j);
+					astr.addAttribute(TextAttribute.FOREGROUND, suit.color(Cc.Ce.Strong), j - 1, j);
+				}
+
+				float curve = bid.rr2dBid.height * 0.20f;
+
+				float leftBorder = widthScroller * 0.02f;
+				float rightBorder = widthScroller * 0.01f;
+				float widthMaxLozengeWidth = widthScroller - (leftBorder + rightBorder);
+				float singleLozengeHeight = lineHeight * 1.3f;
+
+				float widthMaxDisplay = widthMaxLozengeWidth - (leftBorder + rightBorder); // yes again
+
+				float xA = 0;
+
+				float yA = 0;
+				float yB = 0;
+
+				RoundRectangle2D.Float rr2d;
+
+				AttributedCharacterIterator para = astr.getIterator();
+				int paragraphStart = para.getBeginIndex();
+				int paragraphEnd = para.getEndIndex();
+
+				LineBreakMeasurer lineMeasurer = new LineBreakMeasurer(para, g2.getFontRenderContext());
+
+				lineMeasurer.setPosition(paragraphStart);
+
+				TextLayout layout = lineMeasurer.nextLayout(widthMaxDisplay);
+
+				if (lineMeasurer.getPosition() == paragraphEnd) {
+
+					yB = lineHeight * ((1 + cell / 4) - 1) + (lineHeight * 0.08f);
+					yA = yB - lineHeight * 0.1f;
+
+					float textWidth = layout.getAdvance() + widthMaxDisplay * 0.03f;
+					if (textWidth > widthMaxDisplay)
+						textWidth = widthMaxDisplay;
+
+					yA = yB - lineHeight * 0.2f;
+
+					if (cell >= 16)
+						yA = yB - (2 * singleLozengeHeight) + lineHeight * 0.3f;
+
+					// X position Where ?
+					int column = cell % 4;
+					switch (column) {
+					case 0:
+						// in first column need need do nothing more
+						break;
+
+					case 1:
+						// in 2nd column
+						if (bid.rr2dBid.x + textWidth + 2 * rightBorder < widthMaxDisplay)
+							xA = bid.rr2dBid.x - 4 * leftBorder;
+						// otherwise leave on the right
+						break;
+
+					case 2:
+						// in third column
+						if ((widthMaxDisplay - bid.rr2dBid.x - 4 * leftBorder) > textWidth) {
+							xA = bid.rr2dBid.x - 4 * leftBorder;
+							break;
+						}
+						// fall through int the end column case
+
+					case 3:
+						// we are in the last column so move all the the right margin
+						xA = widthMaxDisplay - (textWidth + rightBorder);
+						break;
+					}
+
+					rr2d = new RoundRectangle2D.Float(xA + leftBorder, yA + lineHeight, textWidth + 2 * rightBorder, singleLozengeHeight, curve * 2, curve * 2);
+
+					g2.setColor(Aaa.bidAlertBubbleCol);
+					g2.fill(rr2d);
+					g2.setColor(Color.black);
+
+					layout.draw(g2, rr2d.x + leftBorder, rr2d.y + rr2d.height * 0.7f);
+				}
+				else {
+					// we are a multi line alert but we only show two of them
+
+					yB = lineHeight * ((1 + cell / 4) - 1) - (lineHeight * 0.02f);
+					yA = yB - lineHeight * 0.1f;
+
+					float textWidth = widthMaxDisplay;
+
+					if (cell >= 12)
+						yA = yB - (3 * singleLozengeHeight) + lineHeight * 0.8f;
+
+					rr2d = new RoundRectangle2D.Float(xA + leftBorder, yA + lineHeight, textWidth + 2 * rightBorder, singleLozengeHeight * 1.7f, curve * 2,
+							curve * 2);
+
+					g2.setColor(Aaa.bidAlertBubbleCol);
+					g2.fill(rr2d);
+					g2.setColor(Color.black);
+
+					layout.draw(g2, rr2d.x + leftBorder, rr2d.y + rr2d.height * 0.4f);
+
+					layout = lineMeasurer.nextLayout(widthMaxDisplay);
+
+					layout.draw(g2, rr2d.x + leftBorder, rr2d.y + rr2d.height * 0.85f);
+				}
+
+//				TextLayout layout = new TextLayout(astr.getIterator(), g2.getFontRenderContext());
 
 			}
 		}
+
 	}
 
 }

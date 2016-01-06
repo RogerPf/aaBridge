@@ -10,13 +10,13 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.view;
 
-import java.awt.SystemColor;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
 import javax.swing.BorderFactory;
+import javax.swing.ButtonGroup;
 import javax.swing.border.Border;
 
 import net.miginfocom.swing.MigLayout;
@@ -34,18 +34,21 @@ class AaRopPrefs7_ShowBtns extends ClickPanel implements ItemListener, ActionLis
 
 	QCheckBox showPoints;
 	QCheckBox showLTC;
+//	QCheckBox showOldTextGray;
 	QCheckBox showSaveBtns;
-	QCheckBox showDepFinBtns;
-	QCheckBox showEdPyCmdBarBtns;
 	QCheckBox showShfWkPlBtn;
 	QCheckBox showRotationBtns;
 	QCheckBox showClaimBtn;
 
+	ButtonGroup mwGrp = new ButtonGroup();
+
 	QButton resetAllPrefs;
+
+	QButton rpfChoices;
 
 	public AaRopPrefs7_ShowBtns() {
 		setOpaque(true); // remember - we derive from ClickPanel which is setOpaque(false)
-		setBackground(SystemColor.control);
+//		setBackground(SystemColor.control);
 
 		setLayout(new MigLayout(App.simple + ", flowy"));
 
@@ -53,7 +56,7 @@ class AaRopPrefs7_ShowBtns extends ClickPanel implements ItemListener, ActionLis
 //		Border bdr0 = BorderFactory.createEmptyBorder(0, 0, 0, 0);
 
 		// @formatter:off
-		add(anyLabel  = new QLabel("Show  -  Optional Buttons etc"), "gapy 5");
+		add(anyLabel  = new QLabel("  Show                      -  Optional Buttons etc"), "gapy 5");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
 
 		add(anyLabel = new QLabel("Buttons - Show the . . ."), "gapy 10");
@@ -61,11 +64,7 @@ class AaRopPrefs7_ShowBtns extends ClickPanel implements ItemListener, ActionLis
 //		if (App.FLAG_canSave == true) {
 		add(showSaveBtns        = new QCheckBox(this, App.showSaveBtns,       "'Save As' button  "), "gapy 3");
 		    showSaveBtns.setBorder(bdr4);
-		add(showDepFinBtns      = new QCheckBox(this, App.showDepFinBtns,     "DeepFinesse - Export and Import buttons.   They use the file  -   " + App.depFinOutInBoth + "  "));
-			showDepFinBtns.setBorder(bdr4);
 //		}
-		add(showEdPyCmdBarBtns  = new QCheckBox(this, App.showEdPyCmdBarBtns, "'Edit' & 'Play' CmdBar buttons   -  these let you   Enter the Deal   quickly it that mode  "));
-		showEdPyCmdBarBtns.setBorder(bdr4);
 		add(showShfWkPlBtn      = new QCheckBox(this, App.showShfWkPlBtn,     "'Shuf Op' button  -  show  the   Shuf Op - 'Shuffle Weakest Pair and enter Play' button, most of the time "));
 	    showShfWkPlBtn.setBorder(bdr4);
 		add(showRotationBtns    = new QCheckBox(this, App.showRotationBtns,   "'Clockwise and Anti-clockwise' rotation buttons  "));
@@ -79,23 +78,60 @@ class AaRopPrefs7_ShowBtns extends ClickPanel implements ItemListener, ActionLis
 		    showPoints.setBorder(bdr4);
 		add(showLTC             = new QCheckBox(this, App.showLTC,            "Losing Trick Count - See Wikipedia - Losing Trick Count with refinements  "));
 		    showLTC.setBorder(bdr4);
+//		add(showOldTextGray     = new QCheckBox(this, App.showOldTextGray,    "Gray out old text     -    Some movies themselves turn off the   Gray out   feature"), "gapy 10");
+//		    showOldTextGray.setBorder(bdr4);
 
-
-		add(anyLabel  = new QLabel("Reset ALL Options to the default"), "gapy 15");
+		    		
+		add(anyLabel  = new QLabel("Reset ALL Options to the default"), "gapy 25");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
-		add(resetAllPrefs = new QButton(this, "Reset & Close"), "gapx12");
+		add(resetAllPrefs = new QButton(this, "Reset & Close"), "gapx4");
+		if (App.onMac == false)
 		    resetAllPrefs.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
+		 
+		if (App.devMode) {
+			add(rpfChoices = new QButton(this, "RPf Choices"), "gapy20, gapx4");
+			if (App.onMac == false)
+			    rpfChoices.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
+		}
+			    
 		// @formatter:on
 	}
 
 	public void actionPerformed(ActionEvent e) {
 
-		if ("Reset & Close".equals(e.getActionCommand())) {
-			if (App.allConstructionComplete) {
-				App.SetOptionsToDefaultAndClose();
-				// it never comes back !!
-			}
+		Object source = e.getSource();
+
+		if (source == resetAllPrefs) {
+			App.SetOptionsToDefaultAndClose();
+			// it never comes back !!
 		}
+		if (source == rpfChoices) {
+
+			App.showPoints = true;
+
+//			App.showOldTextGray = true;
+
+			App.showMouseWheelSplash = false;
+			App.showRedNewBoardArrow = false;
+			App.showRedVuGraphArrow = false;
+			App.showRedEditArrow = false;
+			App.showRedDividerArrow = false;
+
+			App.showDfcExamHlt = false;
+			App.showBidPlayMsgs = false;
+
+			App.tutorialDealSize = 0;
+
+			App.watchBidding = false;
+
+			App.dfcAutoNext = 0; // fast/
+
+			App.realSavesPath = "C:\\a\\";
+
+			App.savePreferences();
+			System.exit(0); // SHUTS DOWN aaBridge NOW
+		}
+
 	}
 
 	/** This listens for the check box changed event */
@@ -113,17 +149,12 @@ class AaRopPrefs7_ShowBtns extends ClickPanel implements ItemListener, ActionLis
 		else if (source == showLTC) {
 	        App.showLTC = b;
 		}
+//		else if (source == showOldTextGray) {
+//	        App.showOldTextGray = b;
+//		}
 		else if (source == showSaveBtns) {
 		    App.showSaveBtns = b;
 		    App.implement_showSaveBtns();
-		}
-		else if (source == showDepFinBtns) {
-		    App.showDepFinBtns = b;
-		    App.implement_showDepFinBtns();
-		}
-		else if (source == showEdPyCmdBarBtns) {
-		    App.showEdPyCmdBarBtns = b;
-		    App.calcApplyBarVisiblity();
 		}
 		else if (source == showShfWkPlBtn) {
             App.showShfWkPlBtn = b;
@@ -141,8 +172,6 @@ class AaRopPrefs7_ShowBtns extends ClickPanel implements ItemListener, ActionLis
 		if (b == false) {
 			; // do nothing
 		}
-		
-
 
 		if (App.allConstructionComplete) {
 			App.savePreferences();

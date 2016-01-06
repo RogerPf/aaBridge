@@ -142,6 +142,7 @@ public class BidsFourDisplayPanel extends JPanel {
 
 		Graphics2D g2 = (Graphics2D) g;
 		Aaa.commonGraphicsSettings(g2);
+		FontRenderContext frc = g2.getFontRenderContext();
 
 		Dimension panelSize = getSize();
 
@@ -194,7 +195,6 @@ public class BidsFourDisplayPanel extends JPanel {
 			// at.addAttribute(TextAttribute.FOREGROUND, Aaa.weedyBlack, 0, t.length());
 			at.addAttribute(TextAttribute.FONT, bf, 0, 1 + ctLen);
 			at.addAttribute(TextAttribute.FOREGROUND, App.deal.contract.suit.color(Cc.Ce.Strong), 1, 1 + ctLen);
-			FontRenderContext frc = g2.getFontRenderContext();
 			TextLayout tl = new TextLayout(at.getIterator(), frc);
 
 			tl.draw(g2, marginLeft + activityWidth * 0.12f, marginTop + activityHeight * 0.45f);
@@ -241,7 +241,7 @@ public class BidsFourDisplayPanel extends JPanel {
 
 		// ------------------------------------------------------------------
 
-		float boarderLeft = cardWidth * 0.12f;
+//		float boarderLeft = cardWidth * 0.12f;
 		float boarderInLeft = cardWidth * 0.44f;
 		float symbolBoarderBot = cardHeight * 0.20f;
 		float levelBoarderBot = cardHeight * 0.20f;
@@ -266,7 +266,8 @@ public class BidsFourDisplayPanel extends JPanel {
 
 		Dir startCompass = nextToBid.compass.rotate(1);
 
-		Boolean showQm = App.deal.showBidQuestionMark;
+		Boolean showQm = App.deal.showBidQuestionMark || !App.deal.showBidQuestionMark && App.isLin__FullMovie() && App.mg.isEndAQuestion()
+				&& !App.deal.dfcDeal;
 
 		for (int i : Zzz.zto3) {
 
@@ -285,19 +286,15 @@ public class BidsFourDisplayPanel extends JPanel {
 			float left = marginLeft + activityWidth * leftTopPercent[phyPos.v].x;
 			float top = marginTop + activityHeight * leftTopPercent[phyPos.v].y;
 
-//			float lineY = top + cardHeight;
-
-			float levelLeft = left + boarderLeft;
 			float levelBottom = top + cardHeight - levelBoarderBot;
 
 			float symbolLeft = left + boarderInLeft;
 			float symbolBottom = top + cardHeight - symbolBoarderBot;
 
-			float alertLeft = left + boarderInLeft + (boarderInLeft - boarderLeft) * 1.01f;
-			float alertBottom = top + cardHeight - levelBoarderBot;
-
 			if (i < 3) {
 				if (bids.isEmpty())
+					continue;
+				if ((i == 0) && showQm)
 					continue;
 				bid = bids.getLast(); // get their last bid
 				level = bid.level;
@@ -306,9 +303,6 @@ public class BidsFourDisplayPanel extends JPanel {
 			}
 			else if (i == 3 && App.isMode(Aaa.REVIEW_BIDDING)) {
 				continue;
-			}
-			else if (i == 3 && App.isLin__FullMovie() && App.deal.showBidQuestionMark == false && App.mg.isEndAQuestion() && !App.deal.dfcDeal) {
-				showQm = true;
 			}
 			else if (App.isAutoBid(hand.compass) == false) {
 				level = App.gbp.c2_2__bbp.getHalfBidLevel();
@@ -319,7 +313,7 @@ public class BidsFourDisplayPanel extends JPanel {
 				// ----------------------------------------------
 				RoundRectangle2D.Float rr = new RoundRectangle2D.Float(left, top, cardWidth, cardHeight, curve, curve);
 				if (App.isVmode_InsideADeal()) {
-					float dash[] = { 0.01f * cardWidth, 0.05f * cardWidth };
+					float dash[] = { 0.04f * cardWidth, 0.05f * cardWidth };
 					g2.setStroke(new BasicStroke(blackLineWidth, BasicStroke.CAP_BUTT, BasicStroke.JOIN_MITER, 2.0f, dash, 2.0f));
 					g2.setColor(Color.BLACK);
 					g2.draw(rr);
@@ -328,63 +322,96 @@ public class BidsFourDisplayPanel extends JPanel {
 
 			// fill the lozenge ----------------------------------------------
 
-			float alertAdjust = 0;
-			if (alert) {
-				alertAdjust = -0.1f;
+			if (i == 3 && showQm) { // special case ? required
+				g2.setColor(Cc.SuitColor(Suit.NoTrumps, Cc.Ce.Strong));
+				g2.setFont(qmFont);
+				float eastAdjust = (phyPos == Dir.East) ? 0.2f : 0.0f;
+				g2.drawString("?", symbolLeft - cardWidth * (0.15f - eastAdjust), symbolBottom);
+				continue;
 			}
 
 			Cc.Ce strength[] = { Cc.Ce.Weak, Cc.Ce.Weak, Cc.Ce.Strong, Cc.Ce.Strong };
 
+			String sLevel = "";
+			String sBid = "";
+			String sAlert = (alert) ? "!" : "";
+			Color levelColor = Cc.SuitColor(Suit.NoTrumps, strength[i]);
+			Font bidFont = null;
+			Color bidColor = null;
+
 			if (bid != null && bid.isCall()) {
-				Color callColor = Cc.SuitColor(Suit.NoTrumps, strength[i]);
-				g2.setColor(callColor);
+				sBid = bid.call.toString();
+				bidColor = Cc.SuitColor(Suit.NoTrumps, strength[i]);
+
 				if (bid.isPass()) {
-					g2.setFont(passFont);
-					g2.drawString(bid.call.toString(), left + cardWidth * (0.1f + alertAdjust), levelBottom);
+					bidFont = passFont;
 				}
 				else if (bid.isDouble()) {
-					g2.setFont(doubleFont);
-					g2.drawString(bid.call.toString(), left + cardWidth * (0.1f + alertAdjust), levelBottom);
+					bidFont = doubleFont;
 				}
 				else if (bid.isReDouble()) {
-					g2.setFont(redoubleFont);
-					g2.drawString(bid.call.toString(), left - /* cardWidth */0.1f, levelBottom);
+					bidFont = redoubleFont;
 				}
 			}
 			else {
 
 				// Level Value
 				if (level != Level.Invalid) {
-					Color levelColor = Cc.SuitColor(Suit.NoTrumps, strength[i]);
-					g2.setColor(levelColor);
-
-					g2.setFont(levelFont);
-					g2.drawString(level.toStr(), levelLeft + cardWidth * alertAdjust, levelBottom);
+					sLevel = level.toStr();
 				}
 
 				// Suit Value
 				if ((suit != Suit.Invalid) && (Suit.Clubs.v <= suit.v) && (suit.v <= Suit.NoTrumps.v)) {
 
-					Color cardColor = Cc.SuitColor((i != 0 ? suit : Suit.NoTrumps), strength[i]);
+					bidColor = Cc.SuitColor((i != 0 ? suit : Suit.NoTrumps), strength[i]);
+					sBid = suit.toStrNu();
+					bidFont = symbolFont;
 
-					g2.setColor(cardColor);
-					g2.setFont(symbolFont);
-					g2.drawString(suit.toStrNu(), symbolLeft + cardWidth * alertAdjust, symbolBottom);
 				}
 			}
 
-			// Aert
+			if (sLevel.length() + sBid.length() == 0)
+				continue;
+
+			String sAll = sLevel + sBid + sAlert;
+			AttributedString astr = new AttributedString(sAll);
+
+			astr.addAttribute(TextAttribute.FONT, levelFont);
+			astr.addAttribute(TextAttribute.FOREGROUND, levelColor);
+			int pos = sLevel.length();
+			int posNext = pos + sBid.length();
+			if (bidFont != null) {
+				astr.addAttribute(TextAttribute.FONT, bidFont, pos, posNext);
+				astr.addAttribute(TextAttribute.FOREGROUND, bidColor, pos, posNext);
+			}
 			if (alert) {
-				g2.setColor(Cc.SuitColor(Suit.Hearts, strength[i])); // as Hearts are always red
-				g2.setFont(alertFont);
-				g2.drawString("!", alertLeft, alertBottom);
+				Color alertColor = Cc.SuitColor(Suit.Hearts, strength[i]);
+				pos = posNext;
+				posNext += sAlert.length();
+				astr.addAttribute(TextAttribute.FONT, alertFont, pos, posNext);
+				astr.addAttribute(TextAttribute.FOREGROUND, alertColor, pos, posNext);
 			}
 
-			if (i == 3 && showQm) {
-				g2.setColor(Cc.SuitColor(Suit.NoTrumps, Cc.Ce.Strong));
-				g2.setFont(qmFont);
-				g2.drawString("?", symbolLeft - cardWidth * 0.15f, symbolBottom);
+			// This adjustment is purely because that is the way I like to see them :)
+			//
+			float adjust = 0.10f;
+
+			if ((phyPos != Dir.West) && (bid != null && (bid.isPass() || bid.isReDouble()))) {
+				adjust = 0.0f;
 			}
+			else if ((phyPos == Dir.North || phyPos == Dir.South) && (bid != null && (bid.suit == Suit.NoTrumps))) {
+				adjust = 0.05f;
+			}
+			else if ((phyPos == Dir.East) && (bid != null && bid.isValidBid())) {
+				adjust = 0.21f;
+			}
+
+			TextLayout tl = new TextLayout(astr.getIterator(), frc);
+			float x = left + cardWidth * adjust;
+			float y = levelBottom;
+
+			tl.draw(g2, x, y);
+
 		}
 	}
 }

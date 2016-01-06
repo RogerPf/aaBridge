@@ -11,7 +11,11 @@
 package com.rogerpf.aabridge.controller;
 
 import java.awt.Dimension;
+import java.awt.GraphicsConfiguration;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
 import java.awt.KeyEventDispatcher;
+import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -21,15 +25,16 @@ import java.io.File;
 import javax.swing.Timer;
 
 import com.rogerpf.aabridge.controller.Book.LinChapter;
+import com.rogerpf.aabridge.dds.Z_ddsCalculate;
 import com.rogerpf.aabridge.igf.MassGi_utils;
 import com.rogerpf.aabridge.model.Bid;
 import com.rogerpf.aabridge.model.Call;
 import com.rogerpf.aabridge.model.Card;
 import com.rogerpf.aabridge.model.Cc;
+import com.rogerpf.aabridge.model.Deal;
 import com.rogerpf.aabridge.model.Deal.DumbAutoDirectives;
 import com.rogerpf.aabridge.model.Dir;
 import com.rogerpf.aabridge.model.Hand;
-import com.version.VersionAndBuilt;
 
 /**   
  */
@@ -43,48 +48,54 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 
 	/**
 	 * This ia a logical 'constructor' except that is does not happen until all
-	 * the initial views are constructed and ready to be "controled"
+	 * the initial views are constructed and ready to be "controlled"
 	 */
 	public Timer postContructionInitTimer = new Timer(100, new ActionListener() {
 		public void actionPerformed(ActionEvent evt) {
 			// =============================================================================
 			postContructionInitTimer.stop();
 
-			if (App.runTestsAtStartUp && App.devMode) {
-				CmdHandler.runTests();
-			}
+//			if (App.runTestsAtStartUp && App.devMode) {
+//				CmdHandler.runTests();
+//			}
+
+			App.mruCollection.loadCollection();
 
 			boolean chapterLoaded = false;
 			boolean keepTrying = true;
 
 			// Is there a file on the command line - as used by windows file associations
 			if (App.args != null && App.args.length >= 1 && App.args[0] != null && !App.args[0].isEmpty()) {
-				File file = BridgeLoader.copyFileToAutoSavesFolderIfLinFileExists(App.args[0]);
+				File fileAlt = BridgeLoader.copyFileToAutoSavesFolderIfLinFileExists(App.args[0]); // so we keep a temp copy of downloaded files for the user
+				File file = new File(App.args[0]);
 				if (file != null) {
 					File fAy[] = { file };
 					chapterLoaded = BridgeLoader.processDroppedList(fAy);
+				}
+				if ((chapterLoaded == false) && (fileAlt != null)) {
+					File fAyAlt[] = { fileAlt };
+					chapterLoaded = BridgeLoader.processDroppedList(fAyAlt);
 				}
 				keepTrying = !chapterLoaded; // the user will be expecting her/his file to load so we should not do something else ?
 			}
 
 			// Is there a (dev mode) linFile we want to start with
 			//
+			boolean dev_tweekAfterLoad = false;
+
 			if (App.devMode && (chapterLoaded == false) && keepTrying) {
 				String dealName = "";
 
-//				App.lbx_modeExam = true; // testing only
 //				dealName = "Distr Flash Cards"'
+//				App.lbx_modeExam = true; // testing only
 
-//				dealName = "weaktwobids";
-//				dealName = "mentoring1406a2";
-//				dealName = "book into jar";
-//				dealName = "Make Claim";
-//				dealName = "Play Card";
-//				dealName = "Table Conceal";
-//				dealName = "Speech bubble";
-//				dealName = "LinesZonesFonts";
-//				dealName = "mentoring 2013 06c";
-//				dealName = "bergenhandevaluation";
+//				dealName = "NetVu_compat_Grid";
+//				dev_tweekAfterLoad = true;
+
+//				dealName = "single_file_in_folder"; // =============== <<<<<<<<<<<<<<<<<<<<
+
+//				dealName = "Demo 2814";
+//				dev_tweekAfterLoad = true;
 
 				if (dealName.length() > 0) {
 					for (Bookshelf shelf : App.bookshelfArray) {
@@ -98,6 +109,15 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 					}
 					keepTrying = false;// the DEV user (you) will be expecting her/his file to load so we should not do something else ?
 				}
+				if (dev_tweekAfterLoad && chapterLoaded) {
+//					App.mg.jump_to_pg_number_display(10 + 1);
+//					CmdHandler.tutorialIntoDealClever();
+//					CmdHandler.leftWingEdit();
+//					CmdHandler.editPlayWipe();
+//					if (App.ddsScoreShow == false)
+//						CmdHandler.ddsScoreOnOff();
+//					CmdHandler.ddsAnalyse();
+				}
 			}
 
 			/**
@@ -107,10 +127,6 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 			if (chapterLoaded == false && keepTrying) {
 				ShowHelpAndWelcome();
 			}
-
-//			if (App.devMode) {
-//				CmdHandler.mainNewBoard();
-//			}
 
 			App.frame.splitPaneHorz.setDividerLocation(App.horzDividerLocation);
 			App.frame.splitPaneVert.setDividerLocation(App.vertDividerLocation);
@@ -127,15 +143,46 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 			App.frame.invalidate();
 
 			App.frame.setMinimumSize(new Dimension(300, 200));
-			App.frame.setSize(App.frameWidth, App.frameHeight);
+
+			// make sure the aaBridge app window will show on a physical screen
+			{
+				int sideMinOverlap = 100;
+				boolean canBeSeen = false;
+				Rectangle aaBridgeInnerTop = new Rectangle(App.frameLocationX + sideMinOverlap, App.frameLocationY + 200,
+						App.frameWidth - (2 * sideMinOverlap), 2);
+				Rectangle aaBridgeInnerBot = new Rectangle(App.frameLocationX + sideMinOverlap, App.frameLocationY + 12, App.frameWidth - (2 * sideMinOverlap),
+						2);
+				GraphicsDevice[] gs = GraphicsEnvironment.getLocalGraphicsEnvironment().getScreenDevices();
+				for (int j = 0; j < gs.length; j++) {
+					GraphicsConfiguration[] gc = gs[j].getConfigurations();
+					for (int i = 0; i < gc.length; i++) {
+						Rectangle bounds = gc[i].getBounds();
+						if (bounds.intersects(aaBridgeInnerTop) && bounds.intersects(aaBridgeInnerBot)) {
+							canBeSeen = true;
+							break;
+						}
+					}
+					if (canBeSeen)
+						break;
+				}
+
+				if (canBeSeen == false) {
+					App.frameLocationX = 90;
+					App.frameLocationY = 65;
+					App.frameWidth = 900;
+					App.frameHeight = 650;
+				}
+			}
+
 			App.frame.setLocation(App.frameLocationX, App.frameLocationY);
+			App.frame.setSize(App.frameWidth, App.frameHeight);
 
 			if (App.maximized) {
 				App.frame.setExtendedState(java.awt.Frame.MAXIMIZED_BOTH);
 			}
 
-			if (VersionAndBuilt.hasExpired()) {
-				App.frame.aaDragGlassPane.showExpiredScreen();
+			if (App.showMouseWheelSplash) {
+				App.frame.aaDragGlassPane.showMouseWheelScreen();
 			}
 
 			App.allConstructionComplete = true;
@@ -148,9 +195,10 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 
 			controlerInControl();
 
-			if (App.isVmode_Tutorial()) {
+//			if (App.isVmode_Tutorial()) {
 //				rattleTimer.start();
-			}
+//			}
+
 		}
 	});
 
@@ -192,15 +240,26 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 		App.con.autoBidDelayTimer.stop();
 	}
 
-	public void ShowHelpAndWelcome() {
+	/**
+	 */
+	public static void stopDisplayAndTutorialTimers() {
+		// =============================================================================
+		App.gbp.c1_1__tfdp.normalTrickDisplayTimer.stop();
+		App.gbp.c1_1__tfdp.reviewTrickDisplayTimer.stop();
+		App.gbp.c1_1__bfdp.reviewBidDisplayTimer.stop();
 
+		App.mg.tutorialPlayTimer.stop();
+	}
+
+	public void ShowHelpAndWelcome() {
+		// =============================================================================
 		Book b = App.bookshelfArray.get(0).getBookByFrontNumb(90 /* The Main Welcome & Help */);
 		if (b != null) {
 			boolean chapterLoaded = b.loadChapterByIndex(0);
 			if (chapterLoaded) {
 				App.book = b;
-				App.bookPanel.matchToAppBook();
-				App.bookPanel.showChapterAsSelected(0);
+				App.aaBookPanel.matchToAppBook();
+				App.aaBookPanel.showChapterAsSelected(0);
 			}
 		}
 	}
@@ -416,6 +475,10 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 
 		Card card = hand.dumbAuto(dumbAutoDir);
 
+		if (App.isDDSavailable()) { // Double Dummy
+			card = Z_ddsCalculate.improveDumbPlay(hand, card);
+		}
+
 		App.con.tableTheCard(hand, card);
 	}
 
@@ -424,6 +487,9 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 	public void tableTheCard(Hand curHand, Card playedCard) {
 		// =============================================================================
 		curHand.playCard(playedCard);
+
+		App.ddsDeal = null;
+//		System.out.println("  *  tableTheCard()    App.ddsDeal    set to null");
 
 		if (App.deal.isFinished()) {
 			App.gbp.c1_1__tfdp.setShowCompletedTrick();
@@ -443,6 +509,10 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 		App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
 
 		App.frame.repaint();
+
+		// was RRRRRRR here
+
+		controlerInControl();
 	}
 
 	/**
@@ -465,7 +535,7 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 		// =============================================================================
 		public void actionPerformed(ActionEvent evt) {
 			if (App.frame.isSplashTimerRunning())
-				return; // wait until the splasHskh has cleared
+				return; // wait until the splash has cleared
 			autoBidDelayTimer.stop();
 			autoBidDelayTimer.setInitialDelay(App.bidPluseTimerMs);
 			if (App.deal.isBidding()) {
@@ -493,7 +563,7 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 	public void controlerInControl() {
 		// =============================================================================
 		/** 
-		 * The System can be doing very dfferent things mainly depenting on the type of 
+		 * The System can be doing very different things mainly depending on the type of 
 		 * .lin file (if any) that is currently loaded.  The main indication of what is
 		 * happening is the current  Aaa.visualMode
 		 */
@@ -504,12 +574,13 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 			 * a valid deal in App.deal   
 			 */
 
-			if (App.deal.isDoneHand())
+			if (App.deal.isDoneHand()) {
 				/** 
 				 * nothing should happening we are just waiting for 
 				 *   them to click on - New Deal or load a lin file
 				 */
 				return;
+			}
 
 			if (App.mode == Aaa.NORMAL_ACTIVE) {
 				if (App.deal.isBidding()) {
@@ -517,15 +588,47 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 					return;
 				}
 			}
-		}
 
-//		App.calcApplyBarVisiblity();
+			if (App.haglundsDDSavailable && App.ddsScoreShow) { // RRRRRRR
+
+				if (App.mode == Aaa.NORMAL_ACTIVE) {
+
+					Hand toPlay = App.deal.getNextHandToPlay();
+
+					if (toPlay != null && !App.isAutoPlay(toPlay.compass)) {
+
+						// System.out.println(" *** controllerInControl()  A  -  NORMAL_ACTIVE ");
+
+						Deal clone = App.deal.deepClone();
+						App.ddsDeal = Z_ddsCalculate.scoreCardsInNextHandToPlay(clone);
+					}
+				}
+
+				else if (App.mode == Aaa.EDIT_PLAY && App.deal.isPlaying()) {
+
+					// System.out.println(" *** controllerInControl()  B  -  EDIT_PLAY ");
+
+					Deal clone = App.deal.deepClone();
+					App.ddsDeal = Z_ddsCalculate.scoreCardsInNextHandToPlay(clone);
+				}
+
+				else if (App.mode == Aaa.REVIEW_PLAY && (App.reviewCard != 4) && !App.gbp.c1_1__tfdp.reviewTrickDisplayTimer.isRunning()) {
+
+					// System.out.println(" *** controllerInControl()  C  -  REVIEW_PLAY ");
+
+					Deal clone = App.deal.deepClone();
+					clone.fastUndoBackTo(App.reviewTrick, App.reviewCard, true /* setDdsNextCard */);
+					App.ddsDeal = Z_ddsCalculate.scoreCardsInNextHandToPlay(clone);
+				}
+			}
+			App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
+		}
 
 	}
 
 	public static void loadBookChapter_prev(boolean show_end) {
 		// =============================================================================
-		int i = App.bookPanel.getLoadedChapterIndex();
+		int i = App.aaBookPanel.getLoadedChapterIndex();
 		if (i == -1)
 			return;
 
@@ -543,18 +646,18 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 			}
 
 			if (success) {
-				App.bookPanel.showChapterAsSelected(i);
+				App.aaBookPanel.showChapterAsSelected(i);
 				if (show_end)
 					App.mg.setTheReadPoints_ToEnd();
 				break;
 			}
-			App.bookPanel.showChapterAsBroken(i);
+			App.aaBookPanel.showChapterAsBroken(i);
 		}
 	}
 
 	public static void loadBookChapter_next() {
 		// =============================================================================
-		int i = App.bookPanel.getLoadedChapterIndex();
+		int i = App.aaBookPanel.getLoadedChapterIndex();
 		if (i == -1)
 			return;
 
@@ -574,47 +677,95 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 			}
 
 			if (success) {
-				App.bookPanel.showChapterAsSelected(i);
+				App.aaBookPanel.showChapterAsSelected(i);
 				break;
 			}
-			App.bookPanel.showChapterAsBroken(i);
+			App.aaBookPanel.showChapterAsBroken(i);
 		}
 	}
 
 	public static void Left_keyPressed() {
 		if (App.isVmode_Tutorial()) {
+			stopDisplayAndTutorialTimers();
 			App.mg.tutorialBackOne();
 		}
 		else if (App.isMode(Aaa.REVIEW_PLAY)) {
-			CmdHandler.reviewBackOneTrick();
+			stopDisplayAndTutorialTimers();
+			// @ formatter:off
+			switch (App.mouseWheelDoes) {
+			case App.WMouse_STEP:
+				CmdHandler.reviewBackOneTrick();
+				break;
+			case App.WMouse_FLOW:
+				CmdHandler.reviewBackOneTrick();
+				break;
+			case App.WMouse_SINGLE:
+				CmdHandler.reviewBackOneCard();
+				break;
+			}
+			// @ formatter:on
 		}
 		else if (App.isMode(Aaa.REVIEW_BIDDING)) {
+			stopDisplayAndTutorialTimers();
 			CmdHandler.reviewBackOneBid();
 		}
+		else if (App.isVmode_InsideADeal() && App.isMode(Aaa.NORMAL_ACTIVE) /* real 'playing' */) {
+			App.gbp.c1_1__tfdp.clearShowCompletedTrick();
+		}
+		App.con.controlerInControl();
 	}
 
 	public static void Right_keyPressed() {
 		if (App.isVmode_Tutorial()) {
-			App.mg.tutorialStepFwd();
+			// @ formatter:off
+			switch (App.mouseWheelDoes) {
+			case App.WMouse_STEP:
+				App.mg.tutorialStepFwd();
+				break;
+			case App.WMouse_FLOW:
+				App.mg.tutorialFlowFwd(true /* stepIfBidding */);
+				break;
+			case App.WMouse_SINGLE:
+				App.mg.tutorialFlowFwd(true /* stepIfBidding */);
+				break;
+			}
+			// @ formatter:on
 		}
 		else if (App.isMode(Aaa.REVIEW_PLAY)) {
-			CmdHandler.reviewFwdOneTrick();
+			// @ formatter:off
+			switch (App.mouseWheelDoes) {
+			case App.WMouse_STEP:
+				CmdHandler.reviewFwdOneTrick();
+				break;
+			case App.WMouse_FLOW:
+				CmdHandler.reviewFwdShowOneTrick();
+				break;
+			case App.WMouse_SINGLE:
+				CmdHandler.reviewFwdOneCard();
+				break;
+			}
+			// @ formatter:on
+
 		}
 		else if (App.isMode(Aaa.REVIEW_BIDDING)) {
 			CmdHandler.reviewFwdOneBid();
 		}
+		else if (App.isVmode_InsideADeal() && App.isMode(Aaa.NORMAL_ACTIVE) /* real 'playing' */) {
+			App.gbp.c1_1__tfdp.clearShowCompletedTrick();
+		}
+		App.con.controlerInControl();
 	}
 
 	public static void Up_keyPressed() {
-		if (App.isVmode_Tutorial()) {
-			loadBookChapter_prev(false);
-		}
+//		if (App.isVmode_Tutorial()) {
+		loadBookChapter_prev(false);
+//		}
 	}
 
 	public static void Down_keyPressed() {
-		if (App.isVmode_Tutorial()) {
-			loadBookChapter_next();
-		}
+//		if (App.isVmode_Tutorial()) {
+		loadBookChapter_next();
+//		}
 	}
 
 }

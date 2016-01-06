@@ -1,0 +1,1661 @@
+%% 
+%% This is an extract from the free Windows prog - 'Learn to Play Bridge Bridge2'
+%%     available from     https://web.acbl.org/LearnToPlayBridge
+%%
+%% Original filename      ltpb2_6.1__Bidding_After_an_Opponent's_Takeout_Double.lin
+%%     file last changed  2014-Dec-07    bversion 0.18
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%                                    Font  'blank'  is size 30   
+%%                                    (sizes 30 to 35 shrink to 30  for legacy compatibility)
+fh|136|ff|1Arial|fb|10|fm|1|      Font 1   36  shrinks to size 32    
+fh|238|ff|2Arial|fb|20|fm|2|      Font 2   37  shrinks to size 34
+fh|339|ff|3Arial|fb|30|fm|3|      Font 3
+fh|440|ff|4Arial|fb|40|fm|4|      Font 4
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|60|fm|6|      Font 6
+fh|770|ff|7Arial|fb|70|fm|7|      Font 7
+fh|880|ff|8Arial|fb|80|fm|8|      Font 8
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1248|cg|1231|cb|1189|   Beige Cream
+cr|2185|cg|2201|cb|2195|   Beige grey green
+cr|3198|cg|3205|cb|3229|   grey medium
+cr|4160|cg|4174|cb|4228|   blue grey
+cr|5198|cg|5205|cb|5229|   light grey
+cr|6122|cg|6000|cb|6049|   dark maroon
+cr|9255|cg|9255|cb|9255|   'white'
+
+
+bt||nt|^b@2^z@3|
+
+
+%%   Top bar header box and Text
+ht|b|cp|9|cs|6|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|9|at|^^^^^^^^|fp|6|at|^-Learn to Play Bridge2          ^*bChapter 6   Section 1^*n^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|1|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|f|fp|9|at|^^^^^^^^^^|fp|7|at|^-^*bBidding After an Opponent's Takeout Double^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+at|This Bridge Movie (.lin file) is an unaltered extract from  ^*bLearn to Play Bridge2^*n  a Windows program.  The original program can be downloaded from the ACBL at @-
+
+^d^*h https://web.acbl.org/LearnToPlayBridge ^*n
+    
+The ACBL requires an email address from you and will send you the download instructions  ^*bOR^*n  you can download it directly from ^*hhttp://www.bridgebase.com/index.php^*nhere^*x. (See the links, center left, on that web page.)
+
+^*bLearn to Play Bridge^*n comes as two programs.  Program 1 is for beginners, including an introduction to card play and Standard American bidding.  Program 2 (the source of this tutorial) covers material for the 'intermediate' player.
+
+An ^*bAcol^*n version of Program 1 can be downloaded from the ^*bEBU^*n ^*hhttp://www.ebu.co.uk/education/ltpb^*nhere^*x.
+ 
+
+A different set of extracts from  ^*bLearn to Play Bridge2^*n  are available for on-line play (in your browser) at @-
+
+^d^*h http://www.bridgesights.com/hondobridge/##fglb ^*n
+
+
+Our thanks goes to the ^*bACBL^*n for providing these two exceptional Bridge programs for free.
+|
+pg| ***** 0 ***** |
+
+
+qx|OutD|
+
+
+nt|^b@2^z@3|
+cs|5|cp|6|fp|4|
+at|
+^-{ Introduction to Chapter 6 }
+^-|fp||cp||at|
+Bridge players use the term constructive to describe an auction in which only one partnership is bidding and the other partnership passes throughout. Competitive auctions are those in which at least one member of each partnership bids or doubles at least once at some point during the bidding. In practice, approximately half of the auctions of bridge deals that you play will be competitive in nature so it is important to make agreements with your regular partner about what your bids mean in these auctions. 
+
+Most introductory textbooks on bridge (as well as the original Learn to Play Bridge program) focus largely on constructive bidding. That is a good thing because competitive auctions tend to be more complex than constructive auctions. In addition, it is not really possible to master some of the concepts of competitive bidding without a thorough understanding of bidding in the absence of competition.
+
+The SAYC bidding system contains a full range of agreements and includes several popular conventions that will help you and your partner bid more effectively in competitive auctions. The purpose of this chapter is to introduce you to the methods that SAYC uses when both partnerships are involved in the bidding.
+
+In particular you will learn about how the responder adjusts his strategy when his partner opens the bidding and the next hand either makes a takeout double or overcalls. You will also learn about 2 popular conventions (Michaels cuebids and the Unusual notrump) that your partnership can use to enter the auction when one of the opponents opens the bidding.
+|
+pg| ***** 1 ***** |
+
+
+nt|^b@2^z@3|tb||va|5|At|Before we get into the specifics of how SAYC deals with various competitive bidding situations, let's review some of the basic principles of competitive bidding. The first question to explore is why a partnership should get involved in the auction when one of the opponents has opened the bidding. Here are 3 reasons why doing this can be a good strategy:
+
+|
+pg| ***** 2 ***** |
+
+
+cs|1|at|^-{ 1. Sometimes your partnership will be able to succeed in a contract 
+ of your own when one of the opponents opens the bidding. }
+^-
+|
+pg| ***** 3 ***** |
+
+
+cs|2|at|^-{ 2. Sometimes your partnership will fail in a contract you bid, but this will be a good 
+ sacrifice because the opponents could have made a contract of their own. }
+^-
+|
+pg| ***** 4 ***** |
+
+
+cs|4|at|^-{ 3. By getting involved in the auction after one of the opponents opens the bidding, you 
+ can make it more difficult for them to discover the best possible final contract to play in. }
+^-
+|
+pg| ***** 5 ***** |
+
+
+at|Why is life more difficult for the opponents when your partnership gets involved in the bidding? For one thing, every bid that you and your partner make takes away some bidding space from the opponents. The less bidding space they have, the harder it is for them to exchange the information that they need in order to select the best final contract.
+
+|
+pg| ***** 6 ***** |
+
+
+at|In addition, by turning the opponents' constructive auction into a competitive auction, you may create a bidding situation that the opponents are not familiar with. Most partnerships spend a lot of time working on their constructive bidding and they will not usually get confused as to the meanings of their bids if you and your partner pass throughout. There is a much better chance that the opponents will have a misunderstanding if you and your partner bid, thereby creating an auction that they have not discussed before.
+
+|
+pg| ***** 7 ***** |
+
+
+nt|^b@2^z@3
+As in constructive bidding, one of the main goals of competitive bidding is to find a good trump fit. The more combined trumps a partnership has, the less it matters whether or not a partnership has a lot of high card points. Here is an example:
+
+|
+pg| ***** 8 ***** |
+
+
+cs|3|at|^B { |ih|psqj863ht9752d73ct|at| }    @2|
+hs|ss|ht|f|va|5|at|Suppose that you hold this hand. One of your opponents opens the bidding and your partner made a weak jump overcall in spades. You now know that your partnership has a lot of spades between them, but that the opponents have the vast majority of high cards in the deck.
+@0
+|
+pg| ***** 9 ***** |
+
+
+at|Do not be afraid because of your lack of HCP! You should feel perfectly safe about bidding to at least the 4-level in spades. It is true that you are most unlikely to make 4@S and that if the opponents let you play in 4@S, they will certainly double you in this contract. That should not be a matter of concern for 2 reasons:
+
+|
+pg| ***** 10 ***** |
+
+
+cs|2|at|^-{ 4@S does not rate to fail by much. Having a big trump fit makes up for having few HCP! }
+^-
+|
+pg| ***** 11 ***** |
+
+
+cs|4|at|^-{ The opponents certainly can make a game contract and they can probably make a slam. }
+^-
+|
+pg| ***** 12 ***** |
+
+
+at|Your partner is likely to have 6 spades headed by the @SAK and little else in the way of high cards. The opponents have 2 spades between them at the most. It is possible that your partnership can win a trick on defense in spades, but it is not at all unlikely that one of the opponents has a spade void. Even if 4@S doubled is the final contract and even if this contract fails by a few tricks, your result will almost certainly represent a good sacrifice.
+
+|
+pg| ***** 13 ***** |
+
+
+nt|^b@2^z@3|va|7|cs|1|at|
+^-{ Having a big trump fit with your partner increases the offensive 
+ potential and decreases the defensive potential of your hand. }
+^-
+|
+pg| ***** 14 ***** |
+
+
+at|Having a lot of trumps increases a hand's offensive potential because the more combined cards in a given suit that a partnership has, the more tricks they are likely to take if that suit ends up being trump. At the same time, the partnership's potential for winning defensive tricks decreases for 2 reasons:
+
+|
+pg| ***** 15 ***** |
+
+
+cs|2|at|^-{ 1. If your partnership has a big fit there is a good chance that 
+ the opponents have a big fit in one of the other 3 suits. }
+^-
+|
+pg| ***** 16 ***** |
+
+
+cs|4|at|^-{ 2. If your partnership has a big fit then your high cards in that suit will not win many 
+ tricks on defense (since at least one of the opponents will be short in your suit). }
+^-
+|
+pg| ***** 17 ***** |
+
+
+at|To summarize, the main objective for a partnership to get involved in a competitive auction is in order to try to find a trump fit. If they are able to do so, they should not be afraid to raise the suit of their fit even if they do not have a lot of high cards.
+
+Having a good trump fit will protect your partnership from losing a lot of tricks and it will increase the chances of the opponents being able to succeed in a contract of their own. At the same time, getting involved in the opponents' constructive auction will make it harder for them to discover their own best contract. 
+
+In this chapter we will see that SAYC contains some good tools for overcoming the difficulties that are presented when the opponents get involved in your auctions.
+
+|
+pg| ***** 18 ***** |
+
+
+qx|opptodbl,Bidding after an opponent's takeout double|
+
+nt|^b@2^z@3|cs|5|cp|6|tb|y|at|
+^-{ Bidding after an opponent's takeout double }
+^-
+|cp||at|Suppose that you are sitting South and your partner, North, opens the bidding (with 1@D for example) and East makes a takeout double. You have to decide what call to make. Should you make the same call that you would have made if East had passed or does East's takeout double change the strategy that you should employ on certain hands?
+
+|cs|1|at|^-{ |ia| 1dd?|at| }
+^-
+|
+pg| ***** 19 ***** |
+
+
+at|The first thought that might cross your mind is that East's takeout double does not remove any of the options you would have had if he had passed instead. You can still pass if you want and you can still make any call between 1@H and 7NT. While all of this is true, East's takeout double affects the choices that you have in 2 ways:
+
+|
+pg| ***** 20 ***** |
+
+
+cs|2|at|^-{ 1. You could redouble - a call that would not have been available if East had passed. }
+^-
+|
+pg| ***** 21 ***** |
+
+
+cs|3|at|^-{ 2. If you pass here you can be fairly certain that you will get another chance to bid later.
+ That would not be the case if East had passed instead of making a takeout double. }
+^-
+|
+pg| ***** 22 ***** |
+
+
+at|The fact that you can now redouble has a lot of implications as far as your other possible actions go. The fact that you can pass and expect to have another chance to bid is not particularly relevant on most hands that you will be dealt when the bidding goes this way.
+
+|
+pg| ***** 23 ***** |
+
+
+tb||
+
+nt|^b@2^z@3
+However, there are some hands where you would respond to North's opening bid if East had passed, but that you should be happy to pass if instead East makes a takeout double. This is really a matter of judgment as opposed to your choice of bidding system.
+
+|ht|f|va|5|at|^B{ |cs|1|ia| 1dp?|at| } ^O{ |cs|1|ia| 1dd?|at| } 
+
+|
+pg| ***** 24 ***** |
+
+
+cs|3|at|^B  {|ih|ps8ha65dq54c876532|at|}    @2
+|ht|k|hc|hadq|at|Consider this hand for example. With 6 HCP |
+pg| ***** 25 ***** |
+
+
+lc|hadq|hs|sc|at|and 2 long suit points for the 6-card club suit, this hand is worth 8 total points. 6 total points is enough to keep the bidding alive when your partner opens so it seems that you should do ^*Isomething^*N with this hand after North's 1@D opening bid.
+@0
+|
+pg| ***** 26 ***** |
+
+
+ls|sc|hs|sh|at|Unfortunately, there is no satisfying bid that you can make. Your partner would expect you to have at least 4 cards in hearts for a 1@H response |
+pg| ***** 27 ***** |
+
+
+ls|sh|hs|sd|at|and you should not raise his minor suit to 2@D without at least 4-card support. |
+pg| ***** 28 ***** |
+
+
+ls|sd|hs|sc|at|You do have a 6-card club suit, but you would need a much better hand (or at least much better clubs) to make a two over one response of 2@C. |
+pg| ***** 29 ***** |
+
+
+ls|sc|hs|ss|at|1NT is the correct bid with this hand, but with a singleton in spades that call is not exactly appetizing.
+
+|ht|f|va|5|at|^B{ |cs|1|ia| 1dp!1n|at| }
+
+|
+pg| ***** 30 ***** |
+
+
+ls|ss|ht|f|va|5|at|^O{ |cs|1|ia| 1dd!p|at| }
+|ht|w|va|5|at|Once East makes a takeout double of 1@D, things are different. You can now pass and be confident that you will have another chance to bid. You can bid at your next turn if your judgment tells you to do so. The fact that your partner will have another turn to bid before you do will help make your decision easier on the next round of bidding.
+
+|
+pg| ***** 31 ***** |
+
+
+nt|^b@2^z@3
+
+|at|^B{ |cs|1|ia| 1dp!1n|at| } ^O{ |cs|1|ia| 1dd!1n|at| } 
+
+The 1NT response to an opening bid is really a catchall for hands that are too strong to pass, too weak to bid a new suit at the 2-level, and have the wrong distribution for any other action. After a takeout double the 1NT response is different:
+
+|
+pg| ***** 32 ***** |
+
+
+cs|2|at|^-{ After your partner opens the bidding and the next hand makes a 
+ takeout double, do not bid 1NT unless you want to bid 1NT! }
+^-
+|
+pg| ***** 33 ***** |
+
+
+cs|3|at|^B{ |ih|psqt4hkJ8d643ckt76|at|}   @2
+|ht|p|at|You might ^*Iwant^*N to bid 1NT if you had a hand that looked like this (that is, a balanced hand with sound values for a response and stoppers in the unbid suits).
+@0
+
+|
+pg| ***** 34 ***** |
+
+
+at|Whether or not you should bid 1NT over a takeout double is a matter of judgment more than anything else. One way to think about this situation is to ask yourself if you would be happy if 1NT became the final contract. If the answer to that question is "yes" then 1NT is probably a good bid to make! If the answer to that question is "no" then you would probably be better off passing.
+
+|
+pg| ***** 35 ***** |
+
+
+nt|^b@2^z@3|va|5|At|Here is another example of the same principle:
+
+|ht|c|va|5|at|^B{ |cs|1|ia| 1dp?|at| } ^O{ |cs|1|ia| 1dd?|at| } 
+
+|cs|3|at|^B  {|ih|ps6532hj76dq43ck54|at|}    @2
+|
+pg| ***** 36 ***** |
+
+
+hc|hjckdq|ht|h|va|5|at|This is another hand with 6 HCP, but this hand has no redeeming qualities in terms of its distribution. |
+pg| ***** 37 ***** |
+
+
+lc|hjckdq|hs|ss|at|Still, it would be correct to respond 1@S to North's 1@D if the auction was purely constructive. 
+@0
+|ht|c|va|5|at|^B{ |cs|1|ia| 1dp!1s|at| }
+|
+pg| ***** 38 ***** |
+
+
+ht|n|at|Bidding such a weak 4-card suit (especially with such a poor hand) is never an attractive proposition, but you really have no choice other than to bid 1@S on this hand after East passes over 1@D.
+
+|
+pg| ***** 39 ***** |
+
+
+ht|c|va|5|at|^O{ |cs|1|ia| 1dd!p|at| }
+|ht|q|va|7|at|When East doubles 1@D, things are different. You now have the choice of passing and with this particular hand you should exercise that choice!
+
+|
+pg| ***** 40 ***** |
+
+
+cs|2|at|^-{ After your partner opens the bidding and the next hand makes a takeout double, 
+ do not bid a new suit at the 1-level unless you do not mind being raised by your partner! }
+^-
+|
+pg| ***** 41 ***** |
+
+
+ht|w|va|8|at|Here, if you bid 1@S, your partner might well raise you with 3-card support. Given that you have a weak hand, weak spades, and that East rates to have good spades for his takeout double, you really do not want to play this hand in spades. Since you do not want your spades to be raised, you should not give your partner a chance to do this. Pass for now - there will be a "later"!
+
+|
+pg| ***** 42 ***** |
+
+
+nt|^b@2^z@3|va|5|At|To summarize, if your partner opens the bidding and the next hand passes, you should always respond if you have 6 or more total points. The same is not true if your partner opens and the next hand makes a takeout double.
+
+|ht|e|va|5|at|^B{ |cs|1|ia| 1dp?|at| } ^O  { |cs|1|ia| 1dd?|at| } 
+
+|
+pg| ***** 43 ***** |
+
+
+cs|2|at|^-{ Passing over an opponent's takeout double does not deny 6 (or more) total points. }
+^-
+|
+pg| ***** 44 ***** |
+
+
+at|Do not get the impression that you should look for opportunities to pass over an opponent's takeout double with hands that you would normally respond to an opening bid. Just be aware of the fact that you can pass over an opponent's takeout double and expect to have another chance to bid. If your judgment tells you to take this course on a particular hand, you should back your judgment even if that hand contains 6 or more total points.
+
+|
+pg| ***** 45 ***** |
+
+
+cs|4|at|^-{ Bidding a new suit at the 1-level over an opponent's takeout double is forcing,
+ but the responder does not promise any more than 6 total points for such an action. }
+^-
+
+|
+pg| ***** 46 ***** |
+
+
+cs|1|At|^B{ |ia| 1dd1sp?|at| }   @2
+|ht|u|va|6|at|The opener cannot pass 1@S because that call is forcing. 1@S here promises at least 6 total points and at least 4 spades. The responder should make the same rebid that he would have made if East had passed over 1@D. |
+pg| ***** 47 ***** |
+
+
+ls|ss|
+
+nt|^b@2^z@3|
+cs|3|ht|b|at|^C{|ih|pskt976h54dq62ct73|at|} |ht|c|at|^N {|cs|1|ia| 1dd?|at| }
+
+
+
+|hc|skdq|at|This hand, for example, has 5 HCP |
+pg| ***** 48 ***** |
+
+
+lc|skdq|hc|skt976|at|and 1 long suit point for the 5-card spade suit. 6 total points is the very minimum you can have for a response to an opening bid, |
+pg| ***** 49 ***** |
+
+
+at|but you should still respond 1@S even after East's takeout double. Even though your hand is not very strong, you do have a reasonable 5-card spade suit and you should not mind if your partner feels inclined to raise you.
+
+|ht|c|at|^N {|cs|1|ia| 1dd!1s|at| }
+|
+pg| ***** 50 ***** |
+
+
+cs|3|ht|n|at|^C{|ih|ps54haj96dj87cqt85|at|} |ht|o|at|^N {|cs|1|ia| 1dd?|at| }
+
+
+
+|hc|hajcqdj|at|This next hand, with 8 HCP, is a little stronger than the first example. |
+pg| ***** 51 ***** |
+
+
+lc|cqdj|hc|ha96|at|The heart suit contains only 4 cards, but as far as 4-card suits go, this one is pretty strong. |
+pg| ***** 52 ***** |
+
+
+at|You should respond 1@H over East's takeout double, just like you would if East had passed. If your partner has heart support and wants to raise, you should not be afraid to be the declarer in a contract with hearts as the trump suit. 
+|ht|o|at|^N {|cs|1|ia| 1dd1h|at| }
+|
+pg| ***** 53 ***** |
+
+
+lc|skt976haj96|
+
+nt|^b@2^z@3
+The responder's ability to pass over an opponent's takeout double on some hands with which he would have responded in the absence of a takeout double does have some impact on the responder's strategy. However, the fact that the responder has a new call available (the redouble) has much more serious implications in these competitive auctions.
+
+|cs|1|At|^-{ |ia| 1dd!r|at| }
+^-
+|
+pg| ***** 54 ***** |
+
+
+cs|2|at|^-{ With most hands containing 10 or more HCP the responder should redouble 
+ when an opponent makes a takeout double of his partner's opening bid. }
+^-
+|
+pg| ***** 55 ***** |
+
+
+at|The basic message sent by the redouble of an opponent's takeout double is as follows:
+
+|
+pg| ***** 56 ***** |
+
+
+cs|4|at|^-{ Partner, we have the majority of the high cards between us. Either our side 
+ is going to play the contract or we are going to double the opponents. }
+^-
+|
+pg| ***** 57 ***** |
+
+
+at|Notice that only high card points (and not total points) are considered for these redoubles. When a player has 10 or more HCP and he hears his partner open the bidding, he is in a strong position to know that the deal ^*ibelongs to^*N his partnership. 
+
+It is therefore reasonable for the partnership to adopt a strategy of either playing the contract themselves or doubling the opponents. The responder can inform the opener of this good news by redoubling his opponent's takeout double.|
+pg| ***** 58 ***** |
+
+
+ls|ss|
+
+nt|^b@2^z@3
+Here is an example of the redouble in action:
+
+|cs|3|ht|d|at|^C{|ih|psaj97hkt86d42caj9|at|} |ht|e|at|^N {|cs|1|ia| 1dd?|at| }
+
+
+
+|
+pg| ***** 59 ***** |
+
+
+hc|sajhkcaj|at|This hand has 13 HCP |
+pg| ***** 60 ***** |
+
+
+lc|sajhkcaj|hs|ssshsc|at|and strong holdings in each of the 3 unbid suits. |
+pg| ***** 61 ***** |
+
+
+ls|scss|at|While it would be safe to bid a forcing 1@H with this hand, that would be letting the opponents off the hook. |
+pg| ***** 62 ***** |
+
+
+hs|sssc|at|Given North's opening bid, East's takeout double, and the strength of the responder's hand, there is very little in the way of high cards left for West to hold. It appears that East picked a bad moment to enter the bidding. You should make him pay for trying to disrupt your constructive auction!
+
+|
+pg| ***** 63 ***** |
+
+
+ht|e|at|^N {|cs|1|ia| 1dd!r|at| }
+
+|ht|q|va|3|at|You should redouble to let your partner know that you have at least 10 HCP. Furthermore, you should be prepared to double the opponents wherever they choose to play. |
+pg| ***** 64 ***** |
+
+
+at|If North does not have a defensive hand (perhaps he has a minimum opening bid with a very long diamond suit) he will let you know about it (perhaps by rebidding 2@D before you have a chance to double the opponents). You can then look for a game contract (probably 3NT) of your own.
+
+|ht|e|at|^N {|cs|1|ia| 1ddr1h!2d|at| }
+
+|
+pg| ***** 65 ***** |
+
+
+ht|x|cs|2|At|^-{ Redouble is a suggestion that doubling the opponents might be a good idea, but 
+the opener should express his preference for offense if his hand is distributional. }
+^-
+|
+pg| ***** 66 ***** |
+
+
+ls|ssshsc|
+
+nt|^b@2^z@3
+Do not think that you have to redouble every time you have 10 or more HCP. For example:
+
+|cs|3|ht|d|at|^C{|ih|phat62skqt98dq765|at|} |ht|e|at|^N {|cs|1|ia| 1dd?|at| }
+
+
+
+|
+pg| ***** 67 ***** |
+
+
+hc|skqhadq|at|This hand has 11 HCP which is more than enough to redouble over East's takeout double of your partner's 1@D opening bid. |
+pg| ***** 68 ***** |
+
+
+lc|skqhadq|hs|ss|at|However, with this particular hand it would be a mistake to redouble. Instead you should start by bidding 1@S just like you would have done if East had passed. As we have seen, bidding a new suit at the 1-level over an opponent's takeout double if forcing - your partner cannot pass you in 1@S.
+|ht|e|at|^N {|cs|1|ia| 1dd!1s|at| }
+|
+pg| ***** 69 ***** |
+
+
+ht|q|at|This hand is strongly oriented toward offense (as opposed to defense) and there are a lot of things you would like to tell your partner about your hand. Exploring for an 8-card major suit fit in spades |
+pg| ***** 70 ***** |
+
+
+ls|ss|hs|sh|at|or hearts should be your first priority. |
+pg| ***** 71 ***** |
+
+
+ls|Sh|Hs|Sd|At|If such a fit cannot be found, you will want to tell your partner about your excellent support for his diamond suit. 
+
+|
+pg| ***** 72 ***** |
+
+
+hs|sssh|at|This hand has several important features to describe and you should start describing these as soon as possible. Redoubling would only complicate the bidding and make it harder for you to tell your partner everything he should know about your hand. Furthermore, the opponents are certain to have a good fit in clubs. Even if your partner makes a penalty double of a club contract, you should not want to defend with a void in their trump suit.
+
+|
+pg| ***** 73 ***** |
+
+
+ls|ssshsd|
+
+nt|^b@2^z@3
+The last hand we looked at is a rather extreme example of the type of hand with which you should not redouble despite having 10 or more HCP.
+
+|cs|3|ht|d|va|5|at|^C{|ih|pskqt98hat62dq765|at|} |ht|e|va|5|at|^N {|cs|1|ia| 1dd!1s|at| }
+
+
+
+|
+pg| ***** 74 ***** |
+
+
+at|There are no firm rules about when the responder should redouble and when he should ignore the opponent's takeout double and try to bid his hand as he would have if there had been no takeout double. The decision about whether or not to redouble is really a matter of judgment. Here are some guidelines to keep in mind:
+
+|
+pg| ***** 75 ***** |
+
+
+cs|2|at|^-{ Redouble is a suggestion that your partnership should consider doubling the opponents. 
+ If your hand is oriented toward offense (instead of defense), it is usually best not to redouble. }
+
+|
+pg| ***** 76 ***** |
+
+
+cs|4|at|{ Balanced hands, especially those that lack strong support 
+ for the opener's suit, are good hands with which to redouble. }
+
+|
+pg| ***** 77 ***** |
+
+
+cs|1|at|{ Having a singleton or void in an unbid suit is a sign that a redouble may not be best. 
+ The opponents are very likely to have a good trump fit in the responder's short suit. }
+
+|
+pg| ***** 78 ***** |
+
+
+cs|3|at|{ Remember that failure to redouble does not deny holding 10 or more HCP! }
+|
+pg| ***** 79 ***** |
+
+
+nt|^b@2^z@3|cs|1|va|5|at|Consider the following actions for the responder after his partner opens the bidding and the next hand makes a takeout double. In each case the responder's bid would usually suggest a hand with at least 10 HCP if there had been no takeout double: 
+
+|
+pg| ***** 80 ***** |
+
+
+at|^B{ |ia| 1dd!2c|at| } |cs|2|va|8|at|^M{ A two over one response in a new suit }
+
+|
+pg| ***** 81 ***** |
+
+
+cs|1|at|
+^B{ |ia| 1dd!2s|at| } |cs|2|va|8|at|^M{ A jump shift response }
+
+|
+pg| ***** 82 ***** |
+
+
+cs|1|at|
+^B{ |ia| 1dd!2n|at| } |cs|2|va|8|at|{^M A jump to 2NT }
+
+|
+pg| ***** 83 ***** |
+
+
+cs|1|at|
+^B{ |ia| 1dd!3d|at| } |cs|2|va|8|at|^M{ A limit raise }
+
+
+|
+pg| ***** 84 ***** |
+
+
+cs|4|va|5|at|When East makes a takeout double, South has a way of telling his partner that he has a strong hand (he can redouble). It therefore makes sense to use the responses that would show a strong hand in the absence of a takeout double for some other purpose once a takeout double is made. In the SAYC bidding system, the meanings of South's actions in the 4 auctions above change as a result of East's takeout double. 
+
+|
+pg| ***** 85 ***** |
+
+
+nt|^b@2^z@3|va|5|At|Consider this hand for example:
+
+|cs|3|ht|c|at|^C{|ih|psat9hj86dt5ckqj84|at|} |ht|d|at|^N {|cs|1|ia| 1dp?|at| }
+
+
+|
+pg| ***** 86 ***** |
+
+
+va|5|hc|sahjckqj|at|With 11 HCP |
+pg| ***** 87 ***** |
+
+
+lc|ssahjckqj|hs|sc|At|and 1 long suit point for the 5-card club suit, this hand has 12 total points which is more than enough to respond by bidding a new suit at the 2-level. |
+pg| ***** 88 ***** |
+
+
+at|When East passes over North's 1@D opening bid, South should respond 2@C to tell his partner about both his general strength and his strong clubs.
+|ht|d|at|^N {|cs|1|ia| 1dp!2c|at| }
+
+|
+pg| ***** 89 ***** |
+
+
+ht|d|at|^N {|cs|1|ia| 1dd!r|at| }
+
+|ht|n|va|5|at|It's a different story if East makes a takeout double over North's 1@D opening bid. The responder now has another option available that he can use to tell his partner that he has a good hand - he can redouble. |
+pg| ***** 90 ***** |
+
+
+ls|sc|hs|sssh|at|With this hand the responder's major suits are not quite strong enough to double the opponents in 1@H or 1@S, but he will certainly be happy to pass such a double if his partner can make one. |
+pg| ***** 91 ***** |
+
+
+ls|sssh|hs|Sc|at|If doubling the opponents is not in the cards, the responder can always bid his clubs at his next opportunity.
+
+|
+pg| ***** 92 ***** |
+
+
+cs|1|va|2|at|^A  {|ia| 1dd!2c|at| }   @2
+
+|ht|v|va|3|at|The lesson here is that with most of the hands with which the responder would bid 2@C if East had passed, he can redouble once East makes a takeout double. It
+@0
+|ht|y|va|5|at|therefore makes sense to assign a new meaning to the bid of a new suit at the 2-level over an opponent's takeout double of a 1-level opening bid.
+|
+pg| ***** 93 ***** |
+
+
+nt|^b@2^z@3
+|cs|1|at|^-{ |ia| 1dd!2c|at| }
+
+|cs|2|at|{ After an opponent's takeout double, a response in a new suit at the 2-level shows 
+ less than 10 HCP with either a very strong 5-card suit or (more likely) at least a 6-card suit. }
+^-
+|
+pg| ***** 94 ***** |
+
+
+at|Here are some examples of hands that would be suitable for bidding 2@C in the above auction:
+|va|5|cs|3|at|^D{|ih|ps743hq5d87caj8743|at|} ^P{|ih|ps8652h64dk7ckqt96|at|}
+
+|
+pg| ***** 95 ***** |
+
+
+ls|sc|hc|cajhq|at|The first hand, with 7 HCP |
+pg| ***** 96 ***** |
+
+
+lc|hq|hc|c8743|at|and a 6-card club suit, is a classic example of the type of hand you should expect your partner to have when he bids a new suit at the 2-level after an opponent's takeout double. |
+pg| ***** 97 ***** |
+
+
+hc|ckqdk|at|The second hand is less typical, but 2@C is still the recommended call with this 8 HCP hand. |
+pg| ***** 98 ***** |
+
+
+lc|dk|hc|ct96|at|This hand has only 5 clubs, but the clubs it has are very strong.
+
+|
+pg| ***** 99 ***** |
+
+
+cs|4|at|^-{ A new suit at the 2-level after an opponent's takeout double is non-forcing. }
+^-
+|
+pg| ***** 100 ***** |
+
+
+at|So a 2@C response in the auction above could end the bidding. The opener is not obliged to bid again since, once East makes a takeout double, the 2@C response becomes non-forcing.|
+pg| ***** 101 ***** |
+
+
+lc|caj8743kqt96|
+
+nt|^b@2^z@3
+|cs|1|at|^-{ |ia| 1dd!2c|at| }
+^-
+|cs|3|at|^D{|ih|ps743hq5d87caj8743|at|} ^P{|ih|ps8652h64dk7ckqt96|at|}
+
+|cs|2|at|^-{ A good question to ask yourself when you are considering bidding a new suit at the 2-level 
+ over an opponent's takeout double is: Will you be happy if the other 3 players pass? }
+^-
+|
+pg| ***** 102 ***** |
+
+
+at|If the answer to this question is yes, then you should go ahead and bid. If the answer to this question is no, then you should either pass or find a more attractive bid to make. |
+pg| ***** 103 ***** |
+
+
+hs|sc|at|Both of the hands shown above pass this test. Both of these hands rate to win several tricks with clubs as trump |
+pg| ***** 104 ***** |
+
+
+ls|sc|hs|shss|at|and neither of these hands is especially strong defensively against a possible major suit contract by the opponents. 
+
+|
+pg| ***** 105 ***** |
+
+
+ls|sssh|
+ls|sc|hc|s8652|at|Don't worry about the 4-card major in the second hand. The spades are so weak |
+pg| ***** 106 ***** |
+
+
+lc|s8652|hc|ckqt96|at|compared to the clubs that your judgment should tell you to ignore the major suit in this case. |
+pg| ***** 107 ***** |
+
+
+lc|ckqt96|hc|s8652h64|at|As for the alternative of bidding 1NT, this hand has the right number of high card points for that bid, but with no semblance of a stopper in either major suit, a notrump contract does not rate to play very well with this hand as the declarer. |
+pg| ***** 108 ***** |
+
+
+lc|s8652h64|
+
+nt|^b@2^z@3|va|5|At|The jump shift response to an opening bid is another example of a bid that should have a different meaning when there has been a takeout double:
+
+|cs|3|ht|d|at|^C{|ih|psakqj87ha98dt7ck2|at|} |ht|e|at|^N {|cs|1|ia| 1dp!2s|at| }
+
+
+|
+pg| ***** 109 ***** |
+
+
+va|5|hc|sakqjhack|at|This hand, with 17 HCP |
+pg| ***** 110 ***** |
+
+
+lc|sakqjhack|hs|ss|at|and a solid 6-card spade suit, is perfect for an immediate jump shift response of 2@S after a 1@D opening bid. The jump shift sends an immediate message to the opening bidder that there may well be a slam in the cards.
+
+|
+pg| ***** 111 ***** |
+
+
+ht|e|at|^N {|cs|1|ia| 1dd!2s|at| }
+|ht|n|va|5|at|There is almost no case for using a jump shift in this way when an opponent makes a takeout double of the opening bid. For one thing, you will almost never be dealt a hand this strong when the bidding goes this way. |
+pg| ***** 112 ***** |
+
+
+at|In the unlikely event that you are ever dealt such a strong hand after an opponent's takeout double, you can start by redoubling and plan to jump in spades at your next opportunity to bid.
+
+|ht|e|at|^N {|cs|1|ia| 1dd!r|at| }
+|
+pg| ***** 113 ***** |
+
+
+ht|t|va|5|at|Therefore, it makes good sense to use the jump shift response after a takeout double to describe a different type of hand. The SAYC bidding system uses a jump shift as preemptive in this situation.
+
+|
+pg| ***** 114 ***** |
+
+
+cs|2|at|^-{ A jump shift after an opponent's takeout double is preemptive. The responder 
+ would typically have a good 6-card suit and around 4-6 HCP to make this call. }
+|
+pg| ***** 115 ***** |
+
+
+nt|^b@2^z@3|va|5|At|Here is a typical hand that would be suitable for a preemptive jump shift to 2@S after a 1@D opening bid by your partner and a takeout double by one of the opponents:
+
+|cs|3|ht|d|at|^C{|ih|pskjt953h7d843ct92|at|} |ht|e|at|^N {|cs|1|ia| 1dd!2s|at| }
+
+
+|
+pg| ***** 116 ***** |
+
+
+va|5|ls|ss|Hc|skj|at|This hand has only 4 HCP, |
+pg| ***** 117 ***** |
+
+
+lc|skj|hs|ss|at|but it is likely to win at least 4 tricks with spades as trump even opposite a very poor spade holding (like a low singleton). There are several reasons why a preemptive jump shift to 2@S might be effective:
+
+|
+pg| ***** 118 ***** |
+
+
+cs|2|at|^-{ You might make 2@S. Your partner's hand will be able to win some tricks with high cards. 
+ You are going to win some tricks with trumps. Together you might just win 8 tricks in 2@S! }
+^-
+|
+pg| ***** 119 ***** |
+
+
+cs|4|at|^-{ 2@S provides an accurate description of your hand. Your partner will be well-placed to 
+ know if he should bid anymore regardless of whether the opponents bid again or not. }
+^-
+|
+pg| ***** 120 ***** |
+
+
+cs|1|at|^-{ 2@S takes up a lot of bidding space. The opponents may have a difficult time
+ entering the auction or discovering their best contract as a result of your jump. }
+^-
+|
+pg| ***** 121 ***** |
+
+
+at|Hopefully you have been convinced that using the jump shift here as preemptive has a lot going for it. Just make sure you do not abuse this bid! If you had another Ace, for example, your hand would be too strong for 2@S. A simple (and forcing) 1@S would be the correct bid in this case.|
+pg| ***** 122 ***** |
+
+
+ls|ss|
+
+nt|^b@2^z@3|va|5|At|The 2NT response to a 1-level opening bid is perhaps the clearest example of a bid that should have a different meaning over an opponent's takeout double:
+
+|cs|3|ht|d|at|^C{|ih|pskq4haj3dt76ckj85|at|} |ht|e|at|^N {|cs|1|ia| 1dp!2n|at| }
+
+
+|
+pg| ***** 123 ***** |
+
+
+va|5|hc|skqhajckj|at|This balanced hand with 14 HCP, no 4-card major, and stoppers in all of the unbid suits is perfect for a jump to 2NT after your partner opens 1@D and the next hand passes. 2NT is forcing to game and gives your partner a perfect description of your hand.
+
+|
+pg| ***** 124 ***** |
+
+
+lc|skqhajckj|
+at|If East interjects a takeout double of 1@D, there is no reason at all to jump to 2NT with this hand. You should be delighted to start with a redouble. The auction might work out so that you can double the opponents in whatever they bid. If not, you can always bid notrump later. You are always going to get to game when you have this strong a hand opposite an opening bid, but it cannot hurt to try to collect a penalty in the process.
+
+|ht|e|at|^N {|cs|1|ia| 1dd!r|at| }
+|
+pg| ***** 125 ***** |
+
+
+ht|u|cs|1|at|^A  {|ia| 1dd!2n|at|}   @2
+|ht|t|va|8|at|So what would it mean in SAYC if you bid 2NT over East's takeout double? The answer may not be what you are expecting, so get ready for a surprise!
+@0
+|
+pg| ***** 126 ***** |
+
+
+cs|2|at|^-{ Over an opponent's takeout double of your partner's 1-level opening bid, 
+ a jump to 2NT shows at least a limit raise in support of your partner's suit! }
+|
+pg| ***** 127 ***** |
+
+
+nt|^b@2^z@3|va|5|At|Before we get into the hows and whys of using a jump to 2NT over an opponent's takeout double to describe at least a limit raise in support of the suit that your partner opened, here are some important things you should know about this bid:
+
+|ht|e|va|5|at|^B{ |cs|1|ia| 1dd!2n|at| } ^O  { |cs|1|ia| 1sd!2n|at| } 
+
+|
+pg| ***** 128 ***** |
+
+
+cs|4|at|^-{ When the opening bid was a minor, the 2NT bid promises at least 5-card support.
+  When the opening bid was a major, the 2NT bid promises at least 4-card support. }
+^-
+|
+pg| ***** 129 ***** |
+
+
+cs|2|at|^-{ With a limit raise that includes 4-card support for partner's minor or 3-card support 
+ for his major, start with redouble and then raise his suit at your next opportunity to bid. }
+^-
+|
+pg| ***** 130 ***** |
+
+
+at|Why all this concern and detail in these auctions about the number of cards that the responder has in his partner's suit? Does this seem unnecessarily complex (or even silly) to you?
+
+|
+pg| ***** 131 ***** |
+
+
+cs|3|at|^-{ Knowing the number of trumps that your partner has when he supports you will often
+ make it easier for you to judge accurately in both constructive and competitive auctions. }
+^-
+|
+pg| ***** 132 ***** |
+
+
+at|Since you are still at a relatively early stage in your career as a bridge player, you may not buy this argument right away. The time will come, however, when your partner raises you and you will think to yourself something like, "Gee - I really wish I knew how many trumps he was dealt!" You may have to take this on faith for now, but knowing how many trumps are present between your hand and your partner's hand really can help to improve your bidding judgment!
+
+|
+pg| ***** 133 ***** |
+
+
+nt|^b@2^z@3|va|5|At|If your partner opens the bidding with 1 of a suit and the next hand passes, a jump raise to 3 of your partner's suit shows a limit raise. For example:
+
+|cs|3|ht|d|at|^C{|ih|psa2hk5dqj752c9842|at|} |ht|e|at|^N {|cs|1|ia| 1dp!3d|at| }
+
+
+|
+pg| ***** 134 ***** |
+
+
+va|5|hc|sahkdqj|at|This hand has 10 HCP |
+pg| ***** 135 ***** |
+
+
+lc|sahkdqj|hs|sssh|at|and 2 short suit points for the 2 doubletons (remember to use short suit points instead of long suit points when you are thinking of raising your partner). |
+pg| ***** 136 ***** |
+
+
+ls|sssh|hs|sd|at|With 12 total points and 5-card diamond support, this hand is ideal for a limit raise of 3@D. |
+pg| ***** 137 ***** |
+
+
+at|However, you have just been told that if East makes a takeout double of 1@D, the way to show your 5-card limit raise in SAYC is with a jump to 2NT. |ht|e|at|^N {|cs|1|ia| 1dd!2n|at| }
+
+|
+pg| ***** 138 ***** |
+
+
+ht|q|at|^A  {|ia| 1dd!3d|at|}   @2
+|ht|p|va|8|at|Are you wondering what it means in SAYC if you jump raise your partner's 1-level opening bid to the 3-level after an opponent makes a takeout double?
+@0
+|
+pg| ***** 139 ***** |
+
+
+cs|2|at|^-{ A jump raise of the opener's suit over an opponent's takeout double is preemptive. 
+ The responder should have roughly 5-8 points in support of his partner for this action. }
+^-
+|
+pg| ***** 140 ***** |
+
+
+cs|4|at|^-{ As with the 2NT limit raise over a takeout double, the preemptive jump raise
+ promises at least 5-card support for a minor and at least 4-card support for a major. }
+|
+pg| ***** 141 ***** |
+
+
+ls|sd|
+
+nt|^b@2^z@3|va|5|At|Here are some examples of hands that are appropriate for a preemptive jump raise after an opponent's takeout double:
+
+|ht|e|at|^B{ |cs|1|ia| 1dd!3d|at| } ^O  { |cs|1|ia| 1sd!3s|at| } 
+
+|cs|3|at|^C   { |ih|ps6h854dKj876c8432|at| } ^Q{ |ih|psajt7h97dt952c953|at| } 
+
+|
+pg| ***** 142 ***** |
+
+
+hc|dkj|at|The first hand has only 4 HCP, |
+pg| ***** 143 ***** |
+
+
+lc|dkj|hc|s6|at|but the singleton spade is worth 3 support points. |
+pg| ***** 144 ***** |
+
+
+lc|s6|hc|dkj876|at|With 7 total points in support of diamonds and 5 trumps, this hand is typical for a preemptive jump raise to 3@D. Since diamonds is a minor suit, 3@D here promises to deliver at least 5-card support. If you had a similar hand with 1 less diamond, you would have to content yourself with a simple raise to 2@D.
+
+|
+pg| ***** 145 ***** |
+
+
+hc|saj|at|The second hand has 5 HCP |
+pg| ***** 146 ***** |
+
+
+lc|saj|hc|h97|at|and 1 support point for the doubleton heart. |
+pg| ***** 147 ***** |
+
+
+lc|h97|hc|sajt7|at|With 6 total points in support of spades and 4 nice trumps, a preemptive jump raise of 3@S is the bid of choice. Since spades is a major suit, 4-card support is sufficient for a jump to 3@S over East's takeout double. If you had a similar hand with only 3 spades then raising to only 2@S would be correct.|
+pg| ***** 148 ***** |
+
+
+nt|^b@2^z@3|va|5|At|Are you wondering why you would want to jump raise to the 3-level over East's takeout double on these hands? After all, you could raise to the 2-level where only 8 tricks are required. As it turns out, there are several possible tactical advantages in raising to the 3-level on such hands.
+|ht|e|va|5|at|^B{ |cs|1|ia| 1dd!3d|at| } ^O  { |cs|1|ia| 1sd!3s|at| } 
+
+|cs|3|at|^C   { |ih|ps6h854dKj876c8432|at| } ^Q{ |ih|psajt7h97dt952c953|at| } 
+
+|
+pg| ***** 149 ***** |
+
+
+cs|2|at|^-{ If the other 3 players pass, your partner might make his contract. When a big  trump fit 
+ exists, a lot of tricks can sometimes be won even if there are not a lot of high card points. }
+^-
+|
+pg| ***** 150 ***** |
+
+
+cs|4|at|^-{ If the other 3 players pass and your partner does not make his contract, there is 
+ a good chance that the opponents could have made some contract of their own. }
+^-
+|
+pg| ***** 151 ***** |
+
+
+cs|1|at|^-{ By taking up a lot of bidding space, you make it harder for the opponents to bid accurately. }
+^-
+|
+pg| ***** 152 ***** |
+
+
+cs|3|at|^-{ A preemptive jump raise gives your partner a good description of your hand, making it 
+ easier for him to judge regardless of whether or not the opponents do any more bidding. }
+|
+pg| ***** 153 ***** |
+
+
+qx|revex,Bidding after an opponent's takeout double - Review and Exercises|lc|dkj876sajt7|
+
+nt|^b@2^z@3|cs|5|cp|6|tb|y|at|
+^-{ Bidding after an opponent's takeout double - Review and Exercises }
+^-
+|cp||at|This chapter started with a look at the differences between constructive auctions (those in which only 1 partnership is involved in the bidding) and competitive auctions (those in which at least one member of each partnership bids or doubles at least once). 
+
+Even though most introductory books on bridge focus on constructive bidding, having strong agreements about competitive auctions is important. About half of the bridge deals that you will ever play will include competitive bids and there are a huge number of possible ways that the bidding can go once both partnerships get involved. Fortunately, the SAYC bidding system has some excellent methods in place for making your decisions in competitive auctions easier and more effective.
+
+Here is a reminder of 3 good reasons why a partnership should get involved in the auction after the opposing partnership has opened the bidding:
+
+|
+pg| ***** 154 ***** |
+
+
+cs|1|at|^-{ 1. Sometimes your partnership will be able to succeed in a contract 
+ of your own when one of the opponents opens the bidding. }
+^-
+|
+pg| ***** 155 ***** |
+
+
+cs|4|at|^-{ 2. Sometimes your partnership will fail in a contract you bid, but this will be a good 
+ sacrifice because the opponents could have made a contract of their own. }
+^-
+|
+pg| ***** 156 ***** |
+
+
+cs|2|at|^-{ 3. By getting involved in the auction after one of the opponents opens the bidding, you 
+ can make it more difficult for them to discover the best possible final contract to play in. }
+^-
+|
+pg| ***** 157 ***** |
+
+
+nt|^b@2^z@3|tb||va|5|at|Being able to compete effectively for the final contract against the opposing partnership is largely about trying to find a trump fit. 
+
+|
+pg| ***** 158 ***** |
+
+
+cs|3|at|^-{ Having a big trump fit with your partner increases the offensive 
+ potential and decreases the defensive potential of your hand. }
+^-
+|
+pg| ***** 159 ***** |
+
+
+at|You already know that having a lot of combined cards in a given suit tends to result in your partnership winning a lot of tricks when that suit is trump. It is less obvious why a big fit for your side tends to limit the defensive potential of your partnership's hands. Here are 2 reasons why this is the case:
+
+|
+pg| ***** 160 ***** |
+
+
+cs|2|at|^-{ 1. If your partnership has a big fit there is a good chance that 
+ the opponents have a big fit in one of the other 3 suits. }
+^-
+|
+pg| ***** 161 ***** |
+
+
+cs|4|at|^-{ 2. If your partnership has a big fit then your high cards in that suit will not win many 
+ tricks on defense (since at least one of the opponents will be short in your suit). }
+^-
+|
+pg| ***** 162 ***** |
+
+
+at|The bulk of this chapter to this point has dealt with auctions in which your partner opens the bidding with 1 of a suit and the next hand makes a takeout double. As we have seen, the responder has a lot of options available when the bidding starts like this.
+
+|cs|1|at|^-{|ia| 1dd?|at|}
+|
+pg| ***** 163 ***** |
+
+
+nt|^b@2^z@3
+|cs|1|at|^-{|ia| 1dd?|at|}
+^-
+The responder can make any of the bids that he could have made if East had passed instead of making a takeout double, but some of these bids have different meanings as a consequence of East entering the auction. There are 2 main reasons for this:
+
+|
+pg| ***** 164 ***** |
+
+
+cs|3|at|^-{ 1. South can redouble - a call that would not have been available if East had passed. }
+^-
+|
+pg| ***** 165 ***** |
+
+
+cs|2|at|^-{ 2. If South passes, he can be fairly certain that he will get another chance to bid later.
+ That would not be the case if East had passed instead of making a takeout double. }
+^-
+|
+pg| ***** 166 ***** |
+
+
+at|If, in the auction shown above, the responder bids at the 1-level (in either a new suit or 1NT), these bids have roughly the same meaning that they would have had if East had passed, but the responder should keep the following principles in mind:
+
+|
+pg| ***** 167 ***** |
+
+
+cs|4|at|^-{ Passing over an opponent's takeout double does not deny 6 (or more) total points. }
+^-
+|
+pg| ***** 168 ***** |
+
+
+cs|1|at|^-{ Bidding a new suit at the 1-level over an opponent's takeout double is forcing,
+ but the responder does not promise any more than 6 total points for such an action. }
+^-
+|
+pg| ***** 169 ***** |
+
+
+cs|3|at|^-{ Deciding on whether to bid or to pass over an opponent's takeout double is 
+ all about judgment. There are no solid rules for making these decisions.  }
+|
+pg| ***** 170 ***** |
+
+
+nt|^b@2^z@3
+|cs|1|at|^-{|ia| 1dd?|at|}
+
+^-Here are some guidelines that we have seen which can be used to resolve the question of whether to bid or to pass after an opponent's takeout double.
+
+|
+pg| ***** 171 ***** |
+
+
+cs|2|at|^-{ After your partner opens the bidding and the next hand makes a 
+ takeout double, do not bid 1NT unless you want to bid 1NT! }
+^-
+|
+pg| ***** 172 ***** |
+
+
+at|In other words, bidding 1NT in this situation suggests that you have a reasonable balanced hand with stoppers in the unbid suits. If the responder's hand is flawed for bidding 1NT, he can always pass and choose to reenter the auction at his next turn if it seems like that is a good idea at the time.
+
+|
+pg| ***** 173 ***** |
+
+
+cs|3|at|^-{ After your partner opens the bidding and the next hand makes a takeout double, 
+ do not bid a new suit at the 1-level unless you do not mind being raised by your partner! }
+^-
+|
+pg| ***** 174 ***** |
+
+
+at|The responder should not feel obliged to introduce a weak 4-card major suit, especially if he has a bare minimum hand. Again, the responder has the option of passing with this sort of hand. He will get another chance to bid and he will often be in a better position to know what to do after he has heard a second bid (or a pass) from his partner.
+|
+pg| ***** 175 ***** |
+
+
+nt|^b@2^z@3
+We have given extensive consideration to the redouble after an opponent's takeout double and the implications that the redouble has for responder's other possible actions:
+
+|cs|1|At|^-{ |ia| 1dd!r|at| }
+^-
+|
+pg| ***** 176 ***** |
+
+
+cs|3|at|^-{ With most hands containing 10 or more HCP the responder should redouble 
+ when an opponent makes a takeout double of his partner's opening bid. }
+^-
+|
+pg| ***** 177 ***** |
+
+
+at|The basic message sent by the redouble of an opponent's takeout double is as follows:
+
+|
+pg| ***** 178 ***** |
+
+
+cs|2|at|^-{ Partner, we have the majority of the high cards between us. Either our side 
+ is going to play the contract or we are going to double the opponents. }
+^-
+|
+pg| ***** 179 ***** |
+
+
+cs|4|At|^-{ Redouble is a suggestion that doubling the opponents might be a good idea, but 
+the opener should express his preference for offense if his hand is distributional. }
+^-
+|
+pg| ***** 180 ***** |
+
+
+at|This means that in an auction like the one above, the opener should make his normal rebid if he has a distributional hand. However, if North has a balanced hand (or an unbalanced hand with length in a suit that the opponents run to), he should give serious thought to attempting to penalize the opponents.
+
+|
+pg| ***** 181 ***** |
+
+
+nt|^b@2^z@3
+Some bridge players are under the false impression that if the responder to an opening bid has 10 or more high card points, he must always redouble over an opponent's takeout double. 
+
+This is not correct. There are some hands with 10 or more high card points where a redouble does not rate to work as well as bidding a new suit or raising your partner. This is another dreaded judgment situation, but here are some guidelines that you can use:
+
+|cs|1|at|^-{|ia| 1dd?|at|}
+
+|
+pg| ***** 182 ***** |
+
+
+cs|3|at|{ Redouble is a suggestion that your partnership should consider doubling the opponents. 
+ If your hand is oriented toward offense (instead of defense), it is usually not best to redouble. }
+
+|
+pg| ***** 183 ***** |
+
+
+cs|2|at|{ Balanced hands, especially those that lack strong support 
+ for the opener's suit, are good hands with which to redouble. }
+
+|
+pg| ***** 184 ***** |
+
+
+cs|4|at|{ Having a singleton or void in an unbid suit is a sign that a redouble may not be best. 
+ The opponents are very likely to have a good trump fit in the responder's short suit. }
+
+|
+pg| ***** 185 ***** |
+
+
+cs|1|at|{ Remember that failure to redouble does not deny holding 10 or more HCP! }
+
+|
+pg| ***** 186 ***** |
+
+
+nt|^b@2^z@3
+|cs|1|at|^-{|ia| 1dd?|at|}
+^-
+The responder's ability to redouble over an opponent's takeout double to show 10 or more high card points means that other traditional strength-showing bids are not needed to show strong hands anymore.
+
+In particular SAYC redefines the meanings of the following bids once a takeout double has been made over a 1-level opening bid:
+
+|
+pg| ***** 187 ***** |
+
+
+cs|3|at|^-{ A two over one response in a new suit }
+
+|
+pg| ***** 188 ***** |
+
+
+cs|2|at|{ A jump shift response }
+
+|
+pg| ***** 189 ***** |
+
+
+cs|4|at|{ A jump to 2NT }
+
+|
+pg| ***** 190 ***** |
+
+
+cs|1|at|{ A jump raise }
+^-
+|
+pg| ***** 191 ***** |
+
+
+at|In the absence of a takeout double, all of these bids would suggest strong hands. Once an opponent has made a takeout double, the responder can redouble with most strong hands. This ^*Ifrees up^*N the bids shown above for purposes that are likely to be useful in competitive auctions.
+|
+pg| ***** 192 ***** |
+
+
+nt|^b@2^z@3
+Here is a review of some of the differences in responder's actions that result from a takeout double being made by one of the opponents.
+
+|cs|3|at|^-{ After an opponent's takeout double, a response in a new suit at the 2-level shows 
+ less than 10 HCP with either a very strong 5-card suit or (more likely) at least a 6-card suit. }
+^-
+|
+pg| ***** 193 ***** |
+
+
+cs|2|at|^-{ A new suit at the 2-level after an opponent's takeout double is non-forcing. }
+^-
+|
+pg| ***** 194 ***** |
+
+
+at|In the absence of a takeout double, a new suit response at the 2-level would show at least 10 total points. Furthermore, such a bid would be forcing on the opening bidder.
+
+|
+pg| ***** 195 ***** |
+
+
+at|Deciding on whether or not to bid a new suit at the 2-level after an opponent's takeout double is yet another situation where judgment comes into play. Here is a guideline that can help in these situations:
+
+|
+pg| ***** 196 ***** |
+
+
+cs|4|at|^-{ A good question to ask yourself when you are considering bidding a new suit at the 2-level 
+ after an opponent's takeout double is: Will you be happy if the other 3 players pass? }
+^-
+|
+pg| ***** 197 ***** |
+
+
+cs|1|at|^-{ A jump shift after an opponent's takeout double is preemptive. The responder 
+ would typically have a good 6-card suit and around 4-6 HCP to make this call. }
+^-
+|
+pg| ***** 198 ***** |
+
+
+at|Without a takeout double, a jump shift response to an opening bid would describe a very strong hand. In fact, such a bid tells the opener that the responder has interest in slam. The takeout double makes a big difference in this case! 
+|
+pg| ***** 199 ***** |
+
+
+nt|^b@2^z@3
+Here is an example of an auction where a weak jump shift is used over a takeout double by the opponents and some reasons why this bid might work out well in practice:
+
+|cs|1|at|^-{|ia| 1dd!2s|at|}
+^-
+|
+pg| ***** 200 ***** |
+
+
+cs|3|at|^-{ You might make 2@S. Your partner's hand will be able to win some tricks with high cards. 
+ You are going to win some tricks with trumps. Together you might just win 8 tricks in 2@S! }
+^-
+|
+pg| ***** 201 ***** |
+
+
+cs|2|at|^-{ 2@S provides an accurate description of your hand. Your partner will be well-placed to 
+ know if he should bid anymore regardless of whether or not the opponents bid again. }
+^-
+|
+pg| ***** 202 ***** |
+
+
+cs|4|at|^-{ 2@S takes up a lot of bidding space. The opponents may have a difficult time
+ entering the auction or discovering their best contract as a result of your jump. }
+^-
+|
+pg| ***** 203 ***** |
+
+
+at|We have also seen that, in the SAYC bidding system, a takeout double by the opponents gives you some new ways to raise the suit that your partner opened:
+
+|
+pg| ***** 204 ***** |
+
+
+cs|1|at|^-{ After an opponent's takeout double of your partner's 1-level opening bid, 
+ a jump to 2NT shows at least a limit raise in support of your partner's suit. }
+
+|
+pg| ***** 205 ***** |
+
+
+cs|2|at|{ A jump raise of the opener's suit after an opponent's takeout double is preemptive. 
+ The responder should have roughly 5-8 points in support of his partner for this action. }
+^-
+|
+pg| ***** 206 ***** |
+
+
+nt|^b@2^z@3
+Both the jump to 2NT as an artificial limit raise (or better) and the preemptive jump raise to 3 of your partner's suit have some distributional requirements:
+
+|
+pg| ***** 207 ***** |
+
+
+at|^B{ |cs|1|ia| 1dd!2n|at| } ^O  { |cs|1|ia| 1dd!3d|at| } 
+
+|cs|4|at|^-{ If partner opened a minor, these bids promise at least 5-card support. }
+^-
+
+|
+pg| ***** 208 ***** |
+
+
+at|^B{ |cs|1|ia| 1sd!2n|at| } ^O  { |cs|1|ia| 1sd!3s|at| } 
+
+|cs|2|at|^-{ If partner opened a major, these bids promise at least 4-card support. }
+^-
+|
+pg| ***** 209 ***** |
+
+
+cs|3|at|
+^-{ With a limit raise that includes 4-card support for partner's minor or 3-card support 
+ for his major, start with redouble and then raise his suit at your next opportunity to bid. }
+^-
+|
+pg| ***** 210 ***** |
+
+
+cs|1|at|
+^-{ With less than a limit raise and with not enough trumps for a  preemptive jump raise, 
+ simply raise partner's suit to the 2-level (just as you would have without the takeout double). }
+|
+pg| ***** 211 ***** |
+
+
+nt|^b@2^z@3
+We saw 4 reasons why a preemptive jump raise over an opponent's takeout double tends to be a very effective tactical bid:
+
+^B{ |cs|1|ia| 1dd!3d|at| } ^O  { |cs|1|ia| 1sd!3s|at| } 
+
+|
+pg| ***** 212 ***** |
+
+
+cs|3|at|^-{ If the other 3 players pass, your partner might make his contract. When a big trump fit 
+ exists, a lot of tricks can sometimes be won even if there are not a lot of high card points. }
+^-
+|
+pg| ***** 213 ***** |
+
+
+cs|2|at|^-{ If the other 3 players pass and your partner does not make his contract, there is 
+ a good chance that the opponents could have made some contract of their own. }
+^-
+|
+pg| ***** 214 ***** |
+
+
+cs|4|at|^-{ By taking up a lot of bidding space, you make it harder for the opponents to bid accurately. }
+^-
+|
+pg| ***** 215 ***** |
+
+
+cs|1|at|^-{ A preemptive jump raise gives your partner a good description of your hand, making it 
+ easier for him to judge regardless of whether or not the opponents do any more bidding. }
+
+|
+pg| ***** 216 ***** |
+
+
+at|^-Finally, it was noted that having agreements about the number of cards that your partner will have in your suit for various types of raises will help you to judge both the offensive and the defensive potential of the partnership's hands. The more bridge you play, the more you will be able to value knowing the degree of the trump fit that your partnership possesses. Knowing how many trumps your partnership holds really helps with this mysterious thing called judgment that you keep reading about!
+
+|
+pg| ***** 217 ***** |
+
+
+nt|^b@2^z@3
+In each of the following exercises, your partner opens the bidding with 1 of a suit and the next hand makes a takeout double. What call would you make with each of the following hands?
+
+|md||ha||mb|1dd|ht|e|cs|3|at|^C {|ih|psqj96ha5d942cj873|at|} |cs|1|ht|f|at|^O{ |ia| 1dd?|at| }
+
+
+|hf|l|cq|4|lb|*BWhat call would you make?^^1S|
+va|5|hc|sqj96|at|Bid 1@S, the same bid that you would have made if East had passed. The alternative of 1NT is not horrible with this balanced hand, but your partnership could still have an 8-card spade fit. Bidding 1NT here would tend to deny a 4-card major of any reasonable strength.
+
+|cs|1|ht|f|at|^O{ |ia| 1dd!1s|at| }
+|
+pg| ***** 219 ***** |
+
+
+md||ha||mb|1cd|ht|o|cs|3|at|^C {|ih|ps8h965dajt853c764|at|} |cs|1|ht|p|at|^O{ |ia| 1cd?|at| }
+
+
+|hf|v|cq|4|lb|*BWhat call would you make?^^2D|
+hc|dajt853|va|5|at|Try 2@D. In SAYC a jump shift over an opponent's takeout double is a weak bid suggesting a good 6-card suit and little outside strength. That's an awfully good description of this hand! If East had passed you would have responded 1@D since a jump shift to 2@D is a very strong bid in that situation. East's takeout double changes everything. Take advantage of this situation to describe your hand and to make life a little bit more difficult for the opponents!
+
+|ht|p|at|^O{ |ia| 1cd!2d|at| }
+|
+pg| ***** 221 ***** |
+
+
+lc|sqj96dajt853|
+
+nt|^b@2^z@3|
+md||ha||mb|1hd|ht|b|cs|3|at|^C {|ih|psat74h6dkj85cqt92|at|} |cs|1|ht|c|at|^O{ |ia| 1hd?|at| }
+
+
+|hf|i|cq|4|lb|*BWhat call would you make?^^R|
+va|5|hs|ssscsd|at|You should redouble and be prepared to double the opponents wherever they end up. This bid suggests good defensive values |
+pg| ***** 223 ***** |
+
+
+ls|ssscsd|hc|sacqdkj|at|and at least 10 HCP. This hand has exactly 10 HCP. |
+pg| ***** 224 ***** |
+
+
+lc|dkjcqsa|hc|h6|at|Furthermore, your singleton in the suit your partner bid is a strong indication that it might be right to double the opponents. |
+pg| ***** 225 ***** |
+
+
+lc|h6|Hs|ss|at|You would have responded 1@S if East had passed, but his takeout double has given you a chance to tell your partner about your general strength and your defensive orientation. Take advantage of this chance!
+
+|cs|1|ht|c|at|^O{ |ia| 1hd!r|at| }
+|
+pg| ***** 226 ***** |
+
+
+ls|Ss|md||ha||mb|1sd|ht|o|va|3|cs|3|at|^C {|ih|psskq92h65dqt43ck86|at|} |cs|1|ht|p|va|3|at|^O{ |ia| 1sd?|at| }
+
+
+|hf|v|cq|4|lb|*BWhat call would you make?^^2N|cs|1|ht|p|va|3|at|^O{ |ia| 1sd!2n|at| }
+|ht|v|hc|skq92|at|You should bid 2NT to describe a limit raise of spades with at least 4-card support for your partner's spades. |
+pg| ***** 228 ***** |
+
+
+lc|s92|hc|ckdq|at|This hand has the 10 HCP that a redouble would promise, but redouble would suggest a defensive hand. |
+pg| ***** 229 ***** |
+
+
+lc|ckdq|hc|s92|at|Your strong support for spades makes this hand suitable for offense. A 2NT response allows you to describe your strength and support  to your partner in a single bid. What could be finer than that?|
+pg| ***** 230 ***** |
+
+
+lc|skq92|
+
+nt|^b@2^z@3|
+md||ha||mb|1dd|ht|b|cs|3|at|^C {|ih|ps943ht2da65cq6432|at|} |cs|1|ht|c|at|^O{ |ia| 1dd?|at| }
+
+
+|hf|i|cq|4|lb|*BWhat call would you make?^^P|
+va|5|hc|cqda|at|With 6 HCP |
+pg| ***** 232 ***** |
+
+
+lc|dacq|hs|sc|At|and 1 long suit point for the 5-card club suit, you would have been obliged to keep the bidding open by responding 1NT if East had passed. |
+pg| ***** 233 ***** |
+
+
+ls|sc|hs|shss|at|East's takeout double has relieved you of that obligation. With so few high card points and no stopper in either major you should not even think about bidding 1NT now that you don't have to. |
+pg| ***** 234 ***** |
+
+
+ls|sssh|at|It is best to pass for now. If your side should be playing the contract your partner will bid again.
+
+|cs|1|ht|c|at|^O{ |ia| 1dd!p|at| }
+|
+pg| ***** 235 ***** |
+
+
+md||ha||mb|1cd|ht|o|cs|3|at|^C {|ih|ps94h85dq76ckj9875|at|} |cs|1|ht|p|at|^O{ |ia| 1cd?|at| }
+
+
+|hf|v|cq|4|lb|*BWhat call would you make?^^3c|
+hc|ckj9875|cs|1|ht|p|at|^O{ |ia| 1cd!3c|at| }
+|ht|v|at|Bid 3@C - a preemptive jump raise given East's takeout double. 3@C would have been a limit raise if East had passed, but 2NT is available to show a limit raise after an opponent's takeout double. That frees up the jump raise to show a hand like this one - a lot of trumps and not much in the way of high cards. Jumping to the 3-level takes up a lot of bidding space and this will make it more difficult for your opponents to explore for their best contract.|
+pg| ***** 237 ***** |
+
+
+lc|ckj9875|
+
+nt|^b@2^z@3|
+md||ha||mb|1hd|ht|b|cs|3|at|^C {|ih|ph43s7dAt54cqj9864|at|} |cs|1|ht|c|at|^O{ |ia| 1hd?|at| }
+
+
+|hf|i|cq|4|lb|*BWhat call would you make?^^2c|
+cs|1|ht|c|at|^O{ |ia| 1hd!2c|at| }
+
+
+|va|5|hc|cqj9864|at|You should bid 2@C. Your hand would not be strong enough for a two over one response if East had passed. You would have had to respond 1NT in that case - not very appealing given the unbalanced nature of your hand. East's takeout double gives you a chance to show what you have. 2@C shows a long strong suit in a hand that contains less than 10 HCP. Furthermore, 2@C is non-forcing and, if all 3 players pass, it should be a fine place to play!
+
+|
+pg| ***** 239 ***** |
+
+
+md||ha||mb|1sd|ht|n|va|5|cs|3|at|^C {|ih|pskqt86dt65ct7532|at|} |cs|1|ht|o|va|5|at|^O{ |ia| 1sd?|at| }
+
+
+|hf|v|cq|4|lb|*BWhat call would you make?^^4s|
+hc|Skqt86|cs|1|ht|o|va|5|at|^O{ |ia| 1sd!4s|at| }
+|ht|u|va|3|at|Jump all the way to 4@S. It is true that 3@S would be a preemptive jump raise, but with strong 5-card trump support for your partner's major suit and a void in hearts, this hand is too powerful for a mere 3@S bid. You should bid 4@S with this hand even if East had passed over 1@S. His takeout double gives you all the more reason to preempt to the 4-level. This bid will make it very difficult for the opponents to judge correctly. If they let your partner play in 4@S he might well make that contract even if he has a minimum opening bid.|
+pg| ***** 241 ***** |
+
+
+bt||nt||cs|5|cp|6|fp|4|ht|i|at|^-{^^End^^ 
+      Learn to Play Bridge2          ^*bChapter 6   Section 1^*n       ^^ ^^ ^^Bidding After an Opponent's Takeout Double^^ ^^ }^- |

@@ -1,0 +1,2222 @@
+%%
+%%    This regenerated lin file was created from an original html webpage 
+%%       using    'aa_lin_from_html.php'    v_0.15      last changed on   2014 Nov 30
+%%    This file was created on   2014 Dec 03
+%%
+%%    Original source file     lrplay01-06.htm
+%%
+%%    This lin file is for preservation purposes only.  It is not for distribution. 
+%%    All copyrights and the hard work of their owners respected.
+%%    Who knows which websites will still exist in 50, 30 or even 20 years time?
+%%
+
+fh|159|ff|1Arial|fb|10|fm|1|
+fh|240|ff|2Arial|fb|20|fm|2|
+
+cr|116|cg|116|cb|1255|
+cr|2255|cg|2255|cb|20|
+cr|3255|cg|3255|cb|3255|
+cr|4124|cg|4200|cb|4250|
+cr|5000|cg|5000|cb|5000|
+
+
+%% ============= Page  0
+nt||
+bt||
+
+cs|1|ht|b|fp|1|cp|2|at|^a^*b^-{               Test Your Play As Declarer - Volume I               ^*n|fp||
+at|^^|fp|1|cp|2|at|^a^*b^*n|fp||
+cp|2|at|^*bby Paul Lukacs and Jeff Rubens^*n|
+at|^^|cp|2|at|^a^*b^*n|
+cp|2|at||
+at|^^|cp|2|at|^aCopyright © 2003.  Permission by Vivisphere Publishing}|
+at|^^|cp|2|at|^a^-|
+ht|g|cp||at|^bThe boards (Problems) in this presentation are from TEST YOUR PLAY AS DECLARER VOL. I & II by|
+at|^^|cp||at|^a|
+at|^b@2|cp|1|at|^b^*gINT,Paul Lukacs & Jeff Rubens^*n|
+cp||at| by |
+cp||at|^*bVivisphere Publishing^*n|
+cp||at| from which permission for this specific use was kindly received. The book is available from Vivisphere Publishing 675 Dutchess Turnpike, Poughkeepsie, NY 12603 |
+cp|1|at|^*hwww.vivisphere.com/^*n|
+cp||at|^*b.^*n|
+ht|j|cp||at|^u^*bTable of Content^*n|
+at|^t@2|cs|3|ht|k|cs|3|cp|1|at|^t^*b{^*n|
+cp|1|at|^*b^*n|
+at|^^|cp|1|at|^v^*gL1,^*b Problem 1^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gL2, Problem 2    ^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gL3, Problem 3    ^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gL4, Problem 4    ^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gL5, Problem 5    ^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gL6, Problem 6   ^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gINT, The Authors^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gBOK, The Book^*n|
+cp|1|at| |
+at|^^|cp|1|at|^z  }|
+ht|y|cp||at|^t^*b^*n|
+at|^^|cp||at|^b^*bPlease click the forward arrow.^*n|
+pg| ***** 0 ***** |
+
+
+%% ============= Page  1
+qx|B|nt||
+bt||
+cs|1|ht|b|fp|1|cp|2|at|^a^*b^-{               Test Your Play As Declarer - Volume I               ^*n|fp||
+at|^^|fp|1|cp|2|at|^a^*b^*n|fp||
+cp|2|at|^*bby Paul Lukacs and Jeff Rubens^*n|
+at|^^|cp|2|at|^a^*b^*n|
+cp|2|at||
+at|^^|cp|2|at|^aCopyright © 2003.  Permission by Vivisphere Publishing}|
+at|^^|cp|2|at|^a^-|
+ht|g|cp|5|at|^bThe boards (Problems) in this presentation are from TEST YOUR PLAY AS DECLARER VOL. I & II by|
+at|^^|cp||at|^a|
+at|^b@2|cp|1|at|^b^*gINT,Paul Lukacs & Jeff Rubens^*n|
+cp|5|at| by |
+cp|5|at|^*bVivisphere Publishing^*n|
+cp|5|at| from which permission for this specific use was kindly received. The book is available from Vivisphere Publishing 675 Dutchess Turnpike, Poughkeepsie, NY 12603 |
+cp|5|at|^*hwww.vivisphere.com/^*n|
+cp|5|at|^*b.^*n|
+ht|j|cp|5|at|^u^*bTable of Content^*n|
+at|^t@2|cs|3|ht|k|cs|3|cp|1|at|^t^*b{^*n|
+cp|1|at|^*b^*n|
+at|^^|cp|1|at|^v^*gL1,^*b Problem 1^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gL2, Problem 2    ^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gL3, Problem 3    ^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gL4, Problem 4    ^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gL5, Problem 5    ^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gL6, Problem 6   ^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gINT, The Authors^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gBOK, The Book^*n|
+cp|1|at| |
+at|^^|cp|1|at|^z  }|
+ht|y|cp||at|^t^*b^*n|
+at|^^|cp|5|at|^b^*bPlease click the forward arrow.^*n|
+ht|j|cp||at|^u^*bTable of Content^*n|
+at|^t@2|cs|3|ht|k|cs|3|cp|1|at|^t^*b{^*n|
+cp|1|at|^*b^*n|
+at|^^|cp|1|at|^v^*gL1,^*b Problem 1^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gL2, Problem 2    ^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gL3, Problem 3    ^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gL4, Problem 4    ^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gL5, Problem 5    ^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gL6, Problem 6   ^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gINT, The Authors^*n|
+cp|1|at||
+at|^^|cp|1|at|^t|
+at|^^|cp|1|at|^v^*gBOK, The Book^*n|
+cp|1|at| |
+at|^^|cp|1|at|^z  }|
+ht|g|cp||at|^bThe boards (Problems) in this presentation are from TEST YOUR PLAY AS DECLARER VOL. I & II by|
+at|^^|cp||at|^t|
+at|^b@2|cp|1|at|^b^*gINT,Paul Lukacs & Jeff Rubens^*n|
+cp||at| by |
+cp||at|^*bVivisphere Publishing^*n|
+cp||at| from which permission for this specific use was kindly received. The book is available from Vivisphere Publishing 675 Dutchess Turnpike, Poughkeepsie, NY 12603 |
+cp|1|at|^*hwww.vivisphere.com/^*n|
+cp||at|.|
+at|^f@2|at|^t@3|ht|k|cp||at|^f|
+at|^^|cp||at|^fIMPORTANT MESSAGE|
+at|^b@2|at|^s@3|at|^^|cp||at|^bTo get the " most bang" from your study of the movie, particularly if this is your first time here, we suggest you click and read the |
+cp|1|at| |
+cp|1|at|^*gDD,INSTRUCTIONS^*n|
+cp||at|. You may return to the main page after you are done. Otherwise, click the forward arrow or |
+cp|1|at|^*gL1,Problem 1^*n|
+cp||at| to begin the presentation. ALL text in blue is hyperlink. BTW, some of the bidding may not be as modern as you like; our purpose is to study declarer play.|
+at|^^|cp||at|^b|
+at|^^|cp||at|^bI am indebted to Howard Schutzman (BBO nickname "hondo717")  |
+cp|1|at|^*hwww.bridgesights.com/hondobridge/^*n|
+cp||at|, for editing these series.|
+at|^^|cp||at|^b|
+at|^^|cp||at|^b|
+at|^b@2|ht|x|cp||at|^bProblems 1 through 6|
+at|^^|cp||at|^bMovie Maker Kia (BBO nickname "nome"), May 18, 2014|
+ht|y|cp||at|^b^*b^*n|
+at|^^|cp||at|^b^*bPlease click the forward arrow.^*n|
+pg| ***** 1 ***** |
+
+
+%% ============= Page  2
+qx|L1|nt||
+st||
+sv|0|pn|You,,Dummy,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 1|
+md|2S95Haq54Daj3Ckq98,Skqjt3Hkt8Dq5Cjt5,Sa86H62Dt4Ca76432,S742Hj973Dk98762|
+sk|s|
+ha||mb|p|mb|p|mb|p|mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bWith spade king lead, please plan the play to make the 3N contract.  South seems to have nine easy tricks but there is a fly in the ointment:  the club suit is blocked.  The block will not prevent running the suit if the opponents' clubs are split 2-1.|
+pc|sk|
+pg| ***** 2 ***** |
+
+
+%% ============= Page  3
+nt||
+st||
+sv|0|pn|You,,Dummy,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 1|
+md|2S95Haq54Daj3Ckq98,Sqjt3kHkt8Dq5Cjt5,Sa86H62Dt4Ca76432,S742Hj973Dk98762|
+sk||
+ha||mb|p|mb|p|mb|p|mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|pc|sk|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bWith that hint, go ahead try solving the problem with |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy feature. But do not click the forward arrow as it turns off the |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy feature. The most recently played card may be taken back by clicking the back arrow or the undo button. When finished click the forward arrow to see the solution.|
+pg| ***** 3 ***** |
+
+
+%% ============= Page  4
+nt||
+st||
+sv|0|pn|You,,Dummy,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 1|
+md|2S95Haq54Daj3Ckq98,Sqjt3kHkt8Dq5Cjt5,Sa86H62Dt4Ca76432,S742Hj973Dk98762|
+ha||mb|p|mb|p|mb|p|mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|pc|sk|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bAs we said, the club suit is blocked. The block will not prevent running the suit if the opponents' clubs are split 2-1. In that case, declarer can win the first two club tricks with the king and queen, exhausting the East/West clubs, then win the third trick in clubs with the nine, and finally overtake the eight with the ace. However, a 3-0 club split will doom this plan, and declarer should take measures to guard against this possibility.|
+pg| ***** 4 ***** |
+
+
+%% ============= Page  5
+nt||
+st||
+sv|0|pn|You,,Dummy,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 1|
+md|2S95Haq54Daj3Ckq98,Sqjt3kHkt8Dq5Cjt5,Sa86H62Dt4Ca76432,S742Hj973Dk98762|
+ha||mb|p|mb|p|mb|p|mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|pc|sk|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bThe simplest way to overcome the problem is to discard one of South's clubs. This can be accomplished only through one suit, spades, so South should duck the opening lead. If West leads another spade, declarer ducks again and can now take nine tricks by playing king@-queen-ace of clubs and throwing his last club on the spade ace. If West shifts, declarer wins and ducks another spade himself, achieving the same position. Let us reload the hand so you can play it |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy.|
+pg| ***** 5 ***** |
+
+
+%% ============= Page  6
+nt||
+st||
+sv|0|pn|You,,Dummy,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 1-Double Dummy|
+md|2S95Haq54Daj3Ckq98,Skqjt3Hkt8Dq5Cjt5,Sa86H62Dt4Ca76432,S742Hj973Dk98762|
+ha||mb|p|mb|p|mb|p|mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+cs|4|ht|c|cs|4|cp||at|^a^-{    Again you can play the hand |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy as the authors suggested. The opening lead is @sK.   |
+at|^^|cp||at|^aThe most recently played card may be taken back by clicking the back arrow or the undo button. |
+at|^^|cp||at|^a  After each trick, just click in the middle of the page. When finished or if not interested in |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy play,  |
+at|^^|cp||at|^aclick the forward arrow to move to the next hand.}|
+at|^^|cp||at|^a^-|
+pg| ***** 6 ***** |
+
+
+%% ============= Page  7
+nt||
+st||
+sv|0|pn|You,,Dummy,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 1-Double Dummy|
+md|2S95Haq54Daj3Ckq98,Skqjt3Hkt8Dq5Cjt5,Sa86H62Dt4Ca76432,S742Hj973Dk98762|
+ha||mb|p|mb|p|mb|p|mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+cs|4|ht|c|cs|4|cp||at|^a^-{    Again you can play the hand |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy as the authors suggested. The opening lead is @sK.   |
+at|^^|cp||at|^aThe most recently played card may be taken back by clicking the back arrow or the undo button. |
+at|^^|cp||at|^a  After each trick, just click in the middle of the page. When finished or if not interested in |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy play,  |
+at|^^|cp||at|^aclick the forward arrow to move to the next hand.}|
+at|^^|cp||at|^a^-|
+at|^^|cp||at|^a^-Click|
+cp|1|at|^*gB, the main page^*n|
+cp||at| to return to it or click the forward arrow to move to the next board.|
+at|^^|cp||at|^a^-|
+pg| ***** 7 ***** |
+
+
+%% ============= Page  8
+qx|L2|nt||
+st||
+sv|0|pn|You,,Dummy,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 2|
+md|1Sakq52Hj964DakCa3,StHkt832Dj97C9765,S843D8642Ckqjt84,Sj976Haq75Dqt53C2|
+sk|s|
+ha||mb|2c|mb|p|mb|3c|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|an|first round control/clubs|mb|p|mb|5h|an|first round control/hearts|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bYou may not agree with the bidding sequence--not relevant for our purpose though. But North/South are in 6@s. With the heart 3 opening lead, please make your plan to make the contract.|
+pc|h3|
+pg| ***** 8 ***** |
+
+
+%% ============= Page  9
+nt||
+st||
+sv|0|pn|You,,Dummy,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 2|
+md|1Sakq52Hj964DakCa3,StHkt823Dj97C9765,S843D8642Ckqjt84,Sj976Haq75Dqt53C2|
+ha||mb|2c|mb|p|mb|3c|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|an|first round control/clubs|mb|p|mb|5h|an|first round control/hearts|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|pc|h3|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bOf course you are going to ruff the opening lead.|
+pc|s3|pc|h5|pc|h4|
+pg| ***** 9 ***** |
+
+
+%% ============= Page  10
+nt||
+st||
+sv|0|pn|You,,Dummy,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 2|
+md|1Sakq52Hj964DakCa3,StHkt823Dj97C9765,S843D8642Ckqjt84,Sj976Haq75Dqt53C2|
+ha||mb|2c|mb|p|mb|3c|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|an|first round control/clubs|mb|p|mb|5h|an|first round control/hearts|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|pc|h3|pc|s3|pc|h5|tc|r|pc|h4|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bNow comes the hard part. As you can see the @sJ 10 9 7 6 are outstanding. Declarer should have no problem making an over-trick if they are 3-2. However, the contract will fail if they are 4-1. Therefore, plan to make it with 4-1 split in mind. The next play is the critical one. |
+pg| ***** 10 ***** |
+
+
+%% ============= Page  11
+nt||
+st||
+sv|0|pn|You,,Dummy,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 2|
+md|1Sakq52Hj964DakCa3,StHkt823Dj97C9765,S843D8642Ckqjt84,Sj976Haq75Dqt53C2|
+sk||
+ha||mb|2c|mb|p|mb|3c|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|an|first round control/clubs|mb|p|mb|5h|an|first round control/hearts|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|h3|pc|s3|pc|h5|pc|h4|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bGo ahead and play the hand out. The |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy feature is on. But do not click the forward arrow as it turns off the |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy feature. The most recently played card may be taken back by clicking the back arrow or the undo button. When finished click the forward arrow to see the solution.|
+pg| ***** 11 ***** |
+
+
+%% ============= Page  12
+nt||
+st||
+sv|0|pn|You,,Dummy,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 2-Repeat|
+md|1Sakq52Hj964DakCa3,StHkt832Dj97C9765,S843D8642Ckqjt84,Sj976Haq75Dqt53C2|
+sk||
+ha||mb|2c|mb|p|mb|3c|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|an|first round control/clubs|mb|p|mb|5h|an|first round control/hearts|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|at|^b@2|ht|a|cp||at|^b |
+at|^^|cp||at|^b^*bSolution^*n|
+cp||at|: After ruffing the opening lead (@h3) in dummy,|
+pc|h3|pc|s3|pc|h5|pc|h4|
+pg| ***** 12 ***** |
+
+
+%% ============= Page  13
+nt||
+st||
+sv|0|pn|You,,Dummy,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 2-Repeat|
+md|1Sakq52Hj964DakCa3,StHkt823Dj97C9765,S843D8642Ckqjt84,Sj976Haq75Dqt53C2|
+sk||
+ha||mb|2c|mb|p|mb|3c|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|an|first round control/clubs|mb|p|mb|5h|an|first round control/hearts|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|pc|h3|pc|s3|pc|h5|tc|r|pc|h4|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bDeclarer should play one round of spades starting with @s4 and play low from his own hand. The critical play is giving one trump trick to the opponents. The defenders can win this trick, but declarer will take the rest (barring a 5-0 break in a black suit). A further heart lead can be ruffed in dummy.|
+pc|s4|pc|s6|pc|s2|pc|st|
+pg| ***** 13 ***** |
+
+
+%% ============= Page  14
+nt||
+st||
+sv|0|pn|You,,Dummy,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 2-Repeat|
+md|1Sakq52Hj964DakCa3,StHkt823Dj97C9765,S834D8642Ckqjt84,Sj976Haq75Dqt53C2|
+ha||mb|2c|mb|p|mb|3c|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|an|first round control/clubs|mb|p|mb|5h|an|first round control/hearts|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|h3|pc|s3|pc|h5|pc|h4|tc|r|
+tc|c|pc|s4|pc|s6|pc|s2|tc|r|pc|st|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bThis play gives up an over trick when trumps break 3-2, but preserves the contract when trumps break 4-1. If declarer tries to draw trumps by leading high ones, a 4-1 trump break defeats him. If South tries to ruff two hearts and throw another on a club, he may be frustrated by a 4-1 club break. The immediate duck in spades avoids all these dangers. The rest is easy.|
+pg| ***** 14 ***** |
+
+
+%% ============= Page  15
+nt||
+st||
+sv|0|pn|You,,Dummy,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 2 Double Dummy|
+md|1Sakq52Hj964DakCa3,StHkt832Dj97C9765,S843D8642Ckqjt84,Sj976Haq75Dqt53C2|
+sk||
+ha||mb|2c|mb|p|mb|3c|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|an|first round control/clubs|mb|p|mb|5h|an|first round control/hearts|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+cs|4|ht|c|cs|4|cp||at|^a^-{    Again you can play the hand |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy as the authors suggested. The opening lead is @h3.   |
+at|^^|cp||at|^aThe most recently played card may be taken back by clicking the back arrow or the undo button. |
+at|^^|cp||at|^a  After each trick, just click in the middle of the page. When finished or if not interested in |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy play,  |
+at|^^|cp||at|^aclick the forward arrow to move to the next hand.}|
+at|^^|cp||at|^a^-|
+pg| ***** 15 ***** |
+
+
+%% ============= Page  16
+nt||
+st||
+sv|0|pn|You,,Dummy,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 2 Double Dummy|
+md|1Sakq52Hj964DakCa3,StHkt832Dj97C9765,S843D8642Ckqjt84,Sj976Haq75Dqt53C2|
+ha||mb|2c|mb|p|mb|3c|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|an|first round control/clubs|mb|p|mb|5h|an|first round control/hearts|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+cs|4|ht|c|cs|4|cp||at|^a^-{    Again you can play the hand |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy as the authors suggested. The opening lead is @h3.   |
+at|^^|cp||at|^aThe most recently played card may be taken back by clicking the back arrow or the undo button. |
+at|^^|cp||at|^a  After each trick, just click in the middle of the page. When finished or if not interested in |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy play,  |
+at|^^|cp||at|^aclick the forward arrow to move to the next hand.}|
+at|^^|cp||at|^a^-|
+at|^^|cp||at|^a^-Click|
+cp|1|at|^*gB, the main page^*n|
+cp||at| to return to it or click the forward arrow to move to the next board.|
+at|^^|cp||at|^a^-|
+pg| ***** 16 ***** |
+
+
+%% ============= Page  17
+qx|L3|nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 3|
+md|1SkjHkqDat52Ca9542,St987HtDj976Cj876,SaqHajDkq843Ckqt3,S65432H98765432|
+sk|s|
+ha||mb|1n|mb|p|mb|7n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bIt may be a freak board but you are declaring 7N with @s10 as the opening lead. Plan your play. This contract looks easy, but is actually tricky. The critical fact is that the club and diamond suits have different properties. Declarer is sure to pick up the club suit even if one opponent has all four missing clubs--if he leads the king or queen first, But in diamonds, if the suit is 4-0 declarer must guess how to play the suit--king or queen first if he judges East may have all four; ace first, if he judges West may hold all four.|
+pc|st|
+pg| ***** 17 ***** |
+
+
+%% ============= Page  18
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 3|
+md|1SkjHkqDat52Ca9542,S987tHtDj976Cj876,SaqHajDkq843Ckqt3,S65432H98765432|
+sk||
+ha||mb|1n|mb|p|mb|7n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|pc|st|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bGo ahead try solving the problem with |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy feature. But do not click the forward arrow as it turns off the |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy feature. The most recently played card may be taken back by clicking the back arrow or the undo button. When finished click the forward arrow to see the solution.|
+pg| ***** 18 ***** |
+
+
+%% ============= Page  19
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 3 - Solution|
+md|1SkjHkqDat52Ca9542,St987HtDj976Cj876,SaqHajDkq843Ckqt3,S65432H98765432|
+ha||mb|1n|mb|p|mb|7n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^b^*bSolution^*n|
+cp||at|: Declarer should reserve his decision in diamonds as long as possible to get information to help him resolve this guess. After playing clubs and discovering West has all four, it cannot hurt him to play off his major suit winners. Let us handle the opening lead and then test the clubs.|
+pc|st|
+pg| ***** 19 ***** |
+
+
+%% ============= Page  20
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 3 - Solution|
+md|1SkjHkqDat52Ca9542,S987tHtDj976Cj876,SaqHajDkq843Ckqt3,S65432H98765432|
+ha||mb|1n|mb|p|mb|7n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|pc|st|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^b^*bSolution^*n|
+cp|5|at|: Declarer should reserve his decision in diamonds as long as possible to get information to help him resolve this guess. After playing clubs and discovering West has all four, it cannot hurt him to play off his major suit winners. Let us handle the opening lead and then test the clubs.|
+pc|sa|pc|s2|pc|sj|
+pg| ***** 20 ***** |
+
+
+%% ============= Page  21
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 3 - Solution|
+md|1SkjHkqDat52Ca9542,S987tHtDj976Cj876,SqaHajDkq843Ckqt3,S65432H98765432|
+ha||mb|1n|mb|p|mb|7n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|pc|st|pc|sa|pc|s2|tc|r|pc|sj|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bSo West has all the clubs and you need to play the clubs accordingly.|
+pc|ck|pc|h2|
+pg| ***** 21 ***** |
+
+
+%% ============= Page  22
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 3 - Solution|
+md|1SkjHkqDat52Ca9542,S987tHtDj976Cj876,SqaHajDkq843Cqt3k,S65432H98765432|
+ha||mb|1n|mb|p|mb|7n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|st|pc|sa|pc|s2|pc|sj|tc|r|
+tc|c|pc|ck|pc|h2|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bSo West has all the clubs and you need to play the clubs accordingly.|
+pc|c2|pc|c6|
+pg| ***** 22 ***** |
+
+
+%% ============= Page  23
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 3 - Solution|
+md|1SkjHkqDat52Ca9542,S987tHtDj976Cj876,SqaHajDkq843Cqt3k,S65432H98765432|
+ha||mb|1n|mb|p|mb|7n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|st|pc|sa|pc|s2|pc|sj|tc|r|
+tc|c|pc|ck|pc|h2|pc|c2|tc|r|pc|c6|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bSo West has all the clubs and you need to play the clubs accordingly.|
+pc|hj|pc|h3|pc|hk|pc|ht|
+pg| ***** 23 ***** |
+
+
+%% ============= Page  24
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 3 - Solution|
+md|1SkjHqkDat52Ca9542,S987tHtDj976Cj876,SqaHajDkq843Cqt3k,S65432H98765423|
+ha||mb|1n|mb|p|mb|7n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|st|pc|sa|pc|s2|pc|sj|
+pc|ck|pc|h2|pc|c2|pc|c6|tc|r|
+tc|c|pc|hj|pc|h3|pc|hk|tc|r|pc|ht|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bSo West has all the clubs and you need to play the clubs accordingly.|
+pc|c4|pc|c7|pc|ct|pc|h4|
+pg| ***** 24 ***** |
+
+
+%% ============= Page  25
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 3 - Solution|
+md|1SkjHqkDat52Ca9524,S987tHtDj976Cj867,SqaHajDkq843Cq3kt,S65432H98765234|
+ha||mb|1n|mb|p|mb|7n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|st|pc|sa|pc|s2|pc|sj|
+pc|ck|pc|h2|pc|c2|pc|c6|
+pc|hj|pc|h3|pc|hk|pc|ht|tc|r|
+tc|c|pc|c4|pc|c7|pc|ct|tc|r|pc|h4|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bSo West has all the clubs and you need to play the clubs accordingly.|
+pc|cq|pc|h5|pc|c5|pc|c8|
+pg| ***** 25 ***** |
+
+
+%% ============= Page  26
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 3 - Solution|
+md|1SkjHqkDat52Ca9245,S987tHtDj976Cj678,SqaHajDkq843C3ktq,S65432H98762345|
+ha||mb|1n|mb|p|mb|7n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|st|pc|sa|pc|s2|pc|sj|
+pc|ck|pc|h2|pc|c2|pc|c6|
+pc|hj|pc|h3|pc|hk|pc|ht|
+pc|c4|pc|c7|pc|ct|pc|h4|tc|r|
+tc|c|pc|cq|pc|h5|pc|c5|tc|r|pc|c8|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bSo West has all the clubs and you need to play the clubs accordingly.|
+pc|c3|pc|h6|pc|ca|pc|cj|
+pg| ***** 26 ***** |
+
+
+%% ============= Page  27
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 3 - Solution|
+md|1SkjHqkDat52C9245a,S987tHtDj976C678j,SqaHajDkq843Cktq3,S65432H98723456|
+ha||mb|1n|mb|p|mb|7n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|st|pc|sa|pc|s2|pc|sj|
+pc|ck|pc|h2|pc|c2|pc|c6|
+pc|hj|pc|h3|pc|hk|pc|ht|
+pc|c4|pc|c7|pc|ct|pc|h4|
+pc|cq|pc|h5|pc|c5|pc|c8|tc|r|
+tc|c|pc|c3|pc|h6|pc|ca|tc|r|pc|cj|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bSo West has all the clubs and you need to play the clubs accordingly.|
+pc|c9|pc|s7|pc|d3|pc|s3|
+pg| ***** 27 ***** |
+
+
+%% ============= Page  28
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 3 - Solution|
+md|1SkjHqkDat52C245a9,S98t7HtDj976C678j,SqaHajDkq843Cktq3,S65423H98723456|
+ha||mb|1n|mb|p|mb|7n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|st|pc|sa|pc|s2|pc|sj|
+pc|ck|pc|h2|pc|c2|pc|c6|
+pc|hj|pc|h3|pc|hk|pc|ht|
+pc|c4|pc|c7|pc|ct|pc|h4|
+pc|cq|pc|h5|pc|c5|pc|c8|
+pc|c3|pc|h6|pc|ca|pc|cj|tc|r|
+tc|c|pc|c9|pc|s7|pc|d3|tc|r|pc|s3|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bNow you can tell that East started with eight hearts and at least two spades, so it is impossible for him to have started with four diamonds.|
+pc|hq|pc|s8|pc|ha|pc|h7|
+pg| ***** 28 ***** |
+
+
+%% ============= Page  29
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 3 - Solution|
+md|1SkjHkqDat52C245a9,S9t78HtDj976C678j,SqaHjaDkq843Cktq3,S65423H98234567|
+ha||mb|1n|mb|p|mb|7n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|st|pc|sa|pc|s2|pc|sj|
+pc|ck|pc|h2|pc|c2|pc|c6|
+pc|hj|pc|h3|pc|hk|pc|ht|
+pc|c4|pc|c7|pc|ct|pc|h4|
+pc|cq|pc|h5|pc|c5|pc|c8|
+pc|c3|pc|h6|pc|ca|pc|cj|
+pc|c9|pc|s7|pc|d3|pc|s3|tc|r|
+tc|c|pc|hq|pc|s8|pc|ha|tc|r|pc|h7|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bTherefore, you can cash the diamond ace first and then play @d10 from hand. If West plays the jack you win with King and return to hand with spade king and win the remaining tricks.|
+pg| ***** 29 ***** |
+
+
+%% ============= Page  30
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 3 - Solution|
+md|1SkjHkqDat52C245a9,S9t78HtDj976C678j,SqaHjaDkq843Cktq3,S65423H98234567|
+ha||mb|1n|mb|p|mb|7n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|st|pc|sa|pc|s2|pc|sj|
+pc|ck|pc|h2|pc|c2|pc|c6|
+pc|hj|pc|h3|pc|hk|pc|ht|
+pc|c4|pc|c7|pc|ct|pc|h4|
+pc|cq|pc|h5|pc|c5|pc|c8|
+pc|c3|pc|h6|pc|ca|pc|cj|
+pc|c9|pc|s7|pc|d3|pc|s3|
+pc|hq|pc|s8|pc|ha|pc|h7|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bTherefore, you can cash the diamond ace first and then play @d10 from hand. If West plays the jack you win with King and return to hand with spade king and win the remaining tricks.|
+pc|d4|pc|s4|pc|da|pc|d6|
+pg| ***** 30 ***** |
+
+
+%% ============= Page  31
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 3 - Solution|
+md|1SkjHkqDt52aC245a9,S9t78HtDj976C678j,SqaHjaDkq834Cktq3,S65234H98234567|
+ha||mb|1n|mb|p|mb|7n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|st|pc|sa|pc|s2|pc|sj|
+pc|ck|pc|h2|pc|c2|pc|c6|
+pc|hj|pc|h3|pc|hk|pc|ht|
+pc|c4|pc|c7|pc|ct|pc|h4|
+pc|cq|pc|h5|pc|c5|pc|c8|
+pc|c3|pc|h6|pc|ca|pc|cj|
+pc|c9|pc|s7|pc|d3|pc|s3|
+pc|hq|pc|s8|pc|ha|pc|h7|tc|r|
+tc|c|pc|d4|pc|s4|pc|da|tc|r|pc|d6|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bTherefore, you can cash the diamond ace first and then play @d10 from hand. If West plays the jack you win with King and return to hand with spade king and win the remaining tricks.|
+pc|dt|pc|d7|pc|d8|
+pg| ***** 31 ***** |
+
+
+%% ============= Page  32
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 3 - Solution|
+md|1SkjHkqD52atC245a9,S9t78HtDj967C678j,SqaHjaDkq348Cktq3,S65234H98234567|
+ha||mb|1n|mb|p|mb|7n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|st|pc|sa|pc|s2|pc|sj|
+pc|ck|pc|h2|pc|c2|pc|c6|
+pc|hj|pc|h3|pc|hk|pc|ht|
+pc|c4|pc|c7|pc|ct|pc|h4|
+pc|cq|pc|h5|pc|c5|pc|c8|
+pc|c3|pc|h6|pc|ca|pc|cj|
+pc|c9|pc|s7|pc|d3|pc|s3|
+pc|hq|pc|s8|pc|ha|pc|h7|
+pc|d4|pc|s4|pc|da|pc|d6|tc|r|
+tc|c|pc|dt|pc|d7|pc|d8|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bTherefore, you can cash the diamond ace first and then play @d10 from hand. If West plays the jack you win with King and return to hand with spade king and win the remaining tricks.|
+mc|13|
+pg| ***** 32 ***** |
+
+
+%% ============= Page  33
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 3 - Solution|
+md|1SkjHkqDat52Ca9542,St987HtDj976Cj876,SaqHajDkq843Ckqt3,S65432H98765432|
+ha||mb|1n|mb|p|mb|7n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+cs|4|ht|c|cs|4|cp||at|^a^-{    You may now play this hand |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy by clicking the cards you want to play. @s10 was the original lead.    |
+at|^^|cp||at|^aThe most recently played card may be taken back by clicking the back arrow or the undo button. |
+at|^^|cp||at|^a  After each trick, just click in the middle of the page. When finished or if not interested in |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy play,  |
+at|^^|cp||at|^aclick the forward arrow to move to the next hand.}|
+at|^^|cp||at|^a^-|
+pg| ***** 33 ***** |
+
+
+%% ============= Page  34
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 3 - Solution|
+md|1SkjHkqDat52Ca9542,St987HtDj976Cj876,SaqHajDkq843Ckqt3,S65432H98765432|
+ha||mb|1n|mb|p|mb|7n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+cs|4|ht|c|cs|4|cp||at|^a^-{    You may now play this hand |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy by clicking the cards you want to play. @s10 was the original lead.    |
+at|^^|cp||at|^aThe most recently played card may be taken back by clicking the back arrow or the undo button. |
+at|^^|cp||at|^a  After each trick, just click in the middle of the page. When finished or if not interested in |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy play,  |
+at|^^|cp||at|^aclick the forward arrow to move to the next hand.}|
+at|^^|cp||at|^a^-|
+at|^^|cp||at|^a^-Click|
+cp|1|at|^*gB, the main page^*n|
+cp||at| to return to it or click the forward arrow to move to the next board.|
+at|^^|cp||at|^a^-|
+pg| ***** 34 ***** |
+
+
+%% ============= Page  35
+qx|L4|nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4|
+md|2Sakq654Hak87Da5Ca,SjHqj9652Dqt7Cj97,St32Ht4Dk4Ct86542,S987H3Dj98632Ckq3|
+sk|s|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bYou are the declarer in 6@s contract. With West leading spade jack please plan the play.|
+pc|sj|
+pg| ***** 35 ***** |
+
+
+%% ============= Page  36
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4|
+md|2Sakq654Hak87Da5Ca,SjHqj9652Dqt7Cj97,St32Ht4Dk4Ct86542,S987H3Dj98632Ckq3|
+sk||
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|pc|sj|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bGo ahead try solving the problem with |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy feature. But do not click the forward arrow as it turns off the double dummy feature. The most recently played card may be taken back by clicking the back arrow or the undo button. When finished click the forward arrow to see the solution.|
+pg| ***** 36 ***** |
+
+
+%% ============= Page  37
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sakq654Hak87Da5Ca,SjHqj9652Dqt7Cj97,St32Ht4Dk4Ct86542,S987H3Dj98632Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^b^*bSolution^*n|
+cp||at|: First you take the lead in hand and need to make your final plan. When finished your plan please click the forward arrow to get the solution.|
+pc|sj|pc|s2|pc|s7|pc|sq|
+pg| ***** 37 ***** |
+
+
+%% ============= Page  38
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sak654qHak87Da5Ca,SjHqj9652Dqt7Cj97,St32Ht4Dk4Ct86542,S987H3Dj98632Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|pc|sj|pc|s2|pc|s7|tc|r|pc|sq|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bWhen a contract seems secure, declarer should think what might possibly go wrong. Even though trumps are 3-1, there will be no problem if a high heart is not ruffed, since dummy's ruffing trump is a high one. When declarer draws a second round of trumps and discovers that East holds the missing trump, he should play to neutralize the effect of the ruff of a high heart.|
+pc|sa|pc|h2|
+pg| ***** 38 ***** |
+
+
+%% ============= Page  39
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sk654qaHak87Da5Ca,SjHqj9652Dqt7Cj97,St32Ht4Dk4Ct86542,S987H3Dj98632Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|sj|pc|s2|pc|s7|pc|sq|tc|r|
+tc|c|pc|sa|pc|h2|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bThe correct play is to draw two trumps,|
+pc|s3|pc|s8|
+pg| ***** 39 ***** |
+
+
+%% ============= Page  40
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sk654qaHak87Da5Ca,SjHqj9652Dqt7Cj97,St23Ht4Dk4Ct86542,S978H3Dj98632Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|sj|pc|s2|pc|s7|pc|sq|tc|r|
+tc|c|pc|sa|pc|h2|pc|s3|tc|r|pc|s8|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bthen cash one high heart,|
+pc|ha|pc|h5|pc|h4|pc|h3|
+pg| ***** 40 ***** |
+
+
+%% ============= Page  41
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sk654qaHk87aDa5Ca,SjHqj9625Dqt7Cj97,St23Ht4Dk4Ct86542,S978H3Dj98632Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|sj|pc|s2|pc|s7|pc|sq|
+pc|sa|pc|h2|pc|s3|pc|s8|tc|r|
+tc|c|pc|ha|pc|h5|pc|h4|tc|r|pc|h3|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bthen lead a diamond to dummy in order to lead a heart through East.|
+pc|d5|pc|d7|pc|dk|pc|d2|
+pg| ***** 41 ***** |
+
+
+%% ============= Page  42
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sk654qaHk87aDa5Ca,SjHqj9625Dqt7Cj97,St23Ht4D4kCt86542,S978H3Dj98632Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|sj|pc|s2|pc|s7|pc|sq|
+pc|sa|pc|h2|pc|s3|pc|s8|
+pc|ha|pc|h5|pc|h4|pc|h3|tc|r|
+tc|c|pc|d5|pc|d7|pc|dk|tc|r|pc|d2|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bthen lead a diamond to dummy in order to lead a heart through East.|
+pc|ht|
+pg| ***** 42 ***** |
+
+
+%% ============= Page  43
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sk654qaHk87aDa5Ca,SjHqj9625Dqt7Cj97,St23H4tD4kCt86542,S978H3Dj98632Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|sj|pc|s2|pc|s7|pc|sq|
+pc|sa|pc|h2|pc|s3|pc|s8|
+pc|ha|pc|h5|pc|h4|pc|h3|
+pc|d5|pc|d7|pc|dk|pc|d2|tc|r|
+tc|c|pc|ht|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bIf East discards, declarer safely wins his second high heart and ruffs a heart loser in dummy.|
+pc|d3|pc|hk|pc|h6|
+pg| ***** 43 ***** |
+
+
+%% ============= Page  44
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sk654qaH87akDa5Ca,SjHqj9256Dqt7Cj97,St23H4tD4kCt86542,S978H3Dj98623Ckq3|
+sk||
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|sj|pc|s2|pc|s7|pc|sq|
+pc|sa|pc|h2|pc|s3|pc|s8|
+pc|ha|pc|h5|pc|h4|pc|h3|
+pc|d5|pc|d7|pc|dk|pc|d2|tc|r|
+tc|c|pc|ht|pc|d3|pc|hk|tc|r|pc|h6|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bIf East discards, declarer safely wins his second high heart and ruffs a heart loser in dummy.|
+pc|h7|pc|h9|pc|st|pc|d6|
+pg| ***** 44 ***** |
+
+
+%% ============= Page  45
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sk654qaH8ak7Da5Ca,SjHqj2569Dqt7Cj97,S23tH4tD4kCt86542,S978H3Dj98236Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|sj|pc|s2|pc|s7|pc|sq|
+pc|sa|pc|h2|pc|s3|pc|s8|
+pc|ha|pc|h5|pc|h4|pc|h3|
+pc|d5|pc|d7|pc|dk|pc|d2|
+pc|ht|pc|d3|pc|hk|pc|h6|tc|r|
+tc|c|pc|h7|pc|h9|pc|st|tc|r|pc|d6|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bIf East discards, declarer safely wins his second high heart and ruffs a heart loser in dummy.|
+pc|c2|pc|c3|pc|ca|pc|c7|
+pg| ***** 45 ***** |
+
+
+%% ============= Page  46
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sk654qaH8ak7Da5Ca,SjHqj2569Dqt7Cj97,S23tH4tD4kCt86542,S978H3Dj98236Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|sj|pc|s2|pc|s7|pc|sq|
+pc|sa|pc|h2|pc|s3|pc|s8|
+pc|ha|pc|h5|pc|h4|pc|h3|
+pc|d5|pc|d7|pc|dk|pc|d2|
+pc|ht|pc|d3|pc|hk|pc|h6|
+pc|h7|pc|h9|pc|st|pc|d6|tc|r|
+tc|c|pc|c2|pc|c3|pc|ca|tc|r|pc|c7|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bIf East discards, declarer safely wins his second high heart and ruffs a heart loser in dummy.|
+mc|12|
+pg| ***** 46 ***** |
+
+
+%% ============= Page  47
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sk654qaH8ak7Da5Ca,SjHqj2569Dqt7Cj97,S23tH4tD4kCt86542,S978H3Dj98236Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|sj|pc|s2|pc|s7|pc|sq|
+pc|sa|pc|h2|pc|s3|pc|s8|
+pc|ha|pc|h5|pc|h4|pc|h3|
+pc|d5|pc|d7|pc|dk|pc|d2|
+pc|ht|pc|d3|pc|hk|pc|h6|
+pc|h7|pc|h9|pc|st|pc|d6|
+pc|c2|pc|c3|pc|ca|pc|c7|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bNot taking a second round of trumps would be the best play for seven, not six.|
+pg| ***** 47 ***** |
+
+
+%% ============= Page  48
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sk654qaH8ak7Da5Ca,SjHqj2569Dqt7Cj97,S23tH4tD4kCt86542,S978H3Dj98236Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|sj|pc|s2|pc|s7|pc|sq|
+pc|sa|pc|h2|pc|s3|pc|s8|
+pc|ha|pc|h5|pc|h4|pc|h3|
+pc|d5|pc|d7|pc|dk|pc|d2|
+pc|ht|pc|d3|pc|hk|pc|h6|
+pc|h7|pc|h9|pc|st|pc|d6|
+pc|c2|pc|c3|pc|ca|pc|c7|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bNow let us go back and see what should declarer do if East ruffs heart ten.|
+pg| ***** 48 ***** |
+
+
+%% ============= Page  49
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sk654qaHk87aDa5Ca,SjHqj9625Dqt7Cj97,St23H4tD4kCt86542,S978H3Dj98632Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|sj|pc|s2|pc|s7|pc|sq|
+pc|sa|pc|h2|pc|s3|pc|s8|
+pc|ha|pc|h5|pc|h4|pc|h3|
+pc|d5|pc|d7|pc|dk|pc|d2|tc|r|
+tc|c|pc|ht|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bNow let us go back and see what should declarer do if East ruffs heart ten.|
+pc|s9|
+pg| ***** 49 ***** |
+
+
+%% ============= Page  50
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sk654qaHk87aDa5Ca,SjHqj9625Dqt7Cj97,St23H4tD4kCt86542,S789H3Dj98632Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|sj|pc|s2|pc|s7|pc|sq|
+pc|sa|pc|h2|pc|s3|pc|s8|
+pc|ha|pc|h5|pc|h4|pc|h3|
+pc|d5|pc|d7|pc|dk|pc|d2|tc|r|
+tc|c|pc|ht|pc|s9|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bdeclarer follows low,|
+pc|h7|pc|h6|
+pg| ***** 50 ***** |
+
+
+%% ============= Page  51
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sk654qaHk8a7Da5Ca,SjHqj9256Dqt7Cj97,St23H4tD4kCt86542,S789H3Dj98632Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|sj|pc|s2|pc|s7|pc|sq|
+pc|sa|pc|h2|pc|s3|pc|s8|
+pc|ha|pc|h5|pc|h4|pc|h3|
+pc|d5|pc|d7|pc|dk|pc|d2|tc|r|
+tc|c|pc|ht|pc|s9|pc|h7|tc|r|pc|h6|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^band later ruffs his remaining low heart in dummy.|
+pc|d6|pc|da|pc|dt|pc|d4|
+pg| ***** 51 ***** |
+
+
+%% ============= Page  52
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sk654qaHk8a7D5aCa,SjHqj9256Dq7tCj97,St23H4tDk4Ct86542,S789H3Dj98326Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|sj|pc|s2|pc|s7|pc|sq|
+pc|sa|pc|h2|pc|s3|pc|s8|
+pc|ha|pc|h5|pc|h4|pc|h3|
+pc|d5|pc|d7|pc|dk|pc|d2|
+pc|ht|pc|s9|pc|h7|pc|h6|tc|r|
+tc|c|pc|d6|pc|da|pc|dt|tc|r|pc|d4|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^band later ruffs his remaining low heart in dummy.|
+pc|h8|pc|h9|pc|st|pc|d3|
+pg| ***** 52 ***** |
+
+
+%% ============= Page  53
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sk654qaHka78D5aCa,SjHqj2569Dq7tCj97,S23tH4tDk4Ct86542,S789H3Dj98263Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|sj|pc|s2|pc|s7|pc|sq|
+pc|sa|pc|h2|pc|s3|pc|s8|
+pc|ha|pc|h5|pc|h4|pc|h3|
+pc|d5|pc|d7|pc|dk|pc|d2|
+pc|ht|pc|s9|pc|h7|pc|h6|
+pc|d6|pc|da|pc|dt|pc|d4|tc|r|
+tc|c|pc|h8|pc|h9|pc|st|tc|r|pc|d3|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^band later ruffs his remaining low heart in dummy.|
+pc|c2|pc|c3|pc|ca|pc|c7|
+pg| ***** 53 ***** |
+
+
+%% ============= Page  54
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sk654qaHka78D5aCa,SjHqj2569Dq7tCj97,S23tH4tDk4Ct86542,S789H3Dj98263Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|sj|pc|s2|pc|s7|pc|sq|
+pc|sa|pc|h2|pc|s3|pc|s8|
+pc|ha|pc|h5|pc|h4|pc|h3|
+pc|d5|pc|d7|pc|dk|pc|d2|
+pc|ht|pc|s9|pc|h7|pc|h6|
+pc|d6|pc|da|pc|dt|pc|d4|
+pc|h8|pc|h9|pc|st|pc|d3|tc|r|
+tc|c|pc|c2|pc|c3|pc|ca|tc|r|pc|c7|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^band later ruffs his remaining low heart in dummy.|
+mc|12|
+pg| ***** 54 ***** |
+
+
+%% ============= Page  55
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sakq654Hak87Da5Ca,SjHqj9652Dqt7Cj97,St32Ht4Dk4Ct86542,S987H3Dj98632Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+cs|4|ht|c|cs|4|cp||at|^a^-{    You may now play this hand |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy by clicking the cards you want to play. @sJ was the original lead.    |
+at|^^|cp||at|^aThe most recently played card may be taken back by clicking the back arrow or the undo button. |
+at|^^|cp||at|^a  After each trick, just click in the middle of the page. When finished or if not interested in |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy play,  |
+at|^^|cp||at|^aclick the forward arrow to move to the next hand.}|
+at|^^|cp||at|^a^-|
+pg| ***** 55 ***** |
+
+
+%% ============= Page  56
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 4-Solution|
+md|2Sakq654Hak87Da5Ca,SjHqj9652Dqt7Cj97,St32Ht4Dk4Ct86542,S987H3Dj98632Ckq3|
+ha||mb|p|mb|p|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|p|mb|5c|mb|p|mb|5d|mb|p|mb|6s|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+cs|4|ht|c|cs|4|cp||at|^a^-{    You may now play this hand |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy by clicking the cards you want to play. @sJ was the original lead.    |
+at|^^|cp||at|^aThe most recently played card may be taken back by clicking the back arrow or the undo button. |
+at|^^|cp||at|^a  After each trick, just click in the middle of the page. When finished or if not interested in |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy play,  |
+at|^^|cp||at|^aclick the forward arrow to move to the next hand.}|
+at|^^|cp||at|^a^-|
+at|^^|cp||at|^a^-Click|
+cp|1|at|^*gB, the main page^*n|
+cp||at| to return to it or click the forward arrow to move to the next board.|
+at|^^|cp||at|^a^-|
+pg| ***** 56 ***** |
+
+
+%% ============= Page  57
+qx|L5|nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5|
+md|3SkqjHj94D963Caqt5,S65432Hat5Dqjt2C2,Sat8Hq762Dk54Cj93,S97Hk83Da87Ck8764|
+sk|s|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bYou are declaring 1N and West leads diamond queen, followed by jack, and deuce of diamonds.|
+pg| ***** 57 ***** |
+
+
+%% ============= Page  58
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5|
+md|3SkqjHj94D963Caqt5,S65432Hat5Dqjt2C2,Sat8Hq762Dk54Cj93,S97Hk83Da87Ck8764|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bYou are declaring 1N and West leads diamond queen, followed by jack, and deuce of diamonds.|
+pc|dq|pc|d4|pc|d7|pc|d3|
+pg| ***** 58 ***** |
+
+
+%% ============= Page  59
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5|
+md|3SkqjHj94D963Caqt5,S65432Hat5Djt2qC2,Sat8Hq762Dk54Cj93,S97Hk83Da87Ck8764|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|pc|dq|pc|d4|pc|d7|tc|r|pc|d3|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bYou are declaring 1N and West leads diamond queen, followed by jack, and deuce of diamonds.|
+pc|dj|pc|d5|pc|d8|pc|d6|
+pg| ***** 59 ***** |
+
+
+%% ============= Page  60
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5|
+md|3SkqjHj94D936Caqt5,S65432Hat5Dt2qjC2,Sat8Hq762Dk45Cj93,S97Hk83Da78Ck8764|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|dq|pc|d4|pc|d7|pc|d3|tc|r|
+tc|c|pc|dj|pc|d5|pc|d8|tc|r|pc|d6|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bYou are declaring 1N and West leads diamond queen, followed by jack, and deuce of diamonds.|
+pc|d2|pc|dk|pc|da|pc|d9|
+pg| ***** 60 ***** |
+
+
+%% ============= Page  61
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5|
+md|3SkqjHj94D369Caqt5,S65432Hat5Dtqj2C2,Sat8Hq762D45kCj93,S97Hk83D78aCk8764|
+sk||
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|dq|pc|d4|pc|d7|pc|d3|
+pc|dj|pc|d5|pc|d8|pc|d6|tc|r|
+tc|c|pc|d2|pc|dk|pc|da|tc|r|pc|d9|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bEast wins the third trick with Ace and shifts to a spade 9. Now you need to make your plan. As a hint you need to decide which suit to develop and afterward choose the right card to play from that suit. Let us see how your plan would be working@-use |
+cp||at|^*bdouble ^*n|
+cp||at|^*bD^*n|
+cp||at|ummy|
+cp||at| feature. When done click the forward arrow to see the |
+cp||at|^*bSolution^*n|
+cp||at|. We reload the board.|
+pc|s9|
+pg| ***** 61 ***** |
+
+
+%% ============= Page  62
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5-Solution|
+md|3SkqjHj94D963Caqt5,S65432Hat5Dqjt2C2,Sat8Hq762Dk54Cj93,S97Hk83Da87Ck8764|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bYou are declaring 1N and West leads diamond queen, followed by jack, and deuce of diamonds.|
+pg| ***** 62 ***** |
+
+
+%% ============= Page  63
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5-Solution|
+md|3SkqjHj94D963Caqt5,S65432Hat5Dqjt2C2,Sat8Hq762Dk54Cj93,S97Hk83Da87Ck8764|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bYou are declaring 1N and West leads diamond queen, followed by jack, and deuce of diamonds.|
+pc|dq|pc|d4|pc|d7|pc|d3|
+pg| ***** 63 ***** |
+
+
+%% ============= Page  64
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5-Solution|
+md|3SkqjHj94D963Caqt5,S65432Hat5Djt2qC2,Sat8Hq762Dk54Cj93,S97Hk83Da87Ck8764|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|pc|dq|pc|d4|pc|d7|tc|r|pc|d3|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bYou are declaring 1N and West leads diamond queen, followed by jack, and deuce of diamonds.|
+pc|dj|pc|d5|pc|d8|pc|d6|
+pg| ***** 64 ***** |
+
+
+%% ============= Page  65
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5-Solution|
+md|3SkqjHj94D936Caqt5,S65432Hat5Dt2qjC2,Sat8Hq762Dk45Cj93,S97Hk83Da78Ck8764|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|dq|pc|d4|pc|d7|pc|d3|tc|r|
+tc|c|pc|dj|pc|d5|pc|d8|tc|r|pc|d6|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bYou are declaring 1N and West leads diamond queen, followed by jack, and deuce of diamonds.|
+pc|d2|pc|dk|pc|da|pc|d9|
+pg| ***** 65 ***** |
+
+
+%% ============= Page  66
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5-Solution|
+md|3SkqjHj94D369Caqt5,S65432Hat5Dtqj2C2,Sat8Hq762D45kCj93,S97Hk83D78aCk8764|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|dq|pc|d4|pc|d7|pc|d3|
+pc|dj|pc|d5|pc|d8|pc|d6|tc|r|
+tc|c|pc|d2|pc|dk|pc|da|tc|r|pc|d9|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^b^*bSolution^*n|
+cp||at|: It would be poor strategy for declarer to try for hearts, because even if he could set up two heart tricks he would still need the club finesse to make his contract. Instead, declarer should depend on the club finesse. But he must be careful. First declarer must play the @sJ from hand and @sA from the dummy|
+pc|s9|
+pg| ***** 66 ***** |
+
+
+%% ============= Page  67
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5-Solution|
+md|3SkqjHj94D369Caqt5,S65432Hat5Dtqj2C2,Sat8Hq762D45kCj93,S79Hk83D78aCk8764|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|dq|pc|d4|pc|d7|pc|d3|
+pc|dj|pc|d5|pc|d8|pc|d6|
+pc|d2|pc|dk|pc|da|pc|d9|tc|r|
+tc|c|pc|s9|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^b^*bSolution^*n|
+cp|5|at|: It would be poor strategy for declarer to try for hearts, because even if he could set up two heart tricks he would still need the club finesse to make his contract. Instead, declarer should depend on the club finesse. But he must be careful. First declarer must play the @sJ from hand and @sA from the dummy|
+pc|sj|pc|s2|pc|sa|
+pg| ***** 67 ***** |
+
+
+%% ============= Page  68
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5-Solution|
+md|3SkqjHj94D369Caqt5,S65432Hat5Dtqj2C2,St8aHq762D45kCj93,S79Hk83D78aCk8764|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|dq|pc|d4|pc|d7|pc|d3|
+pc|dj|pc|d5|pc|d8|pc|d6|
+pc|d2|pc|dk|pc|da|pc|d9|tc|r|
+tc|c|pc|s9|pc|sj|pc|s2|tc|r|pc|sa|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bFrom dummy to lead the three would make it impossible to repeat the finesse. To lead the jack would squeeze the South hand in clubs if East, properly, ducked. If South plays the five, he must win the next club in his hand; if South plays the ten, East has a fourth-round stopper.|
+pg| ***** 68 ***** |
+
+
+%% ============= Page  69
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5-Solution|
+md|3SkqjHj94D369Caqt5,S65432Hat5Dtqj2C2,St8aHq762D45kCj93,S79Hk83D78aCk8764|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|dq|pc|d4|pc|d7|pc|d3|
+pc|dj|pc|d5|pc|d8|pc|d6|
+pc|d2|pc|dk|pc|da|pc|d9|
+pc|s9|pc|sj|pc|s2|pc|sa|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bThe correct play is to lead the club nine from dummy, underplaying with the five if East ducks. Then lead the jack from dummy, underplaying with the ten. However, East defends, declarer makes four club tricks and his contract.|
+pc|c9|pc|c4|pc|c5|pc|c2|
+pg| ***** 69 ***** |
+
+
+%% ============= Page  70
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5-Solution|
+md|3SkqjHj94D369Caqt5,S65432Hat5Dtqj2C2,St8aHq762D45kCj39,S79Hk83D78aCk8764|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|dq|pc|d4|pc|d7|pc|d3|
+pc|dj|pc|d5|pc|d8|pc|d6|
+pc|d2|pc|dk|pc|da|pc|d9|
+pc|s9|pc|sj|pc|s2|pc|sa|tc|r|
+tc|c|pc|c9|pc|c4|pc|c5|tc|r|pc|c2|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bThe correct play is to lead the club nine from dummy, underplaying with the five if East ducks. Then lead the jack from dummy, underplaying with the ten. However, East defends, declarer makes four club tricks and his contract.|
+pc|cj|pc|c6|pc|ct|pc|s3|
+pg| ***** 70 ***** |
+
+
+%% ============= Page  71
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5-Solution|
+md|3SkqjHj94D369Caq5t,S65423Hat5Dtqj2C2,St8aHq762D45kC39j,S79Hk83D78aCk8746|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|dq|pc|d4|pc|d7|pc|d3|
+pc|dj|pc|d5|pc|d8|pc|d6|
+pc|d2|pc|dk|pc|da|pc|d9|
+pc|s9|pc|sj|pc|s2|pc|sa|
+pc|c9|pc|c4|pc|c5|pc|c2|tc|r|
+tc|c|pc|cj|pc|c6|pc|ct|tc|r|pc|s3|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bThe correct play is to lead the club nine from dummy, underplaying with the five if East ducks. Then lead the jack from dummy, underplaying with the ten. However, East defends, declarer makes four club tricks and his contract.|
+pc|c3|pc|c7|pc|cq|pc|s4|
+pg| ***** 71 ***** |
+
+
+%% ============= Page  72
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5-Solution|
+md|3SkqjHj94D369Ca5tq,S65234Hat5Dtqj2C2,St8aHq762D45kC9j3,S79Hk83D78aCk8467|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|dq|pc|d4|pc|d7|pc|d3|
+pc|dj|pc|d5|pc|d8|pc|d6|
+pc|d2|pc|dk|pc|da|pc|d9|
+pc|s9|pc|sj|pc|s2|pc|sa|
+pc|c9|pc|c4|pc|c5|pc|c2|
+pc|cj|pc|c6|pc|ct|pc|s3|tc|r|
+tc|c|pc|c3|pc|c7|pc|cq|tc|r|pc|s4|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bThe correct play is to lead the club nine from dummy, underplaying with the five if East ducks. Then lead the jack from dummy, underplaying with the ten. However, East defends, declarer makes four club tricks and his contract.|
+pc|ca|pc|h5|pc|h2|pc|c8|
+pg| ***** 72 ***** |
+
+
+%% ============= Page  73
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5-Solution|
+md|3SkqjHj94D369C5tqa,S65234Hat5Dtqj2C2,St8aHq762D45kC9j3,S79Hk83D78aCk4678|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|dq|pc|d4|pc|d7|pc|d3|
+pc|dj|pc|d5|pc|d8|pc|d6|
+pc|d2|pc|dk|pc|da|pc|d9|
+pc|s9|pc|sj|pc|s2|pc|sa|
+pc|c9|pc|c4|pc|c5|pc|c2|
+pc|cj|pc|c6|pc|ct|pc|s3|
+pc|c3|pc|c7|pc|cq|pc|s4|tc|r|
+tc|c|pc|ca|pc|h5|pc|h2|tc|r|pc|c8|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bThe correct play is to lead the club nine from dummy, underplaying with the five if East ducks. Then lead the jack from dummy, underplaying with the ten. However, East defends, declarer makes four club tricks and his contract.|
+pc|sq|pc|s5|pc|s8|pc|s7|
+pg| ***** 73 ***** |
+
+
+%% ============= Page  74
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5-Solution|
+md|3SkjqHj94D369C5tqa,S62345Hat5Dtqj2C2,Sta8Hq762D45kC9j3,S97Hk83D78aCk4678|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|dq|pc|d4|pc|d7|pc|d3|
+pc|dj|pc|d5|pc|d8|pc|d6|
+pc|d2|pc|dk|pc|da|pc|d9|
+pc|s9|pc|sj|pc|s2|pc|sa|
+pc|c9|pc|c4|pc|c5|pc|c2|
+pc|cj|pc|c6|pc|ct|pc|s3|
+pc|c3|pc|c7|pc|cq|pc|s4|
+pc|ca|pc|h5|pc|h2|pc|c8|tc|r|
+tc|c|pc|sq|pc|s5|pc|s8|tc|r|pc|s7|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bThe correct play is to lead the club nine from dummy, underplaying with the five if East ducks. Then lead the jack from dummy, underplaying with the ten. However, East defends, declarer makes four club tricks and his contract.|
+pc|sk|pc|s6|pc|st|pc|h3|
+pg| ***** 74 ***** |
+
+
+%% ============= Page  75
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5-Solution|
+md|3SjqkHj94D369C5tqa,S23456Hat5Dtqj2C2,Sa8tHq762D45kC9j3,S97Hk83D78aCk4678|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|dq|pc|d4|pc|d7|pc|d3|
+pc|dj|pc|d5|pc|d8|pc|d6|
+pc|d2|pc|dk|pc|da|pc|d9|
+pc|s9|pc|sj|pc|s2|pc|sa|
+pc|c9|pc|c4|pc|c5|pc|c2|
+pc|cj|pc|c6|pc|ct|pc|s3|
+pc|c3|pc|c7|pc|cq|pc|s4|
+pc|ca|pc|h5|pc|h2|pc|c8|
+pc|sq|pc|s5|pc|s8|pc|s7|tc|r|
+tc|c|pc|sk|pc|s6|pc|st|tc|r|pc|h3|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bThe correct play is to lead the club nine from dummy, underplaying with the five if East ducks. Then lead the jack from dummy, underplaying with the ten. However, East defends, declarer makes four club tricks and his contract.|
+mc|7|
+pg| ***** 75 ***** |
+
+
+%% ============= Page  76
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5-Solution|
+md|3SkqjHj94D963Caqt5,S65432Hat5Dqjt2C2,Sat8Hq762Dk54Cj93,S97Hk83Da87Ck8764|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+cs|4|ht|c|cs|4|cp||at|^a^-{    You may now play this hand |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy by clicking the cards you want to play. @dQ was the original lead.    |
+at|^^|cp||at|^aThe most recently played card may be taken back by clicking the back arrow or the undo button. |
+at|^^|cp||at|^a  After each trick, just click in the middle of the page. When finished or if not interested in |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy play,  |
+at|^^|cp||at|^aclick the forward arrow to move to the next hand.}|
+at|^^|cp||at|^a^-|
+pg| ***** 76 ***** |
+
+
+%% ============= Page  77
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 5-Solution|
+md|3SkqjHj94D963Caqt5,S65432Hat5Dqjt2C2,Sat8Hq762Dk54Cj93,S97Hk83Da87Ck8764|
+ha||mb|p|mb|p|mb|1c|mb|p|mb|1h|mb|p|mb|1n|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+cs|4|ht|c|cs|4|cp||at|^a^-{    You may now play this hand |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy by clicking the cards you want to play. @dQ was the original lead.    |
+at|^^|cp||at|^aThe most recently played card may be taken back by clicking the back arrow or the undo button. |
+at|^^|cp||at|^a  After each trick, just click in the middle of the page. When finished or if not interested in |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy play,  |
+at|^^|cp||at|^aclick the forward arrow to move to the next hand.}|
+at|^^|cp||at|^a^-|
+at|^^|cp||at|^a^-Click|
+cp|1|at|^*gB, the main page^*n|
+cp||at| to return to it or click the forward arrow to move to the next board.|
+at|^^|cp||at|^a^-|
+pg| ***** 77 ***** |
+
+
+%% ============= Page  78
+qx|L6|nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 6|
+md|4Saq2H3Dkqt632Ckq5,Sk76Hjt872D5Cj982,S543Ha6Daj98Ca764,Sjt98Hkq954D74Ct3|
+sk|s|
+ha||mb|p|mb|6d|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bWe shortened the bidding and North/South will end in 6@d contract.|
+pg| ***** 78 ***** |
+
+
+%% ============= Page  79
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 6|
+md|4Saq2H3Dkqt632Ckq5,Sk76Hjt872D5Cj982,S543Ha6Daj98Ca764,Sjt98Hkq954D74Ct3|
+sk||
+ha||mb|p|mb|6d|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bWest leads the heart jack which you win the lead in Dummy.|
+pc|hj|pc|ha|pc|h4|pc|h3|
+pg| ***** 79 ***** |
+
+
+%% ============= Page  80
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 6|
+md|4Saq2H3Dkqt632Ckq5,Sk76Ht872jD5Cj982,S543H6aDaj98Ca764,Sjt98Hkq954D74Ct3|
+ha||mb|p|mb|6d|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|pc|hj|pc|ha|pc|h4|tc|r|pc|h3|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bPlease make your plan to make 12 tricks. Go ahead try solving the problem with |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy feature. But do not click the forward arrow as it turns off the double dummy feature. The most recently played card may be taken back by clicking the back arrow or the undo button. When finished click the forward arrow to see the solution.|
+pg| ***** 80 ***** |
+
+
+%% ============= Page  81
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 6-Solution|
+md|4Saq2H3Dkqt632Ckq5,Sk76Hjt872D5Cj982,S543Ha6Daj98Ca764,Sjt98Hkq954D74Ct3|
+ha||mb|p|mb|6d|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bWe shortened the bidding and North/South will end in 6@d contract.|
+pg| ***** 81 ***** |
+
+
+%% ============= Page  82
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 6-Solution|
+md|4Saq2H3Dkqt632Ckq5,Sk76Hjt872D5Cj982,S543Ha6Daj98Ca764,Sjt98Hkq954D74Ct3|
+sk||
+ha||mb|p|mb|6d|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bWest leads the heart jack which you win the lead in Dummy.|
+pc|hj|pc|ha|pc|h4|pc|h3|
+pg| ***** 82 ***** |
+
+
+%% ============= Page  83
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 6-Solution|
+md|4Saq2H3Dkqt632Ckq5,Sk76Ht872jD5Cj982,S543H6aDaj98Ca764,Sjt98Hkq954D74Ct3|
+ha||mb|p|mb|6d|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|pc|hj|pc|ha|pc|h4|tc|r|pc|h3|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^b^*bSolution:^*n|
+cp||at| After winning the lead in dummy, you should draw trumps before or after ruffing dummy's low heart.|
+pg| ***** 83 ***** |
+
+
+%% ============= Page  84
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 6-Solution|
+md|4Saq2H3Dkqt632Ckq5,Sk76Ht872jD5Cj982,S543H6aDaj98Ca764,Sjt98Hkq954D74Ct3|
+ha||mb|p|mb|6d|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|hj|pc|ha|pc|h4|pc|h3|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^b^*bSolution:^*n|
+cp|5|at| After winning the lead in dummy, you should draw trumps before or after ruffing dummy's low heart.|
+pc|h6|pc|h9|pc|d2|pc|h2|
+pg| ***** 84 ***** |
+
+
+%% ============= Page  85
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 6-Solution|
+md|4Saq2H3Dkqt632Ckq5,Sk76Ht87j2D5Cj982,S543Ha6Daj98Ca764,Sjt98Hkq549D74Ct3|
+ha||mb|p|mb|6d|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|hj|pc|ha|pc|h4|pc|h3|tc|r|
+tc|c|pc|h6|pc|h9|pc|d2|tc|r|pc|h2|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^b^*bSolution:^*n|
+cp|5|at| After winning the lead in dummy, you should draw trumps before or after ruffing dummy's low heart.|
+pc|dk|pc|d5|pc|d8|pc|d4|
+pg| ***** 85 ***** |
+
+
+%% ============= Page  86
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 6-Solution|
+md|4Saq2H3Dqt632kCkq5,Sk76Ht87j2D5Cj982,S543Ha6Daj98Ca764,Sjt98Hkq549D74Ct3|
+ha||mb|p|mb|6d|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|hj|pc|ha|pc|h4|pc|h3|
+pc|h6|pc|h9|pc|d2|pc|h2|tc|r|
+tc|c|pc|dk|pc|d5|pc|d8|tc|r|pc|d4|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^b^*bSolution:^*n|
+cp|5|at| After winning the lead in dummy, you should draw trumps before or after ruffing dummy's low heart.|
+pc|dq|pc|h7|pc|d9|pc|d7|
+pg| ***** 86 ***** |
+
+
+%% ============= Page  87
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 6-Solution|
+md|4Saq2H3Dt632kqCkq5,Sk76Ht8j27D5Cj982,S543Ha6Daj89Ca764,Sjt98Hkq549D47Ct3|
+ha||mb|p|mb|6d|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|hj|pc|ha|pc|h4|pc|h3|
+pc|h6|pc|h9|pc|d2|pc|h2|
+pc|dk|pc|d5|pc|d8|pc|d4|tc|r|
+tc|c|pc|dq|pc|h7|pc|d9|tc|r|pc|d7|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bThere are two main chances for the contract: a 3-3 club split, and a spade finesse. If the spades are tried first, the only extra chance would be an unlikely black-suit squeeze. But if the clubs are tried first, declarer has an extra chance. Let us try clubs first. Please watch all the cards carefully. You will get the needed clue soon.|
+pg| ***** 87 ***** |
+
+
+%% ============= Page  88
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 6-Solution|
+md|4Saq2H3Dt632kqCkq5,Sk76Ht8j27D5Cj982,S543Ha6Daj89Ca764,Sjt98Hkq549D47Ct3|
+ha||mb|p|mb|6d|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|hj|pc|ha|pc|h4|pc|h3|
+pc|h6|pc|h9|pc|d2|pc|h2|
+pc|dk|pc|d5|pc|d8|pc|d4|
+pc|dq|pc|h7|pc|d9|pc|d7|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bThere are two main chances for the contract: a 3-3 club split, and a spade finesse. If the spades are tried first, the only extra chance would be an unlikely black-suit squeeze. But if the clubs are tried first, declarer has an extra chance. Let us try clubs first. Please watch all the cards carefully. You will get the needed clue soon.|
+pc|ck|pc|c2|pc|c4|pc|c3|
+pg| ***** 88 ***** |
+
+
+%% ============= Page  89
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 6-Solution|
+md|4Saq2H3Dt632kqCq5k,Sk76Ht8j27D5Cj982,S543Ha6Daj89Ca764,Sjt98Hkq549D47Ct3|
+ha||mb|p|mb|6d|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|hj|pc|ha|pc|h4|pc|h3|
+pc|h6|pc|h9|pc|d2|pc|h2|
+pc|dk|pc|d5|pc|d8|pc|d4|
+pc|dq|pc|h7|pc|d9|pc|d7|tc|r|
+tc|c|pc|ck|pc|c2|pc|c4|tc|r|pc|c3|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bThere are two main chances for the contract: a 3-3 club split, and a spade finesse. If the spades are tried first, the only extra chance would be an unlikely black-suit squeeze. But if the clubs are tried first, declarer has an extra chance. Let us try clubs first. Please watch all the cards carefully. You will get the needed clue soon.|
+pc|cq|pc|c8|pc|c6|pc|ct|
+pg| ***** 89 ***** |
+
+
+%% ============= Page  90
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 6-Solution|
+md|4Saq2H3Dt632kqC5kq,Sk76Ht8j27D5Cj928,S543Ha6Daj89Ca746,Sjt98Hkq549D47C3t|
+ha||mb|p|mb|6d|mb|p|mb|p|mb|p|
+sb|sI got my clue -:).|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|hj|pc|ha|pc|h4|pc|h3|
+pc|h6|pc|h9|pc|d2|pc|h2|
+pc|dk|pc|d5|pc|d8|pc|d4|
+pc|dq|pc|h7|pc|d9|pc|d7|
+pc|ck|pc|c2|pc|c4|pc|c3|tc|r|
+tc|c|pc|cq|pc|c8|pc|c6|tc|r|pc|ct|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bThere are two main chances for the contract: a 3-3 club split, and a spade finesse. If the spades are tried first, the only extra chance would be an unlikely black-suit squeeze. But if the clubs are tried first, declarer has an extra chance. Let us try clubs first. Please watch all the cards carefully. You will get the needed clue soon.|
+pc|c5|pc|c9|pc|ca|pc|h5|
+pg| ***** 90 ***** |
+
+
+%% ============= Page  91
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 6-Solution|
+md|4Saq2H3Dt632kqCkq5,Sk76Ht8j27D5Cj289,S543Ha6Daj89C746a,Sjt98Hkq495D47C3t|
+ha||mb|p|mb|6d|mb|p|mb|p|mb|p|
+sb|sI got my clue -:).|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|hj|pc|ha|pc|h4|pc|h3|
+pc|h6|pc|h9|pc|d2|pc|h2|
+pc|dk|pc|d5|pc|d8|pc|d4|
+pc|dq|pc|h7|pc|d9|pc|d7|
+pc|ck|pc|c2|pc|c4|pc|c3|
+pc|cq|pc|c8|pc|c6|pc|ct|tc|r|
+tc|c|pc|c5|pc|c9|pc|ca|tc|r|pc|h5|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bGreat pick up South. As you played clubs and West shows with four clubs as East showed out. Now you can lead a fourth round from dummy, discarding a losing spade.|
+pg| ***** 91 ***** |
+
+
+%% ============= Page  92
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 6-Solution|
+md|4Saq2H3Dt632kqCkq5,Sk76Ht8j27D5Cj289,S543Ha6Daj89C746a,Sjt98Hkq495D47C3t|
+ha||mb|p|mb|6d|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|hj|pc|ha|pc|h4|pc|h3|
+pc|h6|pc|h9|pc|d2|pc|h2|
+pc|dk|pc|d5|pc|d8|pc|d4|
+pc|dq|pc|h7|pc|d9|pc|d7|
+pc|ck|pc|c2|pc|c4|pc|c3|
+pc|cq|pc|c8|pc|c6|pc|ct|
+pc|c5|pc|c9|pc|ca|pc|h5|tc|r|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp||at|^bIf West wins this trick, he is endplayed: he must either lead into the spade A-Q, or concede a ruff-and sluff.|
+pc|c7|pc|s8|pc|s2|pc|cj|
+pg| ***** 92 ***** |
+
+
+%% ============= Page  93
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 6-Solution|
+md|4Saq2H3Dt632kqCkq5,Sk76Ht8j27D5C289j,S543Ha6Daj89C46a7,Sjt98Hkq495D47C3t|
+ha||mb|p|mb|6d|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+wt|w|tc|c|   
+pc|hj|pc|ha|pc|h4|pc|h3|
+pc|h6|pc|h9|pc|d2|pc|h2|
+pc|dk|pc|d5|pc|d8|pc|d4|
+pc|dq|pc|h7|pc|d9|pc|d7|
+pc|ck|pc|c2|pc|c4|pc|c3|
+pc|cq|pc|c8|pc|c6|pc|ct|
+pc|c5|pc|c9|pc|ca|pc|h5|tc|r|
+tc|c|pc|c7|pc|s8|pc|s2|tc|r|pc|cj|
+at|^b@2|ht|a|cp||at|^b|
+at|^^|cp|5|at|^bIf West wins this trick, he is endplayed: he must either lead into the spade A-Q, or concede a ruff-and sluff.|
+mc|12|
+pg| ***** 93 ***** |
+
+
+%% ============= Page  94
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 6-Solution|
+md|4Saq2H3Dkqt632Ckq5,Sk76Hjt872D5Cj982,S543Ha6Daj98Ca764,Sjt98Hkq954D74Ct3|
+ha||mb|p|mb|6d|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+cs|4|ht|c|cs|4|cp||at|^a^-{    You may now play this hand |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy by clicking the cards you want to play. @hJ was the original lead.    |
+at|^^|cp||at|^aThe most recently played card may be taken back by clicking the back arrow or the undo button. |
+at|^^|cp||at|^a  After each trick, just click in the middle of the page. When finished or if not interested in |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy play,  |
+at|^^|cp||at|^aclick the forward arrow to move to the next section.}|
+at|^^|cp||at|^a^-|
+pg| ***** 94 ***** |
+
+
+%% ============= Page  95
+nt||
+st||
+sv|0|pn|You,,Partner,|
+rh||ah|Paul Lukacs & Jeff Rubens|ah|Test Your Play as a Declarer|ah|Problem 6-Solution|
+md|4Saq2H3Dkqt632Ckq5,Sk76Hjt872D5Cj982,S543Ha6Daj98Ca764,Sjt98Hkq954D74Ct3|
+ha||mb|p|mb|6d|mb|p|mb|p|mb|p|
+sb|s|sb|w|sb|n|sb|e|
+cs|4|ht|c|cs|4|cp||at|^a^-{    You may now play this hand |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy by clicking the cards you want to play. @hJ was the original lead.    |
+at|^^|cp||at|^aThe most recently played card may be taken back by clicking the back arrow or the undo button. |
+at|^^|cp||at|^a  After each trick, just click in the middle of the page. When finished or if not interested in |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy play,  |
+at|^^|cp||at|^aclick the forward arrow to move to the next section.}|
+at|^^|cp||at|^a^-|
+at|^^|cp||at|^a^-Click|
+cp|1|at|^*gB, the main page^*n|
+cp||at| to return to it or click the forward arrow to move to see the introduction section.|
+at|^^|cp||at|^a^-|
+pg| ***** 95 ***** |
+
+
+%% ============= Page  96
+qx|INT|nt||
+bt||
+cs|1|ht|b|fp|2|cp|2|at|^a^*b^-{^*n|fp||
+at|^^|fp|2|cp|2|at|^a^*b      "These are a must for any serious player's library.      ^*n|fp||
+at|^^|fp|2|cp|2|at|^a^*bThey are just brilliant books."    ^*n|fp||
+at|^^|fp|2|cp|2|at|^a^*b^*n|fp||
+at|^^|fp|2|cp|2|at|^a^*b@- ACBL Bulletin}^*n|fp||
+at|^^|fp|2|cp|2|at|^a^*b^-^*n|fp||
+at|^b@2|ht|i|cp||at|^b|
+at|^^|cp||at|^bTwo famous internationalists teach you how to analyze and play out the difficult hands that separate the neophytes from the prize winners.|
+at|^^|cp||at|^b|
+at|^^|cp||at|^b^*bPAUL LUKACS^*n|
+cp||at| (1915-1982) was a renowned problem constructor and analyst, who represented Israel in international play. His most lasting contribution to bridge literature was as co-author of "Spotlight on Card Play" (with Robert Darvas), the first post-war problem collection to highlight expert thought processes.|
+at|^^|cp||at|^b|
+at|^^|cp||at|^b^*bJEFF RUBENS^*n|
+cp||at| (b. 1941), a former mathematics professor, has been co@-editor and then editor of the world's most prestigious bridge magazine, "The Bridge World," since 1967. His best known book is the classic "Secrets of Winning Bridge."|
+at|^^|cp||at|^b|
+at|^^|cp||at|^b|
+at|^b@2|ht|y|cp||at|^bPlease, click|
+cp|1|at|^*gB, here^*n|
+cp||at| to return to your previous location or click the forward arrow to see the next section.|
+pg| ***** 96 ***** |
+
+
+%% ============= Page  97
+qx|BOK|nt||
+bt||
+cs|1|ht|b|fp|1|cp|2|at|^a^*b{               Test Your Play As Declarer - Volume I                ^*n|fp||
+at|^^|fp|1|cp|2|at|^a^*b^*n|fp||
+cp|2|at|^*b^-by Paul Lukacs and Jeff Rubens}^*n|
+at|^^|cp|2|at|^a^*b^-^*n|
+at|^b@2|ht|f|cp||at|^bTEST YOUR PLAY is considered an excellent workbook for improving your declarer play and is on the same level of difficulty as that of Watson.  To study in movie format Louis H. Watson's CLASSIC BOOK ON PLAY OF THE HAND AT BRIDGE, click this |
+cp|1|at|^*htiny.cc/ftmhdx^*n|
+cp||at| link or get it from BIL library at |
+cp|1|at|^*hwww.bilbridge.com^*n|
+cp||at|.|
+at|^^|cp||at|^b|
+at|^^|cp||at|^bFrom both volumes, each week we present a few boards. The boards presented show the North/South hands, the contract, and opening lead on one page; followed by the authors' analysis on the next. The format, therefore, allows the viewer to plan the play of the contract before reading the authors' analysis and explanation of the correct line of play. Should the viewer then wish to play the boards &##145;hands on' in |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy@-highly recommended for effectual study, instructions are provided |
+cp|1|at|^*gDD, here^*n|
+cp||at|. Please note all blue text is hyperlink.|
+at|^^|cp||at|^b|
+at|^^|cp||at|^bTo adapt the text of the book to work within the movie format, I have made minor changes to the content of the solutions. The purpose remains to consider the various distributions of the suits and plan the play in a certain order to ensure the contract. |
+at|^^|cp||at|^b|
+at|^^|cp||at|^bKia|
+at|^^|cp||at|^bApril 2014|
+pg| ***** 97 ***** |
+
+
+%% ============= Page  98
+nt||
+bt||
+cs|1|ht|b|fp|1|cp|2|at|^a^*b{               Test Your Play As Declarer - Volume I                ^*n|fp||
+at|^^|fp|1|cp|2|at|^a^*b^*n|fp||
+cp|2|at|^*b^-by Paul Lukacs and Jeff Rubens}^*n|
+at|^^|cp|2|at|^a^*b^-^*n|
+at|^b@2|ht|f|cp||at|^bThis book is a collection of problems in declarer play. These are not double dummy problems. The solution in each case requires logical thought and the correct application of a sound principle of card play.|
+at|^^|cp||at|^b|
+at|^^|cp||at|^bThe reader can improve his techniques in declarer play by examining each situation carefully. After the reader has made his decision, the solution will tell him whether or not he arrived at the correct method of play. The solution will also explain the basic principle involved.|
+at|^^|cp||at|^b|
+at|^^|cp||at|^bThe bidding is significant only in those situations in which the East/West bidding--or the lack of it--must be considered.|
+at|^^|cp||at|^b|
+at|^^|cp||at|^bThe only conventions used are (1) Stayman and (2) an artificial two-club opening which shows a strong hand, not necessarily in clubs. Here, a negative two@-diamond response will indicate a very weak hand, not necessarily relating to diamonds.|
+at|^^|cp||at|^b|
+at|^^|cp||at|^bAlthough the reader may want to review the North/South bidding, it is not necessary to thoroughly understand the bidding in order to attack the playing problem. And it is certainly unnecessary to approve the bidding, since some of the bidding is poor. We all get to inferior contracts now and then, and any practical manual of play must include poor contracts as well as good ones.|
+at|^^|cp||at|^b|
+at|^^|cp||at|^bThe solution to each problem is found directly on the page after the presentation. These are not easy problems; quite the contrary, some of them are admittedly difficult.|
+at|^^|cp||at|^b|
+at|^^|cp||at|^bPAUL LUKACS|
+at|^^|cp||at|^bJEFF RUBENS|
+at|^^|cp||at|^bNew York, 1976|
+at|^^|cp||at|^b|
+at|^^|cp||at|^b|
+ht|y|cp||at|^b|
+at|^b@2|at|^^|cp||at|^bPlease, click|
+cp|1|at|^*gB, here^*n|
+cp||at| to return to your previous location or click the forward arrow to see the next section.|
+pg| ***** 98 ***** |
+
+
+%% ============= Page  99
+nt||
+bt||
+ht|b|cp||at|^a^-|
+at|^^|cp||at|^a|
+at|^^|cp||at|^aCopyright © 2003 by Jeff Rubens|
+at|^^|cp||at|^aAll rights reserved|
+at|^^|cp||at|^a^-|
+at|^b@2|at|^y@3|cp||at|^bThis is a work of fiction. Names, characters, places, and incidents are either the products of the authors imagination or are used fictitiously, and any resemblance to actual persons,living or dead, events, or locales is entirely coincidental.|
+at|^^|cp||at|^b|
+at|^^|cp||at|^bWithout limiting the rights under copyright reserved above, no part of this publication may be reproduced, stored in or introduced into a retrieval system, or transmitted, in any Form, or by any means (electronic, mechanical, photocopying, recording, or otherwise),without the prior written permission of both the copyright owner and the publisher of this book. For information address Vivisphere Publishing, a division of NetPub Corporation, 675 Dutchess Turnpike, Poughkeepsie, NY 12603.|
+at|^^|cp||at|^b|
+at|^^|cp||at|^b|
+cp||at|^-Cover design by Jay Cookingham|
+at|^^|cp||at|^bPrinted in the United States of America|
+at|^^|cp||at|^bISBN-10: 1-58776-131-9|
+at|^^|cp||at|^bISBN-13: 978-1-58776-131-7|
+at|^^|cp||at|^b|
+at|^^|cp||at|^bSQueeZe Books is an imprint of Vivisphere Publishing, a division of NetPub|
+at|^^|cp||at|^bCorporation, Poughkeepsie, New York.|
+at|^^|cp||at|^bwww.vivisphere.com|
+at|^^|cp||at|^b1-800-724-1100|
+at|^^|cp||at|^b^-|
+at|^b@2|ht|x|cp||at|^bPlease, click|
+cp|1|at|^*gB, here^*n|
+cp||at| to return to your previous location or click the forward arrow to end.|
+pg| ***** 99 ***** |
+
+
+%% ============= Page  100
+qx|DD|nt||
+bt||
+ht|b|fp|1|cp|1|at|^a^*b^-^*n|fp||
+at|^^|fp|1|cp|1|at|^a^*bINSTRUCTIONS ^*n|fp||
+at|^^|fp|1|cp|1|at|^a^*b^-^*n|fp||
+at|^c@2|at|^z@3|ht|e|cp||at|^cThe movie follows the book's protocol. First, you see the North/South hands with the contract and the opening lead. You, sitting South, are asked to analyze the hand and plan a successful line of play.|
+at|^^|cp||at|^c|
+at|^^|cp||at|^cNext, you will see the four hands where you can use the |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy feature to test your line of play. When you are done, you can click the forward arrow and read the authors' solution. Finally, if you wish, you can again play the board |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy or move on to the next problem.|
+at|^^|cp||at|^c|
+at|^^|cp||at|^cWhat is |
+cp||at|^*b"double dummy?"^*n|
+cp||at|  When you play |
+cp||at|^*b"double dummy,"^*n|
+cp||at| you see all four hands@-it's great for practice play!  Click the card you want to play from the hand on lead and then from each of the other hands. You will find you are unable to play the cards out of sequence.|
+at|^^|cp||at|^c|
+at|^^|cp||at|^cAfter four cards have been played to the trick, click the center of the trick to 'take it.' Now, you may lead the next card@-from the hand who won the trick of course. You may always review the last trick taken by placing your cursor over the folded trick.|
+at|^^|cp||at|^c|
+at|^^|cp||at|^cIn some instances, you will see the opening lead has been made. You may use the back arrow in BBO or the undo button in the Viewer to undo the lead. You may then click the card you prefer to lead.  In the middle of play, you may undo one trick to replay it or you may undo several tricks one after the other@-use the undo button in the viewer and back arrow in BBO. You may undo all the tricks to start at the opening lead again.  |
+at|^^|cp||at|^c|
+at|^^|cp||at|^cWhen you finish, if you wish to repeat your play of the board, click the middle and undo all your tricks. Please note:  When playing |
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy, |
+cp||at|^*bif you click the forward arrow, it cancels the ^*n|
+cp||at|^*bD^*n|
+cp||at|ouble |
+cp||at|^*bD^*n|
+cp||at|ummy feature.|
+cp||at| |
+at|^^|cp||at|^c|
+at|^^|cp||at|^cNow please, click|
+cp|1|at|^*gB, here^*n|
+cp||at| to return to your main page. |
+pg| ***** 100 ***** |
+
+
+%% ============= Page  101
+nt||
+bt||
+ht|b|fp|1|cp|1|at|^a^*b^-^*n|fp||
+at|^^|fp|1|cp|1|at|^a^*bINSTRUCTIONS ^*n|fp||
+at|^^|fp|1|cp|1|at|^a^*b^-^*n|fp||
+at|^c@2|at|^z@3|ht|e|cp|5|at|^cThe movie follows the book's protocol. First, you see the North/South hands with the contract and the opening lead. You, sitting South, are asked to analyze the hand and plan a successful line of play.|
+at|^^|cp||at|^c|
+at|^^|cp|5|at|^cNext, you will see the four hands where you can use the |
+cp|5|at|^*bD^*n|
+cp|5|at|ouble |
+cp|5|at|^*bD^*n|
+cp|5|at|ummy feature to test your line of play. When you are done, you can click the forward arrow and read the authors' solution. Finally, if you wish, you can again play the board |
+cp|5|at|^*bD^*n|
+cp|5|at|ouble |
+cp|5|at|^*bD^*n|
+cp|5|at|ummy or move on to the next problem.|
+at|^^|cp||at|^c|
+at|^^|cp|5|at|^cWhat is |
+cp|5|at|^*b"double dummy?"^*n|
+cp|5|at|  When you play |
+cp|5|at|^*b"double dummy,"^*n|
+cp|5|at| you see all four hands@-it's great for practice play!  Click the card you want to play from the hand on lead and then from each of the other hands. You will find you are unable to play the cards out of sequence.|
+at|^^|cp||at|^c|
+at|^^|cp|5|at|^cAfter four cards have been played to the trick, click the center of the trick to 'take it.' Now, you may lead the next card@-from the hand who won the trick of course. You may always review the last trick taken by placing your cursor over the folded trick.|
+at|^^|cp||at|^c|
+at|^^|cp|5|at|^cIn some instances, you will see the opening lead has been made. You may use the back arrow in BBO or the undo button in the Viewer to undo the lead. You may then click the card you prefer to lead.  In the middle of play, you may undo one trick to replay it or you may undo several tricks one after the other@-use the undo button in the viewer and back arrow in BBO. You may undo all the tricks to start at the opening lead again.  |
+at|^^|cp||at|^c|
+at|^^|cp|5|at|^cWhen you finish, if you wish to repeat your play of the board, click the middle and undo all your tricks. Please note:  When playing |
+cp|5|at|^*bD^*n|
+cp|5|at|ouble |
+cp|5|at|^*bD^*n|
+cp|5|at|ummy, |
+cp|5|at|^*bif you click the forward arrow, it cancels the ^*n|
+cp|5|at|^*bD^*n|
+cp|5|at|ouble |
+cp|5|at|^*bD^*n|
+cp|5|at|ummy feature.|
+cp|5|at| |
+at|^^|cp||at|^c|
+at|^^|cp|5|at|^cNow please, click|
+cp|1|at|^*gB, here^*n|
+cp|5|at| to return to your main page. |
+pg| ***** 101 ***** |
+
+

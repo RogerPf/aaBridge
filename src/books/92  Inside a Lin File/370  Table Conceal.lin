@@ -1,0 +1,127 @@
+%% Table Conceal
+%% Last edited  2013 Dec 31
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+bt||
+
+at|^z@3
+^b@2^*bTable Conceal  (tc)         Double Dummy    (pf)          End Blocker    (eb)^*n|
+at|
+^^
+^dThese commands are covered here over the next few pages.
+
+|ht|h|at|
+^b@2^*bTable Conceal  ^h tc       
+^^^^^^
+
+Double Dummy    ^h pf          
+^^^^^^
+
+End Blocker    ^h eb ^*n     ^k        |cp|blue|at|Added in ^*b aaBridge  ^*nbuild |cp|7|at|^*b 2814^*n|cp||
+pg| ***** 0 ***** |
+
+
+st||
+qx|tc,wide|
+nt|^b@2^z@3|
+ha|y|
+md|1S9H8TQD3469JAC7TQ,S248TJAH29DQC69JA,S57QH457KAD2KC234|
+
+at|^b@2^*bTable Conceal^*n^f^*b!tc!|cp|7|at|^*bc^*n|cp||at|^*b!^*n^z@3|
+tc|c|
+mb|4dppp|
+pc|h9|pc|h4|pc|h3|pc|hq   |pc|d3|pc|dq|pc|dk|pc|d5   |pc|d2|pc|d7|
+tc||
+at|
+
+^c@2tc!|cp|7|at|^*bc^*n|cp||at|!
+mb!4dppp!
+pc!h9!pc!h4!pc!h3!pc!hq!    pc!d3!pc!dq!pc!dk!pc!d5!     pc!d2!pc!d7!     
+tc!!
+^eThis way, the first sight the user sees of this deal is in the middle of trick 3.         (  !tc!!  cancels  )
+|
+pg| ***** 1 ***** |
+
+
+qx|pf,wide|
+nt|^b@2|
+at|^b@2^*bDouble Dummy^*n   ^i^*b!pf!|cp|7|at|^*by^*n|cp||at|^*b!^*n^z@3
+
+Some other .lin file players use this command to switch on the ability to enter the deal and play it Double Dummy.
+With aaBridge this feature is  ^*balways switched ON^*n.   So instead aaBridge uses this command to display a message at the bottom of the window reminding the user that the Double Dummy feature is available and telling and them how to use it.   The message is only displayed for that one page.    Please move forward with   ^*bStep, Flow^*n  or  mouse wheel|
+pg| ***** 2 ***** |
+
+
+pf|Y|
+pg| ***** 3 ***** |
+
+
+qx|eb,wide|
+st||
+ha|y|
+nt|^z@3^b@2|
+md|1S2HDAKQJT9CAKQJT2,SKQT87HAJT9843D2C,SAJ965HKQ7652D76C,S43HD8543C9876543|
+tc|c|
+mb|7Nppp|
+pc|D2|pc|D6|pc|D8|pc|D9|
+pc|CA|pc|H3|pc|H2|pc|C9|
+pc|CK|pc|H4|pc|H5|pc|C8|
+pc|CQ|pc|H8|pc|H6|pc|C7|
+pc|CJ|pc|H9|pc|H7|pc|C6|
+pc|CT|pc|S8|pc|S9|pc|C3|
+pc|DK|pc|S7|pc|D7|pc|D5|
+pc|DQ|pc|ST|pc|S5|pc|D4|
+pc|DJ|pc|HT|pc|S6|pc|D3|
+pc|DT|pc|HJ|pc|HQ|pc|C5|
+pc|DA|
+tc|r|
+
+eb|Y|      %%  The   Enter the Feal  Blocker    cmd
+
+fp|4|at|^*bEnter the deal   Blocker^*n  ^i^*b!eb!|cp|7|at|^*by^*n|cp||at|^*b!^*n ^l Above you can see a hand before the last few of tricks.
+^^If you click the { ^*b Enter the Deal^*n } button you will see you are blocked from going back earlier than the current trick.
+^^ This is the block point, where an   ^*b!eb!|cp|7|at|^*by^*n|cp||at|^*b!^*n   has been used.  But can use still { ^*b Edit ^*n }  or  { ^*b Play ^*n } to examine the deal.
+
+^d^*b!eb!|cp|7|at|^*bn^*n|cp||at|^*b!^*n     removes the block                     (by design users can  'Edit Play Wipe'  to look at the full deal)
+|
+pg| ***** 4 ***** |
+
+
+pc|sQ|pc|hK|pc|s3|
+pg| ***** 5 ***** |
+
+
+pc|s2|pc|sK|pc|sA|pc|s4|
+pg| ***** 6 ***** |
+
+
+pc|sJ|pc|c4|pc|c2|pc|hA|
+pg| ***** 7 ***** |
+
+
+ht|z|at|@0
+^*b end ^*n|
+
+pg| ***** 8 ***** |
+
+
+st||
+nt|^b@2^z@3|
+md|1S9H8TQD3469JAC7TQ,S248TJAH29DQC69JA,S57QH457KAD2KC234|
+
+tc|c|
+mb|4dppp|
+pc|h9|pc|h4|pc|h3|pc|hq|    pc|d3|pc|dq|pc|dk|pc|d5|    pc|d2|pc|d7|
+tc||
+
+at|^b@2^*bRepeat of first^*n|
+at|^^^^ This is a repeat of the first   ^*n^*b!tc!|cp|7|at|^*bc^*n|cp||at|^*b!^*n   hand.   
+
+It shows that the "Eb Blocker" is cleared by the   ^*n^*b!md!|cp|7|at|^*b...^*n|cp||at|^*b!^*n   command for the next deal.
+|
+pg| ***** 12 ***** |
+
+

@@ -56,9 +56,15 @@ public class Aaa {
 	public static final int			s_SelfCmd			=  0;
 	public static final int			s_Std				=  1;
 	public static final int			s_Label				=  2;
+	public static final int			s_SelfLabel			=  3;
 	public static final int			m_Std				= 11;
 	public static final int			m_Label				= 12;
 	public static final int			m_Hidden			= 13;
+
+
+//	public static final float       butWheelWidthFraction  = 0.023f;
+//	public static final float       butWheelHeightFraction = 0.60f;
+
 
 
 	public static final int			CMD_SUIT			= 0x0100;						// C D H S
@@ -89,6 +95,7 @@ public class Aaa {
 	public static final Color		navClaimedIntense	= new Color(190, 220, 230);
 
 	public static final Color		lightGrayBubble		= new Color(215, 215, 215);
+	public static final Color		mediumGray			= new Color(190, 190, 190);
 	public static final Color		buttonBkgColorStd	= new Color(199, 230, 240);
 	public static final Color		pressedColor		= new Color(199, 199, 199);
 	public static final Color		hoverColor			= new Color(235, 216, 140);
@@ -101,16 +108,14 @@ public class Aaa {
 	public static final Color		veryVeryWeedyYel	= new Color(215, 200, 130);
 	public static final Color		bidRequestLine		= new Color(255, 110, 255);
 
-	public static final Color		bubbleAnotateCol	= new Color(182, 171, 223);
-	public static final Color		bidAlertColor		= new Color(235, 225, 200);
-	public static final Color		bidEmpAlertColor	= new Color(215, 215, 180);
 	public static final Color		biddingBkColor		= new Color(235, 225, 200);
 	public static final Color		bidTableBkColor		= new Color(205, 230, 230);
+	public static final Color		bidAlertBubbleCol	= new Color(196, 190, 227);
+	public static final Color		bidAlertHasTxtColor = new Color(235, 225, 200);
 
 	public static final Color		optionsTitleGreen	= new Color(20, 90, 20);
 
 	public static final Color		cardClickedOn		= new Color(150, 150, 150);
-//	public static final Color		cardHover			= new Color(255, 206, 0);
 	public static final Color		cardHover			= new Color(240, 190, 0);
 	public static final Color		generalLightGray	= new Color(203, 203, 203);
 	public static final Color		handAreaOffWhite	= new Color(245, 240, 240);
@@ -136,8 +141,8 @@ public class Aaa {
 	public static final Color		tutMnGreenStrong	= new Color( 20,  90,  20);
 	public static final Color		tutMnGreenWeak		= new Color(110, 150, 110);
 	public static final Color		questionPanelBkColor= new Color(240, 233, 233);
-	public static final Color		tut_old_text_gray	= new Color(140, 130, 130);
-	public static final Color		tut_old_suit_gray	= new Color(171, 160, 160);
+	public static final Color		tut_old_text_gray	= new Color(110, 100, 100);
+	public static final Color		tut_old_suit_gray	= new Color(161, 150, 150);
 	public static final Color		tutorialLinkNorm_f	= new Color(  0,   0,   0);
 	public static final Color		tutorialLinkNorm_g	= new Color( 16,  16, 225);
 	public static final Color		tutorialLinkNorm_h	= new Color( 16,  16, 225);
@@ -190,6 +195,21 @@ public class Aaa {
 
 		g2.drawString(text, x, y);
 		return x;
+	}
+
+	/**
+	 */
+	public static void drawLeftString(Graphics2D g2, String text, float xOrg, float yOrg, float wOrg, float hOrg) {
+		// ************************************************************************
+		FontMetrics fm = g2.getFontMetrics(g2.getFont());
+		Rectangle2D rect = fm.getStringBounds(text, g2);
+		int textHeight = (int) (rect.getHeight());
+		// int textWidth = (int) (rect.getWidth());
+
+		// float x = xOrg + (wOrg - textWidth) / 2f;
+		float y = yOrg + (hOrg - textHeight) / 2f + fm.getAscent() * 0.95f;
+
+		g2.drawString(text, xOrg, y);
 	}
 
 	/**   
@@ -380,7 +400,84 @@ public class Aaa {
 		return s;
 	}
 
+	/**
+	 */
+	public static String deAtAlertText(String s) {
+		// =============================================================================
+		if (s.length() == 0)
+			return "";
+
+		boolean exFound = (s.indexOf('!') >= 0);
+		boolean atFound = (s.indexOf('@') >= 0);
+
+		if (!atFound && !exFound)
+			return s;
+
+		if (exFound) {
+			s = s.replace("!S", "@S");
+			s = s.replace("!s", "@S");
+			s = s.replace("!H", "@H");
+			s = s.replace("!h", "@H");
+			s = s.replace("!D", "@D");
+			s = s.replace("!d", "@D");
+			s = s.replace("!C", "@C");
+			s = s.replace("!c", "@C");
+		}
+		
+		if (atFound) {
+			s = s.replace("@S", "@S");
+			s = s.replace("@s", "@S");
+			s = s.replace("@H", "@H");
+			s = s.replace("@h", "@H");
+			s = s.replace("@D", "@D");
+			s = s.replace("@d", "@D");
+			s = s.replace("@C", "@C");
+			s = s.replace("@c", "@C");
+		}
+		
+		//s = s.replace("!hH", "!h H"); // so  !HHxx is less confusing now being  !H Hxx
+		
+		return s;
+	}
 
 
+	/**
+	 */
+	public static String deAtQuestionText(String s) {
+		// =============================================================================
+		if (s.length() == 0)
+			return "";
 
+		boolean exFound = (s.indexOf('!') >= 0);
+		boolean atFound = (s.indexOf('@') >= 0);
+
+		if (!atFound && !exFound)
+			return s;
+
+		if (exFound) {
+			s = s.replace("!S", "S");
+			s = s.replace("!s", "S");
+			s = s.replace("!H", "H ");
+			s = s.replace("!h", "H ");
+			s = s.replace("!D", "D");
+			s = s.replace("!d", "D");
+			s = s.replace("!C", "C");
+			s = s.replace("!c", "C");
+		}
+
+		if (atFound) {
+			s = s.replace("@S", "S");
+			s = s.replace("@s", "S");
+			s = s.replace("@H", "H ");
+			s = s.replace("@h", "H ");
+			s = s.replace("@D", "D");
+			s = s.replace("@d", "D");
+			s = s.replace("@C", "C");
+			s = s.replace("@c", "C");
+		}
+
+		//s = s.replace("!hH", "!h H"); // so  !HHxx is less confusing now being  !H Hxx
+
+		return s;
+	}
 }

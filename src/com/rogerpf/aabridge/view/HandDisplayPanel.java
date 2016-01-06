@@ -26,7 +26,9 @@ import java.awt.font.FontRenderContext;
 import java.awt.font.TextAttribute;
 import java.awt.font.TextHitInfo;
 import java.awt.font.TextLayout;
+import java.awt.geom.Ellipse2D;
 import java.awt.geom.Rectangle2D;
+import java.awt.geom.RoundRectangle2D;
 import java.awt.image.BufferedImage;
 import java.text.AttributedString;
 
@@ -354,6 +356,7 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 			if (/*App.isMode(Aaa.EDIT_PLAY) && */!floatingHand && youDisplayRect.contains(e.getPoint())) {
 				deal.youSeatHint = hand.compass;
 				App.youSeatHint = hand.compass;
+//				App.nameInSouthZone = hand.playerName.trim();
 				App.dealMajorChange();
 				App.frame.repaint();
 				return;
@@ -504,49 +507,85 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 
 	/**
 	 */
-	public String addPadding(String cards, boolean blobFill) {
+	public String addPadding(String cards, boolean blobFill, int[] leftpos) {
 		// =============================================================
 		/*
 		 * The bridge symb and face font has some characters set to blanks with known width
 		 * (picas) these are => 10 + => 100 , => 200 - => 300 . => 500 / => 750
+		 * < and >  are 300 but with tiny dot (invisible) in the left and right corners respectivly
+		 * AKQ & (ten) are  1479  the rest inc J are 1139
 		 * space => 1000
 		 */
 
+		// @formatter:off
+
 		int len = cards.length();
 		char before = '*';
-		char after = '*';
+		char after  = '*';
+		int beforeI = 10;
+		int afterI  = 10;
 		if (len <= 7) {
 			before = ',';
-			after = '-';
+			after  = '-';
+			beforeI = 200;
+			afterI  = 300;
 		}
 		else if (len == 8) {
 			before = ',';
-			after = ',';
+			after  = ',';
+			beforeI = 200;
+			afterI  = 200;
 		}
 		else if (len == 9) {
-			before = '*';
-			after = ',';
+			after  = ',';
+			afterI  = 200;
 		}
 
+		int cum = 0;
+		
 		final StringBuilder sb = new StringBuilder();
 
 		for (int i = 0; i < len; i++) {
 
 			char c = cards.charAt(i);
-			char bef = (c == 'A' || c == 'K' || c == 'Q') ? '*' : before;
-			if (i == 0)
+			char bef = before;
+			int befI = beforeI;
+			int core = 1139;
+			
+			if (c == 'A' || c == 'K' || c == 'Q') {
+				core = 1479;
+				bef = '*';
+				befI = 500;
+			}
+			else if (c == 'T') {
+				core = 1479;
+			}
+			if (i == 0) {
 				bef = '<';
-			if (i == len - 1)
+				befI = 500;
+			}
+			if (i == len - 1) {
 				after = '>';
+				afterI = 500;
+			}
 			sb.append(bef);
+			
+			int picas = befI + core + afterI;
+			
+			cum += picas;
+			
+			leftpos[i] = cum; 
+			
 			if (blobFill)
 				sb.append('@'); // @ will be shown as the greek letter 'alpha'
 			else
 				sb.append(c);
+			
 			sb.append(after);
 
 		}
 		return sb.toString();
+		// @formatter:on
 	}
 
 	/**
@@ -556,14 +595,16 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 		if (App.isMode(Aaa.REVIEW_PLAY)) {
 			int reviewCardTot = App.reviewTrick * 4 + App.reviewCard;
 			int cardsPlayed = deal.countCardsPlayed();
-			if (deal.endedWithClaim == false || reviewCardTot <= cardsPlayed - 1)
+			if (deal.endedWithClaim == false || reviewCardTot <= cardsPlayed - 1) {
 				return hand.makeFragsAsOf(App.reviewTrick, App.reviewCard);
+			}
 			else
 				return hand.frags;
 		}
 		// @formatter:off
 		else if (   (     App.isMode(Aaa.NORMAL_ACTIVE) 
-				      && (   deal.isPlaying() 
+				      && (    deal.eb_blocker
+				    	  ||  deal.isPlaying() 
 				          || (App.visualMode == App.Vm_DealAndTutorial)
 				         )
 				     )
@@ -622,6 +663,32 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 				return new String("KJ7432");
 		}
 		return new String("");
+	}
+
+	/**
+	 */
+	public boolean doFragsMatchCardsAndCopyScore(Frag[] fragsA, Frag[] fragsD) {
+		// =============================================================
+
+		for (int i = 0; i < 4; i++) {
+
+			Frag fragA = fragsA[i];
+			Frag fragD = fragsD[i];
+			if (fragA.size() != fragD.size())
+				return false;
+
+			for (int j = 0; j < fragA.size(); j++) {
+				if (fragA.get(j).matches(fragD.get(j)) == false) {
+					return false;
+				}
+			}
+
+			for (int j = 0; j < fragA.size(); j++) {
+				fragA.get(j).setDdsScore(fragD.get(j).getDdsScore());
+				fragA.get(j).setDdsNextCard(fragD.get(j).getDdsNextCard());
+			}
+		}
+		return true;
 	}
 
 	static final String ht_ay[] = { "  Please", "Center Left", "New Board", "Click" };
@@ -685,7 +752,9 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 
 		if (!floatingHand) {
 
-			boolean youSeatUs = (deal.getTheYouSeat() == hand.compass);
+			boolean dummyOk = App.isMode(Aaa.REVIEW_BIDDING);
+
+			boolean youSeatUs = (deal.getTheYouSeat(dummyOk) == hand.compass);
 
 			Color bannerColor = Aaa.othersBannerBk;
 			Color pointsColor = Cc.g(Cc.pointsColor);
@@ -741,27 +810,11 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 				visSeat = false;
 			}
 
-			Font pointsFont = BridgeFonts.bridgeBoldFont.deriveFont(nlh * 1.0f);
-			if (App.showPoints && !deal.dfcDeal && visSeat && hand.didHandStartWith13Cards()) { // && isModeAnyEdit()
-				g2.setFont(pointsFont);
-				Aaa.drawCenteredString(g2, Integer.toString(hand.countHighCardPoints()), dealLozengeWidth * 0.88f, xy, nlh, nlh);
-			}
-
 			boolean showLTC = App.showLTC && !deal.dfcDeal && visSeat && !App.isModeAnyEdit() && hand.didHandStartWith13Cards();
-			if (showLTC) { //
-				g2.setFont(pointsFont);
-				int v = hand.countLosingTricks_x2();
-				float p = 0.57f;
-				Aaa.drawCenteredString(g2, Integer.toString(v / 2), dealLozengeWidth * p, xy, nlh, nlh);
-				if (v % 2 == 1) {
-					p += 0.09;
-					Aaa.drawCenteredString(g2, "" + (char) 0xbd, dealLozengeWidth * p, xy, nlh, nlh);
-				}
-			}
 
 			// The "You" text
 			// ------------------------------------------------------------------
-			float yAdj = 0.22f;
+			float yAdj = 0.226f;
 			if (youSeatUs && hand.playerName.isEmpty()) {
 				float youTextFontSize = bridgeLightFontSize * 1.2f;
 				Font youTextFont = BridgeFonts.bridgeLightFont.deriveFont(youTextFontSize);
@@ -786,6 +839,44 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 				g2.setFont(youTextFont);
 				g2.drawString(hand.playerName, (int) (xy + nlh * 1.5), (int) (xy + nlh - youTextFontSize * yAdj));
 			}
+
+			Font pointsFont = BridgeFonts.bridgeBoldFont.deriveFont(nlh * 1.0f);
+			if (App.showPoints && !deal.dfcDeal && visSeat && hand.didHandStartWith13Cards()) { // && isModeAnyEdit()
+				Rectangle2D bkgRect = new Rectangle2D.Float(dealLozengeWidth * 0.88f, xy + (nlh * 0.10f), nlh, nlh * 0.80f);
+				Color colText = g2.getColor();
+				g2.setColor(bannerColor);
+				g2.fill(bkgRect);
+
+				g2.setColor(colText);
+				g2.setFont(pointsFont);
+				Aaa.drawCenteredString(g2, Integer.toString(hand.countHighCardPoints()), dealLozengeWidth * 0.88f, xy, nlh, nlh);
+			}
+
+			if (showLTC) { //
+				float p = 0.57f;
+				int v = hand.countLosingTricks_x2();
+
+				Rectangle2D bkgRect = new Rectangle2D.Float(dealLozengeWidth * p, xy + (nlh * 0.10f), nlh, nlh * 0.80f);
+				Color colText = g2.getColor();
+				g2.setColor(bannerColor);
+				g2.fill(bkgRect);
+
+				g2.setColor(colText);
+				g2.setFont(pointsFont);
+
+				Aaa.drawCenteredString(g2, Integer.toString(v / 2), dealLozengeWidth * p, xy, nlh, nlh);
+				if (v % 2 == 1) {
+					p += 0.09;
+					bkgRect = new Rectangle2D.Float(dealLozengeWidth * p, xy + (nlh * 0.10f), nlh, nlh * 0.80f);
+					colText = g2.getColor();
+					g2.setColor(bannerColor);
+					g2.fill(bkgRect);
+
+					g2.setColor(colText);
+					Aaa.drawCenteredString(g2, "" + (char) 0xbd, dealLozengeWidth * p, xy, nlh, nlh);
+				}
+			}
+
 		}
 
 		// The four Suits
@@ -814,6 +905,18 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 
 		Frag[] frags = getAppropriateFrags();
 
+		boolean ddsInUse = false;
+
+		if ((App.ddsDeal != null) && App.ddsScoreShow) {
+			Hand ddsHand = App.ddsDeal.hands[hand.compass.v];
+			Frag ddsFrags[] = ddsHand.frags;
+			if (ddsHand.ddsValuesAssigned) {
+				if ((ddsInUse = doFragsMatchCardsAndCopyScore(frags, ddsFrags)) == false) {
+					System.out.println("doFragsMatchCardsAndCopyScore()  returned  FALSE");
+				}
+			}
+		}
+
 		for (Frag frag : frags) {
 
 			FragDisplayInfo fdi = fdiA[frag.suit.v];
@@ -826,7 +929,9 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 			if (App.fillHandDisplay) {
 				rawCards = generateTestCards(frag); // <<<<<<<<<<<<<<<<<<<< TEST CARD GENERATOR >>>>>>>>
 			}
-			String cards = addPadding(rawCards, deal.dfcDeal && App.dfcCardsAsBlobs);
+
+			int[] ddsRightPos = new int[13];
+			String cards = addPadding(rawCards, deal.dfcDeal && App.dfcCardsAsBlobs, ddsRightPos);
 
 			boolean showSuitSymbol = !deal.dfcDeal && App.showSuitSymbols;
 			float lhs = suitLineStartX * (slim ? 0.00f : 1.0f) + suitLineHeight * (slim ? 0.00f : 0.125f);
@@ -890,9 +995,96 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 			// adjust to actual position in the panel
 			fdi.bounds.setRect(fdi.bounds.getX() + fdi.layoutOriginX, fdi.bounds.getY() + fdi.layoutOriginY, fdi.bounds.getWidth(), fdi.bounds.getHeight());
 
-			// // Debugging aid
+			// Debugging aid
 			// g2.draw(fdi.bounds);
+
+			if (ddsInUse) {
+
+				float fontScale = 0.55f;
+				double boxScale = 1.40f;
+				Font ddsScoreFont = BridgeFonts.faceAndSymbFont.deriveFont(handFontSize * fontScale);
+				TextLayout tlc = new TextLayout("T", ddsScoreFont, frc);
+				double ddsCharWidth = tlc.getBounds().getWidth() * boxScale;
+				double ddsCharHeight = tlc.getBounds().getHeight() * boxScale;
+				float dotDiameter = (float) ddsCharWidth * 0.55f;
+
+				int totalCards = frag.size();
+
+				int highestDdsScore = App.ddsDeal.getHighestDdsScore();
+
+				int wonSoFar = App.ddsDeal.getContractTrickCountForDirecton(hand.compass);
+
+				for (int i = 0; i < totalCards; i++) {
+
+					Card card = frag.get(i);
+					if (card.getDdsScore() == -1)
+						continue;
+
+					x = (float) ((fdi.bounds.getMinX() + (fdi.bounds.getWidth() * ddsRightPos[i]) / ddsRightPos[totalCards - 1]) - ddsCharWidth);
+					y = (float) (fdi.bounds.getMaxY() + ddsCharHeight * 0.33);
+
+					double w = ddsCharWidth * 0.8;
+					double w2 = ddsCharWidth * 0.3;
+					double h = ddsCharHeight * 0.9;
+					RoundRectangle2D ddsBackground = new RoundRectangle2D.Double((double) x + w2, y - h, w, h, w, h);
+
+					// fill with the score background box colour
+					g2.setColor(((card.getDdsScore() == highestDdsScore) ? scoreBestFill : scoreOthrFill));
+					g2.fill(ddsBackground);
+
+					// add a thin highlight to the edge of the background
+//					g2.setColor(((card.getDdsScore() == highestDdsScore) ? scoreBestOutl : scoreOthrOutl));
+//					g2.setStroke(new BasicStroke((float) ddsCharWidth * 0.12f));
+//					g2.draw(ddsBackground);
+
+					g2.setColor(Cc.BlackStrong);
+					TextLayout text = new TextLayout(card.getDisplayScore(wonSoFar), ddsScoreFont, frc);
+					drawTextlayoutCenter(g2, text, ddsBackground.getBounds2D());
+
+					if (card.getDdsNextCard()) {
+						Ellipse2D.Float nextCardToPlayDot = new Ellipse2D.Float((x + (float) ddsCharWidth * 0.4f), (y - (float) ddsCharHeight * 1.70f),
+								dotDiameter, dotDiameter);
+						g2.setColor(((card.getDdsScore() == highestDdsScore) ? scoreBestFill : scoreOthrFill));
+						g2.fill(nextCardToPlayDot);
+						// add outline
+						g2.setColor(((card.getDdsScore() == highestDdsScore) ? scoreBestDot : scoreOthrDot));
+						g2.setStroke(new BasicStroke((float) ddsCharWidth * 0.12f));
+						g2.draw(nextCardToPlayDot);
+					}
+
+				}
+			}
+
 		}
+
+		// best to clear up these copied over scores
+		for (Frag frag : frags) {
+			for (Card card : frag) {
+				card.setDdsScore(-1);
+				card.setDdsNextCard(false);
+			}
+		}
+	}
+
+	// @formatter:off
+	final static Color scoreBestFill = new Color(200, 240, 190);
+	final static Color scoreOthrFill = new Color(224, 224,  90);
+	
+	final static Color scoreBestOutl = new Color(180, 230, 174);
+	final static Color scoreOthrOutl = new Color(215, 215,  80);
+	
+	final static Color scoreBestDot  = new Color(100, 200, 124);
+	final static Color scoreOthrDot  = new Color(150, 150,  20);	
+	// @formatter:on
+
+	public void drawTextlayoutCenter(Graphics2D g2, TextLayout text, Rectangle2D background) {
+
+		Rectangle2D bounds = text.getBounds();
+
+		float x = (float) (background.getX() + (((background.getWidth() - bounds.getWidth()) / 2)) * 0.90 /* because it looks better */);
+		float y = (float) (background.getMaxY() - (((background.getHeight() - bounds.getHeight()) / 2)) * 0.90 /* because it looks better */);
+
+		text.draw(g2, x, y);
 	}
 
 }

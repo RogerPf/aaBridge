@@ -70,7 +70,7 @@ public class Book extends ArrayList<Book.LinChapter> {
 				s = s.substring(sl + 1);
 			}
 			filename = s;
-			assert (s.toLowerCase().endsWith(".lin"));
+			assert (s.toLowerCase().endsWith(".lin") || s.toLowerCase().endsWith(".pbn"));
 			s = s.substring(0, s.length() - 4); // it always ends with .lin
 			displayNoExt = s = s.trim();
 
@@ -90,6 +90,43 @@ public class Book extends ArrayList<Book.LinChapter> {
 			displayNoUscore = s = s.trim();
 
 			add(this);
+		}
+
+		private long timeStamp = 0;
+		boolean report_false = false;
+
+		File fileCh = null;
+
+		/**
+		 *  must be called reqularly and must report its time interval ms
+		*/
+		public boolean hasLinFileChanged(int interval) {
+			// =============================================================
+
+			if (report_false)
+				return false;
+
+			if (type != 'f')
+				return false; // only real files can ever changed
+
+			if (fileCh == null) {
+				fileCh = new File(book.bookFolderName + this.filename);
+				if (fileCh.canRead() == false) {
+					report_false = true;
+				}
+				timeStamp = fileCh.lastModified();
+				return false;
+			}
+
+			long prev = timeStamp;
+
+			timeStamp = fileCh.lastModified();
+
+			if (timeStamp == prev) {
+				return false;
+			}
+
+			return true;
 		}
 
 		/**
@@ -120,36 +157,47 @@ public class Book extends ArrayList<Book.LinChapter> {
 			App.hideTutNavigationBar = false; // only set true by the lbx (distr Flash cards question special)
 
 			if (type == 'r') {
-				success = BridgeLoader.readLinResourseIfExists(bookJarName, filenamePlus);
+				success = BridgeLoader.readLinOrPbnResourseIfExists(bookJarName, filenamePlus);
 				App.debug_pathlastLinLoaded = "";
 			}
 
 			if (type == 'f') {
-				success = BridgeLoader.readLinFileIfExists(bookFolderName, filenamePlus);
+				success = BridgeLoader.readLinOrPbnFileIfExists(bookFolderName, filenamePlus);
 				App.debug_pathlastLinLoaded = book.bookFolderName + filename;
 			}
 
 			if (success) {
 				lastChapterIndexLoaded = index;
 				setTitleBookStyle();
+				App.biddingVisibilityCheck();
 			}
 
 			return success;
 		}
 
-		public boolean loadWithShow(String type) {
+		public boolean loadWithShow(String replace) {
 			// ==============================================================================================
+			// System.out.println("loadWithShow " + replace);
+
+			int prev_pg_numb = App.mg.get_best_pg_number_for_history();
+
 			boolean loaded = load();
 
 			if (loaded) {
 				App.book = Book.this;
-				if (type.contentEquals("replaceBookPanel"))
-					App.bookPanel.matchToAppBook();
-				App.bookPanel.showChapterAsSelected(getName());
+				if (replace.contentEquals("replaceBookPanel"))
+					App.aaBookPanel.matchToAppBook();
+				App.aaBookPanel.showChapterAsSelected(getName());
 
 				if (App.isLin__VuGraphAndTwoTeams() && App.showRedVuGraphArrow) {
 					App.gbo.showVuGraphHint();
 				}
+
+				App.biddingVisibilityCheck();
+
+				String srcName = (type == 'r') ? bookJarName : bookFolderName;
+
+				App.mg.mruChap = App.mruCollection.createMatchingMru(type, srcName, filenamePlus, displayNoUscore, prev_pg_numb);
 
 				return loaded;
 			}
@@ -163,6 +211,13 @@ public class Book extends ArrayList<Book.LinChapter> {
 				return false;
 
 			return true;
+		}
+
+		public String generateMruKey() {
+			// ==============================================================================================
+			String srcName = (type == 'r') ? bookJarName : bookFolderName;
+
+			return MruCollection.generateMruKey(type, srcName, filenamePlus, displayNoUscore);
 		}
 	}
 
@@ -219,13 +274,15 @@ public class Book extends ArrayList<Book.LinChapter> {
 				return;
 			}
 
-			if (basePath.endsWith(".jar") == false)
+			if (basePath.toLowerCase().endsWith(".jar") == false)
 				basePath = locMethodFile.getPath() + sep + shelfname;
 		}
 
 		/** for basic testing only
 		 */
-//		basePath = "C:\\a\\aaBridge_Watson_Edition_2.4.0.2421.jar";   // for local testing only
+		if (App.debug_using_ghost_jar && basePath.startsWith(App.thisAppBaseFolder)) {
+			basePath = App.thisAppBaseJarIncPath;
+		}
 
 		if (basePath.toLowerCase().endsWith(".jar") || basePath.toLowerCase().endsWith(".zip") || basePath.toLowerCase().endsWith(".linzip")) {
 			/** 
@@ -238,7 +295,7 @@ public class Book extends ArrayList<Book.LinChapter> {
 			}
 
 			bookJarName = jarFile.getPath();
-			if (basePath.endsWith(".jar"))
+			if (basePath.toLowerCase().endsWith(".jar"))
 				bookJarExtra = shelfname + "/" + extraPath;
 
 			// We are running in a .jar on either windows, mac or linux or ...
@@ -270,7 +327,7 @@ public class Book extends ArrayList<Book.LinChapter> {
 					if (sFile.toLowerCase().endsWith(".title"))
 						setDisplayTitle(sFile, "/");
 
-					if (sFile.toLowerCase().endsWith(".lin")) {
+					if (sFile.toLowerCase().endsWith(".lin") || sFile.toLowerCase().endsWith(".pbn")) {
 						new LinChapter(this, 'r', bookJarName, sFile);
 					}
 				}
@@ -357,7 +414,7 @@ public class Book extends ArrayList<Book.LinChapter> {
 							if (sFile.toLowerCase().endsWith(".title"))
 								setDisplayTitle(sFile, sep);
 
-							if (sFile.toLowerCase().endsWith(".lin"))
+							if (sFile.toLowerCase().endsWith(".lin") || sFile.toLowerCase().endsWith(".pbn"))
 								new LinChapter(this, 'f', "", sFile);
 						}
 					}

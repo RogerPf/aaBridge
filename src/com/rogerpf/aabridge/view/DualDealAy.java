@@ -332,6 +332,8 @@ public class DualDealAy extends ArrayList<DualDeal> {
 
 			int pg_index_o = mg.findPgIdBeforeNextQx(openDeal.qx_bb);
 			openDeal.deal = mg.giAy.get(pg_index_o).deal;
+			if (openDeal.deal == null)
+				openDeal.deal = new Deal();
 			openDeal.vulnerability = openDeal.deal.vulnerability;
 			openDeal.calculateScore();
 

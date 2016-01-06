@@ -16,7 +16,7 @@ fh|240|ff|2Arial|fb|20|fm|2|
 cr|1255|cg|1255|cb|10|
 cr|2255|cg|2255|cb|2255|
 cr|3100|cg|316|cb|3255|
-cr|4145|cg|4145|cb|4145|
+cr|4000|cg|4000|cb|4000|
 
 
 %% ============= Page  0
@@ -62,7 +62,7 @@ cp||at|. This allows you to view it on any web browser. You can learn from it on
 at|^b@2|ht|z|cp||at|^bMM: Either click a blue link above or the blue "|
 cp||at|^*uNext Page^*n|
 cp||at|" arrow top left to continue.|
-pg||
+pg| ***** 0 ***** |
 
 
 %% ============= Page  1
@@ -74,7 +74,7 @@ at|^^|fp|1|cp|1|at|^a^*b^*n|fp||
 at|^b@2|at|^z@3|ht|e|cp||at|^bOur study of Modern Bridge Defense by Eddie Kantar continues with Chapter 6 - Under the Gun. The title of this course is |
 cp||at|^*uEddie Kantar Teaches Modern Bridge Defense^*n|
 cp||at|.  His copyrights apply as 99% of what I present is his wording and property. His comprehensive text is appropriate for the advancing player.|
-pg||
+pg| ***** 1 ***** |
 
 
 %% ============= Page  2
@@ -88,7 +88,7 @@ cp|4|at|^*uEddie Kantar Teaches Modern Bridge Defense^*n|
 cp|4|at|.  His copyrights apply as 99% of what I present is his wording and property. His comprehensive text is appropriate for the advancing player.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIt is well worth purchasing and I hope you do. There is much in it that I do not cover.|
-pg||
+pg| ***** 2 ***** |
 
 
 %% ============= Page  3
@@ -110,7 +110,7 @@ cp||at|^*isecond^*n|
 cp||at|  or |
 cp||at|^*ifourth^*n|
 cp||at|  to play to the trick.|
-pg||
+pg| ***** 3 ***** |
 
 
 %% ============= Page  4
@@ -134,7 +134,7 @@ cp|4|at|^*ifourth^*n|
 cp|4|at|  to play to the trick.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bWhen you are fourth to play, you will have seen three cards and your play is frequently marked. However, second hand play is more difficult. Second hand play can be divided as follows: when dummy leads the suit or when declarer leads the suit. It can be further subdivided: when an honor is led or when a small card is led.|
-pg||
+pg| ***** 4 ***** |
 
 
 %% ============= Page  5
@@ -164,7 +164,7 @@ cp||at|^*bsecond hand low^*n|
 cp||at|' and '|
 cp||at|^*bcover an honor with an honor^*n|
 cp||at|'. If you are happy to play by these two rules then pass 'Go', collect $200, and advance to the next chapter. However, if you wish to save several thousand tricks in your bridge career, read on.|
-pg||
+pg| ***** 5 ***** |
 
 
 %% ============= Page  6
@@ -174,7 +174,7 @@ cs|3|ht|c|fp|1|cp|1|at|^a^*b^-{     When Dummy Leads an Honor     }^*n|fp||
 at|^^|fp|1|cp|1|at|^a^*b^-^*n|fp||
 at|^b@2|ht|e|cp||at|^b|
 at|^^|cp||at|^bCover an honor with an honor so as to promote lower cards, usually 9's and 10's, for either yourself or partner.|
-pg||
+pg| ***** 6 ***** |
 
 
 %% ============= Page  7
@@ -186,7 +186,7 @@ at|^b@2|ht|e|cp||at|^b|
 at|^^|cp|4|at|^bCover an honor with an honor so as to promote lower cards, usually 9's and 10's, for either yourself or partner.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bTo understand 'covering an honor with an honor' (the only way you are ever going to be able to decide whether or not to cover), you have to know why you are covering in the first place.|
-pg||
+pg| ***** 7 ***** |
 
 
 %% ============= Page  8
@@ -198,7 +198,7 @@ md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|a|cp||at|^b|
 at|^^|cp||at|^bWelcome to the Cardpotato College Student Union;  the most modern Bridge facility this side of Cyberspace.|
-pg||
+pg| ***** 8 ***** |
 
 
 %% ============= Page  9
@@ -210,7 +210,7 @@ md|1Saj874,S653,Sq2,Skt9|
 sk||
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bDummy leads the Queen.|
-pg||
+pg| ***** 9 ***** |
 
 
 %% ============= Page  10
@@ -221,7 +221,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saj874,S653,Sq2,Skt9|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp|4|at|^bDummy leads the Queen.|
-pc|sq|pg||
+pc|sq|
+pg| ***** 10 ***** |
 
 
 %% ============= Page  11
@@ -231,7 +232,7 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saj874,S653,S2q,Skt9|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sq|    tc|r|
+wt|n|tc|c|pc|sq|tc|r|
 lb|*cWhich card would you play? Click that card on the right.^^sk^sksts9|
 
 
@@ -242,9 +243,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saj874,S653,S2q,Skt9|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sq|    tc|r|
+wt|n|tc|c|pc|sq|tc|r|
 at|^^|cp||at|^aYou should cover in order to promote your 10 to a third-round trick.|
-pg||
+pg| ***** 12 ***** |
 
 
 %% ============= Page  13
@@ -255,10 +256,11 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saj874,S653,S2q,Skt9|
 sk||
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sq|    tc|r|
+wt|n|tc|c|pc|sq|tc|r|
 at|^^|cp|4|at|^aYou should cover in order to promote your 10 to a third-round trick.|
 cp||at| If you do not cover, you do not take a single trick.|
-pc|sk|pc|sa|pc|s3|pg||
+pc|sk|pc|sa|pc|s3|
+pg| ***** 13 ***** |
 
 
 %% ============= Page  14
@@ -269,7 +271,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,Sq2,Sk54|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^bAs before...|
-pc|sq|pg||
+pc|sq|
+pg| ***** 14 ***** |
 
 
 %% ============= Page  15
@@ -279,7 +282,7 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S2q,Sk54|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sq|    tc|r|
+wt|n|tc|c|pc|sq|tc|r|
 lb|*cWhich card would you play? Click that card on the right.^^sk^sks5s4|
 
 
@@ -290,11 +293,12 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S2q,Sk54|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sq|    tc|r|
+wt|n|tc|c|pc|sq|tc|r|
 at|^^|cp||at|^a you cannot promote anything for yourself. However, you might be able to promote a nine or ten for partner.|
 ht|a|cp||at|^a|
 at|^^|cp||at|^aA nine? Yes, a nine, but first a ten.|
-pc|sk|pg||
+pc|sk|
+pg| ***** 16 ***** |
 
 
 %% ============= Page  17
@@ -304,7 +308,7 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saj987,St63,Sq2,Sk54|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-pg||
+pg| ***** 17 ***** |
 
 
 %% ============= Page  18
@@ -315,7 +319,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saj987,St63,Sq2,Sk54|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf you cover the Queen, partner's 10 eventually takes a trick.|
-pg||
+pg| ***** 18 ***** |
 
 
 %% ============= Page  19
@@ -326,7 +330,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saj987,St63,Sq2,Sk54|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf you cover the Queen, partner's 10 eventually takes a trick.|
-pc|sq|pc|sk|pc|sa|pc|s3|pg||
+pc|sq|pc|sk|pc|sa|pc|s3|
+pg| ***** 19 ***** |
 
 
 %% ============= Page  20
@@ -336,11 +341,11 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sj987a,St63,S2q,S54k|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sq|pc|sk|pc|sa|    tc|r|    pc|s3|
+wt|n|tc|c|pc|sq|pc|sk|pc|sa|tc|r|pc|s3|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf you cover the Queen, partner's 10 eventually takes a trick.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf you do not declarer runs five tricks.|
-pg||
+pg| ***** 20 ***** |
 
 
 %% ============= Page  21
@@ -350,11 +355,12 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saj987,St63,S2q,Sk54|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sq|    tc|r|
+wt|n|tc|c|pc|sq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf you cover the Queen, partner's 10 eventually takes a trick.|
 at|^^|cp||at|^b|
 at|^^|cp|4|at|^bIf you do not declarer runs five tricks.|
-pc|s4|pc|s7|pc|s3|pg||
+pc|s4|pc|s7|pc|s3|
+pg| ***** 21 ***** |
 
 
 %% ============= Page  22
@@ -364,11 +370,12 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saj987,St63,S2q,Sk54|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sq|pc|s4|pc|s7|    tc|r|    pc|s3|
+wt|n|tc|c|pc|sq|pc|s4|pc|s7|tc|r|pc|s3|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf you cover the Queen, partner's 10 eventually takes a trick.|
 at|^^|cp||at|^b|
 at|^^|cp|4|at|^bIf you do not declarer runs five tricks.|
-pc|s2|pc|s5|pc|sj|pc|s6|pg||
+pc|s2|pc|s5|pc|sj|pc|s6|
+pg| ***** 22 ***** |
 
 
 %% ============= Page  23
@@ -379,12 +386,13 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sa987j,St36,Sq2,Sk45|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|tc|c|   
-        pc|sq|pc|s4|pc|s7|pc|s3|    tc|r|
-tc|c|   pc|s2|pc|s5|pc|sj|    tc|r|    pc|s6|
+pc|sq|pc|s4|pc|s7|pc|s3|tc|r|
+tc|c|pc|s2|pc|s5|pc|sj|tc|r|pc|s6|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf you cover the Queen, partner's 10 eventually takes a trick.|
 at|^^|cp||at|^b|
 at|^^|cp|4|at|^bIf you do not declarer runs five tricks.|
-pc|sa|pc|st|pg||
+pc|sa|pc|st|
+pg| ***** 23 ***** |
 
 
 %% ============= Page  24
@@ -397,7 +405,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bBut what if partner does not have the 10?|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bDon't give up, partner may have the nine!|
-pg||
+pg| ***** 24 ***** |
 
 
 %% ============= Page  25
@@ -407,7 +415,8 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sajt8,S9763,Sq2,Sk54|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|pc|sq|pc|sk|pc|sa|pc|s3|pg||
+wt|n|pc|sq|pc|sk|pc|sa|pc|s3|
+pg| ***** 25 ***** |
 
 
 %% ============= Page  26
@@ -417,11 +426,12 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sjt8a,S9763,S2q,S54k|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sq|pc|sk|pc|sa|    tc|r|    pc|s3|
+wt|n|tc|c|pc|sq|pc|sk|pc|sa|tc|r|pc|s3|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf you cover the Queen, partner's nine becomes a fourth-round trick.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf you fail to cover, declarer takes all four tricks.|
-pc|s8|pg||
+pc|s8|
+pg| ***** 26 ***** |
 
 
 %% ============= Page  27
@@ -431,9 +441,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sajt8,S9763,S2q,Sk54|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sq|    tc|r|
+wt|n|tc|c|pc|sq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bFrom these diagrams it appears right to cover an honor with an honor, at least when it is being led from dummy.|
-pg||
+pg| ***** 27 ***** |
 
 
 %% ============= Page  28
@@ -443,10 +453,10 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sajt8,S9763,S2q,Sk54|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sq|    tc|r|
+wt|n|tc|c|pc|sq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bFrom these diagrams it appears right to cover an honor with an honor, at least when it is being led from dummy.|
 cp||at| True?|
-pg||
+pg| ***** 28 ***** |
 
 
 %% ============= Page  29
@@ -456,12 +466,12 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sajt8,S9763,S2q,Sk54|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sq|    tc|r|
+wt|n|tc|c|pc|sq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bFrom these diagrams it appears right to cover an honor with an honor, at least when it is being led from dummy.|
 cp|4|at| True?|
 cp||at| |
 cp||at|^*iNo!^*n|
-pg||
+pg| ***** 29 ***** |
 
 
 %% ============= Page  30
@@ -472,7 +482,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*iIf you can't promote anything for yourself, and partner has insufficient length to effect a promotion, don't cover.^*n|
-pg||
+pg| ***** 30 ***** |
 
 
 %% ============= Page  31
@@ -483,7 +493,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPartner's length is an important issue, a critical issue, as can be seen in the following diagram, dummy leading the Jack.|
-pg||
+pg| ***** 31 ***** |
 
 
 %% ============= Page  32
@@ -495,7 +505,8 @@ md|1,,Sj54,Sq32|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^b^*iScenario 1:^*n|
 cp||at|  South's bidding has shown six Spades. |
-pc|sj|pg||
+pc|sj|
+pg| ***** 32 ***** |
 
 
 %% ============= Page  33
@@ -505,7 +516,7 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S54j,Sq32|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 lb|*mShould you cover?^Yes~No~^2|
 
 
@@ -516,11 +527,11 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S54j,Sq32|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|at|^^|cp||at|^bYou cannot promote anything for yourself and partner has a singleton!|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bThat singleton may be the King!|
-pg||
+pg| ***** 34 ***** |
 
 
 %% ============= Page  35
@@ -530,9 +541,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S54j,Sq32|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bEven if it is a small singleton, giving declarer AK109xx, you are making a big mistake to cover.|
-pg||
+pg| ***** 35 ***** |
 
 
 %% ============= Page  36
@@ -542,11 +553,11 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S54j,Sq32|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bEven if it is a small singleton, giving declarer AK109xx, you are making a big mistake to cover.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bDeclarer is not planning to take a finesse - declarer is testing your nerves.|
-pg||
+pg| ***** 36 ***** |
 
 
 %% ============= Page  37
@@ -557,7 +568,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThe next diagram shows you this kind of maneuver in the context of a full hand.|
-pg||
+pg| ***** 37 ***** |
 
 
 %% ============= Page  38
@@ -570,7 +581,7 @@ sk|e|
 ha||mb|7s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bI have left out the bidding sequence on this hand because I did not want to be associated with it. Suffice it to say that South's bidding has shown seven or more likely eight Spades, and he has driven the auction to 7 Spades.|
-pg||
+pg| ***** 38 ***** |
 
 
 %% ============= Page  39
@@ -582,7 +593,8 @@ md|1Sat987543Ha5Da62,SkHjt2Djt43Cqjt62,Sj2Hkq74Dkq85Ca75,Sq6H9863D97Ck9843|
 ha||mb|7s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|at|^b@2|at|^z@3|ht|b|cp|4|at|^bI have left out the bidding sequence on this hand because I did not want to be associated with it. Suffice it to say that South's bidding has shown seven or more likely eight Spades, and he has driven the auction to 7 Spades.|
-pc|cq|pc|ca|pc|c3|pc|d2|pg||
+pc|cq|pc|ca|pc|c3|pc|d2|
+pg| ***** 39 ***** |
 
 
 %% ============= Page  40
@@ -593,9 +605,10 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sat987543Ha5Da62,SkHjt2Djt43Cjt62q,Sj2Hkq74Dkq85C75a,Sq6H9863D97Ck9843|
 ha||mb|7s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|cq|pc|ca|pc|c3|    tc|r|    pc|d2|
+wt|w|tc|c|pc|cq|pc|ca|pc|c3|tc|r|pc|d2|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bI have left out the bidding sequence on this hand because I did not want to be associated with it. Suffice it to say that South's bidding has shown seven or more likely eight Spades, and he has driven the auction to 7 Spades.|
-pc|sj|pg||
+pc|sj|
+pg| ***** 40 ***** |
 
 
 %% ============= Page  41
@@ -607,8 +620,8 @@ md|1Sat987543Ha5Da62,SkHjt2Djt43Cjt62q,S2jHkq74Dkq85C75a,Sq6H9863D97Ck9843|
 ha||mb|7s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|cq|pc|ca|pc|c3|pc|d2|    tc|r|
-tc|c|   pc|sj|    tc|r|
+pc|cq|pc|ca|pc|c3|pc|d2|tc|r|
+tc|c|pc|sj|tc|r|
 lb|*mShould you cover?^Yes~No~^2|
 
 
@@ -621,10 +634,10 @@ md|1Sat987543Ha5Da62,SkHjt2Djt43Cjt62q,S2jHkq74Dkq85C75a,Sq6H9863D97Ck9843|
 ha||mb|7s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|cq|pc|ca|pc|c3|pc|d2|    tc|r|
-tc|c|   pc|sj|    tc|r|
+pc|cq|pc|ca|pc|c3|pc|d2|tc|r|
+tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bYou cover only if South is a dear friend or a blood relative.|
-pg||
+pg| ***** 42 ***** |
 
 
 %% ============= Page  43
@@ -636,10 +649,10 @@ md|1Sat987543Ha5Da62,SkHjt2Djt43Cjt62q,S2jHkq74Dkq85C75a,Sq6H9863D97Ck9843|
 ha||mb|7s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|cq|pc|ca|pc|c3|pc|d2|    tc|r|
-tc|c|   pc|sj|    tc|r|
+pc|cq|pc|ca|pc|c3|pc|d2|tc|r|
+tc|c|pc|sj|tc|r|
 ht|a|cp||at|^aPartner is marked with one or at most two Spades, so why cover?|
-pg||
+pg| ***** 43 ***** |
 
 
 %% ============= Page  44
@@ -652,11 +665,11 @@ sk||
 ha||mb|7s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|cq|pc|ca|pc|c3|pc|d2|    tc|r|
-tc|c|   pc|sj|    tc|r|
+pc|cq|pc|ca|pc|c3|pc|d2|tc|r|
+tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf you cover, you can kiss this partnership |
 cp||at|^*isayonara.^*n|
-pg||
+pg| ***** 44 ***** |
 
 
 %% ============= Page  45
@@ -666,7 +679,7 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,Sj54,Sq32|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-pg||
+pg| ***** 45 ***** |
 
 
 %% ============= Page  46
@@ -678,7 +691,8 @@ md|1,,Sj54,Sq32|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^b^*iScenario 2:^*n|
 cp||at|  Spades is an unbid suit and the Jack is led.|
-pc|sj|pg||
+pc|sj|
+pg| ***** 46 ***** |
 
 
 %% ============= Page  47
@@ -688,7 +702,7 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S54j,Sq32|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 lb|*mShould you cover?^Yes~No~Usually~^3|
 
 
@@ -699,10 +713,10 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S54j,Sq32|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*bUsually^*n|
 cp||at|.|
-pg||
+pg| ***** 48 ***** |
 
 
 %% ============= Page  49
@@ -712,9 +726,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S54j,Sq32|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bWhen you see that word, you know I'm helping in case declarer cannot afford to take a finesse, etc.|
-pg||
+pg| ***** 49 ***** |
 
 
 %% ============= Page  50
@@ -724,9 +738,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S54j,Sq32|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPartner is marked with three or, more likely, four Spades.|
-pg||
+pg| ***** 50 ***** |
 
 
 %% ============= Page  51
@@ -736,11 +750,11 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S54j,Sq32|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bPartner is marked with three or, more likely, four Spades.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf partner has @sK9x(x) or @sA9x(x), you gain a trick by covering.|
-pg||
+pg| ***** 51 ***** |
 
 
 %% ============= Page  52
@@ -751,7 +765,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sat8,Sk976,Sj54,Sq32|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^bCover the Jack and declarer takes one trick; duck the Jack and declarer takes two tricks by repeating the finesse.|
-pc|sj|pg||
+pc|sj|
+pg| ***** 52 ***** |
 
 
 %% ============= Page  53
@@ -762,7 +777,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*iIf dummy has a number of equal honors, cover the last equal. A biggie.^*n|
-pg||
+pg| ***** 53 ***** |
 
 
 %% ============= Page  54
@@ -775,7 +790,7 @@ sk|e|
 ha||mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPartner leads the @hQ...|
-pg||
+pg| ***** 54 ***** |
 
 
 %% ============= Page  55
@@ -787,7 +802,8 @@ md|1Sa32Ha9D9862Cak76,St874Hqjt754D4Ct3,Sqj9H63Dak753Cq85,Sk65Hk82DqjtCj942|
 ha||mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|at|^b@2|at|^z@3|ht|b|cp|4|at|^bPartner leads the @hQ...|
-pc|hq|pc|h3|pc|h8|pg||
+pc|hq|pc|h3|pc|h8|
+pg| ***** 55 ***** |
 
 
 %% ============= Page  56
@@ -798,10 +814,10 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sa32Ha9D9862Cak76,St874Hjt754qD4Ct3,Sqj9H63Dak753Cq85,Sk65Hk28DqjtCj942|
 ha||mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|hq|pc|h3|pc|h8|    tc|r|
+wt|w|tc|c|pc|hq|pc|h3|pc|h8|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bPartner leads the @hQ...|
 cp||at| you play an encouraging @h8.|
-pg||
+pg| ***** 56 ***** |
 
 
 %% ============= Page  57
@@ -813,12 +829,13 @@ md|1Sa32Ha9D9862Cak76,St874Hjt754qD4Ct3,Sqj9H63Dak753Cq85,Sk65Hk28DqjtCj942|
 sk||
 ha||mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|hq|pc|h3|pc|h8|    tc|r|
+wt|w|tc|c|pc|hq|pc|h3|pc|h8|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bPartner leads the @hQ...|
 cp|4|at| you play an encouraging @h8.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^b(With Ax facing xx, unless you think the suit is divided 7-2 indicating a holdup play, you should take the first trick retaining your low card as a possible exit card later).|
-pc|ha|pg||
+pc|ha|
+pg| ***** 57 ***** |
 
 
 %% ============= Page  58
@@ -829,9 +846,9 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sa32H9aD9862Cak76,St874Hjt754qD4Ct3,Sqj9H63Dak753Cq85,Sk65Hk28DqjtCj942|
 ha||mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|hq|pc|h3|pc|h8|    tc|r|    pc|ha|
+wt|w|tc|c|pc|hq|pc|h3|pc|h8|tc|r|pc|ha|
 at|^b@2|at|^z@3|ht|b|cp||at|^bLet's follow the action.|
-pg||
+pg| ***** 58 ***** |
 
 
 %% ============= Page  59
@@ -843,9 +860,10 @@ md|1Sa32H9aD9862Cak76,St874Hjt754qD4Ct3,Sqj9H63Dak753Cq85,Sk65Hk28DqjtCj942|
 ha||mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|hq|pc|h3|pc|h8|pc|ha|    tc|r|
+pc|hq|pc|h3|pc|h8|pc|ha|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bLet's follow the action.|
-pc|c6|pc|c3|pc|cq|pc|c2|pg||
+pc|c6|pc|c3|pc|cq|pc|c2|
+pg| ***** 59 ***** |
 
 
 %% ============= Page  60
@@ -857,10 +875,11 @@ md|1Sa32H9aD9862Cak76,St874Hjt754qD4Ct3,Sqj9H63Dak753C85q,Sk65Hk28DqjtCj942|
 ha||mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|hq|pc|h3|pc|h8|pc|ha|    tc|r|
-tc|c|   pc|c6|pc|c3|pc|cq|    tc|r|    pc|c2|
+pc|hq|pc|h3|pc|h8|pc|ha|tc|r|
+tc|c|pc|c6|pc|c3|pc|cq|tc|r|pc|c2|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bLet's follow the action.|
-pc|c5|pc|c4|pc|ck|pc|ct|pg||
+pc|c5|pc|c4|pc|ck|pc|ct|
+pg| ***** 60 ***** |
 
 
 %% ============= Page  61
@@ -872,11 +891,12 @@ md|1Sa32H9aD9862Ca76k,St874Hjt754qD4C3t,Sqj9H63Dak753C8q5,Sk65Hk28DqjtCj924|
 ha||mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|hq|pc|h3|pc|h8|pc|ha|
-        pc|c6|pc|c3|pc|cq|pc|c2|    tc|r|
-tc|c|   pc|c5|pc|c4|pc|ck|    tc|r|    pc|ct|
+pc|hq|pc|h3|pc|h8|pc|ha|
+pc|c6|pc|c3|pc|cq|pc|c2|tc|r|
+tc|c|pc|c5|pc|c4|pc|ck|tc|r|pc|ct|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bLet's follow the action.|
-pc|ca|pc|s4|pc|c8|pc|c9|pg||
+pc|ca|pc|s4|pc|c8|pc|c9|
+pg| ***** 61 ***** |
 
 
 %% ============= Page  62
@@ -888,14 +908,14 @@ md|1Sa32H9aD9862C76ka,St874Hjt754qD4C3t,Sqj9H63Dak753Cq58,Sk65Hk28DqjtCj249|
 ha||mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|hq|pc|h3|pc|h8|pc|ha|
-        pc|c6|pc|c3|pc|cq|pc|c2|
-        pc|c5|pc|c4|pc|ck|pc|ct|    tc|r|
-tc|c|   pc|ca|pc|s4|pc|c8|    tc|r|    pc|c9|
+pc|hq|pc|h3|pc|h8|pc|ha|
+pc|c6|pc|c3|pc|cq|pc|c2|
+pc|c5|pc|c4|pc|ck|pc|ct|tc|r|
+tc|c|pc|ca|pc|s4|pc|c8|tc|r|pc|c9|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bLet's follow the action.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bDeclarer now tries Diamonds.|
-pg||
+pg| ***** 62 ***** |
 
 
 %% ============= Page  63
@@ -907,14 +927,15 @@ md|1Sa32H9aD9862C76ka,St874Hjt754qD4C3t,Sqj9H63Dak753Cq58,Sk65Hk28DqjtCj249|
 ha||mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|hq|pc|h3|pc|h8|pc|ha|
-        pc|c6|pc|c3|pc|cq|pc|c2|
-        pc|c5|pc|c4|pc|ck|pc|ct|
-        pc|ca|pc|s4|pc|c8|pc|c9|    tc|r|
+pc|hq|pc|h3|pc|h8|pc|ha|
+pc|c6|pc|c3|pc|cq|pc|c2|
+pc|c5|pc|c4|pc|ck|pc|ct|
+pc|ca|pc|s4|pc|c8|pc|c9|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bLet's follow the action.|
 at|^^|cp||at|^b|
 at|^^|cp|4|at|^bDeclarer now tries Diamonds.|
-pc|d2|pc|d4|pc|dk|pc|dt|pg||
+pc|d2|pc|d4|pc|dk|pc|dt|
+pg| ***** 63 ***** |
 
 
 %% ============= Page  64
@@ -926,13 +947,13 @@ md|1Sa32H9aD9862C76ka,St874Hjt754qD4C3t,Sqj9H63Da753kCq58,Sk65Hk28DqjtCj249|
 ha||mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|hq|pc|h3|pc|h8|pc|ha|
-        pc|c6|pc|c3|pc|cq|pc|c2|
-        pc|c5|pc|c4|pc|ck|pc|ct|
-        pc|ca|pc|s4|pc|c8|pc|c9|    tc|r|
-tc|c|   pc|d2|pc|d4|pc|dk|    tc|r|    pc|dt|
+pc|hq|pc|h3|pc|h8|pc|ha|
+pc|c6|pc|c3|pc|cq|pc|c2|
+pc|c5|pc|c4|pc|ck|pc|ct|
+pc|ca|pc|s4|pc|c8|pc|c9|tc|r|
+tc|c|pc|d2|pc|d4|pc|dk|tc|r|pc|dt|
 at|^b@2|at|^z@3|ht|b|cp||at|^bNeither minor behaves so declarer needs three Spade tricks.|
-pg||
+pg| ***** 64 ***** |
 
 
 %% ============= Page  65
@@ -944,13 +965,14 @@ md|1Sa32H9aD9862C76ka,St874Hjt754qD4C3t,Sqj9H63Da753kCq58,Sk65Hk28DqjtCj249|
 ha||mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|hq|pc|h3|pc|h8|pc|ha|
-        pc|c6|pc|c3|pc|cq|pc|c2|
-        pc|c5|pc|c4|pc|ck|pc|ct|
-        pc|ca|pc|s4|pc|c8|pc|c9|
-        pc|d2|pc|d4|pc|dk|pc|dt|    tc|r|
+pc|hq|pc|h3|pc|h8|pc|ha|
+pc|c6|pc|c3|pc|cq|pc|c2|
+pc|c5|pc|c4|pc|ck|pc|ct|
+pc|ca|pc|s4|pc|c8|pc|c9|
+pc|d2|pc|d4|pc|dk|pc|dt|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bNeither minor behaves so declarer needs three Spade tricks.|
-pc|sq|pg||
+pc|sq|
+pg| ***** 65 ***** |
 
 
 %% ============= Page  66
@@ -962,16 +984,16 @@ md|1Sa32H9aD9862C76ka,St874Hjt754qD4C3t,Sj9qH63Da753kCq58,Sk65Hk28DqjtCj249|
 ha||mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|hq|pc|h3|pc|h8|pc|ha|
-        pc|c6|pc|c3|pc|cq|pc|c2|
-        pc|c5|pc|c4|pc|ck|pc|ct|
-        pc|ca|pc|s4|pc|c8|pc|c9|
-        pc|d2|pc|d4|pc|dk|pc|dt|    tc|r|
-tc|c|   pc|sq|    tc|r|
+pc|hq|pc|h3|pc|h8|pc|ha|
+pc|c6|pc|c3|pc|cq|pc|c2|
+pc|c5|pc|c4|pc|ck|pc|ct|
+pc|ca|pc|s4|pc|c8|pc|c9|
+pc|d2|pc|d4|pc|dk|pc|dt|tc|r|
+tc|c|pc|sq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bNeither minor behaves so declarer needs three Spade tricks.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bBetter play low.|
-pg||
+pg| ***** 66 ***** |
 
 
 %% ============= Page  67
@@ -983,16 +1005,17 @@ md|1Sa32H9aD9862C76ka,St874Hjt754qD4C3t,Sj9qH63Da753kCq58,Sk65Hk28DqjtCj249|
 ha||mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|hq|pc|h3|pc|h8|pc|ha|
-        pc|c6|pc|c3|pc|cq|pc|c2|
-        pc|c5|pc|c4|pc|ck|pc|ct|
-        pc|ca|pc|s4|pc|c8|pc|c9|
-        pc|d2|pc|d4|pc|dk|pc|dt|    tc|r|
-tc|c|   pc|sq|    tc|r|
+pc|hq|pc|h3|pc|h8|pc|ha|
+pc|c6|pc|c3|pc|cq|pc|c2|
+pc|c5|pc|c4|pc|ck|pc|ct|
+pc|ca|pc|s4|pc|c8|pc|c9|
+pc|d2|pc|d4|pc|dk|pc|dt|tc|r|
+tc|c|pc|sq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bNeither minor behaves so declarer needs three Spade tricks.|
 at|^^|cp||at|^b|
 at|^^|cp|4|at|^bBetter play low.|
-pc|s5|pc|s2|pc|s7|pg||
+pc|s5|pc|s2|pc|s7|
+pg| ***** 67 ***** |
 
 
 %% ============= Page  68
@@ -1004,14 +1027,14 @@ md|1Sa32H9aD9862C76ka,St847Hjt754qD4C3t,Sj9qH63Da753kCq58,Sk65Hk28DqjtCj249|
 ha||mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|hq|pc|h3|pc|h8|pc|ha|
-        pc|c6|pc|c3|pc|cq|pc|c2|
-        pc|c5|pc|c4|pc|ck|pc|ct|
-        pc|ca|pc|s4|pc|c8|pc|c9|
-        pc|d2|pc|d4|pc|dk|pc|dt|    tc|r|
-tc|c|   pc|sq|pc|s5|pc|s2|    tc|r|    pc|s7|
+pc|hq|pc|h3|pc|h8|pc|ha|
+pc|c6|pc|c3|pc|cq|pc|c2|
+pc|c5|pc|c4|pc|ck|pc|ct|
+pc|ca|pc|s4|pc|c8|pc|c9|
+pc|d2|pc|d4|pc|dk|pc|dt|tc|r|
+tc|c|pc|sq|pc|s5|pc|s2|tc|r|pc|s7|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf you cover, declarer wins the Ace and leads a Spade to the nine taking three tricks not to mention the contract.|
-pg||
+pg| ***** 68 ***** |
 
 
 %% ============= Page  69
@@ -1023,16 +1046,16 @@ md|1Sa32H9aD9862C76ka,St847Hjt754qD4C3t,Sj9qH63Da753kCq58,Sk65Hk28DqjtCj249|
 ha||mb|1n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|hq|pc|h3|pc|h8|pc|ha|
-        pc|c6|pc|c3|pc|cq|pc|c2|
-        pc|c5|pc|c4|pc|ck|pc|ct|
-        pc|ca|pc|s4|pc|c8|pc|c9|
-        pc|d2|pc|d4|pc|dk|pc|dt|
-        pc|sq|pc|s5|pc|s2|pc|s7|    tc|r|
+pc|hq|pc|h3|pc|h8|pc|ha|
+pc|c6|pc|c3|pc|cq|pc|c2|
+pc|c5|pc|c4|pc|ck|pc|ct|
+pc|ca|pc|s4|pc|c8|pc|c9|
+pc|d2|pc|d4|pc|dk|pc|dt|
+pc|sq|pc|s5|pc|s2|pc|s7|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf you cover, declarer wins the Ace and leads a Spade to the nine taking three tricks not to mention the contract.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf you duck and cover the @sJ, declarer only scores two Spade tricks.|
-pg||
+pg| ***** 69 ***** |
 
 
 %% ============= Page  70
@@ -1043,7 +1066,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bAnother common "equal honor" position:|
-pg||
+pg| ***** 70 ***** |
 
 
 %% ============= Page  71
@@ -1054,7 +1077,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saq87,S62,Sjt5,Sk943|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^bSay at some point in the bidding you have mentioned Spades, partner leads something else (of course), and eventually the @sJ is led from the dummy.|
-pc|sj|pg||
+pc|sj|
+pg| ***** 71 ***** |
 
 
 %% ============= Page  72
@@ -1064,7 +1088,7 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saq87,S62,St5j,Sk943|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 lb|*mDo you cover?^Yes~No~^2|
 
 
@@ -1075,9 +1099,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saq87,S62,St5j,Sk943|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*iDon't cover.^*n|
-pg||
+pg| ***** 73 ***** |
 
 
 %% ============= Page  74
@@ -1087,9 +1111,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saq87,S62,St5j,Sk943|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThere are two equal honors over there, wait for the second.|
-pg||
+pg| ***** 74 ***** |
 
 
 %% ============= Page  75
@@ -1099,9 +1123,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saq87,S62,St5j,Sk943|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf you cover...|
-pg||
+pg| ***** 75 ***** |
 
 
 %% ============= Page  76
@@ -1111,9 +1135,10 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saq87,S62,St5j,Sk943|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf you cover...|
-pc|sk|pc|sa|pc|s2|pg||
+pc|sk|pc|sa|pc|s2|
+pg| ***** 76 ***** |
 
 
 %% ============= Page  77
@@ -1123,9 +1148,10 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sq87a,S62,St5j,S943k|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|pc|sk|pc|sa|    tc|r|    pc|s2|
+wt|n|tc|c|pc|sj|pc|sk|pc|sa|tc|r|pc|s2|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf you cover...|
-pc|s7|pc|s6|pc|st|pc|s3|pg||
+pc|s7|pc|s6|pc|st|pc|s3|
+pg| ***** 77 ***** |
 
 
 %% ============= Page  78
@@ -1136,10 +1162,11 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sq8a7,S26,S5jt,S94k3|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|tc|c|   
-        pc|sj|pc|sk|pc|sa|pc|s2|    tc|r|
-tc|c|   pc|s7|pc|s6|pc|st|    tc|r|    pc|s3|
+pc|sj|pc|sk|pc|sa|pc|s2|tc|r|
+tc|c|pc|s7|pc|s6|pc|st|tc|r|pc|s3|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf you cover...|
-pc|s5|pc|s4|pc|s8|pg||
+pc|s5|pc|s4|pc|s8|
+pg| ***** 78 ***** |
 
 
 %% ============= Page  79
@@ -1149,9 +1176,10 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saq87,S62,St5j,Sk943|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf you don't cover...|
-pc|s3|pc|s7|pc|s2|pg||
+pc|s3|pc|s7|pc|s2|
+pg| ***** 79 ***** |
 
 
 %% ============= Page  80
@@ -1161,10 +1189,11 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saq87,S62,St5j,Sk943|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|pc|s3|pc|s7|    tc|r|    pc|s2|
+wt|n|tc|c|pc|sj|pc|s3|pc|s7|tc|r|pc|s2|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf you don't cover...|
 cp||at| then cover the last honor.|
-pc|st|pc|sk|pc|sa|pc|s6|pg||
+pc|st|pc|sk|pc|sa|pc|s6|
+pg| ***** 80 ***** |
 
 
 %% ============= Page  81
@@ -1175,10 +1204,10 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sq87a,S26,S5jt,S943k|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|tc|c|   
-        pc|sj|pc|s3|pc|s7|pc|s2|    tc|r|
-tc|c|   pc|st|pc|sk|pc|sa|    tc|r|    pc|s6|
+pc|sj|pc|s3|pc|s7|pc|s2|tc|r|
+tc|c|pc|st|pc|sk|pc|sa|tc|r|pc|s6|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf declarer has no outside entry and has to lead Spades from his hand your @s9 is a winner.|
-pg||
+pg| ***** 81 ***** |
 
 
 %% ============= Page  82
@@ -1189,7 +1218,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bSometimes dummy has as many as three or four equals such as QJ10(9) or J109(8).|
-pg||
+pg| ***** 82 ***** |
 
 
 %% ============= Page  83
@@ -1204,7 +1233,7 @@ at|^^|cp||at|^b|
 at|^^|cp||at|^bWhen you see something as imposing as this, don't get discouraged, and don't cover until the |
 cp||at|^*ilast^*n|
 cp||at|  equal is led.|
-pg||
+pg| ***** 83 ***** |
 
 
 %% ============= Page  84
@@ -1214,7 +1243,7 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sa54,S32,Sqjt9,Sk876|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-pg||
+pg| ***** 84 ***** |
 
 
 %% ============= Page  85
@@ -1225,7 +1254,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sa54,S32,Sqjt9,Sk876|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPatience. When dummy leads any of those Spades play low, eventually declarer's Ace will come down and your King will prevail.|
-pg||
+pg| ***** 85 ***** |
 
 
 %% ============= Page  86
@@ -1236,7 +1265,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*iCover the first equal honor if dummy leads from a doubleton in which both cards are honors.^*n|
-pg||
+pg| ***** 86 ***** |
 
 
 %% ============= Page  87
@@ -1247,7 +1276,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sak873,S952,Sjt,Sq64|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^b^*iCover the first equal honor if dummy leads from a doubleton in which both cards are honors.^*n|
-pg||
+pg| ***** 87 ***** |
 
 
 %% ============= Page  88
@@ -1258,7 +1287,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sak873,S952,Sjt,Sq64|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bWhen dummy has two honors doubleton, cover the first honor and block the suit.|
-pg||
+pg| ***** 88 ***** |
 
 
 %% ============= Page  89
@@ -1269,7 +1298,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sak873,S952,Sjt,Sq64|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPicture a scenario where South is playing notrump and may have no outside entry to his hand, and leads the @sJ from dummy.|
-pg||
+pg| ***** 89 ***** |
 
 
 %% ============= Page  90
@@ -1280,7 +1309,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sak873,S952,Sjt,Sq64|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp|4|at|^bPicture a scenario where South is playing notrump and may have no outside entry to his hand, and leads the @sJ from dummy.|
-pc|sj|pg||
+pc|sj|
+pg| ***** 90 ***** |
 
 
 %% ============= Page  91
@@ -1290,11 +1320,11 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sak873,S952,Stj,Sq64|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bPicture a scenario where South is playing notrump and may have no outside entry to his hand, and leads the @sJ from dummy.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bCover.|
-pg||
+pg| ***** 91 ***** |
 
 
 %% ============= Page  92
@@ -1304,11 +1334,12 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sak873,S952,Stj,Sq64|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bPicture a scenario where South is playing notrump and may have no outside entry to his hand, and leads the @sJ from dummy.|
 at|^^|cp||at|^b|
 at|^^|cp|4|at|^bCover.|
-pc|sq|pg||
+pc|sq|
+pg| ***** 92 ***** |
 
 
 %% ============= Page  93
@@ -1318,9 +1349,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sak873,S952,Stj,S64q|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|pc|sq|    tc|r|
+wt|n|tc|c|pc|sj|pc|sq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf you duck, the Jack wins, and declarer has no trouble taking five Spade tricks.|
-pg||
+pg| ***** 93 ***** |
 
 
 %% ============= Page  94
@@ -1330,11 +1361,11 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sak873,S952,Stj,S64q|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|pc|sq|    tc|r|
+wt|n|tc|c|pc|sj|pc|sq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf you duck, the Jack wins, and declarer has no trouble taking five Spade tricks.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf you cover, the suit is blocked and declarer is forced to duck your Queen or else take only two Spade tricks.|
-pg||
+pg| ***** 94 ***** |
 
 
 %% ============= Page  95
@@ -1345,7 +1376,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*iIf there are two equal honors in the dummy and you have a doubleton honor, cover the first honor.^*n|
-pg||
+pg| ***** 95 ***** |
 
 
 %% ============= Page  96
@@ -1356,7 +1387,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saq62,S9873,Sjt5,Sk4|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^b^*iIf there are two equal honors in the dummy and you have a doubleton honor, cover the first honor.^*n|
-pg||
+pg| ***** 96 ***** |
 
 
 %% ============= Page  97
@@ -1367,7 +1398,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saq62,S9873,Sjt5,Sk4|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf dummy leads the Jack (or 10), cover.|
-pg||
+pg| ***** 97 ***** |
 
 
 %% ============= Page  98
@@ -1378,7 +1409,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saq62,S9873,Sjt5,Sk4|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf dummy leads the Jack (or 10), cover.|
-pc|sj|pc|sk|pg||
+pc|sj|pc|sk|
+pg| ***** 98 ***** |
 
 
 %% ============= Page  99
@@ -1388,11 +1420,11 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saq62,S9873,St5j,S4k|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|pc|sk|    tc|r|
+wt|n|tc|c|pc|sj|pc|sk|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf you don't cover, dummy may lead the@s5 next and you will have to play your King 'on air' (on a small card).|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bYou want to get more mileage out of royalty than that.|
-pg||
+pg| ***** 99 ***** |
 
 
 %% ============= Page  100
@@ -1402,9 +1434,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Saq62,S9873,St5j,S4k|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|pc|sk|    tc|r|
+wt|n|tc|c|pc|sj|pc|sk|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIn the diagram position partner eventually winds up with a fourth-round winner if you cover, nothing if you don't cover.|
-pg||
+pg| ***** 100 ***** |
 
 
 %% ============= Page  101
@@ -1415,7 +1447,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*iWhen declarer has four-card length (or longer) dummy has a doubleton and you have four or more cards headed by the King, don't cover.^*n|
-pg||
+pg| ***** 101 ***** |
 
 
 %% ============= Page  102
@@ -1426,7 +1458,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sajt87,S94,Sq2,Sk653|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^b^*iWhen declarer has four-card length (or longer) dummy has a doubleton and you have four or more cards headed by the King, don't cover.^*n|
-pg||
+pg| ***** 102 ***** |
 
 
 %% ============= Page  103
@@ -1437,7 +1469,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sajt87,S94,Sq2,Sk653|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bDeclarer has bid Spades and leads the Queen.|
-pg||
+pg| ***** 103 ***** |
 
 
 %% ============= Page  104
@@ -1448,7 +1480,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sajt87,S94,Sq2,Sk653|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp|4|at|^bDeclarer has bid Spades and leads the Queen.|
-pc|sq|pg||
+pc|sq|
+pg| ***** 104 ***** |
 
 
 %% ============= Page  105
@@ -1458,11 +1491,11 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sajt87,S94,S2q,Sk653|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sq|    tc|r|
+wt|n|tc|c|pc|sq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bDeclarer has bid Spades and leads the Queen.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bDon't cover.|
-pg||
+pg| ***** 105 ***** |
 
 
 %% ============= Page  106
@@ -1472,9 +1505,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sajt87,S94,S2q,Sk653|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sq|    tc|r|
+wt|n|tc|c|pc|sq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThere is only one more Spade in dummy and regardless of South's strength in Spades, your King will stand up.|
-pg||
+pg| ***** 106 ***** |
 
 
 %% ============= Page  107
@@ -1484,9 +1517,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sajt87,S94,S2q,Sk653|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sq|    tc|r|
+wt|n|tc|c|pc|sq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bHowever, if declarer is known to hold three Spades, cover in the hopes of promoting the 10 in partner's hand.|
-pg||
+pg| ***** 107 ***** |
 
 
 %% ============= Page  108
@@ -1496,11 +1529,11 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sajt87,S94,S2q,Sk653|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sq|    tc|r|
+wt|n|tc|c|pc|sq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bHowever, if declarer is known to hold three Spades, cover in the hopes of promoting the 10 in partner's hand.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bAre you beginning to get the picture?|
-pg||
+pg| ***** 108 ***** |
 
 
 %% ============= Page  109
@@ -1510,14 +1543,14 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sajt87,S94,S2q,Sk653|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sq|    tc|r|
+wt|n|tc|c|pc|sq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bHowever, if declarer is known to hold three Spades, cover in the hopes of promoting the 10 in partner's hand.|
 at|^^|cp||at|^b|
 at|^^|cp|4|at|^bAre you beginning to get the picture?|
 cp||at| Declarer's and partner's length |
 cp||at|^*iare^*n|
 cp||at|  the picture.|
-pg||
+pg| ***** 109 ***** |
 
 
 %% ============= Page  110
@@ -1528,7 +1561,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*iWhen the Jack is led from dummy and you have AQx(x), it is usually right to play the Ace.^*n|
-pg||
+pg| ***** 110 ***** |
 
 
 %% ============= Page  111
@@ -1539,7 +1572,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Skt4,S983,Sj5,Saq762|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^b^*iWhen the Jack is led from dummy and you have AQx(x), it is usually right to play the Ace.^*n|
-pg||
+pg| ***** 111 ***** |
 
 
 %% ============= Page  112
@@ -1552,7 +1585,8 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^bWhen the @sJ is led from dummy, play the Ace.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf you play low declarer usually plays low and remains in dummy to continue the suit.|
-pc|sj|pg||
+pc|sj|
+pg| ***** 112 ***** |
 
 
 %% ============= Page  113
@@ -1562,9 +1596,10 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Skt4,S983,S5j,Saq762|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf you win the Ace, South must reenter the dummy and then lead low to the 10 - a play South may be unwilling or unable (no dummy entry) to make.|
-pc|sa|pg||
+pc|sa|
+pg| ***** 113 ***** |
 
 
 %% ============= Page  114
@@ -1576,7 +1611,8 @@ md|1SakH66DakqjCkt964,Sqjt43Ht4D97532C2,S752Haqj95D86Cj75,S986Hk8732Dt4Caq8|
 sk|e|
 ha||mb|2c|mb|p|mb|2h|mb|p|mb|3c|mb|p|mb|4c|mb|p|mb|4n|mb|p|mb|5d|mb|p|mb|6c|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|pc|sq|pc|s2|pc|s6|pg||
+wt|w|pc|sq|pc|s2|pc|s6|
+pg| ***** 114 ***** |
 
 
 %% ============= Page  115
@@ -1587,9 +1623,10 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1SakH66DakqjCkt964,Sjt43qHt4D97532C2,S752Haqj95D86Cj75,S986Hk8732Dt4Caq8|
 ha||mb|2c|mb|p|mb|2h|mb|p|mb|3c|mb|p|mb|4c|mb|p|mb|4n|mb|p|mb|5d|mb|p|mb|6c|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|sq|pc|s2|pc|s6|    tc|r|
+wt|w|tc|c|pc|sq|pc|s2|pc|s6|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bLet's follow the line.|
-pc|sa|pg||
+pc|sa|
+pg| ***** 115 ***** |
 
 
 %% ============= Page  116
@@ -1600,8 +1637,9 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1SkaH66DakqjCkt964,Sjt43qHt4D97532C2,S752Haqj95D86Cj75,S986Hk8732Dt4Caq8|
 ha||mb|2c|mb|p|mb|2h|mb|p|mb|3c|mb|p|mb|4c|mb|p|mb|4n|mb|p|mb|5d|mb|p|mb|6c|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|sq|pc|s2|pc|s6|    tc|r|    pc|sa|
-pc|h6|pc|h4|pc|ha|pc|h2|pg||
+wt|w|tc|c|pc|sq|pc|s2|pc|s6|tc|r|pc|sa|
+pc|h6|pc|h4|pc|ha|pc|h2|
+pg| ***** 116 ***** |
 
 
 %% ============= Page  117
@@ -1613,12 +1651,13 @@ md|1SkaH6DakqjCkt964,Sjt43qHt4D97532C2,S752Hqj95aD86Cj75,S986Hk8732Dt4Caq8|
 ha||mb|2c|mb|p|mb|2h|mb|p|mb|3c|mb|p|mb|4c|mb|p|mb|4n|mb|p|mb|5d|mb|p|mb|6c|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sq|pc|s2|pc|s6|pc|sa|    tc|r|
-tc|c|   pc|h6|pc|h4|pc|ha|    tc|r|    pc|h2|
+pc|sq|pc|s2|pc|s6|pc|sa|tc|r|
+tc|c|pc|h6|pc|h4|pc|ha|tc|r|pc|h2|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIt is clear to win the Ace as you |
 cp||at|^*iknow^*n|
 cp||at|  that declarer cannot get back to dummy to repeat the finesse against your Queen.|
-pc|cj|pg||
+pc|cj|
+pg| ***** 117 ***** |
 
 
 %% ============= Page  118
@@ -1630,15 +1669,15 @@ md|1SkaH6DakqjCkt964,Sjt43qHt4D97532C2,S752Hqj95aD86C75j,S986Hk8732Dt4Caq8|
 ha||mb|2c|mb|p|mb|2h|mb|p|mb|3c|mb|p|mb|4c|mb|p|mb|4n|mb|p|mb|5d|mb|p|mb|6c|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sq|pc|s2|pc|s6|pc|sa|
-        pc|h6|pc|h4|pc|ha|pc|h2|    tc|r|
-tc|c|   pc|cj|    tc|r|
+pc|sq|pc|s2|pc|s6|pc|sa|
+pc|h6|pc|h4|pc|ha|pc|h2|tc|r|
+tc|c|pc|cj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIt is clear to win the Ace as you |
 cp|4|at|^*iknow^*n|
 cp|4|at|  that declarer cannot get back to dummy to repeat the finesse against your Queen.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bThe only possible entry is a Diamond ruff, and you can overruff.|
-pg||
+pg| ***** 118 ***** |
 
 
 %% ============= Page  119
@@ -1650,11 +1689,11 @@ md|1SkaH6DakqjCkt964,Sjt43qHt4D97532C2,S752Hqj95aD86C75j,S986Hk8732Dt4Caq8|
 ha||mb|2c|mb|p|mb|2h|mb|p|mb|3c|mb|p|mb|4c|mb|p|mb|4n|mb|p|mb|5d|mb|p|mb|6c|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sq|pc|s2|pc|s6|pc|sa|
-        pc|h6|pc|h4|pc|ha|pc|h2|    tc|r|
-tc|c|   pc|cj|    tc|r|
+pc|sq|pc|s2|pc|s6|pc|sa|
+pc|h6|pc|h4|pc|ha|pc|h2|tc|r|
+tc|c|pc|cj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf you play low and declarer plays low, declarer remains in dummy to lead another Club, limiting you to one Club trick.|
-pg||
+pg| ***** 119 ***** |
 
 
 %% ============= Page  120
@@ -1666,13 +1705,13 @@ md|1SkaH6DakqjCkt964,Sjt43qHt4D97532C2,S752Hqj95aD86C75j,S986Hk8732Dt4Caq8|
 ha||mb|2c|mb|p|mb|2h|mb|p|mb|3c|mb|p|mb|4c|mb|p|mb|4n|mb|p|mb|5d|mb|p|mb|6c|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sq|pc|s2|pc|s6|pc|sa|
-        pc|h6|pc|h4|pc|ha|pc|h2|    tc|r|
-tc|c|   pc|cj|    tc|r|
+pc|sq|pc|s2|pc|s6|pc|sa|
+pc|h6|pc|h4|pc|ha|pc|h2|tc|r|
+tc|c|pc|cj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bHowever, if the the Jack is led from dummy and you have the Ace without the Queen, you have problems.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bThe general rule is to play the Ace at notrump, but low against a suit contract.|
-pg||
+pg| ***** 120 ***** |
 
 
 %% ============= Page  121
@@ -1686,7 +1725,8 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^bWhen dummy leads the @sJ, you know declarer is not finessing because you have the @s10.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bGiven this layout, if you cover you promote partner's @s8 to a fourth-round trick.|
-pc|sj|pg||
+pc|sj|
+pg| ***** 121 ***** |
 
 
 %% ============= Page  122
@@ -1697,9 +1737,10 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Skq72,S8643,S5j,Sat9|
 sk||
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|    tc|r|
+wt|n|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bHowever, if you are 100% sure declarer has no side-suit entry, win the second Spade and shut South out of whatever remaining Spade winners she may have (South may have started with KQxxx).|
-pc|sa|pg||
+pc|sa|
+pg| ***** 122 ***** |
 
 
 %% ============= Page  123
@@ -1709,9 +1750,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Skq72,S8643,S5j,St9a|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|sj|pc|sa|    tc|r|
+wt|n|tc|c|pc|sj|pc|sa|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bAt a suit contract when you are not looking at the 10, it is usually right to duck the Jack.|
-pg||
+pg| ***** 123 ***** |
 
 
 %% ============= Page  124
@@ -1722,7 +1763,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Skt4,Sq9863,Sj5,Sa72|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^bSay this is a side suit in a slam contract and the @sJ is led from dummy, play low and hope declarer goes wrong.|
-pc|sj|pg||
+pc|sj|
+pg| ***** 124 ***** |
 
 
 %% ============= Page  125
@@ -1731,7 +1773,7 @@ bt||
 cs|3|ht|c|fp|1|cp|1|at|^a^*b^-{     When Dummy Leads a Low Card     }^*n|fp||
 at|^^|fp|1|cp|1|at|^a^*b^-^*n|fp||
 at|^b@2|at|^z@3|cp||at|^bWhen dummy leads a low card, second hand normally plays low. There are exceptions and they will be addressed in the upcoming diagrams.|
-pg||
+pg| ***** 125 ***** |
 
 
 %% ============= Page  126
@@ -1742,7 +1784,7 @@ at|^^|fp|1|cp|1|at|^a^*b^-^*n|fp||
 at|^b@2|at|^z@3|cp|4|at|^bWhen dummy leads a low card, second hand normally plays low. There are exceptions and they will be addressed in the upcoming diagrams.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bNo matter how good a player you are, you are not always going to make the winning play in the second seat, particularly early in the play before you have a read on declarer's distribution and/or the number of tricks you need in the suit led.|
-pg||
+pg| ***** 126 ***** |
 
 
 %% ============= Page  127
@@ -1755,7 +1797,7 @@ at|^^|cp||at|^b|
 at|^^|cp|4|at|^bNo matter how good a player you are, you are not always going to make the winning play in the second seat, particularly early in the play before you have a read on declarer's distribution and/or the number of tricks you need in the suit led.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bNevertheless, it pays to know what 'normal' second hand play is, the play you would usually make.|
-pg||
+pg| ***** 127 ***** |
 
 
 %% ============= Page  128
@@ -1770,7 +1812,7 @@ at|^^|cp||at|^b|
 at|^^|cp|4|at|^bNevertheless, it pays to know what 'normal' second hand play is, the play you would usually make.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIn this scenario Diamonds are trump, a Spade is led from dummy early in the hand, and South is known to have no more than three Spades.|
-pg||
+pg| ***** 128 ***** |
 
 
 %% ============= Page  129
@@ -1781,7 +1823,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,S75|
 sk||
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|pc|s4|pg||
+wt|n|pc|s4|
+pg| ***** 129 ***** |
 
 
 %% ============= Page  130
@@ -1791,9 +1834,10 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,S75|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s4|    tc|r|
+wt|n|tc|c|pc|s4|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPlay the @s7, giving count.|
-pc|s7|pg||
+pc|s7|
+pg| ***** 130 ***** |
 
 
 %% ============= Page  131
@@ -1803,7 +1847,8 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,S952|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|pc|s4|pg||
+wt|n|pc|s4|
+pg| ***** 131 ***** |
 
 
 %% ============= Page  132
@@ -1813,9 +1858,10 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,S952|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s4|    tc|r|
+wt|n|tc|c|pc|s4|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPlay the @s2, give count either three or five cards.|
-pc|s2|pg||
+pc|s2|
+pg| ***** 132 ***** |
 
 
 %% ============= Page  133
@@ -1825,7 +1871,8 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Sk93|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|pc|s4|pg||
+wt|n|pc|s4|
+pg| ***** 133 ***** |
 
 
 %% ============= Page  134
@@ -1835,9 +1882,10 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Sk93|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s4|    tc|r|
+wt|n|tc|c|pc|s4|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPlay the @s3, giving count.|
-pc|s3|pg||
+pc|s3|
+pg| ***** 134 ***** |
 
 
 %% ============= Page  135
@@ -1847,7 +1895,8 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Sk753|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|pc|s4|pg||
+wt|n|pc|s4|
+pg| ***** 135 ***** |
 
 
 %% ============= Page  136
@@ -1857,9 +1906,10 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Sk753|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s4|    tc|r|
+wt|n|tc|c|pc|s4|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPlay the @s7, second highest from four if you can afford it - count.|
-pc|s7|pg||
+pc|s7|
+pg| ***** 136 ***** |
 
 
 %% ============= Page  137
@@ -1869,7 +1919,8 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Sa75|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|pc|s4|pg||
+wt|n|pc|s4|
+pg| ***** 137 ***** |
 
 
 %% ============= Page  138
@@ -1879,9 +1930,10 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Sa75|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s4|    tc|r|
+wt|n|tc|c|pc|s4|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPlay low unless the Ace is the setting trick and there is a chance it might be lost.|
-pc|s5|pg||
+pc|s5|
+pg| ***** 138 ***** |
 
 
 %% ============= Page  139
@@ -1891,7 +1943,8 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Sak92|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|pc|s4|pg||
+wt|n|pc|s4|
+pg| ***** 139 ***** |
 
 
 %% ============= Page  140
@@ -1901,9 +1954,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Sak92|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s4|    tc|r|
+wt|n|tc|c|pc|s4|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bNot clear. It could be right to play low. As long as you know declarer has three Spades and you are sure you can't lose your Ace-King if you duck.|
-pg||
+pg| ***** 140 ***** |
 
 
 %% ============= Page  141
@@ -1913,9 +1966,10 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Sak92|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s4|    tc|r|
+wt|n|tc|c|pc|s4|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bHowever if you don't know declarer's Spade length, play your King in case declarer has a singleton or doubleton Queen.|
-pc|s2|pg||
+pc|s2|
+pg| ***** 141 ***** |
 
 
 %% ============= Page  142
@@ -1925,7 +1979,8 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Skq75|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|e|pc|s5|pg||
+wt|e|pc|s5|
+pg| ***** 142 ***** |
 
 
 %% ============= Page  143
@@ -1935,11 +1990,11 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Skq75|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|e|tc|c|   pc|s5|    tc|r|
+wt|e|tc|c|pc|s5|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIt depends on how many Spade tricks you think you need.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf you need one, split your honors. If you are looking for more play low.|
-pg||
+pg| ***** 143 ***** |
 
 
 %% ============= Page  144
@@ -1949,7 +2004,8 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Sqj7|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|pc|s4|pg||
+wt|n|pc|s4|
+pg| ***** 144 ***** |
 
 
 %% ============= Page  145
@@ -1959,13 +2015,14 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Sqj7|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s4|    tc|r|
+wt|n|tc|c|pc|s4|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPlay low when holding J10x(x) or QJx(x).|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bAs a general rule, do |
 cp||at|^*inot^*n|
 cp||at|  play an honor from either of these holdings.|
-pc|s7|pg||
+pc|s7|
+pg| ***** 145 ***** |
 
 
 %% ============= Page  146
@@ -1975,7 +2032,8 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Sjt7|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|pc|s4|pg||
+wt|n|pc|s4|
+pg| ***** 146 ***** |
 
 
 %% ============= Page  147
@@ -1985,9 +2043,10 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Sjt7|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s4|    tc|r|
+wt|n|tc|c|pc|s4|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPlay low when holding J10x(x) or QJx(x).|
-pc|s7|pg||
+pc|s7|
+pg| ***** 147 ***** |
 
 
 %% ============= Page  148
@@ -1997,7 +2056,8 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Sqjt|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|pc|s4|pg||
+wt|n|pc|s4|
+pg| ***** 148 ***** |
 
 
 %% ============= Page  149
@@ -2007,10 +2067,11 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Sqjt|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s4|    tc|r|
+wt|n|tc|c|pc|s4|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bHolding a perfect three- or four-card honor sequence headed by the 10, Jack or Queen, play the honor you would have led. Play the |
 cp||at|^*iQueen.^*n|
-pc|sq|pg||
+pc|sq|
+pg| ***** 149 ***** |
 
 
 %% ============= Page  150
@@ -2021,7 +2082,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Sjt9|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^bPlay the @sJ. Same as before.|
-pc|s4|pc|sj|pg||
+pc|s4|pc|sj|
+pg| ***** 150 ***** |
 
 
 %% ============= Page  151
@@ -2034,7 +2096,8 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^bA small problem arises when you hold the KQJ.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf you play the King, partner may think you have the AK.|
-pc|s4|pg||
+pc|s4|
+pg| ***** 151 ***** |
 
 
 %% ============= Page  152
@@ -2044,9 +2107,10 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Skqj|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s4|    tc|r|
+wt|n|tc|c|pc|s4|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf you play the Jack, partner will think you have the J109.|
-pc|sj|pg||
+pc|sj|
+pg| ***** 152 ***** |
 
 
 %% ============= Page  153
@@ -2056,13 +2120,13 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Skqj|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s4|pc|sj|    tc|r|
+wt|n|tc|c|pc|s4|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf you play the Jack, partner will think you have the J109.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bPlay the |
 cp||at|^*iJack.^*n|
 cp||at| |
-pg||
+pg| ***** 153 ***** |
 
 
 %% ============= Page  154
@@ -2072,9 +2136,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Skqj|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s4|pc|sj|    tc|r|
+wt|n|tc|c|pc|s4|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThere is such a variance between KQJ and J109 that the bidding, partner's honor cards, and subsequent play to the trick usually reveals all instantly.|
-pg||
+pg| ***** 154 ***** |
 
 
 %% ============= Page  155
@@ -2084,11 +2148,11 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S864,Skqj|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s4|pc|sj|    tc|r|
+wt|n|tc|c|pc|s4|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bBesides, declarer is unlikely to be attacking a suit missing the KQJ.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bThe play of the Jack will be a top card most of the time.|
-pg||
+pg| ***** 155 ***** |
 
 
 %% ============= Page  156
@@ -2105,7 +2169,7 @@ at|^^|cp||at|^b|
 at|^^|cp||at|^bHowever, splitting with the |
 cp||at|^*ihigher equal,^*n|
 cp||at|  the one that you would have led had you been on lead, makes it a whole lot easier for partner to read the position.|
-pg||
+pg| ***** 156 ***** |
 
 
 %% ============= Page  157
@@ -2116,7 +2180,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bSplitting honors with the highest is favored by the expert community.|
-pg||
+pg| ***** 157 ***** |
 
 
 %% ============= Page  158
@@ -2130,7 +2194,8 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^bIf dummy leads a Spade, play the Queen.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf declarer wins, partner can unblock if she wishes.|
-pc|s2|pg||
+pc|s2|
+pg| ***** 158 ***** |
 
 
 %% ============= Page  159
@@ -2140,11 +2205,12 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sa874,Sk6,S532,Sqjt9|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s2|    tc|r|
+wt|n|tc|c|pc|s2|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf dummy leads a Spade, play the Queen.|
 at|^^|cp||at|^b|
 at|^^|cp|4|at|^bIf declarer wins, partner can unblock if she wishes.|
-pc|sq|pc|sa|pg||
+pc|sq|pc|sa|
+pg| ***** 159 ***** |
 
 
 %% ============= Page  160
@@ -2157,7 +2223,8 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^bAlso, if declarer has the King and partner the Ace, partner |
 cp||at|^*iknows^*n|
 cp||at|  not to make a 'clever' ducking play.|
-pc|s2|pc|sq|pc|s7|pg||
+pc|s2|pc|sq|pc|s7|
+pg| ***** 160 ***** |
 
 
 %% ============= Page  161
@@ -2168,7 +2235,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sak4,S876,S532,Sqjt9|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^bFurthermore, if partner has three small Spades, partner knows that it is safe to lead a Spade later in the hand.|
-pc|s2|pc|sq|pc|sa|pg||
+pc|s2|pc|sq|pc|sa|
+pg| ***** 161 ***** |
 
 
 %% ============= Page  162
@@ -2181,7 +2249,8 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp|4|at|^bFurthermore, if partner has three small Spades, partner knows that it is safe to lead a Spade later in the hand.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf you 'split' with the nine, partner will not have a clue whether to unblock or not.|
-pc|s2|pc|s9|pc|sa|pg||
+pc|s2|pc|s9|pc|sa|
+pg| ***** 162 ***** |
 
 
 %% ============= Page  163
@@ -2191,7 +2260,7 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Skq7,Sa4,S532,Sjt986|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-pg||
+pg| ***** 163 ***** |
 
 
 %% ============= Page  164
@@ -2204,7 +2273,8 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^bWhen a low Spade is led from dummy, play the Jack.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bThis tells partner that you have a perfect sequence headed by the Jack and declarer has the KQ.|
-pc|s2|pc|sj|pg||
+pc|s2|pc|sj|
+pg| ***** 164 ***** |
 
 
 %% ============= Page  165
@@ -2214,9 +2284,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Skq7,Sa4,S532,St986j|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s2|pc|sj|    tc|r|
+wt|n|tc|c|pc|s2|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThe play of the Jack also allows partner to discard safely from an original holding of Qxx, if necessary.|
-pg||
+pg| ***** 165 ***** |
 
 
 %% ============= Page  166
@@ -2227,7 +2297,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bWhat about splitting from KQx(x)?|
-pg||
+pg| ***** 166 ***** |
 
 
 %% ============= Page  167
@@ -2238,7 +2308,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S2,Skq43|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp|4|at|^bWhat about splitting from KQx(x)?|
-pc|s2|pg||
+pc|s2|
+pg| ***** 167 ***** |
 
 
 %% ============= Page  168
@@ -2248,11 +2319,11 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S2,Skq43|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s2|    tc|r|
+wt|n|tc|c|pc|s2|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bWhat about splitting from KQx(x)?|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf you play the Queen, partner may play you for the QJ10; if you play the King, partner may think you have the AKx.|
-pg||
+pg| ***** 168 ***** |
 
 
 %% ============= Page  169
@@ -2262,11 +2333,11 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,S2,Skq43|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s2|    tc|r|
+wt|n|tc|c|pc|s2|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThere is no good answer.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bPlay the Queen and hope partner can see the 10 or the Jack, meaning you must have split with the KQ.|
-pg||
+pg| ***** 169 ***** |
 
 
 %% ============= Page  170
@@ -2275,7 +2346,7 @@ bt||
 at|^b@2|at|^z@3|ht|b|cp||at|^bAnother tip|
 at|^^|cp||at|^b|
 at|^^|cp||at|^b^*bWith QJ10x or J109x as opposed to QJ109 or J1098, be careful about splitting if declarer is known to have four or more cards in the suit.^*n|
-pg||
+pg| ***** 170 ***** |
 
 
 %% ============= Page  171
@@ -2289,7 +2360,7 @@ at|^^|cp||at|^b|
 at|^^|cp||at|^bIf there are return entries to the dummy, play low.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bDeclarer is not looking into your hand, and is unlikely to take a really deep finesse.|
-pg||
+pg| ***** 171 ***** |
 
 
 %% ============= Page  172
@@ -2305,7 +2376,7 @@ at|^^|cp||at|^b|
 at|^^|cp|4|at|^bDeclarer is not looking into your hand, and is unlikely to take a really deep finesse.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf declarer does, hold your cards back - way back.|
-pg||
+pg| ***** 172 ***** |
 
 
 %% ============= Page  173
@@ -2323,7 +2394,7 @@ at|^^|cp||at|^b|
 at|^^|cp|4|at|^bIf declarer does, hold your cards back - way back.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bAlso, two points about giving count:|
-pg||
+pg| ***** 173 ***** |
 
 
 %% ============= Page  174
@@ -2344,7 +2415,7 @@ at|^^|cp|4|at|^bAlso, two points about giving count:|
 at|^^|cp||at|^b|
 at|^^|cp||at|^c1) If declarer's count in the suit is known, do not give count; partner already knows the |
 at|^^|cp||at|^ccount.|
-pg||
+pg| ***** 174 ***** |
 
 
 %% ============= Page  175
@@ -2370,7 +2441,7 @@ at|^^|cp||at|^c2) If one defender has all the outside strength, the other nothin
 at|^^|cp||at|^cimportant for the stronger hand to give count, it is the weaker hand that should help the |
 at|^^|cp||at|^cstronger hand out. The weak hand normally gives count, the strong hand may or may |
 at|^^|cp||at|^cnot give count, it is optional.|
-pg||
+pg| ***** 175 ***** |
 
 
 %% ============= Page  176
@@ -2398,7 +2469,7 @@ at|^^|cp|4|at|^cstronger hand out. The weak hand normally gives count, the stron
 at|^^|cp|4|at|^cnot give count, it is optional.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^b^*bWhen you can see the Ace in dummy and a low card is led^*n|
-pg||
+pg| ***** 176 ***** |
 
 
 %% ============= Page  177
@@ -2409,7 +2480,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThis is another classic situation that you have to be ready for.|
-pg||
+pg| ***** 177 ***** |
 
 
 %% ============= Page  178
@@ -2422,7 +2493,8 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^bIn this position, declarer calls for the @s5 from dummy and there you are on the hot seat.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bWhich card do you play in the next four examples?|
-pc|s5|pg||
+pc|s5|
+pg| ***** 178 ***** |
 
 
 %% ============= Page  179
@@ -2432,9 +2504,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,Sa65,Sk832|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s5|    tc|r|
+wt|n|tc|c|pc|s5|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bYou have a problem, if declarer has Q10x(x) or partner has the Queen, you should play low; if declarer has Qx, or you can lose the King because discards are available, take it!|
-pg||
+pg| ***** 179 ***** |
 
 
 %% ============= Page  180
@@ -2447,7 +2519,8 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^bPlay the Queen. |
 at|^^|cp||at|^b|
 at|^^|cp||at|^bWhen taking a trick in either second or fourth seat, defenders take the trick with the lower or lowest of equals.|
-pc|s5|pc|sq|pg||
+pc|s5|pc|sq|
+pg| ***** 180 ***** |
 
 
 %% ============= Page  181
@@ -2458,7 +2531,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,Sa65,Sjt9|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^bPlay the Jack, the same card you would have led.|
-pc|s5|pc|sj|pg||
+pc|s5|pc|sj|
+pg| ***** 181 ***** |
 
 
 %% ============= Page  182
@@ -2471,14 +2545,15 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^bPlay the Queen, showing either the Jack or the King.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bHowever when the Queen loses to the declarer's King, partner (being a genius) will work out that you have the Jack.|
-pc|s5|pc|sq|pg||
+pc|s5|pc|sq|
+pg| ***** 182 ***** |
 
 
 %% ============= Page  183
 nt||
 bt||
 at|^b@2|at|^z@3|ht|b|cp||at|^bThe two rules governing the play of equals in second seat are:|
-pg||
+pg| ***** 183 ***** |
 
 
 %% ============= Page  184
@@ -2487,7 +2562,7 @@ bt||
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bThe two rules governing the play of equals in second seat are:|
 at|^^|cp||at|^b|
 at|^^|cp||at|^b^*b1) If you know you are going to take the trick, take the trick with your lower or lowest equal.^*n|
-pg||
+pg| ***** 184 ***** |
 
 
 %% ============= Page  185
@@ -2500,7 +2575,7 @@ at|^^|cp||at|^b^*b^*n|
 at|^^|cp||at|^b^*bIf you can't be sure you are going to take the trick, play your higher or highest equal (the one you would have led).^*n|
 at|^^|cp||at|^b^*b^*n|
 at|^^|cp||at|^b^*bBut with the KQJ, split with the Jack and with the KQ, split with the Queen.^*n|
-pg||
+pg| ***** 185 ***** |
 
 
 %% ============= Page  186
@@ -2516,7 +2591,7 @@ at|^^|cp|4|at|^b^*bBut with the KQJ, split with the Jack and with the KQ, split 
 at|^^|cp||at|^b|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bThis is turning out to be a fun chapter, isn't it?|
-pg||
+pg| ***** 186 ***** |
 
 
 %% ============= Page  187
@@ -2525,7 +2600,7 @@ bt||
 cs|3|ht|c|fp|1|cp|1|at|^a^*b^-{     When Declarer Leads an Honor     }^*n|fp||
 at|^^|fp|1|cp|1|at|^a^*b^-^*n|fp||
 at|^b@2|at|^z@3|cp||at|^bHave you noticed that all of your second-hand plays so far been coming when dummy leads the suit toward the closed hand? Well, sometimes it may be the other way around. Declarer is leading a suit towards the dummy. Now what?|
-pg||
+pg| ***** 187 ***** |
 
 
 %% ============= Page  188
@@ -2536,7 +2611,7 @@ at|^^|fp|1|cp|1|at|^a^*b^-^*n|fp||
 at|^b@2|at|^z@3|cp|4|at|^bHave you noticed that all of your second-hand plays so far been coming when dummy leads the suit toward the closed hand? Well, sometimes it may be the other way around. Declarer is leading a suit towards the dummy. Now what?|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bMost of your headaches arise when declarer leads an honor, you have a higher honor, and dummy has an even higher honor. Should you cover?|
-pg||
+pg| ***** 188 ***** |
 
 
 %% ============= Page  189
@@ -2548,7 +2623,7 @@ at|^b@2|at|^z@3|cp|4|at|^bHave you noticed that all of your second-hand plays so
 at|^^|cp||at|^b|
 at|^^|cp|4|at|^bMost of your headaches arise when declarer leads an honor, you have a higher honor, and dummy has an even higher honor. Should you cover?|
 at|^b@2|at|^z@3|at|^^|cp||at|^bYou are not expecting a a simple 'yes or no' answer are you? Give me a break!|
-pg||
+pg| ***** 189 ***** |
 
 
 %% ============= Page  190
@@ -2562,7 +2637,7 @@ at|^^|cp|4|at|^bMost of your headaches arise when declarer leads an honor, you h
 at|^b@2|at|^z@3|at|^^|cp|4|at|^bYou are not expecting a a simple 'yes or no' answer are you? Give me a break!|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bThis is what you should consider before making your play:|
-pg||
+pg| ***** 190 ***** |
 
 
 %% ============= Page  191
@@ -2578,7 +2653,7 @@ at|^^|cp||at|^b|
 at|^^|cp|4|at|^bThis is what you should consider before making your play:|
 at|^^|cp||at|^b|
 at|^^|cp||at|^b1) What is partner's length (tells if your promotion is possible)?|
-pg||
+pg| ***** 191 ***** |
 
 
 %% ============= Page  192
@@ -2596,7 +2671,7 @@ at|^^|cp||at|^b|
 at|^^|cp|4|at|^b1) What is partner's length (tells if your promotion is possible)?|
 at|^^|cp||at|^b|
 at|^^|cp||at|^b2) Is this the trump suit or a side suit?|
-pg||
+pg| ***** 192 ***** |
 
 
 %% ============= Page  193
@@ -2616,7 +2691,7 @@ at|^^|cp||at|^b|
 at|^^|cp|4|at|^b2) Is this the trump suit or a side suit?|
 at|^^|cp||at|^b|
 at|^^|cp||at|^b3) Are there one or two higher honors in dummy?|
-pg||
+pg| ***** 193 ***** |
 
 
 %% ============= Page  194
@@ -2638,7 +2713,7 @@ at|^^|cp||at|^b|
 at|^^|cp|4|at|^b3) Are there one or two higher honors in dummy?|
 at|^^|cp||at|^b|
 at|^^|cp||at|^b4) How many tricks do I need in the suit?|
-pg||
+pg| ***** 194 ***** |
 
 
 %% ============= Page  195
@@ -2664,7 +2739,7 @@ at|^^|cp||at|^b|
 at|^^|cp||at|^bIn addition, when declarer leads the Queen, assume declarer has the Jack.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bWhen declarer leads the Jack, assume declarer also holds the 10. Of course, if you can see either of those cards in your hand or the dummy, those assumptions can be thrown out.|
-pg||
+pg| ***** 195 ***** |
 
 
 %% ============= Page  196
@@ -2692,7 +2767,7 @@ at|^^|cp||at|^b|
 at|^^|cp|4|at|^bWhen declarer leads the Jack, assume declarer also holds the 10. Of course, if you can see either of those cards in your hand or the dummy, those assumptions can be thrown out.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIn the next example, Declarer leads the Queen, you have the King, and dummy has the Ace. Also, assume this is notrump and South, declarer, leads the @sQ in an unbid suit.|
-pg||
+pg| ***** 196 ***** |
 
 
 %% ============= Page  197
@@ -2702,7 +2777,8 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sq,Sk2,Sa65,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|pc|sq|pg||
+wt|s|pc|sq|
+pg| ***** 197 ***** |
 
 
 %% ============= Page  198
@@ -2712,9 +2788,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sq,Sk2,Sa65,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|sq|    tc|r|
+wt|s|tc|c|pc|sq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThe toughest one of all! If declarer has the QJ98(x) you should duck hoping declarer continues with the Jack. If declarer has QJx(x) you should cover.|
-pg||
+pg| ***** 198 ***** |
 
 
 %% ============= Page  199
@@ -2724,9 +2800,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sq,Sk2,Sa65,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|sq|    tc|r|
+wt|s|tc|c|pc|sq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bOf course, if declarer has QJxx, declarer should be leading low to the Ace and then back towards the QJ, but not everyone knows that.|
-pg||
+pg| ***** 199 ***** |
 
 
 %% ============= Page  200
@@ -2737,7 +2813,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sq,Sk32,Sa65,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|at|^b@2|at|^z@3|ht|b|cp||at|^bPlay low.|
-pc|sq|pc|s2|pg||
+pc|sq|pc|s2|
+pg| ***** 200 ***** |
 
 
 %% ============= Page  201
@@ -2748,7 +2825,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sq,Skt2,Sa65,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|at|^b@2|at|^z@3|ht|b|cp||at|^bCovering is optional with K10x(x), mandatory with K10 alone.|
-pc|sq|pg||
+pc|sq|
+pg| ***** 201 ***** |
 
 
 %% ============= Page  202
@@ -2761,7 +2839,8 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|at|^b@2|at|^z@3|ht|b|cp||at|^bPlay low and play low again if declarer continues with the Jack.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf declarer has QJ10x or QJ9x, you will eventually make a trick with your King if you do not spend it.|
-pc|sq|pc|s2|pg||
+pc|sq|pc|s2|
+pg| ***** 202 ***** |
 
 
 %% ============= Page  203
@@ -2772,7 +2851,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*bDeclarer leads the Jack you have the Queen, and dummy has the Ace^*n|
-pg||
+pg| ***** 203 ***** |
 
 
 %% ============= Page  204
@@ -2783,7 +2862,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sj,Sq2,Sa43,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|at|^b@2|at|^z@3|ht|b|cp||at|^bPlay low.|
-pc|sj|pc|s2|pg||
+pc|sj|pc|s2|
+pg| ***** 204 ***** |
 
 
 %% ============= Page  205
@@ -2794,7 +2874,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sj,Sq52,Sa43,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|at|^b@2|at|^z@3|ht|b|cp|4|at|^bPlay low.|
-pc|sj|pc|s2|pg||
+pc|sj|pc|s2|
+pg| ***** 205 ***** |
 
 
 %% ============= Page  206
@@ -2805,7 +2886,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sj,Sq765,Sa43,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|at|^b@2|at|^z@3|ht|b|cp|4|at|^bPlay low.|
-pc|sj|pc|s5|pg||
+pc|sj|pc|s5|
+pg| ***** 206 ***** |
 
 
 %% ============= Page  207
@@ -2816,7 +2898,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sj,Sq8762,Sa43,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|at|^b@2|at|^z@3|ht|b|cp|4|at|^bPlay low.|
-pc|sj|pc|s2|pg||
+pc|sj|pc|s2|
+pg| ***** 207 ***** |
 
 
 %% ============= Page  208
@@ -2826,9 +2909,9 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sj,Sq8762,Sa43,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|sj|pc|s2|    tc|r|
+wt|s|tc|c|pc|sj|pc|s2|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*iDon't cover with any of these holdings.^*n|
-pg||
+pg| ***** 208 ***** |
 
 
 %% ============= Page  209
@@ -2838,11 +2921,11 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sj,Sq8762,Sa43,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|sj|pc|s2|    tc|r|
+wt|s|tc|c|pc|sj|pc|s2|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^b^*iDon't cover with any of these holdings.^*n|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bThousands of tricks are lost each year by partners (not you, of course) who covers in this position. There are oh, so many reasons for not covering.|
-pg||
+pg| ***** 209 ***** |
 
 
 %% ============= Page  210
@@ -2853,7 +2936,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*bDeclarer may have all the missing honors.^*n|
-pg||
+pg| ***** 210 ***** |
 
 
 %% ============= Page  211
@@ -2865,7 +2948,8 @@ md|1Skjt9,Sq5,Sa43,S8762|
 sk||
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|at|^b@2|at|^z@3|ht|b|cp||at|^bDeclarer may not be planning to finesse you for the Queen.|
-pc|sj|pg||
+pc|sj|
+pg| ***** 211 ***** |
 
 
 %% ============= Page  212
@@ -2875,11 +2959,12 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Skt9j,Sq5,Sa43,S8762|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|sj|    tc|r|
+wt|s|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bDeclarer may not be planning to finesse you for the Queen.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf you play low 'smoothly,' chances are declarer will rise with the Ace and lead low to the 10 finessing into you.|
-pc|s5|pc|sa|pc|s2|pg||
+pc|s5|pc|sa|pc|s2|
+pg| ***** 212 ***** |
 
 
 %% ============= Page  213
@@ -2890,11 +2975,12 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Skt9j,Sq5,S43a,S8762|
 sk||
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|sj|pc|s5|pc|sa|    tc|r|    pc|s2|
+wt|s|tc|c|pc|sj|pc|s5|pc|sa|tc|r|pc|s2|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bDeclarer may not be planning to finesse you for the Queen.|
 at|^^|cp||at|^b|
 at|^^|cp|4|at|^bIf you play low 'smoothly,' chances are declarer will rise with the Ace and lead low to the 10 finessing into you.|
-pc|s3|pc|s6|pc|s9|pg||
+pc|s3|pc|s6|pc|s9|
+pg| ***** 213 ***** |
 
 
 %% ============= Page  214
@@ -2905,10 +2991,10 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sktj9,Sq5,S4a3,S8726|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|tc|c|   
-        pc|sj|pc|s5|pc|sa|pc|s2|    tc|r|
-tc|c|   pc|s3|pc|s6|pc|s9|    tc|r|
+pc|sj|pc|s5|pc|sa|pc|s2|tc|r|
+tc|c|pc|s3|pc|s6|pc|s9|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bVoila, you score a trick with your Queen after all.|
-pg||
+pg| ***** 214 ***** |
 
 
 %% ============= Page  215
@@ -2919,7 +3005,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*iTime out.^*n|
-pg||
+pg| ***** 215 ***** |
 
 
 %% ============= Page  216
@@ -2933,7 +3019,7 @@ at|^b@2|at|^z@3|ht|b|cp|4|at|^b^*iTime out.^*n|
 at|^^|cp||at|^b|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bThis position gives rise to one of my favorite Alvin Roth bridge stories.|
-pg||
+pg| ***** 216 ***** |
 
 
 %% ============= Page  217
@@ -2944,7 +3030,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThe setting is a high-stakes rubber bridge game.|
-pg||
+pg| ***** 217 ***** |
 
 
 %% ============= Page  218
@@ -2956,7 +3042,7 @@ md|1Skjt,S862,Sa43,Sq95|
 sk|n|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bThe setting is a high-stakes rubber bridge game.|
-pg||
+pg| ***** 218 ***** |
 
 
 %% ============= Page  219
@@ -2969,7 +3055,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bThe setting is a high-stakes rubber bridge game.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bSouth is playing a contract of 7NT; Roth is East, and this is the three-card end-position.|
-pg||
+pg| ***** 219 ***** |
 
 
 %% ============= Page  220
@@ -2982,7 +3068,8 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|at|^b@2|at|^z@3|ht|b|cp|4|at|^bThe setting is a high-stakes rubber bridge game.|
 at|^^|cp||at|^b|
 at|^^|cp|4|at|^bSouth is playing a contract of 7NT; Roth is East, and this is the three-card end-position.|
-pc|st|pg||
+pc|st|
+pg| ***** 220 ***** |
 
 
 %% ============= Page  221
@@ -2992,9 +3079,9 @@ sv|0|pn|Declarer,,Dummy,Alvin Roth|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Skjt,S862,Sa43,Sq95|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|st|    tc|r|
+wt|s|tc|c|pc|st|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bWest, an unethical player, hemmed and hawed, pulled out one card and then another, and finally played low.|
-pg||
+pg| ***** 221 ***** |
 
 
 %% ============= Page  222
@@ -3004,11 +3091,12 @@ sv|0|pn|Declarer,,Dummy,Alvin Roth|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Skjt,S862,Sa43,Sq95|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|st|    tc|r|
+wt|s|tc|c|pc|st|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bWest, an unethical player, hemmed and hawed, pulled out one card and then another, and finally played low.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bDeclarer, taken in by this 'Oscar-like' performance, also played low.|
-pc|s2|pc|s3|pc|s5|pg||
+pc|s2|pc|s3|pc|s5|
+pg| ***** 222 ***** |
 
 
 %% ============= Page  223
@@ -3020,7 +3108,7 @@ md|1Skjt,S862,Sa43,Sq95|
 sk||
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bAfter the hand was over and West saw that Roth had the @sQ, he sputtered out: 'For God's sake Alvin, why didn't you take the Queen?'|
-pg||
+pg| ***** 223 ***** |
 
 
 %% ============= Page  224
@@ -3033,7 +3121,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bAfter the hand was over and West saw that Roth had the @sQ, he sputtered out: 'For God's sake Alvin, why didn't you take the Queen?'|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bRoth, an extremely ethical player, replied, 'Because I thought you had it.'|
-pg||
+pg| ***** 224 ***** |
 
 
 %% ============= Page  225
@@ -3046,7 +3134,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bHow many times have we heard West say after covering in this position, 'But all I had was a doubleton Queen?'|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bTrue, but declarer does not know that.|
-pg||
+pg| ***** 225 ***** |
 
 
 %% ============= Page  226
@@ -3057,7 +3145,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b(P. S.) With Q9 doubleton specifically, it is 'usually' better to cover in case declarer has J108(x)).|
-pg||
+pg| ***** 226 ***** |
 
 
 %% ============= Page  227
@@ -3068,7 +3156,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*bDeclarer has J10 combination^*n|
-pg||
+pg| ***** 227 ***** |
 
 
 %% ============= Page  228
@@ -3080,7 +3168,7 @@ md|1Sjt6,Sq75,Sa43,Sk982|
 sk||
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^b^*bDeclarer has J10 combination^*n|
-pg||
+pg| ***** 228 ***** |
 
 
 %% ============= Page  229
@@ -3094,7 +3182,8 @@ wt|s|at|^b@2|at|^z@3|ht|b|cp|4|at|^b^*bDeclarer has J10 combination^*n|
 at|^^|cp||at|^b|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bAgain you lose a trick if you cover the Jack.|
-pc|sj|pg||
+pc|sj|
+pg| ***** 229 ***** |
 
 
 %% ============= Page  230
@@ -3105,8 +3194,9 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1St6j,Sq75,Sa43,Sk982|
 sk||
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|sj|    tc|r|
-pc|sq|pc|sa|pc|s2|pg||
+wt|s|tc|c|pc|sj|tc|r|
+pc|sq|pc|sa|pc|s2|
+pg| ***** 230 ***** |
 
 
 %% ============= Page  231
@@ -3116,8 +3206,9 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1St6j,S75q,S43a,Sk982|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|sj|pc|sq|pc|sa|    tc|r|    pc|s2|
-pc|s3|pc|sk|pg||
+wt|s|tc|c|pc|sj|pc|sq|pc|sa|tc|r|pc|s2|
+pc|s3|pc|sk|
+pg| ***** 231 ***** |
 
 
 %% ============= Page  232
@@ -3128,10 +3219,10 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1St6j,S75q,S4a3,S982k|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|tc|c|   
-        pc|sj|pc|sq|pc|sa|pc|s2|    tc|r|
-tc|c|   pc|s3|pc|sk|    tc|r|
+pc|sj|pc|sq|pc|sa|pc|s2|tc|r|
+tc|c|pc|s3|pc|sk|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bDeclarer takes two Spade tricks.|
-pg||
+pg| ***** 232 ***** |
 
 
 %% ============= Page  233
@@ -3141,9 +3232,9 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1St6j,Sq75,Sa43,Sk982|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|sj|    tc|r|
+wt|s|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bHowever, if you duck the Jack at trick one...|
-pg||
+pg| ***** 233 ***** |
 
 
 %% ============= Page  234
@@ -3153,9 +3244,10 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1St6j,Sq75,Sa43,Sk982|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|sj|    tc|r|
+wt|s|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bHowever, if you duck the Jack at trick one...|
-pc|s5|pc|s3|pc|sk|pg||
+pc|s5|pc|s3|pc|sk|
+pg| ***** 234 ***** |
 
 
 %% ============= Page  235
@@ -3165,9 +3257,10 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1St6j,Sq75,Sa43,S982k|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|sj|pc|s5|pc|s3|    tc|r|    pc|sk|
+wt|s|tc|c|pc|sj|pc|s5|pc|s3|tc|r|pc|sk|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bHowever, if you duck the Jack at trick one...|
-pc|s9|pg||
+pc|s9|
+pg| ***** 235 ***** |
 
 
 %% ============= Page  236
@@ -3178,11 +3271,11 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1St6j,Sq75,Sa43,S82k9|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|tc|c|   
-        pc|sj|pc|s5|pc|s3|pc|sk|    tc|r|
-tc|c|   pc|s9|    tc|r|
+pc|sj|pc|s5|pc|s3|pc|sk|tc|r|
+tc|c|pc|s9|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bHowever, if you duck the Jack at trick one...|
 cp||at| your spots are too much for declarer to take two tricks this time.|
-pg||
+pg| ***** 236 ***** |
 
 
 %% ============= Page  237
@@ -3193,11 +3286,12 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1St6j,Sq75,Sa43,S82k9|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|tc|c|   
-        pc|sj|pc|s5|pc|s3|pc|sk|    tc|r|
-tc|c|   pc|s9|    tc|r|
+pc|sj|pc|s5|pc|s3|pc|sk|tc|r|
+tc|c|pc|s9|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bHowever, if you duck the Jack at trick one...|
 cp|4|at| your spots are too much for declarer to take two tricks this time.|
-pc|s6|pc|s7|pc|sa|pg||
+pc|s6|pc|s7|pc|sa|
+pg| ***** 237 ***** |
 
 
 %% ============= Page  238
@@ -3208,13 +3302,13 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Stj6,Sq57,S43a,S82k9|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|tc|c|   
-        pc|sj|pc|s5|pc|s3|pc|sk|    tc|r|
-tc|c|   pc|s9|pc|s6|pc|s7|    tc|r|    pc|sa|
+pc|sj|pc|s5|pc|s3|pc|sk|tc|r|
+tc|c|pc|s9|pc|s6|pc|s7|tc|r|pc|sa|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bHowever, if you duck the Jack at trick one...|
 cp|4|at| your spots are too much for declarer to take two tricks this time.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bDeclarer takes but one Spade trick.|
-pg||
+pg| ***** 238 ***** |
 
 
 %% ============= Page  239
@@ -3225,7 +3319,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*bDeclarer leads an honor, you have a higher honor and dummy has two (or) more honors^*n|
-pg||
+pg| ***** 239 ***** |
 
 
 %% ============= Page  240
@@ -3238,7 +3332,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bHere we are talking promotion and partner's expected length. First a confidence builder.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^b^*iWhen promotion is not even remotely possible, don't cover.^*n|
-pg||
+pg| ***** 240 ***** |
 
 
 %% ============= Page  241
@@ -3249,7 +3343,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sq,Sk53,Sajt9,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|at|^b@2|at|^z@3|ht|b|cp||at|^bThere is no reason to cover the Queen, as dummy's intermediates are too overwhelming. However...|
-pc|sq|pc|s3|pg||
+pc|sq|pc|s3|
+pg| ***** 241 ***** |
 
 
 %% ============= Page  242
@@ -3262,7 +3357,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThis looks similar, but it isn't - quite.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf declarer has Qx and partner 9xxx, you must cover to promote the nine to a fourth round winner.|
-pg||
+pg| ***** 242 ***** |
 
 
 %% ============= Page  243
@@ -3273,7 +3368,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sq,Sk53,Sajt8,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bHowever if this is the trump suit, there is no point in covering as partner cannot have 9xxx.|
-pg||
+pg| ***** 243 ***** |
 
 
 %% ============= Page  244
@@ -3286,7 +3381,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bHowever if this is the trump suit, there is no point in covering as partner cannot have 9xxx.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bThe next one is tougher than it looks:|
-pg||
+pg| ***** 244 ***** |
 
 
 %% ============= Page  245
@@ -3296,7 +3391,7 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sj,Sq43,Sat82,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-pg||
+pg| ***** 245 ***** |
 
 
 %% ============= Page  246
@@ -3307,7 +3402,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sj,Sq43,Sat82,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|at|^b@2|at|^z@3|ht|b|cp||at|^bIf declarer has shortness (Jx or Jxx), partner probably has K976 or K9x and covering saves a trick.|
-pc|sj|pg||
+pc|sj|
+pg| ***** 246 ***** |
 
 
 %% ============= Page  247
@@ -3317,9 +3413,9 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sj,Sq43,Sat82,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|sj|    tc|r|
+wt|s|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bHowever, if declarer has length (KJ9 or KJ9xx), declarer may not be planning to finesse through you and covering will cost you a trick.|
-pg||
+pg| ***** 247 ***** |
 
 
 %% ============= Page  248
@@ -3329,11 +3425,11 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sj,Sq43,Sat82,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|sj|    tc|r|
+wt|s|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bHowever, if declarer has length (KJ9 or KJ9xx), declarer may not be planning to finesse through you and covering will cost you a trick.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bSo what should you do?|
-pg||
+pg| ***** 248 ***** |
 
 
 %% ============= Page  249
@@ -3343,9 +3439,9 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sj,Sq43,Sat82,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|sj|    tc|r|
+wt|s|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf declarer figures to be short, cover; if declarer has known length, don't even think of covering.|
-pg||
+pg| ***** 249 ***** |
 
 
 %% ============= Page  250
@@ -3355,11 +3451,11 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sj,Sq43,Sat82,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|sj|    tc|r|
+wt|s|tc|c|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bEven if partner has K9x(x), you figure to make your Queen later in the play.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bAnd if declarer has J9x, you will have saved a trick by not covering. Still having fun?|
-pg||
+pg| ***** 250 ***** |
 
 
 %% ============= Page  251
@@ -3371,7 +3467,7 @@ md|1St86Hajt9Dk7Cak64,Skqj53Hq2Djt82C82,S972Hk864Da53Cq75,Sa4H753Dq964Cjt93|
 sk||
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2h|mb|p|mb|4h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-pg||
+pg| ***** 251 ***** |
 
 
 %% ============= Page  252
@@ -3383,7 +3479,7 @@ md|1St86Hajt9Dk7Cak64,Skqj53Hq2Djt82C82,S972Hk864Da53Cq75,Sa4H753Dq964Cjt93|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2h|mb|p|mb|4h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bYou lead the obvious...|
-pg||
+pg| ***** 252 ***** |
 
 
 %% ============= Page  253
@@ -3394,7 +3490,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1St86Hajt9Dk7Cak64,Skqj53Hq2Djt82C82,S972Hk864Da53Cq75,Sa4H753Dq964Cjt93|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2h|mb|p|mb|4h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|pc|sk|pc|s2|pc|sa|pc|s6|pg||
+wt|w|pc|sk|pc|s2|pc|sa|pc|s6|
+pg| ***** 253 ***** |
 
 
 %% ============= Page  254
@@ -3405,8 +3502,9 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1St86Hajt9Dk7Cak64,Sqj53kHq2Djt82C82,S972Hk864Da53Cq75,S4aH753Dq964Cjt93|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2h|mb|p|mb|4h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|sk|pc|s2|pc|sa|    tc|r|    pc|s6|
-pc|s4|pc|s8|pc|sj|pc|s7|pg||
+wt|w|tc|c|pc|sk|pc|s2|pc|sa|tc|r|pc|s6|
+pc|s4|pc|s8|pc|sj|pc|s7|
+pg| ***** 254 ***** |
 
 
 %% ============= Page  255
@@ -3418,9 +3516,10 @@ md|1St68Hajt9Dk7Cak64,Sq53kjHq2Djt82C82,S927Hk864Da53Cq75,Sa4H753Dq964Cjt93|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2h|mb|p|mb|4h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|sa|pc|s6|    tc|r|
-tc|c|   pc|s4|pc|s8|pc|sj|    tc|r|    pc|s7|
-pc|sq|pc|s9|pc|d4|pc|st|pg||
+pc|sk|pc|s2|pc|sa|pc|s6|tc|r|
+tc|c|pc|s4|pc|s8|pc|sj|tc|r|pc|s7|
+pc|sq|pc|s9|pc|d4|pc|st|
+pg| ***** 255 ***** |
 
 
 %% ============= Page  256
@@ -3432,10 +3531,11 @@ md|1S68tHajt9Dk7Cak64,S53kjqHq2Djt82C82,S279Hk864Da53Cq75,Sa4H753Dq964Cjt93|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2h|mb|p|mb|4h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|sa|pc|s6|
-        pc|s4|pc|s8|pc|sj|pc|s7|    tc|r|
-tc|c|   pc|sq|pc|s9|pc|d4|    tc|r|    pc|st|
-pc|dj|pc|d3|pc|d6|pc|dk|pg||
+pc|sk|pc|s2|pc|sa|pc|s6|
+pc|s4|pc|s8|pc|sj|pc|s7|tc|r|
+tc|c|pc|sq|pc|s9|pc|d4|tc|r|pc|st|
+pc|dj|pc|d3|pc|d6|pc|dk|
+pg| ***** 256 ***** |
 
 
 %% ============= Page  257
@@ -3447,11 +3547,12 @@ md|1S68tHajt9D7kCak64,S53kjqHq2Dt82jC82,S279Hk864Da53Cq75,Sa4H753Dq946Cjt93|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2h|mb|p|mb|4h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|sa|pc|s6|
-        pc|s4|pc|s8|pc|sj|pc|s7|
-        pc|sq|pc|s9|pc|d4|pc|st|    tc|r|
-tc|c|   pc|dj|pc|d3|pc|d6|    tc|r|    pc|dk|
-pc|hj|pg||
+pc|sk|pc|s2|pc|sa|pc|s6|
+pc|s4|pc|s8|pc|sj|pc|s7|
+pc|sq|pc|s9|pc|d4|pc|st|tc|r|
+tc|c|pc|dj|pc|d3|pc|d6|tc|r|pc|dk|
+pc|hj|
+pg| ***** 257 ***** |
 
 
 %% ============= Page  258
@@ -3463,13 +3564,13 @@ md|1S68tHat9jD7kCak64,S53kjqHq2Dt82jC82,S279Hk864Da53Cq75,Sa4H753Dq946Cjt93|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2h|mb|p|mb|4h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|sa|pc|s6|
-        pc|s4|pc|s8|pc|sj|pc|s7|
-        pc|sq|pc|s9|pc|d4|pc|st|
-        pc|dj|pc|d3|pc|d6|pc|dk|    tc|r|
-tc|c|   pc|hj|    tc|r|
+pc|sk|pc|s2|pc|sa|pc|s6|
+pc|s4|pc|s8|pc|sj|pc|s7|
+pc|sq|pc|s9|pc|d4|pc|st|
+pc|dj|pc|d3|pc|d6|pc|dk|tc|r|
+tc|c|pc|hj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bAre you ready?|
-pg||
+pg| ***** 258 ***** |
 
 
 %% ============= Page  259
@@ -3481,11 +3582,11 @@ md|1S68tHat9jD7kCak64,S53kjqHq2Dt82jC82,S279Hk864Da53Cq75,Sa4H753Dq946Cjt93|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2h|mb|p|mb|4h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|sa|pc|s6|
-        pc|s4|pc|s8|pc|sj|pc|s7|
-        pc|sq|pc|s9|pc|d4|pc|st|
-        pc|dj|pc|d3|pc|d6|pc|dk|    tc|r|
-tc|c|   pc|hj|    tc|r|
+pc|sk|pc|s2|pc|sa|pc|s6|
+pc|s4|pc|s8|pc|sj|pc|s7|
+pc|sq|pc|s9|pc|d4|pc|st|
+pc|dj|pc|d3|pc|d6|pc|dk|tc|r|
+tc|c|pc|hj|tc|r|
 lb|*mAre going to cover?^Yes~No~^2|
 
 
@@ -3498,14 +3599,14 @@ md|1S68tHat9jD7kCak64,S53kjqHq2Dt82jC82,S279Hk864Da53Cq75,Sa4H753Dq946Cjt93|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2h|mb|p|mb|4h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|sa|pc|s6|
-        pc|s4|pc|s8|pc|sj|pc|s7|
-        pc|sq|pc|s9|pc|d4|pc|st|
-        pc|dj|pc|d3|pc|d6|pc|dk|    tc|r|
-tc|c|   pc|hj|    tc|r|
+pc|sk|pc|s2|pc|sa|pc|s6|
+pc|s4|pc|s8|pc|sj|pc|s7|
+pc|sq|pc|s9|pc|d4|pc|st|
+pc|dj|pc|d3|pc|d6|pc|dk|tc|r|
+tc|c|pc|hj|tc|r|
 ht|a|cp||at|^a|
 at|^^|cp||at|^aYou are not even going to think about covering the first honor are you?|
-pg||
+pg| ***** 260 ***** |
 
 
 %% ============= Page  261
@@ -3518,13 +3619,13 @@ sk||
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2h|mb|p|mb|4h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|sa|pc|s6|
-        pc|s4|pc|s8|pc|sj|pc|s7|
-        pc|sq|pc|s9|pc|d4|pc|st|
-        pc|dj|pc|d3|pc|d6|pc|dk|    tc|r|
-tc|c|   pc|hj|    tc|r|
+pc|sk|pc|s2|pc|sa|pc|s6|
+pc|s4|pc|s8|pc|sj|pc|s7|
+pc|sq|pc|s9|pc|d4|pc|st|
+pc|dj|pc|d3|pc|d6|pc|dk|tc|r|
+tc|c|pc|hj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bKnowing that you have long Spades, declarer is probably going to play your partner for longer Hearts and finesse him for the @hQ...|
-pg||
+pg| ***** 261 ***** |
 
 
 %% ============= Page  262
@@ -3536,17 +3637,17 @@ md|1S68tHat9jD7kCak64,S53kjqHq2Dt82jC82,S279Hk864Da53Cq75,Sa4H753Dq946Cjt93|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2h|mb|p|mb|4h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|sa|pc|s6|
-        pc|s4|pc|s8|pc|sj|pc|s7|
-        pc|sq|pc|s9|pc|d4|pc|st|
-        pc|dj|pc|d3|pc|d6|pc|dk|    tc|r|
-tc|c|   pc|hj|    tc|r|
+pc|sk|pc|s2|pc|sa|pc|s6|
+pc|s4|pc|s8|pc|sj|pc|s7|
+pc|sq|pc|s9|pc|d4|pc|st|
+pc|dj|pc|d3|pc|d6|pc|dk|tc|r|
+tc|c|pc|hj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bKnowing that you have long Spades, declarer is probably going to play your partner for longer Hearts and finesse him for the @hQ...|
 at|^^|cp||at|^b|
 at|^^|cp||at|^b- |
 cp||at|^*iunless you cover when he leads the Jack!^*n|
 cp||at|  Don't be a patsy, play low.|
-pg||
+pg| ***** 262 ***** |
 
 
 %% ============= Page  263
@@ -3558,14 +3659,14 @@ md|1S68tHat9jD7kCak64,S53kjqHq2Dt82jC82,S279Hk864Da53Cq75,Sa4H753Dq946Cjt93|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2h|mb|p|mb|4h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|sa|pc|s6|
-        pc|s4|pc|s8|pc|sj|pc|s7|
-        pc|sq|pc|s9|pc|d4|pc|st|
-        pc|dj|pc|d3|pc|d6|pc|dk|    tc|r|
-tc|c|   pc|hj|    tc|r|
+pc|sk|pc|s2|pc|sa|pc|s6|
+pc|s4|pc|s8|pc|sj|pc|s7|
+pc|sq|pc|s9|pc|d4|pc|st|
+pc|dj|pc|d3|pc|d6|pc|dk|tc|r|
+tc|c|pc|hj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*iFinal warning:^*n|
 cp||at|  Be wary of covering honors in the trump suit, or in any suit where declarer has known length when there is one honor card in dummy.|
-pg||
+pg| ***** 263 ***** |
 
 
 %% ============= Page  264
@@ -3577,15 +3678,15 @@ md|1S68tHat9jD7kCak64,S53kjqHq2Dt82jC82,S279Hk864Da53Cq75,Sa4H753Dq946Cjt93|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2h|mb|p|mb|4h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|sa|pc|s6|
-        pc|s4|pc|s8|pc|sj|pc|s7|
-        pc|sq|pc|s9|pc|d4|pc|st|
-        pc|dj|pc|d3|pc|d6|pc|dk|    tc|r|
-tc|c|   pc|hj|    tc|r|
+pc|sk|pc|s2|pc|sa|pc|s6|
+pc|s4|pc|s8|pc|sj|pc|s7|
+pc|sq|pc|s9|pc|d4|pc|st|
+pc|dj|pc|d3|pc|d6|pc|dk|tc|r|
+tc|c|pc|hj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf there are two honor cards in dummy, cover if promotion is possible.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bThis usually means partner needs length in the suit.|
-pg||
+pg| ***** 264 ***** |
 
 
 %% ============= Page  265
@@ -3599,7 +3700,7 @@ ht|c|fp|1|cp|1|at|^a^*b^*n|fp||
 cs|3|at|^^|fp|1|cp|1|at|^a^*b^-{     When Declarer Leads a Low Card     }^*n|fp||
 at|^^|fp|1|cp|1|at|^a^*b^-^*n|fp||
 at|^b@2|at|^z@3|cp||at|^b^*iWhen dummy has a strong suit headed by the KQ or the AQJ, second hand with low cards should give count.^*n|
-pg||
+pg| ***** 265 ***** |
 
 
 %% ============= Page  266
@@ -3610,7 +3711,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIn each case, when South leads the @s2 which card should you play to give count?|
-pg||
+pg| ***** 266 ***** |
 
 
 %% ============= Page  267
@@ -3665,7 +3766,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*iDo not force honor cards out of dummy^*n|
-pg||
+pg| ***** 271 ***** |
 
 
 %% ============= Page  272
@@ -3678,7 +3779,8 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|at|^b@2|at|^z@3|ht|b|cp||at|^bWhen declarer leads a low Spade, play low!|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bDo not force the Ace out by playing the 10, a pre-kindergarten play.|
-pc|s6|pg||
+pc|s6|
+pg| ***** 272 ***** |
 
 
 %% ============= Page  273
@@ -3688,11 +3790,11 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sq876,Skt5,Sa932,Sj4|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|s6|    tc|r|
+wt|s|tc|c|pc|s6|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bDeclarer is planning to play the Ace anyway.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf you squander your 10 needlessly, you wind up with one Spade trick instead of two.|
-pg||
+pg| ***** 273 ***** |
 
 
 %% ============= Page  274
@@ -3704,7 +3806,7 @@ md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*iWhen the dummy's cards have you beat every which way, play low^*n|
 cp||at|.|
-pg||
+pg| ***** 274 ***** |
 
 
 %% ============= Page  275
@@ -3717,7 +3819,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bWhen declarer leads a low Spade, play low.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bFor all you know declarer is planning to play the Ace.|
-pg||
+pg| ***** 275 ***** |
 
 
 %% ============= Page  276
@@ -3730,7 +3832,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThis diagram represents a touchy proposition.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bSay South leads low, should you split your honors or not?|
-pg||
+pg| ***** 276 ***** |
 
 
 %% ============= Page  277
@@ -3741,7 +3843,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S2,Sqj43,Skt5,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bFor openers, it depends upon whom you think has the Ace and on how many tricks you are gunning for in the suit.|
-pg||
+pg| ***** 277 ***** |
 
 
 %% ============= Page  278
@@ -3752,7 +3854,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S2,Sqj43,Skt5,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf you think South has the Ace and you need just one trick, split your honors; if you need two tricks, play low.|
-pg||
+pg| ***** 278 ***** |
 
 
 %% ============= Page  279
@@ -3763,7 +3865,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S2,Sqj43,Skt5,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf you think partner has the Ace and you need two tricks, split; if you need three tricks, play low.|
-pg||
+pg| ***** 279 ***** |
 
 
 %% ============= Page  280
@@ -3777,7 +3879,7 @@ at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf you think partner has the Ace and you need two
 cp||at| |
 at|^^|cp||at|^b|
 at|^^|cp||at|^bGood luck!|
-pg||
+pg| ***** 280 ***** |
 
 
 %% ============= Page  281
@@ -3788,7 +3890,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*bWhen to play 'second hand low' even when you can take the trick^*n|
-pg||
+pg| ***** 281 ***** |
 
 
 %% ============= Page  282
@@ -3799,7 +3901,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThere are many well-documented positions where second hand (you) should play low even though you can take the trick.|
-pg||
+pg| ***** 282 ***** |
 
 
 %% ============= Page  283
@@ -3810,7 +3912,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bOf course, it is assumed you are not ducking with the setting trick!|
-pg||
+pg| ***** 283 ***** |
 
 
 %% ============= Page  284
@@ -3821,7 +3923,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bYou have the Ace and dummy has a KJ combination|
-pg||
+pg| ***** 284 ***** |
 
 
 %% ============= Page  285
@@ -3832,7 +3934,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,Sa432,Skj9,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bWhen declarer leads up to a KJ combination, most defenders are sophisticated enough to duck smoothly and win the second round of the suit.|
-pg||
+pg| ***** 285 ***** |
 
 
 %% ============= Page  286
@@ -3843,7 +3945,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,Sa432,Skj9,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bHowever, if dummy has the KJ9, and partner has taken the Jack with the Queen, duck the second time the suit is led and hope declarer sticks in the nine allowing partner to take the 10!|
-pg||
+pg| ***** 286 ***** |
 
 
 %% ============= Page  287
@@ -3854,7 +3956,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bYou have the Ace and dummy has a KQx(x) combination|
-pg||
+pg| ***** 287 ***** |
 
 
 %% ============= Page  288
@@ -3864,7 +3966,7 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,Sa432,Skq4,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-pg||
+pg| ***** 288 ***** |
 
 
 %% ============= Page  289
@@ -3877,7 +3979,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bWhen dummy has the KQx(x) combination it is usually right to duck the first time and win the second.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bEven if declarer has a singleton, it usually saves a trick!|
-pg||
+pg| ***** 289 ***** |
 
 
 %% ============= Page  290
@@ -3889,7 +3991,7 @@ md|1S4Hkjt873Dak8C872,Sat76H42DqjtCj965,Skq5Haq96D654Cak3,Sj9832H5D9732Cqt4|
 sk|w|
 ha||mb|1h|mb|p|mb|2n|an|Jacoby 2NT|
 sb|s|sb|w|sb|n|sb|e|
-pg||
+pg| ***** 290 ***** |
 
 
 %% ============= Page  291
@@ -3900,7 +4002,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S4Hkjt873Dak8C872,Sat76H42DqjtCj965,Skq5Haq96D654Cak3,Sj9832H5D9732Cqt4|
 ha||mb|1h|mb|p|mb|2n|an|Jacoby 2NT|mb|p|mb|3s|an|Singleton @s|
 sb|s|sb|w|sb|n|sb|e|
-pg||
+pg| ***** 291 ***** |
 
 
 %% ============= Page  292
@@ -3911,7 +4013,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S4Hkjt873Dak8C872,Sat76H42DqjtCj965,Skq5Haq96D654Cak3,Sj9832H5D9732Cqt4|
 ha||mb|1h|mb|p|mb|2n|an|Jacoby 2NT|mb|p|mb|3s|an|Singleton @s|mb|p|mb|4c|an|Cue-bid|
 sb|s|sb|w|sb|n|sb|e|
-pg||
+pg| ***** 292 ***** |
 
 
 %% ============= Page  293
@@ -3922,7 +4024,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S4Hkjt873Dak8C872,Sat76H42DqjtCj965,Skq5Haq96D654Cak3,Sj9832H5D9732Cqt4|
 ha||mb|1h|mb|p|mb|2n|an|Jacoby 2NT|mb|p|mb|3s|an|Singleton @s|mb|p|mb|4c|an|Cue-bid|mb|p|mb|4d|an|Cue-bid|
 sb|s|sb|w|sb|n|sb|e|
-pg||
+pg| ***** 293 ***** |
 
 
 %% ============= Page  294
@@ -3933,7 +4035,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S4Hkjt873Dak8C872,Sat76H42DqjtCj965,Skq5Haq96D654Cak3,Sj9832H5D9732Cqt4|
 ha||mb|1h|mb|p|mb|2n|an|Jacoby 2NT|mb|p|mb|3s|an|Singleton @s|mb|p|mb|4c|an|Cue-bid|mb|p|mb|4d|an|Cue-bid|mb|p|mb|6h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|pc|dq|pc|d4|pc|d2|pc|dk|pg||
+wt|w|pc|dq|pc|d4|pc|d2|pc|dk|
+pg| ***** 294 ***** |
 
 
 %% ============= Page  295
@@ -3944,8 +4047,9 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S4Hkjt873Da8kC872,Sat76H42DjtqCj965,Skq5Haq96D654Cak3,Sj9832H5D9732Cqt4|
 ha||mb|1h|mb|p|mb|2n|an|Jacoby 2NT|mb|p|mb|3s|an|Singleton @s|mb|p|mb|4c|an|Cue-bid|mb|p|mb|4d|an|Cue-bid|mb|p|mb|6h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|dq|pc|d4|pc|d2|    tc|r|    pc|dk|
-pc|h3|pc|h2|pc|ha|pc|h5|pg||
+wt|w|tc|c|pc|dq|pc|d4|pc|d2|tc|r|pc|dk|
+pc|h3|pc|h2|pc|ha|pc|h5|
+pg| ***** 295 ***** |
 
 
 %% ============= Page  296
@@ -3957,9 +4061,10 @@ md|1S4Hkjt873Da8kC872,Sat76H42DjtqCj965,Skq5Hq96aD654Cak3,Sj9832H5D9732Cqt4|
 ha||mb|1h|mb|p|mb|2n|an|Jacoby 2NT|mb|p|mb|3s|an|Singleton @s|mb|p|mb|4c|an|Cue-bid|mb|p|mb|4d|an|Cue-bid|mb|p|mb|6h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|d4|pc|d2|pc|dk|    tc|r|
-tc|c|   pc|h3|pc|h2|pc|ha|    tc|r|    pc|h5|
-pc|h6|pc|s2|pc|hk|pc|h4|pg||
+pc|dq|pc|d4|pc|d2|pc|dk|tc|r|
+tc|c|pc|h3|pc|h2|pc|ha|tc|r|pc|h5|
+pc|h6|pc|s2|pc|hk|pc|h4|
+pg| ***** 296 ***** |
 
 
 %% ============= Page  297
@@ -3971,11 +4076,12 @@ md|1S4Hjt873kDa8kC872,Sat76H24DjtqCj965,Skq5Hq9a6D654Cak3,Sj9832H5D9732Cqt4|
 ha||mb|1h|mb|p|mb|2n|an|Jacoby 2NT|mb|p|mb|3s|an|Singleton @s|mb|p|mb|4c|an|Cue-bid|mb|p|mb|4d|an|Cue-bid|mb|p|mb|6h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|d4|pc|d2|pc|dk|
-        pc|h3|pc|h2|pc|ha|pc|h5|    tc|r|
-tc|c|   pc|h6|pc|s2|pc|hk|    tc|r|    pc|h4|
+pc|dq|pc|d4|pc|d2|pc|dk|
+pc|h3|pc|h2|pc|ha|pc|h5|tc|r|
+tc|c|pc|h6|pc|s2|pc|hk|tc|r|pc|h4|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThis is a known singleton from the bidding.|
-pc|s4|pg||
+pc|s4|
+pg| ***** 297 ***** |
 
 
 %% ============= Page  298
@@ -3988,14 +4094,14 @@ sk||
 ha||mb|1h|mb|p|mb|2n|an|Jacoby 2NT|mb|p|mb|3s|an|Singleton @s|mb|p|mb|4c|an|Cue-bid|mb|p|mb|4d|an|Cue-bid|mb|p|mb|6h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|d4|pc|d2|pc|dk|
-        pc|h3|pc|h2|pc|ha|pc|h5|
-        pc|h6|pc|s2|pc|hk|pc|h4|    tc|r|
-tc|c|   pc|s4|    tc|r|
+pc|dq|pc|d4|pc|d2|pc|dk|
+pc|h3|pc|h2|pc|ha|pc|h5|
+pc|h6|pc|s2|pc|hk|pc|h4|tc|r|
+tc|c|pc|s4|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bThis is a known singleton from the bidding.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf you win the Ace, declarer uses the @sKQ to discard a Club and a Diamond.|
-pg||
+pg| ***** 298 ***** |
 
 
 %% ============= Page  299
@@ -4007,14 +4113,15 @@ md|1S4Hjt873kDa8kC872,Sat76H24DjtqCj965,Skq5Hq9a6D654Cak3,Sj9832H5D9732Cqt4|
 ha||mb|1h|mb|p|mb|2n|an|Jacoby 2NT|mb|p|mb|3s|an|Singleton @s|mb|p|mb|4c|an|Cue-bid|mb|p|mb|4d|an|Cue-bid|mb|p|mb|6h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|d4|pc|d2|pc|dk|
-        pc|h3|pc|h2|pc|ha|pc|h5|
-        pc|h6|pc|s2|pc|hk|pc|h4|    tc|r|
-tc|c|   pc|s4|    tc|r|
+pc|dq|pc|d4|pc|d2|pc|dk|
+pc|h3|pc|h2|pc|ha|pc|h5|
+pc|h6|pc|s2|pc|hk|pc|h4|tc|r|
+tc|c|pc|s4|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bThis is a known singleton from the bidding.|
 at|^^|cp||at|^b|
 at|^^|cp|4|at|^bIf you win the Ace, declarer uses the @sKQ to discard a Club and a Diamond.|
-pc|s6|pc|sk|pg||
+pc|s6|pc|sk|
+pg| ***** 299 ***** |
 
 
 %% ============= Page  300
@@ -4026,12 +4133,13 @@ md|1S4Hjt873kDa8kC872,Sat76H24DjtqCj965,Sq5kHq9a6D654Cak3,Sj9832H5D9732Cqt4|
 ha||mb|1h|mb|p|mb|2n|an|Jacoby 2NT|mb|p|mb|3s|an|Singleton @s|mb|p|mb|4c|an|Cue-bid|mb|p|mb|4d|an|Cue-bid|mb|p|mb|6h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|d4|pc|d2|pc|dk|
-        pc|h3|pc|h2|pc|ha|pc|h5|
-        pc|h6|pc|s2|pc|hk|pc|h4|    tc|r|
-tc|c|   pc|s4|pc|s6|pc|sk|    tc|r|
+pc|dq|pc|d4|pc|d2|pc|dk|
+pc|h3|pc|h2|pc|ha|pc|h5|
+pc|h6|pc|s2|pc|hk|pc|h4|tc|r|
+tc|c|pc|s4|pc|s6|pc|sk|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bWhen you duck, you lose your Ace, but in return your side scores a Club and a Diamond trick; a fair exchange.|
-pc|s3|pg||
+pc|s3|
+pg| ***** 300 ***** |
 
 
 %% ============= Page  301
@@ -4044,12 +4152,12 @@ sk||
 ha||mb|1h|mb|p|mb|2n|an|Jacoby 2NT|mb|p|mb|3s|an|Singleton @s|mb|p|mb|4c|an|Cue-bid|mb|p|mb|4d|an|Cue-bid|mb|p|mb|6h|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|d4|pc|d2|pc|dk|
-        pc|h3|pc|h2|pc|ha|pc|h5|
-        pc|h6|pc|s2|pc|hk|pc|h4|    tc|r|
-tc|c|   pc|s4|pc|s6|pc|sk|    tc|r|    pc|s3|
+pc|dq|pc|d4|pc|d2|pc|dk|
+pc|h3|pc|h2|pc|ha|pc|h5|
+pc|h6|pc|s2|pc|hk|pc|h4|tc|r|
+tc|c|pc|s4|pc|s6|pc|sk|tc|r|pc|s3|
 at|^b@2|at|^z@3|ht|b|cp||at|^bYou can now play this hand double dummy. Click the "Help" button if you need help. When done or if not interested n doable dummy play click the "Next Page" arrow to continue.|
-pg||
+pg| ***** 301 ***** |
 
 
 %% ============= Page  302
@@ -4060,7 +4168,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bYou have the Ace and dummy has a KQ10 combination|
-pg||
+pg| ***** 302 ***** |
 
 
 %% ============= Page  303
@@ -4071,7 +4179,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S643,Sa875,Skqt,Sj92|
 sk||
 ha|y|sb|s|sb|w|sb|n|sb|e|
-pg||
+pg| ***** 303 ***** |
 
 
 %% ============= Page  304
@@ -4082,7 +4190,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S643,Sa875,Skqt,Sj92|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bWhen dummy has a KQ10 combination, it is not only right to duck the first time, it is usually right to duck the second time as well!|
-pg||
+pg| ***** 304 ***** |
 
 
 %% ============= Page  305
@@ -4093,7 +4201,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S643,Sa875,Skqt,Sj92|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|at|^b@2|at|^z@3|ht|b|cp||at|^bWhen the King takes the first trick, declarer does not know who has the Ace (fourth hand should also duck holding the Ace).|
-pc|s3|pc|s5|pc|sk|pc|s2|pg||
+pc|s3|pc|s5|pc|sk|pc|s2|
+pg| ***** 305 ***** |
 
 
 %% ============= Page  306
@@ -4104,11 +4213,11 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S643,Sa875,Sqtk,Sj92|
 sk||
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|s3|pc|s5|pc|sk|    tc|r|    pc|s2|
+wt|s|tc|c|pc|s3|pc|s5|pc|sk|tc|r|pc|s2|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bWhen the King takes the first trick, declarer does not know who has the Ace (fourth hand should also duck holding the Ace).|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bWhen declarer leads the suit a second time, duck again; declarer may put in the 10.|
-pg||
+pg| ***** 306 ***** |
 
 
 %% ============= Page  307
@@ -4118,7 +4227,7 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,Skq32,Saj9,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-pg||
+pg| ***** 307 ***** |
 
 
 %% ============= Page  308
@@ -4131,7 +4240,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bWhen declarer leads low, play low.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf declarer is missing the 10 the percentage play is the nine, which allows your partner to take the trick with the @s10.|
-pg||
+pg| ***** 308 ***** |
 
 
 %% ============= Page  309
@@ -4144,7 +4253,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bLater you will take a trick with your @sKQ.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bHowever, if you need only one Spade trick to defeat the contract, split your honors.|
-pg||
+pg| ***** 309 ***** |
 
 
 %% ============= Page  310
@@ -4155,7 +4264,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bAt times you can 'infer' that partner has a missing honor from the way declarer is attacking the suit.|
-pg||
+pg| ***** 310 ***** |
 
 
 %% ============= Page  311
@@ -4166,7 +4275,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bYou have the King and dummy has QJ10|
-pg||
+pg| ***** 311 ***** |
 
 
 %% ============= Page  312
@@ -4179,7 +4288,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bWhen declarer leads a low Spade from hand, you can be pretty sure partner has the Ace.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf declarer has the Ace, why isn't declarer going to dummy in another suit and taking a finesse? Wouldn't you|
-pg||
+pg| ***** 312 ***** |
 
 
 %% ============= Page  313
@@ -4190,7 +4299,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bYou have the Queen and dummy has the J10xx|
-pg||
+pg| ***** 313 ***** |
 
 
 %% ============= Page  314
@@ -4201,7 +4310,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,Sq432,Sjt65,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf declarer leads low, count on your partner to have the King or the Ace, maybe both, and play low.|
-pg||
+pg| ***** 314 ***** |
 
 
 %% ============= Page  315
@@ -4212,7 +4321,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,Sq432,Sjt65,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf declarer has the @sAKx(x) he would not be leading low, he would either be playing the @sAK hoping the Queen drops, or entering the dummy to take a finesse.|
-pg||
+pg| ***** 315 ***** |
 
 
 %% ============= Page  316
@@ -4223,7 +4332,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bYou have the King and dummy has a Q10 combination|
-pg||
+pg| ***** 316 ***** |
 
 
 %% ============= Page  317
@@ -4236,7 +4345,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf declarer leads a low Spade or plays the Ace and a low Spade.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIn the first case partner may hold the Jack; in the second it is almost a certainty.|
-pg||
+pg| ***** 317 ***** |
 
 
 %% ============= Page  318
@@ -4249,7 +4358,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf declarer has @sAJx(x), he isn't going to play Ace and another Spade; declarer is going to cross to dummy to take a finesse.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bPlay low smoothly; allow partner to win her Jack, and you take the King later.|
-pg||
+pg| ***** 318 ***** |
 
 
 %% ============= Page  319
@@ -4260,7 +4369,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bYou have AK(x)(x) and dummy has the Q10(x)(x)|
-pg||
+pg| ***** 319 ***** |
 
 
 %% ============= Page  320
@@ -4273,7 +4382,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThis is most commonly a notrump position.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bAt a suit contract you probably would have led the Ace to begin with.|
-pg||
+pg| ***** 320 ***** |
 
 
 %% ============= Page  321
@@ -4284,7 +4393,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,Sak73,Sqt94,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIn any case, at notrump when declarer leads low, it is usually right to play low allowing declarer to make the percentage play of the 10 which may lose to partner's Jack.|
-pg||
+pg| ***** 321 ***** |
 
 
 %% ============= Page  322
@@ -4297,7 +4406,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIn any case, at notrump when declarer leads low, it is usually right to play low allowing declarer to make the percentage play of the 10 which may lose to partner's Jack.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^b(Of course, declarer might have the Jack).|
-pg||
+pg| ***** 322 ***** |
 
 
 %% ============= Page  323
@@ -4308,7 +4417,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bAt notrump when you have an AK combination and dummy has the QJ10x(x) with one side entry.|
-pg||
+pg| ***** 323 ***** |
 
 
 %% ============= Page  324
@@ -4320,7 +4429,7 @@ md|1Skq6HakqD63Caj865,Sjt97Ht5Dak4Cq973,Sa82H742Dqjt95Ct2,S543Hj9863D872Ck4|
 sk|w|
 ha||mb|1c|mb|p|mb|1d|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-pg||
+pg| ***** 324 ***** |
 
 
 %% ============= Page  325
@@ -4331,7 +4440,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Skq6HakqD63Caj865,Sjt97Ht5Dak4Cq973,Sa82H742Dqjt95Ct2,S543Hj9863D872Ck4|
 ha||mb|1c|mb|p|mb|1d|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|pc|sj|pc|s2|pc|s3|pg||
+wt|w|pc|sj|pc|s2|pc|s3|
+pg| ***** 325 ***** |
 
 
 %% ============= Page  326
@@ -4342,9 +4452,10 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Skq6HakqD63Caj865,St97jHt5Dak4Cq973,Sa82H742Dqjt95Ct2,S543Hj9863D872Ck4|
 ha||mb|1c|mb|p|mb|1d|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|sj|pc|s2|pc|s3|    tc|r|
+wt|w|tc|c|pc|sj|pc|s2|pc|s3|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bDeclarer wins the first trick...|
-pc|sk|pg||
+pc|sk|
+pg| ***** 326 ***** |
 
 
 %% ============= Page  327
@@ -4355,9 +4466,10 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sq6kHakqD63Caj865,St97jHt5Dak4Cq973,Sa82H742Dqjt95Ct2,S543Hj9863D872Ck4|
 ha||mb|1c|mb|p|mb|1d|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|sj|pc|s2|pc|s3|    tc|r|    pc|sk|
+wt|w|tc|c|pc|sj|pc|s2|pc|s3|tc|r|pc|sk|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bDeclarer wins the first trick...|
-pc|d3|pg||
+pc|d3|
+pg| ***** 327 ***** |
 
 
 %% ============= Page  328
@@ -4370,10 +4482,10 @@ sk||
 ha||mb|1c|mb|p|mb|1d|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sj|pc|s2|pc|s3|pc|sk|    tc|r|
-tc|c|   pc|d3|    tc|r|
+pc|sj|pc|s2|pc|s3|pc|sk|tc|r|
+tc|c|pc|d3|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf you take the trick, declarer can force out your Ace, use the @sA as a dummy reentry and wind up taking three Spades, three Hearts, three Diamonds and a Club, making an overtrick.|
-pg||
+pg| ***** 328 ***** |
 
 
 %% ============= Page  329
@@ -4385,10 +4497,11 @@ md|1Sq6kHakqD63Caj865,St97jHt5Dak4Cq973,Sa82H742Dqjt95Ct2,S543Hj9863D872Ck4|
 ha||mb|1c|mb|p|mb|1d|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sj|pc|s2|pc|s3|pc|sk|    tc|r|
-tc|c|   pc|d3|    tc|r|
+pc|sj|pc|s2|pc|s3|pc|sk|tc|r|
+tc|c|pc|d3|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf you duck the Diamond you will kill the suit.|
-pc|d4|pc|dq|pc|d2|pg||
+pc|d4|pc|dq|pc|d2|
+pg| ***** 329 ***** |
 
 
 %% ============= Page  330
@@ -4400,10 +4513,10 @@ md|1Sq6kHakqD63Caj865,St97jHt5Dak4Cq973,Sa82H742Djt95qCt2,S543Hj9863D872Ck4|
 ha||mb|1c|mb|p|mb|1d|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sj|pc|s2|pc|s3|pc|sk|    tc|r|
-tc|c|   pc|d3|pc|d4|pc|dq|    tc|r|    pc|d2|
+pc|sj|pc|s2|pc|s3|pc|sk|tc|r|
+tc|c|pc|d3|pc|d4|pc|dq|tc|r|pc|d2|
 at|^b@2|at|^z@3|ht|b|cp||at|^bDeclarer lacks the entries to set up the suit and will surely shift her attention to Clubs...|
-pg||
+pg| ***** 330 ***** |
 
 
 %% ============= Page  331
@@ -4415,10 +4528,11 @@ md|1Sq6kHakqD63Caj865,St97jHt5Dak4Cq973,Sa82H742Djt95qCt2,S543Hj9863D872Ck4|
 ha||mb|1c|mb|p|mb|1d|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sj|pc|s2|pc|s3|pc|sk|
-        pc|d3|pc|d4|pc|dq|pc|d2|    tc|r|
+pc|sj|pc|s2|pc|s3|pc|sk|
+pc|d3|pc|d4|pc|dq|pc|d2|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThis is not an unusual line.|
-pc|ct|pg||
+pc|ct|
+pg| ***** 331 ***** |
 
 
 %% ============= Page  332
@@ -4430,11 +4544,12 @@ md|1Sq6kHakqD63Caj865,St97jHt5Dak4Cq973,Sa82H742Djt95qC2t,S543Hj9863D872Ck4|
 ha||mb|1c|mb|p|mb|1d|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sj|pc|s2|pc|s3|pc|sk|
-        pc|d3|pc|d4|pc|dq|pc|d2|    tc|r|
-tc|c|   pc|ct|    tc|r|
+pc|sj|pc|s2|pc|s3|pc|sk|
+pc|d3|pc|d4|pc|dq|pc|d2|tc|r|
+tc|c|pc|ct|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bThis is not an unusual line.|
-pc|ck|pc|ca|pg||
+pc|ck|pc|ca|
+pg| ***** 332 ***** |
 
 
 %% ============= Page  333
@@ -4446,11 +4561,11 @@ md|1Sq6kHakqD63Cj865a,St97jHt5Dak4Cq973,Sa82H742Djt95qC2t,S543Hj9863D872C4k|
 ha||mb|1c|mb|p|mb|1d|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sj|pc|s2|pc|s3|pc|sk|
-        pc|d3|pc|d4|pc|dq|pc|d2|    tc|r|
-tc|c|   pc|ct|pc|ck|pc|ca|    tc|r|
+pc|sj|pc|s2|pc|s3|pc|sk|
+pc|d3|pc|d4|pc|dq|pc|d2|tc|r|
+tc|c|pc|ct|pc|ck|pc|ca|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bYour @cQ97 are now promoted to three winners.|
-pg||
+pg| ***** 333 ***** |
 
 
 %% ============= Page  334
@@ -4462,13 +4577,13 @@ md|1Sq6kHakqD63Cj865a,St97jHt5Dak4Cq973,Sa82H742Djt95qC2t,S543Hj9863D872C4k|
 ha||mb|1c|mb|p|mb|1d|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sj|pc|s2|pc|s3|pc|sk|
-        pc|d3|pc|d4|pc|dq|pc|d2|    tc|r|
-tc|c|   pc|ct|pc|ck|pc|ca|    tc|r|
+pc|sj|pc|s2|pc|s3|pc|sk|
+pc|d3|pc|d4|pc|dq|pc|d2|tc|r|
+tc|c|pc|ct|pc|ck|pc|ca|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bYour @cQ97 are now promoted to three winners.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^b(Please, don't give partner count with the @c7 when declarer wins the Ace; it is the setting trick!)|
-pg||
+pg| ***** 334 ***** |
 
 
 %% ============= Page  335
@@ -4481,7 +4596,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*bSecond hand high?^*n|
 at|^^|cp||at|^b^*b^*n|
 at|^^|cp||at|^b^*bYou better believe it!^*n|
-pg||
+pg| ***** 335 ***** |
 
 
 %% ============= Page  336
@@ -4492,7 +4607,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b'Second hand low; may be right most of the time, but there are at least five important positions where second hand should be alert to play high...or else!|
-pg||
+pg| ***** 336 ***** |
 
 
 %% ============= Page  337
@@ -4503,7 +4618,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*bTo kill a long suit in dummy^*n|
-pg||
+pg| ***** 337 ***** |
 
 
 %% ============= Page  338
@@ -4515,7 +4630,7 @@ md|1Sa85Haqj9D53Cakqj,Skqj94Hk2Dq7Ct832,S72H743Dakt94C654,St63Ht865Dj862C97|
 sk|w|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-pg||
+pg| ***** 338 ***** |
 
 
 %% ============= Page  339
@@ -4527,7 +4642,8 @@ md|1Sa85Haqj9D53Cakqj,Skqj94Hk2Dq7Ct832,S72H743Dakt94C654,St63Ht865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|at|^b@2|at|^z@3|ht|b|cp||at|^bFollow the defense closely. You lead...|
-pc|sk|pc|s2|pc|s3|pg||
+pc|sk|pc|s2|pc|s3|
+pg| ***** 339 ***** |
 
 
 %% ============= Page  340
@@ -4538,10 +4654,10 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sa85Haqj9D53Cakqj,Sqj94kHk2Dq7Ct832,S72H743Dakt94C654,St63Ht865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|sk|pc|s2|pc|s3|    tc|r|
+wt|w|tc|c|pc|sk|pc|s2|pc|s3|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bFollow the defense closely. You lead...|
 cp||at| partner denies the @sA or @sJ.|
-pg||
+pg| ***** 340 ***** |
 
 
 %% ============= Page  341
@@ -4552,10 +4668,11 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sa85Haqj9D53Cakqj,Sqj94kHk2Dq7Ct832,S72H743Dakt94C654,St63Ht865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|sk|pc|s2|pc|s3|    tc|r|
+wt|w|tc|c|pc|sk|pc|s2|pc|s3|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bFollow the defense closely. You lead...|
 cp|4|at| partner denies the @sA or @sJ.|
-pc|s5|pg||
+pc|s5|
+pg| ***** 341 ***** |
 
 
 %% ============= Page  342
@@ -4566,8 +4683,9 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sa85Haqj9D53Cakqj,Sqj94kHk2Dq7Ct832,S72H743Dakt94C654,St63Ht865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|sk|pc|s2|pc|s3|    tc|r|    pc|s5|
-pc|sj|pc|s7|pc|st|pg||
+wt|w|tc|c|pc|sk|pc|s2|pc|s3|tc|r|pc|s5|
+pc|sj|pc|s7|pc|st|
+pg| ***** 342 ***** |
 
 
 %% ============= Page  343
@@ -4579,10 +4697,11 @@ md|1Sa85Haqj9D53Cakqj,Sq94kjHk2Dq7Ct832,S27H743Dakt94C654,S63tHt865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|    tc|r|
-tc|c|   pc|sj|pc|s7|pc|st|    tc|r|
+pc|sk|pc|s2|pc|s3|pc|s5|tc|r|
+tc|c|pc|sj|pc|s7|pc|st|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPartner unblocks the @s10 requested by the lowest card of your equal honors.|
-pc|s8|pg||
+pc|s8|
+pg| ***** 343 ***** |
 
 
 %% ============= Page  344
@@ -4594,10 +4713,11 @@ md|1Sa58Haqj9D53Cakqj,Sq94kjHk2Dq7Ct832,S27H743Dakt94C654,S63tHt865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|    tc|r|
-tc|c|   pc|sj|pc|s7|pc|st|    tc|r|    pc|s8|
+pc|sk|pc|s2|pc|s3|pc|s5|tc|r|
+tc|c|pc|sj|pc|s7|pc|st|tc|r|pc|s8|
 at|^b@2|at|^z@3|ht|b|cp||at|^bYou clear the suit.|
-pc|s4|pc|c4|pc|s6|pc|sa|pg||
+pc|s4|pc|c4|pc|s6|pc|sa|
+pg| ***** 344 ***** |
 
 
 %% ============= Page  345
@@ -4609,10 +4729,11 @@ md|1S58aHaqj9D53Cakqj,Sq9kj4Hk2Dq7Ct832,S27H743Dakt94C654,S3t6Ht865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|    tc|r|
-tc|c|   pc|s4|pc|c4|pc|s6|    tc|r|    pc|sa|
-pc|d3|pg||
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|tc|r|
+tc|c|pc|s4|pc|c4|pc|s6|tc|r|pc|sa|
+pc|d3|
+pg| ***** 345 ***** |
 
 
 %% ============= Page  346
@@ -4624,12 +4745,12 @@ md|1S58aHaqj9D53Cakqj,Sq9kj4Hk2Dq7Ct832,S27H743Dakt94C654,S3t6Ht865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|
-        pc|s4|pc|c4|pc|s6|pc|sa|    tc|r|
-tc|c|   pc|d3|    tc|r|
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|
+pc|s4|pc|c4|pc|s6|pc|sa|tc|r|
+tc|c|pc|d3|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPlay your Queen!|
-pg||
+pg| ***** 346 ***** |
 
 
 %% ============= Page  347
@@ -4641,14 +4762,15 @@ md|1S58aHaqj9D53Cakqj,Sq9kj4Hk2Dq7Ct832,S27H743Dakt94C654,S3t6Ht865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|
-        pc|s4|pc|c4|pc|s6|pc|sa|    tc|r|
-tc|c|   pc|d3|    tc|r|
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|
+pc|s4|pc|c4|pc|s6|pc|sa|tc|r|
+tc|c|pc|d3|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bPlay your Queen!|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bDeclarer cannot duck lest you take the setting tricks in Spades.|
-pc|dq|pg||
+pc|dq|
+pg| ***** 347 ***** |
 
 
 %% ============= Page  348
@@ -4660,12 +4782,12 @@ md|1S58aHaqj9D53Cakqj,Sq9kj4Hk2D7qCt832,S27H743Dakt94C654,S3t6Ht865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|
-        pc|s4|pc|c4|pc|s6|pc|sa|    tc|r|
-tc|c|   pc|d3|pc|dq|    tc|r|
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|
+pc|s4|pc|c4|pc|s6|pc|sa|tc|r|
+tc|c|pc|d3|pc|dq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf dummy wins and a Heart finesse is taken...|
-pg||
+pg| ***** 348 ***** |
 
 
 %% ============= Page  349
@@ -4677,12 +4799,13 @@ md|1S58aHaqj9D53Cakqj,Sq9kj4Hk2D7qCt832,S27H743Dakt94C654,S3t6Ht865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|
-        pc|s4|pc|c4|pc|s6|pc|sa|    tc|r|
-tc|c|   pc|d3|pc|dq|    tc|r|
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|
+pc|s4|pc|c4|pc|s6|pc|sa|tc|r|
+tc|c|pc|d3|pc|dq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf dummy wins and a Heart finesse is taken...|
-pc|da|pc|d2|pg||
+pc|da|pc|d2|
+pg| ***** 349 ***** |
 
 
 %% ============= Page  350
@@ -4694,12 +4817,13 @@ md|1S58aHaqj9D53Cakqj,Sq9kj4Hk2D7qCt832,S27H743Dkt94aC654,S3t6Ht865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|
-        pc|s4|pc|c4|pc|s6|pc|sa|    tc|r|
-tc|c|   pc|d3|pc|dq|pc|da|    tc|r|    pc|d2|
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|
+pc|s4|pc|c4|pc|s6|pc|sa|tc|r|
+tc|c|pc|d3|pc|dq|pc|da|tc|r|pc|d2|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf dummy wins and a Heart finesse is taken...|
-pc|h3|pc|h5|pc|hj|pg||
+pc|h3|pc|h5|pc|hj|
+pg| ***** 350 ***** |
 
 
 %% ============= Page  351
@@ -4712,14 +4836,15 @@ sk||
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|
-        pc|s4|pc|c4|pc|s6|pc|sa|
-        pc|d3|pc|dq|pc|da|pc|d2|    tc|r|
-tc|c|   pc|h3|pc|h5|pc|hj|    tc|r|
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|
+pc|s4|pc|c4|pc|s6|pc|sa|
+pc|d3|pc|dq|pc|da|pc|d2|tc|r|
+tc|c|pc|h3|pc|h5|pc|hj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf dummy wins and a Heart finesse is taken...|
 cp||at| your @hK wins and again you take your Spade tricks for a one trick set.|
-pc|hk|pg||
+pc|hk|
+pg| ***** 351 ***** |
 
 
 %% ============= Page  352
@@ -4731,16 +4856,16 @@ md|1S58aHaq9jD53Cakqj,Sq9kj4H2kD7qCt832,S27H743Dkt94aC654,S3t6Ht865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|
-        pc|s4|pc|c4|pc|s6|pc|sa|
-        pc|d3|pc|dq|pc|da|pc|d2|    tc|r|
-tc|c|   pc|h3|pc|h5|pc|hj|    tc|r|    pc|hk|
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|
+pc|s4|pc|c4|pc|s6|pc|sa|
+pc|d3|pc|dq|pc|da|pc|d2|tc|r|
+tc|c|pc|h3|pc|h5|pc|hj|tc|r|pc|hk|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf dummy wins and a Heart finesse is taken...|
 cp|4|at| your @hK wins and again you take your Spade tricks for a one trick set.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bOr instead of trying the Heart finesse, declarer may try another Diamond finesse...|
-pg||
+pg| ***** 352 ***** |
 
 
 %% ============= Page  353
@@ -4752,15 +4877,16 @@ md|1S58aHaqj9D53Cakqj,Sq9kj4Hk2D7qCt832,S27H743Dkt94aC654,S3t6Ht865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|
-        pc|s4|pc|c4|pc|s6|pc|sa|
-        pc|d3|pc|dq|pc|da|pc|d2|    tc|r|
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|
+pc|s4|pc|c4|pc|s6|pc|sa|
+pc|d3|pc|dq|pc|da|pc|d2|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf dummy wins and a Heart finesse is taken...|
 cp|4|at| your @hK wins and again you take your Spade tricks for a one trick set.|
 at|^^|cp||at|^b|
 at|^^|cp|4|at|^bOr instead of trying the Heart finesse, declarer may try another Diamond finesse...|
-pc|c5|pc|c7|pc|ca|pc|c2|pg||
+pc|c5|pc|c7|pc|ca|pc|c2|
+pg| ***** 353 ***** |
 
 
 %% ============= Page  354
@@ -4772,16 +4898,17 @@ md|1S58aHaqj9D53Ckqja,Sq9kj4Hk2D7qCt832,S27H743Dkt94aC645,S3t6Ht865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|
-        pc|s4|pc|c4|pc|s6|pc|sa|
-        pc|d3|pc|dq|pc|da|pc|d2|    tc|r|
-tc|c|   pc|c5|pc|c7|pc|ca|    tc|r|    pc|c2|
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|
+pc|s4|pc|c4|pc|s6|pc|sa|
+pc|d3|pc|dq|pc|da|pc|d2|tc|r|
+tc|c|pc|c5|pc|c7|pc|ca|tc|r|pc|c2|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf dummy wins and a Heart finesse is taken...|
 cp|4|at| your @hK wins and again you take your Spade tricks for a one trick set.|
 at|^^|cp||at|^b|
 at|^^|cp|4|at|^bOr instead of trying the Heart finesse, declarer may try another Diamond finesse...|
-pc|d5|pc|d7|pc|dt|pg||
+pc|d5|pc|d7|pc|dt|
+pg| ***** 354 ***** |
 
 
 %% ============= Page  355
@@ -4793,14 +4920,14 @@ md|1S58aHaqj9D35Ckqja,Sq9kj4Hk2Dq7Ct832,S27H743Dk94atC645,S3t6Ht865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|
-        pc|s4|pc|c4|pc|s6|pc|sa|
-        pc|d3|pc|dq|pc|da|pc|d2|
-        pc|c5|pc|c7|pc|ca|pc|c2|    tc|r|
-tc|c|   pc|d5|pc|d7|pc|dt|    tc|r|
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|
+pc|s4|pc|c4|pc|s6|pc|sa|
+pc|d3|pc|dq|pc|da|pc|d2|
+pc|c5|pc|c7|pc|ca|pc|c2|tc|r|
+tc|c|pc|d5|pc|d7|pc|dt|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThis is even worse.|
-pg||
+pg| ***** 355 ***** |
 
 
 %% ============= Page  356
@@ -4812,14 +4939,15 @@ md|1S58aHaqj9D35Ckqja,Sq9kj4Hk2Dq7Ct832,S27H743Dk94atC645,S3t6Ht865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|
-        pc|s4|pc|c4|pc|s6|pc|sa|
-        pc|d3|pc|dq|pc|da|pc|d2|
-        pc|c5|pc|c7|pc|ca|pc|c2|    tc|r|
-tc|c|   pc|d5|pc|d7|pc|dt|    tc|r|
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|
+pc|s4|pc|c4|pc|s6|pc|sa|
+pc|d3|pc|dq|pc|da|pc|d2|
+pc|c5|pc|c7|pc|ca|pc|c2|tc|r|
+tc|c|pc|d5|pc|d7|pc|dt|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bThis is even worse.|
-pc|dj|pg||
+pc|dj|
+pg| ***** 356 ***** |
 
 
 %% ============= Page  357
@@ -4832,16 +4960,16 @@ sk||
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|
-        pc|s4|pc|c4|pc|s6|pc|sa|
-        pc|d3|pc|dq|pc|da|pc|d2|
-        pc|c5|pc|c7|pc|ca|pc|c2|    tc|r|
-tc|c|   pc|d5|pc|d7|pc|dt|    tc|r|    pc|dj|
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|
+pc|s4|pc|c4|pc|s6|pc|sa|
+pc|d3|pc|dq|pc|da|pc|d2|
+pc|c5|pc|c7|pc|ca|pc|c2|tc|r|
+tc|c|pc|d5|pc|d7|pc|dt|tc|r|pc|dj|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bThis is even worse.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bThe contract will go down two with a Heart or a Club return.|
-pg||
+pg| ***** 357 ***** |
 
 
 %% ============= Page  358
@@ -4853,12 +4981,13 @@ md|1S58aHaqj9D53Cakqj,Sq9kj4Hk2Dq7Ct832,S27H743Dakt94C654,S3t6Ht865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|
-        pc|s4|pc|c4|pc|s6|pc|sa|    tc|r|
-tc|c|   pc|d3|    tc|r|
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|
+pc|s4|pc|c4|pc|s6|pc|sa|tc|r|
+tc|c|pc|d3|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bBut what happens if you play a low Diamond at trick four?|
-pc|d7|pg||
+pc|d7|
+pg| ***** 358 ***** |
 
 
 %% ============= Page  359
@@ -4870,14 +4999,14 @@ md|1S58aHaqj9D53Cakqj,Sq9kj4Hk2Dq7Ct832,S27H743Dakt94C654,S3t6Ht865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|
-        pc|s4|pc|c4|pc|s6|pc|sa|    tc|r|
-tc|c|   pc|d3|pc|d7|    tc|r|
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|
+pc|s4|pc|c4|pc|s6|pc|sa|tc|r|
+tc|c|pc|d3|pc|d7|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bBut what happens if you play a low Diamond at trick four?|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bDon't ask.|
-pg||
+pg| ***** 359 ***** |
 
 
 %% ============= Page  360
@@ -4889,12 +5018,13 @@ md|1S58aHaqj9D53Cakqj,Sq9kj4Hk2Dq7Ct832,S27H743Dakt94C654,S3t6Ht865Dj862C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|
-        pc|s4|pc|c4|pc|s6|pc|sa|    tc|r|
-tc|c|   pc|d3|pc|d7|    tc|r|
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|
+pc|s4|pc|c4|pc|s6|pc|sa|tc|r|
+tc|c|pc|d3|pc|d7|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPartner wins and returns a Heart.|
-pc|d9|pc|dj|pg||
+pc|d9|pc|dj|
+pg| ***** 360 ***** |
 
 
 %% ============= Page  361
@@ -4906,12 +5036,13 @@ md|1S58aHaqj9D53Cakqj,Sq9kj4Hk2Dq7Ct832,S27H743Dakt49C654,S3t6Ht865D862jC97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|
-        pc|s4|pc|c4|pc|s6|pc|sa|    tc|r|
-tc|c|   pc|d3|pc|d7|pc|d9|    tc|r|    pc|dj|
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|
+pc|s4|pc|c4|pc|s6|pc|sa|tc|r|
+tc|c|pc|d3|pc|d7|pc|d9|tc|r|pc|dj|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bPartner wins and returns a Heart.|
-pc|h5|pc|ha|pc|h2|pc|h3|pg||
+pc|h5|pc|ha|pc|h2|pc|h3|
+pg| ***** 361 ***** |
 
 
 %% ============= Page  362
@@ -4923,13 +5054,14 @@ md|1S58aHqj9aD53Cakqj,Sq9kj4Hk2Dq7Ct832,S27H743Dakt49C654,S3t6Ht865D862jC97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|
-        pc|s4|pc|c4|pc|s6|pc|sa|
-        pc|d3|pc|d7|pc|d9|pc|dj|    tc|r|
-tc|c|   pc|h5|pc|ha|pc|h2|    tc|r|    pc|h3|
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|
+pc|s4|pc|c4|pc|s6|pc|sa|
+pc|d3|pc|d7|pc|d9|pc|dj|tc|r|
+tc|c|pc|h5|pc|ha|pc|h2|tc|r|pc|h3|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bPartner wins and returns a Heart.|
-pc|d5|pc|dq|pc|da|pc|d2|pg||
+pc|d5|pc|dq|pc|da|pc|d2|
+pg| ***** 362 ***** |
 
 
 %% ============= Page  363
@@ -4941,14 +5073,14 @@ md|1S58aHqj9aD35Cakqj,Sq9kj4Hk2D7qCt832,S27H743Dkt49aC654,S3t6Ht865D86j2C97|
 ha||mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sk|pc|s2|pc|s3|pc|s5|
-        pc|sj|pc|s7|pc|st|pc|s8|
-        pc|s4|pc|c4|pc|s6|pc|sa|
-        pc|d3|pc|d7|pc|d9|pc|dj|
-        pc|h5|pc|ha|pc|h2|pc|h3|    tc|r|
-tc|c|   pc|d5|pc|dq|pc|da|    tc|r|    pc|d2|
+pc|sk|pc|s2|pc|s3|pc|s5|
+pc|sj|pc|s7|pc|st|pc|s8|
+pc|s4|pc|c4|pc|s6|pc|sa|
+pc|d3|pc|d7|pc|d9|pc|dj|
+pc|h5|pc|ha|pc|h2|pc|h3|tc|r|
+tc|c|pc|d5|pc|dq|pc|da|tc|r|pc|d2|
 at|^b@2|at|^z@3|ht|b|cp||at|^bFour Diamond tricks, a Heart, a Spade and four Club tricks makes 3NT +1|
-pg||
+pg| ***** 363 ***** |
 
 
 %% ============= Page  364
@@ -4959,7 +5091,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThe position you are most likely to run into is this:|
-pg||
+pg| ***** 364 ***** |
 
 
 %% ============= Page  365
@@ -4969,7 +5101,7 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S63,Sk54,Sajt87,Sq92|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-pg||
+pg| ***** 365 ***** |
 
 
 %% ============= Page  366
@@ -4982,7 +5114,8 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|s|at|^b@2|at|^z@3|ht|b|cp||at|^bSay the bidding marks South with two Spades and there is no certain side-suit entry to dummy.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bWhen a Spade is led play the King!|
-pc|s3|pg||
+pc|s3|
+pg| ***** 366 ***** |
 
 
 %% ============= Page  367
@@ -4992,9 +5125,10 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S63,Sk54,Sajt87,Sq92|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|s3|    tc|r|
+wt|s|tc|c|pc|s3|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThere are two possibilities: (1) dummy wins the Ace, partner wins the Queen next time the suit is led, and declarer gets one trick.|
-pc|sk|pc|sa|pg||
+pc|sk|pc|sa|
+pg| ***** 367 ***** |
 
 
 %% ============= Page  368
@@ -5004,9 +5138,10 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S63,S54k,Sajt87,Sq92|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|s3|pc|sk|    tc|r|
+wt|s|tc|c|pc|s3|pc|sk|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^b(2) Declarer ducks the King and later finesses the Jack; declarer gets zero Spade tricks!|
-pc|s7|pg||
+pc|s7|
+pg| ***** 368 ***** |
 
 
 %% ============= Page  369
@@ -5016,9 +5151,10 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S63,S54k,Sajt87,Sq92|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|s3|pc|sk|pc|s7|    tc|r|
+wt|s|tc|c|pc|s3|pc|sk|pc|s7|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^b(2) Declarer ducks the King and later finesses the Jack; declarer gets zero Spade tricks!|
-pc|s2|pg||
+pc|s2|
+pg| ***** 369 ***** |
 
 
 %% ============= Page  370
@@ -5028,9 +5164,10 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S63,S54k,Sajt87,Sq92|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|s3|pc|sk|pc|s7|    tc|r|    pc|s2|
+wt|s|tc|c|pc|s3|pc|sk|pc|s7|tc|r|pc|s2|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^b(2) Declarer ducks the King and later finesses the Jack; declarer gets zero Spade tricks!|
-pc|s6|pc|s4|pc|st|pc|sq|pg||
+pc|s6|pc|s4|pc|st|pc|sq|
+pg| ***** 370 ***** |
 
 
 %% ============= Page  371
@@ -5040,9 +5177,10 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S63,Sk54,Sajt87,Sq92|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|s3|    tc|r|
+wt|s|tc|c|pc|s3|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf you play low and the Jack is finessed there are also two possibilities: (1)|
-pc|s4|pc|sj|pg||
+pc|s4|pc|sj|
+pg| ***** 371 ***** |
 
 
 %% ============= Page  372
@@ -5052,10 +5190,11 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S63,Sk54,Sat87j,Sq92|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|s3|pc|s4|pc|sj|    tc|r|
+wt|s|tc|c|pc|s3|pc|s4|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf you play low and the Jack is finessed there are also two possibilities: (1)|
 cp||at| partner takes the Queen and the declarer later leads low to the @s10 taking four tricks;|
-pc|sq|pg||
+pc|sq|
+pg| ***** 372 ***** |
 
 
 %% ============= Page  373
@@ -5065,10 +5204,11 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S63,Sk54,Sat87j,S92q|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|s3|pc|s4|pc|sj|    tc|r|    pc|sq|
+wt|s|tc|c|pc|s3|pc|s4|pc|sj|tc|r|pc|sq|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf you play low and the Jack is finessed there are also two possibilities: (1)|
 cp|4|at| partner takes the Queen and the declarer later leads low to the @s10 taking four tricks;|
-pc|s6|pc|s5|pc|st|pc|s2|pg||
+pc|s6|pc|s5|pc|st|pc|s2|
+pg| ***** 373 ***** |
 
 
 %% ============= Page  374
@@ -5078,9 +5218,10 @@ sv|0|pn|Declarer,You,Dummy,Partner|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S63,Sk54,Sat87j,Sq92|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|s|tc|c|   pc|s3|pc|s4|pc|sj|    tc|r|
+wt|s|tc|c|pc|s3|pc|s4|pc|sj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^b(2) Partner ducks the Queen (a tough play), and declarer winds up with two tricks.|
-pc|s2|pg||
+pc|s2|
+pg| ***** 374 ***** |
 
 
 %% ============= Page  375
@@ -5091,7 +5232,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,Sj3,Sakt9,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPlay second hand high with Jx or Qx when dummy has the AK109(x) and no outside entry.|
-pg||
+pg| ***** 375 ***** |
 
 
 %% ============= Page  376
@@ -5102,7 +5243,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,Sk2,Sajt3,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPlay second hand high with Qx,  Qxx,  Kx,  or Kxx when dummy has the AJ10x(x) and no outside entry.|
-pg||
+pg| ***** 376 ***** |
 
 
 %% ============= Page  377
@@ -5113,7 +5254,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,Sj2,Saqt9,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPlay second hand high with Jx or Kx when dummy has the AQ109(x) with no outside entry.|
-pg||
+pg| ***** 377 ***** |
 
 
 %% ============= Page  378
@@ -5124,7 +5265,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*bTo preserve an entry to partner's hand^*n|
-pg||
+pg| ***** 378 ***** |
 
 
 %% ============= Page  379
@@ -5136,7 +5277,7 @@ md|2SakHt862Dakq6C842,Sqjt832H54Dt32Ca5,S754HakqD75Cqjt93,S96Hj973Dj984Ck76|
 sk|e|
 ha||mb|2s|an|Weak|
 sb|s|sb|w|sb|n|sb|e|
-pg||
+pg| ***** 379 ***** |
 
 
 %% ============= Page  380
@@ -5147,7 +5288,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|2SakHt862Dakq6C842,Sqjt832H54Dt32Ca5,S754HakqD75Cqjt93,S96Hj973Dj984Ck76|
 ha||mb|2s|an|Weak|mb|p|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|pc|sq|pc|s4|pc|s9|pc|sk|pg||
+wt|w|pc|sq|pc|s4|pc|s9|pc|sk|
+pg| ***** 380 ***** |
 
 
 %% ============= Page  381
@@ -5158,8 +5300,9 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|2SakHt862Dakq6C842,Sjt832qH54Dt32Ca5,S754HakqD75Cqjt93,S69Hj973Dj984Ck76|
 ha||mb|2s|an|Weak|mb|p|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|sq|pc|s4|pc|s9|    tc|r|    pc|sk|
-pc|h2|pc|h4|pc|hq|pc|h3|pg||
+wt|w|tc|c|pc|sq|pc|s4|pc|s9|tc|r|pc|sk|
+pc|h2|pc|h4|pc|hq|pc|h3|
+pg| ***** 381 ***** |
 
 
 %% ============= Page  382
@@ -5171,9 +5314,10 @@ md|2SakHt862Dakq6C842,Sjt832qH54Dt32Ca5,S754HakqD75Cqjt93,S69Hj973Dj984Ck76|
 ha||mb|2s|an|Weak|mb|p|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sq|pc|s4|pc|s9|pc|sk|    tc|r|
-tc|c|   pc|h2|pc|h4|pc|hq|    tc|r|    pc|h3|
-pc|cq|pg||
+pc|sq|pc|s4|pc|s9|pc|sk|tc|r|
+tc|c|pc|h2|pc|h4|pc|hq|tc|r|pc|h3|
+pc|cq|
+pg| ***** 382 ***** |
 
 
 %% ============= Page  383
@@ -5185,13 +5329,13 @@ md|2SakHt862Dakq6C842,Sjt832qH54Dt32Ca5,S754HakqD75Cjt93q,S69Hj973Dj984Ck76|
 ha||mb|2s|an|Weak|mb|p|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sq|pc|s4|pc|s9|pc|sk|
-        pc|h2|pc|h4|pc|hq|pc|h3|    tc|r|
-tc|c|   pc|cq|    tc|r|
+pc|sq|pc|s4|pc|s9|pc|sk|
+pc|h2|pc|h4|pc|hq|pc|h3|tc|r|
+tc|c|pc|cq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bRemember that rule about covering the last of equal honors?|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bForget it! It doesn't apply here.|
-pg||
+pg| ***** 383 ***** |
 
 
 %% ============= Page  384
@@ -5203,13 +5347,13 @@ md|2SakHt862Dakq6C842,Sjt832qH54Dt32Ca5,S754HakqD75Cjt93q,S69Hj973Dj984Ck76|
 ha||mb|2s|an|Weak|mb|p|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sq|pc|s4|pc|s9|pc|sk|
-        pc|h2|pc|h4|pc|hq|pc|h3|    tc|r|
-tc|c|   pc|cq|    tc|r|
+pc|sq|pc|s4|pc|s9|pc|sk|
+pc|h2|pc|h4|pc|hq|pc|h3|tc|r|
+tc|c|pc|cq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf declarer has the @cA you are not going to defeat this contract in a million years.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bYou have to play partner for that card.|
-pg||
+pg| ***** 384 ***** |
 
 
 %% ============= Page  385
@@ -5221,11 +5365,11 @@ md|2SakHt862Dakq6C842,Sjt832qH54Dt32Ca5,S754HakqD75Cjt93q,S69Hj973Dj984Ck76|
 ha||mb|2s|an|Weak|mb|p|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sq|pc|s4|pc|s9|pc|sk|
-        pc|h2|pc|h4|pc|hq|pc|h3|    tc|r|
-tc|c|   pc|cq|    tc|r|
+pc|sq|pc|s4|pc|s9|pc|sk|
+pc|h2|pc|h4|pc|hq|pc|h3|tc|r|
+tc|c|pc|cq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf partner has the @cA, you have to be the one that wins the first Club, because you are the one that is short in Spades (general defensive principle).|
-pg||
+pg| ***** 385 ***** |
 
 
 %% ============= Page  386
@@ -5237,11 +5381,12 @@ md|2SakHt862Dakq6C842,Sjt832qH54Dt32Ca5,S754HakqD75Cjt93q,S69Hj973Dj984Ck76|
 ha||mb|2s|an|Weak|mb|p|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sq|pc|s4|pc|s9|pc|sk|
-        pc|h2|pc|h4|pc|hq|pc|h3|    tc|r|
-tc|c|   pc|cq|    tc|r|
+pc|sq|pc|s4|pc|s9|pc|sk|
+pc|h2|pc|h4|pc|hq|pc|h3|tc|r|
+tc|c|pc|cq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bIf partner has the @cA, you have to be the one that wins the first Club, because you are the one that is short in Spades (general defensive principle).|
-pc|ck|pc|c2|pg||
+pc|ck|pc|c2|
+pg| ***** 386 ***** |
 
 
 %% ============= Page  387
@@ -5253,11 +5398,12 @@ md|2SakHt862Dakq6C842,Sjt832qH54Dt32Ca5,S754HakqD75Cjt93q,S69Hj973Dj984C76k|
 ha||mb|2s|an|Weak|mb|p|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sq|pc|s4|pc|s9|pc|sk|
-        pc|h2|pc|h4|pc|hq|pc|h3|    tc|r|
-tc|c|   pc|cq|pc|ck|pc|c2|    tc|r|
+pc|sq|pc|s4|pc|s9|pc|sk|
+pc|h2|pc|h4|pc|hq|pc|h3|tc|r|
+tc|c|pc|cq|pc|ck|pc|c2|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bWhen you win the Club and...|
-pc|c5|pg||
+pc|c5|
+pg| ***** 387 ***** |
 
 
 %% ============= Page  388
@@ -5269,11 +5415,12 @@ md|2SakHt862Dakq6C842,Sjt832qH54Dt32Ca5,S754HakqD75Cjt93q,S69Hj973Dj984C76k|
 ha||mb|2s|an|Weak|mb|p|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sq|pc|s4|pc|s9|pc|sk|
-        pc|h2|pc|h4|pc|hq|pc|h3|    tc|r|
-tc|c|   pc|cq|pc|ck|pc|c2|    tc|r|    pc|c5|
+pc|sq|pc|s4|pc|s9|pc|sk|
+pc|h2|pc|h4|pc|hq|pc|h3|tc|r|
+tc|c|pc|cq|pc|ck|pc|c2|tc|r|pc|c5|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bWhen you win the Club and...|
-pc|s6|pc|sa|pc|s2|pc|s5|pg||
+pc|s6|pc|sa|pc|s2|pc|s5|
+pg| ***** 388 ***** |
 
 
 %% ============= Page  389
@@ -5286,13 +5433,13 @@ sk||
 ha||mb|2s|an|Weak|mb|p|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sq|pc|s4|pc|s9|pc|sk|
-        pc|h2|pc|h4|pc|hq|pc|h3|
-        pc|cq|pc|ck|pc|c2|pc|c5|    tc|r|
-tc|c|   pc|s6|pc|sa|pc|s2|    tc|r|    pc|s5|
+pc|sq|pc|s4|pc|s9|pc|sk|
+pc|h2|pc|h4|pc|hq|pc|h3|
+pc|cq|pc|ck|pc|c2|pc|c5|tc|r|
+tc|c|pc|s6|pc|sa|pc|s2|tc|r|pc|s5|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bWhen you win the Club and...|
 cp||at| partner gets in with the @cA, her Spades are ready to go.|
-pg||
+pg| ***** 389 ***** |
 
 
 %% ============= Page  390
@@ -5304,11 +5451,12 @@ md|2SakHt862Dakq6C842,Sjt832qH54Dt32Ca5,S754HakqD75Cjt93q,S69Hj973Dj984Ck76|
 ha||mb|2s|an|Weak|mb|p|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sq|pc|s4|pc|s9|pc|sk|
-        pc|h2|pc|h4|pc|hq|pc|h3|    tc|r|
-tc|c|   pc|cq|    tc|r|
+pc|sq|pc|s4|pc|s9|pc|sk|
+pc|h2|pc|h4|pc|hq|pc|h3|tc|r|
+tc|c|pc|cq|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bBut if partner wins the first Club and establishes Spades, when you get in with the @cK you won't have a Spade to return and partner's Spades will have to be used on the next hand.|
-pc|c6|pc|c2|pc|ca|pg||
+pc|c6|pc|c2|pc|ca|
+pg| ***** 390 ***** |
 
 
 %% ============= Page  391
@@ -5320,11 +5468,12 @@ md|2SakHt862Dakq6C842,Sjt832qH54Dt32C5a,S754HakqD75Cjt93q,S69Hj973Dj984Ck76|
 ha||mb|2s|an|Weak|mb|p|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sq|pc|s4|pc|s9|pc|sk|
-        pc|h2|pc|h4|pc|hq|pc|h3|    tc|r|
-tc|c|   pc|cq|pc|c6|pc|c2|    tc|r|    pc|ca|
+pc|sq|pc|s4|pc|s9|pc|sk|
+pc|h2|pc|h4|pc|hq|pc|h3|tc|r|
+tc|c|pc|cq|pc|c6|pc|c2|tc|r|pc|ca|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bBut if partner wins the first Club and establishes Spades, when you get in with the @cK you won't have a Spade to return and partner's Spades will have to be used on the next hand.|
-pc|s2|pc|s5|pc|s6|pc|sa|pg||
+pc|s2|pc|s5|pc|s6|pc|sa|
+pg| ***** 391 ***** |
 
 
 %% ============= Page  392
@@ -5336,14 +5485,14 @@ md|2SkaHt862Dakq6C842,Sjt83q2H54Dt32C5a,S745HakqD75Cjt93q,S96Hj973Dj984Ck76|
 ha||mb|2s|an|Weak|mb|p|mb|p|mb|2n|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|sq|pc|s4|pc|s9|pc|sk|
-        pc|h2|pc|h4|pc|hq|pc|h3|
-        pc|cq|pc|c6|pc|c2|pc|ca|    tc|r|
-tc|c|   pc|s2|pc|s5|pc|s6|    tc|r|    pc|sa|
+pc|sq|pc|s4|pc|s9|pc|sk|
+pc|h2|pc|h4|pc|hq|pc|h3|
+pc|cq|pc|c6|pc|c2|pc|ca|tc|r|
+tc|c|pc|s2|pc|s5|pc|s6|tc|r|pc|sa|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bBut if partner wins the first Club and establishes Spades, when you get in with the @cK you won't have a Spade to return and partner's Spades will have to be used on the next hand.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bThey certainly aren't going to be good on this one.|
-pg||
+pg| ***** 392 ***** |
 
 
 %% ============= Page  393
@@ -5354,7 +5503,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*bTo get partner off an endplay^*n|
-pg||
+pg| ***** 393 ***** |
 
 
 %% ============= Page  394
@@ -5366,7 +5515,7 @@ md|1Sak872HkqjD63Ck98,Sj5Hat92Dqj98Caqt,Sqt94H86Dak2C5432,S63H7543Dt754Cj76|
 sk|e|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|
 sb|s|sb|w|sb|n|sb|e|
-pg||
+pg| ***** 394 ***** |
 
 
 %% ============= Page  395
@@ -5377,7 +5526,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sak872HkqjD63Ck98,Sj5Hat92Dqj98Caqt,Sqt94H86Dak2C5432,S63H7543Dt754Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|pc|dq|pc|da|pg||
+wt|w|pc|dq|pc|da|
+pg| ***** 395 ***** |
 
 
 %% ============= Page  396
@@ -5388,9 +5538,9 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sak872HkqjD63Ck98,Sj5Hat92Dj98qCaqt,Sqt94H86Dk2aC5432,S63H7543Dt754Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|dq|pc|da|    tc|r|
+wt|w|tc|c|pc|dq|pc|da|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bCan you believe you will be the hero(ine) of this hand?|
-pg||
+pg| ***** 396 ***** |
 
 
 %% ============= Page  397
@@ -5401,11 +5551,11 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sak872HkqjD63Ck98,Sj5Hat92Dj98qCaqt,Sqt94H86Dk2aC5432,S63H7543Dt754Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|dq|pc|da|    tc|r|
+wt|w|tc|c|pc|dq|pc|da|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bCan you believe you will be the hero(ine) of this hand?|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bWell you are.|
-pg||
+pg| ***** 397 ***** |
 
 
 %% ============= Page  398
@@ -5416,12 +5566,13 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sak872HkqjD63Ck98,Sj5Hat92Dj98qCaqt,Sqt94H86Dk2aC5432,S63H7543Dt754Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|dq|pc|da|    tc|r|
+wt|w|tc|c|pc|dq|pc|da|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bCan you believe you will be the hero(ine) of this hand?|
 at|^^|cp||at|^b|
 at|^^|cp|4|at|^bWell you are.|
 cp||at| Your @d7 shows your @d10, an equal honor to partner's @dQ and expected @dJ.|
-pc|d7|pc|d3|pg||
+pc|d7|pc|d3|
+pg| ***** 398 ***** |
 
 
 %% ============= Page  399
@@ -5432,8 +5583,9 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sak872HkqjD63Ck98,Sj5Hat92Dj98qCaqt,Sqt94H86Dk2aC5432,S63H7543Dt547Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|dq|pc|da|pc|d7|    tc|r|    pc|d3|
-pc|s4|pc|s3|pc|sa|pc|s5|pg||
+wt|w|tc|c|pc|dq|pc|da|pc|d7|tc|r|pc|d3|
+pc|s4|pc|s3|pc|sa|pc|s5|
+pg| ***** 399 ***** |
 
 
 %% ============= Page  400
@@ -5445,9 +5597,10 @@ md|1Sk872aHkqjD63Ck98,Sj5Hat92Dj98qCaqt,Sqt94H86Dk2aC5432,S63H7543Dt547Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|da|pc|d7|pc|d3|    tc|r|
-tc|c|   pc|s4|pc|s3|pc|sa|    tc|r|    pc|s5|
-pc|s2|pc|sj|pc|sq|pc|s6|pg||
+pc|dq|pc|da|pc|d7|pc|d3|tc|r|
+tc|c|pc|s4|pc|s3|pc|sa|tc|r|pc|s5|
+pc|s2|pc|sj|pc|sq|pc|s6|
+pg| ***** 400 ***** |
 
 
 %% ============= Page  401
@@ -5459,10 +5612,11 @@ md|1Sk87a2HkqjD63Ck98,S5jHat92Dj98qCaqt,St94qH86Dk2aC5432,S36H7543Dt547Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|da|pc|d7|pc|d3|
-        pc|s4|pc|s3|pc|sa|pc|s5|    tc|r|
-tc|c|   pc|s2|pc|sj|pc|sq|    tc|r|    pc|s6|
-pc|h6|pc|h3|pc|hk|pc|ha|pg||
+pc|dq|pc|da|pc|d7|pc|d3|
+pc|s4|pc|s3|pc|sa|pc|s5|tc|r|
+tc|c|pc|s2|pc|sj|pc|sq|tc|r|pc|s6|
+pc|h6|pc|h3|pc|hk|pc|ha|
+pg| ***** 401 ***** |
 
 
 %% ============= Page  402
@@ -5474,12 +5628,12 @@ md|1Sk87a2HqjkD63Ck98,S5jHt92aDj98qCaqt,St94qH86Dk2aC5432,S36H7543Dt547Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|da|pc|d7|pc|d3|
-        pc|s4|pc|s3|pc|sa|pc|s5|
-        pc|s2|pc|sj|pc|sq|pc|s6|    tc|r|
-tc|c|   pc|h6|pc|h3|pc|hk|    tc|r|    pc|ha|
+pc|dq|pc|da|pc|d7|pc|d3|
+pc|s4|pc|s3|pc|sa|pc|s5|
+pc|s2|pc|sj|pc|sq|pc|s6|tc|r|
+tc|c|pc|h6|pc|h3|pc|hk|tc|r|pc|ha|
 at|^b@2|at|^z@3|ht|b|cp||at|^bPartner exits...|
-pg||
+pg| ***** 402 ***** |
 
 
 %% ============= Page  403
@@ -5491,11 +5645,12 @@ md|1Sk87a2HqjkD63Ck98,S5jHt92aDj98qCaqt,St94qH86Dk2aC5432,S36H7543Dt547Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|da|pc|d7|pc|d3|
-        pc|s4|pc|s3|pc|sa|pc|s5|
-        pc|s2|pc|sj|pc|sq|pc|s6|
-        pc|h6|pc|h3|pc|hk|pc|ha|    tc|r|
-pc|d8|pc|dk|pc|d4|pc|d6|pg||
+pc|dq|pc|da|pc|d7|pc|d3|
+pc|s4|pc|s3|pc|sa|pc|s5|
+pc|s2|pc|sj|pc|sq|pc|s6|
+pc|h6|pc|h3|pc|hk|pc|ha|tc|r|
+pc|d8|pc|dk|pc|d4|pc|d6|
+pg| ***** 403 ***** |
 
 
 %% ============= Page  404
@@ -5507,12 +5662,13 @@ md|1Sk87a2HqjkD36Ck98,S5jHt92aDj9q8Caqt,St94qH86D2akC5432,S36H7543Dt574Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|da|pc|d7|pc|d3|
-        pc|s4|pc|s3|pc|sa|pc|s5|
-        pc|s2|pc|sj|pc|sq|pc|s6|
-        pc|h6|pc|h3|pc|hk|pc|ha|    tc|r|
-tc|c|   pc|d8|pc|dk|pc|d4|    tc|r|    pc|d6|
-pc|d2|pc|d5|pc|s7|pc|d9|pg||
+pc|dq|pc|da|pc|d7|pc|d3|
+pc|s4|pc|s3|pc|sa|pc|s5|
+pc|s2|pc|sj|pc|sq|pc|s6|
+pc|h6|pc|h3|pc|hk|pc|ha|tc|r|
+tc|c|pc|d8|pc|dk|pc|d4|tc|r|pc|d6|
+pc|d2|pc|d5|pc|s7|pc|d9|
+pg| ***** 404 ***** |
 
 
 %% ============= Page  405
@@ -5524,13 +5680,14 @@ md|1Sk8a27HqjkD36Ck98,S5jHt92aDjq89Caqt,St94qH86Dak2C5432,S36H7543Dt745Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|da|pc|d7|pc|d3|
-        pc|s4|pc|s3|pc|sa|pc|s5|
-        pc|s2|pc|sj|pc|sq|pc|s6|
-        pc|h6|pc|h3|pc|hk|pc|ha|
-        pc|d8|pc|dk|pc|d4|pc|d6|    tc|r|
-tc|c|   pc|d2|pc|d5|pc|s7|    tc|r|    pc|d9|
-pc|hq|pc|h2|pc|h8|pc|h4|pg||
+pc|dq|pc|da|pc|d7|pc|d3|
+pc|s4|pc|s3|pc|sa|pc|s5|
+pc|s2|pc|sj|pc|sq|pc|s6|
+pc|h6|pc|h3|pc|hk|pc|ha|
+pc|d8|pc|dk|pc|d4|pc|d6|tc|r|
+tc|c|pc|d2|pc|d5|pc|s7|tc|r|pc|d9|
+pc|hq|pc|h2|pc|h8|pc|h4|
+pg| ***** 405 ***** |
 
 
 %% ============= Page  406
@@ -5543,14 +5700,15 @@ sk||
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|da|pc|d7|pc|d3|
-        pc|s4|pc|s3|pc|sa|pc|s5|
-        pc|s2|pc|sj|pc|sq|pc|s6|
-        pc|h6|pc|h3|pc|hk|pc|ha|
-        pc|d8|pc|dk|pc|d4|pc|d6|
-        pc|d2|pc|d5|pc|s7|pc|d9|    tc|r|
-tc|c|   pc|hq|pc|h2|pc|h8|    tc|r|    pc|h4|
-pc|hj|pc|h9|pc|c2|pc|h5|pg||
+pc|dq|pc|da|pc|d7|pc|d3|
+pc|s4|pc|s3|pc|sa|pc|s5|
+pc|s2|pc|sj|pc|sq|pc|s6|
+pc|h6|pc|h3|pc|hk|pc|ha|
+pc|d8|pc|dk|pc|d4|pc|d6|
+pc|d2|pc|d5|pc|s7|pc|d9|tc|r|
+tc|c|pc|hq|pc|h2|pc|h8|tc|r|pc|h4|
+pc|hj|pc|h9|pc|c2|pc|h5|
+pg| ***** 406 ***** |
 
 
 %% ============= Page  407
@@ -5562,15 +5720,16 @@ md|1Sk8a27HkqjD36Ck98,S5jHta29Djq89Caqt,St94qH68Dak2C5432,S36H7345Dt745Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|da|pc|d7|pc|d3|
-        pc|s4|pc|s3|pc|sa|pc|s5|
-        pc|s2|pc|sj|pc|sq|pc|s6|
-        pc|h6|pc|h3|pc|hk|pc|ha|
-        pc|d8|pc|dk|pc|d4|pc|d6|
-        pc|d2|pc|d5|pc|s7|pc|d9|
-        pc|hq|pc|h2|pc|h8|pc|h4|    tc|r|
-tc|c|   pc|hj|pc|h9|pc|c2|    tc|r|    pc|h5|
-pc|s8|pc|dj|pc|s9|pc|h7|pg||
+pc|dq|pc|da|pc|d7|pc|d3|
+pc|s4|pc|s3|pc|sa|pc|s5|
+pc|s2|pc|sj|pc|sq|pc|s6|
+pc|h6|pc|h3|pc|hk|pc|ha|
+pc|d8|pc|dk|pc|d4|pc|d6|
+pc|d2|pc|d5|pc|s7|pc|d9|
+pc|hq|pc|h2|pc|h8|pc|h4|tc|r|
+tc|c|pc|hj|pc|h9|pc|c2|tc|r|pc|h5|
+pc|s8|pc|dj|pc|s9|pc|h7|
+pg| ***** 407 ***** |
 
 
 %% ============= Page  408
@@ -5582,16 +5741,17 @@ md|1Ska278HkqjD36Ck98,S5jHta29Dq89jCaqt,St4q9H68Dak2C5432,S36H3457Dt745Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|da|pc|d7|pc|d3|
-        pc|s4|pc|s3|pc|sa|pc|s5|
-        pc|s2|pc|sj|pc|sq|pc|s6|
-        pc|h6|pc|h3|pc|hk|pc|ha|
-        pc|d8|pc|dk|pc|d4|pc|d6|
-        pc|d2|pc|d5|pc|s7|pc|d9|
-        pc|hq|pc|h2|pc|h8|pc|h4|
-        pc|hj|pc|h9|pc|c2|pc|h5|    tc|r|
-tc|c|   pc|s8|pc|dj|pc|s9|    tc|r|    pc|h7|
-pc|c3|pg||
+pc|dq|pc|da|pc|d7|pc|d3|
+pc|s4|pc|s3|pc|sa|pc|s5|
+pc|s2|pc|sj|pc|sq|pc|s6|
+pc|h6|pc|h3|pc|hk|pc|ha|
+pc|d8|pc|dk|pc|d4|pc|d6|
+pc|d2|pc|d5|pc|s7|pc|d9|
+pc|hq|pc|h2|pc|h8|pc|h4|
+pc|hj|pc|h9|pc|c2|pc|h5|tc|r|
+tc|c|pc|s8|pc|dj|pc|s9|tc|r|pc|h7|
+pc|c3|
+pg| ***** 408 ***** |
 
 
 %% ============= Page  409
@@ -5603,18 +5763,18 @@ md|1Ska278HkqjD36Ck98,S5jHta29Dq89jCaqt,St4q9H68Dak2C5423,S36H3457Dt745Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|da|pc|d7|pc|d3|
-        pc|s4|pc|s3|pc|sa|pc|s5|
-        pc|s2|pc|sj|pc|sq|pc|s6|
-        pc|h6|pc|h3|pc|hk|pc|ha|
-        pc|d8|pc|dk|pc|d4|pc|d6|
-        pc|d2|pc|d5|pc|s7|pc|d9|
-        pc|hq|pc|h2|pc|h8|pc|h4|
-        pc|hj|pc|h9|pc|c2|pc|h5|
-        pc|s8|pc|dj|pc|s9|pc|h7|    tc|r|
-tc|c|   pc|c3|    tc|r|
+pc|dq|pc|da|pc|d7|pc|d3|
+pc|s4|pc|s3|pc|sa|pc|s5|
+pc|s2|pc|sj|pc|sq|pc|s6|
+pc|h6|pc|h3|pc|hk|pc|ha|
+pc|d8|pc|dk|pc|d4|pc|d6|
+pc|d2|pc|d5|pc|s7|pc|d9|
+pc|hq|pc|h2|pc|h8|pc|h4|
+pc|hj|pc|h9|pc|c2|pc|h5|
+pc|s8|pc|dj|pc|s9|pc|h7|tc|r|
+tc|c|pc|c3|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bDo you play second hand low?|
-pg||
+pg| ***** 409 ***** |
 
 
 %% ============= Page  410
@@ -5626,20 +5786,20 @@ md|1Ska278HkqjD36Ck98,S5jHta29Dq89jCaqt,St4q9H68Dak2C5423,S36H3457Dt745Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|da|pc|d7|pc|d3|
-        pc|s4|pc|s3|pc|sa|pc|s5|
-        pc|s2|pc|sj|pc|sq|pc|s6|
-        pc|h6|pc|h3|pc|hk|pc|ha|
-        pc|d8|pc|dk|pc|d4|pc|d6|
-        pc|d2|pc|d5|pc|s7|pc|d9|
-        pc|hq|pc|h2|pc|h8|pc|h4|
-        pc|hj|pc|h9|pc|c2|pc|h5|
-        pc|s8|pc|dj|pc|s9|pc|h7|    tc|r|
-tc|c|   pc|c3|    tc|r|
+pc|dq|pc|da|pc|d7|pc|d3|
+pc|s4|pc|s3|pc|sa|pc|s5|
+pc|s2|pc|sj|pc|sq|pc|s6|
+pc|h6|pc|h3|pc|hk|pc|ha|
+pc|d8|pc|dk|pc|d4|pc|d6|
+pc|d2|pc|d5|pc|s7|pc|d9|
+pc|hq|pc|h2|pc|h8|pc|h4|
+pc|hj|pc|h9|pc|c2|pc|h5|
+pc|s8|pc|dj|pc|s9|pc|h7|tc|r|
+tc|c|pc|c3|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bDo you play second hand low?|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bNot on your life!|
-pg||
+pg| ***** 410 ***** |
 
 
 %% ============= Page  411
@@ -5651,20 +5811,20 @@ md|1Ska278HkqjD36Ck98,S5jHta29Dq89jCaqt,St4q9H68Dak2C5423,S36H3457Dt745Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|da|pc|d7|pc|d3|
-        pc|s4|pc|s3|pc|sa|pc|s5|
-        pc|s2|pc|sj|pc|sq|pc|s6|
-        pc|h6|pc|h3|pc|hk|pc|ha|
-        pc|d8|pc|dk|pc|d4|pc|d6|
-        pc|d2|pc|d5|pc|s7|pc|d9|
-        pc|hq|pc|h2|pc|h8|pc|h4|
-        pc|hj|pc|h9|pc|c2|pc|h5|
-        pc|s8|pc|dj|pc|s9|pc|h7|    tc|r|
-tc|c|   pc|c3|    tc|r|
+pc|dq|pc|da|pc|d7|pc|d3|
+pc|s4|pc|s3|pc|sa|pc|s5|
+pc|s2|pc|sj|pc|sq|pc|s6|
+pc|h6|pc|h3|pc|hk|pc|ha|
+pc|d8|pc|dk|pc|d4|pc|d6|
+pc|d2|pc|d5|pc|s7|pc|d9|
+pc|hq|pc|h2|pc|h8|pc|h4|
+pc|hj|pc|h9|pc|c2|pc|h5|
+pc|s8|pc|dj|pc|s9|pc|h7|tc|r|
+tc|c|pc|c3|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bYou need three Clubs to defeat the contract and partner must have the @cAQ10.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bIf so you must play the @cJ to prevent declarer from ducking the trick into partner and effectively endplaying partner.|
-pg||
+pg| ***** 411 ***** |
 
 
 %% ============= Page  412
@@ -5676,18 +5836,18 @@ md|1Ska278HkqjD36Ck98,S5jHta29Dq89jCaqt,St4q9H68Dak2C5423,S36H3457Dt745Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|da|pc|d7|pc|d3|
-        pc|s4|pc|s3|pc|sa|pc|s5|
-        pc|s2|pc|sj|pc|sq|pc|s6|
-        pc|h6|pc|h3|pc|hk|pc|ha|
-        pc|d8|pc|dk|pc|d4|pc|d6|
-        pc|d2|pc|d5|pc|s7|pc|d9|
-        pc|hq|pc|h2|pc|h8|pc|h4|
-        pc|hj|pc|h9|pc|c2|pc|h5|
-        pc|s8|pc|dj|pc|s9|pc|h7|    tc|r|
-tc|c|   pc|c3|    tc|r|
+pc|dq|pc|da|pc|d7|pc|d3|
+pc|s4|pc|s3|pc|sa|pc|s5|
+pc|s2|pc|sj|pc|sq|pc|s6|
+pc|h6|pc|h3|pc|hk|pc|ha|
+pc|d8|pc|dk|pc|d4|pc|d6|
+pc|d2|pc|d5|pc|s7|pc|d9|
+pc|hq|pc|h2|pc|h8|pc|h4|
+pc|hj|pc|h9|pc|c2|pc|h5|
+pc|s8|pc|dj|pc|s9|pc|h7|tc|r|
+tc|c|pc|c3|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bLet's watch the endplay.|
-pg||
+pg| ***** 412 ***** |
 
 
 %% ============= Page  413
@@ -5699,18 +5859,19 @@ md|1Ska278HkqjD36Ck98,S5jHta29Dq89jCaqt,St4q9H68Dak2C5423,S36H3457Dt745Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|da|pc|d7|pc|d3|
-        pc|s4|pc|s3|pc|sa|pc|s5|
-        pc|s2|pc|sj|pc|sq|pc|s6|
-        pc|h6|pc|h3|pc|hk|pc|ha|
-        pc|d8|pc|dk|pc|d4|pc|d6|
-        pc|d2|pc|d5|pc|s7|pc|d9|
-        pc|hq|pc|h2|pc|h8|pc|h4|
-        pc|hj|pc|h9|pc|c2|pc|h5|
-        pc|s8|pc|dj|pc|s9|pc|h7|    tc|r|
-tc|c|   pc|c3|    tc|r|
+pc|dq|pc|da|pc|d7|pc|d3|
+pc|s4|pc|s3|pc|sa|pc|s5|
+pc|s2|pc|sj|pc|sq|pc|s6|
+pc|h6|pc|h3|pc|hk|pc|ha|
+pc|d8|pc|dk|pc|d4|pc|d6|
+pc|d2|pc|d5|pc|s7|pc|d9|
+pc|hq|pc|h2|pc|h8|pc|h4|
+pc|hj|pc|h9|pc|c2|pc|h5|
+pc|s8|pc|dj|pc|s9|pc|h7|tc|r|
+tc|c|pc|c3|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bLet's watch the endplay.|
-pc|c6|pc|c8|pc|ct|pg||
+pc|c6|pc|c8|pc|ct|
+pg| ***** 413 ***** |
 
 
 %% ============= Page  414
@@ -5722,20 +5883,20 @@ md|1Ska278HkqjD36Ck98,S5jHta29Dq89jCaqt,St4q9H68Dak2C5423,S36H3457Dt745Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|da|pc|d7|pc|d3|
-        pc|s4|pc|s3|pc|sa|pc|s5|
-        pc|s2|pc|sj|pc|sq|pc|s6|
-        pc|h6|pc|h3|pc|hk|pc|ha|
-        pc|d8|pc|dk|pc|d4|pc|d6|
-        pc|d2|pc|d5|pc|s7|pc|d9|
-        pc|hq|pc|h2|pc|h8|pc|h4|
-        pc|hj|pc|h9|pc|c2|pc|h5|
-        pc|s8|pc|dj|pc|s9|pc|h7|    tc|r|
-tc|c|   pc|c3|pc|c6|pc|c8|    tc|r|    pc|ct|
+pc|dq|pc|da|pc|d7|pc|d3|
+pc|s4|pc|s3|pc|sa|pc|s5|
+pc|s2|pc|sj|pc|sq|pc|s6|
+pc|h6|pc|h3|pc|hk|pc|ha|
+pc|d8|pc|dk|pc|d4|pc|d6|
+pc|d2|pc|d5|pc|s7|pc|d9|
+pc|hq|pc|h2|pc|h8|pc|h4|
+pc|hj|pc|h9|pc|c2|pc|h5|
+pc|s8|pc|dj|pc|s9|pc|h7|tc|r|
+tc|c|pc|c3|pc|c6|pc|c8|tc|r|pc|ct|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bLet's watch the endplay.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bWest cannot lead a Heart as there is a sluff and ruff. He can cash his Ace but this sets up declarer's King as trick nine.|
-pg||
+pg| ***** 414 ***** |
 
 
 %% ============= Page  415
@@ -5747,18 +5908,18 @@ md|1Ska278HkqjD36Ck98,S5jHta29Dq89jCaqt,St4q9H68Dak2C5423,S36H3457Dt745Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|da|pc|d7|pc|d3|
-        pc|s4|pc|s3|pc|sa|pc|s5|
-        pc|s2|pc|sj|pc|sq|pc|s6|
-        pc|h6|pc|h3|pc|hk|pc|ha|
-        pc|d8|pc|dk|pc|d4|pc|d6|
-        pc|d2|pc|d5|pc|s7|pc|d9|
-        pc|hq|pc|h2|pc|h8|pc|h4|
-        pc|hj|pc|h9|pc|c2|pc|h5|
-        pc|s8|pc|dj|pc|s9|pc|h7|
-        pc|c3|pc|c6|pc|c8|pc|ct|    tc|r|
+pc|dq|pc|da|pc|d7|pc|d3|
+pc|s4|pc|s3|pc|sa|pc|s5|
+pc|s2|pc|sj|pc|sq|pc|s6|
+pc|h6|pc|h3|pc|hk|pc|ha|
+pc|d8|pc|dk|pc|d4|pc|d6|
+pc|d2|pc|d5|pc|s7|pc|d9|
+pc|hq|pc|h2|pc|h8|pc|h4|
+pc|hj|pc|h9|pc|c2|pc|h5|
+pc|s8|pc|dj|pc|s9|pc|h7|
+pc|c3|pc|c6|pc|c8|pc|ct|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bLet's back up.|
-pg||
+pg| ***** 415 ***** |
 
 
 %% ============= Page  416
@@ -5770,18 +5931,19 @@ md|1Ska278HkqjD36Ck98,S5jHta29Dq89jCaqt,St4q9H68Dak2C5423,S36H3457Dt745Cj76|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|da|pc|d7|pc|d3|
-        pc|s4|pc|s3|pc|sa|pc|s5|
-        pc|s2|pc|sj|pc|sq|pc|s6|
-        pc|h6|pc|h3|pc|hk|pc|ha|
-        pc|d8|pc|dk|pc|d4|pc|d6|
-        pc|d2|pc|d5|pc|s7|pc|d9|
-        pc|hq|pc|h2|pc|h8|pc|h4|
-        pc|hj|pc|h9|pc|c2|pc|h5|
-        pc|s8|pc|dj|pc|s9|pc|h7|    tc|r|
-tc|c|   pc|c3|    tc|r|
+pc|dq|pc|da|pc|d7|pc|d3|
+pc|s4|pc|s3|pc|sa|pc|s5|
+pc|s2|pc|sj|pc|sq|pc|s6|
+pc|h6|pc|h3|pc|hk|pc|ha|
+pc|d8|pc|dk|pc|d4|pc|d6|
+pc|d2|pc|d5|pc|s7|pc|d9|
+pc|hq|pc|h2|pc|h8|pc|h4|
+pc|hj|pc|h9|pc|c2|pc|h5|
+pc|s8|pc|dj|pc|s9|pc|h7|tc|r|
+tc|c|pc|c3|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bYoucan finish this board playing it double dummy. When done please click the "Next page" to continue.|
-pc|cj|pg||
+pc|cj|
+pg| ***** 416 ***** |
 
 
 %% ============= Page  417
@@ -5793,16 +5955,16 @@ md|1Ska278HkqjD36Ck98,S5jHta29Dq89jCaqt,St4q9H68Dak2C5423,S36H3457Dt745C76j|
 ha||mb|1s|mb|d|mb|2n|an|Limit raise|mb|p|mb|4s|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|dq|pc|da|pc|d7|pc|d3|
-        pc|s4|pc|s3|pc|sa|pc|s5|
-        pc|s2|pc|sj|pc|sq|pc|s6|
-        pc|h6|pc|h3|pc|hk|pc|ha|
-        pc|d8|pc|dk|pc|d4|pc|d6|
-        pc|d2|pc|d5|pc|s7|pc|d9|
-        pc|hq|pc|h2|pc|h8|pc|h4|
-        pc|hj|pc|h9|pc|c2|pc|h5|
-        pc|s8|pc|dj|pc|s9|pc|h7|    tc|r|
-tc|c|   pc|c3|pc|cj|    tc|r|
+pc|dq|pc|da|pc|d7|pc|d3|
+pc|s4|pc|s3|pc|sa|pc|s5|
+pc|s2|pc|sj|pc|sq|pc|s6|
+pc|h6|pc|h3|pc|hk|pc|ha|
+pc|d8|pc|dk|pc|d4|pc|d6|
+pc|d2|pc|d5|pc|s7|pc|d9|
+pc|hq|pc|h2|pc|h8|pc|h4|
+pc|hj|pc|h9|pc|c2|pc|h5|
+pc|s8|pc|dj|pc|s9|pc|h7|tc|r|
+tc|c|pc|c3|pc|cj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThere are many types of |
 cp||at|^*bendplay^*n|
 cp||at|.  |
@@ -5810,7 +5972,7 @@ at|^^|cp||at|^b|
 at|^^|cp||at|^bThe one you are trying to avoid here is a |
 cp||at|^*bthrow-in,^*n|
 cp||at|  where partner would be forced to lead away from an honor, giving declarer an undeserved trick.|
-pg||
+pg| ***** 417 ***** |
 
 
 %% ============= Page  418
@@ -5821,7 +5983,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*bWhen larceny is on declarer's mind^*n|
-pg||
+pg| ***** 418 ***** |
 
 
 %% ============= Page  419
@@ -5834,7 +5996,7 @@ sk|e|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bLet's follow the play.|
-pg||
+pg| ***** 419 ***** |
 
 
 %% ============= Page  420
@@ -5845,7 +6007,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sk52Hkq8Dkt86Cak9,Saq963H543D752C84,S87Hjt92Daqj4Cq62,Sjt4Ha76D93Cjt753|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|pc|s6|pc|s7|pc|st|pc|sk|pg||
+wt|w|pc|s6|pc|s7|pc|st|pc|sk|
+pg| ***** 420 ***** |
 
 
 %% ============= Page  421
@@ -5856,8 +6019,9 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1S52kHkq8Dkt86Cak9,Saq936H543D752C84,S87Hjt92Daqj4Cq62,Sj4tHa76D93Cjt753|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
-wt|w|tc|c|   pc|s6|pc|s7|pc|st|    tc|r|    pc|sk|
-pc|d6|pc|d2|pc|dq|pc|d3|pg||
+wt|w|tc|c|pc|s6|pc|s7|pc|st|tc|r|pc|sk|
+pc|d6|pc|d2|pc|dq|pc|d3|
+pg| ***** 421 ***** |
 
 
 %% ============= Page  422
@@ -5869,9 +6033,10 @@ md|1S52kHkq8Dkt86Cak9,Saq936H543D752C84,S87Hjt92Daj4qCq62,Sj4tHa76D93Cjt753|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|s6|pc|s7|pc|st|pc|sk|    tc|r|
-tc|c|   pc|d6|pc|d2|pc|dq|    tc|r|    pc|d3|
-pc|hj|pg||
+pc|s6|pc|s7|pc|st|pc|sk|tc|r|
+tc|c|pc|d6|pc|d2|pc|dq|tc|r|pc|d3|
+pc|hj|
+pg| ***** 422 ***** |
 
 
 %% ============= Page  423
@@ -5883,11 +6048,11 @@ md|1S52kHkq8Dkt86Cak9,Saq936H543D752C84,S87Ht92jDaj4qCq62,Sj4tHa76D93Cjt753|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|s6|pc|s7|pc|st|pc|sk|
-        pc|d6|pc|d2|pc|dq|pc|d3|    tc|r|
-tc|c|   pc|hj|    tc|r|
+pc|s6|pc|s7|pc|st|pc|sk|
+pc|d6|pc|d2|pc|dq|pc|d3|tc|r|
+tc|c|pc|hj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bAre you ready?|
-pg||
+pg| ***** 423 ***** |
 
 
 %% ============= Page  424
@@ -5899,11 +6064,11 @@ md|1S52kHkq8Dkt86Cak9,Saq936H543D752C84,S87Ht92jDaj4qCq62,Sj4tHa76D93Cjt753|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|s6|pc|s7|pc|st|pc|sk|
-        pc|d6|pc|d2|pc|dq|pc|d3|    tc|r|
-tc|c|   pc|hj|    tc|r|
+pc|s6|pc|s7|pc|st|pc|sk|
+pc|d6|pc|d2|pc|dq|pc|d3|tc|r|
+tc|c|pc|hj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThe bidding tells you that partner has at least five Spades and the Rule of Eleven tells you that declarer started with exactly one Spade above the six, which was the King played to trick one.|
-pg||
+pg| ***** 424 ***** |
 
 
 %% ============= Page  425
@@ -5915,12 +6080,12 @@ md|1S52kHkq8Dkt86Cak9,Saq936H543D752C84,S87Ht92jDaj4qCq62,Sj4tHa76D93Cjt753|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|s6|pc|s7|pc|st|pc|sk|
-        pc|d6|pc|d2|pc|dq|pc|d3|    tc|r|
-tc|c|   pc|hj|    tc|r|
+pc|s6|pc|s7|pc|st|pc|sk|
+pc|d6|pc|d2|pc|dq|pc|d3|tc|r|
+tc|c|pc|hj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bTranslation: |
 cp||at|^*iyour side has at least four Spade tricks ready to go plus the @hA.^*n|
-pg||
+pg| ***** 425 ***** |
 
 
 %% ============= Page  426
@@ -5933,15 +6098,16 @@ sk||
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|s6|pc|s7|pc|st|pc|sk|
-        pc|d6|pc|d2|pc|dq|pc|d3|    tc|r|
-tc|c|   pc|hj|    tc|r|
+pc|s6|pc|s7|pc|st|pc|sk|
+pc|d6|pc|d2|pc|dq|pc|d3|tc|r|
+tc|c|pc|hj|tc|r|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bTranslation: |
 cp|4|at|^*iyour side has at least four Spade tricks ready to go plus the @hA.^*n|
 at|^^|cp||at|^b|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bGrab the Ace and return the @sJ; don't let declarer steal her ninth trick right out from under you!|
-pc|ha|pg||
+pc|ha|
+pg| ***** 426 ***** |
 
 
 %% ============= Page  427
@@ -5953,11 +6119,11 @@ md|1S52kHkq8Dkt86Cak9,Saq936H543D752C84,S87Ht92jDaj4qCq62,Sj4tH76aD93Cjt753|
 ha||mb|1n|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3n|mb|p|mb|p|mb|p|
 sb|s|sb|w|sb|n|sb|e|
 wt|w|tc|c|   
-        pc|s6|pc|s7|pc|st|pc|sk|
-        pc|d6|pc|d2|pc|dq|pc|d3|    tc|r|
-tc|c|   pc|hj|pc|ha|    tc|r|
+pc|s6|pc|s7|pc|st|pc|sk|
+pc|d6|pc|d2|pc|dq|pc|d3|tc|r|
+tc|c|pc|hj|pc|ha|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bDeclarer faked the Diamond finesse and you caught him trying to steal one Heart trick, in another fake finesse, to go along with four Diamond tricks, three Club tricks and one Spade trick.|
-pg||
+pg| ***** 427 ***** |
 
 
 %% ============= Page  428
@@ -5968,7 +6134,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1,,,|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^b^*bTo be deceitful^*n|
-pg||
+pg| ***** 428 ***** |
 
 
 %% ============= Page  429
@@ -5983,7 +6149,7 @@ cp||at|^*bThe Cincinatti Kid^*n|
 cp||at|  remarks that 'the art of playing cards is making the wrong move at the right time.'|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bThis section is a good illustration of that.|
-pg||
+pg| ***** 429 ***** |
 
 
 %% ============= Page  430
@@ -5995,7 +6161,7 @@ md|1Skt764,Sa52,Sj83,Sq9|
 sk||
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bSometimes a hopeless 'death holding' in declarer's trump suit can be transformed by making the wrong' play.|
-pg||
+pg| ***** 430 ***** |
 
 
 %% ============= Page  431
@@ -6006,7 +6172,7 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Skt764,Sa52,Sj83,Sq9|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThere are many such positions, but here are a few examples involving honor-nine combinations that will illustrate the point.|
-pg||
+pg| ***** 431 ***** |
 
 
 %% ============= Page  432
@@ -6019,7 +6185,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bSuppose you hold a doubleton Q9 over dummy's J8x or 108x.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bWhen dummy leads low, play the Queen, not the nine!|
-pg||
+pg| ***** 432 ***** |
 
 
 %% ============= Page  433
@@ -6032,7 +6198,8 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp|4|at|^bSuppose you hold a doubleton Q9 over dummy's J8x or 108x.|
 at|^^|cp||at|^b|
 at|^^|cp|4|at|^bWhen dummy leads low, play the Queen, not the nine!|
-pc|s3|pc|sq|pc|sk|pg||
+pc|s3|pc|sq|pc|sk|
+pg| ***** 433 ***** |
 
 
 %% ============= Page  434
@@ -6042,9 +6209,10 @@ sv|0|pn|Declarer,Partner,Dummy,You|
 rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1St764k,Sa52,Sj83,S9q|
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s3|pc|sq|pc|sk|    tc|r|
+wt|n|tc|c|pc|s3|pc|sq|pc|sk|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bSurely declarer will play your partner for the A9xx, and finesse the eight into your nine.|
-pc|sa|pg||
+pc|sa|
+pg| ***** 434 ***** |
 
 
 %% ============= Page  435
@@ -6055,9 +6223,10 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1St764k,S52a,Sj83,S9q|
 sk||
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s3|pc|sq|pc|sk|    tc|r|    pc|sa|
+wt|n|tc|c|pc|s3|pc|sq|pc|sk|tc|r|pc|sa|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bSurely declarer will play your partner for the A9xx, and finesse the eight into your nine.|
-pc|s4|pc|s2|pc|s8|pg||
+pc|s4|pc|s2|pc|s8|
+pg| ***** 435 ***** |
 
 
 %% ============= Page  436
@@ -6068,12 +6237,13 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1St76k4,S5a2,Sj38,S9q|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|tc|c|   
-        pc|s3|pc|sq|pc|sk|pc|sa|    tc|r|
-tc|c|   pc|s4|pc|s2|pc|s8|    tc|r|
+pc|s3|pc|sq|pc|sk|pc|sa|tc|r|
+tc|c|pc|s4|pc|s2|pc|s8|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bYour side will take two Spade tricks, which was one more than you were going to make if you had played the nine originally.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bWhat a tricky defender!|
-pc|s9|pg||
+pc|s9|
+pg| ***** 436 ***** |
 
 
 %% ============= Page  437
@@ -6085,7 +6255,7 @@ md|1Skq764,Sa52,St83,Sj9|
 sk||
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bSimilarly, with a doubleton J9 over dummy's 108x, play the Jack on the first round.|
-pg||
+pg| ***** 437 ***** |
 
 
 %% ============= Page  438
@@ -6096,7 +6266,8 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Skq764,Sa52,St83,Sj9|
 ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp|4|at|^bSimilarly, with a doubleton J9 over dummy's 108x, play the Jack on the first round.|
-pc|s3|pc|sj|pc|sk|pc|sa|pg||
+pc|s3|pc|sj|pc|sk|pc|sa|
+pg| ***** 438 ***** |
 
 
 %% ============= Page  439
@@ -6107,11 +6278,11 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sq764k,S52a,St83,S9j|
 sk||
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s3|pc|sj|pc|sk|    tc|r|    pc|sa|
+wt|n|tc|c|pc|s3|pc|sj|pc|sk|tc|r|pc|sa|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bSimilarly, with a doubleton J9 over dummy's 108x, play the Jack on the first round.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bYou are virtually certain to score you nine on the second round.|
-pg||
+pg| ***** 439 ***** |
 
 
 %% ============= Page  440
@@ -6123,7 +6294,7 @@ md|1Skq74,S652,St83,Saj9|
 sk||
 ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp||at|^bThis is a little more elaborate, but basically the same position.|
-pg||
+pg| ***** 440 ***** |
 
 
 %% ============= Page  441
@@ -6136,7 +6307,7 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 at|^b@2|at|^z@3|ht|b|cp|4|at|^bThis is a little more elaborate, but basically the same position.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bWhether this is trumps or a side suit, play the @sJ when the @s3 is led.|
-pg||
+pg| ***** 441 ***** |
 
 
 %% ============= Page  442
@@ -6149,7 +6320,8 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp|4|at|^bThis is a little more elaborate, but basically the same position.|
 at|^^|cp||at|^b|
 at|^^|cp|4|at|^bWhether this is trumps or a side suit, play the @sJ when the @s3 is led.|
-pc|s3|pc|sj|pc|sk|pg||
+pc|s3|pc|sj|pc|sk|
+pg| ***** 442 ***** |
 
 
 %% ============= Page  443
@@ -6160,9 +6332,10 @@ rh||ah|Eddie Kantar|ah|Under the Gun|
 md|1Sq74k,S652,St83,Sa9j|
 sk||
 ha|y|sb|s|sb|w|sb|n|sb|e|
-wt|n|tc|c|   pc|s3|pc|sj|pc|sk|    tc|r|
+wt|n|tc|c|pc|s3|pc|sj|pc|sk|tc|r|
 at|^b@2|at|^z@3|ht|b|cp||at|^bIf the @sK and @sQ are split between declarer and partner (no matter who has which) your play hasn't cost; but if declarer has them both, I'll promise you that you are going to make that @s9.|
-pc|s2|pg||
+pc|s2|
+pg| ***** 443 ***** |
 
 
 %% ============= Page  444
@@ -6176,7 +6349,8 @@ ha|y|sb|s|sb|w|sb|n|sb|e|
 wt|n|at|^b@2|at|^z@3|ht|b|cp||at|^bYour Jack looks too much like a singleton.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bWhich would lead the declarer to believe this is the layout.|
-pc|s3|pc|sj|pc|sk|pc|s2|pg||
+pc|s3|pc|sj|pc|sk|pc|s2|
+pg| ***** 444 ***** |
 
 
 %% ============= Page  445
@@ -6185,7 +6359,7 @@ bt||
 cs|3|ht|b|fp|1|cp|1|at|^a^*b^-{     Key Ideas From Chapter 6     }^*n|fp||
 at|^^|fp|1|cp|1|at|^a^*b^-^*n|fp||
 at|^b@2|at|^z@3|cp||at|^bCover an honor with an honor only if there is a chance to promote something for yourself or your partner. If partner is known to be short, then only cover if you can promote something for yourself.|
-pg||
+pg| ***** 445 ***** |
 
 
 %% ============= Page  446
@@ -6196,7 +6370,7 @@ at|^^|fp|1|cp|1|at|^a^*b^-^*n|fp||
 at|^b@2|at|^z@3|cp|4|at|^bCover an honor with an honor only if there is a chance to promote something for yourself or your partner. If partner is known to be short, then only cover if you can promote something for yourself.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bCover the last of equal honors in the dummy. However, if you have a doubleton honor, cover the first of two equal honors.|
-pg||
+pg| ***** 446 ***** |
 
 
 %% ============= Page  447
@@ -6209,7 +6383,7 @@ at|^^|cp||at|^b|
 at|^^|cp|4|at|^bCover the last of equal honors in the dummy. However, if you have a doubleton honor, cover the first of two equal honors.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bWhen declarer leads a Queen or a Jack from the closed hand towards an Ace, and you have one higher honor, assume declarer has the next lower honor and do not cover.|
-pg||
+pg| ***** 447 ***** |
 
 
 %% ============= Page  448
@@ -6224,7 +6398,7 @@ at|^^|cp||at|^b|
 at|^^|cp|4|at|^bWhen declarer leads a Queen or a Jack from the closed hand towards an Ace, and you have one higher honor, assume declarer has the next lower honor and do not cover.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bBe alert to playing second hand high if you can:|
-pg||
+pg| ***** 448 ***** |
 
 
 %% ============= Page  449
@@ -6241,7 +6415,7 @@ at|^^|cp||at|^b|
 at|^^|cp|4|at|^bBe alert to playing second hand high if you can:|
 at|^^|cp||at|^b|
 at|^^|cp||at|^c-kill a long entry less side suit in dummy;|
-pg||
+pg| ***** 449 ***** |
 
 
 %% ============= Page  450
@@ -6260,7 +6434,7 @@ at|^^|cp||at|^b|
 at|^^|cp|4|at|^c-kill a long entry less side suit in dummy;|
 at|^^|cp||at|^b|
 at|^^|cp||at|^c-return partner's suit early in the hand at notrump;|
-pg||
+pg| ***** 450 ***** |
 
 
 %% ============= Page  451
@@ -6281,7 +6455,7 @@ at|^^|cp||at|^b|
 at|^^|cp|4|at|^c-return partner's suit early in the hand at notrump;|
 at|^^|cp||at|^b|
 at|^^|cp||at|^c-protect partner from becoming endplayed; |
-pg||
+pg| ***** 451 ***** |
 
 
 %% ============= Page  452
@@ -6304,7 +6478,7 @@ at|^^|cp||at|^b|
 at|^^|cp|4|at|^c-protect partner from becoming endplayed; |
 at|^^|cp||at|^b|
 at|^^|cp||at|^c-see that declarer is stealing when you have the setting trick;|
-pg||
+pg| ***** 452 ***** |
 
 
 %% ============= Page  453
@@ -6329,7 +6503,7 @@ at|^^|cp||at|^b|
 at|^^|cp|4|at|^c-see that declarer is stealing when you have the setting trick;|
 at|^^|cp||at|^b|
 at|^^|cp||at|^c-deceive declarer.|
-pg||
+pg| ***** 453 ***** |
 
 
 %% ============= Page  454
@@ -6358,7 +6532,7 @@ at|^^|cp||at|^b|
 at|^^|cp||at|^bThis concludes Chapter 6 of Modern Bridge Defense by Eddie Kantar.|
 at|^^|cp||at|^b|
 at|^^|cp||at|^bThe book concludes with Chapter 7 - Making the Winning Discard.|
-pg||
+pg| ***** 454 ***** |
 
 
 %% ============= Page  455
@@ -6387,4 +6561,6 @@ at|^^|cp||at|^b|
 at|^^|cp|4|at|^bThis concludes Chapter 6 of Modern Bridge Defense by Eddie Kantar.|
 at|^^|cp||at|^b|
 at|^^|cp|4|at|^bThe book concludes with Chapter 7 - Making the Winning Discard.|
-pg||
+pg| ***** 455 ***** |
+
+

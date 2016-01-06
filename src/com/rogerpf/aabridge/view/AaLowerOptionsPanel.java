@@ -10,22 +10,26 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.view;
 
-import java.awt.SystemColor;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.io.File;
+import java.io.IOException;
 import java.util.Hashtable;
 
 import javax.swing.BorderFactory;
+import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 import javax.swing.JSlider;
+import javax.swing.JTextField;
 import javax.swing.Timer;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import net.miginfocom.swing.MigLayout;
 
+import com.rogerpf.aabridge.controller.Aaa;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Cc;
 
@@ -35,6 +39,13 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 
 	private static final long serialVersionUID = 1L;
 
+	JLabel label;
+
+	JTextField tfSavesFolderDisplay;
+
+	QButton useDefaultSavesFolder;
+	QButton browseForSavesFolder;
+
 	QButton resetPrefs;
 	QCheckBox outlineCardEdge;
 	QCheckBox movieBidFlowDoesFlow;
@@ -43,16 +54,36 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 	JSlider bidSpeed;
 	JSlider playSpeed;
 	JSlider eotDelay;
-	JLabel label;
+
 	JLabel bidSpeelabel;
 
-	public AaLowerOptionsPanel() {
-		setBackground(SystemColor.control);
+	public void realSavesPathNowAvailable() {
+		tfSavesFolderDisplay.setText(App.realSavesPath);
+	}
 
-		setLayout(new MigLayout(App.simple + ", flowy", "push[][][]20[][][]", "1[][]"));
+	public AaLowerOptionsPanel() {
+		// setBackground(SystemColor.control); no don't use this
+
+		setLayout(new MigLayout(App.simple + ", flowy", "push[]35[]10[][][]20[][][]", "1[][]"));
+
+		add(label = new QLabel("Saves Folder"), "flowx, split3");
+		label.setForeground(Aaa.optionsTitleGreen);
+
+		add(useDefaultSavesFolder = new QButton(this, "Use Default"), "gapx 8");
+		if (App.onMac == false)
+			useDefaultSavesFolder.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
+
+		add(browseForSavesFolder = new QButton(this, "Choose"), "gapx 8");
+		browseForSavesFolder.setToolTipText("Lets you select a different  'Saves Folder'   -   on a MAC you need to type in the  'final folder'  name  ");
+		if (App.onMac == false)
+			browseForSavesFolder.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
+
+		add(tfSavesFolderDisplay = new JTextField((App.onMac ? 23 : 19)), "flowy, wrap");
+		tfSavesFolderDisplay.setEditable(false);
 
 		add(resetPrefs = new QButton(this, "Rst Colors"));
-		resetPrefs.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
+		if (App.onMac == false)
+			resetPrefs.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
 		resetPrefs.setToolTipText("Restore the default colors");
 
 		add(outlineCardEdge = new QCheckBox(this, App.outlineCardEdge, "Outline", "Outline the cards on the baize with white  "), "wrap");
@@ -140,6 +171,27 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 			App.colorTint = 0;
 			if (App.allConstructionComplete) {
 				colorIntensityDelayTimer.restart();
+			}
+		}
+		else if (e.getSource() == useDefaultSavesFolder) {
+			App.realSavesPath = App.defaultSavesPath;
+			tfSavesFolderDisplay.setText(App.realSavesPath);
+		}
+		else if (e.getSource() == browseForSavesFolder) {
+			JFileChooser fc = new JFileChooser();
+			fc.setCurrentDirectory(new java.io.File(App.realSavesPath)); // start at folder
+			fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+			int returnVal = fc.showSaveDialog(this);
+			if (returnVal == JFileChooser.APPROVE_OPTION) {
+				File yourFolder = fc.getSelectedFile();
+				if (yourFolder != null) {
+					try {
+						App.realSavesPath = yourFolder.getCanonicalPath() + File.separator;
+						tfSavesFolderDisplay.setText(App.realSavesPath);
+						yourFolder.mkdir();
+					} catch (IOException e1) {
+					}
+				}
 			}
 		}
 	}

@@ -23,31 +23,30 @@ import com.rogerpf.aabridge.model.Cc;
 
 /**
  */
-public class CommonCmdBar extends ClickPanel {
+public class CommonCmdBar extends ClickPanCbar {
 	// ---------------------------------- CLASS -------------------------------------
 	private static final long serialVersionUID = 1L;
 
-	JPanel c0 = new ClickPanel();
-	JPanel c1 = new ClickPanel();
-	JPanel c2 = new ClickPanel();
-	JPanel c3 = new ClickPanel();
-	JPanel c4 = new ClickPanel();
+	JPanel c0 = new ClickPanCbar();
+	JPanel c1 = new ClickPanCbar();
+	JPanel c2 = new ClickPanCbar();
+	JPanel c3 = new ClickPanCbar();
+	JPanel c4 = new ClickPanCbar();
 
 	//@formatter:off
-	public JPanel            T0_9__empt = new ClickPanel();
+	public JPanel            T0_9__empt = new ClickPanCbar();
 	public CommonBar0        T0_9__tbp0 = new CommonBar0();
 
-	public JPanel            T1_9__empt = new ClickPanel();
+	public JPanel            T1_9__empt = new ClickPanCbar();
 	public CommonBar1        T1_9__tbp1 = new CommonBar1();
 
-	public JPanel            T2_9__empt = new ClickPanel();
+	public JPanel            T2_9__empt = new ClickPanCbar();
 	public CommonBar2        T2_9__tbp2 = new CommonBar2();
 
-	public JPanel            T3_9__empt = new ClickPanel();
+	public JPanel            T3_9__empt = new ClickPanCbar();
 	public ReviewBar3        T3_9__rvb3 = new ReviewBar3();
-	public CommonBar3        T3_9__tbp3 = new CommonBar3();
 
-	public JPanel            T4_9__empt = new ClickPanel();
+	public JPanel            T4_9__empt = new ClickPanCbar();
 	public MovieModePart4    T4_9__movm = new MovieModePart4();
 	public CommonBar4        T4_9__tbp4 = new CommonBar4();
 
@@ -78,7 +77,6 @@ public class CommonCmdBar extends ClickPanel {
 		c3.setLayout(new MigLayout(App.simple + ", flowy", "", "[100%]"));
 		c3.add(T3_9__empt, App.hm3oneHun);
 		c3.add(T3_9__rvb3, App.hm3oneHun);
-		c3.add(T3_9__tbp3, App.hm3oneHun);
 
 		c4.setLayout(new MigLayout(App.simple + ", flowy", "", "[100%]"));
 		c4.add(T4_9__empt, App.hm3oneHun);
@@ -123,7 +121,6 @@ public class CommonCmdBar extends ClickPanel {
 
 		boolean S_vm = (App.visualMode == App.Vm_InsideADeal) || App.hideCommandBar;
 		boolean T_vm = !S_vm;
-		boolean T_vmComp = T_vm && !lin_virgin_or_single;
 		boolean deal_review = S_vm && App.isModeAnyReview();
 		
 		boolean deal_enterable = App.deal.isSaveable() && (App.visualMode == App.Vm_DealAndTutorial);
@@ -137,8 +134,7 @@ public class CommonCmdBar extends ClickPanel {
 		T2_9__empt.setVisible( !(T_vm || deal_review));
 		T2_9__tbp2.setVisible(  (T_vm || deal_review));
 
-		T3_9__empt.setVisible( !deal_review && !(App.showEdPyCmdBarBtns && T_vmComp && deal_enterable));
-		T3_9__tbp3.setVisible( !deal_review &&  (App.showEdPyCmdBarBtns && T_vmComp && deal_enterable));
+		T3_9__empt.setVisible( !deal_review );
 		T3_9__rvb3.setVisible(  deal_review );
 
 		T4_9__empt.setVisible(  lin_virgin_or_single         );
@@ -150,7 +146,7 @@ public class CommonCmdBar extends ClickPanel {
 
 /**   
  */
-class CommonBar0 extends ClickPanel {
+class CommonBar0 extends ClickPanCbar {
 	// ---------------------------------- CLASS -------------------------------------
 	private static final long serialVersionUID = 1L;
 
@@ -168,7 +164,7 @@ class CommonBar0 extends ClickPanel {
 
 /**   
  */
-class CommonBar1 extends ClickPanel {
+class CommonBar1 extends ClickPanCbar {
 	// ---------------------------------- CLASS -------------------------------------
 	private static final long serialVersionUID = 1L;
 
@@ -181,9 +177,9 @@ class CommonBar1 extends ClickPanel {
 		@SuppressWarnings("unused")
 		JButton b;
 
-		add(b = new RpfResizeButton(Aaa.s_Std, "tutorialBackOne", 15, 65));
+		add(b = new RpfResizeButton(Aaa.s_Std, "commonStepBack", 15, 65));
 
-		add(b = new RpfResizeButton(Aaa.s_Std, "tutorialStepFwd", 50, 70, 0.9f));
+		add(b = new RpfResizeButton(Aaa.s_Std, "commonStepFwd", 50, 70, 0.9f));
 
 		setVisible(false);
 	}
@@ -191,7 +187,7 @@ class CommonBar1 extends ClickPanel {
 
 /**   
  */
-class CommonBar2 extends ClickPanel {
+class CommonBar2 extends ClickPanCbar {
 	// ---------------------------------- CLASS -------------------------------------
 	private static final long serialVersionUID = 1L;
 
@@ -203,9 +199,9 @@ class CommonBar2 extends ClickPanel {
 		@SuppressWarnings("unused")
 		JButton b;
 
-		add(b = new RpfResizeButton(Aaa.s_Std, "tutorialBackOne", 15, 65));
+		add(b = new RpfResizeButton(Aaa.s_Std, "commonFlowBack", 15, 65));
 
-		add(b = new RpfResizeButton(Aaa.s_Std, "tutorialFlowFwd", 65, 75, 0.93f));
+		add(b = new RpfResizeButton(Aaa.s_Std, "commonFlowFwd", 65, 75, 0.93f));
 
 		setVisible(false);
 	}
@@ -213,7 +209,7 @@ class CommonBar2 extends ClickPanel {
 
 /**   
  */
-class ReviewBar3 extends ClickPanel {
+class ReviewBar3 extends ClickPanCbar {
 	// ---------------------------------- CLASS -------------------------------------
 	private static final long serialVersionUID = 1L;
 
@@ -227,8 +223,8 @@ class ReviewBar3 extends ClickPanel {
 		@SuppressWarnings("unused")
 		JButton b;
 
-		add(b = new RpfResizeButton(Aaa.s_Std, "reviewBackOneCard", 10, 55));
-		add(b = new RpfResizeButton(Aaa.s_Std, "reviewFwdOneCard", 10, 55));
+		add(b = new RpfResizeButton(Aaa.s_Std, "reviewBackOneCard", 12, 65));
+		add(b = new RpfResizeButton(Aaa.s_Std, "reviewFwdOneCard", 12, 65));
 
 		setVisible(false);
 	}
@@ -237,25 +233,7 @@ class ReviewBar3 extends ClickPanel {
 
 /**   
  */
-class CommonBar3 extends ClickPanel {
-	// ---------------------------------- CLASS -------------------------------------
-	private static final long serialVersionUID = 1L;
-
-	CommonBar3() { /* Constructor */
-		// =============================================================
-		setOpaque(false);
-		setLayout(new MigLayout(App.simple, "push[]3%[]3%", "push[]push"));
-
-		add(new RpfResizeButton(Aaa.s_Std, "tutorialIntoDealEdit", 16, 48, 0.77f));
-		add(new RpfResizeButton(Aaa.s_Std, "tutorialIntoDealPlay", 16, 48, 0.77f));
-
-		setVisible(false);
-	}
-}
-
-/**   
- */
-class MovieModePart4 extends ClickPanel {
+class MovieModePart4 extends ClickPanCbar {
 	// ---------------------------------- CLASS -------------------------------------
 	private static final long serialVersionUID = 1L;
 
@@ -266,7 +244,7 @@ class MovieModePart4 extends ClickPanel {
 
 		JButton b;
 
-		b = new RpfResizeButton(Aaa.s_Std, "tutorialBackToMovie", 95, 70, 0.75f);
+		b = new RpfResizeButton(Aaa.s_Std, "dealmodeBackToMovie", 95, 70, 0.75f);
 		add(b);
 
 		setVisible(false);
@@ -275,7 +253,7 @@ class MovieModePart4 extends ClickPanel {
 
 /**   
  */
-class CommonBar4 extends ClickPanel {
+class CommonBar4 extends ClickPanCbar {
 	// ---------------------------------- CLASS -------------------------------------
 	private static final long serialVersionUID = 1L;
 

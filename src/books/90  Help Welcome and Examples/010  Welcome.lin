@@ -1,111 +1,86 @@
 %% Help - Welcome
-%% Last edited  2013 Dec 03
+%% Last edited  2015  Oct 30
 %%%% by Roger Pfister
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-fh|150|ff|1Arial|fb|15|fm|1|       1 large
-fh|342|ff|3Arial|fb|35|fm|3|       2 med+
-fh|730|ff|7Arial|fb|75|fm|7|       7
-fh|836|ff|8Arial|fb|85|fm|8|       8 med  greater than 4 as it is in the 30 - 39 zone
-fh|925|ff|9Arial|fb|90|fm|9|       9 very small for faking 'buttons'
 
+fh|150|fb|15|                1  large
+fh|240|fb|25|                2
+fh|342|fb|35|                3  med+
+fh|836|fb|85|                8  med  greater than 4 as it is in the 30 - 39 zone
+fh|s24|                      s  the word updated
+fh|v28|                      v  the little video button
+
+cr|2200|cg|2060|cb|2255|     2  purple
 cr|3200|cg|3255|cb|3255|     3  light blue
-cr|4170|cg|4190|cb|4255|     4  med blue
-cr|516|cg|5128|cb|516|       5  green 
-cr|7230|cg|70|cb|70|         7  red
+cr|4170|cg|4190|cb|4255|     4  medium blue
+cr|5016|cg|5128|cb|5016|     5  green 
 
 bt||
-tu|y|
-mn|   Welcome to    -    aaBridge  3.0  |
+
 qx|Welc|
-fp|1|at|
+mn|   Welcome to    -    aaBridge  3.1  |
 
-^a   @s @h @d @c  ^v     @c @d @h @s|
-fp|9|
-ht|d|
-at|^^|fp||at|
-^d        Click one of the buttons
-     ^j      @-  |fp|1|at|^*bOR^*n|fp||at|  @-|
-at|
-@0@1^o  @2^y@3|
-ht|c|fp|9|at|^^ ^^ ^^|cs|3|fp|8|at|
- ^-{ ^*h https://www.youtube.com/channel/UCjqx0Cofc7-TT-N0tfYR8rg/videos?flow=grid&view=0 ^*n aaBridge on YouTube ^*x|at|
-} ^-  |fp|4|at|
-|cs|4|
+fp|1|at|^^^^^a   @s @h @d @c  ^v     @c @d @h @s|  suit symbols around the  MN  header         
 
-at|
-@0@1^w   @2^z@3
-|
-|fp|4|at|
-|cs|4|
+ht|f|n#|0|fp||at|^d    Click one of the buttons|     
+ht|f|n#|0|cs|3|fp|8|at|^p{ ^*h https://www.youtube.com/channel/UCjqx0Cofc7-TT-N0tfYR8rg/videos?flow=grid&view=0^*n aaBridge on YouTube ^*x }|
+
+ht|g|n#|0|at|^j      @-  |fp|1|at|^*bOR^*n|fp||at|  @-|
 
 
-ht|f|cs|3|at|^c@2^j@3
-|
-ht|g|at||
-  |fp|9|at| 
- ^- { 
-|fp|1|at|^*f playBridge_and_dealChoice,    Play Bridge   ^*n
-|fp||at|^*f playBridge_and_dealChoice, and show Deal Choices^*n
-} ^-  |fp|9|at| 
- ^- { 
- |fp|1|at|^*f playBridge_playBridge,   Play Bridge   ^*n|at|
-} ^-|fp|9|cs|4|at|
-|fp||at| ^-{ ^*f playBridge_distrFlashCards, Distribution Flash Cards ^*n|at|
-} ^-  |fp|9|cs|4|at|
- ^- { 
-|fp|1|at|^*f open_random_lin_file, Random Lin ^*n|fp|||at|
-|fp||at|^*f open_random_lin_file,  open that Bridge Movie   ^*n
-} ^-
-|cs|3|fp||at| 
-^- { |fp||at|^*f showRedHintsOpts, Show  Red Hints  options ^*n
-} ^-|
-fp||at| 
-^- { |fp||at|^*f tutorial_idealSize,     Ideal Size     ^*n|fp|||at|
-|fp||at|^*f tutorial_idealSize,  set ideal size and layout   ^*n
-} ^- |
-fp||at|
-^- { |fp||at|^*f tutorial_idealSize_noExtra,   set ideal size, no extra    ^*n
-} ^- |
-|
-ht|o|at|@0@1^i|cp|7||fp|7|at|^*b     *Try it^*n@2 |fp|4|cp||
-ht|q|at|@0@1^i|cp|7||fp|8|at|^*b    *Try it^*n@2 |fp|4|cp||
 
-ht|l|fp|9|at|^^ ^^
-@0@1^d   @3|fp|9|cs|4|at| ^-{ ^*hhttps://www.youtube.com/watch?v=8xWEyuyViF8^*nvideo^*x|at|
-} ^-  |fp|9|cs|4|at|
-|
+at|^d@2| %% sets the left edge of the LEFT hand column
 
-at|
-@0@1^m@2
-|ht|g|fp||
-at|
+   
+ht|i|n^|0|fp|1|cs|3|at|{ |n#|1|at|^*f playBridge_and_dealChoice,   Play Bridge^*n|
+fp||at|^^^*f playBridge_and_dealChoice,  |n#|2|at|and show Deal Choices ^*n|at|^^} |
 
- Use any |cp|7||fp|3|at| ^*b^*uB^*n^*books^*n |fp||cp||at| menu drop-down above to select a book.
+ht|m|n^|8|fp|1|cs|3|at|{ |n#|1|at|^*f playBridge_playBridge,   Play Bridge   ^*n|at|^^}|
+
+ht|p|n#|1|fp|v|cs|4|at|^b  { ^*hhttps://www.youtube.com/watch?v=8xWEyuyViF8^*nvideo^*x^^}|
+ht|p|n#|0|fp|0|cs|4|at|{ |n#|2|at|^*f openPage_distrFlashCards, Distribution Flash Cards ^*n|n#|1|at|^^}|
+
+ht|r|n#|8|fp|1|cs|4|at|{ |n#|1|at|^*f open_random_lin_file,  Random Lin^*n|
+fp||at|^^^*f open_random_lin_file,   |n#|2|at|open that Bridge Movie ^*n^^}|
+
+ht|r-|n#|5|fp|8|cp|red|at|^j^*b*Try it^*n@2 |fp|4|cp||
+
+ht|w|n#|0|fp||cs|3|at|^c{ |n#|2|at|^*f openPage_DefendExpert,  How to  -  Defend like an Expert  ^*n|n#|1|at|^^}|
 
 
- Use the |fp|8|at| ^*b^*uF^*n^*bile^*n |fp||at| menu drop-down above to open your
-^o^*bSaves^*n folder and   ^*bdrag n drop^*n   a file from there.
+
+
+
+at|^m    @2|  %% sets the left edge of the  RIGHT  hand column
+
+
+ht|i|n^|0|fp||at|Use any |cp|red|fp|3|at| ^*b^*uB^*n^*books^*n |fp||cp||at| menu above to select a book.|
+
+
+ht|k|n#|1|at|Use the |fp|8|at|^*b^*uF^*n^*bile^*n |fp||at| menu drop-down above to open your
+^o^*bSaves^*n folder and   ^*bdrag n drop^*n   a file from there.|
 			  
 
-|fp|8|at| ^*bDrag n Drop^*n|fp||at|   group of, any single, or a folder containing
-^o|cp|5|at|^*b.lin^*n|cp||at| files, they will open.     Also any |cp|5|at|^*b.zip^*n|cp||at| or |cp|5|at|^*b.linzip^*n|cp||at| file.|
-fp|9|at|
-^t(Windows users can ^*bdbl-click^*n)
+ht|n|n#|2||fp|8|at|^*bDrag n Drop^*n|fp||at|   group of, any single, or a folder containing
+^o|n#|1|cp|5|at|^*b.lin^*n|cp||at| files, they will open.     Also any |cp|5|at|^*b.zip^*n|cp||at| or |cp|5|at|^*b.linzip^*n|cp||at| file.
+^s|n^|1|fh|w26|fp|v|at|(Windows users can ^*bdbl-click^*n)|
 
 			  
-|fp|8|at| ^*bClick^*n |fp||at|on any of the  |fp|8|at|^*bHelp^*n|fp||at|  or  |fp|8|at|^*bExample^*n|fp||at|  files you can
-^osee listed in the tall gray column on your left.
+ht|q|n#|9|fp|8|at|^*bClick^*n |fp||at|on any of the  |fp|8|at|^*bHelp^*n|fp||at|  or  |fp|8|at|^*bExample^*n|fp||at|  files you can
+^o|n#|2|at|see listed in the tall gray column on your left.|
 
 
-|fp||at| Use the  ^*bShow  Red Hints  options^*n  button opposite to
-^o turn  on / |cp|7|at|^*boff^*n|cp||at|  any particular  |cp|7|at|^*bRed Arrow^*n|cp||at|  hint.
+ht|u|n#|0|fp|8|cs||at|^*bClick|fp||cs|lg|at|  on   { ^*fshowRedHintsOpts, Show  Red Hints  options^*n }   to turn  ^*bon / off^*b
+^o|n#|2|at|any particular  |cp|red|cs||at|^*bRed Arrow^*n|cp||at|  hint.|
 
 
-|fp|9|at|^rSee - ^*h http://musingsonbridge.blogspot.com/2014/06/deep-finesse-to-from-aabridge.html ^*n Deep Finesse & aaBridge ^*x |
-cp||at|*Win Only|cp||fp||
+ht|x|n#|7||fp|8|cp|2|at|   Includes Bo Haglund's Double Dummy Solver|fp||cp||
 
-ht|y|at|^^^^^^@0@1|cp|7||fp|3|at|^hNew user ? |fp||at|   click    ^*bFlow  >^*n@2|fp||cp||
+
+at|@0@1|
+ht|y|at|^^^^^^@0@1|cp|red|fp|3|at|^hNew user ? |fp||at|   click    ^*bFlow  >^*n@2|fp||cp||
 
 
 ht|z|at|@0
-^r Roger Pfister   -   December 2013|
+^q Roger Pfister     |fp|s|at|updated|fp||at|   January  2016
+|

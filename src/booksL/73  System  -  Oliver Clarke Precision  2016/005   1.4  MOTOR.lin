@@ -1,0 +1,1719 @@
+%%
+%%
+%% <--SECT_HEAD-->=Chapter 1.4         1@h and 1@S  -  (X)   MOTOR 
+%%
+%%
+%%  Date last Edited    2015-02-28          set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   aaBridge players are screened just before the first  'pg'
+%%
+
+fh|t40|                    Font   t  t-title      section titles within chapters
+fh|b50|                    Font   b  b-bigTitle
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  OLD STYLE  position adjustment 
+
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|y198|cg|y205|cb|y229|   fill   y  y-chapterGray    on Title Pages
+cr|p000|cg|p095|cb|p169|   fill   p  p-precisionBlue  on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|p-precisionBlue|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Oliver Clarke Precision       -       Simple System  ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|y-chapterGray|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bChapter 1.4         1@h and 1@S  -  (X)   MOTOR ^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+
+qx|1.4|
+ht|i|fp|z|at|^^|
+fp|t-title|at|^d@2^z@3|
+at|
+^*gGS,1@h  and 1@S  -  (X)   MOTOR            Graphical Summary^*n|
+fp|t-title|at|
+
+^*gOliv,Oliver's class on    MOTOR    Starts HERE^*n|fp||cp|red|at|^r<<< First time ?  Click title|fp||cp||at|
+
+^*gTn3N, Transfer to New Suit, Rebid 3 NT^*n
+
+^*gTnSs, Transfer to New Suit, Rebid Simple Suit^*n
+
+^*gTnSO, Transfer to New Suit, Support Openers Major^*n
+
+^*gTOBG, Transfer to Openers Major, then Bid Game in the Major^*n
+
+^*gTOJS, Transfer to Openers Major, then Jump Shift into a New Suit^*n
+
+
+^*gPrac, Practice Hands^*n
+
+|
+fp||ht|x|at|^b@2@1|at|
+
+^*bClick^*n  -   one of the above  ^hor    in the  NavBar  ^mor      use your   mouse wheel|
+ht|z|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+%%
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2814|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2814 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+qx|GS,hide|
+mn|MOTOR  Responses after  1H and 1S (X)|
+tu|y|
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts       ^g {@H}|cs||at|
+|cs|e|at|Spades  ^f        {@S}|cs||at|
+|cp||fp||at|^e@2
+After an opening bid of  1@H  or  1@S  is doubled (X) by the immediate opponent
+|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^g      (X)|
+ht|j|fp|z|at|^^^^^^^^^^|fp|    |at|^h     (X)|
+pg| ***** 1 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts       ^g {@H}|cs||at|@S N @C@D@H@S N @C@D@H@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs||at| N @C@D@H@S N @C@D@H@S N @C@D@H@S
+|cp||fp||at|^e@2
+all direct responses have agreed meanings
+|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^g      (X)|
+ht|j|fp|z|at|^^^^^^^^^^|fp|    |at|^h     (X)|
+pg| ***** 2 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts       ^g {@H}|cs||at|@S N @C@D@H@S N @C@D@H@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs||at| N @C@D@H@S N @C@D@H@S N @C@D@H@S
+|cp||fp||at|^e@2
+^*bXX   Re-Dbl^*n  much as standard.|
+at|^^^^
+Ideally 12+
+
+At most a doubleton in partners major.
+
+As a misfit is highly likely it is penalty orientated.
+|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^g      (X)|
+ht|j|fp|z|at|^^^^^^^^^^|fp|    |at|^h     (X)|
+pg| ***** 3 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts       ^g {@H}|cs|f|cs||at|{@S} N @C@D@H@S N @C@D@H@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|f|cs|  |at| N @C@D@H@S N @C@D@H@S N @C@D@H@S
+|cp||fp||at|^e@2
+One spade (over one heart) is the same as if the double had not happened.    4+ spades.
+|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^g      (X)|
+ht|j|fp|z|at|^^^^^^^^^^|fp|    |at|^h     (X)|
+pg| ***** 4 ***** |
+
+
+nt|^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts       ^g {@H}|cs|f|at|{@S}|cs||at|{ N }|cs||at|{@C}@D@H@S N @C@D@H@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|           |at|{ N }|cs||at|{@C@D}@H@S N @C@D@H@S N @C@D@H@S
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^g      (X)|
+ht|j|fp|z|at|^^^^^^^^^^|fp|    |at|^h     (X)|
+
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^i    @c    @d|
+ht|j|fp|z|at|^^^^^^^^^^^^|fp|    |at|^i    @c    @d   @h|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|Transfer  to the suit above  (excluding to Openers Major)|
+pg| ***** 5 ***** |
+
+
+at|    with   |cp|red|at|^*bHx^*n|cp||at|   support (max)  Responder shows - 
+^^
+Weak 6+ cards by, passing the transfer.  If spades, then a rebid of 2S is drop dead.
+
+Raise to the 3 level (after xfer) shows single suited hand, invitational.  Max 2 of Openers major.
+
+3N after xfer, shows 6 card RUNNING suit and stops outside but shortage in Openers major.
+
+Jump rebid to 4 after xfer, game going single suited with shortage ELSEWHERE than in Openers major.
+
+Rebid another suit (after xfer) is invitation (10-12) 2 suited hand 5-5 with NO support for Openers major.
+
+Jump rebid another suit (after xfer) is as above but game going.
+
+With spades as one of the two 5-5 suits bid that first then jump shift.
+|
+pg| ***** 6 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts       ^g {@H}|cs|f|at|{@S}|cs||at|{ N }|cs||at|{@C}@D@H@S N @C@D@H@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|           |at|{ N }|cs||at|{@C@D}@H@S N @C@D@H@S N @C@D@H@S
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^g      (X)|
+ht|j|fp|z|at|^^^^^^^^^^|fp|    |at|^h     (X)|
+
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^i    @c    @d|
+ht|j|fp|z|at|^^^^^^^^^^^^|fp|    |at|^i    @c    @d   @h|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^cTransfer  to the suit above  (excluding to Openers Major) |
+pg| ***** 7 ***** |
+
+
+at|    with   |cp|red|at|^*bxxx^*n|cp||at|   support or better   Responder  -
+^^
+Supports the major on the next round.  This shows 2nd round control in the transfer suit as both a game try and lead suggestion should we defend we defend.  Applies when major is rebid at whatever level (2, 3, and 4).
+
+The above transfer sequence suggests more points than would be shown by a mini splinter.
+
+Opener with a fit for the transfer suit can always compete as Responder will either have the tranfer suit OR will have support for Openers major which can be returned to at the same level.
+|
+pg| ***** 8 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts       ^g {@H}|cs|f|at|{@S}|cs|f|at|{ N }|cs|f|at|{@C}|cs||at|{@D}@H@S N @C@D@H@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|f           |at|{ N }|cs|f|at|{@C@D}|cs||at|{@H}@S N @C@D@H@S N @C@D@H@S
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^g      (X)|
+ht|j|fp|z|at|^^^^^^^^^^|fp|    |at|^h     (X)|
+
+ht|f|fp|z|at|^^^^^^^^^^^^^^|fp||at|^k  @h|
+ht|j|fp|z|at|^^^^^^^^^^^^|fp|    |at|^k         @s|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|Transfer  to  Openers Major|
+pg| ***** 9 ***** |
+
+
+at|^k after Opener ^*b completes the transfer ^*n   -|
+at|^^^^^^Pass: shows a 2-level limit raise of Opener's Major.
+
+3M  A solid invitational raise in Opener's Major which will always be balanced and possibly short on controls (otherwise responder would normally transfer to a feature suit before supporting Hearts)
+
+New Suit: Game forcing in Opener's Major with a decent side-suit (eg: like a delayed game raise). This is a mild slam try and Opener should cue-bid immediately with a suitable fit and a maximum hand
+
+4M  The "power" raise, as such is also a mild Slam Try, but lacking a long side-suit or a shortage.
+
+Jump-Shift: Strongly slam-invitational in Openers's Major with a good side suit and good controls. Opener should always cue-bid unless they are minimum with an unsuitable hand. |
+pg| ***** 10 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts       ^g {@H}|cs|f|at|{@S}{ N }{@C@D}|cs||at|{@H}@S N @C@D@H@S N @C@D@H@
+|cs|e|at|Spades  ^f        {@S}|cs|f  |at|{ N }{@C@D@H}|cs||at|{@S} N @C@D@H@S N @C@D@H@S
+|cp||fp||at|^e@2
+Direct raise to   2 of the Major.   0-7,  Pre-emptive in nature,  3+ card support.
+|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^g      (X)|
+ht|j|fp|z|at|^^^^^^^^^^|fp|    |at|^h     (X)|
+pg| ***** 11 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts     ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H}|cs||at|{@S} N @C@D@H@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|f|at|{ N }{@C@D@H@S}|cs||at|{ N }@C@D@H@S N @C@D@H@S
+|cp||fp||at|^e@2
+Mini splinter requests   (may I make one ?)
+|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^g      (X)|
+ht|j|fp|z|at|^^^^^^^^^^|fp|    |at|^h     (X)|
+pg| ***** 12 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts          ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H@S}|cs||at|{ N }{@C@D}@H@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|f     |at|{ N }{@C@D@H@S}{ N }|cs||at|{@C@D@H}@S N @C@D@H@S
+|cp||fp||at|^e@2
+Fit Showing Jump Shift (FSJS).     In hearts  2N  shows the heart fit and spades.
+|
+ht|f|fp|z|at|^^^^^^^^^^^^^^|fp||at|^n@s|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^g      (X)|
+ht|j|fp|z|at|^^^^^^^^^^|fp|    |at|^h     (X)|
+pg| ***** 13 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts         ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H@S}{ N }{@C@D}|cs||at|{@H}@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|f    |at|{ N }{@C@D@H@S}{ N }{@C@D@H}|cs||at|{@S} N @C@D@H@S
+|cp||fp||at|^e@2
+Direct raise to 3 of the major.    Pre-emptive in nature   4+ card support.|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^g      (X)|
+ht|j|fp|z|at|^^^^^^^^^^|fp|    |at|^h     (X)|
+pg| ***** 14 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts          ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H@S}{ N }{@C@D@H}|cs|f|cs||at|{@S} N {@C@D}@H
+|cs|e|at|Spades  ^f        {@S}|cs|f     |at|{ N }{@C@D@H@S}{ N }{@C@D@H@S} N |cs||at|{@C@D@H}@S
+|cp||fp||at|^e@2
+Full Splinter   Double Jump Shift   to the suit  BELOW  the shortage.|
+fp||at|^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^g      (X)|
+ht|j|fp|z|at|^^^^^^^^^^|fp|    |at|^h     (X)|
+
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^q   @c  ^s   @d   @s|
+ht|j|fp|z|at|^^^^^^^^^^^^|fp|    |at|         ^s   @d   @h   @c|
+ht|m|
+pg| ***** 15 ***** |
+
+
+at|^^^^
+Rarely used, especially when asking bids are available.
+
+Agree Openers major.
+
+Slam try.
+
+Strong hand normally 16+.
+
+Singleton or void (shortage) in the target suit.|
+pg| ***** 16 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts         ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H@S}{ N }{@C@D@H@S}|cs||at|{ N }|cs|f|at|{@C@D}@H
+|cs|e|at|Spades  ^f        {@S}|cs|f    |at|{ N }{@C@D@H@S}{ N }{@C@D@H@S}|cs||at|{ N }|cs|f|at|{@C@D@H}@S
+|cp||fp||at|^e@2
+3N  direct    very rare bid.|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^g      (X)|
+ht|j|fp|z|at|^^^^^^^^^^|fp|    |at|^h     (X)|cp||
+at|^e@2|  
+ht|m|
+pg| ***** 17 ***** |
+
+
+at|^^^^
+13+ balanced, 3 card support only.
+
+Shape will be   4333  or  4432   with only 3 trumps.
+
+Max 2 controls (often 0 or 1).|
+pg| ***** 18 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts         ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H@S}{ N }{@C@D@H@S}{ N }{@C@D}|cs||at|{@H}
+|cs|e|at|Spades  ^f        {@S}|cs|f    |at|{ N }{@C@D@H@S}{ N }{@C@D@H@S}{ N }{@C@D@H}|cs||at|{@S}
+|cp||fp||at|^e@2
+Direct raise to 4 of the major.|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^g      (X)|
+ht|j|fp|z|at|^^^^^^^^^^|fp|    |at|^h     (X)|
+ht|m|
+at|^^^^
+|
+pg| ***** 19 ***** |
+
+
+at|Pre-emptive in nature
+
+5+ card support.
+
+May well have a good expectation to make.
+
+Absolutely no slam interest opposite a maximum.
+|
+pg| ***** 20 ***** |
+
+
+ht|z|
+at|^bEnd|
+
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,wide|
+nt|^b@2^z@3|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|y-chapterGray|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class       1 @h and 1 @S - (X)  MOTOR ^*n^-^^|cs||fp||cp||at|^^|
+ht|f|
+cp|red|at|^*bOliverC:^*n|cp||at|  Hi Everyone and welcome to today's Precision Club session, in which we'll continue our look at the Precision 1@H & 1@S Openings & Responses.
+
+Last week we covered Romex Trial Bids.  This week we're getting a little more adventurous and will be looking at how we proceed when Opps double our 1@H or 1@S Opening for takeout.
+
+If you have not already done so, please have a look at the notes I have prepared on Precision Club bidding.  You can find these on: ^*hhttp://bbo.pigpen.org.uk^*n.
+
+You might want to have these onscreen in the background for reference during the session.  The notes on Major Suit Openings can be found on the 1@H and 1@S pages. 
+
+
+|fp|t-title|at|M O T O R|fp||at|
+
+MOTOR  @-  Major, Opponents TakeOut, Responses  @-  as coined by DianaS,  is a scheme of responses we use when Opps double our 1@H or 1@S Opening for takeout.  
+
+The key factor here is that we use TRANSFERS and this gives us enormous flexibility to show differing hands types, particularly when we have one of
+
+^d@2@.   trump support for partner
+
+@.   an invitational or strong single-suited hand 
+
+@.   2-suited hand WITHOUT support for partner's Major 
+
+
+|
+pg| ***** 21 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  MOTOR applies when the bidding starts  1@H - (X) - ??   ^*bOR^*n   1@S - (X) - ??  and ONLY in those situations.
+
+It does  ^*bNOT^*n  apply when:
+^c@2@.  the bidding goes                  1@H - (No) - No - (X) - ??     ^*bOR^*n     1@S - (No) - No - (X) - ??
+@.  partner has OVERCALLED  1@H  or  1@S  and RHO has made a negative double  eg:     (1@D) - 1@S - (X) - ??
+@.  after a sequence such as    1@D - 1@H - (X) - ??
+   
+^b@2The key to MOTOR is that in the situation  
+^c 1@H - (X) - ??    ^*bOR^*n    
+^c 1@S - (X) - ??       
+all the bids from 1NT up to and including the suit BELOW partner's Major are  ^*bTRANSFERS^*n  so: 
+^c@2
+1NT ^d  is a transfer to Clubs
+2@C ^d  is a transfer to Diamonds
+2@D ^d  is a transfer to Hearts
+2@H ^d  after 1@S - (X),  is a transfer to Spades
+
+^b@2This gains us a huge advantage in exactly the same way that transfers gain us a big advantage when partner has opened 1NT.
+
+This is because when partner completes the transfer we are free to bid again, which allows us to show lots of different hand - types that would otherwise be awkward or impossible to show with any certainty.
+
+This, by the way, is NOT a Precision only gadget.  It can be applied to any system.
+
+If you watch vugraph presentations regularly on BBO, you may well have noticed that many top pairs use systems like MOTOR (and some in more places than we do) because it is such a neat idea and it really works to your advantage.
+
+Ok, that's it for a general introduction to the concept.  Now is the time to take those aspirin, because we're about to get to specific sequences and this does get a little complicated, although wherever possible I will reduce it to simple general rules.
+|
+pg| ***** 22 ***** |
+
+
+xx|DrRs|
+nt|^b@2^z@3|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Ok, let's deal with direct raises of partner's suit first.
+^^^^
+|fp|t-title|at|Direct Raises of Partners Suit|fp||at|
+
+These are ALWAYS pre-emptive in nature and based on shape and trump support.
+
+Even a pre-emptive raise to game level in Partner's Major is NOT showing a strong hand, but probably one with 5-card trump support and an essentially weak hand (probably less than a 10-count).
+
+So   1@S - (X) - 2@S and 1@H - (X) - 2@H   are pretty much the weakest bids you can make (apart from Pass, of course LOL).  They are simply showing some support for Partner's Major and trying to make life a little more difficult for the Opponents.
+
+Similarly   1@S - (X) - 3@S   and   1@H - (X) - 3@H   are NOT strong bids and are NOT in any way invitational.
+
+They are simply obstructive, pre-emptive raises showing a weak hand with decent (probably 4-card or better) trump support and probably (but not always) with a shortage somewhere.
+
+Lastly   1@H - (X) - 4@H   and   1@S - (X) - 4@S   might well be an advance sacrifice (ie: not bid with ANY prospect that 4@H or 4@S will MAKE) but simply a means to make it difficult or impossible for Opps to reach a game themselves.
+
+Of course, this bid can ALSO be made with a hand that DOES expect to make (eg: 5-card trump support, a shortage and/or another decent side - suit) but these are still NORMALLY showing essentially WEAK hands.|
+pg| ***** 23 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 1,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 1|sv|n|sk|e|sk||
+md|4,SJ97532H2D2CT9832,,SAK864HT83DA873C6|
+mb|?|
+nt|^b@2^z@3|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 1     |
+pg| ***** 24 ***** |
+
+
+mb|1S|an|5+ @S, 11-15 hcp|
+pg| ***** 25 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 26 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 27 ***** |
+
+
+mb|4S|
+at|4@s may well buy the contract, but even 5@S is a good sac, 5@S probably making, of course. :)|
+pg| ***** 28 ***** |
+
+
+xx|RDbl|
+bt||
+nt|^b@2^z@3|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Redouble is treated exactly as in other systems.
+
+1@H - (X) - XX   and   1@S - (X) - XX   show a strong (12+) hand that is mainly interested in taking a penalty from Opps.
+
+A classic redouble will hold something like Hx in Partner's Major (ie: a decent tolerance, but NOT "good" support) and good values elsewhere.
+
+The idea of the redouble is that it forces Opps to bid something, since 1@HXX and 1@SXX are both a game if made.
+
+If you have good support for Partner's Major you want to make it more difficult for them to bid rather than persuading them to do so.
+
+Similarly with a SHORTAGE in partner's Major, redouble can be a risky strategy in case Partner is weak and your LHO is sitting there with AKxxxx in partner's Major!
+
+If you redouble then normally partner is expected to co-operate by not bidding (except to double) if your LHO bids and definitely NOT to bid if your LHO passes.
+
+If they DO bid it carries a definite message that they have a very distributional hand that is unsuited to defence (usually a 5+ 5+  2-suiter).
+
+You can work out your own methods once you redouble in this situation.
+
+My preference is that 2nd-in-hand Doubles with a weakness or shortage in a suit Opps bid and this can be passed out for penalties if partner has a decent holding.
+
+A pass by 2nd-in-hand over a suit bid by Opps, therefore, will show a decent holding in that suit.
+|
+pg| ***** 29 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 2,thin|
+st||
+nt|^b@2^z@3|
+pn|South,West,North,East|rh||ah|Teach 2|sv|e|sk|s|sk||
+%% 1SKJT74HT5DKJ9CKT5,S5HAQ86DQ732CAJ94,SA6HKJ97DAT84CQ32,SQ9832H432D65C876
+md|1SKJT74HT5DKJ9CKT5,,SA6HKJ97DAT84CQ32,|
+at|^^|
+mb|?|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 2       |
+pg| ***** 30 ***** |
+
+
+mb|1S|an|5+ @S, 11-15 hcp|
+pg| ***** 31 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 32 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 33 ***** |
+
+
+mb|r|
+pg| ***** 34 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 35 ***** |
+
+
+mb|p|
+pg| ***** 36 ***** |
+
+
+sj|L|
+md|0,S5HAQ86DQ732CAJ94|
+mb|?|
+at|Whatever West bids now, they're stuffed.   So no difference from "the norm" here.
+|
+pg| ***** 37 ***** |
+
+
+at|^^
+Ok, that covers the simple stuff (no real difference from other systems yet).  
+^^Now let's move onto the specific MOTOR sequences that really make a difference.   All taken your pain - killers?   LOL
+|
+pg| ***** 38 ***** |
+
+
+bt||
+nt|^b@2^z@3|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  As I mentioned earlier, if you're playing MOTOR the bids from 1NT up to and including the suit BELOW Opener's Major are all transfer bids, asking partner to bid the next suit up.
+
+Rebids in the same suit, No Trumps and in a new suit are fairly natural from that point on: 
+
+So over a 1@H opening and X,     ^j@21NT  ->  2@C
+2@C   ->  2@D
+2@D   ->  2@H 
+
+^b1@S opening and X, ^j1NT  ->  2@C
+2@C   ->  2@D
+2@D   ->  2@H
+2@H   ->  2@S 
+^b@2
+Over 1@H - (X) -  then  1@S  is just a natural bid, forcing for one round.
+^^^^|
+pg| ***** 39 ***** |
+
+
+qx|Weak,wide|
+fp|t-title|at|Weak Hand Simple Transfer|fp||at|
+
+With a weak hand, no tolerance for Opener's Major and a long (6+) suit of their own, Responder simply transfers to their suit and then passes.
+
+If Spades is the suit, then they simply bid 1@S (which is a simple 1 - round force showing 4+ Spades) and rebid 2@S, which is "drop dead".
+
+Transferring to a new suit and then raising the suit to the 3 - level (or jump - rebidding Spades) shows an invitational single-suited hand.
+
+As before Responder will have AT MOST a tolerance for Opener's Major. Hands with 3-card support for Opener's Major go a different route. 
+|
+pg| ***** 40 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 3,thin|
+st||
+nt|^b@2^z@3|
+pn|South,West,North,East|rh||ah|Teach 3|sv|e|sk|n|sk||
+%% 2S8HT98DT7CAQT9854,SQ5432HK72DQ982C2,SAKJT9HQ65DA54C73,S76HAJ43DKJ63CKJ6
+md|2S8HT98DT7CAQT9854,,SAKJT9HQ65DA54C73,|
+at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 3|
+mb|p?|
+pg| ***** 41 ***** |
+
+
+mb|1S|
+pg| ***** 42 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 43 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 44 ***** |
+
+
+mb|1n|an|xfer to @C|
+pg| ***** 45 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 46 ***** |
+
+
+mb|2c|
+pg| ***** 47 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 48 ***** |
+
+
+mb|p|
+pg| ***** 49 ***** |
+
+
+at|^^^^Example of a weak hand with no tolerance for Opener's Major and a long (6+) suit of their own, where responder simply transfers to their suit and then passes.
+|
+pg| ***** 50 ***** |
+
+
+qx|Tn3N,hide|
+bt||
+nt|^b@2^z@3|
+at|^^^^|
+
+fp|t-title|at|Transfer to New Suit, Rebid 3 NT|fp||at|
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Transferring to a new suit and then rebidding 3NT shows a game - going hand with a definite shortage in Opener's Major but a running 6-card or longer suit and stops outside.
+
+This sequence might conceal a second suit in Responder's hand.
+
+Similarly, jump - rebidding the same suit at the 4 - level would show a game - going single-suited hand with a definite shortage ELSEWHERE than Opener's Major (ie: unsuitable for 3NT).
+
+So   1@S - (X) - 2@D - 2@H - 3@H   shows an invitational single-suited hand in Hearts, and  1@S - (X) - 2@D - 2@H - 4@H  shows a game-going single-suiter in hearts, but in neither case will responder have Spade support.
+^^^^|
+pg| ***** 51 ***** |
+
+
+qx|TnSS,hide|
+fp|t-title|at|Transfer to New Suit, Rebid Simple Suit|fp||at|
+
+Transferring to a new suit and then bidding a simple new suit shows an invitational - strength (about 10-12) 2-suited hand.
+
+This will normally be at least 5-5 shape and as above will NOT have support for Opener's Major. Exceptionally these can be 5-4. Any time where the suits are different lengths bid the longer one first (or the higher - ranking if equal length).
+
+Where Spades is one of the suits and you want to show them first, then simply bid 1@S and then over Opener's rebid show the second suit at the minimum level. This still shows an invitational 2-suiter.
+|
+pg| ***** 52 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^|cp|red|at|^*bOliverC:^*n|cp||at|  You cannot afford to show a WEAK 2-suited hand, using MOTOR. Either pass (recommended) or if one of the suits is 6-card, just transfer to that suit and pass.
+
+Where you transfer to a lower - ranking suit and then bid a HIGHER - ranking suit second, therefore, the LOWER - ranking suit will ALWAYS be longer.
+
+If you show the higher - ranking suit FIRST, then the suits are either equal length or the higher - ranking one is longer.
+
+Reversing into your second suit (eg: 1@S - (X) - 1NT - 2@C - 2@H, is still just invitational, 3@H would be game - forcing).
+
+Transferring to a suit and then Jump - shifting into a new suit shows a game - going 2-suited hand.
+
+These MUST be at least 5-5 in length as we will often be past 3NT here and with a 5-4 hand 3NT will often be a good place to play.
+
+Where Spades is the "first" suit, then simply jump - shift into your second suit rather than bidding the second suit at the minimum level over Opener's rebid. 
+
+Ok, thus far we've covered invitational and game - going single-suiters and 2-suited hands where Responder does NOT have 3-card or better support for Opener's Major.
+
+The best holding Responder is likely to have with any of the sequences covered thus far is Hx (apart from the direct - suit raises, that is). 
+
+Any questions?
+|
+pg| ***** 53 ***** |
+
+
+nt|^b@2^z@3|
+at|^^
+lute57:  ? Do you consider xxx tolerance ?
+
+|
+cp|red|at|^*bOliverC:^*n|cp||at|  Definitely, but I might well show it as support (depends on the hand).  This is NOT the same as "support" in Asking Bids.
+
+
+P0STM0RTEM:  May opener ever refuse/skipover the transfer (assuming no intervening bid) and if so what would be the rationale?
+
+|
+cp|red|at|^*bOliverC:^*n|cp||at|  Yes, and I'll come to that shortly but it's normally when Responder is transferring to Opener's Major that it happens, NOT when Responder is transferring to a new suit.
+
+Bear in mind that responder might be WEAK with no support for Opener's Major.
+
+
+
+|
+fp|t-title|at|3-card support (or better) for Opener's Major|fp||
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Now we turn our attention to hands where Responder DOES have 3-card or better support for Opener's Major.
+
+There are numerous ways that Responder has to show this. Firstly, Fit - showing Jump - shifts and Mini - Splinters work EXACTLY the same way as if RHO hadn't doubled.
+
+We looked at these a couple of weeks ago and I don't propose to repeat anything further.
+
+So 1@H - (X) - 2NT is a fit - showing jump - shift in SPADES and 1@H - (X) - 2@S is showing an undefined Mini - Splinter.
+|
+pg| ***** 54 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Next, transferring into Opener's Major shows AT LEAST a decent upper - range 2 - level limit raise in Opener's Major, so probably 8 - 9 points and 3-card or better support.
+
+Actually Responder can also be much much stronger than that (which we'll come to later) but let's stick with the weaker hands for now.
+
+So whereas 1@H - (X) - 2@H is weak and pre-emptive, 1@H - (X) - 2@D shows AT LEAST a decent 2 - level limit bid in Hearts.
+
+If Opener has no game ambitions opposite a 2 - level raise then they simply complete the transfer (eg: 1@H - (X) - 2@D - 2@H) and wait to see if Responder bids again (which would show a hand better than a 2 - level raise).
+
+If Opener is upper - range, however, or has any hand that would accept an invitation to game, then they can bid game with a bursting maximum or, more commonly, make an immediate  ^*i^*btrial bid^*n  WITHOUT COMPLETING THE TRANSFER.
+
+^cMore on the answer to the earlier question about breaking transfers @ - 
+^d @2In theory Opener with an upper - range distributional 2-suiter could super - accept if Responder transferred into their SECOND suit, but given the takeout double it's hard to imagine this happening except when Responder is transferring into a SHORT suit (which I'll come to in a minute).
+^b@2
+These  ^*i^*btrial bids^*n  are EXACTLY as per the Romex scheme we looked at last week.
+
+Thus 1@S - (X) - 2@H - 3@C is an immediate long - suit trial bid in Clubs.
+
+Similarly 1@H - (X) - 2@D - 2@S is a request to make a short - suit trial bid.
+
+So in 1@H - (X) - 2@D - 2@S, the 2@D bid is showing at least a good 2 - level limit bid in hearts, and now 2@S is going straight to a Romex request to make a short - suit trial bid, just as if the bidding had gone 1@H - 2@H - 2@S
+|
+pg| ***** 55 ***** |
+
+
+qx|TnSO|
+nt|^b@2^z@3|
+at|^^^^|
+fp|t-title|at|Transfer to New Suit, Support Openers Major|fp||
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Next we turn our attention to sequences where Responder transfers into a new suit and THEN supports Opener's Major at any level.
+
+This kind of sequence shows a decent limit raise at whatever level Responder eventually supports Opener's Major at, but it also shows some kind or lead - directing "feature" in the transfer suit.
+
+This "feature" is a first or second round control.
+
+It can either be a shortage or a suit headed by Ace or King.
+
+It suggests the transfer suit as a good lead if Opps buy the contract and partner is on lead.
+
+So a sequence such as 1@S - (X) - 2@C - 2@D - 2@S is showing a decent 2 - level limit bid in Spades and EITHER a Diamond suit headed by Ace or King, OR a singleton or void in Diamonds.
+
+If the doubler ends up as Declarer, it's lead - directing for Diamonds SImilarly 1@H - (X) - 1NT - 2@C - 3@H is showing a decent 3 - level limit bid in Hearts with some kind of CLUB feature.
+
+So a sequence such as 1@H - (X) - 2@C(Xfer) - 2@D - 2@H shows a decent 2 - level limit raise in Hearts with some kind of a feature in Diamonds (could be a shortage or a suit headed by Ace or King).
+
+Diamonds are suggested as a lead if Partner is on lead.
+
+Similarly a sequence such as 1@S - (X) - 2@D(Xfer) - 2@H - 3@S shows an invitational 3 - level limit raise in Spades with some kind of a feature in Hearts Hearts are suggested as a lead if Partner is on lead.
+|
+pg| ***** 56 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  You will notice that there is a potential overlap between the hands that use a Mini - Splinter or a fit - showing jump - shift and those that elect to transfer to a feature suit and then support Opener's Major.
+
+It suggested that the mini - splinters and fit - showing jump - shifts are using on more pre-emptive hands (less points, better trumps and more shape) and the transfer sequence on hands with a solid point-count limit raise.
+
+One other point to note when the transfer sequence is used: If Opener has a hand with 3-card or better support for the TRANSFER suit and Opps compete further then if Opener has a hand that wants to compete they are ALWAYS safe to compete in the transfer suit, since Responder will ALWAYS have EITHER support for Opener's Major OR at least a 5-card holding in the transfer suit (or both).
+
+Since the transfer suit will ALWAYS be lower - ranking than Opener's Major, Responder can always return to the Major at the same level if they are short in the transfer suit.
+
+Does that make sense :)
+
+
+P0STM0RTEM:  yes
+|
+pg| ***** 57 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 4,thin|
+st||
+nt|^b@2^z@3|
+pn|South,West,North,East|rh||ah|Teach 4|sv|e|sk|e|sk||
+md|4,SAT42H3DK5CT97642,,SKQ973HA4DAJT82C3|
+at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 4    |
+mb|?|
+pg| ***** 58 ***** |
+
+
+mb|1S|
+pg| ***** 59 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 60 ***** |
+
+
+sj|L|
+mb|2D|an|xfer to @H (might be short)|
+pg| ***** 61 ***** |
+
+
+sj|L|
+mb|d|an|I have @H|
+pg| ***** 62 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 63 ***** |
+
+
+sj|L|
+mb|2h|
+pg| ***** 64 ***** |
+
+
+sj|L|
+mb|2s|an|limit with @H feature|
+pg| ***** 65 ***** |
+
+
+sj|c|
+mb|p|mb|3d|an|Long Suit trial bid in @d|
+pg| ***** 66 ***** |
+
+
+sj|c|
+mb|p|mb|4S|an|game it is|
+pg| ***** 67 ***** |
+
+
+sj|c|
+mb|PP|
+pg| ***** 68 ***** |
+
+
+at|Hopefully you are starting to get the idea.
+
+RogerPfi:  yep
+
+kritter2:  yes
+|
+pg| ***** 69 ***** |
+
+
+bt||
+nt|^b@2^z@3|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Let's go back to the  fit showing jump shift  for a minute to show the difference
+
+So take the sequence     1@S - (X) - 2@C(Xfer) - (2@H) 
+
+if Opener holds a hand like    @SAQJxxx  @Hx  @DAQ10x  @Cxx    they are quite safe to bid 3@D over 2@H since either Responder will have 5+ Diamonds, or they will have Spade support and some kind of Diamond feature (suit or shortage).
+
+Responder will clarify what the transfer to Diamonds was based on at their next turn to bid (ie: pass, correcting to some number of Spades, or raising Diamonds) either way, it's a safe route for Opener to compete with if they can support the transfer suit.
+
+Lastly, since the "transfer then raise" sequences show a feature, it follows that a sequence such as 
+
+^c1@H - (X) - 2@D - 2@H - 3@H 
+
+is a BALANCED invitation to game in Hearts where Responder either lacks a suitable feature to show or has chosen to conceal it.
+
+This kind of sequence, therefore, may well show a hand lacking in controls, and therefore should always have decent 4-card support for Opener's Major.
+
+Any questions on situations where Responder transfers to a new suit and then support Opener's Major?
+
+ok.
+
+
+We've exhausted the invitational or limit raises and so we can now turn our attention to the Strong raises in Hearts.
+
+These are fairly easy to get your head round:
+|
+pg| ***** 70 ***** |
+
+
+qx|TOBG,wide|
+bt||
+nt|^b@2^z@3|
+at|^^^^|
+fp|t-title|at|Transfer to Openers Major, then Bid Game in the Major|fp||
+at|^^^^^^|cp|red|at|^*bOliverC:^*n|cp||at|  Firstly, transferring to Opener's Major and then bidding game in the Major.
+
+This is a "power" raise and a mild slam try.
+
+Responder has no shortage or long side suit to show, but will be 16+ balanced in principle with decent controls and good 4-card trump support.
+
+So    1@S - (X) - 2@H - 2@S - 4@S    
+
+^^^^^^|
+fp|t-title|at|Transfer to Openers Major, then bidding a simple new suit|fp||
+at|^^
+Next up is a transfer into Opener's Major and then bidding a simple new suit.
+
+This is a game - forcing raise in Opener's Major with a decent side - suit.
+
+Responder will be in the  13-15  range, most likely.
+
+The sequence is only mildly slam invitational, but since this sequence agrees the Major, Opener can start cue-bidding straight away with a suitable hand.
+
+So transferring into opener's Major and THEN bidding a new suit is a bit like delayed game raise, but we achieve it lower.  
+|
+pg| ***** 71 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 5,thin|
+st||
+nt|^b@2^z@3|
+pn|South,West,North,East|rh||ah|Teach 5|sv|-|sk|w|sk||
+md|2,SQJT832HK92DAJ7C4,,SK75HAQJ84D2CA983|
+at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 5      |
+mb|?|
+pg| ***** 72 ***** |
+
+
+ 
+mb|1S|an|5+ @S, 11-15 hcp|
+pg| ***** 73 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 74 ***** |
+
+
+sj|L|
+mb|2H|an|at least a good 2 - level @S raise|
+pg| ***** 75 ***** |
+
+
+sj|c|
+mb|p|mb|2S|
+pg| ***** 76 ***** |
+
+
+sj|c|
+mb|p|mb|3H|an|GF in @S with a @H suit|
+pg| ***** 77 ***** |
+
+
+sj|c|
+mb|p|mb|4D|an|cue|
+pg| ***** 78 ***** |
+
+
+sj|c|
+mb|p|mb|4H|an|cue|
+pg| ***** 79 ***** |
+
+
+sj|c|
+mb|p|mb|4N|an|Rolling|
+pg| ***** 80 ***** |
+
+
+sj|c|
+mb|p|mb|5C|an|cue|
+pg| ***** 81 ***** |
+
+
+sj|c|
+mb|p|mb|5H|an|cue|
+pg| ***** 82 ***** |
+
+
+sj|c|
+mb|p|mb|6S|
+pg| ***** 83 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+sj|c|
+pg| ***** 84 ***** |
+
+
+at|East transfers to opener's Major and THEN bids hearts.
+
+GatorJim:   ?  Does rolling mean nothing to cue through a whole round ?
+^^|cp|red|at|^*bOliverC:^*n|cp||at|  It says nothing more to cue - bid at that stage.  Normally meaning that they want partner to show a Club control if they have one.
+|
+pg| ***** 85 ***** |
+
+
+nt|^b@2^z@3|
+at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  So here if East did NOT have the A@C (even if they had the king), they'd just sign off in 5@S over 4NT.
+
+Sometimes a bid of the agreed Major can be "rolling" if we've started cue - bidding and haven't "missed out" any suits
+|
+pg| ***** 86 ***** |
+
+
+qx|TOJS,wide|
+bt||
+nt|^b@2^z@3|
+at|^^^^|
+fp|t-title|at|Transfer to Openers Major, then Jump Shift into a New Suit|fp||
+at|^^^^|cp|red|at|^*bOliverC:^*n|cp||at|  Transferring into Opener's Major and then jump - shifting into a new suit is STRONGLY slam invitational with good Support for Opener's Major, good controls and a strong side - suit.
+
+Opener should start cue - bidding immediately UNLESS they have a minimum hand that is unsuitable.
+
+So note the difference, when Responder bids a SIMPLE new suit after transferring to the Major, Opener can cue - bid if they have a suitable hand.
+
+If Responder jump - shifts into a new suit, this is strongly slam invitational and Opener should start cue - bidding UNLESS they have a really poor hand. 
+|
+pg| ***** 87 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 6,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 6|sv|-|sk|n|sk||
+%% 3SK98642DAJT985CA,SQHT7542D6CT96532,SAJT73HA983DK7C74,S5HKQJ6DQ432CKQJ8
+md|3SK98642DAJT985CA,,SAJT73HA983DK7C74,|
+nt|^b@2^z@3|
+at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 6        |
+mb|?|
+pg| ***** 88 ***** |
+
+
+mb|1S|
+pg| ***** 89 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 90 ***** |
+
+
+sj|L|
+mb|2H|an|at least a good 2 - level @S raise|
+pg| ***** 91 ***** |
+
+
+sj|c|
+mb|p|mb|2S|
+pg| ***** 92 ***** |
+
+
+sj|c|
+mb|p|mb|4d|an|GF in @S, strong slam invite|
+pg| ***** 93 ***** |
+
+
+sj|c|
+mb|p|mb|4h|an|cue|
+at|Here, even though Opener is lower - range, they have a @D tolerance and decent controls|
+pg| ***** 94 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 95 ***** |
+
+
+sj|L|
+mb|r|an|1st round @h control|
+pg| ***** 96 ***** |
+
+
+sj|c|
+mb|p|mb|4S|an|Rolling|
+pg| ***** 97 ***** |
+
+
+sj|c|
+mb|p|mb|5C|an|cue|
+pg| ***** 98 ***** |
+
+
+at|^^^^South wants to hear if North has a @D control :)|
+pg| ***** 99 ***** |
+
+
+sj|c|
+mb|p|mb|5d|an|cue|
+pg| ***** 100 ***** |
+
+
+sj|c|
+mb|p|mb|5h|an|cue|
+pg| ***** 101 ***** |
+
+
+sj|c|
+mb|p|mb|6s|
+pg| ***** 102 ***** |
+
+
+sj|c|
+mb|p|mb|7s|
+pg| ***** 103 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 104 ***** |
+
+
+at|^^^^Any questions?|
+pg| ***** 105 ***** |
+
+
+--------------------------------------------------------------------
+qx|Prac,wide|
+bt||
+nt|^b@2^z@3|
+at|^^^^^^|
+fp|t-title|at|Practice Hands|fp||
+at|^^^^^^|
+
+cp|red|at|^*bOliverC:^*n|cp||at|  Ok, if there are no more questions for now, let's play some practice hands to drive these points home.
+
+4 victims, please.
+^^^^
+lute57: Hi
+
+GatorJim:  Hi all
+
+RogerPfi: hi
+
+soko52: hi
+|
+pg| ***** 106 ***** |
+
+
+------------------------------------------------------------------------------------------------  
+%% Alert Insert start --------------------------------------------------------------------------
+nt|^z@3^b@2|
+at|^^^^|
+%%   header box with text
+ht|b|cs|y|fp||at|^b{ ^^|
+ht|c|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^|fp|x-insertAlert|at|^- A small insert on Alerts^*n^-^^|cs||fp||cp||at|^^|
+
+ht|d|at|^^|
+cp||at|^*bMM:^*n|cp||at|  We all know we have to alert when playing  'proper'  bridge.
+
+The laws of the game say that what we have to put in the alert is  ^*b our agreement with partner ^*n about that bid.
+
+While creating these bridge movies, I have gone through and added to, or amended, many of the alerts that were in the original text.
+
+I have changed them from being ^*b REAL ^*n alerts, that you should give to real opponents, and have replaced them with ^*b STUDY ^*n alerts.   Study alerts are only useful to students of Oliver's Precision.  Of course in many cases no changes were needed.   For example    1@c     16+ Any dist except 16-23 4441
+
+It is particularly important that we make the alerts for  ^*b Asking bids and their responses^*n,  as clear as possible
+
+	    ^c ^*b Study Alert ^*n           ^i ^*b Real Alert ^*n                ^o ^*b It would be great if you could add ^*n
+     ^b      @-@-@-@-@-@-@-@-@-@- ^h       @-@-@-@-@-@-@-@-@-@-   ^n       @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-
+		^c Beta    Relay Beta ...          ^i Gen Ctrl Ask                    ^o A = 2,  K = 1 
+		^c Alpha                           ^i Asking  in                      ^o Trump ...
+		^c Gamma                           ^i Asking  in partners suit        ^o Trump ...
+		^c Epsilon                         ^i Specific Ctrl Ask               ^o in ... 
+		^c Hxx                             ^i Hxx                             ^o in ... 
+		^c none  or  1st & 2nd             ^i none  or  1st & 2nd             ^o [xxx, AKx(x)]
+		^c 3rd rd ctrl                     ^i 3rd rd ctrl                     ^o [xx, Qxx(x), Qx]
+		
+An easy mistake in reply to an Epsilon is when, say, you hold ^*b Q76 ^*n in the suit, and so give only ^*b Qxx ^*n in the alert.   THAT  IS  WRONG.  The agreement is ^*b 3rd round control ^*n and that is what should be told to the opps.   
+
+The ^*b ethical ^*n problem with telling too much to your opps is that it disadvantages the other pairs who will play your opponents cards.|
+%% Alert Insert End ----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------  
+pg| ***** 107 ***** |
+
+
+--------------------------------------------------------------------
+st||
+md|1,,,|sk|n|
+nt|^b@2^z@3|
+cp||at|^*bMM:^*n|cp||at|  ^*bPractice Hands  @-  How to^*n
+^^With all Practice Hands, when you see the |fp|g-graphSuit|cp||at|^*b ? ^*n|cp||fp||at| in the bidding area, please @- |cp|red|at|^*bStop^*n|cp||at| @- and think through your bid.
+If you can't work it out then the best thing is to do, is  @- go back and re-read that part of Oliver's lesson.|
+pg| ***** 108 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 1,hide|
+pn|lute57,GatorJim,RogerPfi,soko52|rh||ah|Practice 1|sv|-|sk|n|
+md|3SQ765HT7DT5CAQ984,,SAKJT9H654DAJ4C72,|
+nt|^b@2^z@3|
+at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 1  ^h Your bid ?|  
+mb|?|
+pg| ***** 109 ***** |
+
+
+mb|1s|an|5+ @S, 11-15 hcp|
+pg| ***** 110 ***** |
+
+
+sj|L|
+mb|D|
+pg| ***** 111 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 112 ***** |
+
+
+mb|1n|an|transfer to @C|
+pg| ***** 113 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 114 ***** |
+
+
+mb|2c|
+pg| ***** 115 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 116 ***** |
+
+
+mb|3d|an|Long suit game try|
+pg| ***** 117 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 118 ***** |
+
+
+mb|3s|
+pg| ***** 119 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 120 ***** |
+
+
+mb|p|
+pg| ***** 121 ***** |
+
+
+sk||
+pg| ***** 122 ***** |
+
+
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Long suit game try  -  game declined
+|
+pg| ***** 123 ***** |
+
+
+md|1,,,|nt|^^^b cleared|
+pg| ***** 124 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2,thin|
+st||
+nt|^b@2^z@3|
+pn|lute57,GatorJim,RogerPfi,soko52|rh||ah|Practice 2|sv|n|
+%% 4SJT42H2DJ865CJ532,SAQ653H86DK2CAQ96,S98HKQT43DA73CK74,SK7HAJ975DQT94CT8
+md|4,SAQ653H86DK2CAQ96,,SK7HAJ975DQT94CT8|
+mb|?|
+at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2  ^h Your bid ?|sk|e|  
+pg| ***** 125 ***** |
+
+
+mb|p|
+pg| ***** 126 ***** |
+
+
+mb|p?|
+sk|w|
+pg| ***** 127 ***** |
+
+
+mb|1s|an|5+ @S, 11-15 hcp|
+pg| ***** 128 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 129 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 130 ***** |
+
+
+mb|r|
+pg| ***** 131 ***** |
+
+
+mb|p?|
+sk|w|
+pg| ***** 132 ***** |
+
+
+mb|p|
+pg| ***** 133 ***** |
+
+
+mb|2h?|
+sk|e|
+pg| ***** 134 ***** |
+
+
+mb|p|
+pg| ***** 135 ***** |
+
+
+mb|p?|
+sk|w|
+pg| ***** 136 ***** |
+
+
+mb|d|
+pg| ***** 137 ***** |
+
+
+mb|p?|
+sk|e|
+pg| ***** 138 ***** |
+
+
+sk||
+mb|p|
+pg| ***** 139 ***** |
+
+
+sk|n|sk||
+nt|^b@2^z@3|
+cp|red|at|^*bOliverC:^*n|cp||at|  I think the sequence just given is about right.
+
+A key point is the  ReDbl  from East, still wanting a penalty, which would be best, given the vulnerability, whether 3NT is making or not.  
+
+2@HX probably down 4.
+|
+pg| ***** 140 ***** |
+
+
+md|0SJT42H2DJ865CJ532|
+tc|y|mb|p|pc|sK|
+tc||
+nt|^b@2^z@3|at|^^|
+at|^*bMM:^*n|at|   If you would like to  explore / play  the hand  'double dummy'
+^^Click on   {^*b Enter the Deal ^*n}   then  click   {^*b Edit ^*n}    then click on a  ^*bCARD^*n.
+^^
+^*bAfter^*n clicking ^*bEdit^*n you can also click { ^*bUndo^*n }  or  { ^*bWipe^*n }  to un - play cards^q   . . . when done  click   {^*b Back to Movie ^*n}
+|
+pg| ***** 141 ***** |
+
+
+md|1,,,|nt|^^^b cleared|
+pg| ***** 142 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 3,thin|
+st||
+nt|^b@2^z@3|
+pn|lute57,GatorJim,RogerPfi,soko52|rh||ah|Practice 3|sv|e|
+1SJT65HK62D5CA9643,S8HJT8754DJ962C52,SA97432DAK83CQJT,SKQHAQ93DQT74CK87 
+md|1SJT65HK62D5CA9643,,SA97432DAK83CQJT,|
+mb|?|
+at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 3  ^h Your bid ?|sk|s|  
+pg| ***** 143 ***** |
+
+
+mb|p|
+pg| ***** 144 ***** |
+
+
+mb|p?|
+sk|n|
+pg| ***** 145 ***** |
+
+
+mb|1s|an|5+ @S, 11-15 hcp|
+pg| ***** 146 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 147 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 148 ***** |
+
+
+mb|2c|an|transfer to @d, could be short|
+pg| ***** 149 ***** |
+
+
+sj|L|
+mb|3h|
+pg| ***** 150 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 151 ***** |
+
+
+mb|4d|an|I like @d (super accept)|
+pg| ***** 152 ***** |
+
+
+mb|p?|
+sk|s|
+pg| ***** 153 ***** |
+
+
+mb|4s|an|I really have spades, @d is a shortage|
+pg| ***** 154 ***** |
+
+
+mb|p?|
+sk|n|
+pg| ***** 155 ***** |
+
+
+mb|p|
+pg| ***** 156 ***** |
+
+
+sk||
+pg| ***** 157 ***** |
+
+
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  ok|
+pg| ***** 158 ***** |
+
+
+md|1,,,|nt|^^^b cleared|
+pg| ***** 159 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 4,thin|
+st||
+nt|^b@2^z@3|
+pn|lute57,GatorJim,RogerPfi,soko52|rh||ah|Practice 4|sv|e|
+%% 2S82H9642DT73C9752,SKQJ763HTDA852CK4,STHAK53DKQJ6CQJT3,SA954HQJ87D94CA86 
+md|2,SKQJ763HTDA852CK4,,SA954HQJ87D94CA86|
+mb|?|
+at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 4  ^h Your bid ?|sk|w|  
+pg| ***** 160 ***** |
+
+
+mb|1s|an|5+ @S, 11-15 hcp|
+pg| ***** 161 ***** |
+
+
+sk|n|
+mb|D|
+pg| ***** 162 ***** |
+
+
+sk|e|
+mb|?|
+pg| ***** 163 ***** |
+
+
+mb|1n|an|transfer to @C, could be short|
+pg| ***** 164 ***** |
+
+
+mb|p?|
+sk|w|
+pg| ***** 165 ***** |
+
+
+mb|2c|
+pg| ***** 166 ***** |
+
+
+mb|p?|
+sk|e|
+pg| ***** 167 ***** |
+
+
+mb|3s|an|I have @s's,  @c is a feature|
+pg| ***** 168 ***** |
+
+
+mb|p?|
+sk|w|
+pg| ***** 169 ***** |
+
+
+mb|4s|
+pg| ***** 170 ***** |
+
+
+mb|p?|
+sk|e|
+pg| ***** 171 ***** |
+
+
+mb|p|
+pg| ***** 172 ***** |
+
+
+sk||
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  ok
+|
+pg| ***** 173 ***** |
+
+
+md|1,,,|nt|^^^b cleared|
+pg| ***** 174 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 5,|
+st||
+nt|^b@2^z@3|
+pn|lute57,GatorJim,RogerPfi,soko52|rh||ah|Practice 5|sv|e|
+md|1SAKJT3HJ9DKT43CJ2,,S8HA5DAQJ52CK7654,|
+at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 5  ^h Your bid ?|sk|s|  
+pg| ***** 175 ***** |
+
+
+mb|1s|an|5+ @S, 11-15 hcp|
+pg| ***** 176 ***** |
+
+
+sk|w|
+mb|D|
+pg| ***** 177 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 178 ***** |
+
+
+mb|2c|an|transfer to @d, could be short|
+pg| ***** 179 ***** |
+
+
+mb|p?|
+sk|s|
+pg| ***** 180 ***** |
+
+
+mb|2d|
+pg| ***** 181 ***** |
+
+
+mb|p?|
+sk|n|
+pg| ***** 182 ***** |
+
+
+mb|3c|
+pg| ***** 183 ***** |
+
+
+mb|p?|
+sk|s|
+pg| ***** 184 ***** |
+
+
+mb|3d|
+pg| ***** 185 ***** |
+
+
+mb|p?|
+sk|n|
+pg| ***** 186 ***** |
+
+
+mb|3h|
+pg| ***** 187 ***** |
+
+
+mb|p?|
+sk|s|
+pg| ***** 188 ***** |
+
+
+mb|5d|
+at|^^^^5@d is  fast arrival  -  so discouraging slam|
+pg| ***** 189 ***** |
+
+
+mb|PP|
+sk||
+pg| ***** 190 ***** |
+
+
+at|^^^^Another option is  4@C  over the  2@D  bid.
+|
+pg| ***** 191 ***** |
+
+
+Goodbyes--------------------------------------------------------------------
+qx|end,thin|
+bt||
+nt|^b@2^z@3|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Any comments or questions?
+
+Ok we'll leave it there for today. I hope you've found this session useful even if you're pt dead set on learning Precision. 
+
+These methods can be used with ANY system and will give additional precision to your bidding whether you are playing Precision, Acol, 2/1 or Standard American.  They work equally well with 4 or 5-card Major suit Openings.
+
+Next week is an easy one as we will be turning our attention to the 1@D Opening and Responses, a considerably easier topic than tonight's. 
+
+Please try to read the website notes on 1 @D before next week's session. 
+ 
+Night all!
+
+
+
+kritter2:  thx Oliver for your valuable time :)
+
+RogerPfi:  thank you  Oliver
+
+isabable:  tys very much O
+
+lute57:  night Oliver  -  good lesson
+
+OliverC:  bye for pw
+
+btour:  ty Oliver @H
+|
+
+

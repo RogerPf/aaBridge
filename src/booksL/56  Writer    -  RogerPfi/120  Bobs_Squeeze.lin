@@ -1,0 +1,416 @@
+%%
+%%
+%%  Date last Edited    2015-06-08          set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+%%
+
+fh|364|ff|3Arial|fb|35|fm|3|      Font 3 
+fh|406|ff|4Arial|fb|90|fm|4|      Font 4
+
+
+cr|6060|cg|6105|cb|6100|   banner colour
+cr|7255|cg|7255|cb|7255|   tile font color
+cr|8255|cg|8000|cb|8000|   red for emphasis
+
+bt||nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|7|cs|6|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|4|at|^^^^^^^^^^|fp|3|at|  Bob's  Squeeze                               June  2015^*n  
+^^ |cs||fp||cp||
+fp||
+
+
+ht|e|
+
+at|^c@2^y@3|
+at|Playing in a BBO tournament, Bob (btour) and bridge partner Mary bid and made this  6@h small slam.  
+
+He thought the hand interesting and had some questions he wanted answered. 
+
+
+^d@.   Assuming there is a squeeze going on, what sort of squeeze is it ?
+
+^d@.   What should declarers plan be to maximize the probability of making the contract ?
+
+^d@.   What evidence should declarer use to form that particular plan ?
+
+
+This   'Bridge Movie'  is my answer to his questions.
+
+This  |cp|8|at|Bridge Movie is best played on   ^*baaBridge^*n   available free from|cp||at|    ^*hRogerPf.com/aaBridge^*n
+
+
+While it  ^*bMAY^*n  play on some other .lin file players,  it is designed to play best on  ^*baaBridge^*n.
+
+In particular with aaBridge you can use your  mouse wheel  to flow through the movie without a lot of  'button' clicking.      ^*baaBridge^*n  runs on Windows,  MAC's  and Linux  (but not IPads and Tablets).
+
+
+|
+fp||ht|x|at|^b@2@1|at|
+Please use your     ^*bMouse Wheel^*n   ^kor   ^m click  ^*bFlow >^*n    ^ror        anywhere in the  ^*bNavBar^*n|
+ht|z|at|@0
+^r ^*bMM:^*n (Movie Maker       Roger Pfister)|
+pg| ***** 0 ***** |
+
+
+st|| 
+pn|South,West,North,East|
+rh||ah|Bobs Squeeze|sv|-|sk|s|
+md|4SK43HKQT9842DJ42C,S85HDQT9763CKJT84,SAT96HAJ5DAK5CQ32,SQJ72H763D8CA9765|
+nt|^z@3^b@2|at|^^|
+at|^*bMM:^*n   This is Bob's hand.|
+pg| ***** 1 ***** |
+
+
+at|              The bidding goes|
+pg| ***** 2 ***** |
+
+
+mb|p|mb|p|
+pg| ***** 3 ***** |
+
+
+mb|p|mb|1C|
+pg| ***** 4 ***** |
+
+
+mb|p|mb|4H|
+pg| ***** 5 ***** |
+
+
+mb|p|mb|4N|an|RKC|
+pg| ***** 6 ***** |
+
+
+mb|p|mb|5D|an|1 or 4|
+pg| ***** 7 ***** |
+
+
+mb|p|mb|6H|
+pg| ***** 8 ***** |
+
+
+mb|p|mb|p|mb|p|
+pg| ***** 9 ***** |
+
+
+at|^^
+West leads ...|
+pg| ***** 10 ***** |
+
+
+at|  @s8  |
+pc|s8|
+pg| ***** 11 ***** |
+
+
+at|^^
+Thoughts please ?|
+pg| ***** 12 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+at|There are the obvious 11 top tricks 7@h 2@d 2@s.  If the spades are 3-3 or the @sQ and @sJ are anywhere except both with East then there is an easy twelfth.
+
+So already we appear to be looking at a 75% slam. 
+
+And we have not even mentioned the cloud of squeeze possibilities,  eg: South's @dJ menacing the defenders  @dQ.|
+pg| ***** 13 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+at|Realisticly, can we see any reason to not play either the  @s9  or  @s10  from North ? |
+pg| ***** 14 ***** |
+
+
+at|    No,  so lets do it.|
+pg| ***** 15 ***** |
+
+
+pc|ST|pc|SQ|
+PG| ***** 16 ***** |
+
+
+at|^^
+I know we do not yet have a full plan.  Should we duck the  @sQ  and let East win this trick ?  It would rectify the count for any future squeeze.|
+pg| ***** 17 ***** |
+
+
+at|^^
+But what if the @s8 is a singleton?   Then the spade return would be ruffed.  It is one thing to go down, quite another to be seen to go down in a silly way!|
+pg| ***** 18 ***** |
+
+
+pc|SK|
+pg| ***** 19 ***** |
+
+
+qx|Draw,wide|
+nt|^z@3^b@2|at|^^|
+at|OK, so we can now draw trumps take the finesse against the @sJ and claim our 75% slam.  BUT what if East started with @sQJxx?    After all, the  @s8  is a very strange lead from a holding like @sJ8(x).
+
+Either way we first draw trumps.|
+pg| ***** 20 ***** |
+
+
+pc|H2|pc|D3|pc|HA|pc|H3|
+pg| ***** 21 ***** |
+
+
+pc|HJ|pc|H6|pc|H4|pc|C4|
+pg| ***** 22 ***** |
+
+
+pc|H5|pc|H7|pc|HK|pc|D6|
+pg| ***** 23 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+at|So West started with no trumps and so could not choose to lead them.  
+
+West also threw a two Diamonds and one Club or to put it in a more memorable way @-
+
+In the opponents hands there are now  just @-  4 Spades,  5 Diamonds and  9 Clubs.|
+pg| ***** 24 ***** |
+
+
+nt|^z@3^b@2|at|^^|at|Back to West's original lead.   Leading the @s8 makes most sense if led from  @s8x  and fits with West not wanting to lead from say a (single) top high club and the @dQ.
+
+Holding both the @cAK, surely a lead jumps out  (even though North opened with a bid of 1@c).  |
+pg| ***** 25 ***** |
+
+
+at|^^
+If this analysis is correct then taking the spade finesse now will see us go down.|
+pg| ***** 26 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+at|So what about the squeeze possibilities ?
+
+Assuming West is guarding Clubs and Diamonds (with say the @dQ10x) and East is guarding Clubs and Spades then a double squeeze would fail because ... North plays before East so no pressure in Spades on East.
+
+So, no double squeeze and anyway we have not yet rectified the count.|
+pg| ***** 27 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+at|If West did start with 4 spades then they  would / could?  be vulnerable to a thrown in.
+
+Let's try to imagine East's exit cards.   Of East's remaining 9 cards three would be spades and 6 cards remaining in the minors, probably including a top Club.|
+
+At|^^
+Given we appear to have three unneeded cards in North let's delay the second @s finesse and take another three rounds of trumps.  While, of course, watching what is thrown.|
+pg| ***** 28 ***** |
+
+
+pc|HQ|pc|D7|pc|C2|pc|C5|
+pg| ***** 29 ***** |
+
+
+pc|HT|pc|C8|pc|C3|pc|C6|
+pg| ***** 30 ***** |
+
+
+pc|H9|pc|CT|pc|D5|pc|C7|
+pg| ***** 31 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+at|So far not a single diamond from East and no sign of that high Club, which we presume East started with.  It is now decision time.  But we have seen a total of 3 Diamonds and 3 Clubs thrown by West and three Clubs thrown by East.
+
+The defenders are down to 4 Spades, 4 Diamonds and 4 Clubs between them.      Now is crunch time
+
+Do we play for the finesse or the strip and throw-in ?|
+pg| ***** 32 ***** |
+
+
+qx|Ans,wide|
+nt|^z@3^b@2|at|^^|
+at|^*bAnswer:^*n    We go with the @s8 spades being a strange lead.
+
+And implying that West started with the @dQ and so has kept 2 other Diamonds to guard that Queen.   So we put East's last five cards as being @-  3 @s's, the remaining @d and 2@c's (one a high honour).
+
+As we need the Heart for entry and control purposes we now start with the two top Diamonds.|
+pg| ***** 33 ***** |
+
+
+pc|D2|pc|D9|pc|DA|pc|D8|
+pg| ***** 34 ***** |
+
+
+pc|DK|pc|C9|pc|D4|pc|DT|
+pg| ***** 35 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+at|Well  -  So as predicted, West started with only 1 diamond.  
+
+Let's see which top club they have.|
+pg| ***** 36 ***** |
+
+
+pc|cq|pc|cA|
+pg| ***** 37 ***** |
+
+
+at|^^
+Interesting.   If we are correct (and East has three spades) we can just let this ride and have  ^*bit^*n  be the throw-in card.|
+pg| ***** 38 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+at|However to prove that this method would work even if the East card was a low club (which West could overtake and so ruin the throw-in by leading a spade) we will ruff the @cA.|
+pg| ***** 39 ***** |
+
+
+pc|h8|pc|cj|
+pg| ***** 40 ***** |
+
+
+at|^^
+And throw East in.|
+
+pc|s3|pc|s5|pc|s6|pc|s7|
+pg| ***** 41 ***** |
+
+
+qx|Yes,wide|
+pc|s2|
+sk||
+nt|^z@3^b@2|at|^^|
+at|^*bYes !^*n|
+pg| ***** 42 ***** |
+
+
+at|^^
+It looks like we can answer Bob's question.  It is not a Squeeze after all it is just a (complex) Strip and Throw In.|
+pg| ***** 43 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+at|But don't get complacent, East had one other choice.     We need to wind back three tricks. |
+pg| ***** 44 ***** |
+
+
+up|12|
+pg| ***** 45 ***** |
+
+
+at|^^
+The @dK has just been played from dummy.  What if East now throws a Spade ?|
+pg| ***** 46 ***** |
+
+
+pc|s2|
+pg| ***** 47 ***** |
+
+
+pc|d|pc|DT|
+pg| ***** 48 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+at|The answer is simple (ish).
+
+East must be thrown in  ^*bnow^*n  while the remaining trump (@h8) gives you control of the Club suit.
+
+You also need to lead the @s9 (not the @s6),  incase East has the @s5 and West the @S7.|
+pg| ***** 49 ***** |
+
+
+pc|s9|pc|sj|pc|s3|pc|s5|
+pg| ***** 50 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+at|The @s7 would clearly be a bad play for East, so the @cA must be the lead |
+pg| ***** 51 ***** |
+
+
+pc|ca|
+pg| ***** 52 ***** |
+
+
+at|^^
+which South trumps|
+pg| ***** 53 ***** |
+
+
+pc|h8|pc|cj|pc|cq|
+pg| ***** 54 ***** |
+
+
+at|     and leads the @s4 to the @sA and the now long spade.|
+pg| ***** 55 ***** |
+
+
+pc|s4|
+pg| ***** 56 ***** |
+
+
+at|^^
+and we have the twelve.|
+pg| ***** 57 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+at|But wait a minute  @-  that means that it  ^*bIS^*n  a squeeze after all |
+pg| ***** 58 ***** |
+
+
+up|12|
+pg| ***** 59 ***** |
+
+
+at|     ^*b at trick 9^*n    East is squeezed  between giving up.
+
+^c her second club exit card (she knows the first can be ruffed out) 
+^*bOR^*n 
+^c giving up her long suit cover of dummies spades,|
+pg| ***** 60 ***** |
+
+
+at|^^
+with part of the pressure coming from South's last trump acting as an Ace beating Club.|
+pg| ***** 61 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+at|Clearly this is some category of Strip Squeeze, I wonder if anyone has given it a more specific designation ?
+
+                 If know one do email me       ^*broger@@rogerpf.com^*n|
+pg| ***** 62 ***** |
+
+
+qx|Edit,wide|
+pf|y|
+nt|^b@2|
+ht|z|
+at|
+^b^*bDouble Dummy^*n mode is now ^*bON^*n   -   Click on a ^*bcard^*n to play it.     ^$6 is Undo  and  ^$40 will continue the movie.|
+ht|a|
+at|^^ You can now explore the hand  ^*bDouble Dummy^*n.   In addition to the info on the bottom line  |cp|8|at|^*baaBridge  users^*n|cp||at|  can,
+
+
+ after clicking  { ^*bEnter the Deal^*n }  use  { ^*bFlow^*n }   and  ^*b{ < }^*n         After clicking  { ^*bEdit^*n }   the  { ^*bUndo^*n }  button is available.
+
+|
+pg| ***** 63 ***** |
+
+
+qx|Epi,wide|
+nt|^z@3^b@2|at|^^|
+at|^*bEpilogue^*n   
+
+Bob's small slam earnt the partnership  920 points.  Had East-West chosen to sacrifice in 7@c ^*bdoubled^*n they could, with best play, have held it to 3 down,  800.|
+
+ht|z|at|
+^a^*b End^*n|
+pg| ***** 64 ***** |
+
+

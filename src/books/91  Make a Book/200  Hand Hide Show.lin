@@ -1,0 +1,395 @@
+%%
+%%  Hand Hide Show.lin
+%%
+%%  Date last Edited    2015-12-17          set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+
+
+%%            %%  Tell users of  old win player  they need aaBridge
+bt||ht|j|at|^c This  Bridge Movie ^*b requires ^*n the   FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|   ^*hrogerpf.com/aaBridge^*n|
+ip||          %%  non aaBridge  lin file players  will  STOP  on this  'ip'  command
+nt||          %%  Clean up the above  and leave the screen clear for your movie as normal
+
+
+%%
+%%  You can NOW use  ALL aaBridge only features, older  aaBridge players are screened out later
+%%
+
+fh|b64|                    Font   b  b-big  font size in masthead
+cr|m020|cg|m145|cb|m180|   fill   m  m-mastHead color
+
+
+bt||
+nt|^b@2^z@3|
+Lg|c|
+
+%%            Masthead  Tile  (box and text)
+%%
+ht|b|cp|bGround|cs|m-mastHead|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|b-big|at|^-A demo of ways to    Hide and Show    Hands^*n^-^^|cs||fp||cp||
+ht|e|n#|8|at|^r Roger Pfister   -   December 2015|
+
+
+lg|d|
+ht|h|at|If the user is not running the correct ^*b Lin file player ^*n then this demo 
+^m will tell the user to use to the correct one and then STOP.|
+
+ht|k|at|You are recommended to look at the code in a text editor,  WHILE  you also view the output in aaBridge.|
+
+ht|m|at|This demo covers then commands that a ^*b Tutorial Lin File ^*n author can use to control the visibility of the hands that are displayed.
+^^^^When the user is ^*b inside a deal ^*n then ^*b THEY ^*n (the user) are in control of the visibility and can use any of the settings  and buttons  provided.   See the ^*b Seat Choice ^*n  TAB in the  Right Hand  panel.|
+
+
+
+ht|y|at|^cPlease    ^*bMouse Wheel^*n   forward    after once clicking   ^*b Flow > ^*n|
+
+
+%%           These two commands,  'rq'  followed by an  'at',  check that the
+%%           correct aaBridge build number is running OR warn and stop.
+%%           They must be put just before the 'pg' that ends your front page.
+%%           This way they also work for  aaBridge  builds  before  2814
+rq|2820|nt|^^^^^^^^^^^^^^^^ ^c This  Bridge Movie   requires ^*b aaBridge ^*n build ^*b 2820 ^*n  or later  available from    ^*h rogerpf.com/aaBridge ^*n|
+pg| ***** 0 ***** |
+
+
+%%--------------------------------------------------------------------------------------------
+qx|B 1,wide|
+st||
+pn|South,West,North,East|
+rh||ah|Board 1|sv|n|sk|W|
+md|2sJT94hQ932dK986c2,sK7h6dAQT732cKQ63,sA6532h874dJ4cAT9,sQ8hAKJT5d5cJ8754|
+nt|^z@3^b@2|Lg|k|n#|9|
+at|^*bBoard  1   ^*n 
+Here the  'you seat'  is the West hand AND only the West hand is visible, caused by the  Seat Kibitz  cmd   ^*b sk!W! ^*n|
+pg| ***** 1 ***** |
+
+
+at|^^Add  ^*b sk!! ^*n  and all four hands become visible, (West is still the 'you seat').|
+sk||
+pg| ***** 2 ***** |
+
+
+at|   Restoring  ^*b sk!W! ^*n |
+sk|W|
+pg| ***** 3 ***** |
+
+
+at|^^Add a  Question Mark.  Its presence help the user to think of what is about to come next ^*b  !mb!?! ^*n|
+mb|?|
+pg| ***** 4 ***** |
+
+
+mb|1D|
+pg| ***** 5 ***** |
+
+
+at|^^From now on, as the bidding is shown the  'you seat' is  jumped Left  to match it  ^*b  sj!L!   mb!^*n<bid>^*b! ^*n|
+sj|L|
+mb|p|
+pg| ***** 6 ***** |
+
+
+sj|L|
+mb|1H|
+pg| ***** 7 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 8 ***** |
+
+
+nt|^z@3^b@2|Lg|k|n#|9|
+at|^*bBoard  1 b   ^*n
+To really encourage the student to think you can jump the  'you seat',  ^*b then ^*n show a  Question Mark  then  the Bid.  |
+pg| ***** 9 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 10 ***** |
+
+
+mb|2D|
+pg| ***** 11 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 12 ***** |
+
+
+mb|p|
+pg| ***** 13 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 14 ***** |
+
+
+mb|3C|
+pg| ***** 15 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 16 ***** |
+
+
+mb|p|
+pg| ***** 17 ***** |
+
+
+sj|L|
+mb|3N|
+pg| ***** 18 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 19 ***** |
+
+
+mb|p|
+pg| ***** 20 ***** |
+
+
+md|2,,,|nt||Lg|k|n#|9|at|^bcleared|
+pg| ***** 21 ***** |
+
+
+at|^^^dWhat if you want to have ONLY the two  'main hands'  showing all the time ?|  
+pg| ***** 22 ***** |
+
+
+%%--------------------------------------------------------------------------------------------
+qx|B 2,wide|
+st||
+pn|South,West,North,East|
+rh||ah|Board 2|sv|n|sk|W|sk||
+%% 2sJT94hQ932dK986c2,sK7h6dAQT732cKQ63,sA6532h874dJ4cAT9,sQ8hAKJT5d5cJ8754
+md|2,sK7h6dAQT732cKQ63,,sQ8hAKJT5d5cJ8754|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+at|^*bBoard  2   ^*n
+Here we start with a new deal (but the same cards)  ^*b md!...!  ^*n but with the  North South  hands  completely  missing.
+^*bsk!W! sk!!  ^*n Sets the initial  'you seat'  and shows all the delt cards.   We can use  ^*b sj!c!  ^*n to jump  a^*bc^*nross  the table.
+Note  -  that the author is responsible for  keeping the  'you seat'  in sync with the bidding.      (Clearer that way)|
+pg| ***** 23 ***** |
+
+
+mb|1D|
+pg| ***** 24 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 25 ***** |
+
+
+mb|1H|
+pg| ***** 26 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 27 ***** |
+
+
+mb|2D|
+pg| ***** 28 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 29 ***** |
+
+
+mb|3C|
+pg| ***** 30 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 31 ***** |
+
+
+mb|3n|
+pg| ***** 32 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 33 ***** |
+
+
+mb|p|
+pg| ***** 34 ***** |
+
+
+%%--------------------------------------------------------------------------------------------
+qx|B 3,wide|
+nt|^z@3^b@2|Lg|k|n#|9|
+pn|South,West,North,East|
+rh||ah|Board 3|sv|n|sk|n|
+at|^*bBoard  3   ^*n
+Now we want present this as a play problem with only dummy and  ^*b one ^*n of the defenders showing (ie: North  ^*bOR^*n  South).  To do this we add the missing cards using  ^*b md!0,...! ^*n  and use ^*b  sk!S! ^*n as before.  The core benefit of this is to ^*b preserve the bidding^*n.   Note  -  the use of  ^*b md!...! ^*n (except ^*b md!0...!^*n) deletes all bidding.  Also versions will fill out the 4th hand if 3 hands are fully defined.|
+pg| ***** 35 ***** |
+
+
+st||
+md|0sJT94hQ932dK986c2,sK7h6dAQT732cKQ63,sA6532h874dJ4cAT9,sQ8hAKJT5d5cJ8754|
+nt|^z@3^b@2|Lg|k|n#|9|
+at|^*bBoard  3 b   ^*n
+What you can do is to add the missing cards and then use  remove cards  ^*b rc!...! ^*n  to remove West's cards.
+The core benefit of this is to ^*b preserve the bidding^*n.   Note  -  the use of  ^*b md!...! ^*n (except ^*b md!0...! ^*n) deletes all bidding and both versions will fill out the 4th hand if 3 hands are fully defined. |
+pg| ***** 36 ***** |
+
+
+sk|n|
+nt|^z@3^b@2|Lg|k|n#|9|
+at|^*bBoard  3 c   ^*n
+Which card should North lead ? |
+pg| ***** 37 ***** |
+
+
+pc|s3|
+pg| ***** 38 ***** |
+
+
+sj|c|
+at|     Which card should South now  play ?  and ^*b why ^*n ?|
+pc|sQ|
+pg| ***** 39 ***** |
+
+
+pc|sj|
+at|^^To quote Kantar       last line,  page 155,    Modern Bridge Defense,  (his italics)       when third to  play  v  NT's
+|n#|2|at|^d" A simple rule:  if dummy wins the trick with the Ace or King, signal attitude; ^*i 
+^j if dummy is about to take the trick with the Queen or lower, give count. ^*n"|
+pg| ***** 40 ***** |
+
+
+pc|s7|
+pg| ***** 41 ***** |
+
+
+sk|n|
+pc|4c|up|| %% a cheeky way clearing clear the currently displayed trick, play and un-play a card in the hand
+pg| ***** 42 ***** |
+
+
+nt|^z@3^b@2|Lg|k|n#|9|
+at|^*bBoard  3 d   ^*n|
+pc|c4|pc|c2|pc|cK|pc|cA|
+pg| ***** 43 ***** |
+
+
+pc|h4|up||    %% a cheeky way clearing clear the currently displayed trick, play and un-play a card in the hand
+nt|^z@3^b@2|Lg|k|n#|9|
+at|^*bBoard  3 e   ^*n
+Which card should North now lead ?   and ^*b why ^*n ?|
+pg| ***** 44 ***** |
+
+
+pc|sA|
+at|^^North's key entry has just been knocked out.  South's @sJ shows she has 2 or 4 spades.  If South has two @s's then a low spade return will run to West's hand and the Ace will never make.  If South has 4 then playing the Ace will bring down West's marked singleton @sK.    You did count the Spades, didn't you ?    (from North's point of view, I mean)|
+pg| ***** 45 ***** |
+
+
+%%--------------------------------------------------------------------------------------------
+qx|B 4,wide|
+rh||ah|Board 4|sv|n|sk|n|
+nt|^z@3^b@2|Lg|k|n#|9|
+at|^*bBoard  4   ^*n|
+pg| ***** 46 ***** |
+
+
+at|^^But what if you want to see both North and South and have only West  hidden.    This is much harder.
+You can use remove cards  ^*b rc!...! ^*n  to remove West's cards.  and ^*b sk!! ^*n to show all delt cards and ^*b sj!c! ^*n to jump the  'you seat'  from   North  to  South.|
+pg| ***** 47 ***** |
+
+
+sk|S|sk||
+rc|sK7h6dAQT732cKQ63|     %% These are all the west cards including those played which are ignored
+at|            DONE|
+pg| ***** 48 ***** |
+
+
+pc|s8|
+nt|^z@3^b@2|Lg|k|n#|9|
+at|^*bBoard  4 b  ^*n|
+at|^^Which card should South now  play ?  and ^*b why ^*n ?|
+pg| ***** 49 ***** |
+
+
+pc|sT|
+at|^^Assuming South has been following the play she will know that North started with 5 (with only four he might try a switch) and that means West has only has only one spade left, presumably the King.  So unblocking a high spade and keeping her precious  @s4  is everything.|
+pg| ***** 50 ***** |
+
+
+aa|y|
+nt|^z@3^b@2|Lg|k|n#|9|
+at|^*bBoard  4 c  ^*n
+Now we have a problem.  West has no cards to play !.   Using  ^*b md!0,...! ^*n   to add each card will WONT work because it will always auto fill the 4th hand.   Instead you can   switch on   AutoAdd    ^*b aa!y! ^*n    which will add that card if it is not played and not in any other hand.
+Note   ^*b md!0,...! ^*n  WILL move cards from one hand to another.|
+pg| ***** 51 ***** |
+
+
+pc|sK|
+pg| ***** 52 ***** |
+
+
+pc|cT|up||
+at|^^But there is a sting in the tail.  If you let  ^*b Flow > ^*n  do its job you will see the card appear in the West hand a little too early, watch.|
+pg| ***** 53 ***** |
+
+
+pc|cT|up||
+nt|^z@3^b@2|Lg|k|n#|9|
+at|^*bBoard  4 c  ^*n
+If you use ^*b pg!! ^*n on every play of a card you will not see this problem.  This works if you have a small end play to show but is overkill for a full hand.  One workaround is to play ONE card of that tick as normal and do an undo play ^*b up!! ^*n and then replay that card (as normal) ^*b pc!..! ^*n    This turns ^*b Flow > ^*n into ^*b Step >^*n  just for that trick.    Watch|
+pg| ***** 54 ***** |
+
+
+pc|s2|pc|h5|pc|s9|pc|d2|up||pc|d2|
+pg| ***** 55 ***** |
+
+
+nt|^z@3^b@2|Lg|k|n#|9|
+at|^*bBoard  4 d  ^*n
+Watch  North-South  defeat  the 3NT contract.  This way you will again see the "early display" problem in action.|
+pg| ***** 56 ***** |
+
+
+pc|s4d3s5ht|
+pg| ***** 57 ***** |
+
+
+pc|s6hjh2dT|
+pg| ***** 58 ***** |
+
+
+pc|h8|
+pg| ***** 59 ***** |
+
+
+md|0sJT94hQ932dK986c2,sK7h6dAQT732cKQ63,sA6532h874dJ4cAT9,sQ8hAKJT5d5cJ8754|
+mc|8|
+pg| ***** 60 ***** |
+
+
+up|99|
+pc|s3|
+pg| ***** 61 ***** |
+
+
+pf|y|
+pg| ***** 62 ***** |
+
+

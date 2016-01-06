@@ -10,7 +10,8 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.view;
 
-import java.awt.SystemColor;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
@@ -25,7 +26,7 @@ import com.rogerpf.aabridge.controller.App;
 
 /**   
  */
-class AaRopPrefs5_DSizeFont extends ClickPanel implements ItemListener {
+class AaRopPrefs5_DSizeFont extends ClickPanel implements ItemListener, ActionListener {
 
 	private static final long serialVersionUID = 1L;
 
@@ -43,14 +44,16 @@ class AaRopPrefs5_DSizeFont extends ClickPanel implements ItemListener {
 	QRadioButton size3;
 	QRadioButton size4;
 
+	QButton applyDefaults;
+
 	public AaRopPrefs5_DSizeFont() {
 		setOpaque(true); // remember - we derive from ClickPanel which is setOpaque(false)
-		setBackground(SystemColor.control);
+//		setBackground(SystemColor.control);
 
 		setLayout(new MigLayout(App.simple + ", flowy"));
 
 		// @formatter:off
-		add(anyLabel  = new QLabel("Size & Font   -   Deal Size  and   Movie Font override options"), "gapy 5");
+		add(anyLabel  = new QLabel("  Size & Font             -   Deal Size   and   Movie Font override options"), "gapy 5");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
 		
 
@@ -74,7 +77,39 @@ class AaRopPrefs5_DSizeFont extends ClickPanel implements ItemListener {
 		fontChooser.selectFamilyIfPresent(App.fontfamilyOverride);
 		fontChooser.setMaximumRowCount(25);
 
+		add(applyDefaults = new QButton(this, "Apply Defaults"), "gapy20, gapx4");
+		applyDefaults.setToolTipText("Reset all  Seat Options  to default values  ");
+		if (App.onMac == false)
+		    applyDefaults.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
+
 		// @formatter:on
+	}
+
+	public void actionPerformed(ActionEvent e) {
+
+		Object source = e.getSource();
+
+		if (source == applyDefaults) {
+
+			App.tutorialDealSize = 4;
+			size0.setSelected(false);
+			size1.setSelected(false);
+			size2.setSelected(false);
+			size3.setSelected(false);
+			size4.setSelected(true);
+
+			App.useFamilyOverride = false;
+			useStdFont.setSelected(true);
+			useFamilyOverride.setSelected(false);
+
+			App.fontfamilyOverride = "Times Roman";
+			fontChooser.selectFamilyIfPresent(App.fontfamilyOverride);
+
+			App.savePreferences();
+
+			App.frame.repaint();
+
+		}
 	}
 
 	/** This listens for the check box changed event */

@@ -133,7 +133,19 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 		yRow = (float) gi.numb * rowSpacing + topAdjust;
 		xCol = leftMargin;
 
-		heightOfNextLine = lineSeparation;
+		maxHeightOnCurLine = 0; // heightOfCurFont;
+	}
+
+	/**
+	 */
+	public void action_hT(GraInfo gi) { // internal without the xCol change
+		// =============================================================================
+		getCurSeg().eol = true;
+		startNewSeg();
+		yRow = (float) gi.numb * rowSpacing + topAdjust;
+		// xCol = leftMargin; // no no no
+
+		maxHeightOnCurLine = 0; // heightOfCurFont;
 	}
 
 	/**
@@ -143,6 +155,39 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 		float gi_numb_good = (gi.numb > 0) ? (float) gi.numb : LEFT_MARGIN_DEFAULT;
 
 		xCol = gi_numb_good * columnWidth;
+	}
+
+	/**
+	 */
+	public void action_nD(GraInfo gi) { // this is both a n# nD (down) AND n^ nU (up)
+		// =============================================================================
+		yRow += width * gi.numb * 0.0017; /* Yes the width  */
+	}
+
+	/**
+	 */
+	public void action_nR(GraInfo gi) { // this is both a n> nR (Right) AND n< nL (Left)
+		// =============================================================================
+		xCol += width * gi.numb * 0.0017; /* Yes the width  */
+	}
+
+	/**
+	 */
+	public void action_lg(GraInfo gi) { // line gap (line Spacing)
+		// =============================================================================
+		if (gi.numb == 10) {
+			lineSpacing_multiplier = 1; // trying to avoid any rounding the reset case.
+		}
+		else if (gi.numb <= 0) {
+			lineSpacing_multiplier = 0;
+		}
+		else {
+			lineSpacing_multiplier = ((10 + (float) gi.numb)) / 20f; // 9 = 90% etc 0 = stay on same line
+		}
+	}
+
+	private void bidAnoDisplayExtra(boolean showIt) {
+		App.gbp.c2_0__btp.displayFinalAnotation(showIt);
 	}
 
 	/**
@@ -185,26 +230,29 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 	public void mouseMoved(MouseEvent e) {
 		// =============================================================================
 		Point p = e.getPoint();
-		boolean change = false;
+
+		Hyperlink hyperlink = null;
 
 		for (Seg seg : segs) {
-			if (seg.hyperlink != null) {
-				for (Ras ras : seg) {
-					Rectangle2D bounds = ras.getCorrectedBounds();
-					int mouse = seg.hyperlink.mouse;
-//					if (mouse == Aaa.MOUSE_PRESSED)
-//						continue;
-					boolean prev = (mouse == Aaa.MOUSE_HOVER);
-					boolean contains = bounds.contains(p);
-					if (prev != contains) {
-						seg.hyperlink.mouse = (contains) ? Aaa.MOUSE_HOVER : Aaa.MOUSE_NONE;
-						change = true;
-					}
+
+			if (seg.hyperlink == null || seg.hyperlink == hyperlink)
+				continue;
+
+			hyperlink = seg.hyperlink;
+			int mouse = Aaa.MOUSE_NONE;
+			for (Ras ras : seg) {
+				Rectangle2D bounds = ras.getCorrectedBounds();
+				if (bounds.contains(p)) {
+					mouse = Aaa.MOUSE_HOVER;
+					break;
 				}
 			}
-		}
-		if (change) {
-			App.frame.repaint();
+
+			if (seg.hyperlink.mouse != mouse) {
+				seg.hyperlink.mouse = mouse;
+				App.frame.repaint();
+				return;
+			}
 		}
 	}
 
@@ -228,24 +276,29 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 	public void mousePressed(MouseEvent e) {
 		// =============================================================================
 		Point p = e.getPoint();
-		boolean change = false;
+
+		Hyperlink hyperlink = null;
 
 		for (Seg seg : segs) {
-			if (seg.hyperlink != null) {
-				for (Ras ras : seg) {
-					Rectangle2D bounds = ras.getCorrectedBounds();
-					int mouse = seg.hyperlink.mouse;
-					boolean prev = (mouse == Aaa.MOUSE_PRESSED);
-					boolean contains = bounds.contains(p);
-					if (prev != contains) {
-						seg.hyperlink.mouse = (contains) ? Aaa.MOUSE_PRESSED : Aaa.MOUSE_NONE;
-						change = true;
-					}
+
+			if (seg.hyperlink == null || seg.hyperlink == hyperlink)
+				continue;
+
+			hyperlink = seg.hyperlink;
+			int mouse = Aaa.MOUSE_NONE;
+			for (Ras ras : seg) {
+				Rectangle2D bounds = ras.getCorrectedBounds();
+				if (bounds.contains(p)) {
+					mouse = Aaa.MOUSE_PRESSED;
+					break;
 				}
 			}
-		}
-		if (change) {
-			App.frame.repaint();
+
+			if (seg.hyperlink.mouse != mouse) {
+				seg.hyperlink.mouse = mouse;
+				App.frame.repaint();
+				return;
+			}
 		}
 	}
 
@@ -307,9 +360,11 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 
 		scaleFrac = width / LIN_STANDARD_WIDTH;
 		fontScaleFrac = FONT_SCALE_FRAC * scaleFrac;
-		lineSeparationFrac = LINE_SEPARTATION_FRAC; // no mult this is a const // * scaleFrac;
-		lineSeparation = 0;
-		heightOfNextLine = 0; // set later by calc
+		heightOfCurFontFrac = LINE_SEPARTATION_FRAC; // no mult this is a const // * scaleFrac;
+		lineSpacing_multiplier = 1;
+		heightOfCurFont = 0;
+		maxHeightOnCurLine = 0; // set later by calc
+		nonFont_on_this_line = false;
 
 		columnWidth = COLUMN_WIDTH_FRAC * width;
 		// OLD WAY rowSpacing = ROW_HEIGHT_FRAC * width; // yes width - NEVER the 'two value' height
@@ -345,7 +400,7 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 			GraInfo gi = mg.giAy.get(i);
 			int t = gi.qt;
 
-			use_gray_text = (i < mg.middle_pg); // WIDE AREA FLAG - ugg
+//			use_gray_text = false; // App.showOldTextGray && ((i < mg.middle_pg) && gi.capEnv.gray_fade); // WIDE AREA FLAG - ugg
 
 			// System.out.println(/* new Date().getTime() + " " + */gi);
 
@@ -358,10 +413,10 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 			}
 
 			// @formatter:off
-			//			AA		CAPS means an RPf invention
+			//			AA		CAPS means an internal RPf signal
 			if (t == q_.sb) { /* detected in the sb panel so nothing at this time */ continue; } 
-			if (t == q_.at) { consume_at(gi); continue; }
-			if (t == q_.nt) { consume_nt(gi); /* calls consume_at() */ continue; }
+			if (t == q_.at) { consume_at(gi); bidAnoDisplayExtra(false);  continue; }
+			if (t == q_.nt) { consume_nt(gi); bidAnoDisplayExtra(false); /* calls consume_at() */ continue; }
 			if (t == q_.mn) { consume_mn(gi); continue; }
 			if (t == q_.ZS) { consume_suitSymbol(gi); continue; } 
 			if (t == q_.Zd) { consume_emDash(gi); continue; } 
@@ -377,16 +432,21 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 			if (t == q_.ia) { consume_insertAuction(gi); continue; } 
 			if (t == q_.ih) { consume_insertHand(gi); ih_seen++; continue; } 
 			if (t == q_.lb) { action_lb(gi); continue; }
-			if (t == q_.ht) { action_ht(gi); continue; }
 			if (t == q_.VT) { action_VT(gi); continue; }
+			if (t == q_.ht) { action_ht(gi); continue; }
+			if (t == q_.hT) { action_hT(gi); continue; }
+			if (t == q_.nD) { action_nD(gi); continue; } // includes  logical 'action_nU' D = down  U = Up
+			if (t == q_.nR) { action_nR(gi); continue; } // includes  logical 'action_nR' R = Right  L = Left
+			if (t == q_.lg) { action_lg(gi); continue; } // line Gap (line Spacing)
 			if (t == q_.ZN) { action_margin(gi); continue; } 
+			if (t == q_.mb) { bidAnoDisplayExtra(true); continue; } 
+			if (t == q_.rc) { /* nothing at this time */ continue; } 
+			if (t == q_.st) { /* nothing at this time */ continue; } 
 			if (t == q_.bt) { /* nothing at this time */ continue; } 
 			if (t == q_.an) { /* nothing at this time */ continue; } 
-			if (t == q_.st) { /* nothing at this time */ continue; } 
 			if (t == q_.sk) { /* nothing at this time */ continue; } 
 			if (t == q_.ha) { /* nothing at this time */ continue; } 
 			if (t == q_.tu) { /* nothing at this time */ continue; } 
-//			if (t == q_.pg) { /* nothing at this time */ continue; } 
 			if (t == q_.ub) { /* nothing at this time */ continue; } 
 			if (t == q_.up) { /* nothing at this time */ continue; } 
 			if (t == q_.mc) { /* nothing at this time */ continue; } 
@@ -397,11 +457,13 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 			if (t == q_.qx) { /* nothing at this time */ continue; } 
 			if (t == q_.sv) { /* nothing at this time */ continue; } 
 			if (t == q_.pc) { /* nothing at this time */ continue; } 
-			if (t == q_.mb) { /* nothing at this time */ continue; } 
 			if (t == q_.sk) { /* nothing at this time */ continue; } 
 			if (t == q_.sb) { /* nothing at this time */ continue; } 
 			if (t == q_.wt) { /* nothing at this time */ continue; } 
 			if (t == q_.xx) { /* nothing at this time */ continue; } 
+			if (t == q_.gf) { /* nothing at this time */ continue; }
+			if (t == q_.rq) { /* nothing at this time */ continue; }
+			if (t == q_.eb) { /* nothing at this time */ continue; }
 							
 			// @formatter:on
 

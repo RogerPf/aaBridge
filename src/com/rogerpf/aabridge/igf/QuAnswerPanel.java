@@ -84,9 +84,11 @@ public class QuAnswerPanel extends ConsumePanel {
 
 		scaleFrac = width / LIN_STANDARD_WIDTH;
 		fontScaleFrac = FONT_SCALE_FRAC * scaleFrac;
-		lineSeparationFrac = LINE_SEPARTATION_FRAC; // no mult this is a const // * scaleFrac;
-		lineSeparation = 0; // set later by calc
-		heightOfNextLine = 0; // set later by calc
+		heightOfCurFontFrac = LINE_SEPARTATION_FRAC; // no mult this is a const // * scaleFrac;
+		lineSpacing_multiplier = 1;
+		heightOfCurFont = 0; // set later by calc
+		maxHeightOnCurLine = 0; // set later by calc
+		nonFont_on_this_line = false;
 
 		columnWidth = COLUMN_WIDTH_FRAC * width;
 		// OLD WAY rowSpacing = ROW_HEIGHT_FRAC * width; // yes width - NEVER the 'two value' height
@@ -496,7 +498,7 @@ public class QuAnswerPanel extends ConsumePanel {
 
 			ansPos--; // as the string[] indexes from zero
 
-			trueAns = s[ansPos];
+			trueAns = Aaa.deAtQuestionText(s[ansPos]);
 		}
 
 		boolean told = gi.userAns.contentEquals("tellme");
@@ -629,7 +631,7 @@ public class QuAnswerPanel extends ConsumePanel {
 
 			gi.text = "" + frag.size();
 
-			gi.capEnv.font_slot_fp = 12; // Bridge Face and symbol font LARGE size
+			gi.capEnv.font_slot_fp = MassGi.dfc_font_slot; // Bridge Face and symbol font LARGE size
 			gi.capEnv.color_cp = Cc.BlackStrong;
 			gi.capEnv.bold = false;
 

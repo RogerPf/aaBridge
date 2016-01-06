@@ -34,14 +34,47 @@ class JpPointAy extends ArrayList<JpPoint> {
 		int tot_pg = 0;
 
 		{
+			// If the users has put a QX on to the first move the value back to the front of the bb array
+			GraInfo first_qx = null;
+			for (GraInfo gi : mg.giAy) {
+				int t = gi.qt;
+				if (t == q_.qx) {
+					if (first_qx == null) {
+						first_qx = gi;
+						continue;
+					}
+					// must be the second qx on the first page
+					first_qx.bb.set(0, gi.bb.get(0));
+					gi.type = "xx";
+					gi.qt = q_.xx;
+					break;
+				}
+
+				if (t == q_.pg)
+					break;
+			}
+		}
+
+		{
 			JpPoint jp = null;
 
 			for (GraInfo gi : mg.giAy) {
 				int t = gi.qt;
+				if (t == q_.qx) {
+					String name = gi.bb.get(0);
+					int type = JpPoint.jpCalculated;
 
-				if (t == q_.qx || jp == null) {
-					String name = (t == q_.qx) ? gi.bb.get(0) : (jp == null ? "B" : "");
-					jp = new JpPoint(gi, name);
+					if (gi.bb.size() > 1) {
+						String s = gi.bb.get(1).toLowerCase().trim();
+						if (s.startsWith("hide"))
+							continue; // treat as if it does not exist
+						if (s.startsWith("wide"))
+							type = JpPoint.jpWide;
+						if (s.startsWith("thin"))
+							type = JpPoint.jpThin;
+					}
+
+					jp = new JpPoint(gi, name, type);
 					add(jp);
 					jp.add(gi);
 					continue;
@@ -58,18 +91,21 @@ class JpPointAy extends ArrayList<JpPoint> {
 		 * We now need to parse all the Jp's and calcualte their locations on the line
 		 */
 		// System.out.println("JpPoints Start");
-		int ave = tot_pg / size();
+		int divider = ((tot_pg / size()) * 600) / 1000;
+
 		int sum_large = 0;
-//		int sum_small = 0;
 		int count_large = 0;
 		int count_small = 0;
+
 		for (JpPoint jp : this) {
-			if (jp.size() > ave) {
+			if (jp.type == JpPoint.jpThin) {
+				count_small++; // treat as small
+			}
+			else if (jp.type == JpPoint.jpWide || jp.size() >= divider) {
 				sum_large += jp.size();
 				count_large++;
 			}
 			else {
-//				sum_small += jp.size();
 				count_small++;
 			}
 		}
@@ -79,8 +115,17 @@ class JpPointAy extends ArrayList<JpPoint> {
 
 		assert (size() == count_large + count_small);
 
-		float sml_thickness = 0.05f / count_small;
-		float lge_thickness = 0.30f / count_large;
+		float sml_thickness;
+		float lge_thickness;
+
+		if (count_small < 5) {
+			sml_thickness = 0.01f;
+			lge_thickness = (0.35f - (sml_thickness * count_small)) / count_large;
+		}
+		else {
+			sml_thickness = 0.05f / count_small;
+			lge_thickness = 0.30f / count_large;
+		}
 
 		float sml_gap = sml_thickness; // two of these to the complete qx
 		float lge_gap = 0.55f / sum_large; // allocated in proportion
@@ -88,7 +133,7 @@ class JpPointAy extends ArrayList<JpPoint> {
 		float x = 0.0f;
 		for (JpPoint jp : this) {
 			// System.out.println(jp.size());
-			if (jp.size() > ave) {
+			if (jp.type == JpPoint.jpWide || (jp.size() >= divider && jp.type != JpPoint.jpThin)) {
 				jp.large = true;
 				jp.gap = lge_gap;
 				jp.mark = lge_thickness;
@@ -110,9 +155,6 @@ class JpPointAy extends ArrayList<JpPoint> {
 			}
 		}
 		// System.out.println("JpPoints tot: " + jpPointAy.size() + "  pg tot: " + tot_pg + "   Ave " + ave + "   ");
-
-		@SuppressWarnings("unused")
-		int z = 0; // put your breakpoint here
 	}
 
 	/**
@@ -235,12 +277,23 @@ class JpPoint extends ArrayList<GraInfo> {
 	public float mark;
 	public boolean large;
 
+	final public static int jpCalculated = 0;
+	final public static int jpWide = 1;
+	final public static int jpThin = 2;
+//	final public static int jpHide = 3;  never even created because hidden
+
+	public int type;
+
 	/**
 	 */
-	JpPoint(GraInfo gi, String name) {
+	JpPoint(GraInfo gi, String name, int type) {
 		// ============================================================================
+		this.type = type;
 		this.gi = gi;
-		this.name = ((name.trim() + "    ").substring(0, 4)).trim();
+		int numb = (gi.index < 3) ? 5 : 4;
+		this.name = ((name.trim() + "     ").substring(0, numb)).trim();
+		if (name.isEmpty())
+			type = jpThin;
 		this.large = false;
 		x0 = x1 = x2 = gap = mark = 0;
 	}

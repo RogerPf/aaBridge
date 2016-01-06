@@ -1,0 +1,2034 @@
+%%
+%%
+%% <--SECT_HEAD-->=Chapter 2                                2@C  Opening 
+%%
+%%
+%%  Date last Edited    2015-03-22          set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   aaBridge players are screened just before the first  'pg'
+%%
+
+fh|t40|                    Font   t  t-title      section titles within chapters
+fh|b50|                    Font   b  b-bigTitle
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  OLD STYLE  position adjustment 
+
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|y198|cg|y205|cb|y229|   fill   y  y-chapterGray    on Title Pages
+cr|p000|cg|p095|cb|p169|   fill   p  p-precisionBlue  on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|p-precisionBlue|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Oliver Clarke Precision       -       Simple System  ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|y-chapterGray|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bChapter 2                                2@C  Opening ^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+
+qx|2|
+ht|i|fp|z|at|^^|
+fp|t-title|at|^d@2^z@3|
+at|
+^*gGS, 2@C  Opening  and  First Response            Graphical Summary^*n|
+fp||at|^^
+^*g2D C,    2@C - 2@D  Replies to the  2@D  Forcing Enquiry^*n
+
+^*g2H2S,    2@C - 2@D -  (2@H / 2@S)    ^kContinuations ^*n
+
+^*g3D C,    2@C - 2@D -  (2@H / 2@S)  -  3@D  ^kContinuations ^*n
+|fp|t-title|at|
+
+^*gOliv, Oliver's class on the  2@C Opening   Starts HERE^*n|fp||cp|red|at|^s<<< First time ?  Click title|fp||cp||at|
+
+^*gR 2D,    The Forcing Relay  2@d  Response^*n
+
+^*gOCal,    Dealing with Overcalls of  2@c^*n
+
+^*gPrac,    Practice Hands^*n
+|
+
+fp||ht|y|at|^b@2@1|at|
+^*bClick^*n  -   one of the above  ^hor    in the  NavBar  ^mor      use your   mouse wheel|
+ht|z|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+%%
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2814|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2814 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+qx|GS,hide|
+mn|2C -      Opening      First Response|
+tu|y|
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines       ^j {@C}|cs||at|
+|cp||fp||at|^c@2^^|
+
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2An opening bid of    2 Clubs    shows
+^^^^11 - 15  hcp                              ^n ^*band^*n ^^
+  6+ Clubs   QJTxxx  or better,   ^l     ^*bOR^*n ^^ 
+  5+ Clubs    ^*band^*n   a  4-card Major|
+  
+ht|w|fp||at|^dThese  Graphical Summaries  are taken from the  2@C Opening  web page.
+^^^dLook at the original for the real thing   @-   ^*hhttp://bbo.pigpen.org.uk/2c.php^*n|
+pg| ***** 1 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines       ^j {@C}|cs||at|@D|cs||at|@H@S N @C@D@H@S
+|cp||fp||at|^c@2^^|
+
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2These are the First Responses|
+pg| ***** 2 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines       ^j {@C}|cs||at|{@D}|cs||at|@H@S N @C@D@H@S
+|cp||fp||at|^c@2^^|
+
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 2 Diamonds  is the main Forcing Enquiry    (see later sequence)|
+pg| ***** 3 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines       ^j {@C}|cs|f|at|{@D}|cs||at|{@H@S} N @C@D@H@S
+|cp||fp||at|^c@2^^|
+
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@22 of a Major
+
+
+7 - 10 hcp
+
+5+ of the Major
+
+Normally  ^*bno tolerance^*n  for clubs (so has a singleton or void)
+
+Is in essence a rescue bid, but Opener may continue with at good fit
+|
+pg| ***** 4 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines       ^j {@C}|cs|f|at|{@D@H@S}|cs||at|{ N }@C@D@H@S
+|cp||fp||at|^c@2^^|
+
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 2  No Trumps
+
+
+11 - 12 balanced
+
+Denies a 4-card Major
+
+Continuations are all natural, with 3 Clubs from Opener showing 
+         a 6-card or longer suit in an unbalanced minimum hand.
+|
+pg| ***** 5 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines       ^j {@C}|cs|f|at|{@D@H@S}{ N }|cs||at|{@C}|cs||at|@D@H@S
+|cp||fp||at|^c@2^^|
+
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 3 Clubs 
+
+
+natural and constructive  non-forcing
+
+about 9 - 10 points
+
+decent club support
+
+
+With a maximum hand, Opener can start showing stops up towards 3NT 
+
+This bid does not deny possession of a 4-card major
+|
+pg| ***** 6 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines       ^j {@C}|cs|f|at|{@D@H@S}{ N }|at|{@C}|cs||at|{@D@H@S}
+|cp||fp||at|^c@2^^|
+
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 3 of the other Suits 
+
+
+Game-forcing  Alpha Asking Bid 
+
+Normally will  ^*bNOT^*n  have decent support for Clubs, and will often be a distributional 2-suiter where responder needs to take control.
+|
+pg| ***** 7 ***** |
+
+
+-------------------------------------------------------------------------
+qx|2D C|
+mn|2C - 2D -      Replies to the 2D Forcing Enquiry|
+tu|y|
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines       ^j {@C}|cs||at|{@D}
+|cp||fp||at|^c@2^^|
+
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 After the  2 Club  opener  the response of  2 Diamonds  is a forcing enquiry.
+|
+pg| ***** 8 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|k|at|All Lines       ^j {@C}|cs|e|at|{@D}|cs||at|@H@S N @C@D@H@S N @C@D
+|cp||fp||at|^c@2^^|
+
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 These are  ^*bOpeners^*n  replies
+|
+pg| ***** 9 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|k|at|All Lines       ^j {@C}|cs|e|at|{@D}|cs||at|@H@S N @C|cs||at|{@D}@H@S N @C@D
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^o    4405|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 3 Diamonds
+^^
+exactly  ^*b4405^*n  shape   so   4-Hearts  ^*band^*n  4-Spades   void in Diamonds
+
+both ranges      (11-13  and  14-15)
+
+this is the only place in the whole system where a shortage is shown by bidding the suit itself 
+^^
+Continuations are natural except that  4D  is Beta.|
+pg| ***** 10 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|k|at|All Lines       ^j {@C}|cs|e|at|{@D}|cs||at|@H@S N @C|cs|f|at|{@D}|cs||at|{@H@S} N @C@D
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^p   3415  min|
+ht|h|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^q  4315  ^*bMAX^*n|
+
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 3 of a Major  (^*b3 three^*n)
+^^
+4-cards in that major
+^^
+3H  shows exactly  ^*b3415^*n  shape with a singleton Diamond and   ^*bmin^*n  range  (11-13)
+
+3S  shows exactly  ^*b4315^*n  shape with a singleton Diamond and  ^*bMAX^*n  range  (14-15)|
+pg| ***** 11 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|k|at|All Lines       ^j {@C}|cs|e|at|{@D}|cs||at|{@H@S} N @C@D|cs|f|at|{@H@S} N @C@D
+|cp||fp||at|^c@2^^|
+
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 2 of a Major   (^*b2 two^*n)
+^^
+4-cards in that major    all remaining shapes and strengths    Note - 
+^^
+2H   ^*bif   3415^*n   shape (inc a singleton Diamond) then will be  ^*bMAX^*n  range
+      
+2S   ^*bif   4315^*n   shape (inc a singleton Diamond) then will be   ^*bmin^*n  range
+^^^^^^(see later sequence)|  
+pg| ***** 12 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|k|at|All Lines       ^j {@C}|cs|e|at|{@D}|cs|f|at|{@H@S}|cs||at|{ N }@C|cs|f|at|{@D@H@S} N @C@D
+|cp||fp||at|^c@2^^|
+
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 2  No Trumps
+^^
+6-card @Clubs        ^*bTWO^*n  outside suits stopped (any range)
+
+^*bResponders^*n  continuations  @-
+
+3@c     'to play',  normally a weakish hand with both majors (was hoping Opener had a 4-card Maj)
+
+3@d     Forcing relay.  Opener bids the suit they  ^*bCANNOT^*n  stop (3NT with no Diamond stop)
+^g3@H     Stops in  Spades and Diamonds
+^g3@S     Stops in  Hearts and Diamonds
+^g3NT   Stops in  Spades and Hearts
+
+4@c     is Gamma in Clubs (6-card minimum length).    A Relay over the response is Beta.
+|
+pg| ***** 13 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|k|at|All Lines       ^j {@C}|cs|e|at|{@D}|cs|f|at|{@H@S}{ N }|cs||at|{@C}|cs|f|at|{@D@H@S} N @C@D
+|cp||fp||at|^c@2^^|
+
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 3 Clubs 
+^^
+6-card @Clubs        only ^*bONE^*n  outside suit stopped (any range)
+
+^*bResponders^*n  continuations  @-
+
+pass     'to play',  normally a weakish hand with both majors (was hoping Opener had a 4-card Maj)
+
+3@d     Forcing relay.  Opener bids the suit they  ^*bCAN^*n  stop (3NT with a Diamond stop)
+^g3@H     Stop in Hearts       no stop  in  Spades or Diamonds     ^t 4 Diamonds is beta
+^g3@S     Stop in Spades      no stop  in  Hearts or Diamonds      ^t 4 Diamonds is beta
+^g3NT   Stop in Diamonds  no stop  in  Spades or Hearts            ^t 4 Hearts is beta
+
+4@c     is Gamma in Clubs (6-card minimum length).    A Relay over the response is Beta.|
+pg| ***** 14 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|k|at|All Lines       ^j {@C}|cs|e|at|{@D}|cs|f|at|{@H@S}{ N }{@C}{@D@H@S}|cs||at|{ N }|cs|f|at|@C@D
+|cp||fp||at|^c@2^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 3  No Trumps
+^^^^6-card @Clubs
+^^Maximum-range hand
+^^All three outside suits stopped.
+^^
+(Responder should be aware that in these circumstances the Club suit may not be "best ever" because of the strength in the outside suits.)|
+pg| ***** 15 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|k|at|All Lines       ^j {@C}|cs|e|at|{@D}|cs|f|at|{@H@S}{ N }{@C}{@D@H@S}|at|{ N }|cs||at|{@C}@D
+|cp||fp||at|^c@2^^|
+
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 4 Clubs
+^^^^6-card or longer Clubs    ^*bAND^*N
+^^3-card Major    ^*bAND^*N
+^^A void in the other Major,     eg:  0346, 3046, 0337 or 3037 shape.
+ ^^^^A relay of  4D  asks Opener to bid his 3-card Major,  but all other continuations are natural.|
+pg| ***** 16 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|k|at|All Lines       ^j {@C}|cs|e|at|{@D}|cs|f|at|{@H@S}{ N }{@C}{@D@H@S}|at|{ N }{@C}|cs||at|{@D}
+|cp||fp||at|^c@2^^|
+
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 4 Diamonds
+^^^^6-card or longer Clubs     ^*bAND^*N
+^^5-card or longer Diamond suit (Clubs always longer).  
+^^^^4H is now Beta.|
+pg| ***** 17 ***** |
+
+
+--------------------------------------------------------------------------
+qx|2H2S|
+mn|   2C - 2D -      the   2H  and  2S   Continuations |
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|f|at|4 Hearts       ^j {@C}|cs|e|at|{@D}|cs||at|{@H}
+|cs|f|at|4 Spades       ^j {@C}|cs|e|at|{@D}|cs|f|at|{@H}|cs||at|{@S}
+|cp||fp||at|^c@2^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 After   2C  -  2D (enquiry)    then    2H  and  2S    show a  4-card  suit in that Major|
+pg| ***** 18 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|f|at|4 Hearts       ^j {@C}|cs|f|at|{@D}|cs|e|at|{@H}@S N @C@D@H@S|at| N @C|cs||at|
+|cs|f|at|4 Spades       ^j {@C}|cs|f|at|{@D@H}|cs|e|at|{@S} N @C@D@H@S|at| N @C|cs||at|
+|cp||fp||at|^c@2^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 These are   ^*bResponders^*n   continuations
+|
+pg| ***** 19 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|f|at|4 Hearts       ^j {@C}|cs|f|at|{@D}|cs|e  |at|{@H}|cs||at|{@S} N @C@D@H@S|at| N @C|cs||at|
+|cs|f|at|4 Spades       ^j {@C}|cs|f|at|{@D@H}|cs|e|at|{@S}|cs|    |at| N @C@D@H@S|at| N @C|cs||at|
+|cp||fp||at|^c@2^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 2 Spades
+^^
+12 - 13  points
+^^6-card Spade suit|
+pg| ***** 20 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|f|at|4 Hearts       ^j {@C}|cs|f|at|{@D}|cs|e  |at|{@H}|cs|f|at|{@S}|cs||at|{ N }@C@D@H@S|at| N @C|cs||at|
+|cs|f|at|4 Spades       ^j {@C}|cs|f|at|{@D@H}|cs|e|at|{@S}|cs|             |at|{ N }@C@D@H@S|at| N @C|cs||at|
+|cp||fp||at|^c@2^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 2  No Trump
+^^
+12 - 13  points
+^^No fit for the major|
+pg| ***** 21 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|f|at|4 Hearts       ^j {@C}|cs|f|at|{@D}|cs|e  |at|{@H}|cs|f|at|{@S}|cs|f|at|{ N }|cs||at|{@C}@D@H@S|at| N @C|cs||at|
+|cs|f|at|4 Spades       ^j {@C}|cs|f|at|{@D@H}|cs|e|at|{@S}|cs|f             |at|{ N }|cs||at|{@C}@D@H@S|at| N @C|cs||at|
+|cp||fp||at|^c@2^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 3 Clubs
+^^
+12 - 13  points
+^^No fit for the major       ^*bAND^*N
+^^A weakness in a sharp suit  (usually Diamonds).|
+pg| ***** 22 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|f|at|4 Hearts       ^j {@C}|cs|f|at|{@D}|cs|e  |at|{@H}|cs|f|at|{@S}|cs|f|at|{ N }{@C}|cs||at|{@D}@H@S|at| N @C|cs||at|
+|cs|f|at|4 Spades       ^j {@C}|cs|f|at|{@D@H}|cs|e|at|{@S}|cs|f             |at|{ N }{@C}|cs||at|{@D}@H@S|at| N @C|cs||at|
+|cp||fp||at|^c@2^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 3 Diamonds
+^^
+A second Forcing Enquiry  (see later sequence)|
+pg| ***** 23 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|f|at|4 Hearts       ^j {@C}|cs|f|at|{@D}|cs|e  |at|{@H}|cs|f|at|{@S}|cs|f|at|{ N }{@C@D}|cs||at|{@H}@S|at| N @C|cs||at|
+|cs|f|at|4 Spades       ^j {@C}|cs|f|at|{@D@H}|cs|e|at|{@S}|cs|f             |at|{ N }{@C@D}|cs||at|@H{@S}|at| N @C|cs||at|
+|cp||fp||at|^c@2^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 3 of the (4-Card) Major
+^^
+Natural  -  Responder is raising Openers 4-card major|
+pg| ***** 24 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|f|at|4 Hearts       ^j {@C}|cs|f|at|{@D}|cs|e  |at|{@H}|cs|f|at|{@S}|cs|f|at|{ N }{@C@D}|cs|f|at|{@H}|cs||at|{@S}|cs|f|at| N @C|cs||at|
+|cs|f|at|4 Spades       ^j {@C}|cs|f|at|{@D@H}|cs|e|at|{@S}|cs|f             |at|{ N }{@C@D}|cs| |at|{@H}|cs|f        |at|{@S} N @C|cs||at|
+|cp||fp||at|^c@2^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 3 of the OTHER Major
+^^
+Eta in the  ^*b4-card Major^*n
+^^Asking Bids now established
+^^Relay Beta available|
+pg| ***** 25 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|f|at|4 Hearts       ^j {@C}|cs|f|at|{@D}|cs|e  |at|{@H}|cs|f|at|{@S}|cs|f|at|{ N }{@C@D@H@S}|cs||at|{ N }@C|cs||at|
+|cs|f|at|4 Spades       ^j {@C}|cs|f|at|{@D@H}|cs|e|at|{@S}|cs|f             |at|{ N }{@C@D@H@S}|cs||at|{ N }@C|cs||at|
+|cp||fp||at|^c@2^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 3  No Trumps
+^^
+To Play     :)|
+pg| ***** 26 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|f|at|4 Hearts       ^j {@C}|cs|f|at|{@D}|cs|e  |at|{@H}|cs|f|at|{@S}|cs|f|at|{ N }{@C@D@H@S}{ N }|cs||at|{@C}|cs||at|
+|cs|f|at|4 Spades       ^j {@C}|cs|f|at|{@D@H}|cs|e|at|{@S}|cs|f             |at|{ N }{@C@D@H@S}{ N }|cs||at|{@C}|cs||at|
+|cp||fp||at|^c@2^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 4  Clubs
+^^
+Gamma in  @C ^*bClubs^*n
+^^Asking Bids now established
+^^Relay Beta available|
+pg| ***** 27 ***** |
+
+
+--------------------------------------------------------------------------
+qx|3D C,hide|
+mn|   2C  -  2D  -  2(Maj)  -  3D  -      Continuations |
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|f|at|4 Hearts       ^j {@C}|cs|f|at|{@D}|cs|e  |at|{@H}|cs|f|at|{@S}|cs|f|at|{ N }{@C}|cs||at|{@D}
+|cs|f|at|4 Spades       ^j {@C}|cs|f|at|{@D@H}|cs|e|at|{@S}|cs|f             |at|{ N }{@C}|cs||at|{@D}
+|cp||fp||at|^c@2^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 After      2C  -  2D  -  2(Maj)  -     then    3D    is a second Enquiry|
+pg| ***** 28 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|f|at|4 Hearts       ^j {@C}|cs|f|at|{@D}|cs|e  |at|{@H}|cs|f|at|{@S}|cs|f|at|{ N }{@C}|cs|e|at|{@D}@H@S|at| N @C@D
+|cs|f|at|4 Spades       ^j {@C}|cs|f|at|{@D@H}|cs|e|at|{@S}|cs|f             |at|{ N }{@C}|cs|e|at|{@D}@H@S|at| N @C@D
+|cp||fp||at|^c@2^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 These are   ^*bOpeners^*n   continuations
+|
+pg| ***** 29 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|f|at|4 Hearts       ^j {@C}|cs|f|at|{@D}|cs|e  |at|{@H}|cs|f|at|{@S}|cs|f|at|{ N }{@C}|cs|e|at|{@D}|cs||at|{@H}@S|at| N @C@D
+|cs|f|at|4 Spades       ^j {@C}|cs|f|at|{@D@H}|cs|e|at|{@S}|cs|f             |at|{ N }{@C}|cs|e|at|{@D}|cs||at|@H{@S}|at| N @C@D
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^p   1435|
+ht|j|fp|z|at|^^^^^^^^^^|fp|    |at|^q  4135|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 3 of the (4-Card) Major
+^^
+Singleton  in the OTHER major     (so normally  3 diamonds)
+^^with  4-Hearts        1435             both ranges      (11-13  and  14-15)            3S  is beta
+^^with  4-Spades      4135             both ranges      (11-13  and  14-15)            4H  is beta|
+pg| ***** 30 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|f|at|4 Hearts       ^j {@C}|cs|f|at|{@D}|cs|e  |at|{@H}|cs|f|at|{@S}|cs|f|at|{ N }{@C}|cs|e|at|{@D}|cs|f|at|{@H}|cs||at|{@S}|cs|f|at| N @C@D|cs||at|
+|cs|f|at|4 Spades       ^j {@C}|cs|f|at|{@D@H}|cs|e|at|{@S}|cs|f             |at|{ N }{@C}|cs|e|at|{@D}|cs| |at|{@H}|cs|f        |at|{@S} N @C@D|cs||at|
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^q  3415|
+ht|j|fp|z|at|^^^^^^^^^^^^|fp|    |at|^p   4315|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 3 of the OTHER Major
+^^
+Singleton  Diamond       (so normally   3  of the OTHER Major)   
+^^with  4-Hearts        3415        and  ^*bMAX^*N  range     (min range shown by earlier jump to 3H)
+^^with  4-Spades      4315        and   ^*bmin^*N  range      (MAX range shown by earlier jump to 3S)
+^^^^after  3H    3S is beta
+^^after  3S    4H is beta
+|
+pg| ***** 31 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|f|at|4 Hearts       ^j {@C}|cs|f|at|{@D}|cs|e  |at|{@H}|cs|f|at|{@S}|cs|f|at|{ N }{@C}|cs|e|at|{@D}|cs|f|at|{@H@S}|cs||at|{ N }@C@D|cs||at|
+|cs|f|at|4 Spades       ^j {@C}|cs|f|at|{@D@H}|cs|e|at|{@S}|cs|f             |at|{ N }{@C}|cs|e|at|{@D}|cs|f|at|{@H@S}|cs||at|{ N }@C@D|cs||at|
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^|fp||at|^r  2425|
+ht|j|fp|z|at|^^^^^^^^^^^^^^^^|fp|    |at|^r  4225|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 3  No Trumps
+^^
+Doubletons in the other suits
+^^with  4-Hearts        2425         both ranges      (11-13  and  14-15)            4D  is beta
+^^with  4-Spades      4225         both ranges      (11-13  and  14-15)            4D  is beta
+|
+pg| ***** 32 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|f|at|4 Hearts       ^j {@C}|cs|f|at|{@D}|cs|e  |at|{@H}|cs|f|at|{@S}|cs|f|at|{ N }{@C}|cs|e|at|{@D}|cs|f|at|{@H@S}{ N }|cs||at|{@C}@D|cs||at|
+|cs|f|at|4 Spades       ^j {@C}|cs|f|at|{@D@H}|cs|e|at|{@S}|cs|f             |at|{ N }{@C}|cs|e|at|{@D}|cs|f|at|{@H@S}{ N }|cs||at|{@C}@D|cs||at|
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^|fp||at|^s  3406|
+ht|j|fp|z|at|^^^^^^^^^^^^|fp|    |at|^s  4306|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 4 Clubs
+^^
+Void in Diamonds        (so will have 6 clubs)
+^^with  4-Hearts        3406         both ranges      (11-13  and  14-15)            4S  is beta
+^^with  4-Spades      4306         both ranges      (11-13  and  14-15)            4H  is beta
+|
+pg| ***** 33 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|f|at|4 Hearts       ^j {@C}|cs|f|at|{@D}|cs|e  |at|{@H}|cs|f|at|{@S}|cs|f|at|{ N }{@C}|cs|e|at|{@D}|cs|f|at|{@H@S}{ N }{@C}|cs||at|{@D}|cs||at|
+|cs|f|at|4 Spades       ^j {@C}|cs|f|at|{@D@H}|cs|e|at|{@S}|cs|f             |at|{ N }{@C}|cs|e|at|{@D}|cs|f|at|{@H@S}{ N }{@C}|cs||at|{@D}|cs||at|
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^|fp||at|^t 0445|
+ht|j|fp|z|at|^^^^^^^^^^^^|fp|    |at|^t 4045|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2 4 Diamonds
+^^
+Void in the  OTHER  major        (so will normally have 4 diamonds)
+^^with  4-Hearts        0445         both ranges      (11-13  and  14-15)            4S  is beta
+^^with  4-Spades      4045         both ranges      (11-13  and  14-15)            4H  is beta
+|
+pg| ***** 34 ***** |
+
+
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,wide|
+nt|^b@2^z@3|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|y-chapterGray|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class                        2@C  Opening ^*n^-^^|cs||fp||cp||at|^^|
+
+ht|f|
+cp|red|at|^*bOliverC:^*n|cp||at|  Hi Everyone and welcome to today's Precision Club session, in which we'll be taking a close look at the Precision 2@C Opening & Responses.
+
+If you have not already done so, please have a look at the notes I have prepared on Precision Club bidding.  You can find these on: ^*hhttp://bbo.pigpen.org.uk^*n    The 2@C Notes can be found at ^*hhttp://bbo.pigpen.org.uk/2c.php^*n
+
+
+The Precision 2@C Opening shows 11-15 points and is NOT forcing, as with all the Intermediate Precision Openings.
+
+It always promises at least a 5-card club suit of reasonable quality.
+
+^cKQxxx, QJ109xx, KJ10xx are all fine     Q9xxxx or J109xx are NOT!
+
+The 2@C Opening shows either a decent 6-card @Club suit (QJ10xxx would be an absolute minimum, usually better than that) or a 5-card Club suit in a hand that also contains a 4-card major suit.
+
+The suit quality requirements are not quite as stringent when you have a 4-5 shape hand.   So in hand with shape and values like   @sK52 @hA10 @d10 @cQJ86432   the club suit is about adequate given the 7th club.
+
+But with only a 6-card suit headed by QJx, you might consider the alternative (1@D).  A club suit of  QJ10xxx  is okay.
+
+The club suit needs to be of a reasonable quality because 
+
+^c(a) you're opening at the 2-level, not the 1-level and 
+
+^c(b) partner will more often pass the opening out with a weak hand, whatever their Club holding.
+|
+pg| ***** 35 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 1,thin|
+st||
+nt|^b@2^z@3|
+pn|South,West,North,East|rh||ah|Teach 1|sv|-|sk|n|sk||
+md|3SAJTHK8762DT76CJ7,,S9HJ9DAQ52CAQT652,|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 1   |
+mb|?|
+pg| ***** 36 ***** |
+
+
+at|Here the North hand is a perfectly good 2@C Opening.|
+mb|2c|an|11-15 with 6+@C OR 5@C +4@H/@S|
+pg| ***** 37 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+at|      What from South ?|
+pg| ***** 38 ***** |
+
+
+at|^^^^An: 2@H ?
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  The point to get across here, is that South, with Jx in @C, has adequate tolerance for Clubs so should not bid ANYTHING given that they have only a poor 9-count.   So Pass.|
+pg| ***** 39 ***** |
+
+
+mb|p|
+pg| ***** 40 ***** |
+
+
+sj|L|mb|X|
+pg| ***** 41 ***** |
+
+
+sj|L|mb|?|
+pg| ***** 42 ***** |
+
+
+mb|p|
+pg| ***** 43 ***** |
+
+
+sj|L|mb|2s|
+pg| ***** 44 ***** |
+
+
+sj|L|
+nt|^b@2^z@3|
+cp|red|at|^*bOliverC:^*n|cp||at|  Now South is in quite a good position to compete if they like.      ^*bMM:^*n  A possible bid for South would be?
+|
+mb|?|
+pg| ***** 45 ***** |
+
+
+mb|X|
+pg| ***** 46 ***** |
+
+
+sj|c|mb|p|mb|3c|
+pg| ***** 47 ***** |
+
+
+sj|c|mb|p|mb|p|
+at|
+If West competes further he'll get his fingers burnt.
+
+Any questions?
+|
+pg| ***** 48 ***** |
+
+
+nt|^b@2^z@3|
+cp|red|at|^*bOliverC:^*n|cp||at|  Here South's double of 2@S is essentially for t/o showing @H in case North has the 5-4 hand, but happy to compete to 3@C if he does not.
+
+Hands with a 5-card or longer Club suit that do NOT meet these requirements are opened with either 1@D or 1NT, depending on range and shape.
+
+|
+pg| ***** 49 ***** |
+
+
+bt||
+nt|^b@2^z@3|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  It is worth noting at this stage that, hands containing a reasonable 6-card @Club suit AND a 4-card Major are opened with 3@C Roman, which we'll come to later in the series.
+
+If partner does respond to the 2@C Opening, subsequent bidding is primarily geared to playing in No Trumps if possible, or in an 8-card or better major suit fit, but Club contracts are also routine.
+
+It is quite difficult, if not impossible, to arrive in a Diamond contract.
+
+That's mainly because Responder cannot introduce Diamonds naturally, because the 2@D response to 2@C is an artificial enquiry (coming in a bit).
+
+
+As stated earlier, the 2@C Opening is not forcing, and because Opener has promised a decent suit, the most common action from a weak hand which has nothing better to suggest will be to pass.
+
+Responses to the 2@C Opening are almost completely natural and, for the most, part non-forcing.
+
+The main exception to this is the 2@D Forcing Relay which ANY decent responding hand uses to explore for the right contract.
+
+
+|fp|t-title|at|The Non-Forcing Responses to 2@C    @-   The 2@H and 2@S Responses|fp||at|
+
+The 2@H and 2@S Responses promise at least a 5-card suit (more commonly a 6-card suit, though) and show 7-10 points (never more than 10).
+
+They are non-forcing and should  ^*bnot^*N  be used on stronger hands.
+|
+pg| ***** 50 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 2, thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 2|sv|b|sk|w|sk||
+md|2,SA98HJTDQ4CAK8632,,SQ62HKQ9754DJT5C5|
+nt|^b@2^z@3|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 2      |
+mb|?|
+pg| ***** 51 ***** |
+
+
+mb|2C|an|11-15 with 6+@C OR 5@C +4@H/@S|
+pg| ***** 52 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+at|^*bMM:^*n  East's bid here would be ?
+|
+pg| ***** 53 ***** |
+
+
+mb|2H|
+at|^^The 2@H or 2@S response ALWAYS denies any good support for clubs and is primarily a rescue bid.|
+pg| ***** 54 ***** |
+
+
+mb|pp|
+at|^^^^That doesn't preclude Opener continuing if they have a maximum hand with support for Responder's Major.
+|
+pg| ***** 55 ***** |
+
+
+bt||
+nt|^b@2^z@3|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  If responder is weak with a long suit and has no tolerance for @C, the likelyhood is that the hand is better played in THEIR suit.
+
+So the 2@C-2@H and 2@C-2@S sequences are drop dead bids UNLESS Opener is upper range AND has a decent fit for Responder's Major.  In extremis, as I said, you can make these bids with a 5-card suit, but more normally, they ought to be 6+
+
+The 2@C-2NT response shows 11-12 points balanced, and normally denies possession of a 4-card major (otherwise Responder would normally bid 2@D).  Bidding proceeds naturally.
+
+3@C from Opener is "to play" with a marked weakness in one outside suit (normally a Major).  Failing that, Opener can start bidding stops "upwards" if they don't pass 2NT or bid 3NT.
+
+A Single raise in Clubs (2@C-3@C) normally shows about a 9-count and good trump support and is a mild invitation.  Responder may be balanced or unbalanced, but usually relatively balanced (else 4@C from Responder) and so Opener, with around 9 or 10 hcp, can bid 3NT or stops upwards.
+
+That takes care of the NON-forcing responses to 2@C.
+
+
+
+|fp|t-title|at|The Alpha Responses to  2@C    @-    3@D,  3@H  and  3@S|fp||at|
+
+3@D,  3@H  and  3@S   are game-forcing (Alpha Asking Bids once we're using Asking Bids).  
+
+They will normally ^*bNOT^*n have decent support for Clubs, and will often be a distributional 2-suiter where responder needs to take control.
+|
+pg| ***** 56 ***** |
+
+
+qx|R 2D,wide|
+nt|^b@2^z@3|
+at|^^^^|
+fp|t-title|at|The Forcing Relay  2@d  Response|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  The 2@D Response to a 2@C Opening shows 11+ points in a hand worth a solid invitation to game.
+
+It is a forcing relay and subsequent bidding is not natural.
+
+2@C - 2@D MUST be alerted, as well as most of the subsequent rebids.
+
+Almost all strong hands go this route except for distributional 2-suited hands WITHOUT Club support (which might use an Asking Bid sequence starting with Alpha -  3@D,  3@H  and  3@S).
+
+The structure over the 2@D Forcing Relay is fairly constrained, with responses by Opener having fairly exact meanings.
+
+There is a potential further forcing relay of 3@D over Opener's rebid, which we'll get to shortly.
+
+
+^*bMM:^*n  At this point in the lesson Oliver introduced some 'alternative simplifications', which I have omitted, as they are not used in the web site notes or in the example hands.  
+
+His original text is, of course, available on the web site under Teaching, download the chat log for the 2@C Opening Session. 
+
+Once consequence is that the next section follows the site notes for the 2@d Response.  The notes can be found at -
+
+^d^*hhttp://bbo.pigpen.org.uk/2c.php##2d^*n      Title:  ^*b2@D Forcing Enquiry^*n
+
+So his means that in a few places, I have had to put words in to Oliver's mouth (pen) to match the text on his site.
+|
+pg| ***** 57 ***** |
+
+
+nt|^b@2^y@3|
+at|^^^^^^|
+fp|t-title|at|2@C - 2@D    then   2@H  or  2@S    Shows a 4-Card Major      (System on the Site)|fp||at|
+
+First - three exceptions 
+
+^c2@C - 2@D -  3@d    ^gshows exactly  ^*b4405^*n  shape (Diamond void)
+^c2@C - 2@D -  3@h    ^gshows exactly  ^*b3415^*n  shape (singleton Diamond) and  ^*bmin^*n  range   (11 - 13). 
+^c2@C - 2@D -  3@s    ^g@2shows exactly  ^*b4315^*n  shape (singleton Diamond) and  ^*bmax^*n  range  (14 - 15). 
+
+
+^c2@C - 2@D -  2@h    shows 4-card Hearts. If Opener is exactly   ^*b3415^*n  shape (ie: with 3-card Spades), then they are  ^*bmax^*n  (14 - 15)  but with other shapes they can be in either range.
+
+^c2@C - 2@D -  2@s    shows 4-card Spades. If Opener is exactly  ^*b4315^*n  shape (ie: with 3-card Hearts), then they are  ^*bmin^*n  (11 - 13)  but with other shapes they can be either range.
+^b@2^z@3
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Have a look at the ^*hhttp://bbo.pigpen.org.uk/2c.php##2d^*nwebsite notes^*x for full details of how we suggest you play Opener's rebids in a Major over the 2@D Enquiry.   For example -
+
+
+If Opener rebids 2@H or 2@S and Responder makes the SECOND forcing enquiry of 3@D, then Opener shows a -
+
+^c3-card fragment in the OTHER Major by bidding it, 
+
+^c3-card fragment in Diamonds by rebidding their 4-card Major, or 
+
+^cbids 3NT with  2425  or  4225  shape.
+|
+pg| ***** 58 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Incidentally: This is the reason why we tend to play   
+
+2@C - 2@D - 2@H - 3@D - 3@S     as showing a MAXIMUM            ^*b3415^*n  hand (because we've gone past 3@H), and 
+
+2@C - 2@D - 2@S - 3@D - 3@H     as showing a LOWER-RANGE  ^*b4315^*n  hand (because we can still play in 3@S)
+
+
+The 2@H and 3@S rebids show maximum hands if Opener has a 3-card holding in the other Major, whereas the 2@S and 3@H rebids show minimum hands in that situation.
+
+I do not propose to go into the reasons for this now, but you can look it up on the site.  Have a look at the ^*hhttp://bbo.pigpen.org.uk/2c.php##2d^*nwebsite notes^*x for full details of how we suggest you play Opener's rebids in a Major over the 2@D Enquiry.
+
+
+
+^*bMM:^*n  If this is the first time you have been through this material then NOW might be good time to jump back to the start and scan through my graphical summary.  
+|
+pg| ***** 59 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 3,thin|
+st||
+nt|^b@2^z@3|
+pn|South,West,North,East|rh||ah|Teach 3|sv|e|sk|e|sk||
+md|4,SAT52HAT97DAJ4C32,,SKJ97H5DT98CAKJ84|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 3         |
+mb|?|
+pg| ***** 60 ***** |
+
+
+mb|2C|an|11-15 with 6+@C OR 5@C +4@H/@S|
+pg| ***** 61 ***** |
+
+
+sj|c|mb|p|mb|2D|an|Forcing enquiry|
+pg| ***** 62 ***** |
+
+
+sj|c|mb|p|mb|?|
+pg| ***** 63 ***** |
+
+
+mb|2S|an|4-card @S  if 4315 (which East is not) then are MIN (11-13) |
+pg| ***** 64 ***** |
+
+
+sj|c|mb|p|mb|3D|an|2nd Forcing enquiry|
+pg| ***** 65 ***** |
+
+
+sj|c|mb|p|mb|?|
+pg| ***** 66 ***** |
+
+
+mb|3S|an|4-card @S  4135 shape|
+pg| ***** 67 ***** |
+
+
+mb|p|mb|4S|
+pg| ***** 68 ***** |
+
+
+mb|pp|
+at|         Alternatively, West might well just bid 4@S over 2@S
+
+
+Any comments or questions?|
+pg| ***** 69 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 4,thin|
+nt|^b@2^z@3|
+pn|South,West,North,East|rh||ah|Teach 4|sv|-|sk|w|sk||
+md|2,SAT7HA983D3CAQT98,,S2HKQT2DAQT92CKJ3|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 4    |
+mb|?|
+pg| ***** 70 ***** |
+
+
+mb|2C|an|11-15 with 6+@C OR 5@C +4@H/@S|
+pg| ***** 71 ***** |
+
+
+sj|c|
+mb|p|mb|2D|an|Forcing enquiry|
+pg| ***** 72 ***** |
+
+
+sj|c|
+mb|p|mb|2H|an|4-card @h|
+pg| ***** 73 ***** |
+
+
+sj|c|
+mb|p|mb|3D|an|2nd Forcing enquiry|
+pg| ***** 74 ***** |
+
+
+sj|c|
+mb|p|mb|3S|an|Singleton @D   ie.  3415  shape|
+pg| ***** 75 ***** |
+
+
+sj|c|
+mb|p|mb|4D|an|RCKB 0314|
+pg| ***** 76 ***** |
+
+
+sj|c|
+mb|p|mb|5C|an|0 or 3|
+pg| ***** 77 ***** |
+
+
+sj|c|
+mb|p|mb|6H|
+pg| ***** 78 ***** |
+
+
+sj|c|mb|p|mb|p|
+pg| ***** 79 ***** |
+
+
+at|In some of the Major suit openings where we ended up showing a singleton by bidding the suit below, we then used the singleton suit as Ace Asking.  Once Asking Bids come into things, we can  use it (the singleton suit) as a Beta Asking Bid. For now we'll use it as RKCB 0314.  
+
+Opener has shown an UPPER-range hand by effectively reversing into his 3-card Spades over the 3@D Enquiry, so justifying the 4@d enquiry.  Not really worth asking for Kings here East has a @S singleton and West known to have a @D singleton, and we have a BIG 2-suited fit in Clubs and Hearts.
+|
+pg| ***** 80 ***** |
+
+
+bt||
+nt|^b@2^z@3|
+at|^^^^|
+fp|t-title|at|2@C - 2@D -  2NT    shows a 6-card @Club suit with 2 suits outside stopped|fp||at|
+
+|
+cp|red|at|^*bOliverC:^*n|cp||at|  The sequence  2@C-2@D-2NT  shows a 6-card @Club suit with 2 suits outside stopped.
+
+Now 3@C from responder is to play and 3@D asks which 2 suits. Opener bids 
+    ^cthe major suit they CANNOT stop,   or
+    ^c3NT with no diamond stop.
+    
+So over  2@C - 2@D - 2NT - 3@D -
+    ^c3@H shows Spades and Diamonds Stopped
+    ^c3@S shows the RED suits stopped, and
+    ^c3NT shows the MAJORS stopped.
+    
+The easy way to remember this is that over the 3@D 2nd Enquiry you can only "show" one suit, so you show the suit you CANNOT stop, promising stops in the other two.
+
+The sequence  2@C - 2@D - 3@C  shows a 6-card club suit with only 1 suit outside stopped. Responder can pass this and 3@D asks for more details and this time Opener bids the major suit they CAN stop, or 3NT with a diamond stop.
+
+Again, since you can only show ONE suit, this time you show the suit you CAN stop. In both cases the 3NT rebid relates to the @D suit.
+
+So over  2@C - 2@D - 3@C - 3@D - 
+    ^c3@H shows Hearts Stopped
+    ^c3@S shows Spades stopped, and
+    ^c3NT shows Diamonds stopped. 
+|
+pg| ***** 81 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 5,thin|
+st||
+nt|^b@2^z@3|
+pn|South,West,North,East|rh||ah|Teach 5|sv|n|sk|e|sk||
+md|3,SA943HT32DAQT4CQ8,,SJT7HAQ5D3CAKJT63|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 5       |
+mb|p?|
+pg| ***** 82 ***** |
+
+
+mb|2C|an|11-15 with 6+@C OR 5@C +4@H/@S|
+pg| ***** 83 ***** |
+
+
+sj|c|
+mb|p|mb|2D|an|Enq|
+pg| ***** 84 ***** |
+
+
+sj|c|
+mb|p|
+mb|3C|an|6-card @C, 1 outside stop|
+pg| ***** 85 ***** |
+
+
+sj|c|
+mb|p|mb|3D|an|Which stopped?|
+pg| ***** 86 ***** |
+
+
+sj|c|
+mb|p|mb|3H|an|@H stop|
+pg| ***** 87 ***** |
+
+
+sj|c|
+mb|p|mb|3N|
+pg| ***** 88 ***** |
+
+
+sj|c|
+mb|pp|
+pg| ***** 89 ***** |
+
+
+at|Since Responder's hand is a complete unknown, they are the Captain over the response to the 3@D 2nd Enquiry.
+
+So, for example, Opener has shown that they have Hearts stopped, and Responder now bids 4@H rather than 3NT, this is 100% "to play" since Responder might well have a 5 or even a 6-card Major and still go via the 2@D forcing Enquiry.|
+pg| ***** 90 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 6,thin|
+st||
+nt|^b@2^z@3|
+pn|South,West,North,East|rh||ah|Teach 6|sv|b|sk|s|sk||
+md|1SAT9HQT6D3CAK9653,,SQJ72HAK82DAT5CQ2,|
+mb|?|
+pg| ***** 91 ***** |
+
+
+mb|2C|an|11-15 with 6+@C OR 5@C +4@H/@S|
+pg| ***** 92 ***** |
+
+
+sj|c|
+mb|p|mb|2D|an|tell me more|
+pg| ***** 93 ***** |
+
+
+sj|c|
+mb|p|mb|2N|an|6-card @C, 2 outside stops|
+pg| ***** 94 ***** |
+
+
+sj|c|
+mb|p|mb|3D|an|Which not stopped ?|
+pg| ***** 95 ***** |
+
+
+sj|c|
+mb|p|mb|3N|an|No @D stop|
+pg| ***** 96 ***** |
+
+
+sj|c|
+mb|p|mb|4D|an|RKC 0314|
+pg| ***** 97 ***** |
+
+
+sj|c|
+mb|p|mb|4h|an|0/3|
+pg| ***** 98 ***** |
+
+
+sj|c|
+mb|p|mb|6C|
+pg| ***** 99 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 100 ***** |
+
+
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 6      Even though South might still have 2 or even 3 @D but without a stop, we treat @D as their "short" suit.  Clubs are implicitly the agreed suit here (if anything).   So AK@C and A@S
+
+Since South MUST have the Q@H, there is no room for them to have any other kings beside the K@C.  If we wanted to ask for kings we could use 4NT, but that might be ambiguous, so better to use 5@D asking for Kings.|
+pg| ***** 101 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 7,thin|
+nt|^b@2^z@3|
+pn|South,West,North,East|rh||ah|Teach 7|sv|e|sk|n|sk||
+md|3SQT62HA94DAJT2C75,,SK8HQT3D93CAKJT42,|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 7       |
+mb|?|
+pg| ***** 102 ***** |
+
+
+mb|2C|an|11-15 with 6+@C OR 5@C +4@H/@S|
+pg| ***** 103 ***** |
+
+
+sj|c|
+mb|p|mb|2D|an|tell me more|
+pg| ***** 104 ***** |
+
+
+sj|c|
+mb|p|mb|2N|an|6-card @C, 2 outside stops|
+pg| ***** 105 ***** |
+
+
+sj|c|
+mb|p|
+mb|3D|an|Which not stopped ?|
+pg| ***** 106 ***** |
+
+
+sj|c|
+mb|p|mb|3N|an|No @D stop|
+pg| ***** 107 ***** |
+
+
+sj|c|
+mb|p|mb|3N|
+pg| ***** 108 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+
+
+at|South might be a little worried if no @H stop, since Axx not very strong to hold @H, especially given the lack of a @C honour in their hand, but @D's are no worry.
+
+As you can see, we are sometimes able to get to quite "thin" 3NT games.
+
+Any questions?|
+pg| ***** 109 ***** |
+
+
+bt||
+nt|^b@2^z@3|
+at|
+
+lute57:  Is it OK to decrease the club suit discipline in 3rd seat?
+
+|
+cp|red|at|^*bOliverC:^*n|cp||at|  I prefer not, but 2@C IS a pretty pre-emptive opening, so if that suits your style, go for it.
+
+
+The sequence 2@C - 2@D - 3@D is effectively a "free" sequence.
+
+I tend to use it to show hands with 4405 shape but you might find another hand - type that suits your style better.
+
+Classic Precision uses the 3@D rebid to show that shape anyway.  
+
+The sequence  2@C - 2@D - 3NT  shows a 6-card club suit with all 3 outside suits stopped.  Responder should be aware that in these circumstances, although Opener is likely to be maximum, the Club suit may not be first class.
+
+Over  2@C - 2@D - 2NT - 3@D - 3x  and  2@C - 2@D - 3@C - 3@D - 3x    Opener must bear in mind that Responder is FIRMLY the Captain of the Hand.
+
+Responder may not be remotely interested in playing in 3NT, but simply establishing where Opener's outside stops are.  After the response to the 3@D Relay, Responder will normally set the final contract (unless they use Beta).
+
+At the moment, for Beta, think RKCB.  If Responder bids 4@C immediately over any Response to the 2@D Forcing Relay, then this is Gamma in Clubs.
+
+If, however, Responder bids 4@C over the response to the 3@D further relay (over 3@C), then this is invitational only, since clearly Responder has a reasonable hand, but there is a fatal weakness (for 3NT) in one of the outside suits.
+
+Over 2NT  i.e.    2@c - 2@d - 2NT - 3@D -   then  4@C is forcing.
+
+Before you start using the Asking Bids, better to think of 2@C - 2@D - 2x/3x - 4@C are agreeing Clubs, inviting slam, and asking Opener to cue - bid.|
+pg| ***** 110 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 8,thin|
+st||
+nt|^b@2^z@3|
+pn|South,West,North,East|rh||ah|Teach 8|sv|b|sk|s|sk||
+md|4SAKTH3DJ97CKQT532,,SQ2H854DAT632CAJ8,|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 8         |
+mb|p?|
+pg| ***** 111 ***** |
+
+
+mb|2C|an|11-15 with 6+ C OR 5 C +4@H/@S|
+pg| ***** 112 ***** |
+
+
+sj|c|
+mb|p|mb|2D|an|Enquiry|
+pg| ***** 113 ***** |
+
+
+sj|c|
+mb|p|mb|3C|an|6-card @C, 1 outside stop|
+pg| ***** 114 ***** |
+
+
+sj|c|
+mb|p|mb|3D|an|Which stopped?|
+pg| ***** 115 ***** |
+
+
+sj|c|
+mb|p|mb|3S|an|S stop|
+pg| ***** 116 ***** |
+
+
+sj|c|
+mb|p|mb|4C|an|invitational in C|
+pg| ***** 117 ***** |
+
+
+sj|c|
+mb|p|mb|5C|
+pg| ***** 118 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+
+
+at|Here, clearly 3NT is a non-starter.
+
+So because we asked with the 2nd Enquiry FIRST, now 4@C is merely invitational.
+
+Any questions ?|
+pg| ***** 119 ***** |
+
+
+bt||
+nt|^b@2^z@3|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  To re-iterate, where Opener shows a 4-card Major at the 2-level and Responder uses the 
+second Relay (of 3@D) then Opener's rebids are constrained:  
+
+i.e. after    2@c - 2@d - 2Maj - 3@d    then 
+^c@2
+A Bid in the OTHER Major at the 3-level shows a 3-card holding with a Diamond Singleton.
+
+A REBID of their 4-card Major shows 3-card Diamonds and a singleton in the OTHER Major.
+
+3NT shows ANY 2425 or 4225 hand
+
+4@C shows 4306 or 3406 shape (the one 4-6 hand that does NOT use the 3@C Opener)
+
+4@D shows 4-card Diamonds and a VOID in the other Major
+
+^b@2Full details of these sequences can be found on the ^*hhttp://bbo.pigpen.org.uk/2c.php##2d^*nwebsite^*x.
+|
+pg| ***** 120 ***** |
+
+
+qx|OCal,hide|
+nt|^b@2^z@3|
+fp|t-title|at|Dealing with Overcalls of  2@c|fp||at|
+
+|
+cp|red|at|^*bOliverC:^*n|cp||at|  If Opps overcall 2@C, then a double is negative and effectively takes the place of the 2@D Forcing Enquiry. (As does Re-Double over a takeout double). 
+
+Opener rebids normally (as they would over the 2@D Forcing Enquiry) if they can.  If Opener has a 4-card holding in Opps' suit, they will normally PASS.  A Double by Responder over   2@C - (2@H)  and  2@C - (2@S)  is negative, suggesting a 4-card holding in the other Major.
+
+I already said   2@C - (2x) - X  is effectively negative but takes the place of the forcing enquiry Worth noting at this stage that 2@C - (X) - 2@D is NOT the forcing Relay, but now a fundamentally weak rescue with long Diamonds, a hand that cannot normally be shown.
+
+Responder should bear in mind, however, that there is normally no need for them to bid ANYTHING over a takeout double by Opps, since it is uncommon for that kind of a double to be left in for penalties when Opener is known to have a good 5-card or longer suit.
+
+That's especially true when Opener's LHO doubles for t/o and East with Clubs is of course sitting UNDER Opener.  So normally there is no need for Responder to panic over ANY interference.  
+
+2NT by Responder is Lebensohl, forcing a rebid of 3@C, with "normal" continuations.
+
+If Responder makes the replacement forcing enquiry bid, however (eg: 2@C - (X) - XX or 2@C - (2@H) - X), then 2NT by Opener is NOT Lebensohl, but simply the Forcing Enquiry response showing the 6-card suit with 2 outside stops.
+
+2@C - (2@H) - 2NT   is Lebensohl, forcing a 3@C rebid from Opener.  This is a common sequence should Responder simply want to compete in Clubs without inviting anything further.  Otherwise, over interference, continuations are natural and for the most part non - forcing (but bear in mind that in a sequence such as -
+
+2@C - (2@S) - ???   a 3@D or 3@H bid from Responder now is definitely FORCING and showing a decent hand, probably with a 6-card or longer suit, as per competitive Lebensohl, and will probably have a tolerance for Clubs, at least.|
+pg| ***** 121 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 9,thin|
+st||
+nt|^b@2^z@3|
+pn|South,West,North,East|rh||ah|Teach 9|sv|e|sk|w|sk||
+%% 2SJT654H96DTCJ9765,S3HKJ83DK95CAQT84,SAKQ8H542DQJ843C3,S972HAQT7DA762CK2
+md|2,S3HKJ83DK95CAQT84,,S972HAQT7DA762CK2|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 9    |
+mb|?|
+qx||
+
+mb|2C|an|11-15 with 6+ @C OR 5 @C +4@H/@S|
+pg| ***** 122 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 123 ***** |
+
+
+sj|L|
+mb|r|an|Enquiry|
+pg| ***** 124 ***** |
+
+
+sj|L|
+mb|2S|
+pg| ***** 125 ***** |
+
+
+sj|L|
+mb|d|an|4-card @H|
+pg| ***** 126 ***** |
+
+
+sj|c|
+mb|p|mb|3H|
+pg| ***** 127 ***** |
+
+
+sj|c|
+mb|p|mb|4H|
+pg| ***** 128 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 129 ***** |
+
+
+at|So 3@H is a good invitation to game here.
+
+lute57:  Responder's 3@H is not forcing correct?
+
+|
+cp|red|at|^*bOliverC:^*n|cp||at|  If Opener has a rock bottom min, they can pass but if mid-range or better they should bid game. Clearly their @S holding might have a bearing.
+|
+pg| ***** 130 ***** |
+
+
+--------------------------------------------------------------------
+qx|Prac,wide|
+bt||
+nt|^b@2^z@3|
+at|^^^^|
+fp|t-title|at|Practice Hands|fp||at|
+
+|
+cp|red|at|^*bOliverC:^*n|cp||at|   OK, let's practice some hands
+
+Jim jumps right into Lute's seat? sacrilege
+^^
+soko52: hi
+
+lute57:  leave out the competition bids?
+
+|
+cp|red|at|^*bOliverC:^*n|cp||at|  unless it's 100% obvious to bid something
+^^
+lute57:  too busy eating a duck
+
+GatorJim:  Quack!
+
+|
+cp|red|at|^*bOliverC:^*n|cp||at|  lol
+^^
+lute57:  click on Jim's name for the rib
+
+GatorJim:  :)
+
+GatorJim:  The GatorDuck will NOT nibble you to death...
+|
+pg| ***** 131 ***** |
+
+
+------------------------------------------------------------------------------------------------  
+%% Alert Insert start --------------------------------------------------------------------------
+nt|^z@3^b@2|
+at|^^^^|
+%%   header box with text
+ht|b|cs|y|fp||at|^b{ ^^|
+ht|c|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^|fp|x-insertAlert|at|^- A small insert on Alerts^*n^-^^|cs||fp||cp||at|^^|
+
+ht|d|at|^^|
+cp||at|^*bMM:^*n|cp||at|  We all know we have to alert when playing  'proper'  bridge.
+
+The laws of the game say that what we have to put in the alert is  ^*b our agreement with partner ^*n about that bid.
+
+While creating these bridge movies, I have gone through and added to, or amended, many of the alerts that were in the original text.
+
+I have changed them from being ^*b REAL ^*n alerts, that you should give to real opponents, and have replaced them with ^*b STUDY ^*n alerts.   Study alerts are only useful to students of Oliver's Precision.  Of course in many cases no changes were needed.   For example    1@c     16+ Any dist except 16-23 4441
+
+It is particularly important that we make the alerts for  ^*b Asking bids and their responses^*n,  as clear as possible
+
+	    ^c ^*b Study Alert ^*n           ^i ^*b Real Alert ^*n                ^o ^*b It would be great if you could add ^*n
+     ^b      @-@-@-@-@-@-@-@-@-@- ^h       @-@-@-@-@-@-@-@-@-@-   ^n       @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-
+		^c Beta    Relay Beta ...          ^i Gen Ctrl Ask                    ^o A = 2,  K = 1 
+		^c Alpha                           ^i Asking  in                      ^o Trump ...
+		^c Gamma                           ^i Asking  in partners suit        ^o Trump ...
+		^c Epsilon                         ^i Specific Ctrl Ask               ^o in ... 
+		^c Hxx                             ^i Hxx                             ^o in ... 
+		^c none  or  1st & 2nd             ^i none  or  1st & 2nd             ^o [xxx, AKx(x)]
+		^c 3rd rd ctrl                     ^i 3rd rd ctrl                     ^o [xx, Qxx(x), Qx]
+		
+An easy mistake in reply to an Epsilon is when, say, you hold ^*b Q76 ^*n in the suit, and so give only ^*b Qxx ^*n in the alert.   THAT  IS  WRONG.  The agreement is ^*b 3rd round control ^*n and that is what should be told to the opps.   
+
+The ^*b ethical ^*n problem with telling too much to your opps is that it disadvantages the other pairs who will play your opponents cards.|
+%% Alert Insert End ----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------  
+pg| ***** 132 ***** |
+
+
+--------------------------------------------------------------------
+st||
+md|1,,,|sk|n|
+nt|^b@2^z@3|
+cp||at|^*bMM:^*n|cp||at|  ^*bPractice Hands  @-  How to^*n
+^^With all Practice Hands, when you see the |fp|g-graphSuit|cp||at|^*b ? ^*n|cp||fp||at| in the bidding area, please @- |cp|red|at|^*bStop^*n|cp||at| @- and think through your bid.
+If you can't work it out then the best thing is to do, is  @- go back and re-read that part of Oliver's lesson.|
+pg| ***** 133 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 1,hide|
+st||
+pn|GatorJim,RogerPfi,soko52,lute57|rh||ah|Practice 1|sv|e|sk|n|
+md|3SK984HA43D7532CJ5,,S5HQT7DKQ9CKQT973,|
+mb|?|
+nt|^b@2^z@3|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 1       |
+pg| ***** 134 ***** |
+
+
+mb|2C|an|11-15 with 6+@C OR 5@C +4@H/@S|
+pg| ***** 135 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 136 ***** |
+
+
+mb|p|
+pg| ***** 137 ***** |
+
+
+sk||
+pg| ***** 138 ***** |
+
+
+at|^^^^wd.     Here, South has nothing to say.|
+pg| ***** 139 ***** |
+
+
+md|1,,,|nt|^^^b cleared|
+pg| ***** 140 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2,wide|
+pn|GatorJim,RogerPfi,soko52,lute57|rh||ah|Practice 2|sv|n|
+md|4,SK42HA97642DQ73C5,,SQT95HK5DJ6CAQJT2|
+mb|?|
+nt|^b@2^z@3|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2       |sk|e|
+pg| ***** 141 ***** |
+
+
+mb|2C|an|11-15 with 6+@C OR 5@C +4@H/@S|
+pg| ***** 142 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 143 ***** |
+
+
+mb|2H|
+pg| ***** 144 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 145 ***** |
+
+
+mb|p|
+pg| ***** 146 ***** |
+
+
+sk||
+pg| ***** 147 ***** |
+
+
+at|^^^^wd.    West with NO Club tolerance and 6-card @H has something better to suggest.
+^^East is not quite good enough to move over 2@H  (needs to be max with better @H support).|
+pg| ***** 148 ***** |
+
+
+md|1,,,|nt|^^^b cleared|
+pg| ***** 149 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 3,thin|
+pn|GatorJim,RogerPfi,soko52,lute57|rh||ah|Practice 3|sv|e|sk|s|
+md|1SKT7H3DAQ5CAJT974,,SA96543H875DKJ6C8,|
+mb|?|
+nt|^b@2^z@3|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 3         |
+pg| ***** 150 ***** |
+
+
+mb|2C|an|11-15 with 6+@C OR 5@C +4@H/@S|
+pg| ***** 151 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 152 ***** |
+
+
+mb|2S|
+pg| ***** 153 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 154 ***** |
+
+
+mb|3S|
+pg| ***** 155 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 156 ***** |
+
+
+mb|4s|
+pg| ***** 157 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 158 ***** |
+
+
+mb|p|
+pg| ***** 159 ***** |
+
+
+sk||
+pg| ***** 160 ***** |
+
+
+at|^^^^Here, South has a good fit for  @S  and is upper-range so invites also worth noting that South has the kind of @C holding which fits none too badly with a singleton opposite.
+^^If South had KJ9xxx in @C, they might be slower to move over 2@S,  hopefully you get the point.|
+pg| ***** 161 ***** |
+
+
+md|1,,,|nt|^^^b cleared|
+pg| ***** 162 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 4,wide|
+pn|GatorJim,RogerPfi,soko52,lute57|rh||ah|Practice 4|sv|e|sk|w|
+md|2,ST4HAT96DK5CKQT62,,SKQ9HK73DQJ72C983|
+mb|?|
+nt|^b@2^z@3|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 4|
+pg| ***** 163 ***** |
+
+
+mb|2C|an|11-15 with 6+@C OR 5@C +4@H/@S|
+pg| ***** 164 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 165 ***** |
+
+
+mb|2N|an|11-12, balanced, no 4-card Major|
+pg| ***** 166 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 167 ***** |
+
+
+mb|p|
+pg| ***** 168 ***** |
+
+
+sk||
+pg| ***** 169 ***** |
+
+
+at|^^^^The East hand here is perfect for a 2NT response to 2@C     11-12, balanced, no 4-card Major.
+^^ ^d If East was 13+ they'd likely rebid 3NT rather than 2NT, so 2NT is effectively limited to 12.|
+pg| ***** 170 ***** |
+
+
+md|1,,,|nt|^^^b cleared|
+pg| ***** 171 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 5,thin|
+nt|^b@2^^|
+pn|GatorJim,RogerPfi,soko52,lute57|rh||ah|Practice 5|sv|e|sk|n|
+md|3SA72HQT95D75CK865,,S3HA6DKQ64CAJT973,|
+mb|?|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 5|
+pg| ***** 172 ***** |
+
+
+mb|2C|an|11-15 with 6+@C OR 5@C +4@H/@S|
+at|^l 2@C ^p Oliver supplied this sequence|
+pg| ***** 173 ***** |
+
+
+sj|c|
+mb|p?|
+at|^^^h|
+pg| ***** 174 ***** |
+
+
+mb|3c|
+at|^n 3@C ^p Perfect hand to make a mild invitation|
+pg| ***** 175 ***** |
+
+
+sj|c|
+mb|p?|
+at|^^ ^h|
+pg| ***** 176 ***** |
+
+
+mb|3d|
+at|^l 3@d ^p Now North can bid 3@d showing his values.|
+pg| ***** 177 ***** |
+
+
+sj|c|
+mb|p?|
+at|^^ ^h|
+pg| ***** 178 ***** |
+
+
+mb|3H|
+at|^n 3@H ^p Showing a stop and asking for help in @S's|
+pg| ***** 179 ***** |
+
+
+sj|c|
+mb|p?|
+at|^^ ^h|
+pg| ***** 180 ***** |
+
+
+mb|5C|
+at|^l 5@C ^p It is now easy for North to bid 5@C rather than 3NT|
+pg| ***** 181 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 182 ***** |
+
+
+mb|p|
+pg| ***** 183 ***** |
+
+
+sk||
+pg| ***** 184 ***** |
+
+
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  EW hardly get a look-in despite their Major holdings.|
+pg| ***** 185 ***** |
+
+
+md|1,,,|nt|^^^b cleared|
+pg| ***** 186 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 6,thin|
+pn|GatorJim,RogerPfi,soko52,lute57|rh||ah|Practice 6|sv|e|sk|e|
+md|4,SK962HJT93CQ9832,,SA4H4DT987CAKT765|
+nt|^b@2^z@3|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 6          |
+pg| ***** 187 ***** |
+
+
+mb|2C|an|11-15 with 6+@C OR 5@C +4@H/@S|
+pg| ***** 188 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 189 ***** |
+
+
+mb|4C|
+pg| ***** 190 ***** |
+
+
+sj|L|
+mb|d|an|Take Out|
+pg| ***** 191 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 192 ***** |
+
+
+mb|5c|
+pg| ***** 193 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 194 ***** |
+
+
+mb|p|
+pg| ***** 195 ***** |
+
+
+sk||
+pg| ***** 196 ***** |
+
+
+at|2@C - 4@C   is a pre-emptive and fundamentally weak raise with really good trump support and shape, but not much in the way of HCP.|
+at|^^^^Even if North doubles for t/o, East will have no problem bidding 5@C and NS might well leave them there.
+^^OK, last hand coming up, then I must go.|
+mb|5C|
+pg| ***** 197 ***** |
+
+
+md|1,,,|nt|^^^b cleared|
+pg| ***** 198 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 7,thin|
+qx|p 7|
+pn|GatorJim,RogerPfi,soko52,lute57|rh||ah|Practice7|sv|b|sk|w|
+md|1,SQJ5HKJ82D5CAQJ73,,SAT4HAT95DA973CT6|
+mb|p?|
+nt|^b@2^z@3|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 7^h|
+pg| ***** 199 ***** |
+
+
+mb|2C|an|11-15 with 6+@C OR 5@C +4@H/@S|
+pg| ***** 200 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 201 ***** |
+
+
+mb|2D|an|Enquiry|
+pg| ***** 202 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 203 ***** |
+
+
+mb|2@h|an|4-card @H Hearts|
+pg| ***** 204 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 205 ***** |
+
+
+mb|3D|an|2nd Enquiry|
+pg| ***** 206 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 207 ***** |
+
+
+mb|3S|an|3415 (max)|
+pg| ***** 208 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 209 ***** |
+
+
+mb|4D|an|Short Beta|
+pg| ***** 210 ***** |
+
+
+at|Since West has shown a singleton @D, 4@D is now RKCB or Beta, depending on whether you've got Asking Bids in the frame|
+pg| ***** 211 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 212 ***** |
+
+
+mb|4S|an|3 controls|
+pg| ***** 213 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 214 ***** |
+
+
+mb|5H|
+pg| ***** 215 ***** |
+
+
+sj|c|
+mb|p?|
+at|^^ ^h|sk|w|
+pg| ***** 216 ***** |
+
+
+mb|p|
+pg| ***** 217 ***** |
+
+
+sk||
+pg| ***** 218 ***** |
+
+
+at|^^OK, wd. Slam explored and declined|
+pg| ***** 219 ***** |
+
+
+at|^^^^With a bare 12-count, East might have just signed off over  3@S,   but no harm in looking for the magic fit.|
+pg| ***** 220 ***** |
+
+
+Goodbyes--------------------------------------------------------------------
+qx|End|
+bt||
+nt|^b@2^z@3|
+at|^^^^
+lute57:  thanks for the wonderful lesson Oliver
+
+
+RogerPfi: yes  thank you
+
+
+Major_Blue: ty Oliver
+
+
+GatorJim:  ty Oliver
+
+
+|
+cp|red|at|^*bOliverC:^*n|cp||at|  Ok, we'll leave it there for this week. Next week we'll be looking at the 1 @D Openings and Responses.
+
+Hope to see you all then
+
+bye for now
+
+
+
+soko52: ty
+
+
+dhart:  tks o
+
+
+
+
+
+
+
+
+

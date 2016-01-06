@@ -150,7 +150,7 @@ public class Qstr_3rd {
 		{
 			FragAnal fa = g.fragAnals[0];
 			if (fa.mpatRtn.rating > 0) {
-				System.out.println(h.compass.toLongStr() + "  Get to Partners hand ");
+//				System.out.println(h.compass.toLongStr() + "  Get to Partners hand ");
 				stra.add(new StraStep(Strategy.GetToHand, "", Rank.Invalid, Suit.Invalid, g.partner.compass));
 				return;
 			}

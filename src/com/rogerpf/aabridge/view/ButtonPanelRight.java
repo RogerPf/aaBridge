@@ -24,6 +24,11 @@ public class ButtonPanelRight extends JPanel {
 	// ---------------------------------- CLASS -------------------------------------
 	private static final long serialVersionUID = 1L;
 
+	RpfResizeButton ddsShowBids;
+	RpfResizeButton ddsAnalyse;
+	RpfResizeButton ddsLabel;
+	RpfResizeButton ddsScoreOnOff;
+
 	RpfResizeButton hiddenHandsShowHide_b;
 	RpfResizeButton hiddenHandsClick1_b;
 	RpfResizeButton hiddenHandsClick2_b;
@@ -36,15 +41,19 @@ public class ButtonPanelRight extends JPanel {
 		// setBackground(Aaa.baizePink);
 		// setBackground(Aaa.baizeGreen);
 
-		// setPreferredSize(new Dimension(200, 1000)); // We just try to fill the available space
-
 		// @formatter:off
-		setLayout(new MigLayout(App.simple + ", flowy, align right", "[]", "33%[][]3%[]"));
-		// @formatter:on
+		setLayout(new MigLayout(App.simple + ", flowy, align right", "[c]", "1%[]1%[]5.0%[][]12%[][]2%[]"));
+
+
+		add(ddsAnalyse	  = new RpfResizeButton(Aaa.s_Std,   "ddsAnalyse", 65, 4));
+		add(ddsShowBids	  = new RpfResizeButton(Aaa.s_Std,   "ddsShowBids", 60, 3));
+		add(ddsLabel      = new RpfResizeButton(Aaa.s_Label, "ddsLabel", 75, 6));
+		add(ddsScoreOnOff = new RpfResizeButton(Aaa.s_Std,   "ddsScoreOnOff", 65, 5));
 
 		add(hiddenHandsClick1_b = new RpfResizeButton(Aaa.s_Label, "hiddenHandsClick1", 75, 4));
 		add(hiddenHandsClick2_b = new RpfResizeButton(Aaa.s_Label, "hiddenHandsClick2", 75, 4));
 		add(hiddenHandsShowHide_b = new RpfResizeButton(Aaa.s_Std, "hiddenHandsShowHide", 65, 6));
+		// @formatter:on
 	}
 
 	/**   
@@ -53,20 +62,35 @@ public class ButtonPanelRight extends JPanel {
 		// =============================================================
 
 		// @formatter:off
-		boolean handsShowing = App.localShowHidden;
-		
-		String text = handsShowing ? "Hide" : "Show";
-		
-		// @formatter:off
-		boolean visible =    (App.mg.lin.linType != Lin.FullMovie) || (App.visualMode == App.Vm_InsideADeal);
 		// @formatter:on
 
-		hiddenHandsShowHide_b.setText(text);
-		hiddenHandsShowHide_b.setVisible(visible);
+		{
+			boolean visible = (App.visualMode == App.Vm_InsideADeal);
 
-		hiddenHandsClick1_b.setVisible(visible & !handsShowing);
-		hiddenHandsClick2_b.setVisible(visible & !handsShowing);
-		// @formatter:on
+			boolean ddsVisible = visible && App.haglundsDDSavailable;
+
+			ddsLabel.setVisible(ddsVisible);
+			ddsScoreOnOff.setVisible(visible);
+			ddsScoreOnOff.setText(App.ddsScoreShow ? "is On" : "is Off");
+
+			ddsAnalyse.setVisible(ddsVisible && App.ddsScoreShow);
+
+			ddsShowBids.setVisible(ddsVisible && App.ddsScoreShow && App.ddsAnalyserVisible);
+		}
+
+		{
+			boolean visible = (App.mg.lin.linType != Lin.FullMovie) || (App.visualMode == App.Vm_InsideADeal);
+
+			boolean handsShowing = App.localShowHidden;
+
+			String text = handsShowing ? "Hide" : "Show";
+
+			hiddenHandsShowHide_b.setText(text);
+			hiddenHandsShowHide_b.setVisible(visible);
+
+			hiddenHandsClick1_b.setVisible(visible & !handsShowing);
+			hiddenHandsClick2_b.setVisible(visible & !handsShowing);
+		}
 	}
 
 }

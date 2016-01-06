@@ -1,0 +1,567 @@
+%%
+%%
+
+%% <--SECT_HEAD-->=Introduction    to   Oliver Clarke  Precision
+%%
+%%
+%%  Date last Edited    2015-02-15          set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   aaBridge players are screened just before the first  'pg'
+%%
+
+fh|t40|                    Font   t  t-title      section titles within chapters
+fh|b50|                    Font   b  b-bigTitle
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  OLD STYLE  position adjustment 
+
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|y198|cg|y205|cb|y229|   fill   y  y-chapterGray    on Title Pages
+cr|p000|cg|p095|cb|p169|   fill   p  p-precisionBlue  on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|p-precisionBlue|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Oliver Clarke Precision       -       Simple System  ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|y-chapterGray|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bIntroduction    to   Oliver Clarke  Precision^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+qx|Intr|
+at|This set of bridge movies (.lin files) was created from a course given by Oliver Clarke in the ^*h http://iac.pigpen.org.uk/ ^*n IAC ^*x room of ^*h http://www.bridgebase.com/ ^*n BBO^*x.  
+The course is presented in weekly sessions each of which lasts about two hours.  Towards the end of the session students bid example hands.
+
+The course covers the standard (simpler) version of  Oliver Clarke Precision.  Oliver and the more experienced members of the ^*h http://bbo.pigpen.org.uk/ ^*n precision group^*x play a more complex variety.  The approach covered is as used in 2015.
+
+These movies are made from a combination of the class chat log and the hands, both supplied by Oliver.  
+
+In making these movies I have attempted to capture a little of the feel of the real-life class.  However there are alwsys things that have to be changed for clarity.  In particular, in order to make teaching points I have at times altered the bidding in the student sessions.  In these cases the players names have been retained for atmosphere.
+
+|cp|red|at|^*bNew to  aaBridge ?^*n|cp||at|  @- please click on the ^*bHome^*n button, far top left ^*bthen^*n click the  ^*bFlow >^*n  button towards the bottom of the screen to read the 'New User Readme'.
+
+If you won't do even that then the ultra short version is @- 
+
+^cYou play Bridge Moives by repeatedly clicking on the ^*bFlow >^*n  button below and reading the material presented.
+^d(You can also use your |cp|h-highlight|at|^*bMouse Wheel^*n|cp||at| )
+
+^a^*b<<< A clickable list of  Chapters  is in the left-hand column^*n
+|
+ht|z|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister |
+%%
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2814|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2814 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+nt|^b@2^z@3|
+at|^^
+|cp|red|at|^*bOliverC:^*n|cp||at|  Hi Everyone and a very warm welcome (especially to all of the new faces) to the start of another series of sessions on the Precision Club bidding system. 
+
+The course lasts about a year and all the sessions take place on Saturday evenings at 9pm GMT/UTC (which is normally 4pm EST until Daylight Savings kick in and then 5pm EDT till the end of October). 
+
+Firstly for those of you who do not know me something by way of a quick introduction: I'm a 59 year old retired Police Sergeant now living in Scotland, but I spent most of my adult life in Manchester, England.
+
+I've been playing Bridge since I was about 5 when my father taught me in to make up a four with him and my elder siblings. I became an instant fanatic. 
+
+In the late 1970's and early 80's I ran a Bridge Club in Manchester (Bury Athenaeum) and taught beginner and Intermediate classes there.
+
+I got sucked into Precision Club quite early after its introduction and have been a keen exponent of the system ever since. 
+
+The system I will be teaching you is a Super-Precision system I developed initially with Bob Bradbury in about 1980, but in the mid 1980's I teamed up with Jason Hackett.  
+
+He was then an England Junior and is now a full GB International and one of the UK's highest-ranked players in the WBF rankings.  
+
+Together we developed the system a lot further and enjoyed a lot of success as a partnership and as a team with Paul Hackett and Justin Hackett. 
+
+
+rshunta:  Am I at the correct place for the precision lessons?
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  oh yes
+|
+pg| ***** 1 ***** |
+
+
+nt|^b@2^z@3
+
+|cp|red|at|^*bOliverC:^*n|cp||at| Paul Hackett was a World Grandmaster back in the 1950's and still plays for the Great Britain Senior Team. Justin and Jason are now both World International Masters have for some time been two of the highest-ranked UK players in the WBF rankings list. 
+
+I stopped playing Face-to-Face Bridge in about 1991 when I met my wife Naomi (who doesn't play).  I now play and teach entirely online on BBO.
+
+Today's session is more of an introduction to Precision than anything else and we'll not be getting into many specifics. 
+
+The schedule for the sessions is detailed on my Precision website and can be seen at ^*h http://pigpen.org.uk/BBO/IACProgram.php ^*n. 
+
+Before we start there are a few things that need to be said. At it's simplest, Precision is a fairly "natural" system and no more difficult to learn than, for example, Standard American or Acol. 
+
+However, a normal progression would be to have a reasonably thorough grounding in one of those systems before moving on to a system like Precision. The reason for this is that Precision is very much a D-I-Y system in that it lends itself to more complex additions.
+
+The system I teach is NOT REMOTELY "Standard" let alone "Basic" Precision, but a somewhat simplified version of the system I developed and played in the 1970's and 1980's and is more accurately called "Super-Precision".
+
+The system I teach includes numerous additions to and variations of Standard Precision (which you are free to ignore, of course) that give the system enormous power. This system is not for the faint-hearted, however, and it is definitely not a system for beginners.
+
+If you have not already done so, please have a look at the notes I have prepared on Precision Club bidding. You can find these on: ^*h http://bbo.pigpen.org.uk ^*n You might want to have these onscreen in the background for reference during the session.
+|
+pg| ***** 2 ***** |
+
+
+nt|^b@2^z@3
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  If you happen to miss a session or to arrive late, fear not.
+
+The Chat Logs and Example Hands from ALL of my sessions are always available for download from the website: ^*h http://bbo.pigpen.org.uk/IACProgram.php ^*n  or from the IAC Website: ^*h http://iac.pigpen.org.uk/Diary.php ^*n. 
+
+Seeing a system in use can be a great help if you are starting to learn it.  There are over 20 of us on BBO who regularly use this system and we normally hold scheduled practices on Tuesdays, Wednesdays and Thursdays at 11pm UK time (6pm EST).  
+
+We normally meet in IAC or the Relaxed Bridge Club so please feel free to join us there. I think at the moment the practices are mainly on Thursdays. 
+
+At the moment I'm in the middle of a series of Seminars on the "complex" version of this system for people who already know the system I teach on Saturday nights But we will try to expand those back to Wednesdays and Thursdays 
+
+The schedule for the Practice Sessions can be found at ^*h http://bbo.pigpen.org.uk/Practices.php ^*n.  As you will see, sometimes we just practice, sometimes it's a Teams Match if numbers permit, and I do some tutorials on particular aspects of the system or cardplay.
+
+           
+|fp|t-title|at|A bit of History |fp||at|
+Precision was invented by a Chinese businessman called CC Wei in the late 1960's.  It quickly gained an international reputation following its introduction onto the world stage by the Chinese National Team and was soon after adopted by the famous Italian Blue Team.  
+
+Two members of the Blue Team (Giorgio Belladonna and Benito Garozzo) later wrote the first description of 'Super-Precision', which employed a number of Asking Bids for use in 'strong' sequences.  The system I teach is loosely based on Eric Jannerstern's description of Super-Precision, but heavily modified from that. 
+|
+pg| ***** 3 ***** |
+
+
+nt|^b@2^z@3
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Today some of the best pairs in the world use systems based on Precision including Meckstroth & Rodwell and many others and it has tended to edge out most of the other "Strong Club" systems that have appeared over the years.
+
+So why has Precision succeeded when so many other Strong Club systems have fallen by the wayside? 
+
+I feel the secret is that whilst Precision is fairly prescriptive in a few sequences, it remains at it's heart a very simple and consistent system that delivers the goods. The basic concepts behind it are easy enough to learn and they alone are enough to give you an edge against the likes of Acol, Standard American, 2/1, etc. 
+
+Once you add on the "optional extras" and, best of all, the Asking Bids that turn Precision into "Super-Precision", you have a system that, for my money, most the others out of the water and, perhaps best of all, is ENORMOUS fun to play (just ask any of our Precision group). 
+
+The trick is to take as much of the guesswork out of bidding as you can. Where so-called "Natural" systems often end up leaving you wondering whether partner has good enough trumps, or what their exact distribution is, or whether they have the Queen of Diamonds as well as the Ace.
+
+Precision often leaves you able to write partner's exact hand down before you make the final bid of the auction knowing it's exactly the right contract. If you think that is an idle boast then to whet your appetite as to the sort of sequences precision can offer, take the following hand, which is taken from an actual tournament that Jason Hackett and I played in the 1980's: 
+|
+pg| ***** 4 ***** |
+
+
+qx|t 1|
+nt|^b@2^z@3|rh||ah|Teach 1|
+st||pn|South,West,North,East|md|2SAJT3HAT952DKQ6C3,,SKQ865DAJ742CA54,|sk|n|sk||
+sv|0|mb|p|mb|1S|mb|p|mb|1N|mb|p|mb|3D|mb|p|mb|3H|mb|p|mb|4C|mb|p|mb|4D|mb|p|mb|5C|mb|p|mb|5H|mb|p|mb|6H|mb|p|mb|7S|mb|p|mb|p|mb|p|
+
+
+
+
+at|
+|cp|red|at|^*bOliverC:^*n|cp||at|  Teach 1      Let me explain a bit here 3@D is not forcing, but does show an upper range hand and at least 5-5 in @S and @D 3@H IS game-forcing and asks about Opener's Spade length and strength The asking bid (3@H) gets stepped responses and they all mean something different, the more expensive responses showing better and longer spades.
+
+The 4@D relay asks about "controls" which is Aces AND Kings. There are 12 "controls" in the pack, each Ace being worth 2 controls and each King worth 1 control. 
+|
+pg| ***** 5 ***** |
+
+
+nt|^b@2^z@3|at|
+|cp|red|at|^*bOliverC:^*n|cp||at|  So the 5@C response shows 5 Controls, which must be an Ace and 3 Kings or two Aces and a King.
+
+The 5@H bid is yet another Asking Bid that asks what DEGREE of control North has in a side suit (Hearts).  The 6@H response shows 1st round control of Hearts WITHOUT 2nd or 3rd round control of the suit, which must be Axx or a void Since South has the Ace of Hearts.  He can now tell that North has a @H void, probably Axx in @CClubs, KQxxx in @SSpades, and Axxxx in @DDiamonds.  
+|
+pg| ***** 6 ***** |
+
+
+nt|^b@2^z@3|at|
+|cp|red|at|^*bOliverC:^*n|cp||at|  Like I said, he can write down North's hand in every respect that matters  -  no guesswork involved in bidding.  We are not going to get into the Asking Bids for a while yet (comes later in the course), but hopefully that will give you a little taster for how "precise" this system can be. 
+
+Any questions?
+|
+pg| ***** 7 ***** |
+
+
+bt||
+nt|^b@2^z@3|at|
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Ok, Let's take a look at the Opening Bids in the "Classic" version of Precision. I stress that these are NOT exactly what I teach, but I am showing you them just so that you can see where the differences lie.
+This IS "Standard Precision", but it's NOT what I teach ^c@2
+
+1@C ^d Any hand with 16+ points except 20-22 balanced (2NT).
+1@D ^d 11-15, No 5-card Major, No 6-card Clubs, Not 13-15 balanced.
+1@H ^d 11-15, 5-card or longer Hearts, Spades shorter than Hearts.
+1@S ^d 11-15, 5-card or longer Spades, Hearts not longer.
+1NT ^d 13-15 balanced or semi-balanced with a 5-card Minor.
+      
+2@C ^d 11-15, 6-card or longer Clubs, or 5-card Clubs with a 4-card Major.
+2@D ^d 11-15, 4414 shape with a singleton Diamond.
+2@H ^d 5-9 with a 6-card Heart suit.
+2@S ^d 5-9 with a 6-card Spade suit.
+2NT ^d 20-22 balanced.
+
+^b@2The 1@D Opening is always a catch-all Opening showing 11-15 points and a hand unsuitable for any of the other intermediate Openings. 3 and 4-level Openings are fairly standard (ie: similar to Standard American). 
+
+The Opening Bid most often "tinkered with" is the 2@D Opening. Most Precision pairs absorb that hand-type into the 1@D Opening and use 2@D for something else (eg: Multi, Weak 2, etc). 
+
+Precision (and indeed most strong club systems) enjoy two huge advantages over systems such as Standard American, Acol, 2/1 etc in which the range for an Opening 1-level bid is typically 11-20 points. 
+
+This puts pressure on responder to come up with a response in case partner is very strong. 
+
+So playing 2/1 or Standard American and you have a grotty 5 or 6-count and your partner opens 1@S and you hold something like  @Sxx, @HKxxx, @DQxx, @CJxxx,  you are pretty much FORCED to bid something in case your partner has a monster hand.
+|
+pg| ***** 8 ***** |
+
+
+bt||
+nt|^b@2^z@3|at|
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  In Precision, because the 1@D, 1@H, 1@S, 2@C and 2@D Openings are limited to a maximum of 15 points, responder is much better placed and can happily pass with a 7 or 8-count with nothing particular to say, knowing that it is extremely unlikely that a game is being missed.
+
+Sequences such as  1x-pass-pass-pass are  far more common in Precision.  
+
+So the hand I just outlined would be an automatic PASS opposite a Precision 1@S Opening Similarly, the 1@C Opening shows 16+ points, so Responder with a good hand themselves is in a much better position to know when the prospects of a slam are good.
+
+When responder makes a positive response to 1@C, the whole sequence is immediately game-forcing.
+
+So there is no need to make expensive, space-consuming bids to force to game. This allows much more space for slam-investigation. 
+
+Over a Precision 1@C Opening, 1@D is a "Negative" Response showing 0-7 HCP.  
+
+Bidding now continues entirely on a natural and non-forcing basis.  
+
+Anything OTHER than 1@D is a "positive" response and Game-Forcing, showing 8+ HCP.  
+
+In Precision you don't see many jump-shifts JUST to show strength.
+
+
+The advantages I have just mentioned are ALONE enough to give Precision a big edge over other systems such as 2/1, Standard American and Acol.
+
+
+Take this hand, this is playing "Standard Precision", (not my system) @-
+| 
+pg| ***** 9 ***** |
+
+
+qx|t 2|
+nt|^b@2^z@3|
+st||pn|South,West,North,East|rh||ah|Teach 2|
+md|3SAK73HKT82DAK62C4,,SQT965HADQJ87CT75,|sv|e|sk|n|sk||mb|p|mb|p|mb|1C|mb|p|
+mb|1S|mb|p|mb|2S|mb|p|mb|3H|mb|p|mb|4C|mb|p|mb|4H|mb|p|mb|4N|mb|p|mb|5D|
+mb|p|mb|5H|mb|p|mb|5N|mb|p|mb|6S|mb|p|mb|p|mb|p|
+at|
+|cp|red|at|^*bOliverC:^*n|cp||at|  Teach 2      From South's viewpoint, the 4@H bid MUST be showing the stiff Ace of Hearts.
+
+South is taking a bit of a chance on the Diamonds here.
+
+My system would bid that as follows @-
+| 
+pg| ***** 10 ***** |
+
+
+ub|99|
+nt|^b@2^z@3|
+
+mb|p|mb|p|mb|1C|mb|p|mb|1S|mb|p|mb|2S|mb|p|mb|3H|mb|p|
+cp|red|at|^*bOliverC:^*n|cp||at|  1NT so that we have the strong hand hidden after the opening lead.  
+
+Now South is starting to wonder what is going on.  If North has 2 Controls that MUST be an Ace Since South has 3 kings so North can't have 2 to make up their 2 Controls.  So North MUST have a singleton Ace in either Clubs or Hearts Let's check.
+| 
+pg| ***** 11 ***** |
+
+
+nt|^b@2^z@3|
+mb|4C|mb|p|mb|4H|mb|p|mb|4N|mb|p|mb|5D|mb|p|mb|5H|mb|p|mb|5N|mb|p|mb|6S|
+at|Here 4@S would show NO Control, and 4NT shows that the 2nd round control is a shortage (so stiff Ace) 3rd round control is the Queen or a doubleton So no guesswork here.
+  
+Yet again, South knows everything they need to know about North's hand to know that 6@S is effectively "on ice".  No wasted values in Clubs (North must have at least xxxx in the suit), no worries about trump solidity (North known to have Qxxxx) Stiff Ace of Hearts and either the Queen of Diamonds or a Doubleton (probably the Queen to make up North's 8 HCP).
+
+|
+pg| ***** 12 ***** |
+
+
+nt|^b@2^z@3
+pottsca:  Did 2@c accept spades?
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  No, 2@C doesn't accept Spades, but 2@S does.
+|
+pg| ***** 13 ***** |
+
+
+qx|Gen|
+bt||
+nt|^b@2^z@3
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Let's discuss a few general things about Precision.   Precision initially is fairly strict about point-count requirements for opening bids.
+
+This is not to say that playing strength plays no part in deciding whether to open (or what to open) - far from it, but although Precision is a fairly aggressive system, it puts less faith in "adding" points for extra suit length than systems like Standard American or 2/1. 
+
+Similarly, when responder is assessing their hand, it is the point-count that is initially paramount. Playing strength, trump support and ruffing values obviously play a part in assessing a hand, but the idea of adding points specifically for shortages when assessing limit bids is an alien concept to Precision. 
+
+Indeed, limit bids in suits rather than No Trumps is not something that Precision really uses.  Direct suit raises (especially in a Major) tend to be more pre-emptive than anything else and good raises tend to follow a different route. 
+
+Over Minor suit Openings, if Responder is interested in exploring, the general tactics are normally aimed at playing "somewhere else", for example by finding a 4-4 Major suit fit or playing in No Trumps if possible.  
+
+That's not to say that we never play in a Minor suit game or part-score, of course.
+
+The general features that "Classic" Precision encompasses are as follows:
+
+^c@.^d1@C shows 16+ and all intermediate Openings show 11-15.
+^c@.^d13-15 1NT Opening.
+^c@.^dForcing 1NT Response to 1@H and 1@S Openings (Similar to 2/1)
+^c@.^d2@C Opening shows 5+ Clubs and is intermediate
+^c@.^d5-card Majors
+|
+pg| ***** 14 ***** |
+
+
+bt||
+nt|^b@2^z@3
+
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  I mentioned that the system I teach does not follow "Classic" Precision in some respects. Here are the Opening Bids in the system I teach. 
+
+The Openings up to and including 2@C are identical to the "Classic" Precision ones.
+
+It is from 2@D upwards that some of them differ:
+^c@2
+2@D ^d 16-23 with any 4441 shape.
+2@H ^d 5-9 with a 6-card Heart suit (same as "Classic").
+2@S ^d 5-9 with a 6-card Spade suit (same as "Classic").
+2NT ^d 5-9 points with at least 5-5 in Minors,
+  " ^d 11-15 points with exactly 5-5 in Majors,
+  " ^d a "normal" 3 or 4-level pre-empt in Clubs
+  
+3@C ^d 11-15 points and a 6-card Club suit with an unspecified 4-card Major
+3@D ^d Normal Pre-empt    
+3@H ^d     "       "
+3@S ^d     "       "
+3NT ^d Gambling-style (as Acol)
+
+4@C ^d A "good" 4-level pre-empt in Hearts
+4@D ^d A "good" 4-level pre-empt in Spades
+4@H ^d A "poor" 4-level pre-empt in Hearts
+4@S ^d A "poor" 4-level pre-empt in Spades
+|
+pg| ***** 15 ***** |
+
+
+bt||
+nt|^b@2^z@3
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  I mentioned the website. Besides holding details of the full system in exhaustive detail, the site also boasts a discussion forum where you can raise problems you've encountered using the system, suggest changes, or just discuss the system with others using it. 
+
+You can register for the Forum at ^*h http://pigpen.org.uk/BBO/BB3/phpBB3/index.php ^*n, but please use your BBO UserID and genuine Email Address to do so. 
+
+I get a lot of spurious registrations, so I tend to delete ones I don't recognise. The website is the definitive description of the current state of the system. Any changes to the system are reflected THERE before any changes are made to the downloadable documents or the Full Disclosure Convention Cards (see below).
+
+Those "others" using the system generally form a Team called the Precision BILlies. Besides being a competitive Team in various different combinations for different competitions, we also try to run a mentoring scheme whereby those of us who are more experienced with the system help those still learning it.
+
+If you are seriously interested in learning and using the system, you will not be alone!!  We try to run the mentoring groups broadly on time-zone lines to match Mentors and "Mentees" in similar time zones so that they are like to be on BBO at similar times. 
+
+If you are interested, register on the Precision Site and send me an email to express an interest in the scheme and we'll try to organise things.
+
+The activities, practices, tutorials etc are publicised on the website and if you are starting to learn the system, please let us know so that we can include you in the mentoring scheme if you want to take advantage of it. 
+
+In addition to the scheduled practices you will often find members of the Team playing on BBO, and kibitzing them will add to your understanding of the system. 
+|
+pg| ***** 16 ***** |
+
+
+bt||
+nt|^b@2^z@3
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  If you ARE serious about learning the system, it is best done as a PARTNERSHIP whereby two of you learn the system together. This is because the system demands comprehensive partnership understandings.
+
+This is NOT a system you can start playing with a complete stranger with any degree of confidence, even if they know the system well. Our suggestion, therefore, is that you find yourself a regular partner who is also interested in learning the system. Learn together, practice and play together, and discuss the system together.
+
+The Partnership Bidding tables on BBO, if you've not yet discovered them, are a truly wonderful asset. Jason Hackett and I would have sold our mothers for that kind of facility when we were devising and developing the system together.
+
+Ok, I wrote the system for the most part as it stand today, much of it with Jason Hackett, but Jason and I practiced the system for 6 MONTHS before playing it in anger Much of that time was spent in discussion, of course, but it does show that it takes a fairly serious amount of commitment to learn this stuff.
+
+One of the BIG advantages to learning this system is that there are a considerable number of people on BBO who now play this system, so there are people whom you've not partnered before with whom you will be able to sit down and play this system without a lot of discussion.
+
+The other facility that will really help you is Full Disclosure. We have not one but 12 different Full Disclosure cards available for download from the website with different implementations of the system. These are a great learning tool in the early stages of learning the system.
+
+If you've not encountered FD before, it is primarily a means of alerting Opps automatically about your bids, but as you can set it to show you the meaning of bids you are THINKING of making as well as bids that you and partner have already made, it is a fantastic tool when first learning the system.
+
+Once you've learned the system you can "turn off" that feature so that only Opps see the alerts These FDCC cards range from relatively basic implementations of the system, through cards for use against other pairs playing Precision, and even versions for the full "complex" system (not the version taught in these sessions).
+|
+pg| ***** 17 ***** |
+
+
+qx|end,thin|
+bt||
+nt|^b@2^z@3
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Any questions?
+
+GatorJim:  Oliver, If I may add, I have been only playing the system since July.  I play every chance I get.  And it is possible to learn it fairly quickly.  If you use the standard FDCC with another OCP family partner.  Just be prepared to goof up. It will happnen.
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  True. you can grasp the essential parts of the system. There are lots of parts of the system that the FD Card CANNOT cover, though, but it will help you with the mainstream sequences. Learning the whole system so you can play it with complete confidence and no aide-memoirs takes a little longer. :)
+
+GatorJim:  AND, it is a LOT of fun
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Fun I certainly can guarantee, and I'm sure others who play this system regularly (Epee9, Eszter5, Nzakosek are here, for example) will agree. LOL, Jeremy, I think "Sorry if wrong" has more to do with matters of judgment rather than the system :)
+
+As I claimed before, this system takes a lot of guesswork out of the bidding, but it's not ALWAYS the case that you can write down partner's hand. Most of the time there is still some judgement to be made 
+
+pottsca:  Miscounting steps is easier than you might think.
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  No kidding :) 
+What I will say is that although, it is huge fun to play, it DOES take a great deal of concentration to play this system.
+|
+
+           SKIP to near the END
+
+OliverC: Just to whet your appetite, we're going to give you a bit of a demonstration of how
+OliverC: this system works
+
+Ne v en:  hi all  th
+OliverC: ok, Jeremy and Eszter are pretty experienced with this system, Neven less so.
+OliverC: ok, not sure I'd agree with the 1NT rebid by North
+OliverC: 3@H looks better to me :)
+kritter2:  10-12 non vul   so this should be 13-15 no trump rebid?
+OliverC: yes
+OliverC: he has 15
+kritter2:  3 hearts would show 4 hearts as well as top of range?
+OliverC: Yes
+OliverC: So 1@D-1@H-3@H-4@H probably the normal system sequence there
+OliverC: If NS were Vulnerable, North would be opening 1NT
+OliverC: so now 1NT-2@D(2-way)-2@H-3@H-4@H
+OliverC: Any other ?questions
+btour:  ?
+btour:  so what transfers are given up?
+OliverC: none
+btour:  1nt 2@D?
+Epee9: Four-suit transfers are on over 1NT or 1@C-1@D-#NT.
+OliverC: it's one rebid over the transfer that is given up
+OliverC: (2@S)
+btour:  I dont understand if you use 2 way staymen then how to transfer to hearts
+OliverC: 1NT-2@D-2@H-2@S cancels the @H transfer and is now a strong balanced invitation to
+OliverC: 3NT OR possibly a much stronger hand
+OliverC: We don't use 2-way stayman
+OliverC: 2@D is a 2-way bid, either a transfer to Hearts or a balanced invitation or a much
+OliverC: stronger hand
+
+OliverC: See ^*h http://bbo,pigpen.org.uk/1n.php and look for the 2-way 2@D bit
+Epee9: sry; I wasn't thinking.
+OliverC: np
+OliverC: Oh, sorry, me on lead :)
+Epee9: Normally, when opponents double our mini-NT, we run.  I forgot that I had a good hand (but not good enough to invite game).
+OliverC->Kibitzers: crazy crazy double by North here
+OliverC: 1NTX making 3 overtricks :)
+OliverC: like I said, a suicidal double by North
+OliverC: Dclarer is going to be discarding winners here
+OliverC: :)
+OliverC: Judgement! :)
+Ne v en:  my idea was we play cappaletti  so my dbl promise sam e values opener declares(10-12 bal)
+OliverC: North has a flat 12-count sat UNDERNEATH a 10-12 1NT and no remote
+OliverC: guarantee that  West isn't sat there with the kind of 10-12 count they have. West
+OliverC: can have 12 here and will STILL be passing 1NT
+OliverC: you need more, Neven :)
+Epee9: With most 12's I'm inviting.
+OliverC: especially sat under Opener
+OliverC: Me too, Jeremy, but you get my point
+OliverC: Now over East's t/o double we play a gadget called MOTOR
+Ne v en:  i m not sure i know "motor"   what is it?
+OliverC: You need to learn the system better :)
+OliverC: 2@D is an xfer to @D
+OliverC: 2@C is an xfer to @D
+Ne v en:  well thats easy:)
+OliverC: 2@H from me now shows a decent 2-level raise in @H AND 1st or 2nd round control
+OliverC: of @D (suit or shortage). The idea is that if we end up defending here and North is
+OliverC: on lead, I'd like a @D led
+kritter2:  do you alert the relay bid as lead directing?
+OliverC: normally, yes
+OliverC: Obviously I might just have a whole load of @D and no @H tolerance, and a weak
+OliverC: hand, in which case I just pass 2@D
+Epee9: I normally alert the 2@C bid as a transfer.  If I then go back to partner's original suit, that's when the original bid is Alerted as a lead direct rather than just a runout.
+btour:  what about the other suits and what is 2@H then?
+OliverC: 1NT -> @C, 2@D is AT LEAST a good 2-level raise in @H, 2@H is a weak pre-emptive
+OliverC: raise
+OliverC: 1@S is nat
+OliverC: There's a whole system of rebids and continuations with MOTOR
+OliverC: wd Given the t/o X I'd be finessing in @H a second time, for sure
+OliverC: if only as a safety measure
+OliverC: no way I'll be blithely cashing the AK
+OliverC: Also, I don;'t want WEST on lead to fire a @C through
+OliverC: ok, last one then I have to go
+OliverC: we swap around the 1@S and 1NT responses to 1@C
+GatorJim:  yes
+GatorJim:  yes
+OliverC: Some Precision Pairs play transfer responses to 1@C. Jason and I tried that for a
+OliverC: while, but discarded those in favour of just swapping around 1@S and 1NT. We
+OliverC: didn't like having to bid 2@D to show a Heart positive
+OliverC: Ace = 2 Controls and King =1 Control, remember
+OliverC: so Neven has 5, AAK or AKKK
+Ne v en:  AA   or AKKK
+OliverC: This is a device to revert to natural bidding in order to find a 4-4 fit
+OliverC: (if there is one)
+OliverC: So at this stage I know we're only missing 2 Controls
+OliverC: 3@C is nice, but I'll check out the @H first
+OliverC: I have to bid 6 here
+OliverC: I've a 20-count and North must have AT LEAST an 11-count
+OliverC: (AAK)
+OliverC: or even 13 (AKKK)
+OliverC: 6NT is probably just as good as 6@H, but since we're both clearly 4432 shape, 6@H
+OliverC: probably a bit safer
+OliverC: At Pairs I'd probably bid 6NT
+OliverC: but 6@H at Teams
+OliverC: Just missing the A@S here
+OliverC: Ok, we'll leave it there for this week. I hope you've found this a helpful introduction
+OliverC: to Precision and that it's given you the incentive to learn more. Next week we'll be
+OliverC: starting on the Course proper with a preliminary look at Major Suit Openings.
+OliverC: Hopefully see you then
+BabsG:  thanks for the intro Oliver - interesting
+Ne v en:  th Oliver
+OliverC: Thanks all for coming and hope you all come back next week and that we've not
+OliverC: put you off :)
+
+     SKIP will end at the next bar  (of course) KK
+
+at|
+Night all, bye for now
+
+
+isabable:^*n tys very much o
+
+Epee9:  See you all on the Forum.
+|
+pg| ***** 18 ***** |
+
+

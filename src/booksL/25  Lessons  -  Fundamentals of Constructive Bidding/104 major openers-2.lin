@@ -1,0 +1,1505 @@
+%%  Auctions Starting with One of a Major - Part 2 
+%%%%Second time revision Nov 20, 2009
+%%%Last Viewer update May 12, 2011
+%% By Kia, BBO nickname "nome"
+%%1majorPart2.lin
+mn|        Constructive Auctions after                   a Major Suit Opening Bid - Part 2 of 2         |
+TU||bt||
+fh|155|ff|1Arial|fb|17|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|360|ff|3Arial|fb|38|fm|3|                           FOR 3
+fh|49|ff|4Arial|fb|48|fm|4|
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|30|cg|30|cb|3128|                dark Blue 3
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|664|cb|6255|cg|6255|             6=TURQUOISE
+cr|70|cb|7220|cg|7235|              green/blue 7
+cr|8255|cb|80|cg|80|                red 8
+cr|9128|cb|90|cg|950|               Reddish-brown 9
+%%--------------------------------------------------------------
+
+qx|Opening|bm||
+cs|1|cp|2|fp|1|at|
+^-{Constructive Auctions after a Major Suit Opening Bid - Part 2 of 2}
+^-|HT|e|Va|8|fp||at|^b@2{
+
+^*GB00,   Introduction^*N 
+
+^*GBIL,   BIL, Our Home^*N 
+
+^*GHOW,   Howard, Our Mentor^*N
+ 
+^*GR1,   Responding with a Minimum Hand (6-8 points)^*N
+
+^*GR2,   Responding with a Medium Hand (9-11 points)   ^*N 
+ 
+^*GR3,   Responding with a Maximum Hand (12+ points)   ^*N
+
+^*GQUI,   Quizzes ^*N
+
+^*GQA,   Answers to the Questions From the Students^*N
+
+^*GLAW,   The Law of Total Tricks - a Repeat ^*N
+
+^*GHAN,   The Hand Categories - a Repeat ^*N 
+
+^*GTXT,   Lesson's Full Text ^*N
+
+}|CP||
+ht|f|AT|^o@2^Z@3This presentation is based on the fourth lesson of a five-lesson series on "Fundamentals of Constructive Bidding" by Howard Schutzman (BBO nickname "hondo717") in the BIL. You can find the original material under the "Introduction to Constructive Bidding" in the "Tutorials" section in his web site at ^*Hwww.bridgesights.com/hondobridge^*N. Further, he has supervised this presentation for which I am thankful.
+
+Moreover, I would like to thank Marge DeFries (BBO nickname "mardef") for editing  these presentations.
+
+You can view this presentation either in one continuous fashion by clicking the forward arrow, or in sections by clicking the desired topic from the Table of Contents.  Please click the "HELP" icon for help viewing this presentation.|ht|v|AT|
+^o@2^z@3Prepared by Kia (BBO nickname "nome") in November 2010 and updated in May 2011.|
+pg| ***** 0 ***** |
+
+
+NT||
+TU|y|qx|BIL, Beginner Intermediate Lounge - Our Home|CS|1|CP|4|HT|d|FP|2|at|
+^-
+{      Beginner Intermediate Lounge, Our Home      }
+^-|CP||fp|2|ht|f|at|^c@2^z@3Maureen Hall |FP||AT|( hallway on BBO) wanted somewhere on BBO :
+
+^D* Where teachers could give lessons without interference from Advanced players
+
+^D* Where beginner players could get to meet one another and play together to practice
+
+^D* For the beginner to go to and have one-on-one lessons with a mentor free from interruptions.
+
+Maureen asked BBO for a Private Club to be called the Beginner Intermediate Lounge and so the BIL began on September 3, 2003.
+
+With the dedicated help of a great team of Volunteers, Teachers & Mentors the BIL provides learning opportunities for the membership daily – activities include Open Teaching Sessions, Tournaments, Beginner Courses, One on One Mentoring, visits from the Bridge Elite.
+
+In 2005  having a  Library for  storing all the lessons notes and help notes for using BBO became a priority and work began on developing a suitable web site. A major project-–the BIL Library--was opened in Aug 2007. Today members have access to it 24/7.  The archives grow daily and an important feature of the Library is the growing section of Bridge Movies which with their interactive features are an outstanding way to study the game.
+
+Maureen encourages all members to contribute to the Library, to participate in the BIL Forum (the Alfresco Café), and to send in articles and suggestions for publication in the monthly Gazette.
+
+Maureen Hall (hallway): Founder and Manager, Beginner Intermediate Lounge (BIL), ^*Hwww.bilbridge.com^*N Maureen@@bilbridge.com|
+PG| ***** 1 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%% Page
+TU|Y|qx|HOW, Howard our Mentor|CS|1|CP|4|HT|E|FP|2|at|^-
+{      Howard, Our Mentor      }
+^-|
+ 
+CP||fp|2|ht|f|at|
+^c@2^Y@3Howard Schutzman|FP||AT| is a teacher and expert player on Bridge Base Online. His nickname  on BBO is hondo717. Click |CP|1|AT|^*Hwww.bridgesights.com/hondobridge/bbohondo/bbohondo.htm^*N |CP||AT|to see an article that BBO wrote about Howard. He has been playing duplicate bridge for more than 40 years. Over the years, he has developed articles and notes on learning to play bridge. This material is presented at |CP|1|AT|^*Hwww.hondobridge.com/ ^*N|CP||AT|and is available for anyone to download at no charge. 
+
+In addition to frequent free bridge lessons, Howard runs two mentoring sessions each week. The first one is held every Tuesday at 2200 hour in the Main Bridge Club and the second at 2130 hour in the Beginner Intermediate Lounge (BIL) every Wednesday. All times are Eastern time. Kibitzers are always welcome at these sessions and encouraged to chat with Howard. His current schedule is posted on his web site. 
+
+Students are encouraged to mark Howard (hondo717) as a BBO friend and are welcome to watch him play and ask questions any time he is online. He will also gladly answer any questions sent to him via BBO e-mail. He also maintains an e-mail list of interested students to whom he sends these movies and other materials of interest. You may sign up for his e-mail list at his web site.|
+
+cp||
+fp|2|
+ht|v|
+at|
+©^*B Howard Schutzman "hondo717"    ^*N   
+    ^*Hwww.hondobridge.com/ ^*N
+^*B    hschutzman@@alum.mit.edu  ^*N|
+PG| ***** 2 ***** |
+
+
+nt||
+%%%%%%%%%%%  Auctions Starting with One of a Major - Part 2 
+
+qx|B00,Constructive Auction|nt||
+ht|d|Va|9|cs|2|fb|2|at|^-
+{This is the fourth lesson on constructive bidding.}
+^-
+|ht|E|Va|9|cs|2|fb|2|cs|2|at|^-
+{Constructive bidding is defined as auctions with no interference by the opponents.}
+^-|cp|8|AT|^B@2^Y@3"The purpose of these lessons is for students to learn the concepts behind constructive bidding. I have found that, although many students understand the (often complicated) rules about bidding, they do not understand the reasoning behind these rules. By learning the fundamentals rather than just the rules, a student will be able to more intuitively and comfortably bid, without being confused by the many (sometimes conflicting) rules that may or may not apply. Note that these lessons will not teach any particular system. It will simply teach the fundamentals upon which most bidding systems are built. A student should therefore be able to more comfortably play any of the popular systems. "|CP||at|
+^r Howard Schutzman|
+PG| ***** 3 ***** |
+
+
+nt||
+ht|d|Va|9|cs|2|fb|2|at|^-
+{This is the fourth lesson on constructive bidding.}
+^-
+|ht|E|Va|9|cs|2|fb|2|cs|2|at|^-
+{Constructive bidding is defined as auctions with no interference by the opponents.}
+^-|cp|8|AT|^B@2^Y@3"The purpose of these lessons is for students to learn the concepts behind constructive bidding. I have found that, although many students understand the (often complicated) rules about bidding, they do not understand the reasoning behind these rules. By learning the fundamentals rather than just the rules, a student will be able to more intuitively and comfortably bid, without being confused by the many (sometimes conflicting) rules that may or may not apply. Note that these lessons will not teach any particular system. It will simply teach the fundamentals upon which most bidding systems are built. A student should therefore be able to more comfortably play any of the popular systems. "|CP||AT|
+^R Howard Schutzman|cp||ht|n|fp||
+AT|^B@2^Y@3The series consists of 5 lessons;|AT|
+
+^b^*BIntroduction to Constructive Bidding ^*N(August 2010) ^o^*BMajor Suit Auctions (Part I)^*N (October 2010)
+^b^*BNo Trump Auctions ^*N(September 2010) ^o^*BMajor Suit Auctions (Part II)^*N (this lesson)
+^b^*BMinor Suit Auctions^*N (December 2010) 
+|
+pg| ***** 4 ***** |
+
+
+nt||
+ht|d|Va|9|cs|2|fb|2|at|^-
+{This is the fourth lesson on constructive bidding.}
+^-
+|ht|E|Va|9|cs|2|fb|2|cs|2|at|^-
+{Constructive bidding is defined as auctions with no interference by the opponents.}
+^-|cp|8|AT|^B@2^Y@3"The purpose of these lessons is for students to learn the concepts behind constructive bidding. I have found that, although many students understand the (often complicated) rules about bidding, they do not understand the reasoning behind these rules. By learning the fundamentals rather than just the rules, a student will be able to more intuitively and comfortably bid, without being confused by the many (sometimes conflicting) rules that may or may not apply. Note that these lessons will not teach any particular system. It will simply teach the fundamentals upon which most bidding systems are built. A student should therefore be able to more comfortably play any of the popular systems. "|CP||at|
+^r Howard Schutzman|nt||
+ht|d|Va|9|cs|2|fb|2|at|^-
+{This is the fourth lesson on constructive bidding.}
+^-
+|ht|E|Va|9|cs|2|fb|2|cs|2|at|^-
+{Constructive bidding is defined as auctions with no interference by the opponents.}
+^-|cp|8|AT|^B@2^Y@3"The purpose of these lessons is for students to learn the concepts behind constructive bidding. I have found that, although many students understand the (often complicated) rules about bidding, they do not understand the reasoning behind these rules. By learning the fundamentals rather than just the rules, a student will be able to more intuitively and comfortably bid, without being confused by the many (sometimes conflicting) rules that may or may not apply. Note that these lessons will not teach any particular system. It will simply teach the fundamentals upon which most bidding systems are built. A student should therefore be able to more comfortably play any of the popular systems. "|CP||AT|
+^R Howard Schutzman|cp||ht|n|fp||
+AT|^B@2^Y@3The series consists of 5 lessons;|AT|
+
+^b^*BIntroduction to Constructive Bidding ^*N(August 2010) ^o^*BMajor Suit Auctions (Part I)^*N (October 2010)
+^b^*BNo Trump Auctions ^*N(September 2010) ^o^*BMajor Suit Auctions (Part II)^*N (this lesson)
+^b^*BMinor Suit Auctions ^*N(December 2010) 
+|AT|^B@2^Y@3
+In this lesson, Part 2, we will discuss the more complex auctions that result when responder does not have support.|
+PG| ***** 5 ***** |
+
+
+nt||
+ht|d|Va|9|cs|2|fb|2|at|^-
+{This is the fourth lesson on constructive bidding.}
+^-
+|ht|E|Va|9|cs|2|fb|2|cs|2|at|^-
+{Constructive bidding is defined as auctions with no interference by the opponents.}
+^-|cp|8|AT|^B@2^Y@3"The purpose of these lessons is for students to learn the concepts behind constructive bidding. I have found that, although many students understand the (often complicated) rules about bidding, they do not understand the reasoning behind these rules. By learning the fundamentals rather than just the rules, a student will be able to more intuitively and comfortably bid, without being confused by the many (sometimes conflicting) rules that may or may not apply. Note that these lessons will not teach any particular system. It will simply teach the fundamentals upon which most bidding systems are built. A student should therefore be able to more comfortably play any of the popular systems. "|CP||AT|
+^R Howard Schutzman|cp||ht|n|fp||
+AT|^B@2^Y@3The series consists of 5 lessons;|AT|
+
+^b^*BIntroduction to Constructive Bidding ^*N(August 2010) ^o^*BMajor Suit Auctions (Part I)^*N (October 2010)
+^b^*BNo Trump Auctions ^*N(September 2010) ^o^*BMajor Suit Auctions (Part II)^*N (this lesson)
+^b^*BMinor Suit Auctions^*N (December 2010)
+|AT|^B@2^Y@3
+In this lesson, Part 2, we will discuss the more complex auctions that result when responder does not have support.
+
+In all of these lessons, I will assume the reader uses basic hand evaluation techniques. That is, he or she uses the standard 4-3-2-1 method for counting HCP and makes small adjustments for either shortness or length. I now teach, and prefer, the more accurate Bergen methodology, but, because it is not familiar to everyone, I will not use it in these lessons. Now, let me begin the lesson on when the responder does not have support for openers's suit.
+ 
+|
+PG| ***** 6 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% R1
+QX|R1,Responding with a Minimum Hand (6-8 points)|ht|e|cs|1|cp|4|fp|2|at|^-
+{Responding with a Minimum Hand (6-8 points) and no Support}
+^-|
+fp||cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||at|With support for opener's major, responder has a very simple objective -- just deciding whether or not the final contract should be game (4@H or 4@S). If you have 3 or more cards in opener's major suit, that is the suit you should play in, and it is up to you to keep the auction simple and ensure that the final contract is in that suit. You should always consider the hand categories--minimum, medium, and maximum--and the The Law of Total Tricks.|CP||
+pg| ***** 7 ***** |
+
+
+ht|w|cp|8|AT|
+^B@2^*BMovie Maker: ^*N|cp||at|In this presentation Howard's lesson is slightly re-arranged. You can, however, read the full text of the lesson during the live session under a separate heading. Further, to refresh your memory the portions of Howard's first lesson on hand categories and The Law of Total Tricks are repeated later. You can go to the ^*BFirst Page^*N to the table of topics to review them and return back here if you wish. Otherwise, please tap the forward arrow.|
+PG| ***** 8 ***** |
+
+
+ht|l|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|On the other hand, most of the time, when you do not have support, you will bid 1NT. This simply announces you have 6-8 points and fewer than 3 cards in opener's suit. It does not promise NT distribution.|
+PG| ***** 9 ***** |
+
+
+fp|2|cp|4|at|^-
+
+{Note that you cannot bid 2 of a new suit, because that promises a medium or maximum hand.}
+
+^-|CP||FP||
+pg| ***** 10 ***** |
+
+
+AT|If opener has a balanced hand (5-3-3-2, or 5-4-2-2 with scattered honors) and a minimum or medium hand, he should pass. With a 6-card major, opener should rebid it. With an unbalanced hand, partner should bid the second suit, asking you to pass with 3-card support. The one exception is that with 5 hearts and 4 spades and a minimum, opener should pass, because the auction 1H-1NT-2S is a reverse, showing a medium or maximum hand. Let us look at a few examples.
+
+|
+PG| ***** 11 ***** |
+
+
+NT||
+%%%%%%%%%%%%%Example 1
+st||rh||ah|Example 1|md|3SK96HQ3DKT62Ct752,,SA75HAJ984DJ9Ck63|sk|s|mb|1hp?|
+lb|*bWhat would be your response?^^1n|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Bid 1N. This simply announces you have 6-8 points and fewer than 3 cards in opener's suit.|
+PG| ***** 13 ***** |
+
+
+MB|1nP|
+pg| ***** 14 ***** |
+
+
+sk|N|NT||lb|*bWhat would be your rebid?^^p|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Pass. Opener has a balanced hand (5-3-3-2 with scattered honors) and a minimum hand.|mb|p|
+PG| ***** 16 ***** |
+
+
+ub||NT||
+%%% Ex 2
+rh||ah|Example 2|sk|s|md|3SK96HQ3DKT62Ct752,,SAjHAJ984DJ9Ca643|mb|1hp?|lb|*bWhat would be your bid?^^1n|sk|N|mb|1np?|lb|*bWhat would be your rebid?^^P|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Pass again. Opener has a balanced hand (5-3-3-2 with scattered honors) and a medium hand.|mb|PPP|
+PG| ***** 19 ***** |
+
+
+NT||
+%%%Ex 3
+rh||ah|Example 3|sk|s|md|3SK96Ht3DKT62Cq752,,SA75HAJ9874DJ9Ck6|mb|1hp?|lb|*bWhat would be your bid?^^1n|mb|1np?|sk|N|lb|*bWhat would be your rebid?^^2h|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Bid 2H. With a 6-card major, opener should rebid it.|MB|2h|
+PG| ***** 22 ***** |
+
+
+nt||
+%%Ex 4
+rh||ah|Example 4|sk|s|md|3SKj6Ht3DaT62Ct752,,SA7HAJ987DJ9Ck986|mb|1hp?|lb|*bWhat would be your bid?^^1n|sk|N|mb|1np?|lb|*bWhat would be your rebid?^^p|mb|P|cp|8|AT| 
+^B@2^*BHoward: ^*N|cp||at|Pass. With an unbalanced hand, opener should bid the second suit, asking responder to pass with 3-card support. However, opener should only tend to bid a 4 card suit over 1NT if he has a singleton or void, or a very good second suit.|
+PG| ***** 25 ***** |
+
+
+at| For example with this hand.|md|3SKj6Ht3DaT62Ct752,,S87HAJ987D95Cakj8|mb|1hp1np2c|
+pg| ***** 26 ***** |
+
+
+NT||
+%%EX 5
+rh||ah|Example 5|sk|s|md|3SK96Ht5DKT62Cj752,,SA785HAJ987DJ9Ck9|mb|1hp?|lb|*bWhat would be your bid?^^1n|mb|1nP?|sk|N|lb|*bWhat would be your rebid?^^P|mb|P|cp|8|AT| 
+^B@2^*BHoward: ^*N|cp||at|Pass. with 5 hearts and 4 spades and a minimum, opener should pass, because the auction 1H-1NT-2S is a reverse, showing a medium or maximum hand.|
+PG| ***** 29 ***** |
+
+
+NT||
+%%ex 6
+st||rh||ah|Example 6|md|3SKt96HQ3DKT62Ct75,,|sk|s|mb|1hp?|
+lb|*bWhat would be your response?^^1s|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Bid 1S. This is one other auction of interest. If the opening bid is 1H, and you have 4 or more spades, you should bid 1S. I hope you recall from the last lesson that, with a minimum hand and heart support, you should raise hearts and not bid 1S. Therefore, if you have a minimum hand, you should only bid 1S with 2 or fewer hearts.|mb|1s|
+PG| ***** 31 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Some people play what is known as a "Forcing 1NT". If you play that, then opener is not allowed to pass 1NT. However, describing that convention is beyond the scope of this tutorial.|
+PG| ***** 32 ***** |
+
+
+cp|8|AT|
+
+^B@2^*BMovie Maker: ^*N|cp||at|Responding with a medium hand and no support is next.|
+PG| ***** 33 ***** |
+
+
+NT||BT||
+%%%%%%%%%%%%%%%%%%%%%%
+QX|R2,Responding with a Medium Hand (9-11 points)|ht|e|cs|1|cp|4|fp|2|at|^-
+{Responding with a Medium Hand (9-11 points) and no Support}
+^-|
+fp||cp|8|AT|^B@2^Y@3^*BHoward: ^*N|cp||at|These are the most complicated auctions, because you, as captain, need to determine both the best strain (which suit or NT), and whether or not your side has game (if opener has a medium hand, 15-17, or maximum hand, 18+). The basic approach is for you to bid a new suit (forcing another bid from opener), and then invite or bid game based on opener's next bid. Let's look at some specific cases:|
+PG| ***** 34 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%
+rh||ah|Example A1|st||md|3SK8HAQ972Dj85C965|sk|s|mb|1sp|lb|*bWhat would be your response?^^2H|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Bid 2H. If opener opens 1S and you have 5 cards in hearts, bid 2H. Note that the auction 1S-2H promises 5 hearts. Hopefully, after you read the rest of this section, you will see why. |mb|2h|
+PG| ***** 36 ***** |
+
+
+NT||
+rh||ah|Example A2|st||md|3hK8sAQ97Dj852C965|sk|s|mb|1hp|lb|*bWhat would be your response?^^1s|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Bid 1S. If opener opens 1H and you have 4 or more spades, bid 1S. Note that when we get to the discussion of maximum hands, you sometimes bypass a 4-card spade suit if you have a 5-card minor. But if you have a medium (or minimum) hand, you always bid 1S rather than 2 of your minor.|MB|1s|
+PG| ***** 38 ***** |
+
+
+NT||
+rh||ah|Example A2b|st||md|3hK8sAQ972Dj85C965|sk|s|mb|1hp|lb|*bWhat would be your response?^^1s|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Again bid 1S. |MB|1s|
+PG| ***** 40 ***** |
+
+
+NT||
+rh||ah|Example A3|st||md|3SK8HA72DQ85CQt965|sk|s|mb|1sp|lb|*bWhat would be your response?^^2c|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Bid 2C. If you have a 5-card minor and no 5-card major, bid the minor.|mb|2c|
+PG| ***** 42 ***** |
+
+
+NT||
+rh||ah|Example A4|st||md|3SK8HADQ8752CQt965|sk|s|mb|1sp|lb|*bWhat would be your response?^^2d|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Bid 2D. With both diamonds and clubs, bid diamonds. This preserves bidding room by allowing you to bid clubs later, and allows opener to show a diamond preference at the same level.|MB|2d|
+PG| ***** 44 ***** |
+
+
+NT||
+rh||ah|Example A5|st||md|3SK8HAQ97DQt85C965|sk|s|mb|1sp|lb|*bWhat would be your response?^^2d|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Bid 2D. Bid your 4-card minor (even if you have 4 hearts and opener opens 1S).|MB|2d|
+PG| ***** 46 ***** |
+
+
+NT||bt||
+%%%%%%%%%%%%%
+ht|e|cs|1|cp|4|fp|2|at|^-
+{Responding with a Medium Hand (9-11 points) and no Support}
+^-|fp||cp|8|AT|
+^B^*BHoward: ^*N|cp||at|What are opener's possible rebids and what do they mean?|
+PG| ***** 47 ***** |
+
+
+cs|4|
+Ht|i|at|^B{|ia|,1sp2cp2s|at|}|HT|h|AT|^m@2^Y@3If opener rebids the major (e.g., 1S-2C-2S), that promises a 6-card suit and minimum opening  hand (no more than 14 or 15 points). You should invite with a honor doubleton and a good medium responder hand. Otherwise, you should pass, since it is unlikely your side has game.|
+PG| ***** 48 ***** |
+
+
+HT|n|at|^B{|ia|,1hp2cp3h|at|}|HT|m|AT|^m@2^Y@3If opener jumps in the major (e.g., 1H-2C-3H), that shows a medium opening hand with a 6-card suit, so your side has game (since you also have a medium hand). It is your responsibility to make sure you get there. Because opener can jump with a six-card suit and a medium hand, a simple non-jump rebid of opener's suit shows a minimum hand. |
+pg| ***** 49 ***** |
+
+
+HT|r|at|^B@2^Y@3Therefore, when opener rebids his/her suit, you have a very good idea of opener's hand strength. This is not always true with other auctions. |
+PG| ***** 50 ***** |
+
+
+AT|And if opener rebids the cheapest NT,|
+PG| ***** 51 ***** |
+
+
+HT|u|at|^B{|ia|,1sp2cp2n|at|}|HT|u|at|^n{|ia|,1hp1sp1n|at|}|ht|v|at|^mor|
+pg| ***** 52 ***** |
+
+
+HT|y|cp||AT|
+^Bthat shows a 5-card major and a minimum. Your side probably does not have game.|
+PG| ***** 53 ***** |
+
+
+NT||
+%%%%%%%%%%
+ht|e|cs|1|cp|4|fp|2|at|^-
+{Responding with a Medium Hand (9-11 points) and no Support}
+^-|fp||cp|8|AT|
+^B^*BHoward: ^*N|cp||at|If opener reverses,|
+PG| ***** 54 ***** |
+
+
+cs|4|
+Ht|i|at|^B{|ia|,1hp2dp3c|at|}|HT|h|AT|^m@2^Y@3your side has game (opener has shown a medium or maximum hand). Again, it is your responsibility to bid game.|
+PG| ***** 55 ***** |
+
+
+ht|l|at|^m@2^Y@3Similarly, if opener jump shifts,|
+PG| ***** 56 ***** |
+
+
+HT|n|at|^B{|ia|,1sp2cp3d|at|}|HT|l|AT|^m@2^Y@3Similarly, if opener jump shifts, he/she has a maximum opener. Your side has game. However, in this case, the jump shift establishes a game force (because your side has enough to bid game even if you had a minimum response). Therefore, both partners are forced to bid until a game contract is reached.|
+PG| ***** 57 ***** |
+
+
+ht|S|at|^m@2^Y@3On the other hand, if opener bids a non-reverse new suit,|
+pg| ***** 58 ***** |
+
+
+HT|t|at|^B{|ia|,1hp2cp2d|at|}|ht|S|AT|^m@2^Y@3On the other hand if opener bids a non-reverse new suit,|HT|T|AT|^m@2^Y@3you can correct back to the original major with 2-card support, or raise to 3 with good support for opener's second suit. You should be reluctant to pass because opener could have a medium hand.  |
+PG| ***** 59 ***** |
+
+
+ht|Y|at|^B@2^Y@3However, the times when opener has a medium hand are somewhat rare, because opener will open 1NT with many medium hands.|
+PG| ***** 60 ***** |
+
+
+NT||
+%%%%%%%%%%%%%
+ht|e|cs|1|cp|4|fp|2|at|^-
+{Responding with a Medium Hand (9-11 points) and no Support}
+^-|fp||cp|8|AT|
+^B^*BHoward: ^*N|cs|4|cp||at|Let us discuss the auction|Ht|i|at|^B{|ia|,1sp2h|at|}|HT|h|AT|^m@2^Y@3and see why it promises 5 hearts. |
+PG| ***** 61 ***** |
+
+
+HT|h|AT|^m@2^Y@3and see why it promises 5 hearts.|ht|l|at|^B@2^Y@3If you, as responder, only have 4 hearts, you virtually always have a 4-card minor. You don't have 4 spades (you would have raised), so, unless you are exactly 3-4-3-3, you have to have a 4-card minor. Therefore, you bid your 4-card minor. Opener now has the opportunity to bid 2H over your minor. Therefore, requiring responder to have a 5-card heart suit in order to bid 2H makes it easier for your side to determine how many hearts there are between the two hands.|
+PG| ***** 62 ***** |
+
+
+NT||
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+qx|R3,Responding with a Maximum Hand (12+ points)|ht|e|cs|1|cp|4|fp|2|at|^-
+{Responding with a Maximum Hand (12+ points) and no Support}
+^-|
+fp||ht|f|cp|8|AT|^B@2^Y@3^*BHoward: ^*N|cp||at|Your choice of first response is usually identical to what you would do with a medium hand. However, the auction is less complicated from your perspective, because you know your side has game. You can keep making forcing bids (e.g., another new suit) until you determine what the best strain is.|
+PG| ***** 63 ***** |
+
+
+AT|
+
+One special circumstance is if opener opens 1H and you have 4 spades and a 5-card minor. You should bid your minor first. You will then bid your spades over opener's rebid. Since spades are a new suit, opener is forced to bid again. Bidding this way describes your distribution more precisely and makes it easier for your side to find the correct strain.|
+PG| ***** 64 ***** |
+
+
+HT|X|cp|8|AT|
+^B@2^*BMovie Maker ^*N|cp||at|Next, is the quiz section.|
+PG| ***** 65 ***** |
+
+
+NT||
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%Quiz
+%%%%%%%%%%%%% page %%%%%%%%%%%%%%%%%%%%%%%%%%% B 1
+qx|QUI,   Quizzes |tu||Md||cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+^-|HT|c|CS|6|AT|^-
+{    Constructive Bidding - Responding with a Medium Hand     }
+^-|HT|e|AT|^-Board 1
+^-|
+HT|F|at|^B@2
+Partner opened 1S and you have this hand,|HT|i|cs|1|at|^b{|ih|pSkthaqj98dj87c543|at|}^jand the bidding is|
+ht|i|va|6|cs|6|at|^n{|ia|,1sp?|at|} 
+|hf|N|cq||lb|*BWhat bid would you make?^^2h|HT|n|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|The correct bid is 2H which promises five hearts.| 
+ht|i|va|6|cs|6|at|^n{|ia|,1sp2h|at|} |
+pg| ***** 67 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 2
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+^-|HT|c|CS|6|AT|^-
+{    Constructive Bidding - Responding with a Medium Hand     }
+^-|HT|e|AT|^-Board 2
+^-|
+HT|F|at|^B@2
+Partner opened 1S and you have this hand,|HT|i|cs|1|at|^b{|ih|pSkthaqj9dj987c543|at|}^jand the bidding is|
+ht|i|va|6|cs|6|at|^n{|ia|,1sp?|at|} 
+|hf|N|cq||lb|*BWhat bid would you make?^^2d|HT|n|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|The correct bid is 2D. You cannot bid 2H as it promises 5-card suit. Therefore, you have to bid your 4-card diamond.| 
+ht|i|va|6|cs|6|at|^n{|ia|,1sp2d|at|} |
+pg| ***** 69 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%55
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 3
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+^-|HT|c|CS|6|AT|^-
+{    Constructive Bidding - Responding with a Medium Hand     }
+^-|HT|e|AT|^-Board 3
+^-|
+HT|F|at|^B@2
+Partner opened 1H and you have this hand,|HT|i|cs|1|at|^b{|ih|phktsaqj9dj987c543|at|}^jand the bidding is|
+ht|i|va|6|cs|6|at|^n{|ia|,1hp?|at|} 
+|hf|N|cq||lb|*BWhat bid would you make?^^1s|HT|n|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|1S is the correct bid. If opener opens 1H and you have 4 spades and no 5-card minor, bid 1S.| 
+ht|i|va|6|cs|6|at|^n{|ia|,1hp1s|at|} |
+pg| ***** 71 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 4
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+^-|HT|c|CS|6|AT|^-
+{    Constructive Bidding - Responding with a Medium Hand     }
+^-|HT|e|AT|^-Board 4
+^-|
+HT|F|at|^B@2
+Partner opened 1S and you have this hand,|HT|i|cs|1|at|^b{|ih|pSt9ha87dkqj98c987|at|}^jand the bidding is|
+ht|i|va|6|cs|6|at|^n{|ia|,1sp?|at|} 
+|hf|N|cq||lb|*BWhat bid would you make?^^2d|HT|n|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|2D is the correct bid here. If you have a 5-card minor and no 5-card heart suit, bid the minor.| 
+ht|i|va|6|cs|6|at|^n{|ia|,1sp2d|at|} |
+pg| ***** 73 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%55
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 5
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+^-|HT|c|CS|6|AT|^-
+{    Constructive Bidding - Responding with a Medium Hand     }
+^-|HT|e|AT|^-Board 5
+^-|
+HT|F|at|^B@2
+Partner opened 1S and you have this hand,|HT|i|cs|1|at|^b{|ih|pSt9ha87ckqj98d987|at|}^jand the bidding is|
+ht|i|va|6|cs|6|at|^n{|ia|,1sp?|at|} 
+|hf|N|cq||lb|*BWhat bid would you make?^^2c|HT|n|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|Bid 2C. If you have a 5-card minor and no 5-card heart suit, bid the minor.| 
+ht|i|va|6|cs|6|at|^n{|ia|,1sp2c|at|} |
+pg| ***** 75 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 6
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+^-|HT|c|CS|6|AT|^-
+{    Constructive Bidding - Responding with a Medium Hand     }
+^-|HT|e|AT|^-Board 6
+^-|
+HT|F|at|^B@2
+Partner opened 1S and you have this hand,|HT|i|cs|1|at|^b{|ih|pSt9h7dkt987caq987|at|}^jand the bidding is|
+ht|i|va|6|cs|6|at|^n{|ia|,1sp?|at|} 
+|hf|N|cq||lb|*BWhat bid would you make?^^2d|HT|n|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|2D is the correct bid here. If you have a 5-card minor and no 5-card major, bid the minor. With two 5-card minors bid the diamonds first. 
+
+Responder has 11 Starting Points based on Bergen's hand evaluation method--9HCP plus two points for length. With both diamonds and clubs, bid diamonds (this preserves bidding room by allowing you to bid clubs later, and allowing opener to show a diamond preference at the same level).|ht|i|va|6|cs|6|at|^n{|ia|,1sp2d|at|} |
+pg| ***** 77 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 7
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+^-|HT|c|CS|6|AT|^-
+{    Constructive Bidding - Responding with a Medium Hand     }
+^-|HT|e|AT|^-Board 7
+^-|
+HT|F|at|^B@2
+Partner opened 1S and you have this hand,|HT|i|cs|1|at|^b{|ih|pSa9h7dkt987cqt987|at|}^jand the bidding is|
+ht|i|va|6|cs|6|at|^n{|ia|,1sp2dp2sp?|at|} 
+|hf|N|cq||lb|*BWhat bid would you make?^^3s|HT|n|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|Invite game by bidding 3S. If opener rebids the major (e.g., 1S-2d-2S), that promises a 6-card suit and minimum hand. You should invite with a honor doubleton.|ht|i|va|6|cs|6|at|^n{|ia|,1sp2dp2sp3s|at|} |
+pg| ***** 79 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 8
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+^-|HT|c|CS|6|AT|^-
+{    Constructive Bidding - Responding with a Medium Hand     }
+^-|HT|e|AT|^-Board 8
+^-|
+HT|F|at|^B@2
+Partner opened 1S and you have this hand,|HT|i|cs|1|at|^b{|ih|pSt9h7dkt987caq987|at|}^jand the bidding is|
+ht|i|va|6|cs|6|at|^n{|ia|,1sp2dp2sp?|at|} 
+|hf|N|cq||lb|*BWhat bid would you make?^^p|HT|n|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|Pass is the correct bid here.  As I mentioned earlier, if opener rebids the major (e.g., 1S-2d-2S), that promises a 6-card suit and minimum hand. You should invite with a honor doubleton. Otherwise, you should pass, since it is unlikely your side has game.|ht|i|va|6|cs|6|at|^n{|ia|,1sp2dp2spp|at|} |
+pg| ***** 81 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 9
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+^-|HT|c|CS|6|AT|^-
+{    Constructive Bidding - Responding with a Medium Hand     }
+^-|HT|e|AT|^-Board 9
+^-|
+HT|F|at|^B@2
+Partner opened 1H and you have this hand,|HT|i|cs|1|at|^b{|ih|pSkt98h98djt8caq98|at|}^jand the bidding is|
+ht|i|va|6|cs|6|at|^n{|ia|,1hp1sp1np?|at|} 
+|hf|N|cq||lb|*BWhat bid would you make?^^p|HT|n|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|Pass. opener rebids the cheapest NT. That shows a 5-card major and a minimum hand. Your side probably does not have game.| 
+ht|i|va|6|cs|6|at|^n{|ia|,1hp1sp1npp|at|} |
+pg| ***** 83 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%55
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 10
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+^-|HT|c|CS|6|AT|^-
+{    Constructive Bidding - Responding with a Medium Hand     }
+^-|HT|e|AT|^-Board 10
+^-|
+HT|F|at|^B@2
+Partner opened 1S and you have this hand,|HT|i|cs|1|at|^b{|ih|pSktht98djt8caq986|at|}^jand the bidding is|
+ht|i|va|6|cs|6|at|^n{|ia|,1sp2cp2np?|at|} 
+|hf|N|cq||lb|*BWhat bid would you make?^^p|HT|n|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|Pass. As I mentioned it in the last hand, if opener rebids the cheapest NT (e.g., 1S-2C-2NT or 1H-1S-1NT), that shows a 5-card major and a minimum. Your side probably does not have game.| 
+ht|i|va|6|cs|6|at|^n{|ia|,1sp2cp2npp|at|} |
+pg| ***** 85 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%55
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 11
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+^-|HT|c|CS|6|AT|^-
+{    Constructive Bidding - Responding with a Medium Hand     }
+^-|HT|e|AT|^-Board 11
+^-|
+HT|F|at|^B@2
+Partner opened 1S and you have this hand,|HT|i|cs|1|at|^b{|ih|pSktht98djt8caq986|at|}^jand the bidding is|
+ht|i|va|6|cs|6|at|^n{|ia|,1sp2cp3sp?|at|} 
+|hf|N|cq||lb|*BWhat bid would you make?^^4s|HT|n|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|4S. If opener jumps in the major (e.g., 1S-2C-3S), that shows a medium hand with a 6-card suit, so your side has game. It is your responsibility to make sure you get there.| 
+ht|i|va|6|cs|6|at|^n{|ia|,1sp2cp3sp4s|at|} |
+PG| ***** 87 ***** |
+
+
+HT|T|cp|8|AT|
+^B@2^Z@3^*BMovie Maker: ^*N|cp||at|This may be a good place to Howard's explanation of what is a reverse and what is a jump shift.  Please click the forward arrow. |
+pg| ***** 88 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+^-|HT|c|CS|6|AT|^-
+{    WHEN IS IT A REVERSE AN WHEN IS IT A JUMP SHIFT     }
+^-|HT|e|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|On the auction 1S-P-2C-P, a reverse is not available for the opener. 3D and 3H are jump shifts, showing 18+ and forcing to game. So with a medium opening hand, opener is often forced to make a minimum rebid if he is not strong enough to jump shift. A jump shift skips a level for the suit bid;  a reverse does not skip a level for the suit bid.|
+PG| ***** 89 ***** |
+
+
+AT|
+
+If we change the auction slightly to|at|^J{|ia|1SP2DP3C|at|}|ht|M|at|^b@2^y@3then 3C would be a reverse (because you bypassed 2S). But 2H is not a reverse, and 3H is a jump shift. So with 16 or 17, 5 spades and 4 hearts, opener is forced to bid 2H and hope that they do not miss game when opener has 10 or so. Next, let me give you some definitions.|
+PG| ***** 90 ***** |
+
+
+CP|8|FP|2|AT|
+
+a) Jump shift|CP||FP||AT| - a jump shift is skipping a level in a suit. For example, if you want to bid hearts and 1H is available to you, and you bid 2H, that is a jump shift. So, for example in the following auctions, |
+PG| ***** 91 ***** |
+
+
+ht|T|at|^B{|ia|1cp1dp2h|at|}   and ^n{|ia|1sp2cp3h|at|}
+
+Opener's  rebid is a jump shift. A jump shift rebid by opener shows 18+ and establishes a game force.|
+PG| ***** 92 ***** |
+
+
+NT||
+%%%%%%%%%%%%%
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+^-|HT|c|CS|6|AT|^-
+{    WHEN IS IT A REVERSE AN WHEN IS IT A JUMP SHIFT     }
+^-|HT|e|fp|2|CP|8|at|^B@2^Y@3b) Reverse|CP||FP||AT| - a reverse by opener is a rebid by opener that goes voluntarily past the opener's first suit at the two level. So, for example, if you open 1C and partner responds something, and 2C is available as a bid, and you bid something higher than 2C, that is a reverse. For example, in the following auction,|
+PG| ***** 93 ***** |
+
+
+HT|i|at|^b{|ia|1cp1sp2h|at|}|HT|H|at|^m@2^Y@32@H is a reverse. 2C was available to opener as a rebid, and he chose not to bid 2C. A reverse, because it does take up some extra bidding room, is defined as more than a minimum opening hand, 16+ or so. It is forcing for one round. (This is very important; responder may not pass the reverse.)|
+PG| ***** 94 ***** |
+
+
+AT|
+^B@2^Y@3Responder, with 10 or more points, is obligated to make sure their side gets to game. Similarly, if opener has a maximum, 18+, opener is responsible for making sure their side gets to game by jump shifting. When reversing, opener only promises 16+ points, so responder with a 6-count is not obligated to force to game (just obligated not to pass the initial reverse).|
+PG| ***** 95 ***** |
+
+
+ht|x|cp|8|AT|
+^B@2^*BMovie Maker: ^*N|cp||at|Let us resume looking at more examples on responding with a medium hand with no support for opener's suit. . |
+PG| ***** 96 ***** |
+
+
+NT||  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 12
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+^-|HT|c|CS|6|AT|^-
+{    Constructive Bidding - Responding with a Medium Hand     }
+^-|HT|e|AT|^-Board 12
+^-|
+HT|F|at|^B@2
+Partner opened 1S and you have this hand,|HT|i|cs|1|at|^b{|ih|pSktht98djt8caq986|at|}^jand the bidding is|
+ht|i|va|6|cs|6|at|^n{|ia|,1sp2cp2dp?|at|} 
+|hf|N|cq||lb|*BWhat bid would you make?^^2s|HT|n|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|Bid 2S. It is likely that opener has a minimum and your side does not have game. However, on occasion your partner will have a medium hand, which is not strong enough to jump shift to 3D. Most of the time your partner will pass 2S. However, if he has a medium hand, he will take another bid, allowing your side to bid game. | 
+ht|i|va|6|cs|6|at|^n{|ia|,1sp2cp2dp2s|at|} |
+pg| ***** 98 ***** |
+
+
+nt||
+%%%%%%%%%%%%% page %%%%%%%%%%%%%%%%%%%%%%%%%%%
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+^-|HT|c|CS|6|AT|^-
+{    Constructive Bidding - Responding with a Maximum Hand     }
+^-|
+HT|e|AT|^B@2As a responder you have a maximum if the hand has 12+ points. Your choice of first response is identical to what you would do with a medium hand. However, the auction is less complicated from your perspective, because you know your side has game. You can keep making forcing bids (e.g., another new suit) until you determine what the best strain is.|
+PG| ***** 99 ***** |
+
+
+AT| 
+
+Next, there are eight hands. Your partner opens 1H. For each hand please determine:
+
+a) Do you have a minimum, medium, or maximum hand?
+b) What kind of hand does opener need for you to make game?
+c) What is your next bid to help you achieve your plan?|
+PG| ***** 100 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%% Board 13
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+
+{Responder does not have support for the major suit opened}
+^-|HT|e|AT|^-Board 13
+^-|
+HT|F|at|^B@2
+Partner opened ^*B1H^*N and you have this hand,|HT|i|cs|1|at|^b{|ih|pS987h98dak987c987|at|}|lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^1|lb|*mWhat kind of hand does opener need for you to make game?^maximum~medium at least~any hand^1| 
+hf|N|cq||lb|*BWhat bid would you make?^^1n|HT|o|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|Correct bid is 1NT and game is possible only when opener has a maximum hand.|
+pg| ***** 104 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%55%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% Board 14
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+ 
+{Responder does not have support for the major suit opened}
+^-|HT|e|AT|^-Board 14
+^-|
+HT|F|at|^B@2
+Partner opened ^*B1H^*N and you have this hand,|HT|i|cs|1|at|^b{|ih|pSq987h98dkq98c987|at|}|lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^1|lb|*mWhat kind of hand does opener need for you to make game?^maximum~medium at least~any hand^1| 
+hf|N|cq||lb|*BWhat bid would you make?^^1s|HT|o|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|Bid 1@S. Game is not possible unless opener has a maximum hand; spades is a possible strain.|
+pg| ***** 108 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%%%% Board 15
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+
+{Responder does not have support for the major suit opened}
+^-|HT|e|AT|^-Board 15
+^-|
+HT|F|at|^B@2
+Partner opened ^*B1H^*N and you have this hand,|HT|i|cs|1|at|^b{|ih|pS9875h98dak98c876|at|}|lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^1|lb|*mWhat kind of hand does opener need for you to make game?^maximum~medium at least~any hand^1| 
+hf|N|cq||lb|*BWhat bid would you make?^^1s|HT|o|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|You should still bid 1S even with the bad spade suit. There is not 100% universal agreement about that, but most experts would bid 1S as opposed to 1N. No game is possible unless opener has a maximum; spades are not as likely because of the weak suit.
+|
+pg| ***** 112 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%% Board 16
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+ 
+{Responder does not have support for the major suit opened}
+^-|HT|e|AT|^-Board 16
+^-|
+HT|F|at|^B@2
+Partner opened ^*B1H^*N and you have this hand,|HT|i|cs|1|at|^b{|ih|pS98765h98dak3c543|at|}|lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^1|lb|*mWhat kind of hand does opener need for you to make game?^maximum~medium at least~any hand^1| 
+hf|N|cq||lb|*BWhat bid would you make?^^1s|HT|o|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|No game is possible unless opener has maximum; spades is a possible strain; 5-card length overcomes weak spots. Bid 1@S.|
+pg| ***** 116 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%%%% Board 17
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+
+{Responder does not have support for the major suit opened}
+^-|HT|e|AT|^-Board 17
+^-|
+HT|F|at|^B@2
+Partner opened ^*B1H^*N and you have this hand,|HT|i|cs|1|at|^b{|ih|pSaq98h54d652cat43|at|}|lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^2|lb|*mWhat kind of hand does opener need for you to make game?^maximum~medium at least~any hand^2| 
+hf|N|cq||lb|*BWhat bid would you make?^^1s|HT|o|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|Bid 1S. Game is possible if opener has medium or maximum. You are not strong enough to bid 2C followed by 2S.  |
+pg| ***** 120 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%% Board 18
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+
+{Responder does not have support for the major suit opened}
+^-|HT|e|AT|^-Board 18
+^-|
+HT|F|at|^B@2
+Partner opened ^*B1H^*N and you have this hand,|HT|i|cs|1|at|^b{|ih|pSa43h65da543cah32|at|}|lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^3|lb|*mWhat kind of hand does opener need for you to make game?^maximum~medium at least~any hand^3| 
+hf|N|cq||lb|*BWhat bid would you make?^^2n|HT|o|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|Bid 2NT. If opener opens 1H and you have 4 hearts, you have to bid 2N showing game forcing values and 4-card support for hearts. Another possibility in this hand is a splinter (but we do not discuss the advanced conventions here). |
+pg| ***** 124 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%% Board 19
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+ 
+{Responder does not have support for the major suit opened}
+^-|HT|e|AT|^-Board 19
+^-|
+HT|F|at|^B@2
+Partner opened ^*B1H^*N and you have this hand,|HT|i|cs|1|at|^b{|ih|pSAQ98H76D654CAK98|at|}|lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^3|lb|*mWhat kind of hand does opener need for you to make game?^maximum~medium at least~any hand^3| 
+hf|N|cq||lb|*BWhat bid would you make?^^1s|HT|o|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|Bid 1S. Your side makes game regardless of opener's strength--responder must force to game. Spades are possible. You  cannot bid 2C first because opener will assume a five-card club suit. Over opener's 2D rebid, bid 3NT. If opener rebids 2H, bid 3C. If partner rebids 2S, bid 3C (opener may only have 3 spades). And if the rebid is 2NT, bid 3NT.|
+pg| ***** 128 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%%%% Board 20
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+ 
+{Responder does not have support for the major suit opened}
+^-|HT|e|AT|^-Board 20
+^-|
+HT|F|at|^B@2
+Partner opened ^*B1H^*N and you have this hand,|HT|i|cs|1|at|^b{|ih|pSAQ98H76D65CAK986|at|}|lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^3|lb|*mWhat kind of hand does opener need for you to make game?^maximum~medium at least~any hand^3| 
+hf|N|cq||lb|*BWhat bid would you make?^^2C|HT|o|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|You must force game. Spades are possible. Bid 2C followed by showing your spades. Opener will assume 5+ card club suit and 4 spades.
+ 
+If opener rebids 2D or 2H bid 2S. If opener bids 2NT, bid 3S. If opener bids 2S that is a reverse and establishes a game force. Over opener's 2S, bid 3S which is stronger than 4S and is a slam try (opener cannot pass as you are in a game forcing auction). |
+pg| ***** 132 ***** |
+
+
+nt||
+
+%%%%%%%%%%%%%% B22%%%%%%%%%%%%%%%%%%%% Board 21
+cs|2|at|
+^-{^*BConstructive Auctions after a Major Suit (1@H or 1@S) Opening Bid - Part 2 of 2^*N}
+
+{Responder does not have support for the major suit opened}
+^-|HT|e|AT|^-Board 21
+^-|
+HT|F|at|^B@2
+Partner opened ^*B1H^*N and you have this hand,|HT|i|cs|1|at|^b{|ih|pSAj5Ht6DK654CK765|at|}|lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^2|lb|*mWhat kind of hand does opener need for you to make game?^maximum~medium at least~any hand^2| 
+hf|N|cq||lb|*BWhat bid would you make?^^2c|HT|o|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||fp|2|at|Game is possible unless opener has a minimum hand. The correct bid is 2C. Next, If opener bids 2D, bid 3D. If opener bids 2H bid 2NT.  |
+pg| ***** 136 ***** |
+
+
+HT|w|AT|^B@2^Y@3This is the end of this section. The Questions & Answers section is next.|
+PG| ***** 137 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% Q & A
+qx|QA,   Questions and Answers|TU|Y|HT|d|Va|8|cs|1|cp|2|fp|1|at|
+^-{Questions and Answers}
+^-|HT|f|cp||FP||cp|8|AT|
+
+^B@2^*BHoward: ^*N|cp||at|So, to summarize what to do with unbalanced maximum hands and a second suit, opener must jump shift (or reverse into spades). The jump shift establishes a game force (the reverse does not). With a minimum hand, opener rebids the suit at the 2 level (except if it is spades, in which case opener passes). And with a medium hand (somewhat rare), opener also rebids a suit at the 2 level, but can reverse into 2@S when appropriate. |
+PG| ***** 138 ***** |
+
+
+at|
+
+ELIZA42: Opener with medium hand (15-17) cannot reverse. Ask him to clarify.|
+PG| ***** 139 ***** |
+
+
+cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Using standard hand evaluation methods (raw HCP plus additions for shortness), you can reverse with a medium hand. A medium hand which qualifies for a reverse contains a 5+ card suit plus a 4 card suit. Therefore, you can add at least 2 distribution points to the hand (the hand must have at least either 2 doubletons or a singleton) giving the hand enough strength to reverse.|
+PG| ***** 140 ***** |
+
+
+AT|
+
+guyb2: When as responder you have a maximum and opener opens 1@h. What to do with 5 spades and 5 minor?|
+PG| ***** 141 ***** |
+
+
+cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|You bid 1 spade. You must force to game. If opener raises spades, you can bid game. If opener's rebid is not your second suit, you can bid your second suit to force opener to keep bidding. If you are lucky enough to have opener rebid your second suit, then you can use fourth suit forcing to force opener to keep bidding.|
+PG| ***** 142 ***** |
+
+
+ht|x|cp|8|AT|
+^B@2^*BMovie Maker: ^*N|cp||at|This is the end of Q & A section.|
+PG| ***** 143 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%55 LAW
+qx|LAW,The Law of Total Tricks |ht|e|cp|8|AT|
+^B@2^Y@3^*BHoward: ^*N|cp||at|The Law of Total Tricks is a fairly easy and extremely important concept that every player should know. |
+PG| ***** 144 ***** |
+
+
+AT|
+
+Simply put, the Law of Total Tricks states that you are safe in bidding to the level equal to the number of trumps you have. So, for example, if you have a 9-card fit, you are safe in bidding to the 3 level (9 tricks). Similarly, with a 10-card fit, you are safe in bidding to the 4 level (10 tricks). |
+PG| ***** 145 ***** |
+
+
+AT|
+
+Notice that the Law does not mention high-card points. That is because, even if you go down, the contract is almost always a good sacrifice against whatever the opponents can make. The Law is very accurate and should be followed on all hands. Sometimes it goes against your intuition, but, in my experience, you should strictly follow the Law.|
+PG| ***** 146 ***** |
+
+
+AT| 
+
+Note that the Law specifies the minimum level to which you should bid. Even with an 8-card fit, if you have enough points to bid game, you should still bid game, which is a 10-trick contract.|
+PG| ***** 147 ***** |
+
+
+AT|
+
+Next, as promised let me repeat the hand categories from the first lesson.
+
+|
+PG| ***** 148 ***** |
+
+
+nt||
+%%%%%%%%%%%%%% HAN
+qx|HAN, Hand Categories|
+ht|f|AT|^B@2As opening bidder, your hand falls into one of three categories:
+|HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|
+PG| ***** 149 ***** |
+
+
+ht|F|AT|^B@2As opening bidder, your hand falls into one of three categories:
+|HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|k|AT|^B@2Similarly, as responder, your hand falls into one of three categories:
+|HT|l|AT|^*UBased on Traditional Method^*N|HT|l|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|
+PG| ***** 150 ***** |
+
+
+%%2
+ht|f|AT|^B@2As opening bidder, your hand falls into one of three categories:
+|HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|
+HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|k|AT|^B@2Similarly, as responder, your hand falls into one of three categories:
+|HT|l|AT|^*UBased on Traditional Method^*N|HT|l|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|ht|o|AT|
+^BRemember, game requires that the combined partnership assets be at least 25 points.|
+PG| ***** 151 ***** |
+
+
+%%%%repeat
+ht|f|AT|^B@2As opening bidder, your hand falls into one of three categories:
+|HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|
+HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|k|AT|^B@2Similarly, as responder, your hand falls into one of three categories:
+|HT|l|AT|^*UBased on Traditional Method^*N|HT|l|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|ht|o|AT|
+^BRemember, game requires that the combined partnership assets be at least ^*B25^*N points.|
+HT|g|at|^K^*UBased on Bergen's Method^*N|HT|g|at|
+^L1. minimum (13-16 points)
+^L2. medium (17-19 points)
+^L3. maximum (20+ points) |HT|l|AT|^K^*UBased on Bergen's Method^*N|HT|l|AT|
+^L1. minimum (6-9 points)
+^L2. medium (10-12 points)
+^L3. maximum (12+ points)|ht|p|AT|
+Remember with Bergen's method, game requires that the combined partnership assets be at least ^*B26^*N points.|
+PG| ***** 152 ***** |
+
+
+ht|f|AT|^B@2As opening bidder, your hand falls into one of three categories:
+|HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|
+%%%% LTC chart
+ht|f|AT|^B@2As opening bidder, your hand falls into one of three categories:
+|HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|
+HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|k|AT|^B@2Similarly, as responder, your hand falls into one of three categories:
+|HT|l|AT|^*UBased on Traditional Method^*N|HT|l|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|ht|o|AT|
+^BRemember, game requires that the combined partnership assets be at least ^*B25^*N points.|
+HT|g|at|^K^*UBased on Bergen's Method^*N|HT|g|at|
+^L1. minimum (13-16 points)
+^L2. medium (17-19 points)
+^L3. maximum (20+ points) |HT|l|AT|^K^*UBased on Bergen's Method^*N|HT|l|AT|
+^L1. minimum (6-9 points)
+^L2. medium (10-12 points)
+^L3. maximum (12+ points)|ht|p|AT|
+Remember with Bergen's method, game requires that the combined partnership assets be at least ^*B26^*N points.|ht|f|AT|^B@2As opening bidder, your hand falls into one of three categories:
+|HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|g|AT|^t^*ULosing Trick Count^*N|HT|g|AT|
+^r1. Minimum (7 losers)
+^r2. Medium (6 losers)
+^r3. maximum (5 losers or less)|HT|l|AT|^t^*ULosing Trick Count^*N|HT|l|AT|
+^r1. Minimum (9 losers)
+^r2. Medium (8 losers)
+^r3. Maximum (7 losers or less)|ht|q|AT|
+Remember with Losing Trick Count method, game requires that the combined partnership should have ^*B14 or fewer losers^*N.|
+PG| ***** 153 ***** |
+
+
+%%%% X starts here<<<<<<<<<<<<<<<<<<<<<<<<<<
+ht|F|AT|^B@2As opening bidder, your hand falls into one of three categories:
+|HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|k|AT|^B@2Similarly, as responder, your hand falls into one of three categories:
+|HT|l|AT|^*UBased on Traditional Method^*N|HT|l|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|
+ht|f|AT|^B@2As opening bidder, your hand falls into one of three categories:
+|HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|
+HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|k|AT|^B@2Similarly, as responder, your hand falls into one of three categories:
+|HT|l|AT|^*UBased on Traditional Method^*N|HT|l|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|ht|o|AT|
+^BRemember, game requires that the combined partnership assets be at least 25 points.|ht|f|AT|^B@2As opening bidder, your hand falls into one of three categories:
+|HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|
+HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|k|AT|^B@2Similarly, as responder, your hand falls into one of three categories:
+|HT|l|AT|^*UBased on Traditional Method^*N|HT|l|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|ht|o|AT|
+^BRemember, game requires that the combined partnership assets be at least ^*B25^*N points.|
+HT|g|at|^K^*UBased on Bergen's Method^*N|HT|g|at|
+^L1. minimum (13-16 points)
+^L2. medium (17-19 points)
+^L3. maximum (20+ points) |HT|l|AT|^K^*UBased on Bergen's Method^*N|HT|l|AT|
+^L1. minimum (6-9 points)
+^L2. medium (10-12 points)
+^L3. maximum (12+ points)|ht|p|AT|
+Remember with Bergen's method, game requires that the combined partnership assets be at least ^*B26^*N points.|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|g|AT|^t^*ULosing Trick Count^*N|HT|g|AT|
+^r1. Minimum (7 losers)
+^r2. Medium (6 losers)
+^r3. maximum (5 losers or less)|HT|l|AT|^t^*ULosing Trick Count^*N|HT|l|AT|
+^r1. Minimum (9 losers)
+^r2. Medium (8 losers)
+^r3. Maximum (7 losers or less)|ht|q|AT|
+Remember with Losing Trick Count method, game requires that the combined partnership should have ^*B14 or fewer losers^*N.
+^*BThe following table^*N summarizes how the partnership can tell whether or not they have enough points to bid game:
+
+^H^*UOpener
+Responder^*N           Minimum   Medium  Maximum
+Minimum               No           No           Yes
+Medium                No           Yes          Yes
+Maximum              Yes          Yes          Yes|
+pg| ***** 154 ***** |
+
+
+ht|F|AT|^B@2As opening bidder, your hand falls into one of three categories:
+|HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|k|AT|^B@2Similarly, as responder, your hand falls into one of three categories:
+|HT|l|AT|^*UBased on Traditional Method^*N|HT|l|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|
+ht|f|AT|^B@2As opening bidder, your hand falls into one of three categories:
+|HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|
+HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|k|AT|^B@2Similarly, as responder, your hand falls into one of three categories:
+|HT|l|AT|^*UBased on Traditional Method^*N|HT|l|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|ht|o|AT|
+^BRemember, game requires that the combined partnership assets be at least 25 points.|ht|f|AT|^B@2As opening bidder, your hand falls into one of three categories:
+|HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|
+HT|g|AT|^*UBased on Traditional Method^*N|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|k|AT|^B@2Similarly, as responder, your hand falls into one of three categories:
+|HT|l|AT|^*UBased on Traditional Method^*N|HT|l|AT|
+^C1. minimum (6-8 points) 
+^C2. medium (9-11 points) 
+^C3. maximum (12+ points)|ht|o|AT|
+^BRemember, game requires that the combined partnership assets be at least ^*B25^*N points.|
+HT|g|at|^K^*UBased on Bergen's Method^*N|HT|g|at|
+^L1. minimum (13-16 points)
+^L2. medium (17-19 points)
+^L3. maximum (20+ points) |HT|l|AT|^K^*UBased on Bergen's Method^*N|HT|l|AT|
+^L1. minimum (6-9 points)
+^L2. medium (10-12 points)
+^L3. maximum (12+ points)|ht|p|AT|
+Remember with Bergen's method, game requires that the combined partnership assets be at least ^*B26^*N points.|HT|g|at|
+^C1. minimum (12-14 points)
+^C2. medium (15-17 points)
+^C3. maximum (18+ points)|HT|g|AT|^t^*ULosing Trick Count^*N|HT|g|AT|
+^r1. Minimum (7 losers)
+^r2. Medium (6 losers)
+^r3. maximum (5 losers or less)|HT|l|AT|^t^*ULosing Trick Count^*N|HT|l|AT|
+^r1. Minimum (9 losers)
+^r2. Medium (8 losers)
+^r3. Maximum (7 losers or less)|ht|q|AT|
+Remember with Losing Trick Count method, game requires that the combined partnership should have ^*B14 or fewer losers^*N.
+^*BThe following table^*N summarizes how the partnership can tell whether or not they have enough points to bid game:
+
+^h^*UOpener
+Responder^*N           Minimum   Medium  Maximum
+Minimum               No           No           Yes
+Medium                No           Yes          Yes
+Maximum              Yes          Yes          Yes|HT|x|at|
+During the auction, both partners should always be thinking about whether it is still possible to bid game. For example, if your partner opens and you, as responder, have a maximum (12+) hand, you should bid game. Similarly, if you open with a maximum (18+ with traditional count and 20+ with Bergen's count) and get any response from partner, you should bid game. |
+PG| ***** 155 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%new TEXT
+QX|TXT, FULL TEXT|HT|e|cs|1|cp|2|fp|2|at|
+^-{Full Text - Howard's Lesson}
+^-|
+HT|f|fp||cp|8|AT|
+^B@2^Y@3^*BBILManager:^*N|cp||at| Thank you very much Howard for this very educative series.|cp|8|
+pg| ***** 156 ***** |
+
+
+AT|^B@2^z@3^*BHoward: ^*N|cp||at| You are welcome. guess that is my cue to get started Welcome to my fourth lesson on the Fundamentals of Constructive Bidding. The purpose of these lessons is to teach you the principles behind bidding. I have found that most students bid by memorizing the often conflicting and confusing rules about bidding. What I am trying to do in these lessons is explain the principles behind these rules so that you can figure out what to bid, rather than just relying on a set of rules.|
+PG| ***** 157 ***** |
+
+
+AT|
+
+This lesson is part 2 of how to bid when your partner opens 1@H or 1@S In part 1, I talked about how to bid after 1@H or 1@S when you have 3+ card support. Remember a very important principle is "support with support." That means you should go out of your way to show partner you have support ASAP.|
+PG| ***** 158 ***** |
+
+
+AT|
+
+If you have 4+ card support, raise partner immediately regardless of what else you have in your hand. If you bid a new suit after partner opens a major, that denies 4-card support. If you have 3-card support and if you have a weak hand, similarly you should raise to 2. However, because unfortunately there is no good way to show 3 card support with a medium or maximum hand, you have to reluctantly bid a new suit.|
+PG| ***** 159 ***** |
+
+
+AT|
+
+Notice I said reluctantly. Whenever partner opens a major and you have support, you should be disappointed when you cannot tell him the good news immediately. Unfortunately, often you do not have support for partner. This lesson is on what you do in that case. A quick note on hand evaluation. In these lessons I use the usual 4-3-2-1 method for counting high card points, with small adjustments for either shortness or length. That is a reasonable method to use when you first learn bridge. However, I strongly recommend you learn the Bergen hand evaluation method once you are comfortable with bidding. It is much more accurate.|
+PG| ***** 160 ***** |
+
+
+AT|
+
+For details on that method you can go to my web site ^*Hwww.hondobridge.com^*N and look at my slam bidding lessons 1 and 2.|
+PG| ***** 161 ***** |
+
+
+NT||
+HT|E|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|For those who have been attending these lessons, remember, as responder you have one of 3 hand types -- a minimum response contains about 6-8 points, a medium response contains about 9-11 points. and a maximum response contains 12+ points. If you have a maximum response, it is your responsibility to make sure your side gets to game. If you have a minimum response, game is possible but unlikely, unless partner has 18+. The most difficult auctions are those where you have a medium response, because then you have game if partner has 15+.|
+PG| ***** 162 ***** |
+
+
+AT|
+
+So, what I am going to do in this lesson is discuss your responses to one of a major based on which type of hand you have as responder. Let's start with when you have a minimum response (6 to a bad 9 or so). This is very easy, if not very informative to your partner. Most of the time, you bid 1N over 1 of a major with a minimum response. You cannot bid a new suit, because that promises at least a medium hand. You cannot raise because you do not have 3+ card support. So, by default, you must bid 1NT. There is one exception. If partner opens 1@H, and you have a minimum hand and 4+ spades, you should bid 1@S. However, recall that, if you have a minimum hand, if you bid 1@S, you only do that with 2 or fewer hearts. With a minimum  hand and 3+ hearts, you always raise.|
+PG| ***** 163 ***** |
+
+
+AT|
+
+Now, that does not mean that when the auction goes 1@H-P-1@S, opener should assume you do not have 3 hearts. He does know you do not have 4+ hearts, because, as I said before, you always raise with 4+ card support. But a response of 1@S can be made with a medium or maximum hand and 3 hearts, as responder has no way of raising right away. However, if the subsequent auction shows that responder has a minimum hand, then opener knows that responder has at most 2 hearts. So, quite often when it goes 1@H-P-1@S, responder has 2 or fewer hearts. And if he has 3 hearts, opener will find out the next time responder bids.|
+PG| ***** 164 ***** |
+
+
+AT|
+
+Now let's go back to the 1NT response. What does opener rebid after 1NT? I am assuming here that we are not discussing the 1NT forcing convention. If you play the 2 Over 1 Game Force System, 1NT sometimes shows a different hand than a minimum hand with 6-9. But that is beyond the scope of this lesson. For now, assume 1NT shows a minimum hand with 2 or fewer cards in support of opener's suit, and 6-9. What does opener rebid?|
+PG| ***** 165 ***** |
+
+
+nT||
+%%%%%%%%%%%%%
+HT|E|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Note that opener cannot have a medium balanced hand, because then he or she would have opened 1NT. Remember that I, and most experts, advocate opening 1NT with a balanced 15-17 even with a 5-card major. So, opener cannot have a medium balanced hand. If opener has a maximum balanced hand, he can bid 3N, or 2N with 17 or a bad 18. If opener has a six-card suit, and a minimum hand, he or she rebids it at the 2-level. With a six-card suit and a medium hand, opener can jump to 3. Note that is not forcing.|
+PG| ***** 166 ***** |
+
+
+AT|
+
+With a six-card suit and a maximum hand, opener must show a maximum hand by either jump shifting, occasionally into a 3 card minor, or bidding 3NT or 4 of the major if the suit is good enough to play opposite a singleton. The point here is that once responder bids 1NT to one of a major, the captaincy of the hand shifts back to opener. If opener has a maximum hand, it is his or her responsibility to make sure their side gets to game. Responder has sort of "signed off" by bidding 1NT. If opener feels that 1N is not the best contract, it is her responsibility to change the contract and determine whether or not to bid game. |
+PG| ***** 167 ***** |
+
+
+AT|
+
+So, I have now talked about what opener rebids with either a balanced hand or a 6+ card suit. With an unbalanced hand (that means another outside 4+ card suit), opener can bid a new suit. If the new suit is at the 2-level, then responder will usually either pass or, with 2-card support for opener's original major, correct back to 2 of the major. Note that with a minimum or medium hand, opener has to bid a new suit at the 2-level. If opener rebids a new suit at the 3 level, that is a jump shift, which shows a maximum hand, and establishes a game force. Again, when opener rebids a new suit at the 2-level, opener can theoretically have as much as 17 or a bad 18, but in real life usually has less.|
+PG| ***** 168 ***** |
+
+
+AT|
+ 
+There is one special case I need to talk about. If it goes 1@H-P-1NT, on occasion opener will have a minimum hand with 5 hearts and 4 spades. In that case, opener cannot show a second suit at the 2-level. Why is that? Because 2@S is a reverse (a bid past the original suit at the 2-level). Also, note that because responder bid 1NT, responder cannot have 4+ spades. So, your side cannot possibly have a spade fit. Therefore, if you have a minimum hand, with 5 hearts and 4 spades, and the auction goes 1@H-1NT you should pass as opener. Of course, with 5 hearts and 4 spades and a medium or maximum hand, you can rebid 2@S as opener, since you can reverse with a medium or maximum hand.|
+PG| ***** 169 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%
+HT|E|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|So, to summarize what to do with unbalanced maximum hands with a second suit, opener must jump shift (or reverse into spades). The jump shift establishes a game force (the reverse does not). With a minimum hand, opener's rebid is a new suit at the 2-level (except if it is spades, in which case opener passes). And with a medium hand (somewhat rare), opener's rebid is still a new a suit at the 2-level, but opener can reverse into 2@S when appropriate.|
+PG| ***** 170 ***** |
+
+
+AT|
+
+Next, let's go on to what to do when you as responder have a medium hand. These are the most difficult auctions, because you, as responder and captain, need to determine both what suit to play in, and whether or not to play in game. Neither suit nor level has yet been determined. If opener has a medium or maximum hand, you want to be in game. But if opener has a minimum hand, you do not want to be in game. Similarly, you do not know which suit the hand will be played in (or if NT is best). So, what can you do?|
+PG| ***** 171 ***** |
+
+
+AT|
+ 
+Well, you have to rely on the fact that a new suit by responder is forcing for one round. Therefore, you must bid a new suit with a medium hand and no support for partner. For example if partner opens 1@S, and you have 5 hearts, you can bid 2@H. Note that 2@H over 1@S guarantees a 5 card suit. This is the only new suit bid by responder that promises a 5-card suit. All other new suit auctions only promise a 4-card suit. Remember, I am talking about what to do when you as responder have a medium hand. You cannot bid 2@H with a minimum hand, even if you have 5+ hearts. With a minimum  hand, you have to bid 1NT. You can only bid a new suit at the 2-level as responder with a medium or maximum hand and if that bid is 2@H, it shows 5+ hearts.|
+PG| ***** 172 ***** |
+
+
+AT|
+
+Let's take the case where partner opens 1@H, you have a medium hand, and 4 spades. In that case, you have an easy 1@S bid. Sometimes responder will bypass a 4 card spade suit but, when you have a medium hand, and 4 spades (or more), it is pretty much always right to bid 1@S. Responding to a 1@S opener, with a medium hand (no support for partner), if you have a 5-card minor (and not 5 hearts) you should bid the minor. If you have no 5 card suit, and do not have support for partner, you have to have a 4-card minor, so you bid the 4-card minor.|
+PG| ***** 173 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%
+HT|E|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|So, 1 major/2 minor only promises a 4-card suit. Now, those of you who are sharp may ask, what do you do if opener opens 1@S and you have exactly 4 hearts and 3 cards in all the other suits and a medium hand. |
+PG| ***** 174 ***** |
+
+
+AT|
+
+None of the rules I presented apply. You can't bid 2@H as that promises 5 hearts. You can't bid a minor, because that promises a 4-card suit. Well, first of all, that case rarely happens and second of all, there is some good news anyway. You have 3-card spade support, so you know you are going to end up in spades (or occasionally hearts if opener also has 4 hearts). Therefore, in that case, you bid 2@C with a 3-card suit, and then show your 3-card spade support on the next round. Bidding 2@C with a 3-card suit will not get you into too much trouble because you will correct back to spades. |
+PG| ***** 175 ***** |
+
+
+AT|
+
+Once responder bids a new suit, what are the possible rebids by opener? If opener rebids the major at the 2-level, that shows a minimum hand with a six card suit. You, as responder with a medium hand, can invite with a doubleton honor, otherwise pass. Much of the time you will pass. If opener jumps to 3 of their major, that shows a medium hand and 6+ cards in their suit. Since you have a medium hand, that is a game forcing auction. So, if the auction goes 1 major / 2 something / 3 major, that establishes a game force. Responder, by bidding a new suit at the 2-level has shown at least a medium hand. And opener, by jumping to the 3-level has shown a medium hand.|
+PG| ***** 176 ***** |
+
+
+AT|
+ 
+You may recall from the the first lesson, a medium hand opposite a medium hand has enough points for game so that specific auction establishes a game force. When opener rebids their suit, you have a good idea of both their hand strength and distribution and can usually determine whether or not game should be bid. Unfortunately, opener is usually not so co-operative with their rebid. But, if opener rebids the cheapest NT (either 1 major / 2 minor / 2NT) or (1@H-1@S-1NT) you do have a good idea of what opener has --a balanced minimum, and game is unlikely, so you often pass.|
+PG| ***** 177 ***** |
+
+
+AT|
+ 
+Now if opener reverses, that shows a medium hand as well and again, if you have a medium hand, your side has enough for game. If your first bid was a 2 over 1 bid (for example, 1@H-P-2@C-P-2@S), then both partners know that a game force auction has been established. That is because you, as responder, have guaranteed a medium hand with the 2@C bid and opener has guaranteed a medium hand with the 2@S reverse. Therefore, the game forcing nature of the auction is clear, and all that remains is to determine the suit. Similarly, if opener jump shifts, that also establishes a game force.|
+PG| ***** 178 ***** |
+
+
+NT||
+HT|E|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|That leaves the difficult auction, where opener bids a new suit at the 2-level. For example, 1@H-2@C-2@D. That is a case where opener's strength is not fully defined. Many times, opener will have a minimum  hand and, if you only have a medium response, game is not likely. But, opener will on occasion have a medium hand, not strong enough to jump shift so, you with a medium hand, should keep the auction open to cater to that possibility.|
+PG| ***** 179 ***** |
+
+
+AT|
+ 
+With 2-card support, you can return to 2 of opener's major. With support for opener's second suit you can raise. Otherwise, you have to bid 2NT or rebid your suit. If at all possible, however, you should bid one of opener's suits. You should only bid NT or rebid your suit if no other suitable bid is available.|
+PG| ***** 180 ***** |
+
+
+AT|
+
+Though, responding with a medium hand is the toughest, with a maximum hand things are much better. You, as responder, know that you must bid game, so that issue is resolved. The only thing you have to figure out is which suit to play in. You should keep making forcing bids (new suits), until you figure out where to play. Usually, opener's rebid will clarify things, and you can figure out where to play and, you will always have a new suit available as your second rebid, in case you are not sure what to do.|
+PG| ***** 181 ***** |
+
+
+AT|
+
+Therefore, if you have an opening hand opposite partner's opener, the auction is pretty straight forward. So long as you, as responder, remember to keep making forcing bids, until you get to game. The one special case I want to talk about is when partner opens 1@H and you have 4 spades and a 5-card minor. In that case, you do bypass your 4 card spade suit and bid your 5-card minor. When you later show your spades, opener will know you have a 5+ card minor, 4 spades, an opening hand, and will have a good idea what to do. May people will bid 1@S over 1@H with an opening hand and a 5-card minor but that is not correct. you should bid your minor first.|
+PG| ***** 182 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%
+HT|E|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Now, let's do some quizzes. For the first set of hands, assume opener opens 1@H. I will give you a hand. You should determine 
+
+a) minimum, medium, or maximum 
+b) what your bidding plan is and 
+c) what your first bid is.
+ 
+Okay, after 1@H you hold: @Sxx @Hxx @DAKxxx @Cxxx|
+PG| ***** 183 ***** |
+
+
+AT|
+ 
+a) This is a minimum  hand
+b) No game is possible unless opener has a maximum hand.
+c) Your response is 1NT which is the usual response with a minimum hand.|
+PG| ***** 184 ***** |
+
+
+AT|
+ 
+Partner opens 1@H and you hold: @SQxxx @Hxx @DKQxx @Cxxx|
+PG| ***** 185 ***** |
+
+
+AT|
+a) You have a minimum  hand
+b) No game is possible unless opener has a maximum
+c) Your response is 1@S.|
+PG| ***** 186 ***** |
+
+
+AT|
+
+Partner opens 1@H and you hold: @Sxxxx @H xx @DKQxx @CQxx|
+PG| ***** 187 ***** |
+
+
+AT|
+a) Once again you have a minimum hand.
+b) Game is unlikely. 
+c) Also spades is possible but less likely because you have such weak spades. Remember, when partner opens 1@H, he almost never has a 5-card spade suit. So, at best you have a 4-4 spade fit. Even if opener has 4 spades. unless they are very strong, you could have as many as 3 spade losers. Therefore, I would bid 1NT with that hand, although if you chose 1@S that would be acceptable.|
+PG| ***** 188 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%
+HT|E|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Next hand is similar but slightly different. Partner opens 1@H and you hold @Sxxxxx @Hxx @DAKx @Cxxx|
+PG| ***** 189 ***** |
+
+
+AT|
+
+a) You have a minimum hand
+b) Game is unlikely. But spades is a possible strain because the 5 card suit overcomes the weak spots.
+c) In this case 1@S is the best bid, rather than 1NT.|
+PG| ***** 190 ***** |
+
+
+AT|
+
+Partner opens 1@H and you hold @SAQxx @Hxx @Dxx @CAxxxx|
+PG| ***** 191 ***** |
+
+
+AT|
+a) You have a medium hand
+b) Game is possible if opener has a medium or maximum opener
+c) Although you are strong enough to bid 2@C, you are not strong enough to bid clubs then spades (that shows an opening hand). Therefore, you must bid 1@S on this hand. You must give priority to showing your major.|
+PG| ***** 192 ***** |
+
+
+AT|
+
+Partner opens 1@H and you hold @SAQxx @Hxx @Dxx @CAKxxx|
+PG| ***** 193 ***** |
+
+
+AT|
+a) This is a maximum hand
+b) You must force to game
+c) At this point, spades, hearts and NT are all likely contracts. Clubs is possible, but you almost always prefer 3NT to 5 of a minor. You are strong enough to bid 2@C followed by 2@S. Therefore, you bid 2@C. If opener rebids 2@D or 2@H, you bid 2@S. If opener rebids 2NT, you rebid 3@S. Remember, opener cannot bid 2@S with 4 spades and a minimum  hand as that is a reverse. So, 2N by opener does not deny 4 spades. |
+PG| ***** 194 ***** |
+
+
+AT|
+
+If opener bids 2@S (after opening 1@H), that makes you very happy. That establishes a game force. You want to make a slam try. If you bid 4@S that is weaker than bidding 3@S. That is because, once a game force is established, jumping to game is the weakest bid you can make. That is known as the principle of "fast arrival". Once a game force is established, if you bid to game quickly, that shows little slam interest. On this hand you should bid 3@S, not 4@S since you are in a game forcing auction, 3@S is forcing and stronger than 4@S.|
+PG| ***** 195 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%
+HT|E|cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Partner opens 1@H and you hold @SAQxx @Hxx @Dxxx @CAKxx.|
+PG| ***** 196 ***** |
+
+
+AT|
+
+a) Maximum hand
+b) You must make sure your side gets to game. Spades, hearts, and NT are all possible contracts. You cannot bid 2@C and then spades, because that promises 5 clubs.
+c) So, you must bid 1@S. If opener rebids 2@D, bid 3NT. If opener bid 2@H, bid 3@C (new suit is still forcing). If opener bids 2@S, you could bid 4@S. However, sometimes opener might raise to 2@S with good 3-card support. 2@S by opener tends to show 4-card support, but can be done with 3-card support. Over 2@S I would bid 3@C. Opener can then bid 3@S with 4 spades, or 3NT with diamonds and 3-card support.|
+PG| ***** 197 ***** |
+
+
+AT|
+
+Partner opens 1@H and you hold @SAxx @Hxx @DKxxx @CKxxx|
+PG| ***** 198 ***** |
+
+
+AT|
+ 
+a) You have a medium response
+b) Game is possible if pard has a medium or maximum opener
+c) Bid 2@C (remember, that only promises 4 clubs). If opener rebids 2@D, you rebid 2NT. If opener rebids 2@H, you can pass, as pard has a min, so game is unlikely. If opener rebids 2NT, you pass. If opener reverses (at least medium hand), or jump shifts (maximum hand), that establishes a game force. So, all bids are forcing until you reach game.|
+PG| ***** 199 ***** |
+
+
+AT|
+
+Last hand. Partner opens 1@H and you hold @SAxx @Hxx @DAxxx @CAKxx|
+PG| ***** 200 ***** |
+
+
+AT|
+
+a) You have a maximum hand
+b) You must force to game
+c) Bid 2@C. If opener bids 2@D, 2@H, or 2N, bid 3N. If opener reverses or jump shifts, slam is possible, and that establishes a game force.|
+PG| ***** 201 ***** |
+
+
+AT|
+
+Okay, that concludes this lesson.|
+PG| ***** 202 ***** |
+
+
+cp|8|AT| ^*BMovie Maker: ^*N|cp||at|As the content of this BBO movie cannot be printed into a readable format, I have prepared a text file which would be sent along with this presentation.|
+PG| ***** 203 ***** |
+
+
+NT|| 
+%%%%%%%%%%%%%%% Old text%%%%%%%%%%%%%
+qx|End,End|HT|H|AT|^- 
+
+@D@DThis is the end of third lesson.  |
+PG| ***** 204 ***** |
+
+
+NT||
+

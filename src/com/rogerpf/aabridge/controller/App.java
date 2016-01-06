@@ -28,6 +28,7 @@ import com.rogerpf.aabridge.model.Dir;
 import com.rogerpf.aabridge.model.Lin;
 import com.rogerpf.aabridge.model.Zzz;
 import com.rogerpf.aabridge.view.AaBookPanel;
+import com.rogerpf.aabridge.view.AaHomeBtnPanel;
 import com.rogerpf.aabridge.view.AaaOuterFrame;
 import com.rogerpf.aabridge.view.ButtonPanelLeft;
 import com.rogerpf.aabridge.view.ButtonPanelRight;
@@ -56,22 +57,24 @@ public class App {
 	public static boolean FLAG_expires = false;
 	
 	// ONLY set here by hand - end
-
+	public static String desktopFolderPath;
 	public static String autoSavesPath;
-	public static String savesPath;
+	public static String defaultSavesPath;
+	public static String realSavesPath = "";
 	public static String dealExt = "aaBridge";
 	public static String dotAaBridgeExt = '.' + dealExt;
 	public static String linExt = "lin";
 	public static String dotLinExt = '.' + linExt;
 	
-	public static String depFinOutInPath     = "C:\\ProgramSmall\\Deep Finesse\\aaBridge_to_from";
-	public static String depFinOutInFilename = "Sample Deals.txt";
-	public static String depFinOutInBoth     = depFinOutInPath + "\\" + depFinOutInFilename;
-	
 	public static String debug_pathlastLinLoaded = "";
 
 	public static boolean observeReleaseDates = true;
 
+	public static boolean haglundsDDSavailable = false;
+
+	public static boolean isDDSavailable() {
+		return haglundsDDSavailable && useDDSwhenAvaialble;
+	}
 	static int mode = Aaa.NORMAL_ACTIVE;
 
 	// Visual Mode
@@ -79,6 +82,7 @@ public class App {
 	public static final int Vm_DealAndTutorial = 2;
 	public static final int Vm_TutorialOnly = 3;
 
+	public static boolean ddsAnalyserVisible = false;
 
 	public static int visualMode = Vm_InsideADeal;  // visualMode
 
@@ -95,7 +99,8 @@ public class App {
 	public static boolean hideTutNavigationBar = false;
 	public static boolean lbx_nextAndTellClicked = false;
 	public static boolean lbx_modeExam = false;
-	public static boolean lbx_earlyEndMassGi = false;
+	public static boolean dfc_earlyEndMassGi = false;
+	public static boolean rqb_earlyEndMassGi = false;
 
 	
 	public static final float GBP_WING_PANEL_SIZE_PC = 11.0f;
@@ -111,21 +116,25 @@ public class App {
 
 	public static final float GAP_SMALL_GRAY_PERCENT = 0.5f;
 
+	public static boolean onMac = false;
+	public static boolean onWin = false;
+	public static boolean onLinux = false;  // later assumed if other two are false
 
+	public static boolean using_java_6 = false;
 
 	public final static String hm0oneHun = "hidemode 0, width 100%, height 100%";
 	public final static String hm1oneHun = "hidemode 1, width 100%, height 100%";
 	public final static String hm3oneHun = "hidemode 3, width 100%, height 100%";
 	public final static String simple = "insets 0 0 0 0, gap 0! 0!";
 	
-	public final static int RopTab_0_Deals = 0;
-	public final static int RopTab_1_Seat = 1;
-	public final static int RopTab_2_Autoplay = 2;
-	public final static int RopTab_3_SuitColors = 3;
-	public final static int RopTab_4_DFC = 4;
+	public final static int RopTab_0_NewDealChoices = 0;
+	public final static int RopTab_1_Autoplay = 1;
+	public final static int RopTab_2_SeatChoice = 2;
+	public final static int RopTab_3_DFC = 3;
+	public final static int RopTab_4_SuitColors = 4;
 	public final static int RopTab_5_DSizeFont = 5;
 	public final static int RopTab_6_RedHints = 6;
-	public final static int RopTab_7_ShowBtns = 7;
+	public final static int RopTab_7_ShowOptionalBtns = 7;
 	public final static int RopTab_Max = 7;
 
 
@@ -219,12 +228,20 @@ public class App {
 
 		compassPhyOffset =  Dir.North.v; //  ie zero  or none
 
+//		if (putWhoInSouthZone == 3) { // named player
+//			Dir compass = deal.playerMatching(App.nameInSouthZone);
+//			if (compass != null) {
+//				compassPhyOffset = (compass.v + 2) % 4;
+//				return;
+//			}
+//		}
+
 		if ((putWhoInSouthZone > 0) && !App.deal.isBidding() && !App.deal.contract.isPass()) {
 
 			if (putWhoInSouthZone == 1) {
 				// put the declarer in the south zone
 				compassPhyOffset = App.deal.contractCompass.rotate180().v;
-			} else { // case 2
+			} else { // case 2 or 3 with no match
 				// put the 'you seat' in the south zone
 				Dir youSeat = (respectLinYou) ? youSeatHint : youSeatForLinDeal;
 				compassPhyOffset = App.deal.contractCompass.rotate(youSeat.v).v;
@@ -249,10 +266,18 @@ public class App {
 	};
 
 
+	/**
+	 */
+	public static void biddingVisibilityCheck() {
+		if (App.ddsAnalyserVisible) {
+			App.ddsAnalyserVisible = false;
+			App.gbp.matchPanelsToDealState();
+		}
+	}
+
 
 
 	public static int compassPhyOffset = 0; // 0 to 3   
-	public static boolean localShowHidden = false;
 
 
 	//************* Preferences that are saved and restored - start *****************
@@ -273,18 +298,33 @@ public class App {
 	public static int ropSelPrevTabIndex;	
 	public static int ropSelectedTabIndex;	
 
+	public static boolean showMouseWheelSplash;
+	public static boolean showRedNewBoardArrow;
 	public static boolean showRedEditArrow;
 	public static boolean showRedDividerArrow;
-	public static boolean showRedNewBoardArrow;
 	public static boolean showRedVuGraphArrow;
 	public static boolean showDfcExamHlt;
 	public static boolean showBidPlayMsgs;
 	public static boolean showSuitSymbols;
+
+	public static boolean ddsScoreShow;
+
 	public static boolean alwaysShowHidden;
+	public static boolean force_N_HiddenTut;
+	public static boolean force_W_HiddenTut;
+	public static boolean force_E_HiddenTut;
+	public static boolean force_S_HiddenTut;
+
+	public static boolean localShowHidden;
+	public static int     localShowHiddPolicy;
+
 	public static boolean tutorialShowAuction;
 	public static boolean showPoints;
 	public static boolean showLTC;
+//	public static boolean showOldTextGray;  
 	public static boolean youAutoAdjacent;
+	
+	public static boolean useDDSwhenAvaialble;
 
 	public static boolean youAutoSingletons;
 
@@ -305,14 +345,13 @@ public class App {
 	public static boolean showClaimBtn;
 	public static boolean showRotationBtns;
 	public static boolean showSaveBtns;
-	public static boolean showDepFinBtns;
 	public static boolean showShfWkPlBtn;
 
-	public static boolean showEdPyCmdBarBtns;
 	public static boolean fillHandDisplay = false;
 	public static boolean runTestsAtStartUp = false;
 	public static boolean showTestsLogAtEnd = true;
-	public static int     putWhoInSouthZone = 0; // 0 to 2;
+	public static int     putWhoInSouthZone = 0; // 0 to 2;  // 3 not used
+//	public static String  nameInSouthZone;
 
 	public static String  dealCriteria;
 	public static boolean watchBidding;
@@ -322,11 +361,17 @@ public class App {
 	public static boolean respectLinYou;
 	public static boolean reviewFromPlay;
 	public static boolean showOpeningLead;
+	public static boolean youSeatPartnerVis;
 
 	public static boolean showDdAsMin;
 	public static boolean showDdWithResults;
 	public static boolean showDdResultTots;
 	public static int     tutorialDealSize; // 0 to 4   was  0 to 3
+
+	public static final int WMouse_FLOW = 0;
+	public static final int WMouse_STEP = 1;
+	public static final int WMouse_SINGLE = 2;
+	public static       int mouseWheelDoes;
 
 	public static boolean outlineCardEdge;
 	public static boolean movieBidFlowDoesFlow;
@@ -353,7 +398,7 @@ public class App {
 	public static final int scoringFollowsSouthZone = 2;     
 	public static int       scoringFollows = scoringFollowsYou;    // not (yet) saved or setable
 	
-	public static final String preferencesNode   = "com.rogerpf.watson-v2.prefs";
+	public static final String preferencesNode   = "com.rogerpf.aabridge-v3.prefs";
 	
 
 	// @formatter:on
@@ -382,8 +427,8 @@ public class App {
 		
 		startedWithCleanSettings   = appPrefs.getBoolean("startedWithCleanSettings", true); // but always saved as false
 
-		int orig_width = 940;
-		int orig_height = 700;
+		int orig_width = 1008;
+		int orig_height = 724;
 
 		int orig_horz_div  = orig_width - App.frame.RIGHT_OPT_PANEL_WIDTH__narrow;
 		int orig_vert_div  = orig_height - App.frame.BOTTOM_OPT_PANEL_HEIGHT;
@@ -399,49 +444,71 @@ public class App {
 		if (ropSelPrevTabIndex > App.RopTab_Max)
 			ropSelPrevTabIndex = 0;
 
+		showMouseWheelSplash= appPrefs.getBoolean("showMouseWheelSplash",true);
+		showRedNewBoardArrow= appPrefs.getBoolean("showRedNewBoardArrow",true);
 		showRedEditArrow   = appPrefs.getBoolean("showRedEditArrow",   true);
 		showRedDividerArrow= appPrefs.getBoolean("showRedDividerArrow",true);
-		showRedNewBoardArrow= appPrefs.getBoolean("showRedNewBoardArrow",true);
 		showRedVuGraphArrow= appPrefs.getBoolean("showRedVuGraphArrow",true);
 		showDfcExamHlt     = appPrefs.getBoolean("showDfcExamHlt",    true);
 		showBidPlayMsgs    = appPrefs.getBoolean("showBidPlayMsgs",   true);
 		showSuitSymbols    = appPrefs.getBoolean("showSuitSymbols",   false);
 		showPoints         = appPrefs.getBoolean("showPoints",        false);
 		showLTC            = appPrefs.getBoolean("showLTC",           false);
+//		showOldTextGray    = appPrefs.getBoolean("showOldTextGray",   true);
 		youAutoSingletons  = appPrefs.getBoolean("youAutoSingletons", false);
 		youAutoAdjacent    = appPrefs.getBoolean("youAutoAdjacent",   true);
 
+		useDDSwhenAvaialble    = appPrefs.getBoolean("useDDSwhenAvaialble"   , true);
 		yourFinessesMostlyFail = appPrefs.getBoolean("yourFinessesMostlyFail", false);
-		
+
 		dfcHyphenForVoids  = appPrefs.getBoolean("dfcHyphenForVoids", true);
 		dfcCardsAsBlobs    = appPrefs.getBoolean("dfcCardsAsBlobs",   false);
 		dfcTrainingSuitSort= appPrefs.getInt("dfcTrainingSuitSort",       3);
 		if (dfcTrainingSuitSort < 0 || dfcTrainingSuitSort > 2)
 			dfcTrainingSuitSort = 0;
-		dfcAutoNext        = appPrefs.getInt("dfcAutoNext",              3);
+		dfcAutoNext        = appPrefs.getInt("dfcAutoNext",              1);
 		if (dfcAutoNext < 0 || dfcAutoNext > 3)
-			dfcAutoNext = 3;
+			dfcAutoNext = 1;
 		dfcExamDifficulity = appPrefs.getInt("dfcExamDifficulity",       0);
 		if (dfcExamDifficulity < 0 || dfcExamDifficulity > 3)
 			dfcExamDifficulity = 3;
 		dfcExamYou  = Dir.dirFromInt(appPrefs.getInt("dfcExamYou",  Dir.West.v));
 		if (dfcExamYou != Dir.West && dfcExamYou != Dir.East && dfcExamYou!= Dir.South)
 			dfcExamYou = Dir.West;
-		dfcExamBottomYou   = appPrefs.getBoolean("dfcExamBottomYou", true);
+		dfcExamBottomYou   = appPrefs.getBoolean("dfcExamBottomYou",  true);
 
+		ddsScoreShow       = appPrefs.getBoolean("ddsScoreShow",     false);
+
+		force_N_HiddenTut   = appPrefs.getBoolean("force_N_HiddenTut", false);
+		force_W_HiddenTut   = appPrefs.getBoolean("force_W_HiddenTut", false);
+		force_E_HiddenTut   = appPrefs.getBoolean("force_E_HiddenTut", false);
+		force_S_HiddenTut   = appPrefs.getBoolean("force_S_HiddenTut", false);
 		alwaysShowHidden   = appPrefs.getBoolean("alwaysShowHidden", false);
-		youAutoplayAlways  = false; // appPrefs.getBoolean("youAutoplayAlways",false); so it needs to me manualy set each time
+		if (App.devMode == false) {
+			force_N_HiddenTut = false;
+		    force_W_HiddenTut = false;
+		    force_E_HiddenTut = false;
+			force_S_HiddenTut = false;
+			alwaysShowHidden = false;
+		}
+		localShowHidden    = appPrefs.getBoolean("localShowHidden",   true);
+		localShowHiddPolicy= appPrefs.getInt("localShowHiddPolicy",      2); // 0 = don't show,  1 = show, 2 = no change
+		if (localShowHiddPolicy < 0 || localShowHiddPolicy > 2)
+			localShowHiddPolicy = 0;
+
+		youAutoplayAlways  = (devMode == false) ? false : appPrefs.getBoolean("youAutoplayAlways",false); //not restored in normal use
 		youAutoplayPause   = appPrefs.getBoolean("youAutoplayPause",  true);
 		youPlayerEotWait   = appPrefs.getBoolean("youPlayerEotWait",  true);
 		showClaimBtn       = appPrefs.getBoolean("showClaimBtn",     false);
 		showRotationBtns   = appPrefs.getBoolean("showRotationBtns",  true);
 		showSaveBtns       = appPrefs.getBoolean("showSaveBtns",     false);
-		showDepFinBtns     = appPrefs.getBoolean("showDepFinBtns",   false);
-		showEdPyCmdBarBtns = appPrefs.getBoolean("showEdPyCmdBarBtns", false);
 		showShfWkPlBtn     = appPrefs.getBoolean("showShfWkPlBtn",   true);
-		// fillHandDisplay = appPrefs.getBoolean("fillHandDisplay", false); - never saved or restored
-		runTestsAtStartUp  = appPrefs.getBoolean("runTestsAtStartUp",false);
-		showTestsLogAtEnd  = appPrefs.getBoolean("showTestsLogAtEnd", true);
+
+		if (App.devMode) {
+		    // fillHandDisplay = appPrefs.getBoolean("fillHandDisplay", false); - never saved or restored
+			runTestsAtStartUp  = appPrefs.getBoolean("runTestsAtStartUp",false);
+			showTestsLogAtEnd  = appPrefs.getBoolean("showTestsLogAtEnd", true);
+		}
 
 		youSeatForNewDeal  = Dir.dirFromInt(appPrefs.getInt("youSeatForNewDeal",  Dir.South.v));
 		youSeatForLinDeal  = Dir.dirFromInt(appPrefs.getInt("youSeatForLinDeal",  Dir.South.v));
@@ -452,11 +519,14 @@ public class App {
 		defenderSignals    = appPrefs.getInt("defenderSignals", Zzz.NoSignals);
 		if (defenderSignals > Zzz.HighestSignal) defenderSignals = Zzz.NoSignals;
 		putWhoInSouthZone  = appPrefs.getInt("putWhoInSouthZone",       0);
-		if (putWhoInSouthZone < 0 || putWhoInSouthZone > 2)
+		if (putWhoInSouthZone < 0 || putWhoInSouthZone > 2)  // 3 not implemented
 			putWhoInSouthZone = 0;
+//		nameInSouthZone    = appPrefs.get("nameInSouthZone",              "");
 		respectLinYou      = appPrefs.getBoolean("respectLinYou",       true);
 		reviewFromPlay     = appPrefs.getBoolean("reviewFromPlay",      true);
 		showOpeningLead    = appPrefs.getBoolean("showOpeningLead",     true);
+//		youSeatPartnerVis  = appPrefs.getBoolean("youSeatPartnerVis",   false);
+		youSeatPartnerVis  = false; // not restored
 		showDdAsMin        = appPrefs.getBoolean("showDdAsMin",         false);
 		showDdWithResults  = appPrefs.getBoolean("showDdWithResults",   true);
 		showDdResultTots   = appPrefs.getBoolean("showDdResultTots",    true);
@@ -467,7 +537,11 @@ public class App {
 		Cc.deckColorStyle  = appPrefs.getInt("deckColorStyle", Cc.Dk__Green_Blue_Red_Black);
 		Cc.deckCardsBlack  = appPrefs.getInt("deckCardsBlack", 0);
 
-		outlineCardEdge    = appPrefs.getBoolean("outlineCardEdge", false);
+		mouseWheelDoes     = appPrefs.getInt("mouseWheelDoes",  WMouse_FLOW);
+		if (mouseWheelDoes < WMouse_FLOW || mouseWheelDoes > WMouse_SINGLE)
+			mouseWheelDoes = WMouse_FLOW;
+
+		outlineCardEdge    = appPrefs.getBoolean("outlineCardEdge",     false);
 		movieBidFlowDoesFlow= appPrefs.getBoolean("movieBidFlowDoesFlow", false);
 		colorIntensity     = appPrefs.getInt("colorIntensity",      defaultColorIntensity); // -255 to +255
 		colorTint          = appPrefs.getInt("colorTint",           0); //  -50 to +50
@@ -478,6 +552,9 @@ public class App {
 		randomMnHeaderColor= appPrefs.getBoolean("randomMnHeaderColor", true);
 		useFamilyOverride  = appPrefs.getBoolean("useFamilyOverride", false);
 		fontfamilyOverride = appPrefs.get("fontfamilyOverride", "Times Roman");
+		
+		realSavesPath      = appPrefs.get("realSavesPath", "");
+		// the empty value will be corrected in the frame start up
 
 		implement_showRotationBtns();
 		implement_showSaveBtns();
@@ -511,19 +588,31 @@ public class App {
 		appPrefs.putInt("vertDividerLocation", vertDividerLocation);
 		appPrefs.putInt("ropSelectedTabIndex", ropSelectedTabIndex);
 
+		appPrefs.putBoolean("showMouseWheelSplash",  showMouseWheelSplash);
+		appPrefs.putBoolean("showRedNewBoardArrow",  showRedNewBoardArrow);
 		appPrefs.putBoolean("showRedEditArrow",  showRedEditArrow);
 		appPrefs.putBoolean("showRedDividerArrow",  showRedDividerArrow);
-		appPrefs.putBoolean("showRedNewBoardArrow",  showRedNewBoardArrow);
 		appPrefs.putBoolean("showRedVuGraphArrow",  showRedVuGraphArrow);
 		appPrefs.putBoolean("showDfcExamHlt",   showDfcExamHlt);
 		appPrefs.putBoolean("showBidPlayMsgs",   showBidPlayMsgs);
 		appPrefs.putBoolean("showSuitSymbols",   showSuitSymbols);
+		appPrefs.putBoolean("ddsScoreShow",      ddsScoreShow);
+		appPrefs.putBoolean("force_N_HiddenTut",  force_N_HiddenTut);
+		appPrefs.putBoolean("force_W_HiddenTut",  force_W_HiddenTut);
+		appPrefs.putBoolean("force_E_HiddenTut",  force_E_HiddenTut);
+		appPrefs.putBoolean("force_S_HiddenTut",  force_S_HiddenTut);
 		appPrefs.putBoolean("alwaysShowHidden",  alwaysShowHidden);
+
+		appPrefs.putBoolean("localShowHidden",   localShowHidden);
+		appPrefs.putInt("localShowHiddPolicy",    localShowHiddPolicy);
+
 		appPrefs.putBoolean("showPoints",        showPoints);
 		appPrefs.putBoolean("showLTC",           showLTC);
+//		appPrefs.putBoolean("showOldTextGray",   showOldTextGray);
 		appPrefs.putBoolean("youAutoSingletons", youAutoSingletons);
 		appPrefs.putBoolean("youAutoAdjacent",   youAutoAdjacent);
 
+		appPrefs.putBoolean("useDDSwhenAvaialble",    useDDSwhenAvaialble);
 		appPrefs.putBoolean("yourFinessesMostlyFail", yourFinessesMostlyFail);
 		
 		appPrefs.putBoolean("dfcHyphenForVoids", dfcHyphenForVoids);
@@ -541,12 +630,14 @@ public class App {
 
 		appPrefs.putBoolean("showRotationBtns",  showRotationBtns);
 		appPrefs.putBoolean("showSaveBtns",      showSaveBtns);
-		appPrefs.putBoolean("showDepFinBtns",    showDepFinBtns);
-		appPrefs.putBoolean("showEdPyCmdBarBtns",showEdPyCmdBarBtns);
 		appPrefs.putBoolean("showShfWkPlBtn",    showShfWkPlBtn);
-	  //appPrefs.putBoolean("fillHandDisplay",   fillHandDisplay);  - not saved or restored
-		appPrefs.putBoolean("runTestsAtStartUp", runTestsAtStartUp);
-		appPrefs.putBoolean("showTestsLogAtEnd", showTestsLogAtEnd);
+
+		if (App.devMode) {
+		  //appPrefs.putBoolean("fillHandDisplay",   fillHandDisplay);  - not saved or restored
+			appPrefs.putBoolean("runTestsAtStartUp", runTestsAtStartUp);
+			appPrefs.putBoolean("showTestsLogAtEnd", showTestsLogAtEnd);
+		}
+
 		appPrefs.putInt("youSeatForNewDeal",     youSeatForNewDeal.v);
 		appPrefs.putInt("youSeatForLinDeal",     youSeatForLinDeal.v);
 		appPrefs.put("dealCriteria",             dealCriteria);
@@ -556,15 +647,19 @@ public class App {
 		appPrefs.putBoolean("showDdWithResults", showDdWithResults);
 		appPrefs.putBoolean("showDdResultTots",  showDdResultTots);
 		appPrefs.putInt("putWhoInSouthZone",     putWhoInSouthZone);
+//		appPrefs.put("nameInSouthZone",          nameInSouthZone);
 		appPrefs.putBoolean("respectLinYou",     respectLinYou);
 		appPrefs.putBoolean("reviewFromPlay",    reviewFromPlay);
 		appPrefs.putBoolean("showOpeningLead",   showOpeningLead);
+		appPrefs.putBoolean("youSeatPartnerVis", youSeatPartnerVis);
 		appPrefs.putInt("tutorialDealSize",      tutorialDealSize);
 
 		appPrefs.putInt("deckColorStyle",        Cc.deckColorStyle);
 		appPrefs.putInt("deckCardsBlack",        Cc.deckCardsBlack);
 
-		appPrefs.putBoolean("outlineCardEdge", outlineCardEdge);
+		appPrefs.putInt("mouseWheelDoes",        mouseWheelDoes);
+		
+		appPrefs.putBoolean("outlineCardEdge",   outlineCardEdge);
 		appPrefs.putBoolean("movieBidFlowDoesFlow", movieBidFlowDoesFlow);
 		appPrefs.putInt("colorIntensity",        colorIntensity);
 		appPrefs.putInt("colorTint",             colorTint);
@@ -577,6 +672,8 @@ public class App {
 		appPrefs.put("fontfamilyOverride",       fontfamilyOverride);
 		
 		appPrefs.putBoolean("multiBookDisplay",  true);  // this gets older versions to start in multibook mode
+		
+		appPrefs.put("realSavesPath",            realSavesPath);
 	}
 	
 	// @formatter:on
@@ -597,12 +694,6 @@ public class App {
 	}
 
 	public static void implement_showSaveBtns() {
-		if (allConstructionComplete) {
-			App.gbp.matchPanelsToDealState();
-		}
-	}
-
-	public static void implement_showDepFinBtns() {
 		if (allConstructionComplete) {
 			App.gbp.matchPanelsToDealState();
 		}
@@ -660,6 +751,10 @@ public class App {
 	 */
 	static public void setMode(int newMode) {
 		// ========================================================================
+
+		App.ddsDeal = null;
+		// System.out.println(" App.setMode    ddsDeal  set to null");
+
 		if (/* old */mode == Aaa.EDIT_BIDDING) {
 			if (newMode == Aaa.NORMAL_ACTIVE) {
 				; // do nothing
@@ -726,7 +821,27 @@ public class App {
 	 */
 	static public boolean isSeatVisible(Dir compass) {
 		// ========================================================================
-		if ((alwaysShowHidden || localShowHidden) || isModeAnyEdit()) {
+		if (alwaysShowHidden || isModeAnyEdit()) {
+			return true;
+		}
+
+		if (force_N_HiddenTut && compass == Dir.North && App.isVmode_Tutorial()) {
+			return false;
+		}
+
+		if (force_W_HiddenTut && compass == Dir.West && App.isVmode_Tutorial()) {
+			return false;
+		}
+
+		if (force_E_HiddenTut && compass == Dir.East && App.isVmode_Tutorial()) {
+			return false;
+		}
+
+		if (force_S_HiddenTut && compass == Dir.South && App.isVmode_Tutorial()) {
+			return false;
+		}
+
+		if (localShowHidden) {
 			return true;
 		}
 
@@ -746,12 +861,17 @@ public class App {
 				return compass == youSeatHint;
 		}
 
+		boolean dummyOk = App.isMode(Aaa.REVIEW_BIDDING);
 		int declarer = App.deal.contractCompass.v;
 		int dummy = (declarer + 2) % 4;
-		int youSeat = (youSeatHint.v == dummy) ? declarer : youSeatHint.v;
+		int youSeat = (!dummyOk && (youSeatHint.v == dummy)) ? declarer : youSeatHint.v;
 
 		if (compass.v == youSeat)
 			return true;
+
+		if (App.youSeatPartnerVis && (compass.v == (youSeat + 2) % 4) && App.isModeAnyReview()) {
+			return true;
+		}
 
 		if (compass.v == dummy) {
 			int RHO = (declarer + 3) % 4;
@@ -837,7 +957,6 @@ public class App {
 		App.deal = deal;
 
 		App.calcCompassPhyOffset();
-
 		App.dealMajorChange();
 
 		if (App.mg.lin != null) {
@@ -861,13 +980,18 @@ public class App {
 		if (App.mg.lin.linType == Lin.SimpleDealVirgin) {
 			App.setMode(Aaa.NORMAL_ACTIVE); // We will start in bidding or playing (if there is a pre set contract)
 		}
-		else if (App.deal.isBidding()) {
+		else if (App.deal.isBidding() || App.reviewFromPlay == false) {
 			App.setMode(Aaa.REVIEW_BIDDING);
 		}
 		else {
 			App.setMode(Aaa.REVIEW_PLAY);
-			if (App.deal.countCardsPlayed() > 0)
+			if ((App.deal.countCardsPlayed() > 0) && App.showOpeningLead) {
 				App.reviewCard = 1; // We like to show the first lead if there is one
+			}
+		}
+
+		if (App.localShowHiddPolicy != 2) {
+			App.localShowHidden = (App.localShowHiddPolicy == 1);
 		}
 
 		if ((App.mg.lin.linType == Lin.FullMovie) && App.showRedEditArrow) {
@@ -877,6 +1001,7 @@ public class App {
 		App.gbp.matchPanelsToDealState();
 
 		if (App.mg.lin.linType == Lin.SimpleDealVirgin) {
+
 			if (App.deal.isPlaying()) {
 				// do we need to start a play timer ?
 				App.gbp.c1_1__tfdp.clearAllCardSuggestions();
@@ -884,6 +1009,12 @@ public class App {
 			}
 			else if (App.deal.isBidding()) {
 				// do we need to start the bidding timer ?
+			}
+		}
+		else {
+			if (!App.dealEnteredOnce) {
+				App.dealEnteredOnce = true;
+				App.frame.executeCmd("showSeatChoiceOpts_noSizeChange");
 			}
 		}
 		App.frame.setTitleAsRequired();
@@ -1000,6 +1131,10 @@ public class App {
 		if (App.bpr != null)
 			App.bpr.calcApplyBarVisiblity();
 
+		if (App.aaHomeBtnPanel != null) {
+			App.aaHomeBtnPanel.calcApplyBarVisiblity();
+		}
+
 		App.frame.repaint();
 	}
 
@@ -1050,6 +1185,7 @@ public class App {
 	public static Dir youSeatHint = Dir.South;
 	public static boolean devMode = false;
 	public static boolean showDevTestLins = false;
+	public static String mruNodeSubNode = "mrumarks";
 
 	public static final VersionAndBuilt vnb = new VersionAndBuilt();
 
@@ -1070,13 +1206,30 @@ public class App {
 
 	public static CommonCmdBar ccb = null;
 	public static TutNavigationBar tnb = null;
-	public static AaBookPanel bookPanel = null;
+	public static AaBookPanel aaBookPanel = null;
+	public static AaHomeBtnPanel aaHomeBtnPanel = null;
+
 	public static BubblePanel[] bubblePanels = { null, null, null, null };
 	public static DualDealListButtonsPanel dualDealListBtns = null;
 	public static Book book = new Book();
 	public static Deal deal = null;
+	public static Deal ddsDeal = null;
 	public static DePointAy dePointAy = null;
 	public static MassGi mg = null;
-//	public static MassGi mg_to_restore = null;
+	public static boolean dealEnteredOnce = false;
+
+	final public static int hist_max_display = 5; // do not set above 9
+	final public static int mark_max_display = 10;
+	public static MruCollection mruCollection = new MruCollection();
+
+	public static Boolean runningInJar = false; // set at boot time
+	public static String thisAppBaseFolder = ""; // set at boot time only one of these two can be set EXCEPT when using ghost jar
+	public static String thisAppBaseJar = ""; // set at boot time only one of these two can be set EXCEPT when using ghost jar
+	public static String thisAppBaseJarIncPath = "";
+	public static String thisAppBaseJarIncPath_orig = "";
+
+	public static boolean debug_using_ghost_jar = false; // set true by having _aaBridge_d__debug_using_ghost_jar.txt etc
+
+	final public static String ghost_jar = "aaBridge_ghost.jar"; // You set this here
 
 }

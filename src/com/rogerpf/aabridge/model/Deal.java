@@ -11,11 +11,13 @@
 package com.rogerpf.aabridge.model;
 
 import java.awt.Point;
+import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.concurrent.atomic.AtomicLong;
 
+import com.rogerpf.aabridge.controller.Aaa;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Play_Mpat.Mpat;
 import com.rogerpf.aabridge.model.Zzz.BoardData;
@@ -66,6 +68,8 @@ public class Deal {
 	public Dir youSeatHint = Dir.South; // not part of the model but provided as a aid to the users of the model
 	private boolean doneHand = false;
 	public boolean changed = false;
+	public boolean eb_blocker = false;
+	public int eb_min_card = 0;
 	public boolean showBidQuestionMark = false;
 	public int columnsInBidTable = 4;
 	public char qx_room = '-'; // '-' or 'o' or 'c'
@@ -234,6 +238,14 @@ public class Deal {
 
 	/**
 	 */
+	public Deal() { /* Constructor */// used in emergency only when loading bad lins
+		// ==============================================================================================
+		this.localId = 0;
+		localLast_pg = 0;
+	}
+
+	/**
+	 */
 	public Deal(int localId /* ignored */) { /* Constructor */// used by Make_giAY
 		// ==============================================================================================
 		this.localId = idCounter.getAndIncrement();
@@ -337,11 +349,6 @@ public class Deal {
 		endedWithClaim = true;
 		tricksClaimed = 0;
 
-//		for (int i = 0; i < 13; i++) {
-//			for (Hand hand : rota[Cpe.West]) {
-//				hand.playCard(hand.getAnyCard());
-//			}
-//		}
 	}
 
 	public Hand north() {
@@ -1126,7 +1133,7 @@ public class Deal {
 		boolean insertMode = false;
 		boolean dealerSet = false;
 
-		int maxSeats = (hsAy.size() > 4) ? 4 : hsAy.size(); // kia very first menoring has 4 commas = 5 "seats" :)
+		int maxSeats = (hsAy.size() > 4) ? 4 : hsAy.size(); // kia very first mentoring has 4 commas = 5 "seats" :)
 
 		if (maxSeats > 0) {
 			String hs = hsAy.get(0).trim();
@@ -1192,10 +1199,10 @@ public class Deal {
 				if (rank == Rank.Invalid)
 					continue; // ignore it perhaps a '-' or a space
 
-				if (rank.v == 9 && suit.v == 0) {
-					@SuppressWarnings("unused")
-					int z = 0;
-				}
+//				if (rank.v == 9 && suit.v == 0) {
+//					@SuppressWarnings("unused")
+//					int z = 0;
+//				}
 
 				Card card = packPristine.getIfRankAndSuitExists(rank, suit);
 				if (card != null) {
@@ -1252,6 +1259,58 @@ public class Deal {
 		if (packPristine.size() == 0 && dealerSet == false) {
 			// setDealer(Dir.South); ummm
 		}
+	}
+
+	/**
+	 */
+	public void removeCards(ArrayList<String> hsAy) {
+		// ==============================================================================================
+
+		String hs = hsAy.get(0).trim();
+
+		Suit suit = Suit.Spades; // set a default suit
+		for (int j = 0; j < hs.length(); j++) {
+			char c = hs.charAt(j);
+
+			// @formatter:off
+			switch (c) {
+				case 'S': case 's': suit = Suit.Spades;   continue;
+				case 'H': case 'h': suit = Suit.Hearts;   continue;
+				case 'D': case 'd': suit = Suit.Diamonds; continue;
+				case 'C': case 'c': suit = Suit.Clubs;    continue;
+			}
+			// @formatter:on
+			Rank rank = Rank.charToRank(c);
+
+			if (rank == Rank.Invalid)
+				continue; // ignore it perhaps a '-' or a space
+
+			Card card = packPristine.getIfRankAndSuitExists(rank, suit);
+			if (card != null) {
+				continue; // the card is in the unplayed pack so it is already removed from any hand
+			}
+
+			/**
+			 * As the card is not in the pack we must assume that it is
+			 * in one of the hands and is currently unplayed.  The only
+			 * sensible way to remove a played card is to use UNDO !
+			 * But I have never seen 'the spec' so how would I know !
+			 */
+			card = getCardSearchAllHands(rank, suit);
+			if (card == null) {
+				System.out.println("Card not in deck " + rank + " " + suit);
+				continue;
+			}
+
+			boolean success = removeCardIncFOrgs(card);
+			if (success == false) {
+				System.out.println("Can't remove played card " + rank + " " + suit);
+				continue;
+			}
+
+			// System.out.println(hand + " " + card + "  ");
+		}
+
 	}
 
 	/**
@@ -1321,6 +1380,9 @@ public class Deal {
 		d.qx_number = qx_number;
 		d.blueScore = blueScore;
 		d.purpleScore = purpleScore;
+
+		d.eb_blocker = eb_blocker;
+		d.eb_min_card = eb_min_card;
 
 		d.dfcDeal = dfcDeal;
 
@@ -1443,7 +1505,7 @@ public class Deal {
 			for (Suit su : Suit.cdhs) {
 				Frag o_fOrg = o_hand.fOrgs[su.v];
 				Frag d_fOrg = d_hand.fOrgs[su.v];
-				if (o_fOrg.size() != o_fOrg.size())
+				if (o_fOrg.size() != d_fOrg.size())
 					return false;
 				for (int i = 0; i < o_fOrg.size() - 1; i++) {
 					Card o_card = o_fOrg.get(i);
@@ -1874,10 +1936,10 @@ public class Deal {
 
 		// @formatter:off
 		switch (s.charAt(0)) {
-			case 'b': vulnerability[Dir.NS] = true;  vulnerability[Dir.EW] = true;  break;
-			case 'n': vulnerability[Dir.NS] = true;  vulnerability[Dir.EW] = false; break;
-			case 'e': vulnerability[Dir.NS] = false; vulnerability[Dir.EW] = true;  break;
-			default : vulnerability[Dir.NS] = false; vulnerability[Dir.EW] = false; break;
+			case 'b': case 'B':                     vulnerability[Dir.NS] = true;  vulnerability[Dir.EW] = true;  break;
+			case 'n': case 'N': case 's': case 'S': vulnerability[Dir.NS] = true;  vulnerability[Dir.EW] = false; break;
+			case 'e': case 'E': case 'w': case 'W': vulnerability[Dir.NS] = false; vulnerability[Dir.EW] = true;  break;
+			default :                               vulnerability[Dir.NS] = false; vulnerability[Dir.EW] = false; break;
 		}
 		// @formatter:on
 
@@ -1889,6 +1951,30 @@ public class Deal {
 
 	/**
 	 */
+	public void adjustYouSeatHint(String s) {
+		// ==============================================================================================
+		if (s.isEmpty())
+			return;
+
+		int adjust = 0;
+
+		// @formatter:off
+		switch (s.charAt(0)) {
+			case 'l': case 'L':  adjust = 1;  break;
+			case 'c': case 'C':  adjust = 2;  break;
+			case 'r': case 'R':  adjust = 3;  break;
+			default : return;
+		}
+		// @formatter:on
+
+		if (youSeatHint == Dir.Invalid) // can it be !
+			youSeatHint = Dir.South;
+
+		int d = (youSeatHint.v + adjust) % 4;
+
+		youSeatHint = Dir.directionFromInt(d);
+	}
+
 	public void setYouSeatHint(String s) {
 		// ==============================================================================================
 		if (s.isEmpty())
@@ -2185,16 +2271,22 @@ public class Deal {
 		return !((contract.isPass()) || (contract.isNullBid()));
 	}
 
-	/**   
+	/**
 	 */
-	public Dir getTheYouSeat() {
-		if (isDeclarerValid() && (youSeatHint.rotate(Dir.South) == contractCompass)) {
+	public Dir getTheYouSeat(boolean dummyOk) {
+		if (!dummyOk && isDeclarerValid() && (youSeatHint.rotate(Dir.South) == contractCompass)) {
 			return contractCompass; // YouSeat can't be the dummy, it has to be the declarer
 		}
 		return youSeatHint;
 	};
 
-	/**   
+	/**
+	 */
+	public Dir getTheYouSeat() {
+		return getTheYouSeat(false);
+	};
+
+	/**
 	 */
 	public boolean isYouSeatDeclarerAxis() {
 		if (isDeclarerValid()) {
@@ -2300,11 +2392,11 @@ public class Deal {
 
 	/** 
 	 */
-	public void undoLastPlay() {
+	public Card undoLastPlay() {
 		// ==============================================================================================
 		Hand hand = getLastHandThatPlayed();
 		assert (hand != null);
-		hand.undoLastPlay();
+		return hand.undoLastPlay();
 	}
 
 	/** 
@@ -2321,12 +2413,31 @@ public class Deal {
 
 	/** 
 	 */
-	public void undoLastPlay_ignoreTooMany() {
+	public Card undoLastPlay_ignoreTooMany() {
 		// ==============================================================================================
+		endedWithClaim = false;
+		tricksClaimed = 0;
+
 		Hand hand = getLastHandThatPlayed();
 		if (hand == null)
-			return;
-		hand.undoLastPlay();
+			return null;
+		return hand.undoLastPlay();
+	}
+
+	/**
+	 */
+	public void fastUndoBackTo(int reviewTrick, int reviewCard, boolean setDdsNextCard) {
+		// ==============================================================================================
+		endedWithClaim = false;
+		tricksClaimed = 0;
+		int cardsPlayed = countCardsPlayed();
+		int undoCount = cardsPlayed - (reviewTrick * 4 + reviewCard);
+		if (undoCount > 0) {
+			undoLastPlays_ignoreTooMany(undoCount);
+		}
+		Card card = getLastCardPlayed();
+		if (card != null && setDdsNextCard)
+			card.setDdsNextCard(true);
 	}
 
 	/** 
@@ -2381,7 +2492,11 @@ public class Deal {
 		assert (hand != null);
 		assert (hand.bids.size() > 0);
 		hand.bids.removeLast();
-		contract = new Bid(Call.NullBid);
+		if (contract.isNullBid() == false) {
+			contractCompass = Dir.South; // logical null
+			contract = new Bid(Call.NullBid);
+			contractDblRe = new Bid(Call.NullBid);
+		}
 	}
 
 	/** 
@@ -2392,7 +2507,13 @@ public class Deal {
 			Hand hand = getLastHandThatBid();
 			if (hand == null || hand.bids.size() == 0)
 				break; // too many
+
 			hand.bids.removeLast();
+			if (contract.isNullBid() == false) {
+				contractCompass = Dir.South; // logical null
+				contract = new Bid(Call.NullBid);
+				contractDblRe = new Bid(Call.NullBid);
+			}
 		}
 	}
 
@@ -2400,6 +2521,10 @@ public class Deal {
 	 */
 	public void makeBid(Bid b) {
 		// ==============================================================================================
+		if (contract.isNullBid() == false) {
+			return; // we won't add bids unless the contract is null
+		}
+
 		if (b.isCall() == false) {
 			Bid prev = getHighestBid();
 			if (b.isLowerThanOrEqual(prev)) {
@@ -2548,6 +2673,118 @@ public class Deal {
 	}
 
 	/**
+	*    used by drop of web links and web text 'lins'
+	*/
+	@SuppressWarnings("deprecation")
+	public void makeLinBid_RearAlert(String bids) {
+		// ==============================================================================================
+		Level level = Level.Invalid;
+		Suit suit = Suit.Invalid;
+		Bid prevBid = null;
+		boolean skipping = true;
+		boolean alert = false;
+
+		boolean qmSeen = false;
+
+		boolean eating_alert_text = false;
+		String alertText = "";
+
+		for (int i = 0; i < bids.length(); i++) {
+			char c = bids.charAt(i);
+			if (c == ')') {
+				eating_alert_text = false;
+				continue;
+			}
+			if (c == '(') {
+				eating_alert_text = true;
+				continue;
+			}
+			if (eating_alert_text) {
+				alertText += c;
+				continue;
+			}
+			if (c == '?') {
+				qmSeen = true;
+				continue;
+			}
+			if (skipping && (c == 'O' || c == 'o')) {
+				columnsInBidTable = 2;
+				continue;
+			}
+			if (c == '-' || c == ' ' || c == ',') {
+				if (skipping)
+					dealer = dealer.nextClockwise();
+				continue;
+			}
+			skipping = false;
+			if (c == 'p' || c == 'P') {
+				/* do any previous alert */
+				if (alert || alertText.isEmpty() == false) {
+					alertText = URLDecoder.decode(alertText).trim();
+					prevBid.alert = true;
+					prevBid.alertText = alertText;
+					alert = false;
+					alertText = "";
+				}
+				makeBid(prevBid = new Bid(Call.Pass));
+				level = Level.Invalid;
+				suit = Suit.Invalid;
+				continue;
+			}
+			if ((level == Level.Invalid) && (c == 'd' || c == 'D' || c == '*' || c == 'x' || c == 'X')) {
+				makeBid(prevBid = new Bid(Call.Double));
+				alert = false_afterBid(prevBid, alert);
+				continue;
+			}
+			if (c == 'r' || c == 'R') {
+				makeBid(prevBid = new Bid(Call.ReDouble));
+				alert = false_afterBid(prevBid, alert);
+				continue;
+			}
+			if (c == '!') {
+				prevBid.alert = true;
+				alert = true;
+				continue;
+			}
+			if ('1' <= c && c <= '7') {
+				level = Level.levelFromInt(c - '0');
+				continue;
+			}
+			// @formatter:off
+			switch (c) {
+				case 'N': case 'n': suit = Suit.NoTrumps; break;
+				case 'S': case 's': suit = Suit.Spades;   break;
+				case 'H': case 'h': suit = Suit.Hearts;   break;
+				case 'D': case 'd': suit = Suit.Diamonds; break; // yes d and D do double duty
+				case 'C': case 'c': suit = Suit.Clubs;    break;
+				default: suit = Suit.Invalid;
+			}
+			// @formatter:on
+			if (suit == Suit.Invalid || level == Level.Invalid) {
+				return;
+			}
+
+			/* do any previous alert */
+			if (alert || alertText.isEmpty() == false) {
+				/* do any previous alert */
+				alertText = URLDecoder.decode(alertText).trim();
+				prevBid.alert = true;
+				prevBid.alertText = alertText;
+				alert = false;
+				alertText = "";
+			}
+
+			makeBid(prevBid = new Bid(level, suit));
+
+			level = Level.Invalid;
+			suit = Suit.Invalid;
+		}
+
+		showBidQuestionMark = qmSeen;
+
+	}
+
+	/**
 	 */
 	public void addAnouncementToLastBid(String anounceText) {
 		// ==============================================================================================
@@ -2556,7 +2793,7 @@ public class Deal {
 			return;
 		Bid bid = hand.bids.getLast();
 		bid.alert = true;
-		bid.alertText = anounceText;
+		bid.alertText = Aaa.deAtAlertText(anounceText);
 	}
 
 	/**
@@ -2625,7 +2862,8 @@ public class Deal {
 	public void wipeContractBiddingAndPlay() {
 		// ==============================================================================================
 		// set the frags to match the original cards and wipe the played
-		App.deal.endedWithClaim = false;
+		endedWithClaim = false;
+		tricksClaimed = 0;
 
 		for (Hand hand : rota[Dir.North.v]) {
 			for (Suit su : Suit.cdhs) {
@@ -2735,6 +2973,32 @@ public class Deal {
 		return null;
 	}
 
+	/**
+	 */
+	public Card getLastCardPlayed() {
+
+		Hand hand = null;
+
+		if (isCurTrickComplete()) {
+			if (hands[0/* any */].played.size() == 0)
+				return null;
+			hand = prevTrickWinner.get(prevTrickWinner.size() - 2).prevHand();
+		}
+		else {
+			Hand leader = getCurTrickLeader();
+			for (Hand h : rota[leader.compass.v]) {
+				if (h.played.size() < leader.played.size()) {
+					hand = h.prevHand();
+					break;
+				}
+			}
+		}
+		if (hand == null)
+			return null;
+
+		return hand.played.getLast();
+	}
+
 //	/**
 //	 */
 //	public Hand cardPlayForLinSavesxxxx() {
@@ -2765,7 +3029,7 @@ public class Deal {
 		int tk = 0;
 		for (int i = 0; i < countPlayed; i++) {
 			Card card = getCardThatWasPlayed(i);
-			s += "pc|" + card.suit.toChar() + "" + card.rank.toChar() + "|";
+			s += "pc|" + card.suit.toCharLower() + "" + card.rank.toChar() + "|";
 			tk = (tk + 1) % 4;
 			if (tk == 0) {
 				s += "pg||" + Zzz.lin_EOL;
@@ -2775,7 +3039,7 @@ public class Deal {
 			s += "pg||" + Zzz.lin_EOL;
 
 		if (endedWithClaim) {
-			s += "mc|" + tricksClaimed + "|" + Zzz.lin_EOL;
+			s += "mc|" + tricksClaimed + "|pg||" + Zzz.lin_EOL;
 		}
 
 		return s;
@@ -2893,7 +3157,6 @@ public class Deal {
 					s += "an|" + b.alertText + "|";
 			}
 		}
-		s += "pg||";
 		return s;
 	}
 
@@ -3034,7 +3297,7 @@ public class Deal {
 		@SuppressWarnings("unused")
 		int z = 0; // put your breakpoint here
 
-		assert (false);
+//		assert (false);
 		return null; // should never happen
 	}
 
@@ -3073,6 +3336,16 @@ public class Deal {
 
 	/**
 	 */
+	public int countOrigCards() {
+		int t = 0;
+		for (Hand hand : hands) {
+			t += hand.countOriginalCards();
+		}
+		return t;
+	}
+
+	/**
+	 */
 	public int countTrumpsPlayed() {
 		int t = 0;
 		for (Hand hand : hands) {
@@ -3103,6 +3376,7 @@ public class Deal {
 	 * returns a point - x is the decelarers tricks and y is defenders
 	 */
 	public Point getContractTrickCountSoFar() {
+		// ==============================================================================================
 		Point trickCount = new Point(); // comes set to 0,0
 
 		if (endedWithClaim) {
@@ -3134,6 +3408,7 @@ public class Deal {
 	 * returns a point - x is the decelarers tricks and y is defenders
 	 */
 	public Point getContractTrickCountToTrick(int reviewTrick) {
+		// ==============================================================================================
 		Point trickCount = new Point(0, 0);
 		boolean skipFirst = true;
 		Dir plA = contractCompass;
@@ -3158,9 +3433,28 @@ public class Deal {
 	}
 
 	/**
+	 * returns a point - x is the decelarers tricks and y is defenders
+	 */
+	public int getContractTrickCountForDirecton(Dir compass) {
+		// ==============================================================================================
+		int trickCount = 0;
+		boolean skipFirst = true;
+		Dir partnerCompass = compass.rotate180();
+		for (Hand winner : prevTrickWinner) {
+			if (skipFirst) {
+				skipFirst = false;
+				continue;
+			} // skip the first as it the leader to the first trick
+			if (winner.compass == compass || winner.compass == partnerCompass)
+				trickCount++;
+		}
+		return trickCount;
+	}
+
+	/**
 	 */
 	void cardJustPlayed() {
-
+		// ==============================================================================================
 		if (haveAllHandsPlayedTheSameNumberOfCards()) {
 
 			// calc And Set CurTrickWinner
@@ -3185,7 +3479,7 @@ public class Deal {
 	/**
 	 */
 	Hand winnerSoFar() {
-
+		// ==============================================================================================
 		int cardsPlayed = countCardsPlayed() % 4;
 		if (cardsPlayed == 0)
 			return null;
@@ -3238,13 +3532,13 @@ public class Deal {
 			return score;
 
 		int reMult = (contractDblRe.isReDouble()) ? 2 : 1;
-		int dblMult = (contractDblRe.isDouble()) ? 2 : 1;
+		int dblMult = (reMult == 2 || contractDblRe.isDouble()) ? 2 : 1;
 		int vunMult = (vulnerability[contractAxis()]) ? 2 : 1;
 
 		int trickDiff = getContractTrickCountSoFar().x - (contract.level.v + 6);
 
 		if (trickDiff >= 0) { // they made
-			score.y = (contract.level.v * Zzz.scoreRate[contract.suit.v] + ((contract.suit == Suit.NoTrumps) ? 10 : 0)) * dblMult;
+			score.y = (contract.level.v * Zzz.scoreRate[contract.suit.v] + ((contract.suit == Suit.NoTrumps) ? 10 : 0)) * dblMult * reMult;
 
 			if (contract.level == Level.Seven) {
 				score.x = (vunMult == 1) ? 1000 : 1500;
@@ -3263,11 +3557,15 @@ public class Deal {
 				score.x += 50;
 			}
 
-			if (contractDblRe.isNullBid()) {
+			if (dblMult == 2) { // doubled or redoubled insult
+				score.x += 50 * reMult;
+			}
+
+			if (contractDblRe.isNullBid()) { // not doubbled or redoubled
 				score.x += trickDiff * Zzz.scoreRate[contract.suit.v];
 			}
 			else {
-				score.x += (50 + (100 * trickDiff * vunMult)) * reMult;
+				score.x += 100 * trickDiff * vunMult * reMult;
 			}
 		}
 		else { // they went down trickDiff is NEGATIVE
@@ -3763,6 +4061,60 @@ public class Deal {
 			}
 		}
 		return true;
+	}
+
+	public boolean worthAutosavingSaving() {
+		if (isDoneHand()) // so we skip the 'done hand'
+			return false;
+
+		if (countOrigCards() != 52) {
+			return false;
+		}
+
+		return true;
+	}
+
+	public int getHighestDdsScore() {
+		int highest = -1;
+		for (Hand hand : hands) {
+			if (hand.ddsValuesAssigned) {
+				for (Frag frag : hand.frags) {
+					for (Card card : frag) {
+						if (card.ddsScore > highest) {
+							highest = card.ddsScore;
+						}
+					}
+				}
+				return highest;
+			}
+		}
+		return highest;
+	}
+
+	public int getDdsVulnerability() {
+		// @ formatter:off
+		if (vulnerability[Dir.NS] && vulnerability[Dir.EW])
+			return 1;
+		if (vulnerability[Dir.NS] && !vulnerability[Dir.EW])
+			return 2;
+		if (!vulnerability[Dir.NS] && vulnerability[Dir.EW])
+			return 3;
+		// @ formatter:on
+
+		return 0;
+	}
+
+	public Dir playerMatching(String playerName) {
+		if (playerName == null || playerName.isEmpty())
+			return null;
+
+		for (Hand hand : hands) {
+			if (hand.playerName.compareToIgnoreCase(playerName) == 0 /* match */) {
+				return hand.compass;
+			}
+		}
+
+		return null; // can't use invalid as invalid == North // Dir.Invalid;
 	}
 
 }

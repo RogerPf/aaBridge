@@ -61,7 +61,7 @@ public enum Dir {
 	/**   
 	 */
 	public static Dir directionFromInt(int i) {
-		switch (i) {
+		switch ((i + 4) % 4) {
 		case 0:
 			return Dir.North;
 		case 1:
