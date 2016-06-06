@@ -139,7 +139,7 @@ public class GreenBaizeOverlay extends JPanel implements AWTEventListener {
 	Boolean showNewBoardHint = false;
 	/**
 	*/
-	public Timer newBoardHintTimer = new Timer(1500 /* ms */, new ActionListener() {
+	public Timer newBoardHintTimer = new Timer(3000 /* ms */, new ActionListener() {
 		public void actionPerformed(ActionEvent evt) {
 			newBoardHintTimer.stop();
 			showNewBoardHint = false;
@@ -160,7 +160,7 @@ public class GreenBaizeOverlay extends JPanel implements AWTEventListener {
 	Boolean showDividerHint = false;
 	/**
 	*/
-	public Timer dividerHintTimer = new Timer(4000 /* ms */, new ActionListener() {
+	public Timer dividerHintTimer = new Timer(3000 /* ms */, new ActionListener() {
 		public void actionPerformed(ActionEvent evt) {
 			dividerHintTimer.stop();
 			showDividerHint = false;
@@ -191,10 +191,10 @@ public class GreenBaizeOverlay extends JPanel implements AWTEventListener {
 
 		if (showEditHint) {
 
-			float from_w = width * 0.29f;
+			float from_w = width * 0.265f;
 			float to_w = width * 0.10f;
 
-			float tf_h = height * 0.685f;
+			float tf_h = height * 0.688f;
 
 			Point from = new Point((int) from_w, (int) tf_h);
 			Point to = new Point((int) to_w, (int) tf_h);
@@ -210,7 +210,7 @@ public class GreenBaizeOverlay extends JPanel implements AWTEventListener {
 			g2.setFont(font);
 			g2.setColor(Color.white);
 
-			g2.drawString("&    Wipe  or  Undo", to_w * 1.20f, tf_h * 1.015f);
+			g2.drawString("Can edit hands", to_w * 1.20f, tf_h * 1.015f);
 		}
 
 		if (showNewBoardHint) {

@@ -21,7 +21,7 @@ mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE 
 
 %%
 %%  You can NOW use  ALL 2814 and later features, all  'older'
-%%   aaBridge players are screened just before the first  'pg'
+%%   copies of aaBridge are screened out just before the first  'pg'
 %%
 
 fh|t40|                    Font   t  t-title      section titles within chapters
@@ -87,7 +87,7 @@ ht|z|at|@0
 %% <<--FRONTPAGE_FOOTER_REPLACE_START->>
 fh|940|fm|9|fp|9|at|@0@1|
 ht|i|
-rq|2814|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2814 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+rq|2830|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2830 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
 %% <<--FRONTPAGE_FOOTER_REPLACE_END->>
 pg| ***** 0 ***** |
 
@@ -111,7 +111,7 @@ fp|t-title|at|^c^*bTheta^*n|fp||at|  ^e  Responses  ^p^*bMM:^*n  use your Mouse 
   7    steps   ^g HHxx
   8    steps   ^g xxxxx ^*b      or   ^j^*n xxxxxx
   9    steps   ^g Hxxxx ^*b     or   ^j^*n Hxxxxx
-10    steps   ^g HHxxxx ^*b   or    ^j^*n HHxxxx
+10    steps   ^g HHxxx ^*b    or    ^j^*n HHxxxx
 ^b@2|
 pg| ***** 1 ***** |
 
@@ -132,7 +132,7 @@ fp|t-title|at|^c^*bIota^*n|fp||at|  ^e  Responses  ^p^*bMM:^*n  use your Mouse w
   6    steps   ^g HHxx
   7    steps   ^g xxxxx ^*b      or   ^j^*n xxxxxx
   8    steps   ^g Hxxxx ^*b     or   ^j^*n Hxxxxx
-  9    steps   ^g HHxxxx ^*b   or   ^j^*n HHxxxx
+  9    steps   ^g HHxxx ^*b    or   ^j^*n HHxxxx
 ^b@2|
 pg| ***** 2 ***** |
 
@@ -219,7 +219,7 @@ Delta asks partner EXACTLY what their holding is in a suit.
   7    steps   ^g HHxx
   8    steps   ^g xxxxx ^*b      or   ^*n xxxxxx
   9    steps   ^g Hxxxx ^*b     or   ^*n Hxxxxx
-10    steps   ^g HHxxxx ^*b   or   ^*n HHxxxx
+10    steps   ^g HHxxx ^*b    or   ^*n HHxxxx
 ^b@2
 
 In the event of a negative response Opener can make a repeat ask in the same suit which asks partner to show which if the two alternatives they have.
@@ -293,7 +293,7 @@ The responses to Theta are IDENTICAL to those for Delta, ie:-
   7    steps   ^g HHxx
   8    steps   ^g xxxxx ^*b      or   ^*n xxxxxx
   9    steps   ^g Hxxxx ^*b     or   ^*n Hxxxxx
-10    steps   ^g HHxxxx ^*b   or   ^*n HHxxxx
+10    steps   ^g HHxxx ^*b    or   ^*n HHxxxx
 ^b@2
 Thus 
 ^c 1@C  -  1@H  -  1NT(Beta)  -  2@D           -  2@S(Theta)   -  3@S    shows     xxxx      in Spades 
@@ -442,7 +442,7 @@ cp|red|at|^*bOliverC:^*n|cp||at|   The responses to Iota are similar to Theta an
   7    steps   ^g HHxx
   8    steps   ^g xxxxx ^*b      or   ^*n xxxxxx
   9    steps   ^g Hxxxx ^*b     or   ^*n Hxxxxx
-10    steps   ^g HHxxxx ^*b   or   ^*n HHxxxx
+10    steps   ^g HHxxx ^*b    or   ^*n HHxxxx
 ^b@2|
 pg| ***** 23 ***** |
 
@@ -465,7 +465,7 @@ cp|red|at|^*bOliverC:^*n|cp||at|   The responses to Iota are similar to Theta an
   6    steps   ^g HHxx
   7    steps   ^g xxxxx ^*b      or   ^*n xxxxxx
   8    steps   ^g Hxxxx ^*b     or   ^*n Hxxxxx
-  9    steps   ^g HHxxxx ^*b   or   ^*n HHxxxx
+  9    steps   ^g HHxxx ^*b    or   ^*n HHxxxx
 ^b@2|
 pg| ***** 24 ***** |
 

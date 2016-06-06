@@ -21,7 +21,7 @@ mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE 
 
 %%
 %%  You can NOW use  ALL 2814 and later features, all  'older'
-%%   aaBridge players are screened just before the first  'pg'
+%%   copies of aaBridge are screened out just before the first  'pg'
 %%
 
 fh|t40|                    Font   t  t-title      section titles within chapters
@@ -94,7 +94,7 @@ ht|z|at|@0
 %% <<--FRONTPAGE_FOOTER_REPLACE_START->>
 fh|940|fm|9|fp|9|at|@0@1|
 ht|i|
-rq|2814|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2814 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+rq|2830|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2830 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
 %% <<--FRONTPAGE_FOOTER_REPLACE_END->>
 pg| ***** 0 ***** |
 
@@ -440,13 +440,13 @@ at|^^^^|
 cp|red|at|^*bOliverC:^*n|cp||at|  MOTOR applies when the bidding starts  1@H - (X) - ??   ^*bOR^*n   1@S - (X) - ??  and ONLY in those situations.
 
 It does  ^*bNOT^*n  apply when:
-^c@2@.  the bidding goes                  1@H - (No) - No - (X) - ??     ^*bOR^*n     1@S - (No) - No - (X) - ??
+^c@2@.  the bidding goes                  ^i  (1@H or 1@S)  -  (p)  -   p   -  (X)  -  ?? 
 @.  partner has OVERCALLED  1@H  or  1@S  and RHO has made a negative double  eg:     (1@D) - 1@S - (X) - ??
-@.  after a sequence such as    1@D - 1@H - (X) - ??
+@.  after a sequence such as    ^i   1@D  -  1@H  -  (X)  -  ??
    
 ^b@2The key to MOTOR is that in the situation  
-^c 1@H - (X) - ??    ^*bOR^*n    
-^c 1@S - (X) - ??       
+^c 1@H   -   (X)   -   ??    ^*bOR^*n    
+^c 1@S   -   (X)   -   ??       
 all the bids from 1NT up to and including the suit BELOW partner's Major are  ^*bTRANSFERS^*n  so: 
 ^c@2
 1NT ^d  is a transfer to Clubs

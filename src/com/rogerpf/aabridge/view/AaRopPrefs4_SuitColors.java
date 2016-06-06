@@ -39,6 +39,7 @@ class AaRopPrefs4_SuitColors extends ClickPanel implements ItemListener, ActionL
 	QRadioButton dkCol1;
 	QRadioButton dkCol2;
 	QRadioButton dkCol3;
+	QRadioButton dkCol4;
 
 	ButtonGroup dkBkGroup = new ButtonGroup();
 	QRadioButton dkCardsColored;
@@ -74,6 +75,7 @@ class AaRopPrefs4_SuitColors extends ClickPanel implements ItemListener, ActionL
 		add(dkCol0 = new QRadioButton(this, dkColGroup,  bdr1, Cc.deckColorStyle == Cc.Dk__Green_Blue_Red_Black,    "dkCol0", "4 Color - C Green, D Blue,  H Red, S Black  -  As used in actual 4 Color Decks  "), rbInset);
 		add(dkCol1 = new QRadioButton(this, dkColGroup,  bdr1, Cc.deckColorStyle == Cc.Dk__Green_Orange_Red_Blue,   "dkCol1", "4 Color - C Green, D Orange, H Red, S Blue  -  Bidding Box Colors  "), rbInset);
 		add(dkCol2 = new QRadioButton(this, dkColGroup,  bdr1, Cc.deckColorStyle == Cc.Dk__Green_Blue_Red_Orange,   "dkCol2", "4 Color - C Green, D Blue,  H Red, S Orange   -  Alternate on-line color set  "), rbInset);
+//		add(dkCol4 = new QRadioButton(this, dkColGroup,  bdr1, Cc.deckColorStyle == Cc.Dk__Gray_Orange_Red_Black,   "dkCol4", "4 Color - C Gray,  D Orange,   H Red, S Black     - 2016+ USA Some F-to-F Tournaments "), rbInset);
 		add(dkCol3 = new QRadioButton(this, dkColGroup,  bdr1, Cc.deckColorStyle == Cc.Dk__Black_Red_Red_Black,     "dkCol3", "2 Color - C Black,  D Red,   H Red, S Black     - Traditional  "), rbInset);
 
 		add(anyLabel  = new QLabel("Colors of the Card Symbols  A K Q ...   "), "gapy 15");
@@ -142,6 +144,9 @@ class AaRopPrefs4_SuitColors extends ClickPanel implements ItemListener, ActionL
 		}
 		else if (source == dkCol3) {
 			Cc.deckColorStyle = Cc.Dk__Black_Red_Red_Black;
+		}
+		else if (source == dkCol4) {
+			Cc.deckColorStyle = Cc.Dk__Gray_Orange_Red_Black;
 		}
 
 		else if (source == dkCardsColored) {

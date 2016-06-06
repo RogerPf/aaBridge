@@ -23,6 +23,7 @@ import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
 import com.rogerpf.aabridge.controller.App;
+import com.rogerpf.aabridge.model.Cc;
 
 /**   
  */
@@ -32,19 +33,25 @@ class AaRopPrefs7_ShowBtns extends ClickPanel implements ItemListener, ActionLis
 
 	QLabel anyLabel;
 
-	QCheckBox showPoints;
-	QCheckBox showLTC;
-//	QCheckBox showOldTextGray;
 	QCheckBox showSaveBtns;
 	QCheckBox showShfWkPlBtn;
 	QCheckBox showRotationBtns;
 	QCheckBox showClaimBtn;
+	QCheckBox showPoorDefHint;
+
+	QCheckBox showB1stBtn;
+	QCheckBox showContBtn;
+
+	QCheckBox showPoints;
+	QCheckBox showLTC;
+
+	QCheckBox fixLinuxLineSep;
+
+	QButton applyDefaults;
 
 	ButtonGroup mwGrp = new ButtonGroup();
 
 	QButton resetAllPrefs;
-
-	QButton rpfChoices;
 
 	public AaRopPrefs7_ShowBtns() {
 		setOpaque(true); // remember - we derive from ClickPanel which is setOpaque(false)
@@ -62,38 +69,53 @@ class AaRopPrefs7_ShowBtns extends ClickPanel implements ItemListener, ActionLis
 		add(anyLabel = new QLabel("Buttons - Show the . . ."), "gapy 10");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
 //		if (App.FLAG_canSave == true) {
-		add(showSaveBtns        = new QCheckBox(this, App.showSaveBtns,       "'Save As' button  "), "gapy 3");
+		add(showSaveBtns        = new QCheckBox(this, App.showSaveBtns,       "'Save' & 'Save As'  buttons   -   Shows the    'Save' & 'Save As'  buttons"), "gapy 3");
 		    showSaveBtns.setBorder(bdr4);
 //		}
-		add(showShfWkPlBtn      = new QCheckBox(this, App.showShfWkPlBtn,     "'Shuf Op' button  -  show  the   Shuf Op - 'Shuffle Weakest Pair and enter Play' button, most of the time "));
+		add(showShfWkPlBtn      = new QCheckBox(this, App.showShfWkPlBtn,     "'Shuf Op' button  -  Shows  the   Shuf Op - 'Shuffle Weakest Pair and enter Play' button, most of the time  "));
 	    showShfWkPlBtn.setBorder(bdr4);
-		add(showRotationBtns    = new QCheckBox(this, App.showRotationBtns,   "'Clockwise and Anti-clockwise' rotation buttons  "));
+		add(showRotationBtns    = new QCheckBox(this, App.showRotationBtns,   "'Clockwise and Anti-clockwise'  -  Shows the rotation buttons  "));
 		    showRotationBtns.setBorder(bdr4);
-		add(showClaimBtn        = new QCheckBox(this, App.showClaimBtn,       "'Claim' button - Allows you to end a hand with a claim  "));
+		add(showClaimBtn        = new QCheckBox(this, App.showClaimBtn,       "'Claim' button   -  Shows the  'Claim' button   which Allows you to end a hand with a claim  "));
 		    showClaimBtn.setBorder(bdr4);
+		    
+		add(anyLabel = new QLabel("With 'Enter the Deal' and also show"), "gapy 18");
+			anyLabel.setForeground(Aaa.optionsTitleGreen);
+		add(showB1stBtn          = new QCheckBox(this, App.showB1stBtn,       "'1st' button     -  Shows the  '1st' button   which does an    'Enter the Deal'  then goes into  'Play mode'  starts from just after the  1st  lead  "), "gapy 3");
+		    showB1stBtn.setBorder(bdr4);
+		add(showContBtn          = new QCheckBox(this, App.showContBtn,       "'Cont' button   -  Shows the  'Cont' button   which does an    'Enter the Deal'  then goes into  'Play mode'  continues after all existing play  "));
+		    showContBtn.setBorder(bdr4);
 
-		add(anyLabel = new QLabel("Hand Info - Show the . . ."), "gapy 15");
+		add(anyLabel = new QLabel("In Deal Guidence   show"), "gapy 18");
+			anyLabel.setForeground(Aaa.optionsTitleGreen);
+		add(showPoorDefHint         = new QCheckBox(this, App.showPoorDefHint, "Poor Defense hint    -  Shows / Hides  the  'Poor Defense Hint'   that shows when you enter  'Play'  mode  "), "gapy 3");
+		    showPoorDefHint.setBorder(bdr4);
+
+		add(anyLabel = new QLabel("Hand Info - Show the . . ."), "gapy 18");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
-		add(showPoints          = new QCheckBox(this, App.showPoints,         "Point Count   (HCP)  "));
+		add(showPoints          = new QCheckBox(this, App.showPoints,         "Point Count   (HCP)  "), "gapy 3");
 		    showPoints.setBorder(bdr4);
 		add(showLTC             = new QCheckBox(this, App.showLTC,            "Losing Trick Count - See Wikipedia - Losing Trick Count with refinements  "));
 		    showLTC.setBorder(bdr4);
-//		add(showOldTextGray     = new QCheckBox(this, App.showOldTextGray,    "Gray out old text     -    Some movies themselves turn off the   Gray out   feature"), "gapy 10");
-//		    showOldTextGray.setBorder(bdr4);
-
 		    		
-		add(anyLabel  = new QLabel("Reset ALL Options to the default"), "gapy 25");
-		anyLabel.setForeground(Aaa.optionsTitleGreen);
-		add(resetAllPrefs = new QButton(this, "Reset & Close"), "gapx4");
+		add(anyLabel  = new QLabel("Linux Only"), "gapy 18");
+		    anyLabel.setForeground(Aaa.optionsTitleGreen);
+		add(fixLinuxLineSep     = new QCheckBox(this, App.fixLinuxLineSep,    "Fix 'too close' lines   in Tutorials  "));
+		   fixLinuxLineSep.setBorder(bdr4);
+		   fixLinuxLineSep.setEnabled(App.onLinux);
+
+		add(applyDefaults = new QButton(this, "Apply Defaults"), "gapy20, gapx4");
+		if (App.onMac == false)
+			applyDefaults.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
+
+		add(anyLabel  = new QLabel("BELOW Resets ALL Options in aaBridge to the default"), "gapy 55");
+	        anyLabel.setForeground(Cc.RedStrong);
+		add(resetAllPrefs = new QButton(this, "Reset ALL & Close"), "gapx10");
+		    resetAllPrefs.setForeground(Cc.RedStrong);
 		if (App.onMac == false)
 		    resetAllPrefs.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
-		 
-		if (App.devMode) {
-			add(rpfChoices = new QButton(this, "RPf Choices"), "gapy20, gapx4");
-			if (App.onMac == false)
-			    rpfChoices.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
-		}
-			    
+		add(anyLabel  = new QLabel("TAKE CARE"));
+            anyLabel.setForeground(Cc.RedStrong);		 			    
 		// @formatter:on
 	}
 
@@ -101,43 +123,50 @@ class AaRopPrefs7_ShowBtns extends ClickPanel implements ItemListener, ActionLis
 
 		Object source = e.getSource();
 
+		if (source == applyDefaults) {
+
+			App.showSaveBtns = true;
+			App.showShfWkPlBtn = true;
+			App.showRotationBtns = true;
+			App.showClaimBtn = false;
+			App.showPoorDefHint = true;
+
+			App.showB1stBtn = false;
+			App.showContBtn = false;
+
+			App.showPoints = true;
+			App.showLTC = false;
+			App.fixLinuxLineSep = App.onLinux;
+
+			showSaveBtns.setSelected(App.showSaveBtns);
+			showShfWkPlBtn.setSelected(App.showShfWkPlBtn);
+			showRotationBtns.setSelected(App.showRotationBtns);
+			showClaimBtn.setSelected(App.showClaimBtn);
+			showPoorDefHint.setSelected(App.showPoorDefHint);
+
+			showB1stBtn.setSelected(App.showB1stBtn);
+			showContBtn.setSelected(App.showContBtn);
+
+			showPoints.setSelected(App.showPoints);
+			showLTC.setSelected(App.showLTC);
+			fixLinuxLineSep.setSelected(App.fixLinuxLineSep);
+
+			App.savePreferences();
+			App.calcCompassPhyOffset();
+			App.gbp.dealDirectionChange();
+			App.frame.repaint();
+
+		}
+
 		if (source == resetAllPrefs) {
 			App.SetOptionsToDefaultAndClose();
 			// it never comes back !!
-		}
-		if (source == rpfChoices) {
-
-			App.showPoints = true;
-
-//			App.showOldTextGray = true;
-
-			App.showMouseWheelSplash = false;
-			App.showRedNewBoardArrow = false;
-			App.showRedVuGraphArrow = false;
-			App.showRedEditArrow = false;
-			App.showRedDividerArrow = false;
-
-			App.showDfcExamHlt = false;
-			App.showBidPlayMsgs = false;
-
-			App.tutorialDealSize = 0;
-
-			App.watchBidding = false;
-
-			App.dfcAutoNext = 0; // fast/
-
-			App.realSavesPath = "C:\\a\\";
-
-			App.savePreferences();
-			System.exit(0); // SHUTS DOWN aaBridge NOW
 		}
 
 	}
 
 	/** This listens for the check box changed event */
 	public void itemStateChanged(ItemEvent e) {
-
-		boolean shaker = false;
 
 		boolean b = (e.getStateChange() == ItemEvent.SELECTED);
 		Object source = e.getItemSelectable();
@@ -161,12 +190,27 @@ class AaRopPrefs7_ShowBtns extends ClickPanel implements ItemListener, ActionLis
 		    App.calcApplyBarVisiblity();
         }
 		else if (source == showRotationBtns) {
-                      App.showRotationBtns = b;
+                       App.showRotationBtns = b;
             App.implement_showRotationBtns();
+		}
+		else if (source == showPoorDefHint) {
+                       App.showPoorDefHint = b;
+            App.implement_showClaimBtn();
 		}
 		else if (source == showClaimBtn) {
                        App.showClaimBtn = b;
             App.implement_showClaimBtn();
+        }
+		else if (source == showContBtn) {
+					   App.showContBtn = b;
+			 App.implement_showContBtn();
+		}
+		else if (source == showB1stBtn) {
+			           App.showB1stBtn = b;
+	         App.implement_showB1stBtn();
+        }
+		else if (source == fixLinuxLineSep) {
+                       App.fixLinuxLineSep = b;
 		}
 
 		if (b == false) {
@@ -177,11 +221,6 @@ class AaRopPrefs7_ShowBtns extends ClickPanel implements ItemListener, ActionLis
 			App.savePreferences();
 			App.calcCompassPhyOffset();
 			App.gbp.dealDirectionChange();
-			if (shaker) {
-				App.frame.calcAllMigLayoutStrings();
-				App.setVisualMode(App.visualMode);
-				App.frame.payloadPanelShaker();
-			}
 			App.frame.repaint();
 		}
 		// @formatter:on

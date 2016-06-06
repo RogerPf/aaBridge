@@ -12,6 +12,8 @@ package com.rogerpf.aabridge.model;
 
 public class Rlay_1st__Defender {
 
+//	static int debug_count = 0;
+
 	static Card act(Gather g) {
 		Hand h = g.hand;
 		// ****************************** 1st Defender ******************************
@@ -22,9 +24,12 @@ public class Rlay_1st__Defender {
 //		}
 		FragAnal fa = null;
 
+		boolean from_top_tricks = false;
+
 		if (g.ourTopTricksTot >= g.defendersTarget) { // we need to try to cash in our tricks
 			g.sort_ourTopTricks();
 			fa = g.fragAnals[0];
+			from_top_tricks = true;
 		}
 
 		if (fa == null) { // attack declarers weakness (if he has one)
@@ -41,9 +46,15 @@ public class Rlay_1st__Defender {
 			}
 		}
 
+//		if (debug_count++ == 2) {
+//			@SuppressWarnings("unused")
+//			int z = 0;  // break point here
+//		}
+
 		if (fa == null) { // pick a super safe (passive) lead
 			g.sort_ourTopTricks();
 			fa = g.fragAnals[0];
+			from_top_tricks = true;
 		}
 
 		if ((fa.pnFragLen < fa.myFragLen) && h.areOurTopHoldingsContigious(fa.suit)) {
@@ -51,11 +62,33 @@ public class Rlay_1st__Defender {
 		}
 		else {
 			card = fa.myFrag.getFirst();
+
 			// a quick extra check **** cheat check
 			// @formatter:off
 			if (   g.LHO.frags[fa.suit.v].areAllBetterThan(card.rank) 
 			    || g.RHO.frags[fa.suit.v].areAllBetterThan(card.rank)) {
 				card = fa.myFrag.getLast();
+			}
+
+			// override if our lead is top tricks and we will get trumped
+			if (        from_top_tricks
+				  &&    (g.fragAnals.length > 1)
+				  && (     (g.LHO_hasTrumps && g.LHO.frags[fa.suit.v].isEmpty())  
+				    	|| (g.RHO_hasTrumps && g.RHO.frags[fa.suit.v].isEmpty()) 
+				     )
+			   ) {
+								
+				fa = g.fragAnals[1];
+				
+				if (fa.myFragLen > 0) {
+					card = fa.myFrag.getFirst();		
+					// a quick extra check **** cheat check
+
+//					if (   g.LHO.frags[fa.suit.v].areAllBetterThan(card.rank) 
+//					    || g.RHO.frags[fa.suit.v].areAllBetterThan(card.rank)) {
+//						card = fa.myFrag.getLast();
+//					}
+				}
 			}
 			// @formatter:on
 		}

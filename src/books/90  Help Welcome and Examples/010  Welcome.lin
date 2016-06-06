@@ -1,14 +1,19 @@
 %% Help - Welcome
-%% Last edited  2015  Oct 30
+%% Last edited  2016  Feb 14
 %%%% by Roger Pfister
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 fh|150|fb|15|                1  large
 fh|240|fb|25|                2
 fh|342|fb|35|                3  med+
-fh|836|fb|85|                8  med  greater than 4 as it is in the 30 - 39 zone
+fh|460|fb|75|                4     
+fh|536|fb|38|                5     greater than 4 as it is in the 30 - 39 zone
+fh|635|fb|65|                6     greater than 4 as it is in the 30 - 39 zone
+fh|740|fb|75|                7     greater than 4 as it is in the 30 - 39 zone
+fh|836|fb|85|                8     greater than 4 as it is in the 30 - 39 zone
+fh|932|fb|95|                8     greater than 4 as it is in the 30 - 39 zone
 fh|s24|                      s  the word updated
-fh|v28|                      v  the little video button
+fh|v|                        v  the little video button
 
 cr|2200|cg|2060|cb|2255|     2  purple
 cr|3200|cg|3255|cb|3255|     3  light blue
@@ -17,35 +22,33 @@ cr|5016|cg|5128|cb|5016|     5  green
 
 bt||
 
-qx|Welc|
+qx|Welcm|
 mn|   Welcome to    -    aaBridge  3.1  |
 
 fp|1|at|^^^^^a   @s @h @d @c  ^v     @c @d @h @s|  suit symbols around the  MN  header         
 
-ht|f|n#|0|fp||at|^d    Click one of the buttons|     
+ht|f|n#|0|fp|5|at|^d  Click one of the buttons|     
 ht|f|n#|0|cs|3|fp|8|at|^p{ ^*h https://www.youtube.com/channel/UCjqx0Cofc7-TT-N0tfYR8rg/videos?flow=grid&view=0^*n aaBridge on YouTube ^*x }|
 
-ht|g|n#|0|at|^j      @-  |fp|1|at|^*bOR^*n|fp||at|  @-|
-
-
+ht|g|n#|0|at|^k    @-  |fp|1|at|^*bOR^*n|fp||at|  @-|
 
 at|^d@2| %% sets the left edge of the LEFT hand column
 
-   
-ht|i|n^|0|fp|1|cs|3|at|{ |n#|1|at|^*f playBridge_and_dealChoice,   Play Bridge^*n|
-fp||at|^^^*f playBridge_and_dealChoice,  |n#|2|at|and show Deal Choices ^*n|at|^^} |
+ht|j|n^|6|fp|4|cs|4|at|{ |n#|2|at|^*f playBridge_and_dealChoice,  Play Bridge  ^*n|n#|1|at|^^}|
 
-ht|m|n^|8|fp|1|cs|3|at|{ |n#|1|at|^*f playBridge_playBridge,   Play Bridge   ^*n|at|^^}|
-
-ht|p|n#|1|fp|v|cs|4|at|^b  { ^*hhttps://www.youtube.com/watch?v=8xWEyuyViF8^*nvideo^*x^^}|
-ht|p|n#|0|fp|0|cs|4|at|{ |n#|2|at|^*f openPage_distrFlashCards, Distribution Flash Cards ^*n|n#|1|at|^^}|
-
-ht|r|n#|8|fp|1|cs|4|at|{ |n#|1|at|^*f open_random_lin_file,  Random Lin^*n|
+ht|L|n#|e|fp|1|cs|3|at|{ |n#|1|at|^*f open_random_lin_file,  Random Lin^*n|
 fp||at|^^^*f open_random_lin_file,   |n#|2|at|open that Bridge Movie ^*n^^}|
 
-ht|r-|n#|5|fp|8|cp|red|at|^j^*b*Try it^*n@2 |fp|4|cp||
+ht|r|n^|j|fp|3|cs|3|at|{ |n#|3|at|^*f openPage_ListOfInterestingLins, List of Interesting Lins ^*n|n#|2|at|^^}|
 
-ht|w|n#|0|fp||cs|3|at|^c{ |n#|2|at|^*f openPage_DefendExpert,  How to  -  Defend like an Expert  ^*n|n#|1|at|^^}|
+ht|u|n^|q|fp|9|cs|3|at|^b|n<|1|at|{   ^*hhttps://www.youtube.com/watch?v=8xWEyuyViF8^*nPlay^*x|n<|d7|n#|e|at|^^}|
+ht|v|n^|q|fp|5|cs|3|at|^b|n<|1|at|{ ^*hhttps://www.youtube.com/watch?v=8xWEyuyViF8^*nVideo^*x^^|n<|d7|at|}|
+ht|w|n^|l|fp|5|cs|3|at|^b|n<|1|at|{ ^*hhttp://musingsonbridge.blogspot.com/2016/04/memorize-suit-distributions-how-to.html^*n Blog ^*x|n#|1|at|^^}|
+
+ht|u|n^|i|fp|7|cs|3|at|{ |n#|2|at|^*f openPage_distrFlashCards,Learn the Suit Distributions^*n|n#|g|at|^^}|
+ht|v|n^|h|fp|6|cs|3|at|{ |n#|2|at|^*f openPage_distrFlashCards,        ( using 'Flash Cards' )^*n|n#|0|at|^^}|
+
+ht|x|n^|3|fp|3|cs|3|at|^d{ |n#|2|at|^*f openPage_DefendExpert,  How to  -  Defend like an Expert  ^*n|n#|1|at|^^}|fp||
 
 
 
@@ -54,33 +57,34 @@ ht|w|n#|0|fp||cs|3|at|^c{ |n#|2|at|^*f openPage_DefendExpert,  How to  -  Defend
 at|^m    @2|  %% sets the left edge of the  RIGHT  hand column
 
 
-ht|i|n^|0|fp||at|Use any |cp|red|fp|3|at| ^*b^*uB^*n^*books^*n |fp||cp||at| menu above to select a book.|
+ht|i|n^|0|fp||at|Use any |cp|red|fp|3|at| ^*b^*uB^*n^*books^*n |fp||cp||at| menu on Menubar to select a book.|
 
 
-ht|k|n#|1|at|Use the |fp|8|at|^*b^*uF^*n^*bile^*n |fp||at| menu drop-down above to open your
-^o^*bSaves^*n folder and   ^*bdrag n drop^*n   a file from there.|
-			  
-
-ht|n|n#|2||fp|8|at|^*bDrag n Drop^*n|fp||at|   group of, any single, or a folder containing
-^o|n#|1|cp|5|at|^*b.lin^*n|cp||at| files, they will open.     Also any |cp|5|at|^*b.zip^*n|cp||at| or |cp|5|at|^*b.linzip^*n|cp||at| file.
-^s|n^|1|fh|w26|fp|v|at|(Windows users can ^*bdbl-click^*n)|
-
-			  
-ht|q|n#|9|fp|8|at|^*bClick^*n |fp||at|on any of the  |fp|8|at|^*bHelp^*n|fp||at|  or  |fp|8|at|^*bExample^*n|fp||at|  files you can
+ht|k|n#|2|fp|8|at|^*bClick^*n |fp||at|on any of the  |fp|8|at|^*bHelp^*n|fp||at|  or  |fp|8|at|^*bExample^*n|fp||at|  files you can
 ^o|n#|2|at|see listed in the tall gray column on your left.|
 
 
-ht|u|n#|0|fp|8|cs||at|^*bClick|fp||cs|lg|at|  on   { ^*fshowRedHintsOpts, Show  Red Hints  options^*n }   to turn  ^*bon / off^*b
-^o|n#|2|at|any particular  |cp|red|cs||at|^*bRed Arrow^*n|cp||at|  hint.|
+
+ht|r|n^|3|at|Use the |fp|8|at|^*b^*uF^*n^*bile^*n |fp||at| menu drop-down above to open your
+^o^*bSaves^*n folder and   ^*bdrag n drop^*n   a file from there.|
+			  
+
+ht|n|n#|2|fp|8|at|^*bDrag n Drop^*n|fp||at|   group of, any single, or a folder containing
+^o|n#|1|cp|5|at|^*b.lin^*n|cp||at| files, they will open.     Also any |cp|5|at|^*b.zip^*n|cp||at| or |cp|5|at|^*b.linzip^*n|cp||at| file.
+^s|n^|1|fh|w26|fp|v|at|(Windows users can ^*bdbl-click^*n)|
 
 
-ht|x|n#|7||fp|8|cp|2|at|   Includes Bo Haglund's Double Dummy Solver|fp||cp||
+ht|u|n^|1|fp|8|cs||at|^*bClick|fp||cs|lg|at|  on   { ^*fshowRedHintsOpts, Show  Red Hints  options^*n }   to turn  ^*bon / off^*b
+^o|n#|2|at|any particular  |cp||cs||at|^*bRed Arrow^*n|cp||at|  hint.|
+
+
+ht!x!n#!7!!fp!8!cp!2!at!   Includes Bo Haglund's Double Dummy Solver!fp!!cp!!
 
 
 at|@0@1|
-ht|y|at|^^^^^^@0@1|cp|red|fp|3|at|^hNew user ? |fp||at|   click    ^*bFlow  >^*n@2|fp||cp||
+ht|y|at|^^^^^^@0@1|n^|8|cp|red|fp|1|at|^e   New user ? |fp|8|n#|2|at|^j    click |fp|2|n#|2|at|^l      ^*b{ Flow  > }^*n@2|fp|s|n#|4|at|  ^*bbelow^*n|cp||
 
 
-ht|z|at|@0
-^q Roger Pfister     |fp|s|at|updated|fp||at|   January  2016
+ht|z|n^|8|fp|5|at|@0
+^q     Roger Pfister    |fp|s|at|updated|fp||at|    June  2016
 |

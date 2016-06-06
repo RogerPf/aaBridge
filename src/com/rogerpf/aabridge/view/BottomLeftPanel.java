@@ -69,8 +69,11 @@ public class BottomLeftPanel extends ClickPanel {
 
 			boolean show_wtsp = App.tutorialShowAuction && App.isMode(Aaa.REVIEW_PLAY) && App.deal.isFinished()
 					&& ((App.reviewTrick * 4 + App.reviewCard) >= App.deal.countCardsPlayed());
-			c0_2_0__empt.setVisible(!show_wtsp);
-			c0_2_0__clam.setVisible(false);
+
+			boolean clam = (!show_wtsp && App.isMode(Aaa.EDIT_PLAY) && (App.deal.isFinished() == false));
+
+			c0_2_0__empt.setVisible(!show_wtsp && !clam);
+			c0_2_0__clam.setVisible(clam);
 			c0_2_0__mdp.setVisible(false);
 			c0_2_0__wtsp.setVisible(show_wtsp);
 		}
@@ -86,10 +89,12 @@ public class BottomLeftPanel extends ClickPanel {
 		else if (App.deal.isPlaying()) {
 
 			c0_2_0__empt.setVisible(false);
+//			boolean xx = App.deal.lessThanTwoCardsPlayed();
+//			boolean yy = (!App.isAutoPlay(App.deal.getNextHandToPlay().compass));
 			boolean showMsg = (!App.isAutoPlay(App.deal.getNextHandToPlay().compass)) && !App.isMode(Aaa.EDIT_PLAY) && App.showBidPlayMsgs
 					&& App.deal.lessThanTwoCardsPlayed();
 			c0_2_0__clam.setVisible(!showMsg);
-			c0_2_0__mdp.textArea.setText("PLAY by clicking on a CARD\nor by using your Keyboard.\n\nGray dot  =>  click on green");
+			c0_2_0__mdp.textArea.setText("PLAY by clicking on a CARD\nor by using your Keyboard.\n\nGray dots  =>  click on green");
 			c0_2_0__mdp.setVisible(showMsg);
 			c0_2_0__wtsp.setVisible(false);
 		}
@@ -257,7 +262,7 @@ class NextBoardButtonPanel extends ClickPanel {
 	/**
 	 */
 	public void set_NextBoard_and_Undo_visibility() {
-		mainNewBoard.setVisible(App.mg.lin.linType == Lin.SimpleDealSingle || App.mg.lin.linType == Lin.SimpleDealVirgin);
+		mainNewBoard.setVisible(/*App.mg.lin.linType == Lin.SimpleDealSingle ||*/App.mg.lin.linType == Lin.SimpleDealVirgin);
 		mainUndo.setVisible(App.isVmode_InsideADeal() && (App.isModeAnyReview() == false));
 	}
 

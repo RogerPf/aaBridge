@@ -21,54 +21,99 @@ import com.rogerpf.aabridge.controller.App;
 public class VersionAndBuilt {
 	static String ver = "3.1.0.";  public static String devExtra = "";    // extra is dev only, normally null
 
-	public static int buildNo = 2822;    static String y = "2016", m = "Jan", d = "03";
+	public static int buildNo = 2882;    static String y = "2016", m = "June", d = "06";
 
 
-	// 2016-01-03  2822  Release Candidate
-	// 2016-01-03  2821  _d   More Lin tweeks
-	// 2016-01-03  2821  _c   Hondo lins for 2015 made public
-	// 2015-12-28  2821  _b   build procedure doc updated - hondo lins
-	// 2015-12-16  2821  _a   OCP added
-	// 2015-12-15  2820  Release Candidate
-	// 2015-12-15  2819  _f   Ability to remove and autoadd cards added (rc and aa cmnds)
-	// 2015-12-15  2819  _e   add latest OCP
-	// 2015-12-12  2819  _d   Only Marked Chapters in Menu  -  Recently viewed removed
-	// 2015-12-06  2819  _c   OCP and Hondo lin added
-	// 2015-12-01  2819  _b   Third DlaE button added
-	// 2015-12-01  2819  _a   Tweak to text on the two Seat Cho-ice DlaE buttons  
-	// 2015-11-30  2818  Release Candidate
-	// 2015-11-30  2817  _f   Quick Paste now only works nears the Step and Flow buttons
-	// 2015-11-29  2817  _e   More drag drop link fiddles
-	// 2015-11-19  2817  _d   Tweeks to right and bottom panel text
-	// 2015-11-19  2817  _c   now always creates a a non-existent saves folder
-	// 2015-11-19  2817  _b   Users can now set their own Saves Folder
-	// 2015-11-16  2817  _a   drag drop link text bug (alert text) fixed
-	// 2015-11-16  2816  Release Candidate
-	// 2015-11-15  2815  _d   typo fixed
-	// 2015-11-15  2815  _c   jar now re-compressed to make it smaller
-	// 2015-11-14  2815  _b   DLaE new button reset and DFC default tweek
-	// 2015-11-14  2815  _a   Another DLAE settings bug  [sigh]
-	// 2015-11-13  2814  Release Candidate
-	// 2015-11-12  2813  _o   all OCP 2D revisited and 2814 needed
-	// 2015-11-12  2813  _n   Deal to BBO two buggets fixed
-	// 2015-11-10  2813  _m   Deal to BBO link added to men u etc
-	// 2015-11-08  2813  _l   massive change of hondo lins removing  fb!110
-	// 2015-11-08  2813  _k   reduced eating of spaces to one after double up arrow
-	// 2015-11-08  2813  _j   tweek to make 'pf' message reset line spacing
-	// 2015-11-08  2813  _i   added bbo hand link text drag and paste  click
-	// 2015-11-06  2813  _h	  now have 4 NSEW visibility override checkboxes
-	// 2015-11-05  2813  _g   tweeks to box positions
-	// 2015-11-05  2813  _f   one tweek to lin
+	// 2016-06_06  2882  Release Candidate
+	// 2016-06_06  2881  _n   and nearer
+	// 2016-06_06  2881  _m   getting near release
+	// 2016-06_05  2881  _k   again
+	// 2016-06_04  2881  _j   Improve your Bridge  is now complete
+	// 2016-06_04  2881  _h   same
+	// 2016-06_04  2881  _g   Starting to add  Improve your Bridge
+	// 2016-06_04  2881  _f   Red arrow hints improved
+	// 2016-06_04  2881  _e   Clean Up of the settings and in particular Reset all Defaults
+	// 2016-06_04  2881  _d   Again - More lin Changes moving away from the blog
+	// 2016-06_04  2881  _c   More lin Changes moving away from the blog
+	// 2016-06_04  2881  _b   More menu items directing locally not to the blog
+	// 2016-06_04  2881  _a   Video button added to DFC
+	// 2016-06_03  2880  Release Candidate
+	// 2016-06_03  2877  _c   Visualize menu option added
+	// 2016-05_28  2877  _b   Visualize example hand added
+	// 2016-05_28  2877  _a   Additional color option added but not enabled (as no backwards compatibility)
+	// 2016-05_28  2876  Release Candidate
+	// 2016-05_28  2875  _f   Color tweaks to Poor Defense hint
+	// 2016-05_28  2875  _e   Edit time  'cl ick  to be you' removed 
+	// 2016-05_28  2875  _d   Shows the  Poo r  Defense hint more appropriately
+	// 2016-05_28  2875  _c   POO R Defense hint  now shown by cont and 1st
+	// 2016-05_24  2875  _b   lin files can now be just the single md|| command 
+	// 2016-05_23  2875  _a   user can now quick type deals without using suit symbols
+	// 2016-05_22  2874  Release Candidate
+	// 2016-05_22  2873  _m   Includes new How to Enter (type) doc
+	// 2016-05_21  2873  _k   e b|c| added   1 st and c ont  buttons reversed
+	// 2016-05_20  2873  _j   Can now force ETD visible   Special use setting
+	// 2016-05_19  2873  _i   1 st   now internally coded as  f
+	// 2016-05_19  2873  _h   more visibility messages and pf letters now y b c f w x
+	// 2016-05_19  2873  _g   fix to 1 st   co nt  visibility
+	// 2016-05_18  2873  _f   lin docs changed to cover new vis feature
+	// 2016-05_18  2873  _e   old e p1  renames
+	// 2016-05_18  2873  _d   visibility of  Et_D  1 st and c ont  button added
+	// 2016-05_14  2873  _c   co nt fix to menu menu ist
+	// 2016-05_14  2873  _b   co nt & 1 st updated in lins
+	// 2016-05_14  2873  _a   docs updated to replace Ep 1 by c ont & 1 st
+	// 2016-05_14  2872  Release Candidate
+	// 2016-05_13  2871  _h   Cont and 1st are now the names
+	// 2016-05_13  2871  _g   Now trying  End  and  Start as button names
+	// 2016-05_13  2871  _f   Try button names  E  and  B1
+	// 2016-05_13  2871  _e   Epe button added still experimental don't like the name
+	// 2016-05_08  2871  _d   Change to  E T D  and  E P 1  hover text
+	// 2016-05_08  2871  _c   fixed (just added) bug in display of first page
+	// 2016-05_04  2871  _b   added a second pf message  't' "rest of play"
+	// 2016-05_04  2871  _a   now two not just one gray dot
+	// 2016-05_04  2870  Release Candidate
+	// 2016-05_04  2869  _a   fixed small bug single deals were showing initially without their play
+	// 2016-05_03  2868  Release Candidate
+	// 2016-05_03  2867  _f   clean build
+	// 2016-05_03  2867  _e   deal name list extended
+	// 2016-05_03  2867  _d   Change to leading policy by defender
+	// 2016-05_02  2867  _c   correction to broken mg lin (chapter) loader
+	// 2016-05_02  2867  _b   tc Table conceal now works as original intended
+	// 2016-05_02  2867  _a   Single deals now can start down the rabbit hole
+	// 2016-05_01  2866  Release Candidate
+	// 2016-05_01  2865  _i   final clean ups
+	// 2016-05_01  2865  _h   Fixed new board to reset universal rotator and hondo
+	// 2016-05_01  2865  _g   Tweaked dummy  color
+	// 2016-05_01  2865  _f   You Seat can now be anchored to a compass point
+	// 2016-05_01  2865  _e   Change default   show you seat   policy to hide (from unchanged)
+	// 2016-04_30  2865  _d   Thin black line suppressed when not applicable
+	// 2016-04_25  2865  _c   universal rotation not now cleared by a new drop
+	// 2016-04_25  2865  _b   Corrected hide / show  B1st  mis-display
+	// 2016-04_24  2865  _a   Review fwd a full trick now also shows DDS if on
+	// 2016-04_24  2864  Release Candidate
+	// 2016-04_24  2863  _d   More
+	// 2016-04_24  2863  _c   Small Tweaks
+	// 2016-04_23  2863  _b   Changes to the docs to match '_a'
+	// 2016-04_18  2863  _a   'Play' now discards future cards
+	// 2016-04_18  2862  Release Candidate
+	// 2016-04_15  2861  _d   mass hondo tweaks
+	// 2016-04_15  2861  _c   hondo added
+	// 2016-04_15  2861  _b   More changes to when to show the DDS scores
+	// 2016-04_15  2861  _a   green color on website menu  dds now always starts as off
 	//
-	//                          Migrated to repo 09
+	//         migrated to  repo-10
 	//
-	// 2015-11-05  2813  _d   misplaced demo
-	// 2015-11-05  2813  _c   rq now kill  nt  as well as  at
-	// 2015-11-05  2813  _b   lin doc added for Lg  
-	// 2015-11-04  2813  _a   lg  line gap (spacing)  added
-	//             2812         skipped
-
-	// see    repo_08  for more
+	// 2016-04_14  2860  Release Candidate
+	// 2016-04_14  2858       repeated
+	// 2016-04_14  2858  Release Candidate
+	// 2016-04_14  2857  _m   docs
+	// 2016-04_14  2857  _k   plus menu entry
+	// 2016-04_14  2857  _j   working at last
+	// 2016-04_13  2857  _h   lin file changed to match
+	// 2016-04_08  2857  _f   more work on the docs  collection
+	// 2016-04_08  2857  _d   has all .docs packed in as well
+	// 2016-04_08  2857  _c   Pink dot Blog entry added
+	// 2016-04_08  2857  _b   Hondo files
+	// 2016-04_08  2857  _a   Blog Box added next to Play Video on Welcome
 
 	
 	static String built = y + " " + m + " " + d;

@@ -155,6 +155,9 @@ public class Book extends ArrayList<Book.LinChapter> {
 			App.flowOnlyCommandBar = false;
 			App.hideCommandBar = false; // only set true by the lbx (distr Flash cards question special)
 			App.hideTutNavigationBar = false; // only set true by the lbx (distr Flash cards question special)
+//			if (App.devMode == false) {
+//  			App.allTwister_reset();
+//			}
 
 			if (type == 'r') {
 				success = BridgeLoader.readLinOrPbnResourseIfExists(bookJarName, filenamePlus);
@@ -185,8 +188,10 @@ public class Book extends ArrayList<Book.LinChapter> {
 
 			if (loaded) {
 				App.book = Book.this;
-				if (replace.contentEquals("replaceBookPanel"))
+				if (replace.contentEquals("replaceBookPanel")) {
 					App.aaBookPanel.matchToAppBook();
+				}
+
 				App.aaBookPanel.showChapterAsSelected(getName());
 
 				if (App.isLin__VuGraphAndTwoTeams() && App.showRedVuGraphArrow) {
@@ -198,6 +203,14 @@ public class Book extends ArrayList<Book.LinChapter> {
 				String srcName = (type == 'r') ? bookJarName : bookFolderName;
 
 				App.mg.mruChap = App.mruCollection.createMatchingMru(type, srcName, filenamePlus, displayNoUscore, prev_pg_numb);
+
+				App.ddsScoreShow = false;
+
+				App.gbp.c1_1__tfdp.clearAllCardSuggestions(); // DIRTY nasty way to do things - its a bug fix - no excuse
+
+				App.gbp.c1_1__tfdp.makeCardSuggestions();
+
+				App.frame.rop.setSelectedIndex(App.RopTab_2_SeatChoice);
 
 				return loaded;
 			}

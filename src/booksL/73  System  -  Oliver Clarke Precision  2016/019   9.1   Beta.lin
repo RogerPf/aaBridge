@@ -21,7 +21,7 @@ mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE 
 
 %%
 %%  You can NOW use  ALL 2814 and later features, all  'older'
-%%   aaBridge players are screened just before the first  'pg'
+%%   copies of aaBridge are screened out just before the first  'pg'
 %%
 
 fh|t40|                    Font   t  t-title      section titles within chapters
@@ -87,7 +87,7 @@ ht|z|at|@0
 %% <<--FRONTPAGE_FOOTER_REPLACE_START->>
 fh|940|fm|9|fp|9|at|@0@1|
 ht|i|
-rq|2814|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2814 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+rq|2830|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2830 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
 %% <<--FRONTPAGE_FOOTER_REPLACE_END->>
 pg| ***** 0 ***** |
 
@@ -163,9 +163,7 @@ at|^c|cp|h-highlight|at|^*b(d)  STRONG: ^*n|cp||at|   The Strong Scale is used w
 4    steps            ^g   7   ^h      controls
 
 |ht|s|at|^c^*bMM:^*n  Memory aid:     ^h Steps   to   Controls     ADD   3   ^q (one less than the first step max)|
-
-
-pg| ***** 3 ***** |
+pg| ***** 4 ***** |
 
 
 nt|^b@2|ht|h|
@@ -181,9 +179,9 @@ at|^c|cp|h-highlight|at|^*b(e)  SUPER: ^*n|cp||at|   ^*iVERY RARE^*n    When Res
 
 |ht|s|at|^c^*bMM:^*n  Memory aid:     ^h Steps   to   Controls     ADD   5   ^q (one less than the first step max)|
 
-|ht|z|at|
+ht|z|at|
 ^b^*bend^*n|
-pg| ***** 4 ***** |
+pg| ***** 5 ***** |
 
 
 -----------------------------------------------------------------------------------------------
@@ -217,7 +215,7 @@ They are fairly large (around 500k) but cover this stuff in more detail.  ^*h ht
 
 
 ^*bMM:^*n  500k large !     I guess this shows that Oliver wrote these notes a while back, when things were smaller.  :)|
-pg| ***** 5 ***** |
+pg| ***** 6 ***** |
 
 
 nt|^z@3^b@2|at|^^^^|
@@ -245,7 +243,7 @@ Next I will show you a hand that we will keep returning to
 ^c 1@c - 1NT      ^g shows  the responder has         @sspades@s      and
 
 ^c 1@c - 1@s      ^g shows  the responder has a     ^*b NO TRUMP ^*n    shape hand   )|
-pg| ***** 6 ***** |
+pg| ***** 7 ***** |
 
 
 --------------------------------------------------------------------
@@ -256,31 +254,31 @@ md|3S8HAQJ975DJT6CAQJ,,SAKT73HK84D5CKT85,|
 mb|?|
 nt|^z@3^b@2|at|^^|
 cp|red|at|^*bOliverC:^*n|cp||at|  Teach 1|
-pg| ***** 7 ***** |
-
-
-mb|1S|an|11-15 hcp    5+ @s|
 pg| ***** 8 ***** |
 
 
-sj|c|
-mb|p|mb|2H|an|11+ hcp or shape   5+ @h    Forcing|
+mb|1S|an|11-15 hcp    5+ @s|
 pg| ***** 9 ***** |
 
 
 sj|c|
-mb|p|mb|3C|
+mb|p|mb|2H|an|11+ hcp or shape   5+ @h    Forcing|
 pg| ***** 10 ***** |
 
 
 sj|c|
-mb|p|mb|3D|an|4th Suit Forcing|
+mb|p|mb|3C|
 pg| ***** 11 ***** |
 
 
 sj|c|
-mb|p|mb|3H|an|stronger than 4@H|
+mb|p|mb|3D|an|4th Suit Forcing|
 pg| ***** 12 ***** |
+
+
+sj|c|
+mb|p|mb|3H|an|stronger than 4@H|
+pg| ***** 13 ***** |
 
 
 sj|c|
@@ -290,12 +288,12 @@ at|     South's bid here is Beta for 2 reasons
 Firstly, South is still unlimited here, and since Clubs HAVE been mentioned as a possible trump suit, 4@D is Beta here rather than 4@C.
 
 Secondly, North's bidding to date has highlighted a Diamond shortage in their hand, and, as we will see in a minute, bids in partner's KNOWN short suit can also be Beta.|
-pg| ***** 13 ***** |
+pg| ***** 14 ***** |
 
 
 nt|^z@3^b@2|at|^^|
 cp|red|at|^*bOliverC:^*n|cp||at|  We'll carry on with this sequence in a minute or two.|
-pg| ***** 14 ***** |
+pg| ***** 15 ***** |
 
 
 bt||
@@ -327,7 +325,7 @@ The last 3 low-level Beta Asks displace an Alpha Ask in the Relay Suit, so that 
 1@C - 1NT - 2NT  is Alpha in Clubs.  
 1@C -  2@D  - 2@H    is Beta, and 
 1@C -  2@D  - 2NT  is Alpha in Hearts.|
-pg| ***** 15 ***** |
+pg| ***** 16 ***** |
 
 
 nt|^z@3^b@2|at|^^^^|
@@ -353,7 +351,7 @@ Generally speaking, an Opener who has already LIMITED their hand by making an in
 ^c 1H - 2@C - 3@D(Upper Range, 5 - 5+) - 3@H - ??? 
 
 Here (above) Opener might be upper range, but they've still limited their hand to 15 HCP max, so 4@C by Opener here would be a cue-bid rather than Beta.|
-pg| ***** 16 ***** |
+pg| ***** 17 ***** |
 
 
 nt|^z@3^b@2|at|^^^^|
@@ -375,7 +373,7 @@ Here Responder has not limited their hand at all.  So once Opener agrees Clubs a
 Similarly in the sequence shown in  ^*bTeach 1^*n
 
 (let's return to it)|
-pg| ***** 17 ***** |
+pg| ***** 18 ***** |
 
 
 qx|t1,wide|
@@ -386,7 +384,7 @@ cp|red|at|^*bOliverC:^*n|cp||at|   Teach 1 (restored)      South is unlimited an
 North, though IS limited by the mere fact that they've opened a Precision Intermediate Opening.
 
 So if South had bid  3@S  instead of  3@D,  then   4@D  by North would have been be a cue-bid rather than Beta.|
-pg| ***** 18 ***** |
+pg| ***** 19 ***** |
 
 
 bt||
@@ -409,7 +407,7 @@ Essentially we're following what I said above:
 Responder here is completely unlimited (but may have nothing), and Opener HAS now limited their hand by virtue of the  2@S  bid.
 
 Any questions? .|
-pg| ***** 19 ***** |
+pg| ***** 20 ***** |
 
 
 nt|^z@3^b@2|at|^^^^|
@@ -441,13 +439,13 @@ So in this sequence, we'd be using the Normal scale.
 So here was an example of Beta being used in a "natural" bidding sequence rather than as part of an Asking Bid sequence.
 
 ^f(returning to deal Teach 1)|
-pg| ***** 20 ***** |
+pg| ***** 21 ***** |
 
 
 st||
 nt|^z@3^b@2|at|^^|
 cp|red|at|^*bOliverC:^*n|cp||at|   Teach 1 (restored  2nd  time)      |
-pg| ***** 21 ***** |
+pg| ***** 22 ***** |
 
 
 sj|c|
@@ -457,30 +455,30 @@ at|
 So here South knows that North (with 5 controls) has either    2 Aces and a King   ^*bOR^*n   an Ace and 3 Kings.
 
 Since they definitely will NOT have a singleton King of Diamonds, it's likely to be 2 Aces and a King other than Diamonds, OR (probably more likely), the  @SAK,  @HK  and  K@C.|
-pg| ***** 22 ***** |
-
-
-at|          Completing the bidding.    |
 pg| ***** 23 ***** |
 
 
-sj|c|
-mb|p|mb|6H|
+at|          Completing the bidding.    |
 pg| ***** 24 ***** |
 
 
 sj|c|
-mb|p|mb|p|mb|p|   
+mb|p|mb|6H|
 pg| ***** 25 ***** |
 
 
-md|03S8HAQJ975DJT6CAQJ,SJ654HT2DK72C9762,SAKT73HK84D5CKT85|
+sj|c|
+mb|p|mb|p|mb|p|   
 pg| ***** 26 ***** |
+
+
+md|03S8HAQJ975DJT6CAQJ,SJ654HT2DK72C9762,SAKT73HK84D5CKT85|
+pg| ***** 27 ***** |
 
 
 pf|Y|
 pc|hT|
-pg| ***** 27 ***** |
+pg| ***** 28 ***** |
 
 
 bt||
@@ -509,7 +507,7 @@ Pass - 1@C - 1@S(pos with @S's) - ^*b1NT^*n(Beta) - 2@H          shows  2  Contr
 ^c because although Opener is known to be Intermediate, they are ALSO known to have 0-3 Controls.
 
 As you can see, you ALWAYS have to be thinking about the sequence as a whole to determine WHICH Beta Scale is currently in use |
-pg| ***** 28 ***** |
+pg| ***** 29 ***** |
 
 
 bt||
@@ -532,7 +530,7 @@ Pass - 1@C - 1@S(pos with @S's) - 1NT(Beta) - 2@H     shows 3 Controls.
 The  ^*bSpecial Weak^*n  scale exists to alleviate the problem of Opener having insufficient room to use a Low-level Beta and still hand over the Captaincy with 2NT.
 
 It gives us that one additional bidding space which makes it more likely that 2NT HoC (Hand over of Captaincy) will still be available over the Low-Beta response. |
-pg| ***** 29 ***** |
+pg| ***** 30 ***** |
 
 
 bt||
@@ -564,7 +562,7 @@ The notes do explain them, though.              ^*h http://bbo.pigpen.org.uk/Bet
 You are unlikely to encounter the Range Beta unless and until you start playing the "complex" version of this system.
 
 Any questions.|
-pg| ***** 30 ***** |
+pg| ***** 31 ***** |
 
 
 bt||
@@ -602,16 +600,16 @@ md|1SAKQHA97DACAT8765,,S9876H8DKQ32CKQJ2,|
 mb|?|
 nt|^z@3^b@2|at|^^|
 cp|red|at|^*bOliverC:^*n|cp||at|  Teach 2     |
-pg| ***** 31 ***** |
+pg| ***** 32 ***** |
 
 
 mb|1C|an|16+ Any dist except 16-23 4441|
-pg| ***** 32 ***** |
+pg| ***** 33 ***** |
 
 
 sj|c|
 mb|p|mb|2H|an|8-11, 4144, @H x|
-pg| ***** 33 ***** |
+pg| ***** 34 ***** |
 
 
 sj|c|
@@ -623,12 +621,12 @@ at|This is an Asking Bid we've not covered yet, Eta, Asking about North's KNOWN 
 I mentioned earlier that  Relay Beta  is a Relay in the next suit when we've agreed trumps by Asking Bids.
 
 The mere USE of Eta in Clubs agrees Clubs as the trump suit.|
-pg| ***** 34 ***** |
+pg| ***** 35 ***** |
 
 
 sj|c|
 mb|p|mb|4C|an|HHJx in @C|
-pg| ***** 35 ***** |
+pg| ***** 36 ***** |
 
 
 sj|c|
@@ -637,7 +635,7 @@ mb|p|mb|4D|an|RELAY Beta|
 
 nt|^z@3^b@2|at|^^|
 cp|red|at|^*bOliverC:^*n|cp||at|  So now 4@D (the relay over the Eta Response) is Relay beta.| 
-pg| ***** 36 ***** |
+pg| ***** 37 ***** |
 
 
 sj|c|
@@ -645,32 +643,32 @@ mb|p|mb|4N|an|2 Controls|
 at|^^^^Because North has limited their hand to 8-11 HCP, we treat them as 0-10 for the purposes of beta, and so this is using the WEAK Beta Scale.
 
 Once again, this MUST be the  K@C  and  K@D,  since North wouldn't  "count"  the stiff  K@H     Any questions?|
-pg| ***** 37 ***** |
-
-
-sj|c|
-mb|p|mb|7C|
 pg| ***** 38 ***** |
 
 
 sj|c|
-mb|p|mb|p|mb|p|
+mb|p|mb|7C|
 pg| ***** 39 ***** |
 
 
-md|01SAKQHA97DACAT8765,SJT43HKJT52DT94C9,S9876H8DKQ32CKQJ2|
+sj|c|
+mb|p|mb|p|mb|p|
 pg| ***** 40 ***** |
+
+
+md|01SAKQHA97DACAT8765,SJT43HKJT52DT94C9,S9876H8DKQ32CKQJ2|
+pg| ***** 41 ***** |
 
 
 pc|hJ|
 pf|Y|
-pg| ***** 41 ***** |
+pg| ***** 42 ***** |
 
 
 md|1,,,|
 nt|^z@3^b@2|at|^^|
 at|  cleared|
-pg| ***** 42 ***** |
+pg| ***** 43 ***** |
 
 
 --------------------------------------------------------------------
@@ -683,60 +681,60 @@ md|2,S87H85DKQJ9CQJ753,,SKQ6HAK3DA4CAKT82|
 mb|?|
 nt|^z@3^b@2|at|^^|
 cp|red|at|^*bOliverC:^*n|cp||at|  Teach 3|
-pg| ***** 43 ***** |
-
-
-mb|p|
 pg| ***** 44 ***** |
 
 
-sj|c|
-mb|p|mb|1C|an|16+ Any dist except 16-23 4441|
+mb|p|
 pg| ***** 45 ***** |
 
 
 sj|c|
-mb|p|mb|2C|an|8+, 5+ @C, GF|
+mb|p|mb|1C|an|16+ Any dist except 16-23 4441|
 pg| ***** 46 ***** |
+
+
+sj|c|
+mb|p|mb|2C|an|8+, 5+ @C, GF|
+pg| ***** 47 ***** |
 
 
 sj|c|
 mb|p|mb|2D|an|LOW Beta|
 at|^^^^Here, Because this is Low Beta and West is a passed hand, we're using the SPECIAL WEAK scale |
-pg| ***** 47 ***** |
+pg| ***** 48 ***** |
 
 
 sj|c|
 mb|p|mb|2H|an|0-1 Controls|
-pg| ***** 48 ***** |
+pg| ***** 49 ***** |
 
 
 sj|c|
 mb|p|mb|3C|an|Asking about Clubs (Gamma)|
 at|^^^^Another Ask we've not come to yet Gamma.    Asking about Responder's 5+ card suit |
-pg| ***** 49 ***** |
+pg| ***** 50 ***** |
 
 
 sj|c|
 mb|p|mb|3H|an|Hxxxx in @C|
-pg| ***** 50 ***** |
+pg| ***** 51 ***** |
 
 
 sj|c|
 mb|p|mb|3S|an|Relay Beta|
 nt|^z@3^b@2|at|^^|
 cp|red|at|^*bOliverC:^*n|cp||at|    3@S, is Relay Beta.  We've not yet established West's EXACT number of controls, and since 3@C agrees Clubs as trumps (whatever the response), the Relay over the Gamma Response is still Relay Beta, but now using the WEAK scale.|
-pg| ***** 51 ***** |
-
-
-sj|c|
-mb|p|mb|4C|an|1 Control|
 pg| ***** 52 ***** |
 
 
 sj|c|
-mb|p|mb|4S|an|Asking about @S Controls|
+mb|p|mb|4C|an|1 Control|
 pg| ***** 53 ***** |
+
+
+sj|c|
+mb|p|mb|4S|an|Asking about @S Controls|
+pg| ***** 54 ***** |
 
 
 sj|c|
@@ -744,23 +742,23 @@ mb|p|mb|5C|an|3rd round ctrl of @S|
 at|^^^^So at this stage, West MUST have the  K@D  and  Q@C  East has to take a bit of a chance over 5@C.
 
 Any other Ask would commit them to 6@C regardless (and so not worth Asking again)| 
-pg| ***** 54 ***** |
+pg| ***** 55 ***** |
 
 
 sj|c|
 mb|p|mb|6C|
-pg| ***** 55 ***** |
+pg| ***** 56 ***** |
 
 
 sj|c|
 mb|p|mb|p|mb|p|
 md|0ST543HQJ976D652C9,S87H85DKQJ9CQJ753,SAJ92HT42DT873C64|
 pc|hQ|
-pg| ***** 56 ***** |
+pg| ***** 57 ***** |
 
 
 pf|Y|
-pg| ***** 57 ***** |
+pg| ***** 58 ***** |
 
 
 bt||
@@ -788,7 +786,7 @@ Bear this in mind if, for example, you have a void somewhere and there is, perha
 Quite often a degree of concentrated analysis of the hand will tell you a lot about what partner has, their distribution and where their controls are.
 
 This will help you to target your Asking Bids most effectively.|
-pg| ***** 58 ***** |
+pg| ***** 59 ***** |
 
 
 nt|^z@3^b@2|at|^^^^|
@@ -809,7 +807,7 @@ Is it really worth making a second Beta Ask with 3@C Relay Beta here?   Probably
 Partner cannot have the Ace of Hearts and the only other Control they can have is the King of Diamonds, so better to find out what degree of control they have in Spades.
 
 If they have no Control of Spades it doesn't matter WHAT else they have, since slam is out of the question.|
-pg| ***** 59 ***** |
+pg| ***** 60 ***** |
 
 
 qx|Prac,wide|
@@ -832,7 +830,7 @@ one more?   c'mon, don't be shy
 Uof FL Jen:  Hi P.  Hi Opps
 
 boleo1: Hi all..|
-pg| ***** 60 ***** |
+pg| ***** 61 ***** |
 
 
 ------------------------------------------------------------------------------------------------  
@@ -870,7 +868,7 @@ An easy mistake in reply to an Epsilon is when, say, you hold ^*b Q76 ^*n in the
 The ^*b ethical ^*n problem with telling too much to your opps is that it disadvantages the other pairs who will play your opponents cards.|
 %% Alert Insert End ----------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------  
-pg| ***** 137 ***** |
+pg| ***** 62 ***** |
 
 
 --------------------------------------------------------------------
@@ -882,46 +880,46 @@ md|3SQJT2HKJDKT3CQT83,,SAK76HAT62DAQJCK4,|
 mb|?|
 nt|^z@3^b@2|at|^^|
 cp|red|at|^*bOliverC:^*n|cp||at|  Practice 1 |
-pg| ***** 61 ***** |
-
-
-mb|1C|an|16+ Any dist except 16-23 4441|
-pg| ***** 62 ***** |
-
-
-sj|c|
-mb|p|mb|1S|an|8+ BALANCED or semi-bal with 5-minor, GF|
 pg| ***** 63 ***** |
 
 
-sj|c|
-mb|p|mb|1N|an|Beta (Low-level)  Response in Weak Scale if passed hand|
+mb|1C|an|16+ Any dist except 16-23 4441|
 pg| ***** 64 ***** |
 
 
 sj|c|
-mb|p|mb|2C|an|0-2 Controls|
+mb|p|mb|1S|an|8+ BALANCED or semi-bal with 5-minor, GF|
 pg| ***** 65 ***** |
 
 
 sj|c|
-mb|p|mb|2N|an|Bid you hand, partner      (Hand over Captaincy)|
+mb|p|mb|1N|an|Beta (Low-level)  Response in Weak Scale if passed hand|
 pg| ***** 66 ***** |
 
 
 sj|c|
-mb|p|mb|3C|an|4 Card @c's|
+mb|p|mb|2C|an|0-2 Controls|
 pg| ***** 67 ***** |
 
 
 sj|c|
-mb|p|mb|3H|an|4 Card @h's|
+mb|p|mb|2N|an|Bid you hand, partner      (Hand over Captaincy)|
 pg| ***** 68 ***** |
 
 
 sj|c|
-mb|p|mb|3S|an|4 Card @s's|
+mb|p|mb|3C|an|4 Card @c's|
 pg| ***** 69 ***** |
+
+
+sj|c|
+mb|p|mb|3H|an|4 Card @h's|
+pg| ***** 70 ***** |
+
+
+sj|c|
+mb|p|mb|3S|an|4 Card @s's|
+pg| ***** 71 ***** |
 
 
 sj|c|
@@ -931,21 +929,21 @@ at|    The   4@d   here is Beta, because Clubs HAVE been mentioned as a possible
 It is, of course, a repeat Beta as the  2@c  response to  1NT  Beta  has already said that South has  0-2  controls.
 
 Because the  4@D  bid is  Beta,  it IMPLICITLY agree Spades as trumps.|
-pg| ***** 70 ***** |
+pg| ***** 72 ***** |
 
 
 sj|c|
-pg| ***** 71 ***** |
+pg| ***** 73 ***** |
 
 
 sj|c|
 mb|p|mb|4N|an|2 controls  Weak Scale|
 at|^^^^The  4NT  response uses the  Weak Scale  and shows  exactly 2 controls.|
-pg| ***** 72 ***** |
+pg| ***** 74 ***** |
 
 
 mb|p|mb|5C!|an|Epsilon  (in Clubs)|
-pg| ***** 73 ***** |
+pg| ***** 75 ***** |
 
 
 sj|c|
@@ -956,7 +954,7 @@ cp|red|at|^*bOliverC:^*n|cp||at|      (5@h)   As South is known to have  4 clubs
 which in turn means they MUST have the  K@H  and  K@D
 
 Only question mark here is the  Q@S.|
-pg| ***** 74 ***** |
+pg| ***** 76 ***** |
 
 
 sj|c|
@@ -964,34 +962,34 @@ mb|p|mb|6S|
 at|       You pay your money and make your choice :)
 
 Well done both of you.|
-pg| ***** 75 ***** |
+pg| ***** 77 ***** |
 
 
 nt|^z@3^b@2|at|^^|
 cp|red|at|^*bOliverC:^*n|cp||at|    One thing did crop up:      If we agree trumps naturally 
 
 (as here, even if only implicitly) and a High-level Beta is used then  Epsilons  ARE  available.|
-pg| ***** 76 ***** |
+pg| ***** 78 ***** |
 
 
 sj|c|
 mb|p|mb|p|mb|p|
-pg| ***** 77 ***** |
+pg| ***** 79 ***** |
 
 
 md|0SQJT2HKJDKT3CQT83,S854H954D852CJ962,SAK76HAT62DAQJCK4|
-pg| ***** 78 ***** |
+pg| ***** 80 ***** |
 
 
 pc|s5|
 pf|Y|
-pg| ***** 79 ***** |
+pg| ***** 81 ***** |
 
 
 md|1,,,|
 nt|^z@3^b@2|at|^^|
 at|  cleared|
-pg| ***** 80 ***** |
+pg| ***** 82 ***** |
 
 
 --------------------------------------------------------------------
@@ -1002,58 +1000,58 @@ md|4,SKJTHAJ965D9CKJ92,,SA52HKQT8DA4CAQ53|
 mb|?|
 nt|^z@3^b@2|at|^^|
 cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2 |
-pg| ***** 81 ***** |
+pg| ***** 83 ***** |
 
 
 mb|1C|an|16+ Any dist except 16-23 4441|
-pg| ***** 82 ***** |
+pg| ***** 84 ***** |
 
 
 sj|c|
 mb|p|mb|1H|an|8+ hcp,  5+ @H, GF|
-pg| ***** 83 ***** |
+pg| ***** 85 ***** |
 
 
 sj|c|
 mb|p|mb|1N|an|Beta (Low-level)  Response in Weak Scale if passed hand|
 at|       So Low-level Beta here,   using the NORMAL scale|
-pg| ***** 84 ***** |
+pg| ***** 86 ***** |
 
 
 sj|c|
 mb|p|mb|2H|an|4 Controls|
-pg| ***** 85 ***** |
+pg| ***** 87 ***** |
 
 
 sj|c|
 mb|p|mb|3H|an|Gamma  (asking about @H's)   Trunp Asking Bid|
 at|^^^^ (3@H)  Just using Gamma means that Hearts are agreed and Epsilons are the ONLY Asking Bid left open to us.|
-pg| ***** 86 ***** |
-
-
-sj|c|
-mb|p|mb|3N|an|one top honour  (Hxxxx @h's)|
-pg| ***** 87 ***** |
-
-
-sj|c|
-mb|p|mb|4C|an|Epsilon  (in Clubs)|
 pg| ***** 88 ***** |
 
 
 sj|c|
-mb|p|mb|4S|an|2nd rnd ctrl    x, Kxx(x) or K |
+mb|p|mb|3N|an|one top honour  (Hxxxx @h's)|
 pg| ***** 89 ***** |
 
 
 sj|c|
-mb|p|mb|5D|an|Espilon  (in diamonds)|
+mb|p|mb|4C|an|Epsilon  (in Clubs)|
 pg| ***** 90 ***** |
 
 
 sj|c|
-mb|p|mb|5N|an|2nd rnd ctrl    x, Kxx(x) or K|
+mb|p|mb|4S|an|2nd rnd ctrl    x, Kxx(x) or K |
 pg| ***** 91 ***** |
+
+
+sj|c|
+mb|p|mb|5D|an|Espilon  (in diamonds)|
+pg| ***** 92 ***** |
+
+
+sj|c|
+mb|p|mb|5N|an|2nd rnd ctrl    x, Kxx(x) or K|
+pg| ***** 93 ***** |
 
 
 sj|c|
@@ -1064,26 +1062,26 @@ mb|p|mb|?|
 at|^^At this point East should be thinking along the following lines.
 
 West has Axxxx in @h's and 2nd rnd ctrl in both Minors  AND  one of the  2nd round controls  ^*bcould^*n  be a shortage.|
-pg| ***** 92 ***** |
+pg| ***** 94 ***** |
 
 
 sk||
 mb|6H|
-pg| ***** 93 ***** |
+pg| ***** 95 ***** |
 
 
 sj|c|
 mb|p|mb|p|mb|p|
-pg| ***** 94 ***** |
+pg| ***** 96 ***** |
 
 
 md|0SQ96H432DK632CT84,SKJTHAJ965D9CKJ92,S8743H7DQJT875C76|
-pg| ***** 95 ***** |
+pg| ***** 97 ***** |
 
 
 pc|dQ|
 pf|Y|
-pg| ***** 96 ***** |
+pg| ***** 98 ***** |
 
 
 sk|e|sk||
@@ -1096,67 +1094,67 @@ But the trick here is to reach 7@C.
 The best sequence goes like this  -   (same up to 4@s)|
 
 mb|1C|an|16+ Any dist except 16-23 4441|
-pg| ***** 97 ***** |
-
-
-sj|c|
-mb|p|mb|1H|an|8+ hcp,  5+ @H, GF|
-pg| ***** 98 ***** |
-
-
-sj|c|
-mb|p|mb|1N|an|Beta (Low-level)  Response in Weak Scale if passed hand|
 pg| ***** 99 ***** |
 
 
 sj|c|
-mb|p|mb|2H|an|4 Controls|
+mb|p|mb|1H|an|8+ hcp,  5+ @H, GF|
 pg| ***** 100 ***** |
 
 
 sj|c|
-mb|p|mb|3H|an|Gamma  (asking about @H's)   Trump Asking Bid|
+mb|p|mb|1N|an|Beta (Low-level)  Response in Weak Scale if passed hand|
 pg| ***** 101 ***** |
 
 
 sj|c|
-mb|p|mb|3N|an|one top honour  (Hxxxx @h's)|
+mb|p|mb|2H|an|4 Controls|
 pg| ***** 102 ***** |
 
 
 sj|c|
-mb|p|mb|4C|an|Epsilon  (in clubs)|
+mb|p|mb|3H|an|Gamma  (asking about @H's)   Trump Asking Bid|
 pg| ***** 103 ***** |
 
 
 sj|c|
-mb|p|mb|4S|an|2nd rnd ctrl    x, Kxx(x) or K |
+mb|p|mb|3N|an|one top honour  (Hxxxx @h's)|
 pg| ***** 104 ***** |
 
 
 sj|c|
-mb|p|mb|5C|an|Repeat Espilon  (in clubs)|
+mb|p|mb|4C|an|Epsilon  (in clubs)|
 pg| ***** 105 ***** |
 
 
 sj|c|
-mb|p|mb|6c|an|HJxx(x)|
+mb|p|mb|4S|an|2nd rnd ctrl    x, Kxx(x) or K |
 pg| ***** 106 ***** |
 
 
 sj|c|
-mb|p|mb|6D|an|Epsilon  (in diamonds)|
+mb|p|mb|5C|an|Repeat Espilon  (in clubs)|
 pg| ***** 107 ***** |
 
 
 sj|c|
-mb|p|mb|6NT|an|2nd rnd ctrl    x, Kxx(x) or K|
+mb|p|mb|6c|an|HJxx(x)|
 pg| ***** 108 ***** |
 
 
 sj|c|
-mb|p|mb|7C|
+mb|p|mb|6D|an|Epsilon  (in diamonds)|
 pg| ***** 109 ***** |
+
+
+sj|c|
+mb|p|mb|6NT|an|2nd rnd ctrl    x, Kxx(x) or K|
+pg| ***** 110 ***** |
+
+
+sj|c|
+mb|p|mb|7C|
+pg| ***** 111 ***** |
 
 
 nt|^z@3^b@2|at|^^|
@@ -1165,25 +1163,25 @@ cp|red|at|^*bOliverC:^*n|cp||at|   7@C is the ONLY grand slam guaranteed to make
 Spade loser goes on the 5th Heart.
 
 Some will be in 7@H, half of them going off if they get the @S finesse wrong.|
-pg| ***** 110 ***** |
+pg| ***** 112 ***** |
 
 
 nt|^z@3^b@2|at|^^|
 cp|red|at|^*bOliverC:^*n|cp||at|   The thing here is that once West shows up with KJxx in Clubs and 2nd - round control of Diamonds, East needs to have the "vision" that West MIGHT have  @DKxx,  in which case  7@H  is fine, but they MIGHT have a singleton Diamond, in which case  7@C  is much safer than  7@H
 
 That's a really valuable lesson in the kinds of thought processes you have to go through to really make the most of Asking Bids.|
-pg| ***** 111 ***** |
+pg| ***** 113 ***** |
 
 
 sj|c|
 mb|p|mb|p|mb|p|
 md|0SQ96H432DK632CT84,SKJTHAJ965D9CKJ92,S8743H7DQJT875C76|
-pg| ***** 112 ***** |
+pg| ***** 114 ***** |
 
 
 pc|c4|
 pf|Y|
-pg| ***** 113 ***** |
+pg| ***** 115 ***** |
 
 
 nt|^z@3^b@2|at|^^|
@@ -1193,13 +1191,13 @@ at|^*bMM:^*n      As well as the button sequence given at the bottom you can    
 click on the  { ^*bShuff Op^*n }  button and so   study / play   the hand against different layouts of the Opps cards.
 
 |
-pg| ***** 114 ***** |
+pg| ***** 116 ***** |
 
 
 md|1,,,|
 nt|^z@3^b@2|at|^^|
 at|  cleared|
-pg| ***** 115 ***** |
+pg| ***** 117 ***** |
 
 
 --------------------------------------------------------------------
@@ -1210,32 +1208,32 @@ md|1SQ84HTDAKJT2CAQJT,,SAKJ953HA54DQ9CK6,|
 mb|?|
 nt|^z@3^b@2|at|^^|
 cp|red|at|^*bOliverC:^*n|cp||at|  Practice 3      |
-pg| ***** 116 ***** |
+pg| ***** 118 ***** |
 
 
 mb|1C|an|16+ hcp,   any distribution except   (16-23)  4441|
-pg| ***** 117 ***** |
+pg| ***** 119 ***** |
 
 
 sj|c|
 mb|p|mb|1N|an|8+ hcp, with 5+ @sSPADE's@s, GF|
-pg| ***** 118 ***** |
+pg| ***** 120 ***** |
 
 
 sj|c|
 mb|p|mb|2S|an|Gamma   Trump Ask in  @S's|
-pg| ***** 119 ***** |
+pg| ***** 121 ***** |
 
 
 sj|c|
 mb|p|mb|3S|an|Two Top Honours  +  1 more spade than promised|
 at|(3@S)    Raise of the Gamma suit shows  HHxxxx  in the suit  (worth remembering)|
-pg| ***** 120 ***** |
+pg| ***** 122 ***** |
 
 
 sj|c|
 mb|p|mb|3N|an|Beta   (Relay Beta)|
-pg| ***** 121 ***** |
+pg| ***** 123 ***** |
 
 
 sj|c|
@@ -1243,27 +1241,27 @@ mb|p|mb|4N|an|6 controls   (Normal Scale)|
 at|^^^^(4NT)   6 Controls  -  Normal Scale,   remember North has  ^*bNOT^*n  opened  1@C  (South did).
 
 This has to be    AAKK    so the partnership are just missing one King.|
-pg| ***** 122 ***** |
-
-
-sj|c|
-mb|p|mb|5D|an|Epsilon  (in diamonds)|
-pg| ***** 123 ***** |
-
-
-sj|c|
-mb|p|mb|5S|an|3rd rnd ctl    xx, Qxx(x) or Qx|
 pg| ***** 124 ***** |
 
 
 sj|c|
-mb|p|mb|6C|an|Epsilon  (in clubs)|
+mb|p|mb|5D|an|Epsilon  (in diamonds)|
 pg| ***** 125 ***** |
 
 
 sj|c|
-mb|p|mb|6S|an|2nd rnd ctrl    x, Kxx(x) or K|
+mb|p|mb|5S|an|3rd rnd ctl    xx, Qxx(x) or Qx|
 pg| ***** 126 ***** |
+
+
+sj|c|
+mb|p|mb|6C|an|Epsilon  (in clubs)|
+pg| ***** 127 ***** |
+
+
+sj|c|
+mb|p|mb|6S|an|2nd rnd ctrl    x, Kxx(x) or K|
+pg| ***** 128 ***** |
 
 
 sj|c|
@@ -1274,24 +1272,24 @@ cp|red|at|^*bOliverC:^*n|cp||at|   You were right to ask about the clubs first, 
 If North has the  AK@H  and  @Cxxx   then  7  of anything is off the books,  but if they have the K@C, then 7NT is cold whatever their holding in the red suits.
 
 Well done|
-pg| ***** 127 ***** |
+pg| ***** 129 ***** |
 
 
 sj|c|
 mb|p|mb|p|mb|p|
 md|0SQ84HTDAKJT2CAQJT,ST7HK732D754C9853,SAKJ953HA54DQ9CK6|
-pg| ***** 128 ***** |
+pg| ***** 130 ***** |
 
 
 pf|Y|
 pc|hQ|
-pg| ***** 129 ***** |
+pg| ***** 131 ***** |
 
 
 md|1,,,|
 nt|^z@3^b@2|at|^^|
 at|  cleared|
-pg| ***** 130 ***** |
+pg| ***** 132 ***** |
 
 
 --------------------------------------------------------------------
@@ -1302,71 +1300,71 @@ md|2,SA95HKJ852DACAT32,,S63HQ974DKJT3CKQJ|
 mb|?|
 nt|^z@3^b@2|at|^^|
 cp|red|at|^*bOliverC:^*n|cp||at|  Practice 4      |
-pg| ***** 131 ***** |
-
-
-mb|1C|an|16+ Any dist except 16-23 4441|
-pg| ***** 132 ***** |
-
-
-sj|c|
-mb|p|mb|1S|an|8+ BALANCED or semi-bal with 5-minor, GF|
 pg| ***** 133 ***** |
 
 
-sj|c|
-mb|p|mb|1N|an|Beta  (low Level)|
+mb|1C|an|16+ Any dist except 16-23 4441|
 pg| ***** 134 ***** |
 
 
 sj|c|
-mb|p|mb|2C|an|0-2 Controls|
+mb|p|mb|1S|an|8+ BALANCED or semi-bal with 5-minor, GF|
 pg| ***** 135 ***** |
 
 
 sj|c|
-mb|p|mb|2H|an|Iota   Asking about @H|
+mb|p|mb|1N|an|Beta  (low Level)|
 pg| ***** 136 ***** |
+
+
+sj|c|
+mb|p|mb|2C|an|0-2 Controls|
+pg| ***** 137 ***** |
+
+
+sj|c|
+mb|p|mb|2H|an|Iota   Asking about @H|
+pg| ***** 138 ***** |
 
 
 sj|c|
 mb|p|mb|3H!|an|HHx or Hxxx in @H|
 at|   (3@H)   shows HHx or Hxxx in @H  and Hearts are now agreed as trumps.  |
-pg| ***** 137 ***** |
+pg| ***** 139 ***** |
 
 
 sj|c|
 mb|p|mb|3S|an|Relay Beta|
 at|^^^^This is more to demonstrate the bid not much point in actually asking here.  Of course if I knew East was very distributional...|
-pg| ***** 138 ***** |
+pg| ***** 140 ***** |
 
 
 sj|c|
 mb|p|mb|4D!|an|2 controls  (weak scale)|
-pg| ***** 139 ***** |
+pg| ***** 141 ***** |
 
 
 sj|c|
 mb|p|mb|4H|an|to play|
-pg| ***** 140 ***** |
+pg| ***** 142 ***** |
 
 
 sj|c|
 mb|p|mb|p|mb|p|
 sk||
 md|0SKT74D98762C9764,SA95HKJ852DACAT32,SQJ82HAT63DQ54C85|
-pg| ***** 141 ***** |
+pg| ***** 143 ***** |
 
 
 pf|Y|
 pc|sQ|
-pg| ***** 142 ***** |
+pg| ***** 144 ***** |
 
 
 md|1,,,|
 nt|^z@3^b@2|at|^^|
 at|  cleared|
-pg| ***** 143 ***** |
+pg| ***** 145 ***** |
 
 
 --------------------------------------------------------------------
@@ -1377,60 +1375,60 @@ md|3S5HAK3DAQJT2CQJ62,,SKQJ932HJD6CAK975,|
 mb|?|
 nt|^z@3^b@2|at|^^|
 cp|red|at|^*bOliverC:^*n|cp||at|  Practice 5      ok, one last hand       |
-pg| ***** 144 ***** |
+pg| ***** 146 ***** |
 
 
 at|   Arguably, North's hand is worth a 1@C Opening
 ^^But if 1@S, then they're DEFINITELY worth a 3@C rebid over 1NT   so best sequence here is -|
 mb|1S|an|11-15 hcp, 5+ Spades|
-pg| ***** 145 ***** |
-
-
-sj|c|
-mb|p|mb|1N|an|1 round force|
-pg| ***** 146 ***** |
-
-
-sj|c|
-mb|p|mb|3C|an|Max and club suit|
 pg| ***** 147 ***** |
 
 
 sj|c|
-mb|p|mb|3H|an|Gamma in @C|
+mb|p|mb|1N|an|1 round force|
 pg| ***** 148 ***** |
 
 
 sj|c|
-mb|p|mb|4C|an|HHxxx or HHHxx  in @C|
+mb|p|mb|3C|an|Max and club suit|
 pg| ***** 149 ***** |
 
 
 sj|c|
-mb|p|mb|4D|an|Relay Beta|
+mb|p|mb|3H|an|Gamma in @C|
 pg| ***** 150 ***** |
 
 
 sj|c|
-mb|p|mb|4N|an|4 Controls|
+mb|p|mb|4C|an|HHxxx or HHHxx  in @C|
 pg| ***** 151 ***** |
 
 
 sj|c|
-mb|p|mb|6C|
+mb|p|mb|4D|an|Relay Beta|
 pg| ***** 152 ***** |
+
+
+sj|c|
+mb|p|mb|4N|an|4 Controls|
+pg| ***** 153 ***** |
+
+
+sj|c|
+mb|p|mb|6C|
+pg| ***** 154 ***** |
 
 
 sj|c|
 mb|p|mb|p|mb|p|
 sk||
 md|0S5HAK3DAQJT2CQJ62,SAT84HT965DK83C84,SKQJ932HJD6CAK975|
-pg| ***** 153 ***** |
+pg| ***** 155 ***** |
 
 
 pf|Y|
 pc|cT|
-pg| ***** 154 ***** |
+pg| ***** 156 ***** |
 
 
 Goodbyes--------------------------------------------------------------------

@@ -192,7 +192,7 @@ public class Z_ddsCalculate {
 
 		ComRogerpfAabridgeDdsLibrary dds = ComRogerpfAabridgeDdsLibrary.INSTANCE;
 
-		Hand abHand = abDeal.getNextHandToPlay();
+		Hand abHand = abDeal.getNextHandToAct();
 
 		if (abHand == null)
 			return null;
@@ -279,15 +279,7 @@ public class Z_ddsCalculate {
 
 		ComRogerpfAabridgeDdsLibrary dds = ComRogerpfAabridgeDdsLibrary.INSTANCE;
 
-		Hand abHand = abDeal.getNextHandToPlay();
-
 		Z_bothResults rtn = new Z_bothResults();
-
-		if (abHand == null) {
-			rtn.resp = 99;
-			rtn.errStr = "99 - No Valid player found in deal - getNextHandToPlay() !";
-			return rtn;
-		}
 
 		ddTableDeal.ByValue tableDl = new ddTableDeal.ByValue();
 
@@ -305,7 +297,7 @@ public class Z_ddsCalculate {
 			return rtn;
 		}
 
-		rtn.resp = dds.DealerParBin(rtn.ddTableRes, rtn.parResMaster, abDeal.getDdsVulnerability(), abDeal.contractCompass.v);
+		rtn.resp = dds.DealerParBin(rtn.ddTableRes, rtn.parResMaster, abDeal.contractCompass.v, abDeal.getDdsVulnerability()); // bug fix 2826
 
 		if (rtn.resp != 1) { // should not happen
 			rtn.errStr = rtn.resp + ""; // Error string lookup may be added

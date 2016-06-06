@@ -1,0 +1,214 @@
+%%
+%%
+%% <--SECT_HEAD-->=6.                                    An  Easy  5@c's   
+%%
+%%
+%%  Date last Edited    2016-05-29          set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+
+fh|t40|                    Font   t  t-title      section titles within chapters
+fh|b50|                    Font   b  b-bigTitle
+
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor     on Title Pages
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Roger's Xtras        Interesting Hands           2016 ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b6.                                    An  Easy  5@c's   ^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+
+Lg|f|
+fp|4|at|^c@2^z@3|
+at|
+I was kibbing a random table when this hand came up.  Declarer (South) had three different partners while this hand was bid.  But whatever the reason, he managed to go 1 down.  
+
+His recently arrived partner then apologized for sacrificing saying he felt the Opps would make their 4@s.
+
+What no one noticed was that declarer had managed to go down in a stone cold  DOUBLED  contract.
+
+Let's see how  YOU  do.
+|
+
+fp||ht|x|at|^b@2@1|at|
+^*b^dClick^*n       |fp|t|cp||at|{ ^*bFlow > ^*n }|fp||cp||at|      then  use your   ^*bMouse Wheel^*n   (if you have one)|
+ht|z|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+
+%%
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2876|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2876 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+qx|# 6|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+bv|a,h|
+rh||ah|Hand 4|
+md|1SA2HKT9DKJ87CQ854,SJ83HAJ542DQ965C2,S6H63DAT42CAKJT76,SKQT9754HQ87D3C93|
+sv|E|sk|S|
+mb|?|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bHand 6^*n     The hand|
+pg| ***** 1 ***** |
+
+
+at|,      the bidding|
+mb|1C|mb|p|mb|3C|mb|3S|mb|4C|mb|4S|mb|5C|mb|p|mb|p|mb|d|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+at|,     the lead.|
+pc|sJ|
+eb|y|
+pg| ***** 3 ***** |
+
+
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|Do your thinking  NOW.|
+pg| ***** 4 ***** |
+
+
+at|           Have you worked it all through ?|
+pg| ***** 5 ***** |
+
+
+qx|Try,wide|
+eb|y|
+bv|f,v|
+n#|7|
+at|^^ |cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the analysis.|
+pf|f|
+pg| ***** 6 ***** |
+
+
+---------------------------------------------------------------------------
+bv|f,h|
+nt|^z@3^b@2^^|
+Lg|f|
+n^|5|
+at|^*bTime for some Questions^*n|
+n#|5|
+at|^^Are we in a good contract ?      Will others be playing here ?     Which hand should we pick as the Master hand ?    How many losers do we have ?    You know the drill.|    
+pg| ***** 7 ***** |
+
+
+n#|7|
+at|^^Your most recent partner may have bid  5@c's  as a sacrifice but you are very likely to have 4 defensive tricks against 4@s (count 'em).    4@s's  is down, giving most N-S's a positive score.    So us going down would be a disaster.  |
+pg| ***** 8 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^b@2^^|
+Lg|f|
+n^|5|
+at|North is clearly the Master hand (long trumps).  We have  3  losers    0@s    2@h(1f, 1s)     1@d(s)    0@c
+We only need to dump 1 loser.  Some options are -
+^c@2@.  lead low to the @hK,    ^n OR                         
+@.  finesse against the @dQ one way  ^*bor^*n  the other     ^n OR
+@.  play for the against the odds drop of the @dQ    ^n OR
+@.  anything else ?| 
+pg| ***** 9 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Ans,wide|
+eb||
+nt|^z@3^b@2^^|
+n^|5|
+Lg|f|
+at|^*bAnswer^*n^^|
+n^|5|at|^^ |cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the answer.|
+pf|f|
+pg| ***** 10 ***** |
+
+
+---------------------------------------------------------------------------
+bv|f,h|
+nt|^z@3^b@2^^|
+n^|5|
+Lg|k|
+at|Of course there is a better approach (or I would not be writing this)      Did you spot it ?       100% certain to make.|
+fp|t-tile|at|^^Strip and Throw-in|fp||
+n#|2|
+at|^^ Three (or as needed) rounds of trumps  ending in your hand (the short trump hand), lead the  @s2  ruff in dummy, so stripping both hands of @s's, and lead a low @h,  cover  WHATEVER  East plays.|
+pg| ***** 11 ***** |
+
+
+pc|s6|pc|s4|pc|sA|
+pg| ***** 12 ***** |
+
+
+pc|c4|pc|c2|pc|cA|pc|c3|
+pg| ***** 13 ***** |
+
+
+pc|cK|pc|c9|pc|c5|pc|h2|
+pg| ***** 14 ***** |
+
+
+pc|c6|pc|d3|pc|cQ|pc|h4|
+pg| ***** 15 ***** |
+
+
+pc|s2|pc|s3|pc|cJ|pc|s5|
+pg| ***** 16 ***** |
+
+
+pc|h6|pc|h7|
+pg| ***** 17 ***** |
+
+
+sk|| 
+qx|DD,wide|
+bv|a,v|
+nt|^z@3^b@2^^|
+n^|5|
+Lg|k|
+at|You can play out the rest of the hand.    You can always click  { ^*b Cont ^*n }  then click  { ^*b Edit ^*n }  and make East play the @hQ instead.   Or when in  Edit mode, move cards from  East to West.|
+n#|5|
+at|^^And there is always the   { ^*b Shuf Op ^*n }   button.|
+pf|c|
+pg| ***** 18 ***** |
+
+

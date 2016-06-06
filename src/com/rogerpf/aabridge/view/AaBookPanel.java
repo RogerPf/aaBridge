@@ -47,7 +47,7 @@ public class AaBookPanel extends JPanel {
 	// ---------------------------------- CLASS -------------------------------------
 	private static final long serialVersionUID = 1L;
 
-	public static int defaultWidthPixels = App.onMac ? 160 : 120;
+	public static int defaultWidthPixels = App.onMacOrLinux ? 160 : 120;
 
 	public AaBookPanelInner aaBookPanelInner;
 
@@ -160,7 +160,7 @@ class AaBookPanelInner extends ClickPanel {
 
 			if (change) {
 				// System.out.println(" file change detected ");
-				int prev_end = (App.mg.lin.linType == Lin.FullMovie) ? App.mg.get_current_pg_number_display() : -1;
+				int prev_end = (App.mg.lin.linType == Lin.FullMovie || App.mg.lin.linType == Lin.Other) ? App.mg.get_current_pg_number_display() : -1;
 				App.book.loadChapterByIndex(0);
 				if (prev_end > 0)
 					App.mg.jump_to_pg_number_display(prev_end);

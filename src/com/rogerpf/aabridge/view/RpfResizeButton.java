@@ -10,6 +10,7 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.view;
 
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -19,6 +20,7 @@ import java.awt.Graphics2D;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.geom.Rectangle2D;
 
 import javax.swing.JButton;
 import javax.swing.KeyStroke;
@@ -243,8 +245,20 @@ public class RpfResizeButton extends JButton implements MouseListener {
 		Graphics2D g2 = (Graphics2D) g.create();
 		Aaa.commonGraphicsSettings(g2);
 
-		if (current_type == Aaa.s_Label || current_type == Aaa.m_Label || current_type == Aaa.s_SelfLabel || current_type == Aaa.m_Hidden) {
-			g2.setColor(Aaa.baizeGreen);
+		if (current_type == Aaa.s_Label || current_type == Aaa.s_SelfLabel || current_type == Aaa.m_Hidden) {
+//			g2.setColor(Aaa.baizeGreen);
+		}
+		else if (current_type == Aaa.m_Label) {
+			// g2.setColor(Aaa.darkGrayBg);
+			int w = getWidth();
+			int h = getHeight();
+
+			float lw = (float) h * 0.05f;
+			Rectangle2D.Float rec = new Rectangle2D.Float(lw / 2, lw / 2, (float) w - lw, (float) h - lw);
+			g2.setStroke(new BasicStroke(lw));
+//			g2.setColor(Color.BLACK);
+			g2.setColor(Aaa.mButtonOutlineCol);
+			g2.draw(rec);
 		}
 		else {
 			if (pressed)
@@ -255,7 +269,6 @@ public class RpfResizeButton extends JButton implements MouseListener {
 				g2.setColor(bgColor);
 
 			g2.fillRect(0, 0, getWidth(), getHeight());
-
 		}
 
 		if (current_type == Aaa.m_Hidden)

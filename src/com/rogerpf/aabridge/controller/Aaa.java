@@ -102,9 +102,11 @@ public class Aaa {
 	public static final Color		strongHoverColor	= new Color(255, 210, 0);
 
 	public static final Color		weedyBlack			= new Color(110, 110, 110);
+	public static final Color		veryWeedyBlacHid	= new Color(180, 180, 180);
 	public static final Color		veryWeedyBlack		= new Color(200, 200, 200);
 	public static final Color		hoverButFontCol     = new Color( 80,  80,  80);
 	public static final Color		selectedButFontCol  = new Color( 60,  60,  60);
+	public static final Color		mButtonOutlineCol   = new Color( 40,  40,  40);
 	public static final Color		veryVeryWeedyYel	= new Color(215, 200, 130);
 	public static final Color		bidRequestLine		= new Color(255, 110, 255);
 
@@ -121,7 +123,8 @@ public class Aaa {
 	public static final Color		handAreaOffWhite	= new Color(245, 240, 240);
 	public static final Color		handBkColorStd		= new Color(235, 230, 230);
 
-	public static final Color		handBkColorDummy	= new Color(212, 207, 207);
+	public static final Color		handBkColorDummy	= new Color(208, 202, 202);
+// 	public static final Color		handBkColorDummy	= new Color(212, 207, 207);
 	public static final Color		vunOffWhite			= new Color(245, 245, 245);
 	public static final Color		youSeatBannerBk		= new Color(255, 226, 226);
 	public static final Color		othersBannerBk		= new Color(235, 233, 233);
@@ -480,4 +483,8 @@ public class Aaa {
 
 		return s;
 	}
+
+
+
+
 }

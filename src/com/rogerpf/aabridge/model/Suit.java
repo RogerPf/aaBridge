@@ -28,6 +28,10 @@ public enum Suit {
 		return (v == 4) ? 4 : 3 - v;
 	}
 
+	public Suit suitBelow() {
+		return suitFromInt((v == 0) ? 3 : v - 1);
+	}
+
 	public static Suit suitFromInt(int value) {
 		return instAy[value & 0x0f];
 	}

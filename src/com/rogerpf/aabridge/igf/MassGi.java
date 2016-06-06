@@ -385,7 +385,7 @@ public class MassGi {
 		HandDisplayGrid hdg = null;
 		BidTablePanel btp = null;
 
-		Capture_gi_env capEnv;
+		public Capture_gi_env capEnv;
 
 		public String toString() {
 			// ==========================
@@ -488,6 +488,21 @@ public class MassGi {
 			numb = numb_in;
 
 			commonBit();
+		}
+
+		public int get_CapEnv__bv_etd() {
+			// ==============================================================================================
+			return capEnv.bv_etd;
+		}
+
+		public int get_CapEnv__bv_1st() {
+			// ==============================================================================================
+			return capEnv.bv_1st;
+		}
+
+		public int get_CapEnv__bv_cont() {
+			// ==============================================================================================
+			return capEnv.bv_cont;
 		}
 
 	}
@@ -868,8 +883,10 @@ public class MassGi {
 				bb.add("thin");
 		}
 
-		if (lin.linType != Lin.VuGraph)
+		if (lin.linType != Lin.VuGraph) {
+			App.deal.qx_number = Aaa.extractPositiveIntOrZero(gi.text);
 			return; // only Vugraph has "open" and "closed" rooms
+		}
 
 		// Open closed room assistance follows
 
@@ -1326,7 +1343,11 @@ public class MassGi {
 																	// has 52 cards */
 
 		if (App.mg.lin.linType == Lin.VuGraph) {
-			App.deal.youSeatHint = App.youSeatHint;
+			if (App.forceYouSeatToSouthZone) {
+				App.deal.youSeatHint = Dir.directionFromInt(App.compassAllTwister).rotate(Dir.South);
+			}
+			else
+				App.deal.youSeatHint = App.youSeatHint;
 		}
 
 		if (stop_gi != end_pg) {
@@ -1356,6 +1377,15 @@ public class MassGi {
 		App.frame.repaint();
 
 		// System.out.println("Set Read Points - gi indexes - start, prev, stop = " + start_nt + "  " + middle_pg + " " + stop_gi);
+	}
+
+	/**
+	 */
+	public Capture_gi_env getStopCapEnv() {
+		// =============================================================================
+		GraInfo gi = giAy.get(stop_gi);
+
+		return gi.capEnv;
 	}
 
 	/**
@@ -1447,7 +1477,7 @@ public class MassGi {
 		if (xx_next_at_command) {
 			xx_next_at_command = false;
 			bb.qt = q_.xx;
-			bb.type = "qx";
+			bb.type = "xx";
 			return;
 		}
 		capEnv.reset_for_nt();
@@ -1467,7 +1497,7 @@ public class MassGi {
 		if (xx_next_at_command) {
 			xx_next_at_command = false;
 			bb.qt = q_.xx;
-			bb.type = "qx";
+			bb.type = "xx";
 			return;
 		}
 
@@ -1950,6 +1980,10 @@ public class MassGi {
 		else {
 			gi.deal = prev_clone;
 		}
+
+		pc_autoClear__buildTime__tc_suppress_pc_display = false;
+		buildTime__tc_suppress_pc_display = false;
+		App.deal.tc_suppress_pc_display = false;
 	}
 
 	/**
@@ -1958,19 +1992,6 @@ public class MassGi {
 		// =============================================================================
 		App.deal.changed = true;
 		App.deal.undoLastBids_ignoreTooMany(Aaa.parseIntWithFallback(bb.get(0), 1));
-		new GraInfo(bb);
-	}
-
-	/**
-	 */
-	public void pdl__up(BarBlock bb) { // undo (last) play(s)
-		// =============================================================================
-		App.deal.changed = true;
-		App.deal.undoLastPlays_ignoreTooMany(Aaa.parseIntWithFallback(bb.get(0), 1));
-		App.deal.endedWithClaim = false;
-		App.deal.tricksClaimed = 0;
-		App.deal.tc_suppress_pc_display = true;
-		pc_autoClear__buildTime__tc_suppress_pc_display = true;
 		new GraInfo(bb);
 	}
 
@@ -1988,14 +2009,59 @@ public class MassGi {
 
 	/**
 	 */
-	public void pdl__rc(BarBlock bb) { // Remove Card
+	public void pdl__rc(BarBlock bb) { // Remove Cards
 		// =============================================================================
 		App.deal.changed = true;
 		App.deal.endedWithClaim = false;
 		App.deal.eb_blocker = false;
 
 		App.deal.removeCards(bb);
-		new GraInfo(bb);
+
+		GraInfo gi = new GraInfo(bb);
+
+		// added feb 2016 umm - so rc now works in same 'pg' as an md|0...|
+		prev_clone = App.deal;
+		gi.deal = App.deal;
+		App.deal = gi.deal.deepClone();
+		App.deal.localId = Deal.idCounter.getAndIncrement();
+	}
+
+	/**
+	 */
+	public void pdl__bv(BarBlock bb) { // button vivibility
+		// =============================================================================
+		char btn = ((bb.get(0) + "-").toLowerCase()).charAt(0);
+
+		int state = 2;
+		if (bb.size() > 1) {
+			char c = ((bb.get(1) + "-").toLowerCase()).charAt(0);
+			if (c == 'h')
+				state = 0;
+			if (c == 'v')
+				state = 1;
+		}
+
+		if /* */(btn == 'e') {
+			MassGi.this.capEnv.bv_etd = state;
+		}
+		else if (btn == 'f') {
+			MassGi.this.capEnv.bv_1st = state;
+		}
+		else if (btn == 'c') {
+			MassGi.this.capEnv.bv_cont = state;
+		}
+		else if (btn == 'a') {
+			MassGi.this.capEnv.bv_etd = state;
+			MassGi.this.capEnv.bv_1st = state;
+			MassGi.this.capEnv.bv_cont = state;
+		}
+		else {
+			MassGi.this.capEnv.bv_etd = 2; // no override
+			MassGi.this.capEnv.bv_1st = 2; // no override
+			MassGi.this.capEnv.bv_cont = 2; // no override
+		}
+
+		// int x = 0;
 	}
 
 	/**
@@ -2045,11 +2111,18 @@ public class MassGi {
 		// System.out.println("p2 p2 p2 p2 p2 - eb  " + bb.getSafe(0) + " <");
 		char c = (bb.get(0) + ' ').toLowerCase().charAt(0);
 
-		App.deal.changed = true;
-		App.deal.eb_min_card = 0;
-		App.deal.eb_blocker = (c == 'y');
-		if (App.deal.eb_blocker) {
-			App.deal.eb_min_card = App.deal.countCardsPlayed();
+		if (c == 'c') {
+			// very special case
+			App.deal.forceDifferent++;
+		}
+		else {
+			// normal eb stuff
+			App.deal.changed = true;
+			App.deal.eb_min_card = 0;
+			App.deal.eb_blocker = (c == 'y');
+			if (App.deal.eb_blocker) {
+				App.deal.eb_min_card = App.deal.countCardsPlayed();
+			}
 		}
 	}
 
@@ -2221,10 +2294,14 @@ public class MassGi {
 		// =============================================================================
 		App.deal.changed = true;
 		App.deal.ahHeader = "";
+		App.deal.displayBoardId = "";
+		App.deal.signfBoardId = "";
 		new GraInfo(bb);
 	}
 
-	private final static String[] brdSignfAy = { "board", "brd", "hand", "deal", "example", "ex", "student", "stud", "practice", "prac", "teaching", "teach" };
+	private final static String[] brdSignfAy = { "board", "brd", "hand", "deal", "example", "ex", "student", "study", "stud", "practice", "practise", "prac",
+			"teaching", "teach", "numb", "number", "variation", "var", "end", "block", "set", "group", "case", "problem", "prob", "solution", "sol", "item",
+			"set", "body", "table", "open", "closed", "extra", "xtra" };
 
 	/**
 	 */
@@ -2384,20 +2461,6 @@ public class MassGi {
 
 	/**
 	 */
-	public void pdl__tc(BarBlock bb) { // c = suppress updates other eg. (r) restore?
-		// =============================================================================
-		char v = (bb.get(0) + 'r').toLowerCase().charAt(0); // so the default if empty is r
-		boolean old = buildTime__tc_suppress_pc_display;
-		buildTime__tc_suppress_pc_display = (v == 'c') || (v == 'y'); // c/y = conceal ? r = reveal ?
-
-		if ((old != /* new */buildTime__tc_suppress_pc_display == false)) {
-			App.deal.changed = true;
-		}
-
-	}
-
-	/**
-	 */
 	public void pdl__aa(BarBlock bb) { // c = suppress updates other eg. (r) restore?
 		// =============================================================================
 		char v = (bb.get(0) + 'n').toLowerCase().charAt(0); // so the default if empty is n
@@ -2407,6 +2470,38 @@ public class MassGi {
 		if ((old != /* new */autoAdd_missing_playedCards == false)) {
 			App.deal.changed = true;
 		}
+	}
+
+	/**
+	 */
+	public void pdl__up(BarBlock bb) { // undo (last) play(s)
+		// =============================================================================
+		App.deal.changed = true;
+		App.deal.undoLastPlays_ignoreTooMany(Aaa.parseIntWithFallback(bb.get(0), 1));
+		App.deal.endedWithClaim = false;
+		App.deal.tricksClaimed = 0;
+		App.deal.tc_suppress_pc_display = true;
+		pc_autoClear__buildTime__tc_suppress_pc_display = true;
+		new GraInfo(bb);
+	}
+
+	/**
+	 */
+	public void pdl__tc(BarBlock bb) { // c = suppress updates other eg. (r) restore?
+		// =============================================================================
+		char v = (bb.get(0) + 'r').toLowerCase().charAt(0); // so the default if empty is r
+
+		buildTime__tc_suppress_pc_display = ((v == 'c') || (v == 'y')); // c/y = conceal ? r = reveal ?
+
+		App.deal.changed = true;
+
+		if (buildTime__tc_suppress_pc_display == false) {
+			pc_autoClear__buildTime__tc_suppress_pc_display = true;
+		}
+//		else {
+//			pc_autoClear__buildTime__tc_suppress_pc_display = false;
+//		}
+
 	}
 
 	/**
@@ -2424,13 +2519,14 @@ public class MassGi {
 		// when neither the q or 3 are present in the hand
 		// we need to mimic this PC|d| plays the lowest diamond
 
-		App.deal.tc_suppress_pc_display = buildTime__tc_suppress_pc_display;
+//		App.deal.tc_suppress_pc_display = buildTime__tc_suppress_pc_display;
 		if (buildTime__tc_suppress_pc_display) { // so we need to stop the view time display
 			bb.type = "xx";
 			bb.qt = q_.xx;
 		}
 
 		if (pc_autoClear__buildTime__tc_suppress_pc_display) {
+			App.deal.tc_suppress_pc_display = buildTime__tc_suppress_pc_display;
 			pc_autoClear__buildTime__tc_suppress_pc_display = false;
 			buildTime__tc_suppress_pc_display = false;
 		}
@@ -2624,6 +2720,7 @@ public class MassGi {
 			if (t == q_.ih)  { pdl__ih(bb);                 	continue; }
 			if (t == q_.ia)  { pdl__ia(bb);                 	continue; }
 			if (t == q_.eb)  { pdl__eb(bb);                 	continue; }
+			if (t == q_.bv)  { pdl__bv(bb);                 	continue; } // button visibility 2874
 			if (t == q_.nD)  { pdl__nD(bb);                 	continue; } // nudge Down  n#
 			if (t == q_.nU)  { pdl__nU(bb);                 	continue; } // nudge Up    n^
 			if (t == q_.nL)  { pdl__nL(bb);                 	continue; } // nudge Left  n<

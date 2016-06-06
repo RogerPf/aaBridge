@@ -146,6 +146,7 @@ class Gather {
 	
 	boolean LHO_hasLedSuit 		;
 	boolean LHO_hasTrumps 		;
+	boolean RHO_hasTrumps 		;
 	
 	Hand    winnerSoFar			;
 	
@@ -258,6 +259,8 @@ class Gather {
 
 		LHO_hasLedSuit 	    = (cardLed == null) ? false : (LHO.frags[suitLed.v].size() > 0);
 		LHO_hasTrumps 		= (!noTrumps && ((LHO.frags[trumpSuit.v].size() > 0)));
+		
+		RHO_hasTrumps 		= (!noTrumps && ((RHO.frags[trumpSuit.v].size() > 0)));
 		
 		fragAnals  = new FragAnal[4];
 		ourBoth    = new Frag[4];

@@ -34,6 +34,9 @@ import java.util.StringTokenizer;
 import com.rogerpf.aabridge.controller.AaBridge;
 import com.rogerpf.aabridge.controller.Aaa;
 import com.rogerpf.aabridge.controller.App;
+import com.rogerpf.aabridge.controller.Book;
+import com.rogerpf.aabridge.controller.Book.LinChapter;
+import com.rogerpf.aabridge.controller.Bookshelf;
 import com.rogerpf.aabridge.controller.CmdHandler;
 import com.rogerpf.aabridge.controller.q_;
 import com.rogerpf.aabridge.igf.MassGi.GraInfo;
@@ -146,10 +149,15 @@ public class MassGi_utils {
 
 		/** We are in a tutorial mode and wish to examine the current App.deal	
 		 */
-		if (App.deal.isSaveable() == false)
-			return;
+//		if (App.deal.isSaveable() == false)
+//			return;
 
-		if (App.respectLinYou == false) { // full complex tutorials do their own thing
+		App.ddsScoreShow = false;
+
+		if (App.forceYouSeatToSouthZone) {
+			App.deal.youSeatHint = Dir.directionFromInt(App.compassAllTwister).rotate(Dir.South);
+		}
+		else if (App.respectLinYou == false) { // full complex tutorials do their own thing
 			App.deal.youSeatHint = App.deal.contractCompass.rotate(App.youSeatForLinDeal.rotate(Dir.South));
 		}
 
@@ -199,7 +207,7 @@ public class MassGi_utils {
 		/** We are in a tutorial mode and wish to examine the current App.deal
 		 *  First we do some safety checks	
 		 */
-		if (App.deal.isSaveable() == false)
+		if ((App.isLin__Single() == false) && (App.deal.isSaveable() == false))
 			return; /* the user needs to be on deal that can be entered */
 
 		MassGi mg = App.mg;
@@ -282,6 +290,62 @@ public class MassGi_utils {
 		do_tutorialIntoDealStd();
 
 		App.gbp.matchPanelsToDealState();
+
+	}
+
+	public static void do_tutorialIntoDealCont() {
+		// ==========================================================================
+		if (App.visualMode != App.Vm_DealAndTutorial)
+			return;
+
+		/** We are in a tutorial mode and wish to examine the current App.deal
+		 *  First we do some safety checks	
+		 */
+		if (App.deal.isSaveable() == false)
+			return; /* the user needs to be on deal that can be entered */
+
+		boolean old_fromPlay = App.reviewFromPlay; // save policy
+
+		App.reviewFromPlay = true;
+
+		do_tutorialIntoDealClever();
+
+		App.reviewTrick = 13;
+		App.reviewCard = 3;
+		CmdHandler.leftWingNormal();
+
+		App.setMode(Aaa.NORMAL_ACTIVE);
+		App.gbp.c1_1__tfdp.makeCardSuggestions();
+		App.gbp.matchPanelsToDealState();
+
+		App.reviewFromPlay = old_fromPlay; // restore policy
+
+		App.localShowHidden = false; // policy override - start hidden
+
+	}
+
+	public static void do_tutorialIntoDealB1st() {
+		// ==========================================================================
+		if (App.visualMode != App.Vm_DealAndTutorial)
+			return;
+
+		/** We are in a tutorial mode and wish to examine the current App.deal
+		 *  First we do some safety checks	
+		 */
+		if (App.deal.isSaveable() == false)
+			return; /* the user needs to be on deal that can be entered */
+
+		boolean old_fromPlay = App.reviewFromPlay; // save policy
+
+		App.reviewFromPlay = true;
+
+		do_tutorialIntoDealClever();
+
+		CmdHandler.leftWingNormal();
+
+		App.reviewFromPlay = old_fromPlay; // restore policy
+
+		App.localShowHidden = false; // policy override - start hidden
 
 	}
 
@@ -835,6 +899,24 @@ public class MassGi_utils {
 		}
 	}
 
+	public static String readLinFileFromWebsite(String linUrl) {
+		// =============================================================================
+
+		String filename = App.autoSavesPath + "downloaded_" + new Date().getTime() + ".lin";
+
+		try {
+			URL website = new URL(linUrl);
+			ReadableByteChannel rbc = Channels.newChannel(website.openStream());
+			FileOutputStream fos = new FileOutputStream(filename);
+			fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
+			fos.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+			return "";
+		}
+		return filename;
+	}
+
 	@SuppressWarnings("deprecation")
 	public static String createLinFileFromText(String in) {
 		// =============================================================================
@@ -886,7 +968,7 @@ public class MassGi_utils {
 
 		StringTokenizer st = new StringTokenizer(in, "&");
 
-		String s = "", w = "", n = "", e = "", auction = "", play = "";
+		String s = "", w = "", n = "", e = "", auction = "", play = ""; // ah_head = "";
 		int claim = -1, linDealer = 1; // = North(0) + 1
 
 		while (st.hasMoreTokens()) {
@@ -946,6 +1028,12 @@ public class MassGi_utils {
 			else if (type.contentEquals("c")) {
 				claim = Aaa.parseIntWithFallback(val, -1);
 			}
+			else if (type.contentEquals("i")) {
+				// ah_head = val; not used
+			}
+			else {
+				System.out.print("createLinFileFromText  unknown token:   " + type);
+			}
 		}
 
 		ArrayList<String> h = new ArrayList<String>();
@@ -958,6 +1046,17 @@ public class MassGi_utils {
 		deal.fillDealExternal(h, "yesFill");
 
 		deal.makeLinBid_RearAlert(auction);
+
+		/* strip any 'at' text out of the 'play' */
+
+		while (play.contains("{+")) {
+			int from = play.indexOf("{+");
+			int to = play.indexOf('}', from);
+			if (to < 0)
+				to = from + 1;
+			String front = play.substring(0, from);
+			play = front + play.substring(to + 1);
+		}
 
 		for (int i = 0; (i + 1) < play.length(); i += 2) {
 			String card = play.substring(i, i + 2);
@@ -1016,6 +1115,10 @@ class Capture_gi_env {
 	int page_numb_display;
 	String mn_text;
 
+	int bv_etd;
+	int bv_1st;
+	int bv_cont;
+
 	/**
 	 */
 	Capture_gi_env(Capture_gi_env o) { // 'Copy' Constructor
@@ -1049,6 +1152,10 @@ class Capture_gi_env {
 		page_numb_display = o.page_numb_display;
 
 		mn_text = o.mn_text;
+
+		bv_etd = o.bv_etd;
+		bv_1st = o.bv_1st;
+		bv_cont = o.bv_cont;
 	}
 
 	/**
@@ -1084,6 +1191,9 @@ class Capture_gi_env {
 		page_numb_display = 99999; // should not be used util set by pg of question
 		mn_text = "";
 
+		bv_etd = 2; // 2 => no override
+		bv_1st = 2; // 2 => no override
+		bv_cont = 2; // 2 => no override
 	}
 
 	/**
@@ -1291,23 +1401,64 @@ class Hyperlink_g_int extends Hyperlink {
 			return;
 		}
 
-		/** we need to look in other lin files in this book
-		 */
+		if (label.contains("::") == false) {
 
-		String sa[] = label.split(":");
-		if (sa.length < 2 || sa[1].isEmpty())
-			return;
+			/** we need to look in other lin files in *THIS*  book
+			 */
+			String sa[] = label.split(":");
+			if (sa.length < 2 || sa[1].isEmpty())
+				return;
 
-		label = sa[0];
-		String partName = sa[1];
+			label = sa[0];
+			String partName = sa[1];
 
-		if (App.book != null) {
-			boolean success = App.book.loadChapterByDisplayNamePart(partName);
-			if (success) {
-				jumpToQxLabel(label);
+			if (App.book != null) {
+				boolean success = App.book.loadChapterByDisplayNamePart(partName);
+				if (success) {
+					jumpToQxLabel(label);
+				}
 			}
 		}
 
+		else {
+
+			/** we need to look in other lin files in ALL the embedded books
+			 */
+			String sb[] = label.split("::");
+			if (sb.length < 2 || sb[1].isEmpty())
+				return;
+
+			String labelPlus = sb[0];
+			String partBookName = sb[1].toLowerCase();
+
+			/**  Cut again 
+			 **/
+
+			String sa[] = labelPlus.split(":");
+			if (sa.length < 2 || sa[1].isEmpty())
+				return;
+
+			label = sa[0];
+			String partName = sa[1];
+
+			LinChapter chapter = null;
+
+			if (partName.length() > 0) {
+				for (Bookshelf shelf : App.bookshelfArray) {
+					for (Book book : shelf) {
+						if (book.displayTitle.toLowerCase().contains(partBookName) == false)
+							continue;
+						chapter = book.getChapterByDisplayNamePart(partName);
+						if (chapter != null) {
+							chapter.loadWithShow("replaceBookPanel");
+							break;
+						}
+					}
+					if (chapter != null)
+						break;
+				}
+			}
+		}
 	}
 
 	private static boolean jumpToQxLabel(String label) {

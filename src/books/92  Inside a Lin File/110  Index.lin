@@ -33,10 +33,10 @@ ht|c|at|^b@2
 
 ^*g     :Hide Auction      ,ha  ^*n ^d|at|Hide  Auction     
 ^*g     :Table Conceal     ,tc eb ^*n|cp|9|at|@.^m|cp||at| ^d|at|Table Conceal,  |cp|5|at|E Blocker   |cp||at|    
+^*g   pf:Table Conceal     ,pf bv ^*n|cp|9|at|@.^m|cp||at| ^d|at|Double Dummy,  |cp|5|at|Btn Visibility   |cp||at|    
 
 ^*g     :Insert Hand       ,ih  ^*n ^d|at|Insert Hand       
 ^*g     :Insert Auction    ,ia  ^*n ^d|at|Insert Auction    
-^*g   pf:Table Conceal     ,pf  ^*n ^d|at|Double Dummy  
 
 ^*bxx^*n                            ^d|cp|5|at|Do Nothing   
 
@@ -107,7 +107,7 @@ ht|c|at|^b@2
 ^*g     :Symbols           ,@@<sym> ^*n ^v|at|Show Symbol   
      
 	 
-|cp|9|at|@.|cp||at| ^*b aaBridge ^*n |cp|9|at|^*b2814+^*n|cp||at|@1 change
+|cp|9|at|@.|cp||at| ^*b aaBridge ^*n |cp|9|at|^*b2874^*n|cp||at|@1 changes
      
 |cp|5|at|aaBridge Only Feature     |cp||at|     
 |                                                               

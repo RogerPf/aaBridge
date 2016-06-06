@@ -104,7 +104,10 @@ public class Lin {
 		@SuppressWarnings("unused")
 		int nt_count = 0;
 
-		if (bbAy.size() < 2) { // 2 is probably too low
+		if ((bbAy.size() >= 2) || ((bbAy.size() == 1) && (bbAy.get(0).qt == q_.md))) {
+			// we are good to go
+		}
+		else {
 			String s = "calcLinType - too few commands in lin file";
 			System.out.println(s);
 			throw new IOException(s);
@@ -147,62 +150,58 @@ public class Lin {
 		}
 	}
 
-	// @formatter:off
-	static final String pf_injector_text =
-			  "|fp||cp||cs||lg||ht|s||at|@4@0@1^^|ht|x|at|^^^a To  explore  /  PLAY  the hand"
-			+ "  -  click  {^*b Enter the Deal ^*n}  then click  {^*b Edit ^*n}"
-			+ " and click a CARD"    // must end in a pg  to replace the one xx'ed out
-	
-	        + " |cp|blue|at|   ^*bOR^*n   |cp||at| click  {^*b > ^*n}  to Review|ht|a|pg||";   // must end in a pg  to replace the one xx'ed out
-	
-	// @formatter:on
-
 	/**   
 	 */
 	static public void saveDealAsSingleLinFile(Deal deal, BufferedWriter w) throws IOException {
 		// ===================================================================================
 
-		w.write("st||"); // st => standard table /
-		w.write(Zzz.lin_EOL);
+		String eol_or_blank = (App.saveAsBboUploadFormat) ? "" : Zzz.lin_EOL;
+		String extra_space = (App.saveAsBboUploadFormat && App.saveAsBboUploadExtraS) ? " " : "";
 
-		w.write("pn|");
-		for (Hand hand : deal.rota[Dir.South.v]) {
-			w.write(hand.playerName);
-			if (hand.compass != Dir.East)
-				w.write(",");
+		String local_displayId = "1";
+		if (Aaa.extractPositiveInt(deal.displayBoardId) > 1) {
+			local_displayId = deal.displayBoardId;
 		}
-		w.write("|");
-		w.write(Zzz.lin_EOL);
+
+		w.write("qx|o" + local_displayId + "|");
+
+		// @formatter:off
+		if ((   deal.hands[Dir.South.v].playerName.isEmpty() 
+			 && deal.hands[Dir.West.v ].playerName.isEmpty() 
+			 && deal.hands[Dir.North.v].playerName.isEmpty() 
+			 && deal.hands[Dir.East.v ].playerName.isEmpty()
+			) == false) {
+			
+			w.write("pn|");
+			for (Hand hand : deal.rota[Dir.South.v]) {
+				w.write(hand.playerName);
+				if (hand.compass != Dir.East)
+					w.write(",");
+			}
+			w.write(extra_space + "|" + eol_or_blank);		
+		}
+	    // @formatter:on
 
 		// Headers and our invented Display Board Number
 		w.write("rh||");
-		String ahText = Aaa.cleanString(deal.ahHeader, true /* true => spaceOk */);
-		if (!ahText.isEmpty()) {
-			w.write("ah|" + ahText.trim() + "|");
+		if (App.saveAsBboUploadFormat == false) {
+			String ahText = Aaa.cleanString(deal.ahHeader, true /* true => spaceOk */);
+			if (!ahText.isEmpty()) {
+				w.write("ah|" + ahText.trim() + "|");
+			}
 		}
 		String signfBoardId = (App.deal.signfBoardId.trim().isEmpty() ? "Board" : App.deal.signfBoardId);
 
-		if (deal.displayBoardId.length() > 0) {
-			w.write("ah|" + signfBoardId + " " + deal.displayBoardId + "|");
+		if (App.saveAsBboUploadFormat) {
+			w.write("ah|Board " + local_displayId);
+		}
+		else if (deal.displayBoardId.length() > 0) {
+			w.write("ah|" + signfBoardId + " " + deal.displayBoardId);
 		}
 		else {
-			w.write("ah|" + signfBoardId + " " + deal.realBoardNo + "|");
+			w.write("ah|" + signfBoardId + " " + deal.realBoardNo);
 		}
-
-		// sv => side vulnerability
-		w.write("sv|");
-
-		if (deal.vulnerability[Dir.NS] && deal.vulnerability[Dir.EW])
-			w.write("b|");
-		else if (deal.vulnerability[Dir.NS])
-			w.write("n|");
-		else if (deal.vulnerability[Dir.EW])
-			w.write("e|");
-		else
-			w.write("-|");
-
-		w.write("sk|" + deal.youSeatHint.toLowerChar() + "|");
-		w.write(Zzz.lin_EOL);
+		w.write(extra_space + "|" + eol_or_blank);
 
 		w.write("md|"); // test A BRIDGE TABLE is displayed md => make deal ?
 
@@ -218,21 +217,40 @@ public class Lin {
 				w.write(",");
 		}
 		w.write("|");
-		w.write(Zzz.lin_EOL);
+		w.write(eol_or_blank);
 
+		// sv => side vulnerability
+		w.write("sv|");
+
+		if (deal.vulnerability[Dir.NS] && deal.vulnerability[Dir.EW])
+			w.write("B|");
+		else if (deal.vulnerability[Dir.NS])
+			w.write("N|");
+		else if (deal.vulnerability[Dir.EW])
+			w.write("E|");
+		else
+			w.write("O|");
+
+		// w.write("sk|" + (App.saveAsBboUploadFormat ? "" : deal.youSeatHint.toLowerChar()) + "|");
+
+		w.write("sk||");
+		w.write("pg|" + extra_space + "|");
+		w.write(eol_or_blank);
 		// Add the bidding
 
-		w.write(deal.bidsForLinSave());
-		w.write(Zzz.lin_EOL);
-		w.write("pg||");
-		w.write(Zzz.lin_EOL);
+		if (deal.countBids() > 0) {
+			w.write(deal.bidsForLinSave());
+			w.write("pg|" + extra_space + "|");
+			w.write(eol_or_blank);
+		}
 
 		// Add the card play
 
 		w.write(deal.cardPlayForLinSave());
-		// adds its own Zzz.lin_EOL // w.write(Zzz.lin_EOL);
+		// adds its own Zzz.lin_EOL as is proper
 
-//		w.write(Zzz.lin_EOL);
+		if (App.saveAsBboUploadFormat)
+			w.write(Zzz.lin_EOL);
 
 	}
 
@@ -271,7 +289,7 @@ public class Lin {
 
 		String injector = "";
 		int injector_read_next = 0;
-		boolean inject_at_next_pg = false;
+		char inject_at_next_pg = '-';
 
 		while (true) {
 
@@ -437,11 +455,42 @@ public class Lin {
 			if (c == bar) {
 				bb.add(s);
 				if (bb.qt == q_.pf) {
-					inject_at_next_pg = (s.trim().length() > 0) /* && s.toLowerCase().contains("y") */;
+					inject_at_next_pg = '-';
+					if (s.trim().length() > 0) {
+						if (s.toLowerCase().contains("y"))
+							inject_at_next_pg = 'y';
+						else if (s.toLowerCase().contains("f"))
+							inject_at_next_pg = 'f';
+						else if (s.toLowerCase().contains("c"))
+							inject_at_next_pg = 'c';
+						else if (s.toLowerCase().contains("b"))
+							inject_at_next_pg = 'b';
+						else if (s.toLowerCase().contains("w"))
+							inject_at_next_pg = 'w';
+						else if (s.toLowerCase().contains("x"))
+							inject_at_next_pg = 'x';
+						else if (s.toLowerCase().contains("a"))
+							inject_at_next_pg = 'a';
+					}
 				}
-				if ((bb.qt == q_.pg) && inject_at_next_pg) {
-					inject_at_next_pg = false;
-					injector = pf_injector_text;
+				if ((bb.qt == q_.pg) && inject_at_next_pg != '-') {
+					injector = "";
+					if (inject_at_next_pg == 'y')
+						injector = pf_injector_text__y;
+					else if (inject_at_next_pg == 'f')
+						injector = pf_injector_text__f;
+					else if (inject_at_next_pg == 'c')
+						injector = pf_injector_text__c;
+					else if (inject_at_next_pg == 'b')
+						injector = pf_injector_text__b;
+					else if (inject_at_next_pg == 'w')
+						injector = pf_injector_text__w;
+					else if (inject_at_next_pg == 'x')
+						injector = pf_injector_text__x;
+					else if (inject_at_next_pg == 'a')
+						injector = pf_injector_text__a;
+
+					inject_at_next_pg = '-';
 					injector_read_next = 0;
 					bb.qt = q_.xx;
 					bb.type = "xx";
@@ -476,6 +525,54 @@ public class Lin {
 			s += c; // add it to the current string
 		}
 	}
+
+	// @formatter:off
+	
+	static String top  = "|fp||cp||cs||lg||ht|s||at|@4@0@1^^|ht|x|at|^^^a  ";	
+	static String tail = "|ht|a|pg||";  // must end in a pg  to replace the one xx'ed out
+	
+	static String pf_injector_text__y =
+			  top 
+			+ "To  explore   click  {^*b Enter the Deal ^*n}  then click  {^*b Edit ^*n} or {^*b Play ^*n} "
+			+ " and a CARD  |cp|blue|at|    ^*bOR^*n    |cp||at| just click  {^*b > ^*n}  to  ^*bReview^*n"
+		    + tail;  
+	
+	static String pf_injector_text__b =
+			  top 
+			+ "You can  PLAY  from the start using the  { ^*b 1st ^*n }  button"
+			+ "   |cp|blue|at|   ^*bOR^*n   |cp||at|   PLAY  out the rest using the  { ^*b Cont ^*n }  button "
+		    + tail;
+	
+	static String pf_injector_text__c =
+			  top 
+			+ "You can continue and  PLAY  out the rest of the hand "
+			+ "using the  { ^*b Cont ^*n }  button."
+		    + tail;
+	
+	static String pf_injector_text__f =
+			  top 
+			+ "You can  PLAY  out the hand from around the first lead by using the  { ^*b 1st ^*n }  button."
+		    + tail;
+	
+	static String pf_injector_text__w =
+			  top 
+			+ "To  PLAY  out the hand starting from around the 1st lead"
+			+ "  click  {^*b Enter the Deal ^*n}  then click on  {^*b Play ^*n}"
+			+ tail;
+	
+	static String pf_injector_text__x =
+			  top 
+			+ "To play out the rest  click  {^*b Enter the Deal ^*n}  then "
+			+ "click on the  RIGHT HAND  end of the  ^*bNavbar^*n  then on  {^*b Play ^*n}"
+			+ tail;
+	
+	static String pf_injector_text__a =
+			  top 
+			+ "All restrictions on the three buttons   { ^*b 1st ^*n }     { ^*b Cont ^*n }"
+			+ "   and   { ^*b Enter the Deal ^*n }   are now lifted."
+			+ tail;
+	
+	// @formatter:on
 
 	/**   
 	 */
@@ -597,13 +694,13 @@ public class Lin {
 				}
 			}
 			else if (lineType.contentEquals("Vulnerable")) {
-				linVul = "-";
+				linVul = "O";
 				if (data.contentEquals("NS"))
-					linVul = "n";
+					linVul = "N";
 				else if (data.contentEquals("EW"))
-					linVul = "e";
+					linVul = "E";
 				else if (data.contentEquals("Both") || data.equals("All")) {
-					linVul = "b";
+					linVul = "B";
 				}
 			}
 			else if (lineType.contentEquals("Deal")) {

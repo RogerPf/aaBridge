@@ -21,7 +21,7 @@ mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE 
 
 %%
 %%  You can NOW use  ALL 2814 and later features, all  'older'
-%%   aaBridge players are screened just before the first  'pg'
+%%   copies of aaBridge are screened out just before the first  'pg'
 %%
 
 fh|t40|                    Font   t  t-title      section titles within chapters
@@ -92,7 +92,7 @@ ht|z|at|@0
 %% <<--FRONTPAGE_FOOTER_REPLACE_START->>
 fh|940|fm|9|fp|9|at|@0@1|
 ht|i|
-rq|2814|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2814 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+rq|2830|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2830 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
 %% <<--FRONTPAGE_FOOTER_REPLACE_END->>
 pg| ***** 0 ***** |
 
@@ -1036,9 +1036,11 @@ If Responder PASSES over the interference, Opener will tend to Double if the int
 ^b@2
 with 20-23 points they might double for takeout even with a 4-card holding in Opps' suit, or might bid the suit below their singleton if it's obvious this is NOT their cheapest 4-card suit (ie: more than 2 steps over the interference). So:
 
-^c2@D - (2@H) - No - (No) - 3@C   is definitely 20-23 HCP with a singleton Diamond,
-
-because Opener could have bid 2@S with a 16-19 hand of the same type.
+^c2@D  -  (2@H)  -  Pass  -  (Pass)
+|n^|8|at|
+^c3@C      
+|n^|8|at|
+is definitely 20-23 HCP with a singleton Diamond, because Opener could have bid 2@S with a 16-19 hand of the same type.
 
 Any questions thus far?|
 pg| ***** 89 ***** |

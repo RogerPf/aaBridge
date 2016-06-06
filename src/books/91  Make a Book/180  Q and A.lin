@@ -23,11 +23,6 @@ fp||
 qx|Q&A|at|^b@2
 
 
-^b@2^*bQ.^*n   How do I get aaBridge to start in MultiBook mode, for a ^*b new user^*n ?
-
-^*bA.^*n   Inside@2 the book  '90  Welcome Help...'  is a file with a name containing the text  DEFAULT_TO_SINGLE_BOOK  change that name (only slightly so switching back is easy) for example to  xEFAULT_TO_SINGLE_BOOK.
-
-
 
 ^b@2^*bQ.^*n   How do I get a  'nice title'  for my book showing in the Menu ?
 
@@ -35,17 +30,12 @@ qx|Q&A|at|^b@2
 
 
 
-^b@2^*b@2Q.^*n   How do I get aaBridge to run in  devMode ?
-
-^*bA.^*n   Create a file called    _aaBridge_dev.txt    at the root of your file system or in /a/  ,  C:\a\
-^j devMode is nothing special just a few extra menu options.
-
-
 
 ^b@2^*b@2Q.^*n   Where can I find the   |cp|7|at|^*b.java  source^*n|cp||at|   files for ^*b aaBridge ^*n?
 
-^*bA.^*n   The should be together with the  .class  files in the aaBridge .jar.   They should also (eventually) be put on github.
-^g^*h http://github.com/RogerPf/aaBridge ^*n
+^*bA.^*n   Every thing you need to build the .jar   is    ^*B in the .jar ^*n   well except for  Eclipse  or your developer platform of
+ 
+^c choice  :0        unzip the jar and look in    .\yyy_other\build_extras     for instructions
 
 |
 ht|z|at|@0

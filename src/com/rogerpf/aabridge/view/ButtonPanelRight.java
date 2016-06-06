@@ -42,8 +42,8 @@ public class ButtonPanelRight extends JPanel {
 		// setBackground(Aaa.baizeGreen);
 
 		// @formatter:off
-		setLayout(new MigLayout(App.simple + ", flowy, align right", "[c]", "1%[]1%[]5.0%[][]12%[][]2%[]"));
-
+			
+		setLayout(new MigLayout(App.simple + ", flowy, align right", "[c]", "1%[]1%[]8.0%[][]10.0%[][]2%[]"));
 
 		add(ddsAnalyse	  = new RpfResizeButton(Aaa.s_Std,   "ddsAnalyse", 65, 4));
 		add(ddsShowBids	  = new RpfResizeButton(Aaa.s_Std,   "ddsShowBids", 60, 3));
@@ -65,17 +65,14 @@ public class ButtonPanelRight extends JPanel {
 		// @formatter:on
 
 		{
-			boolean visible = (App.visualMode == App.Vm_InsideADeal);
+			boolean anaVisible = (App.visualMode == App.Vm_InsideADeal) && App.haglundsDDSavailable;
+			ddsAnalyse.setVisible(anaVisible);
+			ddsShowBids.setVisible(anaVisible && App.ddsAnalyserPanelVisible);
 
-			boolean ddsVisible = visible && App.haglundsDDSavailable;
-
+			boolean ddsVisible = (App.visualMode == App.Vm_InsideADeal) && App.haglundsDDSavailable;
 			ddsLabel.setVisible(ddsVisible);
-			ddsScoreOnOff.setVisible(visible);
+			ddsScoreOnOff.setVisible(ddsVisible);
 			ddsScoreOnOff.setText(App.ddsScoreShow ? "is On" : "is Off");
-
-			ddsAnalyse.setVisible(ddsVisible && App.ddsScoreShow);
-
-			ddsShowBids.setVisible(ddsVisible && App.ddsScoreShow && App.ddsAnalyserVisible);
 		}
 
 		{

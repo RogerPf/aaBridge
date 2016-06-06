@@ -73,6 +73,7 @@ class AaRopPrefs3_DFC extends ClickPanel implements ItemListener, ActionListener
 	QRadioButton bottomYou;
 	QRadioButton bottomDecl;
 
+	QCheckBox dfcWordsForCount;
 	QCheckBox dfcHyphenForVoids;
 	QCheckBox dfcCardsAsBlobs;
 
@@ -142,11 +143,16 @@ class AaRopPrefs3_DFC extends ClickPanel implements ItemListener, ActionListener
 		
 		add(label  = new QLabel("Both Exam and Training  "), "gapy 15");
 		    label.setForeground(Aaa.optionsTitleGreen);
-		
+
 		add(dfcHyphenForVoids = new QCheckBox(this, App.dfcHyphenForVoids,    "Use hyphen for voids instead of a feint Zero  "), "gapx 9, gapy 2");
 		    dfcHyphenForVoids.setBorder(bdr1);
-		add(dfcCardsAsBlobs   = new QCheckBox(this, App.dfcCardsAsBlobs,         "Anon cards - Show all the cards as the greek letter 'alpha'  "), "gapx 9, gapy 2");
+		add(dfcCardsAsBlobs   = new QCheckBox(this, App.dfcCardsAsBlobs,      "Anon cards - Show all the cards as the greek letter 'alpha'  "), "gapx 9, gapy 2");
 		    dfcCardsAsBlobs.setBorder(bdr1);
+		    
+//		add(label  = new QLabel("Exam ONLY  "), "gapy 15");
+//		    label.setForeground(Aaa.optionsTitleGreen);
+		add(dfcWordsForCount  = new QCheckBox(this, App.dfcWordsForCount,     "Use words when showing the number of cards in a suit     EXAM only  "), "gapx 9, gapy 6");
+	        dfcWordsForCount.setBorder(bdr1);
 		
 		add(applyDefaults = new QButton(this, "Apply Defaults"), "gapy20, gapx4");
 		    applyDefaults.setToolTipText("Reset all  Seat Options  to default values  ");
@@ -166,16 +172,18 @@ class AaRopPrefs3_DFC extends ClickPanel implements ItemListener, ActionListener
 		Object source = e.getSource();
 		if (source == applyDefaults) {
 
+			App.frame.rop.p2_SeatChoice.applyDefaultsAction();
+
 			App.dfcTrainingSuitSort = 0;
 			order0.setSelected(true);
 			order1.setSelected(false);
 			order2.setSelected(false);
 
-			App.dfcAutoNext = 2; // 1 = medium
+			App.dfcAutoNext = 1; // 1 = medium don't forget to change the settings below
 			auto0.setSelected(false);
-			auto1.setSelected(false);
+			auto1.setSelected(true);
 			auto2.setSelected(false);
-			auto3.setSelected(true);
+			auto3.setSelected(false);
 
 			App.dfcExamYou = Dir.West;
 			youWest.setSelected(true);
@@ -192,6 +200,9 @@ class AaRopPrefs3_DFC extends ClickPanel implements ItemListener, ActionListener
 			diff2.setSelected(false);
 			diff3.setSelected(false);
 
+			App.dfcWordsForCount = true;
+			dfcWordsForCount.setSelected(true);
+
 			App.dfcHyphenForVoids = true;
 			dfcHyphenForVoids.setSelected(true);
 
@@ -199,6 +210,8 @@ class AaRopPrefs3_DFC extends ClickPanel implements ItemListener, ActionListener
 			dfcCardsAsBlobs.setSelected(false);
 
 			App.savePreferences();
+
+			App.frame.executeCmd("openPage_distrFlashCards");
 
 			App.frame.repaint();
 		}
@@ -210,7 +223,10 @@ class AaRopPrefs3_DFC extends ClickPanel implements ItemListener, ActionListener
 		boolean b = (e.getStateChange() == ItemEvent.SELECTED);
 		Object source = e.getItemSelectable();
 
-		if (source == dfcHyphenForVoids) {
+		if (source == dfcWordsForCount) {
+			App.dfcWordsForCount = b;
+		}
+		else if (source == dfcHyphenForVoids) {
 			App.dfcHyphenForVoids = b;
 		}
 		else if (source == dfcCardsAsBlobs) {
@@ -234,15 +250,19 @@ class AaRopPrefs3_DFC extends ClickPanel implements ItemListener, ActionListener
 
 		else if (source == auto0) {
 			App.dfcAutoNext = 0;
+			App.frame.executeCmd("openPage_distrFlashCards");
 		}
 		else if (source == auto1) {
 			App.dfcAutoNext = 1;
+			App.frame.executeCmd("openPage_distrFlashCards");
 		}
 		else if (source == auto2) {
 			App.dfcAutoNext = 2;
+			App.frame.executeCmd("openPage_distrFlashCards");
 		}
 		else if (source == auto3) {
 			App.dfcAutoNext = 3;
+			App.frame.executeCmd("openPage_distrFlashCards");
 		}
 
 		else if (source == diff0) {

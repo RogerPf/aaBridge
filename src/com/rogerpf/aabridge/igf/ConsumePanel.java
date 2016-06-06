@@ -389,7 +389,7 @@ public class ConsumePanel extends SeglinePanel {
 		yRow = 0.0f + topAdjust;
 		xCol = leftMargin;
 
-		lineSpacing_multiplier = 1; // as we calc this at display time not via capenv.
+		lineSpacing_multiplier = App.one_unless_linux(); // as we calc this at display time not via capenv.
 
 		consume_at(gi); // uses the standard 'text'
 	}

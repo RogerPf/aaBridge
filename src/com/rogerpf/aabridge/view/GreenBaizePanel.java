@@ -181,7 +181,7 @@ public class GreenBaizePanel extends ClickPanel {
 		// boolean tutForceAuctionShow = tutorial && App.tutorialShowAuction;
 		// boolean tutForceAuctionHide = tutorial && !App.tutorialShowAuction;
 
-		boolean alwaysShowAnal = (!tutorial && App.ddsAnalyserVisible && App.ddsScoreShow);
+		boolean alwaysShowAnal = (!tutorial && App.ddsAnalyserPanelVisible);
 		// boolean alwaysShowBidding = (tutorial && App.tutorialShowAuction || !tutorial && !alwaysShowAnal);
 		boolean alwaysShowBidding = (App.tutorialShowAuction && !alwaysShowAnal);
 		boolean alwaysShowBlank = !alwaysShowAnal && !alwaysShowBidding;

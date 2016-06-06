@@ -68,6 +68,13 @@ public class TricksFourDisplayPanel extends JPanel {
 
 	Suggestion[] suggestions = new Suggestion[] { new Suggestion(), new Suggestion(), new Suggestion(), new Suggestion() };
 
+//	public void dealLoadedNotification() {
+//		showThinBox = false;
+//		for (Suggestion suggestion : suggestions) {
+//			suggestion.clear();
+//		}
+//	}
+
 	/**
 	 */
 	TricksFourDisplayPanel() { /* Constructor */
@@ -219,6 +226,7 @@ public class TricksFourDisplayPanel extends JPanel {
 	/**   
 	 */
 	public void clearAllCardSuggestions() {
+		showThinBox = false;
 		for (Suggestion sug : suggestions) {
 			sug.clear();
 		}
@@ -371,13 +379,29 @@ public class TricksFourDisplayPanel extends JPanel {
 		// Display the 'eot click required' indication (a dot)
 		if (App.isVmode_InsideADeal() && showCompletedTrick /* && App.deal.isCurTrickComplete() */&& App.isMode(Aaa.NORMAL_ACTIVE)
 				&& App.isPauseAtEotClickWanted() && App.isAutoPlay(App.deal.getNextHandToPlay().compass)) {
-			double x = marginLeft + activityWidth * 0.04;
-			double y = marginTop + activityHeight * 0.90;
-			// g2.setColor(Aaa.eotDotColor);
+
 			g2.setColor(Cc.g(Cc.rpfDefBtnColor));
 			double diameter = activityWidth * 0.04;
+
+			double x = marginLeft + activityWidth * 0.04;
+			double y = marginTop + activityHeight * 0.90;
 			Ellipse2D.Double circle = new Ellipse2D.Double(x, y, diameter, diameter);
 			g2.fill(circle);
+
+			x = marginLeft + activityWidth * 0.94;
+			y = marginBottom + activityHeight * 0.04;
+			circle = new Ellipse2D.Double(x, y, diameter, diameter);
+			g2.fill(circle);
+
+//			x = marginLeft + activityWidth * 0.04;
+//			y = marginBottom + activityHeight * 0.04;
+//			circle = new Ellipse2D.Double(x, y, diameter, diameter);
+//			g2.fill(circle);
+//
+//			x = marginLeft + activityWidth * 0.94;
+//			y = marginBottom + activityHeight * 0.94;
+//			circle = new Ellipse2D.Double(x, y, diameter, diameter);
+//			g2.fill(circle);
 		}
 
 		// System.out.println( trickRequested );
@@ -478,7 +502,7 @@ public class TricksFourDisplayPanel extends JPanel {
 
 			if (review_outline) { // faint dots added to the review play back so the user knows the mode they are in
 				g2.setColor(Cc.BlackStrong);
-				float dash[] = { 0.005f * cardWidth, 0.05f * cardWidth };
+				float dash[] = { 0.006f * cardWidth, 0.05f * cardWidth };
 				g2.setStroke(new BasicStroke(blackLineWidth, BasicStroke.CAP_BUTT, BasicStroke.JOIN_MITER, 2.0f, dash, 2.0f));
 			}
 			else {

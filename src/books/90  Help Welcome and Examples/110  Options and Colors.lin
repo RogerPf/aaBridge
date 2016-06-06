@@ -1,0 +1,40 @@
+%% Options and COlors
+%% Last edited  2013 Dec 03
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|150|ff|1Arial|fb|19|fm|1|       1 large
+fh|240|ff|2Arial|fb|29|fm|2|       2 med
+fh|342|ff|3Arial|fb|39|fm|3|       2 med+
+
+cr|3200|cg|3255|cb|3255|     3  light blue
+cr|4070|cg|4090|cb|4255|     4  blue
+cr|516|cg|5128|cb|516|       5  green 
+cr|7230|cg|70|cb|70|         7  red
+
+bt||
+fp|1|at|
+
+^a   @s @h @d @c  ^v     @c @d @h @s|
+
+mn|   Options and Colors   |
+ht|d|
+lg|h|
+at|^^|fp||at|^z@3
+
+^b@2The  Options and Preferences  are accessed by the ^*bdividers^*n on the right and bottom off the main display.
+
+The the two dividers can be moved right-left and up-down respectively. 
+
+
+|fp|2|at|^*bRight Hand Options^*n|fp||at|
+The divider on the right exposes a set of tabs.  It is worthwhile looking to those tabs to see what choices are on offer.
+
+|fp|2|at|^*bSuit Colors^*n|fp||at|
+The suit colors are adjusted with the "Suit Colors" tab, move the divider on the |fp|2|at|^*bright^*n|fp||at|.  
+
+|fp|2|at|^*bTable and Green Baize ^*n|fp||at| colors
+The screen colors are adjusted using the slider revealed by the  ^*bbottom^*n  screen divider.
+|
+
+ht|z|at|@0
+^r Roger Pfister   -   December 2013|

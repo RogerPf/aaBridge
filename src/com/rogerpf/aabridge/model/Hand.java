@@ -815,10 +815,10 @@ public class Hand implements Comparable<Hand> {
 		// ==============================================================================================
 		String s = "";
 		for (Suit su : Suit.shdc) { // Spades first
-			s += su.toStr().toLowerCase();
+			s += su.toStr();
 			Frag fOrg = fOrgs[su.v];
 			int sl = fOrg.size();
-//			for (int j = sl - 1; j >= 0; j--) {  // is this low to high ?
+			// for (int j = sl - 1; j >= 0; j--) { // this low to high
 			for (int j = 0; j < sl; j++) {
 				s += fOrg.get(j).rank.toStr();
 			}

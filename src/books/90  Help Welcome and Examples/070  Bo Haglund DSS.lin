@@ -1,0 +1,133 @@
+
+%%Last edited 2014 Jan 20
+bt||
+%%Font and color codes
+fh|150|ff|1Arial|fb|19|fm|1|       1 large
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|36|fm|3|                           FOR 3
+fh|430|ff|4Arial|fi|4y|fm|4|     %%Larger than default-- italic
+fh|545|ff|5Arial|fb|56|fm|5|                           FOR 3
+fh|638|ff|6Arial|fb|60|fm|6|                           FOR 2
+
+cr|116|cg|116|cb|1255|              blue 1
+cr|2200|cg|260|cb|2255|            2  purple ish
+cr|3200|cg|3255|cb|3255|     3  light blue
+cr|4170|cg|4190|cb|4255|        4  med blue
+cr|516|cg|5158|cb|516|              green 5
+cr|664|cg|6255|cb|6255|             6=TURQUOISE
+cr|70|cg|7235|cb|7235|              green/blue 7
+cr|8255|cg|80|cb|80|                red 8
+cr|9225|cg|90|cb|90|               duller red 9
+
+
+
+bt||
+fp|1|at|
+
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp||
+mn|   Bo Haglund's    DDS   |
+Lg|fS|
+at|
+^b@2^z@3
+
+^b@2^*bQ.^*n   @2What is a     ^*bDouble Dummy Solver^*n      (DDS) ? 
+
+|cp|8|at|^*b^bA.^*n|cp||at|   It is a piece of code that takes a deal and a contract e.g. "hearts" and by looking at all four hands (hence the expression Double Dummy) can check all the combinations of plays and so work out (assuming best play) the most tricks that each side can make.
+^b@2
+A  how to use the Double Dummy solver  document is available called  
+|n#|a||fp|3|at|^d ^*bDouble Dummy Solver  in  aaBridge  -  a How to use ^*n|fp||n#|a|at|
+This document is part of the  ^*b  aaBridge Document Collection   ^*n  which is a package of  .doc  format documents.
+To get a copy of the collection put on to your desktop -
+^c|n#|a||cp|8|at|^*bClick^*n|cp||at|  on the long thin 'button' below - ^b@2^s@3
+|fp|8|cs|3|at|
+|fp||at| ^-{ |n#|4|at|^*f copyFolder_Doc_Collection, Copy the     aaBridge - Doc Collection    to your Desktop ^*n  |n^|a|at|^^
+}^-  |cs||fp||at|@1
+^cthe folder          ^*baaBridge - Doc Collection^*n       will now be on your desk top as a folder.
+|
+
+ht|z|at|@0
+^r Roger Pfister   -   April 2016
+|
+
+
+
+%%%%%Questions and Ans.lin
+%%Last edited 2014 Jan 20
+bt||
+%%Font and color codes
+fh|150|ff|1Arial|fb|19|fm|1|       1 large
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|36|fm|3|                           FOR 3
+fh|430|ff|4Arial|fi|4y|fm|4|     %%Larger than default-- italic
+
+cr|116|cg|116|cb|1255|              blue 1
+cr|2200|cg|260|cb|2255|            2  purple ish
+cr|30|cg|30|cb|3128|                dark Blue 3
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5158|cb|516|              green 5
+cr|664|cg|6255|cb|6255|             6=TURQUOISE
+cr|70|cg|7235|cb|7235|              green/blue 7
+cr|8255|cg|80|cb|80|                red 8
+cr|9225|cg|90|cb|90|               duller red 9
+
+
+bt||
+fp|1|at|
+
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp||
+mn|Bo Haglund's    DDS|
+at|
+^b@2^z@3
+
+Also see      ^*btoolbar^*n       >      ^*b^*uH^*n^*belp & How do I ?^*n       >      ^*bHow do I  -  Use the Double Dummy Solver^*n
+
+
+^b@2^*bQ.^*n   What is a     ^*bDouble Dummy Solver^*n      (DDS) ? 
+
+|cp|8|at|^*bA.^*n|cp||at|   It is a piece of code that takes a deal and a contract denomination e.g. "hearts" and by looking at all four hands (hence the expression Double Dummy) can check all the combinations of plays and so work out (assuming best play) the most tricks that each side can make.
+
+When you are  ^*bInside a Deal^*n  you should see a the letters   ^*bDDS^*n   near the top of the right hand column.  When the DDS is turned on you will see green and amber ovals by all playable cards.  The number inside each oval shows (assuming best play from both sides) the total tricks that can be made if that card is played.  Green ovals mark play as 'best'.   When reviewing, the card that will be played 'next', is also marked with a coloured circle.
+
+|fp|3|cp|2|at|Hint|fp||at|^*b   in Review use the Fwd Single arrow button THEN use the mouse wheel to see each card played.|cp||at|^*n
+
+^*baaBridge^*n can also use Bo's DDS to check all the autoplays that the "dumb aaBridge auto-player" suggests.   If the DDS says that a particular play will cost a trick then a DDS suggested play, is used instead.
+
+
+^b@2^*bQ.^*n   How do I tell if the  ^*bDouble Dummy Solver^*n  is Available ?
+
+|cp|8|at|^*bA.^*n|cp||at|   Select  ^*bAutoPlay^*n  (top of the Right panel).  Look just under the AutoPlay (green) title, top of box.   If you can see |cp|5|at|^*b DDS Available ^*n|cp||at| then the check box below controls whether or not it is in use.   If you see |cp|9|at|^*b DDS NOT Available ^*n|cp||at| then you are out of luck.  It should be "available" on nearly all systems including   Windows, Mac and some Linux.|
+
+pg||
+
+
+nt||
+fp|1|at|
+
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp||
+mn|Bo Haglund's    DDS    -     Page 2|
+at|
+^b@2^z@3
+
+^b@2^*bQ.^*n   What is a the Analyser ?  
+
+|cp|8|at|^*bA.^*n|cp||at|   When you are  ^*bInside a Deal^*n  and have switched on the ^*bDDS^*n  then in addition to the green and amber ovals you will see a button saying  ^*bAnalyse^*n, meaning analyse  ^*bTHIS DEAL^*n.   Clicking this button will take the existing deal and pass it to the DDS which will then return with a table of who can make what in which contacts.
+
+This table is displayed with 20 entries (4 seats by 5 denominations).  Hovering over any entry will tell you how many can be made by that declarer.  Clicking on a entry will set that as the contract and allow you to play the cards of THAT deal in the new contract.   ^*bOR^*n  by just looking at the ovals you will be able to see the more complex winning lines more easily.
+
+
+|fp|3|cp|2|at|Hint|fp||at|^*n      Select the ^*bAutoPlay^*n TAB (right column) and switch to both sides auto play.  
+Once finished you can use  ^*bReview^*n  to inspect the chosen line (with the DDS ovals showing) and so investigate an optimal line.|cp||at|^*n
+
+
+^b@2^*bQ.^*n   Some deals appear to take a long time to Analyse ? 
+
+|cp|8|at|^*bA.^*n|cp||at|   Yes  -   a very few, normally especially created deals, can take along time to Analyse, aaBridge will pause until the analysis is complete.   
+
+^*bAdvice:^*n  Don't use the Analyser or even the DDS on such 'created' deals.|
+
+ht|z|at|@0
+^r Roger Pfister   -   July 2015
+|

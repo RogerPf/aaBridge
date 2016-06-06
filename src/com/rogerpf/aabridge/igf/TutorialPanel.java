@@ -176,13 +176,13 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 	public void action_lg(GraInfo gi) { // line gap (line Spacing)
 		// =============================================================================
 		if (gi.numb == 10) {
-			lineSpacing_multiplier = 1; // trying to avoid any rounding the reset case.
+			lineSpacing_multiplier = App.one_unless_linux(); // trying to avoid any rounding the reset case.
 		}
 		else if (gi.numb <= 0) {
 			lineSpacing_multiplier = 0;
 		}
 		else {
-			lineSpacing_multiplier = ((10 + (float) gi.numb)) / 20f; // 9 = 90% etc 0 = stay on same line
+			lineSpacing_multiplier = ((10 * App.one_unless_linux() + (float) gi.numb)) / 20f; // 9 = 90% etc 0 = stay on same line
 		}
 	}
 
@@ -361,7 +361,7 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 		scaleFrac = width / LIN_STANDARD_WIDTH;
 		fontScaleFrac = FONT_SCALE_FRAC * scaleFrac;
 		heightOfCurFontFrac = LINE_SEPARTATION_FRAC; // no mult this is a const // * scaleFrac;
-		lineSpacing_multiplier = 1;
+		lineSpacing_multiplier = App.one_unless_linux();
 		heightOfCurFont = 0;
 		maxHeightOnCurLine = 0; // set later by calc
 		nonFont_on_this_line = false;
@@ -464,6 +464,7 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 			if (t == q_.gf) { /* nothing at this time */ continue; }
 			if (t == q_.rq) { /* nothing at this time */ continue; }
 			if (t == q_.eb) { /* nothing at this time */ continue; }
+			if (t == q_.bv) { /* nothing at this time */ continue; }
 							
 			// @formatter:on
 

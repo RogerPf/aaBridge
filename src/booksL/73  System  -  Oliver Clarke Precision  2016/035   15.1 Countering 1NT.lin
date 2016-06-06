@@ -21,7 +21,7 @@ mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE 
 
 %%
 %%  You can NOW use  ALL 2814 and later features, all  'older'
-%%   aaBridge players are screened just before the first  'pg'
+%%   copies of aaBridge are screened out just before the first  'pg'
 %%
 
 fh|t40|                    Font   t  t-title      section titles within chapters
@@ -62,7 +62,7 @@ ht|g|n#|6|fp|c-chapTitle|at|^-^*bChapter 15                        Countering 1N
 ht|j|
 %% <<--HEADER_REPLACE_END->>
 
-qx|15|
+qx|15.1|
 fp|t-title|at|^d@2^z@3|
 at|
 ^*gGS,Countering 1NT   ^*n
@@ -85,7 +85,7 @@ ht|z|at|@0
 %% <<--FRONTPAGE_FOOTER_REPLACE_START->>
 fh|940|fm|9|fp|9|at|@0@1|
 ht|i|
-rq|2814|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2814 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+rq|2830|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2830 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
 %% <<--FRONTPAGE_FOOTER_REPLACE_END->>
 pg| ***** 0 ***** |
 
@@ -253,29 +253,31 @@ nt|^z@3^b@2|at|^^^^|
 fp|t-title|at|Cappelletti|fp||at|      ^^^^|
 lg|c|n^|4|
 cp|red|at|^*bOliverC:^*n|cp||at|  Cappelletti, more commonly referred to as Capp (and sometimes as Hamilton, or Pottage), is a very popular defence to 1NT.
-|n^|5|at|
+|n^|8|at|
 It is relatively simple to understand and to use, and does allow for penalty doubles, and also to show single-suiters and 2-suited hands: 
 |n^|9|at|
-^c(1NT)   -    ^*bX^*n ^g is strictly for penalties 
-^c(1NT)   -   2@c     ^g shows a single   -   suited hand (in ANY suit) 
-^c(1NT)   -   2@d     ^g shows both Majors (1NT)   -   2@h shows Hearts and a Minor 
-^c(1NT)   -   2@s     ^g shows Spades and a Minor (1NT)   -   2NT shows both Minors 
-^c(1NT)   -   3@c@d@h@s         ^g     are all natural
+^c(1NT)   -    ^*bX^*n ^g   is strictly for penalties 
+^c(1NT)   -   2@c     ^g   a single suited hand  ^*bANY^*n  suit 
+^c(1NT)   -   2@d     ^g   both Majors 
+^c(1NT)   -   2@h     ^g   Hearts and a minor 
+^c(1NT)   -   2@s     ^g   Spades and a minor
+^c(1NT)   -   2NT     ^g   both minors 
+^c(1NT)   -   3@c@d@h@s         ^g   all natural
 |n^|5|at|
 So Capp certainly fits my description of allowing most of the common hand types to be shown.
 
 |fp|t-title|at|Cappelletti|fp||at|      Continuations^^|
 n^|9|at|             
-^c(1NT)   -   2@c    ^J @2partner makes an automatic relay of  2@d  and the  2@c  bidder now passes (with Diamonds) or bids their suit.
-^c@2(1NT)   -   2@c   -   (p)   -   2@h 
-(1NT)   -   2@c   -   (p)   -   2@s  ^j are rescues with a weak hand and a long suit.
-(1NT)   -   2@c   -   (p)   -   2NT ^j is a forcing bid showing  11+  balanced and wanting more information.
-(1NT)   -   2@h/@s - (p)   -   2NT ^j @2is a forcing relay asking partner to show their Minor.  If they then support the known Major this is invitational with 10-12 points.
-|n^|5|at|
+^c(1NT)   -   2@c    ^J @2partner makes an automatic relay of  2@d  and the  2@c  bidder now passes 
+^r  (with Diamonds) or bids their suit.
+^c@2(1NT)   -   2@c   -   (p)   -   2@h   ^j rescue with a weak hand and a long suit.
+(1NT)   -   2@c   -   (p)   -   2@s       ^j         "          "                "              "
+(1NT)   -   2@c   -   (p)   -   2NT ^j forcing bid showing  11+  balanced and wanting more information.
+(1NT)   -   2@h/@s - (p)   -   2NT ^j forcing relay @2asking partner to show their Minor.  If they then support the known Major this is invitational with 10-12 points.
+|n^|9|at|
 ^c(1NT)   -   2@d    @2most continuations are strictly natural, with 2@h and 2@s merely showing preference, and 3@h/3@s being invitational with good trump support.
-
-^b@2As I said before, just as with most defences, the key to making this work FOR you is having an agreed standard for using it with partner.
-^h Let's have our first example hand.|
+|n^|9|at|
+^b@2As I said before, just as with most defences, the key to making this work FOR you is having an agreed standard for using it with partner. ^q Let's have our first example hand.|
 pg| ***** 8 ***** |
 
 
@@ -1302,12 +1304,12 @@ pg| ***** 122 ***** |
 sj|L|
 mb|p|
 md|0S874H842D8653CA63,SQ2HAJ95DK92CKQ52,SAKJT653H73DAJTCT,|
-pg| ***** 111 ***** |
+pg| ***** 123 ***** |
 
 
 pf|Y|
 pc|hk|
-pg| ***** 112 ***** |
+pg| ***** 124 ***** |
 
 
 Goodbyes--------------------------------------------------------------------

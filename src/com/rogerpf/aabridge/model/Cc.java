@@ -25,6 +25,8 @@ public class Cc {  // Color Class
 	public static final int   Dk__Green_Orange_Red_Blue   = 1;
 	public static final int   Dk__Green_Blue_Red_Orange   = 2;
 	public static final int   Dk__Black_Red_Red_Black     = 3;
+	public static final int   Dk__Gray_Orange_Red_Black   = 4;
+	public static final int   Dk__last                    = 4;
 
 	public static       int   deckColorStyle              = Dk__Green_Blue_Red_Black;
 	public static       int   deckCardsBlack              = 0;
@@ -49,12 +51,19 @@ public class Cc {  // Color Class
 	public static final Color GreenWeedy         = new Color(100, 180, 100);
 	public static final Color OrangeWeedy        = new Color(210, 147, 120);
 	public static final Color RedWeedy           = new Color(210, 150, 150);
+	
+	public static final Color BlackVeryWeedy	 = new Color(200, 200, 200);
     
 	public static final Color[] Black         = { BlackStrong,  BlackWeak,  BlackWeedy  };
 	public static final Color[] Blue          = { BlueStrong,   BlueWeak,   BlueWeedy   };
 	public static final Color[] Green         = { GreenStrong,  GreenWeak,  GreenWeedy  };
 	public static final Color[] Orange        = { OrangeStrong, OrangeWeak, OrangeWeedy };
 	public static final Color[] Red           = { RedStrong,    RedWeak,    RedWeedy    };
+	public static final Color[] Gray          = { BlackWeak,    BlackWeedy, BlackVeryWeedy    };
+	
+	
+	
+	
 
 //        clubs diamonds hearts  spades  no_trumps
 	public static final Color Green_Blue_Red_Black[][] =
@@ -69,6 +78,9 @@ public class Cc {  // Color Class
 	public static final Color Black_Red_Red_Black[][] =
 		{ Black, Red,    Red,    Black,  Black };
 	
+	public static final Color Black_Red_Orange_Gray[][] =
+		{ Gray, Orange,  Red,    Black,  Black };
+	
 	public static final Color Black_Black_Black_Black[][] =
 		{ Black, Black,  Black,  Black,  Black };
 	
@@ -77,10 +89,12 @@ public class Cc {  // Color Class
 		  Green_Orange_Red_Blue,
 		  Green_Blue_Red_Orange,
 		  Black_Red_Red_Black,
+		  Black_Red_Orange_Gray,
 		};
 	
 	public static final Color DeckBlack[][][] =
 		{ Black_Black_Black_Black, 
+		  Black_Black_Black_Black,
 		  Black_Black_Black_Black,
 		  Black_Black_Black_Black,
 		  Black_Black_Black_Black,

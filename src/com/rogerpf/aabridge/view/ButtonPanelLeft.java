@@ -25,7 +25,7 @@ public class ButtonPanelLeft extends JPanel {
 	// ---------------------------------- CLASS -------------------------------------
 	private static final long serialVersionUID = 1L;
 
-//	RpfResizeButton saveStd_b;  no longer shown as a button
+	RpfResizeButton saveStd_b;
 	RpfResizeButton saveAs_b;
 
 	RpfResizeButton depFinOut_b;
@@ -43,7 +43,7 @@ public class ButtonPanelLeft extends JPanel {
 	RpfResizeButton editBiddingWipe_b;
 
 	RpfResizeButton editPlay_b;
-	RpfResizeButton editPlayWipe_b;
+	// RpfResizeButton editPlayWipe_b;
 
 	RpfResizeButton ehere_b;
 	RpfResizeButton edit_b;
@@ -63,19 +63,20 @@ public class ButtonPanelLeft extends JPanel {
 		// @formatter:off
 		setLayout(new MigLayout(App.simple + ", flowy", "[c]", 
 		   
-		 "[]"			     // SaveAs  (Save is no longer shown)          
-		 + "11%[]"            // score - later split into 2
+		 "[]"                 // Save 
+		 + "2%[]"			  // SaveAs           
+		 + "5%[]"            // score - later split into 2
 		 + "push"
-		 + "[]0.5%[][]"      // Edit Hands - (shuff weak first) note the third field is split (later)
-		 + "2.5%[][]"        // Edit Bidding + wipe
-		 + "2.5%[][]"        // Edit Play + wipe
-		 + "12%[]6%[]6%[]" // EditHere - Edit - Normal - Review
-		 + "5%"
+		 + "[]6%[]0.5%[]"      // Edit Hands - (shuff weak first) note the third field is split (later)
+		 + "2.5%[]0.5%[]"        // Edit Bidding + wipe
+		 + "2.5%[]"        // Edit Play 
+		 + "12%[]4.5%[]4.5%[]"   // EditHere - Edit - Normal - Review
+		 + "8%"
 		 ));
 
 		// @formatter:on
 
-// 		add(saveStd_b = new RpfResizeButton(Aaa.s_Std, "menuSaveStd", 55, 3));   no longer shown
+		add(saveStd_b = new RpfResizeButton(Aaa.s_Std, "menuSaveStd", 55, 3));
 		add(saveAs_b = new RpfResizeButton(Aaa.s_Std, "menuSaveAs", 55, 3));
 
 		add(blueScore_b = new RpfResizeButton(Aaa.s_SelfCmd, " ", 30, 3, 0.95f), "flowx, split 2");
@@ -83,7 +84,7 @@ public class ButtonPanelLeft extends JPanel {
 		add(purpleScore_b = new RpfResizeButton(Aaa.s_SelfCmd, " ", 30, 3, 0.95f), "flowy");
 		purpleScore_b.setBackground(Aaa.teamDDColorAy[1][0]);
 
-		add(editHandsShuffWeak_b = new RpfResizeButton(Aaa.s_Std, "editHandsShuffWeak", 58, 5, 0.61f));
+		add(editHandsShuffWeak_b = new RpfResizeButton(Aaa.s_Std, "editHandsShuffWeak", 62, 5, 0.71f));
 		add(editHands_b = new RpfResizeButton(Aaa.m_Std, "editHands", 70, 4));
 
 		add(editHandsRotateAnti_b = new RpfResizeButton(Aaa.s_Std, "editHandsRotateAnti", 15, 3), "flowx, split 2");
@@ -93,10 +94,10 @@ public class ButtonPanelLeft extends JPanel {
 		editHandsRotateClock_b.setForeground(Cc.RedStrong);
 
 		add(editBidding_b = new RpfResizeButton(Aaa.m_Std, "editBidding", 70, 4));
-		add(editBiddingWipe_b = new RpfResizeButton(Aaa.s_Std, "editBiddingWipe", 34, 4));
+		add(editBiddingWipe_b = new RpfResizeButton(Aaa.s_Std, "editBiddingWipe", 34, 3));
 
 		add(editPlay_b = new RpfResizeButton(Aaa.m_Std, "editPlay", 70, 4));
-		add(editPlayWipe_b = new RpfResizeButton(Aaa.s_Std, "editPlayWipe", 34, 4));
+		// add(editPlayWipe_b = new RpfResizeButton(Aaa.s_Std, "editPlayWipe", 34, 4));
 
 		add(edit_b = new RpfResizeButton(Aaa.m_Std, "leftWingEdit", 75, 6));
 
@@ -122,7 +123,7 @@ public class ButtonPanelLeft extends JPanel {
 		boolean editBidding = App.isMode(Aaa.EDIT_BIDDING) && insideADeal;
 		boolean editPlay = App.isMode(Aaa.EDIT_PLAY) && insideADeal;
 		
-//		saveStd_b.setVisible( insideADeal && App.showSaveBtns);  no longer shown
+		saveStd_b.setVisible( insideADeal && App.showSaveBtns);
 		saveAs_b.setVisible(  insideADeal && App.showSaveBtns);
 		
 		setScoreDisplayVisibility();
@@ -136,7 +137,7 @@ public class ButtonPanelLeft extends JPanel {
 		editBiddingWipe_b.setVisible(editBidding);
 		
 		editPlay_b.changeType( !anyEdit ? Aaa.m_Hidden : (editPlay ? Aaa.m_Label : Aaa.m_Std) );
-		editPlayWipe_b.setVisible(editPlay);
+		//editPlayWipe_b.setVisible(editPlay);
 		
 		edit_b  .changeType(!insideADeal ? Aaa.m_Hidden : (anyEdit ? Aaa.m_Label : Aaa.m_Std) );
 		normal_b.changeType(!insideADeal ? Aaa.m_Hidden : (play ? Aaa.m_Label : Aaa.m_Std) );

@@ -40,8 +40,11 @@ public class Qu_z_Panel extends JPanel {
 	QuAnswerPanel qansp;
 	Qu_z_AnsBoxPanel qaboxp;
 	QuTellMePanel tmep;
-	Qu_z_NewPanel newp;
+	Qu_z_CFlowPanel cFlowp;
+	Qu_z_NewPanelT newpT;
+	Qu_z_NewPanelE newpE;
 	Qu_z_NewAndTellPanel newAndTellp;
+	Qu_z_VideoPanel qvidp;
 	Qu_z_OptionsPanel optionsp;
 	Qu_z_TrainExamPanel trainExamp;
 
@@ -57,18 +60,13 @@ public class Qu_z_Panel extends JPanel {
 		qaboxp = new Qu_z_AnsBoxPanel();
 		qbutsp = new QuAskButtsPanel();
 		tmep = new QuTellMePanel();
-		newp = new Qu_z_NewPanel();
+		cFlowp = new Qu_z_CFlowPanel();
+		newpT = new Qu_z_NewPanelT();
+		newpE = new Qu_z_NewPanelE();
 		newAndTellp = new Qu_z_NewAndTellPanel();
+		qvidp = new Qu_z_VideoPanel();
 		optionsp = new Qu_z_OptionsPanel();
 		trainExamp = new Qu_z_TrainExamPanel();
-
-		add(qansp, App.hm1oneHun + ", cell 0 0, spanx, center");
-		add(qbutsp, App.hm1oneHun + ", cell 0 1, spanx, center, split2, gap 15%, width 70%, flowx");
-		add(optionsp, App.hm1oneHun + ", width 10%, flowy, gap 5%");
-		add(newp, App.hm1oneHun + ", cell 1 2");
-		add(tmep, App.hm1oneHun + ", cell 2 2");
-		add(newAndTellp, App.hm1oneHun + ", cell 3 2");
-		add(trainExamp, App.hm1oneHun + ", cell 4 2");
 
 	}
 
@@ -79,32 +77,59 @@ public class Qu_z_Panel extends JPanel {
 		qbutsp.setVisible(true);
 		qbutsp.fillButtonsWithAnswers();
 
+		add(cFlowp, App.hm3oneHun + ", cell 0 2");
 		add(qaboxp, App.hm0oneHun + ", cell 0 0, spanx, center");
 		qaboxp.matchToQuestion(t);
-		add(qbutsp, App.hm0oneHun + ", cell 0 1, spanx, center, split2, gap 15%, width 70%, flowx");
+		add(qvidp, App.hm0oneHun + ", cell 0 1, spanx, left, split3, gap 2%, width 15%, flowx");
+		add(qbutsp, App.hm0oneHun + ", left, width 70%, flowx");
 		add(optionsp, App.hm0oneHun + ", width 10%, flowy, gap 5%");
+		add(trainExamp, App.hm0oneHun + ", cell 4 2");
 
-		if (t == '0') {
+		App.ddsDealHandDispExamNumbWordsSuppress = false;
+
+		if (t == '0') { // DFC Training
+			add(newpT, App.hm0oneHun + ", cell 1 2");
 			add(tmep, App.hm0oneHun + ", cell 2 2");
 			add(newAndTellp, App.hm0oneHun + ", cell 3 2");
+			cFlowp.setVisible(false);
+			newpT.setVisible(App.dfcAutoNext == 3);
+			newAndTellp.setVisible(App.dfcAutoNext == 3);
+		}
+		else if (t == '1') { // DFC Exam
+			cFlowp.setVisible(true);
+			add(newpE, App.hm0oneHun + ", cell 3 2");
+			newpE.setVisible(true);
+			qbutsp.setVisible(false);
 		}
 		else if (t == 'Q') {
+			newpE.setVisible(true);
+			add(newpE, App.hm0oneHun + ", cell 3 2");
 			add(qaboxp, App.hm0oneHun + ", cell 0 0, spanx, center");
 		}
-		else if (t == 'T' || t == 'A' || t == 'R') {
+		else if (t == 'T') {
+			newpE.setVisible(true);
+			add(newpE, App.hm0oneHun + ", cell 3 2");
+			add(qaboxp, App.hm0oneHun + ", cell 0 0, spanx, center");
+			qbutsp.setVisible(false);
+			App.ddsDealHandDispExamNumbWordsSuppress = true;
+		}
+		else if (t == 'A' || t == 'R') {
+			newpE.setVisible(true);
+			add(newpE, App.hm0oneHun + ", cell 3 2");
 			add(qaboxp, App.hm0oneHun + ", cell 0 0, spanx, center");
 			qbutsp.setVisible(false);
 		}
 		else if (t == 'X') {
+			newpE.setVisible(true);
+			add(newpE, App.hm0oneHun + ", cell 3 2");
 			add(qaboxp, App.hm0oneHun + ", cell 0 0, spanx, center");
 			qbutsp.setVisible(false);
 		}
 		else {
+			newpE.setVisible(true);
+			add(newpE, App.hm0oneHun + ", cell 3 2");
 			qbutsp.setVisible(false);
 		}
-
-		add(newp, App.hm0oneHun + ", cell 1 2");
-		add(trainExamp, App.hm0oneHun + ", cell 4 2");
 	}
 
 }
@@ -211,37 +236,64 @@ class Qu_z_AnsBoxPanel extends JPanel {
 
 	}
 
-//	public void paintComponent(Graphics g) {
-//		// =============================================================
-//
-//		// this is just an attempt to highlight the exam button
-//		g.setColor(Cc.RedStrong);
-//		
-//		float w = getWidth();
-//		int fromx = 0; //(int)(w * 0.55);
-//		int farx = (int)w; //(int)(w * 0.39);
-//
-//		g.fillRect(fromx, 0, farx, getHeight());
-//
-//	
-//		super.paintComponent(g); 
-//	}
-//
-
 }
 
 /**   
  */
-class Qu_z_NewPanel extends JPanel {
+class Qu_z_CFlowPanel extends JPanel {
 	// ---------------------------------- CLASS -------------------------------------
 
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 */
-	Qu_z_NewPanel() { /* Constructor */
+	Qu_z_CFlowPanel() { /* Constructor */
+		// ============================================================================
+		setLayout(new MigLayout(App.simple, "[]", "5%[center]5%"));
+
+		setOpaque(false);
+
+		RpfResizeButton b = new RpfResizeButton(Aaa.s_SelfLabel, "                     Keep clicking   Flow", 15, 15, 0.7f);
+		b.addActionListener(App.con);
+		add(b, App.hm1oneHun);
+	}
+
+}
+
+/**   
+ */
+class Qu_z_NewPanelT extends JPanel {
+	// ---------------------------------- CLASS -------------------------------------
+
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 */
+	Qu_z_NewPanelT() { /* Constructor */
 		// ============================================================================
 		setLayout(new MigLayout(App.simple, "[center]", "5%[center]5%"));
+
+		setOpaque(false);
+
+		RpfResizeButton b = new RpfResizeButton(Aaa.s_Std, "question_z_Next", 15, 15, 0.7f);
+		b.addActionListener(App.con);
+		add(b, App.hm1oneHun);
+	}
+
+}
+
+/**   
+ */
+class Qu_z_NewPanelE extends JPanel {
+	// ---------------------------------- CLASS -------------------------------------
+
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 */
+	Qu_z_NewPanelE() { /* Constructor */
+		// ============================================================================
+		setLayout(new MigLayout(App.simple, "20%[center]20%", "5%[center]5%"));
 
 		setOpaque(false);
 
@@ -274,6 +326,30 @@ class Qu_z_NewAndTellPanel extends JPanel {
 }
 
 /**   
+ */
+class Qu_z_VideoPanel extends JPanel {
+	// ---------------------------------- CLASS -------------------------------------
+
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 */
+	Qu_z_VideoPanel() { /* Constructor */
+		// ============================================================================
+		setLayout(new MigLayout(App.simple, "[]10%[]", "20%[center]20%"));
+
+		setOpaque(false);
+
+		RpfResizeButton b;
+		b = new RpfResizeButton(Aaa.s_Std, "question_z_Video", 20, 15, 0.65f);
+		add(b, App.hm1oneHun);
+
+		b = new RpfResizeButton(Aaa.s_Std, "question_z_Learn", 20, 15, 0.65f);
+		add(b, App.hm1oneHun);
+	}
+}
+
+/**   
 */
 class Qu_z_OptionsPanel extends JPanel {
 	// ---------------------------------- CLASS -------------------------------------
@@ -284,11 +360,11 @@ class Qu_z_OptionsPanel extends JPanel {
 	 */
 	Qu_z_OptionsPanel() { /* Constructor */
 		// ============================================================================
-		setLayout(new MigLayout(App.simple, "[center]20%", "20%[center]20%"));
+		setLayout(new MigLayout(App.simple, "[center]15%", "20%[center]20%"));
 
 		setOpaque(false);
 
-		RpfResizeButton b = new RpfResizeButton(Aaa.s_Std, "question_z_Options", 20, 15, 0.65f);
+		RpfResizeButton b = new RpfResizeButton(Aaa.s_Std, "question_z_Options", 20, 15, 0.60f);
 		b.addActionListener(App.con);
 		add(b, App.hm1oneHun);
 	}
@@ -309,7 +385,7 @@ class Qu_z_TrainExamPanel extends JPanel implements ActionListener {
 	 */
 	Qu_z_TrainExamPanel() { /* Constructor */
 		// ============================================================================
-		setLayout(new MigLayout(App.simple, "25%[][]10%", "15%[center]15%"));
+		setLayout(new MigLayout(App.simple, "21%[]4%[]10%", "15%[center]15%"));
 
 		setOpaque(false);
 
@@ -374,7 +450,7 @@ class Qu_z_TrainExamPanel extends JPanel implements ActionListener {
 			if (firstUse == null) {
 				firstUse = Calendar.getInstance();
 			}
-			if ((Calendar.getInstance().getTimeInMillis() - firstUse.getTimeInMillis()) > 2000) {
+			if ((Calendar.getInstance().getTimeInMillis() - firstUse.getTimeInMillis()) > 10000) {
 				highlightExamButton = false;
 			}
 			// this is just an attempt to highlight the exam button

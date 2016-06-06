@@ -118,6 +118,7 @@ public class q_ {
 
 	public final static int rq = q("rq"); // aaBridge only Require Build No
 	public final static int eb = q("eb"); // aaBridge only 'Enter the deal' Blocker
+	public final static int bv = q("bv"); // aaBridge only 'Enter the deal' etc button vivibility
 	public final static int tc = q("tc"); // BBO system to hide show card display updates - so you can jump forward
 	public final static int gf = q("gf"); // grey fade y Y = Yes other = no // ignored since 2814
 

@@ -68,7 +68,7 @@ public class QuAskPanel extends ConsumePanel {
 		scaleFrac = width / LIN_STANDARD_WIDTH;
 		fontScaleFrac = FONT_SCALE_FRAC * scaleFrac;
 		heightOfCurFontFrac = LINE_SEPARTATION_FRAC; // no mult this is a const // * scaleFrac;
-		lineSpacing_multiplier = 1;
+		lineSpacing_multiplier = App.one_unless_linux();
 		heightOfCurFont = 0;
 		maxHeightOnCurLine = 0; // set later by calc
 		nonFont_on_this_line = false;

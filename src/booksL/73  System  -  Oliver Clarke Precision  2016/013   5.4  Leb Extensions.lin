@@ -21,7 +21,7 @@ mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE 
 
 %%
 %%  You can NOW use  ALL 2814 and later features, all  'older'
-%%   aaBridge players are screened just before the first  'pg'
+%%   copies of aaBridge are screened out just before the first  'pg'
 %%
 
 fh|t40|                    Font   t  t-title      section titles within chapters
@@ -89,7 +89,7 @@ ht|z|at|@0
 %% <<--FRONTPAGE_FOOTER_REPLACE_START->>
 fh|940|fm|9|fp|9|at|@0@1|
 ht|i|
-rq|2814|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2814 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+rq|2830|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2830 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
 %% <<--FRONTPAGE_FOOTER_REPLACE_END->>
 pg| ***** 0 ***** |
 
@@ -485,7 +485,7 @@ The only real difference here is that the doubler has to be exceptionally good b
 
 The other thing the doubler has to bear in mind is that Partner may be weak with no outside 5-card suit, or their long suit may even be in Opps' suit, so the transfer into a new suit does NOT promise a 5+-card holding.
 
-It has been known for Partner to transfer into a 3-card suit!!   eg: (2@H) - X - (No) - ?    when partner is weak and 3433 with 4-card Hearts.
+It has been known for Partner to transfer into a 3-card suit!! eg:    (2@H)  -  X  -  (Pass)  -  ?    when partner is weak and 3433 with 4-card Hearts.
 
 So please do not forget that if Responder transfers into a new suit (or bids it at the 2-level if space permits), they are promising you NOTHING at that stage.
 
@@ -496,9 +496,13 @@ pg| ***** 22 ***** |
 nt|^z@3^b@2|at|^^^^|
 cp|red|at|^*bOliverC:^*n|cp||at|  If they choose to bid on after transferring, then fine, but that's THEIR decision, not yours.  Unless, of course, you have an absolute monster of a hand.
 
-You can use either Lebensohl or Transfer Lebensohl sequences in exactly the same way in these situations.
+You can use either Lebensohl or Transfer Lebensohl sequences in exactly the same way in these situations.  Thus
 
-Thus   (2@H) - X - (Pass) - 2NT - 3@C - 3NT   shows values for 3NT and promises a decent stop in Hearts, and denies 4-card spades.
+^c(2@H)   -  X    -   (p)   -   2NT
+|n^|8|at|
+^c  (p)   -  3@C  -   (p)   -   3NT   
+|n^|5|at|
+shows values for 3NT and promises a decent stop in Hearts, and denies 4-card spades.
 
 Generally I always prefer to use Transfer Lebensohl after takeout doubles of a weak 2, because it still offers significant advantages over normal Lebensohl.
 

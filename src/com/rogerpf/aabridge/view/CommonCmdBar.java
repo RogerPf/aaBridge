@@ -19,6 +19,7 @@ import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
 import com.rogerpf.aabridge.controller.App;
+import com.rogerpf.aabridge.igf.MassGi.GraInfo;
 import com.rogerpf.aabridge.model.Cc;
 
 /**
@@ -45,6 +46,7 @@ public class CommonCmdBar extends ClickPanCbar {
 
 	public JPanel            T3_9__empt = new ClickPanCbar();
 	public ReviewBar3        T3_9__rvb3 = new ReviewBar3();
+	public CommonBar3        T3_9__tbp3 = new CommonBar3();
 
 	public JPanel            T4_9__empt = new ClickPanCbar();
 	public MovieModePart4    T4_9__movm = new MovieModePart4();
@@ -77,6 +79,7 @@ public class CommonCmdBar extends ClickPanCbar {
 		c3.setLayout(new MigLayout(App.simple + ", flowy", "", "[100%]"));
 		c3.add(T3_9__empt, App.hm3oneHun);
 		c3.add(T3_9__rvb3, App.hm3oneHun);
+		c3.add(T3_9__tbp3, App.hm3oneHun);
 
 		c4.setLayout(new MigLayout(App.simple + ", flowy", "", "[100%]"));
 		c4.add(T4_9__empt, App.hm3oneHun);
@@ -117,13 +120,13 @@ public class CommonCmdBar extends ClickPanCbar {
 //		boolean y = true;
 
 		// @formatter:off
-		boolean lin_virgin_or_single = App.isLin__Simple() || App.hideCommandBar || App.flowOnlyCommandBar;
+		boolean lin_virgin = App.isLin__Virgin() || App.hideCommandBar || App.flowOnlyCommandBar;
 
 		boolean S_vm = (App.visualMode == App.Vm_InsideADeal) || App.hideCommandBar;
 		boolean T_vm = !S_vm;
 		boolean deal_review = S_vm && App.isModeAnyReview();
 		
-		boolean deal_enterable = App.deal.isSaveable() && (App.visualMode == App.Vm_DealAndTutorial);
+		boolean deal_enterable = (App.deal.isSaveable() || App.isLin__Single()) && (App.visualMode == App.Vm_DealAndTutorial);
 
 		T0_9__empt.setVisible( S_vm );
 		T0_9__tbp0.setVisible( T_vm );
@@ -134,12 +137,22 @@ public class CommonCmdBar extends ClickPanCbar {
 		T2_9__empt.setVisible( !(T_vm || deal_review));
 		T2_9__tbp2.setVisible(  (T_vm || deal_review));
 
-		T3_9__empt.setVisible( !deal_review );
-		T3_9__rvb3.setVisible(  deal_review );
+		boolean show_enter = !lin_virgin && !S_vm && deal_enterable;
 
-		T4_9__empt.setVisible(  lin_virgin_or_single         );
-		T4_9__movm.setVisible( !lin_virgin_or_single &&  S_vm);
-		T4_9__tbp4.setVisible( !lin_virgin_or_single && !S_vm && deal_enterable);
+		T3_9__empt.setVisible( !show_enter && !deal_review );
+		T3_9__rvb3.setVisible( deal_review );
+		T3_9__tbp3.setVisible( show_enter && !deal_review);
+		if (show_enter && !deal_review) {
+		   T3_9__tbp3.set1stContVisibility();
+		}
+
+		T4_9__empt.setVisible(  lin_virgin         );
+		T4_9__movm.setVisible( !lin_virgin &&  S_vm);
+		T4_9__tbp4.setVisible( show_enter);
+		if (show_enter) {
+			T4_9__tbp4.setEtdVisibility();
+		}
+		
 		// @formatter:on
 	}
 }
@@ -233,6 +246,62 @@ class ReviewBar3 extends ClickPanCbar {
 
 /**   
  */
+class CommonBar3 extends ClickPanCbar {
+	// ---------------------------------- CLASS -------------------------------------
+	private static final long serialVersionUID = 1L;
+
+	private RpfResizeButton cont;
+	private RpfResizeButton b1st;
+
+	CommonBar3() { /* Constructor */
+		// ============================================================================
+		setOpaque(false);
+		// setBackground(Aaa.baizeGreen);
+
+		setLayout(new MigLayout(App.simple, "push[]5%[]5%", "push[]push"));
+
+		add(b1st = new RpfResizeButton(Aaa.s_Std, "tutorialIntoDealB1st", 21, 60, 0.75f));
+		add(cont = new RpfResizeButton(Aaa.s_Std, "tutorialIntoDealCont", 26, 60, 0.75f));
+
+		setVisible(false);
+	}
+
+	public void set1stContVisibility() {
+		// =============================================================
+		{
+			boolean vis = App.showB1stBtn;
+			if (App.isLin__Virgin_or_Single() == false) {
+				if (App.mg != null) {
+					GraInfo gi = App.mg.giAy.get(App.mg.stop_gi);
+					int bv = gi.get_CapEnv__bv_1st();
+					if (bv == 0)
+						vis = false;
+					if (bv == 1)
+						vis = true;
+				}
+			}
+			b1st.setVisible(vis);
+		}
+
+		{
+			boolean vis = App.showContBtn;
+			if (App.isLin__Virgin_or_Single() == false) {
+				if (App.mg != null) {
+					GraInfo gi = App.mg.giAy.get(App.mg.stop_gi);
+					int bv = gi.get_CapEnv__bv_cont();
+					if (bv == 0)
+						vis = false;
+					if (bv == 1)
+						vis = true;
+				}
+			}
+			cont.setVisible(vis);
+		}
+	}
+}
+
+/**   
+ */
 class MovieModePart4 extends ClickPanCbar {
 	// ---------------------------------- CLASS -------------------------------------
 	private static final long serialVersionUID = 1L;
@@ -242,13 +311,11 @@ class MovieModePart4 extends ClickPanCbar {
 		setOpaque(false);
 		setLayout(new MigLayout(App.simple, "[]", "push[]push"));
 
-		JButton b;
-
-		b = new RpfResizeButton(Aaa.s_Std, "dealmodeBackToMovie", 95, 70, 0.75f);
-		add(b);
+		add(new RpfResizeButton(Aaa.s_Std, "dealmodeBackToMovie", 95, 70, 0.75f));
 
 		setVisible(false);
 	}
+
 }
 
 /**   
@@ -257,16 +324,31 @@ class CommonBar4 extends ClickPanCbar {
 	// ---------------------------------- CLASS -------------------------------------
 	private static final long serialVersionUID = 1L;
 
+	RpfResizeButton etd;
+
 	CommonBar4() { /* Constructor */
 		// =============================================================
 		setOpaque(false);
 		setLayout(new MigLayout(App.simple, "[]", "push[]push"));
 
-		JButton b;
-
-		b = new RpfResizeButton(Aaa.s_Std, "tutorialIntoDealClever", 95, 70, 0.80f);
-		add(b);
+		add(etd = new RpfResizeButton(Aaa.s_Std, "tutorialIntoDealClever", 95, 70, 0.80f));
 
 		setVisible(false);
+	}
+
+	public void setEtdVisibility() {
+		// =============================================================
+		boolean vis = true;
+		if ((App.isLin__Virgin_or_Single() == false) && (App.forceShowEtd == false)) {
+			if (App.mg != null) {
+				GraInfo gi = App.mg.giAy.get(App.mg.stop_gi);
+				int bv = gi.get_CapEnv__bv_etd();
+				if (bv == 0)
+					vis = false;
+				if (bv == 1)
+					vis = true;
+			}
+		}
+		etd.setVisible(vis);
 	}
 }

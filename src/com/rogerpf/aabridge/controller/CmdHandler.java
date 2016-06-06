@@ -62,10 +62,10 @@ public final class CmdHandler {
 		new RpfBtnDef( "leftWingNormal",			"Play",		        "Bid-Play - lets you  Bid or Play  more of the hand  "), 
 		new RpfBtnDef( "leftWingReview",			"Review",			"Review - lets you  Review  the cards played so far  "), 
                                                                         
-		new RpfBtnDef( "reviewBackOneCard",			"<",				"Go back one card  best used with  DDS  then Mouse Wheel"),
-		new RpfBtnDef( "reviewFwdOneCard",			">",		  		"Go forward one card  best used with  DDS  then Mouse Wheel"),
-		new RpfBtnDef( "ddsShowBids",				"Show Bids", 		"Restores the Bidding Table without having to load another hand"),
-		new RpfBtnDef( "ddsAnalyse",				"Analyse", 			"Works out the highest number of tricks that each side can win in any suit or No Trumps"),
+		new RpfBtnDef( "reviewBackOneCard",			"<",				"Go back one card  best used with  DDS  then Mouse Wheel  "),
+		new RpfBtnDef( "reviewFwdOneCard",			">",		  		"Go forward one card  best used with  DDS  then Mouse Wheel  "),
+		new RpfBtnDef( "ddsShowBids",				"Show Bids", 		"Restores the Bidding Table without having to load another hand  "),
+		new RpfBtnDef( "ddsAnalyse",				"Analyse", 			"Works out the highest number of tricks that each side can win in any suit or No Trumps  "),
 		new RpfBtnDef( "ddsLabel",					"DDS", 				"DDS  -  Double Dummy Solver  -   On  /  Off"),
 		new RpfBtnDef( "ddsScoreOnOff",				"On", 			    "On/Off Shows what WILL happen when you click the button "),
 		new RpfBtnDef( "hiddenHandsShowHide",		"Show", 			"Show / Hide the normally hidden hands "),
@@ -75,7 +75,7 @@ public final class CmdHandler {
 		new RpfBtnDef( "reviewBackOneBid",			"<",		  		"Go back one bid  "),
 		new RpfBtnDef( "reviewFwdOneBid",			">",		  		"Go forward one bid  "),
 
-		new RpfBtnDef( "editHandsShuffWeak",		"Shuf Op",			"Shuf Op - Shuffle the weakest pair of hands and jump directly into Play/Bid  "),
+		new RpfBtnDef( "editHandsShuffWeak",		"Shuf Op",			"Shuf Op - Shuffle the weakest pair of hands and jump directly into  Play / Bidding  "),
 		new RpfBtnDef( "editHands",					"Hands",			"Drag and Drop the cards from hand to hand  "),
 		new RpfBtnDef( "editHandsRotateAnti",		"<",				"Rotate the CARDS Anti-clockwise - this is a TRUE ROTATE - the SEATS 'N S E W' do NOT move  "),
 		new RpfBtnDef( "editHandsRotateClock",		">",				"Rotate the CARDS Clockwise - this is a TRUE ROTATE - the SEATS 'N S E W' do NOT move  "),
@@ -88,10 +88,15 @@ public final class CmdHandler {
 		new RpfBtnDef( "commonFlowBack",			"<",				"Go back one trick  "),
 		new RpfBtnDef( "commonStepFwd",				"Step  >",			"Jump Forward to the next stopping point  "),
 		new RpfBtnDef( "commonFlowFwd",				"Flow  >",			"Run Forward to the next stopping point - showing each card being played  "),
-		new RpfBtnDef( "dealmodeBackToMovie",		"Back  to Movie",	"Continues the  Tutorial  also know as - Bridge movie  "),
-		new RpfBtnDef( "tutorialIntoDealClever",	"Enter the Deal",	"Enter the Deal  and go into   'Review' mode   *Right Click*  on the  'Nav Bar'  is a short cut  so you won't see the hands   "),
+		new RpfBtnDef( "dealmodeBackToMovie",		"Back  to Movie",	"Returns back to the   'Tutorial level'   (aka - Bridge movie)  "),
+		new RpfBtnDef( "tutorialIntoDealCont",		"Cont",				"Enter the Deal  and go into   'Play' mode      continue  after ALL existing play "),
+		new RpfBtnDef( "tutorialIntoDealB1st",		"1st",			    "Enter the Deal  and go into   'Play' mode      start from just after the  1st  lead  "),
+		new RpfBtnDef( "tutorialIntoDealClever",	"Enter the Deal",	"Enter the Deal  and go into   'Review' mode  "),
 
 		new RpfBtnDef( "questionTellMe",			"Tell Me",			"Shows you the Answer  "),
+
+		new RpfBtnDef( "question_z_Video",			"Video",			"Plays Video Demo  (Youtube)  "),
+		new RpfBtnDef( "question_z_Learn",			"Learn",			"Shows you  HOW To  Memorize  the suit distributions   "),
 		new RpfBtnDef( "question_z_Next",			"New",				"New - Show New  Hand Shape  question  "),
 		new RpfBtnDef( "question_z_NextAndTell",	"New & Tell",		""),
 		new RpfBtnDef( "question_z_Options",		"Options",			"Show - Distribution Flash Card - options  "),
@@ -213,6 +218,7 @@ public final class CmdHandler {
 			}
 
 			App.gbp.c1_1__tfdp.setShowCompletedTrick();
+			App.gbp.c1_1__tfdp.makeCardSuggestions();
 		}
 
 		else if (App.isMode(Aaa.NORMAL_ACTIVE) && App.deal.isPlaying() && App.youAutoplayAlways) {
@@ -259,13 +265,16 @@ public final class CmdHandler {
 
 //		boolean refreshSeatChoice = (App.respectLinYou == false);
 
+		App.ddsScoreShow = false;
+
+		App.allTwister_reset();
 		App.respectLinYou = true;
 		App.frame.rop.p2_SeatChoice.respectLinYouSetBy_mainNewBoard();
 
 		App.flowOnlyCommandBar = false; // ugly should not need to do this here DO WE?
 		App.hideCommandBar = false; // ugly should not need to do this here DO WE?
 		App.hideTutNavigationBar = false; // ugly should not need to do this here DO WE?
-		App.ddsAnalyserVisible = false;
+		App.ddsAnalyserPanelVisible = false;
 
 		App.setMode(Aaa.NORMAL_ACTIVE);
 		App.reviewTrick = 0;
@@ -283,6 +292,7 @@ public final class CmdHandler {
 		App.gbp.c0_2__blp.hideClaimButtonsIfShowing();
 
 		App.dealMajorChange();
+		App.localShowHidden = false;
 		App.gbp.matchPanelsToDealState();
 		App.frame.repaint();
 		if (App.isPauseAtEotClickWanted()) {
@@ -309,7 +319,7 @@ public final class CmdHandler {
 		App.flowOnlyCommandBar = false; // ugly should not need to do this here DO WE?
 		App.hideCommandBar = false; // ugly should not need to do this here DO WE?
 		App.hideTutNavigationBar = false; // ugly should not need to do this here DO WE?
-		App.ddsAnalyserVisible = false;
+		App.ddsAnalyserPanelVisible = false;
 
 		App.reviewTrick = 0;
 		App.reviewCard = 0;
@@ -349,6 +359,8 @@ public final class CmdHandler {
 		Dimension wh = App.frame.getSize();
 		wh.width = (wh.width * 85) / 100;
 		wh.height = (wh.height * 70) / 100;
+		wh.width = (wh.width * 65) / 100;
+		wh.height = (wh.height * 55) / 100;
 		fc.setPreferredSize(wh);
 	}
 
@@ -626,14 +638,21 @@ public final class CmdHandler {
 
 	/**
 	 */
-	static void leftWingNormal() { // button also shows with name 'Normal'
+	public static void leftWingNormal() { // button shows as 'Play'
 		// ==============================================================================================
 		if (App.deal.isDoneHand()) { // so we skip the 'done hand'
 			return;
 		}
 
+		App.show_poor_def_msg = true;
+
+		if (App.isMode(Aaa.REVIEW_PLAY) /* || App.isMode(Aaa.REVIEW_BIDDING) && App.deal.isFinished() */) {
+			App.deal.fastUndoBackTo(App.reviewTrick, App.reviewCard, false /* setDdsNextCard */);
+		}
+
 		App.setMode(Aaa.NORMAL_ACTIVE);
 
+		App.gbp.c1_1__tfdp.makeCardSuggestions();
 		App.gbp.matchPanelsToDealState();
 
 		App.frame.repaint();
@@ -798,10 +817,11 @@ public final class CmdHandler {
 		if (App.deal.isDoneHand()) // so we skip the 'done hand'
 			return;
 		App.ddsScoreShow = !App.ddsScoreShow;
-		if (App.ddsScoreShow == false) {
-			App.savePreferences();
-		}
-		ddsShowBids();
+//		if (App.ddsScoreShow == false) {
+//			App.savePreferences();
+//		}
+//		ddsShowBids();
+		App.gbp.matchPanelsToDealState();
 	}
 
 	/**   
@@ -832,21 +852,29 @@ public final class CmdHandler {
 	public static void reviewTrickDisplayTimerFired() {
 		App.reviewCard++;
 		boolean atEnd = validateReviewIndexes();
-		if (!atEnd && App.isMode(Aaa.REVIEW_PLAY) && App.reviewCard < 4) {
-			App.gbp.c1_1__tfdp.reviewTrickDisplayTimer.start();
+
+		if (!atEnd && App.isMode(Aaa.REVIEW_PLAY)) {
+			if (App.reviewCard < 4) {
+				App.gbp.c1_1__tfdp.reviewTrickDisplayTimer.start();
+			}
+			else {
+				App.con.controlerInControl();
+			}
 		}
+
 		App.gbp.matchPanelsToDealState();
 		App.frame.repaint();
 	}
 
 	/**   
 	 */
-	static void leftWingEdit() {
+	public static void leftWingEdit() {
 		if (App.deal.isDoneHand()) // so we skip the 'done hand'
 			return;
 		if (App.isMode(Aaa.REVIEW_PLAY) /* || App.isMode(Aaa.REVIEW_BIDDING) && App.deal.isFinished() */) {
 			App.deal.fastUndoBackTo(App.reviewTrick, App.reviewCard, false /* setDdsNextCard */);
 		}
+		App.gbp.c1_1__tfdp.makeCardSuggestions();
 		App.setMode(Aaa.EDIT_PLAY);
 		App.frame.repaint();
 	}
@@ -920,7 +948,7 @@ public final class CmdHandler {
 	 */
 	public static void editHandsShuffWeak() {
 		App.deal.eb_blocker = false;
-		App.ddsAnalyserVisible = false;
+		App.ddsAnalyserPanelVisible = false;
 		App.deal.clearPlayerNames();
 		App.deal.ShuffleWeakestAxisHands();
 		App.dealMajorChange();
@@ -973,7 +1001,7 @@ public final class CmdHandler {
 	}
 
 	static void editHandsRotateAnti() {
-		App.deal.clearPlayerNames();
+		// App.deal.clearPlayerNames();
 		App.deal.rotateHands(-1);
 		App.dealMajorChange();
 		App.gbp.matchPanelsToDealState();
@@ -981,7 +1009,7 @@ public final class CmdHandler {
 	}
 
 	static void editHandsRotateClock() {
-		App.deal.clearPlayerNames();
+		// App.deal.clearPlayerNames();
 		App.deal.rotateHands(+1);
 		App.dealMajorChange();
 		App.gbp.matchPanelsToDealState();
@@ -1131,7 +1159,7 @@ public final class CmdHandler {
 	/**
 	 */
 	static void dealmodeBackToMovie() {
-		App.ddsAnalyserVisible = false;
+		App.ddsAnalyserPanelVisible = false;
 		MassGi_utils.do_dealmodeBackToMovie();
 		App.frame.repaint();
 		// App.biddingVisibilityCheck();
@@ -1153,6 +1181,24 @@ public final class CmdHandler {
 
 	/**
 	 */
+	public static void tutorialIntoDealCont() {
+		MassGi_utils.do_tutorialIntoDealCont();
+		App.show_poor_def_msg = true;
+		App.gbp.matchPanelsToDealState();
+		// App.frame.repaint();
+	}
+
+	/**
+	 */
+	public static void tutorialIntoDealB1st() {
+		MassGi_utils.do_tutorialIntoDealB1st();
+		App.show_poor_def_msg = true;
+		App.gbp.matchPanelsToDealState();
+		// App.frame.repaint();
+	}
+
+	/**
+	 */
 	static void questionTellMe() {
 		MassGi_utils.do_tutorialTellMe();
 		App.frame.repaint();
@@ -1163,6 +1209,9 @@ public final class CmdHandler {
 	public static void question_z_Next() {
 		App.lbx_nextAndTellClicked = false;
 		App.book.loadChapterByIndex(App.book.lastChapterIndexLoaded);
+
+		App.frame.rop.setSelectedIndex(App.RopTab_3_DFC);
+
 		App.frame.repaint();
 	}
 
@@ -1182,6 +1231,18 @@ public final class CmdHandler {
 		App.frame.executeCmd("rightPanelPrefs3_DFC");
 		App.frame.payloadPanelShaker();
 		App.frame.repaint();
+	}
+
+	/**
+	 */
+	static void question_z_Video() {
+		App.frame.executeCmd("playVideo_distrFlashCards");
+	}
+
+	/**
+	 */
+	static void question_z_Learn() {
+		App.frame.executeCmd("openPage_MemorizeDistributions");
 	}
 
 	/**

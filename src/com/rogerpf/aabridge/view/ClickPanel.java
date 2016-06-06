@@ -56,10 +56,6 @@ public class ClickPanel extends JPanel implements MouseListener, MouseWheelListe
 			App.gbp.c0_0__tlp.descEntry.setFocusable(false);
 		}
 		App.gbp.hideClaimButtonsIfShowing();
-
-//		if (e.getButton() == MouseEvent.BUTTON3) {  now in ClickPanCbar
-//			App.frame.clickPasteTimer.start();
-//		}
 	}
 
 	@Override

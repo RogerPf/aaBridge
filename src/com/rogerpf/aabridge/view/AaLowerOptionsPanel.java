@@ -10,6 +10,7 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.view;
 
+import java.awt.Desktop;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
@@ -41,8 +42,11 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 
 	JLabel label;
 
+	QCheckBox saveAsBboUploadFormat;
 	JTextField tfSavesFolderDisplay;
+	QCheckBox saveAsBboUploadExtraS;
 
+	QButton openSavesFolder;
 	QButton useDefaultSavesFolder;
 	QButton browseForSavesFolder;
 
@@ -66,20 +70,34 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 
 		setLayout(new MigLayout(App.simple + ", flowy", "push[]35[]10[][][]20[][][]", "1[][]"));
 
-		add(label = new QLabel("Saves Folder"), "flowx, split3");
+		add(label = new QLabel("Saves Folder"), ", flowx, split2");
 		label.setForeground(Aaa.optionsTitleGreen);
 
-		add(useDefaultSavesFolder = new QButton(this, "Use Default"), "gapx 8");
+		add(openSavesFolder = new QButton(this, "Open Saves Folder"), "gapx20, flowx");
+		openSavesFolder.setToolTipText("Once the Saves folder is Open  -  you can  Drag & Drop  any of the deals (lin files) on to aaBridge  ");
 		if (App.onMac == false)
-			useDefaultSavesFolder.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
+			openSavesFolder.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
 
-		add(browseForSavesFolder = new QButton(this, "Choose"), "gapx 8");
-		browseForSavesFolder.setToolTipText("Lets you select a different  'Saves Folder'   -   on a MAC you need to type in the  'final folder'  name  ");
+		add(saveAsBboUploadFormat = new QCheckBox(this, App.saveAsBboUploadFormat, "Save using BBO uploadable format",
+				"Note - The BBO uploadable format requires that each deal is on its own line  -  so no extra line feed  "));
+
+		add(tfSavesFolderDisplay = new JTextField((App.onMacOrLinux ? 23 : 19)), "gapy2, split2");
+		tfSavesFolderDisplay.setEditable(false);
+
+		add(saveAsBboUploadExtraS = new QCheckBox(this, App.saveAsBboUploadExtraS, "Add extra spaces to BBO format",
+				"Adds extra spaces to the BBO upload format  -  to help with  'manual'  readability  "));
+
+		add(browseForSavesFolder = new QButton(this, "Select a different  Saves Folder"), "");
+		browseForSavesFolder.setToolTipText("Lets you select a different  'Saves Folder'   -   on a MAC you need to  TYPE IN  the  'final folder'  name  ");
 		if (App.onMac == false)
 			browseForSavesFolder.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
 
-		add(tfSavesFolderDisplay = new JTextField((App.onMac ? 23 : 19)), "flowy, wrap");
-		tfSavesFolderDisplay.setEditable(false);
+		add(label = new QLabel("Please re-start  aaBridge  if changed"), "gapy 4, flowx");
+//	    label.setForeground(Aaa.optionsTitleGreen);
+
+		add(useDefaultSavesFolder = new QButton(this, "Restore the  Default  Saves Folder"), "gapy 4, wrap");
+		if (App.onMac == false)
+			useDefaultSavesFolder.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
 
 		add(resetPrefs = new QButton(this, "Rst Colors"));
 		if (App.onMac == false)
@@ -194,6 +212,12 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 				}
 			}
 		}
+		else if (e.getSource() == openSavesFolder) {
+			try {
+				Desktop.getDesktop().open(new File(App.realSavesPath));
+			} catch (IOException e1) {
+			}
+		}
 	}
 
 	public void stateChanged(ChangeEvent e) {
@@ -243,7 +267,13 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 		Object source = e.getItemSelectable();
 
 		// @formatter:off
-		if      (source == outlineCardEdge) {
+		if (source == saveAsBboUploadFormat) {
+            App.saveAsBboUploadFormat = b;
+        }
+		else if (source == saveAsBboUploadExtraS) {
+            App.saveAsBboUploadExtraS = b;
+        }
+		else if (source == outlineCardEdge) {
             App.outlineCardEdge = b;
         }
 		else if      (source == movieBidFlowDoesFlow) {

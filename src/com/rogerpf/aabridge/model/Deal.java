@@ -79,6 +79,7 @@ public class Deal {
 	public String purpleScore = "";
 
 	public boolean dfcDeal = false;
+	public int forceDifferent = 0; // used to stop do_tutorialIntoDealClever searching too far
 
 	/**
 	 */
@@ -1168,74 +1169,179 @@ public class Deal {
 			partialClear(); // this is where you have to pray that this is what is expected !
 		}
 
-		Suit suit;
-		for (int i = 0; i < maxSeats; i++) {
-			int handCompass = (i + 2) % 4; // So starting at South (aaBridge encoding) which is the first hand in the linBlock
-			Hand hand = hands[handCompass];
+		boolean suit_symb = false; // no suit symbols
 
-			String hs = hsAy.get(i).trim();
+		for (String hs : hsAy) {
+			hs = hs.toLowerCase();
+			if (hs.contains("s") || hs.contains("h") || hs.contains("h") || hs.contains("c")) {
+				suit_symb = true;
+				break; // this is the very common case
+			}
+		}
 
-			suit = Suit.Spades; // set a default suit
-			for (int j = 0; j < hs.length(); j++) {
-				char c = hs.charAt(j);
-				if (handCompass == Dir.South.v && j == 0 && '0' <= c && c <= '4') {
-					if (c == '0')
-						continue; // c = '1'; // South
-					dealerSet = true;
-					Dir dealer = Dir.dirFromInt(((c - '0') + 1) % 4); // for lin '1'=South, '4'=East, aaBridge internal 2=South, 0=North
-					setDealer(dealer);
-					continue; // found the dealer
-				}
-				// @formatter:off
-				switch (c) {
-					case 'S': case 's': suit = Suit.Spades;   continue;
-					case 'H': case 'h': suit = Suit.Hearts;   continue;
-					case 'D': case 'd': suit = Suit.Diamonds; continue;
-					case 'C': case 'c': suit = Suit.Clubs;    continue;
-				}
-				// @formatter:on
-				Rank rank = Rank.charToRank(c);
+		if (suit_symb == false) {
+			// the idea here is a faster way of inputting suits that aaBridge will 'clean up' for you
+			// spaces separate the suits and a hyphen means a void s h d c order
 
-				if (rank == Rank.Invalid)
-					continue; // ignore it perhaps a '-' or a space
+//			   System.out.println("suit_symb == false  "  +  " >" + hsAy.get(0) + "< ");
 
-//				if (rank.v == 9 && suit.v == 0) {
-//					@SuppressWarnings("unused")
-//					int z = 0;
-//				}
+			for (int i = 0; i < maxSeats; i++) {
+				int handCompass = (i + 2) % 4; // So starting at South (aaBridge encoding) which is the first hand in the linBlock
+				Hand hand = hands[handCompass];
 
-				Card card = packPristine.getIfRankAndSuitExists(rank, suit);
-				if (card != null) {
-					packPristine.remove(card);
-				}
-				else {
-					/**
-					 * As the card is not in the pack we must assume that it is
-					 * in one of the hands and is currently unplayed.  The only
-					 * sensible way to remove a played card is to use UNDO !
-					 * But I have never seen 'the spec' so how would I know !
+				String hs = hsAy.get(i).trim();
+
+				Suit suit = Suit.Spades; // set a default suit
+				boolean eating_spaces = true;
+				// System.out.println("");
+				for (int j = 0; j < hs.length(); j++) {
+
+					char c = hs.charAt(j);
+					// System.out.print(c);
+					if (handCompass == Dir.South.v && j == 0 && '0' <= c && c <= '4') {
+						if (c == '0') {
+							continue; // Keep current dealer
+						}
+						dealerSet = true;
+						Dir dealer = Dir.dirFromInt(((c - '0') + 1) % 4); // for lin '1'=South, '4'=East, aaBridge internal 2=South, 0=North
+						setDealer(dealer);
+						continue; // found the dealer
+					}
+
+					if (c == '-') {
+						if (eating_spaces == false) {
+							suit = suit.suitBelow();
+						}
+						eating_spaces = false;
+						c = ' '; // and process as a space
+					}
+
+					if (c == ' ') {
+						if (eating_spaces == false) {
+							suit = suit.suitBelow();
+							eating_spaces = true;
+						}
+						continue;
+					}
+
+					Rank rank = Rank.charToRank(c);
+
+					if (rank == Rank.Invalid)
+						continue; // ignore it perhaps a '-' or a space
+
+					eating_spaces = false;
+
+//					if (rank.v == 9 && suit.v == 0) {
+//						@SuppressWarnings("unused")
+//						int z = 0;
+//					}
+
+					Card card = packPristine.getIfRankAndSuitExists(rank, suit);
+					if (card != null) {
+						packPristine.remove(card);
+					}
+					else {
+						/**
+						 * As the card is not in the pack we must assume that it is
+						 * in one of the hands and is currently unplayed.  The only
+						 * sensible way to remove a played card is to use UNDO !
+						 * But I have never seen 'the spec' so how would I know !
+						 */
+						card = getCardSearchAllHands(rank, suit);
+						if (card == null) {
+							System.out.println("Card not in deck " + rank + " " + suit);
+							continue;
+						}
+
+						boolean success = removeCardIncFOrgs(card);
+						if (success == false) {
+							System.out.println("Can't remove played card " + rank + " " + suit);
+							continue;
+						}
+					}
+					/** 
+					 * Now that the card has been removed from the pack or from a hand
+					 * We can add it back where we want it.
 					 */
-					card = getCardSearchAllHands(rank, suit);
-					if (card == null) {
-						System.out.println("Card not in deck " + rank + " " + suit);
-						continue;
-					}
 
-					boolean success = removeCardIncFOrgs(card);
-					if (success == false) {
-						System.out.println("Can't remove played card " + rank + " " + suit);
-						continue;
-					}
+					hand.fOrgs[suit.v].addDeltCard(card);
+					hand.frags[suit.v].addDeltCard(card);
+
+					// System.out.println(hand + " " + card + "  ");
 				}
-				/** 
-				 * Now that the card has been removed from the pack or from a hand
-				 * We can add it back where we want it.
-				 */
+			}
+		}
+		else {
+			// standard lin file format case ie we have suit symbols 99.99 % case
+			Suit suit;
+			for (int i = 0; i < maxSeats; i++) {
+				int handCompass = (i + 2) % 4; // So starting at South (aaBridge encoding) which is the first hand in the linBlock
+				Hand hand = hands[handCompass];
 
-				hand.fOrgs[suit.v].addDeltCard(card);
-				hand.frags[suit.v].addDeltCard(card);
+				String hs = hsAy.get(i).trim();
 
-				// System.out.println(hand + " " + card + "  ");
+				suit = Suit.Spades; // set a default suit
+				for (int j = 0; j < hs.length(); j++) {
+					char c = hs.charAt(j);
+					if (handCompass == Dir.South.v && j == 0 && '0' <= c && c <= '4') {
+						if (c == '0')
+							continue; // c = '1'; // South
+						dealerSet = true;
+						Dir dealer = Dir.dirFromInt(((c - '0') + 1) % 4); // for lin '1'=South, '4'=East, aaBridge internal 2=South, 0=North
+						setDealer(dealer);
+						continue; // found the dealer
+					}
+					// @formatter:off
+					switch (c) {
+						case 'S': case 's': suit = Suit.Spades;   continue;
+						case 'H': case 'h': suit = Suit.Hearts;   continue;
+						case 'D': case 'd': suit = Suit.Diamonds; continue;
+						case 'C': case 'c': suit = Suit.Clubs;    continue;
+					}
+					// @formatter:on
+					Rank rank = Rank.charToRank(c);
+
+					if (rank == Rank.Invalid)
+						continue; // ignore it perhaps a '-' or a space
+
+					// if (rank.v == 9 && suit.v == 0) {
+					// @SuppressWarnings("unused")
+					// int z = 0;
+					// }
+
+					Card card = packPristine.getIfRankAndSuitExists(rank, suit);
+					if (card != null) {
+						packPristine.remove(card);
+					}
+					else {
+						/**
+						 * As the card is not in the pack we must assume that it is
+						 * in one of the hands and is currently unplayed.  The only
+						 * sensible way to remove a played card is to use UNDO !
+						 * But I have never seen 'the spec' so how would I know !
+						 */
+						card = getCardSearchAllHands(rank, suit);
+						if (card == null) {
+							System.out.println("Card not in deck " + rank + " " + suit);
+							continue;
+						}
+
+						boolean success = removeCardIncFOrgs(card);
+						if (success == false) {
+							System.out.println("Can't remove played card " + rank + " " + suit);
+							continue;
+						}
+					}
+					/** 
+					 * Now that the card has been removed from the pack or from a hand
+					 * We can add it back where we want it.
+					 */
+
+					hand.fOrgs[suit.v].addDeltCard(card);
+					hand.frags[suit.v].addDeltCard(card);
+
+					// System.out.println(hand + " " + card + "  ");
+				}
 			}
 		}
 
@@ -1248,7 +1354,7 @@ public class Deal {
 			for (Hand hand : hands) {
 				if (13 - hand.countOriginalCards() == packPristine.size()) {
 					for (Card card : packPristine) {
-						suit = card.suit;
+						Suit suit = card.suit;
 						hand.fOrgs[suit.v].addDeltCard(card);
 						hand.frags[suit.v].addDeltCard(card);
 					}
@@ -1385,6 +1491,7 @@ public class Deal {
 		d.eb_min_card = eb_min_card;
 
 		d.dfcDeal = dfcDeal;
+		d.forceDifferent = forceDifferent;
 
 		// contract
 		if (contract.isCall()) {
@@ -1491,6 +1598,9 @@ public class Deal {
 			return false;
 
 		if (vulnerability[Dir.EW] != d.vulnerability[Dir.EW])
+			return false;
+
+		if (forceDifferent != d.forceDifferent)
 			return false;
 
 		/** 
@@ -2819,26 +2929,6 @@ public class Deal {
 
 	/**
 	 */
-	public void wipePlayBackToCardNumber(int wipeTo) {
-		// ==============================================================================================
-		clearAllStrategies();
-		App.deal.endedWithClaim = false;
-
-		for (Hand hand : rota[Dir.North.v]) {
-			for (Suit su : Suit.cdhs) {
-				hand.frags[su.v] = (Frag) hand.fOrgs[su.v].clone();
-			}
-			hand.played.clear();
-		}
-
-		// leave only the original leader
-		while (prevTrickWinner.size() > 1) {
-			prevTrickWinner.removeLast();
-		}
-	}
-
-	/**
-	 */
 	public void wipeContractAndPlay() {
 		// ==============================================================================================
 		// set the frags to match the original cards and wipe the played
@@ -3021,6 +3111,9 @@ public class Deal {
 	public String cardPlayForLinSave() {
 		String s = "";
 
+		String eol_or_blank = (App.saveAsBboUploadFormat) ? "" : Zzz.lin_EOL;
+		String extra_space = (App.saveAsBboUploadFormat && App.saveAsBboUploadExtraS) ? " " : "";
+
 		int countPlayed = countCardsPlayed();
 		if (endedWithClaim == false && countPlayed == 0) {
 			return s;
@@ -3030,16 +3123,19 @@ public class Deal {
 		for (int i = 0; i < countPlayed; i++) {
 			Card card = getCardThatWasPlayed(i);
 			s += "pc|" + card.suit.toCharLower() + "" + card.rank.toChar() + "|";
+			if (i == 0 && countPlayed > 1) {
+				s += "pg|" + extra_space + "|"; // add an 'extra' pg|| after the first card
+			}
 			tk = (tk + 1) % 4;
 			if (tk == 0) {
-				s += "pg||" + Zzz.lin_EOL;
+				s += "pg|" + extra_space + "|" + eol_or_blank;
 			}
 		}
 		if (tk != 0) // we ended part way through a trick
-			s += "pg||" + Zzz.lin_EOL;
+			s += "pg|" + extra_space + "|" + eol_or_blank;
 
 		if (endedWithClaim) {
-			s += "mc|" + tricksClaimed + "|pg||" + Zzz.lin_EOL;
+			s += "mc|" + tricksClaimed + "|pg|" + extra_space + "|" + eol_or_blank;
 		}
 
 		return s;
@@ -3289,6 +3385,9 @@ public class Deal {
 	public Hand getNextHandToPlay() {
 		int curTrickIndex = getCurTrickIndex();
 		Hand leader = getCurTrickLeader();
+		if (leader == null)
+			return null;
+
 		for (Hand hand : rota[leader.compass.v]) {
 			if (hand.played.size() == curTrickIndex) {
 				return hand;

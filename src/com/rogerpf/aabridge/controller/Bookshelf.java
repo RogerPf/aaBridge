@@ -609,10 +609,6 @@ public class Bookshelf extends ArrayList<Book> {
 		if (ch.type == 'f') {
 			copyFileToDesktopAndAutosavesFolder(b.bookFolderName, b.bookJarExtra, doc_name);
 		}
-
-		@SuppressWarnings("unused")
-		int z = 0;
-
 	}
 
 	/**   
@@ -733,6 +729,151 @@ public class Bookshelf extends ArrayList<Book> {
 			e.printStackTrace();
 		}
 
+	}
+
+	/**   
+	 */
+	public static void copy_folder_to_desktop(String internal_folder_name, String new_folder_name) {
+		// ==============================================================================================
+
+		// we look at the first book and chapter to see what file type we have jar or dev source
+
+		// String pathWithSep = b.
+
+		if (App.runningInJar) {
+			copyResourseFolderToDesktop(internal_folder_name, new_folder_name);
+		}
+		else {
+			copyRealFolderToDesktop(internal_folder_name, new_folder_name);
+		}
+
+		@SuppressWarnings("unused")
+		int z = 0;
+
+	}
+
+	/**   
+	 */
+	public static void copyResourseFolderToDesktop(String internal_folder_name, String new_folder_name) {
+		// ==============================================================================================
+
+		File jarFile = new File(App.thisAppBaseJarIncPath);
+
+		int removeLen = internal_folder_name.length() + 1;
+
+		Pattern pattern = Pattern.compile(internal_folder_name + "/.*");
+
+		ArrayList<String> ret = (ArrayList<String>) ResourceList.getResourcesFromJarFile(jarFile, pattern);
+
+		File target_folder = new File(App.desktopFolderPath + File.separator + new_folder_name);
+
+		target_folder.mkdir();
+
+		URL[] urls = null;
+		try {
+			urls = new URL[] { jarFile.toURI().toURL() };
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+
+		/*  The following line of code can generate the warning
+		 *
+		 *            Resource leak: 'classLoader' is never closed
+		 *
+		 *  As this code has to be Java 6 compatible I have no solution to the issue,
+		 *  as Java 6 has no 'close method' for this.
+		 *
+		 *  However after some thought I now take the view that the 'lost' resource per user loaded
+		 *  lin file is trivial and will be released when the user closes the aaBridge app and
+		 *  with it the JVM.
+		 */
+		@SuppressWarnings("resource")
+		URLClassLoader classLoader = new URLClassLoader(urls);
+
+		for (String fullRef : ret) {
+
+			if (fullRef.length() <= removeLen)
+				continue;
+
+			String sFile = fullRef.substring(removeLen);
+			// System.out.println(sFile);
+
+			InputStream is = null;
+
+			try {
+
+				is = classLoader.getResourceAsStream(fullRef);
+
+				File fileOut = new File(target_folder + File.separator + sFile);
+
+				try {
+					OutputStream out = new FileOutputStream(fileOut);
+
+					// Transfer bytes from in to out
+					byte[] buf = new byte[1024];
+					int len;
+					while ((len = is.read(buf)) > 0) {
+						out.write(buf, 0, len);
+					}
+					out.close();
+				} catch (IOException e) {
+				}
+				is.close();
+
+			} catch (IOException i) {
+				System.out.println("can't find - " + internal_folder_name);
+				try {
+					is.close();
+				} catch (IOException e) {
+				}
+				// return false;
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	/**   
+	 */
+	public static void copyRealFolderToDesktop(String internal_folder_name, String new_folder_name) {
+		// ==============================================================================================
+
+		File target_folder = new File(App.desktopFolderPath + File.separator + new_folder_name);
+
+		target_folder.mkdir();
+
+		FileInputStream is = null;
+
+		// Get the list of all the potential files
+		File[] files = null;
+
+		files = new File(App.thisAppBaseFolder + File.separator + internal_folder_name).listFiles();
+		if (files != null) {
+
+			for (File fileIn : files) {
+
+				String target = target_folder + File.separator + fileIn.getName();
+
+				// System.out.println(target);
+
+				File fileOut = new File(target);
+
+				try {
+					is = new FileInputStream(fileIn);
+					OutputStream out = new FileOutputStream(fileOut);
+
+					// Transfer bytes from in to out
+					byte[] buf = new byte[1024];
+					int len;
+					while ((len = is.read(buf)) > 0) {
+						out.write(buf, 0, len);
+					}
+					out.close();
+					is.close();
+				} catch (IOException e) {
+				}
+			}
+		}
 	}
 
 }

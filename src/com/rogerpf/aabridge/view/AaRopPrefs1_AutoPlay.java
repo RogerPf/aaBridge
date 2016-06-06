@@ -55,14 +55,21 @@ class AaRopPrefs1_AutoPlay extends ClickPanel implements ItemListener, ActionLis
 
 	QLabel testingText;
 
+	QButton twisterReset;
+	QButton twisterLeft;
+	QButton twisterRight;
+
 	QCheckBox force_N_HiddenTut;
 	QCheckBox force_W_HiddenTut;
 	QCheckBox force_E_HiddenTut;
 	QCheckBox force_S_HiddenTut;
 	QCheckBox alwaysShowHidden;
 	QButton compassClear;
+	QCheckBox forceYouSeatToSouthZone;
 
 	QButton applyDefaults;
+
+	QCheckBox forceShowEtd;
 
 	public AaRopPrefs1_AutoPlay() {
 		setOpaque(true); // remember - we derive from ClickPanel which is setOpaque(false)
@@ -112,7 +119,7 @@ class AaRopPrefs1_AutoPlay extends ClickPanel implements ItemListener, ActionLis
 		add(anyLabel  = new QLabel("End of trick  and  AutoPlay options"), "gapy 12");
 		    anyLabel.setForeground(Aaa.optionsTitleGreen);
 
-		add(youPlayerEotWait     = new QCheckBox(this, App.youPlayerEotWait,  "Wait at the end of each trick  -  click *anywhere* on green to continue (gray dot indicator"), rbInset);
+		add(youPlayerEotWait     = new QCheckBox(this, App.youPlayerEotWait,  "Wait at the end of each trick  -  click *anywhere* on green to continue (gray dots indicator"), rbInset);
 		    youPlayerEotWait.setBorder(bdr2);
 		add(youAutoSingletons    = new QCheckBox(this, App.youAutoSingletons, "Singletons - You AutoPlay  "), rbInset);
 		    youAutoSingletons.setBorder(bdr2);
@@ -138,48 +145,77 @@ class AaRopPrefs1_AutoPlay extends ClickPanel implements ItemListener, ActionLis
 //			    showTestsLogAtEnd.setBorder(bdr2);
 		}
 		
+		add(applyDefaults = new QButton(this, "Apply Defaults"), "gapy20, gapx4");
+		    applyDefaults.setToolTipText("Reset all  Seat Options  to default values  ");
+	    if (App.onMac == false)
+	        applyDefaults.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
+
+
 		add(anyLabel       = new QLabel("Special Use"), "gapy 20");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
 		
-		add(force_N_HiddenTut = new QCheckBox(this, App.force_N_HiddenTut,  "N       Hide ALWAYS  - (when in turtorial mode)  "), "gapx13");
-	    	force_N_HiddenTut.setBorder(bdr2);
-	    	force_N_HiddenTut.setForeground(Cc.RedStrong);
-	   
-		add(force_W_HiddenTut = new QCheckBox(this, App.force_W_HiddenTut,  ""), "split 2, flowx");
-	        force_W_HiddenTut.setBorder(bdr4);
-		    force_W_HiddenTut.setForeground(Cc.RedStrong);
-		   
-		add(force_E_HiddenTut = new QCheckBox(this, App.force_E_HiddenTut,  "E    Hide ALWAYS  - (when in turtorial mode)  "));
-			force_E_HiddenTut.setBorder(bdr4);
-			force_E_HiddenTut.setForeground(Cc.RedStrong);
-
-		add(force_S_HiddenTut = new QCheckBox(this, App.force_S_HiddenTut,  "S       Hide ALWAYS  - (when in turtorial mode)  "), "gapx13");
-			force_S_HiddenTut.setBorder(bdr2);
-			force_S_HiddenTut.setForeground(Cc.RedStrong);
-	   
+		add(twisterReset = new QButton(this, "r"), "split 4, flowx");
+			twisterReset.setToolTipText("Reset to  -  South as South");
+			twisterReset.setForeground(Cc.BlueStrong);
+			twisterReset.setBorder(bdr4); // even on a MAC  -  they will have to suffer this one "no border" button
+		
+		add(twisterLeft = new QButton(this, "<"), "gapx 8");
+			twisterLeft.setToolTipText("< Anti-clockwise - rotate Tutorial and ALL Deal displays");
+			twisterLeft.setForeground(Cc.BlueStrong);
+			twisterLeft.setBorder(bdr4); // even on a MAC  -  they will have to suffer this one "no border" button
+		
+		add(twisterRight = new QButton(this, ">"), "gapx 8");
+			twisterRight.setToolTipText("> Clockwise - rotate Tutorial and ALL Deal displays");
+			twisterRight.setForeground(Cc.BlueStrong);
+			twisterRight.setBorder(bdr4); // even on a MAC  -  they will have to suffer this one "no border" button
+	    
+		add(anyLabel = new QLabel("Universal  Rotator   -    in Deal mode  LHO, RHO & Declarer buttons  have precedence so use  Apply Defaults  first  "), "gapx 8");
+		    anyLabel.setForeground(Cc.RedStrong);
+	    
 		add(compassClear = new QButton(this, "c"), "split 2, flowx");
 		    compassClear.setToolTipText("Clear all 4 hides");
 		    compassClear.setForeground(Cc.BlueStrong);
-		    compassClear.setBorder(bdr4);
-		    
-		add(alwaysShowHidden  = new QCheckBox(this, App.alwaysShowHidden,  "Show ALL Hidden ALWAYS  - (in BOTH tutorial and std mode)  "), "gapx13, gapy4");
+		    compassClear.setBorder(bdr4); // even on a MAC  -  they will have to suffer this one "no border" button
+
+		add(alwaysShowHidden  = new QCheckBox(this, App.alwaysShowHidden,  "Show ALL Always  -  buttons below will override  -  (in BOTH tutorial and std mode)  "), "gapx13, gapy4");
 		    alwaysShowHidden.setBorder(bdr0);
 		    alwaysShowHidden.setForeground(Cc.RedStrong);
-		    
-		add(applyDefaults = new QButton(this, "Apply Defaults"), "gapy20, gapx4");
-			applyDefaults.setToolTipText("Reset all  Seat Options  to default values  ");
-		if (App.onMac == false)
-		    applyDefaults.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
 
+		add(force_N_HiddenTut = new QCheckBox(this, App.force_N_HiddenTut,  "N       force  Hidden  "), "gapx13, gapy4");
+    		force_N_HiddenTut.setBorder(bdr2);
+    		force_N_HiddenTut.setForeground(Cc.RedStrong);
+   
+		add(force_W_HiddenTut = new QCheckBox(this, App.force_W_HiddenTut,  ""),  "split 2, flowx");
+	        force_W_HiddenTut.setBorder(bdr4);
+		    force_W_HiddenTut.setForeground(Cc.RedStrong);
+		   
+		add(force_E_HiddenTut = new QCheckBox(this, App.force_E_HiddenTut,  " E    force  Hidden"  ));
+			force_E_HiddenTut.setBorder(bdr4);
+			force_E_HiddenTut.setForeground(Cc.RedStrong);
+	
+		add(force_S_HiddenTut = new QCheckBox(this, App.force_S_HiddenTut,  "S       force  Hidden  "), "gapx13");
+			force_S_HiddenTut.setBorder(bdr2);
+			force_S_HiddenTut.setForeground(Cc.RedStrong);
+		    
+		add(forceYouSeatToSouthZone = new QCheckBox(this, App.forceYouSeatToSouthZone,  "Force You Seat  'South'   -   When  Entering a Deal always make the 'South Zone' the You Seat  "), "gapy 4");
+		    forceYouSeatToSouthZone.setBorder(bdr2);
+		    forceYouSeatToSouthZone.setForeground(Cc.RedStrong);
+	   		    
+		add(forceShowEtd = new QCheckBox(this, App.forceShowEtd,  "Show ETD       Overrides suppression of 'Enter the Deal' visibility"), "gapy 4");
+		    forceShowEtd.setBorder(bdr2);
+		    forceShowEtd.setForeground(Cc.RedStrong);
+	   		    
 		// @formatter:on
 	}
 
 	public void showButtonStates() {
+		alwaysShowHidden.setSelected(App.alwaysShowHidden);
 		force_N_HiddenTut.setSelected(App.force_N_HiddenTut);
 		force_W_HiddenTut.setSelected(App.force_W_HiddenTut);
 		force_E_HiddenTut.setSelected(App.force_E_HiddenTut);
 		force_S_HiddenTut.setSelected(App.force_S_HiddenTut);
-		alwaysShowHidden.setSelected(App.alwaysShowHidden);
+		forceYouSeatToSouthZone.setSelected(App.forceYouSeatToSouthZone);
+		forceShowEtd.setSelected(App.forceShowEtd);
 	}
 
 	public void actionPerformed(ActionEvent e) {
@@ -191,21 +227,13 @@ class AaRopPrefs1_AutoPlay extends ClickPanel implements ItemListener, ActionLis
 
 		if (source == compassClear) {
 
+			App.alwaysShowHidden = false;
 			App.force_N_HiddenTut = false;
 			App.force_W_HiddenTut = false;
 			App.force_E_HiddenTut = false;
 			App.force_S_HiddenTut = false;
-			App.alwaysShowHidden = false;
+			App.forceYouSeatToSouthZone = false;
 
-			force_N_HiddenTut.setSelected(App.force_N_HiddenTut);
-			force_W_HiddenTut.setSelected(App.force_W_HiddenTut);
-			force_E_HiddenTut.setSelected(App.force_E_HiddenTut);
-			force_S_HiddenTut.setSelected(App.force_S_HiddenTut);
-			alwaysShowHidden.setSelected(App.alwaysShowHidden);
-
-			showButtonStates();
-			App.frame.rop.p2_SeatChoice.showButtonStates();
-			App.frame.repaint();
 		}
 		else if (source == applyDefaults) {
 
@@ -226,18 +254,16 @@ class AaRopPrefs1_AutoPlay extends ClickPanel implements ItemListener, ActionLis
 
 			App.youAutoplayAlways = false;
 			App.youAutoplayPause = true;
+			youAutoplayAlways.setSelected(App.youAutoplayAlways);
+			youAutoplayPause.setSelected(App.youAutoplayPause);
+
+			App.alwaysShowHidden = false;
 			App.force_N_HiddenTut = false;
 			App.force_W_HiddenTut = false;
 			App.force_E_HiddenTut = false;
 			App.force_S_HiddenTut = false;
-			App.alwaysShowHidden = false;
-			youAutoplayAlways.setSelected(App.youAutoplayAlways);
-			youAutoplayPause.setSelected(App.youAutoplayPause);
-			force_N_HiddenTut.setSelected(App.force_N_HiddenTut);
-			force_W_HiddenTut.setSelected(App.force_W_HiddenTut);
-			force_E_HiddenTut.setSelected(App.force_E_HiddenTut);
-			force_S_HiddenTut.setSelected(App.force_S_HiddenTut);
-			alwaysShowHidden.setSelected(App.alwaysShowHidden);
+			App.forceYouSeatToSouthZone = false;
+			App.forceShowEtd = false;
 
 			App.fillHandDisplay = false;
 			App.runTestsAtStartUp = false;
@@ -248,8 +274,33 @@ class AaRopPrefs1_AutoPlay extends ClickPanel implements ItemListener, ActionLis
 				// showTestsLogAtEnd.setSelected(App.showTestsLogAtEnd);
 			}
 
+			App.allTwister_reset();
+			App.calcCompassPhyOffset();
+			App.gbp.dealMajorChange();
+		}
+		else if (source == twisterReset) {
+			App.allTwister_reset();
+			App.calcCompassPhyOffset();
+			App.gbp.dealMajorChange();
+		}
+		else if (source == twisterLeft) {
+			App.allTwister_left();
+			App.calcCompassPhyOffset();
+			App.gbp.dealMajorChange();
+		}
+		else if (source == twisterRight) {
+			App.allTwister_right();
+			App.calcCompassPhyOffset();
+			App.gbp.dealMajorChange();
+		}
+
+		if (App.allConstructionComplete) {
 			App.savePreferences();
-			repaint();
+
+			showButtonStates();
+			App.frame.rop.p2_SeatChoice.showButtonStates();
+
+			App.frame.repaint();
 		}
 	}
 
@@ -319,12 +370,22 @@ class AaRopPrefs1_AutoPlay extends ClickPanel implements ItemListener, ActionLis
 		else if (source == showTestsLogAtEnd) {
                        App.showTestsLogAtEnd = b;
 		}
+		else if (source == forceYouSeatToSouthZone) {
+					   App.forceYouSeatToSouthZone = b;
+		}
+		else if (source == forceShowEtd) {
+			           App.forceShowEtd = b;
+        }
+		
 
 		// @formatter:on
 
 		if (App.allConstructionComplete) {
 			App.savePreferences();
+
+			showButtonStates();
 			App.frame.rop.p2_SeatChoice.showButtonStates();
+
 			App.frame.repaint();
 		}
 	}

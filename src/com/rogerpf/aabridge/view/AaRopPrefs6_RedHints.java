@@ -32,14 +32,16 @@ class AaRopPrefs6_RedHints extends ClickPanel implements ItemListener, ActionLis
 	QLabel anyLabel;
 
 	QCheckBox showMouseWheelSplash;
+
+	QCheckBox showBidPlayMsgs;
+
 	QCheckBox showRedEditArrow;
 	QCheckBox showRedNewBoardArrow;
 	QCheckBox showRedDividerArrow;
 	QCheckBox showRedVuGraphArrow;
 	QCheckBox showDfcExamHlt;
-	QCheckBox showBidPlayMsgs;
 
-	QButton resetAllPrefs;
+	QButton applyDefaults;
 
 	public AaRopPrefs6_RedHints() {
 		setOpaque(true); // remember - we derive from ClickPanel which is setOpaque(false)
@@ -53,37 +55,36 @@ class AaRopPrefs6_RedHints extends ClickPanel implements ItemListener, ActionLis
 		add(anyLabel  = new QLabel("  Red Hints              -  Hide or Show"), "gapy 5");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
 		
-		add(showMouseWheelSplash = new QCheckBox(this, App.showMouseWheelSplash, "'Mouse Wheel' hint   "), "gapy 3");
+		add(showMouseWheelSplash = new QCheckBox(this, App.showMouseWheelSplash, "'Wheel Mouse' hint   "), "gapy 8");
 		    showMouseWheelSplash.setBorder(bdr4);
 
-		add(anyLabel  = new QLabel("Red Arrows"), "gapy 10");
+		add(anyLabel = new QLabel("Prompts - Show the . . ."), "gapy 18");
+		anyLabel.setForeground(Aaa.optionsTitleGreen);
+
+		add(showBidPlayMsgs     = new QCheckBox(this, App.showBidPlayMsgs,     "'Bid' and 'Play' prompt messages   "), "gapy 3");
+        showBidPlayMsgs.setBorder(bdr4);
+
+		add(anyLabel  = new QLabel("Red Arrows"), "gapy 18");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
 
 		add(showRedNewBoardArrow = new QCheckBox(this, App.showRedNewBoardArrow, "'Click  New Board' hint   "), "gapy 3");
 			showRedNewBoardArrow.setBorder(bdr4);
 		add(showRedVuGraphArrow = new QCheckBox(this, App.showRedVuGraphArrow, "'Extra Bar 4 Clickalbe Columns' hint   "));
 	        showRedVuGraphArrow.setBorder(bdr4);
-		add(showRedEditArrow    = new QCheckBox(this, App.showRedEditArrow,    "'Click  Edit  & use...' hint   "));
+		add(showRedEditArrow    = new QCheckBox(this, App.showRedEditArrow,    "'Edit button usage' hint   "));
 		    showRedEditArrow.setBorder(bdr4);
 		add(showRedDividerArrow = new QCheckBox(this, App.showRedDividerArrow, "'Drag Divider...' hint   "));
 		    showRedDividerArrow.setBorder(bdr4);
 
-		add(anyLabel  = new QLabel("Red Border"), "gapy 15");
+		add(anyLabel  = new QLabel("Red Border"), "gapy 18");
 			anyLabel.setForeground(Aaa.optionsTitleGreen);
 		add(showDfcExamHlt      = new QCheckBox(this, App.showDfcExamHlt,      "DFC  Exam btn border  highlight   "), "gapy 3");
 		    showDfcExamHlt.setBorder(bdr4);
 
-		add(anyLabel = new QLabel("Prompts - Show the . . ."), "gapy 20");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
-
-		add(showBidPlayMsgs     = new QCheckBox(this, App.showBidPlayMsgs,     "'Bid' and 'Play' prompt messages   "), "gapy 3");
-        showBidPlayMsgs.setBorder(bdr4);
-
-		add(anyLabel  = new QLabel("Reset ALL Options to the default"), "gapy 25");
-		anyLabel.setForeground(Aaa.optionsTitleGreen);
-		add(resetAllPrefs = new QButton(this, "Reset & Close"), "gapx4");
+		add(applyDefaults = new QButton(this, "Apply Defaults"), "gapy20, gapx4");
 		if (App.onMac == false)
-		    resetAllPrefs.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
+			applyDefaults.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
 		// @formatter:on
 	}
 
@@ -91,9 +92,23 @@ class AaRopPrefs6_RedHints extends ClickPanel implements ItemListener, ActionLis
 
 		Object source = e.getSource();
 
-		if (source == resetAllPrefs) {
-			App.SetOptionsToDefaultAndClose();
-			// it never comes back !!
+		if (source == applyDefaults) {
+
+			App.showMouseWheelSplash = true;
+			App.showBidPlayMsgs = true;
+			App.showRedNewBoardArrow = true;
+			App.showRedVuGraphArrow = true;
+			App.showRedEditArrow = true;
+			App.showRedDividerArrow = false;
+			App.showDfcExamHlt = true;
+
+			showMouseWheelSplash.setSelected(App.showMouseWheelSplash);
+			showBidPlayMsgs.setSelected(App.showBidPlayMsgs);
+			showRedNewBoardArrow.setSelected(App.showRedNewBoardArrow);
+			showRedVuGraphArrow.setSelected(App.showRedVuGraphArrow);
+			showRedEditArrow.setSelected(App.showRedEditArrow);
+			showRedDividerArrow.setSelected(App.showRedDividerArrow);
+			showDfcExamHlt.setSelected(App.showDfcExamHlt);
 		}
 	}
 

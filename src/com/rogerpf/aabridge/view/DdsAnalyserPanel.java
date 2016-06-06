@@ -147,11 +147,11 @@ public class DdsAnalyserPanel extends ClickPanel implements ActionListener {
 		deal.makeBid(new Bid(Call.Pass));
 		deal.makeBid(new Bid(Call.Pass));
 
-		App.ddsAnalyserVisible = false;
+		App.ddsAnalyserPanelVisible = false;
 
 		App.setMode(Aaa.EDIT_PLAY);
 
-		if (App.isLin__Simple()) {
+		if (App.isLin__Virgin()) {
 			CmdHandler.AnalyserNewBoard(deal);
 		}
 		else {
@@ -167,7 +167,7 @@ public class DdsAnalyserPanel extends ClickPanel implements ActionListener {
 	/**
 	 */
 	public void showBidsButtonClicked() {
-		App.ddsAnalyserVisible = false;
+		App.ddsAnalyserPanelVisible = false;
 		reset();
 		App.gbp.matchPanelsToDealState();
 	}
@@ -187,9 +187,11 @@ public class DdsAnalyserPanel extends ClickPanel implements ActionListener {
 	/**
 	 */
 	public void analyseButtonClicked() {
-		App.ddsAnalyserVisible = true;
+		App.ddsAnalyserPanelVisible = !App.ddsAnalyserPanelVisible;
 		reset();
 		App.gbp.matchPanelsToDealState();
+		if (App.ddsAnalyserPanelVisible == false)
+			return;
 		// Delay before starting the Slow analysis (couple of seconds, or hundreds !)
 		// so our analysing message will display
 		ddsAnalysePart2Timer.start();

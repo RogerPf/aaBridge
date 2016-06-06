@@ -78,7 +78,6 @@ class AaRopPrefs5_DSizeFont extends ClickPanel implements ItemListener, ActionLi
 		fontChooser.setMaximumRowCount(25);
 
 		add(applyDefaults = new QButton(this, "Apply Defaults"), "gapy20, gapx4");
-		applyDefaults.setToolTipText("Reset all  Seat Options  to default values  ");
 		if (App.onMac == false)
 		    applyDefaults.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
 
@@ -108,7 +107,6 @@ class AaRopPrefs5_DSizeFont extends ClickPanel implements ItemListener, ActionLi
 			App.savePreferences();
 
 			App.frame.repaint();
-
 		}
 	}
 

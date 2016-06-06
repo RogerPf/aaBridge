@@ -89,7 +89,7 @@ public class AaHomeBtnPanel extends ClickPanel implements ActionListener {
 			menuBtn.setBorder(bdr4);
 		// menuBtn.setToolTipText("Recently viewed  Chapters  and  Chapter Marks  "); DONT add this
 
-		String togChaperText = (App.onMac) ? "Toggle Chapter Mark" : "Tog Chapter Mark";
+		String togChaperText = (App.onMacOrLinux) ? "Toggle Chapter Mark" : "Tog Chapter Mark";
 		String yGap = (App.onMac) ? "" : "gapy8, ";
 		add(toggleChapterMarkBtn = new QButton(this, togChaperText), "gapx4, " + yGap + "span3");
 		toggleChapterMarkBtn.setFont(sml);

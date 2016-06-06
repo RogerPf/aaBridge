@@ -15,11 +15,13 @@ import java.awt.Point;
 import java.awt.Polygon;
 import java.awt.Shape;
 import java.awt.geom.AffineTransform;
+import java.io.File;
 import java.util.prefs.BackingStoreException;
 import java.util.prefs.Preferences;
 
 import com.rogerpf.aabridge.igf.BubblePanel;
 import com.rogerpf.aabridge.igf.MassGi;
+import com.rogerpf.aabridge.igf.MassGi_utils;
 import com.rogerpf.aabridge.igf.TutNavigationBar;
 import com.rogerpf.aabridge.igf.TutorialPanel;
 import com.rogerpf.aabridge.model.Cc;
@@ -82,7 +84,7 @@ public class App {
 	public static final int Vm_DealAndTutorial = 2;
 	public static final int Vm_TutorialOnly = 3;
 
-	public static boolean ddsAnalyserVisible = false;
+	public static boolean ddsAnalyserPanelVisible = false;
 
 	public static int visualMode = Vm_InsideADeal;  // visualMode
 
@@ -119,6 +121,7 @@ public class App {
 	public static boolean onMac = false;
 	public static boolean onWin = false;
 	public static boolean onLinux = false;  // later assumed if other two are false
+	public static boolean onMacOrLinux = false; 
 
 	public static boolean using_java_6 = false;
 
@@ -169,6 +172,14 @@ public class App {
 
 	public static Color  mnHeaderColor = mnHeaderColorAy[0]; 
 
+	
+	/**
+	 */
+	public static float one_unless_linux() {
+		// =============================================================================		
+		return (onLinux & fixLinuxLineSep) ? 1.125f : 1.0f;
+	}
+	
 	/**
 	 */
 	public static void selectMnHeaderColor() {
@@ -219,24 +230,38 @@ public class App {
 	/**
 	 */
 	public static void resetPhyOffset() {
-		compassPhyOffset = 0;
+		compassPhyOffset = compassAllTwister;
+	}
+
+	/**
+	 */
+	public static void allTwister_reset() {
+		compassAllTwister = Dir.North.v;  
+	}
+	
+	/**
+	 */
+	public static void allTwister_left() {		
+		if (++compassAllTwister > 3) {
+			compassAllTwister = 0;
+		}
+	}
+	
+	/**
+	 */
+	public static void allTwister_right() {
+		if (--compassAllTwister < 0) {
+			compassAllTwister = 3;
+		}
 	}
 
 	/**
 	 */
 	static public void calcCompassPhyOffset() {
 
-		compassPhyOffset =  Dir.North.v; //  ie zero  or none
+		compassPhyOffset =  compassAllTwister; //  was once   Dir.North.v  
 
-//		if (putWhoInSouthZone == 3) { // named player
-//			Dir compass = deal.playerMatching(App.nameInSouthZone);
-//			if (compass != null) {
-//				compassPhyOffset = (compass.v + 2) % 4;
-//				return;
-//			}
-//		}
-
-		if ((putWhoInSouthZone > 0) && !App.deal.isBidding() && !App.deal.contract.isPass()) {
+		if (!forceYouSeatToSouthZone && (putWhoInSouthZone > 0) && !App.deal.isBidding() && !App.deal.contract.isPass()) {
 
 			if (putWhoInSouthZone == 1) {
 				// put the declarer in the south zone
@@ -269,20 +294,22 @@ public class App {
 	/**
 	 */
 	public static void biddingVisibilityCheck() {
-		if (App.ddsAnalyserVisible) {
-			App.ddsAnalyserVisible = false;
+		if (App.ddsAnalyserPanelVisible) {
+			App.ddsAnalyserPanelVisible = false;
 			App.gbp.matchPanelsToDealState();
 		}
 	}
 
 
 
-	public static int compassPhyOffset = 0; // 0 to 3   
+	public static int compassPhyOffset = 0; // 0 to 3 
+	public static int compassAllTwister = 0;  // 0 to 3
+	public static boolean forceYouSeatToSouthZone = false;
 
 
 	//************* Preferences that are saved and restored - start *****************
 
-	public static int prevPrefsBuildNo;    // added in 2228  not currently used
+	public static int prevPrefsBuildNo;    // added in 2228
 
 	public static boolean startedWithCleanSettings;
 
@@ -322,6 +349,7 @@ public class App {
 	public static boolean showPoints;
 	public static boolean showLTC;
 //	public static boolean showOldTextGray;  
+	public static boolean fixLinuxLineSep;  
 	public static boolean youAutoAdjacent;
 	
 	public static boolean useDDSwhenAvaialble;
@@ -334,6 +362,7 @@ public class App {
 
 	public static boolean yourFinessesMostlyFail;
 	
+	public static boolean dfcWordsForCount;
 	public static boolean dfcHyphenForVoids;
 	public static boolean dfcCardsAsBlobs;
 	public static int     dfcTrainingSuitSort;
@@ -342,7 +371,10 @@ public class App {
 	public static Dir     dfcExamYou;
 	public static boolean dfcExamBottomYou;
 
+	public static boolean showPoorDefHint;
 	public static boolean showClaimBtn;
+	public static boolean showContBtn;
+	public static boolean showB1stBtn;
 	public static boolean showRotationBtns;
 	public static boolean showSaveBtns;
 	public static boolean showShfWkPlBtn;
@@ -350,6 +382,8 @@ public class App {
 	public static boolean fillHandDisplay = false;
 	public static boolean runTestsAtStartUp = false;
 	public static boolean showTestsLogAtEnd = true;
+	public static boolean forceShowEtd = false;
+	
 	public static int     putWhoInSouthZone = 0; // 0 to 2;  // 3 not used
 //	public static String  nameInSouthZone;
 
@@ -373,6 +407,9 @@ public class App {
 	public static final int WMouse_SINGLE = 2;
 	public static       int mouseWheelDoes;
 
+	
+	public static boolean saveAsBboUploadFormat;
+	public static boolean saveAsBboUploadExtraS;
 	public static boolean outlineCardEdge;
 	public static boolean movieBidFlowDoesFlow;
 	public static boolean useFamilyOverride;
@@ -443,27 +480,31 @@ public class App {
 		ropSelPrevTabIndex = appPrefs.getInt("ropSelectedTabIndex",      0);
 		if (ropSelPrevTabIndex > App.RopTab_Max)
 			ropSelPrevTabIndex = 0;
+		
+		ropSelPrevTabIndex = RopTab_2_SeatChoice;  // We now always start in Seat Choice
 
 		showMouseWheelSplash= appPrefs.getBoolean("showMouseWheelSplash",true);
 		showRedNewBoardArrow= appPrefs.getBoolean("showRedNewBoardArrow",true);
 		showRedEditArrow   = appPrefs.getBoolean("showRedEditArrow",   true);
-		showRedDividerArrow= appPrefs.getBoolean("showRedDividerArrow",true);
+		showRedDividerArrow= appPrefs.getBoolean("showRedDividerArrow",false);
 		showRedVuGraphArrow= appPrefs.getBoolean("showRedVuGraphArrow",true);
 		showDfcExamHlt     = appPrefs.getBoolean("showDfcExamHlt",    true);
 		showBidPlayMsgs    = appPrefs.getBoolean("showBidPlayMsgs",   true);
 		showSuitSymbols    = appPrefs.getBoolean("showSuitSymbols",   false);
-		showPoints         = appPrefs.getBoolean("showPoints",        false);
+		showPoints         = appPrefs.getBoolean("showPoints",        true);
 		showLTC            = appPrefs.getBoolean("showLTC",           false);
 //		showOldTextGray    = appPrefs.getBoolean("showOldTextGray",   true);
+		fixLinuxLineSep    = appPrefs.getBoolean("fixLinuxLineSep",   App.onLinux);
 		youAutoSingletons  = appPrefs.getBoolean("youAutoSingletons", false);
 		youAutoAdjacent    = appPrefs.getBoolean("youAutoAdjacent",   true);
 
 		useDDSwhenAvaialble    = appPrefs.getBoolean("useDDSwhenAvaialble"   , true);
 		yourFinessesMostlyFail = appPrefs.getBoolean("yourFinessesMostlyFail", false);
 
+		dfcWordsForCount   = appPrefs.getBoolean("dfcWordsForCount",  true);
 		dfcHyphenForVoids  = appPrefs.getBoolean("dfcHyphenForVoids", true);
 		dfcCardsAsBlobs    = appPrefs.getBoolean("dfcCardsAsBlobs",   false);
-		dfcTrainingSuitSort= appPrefs.getInt("dfcTrainingSuitSort",       3);
+		dfcTrainingSuitSort= appPrefs.getInt("dfcTrainingSuitSort",      3);
 		if (dfcTrainingSuitSort < 0 || dfcTrainingSuitSort > 2)
 			dfcTrainingSuitSort = 0;
 		dfcAutoNext        = appPrefs.getInt("dfcAutoNext",              1);
@@ -478,31 +519,45 @@ public class App {
 		dfcExamBottomYou   = appPrefs.getBoolean("dfcExamBottomYou",  true);
 
 		ddsScoreShow       = appPrefs.getBoolean("ddsScoreShow",     false);
+		ddsScoreShow       = false;  // now we always start with DDS show false
 
-		force_N_HiddenTut   = appPrefs.getBoolean("force_N_HiddenTut", false);
-		force_W_HiddenTut   = appPrefs.getBoolean("force_W_HiddenTut", false);
-		force_E_HiddenTut   = appPrefs.getBoolean("force_E_HiddenTut", false);
-		force_S_HiddenTut   = appPrefs.getBoolean("force_S_HiddenTut", false);
-		alwaysShowHidden   = appPrefs.getBoolean("alwaysShowHidden", false);
-		if (App.devMode == false) {
-			force_N_HiddenTut = false;
-		    force_W_HiddenTut = false;
-		    force_E_HiddenTut = false;
-			force_S_HiddenTut = false;
-			alwaysShowHidden = false;
+		compassAllTwister = 0;
+		alwaysShowHidden = false;
+		force_N_HiddenTut = false;
+		force_W_HiddenTut = false;
+		force_E_HiddenTut = false;
+		force_S_HiddenTut = false;
+		forceYouSeatToSouthZone = false;
+
+		if (App.devMode) {  // DEV MODE ONLY
+			compassAllTwister   = appPrefs.getInt("compassAllTwister", 0);
+			if (compassAllTwister < 0 || compassAllTwister > 3) {
+				compassAllTwister = 0;
+			}
+			alwaysShowHidden    = appPrefs.getBoolean("alwaysShowHidden",  false);
+			force_N_HiddenTut   = appPrefs.getBoolean("force_N_HiddenTut", false);
+			force_W_HiddenTut   = appPrefs.getBoolean("force_W_HiddenTut", false);
+			force_E_HiddenTut   = appPrefs.getBoolean("force_E_HiddenTut", false);
+			force_S_HiddenTut   = appPrefs.getBoolean("force_S_HiddenTut", false);
+			forceYouSeatToSouthZone = appPrefs.getBoolean("forceYouSeatToSouthZone", false);
+			forceShowEtd        = appPrefs.getBoolean("forceShowEtd",      false);		
 		}
+		
 		localShowHidden    = appPrefs.getBoolean("localShowHidden",   true);
-		localShowHiddPolicy= appPrefs.getInt("localShowHiddPolicy",      2); // 0 = don't show,  1 = show, 2 = no change
+		localShowHiddPolicy= appPrefs.getInt("localShowHiddPolicy",      0); // 0 = don't show,  1 = show, 2 = no change
 		if (localShowHiddPolicy < 0 || localShowHiddPolicy > 2)
 			localShowHiddPolicy = 0;
 
 		youAutoplayAlways  = (devMode == false) ? false : appPrefs.getBoolean("youAutoplayAlways",false); //not restored in normal use
 		youAutoplayPause   = appPrefs.getBoolean("youAutoplayPause",  true);
 		youPlayerEotWait   = appPrefs.getBoolean("youPlayerEotWait",  true);
-		showClaimBtn       = appPrefs.getBoolean("showClaimBtn",     false);
+		showPoorDefHint        = appPrefs.getBoolean("showPoorDefHint",       true);
+		showClaimBtn       = appPrefs.getBoolean("showClaimBtn",      false);
+		showB1stBtn        = appPrefs.getBoolean("showEp1Btn",        false);
+		showContBtn        = appPrefs.getBoolean("showEpeBtn",        false);
 		showRotationBtns   = appPrefs.getBoolean("showRotationBtns",  true);
-		showSaveBtns       = appPrefs.getBoolean("showSaveBtns",     false);
-		showShfWkPlBtn     = appPrefs.getBoolean("showShfWkPlBtn",   true);
+		showSaveBtns       = appPrefs.getBoolean("showSaveBtns",      true);
+		showShfWkPlBtn     = appPrefs.getBoolean("showShfWkPlBtn",    true);
 
 		if (App.devMode) {
 		    // fillHandDisplay = appPrefs.getBoolean("fillHandDisplay", false); - never saved or restored
@@ -535,13 +590,18 @@ public class App {
 			tutorialDealSize = 4;
 
 		Cc.deckColorStyle  = appPrefs.getInt("deckColorStyle", Cc.Dk__Green_Blue_Red_Black);
+		if (Cc.deckColorStyle > Cc.Dk__last) {
+			Cc.deckColorStyle = Cc.Dk__Green_Blue_Red_Black;
+		}
 		Cc.deckCardsBlack  = appPrefs.getInt("deckCardsBlack", 0);
 
 		mouseWheelDoes     = appPrefs.getInt("mouseWheelDoes",  WMouse_FLOW);
 		if (mouseWheelDoes < WMouse_FLOW || mouseWheelDoes > WMouse_SINGLE)
 			mouseWheelDoes = WMouse_FLOW;
 
-		outlineCardEdge    = appPrefs.getBoolean("outlineCardEdge",     false);
+		saveAsBboUploadFormat = appPrefs.getBoolean("saveAsBboUploadFormat",  true);
+		saveAsBboUploadExtraS = appPrefs.getBoolean("saveAsBboUploadExtraS",  true);
+		outlineCardEdge       = appPrefs.getBoolean("outlineCardEdge",     false);
 		movieBidFlowDoesFlow= appPrefs.getBoolean("movieBidFlowDoesFlow", false);
 		colorIntensity     = appPrefs.getInt("colorIntensity",      defaultColorIntensity); // -255 to +255
 		colorTint          = appPrefs.getInt("colorTint",           0); //  -50 to +50
@@ -554,6 +614,9 @@ public class App {
 		fontfamilyOverride = appPrefs.get("fontfamilyOverride", "Times Roman");
 		
 		realSavesPath      = appPrefs.get("realSavesPath", "");
+		if (realSavesPath.contains(File.separator + ".aaBridge" + File.separator)) {
+			realSavesPath = "";
+		}
 		// the empty value will be corrected in the frame start up
 
 		implement_showRotationBtns();
@@ -597,24 +660,31 @@ public class App {
 		appPrefs.putBoolean("showBidPlayMsgs",   showBidPlayMsgs);
 		appPrefs.putBoolean("showSuitSymbols",   showSuitSymbols);
 		appPrefs.putBoolean("ddsScoreShow",      ddsScoreShow);
+		
+		
+		appPrefs.putInt("compassAllTwister",  compassAllTwister);
+		appPrefs.putBoolean("alwaysShowHidden",   alwaysShowHidden);
 		appPrefs.putBoolean("force_N_HiddenTut",  force_N_HiddenTut);
 		appPrefs.putBoolean("force_W_HiddenTut",  force_W_HiddenTut);
 		appPrefs.putBoolean("force_E_HiddenTut",  force_E_HiddenTut);
 		appPrefs.putBoolean("force_S_HiddenTut",  force_S_HiddenTut);
-		appPrefs.putBoolean("alwaysShowHidden",  alwaysShowHidden);
-
+		appPrefs.putBoolean("forceYouSeatToSouthZone",  forceYouSeatToSouthZone);
+		
+		
 		appPrefs.putBoolean("localShowHidden",   localShowHidden);
 		appPrefs.putInt("localShowHiddPolicy",    localShowHiddPolicy);
 
 		appPrefs.putBoolean("showPoints",        showPoints);
 		appPrefs.putBoolean("showLTC",           showLTC);
 //		appPrefs.putBoolean("showOldTextGray",   showOldTextGray);
+		appPrefs.putBoolean("fixLinuxLineSep",   fixLinuxLineSep);
 		appPrefs.putBoolean("youAutoSingletons", youAutoSingletons);
 		appPrefs.putBoolean("youAutoAdjacent",   youAutoAdjacent);
 
 		appPrefs.putBoolean("useDDSwhenAvaialble",    useDDSwhenAvaialble);
 		appPrefs.putBoolean("yourFinessesMostlyFail", yourFinessesMostlyFail);
 		
+		appPrefs.putBoolean("dfcWordsForCount",  dfcWordsForCount);
 		appPrefs.putBoolean("dfcHyphenForVoids", dfcHyphenForVoids);
 		appPrefs.putBoolean("dfcCardsAsBlobs",   dfcCardsAsBlobs);
 		appPrefs.putInt("dfcTrainingSuitSort",   dfcTrainingSuitSort);
@@ -626,7 +696,10 @@ public class App {
 		appPrefs.putBoolean("youAutoplayAlways", youAutoplayAlways);
 		appPrefs.putBoolean("youAutoplayPause",  youAutoplayPause);
 		appPrefs.putBoolean("youPlayerEotWait",  youPlayerEotWait);
+		appPrefs.putBoolean("showPoorDefHint",       showPoorDefHint);
 		appPrefs.putBoolean("showClaimBtn",      showClaimBtn);
+		appPrefs.putBoolean("showEpeBtn",        showContBtn);
+		appPrefs.putBoolean("showEp1Btn",        showB1stBtn);
 
 		appPrefs.putBoolean("showRotationBtns",  showRotationBtns);
 		appPrefs.putBoolean("showSaveBtns",      showSaveBtns);
@@ -636,6 +709,7 @@ public class App {
 		  //appPrefs.putBoolean("fillHandDisplay",   fillHandDisplay);  - not saved or restored
 			appPrefs.putBoolean("runTestsAtStartUp", runTestsAtStartUp);
 			appPrefs.putBoolean("showTestsLogAtEnd", showTestsLogAtEnd);
+			appPrefs.putBoolean("forceShowEtd",      forceShowEtd);		
 		}
 
 		appPrefs.putInt("youSeatForNewDeal",     youSeatForNewDeal.v);
@@ -659,6 +733,8 @@ public class App {
 
 		appPrefs.putInt("mouseWheelDoes",        mouseWheelDoes);
 		
+		appPrefs.putBoolean("saveAsBboUploadFormat",   saveAsBboUploadFormat);
+		appPrefs.putBoolean("saveAsBboUploadExtraS",   saveAsBboUploadExtraS);
 		appPrefs.putBoolean("outlineCardEdge",   outlineCardEdge);
 		appPrefs.putBoolean("movieBidFlowDoesFlow", movieBidFlowDoesFlow);
 		appPrefs.putInt("colorIntensity",        colorIntensity);
@@ -706,6 +782,18 @@ public class App {
 	}
 
 	public static void implement_showClaimBtn() {
+		if (allConstructionComplete) {
+			App.gbp.matchPanelsToDealState();
+		}
+	}
+
+	public static void implement_showB1stBtn() {
+		if (allConstructionComplete) {
+			App.gbp.matchPanelsToDealState();
+		}
+	}
+
+	public static void implement_showContBtn() {
 		if (allConstructionComplete) {
 			App.gbp.matchPanelsToDealState();
 		}
@@ -771,7 +859,7 @@ public class App {
 		switch (mode) {
 
 		case Aaa.NORMAL_ACTIVE:
-			if (App.isLin__Simple())
+			if (App.isLin__Virgin())
 				App.localShowHidden = false;
 			App.con.startAutoBidDelayTimerIfNeeded();
 			App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
@@ -821,27 +909,31 @@ public class App {
 	 */
 	static public boolean isSeatVisible(Dir compass) {
 		// ========================================================================
-		if (alwaysShowHidden || isModeAnyEdit()) {
+		if (force_N_HiddenTut && compass == Dir.North /* && App.isVmode_Tutorial() */) {
+			return false;
+		}
+
+		if (force_W_HiddenTut && compass == Dir.West /* && App.isVmode_Tutorial() */) {
+			return false;
+		}
+
+		if (force_E_HiddenTut && compass == Dir.East /* && App.isVmode_Tutorial() */) {
+			return false;
+		}
+
+		if (force_S_HiddenTut && compass == Dir.South /* && App.isVmode_Tutorial() */) {
+			return false;
+		}
+
+		if (alwaysShowHidden) {
 			return true;
 		}
 
-		if (force_N_HiddenTut && compass == Dir.North && App.isVmode_Tutorial()) {
-			return false;
-		}
-
-		if (force_W_HiddenTut && compass == Dir.West && App.isVmode_Tutorial()) {
-			return false;
-		}
-
-		if (force_E_HiddenTut && compass == Dir.East && App.isVmode_Tutorial()) {
-			return false;
-		}
-
-		if (force_S_HiddenTut && compass == Dir.South && App.isVmode_Tutorial()) {
-			return false;
-		}
-
 		if (localShowHidden) {
+			return true;
+		}
+
+		if (isModeAnyEdit()) {
 			return true;
 		}
 
@@ -960,7 +1052,10 @@ public class App {
 		App.dealMajorChange();
 
 		if (App.mg.lin != null) {
-			if (App.respectLinYou && App.deal.youSeatInLoadedLin) {
+			if (App.forceYouSeatToSouthZone) {
+				App.deal.youSeatHint = Dir.directionFromInt(App.compassAllTwister).rotate(Dir.South);
+			}
+			else if (App.respectLinYou && App.deal.youSeatInLoadedLin) {
 				; // the youSeatHint was preset at (lin) load time
 			}
 			else {
@@ -1029,27 +1124,28 @@ public class App {
 
 		App.dualDealListBtns.matchToLin();
 
-		if (App.mg.lin.linType == Lin.SimpleDealVirgin || App.mg.lin.linType == Lin.SimpleDealSingle) {
+		if (App.mg.lin.linType == Lin.SimpleDealVirgin /* || App.mg.lin.linType == Lin.SimpleDealSingle */) {
 
 			App.setVisualMode(App.Vm_InsideADeal);
-
-			Deal deal = null;
-
-			if (App.mg.lin.linType == Lin.SimpleDealVirgin) {
-				deal = App.mg.lin.virginDeal;
-			}
-			else /* if (App.mg.lin.linType == Lin.SimpleDealSingle) */{
-				deal = App.mg.getBestSingleSimpleDeal();
-			}
-
+			Deal deal = App.mg.lin.virginDeal;
 			App.switchToDeal(deal);
 
 		}
-		else {
-			// we are a Tutorial mode (including vuGraph)
+		else if (App.mg.lin.linType == Lin.SimpleDealSingle) {
+
 			App.setMode(Aaa.NORMAL_ACTIVE); // should this happen elsewhere !!! ?
 			App.setVisualMode(App.Vm_DealAndTutorial);
 			App.mg.setTheReadPoints_FirstTime();
+
+			MassGi_utils.do_tutorialIntoDealClever();
+
+		}
+		else { // we are a Tutorial mode (including vuGraph)
+
+			App.setMode(Aaa.NORMAL_ACTIVE); // should this happen elsewhere !!! ?
+			App.setVisualMode(App.Vm_DealAndTutorial);
+			App.mg.setTheReadPoints_FirstTime();
+
 		}
 
 		App.gbp.matchPanelsToDealState();
@@ -1068,9 +1164,23 @@ public class App {
 
 	/**
 	 */
-	public static boolean isLin__Simple() {
+	public static boolean isLin__Virgin_or_Single() {
 		// ==============================================================================================
 		return (App.mg.lin.linType == Lin.SimpleDealVirgin || App.mg.lin.linType == Lin.SimpleDealSingle);
+	}
+
+	/**
+	 */
+	public static boolean isLin__Virgin() {
+		// ==============================================================================================
+		return (App.mg.lin.linType == Lin.SimpleDealVirgin);
+	}
+
+	/**
+	 */
+	public static boolean isLin__Single() {
+		// ==============================================================================================
+		return (App.mg.lin.linType == Lin.SimpleDealSingle);
 	}
 
 	/**   
@@ -1214,9 +1324,12 @@ public class App {
 	public static Book book = new Book();
 	public static Deal deal = null;
 	public static Deal ddsDeal = null;
+	public static Boolean ddsDealHandDispExamNumbWordsSuppress = false;
 	public static DePointAy dePointAy = null;
 	public static MassGi mg = null;
 	public static boolean dealEnteredOnce = false;
+
+	public static boolean show_poor_def_msg = false;
 
 	final public static int hist_max_display = 5; // do not set above 9
 	final public static int mark_max_display = 10;

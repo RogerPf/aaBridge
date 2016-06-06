@@ -86,15 +86,15 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 			if (App.devMode && (chapterLoaded == false) && keepTrying) {
 				String dealName = "";
 
-//				dealName = "Distr Flash Cards"'
+//				dealName = "Distr Flash Cards";
 //				App.lbx_modeExam = true; // testing only
 
-//				dealName = "NetVu_compat_Grid";
-//				dev_tweekAfterLoad = true;
+//				dealName = "Table Conceal";
+
+//				dealName = "110  Index";
 
 //				dealName = "single_file_in_folder"; // =============== <<<<<<<<<<<<<<<<<<<<
 
-//				dealName = "Demo 2814";
 //				dev_tweekAfterLoad = true;
 
 				if (dealName.length() > 0) {
@@ -109,11 +109,12 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 					}
 					keepTrying = false;// the DEV user (you) will be expecting her/his file to load so we should not do something else ?
 				}
+
 				if (dev_tweekAfterLoad && chapterLoaded) {
-//					App.mg.jump_to_pg_number_display(10 + 1);
+//					App.mg.jump_to_pg_number_display(2 + 1);
+//					CmdHandler.tutorialIntoDealB1st();
 //					CmdHandler.tutorialIntoDealClever();
 //					CmdHandler.leftWingEdit();
-//					CmdHandler.editPlayWipe();
 //					if (App.ddsScoreShow == false)
 //						CmdHandler.ddsScoreOnOff();
 //					CmdHandler.ddsAnalyse();
@@ -589,7 +590,11 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 				}
 			}
 
+			// System.out.print("*");
+
 			if (App.haglundsDDSavailable && App.ddsScoreShow) { // RRRRRRR
+
+				boolean revTDT_running = App.gbp.c1_1__tfdp.reviewTrickDisplayTimer.isRunning();
 
 				if (App.mode == Aaa.NORMAL_ACTIVE) {
 
@@ -612,9 +617,9 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 					App.ddsDeal = Z_ddsCalculate.scoreCardsInNextHandToPlay(clone);
 				}
 
-				else if (App.mode == Aaa.REVIEW_PLAY && (App.reviewCard != 4) && !App.gbp.c1_1__tfdp.reviewTrickDisplayTimer.isRunning()) {
+				else if (App.mode == Aaa.REVIEW_PLAY && (revTDT_running == false)) {
 
-					// System.out.println(" *** controllerInControl()  C  -  REVIEW_PLAY ");
+					// System.out.println(" *** controllerInControl()  C  -  REVIEW_PLAY    revTDT_running:" + revTDT_running);
 
 					Deal clone = App.deal.deepClone();
 					clone.fastUndoBackTo(App.reviewTrick, App.reviewCard, true /* setDdsNextCard */);

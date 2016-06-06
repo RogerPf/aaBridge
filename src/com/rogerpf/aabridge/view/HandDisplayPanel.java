@@ -691,7 +691,9 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 		return true;
 	}
 
-	static final String ht_ay[] = { "  Please", "Center Left", "New Board", "Click" };
+	static String numbersAsWords[] = { "void", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "tweleve", "thirteen" };
+
+	static final String ht_ay[] = { "", "  center left ", "'New Board'", "  Click" };
 
 	/**
 	 */
@@ -748,7 +750,8 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 		float youLozengeHeight = 0.0f;
 
 		boolean visSeat = true;
-		String hiddenText = "hidden";
+		String displayedWordInBox = "hidden";
+		Color displayedWordColor = hand.isDummy() ? Aaa.veryWeedyBlacHid : Aaa.veryWeedyBlack;
 
 		if (!floatingHand) {
 
@@ -806,7 +809,8 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 			// ------------------------------------------------------------------
 			visSeat = App.isSeatVisible(hand.compass);
 			if (deal.isDoneHand()) {
-				hiddenText = ht_ay[hand.compass.v];
+				displayedWordInBox = ht_ay[hand.compass.v];
+				displayedWordColor = Aaa.weedyBlack;
 				visSeat = false;
 			}
 
@@ -827,10 +831,10 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 					// nothing we don't want to show this on the dummy hand
 				}
 				else {
-					float youTextFontSize = bridgeLightFontSize * 1.0f;
-					Font youTextFont = BridgeFonts.bridgeLightFont.deriveFont(youTextFontSize);
-					g2.setFont(youTextFont);
-					g2.drawString("Click to be You", (int) (xy + nlh * 1.5), (int) (xy + nlh - youTextFontSize * yAdj));
+					// float youTextFontSize = bridgeLightFontSize * 1.0f;
+					// Font youTextFont = BridgeFonts.bridgeLightFont.deriveFont(youTextFontSize);
+					// g2.setFont(youTextFont);
+					// g2.drawString("Click to be You", (int) (xy + nlh * 1.5), (int) (xy + nlh - youTextFontSize * yAdj));
 				}
 			}
 			else if (hand.playerName.isEmpty() == false) {
@@ -896,8 +900,8 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 
 		if (!floatingHand && !visSeat) {
 			g2.setFont(BridgeFonts.bridgeLightFont.deriveFont(handFontSize));
-			g2.setColor(Aaa.veryWeedyBlack);
-			g2.drawString(hiddenText, dealLozengeWidth * (deal.isDoneHand() ? 0.25f : 0.3f), dealLozengeHeight * 0.650f);
+			g2.setColor(displayedWordColor);
+			g2.drawString(displayedWordInBox, dealLozengeWidth * (deal.isDoneHand() ? 0.15f : 0.3f), dealLozengeHeight * 0.650f);
 		}
 
 		Font suitSymbolsFont = BridgeFonts.faceAndSymbFont.deriveFont(handFontSize * 0.65f);
@@ -945,16 +949,24 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 			}
 
 			// Suit Symbol
-			if (deal.dfcDeal) { // symbols are never shown but instead we CAN show count or dots
+			if (deal.dfcDeal) { // symbols are never shown but instead we CAN show count or dots or words
 				if ((frag.suitVisControl & Suit.SVC_count) == Suit.SVC_count) {
+					String v = "";
 					g2.setColor(Cc.BlackStrong);
-					g2.setFont(cardFaceFont);
-					String v = frag.size() + "";
-					if (frag.size() == 0) {
-						if (App.dfcHyphenForVoids)
-							v = "_"; // special underline - changed in font to be same size as other numbers and higher
-						else
-							g2.setColor(Cc.BlackWeedy);
+					if (App.dfcWordsForCount && (App.ddsDealHandDispExamNumbWordsSuppress == false)) {
+						Font wordsFont = BridgeFonts.bridgeBoldFont.deriveFont(handFontSize * 0.95f);
+						g2.setFont(wordsFont);
+						v = numbersAsWords[frag.size()];
+					}
+					else {
+						g2.setFont(cardFaceFont);
+						v = frag.size() + "";
+						if (frag.size() == 0) {
+							if (App.dfcHyphenForVoids)
+								v = "_"; // special underline - changed in font to be same size as other numbers and higher
+							else
+								g2.setColor(Cc.BlackWeedy);
+						}
 					}
 					g2.drawString(v, lhs, y - suitLineStartY * 0.0f);
 				}

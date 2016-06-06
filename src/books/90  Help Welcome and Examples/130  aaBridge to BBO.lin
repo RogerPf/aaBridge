@@ -1,0 +1,44 @@
+%% aaBridge to BBO
+%% Last edited  2015  Oct 30
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+fh|150|fb|15|                1  large
+fh|240|fb|25|                2
+fh|342|fb|35|                3  med+
+fh|836|fb|85|                8  med  greater than 4 as it is in the 30 - 39 zone
+fh|s24|                      s  the word updated
+fh|v28|                      v  the little video button
+
+cr|2200|cg|2060|cb|2255|     2  purple
+cr|3200|cg|3255|cb|3255|     3  light blue
+cr|4170|cg|4190|cb|4255|     4  medium blue
+cr|5016|cg|5128|cb|5016|     5  green 
+cr|7255|cg|7000|cb|7255|     7  
+
+bt||
+
+qx|Welc|
+mn|Get  aaBridge hands  sent  up to BBO|
+
+fp|1|at|^^^^^a   @s @h @d @c  ^v     @c @d @h @s|  suit symbols around the  MN  header         
+fp||
+at|^b@2^z@3|
+ht|f|n^|5||Lg|h|
+at|
+^c@2^cYou have a deal in aaBridge and want it sent to BBO  
+|n^|9|at|
+^d^*bOR^*n
+|n^|9|at|
+You have a deal on paper and want to add it to aaBridge and then send it up to BBO 
+|n^|e|at|
+
+^c@2|cp|red|at|^*bThere is a blog post containing a pdf with images that covers exactly this
+^d^*n|cp||at|
+^e   ^*h http://musingsonbridge.blogspot.com/2015/12/how-do-i-get-aabridge-hands-up-to-bbo.html       ^*n How do I   -   get aaBridge hands up to BBO ^*x
+
+
+|
+ht|z|at|@0
+^q Roger Pfister       December  2015
+|

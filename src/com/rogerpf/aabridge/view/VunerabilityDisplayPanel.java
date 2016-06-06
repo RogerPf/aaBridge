@@ -115,7 +115,20 @@ class VulnerabilityDisplayPanel extends JPanel implements MouseListener {
 		}
 		else {
 			String text = (App.deal.signfBoardId.trim().isEmpty() ? "Board" : App.deal.signfBoardId);
-			String bNumbText = (App.deal.displayBoardId.length() > 0) ? App.deal.displayBoardId : App.deal.realBoardNo + "";
+			String bNumbText = "";
+			if (App.deal.displayBoardId.length() > 0) {
+				bNumbText = App.deal.displayBoardId;
+			}
+			else if (App.deal.qx_number > 0) {
+				bNumbText = App.deal.qx_number + "";
+			}
+			else if (App.deal.realBoardNo > 0) {
+				bNumbText = App.deal.realBoardNo + "";
+			}
+			else if (App.deal.realBoardNo > 0) {
+				bNumbText = "1";
+			}
+
 			if (App.mg.lin.linType == Lin.VuGraph) {
 				if (App.mg.ddAy.twoColumn) {
 					text = (App.deal.qx_room == 'o') ? "Open" : "Closed";
