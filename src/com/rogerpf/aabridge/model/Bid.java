@@ -87,45 +87,18 @@ public class Bid {
 	}
 
 	// --------------------------------
-	public String toDepFinString() {
-		return (isCall()) ? call.toString() : level.toStr() + suit.toStrNt();
-	}
-
-	// --------------------------------
 	public String toInnocuousAnswer() {
 		return (isCall()) ? call.toCmdString() : level.toStr() + suit.toStrLower();
 	}
 
 	// --------------------------------
-	public String toLinAnswerString(Suit suitV[]) {
-		if (isCall()) {
-			suitV[0] = Suit.Invalid;
-			return call.toBidPanelString();
-		}
-		else if (suit == Suit.NoTrumps) {
-			suitV[0] = Suit.Invalid;
-			return (level.v + " NT");
-		}
-
-		suitV[0] = suit;
-		return (level.v + "");
-	}
-
-//	// --------------------------------
-//	public String toLinAnswerString() {
-//		if (isCall()) {
-//			return call.toBidPanelString();
-//		}
-//		else if (suit == Suit.NoTrumps) {
-//			return (level.v + " NT");
-//		}
-//		
-//		return (level.v + "");
-//	}
-
-	// --------------------------------
 	public String toLinStr() {
 		return (isCall()) ? call.toLinStr() : level.toStr() + suit.toLinStr();
+	}
+
+	// --------------------------------
+	public String toDualStr() {
+		return (isCall()) ? call.toLinStr() : level.toStr() + suit.toStrDual();
 	}
 
 	/**

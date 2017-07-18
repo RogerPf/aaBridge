@@ -20,7 +20,7 @@ public class Rlay_2nd {
 		Card card = null;
 
 		int brk = 0;
-		if (g.trickNumb == 4)
+		if (g.trickNumb == 1)
 			if (g.deal.testId == 1001)
 				if (g.compass.v == 3)
 					brk++;
@@ -50,20 +50,28 @@ public class Rlay_2nd {
 				card = g.fragLed.getHighest(g.z);
 			}
 
-//          removed - trying to make second player play low more often
+//          WAS PREVIOUSLY removed - trying to make second player play low more often
 //			if (card == null) {
 //				card = Play_Mpat.cardByPatternMatch(g, g.suitLed, Zzz.Second_Pos);
 //			}
 
-			if (card == null) { // self promotion cover
+			if (card == null) { // self promotion cover or promote for partner
 				Card myBeats = g.fragLed.getLowestThatBeats(g.z, g.bestCard.rank);
 				Card myHighLoser = g.fragLed.getHighestThatLosesTo(g.bestCard.rank);
+
+				if (myBeats != null && myHighLoser != null) { // ie I have a choice
+					if (myBeats.rankRel.v == myHighLoser.rankRel.v + 2) {
+						card = myBeats; // promotion for self
+					}
+					else if (g.pnFragLed.size() > 1) { // partner has a choice
+						Card LHO_Beats = g.LHO.frags[g.suitLed.v].getLowestThatBeats(g.z, myBeats.rank);
+						if (LHO_Beats != null && g.pnHighestOfLedRank.v >= g.cardLed.rank.v - 1) {
+							card = myBeats;
+						}
+					}
+				}
 				if (brk > 0)
 					brk++;
-				if ((myBeats != null && myHighLoser != null) && (myBeats.rankRel.v == myHighLoser.rankRel.v + 2)) {
-					card = myBeats;
-				}
-
 			}
 
 			if (card == null && g.LHO_hasLedSuit) {

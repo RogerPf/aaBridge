@@ -25,6 +25,7 @@ public class Frag extends Cal {
 	public Suit suit;
 	public int suitVisControl;
 	public transient char suitCh;
+	public char showXes = '-';
 
 	Frag(Hand hand, Suit suit) { /* Constructor */
 		super();
@@ -32,6 +33,19 @@ public class Frag extends Cal {
 		this.suit = suit;
 		suitCh = suit.toChar();
 		suitVisControl = Suit.SVC_cards;
+	}
+
+	public void setShowXes(char c) {
+		if (c != '-') {
+			if (c == 'c')
+				showXes = '-';
+			else
+				showXes = c;
+		}
+	}
+
+	public char getShowXes() {
+		return showXes;
 	}
 
 	public String toString() {
@@ -239,6 +253,14 @@ public class Frag extends Cal {
 			bits |= (1 << card.rank.v);
 		}
 		return bits;
+	}
+
+	public void changeSuitTo(Suit s) {
+		suit = s;
+		suitCh = s.toChar();
+		for (Card card : this) {
+			card.setSuit(s);
+		}
 	}
 
 }

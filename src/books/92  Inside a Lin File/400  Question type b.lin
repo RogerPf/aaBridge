@@ -13,7 +13,7 @@ at|
 
 
 
-^d!lb!*b Please choose an opening bid@^@^1c !
+^d!lb!*b Please choose an opening bid@^@^1n !
 |
 ht|k|at|
 The next page repeats this same question but with      !st!       a  'standard table'  showing. 
@@ -27,7 +27,7 @@ The next page has a   ^*b?^*n   showing on  ^*bboth^*n  the playing table and th
 
 
 
-lb|*b Please choose an opening bid^^1c|
+lb|*b Please choose an opening bid^^1n|
 qx|lbb2|
 st||
 
@@ -35,7 +35,7 @@ sk|s|
 md|0,kq765hj84dk875cj,st942h2dq92ckq973,S83hk9653djt63c86|
 mb|?|
 
-lb|*b Please choose an opening bid^^1c|
+lb|*b Please choose an opening bid^^1n|
 qx|lbb3|
 
 bt||
@@ -50,21 +50,21 @@ ht|e|at|A type b, bid question knows what bidding buttons to display from what h
 
 
 
-You can have multiple correct answers - this case 7@s , 7@h or 7@d
+You can have multiple correct answers - this case 7NT , 7@h or 7@d
 
 
 
-^fNote          pass => ^*bp^*n            double  => ^*bx^*n    NOT 'd'           and      redouble => ^*br^*n 
+^eNote          pass => ^*bp^*n            double  => ^*bx^*n    NOT 'd'           and      redouble => ^*br^*n 
 
-^h(in the   !mb!...!   make bid  command   double  is   ^*bd^*n    not  'x'   @-   not my design  )   
+^f(in the   !mb!...!   make bid  command   double  is   ^*bd^*n    not  'x'   @-   not my design  )   
 
 
 
-^d!lb!*b Please choose a bid?@^@^7s,7h,7d!
+^d!lb!*b Please choose a bid?@^@^7n,7h,7d!
 |
 
 
-lb|*b Please choose a bid?^^7s,7h,7d|
+lb|*b Please choose a bid?^^7n,7h,7d|
 
 
 qx|lbb4|
@@ -120,7 +120,7 @@ sk|s|
 md|0,kq765hj84dk875cj,st942h2dq92ckq973,S83hk9653djt63c86|
 st||md|3s4jh89ad26tc39tjk,sh467jqd389qc478q,s235qah23d457ac5a,|sk|e|
 mb|1d|
-lb|*b You can see the extra ? on the table ^1s|
+lb|*b You can see the extra ? on the table ^^1s|
 
 mb|1s|
 

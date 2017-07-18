@@ -15,27 +15,30 @@ bt||
 fp|1|at|
 
 ^a   @s @h @d @c  ^v     @c @d @h @s|
-fp||at|^z@3|
+fp||at|^z @3|
 mn|   Screen Layout   |
 qx|ScrL|
 ht|d|
-at|^^|fp||at|
+at|^^|fp||
+n^|4|at|
 ^b@2^*bAaBridge^*n has been designed to be as intuitive as possible.  So most items on the screen can be understood by just looking and clicking.  However it helps to have names for all the parts of the screen.
-
-^c@2@.   The @2tall gray column on the left is called the |cp|7|at|^*bChapter Column^*n|cp||at|.  In it you can see the titles of the chapters of the current book.  You are currently in the  'Help Welcome & Examples'  book reading the  'Screen Layout'  chapter.    The current chapter title shows as black text in a white box.
-
+|n^|2|at|
+^c@2@.   The @2tall gray column on the left is mainly the |cp|7|at|^*bChapter Column^*n|cp||at|.  In it you can see the titles of the chapters of the current book.  You are currently in the  'Help Welcome & Examples'  book reading the  'Screen Layout'  chapter.    The current chapter title shows as black text in a white box.
+|n^|2|lg|b|at|
+^c@2@.    Just @2above the chapter column is the Home (@z) icon|cp|7|at| ^*b Button Area^*n|cp||at|. The left and right arrows next to the home button let you move back and forwards through your recently visited .lin files.  You can save the current aaBridge size and layout by ^*bCLICKING^*n either { A } { B } or { C }  ^*bWHILE^*n  you hold the ^*b Ctrl ^*n key down.   A simple click of that chosen button restores aaBridge to that layout.  
+Saving with the ^*bAlt^*n key ^*bALSO^*n pressed, records its position as well.  Again, a simple click restores.
+The ^*b pencil ^*n icon is covered in  "Quick Lin File Editing"  in the ^*g :Doc Collection, aaBridge Doc Collection^*n.
+|n^|2|lg||at|
 ^c@2@.   The next column, which is currently not showing, is the |cp|7|at|^*bVuGraph Column^*n|cp||at|.  Covered in a later chapter.
-
+|n^|2|at|
 ^c@2@.   The next area, where you are reading this text, is the main tutorial and  |cp|7|at|^*bDeal display area^*n|cp||at|.  More later.
-
+|n^|2|at|
 ^c@2@.   To th@2e right of this display area is an adjustable divider.   Please grab it and move it left-right.  As you move the divider you reveal or hide the  |cp|7|at|^*bOption Tabs^*n|cp||at|.  Please click on any of the option tabs (top of that column) and look at the options that are available.  They are also accessible via the menu bar (top of page) ^*bOptions^*n.
+|n^|2|at|
+^c@2@.   Below@2 the display area is another adjustable divider.   Please grab it and move it up-down.  As you move the divider you reveal or hide the  |cp|7|at|^*bSpeed Sliders^*n|cp||at|.  These control the rate of display of bids and cards when you click on the  ^*bFlow >^*n  button or when you are playing a hand of bridge.  They are also accessible via the menu bar (top of page) ^*bOptions^*n.|
 
-^c@2@.   Below@2 the display area is another adjustable divider.   Please grab it and move it up-down.  As you move the divider you reveal or hide the  |cp|7|at|^*bSpeed Sliders^*n|cp||at|.  These control the rate of display of bids and cards when you click on the  ^*bFlow >^*n  button or when you are playing a hand of bridge.  They are also accessible via the menu bar (top of page) ^*bOptions^*n.
 
 
-
-^b@2Click the     ^*bFlow >^*n     button below to open the next page / chapter.        |cp|5|at|^*iPlease do this at the end of all pages^*n|cp||at|
+ht|z|n#|5|at|^^^b@2Click the     ^*bFlow >^*n     button below to open the next page / chapter.        |cp|5|at|^*iPlease do this at the end of all pages^*n|cp||at|
 |
 
-ht|z|at|@0
-^r Roger Pfister   -   December 2013|

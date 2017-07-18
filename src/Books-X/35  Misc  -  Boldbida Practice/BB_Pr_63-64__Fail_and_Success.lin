@@ -1,0 +1,251 @@
+%%
+%%
+%% <--SECT_HEAD-->=Practice  Boards                              63 - 64
+%%
+%%
+%%  Date last Edited    2016-05-12     set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+%% 
+%% <<--HEADER_FILE-->>=BB_Pr_00___Declarer_Play__HEADER
+%%
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player they need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+%%
+%%  You can NOW use  ALL 2876 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+fh|t40|                    Font   t  t-title             section titles (if any)
+fh|b50|                    Font   b  b-bigTitle   bigger section titles
+
+fh|f42|                    Font   f  f-flow
+fh|s25|                    Font   s  s-small
+
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor      on Title Pages
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor   on Title Pages
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Boldbida                                       Course   2016^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bPractice  Boards                              63 - 64^*n^-^^|cs||fp||cp||at|^^|
+Lg|e|
+
+ht|j|
+at|If you are  |cp|red|at|^*bNew  to  aaBridge^*n|cp||at| please  click the  { ^*bHome^*n }  button in the far top left and then click  { ^*bFlow^*n }  button.
+Once you have a little knowledge about how to use   ^*baaBridge^*n   please come back to this 'movie'.  |
+
+ht|o|
+fp|t-title|cp|blue|at|^- ^*b-----  Shuf Op  -----^*n     ^-|cp||fp||at|^^|
+n#|3|
+at|^b@2When  you are  'Inside a deal',  high on the left in green baize area you will see the  {^*b Shuf Op ^*n}  button.|
+n#|5|
+at|^^Click on it to shuffle the  East - West  cards and leave you ready to  PLAY  the hand against the 
+^o ^*b aaBridge ^*n bots and the new defensive layout.|
+%% <<--HEADER_REPLACE_END->>
+
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+ht|v|n#|4|at|
+^f Please  |cp|red|at|^*b keep ^*n|cp||at|  clicking  the |fp|f-flow|at|  { ^*b Flow > ^*n }  |fp|s-small|at| button below  |fp||
+
+ht|z|n^|2|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+
+bv|a,v|    %% make all 3 buttons visible 
+ 
+fh|940|fm|9|fp|9|at|@0@1|
+ht|h|
+rq|2876|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2876 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+st||
+--------------------------------------------------------------------
+
+qx|63 F|rh||ah|Practice 63|
+md|2S9HAJT63DK854CJT8,SAKJ75H942D62CA53,S643HKQ7DAQ7CK942,SQT82H85DJT93CQ76|
+sv|O|sk|S|
+nt|^b@2^^|
+at|^*bPractice 63^*n        Fail |
+pg| ***** 1 ***** |
+
+
+mb|1S|mb|d|mb|3S|mb|4H|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+pc|sA|
+at|        Having  4  losers   1@s(f)  1@d(s)  2@c(s)   in the master hand (South)  we need to get rid of one.  |
+pg| ***** 3 ***** |
+
+
+at|^^^^ No  Fail  line is provided for this hand.    However,  you can still  { ^*bPlay^*n }  out the cards yourself.  |
+pf|c|
+pg| ***** 4 ***** |
+
+
+qx|63 S|
+rh||ah|Practice 63|
+md|2S9HAJT63DK854CJT8,SAKJ75H942D62CA53,S643HKQ7DAQ7CK942,SQT82H85DJT93CQ76|
+sv|O|sk|S|
+nt|^b@2^^|
+at|^*bPractice 63^*n        Success |
+pg| ***** 5 ***** |
+
+
+mb|1S|mb|d|mb|3S|mb|4H|mb|p|mb|p|mb|p|
+pg| ***** 6 ***** |
+
+
+pc|sA|
+at|        Having  4  losers   1@s(f)  1@d(s)  2@c(s)   in the master hand (South)  we need to get rid of one.  |
+pg| ***** 7 ***** |
+
+
+pc|s3|pc|sT|pc|s9|
+pg| ***** 8 ***** |
+
+
+pc|s5|pc|s4|pc|sQ|
+at|  Ruff this 2nd @s and draw 2 rounds of trumps ending hand.  Finesse the @cJ and when it loses, ruff the @s return (or win whatever) and keep playing on @c's to knock out the Ace.|
+pg| ***** 9 ***** |
+
+
+pc|h3|
+pg| ***** 10 ***** |
+
+
+pc|h6|pc|h2|pc|hK|pc|h5|
+pg| ***** 11 ***** |
+
+
+pc|h7|pc|h8|pc|hJ|pc|h4|
+pg| ***** 12 ***** |
+
+
+pc|cJ|pc|c3|pc|c2|pc|cQ|
+pg| ***** 13 ***** |
+
+
+pc|s8|pc|hT|pc|s7|pc|s6|
+pg| ***** 14 ***** |
+
+
+pc|cT|pc|cA|pc|c4|pc|c6|
+pg| ***** 15 ***** |
+
+
+sk|S|
+at|   Now you can see that there is nothing West can do to stop your  @d  loser going on dummies long @c.            Please  { ^*bPlay^*n }  out the rest of the cards yourself.  |
+pf|c|
+sk||
+pg| ***** 16 ***** |
+
+
+qx|64 F|
+rh||ah|Practice 64|
+md|3SJ7432HK43DAK43C7,S98HQT985DJCQJT6,SA65HA76DQ76CK543,SKQTHJ2DT98CA982|
+sv|O|sk|S|
+nt|^b@2^z@3^^|
+at|^*bPractice 63^*n        Fail |
+pg| ***** 17 ***** |
+
+
+mb|1C|mb|p|mb|1S|mb|p|mb|1N|mb|p|mb|2D|mb|p|mb|2S|mb|p|mb|4S|mb|p|mb|p|mb|p|
+pg| ***** 18 ***** |
+
+
+pc|cQ|
+at|       Having  5  losers   2+@s(s)  1@h(s)  1@d(s)  1@c(c)   in the master hand (South) we need to dump 2.  |
+pg| ***** 19 ***** |
+
+
+pc|c3|pc|c2|pc|c7|
+at|          West will almost always continue the attack on clubs so we will start from trick 2.|
+pg| ***** 20 ***** |
+
+
+pc|cJ|
+md|0,d5,,d2|
+eb|y|
+at|^^^^ No  full  Fail  line is provided for this hand.    However,  you can still  { ^*bPlay^*n }  out the cards yourself.  |
+pf|c|
+pg| ***** 21 ***** |
+
+
+qx|64 S|
+rh||ah|Practice 64|
+md|3SJ7432HK43DAK43C7,S98HQT985DJ5CQJT6,SA65HA76DQ76CK543,SKQTHJ2DT982CA982|
+sv|O|sk|S|
+nt|^b@2^z@3^^|
+at|^*bPractice 63^*n        Success |
+pg| ***** 22 ***** |
+
+
+mb|1C|mb|p|mb|1S|mb|p|mb|1N|mb|p|mb|2D|mb|p|mb|2S|mb|p|mb|4S|mb|p|mb|p|mb|p|
+pg| ***** 23 ***** |
+
+
+pc|cQ|
+at|       Having  5  losers   2+@s(s)  1@h(s)  1@d(s)  1@c(c)   in the master hand (South) we need to dump 2.   If the trumps are divided 3-2 and the Opps with the 3 trumps ALSO has 4 @d's and 4 @c's) then it can be done.    Ruff the 2nd @c.  Duck a round of trumps.   Win the expected @s return with the Ace.  Ruff a @c.  Cross to the  @dQ.  Ruff dummy's last @c.|
+pg| ***** 24 ***** |
+
+
+pc|c3|pc|c2|pc|c7|
+pg| ***** 25 ***** |
+
+
+pc|cJ|pc|c4|pc|c8|pc|s2|
+pg| ***** 26 ***** |
+
+
+pc|s3|pc|s8|pc|s5|pc|sT|
+pg| ***** 27 ***** |
+
+
+pc|sK|pc|s4|pc|s9|pc|sA|
+pg| ***** 28 ***** |
+
+
+pc|c5|pc|c9|pc|s7|pc|c6|
+pg| ***** 29 ***** |
+
+
+pc|d3|pc|d5|pc|dQ|pc|d2|
+pg| ***** 30 ***** |
+
+
+pc|cK|pc|cA|pc|sJ|pc|cT|
+pg| ***** 31 ***** |
+
+
+at|                      Now if the Opp with the remaining master trump (@s) also has the hoped for 2 @h's  and  2 @d's in her hand,  you are home.  :) |
+pg| ***** 32 ***** |
+
+
+sk||
+at|                       Please  { ^*bPlay^*n }  out the rest of the cards yourself. |
+pf|c|
+pg| ***** 33 ***** |
+
+

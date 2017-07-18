@@ -22,6 +22,7 @@ import javax.swing.border.Border;
 import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Cc;
 
@@ -47,6 +48,8 @@ class AaRopPrefs4_SuitColors extends ClickPanel implements ItemListener, ActionL
 
 	QCheckBox showSuitSymbols;
 
+	QCheckBox outlineCardEdge;
+
 	QButton applyDefaults;
 
 	public AaRopPrefs4_SuitColors() {
@@ -61,34 +64,31 @@ class AaRopPrefs4_SuitColors extends ClickPanel implements ItemListener, ActionL
 
 		// @formatter:off
 
-		add(anyLabel  = new QLabel("  Suit Colors              -    Colors of the Suits and Suit symbols"), "gapy 5");
+		add(anyLabel  = new QLabel(Aaf.gT("menuOpt.colors")), "gapy 5");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
-		add(scrnColors = new QButton(App.frame, "Screen Colors"), "split 2, flowx, gapx4, gapy 8");
-		add(anyLabel  = new QLabel("    settings will be visible in the bottom far left  "), "flowy");
-		scrnColors.setActionCommand("lowerPanel");
-		if (App.onMac == false)
-		    scrnColors.setBorder(BorderFactory.createEmptyBorder(4, 2, 2, 2));
-		scrnColors.setToolTipText("Show the Screen Color Settings  ");
 
-		add(anyLabel  = new QLabel("Colors of the Suit Symbols   "), "gapy 12");
+
+		add(anyLabel  = new QLabel(Aaf.gT("suitColTab.cSuits")), "gapy 12");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
-		add(dkCol0 = new QRadioButton(this, dkColGroup,  bdr1, Cc.deckColorStyle == Cc.Dk__Green_Blue_Red_Black,    "dkCol0", "4 Color - C Green, D Blue,  H Red, S Black  -  As used in actual 4 Color Decks  "), rbInset);
-		add(dkCol1 = new QRadioButton(this, dkColGroup,  bdr1, Cc.deckColorStyle == Cc.Dk__Green_Orange_Red_Blue,   "dkCol1", "4 Color - C Green, D Orange, H Red, S Blue  -  Bidding Box Colors  "), rbInset);
-		add(dkCol2 = new QRadioButton(this, dkColGroup,  bdr1, Cc.deckColorStyle == Cc.Dk__Green_Blue_Red_Orange,   "dkCol2", "4 Color - C Green, D Blue,  H Red, S Orange   -  Alternate on-line color set  "), rbInset);
-//		add(dkCol4 = new QRadioButton(this, dkColGroup,  bdr1, Cc.deckColorStyle == Cc.Dk__Gray_Orange_Red_Black,   "dkCol4", "4 Color - C Gray,  D Orange,   H Red, S Black     - 2016+ USA Some F-to-F Tournaments "), rbInset);
-		add(dkCol3 = new QRadioButton(this, dkColGroup,  bdr1, Cc.deckColorStyle == Cc.Dk__Black_Red_Red_Black,     "dkCol3", "2 Color - C Black,  D Red,   H Red, S Black     - Traditional  "), rbInset);
+		add(dkCol0 = new QRadioButton(this, dkColGroup,  bdr1, Cc.deckColorStyle == Cc.Dk__Green_Blue_Red_Black,    "dkCol0", Aaf.gT("suitColTab.dkCol0")), rbInset);
+		add(dkCol1 = new QRadioButton(this, dkColGroup,  bdr1, Cc.deckColorStyle == Cc.Dk__Green_Orange_Red_Blue,   "dkCol1", Aaf.gT("suitColTab.dkCol1")), rbInset);
+		add(dkCol2 = new QRadioButton(this, dkColGroup,  bdr1, Cc.deckColorStyle == Cc.Dk__Green_Blue_Red_Orange,   "dkCol2", Aaf.gT("suitColTab.dkCol2")), rbInset);
+		add(dkCol3 = new QRadioButton(this, dkColGroup,  bdr1, Cc.deckColorStyle == Cc.Dk__Black_Red_Red_Black,     "dkCol3", Aaf.gT("suitColTab.dkCol3")), rbInset);
 
-		add(anyLabel  = new QLabel("Colors of the Card Symbols  A K Q ...   "), "gapy 15");
-		   anyLabel.setForeground(Aaa.optionsTitleGreen);
-		add(dkCardsColored  = new QRadioButton(this, dkBkGroup,  bdr1, Cc.deckCardsBlack == 0,  "dkCardsColored",  "Use the above Colors  "), rbInset);
-		add(dkCardsAllBlack = new QRadioButton(this, dkBkGroup,  bdr1, Cc.deckCardsBlack == 1,  "dkCardsAllBlack", "Always use Black"), rbInset);
-
-		add(anyLabel  = new QLabel("The Four Suit Symbols"), "gapy 15");
+		add(anyLabel  = new QLabel(Aaf.gT("suitColTab.cFaces")), "gapy 15");
 		    anyLabel.setForeground(Aaa.optionsTitleGreen);
-		add(showSuitSymbols     = new QCheckBox(this, App.showSuitSymbols,  "Show the four Suit Symbols in each hand display area  "), "gapx 3");
+		add(dkCardsColored  = new QRadioButton(this, dkBkGroup,  bdr1, Cc.deckCardsBlack == 0,  "dkCardsColored",  Aaf.gT("suitColTab.above")), rbInset);
+		add(dkCardsAllBlack = new QRadioButton(this, dkBkGroup,  bdr1, Cc.deckCardsBlack == 1,  "dkCardsAllBlack", Aaf.gT("suitColTab.black")), rbInset);
 
-		add(applyDefaults = new QButton(this, "Apply Defaults"), "gapy20, gapx4");
-		applyDefaults.setToolTipText("Reset all  Seat Options  to default values  ");
+		add(anyLabel  = new QLabel(Aaf.gT("suitColTab.4SuitSym")), "gapy 15");
+		    anyLabel.setForeground(Aaa.optionsTitleGreen);
+		add(showSuitSymbols     = new QCheckBox(this, App.showSuitSymbols,  Aaf.gT("suitColTab.every")), "gapx 3");
+
+		add(anyLabel  = new QLabel(Aaf.gT("suitColTab.outline")), "gapy 30");
+	    anyLabel.setForeground(Aaa.optionsTitleGreen);
+		add(outlineCardEdge = new QCheckBox(this, App.outlineCardEdge, Aaf.gT("suitColTab.white"), Aaf.gT("suitColTab.white_TT")), "gapx 3");
+
+		add(applyDefaults = new QButton(this, Aaf.gT("cmnTab.applyDef")), "gapy 30, gapx 4");
 		if (App.onMac == false)
 		    applyDefaults.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
 		    
@@ -112,7 +112,10 @@ class AaRopPrefs4_SuitColors extends ClickPanel implements ItemListener, ActionL
 			dkCardsAllBlack.setSelected(false);
 
 			App.showSuitSymbols = false;
-			showSuitSymbols.setSelected(false);
+			showSuitSymbols.setSelected(App.showSuitSymbols);
+
+			App.outlineCardEdge = false;
+			outlineCardEdge.setSelected(App.outlineCardEdge);
 
 			App.savePreferences();
 		}
@@ -126,6 +129,9 @@ class AaRopPrefs4_SuitColors extends ClickPanel implements ItemListener, ActionL
 
 		if (source == showSuitSymbols) {
 			App.showSuitSymbols = b;
+		}
+		else if (source == outlineCardEdge) {
+			App.outlineCardEdge = b;
 		}
 
 		// we are only interested in the selected values for the buttons

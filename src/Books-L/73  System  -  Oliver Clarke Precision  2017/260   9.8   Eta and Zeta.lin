@@ -1,0 +1,1306 @@
+%%
+%%
+%% <--SECT_HEAD-->=Chapter 9.8                           Eta  &  Zeta
+%%
+%%
+%%  Date last Edited    2015-05-30        set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+%% 
+%% <<--HEADER_FILE-->>=005  OCP common header
+%%
+
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+
+
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+fh|s28|                    Font   s  s-small
+fh|f35|                    Font   f  f-fine
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  OLD STYLE  position adjustment 
+
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       on Title Pages   Precision Blue
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Oliver Clarke Precision                                 2017  ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bChapter 9.8                           Eta  &  Zeta^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+
+qx|9.8|
+fp|t-title|at|^d@2^z@3|
+at|
+^*gGS, Eta    Responses  (an Extract from the lesson)^*n|
+fp||at|
+
+^*gGS,    ^*n       
+
+|
+fp|z|at|^^^^^^^^^^
+|fp|t-title|at|
+^*gOliv, Oliver's class on   Eta  &  Zeta            |fp||at|Starts HERE^*n  |fp||cp|red|at|<<< First time ?  Click title|fp||cp||at|
+
+
+^*gPrac,    Practice Hands  -   What would You Bid ? ^*n|
+
+
+fp||ht|y|at|^b@2@1|at|
+^*bClick^*n  -   one of the above  ^hor    in the  NavBar  ^mor      use your   mouse wheel|
+ht|z|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+n^|3|at|^^^*h https://www.youtube.com/channel/UCTGNUS8jbx85QOMUPlHoRMA, OCP Videos ^*n|
+%%
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2886|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2886 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+qx|GS,hide|
+mn|Eta  Responses                                                |
+tu|y|
+nt|^z@3^b@2|
+ht|g|fp|t-title|at|Eta  Responses    Normal|fp||at|^^^^|
+at|   This scale is used where  Responders  length is known to be    ^*b4 cards^*n
+^d@2
+ Steps         ^g   Cards                  
+@-@-@- ^f       @-@-@-@-@-@- 
+   
+   ^*b 1 ^*n   ^g ^*b  |cp|u|at|x|cp|u|at| x x x ^*n|cp||at|  ^jor     |cp|u|at|^*b|cp|u|at|J|cp|u|at| x x x^*n|cp||at|    
+   ^*b 2 ^*n   ^g ^*b  |cp|0|at|H|cp|u|at| x x x ^*n|cp||at|           
+   ^*b 3 ^*n   ^g ^*b  |cp|0|at|H|cp|u|at| |cp|red|at|J|cp|u|at| x x  ^*n|cp||at|                            
+   ^*b 4 ^*n   ^g ^*b  |cp|0|at|H H|cp|u|at| x x ^*n|cp||at|            
+   ^*b 5 ^*n   ^g ^*b  |cp|0|at|H H|cp||at| |cp|red|at|J|cp|u|at| x  ^*n  |cp||at|             
+   ^*b 6 ^*n   ^g ^*b  |cp|h-highlight|at|A K Q|cp|u|at| x ^*n|cp||at| 
+^^^^^^
+^b|fp||at|Repeat  Response^*n|fp||at|
+|n#|8|at|                                        ^e   @-  Steps  in  the  First  Resp. @-
+|n#|8|at|                  ^g  1           ^i    
+                           ^g@-@-          ^i    
+^c 1   step        ^f      ^*b|cp|u|at|x|cp|u|at| x x x ^*n|cp||at| ^*n
+^c 2   steps       ^f      ^*b|cp|u|at|^*b|cp|u|at|J|cp|u|at| x x x^*n|cp||at|           
+
+|
+pg| ***** 1 ***** |
+
+
+qx|GS,hide|
+nt|^z@3^b@2|
+ht|g|fp|t-title|at|Eta  Responses    Special|fp||at|^^^^|
+at|   This scale is used where  Responders  length is known to be    ^*b4 cards^*n    OR    could be a  ^*bsingleton^*n 
+^d@2
+ Steps         ^g   Cards                  
+@-@-@- ^f       @-@-@-@-@-@-   
+   ^*b 1 ^*n   ^g ^*b  |cp|u|at|    x ^*n|cp||at|             ^jor         |cp|u|at|^*bH^*n|cp||at|            (singleton)            |cp|u|at|^*btrumps  NOT  agreed^*n|cp||at|
+   ^*b 2 ^*n   ^g ^*b  |cp|u|at|x|cp|u|at| x x x ^*n|cp||at|  ^jor     |cp|u|at|^*b|cp|u|at|J|cp|u|at| x x x^*n|cp||at|    
+   ^*b 3 ^*n   ^g ^*b  |cp|0|at|H|cp|u|at| x x x ^*n|cp||at|           
+   ^*b 4 ^*n   ^g ^*b  |cp|0|at|H|cp|u|at| |cp|red|at|J|cp|u|at| x x  ^*n|cp||at|                            
+   ^*b 5 ^*n   ^g ^*b  |cp|0|at|H H|cp|u|at| x x ^*n|cp||at|            
+   ^*b 6 ^*n   ^g ^*b  |cp|0|at|H H|cp||at| |cp|red|at|J|cp|u|at| x  ^*n  |cp||at|             
+   ^*b 7 ^*n   ^g ^*b  |cp|h-highlight|at|A K Q|cp|u|at| x ^*n|cp||at|
+^^^^^^
+^b|fp||at|Repeat  Response^*n|fp||at|
+|n#|8|at|                                        ^e   @-  Steps  in  the  First  Resp. @-
+|n#|8|at|                  ^g  1           ^i     2   
+                           ^g@-@-          ^i   @-@-  
+^c 1   step        ^f      ^*b    |cp|u|at|x |cp||at|           |cp|u|at|x|cp|u|at| x x x ^*n|cp||at| ^*n
+^c 2   steps       ^f      ^*b    |cp|u|at|^*bH^*n|cp||at|            |cp|u|at|^*b|cp|u|at|J|cp|u|at| x x x^*n|cp||at| 
+   
+|
+pg| ***** 2 ***** |
+
+
+ht|z|at|
+^b^*bend^*n|
+pg| ***** 3 ***** |
+
+
+-----------------------------------------------------------------------------------------------  
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,wide|
+nt|^z@3^b@2|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class                            Eta  &  Zeta^*n^-^^|cs||fp||cp||at|^^|
+
+ht|f|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Hi Everyone and welcome to today's Precision Club session, in which the plan is that we'll be finishing our initial look at Precision Asking Bids.
+
+Today we will be looking at Zeta and Eta.
+
+For anyone who has not been to the previous sessions on Asking Bids  this is not remotely a "basic Precision" topic.
+
+If you're not completely familiar with "basic" Precision Openings and responses, then this will probably be a difficult session for you to follow or to get much from.
+
+If you have not already done so, please have a look at the notes I have prepared on Precision Club bidding.
+
+You can find these on: ^*hhttp://ocp.pigpen.org.uk/index.php^*n.  You will DEFINITELY want to have these onscreen in the background for reference during this session <grin>.
+
+^c^*h http://ocp.pigpen.org.uk/Zeta.php^*n 
+^c^*h http://ocp.pigpen.org.uk/Eta.php^*n
+
+If you are new to Asking Bids then there's no way you're going to absorb everything we cover tonight, so please do visit the site and read through the Asking Bid section at your leisure.
+
+If you want download one of the Precision system documents on the site.  See 
+
+^c^*h http://ocp.pigpen.org.uk/Documents.php^*n.
+
+ok, let's get cracking.|
+pg| ***** 4 ***** |
+
+
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|The Zeta  Ask|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Zeta is a jump-shift immediately over a POSITIVE response to 1@C (eg 1@C-1@H-3@D).
+
+This unilaterally sets the suit bid as trumps (guaranteed solid) and asks for controls exactly as if the bid was Beta.
+
+^c 1@C  -  1@H    -  3@D(^*bZeta^*n, sets @D as trumps)  -  3@S(shows 3 controls)
+
+^c 1@C  -  1NT  -  3@C(^*bZeta^*n, sets @C as trumps)  -  3NT(shows 5 controls)
+
+The reason Zeta is there in the system is for those times when it is nearly inconceivable that partner will have enough trumps to make a positive response, or even to agree the suit in a subsequent (same suit) Theta.  In which case it would therefore take 3 rounds of bidding to agree the suit.
+
+An immediate jump-shift that SETS the trump suit unilaterally will normally save a lot of space There is no such thing as a repeat Zeta.
+
+If a Beta Ask is required to clarify responder's controls (ie: after a 1 step response to Zeta), then the normal rules for Relay Beta and high-level Beta Asks apply, so an immediate Relay in the next suit over the Zeta Response is a Relay Beta only if Responder showed 0-2 Controls.
+
+Failing that 4@C and 4@D Beta is still available if needed.
+
+^c 1@C  -  1@H    -  3@D(Zeta, sets @D as trumps)  -  3@H shows 0-2 controls, and now  3@S  would be a Relay Beta.
+
+^c 1@C  -  1NT  -  3@C(Zeta, sets @C as trumps)  -  3@D shows 0-2 controls, and now  3@H  would be a Relay Beta, 
+
+but if it had continued   3@S(Epsilon)  -  3NT(None or 1st & 2nd), then Opener would still have had  4@D  Beta available.
+
+Let's see an example|
+pg| ***** 5 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 1,wide|
+st||
+pn|South,West,North,East|rh||ah|Teach 1|sv|-|sk|s|sk||
+%% 1SAKQJ652HKQJDAKQC,ST8H7643D985CA843,S743HAT2DJT32CKQ2,S9H985D764CJT9765
+md|1SAKQJ652HKQJDAKQC,,S743HAT2DJT32CKQ2,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 1|
+pg| ***** 6 ***** |
+
+
+mb|1C|an|16+ Any dist except 16-23 4441|
+pg| ***** 7 ***** |
+
+
+sj|c|
+mb|p|mb|1S|an|8+ BALANCED or semi-bal with 5-minor, GF|
+pg| ***** 8 ***** |
+
+
+sj|c|
+mb|p|mb|3S|an|Zeta, guaranteed solid trump suit|
+at|     So here  3@S  (^*bZeta^*n)  sets Spades as trumps and asks about Controls.|
+pg| ***** 9 ***** |
+
+
+sj|c|
+mb|p|mb|4C|an|3 ctrls (std Beta response)|
+at|^^^^4@C shows 3 controls, and now it just remains to find out if partner has the  A@H  or not.|
+pg| ***** 10 ***** |
+
+
+sj|c|
+mb|p|mb|4H|an|Epsilon in the bid suit|
+pg| ***** 11 ***** |
+
+
+sj|c|
+mb|p|mb|5H|an|1st Rnd Ctrl,   [ v or Axx(x)]|
+pg| ***** 12 ***** |
+
+
+sj|c|
+mb|p|mb|7S|
+pg| ***** 13 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^^^Any questions ?|
+pg| ***** 14 ***** |
+
+
+mb|p|
+md|0SAKQJ652HKQJDAKQC,ST8H7643D985CA843,S743HAT2DJT32CKQ2|
+pg| ***** 15 ***** |
+
+
+pc|cJ|
+pf|Y|
+pg| ***** 16 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Zeta    continued|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at| Zeta always uses the  normal  Beta Scale
+
+^e ^*bunless^*n Responder is a passed hand in which case it uses the  WEAK  scale.
+
+Like Delta, Zeta cannot occur after an Intermediate Precision opening and is only found after  1@C  Openings.
+
+The Special Weak Scale is  ^*bnever^*n  used with Zeta.
+
+In the example  (click or use your mouse wheel to go back to see it)  Declarer was ONLY interested in the  A@H.
+
+Nothing else about responder's hand matters.  
+
+In practice, Zeta is pretty rare, not because solid, self-sufficient suits are rare, but because Zeta ought really to be used on a hand where not only does Opener have a long, solid, self-sufficient trump suit, but also Opener has a hand where they don't care WHAT partner's trump holding is.
+
+This is because once you use Zeta you can never find out what partner's holding in that suit is.
+
+So do NOT use Zeta if you have a side-suit where you might want to RUFF in partner's hand, because if you use Zeta you have no means of finding out whether partner has any trumps or not.
+
+In the earlier  example Opener has 7 Spades and knows partner must have at least a small doubleton in the suit (1@S response). It doesn't matter where Responder's points are.
+
+They either have the A@H or they don't No chance of Responder being void in @H, so their trumps simply don't matter.
+
+Anyone not seeing the kind of hand on which to use Zeta, and the kind of hand where it would be best NOT to use it?
+
+ok, let's move on...|
+pg| ***** 17 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Zeta    continued|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at| Zeta is consequently hardly ever (almost never) used with 2 suiters (much better to use Alpha or Beta/Theta for those), but almost exclusively with solid single-suited hands.
+
+
+
+^*bExample 1^*n   -          @SAKQJ10xxx  @HKQJ  @DA  @Cx        the bidding starts      1@C  -   2@C
+
+This is a  ^*bperfect^*n  hand for Zeta.
+
+It is incredibly unlikely that partner will be void in Hearts, so the hand just comes down to 2 questions: 
+
+Has partner got the  A@H ?        Has partner got the  A@C ?         Nothing else matters.
+
+
+
+
+^*bExample 2^*n   -          @SAKQJ10xx  @HAKxx  @DA  @Cx        the bidding starts      1@C  -   2@C
+
+This is  ^*bNOT^*n  as good a hand for Zeta, because if partner turns up with  x or xx  in Hearts and doesn't have the Ace of Clubs and some other fast tricks in the Minors then we will really need to ruff some Hearts in their hand, so it DOES matter to us what partner's Spade holding is.
+
+Better, therefore, to use  Alpha in Spades  or  a low-level Beta then Theta.
+
+You might even end up agreeing HEARTS as trumps.|
+pg| ***** 18 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Zeta    continued|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at| To anticipate how we deal with interference a little:
+
+You may have noticed that  IF  we have interference immediately over a positive response to a  1@C  Opening THEN
+
+^c ^*bPass  ^*n ^e is normally  Gamma  in Responder's suit, if they've shown one, otherwise it is  Low-level Beta
+
+^c ^*bDouble^*n ^e is  Alpha  in the suit immediately BELOW the interference 
+^h(or below Responder's suit if Responder's suit is the one below the interference).
+
+in these circumstances it is possible for us to have a Zeta that is  ^*bNOT^*n  a jump-shift.    For example: 
+
+^c 1@C  -  1@H  -  (1@S)  -  ???    
+
+Here  Pass  is  Gamma  in Hearts, and  Double  is Alpha in Diamonds, so what is  2@D  over the  1@S  overcall ?
+
+You guessed it, it's  ^*bZeta^*n  in Diamonds.       
+
+
+Similarly   
+
+^c 1@C  -  1@S  -  (2@D)  -  ???   
+
+Now  Pass  is a  low-level Beta  and  Double  is  Alpha in Clubs, so a  3@C  bid is  ^*bZeta^*n  in Clubs.
+
+
+This is something you MUST keep in mind when there is interference, both as Opener and Responder.
+
+Any questions on Zeta?    ok|
+pg| ***** 19 ***** |
+
+
+qx|Eta,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Eta|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at| The last Asking Bid is Eta which is effectively a "length-known" Gamma Ask.
+
+It is used  ^*bONLY^*n  only when partner is known to have a 4-card holding in a suit. 
+@1
+Normally because they have shown a  4441-shape  hand with a  2@D Opening  or a  2@H  or greater response to  1@C.
+^z@3
+
+But there are two sequences over  2@C Openings  where Eta is available 
+
+^c 2@C(5+ cards)    -    2@D(enquiry)    -    2@H(4 cards)    -    3@S       ^*bEta^*n in @H
+
+^c 2@C(5+ cards)    -    2@D(enquiry)    -    2@S(4 cards)    -    3@H       ^*bEta^*n in @s
+
+
+Eta occurs only in very specific situations, almost always BELOW game level.
+
+For example, over a  2@D Opening,  Eta ^*bonly^*n occurs when Responder has made a  2NT, 3@S or 3NT  Response, 
+
+^*bnever^*n  after they have made the 2@H Relay.
+
+^d@2(In the Complex System Eta occurs much more frequently because Opener declares 4441-shape
+  hands after a 1@D Opening.)
+^b@2
+In the Simple System (the one we are learning here) this is not the case and Intermediate 4441-shape hands are just bid naturally.|
+pg| ***** 20 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Eta    continued|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  So, to repeat: Eta is normally used only when Responder has shown a 4441-shape hand.
+
+Whilst this is normally over a  2@H or greater  response to  1@C     for example 
+
+^c 1@C    -    2@H(8-11, 4144 shape)    -    2@S      Eta in Spades  
+
+Eta Asks can also occur in some sequences over the  2@D Opening in this, the simple system (ie: 16-23 4441), and, as we have just seen on the previous page, as part of the 2@C Opening Bid sequences when Opener shows a 4-card Major in response to the 2@D Forcing Enquiry.
+
+The Responses to Eta are as follows:-
+^c@2 
+1    step    shows    J x x x   ^*bor^*n   worse
+2    steps  shows    H x x x
+3    steps  shows    H J x x
+4    steps  shows    H H x x
+5    steps  shows    H H J x
+6    steps  shows    A K Q x
+^b@2
+As someone asked me in an earlier class, querying that there is no "defined" 7th step to show  AKQJ  in the suit, but if you ever find yourself with that and cannot bring yourself to "lie" with a 6-step response, I'm sure partner will work out what a 7-step response means.
+
+Like Gamma, an Eta Ask  ^*bALWAYS^*n  sets that suit as trumps, whatever the response.|
+pg| ***** 21 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Eta    continued        Relay  Beta|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Relay Beta is available over the Eta response if required.
+
+But since Beta is also available in the known short suit (if the singleton suit has been specified, which is not always the case), the rule is as follows: 
+
+^d@.   If the  KNOWN  singleton suit is the relay suit  OR  is the next suit up from that
+
+^e THEN   we make  Beta Asks  in the singleton suit   OTHERTWISE    Relay Beta  is used.
+
+So
+
+^c 1@C    -    2@H(8-11,  4144)    -    2@S(Eta)    -    3@C(@SHxxx)    -    ???     Now  3@H  is  Beta in the short suit
+
+(next suit up from the Relay)   and   3@D  is Epsilon, 
+
+but 
+
+^c 1@C    -    2@H(8-11,  4144)    -    2@S(Eta)    -    2NT(@Sxxxx)    -    ???     Now  3@C  is  Relay Beta.
+
+
+IF  "Relay Beta"  falls on the singleton suit  THEN  all is clear,  that is a real, Relay Beta.  
+
+
+The rest works out to mean that the:
+
+only time that the Relay bid would  NOT  be Beta is when the  KNOWN singleton suit  is one step beyond the relay.|
+pg| ***** 22 ***** |
+
+
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Eta    continued|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Remember, though, that there are times when Eta can be used when the location of the singleton
+
+suit is NOT known, or there may  NOT EVEN BE  a singleton suit.
+
+In those circumstances  Beta  is ALWAYS   Relay Beta,  for obvious reasons.
+
+Any questions thus far?
+
+
+^*bRedbird44:^*n  I think I am not getting this 
+
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Look, this is really fairly simple.
+
+The Eta ask establishes trumps.
+
+WHEN we know where partner's singleton is  AND  that suit is one bid beyond the,  'Relay over the Eta response'
+  
+THEN the relay bid ceases to be Beta and we ask in the singleton suit.
+
+At   all OTHER TIMES,  including - when we do not know if partner has a singleton or not, 
+
+we continue to use the  Relay bid  as   Beta.     ok?
+
+
+^*bRedbird44:^*n  ok ty                         ^*bMM:^*n To be fair, some of Oliver's original text on this was a bit convoluted so
+^r I have word-smithed it a touch.    :)|
+pg| ***** 23 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Eta    continued|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  To continue: 
+
+^c@.  No @2repeat Asks are permitted, to let you find out which honours responder has.
+
+^c@.  If necessary you have to find out by a process of elimination by asking elsewhere with Epsilon 
+
+^c@.  If Eta used with 4441-shape hands and responder's controls are already known, then there is scope in the Epsilon scheme for an Epsilon in the singleton Suit.
+
+^c@.  Where Eta has been used, repeat Epsilons are not normally needed, since responder's exact shape is known so no need for further clarification, except where possession of the Jack is concerned.
+
+^c@.  For more on this see the rules on repeat Epsilons in a known suit.        ^*bMM^*n   See -  Chapter 9.4   Epsilon
+
+So for example:
+^b@2
+1@C-2@S(8-11, 1444)-3@D(Eta)-3@S(@DHxxx)-4@H(Epsilon)-4NT(3rd)-5@H(Rep Epsilon) -  ??? 
+
+Here  5@S  would  deny the Jack  and  5NT  promise it.
+
+This is because Responder is  ^*balready known^*n  to have a 4 card Heart suit so the  Repeat Epsilon  only relates to the possession of the Jack.
+
+Let's see an example:|
+
+
+--------------------------------------------------------------------
+qx|t 2, wide|
+st||
+pn|South,West,North,East|rh||ah|Teach 2|sv|e|sk|e|sk||
+%% 4S76H76DKT9762C976,SKT983HQJ32DACKQ8,S52H954DQ8543CT53,SAQJ4HAKT8DJCAJ42
+md|4,SKT983HQJ32DACKQ8,,SAQJ4HAKT8DJCAJ42|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 2    |
+pg| ***** 24 ***** |
+
+
+mb|2D|an|16-23 and ANY 4441 distribution|
+pg| ***** 25 ***** |
+
+
+sj|c|
+mb|p|mb|2N|an|14+ Both Majors|
+pg| ***** 26 ***** |
+
+
+sj|c|
+mb|p|mb|3C|an|@D Singleton|
+pg| ***** 27 ***** |
+
+
+sj|c|
+mb|p|mb|3S|an|Eta in @S|
+pg| ***** 28 ***** |
+
+
+sj|c|
+mb|p|mb|4S|an|HHJx in @S|
+pg| ***** 29 ***** |
+
+
+sj|c|
+mb|p|mb|4N|an|Relay Beta|
+pg| ***** 30 ***** |
+
+
+sj|c|
+mb|p|mb|5S|an|7 Ctrls (Ace = 2, King = 1)    Strong Scale|
+at|Strong scale here, because  East  is known to be 16+|
+pg| ***** 31 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+sk|w|
+at|^^^^Here West can count  (for certain)   5 @S's    4 @H's     1 @D    and   3 @C's| 
+pg| ***** 32 ***** |
+
+
+at|^^^^East  MUST have the  @HAK,  because they would  NOT  count the singleton  K@D  as a control| 
+pg| ***** 33 ***** |
+
+
+sk||
+mb|7N|
+at|^^^^The  @CJ  doesn't matter, of course.            Any questions on this hand ?| 
+pg| ***** 34 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+
+mb|p|
+md|0S76H76DKT9762C976,SKT983HQJ32DACKQ8,S52H954DQ8543CT53|
+pg| ***** 35 ***** |
+
+
+pc|s5|
+pf|Y|
+pg| ***** 36 ***** |
+
+
+bt||
+qx|Prac,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Practice / Demo  Hands|fp||at|^^^^|
+
+cp|red|at|^*bOliverC:^*n|cp||at|   Any questions on Eta in general?     ok
+ 
+
+It was an easy night tonight so     
+
+plenty of time for practice hands.
+
+
+
+
+@bUof FL Jen:  Hi Terry
+
+
+
+|cp|red|at|^*bOliverC:^*n|cp||at| 2 more, pls
+
+Redbird44:  Hi Jen
+
+Redbird44:  Hi John
+
+
+
+soko52: hi
+
+
+Uof FL Jen:  Hi John, Soner|
+pg| ***** 37 ***** |
+
+
+------------------------------------------------------------------------------------------------  
+%% Alert Insert start --------------------------------------------------------------------------
+nt|^z@3^b@2|
+at|^^^^|
+%%   header box with text
+ht|b|cs|y|fp||at|^b{ ^^|
+ht|c|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^|fp|x-insertAlert|at|^- A small insert on Alerts^*n^-^^|cs||fp||cp||at|^^|
+
+ht|d|at|^^|
+cp||at|^*bMM:^*n|cp||at|  We all know we have to alert when playing  'proper'  bridge.
+
+The laws of the game say that what we have to put in the alert is  ^*b our agreement with partner ^*n about that bid.
+
+While creating these bridge movies, I have gone through and added to, or amended, many of the alerts that were in the original text.
+
+I have changed them from being ^*b REAL ^*n alerts, that you should give to real opponents, and have replaced them with ^*b STUDY ^*n alerts.   Study alerts are only useful to students of Oliver's Precision.  Of course in many cases no changes were needed.   For example    1@c     16+ Any dist except 16-23 4441
+
+It is particularly important that we make the alerts for  ^*b Asking bids and their responses^*n,  as clear as possible
+
+	    ^c ^*b Study Alert ^*n           ^i ^*b Real Alert ^*n                ^o ^*b It would be great if you could add ^*n
+     ^b      @-@-@-@-@-@-@-@-@-@- ^h       @-@-@-@-@-@-@-@-@-@-   ^n       @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-
+		^c Beta    Relay Beta ...          ^i Gen Ctrl Ask                    ^o A = 2,  K = 1 
+		^c Alpha                           ^i Asking  in                      ^o Trump ...
+		^c Gamma                           ^i Asking  in partners suit        ^o Trump ...
+		^c Epsilon                         ^i Specific Ctrl Ask               ^o in ... 
+		^c Hxx                             ^i Hxx                             ^o in ... 
+		^c none  or  1st & 2nd             ^i none  or  1st & 2nd             ^o [xxx, AKx(x)]
+		^c 3rd rd ctrl                     ^i 3rd rd ctrl                     ^o [xx, Qxx(x), Qx]
+		
+An easy mistake in reply to an Epsilon is when, say, you hold ^*b Q76 ^*n in the suit, and so give only ^*b Qxx ^*n in the alert.   THAT  IS  WRONG.  The agreement is ^*b 3rd round control ^*n and that is what should be told to the opps.   
+
+The ^*b ethical ^*n problem with telling too much to your opps is that it disadvantages the other pairs who will play your opponents cards.|
+%% Alert Insert End ----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------  
+pg| ***** 38 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 1,hide|
+st||
+pn|Uof FL Jen,lute57,Redbird44,soko52|rh||ah|Practice 1|sv|b|sk|n|sk||
+%% 3SAT984H762DKQ3CK4,S76H3DT98764CJT86,S53HAKQJT95DA2CA2,SKQJ2H84DJ5CQ9753
+md|3SAT984H762DKQ3CK4,,S53HAKQJT95DA2CA2,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 1  |
+pg| ***** 39 ***** |
+
+
+mb|1C|an|16+ Any dist except 16-23 4441|
+pg| ***** 40 ***** |
+
+
+sj|c|
+mb|p|mb|1N|an|8+ hcp with 5+ SPADES, GF|
+pg| ***** 41 ***** |
+
+
+sj|c|
+mb|p|mb|3H!|an|Zeta, guaranteed solid trump suit|
+pg| ***** 42 ***** |
+
+
+sj|c|
+mb|p|mb|4C!|an|4 ctrls    (Beta Response)|
+at|  At this point North can now count  7 @h's  the  3  other aces and  2  other kings making  12.|
+pg| ***** 43 ***** |
+
+
+sj|c|
+mb|p|mb|4D!|an|Epsilon  (in the bid suit)|
+pg| ***** 44 ***** |
+
+
+sj|c|
+mb|p|mb|5C!|an|2nd  and  3rd  round ctrl [Kx,  KQx(x),  KQ]|
+pg| ***** 45 ***** |
+
+
+sj|c|
+mb|p|mb|5D!|an|Repeat Epsilon|
+pg| ***** 46 ***** |
+
+
+sj|c|
+mb|p|mb|5S!|an|Extra honor   [KQx]|
+at|^^^^Now North knows that partner has  @dKQx,  the @dQ being an additional winner will now give  13.|
+pg| ***** 47 ***** |
+
+
+sj|c|
+mb|p|mb|7N|
+pg| ***** 48 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^^^ok  |
+pg| ***** 49 ***** |
+
+
+md|0SAT984H762DKQ3CK4,S76H3DT98764CJT86,S53HAKQJT95DA2CA2|
+pg| ***** 50 ***** |
+
+
+pf|Y|
+mb|p|
+pc|s7|
+pg| ***** 51 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 52 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2, wide|
+pn|Uof FL Jen,lute57,Redbird44,soko52|rh||ah|Practice 2|sv|b|sk|w|sk||
+%% 4S7H975DQJT8CQJ854,S932HQJT432DA7CK9,S54HK86D542CT7632,SAKQJT86HADK963CA
+md|4,S932HQJT432DA7CK9,,SAKQJT86HADK963CA|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2|
+pg| ***** 53 ***** |
+
+
+mb|1C|an|16+ Any dist except 16-23 4441|
+pg| ***** 54 ***** |
+
+
+sj|c|
+mb|p|mb|1H|an|8+ hcp,   5+ @h, GF|
+pg| ***** 55 ***** |
+
+
+sj|c|
+mb|p|mb|1S|an|Alpha  in the bid suit|
+pg| ***** 56 ***** |
+
+
+sj|c|
+mb|p|mb|1N!|an|0-3 ctrls,    less than Qxx or xxxx in @s's|
+pg| ***** 57 ***** |
+
+
+sj|c|
+mb|p|mb|2S|an|Theta  (Repeat Alpha)|
+pg| ***** 58 ***** |
+
+
+sj|c|
+mb|p|mb|3D!|an|Hx or xxx   (trumps agreed)|
+pg| ***** 59 ***** |
+
+
+sj|c|
+mb|p|mb|3H|an|Relay Beta|
+pg| ***** 60 ***** |
+
+
+sj|c|
+mb|p|mb|4D!|an|3 controls   (weak scale after the 1NT 0-3 resp)|
+pg| ***** 61 ***** |
+
+
+sk|e|
+sj|e|
+at|    The  3  ctrls have to be the  @dA  and one of the missing Kings.     ^*bMM:^*n  So count your tricks.|
+pg| ***** 62 ***** |
+
+
+at| ^^^^7 @s's,  the  3  other Aces and  2  of the other three Kings,  giving 12.   One of Easts diamonds will go on the @dA and one on whichever King West has.      Can  East  get rid of his fourth diamond loser somewhere ?|
+pg| ***** 63 ***** |
+
+
+sk||
+sj|c|
+mb|p|mb|4H|an|Epsilon  in the bid suit|
+pg| ***** 64 ***** |
+
+
+sj|c|
+mb|p|mb|4N!|an|3rd rd ctrl  [xx, Qxx(x), Qx]|
+at|^^^^Not in  @h's  he can't.       Partner does not have the  K  so no   @hKQxxx|   
+pg| ***** 65 ***** |
+
+
+sj|c|
+mb|p|mb|5D|an|Epsilon  in the bid suit|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Trying diamonds|
+pg| ***** 66 ***** |
+
+
+sj|c|
+mb|p|mb|6H|an|1st and 3rd round ctl         [Ax, AQx(x), AQ]|
+at|^^^^Yes,-whichever case West has,   [Ax, AQx(x), AQ],    it will take care of East's last diamond loser.|
+pg| ***** 67 ***** |
+
+
+sj|c|
+mb|p|mb|7S|
+pg| ***** 68 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^^^Ok, well done Soner.  Lead and claim 13, pls |
+pg| ***** 69 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  This hand is EXACTLY the kind of hand where you CANNOT afford to use Zeta.
+
+Yes, partner might have  @hKQJxx  and they might have  @dAQJ,  but if they  DON'T  have one of those holdings, 
+
+THEN  you NEED them to have some trumps for the purposes of a Grand Slam.
+
+So  LOW Beta then Theta     OR     Alpha   is the preferred route.|
+pg| ***** 70 ***** |
+
+
+md|0S7H975DQJT8CQJ854,S932HQJT432DA7CK9,S54HK86D542CT7632|
+mb|p|
+pg| ***** 71 ***** |
+
+
+pf|Y|
+pc|dQ|
+pg| ***** 72 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 73 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 3, wide|
+pn|Uof FL Jen,lute57,Redbird44,soko52|rh||ah|Practice 3|sv|s|sk|s|sk||
+%% 1SHAKQJT84DKQJTCK4,SAQ965H32D9732CQ2,S7432H965DA86CA85,SKJT8H7D54CJT9763
+md|1SHAKQJT84DKQJTCK4,,S7432H965DA86CA85,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 3|
+pg| ***** 74 ***** |
+
+
+mb|1C|an|16+ Any dist except 16-23 4441|
+pg| ***** 75 ***** |
+
+
+sj|c|
+mb|p|mb|1S|an|8+ BAL or semi-balanced with 5m, GF -   NO  VOIDS|
+pg| ***** 76 ***** |
+
+
+sj|c|
+mb|p|mb|3H|an|Zeta Ask,  promises self supporting suit|
+at|^^^^^*bMM:^*n    this is an  ^*bINVENTED^*n  Zeta sequence.
+
+The original bidding sequence made at the time did not get saved, (there was no claim).|
+pg| ***** 77 ***** |
+
+
+sj|c|
+mb|p|mb|4C|an|4 controls|
+at||
+pg| ***** 78 ***** |
+
+
+sj|c|
+mb|p|mb|4D|an|Epsilon  in the bid Suit|
+pg| ***** 79 ***** |
+
+
+sj|c|
+mb|p|mb|5D|an|1st rd ctrl  [void, Axx(x)]|
+pg| ***** 80 ***** |
+
+
+sj|c|
+mb|p|mb|6C|an|Epsilon  in the bid Suit|
+pg| ***** 81 ***** |
+
+
+sj|c|
+mb|p|mb|7C|an|1st rd ctrl  [void, Axx(x)]|
+pg| ***** 82 ***** |
+
+
+sj|c|
+mb|p|mb|7h|
+at||
+pg| ***** 83 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 84 ***** |
+
+
+md|0SHAKQJT84DKQJTCK4,SAQ965H32D9732CQ2,S7432H965DA86CA85|
+mb|p|
+pg| ***** 85 ***** |
+
+
+pf|Y|
+pc|sA|
+pg| ***** 86 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 87 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 4, wide|
+pn|Uof FL Jen,lute57,Redbird44,soko52|rh||ah|Practice 4|sv|b|sk|w|sk||
+%% 2SJ6HJ952DT94CT863,SAKT954HA3DAQ75C2,S8H876DKJ832CQJ54,SQ732HKQT4D6CAK97
+md|2,SAKT954HA3DAQ75C2,,SQ732HKQT4D6CAK97|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 4|
+pg| ***** 88 ***** |
+
+
+mb|1C|an|16+ Any dist except 16-23 4441|
+pg| ***** 89 ***** |
+
+
+sj|c|
+mb|p|mb|3C|an|12+hcp,  4414  (singleton @d)|
+at|      3@C  is just 12+ with 4414 shape, and if Beta gets used, East will use the NORMAL scale.|
+pg| ***** 90 ***** |
+
+
+sj|c|
+mb|p|mb|3S!|an|Eta   in the bid suit|
+at|^^^^So this is Eta           |
+pg| ***** 91 ***** |
+
+
+sj|c|
+mb|p|mb|4C|an|Hxxx|
+pg| ***** 92 ***** |
+
+
+sj|c|
+mb|p|mb|4H!|an|Epsilon  in the bid suit|
+pg| ***** 93 ***** |
+
+
+sj|c|
+mb|p|mb|5D!|an|2nd & 3rd   [Kx  KQx(x)  KQ]|
+pg| ***** 94 ***** |
+
+
+sj|c|
+mb|p|mb|6C!|an|Epsilon  in the bid suit|
+pg| ***** 95 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 96 ***** |
+
+
+sj|L|
+mb|r|an|none   OR   1st  and  2nd         [ xxx(x),  A,  AKx(x) ]|
+at|After the intervening ^*bDbl^*n, the   ^*bReDbl^*n   shows what would have been a  ^*b1 step^*n  response.|
+pg| ***** 97 ***** |
+
+
+sj|c|
+mb|p|mb|7S|
+pg| ***** 98 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^^^^*blute57:^*n   good bidding Soner|
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 99 ***** |
+
+
+md|0SJ6HJ952DT94CT863,SAKT954HA3DAQ75C2,S8H876DKJ832CQJ54|
+mb|p|
+pg| ***** 100 ***** |
+
+
+pf|Y|
+pc|s8|
+pg| ***** 101 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 102 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 5, wide|
+pn|Redbird44,lute57,OliverC,Uof FL Jen|rh||ah|Practice 5|sv|n|sk|n|sk||
+%% 3SK972HJT96DACQ642,S43HA52DJT832C975,SAQJT6HKQD654CAK3,S85H8743DKQ97CJT8
+md|3SK972HJT96DACQ642,,SAQJT6HKQD654CAK3,|
+
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 5|
+pg| ***** 103 ***** |
+
+
+sj|c|
+mb|1C|an|16+ Any dist except 16-23 4441|
+pg| ***** 104 ***** |
+
+
+sj|c|
+mb|p|mb|2N!|an|8-11 hcp,   4414  or  4441   (singleton in @d or @c)|
+pg| ***** 105 ***** |
+
+
+sj|c|
+mb|p|mb|3S|an|Eta,  (Trump asking bid in a KNOWN 4-card suit)|
+pg| ***** 106 ***** |
+
+
+sj|c|
+mb|p|mb|4C!|an|Hxxx  (NOT the J)|
+pg| ***** 107 ***** |
+
+
+sj|c|
+mb|p|mb|4D|an|Beta General Control Ask, Weak scale|
+at|     2NT is 8-11, so uses the  weak scale  for  Beta Responses|
+pg| ***** 108 ***** |
+
+
+sj|c|
+mb|p|mb|5C!|an|3 controls  (weak scale)|
+pg| ***** 109 ***** |
+
+
+sj|c|
+mb|p|mb|6S|
+at|^^^^So here, I couldn't really care less which Ace South has (although I'm expecting it to be the A@H)|
+pg| ***** 110 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^^^wd,   Terry  &  me     :)|
+pg| ***** 111 ***** |
+
+
+mb|p|
+md|03SK972HJT96DACQ642,S43HA52DJT832C975,SAQJT6HKQD654CAK3|
+pg| ***** 112 ***** |
+
+
+mn|p|
+pf|Y|
+pc|dK|
+pg| ***** 113 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 114 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 6, wide|
+pn|Redbird44,lute57,Eszter5,Uof FL Jen|rh||ah|Practice 6|sv|e|sk|e|sk||
+%%4S8H932D432CT76532,SAKJT6HQT76DK9CA9,S954H84DJ865CKQJ8,SQ732HAKJ5DAQT7C4 
+md|4,SAKJT6HQT76DK9CA9,,SQ732HAKJ5DAQT7C4|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 6  |
+pg| ***** 115 ***** |
+
+
+mb|2D!|an|16+ any 4441 shape|
+pg| ***** 116 ***** |
+
+
+sj|c|
+mb|p|mb|2N|an|14+ hcp,   4+@S  and  4+@H|
+pg| ***** 117 ***** |
+
+
+sj|c|
+mb|p|mb|3D|an|4441  (singleton @C)|
+pg| ***** 118 ***** |
+
+
+sj|c|
+mb|p|mb|3S!|an|Eta,  (Trump asking bid in @S   KNOWN to be 4-card suit)|
+at|   Just using  Eta  on a known 4-card suit (no chance of it being a singleton)  agrees trumps.|
+pg| ***** 119 ***** |
+
+
+sj|c|
+mb|p|mb|4C!|an|Hxxx   and NOT the J|
+pg| ***** 120 ***** |
+
+
+sj|c|
+mb|p|mb|4D!|an|Epsilon in the bid suit|
+pg| ***** 121 ***** |
+
+
+sj|c|
+mb|p|mb|4S!|an|2nd rd ctrl    [x, Kxx(x), K]|
+pg| ***** 122 ***** |
+
+
+sj|c|
+mb|p|mb|5H|an|Epsilon   in the bid suit|
+pg| ***** 123 ***** |
+
+
+sj|c|
+mb|p|mb|5S!|an|none   OR   1st  and  2nd         [ xxx(x),  A,  AKx(x) ]|
+at|^^^^So  5@s  must show the  @hAKxx  (known 4 card suit)   and   the 16+ hcp have to be somewhere| 
+pg| ***** 124 ***** |
+
+
+sj|c|
+mb|p|mb|6H!|an|Repeat Epsilon,  Do you have the J ?|
+pg| ***** 125 ***** |
+
+
+sj|c|
+mb|p|mb|6N!|an|yes I do|
+pg| ***** 126 ***** |
+
+
+sj|c|
+mb|p|mb|7N|
+pg| ***** 127 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^West has a 17 count opposite a 2@D Opener (16+), and once East shows with a singleton @C, that's 6 of the outstanding 7 HCP accounted for   :) |
+pg| ***** 128 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|     There is a nice alternative sequence for this hand.   Let me show you.|
+pg| ***** 129 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 6b, wide|
+ub|99|
+rh||ah||
+sk|e|sk||
+mb|?|
+pg| ***** 130 ***** |
+
+
+mb|2D!|an|16+ any 4441 shape|
+pg| ***** 131 ***** |
+
+
+sj|c|
+mb|p|mb|2H|an|Enquiry|
+pg| ***** 132 ***** |
+
+
+sj|c|
+mb|p|mb|2S|an|16-19 hcp,  any 4441 shape|
+pg| ***** 133 ***** |
+
+
+sj|c|
+mb|p|mb|2N|an|Automatic Relay|
+pg| ***** 134 ***** |
+
+
+sj|c|
+mb|p|mb|3S!|an|4441  (ie: @C singleton)|
+
+at|^^^^From the website -  @2 3@s  shows a Club singleton. No Eta Asks are permitted. Responder either signs off in the denomination of their choice at the appropriate level, or may bid Beta in the singleton suit first.|
+pg| ***** 135 ***** |
+
+
+sj|c|
+mb|p|mb|4C!|an|Beta  (bid of singleton suit)|
+pg| ***** 136 ***** |
+
+
+sj|c|
+mb|p|mb|4H|an|5 ctrls (strong scale as 14+)|
+pg| ***** 137 ***** |
+
+
+sj|c|
+mb|p|mb|7S|
+at|^b@2^^ :) |
+pg| ***** 138 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^ok, well done everyone|
+pg| ***** 139 ***** |
+
+
+mb|p|
+md|0S8H932D432CT76532,SAKJT6HQT76DK9CA9,S954H84DJ865CKQJ8|
+pg| ***** 140 ***** |
+
+
+mn|p|
+pf|Y|
+pc|c5|
+pg| ***** 141 ***** |
+
+
+Goodbyes--------------------------------------------------------------------
+bt||
+qx|end,thin|
+bt||
+nt|^b@2^z@3|
+at|^^^^|
+cp|red|at|^*bOliver:^*n|cp||at|  Okay, we're definitely going to leave it there for tonight. 
+
+That's it for the Asking Bids as such. 
+
+So next session (in two weeks time) we will be starting on-Interference over Asking Bids.
+
+
+Redbird44:  ok vg ty OC
+
+lute57:  Have fun drumming
+
+|cp|red|at|^*bOliver:^*n|cp||at|  I always do.
+
+Please do check out the notes on the website. If you do use the website, please do register and login each time as then it gives me some idea as to what people look at more when they're there.
+
+Please do try to practice these Asking Bids. You will find it difficult to make sense of them unless you do spend some time in the Partnership Bidding Tables doing just that (Set the tables for constrained and 27+ points combined).
+
+
+lute57:  excellent lesson thank you for sharing your wisdom and time and energy
+
+Redbird44:  ty ty @H
+
+RogerPfi: Ty oliver
+
+|cp|red|at|^*bOliver:^*n|cp||at|  Night all, and see you all in a couple of weeks.  Bye for now

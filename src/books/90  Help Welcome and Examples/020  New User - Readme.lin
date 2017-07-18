@@ -5,6 +5,7 @@
 fh|150|ff|1Arial|fb|19|fm|1|       1 large
 fh|238|ff|2Arial|fb|29|fm|2|       2 med
 fh|342|ff|3Arial|fb|39|fm|3|       3 med+
+fh|528|ff|5Arial|fb|50|fm|5|       5 sml
 fh|920|ff|3Arial|fb|90|fm|9|       9 sml
 
 cr|2080|cg|2080|cb|2255|     2  blue med
@@ -22,7 +23,7 @@ mn|New User  -   Readme  1|
 qx|NU 1|
 fp||at|
 
-^b@2To get back here quickly @- click the|fp|3|at| ^*nHome^*n |fp||at|button, far top left.  That will take you back to the Welcome page
+^b@2To get back here quickly @- click the|fp|3|at| ^*nHome^*n @Z |fp||at|button, top left.  That will take you back to the Welcome page
 ^cthen click the|fp|2|at|   ^*bFlow >^*n   |fp||at|button to get you back here.    |cp|7|at|^*bPlease try this now^*n|cp||at|.
 
 
@@ -35,17 +36,18 @@ You can see the location and name of this tutorial by looking at the very top, o
 
 ^c|fp|3|cp|7|at| ^*bA.^*n|cp||fp||at|  ^*bPlay it^*n by using your  |fp|2|cp|7|at|^*bMouse Wheel^*n|cp||fp||at|  or by clicking on the  |fp|3|cp|7|at|^*bFlow > |cp||fp||at| (or ^*bStep >^*n) button.
 
+^- @{ |fp|5|at|There is a Wheel & Trackpad ^*bsensitivity^*n setting  @-  Menubar > Options > ^*bShow^*n >  right hand column |fp||at|@} ^-
 
-To discover the difference between the two buttons, hover your mouse over each and read the pop-up text.
+To see the difference between the  ^*bFlow^*n  and  ^*bStep^*n  buttons, hover your mouse over each and read the pop-up text.
+
 ^c^*bAll buttons^*n  in  ^*baaBridge^*n  have their own pop-up text.       |cp|7|at|^*bPlease try this now^*n|cp||at|.
 
 You can also jump around in any tutorial by using the  ^*bNavigation Bar^*n  (explained later). 
 
-^b@2|cp|7|fp||at|^*bNote^*n|cp||at| - Many of the tutorials collected here contain old instructions that tell you to click the  ^*bforward arrow^*n.
-^dPlease @- ignore these and instead use  ^*bFlow >^*n,  ^*bStep >^*n  and the  ^*bNavigation Bar^*n.
+^b@2|cp|7|fp||at|^*bNote^*n|cp||at| - Some of the older tutorials collected here contain instructions that tell you to click the  ^*bforward arrow^*n.
+^dPlease @- ignore these and instead use  ^*bFlow >^*n,  ^*bStep >^*n  and the  ^*bNavigation Bar^*n.|
 
-
-
+ht|z|at|
 ^b@2Click     ^*bFlow >^*n      to move to the next page.        |cp|5|at|^*iPlease do this when you have read to the end of future pages^*n|cp||at|
 
 |
@@ -61,7 +63,7 @@ mn|New User  -   Readme  2|
 qx|NU 2|
 at|
 
-^b@2When you are not in a tutorial you will be |fp|3|cp|2|at|^*bin a Deal|cp||fp||at|^*n.  You can always tell when you are ^*bin a Deal^*n  because the navigation bar, bottom of the screen (below the Step and Flow buttons), shows the words |fp|2|cp||at| ^*bBid  Play    Fin^*n|cp||fp||at|.
+^b@2When you are not in a tutorial you will be |fp|3|cp|2|at|^*bin a Deal|cp||fp||at|^*n.  You can always tell when you are ^*bin a Deal^*n  because the navigation bar, bottom of the screen (below the Step and Flow buttons), shows the words |fp|2|cp||at| ^*bBid  Lead    End^*n|cp||fp||at|.
 
 ^c@2@.   In both modes you will often see a deal of four bridge hands on the screen, that is  |fp|3|cp||at|^*bnot|cp||fp||at|  the difference.
 
@@ -80,7 +82,7 @@ The { ^*bEdit^*n } & { ^*bPlay^*n } buttons are for you to investigate, you can 
 
 ^*bHint^*n  -  you can use Edit to  'play'  all four hands and so see the  'cards in action'  on alternative lines of play.
 
-|cp|red|at|^c   ^*bClick the link^*n|cp||at|    >>>  |fp|3|at|  ^*h http://musingsonbridge.blogspot.com/2016/04/down-rabbit-hole.html^*n Down the Rabbit Hole ?     (blog)^*x |fp||at|   for more info with clear images.
+|cp|red|at|^c   ^*bClick the link^*n|cp||at|    >>>  |fp|3|at|  ^*h http://musingsonbridge.rogerpf.com/2016/04/down-rabbit-hole.html^*n Down the Rabbit Hole ?     (blog)^*x |fp||at|   for more info with clear images.
 
 The next tutorial covers the different parts of the aaBridge screen layout.
 

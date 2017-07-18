@@ -1,0 +1,643 @@
+%%
+%%
+%% <--SECT_HEAD-->=Chapter 8       2 Diamond Opening  (Dec 2017)
+%%
+%%
+%%  Date last Edited    2016-12-14        set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+%% 
+%% <<--HEADER_FILE-->>=005  OCP common header
+%%
+
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+
+
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+fh|s28|                    Font   s  s-small
+fh|f35|                    Font   f  f-fine
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  OLD STYLE  position adjustment 
+
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       on Title Pages   Precision Blue
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Oliver Clarke Precision                                 2017  ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bChapter 8       2 Diamond Opening  (Dec 2017)^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+
+qx|8|
+fp|t-title|at|^d@2^z@3|
+at|
+^*gGS, 2 Diamond  Opening  (since Dec 2016)           Graphical Summary^*n|
+fp||at|
+
+
+^*gGS,    2@d^*n       
+
+^*g2H,    2@d  -  2@h^*n
+
+^*g2S,    2@d  -  2@S^*n
+
+^*g2S,    2@d  -  2NT . . . 3NT^*n
+
+^*gIntf,    Defending against Interference over the 2@d Opening^*n 
+|
+fp|z|at|^^^^
+|fp|t-title|at|
+^*gOliv, Oliver's class on     2 Diamond  Opening  |fp||at|Starts HERE^*n  |fp||cp|red|at|<<< First time ?  Click title|fp||cp||at|
+
+^*gPrac,    Practice Hands    -     What would You Bid ? ^*n|
+
+fp||ht|y|at|^b@2@1|at|
+^*bClick^*n  -   one of the above  ^hor    in the  NavBar  ^mor      use your   mouse wheel|
+ht|z|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+n^|3|at|^^^*h https://www.youtube.com/channel/UCTGNUS8jbx85QOMUPlHoRMA, OCP Videos ^*n|
+%%
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2886|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2886 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+qx|GS,hide|
+qx|2D,wide|
+mn|2 Diamond Opening         2D  -  first response |
+tu|y|
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| |
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+2 Diamonds|
+pg| ***** 1 ***** |
+
+
+at|^^^^
+^*b16 - 23  hcp^*n        any ^*b 4441 ^*n shape
+|
+pg| ***** 2 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}@H@S N @C@D@H
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| |
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+these are the  ONLY  direct responses|
+pg| ***** 3 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}|cs||at|{@H}@S N @C@D@H
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| |
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+2 Hearts| 
+pg| ***** 4 ***** |
+
+
+at|^^^^
+^*bMOST^*n  Responding hands use this
+
+^fOpener  will now reply describing their hand               |
+
+ht|r|at|^s ... for continuations see later|
+pg| ***** 5 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}|cs|f|at|{@H}|cs||at|{@S} N @C@D@H
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| |
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+2 Spades |
+pg| ***** 6 ***** |
+
+
+at|^^^^
+^e^*bWeak  and  LONG^*n
+
+^f^*b0 - 4^*n  hcp
+
+^f6+   in an unspecified suit|
+ht|r|at|^s ... for continuations see later|
+pg| ***** 7 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}|cs|f|at|{@H}|cs|f|at|{@S}|cs||at|{ N }{@C@D@H}
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^n @c ^o @d   @h   @s|
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+2 No Trumps     3 Clubs      3 Diamonds      3 Hearts ^t ^*bTransfer^*n  to suit above|
+pg| ***** 8 ***** |
+
+
+at|^^^^^c|cp|dg|at|So responder is showing|cp||at|^^
+^*bWeak  with  Shape^*n    ^j(^*b4333^*n  +  some  5332,  54xx)
+
+^f^*b0 - 4^*n  hcp     
+^^ 
+^d^*b|cp|dgS|at|OR|cp||at|^*n
+
+^e^*bStrong   two  4 card card suits^*n  ^l(bid indicates lowest of the two suits)
+
+^f^*b14+^*n  hcp
+
+^f^*b3+  ^*nctrls   (normally)|         
+ht|z|at|^s ... for continuations see later|
+pg| ***** 9 ***** |
+
+
+qx|2H,wide|
+mn|2 Diamond Opening         2D  -  2H  . . . |
+tu|y|
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| |
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+2 Diamonds ^p ^*b Returning ^*n  to the  2 Diamond  opening|
+pg| ***** 10 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}|cs||at|{@H}@S N @C@D@H
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| |
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+2 Hearts |
+pg| ***** 11 ***** |
+
+
+at|^^^^
+^*bMOST^*n  Responding hands use this|
+pg| ***** 12 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}|cs|k|at|{@H}|cs||at|{@S}|cs||at| N @C@D@H
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| |
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+2 Spades          ^m ... this is  Opener's  re-bid, after a   2 Heart   Response |
+pg| ***** 13 ***** |
+
+
+at|^^^^
+^*b16 - 19^*n  hcp      any  4441  shape|
+pg| ***** 14 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}|cs|k|at|{@H}|cs|e|at|{@S}|cs||at|{ N }@C@D@H
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| |
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+2 No Trumps                               ^m ... this is  Responder's  reply, after the  2S  bid|
+pg| ***** 15 ***** |
+
+
+at|^^^^
+Asking   where is singleton ?|
+pg| ***** 16 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}|cs|k|at|{@H}|cs|e|at|{@S}|cs|k|at|{ N }|cs||at|{@C@D@H@S}
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^o @d   @h   @s   @c|
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+3 Clubs    3 Diamonds     3 Hearts    3 Spades    ^p ... this is  Opener's  re-bid, after  2NT  resp|
+pg| ***** 17 ***** |
+
+
+at|^^^^
+(still    ^*b16 - 19^*n  hcp    of course)
+
+Bid is suit  ^*b below ^*n singleton
+
+Eta Asks are ^*b NOT ^*n permitted
+^^
+Responder either signs off in the denomination of their choice, at the appropriate level
+
+^f ^*bOR^*n    may bid Beta in the singleton suit first.
+|
+pg| ***** 18 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}|cs||at|{@H}@S N @C@D@H
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| |
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+2 Hearts ^l ^*b Returning ^*n  to the  2 Heart  response to the  2D  opening|
+pg| ***** 19 ***** |
+
+
+at|^^^^
+^*bMOST^*n  Responding hands use this|
+pg| ***** 20 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}|cs|k|at|{@H}|cs|f|at|{@S}|cs||at|{ N }{@C@D@H}
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^n  @c   @d   @h    @s|
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+2 No Trumps     3 Clubs     3 Diamonds    3 Hearts    ^p ... this is  Opener's  re-bid, after  2H  resp|
+pg| ***** 21 ***** |
+
+
+at|^^^^
+^*b20 - 23^*n  hcp
+
+Bid is  bid  ^*b below ^*n singleton    (inc NT)
+
+Eta Asks are ^*b NOT ^*n permitted
+^^
+Responder either signs off in the denomination of their choice, at the appropriate level
+
+^f ^*bOR^*n    may bid Beta in the singleton suit first.
+|
+pg| ***** 22 ***** |
+
+
+qx|2S,wide|
+nt|^b@2^z@3|
+mn|2 Diamond Opening         2D  -  2S  . . . |
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| |
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+2 Diamonds ^i ^*b Returning ^*n  to the  2 Diamond  opening|
+pg| ***** 23 ***** |
+
+
+nt|^b@2^z@3|
+
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}@H@S N @C@D@H
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| |
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+these are the  ONLY  direct responses|
+pg| ***** 24 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}|cs|f|at|{@H}|cs||at|{@S} N @C@D@H
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| |
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+2 Spades |
+pg| ***** 25 ***** |
+
+
+at|^^^^
+^*bWeak  and LONG^*n    
+
+^f^*b0 - 4^*n  hcp
+
+^f6+   in an unspecified suit|
+pg| ***** 26 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}|cs|f|at|{@H}|cs|k|at|{@S}|cs||at|{ N }@C@D@H
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| |
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+2 No Trumps              ^p ... this is  Opener's  re-bid, after  2S  resp|
+pg| ***** 27 ***** |
+
+
+at|^^^^
+^*b16 - 19^*n  hcp      any  4441  shape|
+pg| ***** 28 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}|cs|f|at|{@H}|cs|k|at|{@S}|cs|e|at|{ N }|cs||at|{@C@D@H@S}
+|cp||fp||at|^c@2^^|
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+3 Clubs    3 Diamonds    3 Hearts    3 Spades   ^p ... this is  Responder's  re-bid, after  2 NT|
+pg| ***** 29 ***** |
+
+
+at|^^^^
+Responder bids their   6+  card suit
+
+
+^f Opener now decides, based on fit and hcp, whether to  pass, invite or bid  game.
+|
+pg| ***** 30 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}|cs|f|at|{@H}|cs||at|{@S}|cs||at| N @C@D@H@S
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| |
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+2 Spades ^k ^*b Returning ^*n  to the  2 Spade response to the 2 Diamond opening|
+pg| ***** 31 ***** |
+
+
+at|^^^^
+^*b0 - 4^*n  hcp
+
+6+   in an unspecified suit|
+pg| ***** 32 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}|cs|f|at|{@H}|cs|k|at|{@S}|cs|f|at|{ N }|cs||at|{@C@D@H@S}
+|cp||fp||at|^c@2^^|
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+3 Clubs    3 Diamonds    3 Hearts    3 Spades   ^p ... this is  Opener's  re-bid, after  2 S  resp|
+pg| ***** 33 ***** |
+
+
+at|^^^^
+^*b20 - 23^*n  hcp      any  4441  shape
+
+Opener bids their ^*b singleton suit ^*n (as in Oliver's Twist)  ie: they bid the CHEAPEST suit that they would NOT SUPPORT at a higher level.  (Here the singleton).
+
+^f@2
+Responder passes if that's their suit.
+
+If Responder is max for their 0-4 and has a fairly self-sufficient suit for 2 losers max (eg: QJ109xxx), they might try game despite Opener hitting their suit, but never with a suit such as J87xxx. 
+
+If Opener does NOT hit Responder's long suit, Responder corrects by bidding it at the cheapest level. Opener will usually bid game if it's a Major, since we will almost always make at least 10 tricks in these circumstances.|
+pg| ***** 34 ***** |
+
+
+qx|2N..,wide|
+mn|2 Diamond Opening        -   2NT,  3C,  3D,  3H |
+tu|y|
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| |
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+2 Diamonds ^p ^*b Returning ^*n  to the  2 Diamond  opening|
+pg| ***** 35 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|ALL  ^j    {@D}|cs|f|at|{@H@S}|cs||at|{ N }|cs||at|{@C@D@H}
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^n @c ^o @d   @h   @s|
+ht|j|fp|z|at|^^|fp||at| |
+ht|k|fp|z|at|^^^^^^^^|fp| |
+at|^e@2
+2 No Trumps     3 Clubs      3 Diamonds      3 Hearts  ^t ^*bTransfer^*n  to suit above|
+pg| ***** 36 ***** |
+
+
+at|^^^^^c|cp|dg|at|So responder is showing|cp||at|^^
+^*bWeak  with  Shape^*n    ^j(^*b4333^*n  +  some  5332,  54xx)
+
+^f^*b0 - 4^*n  hcp     
+^^ 
+^d^*b|cp|dgS|at|OR|cp||at|^*n
+
+^e^*bStrong   two  4 card card suits^*n  ^l(bid indicates lowest of the two suits)
+
+^f^*b14+^*n  hcp
+
+^f^*b3+  ^*nctrls   (normally)|
+pg| ***** 37 ***** |
+
+
+at|
+^^
+^cFor details see the following pages, all taken from the OCP web site  ^*hhttp://ocp.pigpen.org.uk/2d.php^*n|   
+
+ht|p|n#|c|at|^l@2Responder may also use this route if they are either  ^*b5332^*n with a 3 card holding in the suit above theirs, or  ^*b54xx^*n with a 4 card holding in the suit above their 5 card suit.|
+
+ht|u|n#|l|at|^l@2Responder will normally transfer into the cheapest of their two suits but, if one of their suits is longer than the other (especially if it's a Major or they're 6-4 distribution) they have the option of transferring into the more expensive one first.|  
+pg| ***** 38 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^
+
+The auction has gone          ^i2@d    -    2NT[@c's]    ^n either    0-4     OR      14+
+	                          ^i2@d    -    3@c[@d's]    ^n                "                     "
+	                          ^i2@d    -    3@d[@h's]    ^n                "                     "
+	                          ^i2@d    -    3@h[@s's]    ^n                "                     "						  
+^c^*bOpeners Actions ^*n
+
+^dWith  a |cp|red|at|  ^*b4 card holding^*n|cp||at|  in the TRANSFER suit  Opener  completes the transfer.
+|n^|9|at|
+|n^|2|at|
+^e^*bResponders Actions ^*n
+|n^|5|at|
+^fWith  0-4  hcp and 4333 (and like) distributions Responder now passes.
+|n^|3|at|
+^fWith  14+  they @2treat Opener's completion of the transfer as a Gamma Ask in that suit (4-card minimum length).  Asking Bids are now established.
+
+^b@2
+^dWith a   |cp|red|at|  ^*bsingleton^*n|cp||at|     in the TRANSFER suit, Opener does ^*b NOT ^*n complete the transfer,   but  bid
+^m relays in the suit above that     eg:  2@d  -  3@s[@c's]  -  3@d
+|n^|2|at|
+^e^*bResponders Actions ^*n
+|n^|5|at|
+^f@2With  0-4  hcp and 4333 (and like) distribution, Responder  passes, having reached 
+^o the cheapest available fit of at least 7 cards.
+
+^fWith  14+  they  now bid their second suit as an Eta Ask (3NT asks in the suit Opener has actually bid).      Asking Bids are now established.   
+^h eg: ^i 2@d  -  3@c  -  3@h  -  3@s   is Eta in Spades,
+       ^i 2@d  -  3@c  -  3@h  -  3@NT    is Eta in Hearts|
+pg| ***** 39 ***** |
+
+
+ht|z|at|
+^b^*bend^*n|
+pg| ***** 40 ***** |
+
+
+-----------------------------------------------------------------------------------------------
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,wide|
+nt|^z@3^b@2|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class            2 Diamond  Opening ^*n^-^^|cs||fp||cp||at|^^|
+
+ht|f|
+cp|red|at|^*bOliverC:^*n|cp||at|  Hi Everyone and welcome to today's Precision Club session, in which we'll be taking a close look at
+the 2@D Opening & Responses that we use in this system.
+
+
+This is  ^*bNOT^*n a standard Precision Opening.
+
+
+If you have not already done so, please have a look at the notes I have prepared on Precision Club bidding.
+
+You can find these on: ^*hhttp://ocp.pigpen.org.uk/index.php^*n
+
+You might want to have these onscreen in the background for reference during the session.
+
+The notes on 2@D can be found at  ^*hhttp://ocp.pigpen.org.uk/2d.php^*n  
+
+^^^^  changes post see    ^*h http://ocp.pigpen.org.uk/smf/index.php?topic=463.msg2796#msg2796 ^*n
+
+
+^^^^|fp|c-chapTitle|at|^d ... rest removed  - as work in progress ...|
+pg| ***** 41 ***** |
+
+

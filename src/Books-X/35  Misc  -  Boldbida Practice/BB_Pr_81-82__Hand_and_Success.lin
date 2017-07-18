@@ -1,0 +1,256 @@
+%%
+%%
+%% <--SECT_HEAD-->=Practice  Boards                              81 - 82
+%%
+%%
+%%  Date last Edited    2016-06-18     set by human hand (if at all)
+%%
+%%  MovieMaker          GG_Bridge
+%%
+%% 
+%% <<--HEADER_FILE-->>=BB_Pr_00___Declarer_Play__HEADER
+%%
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player they need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+%%
+%%  You can NOW use  ALL 2876 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+fh|t40|                    Font   t  t-title             section titles (if any)
+fh|b50|                    Font   b  b-bigTitle   bigger section titles
+
+fh|f42|                    Font   f  f-flow
+fh|s25|                    Font   s  s-small
+
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor      on Title Pages
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor   on Title Pages
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Boldbida                                       Course   2016^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bPractice  Boards                              81 - 82^*n^-^^|cs||fp||cp||at|^^|
+Lg|e|
+
+ht|j|
+at|If you are  |cp|red|at|^*bNew  to  aaBridge^*n|cp||at| please  click the  { ^*bHome^*n }  button in the far top left and then click  { ^*bFlow^*n }  button.
+Once you have a little knowledge about how to use   ^*baaBridge^*n   please come back to this 'movie'.  |
+
+ht|o|
+fp|t-title|cp|blue|at|^- ^*b-----  Shuf Op  -----^*n     ^-|cp||fp||at|^^|
+n#|3|
+at|^b@2When  you are  'Inside a deal',  high on the left in green baize area you will see the  {^*b Shuf Op ^*n}  button.|
+n#|5|
+at|^^Click on it to shuffle the  East - West  cards and leave you ready to  PLAY  the hand against the 
+^o ^*b aaBridge ^*n bots and the new defensive layout.|
+%% <<--HEADER_REPLACE_END->>
+
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+ht|v|n#|4|at|
+^f Please  |cp|red|at|^*b keep ^*n|cp||at|  clicking  the |fp|f-flow|at|  { ^*b Flow > ^*n }  |fp|s-small|at| button below  |fp||
+
+ht|z|n^|2|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+
+bv|a,v|    %% make all 3 buttons visible 
+ 
+fh|940|fm|9|fp|9|at|@0@1|
+ht|h|
+rq|2876|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2876 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+st||
+--------------------------------------------------------------------
+qx|81 H|
+bv|a,h|
+rh||ah|Practice 81 |
+md|1SKQJT93HQ942DA83C,S6H87DKQJTCA97632,SA874HK63D974CKQJ,S52HAJT5D652CT854|
+sv|O|sk|S|
+nt|^z@3^b@2^^|
+Lg|f|
+n^|5|
+at|^*bPractice 81        Hand^*n|
+pg| ***** 1 ***** |
+
+
+at|,    the bidding|
+mb|1S|mb|p|mb|2N|mb|p|mb|3C|mb|p|mb|4S|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+at|,    the lead.|
+pc|dK|
+pg| ***** 3 ***** |
+
+
+at|     Do your thinking NOW.|
+pg| ***** 4 ***** |
+
+
+bv|f,v|
+n#|7|
+at|^^ |cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the analysis and play.|
+n#|7|
+cp|Dg|at|^^^h Hint to the defenders   @-   none supplied |cp||
+pf|f|
+pg| ***** 5 ***** |
+
+
+---------------------------------------------------------------------------
+qx|81 S|
+up|99|
+eb||
+bv|f,h|
+nt|^z  @3^b@2^^|
+Lg|m|
+n^|5|
+at|^*bPractice 81        Success^*n     the hand,   the bidding| 
+pg| ***** 6 ***** |
+
+
+at|,    the lead.|
+pc|dK|
+pg| ***** 7 ***** |
+
+
+at|^^Taking  South  as the master hand we have  5  losers    0@s   3@h(1f,2s)   2@d(f)   0@c(s)    We need to reduce this to  3.
+Given the lead, our diamond losers have become quick losers.  We need to decide how we can utilize our club suit to help get rid of some of the losers in the Master hand.  |
+pg| ***** 8 ***** |
+
+
+nt|^z  @3^b@2^^|
+Lg|l|
+n^|5|
+at|^*bAnswer 81^*n
+Win the first trick with the @DA and pull trump - retaining the @S3 in hand.   Lead the @CK from dummy and pitch the @D3 from hand.   |
+pg| ***** 9 ***** |
+
+
+pc|d4|pc|d2|pc|dA|
+pg| ***** 10 ***** |
+
+
+pc|sK|pc|s6|pc|s4|pc|s2|
+pg| ***** 11 ***** |
+
+
+pc|s9|pc|c2|pc|sA|pc|s5|
+pg| ***** 12 ***** |
+
+
+pc|cK|pc|c4|pc|d3|pc|cA|
+pg| ***** 13 ***** |
+
+
+sk||
+bv|a,v|
+pf|c|   
+pg| ***** 14 ***** |
+
+
+---------------------------------------------------------------------------
+qx|82 H|
+bv|a,h|
+rh||ah|Practice 82 |
+md|4SKQT765H65DA7CAQ5,SJ98HQ8D962CJ9763,SA42HT72DQT853CKT,S3HAKJ943DKJ4C842|
+sv|O|sk|S|
+nt|^z@3^b@2^^|
+Lg|f|
+n^|5|
+at|^*bPractice 82        Hand^*n|
+pg| ***** 15 ***** |
+
+
+at|,    the bidding|
+mb|1H|mb|d|mb|p|mb|2D|mb|p|mb|2S|mb|p|mb|4S|mb|p|mb|p|mb|p|
+pg| ***** 16 ***** |
+
+
+at|,    the lead.|
+pc|hQ|
+eb|y|
+pg| ***** 17 ***** |
+
+
+at|     Do your thinking NOW.|
+pg| ***** 18 ***** |
+
+
+bv|f,v|
+n#|7|
+at|^^ |cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the analysis and play.|
+n#|7|
+cp|Dg|at|^^^h Hint to the defenders   @-   none supplied |cp||
+pf|f|
+pg| ***** 19 ***** |
+
+
+---------------------------------------------------------------------------
+qx|82 S|
+up|99|
+eb||
+bv|f,h|
+nt|^z  @3^b@2^^|
+Lg|m|
+n^|5|
+at|^*bPractice 82        Success^*n     the hand,   the bidding| 
+pg| ***** 20 ***** |
+
+
+at|,    the lead.|
+pc|HQ|
+pg| ***** 21 ***** |
+
+
+at|^^Taking  South  as the master hand we have  3  losers   0@s  2@h(f)  1@d(s)  0@c    We should make our contract -- we need to ask "What could go wrong?"  Given the lead and bidding, we need to consider that West most likely has a Heart doubleton, and decide what to play when the third round of hearts is led by East.|
+pg| ***** 22 ***** |
+
+
+pc|HQ|h2|pc|hA|pc|h5
+pg| ***** 23 ***** |
+
+
+nt|^z  @3^b@2^^|
+Lg|f|
+n^|5|
+at|^*bAnswer 82^*n 
+East should see the lead as a possible doubleton, and overtake to continue hearts.  Declarer needs to 
+consider what to play when the third heart is led.  Ruffing the third heart could just be promoting
+the @sJack to a winner if spades are split 4-0 -- the solution is to throw the known @d loser on the 3rd heart.|
+pg| ***** 24 ***** |
+
+
+pc|hK|pc|h6|pc|h8|pc|h7|
+pg| ***** 25 ***** |
+
+
+pc|hJ|pc|d7|pc|c3|pc|hT|
+pg| ***** 26 ***** |
+
+
+sk||
+bv|a,v|
+pf|c|   
+pg| ***** 27 ***** |
+
+

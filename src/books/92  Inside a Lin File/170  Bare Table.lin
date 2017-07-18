@@ -71,12 +71,43 @@ sequence with the  the first ^*b pg ^*n  of your movie.     This is  the ^*b pg 
 pg| ***** 3 ***** |
 
 
-qx|gf|
+qx|fg|
 nt|^b@2^^|
-at|^*b!gf! ... !     @-     Gray Fade^*n         (control)
+at|^*b!gf!y!     @-     Faded Gray^*n         (added in build 2896)
 
-|cp|7|at|^d^*b Gray Fade feature ^*n has been ^*b DISABLED ^*n since ^*b aaBridge build |cp||at| 2814 ^*n
+You can fade text AND suit symbols to a gray color |
 
-so the   !gf!   command is now ignored as it has nothing to control.||
+at|^^^^^^^^^c@2|
+
+
+at|^^^^|
+lg|f|
+at|
+fg!y!
+at!The four suit symbols are    @@s   @@h   @@d   @@c  !
+fg!!
+
+shows as ^^^^|
+
+fg|y|
+at|^dThe four suit symbols are    @s   @h   @d   @c  |
+fg||at|
+
+
+instead of as
+
+^dThe four suit symbols are    @s   @h   @d   @c  |
+pg||
+
+qx|st|
+st||
+nt|^^^b@2^*bStandard Table^*n^g^*b!st!!^*n|at|^z@3
+
+This is a standard table created by the   ^*b!st!!^*n   command. This is the default for new lin files.
+
+You need to use a  Bare Text   ^*b!bt!!^*n   at the start of your lin file to get an empty full screen.
+| 
+ht|z|at|@0
+^*B end ^*N|
 ht|z|at|@0
 ^*b end ^*n|

@@ -145,6 +145,7 @@ public class Seg extends ArrayList<Ras> {
 	 */
 	public void draw(Graphics2D g2) {
 		// =============================================================================
+
 		if (wipeToEndOfScreen) {
 //			assert (size() == 1);
 			float y = get(0).y;

@@ -1,0 +1,43 @@
+%% VuGraph Column
+%% Last edited  2013 Dec 03
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|150|ff|1Arial|fb|19|fm|1|       1 large
+fh|236|ff|2Arial|fb|29|fm|2|       2 med
+fh|342|ff|3Arial|fb|39|fm|3|       2 med+
+
+cr|3200|cg|3255|cb|3255|     3  light blue
+cr|4070|cg|4090|cb|4255|     4  blue
+cr|516|cg|5128|cb|516|       5  green 
+cr|7230|cg|70|cb|70|         7  red
+
+bt||
+fp|1|at|
+
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp|9|
+mn|   VuGraph Column   |
+qx|VuGr|
+ht|d|
+at|^^|fp||at|^z@3
+^b@2Please open a ^*i second instance^*n  of  ^*baaBridge^*n  and in it (just below -Examples-) select the  |cp|4|at|^*b1957 Bermuda Bowl^*n|cp||at| chapter.  |cp|7|at|Please look at that example while reading the this text.|cp||at|   You can make either or both windows smaller.
+
+As you can see the VuGraph column consists of four sub-columns.  All the zones are clickable.
+
+^c@.   The @2central two columns show the contract and result.  The color is that of the declarers team.  You can hide the results using the check box at the top of the column.  Clicking on a box takes you to that hand in the match AND does an "Enter the Deal".  This way you can (if you wish) watch the hand and decide the plays for yourself without seeing any commentary.  
+|n^|2|at|
+^c@.   The @2first column shows the board number.  Clicking on it tales you to the the start of the deal in the Open Room.
+|n^|2|at|
+^c@.   The @2fourth column shows the IMP score for that board.  Clicking on it tales you to the the start of the deal in the Closed Room, even when scores are hidden.  The color is that of the winning team.
+|n^|2|at|
+^c@.   The @2fourth column shows the IMP score for that board.  Clicking on it tales you to the the start of the deal in the Closed Room, even when scores are hidden.  The color, is that of the winning team.
+|n^|2|at|
+^c@.   The first check-box at the very top of the column will minimize the whole column and the one below it lets you hide the running Imp scores.
+|n^|2|at|
+^b@2You can also move around the hand in the match using the  |cp|7|at|^*bNavigation Bar^*n|cp||at|.  The cream and grey line, with bobbles on it, at the bottom of this window. Clicking on this bar will move you that point in the match.
+|n#|2|at|
+^*bVuGraph^*n  lin files can be downloaded from   ^*h http://www.bridgebase.com/vugraph_archives/vugraph_archives.php ^*n BBO VuGraphs ^*x   then click on any of the ^*bDownload^*n links on the left
+
+|
+ht|z|at|@0
+^r Roger Pfister   -   December 2013|

@@ -14,7 +14,7 @@ rmdir /S /Q "%temp_base%"
 mkdir       "%temp_base%"
 
 rem unzip the jar to the temp folder
-"C:\ProgramRPf\7z1514-extra-CLI\7za.exe" x -tzip %1 -o"%temp_base%"
+"C:\ProgramRPf\7z1604-extra-CLI\7za.exe" x -tzip %1 -o"%temp_base%"
 
 
 set src_com=%temp_base%\zzz_current  src - com
@@ -34,19 +34,19 @@ rmdir /S /Q "%yyy_other%"
 mkdir       "%yyy_other%"
 xcopy /E /Q   "%aaB%\yyy_other\*.*"   "%yyy_other%\"
 
-rem  Clean up the 'test' bookshelves by deleting them 
-rmdir /S /Q "%temp_base%\booksY"
-rmdir /S /Q "%temp_base%\booksZ"
+
 
 xcopy "%yyy_other%\build_extras\How to*"       %temp_base%
 xcopy "%yyy_other%\build_extras\this jar*"     %temp_base%
 xcopy "%yyy_other%\build_extras\aaBridge.ico"  %temp_base%
+xcopy "%yyy_other%\build_extras\start_a*.cmd"  %temp_base%
+xcopy "%yyy_other%\build_extras\start_a*.command"  %temp_base%
 
 rem delete the original jar
 del    %1
 
-rem create the zip
-"C:\ProgramRPf\7z1514-extra-CLI\7za.exe" a -tzip %1 "%temp_base%\*"
+rem create the zip  -mcu=on  gives you utf8 encoded filenames :)
+"C:\ProgramRPf\7z1604-extra-CLI\7za.exe" a -mcu=on -tzip %1 "%temp_base%\*"
 
 
 :end

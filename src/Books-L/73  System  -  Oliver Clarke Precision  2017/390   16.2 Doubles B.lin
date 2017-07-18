@@ -1,0 +1,1213 @@
+%%
+%%
+%% <--SECT_HEAD-->=Chapter 16.2                               Doubles B
+%%
+%%
+%%  Date last Edited    2016-01-31        set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+%% 
+%% <<--HEADER_FILE-->>=005  OCP common header
+%%
+
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+
+
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+fh|s28|                    Font   s  s-small
+fh|f35|                    Font   f  f-fine
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  OLD STYLE  position adjustment 
+
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       on Title Pages   Precision Blue
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Oliver Clarke Precision                                 2017  ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bChapter 16.2                               Doubles B^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+
+qx|16.2|
+fp|t-title|at|^d@2^z@3|
+at|
+^*gGS,Doubles B   ^*n
+|fp||at|^^^^|
+fp|t-title|at|^*gOliv,Oliver  on     Doubles B|fp||at|   starts HERE^*n       |fp||cp|red|at|<<< First time ?  Click title|fp||cp||at|
+
+
+^*gPrac,      Practice Hands   -   What would You Bid ? ^*n|
+
+
+ht|w|cp|p|at|The ^*b Navbar ^*n below is used for navigation,  think of it as a line of a 100 buttons.|cp||at|
+
+
+
+|fp||ht|y|at|^b@2@1|at|
+^*bClick^*n  -   one of the above  ^hor    in the  NavBar  ^mor      use your   mouse wheel|
+ht|z|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+n^|3|at|^^^*h https://www.youtube.com/channel/UCTGNUS8jbx85QOMUPlHoRMA, OCP Videos ^*n|
+%%
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2886|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2886 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+qx|GS,hide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles B          |fp||at|^s(An Extract from the Lesson)^^^^|
+ht|h|
+at|^b@2^*bMM:^*n  Rather than provide extracts as a summary here I suggest you use the larger "bumps"  on the Navbar below.
+
+
+ 
+
+		 
+		 ^e^*b Deny^*n          ^h Control-denying  Doubles     (aka Control-showing)
+
+		 
+		 ^e^*b NPSD^*n          ^h Non-Penalty  Slam  Doubles 
+		 
+
+		 ^e^*b Lead^*n          ^h Lead Directing  Doubles     
+		 
+
+
+|
+	
+pg| ***** 1 ***** |
+
+
+ht|z|n#|5|at|
+^a ^*bend^*n|
+pg| ***** 2 ***** |
+
+
+-----------------------------------------------------------------------------------------------  
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,wide|
+nt|^z@3^b@2|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class                             Doubles B^*n^-^^|cs||fp||cp||at|^^|
+lg|c|	
+cp|red|at|^*bOliverC:^*n|cp||at| Hi Everyone and welcome to today's session, in which we'll be continuing a look at Doubles.
+
+Last time we looked at a variety of non-penalty doubles, including negative, competitive, support and 4th-suit doubles.
+
+This week we're only going to look at 2 sorts of doubles, both of which are only used at very high level competitive auctions and both of which in different ways, help partner to decide whether or not to bid one more.
+
+Although we are only looking at 2 types of double this week, they are more difficult to understand and you absolute MUST be on the same wavelength as partner (ie: they need discussion).
+
+Having said that they are both VERY useful devices to have in your arsenal.
+
+These are NOT something you can hope to play with a pick-up partner, because they likely won't have the faintest idea what you're talking about.  
+
+If you have not already done so, please have a look at the notes I have prepared on tonight's topic.
+
+You can find these on: ^*h http://ocp.pigpen.org.uk/index.php ^*n
+
+The section on Doubles can be accessed directly at ^*h http://ocp.pigpen.org.uk/Doubles.php ^*n|
+pg| ***** 3 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles B |fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   In high level competitive auctions it is sometimes difficult to tell whether the hand belongs  to YOU or OPPS and, more importantly, it is often very difficult to tell whether to bid one more, double for penalties or pass.
+
+^*bNon-Penalty Slam Doubles ^*n and ^*b Control-denying Doubles ^*n 
+|n^|9|at| 
+help you and your partner to make the right decision in these sorts of situations, but they are used in slightly different kinds of situation.
+
+Non-Penalty slam doubles are used when you think it is THEIR hand, and we are thinking of sacrificing over their contract.
+
+Control-denying (AKA control-showing) doubles are used when we think it is OUR hand and they have already sacrificed over OUR contract.
+
+These kinds of doubles are NOT about getting a penalty, but to help you and your partner decide whether to bid one more or not.
+
+Normally it is fairly easy to tell to whom the hand really belongs and whether you (or they) are bidding to make or sacrificing, but sometimes it can be a very difficult question to judge and it's not necessarily a matter of which side has more high cards.
+
+Both of these kinds of double are used   ^*b only at the 5-level or higher^*n.
+
+We'll look at Control-denying doubles first, because they are arguably easier to understand.|
+pg| ***** 4 ***** |
+
+
+--------------------------------------------------------------------
+qx|Deny,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles B        Control-denying  Doubles|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   Control-denying doubles are used in the following situation ONLY:- 
+|n^|5|at|
+^c ^*b1. ^*n  They have sacrificed over our game or slam contract.
+|n^|5|at|
+^c ^*b2. ^*n        2nd-in-hand over their sacrifice is NOT the Captain of the Hand 
+              ^*bor^*n   there is no Captain of the hand at this stage.
+|n^|5|at|
+^c ^*b3. ^*n  Control of THEIR suit has ^*bNOT ^*n yet been firmly established by Asking bids (ie: Epsilon) or by cue-bids.
+|n^|5|at|
+^c ^*b4. ^*n  The question at hand is whether we 
+^d           double their sacrifice for penalties 
+^d  OR    bid one more
+|n^|c|at|
+^c     and     this mainly hinges on whether or not we have 1st (or 2nd) round Control of ^*b their ^*n suit
+|n^|2|at|
+As regards (4) above, if we're thinking of bidding one more at the ^*b 6-level^*n, 
+	^c then we're normally concerned with whether we have ^*b 1st  or  2nd ^*n round control of their suit.
+|n^|a|at|
+but if we're thinking of bidding one more at the  ^*b7-level^*n, 
+^c then we're definitely thinking of ^*b 1st round ^*n control in their suit.
+|n^|5|at|
+ALL OF THOSE CONDITIONS MUST BE MET BEFORE THE FOLLOWING APPLIES:    In these circumstances...  
+|n^|5|at|
+        if the bidding is at the 6-level  2ND-IN-HAND: PASSES  with  1st round  control of their suit 
+|n^|2|at|^r OR DOUBLES with no such Control.
+|n#|2|at|OR   if the bidding is at the 5-level 2ND-IN-HAND: PASSES  with  1st^*b or ^*n2nd  round control
+|n^|2|at|^r OR DOUBLES with no such Control.
+|n^|5|at|
+See my comments on (4) above to clarify what I mean here 
+|n#|2|at|    ^c4TH-IN-HAND:  DOUBLES   or  BIDS ON  depending on their holding, in the light of partner's action
+^t	and the bidding thus far.|
+pg| ***** 5 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles B        Control-denying  Doubles|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   So if 2nd-in-hand passes to show control or doubles to DENY control of their suit, 4th-in-hand is free to Pass, Double for penalties or bid one more depending on their own holding and their feeling about the bidding thus far.
+
+Let's look at an example: Suppose you hold    @sAJ109x  @hAx  @dx  @cAKQxx    Partner deals and opens 1@s and you make a 4@d splinter bid to show a Diamond shortage and a very strong hand. (We'll assume we're not playing my Precision system for this hand).
+|n^|7|lg|f|at|^c@2
+Your LHO bids 4@h.  (Showing @h's this could be any system)
+Partner bids ...
+
+
+^b^*bMM:^*n   I am going to drop Oliver's text here and go straight to the hand diagram. ^^|
+pg| ***** 6 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|t 1,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 1|sv|n|sk|n|sk||
+%% 3SAJT92HA7D5CAKQ83,S73HKQJ8653D97CJT,SKQ8654H4DAQ82C72,HT92DKJT643C9654
+md|3SAJT92HA7D5CAKQ83,,SKQ8654H4DAQ82C72,,|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 1 |     
+pg| ***** 7 ***** |
+
+
+mb|1S|
+pg| ***** 8 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 9 ***** |
+
+
+sj|L|
+mb|4d|an|splinter agrees  @s's          singleton or void in @d|
+pg| ***** 10 ***** |
+
+
+sj|L|
+mb|4H|
+pg| ***** 11 ***** |
+
+
+sj|L|
+mb|5D|an|showing the  @dAce|
+pg| ***** 12 ***** |
+
+
+sj|L|
+mb|5H|
+pg| ***** 13 ***** |
+
+
+sj|L|
+mb|6c|an|Cue  and  Grand slam interest|
+pg| ***** 14 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 15 ***** |
+
+
+sj|L|
+mb|6s|an|sign-off|
+pg| ***** 16 ***** |
+
+
+sj|L|
+mb|7h|an|sacrifice|
+pg| ***** 17 ***** |
+
+
+sj|L|
+mb|?|
+at|  What do you do?    We've definitely established slam values and we've cue-bid both Minor suits.
+Essentially there's no  "Captain"  here (apart from the fact that West signed off in 6@s).|
+pg| ***** 18 ***** |
+
+
+at|^^So here we want to decide whether to    DOUBLE    7@h for penalties     OR     bid 7@s   ?|
+pg| ***** 19 ***** |
+
+
+mb|p|an|1st rd ctrl @h's|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|     The pass here promised  1st round control  of Hearts.    Why ?|
+pg| ***** 20 ***** |
+
+
+at|^^because   -   we're looking to bid at the 7 level  
+                 -   we're playing  Control-^*bdenying^*n  doubles    
+|n^|a|at|
+so    you ^*b PASS ^*n to show  1st round Control of Hearts.|
+pg| ***** 21 ***** |
+
+
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|    A Double would ^*b DENY ^*n having the Ace of Hearts (or a void)
+|n^|a|at|
+Note - these Doubles are sometimes called  "Control-showing"  rather than our better name of  "^*bControl-denying^*n".|
+pg| ***** 22 ***** |
+
+
+sj|c|
+mb|p?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  North's thinking now should be as follows:    (1)  Partner obviously has a strong hand (for their splinter). 
+ (2)  South can't have much in Hearts and ^*b I know ^*n South has a singleton or void in Diamonds,  
+So most of that strong hand is concentrated in the Black suits.
+So the location of the  @sA  and  @cAK  are hardly in doubt ^*b and ^*n partner has promised 1st round control of  @h  as well.
+So between  7@S  and  DOUBLE   North will choose ... |
+pg| ***** 23 ***** |
+
+
+mb|7S|
+pg| ***** 24 ***** |
+
+
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  If you're not playing control-denying doubles then the process is not QUITE as easy on this hand.
+East might bid 7@s on the strength of partner's Diamond cue, but easier to have the "conversation" we see above.|
+pg| ***** 25 ***** |
+
+
+at|^^^*bgypsy1308: ^*n So without the  @hA  South will  X  for penalties
+|cp|red|at|^*bOliverC:^*n|cp||at|  Yes, without the  @hA  South would Double and now North  PASSES  or  BIDS  depending on whether or not  THEY  have 1st round control of @h.|
+pg| ***** 26 ***** |
+
+
+mb|ppp|
+md|0SAJT92HA7D5CAKQ83,S73HKQJ8653D97CJT,SKQ8654H4DAQ82C72|
+pg| ***** 27 ***** |
+
+
+pf|Y|
+pc|hT|
+pg| ***** 28 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared^z@3^b@2|
+pg| ***** 29 ***** |
+
+
+n#|5|at|^^^*b17tezcan: ^*n How many points needed to bid the splinter,   support  +  ?  
+|cp|red|at|^*bOliverC:^*n|cp||at|  Splinters are a matter of partnership agreement.
+|n^|a|at|
+Let's have Another example:   You hold          @sxx   @hKQx   @dAx   @cQJ109xx|		
+pg| ***** 30 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|t 2,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 2|sv|-|sk|n|sk||
+%% 3S75HKQ8DA4CQJT962,SAKT982H3DT9762C5,SQJHAJ72DKQJ8CAK4,S643HT9654D53C87
+md|3S75HKQ8DA4CQJT962,,SQJHAJ72DKQJ8CAK4,|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 2 |     
+pg| ***** 31 ***** |
+
+
+mb|2n|an|19-21 balanced|
+at|    Partner opens 2NT (19-21 balanced)|
+pg| ***** 32 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 33 ***** |
+
+
+sj|L|
+mb|3s|an|transfer to @c  game force and slam interest|
+at|    Your methods are that you bid  3@s  as a transfer to Clubs @c's, always a hand interested in at least game, and slam-invitational.|
+pg| ***** 34 ***** |
+
+
+sj|L|
+mb|4s|
+pg| ***** 35 ***** |
+
+
+sj|L|
+mb|5c|
+pg| ***** 36 ***** |
+
+
+sj|L|
+mb|5s|
+pg| ***** 37 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 38 ***** |
+
+
+mb|d|
+n#|a|at|^^This time you Double 5@s, thereby ^*b denying ^*n 1st or 2nd  Round Control of Spades.|
+pg| ***** 39 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 40 ***** |
+
+
+mb|p|
+at|    Enabling partner to make the right decision with a holding like the one shown.   She passes, knowing that two Spade losers are inevitable.|
+
+sj|L|
+mb|pp|
+md|0S75HKQ8DA4CQJT962,SAKT982H3DT9762C5,SQJHAJ72DKQJ8CAK4|
+pg| ***** 41 ***** |
+
+
+pf|Y|
+pc|sq|
+pg| ***** 42 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles B        Control-denying  Doubles|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   Hopefully those two examples have shown you both sides of the coin.
+
+Control-denying (aka Showing) doubles can really help you to avoid selling out to a cheap sacrifice when you can make one more, and to avoid getting too high when settling for a penalty is the better option.
+
+Please remember the conditions that must be met before Control-denying (aka Showing) doubles kick in.
+
+If the bidding starts
+|n^|9|at|
+^c 1NT    -    (pass)    -    2@d[xfer]    -    (4@s)
+^c ??? 
+|n^|9|at|
+then SOME of the conditions are met (eg: Captaincy), but   NOT ENOUGH   to enable these kinds of double.
+
+A double here still suggests a preference for taking a penalty rather than competing in Hearts, but it doesn't say anything about Opener's @s Control.
+^^
+Don't forget that control-denying doubles   ONLY   apply when it's  OUR  hand and  THEY  have sacrificed.
+^^
+Any questions or comments on Control-denying doubles ?|
+pg| ***** 43 ***** |
+
+
+--------------------------------------------------------------------
+qx|NPSD,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles B        Non-Penalty  Slam  Doubles|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   Non-Penalty Slam Doubles (NSDP's) are a bit more complicated than Control-denying doubles, but the underlying principle is surprisingly similar.
+
+Non-Penalty Slam Doubles  mainly apply at the 6-level.  When it's THEIR hand but we've already established earlier in the bidding that we do have a potential sacrifice (ie: by bidding and strongly supporting a suit ourselves)
+
+then, when considering whether or not to sacrifice over their contract,  the following applies: 
+
+^b  ^*b2nd-in-Hand^*n 
+^d   PASSES  ^g with  1 or more  defensive tricks.
+^c   or
+^d   DOUBLES ^g with  NO  defensive tricks.
+
+...that is the easy bit (as with Control-showing doubles, the ^*b pass ^*n is effectively ^*b stronger ^*n than the double).  
+
+
+If  2nd-in-Hand  PASSES  then
+
+^c ^*b4th-in-Hand^*n     
+^e  PASSES with  1 or more  defensive tricks  (because we think they can't make their contract 
+^s if we have 2 defensive tricks).
+^d  or 
+^e  DOUBLES with  NO  defensive tricks  (Now 2nd-in-hand sacrifices if they have only 1 defensive trick
+^s but passes with 2 or more tricks).
+
+(That's why NPSD's mainly apply at the 6-level.  All the maths has to be done differently if we're at the 5 or 7-level).|
+pg| ***** 44 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles B        Non-Penalty  Slam  Doubles|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|     Note - @2it doesn't matter whether we're considering sacrificing at the 6-level in a higher-ranking suit or at the 7-level in a lower-ranking suit, if we're considering whether to sacrifice or not, one of the main things to decide is whether we can beat  THEIR  6-level contract.    
+^b@2
+If  2nd-in-Hand  DOUBLED  then
+
+^c ^*b4th-in-Hand^*n     
+^e   PASSES        with  2 or more  defensive tricks.
+^d   or
+^e   SACRIFICES with  NO or only 1  defensive trick.
+
+|n^|9|at|
+So if  2nd-in-hand  doubles to show  NO  defensive tricks and you have 2 defensive tricks, you pass, 
+^t but otherwise you sacrifice.
+
+But if  @22nd-in-hand  passes to show  1 or more  defensive tricks and you have  1 or more  defensive tricks then you also pass, but you double if you have no defensive tricks so partner (2nd-in-hand) can now pass or sacrifice depending on whether she has TWO defensive tricks rather than only 1.
+
+^b@2Note:   This sort of sequence is NOT about taking a big penalty from Opps The whole idea behind Non-Penalty Slam Doubles is NOT to get a large penalty, but to avoid a costly sacrifice when the probability is that Opps are too high themselves.
+
+If it's  THEIR  hand then even a small penalty is good enough for us to get a decent result.|
+pg| ***** 45 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles B        Non-Penalty  Slam  Doubles|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|     So what is a defensive trick?
+
+Well not always easy to be absolutely certain (life would be too easy otherwise).
+
+Aces are usually a fair bet except in YOUR suit, especially if you think you have a 10-card or better trump fit your way.
+
+Combinations such as QJx or J109x in THEIR suit are a good bet, especially if it's likely that their trump honours are split.
+
+Honour cards in side-suits that seem to be well-placed, bearing in mind Opps' bidding, might also be counted.
+
+You cannot usually count on getting ruffs unless it's in a suit that partner has shown some strength in.
+
+Aces and Kings are more useful than Queens and Jacks here.
+
+Let's have a look at a fairly easy example: You hold @s-, @hJxxxx, @dAx, @cAxxxxx.
+	
+Your LHO opens 1@s and  ...
+^^
+^*bMM:^*n  Time to jump to the hand diagram|
+pg| ***** 46 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|t 3,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 3|sv|n|sk|w|sk||
+%% 2SHJ8743DA6CAT9853,SAK8763HQ96DQ98CJ,QJ2H5D742CKQ7642,ST954HAKT2DKJT53
+md|2SHJ8743DA6CAT9853,,,|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 3    |
+pg| ***** 47 ***** |
+
+
+mb|1S|
+pg| ***** 48 ***** |
+
+
+sj|L|
+md|0,,QJ2H5D742CKQ7642|
+mb|3C|an|weak|
+at| ... you nearly fall off your chair when partner makes a weak jump overcall of 3@c.|
+pg| ***** 49 ***** |
+
+
+sj|L|
+mb|4C|an|cue|
+pg| ***** 50 ***** |
+
+
+sj|L|
+mb|5C|
+pg| ***** 51 ***** |
+
+
+sj|L|
+mb|5S|
+pg| ***** 52 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 53 ***** |
+
+
+sj|L|
+mb|6S|
+pg| ***** 54 ***** |
+
+
+sj|L|
+mb|?|
+at|^^What do you do?    If you are not playing Non-Penalty Slam Doubles you're in a difficult position.|
+pg| ***** 55 ***** |
+
+
+at|^^Clearly there is a Club void floating around somewhere since it looks like you and partner have 12 @c's between you.
+You can count the A@d as one trick but you have no idea whether or not partner has one somewhere.
+Playing NPSD's  (Non-Penalty Slam Doubles), it's easy ...     |
+pg| ***** 56 ***** |
+
+
+mb|p|an|1+ defensive tricks|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|   ... You ^*b PASS ^*n so showing  1 or more  defensive tricks.|
+pg| ***** 57 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 58 ***** |
+
+
+sj|L|
+mb|?|
+at|^^If partner (North) has a hand like    @sQJx  @hx  @dxxx  @cKJ10xxx    (the one she does have)|
+pg| ***** 59 ***** |
+
+
+mb|p|an|also  1+  defensive tricks| 
+at|  then she will likely  PASS  as she has a likely defensive trick in Spades herself.|
+pg| ***** 60 ***** |
+
+
+at|^^However, ^*b IF ^*n she had a hand like   @sJxx  @hx  @dJxx  @cKQxxxx   then she would  DOUBLE  6@s  to show  NO  defensive tricks, and so you (South) can bid  7@c  as a sacrifice,  knowing that  6@s  is almost certain to make.|
+pg| ***** 61 ***** |
+
+
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  (winding back a moment)|
+pg| ***** 62 ***** |
+
+
+sj|c|
+ub|3|
+mb|?|
+pg| ***** 63 ***** |
+
+
+n#|3|at|^^^*b... BUT  If ^*n you (South) had  NO  defensive tricks, you  would  DOUBLE  6@s, and now North would pass with 2 or more defensive tricks, but bid 7@c as a sacrifice if they only had one defensive trick.|
+pg| ***** 64 ***** |
+
+
+mb|ppp|an|also  1+  defensive tricks|nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  An questions on NPSD's?|
+pg| ***** 65 ***** |
+
+
+n#|5|at|^^^*bamer_idle: ^*n They missed out on the double.
+|cp|red|at|^*bOliverC:^*n|cp||at|  It doesn't matter.    This is clearly EW's hand even +50 for NS is going to be a reasonable result.
+Since lots of pairs will sell out to 4@s.
+
+Yes, 5@c is probably making, but so is 5@s.|
+
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Maybe North should consider bidding 6@c over 5@s but at this vulnerability we can hardly blame them..
+But if Opps  DO  bid to  6@s  as here, it is important that we have a mechanism that stops us from making a phantom sacrifice in  7@c  as   6@s ^*b is going off^*n.
+|n^|9|at|
+OK ?|
+pg| ***** 66 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+qx|Lead,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles B        Lead-directing  Doubles|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|    Let's have a very brief look at Lead-directing doubles.
+|n^|3|at|
+These need to be used with care, as indiscriminate use of them can give needless information away to your opponents and can sometimes be counter-productive.
+|n^|3|at|
+Firstly, making a lead-directing double when it's probable that YOU are going to be on the opening lead is pretty much a waste of time and can only tip off Declarer to the lie of that particular suit, or the fact that it's breaking badly or that they may have an unexpectedly high number of quick losers in the suit.
+|n^|3|at|
+I concede that sometimes you cannot tell who is going to be Declarer at the point where you get the opportunity to make your lead-directing double, but very often you do have a fairly good idea.
+|n^|3|at|
+Remember that you do not always have to double the suit itself to ask for a lead of the suit.
+|n^|3|at|
+For example: Opps bid 
+|n^|9|at|
+^c (1@d) - (1@s)       (1NT) - (2NT)      (3NT) - (pass) - ???
+|n^|9|at|
+This is a good time for a Double if you are sat with a good Spade tenace over your RHO  (eg: @sAQ109x).   Opps are potentially stretching to get to 3NT and an initial Spade lead from Partner will give you a tempo, at the very least.
+|n^|3|at|
+Without your double it's much less likely that they'll hit on a @s lead. 
+|n^|3|at|
+But a Double here from a hand that's not bid anything to date is clearly asking partner for a lead of DUMMY's suit especially since they've only mentioned it once and their partner, Declarer, clearly doesn't have much support for it.
+
+On the other hand, with a holding such as  @sK98xx,  I'd probably not bother, as you cannot be sure that a Spade lead will even help you.|
+pg| ***** 67 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles B        Lead-directing  Doubles|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   Remember that if you double an artificial bid from them at a LOW level, you are always showing that suit.
+then it is more likely that partner will take this as a wish to compete in that suit if they have a fit rather than it being lead-directing.   So making a purely lead-directing bid when you don't actually have a good holding in the suit can be risky at a low-level.
+|n^|0|at|
+If Opps are playing precision and you have no agreed defence to their 1@c Openings, then if the bidding starts
+ (1@c)   -   (1@d)     and you double the 1@d response, you're showing Diamonds and partner will probably compete in the suit if they have support for it.
+|n^|5|at|
+If you just have  @dAQJ  in the suit without much length and just wanted a @d lead, then best not to bother.
+|n^|0|at|
+Above all, though, remember that lead-directing doubles ALWAYS give information away to Opps as well as telling partner something.
+|n^|0|at|
+Unless you have good reason to think that a lead by partner in this suit will really be advantageous, or possibly ^*b the only way ^*n to defeat the contract  then keeping Opps in the dark is often the best bet.   For example: 
+|n^|9|at|
+^c(1@d)            -      (2@d[NMF]) 
+^c(2@s)            -      (4@s)
+^c(4NT[0314]) -     (5@d)        -        ???
+|n^|9|at|
+If you're sat with @dAxxx here ^*b and nothing else^*n  do you want to double or not ?    Opps look to be heading for  6@s.
+|n^|0|at|
+It looks like partner has a Diamond shortage and a Diamond lead will probably defeat the contract.
+|n^|0|at|
+Personally I stay silent.|
+pg| ***** 68 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles B        Lead-directing  Doubles|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   If partner has a singleton Diamond and nothing better to lead, they'll surely lead their singleton ANYWAY, whether you double or not.
+|n^|3|at|
+They might, however, be VOID in Diamonds, in which case the double does you no good and, on this bidding, might have a Doubleton, which will also do you no good because they can't lead one, and if they have a KQ combination elsewhere that might prove to be the decisive lead.
+|n^|3|at|
+Your @d Ace will always be a trick, but a Double here is only going to be of use if partner has a singleton @d, and if that's the case, they'll probably lead a @d whether you double or not If you Double.
+
+It's possible that Opps can make 6NT but NOT 6@s (no @d ruff in 6NT) and you might persuade them to play there rather than in 6@s they might even decide to play in 5@d.
+|n^|3|at|
+Any questions or comments on Lead-directing doubles ?|
+pg| ***** 69 ***** |
+
+
+--------------------------------------------------------------------
+qx|Prac,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Practice / Demo  Hands|fp||at|^^^^|
+lg|c|n^|4|
+cp|red|at|^*bOliverC:^*n|cp||at|   
+
+
+Okay, I have a few practice hands.
+
+
+Can I have 4 people to sit and play, please ?
+
+
+Thanks.|
+pg| ***** 70 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 1,thin|
+st||
+pn|soko52,17tezcan,kuphrer,Eszter5|rh||ah|Practice 1|sv|e|sk|s|sk||
+%% 1SAK8763HQ96DQ98C4,SJ42H5D742CKQJ762,SQT95HAKT2DKJT53,HJ8743DA6CAT9853
+md|1SAK8763HQ96DQ98C4,SJ42H5D742CKQJ762,SQT95HAKT2DKJT53,HJ8743DA6CAT9853|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 1    |
+pg| ***** 71 ***** |
+
+
+mb|1S|
+pg| ***** 72 ***** |
+
+
+sj|L|
+mb|3C|an|Weak 6+ clubs|
+at|    Incidentally indicating that this maybe more  North-South's  hand that it is  East-West's.|
+pg| ***** 73 ***** |
+
+
+sj|L|
+mb|4C|an|Agrees spades shows ctrl?|
+pg| ***** 74 ***** |
+
+
+sj|L|
+mb|5C|
+pg| ***** 75 ***** |
+
+
+sj|L|
+mb|5S|
+pg| ***** 76 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 77 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 78 ***** |
+
+
+sj|L|
+mb|?|
+at|    Non-penalty slam doubles (NPSD's) apply only at the 6 level  so do NOT apply here.|
+pg| ***** 79 ***** |
+
+
+mb|6C|
+pg| ***** 80 ***** |
+
+
+sj|L|
+mb|p|an|1st or 2nd rd ctrl of  @c's|
+at|^^With PASS, South shows 1st or 2nd round ctrl.  Lacking any control of  @c's  South would double (Control-denying).|
+pg| ***** 81 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 82 ***** |
+
+
+sj|L|
+mb|6s|
+pg| ***** 83 ***** |
+
+
+sj|L|
+mb|p|an|  1+  defensive tricks|
+at|^^NPSD's do apply over  6@s  so East's  PASS  shows  1+  defensive tricks  (@dA).|
+pg| ***** 84 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 85 ***** |
+
+
+sj|L|
+mb|d|an|No defensive tricks|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  West  DOUBLES  to show  NO  defensive tricks.|
+pg| ***** 86 ***** |
+
+
+sj|L|
+mb|p|at|^^^*bMajor_Blue:^*n It is  kinda like DOPI where D=0 and P=1+|
+pg| ***** 87 ***** |
+
+
+sj|L|
+mb|7c|
+pg| ***** 88 ***** |
+
+
+at|^^And now East bids the  7@c  sacrifice because they only have ONE defensive trick.
+OK ?|
+pg| ***** 89 ***** |
+
+
+sj|L|
+mb|ppp|
+pf|Y|
+pc|s5|
+pg| ***** 90 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared|
+pg| ***** 91 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2,thin|
+st||
+pn|soko52,17tezcan,OliverC,Eszter5|rh||ah|Practice 2|sv|n|sk|n|sk||
+%% 3SQ643HA2DT7CK9843,SJT9HJ9765DAJ543,SAK8752HKQT3CA65,H84DKQ9862CQJT72
+md|3SQ643HA2DT7CK9843,SJT9HJ9765DAJ543,SAK8752HKQT3CA65,H84DKQ9862CQJT72|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2    |
+pg| ***** 92 ***** |
+
+
+mb|1S|
+pg| ***** 93 ***** |
+
+
+sj|L|
+mb|2N!|an|Unusual NT  @d + @c|
+pg| ***** 94 ***** |
+
+
+sj|L|
+mb|3S|
+pg| ***** 95 ***** |
+
+
+sj|L|
+mb|4D|
+pg| ***** 96 ***** |
+
+
+sj|L|
+mb|4S|
+pg| ***** 97 ***** |
+
+
+sj|L|
+mb|5D|
+pg| ***** 98 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 99 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 100 ***** |
+
+
+sj|L|
+mb|5S|
+pg| ***** 101 ***** |
+
+
+sj|L|
+mb|6D|
+pg| ***** 102 ***** |
+
+
+at|From  the bidding it's  NS's hand.  So NS are able to use  Control-denying Doubles  over 6@d.|
+pg| ***** 103 ***** |
+
+
+sj|L|
+mb|d|an|NO 1st or 2nd rd ctrl of @d's|
+at|^^So South's  DOUBLE  shows  NO 1st or 2nd round control of @d's|
+pg| ***** 104 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 105 ***** |
+
+
+sj|L|
+mb|?|
+at|^^Now, if (North) had a small doubleton in @d's he would know to pass South's double rather than bid on.|
+pg| ***** 106 ***** |
+
+
+mb|6S|
+at|^^Of course, with his actual hand North bids on anyway.|
+pg| ***** 107 ***** |
+
+
+sj|L|
+mb|?|
+at|^^So EW are now in the game of using non-penalty slam doubles.     What should  East  do ?| 
+pg| ***** 108 ***** |
+
+
+mb|d!|an|No defensive tricks|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|   East's double shows NO defensive tricks.| 
+pg| ***** 109 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 110 ***** |
+
+
+sj|L|
+mb|?|
+at|^^ So what should West do ?| 
+pg| ***** 111 ***** |
+
+
+at|^^Well actually it's an interesting situation      From West's viewpoint, EW have NO defensive tricks, which means NS might well be able to make 7@s, not just 6@s.
+If West bids 7@d they might push NS to bidding and making a 7@s contract we were never going to bid.|
+pg| ***** 112 ***** |
+
+
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|   Maybe the cheapest thing to do it to let NS sit in 6@s.   You pay yer money and you takes yer choice.
+As it happens, 6@s is right on the money because of the @c ruff, but NS have one @c to lose anyway, so the @c ruff doesn't actually cost NS anything.   East cannot be sure there is a Club trick coming here.
+If East (with a different hand) had passed over 6@s to show 1+ defensive tricks, West would have Doubled to show NO defensive tricks and now East would have known to sacrifice in 7@d.|
+pg| ***** 113 ***** |
+
+
+sj|L|
+mb|7d|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Par on this hand happens to be   7@d* - 3   =  500 to NS
+|n^|9|at|
+^*brich_a:^*n   I agree hard to judge defensive tricks with 100% accuracy.   All you can do is to give it your best shot.|
+pg| ***** 114 ***** |
+
+
+sj|L|
+mb|ppp|
+pf|Y|
+pc|sA|
+pg| ***** 115 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared|
+pg| ***** 116 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 3,thin|
+st||
+pn|soko52,17tezcan,OliverC,Eszter5|rh||ah|Practice 3|sv|e|sk|e|sk||
+%% 4HAKQJ743DKJ74CA5,SAQ9872DT3CT9876,S64HT92DAQ652CQ32,SKJT53H865D98CKJ4
+md|4HAKQJ743DKJ74CA5,SAQ9872DT3CT9876,S64HT92DAQ652CQ32,SKJT53H865D98CKJ4|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 3    |
+pg| ***** 117 ***** |
+
+
+mb|p|
+pg| ***** 118 ***** |
+
+
+sj|L|
+mb|1H|
+pg| ***** 119 ***** |
+
+
+sj|L|
+mb|2H|an|@s's + minor   (Michaels)|
+pg| ***** 120 ***** |
+
+
+sj|L|
+mb|3H|an|competitive|
+pg| ***** 121 ***** |
+
+
+sj|L|
+mb|3S|
+pg| ***** 122 ***** |
+
+
+sj|L|
+mb|4C|an|ctrl|
+pg| ***** 123 ***** |
+
+
+sj|L|
+mb|d|an|That is my minor|
+pg| ***** 124 ***** |
+
+
+sj|L|
+mb|4D|an|cue|
+pg| ***** 125 ***** |
+
+
+sj|L|
+mb|4S|
+pg| ***** 126 ***** |
+
+
+sj|L|
+mb|5D|an|Cue|
+pg| ***** 127 ***** |
+
+
+sj|L|
+mb|5S|
+pg| ***** 128 ***** |
+
+
+sj|L|
+mb|?|
+at|    I  (as North) am considering bidding at the 6-level in Hearts or Diamonds.  I know it is NS's hand because we've been cue-bidding, so clearly South has a decent hand.|
+pg| ***** 129 ***** |
+
+
+mb|d|an|No 1st or 2nd round control of @s|
+at|^^North's  double denies having 1st or 2nd round control of @s's.|
+pg| ***** 130 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 131 ***** |
+
+
+sj|L|
+mb|6H|
+at|^^South is undeterred by North's lack of Spade control.|
+pg| ***** 132 ***** |
+
+
+sj|L|
+mb|d|an|NO defensive tricks|
+pg| ***** 133 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 134 ***** |
+
+
+sj|L|
+mb|?|
+at|^^East's bid is ?|
+pg| ***** 135 ***** |
+
+
+mb|6S|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|   East now bids 6@s because they have at most defensive trick.
+I know South has the K@d (prob) so the chances are that, if South has control of the @s's  then I can establish the @d's.|
+pg| ***** 136 ***** |
+
+
+sj|L|
+mb|p|an|1st rd control of @s's|
+at|^^The Pass from South over 6@s promises 1st round control of @s.|
+pg| ***** 137 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 138 ***** |
+
+
+sj|L|
+mb|7H|
+pg| ***** 139 ***** |
+
+
+sj|L|
+mb|7S|an|Taking the sacrifice|
+pg| ***** 140 ***** |
+
+
+sj|L|
+mb|d|an|Penality  :)|
+pg| ***** 141 ***** |
+
+
+sj|L|
+mb|ppp|
+at|^^Well done   -  par contract is 7@sx - 3   EW = -800| 
+pg| ***** 142 ***** |
+
+
+pf|Y|
+pc|hA|
+pg| ***** 143 ***** |
+
+
+Goodbyes--------------------------------------------------------------------
+qx|end,thin|
+bt||
+nt|^b@2^z@3|at|^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|    Hopefully those hands have helped you to see these doubles in action With your permission we'll leave it there for tonight.
+
+Next week we are going to have a quick look at Defensive carding techniques and perhaps give you a few ideas on improving your leads, signals and discards.
+
+That will be the LAST session in the current teaching series.
+
+The Precision series will start again later in the year, probably some time in March.
+
+Bye for now - night all 
+
+
+
+RogerPfi:   thank you  Oliver
+
+
+soko52: tx  |
+pg| ***** 144 ***** |
+
+

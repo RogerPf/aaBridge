@@ -10,12 +10,18 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.model;
 
+import com.rogerpf.aabridge.controller.Aaf;
+
 public enum Rank { // => a Call enum
 
 	//@formatter:off
 	Invalid(0), BelowAll(1), Two(2), Three(3), Four(4), Five(5), Six(6), Seven(7), 
 	            Eight(8), Nine(9), Ten(10), Jack(11), Queen(12), King(13), Ace(14), PlusDotX(15);
 	//@formatter:on
+
+	public static char rankToLanguage(char c) {
+		return Aaf.rankList.cardLetterLangConvert(c);
+	}
 
 	public static Rank rankFromInt(int value) {
 //		if ((Two.v <= value && value <= Ace.v) == false) {

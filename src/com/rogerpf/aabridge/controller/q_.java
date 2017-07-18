@@ -17,14 +17,24 @@ public class q_ {
 	public static ArrayList<Integer> all = new ArrayList<Integer>(200);
 
 	public static int q(String s) /* q => quick */{
-		int v = (s.charAt(0) << 8) + (int) s.charAt(1);
+		int v = ((int) s.charAt(0) << 16) | (int) s.charAt(1);
 		all.add(v);
 		return v;
 	}
 
 	public static boolean isQtKnown(char c0, char c1) {
 		// slow but who cares - cos fast enough
-		int qt = (c0 << 8) + (int) c1;
+		int qt = ((int) c0 << 16) | (int) c1;
+		for (Integer i : all) {
+			if (i == qt)
+				return true;
+		}
+		return false;
+	}
+
+	public static boolean isQtKnown(int c0, int c1) {
+		// slow but who cares - cos fast enough
+		int qt = ((int) c0 << 16) | (int) c1;
 		for (Integer i : all) {
 			if (i == qt)
 				return true;
@@ -65,11 +75,13 @@ public class q_ {
 
 	public final static int mn = q("mn");
 
-	public final static int pn = q("pn");
+	public final static int pn = q("pn"); // players names
+	public final static int pi = q("pi"); // handPanelNameAreaInfoNumbersShow
 	public final static int sj = q("sj"); // seat jump aaBridge only
 	public final static int sk = q("sk"); // seat kibitz
 
 	public final static int ZS = q("@S"); // @ => Z
+	public final static int Zz = q("@Z"); // @ => Z so this is Zz
 
 	public final static int Zd = q("@-"); // @ => Z
 	public final static int Zo = q("@."); // @ => Z
@@ -86,8 +98,11 @@ public class q_ {
 	public final static int ZN = q("@N"); // @ => Z, where n is 0 - 3
 
 	public final static int md = q("md");
+	public final static int kc = q("kc"); // aaBridge only Keep Cards from Shuff Op
 	public final static int rc = q("rc"); // aaBridge only Remove Cards
+	public final static int tt = q("tt"); // aaBridge only tidy trick - clear from table show only in completed tricks pile
 	public final static int vg = q("vg");
+	public final static int vr = q("vr"); // aaBridge only if only 1 md treat as virgin deal
 	public final static int rh = q("rh");
 	public final static int ah = q("ah");
 
@@ -120,9 +135,12 @@ public class q_ {
 	public final static int eb = q("eb"); // aaBridge only 'Enter the deal' Blocker
 	public final static int bv = q("bv"); // aaBridge only 'Enter the deal' etc button vivibility
 	public final static int tc = q("tc"); // BBO system to hide show card display updates - so you can jump forward
-	public final static int gf = q("gf"); // grey fade y Y = Yes other = no // ignored since 2814
+	public final static int fg = q("fg"); // faded gray Y = Yes other = no // added 2896
 
 	public final static int xx = q("xx"); // aaBridge only used to 'kill' (turn off) an existing command
+
+	public final static int xs = q("xs"); // aaBridge only sets selected hands to only show x's
+	public final static int rt = q("rt"); // aaBridge only Rotate
 
 	public final static int va = q("va"); // BBO (not supported) Vertical Adjust - we have 4 nudges
 	public final static int sa = q("sa"); // BBO (not supported)

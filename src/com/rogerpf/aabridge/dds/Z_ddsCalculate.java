@@ -10,7 +10,6 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.dds;
 
-import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.dds.deal.ByValue;
 import com.rogerpf.aabridge.model.Card;
 import com.rogerpf.aabridge.model.Deal;
@@ -171,11 +170,11 @@ public class Z_ddsCalculate {
 		Card cand = abHand.getCardIfMatching(suit, rank);
 
 		if (cand != null) {// How can it be null !
-			if (App.devMode) {
-				String s = ">>>>>>>>>>> Trick: " + (countCardsPlayed / 4 + 1) + "   card:" + (countCardsPlayed % 4 + 1) + "      " + abHand.compass
-						+ "    aaB: " + abCard.toLinStr() + "    dds: " + cand.toLinStr();
-				System.out.println(s);
-			}
+//			if (App.devMode) {
+//				String s = ">>>>>>>>>>> Trick: " + (countCardsPlayed / 4 + 1) + "   card:" + (countCardsPlayed % 4 + 1) + "      " + abHand.compass
+//						+ "    aaB: " + abCard.toLinStr() + "    dds: " + cand.toLinStr();
+//				System.out.println(s);
+//			}
 			return cand;
 		}
 
@@ -183,6 +182,56 @@ public class Z_ddsCalculate {
 		int z = 0;
 
 		return abCard;
+	}
+
+	/**
+	 * 
+	 */
+	public static int calcMaxDeclarerTricks(Deal abDeal) {
+
+		ComRogerpfAabridgeDdsLibrary dds = ComRogerpfAabridgeDdsLibrary.INSTANCE;
+
+		deal dl = new deal.ByValue(); // this 'deal' is the dds deal
+
+		dl.trump = abDeal.contract.suit.vX();
+
+		dl.first = abDeal.initialLeader().compass.v;
+
+		for (int i = 0; i < 2; i++) {
+			dl.currentTrickSuit[i] = 0;
+			dl.currentTrickRank[i] = 0;
+		}
+
+//		int countCardsPlayed = 0;
+//		int playedThisTrick = 0;
+
+		for (int i = 0; i < 16; i++) {
+			dl.remainCards[i] = 0;
+		}
+
+		for (Hand hand : abDeal.hands) {
+			for (Suit suit : Suit.cdhs) {
+				Frag frag = hand.fOrgs[suit.v];
+				dl.remainCards[hand.compass.v * 4 + suit.vX()] = frag.asDdsBits();
+			}
+		}
+
+		int target = -1; // (13 - (countCardsPlayed-1)/4); // all the rest
+		int solutions = 1; // Return only one card and its score
+		int mode = 1; // Always search to find the score
+		int threadIndex = 0;
+		futureTricks futp = new futureTricks();
+
+		int resp = dds.SolveBoard((ByValue) dl, target, solutions, mode, futp, threadIndex);
+
+		// System.out.println( "\n  " + resp + " AAAAAAAAAA   " + abHand.compass + " " + abCard);
+
+		if (resp != 1)
+			return 0;
+
+		int topScore = 13 - futp.score[0]; // as we want declarer not leaders
+
+		return topScore;
 	}
 
 	/**

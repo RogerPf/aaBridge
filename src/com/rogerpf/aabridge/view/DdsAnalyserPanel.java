@@ -23,7 +23,6 @@ import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
 import com.rogerpf.aabridge.controller.App;
-import com.rogerpf.aabridge.controller.CmdHandler;
 import com.rogerpf.aabridge.dds.Z_bothResults;
 import com.rogerpf.aabridge.dds.Z_ddsCalculate;
 import com.rogerpf.aabridge.dds.contractType;
@@ -79,10 +78,11 @@ public class DdsAnalyserPanel extends ClickPanel implements ActionListener {
 					}
 					else if (i < 5) {
 						Suit suit = Suit.suitFromInt(i - 1);
-						char sLet = suit.toChar();
+						char sLet = suit.toCharLower();
 						RpfResizeButton btn = new RpfResizeButton(Aaa.s_SelfLabel, "" + sLet, -1, 12, 1.0f);
 						btn.setForeground(Cc.SuitColor(suit, Ce.Weak));
-						btn.setFont(BridgeFonts.faceAndSymbFont);
+						btn.setFont(BridgeFonts.faceAndSymbolFont);
+						btn.suit_symbol = true;
 						add(btn);
 					}
 					else if (i == 5) {
@@ -132,7 +132,11 @@ public class DdsAnalyserPanel extends ClickPanel implements ActionListener {
 		if (btn == null)
 			return;
 
+		App.ddsAnalyserPanelVisible = false;
+
 		Deal deal = App.deal.deepClone();
+
+		App.deal = deal;
 
 		deal.wipeContractBiddingAndPlay();
 
@@ -147,28 +151,12 @@ public class DdsAnalyserPanel extends ClickPanel implements ActionListener {
 		deal.makeBid(new Bid(Call.Pass));
 		deal.makeBid(new Bid(Call.Pass));
 
-		App.ddsAnalyserPanelVisible = false;
+		App.calcCompassPhyOffset();
+		App.dealMajorChange();
 
-		App.setMode(Aaa.EDIT_PLAY);
-
-		if (App.isLin__Virgin()) {
-			CmdHandler.AnalyserNewBoard(deal);
-		}
-		else {
-			App.deal = deal;
-			App.calcCompassPhyOffset();
-			App.dealMajorChange();
-		}
+		App.setMode(Aaa.NORMAL_ACTIVE);
 
 		App.con.controlerInControl();
-//		App.gbp.matchPanelsToDealState();
-	}
-
-	/**
-	 */
-	public void showBidsButtonClicked() {
-		App.ddsAnalyserPanelVisible = false;
-		reset();
 		App.gbp.matchPanelsToDealState();
 	}
 
@@ -198,6 +186,23 @@ public class DdsAnalyserPanel extends ClickPanel implements ActionListener {
 	}
 
 	/**
+	 */
+	public void reinstateAnalyserButtonClicked() {
+		App.reinstateAnalyser = !App.reinstateAnalyser;
+		App.gbp.matchPanelsToDealState();
+	}
+
+//	/**
+//	 */
+//	public void analyseAgain() {
+//		reset();
+//		App.gbp.matchPanelsToDealState();
+//		// Delay before starting the Slow analysis (couple of seconds, or hundreds !)
+//		// so our analysing message will display
+//		ddsAnalysePart2Timer.start();
+//	}
+
+	/**
 	*/
 	public Timer ddsAnalysePart2Timer = new Timer(10 /* ms */, new ActionListener() {
 		public void actionPerformed(ActionEvent evt) {
@@ -205,7 +210,11 @@ public class DdsAnalyserPanel extends ClickPanel implements ActionListener {
 
 			Z_bothResults rtn = Z_ddsCalculate.analyse(App.deal);
 
-			if (rtn.resp != 1) {
+			if (rtn.resp == -14) {
+				bottomLine.setText("52 cards ?    Use 'Shuf Op' first");
+				return;
+			}
+			else if (rtn.resp != 1) {
 				bottomLine.setText(rtn.errStr);
 				return;
 			}

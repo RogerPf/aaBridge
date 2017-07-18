@@ -1,0 +1,1158 @@
+%%
+%%
+%% <--SECT_HEAD-->=Chapter 9.2                                Alpha Ask 
+%%
+%%
+%%  Date last Edited    2015-05-30        set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+%% 
+%% <<--HEADER_FILE-->>=005  OCP common header
+%%
+
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+
+
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+fh|s28|                    Font   s  s-small
+fh|f35|                    Font   f  f-fine
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  OLD STYLE  position adjustment 
+
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       on Title Pages   Precision Blue
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Oliver Clarke Precision                                 2017  ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bChapter 9.2                                Alpha Ask ^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+
+qx|9.2|
+fp|t-title|at|^d@2^z@3|
+at|
+^*gGS, Alpha Ask    Responses  (an Extract from the lesson)^*n|
+fp||at|
+
+^*gGS,    ^*n       
+
+|
+fp|z|at|^^^^^^^^^^
+|fp|t-title|at|
+^*gOliv, Oliver's class on     Alpha Ask            |fp||at|Starts HERE^*n  |fp||cp|red|at|<<< First time ?  Click title|fp||cp||at|
+
+
+^*gPrac,    Practice Hands    -     What would You Bid ? ^*n|
+
+
+fp||ht|y|at|^b@2@1|at|
+^*bClick^*n  -   one of the above  ^hor    in the  NavBar  ^mor      use your   mouse wheel|
+ht|z|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+n^|3|at|^^^*h https://www.youtube.com/channel/UCTGNUS8jbx85QOMUPlHoRMA, OCP Videos ^*n|
+%%
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2886|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2886 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+qx|GS,hide|
+mn|  Alpha  Ask                                 Responses      |
+tu|y|
+nt|^z@3^b@2|
+ht|f|
+at|^*bMM:^*n  This is a one page extract from the lesson^^^^^^|
+fp|t-title|at|^*bAlpha^*n|fp||at|    Responses^^|
+at|^f Remember   ^*bH^*n    =    A, K or Q      (never J or 10)
+^^^d@2
+^c    Steps ^fCtrls     ^j Trump Support                          
+^c    @-@-@-^f@-@-^h   @-@-@-@-@-@-@-@-@-@-@-@-@-@-     
+1 ^f 0-3          ^h     Less than    ^k ^*bHxx^*n    or    ^*bxxxx^*n   ^q |cp|dg|at|^*bxxxx^*n   includes   ^*bxxxx (x)^*n|cp||at| 
+2 ^f    4+        ^h        "   ^j"   ^k    "                  ^n" 
+|cp|d-feint|at|         @-@-@-@-@-|cp||at|                 
+3 ^f 0-3          ^h     At least     ^k    "                  ^n"       ^q - - -  agrees trumps
+4 ^f    4+        ^h     Exactly      ^k    "                  ^n"       
+|cp|d-feint|at|         @-@-@-@-@-|cp||at|               
+5 ^f    4         ^h                  ^k ^*bHxxx^*n                      ^q |cp|dg|at|and all better holdings|cp||at|   
+6 ^f    5         ^h                  ^k    "                               
+7 ^f    6         ^h                  ^k    "                               
+   etc...
+^b@2
+
+Note that the qualification for agreeing the suit has nothing whatever to do with the number of controls held, solely possession of sufficient trump support, so a 1 or 2-step response to Alpha is "Negative" and a 3-step or greater response is "Positive".
+
+
+
+
+|ht|z|at|
+^b^*bend^*n|
+pg| ***** 1 ***** |
+
+
+-----------------------------------------------------------------------------------------------
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,wide|
+nt|^z@3^b@2|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class                             Alpha Ask^*n^-^^|cs||fp||cp||at|^^|
+
+ht|f|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Hi Everyone and welcome to today's Precision Club session, in which we will continuing our look at Precision Asking Bids.
+
+Tonight we'll be looking at Alpha, the  "prime-ist"  of the PRIMARY Trump Asking Bids.
+
+If you have not already done so, please have a look at the notes I have prepared on Precision Club bidding.
+
+You can find these on:  ^*h http://ocp.pigpen.org.uk/AskingBids.php ^*n  You will DEFINITELY want to have these onscreen in the background for reference during this session.
+
+The page for Alpha can be found at  ^*h http://ocp.pigpen.org.uk/Alpha.php ^*n
+
+If you are new to Asking Bids then there's no way you're going to absorb everything we cover tonight, so please do visit the site and read through the Asking Bid section at your leisure.
+
+If you want, download one of the Precision system documents on the site.  ^*h http://ocp.pigpen.org.uk/Documents.php ^*n
+
+
+( ^*bMM:^*n   Remember that, in Oliver Clarke Precision 
+
+^c 1@c - 1NT      ^g shows  the responder has         @sspades@s      and
+
+^c 1@c - 1@s      ^g shows  the responder has a     ^*b NO TRUMP ^*n    shape hand   )|
+pg| ***** 2 ***** |
+
+
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Beta  Ask  Recap|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   A quick recap of what we looked at last week, which was Beta, Precision's equivalent of Blackwood, asking about partner's GENERAL level of Controls.
+
+An Ace = 2 Controls and a King = 1 Control, and Beta asks exactly how many Controls partner's hand contains.
+
+The main places where a bid is Beta are as follows: 
+^c@2
+(1) In "natural" bidding sequences, 4@C is usually Beta unless Clubs is the agreed or a potential trump suit, in which case 4@D can be Beta.
+
+(2) In Asking Bid sequences, 4@C/@D can also be Beta if required.
+
+(3) Whenever we've agreed a trump suit by means of an Asking Bid and response, then a relay in the next suit up over the response is Relay Beta (ignoring the agreed trump suit, and ignoring NT's if a Minor suit agreed).
+
+(4) Whenever we've shown a shortage, directly or indirectly (eg: Splinter, 4441 shape, etc), then a bid of the SHORT suit can be Beta.
+
+(5) A Relay over a POSITIVE response to 1@C (not 1@C - 1@H - 1@S) is Low - level Beta.
+
+(6) There are some other specific circumstances where a bid can be Beta, but the above covers 90% of circumstances.
+
+^b@2
+Next are the scales.|
+pg| ***** 3 ***** |
+
+
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Beta  Scales|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   There are various "Scales" for Beta, depending on Responder's KNOWN HCP strength and/or KNOWN level of Controls: The "Normal" scale is used when Responder's strength is unknown, or is KNOWN to be Intermediate (11 - 15): Stepped responses show 0-2, 3, 4, 5 etc.
+
+The "Weak" scale is used when Responder is KNOWN to be 0-10 (eg: passed hand, Weak 2 opened, 1@D response to 1@C) or when they are KNOWN to have 0-3 controls (eg: 1 or 3-step response to an earlier Alpha, 1-step response to an earlier Beta).
+
+Stepped responses show   0, 1, 2, 3, 4 etc.
+
+The "Special Weak" scale is used ONLY when Responder is a passed hand and Opener uses a LOW - LEVEL Beta over a positive response to their 1@C Opening.
+
+Stepped responses show   0-1, 2, 3, 4 etc.     eg: 
+
+^dPass  -  1@C - 1@S - 1NT     uses the Special Weak Scale.
+
+The "Strong" scale is used when Responder is KNOWN to be 16+ or, more commonly, when they are KNOWN to have 4+ Controls (2 or 4 - step response to an earlier Alpha).
+
+Stepped responses are   0-4, 5, 6, 7 etc.
+
+There are two other ranges (Super and Range), but they occur VERY infrequently, especially in the "simple" version of this system.
+
+You can look them up on the website if you're interested.
+
+Any questions on Beta before we move onto this week's lesson?|
+pg| ***** 4 ***** |
+
+
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|The  Alpha Ask|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   The Asking Bid we're going to deal with today is called Alpha.
+
+Alpha is a bid that asks Responder about their support for the Captain's primary suit.
+
+It also obtains information about Responder's general level of controls.
+
+Alpha is ALWAYS the FIRST Asking bid in an Asking Bid sequence if it is used at all.
+
+If the first Asking Bid is NOT Alpha, then Alpha will not be used in that sequence at all (never!).
+
+The most common place where Alpha is used is after a positive response to a 1@C Opener.
+
+Here a simple bid in a new suit is Alpha.   eg: 
+
+^c 1@C - 1@H - 2@D      is  Alpha in Diamonds.
+
+There are 3 specific occasions when this is not true, which is when the positive response to 1@C is 1NT, 2@C, or 2@D, and Opener wants to make an Alpha Ask in the suit immediately above that bid.   eg:
+
+^c 1@C - 2@C - 2@D      is NOT Alpha but a different Ask (Beta).|
+pg| ***** 5 ***** |
+
+
+nt|^z@3^b@2|at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   (so far we have...)
+
+^c 1@C - 1@H - 2@D      is  Alpha in Diamonds.
+^c 1@C - 2@C - 2@D      is NOT Alpha but a different Ask (Beta).
+
+So  2NT  is used and becomes Alpha in the suit immediately above the positive response (ie: the relay suit), so 
+^c@2
+1@C - 2@C - 2NT ^g is Alpha in Diamonds.
+
+^bmore examples
+
+1@C - 1@H - 1@S ^g is Alpha in Spades.
+
+1@C - 2@C - 2@H ^g is Alpha in Hearts.
+
+1@C - 2@D - 2NT ^g is Alpha in Hearts   (because   1@C - 2@D - 2@H   is Beta).
+
+1@C - 1@S - 2@D ^g is Alpha in Diamonds.
+^b@2
+The other main situation where Alpha occurs is a jump-shift over an INTERMEDIATE Precision Opening of   1@D,  1NT  or  2@C.   eg:
+^c@2
+1@D ^d -  3@C ^g is Alpha in Clubs
+
+1NT ^d -  3@S ^g is Alpha in Spades
+
+2@C ^d -  3@H ^g is Alpha in Hearts|
+pg| ***** 6 ***** |
+
+
+nt|^z@3^b@2|at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   It's worth stressing that we do NOT use Alpha over Major Suit openings, so 
+
+^c1@S - 3@C        is a fit-showing jump-Shift rather than Alpha.
+
+The only other situation you will ever see Alpha being used is in the Complex version of the system, and I don't propose to confuse things by going into that now.
+
+So Alpha is always used to kick off an Asking Bid sequence (but it's not the only way to do that).
+
+In practice this Asking Bid is NOT used as often as you might think in  1@C  sequences.
+
+The most common situation is where the strong hand has a distributional 2-suiter with no support or tolerance for a suit that Partner might have shown.
+
+You will find as we go on that it is more common for a  1@C  Opener to use the low-level Beta and then to use a Theta or Iota Ask than it is for them to use Alpha.
+
+This is because Beta is more "precise" than Alpha where controls are concerned (more likely to get a range response to Alpha) and Theta/Iota gets more precise information about Responder's trump holding.
+
+One exception to this can be where Responder is a passed hand and the Special Weak Beta would be in operation.
+
+Now the low-level Beta (using the Special Weak Scale) and then Theta/Iota might prove to be an over-expensive option and sometimes Opener judges to use Alpha instead.   So 
+
+^c Pass  -  1@C - 1@S - 2@H(Alpha)    might be preferred to 
+
+^c Pass  -  1@C - 1@S - 1NT(Beta)    because the Beta response will be on the SPECIAL WEAK scale,
+
+which in turn might mean that Opener would not be able to ask in Hearts at the 2-level (ie: if Responder has 3 or more Controls).  Apart from these two situations, Alpha simply does not occur (unless you're using the Complex version of the system).|
+pg| ***** 7 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 1,wide|
+st||
+pn|South,West,North,East|rh||ah|Teach 1|sv|-|sk|n|sk||
+%% 3SAQJ2HKJDKT3CQT83,S8654H954DA9542C6,SKTHAT762CAKJ942,S973HQ83DQJ876C75
+md|3SAQJ2HKJDKT3CQT83,,SKTHAT762CAKJ942,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 1    |
+pg| ***** 8 ***** |
+
+
+mb|1C|an|16+ Any dist except 16-23 4441|
+pg| ***** 9 ***** |
+
+
+sj|c|
+mb|p|mb|1S|an|8+ BALANCED or semi-balanced with 5m, GF|
+pg| ***** 10 ***** |
+
+
+sj|c|
+mb|p|mb|2C|an|Asking about @C (Alpha)|
+at|^^^^ So here we have a simple new suit over a positive response to  1@C.|
+pg| ***** 11 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Responses  to  Alpha|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   The responses to Alpha are as follows (A 3-step or greater response agrees the suit): 
+
+^f Remember   ^*bH^*n    =    A, K or Q      (never J or 10)
+^c@2
+1  step  ^e No Support  (less than Hxx or xxxx)     ^m and ^o 0-3   ^p controls 
+2  steps ^e No Support                             ^m and ^o  4+    ^p controls 
+3  steps ^e       Support  (at least Hxx or xxxx)    ^m and ^o 0-3  ^p controls       agrees trumps  (as do following)
+4  steps ^e       Support  (exactly Hxx or xxxx)    ^m and ^o  4+     ^p controls 
+5  steps ^e       GOOD 4-card Support  (Hxxx or better)  and^o  4     ^p controls 
+6  steps ^e       GOOD 4-card Support  ^m and              ^o  5     ^p controls 
+7  steps ^e       GOOD 4-card Support  ^m and              ^o  6     ^p controls,
+   etc...
+^b@2
+Note that the qualification for agreeing the suit has nothing whatever to do with the number of controls held, solely possession of sufficient trump support, so a 1 or 2-step response to Alpha is "Negative" and a 3-step or greater response is "Positive".
+
+The response to Alpha ALWAYS affects the range used in any subsequent Beta Ask or whether it's available at all, so after a 1 or 3-step response the WEAK Beta scale is used, and after a 2 or 4-step response to Alpha, the STRONG Beta scale is used.
+
+Clearly if the response to Alpha shows an exact number of controls (eg: a 5-step or greater response), then there will be no need for a Beta Ask at all.
+
+Please also note that a holding such as Hx or xxx does NOT qualify as "support" in response to an Alpha ask, but should the Captain choose to make a Repeat Alpha Ask (ie: Theta) in the same suit, then a holding such as Hx or xxx WILL now agree the suit (more on that in a moment).
+
+Any questions on the responses to Alpha?                      OK then   back to   Teach 1|
+pg| ***** 12 ***** |
+
+
+st||
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   |
+pg| ***** 13 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 14 ***** |
+
+
+mb|3C|an|Hxxx or better in @C, 4 Controls exactly|
+at|     So  3@C  shows at least  Hxxx  in  @C  and exactly 4 controls, so there is no need for a Beta Ask.   |
+pg| ***** 15 ***** |
+
+
+sj|c|
+mb|p|mb|3H|an|Asking about @H Controls (Epsilon)|
+pg| ***** 16 ***** |
+
+
+sj|c|
+mb|p|mb|4D|an|2nd + 3rd rnd ctrl of @H|
+pg| ***** 17 ***** |
+
+
+sj|c|
+mb|p|mb|4S|an|Asking about @S Controls (Epsilon)|
+pg| ***** 18 ***** |
+
+
+sj|c|
+mb|p|mb|5N|an|1st + 3rd rnd control of @S|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  North now knows South has at least
+^^   Qxxx in @C,    @HKx or KQx,     and     @SAQx(x) or Ax.       They must also have at least the K@D but that's irrelevant.|
+pg| ***** 19 ***** |
+
+
+sj|c|
+mb|p|mb|7C|
+pg| ***** 20 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 21 ***** |
+
+
+pf|Y|
+md|0SAQJ2HKJDKT3CQT83,S8654H954DA9542C6,SKTHAT762CAKJ942|
+mb|p|
+pc|dq|
+pg| ***** 22 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|After  a  Negative|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  If the Captain gets a "negative" response to Alpha, they can make a repeat ask in the SAME suit to ascertain Responder's exact holding.
+
+This is a  ^*bTheta Ask^*n.    We will not be covering Theta in detail today, but there are notes on it on the website.
+
+If a repeat Alpha (ie: Theta) in the same suit is used then a Theta response showing Hx or xxx agrees the suit, as I said earlier.
+
+If the Captain gets a "negative" response to Alpha, they can also make a repeat ask in a DIFFERENT suit to ascertain Responder's exact holding there.
+
+This is an  ^*bIota Ask^*n  rather than  Theta.   We will not be covering  Iota  today, but see the notes on it on the website.
+
+^cWe will come to  Theta  and  Iota  in a few weeks.
+
+The reason for the difference is that if partner has no good support for the first suit they are notionally more likely to have "adequate" support for the second suit, so we can afford to try to save space a little (Iota is a slightly collapsed version of Theta).
+
+Because we're asking in a NEW suit, the "normal" rules for agreeing the suit apply (ie: A response showing HH, Hxx or xxxx in the suit is required to agree it).
+
+Agreeing a suit with HH is only possible with Theta or Iota, because HH is an alternative to Hxx in those scales.
+
+
+Any questions on repeat Alpha Asks in the same or a different suit?|
+pg| ***** 23 ***** |
+
+
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Beta  after  a  Positive|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   If Alpha receives a POSITIVE response of 3 or 4 steps (NOT greater than 4 steps), then a relay in the next suit up (not trumps) over the Alpha response is  ^*bBeta^*n  on the appropriate scale.
+
+If the next suit up is the agreed trump suit then we ignore trumps and go to the next suit above THAT for the Relay Beta.
+
+Similarly if Alpha has been used in a MINOR suit and the Relay over the Alpha Response is 3NT (NOT 2NT), then we ignore NT's and move to the next available new suit over that (not the trump suit).  Thus
+
+^c 1@C - 1@S - 2@H(Alpha) - 3@C - 3@D   is Beta,    but over
+
+^c 1@C - 1@S - 2@H(Alpha) - 3@D       we skip 3@H (which is an Asking Bid, ^*bSigma^*n) and use  3@S  as the  ^*bRelay Beta^*n.
+
+Similarly, over a sequence like
+
+^c 1@C - 2@C - 2NT(Alpha in Diamonds) - 3@S,   now  4@C  is Beta and  3NT  is ostensibly "to play" 
+
+^d(but probably  carries the nuance   "I have a minimum 1@C Opener.  
+^iIf you only have 4 Controls let's play here but if you have more, then carry on" ).
+
+Lastly, I mentioned Sigma above.
+
+We'll look at that properly later in the Series, but worth mentioning here that Sigma is an immediate repeat of the agreed trump suit BELOW game level after a positive response to Alpha.
+
+It is used to check on trump solidity and asks Responder to clarify their exact holding in the suit.|
+pg| ***** 24 ***** |
+
+
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Checking  on  Trump  Solidity|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   You'll have noticed that a holding of xxxx is enough for a positive response to Alpha, but there's a big difference between xxxx and HHxxx and sometimes it's critical for Opener to be able to check on trump solidity.
+
+Please note that if Alpha (or any other  ^*bTrump^*n  Asking Bid, for that matter) receives a ^*bPOSITIVE^*n response, ALL the Trump Asking Bids (except Sigma) automatically become unavailable, and the ONLY Asking Bids that are still "on the menu" are Beta and Epsilon.
+
+This way we know that    1@C - 1@H - 1@S - 2@D - 3@C    is  ^*bEpsilon^*n, NOT some other Trump Asking Bid.
+
+Any questions? 
+
+
+Let's look at another example |
+pg| ***** 25 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 2,wide|
+st||
+pn|South,West,North,East|rh||ah|Teach 2|sv|e|sk|e|sk||
+%% 4S86HQT432DK632CT4,SKJ7HKJ965D98CKJ9,ST43HA87DQJ754C62,SAQ952DATCAQ8753
+md|4,SKJ7HKJ965D98CKJ9,,SAQ952DATCAQ8753|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 2    |
+pg| ***** 26 ***** |
+
+
+mb|1C|an|16+ Any dist except 16-23 4441|
+pg| ***** 27 ***** |
+
+
+sj|c|
+mb|p|mb|1H|an|8+, 5+ @H, GF|
+pg| ***** 28 ***** |
+
+
+sj|c|
+mb|p|mb|1S|an|Asking about @S (Alpha)|
+pg| ***** 29 ***** |
+
+
+sj|c|
+mb|p|mb|2D|an|Hxx/xxxx or better in @S, 0-3 controls|
+pg| ***** 30 ***** |
+
+
+sj|c|
+mb|p|mb|2H|an|Asking about controls     (Relay Beta)|
+at|^^^^This is Relay Beta, here using the WEAK Beta scale, because of the 3-step response to Alpha which was POSITIVE for support, but showing 0-3 controls only.|
+pg| ***** 31 ***** |
+
+
+sj|c|
+mb|p|mb|3D|an|3 Controls (Ace = 2, King = 1)|
+pg| ***** 32 ***** |
+
+
+sj|c|
+mb|p|mb|4C|an|Asking about @C Controls (Epsilon)|
+pg| ***** 33 ***** |
+
+
+sj|c|
+mb|p|mb|4S|an|2nd Round Control in the Ask suit|
+pg| ***** 34 ***** |
+
+
+sj|c|
+mb|p|mb|5C|an|Asking again about @C Controls|
+pg| ***** 35 ***** |
+
+
+sj|c|
+mb|p|mb|5H|an|Kxx exactly in @C|
+pg| ***** 36 ***** |
+
+
+sj|c|mb|p|mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|    Is  7@s  a realistic bid here ? |
+pg| ***** 37 ***** |
+
+
+at|^^^^No in practice, despite the big 2-suited fit, there's no way to make 7@S unless West has the K@D
+
+EW might be able to make 7@C if the Clubs are 2-2, but almost certainly not in any other case.|
+pg| ***** 38 ***** |
+
+
+mb|6D|an|Asking about @D Controls|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|    Can East afford to bid this (6@d) ?|   
+pg| ***** 39 ***** |
+
+
+at|^^^^Yes, because if West has the K@D or a singleton @D, that's the ONLY time the response will go beyond 6@S.|
+pg| ***** 40 ***** |
+
+
+sj|c|
+mb|p|mb|6S|an|3rd round control of @D|
+pg| ***** 41 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 42 ***** |
+
+
+at|^^^^So Asking Bids are no substitute for thinking :)|  
+pg| ***** 43 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|    Here East can easily get rid of the losing Diamond in West's hand with whichever black suit is a side suit, but since West's trumps will have to be used to draw Opps trumps before RUNNING their side suit, there'll be no trumps in dummy to trump East's losing Diamond.
+^^Still, as John was no doubt about to point out, a small slam on a combined 27-count will be missed by some.
+^^So 7@C WILL make, but no way to tell beforehand.|  
+pg| ***** 44 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Here (at the moment of the  6@d  bid) East knows that West had at MOST 2 Diamonds (5 @H, Kxx or xxxx in @S and @CKxx), so the response will almost certainly be 6@S.   In detail :
+
+    if West has   xx or Qx, then the reply would be   6@s 
+or if West has   x             then the reply would be   6NT
+or if West has   Kx           then the reply would be   7@c     
+ ^h and of course, if West has 2nd round control of Diamonds, then 7 is a breeze.|
+pg| ***** 45 ***** |
+
+
+qx|Prac,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Practice / Demo  Hands|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Any questions on anything to do with Alpha? 
+^^^^^^^^
+If not, then plenty of time for some practice hands tonight 4 volunteers please
+
+kritter2:  hi :)
+
+|cp|red|at|^*bOliverC:^*n|cp||at|   Welcome all and thanks for sitting
+
+Redbird44:  Hi Jen :)
+
+Redbird44:  Hi Sirl and Eszter :)
+
+Uof FL Jen:  Hi Terry  :)  Hi Shirl and Eszter
+
+Eszter5: hi Shirl, Terry Jen,  
+
+boleo1: Hi all..|
+pg| ***** 46 ***** |
+
+
+------------------------------------------------------------------------------------------------  
+%% Alert Insert start --------------------------------------------------------------------------
+nt|^z@3^b@2|
+at|^^^^|
+%%   header box with text
+ht|b|cs|y|fp||at|^b{ ^^|
+ht|c|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^|fp|x-insertAlert|at|^- A small insert on Alerts^*n^-^^|cs||fp||cp||at|^^|
+
+ht|d|at|^^|
+cp||at|^*bMM:^*n|cp||at|  We all know we have to alert when playing  'proper'  bridge.
+
+The laws of the game say that what we have to put in the alert is  ^*b our agreement with partner ^*n about that bid.
+
+While creating these bridge movies, I have gone through and added to, or amended, many of the alerts that were in the original text.
+
+I have changed them from being ^*b REAL ^*n alerts, that you should give to real opponents, and have replaced them with ^*b STUDY ^*n alerts.   Study alerts are only useful to students of Oliver's Precision.  Of course in many cases no changes were needed.   For example    1@c     16+ Any dist except 16-23 4441
+
+It is particularly important that we make the alerts for  ^*b Asking bids and their responses^*n,  as clear as possible
+
+	    ^c ^*b Study Alert ^*n           ^i ^*b Real Alert ^*n                ^o ^*b It would be great if you could add ^*n
+     ^b      @-@-@-@-@-@-@-@-@-@- ^h       @-@-@-@-@-@-@-@-@-@-   ^n       @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-
+		^c Beta    Relay Beta ...          ^i Gen Ctrl Ask                    ^o A = 2,  K = 1 
+		^c Alpha                           ^i Asking  in                      ^o Trump ...
+		^c Gamma                           ^i Asking  in partners suit        ^o Trump ...
+		^c Epsilon                         ^i Specific Ctrl Ask               ^o in ... 
+		^c Hxx                             ^i Hxx                             ^o in ... 
+		^c none  or  1st & 2nd             ^i none  or  1st & 2nd             ^o [xxx, AKx(x)]
+		^c 3rd rd ctrl                     ^i 3rd rd ctrl                     ^o [xx, Qxx(x), Qx]
+		
+An easy mistake in reply to an Epsilon is when, say, you hold ^*b Q76 ^*n in the suit, and so give only ^*b Qxx ^*n in the alert.   THAT  IS  WRONG.  The agreement is ^*b 3rd round control ^*n and that is what should be told to the opps.   
+
+The ^*b ethical ^*n problem with telling too much to your opps is that it disadvantages the other pairs who will play your opponents cards.|
+%% Alert Insert End ----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------  
+pg| ***** 47 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 1,hide|
+st||
+pn|Uof FL Jen,kritter2,Redbird44,Eszter5|rh||ah|Practice 1|sv|e|sk|s|sk||
+%% 1SQ84HTDAJT92CAQJT,ST7HK732DQ54C9853,SAKJ953HA54DK7CK6,S62HQJ986D863C742
+md|1SQ84HTDAJT92CAQJT,,SAKJ953HA54DK7CK6,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 1 |
+pg| ***** 48 ***** |
+
+
+mb|1D|an|11-15, No 5 Maj, No 6@C,           not 13-15 bal|
+pg| ***** 49 ***** |
+
+
+sj|c|
+mb|p|mb|2S|an|16+  Alpha (in spades)|
+at|   A jump-shift over an opening of 1@D is Alpha  (not 2NT, of course, which is 16+ balanced).|
+pg| ***** 50 ***** |
+
+
+sj|c|
+mb|p|mb|3H!|an|Hxx, 4+ controls|
+pg| ***** 51 ***** |
+
+
+sj|c|
+mb|p|mb|4H|an|Epsilon  (Asking in @h)|
+at|^^^^As they have agreed a MAJOR,  3NT  is now available as  ^*bRelay Beta^*n   (but Terry doesn't need Beta)     :)
+^^4@H Epsilon is the ONLY Ask she needs, since she already knows South must have the  A@C  and  A@D.|
+pg| ***** 52 ***** |
+
+
+sj|c|
+mb|p|mb|5C|an|2nd Round Control [x, Kxx(x) or K]|
+pg| ***** 53 ***** |
+
+
+sj|c|
+mb|p|mb|6N|
+pg| ***** 54 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 55 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|    Terry, what will happen if South has the  Q@D  or  Q@C ?
+^^Redbird44:  7nt
+^^|cp|red|at|^*bOliverC:^*n|cp||at|    In some respects the 4@H Epsilon is a waste of time.  Roll back to just after 3@h and try  Epsilon  in Clubs.|
+pg| ***** 56 ***** |
+
+
+ub|7|
+at|^^^^Redbird44:  ok|
+pg| ***** 57 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at||
+pg| ***** 58 ***** |
+
+
+sj|c|
+mb|4c|an|Epsilon  (Asking in @c)|
+pg| ***** 59 ***** |
+
+
+mb|p|mb|5D|an|1st and 3rd Round Control [Ax, AQx(x) or AQ]|
+pg| ***** 60 ***** |
+
+
+sj|c|
+mb|p|mb|6C|an|Repeat Epsilon  (in @c)|
+pg| ***** 61 ***** |
+
+
+sj|c|
+mb|p|mb|7@c|an|AQJx(x)|
+pg| ***** 62 ***** |
+
+
+sj|c|
+mb|p|mb|7N|
+pg| ***** 63 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 64 ***** |
+
+
+at|   So actually the seemingly important question about @H turns out NOT to be very important at all.
+^^The other thing here was to ask in @C FIRST (before @D) because if South has something like @CAxx, then their Epsilon response will be 5@C  which allows for a relatively cheap ask in @D afterwards.  The same is NOT true if you ask in @S's FIRST then @D  because ...4@D - 5@D now gives you a very expensive 6@C ask in Clubs.|
+
+
+nt|^z@3^b@2|at|^^|
+at|Redbird44:  So how to think logically that we should ask about  @C's  and  @D's?
+^^|cp|red|at|^*bOliverC:^*n|cp||at|    Well suppose South has     @SQxx  @HKQx  @DAxxxx  @CAx
+
+^e...4@C  -  5@D  -  6@C  -  6@D(Ax)    still allows a  6@H  ask|
+pg| ***** 65 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   The other thing here is that 3NT over 3@H will get a 4@C response if South does NOT have the K@H
+^^Now you can still ask in @D and then @C not optimum, because of the expensive @C Ask, but there are so many ways to
+make 7@S here.  Establishing the @D's is the obvious one.
+^^Redbird44:  ok . . . takes lots of practice|
+pg| ***** 66 ***** |
+
+
+pf|Y|
+md|0SQ84HTDAJT92CAQJT,ST7HK732DQ54C9853,SAKJ953HA54DK7CK6|
+mb|p|
+pc|hq|
+pg| ***** 67 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 68 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2,wide|
+st||
+pn|Uof FL Jen,kritter2,Redbird44,Eszter5|rh||ah|Practice 2|sv|b|sk|w|sk||
+%% 2ST764H5D9862CK974,SA95HKJ82D7CAQT32,SQJ82H763DQ54CJ85,SK3HAQT94DAKJT3C6
+md|2,SA95HKJ82D7CAQT32,,SK3HAQT94DAKJT3C6|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2    |
+pg| ***** 69 ***** |
+
+
+mb|2C|an|11-15 6-card @C or maybe 5-card @c with a 4 Card Maj|
+pg| ***** 70 ***** |
+
+
+sj|c|
+mb|p|mb|3H|an|Alpha in Hearts|
+at|  A jump-shift over  2@C  is  Alpha  in the suit.  
+^^East has a good holding for that, with no tolerance for Clubs and a distributional 2-suited hand.
+^^Note that even with longer Diamonds, East would ask in Hearts first, because a negative response to Alpha in Hearts will always permit a cheaper ask in Diamonds later.|
+pg| ***** 71 ***** |
+
+
+sj|c|
+mb|p|mb|4S|an|5 Controls and good support (at least Qxxx)|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   The 6 step response to Alpha (here 4@S) shows at least Hxxx in @H and exactly 5 Controls.|  
+pg| ***** 72 ***** |
+
+
+sj|c|
+mb|p|mb|5D|an|Epsilon in @D|
+at|^^^^Only Epsilons (and Sigma) available from here on.  From East's viewpoint, 5 controls MUST be the two missing Aces and the K@H  no chance for the K@C.  
+^^So really Diamonds is the ONLY question that needs asking|
+pg| ***** 73 ***** |
+
+
+sj|c|
+mb|p|mb|5N|an|2nd Round Control [x, Kxx(x) or K]|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|     This  (5NT) HAS to be a singleton from East's viewpoint.
+
+So now East KNOWS that West has     @SAxx  @HKxxx  @Dx  @CAxxxx|
+pg| ***** 74 ***** |
+
+
+sj|c|
+mb|p|mb|7H|
+pg| ***** 75 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^well done    Eszter and Shirl|
+pg| ***** 76 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|     
+
+Another route here would be     2@C  -  2@D  -  2@H  -  3@S(Eta in @H)     which would probably still get you to 7@H
+
+Any questions or comments?|
+pg| ***** 77 ***** |
+
+
+pf|Y|
+md|0ST764H5D9862CK974,SA95HKJ82D7CAQT32,SQJ82H763DQ54CJ85|
+mb|p|
+pc|h5|
+pg| ***** 78 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 79 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 3,wide|
+st||
+pn|Uof FL Jen,kritter2,Redbird44,Eszter5|rh||ah|Practice 3|sv|n|sk|n|sk||
+%% 3ST85HKJT63DAJTCQ2,S4HA95DKQ832CJ864,SAKQJ932D6CAK975,S76HQ8742D9754CT3
+md|3ST85HKJT63DAJTCQ2,,SAKQJ932D6CAK975,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 3    |
+pg| ***** 80 ***** |
+
+
+mb|1C|an|16+ Any dist except 16-23 4441|
+pg| ***** 81 ***** |
+
+
+sj|c|
+mb|p|mb|1H|an|8+, 5+ @H, GF|
+pg| ***** 82 ***** |
+
+
+sj|c|
+mb|p|mb|1S|an|Asking about @S (Alpha)|
+pg| ***** 83 ***** |
+
+
+sj|c|
+mb|p|mb|1N|an|0-3 Controls and no good support for Opener's suit (less than Qxx or xxxx)|
+pg| ***** 84 ***** |
+
+
+sj|c|
+mb|p|mb|2S|an|Repeat Ask in @s  (Theta)|
+pg| ***** 85 ***** |
+
+
+sj|c|
+mb|p|mb|3D|an|Qx or xxx|
+pg| ***** 86 ***** |
+
+
+sj|c|
+mb|p|mb|4C|an|Epsilon in Clubs|  
+pg| ***** 87 ***** |
+
+
+sj|c|
+mb|p|mb|4H|an|3rd Round Control [xx, Qxx(x) or Qx]|
+pg| ***** 88 ***** |
+
+
+sj|c|
+mb|p|mb|5D|an|Epsilon in Diamonds|
+pg| ***** 89 ***** |
+
+
+sj|c|
+mb|p|mb|6D|an|1st Round Control [Void or Axx(x)|
+pg| ***** 90 ***** |
+
+
+sj|c|
+mb|p|mb|7S|
+pg| ***** 91 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+
+at|                  Terry, what is South's Club holding?
+Redbird44:  The queen but not sure how many.
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  No, South's  4 @h bid  showed  ^*b3rd round^*n  control, which might be  @Cxx  in which case 7 is perhaps a little premature despite south having @Sxxx.    You need to be pretty sure to bid 7 rather than 6.
+
+Redbird44:  yes|
+pg| ***** 92 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|    Those of you who have "read ahead" and got to Zeta might wonder why Zeta not used here rather than Alpha. 
+
+The thing is that South's trump holding is NOT irrelevant here, since North might need to ruff some Clubs, so Alpha a much better route.
+
+Redbird44:  Zeta is for solid suit i assume?|
+pg| ***** 93 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Yes, but only if you don't need to know about Responder's trump holding because once you use Zeta you can never find out about Responder's trump holding.
+^^Redbird44:  ah ok|
+pg| ***** 94 ***** |
+
+
+pf|Y|
+md|0ST85HKJT63DAJTCQ2,S4HA95DKQ832CJ864,SAKQJ932D6CAK975|
+mb|p|
+pc|d4|
+pg| ***** 95 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 96 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 4,wide|
+st||
+pn|Uof FL Jen,kritter2,Redbird44,Eszter5|rh||ah|Practice 4|sv|n|sk|e|sk||
+%% 4S3HQ8543DJ985C982,SKQ98HK2DAKQ432CA,S7642HA6D76CJT643,SAJT5HJT97DTCKQ75
+md|4,SKQ98HK2DAKQ432CA,,SAJT5HJT97DTCKQ75|
+
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 4    |
+pg| ***** 97 ***** |
+
+
+mb|1D|an|11-15   No 5-card Maj,  No 6-card @c unless weak not 13-15 bal|
+pg| ***** 98 ***** |
+
+
+sj|c|
+mb|p|mb|3D|an|Alpha Ask|
+at|   Alpha is a JUMP_SHIFT over a  1@D opening  so a  1@D - 3@D  sequence.|
+pg| ***** 99 ***** |
+
+
+sj|c|
+mb|p|mb|3H|an|0-3 Controls and no good support for Opener's suit (less than Qxx or xxxx)|
+pg| ***** 100 ***** |
+
+
+sj|c|
+mb|p|mb|3S|an|Iota in @s|
+at|^^^^Here  3@S  is Iota in @S       Iota. a little risky with a 4-card suit, but West is SO strong she can afford it.|
+pg| ***** 101 ***** |
+
+
+sj|c|
+mb|p|mb|4S|an|HHx or Hxxx|
+pg| ***** 102 ***** |
+
+
+sj|c|
+mb|p|mb|5H|an|Epsilon in Hearts|
+at|^^^^West feels the only real question here is whether or not East has the A@H,  so ignore an expensive Relay Beta and go straight to Epsilon|
+pg| ***** 103 ***** |
+
+
+sj|c|
+mb|p|mb|5S|an|No Ctrl [xxx(x)] or 1st and 2nd Round Ctrl [A or AKx(x)]|
+pg| ***** 104 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|    West's  5@H  was Epsilon in @H, and  5@S  shows no Control of Hearts  OR  1st and 2nd round, control of the suit (ie: a stiff Ace from your viewpoint).
+^^Regarding the spades Partner MUST have at least    @SAxxx    East cannot have @SHHx  so must have 4 of them.|
+pg| ***** 105 ***** |
+
+
+mb|6S|
+pg| ***** 106 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^wd   6@S pretty much laydown here given that your K@H is protected on the opening lead.|
+pg| ***** 107 ***** |
+
+
+pf|Y|
+md|04S3HQ8543DJ985C982,SKQ98HK2DAKQ432CA,S7642HA6D76CJT643|
+mb|p|
+pc|S2|
+pg| ***** 108 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 109 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 5,wide|
+st||
+pn|Uof FL Jen,kritter2,Redbird44,Eszter5|rh||ah|Practice 5|sv|b|sk|n|sk||
+%% 1SKQT42H2DK75CJ982,SAJ985HQ865DT8CT5,S3HAKJ3DAQJ942CK3,S76HT974D63CAQ764
+md|1SKQT42H2DK75CJ982,,S3HAKJ3DAQJ942CK3,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 5   |
+pg| ***** 110 ***** |
+
+
+mb|p|
+pg| ***** 111 ***** |
+
+
+mb|p|mb|1C|an|16+ hcp,   any distribution except   (16-23)  4441|
+pg| ***** 112 ***** |
+
+
+sj|c|
+mb|p|mb|1N|an|8+ hcp, with 5+ @sspades@s, GF|
+pg| ***** 113 ***** |
+
+
+sj|c|
+mb|p|mb|2D|an|Alpha in Diamonds|
+pg| ***** 114 ***** |
+
+
+sj|c|
+mb|p|mb|2N|an|0-3 Controls and support (at least Hxx or xxxx)|
+pg| ***** 115 ***** |
+
+
+sj|c|
+mb|p|mb|3C|an|Relay Beta  (WEAK scale)|
+pg| ***** 116 ***** |
+
+
+sj|c|
+mb|p|mb|3S|an|2 controls|
+pg| ***** 117 ***** |
+
+
+sj|c|
+mb|p|mb|3N|
+pg| ***** 118 ***** |
+
+
+at|   wd,  the choice was between  5@D  and the "common sense"  3N    which here is ironclad.
+
+South shows 5+ Spades and you will be unlucky to find South with nothing in Clubs.  You have 8 tricks on top if 
+
+South has the K@D so worth the risk.      3NT normally always has better odds than 5@D, anyway.|
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 119 ***** |
+
+
+pf|Y|
+md|0SKQT42H2DK75CJ982,SAJ985HQ865DT8CT5,S3HAKJ3DAQJ942CK3,|
+mb|p|
+pc|ct|
+pg| ***** 120 ***** |
+
+
+Goodbyes--------------------------------------------------------------------
+bt||
+qx|end,thin|
+bt||
+nt|^b@2^z@3|
+at|^^^^|
+cp|red|at|^*bOliver:^*n|cp||at|  Okay, we're definitely going to leave it there for tonight.
+
+I expect that those of you new to Asking Bids have got headaches already.  
+
+Please don't despair.
+
+There is a huge amount to be absorbed on this topic, which is why I've deliberately only covered 1 actual Asking Bid today.
+
+Please do check out the notes on the website. The PrecisionTeaching.doc files that can be downloaded.  They are the full description of what I teach in IAC.    
+
+These notes cover the Asking Bids in considerably more detail than
+I've been able to do today.
+
+
+Next week we'll be having a look at Gamma. The notes on the website cover these, so please try to have a look at them  before next week.
+
+Redbird44:  Ty OC @H
+
+RogerPfi: Thanks Oliver
+
+kritter2:  tyvm Oliver;))
+
+
+|cp|red|at|^*bOliver:^*n|cp||at|  night all, bye for now
+
+isabable: tys
+
+  

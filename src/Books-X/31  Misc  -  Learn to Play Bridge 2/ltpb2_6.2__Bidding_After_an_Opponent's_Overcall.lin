@@ -1,0 +1,974 @@
+%% 
+%% This is an extract from the free Windows prog - 'Learn to Play Bridge Bridge2'
+%%     available from     https://web.acbl.org/LearnToPlayBridge
+%%
+%% Original filename      ltpb2_6.2__Bidding_After_an_Opponent's_Overcall.lin
+%%     file last changed  2016-Dec-07    bversion 0.18
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%                                    Font  'blank'  is size 30   
+%%                                    (sizes 30 to 35 shrink to 30  for legacy compatibility)
+fh|136|ff|1Arial|fb|10|fm|1|      Font 1   36  shrinks to size 32    
+fh|238|ff|2Arial|fb|20|fm|2|      Font 2   37  shrinks to size 34
+fh|339|ff|3Arial|fb|30|fm|3|      Font 3
+fh|440|ff|4Arial|fb|40|fm|4|      Font 4
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|60|fm|6|      Font 6
+fh|770|ff|7Arial|fb|70|fm|7|      Font 7
+fh|880|ff|8Arial|fb|80|fm|8|      Font 8
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1248|cg|1231|cb|1189|   Beige Cream
+cr|2185|cg|2201|cb|2195|   Beige grey green
+cr|3198|cg|3205|cb|3229|   grey medium
+cr|4160|cg|4174|cb|4228|   blue grey
+cr|5198|cg|5205|cb|5229|   light grey
+cr|6122|cg|6000|cb|6049|   dark maroon
+cr|9255|cg|9255|cb|9255|   'white'
+
+
+bt||nt|^b@2^z@3|
+
+
+%%   Top bar header box and Text
+ht|b|cp|9|cs|6|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|n#|k|fp|6|at|^-Learn to Play Bridge2          ^*bChapter 6   Section 2^*n^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|1|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|f|fp|9|at|^^^^^^^^^^^^^^^^|fp|7|at|^-^*bBidding After an Opponent's Overcall^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+at|This Bridge Movie (.lin file) is an unaltered extract from  ^*bLearn to Play Bridge2^*n  a Windows program.  The original program can be downloaded from the ACBL at @-
+
+^d^*h https://web.acbl.org/LearnToPlayBridge ^*n
+    
+The ACBL requires an email address from you and will send you the download instructions  ^*bOR^*n  you can download it directly from ^*hhttp://www.bridgebase.com/index.php^*nhere^*x. (See the links, center left, on that web page.)
+
+^*bLearn to Play Bridge^*n comes as two programs.  Program 1 is for beginners, including an introduction to card play and Standard American bidding.  Program 2 (the source of this tutorial) covers material for the 'intermediate' player.
+
+An ^*bAcol^*n version of Program 1 can be downloaded from the ^*bEBU^*n ^*hhttp://www.ebu.co.uk/education/ltpb^*nhere^*x.
+ 
+
+A different set of extracts from  ^*bLearn to Play Bridge2^*n  are available for on-line play (in your browser) at @-
+
+^d^*h http://www.bridgesights.com/hondobridge/##fglb ^*n
+
+
+Our thanks goes to the ^*bACBL^*n for providing these two exceptional Bridge programs for free.
+|
+pg||
+
+
+
+qx||
+
+
+nt|^b@2^z@3|cs|5|cp|6|fp|4|
+at|
+^-{ Bidding after an opponent's overcall }
+^-|fp||cp||at|
+In the beginning there was the penalty double.
+
+|pg||
+cs|1|at|^-{ |ia| 1c!d|at| }
+^-
+In the earliest days of bridge, East's double in the above auction was for penalties. The purpose of all penalty doubles is to suggest to your partner that you think that the opponents will not succeed in the contract that they have bid. By doubling them, you will increase the number of bonus points that your partnership will earn for defeating the opponents' contract.
+
+|pg||
+at|In order to make a penalty double of an opponent's 1-level opening bid, you would have to be dealt a strong hand with a very long and strong holding in the opponent's proposed trump suit (clubs in this case). It did not take the first generation of bridge players very long to realize that it is quite rare to be dealt that sort of a hand after one of the opponents has opened the bidding with 1 of a suit.
+|pg||
+va|5|cs|3|at|^A   {|ih|psaj63hkt32dkq74c9|at|}   @2
+|ht|u|va|7|at|Being dealt a hand like this one after an opponent's 1@C opening is not rare at all. If the double of 1@C is for penalty a player holding this promising hand (which lacks a 5-card suit that an overcall demands) has no way to enter the auction. The takeout double was created to solve problems like this one.|pg||tb||
+
+nt|^b@2^z@3|ht|b|cs|3|at|^D   {|ih|psaj63hkt32dkq74c9|at|}  |ht|c|cs|1|at|^N{ |ia| 1c!d|at|}
+
+
+|va|5|at|You may not realize this, but the takeout double is actually a convention. The natural meaning of all doubles in bridge is that you think the opponents are not going to make the contract that they bid. A takeout double has an artificial meaning - it asks the partner of the doubler to bid his longest and strongest of the unbid suits. 
+
+Takeout doubles are such an integral part of competitive bidding that you may not think of these doubles as a convention, but that is exactly what they are (in fact, the takeout double may be the oldest convention in bridge).
+
+|pg||
+at|Sometime around 1957, 2 of the greatest bridge players and theorists of all time, Alvin Roth and Tobias Stone, took a long hard look at the use of the double in auctions like this one:
+
+|cs|1|at|^B{ |ia| 1c1s!d|at| }   @2|pg||ht|u|at|South's double in this auction had been defined as penalty for the first 30 years of contract bridge, but Roth and Stone had there doubts about this.
+@0
+|ht|x|va|7|at|They thought it was better to assign an artificial meaning to doubles in auctions like the one above. The convention they invented (which they called the negative double) has gone on to become one of the most popular and effective conventions ever devised.
+
+|pg||
+
+nt|^b@2^z@3|cs|1|at|
+^-{ |ia| 1c1s!d|at| } 
+^-
+|at|The negative double is an integral part of the SAYC bidding system. Here are the basics of how this convention works:
+
+|pg||
+cs|2|at|^-{ If your partner opens the bidding with 1 of a suit and the next player overcalls in 
+ another suit through the 2@S level, a double by the responder is a negative double. }
+^-
+|pg||
+at|Note that there is an ^*Iupper limit^*N to how high the bidding can be for the responder's double of an overcall to be defined as negative. In SAYC that limit is 2@S. A partnership using SAYC would say "we use negative doubles ^*Ithrough^*N 2@S^*N" to describe their agreements in this area.
+
+|pg||
+cs|1|at|^B{ |ia| 1c2s!d|at| }    @2
+
+|
+ht|p|va|4|at|For example, South's double of East's 2@S jump overcall would be another example of a negative double in SAYC.
+@0
+|pg||
+cs|1|at|^B{ |ia| 1c3d!d|at| }    @2
+
+|
+ht|t|va|4|at|However, if East's jump overcall was above the level of 2@S (3@D for example), South's double would be for penalty (that is, not negative) in SAYC.
+@0
+|pg||
+at|There is nothing really sacred about playing negative doubles through 2@S and some partnerships prefer to use negative doubles through higher levels of bidding (3@S or 4@D for example). In SAYC, however, a double of an overcall above the level of 2@S is for penalties.
+
+|pg||
+
+nt|^b@2^z@3|cs|1|at|
+^-{ |ia| 1c1s!d|at| } 
+^-
+So what kind of a hand does the responder describe when he makes a negative double?
+
+|pg||cs|3|at|^-{ A negative double promises at least 4 cards in all unbid major suits. }
+^-
+|pg||
+cs|2|at|^-{ A negative double of a 1-level overcall promises at least 6 total points. }
+^-
+|pg||
+cs|4|at|^-{ A negative double of a 2-level overcall promises at least 8 total points. }
+^-
+|pg||
+at|Why is it that more strength is required for making a negative double when the opponent's overcall (or jump overcall) is at the 2-level? The answer should be clear if we consider the basic purpose of using negative doubles:
+
+|pg||
+cs|1|at|^-{ Negative doubles are similar to takeout doubles in many ways. The opener should
+ make some kind of rebid after a negative double - he should almost never pass. }
+^-
+|pg||
+at|Since the negative double of a 2-level overcall asks the opener to rebid at the 2-level at minimum (where 8 tricks are required), it makes sense that such a negative double should be a little stronger than one where the opener can rebid at the 1-level (where only 7 tricks are required). That is why a 2-level negative double promises at least 8 total points while 6 total points are sufficient for a negative double of a 1-level overcall.
+
+|pg||
+
+nt|^b@2^z@3|va|5|at|Here is a hand that is perfect for a negative double in the auction that we have been considering:
+
+|ht|c|cs|3|at|^D   {|ih|ps97haj65dq872ct54|at|}  |ht|d|cs|1|at|^N{ |ia| 1c1s!d|at|}
+
+|pg||
+hc|hajdq|at|
+|va|5|at|This hand has 7 HCP (enough for a negative double of a 1-level overcall) |pg||lc|hajdq|hs|sh|at|and 4 cards in the only unbid major suit (hearts). Therefore, this hand has all of the requirements for a negative double of East's 1@S overcall.
+
+|pg||
+hs|ss|ls|Sh|at|This hand also illustrates one of the main reasons why negative doubles are such a good convention. If North-South were not using negative doubles, South would be forced to pass with this hand. This hand does not have the spade stopper that 1NT would promise. |pg||ls|ss|Hs|Sc|at|It does not have enough clubs to raise the opener's minor suit |pg||ls|sc|hc|hajdq|at|and it does not contain enough strength to introduce a new suit at the 2-level.
+
+|pg||
+at|At the same time, South should ^*Iwant^*N to bid ^*isomething^*N when he has a hand like this one. 7 HCP may not seem like much, but opposite a 1-level opening bid, South has every reason to believe that his partnership has at least half of the high cards in the deck. To pass East's 1@S overcall would amount to giving up the battle of the competitive auction without putting up a fight!
+
+|pg||
+lc|hajdq|cs|2|at|^-{ Overcalls make it more difficult for the partnership that opened the bidding to find their 
+ best contract, but negative doubles help to level the playing field for the side that opened! }
+|pg||
+
+nt|^b@2^z@3|va|5|at|This hand is an example of a minimum negative double of a 2-level overcall:
+
+|ht|c|cs|3|at|^D   {|ih|pskj87hqt842dj6ct3|at|}  |ht|d|cs|1|at|^N{ |ia| 1d2c!d|at|}
+
+
+|pg||
+va|5|hc|skjhqdj|at|This hand has only 7HCP, |pg||lc|hqskjdj|hs|Sh|at|but the 5-card heart suit is worth 1 long suit point. |pg||hs|ss|at|With 8 total points, this hand is just strong enough to make a negative double at the 2-level. There are 2 unbid major suits in this case and South has the necessary length in both of these suits (at least 4 cards) that a negative double promises to deliver.
+
+|pg||
+at|With this hand South hopes that his partner will be able to rebid in one of the major suits. Given his good support for both majors and that North-South rate to have close to 20 HCP between them even if North has a minimum opening bid, there is every reason to believe that the partnership will do just fine if North rebids either 2@H or 2@S.
+
+|pg||
+ls|sssh|hs|sd|at|If North has a long diamond suit (and no 4-card major), he will probably rebid 2@D (or jump to 3@D if his hand is strong). While South's @DJ6 is nothing to write home about, it should represent adequate trump support if North's diamonds are long enough to rebid. |pg||ls|sd|hc|skjhqdj|at|Finally, if North rebids 2NT (suggesting a balanced hand with a club stopper and no 4-card major), South has enough in the way of high cards that 2NT will at least have a fighting chance.
+
+|pg||
+lc|skjhqdj|cs|2|at|^-{ A negative double suggests the ability to handle any rebid that the opener makes. }
+|pg||
+
+nt|^b@2^z@3|va|5|at|This hand appears to be suitable for a negative double, but appearances can be deceiving!
+
+|ht|c|cs|3|at|^D   {|ih|ps8hajt74dkj76ck53|at|}  |ht|d|cs|1|at|^N{ |ia| 1s2d?|at|}
+
+
+|pg||
+va|5|hc|hajckdkj|at|With 12 HCP |pg||lc|hajckdkj|hs|sh|at|and 1 long suit point for the 5-card heart suit, this hand is easily strong enough for a negative double of East's 2-level overcall. Furthermore, this hand has more than enough cards in the only unbid major suit (hearts) for a negative double. It turns out that it would be a mistake for South to make a negative double with this hand. The reason is that he can make a bid that will provide his partner with a better description of his hand.
+
+|pg||
+at|South should bid 2@H - just like he would have done if East had passed. In the SAYC bidding system, when the responder introduces a new major suit at the 2-level (or higher) in a competitive auction he promises at least 11 total points at and least 5 cards in the major suit that he bid. If this option is available, it should be used in preference to the negative double.
+
+|ht|d|cs|1|at|^N{ |ia| 1s2d!2h|at|}
+
+|pg||
+cs|2|ht|u|va|5|at|^-{ After an overcall, a new suit bid at the 2-level (or higher) shows at least 11 total points. 
+ If the new suit is a major the responder must have at least a 5-card suit to take this action. }
+^-
+|pg||
+cs|4|at|^-{ If the responder's hand is appropriate for bidding a new major suit at the 
+ 2-level (or higher) he should do so in preference to using a negative double. }
+^-
+|pg||ls|sh|
+
+nt|^b@2^z@3|va|5|at|Here is another example where the responder has a strong hand:
+
+|ht|c|cs|3|at|^D   {|ih|pskqj9h873daq98c42|at|}  |ht|d|cs|1|at|^N{ |ia| 1h2c?|at|}
+
+
+|pg||
+va|5|hc|skqjdaq|at|This hand has 12 total points (all in the form of HCP). |pg||hs|ss|lc|sqkjdaq|at|Although the South hand is strong enough to bid a new suit at the 2-level and although South has a very strong 4-card major suit, he would be promising at least 5 spades if he bid 2@S here.
+
+|pg||
+ls|ss|hs|sd|at|It is permissible to introduce a new minor suit at the 2-level on a 4-card suit, |pg||ls|sd|hs|ss|at|but here the responder should prefer to make a negative double rather than bidding 2@D. As you have seen, there are a lot of areas in bidding where the major suits take priority over the minors. This auction falls into that category. Exploring for a possible 8-card major suit fit is one of the most important aspects of many situations in the bidding.
+|ht|d|cs|1|at|^N{ |ia| 1h2c!d|at|}
+|pg||
+ls|ss|hs|sd|ht|t|cs|2|at|^-{ Bidding a new minor suit at the 2-level (or higher) is permissible with a 4-card
+ suit as long as the responder's hand contains at least 11 total points. }
+^-
+|pg||
+cs|4|at|^-{ When the responder has 4-4 in the unbid suits and those suits are a minor and a 
+ major, he should make a negative double in preference to bidding his minor suit. }
+|pg||ls|sd|
+
+nt|^b@2^z@3|va|5|at|Sometimes a little card can make a big difference:
+
+|ht|c|cs|3|at|^D   {|ih|pskqj9h873daq982c4|at|}  |ht|d|cs|1|at|^N{ |ia| 1h2c?|at|}
+
+
+|pg||
+hc|d2|va|5|at|The hand is identical to the last hand that was presented except South now has the @D2 instead of the @C2. |pg||lc|d2|hs|sd|at|Now that South has a 5-card diamond suit, his hand is worth 13 total points. He should plan to force to game once his partner opens the bidding.
+
+|pg||
+at|Here South should bid 2@D instead of making a negative double. It is not the extra point that makes the difference - it is the fact that South has a 5-card diamond suit. 
+
+|ht|d|cs|1|at|^N{ |ia| 1h2c!2d|at|}
+|pg||ht|p|va|5|ls|sd|Hs|ss|at|South should plan to rebid spades at his next opportunity. |pg||hs|sd|at|By bidding 2@D now and then rebidding in spades he will be describing a hand with at least 5 diamonds, at least 4 spades, and enough strength to force to game. That's a pretty good description of the South hand!
+
+|pg||
+cs|2|At|^-{ When responder has at least 5-4 in the unbid suits, he has to use his judgment 
+ to decide between making a negative double or bidding a 5-card (or longer) suit. }
+^-
+|pg||
+cs|4|at|^-{ In general, the responder should prefer to use a negative double with 5-4 in the unbid 
+ suits unless his hand is strong enough to force to game by bidding both of his suits. }
+^-
+|pg||
+ls|sssd|
+
+nt|^b@2^z@3
+|cs|1|ht|b|at|^B{ |ia| 1c1d?|at| }    @2
+|ht|b|at|Here are some examples of the same principles at work in a slightly different auction.
+@0
+|va|8|cs|3|at|^B {|ih|psat87hqj96da54cq2|at|}    @2
+|pg||
+hc|sahqjcqda|ht|f|va|3|at|This hand has 13 HCP - enough to force to game opposite a 1@C opening bid. |pg||lc|sahqjcqda|hs|sssh|at|However, with only 4-4 in the unbid suits it is best to start with a negative double. If South were to bid both hearts and spades, he would be suggesting at least 5 cards in whichever of the suits he bid first. 
+@0
+|cs|1|ht|b|at|^B{ |ia| 1c1d!d|at| } 
+
+|pg||
+cs|1|ht|b|at|^B{ |ia| 1c1d?|at| }
+|ls|sssh|
+ht|m|va|3|cs|3|at|^B {|ih|pskq953hat87d7ck52|at|}    @2
+
+|pg||
+ht|m|va|6|hc|skqckha|at|With 12 HCP |pg||lc|skqckha|hc|skq953|at|and 1 long suit point for the 5-card spade suit, this hand has 13 total points and South should plan to force to game. |pg||hc|hat87|at|He should start by bidding his 5-card spade suit and plan to rebid in his 4-card heart suit. North will then have a good picture of South's strength and his major suit distribution. 
+@0
+|cs|1|ht|b|at|^B{ |ia| 1c1d!1s|at| }
+|pg||
+
+lc|skq953hat87|
+cs|1|ht|b|at|^B{ |ia| 1c1d?|at| }
+|ht|t|va|6|cs|3|at|^B {|ih|psj642hk5432dk7ct4|at|}    @2
+
+|pg||
+ht|t|va|9|hc|sjdkhk|at|This hand has 7 HCP |pg||lc|sjhkdk|hc|hk5432|at|and 1 long suit point for the 5-card heart suit, bringing South up to 8 total points. |pg||hc|sj642|at|That's not enough to allow South to bid 1@H now and spades at his next opportunity as such a sequence would be forcing to game. |pg||
+at|It is best to start with a negative double on this hand. |
+cs|1|ht|b|at|^B{ |ia| 1c1d!d|at| }
+|pg||hs|ss|lc|sj642hk5432|
+
+nt|^b@2^z@3
+What if the bidding is the same, but the South hand has only one 4-card (or longer) major suit?
+
+|ht|d|cs|3|at|^D   {|ih|psj965ha64dt32ck65|at|}  |ht|e|cs|1|at|^N{ |ia| 1c1d?|at|}
+
+
+|pg||
+va|5|ls|ss|hs|sh|at|It would be wrong to make a negative double here because this hand has only 3 cards in hearts. North would expect at least 4-4 in the majors for a negative double in this auction.
+
+|pg||
+ls|sh|hs|ss|At|While the bid of a new major suit at the 2-level has some serious restrictions (at least 5 cards in the suit and at least 11 total points), ^*bbidding a new major suit at the 1-level is permissible on a much wider range of hands. It is perfectly acceptable to bid 1@S here. That bid suggests no more than the same 4-card spade suit and 6 total points that a 1@S response would have promised if East had passed.
+
+|ht|e|cs|1|at|^N{ |ia| 1c1d!1s|at|}
+
+|pg||
+ht|t|cs|2|at|^-{ For the responder to bid a new major suit at the 1-level after an opponent's
+  overcall, all he needs is at least 4 cards in the suit and at least 6 total points. }
+^-
+|pg||
+cs|4|at|^-{ Regardless of whether an overcall or a takeout double is made, the bid of a new suit at 
+ the 1-level by the responder has the same requirements as it would have over a pass. }
+^-
+|pg||
+at|The only exception to this principle will be presented on the next page.|pg||
+
+nt|^b@2^z@3
+Things are a little different when the opening bid is 1@C or 1@D and the next hand overcalls 1@H:
+
+|pg||ht|d|cs|3|at|^D   {|ih|psj965ha64dt32ck65|at|}  |ht|e|cs|1|at|^N{ |ia| 1c1h?|at|}
+
+
+|pg||
+va|5|at|This hand is exactly the same as the hand we just saw. The opening bid is the same as it was last time too (1@C), but here the overcall is 1@H instead of 1@D. In the previous example, a 1@S response was recommended despite the fact that South had only 4 cards in spades. This was due to the definition of negative doubles. Since a negative double promises at least 4 cards in all the unbid major suits, the responder needs to have a way to bid when he has only one 4-card major.
+
+|pg||
+at|This auction is different because there is only one unbid major suit. If South could bid 1@S in this auction with a 4-card spade suit, there would be no point in using negative doubles! 
+
+|pg||
+at|In the SAYC bidding system, the dilemma is resolved by making a negative double with hands that contain exactly 4 cards in spades. A 1@S response would promise at least 5 spades. In both cases, the responder suggests no more than 6 total points for these actions.
+
+|pg||
+cs|2|at|^-{ After a 1@C or 1@D opening and a 1@H overcall, a negative double shows exactly 4 spades
+ and a 1@S response promises at least 5 spades. Both actions suggest 6 or more total points. }
+^-
+|pg||ls|ss|
+
+nt|^b@2^z@3|Va|5|at|There are 2 possible negative double auctions in which there are no unbid major suits:
+
+|cs|1|at|^C{ |ia| 1h1s!d|at| } ^O{ |ia| 1s2h!d|at| }
+^-
+|pg||
+cs|2|at|{ When there are no unbid major suits, a negative double suggests at least 4 cards in both 
+ minor suits. The strength promised is the same as it would be for other negative doubles. }
+^-
+|pg||
+at|In other words, South's double in the first auction promises at least 6 total points and his double in the second auction promises at least 8 total points. 
+
+As with other negative doubles that we have seen, the responder must use his judgment when he has 5-4 in the unbid suits and enough strength to bid one of his suits at the 2-level (or higher). Sometimes a negative double will work out best with such hands, but sometimes the responder should prefer to try to describe his hand by bidding both of his suits.
+
+|pg||
+at|One issue that we have not explored is the action that the responder should take when he has a hand that would have made a penalty double of an opponent's overcall. For example:
+
+|pg||hs|sh|ht|u|va|5|cs|3|at|^D   {|ih|psj9jhaqj984dk96ct3|at|}  |ht|v|va|8|cs|1|at|^N{ |ia| 1c1h?|at|}
+
+
+|pg||
+
+nt|^b@2^z@3|
+ht|b|cs|3|at|^D   {|ih|psj9jhaqj984dk96ct3|at|}  |ht|c|cs|1|at|^N{ |ia| 1c1h?|at|}
+
+
+|va|5|at|The South hand rates to win about 5 trump tricks on defense against a heart contract. |pg||ls|sh|hc|dk|at|Furthermore, it would not be at all surprising if the @DK won a trick and North's opening bid makes it very likely that he will be able to win a few tricks of his own. |pg||lc|dk|hs|sh|at|Therefore, it is extremely unlikely that East could win the 7 tricks that he would need to succeed in a 1@H contract. 
+
+|pg||
+at|If North-South were using penalty doubles in this situation, South would double 1@H in the hope of collecting a reasonable penalty. However, in the SAYC bidding system, a double of 1@H in this auction would be a negative double |pg||ls|sh|hs|ss|at|used to show exactly 4 cards in spades. This hand has only 2 spades and there is no way that South will be able to achieve what he wants |pg||ls|ss|hs|Sh|at|(to defend against 1@H doubled) if he makes a negative double with this hand.
+
+|pg||
+at|Do you have any idea how South might be able to arrange to defend against 1@H doubled? As a hint, consider the similar situation where the player on your right opens the bidding and you want to make a penalty double (which you cannot make since a double would be for takeout).
+
+|pg||
+cs|2|at|^-{ When you want to make a penalty double of an opponent's overcall you should pass!
+ You might still be able to defend against the doubled contract that you were hoping for. }
+^-
+|ht|c|cs|1|at|^N{ |ia| 1c1h!p|at|}
+
+|pg||
+
+nt|^b@2^z@3|va|5|at|It may not be immediately obvious to you how South can arrange to defend against 1@H doubled with his hand by passing after East's overcall.
+
+|ht|d|cs|3|at|^D   {|ih|psj9jhaqj984dk96ct3|at|}  |ht|e|cs|1|at|^N{ |ia| 1c1h!P|at|}
+
+
+|va|5|pg||at|In fact, the only way that the bidding could continue such that 1@H doubled could become the final contract is in the way that you now see above. Given your heart holding it doesn't seem very realistic that your partner is going to double 1@H for you does it?
+
+|ht|d|cs|1|at|^N{ |ia| 1c1hpp!dppp|at|}
+|ht|n|va|5|at|Actually, it is not unlikely at all, but don't worry if you are confused by this right now. It will all be clear soon. The reason that there is a good chance that your partner will double if East's 1@H overcall is passed around to him is this:
+
+|pg||
+cs|2|At|^-{ When a partnership is using negative doubles and an opponent's overcall is passed 
+ around to the opener, he should reopen with a double if he is short in the opponent's suit. }
+^-|pg||
+ls|sh|hc|haqj984|va|7|cs|3|at|^B{|ih|pskt84h3da75caj872|at|}    @2
+|hc|skcajda|ht|u|va|8|at|For example, if the opener held this hand and the bidding started as above, he should double at his second turn even though he has only 12 HCP (that is, no extra values for his opening bid). |pg||lc|skcajda|hc|h3|at|It is the opener's singleton heart, not his point count, that makes double the correct reopening action here.|
+pg||lc|haqj9843|hs|sh|
+
+nt|^b@2^z@3|va|5|at|North's double in the auction that we have been considering is similar in nature to a takeout double. North would usually have no more than 2 hearts and good support for all of the other suits to double for takeout in this position.
+
+|ht|e|cs|3|at|^D   {|ih|ph3skt84caj872da75|at|}  |ht|f|cs|1|at|^N{ |ia| 1c1hpp!d|at|}
+
+|pg||ls|sh|va|5|cs|2|at|^-{ Bridge players use the terms reopening and balancing to describe a bid 
+ or a double that is made after the 2 previous players have both passed. }
+^-
+|pg||
+at|Here we might say that North reopened with double, balanced with double, or that North made a reopening double or a balancing double to describe North's actions in the auction shown above. Here North's double is considered a reopening or balancing action because both South and West passed - if North had passed also then the bidding would have ended.
+
+|pg||
+at|When negative doubles are not being used, North's reopening double in the auction above would be for takeout, but such a double would promise significant extra high card values. That is not the case when negative doubles are being used.
+
+|pg||
+cs|4|at|^-{ The opener should reopen with double whenever he is short in the suit of the overcall 
+ just in case the responder was dealt a hand that was suitable for a penalty double. }
+|pg||
+
+nt|^b@2^z@3|ht|b|cs|3|at|^C   {|ih|ph3skt84caj872da75|at|}  |ht|b|cs|1|at|^N{ |ia| 1c1hpp!dppp|at|}
+
+|cs|3|at|^C   {|ih|psj9jhaqj984dk96ct3|at|}       @2
+|ht|i|va|5|at|To be sure, this is a roundabout way to double East's 1@H overcall for penalties when the North-South hands are similar to what you see above. Penalizing the opponents for an unwise overcall is much easier when negative doubles are not being used.
+@0
+|pg||
+at|As you have heard before, every convention replaces a natural bid with an artificial bid. In the case of negative doubles, the natural penalty double of an opponent's overcall is no longer available - the partnership gets the artificial negative double in return.
+
+|pg||
+hc|haqj984|at|It is true that on the rare occasions when the responder is dealt a penalty double of an opponent's overcall, negative doubles make it more difficult for him to defend against the contract of his dreams. That is the only real disadvantage to using negative doubles.
+
+|pg||
+at|On the positive side, sometimes it is possible to penalize an overcall via a reopening double. More important, the negative double makes competitive bidding after an opponent's overcall much more accurate. Deals where the negative double is helpful are very common.
+
+|pg||
+lc|haqj984|
+
+nt|^b@2^z@3
+|cs|1|At|^-{ |ia| 1c1hpp?|at| }
+^-
+The subject of opener's possible actions in the reopening position is a difficult one. Entire books have been written on this subject and it would not be practical to go into a lot of detail about this topic in this program. Here are a few principles that you can use that will usually allow you to make the right decision when you are the opening bidder and an opponent's overcall is passed around to you:
+
+|pg||
+cs|3|at|^-{ If you have less than 3 cards in the suit of the overcall it is usually best to reopen
+  with a double, especially if you have at least 3-card support for all of the unbid suits. }
+^-
+|pg||
+cs|2|at|^-{ If you have a 2-suiter with at least 5-5 in your suits or if you have at least 6 cards in 
+ the suit that you opened, it is usually best to reopen with your natural rebid. }
+^-
+|pg||
+cs|4|at|^-{ If you have a minimum balanced hand with 3 or more 
+ cards in the suit of the overcall, it is usually best to pass. }
+^-
+|pg||
+cs|1|at|^-{ If you have 18-19 HCP and a balanced hand with 3 or more cards in the suit of 
+ the overcall, it is usually best to rebid 1NT. 1NT shows 18-19 HCP in this auction. }
+|pg||
+
+
+nt|^b@2^z@3|va|5|at|The next issue to explore is how the opener chooses his rebid after an overcall by the opponent and a negative double by his partner:
+
+|ht|e|cs|1|at|^-{ |ia| 1c1hdp?|at| }
+^-
+|pg||
+at|Fortunately, this is not a very difficult subject. In many cases the opener should make the same rebid that he was going to make if there had been no overcall. Here are some examples:
+
+|cs|3|at|^B{|ih|psK9hQ5D982caqj973|at|}    @2
+
+|pg||
+hc|caqj973|ht|n|at|This is a minimum opening bid with 6 clubs and neither East's 1@H overcall or South's negative double has changed that. Rebid 2@C, just like you would have done if East had passed and South had responded with a bid at the 1-level. If this hand had another Ace, then 3@C would be the correct rebid.
+@0
+|ht|e|cs|1|at|^-{ |ia| 1c1hdp!2c|at| }
+^-
+|pg||
+ht|e|cs|1|at|^-{ |ia| 1c1hdp?|at| }
+^-
+|ht|u|cs|3|at|^B{|ih|pst6haj82daj7ckt84|at|}    @2
+
+|pg||
+ht|u|va|5|hc|haj|at|Rebid 1NT, the same rebid that you would have made if East had passed and South responded 1@S. You have a balanced minimum opening bid with at least 1 heart stopper. If you had a similar hand with 18-19 HCP, it would be correct to make your normal rebid of 2NT.
+@0
+|ht|e|cs|1|at|^-{ |ia| 1c1hdp!1n|at| }
+^-|pg||lc|caqj973haj|
+
+
+nt|^b@2^z@3|va|5|at|Sometimes a negative double does have an impact on the opener's choice of rebids:
+
+|ht|c|cs|3|at|^C{|ih|psaq87hj6dk94cat92|at|}|cs|1|ht|d|at|^N{ |ia| 1c1hdp?|at| }
+
+|pg||
+hc|saq87|at|If East had passed and South had responded 1@S, then North would have raised to 2@S. However, in the above auction, 2@S would be a jump and there is no reason for North to jump with his minimum hand. North should rebid 1@S to tell his partner that he has a minimum opening bid with 4 cards in spades.|
+ht|d|at|^N{ |ia| 1c1hdp!1s|at| }
+|pg||lc|saq87|ht|n|cs|3|at|^C{|ih|pskjt4h9da85ckqj43|at|}|cs|1|ht|o|at|^N{ |ia| 1c1hdp?|at| }
+
+|
+hc|skjckqjda|at|This hand has 14 HCP, the same number as the first hand on this page, |pg||lc|skjckqjda|hc|h9|at|but the singleton heart should be counted for 3 short suit points. Short suit points should be used here because North is planning on rebidding in spades - a suit in which his partner has promised 4 cards. 
+
+|pg||
+lc|h9|hc|skjt4|at|With 17 total points this is a medium strength hand. North would have jump raised a 1@S response to 3@S. It is still correct for North to jump in spades, but in this competitive auction, a jump in spades is to the 2-level. North's proper rebid here is 2@S.
+
+|ht|o|at|^N{ |ia| 1c1hdp!2s|at| }
+
+|pg||
+lc|skjt4aq87|
+
+
+nt|^b@2^z@3|va|5|At|As you know, there are (rare) hands in which a player should pass when his partner makes a takeout double. Should the opening bidder ever pass when the opponents overcall and the responder makes a negative double?
+
+|cs|1|at|^-{ |ia| 1d2cdp!p|at|}
+^-
+|pg||
+at|There are occasions when the opener should pass a negative double, but they are also quite rare. As in the case of passing a takeout double, a player must be long and strong in the opponents' suit to pass a negative double. Here is an example hand with which the opener should pass in the auction shown above:
+
+|pg||cs|3|at|^B{|ih|ps9hk3dkq876cajt94|at|}    @2
+
+|hs|sc|ht|p|va|5|at|If East had passed and South had responded with 1 of a major, North would have rebid 2@C with this hand. Once East overcalls 2@C, North should give up any thoughts he might have had about being the declarer in a club contract. East's 2@C bid suggests that he has most of the remaining clubs in the deck so North should know that he does not want to play this hand in clubs.
+@0
+|pg||
+ht|w|va|3|at|While North should not want to declare a club contract, defending against 2@C doubled is attractive. This hand rates to win several trump tricks against a club contract. |pg||ls|sc|hc|dkqhk|at|North's other high cards and the high cards that his partner promises for his negative double will also win some tricks for the defense. |pg||lc|dkqhk|hs|sc|at|North should pass and expect to collect a reasonable penalty. |pg||
+
+ls|sc|
+
+nt|^b@2^z@3|Va|5|at|As we just saw, there is no point in the opener trying to be the declarer in a contract where the suit that one of the opponents overcalled is trump. If the opener is very long and strong in the overcaller's suit, he should prefer to defend when his partner makes a negative double. That raises the question of what it would mean if the opener were to rebid in the overcaller's suit:
+
+|cs|1|at|^-{ |ia| 1d2cdp!3c|at| }
+^-
+|pg||
+at|North's 3@C rebid here is known as a cuebid - a term that you have seen before in other bidding situations. As a general rule, the bid of a suit that was previously bid by the opponents is called a cuebid. The same term is used to describe the bid of a side suit containing the Ace once a trump suit has been agreed and the partnership is exploring for a possible slam contract.
+
+So what type of hand would North's 3@C cuebid describe in the auction shown above?
+
+|pg||
+cs|2|at|^-{ A cuebid by the opener after a negative double describes a hand that is strong 
+ enough to force to game, but suggests doubt about the best game contract. }
+^-
+|pg||
+at|In other words, when the opener cuebids after his partner makes a negative double, he announces that the partnership has enough combined strength to play in game, but that he is uncertain as to which suit (if any) should be trump. The responder should try to help the opener make this decision with his rebid.
+
+|pg||
+
+nt|^b@2^z@3|va|5|at|Here are some examples of hands that are suitable for a cuebid after a negative double:
+
+|ht|c|cs|3|at|^C{|ih|psaq5hat4c65dakj42|at|}|cs|1|ht|d|at|^N{ |ia| 1d2cdp!3c|at| }
+
+|pg||
+hc|saqhadakj|at|This hand has 18 HCP |pg||lc|saqhadkaj|hs|sd|at|and 1 long suit point for the 5-card diamond suit. North has 19 total points and his partner has promised at least 8 total points for his negative double of East's 2-level overcall. The partnership has enough combined strength to play in at least a game contract, but North needs his partner's help in deciding which game contract should be played.
+
+|pg||
+ls|sd|hs|sc|at|If East had passed and South had responded with 1 of a major, North's proper rebid would have been 2NT (describing a balanced hand with 18-19 HCP). Given East's 2@C overcall and North's lack of a stopper in clubs, rebidding in notrump is no longer a good idea. If North had a similar hand that contained a club stopper, he would rebid 3NT here, but it would be dangerous to suggest 3NT as a contract with such a weak holding in clubs.
+
+|pg||
+at|By cuebidding 3@C, North can enlist the opinion of his partner as to the best final contract. If the responder has a club stopper of his own, he might try 3NT himself. |pg||ls|sc|hs|sssh|at|Alternatively, if South has a 5-card major (or perhaps a strong 4-card major), he will bid 3@H or 3@S and North can raise that suit to game. |pg||ls|sssh|hs|sd|at|If South has none of the above then he may well have a fit for diamonds. South will retreat to 3@D in this case and the opener can go on to 5@D. Regardless of the nature of South's hand, there is a good chance that the best contract will be reached after North's 3@C cuebid.|pg||hs|shss|ls|sd|
+
+nt|^b@2^z@3|va|5|at|In this next example, the opener does not know which major suit to play in:
+
+|ht|c|cs|3|at|^C{|ih|psaqj6hkqj5c4da973|at|}|cs|1|ht|d|at|^N{ |ia| 1d2cdp!3c|at| }
+
+|pg||ls|sssh|hc|saqjhkqjda|
+at|This hand has 17 HCP |pg||lc|saqjhkqjda|hs|sc|at|and 3 short suit points should be counted for the singleton club |pg||ls|sc|Hs|sssh|at|(because the opener is planning on playing in one of the suits in which his partner has shown at least 4 cards). North has 20 total points and South promises at least 8 total points for his 2-level negative double. A game contract is certain and a slam might be possible if South has more than a minimum negative double.
+
+|pg||
+at|The problem that North has is that he does not know which major suit will make the best trump suit. He could guess by jumping to either 4@H or 4@S, but by cuebidding 3@C, North is able to bring his partner's judgment into play. 
+
+|pg||
+at|If South has a strong preference between the majors (perhaps because he is 5-4 in those suits), he will bid his longer and stronger major at the 3-level and North can raise that suit to game. If the auction continues in this way, it is likely that the partnership will find the right trump suit. 
+
+If neither of South's major suits are worth mentioning at the 3-level, he will probably bid 3NT or 3@D. North can then bid hearts and let North make the final decision between hearts and spades.
+
+|pg||ls|sssh|
+
+nt|^b@2^z@3|va|5|at|Here is a summary of the principles that we have seen for how the opener chooses a rebid after his partner makes a negative double:
+
+|cs|1|at|^-{ |ia| 1d2cdp?|at| }
+^-
+|pg||
+cs|3|at|^-{ Usually the opener makes a similar rebid to the one he would have made if there 
+had been no overcall and if his partner had responded with a 1-level bid. }
+^-
+|pg||
+at|The opener tends to rebid his own suit if that's what he was always planning on doing, he tends to rebid in notrump if that was his plan, and he tends to jump with his rebid if he would have done so in a purely constructive auction.
+
+|pg||
+cs|2|at|^-{ If the opener has 4-cards in an unbid major suit, he should almost always make his 
+ rebid in that suit (with a jump if he would have jump raised a major suit response). }
+^-
+|pg||
+at|Negative doubles are all about finding a major suit fit. The opener should play his part in this!
+
+|pg||
+cs|4|at|^-{ Pass a negative double only if you have unusual length and strength in the overcaller's suit.}
+^-
+|pg||cs|1|at|^-{ A cuebid by the opener after a negative double describes a hand that is strong 
+ enough to force to game, but suggests doubt about the best game contract. }
+^-
+|pg||
+
+nt|^b@2^z@3|va|8|cs|1|At|^-{ |ia| 1c1h?|at| }
+^-|va|8|at|You have seen that most of the responder's possible actions after an overcall mean almost exactly what they would have meant if there had been no overcall. However, there are some ways in which an overcall will have an impact on the responder's choice of actions. Some of these we have seen already:
+
+|pg||cs|4|at|^-{ The overcall gives the responder the ability to make a negative double. }
+^-
+|pg||
+cs|2|at|^-{ The responder should pass if he wants to penalize the opponents. }
+^-
+|pg||cs|3|at|^-{ After a 1@C or 1@D opening and a 1@H overcall, a 1@S response promises 5 or more spades^*N. }
+^-
+|pg||
+at|Here are some strategies which we have not seen before that the responder should keep in mind:
+
+|pg||
+cs|1|at|^-{ After an overcall, the responder should not bid notrump 
+ unless he has a stopper in the suit that was overcalled. }
+^-
+|pg||
+at|The usual result of bidding notrump without a stopper in the opponent's suit is that the opponents will run their suit and defeat your contract!
+
+|pg||
+cs|4|at|^-{ The responder can cuebid the suit that was overcalled to describe a hand that is strong 
+ enough to force to game and that contains strong support for the suit that was opened. }
+^-
+|pg||
+
+nt|^b@2^z@3|va|5|at|Here is an example of the type of hand that the responder should have in order to cuebid the suit that was overcalled by the opponents:
+
+|ht|d|cs|3|at|^C{|ih|psa97h62daj5ckj982|at|}|cs|1|ht|e|at|^N{ |ia| 1c1h!2h|at| }
+
+
+|pg||
+va|5|hc|sackjdaj|at|With 13 HCP |pg||lc|sadajckj|hs|sh|At|and 1 short suit point for the doubleton heart, this hand weighs in at 14 total points. |pg||ls|sh|hs|Sc|at|That's more than sufficient to insist on some game contract opposite partner's 1@C opening bid. Furthermore, this hand contains excellent support for partner's club suit (which is why we counted a short suit point for the doubleton heart).
+|pg||va|8|
+at|If the responder had jumped to 3@C (instead of cuebidding 2@H), he would have described a hand worth a limit raise (just as 3@C would have been a limit raise if East had passed). South might consider jumping to 4@C or 5@C instead, but the strength shown by those bids is not very well-defined and bidding 4@C or 5@C would leave 3NT behind forever.
+|pg||va|8|
+at|The responder's ability to cuebid 2@H makes life a lot easier for the partnership. This bid shows strong club support and enough strength to force to game. If the opener has a heart stopper he will probably bid 2NT next and the responder can raise that to 3NT. If the opener does not have a heart stopper, then the partnership will probably end up in 5@C.
+|pg||va|8|
+at|If South had a similar hand with a 4th card in spades, he should prefer a negative double to a 2@H cuebid. The cuebid of an overcall tends to deny as many as 4 cards in the unbid major.|pg||ls|sc|
+
+nt|^b@2^z@3|va|5|at|There is not much difference when the suit that was opened is a major:
+
+|hs|ss|ht|c|cs|3|at|^C{|ih|pskj95hak63d5ckt72|at|}|cs|1|ht|d|at|^N{ |ia| 1s2d!3d|at| }
+
+
+|pg||
+va|5|ls|Ss|hc|skjhakck|at|With 14 HCP |pg||lc|skjhakck|hs|sd|at|and 3 short suit points for the singleton diamond, |pg||ls|sd|hs|ss|at|this hand is worth 17 total points once partner bids spades. Game is certain and, if North has some extra values for his opening bid, there may be a slam in the cards. 
+
+|pg||at|The problem is that there is no spade bid that accurately describes this hand.  2@S, 3@S, and 4@S would all mean the same thing that they would have meant if East had passed and none of these bids come close to describing the strength of this enormous hand.
+
+|pg||
+ls|ss|hs|Sh|at|The responder could stall for time by making a negative double (showing at least 4 hearts and at least 8 total points), |pg||ls|sh|hs|ss|at|but there is no reason to beat around the bush. The 3@D cuebid describes in one bid exactly what the responder has.
+
+|pg||
+cs|2|at|^-{ After a major suit opening and an overcall by the opponents, the responder should 
+ prefer a cuebid over a negative double when his hand is suitable for either action. }
+^-
+|pg||
+cs|4|at|^-{ After a minor suit opening and an overcall by the opponents, the responder should 
+ prefer a negative double over a cuebid when his hand is suitable for either action. }
+^-
+|pg||
+qx|revex2,Bidding after an opponent's overcall - Review and Exercises|ls|ss|
+
+nt|^b@2^z@3|cs|5|cp|6|tb|y|at|
+^-{ Bidding after an opponent's overcall - Review and Exercises }
+^-
+|cp||at|When we studied the responder's possible actions after an opening bid by his partner and a takeout double by an opponent, we saw that the availability of the redouble altered the meanings of several of the bids that the responder could make. When the opponents interfere with an overcall (instead of a takeout double), the responder is similarly presented with a new call that he would not have had in a purely constructive auction: he can double.
+
+The double of an opponent's overcall of a 1-level opening bid is defined as a negative double in SAYC. The ability to make a negative double and to cuebid the suit that was overcalled both have some repercussions on a few of the responder's other possible actions, but most of the responder's bids after an overcall have exactly the same meaning that they would have had if there had been no overcall.
+
+As a result, it is easier to learn how the responder should bid after an overcall than to learn how he should bid after a takeout double. The most challenging part of bidding after an overcall is learning to master the negative double and how the opening bidder selects his rebid afer a negative double has been made. The first thing to learn about negative doubles is when this convention applies:
+
+|pg||
+cs|1|at|^-{ If your partner opens the bidding with 1 of a suit and the next player overcalls in 
+ another suit through the 2@S level, a double by the responder is a negative double. }
+^-
+|pg||
+cs|4|at|^-{ In SAYC we say that negative doubles are used ^*Ithrough^*N 2@S. } 
+|pg||tb||
+
+
+nt|^b@2^z@3
+The next issue to consider is the type of hand that the responder should have in order to use a negative double after an opponent overcalls his partner's 1-level opening bid. We have come across 3 guidelines that describe the distribution that the responder should have to make a negative double in various auctions:
+
+|pg||cs|2|at|^-{ A negative double promises at least 4 cards in all unbid major suits. }
+^-
+|pg||
+cs|3|at|^-{ When there are no unbid major suits, a negative double suggests at least 4 cards in both 
+ minor suits. The strength promised is the same as it would be for other negative doubles. }
+^-
+|pg||
+cs|1|at|^-{ After a 1@C or 1@D opening and a 1@H overcall, a negative double shows exactly 4 spades
+ and a 1@S response promises at least 5 spades. Both actions suggest 6 or more total points. }
+^-
+|pg||
+at|The minimum strength promised by a negative double depends on the level of the overcall:
+
+|pg||
+cs|4|at|^-{ A negative double of a 1-level overcall promises at least 6 total points. }
+^-
+|pg||
+cs|2|at|^-{ A negative double of a 2-level overcall promises at least 8 total points. }
+^-
+|pg||
+at|When some bridge players are introduced to the negative double, they find this convention to be confusing. Keeping the following principle in mind will make things easier for you:
+
+|pg||
+cs|3|at|^-{ Negative doubles are similar to takeout doubles in many ways. The opener should
+ make some kind of rebid after a negative double - he should almost never pass. }
+^-
+|pg||
+
+
+nt|^b@2^z@3
+Why are negative doubles used (instead of penalty doubles) is SAYC? The reason is the same as it is for adopting any convention. The people who designed SAYC believe that, on balance, there is more to gain than there is to lose by using negative doubles.
+
+|pg||cs|1|at|^-{ Overcalls make it more difficult for the partnership that opened the bidding to find their 
+ best contract, but negative doubles help to level the playing field for the side that opened! }
+^-
+|pg||
+at|When using negative doubles, if the responder has a hand that would have made a penalty double of an opponent's overcall, he cannot double anymore.
+
+|pg||cs|4|at|^-{ When you want to make a penalty double of an opponent's overcall you should pass.
+ You might still be able to defend against the doubled contract that you were hoping for. }
+^-
+|pg||
+cs|2|At|^-{ When a partnership is using negative doubles and an opponent's overcall is passed 
+ around to the opener, he should reopen with a double if he is short in the opponent's suit. }
+^-
+|pg||
+cs|3|at|^-{ Bridge players use the terms reopening and balancing to describe a bid 
+ or a double that is made after the 2 previous players have both passed. }
+^-
+|pg||
+at|If an opponent's overcall is followed by 2 passes and the opening bidder reopens with a double, he is actually making a takeout double. As with any takeout double, the partner of the player who doubled can choose to pass if he is very long and strong in the opponent's suit. If the responder has a hand that would have made a penalty double of an overcall, he should pass and then pass again if his partner reopens with a double.
+
+|pg||
+
+
+nt|^b@2^z@3|va|5|At|Some bridge players mistakenly believe that the opening bidder should always reopen with a double when an opponent's overcall is passed around to him. In fact, the opener has to use his judgment in selecting the best (if any) reopening action. The opener will sometimes face a difficult decision in this type of auction, but here are some guidelines that he can use to help resolve these sorts of problems:
+
+|pg||
+
+cs|1|at|^-{ If you have less than 3 cards in the suit of the overcall it is usually best to reopen
+  with a double, especially if you have at least 3-card support for all of the unbid suits. }
+^-
+|pg||
+
+cs|4|at|^-{ If you have a 2-suiter with at least 5-5 in your suits or if you have at least 6 cards in 
+ the suit that you opened, it is usually best to reopen with your natural rebid. }
+^-
+|pg||
+cs|2|at|^-{ If you have a minimum balanced hand with 3 or more 
+ cards in the suit of the overcall, it is usually best to pass. }
+^-
+|pg||
+
+cs|3|at|^-{ If you have 18-19 HCP and a balanced hand with 3 or more cards in the suit of 
+ the overcall, it is usually best to rebid 1NT. 1NT shows 18-19 HCP in this auction. }
+^-
+|pg||
+at|The first 2 guidelines shown tend to interfere with one another. When the opener has the type of hand mentioned in the second guideline, he has to use his judgment to decide between reopening with a double and reopening with some natural bid. 
+
+In general, the stronger a hand is in terms of high cards, the more likely it is that a reopening double will be the best choice. However, the more distributional a hand is, the more likely it is that the opener will do better to reopen with a natural bid.
+
+|pg||
+
+
+
+nt|^b@2^z@3|Va|5|at|When an opponent overcalls and the responder bids a new suit, the meaning of that bid is essentially the same as it would have been in the absence of an overcall. The fact that the responder has a negative double available does have some impact on these auctions. Let's first consider the implications of when the responder bids a new suit at the 1-level over an opponent's overcall:
+
+|pg||
+cs|1|at|^-{ Regardless of whether an overcall or a takeout double is made, the bid of a new suit at 
+ the 1-level by the responder has the same requirements as it would have had over a pass. }
+^-
+|pg||
+cs|4|at|^-{ For the responder to bid a new major suit at the 1-level after an opponent's
+  overcall, all he needs is at least 4 cards in the suit and at least 6 total points. }
+^-
+|pg||
+at|There is only one auction in which the responder promises a 5-card suit when he bids a new suit at the 1-level after an opponent's overcall:
+
+|pg||
+cs|2|at|^-{ After a 1@C or 1@D opening and a 1@H overcall, a 1@S response promises 5 or more spades^*N. 
+ In these auctions, a negative double by the responder is used to show exactly 4 spades. }
+^-
+|pg||
+at|How about when the responder's new suit bid comes at the 2-level?
+
+|pg||
+cs|3|at|^-{ After an overcall, a new suit bid at the 2-level (or higher) shows at least 11 total points. 
+ If the new suit is a major the responder must have at least a 5-card suit to take this action. }
+^-
+|pg||
+
+cs|1|at|^-{ Bidding a new minor suit at the 2-level (or higher) is permissible with a 4-card
+ suit as long as the responder's hand contains at least 11 total points. }
+^-
+|pg||
+
+nt|^b@2^z@3
+Sometimes the responder has a hand that is appropriate for either a negative double or the bid of a new suit. Choosing the proper action is mostly a matter of judgment, but here are some guidelines that you can follow in order to help you to make these decisions:
+
+|pg||cs|4|at|^-{ If the responder's hand is appropriate for bidding a new major suit at the 
+ 2-level (or higher) he should do so in preference to using a negative double. }
+^-
+|pg||
+cs|2|at|^-{ If the opening bid is 1@C and the overcall is 1@D and the responder has exactly 4-4 
+ in the majors, he should make a negative double (as opposed to bidding a new suit). }
+^-
+|pg||
+cs|3|at|^-{ When the responder has 4-4 in the unbid suits and those suits are a minor and 
+ a major, he should make a negative double in preference to bidding a new suit. }
+^-
+|pg||
+cs|1|At|^-{ When the responder has at least 5-4 in the unbid suits, he has to use his judgment 
+ to decide between making a negative double and bidding a 5-card (or longer) suit. }
+^-
+|pg||
+cs|4|at|^-{ In general, the responder should prefer to use a negative double with 5-4 in the unbid 
+ suits unless his hand is strong enough to force to game by bidding both of his suits. }
+^-
+|pg||
+at|Keep the following suggestion in mind if you are considering making a negative double:
+
+|pg||cs|2|at|^-{ A negative double suggests the ability to handle any rebid that the opener makes. }
+|pg||
+
+
+nt|^b@2^z@3|va|5|at|The negative double is not the only action available to the responder which would not have been available if there had not been an overcall.
+
+|pg||cs|3|at|^-{ The responder can cuebid the suit that was overcalled to describe a hand that is strong 
+ enough to force to game and contains strong support for the suit that was opened. }
+^-
+|pg||
+at|If the responder has to choose between making a negative double and cuebidding the overcaller's suit, these guidelines can be used to resolve such decisions:
+
+|pg||
+
+cs|1|at|^-{ After a major suit opening and an overcall by the opponents, the responder should 
+ prefer a cuebid over a negative double when his hand is suitable for either action. }
+^-
+|pg||
+cs|4|at|^-{ After a minor suit opening and an overcall by the opponents, the responder should 
+ prefer a negative double over a cuebid when his hand is suitable for either action. }
+^-
+|pg||
+at|Other than his ability to make a negative double or to cuebid the opponent's suit, an overcall does not change the meaning of the responder's possible bids. There are a couple of exceptions to this principle. The first of these is mostly a matter of common sense:
+
+|pg||cs|2|at|^-{ After an overcall, the responder should not bid notrump 
+ unless he has a stopper in the suit that was overcalled. }
+^-
+|pg||
+cs|3|at|^-{ After a 1@C or 1@D opening and a 1@H overcall, a 1@S response promises 5 or more spades^*N. }
+^-
+|pg||
+at|A 1@S response to a 1@C or 1@D opening promises only 4 spades in the absence of an overcall.|pg||
+
+
+
+nt|^b@2^z@3|va|5|at|We went on to consider how the opener should select a rebid after an overcall by an opponent and a negative double by his partner.
+
+|pg||cs|3|at|^-{ Usually the opener makes a similar rebid to the one he would have made if there 
+had been no overcall and if his partner had responded with a 1-level bid. }
+^-
+|pg||
+cs|2|at|^-{ If the opener has 4 cards in an unbid major suit, he should almost always make his 
+ rebid in that suit (with a jump if he would have jump raised a major suit response). }
+^-
+|pg||at|Should the opener ever pass after his partner makes a negative double? We saw that there were rare hands where this action is appropriate and that this situation was largely analogous to passing a takeout double:
+
+|pg||cs|4|at|^-{ Pass a negative double only if you have unusual length and strength in the overcaller's suit.}
+^-
+|pg||
+at|If you pass your partner's negative double the auction is likely to end. If this happens then the overcaller will become the declarer in a doubled contract. The only way the opener can have any real confidence in defeating such a contract is if he is long and strong in the overcaller's suit.
+
+|pg||cs|1|at|^-{ A cuebid by the opener after a negative double describes a hand that is strong 
+ enough to force to game, but suggests doubt about the best game contract. }
+^-
+|pg||
+at|The opener would usually have a balanced hand with 18-19 HCP, no 4-card major, and no stopper in the opponent's suit for this action. Alternatively, he might have a very strong hand with 4 cards in both of the unbid majors and be unsure as to which suit should be trump.
+
+|pg||
+
+
+
+nt|^b@2^z@3
+In each of the following exercises, your partner opens the bidding with 1 of a suit and the next hand overcalls. What call would you make with each of the following hands?
+
+|md||ha||mb|1c1h|ht|e|cs|3|at|^C {|ih|psqj96ha5d942cj873|at|} |cs|1|ht|f|at|^O{ |ia| 1c1h?|at| }
+
+
+|hf|l|cq|4|lb|*BWhat call would you make?^^x|
+va|5|hc|sqj96|at|Make a negative double. Responding 1@S after a 1@H overcall promises at least 5 cards in spades. The negative double is used for hands like this one that have exactly 4 spades and at least 6 total points.
+|ht|f|at|^O{ |ia| 1c1h!d|at| }
+|pg||
+md||ha||mb|1d2h|ht|o|cs|3|at|^C {|ih|psakt854h7dq6cqt94|at|} |cs|1|ht|p|at|^O{ |ia| 1d2h?|at| }
+
+
+|hf|v|cq|4|lb|*BWhat call would you make?^^2s|
+va|5|hc|sakt854|at|You should bid 2@S. This hand is more than strong enough for a negative double at the 2-level and you have more than enough cards in the only unbid major suit to make that call. The advantage of bidding 2@S is that it tells your partner more about your hand. Bidding a new major suit at the 2-level in a competitive auction promises at least 5 cards in that suit and at least 11 total points. When such a descriptive bid fits your hand this well, you should use it!
+
+|cs|1|ht|p|at|^O{ |ia| 1d2h!2s|at| }
+|pg||
+lc|sqj96akt854|
+
+nt|^b@2^z@3|
+md||ha||mb|1h2c|ht|b|cs|3|at|^C {|ih|ps74hj3dkq953cq765|at|} |cs|1|ht|c|at|^O{ |ia| 1h2c?|at| }
+
+
+|hf|i|cq|4|lb|*BWhat call would you make?^^P|cs|1|ht|c|at|^O{ |ia| 1h2c!p|at| }
+
+
+|va|5|hc|hjcqdkq|at|You have to pass for now, despite holding 8 HCP. That's enough strength for a negative double, |pg||lc|dkqcqhj|hs|ss|at|but a negative double in this auction would promise at least 4 cards in spades. |pg||ls|ss|hs|Sh|At|You don't have enough hearts to raise your partner |pg||ls|sh|hs|Sd|at|and your hand is not strong enough to bid 2@D (that would show at least 11 total points). |pg||ls|sd|at|Anything other than a pass by you would mislead your partner. Remain silent for now. The auction is not over yet and you may well have another chance to bid. |pg||md||ha||mb|1s2h|ht|o|cs|3|at|^C {|ih|psk5h97cajt84dj862|at|} |cs|1|ht|p|at|^O{ |ia| 1s2h?|at| }
+
+
+|hf|v|cq|4|lb|*BWhat call would you make?^^x|hc|cajt84dj862|cs|1|ht|p|at|^O{ |ia| 1s2h!d|at| }
+
+
+|va|5|at|Make a negative double. When there is no unbid major suit, a negative double shows length in both minor suits. This hand has the requisite minor suit length |pg||lc|ct84d862|hc|sk|At|and more than enough strength for a negative double of a 2-level overcall. |pg||lc|skcajdj|at|You can be fairly confident that whatever rebid your partner makes will lead to a reasonable contract. When it is hard to foresee anything bad happening as a result of a given action in a competitive auction, that is all the more reason to take that action!|pg||
+
+nt|^b@2^z@3|
+md||ha||mb|1c1d|ht|b|cs|3|at|^C {|ih|psaqj98hktj65d7cj3|at|} |cs|1|ht|c|at|^O{ |ia| 1c1d?|at| }
+
+
+|hf|i|cq|4|lb|*BWhat call would you make?^^1S|
+cs|1|ht|c|at|^O{ |ia| 1c1d!1s|at| }
+
+
+|va|5|hc|saqj98|At|Bid 1@S. |pg||hc|hktj65|at|A negative double would promise length in both majors, but this hand is strong enough to bid spades now and hearts later. After your next bid your partner will know that you have at least 5 spades, at least 4 hearts, and a strong enough hand to force to game. If you had a weaker hand with the same distribution, it would be correct to start with a negative double, |pg||lc|hkjt65|at|but a forcing 1@S is the best first move with this powerful hand.
+|pg||
+md||ha||mb|1d1h|ht|o|cs|3|at|^C {|ih|ps76542h8dkq4cat95|at|} |cs|1|ht|p|at|^O{ |ia| 1d1h?|at| }
+
+
+|hf|v|cq|4|lb|*BWhat call would you make?^^1s|
+cs|1|ht|p|at|^O{ |ia| 1d1h!1s|at| }
+
+
+|va|5|hc|s76542|at|5-card suits don't get much worse than this one, but 1@S does not promise strong spades - only 5 of them. If you made a negative double with this hand, your partner would expect you to have only 4 cards in spades. Your partnership may never get to a 5-3 spade fit as a result. As in the above problem, 1@S is forcing here. If the partnership does not belong in spades, you will find out about it when your partner makes his rebid.|pg||lc|saqj9876542|
+
+nt|^b@2^z@3|
+md||ha||mb|1h2d|ht|b|cs|3|at|^C {|ih|psA754hjt85d7cakj2|at|} |cs|1|ht|c|at|^O{ |ia| 1h2d?|at| }
+
+
+|hf|i|cq|4|lb|*BWhat call would you make?^^3d|
+ht|c|at|^O{ |ia| 1h2d!3d|at| }
+
+
+|hs|sh|va|5|at|Cuebid East's suit with 3@D. This bid promises strong heart support and enough strength to force to game. Here there could be a slam in the cards if North has some extra values for his 1@H opening bid. |pg||ls|sh|Hs|ss|At|While you could make a negative double to tell your partner about your spade length, there is little point in doing that. |pg||ls|Ss|hc|hjt85|at|You already know what trump should be. Let your partner in on your secret as soon as you possibly can!
+|pg||md||ha||mb|1s2d|ht|o|cs|3|at|^C {|ih|ps7h974cat7dkqjt82|at|} |cs|1|ht|p|at|^O{ |ia| 1s2d?|at| }
+
+
+|hf|v|cq|4|lb|*BWhat call would you make?^^p|
+ht|p|at|^O{ |ia| 1s2d!p|at| }
+
+
+|hc|dkqjt82|va|5|At|You should pass. If you had a penalty double available you would make one as the thought of defending against a contract of 2@D doubled with this hand is the sort of thing that bridge players dream about. Since a double by you would be a negative double, all you can do is pass for now and hope that your partner reopens with a double. It is still possible that you will have a chance to defend against the contract of your dreams!|pg||lc|hjt85dkqjt82|
+
+
+nt|^b@2^z@3|
+md||ha||mb|1c1d|ht|b|cs|3|at|^C {|ih|pskq2hj752dq74c963|at|} |cs|1|ht|c|at|^O{ |ia| 1c1d?|at| }
+
+
+|hf|i|cq|4|lb|*BWhat call would you make?^^1h|
+ht|c|at|^O{ |ia| 1c1d!1h|at| }
+
+
+|hc|hj752|va|5|At|1@H is the correct bid. Bidding a new major suit at the 1-level after an opponent's 1@D overcall promises no more than a 4-card suit and no more than 6 total points. |pg||lc|hj752|hs|ss|at|Don't make a negative double with this hand as your partner would expect you to have at least 4 spades for that call and this hand has only 3 spades. |pg||ls|ss|Hc|hj752|at|Bid 1@H even though you have a weak 4-card heart suit.
+
+|pg||
+md||ha||mb|1d1s|ht|n|cs|3|at|^C {|ih|ps95hkq84d74ckqt82|at|} |cs|1|ht|o|at|^O{ |ia| 1d1s?|at| }
+
+
+|hf|v|cq|4|lb|*BWhat call would you make?^^x|
+cs|1|ht|o|at|^O{ |ia| 1d1s!d|at| }
+
+
+|hc|hkq84|va|5|At|You should make a negative double to let your partner know that you have at least 4 cards in the unbid major (hearts in this case). |pg||lc|hkq84|hc|ckqt82|at|This hand is (barely) strong enough to bid 2@C, |pg||lc|ckqt82|hc|hkq84|at|but it is not strong enough to subsequently bid hearts. That sequence would be forcing to game and this hand does not have the values for that course of action. You should reject the alternative of a direct 2@H bid as your partner would expect you to have at least a 5-card suit for the bid of a new major suit at the 2-level. A negative double is the way to go with this hand.|pg||lc|hkq84j752|
+|bt||nt||cs|5|cp|6|fp|4|ht|i|at|^-{^^End^^ 
+      Learn to Play Bridge2          ^*bChapter 6   Section 2^*n       ^^ ^^ ^^Bidding After an Opponent's Overcall^^ ^^ }^- |

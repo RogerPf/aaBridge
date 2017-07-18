@@ -19,10 +19,10 @@ at|
 Double Dummy    ^h pf!!          
 ^^
 
-End Blocker    ^h eb ^*n     ^k        |cp|blue|at|Added in ^*b aaBridge  ^*nbuild |cp|7|at|^*b 2874^*n|cp||at|
+End Blocker    ^h eb ^*n     ^k        |cp||at|Added in ^*b aaBridge  ^*nbuild |cp|7|at|^*b 2874^*n|cp||at|
 
 
-^*bButton Visibility    ^h bv ^*n     ^k        |cp|blue|at|Added in ^*b aaBridge  ^*nbuild |cp|7|at|^*b 2874^*n|cp||
+^*bButton Visibility    ^h bv ^*n     ^k        |cp||at|Added in ^*b aaBridge  ^*nbuild |cp|7|at|^*b 2874^*n|cp||
 pg| ***** 0 ***** |
 
 
@@ -92,6 +92,21 @@ pf|f|
 pg| ***** 7 ***** |
 
 
+qx|pf p,wide|
+nt|^b@2|
+at|^b@2^*bDouble Dummy^*n   ^i^*b!pf!|cp|7|at|^*bp^*n|cp||at|^*b!^*n                   Alternate message for the  ^*b1st^*n   button  (like 'f') ^z@3
+
+^*baaBridge^*n  build  ^*b2918^*n  added a built-in message  using the letter  'p'  as shown above.
+
+Move forward to see an example of this message.
+^k Here   'p'  stands for  play on  from the  current  Point of Play.|
+pg| ***** 8 ***** |
+
+
+pf|p|
+pg| ***** 9 ***** |
+
+
 qx|pf c,wide|
 nt|^b@2|
 at|^b@2^*bDouble Dummy^*n   ^i^*b!pf!|cp|7|at|^*bc^*n|cp||at|^*b!^*n^z@3
@@ -100,11 +115,11 @@ at|^b@2^*bDouble Dummy^*n   ^i^*b!pf!|cp|7|at|^*bc^*n|cp||at|^*b!^*n^z@3
 
 Move forward to see an example of this message.
 ^m Here   'c'  stands for      Continue   from any existing play.|
-pg| ***** 8 ***** |
+pg| ***** 10 ***** |
 
 
 pf|c|
-pg| ***** 9 ***** |
+pg| ***** 11 ***** |
 
 
 qx|pf w,wide|
@@ -115,11 +130,11 @@ at|^b@2^*bDouble Dummy^*n   ^i^*b!pf!|cp|7|at|^*bw^*n|cp||at|^*b!^*n^z@3
 
 Move forward to see an example of this message.
 ^m Here   'w'  is just two before the original message of  'y'.|
-pg| ***** 10 ***** |
+pg| ***** 12 ***** |
 
 
 pf|w|
-pg| ***** 11 ***** |
+pg| ***** 13 ***** |
 
 
 qx|pf x,wide|
@@ -130,11 +145,11 @@ at|^b@2^*bDouble Dummy^*n   ^i^*b!pf!|cp|7|at|^*bx^*n|cp||at|^*b!^*n^z@3
 
 Move forward to see an example of this message.
 ^m Here   'x'  is just one before the original message of  'y'.|
-pg| ***** 12 ***** |
+pg| ***** 14 ***** |
 
 
 pf|x|
-pg| ***** 13 ***** |
+pg| ***** 15 ***** |
 
 
 qx|pf a,wide|
@@ -145,11 +160,11 @@ at|^b@2^*bDouble Dummy^*n   ^i^*b!pf!|cp|7|at|^*ba^*n|cp||at|^*b!^*n^z@3
 
 Move forward to see an example of this message.
 ^m Here   'a'  is just the first letter of the word    ^*ba^*nll.|
-pg| ***** 12 ***** |
+pg| ***** 16 ***** |
 
 
 pf|a|
-pg| ***** 13 ***** |
+pg| ***** 17 ***** |
 
 
 qx|eb,wide|
@@ -181,24 +196,24 @@ fp|4|at|^*bEnter the deal   Blocker^*n  ^i^*b!eb!|cp|7|at|^*by^*n|cp||at|^*b!^*n
 
 ^d^*b!eb!|cp|7|at|^*nother^*b|cp||at|^*b!^*n     removes the block     except        ^*b!eb!|cp|7|at|^*bc^*n|cp||at|^*b!^*       is special case   see later                   
 |
-pg| ***** 14 ***** |
+pg| ***** 18 ***** |
 
 
 pc|sQ|pc|hK|pc|s3|
-pg| ***** 15 ***** |
+pg| ***** 19 ***** |
 
 
 pc|s2|pc|sK|pc|sA|pc|s4|
-pg| ***** 16 ***** |
+pg| ***** 20 ***** |
 
 
 pc|sJ|pc|c4|pc|c2|pc|hA|
-pg| ***** 17 ***** |
+pg| ***** 21 ***** |
 
 
 ht|z|at|@0
 ^*b last eb ^*n|
-pg| ***** 18 ***** |
+pg| ***** 22 ***** |
 
 
 st||
@@ -216,7 +231,7 @@ at|^b@2^*bRepeat of first^*n|
 at|^^^^ This is a repeat of the first   ^*n^*b!tc!|cp|7|at|^*bc^*n|cp||at|^*b!^*n   hand.   
 
 It shows that the "Eb Blocker" is cleared by the   ^*n^*b!md!|cp|7|at|^*b...^*n|cp||at|^*b!^*n   command for the next deal.|
-pg| ***** 19 ***** |
+pg| ***** 23 ***** |
 
 
 qx|eb c,wide|
@@ -233,7 +248,7 @@ fp|4|at|^*b!eb!|cp|7|at|^*bc^*n|cp||at|^*b!^*n   SPECIAL^*n  ^i^*b!eb!|cp|7|at|^
 In essence it is used to limit the search range of the    "1st"   "Cont"   "Enter the Deal"  button coding.
 
 ^*bNOTE^*n  unlike    ^*b!eb!!^*n        ^*b!eb!|cp|7|at|^*bc^*n|cp||at|^*b!^*n   does not perform   ANY  eb!!  functionality. |
-pg| ***** 20 ***** |
+pg| ***** 24 ***** |
 
 
 nt|^z@3^b@2|
@@ -243,65 +258,65 @@ at|
 When you click the  { ^*b Cont ^*n }  button you will see that the extent of the existing play shown to you is effected by YOUR position relative to the position where the    |fp|4|at|^*b!eb!|cp|7|at|^*bc^*n|cp||at|^*b!^*n    Navbar  'bobble'  is showing.
 Before  that mark  you only get to see the play up to and  ^*b NOT INCLUDING ^*n  that mark.
 ^*bON ^*n and ^*b AFTER ^*n  that mark you get to see all the play to the next mark or to the end of the play.|
-pg| ***** 21 ***** |
+pg| ***** 25 ***** |
 
 
 mb|p|mb|p|mb|2C|mb|p|mb|3C|mb|p|mb|7S|mb|p|mb|p|mb|p|
-pg| ***** 22 ***** |
+pg| ***** 26 ***** |
 
 
 pc|s7|
-pg| ***** 23 ***** |
+pg| ***** 27 ***** |
 
 
 pc|s3|pc|s6|pc|sA|
-pg| ***** 24 ***** |
+pg| ***** 28 ***** |
 
 
 pc|sK|pc|h2|pc|s4|pc|s9|
-pg| ***** 25 ***** |
+pg| ***** 29 ***** |
 
 
 qx|eb c,wide|
 eb|c|
 ht|a|fp|4|at|^m^*b!eb!|cp|7|at|^*bc^*n|cp||at|^*b!^*n   mark 1^*n |
 pc|dA|pc|d5|pc|d2|pc|d6|
-pg| ***** 26 ***** |
+pg| ***** 30 ***** |
 
 
 pc|d3|pc|d7|pc|s8|pc|d8|
-pg| ***** 27 ***** |
+pg| ***** 31 ***** |
 
 
 pc|cK|pc|cA|pc|s2|pc|c3|
-pg| ***** 28 ***** |
+pg| ***** 32 ***** |
 
 
 pc|dK|pc|dT|pc|c7|pc|h5|
-pg| ***** 29 ***** |
+pg| ***** 33 ***** |
 
 
 qx|eb c,wide|
 eb|c|
 ht|a|fp|4|at|^s^*b!eb!|cp|7|at|^*bc^*n|cp||at|^*b!^*n   mark 2^*n |
 pc|dQ|pc|dJ|pc|c9|pc|c2|
-pg| ***** 30 ***** |
+pg| ***** 34 ***** |
 
 
 pc|d9|pc|h3|pc|h6|pc|h8|
-pg| ***** 31 ***** |
+pg| ***** 35 ***** |
 
 
 pc|d4|pc|c4|pc|cT|pc|c6|
-pg| ***** 32 ***** |
+pg| ***** 36 ***** |
 
 
 pc|sQ|pc|c5|pc|h7|pc|hT|
-pg| ***** 33 ***** |
+pg| ***** 37 ***** |
 
 
 pc|sJ|
-pg| ***** 34 ***** |
+pg| ***** 38 ***** |
 
 
 qx|bv,wide|
@@ -311,13 +326,13 @@ Lg|h|
 at|^b@2^*bButton Visibility^*n   ^i^*b!bv!|cp|7|at|^*ba,h^*n|cp||at|^*b!^*n^z@3
 The three buttons  { ^*b Cont ^*n }   { ^*b 1st ^*n }  and  { ^*b Enter the Deal ^*n }  can, from  |cp|7|at|^*b2874^*n|cp||at|,  have their visibility controlled by  ^*b!bv!^*n.
 Of course for the 3 buttons to be visible at all you  ^*bSTILL NEED^*n  a full deal (52 cards) to be in the current deal.|
-pg| ***** 35 ***** |
+pg| ***** 39 ***** |
 
 
 n#|7| 
 bv|a,h|
 at|^^ ^d^*b!bv!|cp|7|at|^*ba,h^*n|cp||at|^*b!^*n    forces  |cp|7|at|^*ba^*n|cp||at|ll  three to be  |cp|7|at|^*bh^*n|cp||at|idden|
-pg| ***** 36 ***** |
+pg| ***** 40 ***** |
 
 
 nt|^b@2| 
@@ -331,37 +346,16 @@ Lg|m|
 at|^b@2^*bButton Visibility^*n   ^i^*b!bv!|cp|7|at|^*b^*n|cp||at|^*b!^*n^z@3|
 bv|e,v|
 at|^^^d^*b!bv!|cp|7|at|^*be,v^*n|cp||at|^*b!^*n    effects  ^*bONLY^*n   { ^*b Enter the Deal ^*n }  ^n and forces it visible.|
-pg| ***** 37 ***** |
+pg| ***** 41 ***** |
 
 
 bv|c,v|
 at|^^ ^d^*b!bv!|cp|7|at|^*bc,v^*n|cp||at|^*b!^*n    effects  ^*bONLY^*n   { ^*b Cont ^*n }  ^n and forces it visible.|
-pg| ***** 38 ***** |
+pg| ***** 42 ***** |
 
 
 bv|f,v|
 at|^^ ^d^*b!bv!|cp|7|at|^*bf,v^*n|cp||at|^*b!^*n     effects  ^*bONLY^*n   { ^*b 1st ^*n }  ^n and forces it visible.|
-pg| ***** 39 ***** |
-
-
-nt|^b@2| 
-Lg|m|
-at|^b@2^*bButton Visibility^*n   ^i^*b!bv!|cp|7|at|^*b^*n|cp||at|^*b!^*n^z@3|
-pg| ***** 40 ***** |
-
-
-bv|e,h|
-at|^^^d^*b!bv!|cp|7|at|^*be,h^*n|cp||at|^*b!^*n    effects  ^*bONLY^*n   { ^*b Enter the Deal ^*n }  ^n and forces it hidden.|
-pg| ***** 41 ***** |
-
-
-bv|c,h|
-at|^^ ^d^*b!bv!|cp|7|at|^*bc,h^*n|cp||at|^*b!^*n    effects  ^*bONLY^*n   { ^*b Cont ^*n }  ^n and forces it hidden.|
-pg| ***** 42 ***** |
-
-
-bv|f,h|
-at|^^ ^d^*b!bv!|cp|7|at|^*bf,h^*n|cp||at|^*b!^*n     effects  ^*bONLY^*n   { ^*b 1st ^*n }  ^n and forces it hidden.|
 pg| ***** 43 ***** |
 
 
@@ -371,15 +365,78 @@ at|^b@2^*bButton Visibility^*n   ^i^*b!bv!|cp|7|at|^*b^*n|cp||at|^*b!^*n^z@3|
 pg| ***** 44 ***** |
 
 
+bv|e,h|
+at|^^^d^*b!bv!|cp|7|at|^*be,h^*n|cp||at|^*b!^*n    effects  ^*bONLY^*n   { ^*b Enter the Deal ^*n }  ^n and forces it hidden.|
+pg| ***** 45 ***** |
+
+
+bv|c,h|
+at|^^ ^d^*b!bv!|cp|7|at|^*bc,h^*n|cp||at|^*b!^*n    effects  ^*bONLY^*n   { ^*b Cont ^*n }  ^n and forces it hidden.|
+pg| ***** 46 ***** |
+
+
+bv|f,h|
+at|^^ ^d^*b!bv!|cp|7|at|^*bf,h^*n|cp||at|^*b!^*n     effects  ^*bONLY^*n   { ^*b 1st ^*n }  ^n and forces it hidden.|
+pg| ***** 47 ***** |
+
+
+nt|^b@2| 
+Lg|m|
+at|^b@2^*bButton Visibility^*n   ^i^*b!bv!|cp|7|at|^*b^*n|cp||at|^*b!^*n^z@3|
+pg| ***** 48 ***** |
+
+
 bv|a,v|
 at|^^ ^d^*b!bv!|cp|7|at|^*ba,v^*n|cp||at|^*b!^*n    force all 3 visible.|
-pg| ***** 45 ***** |
+pg| ***** 49 ***** |
 
 
 bv||
 n#|7|
 at|^^ ^d^*b!bv!|cp|7|at|^*b^*n|cp||at|^*b!^*n      @2any other setting restores the users choices for the visibility  of    { ^*b 1st ^*n }   and   { ^*b Cont ^*n }    as set under  ^*bShow^*n  with  { ^*b Enter the Deal ^*n }  always visible.      (This is the initial default.)|
-pg| ***** 46 ***** |
+pg| ***** 50 ***** |
+
+
+qx|kc|
+nt|^b@2^*bKeep Cards^e!kc! ... !^*n^z@3|
+lg|h|
+at|
+When you, as a user, are  "inside a deal"  you can use the { ^*b Shuf Op ^*n } button and re-deal the Opps hands.  Please use the { ^*b Enter the Deal ^*n } and then the { ^*b Shuf Op ^*n }  button to see that West 4 @d ^*bAK63^*n   ARE shuffled.|
+eb||  %% in case the last eb has been left ON !!!
+md|1SA8653HA852D98CK9,SJ92HQT97DAK63CJ8,SK74HK63DJ52CA764,SQTHJ4DQT74CQT532|
+sv|O|sk||
+tc|c|
+mb|1S|mb|p|mb|1N|mb|p|mb|2H|mb|p|mb|3S|mb|p|mb|p|mb|p|
+pc|dA|pc|d2|pc|dT|pc|d9|
+pc|dK|pc|d5|pc|d4|pc|d8|
+pc|d3|pc|dJ|pc|dQ|
+tc||
+eb|c| 
+pg| ***** 51 ***** |
+
+
+kc|dAK63 dQT74|
+at|^^^c  kc! dAK63 dQT74!          ^i Now when  { ^*b Shuf Op ^*n } is pressed  ^*bNONE^*n  of EW's  @d's are shuffled.|
+eb|c| 
+pg| ***** 52 ***** |
+
+
+kc|| 
+eb|c| 
+at|^^^c  kc!!                 ^i Now when  { ^*b Shuf Op ^*n } is pressed  EW's @d's  WILL again be shuffled.|
+pg| ***** 53 ***** |
+
+
+nt|^b@2^*bKeep Cards^e!kc! ... !^*n|at|         continued |
+lg|h|
+eb|y|
+pc|s3|pc|sA|pc|SJ|
+n#|5|  
+at|^^^c!eb!y!  pc!s3!  pc!sA! pc!sJ!^i The ^*b eb ^*n mechanism will also stop played cards being shuffled
+^i Only includes cards that were played before the  ^*b!eb!y!^*n  marker.    !eb!! clears.|
+n#|5|at|
+Just above the  { ^*b Shuf Op ^*n }  button is SOMETIMES the   { ^*b Rem Res ^*n }  button this will remove any restrictions imposed by the ^*b eb ^*n or ^*b kc ^*n commands.  Only visible when there are restrictions to remove. |
+pg| ***** 54 ***** |
 
 
 qx|end,wide|

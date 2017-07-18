@@ -145,7 +145,7 @@ public class DualDeal {
 				return at;
 			}
 
-			s = contract.toLinStr();
+			s = contract.toDualStr();
 			if (contractDblRe.isDouble()) {
 				s += "*";
 			}
@@ -165,7 +165,8 @@ public class DualDeal {
 			}
 
 			at = new AttributedString(s);
-			Font bfont = BridgeFonts.faceAndSymbFont.deriveFont(fontSize);
+			Font bfont = (contract.suit == Suit.NoTrumps) ? BridgeFonts.faceAndSymbolFont.deriveFont(fontSize) : BridgeFonts.faceAndSymbolFont
+					.deriveFont(fontSize);
 			at.addAttribute(TextAttribute.FONT, bfont, 0, 2);
 			at.addAttribute(TextAttribute.FOREGROUND, contract.suit.color(Cc.Ce.Strong), 0, 2);
 			at.addAttribute(TextAttribute.FOREGROUND, Suit.NoTrumps.color(Cc.Ce.Strong), 2, 3);

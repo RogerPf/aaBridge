@@ -22,6 +22,7 @@ import javax.swing.border.Border;
 import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Dir;
 
@@ -48,6 +49,8 @@ class AaRopPrefs0_NewDealChoices extends ClickPanel implements ItemListener, Act
 	QRadioButton chosenGame28;
 	QRadioButton chosenGame27;
 	QRadioButton chosenGame26;
+	QRadioButton chosenGame25;
+	QRadioButton chosenGame24;
 
 	QRadioButton twoSuitSlam_E1;
 	QRadioButton twoSuitSlam_E2;
@@ -64,6 +67,14 @@ class AaRopPrefs0_NewDealChoices extends ClickPanel implements ItemListener, Act
 	QRadioButton ntGrand_M;
 	QRadioButton ntGrand_H;
 
+	ButtonGroup dealFilter = new ButtonGroup();
+
+	QRadioButton dealFilter0;
+	QRadioButton dealFilter1;
+	QRadioButton dealFilter2;
+	QRadioButton dealFilter3;
+	QRadioButton dealFilter4;
+
 	QButton applyDefaults;
 
 	public AaRopPrefs0_NewDealChoices() {
@@ -77,51 +88,69 @@ class AaRopPrefs0_NewDealChoices extends ClickPanel implements ItemListener, Act
 		String rbInset = "gapx 7";
 
 		// @formatter:off	
-		add(anyLabel  = new QLabel("  New Deals  "), "gapy 5");
+		add(anyLabel  = new QLabel(Aaf.menuOpt_newDeals_D), "gapx5, gapy 5");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
 
-		add(whichSeatNew   = new QLabel("Your Seat?               Declarer (recommended)  OR  defend sitting East / West  "), "gapy 6");
+		add(whichSeatNew   = new QLabel(Aaf.gT("newDealTab.yourSeat")), "gapy 6");
 		whichSeatNew.setForeground(Aaa.optionsTitleGreen);
 		
 		boolean eastVal  = (App.youSeatForNewDeal == Dir.East);
 		boolean westVal  = (App.youSeatForNewDeal == Dir.West);
 		boolean southVal = !(eastVal || westVal);
 		
-		add(westNew        = new QRadioButton(this, rbGroupSeatNew, bdr1, westVal,  "west",  "LHO"), "split2, gapx 2, flowx");
-		add(eastNew        = new QRadioButton(this, rbGroupSeatNew, bdr1, eastVal,  "east",  "RHO"), "flowy");
-		add(southNew       = new QRadioButton(this, rbGroupSeatNew, bdr1, southVal, "south", "Declarer  (recommended)"), "gapx 27");
+		add(westNew        = new QRadioButton(this, rbGroupSeatNew, bdr1, westVal,  "west",  Aaf.gT("newDealTab.lho")), "split2, gapx 2, flowx");
+		add(eastNew        = new QRadioButton(this, rbGroupSeatNew, bdr1, eastVal,  "east",  Aaf.gT("newDealTab.rho")), "flowy");
+		add(southNew       = new QRadioButton(this, rbGroupSeatNew, bdr1, southVal, "south", Aaf.gT("newDealTab.declarer")), "gapx 27");
 
-		add(anyLabel  = new QLabel("Bidding  -  watch it happen?"), "gapy 8");
+		add(anyLabel  = new QLabel(Aaf.gT("newDealTab.bidding")), "gapy 8");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
 
 		Border bdr  = BorderFactory.createEmptyBorder(1, 0, 0, 0);
 		Border bdr2 = BorderFactory.createEmptyBorder(1, 0, 5, 0);
 
-		add(biddingShow = new QRadioButton(this, rbGroupBids, bdr,  App.watchBidding, "biddingShow", "Yes - show the bidding  "), rbInset);
-		add(biddingHide = new QRadioButton(this, rbGroupBids, bdr, !App.watchBidding, "biddingHide", "No - go straight to the play  "), rbInset);
+		add(biddingShow = new QRadioButton(this, rbGroupBids, bdr,  App.watchBidding, "biddingShow", Aaf.gT("newDealTab.biddingY")), rbInset);
+		add(biddingHide = new QRadioButton(this, rbGroupBids, bdr, !App.watchBidding, "biddingHide", Aaf.gT("newDealTab.biddingN")), rbInset);
 		
-		add(anyLabel    = new QLabel("Choose    one        of the Deal Options below  (N-S always get the best hands)"), "gapy 12");
-		anyLabel.setForeground(Aaa.optionsTitleGreen);
+		add(anyLabel    = new QLabel(Aaf.gT("newDealTab.choose")), "gapy 12");
+		    anyLabel.setForeground(Aaa.optionsTitleGreen);
+
+		String game    = Aaf.gT("newDealTab.game");
+		String slam    = Aaf.gT("newDealTab.slam");
 		
-		add(userBids       = new QRadioButton(this, rbGroupDeal, bdr2, App.dealCriteria.contentEquals("userBids"      ), "userBids",       "23+ points,  YOU pick the contract - you need to be declarer to pick the contract  "), rbInset + ", gapy 0");
-		add(chosenGame28   = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("chosenGame28"  ), "chosenGame28",   "28    Game -  EASY  "), rbInset);
-		add(chosenGame27   = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("chosenGame27"  ), "chosenGame27",   "27    Game -  MODERATE  "), rbInset);
-		add(chosenGame26   = new QRadioButton(this, rbGroupDeal, bdr2, App.dealCriteria.contentEquals("chosenGame26"  ), "chosenGame26",   "26    Game -  HARDER  "), rbInset);
-		add(twoSuitSlam_E1 = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("twoSuitSlam_E1"), "twoSuitSlam_E1", "28+   E  -  slam two suit fit 5-5, 5-4 -  EASIEST 1 "), rbInset);
-		add(twoSuitSlam_E2 = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("twoSuitSlam_E2"), "twoSuitSlam_E2", "28+   E  -  slam two suit fit 5-4, 5-4 -  EASIEST 2 "), rbInset);
-		add(twoSuitSlam_M1 = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("twoSuitSlam_M1"), "twoSuitSlam_M1", "29+   M -  slam two suit fit 5-4, 5-3 -  MODERATE 1 "), rbInset);
-		add(twoSuitSlam_M2 = new QRadioButton(this, rbGroupDeal, bdr2, App.dealCriteria.contentEquals("twoSuitSlam_M2"), "twoSuitSlam_M2", "29+   M -  slam two suit fit 5-3, 5-3 -  MODERATE 2 "), rbInset);
-		add(twoSuitSlam_I1 = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("twoSuitSlam_I1"), "twoSuitSlam_I1", "30+    I  -  slam two suit fit 5-4, 4-4 -  INTERESTING 1 "), rbInset);
-		add(twoSuitSlam_I2 = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("twoSuitSlam_I2"), "twoSuitSlam_I2", "30+    I  -  slam two suit fit 5-3, 4-4 -  INTERESTING 2 "), rbInset);
-		add(twoSuitSlam_H1 = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("twoSuitSlam_H1"), "twoSuitSlam_H1", "31+   H  -  slam two suit fit 4-4, 4-4 -  HARDER 1 "), rbInset);
-		add(twoSuitSlam_H2 = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("twoSuitSlam_H2"), "twoSuitSlam_H2", "31+   H  -  slam two suit fit 4-4, 4-3 -  HARDER 2 "), rbInset);
- 		add(ntSmall_M      = new QRadioButton(this, rbGroupDeal, bdr2, App.dealCriteria.contentEquals("ntSmall_M"     ), "ntSmall_M",      "32+  6NT -  Easy or Hard?    what do you think?  "), rbInset);
-		add(ntGrand_E      = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("ntGrand_E"     ), "ntGrand_E",      "37+  7NT -  EASY  "), rbInset);
-		add(ntGrand_M      = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("ntGrand_M"     ), "ntGrand_M",      "35+  7NT -  MODERATE  "), rbInset);
-		add(ntGrand_H      = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("ntGrand_H"     ), "ntGrand_H",      "33+  7NT -  HARDEST  "), rbInset);
-				
-		add(applyDefaults = new QButton(this, "Apply Defaults"), "gapy20, gapx4");
-		applyDefaults.setToolTipText("Reset all  Seat Options  to default values  ");
+		add(userBids       = new QRadioButton(this, rbGroupDeal, bdr2, App.dealCriteria.contentEquals("userBids"      ), "userBids",       "23+  " + Aaf.gT("newDealTab.youPick")), rbInset + ", gapy 0");
+		add(chosenGame28   = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("chosenGame28"  ), "chosenGame28",   "28    " + game), rbInset);
+		add(chosenGame27   = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("chosenGame27"  ), "chosenGame27",   "27    " + game), rbInset);
+		add(chosenGame26   = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("chosenGame26"  ), "chosenGame26",   "26    " + game), rbInset);
+		add(chosenGame25   = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("chosenGame25"  ), "chosenGame25",   "25    " + game), rbInset);
+		add(chosenGame24   = new QRadioButton(this, rbGroupDeal, bdr2, App.dealCriteria.contentEquals("chosenGame24"  ), "chosenGame24",   "24    " + game), rbInset);
+		add(twoSuitSlam_E1 = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("twoSuitSlam_E1"), "twoSuitSlam_E1", "28+  " + slam + "  5-5, 5-4"), rbInset);
+		add(twoSuitSlam_E2 = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("twoSuitSlam_E2"), "twoSuitSlam_E2", "28+  " + slam + "  5-4, 5-4"), rbInset);
+		add(twoSuitSlam_M1 = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("twoSuitSlam_M1"), "twoSuitSlam_M1", "29+  " + slam + "  5-4, 5-3"), rbInset);
+		add(twoSuitSlam_M2 = new QRadioButton(this, rbGroupDeal, bdr2, App.dealCriteria.contentEquals("twoSuitSlam_M2"), "twoSuitSlam_M2", "29+  " + slam + "  5-3, 5-3"), rbInset);
+		add(twoSuitSlam_I1 = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("twoSuitSlam_I1"), "twoSuitSlam_I1", "30+  " + slam + "  5-4, 4-4"), rbInset);
+		add(twoSuitSlam_I2 = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("twoSuitSlam_I2"), "twoSuitSlam_I2", "30+  " + slam + "  5-3, 4-4"), rbInset);
+		add(twoSuitSlam_H1 = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("twoSuitSlam_H1"), "twoSuitSlam_H1", "31+  " + slam + "  4-4, 4-4"), rbInset);
+		add(twoSuitSlam_H2 = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("twoSuitSlam_H2"), "twoSuitSlam_H2", "31+  " + slam + "  4-4, 4-3"), rbInset);
+ 		add(ntSmall_M      = new QRadioButton(this, rbGroupDeal, bdr2, App.dealCriteria.contentEquals("ntSmall_M"     ), "ntSmall_M",      "32+  6" + Aaf.game_nt), rbInset);
+		add(ntGrand_E      = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("ntGrand_E"     ), "ntGrand_E",      "37+  7" + Aaf.game_nt), rbInset);
+		add(ntGrand_M      = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("ntGrand_M"     ), "ntGrand_M",      "35+  7" + Aaf.game_nt), rbInset);
+		add(ntGrand_H      = new QRadioButton(this, rbGroupDeal, bdr,  App.dealCriteria.contentEquals("ntGrand_H"     ), "ntGrand_H",      "33+  7" + Aaf.game_nt), rbInset);
+			
+	
+		add(anyLabel    = new QLabel(Aaf.gT("newDealTab.interesting")), "gapy 12, gapx 5");
+		    anyLabel.setForeground(Aaa.optionsTitleGreen);
+
+		add(dealFilter0    = new QRadioButton(this, dealFilter, bdr,  App.dealFilter == 0, "", ""), "gapx4, split5, flowx");
+		add(dealFilter1    = new QRadioButton(this, dealFilter, bdr,  App.dealFilter == 1, "", ""), "");
+		add(dealFilter2    = new QRadioButton(this, dealFilter, bdr,  App.dealFilter == 2, "", ""), "");
+		add(dealFilter3    = new QRadioButton(this, dealFilter, bdr,  App.dealFilter == 3, "", ""), "");
+		add(dealFilter4    = new QRadioButton(this, dealFilter, bdr,  App.dealFilter == 4, "", ""), "");
+
+		add(anyLabel    = new QLabel(Aaf.gT("newDealTab.lessMore")), "gapx 5");
+
+		
+		
+		add(applyDefaults = new QButton(this, Aaf.gT("cmnTab.applyDef")), "gapy20, gapx4");
 		if (App.onMac == false)
 		    applyDefaults.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
 		// @formatter:on
@@ -131,6 +160,10 @@ class AaRopPrefs0_NewDealChoices extends ClickPanel implements ItemListener, Act
 
 		Object source = e.getSource();
 		if (source == applyDefaults) {
+
+			App.frame.rop.p1_AutoPlay.applyDefaults();
+			App.frame.rop.p2_SeatChoice.applyDefaults();
+
 			App.youSeatForNewDeal = Dir.South;
 			westNew.setSelected(false);
 			eastNew.setSelected(false);
@@ -140,11 +173,13 @@ class AaRopPrefs0_NewDealChoices extends ClickPanel implements ItemListener, Act
 			biddingShow.setSelected(true);
 			biddingHide.setSelected(false);
 
-			App.dealCriteria = "ntGrand_E";
+			App.dealCriteria = "twoSuitSlam_H2";
 			userBids.setSelected(false);
 			chosenGame28.setSelected(false);
 			chosenGame27.setSelected(false);
 			chosenGame26.setSelected(false);
+			chosenGame25.setSelected(false);
+			chosenGame24.setSelected(false);
 			twoSuitSlam_E1.setSelected(false);
 			twoSuitSlam_E2.setSelected(false);
 			twoSuitSlam_M1.setSelected(false);
@@ -152,11 +187,18 @@ class AaRopPrefs0_NewDealChoices extends ClickPanel implements ItemListener, Act
 			twoSuitSlam_I1.setSelected(false);
 			twoSuitSlam_I2.setSelected(false);
 			twoSuitSlam_H1.setSelected(false);
-			twoSuitSlam_H2.setSelected(false);
+			twoSuitSlam_H2.setSelected(true);
 			ntSmall_M.setSelected(false);
-			ntGrand_E.setSelected(true);
+			ntGrand_E.setSelected(false);
 			ntGrand_M.setSelected(false);
 			ntGrand_H.setSelected(false);
+
+			App.dealFilter = 4;
+			dealFilter0.setSelected(App.dealFilter == 0);
+			dealFilter1.setSelected(App.dealFilter == 1);
+			dealFilter2.setSelected(App.dealFilter == 2);
+			dealFilter3.setSelected(App.dealFilter == 3);
+			dealFilter4.setSelected(App.dealFilter == 4);
 
 			App.savePreferences();
 
@@ -170,9 +212,25 @@ class AaRopPrefs0_NewDealChoices extends ClickPanel implements ItemListener, Act
 		boolean b = (e.getStateChange() == ItemEvent.SELECTED);
 		Object source = e.getItemSelectable();
 
-		// we are only interested in the selected values for the buttons
+		// for the buttons, we are only interested in the selected values
 		if (b == false) {
 			; // do nothing
+		}
+
+		else if (source == dealFilter0) {
+			App.dealFilter = 0;
+		}
+		else if (source == dealFilter1) {
+			App.dealFilter = 1;
+		}
+		else if (source == dealFilter2) {
+			App.dealFilter = 2;
+		}
+		else if (source == dealFilter3) {
+			App.dealFilter = 3;
+		}
+		else if (source == dealFilter4) {
+			App.dealFilter = 4;
 		}
 
 		else if (source == southNew) {
@@ -202,6 +260,12 @@ class AaRopPrefs0_NewDealChoices extends ClickPanel implements ItemListener, Act
 		}
 		else if (source == chosenGame26) {
 			App.dealCriteria = "chosenGame26";
+		}
+		else if (source == chosenGame25) {
+			App.dealCriteria = "chosenGame25";
+		}
+		else if (source == chosenGame24) {
+			App.dealCriteria = "chosenGame24";
 		}
 		else if (source == twoSuitSlam_E1) {
 			App.dealCriteria = "twoSuitSlam_E1";

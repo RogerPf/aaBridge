@@ -13,10 +13,10 @@ package com.rogerpf.aabridge.view;
 import java.awt.AWTEvent;
 import java.awt.Desktop;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.GraphicsEnvironment;
 import java.awt.KeyboardFocusManager;
 import java.awt.Point;
-import java.awt.Rectangle;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.DataFlavor;
@@ -25,7 +25,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
-import java.awt.event.KeyEvent;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.awt.image.BufferedImage;
@@ -38,9 +39,9 @@ import java.net.URL;
 import java.util.Locale;
 
 import javax.swing.AbstractAction;
-import javax.swing.Action;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
@@ -49,12 +50,14 @@ import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import javax.swing.Timer;
 import javax.swing.TransferHandler;
+import javax.swing.UIManager;
 import javax.swing.filechooser.FileSystemView;
 
 import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.AaBridge;
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.controller.Book;
 import com.rogerpf.aabridge.controller.Book.LinChapter;
@@ -62,13 +65,15 @@ import com.rogerpf.aabridge.controller.Bookshelf;
 import com.rogerpf.aabridge.controller.BookshelfArray;
 import com.rogerpf.aabridge.controller.BridgeLoader;
 import com.rogerpf.aabridge.controller.CmdHandler;
+import com.rogerpf.aabridge.controller.LangdeckList;
+import com.rogerpf.aabridge.controller.LanguageList;
+import com.rogerpf.aabridge.controller.MruCollection;
 import com.rogerpf.aabridge.dds.Z_ddsCalculate;
 import com.rogerpf.aabridge.igf.BubblePanel;
 import com.rogerpf.aabridge.igf.MassGi;
 import com.rogerpf.aabridge.igf.MassGi_utils;
 import com.rogerpf.aabridge.igf.TutNavigationBar;
 import com.rogerpf.aabridge.igf.TutorialPanel;
-import com.rogerpf.aabridge.model.Cc;
 import com.rogerpf.aabridge.model.Deal;
 import com.rogerpf.aabridge.model.Dir;
 import com.rogerpf.aabridge.model.Lin;
@@ -78,7 +83,7 @@ import com.version.VersionAndBuilt;
 
 /**    
  */
-public class AaaOuterFrame extends JFrame implements ComponentListener, ActionListener, WindowListener {
+public class AaaOuterFrame extends JFrame implements ComponentListener, ActionListener, ItemListener, WindowListener {
 	/**
 	 * 
 	 */
@@ -103,13 +108,16 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 	JMenuBar menuBar;
 	JMenu menu, submenu;
 	JMenuItem menuItem;
+	JLabel label;
 
-	private Action menuSaveStdAction;
-	private Action menuSaveAsAction;
+//	private Action menuSaveStdAction;
+//	private Action menuSaveAsAction;
 
 	KeyboardFocusManager kbFocusManager;
 
 	public AaDragGlassPane aaDragGlassPane;
+
+	JMenuItem showUserExampleMenu;
 
 	// ----------------------------------------
 	public AaaOuterFrame() { /* Constructor */
@@ -118,23 +126,24 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-//		/**
-//		 *  We always do the following when the application is properly closed
-//		 */
-//		Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
-//			public void run() {
-//				App.aaHomeBtnPanel.mruDelayedSaveTimer.stop();
-//				System.out.println("In - shutdownhook");
-//				App.savePreferences();
-//
-//				int prev_pg_numb = App.mg.get_best_pg_number_for_history();
-//				App.mruCollection.update_prev_hist_pgNumb(prev_pg_numb);
-//				App.mruCollection.saveCollection();
-//			}
-//		}));
+		/**
+		 * Check for the emergency reset request
+		 */
+		if (App.args != null && App.args.length >= 1 && App.args[0] != null && !App.args[0].isEmpty()) {
+			String s = App.args[0].trim().toLowerCase();
+			if (s.matches("reset")) {
+				App.deletePreferencesNode();
+				MruCollection.delete_whole_mru();
+				App.args[0] = "";
+			}
+			else if (s.matches("reset1")) {
+				App.deletePreferencesNode();
+				App.args[0] = "";
+			}
+		}
 
 		/** 
-		 * Spin the random number generator - well old habits die hard
+		 * Spin the random number generator - well why not
 		 */
 		{
 			int n = (int) ((System.currentTimeMillis() % 1000) & 0x3f) + 10;
@@ -162,8 +171,12 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 			else {
 				/* we must be running in Eclipse or the like as source */
 				String s = locMethodFile.getPath();
+				// System.out.println("E_2 App.thisAppBaseFolder:" + s);
 				if (s.endsWith(File.separator + "bin")) {
 					App.thisAppBaseFolder = s.substring(0, s.length() - 3) + "src";
+				}
+				else {
+					App.thisAppBaseFolder = s;
 				}
 				// assume we are dev running in eclipse or the like in windows
 				// and default to the normal install place far aaBridge (testing only)
@@ -181,6 +194,9 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 			if (new File(flag_folder + "_aaBridge_c__show_dev_test_lins.txt").exists()) {
 				App.showDevTestLins = true;
 			}
+
+			System.out.println("");
+			System.out.println("aaBridge_" + VersionAndBuilt.verAndBuildNo() + "  running on Java: " + System.getProperty("java.version"));
 
 			// @formatter:off
 			if (      (App.runningInJar == false)
@@ -224,6 +240,10 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 				fw.close();
 			}
 
+			if (new File(flag_folder + "_aaBridge_g__use_dev_extract_myHands.txt").exists()) {
+				App.use_dev_extract_myHands = true;
+			}
+
 		} catch (Exception e1) {
 		}
 
@@ -236,6 +256,11 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		App.onLinux = !App.onMac && !App.onWin;
 		App.onMacOrLinux = App.onMac || App.onLinux;
 		App.using_java_6 = System.getProperty("java.version").startsWith("1.6");
+		App.runningExpanded = MassGi_utils.isRunningExpanded();
+
+//		assert(App.runningExpanded != App.runningInJar);  // these need to be joined up
+
+		App.bundleSep = (App.runningInJar) ? "/" : File.separator;
 
 		setVisible(false); // set true by the timer below
 		java.net.URL imageFileURL = AaaOuterFrame.class.getResource("aaBridge_proto_icon.png");
@@ -246,7 +271,16 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 
 		App.loadPreferences();
 
+		Aaf.LoadPrefsPostProcess();
+
 		App.selectMnHeaderColor();
+
+		try {
+			Font f = (Font) UIManager.get("ToolTip.font");
+			Font f2 = f.deriveFont(f.getSize() * 1.2f);
+			UIManager.put("ToolTip.font", f2);
+		} catch (Exception e) {
+		}
 
 		// Active Bo Haglunds DDS
 		App.haglundsDDSavailable = Z_ddsCalculate.is_dds_available();
@@ -270,6 +304,58 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		}
 
 		App.bookshelfArray = new BookshelfArray(); // this is the only instance
+
+		App.aaHomeBtnPanel = new AaHomeBtnPanel();
+
+		// -----------------------------------------------------
+
+		// create folders etc
+		{
+			App.desktopFolderPath = FileSystemView.getFileSystemView().getHomeDirectory().getAbsolutePath();
+			if (!App.onWin) {
+				if (App.desktopFolderPath.toLowerCase().endsWith("Desktop") == false) {
+					App.desktopFolderPath += File.separator + "Desktop";
+				}
+			}
+			App.desktopFolderPath += File.separator;
+
+			String appHomePath = System.getProperty("user.home") + File.separator + "aaBridge" + File.separator;
+			App.cmdsAndPhpPath = appHomePath + "cmds_and_scripts" + File.separator;
+			App.tempMyHandsPath = appHomePath + "temp_MyHands" + File.separator;
+			App.autoSavesPath = appHomePath + "autosaves" + File.separator;
+			App.defaultSavesPath = appHomePath + "saves" + File.separator;
+			if (App.realSavesPath.isEmpty()) {
+				App.realSavesPath = App.defaultSavesPath;
+			}
+
+			File appHome = new File(appHomePath);
+			File cmds = new File(App.cmdsAndPhpPath);
+			File tmh = new File(App.tempMyHandsPath);
+			File autoSaves = new File(App.autoSavesPath);
+			File defaultSaves = new File(App.defaultSavesPath);
+			File saves = new File(App.realSavesPath);
+			// tests are in with the books
+
+			File oldFolderNotWanted = new File(appHomePath + "cmds_and_php" + File.separator);
+			oldFolderNotWanted.delete();
+
+			appHome.mkdir();
+			cmds.mkdir();
+			tmh.mkdir();
+			autoSaves.mkdir();
+			defaultSaves.mkdir(); // so we make the default even if use have set our own
+			saves.mkdir();
+
+			// App.aamh_cmdname += (App.onWin ? ".cmd" : (App.onMac ? "command" : ".sh"));
+
+			if (App.use_dev_extract_myHands && (new File(App.dev__extract_myHands__path + App.aamh_phpname)).exists()) {
+				App.cmdsAndPhpPath = App.dev__extract_myHands__path;
+			}
+
+			App.aamh_exists = new File(App.cmdsAndPhpPath + App.aamh_phpname).exists();
+
+			clearOutOldFilesFromFolder(App.autoSavesPath, 7);
+		}
 
 		createAndAddAllMenus(0);
 
@@ -304,7 +390,6 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		App.dnb = new DealNavigationBar();
 
 		App.aaBookPanel = new AaBookPanel();
-		App.aaHomeBtnPanel = new AaHomeBtnPanel();
 
 		App.dualDealListBtns = new DualDealListButtonsPanel(); // here because it is hidden by setVisualMode()
 
@@ -326,7 +411,7 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		linPlcp = new AaDdlAndPayloadCasePanel();
 
 		linPlcp.setLayout(new MigLayout(App.simple, "[][][grow][]", "[grow][]"));
-		// to remove the homeBtn feature comment out the line below
+
 		linPlcp.add(App.aaHomeBtnPanel, "split2, flowy, hidemode 1");
 		linPlcp.add(App.aaBookPanel, "hidemode 1, growy, center, hmin 0");
 		linPlcp.add(App.dualDealListBtns, "hidemode 1, growy, center, hmin 0");
@@ -354,35 +439,7 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		kbFocusManager = KeyboardFocusManager.getCurrentKeyboardFocusManager();
 		kbFocusManager.addKeyEventDispatcher(App.con);
 
-		App.desktopFolderPath = FileSystemView.getFileSystemView().getHomeDirectory().getAbsolutePath();
-		if (!App.onWin) {
-			if (App.desktopFolderPath.toLowerCase().endsWith("Desktop") == false) {
-				App.desktopFolderPath += File.separator + "Desktop";
-			}
-		}
-		App.desktopFolderPath += File.separator;
-
-		String appHomePath = System.getProperty("user.home") + File.separator + "aaBridge" + File.separator;
-		App.autoSavesPath = appHomePath + "autosaves" + File.separator;
-		App.defaultSavesPath = appHomePath + "saves" + File.separator;
-		if (App.realSavesPath.isEmpty()) {
-			App.realSavesPath = App.defaultSavesPath;
-		}
-
-		File appHome = new File(appHomePath);
-		File autoSaves = new File(App.autoSavesPath);
-		File defaultSaves = new File(App.defaultSavesPath);
-		File saves = new File(App.realSavesPath);
-		// tests are in with the books
-
-		appHome.mkdir();
-		autoSaves.mkdir();
-		defaultSaves.mkdir(); // so we make the default even if use have set our own
-		saves.mkdir();
-
 		lop.realSavesPathNowAvailable();
-
-		clearOutOldFilesFromFolder(App.autoSavesPath, 7);
 
 		setTitleAsRequired();
 
@@ -478,7 +535,7 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		// @formatter:on
 
 		/**
-		 * Calculate the major column layout for the bgp
+		 * Calculate the major column layout for the gpb
 		 */
 
 		float col = (100f - 2 * (App.GBP_SIDE_EDGE_GAP_PC + App.GBP_WING_PANEL_SIZE_PC)) / 3;
@@ -629,8 +686,8 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 
 		boolean tutorial = App.isVmode_Tutorial();
 
-		menuSaveStdAction.setEnabled(tutorial == false);
-		menuSaveAsAction.setEnabled(tutorial == false);
+		AaaMenu.menuSaveStdAction.setEnabled(tutorial == false);
+		AaaMenu.menuSaveAsAction.setEnabled(tutorial == false);
 
 	}
 
@@ -715,310 +772,91 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		setJMenuBar(menuBar);
 
 		// File - MENU
-		menu = new JMenu("File       ");
-		menu.setMnemonic(KeyEvent.VK_F);
-		menuBar.add(menu);
+		menuBar.add(AaaMenu.makeFileMenu(this, Aaf.gT("menubar.file")));
 
-		if (App.FLAG_canOpen) {
-			// Open
-			menuItem = new JMenuItem("Open          -  Saved Deal (lin file) - you can instead just  'Drag and Drop'  the file", KeyEvent.VK_O);
-			menuItem.setActionCommand("menuOpen");
-			menuItem.addActionListener(App.con);
-			menu.add(menuItem);
-		}
-
-		// Save Std
-		menuSaveStdAction = new RpfMenuAction("Save          -  Save using the file name you last set with 'Save As'", "menuSaveStd", KeyEvent.VK_S);
-		menuItem = new JMenuItem(menuSaveStdAction);
-		menuItem.setAction(menuSaveStdAction);
-		menuItem.addActionListener(App.con);
-		if (App.FLAG_canSave)
-			menu.add(menuItem);
-
-		// Save As
-		menuSaveAsAction = new RpfMenuAction("Save As    -  Save the deal,  this is the way you get to choose the file name", "menuSaveAs", KeyEvent.VK_A);
-		menuItem = new JMenuItem(menuSaveAsAction);
-		menuItem.setAction(menuSaveAsAction);
-		menuItem.addActionListener(App.con);
-		if (App.FLAG_canSave)
-			menu.add(menuItem);
-
-		if (App.FLAG_canSave)
-			menu.addSeparator();
-
-		// Open Saves Folder
-		menuItem = new JMenuItem("Open  'saves'  folder       -       THEN    -   use   'Drag and Drop'    to open any deal", KeyEvent.VK_F);
-		menuItem.setActionCommand("openSavesFolder");
-		menuItem.addActionListener(App.con);
-		if (App.FLAG_canSave)
-			menu.add(menuItem);
-
-		// Open autoSaves Folder
-		menuItem = new JMenuItem("Open  'autosaves'  folder");
-		menuItem.setActionCommand("openAutoSavesFolder");
-		menuItem.addActionListener(App.con);
-		if (App.FLAG_canSave)
-			menu.add(menuItem);
-
-		if (App.FLAG_canSave)
-			menu.addSeparator();
-
-//		if (App.devMode) {
-//			// Run Tests
-//			menuItem = new JMenuItem("Run Tests", KeyEvent.VK_T);
-//			menuItem.setActionCommand("runTests");
-//			menuItem.addActionListener(App.con);
-//			menu.add(menuItem);
-//		}
-
-		// Paste - Accepts a Paste (normally of a tiny url)
-		menuItem = new JMenuItem("Paste        -  Accepts a 'Paste',  normally of a 'Tiny Url',  to load that deal", KeyEvent.VK_P);
-		menuItem.setActionCommand("acceptPaste");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		// Exit
-		menuItem = new JMenuItem("Exit");
-		menuItem.setActionCommand("exit");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
+		// Bookmarks - MENU
+		menuBar.add(App.bookmarksMenu = new JMenu(" " + Aaf.gT("menubar.bookmarks")));
 
 		// Ideal Size - MENU
-		menu = new JMenu("Ideal Size       ");
-		menu.setMnemonic(KeyEvent.VK_I);
-		menuBar.add(menu);
-
-		menuItem = new JMenuItem("1  Small Laptop", KeyEvent.VK_1);
-		menuItem.setActionCommand("tutorial_idealSize_small_noExtra");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		menuItem = new JMenuItem("2  Small Laptop +  Extra", KeyEvent.VK_2);
-		menuItem.setActionCommand("tutorial_idealSize_small");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		menu.addSeparator();
-
-		menuItem = new JMenuItem("3  Ideal", KeyEvent.VK_3);
-		menuItem.setActionCommand("tutorial_idealSize_std_noExtra");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		menuItem = new JMenuItem("4  Ideal  +  Extra", KeyEvent.VK_4);
-		menuItem.setActionCommand("tutorial_idealSize_std");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		menu.addSeparator();
-
-		menuItem = new JMenuItem("5  Big", KeyEvent.VK_5);
-		menuItem.setActionCommand("tutorial_idealSize_big_noExtra");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		menuItem = new JMenuItem("6  Big  +  Extra", KeyEvent.VK_6);
-		menuItem.setActionCommand("tutorial_idealSize_big");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		menu.addSeparator();
-
-		menuItem = new JMenuItem("7  Very Big", KeyEvent.VK_7);
-		menuItem.setActionCommand("tutorial_idealSize_vbig_noExtra");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		menuItem = new JMenuItem("8  Very Big  +  Extra", KeyEvent.VK_8);
-		menuItem.setActionCommand("tutorial_idealSize_vbig");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		menu.addSeparator();
-
-		menuItem = new JMenuItem("9  Very very Big", KeyEvent.VK_9);
-		menuItem.setActionCommand("tutorial_idealSize_vvbig_noExtra");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		menuItem = new JMenuItem("0  Very very Big  +  Extra", KeyEvent.VK_0);
-		menuItem.setActionCommand("tutorial_idealSize_vvbig");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
+		menuBar.add(AaaMenu.makeIdealSizeMenu(this, "  " + Aaf.gT("menubar.idealsize")));
 
 		// Options - MENU
-		menu = new JMenu("Options        ");
-		menu.setMnemonic(KeyEvent.VK_O);
-		menuBar.add(menu);
+		menuBar.add(AaaMenu.makeOptionsMenu(this, "   " + Aaf.gT("menubar.options")));
 
-		// Right Panel - Prefs 7 ShowBtns
-		menuItem = new JMenuItem("Show                  -   Show / Hide  optional Buttons", KeyEvent.VK_W);
-		menuItem.setActionCommand("rightPanelPrefs7_ShowBtns");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		// Right Panel - Prefs 6 RedHints
-		menuItem = new JMenuItem("Red Hints           -   Show / Hide the  Red Arrow  hints", KeyEvent.VK_R);
-		menuItem.setActionCommand("rightPanelPrefs6_RedHints");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		// Right Panel - Prefs 5 DSizeFont
-		menuItem = new JMenuItem("Size & Font        -   Deal Size and Movie Font Override", KeyEvent.VK_F);
-		menuItem.setActionCommand("rightPanelPrefs5_DSizeFont");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		// Right Panel - Prefs 4 SuitColors
-		menuItem = new JMenuItem("Suit Colors        -   includes Symbol display choice", KeyEvent.VK_C);
-		menuItem.setActionCommand("rightPanelPrefs4_SuitColors");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		// Right Panel - Prefs 3 DFC
-		menuItem = new JMenuItem("DFC                      -   Distribution Flash Cards  ", KeyEvent.VK_D);
-		menuItem.setActionCommand("rightPanelPrefs3_DFC");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		// Right Panel - Prefs 2 SeatChoices
-		menuItem = new JMenuItem("Seat Choice      -   Where do you want to sit", KeyEvent.VK_S);
-		menuItem.setActionCommand("rightPanelPrefs2_SeatChoice");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		// Right Panel - Prefs 1 AutoPlay
-		menuItem = new JMenuItem("AutoPlay            -   includes Pause setting", KeyEvent.VK_A);
-		menuItem.setActionCommand("rightPanelPrefs1_AutoPlay");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		// Right Panel - Prefs 0 DealChoices
-		menuItem = new JMenuItem("New Deals         -   Choose strong or weak hands", KeyEvent.VK_N);
-		menuItem.setActionCommand("rightPanelPrefs0_NewDealChoices");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		menu.addSeparator();
-
-		// Bottom Panel
-		menuItem = new JMenuItem("Screen Color  &  Speed Sliders", KeyEvent.VK_P);
-		menuItem.setActionCommand("lowerPanel");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
+		// Books to Books-Z - MENUS
 		for (Bookshelf shelf : App.bookshelfArray) {
+			if ((App.showBooksZMenu == false) && (shelf.shelfname.contentEquals("Books-Z")))
+				continue;
 			shelf.addToMenuBar(this, menuBar);
 		}
 
+		// Language - MENU
+		menuBar.add(AaaMenu.makeLangMenu(this, "      " + Aaf.gT("menubar.launguage"))); // add language choice to the Options menu
+
 		// Help - MENU
-		menu = new JMenu("Help  &  How do I ?");
-		menu.setMnemonic(KeyEvent.VK_H);
-		menuBar.add(menu);
+		menuBar.add(AaaMenu.makeHelpMenu(this, "   " + Aaf.gT("menubar.help")));
+	}
 
-		menuItem = new JMenuItem("                             View the aaBridge Document Collection");
-		menuItem.setActionCommand("openPage_DocCollection");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
+	/**
+	*/
+	public void actionPerformed(ActionEvent e) {
+		// =============================================================
 
-		menuItem = new JMenuItem("How do I             Use aaBridge to learn the Suit Distributions and count the hands     (YouTube) ");
-		menuItem.setActionCommand("youtube_SuitDistrib");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
+		executeCmd(e.getActionCommand());
+	}
 
-		menuItem = new JMenuItem("How do I             Debug - BBO Dealer Scripts     (Blog) ");
-		menuItem.setActionCommand("blog_debugBboDealerScripts");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
+	@Override
+	public void itemStateChanged(ItemEvent e) {
+		// =============================================================
+		if (App.allConstructionComplete == false)
+			return;
 
-		menuItem = new JMenuItem("How do I             Swap between aaBridge and another app as the (DblClick) .lin file player     (Blog)");
-		menuItem.setActionCommand("menuSwapLinFilePlayer");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
+		boolean restart = false;
 
-		menuItem = new JMenuItem("                             What is aaBridge ?");
-		menuItem.setActionCommand("openPage_WhatIsaaBridge");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
+		JMenuItem item = (JMenuItem) e.getItem();
 
-		menuItem = new JMenuItem("How do I             Use the Double Dummy Solver");
-		menuItem.setActionCommand("openPage_BoHaglundDDS");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
+		String prevLang = Aaf.iso_lang_req;
 
-		menuItem = new JMenuItem("                             Seat Choice and that  Pink Dot !       (Blog)");
-		menuItem.setActionCommand("blog_seatChoiceAndThatPinkDot");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
+		for (LanguageList.LangEntry entry : Aaf.langList) {
+			if (entry.menuItem == item) {
+				Aaf.iso_lang_req = entry.iso_lang;
+			}
+		}
 
-		menuItem = new JMenuItem("How do I             Memorize the Suit Distributions");
-		menuItem.setActionCommand("openPage_MemorizeDistributions");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
+		String prevDeckLang = Aaf.iso_deck_lang;
+		for (LangdeckList.LangEntry entry : Aaf.rankList) {
+			if (entry.menuItem == item) {
+				Aaf.iso_deck_lang = entry.iso_lang;
+			}
+		}
 
-		menuItem = new JMenuItem("                             Down the Rabbit Hole   -   An aaBridge Key Concept");
-		menuItem.setActionCommand("openPage_DocCollection");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
+		if (prevDeckLang.contentEquals(Aaf.iso_deck_lang) == false) {
+			restart = true;
+		}
+		else if (!Aaf.iso_lang_req.equals(prevLang)) {
+			restart = true;
+		}
+		else if (item == AaaMenu.exampleMenuShowHide) {
+			App.showBooksZMenu = item.isSelected();
+			restart = true;
+		}
+		else if (item == AaaMenu.theDotTest) {
+			App.showTheDotTest = item.isSelected();
+			restart = true;
+		}
+		else if (e.getStateChange() == ItemEvent.DESELECTED) {
+			return;
+		}
 
-		menuItem = new JMenuItem("How do I             Enter (Type) hands into aaBridge");
-		menuItem.setActionCommand("openPage_DocCollection");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
+		if (restart) {
+			App.savePreferences();
 
-		menuItem = new JMenuItem("How do I             Get aaBridge hands up to BBO");
-		menuItem.setActionCommand("openPage_DocCollection");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
+			if (System.getenv("rpf_in_eclipse") == null) {
+				MassGi_utils.launch_2nd_aaBridge_WITH(App.args);
+			}
 
-		menuItem = new JMenuItem("How do I             Get a BBO hand into aaBridge");
-		menuItem.setActionCommand("openPage_DocCollection");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		menuItem = new JMenuItem("How do I             'Play' an existing deal in aaBridge");
-		menuItem.setActionCommand("openPage_DocCollection");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		menuItem = new JMenuItem("                             Visualize Hands with aaBridge");
-		menuItem.setActionCommand("openPage_VisualizeHands");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		menuItem = new JMenuItem("How do I             Defend like an Expert");
-		menuItem.setActionCommand("openPage_DefendExpert");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		menuItem = new JMenuItem("                             Improve Your Bridge");
-		menuItem.setActionCommand("openPage_ImproveYourBridge");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		menu.addSeparator();
-
-		Bookshelf.addFirstShelf_90s_toMenu(this, menu);
-		menu.addSeparator();
-
-		// Roger Pf - Blog
-		menuItem = new JMenuItem("Blog                     MusingsOnBridge  blog   -  for releated info  ", KeyEvent.VK_B);
-		menuItem.setActionCommand("web_LookAtBlog");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		// Help LookAtWebsite
-		menuItem = new JMenuItem("Website              aaBridge Website  -  so you can check to see if you have the latest version  ", KeyEvent.VK_W);
-		menuItem.setForeground(Cc.GreenStrong);
-		menuItem.setActionCommand("web_LookAtWebsite");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
-
-		// Help About
-		menuItem = new JMenuItem("About                   aaBridge", KeyEvent.VK_A);
-		menuItem.setActionCommand("internal_HelpAbout");
-		menuItem.addActionListener(this);
-		menu.add(menuItem);
+			System.exit(0); // SHUTS DOWN aaBridge NOW
+		}
 
 	}
 
@@ -1045,65 +883,58 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		}
 	}
 
-	/**
-	*/
-	public void actionPerformed(ActionEvent e) {
-		// =============================================================
-		executeCmd(e.getActionCommand());
-	}
-
-	public int RIGHT_OPT_PANEL_WIDTH__narrow = 128;
-	public int RIGHT_OPT_PANEL_WIDTH__menu = 210;
-	public int RIGHT_OPT_PANEL_WIDTH__wide = 320;
-	public int BOTTOM_OPT_PANEL_HEIGHT = 128;
-
-	public int RIGHT_OPT_PANEL_WIDTH__small_wider_adjust_A = 135;
-	public int RIGHT_OPT_PANEL_WIDTH__small_wider_adjust_B = 170;
-
-	int WIDTH_EXTRA = 100;
-	int HEIGHT_EXTRA = 42;
-
-	public int BOOK_IDEAL_WIDTH_STD__NO_EXTRA = 1176;
-	public int BOOK_IDEAL_HEIGHT_STD__NO_EXTRA = 874;
-
-	public int BOOK_IDEAL_WIDTH_STD = BOOK_IDEAL_WIDTH_STD__NO_EXTRA + WIDTH_EXTRA;
-	public int BOOK_IDEAL_HEIGHT_STD = BOOK_IDEAL_HEIGHT_STD__NO_EXTRA + HEIGHT_EXTRA;
-
-	int WIDTH_SMALL_MINUS = 66;
-	int HEIGHT_SMALL_MINUS = 90;
-
-	public int BOOK_IDEAL_WIDTH_SMALL__NO_EXTRA = BOOK_IDEAL_WIDTH_STD__NO_EXTRA - WIDTH_SMALL_MINUS;
-	public int BOOK_IDEAL_HEIGHT_SMALL__NO_EXTRA = BOOK_IDEAL_HEIGHT_STD__NO_EXTRA - HEIGHT_SMALL_MINUS;
-
-	public int BOOK_IDEAL_WIDTH_SMALL = BOOK_IDEAL_WIDTH_SMALL__NO_EXTRA + WIDTH_EXTRA + RIGHT_OPT_PANEL_WIDTH__small_wider_adjust_B;
-	public int BOOK_IDEAL_HEIGHT_SMALL = BOOK_IDEAL_HEIGHT_SMALL__NO_EXTRA; // + HEIGHT_EXTRA; reduced height on row res laptops
-
-	int WIDTH_BIG_PLUS = 66;
-	int HEIGHT_BIG_PLUS = 40;
-
-	public int BOOK_IDEAL_WIDTH_BIG__NO_EXTRA = BOOK_IDEAL_WIDTH_STD__NO_EXTRA + WIDTH_BIG_PLUS;
-	public int BOOK_IDEAL_HEIGHT_BIG__NO_EXTRA = BOOK_IDEAL_HEIGHT_STD__NO_EXTRA + HEIGHT_BIG_PLUS;
-
-	public int BOOK_IDEAL_WIDTH_BIG = BOOK_IDEAL_WIDTH_BIG__NO_EXTRA + WIDTH_EXTRA;
-	public int BOOK_IDEAL_HEIGHT_BIG = BOOK_IDEAL_HEIGHT_BIG__NO_EXTRA + HEIGHT_EXTRA;
-
-	int WIDTH_VBIG_PLUS = 116;
-	int HEIGHT_VBIG_PLUS = 80;
-
-	public int BOOK_IDEAL_WIDTH_VBIG__NO_EXTRA = BOOK_IDEAL_WIDTH_STD__NO_EXTRA + WIDTH_VBIG_PLUS;
-	public int BOOK_IDEAL_HEIGHT_VBIG__NO_EXTRA = BOOK_IDEAL_HEIGHT_STD__NO_EXTRA + HEIGHT_VBIG_PLUS;
-
-	public int BOOK_IDEAL_WIDTH_VBIG = BOOK_IDEAL_WIDTH_VBIG__NO_EXTRA + WIDTH_EXTRA;
-	public int BOOK_IDEAL_HEIGHT_VBIG = BOOK_IDEAL_HEIGHT_VBIG__NO_EXTRA + HEIGHT_EXTRA;
-
-	int WIDTH_VVBIG_PLUS = 176;
-	int HEIGHT_VVBIG_PLUS = 120;
-
-	public int BOOK_IDEAL_WIDTH_VVBIG__NO_EXTRA = BOOK_IDEAL_WIDTH_STD__NO_EXTRA + WIDTH_VVBIG_PLUS;
-	public int BOOK_IDEAL_HEIGHT_VVBIG__NO_EXTRA = BOOK_IDEAL_HEIGHT_STD__NO_EXTRA + HEIGHT_VVBIG_PLUS;
-
-	public int BOOK_IDEAL_WIDTH_VVBIG = BOOK_IDEAL_WIDTH_VVBIG__NO_EXTRA + WIDTH_EXTRA;
-	public int BOOK_IDEAL_HEIGHT_VVBIG = BOOK_IDEAL_HEIGHT_VVBIG__NO_EXTRA + HEIGHT_EXTRA;
+//	public int RIGHT_OPT_PANEL_WIDTH__narrow = 128;
+//	public int RIGHT_OPT_PANEL_WIDTH__menu = 210;
+//	public int RIGHT_OPT_PANEL_WIDTH__wide = 320;
+//	public int BOTTOM_OPT_PANEL_HEIGHT = 128;
+//
+//	public int RIGHT_OPT_PANEL_WIDTH__small_wider_adjust_A = 135;
+//	public int RIGHT_OPT_PANEL_WIDTH__small_wider_adjust_B = 170;
+//
+//	int WIDTH_EXTRA = 100;
+//	int HEIGHT_EXTRA = 42;
+//
+//	public int BOOK_IDEAL_WIDTH_STD__NO_EXTRA = 1176;
+//	public int BOOK_IDEAL_HEIGHT_STD__NO_EXTRA = 874;
+//
+//	public int BOOK_IDEAL_WIDTH_STD = BOOK_IDEAL_WIDTH_STD__NO_EXTRA + WIDTH_EXTRA;
+//	public int BOOK_IDEAL_HEIGHT_STD = BOOK_IDEAL_HEIGHT_STD__NO_EXTRA + HEIGHT_EXTRA;
+//
+//	int WIDTH_SMALL_MINUS = 66;
+//	int HEIGHT_SMALL_MINUS = 90;
+//
+//	public int BOOK_IDEAL_WIDTH_SMALL__NO_EXTRA = BOOK_IDEAL_WIDTH_STD__NO_EXTRA - WIDTH_SMALL_MINUS;
+//	public int BOOK_IDEAL_HEIGHT_SMALL__NO_EXTRA = BOOK_IDEAL_HEIGHT_STD__NO_EXTRA - HEIGHT_SMALL_MINUS;
+//
+//	public int BOOK_IDEAL_WIDTH_SMALL = BOOK_IDEAL_WIDTH_SMALL__NO_EXTRA + WIDTH_EXTRA + RIGHT_OPT_PANEL_WIDTH__small_wider_adjust_B;
+//	public int BOOK_IDEAL_HEIGHT_SMALL = BOOK_IDEAL_HEIGHT_SMALL__NO_EXTRA; // + HEIGHT_EXTRA; reduced height on row res laptops
+//
+//	int WIDTH_BIG_PLUS = 66;
+//	int HEIGHT_BIG_PLUS = 40;
+//
+//	public int BOOK_IDEAL_WIDTH_BIG__NO_EXTRA = BOOK_IDEAL_WIDTH_STD__NO_EXTRA + WIDTH_BIG_PLUS;
+//	public int BOOK_IDEAL_HEIGHT_BIG__NO_EXTRA = BOOK_IDEAL_HEIGHT_STD__NO_EXTRA + HEIGHT_BIG_PLUS;
+//
+//	public int BOOK_IDEAL_WIDTH_BIG = BOOK_IDEAL_WIDTH_BIG__NO_EXTRA + WIDTH_EXTRA;
+//	public int BOOK_IDEAL_HEIGHT_BIG = BOOK_IDEAL_HEIGHT_BIG__NO_EXTRA + HEIGHT_EXTRA;
+//
+//	int WIDTH_VBIG_PLUS = 116;
+//	int HEIGHT_VBIG_PLUS = 80;
+//
+//	public int BOOK_IDEAL_WIDTH_VBIG__NO_EXTRA = BOOK_IDEAL_WIDTH_STD__NO_EXTRA + WIDTH_VBIG_PLUS;
+//	public int BOOK_IDEAL_HEIGHT_VBIG__NO_EXTRA = BOOK_IDEAL_HEIGHT_STD__NO_EXTRA + HEIGHT_VBIG_PLUS;
+//
+//	public int BOOK_IDEAL_WIDTH_VBIG = BOOK_IDEAL_WIDTH_VBIG__NO_EXTRA + WIDTH_EXTRA;
+//	public int BOOK_IDEAL_HEIGHT_VBIG = BOOK_IDEAL_HEIGHT_VBIG__NO_EXTRA + HEIGHT_EXTRA;
+//
+//	int WIDTH_VVBIG_PLUS = 176;
+//	int HEIGHT_VVBIG_PLUS = 120;
+//
+//	public int BOOK_IDEAL_WIDTH_VVBIG__NO_EXTRA = BOOK_IDEAL_WIDTH_STD__NO_EXTRA + WIDTH_VVBIG_PLUS;
+//	public int BOOK_IDEAL_HEIGHT_VVBIG__NO_EXTRA = BOOK_IDEAL_HEIGHT_STD__NO_EXTRA + HEIGHT_VVBIG_PLUS;
+//
+//	public int BOOK_IDEAL_WIDTH_VVBIG = BOOK_IDEAL_WIDTH_VVBIG__NO_EXTRA + WIDTH_EXTRA;
+//	public int BOOK_IDEAL_HEIGHT_VVBIG = BOOK_IDEAL_HEIGHT_VVBIG__NO_EXTRA + HEIGHT_EXTRA;
 
 	int macOrLinuxAdjust(int orig) {
 		// =============================================================
@@ -1114,16 +945,15 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 	*/
 	public void executeCmd(String cmd) {
 		// =============================================================
+
 		if (cmd.contentEquals("exit")) {
 
-			App.savePreferences();
-			System.exit(0); // SHUTS DOWN aaBridge NOW
-			return;
+			App.exitAndRelaunch(); // never returns
 		}
 
 		if (cmd.contentEquals("acceptPaste")) {
 
-			App.frame.clickPasteTimer.start();
+			App.frame.rightClickPasteTimer.start();
 			return;
 		}
 
@@ -1141,14 +971,25 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		if (cmd.contentEquals("playBridge_and_dealChoice")) {
 
 			App.dualDealListBtns.setVisible(false);
-			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth() - RIGHT_OPT_PANEL_WIDTH__narrow);
+			AaaMenu.checkAndSetMininumOptionsPanelSize();
 			App.frame.rop.setSelectedIndex(App.RopTab_0_NewDealChoices);
-			App.frame.splitPaneVert.setDividerLocation(App.frame.getHeight() - BOTTOM_OPT_PANEL_HEIGHT);
 			App.book = new Book(); // which will be empty
 			App.aaBookPanel.matchToAppBook();
 			App.setVisualMode(App.Vm_InsideADeal);
 			App.setMode(Aaa.NORMAL_ACTIVE);
 			CmdHandler.playBridgeBlueCenter();
+			return;
+		}
+
+		if (cmd.contentEquals("openPage_Interesting_Deals")) {
+			String chapterPartName = "Interesting";
+			Book b = App.bookshelfArray.get(0).getBookWithChapterPartName(chapterPartName);
+			if (b != null) {
+				LinChapter chapter = b.getChapterByDisplayNamePart(chapterPartName);
+				if (chapter != null) {
+					/* chapterLoaded */chapter.loadWithShow("replaceBookPanel");
+				}
+			}
 			return;
 		}
 
@@ -1183,7 +1024,7 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		}
 
 		if (cmd.contentEquals("copyFolder_Doc_Collection")) {
-			Bookshelf.copy_folder_to_desktop("doc-collection", "aaBridge - Doc Collection");
+			Bookshelf.copy_folder_to_desktop("doc-collection", "aaBridge - Doc Collection", true);
 			return;
 		}
 
@@ -1199,8 +1040,7 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 				LinChapter chapter = b.getChapterByDisplayNamePart(chapterPartName);
 				if (chapter != null) {
 					/* chapterLoaded */chapter.loadWithShow("replaceBookPanel");
-
-					App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth() - RIGHT_OPT_PANEL_WIDTH__narrow);
+					AaaMenu.checkAndSetMininumOptionsPanelSize();
 					App.frame.rop.setSelectedIndex(App.RopTab_3_DFC);
 				}
 			}
@@ -1267,6 +1107,30 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 			return;
 		}
 
+		if (cmd.contentEquals("localize-how-to")) {
+			String chapterPartName = "localize";
+			Book b = App.bookshelfArray.get(0).getBookWithChapterPartName(chapterPartName);
+			if (b != null) {
+				LinChapter chapter = b.getChapterByDisplayNamePart(chapterPartName);
+				if (chapter != null) {
+					/* chapterLoaded */chapter.loadWithShow("replaceBookPanel");
+				}
+			}
+			return;
+		}
+
+		if (cmd.contentEquals("openPage_UseDealerScripts")) {
+			String chapterPartName = "Use Dealer Scripts";
+			Book b = App.bookshelfArray.get(0).getBookWithChapterPartName(chapterPartName);
+			if (b != null) {
+				LinChapter chapter = b.getChapterByDisplayNamePart(chapterPartName);
+				if (chapter != null) {
+					/* chapterLoaded */chapter.loadWithShow("replaceBookPanel");
+				}
+			}
+			return;
+		}
+
 		if (cmd.contentEquals("openPage_WhatIsaaBridge")) {
 			String chapterPartName = "What is aaBridge";
 			Book b = App.bookshelfArray.get(0).getBookWithChapterPartName(chapterPartName);
@@ -1291,6 +1155,34 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 			return;
 		}
 
+//		if (cmd == "openPage_OCPQuickTables") {
+//			String chapterPartName = "Quick Tables";
+//			for (Bookshelf shelf : App.bookshelfArray) {
+//				Book b = shelf.getBookWithChapterPartName(chapterPartName);
+//				if (b != null) {
+//					LinChapter chapter = b.getChapterByDisplayNamePart(chapterPartName);
+//					if (chapter != null) {
+//						/* chapterLoaded */chapter.loadWithShow("replaceBookPanel");
+//					}
+//				}
+//			}
+//			return;
+//		}
+
+		if (cmd == "openPage_OCP_intro") {
+			String chapterPartName = "OCP Intro";
+			for (Bookshelf shelf : App.bookshelfArray) {
+				Book b = shelf.getBookWithChapterPartName(chapterPartName);
+				if (b != null) {
+					LinChapter chapter = b.getChapterByDisplayNamePart(chapterPartName);
+					if (chapter != null) {
+						/* chapterLoaded */chapter.loadWithShow("replaceBookPanel");
+					}
+				}
+			}
+			return;
+		}
+
 		if (cmd.contentEquals("openPage_ListOfInterestingLins")) {
 			String chapterPartName = "List of Interesting Lins";
 			Book b = App.bookshelfArray.get(0).getBookWithChapterPartName(chapterPartName);
@@ -1303,169 +1195,125 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 			return;
 		}
 
-		if (cmd.contentEquals("tutorial_idealSize_small_noExtra")) {
-			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth());
-			App.frame.splitPaneVert.setDividerLocation(App.frame.getHeight());
-			Rectangle r = getBounds();
-			r.width = macOrLinuxAdjust(BOOK_IDEAL_WIDTH_SMALL__NO_EXTRA); // - RIGHT_OPT_PANEL_WIDTH__narrow ;
-			r.height = BOOK_IDEAL_HEIGHT_SMALL__NO_EXTRA; // - BOTTOM_OPT_PANEL_HEIGHT;
-			setBounds(r);
+		if (cmd.contentEquals("set_size_1")) {
+			AaaMenu.actionSetSize(1);
 			return;
 		}
 
-		if (cmd.contentEquals("tutorial_idealSize_small")) {
-			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth() - RIGHT_OPT_PANEL_WIDTH__narrow - RIGHT_OPT_PANEL_WIDTH__small_wider_adjust_A);
-			App.frame.splitPaneVert.setDividerLocation(App.frame.getHeight()); // - BOTTOM_OPT_PANEL_HEIGHT);
-			Rectangle r = getBounds();
-			r.width = macOrLinuxAdjust(BOOK_IDEAL_WIDTH_SMALL);
-			r.height = BOOK_IDEAL_HEIGHT_SMALL;
-			setBounds(r);
+		if (cmd.contentEquals("set_size_2")) {
+			AaaMenu.actionSetSize(2);
 			return;
 		}
 
-		if (cmd.contentEquals("tutorial_idealSize_std_noExtra")) {
-			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth());
-			App.frame.splitPaneVert.setDividerLocation(App.frame.getHeight());
-			Rectangle r = getBounds();
-			r.width = macOrLinuxAdjust(BOOK_IDEAL_WIDTH_STD__NO_EXTRA); // - RIGHT_OPT_PANEL_WIDTH__narrow ;
-			r.height = BOOK_IDEAL_HEIGHT_STD__NO_EXTRA; // - BOTTOM_OPT_PANEL_HEIGHT;
-			setBounds(r);
+		if (cmd.contentEquals("set_size_3")) {
+			AaaMenu.actionSetSize(3);
 			return;
 		}
 
-		if (cmd.contentEquals("tutorial_idealSize_std")) {
-			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth() - RIGHT_OPT_PANEL_WIDTH__narrow);
-			App.frame.splitPaneVert.setDividerLocation(App.frame.getHeight() - BOTTOM_OPT_PANEL_HEIGHT);
-			Rectangle r = getBounds();
-			r.width = macOrLinuxAdjust(BOOK_IDEAL_WIDTH_STD);
-			r.height = BOOK_IDEAL_HEIGHT_STD;
-			setBounds(r);
+		if (cmd.contentEquals("set_size_4")) {
+			AaaMenu.actionSetSize(4);
 			return;
 		}
 
-		if (cmd.contentEquals("tutorial_idealSize_big_noExtra")) {
-			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth());
-			App.frame.splitPaneVert.setDividerLocation(App.frame.getHeight());
-			Rectangle r = getBounds();
-			r.width = macOrLinuxAdjust(BOOK_IDEAL_WIDTH_BIG__NO_EXTRA); // - RIGHT_OPT_PANEL_WIDTH__narrow ;
-			r.height = BOOK_IDEAL_HEIGHT_BIG__NO_EXTRA; // - BOTTOM_OPT_PANEL_HEIGHT;
-			setBounds(r);
+		if (cmd.contentEquals("set_size_5")) {
+			AaaMenu.actionSetSize(5);
 			return;
 		}
 
-		if (cmd.contentEquals("tutorial_idealSize_big")) {
-			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth() - RIGHT_OPT_PANEL_WIDTH__narrow);
-			App.frame.splitPaneVert.setDividerLocation(App.frame.getHeight() - BOTTOM_OPT_PANEL_HEIGHT);
-			Rectangle r = getBounds();
-			r.width = macOrLinuxAdjust(BOOK_IDEAL_WIDTH_BIG);
-			r.height = BOOK_IDEAL_HEIGHT_BIG;
-			setBounds(r);
+		if (cmd.contentEquals("set_size_6")) {
+			AaaMenu.actionSetSize(6);
 			return;
 		}
 
-		if (cmd.contentEquals("tutorial_idealSize_vbig_noExtra")) {
-			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth());
-			App.frame.splitPaneVert.setDividerLocation(App.frame.getHeight());
-			Rectangle r = getBounds();
-			r.width = macOrLinuxAdjust(BOOK_IDEAL_WIDTH_VBIG__NO_EXTRA); // - RIGHT_OPT_PANEL_WIDTH__narrow ;
-			r.height = BOOK_IDEAL_HEIGHT_VBIG__NO_EXTRA; // - BOTTOM_OPT_PANEL_HEIGHT;
-			setBounds(r);
+		if (cmd.contentEquals("set_size_7")) {
+			AaaMenu.actionSetSize(7);
 			return;
 		}
 
-		if (cmd.contentEquals("tutorial_idealSize_vbig")) {
-			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth() - RIGHT_OPT_PANEL_WIDTH__narrow);
-			App.frame.splitPaneVert.setDividerLocation(App.frame.getHeight() - BOTTOM_OPT_PANEL_HEIGHT);
-			Rectangle r = getBounds();
-			r.width = macOrLinuxAdjust(BOOK_IDEAL_WIDTH_VBIG);
-			r.height = BOOK_IDEAL_HEIGHT_VBIG;
-			setBounds(r);
+		if (cmd.contentEquals("set_size_8")) {
+			AaaMenu.actionSetSize(8);
 			return;
 		}
 
-		if (cmd.contentEquals("tutorial_idealSize_vvbig_noExtra")) {
-			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth());
-			App.frame.splitPaneVert.setDividerLocation(App.frame.getHeight());
-			Rectangle r = getBounds();
-			r.width = macOrLinuxAdjust(BOOK_IDEAL_WIDTH_VVBIG__NO_EXTRA); // - RIGHT_OPT_PANEL_WIDTH__narrow ;
-			r.height = BOOK_IDEAL_HEIGHT_VVBIG__NO_EXTRA; // - BOTTOM_OPT_PANEL_HEIGHT;
-			setBounds(r);
+		if (cmd.contentEquals("set_size_9")) {
+			AaaMenu.actionSetSize(9);
 			return;
 		}
 
-		if (cmd.contentEquals("tutorial_idealSize_vvbig")) {
-			App.frame.splitPaneHorz.setDividerLocation(App.frame.getWidth() - RIGHT_OPT_PANEL_WIDTH__narrow);
-			App.frame.splitPaneVert.setDividerLocation(App.frame.getHeight() - BOTTOM_OPT_PANEL_HEIGHT);
-			Rectangle r = getBounds();
-			r.width = macOrLinuxAdjust(BOOK_IDEAL_WIDTH_VVBIG);
-			r.height = BOOK_IDEAL_HEIGHT_VVBIG;
-			setBounds(r);
+		if (cmd.contentEquals("set_size_0")) {
+			AaaMenu.actionSetSize(10);
 			return;
 		}
 
-		if (cmd.contentEquals("showSeatChoiceOpts_noSizeChange")) {
-			App.frame.rop.setSelectedIndex(App.RopTab_2_SeatChoice);
+		if (cmd.contentEquals("set_size_user_A")) {
+			AaaMenu.actionUserSizeEntry("A");
+			return;
+		}
+
+		if (cmd.contentEquals("set_size_user_B")) {
+			AaaMenu.actionUserSizeEntry("B");
+			return;
+		}
+
+		if (cmd.contentEquals("set_size_user_C")) {
+			AaaMenu.actionUserSizeEntry("C");
 			return;
 		}
 
 		if (cmd.contentEquals("showStartUpOpts")) {
-			int menuSetRightOptWidth = App.frame.getWidth() - RIGHT_OPT_PANEL_WIDTH__menu;
-			App.frame.splitPaneHorz.setDividerLocation(menuSetRightOptWidth);
+			AaaMenu.checkAndSetMininumOptionsPanelSize();
 			App.frame.rop.setSelectedIndex(App.RopTab_7_ShowOptionalBtns);
 			return;
 		}
 
 		if (cmd.contentEquals("showRedHintsOpts")) {
-			int menuSetRightOptWidth = App.frame.getWidth() - RIGHT_OPT_PANEL_WIDTH__menu;
-			App.frame.splitPaneHorz.setDividerLocation(menuSetRightOptWidth);
+			AaaMenu.checkAndSetMininumOptionsPanelSize();
 			App.frame.rop.setSelectedIndex(App.RopTab_6_RedHints);
 			return;
 		}
 
-		int menuSetRightOptWidth = App.frame.getWidth() - RIGHT_OPT_PANEL_WIDTH__menu;
-
 		if (cmd == "rightPanelPrefs0_NewDealChoices") {
-			App.frame.splitPaneHorz.setDividerLocation(menuSetRightOptWidth);
+			AaaMenu.checkAndSetMininumOptionsPanelSize();
 			App.frame.rop.setSelectedIndex(App.RopTab_0_NewDealChoices);
 			return;
 		}
 		if (cmd == "rightPanelPrefs1_AutoPlay") {
-			App.frame.splitPaneHorz.setDividerLocation(menuSetRightOptWidth);
+			AaaMenu.checkAndSetMininumOptionsPanelSize();
 			App.frame.rop.setSelectedIndex(App.RopTab_1_Autoplay);
 			return;
 		}
 		if (cmd == "rightPanelPrefs2_SeatChoice") {
-			App.frame.splitPaneHorz.setDividerLocation(menuSetRightOptWidth);
+			AaaMenu.checkAndSetMininumOptionsPanelSize();
 			App.frame.rop.setSelectedIndex(App.RopTab_2_SeatChoice);
 			return;
 		}
 		if (cmd == "rightPanelPrefs3_DFC") {
-			App.frame.splitPaneHorz.setDividerLocation(menuSetRightOptWidth);
+			AaaMenu.checkAndSetMininumOptionsPanelSize();
 			App.frame.rop.setSelectedIndex(App.RopTab_3_DFC);
 			return;
 		}
 		if (cmd == "rightPanelPrefs4_SuitColors") {
-			App.frame.splitPaneHorz.setDividerLocation(menuSetRightOptWidth);
+			AaaMenu.checkAndSetMininumOptionsPanelSize();
 			App.frame.rop.setSelectedIndex(App.RopTab_4_SuitColors);
 			return;
 		}
 		if (cmd == "rightPanelPrefs5_DSizeFont") {
-			App.frame.splitPaneHorz.setDividerLocation(menuSetRightOptWidth);
+			AaaMenu.checkAndSetMininumOptionsPanelSize();
 			App.frame.rop.setSelectedIndex(App.RopTab_5_DSizeFont);
 			return;
 		}
 		if (cmd == "rightPanelPrefs6_RedHints") {
-			App.frame.splitPaneHorz.setDividerLocation(menuSetRightOptWidth);
+			AaaMenu.checkAndSetMininumOptionsPanelSize();
 			App.frame.rop.setSelectedIndex(App.RopTab_6_RedHints);
 			return;
 		}
 		if (cmd == "rightPanelPrefs7_ShowBtns") {
-			App.frame.splitPaneHorz.setDividerLocation(menuSetRightOptWidth);
+			AaaMenu.checkAndSetMininumOptionsPanelSize();
 			App.frame.rop.setSelectedIndex(App.RopTab_7_ShowOptionalBtns);
 			return;
 		}
 		if (cmd == "lowerPanel") {
-			App.frame.splitPaneVert.setDividerLocation(App.frame.getHeight() - BOTTOM_OPT_PANEL_HEIGHT);
+			App.frame.splitPaneVert.setDividerLocation(App.frame.getHeight() - 3 * AaaMenu.L_STD);
 			return;
 		}
 		if (cmd == "menuHelpHelp") {
@@ -1482,21 +1330,21 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		}
 		if (cmd == "menuSwapLinFilePlayer") {
 			try {
-				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.blogspot.com/2013/08/swap-between-aabridge-and-bbo-as-lin.html"));
+				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.rogerpf.com/2013/08/swap-between-aabridge-and-bbo-as-lin.html"));
 			} catch (Exception ev) {
 			}
 			return;
 		}
 		if (cmd == "blog_WhatIsaaBridge") {
 			try {
-				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.blogspot.com/2016/02/what-is-aabridge.html"));
+				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.rogerpf.com/2016/02/what-is-aabridge.html"));
 			} catch (Exception ev) {
 			}
 			return;
 		}
 		if (cmd == "blog_MemorizeSuitDistrib") {
 			try {
-				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.blogspot.com/2016/04/memorize-suit-distributions-how-to.html"));
+				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.rogerpf.com/2016/04/memorize-suit-distributions-how-to.html"));
 			} catch (Exception ev) {
 			}
 
@@ -1504,42 +1352,42 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		}
 		if (cmd == "blog_DownTheRabbitHole") {
 			try {
-				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.blogspot.com/2016/04/down-rabbit-hole.html"));
+				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.rogerpf.com/2016/04/down-rabbit-hole.html"));
 			} catch (Exception ev) {
 			}
 			return;
 		}
 		if (cmd == "blog_seatChoiceAndThatPinkDot") {
 			try {
-				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.blogspot.com/2016/04/seat-choice-and-that-pink-dot.html"));
+				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.rogerpf.com/2016/04/seat-choice-and-that-pink-dot.html"));
 			} catch (Exception ev) {
 			}
 			return;
 		}
 		if (cmd == "blog_BboToaaBridge") {
 			try {
-				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.blogspot.com/2015/11/how-do-i-get-bbo-hand-into-aabridge.html"));
+				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.rogerpf.com/2015/11/how-do-i-get-bbo-hand-into-aabridge.html"));
 			} catch (Exception ev) {
 			}
 			return;
 		}
 		if (cmd == "blog_PlayExistingDeal") {
 			try {
-				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.blogspot.com/2016/04/play-existing-deal-in-aabridge.html"));
+				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.rogerpf.com/2016/04/play-existing-deal-in-aabridge.html"));
 			} catch (Exception ev) {
 			}
 			return;
 		}
 		if (cmd == "blog_aaBridgeToBbo") {
 			try {
-				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.blogspot.com/2015/12/how-do-i-get-aabridge-hands-up-to-bbo.html"));
+				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.rogerpf.com/2015/12/how-do-i-get-aabridge-hands-up-to-bbo.html"));
 			} catch (Exception ev) {
 			}
 			return;
 		}
 		if (cmd == "blog_TypeIntoaaBridge") {
 			try {
-				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.blogspot.com/2015/12/how-do-i-enter-type-hands-into-aabridge.html"));
+				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.rogerpf.com/2015/12/how-do-i-enter-type-hands-into-aabridge.html"));
 			} catch (Exception ev) {
 			}
 			return;
@@ -1553,35 +1401,77 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		}
 		if (cmd == "blog_VisualizeHands") {
 			try {
-				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.blogspot.com/2016/06/learn-to-visualize-hands-with-aabridge.html"));
+				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.rogerpf.com/2016/06/learn-to-visualize-hands-with-aabridge.html"));
 			} catch (Exception ev) {
 			}
 			return;
 		}
 		if (cmd == "blog_UseTheDDS") {
 			try {
-				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.blogspot.com/2015/07/double-dummy-solver-added-to-aabridge.html"));
+				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.rogerpf.com/2015/07/double-dummy-solver-added-to-aabridge.html"));
 			} catch (Exception ev) {
 			}
 			return;
 		}
 		if (cmd == "blog_debugBboDealerScripts") {
 			try {
-				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.blogspot.com/2015/09/debugging-bbo-bridge-dealer-scripts.html"));
+				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.rogerpf.com/2015/09/debugging-bbo-bridge-dealer-scripts.html"));
 			} catch (Exception ev) {
 			}
 			return;
 		}
 		if (cmd == "web_LookAtBlog") {
 			try {
-				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.blogspot.com/"));
+				Desktop.getDesktop().browse(new java.net.URI("http://musingsonbridge.rogerpf.com/"));
 			} catch (Exception ev) {
 			}
 			return;
 		}
+		if (cmd == "web_OCPQuickTables") {
+			try {
+				Desktop.getDesktop().browse(new java.net.URI("http://rogerpf.com/ocp"));
+			} catch (Exception ev) {
+			}
+			return;
+		}
+		if (cmd == "web_OCPResources") {
+			try {
+				Desktop.getDesktop().browse(new java.net.URI("http://rogerpf.com/aaBridge#OCP"));
+			} catch (Exception ev) {
+			}
+			return;
+		}
+//		if (cmd == "web_OCPVideos") {
+//  		try {
+// 			Desktop.getDesktop().browse(new java.net.URI("https://www.youtube.com/channel/UCTGNUS8jbx85QOMUPlHoRMA"));
+//			} catch (Exception ev) {
+//			}
+//			return;
+//		}
 		if (cmd == "web_LookAtWebsite") {
 			try {
 				Desktop.getDesktop().browse(new java.net.URI("http://rogerpf.com/aaBridge"));
+			} catch (Exception ev) {
+			}
+			return;
+		}
+		if (cmd == "web_ArchiveGoogleDrive") {
+			try {
+				Desktop.getDesktop().browse(new java.net.URI("https://drive.google.com/drive/folders/0B8ErhAQp22E4WjFZTGJwWVVUQ1U"));
+			} catch (Exception ev) {
+			}
+			return;
+		}
+		if (cmd == "web_aaBridgeAnnouncements") {
+			try {
+				Desktop.getDesktop().browse(new java.net.URI("https://groups.google.com/forum/#!forum/aabridge-announcements"));
+			} catch (Exception ev) {
+			}
+			return;
+		}
+		if (cmd == "web_aaBridgeUsersGroup") {
+			try {
+				Desktop.getDesktop().browse(new java.net.URI("https://groups.google.com/forum/#!forum/aabridge-users"));
 			} catch (Exception ev) {
 			}
 			return;
@@ -1590,12 +1480,14 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 
 			java.net.URL imageFileURL = AaaOuterFrame.class.getResource("aaBridge_proto_icon.png");
 			final ImageIcon icon = new ImageIcon(imageFileURL);
-//			final ImageIcon icon = Toolkit.getDefaultToolkit().createImage(imageFileURL);
 
-			String s = "AaBridge written by Roger Pfister\n\n" + "This is version -  " + VersionAndBuilt.getVer() + "\n" + "Build Number   -               "
-					+ VersionAndBuilt.getBuildNo() + "\n" + "Built on              -  " + VersionAndBuilt.getBuilt() + "\n\n" + "see - http://RogerPf.com\n\n";
-			;
-			JOptionPane.showMessageDialog(this, s, "About - aaBridge", JOptionPane.INFORMATION_MESSAGE, icon);
+			String s = "      ";
+
+			String t = "aaBridge written by Roger Pfister\n\n" + "This is version -  " + VersionAndBuilt.getVer() + "\n" + "Build Number   -               "
+					+ VersionAndBuilt.getBuildNo() + "\n" + "Built on              -  " + VersionAndBuilt.getBuilt() + "\n\n" + "see - http://RogerPf.com\n\n"
+					+ "Thanks go to\n" + s + "Charlene Galerty\n" + s + "Sanja A\n" + s + "Filiz Sarıoğlu\n";
+
+			JOptionPane.showMessageDialog(this, t, "About - aaBridge", JOptionPane.INFORMATION_MESSAGE, icon);
 			return;
 		}
 
@@ -1626,6 +1518,12 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		if (this.getExtendedState() == NORMAL) {
 			App.frameWidth = getWidth();
 			App.frameHeight = getHeight();
+		}
+
+		if (App.frameDividersChangeWanted) {
+			App.frameDividersChangeWanted = false;
+			App.frame.splitPaneHorz.setDividerLocation(App.horzDividerLocation);
+			App.frame.splitPaneVert.setDividerLocation(App.vertDividerLocation);
 		}
 	}
 
@@ -1701,8 +1599,12 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		setTitle(s);
 	}
 
+	private final static String myhands_fetchlin = "www.bridgebase.com/myhands/fetchlin.php?id=";
+	private final static String handviewer_myhand = "www.bridgebase.com/tools/handviewer.html?bbo=y&myhand=M-";
+	private final static String handviewer_lin = "www.bridgebase.com/tools/handviewer.html?bbo=y&lin=";
+
 	/**
-	 *  drag and drop support for externaly (outside java from host OS) dropped deal files
+	 *  drag and drop support for externally (outside java from host OS) dropped deal files
 	 */
 	private TransferHandler handler = new TransferHandler() {
 		// =============================================================
@@ -1729,8 +1631,10 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 
 			if (support.isDataFlavorSupported(DataFlavor.javaFileListFlavor)) {
 
+				boolean found = true;
+
 				Transferable t = support.getTransferable();
-				File[] files;
+				File[] files = null;
 				try {
 					@SuppressWarnings("unchecked")
 					java.util.List<File> list = (java.util.List<File>) t.getTransferData(DataFlavor.javaFileListFlavor);
@@ -1747,19 +1651,30 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 					}
 
 				} catch (Exception e) {
-					return false;
+					found = false;
 				}
 
-				// is this a single dropped link to a lin file (probably on windows)
-				if ((files.length == 1) && files[0].getName().toLowerCase().endsWith(".url")) {
+				if (found) {
+
+					if ((files.length == 1) && files[0].getName().toLowerCase().endsWith(".url")) {
+						// drop through
+					}
+					else {
+						if (files.length == 1)
+							App.lastDroppedList = files.clone();
+						return BridgeLoader.processDroppedList(files);
+					}
+
+					// This should be a single dropped link, to a lin file ? Most likely we are on windows.
 					String s = "";
 					try {
 						FileInputStream fis = new FileInputStream(files[0]);
-						byte[] buf = new byte[1024];
+						byte[] buf = new byte[8 * 1024];
 						fis.read(buf);
 						s = new String(buf);
 						fis.close();
 					} catch (IOException e) {
+						return false;
 					}
 
 					int from = s.toLowerCase().indexOf("http://");
@@ -1773,23 +1688,25 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 					String u = "";
 					if (from > 0 && to > from) {
 						u = s.substring(from, to);
-						String temp_filename = MassGi_utils.readLinFileFromWebsite(u);
-						files[0] = new File(temp_filename);
-					}
-					else
-						return false;
-				}
+						if (u.contains("linurl=")) {
+							u = u.substring(u.indexOf("linurl=") + 7);
+						}
 
-				return BridgeLoader.processDroppedList(files);
+						return common_drop_and_right_click(u);
+					}
+					else {
+						return false;
+					}
+				}
 			}
 
 			/**
-			 *  so no dirs or files or jars (with books) so let try looking for lin's
+			 *  so no dirs or files or jars (with books) so let try looking for lins or links
 			 */
 			if (support.isDataFlavorSupported(DataFlavor.stringFlavor)) {
 
 				Transferable t = support.getTransferable();
-				String s_in, s;
+				String s_in;
 				try {
 					// @SuppressWarnings("unchecked")
 					s_in = ((String) t.getTransferData(DataFlavor.stringFlavor)).trim();
@@ -1797,33 +1714,8 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 					return false;
 				}
 
-				// drag and dropped lin link (on a MAC)
-				s = s_in;
-				if (s_in.toLowerCase().contains("http://www.bridgebase.com/")) {
-					String temp_filename = MassGi_utils.readLinFileFromWebsite(s);
-					if (temp_filename.isEmpty() == false) {
-						File[] files = new File[1];
-						files[0] = new File(temp_filename);
-						return BridgeLoader.processDroppedList(files);
-					}
-					return false;
-				}
-
-				// Drag and dropped Tiny URL Win and MAC
-				if (s_in.length() < 40 && s_in.startsWith("http")) { // assume it is a 'tiny url' of some find
-					s = MassGi_utils.fetchRedirectedUrl(s_in);
-				}
-				if (s.length() < 40)
-					return false;
-
-				String filename = MassGi_utils.createLinFileFromText(s);
-
-				if (filename.isEmpty())
-					return false;
-
-				File[] files = new File[1];
-				files[0] = new File(filename);
-				return BridgeLoader.processDroppedList(files);
+				// drag and dropped lin link (on a MAC ?)
+				return common_drop_and_right_click(s_in);
 			}
 
 			return false;
@@ -1832,16 +1724,16 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 
 	/**
 	*/
-	public Timer clickPasteTimer = new Timer(10, new ActionListener() {
+	public Timer rightClickPasteTimer = new Timer(10, new ActionListener() {
 		public void actionPerformed(ActionEvent evt) {
 			// =============================================================
-			clickPasteTimer.stop();
-			clickPasteTimer.setDelay(10);
+			rightClickPasteTimer.stop();
+			rightClickPasteTimer.setDelay(10);
 
 			Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 
 			Transferable clipData = clipboard.getContents(clipboard);
-			String s = "", s_in = "";
+			String s_in = "";
 			if (clipData != null) {
 				try {
 					if (clipData.isDataFlavorSupported(DataFlavor.stringFlavor)) {
@@ -1854,21 +1746,74 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 
 			// System.out.println("Clicked - " + s_in);
 
-			s = s_in;
-			if (s_in.length() < 40 && s_in.startsWith("http")) { // assume it is a 'tiny url' of some find
-				s = MassGi_utils.fetchRedirectedUrl(s_in);
-				if (s.length() < 40)
-					return;
-			}
+			common_drop_and_right_click(s_in);
+		}
+	});
 
-			String filename = MassGi_utils.createLinFileFromText(s);
+	public boolean common_drop_and_right_click(String s_in) {
+		// =============================================================
 
-			if (filename.isEmpty())
-				return;
+		// Drag and dropped Tiny URL Win and MAC
 
-			File[] files = new File[1];
-			files[0] = new File(filename);
-			BridgeLoader.processDroppedList(files);
+		String temp_filename = "";
+
+		int ind = -1;
+
+		if (s_in.length() < 40 && s_in.startsWith("http")) { // assume it is a 'tiny url' of some find
+			String fetched = MassGi_utils.fetchRedirectedUrl(s_in);
+			if (fetched.length() < 40) // take this as a min file min length
+				return false;
+			temp_filename = MassGi_utils.createLinFileFromText(fetched);
+		}
+
+		else if ((ind = s_in.indexOf(myhands_fetchlin)) >= 0) {
+			temp_filename = MassGi_utils.readLinFileFromWebsite(s_in);
+		}
+
+		else if ((ind = s_in.indexOf(handviewer_myhand)) >= 0) {
+			String rem = s_in.substring(ind + handviewer_myhand.length());
+			String ay[] = rem.split("-");
+			if (ay.length != 2)
+				return false;
+			String url = "http://" + myhands_fetchlin + ay[0] + "&when_played=" + ay[1];
+			temp_filename = MassGi_utils.readLinFileFromWebsite(url);
+		}
+
+		else if ((ind = s_in.indexOf(handviewer_lin)) >= 0) {
+			temp_filename = MassGi_utils.createLinFileFromText(s_in);
+		}
+
+		else {
+			temp_filename = MassGi_utils.saveStringAsLinFile(s_in);
+		}
+
+		if (temp_filename.isEmpty()) {
+			return false;
+		}
+
+		File[] files = new File[1];
+		files[0] = new File(temp_filename);
+		return BridgeLoader.processDroppedList(files);
+	}
+
+	public void delayed_process__temp_MyHands() {
+		// =============================================================
+		File[] files = new File[1];
+		files[0] = new File(App.tempMyHandsPath);
+		App.lastDroppedList = files;
+
+		temp_MyHands__process_timer.start();
+	}
+
+	/**
+	*/
+	public Timer temp_MyHands__process_timer = new Timer(2500, new ActionListener() {
+		public void actionPerformed(ActionEvent evt) {
+			// =============================================================
+			temp_MyHands__process_timer.stop();
+			temp_MyHands__process_timer.setDelay(2500);
+
+			BridgeLoader.processDroppedList(App.lastDroppedList);
 		}
 	});
 

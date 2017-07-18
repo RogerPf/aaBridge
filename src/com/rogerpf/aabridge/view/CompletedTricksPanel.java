@@ -27,6 +27,7 @@ import java.awt.geom.RoundRectangle2D.Float;
 import java.util.ArrayList;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Card;
 import com.rogerpf.aabridge.model.Cc;
@@ -109,6 +110,7 @@ public class CompletedTricksPanel extends ClickPanel {
 
 		public void mouseClicked(MouseEvent e) {
 			// System.out.println("Mouse Clicked WeTheyDisplayPanel");
+
 			if (!App.isMode(Aaa.REVIEW_PLAY))
 				return;
 
@@ -247,7 +249,7 @@ public class CompletedTricksPanel extends ClickPanel {
 
 			// draw a cardback ----------------------------------------------
 			rr.setRoundRect(marginLeft + (cardSpacing * step), top, width, height, curve, curve);
-			g2.setColor(Color.white);
+			g2.setColor(Color.WHITE);
 			g2.fill(rr);
 
 			g2.setColor(claimed ? Aaa.weedyBlack : Color.black);
@@ -285,28 +287,28 @@ public class CompletedTricksPanel extends ClickPanel {
 			if (App.deal.contract.isPass()) {
 				g2.setColor(Cc.BlueWeak);
 				fontSize *= 0.8f;
-				text = "Passed Out";
+				text = Aaf.game_passedOut;
 			}
 			else if (trickDiff > 0) {
 				outline = true;
 				g2.setColor(Cc.GreenWeak);
-				text = Integer.toString(trickDiff) + " Over";
+				text = Integer.toString(trickDiff) + " " + Aaf.game_over;
 			}
 			else if (trickDiff == 0) {
 				outline = true;
 				g2.setColor(Cc.GreenWeak);
 				fontSize *= 1.1f;
-				text = "Made";
+				text = Aaf.game_made;
 			}
 			else {
 				g2.setColor(Cc.RedWeak);
-				text = Integer.toString(-trickDiff) + " Down";
+				text = Integer.toString(-trickDiff) + " " + Aaf.game_down;
 			}
 
 			// fill the lozenge ----------------------------------------------
 			r2.setRect(marginLeft2, marginTop2, activityWidth2, activityHeight2);
 			g2.fill(r2);
-			g2.setFont(BridgeFonts.bridgeBoldFont.deriveFont(fontSize));
+			g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize));
 			g2.setColor(Aaa.handBkColorStd);
 
 			Aaa.drawCenteredString(g2, text, marginLeft2, marginTop2, activityWidth2, activityHeight2);
@@ -325,7 +327,7 @@ public class CompletedTricksPanel extends ClickPanel {
 		g2.setColor(Aaa.scoreBkColor);
 		g2.setStroke(new BasicStroke(blackLineWidth * 1.3f));
 		g2.fill(r2);
-		g2.setColor(Color.white);
+		g2.setColor(Color.WHITE);
 		g2.draw(r2);
 
 		// Player Direction (compass.v) text
@@ -338,18 +340,19 @@ public class CompletedTricksPanel extends ClickPanel {
 		Suit contractSuit = App.deal.contract.suit;
 		Dir contractCompass = App.deal.contractCompass;
 
-		Font cardFaceFont = BridgeFonts.faceAndSymbFont.deriveFont(scoreLozengeHeight * 0.8f);
-		Font suitSymbolsFont = BridgeFonts.faceAndSymbFont.deriveFont(scoreLozengeHeight * 0.70f);
-		Font stdTextFont = BridgeFonts.bridgeLightFont.deriveFont(scoreLozengeHeight * 0.6f);
-		Font scoreFont = BridgeFonts.bridgeBoldFont.deriveFont(scoreLozengeHeight * 0.8f);
-		Font doubleRedoubleFont = BridgeFonts.bridgeBoldFont.deriveFont(scoreLozengeHeight * 0.80f);
-		Font claimFont = BridgeFonts.bridgeBoldFont.deriveFont(scoreLozengeHeight * 0.90f);
+		Font cardFaceFont = BridgeFonts.faceAndSymbolFont.deriveFont(scoreLozengeHeight * 0.8f);
+		Font suitSymbolsFont = BridgeFonts.faceAndSymbolFont.deriveFont(scoreLozengeHeight * 0.70f);
+		Font generalFont = BridgeFonts.internatBoldFont.deriveFont(scoreLozengeHeight * 0.60f);
+		Font declarerFont = BridgeFonts.internatBoldFont.deriveFont(scoreLozengeHeight * 0.8f);
+		Font scoreFont = BridgeFonts.internatBoldFont.deriveFont(scoreLozengeHeight * 0.8f);
+		Font doubleRedoubleFont = BridgeFonts.internatBoldFont.deriveFont(scoreLozengeHeight * 0.80f);
+		Font claimFont = BridgeFonts.internatBoldFont.deriveFont(scoreLozengeHeight * 0.90f);
 
 		if (App.deal.contract.isPass()) {
 			x += scoreLozengeWidth * 0.01f;
 			g2.setColor(Color.BLACK);
-			g2.setFont(stdTextFont);
-			g2.drawString("Passed Out", x, y);
+			g2.setFont(generalFont);
+			g2.drawString("    - - - - -", x, y);
 		}
 		else { // we have a normal contact
 			x += scoreLozengeWidth * 0.02f;
@@ -359,8 +362,14 @@ public class CompletedTricksPanel extends ClickPanel {
 
 			x += scoreLozengeWidth * 0.065f;
 			g2.setColor(contractSuit.color(Cc.Ce.Strong));
-			g2.setFont(suitSymbolsFont);
-			g2.drawString(contractSuit.toStrNu(), x, y);
+			if (contractSuit == Suit.NoTrumps) {
+				g2.setFont(generalFont);
+				g2.drawString(Aaf.game_nt, x, y);
+			}
+			else {
+				g2.setFont(suitSymbolsFont);
+				g2.drawString(contractSuit.toStrLower(), x, y);
+			}
 
 			{ // Double and redouble or by
 				g2.setColor(Color.BLACK);
@@ -370,16 +379,12 @@ public class CompletedTricksPanel extends ClickPanel {
 					g2.setFont(doubleRedoubleFont);
 					g2.drawString(dblRdbl, x2, y + scoreLozengeWidth * 0.022f);
 				}
-				else {
-					g2.setFont(stdTextFont);
-					g2.drawString("by", x2, y);
-				}
 			}
 
 			x += scoreLozengeWidth * 0.22f;
 			g2.setColor(Color.BLACK);
-			g2.setFont(scoreFont);
-			g2.drawString(contractCompass.toStr(), x, y);
+			g2.setFont(declarerFont);
+			g2.drawString(Dir.getLangDirChar(contractCompass) + "", x, y);
 		}
 
 		// Now we do the tricks won so far
@@ -388,26 +393,33 @@ public class CompletedTricksPanel extends ClickPanel {
 		int secondPairTrickCount = score.y;
 		String firstPair = Dir.axisStr(targetAxis);
 		String secondPair = Dir.axisStr((targetAxis + 1) % 2);
+
+		// @formatter:off
 		if ((App.deal.getTheYouSeat().v % 2) == targetAxis) {
-			firstPair = "You";
+			firstPair = Aaf.game_youShort;
+			secondPair =    Dir.getLangDirChar( Dir.directionFromChar(secondPair.charAt(0))) + 
+					   "" + Dir.getLangDirChar( Dir.directionFromChar(secondPair.charAt(1)));
 		}
 		else {
-			secondPair = "You";
+			firstPair =     Dir.getLangDirChar( Dir.directionFromChar(firstPair.charAt(0))) + 
+					   "" + Dir.getLangDirChar( Dir.directionFromChar(firstPair.charAt(1)));
+			secondPair = Aaf.game_youShort;
 		}
+		// @formatter:on
 
-		x = scoreLozengeX + scoreLozengeWidth * 0.43f; // jump to the middle of the lozenge
-		g2.setFont(stdTextFont);
+		x = scoreLozengeX + scoreLozengeWidth * 0.425f; // jump to the middle of the lozenge
+		g2.setFont(generalFont);
 		g2.drawString(String.format("%s", firstPair), x, y);
 
-		x += scoreLozengeWidth * 0.15f;
+		x += scoreLozengeWidth * 0.160f;
 		g2.setFont(scoreFont);
 		g2.drawString(String.format("%d", firstPairTrickCount), x, y);
 
-		x += scoreLozengeWidth * 0.15f;
-		g2.setFont(stdTextFont);
+		x += scoreLozengeWidth * 0.160f;
+		g2.setFont(generalFont);
 		g2.drawString(String.format("%s", secondPair), x, y);
 
-		x += scoreLozengeWidth * 0.14f;
+		x += scoreLozengeWidth * 0.135f;
 		g2.setFont(scoreFont);
 		g2.drawString(String.format("%d", secondPairTrickCount), x, y);
 
@@ -434,8 +446,9 @@ public class CompletedTricksPanel extends ClickPanel {
 		float faceFontSize = cardHeight * 0.85f;
 		float symbolFontSize = cardHeight * 0.60f;
 
-		Font faceFont = BridgeFonts.faceAndSymbFont.deriveFont(faceFontSize);
-		Font symbolFont = BridgeFonts.faceAndSymbFont.deriveFont(symbolFontSize);
+		Font symbolFont = BridgeFonts.faceAndSymbolFont.deriveFont(symbolFontSize);
+		Font faceFont = BridgeFonts.faceAndSymbolFont.deriveFont(faceFontSize);
+		Font faceInternationalFont = BridgeFonts.internatBoldFont.deriveFont(faceFontSize);
 
 		// ------------------------------------------------------------------
 
@@ -489,7 +502,7 @@ public class CompletedTricksPanel extends ClickPanel {
 				// fill the lozenge ----------------------------------------------
 				rr.setRoundRect(left, top, cardWidth, cardHeight, curve, curve);
 
-				g2.setPaint(Color.white);
+				g2.setPaint(Color.WHITE);
 				g2.fill(rr);
 
 				float stkSize = colorLineWidth * ((hand == trickWinner) ? 1.95f : 1);
@@ -507,14 +520,15 @@ public class CompletedTricksPanel extends ClickPanel {
 				{
 					g2.setColor(suit.color(Cc.Ce.Weak));
 					g2.setFont(symbolFont);
-					g2.drawString(suit.toStrNu(), symbolLeft, symbolBottom);
+					g2.drawString(suit.toStrLower(), symbolLeft, symbolBottom);
 				}
 
 				// Face Value
 				{
 					g2.setColor(suit.colorCd(Cc.Ce.Strong));
-					g2.setFont(faceFont);
-					g2.drawString(rank.toStr(), faceLeft, faceBottom);
+					char c = Rank.rankToLanguage(rank.toChar());
+					g2.setFont(Aaa.isLatinFaceCard(c) ? faceFont : faceInternationalFont);
+					g2.drawString(c + "", faceLeft, faceBottom);
 				}
 
 			}

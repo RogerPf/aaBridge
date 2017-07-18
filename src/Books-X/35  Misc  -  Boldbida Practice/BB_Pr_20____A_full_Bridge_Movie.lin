@@ -1,0 +1,356 @@
+%%
+%%
+%% <--SECT_HEAD-->=Practice  Board                                    20      
+%%
+%%
+%%  Date last Edited    2016-05-04     set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+%% 
+%% <<--HEADER_FILE-->>=BB_Pr_00___Declarer_Play__HEADER
+%%
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player they need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+%%
+%%  You can NOW use  ALL 2876 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+fh|t40|                    Font   t  t-title             section titles (if any)
+fh|b50|                    Font   b  b-bigTitle   bigger section titles
+
+fh|f42|                    Font   f  f-flow
+fh|s25|                    Font   s  s-small
+
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor      on Title Pages
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor   on Title Pages
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Boldbida                                       Course   2016^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bPractice  Board                                    20      ^*n^-^^|cs||fp||cp||at|^^|
+Lg|e|
+
+ht|j|
+at|If you are  |cp|red|at|^*bNew  to  aaBridge^*n|cp||at| please  click the  { ^*bHome^*n }  button in the far top left and then click  { ^*bFlow^*n }  button.
+Once you have a little knowledge about how to use   ^*baaBridge^*n   please come back to this 'movie'.  |
+
+ht|o|
+fp|t-title|cp|blue|at|^- ^*b-----  Shuf Op  -----^*n     ^-|cp||fp||at|^^|
+n#|3|
+at|^b@2When  you are  'Inside a deal',  high on the left in green baize area you will see the  {^*b Shuf Op ^*n}  button.|
+n#|5|
+at|^^Click on it to shuffle the  East - West  cards and leave you ready to  PLAY  the hand against the 
+^o ^*b aaBridge ^*n bots and the new defensive layout.|
+%% <<--HEADER_REPLACE_END->>
+
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+ht|v|n#|4|at|
+^f Please  |cp|red|at|^*b keep ^*n|cp||at|  clicking  the |fp|f-flow|at|  { ^*b Flow > ^*n }  |fp|s-small|at| button below  |fp||
+
+ht|z|n^|2|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+
+bv|a,v|    %% make all 3 buttons visible 
+ 
+fh|940|fm|9|fp|9|at|@0@1|
+ht|h|
+rq|2876|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2876 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+st||
+--------------------------------------------------------------------
+ah|Practice 20|
+md|1SAKTHQ873DAKQ4C65,SQ9873HAT52DJTCQ7,SJ65HKJD62CAT9832,S42H964D98753CKJ4|
+sv|O|sk|S|
+nt|^z@3^b@2|at|^^|
+n^|5|
+Lg|n|
+at|^*bPractice 20^*n     Your Hand,|
+pg| ***** 1 ***** |
+
+
+mb|1D|mb|1S|mb|2C|mb|p|mb|3N|mb|p|mb|p|mb|p|
+at|    the Bidding,|
+pg| ***** 2 ***** |
+
+
+pc|dJ|
+at|    the lead.|
+pg| ***** 3 ***** |
+
+
+at|      Before we start take a good look and think about it yourself.|
+pg| ***** 4 ***** |
+
+
+n#|5|
+at|^^You know the  -  ^*bThe Drill^*n| 
+pg| ***** 5 ***** |
+
+
+at|^^What does the Opps bidding tell us about the their hands ?|
+pg| ***** 6 ***** |
+
+
+at|     West has vaules and @s's  almost certainly the @sQ.|
+pg| ***** 7 ***** |
+
+
+at|^^What does the lead of the  @dJ   tell us ?|
+pg| ***** 8 ***** |
+
+
+at|     Not leading  @s's,  so possibly from a shortage,  a  "lead for partner".|
+pg| ***** 9 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+n^|5|
+Lg|n|
+at|What is our  ^*bTarget^*n ?|
+pg| ***** 10 ***** |
+
+
+at| ^n Nine  (9)   tricks playing in  No Trumps.|
+pg| ***** 11 ***** |
+
+
+Lg|n|
+at|^^How many   ^*bSure Tricks^*n   are available in each suit ?|
+pg| ***** 12 ***** |
+
+
+at|^n 2@s      3@d      1@c            =        6|
+pg| ***** 13 ***** |
+
+
+  
+at|^^What is the shortfall ?|
+pg| ***** 14 ***** |
+
+
+at| ^n 9  -  6     =       ^*b3^*n   (three)|
+pg| ***** 15 ***** |
+
+
+n#|5|
+at|^^Now we   "Look at"   ^*b each suit ^*n  in turn,  looking for any techniques that might yield extra trick(s).|
+pg| ***** 16 ***** |
+
+
+nt|^b@2|at|^^|
+n^|5|
+Lg|a|
+at|@s  Spades  -   Zero   the finesse is bound to fail.|
+pg| ***** 17 ***** |
+
+
+Lg|n|
+at|^b@2^^@h  Hearts    -   2  once we knock out the Ace.|
+pg| ***** 18 ***** |
+
+
+at|^^@d  Diamonds  -  no chance of extra|
+pg| ***** 19 ***** |
+
+
+at|^^@c  Clubs     -  if  @c's  split 3-2  (67%)  then three rounds will set up 3 more tricks, but entries will be far from simple.|
+pg| ***** 20 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+n^|5|
+Lg|c|
+at|In  @c  Clubs  we will have to duck the first round and presumably get a @s back from East (her partners suit).   Next lead to our Ace and play a third round.|
+pg| ***** 21 ***** |
+
+
+Lg|n| 
+at|^^^b@2^dLet's visualise it happening.      (Click the ^*b Flow ^*n button  then use the Mouse wheel if you have one.)|
+pg| ***** 22 ***** |
+
+
+pc|d6|pc|d9|pc|dQ|
+pg| ***** 23 ***** |
+
+
+pc|c6|pc|c7|pc|cT|pc|cJ|
+pg| ***** 24 ***** |
+
+
+pc|s4|pc|sK|pc|s3|pc|s5|
+pg| ***** 25 ***** |
+
+
+pc|c5|pc|cQ|pc|cA|pc|c4|
+pg| ***** 26 ***** |
+
+
+pc|c9|pc|cK|pc|h3|pc|h2|
+pg| ***** 27 ***** |
+
+
+pc|s2|
+pg| ***** 28 ***** |
+
+
+n#|9|Lg|e|
+at|^^^*bNow we are stuck^*n   If we play the Ace  West will get in with the @hA (as we try to  enter dummy) and run her @. ^^ ^f   And if we duck she will win with the Queen and knock out our @sA.|
+pg| ***** 29 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+n^|5|
+Lg|j|
+at|Let's  wind back  and see if we can make an entry (for later use) from dummy @h's.|
+pg| ***** 30 ***** |
+
+
+up|20|
+pg| ***** 31 ***** |
+
+
+pc|d2|pc|d9|pc|dA|
+at|^^ +|
+pg| ***** 32 ***** |
+
+
+pc|h3|pc|hA|pc|hJ|pc|h9|
+at| +|
+pg| ***** 33 ***** |
+
+
+pc|h2|pc|hK|
+at|   Nope,      West will snatch it right back from us.|
+pg| ***** 34 ***** |
+
+
+n#|5|
+at|^^ So once more back to the beginning |
+pg| ***** 35 ***** |
+
+
+up|9|
+at|   and look again at the problem.| 
+pg| ***** 36 ***** |
+
+
+pc|d6|pc|d9|pc|dQ|
+pg| ***** 37 ***** |
+
+
+pc|c6|pc|c7|pc|cT|pc|cJ|
+pg| ***** 38 ***** |
+
+
+pc|s4|pc|sK|pc|s3|pc|s5|
+pg| ***** 39 ***** |
+
+
+pc|c5|pc|cQ|pc|cA|pc|c4|
+pg| ***** 40 ***** |
+
+
+pc|c9|pc|cK|
+pg| ***** 41 ***** |
+
+
+n#|5|
+at|^^Can you see ^*b ANY ^*n way of creating an entry to dummy (out of thin air).|
+pg| ***** 42 ***** |
+
+
+at|    Just take a moment longer to think. |
+pg| ***** 43 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+n^|5|
+Lg|j|
+at|Have you had an   |cp|red|at|^*b ah huh ^*n|cp||at|   moment yet ?|
+pg| ***** 44 ***** |
+
+
+at|        ^*b Discard ^*n the    Ace of  @s's     ! ! !|
+pg| ***** 45 ***** |
+
+
+pc|sA|
+pg| ***** 46 ***** |
+
+
+sk||
+at|^^It will now probally go something like . . .|
+pg| ***** 47 ***** |
+
+
+pc|dT|
+pg| ***** 48 ***** |
+
+
+pc|s2|pc|sT|pc|sQ|pc|s6|
+pg| ***** 49 ***** |
+
+
+at|   Whatever West now leads you are getting to dummy and the  @c  tricks. |
+pg| ***** 50 ***** |
+
+
+pf|y|
+n#|4|
+at|^^^d|cp|green|at|^*bIf you want know more about    Exploring / Playing    the hand   see  the next page|
+pg| ***** 51 ***** |
+
+
+qx|Expl,wide|
+bt|| 
+nt|^z@3^b@2|at|^^|
+n^|5|
+Lg|j|
+tu|y|
+mn|Exploring  /  Playing   a  Deal|
+
+ht|e|
+n#|5|
+at|Whenever a deal is showing and you can see the  blue  {^*b Enter the Deal ^*n}  button  in the bottom right, clicking on it takes you into "into" that deal  and the same buttom now called  {^*b Back to Movie ^*n}   will return you back.
+
+Once you are inside a deal you have full control you edit bidding, play   OR  play against the ^*b aaBridge ^*n bots. 
+
+On the ^*b left ^*n hand side in the Green Baize area you will see three buttons as illustrated below.    Note the third button "Review" will shown differently as it will, at that time, be "selected".
+
+
+{^*b Edit ^*n}  let's you explore the deal 'double dummy'.   Click a ^*bCARD^*n to play it.   Use  {^*b Undo ^*n}  to unplay cards.
+
+{^*b Play ^*n}  let's you play the remaining cards (against the ^*b aaBridge ^*n bots).
+
+{^*b Review ^*n}  (the default)  let's you run back and forth in the existing play.     Use ^*bStep,  Flow^*n and ^*bNavbar^*n. 
+
+
+Inside a deal you can at any time save the deal and play as a  ^*b.lin^*n  file, use       |cp|red|at|^*bMenubar    >   ^*uF^*n^*bile   >   Save As ^*n|cp||at| 
+
+^b^dPlease move back to the previous page and click   on     {^*b Enter the Deal ^*n} |
+pg| ***** 52 ***** |
+
+

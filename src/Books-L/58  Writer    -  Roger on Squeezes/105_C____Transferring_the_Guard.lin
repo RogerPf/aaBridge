@@ -1,0 +1,341 @@
+%%
+%%
+
+%% <--SECT_HEAD-->=C.                           Transferring the Guard 
+%%
+%%
+%%  Date last Edited    2017-03-16          set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+%%
+%% <<--HEADER_FILE-->>=999____Roger_on_Sq_header__technique.txt
+
+
+%% <<--HEADER_REPLACE_START->>
+
+%%
+bt||
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|cb|6255|cp|6|at|       ^*h rogerpf.com/aaBridge ^*n ^- |
+ip|| %% non  aaBridge  lin file players   STOP  on the  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+
+fh|s29|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|h000|cb|h255|   TEXT   p  p-pink
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       on Title Pages   Precision Blue
+cr|c255|cg|c225|cb|c229|   fill   c  c-chapterColor    on Title Pages   TECHNIQUE <<<<<<<<<<<<<<<<
+
+bt||
+nt|^b@2^z@3|
+
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Roger  on  Squeezes                         2017  March^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bC.                           Transferring the Guard ^*n^-^^|cs||fp||cp||at|^^|
+
+ht|i|
+%% <<--HEADER_REPLACE_END->>
+
+fp|1|at|^c@2^y@3^^|
+lg|b|
+at|You have a potential squeeze against an opponent but suspect that the other opponents guards a key suit.  
+
+^*bTransferring the Guard^*n  is the technique that solves this problem by reducing the opponents holdings so that only one of the them now guards the suit.  The older (sadly inaccurate) traditional term for this technique is 'Isolating the Menace'.              Best to learn it as  -  Transferring the GUARD.
+|n#|c|at|^b  @2{
+|n^|9|at|     The common way of ^*b Transferring the Guard ^*n is to take a finesse that you know a good opponent will        
+       cover in order to promote HIS partners holding.  This transfers the guard from one partner to the other.
+|n^|9|at|^^ }
+^c@2|
+
+ht|q|lg|b|at|
+There are lots of books on Squeeze play.   I like the (1985) series by ^*b Hugh Kelsey ^*n.  You only need the first book ^*b Simple Squeezes^*n.  I suggest you try sites like ^*h abebooks.com ^*n for a second hand copy.
+
+This work takes the same presentation order as Kelsey follows in ^*b Simple Squeezes ^*n but uses none of his examples, so making this work an excellent accompaniment to his book.|
+
+ht|v|n#|7|fp|s|at|@1 ^c     (Kelsey uses the misleading name,  'Transfer Squeeze')|fp||at|   ^o  See  Hugh Kelsey   ^*b Simple Squeezes ^*n   Page |fp|m|at|24|fp||at||
+ht|x|n^|2|
+at|@1^b {  |n#|5|cp|red|at|^*bOne thing^*n|cp||at|   in the right hand column is the   |n^|5|cp|p-pink|at|@.|n#|5|cp||at|^*bApply Defaults^*n   button, please click it NOW, before you begin.  
+|n^|9|at|^^ }|
+ht|x|n#|h|at|^b@2@1|at|
+^*bClick^*n          ^*bFlow >^*n         or use your    ^*bMouse Wheel^*n|
+ht|z|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+
+%%
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2946|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2946 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%%
+
+pi|n| %% suppress any display of  hcp etc  in the players names area 
+bv|f,h|
+bv|c,h|
+bv|e,h|
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+-------------------------------------------------------------------------------
+bt||
+nt|^z@3^b@2^^^^|
+fp|b-bigtitle|at|How to  ^*bPlay^*   the  Practice Hands|fp||at|^^|
+n#|2|at|
+To  ^*bPlay^*n  the Practice hands    -   Click either the  {^*b Cont ^*n}  or the  {^*b Enter the Deal ^*n}  button.  
+
+When available, the two buttons will appear in the green area at the bottom right of this window.
+
+Clicking either takes you  'into the deal'.   You return back to this tutorial by clicking the  {^*b Back to Movie ^*n}  button.
+
+This ^*h http://musingsonbridge.rogerpf.com/2016/04/down-rabbit-hole.html ^*n blog-post ^*x contains a diagram that will help to explain this.
+
+After clicking  { ^*b Cont ^*n }  you continue the play by clicking on a ^*b CARD ^*n or on the  { ^*b Undo ^*n }  button.
+
+While playing you can  use the  {^*b Show ^*n}  /  {^*b Hide ^*n}  button to  show / hide  the opponents cards.
+
+
+The  {^*b Enter the Deal ^*n}  button is like a 'grown-up' version of the continue button.
+|n^|a|at|
+ ^g after clicking it you get to choose (by use of a button) which of three things you want to do. 
+
+|n^|5|at|
+{^*b Edit ^*n}  let's you explore the deal  'double dummy'.   Click a ^*bCARD^*n to play it.    Use  {^*b Undo ^*n}  to unplay cards.
+
+{^*b Play ^*n}  let's you play the remaining cards (against the computer).    As with  ^*bEdit^*n  any un-reviewed play is discarded.
+
+{^*b Review ^*n}  (the default)  let's you run back and forth in the existing play.     Use  ^*bFlow^*n,    "^*b>^*n"   and the  ^*bNavbar^*n.
+^s(^*bMouse wheel^*n  is best)
+
+|cp|mg|n^|8|at|           @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-|cp||at|
+|cp|red|n#|8|at|^*bAdvice^*n|cp||
+lg|f|
+at|      Come back to this tutorial time and time again.  The first few times when you play through the hands, you may need to view the opponents cards or even skip playing them and just watch the winning line.
+|n#|5|at|Come back another time and play them through again.       Repetition will,  ^*b really will^*n,   get it all to sink in.|
+pg| ***** 1 ***** |
+
+
+-------------------------------------------------------------------------------
+qx|P 1, wide|
+bt||
+nt|^z   @3^b@2^^^^|
+fp|b-bigtitle|at|What is an Answer ?|fp||at|^^|
+n#|2|at|
+I know that the first (and even the second time) you go through the practice hands you will be just about starting to understand what is going on.   BUT after that ...
+
+Successfully playing the hand against the bots is |cp|red|at|^*b NOT ^*n |cp||at|an answer, I repeat |cp|red|at|^*b NOT ^*n|cp||at| an answer, to the question.
+
+The type of answer you NEED to give (assuming that you want to benefit from your work here) is - 
+|n#|a|at|^c@2
+|fp|t|at|Part 1   -   The 'Trick 1' PLAN|fp||at|          (NOT in the supplied answers, but YOU should think it out)
+|n^|7|at|
+A detailed statement (to yourself) of the order of the play of the tricks, including which hand you will be in at each stage and stating any discards.  The plan ends with the words 
+  -  "With the play of the squeeze card (named) ... East or West or Both ... will be squeezed".
+|n#|a|at|
+|fp|t|at|Part 2   -   The Key Cards of the Squeeze|fp||at| 
+|n^|5|at|
+A statement defining YOUR important cards and where they will be when the squeeze card is played.
+|n#|a|at|
+|fp|t|at|Part 3   -   Your Opps remaining (important) Cards|fp||at|         (NOT in the supplied answers)
+|n^|5|at|
+A statement about the important cards your Opps hold and about which hand you expect to find them in, such as -   "I am playing for LHO to have the @sK and the ..."    Part 3 is an extension of 'Part 1 - the Plan', as it also covers what comes after the squeeze card is played.
+^^
+^b@2See the Specimen Answer on the next page.
+
+|cp|mg|n^|8|at|           @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-|cp||at|
+|cp|red|n#|8|at|^*bRemeber^*n|cp||
+lg|f|
+at|      Do remember that repetition of these practice hands this is the KEY, it will all sink in if you let it.|
+pg| ***** 2 ***** |
+
+
+-------------------------------------------------------------------------------
+bt||
+nt|^z@3^b@2^^^^|
+fp|b-bigtitle|at|Specimen Answer|fp||at|         (to  Practice 1   of    1. The Simple Positional Squeeze)
+|n^|2|at|
+|lg|c|at|
+|fp|t|at|Part 1   -   The 'Trick 1' PLAN|fp||at|       
+|n^|7|at|
+^c@2Win the lead of the @sQ with the dummy's Ace.
+Play the top two @d's ending in hand.
+Cash the @hAK
+Run the @c's, at first discarding two low hearts (keeping only the Jack)   
+^d then discarding low @s's,  so ending with   @sK9  @hJ   in dummy.
+With the play of the last club (the squeeze card @c9), ^*b East ^*n will be squeezed.
+|n#|a|at|
+|fp|t|at|^bPart 2   -   The Key Cards of the Squeeze|fp||at| 
+|n^|7|at|
+^c ^*b Two-card menace ^*n     ^i |fg|y|at|(North)|fg||at| ^k  @sK9
+^c ^*n One-card  menace ^*n    ^i |fg|y|at|     " |fg||at| ^k  @hJ
+^c ^*b Communication card ^*n  ^i |fg|y|at|(South)|fg||at| ^k  @s7
+^c ^*n Squeeze card ^*n        ^i |fg|y|at|     " |fg||at| ^k  @c9  |fg|y|at|   (the last @c) |fg||at|
+|n#|8|at|
+|fp|t|at|^bPart 3   -   Your Opps remaining (important) Cards|fp||at|
+|n^|8|at|
+I am playing for East to have started with   @SQJ10  @HQxx.     On the play of the squeeze card (@c9), East will  EITHER -
+	^d ... discard his @hQ.  In which case, I will discard the @s9 and lead to the @sK and cash the @hJ.
+^c OR  |fp|s|at|(more likely)|fp||at|
+	^d ... discard his @s guard (keeping the @hQ).  In which case I will discard the @HJ and lead to the  @sK  
+	       ^p expecting the @sJ to fall so promoting my @s9.
+|n#|5|at|
+^b I know this is a lot to expect but it will come with repetition of the hands, again and again.
+|
+pg| ***** 3 ***** |
+
+
+-------------------------------------------------------------------------------
+st||
+ha||
+bv|c,h|
+bv|e,h|
+
+rh||ah|Practice 1|
+md|1sQ5hA52dK7cAKQJT9,sJT98hJ86d9862c52,sAK76hQT4dAQc7643,s432hK973dJT543c8|
+sk|S|
+nt|^z@3^b@2^^|
+Lg|l|
+at|^*bPractice 1^*n      ^gThe hand.|
+pg| ***** 4 ***** |
+
+
+at|    You (slowly) bid to 7NT.|
+mb|7NT|
+pg| ***** 5 ***** |
+
+
+mb|p|mb|p|mb|d|mb|p|mb|p|mb|p|
+pc|sJ|
+eb|y|
+eb|c|
+at|    East doubles and gets the lead of the  @sJ.|
+pg| ***** 6 ***** |
+
+
+Lg|g|
+at|^^You are in  ^*b7NT^*n  with 12 top tricks.   Where can you find a 13th ?    What can East possibly have for the double ?|  
+pg| ***** 7 ***** |
+
+
+qx|c1, wide|
+bv|c,v|
+eb|y|
+ht|z|n^|2|at|There is a hint on the next page but if you want to play the hand NOW, the  { ^*b Cont ^*n }  button is available. |
+pg| ***** 8 ***** |
+
+
+qx|h1, wide|
+nt|^z@3^b@2^^|
+Lg|f|
+at|^*bPractice 1^*n  ^e |cp|gr|at|^*bHint  A^*n|cp||at|   ^g East's has to be holding @hK for his double.  But the only possible squeeze you have is the  Simple Positional against West.   (Long menace, @s's.  Short menace, @h's.)     You need to find a way to transfer East's guard of the @h's to West.         
+
+What if West has the Jack of @h's ?                ^*b Hint ^*n continues on the next page.|
+pg| ***** 9 ***** |
+
+
+nt|^z@3^b@2^^|
+Lg|f|
+at|^*bPractice 1^*n  ^e |cp|gr|at|^*bHint  B^*n|cp||at|   ^g Play West for  @sJT9(x)   @hJxx(x)  with  @hKxx(x) in East.     Work out NOW which cards will be left when the Squeeze card is played.   In North, which cards will be the ^*b extended ^*n menace and which the ^*b one-card ^*n menace?    In South, which will be the ^*b squeeze ^*n card and  the ^*b communication ^*n card  -  BE EXACT.
+
+|cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b Cont ^*n }  button   |cp|red|at|^*bOR^*n|cp||at|   you can use  {^*b Flow >^*n }  to see the answer.|
+n#|7|
+pg| ***** 10 ***** |
+
+
+qx|a1, wide|
+bv|c,h|
+bv|e,v|
+eb|c|
+eb|n|
+nt|^z  @3^b@2^^|
+Lg||
+at|^*bPractice 1^*n  ^e |cp|red|at|^*bAns^*n|cp||n#|3|at|  ^g
+^c ^*b Extended menace ^*n           ^j  @sAK7
+^c ^*n One-card  menace ^*n          ^j  @h10
+^c ^*b Communication card^*n         ^j  @s5 |fg|y|at| (or 4)|fg||at|
+^c ^*n Squeeze card ^*n              ^j  @c9 |fg|y|at|(any @c)|fg||at| | 
+n#|6|at|^^There is no  'Rectifying the Count'  when you are in a Grand Slam             Now play for ^*b THAT ^*n ending.|
+ht|k|at| ^m@2 { The KEY is to remove the assumed @h guard from the 
+   East hand to the West by .....  
+}|
+pg| ***** 11 ***** |
+
+
+pc|s6|pc|s2|pc|sQ|
+pg| ***** 12 ***** |
+
+
+pc|cA|pc|c2|pc|c3|pc|c8|
+pg| ***** 13 ***** |
+
+
+pc|cK|pc|c5|pc|c4|pc|d3|
+pg| ***** 14 ***** |
+
+
+pc|d7|pc|d8|pc|dA|pc|d4|
+pg| ***** 15 ***** |
+
+
+pc|hQ|pc|hK|pc|hA|pc|h6|
+pg| ***** 16 ***** |
+
+
+pc|dK|pc|d2|pc|dQ|pc|d5|
+pg| ***** 17 ***** |
+
+
+pc|cQ|pc|h8|pc|c7|pc|dT|
+pg| ***** 18 ***** |
+
+
+pc|cJ|pc|d6|pc|c6|pc|dJ|
+pg| ***** 19 ***** |
+
+
+pc|cT|pc|d9|pc|h4|pc|s3|
+pg| ***** 20 ***** |
+
+
+pc|c9|
+pg| ***** 21 ***** |
+
+
+bv|c,v|
+eb|n|
+sk||
+ht|f|at|@4^c@2^^|
+at|On the play of the  ^*bSqueeze Card^*n  (@c9)   West is squeezed.
+|n^|5|at|
+As this is an ^*b Extended Menace ^*n squeeze,  West is squeezed a trick earlier than you might expect.|
+pf|y|
+pg| ***** 22 ***** |
+
+
+qx||
+bt||
+nt|^z@3^b@2^^|
+ht|m|n#|7|cs|c-chapterColor|at|^a     ^-{  ^*nEnd  -  Transfering the Guard^*n  
+}^-|
+pg| ***** 23 ***** |
+
+

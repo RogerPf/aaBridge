@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "aaBridge"
-#define MyAppVersion "3.1.0.2882"
+#define MyAppVersion "4.0.0.3140"
 #define MyAppPublisher "RogerPf.com"
 #define MyAppURL "http://RogerPf.com/"
 #define MyAppExeName "aaBridge.exe"
@@ -28,6 +28,7 @@ Compression=lzma
 SolidCompression=yes
 ChangesAssociations=yes
 DirExistsWarning=no
+DisableDirPage=yes
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
@@ -39,11 +40,12 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Source: "C:\a\{#MyAppName}_{#MyAppVersion}.jar"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\c\e_wk\442_aab\aaBridge\yyy_other\build_extras\aaBridge_1402.exe"; DestDir: "{app}"; DestName: "aaBridge.exe"; Flags: ignoreversion
 Source: "C:\c\e_wk\442_aab\aaBridge\yyy_other\build_extras\lin.ico"; DestDir: "{app}";
+Source: "C:\c\e_wk\442_aab\aaBridge\yyy_other\build_extras\launch_aaBridge_showing_messages.cmd"; DestDir: "{app}";
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
-Name: "{group}\{#MyAppName} 3"; Filename: "{app}\{#MyAppExeName}"
-Name: "{commondesktop}\{#MyAppName} 3"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
+Name: "{group}\{#MyAppName} 4"; Filename: "{app}\{#MyAppExeName}"
+Name: "{commondesktop}\{#MyAppName} 4"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 
 [Run]
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: postinstall skipifsilent

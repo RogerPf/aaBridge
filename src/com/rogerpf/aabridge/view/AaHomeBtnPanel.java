@@ -10,10 +10,18 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.view;
 
+import java.awt.Desktop;
 import java.awt.Font;
+import java.awt.GraphicsConfiguration;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
+import java.awt.Point;
+import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.InputEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -21,20 +29,26 @@ import java.util.Comparator;
 import java.util.List;
 
 import javax.swing.BorderFactory;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
+import javax.swing.SwingUtilities;
 import javax.swing.Timer;
-import javax.swing.border.Border;
 
 import net.miginfocom.swing.MigLayout;
 
+import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.controller.Book;
+import com.rogerpf.aabridge.controller.Book.LinChapter;
 import com.rogerpf.aabridge.controller.Bookshelf;
 import com.rogerpf.aabridge.controller.BridgeLoader;
 import com.rogerpf.aabridge.controller.MruCollection;
 import com.rogerpf.aabridge.controller.MruCollection.MruChapter;
 import com.rogerpf.aabridge.model.Cc;
+import com.rpsd.bridgefonts.BridgeFonts;
 
 /** *********************************************************************************  
  */
@@ -46,65 +60,118 @@ public class AaHomeBtnPanel extends ClickPanel implements ActionListener {
 
 	QLabel anyLabel;
 
-	QButton homeBtn;
-	QButton menuBtn;
-	QButton linEdit;
-
-	QButton toggleChapterMarkBtn;
-
-//	QButton listM;
+	QButton home_btn;
+	QButton histBack_btn;
+	QButton histBack_btn1;
+	QButton histBack_btn2;
+	QButton histBack_btn3;
+	QButton histFwd_btn;
+	QButton histFwdEnd_btn;
+	QButton toggleChapterMark_btn;
+	QButton sizeA_btn;
+	QButton sizeB_btn;
+	QButton sizeC_btn;
+	QButton linEdit_btn;
 
 	public AaHomeBtnPanel() { // Constructor
 		// ==============================================================================================
 
-		setLayout(new MigLayout(App.simple + ", flowx", "[]push[]"));
+		setLayout(new MigLayout(App.simple + ", " + App.hm0oneHun + ", flowx", "[]", "[]"));
 
-		Border bdr4 = BorderFactory.createEmptyBorder(0, 4, 1, 4);
+		add(home_btn = new QButton(this, "z" /* HOME icon in font */), "gapx4, gapy6, split4");
+		float stdSize = home_btn.getFont().getSize();
+		Font home_btnFont = BridgeFonts.faceAndSymbolFont.deriveFont(stdSize * 3.0f);
+		home_btn.setFont(home_btnFont);
+		home_btn.setBorder(BorderFactory.createEmptyBorder(2, 4, 4, 4)); // yes even on the mac
+		home_btn.setToolTipText(Aaf.gT("homePanel.home_TT"));
 
-		add(homeBtn = new QButton(this, "Home"), "gapx4, gapy6");
-		if (App.onMac == false)
-			homeBtn.setBorder(bdr4);
-		homeBtn.setToolTipText("Jump to the  -  Welcome  page");
+		home_btn.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				if (SwingUtilities.isRightMouseButton(e) && App.lastDroppedList != null) {
+					BridgeLoader.processDroppedList(App.lastDroppedList);
+				}
+			}
+		});
 
-		Font std = homeBtn.getFont();
-		Font large = std.deriveFont((float) (homeBtn.getFont().getSize() * 1.2));
-		Font sml = std.deriveFont((float) (homeBtn.getFont().getSize() * 0.92));
+		add(histBack_btn = new QButton(this, "{" /* { = left arrow in font*/), "gapx7");
+		histBack_btn.setFont(BridgeFonts.faceAndSymbolFont.deriveFont(stdSize * 2.4f));
+		histBack_btn.setBorder(BorderFactory.createEmptyBorder(1, 1, 4, 2)); // yes even on the mac
+		histBack_btn.setToolTipText(Aaf.gT("homePanel.histBack_TT"));
 
-		homeBtn.setFont(large);
+		add(histFwd_btn = new QButton(this, "}" /* } = right arrow in font*/), "gapx7");
+		histFwd_btn.setFont(BridgeFonts.faceAndSymbolFont.deriveFont((float) (stdSize * 2.0f)));
+		histFwd_btn.setBorder(BorderFactory.createEmptyBorder(2, 3, 3, 2)); // yes even on the mac
+		histFwd_btn.setToolTipText(Aaf.gT("homePanel.histFwd_TT"));
 
-		if (App.devMode) {
-			add(linEdit = new QButton(this, "Ed"), "gapx6, gapy4, split");
-			linEdit.setFont(sml);
-			if (App.onMac == false)
-				linEdit.setBorder(BorderFactory.createEmptyBorder(0, 4, 1, 4));
-			linEdit.setToolTipText("Attempt to edit the current .lin file");
-		}
+		add(histFwdEnd_btn = new QButton(this, "y" /* y = right arrow + bar in font*/), "gapx15, wrap");
+		histFwdEnd_btn.setFont(BridgeFonts.faceAndSymbolFont.deriveFont((float) (stdSize * 2.0f)));
+		histFwdEnd_btn.setBorder(BorderFactory.createEmptyBorder(2, 2, 3, 1)); // yes even on the mac
+		histFwdEnd_btn.setToolTipText(Aaf.gT("homePanel.histFwdEnd_TT"));
 
-		String menuBtnText = (App.devMode) ? "Mu" : "Menu";
-		String xGap = (App.onMac) ? "" : "gapx8, ";
-		add(menuBtn = new QButton(this, menuBtnText), xGap + "gapy0, wrap");
-		menuBtn.setFont(sml);
+		add(toggleChapterMark_btn = new QButton(this, "b" /* b = bookmark symbol in font */), "gapy8, gapx4, split5");
+		toggleChapterMark_btn.setFont(BridgeFonts.faceAndSymbolFont.deriveFont((float) (stdSize * 2.0f)));
+		toggleChapterMark_btn.setBorder(BorderFactory.createEmptyBorder(1, 2, 3, 5));
+		toggleChapterMark_btn.setToolTipText(Aaf.gT("homePanel.add_mark_TT"));
 
-		if (App.onMac == false)
-			menuBtn.setBorder(bdr4);
-		// menuBtn.setToolTipText("Recently viewed  Chapters  and  Chapter Marks  "); DONT add this
+		add(sizeA_btn = new QButton(this, "A" /* } = right arrow in font*/), "gapx11");
+		sizeA_btn.setFont(BridgeFonts.faceAndSymbolFont.deriveFont((float) (stdSize * 1.20f)));
+		sizeA_btn.setBorder(BorderFactory.createEmptyBorder(4, 3, 3, 3)); // yes even on the mac
+		sizeA_btn.setToolTipText(Aaf.gT("homePanel.sizeABC_TT"));
 
-		String togChaperText = (App.onMacOrLinux) ? "Toggle Chapter Mark" : "Tog Chapter Mark";
-		String yGap = (App.onMac) ? "" : "gapy8, ";
-		add(toggleChapterMarkBtn = new QButton(this, togChaperText), "gapx4, " + yGap + "span3");
-		toggleChapterMarkBtn.setFont(sml);
-		if (App.onMac == false)
-			toggleChapterMarkBtn.setBorder(bdr4);
-		toggleChapterMarkBtn.setToolTipText("Toggle  (Add or Remove)  a  Chapter Mark  at this point in the Chapter ");
+		add(sizeB_btn = new QButton(this, "B" /* } = right arrow in font*/), "gapx5");
+		sizeB_btn.setFont(BridgeFonts.faceAndSymbolFont.deriveFont((float) (stdSize * 1.20f)));
+		sizeB_btn.setBorder(BorderFactory.createEmptyBorder(4, 2, 3, 2)); // yes even on the mac
+		sizeB_btn.setToolTipText(Aaf.gT("homePanel.sizeABC_TT"));
+
+		add(sizeC_btn = new QButton(this, "C" /* } = right arrow in font*/), "gapx5");
+		sizeC_btn.setFont(BridgeFonts.faceAndSymbolFont.deriveFont((float) (stdSize * 1.20f)));
+		sizeC_btn.setBorder(BorderFactory.createEmptyBorder(4, 2, 3, 2)); // yes even on the mac
+		sizeC_btn.setToolTipText(Aaf.gT("homePanel.sizeABC_TT"));
+
+		add(linEdit_btn = new QButton(this, "e" /* Edit pencil in font */), "gapx11, gapy4, wrap");
+		linEdit_btn.setFont(BridgeFonts.faceAndSymbolFont.deriveFont((float) (stdSize * 1.8f)));
+		linEdit_btn.setBorder(BorderFactory.createEmptyBorder(2, 2, 3, 2));
+		linEdit_btn.setToolTipText(Aaf.gT("homePanel.edit_TT"));
+
+		add(new QLabel(""), "gapy9");
+
+		linEdit_btn.setEnabled(false); // enabled at load time
 	}
 
 	public void calcApplyBarVisiblity() {
 		// ==============================================================================================
-		toggleChapterMarkBtn.setVisible(App.isVmode_Tutorial());
-	}
 
-//	final static String recentlyViewedChapters = "Recently Viewed Chapters";
-	final static String markedChapters = "Marked Chapters";
+		// Home button is always enabled
+
+		histBack_btn.setEnabled(App.history.isBackPos());
+		histFwd_btn.setEnabled(App.history.isFwdPos());
+		histFwdEnd_btn.setEnabled(App.history.isFwdPos());
+
+		// @formatter:off
+		boolean lineEdit_enabled =    (Aaa.getLinFileEditorPath().isEmpty() == false)
+				
+                                   && ((     App.isVmode_Tutorial()
+			                             && (App.lastLoadedChapter != null) 
+			                             && (App.lastLoadedChapter.isEditable()
+			                            )
+			                         || (    App.isVmode_InsideADeal() 
+			                		     && (App.deal.lastDealNameSaved_FULL.isEmpty() == false)
+			                		    )
+			                		 ));
+		
+	    linEdit_btn.setEnabled( lineEdit_enabled);  	                	 
+		// @formatter:off
+		
+		toggleChapterMark_btn.setEnabled(App.isVmode_Tutorial());
+	}
+	
+
+	
+
+	JMenuItem bm_bookmarks;
+
+	static boolean left = true;
 
 	public void actionPerformed(ActionEvent e) {
 		// ==============================================================================================
@@ -115,49 +182,121 @@ public class AaHomeBtnPanel extends ClickPanel implements ActionListener {
 		boolean hist = false;
 		boolean mark = false;
 		boolean ctrlKey_depressed = ((e.getModifiers() & InputEvent.CTRL_MASK) == InputEvent.CTRL_MASK);
+		boolean altKey_depressed  = ((e.getModifiers() & InputEvent.ALT_MASK) == InputEvent.ALT_MASK);
+		boolean altGraphKey_depressed  = ((e.getModifiers() & InputEvent.ALT_GRAPH_MASK) == InputEvent.ALT_GRAPH_MASK);
 
-		if (source == homeBtn) {
-			App.con.ShowHelpAndWelcome();
+		if (source == histBack_btn) {
+			App.history.backOne();
 		}
 
-		else if (source == linEdit) {
-			if (App.debug_pathlastLinLoaded.isEmpty())
-				return;
-			if (new File(App.debug_pathlastLinLoaded).exists() == false)
+		else if (source == histFwd_btn) {
+			App.history.fwdOne();
+		}
+
+		else if (source == histFwdEnd_btn) {
+			App.history.fwdEnd();
+		}
+		
+		else if ((source == sizeA_btn) || (source == sizeB_btn) || (source == sizeC_btn)) {
+			
+			if (ctrlKey_depressed ) { /* save */
+				Boolean forceRestorePos = (altKey_depressed || altGraphKey_depressed);				
+				AaaMenu.writeUserSizeEntry(e.getActionCommand(), forceRestorePos);
+			}
+			else {	/* restore */			
+				AaaMenu.actionUserSizeEntry(e.getActionCommand());				
+			}	
+		}		
+
+		else if (source == home_btn) {
+			if (ctrlKey_depressed == false) {
+				App.con.ShowHelpAndWelcome();
+			}
+			else {
+				// reposition to exactly to the top left / right of the current screen
+
+				boolean shiftKey_depressed = ((e.getModifiers() & InputEvent.SHIFT_MASK) == InputEvent.SHIFT_MASK);
+
+				int w10fix = shiftKey_depressed ? 7 : 0;
+
+				Point topLeft = App.frame.getLocationOnScreen();
+
+				App.frameLocationX = 0;
+				App.frameLocationY = 0;
+
+				GraphicsDevice[] gs = GraphicsEnvironment.getLocalGraphicsEnvironment().getScreenDevices();
+				for (int j = 0; j < gs.length; j++) {
+					GraphicsConfiguration[] gc = gs[j].getConfigurations();
+					for (int i = 0; i < gc.length; i++) {
+						Rectangle bounds = gc[i].getBounds();
+
+						if (bounds.contains(topLeft)) {
+							App.frameLocationY = bounds.y;
+							if (left) {
+								App.frameLocationX = bounds.x - w10fix;
+							}
+							else {
+								App.frameLocationX = bounds.x + (bounds.width - App.frame.getWidth()) + w10fix;
+							}
+							left = !left;
+							break;
+						}
+					}
+				}
+
+				App.frame.setLocation(App.frameLocationX, App.frameLocationY);
+			}
+		}
+
+		else if (source == linEdit_btn) {
+			String path = "";
+			if (App.isVmode_Tutorial()) 
+	            path = App.debug_pathlastLinLoaded;
+			
+			else if (App.isVmode_InsideADeal())
+				path = App.deal.lastDealNameSaved_FULL;
+			
+			if (path == null || path.isEmpty() || new File(path).exists() == false)
 				return;
 
 			try {
-				Runtime.getRuntime().exec(new String[] { "notepad.exe", App.debug_pathlastLinLoaded });
-				// Runtime.getRuntime().exec(new String[] { "C:\\ProgramRPf\\Notepad++\\notepad++.exe", App.debug_pathlastLinLoaded });
+				String np = Aaa.getLinFileEditorPath();
+				
+				if (np.contentEquals("desktop")) { // mac and linux
+					Desktop.getDesktop().open(new File(path));
+				} else if (np.isEmpty() == false) { // win
+					Runtime.getRuntime().exec(new String[] { np, path });
+				}
 			} catch (Exception e1) {
 			}
 		}
 
-		else if (source == menuBtn) {
-			chapterMarkerMenu = fill_chapterMarkerMenu();
-			chapterMarkerMenu.show(menuBtn, menuBtn.getWidth() + 4, -8);
-		}
-
-		else if (source == toggleChapterMarkBtn) {
+		else if (source == toggleChapterMark_btn) {
 			if (App.mg.mruChap != null) {
 				// int current_pg_numb = (App.mg.lin.linType == Lin.FullMovie) ? App.mg.get_current_pg_number_display() : 0;
 				int current_pg_numb = App.mg.get_current_pg_number_display();
 
 				App.mg.mruChap.toggleChapterMark(current_pg_numb);
 				App.frame.repaint();
-				// App.mruCollection.saveCollection();
 				mruDelayedSaveTimer_Short_Start();
 			}
 		}
 
-//		else if (ctrlKey_depressed && e.getActionCommand().contentEquals(recentlyViewedChapters)) {
-//			App.mruCollection.clearAllHistories();
-//			mruDelayedSaveTimer_Short_Start();
-//		}
-
-		else if (ctrlKey_depressed && e.getActionCommand().contentEquals(markedChapters)) {
+		else if (source == bm_bookmarks && ctrlKey_depressed) {
 			App.mruCollection.clearAllMarksInCollection();
+			fill_chapterMarkerMenu();
 			mruDelayedSaveTimer_Short_Start();
+		}
+
+		else if (source == bm_bookmarks) {
+			String chapterPartName = "Bookmarks";
+			Book b = App.bookshelfArray.get(0).getBookWithChapterPartName(chapterPartName);
+			if (b != null) {
+				LinChapter chapter = b.getChapterByDisplayNamePart(chapterPartName);
+				if (chapter != null) {
+					chapter.loadWithShow("replaceBookPanel");
+				}
+			}
 		}
 
 		else {
@@ -195,6 +334,7 @@ public class AaHomeBtnPanel extends ClickPanel implements ActionListener {
 				// System.out.println("Control Key is pressed and perhaps other keys as well");
 
 				App.mruCollection.clearChapterMarks(key);
+				fill_chapterMarkerMenu();
 				App.mruCollection.saveCollection();
 				App.frame.repaint();
 				return;
@@ -262,7 +402,6 @@ public class AaHomeBtnPanel extends ClickPanel implements ActionListener {
 	public Timer mruDelayedSaveTimer = new Timer(mruDelayedSaveTimer_ShortMs /* ms */, new ActionListener() {
 		public void actionPerformed(ActionEvent evt) {
 			mruDelayedSaveTimer.stop();
-
 			App.mruCollection.saveCollection();
 		}
 	});
@@ -274,51 +413,25 @@ public class AaHomeBtnPanel extends ClickPanel implements ActionListener {
 		mruDelayedSaveTimer.start();
 	}
 
-	public JPopupMenu fill_chapterMarkerMenu() {
+	final static String menubar_bookmarks = Aaf.gT("menubar.bookmarks");
+	final static String menubar_bookmarksHelp = Aaf.gT("menuBookM.bookmarksHelp");
+	final static String menuBookM_noMarks = Aaf.gT("menuBookM.noMarks");
+	final static String menuBookM_removeAll = Aaf.gT("menuBookM.removeAll");
+	final static String menuBookM_toggle = Aaf.gT("menuBookM.toggle");
+
+	public JMenu fill_chapterMarkerMenu() {
 		// ==============================================================================================
 
+		JLabel label;
 		JMenuItem menuItem;
-		JPopupMenu menu = new JPopupMenu(" ");
+		JMenu menu = App.bookmarksMenu;
 
-		// System.out.println(" fill_chapterMarkerMenu " + App.mg.end_pg + "  " + App.mg.stop_gi);
-//		menuItem = new JMenuItem(recentlyViewedChapters);
-//		menuItem.setActionCommand(recentlyViewedChapters);
-//		menuItem.addActionListener(this);
-//		menuItem.setForeground(Cc.GreenStrong);
-//		menu.add(menuItem);
-//
+		menu.removeAll();
+
 		List<MruCollection.MruChapter> mruByTimeStamp = App.mruCollection.sortByTimestamp();
-//
-//		int hist_count = 0;
-//		for (MruCollection.MruChapter mru : mruByTimeStamp) {
-//
-//			if (mru.hist_pgNumb <= 1)
-//				continue;
-//
-//			if (mru.filenamePlus.contains("90  Help Welcome and Examples"))
-//				continue;
-//
-//			String menuText = mru.getMruKey();
-//
-//			hist_count++;
-//			menuItem = new JMenuItem("      " + hist_count + ".    " + menuText);
-//			menuItem.setActionCommand("Hist_" + menuText);
-//			menuItem.addActionListener(this);
-//			menu.add(menuItem);
-//			if (hist_count >= App.hist_max_display)
-//				break;
-//		}
-//
-//		if (hist_count == 0) {
-//			menuItem = new JMenuItem("    - - no History yet - -");
-//			menuItem.setForeground(Cc.BlueStrong);
-//			menu.add(menuItem);
-//		}
-//
-//		menu.addSeparator();
-		menuItem = new JMenuItem(markedChapters);
-		menuItem.setActionCommand(markedChapters);
+		bm_bookmarks = menuItem = new JMenuItem(menubar_bookmarksHelp);
 		menuItem.addActionListener(this);
+		menuItem.setFont(menuItem.getFont().deriveFont(menuItem.getFont().getSize() * App.menuInfoSize));
 		menuItem.setForeground(Cc.GreenStrong);
 		menu.add(menuItem);
 
@@ -359,24 +472,40 @@ public class AaHomeBtnPanel extends ClickPanel implements ActionListener {
 		}
 
 		if (mark_count == 0) {
-			menuItem = new JMenuItem("    - - no Chapter Marks yet - -");
-			menuItem.setForeground(Cc.BlueStrong);
-			menu.add(menuItem);
+			label = new JLabel("         " + menuBookM_noMarks);
+			label.setFont(label.getFont().deriveFont(label.getFont().getSize() * App.menuInfoSize));
+			label.setForeground(Cc.BlueStrong);
+			menu.add(label);
 		}
 
 		if (mark_count > 0) {
 			menu.addSeparator();
 
-			menuItem = new JMenuItem("To   REMOVE ALL   of a   Chapter's Marks   at once  -  Hold down  the  Ctrl  Key  -   while clicking    THAT entry  ");
-			menuItem.setForeground(Cc.GreenStrong);
-			menu.add(menuItem);
+			label = new JLabel("   " + menuBookM_removeAll);
+			label.setFont(label.getFont().deriveFont(label.getFont().getSize() * App.menuInfoSize));
+			label.setForeground(Cc.GreenStrong);
+			menu.add(label);
 
-			menuItem = new JMenuItem("You can also   TOGGLE     a single   Chapter Mark     -  Hold down  the  Ctrl  Key  -   while clicking    THE Navbar");
-			menuItem.setForeground(Cc.BlueWeak);
-			menu.add(menuItem);
+			label = new JLabel("   " + menuBookM_toggle);
+			label.setFont(label.getFont().deriveFont(label.getFont().getSize() * App.menuInfoSize));
+			label.setForeground(Cc.BlueWeak);
+			menu.add(label);
 		}
 
 		return menu;
+	}
+
+	/**
+	*/
+	public Timer shortDelayTimer = new Timer(200 /* ms */, new ActionListener() {
+		public void actionPerformed(ActionEvent evt) {
+			fill_chapterMarkerMenu();
+			shortDelayTimer.stop();
+		}
+	});
+
+	public void fillMenuDelayed() {
+		shortDelayTimer.start();
 	}
 
 }

@@ -1,0 +1,255 @@
+%%
+%%
+
+%% <--SECT_HEAD-->=Session 1 e                               Quizies        
+%%
+%%
+%%  Date last Edited    2015-04-05          set by human hand (if at all)
+%%
+%%  MovieMaker          Karen10
+%%
+
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+
+fh|136|ff|1Arial|fb|10|fm|1|      Font 1
+fh|238|ff|2Arial|fb|20|fm|2|      Font 2
+fh|339|ff|3Arial|fb|30|fm|3|      Font 3
+fh|440|ff|4Arial|fb|40|fm|4|      Font 4  Section titles in chapters
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|50|fm|6|      Font 6
+fh|764|ff|7Arial|fb|70|fm|7|      Font 7  Officer Precision size in banner
+fh|870|ff|8Arial|fb|80|fm|8|      Font 8  Chapter title size in banner
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1210|cg|1255|cb|1255|   touch of blue
+cr|2000|cg|2000|cb|2000|   text font color - this is NOT full black it is changed to a dark gray
+cr|3255|cg|3240|cb|3240|
+cr|4255|cg|4240|cb|4240|   all so far highlight color
+cr|5198|cg|5205|cb|5229|
+cr|6063|cg|6110|cb|6065|   Top Title Color   On Title Page
+cr|7198|cg|7205|cb|7229|   Lower Title Color On Title Page
+cr|8255|cg|8000|cb|8000|   red for emphasis
+cr|9255|cg|9255|cb|9255|   'white' but not white - on Title page for Font color behind blue title
+
+fh|t40|                    Font   t  t-title      section titles within chapters
+fh|b50|                    Font   b  b-bigTitle
+
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+
+cr|m160|cg|m060|cb|m060|   fill   m  m-mastColor     on Title Pages     Sickly Orange
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Dan  Neil  Precision                                    2013 ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bSession 1 e                               Quizies        ^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+
+at|
+Handout with Quizzes:  1@d Response to 1@c - 0-7 HCP, any distribution
+
+Generally when you open a strong club, it’s one of the delights of bridge 
+– you announce to the world you probably have the strongest hand at the table – 
+kind of like opening 2@c in standard, but you get to do it more often. 
+ 
+But the 1@d is a splash of water in the face 
+- responder might have a Yarborough and is advertising such.
+
+Opener must take a chill pill and get back to business.  
+Time to find the 8 card major suit fit, and get to the proper level.
+
+The following quizzes you should attempt after reviewing the main text, 
+
+Standard Modern Precision – Getting From Here to There.  
+
+Answers will appear at the end.  
+
+As always, hands are displayed in spades-hearts-diamonds-clubs order.|
+
+
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2886|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2886 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+nt||cp|2|at|^b@2
+
+
+Quiz 1 – Opener’s rebids after 1@c-1@d
+
+What would you rebid after  1@c-1@d  with these hands?  
+Remember the NT ladder:     – 14-16, 17-19, 20-21, 22-24, 25-27.
+
+a. AQxx  AKx  AJxx  xx
+b. xx  AQJxxx  AKxx  Q
+c. x  AQxx  xx  AKQxxx
+d. Kxxxx  AQx  Kx  AQx
+e. Axx  KQx  AKJxxx  x
+f. AKJx  AKx  xx  AKxx
+g. AQJxxx  KQx  AKQ  x
+h. KQJx  KQxx  KQJx  x
+i. AQJ  AKQ  AQJ  Kxx
+
+
+Quiz 2 – Responder’s rebids after 1@c-1@d-1M
+Now that the strength ranges have been broadcast (opener 16+, responder 0-7), the suits begin to reveal themselves.  How does responder act with these hands after 1@c-1@d-1@h?
+
+a. Jxxx  xx  xxxxx  xx
+b. xxx  Kxx  xx  xxxxx
+c. AQxxxx  x  xxxx  xx
+d. Kxx  Jxxx  xx  xxxx
+e. x  AQxx  xxxx  xxxx
+f. xx  AQxx  xxxx  xxx
+g. Kxx  xx  QJxx  xxxx
+h. Qx  Kxx  Jxx  xxxxx
+i. xxx  KQxxx  --  xxxxx|
+pg| ***** 1 ***** |
+
+
+nt||cp|2|at|^b@2
+
+Quiz 3 – Responder’s rebids after 1@c-1@d-1NT
+Opener has declined to show a suit.  At least it’s right-sided.  What next?
+
+a. Axxxx  xx  xxx  xxx
+b. KQx  JTx  xxx  Txxx
+c. x  AJxx  xxx  Qxxxx
+d. xxx  xxx  QJxxxx  x
+
+
+Quiz 4 – Opener’s rebids after 1@c-1@d-1M-2@c
+Responder has indicated a good non-fit hand.  How do we proceed after  1@c-1@d-1@s-2@c  ?
+
+a. AQJxxx  KQx  AJx  x
+b. KQJx  Axx  x  KQJxx
+c. AQTxx  x  KQxx  AJT
+d. KQJT  x  AQJxxx  AK
+e. AQTxx  Axxx  AKx  x
+f. KQJTxx  Axx  Kx  AQ|
+pg| ***** 2 ***** |
+
+
+nt||cp|2|at|^b@2
+
+Quiz 5 – Opener’s rebids after 1@c-1@d-1M-2@d
+Now responder has a mild fit for our major.  How do we continue with these hands after  1@c-1@d-1@h-2@d ?
+
+a. AQxx  KQJx  x  AQJx
+b. Kxx  AQxxx  AKQx  x
+c. x  KQJxxx  AKQ  AKx
+d. xx  AQJx  x  AKQxxx
+e. Kxx  AQJxx  AQx  AQ
+
+Quiz 6 – Responder’s rebids after 1@c-1@d-2@s
+Opener has announced a game-forcing hand;… say a bit like a standard 2@c opener, or a tad better.  
+How does responder continue?  (Hint:  you can play 3@c as a double-negative if you wish)
+
+a. xxxx  Qx  xxxx  xxx
+b. xx  Axx  Qxx  xxxxx
+c. x  Qxxxxx  Qxx  xxx
+d. xxx  xxx  xxx  Jxxx
+e. xxxx  Axx  x  Qxxxx|
+pg| ***** 3 ***** |
+
+
+nt||qx|01|cp|2|at|^b@2
+
+Answers to Quizzes
+
+Quiz 1: Opener’s rebids after 1@c-1@d
+
+a. 1NT – This is a 17-19 HCP NT on the ladder, which rebids 1NT.
+b. 1@h - This is forcing, so we will show the length of the hearts later by rebidding 2@h if possible.  If you were worried about that stiff @cQ, the length of the hearts should compensate.
+c. 1@h - Majors come first always in this sequence.  The plan is to seek a 4-4 heart fit and retreat to clubs if not.  Partner’s next bid will tell us how to proceed.   Partner cannot Pass 1@h.
+d. 1NT – Generally 5332 hands are NT hands – so this is a 17-19 NT and rebids 1NT.
+e. 2@d -  In contrast to hand (c) this hand has no major suit so is free to bid the minor suit immediately.
+f. 2NT –  On the NT ladder, this hand is too strong to open 2NT, so opens 1@c and jumps to 2NT.  Partner can now use Puppet Stayman or transfers or whatever you normally use over a 2NT opening.
+g. 2@s - if you are basically at game you should announce such by jumping in the major.  If you like you can use the cheaper minor as a 2nd negative over these jumps, just as if you opened a standard 2@c and rebid a suit.
+h. 1@h - Again, majors first.  If partner has 4 hearts or 4 spades we will find a major suit fit.  If partner has neither major we could play 1NT or 2@d.  
+i. 3NT – This is the game forcing NT hand.  I recommend you might think about playing Kokish so that 1@c-1@d-2@h is 2-way:  hearts or this hand.  Partner would be forced to relay 2@s and now you can rebid 2NT with this hand (so you have transfers and Stayman available) and anything else with the heart hand.  But for now, you just jump to 3NT.  Why not open 3NT?  Because you want to investigate slam if partner has 8+ HCP and does not bid 1@d.  If you open 3NT with a strong hand you lose that ability.|
+pg| ***** 4 ***** |
+
+
+nt||cp|2|at|^b@2
+
+Quiz 2: Responder’s rebids after 1@c-1@d-1M
+
+a. 1@s - up the line, 0-7 HCP
+b. 1NT – the double-negative, denies spades or good heart fit
+c. 2@s - a jump-shift rebid shows a top of the range hand with a good 6 crd suit
+d. 2@h - 4 card support double-negative
+e. 2NT – a mini-splinter raise of hearts, partner can relay to find out where the singleton is
+f. 3@h - 4 card support, top of range
+g. 2@c - a good hand, but denies 4 spades or a fit, artificial
+h. 2@d - the “support double” – good hand but just 3 hearts
+i. 4@d - a void mega-splinter;  your hand has increased in value from the 1@h rebid
+
+Quiz 3:  Responder’s rebids after 1@c-1@d-1NT
+
+a. 2@h - transfer to spades;  just as if partner opened 1NT
+b. 2NT – invite to 2NT (or if you use 4 suit transfers, bid 2@c followed by 2NT)
+c. 2@c - seeking a 4-4 heart fit;  we will continue to  game since partner’s minimum of 17 and our 7 gives 24
+d. 2@s - signoff in a minor (or, playing 4 suit transfers, 2N);  we aim to get out in 3@d
+
+Quiz 4:  Opener’s rebids after 1@c-1@d-1@s-2@c
+
+a. 2@s - 6 or more cards, minimum hand;  we may have enough for game, but if partner has a singleton or void in spades, the hand is not so good – if partner has a doubleton, she will probably try 3@s now
+b. 2@d - we want to get out in the best partial, so we wait with 2@d;  if partner has 4 hearts she will bid 2@h and we can Pass;  if partner has a doubleton spade she will rebid 2@s and we will correct to 3@c (which partner should have length in)
+c. 2@d - again, we have a flexible hand;  if partner rebids 2@s, this time we will Pass
+d. 3@d - we show 5+ diamonds and a game forcing hand
+e. 2@h - if partner has 4 hearts partner may raise us, possibly to game;  you may choose to play that this promises 5 hearts (and wait with 2@d with just 4 hearts);  also, you may choose to play that 1@c-1@d-1@s-2@h promises 6, and 1@c-1@d-1@s-2@c may have 5 hearts (rebid 2@h)
+f. 3@s - game forcing, 6+ spades;  if partner rebids 3NT we will play it there|
+pg| ***** 5 ***** |
+
+
+nt||cp|2|at|^b@2
+
+
+Quiz 5:  Opener’s rebids after 1@c-1@d-1@h-2@d
+
+a. 2@s - we know there is no spade or heart fit, but we want to get to 3NT from the right side;  if partner rebids 3@c we know there is a diamond problem and may proceed to 5@c;  if partner rebids 3@d we will rebid 3NT;  if partner goes back to 3@h we will complete our shape with 4@c and partner can make the final decision
+b. 4@h - we know where we want to end up, so we bid it
+c. 3@s - a jump-shift after a major fit is a splinter;  we might have slam
+d. 3@c - we are going to wager game, we just want to right-side 3NT, or get to 5@c;  4@h might be ok but we are ruffing with the long trump hand which would be embarrassing if trumps were 4-2 or 5-1
+e. 2NT – we want to see what partner has;  if partner rebids 3NT we are happy to play it there;  if partner rebids a minor we will investigate slam lightly;  we can always go back to 4@h at any time
+
+Quiz 6:  Responder’s rebids after 1@c-1@d-2@s
+
+a. 3@s - announce the fit and let partner take it from there
+b. 2NT – this hand could be played in several different strains – 2NT is the best waiting bid
+c. 2@h - we have a long suit, though the hand is not the best
+d. 4@s - fast arrival in a game forcing situation;  however if you play 3@c 2nd negative, this would be the time
+e. 4@d - splinter for spades, not a minimum|
+pg| ***** 6 ***** |
+
+

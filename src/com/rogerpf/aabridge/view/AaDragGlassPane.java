@@ -31,6 +31,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Cc;
 import com.rpsd.bridgefonts.BridgeFonts;
@@ -46,6 +47,7 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 	private Point mouseWas = null;
 	private BufferedImage dragImage = null;
 	private Dimension offset = new Dimension();
+	private boolean splash_msg_NewDeal = false;
 
 	/**
 	 */
@@ -65,7 +67,16 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 
 	/**
 	*/
-	public Timer splashScreenCompleteTimer = new Timer(2500, new ActionListener() {
+	public void showNewDealScreen() {
+		splash_msg_NewDeal = true;
+		splashScreenCompleteTimer.start();
+		setVisible(true);
+		// App.frame.repaint();
+	};
+
+	/**
+	*/
+	public Timer splashScreenCompleteTimer = new Timer(4000, new ActionListener() {
 		public void actionPerformed(ActionEvent evt) {
 			splashScreenCompleteTimer.stop();
 			setVisible(false);
@@ -133,10 +144,10 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 			float panelWidth = (float) getWidth();
 			float panelHeight = (float) getHeight();
 
-			float marginLeft = panelWidth * 0.36f;
-			float marginRight = panelWidth * 0.30f;
-			float marginTop = panelHeight * 0.36f;
-			float marginBottom = panelHeight * 0.45f;
+			float marginLeft = panelWidth * 0.375f;
+			float marginRight = panelWidth * 0.375f;
+			float marginTop = panelHeight * 0.375f;
+			float marginBottom = panelHeight * 0.40f;
 
 			float activityWidth = panelWidth - (marginLeft + marginRight);
 			float activityHeight = panelHeight - (marginTop + marginBottom);
@@ -146,7 +157,7 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 			RoundRectangle2D.Float rr = new RoundRectangle2D.Float();
 
 			// fill the lozenge ----------------------------------------------
-			g2.setColor(Cc.RedWeak);
+			g2.setColor(splash_msg_NewDeal ? Cc.GreenWeak : Cc.RedWeak);
 			rr.setRoundRect(marginLeft, marginTop, activityWidth, activityHeight, curve, curve);
 			g2.fill(rr);
 
@@ -157,28 +168,31 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 			// Add in the text
 			float fontSize = activityWidth * 0.14f;
 
-			String t1 = "aaBridge is best with a";
-			String t2 = "Wheel Mouse";
+			if (splash_msg_NewDeal) {
+				// new deal message
+				g2.setColor(Aaa.genOffWhite);
+				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.5f));
+				Aaa.drawCenteredString(g2, Aaf.splash_deal1, marginLeft, marginTop + activityHeight * 0.05f, activityWidth, activityHeight * 0.25f);
 
-			g2.setColor(Aaa.genOffWhite);
-			g2.setFont(BridgeFonts.bridgeBoldFont.deriveFont(fontSize * 0.5f));
-			Aaa.drawCenteredString(g2, t1, marginLeft, marginTop + activityHeight * 0.10f, activityWidth, activityHeight * 0.35f);
+				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.55f));
+				Aaa.drawCenteredString(g2, Aaf.splash_deal2, marginLeft, marginTop + activityHeight * 0.10f, activityWidth, activityHeight * 0.75f);
 
-			g2.setFont(BridgeFonts.bridgeBoldFont.deriveFont(fontSize * 0.75f));
-			Aaa.drawCenteredString(g2, t2, marginLeft, marginTop + activityHeight * 0.30f, activityWidth, activityHeight * 0.70f);
+				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.55f));
+				Aaa.drawCenteredString(g2, Aaf.splash_deal3, marginLeft, marginTop + activityHeight * 0.52f, activityWidth, activityHeight * 0.45f);
+			}
+			else {
+				// mouse wheel message
+				g2.setColor(Aaa.genOffWhite);
+				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.5f));
+				Aaa.drawCenteredString(g2, Aaf.splash_wh1, marginLeft, marginTop + activityHeight * 0.05f, activityWidth, activityHeight * 0.25f);
 
-//			String t3 = "C D H S ";
-//			AttributedString at = new AttributedString(t3);
-//			Font bf = BridgeFonts.faceAndSymbFont.deriveFont(fontSize);
-//			at.addAttribute(TextAttribute.FONT, bf, 0, t3.length());
-//
-//			for (Suit suit : Suit.cdhs) {
-//				at.addAttribute(TextAttribute.FOREGROUND, suit.color(Cc.Ce.Strong), suit.v * 2, suit.v * 2 + 1);
-//			}
-//			FontRenderContext frc = g2.getFontRenderContext();
-//			TextLayout tl = new TextLayout(at.getIterator(), frc);
-//			tl.draw(g2, x /* marginLeft + activityWidth * 0.12f */, marginTop + activityHeight * 0.90f);
+				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.65f));
+				Aaa.drawCenteredString(g2, Aaf.splash_wh2, marginLeft, marginTop + activityHeight * 0.10f, activityWidth, activityHeight * 0.75f);
 
+				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.55f));
+				Aaa.drawCenteredString(g2, Aaf.splash_wh3, marginLeft, marginTop + activityHeight * 0.52f, activityWidth, activityHeight * 0.45f);
+
+			}
 		}
 	}
 }

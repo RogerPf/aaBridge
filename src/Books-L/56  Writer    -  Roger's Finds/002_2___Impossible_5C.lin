@@ -1,0 +1,316 @@
+%%
+%%
+%% <--SECT_HEAD-->=2.                          The   Impossible   5 @c's  
+%%
+%%
+%%  Date last Edited    2016-02-20          set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+%%
+%% <<--HEADER_FILE-->>=999_____Rogers_Finds__header
+
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player they need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use all aaBridge features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+
+fh|t40|                    Font   t  t-title      section titles within chapters
+fh|b50|                    Font   b  b-bigTitle
+
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+
+fh|s28|                    Font   s  s-smalle
+
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor     on Title Pages
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Roger's  Finds                        2016 and Later ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b2.                          The   Impossible   5 @c's  ^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+
+Lg|f|
+fp|4|at|^c@2^z@3|
+at|
+This hand was played in  5@c's  at a number of tables.
+^m A spade lead, gave declarer a chance, but none made it.       
+
+
+As we review the board, I will try to be your  Guardian Angel |fp|t|cp|red|at|^*b* ^*n|cp||fp||at| and channel the thinking.  
+
+|ht|s|
+fp|b|cp|red|at|^d^*b * ^*n|cp||fp||at|Modern Proverb  @-  Don't drive faster than your  Guardian Angel  can fly.|
+
+
+
+
+ht|x|n#|h|at|^b@2@1|at|
+^*bClick^*n          ^*bFlow >^*n         or use your    ^*bMouse Wheel^*n|
+ht|z|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+
+%%
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2942|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2942 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+qx|# 2|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+bv|a,h|    %% *a*ll  three  [Cont, 1st, 'Enter the Deal']  buttons forced  *h*idden.
+
+pn|South,West,North,East|
+rh||ah|Hand 2|sv|-|sk|s|sk|s|
+md|4sA9hQdJ863cKQJ874,sKQ732hJ98652d7c5,s65hAKT4dA54cT963,sJT84h73dKQT92cA2|
+mb|p?|
+nt|^z@3^b@2|at|^^|n^|5|
+lg|k|
+at|^*bHand 2^*n     Playing  2/1  the bidding goes.    |   
+pg| ***** 1 ***** |
+
+
+mb|1C|
+pg| ***** 2 ***** |
+
+
+mb|p|mb|1H|
+pg| ***** 3 ***** |
+
+
+mb|p|mb|2D|
+pg| ***** 4 ***** |
+
+
+mb|p|mb|3C|
+pg| ***** 5 ***** |
+
+
+mb|p|mb|5C|
+pg| ***** 6 ***** |
+
+
+mb|p|mb|p|
+pg| ***** 7 ***** |
+
+
+sj|c|
+mb|p|
+pc|sK|
+at|     The lead is the  @sK|
+pg| ***** 8 ***** |
+
+
+qx|Try,wide|
+eb|y|     %% 'end blocker'  on
+bv|f,v|   %%  1st (*f*irst) button forced *v*isible
+n#|7|
+at|^^ |cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the analysis.|
+n#|7|
+fp||cp||cs||lg||ht|s|at|@4@0@1^^|ht|x|
+at|^^^a       You can  PLAY  out the hand from around the first lead by using the  { ^*b1st^*n }  button.|
+pf|f|
+pg| ***** 9 ***** |
+
+
+bv|f,h|   %%  1st (*f*irst) button forced *h*idden
+nt|^z@3^b@2^^|
+Lg|f|
+n^|5|
+at|^*bTime for some Questions^*n|
+n#|5|
+at|^^Are we in a good contract ?      Will others be playing here ?     Which hand should we pick as the Master hand ?    How many losers do we have ?    You know the drill.|    
+pg| ***** 10 ***** |
+
+
+lg|e|n#|7|
+at|^^The alternative GAME contract is 3NT and that  WILL  be down on a spade lead.  Opps must get at LEAST 4 spades (assuming the spades are a kind 5-4)  ^*bAND^*n  the @cA.       But does our contract of  5@C  stand a chance ?|
+pg| ***** 11 ***** |
+
+
+nt|^z@3^b@2|at|^^|n^|5|
+lg|k|
+at|Counting losers we have  4,     1 @c(fast),    3 @d(slow)   and   1 @s(fast, given the lead)      We need to get this down to just 2.      I will leave you to count  'winners'  if that is your style.|
+pg| ***** 12 ***** |
+
+
+at|^^How can we shed our losers ?    Well the  @s  loser could be thrown on a  @h  such as ...|
+pg| ***** 13 ***** |
+
+
+pc|s5|pc|s4|pc|sA|
+pg| ***** 14 ***** |
+
+
+pc|hQ|pc|h2|pc|h4|pc|h3|
+pg| ***** 15 ***** |
+
+
+pc|d6|pc|d7|pc|dA|pc|d2|
+pg| ***** 16 ***** |
+
+
+pc|hA|pc|h7|pc|s9|
+pg| ***** 17 ***** |
+
+
+n#|5|
+at|^^But now it is certain that the  2 @d  losers are ^*b NOT ^*n going away.|
+pg| ***** 18 ***** |
+
+
+at|^^So  Rewind  back to the opening lead.|
+pg| ***** 19 ***** |
+
+
+up|14|
+at|^q ^*bOpening Lead^*n    |
+pg| ***** 20 ***** |
+
+
+qx|Ans,wide|
+bv|f,v|   %%  1st (*f*irst) button forced *v*isible
+nt|^z@3^b@2^^|
+n^|5|
+Lg|f|
+at|^*bAnswer^*n^^|
+n^|5|at|^^ |cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the answer.|
+n#|7|
+fp||cp||cs||lg||ht|s|at|@4@0@1^^|ht|x|
+at|^^^a       You can  PLAY  out the hand from around the first lead by using the  { ^*b1st^*n }  button.|
+pf|f|
+pg| ***** 21 ***** |
+
+
+bv|f,h|   %%  1st (*f*irst) button forced *h*idden
+nt|^z@3^b@2^^|n^|5|
+lg|d|
+at|What if we use the @hQ as an entry.  Yes, I know this would burn one of our heart tricks but it would also keep the  @dA  as both a stopper, an honor killing threat and a later entry.|
+pg| ***** 22 ***** |
+
+
+pc|s5|pc|s4|pc|sA|
+pg| ***** 23 ***** |
+
+
+pc|hQ|pc|h2|pc|hK|pc|h3|
+pg| ***** 24 ***** |
+
+
+pc|hA|pc|h7|pc|s9|pc|h5|
+pg| ***** 25 ***** |
+
+
+n#|5|
+at|^^Now what ?   |
+pg| ***** 26 ***** |
+
+
+at|Well on first principles a  @s  elimination NOW, could later mean an Opp might have to give us back the lost  @h  trick with a  ruff and sluff.|
+pg| ***** 27 ***** |
+
+
+pc|s6|pc|s8|pc|c4|pc|s2|
+n#|5|
+at|^^Time to knock out the  Ace of @c.|
+pg| ***** 28 ***** |
+
+
+pc|cK|pc|c5|pc|c3|pc|cA|
+pg| ***** 29 ***** |
+
+
+pc|c2|
+nt|^z@3^b@2^^|
+n^|5|
+Lg|k|
+at|Interestingly  East  continues with the only outstanding @c.|
+pg| ***** 30 ***** |
+
+
+at|^^Where do we want to win this trick ?       And why did East not exit with a @h or a @d ?|
+pg| ***** 31 ***** |
+
+
+at|^^What if East now sees himself as now endplayed in  @d's.  For example having to lead away from  @dKQxx ?|
+pg| ***** 32 ***** |
+
+
+at|^^In which case we want to win this trick in dummy and lead a low diamond towards the @dJ|
+pg| ***** 33 ***** |
+
+
+pc|c7|pc|h6|pc|c9|
+pg| ***** 34 ***** |
+
+
+pc|d4|
+pg| ***** 35 ***** |
+
+
+sk||
+at|^^Let's look at the Opps hands.|
+pg| ***** 36 ***** |
+
+
+nt|^z@3^b@2|at|^^|n^|5|
+lg|k|
+at|If East does not win the trick with the @dK or @dQ  then you will win with your @dJ and will have only one more loser before going into the cross ruff for the 11.     So East must play one of his two top diamonds.|
+pg| ***** 37 ***** |
+
+
+pc|dQ|pc|d3|pc|d7|
+pg| ***** 38 ***** |
+
+
+pc|dK|
+at|^^However  ^*bNOW^*n  East is stuck - endplayed.|
+pg| ***** 39 ***** |
+
+
+n#|5|
+at|^^A lead of a diamond gives you two  @d  tricks and the cross ruff for 11.|
+pg| ***** 40 ***** |
+
+
+at|^^A lead of a Spade will see you ruff in hand and discard the @d5 in dummy for the same result.|
+pg| ***** 41 ***** |
+
+
+qx|DD,wide|
+sk||
+eb||
+bv|a,v|
+pf|c|
+pg| ***** 42 ***** |
+
+

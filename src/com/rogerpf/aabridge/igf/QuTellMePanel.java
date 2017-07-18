@@ -33,8 +33,6 @@ public class QuTellMePanel extends JPanel {
 
 		setOpaque(false);
 
-		// Font stdTextFont = BridgeFonts.bridgeLightFont.deriveFont(14f);
-
 		RpfResizeButton b = new RpfResizeButton(Aaa.s_Std, "questionTellMe", 20, 20, 0.7f);
 		b.addActionListener(App.con);
 		add(b, App.hm1oneHun);

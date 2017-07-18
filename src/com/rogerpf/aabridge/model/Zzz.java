@@ -10,12 +10,15 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.model;
 
+import com.rogerpf.aabridge.controller.App;
+
 //@formatter:off
 
 
 public class Zzz {
 	
-	public final static String lin_EOL = (char) 0x0d + "" + (char) 0x0a;  // od = CR   oa = LF
+	private final static String win_EOL = (char) 0x0d + "" + (char) 0x0a;  // 0d = CR   0a = LF
+	private final static String mac_EOL = (char) 0x0a + "";
 
 	public final static int Me = 0;
 	public final static int Pn = 1;
@@ -42,6 +45,15 @@ public class Zzz {
 	
 	public final static int[]    scoreRate = {  20,  20,  30,  30,  30 };
 	
+	
+	/**
+	 */
+	public static String get_lin_EOL() {
+		if (App.onWin)	
+			return (App.useOsStdEOL) ? Zzz.win_EOL : Zzz.mac_EOL;
+		else
+			return (App.useOsStdEOL) ? Zzz.mac_EOL : Zzz.win_EOL;
+	}	
 	
 	/**
 	 */

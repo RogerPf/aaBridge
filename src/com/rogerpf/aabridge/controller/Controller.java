@@ -11,11 +11,7 @@
 package com.rogerpf.aabridge.controller;
 
 import java.awt.Dimension;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.awt.KeyEventDispatcher;
-import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -55,11 +51,12 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 			// =============================================================================
 			postContructionInitTimer.stop();
 
-//			if (App.runTestsAtStartUp && App.devMode) {
-//				CmdHandler.runTests();
-//			}
+//			if (App.runTestsAtStartUp && App.devMode)
+//			CmdHandler.runTests();
 
 			App.mruCollection.loadCollection();
+
+			App.aaHomeBtnPanel.fillMenuDelayed();
 
 			boolean chapterLoaded = false;
 			boolean keepTrying = true;
@@ -81,19 +78,23 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 
 			// Is there a (dev mode) linFile we want to start with
 			//
+			boolean dev_playBridge = false;
 			boolean dev_tweekAfterLoad = false;
 
 			if (App.devMode && (chapterLoaded == false) && keepTrying) {
 				String dealName = "";
 
+//				dev_playBridge = true;
+
 //				dealName = "Distr Flash Cards";
 //				App.lbx_modeExam = true; // testing only
 
-//				dealName = "Table Conceal";
+//				dealName = "Chinese UTF-8"; // =============== <<<<<<<<<<<<<<<<<<<<
+//				dealName = "asia_1"; // =============== <<<<<<<<<<<<<<<<<<<<
 
-//				dealName = "110  Index";
+//				dealName = "mentoring 2013"; // =============== <<<<<<<<<<<<<<<<<<<<
 
-//				dealName = "single_file_in_folder"; // =============== <<<<<<<<<<<<<<<<<<<<
+//				dealName = "Write lin file"; // =============== <<<<<<<<<<<<<<<<<<<<
 
 //				dev_tweekAfterLoad = true;
 
@@ -111,7 +112,18 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 				}
 
 				if (dev_tweekAfterLoad && chapterLoaded) {
-//					App.mg.jump_to_pg_number_display(2 + 1);
+//					App.pbnAutoEnter = true;
+//					App.reinstateAnalyser = true;
+
+//					App.mg.jump_to_pg_number_display(1 + 63);
+//
+//					CmdHandler.tutorialIntoDealStd();
+//					CmdHandler.leftWingEdit();
+
+//					CmdHandler.editHands();
+//					App.frame.executeCmd("copyFolder_Doc_Collection");
+//					MassGi_utils.saveDealsAsPbnNoPlay();
+//					App.frame.executeCmd("rightPanelPrefs7_ShowBtns");
 //					CmdHandler.tutorialIntoDealB1st();
 //					CmdHandler.tutorialIntoDealClever();
 //					CmdHandler.leftWingEdit();
@@ -145,35 +157,7 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 
 			App.frame.setMinimumSize(new Dimension(300, 200));
 
-			// make sure the aaBridge app window will show on a physical screen
-			{
-				int sideMinOverlap = 100;
-				boolean canBeSeen = false;
-				Rectangle aaBridgeInnerTop = new Rectangle(App.frameLocationX + sideMinOverlap, App.frameLocationY + 200,
-						App.frameWidth - (2 * sideMinOverlap), 2);
-				Rectangle aaBridgeInnerBot = new Rectangle(App.frameLocationX + sideMinOverlap, App.frameLocationY + 12, App.frameWidth - (2 * sideMinOverlap),
-						2);
-				GraphicsDevice[] gs = GraphicsEnvironment.getLocalGraphicsEnvironment().getScreenDevices();
-				for (int j = 0; j < gs.length; j++) {
-					GraphicsConfiguration[] gc = gs[j].getConfigurations();
-					for (int i = 0; i < gc.length; i++) {
-						Rectangle bounds = gc[i].getBounds();
-						if (bounds.intersects(aaBridgeInnerTop) && bounds.intersects(aaBridgeInnerBot)) {
-							canBeSeen = true;
-							break;
-						}
-					}
-					if (canBeSeen)
-						break;
-				}
-
-				if (canBeSeen == false) {
-					App.frameLocationX = 90;
-					App.frameLocationY = 65;
-					App.frameWidth = 900;
-					App.frameHeight = 650;
-				}
-			}
+			App.validateWindowPosition();
 
 			App.frame.setLocation(App.frameLocationX, App.frameLocationY);
 			App.frame.setSize(App.frameWidth, App.frameHeight);
@@ -199,6 +183,11 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 //			if (App.isVmode_Tutorial()) {
 //				rattleTimer.start();
 //			}
+
+			if (App.devMode && dev_playBridge) {
+				App.frame.executeCmd("playBridge_and_dealChoice");
+				CmdHandler.mainNewBoard();
+			}
 
 		}
 	});
@@ -476,7 +465,7 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 
 		Card card = hand.dumbAuto(dumbAutoDir);
 
-		if (App.isDDSavailable()) { // Double Dummy
+		if (App.haglundsDDSavailable && App.useDDSwhenAvaialble_autoplay) { // Double Dummy
 			card = Z_ddsCalculate.improveDumbPlay(hand, card);
 		}
 
@@ -507,7 +496,10 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 			App.gbp.c1_1__tfdp.setShowCompletedTrick();
 		}
 
-		App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
+		if (App.youAutoplayFAST && App.youAutoplayAlways && !App.youAutoplayPause)
+			App.gbp.c1_1__tfdp.normalTrickDisplayTimer_FAST_startIfNeeded();
+		else
+			App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
 
 		App.frame.repaint();
 
@@ -690,6 +682,30 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 	}
 
 	public static void Left_keyPressed() {
+		// =============================================================================
+		if (App.cameFromPbnOrSimilar()) {
+
+			if (App.pbnAutoEnter) {
+				if (App.isVmode_Tutorial()) {
+					App.mg.tutorialBackOne();
+					CmdHandler.tutorialIntoDealClever();
+				}
+				else {
+					boolean prev_analyser = App.ddsAnalyserPanelVisible;
+					App.ddsAnalyserPanelVisible = false;
+					MassGi_utils.do_dealmodeBackToMovie();
+					App.mg.tutorialBackOne();
+					CmdHandler.tutorialIntoDealClever();
+					if (prev_analyser && App.reinstateAnalyser) {
+						CmdHandler.ddsAnalyse();
+					}
+				}
+				App.pbnAutoEnter = true;
+				App.gbp.matchPanelsToDealState();
+				return;
+			}
+		}
+
 		if (App.isVmode_Tutorial()) {
 			stopDisplayAndTutorialTimers();
 			App.mg.tutorialBackOne();
@@ -721,6 +737,30 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 	}
 
 	public static void Right_keyPressed() {
+		// =============================================================================
+		if (App.cameFromPbnOrSimilar()) {
+
+			if (App.pbnAutoEnter) {
+				if (App.isVmode_Tutorial()) {
+					App.mg.tutorialFlowFwd(false /* stepIfBidding */);
+					CmdHandler.tutorialIntoDealClever();
+				}
+				else {
+					boolean prev_analyser = App.ddsAnalyserPanelVisible;
+					App.ddsAnalyserPanelVisible = false;
+					MassGi_utils.do_dealmodeBackToMovie();
+					App.mg.tutorialFlowFwd(false /* stepIfBidding */);
+					CmdHandler.tutorialIntoDealClever();
+					if (prev_analyser && App.reinstateAnalyser) {
+						CmdHandler.ddsAnalyse();
+					}
+				}
+				App.pbnAutoEnter = true;
+				App.gbp.matchPanelsToDealState();
+				return;
+			}
+		}
+
 		if (App.isVmode_Tutorial()) {
 			// @ formatter:off
 			switch (App.mouseWheelDoes) {

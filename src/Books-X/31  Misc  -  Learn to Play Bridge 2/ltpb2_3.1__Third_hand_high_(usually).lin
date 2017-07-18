@@ -1,0 +1,1252 @@
+%% 
+%% This is an extract from the free Windows prog - 'Learn to Play Bridge Bridge2'
+%%     available from     https://web.acbl.org/LearnToPlayBridge
+%%
+%% Original filename      ltpb2_3.1__Third_hand_high_(usually).lin
+%%     file last changed  2016-Dec-07    bversion 0.18
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%                                    Font  'blank'  is size 30   
+%%                                    (sizes 30 to 35 shrink to 30  for legacy compatibility)
+fh|136|ff|1Arial|fb|10|fm|1|      Font 1   36  shrinks to size 32    
+fh|238|ff|2Arial|fb|20|fm|2|      Font 2   37  shrinks to size 34
+fh|339|ff|3Arial|fb|30|fm|3|      Font 3
+fh|440|ff|4Arial|fb|40|fm|4|      Font 4
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|60|fm|6|      Font 6
+fh|770|ff|7Arial|fb|70|fm|7|      Font 7
+fh|880|ff|8Arial|fb|80|fm|8|      Font 8
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1248|cg|1231|cb|1189|   Beige Cream
+cr|2185|cg|2201|cb|2195|   Beige grey green
+cr|3198|cg|3205|cb|3229|   grey medium
+cr|4160|cg|4174|cb|4228|   blue grey
+cr|5198|cg|5205|cb|5229|   light grey
+cr|6122|cg|6000|cb|6049|   dark maroon
+cr|9255|cg|9255|cb|9255|   'white'
+
+
+bt||nt|^b@2^z@3|
+
+
+%%   Top bar header box and Text
+ht|b|cp|9|cs|6|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|n#|k|fp|6|at|^-Learn to Play Bridge2          ^*bChapter 3   Section 1^*n^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|1|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|f|fp|9|at|^^^^^^^^^^^^^^^^|fp|7|at|^-^*bThird Hand High (usually)^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+at|This Bridge Movie (.lin file) is an unaltered extract from  ^*bLearn to Play Bridge2^*n  a Windows program.  The original program can be downloaded from the ACBL at @-
+
+^d^*h https://web.acbl.org/LearnToPlayBridge ^*n
+    
+The ACBL requires an email address from you and will send you the download instructions  ^*bOR^*n  you can download it directly from ^*hhttp://www.bridgebase.com/index.php^*nhere^*x. (See the links, center left, on that web page.)
+
+^*bLearn to Play Bridge^*n comes as two programs.  Program 1 is for beginners, including an introduction to card play and Standard American bidding.  Program 2 (the source of this tutorial) covers material for the 'intermediate' player.
+
+An ^*bAcol^*n version of Program 1 can be downloaded from the ^*bEBU^*n ^*hhttp://www.ebu.co.uk/education/ltpb^*nhere^*x.
+ 
+
+A different set of extracts from  ^*bLearn to Play Bridge2^*n  are available for on-line play (in your browser) at @-
+
+^d^*h http://www.bridgesights.com/hondobridge/##fglb ^*n
+
+
+Our thanks goes to the ^*bACBL^*n for providing these two exceptional Bridge programs for free.
+|
+pg||
+
+
+
+qx|Suit|
+
+
+nt|^b@2^z@3|
+cs|5|cp|6|fp|4|
+at|
+^-{ Introduction to this Chapter 3 }
+^-|fp||cp||at|
+Now that you have have a good understanding of how to select an opening lead against both trump and notrump contracts, it is time to move on and consider the rest of the play of the cards from the point of view of the defenders.
+The main focus of this chapter is to explore 3 guidelines that are used to help the defenders decide which cards to play after the opening lead has been made. You may have heard of some of these before (in fact, the first guideline below was quoted in the first chapter of this program):
+|cs|4|at|^-{ Third hand high! }
+^-
+|pg||
+
+cs|2|at|^-{ Second hand low! }
+^-
+|pg||
+cs|3|at|^-{ Always cover an honor with an honor! }
+^-
+|pg||
+^-
+at|By now you have learned that words like ^*Ialways^*N and ^*Inever^*N are generally not appropriate when it comes to describing strategies of bridge. The above guidelines represent sound advice and if you follow them you will come up with the right cards to play on defense more often than not. There are plenty of situations on defense, however, where following the above guidelines will let you down. In this chapter you will learn what these guidelines mean, how to apply them, and how to recognize situations where they should be ignored.|pg||
+
+qx|3hig|
+
+
+nt|^b@2^z@3|cs|5|cp|6|fp|4|at|
+^-{ Third hand high (usually) and the Rule of 11 }
+^-
+|fp||cp||at|You heard about this in the first chapter of this program and you may have heard it elsewhere:
+|pg||
+cs|4|at|^-{ Third hand high! (usually) }
+^-
+|pg||
+at|Notice that in the title of this topic, the word ^*Iusually^*N is included. That word is not normally a part of the third hand high guideline, but you might as well start thinking ^*Iusually^*N right now. Guidelines like third hand high can be dangerous if you do not realize that they are only guidelines (as opposed to rules).
+|pg||
+at|While we are examining the title of this topic, notice the reference to the Rule of 11. The Rule of 11 really is a rule (as opposed to a guideline) and this rule can be used to help you realize when to apply third hand high and when to ignore this guideline. You will learn all about the Rule of 11 soon, but first here is a clarification of what is meant by third hand high:
+|pg||
+cs|1|At|^-{ Third hand high means that if you, as a defender, are the third player to 
+ play to a trick, then you should make your best effort to try to win that trick. }
+^-
+|pg||
+at|If you are thinking, "shouldn't I always making my best effort to win each trick?", the answer is no. The next topic is about second hand low, a guideline that is all about trying to lose tricks. Furthermore, you are already familiar with some bridge techniques (such as the hold up play) that involve intentionally losing tricks that you could have won. As you will learn later in this program, the hold up play is a useful technique for the defenders as well as the declarer.
+|pg||
+tb||st||md|1,s6,sa5,skj93|ha|y|wt|w|
+sv||hs|ws|
+
+nt|^b@2^z@3Here are a couple of (rather trivial) examples of why third hand high should be seen as a guideline as opposed to a rule. Imagine that you are sitting East for a change and that your partner, West, leads the @S6 at some point during the play of the cards. |pg||
+ls|ws|pc|s6|hc|sa|at|The declarer plays the @SA from the dummy. |pg||
+lc|sa|pc|sa|hs|es|at|Obvioulsy, it would be silly for you to play third hand high and waste your @SK on this trick. You cannot win this trick so just play a small spade now.|pg||
+up|1|ls|es|hc|s5|
+
+nt|^b@2^z@3If, instead of playing the @SA, the declarer plays the @S5 from the dummy, |pg||
+lc|s5|pc|s|hc|sk|at|you are in a position that third hand high was made for. Play the @SK, third hand high, and win the trick! |pg||
+lc|sk|pc|sk|
+md|0t4,q8762|
+hs|wsss|at|Perhaps this is how the remaining spades were dealt. Note that your partner, West, led what was his 4th best spade, the @S6, from an original holding of @SQ8762. Recall that the standard lead from a broken holding with at least 4 cards headed by an honor is the 4th best card. |pg||
+
+ls|ssws|
+
+nt|^b@2^z@3
+Let's take back your play of the @SK |pg||
+up|1|hc|sj|at|and notice that the @SJ would work just as well as the @SK on this layout. |pg||
+lc|sj|pc|sj|hc|sq|at|The @SJ will got the job done because West was dealt the @SQ. Third hand high was not necessary in this case - ^*Ithird hand highish^*N works just as well! |pg||
+hc|st|
+
+nt|^b@2^z@3This example is not meant to cast doubt on the third hand high guideline (we will see plenty of other examples that are intended to do just that). In fact, it doesn't take much of change in the above layout to make the third hand high play of the @SK necessary for the defense. Suppose we trade West's @SQ for South's @S10. |pg||
+md|0sq,st|at|Now the ^*Ithird hand highish^*N play of the @SJ will be a disaster for the defense as this play will allow South to score an undeserved trick with his @SQ! |pg||
+lc|sqst|pc|sq|pg||
+up|2|hc|sk|hc|sq|
+
+nt|^b@2^z@3On this layout, with the @SQ in the South hand, the proper third hand high play by East works very well. The @SK will win the trick. |pg||
+lc|sksq|pc|sks|pg||
+hs|esnsss|at|If East now leads a second round of spades, the declarer will have to play his @SQ and dummy's @SA on the same trick. |pg||
+ls|essswsns|pc|ssss|pg||
+hs|wses|at|This will be an especially effective defense against notrump since the defenders will now be able to run the spade suit if they are able to regain the lead! |pg||
+
+up|8|ls|wses|
+
+nt|^b@2^z@3So third hand high does not always apply, but as the above card combination demonstrates, this guideline does provide sound advice in some situations. |pg||
+hc|sasq|at|Suppose we trade South's @SQ for North's @SA |pg||
+md|0sa,,sq|hc|s6|at|and that West leads his 4th best spade, the @S6, as before. |pg||
+lc|s6sqsa|pc|s6|hc|s5|at|First let's see what happens if the @S5 is played from the dummy. |pg||
+lc|s5|pc|s5|hs|es|at|It's your turn to play as East. Do you think that this a situation for playing third hand high? |pg||
+ls|es|hc|sk|
+
+nt|^b@2^z@3
+No, this would be a very bad time to use third hand high! If you play your highest spade, the @SK, here |pg||
+lc|sk|pc|sk|hc|sa|at|then South will win his @SA. |pg||
+lc|sa|pc|sa|pg||
+hs|ns|at|North's @SQ will be the highest remaining spade and eventually the declarer will be able to win a second spade trick. |pg||
+up|2|ls|ns|hc|sj|
+
+nt|^b@2^z@3
+Now let's try the effect of playing a ^*Ithird hand highish^*N @SJ instead of the third hand high @SK. |pg||
+lc|sj|pc|sj|hc|sa|at|South can win his @SA (ducking instead would not help), |pg||
+lc|sa|pc|sa|at||pg||
+hc|sqsk|at|but the now singleton @SQ will later fall under your @SK and the declarer will be held to the one and only spade trick that he was dealt. |pg||
+up|2|lc|sqsk|hc|sj|
+
+nt|^b@2^z@3So the ^*Ithird hand highish^*N play of the @SJ is a good one for the defense on this layout, |pg||
+lc|sj|hc|s93|at|but did you notice that playing a ^*Ithird hand lowish^*N @S9 or even a ^*Ithird hand low^*N @S3 would work just as well? |pg||
+lc|s9|at|Let's try the @S3. |pg||
+lc|s3|pc|s3|hs|ss|at|West's @S6 is currently winning the trick and because South's small spade, the @S4, is smaller than the @S6, South needs to use his @SA if he wants to win this trick! |pg||
+ls|ss|pc|sa|pg||
+hc|sqsk|at|As before, North's @SQ will fall under your @SK on the second round of spades. |pg||
+lc|sksq|up|2|hc|sas3|
+
+nt|^b@2^z@3It might be fun to play a ^*Ithird hand low^*N @S3 here and watch your partner's puny @S6 force out South's @SA, |pg||
+
+md|0st,sa|hc|st|at|but playing the @S3 (or the @S9 for that matter) would be a lot less fun if South had the @S10 and West had the @SA. |pg||
+lc|s3stsa|hc|s9|at|Let's try the @S9 this time. |pg||
+lc|s9|pc|s9|hc|st|at|The declarer will be able to win this trick (one that he certainly does not deserve) with the @S10. |pg||
+lc|st|pc|st|pg||
+up|2|hc|sj|
+
+nt|^b@2^z@3Now let's go back and try the @SJ (a card that has not failed us here) instead of the @S9 (or the @S3). |pg||
+lc|sj|pc|sj|hs|ss|at|Regardless of which spade South plays from his hand, the @SJ will win the trick |pg||
+ls|ss|pc|s|pg||
+hs|nsss|at|and there is no way that South will win a trick with either the @SQ or the @S10. |pg||
+
+up|2|ls|nsss|hc|sk|at|Notice that a third hand high @SK will work just as well here. The @SK will win the first trick |pg||
+lc|sk|pc|sks|pg||
+
+hc|sa|hs|nsss|at|and both the @SQ and @S10 will fall under West's @SA on the second round of spades. |pg||
+
+ls|nsss|lc|sa|up|4|
+md|1,s6,sq5,skj93|
+wt|w|hs|ws|
+
+nt|^b@2^z@3To summarize, when West leads the @S6 |pg||
+ls|ws|pc|s|hc|s5|at|and the @S5 is played from the dummy, |pg||
+lc|s5|pc|s5|hc|sk93|at|there are layouts of the spade suit where the @SK, the @S9, and even the @S3 |pg||
+lc|sk93|hc|sj|at|are just as effective as the play of the @SJ. |pg||
+lc|sj|hc|sks9s3|at|There are also layouts, however, where the @SK, the @S9, and the @S3 give the declarer a trick that he is not entitled to, |pg||
+lc|sk93|hc|sj|at|but the @SJ is effective regardless of how the unseen spades are distributed around the table. |pg||
+
+
+
+nt|^b@2^z@3It is therefore the case that the @SJ is the proper card for East to play. The @SJ can only gain and it can never lose. The correct play of the @SJ here contradicts the guideline of third hand high and there is a good reason to ignore this guideline in this situation: |pg||
+hc|sqsk|at|the @SK and @SJ have dummy's @SQ surrounded.
+|pg||
+
+
+
+nt|^b@2^z@3This example illustrates a reliable rule (a dangerous word to use in bridge as we have seen) that describes one of the times when you should not play third hand high:
+|pg||
+cs|2|ht|n|at|^-{ If dummy is second to play to a trick, dummy's highest card is not played, 
+ and you have dummy's highest card surrounded, do not play third hand high! }
+^-
+|pg||
+
+up|2|md|1,sj,sq5,sk932|lc|sqsk|wt|w|
+
+
+nt|^b@2^z@3Here is a similar situation. Your partner now has the @SJ instead of you and he leads that card. |pg||
+lc|sj|pc|sj|hc|s5|at|As before, the @S5 is played from the dummy. |pg||
+lc|s5|pc|s5|hs|es|at|You do not have the @SQ surrounded in quite the same way anymore since you do not have the @SJ yourself. Your partner has played the @SJ, however, so the @SQ is still surrounded. Playing a third hand high @SK can only lose here (if South was dealt the @SA). Simply follow suit with a small spade.|pg||
+
+ls|es|up|1|md|0sa64,st87|hc|s5|
+
+nt|^b@2^z@3
+So far the declarer has always been playing the @S5 from the dummy on the first trick. |pg||
+lc|s5|hc|sqsa|at|In a real bridge game it is likely that the declarer would play the dummy's @SQ instead of the @S5, especially if the declarer was dealt the @SA. |pg||
+lc|sqsa|pc|sq|hc|skt|md|0,sk|
+
+nt|^b@2^z@3Playing dummy's @SQ would be a good play for the declarer to make since, from his point of view, your partner might be the defender who was dealt the @SK. This is very possible because the @SJ might have been led from a holding headed by the interior sequence of @SKJ10. |pg||
+lc|skt|hs|esss|at|On this layout of the spade suit, dummy's @SQ will win the trick, |pg||
+ls|esss|pc|s2s4|pg||
+
+hc|sa|at|and the declarer, who still has the @SA, will win 2 spade tricks. |pg||
+lc|sa|up|3|hc|s5|
+
+nt|^b@2^z@3To further see why the declarer should play the @SQ from the dummy on the first trick, notice what would happen if he played the @S5 instead. |pg||
+lc|s5|pc|s5|hc|sa|at|If South wins this trick with his @SA, |pg||
+lc|sa|pc|ssa|pg||
+hc|sksq|at|his only remaining high card in spades, dummy's @SQ, will fall under West's @SK on the next round and the declarer will win only 1 trick in spades.|pg||
+
+lc|sksq|up|1|hs|ss|
+
+nt|^b@2^z@3Once the declarer makes the mistake of playing dummy's @S5 on the first trick, it does not help him to play a low spade (instead of the @SA) from his hand. If he does so, West will win the first trick with the @SJ |pg||
+ls|ss|pc|s|pg||
+hs|ns|hc|sk|at|and West will lead the @SK to the second trick in order to pin dummy's @SQ. |pg||
+lc|sk|ls|ns|pc|sksq|hc|sa|at|As before, the declarer's only spade trick will be won with the @SA. |pg||
+
+up|6|lc|sa|hc|sj|
+
+nt|^b@2^z@3So when the @SJ is led in this situation, |pg||
+lc|sj|pc|sj|hc|sq|at|the declarer should play the @SQ from the dummy since his only real hope of winning a trick with that card is that the @SK is with West. |pg||
+lc|sq|pc|sq|md|0,,,sk|hc|sk|at|If East has the @SK, it is important that he plays third hand high by covering the @SQ with his @SK. |pg||
+lc|sk|pc|sk|hc|sa|at|Regardless of whether South takes his @SA or not, he will win only 1 trick in this suit. |pg||
+lc|sa|up|1|hs|es|at|If East errs by playing a low spade instead of the @SK, |pg||
+ls|es|pc|s|hs|ss|at|the @SQ will win the trick |pg||
+ls|ss|pc|s|pg||
+hc|sa|at|and South will score 2 spade tricks. |pg||
+
+lc|sa|up|2|hc|sk|
+
+nt|^b@2^z@3East's correct play of covering dummy's @SQ with the @SK is not only an example of third hand high, it is also an example of another guideline that will be explored later in this chapter, Always cover an honor with an honor. As we will see, the ^*Ialways^*N in this guideline is not appropriate, but both this guideline and third hand high provide good advice for the defenders in a lot of the situations that they will face. |pg||
+
+lc|sk|up|2|md|hq85,hat742,h93,hkj6|wt|w|
+
+
+nt|^b@2^z@3
+We are going to look at some more situations in which third hand high does not apply, but you should know that, more often than not, this guideline is effective. In order to balance things out, consider the above combination where third hand high really helps the defenders. |pg||
+
+hc|h4|
+
+nt|^b@2^z@3
+Suppose West leads his 4th best heart, the @H4. The contract must be notrump because West would not lead a small heart away from the @HA if this was a trump contract. |pg||
+lc|h4|pc|h4|hs|nh|at|The dummy follows suit |pg||
+ls|nh|pc|h|hs|eh|at|and East has to decide which of his hearts to play. |pg||
+
+ls|eh|hc|hk|
+
+nt|^b@2^z@3Assume first that East makes the correct play of the @HK, third hand high. |pg||
+lc|hk|pc|hk|hs|sh|at|South follows small and the @HK wins the first trick. |pg||
+ls|sh|pc|H|pg||
+hc|hj|at|If East was on opening lead with the @HJ6, the @HJ (high from a doubleton) would be the standard opening lead. East should follow the same principle here and lead back his @HJ (as opposed to the @H6), even though a round of the suit has been played already. |pg||
+
+
+nt|^b@2^z@3|lc|hj|pc|hj|hc|hq|at|South has no good answer for this defense. If South covers with the @HQ, |pg||
+lc|hq|pc|Hq|hc|ha|at|West will with this trick with the @HA |pg||
+lc|ha|pc|hah|pg||
+hc|ht|at|and run 3 more heart tricks by leading the winning @H10 to the next trick. |pg||
+lc|ht|up|3|hc|h8|at|If South plays the @H8 (instead of the @HQ) to the second trick, it will not alter his fate. |pg||
+lc|h8|pc|h8|hs|wh|at|West will follow small and East's @HJ will win the trick. |pg||
+ls|wh|pc|hh|pg||
+hs|ehsh|hc|ha|at|South will have to play the @HQ on the third round of hearts and, after winning his @HA, West will be able to run his long suit. |pg||
+ls|sheh|lc|ha|up|6|hc|hk|
+
+nt|^b@2^z@3So if East properly plays a third hand high @HK on the first trick, the defense will win 5 heart tricks and South will not win any heart tricks at all. |pg||
+lc|hk|hc|hj|at|If instead East makes the mistake of playing a ^*Ithird hand highish^*N @HJ (a ^*Ithird hand low^*N @H6 is even worse), |pg||
+lc|hj|pc|hj|hc|hq|at|South will the first trick with his @HQ. |pg||
+lc|hq|pc|hq|pg||
+at|Since South did not win any tricks at all when East played a proper third hand high @HK, his play here of the @HJ is clearly bad for the defense. |pg||
+
+up|4|hs|nh|hc|hk|
+
+nt|^b@2^z@3|ht|b|at|The following near-rule can be used to specify one of the situations in which third hand high works very well for the defenders:
+|cs|4|ht|o|at|^-{ Play third hand high when the dummy played second to the trick and when 
+ the dummy started with no honor cards in the suit that was led by your partner. }
+|pg||
+
+lc|hk|hs|sh|
+
+nt|^b@2^z@3As a reminder of an important principle that we have already seen, let's try the effect of switching the North and South heart holdings. |pg||
+md|0h93,,hq85|pg||
+ls|nhsh|hc|h4|at|West leads the @H4 as before. |pg||
+lc|h4|pc|h4|hs|nh|at|Suppose first that a small heart is played from the dummy. |pg||
+ls|nh|pc|h|hc|hj|at|East should play the @HJ, not the third hand high @HK, because his @HKJ surround the dummy's @HQ. |pg||
+lc|hj|pc|hj|hs|sh|at|South follows small and the @HJ wins the first trick. |pg||
+ls|Sh|pc|h|pg||
+
+hc|hk|
+
+nt|^b@2^z@3It is important for East to return the @HK, his highest card from his remaining doubleton. |pg||
+lc|hk|pc|hk|hs|shwhnh|at|The other 3 players will follow small and the @HK will win the second trick. |pg||
+ls|whshnh|pc|hhh|pg||
+hs|ehwhnh|at||at|The way will now be clear for the defenders to run the heart suit. West's @HA will win the third round of hearts and he will then be able to cash his @H10 and @H7.|pg||
+up|4|ls|ehwhnh|hc|h6|
+
+nt|^b@2^z@3Look what happens if East makes the mistake of leading the @H6 to the second trick instead of the proper @HK. |pg||
+lc|h6|pc|h6|hc|ha|at|West will win this trick with his @HA |pg||
+lc|ha|pc|hhah|pg||
+hs|whehnh|at|and, although East's @HK can take care of dummy's @HQ on the third trick, the heart suit will be blocked. |pg||
+ls|ehwhnh|pc|hhh|hs|wh|at|East will be stuck on lead and, unless West has an entry in some other suit, he will never be able to win the tricks he is entitled to with his @H10 and @H7. |pg||
+up|11|ls|wh|hs|nh|hs|sh|
+
+nt|^b@2^z@3Let's switch the North South hearts back to how they were when we started thinking about this combination of cards. |pg||
+md|0hq85,,h93|ls|nhsh|hc|h4|at|We have seen that when West leads the @H4 |pg||
+lc|h4|pc|h4h|hc|hk|at|a third hand high @HK |pg||
+lc|hk|pc|hkh|pg||
+hc|hj|at|followed by the return of the @HJ will allow the defenders to win 5 heart tricks. The @HJ is the proper card for East to lead back here (as opposed to the @H6) because East should return the highest card from his remaining doubleton. |pg||
+
+
+
+nt|^b@2^z@3We just saw another situation where leading back the high card from a doubleton was good for the defense. The above position is another example of the validity of this principle. |pg||
+lc|hj|hc|h6|at|Watch what happens if East errs by returning the @H6 instead of the proper @HJ. |pg||
+lc|h6|pc|h6|hc|hqha|at|If South plays the @HQ, West will win the @HA, |pg||
+lc|hqha|pc|hqhah|pg||
+hs|ehwh|at|but the heart suit will be blocked. East's @HJ will win the third heart trick, stranding the @H10 and @H7 in the West hand. |pg||
+ls|ehwh|hc|hj|up|4|
+
+
+nt|^b@2^z@3|cs|1|ht|d|at|^-{ Leading the high card from a doubleton is a good strategy for the defenders,
+ not just on the opening lead, but at any point during the play of the cards. }
+^-
+|pg||
+lc|hj|hc|h6|ht|p|at|You will discover the occasional situation where the winning defense is to lead the low card from a doubleton, but it is more likely that such a play will block a key suit for the defenders. |pg||
+lc|h6|up|4|hs|ehwh|
+
+nt|^b@2^z@3We have done a lot of switching of the North and South hands. Let's switch the East and West hands for a change in order to examine another situation where third hand high does not apply. |pg||
+ls|ehwh|md|0,hkj6,,hat742|wt|e|
+hc|h4|at|East is on lead, presumably not at trick 1, but sometime later in the play of the cards. If East leads a heart, he should lead the same 4th best @H4 that he would lead from his heart holding if he was the opening leader. |pg||
+
+
+nt|^b@2^z@3|lc|h4|pc|h4|hs|sh|at|If South follows suit with a low heart, |pg||
+ls|sh|pc|h|hc|hk|at|West should know that it would be a mistake to play third hand high with the @HK. Look at what happens if West makes this mistake. He will win this trick |pg||
+lc|hk|pc|hkh|pg||
+hc|hj|at|and, even if West properly returns the higher card from his remaining doubleton, |pg||
+lc|hj|pc|hjh|hs|sh|at|South's @HQ will score a trick |pg||
+hs|eh|at|either now (if East plays a low heart on this trick) |pg||
+ls|ehsh|pc|hhq|pg||
+up|2|hc|ha|at|or later (if East plays the @HA instead). |pg||
+lc|ha|pc|hah|pg||
+hs|sh|at|Regardless of how East plays, South's @HQ will be a winner. |pg||
+up|6|hc|hj|hs|nh|ls|sh|
+
+nt|^b@2^z@3In this situation West really should know that the third hand high play of the @HK would be a mistake. After all, he can see that dummy's highest heart is the @H9 and that the @HJ will be high enough to win the first heart trick. There is no reason for West to win this trick with the @HK when he can win with the @HJ instead! |pg||
+ls|nh|lc|hj|pc|hjh|pg||
+hc|hk|
+
+nt|^b@2^z@3Once West properly wins the first trick with his @HJ, the way is almost clear for the defenders to run the heart suit. All that remains is for West to lead back his @HK, his high card from his remaining doubleton, instead of the @H6 (which would result in the heart suit becoming blocked.) |pg||
+lc|hk|pc|hkhhh|pg||
+
+hs|whsh|hc|ha|at|South's @HQ will fall under East's @HA on the third round of hearts and East will then be able to win tricks with both the @H10 and @H7. |pg||
+
+lc|ha|ls|shwh|up|6|hc|hj|
+
+
+nt|^b@2^z@3|ht|c|at|This situation illustrates one of the more obvious times that third hand high should not be used:
+|pg||
+cs|3|ht|m|at|^-{ When you are third to play to a trick and dummy is fourth to play to that trick, do not 
+ play third hand high if you can see that a lower card will be high enough to win the trick! }
+|pg||
+
+lc|hj|md|1,ck,c932,ca7|wt|w|
+hs|wc|
+
+nt|^b@2^z@3
+Now consider this situation where your partner, West, leads the @CK. |pg||
+ls|wc|pc|ck|hs|nc|at|A small club is played from the dummy |pg||
+ls|nc|pc|c|hs|ec|at|and you have to decide whether you should play your @C7 or a third hand high @CA. What are your thoughts concerning this decision? |pg||
+
+ls|ec|hc|c7|
+
+nt|^b@2^z@3On the surface is seems that you should shun third hand high here and play the @C7. You can see that your partner's @CK will win the first trick if you play the @C7 and it would be wasteful for your partnership to use the 2 highest clubs, the @CA and @CK, on the same trick. |pg||
+at|If you play the @C7, however, |pg||
+lc|c7|pc|c7|at|something terrible might happen to the defense. Can you see the danger? This is not about leading high from doubletons - a principle that applies to leads, not 3rd hand play.|pg||
+
+md|0ct642,cqj85|
+hs|scwc|
+
+nt|^b@2^z@3Here is what could go wrong if you play the @C7 to the first trick. Suppose the remaining clubs are distributed as above. Notice that your partner's @CK was the proper standard lead from his suit (which was originally headed by the @CKQJ - a 3-card honor sequence). |pg||
+ls|wc|at|On this layout, South will follow suit with a small club and West's @CK will win the first trick for the defense. |pg||
+ls|sc|pc|c|pg||
+hs|wc|hs|Ec|
+
+nt|^b@2^z@3Regardless of which club West plays next, you will have to win the second trick with your @CA. |pg||
+ls|ecwc|pc|cqccac|pg||
+hs|wc|at|West has 3 winning clubs left, but they are stranded. If West has an entry in another suit then he will be able to regain the lead and cash his club winners. Unfortunately, if West does not have an entry it will be lights out for the defense (at least as far as the club suit is concerned). |pg||
+up|6|ls|wc|hc|c7|
+
+nt|^b@2^z@3What went wrong here is that by playing the @C7, |pg||
+lc|c7|pc|c7c|pg||
+hs|ecwc|at|a situation was created whereby the club suit became blocked for the defense. |pg||
+
+up|2|ls|ec|hc|ca|ls|wc|at|If East had correctly played the @CA, third hand high, to the first trick, |pg||
+lc|ca|pc|cac|pg||
+hs|ecwc|at|he could return the @C7 and West would win the second trick. |pg||
+ls|ecwc|pc|cccjc|pg||
+hs|scncwc|at|West could continue by cashing his remaining high club to remove the remaining North-South cards in that suit. The @C8 and @C5 would then be the last 2 clubs in the deck. |pg||
+ls|ncscwc|up|6|hc|ca|
+
+
+nt|^b@2^z@3|ht|c|at|Here is a statement of the principle that is illustrated by this example:
+|pg||
+cs|4|ht|m|at|^-{ Although a defender should normally not overtake his partner's winner with an equal card, 
+ third hand should usually overtake when holding a doubleton honor as an unblocking play. }
+|pg||
+hc|cqj|
+
+nt|^b@2^z@3Did you realize that standard leads help make it possible for East to find the winning play of the @CA here? East knows that when his partner leads the @CK, he was dealt the @CQ as well. In addition, if this was a notrump contract, West would also have the @CJ since West would have led a low club instead of the @CK from a long suit headed by the @CKQ, but lacking the @CJ. |pg||
+
+
+
+nt|^b@2^z@3|cs|2|ht|d|at|^-{ Figuring out the best card to play as 3rd hand is easier if you know what your partner and the 
+ declarer were dealt in the suit that was led. Standard leads can help you to figure this out! }
+^-
+|pg||
+ht|q|at|In this example, East knows that the defense can afford to use both the @CA and the @CK on the same trick because West's standard lead of the @CK suggests possession of the @CQ. |pg||
+
+lc|cqca|up|2|hc|c4|
+
+nt|^b@2^z@3Let's change this combination slightly by taking West's @CJ and giving it to South in exchange for South's @C4 (not a very good trade for the defense)! |pg||
+md|0cj,c4|pg||
+lc|c4cj|hc|c5|at|Now, if the contract was notrump, West would lead a 4th best @C5 (as opposed to the @CK) because he lacks the @CJ that would give him a suit headed by a 3-card honor sequence. |pg||
+lc|c5|pc|c5c|hc|ca|
+
+nt|^b@2^z@3East, who has an easy third hand high play of the @CA now, wins the first trick. |pg||
+lc|ca|pc|cac|pg||
+hs|ecwcncsc|at|The defense is now in a good position to run the entire club suit. East will return the @C7 and West's @CK and @CQ will win the next 2 tricks, removing all of the North-South clubs in the process. West's @C8 and @C4 will remain as winners. |pg||
+up|4|ls|ncscecwc|hc|c5|at|This combination illustrates one of the reasons why the standard lead against notrump from West's club holding is the 4th best @C5 (and not the @CK). |pg||
+
+lc|c5|hc|ck|
+
+nt|^b@2^z@3Against a trump contract, however, things are different. In this case a 2-card honor sequence (such as West's @CKQ) is good enough to make the standard lead the highest card in the suit. |pg||
+lc|ck|pc|ck|hs|nc|hc|ca|at|When dummy plays low, East should unblock his doubleton @CA as before. |pg||
+ls|nc|lc|ca|pc|ccac|pg||
+hs|ec|at|Something interesting happens when East returns his @C7. |pg||
+ls|ec|pc|c7|hs|sc|hc|cq|at|South's @CJ10 are enough to force West's @CQ |pg||
+ls|sc|lc|Cq|pc|ccqc|pg||
+hs|sc|at|and to leave the declarer with the highest remaining club. |pg||
+
+
+
+nt|^b@2^z@3At notrump this would be a disaster, but one that would not have taken place because West would have led a small club (and not the @CK) from his suit that lacked the @CJ. |pg||
+at|Against a trump contract the situation is much less dire for the defense. It is ok that South has the highest club, because East is now void in that suit. He will be able to ruff the 3rd round of clubs to win the trick. |pg||
+
+ls|sc|up|8|hc|c5|
+
+nt|^b@2^z@3On this particular layout, if there is a trump suit and if West makes the non-standard lead of his 4th best @C5, |pg||
+lc|c5|hc|ck|at|it may work out even better for the defense than if he makes the standard lead of the @CK. |pg||
+at|The defenders will win 3 tricks regardless, but the lead of the @CK will force East to use a trump in the process (so that he can win the 3rd trick with a ruff). |pg||
+lc|ck|hc|c5|at|After the @C5 lead the defense can win 3 tricks without East having to use a trump. |pg||
+lc|c5|hc|ck|
+
+nt|^b@2^z@3|ht|b|at|This example makes the standard lead against a trump contract of the @CK look pretty bad and there are certainly other combinations where a non-standard lead may be the best defense. |pg||
+ht|o|cs|1|at|^-{ Standard leads are ^*istandard^*N because, over the long run, these leads represent the best
+cards for the defense to play. Standard leads don't always work out, but they usually do! }
+|pg||
+lc|ck|md|1,d3,d86,dkq42|wt|w|
+
+
+nt|^b@2^z@3Here is another interesting card combination in which third hand high (or the lack thereof) plays a starring role. |pg||
+
+hc|d3|hs|nd|at|West leads the @D3 and a small diamond is played from the dummy. |pg||
+
+lc|d3|ls|nd|pc|dd|hs|ed|at|Do you think that East should play third hand high with the @DK or should he follow suit with one of his lower diamonds? |pg||
+
+ls|ed|hc|d42|at|First things first - let's rule out the @D4 and the @D2. It would be a very bad idea to allow dummy's @D6 to win this trick! |pg||
+
+lc|d4d2|hc|dkdq|
+
+nt|^b@2^z@3In deciding between the @DK and the @DQ, you may be thinking that it doesn't matter which card East plays. In a sense you would be correct because the @DK and @DQ are equals. From the standpoint of winning tricks these cards have exactly the same value when they are both dealt to one player. Can you think of any reason why it might matter whether you play the @DK or the @DQ as 3rd hand in this position? |pg||
+
+
+
+nt|^b@2^z@3The answer is that it might matter to your partner and if you figured that out then you are really getting the hang of being a defender. The principle at work here is the same as the one that is behind the concept of the standard lead - if you always play the same card from the same holding in the same situation, it will be much easier for your partner to figure out which holding you were dealt in the suit in question.|pg||
+
+
+
+nt|^b@2^z@3|cs|3|ht|b|at|Here is how you should decide which card to play from equals when following suit as the third player to play to a trick:
+|pg||
+ht|o|at|^-{ The third player to follow suit to a trick should play the lowest card from
+ a group of 2 or more equal cards as a way of signaling to his partner. }
+|pg||
+
+lc|dk|
+
+nt|^b@2^z@3East should therefore play the @DQ in this situation because it is the lowest card of the 2 equal cards that he is considering (the higher card being the @DK). |pg||
+lc|dq|pc|dq|md|0dat5,dj97|hs|sdwd|at|How is it that the play of the @DQ might make the defense easier for West? Perhaps the rest of the diamond suit is distributed as you see above. |pg||
+ls|sdwd|hc|da|at|Suppose that South wins the first trick with the @DA |pg||
+lc|da|pc|da|pg||
+wt|w|at|and that West later gains the lead by winning a trick in another suit. |pg||
+
+hc|dk|hs|wd|
+
+nt|^b@2^z@3West will have to decide if he should continue diamonds or if he should attack some other suit instead. You can bet that the position of the @DK (which is the highest outstanding diamond) will factor into West's decision. West will know that it is possible that you were dealt the @DK (because you would play the @DQ on the first trick if your diamonds had been headed by both the @DK and the @DQ). West might therefore continue diamonds, which would likely be good for the defense.|pg||
+hc|dqd5|up|2|ls|wd|lc|dk|
+
+nt|^b@2^z@3
+Now let's back up to East's turn to play to the first trick and give East's @DQ to South in exchange for the @D5. |pg||
+lc|dqd5|md|0dq,,,d5|hc|dk|at|Now East (who lacks the @DQ) will play the @DK to the first trick |pg||
+lc|dk|pc|dk|hc|da|at|and South will win the @DA as before. |pg||
+lc|Da|pc|da|pg||
+hc|dq|hs|wd|wt|w|
+
+nt|^b@2^z@3When West finds himself on lead later in the play, he will know that it is the declarer (and not his partner) who was dealt the missing @DQ. West will know this because East would have played the @DQ (and not the @DK) on the first trick if East had been dealt both the @DK and the @DQ. Once West realizes that South has the @DQ, he will probably switch his attack to a different suit and that will probably be best for the defenders.|pg||
+up|2|ls|wd|md|0d5,,,dq|
+hc|dk|
+
+nt|^b@2^z@3The play of the @DQ by East when both the @DK and @DQ are held is an example of a defensive signal, but be sure to understand that East's play of the @DQ in this situation does not guarantee possession of the @DK. |pg||
+
+md|0dk,,,d5|at|The reason is that East would also play the @DQ from some holdings that do not include the @DK (like the one above). |pg||
+
+
+nt|^b@2^z@3|lc|dqdk|pc|dq|hc|dadk|at|This example raises an interesting point for the declarer. In a sense, it does not matter if South wins the first trick with the @DA or the @DK here since these cards are equals. |pg||
+lc|dk|at|However, It is clearly best for South to win the @DA. |pg||
+lc|da|pc|da|pg||
+hc|dk|at|By doing so, South will keep West in the dark as to the location of the @DK (which East could still have given his play of the @DQ on the first trick). |pg||
+up|1|at|If South wins the @DK instead of the @DA, West will have no doubt as to who was dealt the @DK! |pg||
+
+up|1|hc|dq|
+
+nt|^b@2^z@3So do not think that East's @DQ is a signal to his partner that he was dealt the @DK as well since East would play the @DQ from some holdings that lack the @DK. The play of the @DQ neither promises nor denies possession of the @DK. |pg||
+md|0dq,,,dk|at|If East plays the @DK, however, the message of the signal is clear. East would not play the @DK if he held the @DQ as well so the play of the @DK categorically denies possession of the @DQ.|pg||
+
+
+
+nt|^b@2^z@3|ht|d|cs|2|at|^-{ Many signals are designed to ^*Ishow^*N your partner that you were dealt a specific card, but 
+ some signals (like the @DK here) are used to ^*Ideny^*N being dealt a specific card (the @DQ here). }
+|pg||
+cs|3|ht|p|md|0d5,,,dq|at|^-There are also signals (like East's proper play of the @DQ here) that neither ^*Ishow^*N nor ^*Ideny^*N the possession of a specific card (the @DK in this case). } 
+|pg||
+md|1,s6,jt8,q943|wt|w|lc|dkq|hc|s6|
+
+
+nt|^b@2^z@3Consider the above card combination. West's opening lead against a notrump contract is the @S6. Assume that you know from the bidding that West is leading from a suit with at least 4 cards in it. |pg||
+lc|s6|pc|s6|hc|sj|at|The declarer calls for the @SJ from the dummy |pg||
+lc|sj|pc|sj|hc|sq|at|and you have to decide if you should play a third hand high @SQ or not. |pg||
+
+md|0s52,sak7|lc|sq|hs|ssws|
+
+nt|^b@2^z@3It may look obvious to play third hand high and, if the remaining spades are distributed as above, you had better do so! |pg||
+ls|ssws|hc|sq|at|On this layout the @SQ will win the trick |pg||
+lc|sq|pc|sqs|pg||
+hc|sask|hs|nsss|at|and West's @SA and @SK will take care of the rest of the North-South spades. The defenders will win 4 spade tricks, seemingly without breathing hard.|pg||
+
+up|2|ls|nsss|lc|sa|hc|s5|
+
+nt|^b@2^z@3You can see why it would not be unreasonable for East to do some heavy breathing if we exchange South's @S5 for West's @SK. |pg||
+
+md|0sk,s5|lc|s5|hc|sq|at|Now, if East plays third hand high with the @SQ, South will win the @SK. |pg||
+lc|sqsk|pc|sqsk|pg||
+hs|nsss|at|The declarer has just won a spade trick and he can win a second trick in spades with dummy's @S10. In fact, he does not even need the defense to play spades again for him - South can lead a spade toward the dummy himself. |pg||
+
+ls|nsss|pc|S|hc|sa|
+
+nt|^b@2^z@3If West goes up with the @SA, |pg||
+lc|Sa|pc|sass|pg||
+hs|ns|at|the dummy's @S10 will become the master card in the suit and it will win a trick at some later point in the play. |pg||
+ls|ns|up|3|hs|ws|at|If West plays a low spade (instead of the @SA) it is no better for the defense. |pg||
+ls|ws|pc|s|hc|st|at|The @S10 can be played from the dummy and the declarer will have his second spade trick in the bag. |pg||
+lc|st|pc|sts|pg||
+up|6|hc|sq|at|The moral of the story is that once East plays the @SQ to the first trick, the declarer is bound to win 2 spade tricks. |pg||
+
+lc|sq|hs|es|
+
+nt|^b@2^z@3What if East plays a low spade (instead of the @SQ) on the first trick? |pg||
+ls|es|pc|s|hc|s2|at|Dummy's @SJ will win the trick since South will save his @SK for later. |pg||
+lc|s2|pc|S|pg||
+wt|e|hs|es|at|Now suppose that East gains the lead later in the play. He can return a low spade |pg||
+ls|Es|pc|s|hc|sksa|at|and South's now singleton @SK will be taken by West's @SA. |pg||
+lc|sksa|pc|sksas|pg||
+hs|ns|hc|sq|at|The @SQ will take care of dummy's last spade and the defenders will then be able to cash another spade trick. |pg||
+up|6|ls|ns|lc|sq|hs|es|at|Withholding the @SQ on the first trick holds South to 1 spade winner instead of 2. |pg||
+
+qx|R 11|
+hc|sk|
+
+nt|^b@2^z@3Is there any way for East to know whether he should play a low spade (which is best for the defense when South has the @SK) |pg||
+md|0s5,sk|ls|es|hc|sq|at|or the @SQ (which is best for the defense when West has the @SK) on the first trick? |pg||
+at|Yes, there is a solution to this problem. The solution involves using something called the Rule of 11. |pg||
+
+up|1|lc|sqk|
+
+nt|^b@2^z@3|ht|c|at|Here's how the Rule of 11 works:
+|ht|n|cs|4|at|^-{ When your partner has led 4th best, subtract the rank of his lead from 11. The result tells 
+ you the number of cards in the other 3 hands that are higher than the card that was led. }
+|pg||
+
+hc|sjt8q9|
+
+nt|^b@2^z@3Applying the Rule of 11, subtract 6 (the card your partner led) from 11. The answer is 5 and this means that there are 5 spades between the North, South, and East hands that are higher than the 6. You, as East, can see all 5 of these cards. Dummy has the @SJ, @S10, and @S8 while you have the @SQ and @S9. |pg||
+lc|s9qjt8|hs|ss|at|You therefore know that South has no spades higher than the 6! |pg||
+
+ls|Ss|hc|sj|
+
+nt|^b@2^z@3When dummy's @SJ is played to the first trick, |pg||
+lc|Sj|pc|sj|hc|sq|at|the Rule of 11 tells you that you should play your @SQ because you can expect to win the trick with that card! |pg||
+lc|sq|pc|sq|hc|sak|hs|ss|At|Since West has both the @SA and @SK, South has no spades that are high enough to top your @SQ. The @SQ will win the first trick, just as the Rule of 11 predicted!|pg||
+
+ls|ss|lc|sa|md|0sk,s5|
+
+
+nt|^b@2^z@3What if South really did have the @SK? Does that mean there is something wrong with the Rule of 11? |pg||
+hs|nsssesws|lc|sk|at|No, there is nothing wrong with the Rule of 11, but there is something else wrong with this example. Can you see what it is? |pg||
+up|3|at|If not, let's back up to the start of the first trick. Can you see anything wrong now? |pg||
+
+ls|nsssesws|hc|s6|
+
+nt|^b@2^z@3What's wrong is that your partner led the wrong spade on the first trick. Recall that your partner led the @S6 and, on the holding that he now has (which makes your play of the @SQ wrong), the @S6 is his 3rd best spade. The Rule of 11 works only if you can count on your partner to make the standard lead of the 4th best card from a broken holding with at least 4 cards in it. |pg||
+lc|s6|hc|s5|at|Your partner's proper lead from this spade holding is his 4th best @S5. |pg||
+
+
+
+nt|^b@2^z@3|cs|1|ht|d|at|^-{ This example illustrates another reason why it is important for the defenders to stick 
+ with standard leads - the Rule of 11 only works when 4th best leads are being used! }
+^-
+|pg||
+ht|p|at|You have heard this important principle before: if a defender always plays the same card for a given holding in a given situation, it will be much easier for his partner to defend accurately!|pg||
+
+
+nt|^b@2^z@3
+Suppose the spade suit is distributed as above and West makes the proper 4th best lead of the @S5. |pg||
+lc|s5|pc|s5|hc|sj|at|When the @SJ is played from the dummy, |pg||
+lc|sj|pc|sj|hc|sq|at|East should apply the Rule of 11 in an attempt to figure out if this is a good time to play third hand high with the @SQ. |pg||
+hc|s9st8|
+
+nt|^b@2^z@311 minus 5 (the rank of the card that West led) is 6 so there are 6 spades in the other 3 hands that are higher than the @S5. East can see 5 of those cards, dummy's @SJ (which has been played^*N), @S10, and @S8 and his own @SQ and @S9. |pg||
+lc|st89|hc|sk|at|East therefore knows that South has one spade higher than the @S5. As we have seen, if that card happens to be the @SK (as it is above) it will be fatal for East to play the @SQ on this trick. |pg||
+
+md|0s6,sk|lc|sk|Hc|s6|
+
+nt|^b@2^z@3Unfortunately the Rule of 11 does not really help East in this case. It does tell East that South has only 1 spade higher than the @S5, but if that spade is the @S6 |pg||
+md|0s7,s6|lc|s6|hc|s7|at|or the @S7, then East had better cover dummy's @SJ with his @SQ. |pg||
+lc|s7|hc|sa|md|0sa,s7|at|If South's single spade higher than the @S5 happens to be the @SA, it doesn't matter what card East plays. We won't go through the motions here, but South is entitled to 2 spade tricks regardless of what East plays on the first trick. |pg||
+
+lc|sasq|hc|sq|md|1,s5,sjt8,sq943|wt|w|pc|!s5!sj|
+
+nt|^b@2^z@3So when West leads the @S5, the Rule of 11 tells East that South has one spade that is higher than the @S5, but that is not enough information to let East know if playing the @SQ will be good for the defense. |pg||
+
+md|1,s6,sjt8,sq943|wt|w|pc|!s5!sj|at|However, if West's spade lead is the @S6 (and East can count on his partner to lead 4th best), then East is in a position to play the @SQ with confidence thanks to the Rule of 11. |pg||
+
+
+
+nt|^b@2^z@3These examples demonstrate that although the Rule of 11 is a powerful tool for the defenders, it is not powerful enough to reveal if third hand high should be used in all situations. Sometimes the only conclusion that can be drawn from the Rule of 11 is that the third player to play to a trick will be faced with a situation in which he has to guess the layout of the outstanding cards. |pg||
+lc|sq|qx|D 1,Example Deal 1|sv||
+ha||sk|e|md|1skqt987hq5dak8ckJ,sa2ha32dq764ca965,sj653hkjt9dt32cq7|
+rh||ah|Third hand play|ah|Deal 1|
+mb|1sp2sp4sppp|
+
+
+nt|^b@2^z@3Here is a full deal in which the correct play by the third hand to the first trick is critical to the defense. You are sitting East and your partner, West, is the opening leader against South's 4@S contract. South dealt and opened 1@S. North raised to 2@S and South went on to 4@S. Both you and your partner passed throughout the bidding. You really have a terrible hand, but don't fall asleep - you are going to have to be sharp if the defense is going to come out on top!|pg||
+
+
+nt|^b@2^z@3|pc|d|hs|nd|at|
+Your partner's opening lead is the @D4. The declarer plays a low diamond from the dummy |pg||
+ls|nd|pc|d|hs|ed|at|and you have to decide which diamond to play as East. Is this a good time to use third hand high to guide your decision?|pg||
+
+ls|ed|hc|dj9t|
+
+
+nt|^b@2^z@3
+Actually, this would be a very bad time to play third hand high with your @DJ. The reason is that your @DJ and @D9 surround the dummy's @D10. As such, your @DJ and @D9 are equals in this situation and there is no need to use your @DJ when the @D9 can be used instead!|pg||
+
+
+nt|^b@2^z@3|lc|dt9j|pc|d9da|at|The declarer wins the first trick with his @DA |pg||
+pc|sk|at|and leads the @SK out of his hand. |pg||
+pc|sass|at|West wins the @SA |pg||
+pc|d|at|and leads back the @D6. Before we continue with the play of this hand, think about what you know about your partner's diamond holding. Remember that his opening lead was the @D4 and your @D9 on the first trick forced the declarer to win his @DA. The dummy played the @D2 on the first trick.|pg||
+
+
+
+nt|^b@2^z@3First think about the number of diamonds that your partner was dealt. His opening lead was the @D4 and the @D3 and @D2 were in the dummy. That means West selected his lowest diamond as his opening lead. You therefore know that West started with either 1, 3, or 4 diamonds. If he had been dealt a doubleton diamond, he would have led his higher card in the suit and if he had 5 or more diamonds, he would have led his 4th best diamond. |pg||
+
+
+
+nt|^b@2^z@3|ht|b|at|Remember this tip as it will help you a great deal when you are defending:
+|pg||
+ht|k|cs|2|at|^-{ When your partner leads his lowest card on the first round of a suit, he has led from either 3 
+ or 4 cards (or a singleton). With any other number of cards he would not lead his lowest one! }
+|pg||
+
+
+
+nt|^b@2^z@3Obviously your partner did not start with a singleton diamond or he would not have been able to lead a second round of that suit. West was dealt 3 or 4 diamonds and his lead of the @D6 now should tell you that he started with exactly 4 cards in diamonds. If West began with 3 diamonds, he would have returned high from his remaining doubleton on this trick, but the @D6 cannot be his highest remaining diamond - the @D2, @D3, @D4, and @D5 are all accounted for! |pg||
+
+
+
+nt|^b@2^z@3Now think about where the missing high cards are in diamonds. You have seen the @DA, but where are the @DK and @DQ? |pg||
+at|Your partner cannot have both of these cards as he would have played the @DK instead of the @D4 as his opening lead. The declarer could have both the @DK and @DQ, but that would leave your partner with 4 small diamonds. In that case, he probably would have preferred to select another suit as his opening lead.|pg||
+
+
+nt|^b@2^z@3
+So it is very likely that your partner was dealt a 4-card diamond suit headed by either the @DK or the @DQ (but not both the @DK and the @DQ). Can you figure out whether the @DK or the @DQ is likely to be West's highest diamond? |pg||
+sk||hs|wd|
+
+nt|^b@2^z@3Your partner's highest diamond rates to be the @DQ. |pg||
+hs|sd|md|0dq,dk|at|He certainly does not have the @DK because if the declarer started with the @DAQ, he would have won the first trick with the @DQ (as opposed to the @DA). |pg||
+md|0dk,dq|at|With the @DQ in West's hand, South began with the @DAK. Since those cards are equals it would not matter which of these South used to win the first trick. |pg||
+
+ls|sd|
+
+nt|^b@2^z@3The chain of reasoning that we just went through is our clearest example yet of the power of standard leads and how drawing inferences from the cards that have been played can help a defender to figure out the layout of the unseen cards. In this example we were able to figure out our partner's exact diamond holding and this information will help us to come up with the winning defense for East. |pg||
+
+ls|Wd|hs|nd|
+
+nt|^b@2^z@3The declarer calls for the @D3 from the dummy |pg||
+ls|nd|pc|d3|hc|dj|at|and we now know that the third hand high play of the @DJ will be best for the defense. |pg||
+lc|dj|pc|dj|hs|sd|at|South will be forced to win this trick with the @DK |pg||
+ls|sd|pc|dk|pg||
+hs|wd|at|and all of a sudden our partner's @DQ has become a winner for the defense! |pg||
+ls|Wd|
+hs|ssws|At|South will draw West's last trump |pg||
+ls|ssws|pc|sqssc|pg||
+hs|shwh|at|and drive out his @HA. |pg||
+ls|shwh|pc|hqhahh|pg||
+hs|wc|at|West can now cash the @CA |pg||
+ls|Wc|pc|caccc|pg||
+hs|ndsdwd|at|and the @DQ (which you helped to set up) will be the 4th trick for the defense! |pg||
+ls|ndsd|ls|Wd|pc|dqddd|pg||
+mc|9|at|South claims the rest, but his contract is down 1. |pg||
+
+up|18|hs|ed|
+
+nt|^b@2^z@3At the point at which we figured out that it was a good idea to play the @DJ on the second round of that suit, we would have come to the same conclusion if we had blindly followed third hand high. |pg||
+hs|wdsd|at|Nonetheless, by going through the reasoning that we did we were able to play the @DJ with complete confidence that playing that card would set up a winner for the defense. |pg||
+
+
+
+nt|^b@2^z@3Do you remember at the very beginning of this program when it was stated that one of the reasons that defense is difficult is because the defenders cannot see each others' hands? That is certainly true, but as this deal demonstrates, there are times when the defenders can gather clues that will allow them to unravel the mystery of how the outstanding cards are distributed. Once you are able to do this, defense becomes a whole lot easier!|pg||
+
+ls|edsdwd|up|8|
+hc|dj9t|
+
+nt|^b@2^z@3Back at trick 1 we played the @D9 because we had dummy's @D10 surrounded with our @DJ9. |pg||
+lc|d9t|at|Let's see what would have happened if we had made the mistake of playing a third hand high @DJ instead. |pg||
+lc|dj|pc|dj|hs|sd|At|As before, South would win his @DA |pg||
+ls|sd|pc|da|pg||
+hs|Ssws|at|and drive out West's @SA. |pg||
+ls|ssws|pc|sksass|pg||
+hs|wdndsd|at|When East played the @D9 at trick 1, a diamond continuation by West resulted in the defeat of the contract. When East plays the @DJ instead, West can no longer afford to return a diamond.|pg||
+
+
+nt|^b@2^z@3
+If West does play another diamond, South can put up dummy's @D10 and win the trick. |pg||
+ls|wdndsd|pc|ddtdd|pg||
+mc|10|hc|caha|at|West will still score tricks with his 2 Aces, but the diamond winner that the defense needed to defeat 4@S has now vanished and South will make his contract. |pg||
+lc|caha|up|4|hs|wd|
+
+nt|^b@2^z@3Even if West realizes that a second round of diamonds will not help the defense, he has no winning alternatives. |pg||
+ls|wd|hs|ws|at|Suppose that West decides to try the passive defense of exiting in trump. |pg||
+ls|ws|pc|s|at|Unlike a second diamond, West's trump return will not give away an immediate trick (this is what makes this play passive), but South will still make his contract. |pg||
+hs|ss|
+
+nt|^b@2^z@3After winning West's trump return in his hand, |pg||
+ls|ss|pc|scs|pg||
+hs|shwh|at|the declarer will drive out West's @HA. Even if West is clever enough to hold up that card until South is out of hearts, |pg||
+ls|shwh|pc|hqhhh8|pg||
+pc|hhahh|pg||
+hc|ca|at|West's @CA will be the last trick for the defense |pg||
+lc|ca|hs|sdnh|at|since South's diamond loser can be discarded on dummy's hearts. |pg||
+ls|sd|hs|nsss|mc|10|at|The declarer has a sure entry to the dummy in the @SJ so he will be able to access dummy's heart winners. South therefore claims his contract. |pg||
+
+ls|ssnsnh|up|18|hc|dj9|
+
+nt|^b@2^z@3So despite East holding a truly awful hand, he has a starring role to play in the defense of this deal. If East correctly plays the @D9 at trick 1, subsequent strong defense will defeat South's contract. Alternatively, if East errs and plays a third hand high @DJ there is nothing that the defense can do to prevent South from making 4@S. |pg||
+hc|dt|at|Apparently the @DJ and @D9 are not equals after all, even though these cards surround the @D10 in the dummy!|pg||
+
+lc|dt|
+
+nt|^b@2^z@3|ht|d|cs|4|at|^-{ Small differences between cards can often make a big difference in bridge! You cannot afford 
+ to relax on defense when you have a bad hand - playing the proper low cards could be vital! }
+|pg||
+
+ht|q|at|We don't count high card points for nines, but on this deal East's @D9 makes the difference between the success and failure of South's 4@S contract. |pg||
+
+qx|D 2,Example Deal 2|sv||lc|djd9|
+ha||sk|e|md|1s72hkqjdkqjtck987,sqj85ha54d642c632,sk64h73da83caqjt4|
+rh||ah|Third hand play|ah|Deal 2|
+mb|1np3nppp|
+
+
+nt|^b@2^z@3
+In our next example deal, South dealt and opened 1NT. North raised to 3NT which became the final contract. |pg||
+pc|s|at|West selected the @S5 as his opening lead. Can you draw any inferences about the number of spades that West is likely to hold?|pg||
+
+hc|s4s3|
+
+nt|^b@2^z@3You can see the @S4 (in the dummy) and the @S3 (in your own hand). The @S2 is missing. On the surface you don't know if the @S5 is the lowest spade that your partner was dealt so the inference that we used on the last example deal does not apply here. If South has the @S2 then your partner has led from a spade suit with 3 or 4 cards in it. If West has the @S2, however, his @S5 is his 4th best card from a 5-card suit.|pg||
+
+lc|s34|
+
+nt|^b@2^z@3The fact that West led the @S5 does not tell you how many spades he has, but there is other information available that makes it possible for you to figure this out. Do you know what it is? |pg||
+at|Consider the bidding. South's opening bid was 1NT and that bid promises a balanced hand. South will not have any singletons to open 1NT so he must have at least 2 spades. |pg||
+
+hs|esns|
+
+nt|^b@2^z@3Since South has at least 2 spades, you have 4 spades, and the dummy has 3 spades, your partner has 4 spades at the very most. Chances are that your partner has exactly 4 spades since he chose to lead the suit. Every bridge hand contains at least 1 suit with a minimum of 4 cards in it and West would tend to lead a long suit when the opponents bid to 3NT without mentioning any suits along the way. It is a safe bet that West was dealt exactly 4 cards in spades.|pg||
+
+ls|esns|hc|sakt9|
+
+nt|^b@2^z@3Since West apparently has 4 spades, the @S5 will be his 4th best card in that suit. You can see most of the high spades (the @SA, @SK, @S10, and @S9) between your hand and the dummy. Is there any way for you to figure out the location of the missing @SQ and @SJ? |pg||
+at|Try to apply the Rule of 11 and see if that gives you the answer. Remember that the Rule of 11 applies only if your partner has led 4th best so this is a good time to try it out!|pg||
+lc|skat9|
+
+nt|^b@2^z@3To use the Rule of 11, subtract the rank of your partner's lead (the @S5) from 11. |pg||
+at|11 minus 5 is 6. |pg||
+hs|esns|at|That means that there are 6 cards between your hand, the dummy, and the declarer's hand that are higher than the @S5. |pg||
+ls|nses|hc|sk6at9|at|You can see 5 of those cards (your @SA, @S10, and @S9 and dummy's @SK and @S6^*N). |pg||
+lc|sk6at9|at|The declarer must have exactly 1 spade higher than the @S5. You can trust the Rule of 11 to be correct. After all, it really is a rule! |pg||
+
+hs|ns|
+
+nt|^b@2^z@3The declarer plays a low spade from the dummy. |pg||
+ls|ns|pc|s|hs|es|at|You know your partner has exactly 4 spades leaving South with a doubleton spade. Furthermore, the Rule of 11 has told you that only one of South's 2 spades is higher than the @S5. Is this enough information for you to figure out whether it is right to play third hand high with your @SA? |pg||
+ls|es|hc|st93|
+
+nt|^b@2^z@3Before we go any further, if you are not going to play third hand high with the @SA, which of your other 3 spades would you play? |pg||
+lc|st9|at|There is no point in playing your lowest spade, the @S3 here. |pg||
+lc|s3|hc|st9|at|Between the @S10 and the @S9, |pg||
+lc|st|at|the @S9 is the proper card from a signaling point of view - your partner will expect you to play the lowest card from a series of equals and playing the @S10 would deny possession of the @S9. |pg||
+
+hc|sa|
+
+nt|^b@2^z@3
+So the contenders are the @SA and the @S9. In order to figure out which of these cards rates to be best for the defense, it is useful to consider how the remaining spades might be distributed around the table. |pg||
+
+sk||hc|s7|lc|s9sa|
+
+nt|^b@2^z@3You know that South has a doubleton spade and that only 1 of his 2 spades is higher than the @S5. If that spade is the @S7 |pg||
+md|0s8,s7|lc|s7|hc|s8|at|or the @S8, |pg||
+hc|s9sqj|at|then West has both the @SQ and the @SJ. It must be right to play the @S9 in this case since the @S9 will win the first trick! |pg||
+lc|s89s6sqj|hc|sask|at|The @SA would win the trick as well, of course, but playing the @SA would set up the @SK in the dummy as a winner that the declarer is not entitled to. |pg||
+
+lc|sask|hc|s9|at|Winning the first trick with the @S9 would be better for the defense. |pg||
+
+md|0sq,s8|hc|sq|
+
+nt|^b@2^z@3Suppose that South's 1 spade higher than the @S5 is the @SQ. In this case, if you play the @S9, South will win the trick with his @SQ. |pg||
+lc|s9sq|pc|s9sq|pg||
+hc|sk|at|That's not such a big deal really. The declarer, with both the @SK and the @SQ between his hand and the dummy was always entitled to a trick in spades. |pg||
+up|2|hc|Sa|lc|sk|at|Once again, playing the @SA on the first trick would be worse for the defense. |pg||
+lc|sa|pc|sas|pg||
+hc|skq|at|The @SA would win, but South would have 2 winners now - both the @SK and the @SQ would win tricks. |pg||
+
+up|2|md|0sj,sq|lc|skq|hc|sj|
+
+
+nt|^b@2^z@3The only other spade that South could have that is higher than the @S5 is the @SJ. |pg||
+lc|sj|hc|s9|at|At first glance it appears that the play of the @S9 (which has performed brilliantly up until now) fails on this layout |pg||
+lc|s9|pc|s9|hc|sj|at|because this play allows South to win a trick with his @SJ. |pg||
+lc|sj|pc|sj|pg||
+hs|nses|at|The good news for the defense is that East still has his @SA poised over dummy's @SK. South has won a spade trick, but he will not win a second spade trick. |pg||
+ls|esns|up|2|hc|s9sj|
+
+nt|^b@2^z@3So if South has the @SJ and East plays the @S9 to the first trick, South will win a trick with that card. |pg||
+lc|sjs9|hc|sa|at|East can prevent this from happening by taking his @SA at trick 1. |pg||
+lc|Sa|pc|sas|pg||
+hc|sk|at|The net result will be the same, however, as the dummy's @SK will win a trick instead of the declarer's @SJ. |pg||
+lc|sk|up|2|hs|wsesnsss|at|On this layout South could not win a spade trick if he had to play that suit himself, but once West leads a spade there is no way for the defense to prevent South from winning a spade trick. |pg||
+
+md|0s7,sj|hc|sqj9|ls|nsssesws|
+
+nt|^b@2^z@3We have now covered all of the possibilities and found that the play of the @S9 by East at worst breaks even as compared to the @SA. If West happens to have both the @SQ and the @SJ, East's play of the @S9 will work very well indeed. That card will win the first trick, |pg||
+lc|sqj9|pc|s9s|pg||
+hs|eseheced|at|but in order to defeat South's 3NT contract, East must give careful thought to the suit that he leads to trick 2. |pg||
+ls|eheced|
+
+nt|^b@2^z@3You have already learned about the merits of returning the suit that your partner selected for his opening lead and we will explore this concept in greater detail later in this chapter. |pg||
+hs|ns|at|In this situation it would be a mistake to return a spade (the suit that West led) because such a play would allow the declarer to win a trick with the dummy's @SK. East did so well by playing the @S9 on the first trick that it would be a real shame to mess up the spade suit on the second trick!|pg||
+
+ls|esns|hs|wh|hs|eh|
+
+nt|^b@2^z@3A better plan is to switch to a heart in the hope the West will be able to win the trick |pg||
+ls|ehwh|pc|hthhah|pg||
+hs|eswsns|at|in order to play a second round of spades through dummy's @SK. |pg||
+ls|wsnses|pc|Sq|hs|nswses|at|Regardless of whether or not the @SK is played from the dummy, the defense will be in a position to win 3 more tricks in spades. Those 3 tricks, plus the @HA and the @S9 that you won at trick 1, will be sufficient to ensure the defeat of South's 3NT contract. |pg||
+
+up|5|ls|nswses|hs|eh|
+
+nt|^b@2^z@3We have now backed up to point at which East switched to a heart. |pg||
+ls|eh|hc|ht|at|First of all, note that the correct heart for East to lead is the @H10, the same heart that he would have led had he selected that suit as his opening lead. |pg||
+lc|ht|hs|eh|at|A more important issue than which heart East should lead is how East should know to lead a heart at all |pg||
+ls|eh|hs|eced|at|(as opposed to a diamond or a club). |pg||
+ls|edec|hs|es|at|We saw why a spade was wrong at trick 2, |pg||
+ls|es|hs|eh|at|but why is a heart correct?|pg||
+
+ls|eh|Hs|ecedncnd|
+
+nt|^b@2^z@3The sight of the dummy should be enough to convince East that a diamond or a club return would be futile. Not only does the dummy have both the @DA and the @CA (meaning West will not be able to win the second trick in either of these suits), the dummy is very strong in general and dummy's club suit is especially menacing. |pg||
+hs|scsd|at|There is a good chance that South can win at least 9 tricks without losing the lead if he is given a chance to do so. |pg||
+
+ls|ndsdedecscnc|hs|ehwh|
+
+nt|^b@2^z@3If that is the case then the defense had better try to win 5 tricks without losing the lead. East should therefore play a heart in the hope that his partner was dealt the @HA. |pg||
+ls|ehwh|pc|hthhah|pg||
+hs|ws|at|So far so good, but how does West now know to switch back to spades? |pg||
+hs|ssesns|at|Well, West saw his partner's @S9 win the first trick. The fact that South did not win this trick himself suggests that the spades that West cannot see are probably distributed similarly to the way they are above. |pg||
+
+up|6|ls|wsesnsss|
+hc|stak|
+
+nt|^b@2^z@3|ht|d|cs|1|at|^-{ Sometimes a high card is dummy is partially (but not completely) surrounded by the third 
+ hand. In these situations you should give serious consideration to rejecting third hand high. }
+^-
+|pg||
+ht|p|at|Other examples of this principle include when dummy has the Queen or Jack and third hand has the King-Ten or when dummy has the King or Queen and third hand has the Ace-Jack.
+|pg||
+
+hc|st|
+
+nt|^b@2^z@3On this deal no harm would have come if East had played the @S10 (instead of the proper @S9) at trick 1. That shouldn't really come as a surprise since the @S10 and the @S9 are equals. |pg||
+lc|st|hc|s9|at|Remember though, that the reason we play the lower of equals as third hand is to signal our partner that we might have a higher card. On this deal West doesn't really need this information, |pg||
+lc|s9|hc|st|at|but on a different layout the @S10 might mislead West in an important way.|pg||
+
+lc|st|up|2|hc|sq|
+
+nt|^b@2^z@3On a related note, if West had made the non-standard opening lead of the @SQ here (instead of the standard lead of the 4th best @S5), the defense still would have prevailed. In fact, on this deal the @SQ opening lead makes it easier for the defenders to defeat 3NT. The @SQ is not the standard lead here because West's 4-card spade suit is headed by only 2 touching honors (the @SQJ). 3 touching honors are required to lead the high card from a long suit against notrump.|pg||
+
+hc|st|
+
+nt|^b@2^z@3|ht|d|cs|3|at|^-{ On some deals a non-standard lead or an incorrect signal will not hurt the defense, but 
+ these mistakes will hurt your partner's confidence in your ability to help him on defense! }
+^-
+|pg||
+lc|sqst|hc|s5s9|ht|q|at|Defense is an exercise in partnership. Use standard leads, signal carefully, and trust the leads and signals that your partner makes. That's what defense is all about!|pg||
+
+qx|revex,Third hand high - Review and Exercises|
+tb|y|lc|s5s9ak|bt||
+
+nt|^b@2^z@3|cs|5|cp|6|at|
+^-{ Third hand high - Review and Exercises }
+^-
+|cp||at|We have seen some situations where third hand high should be used, but we have seen more situations where third hand should play something other than the highest card that he was dealt. That doesn't mean that third hand high is a bad guideline, but hopefully you have been convinced that it is only a guideline (and not a rule).
+There are no firm rules about when to play third hand high. The only way to come close to being able to figure out which card to play as third hand is to think about each situation as it arises. Consider various possible layouts of the suit that was led and consider the entire deal as well. Think about the consequences of playing various cards as the third hand. In some situations you will have to guess what card to play, but more often you should be able to figure out which card will be best for the defense.
+As a defender you will have several clues available to help you figure out the most likely layout of the suit that was led:
+|pg||
+cs|1|at|^-{ Remember that your partner is using standard leads. You can often draw inferences 
+ from the specific card that he led (or from the fact that he failed to lead a different card). }
+|pg||
+cs|2|at|{ On many deals, the bidding and the declarer's play as the second hand to the trick 
+ will provide you with information about the outstanding cards in the suit that was led. }
+|pg||
+
+cs|4|at|{ The Rule of 11 can help you to figure out the declarer's holding in the suit that was led. }
+|pg||
+tb||
+
+
+nt|^b@2^z@3
+Here is a reminder of what is meant by third hand high:
+|pg||
+cs|1|at|^-{ Third hand high means that if you, as a defender, are the third player to 
+ play to a trick, then you should make your best effort to try to win that trick. }
+^-
+|pg||
+at|Here are a couple of situations in which it is usually right to play third hand high:
+|pg||
+cs|4|at|^-{ Play third hand high when the dummy played second to the trick and when 
+ the dummy started with no honor cards in the suit that was led by your partner. }
+|pg||
+cs|2|at|{ If the second hand follows with an honor card and you have a higher honor 
+ card in the same suit, it is usually best to cover (that is, play third hand high). }
+|pg||
+cs|3|at|{ Although a defender should normally not overtake his partner's winner with an equal card, 
+ third hand should usually overtake when holding a doubleton honor as an unblocking play. }
+^-
+|pg||
+at|On the next page you will see a summary of some of the situations that we have seen in which it is usually wrong to play third hand high. It is difficult to describe these positions (and the ones above) in a simple way and, unless you have an extraordinary memory, attempting to memorize these guidelines is unlikely to really help your bridge game.
+A better approach is to make sure that you understand these guidelines. When these situations arise during an actual bridge game, more often than not you will be able to work out the best card to play when you are third to play to a trick. |pg||
+
+
+nt|^b@2^z@3
+Here are some of the situations that we have seen in which you should either not play third hand high or at least seriously consider not playing third hand high:
+|pg||
+cs|1|at|^-{ If the third hand to play to a trick cannot beat the card that is currently 
+ winning the trick, then he should almost never play third hand high. }
+|pg||
+cs|4|at|{ If dummy is second to play to a trick, dummy's highest card is not played, 
+ and you have dummy's highest card surrounded, do not play third hand high. }
+|pg||
+cs|2|at|{ When you are third to play to a trick and dummy is fourth to play to that trick, do not 
+ play third hand high if you can see that a lower card will be high enough to win the trick. }
+|pg||
+cs|3|at|{ The third player to follow suit to a trick should play the lowest card from
+ a group of 2 or more equal cards as a way of signaling to his partner. }
+|pg||
+cs|1|at|{ Sometimes a high card in dummy is partially (but not completely) surrounded by the third 
+ hand. In these situations you should give serious consideration to rejecting third hand high. }
+|pg||
+at|^-The last guideline covers situations like when the dummy has the King or Queen and you, as third hand, have the Ace-Jack or Ace-Ten. Other examples include when the dummy has the Queen or Jack and you have the King-Ten or King-Nine (and when the dummy has the Jack and you have the Queen-Nine). In these situations it is often difficult for a defender to know whether third hand high or a lower card will be best for the defense.|pg||
+
+
+
+nt|^b@2^z@3|va|5|at|The main topic of this section has been third hand high, but we have also learned a lot of useful tips that can be applied to defense in general:
+|pg||
+cs|1|at|^-{ Leading the high card from a doubleton is a good strategy for the defenders,
+ not just on the opening lead, but at any point during the play of the cards. }
+|pg||
+cs|4|at|{ Standard leads are ^*istandard^*N because, over the long run, these leads represent the best
+cards for the defense to play. Standard leads don't always work out, but they usually do! }
+|pg||
+cs|2|at|{ On some deals a non-standard lead or an incorrect signal will not hurt the defense, but 
+ these mistakes will hurt your partner's confidence in your ability to help him on defense! }
+|pg||
+cs|3|at|{ Small differences between cards can often make a big difference in bridge! You cannot afford 
+ to relax on defense when you have a bad hand - playing the proper low cards could be vital! }
+|pg||
+cs|1|at|{ When your partner leads his lowest card on the first round of a suit, he has led from either 3 
+ or 4 cards (or a singleton). With any other number of cards he would not lead his lowest one! }
+|pg||
+cs|4|at|{ Many signals are designed to ^*Ishow^*N your partner that you were dealt a specific card, but 
+ some signals (like third hand playing low from equals) are used to ^*Ideny^*N a specific card. }
+|pg||
+cs|2|at|^-Finally, here is a reminder of how our friend the Rule of 11 works:
+|pg||
+va|7|at|^-{ When your partner has led 4th best, subtract the rank of his lead from 11. The result tells 
+ you the number of cards in the other 3 hands that are higher than the card that was led. }
+|pg||
+st||rh||ah|Third hand high|ah|Exercises|md|1,s4,s962,saqj8|ha|y|wt|w|
+hc|s4|
+
+nt|^b@2^z@3
+You are sitting East and your partner, West, leads the @S4. |pg||
+lc|s4|pc|s4|hs|ns|at|The declarer calls for a low spade from the dummy. |pg||
+ls|ns|pc|s|hs|es|at|Which card would you play as third hand? |pg||
+
+lb|*CWhich card would you play?^^sa^saqj8|
+ls|es|hc|sa|
+
+nt|^b@2^z@3Play the @SA, third hand high. |pg||
+
+md|0st,sk753|hc|sqjk|lc|sa|at|The @SQ or @SJ would be good enough to win this trick if West's spade holding included the @SK. |pg||
+lc|sqsk|at|If you were to play the @SQ or @SJ, the @SJ, being the lower card of these 2 equals, would be the correct card to play. |pg||
+hc|sk|md|0sk,st|at|Playing the @SJ would not work as well as playing the @SA if South was dealt a singleton @SK as you see above! |pg||
+lc|sj|hc|sa|at|The correct play of the @SA will work wonders if this is the layout of the unseen cards. |pg||
+
+lc|sask|
+md|1hj,haq9,h8762,h3|hc|h3|wt|e|
+
+nt|^b@2^z@3
+This time you are West and your partner, East, leads the @H3. |pg||
+lc|h3|pc|h3|hc|hj|at|South, the declarer, plays the @HJ. |pg||
+lc|hj|pc|hj|hs|wh|at|Which heart would you play as West? |pg||
+
+lb|*CWhich card would you play?^^hq^haq9|
+ls|wh|lc|ha9|hc|hq|
+
+nt|^b@2^z@3The @HQ is the correct card to play. |pg||
+hs|nh|at|The fact that dummy's highest heart is the @H8 lets you know that your @HQ will win this trick. |pg||
+ls|nh|lc|hq|hc|hahk|md|0hk5,,,ht4|at|The @HA would win the trick as well, of course, but playing the @HA would give South an undeserved trick with his @HK on this layout. |pg||
+lc|ha|hc|hq|at|There is no reason to use your @HA when the @HQ is certain to win the trick. By playing the @HQ here you can prevent South from winning a trick with his @HK. |pg||
+
+
+lc|hkhq|md|1,d3,d842,djt6|wt|w|
+hc|d3|
+
+nt|^b@2^z@3
+You are back in the East seat (hope you aren't getting dizzy from all this moving around!) and West leads the @D3. |pg||
+lc|d3|pc|d3|hs|nd|at|A small diamond is played from the dummy. |pg||
+ls|nd|pc|d|hs|ed|at|Over to you. Which diamond would you play as East?|pg||
+lb|*CWhich card would you play?^^dt^djt6|
+ls|ed|hc|djt|ls|wd|
+
+nt|^b@2^z@3Your @DJ and @D10 are equals so, in terms of winning tricks, it doesn't matter which one you play. |pg||
+lc|dj|at|However, from a signaling point of view, it could well matter. The correct signal to your partner is the @D10. |pg||
+md|0daq7,dk95|
+hs|sd|hs|wd|at|If the unseen diamonds are distributed as above, your partner will really appreciate receiving this accurate signal from you. |pg||
+
+ls|sdwd|lc|dt|pc|dt|hc|dq|
+
+nt|^b@2^z@3
+On this layout, South will win the first trick with his @DQ. |pg||
+lc|dq|pc|Dq|pg||
+wt|wd|hs|wd|hc|dj|at|If your partner regains the lead, he may well continue diamonds to set up a trick for the defense because he knows that your play of the @D10 leaves open the possibility that you have the @DJ as well. |pg||
+up|2|ls|wd|
+
+nt|^b@2^z@3If you make the mistake of playing the @DJ (instead of the proper @D10) |pg||
+lc|dj|pc|dj|hc|dq|at|South will win the @DQ as before, |pg||
+lc|dq|pc|dq|pg||
+hc|dt|at|but you will have misled your partner into thinking that you do not have the @D10! |pg||
+md|0dt,,,d7|wt|w|hs|wd|at|If West regains the lead he will think that the diamond layout is something like the above, with the @D10 in the South hand. He will think that it is unsafe to continue diamonds |pg||
+md|0d7,,,dt|at|and that could be fatal for the defense on the actual layout. |pg||
+
+ls|wd|hc|dt|up|2|at|Your partner will appreciate your accurate @D10 signal here!|pg||
+
+md|1,cq,ck92,ca843|wt|w|
+lc|dt|hc|cq|
+
+nt|^b@2^z@3
+Your partner, West, leads the @CQ |pg||
+lc|cq|pc|cq|hs|nc|at|and a low club is played from the dummy. |pg||
+ls|nc|pc|c|hs|ec|at|You are East and you have to decide whether or not you should play third hand high with the @CA. |pg||
+lb|*MShould you play your @CA on this trick?^Yes~No~Maybe^2|
+ls|ec|hc|ca|
+
+nt|^b@2^z@3It would be mistake to play your @CA on this trick. |pg||
+lc|ca|hc|c843k|at|You can see the @CK in the dummy so you know that your partner's @CQ is going to win the trick if you follow suit with a low club. There is actually a proper low club to play here (as a signal to your partner), but we won't learn about this type of signal until the next chapter. There are a few situations in which it is right to overtake your partner's winner, but this is not one of them!|pg||
+lc|c438k|
+md|1,s3,saj4,sqt98|wt|w|
+hc|s3|
+
+
+nt|^b@2^z@3
+Your trusty partner, West, leads the @S3. |pg||
+lc|s3|pc|s3|hc|s4|at|The declarer plays the dummy's @S4 |pg||
+lc|s4|pc|s4|hs|es|at|and you are back in the East seat with another decision as to which card you should play as third hand. |pg||
+lb|*CWhich card would you play?^^s8^sqt98|
+ls|es|hc|sjsqt|
+
+
+nt|^b@2^z@3First of all you should realize that it would be wrong to play a third hand high @SQ in this situation. The reason is that you have the dummy's @SJ surrounded by your @SQ and @S10. |pg||
+lc|sjq|hc|s98|at|Now notice that your @S10, @S9 and @S8 are all equals. |pg||
+lc|st9|at|Given that you are not going to play the @SQ, the @S8 (being the lowest of the equals) is the correct card to play for signaling purposes in this situation. |pg||
+lc|s8|
+md|1,hq,h632,hk5|wt|w|hc|hq|
+
+nt|^b@2^z@3
+For this exercise, assume that your partner, West, has led the @HQ as his opening lead against a notrump contract. |pg||
+lc|hq|pc|hq|hs|nh|at|A low heart is played from dummy. |pg||
+ls|nh|pc|h|hs|eh|at|You have only 2 choices as to which heart you can play here. What's it going to be?|pg||
+
+lb|*MWhat strategy do you choose?^Third hand high~Long live the King!^1|
+ls|eh|hc|hk|
+
+nt|^b@2^z@3It is correct to play the @HK as an unblocking play even though your @HK and partner's @HQ are equals. |pg||
+lc|hk|pc|hk|md|0ha74,hjt98|
+hs|sh|at|Suppose South plays a low heart, holding up his @HA (which may well be the best play in this suit at notrump). |pg||
+ls|sh|pc|h|pg||
+hs|eh|at|You can then lead back your remaining heart, the @H5. |pg||
+ls|Eh|pc|h|hs|sh|at|Even if South holds up again, |pg||
+ls|sh|pc|h|hs|wh|at|West can win (note that West should play the @H8 as third hand, his lowest of 4 equal cards) |pg||
+ls|Wh|pc|hh|pg||
+hs|whsh|at|and drive out South's @HA to establish his suit.|pg||
+ls|whsh|up|6|hc|h5|
+
+nt|^b@2^z@3Now look what happens if you fail to unblock in hearts, playing your @H5 instead of the proper @HK. |pg||
+lc|h5|pc|h5|hs|sh|at|South will hold up his @HA and your partner's @HQ will win the trick. |pg||
+ls|sh|pc|h|pg||
+hs|wheh|at|West continues hearts and this time you will have to play your @HK. |pg||
+ls|ehwh|pc|hjhh|pg||
+hs|sh|at|If South ducks his @HA again your @HK will win the trick. |pg||
+ls|sh|pc|h|pg||
+hs|shwh|at|Since you have no hearts to lead back, South is able to retain his @HA as a stopper and your partner's heart suit will not be established. |pg||
+ls|Shwh|md|1,d3,dj75,dkt62|wt|w|hc|d3|
+
+
+nt|^b@2^z@3
+In this example, assume that your partner's lead of the @D3 is the opening lead from a side suit against a trump contract. |pg||
+lc|d3|pc|d3|hs|nd|at|A low diamond is played from the dummy |pg||
+ls|nd|pc|d|hs|ed|at|and you must decide which diamond to play as third hand to this trick. |pg||
+lb|*CWhich card would you play?^^dt^dkt62|ls|ed|hc|dt|
+
+nt|^b@2^z@3You should play the @D10. |pg||
+lc|dt|pc|dt|md|0dq8,da94|
+hc|dqda|at|Are you concerned that the layout might be as you see above? Here your partner has the @DA and your play of the @D10 will let the declarer score an easy trick with his @DQ. That could be a disaster against a trump contract. |pg||
+up|1|lc|dqda|hc|dk|at|Meanwhile, if you had played third hand high with the @DK, you would have won the trick. |pg||
+lc|dk|hc|dqda|
+
+nt|^b@2^z@3In fact, you should not worry about this layout of the diamond suit because it is not possible (especially if your partner has used this program). West would not have led small from a suit that included the @DA against a trump contract. However, if we switch the @DA and @DQ around, |pg||
+md|0da,dq|at|the layout that results is very possible. |pg||
+lc|dq|hc|dk|
+
+nt|^b@2^z@3The @DK is the wrong play as third hand because the declarer will win the @DA, a card that you should know that he holds. |pg||
+lc|dkda|pc|dkda|pg||
+hc|dq|at|It is true that West's @DQ will be promoted into a winner as a result, |pg||
+hs|sdnd|at|but the declarer will be able to build dummy's @DJ into an winner of his own (which may be useful later for a discard of a loser) by leading a diamond toward the dummy. |pg||
+ls|ndsd|lc|Dq|pc|d|hc|dq|at|Once West takes his @DQ, |pg||
+lc|dq|pc|dqdd|pg||
+hs|nd|at|the dummy's @DJ will be the highest remaining diamond in the deck.|pg||
+
+up|6|ls|nd|hc|dt|
+
+nt|^b@2^z@3Now notice the effect of playing the proper card, the @D10, to the first trick. |pg||
+lc|dt|pc|Dt|hc|da|at|South is welcome to win his @DA, |pg||
+lc|Da|pc|Da|pg||
+hc|dkdq|at|but the defense will have set up a diamond winner for themselves as before. In fact, this position has the advantage that either West's @DQ or East's @DK could win a diamond trick for the defense. |pg||
+lc|dkq|hc|dj|at|More important, however, is that the dummy's @DJ will not become a winner |pg||
+lc|dj|hc|dt|up|2|at|thanks to East's correct play of the @D10 on the first trick. |pg||
+
+lc|dt|md|1,c7,ckt2,caq3|wt|w|hc|c7|
+
+
+nt|^b@2^z@3
+Assume that you know that West's lead of the @C7 is from a suit with at least 4 cards in it. |pg||
+lc|c7|pc|c7|hc|c2|at|The @C2 is played from the dummy. |pg||
+lc|c2|pc|c2|hs|ec|at|Think about what card you would play as East in this situation. |pg||
+lb|*CWhich card would you play?^^c3^caq3|
+ls|ec|hc|c3|
+
+nt|^b@2^z@3This is the hardest problem you have seen yet. The ^*Ithird hand low^*N play of the @C3 is correct, but do you know why this is the case? |pg||
+lc|c3|hc|caqk|at|At first glance the @CQ looks like the obvious answer. There is no reason to play the @CA since you have the dummy's @CK surrounded with the @CAQ. |pg||
+lc|ckaq|hc|c3|at|Nonetheless, the strange play of the @C3 is actually correct. The Rule of 11 can be used to demonstrate why this is the case. |pg||
+
+lc|c3|hc|cktaq|
+
+nt|^b@2^z@3Subtract the rank of your partner's 4th best lead (the @C7) from 11. The answer is 4 and this means that there are 4 cards between the North, South, and East hands that are higher than the @C7. You can see all 4 of these cards (dummy's @CK and @C10 and your @CA and @CQ). That means that South has no cards in clubs that are higher than the @C7! |pg||
+
+lc|caqkt|hc|c3|
+
+nt|^b@2^z@3Therefore, you can play your @C3 and be fully confident that your partner's @C7 will win the first trick. |pg||
+lc|c3|pc|c3|md|0c64,cj985|hs|wc|at|Perhaps the complete club layout is what you now see above. Notice that your partner's @C7 was the proper card to lead from his original holding of @CJ9875. That's a good thing, because the Rule of 11 only works when you know that your partner has led 4th best!|pg||
+
+hs|sc|ls|wc|
+
+nt|^b@2^z@3Your clever play of the @C3 will work wonders on the actual layout. South will follow small from his hand and your partner's @C7 will win the first trick as you expected. |pg||
+ls|sc|pc|c|pg||
+hs|wcncec|at|Furthermore, West will remain on lead and another club lead from his side of the table will allow you to score the next 2 tricks with your @CA and @CQ. Dummy's @CK will be completely neutralized as a result. |pg||
+ls|ecwcnc|up|2|hc|cq|
+
+nt|^b@2^z@3Notice that if you had played the @CQ on the first trick, 3 bad things would have happened. First, you would have won the trick with your @CQ instead of having your partner win with his @C7. |pg||
+lc|cq|pc|cqc|pg||
+
+hs|ecwc|at|Second, you would have been on lead instead of your partner. |pg||
+wt|w|ls|ec|at|Third (and most important), even if your partner was able to regain the lead to return another club, |pg||
+ls|wc|pc|c|hc|ct|at|the declarer could play the @C10 from dummy |pg||
+lc|ct|pc|ct|hc|ca|at|to force your @CA. |pg||
+lc|ca|pc|cac|pg||
+hs|nc|at|Dummy's @CK would then be a winner. |pg||
+|bt||nt||cs|5|cp|6|fp|4|ht|i|at|^-{^^End^^ 
+      Learn to Play Bridge2          ^*bChapter 3   Section 1^*n       ^^ ^^ ^^Third Hand High (usually)^^ ^^ }^- |

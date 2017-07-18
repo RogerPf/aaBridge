@@ -10,6 +10,7 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.model;
 
+import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Deal.DumbAutoDirectives;
 
 /**
@@ -77,6 +78,46 @@ public class Hand implements Comparable<Hand> {
 				// deal.packPristine.addDeltCard(card);
 				deal.packPristine.add(card);
 			}
+		}
+	}
+
+	public void restoreUnplayedCardsToDeck_skipKept() {
+		// ==============================================================================================
+		for (int j : Zzz.zto3) {
+			Frag frag = frags[j];
+			Frag forg = fOrgs[j];
+			for (int i = frag.size() - 1; i >= 0; i--) {
+				Card card = frag.get(i);
+				if (card.isKept())
+					continue;
+				frag.remove(card);
+				forg.remove(card);
+				// deal.packPristine.addDeltCard(card);
+				deal.packPristine.add(card);
+			}
+		}
+	}
+
+	/**
+	 */
+	public boolean areAnyCardsKept() {
+		// ==============================================================================================
+		for (int j : Zzz.zto3) {
+			Frag forg = fOrgs[j];
+			for (Card card : forg) {
+				if (card.isKept())
+					return true;
+			}
+		}
+		return false;
+	}
+
+	/**
+	 */
+	public void clearAllKeptFlags() {
+		// ==============================================================================================
+		for (int j : Zzz.zto3) {
+			fOrgs[j].clearAllKeptFlags();
 		}
 	}
 
@@ -266,6 +307,17 @@ public class Hand implements Comparable<Hand> {
 
 	/** 
 	 */
+	public Card getCardIfMatching_Orig(Suit suit, Rank rank) {
+
+		for (Card card : fOrgs[suit.v]) {
+			if (card.rank == rank)
+				return card;
+		}
+		return null;
+	}
+
+	/** 
+	 */
 	public Card getCardIfMatchingRankRel(Suit suit, Rank rankRel) {
 
 		for (Card card : frags[suit.v]) {
@@ -427,7 +479,7 @@ public class Hand implements Comparable<Hand> {
 		bids.removeLast();
 	}
 
-	/** 
+	/**
 	 */
 	public Card undoLastPlay() {
 		assert (played.size() >= 1);
@@ -439,46 +491,169 @@ public class Hand implements Comparable<Hand> {
 		}
 
 		Card card = played.removeLast();
+		// card.setKept(false);
 		frags[card.suit.v].addDeltCard(card);
 		return card;
 	}
 
-	/** 
+//	/**
+//	 */
+//	int count_Bergen_starting() {
+//		int t = 0;
+//
+//		int adj3 = 0;
+//
+//		for (Frag fOrg : fOrgs) {
+//			
+//			int top5 = 0;
+//			
+//			boolean has_Ace = false;
+//			boolean has_King = false;
+//			boolean has_Queen = false;
+//			boolean has_Jack = false;
+//
+//			for (Card card : fOrg) {
+//				Rank r = card.rank;
+//				// @formatter:off
+//			    switch (r) {
+//			    	default: continue;
+//			    	case Ace:   t += 4;   has_Ace   = true; adj3++; top5++; continue;  // HCPs
+//			    	case King:  t += 3;   has_King  = true;         top5++; continue;
+//			    	case Queen: t += 2;   has_Queen = true; adj3--; top5++; continue;
+//			    	case Jack:  t += 1;   has_Jack  = true; adj3--; top5++; continue;	    	
+//			    	case Ten:                               adj3++; top5++; continue;	    	
+//			    }
+//			    // @formatter:on
+//			}
+//
+//			if (fOrg.size() >= 4 && top5 >= 3) { // Quality Suit
+//				t = t + 1;
+//			}
+//
+//			if (fOrg.size() >= 5) { // Suits 5 or longer
+//				t = t + (fOrg.size() - 4);
+//			}
+//
+//			boolean noAceOrKing = !(has_Ace || has_King); // dubious doubletons
+//			if ((fOrg.size() == 2) && ((noAceOrKing && (has_Queen || has_Jack)) || (has_King && has_Jack) || (has_King && has_Queen))) {
+//				t = t - 1;
+//			}
+//			else if ((fOrg.size() == 1) && (has_King || has_Queen || has_Jack)) {
+//				t = t - 1;
+//			}
+//		}
+//
+//		// adjust 3 diff between quacks and AT's
+//		if (adj3 > 0)
+//			t = t + adj3 / 3;
+//		else if (adj3 < 0)
+//			t = t - (-adj3) / 3;
+//
+//		return t;
+//	}
+//
+//
+//	/**
+//	 */
+//	public int count_Bergen() {
+//
+//		Suit suit = Suit.Invalid;
+//		boolean short_hand = false;
+//		boolean long_hand = false;
+//		
+//		// much stuff needed here
+//
+//		if (suit != Suit.Invalid && long_hand) {
+//			return count_Bergen_declarer(suit);
+//		}
+//		else if (suit != Suit.Invalid && short_hand) {
+//			return count_Bergen_dummy(suit);
+//		}
+//		else 
+//		return count_Bergen_starting();
+//	}
+
+	/**
 	 */
-	public int countHighCardPoints() {
+	public int count_LongSuitPoints() {
 		int v = 0;
 		for (Frag fOrg : fOrgs) {
-			v += fOrg.countHighCardPoints();
+			v += fOrg.count_LongSuitPoints();
 		}
 		return v;
 	}
 
-	/** 
+	/**
 	 */
-	public int countLongSuitPoints() {
+	public int count_ShortSuitPoints() {
 		int v = 0;
 		for (Frag fOrg : fOrgs) {
-			v += fOrg.countLongSuitPoints();
+			v += fOrg.count_ShortSuitPoints();
 		}
 		return v;
 	}
 
-	/** 
+	/**
 	 */
-	public int countShortSuitPoints() {
+	public int count_HighCardPoints() {
 		int v = 0;
 		for (Frag fOrg : fOrgs) {
-			v += fOrg.countShortSuitPoints();
+			v += fOrg.count_HighCardPoints();
 		}
 		return v;
 	}
 
-	/** 
+	/**
+	 *  As published in 1980s in Bridge World see   http://www.rpbridge.net/8j19.htm
+	 *  Kaplan and Rubens
 	 */
-	public int countLosingTricks_x2() {
+	public double count_KnR() {
+		double t = 0;
+		int count_3 = 0;
+
+		for (Frag fOrg : fOrgs) {
+
+			t += fOrg.count_KnR();
+
+			if (fOrg.size() == 3)
+				count_3++;
+		}
+
+		t = t - 1; // Step Final A
+
+		if (count_3 == 3) { // Step Final B
+			t = t + 0.5;
+		}
+
+		return t;
+	}
+
+	/**
+	 */
+	public int countLosingTricks_Basic_x2() {
 		int v = 0;
 		for (Frag fOrg : fOrgs) {
-			v += fOrg.countLosingTricks_x2();
+			v += fOrg.countLosingTricks_Basic_x2();
+		}
+		return v;
+	}
+
+	/**
+	 */
+	public int countLosingTricks_Ref_x2() {
+		int v = 0;
+		for (Frag fOrg : fOrgs) {
+			v += fOrg.countLosingTricks_Ref_x2();
+		}
+		return v;
+	}
+
+	/**
+	 */
+	public int count_Banzai() {
+		int v = 0;
+		for (Frag fOrg : fOrgs) {
+			v += fOrg.count_Banzai();
 		}
 		return v;
 	}
@@ -491,7 +666,7 @@ public class Hand implements Comparable<Hand> {
 			fr[su.v] = (Frag) fOrgs[su.v].clone();
 		}
 
-		if (deal.prevTrickWinner.size() > 0) {
+		if ((deal.prevTrickWinner.size() > 0) && (played.size() > 0)) {
 
 			// remove all the cards played in all the tricks BEFORE the review trick
 			for (int i = 0; i < (reviewTrick); i++) {
@@ -524,7 +699,7 @@ public class Hand implements Comparable<Hand> {
 	/** 
 	 */
 	public int compareTo(Hand other) {
-		return other.countHighCardPoints() - countHighCardPoints();
+		return other.count_HighCardPoints() - count_HighCardPoints();
 	}
 
 	/** 
@@ -719,7 +894,7 @@ public class Hand implements Comparable<Hand> {
 		 * it is the side effects on the embedded deals that we need to recreate
 		 * as the (relativly) transient stratergies are updated.
 		 */
-		Card cardThatWould;
+//		Card cardThatWould;
 		int mainDealPlayed = deal.countCardsPlayed();
 		Deal d2 = dealClone;
 		int d2Played = d2.countCardsPlayed();
@@ -729,7 +904,7 @@ public class Hand implements Comparable<Hand> {
 			Card card = deal.getCardThatWasPlayed(i);
 			int h2compass = deal.getCompassThatWasPlayed(i);
 
-			Hand h2 = dealClone.hands[h2compass];
+//			Hand h2 = dealClone.hands[h2compass];
 
 			if (h2compass == compass.v) {
 				// update the strategy - which MAY alter the cloneDeal (but does not currently)
@@ -738,17 +913,17 @@ public class Hand implements Comparable<Hand> {
 					// the thing that did not happen was that the card was not played (as it was yet to be chosen)
 					skipFirst = false;
 				}
-				else {
-					Gather g2 = strategy.update(dumbAutoDir);
-					// for now we assume we can call this for all defenders
-					if (h2.axis() == d2.defenderAxis()) {
-						cardThatWould = h2.dumbAutoInner(g2);
-						if (cardThatWould != null && (cardThatWould.rank != card.rank || cardThatWould.suit != cardThatWould.suit)) {
+//				else {
+//					Gather g2 = strategy.update(dumbAutoDir);
+//					// for now we assume we can call this for all defenders
+//					if (h2.axis() == d2.defenderAxis()) {
+//						cardThatWould = h2.dumbAutoInner(g2);
+//						if (cardThatWould != null && (cardThatWould.rank != card.rank || cardThatWould.suit != cardThatWould.suit)) {
 //							System.out.println(" RERUN ===  " + card + " was played,  this time would play  " + cardThatWould);
-						}
-						cardThatWould = null;
-					}
-				}
+//						}
+//						cardThatWould = null;
+//					}
+//				}
 			}
 
 			// we can now update the clone deal
@@ -775,6 +950,8 @@ public class Hand implements Comparable<Hand> {
 			card = getRandomPlayableCard();
 			System.out.println("===>   ERROR  -  dumbAuto picked    NULL   - instead of a card");
 		}
+
+		// System.out.print(card + "   ");
 
 		return card;
 	}
@@ -815,34 +992,13 @@ public class Hand implements Comparable<Hand> {
 		// ==============================================================================================
 		String s = "";
 		for (Suit su : Suit.shdc) { // Spades first
-			s += su.toStr();
+			s += (App.saveAsLowerCaseSuit) ? su.toStrLower() : su.toStr();
 			Frag fOrg = fOrgs[su.v];
 			int sl = fOrg.size();
 			// for (int j = sl - 1; j >= 0; j--) { // this low to high
 			for (int j = 0; j < sl; j++) {
 				s += fOrg.get(j).rank.toStr();
 			}
-		}
-		return s;
-	}
-
-	public String cardsForDepFinSave() {
-		// ==============================================================================================
-		String s = "";
-		for (Suit su : Suit.shdc) { // Spades first
-			Frag fOrg = fOrgs[su.v];
-			int sl = fOrg.size();
-			if (sl == 0) {
-				s += "-";
-			}
-			else {
-				for (int j = 0; j < sl; j++) {
-					s += fOrg.get(j).rank.toStr();
-				}
-			}
-
-			if (su != Suit.Clubs)
-				s += " ";
 		}
 		return s;
 	}
@@ -857,32 +1013,27 @@ public class Hand implements Comparable<Hand> {
 		return tot;
 	}
 
-	/**
-	 */
-	public void fillHandDepFin(String dfh) {
+	public void setHandShowXes(String s) {
 		// ==============================================================================================
-		String s = dfh + " - - - -";
-		String[] ay = s.split(" +", 5);
-
 		for (Suit suit : Suit.shdc) {
 			int i = 3 - suit.v;
-			s = ay[i];
-			if (s.charAt(0) == '-') {
-				continue;
-			}
-
-			int sl = s.length();
-			for (int j = 0; j < sl; j++) {
-				Rank rank = Rank.charToRank(s.charAt(j));
-				Card card = deal.packPristine.getIfRankAndSuitExists(rank, suit);
-
-				deal.packPristine.remove(card);
-
-				// now we can add it to this hand
-				fOrgs[suit.v].addDeltCard(card);
-				frags[suit.v].addDeltCard(card);
-			}
+			char c = s.charAt(i);
+			fOrgs[suit.v].setShowXes(c);
+			frags[suit.v].setShowXes(c);
 		}
+
+	}
+
+	public String pdbHand() {
+		// ==============================================================================================
+		String rtn = "";
+
+		rtn += fOrgs[Suit.Spades.v].pdbSuit() + ".";
+		rtn += fOrgs[Suit.Hearts.v].pdbSuit() + ".";
+		rtn += fOrgs[Suit.Diamonds.v].pdbSuit() + ".";
+		rtn += fOrgs[Suit.Clubs.v].pdbSuit();
+
+		return rtn;
 	}
 
 }

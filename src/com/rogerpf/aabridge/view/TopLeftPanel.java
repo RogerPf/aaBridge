@@ -16,6 +16,7 @@ import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
 import com.rogerpf.aabridge.controller.App;
+import com.rogerpf.aabridge.model.Rank;
 
 /**
  */
@@ -88,6 +89,25 @@ public class TopLeftPanel extends ClickPanel {
 		setRotationBtnsVisibility();
 		setScoreDisplayVisibility();
 		setRotationBtnsVisibility();
+	}
+
+	/**
+	 */
+	public int getuptoValue(int def) {
+		String s = descEntry.getText().toLowerCase().trim();
+		if (s.length() == 1 || (s.length() > 1 && (s.charAt(1) == ' '))) {
+			char c = s.charAt(0);
+			Rank rank = Rank.charToRank(c);
+			if ((2 < rank.v) && (rank.v < 14)) {
+				return rank.v;
+			}
+		}
+		if (s.length() == 2 || (s.length() > 2 && (s.charAt(2) == ' '))) {
+			if (s.startsWith("10")) {
+				return 10;
+			}
+		}
+		return def;
 	}
 
 	/**   

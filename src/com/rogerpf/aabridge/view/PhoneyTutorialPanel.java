@@ -17,10 +17,9 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.event.MouseEvent;
-import java.awt.font.TextAttribute;
-import java.util.Map;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rpsd.bridgefonts.BridgeFonts;
 
@@ -41,6 +40,12 @@ public class PhoneyTutorialPanel extends ClickPanel {
 	}
 
 	public void mousePressed(MouseEvent e) {
+
+		if (e.getButton() == MouseEvent.BUTTON3) {
+			App.frame.rightClickPasteTimer.start();
+			return;
+		}
+
 		App.gbp.c1_1__tfdp.clearShowCompletedTrick();
 		if (App.gbp.c0_0__tlp.descEntry.hasFocus()) {
 			App.gbp.c0_0__tlp.descEntry.setFocusable(false);
@@ -52,12 +57,29 @@ public class PhoneyTutorialPanel extends ClickPanel {
 		App.frame.repaint();
 	}
 
+	float width;
+	float fSize;
+	float boldMult;
+	float lump;
+	float lineHeight;
+	float x;
+	float y;
+
 	boolean show_wanted = true;
 
-	static Color textGray = new Color(145, 145, 145);
+	static Color contrtactNeeded_color = new Color(80, 80, 80);
+	static Color poorDefense_color = new Color(130, 130, 130);
+
+	void drawStringMove_X(Graphics2D g2, Font font, String text) {
+		// =============================================================
+		g2.setFont(font);
+		g2.drawString(text, x, y);
+		x += getFontMetrics(font).stringWidth(text);
+	}
 
 	public void paintComponent(Graphics g) {
 		// =============================================================
+
 		super.paintComponent(g);
 		Graphics2D g2 = (Graphics2D) g;
 		Aaa.commonGraphicsSettings(g2);
@@ -67,82 +89,79 @@ public class PhoneyTutorialPanel extends ClickPanel {
 		g2.setColor(Aaa.handBkColorStd);
 		g2.fill(bounds);
 
-		if (!(App.show_poor_def_msg && show_wanted && App.showPoorDefHint)) {
+		width = bounds.width;
+		fSize = width * 0.018f;
+		boldMult = 1.3f;
+		lump = width * 0.0010f;
+		lineHeight = width * 0.04f;
+		x = width * 0.05f;
+		y = width * 0.035f;
 
-			g2.setFont(BridgeFonts.bridgeLightFont.deriveFont((float) (bounds.width / 40)));
-			g2.setColor(Aaa.veryWeedyBlack);
+		boolean show_contractNeeded_hint = /* show_wanted && */App.showContNeededHint && !App.cameFromPbnOrSimilar() && !App.deal.isContractReal();
+		boolean show_poorDefense_hint = /* show_wanted && */App.showPoorDefHint && App.show_poor_def_msg;
 
-			String text = "not used";
+		if (show_contractNeeded_hint) {
 
-			Aaa.drawCenteredString(g2, text, 0, 0, bounds.width, bounds.height);
-		}
-		else {
+			boldMult = 1.3f;
 
-			g2.setColor(textGray);
+			Font std = BridgeFonts.internationalFont.deriveFont(fSize);
+			Font bold = BridgeFonts.internatBoldFont.deriveFont(fSize * boldMult);
 
-			float width = bounds.width;
-			float fSize = width * 0.018f;
-			float lump = width * 0.02f;
-			float lineHeight = width * 0.04f;
-			float x = width * 0.05f;
-			float y = width * 0.035f;
-
-			Font std = BridgeFonts.bridgeTextStdFont.deriveFont(fSize);
-
-			@SuppressWarnings("unchecked")
-			Map<TextAttribute, Object> attributes = (Map<TextAttribute, Object>) BridgeFonts.bridgeTextStdFont.getAttributes();
-			attributes.put(TextAttribute.SIZE, fSize * 1.15);
-			attributes.put(TextAttribute.WEIGHT, TextAttribute.WEIGHT_BOLD);
-
-			Font bold = BridgeFonts.bridgeTextStdFont.deriveFont(attributes);
+			g2.setColor(contrtactNeeded_color);
 
 			g2.setFont(std);
-			String text = "If you get a POOR defense from the aaBridge bots.  This is what you do -";
-			g2.drawString(text, x, y);
+			drawStringMove_X(g2, std, Aaf.bigHint_youMay);
+
+			y += lineHeight;
+			x = width * 0.07f;
+			drawStringMove_X(g2, std, Aaf.bigHint_clickThe);
+			drawStringMove_X(g2, bold, "  " + Aaf.bigHint_analyse);
+			drawStringMove_X(g2, std, "   " + Aaf.bigHint_buttonTop);
+
+			y += lineHeight;
+			x = width * 0.07f;
+			drawStringMove_X(g2, std, Aaf.bigHint_clickAny);
+
+			y += lineHeight * 0.9;
+			x = width * 0.13f;
+			drawStringMove_X(g2, std, Aaf.bigHint_orYou);
+
+		}
+		else if (show_poorDefense_hint) {
+
+			boldMult = 1.3f;
+
+			Font std = BridgeFonts.internationalFont.deriveFont(fSize);
+			Font bold = BridgeFonts.internatBoldFont.deriveFont(fSize * boldMult);
+
+			g2.setColor(poorDefense_color);
+
+			g2.setFont(std);
+			drawStringMove_X(g2, std, Aaf.bigHint_ifYou);
 
 			y += lineHeight * 1.2f;
-
 			x = width * 0.07f;
-			text = "Click ";
-			g2.drawString(text, x, y);
-			x += lump * 2.5f;
+			drawStringMove_X(g2, std, Aaf.bigHint_click);
+			drawStringMove_X(g2, bold, " " + Aaf.bigHint_edit);
+			drawStringMove_X(g2, std, "    " + Aaf.bigHint_click);
+			drawStringMove_X(g2, bold, " " + Aaf.bigHint_undo);
+			drawStringMove_X(g2, std, "     " + Aaf.bigHint_playThe);
 
-			text = " Edit ";
-			g2.setFont(bold);
-			g2.drawString(text, x, y);
-			x += lump * 5.5f;
-
-			text = "Click ";
-			g2.setFont(std);
-			g2.drawString(text, x, y);
-			x += lump * 2.5f;
-
-			text = " Undo ";
-			g2.setFont(bold);
-			g2.drawString(text, x, y);
-			x += lump * 7.5f;
-
-			text = "Play the card for the defense that they should have played.";
-			g2.setFont(std);
-			g2.drawString(text, x, y);
-
-			x = width * 0.07f;
 			y += lineHeight;
-
-			text = "Click ";
-			g2.drawString(text, x, y);
-			x += lump * 2.5f;
-
-			text = " Play ";
-			g2.setFont(bold);
-			g2.drawString(text, x, y);
-			x += lump * 4.0f;
-
-			g2.setFont(std);
-			text = "and continue to play out the hand.";
-			g2.drawString(text, x, y);
+			x = width * 0.07f;
+			drawStringMove_X(g2, std, Aaf.bigHint_click);
+			drawStringMove_X(g2, bold, " " + Aaf.bigHint_play);
+			drawStringMove_X(g2, std, "    " + Aaf.bigHint_andCont);
 
 		}
+		else {
+			g2.setColor(Aaa.veryWeedyBlack);
+
+			g2.setFont(BridgeFonts.internationalFont.deriveFont((float) (bounds.width / 40)));
+
+			Aaa.drawCenteredString(g2, Aaf.bigHint_notUsed, 0, 0, bounds.width, bounds.height);
+		}
+
 	}
 
 }

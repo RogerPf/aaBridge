@@ -29,6 +29,7 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Bal;
 import com.rogerpf.aabridge.model.Bid;
@@ -139,7 +140,6 @@ public class BidsFourDisplayPanel extends JPanel {
 	 */
 	public void paintComponent(Graphics g) { // BidDisplayPanel
 		super.paintComponent(g);
-
 		Graphics2D g2 = (Graphics2D) g;
 		Aaa.commonGraphicsSettings(g2);
 		FontRenderContext frc = g2.getFontRenderContext();
@@ -176,32 +176,38 @@ public class BidsFourDisplayPanel extends JPanel {
 
 			// Add in the text
 			float fontSize = activityHeight * 0.25f;
-			Font df = BridgeFonts.bridgeBoldFont.deriveFont(fontSize);
-			Font bf = BridgeFonts.faceAndSymbFont.deriveFont(fontSize);
+			Font df = BridgeFonts.internatBoldFont.deriveFont(fontSize);
+			Font sf = BridgeFonts.faceAndSymbolFont.deriveFont(fontSize);
+			String ct = App.deal.contract.suit.toStrLower();
 
-			String ct = App.deal.contract.suit.toStr();
+			if (App.deal.contract.suit == Suit.NoTrumps) {
+				sf = BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.7f);
+				ct = Aaf.game_nt;
+			}
+
 			int ctLen = ct.length();
 
-			String pl = App.deal.contractCompass.toLongStr();
+			String pl = Dir.getLangDirStr(App.deal.contractCompass);
 
 			String dr = App.deal.contractDblRe.call.toEarlyContractDisplayString();
 
-			String t = App.deal.contract.level.toStr() + ct + dr + " by " + pl;
+			String t = App.deal.contract.level.toStr() + ct + dr + " " + Aaf.playBridge_by + " " + pl;
 			AttributedString at = new AttributedString(t);
 
 			g2.setColor(new Color(70, 70, 70));
 
 			at.addAttribute(TextAttribute.FONT, df, 0, t.length());
 			// at.addAttribute(TextAttribute.FOREGROUND, Aaa.weedyBlack, 0, t.length());
-			at.addAttribute(TextAttribute.FONT, bf, 0, 1 + ctLen);
+			at.addAttribute(TextAttribute.FONT, df, 0, 1);
+			at.addAttribute(TextAttribute.FONT, sf, 1, 1 + ctLen);
 			at.addAttribute(TextAttribute.FOREGROUND, App.deal.contract.suit.color(Cc.Ce.Strong), 1, 1 + ctLen);
 			TextLayout tl = new TextLayout(at.getIterator(), frc);
 
 			tl.draw(g2, marginLeft + activityWidth * 0.12f, marginTop + activityHeight * 0.45f);
 
-			g2.setFont(BridgeFonts.bridgeBoldFont.deriveFont(fontSize * 0.8f));
+			g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.8f));
 
-			t = App.deal.contractCompass.nextClockwise().toLongStr() + " to lead";
+			t = Dir.getLangDirStr(App.deal.contractCompass.nextClockwise()) + " " + Aaf.playBridge_toLead;
 
 			Aaa.drawCenteredString(g2, t, marginLeft, marginTop + activityHeight * 0.45f, activityWidth, activityHeight * 0.6f);
 
@@ -230,14 +236,16 @@ public class BidsFourDisplayPanel extends JPanel {
 
 		float levelFontSize = cardHeight * 0.80f;
 		float symbolFontSize = cardHeight * 0.70f;
+		float ntFontSize = cardHeight * 0.60f;
 
-		Font levelFont = BridgeFonts.faceAndSymbFont.deriveFont(levelFontSize);
-		Font symbolFont = BridgeFonts.faceAndSymbFont.deriveFont(symbolFontSize);
-		Font passFont = BridgeFonts.bridgeLightFont.deriveFont(cardHeight * 0.6f);
-		Font doubleFont = BridgeFonts.bridgeBoldFont.deriveFont(cardHeight * 0.60f);
-		Font redoubleFont = BridgeFonts.bridgeBoldFont.deriveFont(cardHeight * 0.50f);
-		Font alertFont = BridgeFonts.bridgeBoldFont.deriveFont(cardHeight * 0.70f);
-		Font qmFont = BridgeFonts.bridgeBoldFont.deriveFont(cardHeight * 0.90f);
+		Font levelFont = BridgeFonts.faceAndSymbolFont.deriveFont(levelFontSize);
+		Font symbolsFont = BridgeFonts.faceAndSymbolFont.deriveFont(symbolFontSize);
+		Font ntFont = BridgeFonts.internatBoldFont.deriveFont(ntFontSize);
+		Font passFont = BridgeFonts.internationalFont.deriveFont(cardHeight * 0.6f);
+		Font doubleFont = BridgeFonts.internatBoldFont.deriveFont(cardHeight * 0.7f);
+		Font redoubleFont = BridgeFonts.internatBoldFont.deriveFont(cardHeight * 0.65f);
+		Font alertFont = BridgeFonts.internatBoldFont.deriveFont(cardHeight * 0.70f);
+		Font qmFont = BridgeFonts.internatBoldFont.deriveFont(cardHeight * 0.90f);
 
 		// ------------------------------------------------------------------
 
@@ -266,7 +274,7 @@ public class BidsFourDisplayPanel extends JPanel {
 
 		Dir startCompass = nextToBid.compass.rotate(1);
 
-		Boolean showQm = App.deal.showBidQuestionMark || !App.deal.showBidQuestionMark && App.isLin__FullMovie() && App.mg.isEndAQuestion()
+		Boolean showQm = App.deal.showBidQuestionMark || !App.deal.showBidQuestionMark && App.isLin__FullMovie() && App.mg.isEndABiddingQuestion()
 				&& !App.deal.dfcDeal;
 
 		for (int i : Zzz.zto3) {
@@ -345,6 +353,7 @@ public class BidsFourDisplayPanel extends JPanel {
 
 				if (bid.isPass()) {
 					bidFont = passFont;
+					sBid = Aaf.game_pass;
 				}
 				else if (bid.isDouble()) {
 					bidFont = doubleFont;
@@ -364,8 +373,15 @@ public class BidsFourDisplayPanel extends JPanel {
 				if ((suit != Suit.Invalid) && (Suit.Clubs.v <= suit.v) && (suit.v <= Suit.NoTrumps.v)) {
 
 					bidColor = Cc.SuitColor((i != 0 ? suit : Suit.NoTrumps), strength[i]);
-					sBid = suit.toStrNu();
-					bidFont = symbolFont;
+
+					if (suit == Suit.NoTrumps) {
+						bidFont = ntFont;
+						sBid = Aaf.game_nt;
+					}
+					else {
+						bidFont = symbolsFont;
+						sBid = suit.toStrLower();
+					}
 
 				}
 			}
@@ -396,14 +412,26 @@ public class BidsFourDisplayPanel extends JPanel {
 			//
 			float adjust = 0.10f;
 
-			if ((phyPos != Dir.West) && (bid != null && (bid.isPass() || bid.isReDouble()))) {
-				adjust = 0.0f;
-			}
-			else if ((phyPos == Dir.North || phyPos == Dir.South) && (bid != null && (bid.suit == Suit.NoTrumps))) {
-				adjust = 0.05f;
-			}
-			else if ((phyPos == Dir.East) && (bid != null && bid.isValidBid())) {
-				adjust = 0.21f;
+			if (bid != null) {
+
+				if ((phyPos != Dir.West) && (bid.isPass())) {
+					adjust = 0.0f;
+				}
+				else if ((phyPos == Dir.East) && ((bid.isDouble() || bid.isReDouble()))) {
+					adjust = 0.3f;
+				}
+				else if ((phyPos == Dir.North || phyPos == Dir.South) && bid.isDouble()) {
+					adjust = 0.3f;
+				}
+				else if ((phyPos == Dir.North || phyPos == Dir.South) && bid.isReDouble()) {
+					adjust = 0.2f;
+				}
+				else if ((phyPos == Dir.North || phyPos == Dir.South) && (bid.suit == Suit.NoTrumps)) {
+					adjust = 0.05f;
+				}
+				else if ((phyPos == Dir.East) && bid.isValidBid()) {
+					adjust = 0.21f;
+				}
 			}
 
 			TextLayout tl = new TextLayout(astr.getIterator(), frc);

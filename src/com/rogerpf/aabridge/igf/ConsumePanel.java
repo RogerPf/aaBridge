@@ -20,6 +20,7 @@ import com.rogerpf.aabridge.controller.Aaa;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.igf.MassGi.FontBlock;
 import com.rogerpf.aabridge.igf.MassGi.GraInfo;
+import com.rogerpf.aabridge.model.Cc;
 import com.rogerpf.aabridge.model.Cc.Ce;
 import com.rogerpf.aabridge.model.Suit;
 import com.rpsd.bridgefonts.BridgeFonts;
@@ -277,7 +278,7 @@ public class ConsumePanel extends SeglinePanel {
 
 	/**
 	 */
-	public void consume_suitSymbol(GraInfo gi) {
+	public void consume_suitSymbol(GraInfo gi, boolean home_symbol) {
 		// =============================================================================
 
 		// first we work out the seg separation for the current font
@@ -293,10 +294,10 @@ public class ConsumePanel extends SeglinePanel {
 
 		// now we make our real symbol font
 		float fontSize = fb.linFontSize * fontScaleFrac * SYMBOL_SCALE_FRAC;
-		Font font = BridgeFonts.faceAndSymbFont.deriveFont(fontSize);
+		Font font = BridgeFonts.faceAndSymbolFont.deriveFont(fontSize);
 		g2.setFont(font_fp);
 
-		String oneChar = Suit.cdhs[gi.numb].toStr();
+		String oneChar = (home_symbol) ? "z" : Suit.cdhs[gi.numb].toStrLower();
 
 		// Line wrap test
 		float available = rightMargin - xCol;
@@ -312,8 +313,9 @@ public class ConsumePanel extends SeglinePanel {
 
 		Ras ras = new Ras(oneChar);
 		ras.addAttribute(TextAttribute.FONT, font);
-//		Color useColor = (use_gray_text ? Suit.cdhs[gi.numb].color(Ce.Weak) : Suit.cdhs[gi.numb].color(Ce.Strong));
-		Color useColor = Suit.cdhs[gi.numb].color(Ce.Strong);
+		Color useColor = (use_gray_text ? Aaa.tut_old_suit_gray : (home_symbol ? Cc.BlackStrong : Suit.cdhs[gi.numb].color(Ce.Strong)));
+//		Color useColor = (use_gray_text ? Suit.cdhs[gi.numb].color(Ce.Weedy) : Suit.cdhs[gi.numb].color(Ce.Strong));
+//		Color useColor = Suit.cdhs[gi.numb].color(Ce.Strong);
 		ras.addAttribute(TextAttribute.FOREGROUND, useColor);
 
 		ras.calcLayout(frc, x, y);
@@ -354,8 +356,8 @@ public class ConsumePanel extends SeglinePanel {
 
 		Ras ras = new Ras(oneChar);
 		ras.addAttribute(TextAttribute.FONT, font);
-//		Color useColor = (use_gray_text && !isBoxed() ? Aaa.tut_old_text_gray : gi.capEnv.color_cp);
-		Color useColor = gi.capEnv.color_cp;
+		Color useColor = (use_gray_text && !isBoxed() ? Aaa.tut_old_text_gray : gi.capEnv.color_cp);
+//		Color useColor = gi.capEnv.color_cp;
 		ras.addAttribute(TextAttribute.FOREGROUND, useColor);
 		if (gi.capEnv.underline) {
 			ras.addAttribute(TextAttribute.UNDERLINE, TextAttribute.UNDERLINE_ON);
@@ -407,6 +409,7 @@ public class ConsumePanel extends SeglinePanel {
 	}
 
 	/**
+	 * @param mn_text_uni 
 	 */
 	public void consume_mn_TEXT(GraInfo gi) {
 		// =============================================================================
@@ -421,8 +424,12 @@ public class ConsumePanel extends SeglinePanel {
 			return;
 
 		FontBlock fb = mg.fbAy[MassGi.mn_header_font_slot]; //
+		Font font_in = (Aaa.hasUni(mn_text) ? BridgeFonts.internationalFont : fb.font);
+
 		@SuppressWarnings("unchecked")
-		Map<TextAttribute, Object> attributes = (Map<TextAttribute, Object>) fb.font.getAttributes();
+		// Map<TextAttribute, Object> attributes = (Map<TextAttribute, Object>) fb.font.getAttributes();
+		Map<TextAttribute, Object> attributes = (Map<TextAttribute, Object>) font_in.getAttributes();
+
 		attributes.put(TextAttribute.SIZE, ((float) fb.linFontSize) * fontScaleFrac);
 		attributes.put(TextAttribute.WEIGHT, TextAttribute.WEIGHT_BOLD);
 
@@ -540,6 +547,18 @@ public class ConsumePanel extends SeglinePanel {
 
 	/**
 	 */
+	public void consume_at__uni(GraInfo gi) {
+		// =============================================================================
+		// if (Aaa.hasUni(gi.text)) { // this does something strange !
+		boolean orig = gi.uni;
+		gi.uni = true;
+		consume_at(gi);
+		gi.uni = orig;
+		// }
+	}
+
+	/**
+	 */
 	public void consume_at(GraInfo gi) {
 		// =============================================================================
 		if (gi.text.isEmpty()) {
@@ -547,8 +566,11 @@ public class ConsumePanel extends SeglinePanel {
 		}
 
 		FontBlock fb = mg.fbAy[gi.capEnv.font_slot_fp];
+		Font fromFont = (gi.uni ? BridgeFonts.internationalFont : fb.font);
+
 		@SuppressWarnings("unchecked")
-		Map<TextAttribute, Object> attributes = (Map<TextAttribute, Object>) fb.font.getAttributes();
+		Map<TextAttribute, Object> attributes = (Map<TextAttribute, Object>) fromFont.getAttributes();
+
 		attributes.put(TextAttribute.SIZE, ((float) fb.linFontSize) * fontScaleFrac);
 		if (gi.capEnv.italic || fb.italic == true) {
 			attributes.put(TextAttribute.POSTURE, TextAttribute.POSTURE_OBLIQUE);
@@ -556,7 +578,8 @@ public class ConsumePanel extends SeglinePanel {
 		if (gi.capEnv.bold || fb.bold >= 5) {
 			attributes.put(TextAttribute.WEIGHT, TextAttribute.WEIGHT_BOLD);
 		}
-		Font font = fb.font.deriveFont(attributes);
+		Font font = fromFont.deriveFont(attributes);
+
 		g2.setFont(font);
 		heightOfCurFont = heightOfCurFontFrac * (float) g2.getFontMetrics().getHeight();
 
@@ -588,11 +611,10 @@ public class ConsumePanel extends SeglinePanel {
 			ras.addAttribute(TextAttribute.FONT, font);
 
 			Color useColor = gi.capEnv.color_cp;
-//			if (use_gray_text && !isBoxed()) {
-//				useColor = Aaa.tut_old_text_gray;
-//			}
-//			else 
-			{
+			if (use_gray_text && !isBoxed()) {
+				useColor = Aaa.tut_old_text_gray;
+			}
+			else {
 				Hyperlink hyperlink = getCurSeg().hyperlink;
 				if (hyperlink != null) {
 					useColor = hyperlink.getLinkColor(gi.capEnv.color_cp);

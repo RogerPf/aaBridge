@@ -186,7 +186,7 @@ public class DealNavigationBar extends JPanel implements MouseListener {
 		float hl = height * BAR_THICKNESS * adjust;
 		float h = height * BIG_MARK_THICKNESS * adjust;
 
-		g2.setFont(BridgeFonts.bridgeBoldFont.deriveFont(h * 0.5f));
+		g2.setFont(BridgeFonts.internatBoldFont.deriveFont(h * 0.5f));
 
 		float futureStart = 0;
 		/**
@@ -229,25 +229,6 @@ public class DealNavigationBar extends JPanel implements MouseListener {
 		float gig = 0.05f;
 		g2.setColor(unplayedColor);
 		g2.fill(new Rectangle2D.Float(futureStart, yb - hl * (1 + gig), mainTo - futureStart, hl * (1 - gig)));
-
-		// Mouse Wheel on off button display
-//		{
-//			g2.setColor(App.useMouseWheel ? Cc.GreenWeak : Aaa.navClaimedIntense);
-//
-//			float bWidth = width * Aaa.butWheelWidthFraction;
-//			float bHeight = height * Aaa.butWheelHeightFraction;
-//			float xBut = width - bWidth;
-//			float yBut = height * (1.0f - Aaa.butWheelHeightFraction);
-//
-//			bWidth = bWidth * 0.9f;
-//			bHeight = bHeight * 0.9f;
-//
-//			g2.fill(new Rectangle2D.Float(xBut, yBut, bWidth, bHeight));
-//
-//			g2.setColor(entered ? Cc.g(Cc.rpfDefBtnColor) : unplayedColor);
-//
-//			Aaa.drawCenteredString(g2, "W", xBut, yBut, bWidth, bHeight);
-//		}
 
 	}
 

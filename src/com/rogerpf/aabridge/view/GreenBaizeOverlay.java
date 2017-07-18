@@ -31,6 +31,7 @@ import javax.swing.Timer;
 import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Cc;
 import com.rogerpf.aabridge.model.Dir;
@@ -206,11 +207,11 @@ public class GreenBaizeOverlay extends JPanel implements AWTEventListener {
 			g2.setColor(Cc.BlackStrong);
 			g2.draw(arrow);
 
-			Font font = BridgeFonts.bridgeBoldFont.deriveFont((float) height * 0.038f);
+			Font font = BridgeFonts.internatBoldFont.deriveFont((float) height * 0.038f);
 			g2.setFont(font);
-			g2.setColor(Color.white);
+			g2.setColor(Color.WHITE);
 
-			g2.drawString("Can edit hands", to_w * 1.20f, tf_h * 1.015f);
+			g2.drawString(Aaf.redArrow_canEdit, to_w * 1.20f, tf_h * 1.015f);
 		}
 
 		if (showNewBoardHint) {
@@ -230,11 +231,11 @@ public class GreenBaizeOverlay extends JPanel implements AWTEventListener {
 			g2.setColor(Cc.BlackStrong);
 			g2.draw(arrow);
 
-			Font font = BridgeFonts.bridgeBoldFont.deriveFont((float) height * 0.033f);
+			Font font = BridgeFonts.internatBoldFont.deriveFont((float) height * 0.033f);
 			g2.setFont(font);
-			g2.setColor(Color.white);
+			g2.setColor(Color.WHITE);
 
-			g2.drawString("Click   New Board", to_w * 1.08f, tf_h * 1.01f);
+			g2.drawString(Aaf.redArrow_newBoard, to_w * 1.08f, tf_h * 1.01f);
 		}
 
 		if (showVuGraphHint) {
@@ -254,11 +255,11 @@ public class GreenBaizeOverlay extends JPanel implements AWTEventListener {
 			g2.setColor(Cc.BlackStrong);
 			g2.draw(arrow);
 
-			Font font = BridgeFonts.bridgeBoldFont.deriveFont((float) height * 0.052f);
+			Font font = BridgeFonts.internatBoldFont.deriveFont((float) height * 0.052f);
 			g2.setFont(font);
-			g2.setColor(Color.white);
+			g2.setColor(Color.WHITE);
 
-			g2.drawString("All 4 columns clickable", width * 0.02f, tf_h * 1.08f);
+			g2.drawString(Aaf.redArrow_4Cols, width * 0.02f, tf_h * 1.08f);
 		}
 
 		if (showDividerHint) {
@@ -278,11 +279,11 @@ public class GreenBaizeOverlay extends JPanel implements AWTEventListener {
 			g2.setColor(Cc.BlackStrong);
 			g2.draw(arrow);
 
-			Font font = BridgeFonts.bridgeBoldFont.deriveFont((float) height * 0.038f);
+			Font font = BridgeFonts.internatBoldFont.deriveFont((float) height * 0.038f);
 			g2.setFont(font);
-			g2.setColor(Color.white);
+			g2.setColor(Color.WHITE);
 
-			g2.drawString("Drag   divider   Left - Right", from_w * 1.03f, tf_h * 1.015f);
+			g2.drawString(Aaf.redArrow_dragDiv, from_w * 1.03f, tf_h * 1.015f);
 		}
 
 	}

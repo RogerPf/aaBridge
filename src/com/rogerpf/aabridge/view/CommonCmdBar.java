@@ -11,6 +11,7 @@
 package com.rogerpf.aabridge.view;
 
 import java.awt.Dimension;
+import java.awt.Graphics;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
@@ -99,7 +100,16 @@ public class CommonCmdBar extends ClickPanCbar {
 	/**   
 	 */
 	public void colorIntensityChange() {
+		// ============================================================================
 		setBackground(Cc.g(Cc.baizeGreen));
+	}
+
+	/**   
+	 */
+	public void paintComponent(Graphics g) {
+		// ============================================================================
+		setBackground(Cc.g(Cc.baizeGreen));
+		super.paintComponent(g);
 	}
 
 	/**   
@@ -126,7 +136,7 @@ public class CommonCmdBar extends ClickPanCbar {
 		boolean T_vm = !S_vm;
 		boolean deal_review = S_vm && App.isModeAnyReview();
 		
-		boolean deal_enterable = (App.deal.isSaveable() || App.isLin__Single()) && (App.visualMode == App.Vm_DealAndTutorial);
+		boolean deal_enterable = (App.forceShowEtd || App.deal.isSaveable() || App.isLin__Single()) && (App.visualMode == App.Vm_DealAndTutorial);
 
 		T0_9__empt.setVisible( S_vm );
 		T0_9__tbp0.setVisible( T_vm );

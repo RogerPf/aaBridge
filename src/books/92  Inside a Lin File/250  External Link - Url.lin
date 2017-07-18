@@ -10,7 +10,7 @@ at|
 ^b@2^*bExternal Link - Url    -       @^*h^*n|
 at|
 
-External links have the form               ^*b@^*h^*nhwww.anywhere.com/some/place/page@^*b@^*h^*n
+External links have the form               ^*b@^*h^*n www.anywhere.com/some/place/page ^*b@^*h^*n
 
 Note the  ^*b@^*h^*n  which marks the start and the  ^*b@^*n^*n  which marks the end. They have fixed display and hover colors.
 ^b@0
@@ -23,19 +23,19 @@ A normal Non lin url @- ^*hwww.bridgesights.com/hondobridge/^*n
 ^bThe next four links each download a lin file and launch |cp|7|at|^*b another copy of aaBridge ^*n|cp||at| with that lin file showing.
 ^bThe downloaded lin files are saved in the |cp|5|at|^*b autosaves ^*n|cp||at| folder.
 
-Direct Hondo lin @-  ^*hwww.bridgesights.com/hondobridge/downloadlin.php?filename=bergenstartingpoints.lin^*n
+Direct Hondo lin @-  ^*hwww.bridgesights.com/hondobridge/downloadlin.php?filename=bergenstartingpoints.lin ^*n
 Auto Hondo mod @-  ^*hwww.bridgesights.com/hondobridge/hondoviewer/hondoviewer.php?sf=declarerpoints^*n
 Tinyurl to lin @- ^*htinyurl.com/b2v88wn ^*n
 
+^bYou can hide the long url and show a short form.  
 
-^b^*b You can hide the long url and show a short form.  This is an|cp|7|at| aaBridge only|cp||at| extension @-
-^i however the link will still work when shown on other lin file players. ^*n
+^bShort display links have the form(v1)              ^*b@^*h^*n www.anywhere.com/place/page ^*b|cp|red|at|,|cp||at|^*n short_form ^*b@^*n^*n
 
-^bShort display links have the form               ^*b@^*h^*nwww.anywhere.com/some/place/page^*b@^*n^*n short-form ^*b@^*x^*n
+^bShort display links have the form(v2)              ^*b@^*h^*n www.anywhere.com/place/page ^*b@^*n ^*nshort_form ^*b@^*x^*n
 
-^bNote the  ^*b@^*x^*n  which marks the end of the short form   or   use    ^*b@^*w^*n    to suppress the load / of a lin file
+^bNote the  ^*b@^*x^*n  which marks the end of the short form(v2)  or   use    ^*b@^*w^*n    to suppress the load of a lin file
 
-A short display external link  @-    ^*hwww.bridgesights.com/hondobridge/bbohondo/bbohondo.htm^*n hondobridge ^*x
+A short display external link  @-    ^*hwww.bridgesights.com/hondobridge/bbohondo/bbohondo.htm^*n hondobridge (v1) ^*x      ^*hwww.bridgesights.com/hondobridge/bbohondo/bbohondo.htm , hondobridge (v2) ^*n
 
 |cp|5|at|
 ^- Clicks on Exteral links are limited to ^*b one (1)  every  five (5)  seconds ^*n - as they can take quite a time to load. ^-

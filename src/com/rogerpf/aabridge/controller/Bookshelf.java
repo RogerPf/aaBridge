@@ -18,22 +18,22 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLClassLoader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Enumeration;
 import java.util.regex.Pattern;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipFile;
 
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
 import com.rogerpf.aabridge.controller.Book.LinChapter;
-import com.rogerpf.aabridge.igf.MassGi;
 import com.rogerpf.aabridge.model.Cc;
-import com.rogerpf.aabridge.model.Lin;
+import com.version.VersionAndBuilt;
 
 /**   
  */
@@ -51,15 +51,27 @@ public class Bookshelf extends ArrayList<Book> {
 	public String shelfDisplayName;
 	public boolean first;
 	public int sort_order; // 1 - 99
+	private boolean shelfName_is_langSpecific = false;
+	public String idStr;
 
 	/**   
 	 */
-	public Bookshelf(String idStr) {
+	public Bookshelf(String letter) {
 		// ==============================================================================================
-		first = idStr.isEmpty();
-		sort_order = (first) ? 0 : 50;
-		shelfname = "books" + idStr;
-		shelfDisplayName = "Books" + idStr;
+		String firstExtra = "";
+		if (letter.isEmpty()) {
+			first = true;
+			idStr = "";
+			sort_order = 0;
+			firstExtra = "      ";
+		}
+		else {
+			idStr = "-" + letter;
+			sort_order = 50;
+		}
+
+		shelfname = "Books" + idStr;
+		shelfDisplayName = firstExtra + Aaf.menubar_books + idStr;
 
 		fillWithBooks();
 	}
@@ -80,6 +92,48 @@ public class Bookshelf extends ArrayList<Book> {
 			sort_order = 50;
 		if (sort_order > 99)
 			sort_order = 99;
+	}
+
+	private void setMenuDisplayName(String text_v, String cpath, char res_type) {
+		// ==============================================================================================
+		if (first)
+			return;
+
+		String text = text_v;
+
+		// System.out.println("setMenuDisplayName:  " + text_v + "   " + cpath + "   " + res_type);
+
+		int ind = text.lastIndexOf(".bar_title");
+		if (ind > -1)
+			text = text.substring(0, ind); // starts with 00
+
+		// we will normally be passed .jar resource names so strip
+		int sl = text.lastIndexOf('/'); // always "/" never sep
+		if (sl > -1) {
+			text = text.substring(sl + 1);
+		}
+
+		boolean ans[] = new boolean[2];
+		text = Aaf.has_title_iso_lang(text, ans);
+		boolean new_specificLang = ans[0];
+		boolean new_activeLang = ans[1];
+
+		if (new_specificLang == true && new_activeLang == false)
+			return;
+
+		if (new_specificLang == false && this.shelfName_is_langSpecific)
+			return;
+
+		shelfName_is_langSpecific = new_specificLang;
+
+		shelfDisplayName = Aaa.stripFrontDigitsAndClean(text).trim();
+
+		if (shelfDisplayName.isEmpty() && shelfName_is_langSpecific) {
+			String s = Aaf.readfirstlineOfFileOrRes(text_v, cpath, res_type);
+			if (s.length() > 1) {
+				shelfDisplayName = s;
+			}
+		}
 	}
 
 	private final static String sep = File.separator;
@@ -105,13 +159,14 @@ public class Bookshelf extends ArrayList<Book> {
 			menu.setForeground(Cc.GreenStrong);
 
 		for (Book book : this) {
-			if ((book.frontNumber >= 90) && shelfname.contentEquals("books" /* ie shelf 1 */))
+			if (first && (book.frontNumber >= 90))
 				continue; // these are added as a special case
 			if (book.dividerBefore) {
 				menu.addSeparator();
 			}
+			// System.out.println("Path: " + basePath + ",        " + book.displayTitle);
 			JMenuItem menuItem = new JMenuItem(book.displayTitle);
-			menuItem.setActionCommand(basePath + book.displayTitle);
+			menuItem.setActionCommand(book.getMenuKey(basePath));
 			menuItem.addActionListener(aListener);
 			menu.add(menuItem);
 		}
@@ -130,6 +185,8 @@ public class Bookshelf extends ArrayList<Book> {
 
 		boolean devDividerAdded = false;
 
+		JMenuItem menuItem = new JMenuItem();
+
 		for (Book book : firstShelf) {
 			if (book.frontNumber < 90)
 				continue;
@@ -141,20 +198,25 @@ public class Bookshelf extends ArrayList<Book> {
 				menu.addSeparator();
 			}
 
-			JMenuItem menuItem = null;
+			int firstPartLen = Aaf.getMetricsLength(menuItem, Aaf.menuCmn_whatGoesOn) + App.menuTabExtra;
+
 			if (book.frontNumber == 90) {
-				/* Special case because NOW  we do not want the first lin (Welcome)
-				 * but instead we want the  New User  one
+				/* 
+				 * Special case because we do not want the first lin (Welcome)
+				 * which is std but instead we want the  New User  lin (from that book the 90 book)
 				 */
-				menuItem = new JMenuItem("Help                     New User - Readme", KeyEvent.VK_H);
+				menuItem = new JMenuItem(Aaf.spacedOut(menuItem, Aaf.menuCmn_help, firstPartLen) + Aaf.menuCmn_newUser);
 				menuItem.setActionCommand("open_Welcome_New_User");
-				menuItem.addActionListener(aListener);
 			}
-			else {
-				menuItem = new JMenuItem(book.displayTitle);
-				menuItem.setActionCommand(firstShelf.basePath + book.displayTitle);
-				menuItem.addActionListener(aListener);
+			else if (book.frontNumber == 91) {
+				menuItem = new JMenuItem(Aaf.spacedOut(menuItem, Aaf.menuCmn_howTo, firstPartLen) + Aaf.menuCmn_write);
+				menuItem.setActionCommand(book.getMenuKey(firstShelf.basePath));
 			}
+			else if (book.frontNumber == 92) {
+				menuItem = new JMenuItem(Aaf.spacedOut(menuItem, Aaf.menuCmn_whatGoesOn, firstPartLen) + Aaf.menuCmn_inside);
+				menuItem.setActionCommand(book.getMenuKey(firstShelf.basePath));
+			}
+			menuItem.addActionListener(aListener);
 
 			menu.add(menuItem);
 		}
@@ -202,7 +264,7 @@ public class Bookshelf extends ArrayList<Book> {
 	public Book getBookByBasePathAndBookDisplayTitle(String s) {
 		// ==============================================================================================
 		for (Book book : this) {
-			if (s.contentEquals(basePath + book.displayTitle)) {
+			if (s.contentEquals(book.getMenuKey(basePath))) {
 				return book;
 			}
 		}
@@ -263,7 +325,6 @@ public class Bookshelf extends ArrayList<Book> {
 		 */
 		if (App.debug_using_ghost_jar && basePath.startsWith(App.thisAppBaseFolder)) {
 			basePath = App.thisAppBaseJarIncPath;
-			;
 		}
 
 		if ((basePath.toLowerCase().endsWith(".jar") || basePath.toLowerCase().endsWith(".zip"))) {
@@ -276,7 +337,9 @@ public class Bookshelf extends ArrayList<Book> {
 				return;
 			}
 
-			Pattern pattern = Pattern.compile(shelfname + "/[0-9][0-9][ |_].*[.lin|.reldate|.order]");
+			Pattern pattern = Pattern.compile(shelfname + "/[0-9][0-9][ |_].*[.lin|.reldate|.order|.bar_title]");
+
+			// shelfname will mean that incorrectly capitalised Books-<letter> shelves will be skipped
 
 			ArrayList<String> contents = (ArrayList<String>) ResourceList.getResourcesFromJarFile(jarFile, pattern);
 
@@ -305,6 +368,14 @@ public class Bookshelf extends ArrayList<Book> {
 					if (sFile.endsWith(".order") == false)
 						continue;
 					setSortOrder(sFile);
+					break;
+				}
+
+				for (String sFile : contents) {
+//					System.out.println(sFile);
+					if (sFile.endsWith(".bar_title")) {
+						setMenuDisplayName(sFile, sFile, 'r');
+					}
 				}
 
 				for (String s : contents) {
@@ -354,6 +425,13 @@ public class Bookshelf extends ArrayList<Book> {
 			if (baseFolder.exists() == false || baseFolder.isDirectory() == false)
 				return;
 
+			try {
+				String truefilepath = baseFolder.getCanonicalFile().getPath();
+				if (isCapilatisationCorrect(truefilepath, File.separatorChar) == false)
+					return;
+			} catch (Exception e) {
+			}
+
 			boolean divider_next = false;
 
 			Pattern pattern = Pattern.compile("[0-9][0-9][ |_].*");
@@ -364,10 +442,17 @@ public class Bookshelf extends ArrayList<Book> {
 
 				// parse for shelf order (if any)
 				for (File file : folders) {
-					if (file.isDirectory() || file.getName().endsWith(".order") == false)
+					if (file.isDirectory() || !file.getName().endsWith(".order"))
 						continue;
 					setSortOrder(file.getName());
 					break;
+				}
+
+				for (File file : folders) {
+					String sFile = file.getName();
+					if (!file.isDirectory() && sFile.startsWith("00") && sFile.endsWith(".bar_title")) {
+						setMenuDisplayName(sFile, file.getCanonicalPath(), 'f');
+					}
 				}
 
 				boolean process_as_normal = true;
@@ -420,6 +505,20 @@ public class Bookshelf extends ArrayList<Book> {
 		@SuppressWarnings("unused")
 		int z = 0;
 
+	}
+
+	private boolean isCapilatisationCorrect(String path, char sep) {
+		// ==============================================================================================
+		String folderName = path.substring(path.lastIndexOf(sep) + 1);
+		if (folderName.contentEquals("Books"))
+			return true;
+
+		if ((folderName.length() != 7) || (folderName.startsWith("Books-") == false))
+			return false;
+
+		char cLast = folderName.charAt(6);
+
+		return ('A' <= cLast) && (cLast <= 'Z');
 	}
 
 	public static String getBasePathOfJarOrEquivalent() { // just used by deep finesse integreration
@@ -536,204 +635,149 @@ public class Bookshelf extends ArrayList<Book> {
 		return null;
 	}
 
-	/**   
-	 */
-	public static boolean readLinFileIfExists(String pathWithSep, String dealName) {
-		// ==============================================================================================
-
-		if (pathWithSep == null || pathWithSep.contentEquals("")) {
-			pathWithSep = App.realSavesPath;
-		}
-
-		File fileIn = new File(pathWithSep + dealName);
-		if (!fileIn.exists()) {
-			return false;
-		}
-
-		Lin lin = null;
-
-		FileInputStream fis = null;
-
-		try {
-			fis = new FileInputStream(fileIn);
-
-			boolean isLin = dealName.toLowerCase().endsWith(App.dotLinExt);
-
-			lin = new Lin(fis, pathWithSep, dealName, isLin);
-
-			fis.close();
-
-		} catch (IOException i) {
-			System.out.println("lin file rejected, bad format? - but lets try to process it anyway");
-			// i.printStackTrace();
-			try {
-				fis.close();
-			} catch (IOException e) {
-				System.out.println("lin file fis - failed to close");
-				e.printStackTrace();
-			}
-			// return false;
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-		if (lin == null) {
-			return false;
-		}
-
-		lin.filename = fileIn.getName();
-
-		App.mg = new MassGi(lin);
-
-		App.switchToNewMassGi("");
-
-		return true;
-	}
-
-	/**   
-	 */
-	public void copy_file_to_desktop_and_autosaves_folder(int frontNumb, String doc_name) {
-		// ==============================================================================================
-
-		// we look at the first book and chapter to see what file type we have jar or dev source
-
-		Book b = getBookByFrontNumb(frontNumb);
-		LinChapter ch = b.get(0);
-
-		// String pathWithSep = b.
-
-		if (ch.type == 'r') {
-			copyResourseToDesktopAndAutosavesFolder(b.bookJarName, b.bookJarExtra, doc_name);
-		}
-
-		if (ch.type == 'f') {
-			copyFileToDesktopAndAutosavesFolder(b.bookFolderName, b.bookJarExtra, doc_name);
-		}
-	}
-
-	/**   
-	 */
-	public static void copyResourseToDesktopAndAutosavesFolder(String jarName, String extra, String resName) {
-		// ==============================================================================================
-
-		InputStream is = null;
-
-		URL[] urls = null;
-		try {
-
-			// System.out.println("jarname " + jarName);
-
-			urls = new URL[] { new File(jarName).toURI().toURL() };
-		} catch (MalformedURLException e) {
-			e.printStackTrace();
-		}
-
-		/*  The following line of code can generate the warning
-		 *
-		 *            Resource leak: 'classLoader' is never closed
-		 *
-		 *  As this code has to be Java 6 compatible I have no solution to the issue,
-		 *  as Java 6 has no 'close method' for this.
-		 *
-		 *  However after some thought I now take the view that the 'lost' resource per user loaded
-		 *  lin file is trivial and will be released when the user closes the aaBridge app and
-		 *  with it the JVM.
-		 */
-		// @SuppressWarnings("resource")
-		URLClassLoader classLoader = new URLClassLoader(urls);
-
-		String[] dest_folders = { App.autoSavesPath, App.desktopFolderPath };
-
-		try {
-
-			for (String dest_folder : dest_folders) {
-
-				is = classLoader.getResourceAsStream(extra + "/" + resName);
-				File fileOut = new File(dest_folder + resName);
-
-				try {
-					OutputStream out = new FileOutputStream(fileOut);
-
-					// Transfer bytes from in to out
-					byte[] buf = new byte[1024];
-					int len;
-					while ((len = is.read(buf)) > 0) {
-						out.write(buf, 0, len);
-					}
-					out.close();
-				} catch (IOException e) {
-				}
-				is.close();
-			}
-
-		} catch (IOException i) {
-			System.out.println("can't find - " + resName);
-			try {
-				is.close();
-			} catch (IOException e) {
-			}
-			// return false;
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-	}
+//	/**   
+//	 */
+//	public void copy_file_to_desktop_and_autosaves_folder(int frontNumb, String doc_name) {
+//		// ==============================================================================================
+//
+//		// we look at the first book and chapter to see what file type we have jar or dev source
+//
+//		Book b = getBookByFrontNumb(frontNumb);
+//		LinChapter ch = b.get(0);
+//
+//		// String pathWithSep = b.
+//
+//		if (ch.type == 'r') {
+//			copyResourseToDesktopAndAutosavesFolder(b.bookJarName, b.bookJarExtra, doc_name);
+//		}
+//
+//		if (ch.type == 'f') {
+//			copyFileToDesktopAndAutosavesFolder(b.bookFolderName, b.bookJarExtra, doc_name);
+//		}
+//	}
+//
+//	/**   
+//	 */
+//	public static void copyResourseToDesktopAndAutosavesFolder(String jarName, String extra, String resName) {
+//		// ==============================================================================================
+//
+//		InputStream is = null;
+//
+//		URL[] urls = null;
+//		try {
+//
+//			// System.out.println("jarname " + jarName);
+//
+//			urls = new URL[] { new File(jarName).toURI().toURL() };
+//		} catch (Exception e) {
+//		}
+//
+//		/*  The following line of code can generate the warning
+//		 *
+//		 *            Resource leak: 'classLoader' is never closed
+//		 *
+//		 *  As this code has to be Java 6 compatible I have no solution to the issue,
+//		 *  as Java 6 has no 'close method' for this.
+//		 *
+//		 *  However after some thought I now take the view that the 'lost' resource per user loaded
+//		 *  lin file is trivial and will be released when the user closes the aaBridge app and
+//		 *  with it the JVM.
+//		 */
+//		// @SuppressWarnings("resource")
+//		URLClassLoader classLoader = new URLClassLoader(urls);
+//
+//		String[] dest_folders = { App.autoSavesPath, App.desktopFolderPath };
+//
+//		try {
+//
+//			for (String dest_folder : dest_folders) {
+//
+//				is = classLoader.getResourceAsStream(extra + "/" + resName);
+//				File fileOut = new File(dest_folder + resName);
+//
+//				try {
+//					OutputStream out = new FileOutputStream(fileOut);
+//
+//					// Transfer bytes from in to out
+//					byte[] buf = new byte[8 * 1024];
+//					int len;
+//					while ((len = is.read(buf)) > 0) {
+//						out.write(buf, 0, len);
+//					}
+//					out.close();
+//				} catch (IOException e) {
+//				}
+//				is.close();
+//			}
+//
+//		} catch (IOException i) {
+//			System.out.println("can't find - " + resName);
+//			try {
+//				is.close();
+//			} catch (IOException e) {
+//			}
+//			// return false;
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//
+//	}
+//
+//	/**   
+//	 */
+//	public static void copyFileToDesktopAndAutosavesFolder(String pathWithSep, String extra, String docName) {
+//		// ==============================================================================================
+//
+//		String filename = pathWithSep + docName;
+//		File fileIn = new File(filename);
+//		if (!fileIn.exists()) {
+//			return;
+//		}
+//
+//		FileInputStream is = null;
+//
+//		String[] dest_folders = { App.autoSavesPath, App.desktopFolderPath };
+//
+//		try {
+//
+//			for (String dest_folder : dest_folders) {
+//
+//				is = new FileInputStream(filename);
+//				File fileOut = new File(dest_folder + docName);
+//
+//				try {
+//					OutputStream out = new FileOutputStream(fileOut);
+//
+//					// Transfer bytes from in to out
+//					byte[] buf = new byte[8 * 1024];
+//					int len;
+//					while ((len = is.read(buf)) > 0) {
+//						out.write(buf, 0, len);
+//					}
+//					out.close();
+//				} catch (IOException e) {
+//				}
+//
+//				is.close();
+//			}
+//
+//		} catch (IOException i) {
+//			System.out.println("can't find - " + filename);
+//			// i.printStackTrace();
+//			try {
+//				is.close();
+//			} catch (IOException e) {
+//			}
+//			// return false;
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//
+//	}
 
 	/**   
 	 */
-	public static void copyFileToDesktopAndAutosavesFolder(String pathWithSep, String extra, String docName) {
-		// ==============================================================================================
-
-		String filename = pathWithSep + docName;
-		File fileIn = new File(filename);
-		if (!fileIn.exists()) {
-			return;
-		}
-
-		FileInputStream is = null;
-
-		String[] dest_folders = { App.autoSavesPath, App.desktopFolderPath };
-
-		try {
-
-			for (String dest_folder : dest_folders) {
-
-				is = new FileInputStream(filename);
-				File fileOut = new File(dest_folder + docName);
-
-				try {
-					OutputStream out = new FileOutputStream(fileOut);
-
-					// Transfer bytes from in to out
-					byte[] buf = new byte[1024];
-					int len;
-					while ((len = is.read(buf)) > 0) {
-						out.write(buf, 0, len);
-					}
-					out.close();
-				} catch (IOException e) {
-				}
-
-				is.close();
-			}
-
-		} catch (IOException i) {
-			System.out.println("can't find - " + filename);
-			// i.printStackTrace();
-			try {
-				is.close();
-			} catch (IOException e) {
-			}
-			// return false;
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-	}
-
-	/**   
-	 */
-	public static void copy_folder_to_desktop(String internal_folder_name, String new_folder_name) {
+	public static void copy_folder_to_desktop(String internal_folder_name, String new_folder_name, boolean create_marker_file) {
 		// ==============================================================================================
 
 		// we look at the first book and chapter to see what file type we have jar or dev source
@@ -741,10 +785,19 @@ public class Bookshelf extends ArrayList<Book> {
 		// String pathWithSep = b.
 
 		if (App.runningInJar) {
-			copyResourseFolderToDesktop(internal_folder_name, new_folder_name);
+			copyResourseFolderToDesktop_v2(internal_folder_name, new_folder_name);
 		}
 		else {
 			copyRealFolderToDesktop(internal_folder_name, new_folder_name);
+		}
+
+		if (create_marker_file) {
+			String marker = "_from_aaBridge_" + VersionAndBuilt.verAndBuildNo();
+			File markerFile = new File(App.desktopFolderPath + File.separator + new_folder_name + File.separator + marker);
+			try {
+				markerFile.createNewFile();
+			} catch (Exception e) {
+			}
 		}
 
 		@SuppressWarnings("unused")
@@ -754,82 +807,59 @@ public class Bookshelf extends ArrayList<Book> {
 
 	/**   
 	 */
-	public static void copyResourseFolderToDesktop(String internal_folder_name, String new_folder_name) {
+	public static void copyResourseFolderToDesktop_v2(String internal_folder_name, String new_folder_name) {
 		// ==============================================================================================
-
 		File jarFile = new File(App.thisAppBaseJarIncPath);
 
 		int removeLen = internal_folder_name.length() + 1;
 
-		Pattern pattern = Pattern.compile(internal_folder_name + "/.*");
-
-		ArrayList<String> ret = (ArrayList<String>) ResourceList.getResourcesFromJarFile(jarFile, pattern);
-
 		File target_folder = new File(App.desktopFolderPath + File.separator + new_folder_name);
 
-		target_folder.mkdir();
-
-		URL[] urls = null;
+		ZipFile zfile;
 		try {
-			urls = new URL[] { jarFile.toURI().toURL() };
-		} catch (MalformedURLException e) {
-			e.printStackTrace();
-		}
+			zfile = new ZipFile(jarFile);
 
-		/*  The following line of code can generate the warning
-		 *
-		 *            Resource leak: 'classLoader' is never closed
-		 *
-		 *  As this code has to be Java 6 compatible I have no solution to the issue,
-		 *  as Java 6 has no 'close method' for this.
-		 *
-		 *  However after some thought I now take the view that the 'lost' resource per user loaded
-		 *  lin file is trivial and will be released when the user closes the aaBridge app and
-		 *  with it the JVM.
-		 */
-		@SuppressWarnings("resource")
-		URLClassLoader classLoader = new URLClassLoader(urls);
+			Enumeration<? extends ZipEntry> entries = zfile.entries();
 
-		for (String fullRef : ret) {
+			while (entries.hasMoreElements()) {
+				ZipEntry entry = entries.nextElement();
+				long time = entry.getTime();
+				String ename = entry.getName();
+				if (ename.startsWith(internal_folder_name) == false)
+					continue;
+				if (ename.length() <= removeLen)
+					continue;
 
-			if (fullRef.length() <= removeLen)
-				continue;
+				ename = ename.substring(removeLen);
+				// System.out.println("v2  " + ename + "  time " + time);
 
-			String sFile = fullRef.substring(removeLen);
-			// System.out.println(sFile);
+				File fileOut = new File(target_folder, ename);
+				if (entry.isDirectory()) {
+					fileOut.mkdirs();
+				}
+				else {
+					fileOut.getParentFile().mkdirs();
 
-			InputStream is = null;
+					try {
+						InputStream is = zfile.getInputStream(entry);
+						OutputStream out = new FileOutputStream(fileOut);
 
-			try {
-
-				is = classLoader.getResourceAsStream(fullRef);
-
-				File fileOut = new File(target_folder + File.separator + sFile);
-
-				try {
-					OutputStream out = new FileOutputStream(fileOut);
-
-					// Transfer bytes from in to out
-					byte[] buf = new byte[1024];
-					int len;
-					while ((len = is.read(buf)) > 0) {
-						out.write(buf, 0, len);
+						// Transfer bytes from in to out
+						byte[] buf = new byte[8 * 1024];
+						int len;
+						while ((len = is.read(buf)) > 0) {
+							out.write(buf, 0, len);
+						}
+						is.close();
+						out.close();
+					} catch (IOException e) {
 					}
-					out.close();
-				} catch (IOException e) {
-				}
-				is.close();
 
-			} catch (IOException i) {
-				System.out.println("can't find - " + internal_folder_name);
-				try {
-					is.close();
-				} catch (IOException e) {
+					fileOut.setLastModified(time);
 				}
-				// return false;
-			} catch (Exception e) {
-				e.printStackTrace();
 			}
+		} catch (Exception e1) {
+			e1.printStackTrace();
 		}
 	}
 
@@ -852,6 +882,8 @@ public class Bookshelf extends ArrayList<Book> {
 
 			for (File fileIn : files) {
 
+				long time = fileIn.lastModified();
+
 				String target = target_folder + File.separator + fileIn.getName();
 
 				// System.out.println(target);
@@ -863,13 +895,16 @@ public class Bookshelf extends ArrayList<Book> {
 					OutputStream out = new FileOutputStream(fileOut);
 
 					// Transfer bytes from in to out
-					byte[] buf = new byte[1024];
+					byte[] buf = new byte[8 * 1024];
 					int len;
 					while ((len = is.read(buf)) > 0) {
 						out.write(buf, 0, len);
 					}
 					out.close();
 					is.close();
+					if (time != 0) {
+						fileOut.setLastModified(time);
+					}
 				} catch (IOException e) {
 				}
 			}

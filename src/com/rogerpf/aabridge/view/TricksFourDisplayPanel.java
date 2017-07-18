@@ -27,6 +27,7 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Card;
 import com.rogerpf.aabridge.model.Cc;
@@ -100,9 +101,16 @@ public class TricksFourDisplayPanel extends JPanel {
 				if (showCompletedTrick /* && App.deal.haveAllHandsPlayedTheSameNumberOfCards() */) {
 
 					// End of trick - click to continue
-					if (App.isPauseAtEotClickWanted() && App.isPauseAtEotClickWanted() && App.isAutoPlay(hand.compass)) {
+					if (App.isPauseAtEotClickWanted() && App.isAutoPlay(hand.compass)) {
 						// go around again - we are waiting for showCompletedTrick to be cleared by mouse click
 						App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
+						return;
+					}
+
+					if (App.youAutoplayFAST && App.youAutoplayAlways && !App.youAutoplayPause) {
+						endOfTrickDownCounter = 0;
+						showCompletedTrick = false;
+						App.gbp.c1_1__tfdp.normalTrickDisplayTimer_FAST_startIfNeeded();
 						return;
 					}
 
@@ -110,6 +118,7 @@ public class TricksFourDisplayPanel extends JPanel {
 						if (endOfTrickDownCounter == 0) {
 							endOfTrickDownCounter = 1 + App.eotExtendedDisplay;
 						}
+
 						if (--endOfTrickDownCounter > 0) {
 							App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
 							return;
@@ -179,6 +188,20 @@ public class TricksFourDisplayPanel extends JPanel {
 	 */
 	public void normalTrickDisplayTimer_startIfNeeded() {
 		if (App.deal.isPlaying()) {
+			normalTrickDisplayTimer.setInitialDelay(App.playPluseTimerMs);
+			normalTrickDisplayTimer.setDelay(App.playPluseTimerMs);
+			normalTrickDisplayTimer.start();
+			showThinBox = (App.isMode(Aaa.EDIT_PLAY)); // was false;
+		}
+	}
+
+	/**
+	 */
+	public void normalTrickDisplayTimer_FAST_startIfNeeded() {
+		if (App.deal.isPlaying()) {
+			normalTrickDisplayTimer.stop();
+			normalTrickDisplayTimer.setInitialDelay(0);
+			normalTrickDisplayTimer.setDelay(0);
 			normalTrickDisplayTimer.start();
 			showThinBox = (App.isMode(Aaa.EDIT_PLAY)); // was false;
 		}
@@ -253,6 +276,10 @@ public class TricksFourDisplayPanel extends JPanel {
 		}
 	}
 
+	public void toggleShowCompletedTrick_passive(boolean state) {
+		showCompletedTrick = state;
+	}
+
 	/**   
 	 */
 	public void setShowCompletedTrick() {
@@ -287,24 +314,21 @@ public class TricksFourDisplayPanel extends JPanel {
 
 			float fontSize = activityHeight * 0.37f;
 
-			String text = "Play Bridge";
 			g2.setColor(Cc.BlueStrong);
 			// fill the lozenge ----------------------------------------------
 			rr.setRoundRect(marginLeft, marginTop, activityWidth, activityHeight, curve, curve);
 			g2.draw(rr);
 			g2.fill(rr);
-			g2.setFont(BridgeFonts.bridgeBoldFont.deriveFont(fontSize));
-			g2.setColor(Color.white);
 
-			boolean showInstructions = App.isVmode_InsideADeal();
-			Aaa.drawCenteredString(g2, text, marginLeft, marginTop, activityWidth, activityHeight * (showInstructions ? 0.7f : 0.95f));
+			g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.80f));
+			g2.setColor(Color.WHITE);
 
-			g2.setFont(BridgeFonts.bridgeBoldFont.deriveFont(activityHeight * 0.16f));
+			// boolean showInstructions = App.isVmode_InsideADeal();
+			Aaa.drawCenteredString(g2, Aaf.playBridge_click, marginLeft, marginTop, activityWidth, activityHeight * 0.5f);
 
-			if (showInstructions) {
-				text = "Click  - New Board -  look left";
-				Aaa.drawCenteredString(g2, text, marginLeft, marginTop + activityHeight * 0.5f, activityWidth, activityHeight * 0.6f);
-			}
+			g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize));
+
+			Aaa.drawCenteredString(g2, Aaf.playBridge_newBoard, marginLeft, marginTop + activityHeight * 0.5f, activityWidth, activityHeight * 0.4f);
 
 			return;
 		}
@@ -330,8 +354,9 @@ public class TricksFourDisplayPanel extends JPanel {
 		float faceFontSize = cardHeight * 0.78f;
 		float symbolFontSize = cardHeight * 0.50f;
 
-		Font faceFont = BridgeFonts.faceAndSymbFont.deriveFont(faceFontSize);
-		Font symbolFont = BridgeFonts.faceAndSymbFont.deriveFont(symbolFontSize);
+		Font faceFont = BridgeFonts.faceAndSymbolFont.deriveFont(faceFontSize);
+		Font faceInternationalFont = BridgeFonts.internatBoldFont.deriveFont(faceFontSize * 0.95f);
+		Font symbolFont = BridgeFonts.faceAndSymbolFont.deriveFont(symbolFontSize);
 
 		// ------------------------------------------------------------------
 
@@ -455,8 +480,13 @@ public class TricksFourDisplayPanel extends JPanel {
 			}
 			// @formatter:on
 
-			Rank rank = suggestions[hand.compass.v].rank;
-			Suit suit = suggestions[hand.compass.v].suit;
+			Rank rank = Rank.Invalid;
+			Suit suit = Suit.Invalid;
+
+			if (App.isMode(Aaa.NORMAL_ACTIVE) || App.isMode(Aaa.EDIT_PLAY)) {
+				rank = suggestions[hand.compass.v].rank;
+				suit = suggestions[hand.compass.v].suit;
+			}
 
 			if (card != null) {
 				suggestions[hand.compass.v].rank = Rank.Invalid;
@@ -488,12 +518,12 @@ public class TricksFourDisplayPanel extends JPanel {
 			rr.setRoundRect(left, top, cardWidth, cardHeight, curve, curve);
 
 			if (card != null) {
-				g2.setPaint(Color.white);
+				g2.setPaint(Color.WHITE);
 				g2.fill(rr);
 			}
 
 			float stkSize = (card == null) ? blackLineWidth : (colorLineWidth * ((hand == trickWinner) ? 2.5f : 1));
-			if (App.outlineCardEdge) {
+			if (App.outlineCardEdge && card != null) {
 				RoundRectangle2D.Float rr2 = (Float) rr.clone();
 				g2.setColor(Aaa.handBkColorStd);
 				g2.setStroke(new BasicStroke(stkSize + colorLineWidth * 0.80f));
@@ -517,14 +547,15 @@ public class TricksFourDisplayPanel extends JPanel {
 			if (suit != Suit.Invalid && Suit.Clubs.v <= suit.v && suit.v <= Suit.Spades.v) {
 				g2.setColor((card == null) ? cardColor : suit.color(Cc.Ce.Weak));
 				g2.setFont(symbolFont);
-				g2.drawString(suit.toStrNu(), symbolLeft, symbolBottom);
+				g2.drawString(suit.toStrLower(), symbolLeft, symbolBottom);
 			}
 
 			// Rank
 			if (Rank.Two.v <= rank.v && rank.v <= Rank.Ace.v) {
 				g2.setColor((card == null) ? cardColor : suit.colorCd(Cc.Ce.Strong));
-				g2.setFont(faceFont);
-				g2.drawString(rank.toStr(), faceLeft, faceBottom);
+				char c = Rank.rankToLanguage(rank.toChar());
+				g2.setFont(Aaa.isLatinFaceCard(c) ? faceFont : faceInternationalFont);
+				g2.drawString(c + "", faceLeft, faceBottom);
 			}
 		}
 	}

@@ -22,6 +22,7 @@ import javax.swing.border.Border;
 import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Cc;
 import com.rogerpf.aabridge.model.Dir;
@@ -75,7 +76,7 @@ class AaRopPrefs3_DFC extends ClickPanel implements ItemListener, ActionListener
 
 	QCheckBox dfcWordsForCount;
 	QCheckBox dfcHyphenForVoids;
-	QCheckBox dfcCardsAsBlobs;
+	QCheckBox dfcAnonCards;
 
 	QButton applyDefaults;
 
@@ -89,73 +90,75 @@ class AaRopPrefs3_DFC extends ClickPanel implements ItemListener, ActionListener
 
 		// @formatter:off
 
-		add(label  = new QLabel("     DFC                      -  Distribution Flash Cards  "), "gapy 5");
+		add(label = new QLabel(Aaf.menuOpt_dfc_D), "gapx 15, gapy 5");
 		label.setForeground(Aaa.optionsTitleGreen);
 
-		add(videoDFC = new QButton(App.frame, "vid"), "gapy5, gapx 4, split 2, flowx");
+		add(videoDFC = new QButton(App.frame, Aaf.gT("dfcTab.vid")), "gapy5, gapx 4, split 2, flowx");
 		    videoDFC.setActionCommand("playVideo_distrFlashCards");
 			if (App.onMac == false)
 		        videoDFC.setBorder(BorderFactory.createEmptyBorder(2, 1, 0, 1));
-		    videoDFC.setToolTipText("Play the YouTube video about  Distribution Flash Cards  ");
-		add(showDFC = new QButton(App.frame, "Show DFC"), "gapx6");
+		    videoDFC.setToolTipText(Aaf.gT("dfcTab.vid_TT"));
+		    
+		add(showDFC = new QButton(App.frame, Aaf.gT("dfcTab.showDfc")), "gapx6");
 		    showDFC.setActionCommand("openPage_distrFlashCards");
 			if (App.onMac == false)
 		        showDFC.setBorder(BorderFactory.createEmptyBorder(2, 4, 0, 4));
-		    showDFC.setToolTipText("Show the Distribution Flash Card  page  ");	
 
-		add(label  = new QLabel("Training ONLY  "), "gapy 12");
+		add(label  = new QLabel(Aaf.gT("dfcTab.trainOnly")), "gapy 12");
 		    label.setForeground(Aaa.optionsTitleGreen);
 		
-		add(label  = new QLabel("Suit Length Order  "), "gapx 3, gapy 2");
+		add(label  = new QLabel(Aaf.gT("dfcTab.slo")), "gapx 3, gapy 2");
 		    label.setForeground(Aaa.optionsTitleGreen);
-		add(order0  = new QRadioButton(this, orderGroup,  bdr1, App.dfcTrainingSuitSort == 0,  "order 0",  "Spades the longest suit, Hearts next longest ...  "), "gapx 9");
-		add(order1  = new QRadioButton(this, orderGroup,  bdr1, App.dfcTrainingSuitSort == 1,  "order 1",  "Clubs the longest suit, Dimonds next longest ...  "), "gapx 9");
-		add(order2  = new QRadioButton(this, orderGroup,  bdr1, App.dfcTrainingSuitSort == 2,  "order 2",  "Random"), "gapx 9");
+		add(order0  = new QRadioButton(this, orderGroup,  bdr1, App.dfcTrainingSuitSort == 0,  "order 0",  Aaf.gT("dfcTab.spadesLong")), "gapx 9");
+		add(order1  = new QRadioButton(this, orderGroup,  bdr1, App.dfcTrainingSuitSort == 1,  "order 1",  Aaf.gT("dfcTab.clubsLong")), "gapx 9");
+		add(order2  = new QRadioButton(this, orderGroup,  bdr1, App.dfcTrainingSuitSort == 2,  "order 2",  Aaf.gT("dfcTab.random")), "gapx 9");
 
-		add(label  = new QLabel("Auto Next  "), "gapx3, gapy 6");
+		add(label  = new QLabel(Aaf.gT("dfcTab.autoNext")), "gapx3, gapy 6");
 		    label.setForeground(Aaa.optionsTitleGreen);
-		add(auto0  = new QRadioButton(this, autoGroup,  bdr1, App.dfcAutoNext == 0,  "auto 0",  "Fast"), "gapx 9, split2, flowx");
-		add(label  = new QLabel(" < try It  "));
+		    
+		add(auto0  = new QRadioButton(this, autoGroup,  bdr1, App.dfcAutoNext == 0,  "auto 0",  Aaf.gT("dfcTab.fast")), "gapx 9, split2, flowx");
+		add(label  = new QLabel(Aaf.gT("dfcTab.tryIt")));
 		    label.setForeground(Cc.RedStrong);
-		add(auto1  = new QRadioButton(this, autoGroup,  bdr1, App.dfcAutoNext == 1,  "auto 1",  "Medium"), "gapx 9");
-		add(auto2  = new QRadioButton(this, autoGroup,  bdr1, App.dfcAutoNext == 2,  "auto 2",  "Slow"), "gapx 9");
-		add(auto3  = new QRadioButton(this, autoGroup,  bdr1, App.dfcAutoNext == 3,  "auto 3",  "No Auto Next"), "gapx 9");
-		
-		add(label  = new QLabel("Exam ONLY  "), "gapy 15");
-		    label.setForeground(Aaa.optionsTitleGreen);
-		add(youWest  = new QRadioButton(this, youGroup,  bdr1, App.dfcExamYou == Dir.West,  "W",  "W"), "gapx 9, split 3, flowx");
-		add(youEast  = new QRadioButton(this, youGroup,  bdr1, App.dfcExamYou == Dir.East,  "E",  "E"), "gapx 6");
-		add(label    = new QLabel("You  -  the Seat you want to sit in"), "gapx8");
-		    label.setForeground(Aaa.optionsTitleGreen);
-		add(youDecl  = new QRadioButton(this, youGroup,  bdr1, App.dfcExamYou == Dir.South,  "Decl",  "Decl"), "gapx 28");
-		
-		add(label  = new QLabel("Bottom Zone - Who is in the 'South seat' zone  "), "gapx3, gapy 10");
-		    label.setForeground(Aaa.optionsTitleGreen);
-		add(bottomYou   = new QRadioButton(this, bottomGroup,  bdr1,  App.dfcExamBottomYou,  "You",  "You"), "gapx 9, split 2, flowx");
-		add(bottomDecl  = new QRadioButton(this, bottomGroup,  bdr1, !App.dfcExamBottomYou,  "Decl",  "Decl"), "gapx 6");
+		    
+		add(auto1  = new QRadioButton(this, autoGroup,  bdr1, App.dfcAutoNext == 1,  "auto 1",  Aaf.gT("dfcTab.medium")), "gapx 9");
+		add(auto2  = new QRadioButton(this, autoGroup,  bdr1, App.dfcAutoNext == 2,  "auto 2",  Aaf.gT("dfcTab.slow")), "gapx 9");
+		add(auto3  = new QRadioButton(this, autoGroup,  bdr1, App.dfcAutoNext == 3,  "auto 3",  Aaf.gT("dfcTab.noAutoNext")), "gapx 9");
 
-		add(label  = new QLabel("Difficulity  "), "gapx3, gapy 10");
+		add(label  = new QLabel(Aaf.gT("dfcTab.examOnly")), "gapy 15");
+		    label.setForeground(Aaa.optionsTitleGreen);
+		add(youWest  = new QRadioButton(this, youGroup,  bdr1, App.dfcExamYou == Dir.West,  "W",  Dir.getLangDirChar(Dir.West) + ""), "gapx 9, split 3, flowx");
+		add(youEast  = new QRadioButton(this, youGroup,  bdr1, App.dfcExamYou == Dir.East,  "E",  Dir.getLangDirChar(Dir.East) + ""), "gapx 6");
+		add(label    = new QLabel(Aaf.gT("dfcTab.youSeat")), "gapx8");
+		    label.setForeground(Aaa.optionsTitleGreen);
+		add(youDecl  = new QRadioButton(this, youGroup,  bdr1, App.dfcExamYou == Dir.South,  "Decl",  Aaf.gT("dfcTab.decl")), "gapx 28");
+		
+		add(label  = new QLabel(Aaf.gT("dfcTab.botZone")), "gapx3, gapy 10");
+		    label.setForeground(Aaa.optionsTitleGreen);
+		add(bottomYou   = new QRadioButton(this, bottomGroup,  bdr1,  App.dfcExamBottomYou,  "You",  Aaf.gT("dfcTab.you")), "gapx 9, split 2, flowx");
+		add(bottomDecl  = new QRadioButton(this, bottomGroup,  bdr1, !App.dfcExamBottomYou,  "Decl",  Aaf.gT("dfcTab.decl")), "gapx 6");
+
+		add(label  = new QLabel(Aaf.gT("dfcTab.diff")), "gapx3, gapy 10");
 		    label.setForeground(Aaa.optionsTitleGreen); 
-		add(diff0  = new QRadioButton(this, diffGroup,  bdr1, App.dfcExamDifficulity == 0,  "diff 0",  "E"),   "gapx 9, split4, flowx");
-		add(diff1  = new QRadioButton(this, diffGroup,  bdr1, App.dfcExamDifficulity == 1,  "diff 1",  "M"), "gapx 9");
-		add(diff2  = new QRadioButton(this, diffGroup,  bdr1, App.dfcExamDifficulity == 2,  "diff 2",  "H"),   "gapx 9");
-		add(diff3  = new QRadioButton(this, diffGroup,  bdr1, App.dfcExamDifficulity == 3,  "diff 3",  "Hardest  -  Impossible ?  "),     "gapx 9");
+		add(diff0  = new QRadioButton(this, diffGroup,  bdr1, App.dfcExamDifficulity == 0,  "diff 0",  ""), "gapx 9, split4, flowx");
+		add(diff1  = new QRadioButton(this, diffGroup,  bdr1, App.dfcExamDifficulity == 1,  "diff 1",  ""), "gapx 9");
+		add(diff2  = new QRadioButton(this, diffGroup,  bdr1, App.dfcExamDifficulity == 2,  "diff 2",  ""), "gapx 9");
+		add(diff3  = new QRadioButton(this, diffGroup,  bdr1, App.dfcExamDifficulity == 3,  "diff 3",  ""), "gapx 9");
+		add(label  = new QLabel(Aaf.gT("dfcTab.okHard")), "gapx 8");
 		
-		add(label  = new QLabel("Both Exam and Training  "), "gapy 15");
+		add(label  = new QLabel(Aaf.gT("dfcTab.both")), "gapy 15");
 		    label.setForeground(Aaa.optionsTitleGreen);
 
-		add(dfcHyphenForVoids = new QCheckBox(this, App.dfcHyphenForVoids,    "Use hyphen for voids instead of a feint Zero  "), "gapx 9, gapy 2");
+		add(dfcHyphenForVoids = new QCheckBox(this, App.dfcHyphenForVoids,    Aaf.gT("dfcTab.hyphen")), "gapx 9, gapy 2");
 		    dfcHyphenForVoids.setBorder(bdr1);
-		add(dfcCardsAsBlobs   = new QCheckBox(this, App.dfcCardsAsBlobs,      "Anon cards - Show all the cards as the greek letter 'alpha'  "), "gapx 9, gapy 2");
-		    dfcCardsAsBlobs.setBorder(bdr1);
+		add(dfcAnonCards   = new QCheckBox(this, App.dfcAnonCards,      Aaf.gT("dfcTab.anonCards")), "gapx 9, gapy 2");
+		    dfcAnonCards.setBorder(bdr1);
 		    
 //		add(label  = new QLabel("Exam ONLY  "), "gapy 15");
 //		    label.setForeground(Aaa.optionsTitleGreen);
-		add(dfcWordsForCount  = new QCheckBox(this, App.dfcWordsForCount,     "Use words when showing the number of cards in a suit     EXAM only  "), "gapx 9, gapy 6");
+		add(dfcWordsForCount  = new QCheckBox(this, App.dfcWordsForCount,     Aaf.gT("dfcTab.words")), "gapx 9, gapy 6");
 	        dfcWordsForCount.setBorder(bdr1);
 		
-		add(applyDefaults = new QButton(this, "Apply Defaults"), "gapy20, gapx4");
-		    applyDefaults.setToolTipText("Reset all  Seat Options  to default values  ");
+		add(applyDefaults = new QButton(this, Aaf.gT("cmnTab.applyDef")), "gapy20, gapx4");
 			if (App.onMac == false)
 		        applyDefaults.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
 
@@ -172,7 +175,8 @@ class AaRopPrefs3_DFC extends ClickPanel implements ItemListener, ActionListener
 		Object source = e.getSource();
 		if (source == applyDefaults) {
 
-			App.frame.rop.p2_SeatChoice.applyDefaultsAction();
+			App.frame.rop.p1_AutoPlay.applyDefaults();
+			App.frame.rop.p2_SeatChoice.applyDefaults();
 
 			App.dfcTrainingSuitSort = 0;
 			order0.setSelected(true);
@@ -206,8 +210,8 @@ class AaRopPrefs3_DFC extends ClickPanel implements ItemListener, ActionListener
 			App.dfcHyphenForVoids = true;
 			dfcHyphenForVoids.setSelected(true);
 
-			App.dfcCardsAsBlobs = false;
-			dfcCardsAsBlobs.setSelected(false);
+			App.dfcAnonCards = false;
+			dfcAnonCards.setSelected(false);
 
 			App.savePreferences();
 
@@ -229,8 +233,8 @@ class AaRopPrefs3_DFC extends ClickPanel implements ItemListener, ActionListener
 		else if (source == dfcHyphenForVoids) {
 			App.dfcHyphenForVoids = b;
 		}
-		else if (source == dfcCardsAsBlobs) {
-			App.dfcCardsAsBlobs = b;
+		else if (source == dfcAnonCards) {
+			App.dfcAnonCards = b;
 		}
 
 		// we are only interested in the selected values for the buttons

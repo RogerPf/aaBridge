@@ -214,7 +214,6 @@ public final class TestSystemRunner {
 //			}
 
 		} catch (IOException e) {
-			// Sigh - what do they expect to be done !
 		}
 
 		App.deal = new Deal(Deal.makeDoneHand, Dir.South);
@@ -237,14 +236,14 @@ public final class TestSystemRunner {
 			return;
 		}
 
-		int ONE_TEST_ONLY_ID = 1001;
+		int ONE_TEST_ONLY_ID = 6510;
 
-		Boolean oneTestOnly = false;
+		Boolean oneTestOnly;
+		oneTestOnly = true;
+		oneTestOnly = false;
 
 		int FAILS_FROM_ID = 7000;
-
 		boolean postedHighTestMessage = false;
-
 		// do all the tests
 		int run = 0;
 		int failCount = 0;
@@ -255,7 +254,7 @@ public final class TestSystemRunner {
 
 			if (testName.startsWith("test") == false)
 				continue;
-			if (testName.endsWith("__.lin") == false)
+			if (testName.endsWith("__.lin") == false) // a quick way to turn off a tests
 				continue;
 
 			App.deal = null;
@@ -334,7 +333,7 @@ public final class TestSystemRunner {
 
 			if (failed && (ti.testId < FAILS_FROM_ID)) { // we not the first fail with two preceding blank lines
 				log.add("****");
-				log.add("");
+				// log.add("");
 			}
 
 		}

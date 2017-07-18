@@ -15,6 +15,7 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Lin;
 
@@ -24,14 +25,19 @@ public class ButtonPanelRight extends JPanel {
 	// ---------------------------------- CLASS -------------------------------------
 	private static final long serialVersionUID = 1L;
 
-	RpfResizeButton ddsShowBids;
 	RpfResizeButton ddsAnalyse;
+	RpfResizeButton ddsReinstateAnalyser;
 	RpfResizeButton ddsLabel;
 	RpfResizeButton ddsScoreOnOff;
 
 	RpfResizeButton hiddenHandsShowHide_b;
 	RpfResizeButton hiddenHandsClick1_b;
 	RpfResizeButton hiddenHandsClick2_b;
+
+//	RpfResizeButton autoEnterLabelPbn;
+	RpfResizeButton autoEnterLabelAuto;
+	RpfResizeButton autoEnterLabelEnter;
+	RpfResizeButton autoEnterOnOff;
 
 	/**
 	 */
@@ -43,16 +49,22 @@ public class ButtonPanelRight extends JPanel {
 
 		// @formatter:off
 			
-		setLayout(new MigLayout(App.simple + ", flowy, align right", "[c]", "1%[]1%[]8.0%[][]10.0%[][]2%[]"));
+		setLayout(new MigLayout(App.simple + ", flowy, align right", "[c]", "2%[]0.75%[]7.0%[][]10.0%[][]2%[]26%[][]0.5%[]"));
 
-		add(ddsAnalyse	  = new RpfResizeButton(Aaa.s_Std,   "ddsAnalyse", 65, 4));
-		add(ddsShowBids	  = new RpfResizeButton(Aaa.s_Std,   "ddsShowBids", 60, 3));
-		add(ddsLabel      = new RpfResizeButton(Aaa.s_Label, "ddsLabel", 75, 6));
-		add(ddsScoreOnOff = new RpfResizeButton(Aaa.s_Std,   "ddsScoreOnOff", 65, 5));
+		add(ddsAnalyse	         = new RpfResizeButton(Aaa.s_Std,   "ddsAnalyse", 70, 5));
+		add(ddsReinstateAnalyser = new RpfResizeButton(Aaa.s_Std,   "ddsReinstateAnalyser", 55, 3));
+		add(ddsLabel             = new RpfResizeButton(Aaa.s_Label, "ddsLabel", 75, 6));
+		add(ddsScoreOnOff        = new RpfResizeButton(Aaa.s_Std,   "ddsScoreOnOff", 65, 5));
 
-		add(hiddenHandsClick1_b = new RpfResizeButton(Aaa.s_Label, "hiddenHandsClick1", 75, 4));
-		add(hiddenHandsClick2_b = new RpfResizeButton(Aaa.s_Label, "hiddenHandsClick2", 75, 4));
-		add(hiddenHandsShowHide_b = new RpfResizeButton(Aaa.s_Std, "hiddenHandsShowHide", 65, 6));
+		add(hiddenHandsClick1_b   = new RpfResizeButton(Aaa.s_Label, "hiddenHandsClick1", 75, 4));
+		add(hiddenHandsClick2_b   = new RpfResizeButton(Aaa.s_Label, "hiddenHandsClick2", 75, 4));
+		add(hiddenHandsShowHide_b = new RpfResizeButton(Aaa.s_Std, "hiddenHandsShowHide", 65, 6));		
+
+//		add(autoEnterLabelPbn    = new RpfResizeButton(Aaa.s_Label, "autoEnterLabelPbn", 75, 5));
+		add(autoEnterLabelAuto   = new RpfResizeButton(Aaa.s_Label, "autoEnterLabelAuto", 75, 5));
+		add(autoEnterLabelEnter  = new RpfResizeButton(Aaa.s_Label, "autoEnterLabelEnter", 75, 5));
+		add(autoEnterOnOff       = new RpfResizeButton(Aaa.s_Std,   "autoEnterOnOff", 65, 5));
+
 		// @formatter:on
 	}
 
@@ -67,12 +79,17 @@ public class ButtonPanelRight extends JPanel {
 		{
 			boolean anaVisible = (App.visualMode == App.Vm_InsideADeal) && App.haglundsDDSavailable;
 			ddsAnalyse.setVisible(anaVisible);
-			ddsShowBids.setVisible(anaVisible && App.ddsAnalyserPanelVisible);
+
+			boolean keepOnVisible = anaVisible /* &&  App.pbnAutoEnter */&& (App.cameFromPbnOrSimilar() || App.isLin__Virgin());
+
+			ddsReinstateAnalyser.setVisible(keepOnVisible);
+			ddsReinstateAnalyser.setBackground(App.reinstateAnalyser ? Aaa.buttonBkgColorYes : Aaa.buttonBkgColorStd);
 
 			boolean ddsVisible = (App.visualMode == App.Vm_InsideADeal) && App.haglundsDDSavailable;
 			ddsLabel.setVisible(ddsVisible);
 			ddsScoreOnOff.setVisible(ddsVisible);
-			ddsScoreOnOff.setText(App.ddsScoreShow ? "is On" : "is Off");
+			ddsScoreOnOff.setText(App.ddsScoreShow ? Aaf.rhp_isOn : Aaf.rhp_isOff);
+			ddsScoreOnOff.setBackground(App.ddsScoreShow ? Aaa.buttonBkgColorYes : Aaa.buttonBkgColorStd);
 		}
 
 		{
@@ -80,7 +97,7 @@ public class ButtonPanelRight extends JPanel {
 
 			boolean handsShowing = App.localShowHidden;
 
-			String text = handsShowing ? "Hide" : "Show";
+			String text = handsShowing ? Aaf.rhp_hide : Aaf.rhp_show;
 
 			hiddenHandsShowHide_b.setText(text);
 			hiddenHandsShowHide_b.setVisible(visible);
@@ -88,6 +105,17 @@ public class ButtonPanelRight extends JPanel {
 			hiddenHandsClick1_b.setVisible(visible & !handsShowing);
 			hiddenHandsClick2_b.setVisible(visible & !handsShowing);
 		}
+
+		{
+			boolean reVisible = (App.cameFromPbnOrSimilar());
+//			autoEnterLabelPbn.setVisible(reVisible);
+			autoEnterLabelAuto.setVisible(reVisible);
+			autoEnterLabelEnter.setVisible(reVisible);
+			autoEnterOnOff.setVisible(reVisible);
+			autoEnterOnOff.setText(App.pbnAutoEnter ? Aaf.rhp_isOn : Aaf.rhp_isOff);
+			autoEnterOnOff.setBackground(App.pbnAutoEnter ? Aaa.buttonBkgColorYes : Aaa.buttonBkgColorStd);
+		}
+
 	}
 
 }

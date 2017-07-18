@@ -29,13 +29,6 @@ public class BookshelfArray extends ArrayList<Bookshelf> {
 
 		add(new Bookshelf("")); // always added even if empty
 
-		for (char c = '1'; c <= '9'; c++) {
-			Bookshelf shelf = new Bookshelf("" + c);
-			if (!shelf.isEmpty()) {
-				add(shelf);
-			}
-		}
-
 		for (char c = 'A'; c <= 'Z'; c++) {
 			Bookshelf shelf = new Bookshelf("" + c);
 			if (!shelf.isEmpty()) {
@@ -52,9 +45,6 @@ public class BookshelfArray extends ArrayList<Bookshelf> {
 				return ((bs1.sort_order < bs2.sort_order) ? -1 : 1);
 			}
 		});
-
-		// add cosmetic spaces to the last shelf display name in the array
-		get(size() - 1).shelfDisplayName += "       ";
 
 	}
 

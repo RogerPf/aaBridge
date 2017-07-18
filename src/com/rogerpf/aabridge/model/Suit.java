@@ -56,12 +56,12 @@ public enum Suit {
 		return suit_to_cdhsnLowSt[v];
 	}
 
-	public String toStrNu() {
-		return suit_to_cdhsnuSt[v];
-	}
-
 	public String toStrNt() {
 		return suit_to_cdhsntSt[v];
+	}
+
+	public String toStrDual() {
+		return suit_to_cdhsNDual[v];
 	}
 
 	//@formatter:off
@@ -82,8 +82,8 @@ public enum Suit {
 	private final static char[]   suit_to_cdhsnLowCh  = { 'c', 'd', 'h', 's', 'n' };
 	private final static String[] suit_to_cdhsnLowSt  = { "c", "d", "h", "s", "n" };
 	private final static String[] suit_to_cdhsnSt     = { "C", "D", "H", "S", "N" };
-	private final static String[] suit_to_cdhsnuSt    = { "C", "D", "H", "S", "NU" }; // yes NU (becomes)=> NT via the font
 	private final static String[] suit_to_cdhsntSt    = { "C", "D", "H", "S", "NT" };
+	private final static String[] suit_to_cdhsNDual   = { "c", "d", "h", "s", "N" };
 
 	public  static Suit fiveDenoms[] = { Clubs, Diamonds, Hearts, Spades, NoTrumps};
 	private static Suit instAy[]     = { Clubs, Diamonds, Hearts, Spades, NoTrumps, Invalid };

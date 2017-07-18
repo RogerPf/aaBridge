@@ -13,6 +13,7 @@ package com.rogerpf.aabridge.view;
 import java.util.ArrayList;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Deal;
 
@@ -45,6 +46,7 @@ class DePoint {
 		this.bidInd = bidInd;
 		this.trickInd = trickInd;
 		this.cardInd = cardInd;
+
 	}
 }
 
@@ -77,7 +79,7 @@ public class DePointAy extends ArrayList<DePoint> {
 		float from = LINE_END_GAP * width;
 		float to = (LINE_END_GAP + BID_MARK_WIDTH) * width;
 
-		add(new DePoint(index++, 'b', 'h', "Bid", from, to, true, 0, 0, 0));
+		add(new DePoint(index++, 'b', 'h', Aaf.navbar_bid, from, to, true, 0, 0, 0));
 
 		int bids = deal.countBids();
 
@@ -126,7 +128,7 @@ public class DePointAy extends ArrayList<DePoint> {
 
 		from = to;
 		to += PLAY_MARK_WIDTH * width;
-		add(new DePoint(index++, 'c', state, "Play", from, to, true, 0, 0, 0));
+		add(new DePoint(index++, 'c', state, Aaf.navbar_lead, from, to, true, 0, 0, 0));
 
 		int playedCards = App.deal.countCardsPlayed();
 
@@ -207,7 +209,7 @@ public class DePointAy extends ArrayList<DePoint> {
 		from = to;
 		to += FIN_MARK_WIDTH * width;
 
-		add(new DePoint(index++, 'f', state, "Fin", from, to, true, 0, tricks, cards));
+		add(new DePoint(index++, 'f', state, Aaf.navbar_end, from, to, true, 0, tricks, cards));
 
 		@SuppressWarnings("unused")
 		int z = 0; // put your breakpoint here

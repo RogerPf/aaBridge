@@ -1,0 +1,1583 @@
+%%
+%%
+%% <--SECT_HEAD-->=Chapter 18.1                  Complex   1@d - 1@h   
+%%
+%%
+%%  Date last Edited    2016-01-31        set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+%% 
+%% <<--HEADER_FILE-->>=005  OCP common header
+%%
+
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+
+
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+fh|s28|                    Font   s  s-small
+fh|f35|                    Font   f  f-fine
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  OLD STYLE  position adjustment 
+
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       on Title Pages   Precision Blue
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Oliver Clarke Precision                                 2017  ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bChapter 18.1                  Complex   1@d - 1@h   ^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+
+qx|18.1|
+
+lg|m|
+at|^cBelow is a list of the meanings of the text in the  'bumps'  that you can see in the  ^*bNavbar^*n  below.
+|n^|7|at|
+^e Oliv ^g Start of the class
+^e 1D   ^g Summary of the  ^k 1@d               ^o sequences covered over the next 3 lessons
+^e 1H   ^g Summary of the  ^k 1@d - 1@h         ^o sequences covered this lesson
+^e 1S   ^g The             ^k 1@d - 1@h - 1@s   ^o sequence
+^e 2C   ^g The             ^k 1@d - 1@h - 2@c   ^o sequence
+^e 2H   ^g The             ^k 1@d - 1@h - 2@h   ^o sequence
+^e 2N   ^g The             ^k 1@d - 1@h - 2NT   ^o sequence
+|n^|3|at|						   ^k                   ^o (unindexed sequences share their pages)
+|n^|7|at|^e no text      ^g Teaching hands
+^e Prac ^g Start of the  Practice hands,    others shown  p 2   etc
+
+
+|lg||
+fp||ht|y|at|^b@2@1|at|
+^b^*bClick^*n    -    ^e    ^*bFlow > ^*n   ^hor      in the  Navbar  ^mor      use your   |cp|red|at|^*bmouse wheel^*n|cp||
+ht|z|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+n^|3|at|^^^*h https://www.youtube.com/channel/UCTGNUS8jbx85QOMUPlHoRMA, OCP Videos ^*n|
+%%
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2886|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2886 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+-----------------------------------------------------------------------------------------------  
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,wide|
+nt|^z@3^b@2|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class                   Complex   1@d - 1@h ^*n^-^^|cs||fp||cp||at|^^|
+lg|c|
+cp|red|at|^*bOliver:^*n|cp||at|     Hi Everyone and welcome to today's OCP session, in which we'll be starting to have a look at the full COMPLEX version of this Precision Club system.   
+
+None of what we'll be looking at over the next few weeks has ANYTHING to do with "standard" Precision.
+
+A couple of things before we start.    You absolutely CANNOT learn or play this part of the system ON YOUR OWN. 
+
+You must learn it and practice is with a regular partner who plays the REST of this System or as one of a group.   There are currently a few people on BBO who regularly play the "Complex Sys" as we call it (brian_m, podlecii in particular). 
+
+Any of us will be quite willing to help and practice with anyone seriously wanting to get into this side of the system, but you must be comfortable with the rest of it, including all the Asking Bids before you do so. 
+
+I will ALWAYS happily play the Complex System with anyone who asks.
+
+The Complex Sys is effectively what I used to play with Jason Hackett in the 1980's and early 90's. 
+
+The changes affect the    1@d,   2@d,   2@h,   2@s,   3@d,   3@h,  and  3@s Openings. 
+
+The rest of the system is identical to that which I've taught you over the last few months.
+|n#|9|at|
+^*bMM:^*n  See Oliver's Complex 1@D web page at  |fp|t-title|at| ^*h http://ocp.pigpen.org.uk/Complex_1d.php ^*n|fp||
+pg| ***** 1 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex 1@D |fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   Tonight I'm going to start looking at the changes to the 1@d Responses.
+ 
+This will take several weeks because the 1@d Responses are a system within a system that Jason and I developed over a period of several months.
+
+The requirements for the 1@d Opening are IDENTICAL to what I've taught you at the start of the series on precision, in other words the: 
+
+1@d Opening shows ANY 11-15 point hand that is NOT suitable for an opening of 1@h, 1@s, 1NT, 2@c, 2NT or 3@c.
+^fRemember that 1NT Opening (and so in turn the 1@D Opening) are vulnerability dependent.
+|lg|c|at|
+So Opening 1@d denies having a  5-card Major   OR   a 6 card @c suit (unless the minor is VERY WEAK).
+It denies being balanced or semi-balanced with a 5 card Minor and of a range suitable for a 1NT Opening.
+It normally shows one of the following hand-types: |n#|7|lg|d|at|
+^c@.      Vul        ^g11-12  balanced  OR  semi-bal  inc  5@d's  or  5@c's 
+^c@.      NON-Vul    ^g13-15  balanced  OR  semi-bal  inc  5@d's  or  5@c's  
+^c@.      4441  (singleton @c)
+^c@.      5+@d's  but  NOT semi-bal
+^c@.      4@d's  ^*b&^*n  5@c's 
+^c@.      Weak  6@c's
+^c@.      Weak  5@c's   ^*b&^*n   4@h's or 4@s's
+
+The ONLY change to the requirements for the 1@d Opening in the Complex System 
+^n  are that it DENIES having      6@d's  ^*b&^*n   4@h's or 4@s's.
+|n^|7|at|
+This is because of what the 2@h and 2@s Openings show in the Complex System (guess LOL). |
+pg| ***** 2 ***** |
+
+
+--------------------------------------------------------------------
+nt|^x@3^b@2|at|^^^^|
+fp|t-title|at|The Complex System is  OFF  after a PASS |fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   If you want to play 2@h and 2@s as Lucas Two's, Tartan Two's or anything like that, it doesn't take too much work to absorb the 4-6 11-15 openings back into 1@d.
+
+Personally I prefer the Reverse Roman Openings, so that is what I will actually teach you.
+
+Before we go on I need to explain and stress one thing (because it's easily forgotten). 
+
+
+|fp|t-title|at|The Complex system is  OFF  after a PASS |fp||n#|5|at|
+If Responder is a PASSED hand then the Complex System simply does NOT apply and all bidding over the 1@d Opening is STRICTLY NATURAL along identical lines to the "normal" system (with the one exception that the 2@c and 2@d bids are no longer forcing to 2NT).
+
+ 
+So the       |fp|t-title|at|Complex System ONLY applies in 1st or 2nd position|fp||at|. 
+
+
+If you're a passed hand, you're assumed to be  0-10  and so there's no point playing a system where the initial responses are HCP-based.
+
+Everyone with me thus far? ok, 
+
+
+I'll take that as a yes LOL |
+pg| ***** 3 ***** |
+
+
+--------------------------------------------------------------------
+qx|1D,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D |fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   The 1@d Opening is STILL not forcing in the Complex System.
+ 
+With 0-7 points Responder will normally pass, but might bid 1@h if they have 
+^o a @d shortage and a 6-card or longer Major. 
+^c@2|lg|i|at|
+^bThe initial responses to the Complex 1@d are completely artificial: 
+1@d   -   1@h ^f   =      8-10  ^j points (any shape). 
+1@d   -   1@s ^f   =     11-13  ^j points (any shape). 
+1@d   -   1NT ^f   =     14+    ^j points (any shape). 
+1@d   -   2@c ^f   =     16+     and is Alpha in the suit. 
+1@d   -   2@d ^f   =     16+     and is Alpha in the suit. 
+1@d   -   2@h ^f   =     16+     and is Alpha in the suit. 
+1@d   -   2@s ^f   =     16+     and is Alpha in the suit.
+^b@2|lg||n^|7|at|
+1@h and 1@s are fairly straightforward but 1NT is 14+ UNLIMITED.     
+
+If Responder has a 16+ hand that is of a type where Alpha seems the best route then they use  2@c, 2@d, 2@h  or  2@s,  but otherwise they bid 1NT and let Opener describe their hand further. 
+
+Needless to say the 1NT bid is invariably Game-forcing.
+ 
+Tonight we're only going to look at the  1@d - 1@h  sequences. 
+
+I'll outline all of Opener's rebids and then go through each one in more detail.|
+pg| ***** 4 ***** |
+
+
+--------------------------------------------------------------------
+qx|1H,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D  -  1@H     Overview|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   Over the 1@h response showing 8-10 points Opener shows their hand type as follows: 
+^c@2|lg||n^|8|at|
+
+^h^*b      These rebids by Opener are the ONLY ones allowed^*n.
+
+^c@2|lg|f|n^|8|at|
+1@d   -   1@h   -   1@s ^g         ANY ^*b 4441 ^*n hand,  wherever the singleton lies. 
+1@d   -   1@h   -   1NT ^g         balanced or semi-balanced  of a range unsuitable for a 1NT Opening. 
+1@d   -   1@h   -   2@c ^g         5+@C's (4@d's ^*b&^*n 5@c's    OR   weak 6-card @C's   OR   an UPPER range hand with
+                                     ^q weak 5 card @C's   ^*b&^*n   4@h's or 4@s's). 
+1@d   -   1@h   -   2@d ^g         5+@D's   (if a 4 card Major also held, they will be LOWER-Range). 
+1@d   -   1@h   -   2@h ^g         UPPER-Range  with  4@H's and 5@D's. 
+1@d   -   1@h   -   2@s ^g         UPPER-Range  with  4@S's and 5@D's. 
+1@d   -   1@h   -   2NT ^g         MAXIMUM  with 6 or 7@D's and normally 'semi'-balanced (6322 or 7222)
+                                           ^p    so with scattered values outside the @D's. 
+1@d   -   1@h   -   3@c ^g         MAXIMUM with at least   5@d's  ^*b&^*n  5@c's. 
+1@d   -   1@h   -   3@d ^g         UPPER-Range UNBALANCED  with 6+@D's. 
+
+^bOpener's rebids are ^*b constrained ^*n (strictly defined).
+  
+For example You'll notice that 
+1@d   -   1@h   -   2@c      is shown as "UPPER range" and only when Opener has 4-5 with a Major and weak @C's.
+That is because our suggestion is always that you PASS when holding a LOWER-Range hand of that type (ie: where the @C's are not good enough for a 2@c Opening).|
+pg| ***** 5 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D  -  1@H     Overview|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   You'll notice that all of the bids from 2@h upwards show upper-range or maximum hands.
+
+That is because after  1@d - 1@h  the emphasis is almost always on reaching the most sensible part-score at the cheapest level,  we're only ever going to be heading towards game if BOTH of us are maximum.
+
+
+The  1@d - 1@s  sequences (covered next week) tend to be the most complex, because now we're in invitational territory as a matter of course.
+
+
+We will come  to   1@d - 1@h - 1@s    in a moment but first I want to cover ...
+
+
+
+|fp|t-title|at|1@d  -  1@h  -  1NT |fp||n#|5|at|
+Because the  1@d - 1@h  pair of bids do not show ^*b ANY ^*n suits, we treat the 1NT rebid EXACTLY like an opening 1NT, so ALL of the normal continuations such as:  Stayman,  2 Way-2@D,  4 way transfers   etc   apply.
+
+
+
+Let's have a couple of quick examples.|
+pg| ***** 6 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|t 1,thin|
+pn|South,West,North,East|rh||ah|Teach 1|sv|O|sk|n|sk||
+%% 3sThA9732dQT86cA92,sQ964hT6d743cKJT7,sK87hKJ85dAKJ2c84,sAJ532hQ4d95cQ653 
+md|3sThA9732dQT86cA92,,sK87hKJ85dAKJ2c84,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 1    |
+pg| ***** 7 ***** |
+
+
+mb|1D!|an|11-15, 1+@d, No 5M, No 6@C, not 10-12 bal|
+pg| ***** 8 ***** |
+
+
+sj|c|
+mb|p|mb|1H!|an|8-10,  any shape|
+pg| ***** 9 ***** |
+
+
+mb|p|mb|1N!|an|13-15 bal or semi-bal|
+pg| ***** 10 ***** |
+
+
+sj|c|
+mb|p|mb|2D!|an|2-way 2@d (inc tfr to @h's)|at|
+
+As noted earlier, 1@d - 1@h  pair of bids do not show any suits, so ALL of the normal continuations such as:  Stayman,  2 Way-2@D,  4 way transfers   etc   apply after the 1NT bid.|
+pg| ***** 11 ***** |
+
+
+mb|p|mb|2S!|an|Super-accept @h tfr, xx in @c's      (see Chapter 4.)|
+pg| ***** 12 ***** |
+
+
+mb|p|mb|4H|
+pg| ***** 13 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^Nothing extra to say.  |
+pg| ***** 14 ***** |
+
+
+mb|p|
+md|0sThA9732dQT86cA92,sQ964hT6d743cKJT7,sK87hKJ85dAKJ2c84,sAJ532hQ4d95cQ653|at|Any questions or comments ?|
+pg| ***** 15 ***** |
+
+
+pc|ht|
+pf|Y|
+pg| ***** 16 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 17 ***** |
+
+
+ 
+
+
+--------------------------------------------------------------------
+st||
+qx|t 2,thin|
+pn|South,West,North,East|rh||ah|Teach 2|sv|O|sk|n|sk||
+%% 2sAKT6h65dK62cT974,s53h732dAT943cK82,sQJ98hAJT4dQJ75cJ,s742hKQ98d8cAQ653
+md|2sAKT6h65dK62cT974,,sQJ98hAJT4dQJ75cJ,|
+mb|p|mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 2    |
+pg| ***** 18 ***** |
+
+
+mb|1D!|an|11-15, 1+@d, No 5M, No 6@C, not 10-12 bal|
+pg| ***** 19 ***** |
+
+
+sj|c|
+mb|p|mb|1H!|an|8-10,  any shape|
+pg| ***** 20 ***** |
+
+
+mb|p|mb|1S!|an|any 4441 shape|
+pg| ***** 21 ***** |
+
+
+sj|c|
+mb|p|mb|1N!|an|Where is your singleton ?|
+at|      Responder now makes an automatic 1NT Relay|
+pg| ***** 22 ***** |
+
+
+sj|c|
+mb|p|mb|2S!|an|Singleton club|
+at| and now Opener bids the suit BELOW the singleton. |
+pg| ***** 23 ***** |
+
+
+sj|c|
+mb|p|mb|3C!|an|Range Beta, use promises max, (ie: 10 hcp)|
+pg| ***** 24 ***** |
+
+
+mb|p|mb|3D!|an|Lower Range  (Range beta has extra step)|
+at|
+With a MAXIMUM Responder can now make a RANGE BETA Ask in the singleton suit|
+pg| ***** 25 ***** |
+
+
+sj|c|
+mb|p|mb|3S|
+at| and will then bid the final contract.|
+pg| ***** 26 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^You might make 4 here.   It just depends on the defence, but you don't really WANT to be in 4.   Any questions ?  |
+pg| ***** 27 ***** |
+
+
+mb|p|
+md|0s2sAKT6h65dK62cT974,s53h732dAT943cK82,sQJ98hAJT4dQJ75cJ,s742hKQ98d8cAQ653|
+pg| ***** 28 ***** |
+
+
+pc|s7|
+pf|Y|
+pg| ***** 29 ***** |
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+bt||
+qx|1S,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D  -  1@h   Sequences|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  Let's look as those Opener's rebids over  1@d - 1@h  in a more detail.
+|n^|7|at|
+^c1@d   -   1@h   -   1@s ^h shows ANY ^*b 4441 ^*n shape hand.    Responder always responds 1NT  and Opener now
+|n^|7|at|
+bids the suit BELOW the singleton.    With a MAXIMUM Responder can now make a RANGE BETA Ask (extra 'Lower-range' step in front of normal scale) in the singleton suit and will then bid the final contract. 
+|n^|5|at|
+If instead Responder simply signs off in a suit, Opener can now invite with a MAXIMUM, but the general rule is that UNLESS Responder makes that Range Beta to show a maximum 10, Opener will not normally invite even with a MAX.
+ 
+As I said before,  generally after  1@d - 1@h,  we need BOTH of us to be max to get to game.
+
+^c1@d   -   1@h   -   1NT ^h @2shows a balanced or semi-balanced (5 card @c's or @d's) hand of a range unsuitable for an opening 1NT bid (ie: 13-15 when NOT Vul   and   11-12 when Vul). 
+^b@2|n^|5|at|
+Continuations are EXACTLY as over an Opening of 1NT (eg: Stayman, 4-way Transfers, 2-way 2@d, INTRO, Transfer Leb etc).    The only exception is immediate jump shifts to the 3 level which are merely invitational with a good 6 card or longer suit.    So no Alpha over  1@d - 1@h - 1NT,  for obvious reasons.
+|n^|5|at|
+You and partner decide what the difference is between 
+^d 1@d  -  1@h  -  1NT  -  3@h                                 and 
+^d 1@d  -  1@h  -  1NT  -  2@d  -  2@h  -  3@h 
+as both show invitational hands with a 6 card Heart suit. 
+|n^|5|at|
+Personally I tend to reserve the direct 3@h for occasions where I have something I feel might need protecting and I also tend to play the transfer sequence as strongly invitational and the direct 3@h as mildly invitational.
+ 
+You can work out your own preference with your partner.    
+
+Any questions so far?|
+pg| ***** 30 ***** |
+
+
+bt||
+qx|2C,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D  -  1@h   Sequences|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  
+
+^c1@d   -   1@h   -   2@c  ^h@2Any hand with  5+@c's,   so this is either
+|n^|8|lg|a|at|  
+          4@d's ^*b&^*n 5@c's   
+  OR   
+          weak 6@c's
+  OR  
+          weak 5@c's  ^*b & ^*n  (4@h's or 4@s's)   -   UPPER_range  ONLY
+
+All continuations are completely natural, with 2@h and 2@s generally showing 5 card suits.
+|lg|f|at|
+
+^c1@d   -   1@h   -   2@d  ^h@2a hand with 5+@d's.
+|n^|8|at| 
+If Upper-range they will NOT have a    5@c's  ^*b & ^*n  (4@h's or 4@s's)   suit as well.
+ 
+Because of the 2@h and 2@s reverse Roman Openings, they ^^ ^p will NOT have a      6@d's  ^*b & ^*n  (4@h's or 4@s's).
+|n^|8|at| 
+As with  1@d - 1@h - 2@c  above all continuations are completely natural. 
+
+
+^bAs you will see from the example on the next page, we can still have constructive auctions.|
+pg| ***** 31 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|t 3,thin|
+pn|South,West,North,East|rh||ah|Teach 3|sv|B|sk|w|sk||
+%% 2sQJ75hT93dJT2cJ95,sT6hK8dAK53cKQ762,sA32hA754dQ9764c4,sK984hQJ62d8cAT83
+md|2,sT6hK8dAK53cKQ762,,sK984hQJ62d8cAT83|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 3    |
+pg| ***** 32 ***** |
+
+
+mb|1D!|an|11-15, 1+@d, No 5M, No 6@C, not 13-15 bal|
+pg| ***** 33 ***** |
+
+
+sj|c|
+mb|p|mb|1H!|an|8-10,  any shape|
+pg| ***** 34 ***** |
+
+
+sj|c|
+mb|p|mb|2C!|an|5+@c's EITHER weak w/ 4-cd Maj, or strong w/ 4@d's|
+pg| ***** 35 ***** |
+
+
+at|^^
+Continuations after the 2@c bid are natural.|
+pg| ***** 36 ***** |
+
+
+sj|c|
+mb|p|mb|3C!|an|Max (10hcp)  4@c's   invitational|
+pg| ***** 37 ***** |
+
+
+sj|c|
+mb|p|mb|3D!|an|No 4 card @h's or @s's  therefore am Max (15hcp)|
+pg| ***** 38 ***** |
+
+
+sj|c|
+mb|p|mb|3N|
+pg| ***** 39 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 40 ***** |
+
+
+mb|p|
+md|0sQJ75hT93dJT2cJ95,sT6hK8dAK53cKQ762,sA32hA754dQ9764c4,sK984hQJ62d8cAT83|
+pg| ***** 41 ***** |
+
+
+pc|s7|
+pf|Y|
+pg| ***** 42 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 43 ***** |
+
+
+------------------------------------------------------------------------------------------------
+
+st||
+qx|t 4,thin|
+pn|South,West,North,East|rh||ah|Teach 4|sv|n|sk|e|sk||
+%% 3sK842hAK986dT8cA4,sAQ9hJT75d9cJT862,sT63hQ43dQ7643c53,sJ75h2dAKJ52cKQ97
+md|3,sAQ9hJT75d9cJT862,,sJ75h2dAKJ52cKQ97|
+mb|p|mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 4    |
+pg| ***** 44 ***** |
+
+
+mb|1D!|an|11-15, 1+@d, No 5M, No 6@C, not 13-15 bal|
+pg| ***** 45 ***** |
+
+
+sj|c|
+mb|p|mb|1H!|an|8-10,  any shape|
+pg| ***** 46 ***** |
+
+
+sj|c|
+mb|p|mb|2D!|an|NF,5+@d, except low range w/ 4cd Maj or 10-12 (1NT)|
+pg| ***** 47 ***** |
+
+
+sj|c|
+mb|p?|
+at|^^^^Here, West can afford to look for a better contract with their major holding and 8 hcp.|
+pg| ***** 48 ***** |
+
+
+mb|2H|
+pg| ***** 49 ***** |
+
+
+sj|c|
+mb|p|mb|3C|
+at|^^Here East is showing a second suit @c's.    (If  5@d - 4@c will be strong if  5@d - 5@c will be weak.)|
+pg| ***** 50 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 51 ***** |
+
+
+mb|p|
+md|0sK842hAK986dT8cA4,sAQ9hJT75d9cJT862,sT63hQ43dQ7643c53,sJ75h2dAKJ52cKQ97|
+pg| ***** 52 ***** |
+
+
+pc|cA|
+pf|Y|
+pg| ***** 53 ***** |
+
+
+-------------------------------------------------------------------------------------------------------
+bt||
+qx|2H,wide|
+nt|^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D  -  1@h  -  2@H   Sequences|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  
+|n^|2|at|
+^c1@d   -   1@h   -   2@h             ^j an  UPPER-Range  hand with    4@h's ^*b & ^*n 5@d's
+
+^c1@d   -   1@h   -   2@h   -   2@s   ^j a hand wanting to play in 2NT  or  having 5+@s's, forces 2NT Relay
+                                      ^j           if responder bids again it shows the 5+@s's (and whatever else) 
+|n^|5|at|
+^c1@d   -   1@h   -   2@h   -   2NT   ^j a forcing ^*b ASK ^*n - asks Opener to clarify their distribution
+|n^|5|at|
+^bbidding a ^g@2
+minor    =    shortage in  @s's    |fp|s-small|cp||at|(the other Major)|fp||cp||at|
+^d   |fp|s-small|cp|dg|at|(other Major)|fp||cp||at|^g@s's       =    shortage in  @c's
+|cp|red|at|^*bRED|cp||at|^*n     =    ^*bvoid^*n  ^n
+^*bBlack^*n   =    ^*nsingleton^*n                ^n
+^bie:|Lg|f|at|^c@2
+1@d   -   1@h   -   2@h   -   2NT   -   3@c ^k     =     @s singleton
+1@d   -   1@h   -   2@h   -   2NT   -   3@d ^k     =     @s void 
+1@d   -   1@h   -   2@h   -   2NT   -   3@h ^k     =     @c void
+1@d   -   1@h   -   2@h   -   2NT   -   3@s ^k     =     @c singleton
+1@d   -   1@h   -   2@h   -   2NT   -   3NT ^k     =         ^*b2452^*n
+|Lg|c|at|
+^b@2The 2NT Enquiry will generally be made with a hand intending to agree either   @d's  or  @h's   as trumps. 
+
+If Responder only wants to be in a Heart game opposite a Singleton @S, then they cannot afford to use 2NT and bid an invitational 3@h instead.|
+pg| ***** 54 ***** |
+
+
+------------------------------------------------------------------------------------------------
+
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D  -  1@h  -  2@H   Sequences|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   
+
+More continuations after    @21@d   -   1@h   -   2@h
+|Lg|y|at|^c@2
+1@d   -   1@h   -   2@h   -   3@C      ^j 6+@c's  and  minimum
+1@d   -   1@h   -   2@h   -   3@D      ^j simple preference for  @d's  and  minimum
+1@d   -   1@h   -   2@h   -   3@H      ^j invitational, asking opener to bid game with a @s shortage ONLY
+|n^|c|at|                                                    ^m (hands with a @c shortage  OR  2452 need not apply)
+1@d   -   1@h   -   2@h   -   3@S      ^j 6+@s's  and  ^*bMaximum^*n
+1@d   -   1@h   -   2@h   -   3NT      ^j natural and   'to play'
+|Lg|c|at|
+
+^bAny questions ? |
+pg| ***** 55 ***** |
+
+
+ 
+------------------------------------------------------------------------------------------------------
+bt||
+qx|2S,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D  -  1@h  -  2@s   Sequences|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|
+
+^c1@d   -   1@h   -   2@s             ^j an  UPPER-Range  hand with    4@s's ^*b & ^*n 5@d's
+|n#|4|at|
+The responses follow a similar logic to those after 1@d - 1@h - 2@h so
+|n#|2|at|
+^c1@d   -   1@h   -   2@s   -   2NT   ^j a forcing ^*b ASK ^*n - asks Opener to clarify their distribution
+|n^|5|at|
+^bbidding a ^g@2
+minor    =    shortage in  @h's    |fp|s-small|cp||at|(the other Major)|fp||cp||at|
+^d   |fp|s-small|cp|dg|at|(other Major)|fp||cp||at|^g@h's       =    shortage in  @c's. 
+|cp|red|at|^*bRED|cp||at|^*n     =    ^*bvoid^*n  ^n
+^*bBlack^*n   =    ^*nsingleton^*n                ^n
+^bie:|Lg|f|at|^c@2
+1@d   -   1@h   -   2@s   -   2NT   -   3@c ^k     =     @h singleton
+1@d   -   1@h   -   2@s   -   2NT   -   3@d ^k     =     @h void 
+1@d   -   1@h   -   2@s   -   2NT   -   3@h ^k     =     @c void              |fp|s-small|at|(not really needed @- see note on next page)|fp||at|
+1@d   -   1@h   -   2@s   -   2NT   -   3@s ^k     =     @c singleton
+1@d   -   1@h   -   2@s   -   2NT   -   3NT ^k     =         ^*b2452^*n
+|Lg|f|at|
+^b@2The  2NT  Enquiry will generally be made with a hand intending to agree either  @d's or @s's  as trumps.
+|n^|5|at|
+If Responder only wants to be in a Spade game opposite a hand with a shortage (ie: NOT 4252), then they cannot afford to use 2NT and should bid an invitational  3@s  instead.|
+pg| ***** 56 ***** |
+
+
+ 
+
+
+
+-------------------------------------------------------------------------------------------------------
+
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D  -  1@h  -  2@s   Sequences|fp||at|      Continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  
+
+More continuations after  1@d - 1@h - 2@s 
+|n^|2|Lg|p|at|^c@2
+1@d   -   1@h   -   2@s   -   3@c ^j 6+@c's  and  minimum                           ^t 'to play'
+1@d   -   1@h   -   2@s   -   3@d ^j a simple preference for  @d's  and  minimum    ^t 'to play'
+1@d   -   1@h   -   2@s   -   3@h ^j 6+@h's  and  ^*bMaximum^*n 
+1@d   -   1@h   -   2@s   -   3@s ^j Invitational, asking Opener to bid game if they have a shortage 
+|n^|9|at|                                                    ^m (hands with 2452 shape need not apply)  
+1@d   -   1@h   -   2@s   -   3NT ^j Natural and  'to play'
+|Lg|c|at|
+^b@2Any questions ? 
+
+|ht|u|cp|dg|at|^b@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-|cp||at|
+|n^|a|at|
+^b   @2Note from previous page
+|n^|5|at|
+The sequence 1@d - 1@h - 2@s - 2NT - 3@h (showing a void in @c's) is not really needed when playing the 
+Reverse Roman 2@h and 2@s Openings.
+|n^|a|at|
+Hands with 4450 shape will bid 2@h over  1@d - 1@h  rather than 2@s, and
+hands  with 3460 shape will open  2@h or 1@c. |
+pg| ***** 57 ***** |
+
+
+ -------------------------------------------------------------------------------------------------------
+st||
+qx|t 5,thin|
+pn|South,West,North,East|rh||ah|Teach 5|sv|N|sk|E|sk||
+%% 4sJ43hAQJ73d32cJ75,sQT97hKT982d7cKT4,s82h65dKQ854cA863,sAK65h4dAJT96cQ92
+md|4,sQT97hKT982d7cKT4,,sAK65h4dAJT96cQ92|
+mb|?|nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 5    |
+pg| ***** 58 ***** |
+
+
+mb|1D!|an|11-15, 1+@d, No 5M, No 6@C, not 13-15 bal|
+pg| ***** 59 ***** |
+
+
+sj|c|
+mb|p|mb|1H!|an|8-10,  any shape|
+pg| ***** 60 ***** |
+
+
+sj|c|
+mb|p|mb|2S!|an|NF, Upper-Range  4@s's and 5@d's |
+pg| ***** 61 ***** |
+
+
+sj|c|
+mb|p|mb|4S|at|
+
+Pushy by West, I know -- Indeed, I'd pass 2@s,      Change those Kings to Aces and I bid 4@s.|
+pg| ***** 62 ***** |
+
+
+mb|p|mb|p|
+pg| ***** 63 ***** |
+
+
+mb|p|
+md|0sJ43hAQJ73d32cJ75,sQT97hKT982d7cKT4,s82h65dKQ854cA863,sAK65h4dAJT96cQ92|
+pg| ***** 64 ***** |
+
+
+pc|s3|
+pf|Y|
+pg| ***** 65 ***** |
+
+
+ 
+ -------------------------------------------------------------------------------------------------------
+bt||
+qx|2N,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D  -  1@h  -  2NT   Sequences|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|
+^c@2
+1@d   -   1@h   -   2NT |fp||at| ^j 6-7@d's  MAX  'semi-bal' with scattered values outside the @d's so
+                                    ^t  6322  or  7222  shape  
+                                 ^j A @c stop is good, but Opener should STILL bid  2NT without one
+^bContinuations are as follows: 
+|Lg|m|n^|7|at|^c@2
+1@d   -   1@h   -   2NT   -   3@C      ^j responder has a  @c stop,  implies a weakness in one of the Majors
+1@d   -   1@h   -   2NT   -   3@d      ^j responder DENIES a  @c stop.   Opener can continue with good @c's
+1@d   -   1@h   -   2NT   -   3@h      ^j natural with  5+@h's
+1@d   -   1@h   -   2NT   -   3@s      ^j natural with  5+@s's
+1@d   -   1@h   -   2NT   -   3NT      ^j a maximum hand   ie:  10 hcp and balanced.
+|Lg|c|at|^b@2
+Over the 3@c and 3@d bids, Opener and responder simply show stops upwards, escaping to 4@d, 5@d or 
+         ^npossibly 4 of a Major if a  'hole'  becomes apparent. 
+
+Two additional cases:
+|n^|7|at|
+^c@21@d   -   1@h   -   3@c        ^j 6+@d ^*b and ^*n 6+@c,    MAX hand.    The @c's will  rarely, if ever, be longer
+^u - see the 2@c Opening.
+^c@21@d   -   1@h   -   3@d        ^j 6+@d's   MAX UNBALANCED, ALWAYS a @c stopper  (bid 2NT without one).
+|n^|5|at|
+^k continuations of both the above are natural.  
+|n^|2|at|
+^bLet's have the last example hand|
+pg| ***** 66 ***** |
+
+
+---------------------------------------------------------------------------------------------------------------
+st||
+qx|t 6,thin|
+pn|South,West,North,East|rh||ah|Teach 6|sv|B|sk|S|sk||
+%% 1sJ95hKQdKQT862cA7,sAKT4hA43dJ5cQT98,sQ62hJ952dA3cK652,s873hT876d974cJ43
+md|1sJ95hKQdKQT862cA7,,sQ62hJ952dA3cK652,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 6    |
+pg| ***** 67 ***** |
+
+
+mb|1D!|an|11-15, 1+@d, No 5M, No 6@C, not 13-15 bal|
+pg| ***** 68 ***** |
+
+
+sj|c|
+mb|p|mb|1H!|an|8-10,  any shape|
+pg| ***** 69 ***** |
+
+
+sj|c|
+mb|p|mb|2N!|an|max (15 hcp) 6+@d's (6322 7222)  OR  unbal NO @c stop|at|
+South's 2NT bid promises a fairly strong @d suit and does  NOT  need a @c stop to bid it.|
+pg| ***** 70 ***** |
+
+
+sj|c|
+
+mb|p|mb|3N|
+at|^^^^North can comfortably bid 3NT as she has all suits covered, in particular she has a @c stop. 
+|n^|5|at|
+South will have a good @d suit for his bid so  @dAx  is great support.|
+pg| ***** 71 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 72 ***** |
+
+
+mb|p|
+md|0sJ95hKQdKQT862cA7,sAKT4hA43dJ5cQT98,sQ62hJ952dA3cK652,s873hT876d974cJ43|
+pg| ***** 73 ***** |
+
+
+pc|s4|
+pf|Y|
+pg| ***** 74 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+qx|Prac,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Practice / Demo  Hands|fp||at|^^^^|
+
+cp|red|at|^*bOliverC:^*n|cp||at|  4 victims please   :)
+
+
+Curls77:  :)   I am a happy watcher
+
+
+|cp|red|at|^*bOliverC:^*n|cp||at| 4 of you, please
+
+Come on have a go.
+
+
+
+Curls77:  Eszter has a problem with her sound
+
+
+RogerPfi:  Hi
+
+
+Eszter5: Hello 
+
+
+tosunerk: Hi|
+pg| ***** 75 ***** |
+
+
+------------------------------------------------------------------------------------------------  
+%% Alert Insert start --------------------------------------------------------------------------
+nt|^z@3^b@2|
+at|^^^^|
+%%   header box with text
+ht|b|cs|y|fp||at|^b{ ^^|
+ht|c|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^|fp|x-insertAlert|at|^- A small insert on Alerts^*n^-^^|cs||fp||cp||at|^^|
+
+ht|d|at|^^|
+cp||at|^*bMM:^*n|cp||at|  We all know we have to alert when playing  'proper'  bridge.
+
+The laws of the game say that what we have to put in the alert is  ^*b our agreement with partner ^*n about that bid.
+
+While creating these bridge movies, I have gone through and added to, or amended, many of the alerts that were in the original text.
+
+I have changed them from being ^*b REAL ^*n alerts, that you should give to real opponents, and have replaced them with ^*b STUDY ^*n alerts.   Study alerts are only useful to students of Oliver's Precision.  Of course in many cases no changes were needed.   For example    1@c     16+ Any dist except 16-23 4441
+
+It is particularly important that we make the alerts for  ^*b Asking bids and their responses^*n,  as clear as possible
+
+        ^c ^*b Study Alert ^*n           ^i ^*b Real Alert ^*n                ^o ^*b It would be great if you could add ^*n
+     ^b      @-@-@-@-@-@-@-@-@-@- ^h       @-@-@-@-@-@-@-@-@-@-   ^n       @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-
+        ^c Beta    Relay Beta ...          ^i Gen Ctrl Ask                    ^o A = 2,  K = 1 
+        ^c Alpha                           ^i Asking  in                      ^o Trump ...
+        ^c Gamma                           ^i Asking  in partners suit        ^o Trump ...
+        ^c Epsilon                         ^i Specific Ctrl Ask               ^o in ... 
+        ^c Hxx                             ^i Hxx                             ^o in ... 
+        ^c none  or  1st & 2nd             ^i none  or  1st & 2nd             ^o [xxx, AKx(x)]
+        ^c 3rd rd ctrl                     ^i 3rd rd ctrl                     ^o [xx, Qxx(x), Qx]
+
+An easy mistake in reply to an Epsilon is when, say, you hold ^*b Q76 ^*n in the suit, and so give only ^*b Qxx ^*n in the alert.   THAT  IS  WRONG.  The agreement is ^*b 3rd round control ^*n and that is what should be told to the opps.   
+
+The ^*b ethical ^*n problem with telling too much to your opps is that it disadvantages the other pairs who will play your opponents cards.|
+%% Alert Insert End ----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------  
+pg| ***** 76 ***** |
+
+
+--------------------------------------------------------------------
+st||
+md|1,,,|sk|n|
+nt|^b@2^z@3|
+cp||at|^*bMM:^*n|cp||at|  ^*bPractice Hands  @-  How to^*n
+^^With all Practice Hands, when you see the |fp|g-graphSuit|cp||at|^*b ? ^*n|cp||fp||at| in the bidding area, please @- |cp|red|at|^*bStop^*n|cp||at| @- and think through your bid.
+^^If you can't work it out then the best thing is to do, is  @- go back and re-read that part of Oliver's lesson.|
+pg| ***** 77 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 1,hide|
+pn|RogerPfi,tosunerk,Curls77,Eszter5|rh||ah|Practice 1|sv|-|sk|n|
+%% 3STHA9732DQT86CA92,SKQ964HT6D743CJT7,S87HKJ85DAKJ2CK84,SAJ532HQ4D95CQ653
+md|3STHA9732DQT86CA92,,S87HKJ85DAKJ2CK84,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Practice 1 |
+pg| ***** 78 ***** |
+
+
+mb|1D!|an|11-15, 1+@d, No 5M, No 6@C, not 10-12 bal|
+pg| ***** 79 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 80 ***** |
+
+
+mb|1H!|an|8-10,  any shape|
+pg| ***** 81 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 82 ***** |
+
+
+mb|1N!|an|13-15 bal or semi-bal|
+at|^^^^All the usual 1NT systems now apply as South is opposite what has become a 13-15 1NT opener.|
+pg| ***** 83 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 84 ***** |
+
+
+mb|2D!|an|2-way 2@d (inc tfr to @h's)|
+pg| ***** 85 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 86 ***** |
+
+
+mb|3D!|an|Super-accept @h tfr, xx in @s's|
+pg| ***** 87 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 88 ***** |
+
+
+mb|4H|
+pg| ***** 89 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 90 ***** |
+
+
+mb|p|
+pg| ***** 91 ***** |
+
+
+sk||
+pg| ***** 92 ***** |
+
+
+pf|Y|
+md|0STHA9732DQT86CA92,SKQ964HT6D743CJT7,S87HKJ85DAKJ2CK84,SAJ532HQ4D95CQ653|
+mb|p|pc|cJ|
+pg| ***** 93 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 94 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2,wide|
+pn|RogerPfi,tosunerk,Curls77,Eszter5|rh||ah|Practice 2|sv|e|sk|e|
+%% 4SJ43HAJ973D32CJ75,SQT97HKQT82D7CKT4,S82H65DKQ854CA863,SAK65H4DAJT96CQ92
+md|4,SQT97HKQT82D7CKT4,,SAK65H4DAJT96CQ92|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Practice 2 |
+pg| ***** 95 ***** |
+
+
+mb|1D!|an|11-15, 1+@d, No 5M, No 6@C, not 13-15 bal|
+pg| ***** 96 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 97 ***** |
+
+
+mb|1H!|an|8-10,  any shape|
+pg| ***** 98 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 99 ***** |
+
+
+mb|2D!|an|5+@d   not 11-12 bal/semi   not  13-15 5@c's or 4 cd maj|
+at|^^^^Well I would bid  2@s here  as the  2@D  bid does suggest that you will only have 4@s's when you are lower range.|
+pg| ***** 100 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 101 ***** |
+
+
+mb|2h|
+pg| ***** 102 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 103 ***** |
+
+
+mb|2s|
+pg| ***** 104 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 105 ***** |
+
+
+mb|3s|
+at|^^West will only bid 3@s with a MAX, a solid 10 count.|
+pg| ***** 106 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 107 ***** |
+
+
+mb|4s|
+at|   Now East has a clear raise to game.|
+pg| ***** 108 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 109 ***** |
+
+
+mb|p|sk||
+pg| ***** 110 ***** |
+
+
+mb|p|
+md|0SJ43HAJ973D32CJ75,SQT97HKQT82D7CKT4,S82H65DKQ854CA863,SAK65H4DAJT96CQ92|
+pf|Y|
+pc|s3|
+pg| ***** 111 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 112 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 3,wide|
+pn|RogerPfi,tosunerk,Curls77,Eszter5|rh||ah|Practice 3|sv|-|sk|s|
+%% 1SQ94HKQT8DAKJT7C6,SAK53H9754D864CQ2,SJT82HAJ3D95CKJT9,S76H62DQ32CA87543
+md|1SQ94HKQT8DAKJT7C6,,SJT82HAJ3D95CKJT9,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Practice 3 |
+pg| ***** 113 ***** |
+
+
+mb|1D!|an|11-15, 1+@d, No 5M, No 6@C, not 13-15 bal|
+pg| ***** 114 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 115 ***** |
+
+
+mb|1H!|an|8-10,  any shape|
+pg| ***** 116 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 117 ***** |
+
+
+mb|2H|an|Max (15 hcp)  5+@d's  &  4@h's|
+pg| ***** 118 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 119 ***** |
+
+
+mb|3N|
+at|^^The 3NT bid is not a bad bid but because North cannot be sure South has any @s's.  Eg: a @c lead to West's (possible) Ace and a @s back could mean 4 spade losers.   I think a better sequence would be
+|n^|8|at|  
+     2NT(enquiry)   -   3@s(Singleton @c, @s = suit below shortage)   -   3NT(with confidence)|  
+pg| ***** 120 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 121 ***** |
+
+
+mb|p|sk||
+pg| ***** 122 ***** |
+
+
+pf|Y|
+md|0SQ94HKQT8DAKJT7C6,SAK53H9754D864CQ2,SJT82HAJ3D95CKJT9,S76H62DQ32CA87543|
+mb|p|pc|c5|
+pg| ***** 123 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 124 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 4,wide|
+pn|RogerPfi,tosunerk,Curls77,Eszter5|rh||ah|Practice 4|sv|b|sk|w|
+mb|?|
+%% 2SQJ75HT93DJT2CKJ5,ST6HK8DAK53CQ9762,SA32HA754DQ9764C4,SK984HQJ62D8CAT83
+md|2,ST6HK8DAK53CQ9762,,SK984HQJ62D8CAT83|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Practice 4 |
+pg| ***** 125 ***** |
+
+
+mb|1D!|an|11-15, 1+@d, No 5M, No 6@C, not 13-15 bal|
+pg| ***** 126 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 127 ***** |
+
+
+mb|1H!|an|8-10,  any shape|
+pg| ***** 128 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 129 ***** |
+
+
+mb|2c|an|6+@c's (weak suit)       OR                  5@c's  &  4@d's|
+pg| ***** 130 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 131 ***** |
+
+
+mb|3c|
+at|     One thing East needs to be aware of is that the only time West will have a 4-card major is when they (West) are also Maximum (15)  and that is going to be rare.
+
+So East can bid 3@C knowing that if West is MAX and has a 4 card major he will make a move.|
+pg| ***** 132 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 133 ***** |
+
+
+mb|p|sk||
+at|^^^^OK well done - lead please - nothing in the play here.|
+pg| ***** 134 ***** |
+
+
+pf|Y|
+md|0SQJ75HT93DJT2CKJ5,ST6HK8DAK53CQ9762,SA32HA754DQ9764C4,SK984HQJ62D8CAT83|
+mb|p|pc|d6|
+pg| ***** 135 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 136 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 5,wide|
+pn|RogerPfi,tosunerk,Curls77,Eszter5|rh||ah|Practice 5|sv|e|sk|e|
+%% 3SK842HAJ986DT8CA4,SAQ9HKT75D9CJT862,ST63HQ43DQ7643C53,SJ75H2DAKJ52CKQ97
+md|3,SAQ9HKT75D9CJT862,,SJ75H2DAKJ52CKQ97|
+mb|p?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Practice 5 |
+pg| ***** 137 ***** |
+
+
+mb|1D!|an|11-15, 1+@d, No 5M, No 6@C, not 13-15 bal|
+pg| ***** 138 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 139 ***** |
+
+
+mb|1H!|an|8-10,  any shape|
+pg| ***** 140 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 141 ***** |
+
+
+mb|2d|an|5+@d's  but NOT upper-range with   5@c's  /  4@h's  /  4@s's|
+pg| ***** 142 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 143 ***** |
+
+
+mb|2N|
+ 
+pg| ***** 144 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 145 ***** |
+
+
+mb|3N|
+pg| ***** 146 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 147 ***** |
+
+
+mb|p|sk||
+at|2NT bid here pretty much has to be a max (10).  3@c probably gets you to 3NT as well.  East can tell West must have their points in the majors.  
+|n#|3|at|
+If INSTEAD West bids 2@h over 2@d  East will bid 3@c the problem then will be that West does not have the info that East is maxium and so might pass the 3@c.
+|  
+pg| ***** 148 ***** |
+
+
+pf|Y|
+md|0SK842HAJ986DT8CA4,SAQ9HKT75D9CJT862,ST63HQ43DQ7643C53,SJ75H2DAKJ52CKQ97|
+mb|p|pc|d4|
+pg| ***** 149 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 150 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 6,wide|
+pn|RogerPfi,tosunerk,Curls77,Eszter5|rh||ah|Practice 6|sv|e|sk|e|
+%% 4SQ8HKJ94DQ86CKT42,SAJT952HQT2DK93C7,S73HA8763D54C8653,SK64H5DAJT72CAQJ9
+md|4,SAJT952HQT2DK93C7,,SK64H5DAJT72CAQJ9|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Practice 6 |
+pg| ***** 151 ***** |
+
+
+mb|1D!|an|11-15, 1+@d, No 5M, No 6@C, not 13-15 bal|
+pg| ***** 152 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 153 ***** |
+
+
+mb|1H!|an|8-10,  any shape|
+pg| ***** 154 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 155 ***** |
+
+
+mb|2d|an|5+@d's  but NOT upper-range with   5@c's  /  4@h's  /  4@s's|
+pg| ***** 156 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 157 ***** |
+
+
+mb|2s|
+pg| ***** 158 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 159 ***** |
+
+
+mb|3s|
+at|^^A bid 3@S is best bid here (compared to say, 3@c) because it immediately gets the message across to partner that you are maximum.|  
+pg| ***** 160 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 161 ***** |
+
+
+mb|4s|
+pg| ***** 162 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 163 ***** |
+
+
+mb|p|sk||
+n#|3|at|^^
+Should it be that West has only 4@s's then it will still be playable  -  don't fear Moysian fits.    :)   but most of the time West will have 5+@s's.| 
+pg| ***** 164 ***** |
+
+
+pf|Y|
+md|0SQ8HKJ94DQ86CKT42,SAJT952HQT2DK93C7,S73HA8763D54C8653,SK64H5DAJT72CAQJ9|
+mb|p|pc|d5|
+pg| ***** 165 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 166 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 7,wide|
+pn|RogerPfi,tosunerk,Curls77,Eszter5|rh||ah|Practice 7|sv|b|sk|s|
+%% 1SJ95HKQDKQT862CA7,SAKT4HA43DJ5CQT98,SQ62HJ952DA3CK652,S873HT876D974CJ43
+md|1SJ95HKQDKQT862CA7,,SQ62HJ952DA3CK652,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Practice 7 |
+pg| ***** 167 ***** |
+
+
+mb|1D!|an|11-15, 1+@d, No 5M, No 6@C, not 13-15 bal|
+pg| ***** 168 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 169 ***** |
+
+
+mb|1H!|an|8-10,  any shape|
+pg| ***** 170 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 171 ***** |
+
+
+mb|2n|an|Max (15 hcp)  6+@d's   and    6322   or  7222  shape|
+at|^^^^Here the  2NT  is a much more descriptive bid than say 2@d's.  | 
+pg| ***** 172 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 173 ***** |
+
+
+mb|3n|
+n#|3|
+at|^^North can now raise to 3NT.|
+pg| ***** 174 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 175 ***** |
+
+
+mb|p|sk||
+pg| ***** 176 ***** |
+
+
+pf|Y|
+md|0SJ95HKQDKQT862CA7,SAKT4HA43DJ5CQT98,SQ62HJ952DA3CK652,S873HT876D974CJ43|
+mb|p|
+pc|c8|
+pg| ***** 177 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 178 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 8,wide|
+pn|RogerPfi,tosunerk,Curls77,Eszter5|rh||ah|Practice 8|sv|-|sk|n|
+%% 2SAKT6H65DK62CT974,S53HJ32DAT943CK82,SQJ98HAK74DQJ75CJ,S742HQT98D8CAQ653
+md|2SAKT6H65DK62CT974,,SQJ98HAK74DQJ75CJ,|
+mb|p?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Practice 8 |
+pg| ***** 179 ***** |
+
+
+mb|1D!|an|11-15, 1+@d, No 5M, No 6@C, not 13-15 bal|
+pg| ***** 180 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 181 ***** |
+
+
+mb|1H!|an|8-10,  any shape|
+pg| ***** 182 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 183 ***** |
+
+
+mb|1s|an|4441  singleton anywhere|
+pg| ***** 184 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 185 ***** |
+
+
+mb|1n|an|Where is you singleton ?|
+pg| ***** 186 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 187 ***** |
+
+
+mb|2s|an|Singleton @c,  (suit below is bid)|
+pg| ***** 188 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 189 ***** |
+
+
+mb|3c|an|(Range) Beta  -  beta because a bid of the short suit| 
+pg| ***** 190 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 191 ***** |
+
+
+mb|3s|an|Upper Range (13+-15) 3 ctrls, (2@d would be lower range)|
+pg| ***** 192 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 193 ***** |
+
+
+mb|4s|
+pg| ***** 194 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 195 ***** |
+
+
+mb|p|sk||
+pg| ***** 196 ***** |
+
+
+mb|p|
+md|0SAKT6H65DK62CT974,S53HJ32DAT943CK82,SQJ98HAK74DQJ75CJ,S742HQT98D8CAQ653|
+pf|Y|
+pc|d8|
+at|^^
+If you do try to play against the aaBridge bots you will go down.
+^mWould you find that defense if you were   East - West ?|
+pg| ***** 197 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  
+|n^|5|at|
+Ok, we're going to leave it there for tonight. Lots of stuff to digest. You can check up on all this stuff on the website. 
+
+Please remember that you really need to learn and practice this with a PARTNER.
+
+
+
+
+RogerPfi: ty Oliver
+
+
+Curls77:  thanks, gn!
+
+
+Eszter5: gn

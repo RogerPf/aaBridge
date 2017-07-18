@@ -1,0 +1,488 @@
+
+%%
+%%
+
+%% <--SECT_HEAD-->=Session 5 b                     1@d  Unbalanced   
+%%
+%%
+%%  Date last Edited    2015-04-05          set by human hand (if at all)
+%%
+%%  MovieMaker          Karen10
+%%
+
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+
+fh|136|ff|1Arial|fb|10|fm|1|      Font 1
+fh|238|ff|2Arial|fb|20|fm|2|      Font 2
+fh|339|ff|3Arial|fb|30|fm|3|      Font 3
+fh|440|ff|4Arial|fb|40|fm|4|      Font 4  Section titles in chapters
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|50|fm|6|      Font 6
+fh|764|ff|7Arial|fb|70|fm|7|      Font 7  Officer Precision size in banner
+fh|870|ff|8Arial|fb|80|fm|8|      Font 8  Chapter title size in banner
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1210|cg|1255|cb|1255|   touch of blue
+cr|2000|cg|2000|cb|2000|   text font color - this is NOT full black it is changed to a dark gray
+cr|3255|cg|3240|cb|3240|
+cr|4255|cg|4240|cb|4240|   all so far highlight color
+cr|5198|cg|5205|cb|5229|
+cr|6063|cg|6110|cb|6065|   Top Title Color   On Title Page
+cr|7198|cg|7205|cb|7229|   Lower Title Color On Title Page
+cr|8255|cg|8000|cb|8000|   red for emphasis
+cr|9255|cg|9255|cb|9255|   'white' but not white - on Title page for Font color behind blue title
+
+fh|t40|                    Font   t  t-title      section titles within chapters
+fh|b50|                    Font   b  b-bigTitle
+
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+
+cr|m160|cg|m060|cb|m060|   fill   m  m-mastColor     on Title Pages     Sickly Orange
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Dan  Neil  Precision                                    2013 ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bSession 5 b                     1@d  Unbalanced   ^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+
+
+at|^b@2^*bdjneill:^*n  We will turn to a hand that is ^*bNOT 11-13 balanced^*n
+
+So far, it's all been 11-13 balanced, because actually, half the time or more it is!
+
+wyoming33: Is responder aways captain?
+
+djneill:  Right, if opener is 11-13 balanced, responder is captain
+|
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2886|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2886 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+nt||
+%%%%%%board 16
+mn|session 5  board 16|
+qx|16|st||pn|South,West,North,East|rh||ah|example 16|ah|Opener not 11-13|sv|o|sk|n|
+md|3S65HKQ4DQ87CKQJ95,S843HA986DK6CAT63,SAQTHJT5DAJT942C7,SKJ972H732D53C842|
+mb|1dp|
+pg| ***** 1 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^2C|mb|2c|at|djneill:  This time, South is not sure she wants to declare 3NT, 
+so starts with 2@c|
+pg| ***** 3 ***** |
+
+
+nt||mb|p|sk|n|lb|*bPlease chose your bid.^^2d|mb|2D|at|djneill:  North is ^*uUNbalanced^*n
+With 6+ diamonds unbalanced, North has an easy 2@d rebid.
+And it's pretty natural after this.
+|
+pg| ***** 5 ***** |
+
+
+nt||sk|s|mb|p3D|at|djneill:  South has a @d fit so can raise @d|
+pg| ***** 6 ***** |
+
+
+nt||sk|n|mb|p3S|at|djneill:  North is worried about @h so bids a stopper|
+pg| ***** 7 ***** |
+
+
+nt||mb|p3Nppp|
+pg| ***** 8 ***** |
+
+
+sk||at|djneill:  South has the 4th suit (hearts) covered, so 3NT is where it is.
+
+Karen10: 3@d forcing?
+djneill:  Yes if you recall, 2@c was game forcing unless 3@c rebid immediately.
+(MM..yes, but this in new situation, raising p's suit)
+|
+pg| ***** 9 ***** |
+
+
+nt||
+
+
+
+
+
+%%%%%%board 17
+mn|session 5  board 17|
+qx|17|st||pn|South,West,North,East|rh||ah|example 17|ah|showing misfit|sv|o|sk|n|
+md|3SQ65HKQJDQ8CAT984,ST843HA95DACQ7632,SAK72HT874DJ542CK,SJ9H632DKT9763CJ5|
+mb|1dp|
+pg| ***** 10 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^2C|mb|2cp|sk|n|mb|2N|an|3-suiter misfit and minimum|at|djneill:  This time North is unbalanced but has the 3-suiter misfit for South
+
+The way to show this ^*uexact shape^*n is with ^*b2NT (minimum)^*n or ^*b3NT (maximum)^*n
+|
+pg| ***** 12 ***** |
+
+
+nt||mb|p3Nppp|
+pg| ***** 13 ***** |
+
+
+sk||at|djneill:  South knows now there is no fit, so just bids 3NT|
+pg| ***** 14 ***** |
+
+
+nt||
+
+
+
+
+%%%%%%board 18
+mn|session 5  board 18|
+qx|18|st||pn|South,West,North,East|rh||ah|example 18|ah|showing good fit|sv|o|sk|n|
+md|3SA63HA8DT98CKQJT4,SKJ942HJT93DJCA72,S7HK52DAKQ74C9853,SQT85HQ764D6532C6|
+mb|1dp|
+pg| ***** 15 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^2C|mb|2cp|sk|n|lb|*bPlease chose your bid.^^2s|mb|2S|an|very artificial|at|djneill:  Sometimes North has a ^*ugood fit^*n for South, unbalanced
+
+^*bThe way to show this is with a 2@s rebid^*n
+
+This is very artificial, will take studying I am sure
+|
+pg| ***** 18 ***** |
+
+
+nt||mb|p|sk|s|lb|*bPlease chose your bid.^^2n|mb|2N|an|Where is shortness?|at|djneill:  The way I like to play here is that now 
+
+2NT says "where is your singleton or void"|
+pg| ***** 20 ***** |
+
+
+nt||mb|p3S|an|in spades|
+pg| ***** 21 ***** |
+
+
+mb|p4C|at|djneill:  Now South can see that NT might be difficult with just one spade stopper.
+At the same time, there may be a  club slam, with 9 trumps, anything can happen
+|
+pg| ***** 22 ***** |
+
+
+nt||sk|n|mb|p4D|at|djneill:  North has a great 5-card suit, and all prime cards
+So North cue-bids 4@d
+North can basically count a slam if there are enough keycards... but 0314 makes it difficult - 
+you don't always know if you have the Queen of trumps until it is too late.
+|
+pg| ***** 23 ***** |
+
+
+nt||sk||mb|p4Hp5Cppp|
+pg| ***** 24 ***** |
+
+
+at|djneill:  This is a difficult slam to find
+South also is not sure the @d are so solid
+But at least the gadget avoided 3NT
+|
+pg| ***** 25 ***** |
+
+
+nt||
+
+
+
+
+%%%%%%board 19
+mn|session 5  board 19|
+qx|19|st||pn|South,West,North,East|rh||ah|example 19|sv|o|sk|n|
+md|3SAK4H87DKQ9CJT952,SJ983H6542D53C863,S2HKJ93DAJ842CK74,SQT765HAQTDT76CAQ|
+mb|1dp|
+pg| ***** 26 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^2C|mb|2cp|sk|n|lb|*bPlease chose your bid.^^3C|mb|3Cp|at|djneill:  There is one more funny bid opener can use to show an unbalanced hand.
+If  2@s  showed an ^*uunbalanced hand with 4-card support^*n...
+
+^*b3@c shows an unbalanced hand with 3-card support - but just 5 diamonds^*n
+|
+pg| ***** 29 ***** |
+
+
+nt||sk|s|lb|*bPlease chose your bid.^^3d|mb|3D|an|which Major?|at|djneill:  I like to play that 3@d here asks which Major opener really has|
+pg| ***** 31 ***** |
+
+
+nt||mb|p|sk|n|lb|*bPlease chose your bid.^^3h|mb|3Hp|sk|s|mb|3Nppp|
+pg| ***** 33 ***** |
+
+
+sk||at|djneill:  Once South knows North is  1@s - 4@h - 5@d - 3@c  exactly, it is not difficult to rest in 3NT
+So the thing to remember for a 1@d opening is:  Opener is USUALLY 11-13 balanced
+
+Let's see how it works when the opponents interfere over 1@d
+
+|
+pg| ***** 34 ***** |
+
+
+nt||
+
+
+
+
+%%%%%%board 20
+mn|session 5  board 20|
+qx|20|st||pn|South,West,North,East|rh||ah|example 20|sv|o|sk|n|
+md|3SK75HAKQ3DAT52CT6,STHJ8765D8643C942,SJ93HT942DKJCAKJ3,SAQ8642DQ97CQ875|
+mb|1d1s|
+pg| ***** 35 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^x|mb|d|at|djneill:  Most bids are just like normal SAYC here.
+Just remember that opener is:   you guessed it:  11-13 balanced most often
+South has 16, enough for game.
+But just like in SAYC, we use a NEGATIVE DOUBLE to ask about hearts
+|
+pg| ***** 37 ***** |
+
+
+nt||mb|p2H|
+pg| ***** 38 ***** |
+
+
+mb|p4Hppp|
+pg| ***** 39 ***** |
+
+
+sk||at|djneill:  South has 16 and a well-placed @sK behind overcaller, so maybe 17 HCP
+Still, North is: .... 11-13 BALANCED
+So there is no reason to explore
+If North had 14-15, North would be unbalanced maximum and have jumped around
+If North had 12-13 unbalanced with 4 @h's, North would have tried 3@h over the double
+So by bidding 2@h, North is clearly showing a MINIMUM hand
+
+|
+pg| ***** 40 ***** |
+
+
+nt||
+
+
+
+
+%%%%%%board 21
+mn|session 5  board 21|
+qx|21|st||pn|South,West,North,East|rh||ah|example 21|sv|o|sk|n|
+md|3SJ2HAKT76DKQ6C763,SK985H84D954CK985,SATHQJ9DJ8732CQJ2,SQ7643H532DATCAT4|
+mb|1d1s|
+pg| ***** 41 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^2H|mb|2h|at|djneill:  just like in SAYC, a NEW suit is forcing by responder|
+pg| ***** 43 ***** |
+
+
+nt||mb|3S|sk|n|lb|*bPlease chose your bid.^^4H|mb|4Hppp|sk||
+pg| ***** 45 ***** |
+
+
+%%%%%%board 22
+mn|session 5  board 22|
+qx|22|st||pn|South,West,North,East|rh||ah|example 22|sv|o|sk|n|
+md|3S75H62DAQT2CKQ653,SK2H8743D987CAT97,S863HAKTDKJ53CJ82,SAQJT94HQJ95D64C4|
+mb|1d1s|
+pg| ***** 46 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^2C|mb|2c|at|djneill:  This time, South has support for partner in diamonds
+Or does she?|
+pg| ***** 48 ***** |
+
+
+at|
+Remember, that 1@d could be a doubleton
+A better try by South would be 2@c
+|
+pg| ***** 49 ***** |
+
+
+nt||mb|p|sk|n|lb|*bPlease chose your bid.^^3C|mb|3C|an|minimum with fit|mb|p|sk|s|lb|*bPlease chose your bid.^^p|mb|pp|
+pg| ***** 52 ***** |
+
+
+sk||at|djneill:  South has 11, but remember, Precision opens light, 
+so 11 is not enough to force to game on, sometimes not even enough to invite on.
+So South can Pass.
+|
+pg| ***** 53 ***** |
+
+
+nt||
+
+
+
+
+%%%%%%board 23
+mn|session 5  board 23|
+qx|23|st||pn|South,West,North,East|rh||ah|example 23|sv|o|sk|n|
+md|3SK965H984DA963CQ3,SQ2HAJ52DJT87CJ72,SATHKT76D42CAT865,SJ8743HQ3DKQ5CK94|
+mb|1d1s|
+pg| ***** 54 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^1n|mb|1N|an|7-10/11, stopper|at|djneill:  Just like in SAYC, if South has a stopper and some HCP, she can try 1NT|
+pg| ***** 56 ***** |
+
+
+nt||mb|p|sk|n|lb|*bPlease chose your bid.^^p|mb|p|at|djneill:  North might want to retreat into clubs here..
+The problem with retreating into clubs is that when opener bids 1@d then 2@c, it shows BOTH minors
+North would be embarassed if South corrected 2@c back to 2@d with 4 diamonds :-)
+Playing in a 4-2 fit is not fun.
+So North just pauses and plays it here.
+|
+pg| ***** 58 ***** |
+
+
+sk||nt||mb|p|
+pg| ***** 59 ***** |
+
+
+%%%%%%board 24
+mn|session 5  board 24|
+qx|24|st||pn|South,West,North,East|rh||ah|example 24|sv|o|sk|n|
+md|3SK73HJ96DKJ754CA5,SJT5H854D6CK98432,S82HAKQ7DQ83CJT76,SAQ964HT32DAT92CQ|
+mb|1d1s|
+pg| ***** 60 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^2d|mb|2D|an|forcing, 5+ D|at|djneill:  Here comes the part that is important to discuss with partner.
+If opener has not bid diamonds, is diamonds a "new suit"?|
+pg| ***** 62 ***** |
+
+
+at|
+It is definitely a new suit!|
+pg| ***** 63 ***** |
+
+
+nt||mb|2S|mb|3D|an|fit, minimum|
+pg| ***** 64 ***** |
+
+
+mb|p|mb|p|mb|p|
+pg| ***** 65 ***** |
+
+
+sk||at|djneill:  while 2@d is forcing as a new suit, 
+3@d is weak!|
+pg| ***** 66 ***** |
+
+
+nt||
+
+
+
+
+
+%%%%%%board 25
+mn|session 5  board 25|
+qx|25|st||pn|South,West,North,East|rh||ah|example 25|sv|o|sk|n|
+md|3SA84H5DT98753CK98,STHKJ87643D6CAQ43,SK532HAQTDQJ4CT72,SQJ976H92DAK2CJ65|
+mb|1d1s|
+pg| ***** 67 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^3d|mb|3D|an|preempt, 6+ D|at|djneill:  Let's remember the range for a "weak" bid by responder in Precision is not the same as a "weak" bid in SAYC
+In SAYC, you have to be pretty darn weak, in case opener is 18+  ....
+But in Precision, opener is 11-15, in fact, usually 11-13 balanced.
+So "weak" is more like 6 to 10
+even less if NV
+|
+pg| ***** 69 ***** |
+
+
+nt||mb|4H|mb|p|mb|p|mb|p|
+pg| ***** 70 ***** |
+
+
+sk||at|djneill:  Here West is pressured and will try hearts
+4@h even!
+But it drifts down.
+Being able to preempt with a wider range of hands makes Precision tough for opponents.
+|
+pg| ***** 71 ***** |
+
+
+nt||
+
+
+
+
+
+%%%%%%board 26
+mn|session 5  board 26|
+qx|26|st||pn|South,West,North,East|rh||ah|example 26|ah|both minors|sv|o|sk|n|
+md|3ST8HTDKQ854CQ8763,S753HAQ9852D93CJ2,SK2H7643DAJT7CKT4,SAQJ964HKJD62CA95|
+mb|1d1s|
+pg| ***** 72 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^3c|mb|3C|an|both minors, 4+ 4+, weakish|at|djneill:  1@d - 3@c is a bid that shows both minors weak
+It is the same if East bids.
+
+This applies only as a JUMP to 3@c
+|
+pg| ***** 74 ***** |
+
+
+nt||mb|p|mb|3D|an|preference|
+pg| ***** 75 ***** |
+
+
+mb|p|mb|p|mb|p|
+pg| ***** 76 ***** |
+
+
+sk||at|djneill:  Now West is in trouble.
+So in competition, it's mostly like SAYC, just remember that nobody actually showed @d yet
+wyoming33: I have been told the best way to cope with precision players is to BID
+djneill:  That's actually the best way to cope with any players.
+
+This concludes session 5
+
+
+|
+pg| ***** 77 ***** |
+
+

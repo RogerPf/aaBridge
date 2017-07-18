@@ -51,6 +51,12 @@ public class ClickPanel extends JPanel implements MouseListener, MouseWheelListe
 	}
 
 	public void mousePressed(MouseEvent e) {
+
+		if (e.getButton() == MouseEvent.BUTTON3) {
+			App.frame.rightClickPasteTimer.start();
+			return;
+		}
+
 		App.gbp.c1_1__tfdp.clearShowCompletedTrick();
 		if (App.gbp.c0_0__tlp.descEntry.hasFocus()) {
 			App.gbp.c0_0__tlp.descEntry.setFocusable(false);
@@ -58,30 +64,70 @@ public class ClickPanel extends JPanel implements MouseListener, MouseWheelListe
 		App.gbp.hideClaimButtonsIfShowing();
 	}
 
+	static double scroll_rs_value = 0;
+
 	@Override
 	public void mouseWheelMoved(MouseWheelEvent e) {
-//		System.out.println("Wheel Moved " + e.getWheelRotation() + "  " + e.getPreciseWheelRotation());
 
-//		if (App.useMouseWheel == false)
-//			return;
+		int rot_int = e.getWheelRotation();
+		double rot_doub = rot_int;
 
-		int rotation = e.getWheelRotation();
-
-		double rot_doub = 0;
-
-		if (App.using_java_6 == false) {
+		if (!App.using_java_6) {
 			rot_doub = e.getPreciseWheelRotation();
 		}
 
-		if ((rotation > 0) || (rot_doub > 0.01)) {
+		if (App.mouseWheelSensitivity == 0) { // the original way things were done
+			if ((rot_int > 0) || (rot_doub > 0.01)) {
+				down();
+			}
+			else if ((rot_int < 0) || (rot_doub < -0.01)) {
+				up();
+			}
+			return;
+		}
+
+		double threashold;
+
+		switch (App.mouseWheelSensitivity) {
+		// @formatter:off
+		   default: threashold = 1.0;  break;  //  case 1 and all uncovered
+		   case 2: threashold = 1.5;   break;
+		   case 3: threashold = 2.0;   break;
+		   case 4: threashold = 2.5;   break;
+		   case 5: threashold = 3.0;   break;
+		   case 6: threashold = 3.5;   break;
+		   case 7: threashold = 4.0;   break;
+		   case 8: threashold = 5.0;   break;
+		// @formatter:on	
+		}
+
+		scroll_rs_value += rot_doub;
+
+		// System.out.println("Mouse: " + rot_int + "    " + rot_doub + "   tot: " + scroll_rs_value + "   threashold: " + threashold);
+
+		while (scroll_rs_value >= threashold) {
+			down();
+			scroll_rs_value -= threashold;
+		}
+
+		while (scroll_rs_value <= -threashold) {
+			up();
+			scroll_rs_value += threashold;
+		}
+	}
+
+	private void up() {
+		if (App.mouseWheelInverted)
 			Controller.Right_keyPressed();
-		}
-		else if ((rotation < 0) || (rot_doub < -0.01)) {
+		else
 			Controller.Left_keyPressed();
-		}
-		else {
-//			System.out.println("Wheel Moved both reported zero - " + e.getWheelRotation()  + "  " + e.getPreciseWheelRotation());
-		}
+	}
+
+	private void down() {
+		if (App.mouseWheelInverted)
+			Controller.Left_keyPressed();
+		else
+			Controller.Right_keyPressed();
 	}
 
 }
@@ -116,9 +162,9 @@ class ClickPanCbar extends ClickPanel implements MouseListener {
 	}
 
 	public void mousePressed(MouseEvent e) {
-
 		if (e.getButton() == MouseEvent.BUTTON3) {
-			App.frame.clickPasteTimer.start();
+			App.frame.rightClickPasteTimer.start();
+			return;
 		}
 	}
 

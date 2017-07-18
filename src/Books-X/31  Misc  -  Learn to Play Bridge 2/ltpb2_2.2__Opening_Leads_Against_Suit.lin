@@ -1,0 +1,1381 @@
+%% 
+%% This is an extract from the free Windows prog - 'Learn to Play Bridge Bridge2'
+%%     available from     https://web.acbl.org/LearnToPlayBridge
+%%
+%% Original filename      ltpb2_2.2__Opening_Leads_Against_Suit.lin
+%%     file last changed  2016-Dec-07    bversion 0.18
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%                                    Font  'blank'  is size 30   
+%%                                    (sizes 30 to 35 shrink to 30  for legacy compatibility)
+fh|136|ff|1Arial|fb|10|fm|1|      Font 1   36  shrinks to size 32    
+fh|238|ff|2Arial|fb|20|fm|2|      Font 2   37  shrinks to size 34
+fh|339|ff|3Arial|fb|30|fm|3|      Font 3
+fh|440|ff|4Arial|fb|40|fm|4|      Font 4
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|60|fm|6|      Font 6
+fh|770|ff|7Arial|fb|70|fm|7|      Font 7
+fh|880|ff|8Arial|fb|80|fm|8|      Font 8
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1248|cg|1231|cb|1189|   Beige Cream
+cr|2185|cg|2201|cb|2195|   Beige grey green
+cr|3198|cg|3205|cb|3229|   grey medium
+cr|4160|cg|4174|cb|4228|   blue grey
+cr|5198|cg|5205|cb|5229|   light grey
+cr|6122|cg|6000|cb|6049|   dark maroon
+cr|9255|cg|9255|cb|9255|   'white'
+
+
+bt||nt|^b@2^z@3|
+
+
+%%   Top bar header box and Text
+ht|b|cp|9|cs|6|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|n#|k|fp|6|at|^-Learn to Play Bridge2          ^*bChapter 2   Section 2^*n^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|1|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|f|fp|9|at|^^^^^^^^^^^^^^^^|fp|7|at|^-^*bOpening Leads Against Suit Contracts^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+at|This Bridge Movie (.lin file) is an unaltered extract from  ^*bLearn to Play Bridge2^*n  a Windows program.  The original program can be downloaded from the ACBL at @-
+
+^d^*h https://web.acbl.org/LearnToPlayBridge ^*n
+    
+The ACBL requires an email address from you and will send you the download instructions  ^*bOR^*n  you can download it directly from ^*hhttp://www.bridgebase.com/index.php^*nhere^*x. (See the links, center left, on that web page.)
+
+^*bLearn to Play Bridge^*n comes as two programs.  Program 1 is for beginners, including an introduction to card play and Standard American bidding.  Program 2 (the source of this tutorial) covers material for the 'intermediate' player.
+
+An ^*bAcol^*n version of Program 1 can be downloaded from the ^*bEBU^*n ^*hhttp://www.ebu.co.uk/education/ltpb^*nhere^*x.
+ 
+
+A different set of extracts from  ^*bLearn to Play Bridge2^*n  are available for on-line play (in your browser) at @-
+
+^d^*h http://www.bridgesights.com/hondobridge/##fglb ^*n
+
+
+Our thanks goes to the ^*bACBL^*n for providing these two exceptional Bridge programs for free.
+|
+pg||
+
+
+
+qx|Suit|
+
+
+nt|^b@2^z@3|
+cs|5|cp|6|fp|4|
+at|
+^-{ Opening leads against Suit Contracts }
+^-|fp||cp||at|
+So far our study of opening leads has focused on notrump contracts. It is time to turn our attention to selecting an opening lead when there is a trump suit. There are some similarities between leading against a trump contract and leading against notrump. In particular, the basic purpose of the opening lead, to put the defense in a position to defeat the declarer's contract, is the same regardless of what the contract happens to be.
+
+The following principles, which we learned are reliable guidelines for selecting an opening lead against a notrump contract, also apply when there is a trump suit:
+
+|pg||cs|1|at|^-{ Leading a suit that your partner has bid is usually a good thing to do. }
+
+|pg||
+cs|3|at|{ Leading a suit that your opponents have bid is usually a bad thing to do. }
+
+|pg||
+cs|2|at|{ Leading a suit headed by a strong honor sequence (like KQJ) is usually a good thing to do. }
+^-
+Also, there is the one guiding principle that applies not only to opening leads against notrump contracts and opening leads against trump contracts, but also to just about all aspects of the game of bridge:
+
+|pg||
+cs|4|at|^-{ Your judgment is more valuable that any set of guidelines! }
+^-
+|pg||tb||
+
+
+nt|^b@2^z@3
+On some deals, the presence of a trump suit can add a whole new dimension to the process of selecting an opening lead. For example:
+
+|pg||
+cs|4|at|^-{Sometimes you should lead a short suit (a singleton or doubleton) against a trump contract
+in an attempt to score a trick (or several tricks) with a ruff. There are no ruffs at notrump!}
+
+|pg||
+cs|1|at|{ On some deals the best opening lead for the defense is from the trump suit itself! 
+ It goes without saying that you will never lead a trump against a notrump contract! }
+^-
+|pg||
+at|When selecting an opening lead against a notrump contract, the fundamental goal in most cases is to start establishing small cards in a long suit as winners. This is not usually the case when there is a trump suit. The reason is that even if you are able to establish winners in a long suit against a trump contract, the declarer will be able to prevent you from winning tricks in that suit by ruffing.
+
+This does not imply that you should never select a long suit as your opening lead when there is a trump suit. In fact, on many deals a long suit lead will be the best start for the defenders even when there is no hope of eventually winning tricks with the small cards in that suit.
+
+Pay close attention to the example deals that follow. You will see that in some of these deals, the recommended opening lead is exactly the same lead that would be recommended against a notrump contract. On some of the other examples deals, however, the presence of a trump suit makes a big difference to the opening leader (that's you). Get ready to return to the West seat!
+
+|pg||qx|D 7,Example Deal 7 - Not leading your longest and strongest suit|
+sk|w|st||
+
+nt|^b@2^z@3|rh||ah|Opening Leads|ah|Trump Contracts|ah|Deal 7|ha||mb|1hp2cp2hp4hppp|
+
+st||md|1sk2haqjt97d432cq2,sajt98h32dqj8c654,sq43hk54da76ckjt9|ha||mb|1hp2cp2hp4hppp|
+
+
+nt|^b@2^z@3You are the opening leader against South's 4@H contract after North responded 2@C to South's 1@H opening bid and raised South's 2@H rebid to game. |pg||hs|ws|hs|wd|at|There are 2 unbid suits, spades and diamonds, and just as if the final contract was in notrump, you should look first to the unbid suits when selecting your opening lead against a trump contract.|pg||
+
+ls|wd|
+
+nt|^b@2^z@3If South's contract was in notrump, you would certainly lead a spade. Not only is spades your longest suit, you also have a nice interior sequence in spades. The @SJ would be the card that you would lead against a notrump contract. |pg||ls|ws|hs|wd|at|However, given that South is playing with a trump suit of hearts it is correct to lead a diamond. The best way to understand why this is the case is to see how both a diamond and a spade lead might fare on the actual deal.|pg||
+
+
+
+nt|^b@2^z@3First let's try the effect of leading a diamond. As with notrump contracts, there is a table of standard opening leads that will guide you as to which card to lead from a given holding against a trump contract. From most holdings the standard opening lead is the same regardless of the contract. |pg||ls|wd|hc|dq|at|From this particular diamond holding, the standard opening lead is the @DQ against either a trump or notrump contract. |pg||
+
+nt|^b@2^z@3|lc|dq|pc|dq|at|We could go through the play of this example deal with only our hand and the dummy in view, |pg||sk||at|but the lesson will be more effective if we look at all 4 hands. |pg||hs|nd|at|It turns out that a diamond lead will defeat 4@H. Suppose declarer wins the first trick with dummy's @DA |pg||ls|nd|pc|dadd|pg||
+hs|ehwhnhsh|at|and draws the outstanding trump in 2 rounds, |pg||ls|nhshehwh|pc|hhhqh|pg||pc|hjhhh|pg||hs|nhsh|at|correctly preserving the @HK as a possible later entry to the dummy. |pg||
+
+ls|nhsh|hs|ncscec|
+
+nt|^b@2^z@3There is actually no way that the declarer can make his contract, but suppose he tries the effect of driving out your partner's @CA. |pg||ls|ncscec|pc|cqccca|pg||
+
+hs|ed|at|East can now cash the @DK |pg||ls|ed|pc|dkddd|pg||hs|edwd|at|and play a third round of diamonds to your @DJ. |pg||ls|ed|ls|wd|pc|dtddd|pg||
+
+hs|ssncws|at|The defense has now won 3 tricks and you still have the @SA. You had better take a trick with that card right now or the declarer will be able to discard both of his spades on dummy's club suit! |pg||ls|wsssnc|pc|sasss|pg||mc|9|
+
+nt|^b@2^z@3
+The declarer is now able to claim the rest of the tricks, but it is too late. The defense has won 4 tricks already meaning that the declarer's 4@H contract has failed by 1 trick. As you will see in a moment, your diamond opening lead was critical to the success of the defense on this deal.|pg||
+up|28|hs|wd|
+
+nt|^b@2^z@3A diamond opening lead resulted in the defeat of South's 4@H contract. |pg||ls|Wd|hs|ws|at|Now let's see what would happen after a spade opening lead. |pg||ls|ws|hc|sj|at|As we learned, the standard opening lead against notrump from West's spade holding is the @SJ. We will soon discuss which spade is the proper opening lead against a trump contract, but assume for now that the @SJ is the proper spade to lead against 4@H.|pg||lc|sj|pc|sj|
+hs|ss|
+
+nt|^b@2^z@3South would win the opening lead with the @SK |pg||ls|ss|pc|sssk|pg||hs|sh|at|and draw 2 rounds of trump as before. |pg||ls|sh|pc|hahhh|pg||pc|hqhhh|pg||hs|ncscec|at|Declarer would then turn his attention to the club suit, leading the @CQ to drive out your partner's @CA. |pg||ls|ncscec|pc|cqccca|pg||
+
+hs|ednd|at|Your partner would be left on lead and regardless of what suit he played now, South would make his contract with an overtrick. If East returned a diamond, for example, South would win the trick with dummy's @DA. |pg||ls|nded|pc|dtddda|pg||
+
+hs|ncsd|
+
+nt|^b@2^z@3The declarer would then be able to play 3 club winners from dummy as he discarded his 2 diamond losers on the last 2 rounds of clubs. |pg||ls|nc|ls|sd|pc|ckccc|pg||pc|cjcdc|pg||pc|ccds|pg||mc|11|hs|nsssws|at|Eventually you would win a trick with the @SA, but that would be the last trick for the defenders. South would win 11 tricks in total, making his 4@H contract with an overtrick.|pg||
+
+ls|nsssws|up|17|hs|ec|
+
+nt|^b@2^z@3If, after winning his @CA, |pg||ls|ec|pc|ca|hs|es|at|your partner had led back a spade, |pg||ls|Es|pc|s7|hs|ws|at|the result would be exactly the same. You could win this trick with the @SA, |pg||ls|ws|pc|ssas|pg||hs|nsws|at|but that would be the last trick that the defense would take. Knocking out dummy's @SQ |pg||ls|wsns|pc|sssd|pg||hs|wsnhsh|at|would establish 2 spade winners in your hand. |at|This would be a good thing to try at notrump, but those spade winners won't do you any good against 4@H. Even if you could regain the lead, declarer would simply ruff your spade winners.|pg||
+
+ls|nhsh|up|24|
+
+nt|^b@2^z@3Against notrump a spade opening lead would be very attractive from the West hand. The fact that West holds 5 spades missing only the @SK and @SQ means that it won't take long to establish some of West's lower spades as winners. |pg||hs|nhsh|at|With hearts as trump, however, it won't do West any good to establish the spade suit as the declarer will be able to use the trump suit to prevent West from enjoying his long spades. |pg||
+
+
+
+nt|^b@2^z@3|ls|nhsh|ht|d|cs|2|at|^-{ Selecting your longest suit as your opening lead, a good strategy against 
+ notrump, is not nearly as attractive a proposition when there is a trump suit. }
+
+|pg||ht|q|cs|4|at|{ The reason is that the declarer will be able to use the trump suit to 
+ prevent you from winning tricks with your small cards in your long suits. }
+|pg||
+
+
+
+nt|^b@2^z@3|ht|c|at|There is another reason to reject the opening lead of the @SJ from the West hand against 4@H:
+|pg||cs|1|ht|m|at|^-{ It is rarely a good idea to lead a lower card in a suit that contains an Ace against a trump 
+contract. If you must lead that suit, then you should lead the Ace itself, not a smaller card. }
+^-
+|pg||ls|ws|hc|sa|
+
+nt|^b@2^z@3So if you are going to select a spade as your opening lead against 4@H, the @SA is the best spade to lead. This is not a matter of making the standard opening lead. It is really a matter of strategy as experience suggests that leading the @SJ from a holding like @SAJ1098 is rarely productive when there is a trump suit. This does not mean that leading the @SA from @SAJ1098 is necessarily a good strategy either, but leading the @SA tends to work better than leading the @SJ here.|pg||
+
+
+
+nt|^b@2^z@3|ht|d|cs|3|at|^-{ There are only a few times when it is attractive to lead from a suit that is headed by the 
+ Ace against a trump contract. One of these is when the King of the same suit is also held. }
+|pg||
+ht|q|cs|2|at|{ If you have an Ace in a suit that your partner bid or a singleton Ace in a side suit,
+ it is acceptable (though not always effective) to lead your Ace against a trump contract.  }
+|pg||
+
+
+
+nt|^b@2^z@3Let's see what would happen after the @SA opening lead. |pg||lc|sa|pc|sa|at|One of the few good things that can be said about leading an Ace is that you will usually win the first trick. |pg||ls|ws|pc|sss|pg||at|After seeing the dummy and the cards that are played to the first trick, you will sometimes know what suit is best for the defenders to lead to the second trick. |pg||hs|wdnd|at|On this particular deal, West might be able to judge to switch to diamonds at trick 2 (which is the suit that West really should have led to trick 1). |pg||
+
+
+
+nt|^b@2^z@3If West switches to diamonds now, the declarer will win dummy's @DA |pg||ls|ndwd|pc|dqdadd|pg||hs|nhshehwh|at|and draw trump in 2 rounds. |pg||
+
+ls|nhshehwh|pc|hhhah|pg||pc|hqhhh|pg||hs|ndsd|at|West's diamond shift at trick 2 was effective in that it created a position where South's 2 diamond losers became exposed, but the diamond play came a trick too late. |pg||ls|ndsd|hs|ss|at|Declarer can continue by cashing his @SK |pg||ls|Ss|pc|sksss|pg||hs|nhsh|at|and then crossing to the dummy's @HK. |pg||ls|nhsh|pc|hshc|pg||
+
+hs|nssd|at|South can then win a trick with dummy's @SQ as he discards a diamond loser from his hand. |pg||ls|nssd|pc|ssds|pg||
+
+hs|ncscec|
+
+nt|^b@2^z@3The defense has won only 1 trick so far (the @SA) and East's @CA represents a second sure winner for the defense. |pg||ls|ncscec|hs|sd|mc|10|at|Unfortunately for the defenders, South has been able to dispose of one of his 2 diamond losers. The defense will come to a 3rd trick in diamonds, but that will be their last winner. The declarer will not score any overtricks this time, but more importantly, he will make his contract (losing only 1 spade, 1 diamond, and 1 club).|pg||
+
+ls|sd|up|28|hs|nsssws|
+
+nt|^b@2^z@3The opening lead of the @SA worked badly on this deal because it set up both the @SK and the @SQ as winners for the declarer. South was able to use the @SQ in dummy to discard one of his diamond losers. If South had been left to his own devices, he could never win more than 1 spade trick. That's the main problem with leading Aces - you often give the declarer tricks that he could not have won without your help.|pg||ls|ns|md|0s5dk,,s6,sqd32|ub|10|ha||mb|1hp2cp2hp3hp4hppp|
+
+ls|ss|
+
+nt|^b@2^z@3The other 3 players' hands and the bidding have now been changed slightly, but the final contract is still 4@H by South. The purpose of these changes is to show you another way that a spade opening lead might work out badly for the defense. |pg||
+
+ls|ws|hs|wd|at|First let's examine the result of a diamond opening lead. Remember that it was diamonds (and not spades) that was recommended as the best suit to lead from the West hand. |pg||ls|wd|pc|dq|
+hs|ndsd|
+
+nt|^b@2^z@3Suppose that the declarer wins the first trick with dummy's @DA (as opposed to winning the @DK in his hand). This is not necessarily a very good play, but an instructive point about defense will arise as a result. |pg||ls|sdnd|pc|dadd|pg||hs|nhshehwh|at|South continues by drawing all of the defenders' trump |pg||ls|nhshehwh|pc|hhhah|pg||pc|hqhhh|pg||hs|nhnc|at|keeping the @HK as an entry for dummy's club suit. |pg||ls|ncnh|hs|scec|at|The @CQ is played next and East wins the @CA. |pg||ls|scec|pc|cqccca|pg||
+
+hs|ed|sk|e|
+
+nt|^b@2^z@3Now let's examine the position from East's point of view. As we have seen, when the partner of the opening leader gains the lead, it is often a good idea for him to lead back the suit that was selected as the opening lead. That would be diamonds in this case, but on this deal East should know that returning a diamond is not a very good play. Do you know why?|pg||
+
+
+
+nt|^b@2^z@3The reason why East should know that a diamond return would be bad for the defense is an example of the advantage of using standard opening leads. Remember that the opening lead was the @DQ and that the lead of a Queen denies possession of the King in that suit (because if West held both the @DK and the @DQ, the opening lead would have been the @DK). |pg||
+
+sk||hs|sd|
+
+nt|^b@2^z@3East therefore knows that South still has the @DK and that a diamond return will not do the defense any good. East should know that South would win the @DK |pg||ls|edsd|pc|dddd|pg||hs|ncss|at|and proceed to discard losers on the dummy's clubs. |pg||up|4|ls|ncss|hs|ed|at|Let's back up a trick. East knows that a diamond return will help the declarer, but East has an alternative that will result in the defeat of South's 4@H contract. |pg||ls|ed|hs|ncec|
+
+nt|^b@2^z@3A club return from East is just as futile as a diamond return - East knows that the defense had better start winning some tricks soon before South's losers go away and a club return will not get the job done. |pg||ls|ecnc|hs|es|at|East should realize that spades is the only suit that offers any hope for the defense. As with the opening lead, it is correct to lead the high card from a doubleton in the middle of the play. Watch what happens if East leads back his high spade, the @SQ to the next trick.|pg||
+
+
+nt|^b@2^z@3|ls|es|pc|sq|hs|ss|at|South has 2 options here, but neither of them are winning options. South could cover the @SQ with his @SK. |pg||ls|ss|pc|sk|hs|ws|at|West would then win the @SA |pg||ls|ws|pc|sas|pg||hs|wsnsss|at|and cash 2 more tricks in that suit. |pg||ls|wsnsss|pc|sjsss|pg||pc|stsds|pg||mc|9|at|South could then claim the rest of the tricks, but his contract would be down 1. |pg||up|11|hs|ss|at|If instead South refuses to play his @SK when East leads the @SQ, the @SQ would win the trick. |pg||ls|ss|pc|sss|pg||hs|es|at|A further spade return by East |pg||ls|es|pc|s|mc|9|hs|ss|hs|ws|hs|ns|at|would result in 2 more tricks for the defense and the demise of South's 4@H contract as before. |pg||
+
+up|5|ls|nsssws|hs|es|
+
+nt|^b@2^z@3This is a good moment to examine one of the reasons why it is proper to lead the high card from a doubleton. It is true that the standard lead from a doubleton is the higher of the 2 cards, but there is more to it than that. We have just seen that a partnership that uses standard leads is able to signal each other as to which cards they were dealt (or not dealt). Leading high from a doubleton has the added benefit of gaining tricks for the defenders on many deals.|pg||
+
+ls|es|hs|ss|hc|sq|
+
+nt|^b@2^z@3On this deal, for example, we just saw that the proper lead of the @SQ by East gives South 2 losing options - regardless of whether South plays the @SK or a low spade, he will lose 3 spade tricks and his contract will fail. |pg||lc|sq|hc|s7|at|It turns out that if East leads back the right suit (spades), but the wrong card (the @S7), all of a sudden South has 2 winning options instead of 2 losing options!|pg||
+
+ls|ss|lc|s7|pc|s7|hs|wsss|
+
+nt|^b@2^z@3
+If South plays the @SK, West will win the @SA |pg||ls|ssws|pc|sksas|pg||
+
+hs|wses|at|and play back a second round of spades to East's @SQ (leading back the @SJ, the top of a sequence, just like he would if he was making an opening lead from a suit headed by the @SJ1098). |pg||ls|ws|ls|es|pc|sjsss|pg||hs|wsnsss|
+
+nt|^b@2^z@3The defense would now be in a frustrating position. Both the dummy and declarer have a small spade left and West has all of the highest spades that remain. |pg||ls|nsss|hs|edecsdnc|at|Unfortunately the lead is in the East hand and East has no more spades to return. East would have to surrender the lead to declarer in either diamonds or clubs. |pg||ls|wsedecsdnc|pc|dddd|pg||hs|ssncws|mc|10|at|South could then discard his remaining spade loser on dummy's clubs and make his contract. West's winning spades would be left to rot!|pg||
+
+up|11|ls|nc|
+
+nt|^b@2^z@3So if East errs by returning the @S7 (instead of the @SQ), South can get home by rising with the @SK despite that fact that West would take that card with his @SA. |pg||ls|ws|at|Now look what happens if South plays a small spade (instead of the @SK) on East's return of the @S7. |pg||ls|ss|pc|s|hs|ws|at|West would like to be able to let his partner stay on lead to play another spade, but he has no choice in the matter. West must overtake his partner's @S7, thereby winning the trick.|pg||ls|ws|pc|ss|pg||
+
+hs|ws|
+
+nt|^b@2^z@3The best that West can do now is to cash the @SA. |pg||ls|ws|pc|sasss|pg||hs|ss|mc|10|at|Unfortunately, that will be the last trick that the defense wins as South's @SK is now the highest card in that suit. The declarer will claim the rest of the tricks and make his 4@H contract exactly. The defense won 2 spade tricks and the @CA, but they were unable to come to the 4th trick that they needed. |pg||
+
+ls|ss|up|24|hs|wd|
+
+nt|^b@2^z@3We just saw that a diamond opening lead and subsequent good defense resulted in the defeat of declarer's 4@H contract. |pg||ls|wd|hs|ws|at|Furthermore, this lesson deal was included to demonstrate some of the ways in which an opening lead from a suit headed by the @SA can work out badly when there is a trump suit. |pg||ls|ws|hc|sa|
+
+nt|^b@2^z@3If West insists upon leading a spade, he should lead the @SA itself. Against a trump contract, leading a lower card from a suit that includes the Ace should almost always be avoided. |pg||lc|sa|pc|sa|at|The @SA would win the first trick, of course, |pg||pc|sss|pg||hs|ss|at|but South's @SK would become an undeserved winner in the process (undeserved because South never could have won a trick with the @SK if he had to play that suit himself). |pg||
+
+
+
+nt|^b@2^z@3The bottom line is that the @SA is a disastrous opening lead for the defenders. Best defense on this deal will result in the defenders winning 4 tricks, 3 in spades and the @CA. After the lead of the @SA from West, however, there is no way for the defense to win 3 spade tricks anymore and no way for them to defeat the contract (in fact, South will end up with an overtrick). |pg||
+
+ls|ss|up|4|hs|ncwc|
+
+nt|^b@2^z@3We have learned that making an opening lead from a suit that has been bid by the opponents is not usually recommended against a notrump contract. The same thing happens to be true when there is a trump suit. Interestingly, on this deal a club opening lead might work out well, despite the fact that the North has bid clubs.|pg||
+
+
+
+nt|^b@2^z@3|ls|wcnc|pc|c6|hs|ec|at|When East wins the @CA, |pg||ls|ec|pc|ccac|pg||hs|eswsssns|at|if he is able to figure out to return the @SQ, the defenders will be able to win 3 spade tricks as before and the 4@H contract will fail. |pg||ls|wsnsesss|up|4|hs|wc|at|This does not mean that a club is a smart opening lead from the West hand, only that it could work out on the actual deal. |pg||ls|wc|hs|wd|at|Leading the recommended @DQ also happens to defeat the contract. The principle of generally avoiding the lead of suits bid by the opponents is sound at both trump and notrump contracts. |pg||
+hs|whwswc|
+
+nt|^b@2^z@3You have heard this before and you are going to hear it again: opening leads do not come with any guarantees! Although the @DQ is the recommended opening lead from the West hand, just about any card that West holds might turn out to be the most effective opening lead on the actual deal. |pg||ls|wcwhwdws|hc|dq|at|The @DQ is recommended because that card will work out better than any of West's other cards on a significant percentage of possible layouts of the unseen cards.|pg||
+
+lc|dq|
+
+nt|^b@2^z@3We have covered a lot of ground with this deal and its variations. All sorts of valuable lessons concerning opening leads (and defense in general) when there is a trump suit can be found in this deal. We have only scratched the surface of this challenging topic, but before we go on to the next example deal, let's review some of the key lesson points from this deal.
+|pg||bt||
+
+nt|^b@2^z@3
+Key lesson points from the first example deal on opening leads against trump contracts:
+
+|cs|1|at|^-{ Making an opening lead from your longest and strongest unbid suit is usually best 
+against a notrump contract, but this is not the case when there is a trump suit. }
+
+|pg||
+cs|4|at|{ When there is a trump suit, it is almost never a good idea to lead a low card from a 
+suit that includes the Ace. If you must lead that suit, it is best to lead the Ace itself. }
+
+|pg||
+
+cs|2|at|{ It is attractive to lead from a holding like QJ8 in an unbid suit against a trump contract. }
+
+|pg||
+
+cs|3|at|{ From most holdings, the standard opening lead against a trump contract is the same 
+ as it would be if the contract was notrump. Exceptions will be noted later in this chapter. }
+
+|pg||
+
+cs|1|at|{ If the partner of the opening leader wins a trick, he should strongly 
+ consider leading back the suit that was selected as the opening lead. }
+
+|pg||
+
+cs|4|at|{ The table of standard opening leads should be used by the defenders for 
+ deciding which card to lead from a given suit to ^*Iany^*N trick, not just the first trick. }
+
+|pg||
+
+
+cs|2|at|{ The standard lead from a given holding is "standard" for a reason. For example, leading 
+high from a doubleton usually results in more tricks for the defense than leading low! }
+
+|pg||
+
+cs|3|at|{ The recommended opening lead from a given hand will not necessarily be the most 
+effective opening lead on the actual deal. Opening leads come with no guarantees! }
+
+|pg||qx|D 8,Example Deal 8 - Leading for ruffs 1|
+sk|w|st||
+
+nt|^b@2^z@3|rh||ah|Opening Leads|ah|Trump Contracts|ah|Deal 8|
+md|1skqt972hakd4ckqj8,s53hq9874dkt853c2,saj64hj65daj76c97|
+
+
+nt|^b@2^z@3As you know, the presence of a trump suit can be a life-saver for the declarer in a lot of different ways. For example, the declarer can use the trump suit to ruff the defenders' winners, to ruff his own losers in the dummy, or to embark on a crossruff. As this example deal illustrates, the defenders can also use the trump suit to win tricks that would not be available to them in a notrump contract.|pg||
+
+mb|1sp3sp4n|an|Blackwood|ha||mb|p5h|an|2 Aces|ha||mb|p6sppp|
+
+
+nt|^b@2^z@3On this deal South opened the bidding with 1@S and North made a limit raise to 3@S. South's 4NT bid was the Blackwood convention and North's 5@H bid showed 2 Aces. South then placed the contract in 6@S. |pg||hs|wswhwdwc|at|Once again, it is up to you to select an opening lead from the West hand. Which suit will it be? |pg||
+
+ls|wswc|
+
+nt|^b@2^z@3We have already learned that it is usually best to make a passive lead against a notrump slam. This means that you should avoid leading from a suit in which you have a high card against 6NT or 7NT as it is better to let the declarer play such suits himself. If the final contract was 6NT or 7NT, a heart or diamond opening lead would be a poor choice because you would be more likely to win a trick with the @HQ or the @DK by leaving those suits alone.|pg||
+
+
+
+nt|^b@2^z@3The same principle applies when the opponents are in a grand slam with a trump suit. It is best to make a passive lead against such contracts in an effort to not give the declarer a trick that he could not have won on his own. However, when the contract is a small slam with a trump suit it is usally best to make an aggressive opening lead (that is, a lead that is designed to set up a winner for the defense).|pg||
+
+
+
+nt|^b@2^z@3On this deal, a heart opening lead would set up a winner for the defenders if East was dealt the @HK. Similarly, a diamond opening lead would be effective if East was dealt the @DQ. In either case, if East was later able to gain the lead (with a trump winner for example), the defense might be able to cash another trick and defeat South's slam contract. |pg||
+
+
+
+nt|^b@2^z@3If the defense leads passively against a small slam with a trump suit, the declarer will often have time to establish extra winners in the dummy that will provide discards for his losers. It is therefore important for the defenders to start trying to develop their own winners as quickly as possible when the contract is a small slam with a trump suit. There is no earlier time than the opening lead which is why an aggressive opening lead is usually best in this situation.|pg||
+
+
+
+nt|^b@2^z@3It would not be unreasonable for West to select either a heart or a diamond as his opening lead here (the standard opening lead would be the 4th highest card of the suit led - either the @H7 or the @D5), |pg||hs|wc|ls|wdwh|at|but West has better prospects of defeating 6@S with a different opening lead - his singleton @C2! |pg||hs|ws|at|If West leads his one and only club, there is a good chance that he will be able to win a later trick with a ruff.|pg||
+
+ls|ws|
+
+nt|^b@2^z@3Let's see how well the singleton club opening lead might work in practice. |pg||ls|wc|pc|c|pc|ccac|at|East wins the first trick with the @CA - a very good sign for the defense! |pg||
+
+pc|cck|hs|ws|at|East, who has learned all about the wisdom of returning the suit that his partner led, returns a club. South plays the @CK and West ruffs. |pg||ls|ws|pc|sc|mc|11|sk||at|The defense just won the first 2 tricks and South claims the rest of the tricks. That's OK with you as 2 tricks is all the defense needs when the declarer is in a small slam!|pg||
+
+up|8|hs|wcec|
+
+nt|^b@2^z@3If you are thinking that it was lucky that the opening lead of West's singleton club worked so well, you are partially correct - it was certainly fortunate (but by no means a miracle) that East was dealt the @CA. |pg||md|0,,cas8,sac9|hs|es|ls|ec|at|Note, however, that if East had been dealt the @SA instead of the @CA, the singleton club opening lead would have been equally effective. As such, the lead of the singleton @C2 does not require as much luck to succeed as you might think!|pg||
+
+ls|es|
+
+nt|^b@2^z@3On this layout, after a club opening lead, |pg||ls|wc|pc|c|hs|nc|at|the declarer would win the first trick |pg||ls|nc|pc|cacc|pg||hs|nsss|at|and proceed to draw trump. |pg||ls|nsss|pc|s|hs|es|at|East would win this trick with his @SA |pg||ls|es|pc|sss|pg||hs|ec|at|and, being a good partner, East would return the suit that West selected for his opening lead. |pg||ls|ec|pc|cck|hs|ws|at|As before, West would win the defenders' second trick by ruffing a club. |pg||ls|ws|pc|sc|pg||mc|11|at|The declarer would claim the rest of the tricks, but thanks to the singleton club opening lead, his slam contract would not be a success. |pg||
+
+
+up|12|hs|wc|
+
+nt|^b@2^z@3Did you realize that the singleton club opening lead was the only lead from the West hand that would defeat 6@S? |pg||ls|wc|hs|wded|at|On the surface a diamond opening lead looks pretty good since East was dealt the @DQ to back up West's @DK. |pg||ls|edwd|hc|d5|at|Suppose West decides to lead a diamond, selecting the standard opening lead of his 4th best card in that suit (the @D5). Do you think that East's @DQ is enough to ensure the defeat of South's small slam?|pg||
+
+nt|^b@2^z@3|lc|d5|pc|d5|hs|nd|at|Declarer will win the first trick with dummy's @DA |pg||ls|nd|pc|dadd|pg||hs|nssses|at|and lead a trump to knock out your partner's @SA. |pg||ls|nssses|pc|ssss|pg||hs|wded|at|Now that the @DA is gone, your @DK is the highest diamond in the deck, but it will not help East to return the suit that you led (or any other suit for that matter). |pg||ls|edwd|pc|d|hs|ss|at|South is able to ruff East's diamond return |pg||ls|ss|pc|sdd|pg||hs|ssws|at|and draw your last trump, preventing you from scoring any ruffs on defense. |pg||ls|ssws|pc|skssc|pg||mc|12|at|Declarer can now claim the rest of the tricks to make his small slam. |pg||
+
+up|16|hs|wc|
+
+nt|^b@2^z@3It is in fact the case that the singleton @C2 is the only opening lead that West can make that will lead to the defeat of South's 6@S. Seeing as you are already an accomplished opening leader against notrump contracts, it may strike you as odd that a singleton is considered an attractive opening lead when there is a trump suit. After all, we tend to lead long suits against notrump and a singleton is close to the least number of cards in a suit that you can have!|pg||
+
+
+
+nt|^b@2^z@3|ht|d|cs|1|at|^-{ A singleton is about the worst opening lead that you can make against notrump (unless 
+ your partner bid that suit); it is one of the best opening leads against a trump contract. }
+|pg||
+ht|q|at|The reason is that after you lead a singleton you will be void in that suit and you will be able to win a trick by ruffing if your partner is able to return the suit that you led. |pg||
+
+
+
+nt|^b@2^z@3In fact, leading a singleton against a trump contract is such an attractive proposition that it can override one of the most important principles of selecting an opening lead that we have learned. The principle that it is a bad idea to lead a suit that the opponents have bid is often superceded by the possession of a singleton. On many deals, a singleton lead will work well against a trump contract, even if the opponents have bid that suit.|pg||
+
+
+
+
+nt|^b@2^z@3Please don't interpret all of this glorification of the singleton opening lead against trump contracts to mean that you should ^*Ialways^*N lead a singleton if you were dealt one. We will learn that there are times in which a singleton lead against a trump contract should be avoided. Far more often than not, however, the lead of a singleton against a trump contract will be a good start for the defense.|pg||
+
+
+
+nt|^b@2^z@3Before we move on to the next example deal, one point should be clarified about leading singletons against trump contracts. You probably figured this out already, but just in case...
+|pg||
+cs|2|ht|n|at|^-{ A singleton trump is not an attractive opening lead! All of this discussion has been 
+ about leading side suit singletons. You cannot get a ruff if you lead a singleton trump! }
+|pg||
+
+
+
+
+qx|D 9,Example Deal 9 - Leading for ruffs 2|
+ls|wc|sk|w|st||
+
+nt|^b@2^z@3|rh||ah|Opening Leads|ah|Trump Contracts|ah|Deal 9|
+
+md|1sk42hjt754daj3cat,s6ha9d7652cj87654,sa97hkq83dkqt84ck|
+
+
+
+nt|^b@2^z@3In the last example deal we saw how the presence of a trump suit gives the defense a chance to win tricks by ruffing and that the opening lead of a side suit singleton is a great way for the defense to set up a position whereby a ruff can be achieved. The main lesson of this deal is that leading a singleton is not the only way for the defenders to win tricks with ruffs.|pg||
+mb|1hp2dp3dp4n|an|Blackwood|ha||mb|p5h|an|2 Aces|ha||mb|p6hppp|
+
+
+
+nt|^b@2^z@3Once again the opponents have bid to a slam contract and once again you, as West, find yourself on opening lead. North responded 2@D to South's 1@H opening bid and then launched into Blackwood after South's raise to 3@D. South's 5@H bid showed 2 Aces and North then placed the contract in 6@H. This North-South partnership sure likes to bid a lot! Good thing that you are getting to be a pro when it comes to choosing opening leads!|pg||
+
+hs|wswhwdwc|
+
+nt|^b@2^z@3Do you have any idea what suit rates to be the most successful opening lead for the defense? |pg||ls|whwdwc|at|Notice that you have a precious singleton in spades. Spades is not the trump suit so, according to what we learned in the last example deal, the @S6 looks to be a very attractive opening lead. What do you think? Can you think of a good reason why this may be one of the few deals where a side suit singleton should not be led against a trump contract?|pg||
+
+
+
+nt|^b@2^z@3In order to see why the singleton @S6 would make a poor choice of opening lead on this deal, recall the reason that a side suit singleton is normally an attractive opening lead against a trump contract: if the partner of the opening leader gains the lead he will be able to give the opening leader a ruff in the suit that was led. The key here is that partner will have to gain the lead in order for the singleton lead to result in a defensive ruff.|pg||
+
+hc|ha|
+
+nt|^b@2^z@3Obviously the only way that East can gain the lead is if East wins a trick, but if East wins a trick we will not need a ruff to defeat South's small slam. The reason is that the West hand contains the @HA - a certain winner with hearts as trump. If East ever wins a trick the defense is certain to win at least 2 tricks which is enough to defeat 6@H. Leading the @S6 in an effort to get a ruff amounts to trying for a 3rd trick for the defense. |pg||
+
+ls|ws|lc|ha|
+
+nt|^b@2^z@3Now, it is always nice to score extra undertricks on defense, but your primary concern as a defender should be to ensure the first undertrick. Once the defenders have won enough tricks to defeat the contract you can then focus on trying for extra undertricks. The same principle applies to the declarer - overtricks should only be considered once the contract is safe.|pg||
+
+hc|ha|
+
+nt|^b@2^z@3Did you consider selecting the @HA as your opening lead? The advantage of this lead is that you know the @HA will win the first trick and the sight of the dummy might give you a good idea as to what to lead to the second trick. |pg||at|That reasoning makes some sense, but it is a better idea to try to set up a winner for the defense with your opening lead and later, when you gain the lead with the @HA, use that opportunity to take a trick with the winner that you set up. |pg||
+
+lc|ha|hs|ws|
+
+nt|^b@2^z@3Think again about the possibility of the defense winning a trick with a ruff. On this deal it would be wrong to try to win a ruff in your hand by leading your singleton spade. |pg||ls|ws|hs|wdwc|at|Fortunately, you are not the only defender who can win a trick with a ruff. Perhaps leading a diamond or a club will create a situation whereby your partner will be able to score a ruff for the defense. |pg||
+
+ls|wd|
+
+nt|^b@2^z@3Consider the fact that you have a 6-card club suit. That's quite a few clubs. There are only 7 clubs left for the other 3 players and perhaps your partner was dealt a singleton in that suit. If that is the case then a club opening lead will make your partner void in clubs. When you later gain the lead with the @HA you would be able to give him a club ruff to defeat 6@H. Wouldn't that be a clever way to defend?|pg||
+
+
+
+
+nt|^b@2^z@3Yes, that would be very clever and you should be proud of yourself if you considered this possibility. |pg||ls|wc|hs|wd|at|You should be even prouder if you thought of selecting a diamond as your opening lead because there is a better chance that if your partner has a singleton, it is diamonds and not clubs. That may seem strange to you since you were dealt 2 fewer cards in diamonds than you were dealt in clubs. Doesn't it make sense that partner rates to be shorter in your long suit?|pg||
+
+ls|wd|hs|wc|
+
+nt|^b@2^z@3Under normal circumstances that would indeed be the case. Your extra length in clubs would make it more likely that your partner was dealt a singleton club than that he was dealt a singleton diamond.  |pg||ls|wc|hs|wd|at|These are not normal circumstances. Have a look at the bidding. North's 2@D response suggests at least 4 cards in diamonds and South's raise to 3@D suggests at least 3-card diamond support. |pg||
+
+
+
+nt|^b@2^z@3The bidding has told you that the opponents have at least 7 diamonds between them. You have 4 diamonds and there are only 13 diamonds in the deck. You therefore know that your partner has 2 diamonds at the very most. If either North has a 5-card diamond suit (not at all unlikely) or South has 4-card diamond support (also not unlikely), your partner will have the singleton diamond that we have been dreaming about. |pg||
+
+
+
+nt|^b@2^z@3Are you convinced that a diamond is the best opening lead from the West hand? |pg||at|Hang on just a minute - we know that it is generally not a good idea to lead a suit that has been bid by the opponents and both North and South have bid diamonds. |pg||at|Don't worry about that here. If your judgment tells you that a diamond opening lead rates to defeat 6@H, then that is all that matters. Your judgment is more valuable than any rules or guidelines for selecting an opening lead!|pg||
+
+
+
+nt|^b@2^z@3This deal is a really good example of what judgment is all about. Watch what happens if you are willing to back your judgment and select a diamond as your opening lead. Which diamond should you lead? In truth, it doesn't really matter. Any of your 4 diamonds will get the job done. Let's try the @D2. |pg||
+
+nt|^b@2^z@3|ls|wd|pc|d2|hs|nd|at|The 5-card diamond suit in the dummy is a wonderful sight to behold! Given that you started with 4 diamonds and South must have at least 3 diamonds for his raise to 3@D, you now know that your partner really does have a singleton (or void) in the suit that you led. |pg||ls|nd|pc|dddj|at|Your partner follows suit with the @D9 and South wins the first trick with his @DJ. If South's bidding is to be trusted, you know that your partner is now void in diamonds! |pg||
+
+
+
+nt|^b@2^z@3|pc|h|hs|wh|at|The declarer leads a heart out of his hand. While it is true that you could play your @H9 here and be fully confident that you will later win a trick with the @HA, there is a very good reason to take your @HA right away. Do you know what it is? |pg||at|The reason is that you can give your partner a diamond ruff only if he has a trump in his hand when you lead a second round of diamonds. If you are not careful, your partner is going to run out of trumps!|pg||
+
+sk||
+
+nt|^b@2^z@3Watch what happens if you duck your @HA, secure in the knowledge that it will always win a trick. |pg||ls|Wh|pc|h|hs|nheh|at|The dummy will win the trick as your partner follows with one of the 2 trumps that he was dealt. |pg||ls|nheh|pc|hkh|pg||hs|nhehwhsh|at|South will then play a second round of trump to your @HA as your partner follows suit with his second and last trump. |pg||ls|nhshehwh|pc|hhhjh|pg||
+
+hs|wdes|
+
+nt|^b@2^z@3If you now lead a second round of diamonds, expecting your partner to now be void in that suit, your expectations will be proven correct. East will trump with a spade |pg||ls|wdes|pc|dds|at|- hang on, spades are not trump, hearts are trump! That's right - East's spade play was a simple discard, not a ruff. |pg||mc|12|at|It was a great opening lead, but an awful followup defense. South can now claim the rest of the tricks to make his contract. Rats!|pg||
+
+up|10|hs|wh|
+
+nt|^b@2^z@3Your brilliant opening lead really deserves a better fate, so let's go back to the first round of trump and properly win the trick with the @HA. |pg||ls|wh|pc|hahh|pg||
+
+hs|wdeh|at|Now when you lead a diamond East still has a trump left with which he can ruff. |pg||
+ls|wdeh|pc|ddhd|pg||mc|11|at|There will be no extra undertricks for the defense on this deal as South claims the rest of the tricks. Don't concern yourself with that - you defeated the contract and that's what the defenders are supposed to try to accomplish!|pg||
+
+up|12|hs|wd|
+
+nt|^b@2^z@3Have a look at the entire deal and notice that the only way for the defenders to defeat South's 6@H contract is for West to find a diamond opening lead, to win the first round of trump with the @HA, and to give East a diamond ruff. After any other opening lead the declarer will be able to drive out the @HA, win any return, draw the rest of the defenders' trump and win the rest of the tricks without breathing hard.|pg||
+
+
+
+nt|^b@2^z@3Make sure that you understand that the one and only reason why it is possible to figure out to select a diamond as the opening lead from the West hand is due to the North-South bidding. The fact that North bid diamonds and South raised diamonds makes it very likely that East was dealt a singleton diamond. |pg||
+
+
+
+nt|^b@2^z@3|cs|2|ht|d|at|^-{ Good bidding increases the chances of reaching the best final contract, but on some deals
+ the bidding will make it easier for the defenders to figure out how to defeat that contract! }
+|pg||
+ht|q|cs|4|at|{ As a defender, think about the opponents' bidding and what it tells you about their hands.
+ Your opening leads and later defense will improve if you take the bidding into account! }
+
+|pg||
+ls|wd|
+qx|D 10,Example Deal 10 - Just like notrump|
+
+tb|y|bt||
+
+nt|^b@2^z@3|cs|5|cp|6|at|
+^-{ Example Deal 10 - Just like notrump }
+^-
+|cp||at|You have been told that in some ways selecting an opening lead against a trump contract is similar to selecting an opening lead against notrump. In the 3 example deals of trump contracts that we have seen so far, the opening lead that was recommended was different from the lead that you would make if the final contract had been notrump. 
+
+|pg||
+
+at|We have seen that with @DQJ8 and @SAJT98 in the unbid suits, a diamond lead is more attractive than a spade lead when there is a trump suit. The opposite would be true if the contract was notrump. We have seen that the lead of a singleton is recommended against a trump contract and just about the only time that you would ever lead a singleton against notrump would be if your partner had bid  that suit.
+
+On the most recent example deal, we even saw a trump contract where the recommended opening lead was from a suit that had been bid by both of the opponents. You don't see that happen very often when the contract is notrump.
+
+After all of these example you may be starting to wonder if there really is anything in common between leading against notrump and leading against a trump contract. As the next example deal illustrates, there are some hands from which the same opening lead should be made regardless of whether or not there is a trump suit.
+
+|pg||tb||
+
+sk|w|st||
+
+nt|^b@2^z@3|rh||ah|Opening Leads|ah|Trump Contracts|ah|Deal 10|
+md|1sak2hk872ca32dkt8,st87ht4cqt865d732,sj4haj53dqj96c974|
+
+st||ha||mb|1np2c|an|Stayman|ha||mb|p2hp3hp4hppp|
+
+
+nt|^b@2^z@3South dealt and opened 1NT, suggesting a balanced hand with between 15 and 17 high card points. North's 2@C bid was the Stayman convention, asking South if he had a 4-card major suit. South showed a 4-card card heart suit and accepted when North invited game with 3@H (presumably South has a maximum hand for his 1NT opening or he would have passed North's 3@H invitation). |pg||
+
+hs|wc|
+
+nt|^b@2^z@3Assuming that you read the introduction to this example deal carefully, you should know already that a club is going to be the recommended opening lead (because you would certainly lead a club against a notrump contract). Can you see any reason not to lead from your longest and strongest suit? What about the fact that North has bid clubs? You have learned that it is usually best to avoid leading suits that have been bid by the opponents.|pg||
+
+
+
+nt|^b@2^z@3In this particular deal, the fact that North bid clubs is not relevant. North's 2@C was not a natural bid (that is, North's 2@C did not suggest length in clubs). 2@C here was the Stayman convention which neither promised nor denied length in clubs. When the opponents make an artificial bid in a suit, you should not discount the suit that they bid when you are selecting your opening lead. |pg||
+
+
+
+nt|^b@2^z@3|cs|1|ht|d|at|^-{ The guideline of favoring unbid suits for your opening lead is valid against both trump and
+ notrump contracts, but it is fine to lead suits that your opponents have bid artificially. }
+^-
+|pg||ht|p|at|We use the word artificial to describe a bid that has no relation to the suit that was named (in other words, a convention). Go ahead and lead a club even though North has bid that suit. |pg||
+
+ls|wc|hc|c6|
+
+nt|^b@2^z@3As to the question of which club to lead, the standard opening lead against notrump from a broken holding with at least 4 cards is the 4th best card in the suit (the @C6 with the holding above). The same is true if there is a trump suit. The @C6 is therefore the recommended opening lead from the West hand. |pg||
+
+nt|^b@2^z@3|lc|c6|pc|c6|hs|nc|at|
+When the dummy comes down you can see that North is not especially long in clubs - if he had been it would have been a coincidence. Make sure that you understand that an artificial bid like North's Stayman 2@C, neither promises nor denies length in the suit that was bid. |pg||
+
+
+
+nt|^b@2^z@3|ls|nc|pc|cckca|at|Your partner, East, produces the @CK and South wins the trick with the @CA.|pg||at| The reason why it is considered attractive to lead from a holding headed by something like the @CQ10 is that any club honor in partner's hand will help to establish winners for the defenders. It is always satisfying when an intelligent opening lead is rewarded with your partner being dealt one of the high cards that you were hoping for!|pg||
+
+nt|^b@2^z@3|pc|hkhhh|at|The declarer wins the next trick with the @HK. |pg||pc|hhhj|at|He then plays a low heart to dummy's @HJ |pg||pc|hq|at|and your partner wins the trick with the @HQ. |pg||pc|cjc|at|Your partner leads back the @CJ to which South follows. Remember to thank your partner at the end of this deal for returning the suit that you selected for your opening lead! |pg||hs|wc|at|You can thank your partner later, but now you have to figure out which club to play. What do you think?|pg||
+
+
+
+nt|^b@2^z@3In order to answer this question, think about the original layout of the club suit. You were dealt 5 clubs and the dummy started with 3 clubs. Both East and South have now played 2 clubs each (one on the first trick and one on this trick). One of the 13 clubs is unaccounted for and either your partner has that club or the declarer has it. |pg||
+
+sk||hs|sc|
+
+nt|^b@2^z@3If declarer has the missing club, it is imperative for you to overtake your partner's @CJ with your @CQ. |pg||
+ls|scwc|pc|cqc|pg||
+hs|wc|at|You will then be able to win another trick with your @C10. |pg||ls|wc|pc|ctcsc|pg||hc|da|at|The defense has won 3 tricks now and eventually your partner's @DA will with the 4th trick for the defense, thereby defeating South's 4@H contract. |pg||
+
+nt|^b@2^z@3
+In fact, it is now possible for the defenders to come to a second undertrick, but it is not so easy to see how that is possible. Can you see anyway that the defenders can come to another winner besides East's @DA? |pg||
+
+lc|da|hs|wc|
+
+nt|^b@2^z@3Consider the effect of leading yet another round of clubs. |pg||ls|wc|pc|c8|hs|eh|at|Your partner's @H9 will be promoted into another winner for the defense and there is not a thing that the declarer can do about it! |pg||
+
+hc|ha|at|Ruffing with the @HA will be futile for the declarer as East's @H9 will become the highest remaining trump. |pg||lc|ha|ls|Eh|hc|h5|at|If instead South either ruffs with dummy's @H5 or discards from the dummy, |pg||lc|h5|pc|h5|hs|eh|at|East will win this trick with the @H9 |pg||ls|eh|pc|hs|pg||hs|ed|at|and then take the 5th (and last) trick for the defense with the @DA. |pg||ls|ed|pc|daddd|pg||up|8|hs|wceh|
+
+nt|^b@2^z@3The play of the 4th round of clubs by West which promoted East's @H9 into a second undertrick for the defense was an example of what is called a ruff and discard. A ruff and discard involves a defender leading a suit in which both the declarer and the dummy are void at a time in which both the declarer and the dummy still have trumps left. 
+
+|pg||
+
+
+
+nt|^b@2^z@3The ruff and discard was touched on briefly in the original Learn to Play Bridge program and it was correctly noted then that it is usually very bad for the defenders to surrender a ruff and discard to the declarer. As this deal illustrates, there are times in which a ruff and discard can actually help the defense, but by and large you should avoid giving declarer a ruff and discard when you are defending.|pg||
+
+up|6|ls|eh|
+
+nt|^b@2^z@3
+A much more important lesson from this deal is that West should overtake his partner's @CJ on the second round of clubs, even though the @CJ would have won the trick. Watch what would have happened if West had failed to overtake East's @CJ with his @CQ. |pg||
+
+nt|^b@2^z@3|ls|wc|pc|cc|pg||
+
+hs|wcncsc|
+
+nt|^b@2^z@3The defense would be in trouble. West has a club winner to cash, but he has no way to gain the lead. East is out of clubs and West has no entries in any other suit. |pg||
+
+ls|ncscwc|hs|ehnh|at|Suppose East returns his @H9 (as good as anything). Declarer will win the @HA in dummy |pg||ls|ehnh|pc|hhcha|pg||hs|ndsded|at|and drive out East's @DA. |pg||ls|ndsded|pc|dddkd|pg||pc|dtddda|pg||hs|ndsc|at|East is still out of clubs, of course, and South will be able to dispose of his remaining club loser on dummy's 4th diamond. |pg||
+
+ls|ndsc|hs|ssnh|at|Declarer's only other loser, the @S2, can be ruffed in the dummy. |pg||
+
+up|14|ls|nhss|hs|wc|
+
+nt|^b@2^z@3So if you overtake your partner's @CJ, South's 4@H contract will fail by at least 1 trick (2 tricks if you are able to find the very difficult play of giving up a ruff and discard in order to promote East's @H9 into a winner). If instead you allow your partner's @CJ to hold the trick, South will make his contract.|pg||
+
+
+
+nt|^b@2^z@3|ht|d|cs|4|at|^-{ Although bridge is a partnership game and partners count the tricks that they win 
+ together, sometimes it is very important which of the 2 defenders wins a particular trick. }
+^-
+|pg||
+ht|q|at|Here, although East's @CJ is high enough to win a trick on its own, West must overtake his partner's winner in order to defeat the contract. East will forgive him when he sees the result!|pg||
+
+ls|wc|up|12|hs|ec|
+
+nt|^b@2^z@3We have already seen some interesting defensive plays on this deal, but did you notice that East made a very fine play at trick 1 when he played the @CK? Superficially it looks like it should not matter whether East plays the @CK or the @CJ since you have the @CQ and in a sense the @CK and @CJ are equals. To see that the @CK and @CJ are not really equals, let's have a look at what would have happened if East had played the @CJ instead of the @CK on the first trick. |pg||
+
+
+
+nt|^b@2^z@3|ls|ec|pc|cj|hs|sc|at|South wins the @CA, |pg||ls|sc|pc|ca|pg||hs|sh|at|cashes the @HK, |pg||ls|sh|pc|hkhhh|pg||hs|nhsheh|at|and takes a losing finesse of the @HJ (the correct play in the suit according to "8 ever") as before. |pg||ls|nhsheh|pc|hhhjhq|pg||
+
+hs|ec|at|When East returns his remaining club, the @CK, |pg||ls|ec|pc|ckc|hs|wc|at|he is going to win the trick and there is nothing that West can do about it - West has no clubs that are high enough to overtake the @CK! |pg||ls|Wc|pc|cc|pg||hs|wcncsc|
+
+nt|^b@2^z@3There is no way for West to regain the lead now and thus no way for the defense to win the second club trick that they need to defeat South's contract. |pg||hs|ednd|ls|ncwc|at|East will still win a trick with the @DA, but eventually South will be able to discard his remaining club loser on dummy's fourth diamond. Regardless of which suit East leads now, South will make his contract, losing only 1 trump trick, the @DA, and 1 club trick. |pg||
+
+ls|ndedsc|up|14|hs|ec|
+
+nt|^b@2^z@3East's play of the @CK at trick 1 is an example of a defensive principle called third hand high. This means that it is usually good strategy for the defender who plays third to a trick to make the best effort that he can to win that trick. In the next chapter we will go into much greater detail about third hand high and other guidelines that the defenders can use to help them select the most effective cards to play in various situations.|pg||
+
+
+
+nt|^b@2^z@3
+Before we go on to the next example deal, there is one more instructive point to consider in this deal. Did you notice that the declarer could (and should) have made his contract, even if East correctly plays third hand high at trick 1? |pg||
+
+nt|^b@2^z@3|ls|ec|pc|ck|hs|sc|at|Watch what happens if South ducks his @CA, allowing East's @CK to win the first trick. |pg||ls|sc|pc|c|pg||hs|ecsc|At|East may as well return his @CJ (nothing is better for the defense) and this time South wins the @CA. |pg||ls|ecsc|pc|ccacc|pg||
+
+hs|sh|at|There are a couple of ways for South to make 4@H from here. One of these ways is to continue as he played before, by cashing the @HK |pg||ls|sh|pc|hkhhh|pg||hs|nhsh|at|and then trying a finesse of the @HJ. |pg||ls|nhsh|pc|hhhj|hs|eh|
+
+nt|^b@2^z@3East wins the @HQ, |pg||ls|eh|pc|hq|pg||hs|ncscwc|at|but West's club winner is stranded and this time there is no way to blame the defenders for this state of affairs. South's trick 1 hold up play of the @CA had the effect of exhausting the East hand of clubs. |pg||ls|ncwc|hs|ednd|at|East's @DA will be the last trick for the defense as South's remaining club loser will be discarded on the dummy's fourth diamond. |pg||
+
+ls|nded|up|13|
+
+nt|^b@2^z@3|ht|b|at|While the subject of this chapter is mostly about opening leads and other aspects of defense, this example deal presented too good of a lesson in declarer play to pass over. The lesson is:
+
+|pg||ht|o|cs|1|at|^-{ Although the hold up play is best known (and most common) in notrump contracts, in 
+ some deals with a trump suit, the hold up play can also be useful for the declarer. } |pg||
+
+
+
+nt|^b@2^z@3|ht|b|at|Whether there is a trump suit or not, the main reason for holding up as declarer is the same:
+
+|pg||ht|j|cs|2|at|^-{ The hold up play can be used to exhaust a defender's supply of cards in a 
+ suit so that when he regains the lead, he will not be able to lead that suit. } 
+^-
+|pg||ht|v|at|On this deal, the hold up play allows South to lose 1 club trick now instead of 2 club tricks later!
+|pg||qx|D 11,Example Deal 11 - The forcing game|
+sk|w|ls|sc|st||
+
+nt|^b@2^z@3|rh||ah|Opening Leads|ah|Trump Contracts|ah|Deal 11|
+md|2s7hak5dkqjt2cqj87,skqj54hq43da987c2,s9832ht98d43cakt9|
+mb|1sp2s3dppp|
+
+
+nt|^b@2^z@3In this next example deal of selecting an opening lead against a trump contract, you were the dealer and opened 1@S as West. Your partner, East, raised to 2@S and South overcalled 3@D which became the final contract. |pg||hs|wswdwhwc|at|It's up to you to select an opening lead. Are there any suits that look particularly attractive to lead from? |pg||
+
+ls|wdwh|
+
+nt|^b@2^z@3Hopefully you saw some merit in leading 2 out of the 4 suits, spades and clubs. |pg||ls|ws|at|Your singleton @C2 is an attractive opening lead because there is a good chance that you will eventually win a later trick with a ruff as a result. |pg||ls|wc|hs|ws|at|Spades, the suit that you and your partner bid and raised, also offers considerable appeal. Any suit that is headed by a strong honor sequence like the @SKQJ is worthy of consideration as an opening lead. |pg||hs|wc|at|How do you decide between spades and clubs?|pg||
+
+ls|ws|
+
+nt|^b@2^z@3As we have learned, a side suit singleton is normally a very attractive opening lead against a trump contract, but there are times when such a lead should be avoided. |pg||ls|wc|hs|wd|at|One such time is when you are long and strong in the opponents' trump suit. Here you have 4 nice diamonds and this is a sign that trying for ruffs may not be the best way to try to beat the contract.|pg||
+
+
+
+nt|^b@2^z@3The basic idea is that when you are dealt a long and strong trump holding, you may be able to create a situation where the declarer runs out of trumps. South probably has 5 or 6 diamonds and, if you can force South to ruff a couple of times, you may be able to gain control of the trump suit. |pg||ls|wd|hs|ws|at|If we want to make the declarer take some ruffs, selecting a spade as the opening lead may well get the job done. |pg||
+
+ls|ws|hc|sk|
+
+nt|^b@2^z@3The standard opening lead from a holding like the @SKQJ54 is the @SK, regardless of whether or not there is a trump suit. |pg||lc|sk|pc|sk|hs|ns|at|The sight of 4 spades in the dummy should tell you that the declarer has 1 spade at the most (because you started with 5 spades and your partner's raise to 2@S promised at least 3-card support). |pg||ls|ns|pc|sss|hs|ws|at|When the declarer follows suit to the first round of spades, you know that he is now void in that suit and that subsequent spade leads will force him to ruff.|pg||
+
+
+
+nt|^b@2^z@3So let's play another spade in a effort to force the declarer to use one of his trumps. We know that East has the @SA and there is a lot to be said for leading back a low spade now - we would like to get partner's @SA out of the way so that the spade suit will remain unblocked. |pg||ls|ws|pc|s4s2sa|at|East produces the @SA as we had been expecting. |pg||sk||hs|sd|at|Let's have a look at the remaining cards in order to better see the devastating effect that our spade attack will have on the declarer's trumps. |pg||
+
+hs|wd|
+
+nt|^b@2^z@3South started with a fine 5-card diamond suit. That's one more diamond than you were dealt, but when South ruffs the second round of spades, |pg||ls|wd|ls|sd|pc|d|pg||hs|sd|hs|wd|at|he will be reduced to 4 trumps - the same number of trumps that you have. |pg||
+
+at|There are several ways that South can try to make his contract from this point, but none of these will work. In practice, South is likely to try to draw trump by leading diamonds from his hand to drive out your @DA. |pg||ls|sdwd|pc|dkdadd|pg||
+
+hs|ws|hs|sd|
+
+nt|^b@2^z@3Now another spade lead from you will force the declarer to ruff again (it would not help for South to discard instead). |pg||ls|sdws|pc|sqssd|pg||hs|wdsd|at|All of a sudden you have 3 trumps and the declarer has only 2 trumps. In bridge literature, it is said that you now have trump control (meaning that you have more trumps than the declarer has). |pg||
+
+
+
+nt|^b@2^z@3Of course, the declarer cannot see your hand so he does not know that he has lost trump control. |pg||md|0,c3,,d7|hs|ed|at|For all the declarer knows, both defenders might have started with 3 trumps. If the layout was as above then the declarer would still have trump control and he could make his contract with an overtrick simply by drawing trump (he would lose only 1 more trick, a heart at the end). |pg||
+
+md|0,d7,,c3|
+
+nt|^b@2^z@3On the actual layout, however, you started with 4 diamonds and your partner started with 2 diamonds. The declarer will be in for a rude surprise when he tries to draw trump. |pg||ls|sdwded|pc|dqddd|pg||pc|djds|hs|ec|at|When East discards on the third round of trump, |pg||ls|ec|pc|c|pg||hs|wd|at|the declarer knows that you have a trump left and that he is in big trouble. |pg||hs|ncsc|at|The best South can do is to start on clubs in order to force you to use your remaining trump. |pg||ls|wdncsc|pc|cqccc|pg||pc|cj|hs|wd|
+
+nt|^b@2^z@3That's just fine with you! You are able to ruff the second round of clubs (the third trick for the defense) |pg||ls|wd|pc|dcc|pg||hs|ws|at|and cash 2 more spade winners. The fact that South is now out of trump means that the deal has essentially become a notrump deal - South has no trumps left with which he can ruff your spades! |pg||ls|ws|pc|sjhch|pg||pc|shhc|pg||mc|8|at|Declarer claims the last 3 tricks, but the defenders have won 5 tricks already and South's 3@D contract is down 1. |pg||
+
+up|40|hs|sdwd|
+
+nt|^b@2^z@3Bridge players have a name for the defensive strategy of forcing declarer to take ruffs in an effort to wrest trump control from him. We call this strategy the forcing game. Being dealt at least 4 cards in the opponents' trump suit is a strong indication that the forcing game will make an effective defense. The more trumps you have, the fewer times you have to force the declarer to take ruffs before you are the one with trump control! |pg||
+
+
+
+nt|^b@2^z@3Having long trumps is more important than having strong trumps as far as the forcing game is concerned, but it is obviously the case that the stronger your trump holding, the more tricks you rate to win on any given deal. |pg||ls|wdsd|hs|ws|at|When the forcing game seems to be the indicated defense, you should select your opening lead from the suit that is most likely to start forcing the declarer to ruff. On this deal, spades was clearly the best suit for that purpose.|pg||
+
+ls|ws|hs|wcwd|
+
+nt|^b@2^z@3Notice that in the course of the play, West eventually won a trick by ruffing a club even though the singleton club was not the opening lead. This worked out rather well for the defense because as the play developed, West took the club ruff at a time when South was out of trump ^*Iand^*N West had 2 spade winners to cash. This deal would not have had a happy ending for the defense if West selected his singleton club as his opening lead.|pg||
+
+
+
+nt|^b@2^z@3|ls|wdwc|pc|c|hs|nc|at|After winning the club opening lead, |pg||ls|nc|pc|ccc|pg||hs|ndsdwd|at|the declarer would knock out West's @DA as before. |pg||ls|ndsdwd|pc|dddkda|pg||hs|esws|at|West could now play a spade to East's @SA (leading a low card, not the @SK, to make sure that East wins the trick) |pg||ls|esws|pc|sssas|pg||hs|ecwd|at|in order to get a club ruff. |pg||ls|ecwd|pc|ccdc|pg||
+
+hs|wssd|at|The best that West could do now would be to play a second round of spades, forcing South to ruff. |pg||ls|wssd|pc|skssd|pg||
+
+hs|sdwd|
+
+nt|^b@2^z@3In the resulting position, South has 1 more trump than West, leaving him with definite trump control. The declarer can draw the rest of the trump |pg||ls|sdwd|pc|dqddd|pg||pc|djdsc|pg||hs|ncsc|at|and enjoy 2 club tricks without fear of the defenders ruffing. |pg||ls|ncsc|pc|cscc|pg||pc|chcs|pg||mc|9|hs|sh|at|South will lose a heart trick at the end, but that will represent only his 4th loser and he will make his 3@D contract exactly. |pg||
+
+ls|sh|up|36|hs|wdwc|
+
+nt|^b@2^z@3|ht|b|at|The key lesson point of this deal is:
+|pg||cs|3|ht|j|at|^-{ A side suit singleton is usally an attractive opening lead against a trump contract, but if
+ you are dealt 4 or more trumps, playing the forcing game is often better for the defense! }
+|pg||
+ls|wcwd|hs|ws|ht|v|at|It is best to try for trump control, |pg||ls|ws|hs|wc|at|not ruffs, |pg||ls|wc|hs|wd|at|when you are dealt a lot of cards in trump!|pg||
+
+
+
+
+
+
+
+qx|D 12,Example Deal 12 - Leading a trump|
+
+tb|y|bt||
+
+nt|^b@2^z@3|cs|5|cp|6|at|
+^-{ Example Deal 12 - Leading a trump }
+^-
+|cp||at|We have seen a lot of variation when it comes to selecting an opening lead against a trump contract. We have seen deals in which the recommended opening lead was a long suit. In other example deals, the recommended opening lead was a suit of medium or short length. At the same time, all of these deals had one thing in common - the recommended opening lead was always from a side suit.
+
+|pg||at|Could it ever be right to make an opening lead in the trump suit itself?
+
+|pg||cs|1|at|^-{ Of course! If you play bridge long enough you will learn that just about any play could be right
+ on a given deal. The tricky part is figuring out which plays should be made on which deals!  }
+^-
+|pg||
+at|You may have heard the following advice about making trump opening leads:
+
+|pg||cs|2|at|^-{ When in doubt, lead a trump! }
+^-
+|pg||at|Don't buy it! As you have seen from the example deals in this chapter, there is often doubt surrounding the opening lead, but it is usually possible to select a lead that has a good chance of being effective for the defense. If you followed the maxim mentioned above, you would be leading trumps on far too many deals.
+
+|pg||
+
+tb||
+
+nt|^b@2^z@3
+The truth of the matter is that trump opening leads have their time and place, but you should always have a reason for selecting a trump as your opening lead and not knowing what side suit to lead is not a good enough reason to lead a trump.
+
+Here is your first good reason for leading a trump:
+
+|pg||
+cs|1|at|^-{ 1. Lead a trump when a passive opening lead is called for and 
+ when leading from any of the side suits appears to be dangerous. }
+^-
+The classic example of this principle is when the opponents are playing in a grand slam with a trump suit. Recall that you should try to find a passive (or safe) opening lead against a grand slam. Unless your opponents have bid badly, they will not try to play at the 7-level unless their trump suit is solid. If that is the case then a trump opening lead rates to be very passive.
+
+|pg||
+at|Here is another example of when a trump opening lead should be made in an attempt to be passive. Suppose you hold the following hand and that you are the opening leader against a contract where spades are trump:
+
+|hs|ss|cs|3|at|^B{|ih|ps942haj7dat8ca963|at|}
+
+|ht|v|at|^J@2As you have learned, leading a low card from a suit headed by the Ace against a trump contract is not a good idea and leading the Ace itself is not much better. Lead a trump from this hand and let the declarer play the side suits for himself!
+|pg||
+
+
+
+nt|^b@2^z@3
+Here is your second good reason for leading a trump:
+
+|cs|2|at|^-{ 2. Lead a trump when either you are very long and strong in the trump suit or 
+ when the bidding suggests that your partner has long and strong trumps. }
+^-
+|pg||
+at|The key word here is "very". For example, suppose the opponents are playing in a contract with hearts as trump and your hand is something like this:
+
+|cs|3|at|^B{|ih|psa4hkqjt9djt32c94|at|}
+|ls|ss|hs|sh|ht|l|at|^J@2Lead the @HK. You will be able to drive out the @HA with your opening lead. Later, when you gain the lead with your @SA, you will be able to draw most (if not all) of the opponents' trumps. 
+
+@0
+Do not play for the forcing game in an attempt to gain trump control when your trumps are this strong. There is a good chance that you already have trump control and playing the forcing game will allow declarer to win tricks by ruffing with his small trumps. It is better to draw trump in an attempt to prevent the declarer from winning tricks with his small trumps.
+
+|pg||cs|1|at|^B{|ia|   1cdppp|at|}
+|ht|v|at|^L    @2When your partner passes a takeout double, he suggests a very long and strong trump holding. If the bidding goes like this, you should lead a trump almost regardless of what the rest of your hand looks like. This will help your partner to draw trump!
+|pg||
+
+ls|sh|
+
+nt|^b@2^z@3
+The third good reason for leading a trump is by far the most common in practice:
+
+|cs|4|At|^-{ 3. Lead a trump if you have good reason to believe that the declarer is 
+ either going to try to ruff losers in the dummy or play for a crossruff. }
+^-
+If you lead a trump, you will reduce the number of trumps in the dummy. This may have the effect of cutting down the number of losers that the declarer will be able to ruff in dummy or limit the extent of a possible crossruff.
+
+|pg||
+at|How do you recognize these situations? Well that is partly a matter of judgment and partly a matter of looking at your own hand and considering the bidding. The next example deal illustrates how the opening leader might be able to do this in practice.
+
+Before we look at the next example deal, let's review the 3 good reasons that a defender might have for selecting a trump as his opening lead:
+
+|pg||
+cs|1|at|^-{ 1. Lead a trump when a passive opening lead is called for and 
+ when leading from any of the side suits appears to be dangerous. }
+
+|pg||cs|2|at|{ 2. Lead a trump when either you are very long and strong in the trump suit or
+ when the bidding suggests that your partner has long and strong trumps. }
+
+|pg||
+cs|3|At|{ 3. Lead a trump if you have good reason to believe that the declarer is 
+ either going to try to ruff losers in the dummy or play for a crossruff. }
+^-
+|pg||
+st||sk|w|ls|wd|st||
+
+nt|^b@2^z@3|rh||ah|Opening Leads|ah|Trump Contracts|ah|Deal 12|
+md|1skj843h982dacaq94,saqt9hqjtdj865c65,s5ha743dt9742ckj2|
+mb|1sp1np2cppp|
+hs|wc|
+
+nt|^b@2^z@3South, the dealer, opened 1@S and rebid 2@C over North's 1NT response. 2@C became the final contract leaving you on opening lead. If you read the introduction to this deal, you will already know that a trump opening lead is recommended, but do you know why it is smart to lead a trump from the West hand? |pg||ls|wc|hs|wh|at|You do have a very nice 3-card honor sequence in hearts. Are you tempted to lead a heart instead of a trump? |pg||
+
+
+
+nt|^b@2^z@3It is OK if you were tempted by your heart holding, but don't give in to that temptation! On most trump deals, an opening lead from a side suit like @HQJ10 would be very attractive, |pg||ls|wh|hs|wc|at|but on this deal you have a very good reason to reject hearts in favor of leading a trump. |pg||ls|wc|hs|ws|at|The reason has to do with the bidding and your very strong holding in the spade suit. |pg||
+
+
+
+nt|^b@2^z@3Remember that South opened the bidding with 1@S, suggesting at least 5 cards in that suit. You have 4 spades, leaving at most 4 spades for the dummy and your partner. The dummy certainly has fewer than 3 spades or he would have raised 1@S instead of responding 1NT. The fact that North passed 2@C instead of taking preference to 2@S, means that there is a good chance that the dummy will have a singleton or void in spades.|pg||
+
+
+
+nt|^b@2^z@3So you know that the dummy rates to be short in spades and there is a very good chance that you would be able to win several spade tricks if there were no trumps in dummy. |pg||ls|ws|hs|wc|at|A trump lead will be a good start toward minimizing the number of spade ruffs that the declarer will be able to take in the dummy. Let's try leading a club and see how this might work on the actual deal. |pg||
+
+nt|^b@2^z@3|ls|wc|pc|c6|hs|ns|at|Bingo! The dummy was dealt a singleton spade - not at all a surprise! |pg||ls|ns|hs|nc|at|The declarer plays the @CJ from the dummy |pg||ls|nc|pc|cjcc|at|which wins the first trick. |pg||hs|ns|at|He then leads the dummy's singleton spade. |pg||ls|ns|pc|sssj|hs|ws|at|Your partner follows small and the declarer plays the @SJ. You win the @SQ |pg||ls|ws|pc|sq|pg||hs|wc|at|and, as it seems like you were on to a good thing when you selected a trump as your opening lead, you lead back your remaining trump now. |pg||ls|wc|pc|c5|hs|nc|
+
+nt|^b@2^z@3
+The declarer calls for the @C2 from the dummy |pg||ls|nc|pc|c2ctca|at|and wins your partner's @C10 with his @CA. |pg||
+pc|s|hs|wsnc|at|A spade is played to which you follow with the @S9 and the declarer wins the trick by ruffing with the @CK in the dummy |pg||ls|wsnc|pc|scs|at|as your partner follows with another low spade. |pg||
+
+nt|^b@2^z@3The dummy is now void in trump and, although your club opening lead did not completely prevent the dummy from ruffing any spades, you did manage to hold the dummy to a single spade ruff. That's pretty good, especially considering that the dummy started with 3 cards in the trump suit!|pg||
+
+mc|7|hs|sc|hc|hada|sk||
+
+nt|^b@2^z@3Here are the cards that remain. The declarer has won 3 tricks so far. He will win 4 more tricks (with dummy's @HA, the @DA, and the declarer's 2 remaining trumps). There is nothing that you can do to prevent the declarer from winning those 4 tricks, but even so, there is no way for the declarer to win more than 4 of the remaining tricks as long as the defense is careful. South will therefore fail in his modest 2@C contract, a victory for leading a trump!|pg||
+
+lc|hada|ls|sc|hs|wh|up|16|
+
+nt|^b@2^z@3Now let's take a look at how the play might go after West makes the tempting, but incorrect opening lead of the @HQ. |pg||ls|wh|pc|hq|hs|nh|at|The declarer would win the first trick with the @HA in the dummy |pg||ls|nh|pc|hahh|pg||hs|nsssws|at|and lead the dummy's singleton spade as a prelude to trying to ruff spades in the dummy. You would win that trick |pg||ls|wsnsss|pc|sssjsq|pg||hs|wc|at|and your best defense would be to lead a trump back (if the defense does not play trumps soon then South would end up with an overtrick). |pg||
+
+nt|^b@2^z@3|ls|wc|pc|c6|hs|nc|hs|ss|at|Switching to a trump is good defense by West, but unfortunately it comes too late - a trump opening lead was required to defeat 2@C. South is now in a position to ruff 2 of his spade losers in the dummy, thereby making his contract. There are several reasonable ways the play might continue from here. They all favor the declarer over the defense. |pg||
+
+ls|ss|
+
+nt|^b@2^z@3For example, South can win West's belated trump lead with dummy's @CJ, |pg||ls|nc|pc|cjcc|pg||hs|ndsd|at|cross to the @DA, |pg||ls|ndsd|pc|dddd|pg||hs|scndssnc|at|and crossruff the next 4 tricks with spades and diamonds. |pg||
+
+ls|ncscndss|pc|sscs|at|Ruff. |pg||pc|ddcd|at|Ruff. |pg||pc|sscs|at|Ruff. |pg||pc|ddcd|at|Ruff. |pg||
+
+mc|8|hs|sc|at|No, that's not the sound of a dog barking, it is the sound of a crossruff! The declarer has now managed to win 7 tricks and he still has the @CA in his hand for a certain 8th winner. The @CA will be South's last trick, but 8 tricks are all the declarer needs when the contract is 2@C. |pg||ls|sc|up|32|hs|wcncss|
+
+
+nt|^b@2^z@3To summarize, it takes a trump opening lead by West on this deal to defeat South's 2@C contract. West will be able to lead another trump after he wins a spade trick, thereby holding the declarer to a single spade ruff in the dummy. |pg||ls|wcssnc|hs|ns|at|The bidding (which suggest that the dummy will be short in spades) |pg||ls|ns|hs|wsss|at|and West's strong spade holding (which suggests that the declarer will have several spade losers) |pg||ls|wsss|hs|Wc|at|are the clues that West needs to find the winning trump opening lead. |pg||
+qx|revex2,Which suit to lead against trump contracts - Review and Exercises|
+tb|y|bt||
+
+nt|^b@2^z@3|cs|5|cp|6|at|
+^-{ Opening leads against suit contracts - Review and Exercises }
+^-
+|cp||at|In general, it is more difficult to select an effective opening lead against a trump contract than it is against notrump. The reason is that there are more things to consider when there is a trump suit. In particular, the possibility of ruffs, both for the declarer and the defenders, which is not present at notrump tends to complicate all aspects of the play of the cards (including the opening lead).
+
+Still, there are some principles that we learned when we studied opening leads against notrump that also apply when there is a trump suit:
+
+|pg||cs|1|at|^-{ Leading a suit that your partner has bid is usually a good thing to do. }
+
+|pg||
+cs|3|at|{ Leading a suit that your opponents have bid is usually a bad thing to do. }
+
+|pg||
+cs|2|at|{ Leading a suit headed by a strong honor sequence (like KQJ) is usually a good thing to do. }
+
+|pg||at|^-Finally, do not forget the following guideline which applies to so many aspects of bridge (including selecting an opening lead against any contract):
+
+|pg||cs|4|at|^-{ Your judgment is more valuable that any set of guidelines! }
+
+|pg||tb||
+
+nt|^b@2^z@3
+If the difference between selecting an opening lead against a trump contract and doing so against notrump could be summarized in one sentence, that sentence might read like this:
+
+|cs|1|at|^-{ Selecting your longest suit as your opening lead, a good strategy against 
+ notrump, is not nearly as attractive a proposition when there is a trump suit. }
+
+|pg||
+
+cs|3|at|{ The reason is that the declarer will be able to use the trump suit to 
+ prevent you from winning tricks with your small cards in your long suits. }
+
+|pg||at|^-We have learned that there are some guidelines concerning opening leads from suits that contain the Ace which apply only when there is a trump suit:
+
+|pg||cs|2|at|^-{ It is rarely a good idea to lead a lower card in a suit that contains an Ace against a trump 
+contract. If you must lead that suit, then you should lead the Ace itself, not a smaller card. }
+
+|pg||
+cs|4|at|{ There are only a few times when it is attractive to lead from a suit that is headed by the 
+ Ace against a trump contract. One of these is when the King of the same suit is also held. }
+
+|pg||
+cs|1|at|{ If you have an Ace in a suit that your partner bid or a singleton Ace in a side suit,
+  it is acceptable (though not always effective) to lead your Ace against a trump contract.  }
+
+|pg||
+
+
+nt|^b@2^z@3|va|5|at|Here are some other considerations that we have seen for which the process of selecting an opening lead when there is a trump suit is different from that at notrump:
+|pg||cs|1|at|
+^-{ Leading from an unbid 3-card suit headed by a 2-card honor sequence (like the AK, KQ, 
+ QJ, J10, or 109) is much more attractive against a trump contract than it is against notrump. }
+
+|pg||
+cs|3|at|{ A singleton is about the worst opening lead that you can make against notrump (unless 
+ your partner bid that suit), but it is one of the best opening leads against a trump contract. }
+
+|pg||
+cs|2|at|{ While a side suit singleton is usually an attractive opening lead against a trump contract,
+ if you are dealt 4 or more trumps, playing the forcing game is often better for the defense. }
+
+|pg||
+cs|4|at|{ It is usually best to lead aggressively against a small slam with a trump suit, but a passive 
+ opening lead is usually best against 6NT. Lead passively against any grand slam contract. }
+
+|pg||
+cs|1|at|{ From most holdings, the standard opening lead against a trump contract is the same 
+ as it would be if the contract was notrump. Exceptions will be noted later in this chapter. }
+
+|pg||at|^-Here is a clarification of a point that arose when we studied opening leads against notrump:
+
+|pg||cs|3|at|^-{ The guideline of favoring unbid suits for your opening lead is valid against both trump and
+ notrump contracts, but it is fine to lead suits that your opponents have bid artificially. }
+^-
+For example, if your opponents bid 2@C as the Stayman convention you should still consider clubs to be an unbid suit!
+|pg||
+
+
+
+nt|^b@2^z@3
+We have learned that there are times when it is a good idea to lead the trump suit itself. Do not lead a trump just because you do not know which side suit to lead! If you are going to lead a trump, make sure you have a good reason to do so. Here are 3 good reasons for selecting a trump as your opening lead:
+
+|pg||
+cs|4|at|^-{ 1. Lead a trump when a passive opening lead is called for and 
+ when leading from any of the side suits appears to be dangerous. }
+
+|pg||
+
+cs|1|at|{ 2. Lead a trump when either you are very long and strong in the trump suit or 
+ when the bidding suggests that your partner has long and strong trumps. }
+
+|pg||
+cs|3|At|{ 3. Lead a trump if you have good reason to believe that the declarer is 
+ either going to try to ruff losers in the dummy or play for a crossruff. }
+^-
+|pg||
+
+at|Here are a couple of new points that we have learned about standard opening leads:
+
+|pg||cs|2|at|^-{ The table of standard opening leads should be used by the defenders for 
+ deciding which card to lead from a given suit to ^*Iany^*N trick, not just the first trick. }
+
+|pg||
+cs|1|at|{ The standard lead from a given holding is "standard" for a reason. For example, leading 
+high from a doubleton usually results in more tricks for the defense than leading low! }
+
+|pg||
+
+
+
+
+
+nt|^b@2^z@3|cs|1|
+
+
+nt|^b@2^z@3|va|5|at|Although the primary focus of our recent studies has been the process of selecting an opening lead against a trump contract, some useful lessons about other aspects of defense (and other aspects of bridge) have been presented as well. 
+
+|pg||cs|2|at|^-{ If the partner of the opening leader wins a trick, he should strongly 
+ consider leading back the suit that was selected as the opening lead. }
+
+|pg||
+
+cs|4|at|{ Good bidding increases the chances of reaching the best final contract, but on some deals
+ the bidding will make it easier for the defenders to figure out how to defeat the contract! }
+
+|pg||
+cs|1|at|{ As a defender, think about the opponents' bidding and what it tells you about their hands.
+ Your opening leads and later defense will improve if you take the bidding into account! }
+
+|pg||
+cs|3|at|{ Although bridge is a partnership game and partners count the tricks that they win 
+together, sometimes it is very important which of the 2 defenders wins a particular trick. }
+
+|pg||
+
+at|^-Finally, it's time for a reminder (the last one) of something that you have not heard for awhile:
+
+|pg||cs|2|at|^-{ Opening leads come with no guarantees! }
+^-
+|pg||at|The reason why this phrase has been repeated so many times is that it is vitally important to understand that selecting an opening lead at bridge is more of an art than a science. No matter how much you study this topic, you will make disastrous opening leads from time to time. Don't get upset by this! You will be in good company as, on occasion, even the very best bridge players have been known to lead the only one of their 13 cards to let the declarer make his contract!
+|pg||
+
+
+
+nt|^b@2^z@3|va|5|At|In each of the following quizzes you are sitting West. The bidding and your hand are displayed. Decide which suit you would select for your opening lead and then click the appropriate button.
+
+|ht|d|va|2|cs|3|at|^D{|ih|psj7h87dkq86ck9652|at|}
+|ht|d|va|5|cs|1|at|^M{|ia|   2hp4hppp|at|}
+|cq|4|hf|k|lb|*MWhich suit should you select as your opening lead?^Clubs~Diamonds~Hearts~Spades^2|
+hs|sd|at|
+Lead a diamond. |pg||ls|sd|Hs|Sc|At|Against a notrump contract, you would favor a club (your longest suit) over a diamond (your strongest suit). |pg||ls|sc|hs|sd|at|Against a trump contract, however, your 2-card honor sequence in diamonds (the @DKQ) makes that suit a more attractive opening lead than a club. |pg||
+
+ls|sd|ht|o|va|7|cs|3|at|^D{|ih|ps942hqt65dk4cajt8|at|}
+|ht|p|cs|1|at|^M{|ia| 1dp1sp2sppp|at|}
+|cq|4|hf|v|lb|*MWhich suit should you select as your opening lead?^Clubs~Diamonds~Hearts~Spades^3|
+hc|hqt65|at|
+Hearts should be the suit of choice for your opening lead. |pg||hc|cajt8|at|Here there are 2 unbid suits, hearts and clubs. Your clubs are stronger than your hearts, |pg||lc|hhqt65|at|but you have the @CA. There are only a few situations in which it is a good idea to lead from a suit that includes the Ace against a trump contract. |pg||lc|cajt8|hc|hqt65|at|Lead a heart and let the declarer play clubs himself!|pg||
+
+lc|hqt65|
+
+
+nt|^b@2^z@3|ht|c|cs|3|at|^D{|ih|psa6ht542d973ckj85|at|}
+|ht|b|cs|1|at|^M{|ia|   1dp2sp3dp4np5dp6dppp|at|}
+|cq|4|hf|k|lb|*MWhich suit should you select as your opening lead?^Clubs~Diamonds~Hearts~Spades^1|
+
+hs|sc|at|
+A club opening lead represents your best chance to defeat South's small slam, but of course there are no guarantees. |pg||ls|sc|hc|sa|at|North's jump shift to 2@S suggests a very strong hand with a long and powerful spade suit. Once the declarer draws trump, he will knock out your @SA. There is a good chance that later he will be able to discard whatever losers he has on the dummy's spades.|pg||hs|sc|va|7|at|
+Your goal should be to try to establish a winner for the defense with your opening lead in the hope that you will be able to cash that winner when you are back on lead with the @SA. Clubs represents your best chance of setting up a winner for the defense. It is not too much to hope that your partner was dealt the @CQ.|pg||
+va|7|at|
+Remember that it is usually best to make an aggressive opening lead (that is, a lead that tries to establish a winner) against a small slam with a trump suit. |pg||lc|sa|ls|sc|hs|sh|at|Against 6NT, however, it is normally a good idea to make a passive opening lead (that is, a lead that attempts to give nothing away). If the final contract were 6NT then a passive heart lead would be more attractive |pg||ls|sh|hs|Sc|at|than an aggressive club lead. Against a trump small slam it is best to attack with your opening lead!|pg||ls|sc|
+
+
+nt|^b@2^z@3|ht|c|cs|3|at|^D{|ih|ps932hq87dq94cqt87|at|}
+|ht|b|cs|1|at|^M{|ia|   1sp2cp3sp4np5hp7sppp|at|}
+|cq|4|hf|k|lb|*MWhich suit should you select as your opening lead?^Clubs~Diamonds~Hearts~Spades^4|
+
+hs|ss|at|
+You should lead a trump. Against a grand slam you should always lead passively, regardless of whether or not there is a trump suit. Unless the opponents have made a mistake, they would not be trying to win all 13 tricks in a spade contract if they had a potential trump loser. As such, a trump opening lead rates to give nothing away (and that is what being passive is all about).
+
+The opponents' bidding sounds very confident, but perhaps you will be able to win a trick with one of your Queens. Leading away from a Queen, however, would greatly reduce your chances of being able to win a trick with that card. It is best to let the declarer play the side suits for himself.
+
+The whole point of making an aggressive opening lead is to try to establish winners that you will be able to cash when the defense regains the lead. When the contract is a grand slam this reason for leading aggressively does not apply. If you happen to regain the lead, you will have won a trick and defeated the contract - you don't need to have any established winners for the defense to be a success.
+|pg||ls|ss|
+
+
+nt|^b@2^z@3|ht|c|cs|3|at|^D{|ih|pskjt6h93dqjt87c85|at|}
+|ht|b|cs|1|at|^M{|ia|   1sp2dp2hp3hp4hppp|at|}
+|cq|4|hf|k|lb|*MWhich suit should you select as your opening lead?^Clubs~Diamonds~Hearts~Spades^3|
+
+hs|sh|at|
+Again you should lead a trump, but for an entirely different reason than why a trump lead was correct for the last problem. In the last problem, a trump opening lead was recommended in an attempt to be passive. Here a trump lead is best because your hand and the bidding suggest that this might be a crossruff deal.
+
+|pg||hs|sdss|ls|sh|
+
+ls|sd|at|Here you have length and strength in both of the suits that the opponents have bid. You have 4 strong spades and the declarer is known to have at least 5 cards in that suit. There is a very good chance that the dummy is short in spades. |pg||hs|sd|ls|ss|at|Similarly, you have 5 strong diamonds and the dummy is known to have at least 4 diamonds. The declarer is likely to be short in diamonds. 
+
+|pg||ls|sd|hs|sh|at|Since both the declarer and the dummy rate to have short suits and since they are both known to have at least 4 trumps, there is every indication that the declarer may want to attempt a crossruff. By leading a trump, you will be able to limit the extent of the crossruff.
+
+|pg||ls|sh|ls|ss|
+
+
+nt|^b@2^z@3|ht|b|cs|3|at|^D{|ih|psqjt7ht92da5cq963|at|}
+|ht|c|cs|1|at|^M{|ia|  2d3cppp|at|}
+|cq|4|hf|i|lb|*MWhich suit should you select as your opening lead?^Clubs~Diamonds~Hearts~Spades^2|
+
+hc|da|at|
+You should lead a diamond, specifically the @DA. Remember that if you are going to lead from a suit headed by the Ace, you should lead the Ace itself. There are only a few situations in which it is a good idea to lead an Ace against a trump contract and this is one of them - when your partner bids a suit in which you have the Ace.
+
+Here your partner opened the bidding with a weak 2-bid in diamonds. He should have a strong 6-card suit for this bid and, since you have the @DA, there is a very good chance that your partner has the @DK. 
+
+|pg||lc|da|hs|ss|at|It is true that your spade suit is headed by a 3-card honor sequence. Under normal circumstances you would look no further than spades for your opening lead almost regardless of what the final contract happened to be.
+
+|pg||ls|ss|hc|da|at|However, these are not normal circumstanes because your partner went out of his way to bid a suit. Put your faith in your partner's bidding. Irrespective of whether there is a trump suit or not, you need a very good reason to avoid leading a suit that your partner has bid. A spade lead may be tempting, but a diamond opening lead is an example of what partnership bridge is all about!|pg||lc|da|
+
+
+nt|^b@2^z@3|ht|c|cs|3|at|^D{|ih|ps8hjt96dqt854ca92|at|}
+|ht|b|cs|1|at|^M{|ia|   1cp1sp3cp5cppp|at|}
+|cq|4|hf|j|lb|*MWhich suit should you select as your opening lead?^Clubs~Diamonds~Hearts~Spades^4|
+
+hs|ss|at|
+Lead your singleton spade even though North has bid that suit. |pg||ls|ss|hs|sh|at|Once again you have a tempting 3-card honor sequence, this time in hearts. |pg||hs|ss|ls|sh|at|However, the lead of a side suit singleton is such an attractive proposition against a trump contract that the heart suit should be rejected when selecting your opening lead.
+
+|pg||hc|ca|at|The fact that you have the @CA makes the singleton lead all the more likely to succeed. Once you have led your spade, you will have a void in that suit. You are certain to regain the lead with your @CA. Then, if you can find a way to put your partner on lead (perhaps he has the @DA or the @HA), he will be able to give you a spade ruff to defeat South's 5@C contract.
+
+|pg||lc|ca|at|There is the added possibility that your partner was dealt the @SA. In this case he will be able to win the first trick with that card and then give you a spade ruff at once. Your @CA will score a 3rd trick for the defense, of course, to defeat the contract.
+
+To summarize, the opening lead of your singleton spade rates to defeat 5@C any time that your partner was dealt any of the 3 side suit Aces.
+|pg||
+
+ls|ss|
+
+
+nt|^b@2^z@3|ht|c|cs|3|at|^D{|ih|psaj5h643dat4ckj92|at|}
+|ht|b|cs|1|at|^M{|ia|   1cp1dp1hp3hp4hppp|at|}
+|cq|4|hf|j|lb|*MWhich suit should you select as your opening lead?^Clubs~Diamonds~Hearts~Spades^3|
+
+hs|sh|at|
+Lead a trump. There are 2 good reasons to select this lead. |pg||ls|sh|hs|sc|at|First, you have length and strength in clubs, the suit in which South opened the bidding. The dummy may well be short in clubs and a trump opening lead could reduce the number of club ruffs that the declarer will be able to take in the dummy. 
+
+While this reasoning is mostly sound, it would make even more sense if South's opening bid had been in a major suit (as opposed to a minor suit). Opening bids of 1@S and 1@H (the major suits) promise at least 5 cards in the suit bid. Opening the bidding with 1 of a minor (1@D or 1@C) is sometimes done with as few as 3 cards in the suit bid. Consequently, the inference that North rates to be short in the suit that South opened is not as strong as it would be if South had opened 1 of a major.
+
+|pg||ls|sc|hs|ss|at|A better reason to lead a trump is that your holding in the only unbid suit (the @SAJ5) is not at all appetizing to lead from. |pg||hs|scsd|at|Furthermore, you have strength in all 3 of the side suits. |pg||
+
+ls|sdscss|Hs|Sh|At|Since the opponents have bid clubs and diamonds and because you should not lead from a spade holding like yours, all indications point toward a passive trump opening lead as best. |pg||ls|sh|
+
+
+nt|^b@2^z@3|ht|c|cs|3|at|^D{|ih|psahjt98dt76ca8432|at|}
+|ht|b|cs|1|at|^M{|ia|   1sp2cp3cp4sppp|at|}
+|cq|4|hf|j|lb|*MWhich suit should you select as your opening lead?^Clubs~Diamonds~Hearts~Spades^1|
+
+hc|ca|at|
+This is a tough one - you should lead the @CA! |pg||hs|sh|lc|ca|at|It may seem obvious to select a heart as your opening lead, |pg||ls|sh|hc|ca|at|but if you lead the @CA you are almost certain to defeat South's 4@S contract. Think about the club layout on this deal. You have 5 clubs and North's 2@C response shows at least 4 cards in clubs. South's raise to 3@C suggests at least 3-card support for North's club suit.
+
+|pg||at|If you do the math, you will see that your partner must have either a singleton or void in clubs. Your @CA will win the first trick and you will then be able to give your partner a club ruff. When you regain the lead with the @SA, you can lead back another club and give your partner a second ruff. That will be 4 tricks for the defense - just enough to defeat 4@S.
+
+|pg||
+hs|wh|lc|ca|at|It's problems like this one that demonstrate how important judgment is at bridge. Every guideline that you have learned suggests that a heart opening lead is called for. Not only is hearts an unbid suit, but the @HJ1098 is a very nice sequence of honor cards. |pg||ls|wh|hc|ca|at|Meanwhile, clubs have been bid by both opponents and it is also a suit headed by an Ace. Our guidelines suggest that leading a club would be a very bad idea. The bottom line here is that you can be almost certain that leading the @CA will result in the defeat of the contract. Perhaps you should have doubled!
+
+|pg||lc|ca|
+
+
+nt|^b@2^z@3|ht|b|cs|3|at|^D{|ih|pskqthaqj7d82cqjt4|at|}
+|ht|c|cs|1|at|^M{|ia|   1ddppp|at|}
+|cq|4|hf|i|lb|*MWhich suit should you select as your opening lead?^Clubs~Diamonds~Hearts~Spades^2|
+hs|sd|at|
+Lead a trump. Your takeout double asked your partner to bid something. By refusing to do so, he is suggesting a very long and strong holding in diamonds. The defense should try to draw trump in order to prevent the declarer from ruffing your side suit winners with his small cards in the trump suit. 
+
+|pg||
+ls|sd|ht|n|cs|3|at|^D{|ih|psa8732hkt943d5ca2|at|}
+|ht|o|cs|1|at|^M{|ia|   2sppp|at|}
+|cq|4|hf|v|lb|*MWhich suit should you select as your opening lead?^Clubs~Diamonds~Hearts~Spades^3|
+hc|hkt943|at|
+A heart is the recommended opening lead. Do you know why? |pg||lc|hkt943|hc|d5sa8732|at|While you have a side suit singleton (which is normally an attractive lead against a trump contract) you also have a lot of trumps. |pg||lc|d5sa8732|hc|hkt943|at|This suggests that the forcing game may be an effective defense. If you can force the declarer to ruff a couple of times, you may be able to gain trump control. Your length and strength in hearts suggests that hearts is the suit of choice if you want to try to force the declarer to ruff. One of the nice things about this hand is that you rate to be on lead again. If the forcing game does not seem to be working, you will have another chance to lead your singleton!|pg||
+
+lc|hkt943|ls|sd|
+
+
+qx|stleadtr,Standard leads against suit contracts|
+tb|y|bt||
+
+nt|^b@2^z@3|cs|5|cp|6|at|
+^-{ Standard leads against suit contracts }
+^-
+|cp||at|It has already been mentioned that, from most holdings, the standard opening lead against a trump contract is exactly the same as it would be against notrump. In this topic we will investigate holdings in which the standard opening lead varies on the basis of whether or not there is a trump suit.
+
+If you are not feeling confident about which card to lead from various holdings against notrump, it is a good idea to go back and review that topic before you read this one!
+
+|pg||
+at|Recall that when the contract is notrump, the standard opening lead from a long suit headed by an honor sequence is the highest card only if the honor sequence has at least 3 cards in it.
+
+|pg||hc|sqh4|cs|3|at|^F{|ih|psqjt54|at|} ^Q{|ih|phqj543|at|}
+
+For example, the holding to the left is headed by a 3-card honor sequence (the @SQJ10) so the @SQ is the standard opening lead against notrump. However, the holding on the right is headed by only 2 honors (the @HQJ) so the 4th best card (the @H4) would be the standard opening lead against notrump. |
+pg||
+
+tb||
+
+nt|^b@2^z@3|
+lc|h4|hc|hq|cs|3|va|5|at|^F{|ih|psqjt54|at|} ^Q{|ih|phqj543|at|}
+
+When there is a trump suit things are different. Now a 2-card honor sequence is sufficient to lead the highest card in a given suit. With both of the above holdings the standard opening lead would be the Queen against a trump contract.
+
+The @SQ would be the standard lead from the holding on the left regardless of the final contract, but the @HQ would be the standard lead from the holding on the right only if there was a trump suit (otherwise the 4th best @H4 would be the standard lead).
+
+|pg||
+at|The subject of which card to lead against notrump from a suit headed by the Ace-King was purposely avoided. This issue is more complex than you might think and it will be explored in detail in the third chapter of this program.
+
+However, if you are fortunate enough to be dealt an Ace-King combination when you are on lead against a trump contract there is a simple rule that describes the standard opening lead from such a holding:
+
+|pg||cs|2|at|^-{ Lead the Ace from a holding headed by the Ace-King when you are on opening lead against
+ a trump contract unless you hold the Ace-King doubleton. Lead the King in that case. }
+^-
+|pg||
+lc|sqhq|
+
+
+nt|^b@2^z@3
+The main difference between standard opening leads against trump contracts and those against notrump involves holdings that do not include any honor cards. Recall that against notrump the standard opening lead from 3 small cards is the highest card and that the standard opening lead from 4 or more small cards is the second highest card.
+
+|pg||hc|d8c7|cs|3|at|^F{|ih|pd854|at|} ^Q{|ih|pc97532|at|}
+
+In the above examples, the @D8 and the @C7 would be the standard opening leads from these holdings if the contract was notrump.
+
+|pg||at|The question of what the standard opening lead should be from these holdings against a trump contract is more complex and bridge experts have wrestled with this issue since the 1920s. To this day there is no strong consensus as to which cards should represent the standard opening leads from holdings like those shown above.
+
+The holding on the left, that of 3 small cards, is especially controversial. There are plenty of experts who prefer to lead the highest card from such a holding, just like they would against notrump. |pg||lc|d8|hc|d5|at|Some experts would lead the middle card, the @D5, from this holding |pg||lc|d5|hc|d4|at|and yet another group of experts prefer to lead the small card, the @D4 in this case, from 3 small cards. |pg||
+
+nt|^b@2^z@3|hs|sd|cs|3|va|5|at|^B{|ih|pd854|at|} 
+
+|ht|c|at|^G@2We could spend quite a lot of time exploring the relative advantages and disadvantages of leading high, middle, and low from 3 small cards against a trump contract, but there would be little point to this. 
+
+@0
+The world's leading players have been unable to agree on what should be the standard opening lead from this holding and they have had over 70 years to argue about it. It is therefore unlikely that we are going to come up with a completely satisfying solution to this problem in this program.
+
+|pg||
+ls|sd|at|Instead, we are just going to make a decision and that will be to lead the lowest of 3 small cards against a trump contract (the @D4 in the holding shown above). The main reason for this decision is that, at the present time, most experts in North America (including the author of this program) prefer to lead the smallest of 3 small cards against a trump contract. 
+
+If, for some reason, you feel strongly that you would rather lead the high or middle card from 3 small cards against trump contracts, there is nothing wrong with that. Just make sure that your partner knows that you are going to do this! 
+
+|pg||
+at|Remember that the whole point of standard opening leads is to help the partner of the opening leader figure out what holding has been led from. Which card your partnership leads from 3 small cards against a trump contract is relatively unimportant. Always leading the same card from such a holding is very important. If you vary the cards that you lead from this (or any) holding, you will end up with a confused partner!
+
+|pg||
+
+lc|d4|
+
+nt|^b@2^z@3|cs|3|va|5|at|^B{|ih|pc97532|at|} 
+|ht|b|va|5|at|^G@2The question of which card to lead from 4 or more small cards against a trump contract is a little bit less controversial. Some experts prefer to lead the second highest card from such holdings (the @C7 in this example), just as they would against notrump. 
+@0
+
+|pg||lc|c7|hc|c3|at|Again we could debate forever the merits of leading various cards from this holding, but in the end we would be unlikely to find a completely satisfying answer. Instead we are just going to make a decision and that decision will be to lead the 4th best card from such holdings - the @C3 in the example holding shown above.
+
+|pg||
+cs|2|at|To summarize:
+
+^-{ Against a trump contract, if you choose to lead from a suit with no honor cards, lead the 
+ lowest card from a 3-card suit and lead the 4th best card from a suit with 4 or more cards in it. }
+^-
+|pg||
+
+cs|4|at|And now some good news:
+
+^-{ The standard opening leads against trump contracts from interior sequences, 
+ broken suits, and doubletons are the same as what they are against notrump. }
+^-
+|pg||at|Don't worry if you are finding it difficult to remember all of the standard opening leads from various holdings against trump and notrump contracts. All you need to do is practice a little. It won't take long before you know your standard leads inside out!
+
+|pg||qx|revex3,Standard leads against suit contracts - Review and Exercises|
+tb|y|lc|c3|
+
+nt|^b@2^z@3|cs|5|cp|6|at|
+^-{ Standard leads against suit contracts - Review and Exercises }
+^-
+|cp||at|First let's review the holdings from which the standard opening lead against a trump contract is different from the standard opening lead against a notrump contract:
+
+|pg||
+cs|4|at|^-{ Lead the highest card from a suit headed by a sequence of 2 or more touching high cards. }
+^-
+A sequence of 3 touching honors is required to lead the highest card against notrump.
+
+|pg||
+
+cs|2|at|^-{ Lead the smallest card from a holding of 3 small cards (that is, no honor cards). }
+^-
+The highest card is led from 3 small cards against notrump.
+
+|pg||
+
+cs|3|at|^-{ Lead the 4th best card from a suit with 4 or more cards that contains no honor cards. }
+^-
+The second highest card is led from these holdings against notrump.
+
+|pg||
+cs|1|at|^-{ Lead the Ace from a holding headed by the Ace-King 
+ except lead the King from a doubleton Ace-King. }
+^-
+We have not considered the standard opening lead against notrump contracts from suits headed by the Ace-King. This subject will be covered in the third chapter of this program.
+
+|pg||tb||
+
+nt|^b@2^z@3
+Here is a summary of when the standard opening lead against a trump contract is exactly the same as it would be against a notrump contract:
+
+|pg||cs|4|at|^-{ Lead the 4th best card from a broken suit headed by an honor with at least 4 cards. }
+
+|pg||
+cs|2|at|{ Lead the lowest card from a broken 3-card suit headed by an honor. }
+
+|pg||
+cs|3|at|{ Lead the highest card from a 3-card suit headed by 2 touching honors. }
+
+|pg||
+cs|1|at|{ Lead the second highest card from a suit headed by an interior sequence. }
+
+|pg||
+cs|4|at|{ Lead the highest card from a doubleton. }
+
+|pg||
+at|^-Our study of opening leads is just about finished now and, after you complete the remaining exercises in this chapter, we will move on to study other aspects of defense at bridge.
+
+Give yourself a pat on the back for having completed this first chapter because the study of opening leads is one of the most complex and challenging aspects of bridge. In fact, entire books have been written about opening leads and it would be possible to dedicate an entire program the size of this one to that subject.
+
+The opening lead is arguably the most important card played by the defenders in the course of a bridge deal, but it is still only 1 of the 26 cards that they will play. After the following quizzes, we will turn our attention to the other 25 cards that the defenders play.
+|pg||
+
+nt|^b@2^z@3
+In each of the following quizzes, assume that you have already decided which suit you are going to select as your opening lead against a trump contract. Answer as to which card in that suit constitutes the standard opening lead.
+
+|hf|f|lb|*CWhich card would you lead?^^dj^djt62|hc|dj|ht|f|cs|3|at|^-{ |ih|pdjt62|at|}
+^-
+Lead the @DJ. Your diamonds are headed by a 2-card honor sequence and that is enough to lead the highest card when there is a trump suit. |pg||lc|dj|hc|d2|at|Against notrump, the @D2 would be the standard opening lead because a holding must be headed by a 3-card honor sequence in order to lead the highest card against notrump. |pg||lc|d2|hc|dj|at|Against a trump contract the @DJ is the standard lead.
+
+|pg||hf|q|lb|*CWhich card would you lead?^^s8^84|
+hc|s8|ht|r|cs|3|at|^-{ |ih|ps84|at|}
+^-
+The @S8, the highest card from a doubleton, is the standard opening lead against either a trump contract or against notrump.
+|pg||lc|s8dj|
+
+nt|^b@2^z@3|hf|a|lb|*CWhich card would you lead?^^ha^hak943|
+hc|ha|ht|a|cs|3|at|^-{ |ih|phak943|at|}
+|va|5|at|^-The @HA is the correct card to lead. The standard opening lead against a trump contract from a suit headed by the Ace-King is normally the Ace. There is only one exception to this rule. |
+
+pg||
+hf|j|lb|*CWhich card would you lead?^^ck^cak|
+
+hc|ck|ht|j|cs|3|at|^-{ |ih|pcak|at|}
+^-|va|5|at|This is the one exception! Lead the King (the @CK here) from a doubleton Ace-King. 
+|pg||
+
+hf|r|lb|*CWhich card would you lead?^^da^dat875|hc|da|ht|r|cs|3|at|^-{ |ih|pdat875|at|}
+^-|va|5|at|Lead the @DA. This is not a matter of standard opening leads. If you must lead from a suit headed by the Ace against a trump contract, it is best to lead the Ace itself. Leading a low card away from an Ace against a trump contract is rarely a good strategy.
+|pg||lc|dackha|
+
+nt|^b@2^z@3|hf|a|lb|*CWhich card would you lead?^^s3^s743|
+hc|s3|ht|a|cs|3|at|^-{ |ih|ps743|at|}
+^-|va|5|at|The @S3 is the standard opening lead, at least as far as this program is concerned. There has been a very long (and ongoing) debate about which card makes the best opening lead from 3 small cards when there is a trump suit. In this program the lowest card is recommended, but some bridge experts prefer to lead either high (the @S7) or middle (the @S4) from a holding like this.
+
+Against notrump things are different. Almost all experts would recommend the lead of the highest card (the @S7 in this case) from 3 small cards when the contract is notrump.|pg||
+hf|p|lb|*CWhich card would you lead?^^h4^h8754|
+hc|h4|ht|p|cs|3|at|^-{ |ih|ph8754|at|}
+^-|va|5|at|Lead the @H4, but be aware of the fact that this is another controversial issue. Some bridge authorities would recommend the lead of a different card from this holding, but in this program we lead the 4th best card from a suit that contains no honor cards. |pg||lc|h4|hc|h7|at|Against notrump we would lead the second highest card (the @H7) from a holding like this one, |pg||lc|h7|hc|h4|at|but the 4th best @H4 is the card that is recommended (at least in this program) against a trump contract. 
+|pg||
+lc|h4s3|
+
+
+nt|^b@2^z@3|hf|a|lb|*CWhich card would you lead?^^cj^ckjt53|
+hc|cj|ht|a|cs|3|at|^-{ |ih|pckjt53|at|}
+^-|va|5|at|Lead the @CJ. This is an example of our old friend the interior sequence. Lead the second highest card, the @CJ in this case, from an interior sequence regardless of the strain of the final contract.
+
+|pg||hf|k|lb|*CWhich card would you lead?^^d5^dkj853|
+hc|d5|ht|j|cs|3|at|^-{ |ih|pdkj853|at|}
+^-|va|5|at|Lead the @D5. This holding is like the first one on this page, but its 3rd highest card is an 8 instead of a 10. That makes this a broken holding instead of an interior sequence. Lead the 4th best card from broken holdings against either trump or notrump contracts.
+
+|pg||hf|t|lb|*CWhich card would you lead?^^sq^sqj4|hc|sq|ht|t|cs|3|at|^-{ |ih|psqj4|at|}
+^-|va|5|at|Lead high (the @SQ) from a 3-card suit headed by a 2-card sequence for both types of contracts. 
+|
+pg|||bt||nt||cs|5|cp|6|fp|4|ht|i|at|^-{^^End^^ 
+      Learn to Play Bridge2          ^*bChapter 2   Section 2^*n       ^^ ^^ ^^Opening Leads Against Suit Contracts^^ ^^ }^- |

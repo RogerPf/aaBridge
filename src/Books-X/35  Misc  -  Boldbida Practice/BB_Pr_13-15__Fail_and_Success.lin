@@ -1,0 +1,384 @@
+%%
+%%
+%% <--SECT_HEAD-->=Practice  Boards                              13 - 15
+%%
+%%
+%%  Date last Edited    2016-05-04     set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+%% 
+%% <<--HEADER_FILE-->>=BB_Pr_00___Declarer_Play__HEADER
+%%
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player they need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+%%
+%%  You can NOW use  ALL 2876 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+fh|t40|                    Font   t  t-title             section titles (if any)
+fh|b50|                    Font   b  b-bigTitle   bigger section titles
+
+fh|f42|                    Font   f  f-flow
+fh|s25|                    Font   s  s-small
+
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor      on Title Pages
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor   on Title Pages
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Boldbida                                       Course   2016^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bPractice  Boards                              13 - 15^*n^-^^|cs||fp||cp||at|^^|
+Lg|e|
+
+ht|j|
+at|If you are  |cp|red|at|^*bNew  to  aaBridge^*n|cp||at| please  click the  { ^*bHome^*n }  button in the far top left and then click  { ^*bFlow^*n }  button.
+Once you have a little knowledge about how to use   ^*baaBridge^*n   please come back to this 'movie'.  |
+
+ht|o|
+fp|t-title|cp|blue|at|^- ^*b-----  Shuf Op  -----^*n     ^-|cp||fp||at|^^|
+n#|3|
+at|^b@2When  you are  'Inside a deal',  high on the left in green baize area you will see the  {^*b Shuf Op ^*n}  button.|
+n#|5|
+at|^^Click on it to shuffle the  East - West  cards and leave you ready to  PLAY  the hand against the 
+^o ^*b aaBridge ^*n bots and the new defensive layout.|
+%% <<--HEADER_REPLACE_END->>
+
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+ht|v|n#|4|at|
+^f Please  |cp|red|at|^*b keep ^*n|cp||at|  clicking  the |fp|f-flow|at|  { ^*b Flow > ^*n }  |fp|s-small|at| button below  |fp||
+
+ht|z|n^|2|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+
+bv|a,v|    %% make all 3 buttons visible 
+ 
+fh|940|fm|9|fp|9|at|@0@1|
+ht|h|
+rq|2876|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2876 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+st||
+--------------------------------------------------------------------
+qx|13 F|nt|^b@2^^|rh||ah|Practice 13 |pn| , , , |md|1SAKHJT4DT95CAK762,SQJT96HA73DJ62CQ4,S853HK986DAK7CJ85,S742HQ52DQ843CT93|sv|O|sk|S |at|^*bPractice 13^*n        Fail |
+pg| ***** 1 ***** |
+
+
+mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+pc|sQ|at|    With 6 sure tricks   2@s 2@d 2@C   we need 3 more.   If we can finesse against the  @cQ  we can make 3 extra @c's  can't we ?|
+pg| ***** 3 ***** |
+
+
+pc|s3|pc|s2|pc|sA|
+pg| ***** 4 ***** |
+
+
+pc|d5|pc|d2|pc|dA|pc|d3|
+pg| ***** 5 ***** |
+
+
+pc|cJ|pc|c3|pc|c2|pc|cQ|
+pg| ***** 6 ***** |
+
+
+pc|sJ|pc|s5|pc|s7|pc|sK|
+pg| ***** 7 ***** |
+
+
+pc|cA|
+pg| ***** 8 ***** |
+
+
+at| ^^ ^^ Now we only have 5 more possible tricks.  Count 'em,   then they run spades,  so we will end up  1  down. |
+pf|c|
+sk||
+pg| ***** 9 ***** |
+
+
+qx|13 S|nt|^b@2^^|rh||ah|Practice 13 |pn| , , , |md|1SAKHJT4DT95CAK762,SQJT96HA73DJ62CQ4,S853HK986DAK7CJ85,S742HQ52DQ843CT93|sv|O|sk|S |at|^*bPractice 13^*n        Success |
+pg| ***** 10 ***** |
+
+
+mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 11 ***** |
+
+
+pc|sQ|at|    With 6 sure tricks   2@s 2@d 2@C   we need 3 more.   3 more from @c's is a good idea but no reasonable West will ever let a led of the  @cJ  succeed.  So play for the @cQ to be doubleton. |
+pg| ***** 12 ***** |
+
+
+pc|s3|pc|s2|pc|sA|
+pg| ***** 13 ***** |
+
+
+pc|cA|pc|c4|pc|c5|pc|c3|
+pg| ***** 14 ***** |
+
+
+pc|cK|pc|cQ|
+pg| ***** 15 ***** |
+
+
+at| ^^ ^^ SUCCESS  Count the 7 more top ticks (and right entries) that we have. |
+pf|c|
+sk||
+pg| ***** 16 ***** |
+
+
+qx|13 S|nt|^b@2^^|rh||ah|Practice 13 |pn| , , , |md|1SAKHJT4DT95CAK762,SQJT96HQ73DJ6CQ93,S853HK986DAK7CJ85,S742HA52DQ8432CT4|sv|O|sk|S |at|^*bPractice 13^*n        Success  B |
+pg| ***** 17 ***** |
+
+
+mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 18 ***** |
+
+
+pc|sQ|
+pg| ***** 19 ***** |
+
+
+at|    With 6 sure tricks   2@s 2@d 2@C   we need 3 more.   We have decided to play for the @cQ to be doubleton but what if it does not fall ? |pc|s3|pc|s2|pc|sK|
+pg| ***** 20 ***** |
+
+
+pc|cA|pc|c3|pc|c5|pc|c4|
+pg| ***** 21 ***** |
+
+
+at|  As here ?|pc|cK|pc|c9|pc|c8|pc|cT|
+pg| ***** 22 ***** |
+
+
+pc|hJ|at|   Then we switch to plan "B"  and play @h's for 3 tricks by finessing against the @hQ. |
+pg| ***** 23 ***** |
+
+
+pc|h3|pc|h6|pc|hA|
+pg| ***** 24 ***** |
+
+
+pc|s4|pc|sA|pc|s6|pc|s5|
+pg| ***** 25 ***** |
+
+
+pc|hT|pc|h7|pc|h8|pc|h2|
+pg| ***** 26 ***** |
+
+
+pc|h4|pc|hQ|pc|hK|pc|h5|
+pg| ***** 27 ***** |
+
+
+pc|h9|
+pg| ***** 28 ***** |
+
+
+pf|c|
+sk||
+pg| ***** 29 ***** |
+
+
+qx|14 F|nt|^b@2^^|rh||ah|Practice 14 |pn| , , , |md|1SKQ2HAQD9652CQJ94,SJ94HKJ854D7CT863,SA853H763DAQJ4CK5,ST76HT92DKT83CA72|sv|O|sk|S |at|^*bPractice 14^*n        Fail |
+pg| ***** 30 ***** |
+
+
+mb|1C|mb|p|mb|1S|mb|p|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 31 ***** |
+
+
+pc|h5|at|    With 6 sure tricks   3@s 2@h 1@d    we need 3 more.   Even a failing @d finesse would make 1.  Two can easily come form the @c's and 1 from a 3-3 @s split.   If we start with @d's  then knock out the  @cA  is that OK ? ^^|
+pg| ***** 32 ***** |
+
+
+pc|h3|pc|h9|pc|hQ|
+pg| ***** 33 ***** |
+
+
+pc|d2|pc|d7|pc|dQ|pc|dK|
+pg| ***** 34 ***** |
+
+
+pc|hT|pc|hA|pc|h4|pc|h6|
+pg| ***** 35 ***** |
+
+
+pc|c4|pc|c3|pc|cK|pc|cA|
+pg| ***** 36 ***** |
+
+
+pc|h2|
+pg| ***** 37 ***** |
+
+
+at|^^ It is NOT OK,   East now has  3  more @h's  to run so putting us 1 down.  |
+pf|c|
+sk||
+pg| ***** 38 ***** |
+
+
+qx|14 S|nt|^b@2^^|rh||ah|Practice 14 |pn| , , , |md|1SKQ2HAQD9652CQJ94,SJ94HKJ854D7CT863,SA853H763DAQJ4CK5,ST76HT92DKT83CA72|sv|O|sk|S |at|^*bPractice 14^*n        Success |
+pg| ***** 39 ***** |
+
+
+mb|1C|mb|p|mb|1S|mb|p|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 40 ***** |
+
+
+pc|h5|at|    With 6 sure tricks   3@s 2@h 1@d    we need 3 more.   A failing @d finesse would make 1.  Two can easily come form the @c's and 1 from a 3-3 @s split.   But the order is Key first we must knock out the @cA  then test the @c's to see if the 10 drops and @s's for a 3-3 split remembering that we MUST end up in hand incase we need to take the last chance @d finesse.|
+pg| ***** 41 ***** |
+
+
+pc|h3|pc|h9|pc|hQ|
+pg| ***** 42 ***** |
+
+
+pc|c4|pc|c3|pc|cK|pc|cA|
+pg| ***** 43 ***** |
+
+
+pc|h2|pc|hA|pc|h4|pc|h6|
+pg| ***** 44 ***** |
+
+
+pc|cQ|pc|c6|pc|c5|pc|c7|
+pg| ***** 45 ***** |
+
+
+pc|cJ|pc|c8|pc|h7|pc|c2|at|  Sadly no @c10 appears. |
+pg| ***** 46 ***** |
+
+
+pc|s2|pc|s4|pc|sA|pc|s6|
+pg| ***** 47 ***** |
+
+
+pc|s3|pc|s7|pc|sQ|pc|s9|
+pg| ***** 48 ***** |
+
+
+pc|sK|pc|sJ|pc|s5|pc|sT|
+pg| ***** 49 ***** |
+
+
+pc|d2|
+pg| ***** 50 ***** |
+
+
+at| But the @s's are 3-3  AND  we could take the @d finesse if needed.|
+pf|c|
+sk||
+pg| ***** 51 ***** |
+
+
+qx|15 F|nt|^b@2^^|rh||ah|Practice 15 |pn| , , , |md|1SK83HAK6DAK74CKJT,ST92HJT743D63CQ82,SA74HQ82DT52C9543,SQJ65H95DQJ98CA76|sv|O|sk|S |at|^*bPractice 15^*n        Fail |
+pg| ***** 52 ***** |
+
+
+mb|2N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 53 ***** |
+
+
+pc|4h|at|    With 7 sure tricks   2@s 3@h 2@d   we need 2 more.   With 4 of the top 6 card in clubs this will be no problem. ^^|
+pg| ***** 54 ***** |
+
+
+pc|hQ|pc|h5|pc|h6|
+pg| ***** 55 ***** |
+
+
+pc|c3|pc|c6|pc|cJ|pc|cQ|
+pg| ***** 56 ***** |
+
+
+pc|sT|pc|s4|pc|s5|pc|sK|
+pg| ***** 57 ***** |
+
+
+pc|cK|pc|c2|pc|c4|pc|cA|
+pg| ***** 58 ***** |
+
+
+pc|s6|pc|s3|pc|s9|pc|sA|
+pg| ***** 59 ***** |
+
+
+pc|c5|pc|c7|pc|cT|pc|c8|
+pg| ***** 60 ***** |
+
+
+pc|dA|at|^^ Oh dear we are stranded in hand and cannot get to the @c trick we worked so hard to set up in dummy.|
+pf|c|
+sk||
+pg| ***** 61 ***** |
+
+
+qx|15 S|nt|^b@2^^|rh||ah|Practice 15 |pn| , , , |md|1SK83HAK6DAK74CKJT,ST92HJT743D63CQ82,SA74HQ82DT52C9543,SQJ65H95DQJ98CA76|sv|O|sk|S |at|^*bPractice 15^*n        Success |
+pg| ***** 62 ***** |
+
+
+mb|2N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 63 ***** |
+
+
+pc|4h|at|    With 7 sure tricks   2@s 3@h 2@d   we need 2 more.   With 4 of the top 6 card in clubs this will be no problem,  IF and ONLY IF we take care to preserve our entries to dummy. ^^|
+pg| ***** 64 ***** |
+
+
+pc|h2|pc|h9|pc|hA|
+pg| ***** 65 ***** |
+
+
+pc|cK|pc|c2|pc|c3|pc|cA|
+pg| ***** 66 ***** |
+
+
+pc|s5|pc|sK|pc|s2|pc|s4|
+pg| ***** 67 ***** |
+
+
+pc|cJ|pc|cQ|pc|c4|pc|c6|
+pg| ***** 68 ***** |
+
+
+pc|sT|pc|sA|pc|s6|pc|s3|
+pg| ***** 69 ***** |
+
+
+pc|c5|pc|c7|pc|cT|pc|c8|
+pg| ***** 70 ***** |
+
+
+pc|h6|
+pg| ***** 71 ***** |
+
+
+at|^^ This time we have the entry to enjoy our promoted  @c9  and so have  5  more top tricks to come,  count 'em.|
+pf|c|
+sk||
+pg| ***** 72 ***** |
+
+

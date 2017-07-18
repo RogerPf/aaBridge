@@ -11,6 +11,7 @@
 package com.rogerpf.aabridge.model;
 
 import java.awt.Point;
+import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,6 +20,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 import com.rogerpf.aabridge.controller.Aaa;
 import com.rogerpf.aabridge.controller.App;
+import com.rogerpf.aabridge.dds.Z_ddsCalculate;
 import com.rogerpf.aabridge.model.Play_Mpat.Mpat;
 import com.rogerpf.aabridge.model.Zzz.BoardData;
 
@@ -30,6 +32,7 @@ public class Deal {
 
 	public String lastSavedAsPathWithSep = "";
 	public String lastSavedAsFilename = "";
+	public String lastDealNameSaved_FULL = "";
 	public NsSummary nsSummary = new NsSummary();
 	public int testId = 0;
 	public int cycle = 0; // debug message use only
@@ -136,7 +139,7 @@ public class Deal {
 		public void NsSummarize(Deal d) {
 
 			deal = d;
-			nsCombPoints = d.north().countHighCardPoints() + d.south().countHighCardPoints();
+			nsCombPoints = d.north().count_HighCardPoints() + d.south().count_HighCardPoints();
 
 			for (Suit suit : Suit.cdhs) {
 				int i = suit.v;
@@ -250,7 +253,7 @@ public class Deal {
 	public Deal(int localId /* ignored */) { /* Constructor */// used by Make_giAY
 		// ==============================================================================================
 		this.localId = idCounter.getAndIncrement();
-		;
+
 		localLast_pg = 0;
 
 		deal_common("", Dir.South);
@@ -312,26 +315,25 @@ public class Deal {
 
 		// From here on we make the - DONE HAND
 
-		Cal pack = Cal.class.cast(packPristine.clone());
 		// West
 		for (int i = 51; i > 38; i--) {
-			west().frags[Suit.Spades.v].addDeltCard(pack.removeCard(i));
+			west().frags[Suit.Spades.v].addDeltCard(packPristine.removeCard(i));
 		}
 		// East
 		for (int i = 38; i > 33; i--) {
-			east().frags[Suit.Hearts.v].addDeltCard(pack.removeCard(i));
+			east().frags[Suit.Hearts.v].addDeltCard(packPristine.removeCard(i));
 		}
 		for (int i = 25; i > 21; i--) {
-			east().frags[Suit.Diamonds.v].addDeltCard(pack.removeCard(i));
+			east().frags[Suit.Diamonds.v].addDeltCard(packPristine.removeCard(i));
 		}
 		for (int i = 12; i > 8; i--) {
-			east().frags[Suit.Clubs.v].addDeltCard(pack.removeCard(i));
+			east().frags[Suit.Clubs.v].addDeltCard(packPristine.removeCard(i));
 		}
 
 		// North South
-		while (pack.size() > 0) {
-			north().addDeltCard(pack.removeCard((int) (Math.random() * pack.size())));
-			south().addDeltCard(pack.removeCard((int) (Math.random() * pack.size())));
+		while (packPristine.size() > 0) {
+			north().addDeltCard(packPristine.removeCard((int) (Math.random() * packPristine.size())));
+			south().addDeltCard(packPristine.removeCard((int) (Math.random() * packPristine.size())));
 		}
 
 		// we are set as board 16 - so West is the dealer
@@ -392,12 +394,25 @@ public class Deal {
 			return false;
 		}
 
-		if (!swapped)
-			return true; // we can't trust the origial yet, it may have too many points or too few aces
+//		if (!swapped)
+		return true; // we can't trust the origial yet, it may have too many points or too few aces
 
 		// now we are in a position to do the points test as we know the current 'bestSoFar' (us) is fully valid
 
-		return (pointsNew > this.nsSummary.nsCombPoints);
+//		return (pointsNew > this.nsSummary.nsCombPoints);
+	}
+
+	/** 
+	 */
+	public boolean arePointsAndAcesOk(int min, int max, int aces) {
+		// ==============================================================================================
+
+		if (nsSummary.nsCombPoints < min || max < nsSummary.nsCombPoints || (nsHaveAtLeastSoManyAces(aces) == false)) {
+			return false;
+		}
+		else {
+			return true;
+		}
 	}
 
 	/**
@@ -480,7 +495,7 @@ public class Deal {
 
 		rotateDealerAndVulnerability(amountOfRotaion);
 
-		if (contract.isNullBid() == false) {
+		if (!contract.isNullBid() && !contract.isPass()) {
 			contractCompass = contractCompass.rotate(amountOfRotaion);
 			// just a quick cross check - about which we do nothing if it fails !
 			Dir recalcCompass = getHandThatMadePartnershipFirstCallOfSuit(contract).compass;
@@ -521,6 +536,18 @@ public class Deal {
 		// ==============================================================================================
 		for (Hand hand : hands) {
 			Card card = hand.getCardIfMatching(suit, rank);
+			if (card != null)
+				return card;
+		}
+		return null;
+	}
+
+	/**
+	 */
+	public Card getCardSearchAllHands_Orig(Rank rank, Suit suit) {
+		// ==============================================================================================
+		for (Hand hand : hands) {
+			Card card = hand.getCardIfMatching_Orig(suit, rank);
 			if (card != null)
 				return card;
 		}
@@ -1007,6 +1034,38 @@ public class Deal {
 
 	/**
 	 */
+	public void suffleLowerCards(int upto) {
+		// ==============================================================================================
+
+		for (Suit suit : Suit.shdc) {
+			int counted[] = { 0, 0, 0, 0 };
+			Cal cards = new Cal(13);
+			for (Hand hand : hands) {
+				Frag fOrg = hand.fOrgs[suit.v];
+				Frag frag = hand.frags[suit.v];
+				while (!fOrg.isEmpty() && fOrg.getLast().rank.v <= upto) {
+					counted[hand.compass.v]++;
+					cards.add(fOrg.removeLast());
+					frag.removeLast();
+				}
+			}
+
+			Collections.shuffle(cards);
+
+			for (Hand hand : hands) {
+				Frag fOrg = hand.fOrgs[suit.v];
+				Frag frag = hand.frags[suit.v];
+				while (counted[hand.compass.v]-- > 0) {
+					fOrg.addDeltCard(cards.getLast());
+					frag.addDeltCard(cards.removeLast());
+				}
+			}
+		}
+
+	}
+
+	/**
+	 */
 	public void fillDealDistributionExam_8_Tell() {
 		// ==============================================================================================
 
@@ -1128,7 +1187,7 @@ public class Deal {
 
 	/**
 	 */
-	public void fillDealExternal(ArrayList<String> hsAy, String action) {
+	public void fillDealExternal(ArrayList<String> hsAy, String action, int line_no_info) {
 		// ==============================================================================================
 
 		boolean insertMode = false;
@@ -1173,7 +1232,7 @@ public class Deal {
 
 		for (String hs : hsAy) {
 			hs = hs.toLowerCase();
-			if (hs.contains("s") || hs.contains("h") || hs.contains("h") || hs.contains("c")) {
+			if (hs.contains("s") || hs.contains("h") || hs.contains("d") || hs.contains("c")) {
 				suit_symb = true;
 				break; // this is the very common case
 			}
@@ -1249,13 +1308,13 @@ public class Deal {
 						 */
 						card = getCardSearchAllHands(rank, suit);
 						if (card == null) {
-							System.out.println("Card not in deck " + rank + " " + suit);
+							System.out.println("md  -  Card not in deck " + rank + " " + suit);
 							continue;
 						}
 
 						boolean success = removeCardIncFOrgs(card);
 						if (success == false) {
-							System.out.println("Can't remove played card " + rank + " " + suit);
+							System.out.println("md  -  Can't remove played card " + rank + " " + suit);
 							continue;
 						}
 					}
@@ -1322,7 +1381,7 @@ public class Deal {
 						 */
 						card = getCardSearchAllHands(rank, suit);
 						if (card == null) {
-							System.out.println("Card not in deck " + rank + " " + suit);
+							System.out.println("b Card not in deck " + rank + " " + suit);
 							continue;
 						}
 
@@ -1330,6 +1389,9 @@ public class Deal {
 						if (success == false) {
 							System.out.println("Can't remove played card " + rank + " " + suit);
 							continue;
+						}
+						if (insertMode == false) {
+							System.out.println("Line: " + line_no_info + "  duplicated card>>> " + card);
 						}
 					}
 					/** 
@@ -1350,6 +1412,8 @@ public class Deal {
 		 * some of the hands will be empty. If we then find any hand is missing
 		 * exactly the number of cards that are left in the deck then we add them
 		 */
+		String report = "";
+		int added = 0;
 		if (action == yesFill && packPristine.size() <= 13) {
 			for (Hand hand : hands) {
 				if (13 - hand.countOriginalCards() == packPristine.size()) {
@@ -1357,22 +1421,31 @@ public class Deal {
 						Suit suit = card.suit;
 						hand.fOrgs[suit.v].addDeltCard(card);
 						hand.frags[suit.v].addDeltCard(card);
+						report += " " + card;
+						added++;
 					}
 					packPristine.clear();
 				}
 			}
 		}
+		if (report.length() != 0 && added != 13) {
+			System.out.println("Line: " + line_no_info + "  undealt cards added>>>" + report);
+		}
+
 		if (packPristine.size() == 0 && dealerSet == false) {
 			// setDealer(Dir.South); ummm
 		}
 	}
 
-	/**
-	 */
-	public void removeCards(ArrayList<String> hsAy) {
+	public void markCardsKept(ArrayList<String> hsAy) {
 		// ==============================================================================================
 
 		String hs = hsAy.get(0).trim();
+
+		if (hs.isEmpty() || hs.toLowerCase().startsWith("n")) {
+			this.clearAnyKeptCards();
+			return;
+		}
 
 		Suit suit = Suit.Spades; // set a default suit
 		for (int j = 0; j < hs.length(); j++) {
@@ -1398,19 +1471,65 @@ public class Deal {
 
 			/**
 			 * As the card is not in the pack we must assume that it is
+			 * in one of the hands and is currently unplayed.
+			 */
+			card = getCardSearchAllHands_Orig(rank, suit); // ORIG ORIG ORIG ORIG <<<<<<<<<<<<<<<<<
+			if (card == null) {
+				System.out.println("kc  -  Card not in deck " + rank + " " + suit);
+				continue;
+			}
+
+			card.setKept(true);
+
+			// System.out.println(hand + " " + card + "  ");
+		}
+
+	}
+
+	/**
+	 */
+	public void removeCards(ArrayList<String> hsAy) {
+		// ==============================================================================================
+
+		String hs = hsAy.get(0).trim();
+
+		Suit suit = Suit.Spades; // set a default suit
+		for (int j = 0; j < hs.length(); j++) {
+			char c = hs.charAt(j);
+
+			// @formatter:off
+				switch (c) {
+					case 'S': case 's': suit = Suit.Spades;   continue;
+					case 'H': case 'h': suit = Suit.Hearts;   continue;
+					case 'D': case 'd': suit = Suit.Diamonds; continue;
+					case 'C': case 'c': suit = Suit.Clubs;    continue;
+				}
+				// @formatter:on
+			Rank rank = Rank.charToRank(c);
+
+			if (rank == Rank.Invalid)
+				continue; // ignore it perhaps a '-' or a space
+
+			Card card = packPristine.getIfRankAndSuitExists(rank, suit);
+			if (card != null) {
+				continue; // the card is in the unplayed pack so it is already removed from any hand
+			}
+
+			/**
+			 * As the card is not in the pack we must assume that it is
 			 * in one of the hands and is currently unplayed.  The only
 			 * sensible way to remove a played card is to use UNDO !
 			 * But I have never seen 'the spec' so how would I know !
 			 */
 			card = getCardSearchAllHands(rank, suit);
 			if (card == null) {
-				System.out.println("Card not in deck " + rank + " " + suit);
+				System.out.println("rc - Card not in deck " + rank + " " + suit);
 				continue;
 			}
 
 			boolean success = removeCardIncFOrgs(card);
 			if (success == false) {
-				System.out.println("Can't remove played card " + rank + " " + suit);
+				System.out.println("rc - Can't remove played card " + rank + " " + suit);
 				continue;
 			}
 
@@ -1506,8 +1625,6 @@ public class Deal {
 			d.contractDblRe = new Bid(contractDblRe.call);
 		}
 
-		// Cal pack = Cal.class.cast(d.packPristine.clone());
-
 		for (Dir p : Dir.nesw) {
 			Hand o_hand = hands[p.v];
 			Hand d_hand = d.hands[p.v];
@@ -1522,13 +1639,17 @@ public class Deal {
 				Frag o_fOrg = o_hand.fOrgs[su.v];
 				Frag d_fOrg = d_hand.fOrgs[su.v];
 				d_fOrg.suitVisControl = o_fOrg.suitVisControl;
+				d_fOrg.showXes = o_fOrg.showXes;
 				// hand, suit, suitCh all preset
 				for (Card o_card : o_fOrg) {
 					Card d_card = d.packPristine.getIfRankAndSuitExists(o_card.rank, o_card.suit);
-					if (d_card == null) {
-						@SuppressWarnings("unused")
-						int z = 0;
-					}
+//					if (d_card == null) {
+//						@SuppressWarnings("unused")
+//						int z = 0;
+//						System.out.println( o_card);
+//						continue; // !!!!
+//					}
+					d_card.setKept(o_card.isKept());
 					d_fOrg.addDeltCard(d_card);
 					// no remove here
 				}
@@ -1539,9 +1660,16 @@ public class Deal {
 				Frag o_frag = o_hand.frags[su.v];
 				Frag d_frag = d_hand.frags[su.v];
 				d_frag.suitVisControl = o_frag.suitVisControl;
+				d_frag.showXes = o_frag.showXes;
 				// hand, suit, suitCh all preset
 				for (Card o_card : o_frag) {
 					Card d_card = d.packPristine.getIfRankAndSuitExists(o_card.rank, o_card.suit);
+//					if (d_card == null) {
+//						@SuppressWarnings("unused")
+//					    int z = 0;					   
+//						System.out.println( o_card);
+//						continue; // !!!!
+//					}	
 					d_frag.addDeltCard(d_card);
 					d.packPristine.remove(d_card);
 				}
@@ -1550,6 +1678,12 @@ public class Deal {
 			// played
 			for (Card o_card : o_hand.played) {
 				Card d_card = d.packPristine.getIfRankAndSuitExists(o_card.rank, o_card.suit);
+//				if (d_card == null) {
+//					@SuppressWarnings("unused")
+//				    int z = 0;					   
+//					System.out.println( o_card);
+//					continue; // !!!!
+//				}	
 				d_hand.played.add(d_card);
 				d.packPristine.remove(d_card);
 			}
@@ -1579,6 +1713,10 @@ public class Deal {
 		// prevTrickWinner
 		for (Hand o_winner : prevTrickWinner) {
 			d.prevTrickWinner.add(d.hands[o_winner.compass.v]);
+//			if (d.prevTrickWinner.get(0).compass.v != Dir.East.v) {
+//				@SuppressWarnings("unused")
+//				int z = 0;
+//			}
 		}
 
 		return d;
@@ -1630,18 +1768,59 @@ public class Deal {
 
 	/**
 	 */
+	public boolean pbnEqualTo(Deal d) {
+		// ==============================================================================================
+
+		if (dealer != d.dealer)
+			return false;
+
+		if (vulnerability[Dir.NS] != d.vulnerability[Dir.NS])
+			return false;
+
+		if (vulnerability[Dir.EW] != d.vulnerability[Dir.EW])
+			return false;
+
+		/** 
+		 * the contract CAN be different / not exist yet
+		 */
+
+		for (Dir p : Dir.nesw) {
+			Hand o_hand = hands[p.v];
+			Hand d_hand = d.hands[p.v];
+
+			// fOrgs
+			for (Suit su : Suit.cdhs) {
+				Frag o_fOrg = o_hand.fOrgs[su.v];
+				Frag d_fOrg = d_hand.fOrgs[su.v];
+				if (o_fOrg.size() != d_fOrg.size())
+					return false;
+				for (int i = 0; i < o_fOrg.size(); i++) {
+					Card o_card = o_fOrg.get(i);
+					Card d_card = d_fOrg.get(i);
+					if (o_card.rank != d_card.rank)
+						return false;
+				}
+			}
+		}
+		return true;
+	}
+
+	/**
+	 */
 	public void setDealer(Dir dealerCompass) {
 		// ==============================================================================================
 		dealer = dealerCompass;
 		assert (prevTrickWinner.size() <= 1);
 		prevTrickWinner.clear();
-		prevTrickWinner.add(hands[dealer.v]);
+		prevTrickWinner.add(hands[dealer.v]); // Why is this here ? 2017-05-23
 	}
 
 	/**
 	 */
-	public static Deal newBoard(int prevBoardNo, boolean presetTheContract, String criteria, Dir youSeatForNewDeal) {
+	public static Deal newBoard(int prevBoardNo, boolean presetTheContract, String criteria, Dir youSeatForNewDeal, int dealFilter) {
 		// ==============================================================================================
+		App.newDealAsRequested = false; // crude but gets the job done
+
 		Deal bestSoFar = new Deal("", youSeatForNewDeal);
 		bestSoFar.setNextDealerAndVulnerability(prevBoardNo);
 		bestSoFar.redeal();
@@ -1650,117 +1829,92 @@ public class Deal {
 
 		if (criteria.contentEquals("userBids")) {
 			; // just use the bestSoFar as it is
+			if (presetTheContract && (((youSeatForNewDeal.v % 2) == Dir.EW) || (southBiddingRequired(criteria) == false))) {
+				bestSoFar.autoBidContract(criteria);
+			}
+			App.newDealAsRequested = true;
+			return bestSoFar;
 		}
+
+		int aces = 0;
+		int min = 23;
+		int max = 40;
+
+		SuitShape sh[] = new SuitShape[2];
+		boolean suitshape_used = false;
 
 		if (criteria.startsWith("chosenGame")) {
-			int min = 28;
+			aces = 0;
+			min = max = 28;
 			if (criteria.endsWith("27"))
-				min = 27;
-			if (criteria.endsWith("26"))
-				min = 26;
-
-			boolean swapped = false;
-			for (int i = 0; i < 10000; i++) {
-				d.redeal();
-				if (bestSoFar.isNewBetter_pointsAndAces(d, swapped, min, min, 0)) {
-					Deal tmp = bestSoFar;
-					bestSoFar = d;
-					d = tmp;
-					if (!swapped) {
-						swapped = true;
-						continue;
-					}
-
-					if ((bestSoFar.north().countHighCardPoints() + bestSoFar.south().countHighCardPoints()) >= min) {
-						break;
-					}
-				}
-			}
+				min = max = 27;
+			else if (criteria.endsWith("26"))
+				min = max = 26;
+			else if (criteria.endsWith("25"))
+				min = max = 25;
+			else if (criteria.endsWith("24"))
+				min = max = 24;
 		}
 
-		if (criteria.startsWith("twoSuitSlam")) {
-			SuitShape sh[] = new SuitShape[2];
-			int min;
-			int max;
+		else if (criteria.startsWith("twoSuitSlam")) {
+			suitshape_used = true;
 			{
 				min = 28;
-				max = 30;
+				max = 29;
 				sh[0] = new SuitShape(5, 5);
 				sh[1] = new SuitShape(5, 4);
 			}
 			if (criteria.endsWith("_E2")) {
 				min = 28;
-				max = 30;
+				max = 29;
 				sh[0] = new SuitShape(5, 4);
 				sh[1] = new SuitShape(5, 4);
 			}
 
 			if (criteria.endsWith("_M1")) {
 				min = 29;
-				max = 31;
+				max = 30;
 				sh[0] = new SuitShape(5, 4);
 				sh[1] = new SuitShape(5, 3);
 			}
 			if (criteria.endsWith("_M2")) {
 				min = 29;
-				max = 31;
+				max = 30;
 				sh[0] = new SuitShape(5, 3);
 				sh[1] = new SuitShape(5, 3);
 			}
 			if (criteria.endsWith("_I1")) {
 				min = 30;
-				max = 32;
+				max = 31;
 				sh[0] = new SuitShape(5, 4);
 				sh[1] = new SuitShape(4, 4);
 			}
 			if (criteria.endsWith("_I2")) {
 				min = 30;
-				max = 32;
+				max = 31;
 				sh[0] = new SuitShape(5, 3);
 				sh[1] = new SuitShape(4, 4);
 			}
 
 			if (criteria.endsWith("_H1")) {
 				min = 31;
-				max = 33;
+				max = 32;
 				sh[0] = new SuitShape(4, 4);
 				sh[1] = new SuitShape(4, 4);
 			}
 			if (criteria.endsWith("_H2")) {
 				min = 31;
-				max = 33;
+				max = 32;
 				sh[0] = new SuitShape(4, 4);
 				sh[1] = new SuitShape(4, 3);
-			}
-
-			boolean swapped = false;
-			for (int i = 0; i < 10000; i++) {
-				d.redeal();
-				if (bestSoFar.isNewBetter_pointsAcesAndShape(d, swapped, min, max, 3, sh)) {
-					Deal tmp = bestSoFar;
-					bestSoFar = d;
-					d = tmp;
-					if (!swapped) {
-						swapped = true;
-						continue;
-					}
-
-					if (bestSoFar.nsSummary.Divergence(sh) == 0) {
-						break;
-					}
-				}
 			}
 		}
 
 		else if (criteria.startsWith("ntGrand") || criteria.startsWith("ntSmall")) {
 
-			int min = 0;
-			int max = 0;
-			int aces = 0;
-
 			if (criteria.contentEquals("ntSmall_M")) {
 				min = 32;
-				max = 34;
+				max = 33;
 				aces = 3;
 			}
 			else if (criteria.contentEquals("ntGrand_E")) {
@@ -1772,6 +1926,7 @@ public class Deal {
 				min = 35;
 				max = 36;
 				aces = 4;
+
 			}
 			else if (criteria.contentEquals("ntGrand_H")) {
 				min = 33;
@@ -1781,68 +1936,242 @@ public class Deal {
 			else {
 				assert (false);
 			}
+		}
 
-			boolean swapped = false;
-			for (int i = 0; i < 10000; i++) {
-				d.redeal();
-				if (bestSoFar.isNewBetter_pointsAndAces(d, swapped, min, max, aces)) {
-					Deal tmp = bestSoFar;
-					bestSoFar = d;
-					d = tmp;
-					if (!swapped) {
-						swapped = true;
-						// continue; we don't need this
-					}
+		// @formatter:off
+		boolean checkForInteresting = ((dealFilter > 0) && App.haglundsDDSavailable
+				                       && (     presetTheContract && (((youSeatForNewDeal.v % 2) == Dir.EW) 
+				                             || (southBiddingRequired(criteria) == false))));
+		// @formatter:on
 
-					int points = bestSoFar.nsSummary.nsCombPoints;
+//		System.out.println("checkForInteresting:" + checkForInteresting);
 
-					if ((min <= points) && (points <= max)) {
-						break;
+		/* 
+		 * now we go find a compliant deal
+		 */
+		boolean pointsAndAcesOk = false;
+		boolean suitshapeOk = false;
+		boolean ddsOk = false;
+		boolean please_swap = false;
+		boolean success = false;
+
+		int min_orig = min;
+		int max_orig = max;
+
+		int i = 0;
+		while (true) {
+			if (please_swap) {
+				Deal tmp = bestSoFar;
+				bestSoFar = d;
+				d = tmp;
+				please_swap = false;
+			}
+
+			if (success || (i++ > 100000))
+				break;
+
+			if ((i % 10000) == 0) {
+				int v = i / 10000;
+				int vl = v / 2 + 1;
+				int vh = v / 2;
+				min = min_orig - vl;
+				max = max_orig + vh;
+//				int z = 0;
+			}
+
+			d.redeal();
+
+			if (d.arePointsAndAcesOk(min, max, aces) == false)
+				continue;
+
+			if (pointsAndAcesOk == false) {
+				pointsAndAcesOk = true;
+				please_swap = true;
+				// so now we have one that is at least the required points and Aces
+
+				if (!suitshape_used && !checkForInteresting) {
+					success = true;
+					continue;
+				}
+			}
+
+			if (suitshape_used) {
+				if (d.nsSummary.Divergence(sh) != 0)
+					continue;
+
+				if (suitshapeOk == false) {
+					suitshapeOk = true;
+					please_swap = true;
+					// so now we have one that is at least the required suit shape
+
+					if (!checkForInteresting) {
+						success = true;
+						continue;
 					}
 				}
 			}
-			// System.out.println(c + " " + bestSoFar.nsSummary.nsCombPoints);
+
+			/*
+			 *   dealfilter  = 0     no checkForInteresting
+			 *   dealfilter  = 1     use DDS to limit hand to set contract ONLY
+			 *   dealfilter  = 2     also use DDS assiatance to trick 7 
+			 *   dealfilter  = 3     also use DDS assiatance to trick 9 
+			 *   dealfilter  = 4     also use DDS assiatance to trick 9 + finesses fail
+			 */
+
+			if (checkForInteresting) {
+				/* we now compare the tricks taken by the dumbAuto and the DDS
+				 * we reject hands where the DDS is no better than dumbAuto
+				 */
+
+				d.autoBidContract(criteria);
+
+				boolean assistance_run = false;
+				if (App.yourFinessesMostlyFail || (dealFilter == 4)) {
+					d.dumbAutoPlayToEnd_with_SOME_DDS_Assistance(dealFilter); // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+					// d.wipeContractBiddingAndPlay();
+					// d.autoBidContract(criteria); // rerun in case
+					assistance_run = true;
+				}
+
+				int targetTricks = d.contract.level.v + 6;
+
+				int ddsTricks = Z_ddsCalculate.calcMaxDeclarerTricks(d);
+
+				if (ddsTricks != targetTricks)
+					continue; // reject this deal
+
+				if (dealFilter == 1) {
+					please_swap = true;
+					success = true;
+					continue;
+				}
+
+				if (!assistance_run) {
+					d.dumbAutoPlayToEnd_with_SOME_DDS_Assistance(dealFilter); // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				}
+				int dumbTricks = d.getContractTrickCountSoFar().x;
+
+//				// @formatter:off
+//				String dumb = (dumbTricks != targetTricks - 1) ? "x" : " ";
+//				String dds  = (ddsTricks != targetTricks) ? "x" : " ";
+//				System.out.println("df:" + dealFilter + "  i: " + i + "   min: " + min + "  max: " + max 
+//						      + "    targ: " + targetTricks 
+//						      + "    dumb: " + dumbTricks + " " + dumb
+//						      + "    dds: " + ddsTricks + " " + dds
+//						      + "    md|" + d.cardsForLinSave() + "|");
+//				// @formatter:on
+
+				if (ddsOk == false) {
+					ddsOk = true;
+					please_swap = true;
+					// so now we have one that is at least the match to the dds
+				}
+
+				if (dumbTricks == targetTricks)
+					continue; // reject this deal
+
+				success = true;
+			}
+
+			please_swap = true;
+			continue;
 		}
+
+		App.newDealAsRequested = success;
+
+		bestSoFar.clearAllStrategies();
+		bestSoFar.wipeContractAndPlay();
 
 		if (presetTheContract && (((youSeatForNewDeal.v % 2) == Dir.EW) || (southBiddingRequired(criteria) == false))) {
-
-			// add passes until we get to South
-			for (Hand hand : bestSoFar.rota[bestSoFar.dealer.v]) {
-				if (hand.compass == Dir.South) {
-					break;
-				}
-				bestSoFar.makeBid(new Bid(Call.Pass));
-			}
-
-			bestSoFar.makeBid(bestSoFar.generateSouthBid(criteria));
-
-			Bid bid = null;
-			while (bestSoFar.isBidding()) {
-				for (Hand hand : bestSoFar.rota[Dir.West.v]) {
-
-					if (hand.compass == Dir.East) {
-						bid = bestSoFar.generateEastWestBid(hand);
-					}
-					else if (hand.compass == Dir.West) {
-						bid = bestSoFar.generateEastWestBid(hand);
-					}
-					else if (hand.compass == Dir.North) {
-						bid = new Bid(Call.Pass);
-					}
-					else if (hand.compass == Dir.South) {
-						bid = bestSoFar.generateSouthBid(criteria);
-					}
-					bestSoFar.makeBid(bid);
-
-					if (bestSoFar.isBidding() == false)
-						break;
-				}
-			}
+			bestSoFar.autoBidContract(criteria);
 		}
 
-		// System.out.println("NextBoard " + bestSoFar.boardNo);
+//		System.out.println("df:" + dealFilter + "  i: " + i + "    Board        md|" + bestSoFar.cardsForLinSave() + "|  ");
 
 		return bestSoFar;
+	}
+
+	/**
+	 *  South MUST BE the declarer
+	 */
+	public void dumbAutoPlayToEnd_with_SOME_DDS_Assistance(int dealFilter) {
+		// =============================================================================
+		DumbAutoDirectives dumbAutoDir = new DumbAutoDirectives();
+		dumbAutoDir.yourFinessesMostlyFail = App.yourFinessesMostlyFail || (dealFilter == 4);
+		dumbAutoDir.defenderSignals = App.defenderSignals;
+
+		int stopAssistanceAfter = -1; // if unchanged means no assistance
+
+		if (dealFilter == 2) {
+			stopAssistanceAfter = 7;
+		}
+		else if (dealFilter == 3) {
+			stopAssistanceAfter = 9;
+		}
+		else if (dealFilter == 4) {
+			// auto your finesses mostly fail is switched on above
+			stopAssistanceAfter = 9;
+		}
+		else {
+			// no change
+		}
+
+		clearAllStrategies();
+
+		for (int i = 0; i < 13; i++) {
+			Hand leader = getCurTrickLeader();
+			for (Hand hand : rota[leader.compass.v]) {
+
+				Card card = hand.dumbAuto(dumbAutoDir);
+
+				if (App.haglundsDDSavailable) {
+					if ((i < stopAssistanceAfter) || (hand.compass == Dir.West) || (hand.compass == Dir.East)) {
+						card = Z_ddsCalculate.improveDumbPlay(hand, card);
+					}
+				}
+				hand.playCard(card);
+			}
+		}
+	}
+
+	/**
+	 */
+	void autoBidContract(String criteria) {
+		// ==============================================================================================
+
+		// add passes until we get to South
+		for (Hand hand : rota[dealer.v]) {
+			if (hand.compass == Dir.South) {
+				break;
+			}
+			makeBid(new Bid(Call.Pass));
+		}
+
+		makeBid(generateSouthBid(criteria));
+
+		Bid bid = null;
+		while (isBidding()) {
+			for (Hand hand : rota[Dir.West.v]) {
+
+				if (hand.compass == Dir.East) {
+					bid = generateEastWestBid(hand);
+				}
+				else if (hand.compass == Dir.West) {
+					bid = generateEastWestBid(hand);
+				}
+				else if (hand.compass == Dir.North) {
+					bid = new Bid(Call.Pass);
+				}
+				else if (hand.compass == Dir.South) {
+					bid = generateSouthBid(criteria);
+				}
+				makeBid(bid);
+
+				if (isBidding() == false)
+					break;
+			}
+		}
 	}
 
 	/**
@@ -1857,6 +2186,10 @@ public class Deal {
 		else if (in.contentEquals("chosenGame27"))
 			return in;
 		else if (in.contentEquals("chosenGame26"))
+			return in;
+		else if (in.contentEquals("chosenGame25"))
+			return in;
+		else if (in.contentEquals("chosenGame24"))
 			return in;
 		else if (in.contentEquals("twoSuitSlam_E1"))
 			return in;
@@ -2117,6 +2450,7 @@ public class Deal {
 	 */
 	public void redeal() {
 		// ===============================================================================================
+
 		contractCompass = Dir.Invalid;
 		contract = new Bid(Call.NullBid);
 		contractDblRe = new Bid(Call.NullBid);
@@ -2125,15 +2459,21 @@ public class Deal {
 			h.setToVirgin();
 		}
 
-		prevTrickWinner.clear();
+		packPristine.clear();
 
-		Cal pack = Cal.class.cast(packPristine.clone());
+		prevTrickWinner.clear(); // there should not be any yet !!!
 
-		Collections.shuffle(pack);
+		// create the pnew ack with the cards
+		for (Suit suit : Suit.cdhs) {
+			for (Rank rank : Rank.allThriteenRanks) {
+				packPristine.add(new Card(rank, suit));
+			}
+		}
+		Collections.shuffle(packPristine);
 
-		while (!pack.isEmpty()) {
+		while (!packPristine.isEmpty()) {
 			for (Hand h : hands) {
-				h.addDeltCard(pack.remove(pack.size() - 1));
+				h.addDeltCard(packPristine.remove(packPristine.size() - 1));
 			}
 		}
 
@@ -2658,13 +2998,13 @@ public class Deal {
 			contract = new Bid(Call.NullBid);
 			prevTrickWinner.clear();
 
-			for (Hand hand : rota[Dir.North.v]) {
-				if (hand.played.isEmpty() == false) {
-					@SuppressWarnings("unused")
-					int z = 0; // put your breakpoint here
-				}
-				assert (hand.played.isEmpty());
-			}
+//			for (Hand hand : rota[Dir.North.v]) {
+//				if (hand.played.isEmpty() == false) {
+//					@SuppressWarnings("unused")
+//					int z = 0; // put your breakpoint here
+//				}
+//				// assert (hand.played.isEmpty());
+//			}
 
 			contract = getHighestBid();
 
@@ -2785,7 +3125,6 @@ public class Deal {
 	/**
 	*    used by drop of web links and web text 'lins'
 	*/
-	@SuppressWarnings("deprecation")
 	public void makeLinBid_RearAlert(String bids) {
 		// ==============================================================================================
 		Level level = Level.Invalid;
@@ -2830,7 +3169,10 @@ public class Deal {
 			if (c == 'p' || c == 'P') {
 				/* do any previous alert */
 				if (alert || alertText.isEmpty() == false) {
-					alertText = URLDecoder.decode(alertText).trim();
+					try {
+						alertText = URLDecoder.decode(alertText, "UTF-8").trim();
+					} catch (UnsupportedEncodingException e) {
+					}
 					prevBid.alert = true;
 					prevBid.alertText = alertText;
 					alert = false;
@@ -2877,7 +3219,10 @@ public class Deal {
 			/* do any previous alert */
 			if (alert || alertText.isEmpty() == false) {
 				/* do any previous alert */
-				alertText = URLDecoder.decode(alertText).trim();
+				try {
+					alertText = URLDecoder.decode(alertText, "UTF-8").trim();
+				} catch (UnsupportedEncodingException e) {
+				}
 				prevBid.alert = true;
 				prevBid.alertText = alertText;
 				alert = false;
@@ -3111,7 +3456,7 @@ public class Deal {
 	public String cardPlayForLinSave() {
 		String s = "";
 
-		String eol_or_blank = (App.saveAsBboUploadFormat) ? "" : Zzz.lin_EOL;
+		String eol_or_blank = (App.saveAsBboUploadFormat) ? "" : Zzz.get_lin_EOL();
 		String extra_space = (App.saveAsBboUploadFormat && App.saveAsBboUploadExtraS) ? " " : "";
 
 		int countPlayed = countCardsPlayed();
@@ -3136,34 +3481,6 @@ public class Deal {
 
 		if (endedWithClaim) {
 			s += "mc|" + tricksClaimed + "|pg|" + extra_space + "|" + eol_or_blank;
-		}
-
-		return s;
-	}
-
-	/**
-	 */
-	public String cardPlayForDepFinSave(String def) {
-
-		int countPlayed = countCardsPlayed();
-
-		if ((contract.isValidBid() == false) && (countCardsPlayed() == 0)) {
-			return def;
-		}
-
-		String s = "";
-
-		if (countPlayed > 48)
-			countPlayed = 48; // DeepFinesse never wants to be told about the play of the last four cards
-
-		int tk = 0;
-		for (int i = 0; i < countPlayed; i++) {
-			Card card = getCardThatWasPlayed(i);
-			s += card.suit.toChar() + "" + card.rank.toChar() + " ";
-			tk = (tk + 1) % 4;
-			if (tk == 0) {
-				s += " ";
-			}
 		}
 
 		return s;
@@ -4068,16 +4385,48 @@ public class Deal {
 		return 0;
 	}
 
-	public void ShuffleWeakestAxisHands() {
-		if (isSaveable() == false)
-			return;
+	/** 
+	 */
+	public boolean hasShufOpRestrictions() {
+		// ==============================================================================================
+		return ((eb_min_card > 0) || areAnyCardsKept());
+	}
 
-		int ns = hands[Dir.North.v].countHighCardPoints() + hands[Dir.South.v].countHighCardPoints();
-		int ew = hands[Dir.East.v].countHighCardPoints() + hands[Dir.West.v].countHighCardPoints();
+	/** 
+	 */
+	public void shufOp_ShuffleDefendersHands() {
+		// ==============================================================================================
+
+		for (Hand hand : hands) {
+			if (hand.countOriginalCards() > 13)
+				return; // we have to be sensible here :)
+		}
+
+		int goodGuys;
+
+		if (this.contract.isValidBid()) {
+			goodGuys = contractAxis();
+		}
+		else {
+			int ns = hands[Dir.North.v].count_HighCardPoints() + hands[Dir.South.v].count_HighCardPoints();
+			int ew = hands[Dir.East.v].count_HighCardPoints() + hands[Dir.West.v].count_HighCardPoints();
+			goodGuys = (ns >= ew) ? Dir.NS : Dir.EW;
+		}
+
+		// fill in any un-delt cards
+
+		if (!packPristine.isEmpty()) {
+			Collections.shuffle(packPristine);
+			for (Hand hand : hands) {
+				while (!packPristine.isEmpty() && (hand.countOriginalCards() < 13)) {
+					hand.addDeltCard(packPristine.remove(packPristine.size() - 1));
+				}
+			}
+		}
 
 		Hand hds[] = new Hand[2];
 
-		if (ns >= ew) {
+		if (goodGuys == Dir.NS) {
 			hds[0] = hands[Dir.East.v];
 			hds[1] = hands[Dir.West.v];
 		}
@@ -4086,57 +4435,64 @@ public class Deal {
 			hds[1] = hands[Dir.South.v];
 		}
 
-		wipePlay();
+		if (hasShufOpRestrictions()) {
+			int played = this.countCardsPlayed();
+			undoLastPlays_ignoreTooMany(played - eb_min_card);
 
-		Cal cards = new Cal(26);
+			for (Hand hand : hds) {
+				hand.restoreUnplayedCardsToDeck_skipKept();
+			}
+		}
+		else {
+			wipePlay();
+
+			for (Hand hand : hds) {
+				for (Cal frag : hand.frags) {
+					frag.clear();
+				}
+				for (Cal fOrg : hand.fOrgs) {
+					packPristine.addAll(fOrg);
+					fOrg.clear();
+				}
+			}
+		}
+
+		Collections.shuffle(packPristine);
+
 		for (Hand hand : hds) {
-			for (Cal frag : hand.frags) {
-				frag.clear();
-			}
-			for (Cal fOrg : hand.fOrgs) {
-				cards.addAll(fOrg);
-				fOrg.clear();
+			while (!packPristine.isEmpty() && (hand.countOriginalCards() < 13)) {
+				hand.addDeltCard(packPristine.remove(packPristine.size() - 1));
 			}
 		}
 
-		assert (cards.size() == 26);
-
-		Collections.shuffle(cards);
-
-		for (int i = 0; i < cards.size(); i++) {
-			hds[i % 2].addDeltCard(cards.get(i));
-		}
+		assert (packPristine.size() == 0);
 	}
 
-	public boolean playCardsDepFinExternal(String play) {
+	/** 
+	 */
+	// ==============================================================================================
+	public void swapSuits(Suit s1, Suit s2) {
 
-		if (packPristine.size() != 0)
-			return false; // the card must be in the four hands
+		for (Dir p : Dir.nesw) {
+			Hand h = hands[p.v];
 
-		if (play.isEmpty() == false) {
-			for (String cs : play.split(" +")) {
-				// System.out.println(crd);
-				if (cs.length() != 2)
-					return false;
+			// fOrgs
+			Frag f = h.fOrgs[s1.v];
+			h.fOrgs[s1.v] = h.fOrgs[s2.v];
+			h.fOrgs[s2.v] = f;
 
-				Suit suit = Suit.charToSuit(cs.charAt(0));
-				Rank rank = Rank.charToRank(cs.charAt(1));
+			h.fOrgs[s1.v].changeSuitTo(s1);
+			h.fOrgs[s2.v].changeSuitTo(s2);
 
-				boolean ok = playCardExternal(suit, rank);
+			// Frags
+			f = h.frags[s1.v];
+			h.frags[s1.v] = h.frags[s2.v];
+			h.frags[s2.v] = f;
 
-				if (!ok)
-					return false;
-			}
+			h.frags[s1.v].changeSuitTo(s1);
+			h.frags[s2.v].changeSuitTo(s2);
+
 		}
-
-		if (countCardsPlayed() >= 48) {
-			while (countCardsPlayed() != 52) {
-				Hand hand = getNextHandToPlay();
-				hand.playCard(hand.getAnyCard()); // there is only one card left in each hand
-			}
-		}
-
-		return true;
 	}
 
 	public boolean isOrigCardsSame(Deal ad) {
@@ -4214,6 +4570,115 @@ public class Deal {
 		}
 
 		return null; // can't use invalid as invalid == North // Dir.Invalid;
+	}
+
+	public boolean areAnyCardsKept() {
+		for (Hand hand : hands) {
+			if (hand.areAnyCardsKept())
+				return true;
+		}
+		return false;
+	}
+
+	/** 
+	 */
+	public void clearAnyKeptCards() {
+		this.packPristine.clearAllKeptFlags();
+		for (Hand hand : hands) {
+			hand.clearAllKeptFlags();
+		}
+	}
+
+	/** 
+	 */
+	public String cardsForLinSave() {
+		String s = "";
+		for (Hand hand : rota[Dir.South.v]) {
+			s += hand.cardsForLinSave();
+			if (hand.compass != Dir.East)
+				s += ',';
+		}
+		return s;
+	}
+
+	public void setDealShowXes(ArrayList<String> as) {
+
+		if (as == null)
+			as = new ArrayList<String>(4);
+
+		// @ formatter:off
+		if (as.size() == 0)
+			as.add("");
+		if (as.size() == 1)
+			as.add("");
+		if (as.size() == 2)
+			as.add("");
+		if (as.size() == 3)
+			as.add("");
+		// @ formatter:on
+
+		for (int i : Zzz.zto3) {
+			Hand hand = hands[i];
+			int k = (i + 2) % 4; // North is zero in the hands and south is zero in the strings
+			String s = as.get(k).trim().toLowerCase() + "cccc";
+			s = s.substring(0, 4);
+			hand.setHandShowXes(s);
+		}
+	}
+
+	String pbnVulnerability() {
+
+		if (!vulnerability[0] && vulnerability[1])
+			return "EW";
+		if (vulnerability[0] && !vulnerability[1])
+			return "NS";
+		if (vulnerability[0] && vulnerability[1])
+			return "Both";
+		return "None";
+	}
+
+	String pbnDeal() {
+
+		String rtn = "N:";
+
+		rtn += hands[Dir.North.v].pdbHand() + " ";
+		rtn += hands[Dir.East.v].pdbHand() + " ";
+		rtn += hands[Dir.South.v].pdbHand() + " ";
+		rtn += hands[Dir.West.v].pdbHand();
+
+		return rtn;
+	}
+
+	public void writePbnToSaveableArray(ArrayList<String> ay, String info_text, int new_number) {
+
+		ay.add("[Event \"" + info_text + ", seed 000000000\"]");
+
+		String board_id = displayBoardId.isEmpty() == false ? displayBoardId : (qx_number + "");
+
+		ay.add("[Board \"" + ((new_number > 0) ? new_number : board_id) + "\"]");
+
+//		ay.add("[Date \"" + date_goes_here + "\"]");
+
+		ay.add("[West \"" + hands[Dir.West.v].playerName + "\"]");
+		ay.add("[North \"" + hands[Dir.North.v].playerName + "\"]");
+		ay.add("[East \"" + hands[Dir.East.v].playerName + "\"]");
+		ay.add("[South \"" + hands[Dir.South.v].playerName + "\"]");
+
+		ay.add("[Dealer \"" + dealer.pbnChar() + "\"]");
+		ay.add("[Vulnerable \"" + pbnVulnerability() + "\"]");
+		ay.add("[Deal \"" + pbnDeal() + "\"]");
+		ay.add("[Declarer \"?\"]");
+		ay.add("[Contract \"?\"]");
+		ay.add("[Result \"?\"]");
+
+		ay.add(""); // and a blank line to finish
+	}
+
+	public Hand initialLeader() {
+		if (contract.isValidBid() == false) {
+			return hands[Dir.West.v];
+		}
+		return hands[((contractCompass.v + 1) % 4)];
 	}
 
 }

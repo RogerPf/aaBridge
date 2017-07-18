@@ -16,8 +16,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.net.URLClassLoader;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -101,7 +99,53 @@ public class BridgeLoader {
 
 	/**   
 	 */
-	public static boolean readLinOrPbnFileIfExists(String pathWithSep, String dealName) {
+	public static boolean readLinOrPbnResourseIfExists(String jarOrZipName, String resName) {
+		// ==============================================================================================
+
+		boolean fromPbnFile = !resName.toLowerCase().endsWith(App.dotLinExt);
+
+		String origFileName = "";
+		int l = resName.lastIndexOf('/');
+		if (l > 0) {
+			origFileName = resName.substring(l + 1);
+		}
+
+		Lin lin = null;
+
+		try {
+			URLClassLoader betterLoader = Aaa.makeJarZipLoader(jarOrZipName);
+
+			InputStream is = betterLoader.getResourceAsStream(resName);
+
+			lin = new Lin(is, "_not_used_", origFileName, fromPbnFile, "");
+
+			is.close();
+
+			if (!App.using_java_6) {
+				betterLoader.close();
+			}
+
+		} catch (IOException i) {
+			System.out.println("lin resource rejected, bad format ?");
+		} catch (Exception e) {
+		}
+
+		if (lin == null) {
+			return false;
+		}
+
+		lin.filename = resName;
+
+		App.mg = new MassGi(lin);
+
+		App.switchToNewMassGi("");
+
+		return true;
+	}
+
+	/**   
+	 */
+	public static boolean readLinOrPbnFileIfExists(String pathWithSep, String dealName, String pbnToLinFolder) {
 		// ==============================================================================================
 
 		if (pathWithSep == null || pathWithSep.contentEquals("")) {
@@ -115,14 +159,14 @@ public class BridgeLoader {
 
 		Lin lin = null;
 
+		boolean fromPbnFile = !dealName.toLowerCase().endsWith(App.dotLinExt);
+
 		FileInputStream fis = null;
 
 		try {
 			fis = new FileInputStream(fileIn);
 
-			boolean isLin = dealName.toLowerCase().endsWith(App.dotLinExt);
-
-			lin = new Lin(fis, pathWithSep, dealName, isLin);
+			lin = new Lin(fis, pathWithSep, dealName, fromPbnFile, pbnToLinFolder);
 
 			fis.close();
 
@@ -153,73 +197,6 @@ public class BridgeLoader {
 		return true;
 	}
 
-	/**   
-	 */
-	public static boolean readLinOrPbnResourseIfExists(String jarName, String resName) {
-		// ==============================================================================================
-
-		Lin lin = null;
-
-		InputStream is = null;
-
-		URL[] urls = null;
-		try {
-
-			// System.out.println("jarname " + jarName);
-
-			urls = new URL[] { new File(jarName).toURI().toURL() };
-		} catch (MalformedURLException e) {
-			e.printStackTrace();
-		}
-
-		/* We still need to run on MACs (Snow Leopard and earlier that use Java 6
-		 * and Java 6 has no way of freeing the loaded class, even if one could work
-		 * out WHEN that should be done.
-		 */
-		@SuppressWarnings("resource")
-		URLClassLoader classLoader = new URLClassLoader(urls);
-
-		try {
-			is = classLoader.getResourceAsStream(resName);
-
-			boolean isLin = resName.toLowerCase().endsWith(App.dotLinExt);
-
-			lin = new Lin(is, "_not_", "_used_", isLin);
-
-			is.close();
-
-		} catch (IOException i) {
-			System.out.println("lin resource rejected, bad format? - but lets try to process it anyway");
-			try {
-				is.close();
-			} catch (IOException e) {
-				System.out.println("lin resourse  is - failed to close");
-				// e.printStackTrace();
-			}
-			// return false;
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-//		try {
-//			classLoader.close();
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-
-		if (lin == null) {
-			return false;
-		}
-
-		lin.filename = resName;
-
-		App.mg = new MassGi(lin);
-
-		App.switchToNewMassGi("");
-
-		return true;
-	}
-
 	/**
 	 */
 	public static File copyFileToAutoSavesFolderIfLinFileExists(String pathAndName) {
@@ -241,7 +218,7 @@ public class BridgeLoader {
 			OutputStream out = new FileOutputStream(fileOut);
 
 			// Transfer bytes from in to out
-			byte[] buf = new byte[1024];
+			byte[] buf = new byte[8 * 1024];
 			int len;
 			while ((len = in.read(buf)) > 0) {
 				out.write(buf, 0, len);

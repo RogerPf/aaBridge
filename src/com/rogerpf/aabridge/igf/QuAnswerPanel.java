@@ -19,6 +19,7 @@ import java.awt.event.ActionListener;
 import javax.swing.Timer;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.controller.CmdHandler;
 import com.rogerpf.aabridge.controller.q_;
@@ -123,7 +124,7 @@ public class QuAnswerPanel extends ConsumePanel {
 //		gi.text = gi.bb.get(2);
 //		gi.capEnv.centered = true;
 //
-//		consume_at(gi); 
+//		consume_at__uni(gi); 
 
 		if (gi.userAns.isEmpty())
 			return;
@@ -167,10 +168,6 @@ public class QuAnswerPanel extends ConsumePanel {
 
 		String trueAnsStr[] = gi.bb.get(4).split(",");
 
-		Suit suitU[] = { Suit.Invalid };
-
-//		Suit   suit[] = new Suit[trueAnsStr.length];
-//		Level level[] = new Level[trueAnsStr.length];
 		Bid trueAns[] = new Bid[trueAnsStr.length];
 
 		for (int i = 0; i < trueAnsStr.length; i++) {
@@ -183,9 +180,6 @@ public class QuAnswerPanel extends ConsumePanel {
 
 			Bid userAns = Bid.linStringToSingleBid(gi.userAns);
 
-			suitU[0] = Suit.Invalid;
-			String userAnsLevel = userAns.toLinAnswerString(suitU); // includes <space> NT on end if NoTrumps
-
 			int correct = -1;
 			String ua = userAns.toString();
 			for (int i = 0; i < trueAnsStr.length; i++) {
@@ -195,56 +189,96 @@ public class QuAnswerPanel extends ConsumePanel {
 				}
 			}
 
+			String last_part = "";
+
 			if (correct != -1) {
-				gi.text = "   Yes  -  " + ((trueAnsStr.length > 1) ? "A" : "The") + " correct call is    ";
+				gi.text = "   " + Aaf.quest_yes + "    " + Aaf.quest_cor + "   ";
 			}
 			else {
-				gi.text = "   You clicked " + userAns.toInnocuousAnswer() + ".    Incorrect answer";
-				suitU[0] = Suit.Invalid;
-				userAnsLevel = "";
+				gi.text = "   " + Aaf.quest_youClk + "   ";
+				last_part = "   " + Aaf.quest_inCor;
 			}
-			consume_at(gi);
+			consume_at__uni(gi);
 
-			if (userAnsLevel.length() > 0) {
+			if (userAns.isCall()) {
+				if (userAns.isPass()) {
+					gi.text = Aaf.game_pass; // not a lookup
+				}
+				else if (userAns.isDouble()) {
+					gi.text = Aaf.game_double; // not a lookup
+				}
+				else if (userAns.isReDouble()) {
+					gi.text = Aaf.game_redouble;
+				}
 				gi.capEnv.bold = true;
-				gi.text = userAnsLevel;
-				consume_at(gi);
+				consume_at__uni(gi);
+			}
+			else {
+				gi.capEnv.bold = true;
+				gi.text = userAns.level.v + "";
+				consume_at__uni(gi);
+
+				if (userAns.suit == Suit.NoTrumps) {
+					gi.capEnv.bold = true;
+					gi.text = Aaf.game_nt;
+					consume_at__uni(gi);
+				}
+				else if (userAns.suit != Suit.Invalid) {
+					gi.numb = userAns.suit.v;
+					consume_suitSymbol(gi, false /* not home symbol */);
+				}
 			}
 
-			if (suitU[0] != Suit.Invalid) {
-				gi.numb = suitU[0].v;
-				consume_suitSymbol(gi);
+			if (last_part.length() > 0) {
+				gi.capEnv.bold = false;
+				gi.text = last_part;
+				consume_at__uni(gi);
 			}
 
 		}
 		else {
 
-			gi.text = "  The correct call is    ";
-			consume_at(gi);
+			gi.text = "    " + Aaf.quest_cor + "   ";
+			consume_at__uni(gi);
 
 			gi.capEnv.bold = true;
 
 			for (int i = 0; i < trueAnsStr.length; i++) {
 				Bid ta = trueAns[i];
-				if (ta.isCall()) {
-					gi.text = ta.toString();
-					consume_at(gi);
-				}
-				else {
-					String userAnsLevel = ta.toLinAnswerString(suitU); // includes <space> NT on end if NoTrumps
-					gi.text = userAnsLevel;
-					consume_at(gi);
-					if ((ta.suit != Suit.Invalid) && (ta.suit.v >= Suit.Clubs.v) && (ta.suit.v <= Suit.Spades.v)) {
-						gi.numb = ta.suit.v;
-						consume_suitSymbol(gi);
-					}
+				if (i > 0) {
+					gi.text = "  /  ";
+					gi.capEnv.bold = false;
+					consume_at__uni(gi);
+					gi.text = "";
 				}
 
-				if (i < trueAnsStr.length - 1) {
-					gi.text = "  or  ";
-					gi.capEnv.bold = false;
-					consume_at(gi);
+				if (ta.isCall()) {
+					if (ta.isPass()) {
+						gi.text = Aaf.game_pass; // not a lookup
+					}
+					else if (ta.isDouble()) {
+						gi.text = Aaf.game_double; // not a lookup
+					}
+					else if (ta.isReDouble()) {
+						gi.text = Aaf.game_redouble;
+					}
 					gi.capEnv.bold = true;
+					consume_at__uni(gi);
+				}
+				else {
+					gi.capEnv.bold = true;
+					gi.text = ta.level.v + "";
+					consume_at__uni(gi);
+
+					if (ta.suit == Suit.NoTrumps) {
+						gi.capEnv.bold = true;
+						gi.text = Aaf.game_nt;
+						consume_at__uni(gi);
+					}
+					else if (ta.suit != Suit.Invalid) {
+						gi.numb = ta.suit.v;
+						consume_suitSymbol(gi, false /* not home symbol */);
+					}
 				}
 			}
 		}
@@ -287,7 +321,7 @@ public class QuAnswerPanel extends ConsumePanel {
 			Card userAns = Card.singleCardFromLinStr(gi.userAns);
 
 			suitU[0] = Suit.Invalid;
-			String userAnsLevel = userAns.toLinAnswerString(suitU); // includes <space> NT on end if NoTrumps
+			String userAnsLevel = userAns.rankLetterOr10(suitU);
 
 			int correct = -1;
 			String ua = userAns.toString();
@@ -298,83 +332,63 @@ public class QuAnswerPanel extends ConsumePanel {
 				}
 			}
 
+			String last_part = "";
+
 			if (correct != -1) {
-				gi.text = "   Yes  -  " + ((trueAnsStr.length > 1) ? "A" : "The") + " correct card is    ";
+				gi.text = Aaf.quest_yes + "    " + Aaf.quest_cor + "  ";
 			}
 			else {
-				gi.text = "   You clicked " + userAns.toInnocuousAnswer() + ".    Incorrect answer";
-				suitU[0] = Suit.Invalid;
-				userAnsLevel = "";
+				gi.text = Aaf.quest_youClk + "  ";
+				last_part = "   " + Aaf.quest_inCor;
 			}
-			consume_at(gi);
+			consume_at__uni(gi);
 
 			if (suitU[0] != Suit.Invalid) {
 				gi.numb = suitU[0].v;
-				consume_suitSymbol(gi);
+				consume_suitSymbol(gi, false /* not home symbol */);
 			}
 
 			if (userAnsLevel.length() > 0) {
 				gi.capEnv.bold = true;
-				gi.text = userAnsLevel;
-				consume_at(gi);
+				gi.text = Aaf.rankList.cardLetterLangConvForQuestions(userAns.rank.toChar());
+				consume_at__uni(gi);
+			}
+
+			if (last_part.length() > 0) {
+				gi.capEnv.bold = false;
+				gi.text = last_part;
+				consume_at__uni(gi);
 			}
 
 		}
 		else {
 
-			gi.text = "  The correct card is   ";
-			consume_at(gi);
+			gi.text = "    " + Aaf.quest_cor + "   ";
+			consume_at__uni(gi);
 
 			gi.capEnv.bold = true;
 
 			for (int i = 0; i < trueAnsStr.length; i++) {
 				Card ta = trueAns[i];
 
-				String userAnsLevel = ta.toLinAnswerString(suitU); // includes <space> NT on end if NoTrumps
-
 				if (i > 0) {
-					gi.text = "  or  ";
+					gi.text = "  /  ";
 					gi.capEnv.bold = false;
-					consume_at(gi);
+					consume_at__uni(gi);
 					gi.text = "";
 				}
 
 				if ((ta.suit != Suit.Invalid) && (ta.suit.v >= Suit.Clubs.v) && (ta.suit.v <= Suit.Spades.v)) {
 					gi.numb = ta.suit.v;
-					consume_suitSymbol(gi);
+					consume_suitSymbol(gi, false /* not home symbol */);
 				}
 
 				gi.capEnv.bold = true;
-				gi.text = userAnsLevel;
-				consume_at(gi);
+				gi.text = Aaf.rankList.cardLetterLangConvForQuestions(ta.rank.toChar());
+				consume_at__uni(gi);
 				gi.capEnv.bold = false;
 			}
 		}
-
-//		Card trueAns = Card.singleCardFromLinStr(gi.bb.get(4));
-//		boolean told = gi.userAns.contentEquals("tellme");
-//		Card userAns = (told) ? trueAns : Card.singleCardFromLinStr(gi.userAns);
-//
-//		Suit suit[] = { Suit.Invalid };
-//		String rankText = userAns.toLinAnswerString(suit);
-//
-//		if (trueAns.toString().contentEquals(userAns.toString())) {
-//			gi.text = (told ? "" : "Yes  -  ") + "The correct card is    ";
-//		}
-//		else {
-//			gi.text = "You clicked " + suit[0].toStr().toLowerCase() + rankText + ".    Incorrect answer";
-//			suit[0] = Suit.Invalid;
-//		}
-//		consume_at(gi);
-//
-//		if (suit[0] != Suit.Invalid) {
-//			gi.numb = suit[0].v;
-//			consume_suitSymbol(gi);
-//
-//			gi.capEnv.bold = true;
-//			gi.text = rankText;
-//			consume_at(gi);
-//		}
 
 		setCurSegEol();
 		startNewSeg();
@@ -398,22 +412,22 @@ public class QuAnswerPanel extends ConsumePanel {
 		seg.rightMargin = rightMargin;
 		gi.capEnv.centered = true;
 
-		String trueAns = gi.bb.getSafe(4).contentEquals("1") ? "Left" : "Right";
+		String trueAns = gi.bb.getSafe(4).contentEquals("1") ? Aaf.quest_left : Aaf.quest_right;
 		boolean told = gi.userAns.contentEquals("tellme");
-		String userAns = (told) ? trueAns : (gi.userAns.contentEquals("1") ? "Left" : "Right");
+		String userAns = (told) ? trueAns : (gi.userAns.contentEquals("1") ? Aaf.quest_left : Aaf.quest_right);
 
 		if (trueAns.contentEquals(userAns)) {
-			gi.text = (told ? "The " : "Yes, the ") + "correct hand is on the  -  ";
+			gi.text = (told ? "" : Aaf.quest_yes + "  ") + Aaf.quest_corHand;
 		}
 		else {
-			gi.text = "No, incorrect answer";
+			gi.text = Aaf.gT("quest.inCor");
 		}
-		consume_at(gi);
+		consume_at__uni(gi);
 
 		if (trueAns.contentEquals(userAns)) {
 			gi.text = trueAns;
 			gi.capEnv.bold = true;
-			consume_at(gi);
+			consume_at__uni(gi);
 		}
 
 		setCurSegEol();
@@ -444,17 +458,17 @@ public class QuAnswerPanel extends ConsumePanel {
 		String userAns = (told) ? trueAns : gi.userAns;
 
 		if (trueAns.contentEquals(userAns)) {
-			gi.text = (told ? "The " : "Yes, the ") + "correct answer is  -  ";
+			gi.text = (told ? "" : Aaf.quest_yes + "  ") + Aaf.quest_cor + "  ";
 		}
 		else {
 			gi.text = "No, incorrect answer";
 		}
-		consume_at(gi);
+		consume_at__uni(gi);
 
 		if (trueAns.contentEquals(userAns)) {
 			gi.text = trueAns;
 			gi.capEnv.bold = true;
-			consume_at(gi);
+			consume_at__uni(gi);
 		}
 
 		setCurSegEol();
@@ -484,9 +498,9 @@ public class QuAnswerPanel extends ConsumePanel {
 		String trueAns = "";
 
 		if (c == 'y') {
-			gi.bb.set(3, "Yes~No");
-			char a = (gi.bb.getSafe(4) + " ").charAt(0);
-			trueAns = (a == 'n' || a == 'N') ? "No" : "Yes";
+			gi.bb.set(3, Aaf.quest_yes + "~" + Aaf.quest_no);
+			char a = (gi.bb.getSafe(4) + " ").toUpperCase().charAt(0);
+			trueAns = (a == 'N') ? Aaf.quest_no : Aaf.quest_yes; // the n or N is in the lin file
 		}
 
 		String s[] = gi.bb.getSafe(3).split("\\~");
@@ -498,7 +512,7 @@ public class QuAnswerPanel extends ConsumePanel {
 
 			ansPos--; // as the string[] indexes from zero
 
-			trueAns = Aaa.deAtQuestionText(s[ansPos]);
+			trueAns = Aaa.deAtQuestionAndBubbleText(s[ansPos]);
 		}
 
 		boolean told = gi.userAns.contentEquals("tellme");
@@ -511,17 +525,18 @@ public class QuAnswerPanel extends ConsumePanel {
 		}
 
 		if (shortTrueAns.contentEquals(userAns)) {
-			gi.text = (told ? "The " : "Well done, the ") + "correct answer is  -   ";
+			gi.text = (told ? "" : Aaf.quest_yes + "  ") + Aaf.quest_cor + " -   ";
 		}
 		else {
-			gi.text = "Incorrect answer";
+			gi.text = Aaf.quest_inCor;
 		}
-		consume_at(gi);
+
+		consume_at__uni(gi);
 
 		if (shortTrueAns.contentEquals(userAns)) {
 			gi.text = trueAns;
 			gi.capEnv.bold = true;
-			consume_at(gi);
+			consume_at__uni(gi);
 		}
 		setCurSegEol();
 		startNewSeg();
@@ -631,20 +646,20 @@ public class QuAnswerPanel extends ConsumePanel {
 
 			gi.text = "" + frag.size();
 
-			gi.capEnv.font_slot_fp = MassGi.dfc_font_slot; // Bridge Face and symbol font LARGE size
+			gi.capEnv.font_slot_fp = MassGi.dfc_font_slot; // Bridge Face and symbol font
 			gi.capEnv.color_cp = Cc.BlackStrong;
 			gi.capEnv.bold = false;
 
 			if ((frag.suitVisControl & Suit.SVC_qaDot) == Suit.SVC_qaDot) {
-				gi.text = "o"; // the ? will appear as a BIG dot
+				gi.text = "o"; // the 'o' lower case o will appear as a BIG dot
 			}
 			else if ((frag.suitVisControl & Suit.SVC_qaCount) == Suit.SVC_qaCount) {
 				// do nothing extra and the frag size will appear
 				if (frag.size() == 0) {
 					if (App.dfcHyphenForVoids)
-						gi.text = "_"; // special underline - changed in font to be same size as other numbers and higher
+						gi.text = "~"; // the "~" is changed in font to a bold hyphen
 					else
-						gi.capEnv.color_cp = Cc.BlackWeedy; // zero shows feint
+						gi.capEnv.color_cp = Cc.BlackWeedy; // zero shows faint
 				}
 			}
 			else {
@@ -652,7 +667,7 @@ public class QuAnswerPanel extends ConsumePanel {
 				gi.capEnv.color_cp = Aaa.tutorialBackground;
 			}
 
-			consume_at(gi);
+			consume_at(gi); // NOT consume_at__uni(gi);
 
 			if (frag.suit != Suit.Clubs) {
 				gi.text = " ,,";

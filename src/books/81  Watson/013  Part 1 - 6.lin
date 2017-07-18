@@ -89,10 +89,10 @@ PG| ***** 9 ***** |
 AT|
 
 You will recall that in the following spade distribution, for example, South must win 4 tricks:
-|HT|t|va|6|AT|^l   @S 5 4 3
-|HT|v|va|6|AT|^J@S J 8 7 |HT|v|va|6|AT|^o@S 10 9 6
-|HT|x|va|6|AT|^l   @s A K Q 2
-|va|4|AT|Of these, 3 are high-card tricks, won with the three top honors, and the fourth is a long-suit trick, won with the deuce, which remains after the top honors have captured all the outstanding lower cards. |
+|HT|u|va|6|AT|^l   @S 5 4 3
+|HT|w|va|6|AT|^J@S J 8 7 |HT|w|va|6|AT|^o@S 10 9 6
+|HT|y|va|6|AT|^l   @s A K Q 2
+|n#|4|AT|Of these, 3 are high-card tricks, won with the three top honors, and the fourth is a long-suit trick, won with the deuce, which remains after the top honors have captured all the outstanding lower cards. |
 PG| ***** 10 ***** |
 
 
@@ -193,7 +193,7 @@ AT|Just this:
 |ht|h|at|^MN
 |HT|i|AT|^l W  ^M      E
 |HT|j|AT|^MS
-|HT|k|AT|^m@s6
+|HT|k|AT|^m@s 6
 |HT|l|AT|^m@h A K Q J
 |HT|m|AT|^m@d A K Q J
 |HT|n|AT|^m@c A K Q J

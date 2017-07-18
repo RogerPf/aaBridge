@@ -251,7 +251,7 @@ public class DualDealListButtonsPanel extends ClickPanel implements ItemListener
 				if (ed.movieBtn == e.getSource()) {
 					App.setMode(Aaa.NORMAL_ACTIVE);
 					App.setVisualMode(App.Vm_DealAndTutorial);
-					App.mg.setTheReadPoints(App.mg.findPgIdBeforeThisBarBlock(ed.qx_bb), false /* fwd__not_currently_used */);
+					App.mg.setTheReadPoints(App.mg.findPgIdBeforeThisBarBlock(ed.qx_bb), false /* not used */);
 					App.ddsAnalyserPanelVisible = false;
 					App.gbp.matchPanelsToDealState();
 					return;
@@ -263,7 +263,7 @@ public class DualDealListButtonsPanel extends ClickPanel implements ItemListener
 
 					if (deal != null) {
 						/* set the readpoints for our return to movie - if we ever do it */
-						App.mg.setTheReadPoints(pg_index, false /* fwd__not_currently_used */);
+						App.mg.setTheReadPoints(pg_index, false /* not used */);
 						App.deal = deal;
 						App.dealMajorChange();
 						CmdHandler.tutorialIntoDealStd();

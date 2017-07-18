@@ -16,8 +16,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
-import java.awt.font.TextAttribute;
-import java.util.Map;
 
 import javax.swing.BorderFactory;
 import javax.swing.ButtonGroup;
@@ -26,10 +24,10 @@ import javax.swing.border.Border;
 import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Cc;
 import com.rogerpf.aabridge.model.Dir;
-import com.rpsd.bridgefonts.BridgeFonts;
 
 /**   
  */
@@ -41,21 +39,29 @@ public class AaRopPrefs2_SeatChoice extends ClickPanel implements ItemListener, 
 
 	QLabel existingDealsLabel;
 
-	ButtonGroup rbRespectLinYou = new ButtonGroup();
-	QRadioButton respLinYou;
-	QRadioButton overrideLinYou;
+	ButtonGroup showFineBG = new ButtonGroup();
+	QRadioButton showFine0;
+	QRadioButton showFine1;
 
-	QLabel whichSeatLin;
-	ButtonGroup rbGroupSeatLin = new ButtonGroup();
-	QRadioButton southLin;
-	QRadioButton eastLin;
-	QRadioButton westLin;
+	boolean showFine = false;
 
-	QLabel oldSouthLabel;
+	QLabel southZoneLabel1;
+	QLabel southZoneLabel2;
 	ButtonGroup rbGroupSouthZone = new ButtonGroup();
 	QRadioButton southZoneSouth;
 	QRadioButton southZoneDeclarer;
 	QRadioButton southZoneYouSeat;
+
+	ButtonGroup rbRespectLinYou = new ButtonGroup();
+	QRadioButton respLinYou;
+	QRadioButton overrideLinYou;
+
+	QLabel seatLinLabel1;
+	QLabel seatLinLabel2;
+	ButtonGroup seatLinBG = new ButtonGroup();
+	QRadioButton southLin;
+	QRadioButton eastLin;
+	QRadioButton westLin;
 
 	QCheckBox reviewFromPlay;
 	QCheckBox showOpeningLead;
@@ -98,135 +104,147 @@ public class AaRopPrefs2_SeatChoice extends ClickPanel implements ItemListener, 
 		Border bdr4 = BorderFactory.createEmptyBorder(0, 4, 0, 4);
 		Border bdr2 = BorderFactory.createEmptyBorder(1, 4, 1, 4);
 
-		setLayout(new MigLayout(App.simple + ", flowy", "[][]", "[][]"));
+		setLayout(new MigLayout(App.simple + ", hidemode 1, flowy", "[][]", "[][]"));
 
 		String rbInset = "gapx 7";
 
 		// @formatter:off
-		add(anyLabel  = new QLabel("  Seat Choice             for   Bridge Movies   and   'Entered Deals'  "), "gapy 5");
+		add(anyLabel  = new QLabel(Aaf.gT("menuOpt.seat")), "gapx 5, gapy 5");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
 
-		add(anyLabel          = new QLabel("In a Movie with a contract showing on the table  OR  when 'Enter the Deal' is clicked  then the "), "gapy 5");
+		add(anyLabel          = new QLabel(Aaf.gT("sChoiceTab.extra")), "gapy 9");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
-		add(anyLabel          = new QLabel("      (South) area shows ?  "));
-		anyLabel.setForeground(Aaa.optionsTitleGreen);
-		add(southZoneSouth    = new QRadioButton(this, rbGroupSouthZone, bdr1, App.putWhoInSouthZone == 0, "southZoneSouth",    "Actual South hand  "), rbInset);
-		add(southZoneDeclarer = new QRadioButton(this, rbGroupSouthZone, bdr1, App.putWhoInSouthZone == 1, "southZoneDeclarer", "Declarer  "), rbInset);
-		add(southZoneYouSeat  = new QRadioButton(this, rbGroupSouthZone, bdr1, App.putWhoInSouthZone == 2, "southZoneYouSeat",  "'You Seat'  set below       i.e. the same as  'Enter the Deal'  You Seat  "), rbInset);
+		add(showFine1         = new QRadioButton(this, showFineBG, bdr0, showFine == true,   "Show", Aaf.gT("sChoiceTab.show")), rbInset + ", split2, flowx");
+		add(showFine0         = new QRadioButton(this, showFineBG, bdr0, showFine == false,  "Hide", Aaf.gT("sChoiceTab.hide")), "gapx 15, flowy");
 
-		add(anyLabel       = new QLabel("'Enter the Deal' sets the   "), (App.onMac ? "gapy8" : "gapy14") );
-		anyLabel.setForeground(Aaa.optionsTitleGreen);
-		add(anyLabel       = new QLabel("       'You Seat' to ?  "));
-		anyLabel.setForeground(Aaa.optionsTitleGreen);
-		add(respLinYou     = new QRadioButton(this, rbRespectLinYou, bdr1,  App.respectLinYou, "respLinYou", "The  'You Seat'  in the deal  -  use this for pre-set bridge problems  "), rbInset);
-		add(overrideLinYou = new QRadioButton(this, rbRespectLinYou, bdr1, !App.respectLinYou, "overrideLinYou", "The Seat below"), rbInset);
+		add(southZoneLabel1   = new QLabel(Aaf.gT("sChoiceTab.edt1")), "gapy 5");
+		    southZoneLabel1.setForeground(Aaa.optionsTitleBLue);
+		    
+		add(southZoneLabel2   = new QLabel(Aaf.gT("sChoiceTab.edt2")), "gapx 15");
+		    southZoneLabel2.setForeground(Aaa.optionsTitleBLue);
+		    
+		add(southZoneSouth    = new QRadioButton(this, rbGroupSouthZone, bdr1, App.putWhoInSouthZone == 0, "southZoneSouth",    Aaf.gT("sChoiceTab.actual")), rbInset);
+		add(southZoneDeclarer = new QRadioButton(this, rbGroupSouthZone, bdr1, App.putWhoInSouthZone == 1, "southZoneDeclarer", Aaf.gT("cmnTab.decl")), rbInset);
+		add(southZoneYouSeat  = new QRadioButton(this, rbGroupSouthZone, bdr1, App.putWhoInSouthZone == 2, "southZoneYouSeat",  Aaf.gT("sChoiceTab.asYou")), rbInset);
+
+		add(seatLinLabel1     = new QLabel(Aaf.gT("sChoiceTab.edtSetsThe")));
+		    seatLinLabel1.setForeground(Aaa.optionsTitleBLue);
+		    seatLinLabel1.setBorder(BorderFactory.createEmptyBorder((App.onMac ? 8 : 14), 4, 1, 4));
+		    
+		add(seatLinLabel2       = new QLabel(Aaf.gT("sChoiceTab.youSeatTo")), "gapx 15");
+		    seatLinLabel2.setForeground(Aaa.optionsTitleBLue);
+		    
+		add(respLinYou     = new QRadioButton(this, rbRespectLinYou, bdr1,  App.respectLinYou, "respLinYou", Aaf.gT("sChoiceTab.uInDeal")), rbInset);
+		add(overrideLinYou = new QRadioButton(this, rbRespectLinYou, bdr1, !App.respectLinYou, "overrideLinYou", Aaf.gT("sChoiceTab.seatBelow")), rbInset);
 
 		boolean eastValLin  = (App.youSeatForLinDeal == Dir.East);
 		boolean westValLin  = (App.youSeatForLinDeal == Dir.West);
 		boolean southValLin = !(eastValLin || westValLin);
 
 		Border bdr5 = BorderFactory.createEmptyBorder(0, 3, 1, 0);
-		add(westLin        = new QRadioButton(this, rbGroupSeatLin, bdr1, westValLin,  "LHO  ",  "LHO"), "split2, gapx 2, flowx");
-		add(eastLin        = new QRadioButton(this, rbGroupSeatLin, bdr1, eastValLin,  "RHO",  "RHO"), "flowy, gapy3");
-		add(southLin       = new QRadioButton(this, rbGroupSeatLin, bdr5, southValLin, "Declarer", "Declarer"), "gapx 28");
-
-//		add(anyLabel       = new QLabel("You can change the  'You Seat'  at ANY TIME by clicking on players names / compass banner area  "), "gapx90, gapy3");
-//	    anyLabel.setForeground(Cc.RedStrong);
+		add(westLin        = new QRadioButton(this, seatLinBG, bdr1, westValLin,  "LHO",  Aaf.gT("sChoiceTab.lho")), "split2, gapx 2, flowx");
+		add(eastLin        = new QRadioButton(this, seatLinBG, bdr1, eastValLin,  "RHO",  Aaf.gT("sChoiceTab.rho")), "flowy, gapy3");
+		add(southLin       = new QRadioButton(this, seatLinBG, bdr5, southValLin, "Declarer", Aaf.gT("cmnTab.decl")), "gapx 28");
 		
-		add(anyLabel       = new QLabel("'Enter the Deal'  shows ?"), (App.onMac ? "gapy8" : "gapy14"));
+		add(anyLabel       = new QLabel(Aaf.gT("sChoiceTab.etdShows")), (App.onMac ? "gapy8" : "gapy14"));
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
-		add(reviewFromPlay = new QCheckBox(this, App.reviewFromPlay, "from Play  (skip Bidding)  "), "gapx 8");
+		add(reviewFromPlay = new QCheckBox(this, App.reviewFromPlay, Aaf.gT("sChoiceTab.fromPlay")), "gapx 8");
 		reviewFromPlay.setBorder(bdr1);
-		add(showOpeningLead = new QCheckBox(this, App.showOpeningLead, "Opening Lead  -  OR Use the  '>' button  to show it  "), "gapx 8");
+		add(showOpeningLead = new QCheckBox(this, App.showOpeningLead, Aaf.gT("sChoiceTab.fromOpen")), "gapx 8");
 		showOpeningLead.setBorder(bdr1);
 
-		add(anyLabel       = new QLabel("Non 'You Seat's  are set ?         when   'Entering the Deal'"), (App.onMac ? "gapy8" : "gapy16"));
+		add(anyLabel       = new QLabel(Aaf.gT("sChoiceTab.non")), (App.onMac ? "gapy8" : "gapy16"));
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
 
 		Border bdr3 = BorderFactory.createEmptyBorder(0, 3, 0, 0);
-		add(lsh_policy1     = new QRadioButton(this, rbGroupPolicy, bdr3, App.localShowHiddPolicy == 1,  "p1", "Show  "), rbInset );
-		add(lsh_policy2     = new QRadioButton(this, rbGroupPolicy, bdr3, App.localShowHiddPolicy == 2,  "p2", "leave as is  "), rbInset);
-		add(lsh_policy0     = new QRadioButton(this, rbGroupPolicy, bdr3, App.localShowHiddPolicy == 0,  "p0", "Hide  "), rbInset );
+		add(lsh_policy1     = new QRadioButton(this, rbGroupPolicy, bdr3, App.localShowHiddPolicy == 1,  "p1", Aaf.gT("sChoiceTab.show")), rbInset );
+		add(lsh_policy2     = new QRadioButton(this, rbGroupPolicy, bdr3, App.localShowHiddPolicy == 2,  "p2", Aaf.gT("sChoiceTab.leaveAs")), rbInset);
+		add(lsh_policy0     = new QRadioButton(this, rbGroupPolicy, bdr3, App.localShowHiddPolicy == 0,  "p0", Aaf.gT("sChoiceTab.hide")), rbInset );
 
-		add(youSeatPartnerVis = new QCheckBox(this, App.youSeatPartnerVis, "Partner of 'You Seat'  set  'Always Show'   -  useful when you are following only one side's BIDDING  "), "gapx 18");
+		add(youSeatPartnerVis = new QCheckBox(this, App.youSeatPartnerVis, Aaf.gT("sChoiceTab.pAlways")), "gapx 5, gapy 3");
 		youSeatPartnerVis.setBorder(bdr1);
 		    
-		add(anyLabel       = new QLabel("DlaE - Quick Set                    Defend like an Expert    options,  see the  Welcome Page  "), "gapy 18");
+		add(anyLabel       = new QLabel(Aaf.gT("sChoiceTab.dlaeQuick")), "gapy 18");
 			anyLabel.setForeground(Aaa.optionsTitleGreen);
 			
 		if (App.onMac == false) {
-		    add(applyDlaeLHO = new QButton(this, "LHO"), "gapx6, split 2, flowx");
+		    add(applyDlaeLHO = new QButton(this, Aaf.gT("sChoiceTab.lho")), "gapx6, split 2, flowx");
 				applyDlaeLHO.setBorder(BorderFactory.createEmptyBorder(2, 4, 1, 4));				
-		    add(applyDlaeRHO = new QButton(this, "RHO"), "gapx10");
+		    add(applyDlaeRHO = new QButton(this, Aaf.gT("sChoiceTab.rho")), "gapx10");
 				applyDlaeRHO.setBorder(BorderFactory.createEmptyBorder(2, 4, 1, 4));
 		}
 		else  { // no gaps or borders on the MAC - they "break" the buttons appearance or (gaps are not wanted)
-		    add(applyDlaeLHO = new QButton(this, "LHO"), "split 2, flowx");					
-		    add(applyDlaeRHO = new QButton(this, "RHO"), "");
+		    add(applyDlaeLHO = new QButton(this, Aaf.gT("sChoiceTab.lho")), "split 2, flowx");					
+		    add(applyDlaeRHO = new QButton(this, Aaf.gT("sChoiceTab.rho")), "");
 		}
 		
-		applyDlaeLHO.setToolTipText("Reset to - Defend Like an Expert (LHO)    options,  see the  Welcome Page  ");
-		applyDlaeRHO.setToolTipText("Reset to - Defend Like an Expert (RHO)    options,  see the  Welcome Page  ");
+		applyDlaeLHO.setToolTipText(Aaf.gT("sChoiceTab.dlaeLho_TT"));
+		applyDlaeRHO.setToolTipText(Aaf.gT("sChoiceTab.dlaeRho_TT"));
 				
-	    add(applyDlaeDeclarer = new QButton(this, "Declarer"), "gapx16");
-	        applyDlaeDeclarer.setToolTipText("Reset to - Defend Like an Expert (Declarer)    options,  see the  Welcome Page  ");
+	    add(applyDlaeDeclarer = new QButton(this, Aaf.gT("cmnTab.decl")), "gapx16");
+	        applyDlaeDeclarer.setToolTipText(Aaf.gT("sChoiceTab.dlaeDecl_TT"));
 		if (App.onMac == false)
 			applyDlaeDeclarer.setBorder(BorderFactory.createEmptyBorder(2, 4, 1, 4));
 		
+		
 
 		// bright purple-pink dot
-	    add(anyLabel      = new QLabel("" + (char) 0x25cf), "split 2, flowx");
+	    add(anyLabel      = new QLabel("" + (char) 0x25cf /* a dot */), "split 2, flowx");
 	    {
 	    	Font fo = anyLabel.getFont();
-	    	int old_size = fo.getSize();
-			@SuppressWarnings("unchecked")
-			Map<TextAttribute, Object> attributes = (Map<TextAttribute, Object>) BridgeFonts.bridgeTextStdFont.getAttributes();
-			attributes.put(TextAttribute.SIZE, (float) old_size * 1.8);
-			Font font = BridgeFonts.bridgeTextStdFont.deriveFont(attributes);
-	    	anyLabel.setFont(font);
+	    	anyLabel.setFont(fo.deriveFont(fo.getSize() * 1.2f));
 	    }
 	    anyLabel.setBorder(BorderFactory.createEmptyBorder(16, 0, 0, 0));
 	    anyLabel.setForeground(new Color(0xdd00ff));
-	    anyLabel.setToolTipText("The  Apply Defaults  button sorts out all  STRANGE SEATING DISPLAYS - this bright dot is there to remind you  ");
+	    anyLabel.setToolTipText(Aaf.gT("sChoiceTab.applyDef_TT"));
 
-
-		add(applyDefaults = new QButton(this, "Apply Defaults"), "gapx2, gapy15");
-			applyDefaults.setToolTipText("Reset all  Seat Options  to default values.   Sorts out all  STRANGE SEATING DISPLAYS");			
+		add(applyDefaults = new QButton(this, Aaf.gT("cmnTab.applyDef")), "gapx2, gapy25");
+			applyDefaults.setToolTipText(Aaf.gT("sChoiceTab.applyDef_TT"));			
 		if (App.onMac == false)
 		    applyDefaults.setBorder(BorderFactory.createEmptyBorder(5, 1, 4, 4));
+		
 
 		
-		add(anyLabel       = new QLabel("Special Use"), (App.onMac ? "gapy8" : "gapy16"));
-		anyLabel.setForeground(Aaa.optionsTitleGreen);
+		add(anyLabel     = new QLabel(Aaf.gT("sChoiceTab.override")), (App.onMac ? "gapy8" : "gapy25"));
+		    anyLabel.setForeground(Aaa.optionsTitleGreen);
+		    
+		add(forceShowEtd = new QCheckBox(this, App.forceShowEtd,  Aaf.gT("sChoiceTab.forceEtd")));
+	        forceShowEtd.setBorder(bdr2);
+	        forceShowEtd.setForeground(Cc.RedStrong);
+
+
+	        
+	    add(anyLabel       = new QLabel(Aaf.gT("sChoiceTab.special")), (App.onMac ? "gapy8" : "gapy25"));
+		    anyLabel.setForeground(Aaa.optionsTitleGreen);
 		
-		add(twisterReset = new QButton(this, "r"), "split 4, flowx");
-			twisterReset.setToolTipText("Reset to  -  South as South");
+		add(twisterReset = new QButton(this, Aaf.gT("sChoiceTab.r")), "gapy2, split 4, flowx");
+			twisterReset.setToolTipText(Aaf.gT("sChoiceTab.r_TT"));
 			twisterReset.setForeground(Cc.BlueStrong);
 			twisterReset.setBorder(bdr4); // even on a MAC  -  they will have to suffer this one "no border" button
 		
 		add(twisterLeft = new QButton(this, "<"), "gapx 8");
-			twisterLeft.setToolTipText("< Anti-clockwise - rotate Tutorial and ALL Deal displays");
+			twisterLeft.setToolTipText(Aaf.gT("sChoiceTab.anti_TT"));
 			twisterLeft.setForeground(Cc.BlueStrong);
 			twisterLeft.setBorder(bdr4); // even on a MAC  -  they will have to suffer this one "no border" button
 		
 		add(twisterRight = new QButton(this, ">"), "gapx 8");
-			twisterRight.setToolTipText("> Clockwise - rotate Tutorial and ALL Deal displays");
+			twisterRight.setToolTipText(Aaf.gT("sChoiceTab.clock_TT"));
 			twisterRight.setForeground(Cc.BlueStrong);
 			twisterRight.setBorder(bdr4); // even on a MAC  -  they will have to suffer this one "no border" button
 	    
-		add(anyLabel = new QLabel("Universal  Rotator   -    in Deal mode  LHO, RHO & Declarer buttons  have precedence so use  Apply Defaults  first  "), "gapx 8");
+		add(anyLabel = new QLabel(Aaf.gT("sChoiceTab.uni")), "gapx 8");
 		    anyLabel.setForeground(Cc.RedStrong);
 	    
-		add(compassClear = new QButton(this, "c"), "split 2, flowx");
-		    compassClear.setToolTipText("Clear all 4 hides");
+		add(compassClear = new QButton(this, Aaf.gT("sChoiceTab.c")), "split 2, flowx");
+		    compassClear.setToolTipText(Aaf.gT("sChoiceTab.c_TT"));
 		    compassClear.setForeground(Cc.BlueStrong);
 		    compassClear.setBorder(bdr4); // even on a MAC  -  they will have to suffer this one "no border" button
 
-		add(alwaysShowHidden  = new QCheckBox(this, App.alwaysShowHidden,  "Show ALL Always  -  buttons below will override  -  (in BOTH tutorial and std mode)  "), "gapx13, gapy4");
+		add(alwaysShowHidden  = new QCheckBox(this, App.alwaysShowHidden,  Aaf.gT("sChoiceTab.allAlways")), "gapx13, gapy4");
 		    alwaysShowHidden.setBorder(bdr0);
 		    alwaysShowHidden.setForeground(Cc.RedStrong);
 
-		add(force_N_HiddenTut = new QCheckBox(this, App.force_N_HiddenTut,  "N       force  Hidden  "), "gapx13, gapy4");
+		add(force_N_HiddenTut = new QCheckBox(this, App.force_N_HiddenTut, Dir.getLangDirChar(Dir.North) + "      " + Aaf.gT("sChoiceTab.forceHidden")), "gapx13, gapy4");
     		force_N_HiddenTut.setBorder(bdr2);
     		force_N_HiddenTut.setForeground(Cc.RedStrong);
    
@@ -234,28 +252,40 @@ public class AaRopPrefs2_SeatChoice extends ClickPanel implements ItemListener, 
 	        force_W_HiddenTut.setBorder(bdr4);
 		    force_W_HiddenTut.setForeground(Cc.RedStrong);
 		   
-		add(force_E_HiddenTut = new QCheckBox(this, App.force_E_HiddenTut,  " E    force  Hidden"  ));
+		add(force_E_HiddenTut = new QCheckBox(this, App.force_E_HiddenTut,  Dir.getLangDirChar(Dir.East) + "      " + Aaf.gT("sChoiceTab.forceHidden")));
 			force_E_HiddenTut.setBorder(bdr4);
 			force_E_HiddenTut.setForeground(Cc.RedStrong);
 	
-		add(force_S_HiddenTut = new QCheckBox(this, App.force_S_HiddenTut,  "S       force  Hidden  "), "gapx13");
+		add(force_S_HiddenTut = new QCheckBox(this, App.force_S_HiddenTut,  Dir.getLangDirChar(Dir.South) + "      " + Aaf.gT("sChoiceTab.forceHidden")), "gapx13");
 			force_S_HiddenTut.setBorder(bdr2);
 			force_S_HiddenTut.setForeground(Cc.RedStrong);
 	   		    
-		add(forceYouSeatToSouthZone = new QCheckBox(this, App.forceYouSeatToSouthZone,  "Force You Seat  'South'   -   When  Entering a Deal always make the 'South Zone' the You Seat  "), "gapy 4");
+		add(forceYouSeatToSouthZone = new QCheckBox(this, App.forceYouSeatToSouthZone,  Aaf.gT("sChoiceTab.forceYouS")), "gapy 3");
 		    forceYouSeatToSouthZone.setBorder(bdr2);
 		    forceYouSeatToSouthZone.setForeground(Cc.RedStrong);
-	   		    
-		add(forceShowEtd = new QCheckBox(this, App.forceShowEtd,  "Show ETD       Overrides suppression of 'Enter the Deal' visibility"), "gapy 4");
-		    forceShowEtd.setBorder(bdr2);
-		    forceShowEtd.setForeground(Cc.RedStrong);
-		    
+
 		    // @formatter:on
 
 		showButtonStates();
 	}
 
 	public void showButtonStates() {
+
+		southZoneLabel1.setVisible(showFine == true);
+		southZoneLabel2.setVisible(showFine == true);
+		southZoneSouth.setVisible(showFine == true);
+		southZoneDeclarer.setVisible(showFine == true);
+		southZoneYouSeat.setVisible(showFine == true);
+
+		respLinYou.setVisible(showFine == true);
+		overrideLinYou.setVisible(showFine == true);
+
+		seatLinLabel1.setVisible(showFine == true);
+		seatLinLabel2.setVisible(showFine == true);
+		southLin.setVisible(showFine == true);
+		eastLin.setVisible(showFine == true);
+		westLin.setVisible(showFine == true);
+
 		westLin.setEnabled(!App.respectLinYou);
 		eastLin.setEnabled(!App.respectLinYou);
 		southLin.setEnabled(!App.respectLinYou);
@@ -273,7 +303,7 @@ public class AaRopPrefs2_SeatChoice extends ClickPanel implements ItemListener, 
 		forceShowEtd.setSelected(App.forceShowEtd);
 	}
 
-	public void respectLinYouSetBy_mainNewBoard() {
+	public void respectLinYouSetBy_mainNewBoard(boolean skip_alwaysShowHidden) {
 
 		App.putWhoInSouthZone = 0; // South
 		southZoneSouth.setSelected(true);
@@ -287,11 +317,13 @@ public class AaRopPrefs2_SeatChoice extends ClickPanel implements ItemListener, 
 		eastLin.setEnabled(!App.respectLinYou);
 		southLin.setEnabled(!App.respectLinYou);
 
-		App.alwaysShowHidden = false;
-		App.force_N_HiddenTut = false;
-		App.force_W_HiddenTut = false;
-		App.force_E_HiddenTut = false;
-		App.force_S_HiddenTut = false;
+		if (!skip_alwaysShowHidden) {
+			App.alwaysShowHidden = false;
+			App.force_N_HiddenTut = false;
+			App.force_W_HiddenTut = false;
+			App.force_E_HiddenTut = false;
+			App.force_S_HiddenTut = false;
+		}
 		App.forceYouSeatToSouthZone = false;
 
 		showButtonStates();
@@ -390,9 +422,13 @@ public class AaRopPrefs2_SeatChoice extends ClickPanel implements ItemListener, 
 		}
 
 		else if (source == applyDefaults) {
+			applyDefaults();
+			App.frame.rop.p1_AutoPlay.applyDefaults();
 
-			applyDefaultsAction();
-
+			App.savePreferences();
+			App.calcCompassPhyOffset();
+			App.gbp.dealMajorChange();
+			App.frame.repaint();
 		}
 
 		else if (source == compassClear) {
@@ -438,7 +474,11 @@ public class AaRopPrefs2_SeatChoice extends ClickPanel implements ItemListener, 
 		}
 	}
 
-	void applyDefaultsAction() {
+	void applyDefaults() {
+
+		showFine = false;
+		showFine0.setSelected(showFine == false);
+		showFine1.setSelected(showFine == true);
 
 		App.putWhoInSouthZone = 0; // South
 		southZoneSouth.setSelected(true);
@@ -477,13 +517,9 @@ public class AaRopPrefs2_SeatChoice extends ClickPanel implements ItemListener, 
 		App.forceYouSeatToSouthZone = false;
 		App.forceShowEtd = false;
 
-		App.savePreferences();
 		showButtonStates();
 
 		App.allTwister_reset();
-		App.calcCompassPhyOffset();
-		App.gbp.dealMajorChange();
-		App.frame.repaint();
 	}
 
 	/** This listens for the check box changed event */
@@ -524,6 +560,15 @@ public class AaRopPrefs2_SeatChoice extends ClickPanel implements ItemListener, 
 		}
 		else if (source == forceShowEtd) {
 			App.forceShowEtd = b;
+		}
+
+		else if (source == showFine0) {
+			showFine = false;
+			showButtonStates();
+		}
+		else if (source == showFine1) {
+			showFine = true;
+			showButtonStates();
 		}
 
 		// we are only interested in the selected values for the radio buttons
@@ -576,14 +621,14 @@ public class AaRopPrefs2_SeatChoice extends ClickPanel implements ItemListener, 
 		}
 		else if (source == lsh_policy1) {
 			App.localShowHiddPolicy = 1;
-			App.youSeatPartnerVis = false;
-			youSeatPartnerVis.setSelected(false);
+			// App.youSeatPartnerVis = false;
+			// youSeatPartnerVis.setSelected(false);
 //			posCalcPlease = true;
 		}
 		else if (source == lsh_policy2) {
 			App.localShowHiddPolicy = 2;
-			App.youSeatPartnerVis = false;
-			youSeatPartnerVis.setSelected(false);
+			// App.youSeatPartnerVis = false;
+			// youSeatPartnerVis.setSelected(false);
 //			posCalcPlease = true;
 		}
 		else if (source == forceYouSeatToSouthZone) {
@@ -593,46 +638,34 @@ public class AaRopPrefs2_SeatChoice extends ClickPanel implements ItemListener, 
 		if (App.allConstructionComplete) {
 			App.savePreferences();
 
-			if (App.isVmode_InsideADeal() && App.deal.isContractReal()) {
-				// if we are in a tutorial this happens when the tutorial is 'calculated'
-				// to match the inside deal to look the same we also do it here.
-
-				if (posCalcPlease) {
-//					if (App.putWhoInSouthZone == 3) {
-//						App.calcCompassPhyOffset();
-//					}
-//					else 
-					{
-						int offsetWanted = 0; // 0 = no extra rotation (keep south south)
-						if (App.putWhoInSouthZone == 0 /* default so South in South zone */) {
-							//
-						}
-						else {
-							offsetWanted = App.deal.contractCompass.rotate180().v;
-							if (!App.respectLinYou && App.putWhoInSouthZone == 2) { // /* "You Seat" set below */ /* Assume true == south */) {
-								offsetWanted = (4 + offsetWanted + (App.youSeatForLinDeal.v - 2)) % 4;
-							}
-						}
-						while (App.getCompassPhyOffset() != offsetWanted)
-							App.incOffsetClockwise();
+			if (posCalcPlease) {
+				int offsetWanted = 0; // 0 = no extra rotation (keep south south)
+				if (App.putWhoInSouthZone == 0 /* default so South in South zone */) {
+					//
+				}
+				else {
+					offsetWanted = App.deal.contractCompass.rotate180().v;
+					if (!App.respectLinYou && App.putWhoInSouthZone == 2) { // /* "You Seat" set below */ /* Assume true == south */) {
+						offsetWanted = (4 + offsetWanted + (App.youSeatForLinDeal.v - 2)) % 4;
 					}
 				}
-
-				if (youSeatChange) {
-					Dir newYou = App.deal.contractCompass;
-					if (!App.respectLinYou) {
-						newYou = Dir.directionFromInt((App.deal.contractCompass.v + (App.youSeatForLinDeal.v - 2)) % 4);
-					}
-					App.deal.setYouSeatHint(newYou);
-				}
-
-				App.gbp.matchPanelsToDealState();
+				while (App.getCompassPhyOffset() != offsetWanted)
+					App.incOffsetClockwise();
 			}
+
+			if (youSeatChange) {
+				Dir newYou = App.deal.contractCompass;
+				if (!App.respectLinYou) {
+					newYou = Dir.directionFromInt((App.deal.contractCompass.v + (App.youSeatForLinDeal.v - 2)) % 4);
+				}
+				App.deal.setYouSeatHint(newYou);
+			}
+
+			App.frame.invalidate();
+			App.gbp.matchPanelsToDealState();
 
 			showButtonStates();
 			App.frame.rop.p1_AutoPlay.showButtonStates();
-
-			App.frame.repaint();
 		}
 
 	}

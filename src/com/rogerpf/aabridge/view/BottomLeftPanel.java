@@ -18,7 +18,9 @@ import java.awt.event.ActionListener;
 import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
+import com.rogerpf.aabridge.model.Cc;
 import com.rogerpf.aabridge.model.Lin;
 import com.rpsd.bridgefonts.BridgeFonts;
 
@@ -82,7 +84,7 @@ public class BottomLeftPanel extends ClickPanel {
 			c0_2_0__empt.setVisible(false);
 			boolean showMsg = (!App.isAutoBid(App.deal.getNextHandToBid().compass)) && !App.isMode(Aaa.EDIT_BIDDING) && App.showBidPlayMsgs;
 			c0_2_0__clam.setVisible(!showMsg);
-			c0_2_0__mdp.textArea.setText("\nPlease BID using the Bidding\nPanel and or your Keyboard.");
+			c0_2_0__mdp.textArea.setText(Aaf.instruct_bid);
 			c0_2_0__mdp.setVisible(showMsg);
 			c0_2_0__wtsp.setVisible(false);
 		}
@@ -94,7 +96,7 @@ public class BottomLeftPanel extends ClickPanel {
 			boolean showMsg = (!App.isAutoPlay(App.deal.getNextHandToPlay().compass)) && !App.isMode(Aaa.EDIT_PLAY) && App.showBidPlayMsgs
 					&& App.deal.lessThanTwoCardsPlayed();
 			c0_2_0__clam.setVisible(!showMsg);
-			c0_2_0__mdp.textArea.setText("PLAY by clicking on a CARD\nor by using your Keyboard.\n\nGray dots  =>  click on green");
+			c0_2_0__mdp.textArea.setText(Aaf.instruct_play);
 			c0_2_0__mdp.setVisible(showMsg);
 			c0_2_0__wtsp.setVisible(false);
 		}
@@ -137,13 +139,13 @@ class ClaimPanel extends ClickPanel implements ActionListener {
 
 		setOpaque(false);
 
-		Font cardFaceFont = BridgeFonts.faceAndSymbFont.deriveFont(24f);
+		Font cardFaceFont = BridgeFonts.faceAndSymbolFont.deriveFont(24f);
 
-		setLayout(new MigLayout("insets 0 0 0 0, gap 0! 0!, flowx", "10%[]push[]5%", "22%[]10%[]5%[]"));
+		setLayout(new MigLayout("insets 0 0 0 0, gap 0! 0!, flowx", "1%[]push[]1%", "22%[]10%[]5%[]"));
 
 		RpfResizeButton b;
 
-		b = new RpfResizeButton(Aaa.s_SelfCmd, "Claim", 22, 18);
+		b = new RpfResizeButton(Aaa.s_SelfCmd, Aaf.gT("playBridge.claim"), 32, 18);
 		b.addActionListener(this);
 		add(b, "hidemode 0, span 2, split 8");
 		claimBtn = b;
@@ -181,9 +183,9 @@ class ClaimPanel extends ClickPanel implements ActionListener {
 
 	public void actionPerformed(ActionEvent e) {
 
-		String cmd = e.getActionCommand();
+		Object source = e.getSource();
 
-		if (cmd.contentEquals("Claim")) {
+		if (source == claimBtn) {
 
 			if (claimValBtns[0].isVisible()) {
 				hideClaimButtonsIfShowing();
@@ -206,7 +208,7 @@ class ClaimPanel extends ClickPanel implements ActionListener {
 			return;
 		}
 
-		Object source = e.getSource();
+		// Object source = e.getSource();
 		for (int i = 0; i < claimValBtns.length; i++) {
 			if (claimValBtns[i] == source) {
 
@@ -247,6 +249,7 @@ class NextBoardButtonPanel extends ClickPanel {
 		RpfResizeButton b;
 
 		b = new RpfResizeButton(Aaa.s_Std, "mainNewBoard", 50, 85, 0.75f);
+		b.setForeground(Cc.RedStrong);
 		add(b, "wmin 10%");
 
 		mainNewBoard = b;

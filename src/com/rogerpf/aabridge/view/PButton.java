@@ -40,7 +40,7 @@ class PButton extends JButton implements MouseListener {
 	boolean hover = false;
 	boolean pressed = false;
 
-	Font font = BridgeFonts.bridgeBoldFont;
+	Font font = BridgeFonts.internatBoldFont;
 	Color bgColor = SystemColor.control;
 	Color fgColor = Aaa.weedyBlack;
 	Color hoverColor = Aaa.hoverColor;

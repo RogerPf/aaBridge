@@ -40,6 +40,7 @@ public class RpfResizeButton extends JButton implements MouseListener {
 	 */
 	boolean hover = false;
 	boolean pressed = false;
+	public boolean suit_symbol = false;
 	int original_type;
 	int current_type;
 
@@ -48,22 +49,39 @@ public class RpfResizeButton extends JButton implements MouseListener {
 	int heightPc = 20;
 	float fontToHeightRatio = 0.85f;
 
-	Font font = BridgeFonts.bridgeBoldFont;
+	Font font = BridgeFonts.internatBoldFont;
 	Color bgColor = Aaa.buttonBkgColorStd;
 	Color fgColorOverride = Aaa.weedyBlack;
 	boolean useFgColorOverride = false;
 	Color hoverColor = Aaa.hoverColor;
 	Color pressedColor = Aaa.pressedColor;
+	Color selectedBackground = Aaa.baizeGreen_bdk;
 
 	CmdHandler.RpfBtnDef rpfButtonDef;
 
+	boolean autoFontSizeAdjust = false;
+
 	public RpfResizeButton(int type, String cmd, int widthPc, int heightPc) { /* Constructor */
 		super();
+		autoFontSizeAdjust = true;
+		btnCommonConstructor(type, cmd, widthPc, heightPc, this.fontToHeightRatio);
+	}
+
+	public RpfResizeButton(int type, String cmd, int widthPc, int heightPc, boolean autoFontSizeAdjust_v) { /* Constructor */
+		super();
+		autoFontSizeAdjust = autoFontSizeAdjust_v;
 		btnCommonConstructor(type, cmd, widthPc, heightPc, this.fontToHeightRatio);
 	}
 
 	public RpfResizeButton(int type, String cmd, int widthPc, int heightPc, float fontToHeightRatio) { /* Constructor */
 		super();
+		autoFontSizeAdjust = true;
+		btnCommonConstructor(type, cmd, widthPc, heightPc, fontToHeightRatio);
+	}
+
+	public RpfResizeButton(int type, String cmd, int widthPc, int heightPc, float fontToHeightRatio, boolean autoFontSizeAdjust_v) { /* Constructor */
+		super();
+		autoFontSizeAdjust = autoFontSizeAdjust_v;
 		btnCommonConstructor(type, cmd, widthPc, heightPc, fontToHeightRatio);
 	}
 
@@ -210,6 +228,10 @@ public class RpfResizeButton extends JButton implements MouseListener {
 		this.bgColor = color;
 	}
 
+	public void setSelectedBackground(Color selectedBackground) {
+		this.selectedBackground = selectedBackground;
+	}
+
 	public void setForeground(Color color) {
 		this.useFgColorOverride = true;
 		this.fgColorOverride = color;
@@ -249,7 +271,9 @@ public class RpfResizeButton extends JButton implements MouseListener {
 //			g2.setColor(Aaa.baizeGreen);
 		}
 		else if (current_type == Aaa.m_Label) {
-			// g2.setColor(Aaa.darkGrayBg);
+			g2.setColor(selectedBackground);
+			g2.fillRect(0, 0, getWidth(), getHeight());
+
 			int w = getWidth();
 			int h = getHeight();
 
@@ -274,8 +298,6 @@ public class RpfResizeButton extends JButton implements MouseListener {
 		if (current_type == Aaa.m_Hidden)
 			return;
 
-		g2.setFont(font.deriveFont(getHeight() * fontToHeightRatio));
-
 		Color fgc = useFgColorOverride ? fgColorOverride : Cc.g(Cc.rpfDefBtnColor);
 		if (current_type == Aaa.s_Label || current_type == Aaa.m_Label) {
 			fgc = Aaa.selectedButFontCol;
@@ -286,9 +308,39 @@ public class RpfResizeButton extends JButton implements MouseListener {
 
 		g2.setColor(fgc);
 
-		int height = getHeight();
 		String text = getText();
-		char first = (text.length() > 0) ? text.charAt(0) : 0x00;
+		if (text == null) {
+			System.out.println("Rpf button with  NULL  text");
+			text = "null";
+		}
+
+		int height = getHeight();
+
+		Font f;
+
+		if (App.isUsing__en_US || suit_symbol) {
+			f = font.deriveFont(height * fontToHeightRatio); // so currently no en_US buttons can show accents
+		}
+		else {
+			f = BridgeFonts.internatBoldFont.deriveFont(height * fontToHeightRatio);
+
+			if (autoFontSizeAdjust && (text.length() > 3)) {
+				int width = getWidth();
+
+				int fm_twidth = getFontMetrics(f).stringWidth("-" + text + "-");
+
+				if (fm_twidth > 0 && fm_twidth > width) {
+					float ratio = (float) width / (float) fm_twidth;
+					f = font.deriveFont(height * fontToHeightRatio * ratio);
+					// System.out.println( text + "   L:" + text.length() + "  fm_wt:" + fm_twidth + "   r:" + ratio + "  fr:" + fontToHeightRatio + "    w:" +
+					// width + "    h:" + height );
+				}
+			}
+		}
+
+		g2.setFont(f);
+
+		char first = (text.length() > 0) ? text.charAt(0) : ' ';
 		float nudgeUp = ((first == '>') || (first == '<')) ? -0.04f * height * fontToHeightRatio : 0.0f;
 
 		Aaa.drawCenteredString(g2, text, 0, nudgeUp, getWidth(), height);

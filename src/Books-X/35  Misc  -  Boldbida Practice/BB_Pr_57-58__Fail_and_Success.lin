@@ -1,0 +1,231 @@
+%%
+%%
+%% <--SECT_HEAD-->=Practice  Boards                              57 - 58
+%%
+%%
+%%  Date last Edited    2016-05-04     set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+%% 
+%% <<--HEADER_FILE-->>=BB_Pr_00___Declarer_Play__HEADER
+%%
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player they need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+%%
+%%  You can NOW use  ALL 2876 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+fh|t40|                    Font   t  t-title             section titles (if any)
+fh|b50|                    Font   b  b-bigTitle   bigger section titles
+
+fh|f42|                    Font   f  f-flow
+fh|s25|                    Font   s  s-small
+
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor      on Title Pages
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor   on Title Pages
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Boldbida                                       Course   2016^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bPractice  Boards                              57 - 58^*n^-^^|cs||fp||cp||at|^^|
+Lg|e|
+
+ht|j|
+at|If you are  |cp|red|at|^*bNew  to  aaBridge^*n|cp||at| please  click the  { ^*bHome^*n }  button in the far top left and then click  { ^*bFlow^*n }  button.
+Once you have a little knowledge about how to use   ^*baaBridge^*n   please come back to this 'movie'.  |
+
+ht|o|
+fp|t-title|cp|blue|at|^- ^*b-----  Shuf Op  -----^*n     ^-|cp||fp||at|^^|
+n#|3|
+at|^b@2When  you are  'Inside a deal',  high on the left in green baize area you will see the  {^*b Shuf Op ^*n}  button.|
+n#|5|
+at|^^Click on it to shuffle the  East - West  cards and leave you ready to  PLAY  the hand against the 
+^o ^*b aaBridge ^*n bots and the new defensive layout.|
+%% <<--HEADER_REPLACE_END->>
+
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+ht|v|n#|4|at|
+^f Please  |cp|red|at|^*b keep ^*n|cp||at|  clicking  the |fp|f-flow|at|  { ^*b Flow > ^*n }  |fp|s-small|at| button below  |fp||
+
+ht|z|n^|2|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+
+bv|a,v|    %% make all 3 buttons visible 
+ 
+fh|940|fm|9|fp|9|at|@0@1|
+ht|h|
+rq|2876|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2876 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+st||
+--------------------------------------------------------------------
+qx|57 F|nt|^b@2^^|rh||ah|Practice 57 |pn| , , , |md|1SA874HA9754D765CA,ST953HKJ8DQ4CQ964,SKQ2H632DK932C832,|sv|O|sk|S|at|^*bPractice 57^*n        Fail |
+pg| ***** 1 ***** |
+
+
+mb|1H|mb|p|mb|2H|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+pc|C4|at|        Having  6+  losers   1@s(s)  2+@h(f)  2@h(s)  1@d(f)  2@d(s)  we need to shed at least 1.   We could play for, the finesse of the K@d, the  4th @s  to be long  AND / OR  try to ruff the  4th @s.  A key danger is we might be ruffed or over ruffed. |
+pg| ***** 3 ***** |
+
+
+mb|1H|mb|p|mb|2H|mb|p|mb|p|mb|p|
+pg| ***** 4 ***** |
+
+
+pc|c2|pc|c5|pc|cA|
+pg| ***** 5 ***** |
+
+
+pc|hA|pc|h8|pc|h2|pc|hT|
+pg| ***** 6 ***** |
+
+
+pc|h4|pc|hK|pc|h3|pc|hQ|
+pg| ***** 7 ***** |
+
+
+pc|hJ|pc|h6|pc|c7|pc|h5|
+pg| ***** 8 ***** |
+
+
+pc|dQ|at|^^ Oh dear  -  We now don't have a trump to ruff our 4th @s.      Please  { ^*bPlay^*n }  out the rest of the cards yourself.|
+pf|c|
+sk||
+pg| ***** 9 ***** |
+
+
+qx|57 S|nt|^b@2^^|rh||ah|Practice 57 |pn| , , , |md|1SA874HA9754D765CA,ST953HKJ8DQ4CQ964,SKQ2H632DK932C832,|sv|O|sk|S|at|^*bPractice 57^*n        Success |
+pg| ***** 10 ***** |
+
+
+mb|1H|mb|p|mb|2H|mb|p|mb|p|mb|p|
+pg| ***** 11 ***** |
+
+
+pc|C4|at|        Having  6+  losers   1@s(s)  2+@h(f)  2@h(s)  1@d(f)  2@d(s)  we need to shed at least 1.   We could play for, the finesse of the K@d, the  4th @s  to be long  AND / OR  try to ruff the  4th @s.  A key danger is we might be ruffed or over ruffed.   So we must draw their trumps but keep trump control.   So start by ducking a round of trumps. |
+pg| ***** 12 ***** |
+
+
+pc|c2|pc|c5|pc|cA|
+pg| ***** 13 ***** |
+
+
+pc|h4|pc|h8|pc|h2|pc|hT|
+pg| ***** 14 ***** |
+
+
+pc|hQ|pc|hA|pc|hJ|pc|h3|
+pg| ***** 15 ***** |
+
+
+pc|s4|at|^^ I will leave you to finish off and bring in the 10 tricks.        Please  { ^*bPlay^*n }  out the rest of the cards yourself.  |
+pf|c|
+sk||
+pg| ***** 16 ***** |
+
+
+qx|58 F|nt|^b@2^^|rh||ah|Practice 58 |pn| , , , |md|1S852HAQ752DKQJ3CK,SAT7HT94D62CQT974,SQJ4HK63DA854C832,|sv|O|sk|S|at|^*bPractice 58^*n        Fail |
+pg| ***** 17 ***** |
+
+
+mb|1H|mb|p|mb|1N|mb|p|mb|2D|mb|p|mb|3H|mb|p|mb|4H|mb|p|mb|p|mb|p|
+pg| ***** 18 ***** |
+
+
+pc|C7|at|        Having  4+  losers   2@s(f) 1@s(s)  0+@h(s)  1@c(f)   We have to try to make a spade (and hope they  don't / can't  switch to  A@s, K@s, ruff).    So we just draw trumps first.   What can possibly go wrong ? |pc|c2|pc|cA|pc|cK|
+pg| ***** 19 ***** |
+
+
+pc|c5|pc|h2|pc|c4|pc|c3|
+pg| ***** 20 ***** |
+
+
+pc|hA|pc|h4|pc|h3|pc|h8|
+pg| ***** 21 ***** |
+
+
+pc|h5|pc|h9|pc|hK|pc|hJ|
+pg| ***** 22 ***** |
+
+
+pc|h6|pc|s3|pc|hQ|pc|hT|
+pg| ***** 23 ***** |
+
+
+pc|s2|pc|s7|pc|sQ|pc|sK|
+pg| ***** 24 ***** |
+
+
+pc|cJ|pc|h7|pc|c9|pc|c8|
+pg| ***** 25 ***** |
+
+
+pc|s8|at|^^ ^^ Oh dear  -  We have lost trump control and will do down.      Please  { ^*bPlay^*n }  out the rest of the cards yourself.  |
+pf|c|
+sk||
+pg| ***** 26 ***** |
+
+
+qx|58 S|nt|^b@2^^|rh||ah|Practice 58 |pn| , , , |md|1S852HAQ752DKQJ3CK,SAT7HT94D62CQT974,SQJ4HK63DA854C832,|sv|O|sk|S|at|^*bPractice 58^*n        Success |
+pg| ***** 27 ***** |
+
+
+mb|1H|mb|p|mb|1N|mb|p|mb|2D|mb|p|mb|3H|mb|p|mb|4H|mb|p|mb|p|mb|p|
+pg| ***** 28 ***** |
+
+
+pc|C7|at|        Having  4+  losers   2@s(f) 1@s(s)  0+@h(s)  1@c(f)    We have to try to make a @s and hope they     don't / can't  switch to  A@s, K@s, ruff.  So we need the spades to split  4-3  so we don't gain from drawing trumps straight away and could lose trump control if we try.|
+pg| ***** 29 ***** |
+
+
+pc|c2|pc|cA|pc|cK|
+pg| ***** 30 ***** |
+
+
+pc|c5|pc|h2|pc|cT|pc|c3|
+pg| ***** 31 ***** |
+
+
+pc|s2|pc|s7|pc|sQ|pc|sK|
+pg| ***** 32 ***** |
+
+
+pc|c6|pc|h5|pc|c4|pc|c8|
+pg| ***** 33 ***** |
+
+
+pc|s5|pc|sA|pc|s4|pc|s3|
+pg| ***** 34 ***** |
+
+
+pc|sT|pc|sJ|at|^^ I will leave you to finish off and bring in the 10 tricks.        Please  { ^*bPlay^*n }  out the rest of the cards yourself.  |
+pf|c|
+sk||
+pg| ***** 35 ***** |
+
+

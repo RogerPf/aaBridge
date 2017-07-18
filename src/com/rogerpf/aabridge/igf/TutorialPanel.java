@@ -171,6 +171,20 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 		xCol += width * gi.numb * 0.0017; /* Yes the width  */
 	}
 
+//	/**
+//	 */
+//	public void action_tt(GraInfo gi) { 
+//		// =============================================================================
+//		if (gi.capEnv.tidyTrick) {
+//			System.out.println("tt  Hide");
+//			App.gbp.c1_1__tfdp.clearShowCompletedTrick_passive();
+//		}
+//		else {
+//			System.out.println("tt Show");
+//			App.gbp.c1_1__tfdp.setShowCompletedTrick();
+//		}
+//	}
+
 	/**
 	 */
 	public void action_lg(GraInfo gi) { // line gap (line Spacing)
@@ -186,7 +200,9 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 		}
 	}
 
+	// static int x = 0;
 	private void bidAnoDisplayExtra(boolean showIt) {
+		// System.out.println(x++);
 		App.gbp.c2_0__btp.displayFinalAnotation(showIt);
 	}
 
@@ -275,6 +291,11 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 
 	public void mousePressed(MouseEvent e) {
 		// =============================================================================
+		if (e.getButton() == MouseEvent.BUTTON3) {
+			App.frame.rightClickPasteTimer.start();
+			return;
+		}
+
 		Point p = e.getPoint();
 
 		Hyperlink hyperlink = null;
@@ -336,6 +357,10 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 	}
 
 	public void mouseClicked(MouseEvent e) {
+		if (e.getButton() == MouseEvent.BUTTON3) {
+			App.frame.rightClickPasteTimer.start();
+			return;
+		}
 	}
 
 	/**
@@ -394,13 +419,25 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 		GraInfo giLast = mg.giAy.get(mg.stop_gi);
 		skip__mn_text = (giLast.capEnv.visualModeRequested != App.Vm_TutorialOnly); // ugg - WIDE AREA FLAG - ugg
 
+		// new in 2948 lin writer roation !rt!n! command
+		{
+			int prev = App.tutRotate;
+			// GraInfo giPg = mg.giAy.get(mg.end_pg);
+			App.tutRotate = giLast.capEnv.tut_rotation;
+			if (App.tutRotate != prev) {
+				App.gbp.dealDirectionChange();
+			}
+		}
+
 		int ih_seen = 0;
 
 		for (int i = mg.start_nt; i <= mg.end_pg; i++) {
 			GraInfo gi = mg.giAy.get(i);
 			int t = gi.qt;
 
-//			use_gray_text = false; // App.showOldTextGray && ((i < mg.middle_pg) && gi.capEnv.gray_fade); // WIDE AREA FLAG - ugg
+			App.handPanelNameAreaInfoNumbersShow = gi.capEnv.playerNameNumbsVisible;
+
+			use_gray_text = (gi.capEnv.gray_fade); // WIDE AREA FLAG - ugg
 
 			// System.out.println(/* new Date().getTime() + " " + */gi);
 
@@ -416,10 +453,13 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 			//			AA		CAPS means an internal RPf signal
 			if (t == q_.sb) { /* detected in the sb panel so nothing at this time */ continue; } 
 			if (t == q_.at) { consume_at(gi); bidAnoDisplayExtra(false);  continue; }
-			if (t == q_.nt) { consume_nt(gi); bidAnoDisplayExtra(false); /* calls consume_at() */ continue; }
+			if (t == q_.nt) { consume_nt(gi); bidAnoDisplayExtra(false);  continue; }
+//			if (t == q_.at) { consume_at(gi); App.gbp.c2_0__btp.AlertDisplaySet(false);  continue; }
+//			if (t == q_.nt) { consume_nt(gi); App.gbp.c2_0__btp.AlertDisplaySet(false); continue; }
 			if (t == q_.mn) { consume_mn(gi); continue; }
-			if (t == q_.ZS) { consume_suitSymbol(gi); continue; } 
+			if (t == q_.ZS) { consume_suitSymbol(gi, false /* NOT the home symbol */); continue; } 
 			if (t == q_.Zd) { consume_emDash(gi); continue; } 
+			if (t == q_.Zz) { consume_suitSymbol(gi, true /* the home symbol */); continue; } 
 			if (t == q_.Zo) { consume_bulletPoint(gi); continue; } 
 			if (t == q_.NL) { consume_newline(gi); continue; }
 			if (t == q_.CB) { consume_centeringBegin(gi); continue; } 
@@ -440,10 +480,9 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 			if (t == q_.lg) { action_lg(gi); continue; } // line Gap (line Spacing)
 			if (t == q_.ZN) { action_margin(gi); continue; } 
 			if (t == q_.mb) { bidAnoDisplayExtra(true); continue; } 
-			if (t == q_.rc) { /* nothing at this time */ continue; } 
 			if (t == q_.st) { /* nothing at this time */ continue; } 
 			if (t == q_.bt) { /* nothing at this time */ continue; } 
-			if (t == q_.an) { /* nothing at this time */ continue; } 
+			if (t == q_.an) { bidAnoDisplayExtra(true);  /* added */ continue; } 
 			if (t == q_.sk) { /* nothing at this time */ continue; } 
 			if (t == q_.ha) { /* nothing at this time */ continue; } 
 			if (t == q_.tu) { /* nothing at this time */ continue; } 
@@ -454,6 +493,8 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 			if (t == q_.rh) { /* nothing at this time */ continue; } 
 			if (t == q_.ah) { /* nothing at this time */ continue; } 
 			if (t == q_.md) { /* nothing at this time */ continue; } 
+			if (t == q_.kc) { /* nothing at this time */ continue; } 
+			if (t == q_.rc) { /* nothing at this time */ continue; } 
 			if (t == q_.qx) { /* nothing at this time */ continue; } 
 			if (t == q_.sv) { /* nothing at this time */ continue; } 
 			if (t == q_.pc) { /* nothing at this time */ continue; } 
@@ -461,7 +502,7 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 			if (t == q_.sb) { /* nothing at this time */ continue; } 
 			if (t == q_.wt) { /* nothing at this time */ continue; } 
 			if (t == q_.xx) { /* nothing at this time */ continue; } 
-			if (t == q_.gf) { /* nothing at this time */ continue; }
+			if (t == q_.fg) { /* nothing at this time */ continue; }
 			if (t == q_.rq) { /* nothing at this time */ continue; }
 			if (t == q_.eb) { /* nothing at this time */ continue; }
 			if (t == q_.bv) { /* nothing at this time */ continue; }
@@ -469,8 +510,10 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 			// @formatter:on
 
 			if (t == q_.pg) {
+				App.gbp.c1_1__tfdp.toggleShowCompletedTrick_passive(!gi.capEnv.tidyTrick);
 				if (i == mg.end_pg)
 					consume_add_fake_page_number(gi);
+
 				continue;
 			}
 

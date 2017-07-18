@@ -111,6 +111,7 @@ public class TutNavigationBar extends JPanel implements MouseListener {
 		if (ctrlKey_depressed) {
 			if (App.mg.mruChap != null) {
 				int current_pg_numb = App.mg.get_current_pg_number_display();
+				App.aaHomeBtnPanel.fill_chapterMarkerMenu();
 				App.mg.mruChap.toggleChapterMark(current_pg_numb);
 				App.frame.repaint();
 				App.aaHomeBtnPanel.mruDelayedSaveTimer_Short_Start();
@@ -147,8 +148,9 @@ public class TutNavigationBar extends JPanel implements MouseListener {
 	 */
 	public void paintComponent(Graphics g) {
 		// ============================================================================
+		setBackground(Cc.g(Cc.baizeGreen));
+
 		if (App.hideTutNavigationBar) {
-			setBackground(Cc.g(Cc.baizeGreen));
 			super.paintComponent(g);
 			return;
 		}
@@ -224,7 +226,7 @@ public class TutNavigationBar extends JPanel implements MouseListener {
 
 			if (jp.large) {
 				if (font == null) {
-					font = BridgeFonts.bridgeBoldFont.deriveFont(h * 0.5f);
+					font = BridgeFonts.internatBoldFont.deriveFont(h * 0.5f);
 				}
 				g2.setColor((playedLineEnd > x) ? Cc.g(Cc.navUnplayedEntered) : playedColor);
 				g2.setFont(font);

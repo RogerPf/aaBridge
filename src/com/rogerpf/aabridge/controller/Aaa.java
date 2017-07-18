@@ -17,6 +17,10 @@ import java.awt.FontMetrics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.geom.Rectangle2D;
+import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLClassLoader;
 
 import com.rogerpf.aabridge.model.Call;
 import com.rogerpf.aabridge.model.Cc;
@@ -62,10 +66,6 @@ public class Aaa {
 	public static final int			m_Hidden			= 13;
 
 
-//	public static final float       butWheelWidthFraction  = 0.023f;
-//	public static final float       butWheelHeightFraction = 0.60f;
-
-
 
 	public static final int			CMD_SUIT			= 0x0100;						// C D H S
 	public static final int			CMD_SUITN			= 0x0200;						// C D H S N
@@ -78,8 +78,7 @@ public class Aaa {
 	public static final Color		darkGrayBg			= new Color(152, 152, 152);
 	public static final Color		baizeGreen			= new Color(170, 210, 170);
 	public static final Color		baizeGreenNav		= new Color(160, 200, 160);
-	public static final Color		baizeGreen_bid1		= new Color(148, 188, 148);
-	public static final Color		baizeGreen_bid2		= new Color(142, 182, 142);
+	public static final Color		baizeGreen_bdk		= new Color(125, 165, 125);
 	public static final Color		baizePink			= new Color(210, 170, 170);
 	public static final Color		baizeMustard		= new Color(210, 210, 100);
 	public static final Color		greenishWhite		= new Color(230, 240, 230);
@@ -96,7 +95,12 @@ public class Aaa {
 
 	public static final Color		lightGrayBubble		= new Color(215, 215, 215);
 	public static final Color		mediumGray			= new Color(190, 190, 190);
+	
 	public static final Color		buttonBkgColorStd	= new Color(199, 230, 240);
+	public static final Color		buttonBkgColorYes   = new Color(180, 210, 140);
+	public static final Color		buttonBkgColorNo    = new Color(199, 170, 140);
+	public static final Color		trainExamUnSelectedBackground = new Color(190, 223, 255);
+
 	public static final Color		pressedColor		= new Color(199, 199, 199);
 	public static final Color		hoverColor			= new Color(235, 216, 140);
 	public static final Color		strongHoverColor	= new Color(255, 210, 0);
@@ -116,6 +120,7 @@ public class Aaa {
 	public static final Color		bidAlertHasTxtColor = new Color(235, 225, 200);
 
 	public static final Color		optionsTitleGreen	= new Color(20, 90, 20);
+	public static final Color		optionsTitleBLue	= new Color(20, 20, 255);
 
 	public static final Color		cardClickedOn		= new Color(150, 150, 150);
 	public static final Color		cardHover			= new Color(240, 190, 0);
@@ -144,8 +149,8 @@ public class Aaa {
 	public static final Color		tutMnGreenStrong	= new Color( 20,  90,  20);
 	public static final Color		tutMnGreenWeak		= new Color(110, 150, 110);
 	public static final Color		questionPanelBkColor= new Color(240, 233, 233);
-	public static final Color		tut_old_text_gray	= new Color(110, 100, 100);
-	public static final Color		tut_old_suit_gray	= new Color(161, 150, 150);
+	public static final Color		tut_old_text_gray	= new Color(150, 150, 150);
+	public static final Color		tut_old_suit_gray	= new Color(180, 180, 180);
 	public static final Color		tutorialLinkNorm_f	= new Color(  0,   0,   0);
 	public static final Color		tutorialLinkNorm_g	= new Color( 16,  16, 225);
 	public static final Color		tutorialLinkNorm_h	= new Color( 16,  16, 225);
@@ -171,9 +176,6 @@ public class Aaa {
 		teamBannerColorAy[0][1] = Cc.g(Cc.purpleTeamBanner);
 		teamBannerColorAy[1][0] = Cc.g(Cc.purpleTeamBanner);
 	}
-
-
-
 
 	/**
 	 */
@@ -269,6 +271,8 @@ public class Aaa {
 		case 'P':
 			return Aaa.CMD_CALL | Call.Pass.v;
 		case '*':
+		case 'x':
+		case 'X':
 			return Aaa.CMD_CALL | Call.Double.v;
 		case 'r':
 		case 'R':
@@ -417,25 +421,25 @@ public class Aaa {
 			return s;
 
 		if (exFound) {
-			s = s.replace("!S", "@S");
-			s = s.replace("!s", "@S");
-			s = s.replace("!H", "@H");
-			s = s.replace("!h", "@H");
-			s = s.replace("!D", "@D");
-			s = s.replace("!d", "@D");
-			s = s.replace("!C", "@C");
-			s = s.replace("!c", "@C");
+			s = s.replace("!S", "@s");
+			s = s.replace("!s", "@s");
+			s = s.replace("!H", "@h");
+			s = s.replace("!h", "@h");
+			s = s.replace("!D", "@d");
+			s = s.replace("!d", "@d");
+			s = s.replace("!C", "@c");
+			s = s.replace("!c", "@c");
 		}
 		
 		if (atFound) {
-			s = s.replace("@S", "@S");
-			s = s.replace("@s", "@S");
-			s = s.replace("@H", "@H");
-			s = s.replace("@h", "@H");
-			s = s.replace("@D", "@D");
-			s = s.replace("@d", "@D");
-			s = s.replace("@C", "@C");
-			s = s.replace("@c", "@C");
+			s = s.replace("@S", "@s");
+//			s = s.replace("@s", "@s");
+			s = s.replace("@H", "@h");
+//			s = s.replace("@h", "@h");
+			s = s.replace("@D", "@d");
+//			s = s.replace("@d", "@d");
+			s = s.replace("@C", "@c");
+//			s = s.replace("@c", "@c");
 		}
 		
 		//s = s.replace("!hH", "!h H"); // so  !HHxx is less confusing now being  !H Hxx
@@ -446,7 +450,7 @@ public class Aaa {
 
 	/**
 	 */
-	public static String deAtQuestionText(String s) {
+	public static String deAtQuestionAndBubbleText(String s) {
 		// =============================================================================
 		if (s.length() == 0)
 			return "";
@@ -483,8 +487,75 @@ public class Aaa {
 
 		return s;
 	}
+	
+	private static String linFileEditorPath = null;
+
+	public static String getLinFileEditorPath() {
+		// ==============================================================================================
+		
+		if (linFileEditorPath != null) {
+			return linFileEditorPath;
+		}
+		
+		if (!App.onWin) {
+			return linFileEditorPath = "desktop";
+		}
+		
+		String np = "";
+		boolean found = false;
+
+		if (!found) {
+			np = "C:\\Program Files\\Notepad++\\notepad++.exe";
+			found = new File(np).exists();
+		}
+
+		if (!found) {
+			np = "C:\\Program Files (x86)\\Notepad++\\notepad++.exe";
+			found = new File(np).exists();
+		}
+
+		if (!found) {
+			np = "C:\\ProgramRPf\\Notepad++\\notepad++.exe";
+			found = new File(np).exists();
+		}
+		
+		return found ? np : "";
+	}
+	
+	
+	public static URLClassLoader makeJarZipLoader(String pathToJarOrZip)  {
+		// ==============================================================================================
+		URL[] urls = null;
+		try {
+			// System.out.println("jarOrZipName " + jarOrZipName);
+			urls = new URL[] { new File(pathToJarOrZip).toURI().toURL() };
+			return new URLClassLoader(urls);
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 
 
+	public static final int uniThreashold = 191;
 
-
+	public static boolean hasUni(String data) {
+		// =============================================================================
+		boolean found = false;
+		for (int i = 0; i < data.length(); i++) {
+	        found |= (data.charAt(i) > uniThreashold);
+	    }
+		return found;
+	}
+	
+	public static boolean hasUni(char c) {
+		// =============================================================================
+		return  c > uniThreashold;
+	}
+	
+	public static boolean isLatinFaceCard(char c) {
+		// =============================================================================
+		return  ('2' <= c && c <= '9') || ('A' <= c && c <= 'Z') || (c == 't');
+	}
+	
 }

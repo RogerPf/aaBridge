@@ -23,6 +23,7 @@ public class Card {
 	char rankCh;
 	Rank rankRel;
 	Rank rankEqu;
+	private boolean kept;
 	int ddsScore;
 	boolean ddsNextCard;
 
@@ -34,10 +35,12 @@ public class Card {
 		rankCh = rank.toChar();
 		rankRel = Rank.Invalid;
 		rankEqu = Rank.Invalid;
-		this.suit = suit;
+		kept = false;
 		suitCh = suit.toChar();
 		ddsScore = -1; // magic value meaning - not set
 		ddsNextCard = false;
+
+		this.suit = suit;
 	}
 
 	public String toString() {
@@ -87,7 +90,7 @@ public class Card {
 		return new Card(rank, suit);
 	}
 
-	public String toLinAnswerString(Suit suitV[]) {
+	public String rankLetterOr10(Suit suitV[]) {
 		suitV[0] = suit;
 		return rank == Rank.Ten ? "10" : rank.toStr();
 	}
@@ -105,10 +108,10 @@ public class Card {
 		int adjustedScore = ddsScore + wonSoFar;
 		switch (adjustedScore) {
 		    case  1: return "1>"; // shows as 1 a bit to the left
-			case 10: return "T";  // shows as 10
-			case 11: return "X";  // shows as 11
-			case 12: return "Y";  // shows as 12
-			case 13: return "Z";  // shows as 13
+			case 10: return "t"; // shows as 10
+			case 11: return "u"; // shows as 11
+			case 12: return "v"; // shows as 12
+			case 13: return "w"; // shows as 13
 			default: return adjustedScore + "";
 		}
 		// @formatter:on
@@ -120,6 +123,23 @@ public class Card {
 
 	public boolean getDdsNextCard() {
 		return ddsNextCard;
+	}
+
+	public void setKept(boolean val) {
+		if (kept == true && val == false) {
+			@SuppressWarnings("unused")
+			int z = 0;
+		}
+		kept = val;
+	}
+
+	public boolean isKept() {
+		return kept;
+	}
+
+	public void setSuit(Suit s) {
+		suit = s;
+		suitCh = suit.toChar();
 	}
 
 }

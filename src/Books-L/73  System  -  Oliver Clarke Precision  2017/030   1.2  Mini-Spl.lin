@@ -1,0 +1,1308 @@
+%%
+%%
+%% <--SECT_HEAD-->=Chapter 1.2            1 @h   and   1 @S   Mini-Spl
+%%
+%%
+%%  Date last Edited    2015-02-15          set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+%% 
+%% <<--HEADER_FILE-->>=005  OCP common header
+%%
+
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+
+
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+fh|s28|                    Font   s  s-small
+fh|f35|                    Font   f  f-fine
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  OLD STYLE  position adjustment 
+
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       on Title Pages   Precision Blue
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Oliver Clarke Precision                                 2017  ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bChapter 1.2            1 @h   and   1 @S   Mini-Spl^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+
+qx|1.2|
+fp|t-title|at|^d@2^z@3|
+at|^*gGS,1@h  and  1@S   Mini-Splinters         Graphical Summary^*n|
+fp||at|
+^*gMini_1,   Mini - Splinters^*n
+
+^*gFSJS_1,   Fit Showing Jump Shifts  (FSJS)^*n
+
+|fp|t-title|at|
+^*gOliv,Oliver's class on 1@h  and  1@S  Mini-Spl   Starts HERE^*n|fp||cp|red|at|^u<<<  Click title|fp||cp||at|
+^*gSpln,   Splinters^*n
+    
+^*gGen,   General  Jump-Shift  Introduction^*n
+
+^*gMini_2,   Mini - Splinters^*n
+
+^*gFSJS_2,   Fit Showing Jump Shifts  (FSJS)^*n
+
+^*gPrac,   Practice Hands^*n
+|
+fp||ht|x|at|^b@2@1|at|
+
+^*bClick^*n  -   one of the above  ^hor    in the  NavBar  ^mor      use your   mouse wheel|
+ht|z|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+n^|3|at|^^^*h https://www.youtube.com/channel/UCTGNUS8jbx85QOMUPlHoRMA, OCP Videos ^*n|
+%%
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2886|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2886 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+qx|GS,hide|
+mn|Direct Responses to  1H  and  1S  Openings|
+tu|y|
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts       ^g {@H}|cs||at|
+|cs|e|at|Spades  ^f        {@S}|cs||at|
+|cp||fp||at|^e@2
+After an opening bid of  1H  or  1S|
+pg| ***** 1 ***** |
+
+
+at|^^^^
+11-15 hcp    5+ of the Major.
+
+1S  guarantees hearts are equal in length or shorter.
+
+1H  guarantees heart are longer than spades.
+
+Can also have a 6 card minor.
+|
+pg| ***** 2 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts       ^g {@H}|cs||at|@S N @C@D@H@S N @C@D@H@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs||at| N @C@D@H@S N @C@D@H@S N @C@D@H@S
+|cp||fp||at|^e@2
+the FIRST response bids have set meanings.
+|
+pg| ***** 3 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts       ^g {@H}|cs||at|{@S} N {@C@D}@H@S N @C@D@H@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|  |at| N {@C@D@H}@S N @C@D@H@S N @C@D@H@S
+|cp||fp||at|
+^e@2Simple change of suit.|
+pg| ***** 4 ***** |
+
+
+at|^^^^
+1H - 1S  promises 4 spades, 8+ or shape.   Forcing for 1 round.
+
+At the 2 level (or 3 level) 11+ or shape.  Forcing to  ^*bat least 2NT^*n  (which may be Leb).
+
+A Delayed-Game Raise (DGR) normally shows a hand with trump support and a decent side-suit and normally is a MILD slam try (if Opener is max, has good controls and a fit with your suit).  
+
+Many pairs play that a DGR ^*b denies ^*n possession of a side-suit singleton in addition.
+
+
+(Point count raises normally go via the forcing one no-trump response.)
+
+(Weak raises are bid as a direct raise of the major.)
+|
+pg| ***** 5 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts       ^g {@H}|cs|f|at|{@S}|cs||at|{ N }|cs|f|at|{@C@D}@H@S N @C@D@H@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|           |at|{ N }|cs|f|at|{@C@D@H}@S N @C@D@H@S N @C@D@H@S
+|cp||fp||at|^e@2
+One No Trump  -  Forcing 1 round  unlimited  ^*b11+^*n   (8+ if only a solid raise to 2)       ^v   either|
+pg| ***** 6 ***** |
+
+
+at|^^^^
+Solid raise  to   2,  ^*b8+^*n       or   3,  ^*b11+^*n   with NO strong side suit       ^u^*bOR^*n
+
+Balanced with   ^*b11+^*n   ie   values for 2NT      ^u^*bOR^*n
+
+^*bIf a passed hand^*n,  shows a long (6+) suit with shortage in partners major
+The suit is then bid after openers response, and is,  ^*bdrop dead^*n.
+   (also applies to unpassed hands until Asking bids have been learnt.)    ^u^*bOR^*n
+
+^*bStrong hands   16+^*n 
+|n^|9|at|
+  when playing Asking bids, a bid of the  cheapest new ^*bsuit^*n  is   ^*gWhen:Gamma,Gamma^*n  
+^g eg:   ^*n  1@S  - 1NT  - 2@D  -  2@H(Gamma in partners Spades @s's)
+|n^|9|at|
+  A relay over the Gamma response is Beta (0-2)
+^g eg:   ^*n  1@S  - 1NT  - 2@D  -  2@H(Gamma in @s's)  -  2NT(Hxxxx in @s's)  -  3@c(Beta) 
+|n^|9|at|
+  If Opener has shown a second suit, then a relay in the second-cheapest new suit is Gamma  
+^g eg:   ^*n  1@S  - 1NT  - 2@D  -  2@S(Gamma in partners @d's - note Opener could have only 3 @d's)  
+|
+pg| ***** 7 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts       ^g {@H}|cs|f|at|{@S}{ N }{@C@D}|cs||at|{@H}@S N @C@D@H@S N @C@D@H@
+|cs|e|at|Spades  ^f        {@S}|cs|f  |at|{ N }{@C@D@H}|cs||at|{@S} N @C@D@H@S N @C@D@H@S
+|cp||fp||at|^e@2
+Direct raise to 2 of the major.|
+pg| ***** 8 ***** |
+
+
+at|^^^^
+4+ card support.
+
+0-7  pre-emptive in nature.
+
+Shape.
+
+(With 8+ responder will use  1NT Forcing or mini-splinter).
+|
+pg| ***** 9 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts     ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H}|cs||at|{@S} N @C@D@H@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|f|at|{ N }{@C@D@H@S}|cs||at|{ N }@C@D@H@S N @C@D@H@S
+|cp||fp||at|^e@2
+Mini splinter requests   (may I make one ?)^pSee graphic summary in later Section.|
+pg| ***** 10 ***** |
+
+
+at|^^^^
+8-9  as a guideline.
+
+4+ card support,   ruffing is the essence.
+
+Shortage - Singleton or Void.
+|
+pg| ***** 11 ***** |
+
+
+qx|FSJS_1|
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts          ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H@S}|cs||at|{ N }{@C@D}@H@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|f     |at|{ N }{@C@D@H@S}{ N }|cs||at|{@C@D@H}@S N @C@D@H@S
+|cp||fp||at|^e@2
+Fit Showing Jump Shift (FSJS).    In hearts  2N  shows the heart fit and spades.|
+ht|f|fp|z|at|^^^^^^^^^^^^^^|fp||at|^n@s|
+ht|m|
+pg| ***** 12 ***** |
+
+
+at|^^^^
+8-9 points  mild game try,  for thin games.
+
+Reasonable 3+ card support for Openers major.
+
+5+ card side suit as source of tricks, e.g.  AQxxx
+|
+pg| ***** 13 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts         ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H@S}{ N }{@C@D}|cs||at|{@H}@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|f    |at|{ N }{@C@D@H@S}{ N }{@C@D@H}|cs||at|{@S} N @C@D@H@S
+|cp||fp||at|^e@2
+Direct raise to 3 of the major.|
+pg| ***** 14 ***** |
+
+
+at|^^^^
+4+ card support.
+
+0-7  pre-emptive in nature.
+
+Shape.
+
+(With 8+ responder will use  1NT Forcing or mini-splinter).
+|
+pg| ***** 15 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts          ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H@S}{ N }{@C@D@H}|cs|f|cs||at|{@S} N {@C@D}@H
+|cs|e|at|Spades  ^f        {@S}|cs|f     |at|{ N }{@C@D@H@S}{ N }{@C@D@H@S} N |cs||at|{@C@D@H}@S
+|cp||fp||at|^e@2
+Full Splinter   Double Jump Shift   to the suit  BELOW  the shortage.|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^q   @c  ^s   @d   @s|
+ht|j|fp|z|at|^^^^^^^^^^^^|fp|    |at|         ^s   @d   @h   @c|
+ht|m|
+pg| ***** 16 ***** |
+
+
+at|^^^^
+Rarely used, especially when asking bids are available.
+
+Agree Openers major.
+
+Slam try.
+
+Strong hand normally 16+.
+
+Singleton or void (shortage) in the target suit.| 
+pg| ***** 17 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts         ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H@S}{ N }{@C@D@H@S}|cs||at|{ N }|cs|f|at|{@C@D}@H
+|cs|e|at|Spades  ^f        {@S}|cs|f    |at|{ N }{@C@D@H@S}{ N }{@C@D@H@S}|cs||at|{ N }|cs|f|at|{@C@D@H}@S
+|cp||fp||at|^e@2
+3N  direct    very rare bid.|
+pg| ***** 18 ***** |
+
+
+at|^^^^
+13+ balanced, 3 card support only.
+
+Shape will be   4333  or  4432   with only 3 trumps.
+
+Max 2 controls (often 0 or 1).
+|
+pg| ***** 19 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts         ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H@S}{ N }{@C@D@H@S}{ N }{@C@D}|cs||at|{@H}
+|cs|e|at|Spades  ^f        {@S}|cs|f    |at|{ N }{@C@D@H@S}{ N }{@C@D@H@S}{ N }{@C@D@H}|cs||at|{@S}
+|cp||fp||at|^e@2
+Direct raise to 4 of the major.|
+pg| ***** 20 ***** |
+
+
+at|^^^^
+4+ card support.
+
+0-10  pre-emptive in nature.
+
+Shortage - Singleton or Void.
+
+No interest in Slam opposite a maximum.
+
+Aim is to both pre-empt the opponents and have a good chance of making.
+|
+pg| ***** 21 ***** |
+
+
+qx|Mini_1,wide|
+mn|Mini Splinter & Romex Short Suit Trial bids|
+tu|y|
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts     ^g {@H}|cs|f|at|{@S}{ N }{@C@D}|cs|e|at|{@H}
+|cs|e|at|Spades  ^f        {@S}|cs|f|at|{ N }{@C@D@H}|cs|e|at|{@S}
+|cp||fp||at|^e@2
+Once the major has been agreed by a sequence like|
+pg| ***** 22 ***** |
+
+
+at|^^
+1@d  -  1@h  -  2@h
+1@d  -  1@S  -  2@s
+1@h  -  2@h  
+1@S  -  2@s  
+|
+pg| ***** 23 ***** |
+
+
+at|
+or with a MOTOR sequence like
+
+1@h  -  (X)  -  2@h
+1@S  -  (X)  -  2@s
+1@h  -  (X)  -  2@d(xfr)
+1@h  -  (X)  -  2@c(xfr)  -  2@d  -  2@h
+|
+pg| ***** 24 ***** |
+
+
+at|
+or directly   over 1@h and 1@s
+
+|
+pg| ***** 25 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts     ^g {@H}|cs|f|at|{@S}{ N }{@C@D}|cs|e|at|{@H}@S N @C@D@H@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|f|at|{ N }{@C@D@H}|cs|e|at|{@S} N @C@D@H@S N @C@D@H@S
+|cp||fp||at|^e@2
+Either partner can bid the
+|
+pg| ***** 26 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts     ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H}|cs||at|{@S} N @C@D@H@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|f|at|{ N }{@C@D@H@S}|cs||at|{ N }@C@D@H@S N @C@D@H@S
+|cp||fp||at|^e@2
+Mini Splinter   /  Romex Short Suit Trial Bid (SSTB)   request     (may I make one ?)|
+pg| ***** 27 ***** |
+
+
+at|^^^^
+8-9  as a guideline.
+
+4+ card support,   ruffing is the essence.
+
+Shortage  -  Singleton or Void.
+|
+pg| ***** 28 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts     ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H@S}|cs||at|{ N }@C@D@H@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|f|at|{ N }{@C@D@H@S}{ N }|cs||at|{@C}@D@H@S N @C@D@H@S
+|cp||fp||at|^e@2
+YES  you may       (any other response is no,  please do NOT tell me).
+|
+pg| ***** 29 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts     ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H@S}{ N }|cs|  |at|{@C@D@H}@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|f|at|{ N }{@C@D@H@S}{ N }{@C}|cs||at|{@D@H@S} N @C@D@H@S
+|cp||fp||at|^e@2
+The asker now shows where, by bidding the suit  BELOW  the shortage.
+|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^n        @d   @S   @c|
+ht|j|fp|z|at|^^^^^^^^^^^^|fp|    |at|^n               @h   @c   @d|
+pg| ***** 30 ***** |
+
+
+ht|s|
+at|(end of  mini splinter)|
+pg| ***** 31 ***** |
+
+
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,wide|
+nt|^b@2^z@3|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class             1@h  and  1@S   Mini-Spl ^*n^-^^|cs||fp||cp||at|^^|
+
+ht|f|
+
+cp|red|at|^*bOliverC:^*n|cp||at|  Hi Everyone and welcome to today's Precision Club session, in which we'll continue our look at the 
+Precision 1@H & 1@S Openings & Responses. 
+
+Last week we covered direct raises, change-of-suit responses and the Forcing No Trump. 
+
+This week we'll be looking at Splinters, Mini-Splinters and Fit-Showing Jump/Shifts. 
+
+If you have not already done so, please have a look at the notes I have prepared on Precision Club bidding. You can find these on: http://ocp.pigpen.org.uk You might want to have these onscreen in the background for reference during the session. The Notes on Major Suit Openings can be found at ^*h http://ocp.pigpen.org.uk/1h.php ^*n 1 Heart ^*x and  ^*h http://ocp.pigpen.org.uk/1s.php ^*n 1 Spade ^*x.
+
+First a brief recap of what we covered last week: In Precision Club the 1@H and 1@S Openings both show 11-15 points and a 5-card or longer holding in the suit bid. If you open 1@H your Spades will ALWAYS be shorter, and if you open 1@S, then your Hearts may be equal length but will not be longer. 
+
+Because the Openings are limited to 15 points, there is much less pressure on Responder to come up with a response unless they have something definite to say.
+
+A hand that would qualify for a minimum 1NT response, for example, will routinely pass in a Precision auction. Direct-suit raises tend to be pre-emptive more than anything else in Precision. 
+
+So trump support and a ruffing value elsewhere is normally more important than point-count alone. Balanced "limit" raises with a solid point-count tend to go via the Forcing No Trump (see below). 
+
+Simple Change-of-suit responses in Precision are treated much as they are are in Standard American (ie: at the 1-level a 1-round force and a 2/1 is generally forcing to 2NT). 
+
+|
+pg| ***** 32 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Simple new suits at the 3-level are also forcing for one round. The 1NT Response to 1@H or 1@S is Forcing for 1 round. It is generally used by hands worth a decent 2-level balanced raise in Opener's Major or better, or hand worth a natural raise to 2NT or better.
+
+Before we start using Asking Bids (or even then when Responder is a passed hand) it can also be used to show a weak hand with a long suit and no tolerance for Opener's Major. The Forcing 1NT response does not initially say anything about Responder's hand, but simply asks partner to clarify their distribution. 
+
+Opener shows a second suit, rebids a 6-card Major, or bids their cheapest 3-card Minor with 5332 Shape. Responder now clarifies their hand-type by passing, bidding No Trumps or supporting Opener's Major at the appropriate level. With the long weak suit variety hand-type they simply bid their suit at the lowest possible level. 
+
+So if you play 2/1, or Standard American, there's not a HUGE amount that will be new to you from last week's session. Any questions thus far? 
+
+gene_k:  Sound?
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Nope, sorry. I use the Windows BBO Client and no sound via that.
+
+Ok, let's move on to Splinters, Mini-Splinters, and Fit-Showing Jump-shifts. 
+|
+pg| ***** 33 ***** |
+
+
+qx|Spln,wide|at|^^^^|
+fp|t-title|at|Splinter  ^hresponses  to  1@h   and  1@s|fp||at|
+
+Splinters (ie: Double-Jump-Shifts like 1@S-4@D) sit happily with Precision, but in practice this system doesn't normally use them. 
+
+They are used to show game-going hands potentially interested in a slam. They agree Opener's Major as trumps and show a strong hand (usually 16+) and a singleton/void in the suit bid. 
+
+|
+pg| ***** 34 ***** |
+
+
+nt|^b@2^z@3|at|^^
+|cp|red|at|^*bOliverC:^*n|cp||at|  As we will see later in the course, many Precision pairs vary this to bid the suit BELOW their singleton (ignoring the trump suit) and now the singleton-suit itself can be used for Blackwood or a Control Asking Bid (Beta). 
+
+This system does just that on the rare occasions when we use splinters. During the period BEFORE you start using Asking Bids, this is a method you may want to employ with 16+ responding hands with GOOD trump support, but once Asking Bids are in use, there is a much much cheaper route you can take to explore for slam. 
+
+So you can happily use splinters to show a shortage in the suit above if you're not using Asking Bids. It can offer considerable savings in terms of bidding space, particularly if partner's Controls are insufficient for slam. 
+
+So 1@S-4@C would show a @DDiamond@D shortage and now 4@D from Opener would be RKCB with stepped responses. 
+
+Space permitting, 4NT would be asking for Kings, but if not available, then 5@D would be asking for Kings.
+
+Obviously you have to work out the stepped responses yourself each time :) Some pairs agree that a splinter is always a singleton and never a void. 
+
+I've never played splinters that way, by preference, but it is entirely a matter for you and your partner to discuss and decide. As I said before, although Splinters work fine with this system, in practice they are used only infrequently. 
+
+The reason for this is that once we start using Asking Bids, we drop the "long weak suit" variety of Forcing No Trump hand. In their place we introduce a simple and cheap way of getting into an Asking Bid Sequence. 
+
+16+ hands that have trump support for Opener's Major tend to go that route rather than using a Splinter, because it means Responder retains control of the auction, and because it's a much more efficient use of bidding space. 
+
+We'll revisit 1@H and 1@S sequences once we've covered the Asking Bids later in the year. 
+
+Let's look at a hand.
+|
+pg| ***** 35 ***** |
+
+
+qx|t 1,thin|
+st||
+pn|South,West,North,East|
+md|3S357TQHD49TJKAC6A,,S49JKAH289AD2C39J,|rh||ah|Teach 1|sv|e|sk|n|sk||
+nt|^z@3^b@2|at|
+|cp|red|at|^*bOliverC:^*n|cp||at|  Teach 1     |
+mb|?|
+pg| ***** 36 ***** |
+
+
+mb|1S|an|5+ @S, 11 - 15 hcp|
+pg| ***** 37 ***** |
+
+
+sj|c|
+mb|p|mb|4D|an|Splinter @h shortage|
+at|@24@D  Splinter @- agreeing Spades and showing a @h shortage.
+|
+pg| ***** 38 ***** |
+
+
+sj|c|
+mb|p|mb|4H|an|RKC(0314)|
+at|4@H  Bidding the shortage @- as RKC(0314) because we do not (yet) know Asking bids.
+|
+pg| ***** 39 ***** |
+
+
+sj|c|
+mb|p|mb|5D|an|2 Aces and the Q@S|
+at|5@d  (three levels) @- so South has 2 Aces and the Q@S (the agreed suit).
+|
+pg| ***** 40 ***** |
+
+
+sj|c|
+mb|p|mb|5H|an|Asking for Kings|
+at|5@H  asking for Kings @- shows trumps are solid and all the outside Aces held.
+|
+pg| ***** 41 ***** |
+
+
+sj|c|
+mb|p|mb|7S|
+at|7@S  @2South needs to know no more.  If North has the A@H and AKxxx in @S, 7@S is pretty much laydown.
+|
+pg| ***** 42 ***** |
+
+
+bt||
+nt|^z@3^b@2
+
+|
+cp|red|at|^*bOliverC:^*n|cp||at|  Worth noting at this stage that in the early days of your journey into the world of Precision, I would retain 4NT as RKCB. 
+
+Once Asking Bids enter the picture, however, RKCB goes out of the window completely and is NEVER used. Instead, 4NT is always either natural, or an invitation to cue-bid, or "rolling" if bid in the middle of a cue-bidding sequence, depending on the circumstances. 
+
+In Super-Precision, we think of Controls (Ace = 2, King = 1) and there are 12 Controls in the pack. We have an Asking Bid called Beta which asks how many controls partner has, so we're effectively asking about Aces AND Kings all at once.
+
+So on this hand, if 4@H had been our Beta Asking Bid, the response would have been 4NT showing 5 Controls (AAK or AKKK).  But Asking Bids come along a bit later in the year so no need to worry about them at the moment.
+
+Any questions on Splinters? Like I said, I would retain them for now until you start using Asking Bids, but thereafter we have a different, much cheaper  method for exploring slam in Opener's Major.|
+pg| ***** 43 ***** |
+
+
+qx|Gen,wide|at|^^^^
+|fp|t-title|at|General  Jump-Shift   Introduction|fp||at|
+
+A Jump-shift over an Opening 1@H or 1@S can be used in a variety of ways. 
+
+You can play it as a Game Force, as in other systems, but this to a large extent goes against the concept of preserving space when you might need it for slam exploration, and many pairs use it instead for other means.
+
+Jump Shifts can be used as an Asking Bid (Alpha) to initiate an Asking Bid sequence when responder is 16+. 
+
+This would Ask in responder's own suit, and I will not cover this more here, simply because this system does not use jump-shifts in that way over 1@H and 1@S Openings (but it does over 1@D, 1NT and 2@C Openings).
+|
+pg| ***** 44 ***** |
+
+
+bt||
+nt|^z@3^b@2
+^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  The most common 2 uses for non-game-forcing Jump-Shifts are:
+^^
+^c@2(1) Mini-splinters (essentially weak hands with good trump support and a side-suit singleton or void).
+^^
+(2) Fit-Showing, again with a fundamentally weak/intermediate hand, showing a reasonable side suit
+^dand good trumps. 
+
+You can use them as purely weak jump-shifts (ie: not promising trump support), but before Asking Bids are in use we have a different route for that kind of hand.
+
+As already explained, (ie: using the Forcing 1NT Response and then bidding your suit at the minimum level over Opener's Rebid) Normally, you can only use one or other of these methods, not both. 
+
+The idea is to identify those "perfect fit" hands where game values are not present, but game is nonetheless possible because of the fit. 
+
+These very "thin" games tend to occur more frequently than the 16+-type responding hands, and this accounts for their popularity in many systems, not just Precision. 
+^^
+
+^b@2I like both of these methods so much, that we use a method that allows us to use BOTH of them at the same time. 
+|
+pg| ***** 45 ***** |
+
+
+qx|Mini_2,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Mini-Splinter  ^kresponses  to  1@h   and  1@s|fp||at|
+1@S - 2NT and 1@H - 2@S are special responses that show about 8-9 points, at least 4-card Trump Support, and a shortage in an as yet unspecified suit.
+
+This is like an instant request to make a short-suit trial bid by Responder. With an maximum hand with good Controls, Opener will usually bid game straight off, and if minimum with no interest in proceeding further they can sign off in 3 of their Major. 
+
+If Opener is mid-range or if the location of Responder's shortage makes a difference to whether they want to try playing in game or not, then Opener relays in the next bid up (ie: 1@S - 2NT - 3@C or 1@H - 2@S - 2NT) and now Responder shows their short suit by bidding the suit BELOW it (for consistency with the rest of the system rather than for any definite advantage in these sequences).
+
+So the Mini-splinter is like an immediate request to make a short-suit Trial Bid.
+
+It is a mild invitation to game in Opener's Major if the fit between the hands is good.
+
+Opener will ideally want to hold 3 or more small cards in Responder's short suit, or perhaps a holding such as Axx(x) so that there are no wasted values. 
+
+Responder must bear in mind that the Mini-splinter makes Opener firmly the Captain of the Hand, so if Opener declines the invitation and signs off in 3 of their Major (either with or without asking for the location of the shortage), Responder should accept that decision.
+
+The HCP requirement for mini-splinters is NOT set in concrete and the 8-9 HCP range mentioned is mostly a guideline. 
+
+The idea of mini-splinters is to reach very thin games based solely on the trump fit and shape, even when sound game values may not be present. At this stage I need to explain something You need to imagine the suits in a wheel, so Spades is "below" Clubs as well as being "above" Hearts.
+|
+pg| ***** 46 ***** |
+
+
+qx|t 2,thin|
+pn|South,West,North,East|rh||ah|Teach 2|
+st||md|1SAQT93HK9DA754C97,,SK754HAT873DQ92C8,|sv|e|
+mb|?|
+nt|^z@3^b@2|
+at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 2
+^c@2
+|
+pg| ***** 47 ***** |
+
+
+mb|1S|an|11-15|
+at|1@S    11 - 15 hcp
+
+|
+pg| ***** 48 ***** |
+
+
+mb|p|mb|2N|
+at|2NT   Mini-splinter  @-  more info available.
+
+|
+pg| ***** 49 ***** |
+
+
+sj|c|
+mb|p|mb|3C|
+at|3@c     OK @- Tell me your short suit.
+|
+pg| ***** 50 ***** |
+
+
+mb|p?|
+nt|^z@3^b@2|
+at|
+|cp|red|at|^*bOliverC:^*n|cp||at|  Over the 3@C acceptance @-
+
+^c@23@D shows a @H shortage (suit below), 
+3@H shows a @C ^*bclub^*n shortage (ignore the trump suit),
+3@S shows a @D shortage (We can't afford to go PAST 3@S with this response or we're committed to game).
+|
+pg| ***** 51 ***** |
+
+
+mb|3H|
+nt|^z@3^b@2
+|cp|red|at|^*bOliverC:^*n|cp||at|  so continuing
+^c@2^^3@h    Showing a @c shortage.
+|
+pg| ***** 52 ***** |
+
+
+sj|c|
+mb|p|mb|4S|
+at|
+4@s    @2Opener was mainly worried about a @H shortage with North. A club shortage isn't ideal (Diamonds would have been best), but short @c's are good enough.
+|
+pg| ***** 53 ***** |
+
+
+nt|^z@3^b@2
+|cp|red|at|^*bOliverC:^*n|cp||at|  Here we're obviously playing with a 30-point deck, since obviously EW have all the Club honours, but will get at most 1 trick in the suit so North must have some of their honour strength where South needs some help, in the red suits.  
+|
+pg| ***** 54 ***** |
+
+
+mb|pp|
+at|
+Thin games like this are like gold dust and we can't afford to miss them.   On the next hand @-
+|
+pg| ***** 55 ***** |
+
+
+qx|t 3,thin|
+pn|South,West,North,East|
+st||md|2,S7JKH24TJQKD3CTJK,,S3H368AD7QKC24789|rh||ah|Teach 3|sv|b|sk|w|sk||
+mb|?|
+nt|^z@3^b@2
+|cp|red|at|^*bOliverC:^*n|cp||at|  Teach 3      |
+pg| ***** 56 ***** |
+
+
+mb|1h|an|5+ @H  11-15|
+pg| ***** 57 ***** |
+
+
+sj|c|
+mb|p|mb|2S|an|Mini-splinter, may I|
+pg| ***** 58 ***** |
+
+
+sj|c|
+mb|p|mb|2N|an|ok, Tell me your short suit|
+pg| ***** 59 ***** |
+
+
+sj|c|
+mb|p?|
+at|     Now  -
+
+^c@23@C shows a @D shortage
+3@D shows a @S shortage (ignore the trump suit)    
+3@H shows a @C shortage
+|
+pg| ***** 60 ***** |
+
+
+mb|3d|an|Singleton or void in @S|
+pg| ***** 61 ***** |
+
+
+sj|c|
+mb|p?|
+nt|^z@3^b@2
+|cp|red|at|^*bOliverC:^*n|cp||at|  This is NOT good for West. A singleton or void opposite their @SKJx is not a good fit. |
+pg| ***** 62 ***** |
+
+
+mb|3h|
+at|^^^^So West declines the invitation.|
+pg| ***** 63 ***** |
+
+
+mb|pp|
+pg| ***** 64 ***** |
+
+
+qx|t 4,thin|
+pn|South,West,North,East|rh||ah|Teach 4|sv|b|
+st||md|2,S7JKH24TJQKD3CTJQ,,S3H368AD7QKC24789|sk|w|sk||
+nt|^z@3^b@2|
+mb|?|
+at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Change the hand slightly    @cK  =>  @cQ 
+|
+pg| ***** 65 ***** |
+
+
+mb|1h|an|5+ @H  11-15|
+pg| ***** 66 ***** |
+
+
+sj|c|
+mb|p|mb|2N|an|Mini-splinter, may I|
+pg| ***** 67 ***** |
+
+
+sj|c|
+mb|p|mb|3H|an|No thanks not interested|
+at|
+And opener can decline straight away.|
+pg| ***** 68 ***** |
+
+
+mb|pp|
+pg| ***** 69 ***** |
+
+
+qx|FSJS_2,wide|
+bt||
+nt|^z@3^b@2
+
+|fp|t-title|at|Fit Showing Jump-Shift  ^kresponses  to  1@h   and  1@s|fp||at|
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Now we turn our attention to Fit-showing jump-shifts. In this system a jump-shift in a suit over a 1@H or 1@S Opening (Not 1@H-2@S - see above) shows about 8-9 points, trump support for Opener's Major and a 5-card or longer side-suit that is likely to be a source of tricks (ie: something like AQJxx rather than Q96xx). 
+
+You will recall from the section on Mini-splinters that the sequence 1@H-2@S was the unspecified mini-splinter. This is the one exception to the rule and 1@H-2NT shows a fit-showing jump-shift in @SSpades@S. 
+
+We get to Romex Trial Bids next week, you will see this usage mirrored there. If Responder shows a fit-showing jump-shift, then it is unlikely they will also have a singleton or void, but this is a general guideline rather than a hard-and-fast rule. 
+ 
+With a shortage AND a side-suit a pre-emptive jump to game in Opener's Major will often be a sensible alternative to the fit-showing jump-shift or the mini-splinter.
+ 
+So the fit-showing jump-shift is a bit like an immediate LONG-suit trial bid by Responder, always agreeing Opener's Major as trumps and making a mild invitation to game. As with Mini-splinters, Responder must accept Opener's decision. 
+ 
+Opener can sign off at the 3-level in their Major or go to game. Exceptionally they can even pass the fit-showing jump-shift with exceptionally good support for Responder's suit and a very weak hand, or raise responder's suit with 4-card support and a good hand, but unless Responder's other suit is the "other" Major, it's more likely they'll just bid game in their own Major. 
+ 
+As with Mini-Splinters, it is the FIT between the two hands that is of paramount importance in guiding Opener as to whether to play in a part-score or game, bearing in mind that in either case Responder is likely to have a maximum of 9 points in their hand. As with mini-splinters, the HCP guideline of 8-9 HCP is just that, a guideline rather than a hard and fast rule. 
+|
+pg| ***** 70 ***** |
+
+
+qx|t 5,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 5|sv|e|sk|e|sk||
+md|4,STH679D2567QAC7TQ,,S269AH23TKAD9TKC5|
+mb|?|
+nt|^z@3^b@2
+|cp|red|at|^*bOliverC:^*n|cp||at|  Teach 5    |
+pg| ***** 71 ***** |
+
+
+mb|1h|an|5+ @H  11-15|
+pg| ***** 72 ***** |
+
+
+sj|c|
+mb|p|mb|3d|an|3+ @H,  8-9 hcp,  5+ @D suit|
+pg| ***** 73 ***** |
+
+
+sj|c|
+mb|p|mb|4H|
+at|
+
+Over the fit-showing jump-shift, Opener with a mid-to-upper range hand would prefer to have a holding such as Hx or Hxx in Responder's suit. 
+
+A holding such as xxx(x) is much less useful. Similarly a shortage in partner's side-suit is much less useful than a shortage elsewhere.|
+pg| ***** 74 ***** |
+
+
+mb|pp|
+nt|^z@3^b@2
+billyjef:  Do 'fit' jumps only need 3 card support?
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Yes, because our source of tricks in our SUIT rather than a shortage.  Mini-splinters usually need 4+ card trump support.  
+
+As you know, a double fit usually yields a LOT of tricks, even on slim values.|
+pg| ***** 75 ***** |
+
+
+nt|^z@3^b@2
+|cp|red|at|^*bOliverC:^*n|cp||at|  Note that even if West has  @Sxx  and  @Cxx,  we're still making 10 tricks because of the double fit.
+
+Compare this with @-
+|
+pg| ***** 76 ***** |
+
+
+qx|t 6,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 6|sv|e|sk|e|sk||
+st||md|4,S27KH6D4678QAC47T,,S459QAH27QD35TC8K|
+mb|?|
+nt|^z@3^b@2
+|cp|red|at|^*bOliverC:^*n|cp||at|  Teach 6      |
+pg| ***** 77 ***** |
+
+
+mb|1s|an|5+ @S  11-15|
+pg| ***** 78 ***** |
+
+
+sj|c|
+mb|p|mb|3d|an|3+ @S,  8-9 hcp,  5+ @D suit|
+pg| ***** 79 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+at|Here East   is minimum,  ^*band^*n  doesn't have a great hand for @D's   (Hx would be better than xxx)|
+pg| ***** 80 ***** |
+
+
+sj|c|
+mb|3s|
+at|^^^f    So just signs off.|
+pg| ***** 81 ***** |
+
+
+mb|pp|
+at|^^^^amer_idle:   Does  3@D  promise 2 of the 3 highest honors?
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  I wouldn't say "promise", but as I said before, I would not make a fit-showing jump-shift if my side suit  
+^d was  ^*bQ9xxx^*n  but  ^*bAJ109xx^*n  is perfectly acceptable.
+|
+pg| ***** 82 ***** |
+
+
+qx|t 7,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 7|sv|e|sk|n|sk||
+%% 3SAQT72H976DTCKT54,SJ5HA543DKQJ97CQ2,SK64HKQJT2D65CA73,S983H8DA8432CJ986
+md|3SAQT72H976DTCKT54,,SK64HKQJT2D65CA73,|
+mb|?|
+nt|^z@3^b@2
+|cp|red|at|^*bOliverC:^*n|cp||at|  Teach 7      |
+pg| ***** 83 ***** |
+
+
+mb|1h|an|5+ @H  11-15|
+pg| ***** 84 ***** |
+
+
+sj|c|
+mb|p|mb|2N|an|3+ @H,  8-9 hcp,  5+ @S suit  yes 2N shows FSJS /w 5@S|
+pg| ***** 85 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 86 ***** |
+
+
+mb|4h|
+at| Here North has a clear acceptance |
+pg| ***** 87 ***** |
+
+
+mb|pp|
+at|^^^^and might even choose to bid 4@S.
+|
+pg| ***** 88 ***** |
+
+
+bt||
+nt|^z@3^b@2
+
+|fp|t-title|at|Summary of Fit showing Jump-shift  Responses     to     1@h   and  1@s|fp||at|
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  So Fit-showing Jump-shifts and Mini-splinters are BOTH available over 1@H and 1@S Openings as mild invitations to game with about 8-9 points.
+
+Direct-suit jumps to 3 of Opener's Major, therefore, will normally not be in that particular range or will have a hand that is in that range but without a long side-suit (or one that is insufficiently "good"), or without a singleton or void as such (or without good enough trump support).
+
+Hands with a strong invitation to game would normally make a 2/1 response before supporting Opener's Major. 
+
+Hands that are more balanced will tend to use the Forcing No Trump first before supporting Opener's Major at the appropriate level.
+
+So a sequence such as 1@S - 2@D - 2@H - 3@S is STRONGER than 1@S - 3@D and a full-blown invitation, probably 11-12 HCP rather than 8-9 for the fit-showing jump-shift.
+
+This is a significantly STRONGER invitation than 1@H-2NT so Opener should have no hesitation accepting it.
+
+Any questions? 
+|
+pg| ***** 89 ***** |
+
+
+--------------------------------------------------------------------
+qx|Prac,wide|
+at|^^^^|
+fp|t-title|at|Practice Hands|fp||at|
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Some victi..., I mean, volunteers please :)
+
+gene_k:  hehehehe
+
+Ruah:  hi everyone
+|
+pg| ***** 90 ***** |
+
+
+------------------------------------------------------------------------------------------------  
+%% Alert Insert start --------------------------------------------------------------------------
+nt|^z@3^b@2|
+at|^^^^|
+%%   header box with text
+ht|b|cs|y|fp||at|^b{ ^^|
+ht|c|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^|fp|x-insertAlert|at|^- A small insert on Alerts^*n^-^^|cs||fp||cp||at|^^|
+
+ht|d|at|^^|
+cp||at|^*bMM:^*n|cp||at|  We all know we have to alert when playing  'proper'  bridge.
+
+The laws of the game say that what we have to put in the alert is  ^*b our agreement with partner ^*n about that bid.
+
+While creating these bridge movies, I have gone through and added to, or amended, many of the alerts that were in the original text.
+
+I have changed them from being ^*b REAL ^*n alerts, that you should give to real opponents, and have replaced them with ^*b STUDY ^*n alerts.   Study alerts are only useful to students of Oliver's Precision.  Of course in many cases no changes were needed.   For example    1@c     16+ Any dist except 16-23 4441
+
+It is particularly important that we make the alerts for  ^*b Asking bids and their responses^*n,  as clear as possible
+
+	    ^c ^*b Study Alert ^*n           ^i ^*b Real Alert ^*n                ^o ^*b It would be great if you could add ^*n
+     ^b      @-@-@-@-@-@-@-@-@-@- ^h       @-@-@-@-@-@-@-@-@-@-   ^n       @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-
+		^c Beta    Relay Beta ...          ^i Gen Ctrl Ask                    ^o A = 2,  K = 1 
+		^c Alpha                           ^i Asking  in                      ^o Trump ...
+		^c Gamma                           ^i Asking  in partners suit        ^o Trump ...
+		^c Epsilon                         ^i Specific Ctrl Ask               ^o in ... 
+		^c Hxx                             ^i Hxx                             ^o in ... 
+		^c none  or  1st & 2nd             ^i none  or  1st & 2nd             ^o [xxx, AKx(x)]
+		^c 3rd rd ctrl                     ^i 3rd rd ctrl                     ^o [xx, Qxx(x), Qx]
+		
+An easy mistake in reply to an Epsilon is when, say, you hold ^*b Q76 ^*n in the suit, and so give only ^*b Qxx ^*n in the alert.   THAT  IS  WRONG.  The agreement is ^*b 3rd round control ^*n and that is what should be told to the opps.   
+
+The ^*b ethical ^*n problem with telling too much to your opps is that it disadvantages the other pairs who will play your opponents cards.|
+%% Alert Insert End ----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------  
+pg| ***** 91 ***** |
+
+
+--------------------------------------------------------------------
+st||
+md|1,,,|sk|n|
+nt|^b@2^z@3|
+cp||at|^*bMM:^*n|cp||at|  ^*bPractice Hands  @-  How to^*n
+^^With all Practice Hands, when you see the |fp|g-graphSuit|cp||at|^*b ? ^*n|cp||fp||at| in the bidding area, please @- |cp|red|at|^*bStop^*n|cp||at| @- and think through your bid.
+If you can't work it out then the best thing is to do, is  @- go back and re-read that part of Oliver's lesson.|
+pg| ***** 92 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 1,hide|
+st||
+pn|lute57,GatorJim,RogerPfi,Ruah|rh||ah|Practice 1|sk|n|
+md|3SAT876HA987DAT2C7,,SQJ95H5DKQ93CT853,|
+mb|?|
+nt|^z@3^b@2
+|cp|red|at|^*bOliverC:^*n|cp||at|  Practice 1      ^hYour bid ?
+
+Thanks for sitting, guys.      |
+pg| ***** 93 ***** |
+
+
+mb|p|
+pg| ***** 94 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 95 ***** |
+
+
+mb|1S|an|5+ @S  11-15|
+pg| ***** 96 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 97 ***** |
+
+
+mb|2N|an|4+ @S  8-9hcp  & a shortage|
+pg| ***** 98 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 99 ***** |
+
+
+mb|3C|an|Where is your shortage?|
+pg| ***** 100 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 101 ***** |
+
+
+mb|3D|an|shortage in @h hearts|
+pg| ***** 102 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 103 ***** |
+
+
+mb|4S|
+pg| ***** 104 ***** |
+
+
+sk||
+mb|pp|
+at|I know a lot of people who would bid 4@S straight off with the North hand.
+|
+pg| ***** 105 ***** |
+
+
+at|
+RogerPfi:  I would be one of them, if I was not here to practice a new bidding system.  :)|
+pg| ***** 106 ***** |
+
+
+nt|^z@3^b@2
+|cp|red|at|^*bOliverC:^*n|cp||at| Before we leave this hand, this proves that trump fit and a good fit between the hands is everything it's a 20-20 hand.
+
+The point is that if you have a good trump fit AND a good fit between the hands (no wasted values etc), you can make game on a lot less than the 26HCP recommended by many textbooks (ie: the thing limit bids are built on).|
+pg| ***** 107 ***** |
+
+
+md|1,,,|nt|^^^b cleared|
+pg| ***** 108 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2|
+st||
+pn|lute57,GatorJim,RogerPfi,Ruah|rh||ah|Practice 2|sv|n|sk|e|
+md|4,SKQJ98HK74DT97C62,,SA73HAQ982DA5CT98|
+mb|?|
+nt|^z@3^b@2
+|cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2   |
+pg| ***** 109 ***** |
+
+
+mb|1h|an|5+ @H  11-15|
+pg| ***** 110 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 111 ***** |
+
+
+at|   West shows  8-9 hcp  a fit for  @hHearts  and 5+ good @sSpades  by bidding,   ^*bwhat ?^*n|
+pg| ***** 112 ***** |
+
+
+mb|2N|an|3+@H   8-9 hcp   5+@S|
+pg| ***** 113 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 114 ***** |
+
+
+mb|4h|
+pg| ***** 115 ***** |
+
+
+sk||
+mb|pp|
+pg| ***** 116 ***** |
+
+
+at|^^
+|cp|red|at|^*bOliverC:^*n|cp||at|  Jean, 4@H and 4@S are both fine.  West MIGHT have 6-card @S, and MIGHT have 4-card @H support, 
+^dyou never know for sure.
+
+Ruah(Jean):  ok    I felt that too.|
+pg| ***** 117 ***** |
+
+
+nt|^z@3^b@2
+|cp|red|at|^*bOliverC:^*n|cp||at|  Contrast this with  1@H - 1@S - 2@C - 2@H  which would show a MUCH weaker hand 
+
+and as the  2@H  is only preference, it might not even be 3-card support.|
+pg| ***** 118 ***** |
+
+
+at|^^^^
+lute57:  welcome to OCP    billyjef
+|
+pg| ***** 119 ***** |
+
+
+md|1,,,|nt|^^^b cleared|
+pg| ***** 120 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 3,wide|
+nt|^z@3^b@2|
+pn|OliverC,GatorJim,billyjef,Ruah|rh||ah|Practice 3|sv|e|sk|s|
+md|1S6HAQ753DKJ76CQ84,,SA98HKJT42DAQT43,|
+mb|?|
+nt|^z@3^b@2
+|cp|red|at|^*bOliverC:^*n|cp||at|  Practice 3   |
+pg| ***** 121 ***** |
+
+
+mb|1h|an|5+ @H  11-15|
+pg| ***** 122 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 123 ***** |
+
+
+at|  North shows  this hand bid by bidding,   ^*bwhat ?^*n|
+pg| ***** 124 ***** |
+
+
+mb|3s|an|4+@h,  @c shortage|
+at|             3@S  (Full Splinter)|
+pg| ***** 125 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 126 ***** |
+
+
+mb|4h|
+pg| ***** 127 ***** |
+
+
+sk||
+mb|pp|
+pg| ***** 128 ***** |
+
+
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  ANY double jump-shift is a splinter.  We splinter in the suit below our shortage, so that we can use the short suit as a cheap Ace-Ask (Asking bids later).
+|
+pg| ***** 129 ***** |
+
+
+--------------------------------------------------------------------
+qx|end,thin|
+bt||
+nt|^z@3^b@2|at|
+^^^^
+|cp|red|at|^*bOliverC:^*n|cp||at|  Ok we'll leave it there for today. 
+
+I hope you've found this session useful even if you're not dead set on learning Precision. 
+
+These methods can be used with ANY system and the hands that will use them occur much more frequently than hands qualifying for something like a Jacoby 2NT response or a game-forcing jump-shift. 
+
+Next week we will be turning our attention to Romex Trial Bids, which are the other side of the coin.  
+
+They allow the person who first introduced a Major suit (which has been agreed as trumps at the 2-level) to make a long-or short-suit trial bid. 
+
+Night all! 
+
+
+
+lute57:  Thank you Oliver for the time and energy yo shared with us. God bless!
+|
+pg| ***** 130 ***** |
+
+

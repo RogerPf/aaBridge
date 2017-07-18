@@ -63,16 +63,16 @@ More reasonably, center the text as well     !at!|cp|7|at|^*b@^- @{^*n|cp||at| b
 
 
 ^p       |cp|blue|at|Added in ^*b aaBridge  ^*nbuild |cp|7|at|^*b 2814^*n|cp||at|
-^b@2^*bVertical Down^*n       !vd!q!   ^i ^*bVertical Up ^*c      !vu!q!    ^p ( q  value  =   0-9,  a-z      a=10,  z = 35 )
+^b@2^*bVertical Down^*n       !n##!q!   ^i ^*bVertical Up ^*c      !n@^!q!    ^p ( q  value  =   0-9,  a-z      a=10,  z = 35 )
 
 ^dText on any line |n#|3|at| can be |n#|b|at| nudged down and |n^|d|at| back up
 
 
-^dText on any line |cp|7|at|!vd!3!at!|cp||at| can be |cp|7|at|!vd!a!at!|cp||at| nudged down and |cp|blue|at|!vu!d!at!|cp||at| back up 
+^dText on any line |cp|7|at|!n##!3!at!|cp||at| can be |cp|7|at|!n##!a!at!|cp||at| nudged down and |cp|blue|at|!n@^!d!at!|cp||at| back up 
 
 
 
-Boxes can be adjusted in the same way     !at!|cp|7|at|^*b@^- @{^*n|cp||at| boxed @^@^ |cp|blue|at|!vu!3!at!|cp||at| text |cp|7|at|^*b@} @^- ^*n|cp||at|! 
+Boxes can be adjusted in the same way     !at!|cp|7|at|^*b@^- @{^*n|cp||at| boxed @^@^ |cp|blue|at|!n@^!3!at!|cp||at| text |cp|7|at|^*b@} @^- ^*n|cp||at|! 
 
 ^-{ boxed ^^ |n^|3|at| text }^- 
 
@@ -106,10 +106,23 @@ text }
 ^-
 ^b@2!cs!!   Clears the set color.
 
-^z@3
+^z@3|
+at|^b@2!cs!wh!    use 'wh' for no border|
+ht|m|at|^f@2
+|cs|wh|at|^-{ 'wh' for no 
+border }
+^- |
+
+ht|n|at|^i@2
+|cs||at|^-{ border back } 
+^-|
+
+at|@0@1|
+pg| ***** 2 ***** |
 
 
-|
-ht|z|at|@0
+ht|z|at|@0@1
 ^*b end ^*n|
+pg| ***** 3 ***** |
+
 

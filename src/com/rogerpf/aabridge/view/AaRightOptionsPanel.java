@@ -24,6 +24,7 @@ import javax.swing.border.Border;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 
 public class AaRightOptionsPanel extends JTabbedPane implements ChangeListener {
@@ -35,30 +36,31 @@ public class AaRightOptionsPanel extends JTabbedPane implements ChangeListener {
 	public AaRopPrefs2_SeatChoice p2_SeatChoice;
 	public AaRopPrefs3_DFC p3_DFC;
 	public AaRopPrefs4_SuitColors p4_SuitColors;
-	public AaRopPrefs5_DSizeFont p5_DSizeFont;
+	public AaRopPrefs5_DSizeMisc p5_DSizeMisc;
 	public AaRopPrefs6_RedHints p6_RedHints;
 	public AaRopPrefs7_ShowBtns p7_ShowBtns;
 
 	AaRightOptionsPanel() { /* Constructor */
 
 		addChangeListener(this);
+
 		p0_NewDealChoices = new AaRopPrefs0_NewDealChoices();
 		p1_AutoPlay = new AaRopPrefs1_AutoPlay();
 		p2_SeatChoice = new AaRopPrefs2_SeatChoice();
 		p3_DFC = new AaRopPrefs3_DFC();
 		p4_SuitColors = new AaRopPrefs4_SuitColors();
-		p5_DSizeFont = new AaRopPrefs5_DSizeFont();
+		p5_DSizeMisc = new AaRopPrefs5_DSizeMisc();
 		p6_RedHints = new AaRopPrefs6_RedHints();
 		p7_ShowBtns = new AaRopPrefs7_ShowBtns();
 
-		addTab("New Deals", null, p0_NewDealChoices, "What shape of hand do you want to be delt ?   ");
-		addTab("AutoPlay", null, p1_AutoPlay, "Pause at end of trick  and  AutoPlay  options   ");
-		addTab("Seat Choice", null, p2_SeatChoice, "Seat Choice    for   Bridge Movies   and   'Entered Deals'  ");
-		addTab("DFC", null, p3_DFC, "DFC        Disrtribution Flash Card  options   ");
-		addTab("Suit Colors", null, p4_SuitColors, "Suit Symbol Colors   ");
-		addTab("Size & Font", null, p5_DSizeFont, "Deal Size and  Movie Font override   ");
-		addTab("Red Hints", null, p6_RedHints, "Red Hints   ");
-		addTab("Show", null, p7_ShowBtns, "Show,  Button Display  and  Reset all options   ");
+		addTab(Aaf.gT("menuOpt.newDeals"), null, p0_NewDealChoices, Aaf.gT("menuOpt.newDeals_TT"));
+		addTab(Aaf.gT("menuOpt.autoPlay"), null, p1_AutoPlay, Aaf.gT("menuOpt.autoPlay_TT"));
+		addTab(Aaf.gT("menuOpt.seat"), null, p2_SeatChoice, Aaf.gT("menuOpt.seat_TT"));
+		addTab(Aaf.gT("menuOpt.dfc"), null, p3_DFC, Aaf.gT("menuOpt.dfc_TT"));
+		addTab(Aaf.gT("menuOpt.colors"), null, p4_SuitColors, Aaf.gT("menuOpt.colors_TT"));
+		addTab(Aaf.gT("menuOpt.size"), null, p5_DSizeMisc, Aaf.gT("menuOpt.size_TT"));
+		addTab(Aaf.gT("menuOpt.red"), null, p6_RedHints, Aaf.gT("menuOpt.red_TT"));
+		addTab(Aaf.gT("menuOpt.show"), null, p7_ShowBtns, Aaf.gT("menuOpt.show_TT"));
 
 		ToolTipManager.sharedInstance().setDismissDelay(12000);
 	}

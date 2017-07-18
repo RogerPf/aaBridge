@@ -13,7 +13,6 @@ package com.rogerpf.aabridge.igf;
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Point;
@@ -21,7 +20,6 @@ import java.awt.Polygon;
 import java.awt.Shape;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Line2D;
-import java.awt.geom.Rectangle2D;
 import java.awt.geom.RoundRectangle2D;
 
 import javax.swing.JPanel;
@@ -102,6 +100,7 @@ class BubblePanelInner extends JPanel {
 	public void paintComponent(Graphics g) {
 		// ============================================================================
 		super.paintComponent(g);
+
 		Graphics2D g2 = (Graphics2D) g;
 		Aaa.commonGraphicsSettings(g2);
 
@@ -109,6 +108,8 @@ class BubblePanelInner extends JPanel {
 		String text = App.deal.hands[dir.v].bubbleText;
 		if (text.isEmpty())
 			return;
+
+		text = Aaa.deAtQuestionAndBubbleText(text);
 
 		int width = getWidth();
 		int height = getHeight();
@@ -212,7 +213,8 @@ class BubblePanelInner extends JPanel {
 		 */
 
 		float fSize = App.gbp.getHeight() * 0.032f;
-		Font font = BridgeFonts.bridgeBoldFont.deriveFont(fSize);
+		Font font = BridgeFonts.internatBoldFont.deriveFont(fSize);
+
 		g2.setFont(font);
 		g2.setColor(Color.black);
 
@@ -245,20 +247,20 @@ class BubblePanelInner extends JPanel {
 		}
 	}
 
-	/**
-	 */
-	public static float drawCenteredString(Graphics2D g2, String text, float xOrg, float yOrg, float wOrg, float hOrg) {
-		// ************************************************************************
-		FontMetrics fm = g2.getFontMetrics(g2.getFont());
-		Rectangle2D rect = fm.getStringBounds(text, g2);
-		int textHeight = (int) (rect.getHeight());
-		int textWidth = (int) (rect.getWidth());
-
-		float x = xOrg + (wOrg - textWidth) / 2f;
-		float y = yOrg + (hOrg - textHeight) / 2f + fm.getAscent() * 0.95f;
-
-		g2.drawString(text, x, y);
-		return x;
-	}
+//	/**
+//	 */
+//	public static float drawCenteredString(Graphics2D g2, String text, float xOrg, float yOrg, float wOrg, float hOrg) {
+//		// ************************************************************************
+//		FontMetrics fm = g2.getFontMetrics(g2.getFont());
+//		Rectangle2D rect = fm.getStringBounds(text, g2);
+//		int textHeight = (int) (rect.getHeight());
+//		int textWidth = (int) (rect.getWidth());
+//
+//		float x = xOrg + (wOrg - textWidth) / 2f;
+//		float y = yOrg + (hOrg - textHeight) / 2f + fm.getAscent() * 0.95f;
+//
+//		g2.drawString(text, x, y);
+//		return x;
+//	}
 
 }

@@ -1,0 +1,1652 @@
+%%
+%%
+%% <--SECT_HEAD-->=Chapter 5.1                  Standard  Lebensohl 
+%%
+%%
+%%  Date last Edited    2015-04-13          set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+%% 
+%% <<--HEADER_FILE-->>=005  OCP common header
+%%
+
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+
+
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+fh|s28|                    Font   s  s-small
+fh|f35|                    Font   f  f-fine
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  OLD STYLE  position adjustment 
+
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       on Title Pages   Precision Blue
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Oliver Clarke Precision                                 2017  ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bChapter 5.1                  Standard  Lebensohl ^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+
+qx|5.1|
+fp|t-title|at|^d@2|
+at|^*gGS,Standard  ^g Lebensohl            ^L Graphical Summary^*n|
+fp||at|
+
+^*gFast,    Fast ^*n
+
+^*gSlow,    Slow  ^*n
+
+|fp|t-title|at|
+^*gOliv, Oliver's class on  ^j Std Lebensohl  ^o Starts HERE^*n    |fp||cp|red|at|<<< First time ?  Click title|fp||cp||at|
+
+^*gPrac,    Practice Hands    -     What would You Bid ? ^*n|
+
+ht|t|at|^d@2 {   	|n#|3|at|	The core of Oliver's class is summarised in 4 pages that you can access via the  ^*bNAVBAR^*n   
+|n#|7|fp|t-title|at|  ^i      ^*b Rel     F-S     Cue    3NT ^*n|fp||n#|9|at|
+^k     |fp|b_big|cp|dg|at|click below|cp||fp||at|
+}
+
+|fp||ht|y|at|^b@2@1|at|
+^*bClick^*n  -   one of the above  ^hor    in the  NavBar  ^mor      use your   mouse wheel|
+ht|z|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+n^|3|at|^^^*h https://www.youtube.com/channel/UCTGNUS8jbx85QOMUPlHoRMA, OCP Videos ^*n|
+%%
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2886|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2886 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+qx|GS,hide|
+mn|1NT  -  (2 suit)  -              Standard  Lebensohl|
+tu|y|
+nt|^z@3^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs||at|All Lines     ^i{ N }@C@D@H@S N @C@D@H@S N
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|  |
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2   An opening bid of    1 NT    shows  ^*bone^*n  of the following hand types
+^^
+^*b10^*n - 12     balanced  or  semi-balanced  when  ^*bNOT^*n Vulnerable      (no 5-card Maj)
+
+13 - 15     balanced  or  semi-balanced  when     ^*bVulnerable^*n          (no 5-card Maj)
+^^
+Where balanced is any  4333  or  4432     and semi-balanced  is   5332  (the 5 will be a minor)
+|
+
+ht|y|fp||at|^dThese  Graphical Summaries  are taken from the  Lebensohl  web page
+^^^dSee the original for a more detailed description   @-   ^*hhttp://ocp.pigpen.org.uk/Leb.php^*n
+|
+pg| ***** 1 ***** |
+
+
+nt|^z@3^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines     ^i{ N }|cs|f|at|{@C@D}|cs|i|at|{@H}@S N @C@D@H@S N
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^k      (intv)  |
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2   |fp||at|Opps intervene  (here natural  2@H)|fp||at|
+^^
+|
+pg| ***** 2 ***** |
+
+
+nt|^z@3^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines     ^i{ N }|cs|f|at|{@C@D}|cs|i|at|{@H}|cs||at|{@S}|cs|f|at| N @C@D@H@S N
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^k      (intv)  |
+ht|k|fp|t-title|at|^n 2-Level  suits   ^t COMPETITIVE|fp||at|^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2   2 Spades
+^^
+competitive  'to play'
+
+any suits that can be bid at the 2-level  are   competitive
+|
+pg| ***** 3 ***** |
+
+
+nt|^z@3^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines     ^i{ N }|cs|f|at|{@C@D}|cs|i|at|{@H}|cs|f|at|{@S}|cs||at|{ N }@C@D@H@S N
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^k      (intv)  |
+ht|k|fp|t-title|at|^n ^*bSlow^*n ^pLebensohl |fp||at|       ^t covered later|fp||at|^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2   
+^^
+|
+pg| ***** 4 ***** |
+
+
+qx|Fast|
+nt|^z@3^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines     ^i{ N }|cs|f|at|{@C@D}|cs|i|at|{@H}|cs|f|at|{@S}|cs|f|at|{ N }|cs||at||cs||at|{@C@D@H@S}{ N }
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^k      (intv)  |
+ht|k|fp|t-title|at|^n ^*bFast^*n ^pLebensohl        ^t FORCING|fp||at|^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2   
+^^
+|
+pg| ***** 5 ***** |
+
+
+nt|^z@3^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines     ^i{ N }|cs|f|at|{@C@D}|cs|i|at|{@H}|cs|f|at|{@S}|cs|f|at|{ N }|cs||at||cs||at|{@C@D}@H{@S} N
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^k      (intv)  |
+ht|k|fp|t-title|at|^n ^*bFast^*n ^pLebensohl        ^t |fp||at|^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2   3 Clubs     3 Diamonds     3 Spades        ^n (unbid suit)
+^^
+5+ cards
+
+Game Force|
+pg| ***** 6 ***** |
+
+
+nt|^z@3^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines     ^i{ N }|cs|f|at|{@C@D}|cs|i|at|{@H}|cs|f|at|{@S}|cs|f|at|{ N }|cs|f|at|{@C@D}|cs||at|{@H}|cs|f|at|{@S} N
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^k      (intv)  |
+ht|k|fp|t-title|at|^n ^*bFast^*n ^pLebensohl        ^t |fp||at|^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2   3 Hearts                 ^n (Opps  suit)
+^^
+^*bDenies^*n  a stop in Opps suit  (because FAST)
+^^
+STAYMANIC   4-cards in other major    (because  Opps suit) 
+
+^f interest in both majors if opps suit is a minor  
+|
+pg| ***** 7 ***** |
+
+
+nt|^z@3^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines     ^i{ N }|cs|f|at|{@C@D}|cs|i|at|{@H}|cs|f|at|{@S}|cs|f|at|{ N }|cs|f|at|{@C@D@H@S}|cs||at|{ N }
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^k      (intv)  |
+ht|k|fp|t-title|at|^n ^*bFast^*n ^pLebensohl        ^t |fp||at|^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2   3 No Trumps
+^^
+^*bDenies^*n  a stop in Opps suit  (because FAST)
+^^
+^*bNot^*n  STAYMANIC   no major interest     (because  NT  ^*bnot^*n  Opps suit) 
+|
+pg| ***** 8 ***** |
+
+
+nt|^z@3^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines     ^i{ N }|cs|f|at|{@C@D}|cs|i|at|{@H}@S N @C@D@H@S N
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^k      (intv)  |
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2   |fp||at|Opps intervene  (here natural  2@H)|fp||at|
+^^
+|
+pg| ***** 9 ***** |
+
+
+nt|^z@3^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines     ^i{ N }|cs|f|at|{@C@D}|cs|i|at|{@H}|cs|f|at|{@S}|cs||at|{ N }@C@D@H@S N
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^k      (intv)  |
+ht|k|fp|t-title|at|^n ^*bSlow^*n ^pLebensohl |fp||at||fp||at|^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2   2 No Trumps        ^kLebensohl
+^^
+|
+pg| ***** 10 ***** |
+
+
+qx|Slow|
+nt|^z@3^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines     ^i{ N }|cs|f|at|{@C@D}|cs|i|at|{@H}|cs|f|at|{@S}|cs|k|at|{ N }|cs||at|{@C}@D@H@S N
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^k      (intv)  |
+ht|k|fp|t-title|at|^n ^*bSlow^*n ^pLebensohl |fp||at||fp||at|^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2   3 Clubs      ^kforced
+^^
+|
+pg| ***** 11 ***** |
+
+
+nt|^z@3^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines     ^i{ N }|cs|f|at|{@C@D}|cs|i|at|{@H}|cs|f|at|{@S}|cs|k|at|{ N }|cs|e|at|{@C}|cs||at|{@D@H@S}{ N }
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^k      (intv)  |
+ht|k|fp|t-title|at|^n ^*bSlow^*n ^pLebensohl     ^tINVITATIONAL^^^s    / COMPETITIVE|fp||at||fp||at|^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2
+^^
+|
+pg| ***** 12 ***** |
+
+
+nt|^z@3^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines     ^i{ N }|cs|f|at|{@C@D}|cs|i|at|{@H}|cs|f|at|{@S}|cs|k|at|{ N }|cs|e|at|{@C}|fp||at|  Pass 
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^k      (intv)  |
+ht|k|fp|t-title|at|^n ^*bSlow^*n ^pLebensohl |fp||at||fp||at|^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2   Pass
+^^
+6+  Clubs
+
+weak  Competitive
+|
+pg| ***** 13 ***** |
+
+
+nt|^z@3^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines     ^i{ N }|cs|f|at|{@C@D}|cs|i|at|{@H}|cs|f|at|{@S}|cs|k|at|{ N }|cs|e|at|{@C}|cs||at|{@D}@H@S N
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^k      (intv)  |
+ht|k|fp|t-title|at|^n ^*bSlow^*n ^pLebensohl |fp||at||fp||at|^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2   3 Diamonds
+^^
+6+ Diamonds
+^^weak  Competitive  ^k(because could  ^*bnot^*n  have been bid at the 2 level)
+|
+pg| ***** 14 ***** |
+
+
+nt|^z@3^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines     ^i{ N }|cs|f|at|{@C@D}|cs|i|at|{@H}|cs|f|at|{@S}|cs|k|at|{ N }|cs|e|at|{@C}|cs|f|at|{@D}@H|cs||at|{@S} N
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^k      (intv)  |
+ht|k|fp|t-title|at|^n ^*bSlow^*n ^pLebensohl |fp||at||fp||at|^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2   3 Spades
+^^
+6+ Spades
+^^Invitational  ^k(because  ^*bcould^*n  have been bid at the 2 level)
+|
+pg| ***** 15 ***** |
+
+
+nt|^z@3^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines     ^i{ N }|cs|f|at|{@C@D}|cs|i|at|{@H}|cs|f|at|{@S}|cs|k|at|{ N }|cs|e|at|{@C}|cs|f|at|{@D}|cs||at|{@H}|cs|f|at|{@S} N
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^k      (intv)  |
+ht|k|fp|t-title|at|^n ^*bSlow^*n ^pLebensohl |fp||at||fp||at|^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2   3 Hearts                 ^n (Opps  suit)
+^^
+^*bShows^*n (promises) a stop in Opps suit  (because SLOW)
+^^
+STAYMANIC   4-cards in other major    (because  Opps suit) 
+
+^finterest in both majors if opps suit is a minor  
+|
+pg| ***** 16 ***** |
+
+
+nt|^z@3^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|All Lines     ^i{ N }|cs|f|at|{@C@D}|cs|i|at|{@H}|cs|f|at|{@S}|cs|k|at|{ N }|cs|e|at|{@C}|cs|f|at|{@D@H@S}|cs||at|{ N }
+|cp||fp||at|^c@2^^|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at| ^k      (intv)  |
+ht|k|fp|t-title|at|^n ^*bSlow^*n ^pLebensohl |fp||at||fp||at|^^|
+ht|l|fp|z|at|^^^^^^^^|fp||
+at|^e@2   3 No Trumps
+^^
+^*bShows^*n (promises) a stop in Opps suit  (because SLOW)
+^^
+^*bNot^*n  STAYMANIC   no major interest     (because  NT  ^*bnot^*n  Opps suit) 
+|
+pg| ***** 17 ***** |
+
+
+-----------------------------------------------------------------------------------------------
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,wide|
+nt|^z@3^b@2|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class               Standard  Lebensohl^*n^-^^|cs||fp||cp||at|^^|
+
+ht|f|
+cp|red|at|^*bOliverC:^*n|cp||at|  Hi Everyone and welcome to today's session.
+
+What, you might ask, has Lebensohl got to do with Precision? Well the short answer is absolutely nothing, but it is one of the most useful bidding concepts I have ever come across and will benefit you in any system.
+
+I can't stress this enough, and I really would recommend that you put some time and effort in with your regular partner(s) to include Lebensohl in your armoury of bids, and to explore how else you can use it to bring more precision and scope to your bidding, whatever system you are playing.
+
+Especially: If you are seriously wanting to learn Precision, and especially if you're intent on learning my brand of Precision during these sessions, then you really need to study Lebensohl (and Transfer Lebensohl) as the system makes extensive use of both, not just in 1NT sequences but in many other situations as well.
+
+For anyone else expecting a "voice" lesson, I use the Windows BBO Client for teaching, and so no voice capability.
+
+Please take a look at the notes I have prepared on Lebensohl.
+
+
+The main notes on Lebensohl can be found at:^p^*h http://ocp.pigpen.org.uk/Leb.php ^*n
+
+Lebensohl is also presented on the 1NT page at: ^p^*h http://ocp.pigpen.org.uk/1n.php ^*n
+
+The word version of the Lebensohl document is available at: ^*h http://ocp.pigpen.org.uk/docs/Lebensohl.doc ^*n
+
+Other articles on the subject can be found at: ^p^*h http://ocp.pigpen.org.uk/Articles.php ^*n^*n
+|
+pg| ***** 18 ***** |
+
+
+nt|^z@3^b@2|at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Though this session is very definitely NOT Precision-specific, the prepared hands assume the use of a variable (10-12 nv and 13-15 v) Opening No Trump.
+
+That is all you need to know about my Precision System for tonight's lesson.
+
+I have to say, this is one of my favourite sessions on the whole year-long course.   :)
+
+
+|fp|t-title|at|Standard Lebensohl|fp||at|
+
+Lebensohl is arguably one of the greatest bidding concepts ever devised.
+
+That's a bold claim to make but one I'm confident of.
+
+There are few top pairs who do not employ devices derived from the Lebensohl concept or Lebensohl itself in multiple places in their system.
+
+The real origins of the device are murky, but it was first described by George Boehm in 1970 (The Wikipedia entry for Lebensohl  ^*h http://wikipedia.org/wiki/Lebensohl ^*n  is interesting if you want more detail).
+
+At its simplest, the Lebensohl Convention is just a special kind of transfer.
+
+The "classic" place where Lebensohl is used is when your side has opened 1NT and the opponents intervene immediately over the 1NT Opening with a 2-level suit overcall.   eg:  1NT - (2x) - ^*b?^*n
+
+This sort of interference creates problems for responder because it is often difficult for them to enter the bidding if they have a hand that simply wants to compete (or difficult to force if you play a simple new suit by Responder as competitive).
+|
+pg| ***** 19 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 1,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 1|sv|-|sk|e|sk||
+%% 3SK743HQ5D3CAJ9742,SQJ8HAKJ94DAT64C5,ST95HT3DQ9752CQ86,SA62H8762DKJ8CKT3
+md|3,SQJ8HAKJ94DAT64C5,,SA62H8762DKJ8CKT3|
+nt|^z@3^b@2|at|
+|cp|red|at|^*bOliverC:^*n|cp||at|  Teach 1    |
+mb|p?|
+pg| ***** 20 ***** |
+
+
+mb|1n|an|10-12|
+pg| ***** 21 ***** |
+
+
+sj|L|
+mb|2s|an|@s Spades and a minor|
+pg| ***** 22 ***** |
+
+
+sj|L|
+mb|?|
+at|Here West has a game-forcing hand.
+^^Sitting West, if you have an essentially weak (6-7 points) hand with long hearts you have a problem, because most pairs would treat  1NT - (2@S) - 3@H  as FORCING.
+
+(If 3@H is NOT forcing, then you would have a problem with a strong hand potentially interested in slam).
+|
+pg| ***** 23 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  So if 3@H is FORCING, then we're fine on THIS layout, but if West merely wanted to compete, they'd have a problem.
+
+Similarly, if you play that 3@H here would be merely competitive, then West WOULD have a problem here, because they want to force.
+
+You cannot normally have it both ways unless you are using Lebensohl.
+
+The basic idea behind Lebensohl is, like most things, very simple: You give up the ability to bid 2NT as a NATURAL raise in this kind of sequence and instead use 2NT as a kind of transfer.
+
+With Lebensohl, the sequence   1NT - (2x) - 2NT   says  "Please bid 3@C".
+
+It doesn't say ANYTHING about Clubs (or indeed anything about anything else at this stage).
+
+The effect of this is to create 2 kinds of sequences -
+
+^e those   that   use  the   ^j 2NT - 3@C   relay    ^nare called  ^*bSLOW^*n  sequences, and those 
+^e that DO NOT use           ^j 2NT - 3@C            ^nare called   ^*bFAST^*n   sequences.
+
+So using Lebensohl,   ^g1NT - 2@d - 2NT - 3@c - 3@h     is referred to as a   SLOW  3@H
+whereas               ^g1NT - 2@d     ^k    - 3@h      is referred to as a   FAST  3@H
+
+
+Most of you will already be using transfers, so this kind of concept is nothing horrendously new.
+
+Indeed those of you that were here for the Session on 1@H and 1@S openings recently may remember I outlined Romex Trial Bids.
+
+These also are an extension of the Lebensohl concept to create "fast" sequences that are long-suit or help-suit trial bids, and "slow" sequences which are used to show short-suit trial bids.
+|
+pg| ***** 24 ***** |
+
+
+st||
+nt|^z@3^b@2|at|^^MrsD12345:  Alerting?|
+pg| ***** 25 ***** |
+
+
+mb|2N|an|Leb, forces 3@C|
+pg| ***** 26 ***** |
+
+
+sj|cS|
+mb|p3c|an|forced|
+pg| ***** 27 ***** |
+
+
+at|         |
+cp|red|at|^*bOliverC:^*n|cp||at|   When playing Lebensohl, you need to alert almost everything 
+^r    apart from  "fast"  new suit bids.   
+
+The reason that "fast" new suit bids don't need to be alerted is that (1) they're essentially natural and (2) almost everyone would expect them to be forcing, even in the absence of Lebensohl.  
+
+However the 2NT bid and forced  3@C  response definitely need to be alerted.
+|
+pg| ***** 28 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Today we are going to concentrate on the Lebensohl sequences that occur when we have opened 1NT and opponents have interfered at the 2-level.  
+
+The special bid, remember, is  2NT  which simply tells partner to bid 3@C.|
+pg| ***** 29 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Before we start on specifics let me confess that my system does not actually use "standard" Lebensohl in these kind of sequences.   1NT - (2x) - ???
+
+Instead we use TRANSFER LEBENSOHL in which the FAST bids from 3@C up to and including 3@S are ALL Transfer to the next suit. 
+
+^*bMM:^*n  We will return to this hand later.
+|
+pg| ***** 30 ***** |
+
+
+qx|Rel,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Standard ^d     Lebensohl           ^i Relay  -  The Basic Idea|fp||at||
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  The basic idea behind Lebensohl is, like most things, very simple:   You give up the ability to bid 2NT as a NATURAL raise in this kind of sequence and instead use 2NT as a kind of transfer.
+
+With Lebensohl, the sequence   1NT - (2x) - 2NT   says   "Please bid 3@C".
+
+It doesn't say ANYTHING about Clubs (or indeed anything about anything else at this stage).
+
+The effect of this is to create 2 kinds of sequences -
+
+^e those   that   use  the   ^j 2NT - 3@C   relay    ^n are called  ^*bSLOW^*n  sequences, and those 
+^e that  DO NOT  use         ^j 2NT - 3@C            ^n are called   ^*bFAST^*n   sequences.
+
+So using Lebensohl,   ^g1NT - 2@d - 2NT - 3@c - 3@h     is referred to as a   SLOW  3@H
+whereas               ^g1NT - 2@d     ^k    - 3@h      is referred to as a   FAST  3@H
+^^
+in  |fp|t-title|at|^*bStandard^*n|fp|t-title|cp|green|at|@.|cp||fp||at|^e       |fp|t-title|at|Lebensohl|fp||at| all suit bids both FAST and SLOW (including cue bids) mean the suit that is bid. 
+
+|ht|z|n#|e|at|^c|
+fp|t-title|cp|green|at|@.|cp||fp||at| Marks the difference between  Standard  and  Transfer  Leb.     ^q^*gRel:Transfer Leb,|fp|t|at|Click HERE to see the other^*n|
+pg| ***** 31 ***** |
+
+
+qx|F-S,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Standard ^d     Lebensohl           ^i Fast - Slow   Meanings|fp||at||
+at|^^^^^^|
+
+cp|red|at|^*bOliverC:^*n|cp||at| The core of   ^*bStandard^*n ^i Lebensohl  is that   -      All ^*bFast^*n suit bids are  ^*bForcing^*n|fp|t-title|cp|green|at|@.|cp||fp||at|
+
+Put more correctly,  the FAST bids from  3@C  up to and including  3@S  are ALL  ^*bForcing^*n|fp|t-title|cp|green|at|@.|cp||fp||at|  and therefore strong.
+^^
+
+|fp|t-title|at|Standard ^d     Lebensohl          |fp||at|
+
+^*bDouble^*n                                             ^m PENALTIES      ^q  eg:    1NT - (2@D) - ^*bX^*n
+|n#|2|at|
+^*bSuits^*n bid at the  ^*b2 Level^*n  are always merely   ^m COMPETITIVE,   ^q  eg:    1NT - (2@D) - 2@H
+                                                         ^m       (weak)
+|n#|2|at|
+|cp|dg|at|^*b3 Level^*n  Suit bids|cp||at|
+|n#|2|at|
+^*bSLOW^*n, if the suit could  ^*bNOT^*n  have been bid at the  
+  2-level competitively then the eventual 3@H bid is     ^m COMPETITIVE|fp|t-title|cp|gr|at|@.|cp||fp||at|  ^q  eg:    1NT - (2@S) - 2NT - 3@C - 3@H  
+                                                         ^m       (weak)
+^*bSLOW^*n, if the suit could have been bid at the        
+  2-level competitively then the eventual 3@H bid is     ^m INVITATIONAL,  ^q  eg:    1NT - (2@D) - 2NT - 3@C - 3@H 
+
+^*bFAST^*n  bids of a new suit at the 3-level  are                         ^q  eg:    1NT - (2@d) - 3@H
+  as they would be if you weren't using Lebensohl.       ^m  FORCING|fp|t-title|cp|gr|at|@.|cp||fp||at|       ^q           1NT - (2@s) - 3@H 
+                                                         ^m     (strong)
+
+|ht|z|n#|e|at|^c|
+fp|t-title|cp|green|at|@.|cp||fp||at| Marks the difference between  Standard  and  Transfer  Leb.     ^q^*gF-S:Transfer Leb,|fp|t|at|Click HERE to see the other^*n|
+pg| ***** 32 ***** |
+
+
+qx|Cue,wide|
+bt||
+nt|^z@3^b@2|
+at|^^^^|
+fp|t-title|at|Standard ^d     Lebensohl        ^i Cue bid of Opponents Suit|fp||at||
+at|^^^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  A slow  (via 2N - 3@c)  bid of their suit  is a cue bid of their suit.
+^^^d A fast bid of their suit  is a cue bid of their suit.|fp|t-title|cp|green|at|@.|cp||fp||at|
+^^^^^^|
+fp|t-title|at|A  ^*bcue-bid^*n  of the  ^*bopponents suit^*n       is  ^*bStaymanic^*n|fp||
+n#|9|at|
+Lebensohl uses a cue-bid of the opponents' suit as Staymanic (ie: showing interest in an unbid Major suit).
+^^^^|n#|5|
+fp|t-title|at|A  ^*bcue-bid^*n  of the  ^*bopponents suit^*n        SHOWS   or   DENIES     a   ^*bStop^*n|fp||
+n#|9|at|
+^cA  SLOW  cue-bid  (going via 2NT - 3@C)   SHOWS   a stop in their suit.
+|n^|9|at|
+^cA  FAST   ^f      |fp|t-title|cp|green|at|@.|cp||fp||at| ^g    cue-bid of their suit   DENIES   having a stop.
+
+^^
+memory aid    ^h|fp|t-title|at| ^*bSlow  SHOWS       Fast DENIES^*n|fp||at|
+^^
+1NT - (2@S) - 2NT - 3@C - 3@s ^i    shows  4 card @H's,  values for 3NT  and  SHOWS   a  @s  stop.
+|n^|5|at|
+1NT - (2@S)    ^f       - 3@s|fp|t-title|cp|green|at|@.|cp||fp||at| ^i    shows  4 card @h's,  values for 3NT  and  DENIES   a  @s  stop.
+
+|ht|z|n#|e|at|^c|
+fp|t-title|cp|green|at|@.|cp||fp||at| Marks the difference between  Standard  and  Transfer  Leb.     ^q^*gCue:Transfer Leb|fp|t|at|Click HERE to see the other^*n|
+pg| ***** 33 ***** |
+
+
+qx|3NT,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Standard ^d     Lebensohl            ^i Slow and Fast bids of 3NT|fp||at|^^^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  The next thing is Slow and Fast bids of 3NT.
+
+The meaning of slow and fast bids of 3NT are the same for both Standard and Transfer Lebensohl.
+^^
+A  SLOW   3NT shows values for 3NT, DENIES a 4-card major (because you didn't cue their suit instead),
+and   SHOWS   (promises)  a stop in their suit.
+
+^h eg:    1NT  -  (2@D)  -  2NT  -  3@C  -  3NT   ^s(Slow SHOWS)
+
+
+A  FAST  3NT shows values for 3NT, DENIES an unbid 4-card major (because you didn't cue their suit),
+and   DENIES   a stop in their suit.
+
+^h eg:     1NT  -  (2@H) ^n         - 3NT      ^s(Fast DENIES),
+
+|n#|9|fp|t-title|at|Clubs|fp||fp|t-title|cp|green|at|@.|cp||fp||n#|5|at|
+The  ^*bClub^*n  suit is always something of a problem for Lebensohl.
+
+If Opps overcall  2@C  over 1NT, then you ONLY have a FAST cue-bid available,  because after   2NT  -  3@C  
+the only  @c  bid below 3NT has been taken by that very sequence.
+
+In these circumstances the FAST cue says NOTHING about the presence or absence of a Club stop but just shows interest in the Majors.
+
+|ht|z|n#|e|at|^c|
+fp|t-title|cp|green|at|@.|cp||fp||at| Marks the difference between  Standard  and  Transfer  Leb.     ^q^*g3NT:Transfer Leb|fp|t|at|Click HERE to see the other^*n|
+pg| ***** 34 ***** |
+
+
+qx||
+st||
+ub|4|
+mb|2c|an|@s Spades and a minor|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Returning to the earlier hand  -  Teach 1.      (This time with South bidding   2@c  to show @s's + a minor)|
+Lg|j|at|  
+So if we just wanted to JUST show 5+ @H we could  COMPETE  at the 2-level over 2@C with 2@h.  
+So if West  were to  bid  2@h   here it would be  ONLY  competitive (ie: East would pass it)
+|
+pg| ***** 35 ***** |
+
+
+mb|3h|
+at|The  FAST  3@H  (such as West's actual hand) is still forcing, just like it was over  1NT - (2@S)
+and the  SLOW  3@H      1NT - (2@c) - 2NT - 3@C - 3@H      would be invitational.|
+pg| ***** 36 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Playing "standard Lebensohl", we can only make an invitational bid at the 3-level when OUR suit is higher-ranking than the suit overcalled.
+
+So if YOUR suit is higher-ranking than theirs (ie: you can bid your suit at the 2-level over their overcall), then the 2-level bid is just competitive and a slow bid of your suit at the 3-level is invitational.
+
+If, however, their suit is higher-ranking than yours, then the slow sequence is just competitive and you effectively "lose" the ability to show an invitational hand.
+
+This is one of the limitations of "standard" Lebensohl.
+
+It is the main area in which TRANSFER LEBENSOHL benefits over normal Lebensohl.
+
+That is something we'll be looking at next week, but you need to understand the basic concept first and you will find many more people (unfortunately) who play Lebensohl, but not Transfer Lebensohl.
+
+You might think it odd that that I'm showing you normal Lebensohl when I am actually suggesting you use Transfer Lebensohl instead.
+
+This system, however, also makes extensive use of normal Lebensohl as well as Transfer Lebensohl, so you need to know BOTH methods.
+
+As more people play normal Leb rather than Transfer Leb, you definitely need to get "normal" Leb under your belt first.
+
+Lastly, worth noting in passing that Transfer Lebensohl is NOT the same thing as Rubensohl.
+
+Rubensohl and Transfer Lebensohl are SIMILAR, but there are subtle (but critical) differences between them. Those who want more detail should see the^*h http://ocp.pigpen.org.uk/Leb.php##XferLeb ^*n Transfer Leb notes^*x.
+
+I make no particular claim as to which is "better", but I prefer Transfer Leb.|
+pg| ***** 37 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 2,thin|
+st||
+nt|^z@3^b@2|at|^^|
+pn|South,West,North,East|rh||ah|Teach 2|sv|b|sk|n|sk||
+%% 3S982H7DAT9732CJT3,SQ64HT42DK6C98652,SKJT7HA95DQJ84CA4,SA53HKQJ863D5CKQ7
+md|3S982H7DAT9732CJT3,,SKJT7HA95DQJ84CA4,|
+mb|?|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 2     Let's look at a few examples of what we've covered thus far.  |
+pg| ***** 38 ***** |
+
+
+mb|1n|an|13-15|
+pg| ***** 39 ***** |
+
+
+sj|L|
+mb|2h|an|natural suit 5+|
+pg| ***** 40 ***** |
+
+
+sj|L|
+mb|?|
+at|^^^^So here's a hand on which South just wants to compete in Diamonds.
+
+In the absence of Lebensohl, they'd struggle to do so, because a "fast"  3@D  would be FORCING not competitive.|
+pg| ***** 41 ***** |
+
+
+mb|2N|an|Leb, forces 3@C|
+pg| ***** 42 ***** |
+
+
+sj|c|
+mb|p3c|an|forced|
+pg| ***** 43 ***** |
+
+
+sj|c|
+mb|p3d|an|COMPETITIVE|
+pg| ***** 44 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  From here it doesn't really matter what happens.
+
+The point is that South has managed to get their hand off their chest.|
+pg| ***** 45 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+md|0S982H7DAT9732CJT3,0SQ64HT42DK6C98652,0SKJT7HA95DQJ84CA4,0SA53HKQJ863D5CKQ7|
+cp|red|at|^*bOliverC:^*n|cp||at|  3@H by EW is probably going off but 2@H would be making.  3@D is probably making 9 or 10 tricks.
+
+Without Lebensohl, South would have little alternative but to pass over 2@H
+
+
+Any questions?|
+pg| ***** 46 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 3,thin|
+pn|South,West,North,East|rh||ah|Teach 3|sv|n|sk|e|sk||
+nt|^z@3^b@2|at|^^|
+%% 4S3HJ73DA5CKQJ8762,SAK9642HKQ5DKQ2C5,ST85H862D9863CT94,SQJ7HAT94DJT74CA3
+md|4,SAK9642HKQ5DKQ2C5,,SQJ7HAT94DJT74CA3|
+mb|?|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 3     Here West has a lovely 17-count and a singleton Club, so they want to FORCE.
+
+East is maximum for their  1NT.|
+pg| ***** 47 ***** |
+
+
+mb|1n|an|10-12|
+pg| ***** 48 ***** |
+
+
+sj|L|
+mb|2c|an|natural suit 5+|
+pg| ***** 49 ***** |
+
+
+sj|L|
+mb|3S|an|GF with 5+ @S|
+pg| ***** 50 ***** |
+
+
+sj|c|
+mb|p|mb|4C|an|cue, @c control   agreeing @S|
+pg| ***** 51 ***** |
+
+
+sj|c|
+mb|p|mb|4D|an|cue|
+pg| ***** 52 ***** |
+
+
+sj|c|
+mb|p|mb|4H|an|cue|
+pg| ***** 53 ***** |
+
+
+sj|c|
+mb|p|mb|4N|an|0314|
+pg| ***** 54 ***** |
+
+
+sj|c|
+mb|p|mb|5S|an|2 + Q@S|
+pg| ***** 55 ***** |
+
+
+sj|c|
+mb|p|mb|6S|
+pg| ***** 56 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 57 ***** |
+
+
+at|        So here we saw a FAST 3@S over 2@C, game-forcing.
+^^^^Any questions?|
+pg| ***** 58 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 4,thin|
+pn|South,West,North,East|rh||ah|Teach 4|sv|-|sk|w|sk||
+%% 1S87HQ865D953CKJ62,SQ32HAT97DK2CQ983,SA5HK4DQJT8764C75,SKJT964HJ32DACAT4
+md|1,SQ32HAT97DK2CQ983,,SKJT964HJ32DACAT4|
+mb|p?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 4     |
+pg| ***** 59 ***** |
+
+
+mb|1N|an|10-12|
+pg| ***** 60 ***** |
+
+
+sj|L|
+mb|2D|an|natural suit 5+|
+pg| ***** 61 ***** |
+
+
+mb|?|
+at|  Here East has a nice hand.
+^^But partner might have a miserable 10-count and no good @S fit,  so East wants to INVITE.
+^^(Fortunately their @S are high-ranking than North's @d's)|
+pg| ***** 62 ***** |
+
+
+sj|L|
+mb|2N|an|Leb, forces 3@C|
+pg| ***** 63 ***** |
+
+
+sj|c|
+mb|p|mb|3C|an|forced|
+pg| ***** 64 ***** |
+
+
+sj|c|
+mb|p|mb|3S|an|INVITATIONAL with 5+ @S|
+pg| ***** 65 ***** |
+
+
+sj|c|
+mb|p|mb|4S|
+pg| ***** 66 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 67 ***** |
+
+
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  West has a clear accept.|
+pg| ***** 68 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Okay, we've covered the simple aspects of Lebensohl, and really, it is that simple when you have an unbalanced hand with a 5-card or longer suit and want to compete, invite when the opportunity permits, or force to game.
+|n^|5|at|
+It's not always that easy, however. Sometimes you may have the values to bid but no 5-card or longer suit to show.
+|n^|5|at|
+Suppose the bidding goes  1NT - (2@S) - ?  and you have a hand with values to bid 3NT, but you have a 4-card heart suit.
+|n^|5|at|
+Normally, of course, you would bid Stayman en route to 3NT in case partner also has 4-card Hearts, but the 2@S overcall has robbed you of that opportunity.
+|n^|5|at|
+Despair not, because Lebensohl (for the most part) also solves that problem, 
+|n^|3|cp|gr|at|^s (below is repeated from earlier)|cp||at|
+
+|fp|t-title|at|A  ^*bcue-bid^*n  of the  ^*bopponents suit^*n       is  ^*bStaymanic^*n|fp||
+n#|9|at|
+Lebensohl uses a cue-bid of the opponents' suit as Staymanic (ie: showing interest in an unbid Major suit).
+^^^^|n#|5|
+fp|t-title|at|A  ^*bcue-bid^*n  of the  ^*bopponents suit^*n        SHOWS   or   DENIES     a   ^*bStop^*n|fp||
+n#|9|at|
+A FAST cue-bid of their suit  DENIES  having a stop in their suit, while a   SLOW   cue-bid 
+^n  (via  2NT - 3@C)  SHOWS  (promises) such a stop.
+
+
+memory aid    ^h|fp|t-title|at| ^*bSlow  SHOWS       Fast DENIES^*n|fp||at|
+
+
+Thus  1NT - (2@S) - 2NT - 3@C - 3@s  shows 4-card Hearts, values for 3NT, and  SHOWS   a Spade stop
+|n^|5|at|
+and    1NT - (2@S)                    - 3@s  shows 4-card Hearts, values for 3NT, and   DENIES   a Spade stop|
+pg| ***** 69 ***** |
+
+
+nt|^z@3^b@2|at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  So knowing whether or not you have a stop in their suit and whether or not they have support for the Major you're showing, partner is fairly well placed to decide where to play the hand.
+
+If the opponents intervene in a Minor suit, then it can be a matter of partnership agreement as to whether responder promises both Major suits with a Cue-bid, or guarantees only one 4-card Major.
+
+eg: 1NT - (2@D) - 3@D |cp|gr|at|^s (below is repeated from earlier)|cp||at|
+
+I prefer that it only GUARANTEES one Major (but might have both).  I tend to play that when denying a stop in their suit, by making a FAST cue-bid, I am more likely to have BOTH unbid Majors. 
+
+So    1NT - (2@D) ^j   - 3@D   is denying a  @D  stop and so probably has BOTH Majors, 
+but   1NT - (2@D) - 2NT(Leb) - 3@C(forced) - 3@D   is  PROMISING (showing) a  @D  stop and now might only have
+^k     ONE 4-card Major.             (SLOW SHOWS    -    FAST DENIES)
+
+You might think you could play this the other way around, but there is a very good reason why not: If you HAVE a stop in their suit and move to make a SLOW cue of their suit, you cannot be pre-empted by them, since you can always show your hand (by doubling their 3-level bid or bidding 3NT).  If you do it the other way around then after their 3-level pre-empt you are stuck.
+
+
+The  ^*bClub^*n  suit is always something of a problem for Lebensohl.
+
+If Opps overcall  2@C  over 1NT, then you ONLY have a FAST cue-bid available,  because after   2NT  -  3@C  
+the only  @c  bid below 3NT has been taken by that very sequence.
+
+In these circumstances the FAST cue says NOTHING about the presence or absence of a Club stop but just shows interest in the Majors.
+
+You will see from the section on Staymanic bids (and what's coming next) that Lebensohl also solves the problem where opponents overcall and you have the values for 3NT, but no stop in their suit.
+|
+pg| ***** 70 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 5,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 5|sv|e|sk|w|sk||
+%% 2S65H86DAT73C98754,SQ832HA74DKJ9CAJT,ST97HKQJT93D62CK6,SAKJ4H52DQ854CQ32
+md|2,SQ832HA74DKJ9CAJT,,SAKJ4H52DQ854CQ32|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 5    |
+pg| ***** 71 ***** |
+
+
+mb|1N|an|13-15|
+pg| ***** 72 ***** |
+
+
+sj|L|
+mb|2H|an|natural suit 5+|
+pg| ***** 73 ***** |
+
+
+sj|L|
+mb|3H|an|GF, no @H stop, 4-card @S|
+pg| ***** 74 ***** |
+
+
+at|East is (1) showing the values for 3NT, (2) DENYING a @H stop and (3) promising 4-card @S.|
+pg| ***** 75 ***** |
+
+
+sj|c|
+mb|p|mb|3S|an|Upper range|
+pg| ***** 76 ***** |
+
+
+at|^^^^You might think  3@S  would be showing a lower-range hand, but  3@H  is game-forcing, and so the "principle of fast arrival" applies so  4@S  is WEAKER than  3@S. |
+pg| ***** 77 ***** |
+
+
+sj|c|
+mb|p|mb|4S|
+pg| ***** 78 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^East has no interest past game and so just signs off.|
+pg| ***** 79 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 6,thin|
+pn|South,West,North,East|rh||ah|Teach 6|sv|n|sk|n|sk||
+%% 3SKJ9HAQ95DJ4CJT93,S54H7432DT852CQ64,S73HKT8DAKQ93CK82,SAQT862HJ6D76CA75
+md|3SKJ9HAQ95DJ4CJT93,,S73HKT8DAKQ93CK82,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 6    |
+pg| ***** 80 ***** |
+
+
+mb|1N|an|13-15|
+pg| ***** 81 ***** |
+
+
+sj|L|
+mb|2S|
+pg| ***** 82 ***** |
+
+
+sj|L|
+mb|?|
+at|     Here, South wants to show their 4-card @H, but also has a decent holding in @S, so...
+|
+pg| ***** 83 ***** |
+
+
+mb|2N|an|Leb, forces 3@C|
+pg| ***** 84 ***** |
+
+
+sj|c|
+mb|p|mb|3C|an|forced|
+pg| ***** 85 ***** |
+
+
+mb|p|mb|3S|an|GF,  @S stop,  4-card @H|
+pg| ***** 86 ***** |
+
+
+mb|p|mb|3N|
+pg| ***** 87 ***** |
+
+
+mb|pp|
+at|^^Here, it should not matter what North feels about the @S suit.   But some North's could choose to limp into 4@D.
+
+If North doesn't want to take a chance on 3NT, despite South's @S stop, North knows they haven't got 4-card @H support, but they might decide to play in 4@H nonetheless on the known Moysian fit.   Even 5@D or 5@C is playable. |
+pg| ***** 88 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+at|Isabelle10:  is the Staymanic cue-bid always GF.
+ 
+|cp|red|at|^*bOliverC:^*n|cp||at|  The Staymanic cue-bid is NORMALLY game-forcing, but there is scope to stop short of game when Responder DENIES a stop in their suit, we have no fit for either Major, Opener doesn't have a decent stop in their suit either, and we limp to 4 of a Minor.
+
+I alert the cue-bid as game-forcing, but that's not a suicide pact.  :)|
+pg| ***** 89 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  So suppose here South might decide to pass 4@D.  In truth, though, these kinds of sequences are pretty rare when Responder has PROMISED a stop in their suit.
+
+More common is when Responder denies a stop in their suit and Opener only has something like Qxx in their suit. 
+
+Any questions or comments?|
+pg| ***** 90 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+
+fp|t-title|at|Slow and Fast  bids of 3NT |fp||at| ^n |cp|gr|at|(repeated from earlier)|cp||at|^^^^|
+
+cp|red|at|^*bOliverC:^*n|cp||at|  The next thing is Slow and Fast bids of 3NT.
+
+
+As you might imagine, 
+
+
+A  SLOW   3NT shows values for 3NT, DENIES a 4-card major (because you didn't cue their suit instead),
+and   SHOWS   (promises)  a stop in their suit.
+
+^heg:    1NT - (2@D) - 2NT - 3@C - 3NT  ^s(Slow SHOWS)
+
+
+A  FAST  3NT shows values for 3NT, DENIES an unbid 4-card major (because you didn't cue their suit),
+and   DENIES   a stop in their suit.
+
+^heg:     1NT -  (2@H) ^m     - 3NT      ^s(Fast DENIES),|
+pg| ***** 91 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 7,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 7|sv|-|sk|e|sk||
+%% 4SKQT952H53D92CAK2,S76HAK2DAKJ643C75,S43HJT96DT85C9864,SAJ8HQ874DQ7CQJT3
+md|4,S76HAK2DAKJ643C75,,SAJ8HQ874DQ7CQJT3|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 7   |
+pg| ***** 92 ***** |
+
+
+mb|1N|an|10-12|
+pg| ***** 93 ***** |
+
+
+sj|L|
+mb|2S|
+pg| ***** 94 ***** |
+
+
+sj|L|
+mb|?|
+at|    West has a lovely hand.|
+pg| ***** 95 ***** |
+
+
+mb|3d|an|GF with 5+ @D|
+at|      She could FORCE with 3@D|
+pg| ***** 96 ***** |
+
+
+ub||mb|?|at|           ^*bOR^*n|
+pg| ***** 97 ***** |
+
+
+at|^^^^She might just bid a  FAST  3NT, DENYING a @S stop, DENYING having 4-card @H, but showing the values for 3NT
+
+... and leave it up to East to decide whether to play there or not.|
+ 
+mb|3N|an|GF, No 4-card @H, No @S stop|
+pg| ***** 98 ***** |
+
+
+mb|pp|
+at|^^^^Any questions ?|
+pg| ***** 99 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 8,thin|
+pn|South,West,North,East|rh||ah|Teach 8|sv|n|sk|s|sk||
+%% 1SKJ97HQT52DA8CA95,SAQ83H83DKJ7652CT,STHAJ4DQT9CKQJ872,S6542HK976D43C643
+md|1SKJ97HQT52DA8CA95,,STHAJ4DQT9CKQJ872,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 8   |
+pg| ***** 100 ***** |
+
+
+mb|1N|an|13-15|
+pg| ***** 101 ***** |
+
+
+sj|L|
+mb|2D|
+pg| ***** 102 ***** |
+
+
+sj|L|
+mb|2N|an|Leb, forces 3@C|
+pg| ***** 103 ***** |
+
+
+sj|c|
+mb|p|mb|3C|an|forced|
+pg| ***** 104 ***** |
+
+
+sj|c|
+mb|p|mb|3n|an|GF, No Maj interest, @D stop|
+pg| ***** 105 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 106 ***** |
+
+
+at|       South happy to play in 3NT knowing that North has help in @D.|
+pg| ***** 107 ***** |
+
+
+at|^^^^^^Any questions or comments on what we've covered so far ?
+|
+pg| ***** 108 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|When we Double|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Lastly, a double is unequivocably for PENALTIES      eg.  1NT - (2@S) - X 
+
+Most often based on a trump stack but in a hand not containing game-going values (or in cases where the vulnerability makes a penalty a better bet - green against red) otherwise a SLOW 3NT more likely.
+
+A Double is often indicative of a hand that would LIKE to bid a natural 2NT.
+
+So if Opener is MAXIMUM and the bidding starts 1NT - (2x) - X,  they might well -
+
+^c bid 3NT at UNFAVOURABLE vulnerability, 
+
+^c but leave the double in at FAVOURABLE vulnerability.|
+pg| ***** 109 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 9,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 9|sv|e|sk|n|sk||
+%% 3SKJ3HAQ32DT983CA3,S65HJ86DK654C9875,S84HKT94DAQJ7CJT4,SAQT972H75D2CKQ62
+md|3SKJ3HAQ32DT983CA3,,S84HKT94DAQJ7CJT4,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 9   |
+pg| ***** 110 ***** |
+
+
+mb|1N|an|10-12|
+pg| ***** 111 ***** |
+
+
+sj|L|
+mb|2S|an|natural suit 5+|
+pg| ***** 112 ***** |
+
+
+sj|L|
+mb|2N|an|Leb, forces 3@C|
+pg| ***** 113 ***** |
+
+
+sj|c|
+mb|p|mb|3C|an|forced|
+pg| ***** 114 ***** |
+
+
+sj|L|
+mb|3S|
+pg| ***** 115 ***** |
+
+
+sj|L|
+mb|?|
+at|Here South has no problem.  If they were intending to rebid 3NT, they can still do so. 
+|
+pg| ***** 116 ***** |
+
+
+mb|D|an|see main text|
+at|
+If they were intending to cue-bid the @S suit, they merely double (a kind of "stolen bid" double).
+
+So here the double is effectively showing a hand that would have made a slow cue-bid of @S, so a @S stop, 4-card @H etc.   If North had better Spades and no 4-card @H support, they might leave the double in at this vulnerability.
+|
+pg| ***** 117 ***** |
+
+
+sj|c|
+mb|p|mb|4H|
+pg| ***** 118 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 119 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Standard Lebensohl  -  Summary|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  So what have we learned today?   Lebensohl uses 2NT as a special bid after  1NT - (2x) - ???
+
+It simply asks partner to bid 3@C.  Responder's hand type is only clarified with their rebid over 3@C.
+
+2NT of itself doesn't promise anything in particular
+
+2-level suit bids are always just "competitive".
+
+Bids at the 3-level are split into 2 types (Fast and Slow) depending on whether Responder uses the 2NT-3@C relay sequence or not.
+
+FAST bids of a new suit at the 3-level are always FORCING, whilst SLOW bids of a new suit are competitive (if Opps' suit higher ranking than ours) or invitational (if their suit is lower-ranking).
+
+Cue-bids of Opps' suit are always Staymanic, showing 4-card interest in any unbid Major(s).
+
+FAST cues deny a stop in Opp's suit and SLOW cues promise a stop.
+
+ANY cue of their suit promises game-going values.
+
+Bids of 3NT all show game-going values and deny 4-card interest in any unbid Majors.
+
+FAST 3NT bids DENY a stop in Opps' suit (often based on a long running Minor), whilst SLOW 3NT bids promise a stop in their suit.|
+pg| ***** 120 ***** |
+
+
+--------------------------------------------------------------------
+qx|Prac,wide|
+nt|^z@3^b@2|
+at|^^^^^^|
+fp|t-title|at|Practice Hands|fp||at|^^^^^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  We've time to practice a few hands .
+
+
+isabable: every one is spell bound dont forget johns practice same time as last week ok
+^^^^
+|cp|red|at|^*bOliverC:^*n|cp||at| 1 more victim please
+
+Please remember, 1NT is 10-12 nv and 13-15 vul for these hands
+
+There's a distinct LACK of alerting going on here :(
+
+
+rtogo: I didn't realize responder had to alert.
+
+
+|cp|red|at|^*bOliverC:^*n|cp||at| If you're playing Leb, 2NT and 3@C absolute MUST be alerted.
+
+You'll get ripped to shreds by a TD if you don't.|
+pg| ***** 121 ***** |
+
+
+------------------------------------------------------------------------------------------------  
+%% Alert Insert start --------------------------------------------------------------------------
+nt|^z@3^b@2|
+at|^^^^|
+%%   header box with text
+ht|b|cs|y|fp||at|^b{ ^^|
+ht|c|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^|fp|x-insertAlert|at|^- A small insert on Alerts^*n^-^^|cs||fp||cp||at|^^|
+
+ht|d|at|^^|
+cp||at|^*bMM:^*n|cp||at|  We all know we have to alert when playing  'proper'  bridge.
+
+The laws of the game say that what we have to put in the alert is  ^*b our agreement with partner ^*n about that bid.
+
+While creating these bridge movies, I have gone through and added to, or amended, many of the alerts that were in the original text.
+
+I have changed them from being ^*b REAL ^*n alerts, that you should give to real opponents, and have replaced them with ^*b STUDY ^*n alerts.   Study alerts are only useful to students of Oliver's Precision.  Of course in many cases no changes were needed.   For example    1@c     16+ Any dist except 16-23 4441
+
+It is particularly important that we make the alerts for  ^*b Asking bids and their responses^*n,  as clear as possible
+
+	    ^c ^*b Study Alert ^*n           ^i ^*b Real Alert ^*n                ^o ^*b It would be great if you could add ^*n
+     ^b      @-@-@-@-@-@-@-@-@-@- ^h       @-@-@-@-@-@-@-@-@-@-   ^n       @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-
+		^c Beta    Relay Beta ...          ^i Gen Ctrl Ask                    ^o A = 2,  K = 1 
+		^c Alpha                           ^i Asking  in                      ^o Trump ...
+		^c Gamma                           ^i Asking  in partners suit        ^o Trump ...
+		^c Epsilon                         ^i Specific Ctrl Ask               ^o in ... 
+		^c Hxx                             ^i Hxx                             ^o in ... 
+		^c none  or  1st & 2nd             ^i none  or  1st & 2nd             ^o [xxx, AKx(x)]
+		^c 3rd rd ctrl                     ^i 3rd rd ctrl                     ^o [xx, Qxx(x), Qx]
+		
+An easy mistake in reply to an Epsilon is when, say, you hold ^*b Q76 ^*n in the suit, and so give only ^*b Qxx ^*n in the alert.   THAT  IS  WRONG.  The agreement is ^*b 3rd round control ^*n and that is what should be told to the opps.   
+
+The ^*b ethical ^*n problem with telling too much to your opps is that it disadvantages the other pairs who will play your opponents cards.|
+%% Alert Insert End ----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------  
+pg| ***** 122 ***** |
+
+
+--------------------------------------------------------------------
+st||
+md|1,,,|sk|n|
+nt|^b@2^z@3|
+cp||at|^*bMM:^*n|cp||at|  ^*bPractice Hands  @-  How to^*n
+^^With all Practice Hands, when you see the |fp|g-graphSuit|cp||at|^*b ? ^*n|cp||fp||at| in the bidding area, please @- |cp|red|at|^*bStop^*n|cp||at| @- and think through your bid.
+If you can't work it out then the best thing is to do, is  @- go back and re-read that part of Oliver's lesson.|
+pg| ***** 123 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 1,thin|
+pn|Redbird44,GatorJim,rtogo,lute57|rh||ah|Practice 1|sv|-|sk|n|sk||
+%% 3SK96HKJ9DA9CAQ832,ST853H4D76543C964,SAQ42H87DKJT2CJT7,SJ7HAQT6532DQ8CK5
+md|3SK96HKJ9DA9CAQ832,,,|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 1   |
+pg| ***** 124 ***** |
+
+
+mb|1N|an|10-12|
+pg| ***** 125 ***** |
+
+
+sj|L|
+mb|2H|an|natural suit 5+|        
+pg| ***** 126 ***** |
+
+
+sj|L|
+mb|?|
+at|  It's the key moment  -  what is YOUR plan for bidding this hand ?  
+
+If you can't work it out go back and read the class again.|
+pg| ***** 127 ***** |
+
+
+mb|2N|an|Leb, forces 3@C| 
+pg| ***** 128 ***** |
+
+
+sj|c|
+mb|p|mb|3c|an|forced|
+pg| ***** 129 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 130 ***** |
+
+
+mb|3N|an|@h stop, NOT 4 @S|
+pg| ***** 131 ***** |
+
+
+sj|c|
+mb|pp|
+pg| ***** 132 ***** |
+
+
+sk||
+md|0,,SAQ42H87DKJT2CJT7,|
+pg| ***** 133 ***** |
+
+
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  The  SLOW   3NT   ^*bshows^*n  -
+^c@2
+a stop in Opps' suit and (of course) values for 3NT,
+
+while denying having 4 cards in the (or any) unbid Major, here @s's.|
+pg| ***** 134 ***** |
+
+
+md|1,,,|nt|^^^b cleared|
+pg| ***** 135 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2,wide|
+pn|Redbird44,GatorJim,rtogo,lute57|rh||ah|Practice 2|sv|n|sk|e|
+%% 4SKQT52DKQT87CJ93,S4HAJ9643D62CAK72,SJ96HK752DJ54C654,SA873HQT8DA93CQT8
+md|4,S4HAJ9643D62CAK72,,SA873HQT8DA93CQT8|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2   |
+pg| ***** 136 ***** |
+
+
+mb|1N|an|10-12|
+pg| ***** 137 ***** |
+
+
+sj|L|
+mb|2s|an|natural suit 5+|       
+pg| ***** 138 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 139 ***** |
+
+
+mb|2N|an|Leb, forces 3@C| 
+pg| ***** 140 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 141 ***** |
+
+
+mb|3c|an|forced|
+pg| ***** 142 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 143 ***** |
+
+
+mb|3h|an|5+@h Competitive|
+pg| ***** 144 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 145 ***** |
+
+
+mb|p|
+pg| ***** 146 ***** |
+
+
+sk||
+pg| ***** 147 ***** |
+
+
+at|  Man or mouse, West?    Nice 6-card suit and a singleton in  @S?     Great controls
+
+GatorJim:  def. mouse
+
+|cp|red|at|^*bOliverC:^*n|cp||at|   Well here West decided merely to compete in Hearts.    Personally I'd be bidding a FAST 3@H.
+|
+pg| ***** 148 ***** |
+
+
+md|1,,,|nt|^^^b cleared|
+pg| ***** 149 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 3,thin|
+pn|Redbird44,GatorJim,rtogo,lute57|rh||ah|Practice 3|sv|b|sk|s|
+%% 1SQJT3HK98DA863CA6,SK52HJ52D5CKQJT83,SA9HAT7643DQJ2C95,S8764HQDKT974C742
+md|1SQJT3HK98DA863CA6,,SA9HAT7643DQJ2C95,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 3   |
+pg| ***** 150 ***** |
+
+
+mb|1N|an|13-15|
+pg| ***** 151 ***** |
+
+
+sj|L|
+mb|2c|an|natural suit 5+|      
+pg| ***** 152 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 153 ***** |
+
+
+mb|2N|an|Leb, forces 3@C| 
+pg| ***** 154 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 155 ***** |
+
+
+mb|3c|an|forced|
+pg| ***** 156 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 157 ***** |
+
+
+mb|3h|an|5+@h Invitational|
+pg| ***** 158 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 159 ***** |
+
+
+mb|4h|
+pg| ***** 160 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 161 ***** |
+
+
+mb|p|
+pg| ***** 162 ***** |
+
+
+sk||
+pg| ***** 163 ***** |
+
+
+at|     On this hand because the @H suit is pretty ropey and they have no great shape
+
+the appropriate action is (as happened above) to invite with a SLOW 3@H,  so giving South the option.
+
+
+lute57:  3@H is invitational (NOT competitive) because Hearts were biddable as competitive at the 2-level.
+|
+pg| ***** 164 ***** |
+
+
+qx|end|
+bt||
+nt|^z@3^b@2|at|^^^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Okay, I think we can leave it there for now. I hope you've found this session useful and that it might prompt you to add Lebensohl to your arsenal.
+
+There are many other situations where you can use Lebensohl to advantage, and some variations on the basic scheme  (eg: Transfer Lebensohl).
+
+I can't cover these today, but my Website and the Notes you can download do cover them.
+
+Next week we will be covering  Transfer Lebensohl,  which overcomes one of the main difficulties with  "standard"  Lebensohl.
+
+Hope to see you then. 
+
+
+
+lute57:  Excellent lesson, Oliver - Godspeed!
+
+Isabelle10:  Great lesson, ty v much
+
+cafie: tyvm  great lesson
+
+lakewes:  great session, O.
+
+RogerPfi: thank you for the class Oliver
+
+rtogo: ty
+
+GatorJim:  Thanks Oliver
+

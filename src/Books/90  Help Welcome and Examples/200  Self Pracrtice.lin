@@ -1,0 +1,51 @@
+%% Dealing Scripts
+%% Last edited  2015  Oct 30
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+fh|150|fb|15|                1  large
+fh|240|fb|25|                2
+fh|342|fb|35|                3  med+
+fh|838|fb|85|                8  med  greater than 4 as it is in the 30 - 39 zone
+fh|s24|                      s  the word updated
+fh|v28|                      v  the little video button
+
+cr|2200|cg|2060|cb|2255|     2  purple
+cr|3200|cg|3255|cb|3255|     3  light blue
+cr|4170|cg|4190|cb|4255|     4  medium blue
+cr|5016|cg|5128|cb|5016|     5  green 
+cr|7255|cg|7000|cb|7255|     7  
+
+bt||
+
+mn|How to  -  Self Practice|
+
+fp|1|at|^^^^^a   @s @h @d @c  ^v     @c @d @h @s|
+fp||
+at|^b@2^z@3|
+ht|f|n^|5||Lg|f|
+at|
+^c@2^cThe next page is about using  ^*bDealer Scripts^*n.  This page is about getting the advantages of using dealer scripts without actually using them.
+|n^|9|at|
+^dFrom the  menubar  to go to      ^l      BooksL       >      System  -  Self Practice
+|n^|9|at|
+this is a list collection of pre-generated deals that you can    ^*bSelf bid^*n   and   ^*bSelf play^*n
+|n^|7|at|
+The document describing how best to use the feature is called
+
+|n#|0|fp|8|at|^f ^*bSelf Practice with aaBridge^*n|fp||at|
+^d also  ^f   ^*nSelf Practice example deals.zip^*c            is provided for conversion and upload to BBO.
+    
+These files are part of the  ^*b  aaBridge Document Collection   ^*n  which is a package of  mainly .doc  format documents.      To get a copy of the collection put on to your desktop -
+^c|n#|a||cp|8|at|^*bClick^*n|cp||at|  on the long thin 'button' below - ^b@2^s@3
+|n^|4|fp|8|cs|3|at|
+|fp||at| ^-{ |n#|4|at|^*f copyFolder_Doc_Collection, Copy the     aaBridge - Doc Collection    to your Desktop ^*n  |n^|a|at|^^
+}^-  |cs||fp||at|@1
+^cthe folder          ^*baaBridge - Doc Collection^*n       will now be on your desktop.|
+
+
+
+|
+ht|y|at|@0
+^q Roger Pfister       August  2016
+|

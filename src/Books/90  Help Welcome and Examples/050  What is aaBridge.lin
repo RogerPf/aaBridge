@@ -1,0 +1,58 @@
+%%%%%Questions and Ans.lin
+%%Last edited 2014 Jan 20
+bt||
+%%Font and color codes
+fh|150|ff|1Arial|fb|19|fm|1|       1 large
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|36|fm|3|                           FOR 3
+fh|430|ff|4Arial|fi|4y|fm|4|     %%Larger than default-- italic
+fh|545|ff|5Arial|fb|56|fm|5|                           FOR 3
+fh|638|ff|6Arial|fb|60|fm|6|                           FOR 2
+
+cr|116|cg|116|cb|1255|              blue 1
+cr|2200|cg|260|cb|2255|            2  purple ish
+cr|30|cg|30|cb|3128|                dark Blue 3
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5158|cb|516|              green 5
+cr|664|cg|6255|cb|6255|             6=TURQUOISE
+cr|70|cg|7235|cb|7235|              green/blue 7
+cr|8255|cg|80|cb|80|                red 8
+cr|9225|cg|90|cb|90|               duller red 9
+
+
+bt||
+fp|1|at|
+
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp||
+mn|   What  is  aaBridge ?   |
+at|
+^b@2^z@3
+
+This list is a available, with more detail, as a blog post with  ^*bimages.
+
+
+^e^*nClick the link  >>>  |fp|3|at|  ^*h http://musingsonbridge.rogerpf.com/2016/02/what-is-aabridge.html^*n What is aaBridge ?     (blog)^*x |fp||at|
+
+
+^c^*nOR  view the Full Blog  >>>  |fp|5|at|  ^*h http://musingsonbridge.rogerpf.com/^*n Musings on Bridge      ^*x |fp|6|at|Roger's Bridge Blog|fp||at|
+
+
+To summarise    @-    think of ^*b aaBridge ^*n as being ^*b many ^*n things in one.
+|n#|9|lg|c|at|^c@2
+^*b1.^*n	  A "Jukebox" that will play .lin files     use the |cp|red|fp||at| ^*b^*uB^*n^*books^*n |fp||cp||at| menus above
+
+^*b2.^*n	  An after play (postmortem) Hand Analyser      see  ^*g:Bo Haglund DSS::Help,Bo Haglund's DSS ^*n    &     ^*g:Defend like an Expert::Help,Defend like an Expert ^*n
+
+^*b3.^*n	  Will teach you to count       see  ^*g:Defend like an Expert::Help,Defend like an Expert ^*n    &   ^*f openPage_distrFlashCards, Distribution Flash Cards ^*n    &   ^*hhttps://www.youtube.com/watch?v=8xWEyuyViF8^*nvideo^*x
+
+^*b4.^*n	  For novices  @- play big hands for others, play but look for squeezes   both groups  see  ^*g:Squeeze Practice::Help,Squeeze Practice^*n
+
+^*b5.^*n	  Contains full instructions as to how to write your own lin files    see   ^*g:What is a lin file::Inside a lin file,What is a lin file ?^*n
+
+^*b6.^*n	  Comes with a high featured   ^*bDealer^*n   see in the    ^*g:Doc Collection,aaBridge - Doc Collection^*n
+^e(|cp|red|at|and many other documents|cp||at|)|
+
+ht|z|at|@0
+^r Roger Pfister   -   February 2015
+|

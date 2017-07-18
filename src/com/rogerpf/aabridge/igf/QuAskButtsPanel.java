@@ -17,6 +17,7 @@ import java.awt.event.ActionListener;
 import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.controller.Controller;
 import com.rogerpf.aabridge.controller.q_;
@@ -91,9 +92,10 @@ public class QuAskButtsPanel extends ConsumePanel implements ActionListener {
 
 		if (c == 'y') {
 			setLayout(new MigLayout("insets 0 0 0 0, gap 3%! 0!", "push[][]push", "push[]push"));
-			gi.bb.set(3, "Yes~No");
-			char a = (gi.bb.getSafe(4) + " ").charAt(0);
-			gi.bb.set(4, ((a == 'n' || a == 'N') ? "No" : "Yes"));
+			gi.bb.set(3, Aaf.quest_yes + "~" + Aaf.quest_no);
+			char a = (gi.bb.getSafe(4) + " ").toLowerCase().charAt(0);
+			char yes1st = (Aaf.quest_yes + " ").toLowerCase().charAt(0);
+			gi.bb.set(4, (yes1st == a ? Aaf.quest_yes : Aaf.quest_no));
 		}
 		else { // m and z
 			setLayout(new MigLayout("insets 0 0 0 0, gap 1%! 0!", "push[][][][][][][][][]push", "push[]push"));
@@ -102,7 +104,7 @@ public class QuAskButtsPanel extends ConsumePanel implements ActionListener {
 		String a[] = gi.bb.getSafe(3).split("\\~");
 
 		for (int i = 0; i < a.length; i++) {
-			a[i] = Aaa.deAtQuestionText(a[i]);
+			a[i] = Aaa.deAtQuestionAndBubbleText(a[i]);
 		}
 
 		if (c == 'm') {

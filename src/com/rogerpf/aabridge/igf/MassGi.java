@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import javax.swing.Timer;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.controller.Controller;
 import com.rogerpf.aabridge.controller.MruCollection;
@@ -87,6 +88,8 @@ public class MassGi {
 	public int page_numb_display = 0; // used by pg and questions to show page number
 
 	public MruCollection.MruChapter mruChap = null;
+
+	public boolean cameFromPbn = false;
 
 	Capture_gi_env capEnv = new Capture_gi_env();
 
@@ -173,9 +176,13 @@ public class MassGi {
 	 */
 	public MassGi(Lin lin) { // constructor
 		// =============================================================================
+
+		App.handPanelNameAreaInfoNumbersShow = true;
+
 		construct_named_colors();
 		assert (lin != null);
 		this.lin = lin;
+		this.cameFromPbn = lin.cameFromPbn;
 
 		App.tup.cleanUp();
 
@@ -300,7 +307,7 @@ public class MassGi {
 		if (s.startsWith("di")) return Cc.SuitColor(Suit.Diamonds, Cc.Ce.Strong);
 		if (s.startsWith("cl")) return Cc.SuitColor(Suit.Clubs, Cc.Ce.Strong);
 		if (s.startsWith("bg")) return Aaa.tutorialBackground;
-		if (s.startsWith("wh")) return Aaa.tutorialBackground; // we do not allow white as a fill color
+		if (s.startsWith("wh")) return Color.WHITE;   // converted to tutorialBackground at fill time.
 		if (s.startsWith("lg")) return Aaa.lightGrayBubble;
 		if (s.startsWith("mg")) return Aaa.mediumGray;
 		if (s.startsWith("dg")) return Aaa.darkGrayBg;
@@ -384,6 +391,7 @@ public class MassGi {
 		Deal deal_ih_ia = null;
 		HandDisplayGrid hdg = null;
 		BidTablePanel btp = null;
+		boolean uni = false;
 
 		public Capture_gi_env capEnv;
 
@@ -408,6 +416,7 @@ public class MassGi {
 			numb = o.numb;
 			userAns = o.userAns;
 			index = o.index;
+			uni = o.uni;
 			// hdg and btp are NOT copied
 		}
 
@@ -445,6 +454,18 @@ public class MassGi {
 			bb = activeBb;
 			type = typeV;
 			qt = q_.q(type);
+
+			text = s;
+
+			commonBit();
+		}
+
+		GraInfo(String typeV, String s, boolean v_uni) {
+			// ==============================================================================================
+			bb = activeBb;
+			type = typeV;
+			qt = q_.q(type);
+			uni = v_uni;
 
 			text = s;
 
@@ -563,7 +584,7 @@ public class MassGi {
 				}
 			}
 			else if (index == dfc_font_slot) {
-				font = BridgeFonts.faceAndSymbFont;
+				font = BridgeFonts.faceAndSymbolFont;
 			}
 
 		}
@@ -754,7 +775,7 @@ public class MassGi {
 	}
 
 	/**
-	 *  now happens automaticaly every time a param is changed
+	 *  now happens automatically every time a param is changed
 	 */
 	void insertFontMake(String ns) {
 		// =============================================================================
@@ -786,9 +807,10 @@ public class MassGi {
 		capEnv.bold = false;
 	}
 
-	public boolean isEndAQuestion() {
+	public boolean isEndABiddingQuestion() {
 		// =============================================================================
-		return (giAy.get(stop_gi).qt == q_.lb);
+		GraInfo gi = giAy.get(stop_gi);
+		return (gi.qt == q_.lb && gi.bb.get(0).toLowerCase().startsWith("b"));
 	}
 
 	/**
@@ -845,11 +867,20 @@ public class MassGi {
 
 	/**
 	 */
-	void process_gf(BarBlock bb) {
+	void process_fg(BarBlock bb) {
 		// =============================================================================
-//		String s = bb.get(0);
-//		capEnv.gray_fade = (s.toLowerCase().startsWith("y"));
-//		new GraInfo("gf", s);
+		String s = bb.get(0);
+		capEnv.gray_fade = (s.toLowerCase().startsWith("y"));
+		new GraInfo("fg", s);
+	}
+
+	/**
+	 */
+	public void pdl__tt(BarBlock bb) { // tidy trick
+		// =============================================================================
+		String s = bb.get(0);
+		capEnv.tidyTrick = (s.toLowerCase().startsWith("y"));
+//		new GraInfo("tt", s);
 	}
 
 	/**
@@ -921,7 +952,7 @@ public class MassGi {
 		for (int i = stop_gi - 1; i >= 0; i--) {
 			GraInfo gi = giAy.get(i);
 			if (gi.qt == q_.pg || gi.qt == q_.lb) {
-				setTheReadPoints(i, false);
+				setTheReadPoints(i, false /* not used */);
 				return;
 			}
 		}
@@ -943,7 +974,7 @@ public class MassGi {
 
 		assert (stop > -1);
 
-		setTheReadPoints(stop, true);
+		setTheReadPoints(stop, false /* not used */);
 	}
 
 	/**
@@ -956,7 +987,7 @@ public class MassGi {
 		for (int i = stop_gi + 1; i < giAy.size(); i++) {
 			GraInfo gi = giAy.get(i);
 			if (gi.qt == q_.pg || gi.qt == q_.lb) {
-				setTheReadPoints(i, true);
+				setTheReadPoints(i, false /* not used */);
 				return;
 			}
 		}
@@ -970,7 +1001,7 @@ public class MassGi {
 		if (stop_gi >= giAy.size() - 1)
 			return;
 
-		setTheReadPoints(giAy.size() - 1, true);
+		setTheReadPoints(giAy.size() - 1, false /* not used */);
 	}
 
 	/**
@@ -1012,7 +1043,7 @@ public class MassGi {
 	 */
 	public void tutNavBarClicked(int gi_index) {
 		// =============================================================================
-		setTheReadPoints(gi_index, false);
+		setTheReadPoints(gi_index, false /* not used */);
 	}
 
 	// @formatter:off
@@ -1107,7 +1138,7 @@ public class MassGi {
 			assert (false);
 		}
 
-		setTheReadPoints(stop_gi_candidate, true /* fwd => true */); // <==== i ====
+		setTheReadPoints(stop_gi_candidate, false /* not used */); // <==== i ====
 
 		tutorialPlayTimer.setInitialDelay(ms);
 		tutorialPlayTimer.start();
@@ -1140,14 +1171,14 @@ public class MassGi {
 		public void actionPerformed(ActionEvent evt) {
 			// =============================================================================
 			floatingHandExtraDisplayTimer.stop();
-			setTheReadPoints(stop_gi, true); // The forced redisplay
+			setTheReadPoints(stop_gi, false /* not used */); // The forced redisplay
 			fh_state = Fh_NONE;
 		}
 	});
 
 	/**
 	 */
-	public void setTheReadPoints(int stop, boolean fwd__not_currently_used) {
+	public void setTheReadPoints(int stop, boolean not_used) {
 		// =============================================================================
 
 		if (stop < 0)
@@ -1285,7 +1316,7 @@ public class MassGi {
 				handAy.add(bb.getSafe(5));
 
 				App.mg.deal = new Deal(0);
-				App.mg.deal.fillDealExternal(handAy, Deal.noFill); // South is assumed
+				App.mg.deal.fillDealExternal(handAy, Deal.noFill, 0); // South is assumed
 				App.tup.qp.hdp1.dealMajorChange(App.mg.deal);
 			}
 
@@ -1293,13 +1324,13 @@ public class MassGi {
 				ArrayList<String> handAy1 = new ArrayList<String>();
 				handAy1.add(bb.getSafe(5));
 				App.tup.qp.deal1 = new Deal(0);
-				App.tup.qp.deal1.fillDealExternal(handAy1, Deal.noFill); // South is assumed
+				App.tup.qp.deal1.fillDealExternal(handAy1, Deal.noFill, 0); // South is assumed
 				App.tup.qp.hdp1.dealMajorChange(App.tup.qp.deal1);
 
 				ArrayList<String> handAy2 = new ArrayList<String>();
 				handAy2.add(bb.getSafe(6));
 				App.tup.qp.deal2 = new Deal(0);
-				App.tup.qp.deal2.fillDealExternal(handAy2, Deal.noFill); // South is assumed
+				App.tup.qp.deal2.fillDealExternal(handAy2, Deal.noFill, 0); // South is assumed
 				App.tup.qp.hdp2.dealMajorChange(App.tup.qp.deal2);
 			}
 
@@ -1308,7 +1339,7 @@ public class MassGi {
 				handAy.add(bb.getSafe(5));
 
 				App.tup.qp.deal1 = new Deal(0);
-				App.tup.qp.deal1.fillDealExternal(handAy, Deal.noFill); // South is assumed
+				App.tup.qp.deal1.fillDealExternal(handAy, Deal.noFill, 0); // South is assumed
 				App.tup.qp.hdp1.dealMajorChange(App.tup.qp.deal1);
 			}
 		}
@@ -1375,6 +1406,8 @@ public class MassGi {
 
 		App.frame.invalidate();
 		App.frame.repaint();
+
+		App.history.histRecordChange("pg_change");
 
 		// System.out.println("Set Read Points - gi indexes - start, prev, stop = " + start_nt + "  " + middle_pg + " " + stop_gi);
 	}
@@ -1490,7 +1523,7 @@ public class MassGi {
 	public void parse_original_at(BarBlock bb) {
 		// =============================================================================
 
-		int size_of_last_text_sent = 0;
+//		int size_of_last_text_sent = 0;
 
 		assert (bb.qt == q_.at || bb.qt == q_.nt);
 
@@ -1501,12 +1534,27 @@ public class MassGi {
 			return;
 		}
 
+		if (bb.uni) {
+			send_at(); // 'finsihes' anything in the buffer
+			for (int z = 0; z < bb.size(); z++) { // each fragment should go on its own line
+				if (z > 0) {
+//					if (capEnv.boxed && size_of_last_text_sent == 0) { // first send a space
+//						// outBuf.append(' ');
+//						// send_at();
+//					}
+					new GraInfo("NL"); // multi part 'at' only exist to have new line between each part
+				}
+
+				String utext = bb.get(z);
+				if (!utext.isEmpty()) {
+					new GraInfo("at", utext, bb.uni);
+				}
+			}
+			return;
+		}
+
 		for (int z = 0; z < bb.size(); z++) { // each fragment should go on its own line
 			if (z > 0) {
-				if (capEnv.boxed && size_of_last_text_sent == 0) { // first send a space
-					// outBuf.append(' ');
-					// send_at();
-				}
 				new GraInfo("NL"); // multi part 'at' only exist to have new line between each part
 			}
 
@@ -1626,7 +1674,7 @@ public class MassGi {
 							new GraInfo("YB");
 							continue;
 						}
-						if (c2 == 'g') { // h = hyperlink g = INTERNAL hyperlink f = internaly defined funtion
+						if (c2 == 'g') { // h = hyperlink g = INTERNAL hyperlink f = internally defined function
 							send_at();
 							capEnv.bold = true; // links are 'auto bold'
 							StringBuilder sectionName = new StringBuilder(0);
@@ -1649,21 +1697,40 @@ public class MassGi {
 							char c;
 							// @formatter:off
 							int k;
+							boolean comma_found = false;
 							for (k = i; k < text.length() - 3; k++) { // uggly scan ahead
-								if ((c = text.charAt(k)) == '^' 
-									 && (text.charAt(k+1) == '*') 
-									 && (text.charAt(k+2) == 'n' ||  text.charAt(k+2) == 'N') )
+								c = text.charAt(k);
+								if (c == ',') {
+									comma_found = true;
+									break;
+								}
+								else if (    (c == '^') 
+									      && (text.charAt(k+1) == '*') 
+									      && (text.charAt(k+2) == 'n' ||  text.charAt(k+2) == 'N')  )
 								{
 									break;
-								} else
+								} 
+								else
 									url.append(c);
 							}
 							// @formatter:on
 							capEnv.hyperlink = new Hyperlink_h_ext(url.toString());
 							new GraInfo("YB");
 
+							if (comma_found) {
+								i = k + 1;
+								int m;
+								for (m = k + 1; m < text.length() - 3; m++) { // uggly scan ahead
+									if ((c = text.charAt(m)) == '^' && (text.charAt(m + 1) == '*') && (text.charAt(m + 2) == 'n' || text.charAt(m + 2) == 'N')) {
+										break;
+									}
+									else
+										url.append(c);
+								}
+							}
+
 							boolean xw_marker_found = false;
-							int from = k + 3;
+							int from = k + (comma_found ? 1 : 3);
 							int to = (text.length() < from + 128) ? text.length() : from + 128;
 							// @formatter:off
 							for (k = from; k < to - 3; k++) { // ANOTHER - uggly scan ahead
@@ -1757,6 +1824,12 @@ public class MassGi {
 						continue;
 					}
 
+					if (c1 == 'z') {
+						send_at();
+						new GraInfo("@Z");
+						continue;
+					}
+
 					if (c1 == '@') {
 						// drop through - two @'s make one @
 					}
@@ -1796,7 +1869,7 @@ public class MassGi {
 				}
 				outBuf.append(c0);
 			}
-			size_of_last_text_sent = outBuf.length();
+//			size_of_last_text_sent = outBuf.length();
 
 			send_at(); // send anything in the output buffer
 
@@ -1817,7 +1890,7 @@ public class MassGi {
 		// @formatter:on
 		GraInfo gi = new GraInfo(bb);
 		gi.deal_ih_ia = new Deal(0 /* local id */);
-		gi.deal_ih_ia.fillDealExternal(bb, Deal.noFill);
+		gi.deal_ih_ia.fillDealExternal(bb, Deal.noFill, bb.lineNumber);
 
 		@SuppressWarnings("unused")
 		int z = 0;
@@ -2000,11 +2073,38 @@ public class MassGi {
 	public void pdl__md(BarBlock bb) { // Make Deal
 		// =============================================================================
 		App.deal.changed = true;
-		App.deal.endedWithClaim = false;
-		App.deal.eb_blocker = false;
 
-		App.deal.fillDealExternal(bb, Deal.yesFill);
+		if (bb.get(0).toLowerCase().startsWith("0") == false) {
+
+			capEnv.tut_rotation = 0;
+
+			// a zero is an amendment to the hand
+			// so we want the non-zero ie 'new hands'
+			App.deal.forceDifferent++;
+			App.deal.endedWithClaim = false;
+			App.deal.eb_blocker = false;
+			App.deal.eb_min_card = 0;
+			App.deal.clearAnyKeptCards();
+		}
+
+		App.deal.fillDealExternal(bb, Deal.yesFill, bb.lineNumber);
 		new GraInfo(bb);
+	}
+
+	/**
+	 */
+	public void pdl__kc(BarBlock bb) { // Keep Cards
+		// =============================================================================
+		App.deal.markCardsKept(bb);
+
+		GraInfo gi = new GraInfo(bb);
+
+		new GraInfo(bb);
+
+		prev_clone = App.deal;
+		gi.deal = App.deal;
+		App.deal = gi.deal.deepClone();
+		App.deal.localId = Deal.idCounter.getAndIncrement();
 	}
 
 	/**
@@ -2075,6 +2175,14 @@ public class MassGi {
 
 	/**
 	 */
+	public void pdl__px(BarBlock bb) { // Player Names info suppress
+		// =============================================================================
+		String s = bb.get(0);
+		capEnv.playerNameNumbsVisible = (!s.trim().toLowerCase().startsWith("n"));
+	}
+
+	/**
+	 */
 	public void pdl__sj(BarBlock bb) { // Seat Kibitz
 		// =============================================================================
 		//
@@ -2124,6 +2232,24 @@ public class MassGi {
 				App.deal.eb_min_card = App.deal.countCardsPlayed();
 			}
 		}
+	}
+
+	/**
+	 */
+	public void pdl__xs(BarBlock bb) {
+		// =============================================================================
+		App.deal.setDealShowXes(bb);
+		App.deal.changed = true;
+	}
+
+	/**
+	 */
+	public void pdl__rt(BarBlock bb) {
+		// =============================================================================
+		int r = (bb.get(0) + " ").charAt(0) - '0';
+		capEnv.tut_rotation = ((0 <= r) && (r <= 3)) ? r : 0;
+		// System.out.println( capEnv.tut_rotation);
+		App.deal.changed = true;
 	}
 
 	/**
@@ -2301,7 +2427,7 @@ public class MassGi {
 
 	private final static String[] brdSignfAy = { "board", "brd", "hand", "deal", "example", "ex", "student", "study", "stud", "practice", "practise", "prac",
 			"teaching", "teach", "numb", "number", "variation", "var", "end", "block", "set", "group", "case", "problem", "prob", "solution", "sol", "item",
-			"set", "body", "table", "open", "closed", "extra", "xtra" };
+			"set", "body", "table", "open", "closed", "extra", "xtra", "page", "pg", "book", "volume", "vol", "answer", "ans", "core", "pos", "game", "roger" };
 
 	/**
 	 */
@@ -2498,9 +2624,9 @@ public class MassGi {
 		if (buildTime__tc_suppress_pc_display == false) {
 			pc_autoClear__buildTime__tc_suppress_pc_display = true;
 		}
-//		else {
-//			pc_autoClear__buildTime__tc_suppress_pc_display = false;
-//		}
+		else {
+			pc_autoClear__buildTime__tc_suppress_pc_display = false;
+		}
 
 	}
 
@@ -2551,6 +2677,7 @@ public class MassGi {
 
 		for (int i = 0; i < cds.length(); i++) { // well there SHOULD BE a max of TWO chars in each string
 			char c = cds.charAt(i);
+
 			if (suit == Suit.Invalid) {
 				suit = Suit.charToSuit(c);
 				// we ignore any chars when we do not have a valid suit.
@@ -2634,7 +2761,7 @@ public class MassGi {
 
 		/** 
 		 * This is the biggie that does the, constructor time, heavy lifting
-		 * it adds to the GraInfo array  (automaticaly in the called functions)
+		 * it adds to the GraInfo array  (automatically in the called functions)
 		 * 
 		 * First we add a few that will reset when re return to start
 		 */
@@ -2644,7 +2771,7 @@ public class MassGi {
 
 		new GraInfo(activeBb = lin.new BarBlock("AA", 0)); // a null one to be the first
 		new GraInfo(activeBb = lin.new BarBlock("qx", 0)); // qx
-		activeBb.set(0, "Start");
+		activeBb.set(0, Aaf.navbar_start);
 		activeBb.add("wide");
 		new GraInfo(activeBb = lin.new BarBlock("st", 0)); // st standard table - the lin spec default
 		new GraInfo(activeBb = lin.new BarBlock("nt", 0)); // nt
@@ -2692,17 +2819,19 @@ public class MassGi {
 			if (t == q_.bt)  { process_bt(bb);                	continue; }
 			if (t == q_.st)  { process_st(bb);                	continue; }
 			if (t == q_.qx)  { process_qx(bb);                	continue; }
-			if (t == q_.gf)  { process_gf(bb);                	continue; }
+			if (t == q_.fg)  { process_fg(bb);                	continue; }
 
 			if (t == q_.lb)  { pdlx__lb(bb);                 	continue; }
 			if (t == q_.pg)  { pdlx__pg(bb);                 	continue; }
 			if (t == q_.sb)  { pdl__sb(bb);                 	continue; }
 			if (t == q_.pn)  { pdl__pn(bb);                 	continue; }
+			if (t == q_.pi)  { pdl__px(bb);                 	continue; } // handPanelNameAreaInfoNumbersShow
 			if (t == q_.sk)  { pdl__sk(bb);                 	continue; }
 			if (t == q_.sj)  { pdl__sj(bb);                 	continue; }
 			if (t == q_.ha)  { pdl__ha(bb);                 	continue; }
 			if (t == q_.md)  { pdl__md(bb);                 	continue; }
-			if (t == q_.rc)  { pdl__rc(bb);                 	continue; }
+			if (t == q_.kc)  { pdl__kc(bb);                 	continue; }  // keep cards (from shuff op)
+			if (t == q_.rc)  { pdl__rc(bb);                 	continue; }  // remove cards
 			if (t == q_.mb)  { pdl__mb(bb);                 	continue; }
 			if (t == q_.an)  { pdl__an(bb);                 	continue; }
 			if (t == q_.up)  { pdl__up(bb);                 	continue; }
@@ -2714,12 +2843,16 @@ public class MassGi {
 			if (t == q_.tc)  { pdl__tc(bb);                 	continue; } // show hide pc and bid? updates
 			if (t == q_.sv)  { pdl__sv(bb);                 	continue; }
 			if (t == q_.rh)  { pdl__rh(bb);                 	continue; }
+			if (t == q_.tt)  { pdl__tt(bb);                 	continue; } // tidy trick
 			if (t == q_.ah)  { pdl__ah(bb);                 	continue; }
 			if (t == q_.rq)  { pdl__rq(bb);                 	continue; }
 			if (t == q_.wt)  { pdl__wt(bb);                 	continue; }
 			if (t == q_.ih)  { pdl__ih(bb);                 	continue; }
 			if (t == q_.ia)  { pdl__ia(bb);                 	continue; }
 			if (t == q_.eb)  { pdl__eb(bb);                 	continue; }
+			if (t == q_.xs)  { pdl__xs(bb);                 	continue; } // show some cards as x'es
+			if (t == q_.rt)  { pdl__rt(bb);                 	continue; } 
+			
 			if (t == q_.bv)  { pdl__bv(bb);                 	continue; } // button visibility 2874
 			if (t == q_.nD)  { pdl__nD(bb);                 	continue; } // nudge Down  n#
 			if (t == q_.nU)  { pdl__nU(bb);                 	continue; } // nudge Up    n^
@@ -2758,6 +2891,7 @@ public class MassGi {
 			if (t == q_.hb)  { /* ignored */                	continue; }
 			if (t == q_.xx)  { /* ignored */                	continue; }
 			if (t == q_.vg)  { /* ignored */                	continue; }
+			if (t == q_.vr)  { /* ignored */                	continue; } // treat  as virgin deal
 			if (t == q_.rs)  { /* ignored */                	continue; }
 			if (t == q_.mp)  { /* ignored */                	continue; }
 			if (t == q_.lf)  { /* ignored */                	continue; }
@@ -2893,7 +3027,7 @@ public class MassGi {
 			}
 		}
 
-		setTheReadPoints(to, true /* not used */);
+		setTheReadPoints(to, false /* not used */);
 	}
 
 	public int get_gi_numb_from_pg_number_display(int numb) {

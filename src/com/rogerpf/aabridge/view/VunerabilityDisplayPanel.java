@@ -22,6 +22,7 @@ import java.awt.geom.RoundRectangle2D;
 import javax.swing.JPanel;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Cc;
 import com.rogerpf.aabridge.model.Dir;
@@ -84,11 +85,11 @@ class VulnerabilityDisplayPanel extends JPanel implements MouseListener {
 		g2.fill(new RoundRectangle2D.Double(x, y, w, h, c, c));
 
 		if (App.deal.dealer.v == compass.v) {
-			Font font = BridgeFonts.bridgeBoldFont.deriveFont(w < h ? w : h);
+			Font font = BridgeFonts.internatBoldFont.deriveFont(w < h ? w : h);
 			g2.setFont(font);
 			g2.setColor(getVulnerabilityTextColor(App.deal.vulnerability[compass.v % 2]));
 
-			Aaa.drawCenteredString(g2, new String("D"), x, y, w, h);
+			Aaa.drawCenteredString(g2, Aaf.game_dealerLetter, x, y, w, h);
 		}
 	}
 
@@ -105,8 +106,7 @@ class VulnerabilityDisplayPanel extends JPanel implements MouseListener {
 			g2.setColor(Cc.RedWeak);
 			g2.fill(new Rectangle2D.Float(x + gap, y + gap, w - gap * 2, h - gap * 2));
 
-			Font font = BridgeFonts.bridgeLightFont.deriveFont(h * 0.4f);
-			g2.setFont(font);
+			g2.setFont(BridgeFonts.internationalFont.deriveFont(h * 0.4f));
 			g2.setColor(Color.WHITE);
 			Aaa.drawCenteredString(g2, "Click", x, y, w, h / 1.7f);
 
@@ -139,8 +139,8 @@ class VulnerabilityDisplayPanel extends JPanel implements MouseListener {
 			g2.setColor(Aaa.vulnerabilityBox);
 			g2.fill(new Rectangle2D.Float(x + gap, y + gap, w - gap * 2, h - gap * 2));
 
-			Font font = BridgeFonts.bridgeLightFont.deriveFont(h * 0.4f);
-			g2.setFont(font);
+			Font font_b = BridgeFonts.internationalFont.deriveFont(h * 0.4f);
+			g2.setFont(font_b);
 			g2.setColor(Color.BLACK);
 			Aaa.drawCenteredString(g2, text, x, y, w, h / 1.7f);
 
@@ -152,6 +152,7 @@ class VulnerabilityDisplayPanel extends JPanel implements MouseListener {
 	/**
 	 */
 	public void paintComponent(Graphics g) { // VulnerabilityDisplayPanel
+
 		super.paintComponent(g);
 
 		Graphics2D g2 = (Graphics2D) g;

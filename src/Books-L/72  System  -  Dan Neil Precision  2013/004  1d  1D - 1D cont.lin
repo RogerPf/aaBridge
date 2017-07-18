@@ -1,0 +1,316 @@
+%%
+%%
+
+%% <--SECT_HEAD-->=Session 1 d                         1@c - 1@D - cont   
+%%
+%%
+%%  Date last Edited    2015-04-05          set by human hand (if at all)
+%%
+%%  MovieMaker          Karen10
+%%
+
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+
+fh|136|ff|1Arial|fb|10|fm|1|      Font 1
+fh|238|ff|2Arial|fb|20|fm|2|      Font 2
+fh|339|ff|3Arial|fb|30|fm|3|      Font 3
+fh|440|ff|4Arial|fb|40|fm|4|      Font 4  Section titles in chapters
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|50|fm|6|      Font 6
+fh|764|ff|7Arial|fb|70|fm|7|      Font 7  Officer Precision size in banner
+fh|870|ff|8Arial|fb|80|fm|8|      Font 8  Chapter title size in banner
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1210|cg|1255|cb|1255|   touch of blue
+cr|2000|cg|2000|cb|2000|   text font color - this is NOT full black it is changed to a dark gray
+cr|3255|cg|3240|cb|3240|
+cr|4255|cg|4240|cb|4240|   all so far highlight color
+cr|5198|cg|5205|cb|5229|
+cr|6063|cg|6110|cb|6065|   Top Title Color   On Title Page
+cr|7198|cg|7205|cb|7229|   Lower Title Color On Title Page
+cr|8255|cg|8000|cb|8000|   red for emphasis
+cr|9255|cg|9255|cb|9255|   'white' but not white - on Title page for Font color behind blue title
+
+fh|t40|                    Font   t  t-title      section titles within chapters
+fh|b50|                    Font   b  b-bigTitle
+
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+
+cr|m160|cg|m060|cb|m060|   fill   m  m-mastColor     on Title Pages     Sickly Orange
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Dan  Neil  Precision                                    2013 ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bSession 1 d                         1@c - 1@D - cont   ^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+
+
+at|^^^^^^^b@2djneill:    1@c - 1@D - continuations
+|
+
+
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2886|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2886 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+nt||cp|2|at|^b@2
+|cs|1|at|^b{|ih|pskj964hkdaq74ca97|at|}
+
+|cs|1|at|^b{|ih|psqt5ht652dt8ck843|at|}     |cs|1|sd|n|at|{|ia|p1cp1dp1sp2dp2sppp|at|}|at|^b@2
+
+^*uSouth has a special call now which shows a (5-7) with a   3-card raise  (2@d)^*n
+
+Kind of like a support double.          I agree you will have to study this a bit.
+It is not like SAYC or 2/1 at all.       
+But it is like Drury
+So it is a bit like something you may have seen before.
+North has just 17 HCP with a stiff King.   Not what (5-7) and a 3-card support will get to game on.
+So North can just sign off in 2@s
+
+In SAYC or 2/1, North would open 1@s 
+and South would either Pass or respond a forcing 1NT (too weak for a 2@s raise)
+and N-S would alight in 2@s just the same probably. This actually comes close to making, maybe it does.
+But you don't have to get to every game at matchpoints|
+pg| ***** 1 ***** |
+
+
+nt||cp|2|at|^b@2
+|cs|1|at|^b{|ih|psakq87h3daq4ckt75|at|}
+
+|cs|1|at|^b{|ih|psj53h942dt53c8643|at|}
+
+- This time MAFIA again
+1@c   1@d
+1@s is forcing for one round
+        1NT   (double negative)
+
+So immediately North knows it's time to start running to find some fit.
+2@c    pass
+
+In this case, North's clubs could be longer than spades.
+South is happy to find a "get out" and passes 2@c
+So even though there is a 5-3 spade fit, South does not know if North has 4 or 5 spades
+But South does know North has 4 or 5 clubs     (or more)    So the safest move is to Pass 2@c
+At least there is an 8 card fit.
+
+West has an interesting hand, in fact, one that would overcall over 1@d
+However, I will go over interference in another lesson.     It's important :-)|
+pg| ***** 2 ***** |
+
+
+nt||cp|2|at|^b@2
+Now it's time for the "other" drury:
+
+|cs|1|at|^b{|ih|psakj872htdakjt7c6|at|}    |cs|1|sd|n|at|{|ia|p1cp1dp1sp2cp3dp4dp4np5cp5d|at|}|at|^b@2
+|cs|1|at|^b{|ih|ps3hj865dq954ckj54|at|}
+
+North MAFIA's with 1@s
+^*uNow South can show 6-7 HCP WITHOUT a fit with 2@c^*n
+It's kind of like a "non fit Drury"      but, it's 6-7, that's pretty good!
+
+North can now see a game in the offing    North has just 16 HCP    but just about 3 losers
+So 6-7 will do nicely, ^*uNorth can jump to 3@d to force to game with 5+ diamonds^*n
+South can try 4@d (we are in a game force).   And North can try RKC!   alas, North settles for 5@d
+If South had an Ace and the @dQ, there would be slam, or maybe even without the Queen
+
+In standard, North would open 1@s, South would respond 1NT
+North might rebid 3@d, and South is having problems imagining a game.
+Precision makes it easier.|
+pg| ***** 3 ***** |
+
+
+nt||cp|2|at|^b@2
+|cs|1|at|^b{|ih|psakq9643hjda64ckq|at|}   |cs|1|sd|n|at|{|ia|p1cp1dp4sppp|at|}|at|^b@2
+
+|cs|1|at|^b{|ih|psjt852h743dq53ct8|at|}
+
+
+
+Sometimes North has just a hand that wants to bid game and shut out everyone else.
+But this hand by North is way too strong for a 4@s opening.
+The solution is to open 1@c, and THEN bid 4@s
+
+North does not really care about South's hand.   It's a gamble
+In this case, South's @dQ is well placed and it comes in.|
+pg| ***** 4 ***** |
+
+
+nt||cp|2|at|^b@2
+|cs|1|at|^b{|ih|psqthk7da6cakqj765|at|}
+
+|cs|1|sd|n|at|{|ia|p1cp1dp3nppp|at|}|at|^b@2
+
+This time North is in a different sort of gamble
+North has a "strong" version of the gambling 3NT
+
+This is where the Kokish I talked about earlier helps.
+If you use 1@c-1@d-2@h for all GF balanced hands
+It leaves free 1@c-1@d-3NT for the gambles.
+
+North has 8 tricks in hand, and random honors in the majors
+Anything might let this make.|
+pg| ***** 5 ***** |
+
+
+nt||cp|2|at|^b@2
+- Let's get back to the Drury:
+
+|cs|1|at|^b{|ih|pskqj4haj83d3cakq2|at|}   |cs|1|sd|n|at|{|ia|p1cp1dp1hp2dp2sp2npp|at|}|at|^b@2
+|cs|1|at|^b{|ih|ps6h642dajt6cj8753|at|}
+
+North MAFIA's with 1@h.  The idea is to find a 4-4 fit wherever spades or hearts.  
+South now bids the 2@d Drury  -    3-card support,    5-7 HCP.  
+North has 20 HCP,  so adds it up  25-27 total.  
+There is enough for game, but it's time to be sneaky and get South to declare.   
+
+North does not want to declare with the singleton diamond, so North can bid 2@s to wait and force.  
+South has minor stoppers so tries 2NT.. just what North wanted to hear. |
+pg| ***** 6 ***** |
+
+
+nt||cp|2|at|^b@2
+- Here's another hand for MAFIA:
+|cs|1|at|^b{|ih|pst2hAKQ5dK8cAKQJ7|at|}   |cs|1|sd|n|at|{|ia|p1cp1dp1hp2dp3cp3n|at|}|at|^b@2
+
+|cs|1|at|^b{|ih|psAQ9h964dJ97ct953|at|}
+
+
+2@D   "drury"   (5-7 hcp, 3-card support)  
+
+This time, same start.  North again angles South towards 3NT.  
+South has stuff in the @s and @d so tries 3NT.  
+
+You might wonder why South is not raising clubs.  
+There is a club fit after all, but South knows that 11 trick contracts can be difficult.  
+3NT is a lot easier, just 9 tricks and South has nothing really to ruff – 4333.|
+pg| ***** 7 ***** |
+
+
+nt||cp|2|at|^b@2
+
+|cs|1|at|^b{|ih|psJ874hKJ3dAKQ103cA|at|}     |cs|1|sd|n|at|{|ia|p1cp1dp1sp1np2dpp|at|}|at|^b@2
+
+|cs|1|at|^b{|ih|psQ5hQ6dJ9642c9864|at|}
+
+Here's another hand for MAFIA.  
+1@s is forcing one round.  
+South has a double-negative.  (1NT  =  0-5) 
+So North runs to 2@d and South will take it.
+
+
+
+|
+pg| ***** 8 ***** |
+
+
+nt||cp|2|at|^b@2
+
+|cs|1|at|^b{|ih|psAKQ3dAQJt985cJ3|at|}     |cs|1|sd|n|at|{|ia|p1cp1dp1sp2dp5d|at|}|at|^b@2
+
+|cs|1|at|^b{|ih|ps975hA85dK43ct854|at|}
+
+North has a good hand here.  Let's put MAFIA to the test.  
+South has the 2@d Drury.  
+North is happy to hear South is 5-7,  but 4@s is not the game, 5@d is!  
+The problem with the 4-3 @s fit is that the long trump hand (North) may be ruffing early, shortening the spades.  
+Diamonds is safer.  
+South is surprised to find herself declarer, but it's pretty easy.
+
+
+
+|
+pg| ***** 9 ***** |
+
+
+nt||cp|2|at|^b@2
+
+|cs|1|at|^b{|ih|psAK87htdAQt82cAQ9|at|}     |cs|1|sd|n|at|{|ia|p1cp1dp1sp2dp3dp3n|at|}|at|^b@2
+
+|cs|1|at|^b{|ih|psJ93hQ64dKJ7ct432|at|}
+
+
+
+Here South has another 2@d  Drury.  
+North has 19, enough for game, so bids 3@d, not signing off in 2@s.    
+South again has a 4333 so tries 3NT.  
+
+
+
+
+
+
+
+|
+pg| ***** 10 ***** |
+
+
+nt||cp|2|at|^b@2
+Here is how to show:  ^*b4 of a Major and 5+ of a minor      Game Force^*n
+
+|cs|1|at|^b{|ih|psakhakq9caqj8654|at|}     |cs|1|sd|n|at|{|ia|p1cp1dp1hp1np3cp5c|at|}|at|^b@2
+
+|cs|1|at|^b{|ih|ps652h74dt32ck9732|at|}
+
+
+First the Major is bid     (MAFIA)
+And south shows a double negative with 1NT  (0-5)
+Now North ^*ujumps in the minor^*n
+This promises just 4 of the Major, and 5+ of the minor.
+South sees clubs are the best fit, so bids 5@c   (Or even 4@c )
+
+Very difficult in standard methods.
+If North opens 2@c in standard, you might get there, but South will never take the push
+Precision makes it easier.|
+pg| ***** 11 ***** |
+
+
+nt||cp|2|at|^b@2
+|cs|1|at|^b{|ih|psaqhkdakqj854caqt|at|}
+
+|cs|1|at|^b{|ih|pst974hq92d73ckj42|at|}    |cs|1|sd|n|at|{|ia|p1cp1dp3dp|at|}|at|^b@2
+
+
+
+If North has a ^*uGF hand with one long minor^*n...
+North can just bid the minor at the 3-level
+This ^*bdenies^*n a 4-card major
+
+We saw earlier that ^*bwith a 4-card major you bid the major first^*n
+So South need not worry about spades and just bids 3NT
+
+I'll stop for today, but you get a good idea how 1@c-1@d works, thanks Maureen and Rosemary
+I'll send a worksheet to review     
+
+(MM: See next part   ^$40   )

@@ -1,0 +1,302 @@
+%%
+%%
+%% <--SECT_HEAD-->=Practice  Boards                              59 - 60
+%%
+%%
+%%  Date last Edited    2016-05-04     set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+%% 
+%% <<--HEADER_FILE-->>=BB_Pr_00___Declarer_Play__HEADER
+%%
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player they need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+%%
+%%  You can NOW use  ALL 2876 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+fh|t40|                    Font   t  t-title             section titles (if any)
+fh|b50|                    Font   b  b-bigTitle   bigger section titles
+
+fh|f42|                    Font   f  f-flow
+fh|s25|                    Font   s  s-small
+
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor      on Title Pages
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor   on Title Pages
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Boldbida                                       Course   2016^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bPractice  Boards                              59 - 60^*n^-^^|cs||fp||cp||at|^^|
+Lg|e|
+
+ht|j|
+at|If you are  |cp|red|at|^*bNew  to  aaBridge^*n|cp||at| please  click the  { ^*bHome^*n }  button in the far top left and then click  { ^*bFlow^*n }  button.
+Once you have a little knowledge about how to use   ^*baaBridge^*n   please come back to this 'movie'.  |
+
+ht|o|
+fp|t-title|cp|blue|at|^- ^*b-----  Shuf Op  -----^*n     ^-|cp||fp||at|^^|
+n#|3|
+at|^b@2When  you are  'Inside a deal',  high on the left in green baize area you will see the  {^*b Shuf Op ^*n}  button.|
+n#|5|
+at|^^Click on it to shuffle the  East - West  cards and leave you ready to  PLAY  the hand against the 
+^o ^*b aaBridge ^*n bots and the new defensive layout.|
+%% <<--HEADER_REPLACE_END->>
+
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+ht|v|n#|4|at|
+^f Please  |cp|red|at|^*b keep ^*n|cp||at|  clicking  the |fp|f-flow|at|  { ^*b Flow > ^*n }  |fp|s-small|at| button below  |fp||
+
+ht|z|n^|2|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+
+bv|a,v|    %% make all 3 buttons visible 
+ 
+fh|940|fm|9|fp|9|at|@0@1|
+ht|h|
+rq|2876|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2876 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+st||
+--------------------------------------------------------------------
+qx|59 F|
+nt|^b@2^^|
+rh||ah|Practice 59 |
+md|1SAQJ42HA973DT75C4,S8HQT852DAQ632C85,SK73HK6DJ84CAKJT3,ST965HJ4DK9CQ9762|
+sv|O|sk|S|
+at|^*bPractice 59^*n        Fail |
+pg| ***** 1 ***** |
+
+
+mb|1S|mb|p|mb|2C|mb|p|mb|2H|mb|p|mb|2S|mb|p|mb|4S|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+pc|h5|
+pg| ***** 3 ***** |
+
+
+at|        Having  5  losers   2@h(s)  3@d(f)  we need to shed  2.    One can clearly go on the  @cK  and if the @h's are 4-3 then we can ruff a  @h  the support hand (dummy).   Or to guard against 5-2 @h's we would have to ruff high with the  @sK's  in that case the @s's would have to be 3-2,  4-1 trumps would get us down.|
+pg| ***** 4 ***** |
+
+
+pc|hK|pc|h4|pc|h3|
+pg| ***** 5 ***** |
+
+
+pc|h6|pc|hJ|pc|hA|pc|h2|
+pg| ***** 6 ***** |
+
+
+pc|h9|pc|hT|pc|s3|pc|s5|
+pg| ***** 7 ***** |
+
+
+pc|dK|
+at|^^ Oh dear,  the Opps are now going to take their  3 @d  tricks.      Please  { ^*bPlay^*n }  out the rest of the cards yourself.|
+pf|c|
+sk||
+pg| ***** 8 ***** |
+
+
+---------------------------------------------------------------------------
+qx|59 S|
+nt|^b@2^^|
+rh||ah|Practice 59 |
+md|1SAQJ42HA973DT75C4,S8HQT852DAQ632C85,SK73HK6DJ84CAKJT3,ST965HJ4DK9CQ9762|
+sv|O|sk|S|
+at|^*bPractice 59^*n        Success |
+pg| ***** 9 ***** |
+
+
+mb|1S|mb|p|mb|2C|mb|p|mb|2H|mb|p|mb|2S|mb|p|mb|4S|mb|p|mb|p|mb|p|
+pg| ***** 10 ***** |
+
+
+pc|h5|
+pg| ***** 11 ***** |
+
+
+at|        Having  5  losers   2@h(s)  3@d(f)  we need to shed  2.  One of them can clearly go on the  @cK  but  looking harder at  @c's  for our source of tricks we can see that, after drawing trumps, we can see that the @cJ or @c10  can be set up.  We will need to preserve the  @hK  as an entry.|
+pg| ***** 12 ***** |
+
+
+pc|h6|pc|hJ|pc|hA|
+pg| ***** 13 ***** |
+
+
+pc|s2|pc|s8|pc|sK|pc|s5|
+pg| ***** 14 ***** |
+
+
+pc|s7|pc|s9|pc|sA|pc|d6|
+pg| ***** 15 ***** |
+
+
+pc|sQ|pc|h2|pc|s3|pc|s6|
+pg| ***** 16 ***** |
+
+
+pc|sJ|pc|d2|pc|d4|pc|sT|
+pg| ***** 17 ***** |
+
+
+pc|c4|pc|c5|pc|cA|pc|c2|
+pg| ***** 18 ***** |
+
+
+pc|cK|pc|c6|pc|h3|pc|c8|
+pg| ***** 19 ***** |
+
+
+pc|cJ|pc|cQ|pc|s4|pc|h8|
+at|   Or here we could throw a @h, loser on a loser.|
+pg| ***** 20 ***** |
+
+
+pc|h9|pc|hT|pc|hK|pc|h4|
+pg| ***** 21 ***** |
+
+
+pc|cT|
+pg| ***** 22 ***** |
+
+
+sk||
+at|^^And we will come to our 10.      You are free to  { ^*bPlay^*n }  out the rest of the cards yourself.|
+pf|c|
+pg| ***** 23 ***** |
+
+
+---------------------------------------------------------------------------
+qx|60 S|
+nt|^b@2^^|
+rh||ah|Practice 60 |pn| , , , |
+md|1SJ53HAKQ42DAK63CK,SK97HJT96DJ985C84,SQ4H853D72CAQJT65,SAT862H7DQT4C9732|
+sv|O|sk|S|
+at|^*bPractice 60^*n        Success |
+pg| ***** 24 ***** |
+
+
+mb|1H|mb|p|mb|4H|mb|p|mb|p|mb|p|
+pg| ***** 25 ***** |
+
+
+pc|d5|
+pg| ***** 26 ***** |
+
+
+at|        Having  5  losers   3@s(f)  0+@h(s)  2@d(s)   we need to shed  2.  We can clearly cash some  @c's  (2 if they split 4-2,  more if we draw trumps).  But what if  @h's (trumps) are 4-2 ?  If we play three rounds and the give up the 4th we will still have control of the hand yes they can take their @s's but that is all they get.|
+pg| ***** 27 ***** |
+
+
+pc|d7|pc|dQ|pc|dA|
+pg| ***** 28 ***** |
+
+
+pc|hA|pc|h6|pc|h3|pc|h7|
+pg| ***** 29 ***** |
+
+
+pc|hK|pc|h9|pc|h5|pc|s2|
+pg| ***** 30 ***** |
+
+
+pc|hQ|pc|hT|pc|h8|pc|d4|
+pg| ***** 31 ***** |
+
+
+pc|h4|pc|hJ|
+at|^^And with  YOUR  careful play we will come to our 10.      You are free to  { ^*bPlay^*n }  out the rest of the cards yourself.  |
+pf|c|
+sk||
+pg| ***** 32 ***** |
+
+
+---------------------------------------------------------------------------
+qx|60 S|
+nt|^b@2^^|
+rh||ah|Practice 60 |pn| , , , |
+md|1SJ53HAKQ42DAK63CK,SK9HJT976DJ95C832,SQ4H853D72CAQJT65,SAT8762HDQT84C974|
+sv|O|sk|S|
+at|^*bPractice 60^*n        Success |
+pg| ***** 33 ***** |
+
+
+mb|1H|mb|p|mb|4H|mb|p|mb|p|mb|p|
+pg| ***** 34 ***** |
+
+
+pc|d5|
+pg| ***** 35 ***** |
+
+
+at|        Having  5  losers   3@s(f)  0+@h(s)  2@d(s)   we need to shed  2.  We can clearly cash some  @c's  (2 if they split 4-2,  more if we draw trumps).  But what if  @h's (trumps) are 5-0 ?   Then we have to rely on the 5 trump hand also having 3 @c's and 3 @d's.|
+pg| ***** 36 ***** |
+
+
+pc|d7|pc|d4|pc|dA|
+pg| ***** 37 ***** |
+
+
+pc|hA|pc|h6|pc|h3|pc|s2|
+at|          Ooooh  5-0.    |
+pg| ***** 38 ***** |
+
+
+pc|dK|pc|d9|pc|d2|pc|d8|
+pg| ***** 39 ***** |
+
+
+pc|cK|pc|c2|pc|cA|pc|c4|
+pg| ***** 40 ***** |
+
+
+pc|cQ|pc|c9|pc|s3|pc|c3|
+pg| ***** 41 ***** |
+
+
+pc|cT|pc|c7|pc|s5|pc|c8|
+pg| ***** 42 ***** |
+
+
+pc|cJ|pc|s6|pc|sJ|pc|h7|
+pg| ***** 43 ***** |
+
+
+pc|hJ|pc|h8|pc|s7|pc|hK|
+pg| ***** 44 ***** |
+
+
+pc|d6|
+pg| ***** 45 ***** |
+
+
+at|^^And with  YOUR  careful play we will come to 10 or 11.      You are free to  { ^*bPlay^*n }  out the rest of the cards yourself.  |
+pf|c|
+sk||
+pg| ***** 46 ***** |
+
+

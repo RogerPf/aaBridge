@@ -30,7 +30,7 @@ public class SeglinePanel extends ClickPanel {
 
 	MassGi mg;
 
-//	boolean use_gray_text = false;
+	boolean use_gray_text = false;
 	boolean skip__mn_text = false;
 
 	public static final float FONT_SCALE_FRAC = 0.604f;
@@ -251,6 +251,15 @@ public class SeglinePanel extends ClickPanel {
 
 		if (boxSeg == null || boxSeg.boxRect == null)
 			return;
+
+		if (boxSeg.fillColor == Color.WHITE) {
+			/* this way we can fill an area with background without
+			 *  having a line drawn around it
+			 */
+			g2.setColor(Aaa.tutorialBackground);
+			g2.fill(boxSeg.boxRect);
+			return;
+		}
 
 		g2.setColor(boxSeg.fillColor);
 		g2.fill(boxSeg.boxRect);

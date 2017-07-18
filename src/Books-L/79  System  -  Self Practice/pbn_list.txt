@@ -1,0 +1,100 @@
+
+-o  ocp_14.1__Set_N__LEB_in_comp
+
+-r
+-m 64
+
+#	ocp__1.1__1HS_general__N.pbn
+# 	ocp__1.2__1HS_FSJS__Fit_Showing_Jump_Shift__N.pbn
+# 	ocp__1.2__1HS_mini_splinter__N.pbn
+#	ocp__1.3__1HS_full_splinter__N.pbn
+
+# 	ocp__1.4__1HS_MOTOR__2-3_level_support__N.pbn
+# 	ocp__1.4__1HS_MOTOR__FSJS__N.pbn
+# 	ocp__1.4__1HS_MOTOR__min_splinter__N.pbn
+#	ocp__1.4__1HS_MOTOR__ptrn_Strong__N.pbn
+# 	ocp__1.4__1HS_MOTOR__ptrn_Weak__N.pbn
+
+#	ocp__2____2C_Opener__5clubs_4Maj.pbn
+#	ocp__2____2C_Opener__6clubs.pbn
+# 	ocp__2____2C_Opener__both.pbn
+# 	ocp__3____1D_Opener__non-vul.pbn
+# 	ocp__3____1D_Opener__vul.pbn
+# 	ocp__3____1D_Opener_any_4441.pbn
+
+# 	ocp__4.1__1N_non-vul_10-12.pbn
+# 	ocp__4.1__1N_vul_13-15.pbn
+# 	ocp__4.1a_1N_non-vul_10-12__partner_Strong.pbn
+# 	ocp__4.1a_1N_vul_13-15__partner_Strong.pbn
+
+#	ocp__5.1__1N_LEB_non-vul.pbn
+#	ocp__5.1__1N_LEB_vul.pbn
+#	ocp__5.2__1N_LEB__non-vun__fully_configurable.pbn
+#	ocp__5.2__1N_LEB__vun__fully_configurable.pbn
+# 	ocp__5.4__LEB_after_Opps_Weak2.pbn
+
+#	ocp__6.1__2H2S_Weak2_Maj.pbn
+# 	ocp__6.2__2NT_7club_prempt.pbn
+# 	ocp__6.3__2NT_5p5p_minors_weak.pbn
+#	ocp__6.4__2NT_5-5_majors.pbn
+# 	ocp__6.5__2NT_all_three_types.pbn
+
+#	ocp__7.1a_1C_Opener_CHC_neg.pbn
+#	ocp__7.1b_1C_Opener_CHC_low_pos_5Spades.pbn
+#	ocp__7.1c_1C_Opener_CHC_low_pos_bal.pbn
+# 	ocp__7.1d_1C_Opener_CHC_Resp_4441_8-11.pbn
+#	ocp__7.1e_1C_Opener_CHC_Resp_4441_12p.pbn
+#	ocp__7.1f_1C_Opener_Gen_Resp_strong.pbn
+
+#	ocp__8____2D_Opener__h16-17__Resp_weak.pbn
+#	ocp__8____2D_Opener__h16-19__Resp_gen.pbn
+#	ocp__8____2D_Opener__h20-23__Resp_gen.pbn
+#	ocp__8____2D_Opener__Resp_0-4__6cards.pbn
+#	ocp__8____2D_Opener__Resp_14p_44.pbn
+
+# 	ocp__9.2__1C__Alpha_rebid.pbn
+# 	ocp__9.2__1C__Two_Suited_Alpha_rebid.pbn
+#	ocp__9.2__1D_non-vul__Alpha_resp.pbn
+#	ocp__9.2__1D_vul__Alpha_resp.pbn
+#	ocp__9.2__1N_non-vul__Alpha_resp.pbn
+# 	ocp__9.2__1N_vul__Alpha_resp.pbn
+#	ocp__9.2__2C__Alpha_resp.pbn
+
+#	ocp__9.3__1C-1HN__Gamma.pbn
+#	ocp__9.3__1C-2CD__Gamma.pbn
+
+#	ocp__9.3__1H-1N-2cd__Gamma.pbn
+#	ocp__9.3__1H-1N-2s___Gamma.pbn
+#	ocp__9.3__1S-1N-2cd__Gamma.pbn
+#	ocp__9.3__1S-1N-2h___Gamma.pbn
+
+#	ocp__9.4__1C__spades__Theta__Easy_Epsilon__N.pbn
+#	ocp__9.4__1C__h_an_s__Gamma__Easy_Epsilon__N.pbn
+#	ocp__9.4__1C__bal_____Iota___Easy_Epsilon__N.pbn
+
+# 	ocp__9.5__1C-3x_1Su__Delta__N.pbn
+#	ocp__9.5__1C-3x_24p__Delta__N.pbn
+#	ocp__9.5__1C-3x_2Su__Delta__N.pbn
+
+#	ocp__9.4__1C__spades__Theta__Easy_Epsilon__N.pbn
+# 	ocp__9.4__1C__bal_____Iota___Easy_Epsilon__N.pbn
+#	ocp__9.6__1C__suit__Theta__L1c1__N.pbn
+#	ocp__9.6__1C__suit__Theta__L3c2__N.pbn
+#	ocp__9.6__1C__suit__Theta__L4c0__N.pbn
+#	ocp__9.6__1C__suit__Theta__L5c0__N.pbn
+# 	ocp__9.6__1C__bal__Iota__L2h2__N.pbn
+# 	ocp__9.6__1C__bal__Iota__L3h0__N.pbn
+#	ocp__9.6__1C__bal__Iota__L3h1__N.pbn
+#	ocp__9.6__1C__bal__Iota__L4h2__N.pbn
+
+#	ocp__9.7__1C__Alpha_Resp_TS__Sigma.pbn
+#	ocp__9.7__1C__Alpha_TS_A__Sigma.pbn
+#	ocp__9.7__1C__Alpha_TS_B__Sigma.pbn
+
+1	ocp_14.1__1D__Non-vun_Mid_Intervention_LEB.pbn
+1	ocp_14.1__1D__Non-vun_Stro_Intervention_LEB.pbn
+1	ocp_14.1__1D__Vun_Mid_Intervention_LEB.pbn
+1	ocp_14.1__1D__Vun_Stro_Intervention_LEB.pbn
+2	ocp_14.1__1HS_Mid_Intervention_LEB.pbn
+3	ocp_14.1__1HS_Stro_Intervention_LEB.pbn
+

@@ -35,6 +35,7 @@ import java.text.AttributedString;
 import javax.swing.SwingUtilities;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Card;
 import com.rogerpf.aabridge.model.Cc;
@@ -163,11 +164,15 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 		Graphics2D g2 = dragImage.createGraphics();
 		Aaa.commonGraphicsSettings(g2);
 
-		g2.setFont(BridgeFonts.faceAndSymbFont.deriveFont(width * 0.8f));
 		g2.setColor(card.suit.colorCd(Cc.Ce.Strong));
 
-		String text = card.rank.toStr();
-		Aaa.drawCenteredString(g2, text, 0, 0, width, width);
+		char c = Rank.rankToLanguage(card.rank.toChar());
+		if (Aaa.isLatinFaceCard(c))
+			g2.setFont(BridgeFonts.faceAndSymbolFont.deriveFont(width * 0.8f));
+		else
+			g2.setFont(BridgeFonts.internatBoldFont.deriveFont(width * 0.8f));
+
+		Aaa.drawCenteredString(g2, "" + c, 0, 0, width, width);
 
 		App.con.setDragImage(dragImage);
 	}
@@ -507,7 +512,7 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 
 	/**
 	 */
-	public String addPadding(String cards, boolean blobFill, int[] leftpos) {
+	public String addTransformationsAndPadding(String cards, char showXes, int[] leftpos) {
 		// =============================================================
 		/*
 		 * The bridge symb and face font has some characters set to blanks with known width
@@ -544,22 +549,73 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 		int cum = 0;
 		
 		final StringBuilder sb = new StringBuilder();
-
+		
 		for (int i = 0; i < len; i++) {
-
+			
 			char c = cards.charAt(i);
+
+			/*
+			 *  Is this card to be conveted to an x ?
+			 */
+			if (showXes != '-') {			
+				if (showXes == 'x') {
+					c = 'x';
+				}
+				else if (showXes == 'v') {
+					c = ' ';
+				}
+				else {	
+					int xv  = 0;
+					if ('0' <= showXes  &&  showXes <= '9') 
+						 xv = showXes - '0';
+					else {
+						switch(showXes) {
+							default:  xv = 14; break; // Ace x etc
+							case 'k': xv = 13; break;
+							case 'q': xv = 12; break;
+							case 
+							'j': xv = 11; break;
+							case 't': xv = 10; break;
+						}
+					}	
+					int cv = 0;
+					if (('2' <= c)  &&  (c <= '9')) 
+						 cv = c - '0';
+					else {
+						switch(c) {
+							default:  cv = 14; break; // Ace x etc
+							case 'K': cv = 13; break;
+							case 'Q': cv = 12; break;
+							case 'J': cv = 11; break;
+							case 'T': cv = 10; break;
+						}
+					}				
+					if (xv >= cv)
+						c = 'x';
+				}
+			}		
+		 
+			/* 
+			 * Do the honour language substitutions			
+			 */
+			c = Rank.rankToLanguage(c);
+						
+			/*
+			 *  Put extra 'space' around each characters
+			 */
 			char bef = before;
 			int befI = beforeI;
 			int core = 1139;
 			
-			if (c == 'A' || c == 'K' || c == 'Q') {
+			if ( /* (c > ???) ||*/ c == 'A' || c == 'K' || c == 'Q' || c == 'R'|| c == 'D' || c == 'B') {
 				core = 1479;
 				bef = '*';
 				befI = 500;
 			}
-			else if (c == 'T') {
+			else if (c == 't') { // the T character is converted to lowercase t  which is shown as a '10' by the font
 				core = 1479;
 			}
+			
 			if (i == 0) {
 				bef = '<';
 				befI = 500;
@@ -574,16 +630,14 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 			
 			cum += picas;
 			
-			leftpos[i] = cum; 
+			leftpos[i] = cum;
 			
-			if (blobFill)
-				sb.append('@'); // @ will be shown as the greek letter 'alpha'
-			else
-				sb.append(c);
+			sb.append(c);
 			
 			sb.append(after);
 
 		}
+	
 		return sb.toString();
 		// @formatter:on
 	}
@@ -691,10 +745,6 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 		return true;
 	}
 
-	static String numbersAsWords[] = { "void", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "tweleve", "thirteen" };
-
-	static final String ht_ay[] = { "", "  center left ", "'New Board'", "  Click" };
-
 	/**
 	 */
 	public void paintComponent(Graphics g) {
@@ -750,7 +800,7 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 		float youLozengeHeight = 0.0f;
 
 		boolean visSeat = true;
-		String displayedWordInBox = "hidden";
+		String displayedWordInBox = Aaf.game_hidden;
 		Color displayedWordColor = hand.isDummy() ? Aaa.veryWeedyBlacHid : Aaa.veryWeedyBlack;
 
 		if (!floatingHand) {
@@ -778,7 +828,7 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 			g2.fill(youDisplayRect);
 
 			g2.setStroke(ourOutline);
-			g2.setColor(Color.white);
+			g2.setColor(Color.WHITE);
 			g2.draw(youDisplayRect);
 
 			float xy = boarderThickness;
@@ -792,16 +842,17 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 			g2.fill(rtNESW);
 
 			g2.setStroke(ourOutline);
-			g2.setColor(Color.white);
+			g2.setColor(Color.WHITE);
 			g2.draw(rtNESW);
 
-			float bridgeLightFontSize = (float) nlh * 0.73f;
-			Font bridgeLightFont = BridgeFonts.bridgeLightFont.deriveFont(bridgeLightFontSize);
-			g2.setFont(bridgeLightFont);
+			float bridgeTextFontSize = (float) nlh * 0.73f;
 
-			String letter = hand.compass.toStr();
+			String seat = Dir.getLangDirChar(hand.compass) + "";
+
+			g2.setFont(BridgeFonts.internationalFont.deriveFont(bridgeTextFontSize));
+
 			g2.setColor(Color.WHITE);
-			Aaa.drawCenteredString(g2, letter, xy, xy, nlh, nlh);
+			Aaa.drawCenteredString(g2, seat, xy, xy, nlh, nlh);
 
 			g2.setColor(pointsColor); // Also used by the 'You' field
 
@@ -809,43 +860,57 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 			// ------------------------------------------------------------------
 			visSeat = App.isSeatVisible(hand.compass);
 			if (deal.isDoneHand()) {
-				displayedWordInBox = ht_ay[hand.compass.v];
+				displayedWordInBox = Aaf.box_text[hand.compass.v];
 				displayedWordColor = Aaa.weedyBlack;
 				visSeat = false;
 			}
 
-			boolean showLTC = App.showLTC && !deal.dfcDeal && visSeat && !App.isModeAnyEdit() && hand.didHandStartWith13Cards();
+			boolean displayMetrics = !deal.dfcDeal && visSeat && hand.didHandStartWith13Cards() && !deal.isDoneHand();
+			boolean displayHCPs = displayMetrics && App.showHCPs;
+			boolean display2ndMetric = displayMetrics && (App.show2ndMetric != App.Metric_None);
 
-			// The "You" text
+			// The "You" text and name
 			// ------------------------------------------------------------------
 			float yAdj = 0.226f;
-			if (youSeatUs && hand.playerName.isEmpty()) {
-				float youTextFontSize = bridgeLightFontSize * 1.2f;
-				Font youTextFont = BridgeFonts.bridgeLightFont.deriveFont(youTextFontSize);
+			if (youSeatUs && (hand.playerName.isEmpty() || App.isMode(Aaa.EDIT_PLAY))) {
+				float youTextFontSize = bridgeTextFontSize * 1.2f;
+				Font youTextFont = BridgeFonts.internationalFont.deriveFont(youTextFontSize);
 				g2.setFont(youTextFont);
-				String s = (showLTC) ? "   " : "       ";
-				g2.drawString(s + "You", (int) (xy + nlh * 1.5), (int) (xy + nlh - youTextFontSize * yAdj));
+				String s = (display2ndMetric) ? "  " : "       ";
+				g2.drawString(s + Aaf.game_youSeat, (int) (xy + nlh * 1.5), (int) (xy + nlh - youTextFontSize * yAdj));
 			}
 			else if (App.isMode(Aaa.EDIT_PLAY)) {
-				if (deal.isDeclarerValid() && deal.contractCompass == hand.partner().compass) {
-					// nothing we don't want to show this on the dummy hand
-				}
-				else {
-					// float youTextFontSize = bridgeLightFontSize * 1.0f;
-					// Font youTextFont = BridgeFonts.bridgeLightFont.deriveFont(youTextFontSize);
-					// g2.setFont(youTextFont);
-					// g2.drawString("Click to be You", (int) (xy + nlh * 1.5), (int) (xy + nlh - youTextFontSize * yAdj));
-				}
+				// we don't show names when in edit_play mode
+				// names are CLEARED when entering other EDIT modes or when play changes are made
 			}
 			else if (hand.playerName.isEmpty() == false) {
-				float youTextFontSize = bridgeLightFontSize * 1.2f;
-				Font youTextFont = BridgeFonts.bridgeLightFont.deriveFont(youTextFontSize);
+				String shown = hand.playerName;
+				if (App.handPanelNameAreaInfoNumbersShow == false) {
+					// do nothing extra
+				}
+				else if (display2ndMetric && (App.show2ndMetric == App.Metric_KnR) && (shown.length() > 4)) {
+					shown = shown.substring(0, 4);
+				}
+				else if (display2ndMetric && (shown.length() > 6)) {
+					shown = shown.substring(0, 6);
+				}
+				else if (displayHCPs && shown.length() > 13) {
+					shown = shown.substring(0, 13);
+				}
+
+				if ((App.show2ndMetric != App.Metric_None) && (shown.length() > 2)) {
+					;
+					shown = shown.charAt(0) + shown.substring(1).toLowerCase();
+				}
+
+				float youTextFontSize = bridgeTextFontSize * 1.2f;
+				Font youTextFont = BridgeFonts.internationalFont.deriveFont(youTextFontSize);
 				g2.setFont(youTextFont);
-				g2.drawString(hand.playerName, (int) (xy + nlh * 1.5), (int) (xy + nlh - youTextFontSize * yAdj));
+				g2.drawString(shown, (int) (xy + nlh * 1.5), (int) (xy + nlh - youTextFontSize * yAdj));
 			}
 
-			Font pointsFont = BridgeFonts.bridgeBoldFont.deriveFont(nlh * 1.0f);
-			if (App.showPoints && !deal.dfcDeal && visSeat && hand.didHandStartWith13Cards()) { // && isModeAnyEdit()
+			Font pointsFont = BridgeFonts.internatBoldFont.deriveFont(nlh * 1.0f);
+			if (App.handPanelNameAreaInfoNumbersShow && displayHCPs) {
 				Rectangle2D bkgRect = new Rectangle2D.Float(dealLozengeWidth * 0.88f, xy + (nlh * 0.10f), nlh, nlh * 0.80f);
 				Color colText = g2.getColor();
 				g2.setColor(bannerColor);
@@ -853,12 +918,11 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 
 				g2.setColor(colText);
 				g2.setFont(pointsFont);
-				Aaa.drawCenteredString(g2, Integer.toString(hand.countHighCardPoints()), dealLozengeWidth * 0.88f, xy, nlh, nlh);
+				Aaa.drawCenteredString(g2, Integer.toString(hand.count_HighCardPoints()), dealLozengeWidth * 0.88f, xy, nlh, nlh);
 			}
 
-			if (showLTC) { //
+			if (App.handPanelNameAreaInfoNumbersShow && display2ndMetric) {
 				float p = 0.57f;
-				int v = hand.countLosingTricks_x2();
 
 				Rectangle2D bkgRect = new Rectangle2D.Float(dealLozengeWidth * p, xy + (nlh * 0.10f), nlh, nlh * 0.80f);
 				Color colText = g2.getColor();
@@ -868,17 +932,47 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 				g2.setColor(colText);
 				g2.setFont(pointsFont);
 
-				Aaa.drawCenteredString(g2, Integer.toString(v / 2), dealLozengeWidth * p, xy, nlh, nlh);
-				if (v % 2 == 1) {
-					p += 0.09;
-					bkgRect = new Rectangle2D.Float(dealLozengeWidth * p, xy + (nlh * 0.10f), nlh, nlh * 0.80f);
-					colText = g2.getColor();
-					g2.setColor(bannerColor);
-					g2.fill(bkgRect);
+				if (App.show2ndMetric == App.Metric_LTC_Bas) { //
+					int v = hand.countLosingTricks_Basic_x2();
+					Aaa.drawCenteredString(g2, Integer.toString(v / 2), dealLozengeWidth * p, xy, nlh, nlh);
+					if (v % 2 == 1) {
+						p += 0.09;
+						bkgRect = new Rectangle2D.Float(dealLozengeWidth * p, xy + (nlh * 0.10f), nlh, nlh * 0.80f);
+						colText = g2.getColor();
+						g2.setColor(bannerColor);
+						g2.fill(bkgRect);
 
-					g2.setColor(colText);
-					Aaa.drawCenteredString(g2, "" + (char) 0xbd, dealLozengeWidth * p, xy, nlh, nlh);
+						g2.setColor(colText);
+						Aaa.drawCenteredString(g2, "" + (char) 0xbd, dealLozengeWidth * p, xy, nlh, nlh);
+					}
 				}
+
+				if (App.show2ndMetric == App.Metric_LTC_Ref) { //
+					int v = hand.countLosingTricks_Ref_x2();
+					Aaa.drawCenteredString(g2, Integer.toString(v / 2), dealLozengeWidth * p, xy, nlh, nlh);
+					if (v % 2 == 1) {
+						p += 0.09;
+						bkgRect = new Rectangle2D.Float(dealLozengeWidth * p, xy + (nlh * 0.10f), nlh, nlh * 0.80f);
+						colText = g2.getColor();
+						g2.setColor(bannerColor);
+						g2.fill(bkgRect);
+
+						g2.setColor(colText);
+						Aaa.drawCenteredString(g2, "" + (char) 0xbd, dealLozengeWidth * p, xy, nlh, nlh);
+					}
+				}
+
+				else if (App.show2ndMetric == App.Metric_KnR) { //
+					double val = hand.count_KnR();
+					String s = String.format("%.2f", val);
+					Aaa.drawCenteredString(g2, s, dealLozengeWidth * p, xy, nlh, nlh);
+				}
+
+				else if (App.show2ndMetric == App.Metric_Banzai) { //
+					int t = hand.count_Banzai();
+					Aaa.drawCenteredString(g2, Integer.toString(t), dealLozengeWidth * p, xy, nlh, nlh);
+				}
+
 			}
 
 		}
@@ -899,13 +993,14 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 		float handFontSize = (float) (suitLineHeight) * (slim ? 0.98f : 0.97f);
 
 		if (!floatingHand && !visSeat) {
-			g2.setFont(BridgeFonts.bridgeLightFont.deriveFont(handFontSize));
+			g2.setFont(BridgeFonts.internationalFont.deriveFont(handFontSize));
 			g2.setColor(displayedWordColor);
 			g2.drawString(displayedWordInBox, dealLozengeWidth * (deal.isDoneHand() ? 0.15f : 0.3f), dealLozengeHeight * 0.650f);
 		}
 
-		Font suitSymbolsFont = BridgeFonts.faceAndSymbFont.deriveFont(handFontSize * 0.65f);
-		Font cardFaceFont = BridgeFonts.faceAndSymbFont.deriveFont(handFontSize);
+		Font suitSymbolFont = BridgeFonts.faceAndSymbolFont.deriveFont(handFontSize * 0.65f);
+		Font cardFaceFont = BridgeFonts.faceAndSymbolFont.deriveFont(handFontSize);
+		Font cardFaceInternational = BridgeFonts.internatBoldFont.deriveFont(handFontSize);
 
 		Frag[] frags = getAppropriateFrags();
 
@@ -929,13 +1024,22 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 			int row = Suit.Spades.v - frag.suit.v;
 			fdi.tl = null;
 
+			char showXes = frag.getShowXes();
+
+			// System.out.print(showXes);
+
+			if (deal.dfcDeal && App.dfcAnonCards) {
+				showXes = 'x';
+			}
+
 			String rawCards = frag.toScrnStr();
 			if (App.fillHandDisplay) {
 				rawCards = generateTestCards(frag); // <<<<<<<<<<<<<<<<<<<< TEST CARD GENERATOR >>>>>>>>
+				showXes = '-';
 			}
 
 			int[] ddsRightPos = new int[13];
-			String cards = addPadding(rawCards, deal.dfcDeal && App.dfcCardsAsBlobs, ddsRightPos);
+			String cards = addTransformationsAndPadding(rawCards, showXes, ddsRightPos);
 
 			boolean showSuitSymbol = !deal.dfcDeal && App.showSuitSymbols;
 			float lhs = suitLineStartX * (slim ? 0.00f : 1.0f) + suitLineHeight * (slim ? 0.00f : 0.125f);
@@ -954,16 +1058,16 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 					String v = "";
 					g2.setColor(Cc.BlackStrong);
 					if (App.dfcWordsForCount && (App.ddsDealHandDispExamNumbWordsSuppress == false)) {
-						Font wordsFont = BridgeFonts.bridgeBoldFont.deriveFont(handFontSize * 0.95f);
+						Font wordsFont = BridgeFonts.internatBoldFont.deriveFont(handFontSize * 0.95f);
 						g2.setFont(wordsFont);
-						v = numbersAsWords[frag.size()];
+						v = Aaf.numbersAsWords[frag.size()];
 					}
 					else {
 						g2.setFont(cardFaceFont);
 						v = frag.size() + "";
 						if (frag.size() == 0) {
 							if (App.dfcHyphenForVoids)
-								v = "_"; // special underline - changed in font to be same size as other numbers and higher
+								v = "~"; // ~ - changed in font to be same size as other numbers and higher
 							else
 								g2.setColor(Cc.BlackWeedy);
 						}
@@ -972,14 +1076,14 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 				}
 				else if ((frag.suitVisControl & Suit.SVC_dot) == Suit.SVC_dot) {
 					g2.setColor(Cc.BlackStrong);
-					g2.setFont(suitSymbolsFont);
-					g2.drawString(",o", lhs, y - suitLineStartY * 0.2f); // the ",o" will appear as a BIG dot
+					g2.setFont(suitSymbolFont);
+					g2.drawString("o" /* dot in dcf font */, lhs, y - suitLineStartY * 0.2f); // the "(" will appear as a BIG dot
 				}
 			}
 			else if (showSuitSymbol) {
 				g2.setColor(frag.suit.color(Cc.Ce.Weak));
-				g2.setFont(suitSymbolsFont);
-				g2.drawString(frag.suit.toStr(), lhs, y - suitLineStartY * (slim ? 0.5f : 0.1f));
+				g2.setFont(suitSymbolFont);
+				g2.drawString(frag.suit.toStrLower(), lhs, y - suitLineStartY * (slim ? 0.5f : 0.1f));
 				g2.setColor(Color.black);
 			}
 
@@ -989,6 +1093,12 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 
 			AttributedString astr = new AttributedString(cards);
 			astr.addAttribute(TextAttribute.FONT, cardFaceFont);
+
+			for (int i = 0; i < cards.length(); i += 3) {
+				if (Aaa.hasUni(cards.charAt(i + 1))) {
+					astr.addAttribute(TextAttribute.FONT, cardFaceInternational, i + 1, i + 2);
+				}
+			}
 
 			if ((fdi.highlightIndex > -1) && (cards.length() / 3 > fdi.highlightIndex)) {
 				Color col = (fdi.highlightSel) ? Aaa.cardClickedOn : Aaa.cardHover;
@@ -1014,7 +1124,7 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 
 				float fontScale = 0.55f;
 				double boxScale = 1.40f;
-				Font ddsScoreFont = BridgeFonts.faceAndSymbFont.deriveFont(handFontSize * fontScale);
+				Font ddsScoreFont = BridgeFonts.faceAndSymbolFont.deriveFont(handFontSize * fontScale);
 				TextLayout tlc = new TextLayout("T", ddsScoreFont, frc);
 				double ddsCharWidth = tlc.getBounds().getWidth() * boxScale;
 				double ddsCharHeight = tlc.getBounds().getHeight() * boxScale;
@@ -1033,21 +1143,16 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 						continue;
 
 					x = (float) ((fdi.bounds.getMinX() + (fdi.bounds.getWidth() * ddsRightPos[i]) / ddsRightPos[totalCards - 1]) - ddsCharWidth);
-					y = (float) (fdi.bounds.getMaxY() + ddsCharHeight * 0.33);
+					y = (float) (fdi.bounds.getMaxY() + ddsCharHeight * 0.30);
 
-					double w = ddsCharWidth * 0.8;
-					double w2 = ddsCharWidth * 0.3;
-					double h = ddsCharHeight * 0.9;
+					double w = ddsCharWidth * 1.10;
+					double w2 = ddsCharWidth * 0.35;
+					double h = ddsCharHeight * 1.10;
 					RoundRectangle2D ddsBackground = new RoundRectangle2D.Double((double) x + w2, y - h, w, h, w, h);
 
 					// fill with the score background box colour
 					g2.setColor(((card.getDdsScore() == highestDdsScore) ? scoreBestFill : scoreOthrFill));
 					g2.fill(ddsBackground);
-
-					// add a thin highlight to the edge of the background
-//					g2.setColor(((card.getDdsScore() == highestDdsScore) ? scoreBestOutl : scoreOthrOutl));
-//					g2.setStroke(new BasicStroke((float) ddsCharWidth * 0.12f));
-//					g2.draw(ddsBackground);
 
 					g2.setColor(Cc.BlackStrong);
 					TextLayout text = new TextLayout(card.getDisplayScore(wonSoFar), ddsScoreFont, frc);

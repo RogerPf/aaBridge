@@ -39,8 +39,7 @@ Please click   ^*bStep > ^*n  to see this example displayed|
 pg| ***** 0 ***** |
 
 
-qx|md1|
-
+qx|md 1|
 nt|^b@2^*bMake Deal^e!md! ... !^*n^z@3
 |
 st||
@@ -54,7 +53,7 @@ Please click   ^*bStep > ^*n|
 pg| ***** 1 ***** |
 
 
-qx|md2|
+qx|md 2|
 
 nt|^b@2^*bMake Deal^e!md! ... !^*n^z@3|
 
@@ -69,7 +68,7 @@ If you fill in three of the hands completely any extra cards are automaticaly pu
 pg| ***** 2 ***** |
 
 
-qx|md3|
+qx|md 3|
 
 nt|^b@2^*bMake Deal^e!md! ... !^*n^z@3|at|
 
@@ -80,10 +79,8 @@ md|hkj,s97,st4,hq6|
 pg| ***** 3 ***** |
 
 
-qx|md4|
-
+qx|md 4|
 nt|^b@2^*bMake Deal^e!md! ... !^*n^z@3|at|
-
 With a zero (0) in front of a hand the command becomes more of an insert/edit, here moving the @hQ      click   ^*bStep >^*n
 
 ^d!md!hkj,s97,st4,hq6!
@@ -95,24 +92,118 @@ md|0,,hq,|
 at|^d!md!|cp|7|at|^*b0^*n|cp||AT|,,hq,!|
 at|^kNote - examples that show zeros other than in the first position 
 ^k  like     !md!|cp|7|at|^*b0^*n|cp||AT|,0,0hq,0!    are misleading, those 3 extra zeros are ignored.|
-pg||
+pg| ***** 5 ***** |
 
 
 qx|rc|
-nt|^b@2^*bRemove Cards^f!rc! ... !  ^iadded in ^*b aaBridge ^*n|cp|red|at|^*b2820^*n|cp||at|^*n^z@3|at|                     
+nt|^b@2^*bRemove Cards^f!rc! ... !^*n ^^                     
 If you want to change a card or cards for another.  You need to remove them.  They MUST be unplayed cards.|
-pg||
+pg| ***** 6 ***** |
 
 
 at|^^^^^d!rc!s97!|
-|rc|s97|
-pg||
+rc|s97|
+pg| ***** 7 ***** |
 
 
 at| ^hAdd re-add them
 ^d!md!0,s86!|
 md|0,s86|
-pg| ***** 4 ***** |
+pg| ***** 8 ***** |
+
+
+qx|rt|
+md|4S74HAKJ6DAKJ62CA9,S862H75D843CKT873,SJ53HT84DT9CQ6542,SAKQT9HQ932DQ75CJ|
+sv|E|sk|E|mb|p1cppp|
+nt|^b@2^*bRotate Tutorial^g!rt!n! ^*n ^k  (the East hand is displayed)|
+pg| ***** 10 ***** |
+
+
+at|^^^^ ^d!rt!1!  ^g The hand is now rotated 90 deg clockwise.    So East is now in the South zone.
+                  ^g If it is not check you have used the   { Apply defaults }   button.|
+rt|1|
+pg| ***** 11 ***** |
+
+
+at|^^^^ ^d!md!4...!   ^g The rotation is cleared by any  !rt!n!  command that is not 1-3  or by a non zero !md!    ...  |
+md|4S74HAKJ6DAKJ62CA9,S862H75D843CKT873,SJ53HT84DT9CQ6542,SAKQT9HQ932DQ75CJ|
+sv|e|sk|E|mb|p1cppp|
+pg| ***** 12 ***** |
+
+
+qx|xs|
+md|4S74HAKJ6DAKJ62CA9,S862H75D843CKT873,SJ53HT84DT9CQ6542,SAKQT9HQ932DQ75CJ|
+sv|b|sk||mb|p1cppp|
+nt|^b@2^*bShow as X'es^f!xs! ----, ----, ----, ----! ^*n|
+pg| ***** 13 ***** |
+
+
+at|^^   
+^d xs!----,---x,----,----!        makes  West's  @c's  show as    x's       the hand order is as in   !^*bmd^*n! ...  S,W,N,E  |
+xs|----,---x,----,----|   
+pg| ***** 14 ***** |
+
+
+at|^^^d xs!----,----,-x--,----!        makes  North's  @h's  show as    x's       the suits in the hand are in   SHDC   order|
+xs|----,----,-x--,----|
+pg| ***** 15 ***** |
+
+
+at|^^^d xs!----,---c,----,----!        restores Wests @c's  to "cards"             fields with a hyphen cause no change |
+xs|----,---c,----,----|         
+pg| ***** 16 ***** |
+
+
+at|^^^d xs!xxxx,----,----,----!       all souths suits now also show as   x's |
+xs|xxxx,----,----,----|         
+pg| ***** 17 ***** |
+
+
+at|^^^d xs!!                               unspecified fields default to     'c'  =  "cards"   so this resets  ALL to cards|
+xs||
+pg| ***** 18 ***** |
+
+
+at|^^^ethe settings persist across from one  !^*bmd^*n!  to the next so the lin file author MUST reset them to 'cards'.|
+pg| ***** 19 ***** |
+
+
+nt|^b@2^*bX'es Show^f!xs! KK--, vv--, ----, -8-8! ^*n        continued|
+pg| ***** 20 ***** |
+
+
+at|^^                           ^h           You can  'x'  all the cards from a particular rank and below.
+^c xs!--J-,----,----,----!                    The  'J'  here sets  South's  @d's  that are  ^*b less than or equal to ^*n   'Jack',   to    'x'|
+xs|--J-,----,----,----|   
+pg| ***** 21 ***** |
+
+
+at|
+^c xs!8888,8888,8888,8888!        All the cards  '8'  and below now show as  'X'es|
+xs|8888,8888,8888,8888|
+pg| ***** 22 ***** |
+
+
+at|
+^c xs!qqqq,qqqq,qqqq,qqqq!        Only the Aces and Kings are left   NOT  as 'X'es|
+xs|qqqq,qqqq,qqqq,qqqq|   
+pg| ***** 23 ***** |
+
+
+at|^^^c xs!!                        ^i   Standard reset|
+xs||
+pg| ***** 24 ***** |
+
+
+at|
+^c xs!--v-,----,----,----!                    The    ^*bv^*n      makes South's  @d's Vanish (go invisible)  -  whole suits only|
+xs|--v-,----,----,----|   
+pg| ***** 25 ***** |
+
+
+at|^^^c xs!!                        ^i   Standard reset|
+xs||
+pg| ***** 26 ***** |
 
 
 ht|z|at|@0

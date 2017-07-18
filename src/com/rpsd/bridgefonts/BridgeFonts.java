@@ -15,10 +15,13 @@ import java.io.InputStream;
 
 public class BridgeFonts {
 
-	public final static Font bridgeLightFont = readResourceFont("BridgeLight.ttf");
-	public final static Font bridgeBoldFont = readResourceFont("BridgeBold.ttf");
-	public final static Font bridgeTextStdFont = readResourceFont("BridgeTextStd.ttf");
-	public final static Font faceAndSymbFont = readResourceFont("BridgeFaceAndSymbols.ttf");
+	public final static Font internationalFont = Font.decode(""); // A way of getting the default font;
+	public final static Font internatBoldFont = internationalFont.deriveFont(Font.BOLD);
+
+//	public final static Font bridgeBoldFont = readResourceFont("BridgeTextBold.ttf");
+	public final static Font bridgeTextStdFont = readResourceFont("BridgeTextStandard.ttf");
+
+	public final static Font faceAndSymbolFont = readResourceFont("BridgeCardFaceAndSuitSymbol.ttf");
 
 	/*
 	 * The BridgeFaceAndSymbFont has some characters set to blanks with known width (picas)
@@ -28,15 +31,15 @@ public class BridgeFonts {
 	 */
 
 	static Font readResourceFont(String fontFileName) {
-		Font temp = null;
+		Font font = null;
 		try {
 			InputStream stream = BridgeFonts.class.getResourceAsStream(fontFileName);
-			temp = Font.createFont(Font.TRUETYPE_FONT, stream);
+			font = Font.createFont(Font.TRUETYPE_FONT, stream);
 		} catch (Exception e) {
-			System.out.println("Font creation failed");
-			temp = Font.decode(""); // A way of getting the default font
+			System.out.println("Font creation failed for: " + fontFileName);
+			font = Font.decode(""); // A way of getting the default font
 		}
-		return temp;
+		return font;
 	};
 
 }

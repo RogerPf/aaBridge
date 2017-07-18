@@ -38,6 +38,7 @@ import net.miginfocom.swing.MigLayout;
 import com.rogerpf.aabridge.controller.Aaa;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.controller.Book.LinChapter;
+import com.rogerpf.aabridge.controller.CmdHandler;
 import com.rogerpf.aabridge.model.Cc;
 import com.rogerpf.aabridge.model.Lin;
 
@@ -152,18 +153,30 @@ class AaBookPanelInner extends ClickPanel {
 		// ==============================================================================================
 		public void actionPerformed(ActionEvent evt) {
 
-			if (buttons.size() != 3) // 3 = 1 + the 2 hidden "start and end" empty space buttons
+			int index = getLoadedChapterIndex();
+
+			if ((index < 0) || (index > (buttons.size() - 2))) // there is a hidden empty button top
 				return;
 
-			// as we there is only one chapter in this book it will have index 0
-			boolean change = App.book.getChapterByIndex(0).hasLinFileChanged(linfileChangePollTimer_ms);
+			boolean change = App.book.getChapterByIndex(index).hasLinFileChanged(linfileChangePollTimer_ms);
 
 			if (change) {
+				boolean old_autoEnter = App.pbnAutoEnter;
+				boolean restart_analyser = App.ddsAnalyserPanelVisible && App.reinstateAnalyser;
 				// System.out.println(" file change detected ");
 				int prev_end = (App.mg.lin.linType == Lin.FullMovie || App.mg.lin.linType == Lin.Other) ? App.mg.get_current_pg_number_display() : -1;
-				App.book.loadChapterByIndex(0);
-				if (prev_end > 0)
+				App.book.loadChapterByIndex(index);
+				if (prev_end > 0) {
 					App.mg.jump_to_pg_number_display(prev_end);
+				}
+				if (old_autoEnter && App.cameFromPbnOrSimilar()) {
+					CmdHandler.tutorialIntoDealClever();
+					App.pbnAutoEnter = true;
+					if (restart_analyser) {
+						App.gbp.c2_0__ddsAnal.analyseButtonClicked();
+					}
+					App.gbp.matchPanelsToDealState();
+				}
 			}
 		}
 	});
@@ -196,10 +209,12 @@ class AaBookPanelInner extends ClickPanel {
 	public void matchToAppBook() {
 		// ==============================================================================================
 
-		BookNameBtn button = new BookNameBtn(this, " ", -1, "");
-		add(button);
-		buttons.add(button);
+//		BookNameBtn button = new BookNameBtn(this, " ", -1, "");
+//		add(button);
+//		buttons.add(button);
 		setBackground(Cc.g(Cc.darkGrayBg));
+
+		BookNameBtn button;
 
 		int i = 0;
 		while (i < App.book.size()) {
@@ -216,6 +231,7 @@ class AaBookPanelInner extends ClickPanel {
 			i++;
 		}
 
+		// null blank button at end for clarity
 		button = new BookNameBtn(this, " ", -1, "");
 		add(button);
 		buttons.add(button);
@@ -293,6 +309,7 @@ class AaBookPanelInner extends ClickPanel {
 		if (success) {
 			scrollRectToVisible(button.getBounds());
 			setButtonCurrentLin(button);
+			App.gbp.dealMajorChange();
 		}
 		else
 			button.brokenLin = true;
@@ -300,6 +317,7 @@ class AaBookPanelInner extends ClickPanel {
 	}
 
 	public void paintComponent(Graphics g) {
+		// ==============================================================================================
 //		super.paintComponent(g); we do it all below
 		Graphics2D g2 = (Graphics2D) g;
 
@@ -369,7 +387,7 @@ class BookNameBtn extends JButton implements MouseListener {
 		pressed = false;
 		// a hack to make the two (empty) separation buttons act like background space
 		if (e.getButton() == MouseEvent.BUTTON3 && getText().contentEquals("                                              ")) {
-			App.frame.clickPasteTimer.start();
+			App.frame.rightClickPasteTimer.start();
 			return;
 		}
 		boss.bookButtonClicked(this);
@@ -391,7 +409,7 @@ class BookNameBtn extends JButton implements MouseListener {
 
 	final static Color unexaminedColor = Aaa.veryWeedyBlack;
 	final static Color examinedColor = Color.BLACK;
-	final static Color hoverColor = Color.white; // new Color( 0, 255, 0);
+	final static Color hoverColor = Color.WHITE; // new Color( 0, 255, 0);
 	final static Color pressedColor = Aaa.tutorialLinkNorm_g;
 	final static Color currentLinColor = Color.BLACK;
 	final static Color brokenColor = Color.RED;

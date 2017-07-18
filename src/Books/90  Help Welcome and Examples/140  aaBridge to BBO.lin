@@ -1,0 +1,49 @@
+%% aaBridge to BBO
+%% Last edited  2015  Oct 30
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+fh|150|fb|15|                1  large
+fh|240|fb|25|                2
+fh|342|fb|35|                3  med+
+fh|836|fb|85|                8  med  greater than 4 as it is in the 30 - 39 zone
+fh|s24|                      s  the word updated
+fh|v28|                      v  the little video button
+
+cr|2200|cg|2060|cb|2255|     2  purple
+cr|3200|cg|3255|cb|3255|     3  light blue
+cr|4170|cg|4190|cb|4255|     4  medium blue
+cr|5016|cg|5128|cb|5016|     5  green 
+cr|7255|cg|7000|cb|7255|     7  
+
+bt||
+
+
+mn|Get  aaBridge hands  sent  up to BBO|
+
+fp|1|at|^^^^^a   @s @h @d @c  ^v     @c @d @h @s|  suit symbols around the  MN  header         
+fp||
+at|^b@2^z@3|
+ht|f|n^|5||Lg|h|
+at|
+^c@2^cYou have a deal in aaBridge and want it sent to BBO  
+|n^|9|at|
+^d^*bOR^*n
+|n^|9|at|
+You have a deal on paper and want to add it to aaBridge and then send it up to BBO 
+|n^|e|at|
+Two documents cover this subject.  They are called -
+|n#|a||fp|3|at|^d ^*bEnter (Type) Hands into aaBridge  -  a How to^*n|fp||n#|0|at|
+|n#|a||fp|3|at|^d ^*bGet  aaBridge  hands up to BBO  -  a How to^*n|fp||n#|a|at|
+These documents are part of the  ^*b  aaBridge Document Collection   ^*n  which is a package of  .doc  format documents.      To get a copy of the collection put on to your desktop -
+^c|n#|a||cp|8|at|^*bClick^*n|cp||at|  on the long thin 'button' below - ^b@2^s@3
+|fp|8|cs|3|at|
+|fp||at| ^-{ |n#|4|at|^*f copyFolder_Doc_Collection, Copy the     aaBridge - Doc Collection    to your Desktop ^*n  |n^|a|at|^^
+}^-  |cs||fp||at|@1
+^cthe folder          ^*baaBridge - Doc Collection^*n       will now be on your desktop.|
+
+
+|
+ht|z|at|@0
+^q Roger Pfister       December  2015
+|

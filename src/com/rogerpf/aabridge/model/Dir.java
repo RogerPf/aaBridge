@@ -10,6 +10,9 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.model;
 
+import com.rogerpf.aabridge.controller.Aaf;
+import com.rogerpf.aabridge.controller.LangdeckList;
+
 public enum Dir {
 
 	North(0), East(1), South(2), West(3), Invalid(0); // Invalid is better than null and 0 should be safe
@@ -36,6 +39,13 @@ public enum Dir {
 
 	public static Dir dirFromInt(int posClockwise) {
 		return ceAy[(posClockwise + 64) % 4];
+	}
+
+	public String pbnChar() {
+		if (this == Invalid)
+			return "N";
+		else
+			return name().substring(0, 1);
 	}
 
 	/**   
@@ -129,7 +139,7 @@ public enum Dir {
 	//@formatter:off
 	private final static char[]  compass_to_nesw_ch        = { 'N', 'E', 'S', 'W' };
 	private final static char[]  compass_to_nesw_lower_ch  = { 'n', 'e', 's', 'w' };
-	private final static String[] compass_to_nesw_str      = { "N", "E", "S", "W" };
+	public  final static String[] compass_to_nesw_str      = { "N", "E", "S", "W" };
 	private final static String[] compass_to_nesw_str_long = { "North", "East", "South", "West" };
 	private final static String[] compass_to_open_resp_str = { "", "Resp..", "", "Open.."};
 	private final static String[] compass_to_ns_ew_str     = { "NS", "EW", "NS", "EW" };
@@ -149,4 +159,40 @@ public enum Dir {
 	private static Dir ceAy[] = { North, East, South, West };
 
 	public final int v;
+	
+	public static char langDirChar[] = { 'N', 'E', 'S', 'W' };
+	
+	public static void initLangDirNSEW(String s) { // in-comming order is NSEW
+		s = s.trim();
+		if (s.length() >= 4) {
+			langDirChar[Dir.North.v] = s.charAt(0);
+			langDirChar[Dir.East.v] = s.charAt(2);  // east
+			langDirChar[Dir.South.v] = s.charAt(1); // south
+			langDirChar[Dir.West.v] = s.charAt(3);
+		}
+	}
+	
+	public static char getLangDirChar(Dir dir) {
+		if (LangdeckList.isDeckOverridden())
+			return compass_to_nesw_ch[dir.v]; // we use English direction letters if the language is over-ridden
+		else
+			return langDirChar[dir.v];
+
+	}
+	
+	public static String[] langDirNESWNames = { "North", "South", "East", "West" };
+	
+	public static void initLangDirNSEW(String n, String s, String e, String w) {
+		langDirNESWNames[Dir.North.v] = n;
+		langDirNESWNames[Dir.South.v] = s;
+		langDirNESWNames[Dir.East.v] = e;
+		langDirNESWNames[Dir.West.v] = w;
+	}
+	
+	public static String getLangDirStr(Dir dir) {
+		if (Aaf.iso_deck_lang.contentEquals("default") == false)
+			return compass_to_nesw_str_long[dir.v]; // if the deck language is overridden we use English direction words 
+		else
+			return langDirNESWNames[dir.v];
+	}
 }

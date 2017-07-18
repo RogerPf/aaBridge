@@ -69,7 +69,7 @@ public class WeTheyScorePanel extends ClickPanel {
 		g2.setColor(Cc.g(Cc.blackWeak));
 		g2.draw(rr);
 		g2.setColor(Aaa.weedyBlack);
-		g2.setFont(BridgeFonts.bridgeLightFont.deriveFont(lozWidth * 0.065f));
+		g2.setFont(BridgeFonts.internationalFont.deriveFont(lozWidth * 0.065f));
 
 		// We display the cards as seen by - 'the target'
 
@@ -117,7 +117,7 @@ public class WeTheyScorePanel extends ClickPanel {
 		x1 += lozWidth * 0.15f + lozWidth * 0.30f * side;
 		y1 += lozWidth * 0.15f;
 
-		g2.setFont(BridgeFonts.bridgeBoldFont.deriveFont(lozWidth * 0.080f));
+		g2.setFont(BridgeFonts.internatBoldFont.deriveFont(lozWidth * 0.080f));
 
 		if (score.x != 0) {
 			g2.drawString(String.format("%d", score.x * mult), x1, y1);

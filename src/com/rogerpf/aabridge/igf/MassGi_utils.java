@@ -21,6 +21,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLDecoder;
@@ -46,6 +47,7 @@ import com.rogerpf.aabridge.model.Deal;
 import com.rogerpf.aabridge.model.Dir;
 import com.rogerpf.aabridge.model.Hand;
 import com.rogerpf.aabridge.model.Lin;
+import com.rogerpf.aabridge.model.Zzz;
 
 /**
  * Under Windows (and other OSes?) when you launch a new process or a run exec something
@@ -71,10 +73,10 @@ class StreamGobbler extends Thread {
 			@SuppressWarnings("unused")
 			String line = null;
 			while ((line = br.readLine()) != null) {
-				// System.out.println(type + ">" + line);
+				// System.out.println(type + "> " + line);
 			}
 		} catch (IOException ioe) {
-			ioe.printStackTrace();
+			// ioe.printStackTrace();
 		}
 	}
 }
@@ -107,21 +109,21 @@ public class MassGi_utils {
 		int points = 0;
 		switch (qType) {
 			case 'p':
-				points =   d.hands[Dir.South.v].countHighCardPoints();
+				points =   d.hands[Dir.South.v].count_HighCardPoints();
 				break;
 			case 't':
-				points =   d.hands[Dir.South.v].countHighCardPoints()
-				         + d.hands[Dir.South.v].countLongSuitPoints();
+				points =   d.hands[Dir.South.v].count_HighCardPoints()
+				         + d.hands[Dir.South.v].count_LongSuitPoints();
 				break;
 			case 'l':
-				points =   d.hands[Dir.South.v].countLongSuitPoints();
+				points =   d.hands[Dir.South.v].count_LongSuitPoints();
 				break;
 			case 's':
-				points =   d.hands[Dir.South.v].countShortSuitPoints();
+				points =   d.hands[Dir.South.v].count_ShortSuitPoints();
 				break;
 			case 'd':
-				points =   d.hands[Dir.South.v].countHighCardPoints()
-				         + d.hands[Dir.South.v].countShortSuitPoints();
+				points =   d.hands[Dir.South.v].count_HighCardPoints()
+				         + d.hands[Dir.South.v].count_ShortSuitPoints();
 				break;
 		}
 		return points;
@@ -137,8 +139,72 @@ public class MassGi_utils {
 		App.setMode(Aaa.NORMAL_ACTIVE);
 		App.setVisualMode(App.Vm_DealAndTutorial);
 		App.gbp.matchPanelsToDealState();
-		App.mg.setTheReadPoints(App.mg.stop_gi, false);
+		App.mg.setTheReadPoints(App.mg.stop_gi, false /* not used */);
 		App.frame.repaint();
+	}
+
+	public static void saveDealsAsPbnNoPlay() {
+		// =============================================================================
+
+		MassGi mg = App.mg;
+
+		if (mg.lin.saveAsPbnNoPlayPath.isEmpty())
+			return;
+
+		Deal lastWritten = null;
+
+		int size = mg.giAy.size();
+
+		int count = 0;
+
+		ArrayList<String> ay = new ArrayList<String>(1000);
+
+		String info_text = "Originally from file " + mg.lin.filename;
+
+		int new_number = (App.pbnRenumberDeals) ? 1 : 0;
+
+		for (int i = 0; i < size; i++) {
+			GraInfo gi = mg.giAy.get(i);
+			Deal deal = gi.deal;
+			if (deal == null || deal.isDoneHand())
+				continue;
+
+			if (deal.countOrigCards() < 1)
+				continue;
+
+			if (lastWritten == deal)
+				continue;
+
+			if (lastWritten != null && lastWritten.pbnEqualTo(deal))
+				continue;
+
+			deal.writePbnToSaveableArray(ay, info_text, new_number);
+
+			if (App.pbnRenumberDeals)
+				new_number++;
+
+			lastWritten = deal;
+			count++;
+		}
+
+		if (count == 0)
+			return;
+
+		try {
+			FileWriter fw = new FileWriter(mg.lin.saveAsPbnNoPlayPath);
+			BufferedWriter bw = new BufferedWriter(fw);
+
+			for (String s : ay) {
+				bw.write(s);
+				bw.write(Zzz.get_lin_EOL());
+			}
+
+			bw.flush();
+			bw.close();
+			fw.close();
+
+		} catch (IOException e) {
+		}
 	}
 
 	public static void do_tutorialIntoDealStd() {
@@ -188,7 +254,7 @@ public class MassGi_utils {
 
 		if (!App.dealEnteredOnce) {
 			App.dealEnteredOnce = true;
-			App.frame.executeCmd("showSeatChoiceOpts_noSizeChange");
+			App.frame.executeCmd("rightPanelPrefs2_SeatChoice");
 			App.frame.repaint();
 		}
 
@@ -207,8 +273,8 @@ public class MassGi_utils {
 		/** We are in a tutorial mode and wish to examine the current App.deal
 		 *  First we do some safety checks	
 		 */
-		if ((App.isLin__Single() == false) && (App.deal.isSaveable() == false))
-			return; /* the user needs to be on deal that can be entered */
+//		if ((App.isLin__Single() == false) && (App.deal.isSaveable() == false))
+//			return; /* the user needs to be on deal that can be entered */
 
 		MassGi mg = App.mg;
 
@@ -280,48 +346,18 @@ public class MassGi_utils {
 		Deal best_cand = (score_bckCand > score_fwdCand) ? deal_bckCand : deal_fwdCand;
 
 		// By not setting the readpoints we keep our position in the movie
-		// App.mg.setTheReadPoints(pg_cand, false /* fwd__not_currently_used */); not used see below
+		// App.mg.setTheReadPoints(pg_cand, false /* not_used */);
 
 		// So we must make our own clone to stop the original being changed by "Play"
 		App.deal = best_cand.deepClone();
+
+		App.deal.setDealShowXes(null);
 
 		App.calcCompassPhyOffset();
 		App.dealMajorChange();
 		do_tutorialIntoDealStd();
 
 		App.gbp.matchPanelsToDealState();
-
-	}
-
-	public static void do_tutorialIntoDealCont() {
-		// ==========================================================================
-		if (App.visualMode != App.Vm_DealAndTutorial)
-			return;
-
-		/** We are in a tutorial mode and wish to examine the current App.deal
-		 *  First we do some safety checks	
-		 */
-		if (App.deal.isSaveable() == false)
-			return; /* the user needs to be on deal that can be entered */
-
-		boolean old_fromPlay = App.reviewFromPlay; // save policy
-
-		App.reviewFromPlay = true;
-
-		do_tutorialIntoDealClever();
-
-		App.reviewTrick = 13;
-		App.reviewCard = 3;
-		CmdHandler.leftWingNormal();
-
-		App.setMode(Aaa.NORMAL_ACTIVE);
-		App.gbp.c1_1__tfdp.makeCardSuggestions();
-		App.gbp.matchPanelsToDealState();
-
-		App.reviewFromPlay = old_fromPlay; // restore policy
-
-		App.localShowHidden = false; // policy override - start hidden
-
 	}
 
 	public static void do_tutorialIntoDealB1st() {
@@ -338,22 +374,75 @@ public class MassGi_utils {
 		boolean old_fromPlay = App.reviewFromPlay; // save policy
 
 		App.reviewFromPlay = true;
-
 		do_tutorialIntoDealClever();
-
-		CmdHandler.leftWingNormal();
-
 		App.reviewFromPlay = old_fromPlay; // restore policy
 
-		App.localShowHidden = false; // policy override - start hidden
+		if (App.deal.isContractReal() == false) {
+			App.show_poor_def_msg = false;
+		}
+		else {
+			App.show_poor_def_msg = true;
 
+			if (App.deal.eb_blocker == false) {
+				App.reviewTrick = 0;
+				App.reviewCard = 1;
+			}
+
+			CmdHandler.leftWingNormal();
+
+			App.gbp.c1_1__tfdp.clearShowCompletedTrick();
+
+			App.setMode(Aaa.NORMAL_ACTIVE);
+			App.gbp.c1_1__tfdp.makeCardSuggestions();
+			App.gbp.matchPanelsToDealState();
+		}
+
+		App.localShowHidden = false; // policy override - start hidden
 	}
 
-	public static void do_launchLinFile(String filename) {
+	public static void do_tutorialIntoDealCont() {
+		// ==========================================================================
+		if (App.visualMode != App.Vm_DealAndTutorial)
+			return;
+
+		/** We are in a tutorial mode and wish to examine the current App.deal
+		 *  First we do some safety checks	
+		 */
+		if (App.deal.isSaveable() == false)
+			return; /* the user needs to be on deal that can be entered */
+
+		boolean old_fromPlay = App.reviewFromPlay; // save policy
+
+		App.reviewFromPlay = true;
+		do_tutorialIntoDealClever();
+		App.reviewFromPlay = old_fromPlay; // restore policy
+
+		if (App.deal.isContractReal() == false) {
+			App.show_poor_def_msg = false;
+		}
+		else {
+			App.show_poor_def_msg = true;
+
+			App.reviewTrick = 13;
+			App.reviewCard = 3;
+
+			CmdHandler.leftWingNormal();
+
+			App.gbp.c1_1__tfdp.clearShowCompletedTrick();
+
+			App.setMode(Aaa.NORMAL_ACTIVE);
+			App.gbp.c1_1__tfdp.makeCardSuggestions();
+			App.gbp.matchPanelsToDealState();
+		}
+
+		App.localShowHidden = false; // policy override - start hidden
+	}
+
+	public static void launch_2nd_aaBridge_WITH(String[] args) {
 		// ==========================================================================
 		ArrayList<String> log = new ArrayList<String>(); // ultra simple log maker
 
-		do_launchLinFile_inner(log, filename);
+		launch_2nd_aaBridge_WITH_inner(log, args);
 
 		// save the results to a log file
 		try {
@@ -375,9 +464,31 @@ public class MassGi_utils {
 		}
 	}
 
-	public final static String addPositionInfo = "addPositionInfo";
+	public static boolean isRunningExpanded() {
+		// ==========================================================================
+		try {
+			URL locationMethodUrl = AaBridge.class.getProtectionDomain().getCodeSource().getLocation();
+			File locMethodFile = new File(locationMethodUrl.toURI());
 
-	public static void do_launchLinFile_inner(ArrayList<String> log, String filename) {
+			String runTargetNameLower = locMethodFile.getName().toLowerCase();
+
+			if (runTargetNameLower.endsWith(".jar")) {
+				// We are running in a .jar on either windows, mac or linux or ...
+				return false;
+			}
+			else if (runTargetNameLower.endsWith(".exe")) {
+				// We are running in .exe on windows
+				return false;
+			}
+			return true;
+
+		} catch (Exception e) {
+		}
+
+		return false;
+	}
+
+	public static void launch_2nd_aaBridge_WITH_inner(ArrayList<String> log, String[] args) {
 		// ==========================================================================
 
 		SimpleDateFormat sdfDate = new SimpleDateFormat("yyyy-MM-dd__HH-mm-ss");
@@ -457,7 +568,9 @@ public class MassGi_utils {
 			prams_at = 4;
 		}
 
-		commands[prams_at++] = filename;
+		for (int i = 1; i < args.length; i++) {
+			commands[prams_at++] = args[i];
+		}
 
 		log.add("");
 		log.add("pwd = " + pwdFile);
@@ -486,6 +599,52 @@ public class MassGi_utils {
 			String s = " ProcessBuilder FAILED = " + e.getMessage();
 			System.out.println(s);
 			log.add(s);
+			return;
+		}
+
+		@SuppressWarnings("unused")
+		int z = 0; // put your breakpoint here
+	}
+
+	public static void launch__aamh() {
+		// ==========================================================================
+
+		String[] commands = { "", "", "", "", "", "", "", "" };
+
+		if (App.onWin) {
+			String knownPhp = "C:\\ProgramSmall\\php\\php.exe";
+
+			commands[0] = "cmd";
+			commands[1] = "/k";
+			commands[2] = "start";
+			commands[3] = ((new File(knownPhp)).exists()) ? knownPhp : "php.exe";
+			commands[4] = "-f";
+			commands[5] = App.aamh_phpname;
+		}
+		else { //
+			commands[0] = "php";
+			commands[1] = "-f";
+			commands[2] = App.aamh_phpname;
+		}
+
+		ProcessBuilder pb = new ProcessBuilder(commands);
+		pb.directory(new File(App.cmdsAndPhpPath));
+		try {
+
+			Process proc = pb.start();
+
+			// Create threads to eat the stderror and stdio
+			StreamGobbler errorGobbler = new StreamGobbler(proc.getErrorStream(), "ERROR");
+			StreamGobbler outputGobbler = new StreamGobbler(proc.getInputStream(), "OUTPUT");
+			// and start them
+			errorGobbler.start();
+			outputGobbler.start();
+
+			// int exitVal = proc.waitFor(); // NO NO NO - we do not wait !!!
+			// System.out.println("ExitValue: " + exitVal);
+
+		} catch (IOException e) {
+			System.out.println(" ProcessBuilder FAILED = " + e.getMessage());
 			return;
 		}
 
@@ -537,7 +696,7 @@ public class MassGi_utils {
 			)
 		{
 			/** 
-			 * We are the answer to a the   pick a card  question
+			 * We are the answer to the   pick a card  question
 			 */
 			gi.userAns = card.toLinStr().toLowerCase();
 			App.frame.repaint();
@@ -891,7 +1050,8 @@ public class MassGi_utils {
 			FileOutputStream fos = new FileOutputStream(filename);
 			fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
 			fos.close();
-			MassGi_utils.do_launchLinFile(filename);
+			String[] filename_in_array = { "", filename };
+			MassGi_utils.launch_2nd_aaBridge_WITH(filename_in_array);
 			return true;
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -917,7 +1077,37 @@ public class MassGi_utils {
 		return filename;
 	}
 
-	@SuppressWarnings("deprecation")
+	public static String saveStringAsLinFile(String s) {
+		// =============================================================================
+
+		if (s.contains("|") == false) {
+			return ""; // fail
+		}
+
+		String filename = App.autoSavesPath + "droped_or_pasted_text_" + new Date().getTime() + ".lin";
+
+		if (s.toUpperCase().contains("%7C")) {
+			try {
+				s = URLDecoder.decode(s, "UTF-8");
+			} catch (UnsupportedEncodingException e1) {
+			}
+		}
+
+		try {
+			FileOutputStream fileOut = new FileOutputStream(filename);
+
+			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(fileOut, "UTF-8"));
+			writer.write(s);
+			writer.close();
+
+			fileOut.close();
+
+		} catch (Exception e) {
+			return ""; // fail
+		}
+		return filename;
+	}
+
 	public static String createLinFileFromText(String in) {
 		// =============================================================================
 
@@ -929,12 +1119,27 @@ public class MassGi_utils {
 		String proofLin1 = "bbo=y&lin=";
 		String proofLin2 = "bbo=y&amp;lin=";
 
+		String proofLinurl = "linurl=";
+
 		boolean b1 = false;
 
-		if ((b1 = in.contains(proofLin1)) || in.contains(proofLin2)) {
+		if ((in.contains(proofLinurl))) {
+			int start = in.indexOf(proofLinurl) + proofLinurl.length();
+			String innerUrl = in.substring(start);
+
+			// this may take a while !!!!
+			String dealName = MassGi_utils.readLinFileFromWebsite(innerUrl);
+
+			return dealName;
+		}
+
+		else if ((b1 = in.contains(proofLin1)) || in.contains(proofLin2)) {
 			int start = (b1) ? (in.indexOf(proofLin1) + proofLin1.length()) : (in.indexOf(proofLin2) + proofLin2.length());
 			String lin = in.substring(start);
-			lin = URLDecoder.decode(lin);
+			try {
+				lin = URLDecoder.decode(lin, "UTF-8");
+			} catch (UnsupportedEncodingException e1) {
+			}
 
 			Deal deal = new Deal(0);
 			String dealName = CmdHandler.makeDealFileNameAndPath(deal, "", "");
@@ -944,7 +1149,7 @@ public class MassGi_utils {
 			try {
 				FileOutputStream fileOut = new FileOutputStream(dealName);
 
-				BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(fileOut, "utf-8"));
+				BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(fileOut, "UTF-8"));
 				writer.write(lin);
 				writer.close();
 
@@ -984,16 +1189,28 @@ public class MassGi_utils {
 			String val = tp.nextToken();
 
 			if (type.contentEquals("sn")) {
-				deal.hands[Dir.South.v].playerName = URLDecoder.decode(val);
+				try {
+					deal.hands[Dir.South.v].playerName = URLDecoder.decode(val, "UTF-8");
+				} catch (UnsupportedEncodingException e1) {
+				}
 			}
 			else if (type.contentEquals("wn")) {
-				deal.hands[Dir.West.v].playerName = URLDecoder.decode(val);
+				try {
+					deal.hands[Dir.West.v].playerName = URLDecoder.decode(val, "UTF-8");
+				} catch (UnsupportedEncodingException e1) {
+				}
 			}
 			else if (type.contentEquals("nn")) {
-				deal.hands[Dir.North.v].playerName = URLDecoder.decode(val);
+				try {
+					deal.hands[Dir.North.v].playerName = URLDecoder.decode(val, "UTF-8");
+				} catch (UnsupportedEncodingException e1) {
+				}
 			}
 			else if (type.contentEquals("en")) {
-				deal.hands[Dir.East.v].playerName = URLDecoder.decode(val);
+				try {
+					deal.hands[Dir.East.v].playerName = URLDecoder.decode(val, "UTF-8");
+				} catch (UnsupportedEncodingException e1) {
+				}
 			}
 			else if (type.contentEquals("s")) {
 				s = val;
@@ -1043,7 +1260,7 @@ public class MassGi_utils {
 		h.add(n);
 		h.add(e);
 
-		deal.fillDealExternal(h, "yesFill");
+		deal.fillDealExternal(h, "yesFill", 0);
 
 		deal.makeLinBid_RearAlert(auction);
 
@@ -1096,8 +1313,10 @@ class Capture_gi_env {
 
 	Color color_cp; // cp is font color
 	Color color_cs; // cs is 'user made box' fill color
+	Color color_co; // co is a color override used for graying
 
 	public boolean gray_fade;
+	public boolean tidyTrick;
 
 	int lb_position; // /* question position override - 'u' 20th letter counting 'a' = 0 means bottom of the screen as normal */
 
@@ -1119,6 +1338,10 @@ class Capture_gi_env {
 	int bv_1st;
 	int bv_cont;
 
+	boolean playerNameNumbsVisible = true;
+
+	int tut_rotation;
+
 	/**
 	 */
 	Capture_gi_env(Capture_gi_env o) { // 'Copy' Constructor
@@ -1135,6 +1358,8 @@ class Capture_gi_env {
 		color_cs = o.color_cs;
 
 		gray_fade = o.gray_fade;
+
+		tidyTrick = o.tidyTrick;
 
 		lb_position = o.lb_position;
 
@@ -1156,6 +1381,10 @@ class Capture_gi_env {
 		bv_etd = o.bv_etd;
 		bv_1st = o.bv_1st;
 		bv_cont = o.bv_cont;
+
+		playerNameNumbsVisible = o.playerNameNumbsVisible;
+
+		tut_rotation = o.tut_rotation;
 	}
 
 	/**
@@ -1173,7 +1402,7 @@ class Capture_gi_env {
 		color_cp = Color.BLACK; // black This is the default colour used by font 0
 		color_cs = Aaa.tutorialBackground;
 
-		gray_fade = false; // since build 2014 gray_fade is disabled but could be reinstated
+		gray_fade = false; // re-instated with a different use now user controleed
 
 		lb_position = 20; /* 'u' 20th letter counting 'a' = 0  means bottom of the screen as normal */
 
@@ -1194,6 +1423,8 @@ class Capture_gi_env {
 		bv_etd = 2; // 2 => no override
 		bv_1st = 2; // 2 => no override
 		bv_cont = 2; // 2 => no override
+
+		tut_rotation = 0;
 	}
 
 	/**
@@ -1389,7 +1620,7 @@ class Hyperlink_g_int extends Hyperlink {
 	@Override
 	public void actionLink() {
 		// =============================================================================
-		/** so this is an internal linl
+		/** so this is an internal link
 		 */
 
 		String label = getLinkInfo().toLowerCase();
@@ -1470,8 +1701,8 @@ class Hyperlink_g_int extends Hyperlink {
 				if (gi.text.toLowerCase().contains(label)) {
 					for (int i = gi.index; i < mg.giAy.size(); i++) {
 						GraInfo gi2 = mg.giAy.get(i);
-						if (gi2.qt == q_.pg) {
-							mg.setTheReadPoints(gi2.index, false);
+						if (gi2.qt == q_.pg || gi2.qt == q_.lb) {
+							mg.setTheReadPoints(gi2.index, false /* not used */);
 							App.frame.repaint();
 							return true;
 						}

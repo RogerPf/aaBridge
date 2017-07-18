@@ -118,12 +118,13 @@ public class Cc {  // Color Class
 	public static void intensitySliderChange() {
 		for (C protoColor : protoColorAy) {
 			if (protoColor.active) {
-				protoColor.recalc();
+				protoColor.recalc(0); // Tutorial mode
+				protoColor.recalc(1); // Deal mode
 			}
 		}
 	}
 
-	public static Color g(int index) {return protoColorAy.get(index).color;};
+	public static Color g(int index) {return protoColorAy.get(index).colorTD[App.visualMode == App.Vm_InsideADeal ? 1 : 0];};
 	/**
 	 */
 	static class Cy {
@@ -144,7 +145,7 @@ public class Cc {  // Color Class
 		// ---------------------------------- CLASS -------------------------------------
 		int index;
 		boolean active;
-		Color color;
+		Color colorTD[] = new Color[2];
 		Cy dark;
 		Cy med;
 		Cy light;
@@ -153,7 +154,8 @@ public class Cc {  // Color Class
 		/* constructor */ C () {
 			index = protoColorAy.size();
 			active = false;
-			color = Color.black;
+			colorTD[0] = Color.black;
+			colorTD[1] = Color.black;
 			dark = new Cy();
 			med = new Cy();
 			light = new Cy();
@@ -172,31 +174,50 @@ public class Cc {  // Color Class
 					new C();
 				}
 			}
-			color = new Color( m.rgb[0], m.rgb[1], m.rgb[2]);
+			colorTD[0] = new Color( m.rgb[0], m.rgb[1], m.rgb[2]);
+			colorTD[1] = new Color( m.rgb[0], m.rgb[1], m.rgb[2]);
 			protoColorAy.set(index, this);
 		}
 		
 		
-		public void recalc() {
+		
+		
+		public void recalc(int index) {  // index is 0 = Tutorial    1 = Deal
 			wk = new Cy();
 			
-			if (App.colorIntensity == 0) {
+			int notch = 0;
+			
+			if (App.difColorInsideDeal) {
+				notch = -40 * index;
+			}
+			
+			int intensity = App.colorIntensity + notch;			
+			if (intensity < -255) {
+				intensity = -255;
+			}
+			else if (intensity > 255) {
+				intensity = -255;
+			}
+			
+			// System.out.println("index: " + index + "    intensity: " + intensity);
+			
+			if (intensity == 0) {
 				for (int i : Zzz.zto2) {
 					wk.rgb[i] = med.rgb[i];
 				}
 			}
-			else if (App.colorIntensity < 0 && App.colorIntensity >= -255) {
+			else if (intensity < 0 && intensity >= -255) {
 				for (int i : Zzz.zto2) {
-					wk.rgb[i] = dark.rgb[i] + ((med.rgb[i] - dark.rgb[i]) * (255 + App.colorIntensity))/255;
+					wk.rgb[i] = dark.rgb[i] + ((med.rgb[i] - dark.rgb[i]) * (255 + intensity))/255;
 				}
 			}
-			else if (App.colorIntensity > 0 && App.colorIntensity <=  255) {
+			else if (intensity > 0 && intensity <=  255) {
 				for (int i : Zzz.zto2) {
 					if (light.rgb[i] < med.rgb[i])  {
 						@SuppressWarnings("unused")
 						int z = 0;
 					}
-					wk.rgb[i] = med.rgb[i] + ((light.rgb[i] - med.rgb[i]) * (App.colorIntensity))/255;
+					wk.rgb[i] = med.rgb[i] + ((light.rgb[i] - med.rgb[i]) * (intensity))/255;
 				}
 			}
 			else {
@@ -222,7 +243,7 @@ public class Cc {  // Color Class
 				if (wk.rgb[i] > 255)
 					wk.rgb[i] = 255;
 			}
-			color = new Color( wk.rgb[0], wk.rgb[1], wk.rgb[2]);
+			colorTD[index] = new Color( wk.rgb[0], wk.rgb[1], wk.rgb[2]);
 		}
 	}
 	

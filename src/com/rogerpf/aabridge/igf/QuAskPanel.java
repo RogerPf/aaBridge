@@ -115,7 +115,7 @@ public class QuAskPanel extends ConsumePanel {
 		case 'd':
 		case 't':
 		case 'y':
-			gi.text = Aaa.deAtQuestionText(gi.bb.get(2));
+			gi.text = Aaa.deAtQuestionAndBubbleText(gi.bb.get(2));
 			break;
 		case 'z':
 			gi.text = "";
@@ -131,7 +131,7 @@ public class QuAskPanel extends ConsumePanel {
 
 		gi.capEnv.centered = true;
 
-		consume_at(gi);
+		consume_at__uni(gi);
 
 		drawAllSegs();
 	}

@@ -1,0 +1,197 @@
+%%
+%%
+%% <--SECT_HEAD-->=Practice  Boards                              24 - 25
+%%
+%%
+%%  Date last Edited    2016-05-04     set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+%% 
+%% <<--HEADER_FILE-->>=BB_Pr_00___Declarer_Play__HEADER
+%%
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player they need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+%%
+%%  You can NOW use  ALL 2876 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+fh|t40|                    Font   t  t-title             section titles (if any)
+fh|b50|                    Font   b  b-bigTitle   bigger section titles
+
+fh|f42|                    Font   f  f-flow
+fh|s25|                    Font   s  s-small
+
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor      on Title Pages
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor   on Title Pages
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Boldbida                                       Course   2016^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bPractice  Boards                              24 - 25^*n^-^^|cs||fp||cp||at|^^|
+Lg|e|
+
+ht|j|
+at|If you are  |cp|red|at|^*bNew  to  aaBridge^*n|cp||at| please  click the  { ^*bHome^*n }  button in the far top left and then click  { ^*bFlow^*n }  button.
+Once you have a little knowledge about how to use   ^*baaBridge^*n   please come back to this 'movie'.  |
+
+ht|o|
+fp|t-title|cp|blue|at|^- ^*b-----  Shuf Op  -----^*n     ^-|cp||fp||at|^^|
+n#|3|
+at|^b@2When  you are  'Inside a deal',  high on the left in green baize area you will see the  {^*b Shuf Op ^*n}  button.|
+n#|5|
+at|^^Click on it to shuffle the  East - West  cards and leave you ready to  PLAY  the hand against the 
+^o ^*b aaBridge ^*n bots and the new defensive layout.|
+%% <<--HEADER_REPLACE_END->>
+
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+ht|v|n#|4|at|
+^f Please  |cp|red|at|^*b keep ^*n|cp||at|  clicking  the |fp|f-flow|at|  { ^*b Flow > ^*n }  |fp|s-small|at| button below  |fp||
+
+ht|z|n^|2|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+
+bv|a,v|    %% make all 3 buttons visible 
+ 
+fh|940|fm|9|fp|9|at|@0@1|
+ht|h|
+rq|2876|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2876 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+st||
+--------------------------------------------------------------------
+qx|24 S|nt|^b@2^^|rh||ah|Practice 24 |pn| , , , |md|3SAK2H96D652CKJ987,SJT9654HT8DA8C643,SQHAK53DKJT974CQT,S873HQJ742DQ3CA52|sv|O|sk|S |at|^*bPractice 24^*n        Success  (no fail line provided)|
+pg| ***** 1 ***** |
+
+
+mb|1D|mb|p|mb|2N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+pc|sJ|at|    With 5 sure tricks   3@s 2@h   we need 4 more.      From Fred's text - if we try @c's we risk being stranded in dummy.  We must attack in @d's.  Play the @dK first to bring down any singleton @dQ.  It will then be safe to cross (once) in clubs and cash ONE top spade an lead another @d to finish setting up the suit for four more @d's and our contract  with    2@s  2@h  4@d  1@c.|
+pg| ***** 3 ***** |
+
+
+pc|sQ|pc|s3|pc|s2|
+pg| ***** 4 ***** |
+
+
+pc|dK|pc|d3|pc|d2|pc|dA|
+pg| ***** 5 ***** |
+
+
+pc|hT|pc|hA|pc|h2|pc|h9|
+pg| ***** 6 ***** |
+
+
+pc|cQ|pc|c2|pc|cK|pc|c3|
+pg| ***** 7 ***** |
+
+
+pc|sA|pc|s4|pc|h3|pc|s7|
+pg| ***** 8 ***** |
+
+
+pc|d6|pc|d8|pc|dJ|pc|dQ|
+pg| ***** 9 ***** |
+
+
+pc|h4|pc|h6|pc|h8|pc|hK|
+pg| ***** 10 ***** |
+
+
+at|      Done.     You are free to { ^*bPlay^*n } the rest of the hand.|
+pf|c|
+sk||
+pg| ***** 11 ***** |
+
+
+qx|25 F|nt|^b@2^^|rh||ah|Practice 25 |pn| , , , |md|2SK63HT64DA6CAKQJ9,SA9H97DQJT7543C42,SQ7542HKQ32DK2C86,SJT8HAJ85D98CT753|sv|O|sk|S |at|^*bPractice 25^*n        Fail |
+pg| ***** 12 ***** |
+
+
+mb|3D|mb|p|mb|p|mb|d|mb|p|mb|3S|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 13 ***** |
+
+
+pc|dQ|at|    With 6 sure tricks   2@d 4@c   we need 3 more.      If we assume the @c's are 4-2 then we have a 5th @c and only need two from @h's.  So play West to have the @hA and lead twice towards the  @hKQ  in dummy.|
+pg| ***** 14 ***** |
+
+
+pc|d2|pc|d8|pc|dA|
+pg| ***** 15 ***** |
+
+
+pc|h4|pc|h7|pc|hK|at|^^^^-- Oh --|pc|hA|
+pg| ***** 16 ***** |
+
+
+pc|d9|pc|d6|pc|d3|pc|dK|
+pg| ***** 17 ***** |
+
+
+at|      Play the rest out yourself and you will see that there is no way you can now make the contract.|
+pf|c|
+sk||
+pg| ***** 18 ***** |
+
+
+qx|25 S|nt|^b@2|rh||ah|Practice 25 |pn| , , , |md|2SK63HT64DA6CAKQJ9,SA9H97DQJT7543C42,SQ7542HKQ32DK2C86,SJT8HAJ85D98CT753|sv|O|sk|S |at|^*bPractice 25^*n        Success |
+pg| ***** 19 ***** |
+
+
+mb|3D|mb|p|mb|p|mb|d|mb|p|mb|3S|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 20 ***** |
+
+
+pc|dQ|at|    With 6 sure tricks   2@d 4@c   we need 3 more.      From Fred's text - The 3@d bid  and @dQ lead marks West with one of the Aces. Assuming a 4-2 split gives us 5 @c's so we have to find 2 more from @s's and @h's.  It looks like we have to guess who has which Ace, but look carefully at the spades and you will see that if East has the Ace she cannot play it on 'thin air' without setting up the suit for you, so East (if she has it) must duck giving you a chance to switch to @h's to set up your 9th.   If West's @sA covers your @sK she now has no entry.|
+pg| ***** 21 ***** |
+
+
+pc|dK|pc|d9|pc|d6|
+pg| ***** 22 ***** |
+
+
+pc|s2|pc|s8|pc|sK|pc|sA|
+pg| ***** 23 ***** |
+
+
+pc|dJ|pc|d2|pc|d8|pc|dA|
+pg| ***** 24 ***** |
+
+
+pc|h4|pc|h7|pc|hK|pc|hA|
+pg| ***** 25 ***** |
+
+
+pc|c7|
+pg| ***** 26 ***** |
+
+
+at|      Play the rest out yourself.|
+pf|c|
+sk||
+pg| ***** 27 ***** |
+
+

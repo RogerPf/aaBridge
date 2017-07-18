@@ -42,6 +42,16 @@ public class MruCollection extends HashMap<String, MruCollection.MruChapter> {
 		// empty at the moment
 	}
 
+	public static void delete_whole_mru() {
+		// ==============================================================================================
+		Preferences mruPrefs_old = Preferences.userRoot().node(mruPrefsNode + App.mruNodeSubNode);
+		try {
+			mruPrefs_old.removeNode(); // deletes all
+		} catch (BackingStoreException e) {
+			e.printStackTrace();
+		}
+	}
+
 	public MruChapter createMatchingMru(char type, String src, String filenamePlus, String displayNoUscore, int prev_hist_pgNumb) {
 		// ==============================================================================================
 
@@ -215,17 +225,17 @@ public class MruCollection extends HashMap<String, MruCollection.MruChapter> {
 		mru.hist_pgNumb = 0;
 	}
 
-	public void clearAllHistories() {
-		// ==============================================================================================
-		Set<?> set = entrySet();
-		Iterator<?> iterator = set.iterator();
-		while (iterator.hasNext()) {
-			@SuppressWarnings("rawtypes")
-			MruChapter mru = (MruChapter) ((Map.Entry) iterator.next()).getValue();
-
-			mru.hist_pgNumb = 0;
-		}
-	}
+//	public void clearAllHistories() {
+//		// ==============================================================================================
+//		Set<?> set = entrySet();
+//		Iterator<?> iterator = set.iterator();
+//		while (iterator.hasNext()) {
+//			@SuppressWarnings("rawtypes")
+//			MruChapter mru = (MruChapter) ((Map.Entry) iterator.next()).getValue();
+//
+//			mru.hist_pgNumb = 0;
+//		}
+//	}
 
 	public void clearChapterMarks(String key) {
 		// ==============================================================================================
@@ -403,6 +413,8 @@ public class MruCollection extends HashMap<String, MruCollection.MruChapter> {
 				marks.add(pg_numb);
 			}
 			Collections.sort(marks);
+			App.aaHomeBtnPanel.fill_chapterMarkerMenu();
+
 			// System.out.println("marks: " + marks);
 		}
 

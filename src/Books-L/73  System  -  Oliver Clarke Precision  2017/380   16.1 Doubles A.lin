@@ -1,0 +1,1456 @@
+%%
+%%
+%% <--SECT_HEAD-->=Chapter 16.1                               Doubles A
+%%
+%%
+%%  Date last Edited    2016-01-09        set by human hand (if at all)
+%%
+%%  MovieMaker          Roger Pfister
+%%
+%% 
+%% <<--HEADER_FILE-->>=005  OCP common header
+%%
+
+
+%% <<--HEADER_REPLACE_START->>
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+
+%%
+%%  You can NOW use  ALL 2814 and later features, all  'older'
+%%   copies of aaBridge are screened out just before the first  'pg'
+%%
+
+
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+fh|s28|                    Font   s  s-small
+fh|f35|                    Font   f  f-fine
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  OLD STYLE  position adjustment 
+
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       on Title Pages   Precision Blue
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Oliver Clarke Precision                                 2017  ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bChapter 16.1                               Doubles A^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+%% <<--HEADER_REPLACE_END->>
+
+qx|16.1|
+fp|t-title|at|^d@2^z@3|
+at|
+^*gGS,Doubles A   ^*n
+|fp||at|^^^^|
+fp|t-title|at|^*gOliv,Oliver  on     Doubles A|fp||at|                starts HERE^*n       |fp||cp|red|at|<<< First time ?  Click title|fp||cp||at|
+
+
+^*gPrac,      Practice Hands  -   What would You Bid ? ^*n|
+
+
+ht|w|cp|p|at|The ^*b Navbar ^*n below is used for navigation,  think of it as a line of a 100 buttons.|cp||at|
+
+
+
+|fp||ht|y|at|^b@2@1|at|
+^*bClick^*n  -   one of the above  ^hor    in the  NavBar  ^mor      use your   mouse wheel|
+ht|z|at|@0
+^r ^*bMM:^*n (Movie Maker)      Roger Pfister|
+n^|3|at|^^^*h https://www.youtube.com/channel/UCTGNUS8jbx85QOMUPlHoRMA, OCP Videos ^*n|
+%%
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2886|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2886 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+qx|GS,hide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A         Guidelines |fp||at|^s(An Extract from the Lesson)^^^^|
+ht|g|
+fp|t-title|at|Guidelines |fp||at|
+
+
+^c ^*b1.   Doubles of suit contracts at the 1 or 2 level are generally for takeout or conventional
+^o unless common-sense dictates otherwise. ^*n
+
+
+
+^c ^*b2.   Doubles of no trump bids are normally for penalties 
+^K except for a double of a 1NT response to a 1 level opening. ^*n
+
+
+
+^c ^*b3.   In @2situations where a double from partner would be for takeout and they instead pass 
+then  |cp|red|at|whenever possible|cp||at|  the re-opening action by you should be a DOUBLE. 
+This is in case they have a penalty double they were not  (of course)  permitted to make. ^*n
+|
+	
+pg| ***** 1 ***** |
+
+
+qx|GS,hide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A          |fp||at|^s(An Extract from the Lesson)^^^^|
+ht|h|
+at|^b@2^*bMM:^*n  Rather than provide extracts as a summary here I suggest you use the larger "bumps"  on the Navbar below.
+
+
+         ^e^*b Guid^*n          ^h The Guidelines in Detail   
+		 
+		 ^e^*b Neg^*n           ^h Negative  Doubles     
+		 
+		 ^e^*b Supp^*n          ^h Support  Doubles
+		 
+		 ^e^*b Comp^*n          ^h Competitive  Doubles
+		 
+		 ^e^*b Resp^*n          ^h Responsive  Doubles
+		 
+		 ^e^*b 4thS^*n          ^h 4th Suit  Doubles
+
+|
+	
+pg| ***** 2 ***** |
+
+
+ht|z|n#|5|at|
+^a ^*bend^*n|
+pg| ***** 3 ***** |
+
+
+-----------------------------------------------------------------------------------------------  
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,wide|
+nt|^z@3^b@2|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class                            Doubles A ^*n^-^^|cs||fp||cp||at|^^|
+lg|c|	
+cp|red|at|^*bOliverC:^*n|cp||at| Hi Everyone and welcome to today's session, in which we'll be starting a look at Doubles.
+
+I'm not going to spend a huge amount of time on Penalty Doubles as such, except to give you some guidelines as to when a double is usually NOT for penalties.
+
+Similarly, I'm not going to spend time covering some doubles that we have already seen in the course of other parts of this series.
+
+So artificial Doubles that are specifically part of Precision,  eg:   1@c - (1@d) - X     or     2@c - (2@d) - X     are NOT going to be covered here.
+
+Instead we will be spending most of the time looking at non-penalty doubles that can potentially be used in ANY bidding system.  These include negative and responsive doubles, support doubles, control-showing doubles and non-penalty slam doubles.
+
+The last two of those will be NEXT week.   (Actually, control-showing doubles are more properly called control-DENYING doubles, but we'll get tho that next week).
+
+If you have not already done so, please have a look at the notes I have prepared on tonight's topic.
+
+You can find these on: ^*h http://ocp.pigpen.org.uk/index.php ^*n 
+
+The section on Doubles can be accessed from there or directly at ^*h http://ocp.pigpen.org.uk/Doubles.php ^*n |
+pg| ***** 4 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A |fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   The original meaning of a "Double" to say "I don't think Opps can make this contract" still applies in some instances.
+
+Increasingly, however, it is used to convey other information, particularly at lower levels of bidding where the chances for a big penalty are significantly reduced.  For example, in the auction 
+|n^|9|at|
+^c 1@d   -   (1@s)   -   X 
+|n^|9|at|
+the chance of taking a big penalty is minimal and so the double is more useful for other things.
+
+Penalty doubles are more common at the 3-level or higher where the chances of obtaining a penalty of +500 or +800 are greatly increased, or where Opp's have sacrificed over your contract and it is necessary to obtain the maximum penalty.
+
+In modern bidding it is actually quite rare for doubles of suit bids at the 1 or 2 level to be for penalties, and where a 1 or 2 level suit contract is defended doubled, it is more often the case that a take-out or other conventional double has been passed for penalties by the partner of the doubler.   For example 
+|n^|9|at|
+^c 1@d               -    (2@s[Weak])      -            p             -            (p)
+^c X(Takeout)   -         (p)         -     p(Penalties)
+|n^|9|at|
+Having said that, there ARE some occasions when a double of a 2-level suit contract are for penalties.
+
+We'll come to some of those shortly.  One that springs to mind immediately is when Partner opens 1NT and their LHO overcalls.  If you don't play "lost bid" doubles (which I dislike, personally), then a double of a 2-level suit overcall over a 1NT opening is one of the few times when a suit overcall is doubled for penalties:
+|n^|9|at|
+^c 1NT   -   (2x)   -   X
+|n^|9|at| 
+But if, of course, you prefer to play that as stolen-bid, then that's fine.|
+pg| ***** 5 ***** |
+
+
+--------------------------------------------------------------------
+qx|Guid,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A        GuideLine ONE|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   I'm going to start off by giving you a number of more general guidelines which don't really affect our consideration of specific non-penalty doubles, each of which usually occur in one particular situation only: We therefore reach our first Guideline, which is this:- 
+
+^c ^*b1.   Doubles of suit contracts at the 1 or 2 level are generally for takeout or conventional
+^o unless common-sense dictates otherwise. ^*n
+
+An example of a common-sense exception might be:
+|n^|5|at| 
+^c (1@d)      -    X(Takeout)      -     (p)                   -   p(Penalties)      -     (1@h)     -     X 
+|n^|9|at|          
+^c (1NT)    -    X(Penalty)        -   2@c(Rescue)     -       X 
+|n^|9|at|     
+^c  1NT     -     (2x)                  -     X                                                     (note  -  here double is NOT stolen bid)
+|n^|5|at| 
+In the first example (which is most likely to occur only at White v Red) the take-out double of 1@d has been passed for penalties (thereby showing some values as well as a trump stack).  The doubler has implied possession of or at least support for Hearts, so the second double is more likely to be for penalties than for takeout.
+
+In the second example Responder has "run" from the  1NT Doubled  contract and this double is best played as being for penalties.  This auction might occur at level or even unfavourable vulnerability if 4th-in-hand judges that game values are not present.
+
+In the third example, if we're not using stolen bid doubles, and particularly if we have Lebensohl or Transfer Lebensohl available, then we don't need the double for anything other than a penalty double.|
+pg| ***** 6 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A        GuideLine TWO|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   Our second Guideline is this:
+
+^c ^*b2.   Doubles of no trump bids are normally for penalties 
+^K except for a double of a 1NT response to a 1 level opening. ^*n
+	
+Thus in the sequence
+|n^|9|at| 
+^c	(1@h)    -    p    -    (1NT)    -    X
+|n^|9|at| 
+the double is a takeout double of Hearts, but a double of most other natural bids in No Trumps are for penalties.
+
+That particularly applies, of course, if the 1NT response is ARTIFICIAL (eg: Forcing No Trump as in Precision or 2/1).
+
+
+
+^*bMM:^*n  continued on next page| 
+pg| ***** 7 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A        GuideLine THREE|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   The third guideline I am going to give you is this:
+
+^c ^*b3.   In @2situations where a double from partner would be for takeout and they instead pass 
+then  |cp|red|at|whenever possible|cp||at|  the re-opening action by you should be a DOUBLE. 
+This is in case they have a penalty double they were not  (of course)  permitted to make. ^*n
+^b@2
+So, for example: 
+|n^|9|at| 
+^c(1@h)    -      X    -    (2@c)    -    p
+^c p         -    ???
+|n^|9|at|
+Here, a double by the partner of the original doubler would be  ^*b Responsive ^*n (ie: for Takeout).
+
+So if as here they pass it might be because they wanted to Double Clubs for penalties.   Since they can't and the initial doubler wants to now take further action, then they should try to reopen with a Double.
+
+This is, of course, for takeout, but can be passed for penalties.  In these circumstances a failure to re-open with a double carries a very significant message that you have a hand very unsuited to defence (perhaps very distributional).
+|n^|9|at|
+
+Same would apply in these circumstances: 
+|n^|9|at|
+^c 1@s    -    (2@h)    -    p    -    (p) 
+|n^|9|at|
+A double from responder here would be negative (effectively for Takeout).
+
+So when they Pass, Opener should try to reopen with a double if possible.| 
+pg| ***** 8 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A        GuideLine  FOUR|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   The last Guideline is this: 
+
+^c ^*b4.   If partner passes where a double would be artificial
+^j then any subsequent double of that suit by them is for penalties.^*n
+
+So if the bidding starts
+|n^|9|at|
+^c 1@s      -    (2@c)      -      p     -   (3@c)
+^c  p        -      (p)       -       X
+|n^|9|at|
+when this get back to partner, who now Doubles (shown above), then this Double is for PENALTIES, since if they had a Negative (ie: takeout) Double they would have made bid it over 2@c.
+
+Any questions or comments about those GUIDELINES ? 
+
+
+As I said before, the Guidelines are the more general things.
+
+They don't particularly affect the Doubles we're going to be looking at tonight, which mostly occur in VERY specific situations.| 
+pg| ***** 9 ***** |
+
+
+--------------------------------------------------------------------
+qx|Neg,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A        Negative  Doubles|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   Ok, let's turn our attention to NEGATIVE doubles.
+
+A negative double is essentially a simple takeout double.
+
+It occurs mainly in one situation, where partner has opened the bidding and our RHO has overcalled.    Eg: 
+|n^|9|at|
+^c 1x    -    (1 or 2y)    -    X
+     @2
+It denies having primary support for partner's suit.           You would support it.
+|n^|9|at|
+It normally denies having a 5-card or longer suit to bid.     You would bid it.
+|n^|9|at|
+It also denies having a penalty double of  RHO's overcall.   You would make a trap pass.
+|n^|9|at|
+It will often also deny having the ability to bid 1NT over the overcall (if space permits), but not always.
+^b@2
+A negative double, therefore, shows support for the unbid suits and denies having a decent alternative bid to make at this stage.
+
+You can play Negative Doubles up to quite high levels (eg: 4@d), but many pairs only play them up to a level of 3@h.
+
+The MAIN thing about a Negative double is that it normally promises 4-card support for an or any unbid major, so in a sequence like.
+|n^|9|at|
+^c 1@d   -   (1@s)   -   X 
+|n^|9|at|
+the doubler is pretty much promising 4 card Hearts.| 
+pg| ***** 10 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A        Negative  Doubles|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   If both majors are unbid.  In these two examples:
+|n^|9|at|
+^c 1@c   -   (1@d)   -   X
+^c 1@d   -   (2@c)   -   X
+|n^|9|at| 
+the double guarantees 4-card support for at least one if not both of the unbid majors.
+
+^*bMM:^*n  Other references put is as 4-4 in Majors would be wonderful  but  4-3  is OK as a minimum shape.
+
+
+|cp|red|at|^*bOliverC:^*n|cp||at|   As an aside, let's look at a hand|
+pg| ***** 11 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 1,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 1|sv|-|sk|n|sk||
+%% 3sT84hAJTdK853cJ94,sJ7hK875dAT9642c5,sK9632hQ6dQJcKT83,sAQ5h9432d7cAQ762
+md|3sT84hAJTdK853cJ94|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 1   |
+pg| ***** 12 ***** |
+
+
+mb|1S|
+pg| ***** 13 ***** |
+
+
+sj|L|
+mb|2C|
+pg| ***** 14 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 15 ***** |
+
+
+at|       A "Negative" double by South would be wrong, for two reasons.
+Firstly, such a Double would normally promise 4-card Hearts, which South does not have.
+Secondly, and mainly  they have 3-card support for Partner's Spades.
+So 2@s better than everything else, because  ANY  Double here would  DENY  having that degree of support.
+^p^*bMM:^*n  Now Back to where we were.| 
+pg| ***** 16 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A        Negative  Doubles|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   If both majors are unbid.  In these two examples:
+|n^|9|at|
+^c 1@c   -   (1@d)   -   X
+^c 1@d   -   (2@c)   -   X
+|n^|9|at| 
+the double guarantees 4-card support for at least one if not both of the unbid majors.
+
+^*bMM:^*n  Other references put is as 4-4 in Majors would be wonderful  but  4-3  is OK as a minimum shape.
+
+|cp|red|at|^*bOliverC:^*n|cp||at|   As an aside, let's look at a hand|
+pg| ***** 17 ***** |
+
+
+at|^^^^A negative double at the ^h 1   level can be as weak as ^n 6-8      points, 
+^h 2   level at least ^n 8-10    points should be held, 
+^h 3   level at least ^n 11+     points should be held. 
+
+You need to agree with partner how high you will play Negative doubles.  For example:
+|n^|9|at|
+^c 1@h   -   (3@c[weak])   -   X           
+|n^|9|at|
+is the double negative  showing 4 card Spades   ^*b OR ^*n  for penalties ?       To discuss with partner. 
+
+Negative doubles are extremely useful but should not be abused, particularly when a more descriptive bid is available.
+
+For example when you have a 5-card or longer suit available to bid,  or  when you can support partner's suit.|
+pg| ***** 18 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A        Negative  Doubles|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   As in the hand shown in the earlier aside, I quite often see people make what are supposedly negative doubles.  Yet when their hand is displayed, it turns out they have decent support for partner's suit, but just wanted to show their unbid Major.  
+
+To do that in a regular partnership is one thing, but in a pickup game, it's wrong, because Partner will not realise that you might have support for their suit as well.   This is particularly true when when cue-bids and Lebensohl are available.
+
+This increases the nuances you can give to different sequences.     Thus a sequence such as
+|n^|9|at|
+^c1@d   -   (2@c)   -   3@c
+|n^|9|at|
+is Staymanic and game-forcing whereas
+|n^|9|at|
+^c1@d   -   (2@c)   -   X
+|n^|9|at| 
+is also effectively Staymanic but shows a weaker hand in the 8-11 point range.
+
+
+^*bMM:^*n  continued on next page|
+pg| ***** 19 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A        Negative  Doubles|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  Obviously there are some sequences where, in my system for example, the cue-bid is NOT available as being Staymanic.    
+
+Thus in my system
+|n^|9|at|
+^C 1@h   -   (2@c)   -   3@c
+|n^|9|at|
+cannot be Staymanic, because we reserve it for use as an Asking Bid (Gamma), but 
+|n^|9|at|
+^c 1@d   -   (2@c)   -   3@c
+|n^|9|at|
+WOULD be Staymanic, because the 1@d Opening doesn't promise a Diamond suit and so 3@c there wouldn't be Gamma in Diamonds.
+
+So the Negative Double has to do double-duty there but that's not a real problem, because the double is for takeout rather than penalties, and even if partner has a decent Club holding, they're unlikely to pass 2@cX for penalties, sat under the 2@c bidder.
+
+By the way, I see all sorts of doubles alerted as "negative", but, strictly speaking, the ONLY time it's truly a negative double is 
+|n^|9|at|
+^c 1x - (1/2y) - X       AND
+|n^|9|at|
+^c 1x - (3y) - X          AND
+|n^|9|at|
+^c 1x - (4y) - X          if you play neg doubles that high.
+
+
+Any questions or comments about  NEGATIVE DOUBLES ?|
+pg| ***** 20 ***** |
+
+
+--------------------------------------------------------------------
+qx|Supp,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A        Support  Doubles|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   Ok, let's now turn our attention to Support doubles.
+|n^|9|at|
+The classic way of using these is to enable OPENER to distinguish between hands with 3-card support and those with 4-card or longer support for RESPONDER's suit in a competitive situation like this:
+|n^|9|at|
+^c 1@d           -     (p)    -    1@s    -    (2@h)
+^c 2@s or ^*bX^*n 
+|n^|9|at|
+If playing Support doubles then  2@s  shows  4 card  support whilst the  double  shows only  3 card  support for @s.
+
+Let me stress, Support Doubles are almost always made by OPENER to show qualified support for RESPONDER's suit when Responder's RHO has overcalled or doubled for takeout.   You can also play redoubles in a similar way after an auction like 
+|n^|9|at|
+^c 1@d          -     (p)    -    1@h     -     (X)
+^c 2@h or ^*bXX^*n
+|n^|9|at|
+If playing Support doubles then  2@h  shows  4 card  Heart support  and the  redouble shows  3 card support for @h.
+
+If you're not playing 3rd-suit doubles (which I'll come to shortly), then you could possibly use Support doubles in a sequence like 
+|n^|9|at|
+^c 1@s      -      (p)       -    1NT    -    (p)
+^c 2@h      -     (3@d)     -      ^*bX^*n
+|n^|9|at|
+where clearly Responder has no support for Opener's Spades, but you might want to distinguish between 3 and 4 card support for Opener's second suit, Hearts @h.
+
+That's one of the very few times you might see a support double by RESPONDER.|
+pg| ***** 21 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A        Support  Doubles|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   I don't use Support Doubles in those sorts of sequences in my own system, because
+|n^|9|at|
+^c1@s   -   1NT   -   2@h
+|n^|9|at|
+is almost always showing a 5-4 (or rarely 6-5) shape hand rather than 5-5, so there is little need for Responder to show @h support with less than 4-card support.   With 5-5 shape in the Majors we open 2NT.   If you have no such constraints on your 1@s Openings, then Support doubles could be useful there.
+
+Support doubles are a very useful device, especially when you couple them with a good understanding of what PASS by Opener would be in those circumstances.
+|n^|9|at|
+So where 
+|n^|5|at|
+^c 1@s   -   (p)   -   2@c   -   (2@h)
+^c  X
+|n^|9|at|
+would be showing 3 card Club Support and 
+|n^|5|at|
+^c 1@s   -   (p)   -   2@c   -   (2@h)
+^c 3@c 
+|n^|9|at|
+would be showing 4 card support. So 
+|n^|5|at|
+^c 1@s   -   (p)   -   2@c   -   (2@h)
+^c  p
+|n^|9|at|
+should be warning Responder that Opener has no support for Clubs and may have a penalty double of 2@h, so a re-opening double [by Responder] is indicated. (Following the logic of ^*bGuideline  3.^*n) even though a Double there wouldn't strictly be for takeout as such.
+|n^|5|at|
+As I said above, though, the availability of 4th-suit doubles (or Snapdragon doubles as they are sometimes known) does make a big difference to how you interpret doubles when 3 of the 4 suits have been shown.
+|n^|5|at|
+Time for the next example hand.|
+pg| ***** 22 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|t 2,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 2|sv|e|sk||
+%% 1SQ76H9DAQJ93CKQ87,ST932HQ542D752C62,SAKJ4H86DKT84CJ53,S85HAKJT73D6CAT94
+md|1SQ76H9DAQJ93CKQ87,,SAKJ4H86DKT84CJ53,|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 2      |
+pg| ***** 23 ***** |
+
+
+mb|1D|
+pg| ***** 24 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 25 ***** |
+
+
+mb|1S|
+pg| ***** 26 ***** |
+
+
+sj|L|
+mb|2H|
+pg| ***** 27 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 28 ***** |
+
+
+at|So if you play Support Doubles, then here Double shows 3 card Spade support, and 2@s from South would promise 4 card support.
+If South does bid  2@s, showing 4-card support, then North would, of course, prefer playing in @s to @d.|
+pg| ***** 29 ***** |
+
+
+mb|d|an|Support dbl    3 card @s sup|
+pg| ***** 30 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 31 ***** |
+
+
+mb|3D|an|only 4-card @s suit, @d support|
+pg| ***** 32 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 33 ***** |
+
+
+sj|L|
+mb|5D|
+pg| ***** 34 ***** |
+
+
+sj|c|
+mb|pp|
+at|^^|n^|9|at|
+Any questions or comments about  SUPPORT DOUBLES ?|
+pg| ***** 35 ***** |
+
+
+mb|p|
+md|0SQ76H9DAQJ93CKQ87,ST932HQ542D752C62,SAKJ4H86DKT84CJ53,|
+pg| ***** 36 ***** |
+
+
+pf|Y|
+pc|h2|
+pg| ***** 37 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+qx|Comp,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A        Competitive Doubles|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   Ok, now let's turn our attention to Competitive Doubles:
+
+Competitive Doubles are used where Opps have agreed a suit (normally one that is lower-ranking than your agreed suit) at the 3-level and in these circumstances a double shows a genuinely invitational raise of partner's suit whereas a direct bid at the 3-level in your agreed suit is merely competitive.
+
+Again, where Opps have agreed the suit it is less likely that you will be able to get a decent penalty, so the double is more useful for something else.
+
+If their suit is HIGHER-ranking than Partner's, then you can play Competitive Doubles at the 2-level.
+
+There is little point in playing Competitive Doubles at the 2-level when partner's suit in higher-ranking, since you can COMPETE at the 2-level.
+
+Thus in a sequence like
+|n^|9|at|
+^c 1@s   -   (2@h)   -   2@s   -   (3@h)
+^c ???
+|n^|9|at|
+now a Double from Opener is showing a genuine invitation whereas a direct 3@s is merely competitive and not inviting game.
+
+Competitive doubles are worthwhile because in these circumstances your chances of obtaining a decent penalty in Hearts is not great.
+
+I suggest playing competitive doubles up to a level of 3@h.|
+pg| ***** 38 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A        Competitive Doubles|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|    So Competitive Doubles are almost always where OUR side has agreed a suit and Opps have also agreed a suit and we're now at the 2 or 3 level, but we cannot compete at the 2 level in our suit.
+
+As with Support doubles (especially where Responder has introduced a new suit rather than supporting Opener's suit) the meaning of a PASS by Opener where a Double would be competitive should be a clear warning for Responder not to continue with their suit and to reopen with a Double if anything, unless of course, they have support for Opener's suit they have not yet shown.
+
+As I said, though, Competitive Doubles are almost always where we have also agreed a suit.
+
+If we've NOT agreed a suit, then a Double will often be a Support Double rather than Competitive.
+
+Alternatively it might also be for PENALTIES so 
+|n^|9|at|
+^c 1@s    -      (p)         -     2@c    -    (2@h)
+^c 2@s     -    (3@h)       -      X 
+|n^|9|at|
+from Responder is probably for Penalties, warning Opener of a Spade shortage.
+^^
+Next example hand.|
+pg| ***** 39 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|t 3,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 3|sv|e|sk|n|sk||
+%% 3SA82HT73DQ7CQJT32,SQ73HK98DJT965C98,SKJT964H4DAK82CA5,S5HAQJ652D43CK764
+md|3SA82HT73DQ7CQJT32,,SKJT964H4DAK82CA5,|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 3 |     
+
+
+mb|1S|
+pg| ***** 40 ***** |
+
+
+sj|L|
+mb|2H|
+pg| ***** 41 ***** |
+
+
+sj|L|
+mb|2S|
+pg| ***** 42 ***** |
+
+
+sj|L|
+mb|2N|an|Leb, forces 3@c|
+pg| ***** 43 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 44 ***** |
+
+
+sj|L|
+mb|3C|an|forced|
+pg| ***** 45 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 46 ***** |
+
+
+sj|L|
+mb|3H|an|competitive|
+pg| ***** 47 ***** |
+
+
+sj|L|
+mb|?|
+at|   So here, 3@s from North would be merely competitive,|
+pg| ***** 48 ***** |
+
+
+mb|d|an|Competitive Double|
+at| and the Double is a genuine invitation.|
+pg| ***** 49 ***** |
+
+
+at|^^The same would apply, of course, if West just bid  3@h  over  2@s  rather than using Leb.|
+pg| ***** 50 ***** |
+
+
+at|^^^*bnekthen: ^*n  What's the difference between double and 3@s here ?
+|cp|red|at|^*bOliverC:^*n|cp||at|  Here, 3@s would be merely competing.   The double shows a hand worth an INVITATION to 4@s.  We've agreed Spades, and they clearly have the Hearts sewn up, so it cannot be a PENALTY double.|
+pg| ***** 51 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 52 ***** |
+
+
+sj|L|
+mb|4S|
+pg| ***** 53 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^Any questions or comments about  COMPETITIVE DOUBLES ?|
+
+
+mb|p|
+md|0SA82HT73DQ7CQJT32,SQ73HK98DJT965C98,SKJT964H4DAK82CA5,|
+pg| ***** 54 ***** |
+
+
+pf|Y|
+pc|hA|
+pg| ***** 55 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A        Competitive Doubles|fp||at|      continued^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|    The thing to realise about Competitive Double is this:
+
+Needless to say, Competitive Double are not really worth playing when Opps' suit is HIGHER-RANKING than Partner's, because if they've agreed it at the 3-level, then now you cannot bid Partner's suit competitively at the 3-level.
+
+On the other hand, in those circumstances, you could play competitive doubles at the 2-level...
+
+So if their suit is higher-ranking, Competitive Doubles apply at the 2-level for example
+|n^|9|at|
+^c 1@h    -    (1@s)    -    2@h    -    (2@s)
+^c  X
+|n^|9|at|
+but if OUR suit is higher-ranking, they only apply at the 3-level.
+
+Any questions or comments about COMPETITIVE DOUBLES ?
+
+Are you all sleep tonight ? 
+
+
+^*bCarlieG:^*n  no ty
+
+^*bisabable:^*n  YES LOL
+
+
+|cp|red|at|^*bOliverC:^*n|cp||at|    :)|
+pg| ***** 56 ***** |
+
+
+--------------------------------------------------------------------
+qx|Resp,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A        Responsive Doubles|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|    The next kind of Double we're going to look at are Responsive Doubles.
+
+These are easy to explain because they are simply takeout doubles responding to Partner's earlier takeout double up to a level of 3@s.
+
+So in a sequence like
+|n^|9|at|
+^c(1@h)   -   X(Takeout)   -   (2@c)   -   X
+|n^|9|at|
+the second double is responsive, showing good support for both Spades and Diamonds, whereas a direct bid in Spades or Diamonds would suggest a lack of good support for the other suit.  (Or at least a definite preference for the suit you bid).
+
+Similarly, in a sequence like
+|n^|9|at|
+^c(1@h)    -    X    -    (2@h)    -    X
+|n^|9|at|
+the second double is responsive, showing decent support for the other three suits.
+
+If Responder has a PENALTY double of Hearts, then they have to Pass over 2@h and hope that partner can re-open with a Double.
+
+Responsive Doubles are not necessarily showing any additional STRENGTH, merely a wish to compete in one of the unbid suits.
+
+
+Time for the next example.|
+pg| ***** 57 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|t 4,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 4|sv|e|sk|e|sk||
+%% 4SKJ73HAQ96D7CKQ82,SQT965H32DT432CA3,S4HJT854DAJ6CJT65,SA82HK7DKQ985C974
+md|4SKJ73HAQ96D7CKQ82,,S4HJT854DAJ6CJT65,|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 4     |
+
+mb|1D|
+pg| ***** 58 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 59 ***** |
+
+
+sj|L|
+mb|1S|
+pg| ***** 60 ***** |
+
+
+sj|L|
+mb|d|an|Responsive|
+at|So here, North's Double is showing good support for the unbid suits and telling South to take their pick.|
+pg| ***** 61 ***** |
+
+
+sj|L|
+mb|r|an|3-card @s support|
+at|    (This is an example of a support re-double.)|
+pg| ***** 62 ***** |
+
+
+sj|L|
+mb|4H|
+pg| ***** 63 ***** |
+
+
+sj|L|
+mb|p|mb|p|
+
+at|^^By the way South can rely on North having pretty short @s here, so the hands are fitting really well for NS.
+|n^|9|at|
+Any questions or comments about RESPONSIVE DOUBLES ? |
+
+mb|p|
+md|0SKJ73HAQ96D7CKQ82,SQT965H32DT432CA3,S4HJT854DAJ6CJT65,|
+pg| ***** 64 ***** |
+
+
+pf|Y|
+pc|dT|
+pg| ***** 65 ***** |
+
+
+--------------------------------------------------------------------
+qx|4thS,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A        4th Suit Doubles|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|    The last conventional double we're going to look at today is the so-called 4th Suit Double.
+
+This can be used by 4th-in-hand when Partner and Opps have, between them, bid 3 of the 4 suits, such as
+|n^|9|at|
+^c (1@h)   -   2@c   -   (2@d)   -   ???
+|n^|9|at|
+A Double here is a 4th suit double showing 5+ Spades and a minimum or reasonable tolerance for Partner's Clubs.
+
+In those circumstances, BIDDING the 4th suit carries with it the message that you do NOT have such good tolerance for Partner's suit.
+
+However, the availability of Lebensohl in Competition does affect the nuances here, because if the bidding has already reached the 2 level and Leb in Competition is available, you can usually make this kind of differentiation by whether your bid of the 4th suit is a SLOW or FAST one.
+
+These situations do not come up very often, but it can be a useful device.
+
+You may also see this double referred to as Snapdragon or a 3rd suit Double.
+
+
+
+Next example time|
+pg| ***** 66 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|t 5,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 5|sv|-|sk|w|sk||
+%% 2S87HKQJT92D54C853,SA93H5DT96CAJT962,SKQJT65H764DK2CK4,S42HA83DAQJ873CQ7
+md|2,SA93H5DT96CAJT962,,S42HA83DAQJ873CQ7|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 5     |
+
+mb|p|
+pg| ***** 67 ***** |
+
+
+sj|L|
+mb|1S|
+pg| ***** 68 ***** |
+
+
+sj|L|
+mb|2D|
+pg| ***** 69 ***** |
+
+
+sj|L|
+mb|2H|
+pg| ***** 70 ***** |
+
+
+sj|L|
+mb|d|an|Clubs + @d tolerance|
+at|     So here is a 4th suit Double,  AKA SnapDragon,  AKA 3rd suit double.|
+pg| ***** 71 ***** |
+
+
+at|^^Here, Leb in Competition would not really help West, because they don't have a SLOW bid of 3@c available (if they needed it).  
+As it happens here, a  FAST 3@c  would be okay, since they're unlikely to bid that without a Diamond tolerance.|
+pg| ***** 72 ***** |
+
+
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Swap the Minors around in the EW hands, though.  So
+^c Pass   -   (1@s)   -   2@c   -   (2@h)              ???
+If West has @d and East has the @c, then Leb in Competition helps West, because they can differentiate between a SLOW and a FAST 3@d to show/deny a @c tolerance, but a 4th-suit double is cheaper if partner cannot support your suit.  Hopefully that makes sense to those who know Leb in competition.|
+pg| ***** 73 ***** |
+
+
+sj|L|
+mb|p|mb|3D|
+pg| ***** 74 ***** |
+
+
+sj|L|
+mb|p|mb|4D|
+pg| ***** 75 ***** |
+
+
+sj|L|
+mb|p|mb|5D|
+pg| ***** 76 ***** |
+
+
+sj|L|
+mb|p|mb|p|
+pg| ***** 77 ***** |
+
+
+mb|p|
+md|0S87HKQJT92D54C853,SA93H5DT96CAJT962,SKQJT65H764DK2CK4|
+pg| ***** 78 ***** |
+
+
+pf|Y|
+pc|hK|
+pg| ***** 79 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Doubles A        Recap|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|    Okay, to recap: 
+
+^b   1.  Ne@2gative Doubles generally occur when partner has opened a suit, our RHO has overcalled and now a double from us is for takeout, normally promising a 4-card holding in an unbid Major.
+
+^b   2.  Support Doubles/Redoubles occur when we've opened a suit, partner has made a change-of-suit response, and our RHO has overcalled or doubled, and they show 3-card support for Responder's suit whereas raising their suit promises 4-card support.
+
+^b   3.  Competitive Doubles normally occur when we and partner have bid, and where Opps have AGREED (ie: bid and supported) a suit at the 3-level.
+|n^|9|at|
+Now a Double shows a genuine invitation in partner's suit whereas just bidding it would be merely competitive. (or, more usually, it's when we have also agreed a suit as well as Opps ageeing one)
+
+^b   4.  Responsive Doubles normally occur when Partner has made a "normal" takeout Double and our RHO has bid a suit (supporting their Partner or otherwise).
+|n^|9|at|
+Now a Double from us is 100% for takeout suggesting good Support for the remaining unbid suits.
+
+^b   5.  4th Suit Doubles (or Snapdragon Doubles) occur when we are 4th-in-hand and by the time the bidding reaches us, 3 of the 4 suits have been bid naturally.
+|n^|9|at|
+Now we're showing at least a tolerance in Partner's suit AND a good longish holding in the 4th Suit.
+
+^bAny questions or comments on ANYTHING that we've covered tonight ?|
+pg| ***** 80 ***** |
+
+
+--------------------------------------------------------------------
+qx|Prac,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Practice / Demo  Hands|fp||at|^^^^|
+lg|c|n^|4|
+cp|red|at|^*bOliverC:^*n|cp||at|   Okay, let's practice some hands that use some of these Doubles that we've looked at.
+
+Can I have 4 volunteers to sit and play, please.
+
+You can use any system you like - doesn't have to be Precision, of course, but you do need to have been here for the whole lesson.
+
+Some of the hands may be ones I've used as examples if I don't spot them in time :)
+
+Play whatever system you like here :)
+
+
+gypsy1308: hi all
+
+nekthen:  acol ok p
+
+gypsy1308: acol ok :)
+
+jordymil:  2/1 with gadgets, pd
+
+johnny cra:  ok|
+pg| ***** 81 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 1,thin|
+st||
+pn|gypsy1308,johnny cra,nekthen,jordymil|rh||ah|Practice 1|sv|-|sk|n|sk||
+%% 3SKQ82HT5DKQ83CJ73,SJ76H984DT962CQT6,SAT94HKQJ63DA74C5,S53HA72DJ5CAK9842
+md|3SKQ82HT5DKQ83CJ73,,SAT94HKQJ63DA74C5,|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 1    |
+pg| ***** 82 ***** |
+
+
+mb|1H|
+pg| ***** 83 ***** |
+
+
+sj|L|
+mb|2C|
+pg| ***** 84 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 85 ***** |
+
+
+mb|d|
+at|^^A Negative Double from South here showing 4 card Spades.     2@s  over  2@c  would suggest 5+ Spades|
+pg| ***** 86 ***** |
+
+
+sj|c|
+mb|p|mb|2S|
+pg| ***** 87 ***** |
+
+
+sj|c|
+mb|p|mb|3S|
+pg| ***** 88 ***** |
+
+
+sj|c|
+mb|p|mb|4S|
+pg| ***** 89 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+
+at||n^|9|at|
+^^ok, wd^^Any questions?|
+pg| ***** 90 ***** |
+
+
+sj|L|
+mb|p|
+md|0SKQ82HT5DKQ83CJ73,SJ76H984DT962CQT6,SAT94HKQJ63DA74C5|
+pg| ***** 91 ***** |
+
+
+pf|Y|
+pc|cA|
+pg| ***** 92 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared|
+pg| ***** 93 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2,thin|
+st||
+pn|gypsy1308,johnny cra,nekthen,jordymil|rh||ah|Practice 2|sv|n|sk|e|sk||
+%% 4ST8HK6DA63CKJT743,S32HQJ32DQ5CAQ982,SK954HT9874DJ84C6,SAQJ76HA5DKT972C5
+md|4,S32HQJ32DQ5CAQ982,,SAQJ76HA5DKT972C5|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2        |
+pg| ***** 94 ***** |
+
+
+mb|1S|
+pg| ***** 95 ***** |
+
+
+sj|L|
+mb|2C|
+pg| ***** 96 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 97 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 98 ***** |
+
+
+sj|L|
+mb|2D|
+pg| ***** 99 ***** |
+
+
+sj|L|
+mb|3C|
+pg| ***** 100 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 101 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 102 ***** |
+
+
+sj|L|
+mb|3D|
+pg| ***** 103 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 104 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 105 ***** |
+
+
+at|   Now West is stuffed.     Ok, so what went wrong here ?         Anyone?|
+pg| ***** 106 ***** |
+
+
+at|^^^*bCarlieG: ^*n West should pass (not X)       
+|n^|4|at|^*bsblitz: ^*n     West should not do a neg double with only 2 @d's
+|cp|red|at|^*bOliverC:^*n|cp||at|  3@d by East is going to make. 3@s might even make, but 2@c by NS would get crucified for a great score.
+^dLet's look at a more coherent sequence.|
+pg| ***** 107 ***** |
+
+
+sk|e|sk||
+ub|99|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at||
+pg| ***** 108 ***** |
+
+
+mb|1S|
+pg| ***** 109 ***** |
+
+
+sj|L|
+mb|2C|
+at|    West should PASS over 2@c, because a double by them is for TAKEOUT, NOT for Penalty.|
+pg| ***** 110 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 111 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 112 ***** |
+
+
+sj|L|
+mb|d|
+at|^^Now East should make every effort to reopen with a Double.   (^*bGuideline 3.^*n)
+This is especially true at  White vs Red.|
+pg| ***** 113 ***** |
+
+
+sj|L|
+mb|ppp|
+md|0ST8HK6DA63CKJT743,S32HQJ32DQ5CAQ982,SK954HT9874DJ84C6|
+pg| ***** 114 ***** |
+
+
+pf|Y|
+pc|s3|
+pg| ***** 115 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared|
+pg| ***** 116 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 3,thin|
+st||
+pn|gypsy1308,johnny cra,nekthen,jordymil|rh||ah|Practice 3|sv|n|sk|e|sk||
+%% 2S8763H8D872CAJ873,SAJT94HQ2D65CQT95,SKQ5HK65DQJT93C42,S2HAJT9743DAK4CK6
+md|2,SAJT94HQ2D65CQT95,,S2HAJT9743DAK4CK6|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 3           ^q (^*bMM: ^*n constructed seq) |
+pg| ***** 117 ***** |
+
+
+mb|p|
+pg| ***** 118 ***** |
+
+
+sj|L|
+mb|1D|
+pg| ***** 119 ***** |
+
+
+sj|L|
+mb|1H|
+pg| ***** 120 ***** |
+
+
+sj|L|
+mb|2c|
+pg| ***** 121 ***** |
+
+
+sj|L|
+mb|?|
+at|^^Now West has a choice to perhaps make a 4th suit double to show Spades with a @h tolerance.|
+pg| ***** 122 ***** |
+
+
+mb|d|an|4th suit X     @s    + @h tolerance|
+pg| ***** 123 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 124 ***** |
+
+
+sj|L|
+mb|4h|
+pg| ***** 125 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 126 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 127 ***** |
+
+
+sj|L|
+mb|p|
+md|0S8763H8D872CAJ873,SAJT94HQ2D65CQT95,SKQ5HK65DQJT93C42|
+pg| ***** 128 ***** |
+
+
+pf|Y|
+pc|s3|
+pg| ***** 129 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared|
+pg| ***** 130 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 4,thin|
+st||
+pn|gypsy1308,johnny cra,nekthen,jordymil|rh||ah|Practice 4|sv|n|sk|e|sk||
+%% 1SKQ2HQ983DAQJ92C8,SAJT953H76DKT8CA7,S86HAKT2D73CKQT96,S74HJ54D654CJ5432
+md|1SKQ2HQ983DAQJ92C8,,S86HAKT2D73CKQT96,|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 4 |
+pg| ***** 131 ***** |
+
+
+sj|L|
+mb|1D|
+pg| ***** 132 ***** |
+
+
+sj|L|
+mb|1S|
+pg| ***** 133 ***** |
+
+
+sj|L|
+mb|d|
+at|^^So a negative double from North here, promising 4-card @h|
+pg| ***** 134 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 135 ***** |
+
+
+sj|L|
+mb|2h|
+pg| ***** 136 ***** |
+
+
+sj|L|
+mb|2s|
+pg| ***** 137 ***** |
+
+
+sj|L|
+mb|4h|
+at|     and a sensible enough leap to 4@h.|
+pg| ***** 138 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 139 ***** |
+
+
+at|^^Here is an interesting question - Given North's negative double, are Hearts effectively agreed here with 2@h ?
+^*bjordymil: ^*n    yes
+^*bgypsy1308: ^*n  y|
+pg| ***** 140 ***** |
+
+
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  If Hearts CAN be treated as agreed by South's 2@h bid, then a DOUBLE by North  over 2@s would now be a COMPETITIVE DOUBLE, showing a hand worth a genuine invitation in @h.
+After all, a Double by North can hardly be for penalties when they have effectively made a takeout double with their first double.
+So this is a grey area,  something to consider.|
+pg| ***** 141 ***** |
+
+
+sj|L|
+mb|p|
+md|0SKQ2HQ983DAQJ92C8,SAJT953H76DKT8CA7,S86HAKT2D73CKQT96|
+pg| ***** 142 ***** |
+
+
+pf|Y|
+pc|h7|
+pg| ***** 143 ***** |
+
+
+Goodbyes--------------------------------------------------------------------
+qx|end,thin|
+bt||
+nt|^b@2^z@3|at|^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  With your permission we'll leave it there for tonight. 
+
+Next week we will look at some more doubles, specifically at 
+^k Non-Penalty Slam Doubles and Control-showing Doubles.
+
+
+mojila: TY Oliver
+
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  I've not eaten yet and it's 11:15pm here   :)
+
+RogerPfi:   Thank you Oliver great lesson
+
+gypsy1308:   great  ty Oliver
+
+jordymil:   thx, Oliver, enjoyed
+
+johnny cra:  THANK YOU VERY MUCH
+
+kritter2:  tyvm :)
+
+
+|cp|red|at|^*bOliverC:^*n|cp||at|   See ya all for next week, which most of you will find a little more unusual :)
+
+night all. Bye for now
+

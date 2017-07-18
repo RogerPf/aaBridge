@@ -91,7 +91,7 @@ at||
 nt||
 qx|up|
 up|2|
-pc|hq|
+pc|hT|
 at|^b@2^*bUndo Play^*n^f^*b!up!99!^*n|at|^z@3|
 at|
 ^d@2As with bidding you can 'undo' the play.
@@ -108,16 +108,30 @@ pg| ***** 12 ***** |
 up|2| 
 at|
 !up!2! ^g will attempt to undo two cards|
-pg||
+pg| ***** 13 ***** |
+
+
+pc|h4h3hT|
+pg| ***** 14 ***** |
+
+
+up|0| 
+at|
+
+!up!0! ^g Will undo  ^*bZERO^*n  cards  but will   CLEAR THE DISPLAY  of any  ^*bCOMPLETED^*n  trick |
+pg| ***** 15 ***** |
 
 
 qx|aa|
-up||
-rc|sAJT842h92dQcAJ96,,sK63hJ63dT875cK85|
-nt|^b@2^*bAuto Add^f!aa!y!  ^iadded in ^*b aaBridge ^*n|cp|red|at|^*b2820^*n|cp||at|^*n^z@3|at|                     
-If you have missing (undelt) cards then you can have then automatically added to the correct hand as you play them.| 
-at|^^^^^d!aa!y!|
+up|99|
+rc|h92,,hj63|
+nt|^b@2^*bAuto Add^f!aa!y!  ^iadded in ^*b aaBridge ^*n|cp|red|at|^*b2820^*n|cp||at|^*n^z@3|at|
+up!99!        rc!h92,,hj63!|
 pg||
+
+at|^^If you have missing (undelt) cards then you can have then automatically added to the correct hand as you play them.| 
+at|^^^^^d!aa!y!|
+pg| ***** 16 ***** |
 
 
 at|^^^d!pc!h9!            ^h Advice:  Switch the  aa  option on only when you need it
@@ -125,8 +139,26 @@ at|^^^d!pc!h9!            ^h Advice:  Switch the  aa  option on only when you ne
                           ^h See md (Make Deal)   for  rc  (Remove Cards)  for how the above cards vanished.|
 aa|y|
 pc|h9|
+pg| ***** 17 ***** |
+
+qx|tt|
+up|99|
+aa|n|
+nt|^b@2^*bTidy Trick^ftt!y!  ^iadded in ^*b aaBridge ^*n|cp|red|at|^*b2954^*n|cp||at|^*n^z@3|at|
+|
+md|0,h92,,hj63|
+wt|w|
+pg||
+pc|sA|pc|s5|pc|s3|pc|s9|
+pg||
 
 
-pg| ***** 4 ***** |
+at|^^  ^c ^*btt!y!^*n    clears the trick display from the table, keeping it (of course) in the tricks pile.| 
+tt|y|
+pg||
+
+at|^^^^  ^c ^*btt!!^*n   ^*bYOU MUST^*n  turn the clearing  off  when staring to re-display played cards once more.|
+tt||
+pg||
 ht|z|at|@0
 ^*b end ^*n|

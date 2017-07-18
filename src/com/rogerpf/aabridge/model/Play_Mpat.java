@@ -451,7 +451,7 @@ final static Mpat[][] knownCases = {
 				}
 				else {
 					// we are required to ALSO return the REL card as the caller may want to know it
-					// and we need to convert Equ to Rel - cos rel is the standard format in the stratergy zone
+					// and we need to convert Equ to Rel - cos rel is the standard format in the strategy zone
 					Card card = fa.myFrag.getIfEquExists((matchPosition % 2 == 0), g.mpatRtn.rankEqu);
 					if (card == null) {
 						@SuppressWarnings("unused")

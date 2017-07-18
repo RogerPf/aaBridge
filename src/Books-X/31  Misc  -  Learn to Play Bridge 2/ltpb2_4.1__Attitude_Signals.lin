@@ -1,0 +1,945 @@
+%% 
+%% This is an extract from the free Windows prog - 'Learn to Play Bridge Bridge2'
+%%     available from     https://web.acbl.org/LearnToPlayBridge
+%%
+%% Original filename      ltpb2_4.1__Attitude_Signals.lin
+%%     file last changed  2016-Dec-07    bversion 0.18
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%                                    Font  'blank'  is size 30   
+%%                                    (sizes 30 to 35 shrink to 30  for legacy compatibility)
+fh|136|ff|1Arial|fb|10|fm|1|      Font 1   36  shrinks to size 32    
+fh|238|ff|2Arial|fb|20|fm|2|      Font 2   37  shrinks to size 34
+fh|339|ff|3Arial|fb|30|fm|3|      Font 3
+fh|440|ff|4Arial|fb|40|fm|4|      Font 4
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|60|fm|6|      Font 6
+fh|770|ff|7Arial|fb|70|fm|7|      Font 7
+fh|880|ff|8Arial|fb|80|fm|8|      Font 8
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1248|cg|1231|cb|1189|   Beige Cream
+cr|2185|cg|2201|cb|2195|   Beige grey green
+cr|3198|cg|3205|cb|3229|   grey medium
+cr|4160|cg|4174|cb|4228|   blue grey
+cr|5198|cg|5205|cb|5229|   light grey
+cr|6122|cg|6000|cb|6049|   dark maroon
+cr|9255|cg|9255|cb|9255|   'white'
+
+
+bt||nt|^b@2^z@3|
+
+
+%%   Top bar header box and Text
+ht|b|cp|9|cs|6|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|n#|k|fp|6|at|^-Learn to Play Bridge2          ^*bChapter 4   Section 1^*n^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|1|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|f|fp|9|at|^^^^^^^^^^^^^^^^|fp|7|at|^-^*bDefense         -         Attitude Signals^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+at|This Bridge Movie (.lin file) is an unaltered extract from  ^*bLearn to Play Bridge2^*n  a Windows program.  The original program can be downloaded from the ACBL at @-
+
+^d^*h https://web.acbl.org/LearnToPlayBridge ^*n
+    
+The ACBL requires an email address from you and will send you the download instructions  ^*bOR^*n  you can download it directly from ^*hhttp://www.bridgebase.com/index.php^*nhere^*x. (See the links, center left, on that web page.)
+
+^*bLearn to Play Bridge^*n comes as two programs.  Program 1 is for beginners, including an introduction to card play and Standard American bidding.  Program 2 (the source of this tutorial) covers material for the 'intermediate' player.
+
+An ^*bAcol^*n version of Program 1 can be downloaded from the ^*bEBU^*n ^*hhttp://www.ebu.co.uk/education/ltpb^*nhere^*x.
+ 
+
+A different set of extracts from  ^*bLearn to Play Bridge2^*n  are available for on-line play (in your browser) at @-
+
+^d^*h http://www.bridgesights.com/hondobridge/##fglb ^*n
+
+
+Our thanks goes to the ^*bACBL^*n for providing these two exceptional Bridge programs for free.
+|
+pg||
+
+
+
+qx|Ch 4|
+
+
+nt|^b@2^z@3|
+cs|5|cp|6|fp|4|
+at|
+^-{ Introduction to chapter 4 }
+^-|fp||cp||at|
+In earlier chapters we have already seen several examples of signals on defense and noted how signals can help the defenders to decide which cards to play. In this chapter we will go into much more detail about what defensive signals are all about, how you can use signals to help your partner on defense, and how you can benefit from the signals that your partner makes.
+ 
+First things first - what exactly is meant by the term signal?
+
+|pg||
+cs|1|at|^-{ A signal is the play of a card by a defender which carries a message to his partner. }
+^-
+|pg||
+at|Let's review some of the examples of signals that we have seen so far and the messages that these signals convey to the partner of the player who makes them.
+
+|pg||
+cs|4|at|^-{ When a partnership uses standard leads, every time the defense leads a suit, a signal 
+ is being made. The card that is led carries a message to the partner of the player that led. }
+^-
+|pg||at|For example, the lead of a Queen carries 3 possible messages: either the leader has the Jack in the suit that was led, or he has a doubleton Queen, or he has a singleton Queen. Using standard leads, the Queen is not led under any other circumstances.
+
+|pg||cs|2|at|^-{ One of the important reasons to be true to the principles of standard leads is so that 
+ your partner receives accurate information from the messages that your leads carry! }
+^-
+|pg||
+at|For example, if you lead the Queen when you hold the King-Queen, your partner will be fooled!|pg||tb||
+
+nt|^b@2^z@3|va|5|At|We have seen 3 situations where a defender should play the lowest card from 2 or more equals as a signal to his partner. In each case, the message of the signal is that a higher touching card (or cards) ^*Imight^*N be held, but that a lower touching card is certainly not held. In other words, the nature of these types of signals is to ^*Ideny^*N the possession of a specific card:
+
+|pg||cs|1|at|^-{ 1. When splitting from 2 or more equal cards as the second hand to 
+ play to a trick, always play the lowest card of the group of equals. }
+
+|pg||
+cs|3|at|{ 2. When following suit as third hand to play to a trick,
+ always play the lowest card from a group of equals. }
+
+|pg||
+cs|2|at|{ 3. When winning a trick as the fourth hand to play to that 
+ trick, always play the lowest card from a group of equals. }
+^-
+|pg||at|As an example of how these plays may be useful signals, assume that a Queen is played in any of the 3 situations mentioned above. The play of the Queen conveys 2 messages to the partner of the player who played that card:
+
+|pg||cs|4|at|^-{ 1. That his partner might have the King of the same suit. }
+
+|pg||cs|1|at|{ 2. That his partner definitely does not have the Jack of the same suit. }
+^-
+|pg||
+at|On many deals, the ability to draw these kinds of inferences from the cards that your partner plays will help you to place critical honor cards in the unseen hands. This will often help you to make winning decisions as a defender. |pg||
+
+nt|^b@2^z@3
+There are 3 important families of signals that we have not encountered yet. All of these involve the use of spot cards to give your partner messages about the nature of your hand. The study of these 3 types of signals will be the primary focus of this chapter.
+
+Here is a list of what these 3 types of signals are named along with a brief explanation of the type of messages that they are used to convey:
+
+|pg||
+cs|1|at|^-{ 1. Attitude signals are used to tell your partner about either the 
+ presence or the absence of a critical honor card in a specific suit. }
+^-
+|pg||
+at|For example, a defender can use an attitude signal to give his partner a message like, "I have the @SA" or "I don't have the @HA".
+
+|pg||cs|2|at|^-{ 2. Count signals are used to tell your partner whether you have an even 
+ (2, 4, 6, or 8) or an odd (1, 3, 5, or 7) number of cards in a specific suit. }
+^-
+|pg||
+at|For example, a defender can use a count signal to give his partner a message like, "I have an odd number of diamonds" or "I have an even number of clubs". 
+
+|pg||cs|4|at|^-{ 3. Suit preference signals are used to tell your partner that you 
+ would like him to play a specific suit if he should gain the lead. }
+^-
+|pg||
+at|For example, a defender can use a suit preference signal to give his partner a message like, "I would like you to play a spade if you gain the lead".|pg||
+
+
+
+nt|^b@2^z@3
+Before we start exploring attitude, count, and suit preference signals, here are some important points that you should know about signaling in general:
+
+|pg||cs|3|at|^-{ It is not always easy to know the type of signal that your partner is using when he plays a 
+ particular spot card, but it is important for partnerships to understand each others' signals. }
+
+|pg||
+at|^-For example, suppose that your partner discards the @S2. Is this an attitude signal that gives a message about his honor holding in spades? Is it a count signal that gives a message as to whether he has an even or an odd number of spades? Could it be a suit preference signal asking you to play a particular suit if you should gain the lead?
+
+The answer is partly up to each partnership to decide for themselves. You already know that partners can make bidding agreements like, "When we open 1NT we will always have between 15 and 17 HCP". Partners can also make agreements about their signals. For example, the following is a common agreement that could be used to resolve the problem described above:
+
+|pg||cs|1|at|^-{ The first discard that a player makes in a suit is an attitude signal. }
+^-
+|pg||
+at|One of the main purposes of this chapter is to come up with a series of statements like the one shown above that will constitute an effective set of agreements for your partnership. Just like in bidding, some bridge authorities have different opinions about the types of signals that ^*Ishould^*N be used in various situations. You and your partner won't go far wrong if you use the suggested signaling agreements that are presented in this chapter, but you really should discuss these important matters together in order to make sure you are on the same wavelength on defense!|pg||
+
+
+
+nt|^b@2^z@3
+Here is another important principle about signaling that you should keep in mind:
+
+|pg||cs|4|at|^-{ The declarer can see the signals that the defenders make and this 
+ can sometimes help the declarer more than it will help the defenders! }
+
+|pg||
+at|^-You have already seen plenty of situations where a declarer faces a guess in a critical suit. If the defenders are not careful and make an attitude signal in such a suit, the declarer may pick up on this signal and be able to figure out the location of the missing honors. As a result, the declarer may find it easier to make the winning guess in this suit.
+
+|pg||at|Similarly, if a defender uses a count signal to tell his partner if he has an even or an odd number of cards in a particular suit, the declarer will get the message as well. On some deals this information will cause the declarer to adopt a plan that he would not have considered if the count signal had not been made. 
+
+|pg||
+cs|2|at|^-{Defenders should be careful with their signals. Only signal if you think that the message that 
+is carried by your signal will be more important to your partner than it will be to the declarer!}
+^-
+|pg||
+at|It is not always easy to know if a signal will be more helpful to your partner or to the declarer. At this early point in your career as a signaler, it is best not to worry about these issues very much. Just keep in mind that your partner is not the only player at the table who can see your signals and use them to help reconstruct the unseen hands. Signals are perhaps the most important tool that the defenders have, but a clever declarer can sometimes cause the defenders' signals to work against them!
+
+|pg||qx|atti,Attitude signals|
+
+
+nt|^b@2^z@3|
+cs|5|cp|6|fp|4|
+at|
+^-{ Attitude signals }
+^-
+|fp||cp||at|Attitude signals are arguably the most important type of signals that the defenders have at their disposal. Here is a reminder of the type of messages that you can convey to your partner with an attitude signal:
+
+|pg||cs|1|at|^-{ Attitude signals are used to tell your partner about either the
+ the presence or the absence of a critical honor card in specific suit. }
+^-
+|pg||at|Before we get into the mechanics of the attitude signal, think about the power of this concept for a minute. Spot cards (especially small ones) do not win very many tricks for the defense - they are normally used for either following suit or as discards. If it weren't for signaling, spot cards would not be very useful cards for the defenders to hold.
+
+The concept of the signal changes this. Signals allow you to use your spot cards to tell your partner more about the layout of the unseen hands. As we have seen many times, defense becomes a whole lot easier when the defenders are able to figure out what the other players were dealt! 
+
+Attitude signals allow the defenders to resolve an important part of the mystery of what each player was dealt. These signals give the defenders the ability to use their spot cards to tell each other about the location of important honor cards. There are many deals where the defenders can use the information they learn from their partners' attitude signals to help them figure out the most effective suits to lead or cards to play.
+
+|pg||
+
+
+nt|^b@2^z@3
+Here is the basic idea behind how attitude signals work:
+
+|cs|2|at|^-{ Follow suit with or discard a high card to show that you have a critical honor in that suit. 
+ Follow suit with or discard a low card to deny that you have a critical honor in that suit. }
+^-
+|pg||
+at|In other words, a high card carries the message that you like the suit that the high card belongs to. A low card carries the message that you don't like the suit that the low card belongs to.
+
+The big question is, when should your partner interpret a high card or a low card that you play as an attitude signal? There is no simple answer to that question. The best we can do is state a few general circumstances in which the card that you play should usually be interpreted as an attitude signal. One of these situations was mentioned already:
+
+|pg||cs|3|at|^-{ The first discard that a player makes in a suit should be interpreted as an attitude signal. }
+^-
+|pg||
+at|Here are a couple of other situations where it is a good idea to signal your attitude:
+
+|pg||cs|1|at|^-{ When your partner leads an honor card, you should usually give him an attitude signal. }
+
+|pg||cs|4|at|{ When your partner leads to a trick and the second hand to play appears to be 
+ winning that trick, it is usually correct to give your partner an attitude signal. }
+^-
+|pg||
+at|Don't be concerned if these principles seem very abstract right now. They will make more sense when you see them applied in the card combinations and example deals that follow. |pg||
+st||md|2,sakt4|ha|y|hc|sa|sv||
+
+
+
+nt|^b@2^z@3Here is an example of the power of attitude signals. Suppose that you are sitting West and that South is the declarer in a trump contract. Spades is a side suit and you select the @SA as your opening lead. Recall that the Ace is the standard lead from a holding that is headed by the Ace-King. |pg||
+
+nt|^b@2^z@3|lc|sa|pc|sa|md|0,,s952|hs|ns|at|The dummy has the @S952. |pg||ls|ns|hc|s2|at|The declarer calls for the dummy's @S2 |pg||lc|s2|pc|s2|md|0s6,,,s3|hc|s3s6|at|and your partner's @S3 and declarer's @S6 make up the rest of this trick. |pg||lc|s3s6|pc|s3s6|pg||hc|sk|at|Now pretend for a minute that you and your partner have never heard of attitude signals before. Do you think it is a good idea to lead your @SK now or should you switch to another suit? |pg||
+
+
+
+nt|^b@2^z@3Actually there is no way to answer that question properly. For one thing, you cannot really know the proper play unless you can see the rest of the cards outside of your own hand and the 
+dummy. The bidding may also be relevant to your decision. One critical factor as to whether or not the @SK will be a good play for the defense is the position of the @SQ. It would make your trick 2 play a lot easier if you knew if it was your partner or the declarer who was dealt the @SQ!|pg||md|0sj7,,,sq8|hc|sq|
+
+nt|^b@2^z@3If your partner has the @SQ (as in the layout shown above), leading your @SK to the second trick rates to work out well for the defense. The @SK will win the trick |pg||lc|sqk|pc|sksss|pg||hs|wses|at|and you can then lead a third round of spades to East's @SQ. |pg||ls|esws|pc|stsss|pg||up|8|hc|sqj|at|However, if we exchange the position of the @SQ and the @SJ, |pg||md|0sq,,,sj|lc|sqj|hc|sk|at|the lead of the @SK to the second trick is not a success. The @SK wins, |pg||lc|sk|pc|sksss|pg||hc|sq|at|but declarer's @SQ will be left as the highest spade in the deck. |pg||
+
+hc|sk|up|4|
+
+nt|^b@2^z@3Now suppose that you somehow knew that the declarer was dealt the @SQ. In this case, you could avoid playing your @SK and lead some other suit instead. |pg||lc|sqk|hc|sj|wt|e|at|If your partner later won a trick, he could lead back his @SJ (high from his remaining doubleton). |pg||lc|sj|pc|sj|hs|ssws|at|The declarer's @SQ would be surrounded. It wouldn't matter if the declarer played the @SQ or the @S7 - there is no way that he can win a trick in spades after this strong defense by you and your partner!|pg||
+
+up|5|md|0sj,,,sq|ls|ssws|hc|sa|
+
+nt|^b@2^z@3As you have no doubt realized, attitude signals can be used to help the defenders resolve problems like this one. Here, when you lead the @SA (suggesting that you hold the @SK as well) |pg||lc|sa|pc|sas|hc|sq|at|your partner knows that the @SQ is a critical card. If he has that card, |pg||lc|sq|hc|s8|at|he should tell you about it by playing a high spot card as an attitude signal. On this layout, the @S8 is the proper spade for East to play. |pg||lc|s8|pc|s8|sb|eI like spades!|at|Here the @S8 carries the message, "I like spades!". |pg||
+
+
+
+nt|^b@2^z@3It would actually be very much against the rules of bridge for East to make a statement like this out loud at the table. |pg||sb|e|at|Fortunately for the defenders, East can give you this message without saying a word - his attitude signal of the @S8 gets the job done! |pg||hc|s6|at|South follows suit with the @S6 and your @SK wins the first trick. |pg||lc|s6|pc|s6|pg||hc|sk|at|Since East's attitude toward spades was an encouraging @S8, you can know to lead the @SK now and that it will be good for the defense.|pg||
+
+up|2|lc|sk|hc|sqj|
+
+nt|^b@2^z@3Now let's switch the @SQ and the @SJ between the East and South hands. |pg||lc|sqj|md|0sq,,,sj|hc|sj|at|East's @SJ is a fairly high spade, but it is not quite high enough to send his partner the message that he likes spades. |pg||lc|sj|hc|s3|at|East should play his lowest spade (the @S3) as a discouraging attitude signal. |pg||lc|s3|pc|s3|hc|s6|at|South plays the @S6 and the @SA wins the first trick, |pg||lc|s6|pc|s6|pg||hc|sk|at|but West is now in a position to know that his partner does not want him to continue playing spades. That rates to be good for the defense.|pg||
+
+lc|sk|up|2|hc|s83|
+
+nt|^b@2^z@3In this example it is easy for West to understand the message of East's attitude signal because East's 2 spot cards in spades (the @S8 and the @S3) are so far apart in rank. |pg||lc|s3|at|The @S8 is one of the highest spot cards in spades |pg||lc|s8|hc|s3|at|and the @S3 is one of the lowest spot cards in spades. |pg||hc|s8|at|In this layout it is easy for East to send his partner an unambiguous message about his spade holding, but that won't always be the case. |pg||
+
+md|2sj76,sakt4,s985,sq32|lc|s83|
+
+hc|saktqj|
+
+nt|^b@2^z@3Consider this layout of the spade suit. The honor cards are the same as they were previously, |pg||lc|sakjtq|hc|s76498532|at|but some of the spot cards have been moved around. |pg||lc|s23456789|hc|sa|at|West leads the @SA as before, |pg||lc|sa|pc|sas|hc|sq|at|and East, who has the @SQ, would like to give his partner an encouraging attitude signal. |pg||lc|sq|hc|s32|at|Unfortunately, the only spade spot cards that East was dealt are the @S3 and the @S2 and these are both very small spades. |pg||lc|s2|at|The best East can do is play the @S3 as his attitude signal. |pg||lc|s3|pc|s3|hc|s6|
+
+nt|^b@2^z@3When South follows with the @S6 and West's @SA wins the trick, |pg||lc|s6|pc|s6|hs|es|at|West should examine the spot cards carefully before he leads to the next trick. The @S3 does not look like a very high spade, but West should note that the @S2 is unaccounted for. A thoughtful West might realize that the @S3 is the most encouraging card that East could play if he was dealt the @SQ32. |pg||ls|es|hc|sk|at|There is at least a chance that West will be able to figure out that it is safe to continue spades. |pg||
+
+lc|sk|md|2sq32,sakt4,s765,sj98|hc|sa|
+
+nt|^b@2^z@3For the flip side of this coin, here is another similar spade layout. Once again, West leads the @SA to the first trick. |pg||lc|sa|pc|sas|hc|sj|at|Since East's highest spade is the @SJ (and not the @SQ), East would like to give his partner a discouraging attitude signal. |pg||lc|sj|hc|s98|at|It would be nice if East had been dealt some truly low spades, but his only spot cards in that suit are the @S9 and the @S8. |pg||lc|s9|at|All East can do is play the @S8 |pg||lc|s8|pc|s8s2|hs|es|at|and hope that West can figure out that he might have started with the @SJ98. |pg||
+
+up|2|
+
+nt|^b@2^z@3Suppose that instead of @SJ98, |pg||md|0sj,,,sq|at|East was dealt the @SQ98 instead. |pg||ls|es|hc|s8|at|East might think that playing the @S8 as an encouraging attitude signal is the right play. After all, the @S8 is a high spot card in the grand scheme of things. |pg||md|0sq,,,sj|lc|s8|hs|es|at|We just saw, however, that if East had the @SJ98, |pg||ls|es|hc|s8|at|he should discourage a spade continuation by playing the @S8. |pg||md|0sj,,,sq|lc|s8|hs|es|at|With the @SQ98, |pg||ls|es|hc|s9|at|East should encourage, but he should do so by playing the @S9 (and not the @S8).|pg||
+
+
+
+nt|^b@2^z@3|ht|b|at|There is an important principle of signaling to be learned from this example:
+
+|pg||ht|j|cs|1|at|^-{ Always signal with the loudest card that you can afford! If you follow this practice it will be
+ easier for your partner to understand the message that your signal was intended to deliver. }
+^-
+|pg||
+ht|v|at|Here the @S9 is the proper signal because it is higher (and therefore louder) than the @S8. |pg||
+
+md|0sq,,,sj|hc|s89|
+
+nt|^b@2^z@3|ht|b|at|Here is another important lesson that we have learned about signaling:
+
+|pg||ht|j|cs|2|at|^-{ Sometimes a defender is not dealt the spot cards to convey the message that he would 
+like. He can only try his best and hope that his partner is able to work out the position. }
+^-
+|pg||
+ht|v|at|Here East wants to discourage, but his @S98 makes this hard. |pg||lc|s9|at|The @S8 is the best East can do. |pg||
+
+hc|s9|
+
+nt|^b@2^z@3Some of the recent examples demonstrate that there are situations where a defender is not dealt a sufficiently low spot card to make a clearly discouraging attitude signal |pg||lc|s98|hc|s32|md|0sj98,,,sq32|at|or a sufficiently high spot card to make an encouraging attitude signal. |pg||lc|s2|at|When a defender is in a situation like this, he makes the clearest signal that he can. |pg||lc|s3|pc|s3|at|Sometimes his partner will be able to work out what is happening and sometimes his partner will misjudge the layout of the suit in question. |pg||
+
+up|1|hc|s32|
+
+nt|^b@2^z@3You should not lose a lot of sleep over the possibility that, through no fault of your own, you will occasionally mislead your partner with your signals. Signals can backfire for the defenders once in a while, |pg||md|0sj92,,,sq83|lc|s32|hc|s8|at|but it is much much more common that you will be dealt holdings where the use of attitude signals will help the defense. |pg||
+
+lc|s8|md|2,h4,h863,ha92|hc|h4|
+
+nt|^b@2^z@3Here is a situation where you should not make an attitude signal at all. You are sitting East again and your partner leads the @H4. |pg||lc|h4|pc|h4|hc|h3|at|The @H3 is played from the dummy. |pg||lc|h3|pc|h3|hc|ha|at|Your @HA is certainly an important heart, |pg||lc|ha|hc|h9|at|but this is not a situation for making an encouraging attitude signal with the @H9 in an effort to tell your partner that you have an honor card in hearts. |pg||lc|h9|hc|ha|at|You have a better way to tell your partner that you have the @HA. You should play that card! |pg||lc|ha|pc|ha|md|0hqt7,hkj5|hs|shwh|
+
+nt|^b@2^z@3Perhaps the remaining hearts are distributed as you now see above. |pg||ls|shwh|hc|h7|at|South will play the @H7 and your @HA will win the first trick. |pg||lc|h7|pc|h7|pg||hs|sh|hs|wh|At|Your partner has the @HKJ poised over South's @HQ10 so there is no way that the declarer is going to win a heart trick. |pg||ls|wh|ls|sh|up|2|hc|h9|at|Notice that if you had signaled with the @H9 (instead of winning the @HA), |pg||lc|h9|pc|h9|hc|ht|at|South would have won a heart trick that he was not entitled to. |pg||lc|ht|pc|ht|pg||up|2|hc|ha|at|Express your attitude about hearts by winning the @HA, |pg||lc|ha|hc|h9|at|not by signaling with the @H9! |pg||
+
+
+
+nt|^b@2^z@3|ht|b|at|This example illustrates another important principle about signaling on defense:
+
+|pg||cs|4|ht|j|at|^-{ Signaling is a critical part of defense, but it is not as critical as winning tricks! }
+^-
+|pg||
+lc|h9|hc|ha|ht|q|at|The lessons you have learned about things like second and third hand play and splitting and covering honors should take priority over the lessons that you are learning about signals! |pg||
+
+lc|ha|hc|h9|
+
+nt|^b@2^z@3You can use various types of signals on defense to tell your partner a lot about the honor cards and distribution of your hand. At the end of the deal, however, all that matters to the defense is the number of tricks that they have won. Do not even think about making a signal |pg||lc|h9|hc|ha|at|until after you have decided if you need to play a particular card for the purposes of winning enough tricks to defeat the declarer's contract!|pg||lc|ha|md|2,dk,d863,da92|hc|dk|
+
+nt|^b@2^z@3There are plenty of situations where it is appropriate to give your partner an encouraging attitude signal when you hold the Ace in the suit that he led. Suppose that diamonds is a side suit in a trump contract and your partner, West, leads the @DK (the standard lead from holdings headed by the @DKQ). |pg||lc|dk|pc|dk|hc|d3|at|The @D3 is played from the dummy |pg||lc|d3|pc|d3|hs|ed|at|and you have to decide which diamond you should play as East. |pg||
+
+ls|ed|Hc|da|
+
+nt|^b@2^z@3You would like to show your partner that you have the @DA and the sure way to accomplish this is to play that card now! |pg||lc|da|pc|da|md|0djt4,dq75|hs|sdwd|at|The problem with playing the @DA is that you will give declarer an undeserved trick if the diamond layout is something like the one above. |pg||ls|sdwd|hc|d4|at|South will follow with the @D4 |pg||lc|d4|pc|d4|pg||hs|sd|hc|dq|at|and he will be left with the @DJ and the @D10. One of those cards will be sufficient to force West's @DQ and the other card will then be a winner for declarer. |pg||
+
+ls|sd|lc|dq|up|2|hc|d9|
+
+nt|^b@2^z@3Playing the @D9, an encouraging attitude signal, is a better move. |pg||lc|d9|pc|d9|hc|d4|at|South follows with the @D4 and your partner's @DK wins the first trick. |pg||lc|d4|pc|d4|pg||hc|d5da|at|Your encouraging attitude signal has given West the information that he needs. He can now lead back the @D5 to your @DA. |pg||lc|d5da|pc|dddad|pg||hc|dq|at|Your partner's @DQ will win the third round of diamonds and declarer will not win a single diamond trick (which is as it should be). |pg||
+
+lc|dq|up|8|hc|dtda|
+
+nt|^b@2^z@3Now suppose we trade your @DA for South's @D10. |pg||lc|dadt|md|0da,,,dt|hc|dk|at|West leads the @DK as before |pg||lc|dk|pc|dk|hc|d3|at|and the @D3 is played from the dummy. |pg||lc|d3|pc|d3|hc|dt|at|Although your @D10 certainly qualifies as an honor card, it is not a high enough honor card to be of much interest to your partner. |pg||lc|dt|hc|d2|at|The proper card to play is the @D2, a discouraging attitude signal. |pg||lc|d2|pc|d2|pg||
+
+hc|d4|
+
+nt|^b@2^z@3Your partner will appreciate your discouraging @D2, especially if the declarer makes the clever play of the @D4 on this trick. |pg||lc|d4|pc|d4|pg||hc|d5dj|at|If West were to continue by leading another diamond, South would win a trick with his @DJ. |pg||lc|d5dj|pc|dddd|pg||hs|sd|at|South's @DA will still win a trick, of course, and South will end up winning 2 tricks in diamonds. |pg||
+
+up|6|ls|sd|hc|d24|
+
+nt|^b@2^z@3The declarer deserves some credit for the nice duck he made on the first round of diamonds, but once East signals with a discouraging @D2, |pg||lc|d24|pc|dd|pg||hs|wdsd|at|West should appreciate the danger in playing a second round of this suit. He should trust his partner's discouraging attitude signal and switch to a different suit. |pg||ls|wd|hs|ed|wt|e|at|If East wins a later trick he can lead a diamond and South will be held to the 1 and only diamond winner (the @DA) that he was dealt. |pg||up|4|ls|edsd|hc|dtj|
+
+nt|^b@2^z@3Let's make one more change to the diamond suit before moving on. You will be given South's @DJ instead of your @D10. |pg||lc|djt|md|0dt,,,dj|hc|dk|at|As usual, West leads the @DK |pg||lc|dk|pc|dk|hc|d3|at|and the @D3 is played from the dummy. |pg||lc|D3|pc|D3|hc|dj|at|We have seen that you should make an encouraging attitude signal when you hold the @DA as East in this situation. Given that your highest diamond is the @DJ, |pg||lc|dj|hc|d2|at|does that mean you should discourage by playing the @D2? |pg||
+
+nt|^b@2^z@3Suppose you play a discouraging @D2, |pg||lc|d2|pc|d2|hc|d4|at|the declarer may choose to duck his @DA. |pg||lc|d4|pc|d4|pg||hc|Da|at|West will know that you do not have the @DA (because you certainly would have encouraged if you held that card). |pg||lc|da|hc|dj|at|The fact that you hold the @DJ, however, means that it is safe for West to play another diamond, |pg||md|0dj,,,dt|at|but he may well be afraid to do so out of fear that the @DJ is with South. |pg||
+
+md|0dt,,,dj|up|2|
+
+nt|^b@2^z@3The @DJ is an important honor card in this situation and, given that East has that card, |pg||lc|dj|hc|d9|at|he should give his partner an encouraging attitude signal by playing the @D9. |pg||lc|d9|pc|d9|hc|d4|at|If South ducks, |pg||lc|d4|pc|d4|pg||hc|da|at|West won't know the position of the @DA, but he will know that his partner encouraged diamonds for a reason. If the @DA is with South, |pg||lc|da|hc|dj|at|then the @DJ must be with East. |pg||lc|dj|hc|d5|at|West can safely lead another diamond |pg||lc|d5|pc|dd|hc|djda|at|and East's @DJ will force South's @DA |pg||lc|djda|pc|djda|pg||hc|dq|at|which will promote the @DQ into a winner. |pg||lc|Dq|up|8|hc|dkq|
+
+nt|^b@2^z@3To summarize, when West leads the @DK against a trump contract, he is promising the @DQ as well. |pg||lc|dkq|pc|dkd|hc|d9|at|East makes an encouraging attitude signal |pg||lc|d9|hc|dj|at|when he has either the @DJ |pg||lc|dj|hc|da|md|0dj,,,da|at|or the @DA. If East has either of these cards he knows that it is safe for his partner to lead another diamond. |pg||lc|da|hc|d9|at|By making an encouraging attitude signal he conveys that message to his partner. |pg||md|0da,,,dt|lc|d9|hc|d2|at|East should discourage only if his highest diamond is lower than the @DJ. |pg||
+
+lc|d2|md|0dt,,,da|
+
+nt|^b@2^z@3|hc|da|ht|b|at|Here are some more general statements of the principles just described:
+
+|pg||ht|j|cs|2|at|^-{ When your partner leads an honor card, encourage if you have a higher honor. }
+
+|pg||
+cs|3|lc|da|hc|dj|md|0da,,,dj|
+at|{ Also encourage if you have a lower honor touching the lowest card your partner promised. }
+|pg||
+
+
+nt|^b@2^z@3|cs|3|ht|b|at|In the second statement that was just mentioned,
+
+|ht|j|at|^-{ Also encourage if you have a lower honor touching the lowest card your partner promised. }
+^-
+
+|pg||ht|q|at|East's @DJ fits the bill. The @DK lead promises the @DQ and East's @DJ is a touching card to the @DQ. |pg||lc|dj|hc|d9|at|That is why East should make an encouraging attitude signal from this holding. |pg||
+lc|d9|md|2cat2,cqj96,c853,ck74|
+
+hc|cq|
+
+nt|^b@2^z@3Here in another example of the same principle at work. Clubs is a side suit in a trump contract and West leads the @CQ (promising the @CJ). |pg||lc|cq|pc|cq|hc|c3|at|A low club is played from the dummy. |pg||lc|c3|pc|c3|hc|C7|at|East should encourage |pg||lc|c7|hc|ck|at|if he has the @CK (a higher honor than the @CQ that West led) |pg||md|0ck,,,ct|lc|ck|hc|Ct|at|or the @C10 (a card that is touching the @CJ that West's lead promised). |pg||at|In either case, it will be safe for West to lead another club later in the play. |pg||
+
+lc|ct|md|0ct,,,c2|hc|c7|
+
+nt|^b@2^z@3If East's highest club is lower than the @C10, |pg||lc|c7|hc|c2|at|he should give his partner a discouraging attitude signal. |pg||lc|c2|pc|c2|hc|ca|at|South will win the trick |pg||lc|ca|pc|ca|pg||wt|w|hs|wcsc|at|and, if West regains the lead, a second club will allow South to win an undeserved trick with his @C10. Fortuntately, West should know that his partner does not have the @CK or the @C10 given the discouraging attitude signal that East made on the first round of clubs. West will be in a good position to know that he should lead some other suit.|pg||ls|scwc|md|4cakt,c742,c853,cqj96|hc|cq|
+
+nt|^b@2^z@3So far we have been considering attitude signals made only by the partner of the opening leader, but the same principles apply to the opening leader himself. Suppose that East leads the @CQ at some point during the play |pg||lc|cq|pc|cq|hc|ca|at|and that South plays the @CA. |pg||lc|ca|pc|ca|hc|c2|at|West has a very weak club holding and he should offer his partner a discouraging attitude signal by playing the @C2. |pg||lc|c2|hc|ck|md|0c4,ck|at|With the @CK |pg||lc|ck|hc|ct|md|0ck,ct|at|or the @C10, |pg||lc|ct|hc|c7|at|West should give his partner an encouraging attitude signal. |pg||
+
+lc|c7|md|2st63,sak874,s92,sqj5|
+hc|sa|
+
+nt|^b@2^z@3Up until now, all of the attitude signals that we have seen have been made with spot cards. However, there are some situations where the correct attitude signal is the play of an honor card. Consider this situation where spades is a side suit in a trump contract and West leads the @SA (strongly suggesting the he holds the @SK as well). |pg||lc|sa|pc|sa|hc|s2|at|The dummy's @S2 is played |pg||lc|s2|pc|s2|hs|es|at|and East has to decide which card he should play as an attitude signal.|pg||
+
+ls|es|hc|s5|
+
+nt|^b@2^z@3Your first thought may be that this is one of those situations where East should play the @S5, a spot card that is not especially high or low, and leave it to West to figure out what to do. |pg||md|0sqj,,,st6|hs|es|lc|s5|at|That would be asking a lot from West since East would also play the @S5 as a discouraging attitude signal from a holding like the one shown above. |pg||md|0st6,,,sqj|at|With East's actual spade holding, he would really like to encourage spades, |pg||ls|es|hc|s5|at|but the @S5 is the only spot card he has in the spade suit. |pg||lc|s5|hc|sq|
+
+nt|^b@2^z@3The proper card for East to play as an attitude signal in this situation is the @SQ. The nature of attitude signals with honor cards is described by this principle:
+
+|pg||ht|o|cs|4|at|^-{ An attitude signal of an honor card shows that the player making this signal holds 
+ the next lower honor card and that he does not hold the next higher honor card. }
+|pg||
+
+
+nt|^b@2^z@3When East signals his attitude for spades by playing the @SQ, |pg||lc|sq|pc|sq|hc|sj|at|he is telling his partner that he was dealt the @SJ (the next lower honor card to the @SQ). Furthermore, he is telling his partner that he does not hold the @SK (the next higher honor card to the @SQ). |pg||lc|sj|hc|sk|At|The message that East does not hold the @SK is not very helpful here. West already knows that since he is looking at the @SK in his own hand. |pg||lc|sk|hc|sj|at|However, the message that East has the @SJ might be very useful for West. |pg||
+
+lc|sj|hc|s3|
+
+nt|^b@2^z@3South follows suit with the @S3 and West's @SA wins the first trick. |pg||lc|s3|pc|s3|pg||hs|ns|at|Since the dummy has only 1 spade remaining and since spades is a side suit in a trump contract, the defenders will be able to win only 1 more trick in spades (as dummy will be able to ruff subsequent spade leads). |pg||hc|sk|ls|ns|at|West is left with a pleasant choice. He can either win the next trick with his @SK |pg||lc|sk|hc|sj|hc|s7|at|or lead back a low spade to his partner's known @SJ. |pg||lc|s7sj|pc|s7ssjs|pg||
+up|4|hc|sksj|
+
+nt|^b@2^z@3How can West tell whether it will be better for the defense if his @SK or his partner's @SJ wins the second spade trick? On some deals it won't matter and on other deals West may have to guess. There will be some deals, however, in which factors such as West's other cards, the cards in the dummy, and the bidding will make it clear to West |pg||lc|sj|hc|s7|at|whether he should lead the @SK or the @S7 (his 4th best remaining spade) to the next trick. |pg||
+
+lc|s7|hc|sj|
+
+nt|^b@2^z@3One thing is for sure: it can only be good for the defense that West has the knowledge that either defender is capable of winning a trick on the second round of spades. |pg||lc|sjsk|up|2|hc|sq|at|East's special attitude signal of the @SQ, |pg||lc|sq|pc|sq|hc|sj|at|promising the @SJ, gives the defenders a lot of flexibility in the spade suit. On some deals, West's ability to give his partner the lead in spades will help the defenders to defeat declarer's contract. |pg||up|1|
+
+nt|^b@2^z@3Note that it would be very wrong for East to signal with the @SJ (instead of the proper @SQ). The play of the @SJ in this position would deny the @SQ. Furthermore, the @SJ would promise the @S10. If East played the @SJ here it would mislead his partner about the location of 2 important cards and West might make a poor decision as a result. |pg||lc|sj|hc|sqt|
+
+nt|^b@2^z@3If we switch the position of South's @SQ and East's @S10, |pg||lc|sqt|md|0sq,,,st|hc|sj|at|the @SJ becomes the proper card for East to play as an attitude signal. When a Jack is played as an attitude signal, |pg||lc|sj|pc|sj|hc|st|at|the 10 of the same suit must be held. |pg||lc|st|hc|sq|at|Also, the Queen of the same suit must not be held. |pg||lc|sq|hc|s3|at|After South follows suit with the @S3, |pg||lc|s3|pc|s3|pg||hc|sqsk|at|West knows that the @SQ is with South and that leading the @SK to the next trick will probably make South's task as declarer easier. |pg||lc|sksq|up|2|hc|sj|
+
+nt|^b@2^z@3East's @SJ signal (promising the @S10) might also help the defense in a different way. |pg||lc|sj|pc|sj|hc|Sq|at|Suppose that South's @SQ is in the West hand. |pg||lc|sq|md|0,sq|pg||hc|s3|at|After South follows suit to the first trick, |pg||lc|s3|pc|s3|pg||hc|sk|at|West knows that he can either win the next spade trick himself |pg||lc|sk|hc|s7st|at|or lead low from his @SKQ to his partner's @S10. |pg||lc|s7st|pc|s7ssts|pg||at|East may be in a position to hurt the declarer by leading some other suit from his side of the table. |pg||
+
+hc|sj|up|6|
+
+nt|^b@2^z@3Your studies of declarer play have taught you that entries are extremely important. A declarer's ability to place the lead either in his own hand or in the dummy often makes the difference between the success and failure of a contract. Entries can be just as vital to the defenders, but since they cannot see each others' hands it can be very difficult for them to know how to transfer the lead from one defender's hand to the other. |pg||
+
+
+
+nt|^b@2^z@3By using attitude signals, the defenders are sometimes able to overcome their inability to see each others' cards. In particular, when an honor card is played as an attitude signal |pg||lc|sj|pc|sj|hc|st|at|to promise the next lower honor and to deny the next higher honor, the partner of the player who made the signal is made aware of the location of 2 critical cards. |pg||lc|st|pc|s3|pg||hc|s7st|at|In this way, an unseen entry to the signaler's hand can be revealed. |pg||lc|s7st|
+md|2,h2,hk6,hq983|
+
+
+nt|^b@2^z@3In all of the examples that we have seen so far, an honor card was led to a trick and the third hand made an attitude signal in order to show or deny the presence of a critical honor card in the suit that was led. The next few examples illustrate another type of situation where attitude signals can be used to help the defense. |pg||hc|H2|at|Assume West leads the @H2 against a notrump contract. |pg||lc|h2|pc|h2|hc|hk|at|Dummy's @HK is played |pg||lc|hk|pc|hk|hs|eh|at|and East has to select a heart to play. |pg||
+ls|eh|Hc|hq|
+
+nt|^b@2^z@3Obviously there is no point in East trying to win this trick - his highest heart is the @HQ and the dummy has already played the @HK. |pg||lc|hq|hc|h983|at|Instead, East should use his spot cards in hearts to give an attitude signal. |pg||lc|h983|hc|hq|at|The fact that East holds the @HQ suggests that East should encourage with his signal. |pg||lc|Hq|hc|h8|at|The @H8 is a high spot card, |pg||lc|h8|hc|h9|at|but the proper attitude signal is the @H9 - the loudest signal that East can afford to make. |pg||
+
+nt|^b@2^z@3|lc|h9|pc|h9|md|0ht54,haj7|
+
+hs|shwh|at|Suppose the layout of the remaining hearts is as you now see above. |pg||ls|shwh|hc|h4|at|South follows suit with the @H4 and dummy's @HK wins the trick. |pg||lc|h4|pc|H4|pg||wt|w|hs|wh|hc|hq|at|If West gains the lead again, he will know that it is a good idea for him to lead another heart thanks to East's encouraging attitude signal of the @H9. West should know that East's positive signal for hearts can only be based on one thing - that East was dealt the missing @HQ. |pg||ls|wh|lc|Hq|up|2|md|0hq9,,,ht4|hc|hqht|
+
+nt|^b@2^z@3The South and East hearts have now been changed so that South has the @HQ and East's highest heart is the @H10. |pg||lc|hqht|hc|h3|at|Now, when the dummy's @HK is played, East should discourage hearts by following suit with his lowest heart, the @H3. |pg||lc|h3|pc|h3|pg||hc|h5|at|South plays the @H5 and dummy's @HK wins the trick. |pg||lc|H5|pc|h5|pg||wt|w|hs|wh|hc|hq|at|If West regains the lead, he will know that he should not lead a second heart since his partner's discouraging attitude signal suggests that the @HQ is with South. |pg||
+
+
+
+nt|^b@2^z@3On this layout, if West continues by leading either the @HA or another small heart, South's @HQ will win a second heart trick for the declarer. North-South are always entitled to one heart trick, but best defense will prevent them from winning a second trick in this suit. |pg||ls|wh|lc|hq|wt|e|hs|eh|at|West should know to lead a different suit in the hope that East will eventually gain the lead. |pg||hs|sh|hs|wh|at|A heart lead from East's side of the table will trap South's @HQ and allow the defense to win 3 tricks in hearts. |pg||
+
+up|2|ls|ehwhsh|md|0ha4,ht,,hq9|hc|ha|hs|eh|
+
+nt|^b@2^z@3East is back to holding the hearts that he started with in this example, but South has the @HA instead of West. |pg||hc|h9|ls|eh|lc|ha|at|This layout illustrates another reason why it is a good idea for East to give an encouraging attitude signal with the @H9 under dummy's @HK. |pg||lc|h9|pc|h9|hc|h4|at|South plays the @H4 to the first trick and the @HK wins. |pg||lc|h4|pc|h4|pg||hs|wh|hc|hq|wt|w|hc|ha|at|West knows that East holds the @HQ so, if he regains the lead, he can lead a second round of hearts and be confident that South's last stopper (the @HA) will be driven out. |pg||
+
+ls|wh|lc|hqha|up|2|hc|hq|
+
+nt|^b@2^z@3If East's @HQ is given to South, |pg||lc|Hq|md|0hq,,,h4|hs|eh|at|East is left with nothing to speak of in hearts. |pg||ls|eh|hc|h3|at|He should express this to his partner by playing a discouraging @H3 to the first trick. |pg||lc|h3|pc|h3|hc|h5|at|South follows suit with the @H5 and dummy's @HK wins the trick. |pg||lc|h5|pc|h5|pg||hs|wh|hs|sh|At|Now, when West regains the lead, he will know from his partner's discouraging attitude signal that South still has the @HA and the @HQ. South's 2 remaining heart stoppers may be enough to convince West to try playing some other suit.|pg||
+
+ls|sh|ls|wh|up|2|md|0h3,,,hq|
+
+nt|^b@2^z@3|ht|b|at|Here is the principle at work in these examples:
+|pg||ht|j|cs|4|at|^-{ When your partner leads to a trick and the second hand to play appears to be 
+ winning that trick, it is usually correct to give your partner an attitude signal. }
+^-
+|pg||
+ht|v|hc|hq|at|When he holds the @HQ, |pg||lc|hq|hc|h9|at|East should encourage. |pg||lc|h9|md|0hq,,,h3|hs|eh|at|Without that card, |pg||ls|eh|hc|H3|at|East should discourage. |pg||
+
+lc|h3|md|0h4,,,ha|hc|ha|
+
+nt|^b@2^z@3Perhaps this should go without saying, but if East happens to hold the @HA, |pg||lc|ha|hc|ha|at|it would be a mistake for him to try to signal possession of that card by playing the @H9. |pg||lc|h9|hc|ha|at|East should be delighted to have a chance to capture the @HK with his @HA. He should make his normal third hand high play of the @HA in this situation. |pg||lc|ha|pc|ha|at|As was mentioned earlier in this chapter, winning tricks takes priority over giving your partner signals!|pg||md|4daq6,dj82,d974,dkt53|hc|d3|
+
+nt|^b@2^z@3As with all situations where attitude signals apply, either defender can use these signals. Consider this combination where East leads the @D3 at some point during the play of a trump contract. |pg||lc|d3|pc|d3|hc|dq|at|South successfully finesses the @DQ. |pg||lc|dq|pc|Dq|hc|dj|at|West would win this trick if he could and, when he cannot win the trick, the card that he plays should be an attitude signal that pertains to the @DJ. |pg||lc|dj|hc|d8|at|Here West encourages with the @D8 to suggest that he holds the @DJ. |pg||lc|d8|pc|d8d|pg||hs|edsd|hc|dj|
+
+nt|^b@2^z@3If East subsequently regains the lead, he knows that his partner has the @DJ and that it may be possible to build a defensive winner in diamonds by continuing to lead the suit. |pg||ls|edsd|up|2|at|If West's @DJ is held by South, |pg||lc|dj|md|0dj,d6|hc|d2|at|then West will give a discouraging attitude signal when South's @DQ is played. |pg||lc|d2|pc|d2d|pg||wt|e|hs|sdedwd|at|East will know that South still has the @DA and the @DJ and, if he later regains the lead, he will know that, with no future for the defense in diamonds, he should lead another suit. |pg||
+
+ls|edsdwd|md|2c954,c76,ca32,ckqjt8|
+hc|c7|
+
+nt|^b@2^z@3We saw that when a defender leads an honor card, his partner can sometimes give a special kind of attitude signal by playing an honor card himself. The same principle applies when a spot card is led and the third hand to play to a trick cannot possibly win the trick. In this example, West leads the @C7 (high from a doubleton) |pg||lc|c7|pc|c7|hc|ca|at|and the @CA is played from the dummy. |pg||lc|ca|pc|Ca|hs|ec|at|East has a lot of high clubs to choose from, but only one of these cards is the correct attitude signal.|pg||
+
+ls|ec|hc|ck|
+
+nt|^b@2^z@3
+East should signal with the @CK. Not only is the @CK the loudest signal that East can make, |pg||lc|ck|pc|ck|hc|cq|at|this signal shows that East holds the @CQ as well. There is considerable logic in this - East would hardly throw away the @CK if he did not have the @CQ to back it up! |pg||hc|cj|
+
+nt|^b@2^z@3In this particular situation, it would be dangerous for East to signal with the @CK without both the @CQ and the @CJ. Suppose that South had the @CJ instead of East. |pg||lc|cq|md|0cj,,,c9|at|Now East's @CK signal allows South to win a later trick with the @CJ that he is not entitled to. |pg||lc|cj|hc|c4|at|South follows small to the first trick |pg||lc|c4|pc|c4|pg||wt|n|hs|ncsc|hc|cq|at|and he can later lead from the dummy toward his @CJ. Whether or not East takes his @CQ, the @CJ will score a trick for the declarer. |pg||
+
+up|2|lc|cq|ls|ncsc|hc|ckq|
+
+nt|^b@2^z@3The @CK is a nice signal in the sense that it promises the @CQ, but signals that give away tricks should be avoided! |pg||lc|ckq|hc|ct|at|When East lacks the @CJ, the highest club he can afford is the @C10 and that is the card he should play as his attitude signal in this situation. |pg||lc|ct|md|0c9,,,cj|hc|ck|at|With the @CJ in addition to solidify East's club holding, the proper signal becomes the @CK. There is no longer any danger that signaling with such a high card will blow a trick for the defense. |pg||
+
+nt|^b@2^z@3|ht|b|at|Here is the lesson to be learned from this example:
+
+|pg||cs|1|ht|j|at|^-{ Attitude signals with honors are useful because they tell your partner a lot about your
+ hand, but do not use one of these signals if you need all of your honors for winning tricks! }
+^-
+|pg||
+ht|v|at|Here, East can afford play the the @CK, |pg||lc|ck|hc|ct|md|0cj,,,c9|at|but without the @CJ, the @C10 becomes the proper signal. |pg||
+lc|ct|md|0ck,,,cj|hc|cq|
+
+nt|^b@2^z@3If East's club holding did not include the @CK, then the @CQ would be the correct attitude signal for East to make when the dummy's @CA was played. |pg||at|The play of the @CQ in this situation |pg||lc|cq|pc|cq|hc|cj|at|promises the @CJ |pg||hc|ct|at|(and very likely the @C10 as well since it might be dangerous to throw away the @CQ unless both the @CJ and the @C10 were held). |pg||lc|cjt|hc|ck|at|Just as important, the @CQ denies the @CK because if East held the @CK as well as the @CQ and the @CJ then he should signal by playing the @CK itself. |pg||
+
+lc|ck|up|1|hc|cq|
+
+nt|^b@2^z@3Just to clarify one important point, the reason that this is a situation for giving a special attitude signal of the @CQ is that the @CA was played from the dummy. |pg||up|1|lc|cq|hc|c2|at|If the @C2 was played from the dummy instead of the @CA, |pg||lc|c2|pc|c2|hc|c8|at|the @C8 would be the proper card to play (the lowest card from a series of equals). In a sense the @C8 is a signal here, but it should not really be considered an attitude signal - the @C8 is more about proper third hand play than anything else. |pg||lc|c8|
+
+bt||
+
+nt|^b@2^z@3
+We have now examined 2 of the 3 main situations where a defender can convey an attitude signal about his honor holding in a suit that his partner led by following suit with a high spot card (to encourage), a low spot card (to discourage), or an honor card (to describe his specific honor holding):
+
+|pg||cs|1|at|^-{ 1. When your partner leads an honor card, you should usually give him an attitude signal. }
+
+|pg||cs|4|at|{ 2. When your partner leads to a trick and the second hand to play appears to be 
+ winning that trick, it is usually correct to give your partner an attitude signal. }
+^-
+|pg||
+at|In general it is easy to know whether to give an encouraging or a discouraging attitude signal in the first case described above. For example, if you partner leads a King against a trump contract, you know he has the Queen of the same suit. The Ace and the Jack of that suit will be critical cards and you should show encouragement only if you were dealt one of these cards.
+
+|pg||
+at|If, however, your partner leads a spot card and the dummy wins the Ace in that suit, it is not always easy to know if you should encourage or discourage when your highest card in the suit is the Jack. If your partner's lead was from a suit headed by the King or a suit with no honor cards at all, he will want you to discourage when holding only the Jack, but if your partner led from a suit headed by the Queen, your Jack will be an important card for him to know about. In this case it may be right for you to encourage when you hold the Jack of the suit that your partner led.
+
+|pg||
+cs|2|at|^-{ There are no magic formulas to tell you when to encourage and when to discourage. 
+ For guidance, consider factors like your own hand, the dummy's hand, and the bidding! }
+
+|pg||
+
+nt|^b@2^z@3
+In the examples of attitude signals that we have seen so far, there was no way for you to consider factors like your own hand, the dummy's hand, or the bidding (because so far the only attitude signals that we have seen were from simple card combinations as opposed to entire deals). That is about to change and this is probably just as well since you are no doubt getting pretty sick of looking at card combinations!
+
+|pg||
+at|We are about to look at attitude signals in the context of an entire deal. This is actually necessary because there is more than one suit involved in the third main type of situation where attitude signals should be used:
+
+|pg||cs|3|at|^-{3. The first discard that a player makes in a suit should be intended as an attitude signal.}
+^-
+|pg||
+at|Up until now, when you have had to make discards as a defender, you may have thought about this process as no more than an opportunity to get rid of some of your useless small cards. Now that you have seen some examples of how attitude signals can help the defense, you have no doubt realized that small cards are not so useless after all! By carefully selecting the specific cards that you discard and the order in which you discard them, you can tell your partner a lot about the cards you were dealt. That in turn will help him to defend more accurately later in the play. 
+
+|pg||
+at|Before we go on to look at some complete deals in which discards act as attitude signals, here is an another point about these kinds of signals that you should keep in mind:
+
+|pg||
+cs|1|at|^-{Attitude signals relate to the suit of the signal (not the suit that was led). In prior examples
+ these suits were the same, but when a discard is an attitude signal they will not be the same! }
+|pg||
+
+qx|D 1,Example Deal 1|
+
+st||sv||ha||
+rh||ah|Attitude Signals|ah|Deal 1|
+sk|e|md|1s9765hakqdaq4ckqj,,sj32h987djt752ca6,sakqtht52d8c98753|
+
+hs|es|ha||mb|2np3nppp|
+
+nt|^b@2^z@3You are sitting East and South, the dealer, opens the bidding with 2NT. North raises to 3NT which becomes the final contract. You try to use all of your psychic powers to get your partner to select a spade as his opening lead. |pg||ls|es|pc|d|hs|ed|at|Your partner's lead is a diamond (the @D3), a suit in which you have a singleton. |pg||ls|Ed|hs|Es|at|It looks like you will have to find another way to tell your partner about your tremendous spades. Psychic messages rarely seem to work in bridge!|pg||ls|Es|hs|nded|
+
+nt|^b@2^z@3The declarer calls for a low diamond from the dummy and your @D8 |pg||ls|nded|pc|dddq|at|is taken by South with the @DQ. |pg||pc|dadd|hs|esehec|at|South continues be leading the @DA and your partner follows suit with the @D6. You have to make a discard now. Do you have any thoughts as to what card you should play? Remember that your discard will be an attitude signal and you would like to give your partner the message that you really like spades!|pg||
+
+ls|esehec|hc|sa|
+
+nt|^b@2^z@3Did you think about discarding the @SA as one of those special types of attitude signals of an honor card to tell your partner that you have the @SK (and very likely at least the @SQ as well)? If you thought of this you should be quite proud of yourself as the @SA discard would certainly convince your partner that you liked spades. Furthermore, if you were going to discard a spade, then the @SA would be the correct spade to play.|pg||
+
+
+
+nt|^b@2^z@3The problem with discarding the @SA is that this card is a certain winner |pg||lc|sa|hs|es|at|and you may well need to win 4 tricks in spades in order to defeat 3NT. Instead of giving your partner an encouraging attitude signal in spades, |pg||ls|es|hs|eh|hs|ec|at|it is better to give him a discouraging attitude signal in one of the other suits. Hopefully you will get a chance to discard a discouraging card in the other suit on a later trick. When West learns that you don't like hearts or clubs, spades will be the only suit left.|pg||
+
+
+
+nt|^b@2^z@3As to whether you should discard a discouraging card in hearts or clubs first, |pg||ls|ec|at|a heart discard is probably best. |pg||ls|ehec|hs|nhnc|at|Given the fact that the dummy's club holding is stronger than its heart holding, your partner would be more likely to lead a heart than a club if all things were equal. |pg||ls|nc|ls|nh|hc|h2|at|The first message you should give your partner is that you don't like hearts and by discarding the @H2 as an attitude signal you will deliver precisely that message! |pg||lc|h2|pc|h2|pg||
+
+nt|^b@2^z@3|pc|ddkd|hs|ec|at|The declarer plays a third round of diamonds and your partner plays the @DK. You can see that his @DK is going to win the trick and you now have the chance that you were hoping for. You can tell your partner about your attitude toward the club suit. |pg||ls|ec|hc|c3|at|Play the @C3 as a discouraging attitude signal for clubs. |pg||lc|c3|pc|c3|pg||sk||hs|wswhwc|
+
+nt|^b@2^z@3You can now see the remaining cards. If you were not using attitude signals, your partner would have to guess which suit to play now. |pg||ls|wc|hs|nhns|at|In all likelihood he would guess to lead hearts because his heart holding is stronger than his spade holding and because dummy's heart holding is weaker than dummy's spade holding. |pg||ls|whwsnhns|hs|ehec|
+
+nt|^b@2^z@3Fortunately, you are using attitude signals and you have already had a chance to tell your partner that you don't like hearts nor clubs. |pg||ls|eceh|hs|es|at|Your partner should draw the inference that the only suit you like is spades. |pg||ls|es|hc|s8|at|He should lead that suit now! It doesn't matter on this deal, but the @S8, the high card from a doubleton, is the proper spade for West to lead. |pg||lc|s8|pc|s8|hs|es|at|You can now win the next 4 tricks in spades. |pg||ls|es|pc|s2ss|pg||pc|sasss|pg||pc|sksds|pg||pc|ssch|pg||mc|8|at|South claims the rest of the tricks, but his contract has failed. |pg||
+
+
+
+nt|^b@2^z@3|up|21|hs|es|ht|b|at|Here are some of the key lessons points of this example deal:
+
+|pg||ht|j|cs|2|at|^-{ Sometimes you will not be able to afford to discard an encouraging card as an 
+ attitude signal because you will need all of your high cards in that suit to win tricks. }
+^-
+|pg||
+ht|v|at|Here East must keep all of his spades since the defense needs 4 spade tricks to defeat 3NT. |pg||
+
+ls|es|hs|eh|hs|ec|
+
+nt|^b@2^z@3|cs|4|ht|d|at|^-{ If you cannot afford to discard an encouraging card from the suit you like, you can 
+ transmit the same message by discarding cards in the suits that you don't like. }
+^-
+|pg||ht|q|at|In this deal East was able to discard discouraging cards in both hearts and clubs to suggest that he did not like either of these suits. |pg||ls|ehec|hs|wses|at|Spades was the only suit left that East could like. |pg||
+
+ls|esws|hs|eceh|
+
+nt|^b@2^z@3|ht|d|cs|3|at|^-{ If you want to give a discouraging attitude signal in 2 suits, your first discard should 
+ be from the suit that your partner would be more likely to play should he regain the lead. }
+^-
+|pg||
+ht|q|ls|ec|at|The first message that East should give is that he does not like hearts |pg||ls|eh|hs|nhnc|at|since dummy's hearts and clubs suggest that West would be more likely to lead a heart than to lead a club. |pg||
+qx|D 2,Example Deal 2|
+
+st||sv||ha||
+rh||ah|Attitude Signals|ah|Deal 2|
+sk|e|md|1sat962hjt2daqtck6,,sqj4hk43dk43ca854,s5haq985dj9852c93|
+ls|nhnc|ha||mb|1sp2cp2np4sppp|
+
+
+nt|^b@2^z@3You are East again in this next example deal. South, the dealer, opens the bidding with 1@S. North responds 2@C and South rebids 2NT. North then jumps to 4@S which becomes the final contract. |pg||pc|cq|hs|nc|at|Your partner's opening lead is the @CQ (suggesting that he also holds the @CJ) and the declarer calls for the @CA from the dummy. |pg||ls|nc|pc|ca|hc|c3|at|You should give a discouraging attitude signal by playing the @C3 to this trick (you would encourage if you held the @CK). |pg||
+
+
+
+nt|^b@2^z@3|lc|c3|pc|c3c|at|The declarer follows suit with the @C6 to the first trick |pg||hs|ns|at|and leads the @SQ from the dummy to the second trick. |pg||ls|ns|pc|sq|hs|es|at|You follow suit with your singleton @S5. |pg||ls|es|pc|sss|at|South plays the @S2 and your partner contributes the @S3 as dummy's @SQ wins the trick. |pg||hs|ns|at|The dummy's @SJ is played next |pg||ls|ns|pc|sj|hs|ehedec|at|and you have to find a discard. Any ideas on how you can give your partner the sort of message that might help him out later in the defense? |pg||
+
+ls|ehed|
+
+nt|^b@2^z@3
+You have already had a chance to tell your partner that you don't think much of clubs (through your discouraging attitude signal of the @C3 at trick 1). |pg||ls|ec|hs|ehed|at|Your mission now is to find a way to convince your partner that your heart holding is much stronger than your diamond holding. |pg||ls|ehed|hc|d2|
+
+nt|^b@2^z@3One way that you might accomplish this is to discard a discouraging @D2. That would tell him that you don't like diamonds much (and by inference that you prefer hearts), |pg||
+
+lc|d2|hc|h9|at|but on this deal you can afford to express your attitude about hearts directly by discarding an encouraging @H9. |pg||lc|h9|pc|h9|pc|ssk|at|South thinks things over for a few seconds and then follows suit with the @S6. Your partner wins the trick with his @SK. |pg||hs|eh|At|Aren't you glad you had a chance to tell West about your hearts! |pg||ls|eh|sk||hs|wc|
+
+nt|^b@2^z@3Let's have a look at the remaining cards and try to think about the current position from your partner's point of view. West already knows that a further club lead does not rate to accomplish much. |pg||ls|wc|hs|whwd|at|He should shift his attack to either hearts or diamonds, but his holdings in these suits are the same. |pg||ls|whwd|hs|nhnd|at|Also, the dummy's holdings in these suits are the same! |pg||hs|wdwh|at|Without your attitude signal to guide him, West would not know whether to lead a heart or a diamond now. |pg||
+
+ls|wdndnh|hs|eh|
+
+nt|^b@2^z@3Fortunately for the defense, you have had a chance to tell your partner that you prefer hearts to diamonds. West knows to lead a heart now |pg||ls|wh|ls|eh|hc|h7|at|and the heart he will lead is the @H7 (the high card from his doubleton). |pg||lc|h7|pc|h7|hs|nh|at|South plays a small heart from the dummy, |pg||ls|nh|pc|h|hs|eh|at|you win your @HQ, |pg||ls|eh|pc|Hq|hs|sh|at|and South follows with the @H2. |pg||ls|sh|pc|h|at|Take a close look at the spot cards in hearts and pretend you cannot see all of the cards. Think about what you know about the layout of the heart suit. |pg||
+
+
+
+nt|^b@2^z@3Your partner led the @H7 and the only hearts higher than the @H7 that you cannot see are the @HJ and the @H10 (you played the @H9 already). |pg||hs|sh|at|South must have both the @HJ and @H10. If West had either of these cards then the @H7 would have been his second highest heart and, according to standard leads, he would not lead such a card. Also, if West had both the @HJ and the @H10, he would have led the @HJ instead of the @H7. |pg||
+
+ls|sh|hs|wh|
+
+nt|^b@2^z@3Since West's @H7 has to be his highest heart, he was dealt a doubleton (or a singleton) heart - he would have led a small heart if he had been dealt 3 or more hearts. Since your partner has at most 1 heart left, |pg||ls|wh|hs|ehnh|at|you should cash your @HA even though dummy's @HK will become a winner as a result. |pg||ls|ehnh|pc|hahhh|pg||hs|eh|hs|ws|at|Your partner will be only too happy to ruff that winner, thereby winning the 4th trick for the defense. |pg||ls|eh|ls|ws|pc|h8hsh|pg||mc|9|at|South claims the rest of the tricks, but the defense has won this battle!|pg||
+
+up|15|hc|h9|
+
+nt|^b@2^z@3
+You defended this hand very well; first by discarding your @H9 as an encouraging attitude signal |pg||lc|h9|hs|Ehws|at|and later by playing 3 rounds of hearts to give your partner a ruff, but did you notice that your partner made a beautiful play on this deal as well? |pg||ls|eh|ls|ws|up|5|hs|ns|
+
+nt|^b@2^z@3When declarer led the dummy's @SQ on the first round of trump for a finesse, |pg||ls|ns|pc|sqss|hs|ws|at|your partner could have won his @SK. |pg||ls|ws|pc|sk|pg||hs|whwd|at|However, if he had done so, he would not have known if he should lead back a heart or a diamond. |pg||up|1|hs|ws|ls|whwd|at|West ducked his @SK on the first round of trump |pg||ls|ws|pc|s|pg||hs|ns|at|so that on the second round of trump, |pg||ls|ns|pc|sj|hs|ehed|at|you could help him out with an attitude signal in either hearts or diamonds. |pg||ls|ehed|hc|h9|at|Your @H9 told West exactly what to do |pg||lc|h9|pc|h9|hs|ws|at|when he won his @SK |pg||ls|ws|pc|ssk|pg||hs|wheh|at|(lead a heart!). |pg||
+
+ls|ehwh|up|5|hs|ws|
+
+nt|^b@2^z@3You are already familiar with the hold up play as a technique that the declarer can employ. This program has hinted that the hold up play can also be utilized by the defense and we will take a closer look at these situations in the upcoming discussion of count signals. In this deal, West's hold up play in spades was not made for purely trick taking reasons. The motivation behind West's duck of the @SK was to gain more information.|pg||
+
+
+
+nt|^b@2^z@3|cs|1|ht|d|at|^-{ Sometimes a defender should refrain from winning a trick until he has 
+ enough information to know what he should lead to the following trick. }
+^-
+|pg||
+ht|q|at|Here, West knows that his @SK is not going to go away, but he does not know what suit to lead back if he wins the first trump trick. West waits |pg||ls|ws|pc|s|pg||pc|sj|hc|h9|at|until East can give an attitude signal to help him.|pg||
+
+up|8|lc|h9|hc|skhaq|
+
+nt|^b@2^z@3Very early in this program it was stated that one of the wonderful things about defense is working together with your partner to try to defeat the declarer's contract. This deal really illustrates this claim well. The defense has only 3 obvious winners, the @SK, the @HA, and the @HQ |pg||lc|hqhask|hs|ehws|At|and it takes real teamwork (or a lucky guess by West) to come to a 4th trick - a heart ruff. Both defenders and the use of attitude signals played a role in this victory!|pg||
+
+
+
+nt|^b@2^z@3|ls|eh|hc|h9|ht|b|at|Beside the lesson of using the hold up play on defense in order to give you partner a chance to signal with a discard, there is one other key lesson point to this deal:
+
+|pg||cs|2|ht|o|ls|ws|hc|d2|at|^-{ When faced with a choice between encouraging in one suit and discouraging in some
+ other suit, an encouraging attitude signal sends a stronger message to your partner. }
+
+|pg||
+lc|h9|
+
+nt|^b@2^z@3In this deal, when it was time for East to make his discard, he could have thrown the @D2 to say that he did not like diamonds. |pg||lc|d2|hs|ehwh|at|West might well have figured out that East wanted him to lead a heart. |pg||ls|wheh|hc|h9|at|Still, it is better for East to discard an encouraging @H9 in order to make sure that the message that he wants to deliver gets home to his partner. West's task will be easier if East tells him what he should do |pg||lc|h9|hc|d2|at|as opposed to what he should not do! |pg||qx|revex,Attitude signals - Review and Exercises|
+lc|d2|bt||
+
+nt|^b@2^z@3|cs|5|cp|6|tb|y|at|
+^-{ Attitude signals - Review and Exercises }
+^-
+|cp||at|This chapter is all about signaling on defense. So far we have focused almost exclusively on one particular type of signal - the attitude signal, but before we looked at attitude signals in detail we made some observations of signals in general. First and foremost, we defined what is meant by the term signal:
+
+|pg||cs|1|at|^-{ A signal is the play of a card by the defender that carries a message to his partner. }
+^-
+|pg||at|We then considered some examples of signals that we have already encountered in earlier chapters. You may not have thought of these sorts of plays as signals at the time, but that is exactly what they are. Much of the first chapter of this program was devoted to a particular type of signal - the signals that we make when we decide which card to lead from a particular holding:
+
+|pg||cs|4|at|^-{ When a partnership uses standard leads, every time the defense leads a suit, a signal 
+ is being made. The card that is led carries a message to the partner of the player that led. }
+^-
+|pg||
+at|By thinking about standard leads as a type of signal, it becomes all the more clear why a partnership can benefit from making such leads:
+^-
+|pg||cs|2|at|{ One of the important reasons to be true to the principle of standard leads is so that 
+ your partner receives accurate information from the messages that your leads carry! }
+^-
+|pg||at|Your partner is on your side - the last thing you want to do is give him a false message!
+
+|pg||tb|n|
+
+nt|^b@2^z@3|va|5|at|We then noted that we had already seen 3 other situations where the card that a defender plays can be interpreted as a signal:
+
+|pg||cs|3|at|^-{ 1. When splitting from 2 or more equal cards as the second hand to 
+ play to a trick, always play the lowest card of the group of equals. }
+
+|pg||cs|1|at|{ 2. When following suit as third hand to play to a trick,
+ always play the lowest card from a group of equals. }
+
+|pg||cs|4|at|{ 3. When winning a trick as the fourth hand to play to that 
+ trick, always play the lowest card from a group of equals. }
+^-
+|pg||
+at|Whenever a defender plays the correct card in any of these situations, his partner knows that he may have a higher touching card (or cards), but that he certainly does not have any lower touching cards. Such plays carry messages and that's what makes them signals!
+
+Signals can do wonders for the defenders, but there is a danger in using signals as well:
+
+|pg||cs|2|at|^-{ The declarer can see the signals that the defenders make and this 
+ can sometimes help the declarer more than it will help the defenders! }
+^-
+|pg||at|The only way for the defenders to avoid this danger is to keep the following in mind:
+|va|8|pg||cs|1|At|^-{Defenders should be careful with their signals. Only signal if you think that the message that 
+is carried by your signal will be more important to your partner than it will be to the declarer!}
+
+|pg||cs|1|
+
+nt|^b@2^z@3
+Here are some more general principles about signaling that we have encountered:
+
+|pg||cs|4|at|^-{ Always signal with the loudest card that you can afford! If you follow this practice it will be
+ easier for your partner to understand the message that your signal was intended to deliver. }
+
+|pg||cs|2|at|{ Sometimes a defender is not dealt the spot cards to convey the message that he would 
+like to. He can only try his best and hope that his partner is able to work out the position. }
+
+|pg||cs|3|at|{ Signaling is a critical part of defense, but it is not as critical as winning tricks! }
+^-
+|pg||at|We then went on to consider the 3 new kinds of signals to be introduced in this chapter and the types of messages that these signals convey:
+
+|pg||cs|1|at|^-{ 1. Attitude signals are used to tell your partner about either the 
+ presence or the absence of a critical honor card in a specific suit. }
+
+|pg||cs|4|at|{ 2. Count signals are used to tell your partner whether you have an even 
+ (2, 4, 6, or 8) or an odd (1, 3, 5, or 7) number of cards in a specific suit. }
+
+|pg||cs|2|at|{ 3. Suit preference signals are used to tell your partner that you 
+ would like him to play a specific suit if he should gain the lead. }
+
+|pg||cs|3|at|{ It is not always easy to know the type of signal that your partner is using when he plays a 
+ particular spot card, but it is important for partnerships to understand each others' signals. }
+
+
+|pg||
+
+nt|^b@2^z@3
+We will be considering count and suit preference signals later in this chapter. The study of attitude signals has formed the bulk of this chapter thus far. Here is a reminder of the basic nature of the attitude signal:
+
+|pg||cs|1|at|^-{ Follow suit with or discard a high card to show that you have a critical honor in that suit. 
+ Follow suit with or discard a low card to deny that you have a critical honor in that suit. }
+^-
+|pg||at|The terms encouraging and discouraging are used to describe the 2 flavors of attitude signals. To encourage is to send your partner a positive message about a suit by playing a high card in that suit. To discourage is to send your partner a negative message about a suit by playing a low card in that suit.
+
+|pg||at|3 situations where attitude signals should be used have been considered:
+
+|pg||cs|4|at|^-{ 1. When your partner leads an honor card, you should usually give him an attitude signal. }
+
+|pg||cs|3|at|{ 2. When your partner leads to a trick and the second hand to play appears to be 
+ winning that trick, it is usually correct to give your partner an attitude signal. }
+
+|pg||cs|2|at|{ 3. The first discard that a player makes in a suit should be interpreted as an attitude signal. }
+^-
+|pg||at|Later in this chapter we will see one other situation where attitude signals should be used. 
+
+|pg||
+
+
+nt|^b@2^z@3
+We have seen that a defender can signal his attitude with both spot cards and honor cards. Attitude signals with honor cards describe a specific holding:
+
+|pg||Cs|1|at|^-{ An attitude signal of an honor card shows that the player making this signal holds 
+ the next lower honor card and that he does not hold the next higher honor card. }
+
+|pg||cs|4|at|{ Attitude signals with honors are useful because they tell your partner a lot about your
+ hand, but do not use one of these signals if you need all of your honors for winning tricks! }
+^-
+|pg||
+at|The question of when to encourage and when to discourage is not an easy one to answer.
+
+|pg||cs|2|at|^-{ There are no magic formulas to tell you when to encourage and when to discourage. 
+ For guidance, consider factors like your own hand, the dummy's hand, and the bidding! }
+^-
+|pg||at|However, when your partner leads an honor card, there are some fairly reliable guidelines about when you should offer an encouraging attitude signal:
+
+|pg||cs|3|at|^-{ When your partner leads an honor card, encourage if you have a higher honor. }
+
+|pg||cs|1|at|{ Also encourage if you have a lower honor touching the lowest card your partner promised. }
+|pg||
+
+nt|^b@2^z@3
+The last type of attitude signals that we looked at were when the first discard that a defender makes in a suit should be interpreted as such a signal. Here are some tips that will help you to give effective attitude signals when you are discarding:
+
+|pg||
+cs|4|at|^-{Attitude signals relate to the suit of the signal (not the suit that was led). In most cases
+ these suits are the same, but when a discard is an attitude signal they will not be the same! }
+
+|pg||cs|2|at|{ Sometimes you will not be able to afford to discard an encouraging card as an 
+ attitude signal because you will need all of your high cards in that suit to win tricks. }
+
+|pg||cs|3|at|{ If you cannot afford to discard an encouraging card from the suit you like, you can
+ transmit the same message by discarding discouraging cards in the suits that you don't like. }
+
+|pg||cs|1|at|{ If you want to give a discouraging attitude signal in 2 suits, your first discard should 
+ be from the suit that your partner would be more likely to play should he regain the lead. }
+
+|pg||cs|4|at|{ When faced with a choice between encouraging in one suit and discouraging in some
+ other suit, an encouraging attitude signal sends a stronger message to your partner. }
+^-
+|pg||at|Finally, here is a tip that describes a tactic that is traditionally utilized by the declarer, but can also be useful for the defense:
+
+|pg||
+cs|2|at|^-{ A defender should consider using the hold up play in order to give his partner a chance to 
+ signal with a discard. That defender might thereby learn what suit to lead to the next trick. }
+
+|pg||st||rh||ha|y|md|2,sjs,a84,sq75|
+hc|sj|
+
+nt|^b@2^z@3
+You are sitting East. Your partner, West, leads the @SJ. |pg||lc|sj|pc|sj|hc|s4|at|The @S4 is played from the dummy. |pg||hs|es|lc|s4|pc|s4|at|Think about the card that you would play from your @SQ75 and the reasons why you would play that card. |pg||
+
+lb|*CWhich card would you play?^^s7^sq75|
+ls|es|hc|s7|
+
+nt|^b@2^z@3Play the @S7 as an encouraging attitude signal. |pg||lc|s7|hc|sq|at|The reason that you should encourage is that you have the @SQ and your partner will want to know about that. |pg||md|0sk62,st93|lc|sq|hs|ssws|at|The rest of the spades might be distributed as you see above. |pg||ls|ssws|hc|s7|at|If you encourage with the @S7 |pg||lc|s7|pc|s7|hc|sk|at|and South wins the @SK, |pg||lc|sk|pc|sk|pg||wt|w|hs|ws|hc|sq|at|West will know that you have the @SQ and that there is some future for the defense in the spade suit. When he regains the lead he will know to continue playing spades. |pg||
+
+ls|ws|lc|sq|md|2,sjs,a84,sq75|
+hc|sj|
+
+nt|^b@2^z@3
+Here is a similar situation. Your spades and the dummy's spades are the same as before and, once again, your partner leads the @SJ. |pg||lc|sj|pc|sj|hc|sa|at|This time the @SA is played from the dummy. |pg||lc|sa|pc|sa|hs|es|at|Which card would you play as East? |pg||
+lb|*CWhich card would you play?^^s7^sq75|
+
+ls|es|hc|s7|
+
+nt|^b@2^z@3The @S7 is still the right card to play as an encouraging attitude signal. The fact that dummy played the @SA this time (instead of the @S4) does not make any difference. |pg||lc|s7|hc|sq|at|Your partner will still want to know whether or not you were dealt the @SQ |pg||lc|sq|hc|s7|at|and signaling with the @S7 is the way that you can tell him that you hold that card. |pg||
+
+lc|s7|md|2,hj,ha84,hk75|
+
+
+nt|^b@2^z@3
+Here is another similar example. The suit has been changed to hearts and West leads the @HJ. |pg||
+lc|hj|pc|hj|hc|h4|at|The @H4 is played from the dummy. |pg||lc|h4|pc|h4|hs|eh|at|You now have the King of the suit that your partner led instead of the Queen. Which card would you play as East? |pg||
+
+lb|*CWhich card would you play?^^hk^hk75|
+ls|eh|hc|hk|
+
+nt|^b@2^z@3Win the trick with the @HK. Signaling is important to the defense, but winning tricks is more important! |pg||lc|hk|hc|h7|at|It is true that you could tell your partner that you like hearts by playing the @H7 as an encouraging attitude signal, |pg||lc|h7|pc|h7|md|0hq62,ht93|hc|hq|at|but South is known to hold the @HQ (your partner would not have led the @HJ if he held the @HQ). South would be able to win this trick with his @HQ |pg||lc|hq|pc|hq|pg||at|and go about his business in the other suits. |pg||
+
+up|2|hc|hk|
+
+nt|^b@2^z@3Even if you correctly win the first round of hearts with your @HK, |pg||lc|hk|pc|hkh|pg||hc|hqha|at|the declarer is going to win 2 tricks in this suit since the @HQ will become a winner (and of course the @HA was always going to win a trick). |pg||up|2|hc|hk|lc|haq|at|The advantage of winning the first trick with the @HK is that you will then have the opportunity to lead another suit that might offer brighter prospects for the defense. You should take advantage of this chance to win a trick and play your @HK. |pg||lc|hk|md|2,hj,ha84,hk75|
+hc|hj|
+
+nt|^b@2^z@3
+This card combination is identical to the last one. Your partner leads the @HJ, |pg||lc|hj|pc|hj|hc|ha|at|but this time the declarer calls for the dummy's @HA instead of the @H4. |pg||lc|ha|pc|ha|hs|eh|at|Now which heart would you play as East? |pg||
+
+lb|*CWhich card would you play?^^h7^hk75|
+
+ls|eh|hc|h7|
+
+nt|^b@2^z@3Now you should give your partner an encouraging attitude signal by playing the @H7. |pg||hc|hk|lc|h7|at|The fact that you were dealt the @HK means that your partner appears to be on to a good thing. Let him in on the secret! |pg||
+
+lc|hk|md|2,hj,ha84,hq75|pc|!HJ!HA|hc|hq|at|You would also encourage in this position if your highest heart was the @HQ |pg||lc|hq|md|2,hj,ha84,hk75|pc|!HJ!HA|hc|hk|at|(as opposed to the @HK). |pg||lc|hk|hc|h7|at|Your partner will not know your exact heart holding when you play the @H7, but just knowing that you like hearts will help him to defend effectively. |pg||
+
+lc|h7|md|4da,dt62,d954,d3|hc|d3|
+
+
+
+nt|^b@2^z@3
+You are now sitting West and your partner, East, leads the @D3 during some point of the play of a deal. |pg||lc|d3|pc|d3|hc|da|at|South plays the @DA |pg||lc|da|pc|Da|hs|wd|at|and you have to decide on a diamond to play. Which will it be? |pg||
+
+lb|*CWhich card would you play?^^d2^hdt62|
+ls|wd|hc|d2|
+
+nt|^b@2^z@3You should play the @D2 as a discouraging attitude signal. |pg||lc|d2|hc|dt|at|Although your highest diamond, the @D10, is an honor card, it is nothing to write home about. If you consider the various diamond holdings that your partner might have been dealt, you will realize that your @D10 is almost always irrelevant. If you had the @DK, the @DQ, or maybe even the @DJ, you would encourage in this situation, but with only the @D10 you don't want your partner to get excited about diamonds.|pg||
+
+lc|dt|md|4ck,cqjt6,c543,c2|hc|c2|
+
+nt|^b@2^z@3
+You are sitting West again and this time East leads the @C2 in the middle of the play of a deal. |pg||lc|c2|pc|c2|hc|ck|at|South puts up the @CK |pg||lc|ck|pc|ck|hs|wc|at|and your job is to play the club that best describes to your partner your holding in that suit. Which club would you play? |pg||lb|*CWhich card would you play?^^cq^cqjt6|
+
+ls|wc|hc|cq|
+
+nt|^b@2^z@3You should play the @CQ as one of those special attitude signals with an honor card. Here the play of the @CQ |pg||lc|cq|pc|cq|hc|cj|at|tells your partner that you hold the @CJ as well. |pg||hc|ct|at|You would often have something else good in clubs (such as the @C10) in order to signal with the @CQ in this position since throwing away a Queen purely for signaling purposes is a bad idea if doing so might cost the defense a trick. Having the @C10 to back up your @CJ makes the @CQ signal a safer proposition.|pg||
+
+up|1|lc|cjt|hc|c6|
+
+nt|^b@2^z@3If you thought that your @C6 was a high enough club to encourage, you should think about it again |pg||hs|nc|at|and consider the clubs that both you and your partner can see in the dummy. With your partner playing the @C2 and the @C543 in the dummy, the @C6 is the lowest club that you could have - your partner would read the @C6 as a discouraging attitude signal. |pg||ls|nc|lc|c6|hc|cq|at|There is no reason to confuse your partner here, especially since playing the @CQ describes your club holding to a tee!|pg||
+
+lc|cq|md|2,s9,saqt8,skj3|hc|s9|
+
+nt|^b@2^z@3
+You are back in the East seat and West, your partner, leads the @S9. |pg||lc|s9|pc|s9|hc|sa|at|The @SA is played from the dummy. |pg||lc|sa|pc|sa|hs|es|at|Which spade would you play to this trick? |pg||
+
+lb|*CWhich card would you play?^^s3^skj3|
+
+ls|es|hc|s3|
+
+nt|^b@2^z@3It would be nice if you had a higher spot card in spades to play as an encouraging attitude signal, but the @S3 is the only spade that you have that will not give up a trick. That's a shame since your partner has done well to play a spade - too bad that you have no safe way to give him that message! |pg||lc|s3|hc|skjq|at|It is more important to retain your @SKJ over dummy's @SQ because both the @SK and the @SJ will win tricks. |pg||
+
+
+
+nt|^b@2^z@3This is a good example of the principle that winning tricks should take priority over giving signals. |pg||lc|sqkj|hc|s3|at|It is true that if you play the @S3, your partner will not know that you really like spades. You must hope that either he considers the possibility that you were dealt a holding in which you had no good card to signal with or that, on this particular deal, it won't matter if your partner is kept in the dark about your attitude toward spades. |pg||
+
+lc|s3|md|4ha,hj987,h642,hq|
+hc|hq|
+
+nt|^b@2^z@3
+You are sitting West and your partner, East, leads the @HQ at some point in the play. |pg||lc|hq|pc|hq|hc|ha|at|South plays the @HA from his hand. |pg||lc|ha|pc|ha|hs|wh|at|Which card would you play as an attitude signal for your partner? |pg||
+
+
+
+lb|*CWhich card would you play?^^h9^hj987|ls|wh|hc|h9|
+
+nt|^b@2^z@3Play the @H9 as an encouraging attitude signal. |pg||lc|h9|hc|hj|at|Did you find it strange that your partner led the @HQ when you have the @HJ? After all, the @HQ is the standard lead from holdings headed by the @HQ and @HJ. Either partner has led a card that is not in accordance with standard leads (and we know that's impossible!) or his @HQ was his highest card from a doubleton. |pg||hs|ehsh|lc|hj|md|0hkt5,,,hq3|
+
+nt|^b@2^z@3It is even possible that East's @HQ was a singleton, but the chances are that the heart layout is similar to what you now see above. |pg||ls|ehwh|hc|h9|at|You should encourage with the @H9 in this situation |pg||lc|h9|pc|h9h|pg||wt|e|hs|ehshwh|at|in the hope that East will regain the lead and play another heart to establish your @HJ as a winner. |pg||ls|ehshwh|up|2|hc|h87|at|Although your @H8 and @H7 are both high spot cards, |pg||lc|h87|hc|h9|at|you should play the @H9 on the principle that this card is the loudest card that you can afford to signal with. |pg||
+
+lc|h9|md|2,ca,da94,dkqjt86|
+hc|ca|
+
+nt|^b@2^z@3You are sitting East and your partner, West leads the @CA. |pg||lc|Ca|pc|ca|at|You played your last club on a previous trick so you are now void in that suit. |pg||hs|ed|at|You have a magnificent diamond holding, however, and you would like to give partner that message with your discard. |pg||ls|ed|hs|nd|at|Dummy's club holding is not relevant, but dummy's diamonds are shown in case you care about that. |pg||ls|nd|hs|ed|at|Which of your 6 diamonds would you discard? |pg||
+
+lb|*CWhich card would you discard?^^dk^dkqjt86|ls|ed|hc|dk|
+
+nt|^b@2^z@3You should discard the @DK. By discarding an honor card as an attitude signal you give your partner the message that you have the next lower honor |pg||lc|dk|hc|dq|at|(the @DQ in this case) |pg||lc|dq|hc|djt|at|and that you probably have some more good cards in diamonds as well. |pg||lc|djt|hc|d8|at|If you discard the @D8, your partner would probably realize that you like diamonds, |pg||lc|d8|hs|ed|at|but your diamond suit is so strong that you want West to know that you ^*Ilove^*N that suit! |pg||ls|ed|hc|dk|at|Discard the @DK to give him that message. |pg||
+
+lc|dk|md|4,caq952,c763,da|hc|da|
+
+nt|^b@2^z@3You are now sitting West and your partner, East, leads the @DA at some point in the play of a deal. |pg||
+lc|da|pc|Da|hs|wc|at|You have recently become void in diamonds and you would like to tell your partner about your strong holding in clubs. If you decide to discard one of your clubs as an attitude signal, which club would you choose to play? |pg||
+
+lb|*CWhich card would you discard?^^c5^caq952|
+
+ls|wc|hc|c5|
+
+nt|^b@2^z@3You should discard the @C5 as an encouraging attitude signal. |pg||lc|c5|hc|c9|at|If you thought that it was better to discard the louder @C9, then you have done some good thinking, |pg||md|0ckj8,,,ct4|lc|c9|hs|scec|at|but perhaps you did not consider a possible layout of the unseen clubs like the one shown above. |pg||hs|wc|at|Here the defense can prevent South from winning a trick in clubs, |pg||ls|ecscwc|hc|c9|at|but the @C9 plays a key role in making this possible. If West were to discard that card then South could win a club trick. |pg||
+
+
+
+nt|^b@2^z@3We are not going to go through all of the possible ways that the play could go in the club suit depending on whether or not West keeps the @C9. If you go through the motions yourself you will see that the @C9 is too big of a card to discard. |pg||lc|c9|hc|c5|at|The best West can do is discard the @C5 and hope that this card is high enough for his partner to read it as an encouraging attitude signal. On some deals West might do better by discarding a discouraging card in some other suit.
+|
+pg||
+|bt||nt||cs|5|cp|6|fp|4|ht|i|at|^-{^^End^^ 
+      Learn to Play Bridge2          ^*bChapter 4   Section 1^*n       ^^ ^^ ^^Defense         -         Attitude Signals^^ ^^ }^- |

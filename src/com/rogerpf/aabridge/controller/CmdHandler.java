@@ -30,6 +30,7 @@ import com.rogerpf.aabridge.model.Deal;
 import com.rogerpf.aabridge.model.Dir;
 import com.rogerpf.aabridge.model.Hand;
 import com.rogerpf.aabridge.model.Lin;
+import com.rogerpf.aabridge.model.Suit;
 
 public final class CmdHandler {
 
@@ -49,60 +50,71 @@ public final class CmdHandler {
 		//             "openSavesFolder" entry EXISTS but not as a button
 		//             "runTests"        entry EXISTS but not as a button
 		//             "nullCommand"     entry EXISTS but not as a button
-		new RpfBtnDef( "menuSaveStd",				"Save",				"Does a standard Save, offering you a file name if one has not been set.  ALWAYS automaticaly overwrites an older file  "),
-		new RpfBtnDef( "menuSaveAs",				"Save As",			"Saves the deal, you always get a chance to set or change the filename  "),
+		new RpfBtnDef( "menuSaveStd",				Aaf.gT("lhp.save"),				Aaf.gT("lhp.save_TT")),
+		new RpfBtnDef( "menuSaveAs",				Aaf.gT("lhp.saveAs"),			Aaf.gT("lhp.saveAs_TT")),
+	                                                
+		new RpfBtnDef( "editHandsRemoveRes",		Aaf.gT("lhp.eH.remRes"),		Aaf.gT("lhp.eH.remRes_TT")),
+		new RpfBtnDef( "editHandsShuffOp",		    Aaf.gT("lhp.eH.shufOp"),		Aaf.gT("lhp.eH.shufOp_TT")),
+		new RpfBtnDef( "editHands_ssS",		        Aaf.gT("lhp.eH.s"),				Aaf.gT("lhp.eH.s_TT")),
+		new RpfBtnDef( "editHands_ssH",		        Aaf.gT("lhp.eH.h"),				Aaf.gT("lhp.eH.h_TT")),
+		new RpfBtnDef( "editHands_ssD",		        Aaf.gT("lhp.eH.d"),				Aaf.gT("lhp.eH.d_TT")),
+		new RpfBtnDef( "editHands_ssC",		        Aaf.gT("lhp.eH.c"),				Aaf.gT("lhp.eH.c_TT")),
+		new RpfBtnDef( "editHands_low",		        Aaf.gT("lhp.eH.low"),			Aaf.gT("lhp.eH.low_TT")),
+		new RpfBtnDef( "editHands",					Aaf.gT("lhp.eH.hands"),			Aaf.gT("lhp.eH.hands_TT")),
+		new RpfBtnDef( "editHandsRotateAnti",		"<",							Aaf.gT("lhp.eH.anti_TT")),
+		new RpfBtnDef( "editHandsRotateClock",		">",		    				Aaf.gT("lhp.eH.clock_TT")),
+                                                    
+		new RpfBtnDef( "editBidding",				Aaf.gT("lhp.eBid.bid"),			Aaf.gT("lhp.eBid.bid_TT")),
+		new RpfBtnDef( "editBiddingWipe",			Aaf.gT("lhp.eBid.wipe"),		Aaf.gT("lhp.eBid.wipe_TT")),
+		new RpfBtnDef( "editPlay",					Aaf.gT("lhp.ePlay.edit"),		Aaf.gT("lhp.ePlay.edit_TT")),
+                                                    
+		new RpfBtnDef( "leftWingEdit",				Aaf.gT("lhp.edit"),				Aaf.gT("lhp.edit_TT")),
+		new RpfBtnDef( "leftWingNormal",			Aaf.gT("lhp.play"),				Aaf.gT("lhp.play_TT")),
+		new RpfBtnDef( "leftWingReview",			Aaf.gT("lhp.review"),			Aaf.gT("lhp.review_TT")),
+                                                    
+		new RpfBtnDef( "mainAnti",					"<",							Aaf.gT("gbl.anti_TT")),
+		new RpfBtnDef( "mainClock",					">",							Aaf.gT("gbl.clock_TT")),
+		new RpfBtnDef( "claimBtn",					Aaf.gT("gbl.claim"),			Aaf.gT("gbl.claim_TT")),
+		new RpfBtnDef( "mainNewBoard",				Aaf.gT("gbl.newBoard"),			Aaf.gT("gbl.newBoard_TT")),
+		new RpfBtnDef( "mainUndo",					Aaf.gT("gbl.undo"),				Aaf.gT("gbl.undo_TT")),
+                                                    
+		new RpfBtnDef( "ddsAnalyse",				Aaf.gT("rhp.analyse"),			Aaf.gT("rhp.analyse_TT")),
+		new RpfBtnDef( "ddsReinstateAnalyser",		Aaf.gT("rhp.keepon"),			Aaf.gT("rhp.keepon_TT")),
+		new RpfBtnDef( "ddsLabel",					Aaf.gT("rhp.dds"),				Aaf.gT("rhp.dds_TT")),
+		new RpfBtnDef( "ddsScoreOnOff",				Aaf.rhp_isOn,				    Aaf.gT("rhp.isOn_TT")),
+		new RpfBtnDef( "hiddenHandsShowHide",		Aaf.gT("rhp.show"),				Aaf.gT("rhp.show_TT")),
+		new RpfBtnDef( "hiddenHandsClick1",			Aaf.gT("rhp.click"),			Aaf.gT("rhp.click_TT")),
+		new RpfBtnDef( "hiddenHandsClick2",			Aaf.gT("rhp.aName"),			Aaf.gT("rhp.aName_TT")),
+                                                    
+		new RpfBtnDef( "autoEnterLabelAuto",		Aaf.gT("rhp.auto"),				Aaf.gT("rhp.auto_TT")),
+		new RpfBtnDef( "autoEnterLabelEnter",		Aaf.gT("rhp.enter"),			Aaf.gT("rhp.auto_TT")),
+		new RpfBtnDef( "autoEnterOnOff",			Aaf.rhp_isOff,			        Aaf.gT("rhp.auto_TT")),
+	                                                                                             
+		new RpfBtnDef( "questionTellMe",			Aaf.gT("questTb.tellMe"),		Aaf.gT("questTb.tellMe_TT")),
+		new RpfBtnDef( "question_z_Video",			Aaf.gT("questTb.video"),		Aaf.gT("questTb.video_TT")),
+		new RpfBtnDef( "question_z_Learn",			Aaf.gT("questTb.learn"),		Aaf.gT("questTb.learn_TT")),
+		new RpfBtnDef( "question_z_Next",			Aaf.gT("questTb.new"),			Aaf.gT("questTb.new_TT")),
+		new RpfBtnDef( "question_z_NextAndTell",	Aaf.gT("questTb.new&Tell"),		Aaf.gT("questTb.new&Tell_TT")),
+		new RpfBtnDef( "question_z_Options",		Aaf.gT("questTb.options"),		Aaf.gT("questTb.options_TT")),
+		new RpfBtnDef( "question_z_Train",			Aaf.gT("questTb.train"),		Aaf.gT("questTb.train_TT")),
+		new RpfBtnDef( "question_z_Exam",			Aaf.gT("questTb.exam"),			Aaf.gT("questTb.exam_TT")),
+                                                    
+		new RpfBtnDef( "reviewBackOneCard",			"<",		                    Aaf.gT("cmdBar.b1card_TT")),
+		new RpfBtnDef( "reviewFwdOneCard",			">",		                    Aaf.gT("cmdBar.f1card_TT")),
+                                                                                    
+		new RpfBtnDef( "reviewBackOneBid",			"<",		                    Aaf.gT("cmdBar.b1bid_TT")),
+		new RpfBtnDef( "reviewFwdOneBid",			">",		                    Aaf.gT("cmdBar.f1bid_TT")),
+                                                                                    
+		new RpfBtnDef( "commonStepBack",			"<",		                    Aaf.gT("cmdBar.stepBack_TT")),
+		new RpfBtnDef( "commonFlowBack",			"<",		                    Aaf.gT("cmdBar.flowBack_TT")),
+			
+		new RpfBtnDef( "commonStepFwd",				Aaf.cmdBar_step_AM,			    Aaf.gT("cmdBar.step_TT")),
+		new RpfBtnDef( "commonFlowFwd",				Aaf.cmdBar_flow_AM,			    Aaf.gT("cmdBar.flow_TT")),
+		new RpfBtnDef( "dealmodeBackToMovie",		Aaf.gT("cmdBar.backTo"),        Aaf.gT("cmdBar.backTo_TT")),
+		new RpfBtnDef( "tutorialIntoDealClever",	Aaf.gT("cmdBar.enter"),	        Aaf.gT("cmdBar.enter_TT")),
+		new RpfBtnDef( "tutorialIntoDealCont",		Aaf.gT("cmdBar.cont"),			Aaf.gT("cmdBar.cont_TT")),
+		new RpfBtnDef( "tutorialIntoDealB1st",		Aaf.gT("cmdBar.1st"),			Aaf.gT("cmdBar.1st_TT")),	
 
-		new RpfBtnDef( "mainAnti",					"<",				"Rotate the seats Anti-clockwise  "),
-		new RpfBtnDef( "mainClock",					">",				"Rotate the seats Clockwise  "),
-		new RpfBtnDef( "claimBtn",					"Claim",			"Claim  -  Claim as many of the remaining tricks as you wish.  Your claim we be accepted and not tested.  "),
-		new RpfBtnDef( "mainUndo",					"Undo",				""),
-		new RpfBtnDef( "mainNewBoard",				"New Board",		"Discard the existing hands, shuffle and deal the next board  (always does an AutoSave first)  "),
-
-		new RpfBtnDef( "leftWingEdit",				"Edit",				"Edit - wipes and play after this point and  THEN  lets you  Edit  the play, bidding  or even the cards  "),
-		new RpfBtnDef( "leftWingNormal",			"Play",		        "Bid-Play - lets you  Bid or Play  more of the hand  "), 
-		new RpfBtnDef( "leftWingReview",			"Review",			"Review - lets you  Review  the cards played so far  "), 
-                                                                        
-		new RpfBtnDef( "reviewBackOneCard",			"<",				"Go back one card  best used with  DDS  then Mouse Wheel  "),
-		new RpfBtnDef( "reviewFwdOneCard",			">",		  		"Go forward one card  best used with  DDS  then Mouse Wheel  "),
-		new RpfBtnDef( "ddsShowBids",				"Show Bids", 		"Restores the Bidding Table without having to load another hand  "),
-		new RpfBtnDef( "ddsAnalyse",				"Analyse", 			"Works out the highest number of tricks that each side can win in any suit or No Trumps  "),
-		new RpfBtnDef( "ddsLabel",					"DDS", 				"DDS  -  Double Dummy Solver  -   On  /  Off"),
-		new RpfBtnDef( "ddsScoreOnOff",				"On", 			    "On/Off Shows what WILL happen when you click the button "),
-		new RpfBtnDef( "hiddenHandsShowHide",		"Show", 			"Show / Hide the normally hidden hands "),
-		new RpfBtnDef( "hiddenHandsClick1",			"Click  ", 			"Click a name panel - to show (and become) that hand  "),
-		new RpfBtnDef( "hiddenHandsClick2",			"a Name  ", 		"Click a name panel - to show (and become) that hand  "),
-
-		new RpfBtnDef( "reviewBackOneBid",			"<",		  		"Go back one bid  "),
-		new RpfBtnDef( "reviewFwdOneBid",			">",		  		"Go forward one bid  "),
-
-		new RpfBtnDef( "editHandsShuffWeak",		"Shuf Op",			"Shuf Op - Shuffle the weakest pair of hands and jump directly into  Play / Bidding  "),
-		new RpfBtnDef( "editHands",					"Hands",			"Drag and Drop the cards from hand to hand  "),
-		new RpfBtnDef( "editHandsRotateAnti",		"<",				"Rotate the CARDS Anti-clockwise - this is a TRUE ROTATE - the SEATS 'N S E W' do NOT move  "),
-		new RpfBtnDef( "editHandsRotateClock",		">",				"Rotate the CARDS Clockwise - this is a TRUE ROTATE - the SEATS 'N S E W' do NOT move  "),
-		new RpfBtnDef( "editBidding",				"Bidding",			"Edit / Add  Bidding for all four hands  "),
-		new RpfBtnDef( "editBiddingWipe",			"Wipe",				"Remove All the existing BIDDING  "),
-		new RpfBtnDef( "editPlay",					"Edit Play",		"Edit / Add  Play for all four hands  "),
-		new RpfBtnDef( "editPlayWipe",				"Wipe",			    "Remove All the existing PLAY  "),
-
-		new RpfBtnDef( "commonStepBack",			"<",				"Go back one trick  "),
-		new RpfBtnDef( "commonFlowBack",			"<",				"Go back one trick  "),
-		new RpfBtnDef( "commonStepFwd",				"Step  >",			"Jump Forward to the next stopping point  "),
-		new RpfBtnDef( "commonFlowFwd",				"Flow  >",			"Run Forward to the next stopping point - showing each card being played  "),
-		new RpfBtnDef( "dealmodeBackToMovie",		"Back  to Movie",	"Returns back to the   'Tutorial level'   (aka - Bridge movie)  "),
-		new RpfBtnDef( "tutorialIntoDealCont",		"Cont",				"Enter the Deal  and go into   'Play' mode      continue  after ALL existing play "),
-		new RpfBtnDef( "tutorialIntoDealB1st",		"1st",			    "Enter the Deal  and go into   'Play' mode      start from just after the  1st  lead  "),
-		new RpfBtnDef( "tutorialIntoDealClever",	"Enter the Deal",	"Enter the Deal  and go into   'Review' mode  "),
-
-		new RpfBtnDef( "questionTellMe",			"Tell Me",			"Shows you the Answer  "),
-
-		new RpfBtnDef( "question_z_Video",			"Video",			"Plays Video Demo  (Youtube)  "),
-		new RpfBtnDef( "question_z_Learn",			"Learn",			"Shows you  HOW To  Memorize  the suit distributions   "),
-		new RpfBtnDef( "question_z_Next",			"New",				"New - Show New  Hand Shape  question  "),
-		new RpfBtnDef( "question_z_NextAndTell",	"New & Tell",		""),
-		new RpfBtnDef( "question_z_Options",		"Options",			"Show - Distribution Flash Card - options  "),
-		new RpfBtnDef( "question_z_Train",			"Train",			""),
-		new RpfBtnDef( "question_z_Exam",			"Exam",				""),
-		
 		// @formatter:on                    		
 	};
 
@@ -133,6 +145,7 @@ public final class CmdHandler {
 			return;
 
 		App.incOffsetAntiClockwise(); // includes repaint
+		App.frame.invalidate();
 	}
 
 	/**   
@@ -143,6 +156,7 @@ public final class CmdHandler {
 			return;
 
 		App.incOffsetClockwise(); // includes repaint
+		App.frame.invalidate();
 	}
 
 	/**   
@@ -172,7 +186,7 @@ public final class CmdHandler {
 				if (hand == null)
 					break;
 				boolean wasAuto = App.isAutoBid(hand.compass);
-				hand.undoLastBid();
+				App.deal.undoLastBid();
 				if (!wasAuto)
 					break;
 			}
@@ -265,11 +279,18 @@ public final class CmdHandler {
 
 //		boolean refreshSeatChoice = (App.respectLinYou == false);
 
+		boolean re_analyse = App.ddsAnalyserPanelVisible && App.reinstateAnalyser;
+		App.ddsAnalyserPanelVisible = false;
+
+		boolean re_dds = App.devMode && App.ddsScoreShow;
 		App.ddsScoreShow = false;
 
 		App.allTwister_reset();
 		App.respectLinYou = true;
-		App.frame.rop.p2_SeatChoice.respectLinYouSetBy_mainNewBoard();
+
+		App.frame.rop.p2_SeatChoice.respectLinYouSetBy_mainNewBoard(true /* skip_alwaysShowHidden */);
+
+//		App.handPanelNameAreaInfoNumbersShow = true;
 
 		App.flowOnlyCommandBar = false; // ugly should not need to do this here DO WE?
 		App.hideCommandBar = false; // ugly should not need to do this here DO WE?
@@ -282,7 +303,8 @@ public final class CmdHandler {
 		App.reviewBid = 0;
 		App.gbp.c1_1__tfdp.clearAllCardSuggestions();
 
-		Deal deal = Deal.newBoard(App.deal.realBoardNo, (App.watchBidding == false), App.dealCriteria, App.youSeatForNewDeal);
+		Deal deal = Deal.newBoard(App.deal.realBoardNo, (App.watchBidding == false), App.dealCriteria, App.youSeatForNewDeal, App.dealFilter);
+		App.deal = deal;
 		App.mg = new MassGi(deal);
 		App.switchToNewMassGi("");
 
@@ -292,7 +314,13 @@ public final class CmdHandler {
 		App.gbp.c0_2__blp.hideClaimButtonsIfShowing();
 
 		App.dealMajorChange();
-		App.localShowHidden = false;
+
+		if (App.devMode) {
+			App.localShowHidden = (App.localShowHiddPolicy == 1);
+		}
+		else
+			App.localShowHidden = false;
+
 		App.gbp.matchPanelsToDealState();
 		App.frame.repaint();
 		if (App.isPauseAtEotClickWanted()) {
@@ -302,6 +330,20 @@ public final class CmdHandler {
 			App.con.startAutoBidDelayTimerIfNeeded();
 		else
 			App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
+
+		if (App.newDealAsRequested == false) {
+			App.frame.aaDragGlassPane.showNewDealScreen();
+			return;
+		}
+
+		if (re_analyse) {
+			ddsAnalyse();
+		}
+
+		if (re_dds) {
+			App.ddsScoreShow = true;
+			App.gbp.matchPanelsToDealState();
+		}
 
 	}
 
@@ -314,7 +356,9 @@ public final class CmdHandler {
 //		boolean refreshSeatChoice = (App.respectLinYou == false);
 
 		App.respectLinYou = true;
-		App.frame.rop.p2_SeatChoice.respectLinYouSetBy_mainNewBoard();
+		App.frame.rop.p2_SeatChoice.respectLinYouSetBy_mainNewBoard(false /* skip_alwaysShowHidden */);
+
+//		App.handPanelNameAreaInfoNumbersShow = true;
 
 		App.flowOnlyCommandBar = false; // ugly should not need to do this here DO WE?
 		App.hideCommandBar = false; // ugly should not need to do this here DO WE?
@@ -361,6 +405,10 @@ public final class CmdHandler {
 		wh.height = (wh.height * 70) / 100;
 		wh.width = (wh.width * 65) / 100;
 		wh.height = (wh.height * 55) / 100;
+
+		if (!App.onWin && wh.height < 400) {
+			wh.height = 400;
+		}
 		fc.setPreferredSize(wh);
 	}
 
@@ -371,6 +419,37 @@ public final class CmdHandler {
 		try {
 			Desktop.getDesktop().open(new File(App.autoSavesPath));
 		} catch (IOException e) {
+		}
+	}
+
+	/**   
+	 */
+	static void openCmdsFolder() {
+		// ==============================================================================================
+		try {
+			Desktop.getDesktop().open(new File(App.cmdsAndPhpPath));
+		} catch (IOException e) {
+		}
+	}
+
+	/**   
+	 */
+	static void openTempMyHandsFolder() {
+		// ==============================================================================================
+		try {
+			Desktop.getDesktop().open(new File(App.tempMyHandsPath));
+		} catch (IOException e) {
+		}
+	}
+
+	/**   
+	 */
+	static void execute_aamh() {
+		// ==============================================================================================
+		try {
+			MassGi_utils.launch__aamh();
+			App.frame.delayed_process__temp_MyHands();
+		} catch (Exception e) {
 		}
 	}
 
@@ -428,6 +507,29 @@ public final class CmdHandler {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	static int incval = 1;
+
+	/**   
+	 */
+	public static void doDebugAutoSave(Deal d) {
+		// ==============================================================================================
+		try {
+
+			SimpleDateFormat sdfDate = new SimpleDateFormat("yyyy-MM-dd__HH-mm-ss");
+
+			String s = "000" + incval++;
+			s = s.substring(s.length() - 4);
+
+			String dealName = App.autoSavesPath + "a__" + sdfDate.format(new Date()) + "__" + s + ".lin";
+
+			saveDealAsSingleLinFile(d, dealName);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	/**   
@@ -494,7 +596,7 @@ public final class CmdHandler {
 			return;
 		}
 
-		if (App.isFilenameThrowAway(App.deal.lastSavedAsFilename)) {
+		if (App.isFilenameThrowAway(App.deal.lastSavedAsFilename) && !App.force_savename_xxx) {
 			saveCommon("Save");
 		}
 		else {
@@ -502,10 +604,14 @@ public final class CmdHandler {
 
 			saveDealAsSingleLinFile(App.deal, dealName);
 
+			App.deal.lastDealNameSaved_FULL = new File(dealName).getAbsolutePath();
+
 			App.deal.lastSavedAsFilename = new File(dealName).getName();
 
 			App.frame.setTitleAsRequired();
 		}
+		App.calcApplyBarVisiblity();
+		App.frame.repaint();
 	}
 
 	/**   
@@ -513,6 +619,8 @@ public final class CmdHandler {
 	static void menuSaveAs() {
 		// ==============================================================================================
 		saveCommon("SaveAs");
+		App.calcApplyBarVisiblity();
+		App.frame.repaint();
 	}
 
 	/**   
@@ -547,7 +655,9 @@ public final class CmdHandler {
 
 			File chosen = fc.getSelectedFile();
 			App.deal.lastSavedAsPathWithSep = chosen.getParent() + File.separator;
+
 			App.deal.lastSavedAsFilename = checkExtension(chosen.getName());
+			App.deal.lastDealNameSaved_FULL = checkExtension(chosen.getAbsolutePath());
 
 			dealName = checkExtension(chosen.getAbsolutePath());
 
@@ -566,7 +676,7 @@ public final class CmdHandler {
 			FileOutputStream fileOut = new FileOutputStream(dealName);
 
 			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(fileOut, "utf-8"));
-			Lin.saveDealAsSingleLinFile(deal, writer);
+			Lin.saveDealAsSingleLinFileBW(deal, "", writer);
 			writer.close();
 
 			fileOut.close();
@@ -817,25 +927,42 @@ public final class CmdHandler {
 		if (App.deal.isDoneHand()) // so we skip the 'done hand'
 			return;
 		App.ddsScoreShow = !App.ddsScoreShow;
-//		if (App.ddsScoreShow == false) {
-//			App.savePreferences();
-//		}
-//		ddsShowBids();
 		App.gbp.matchPanelsToDealState();
 	}
 
 	/**   
 	 */
-	static void ddsShowBids() {
+	static void autoEnterOnOff() {
 		if (App.deal.isDoneHand()) // so we skip the 'done hand'
 			return;
-		App.gbp.c2_0__ddsAnal.showBidsButtonClicked();
+
+		App.pbnAutoEnter = !App.pbnAutoEnter;
+
+		if (App.pbnAutoEnter && App.cameFromPbnOrSimilar() && App.isVmode_Tutorial()) {
+			CmdHandler.tutorialIntoDealClever();
+			App.pbnAutoEnter = true;
+		}
+		else if (!App.pbnAutoEnter && App.isVmode_InsideADeal()) {
+			MassGi_utils.do_dealmodeBackToMovie();
+		}
+		App.gbp.matchPanelsToDealState();
 	}
 
 	/**   
 	 */
 	static void ddsAnalyse() {
+		if (App.deal.isDoneHand()) // so we skip the 'done hand'
+			return;
 		App.gbp.c2_0__ddsAnal.analyseButtonClicked();
+	}
+
+	/**   
+	 */
+	static void ddsReinstateAnalyser() {
+		if (App.deal.isDoneHand()) // so we skip the 'done hand'
+			return;
+
+		App.gbp.c2_0__ddsAnal.reinstateAnalyserButtonClicked();
 	}
 
 	/**   
@@ -871,6 +998,7 @@ public final class CmdHandler {
 	public static void leftWingEdit() {
 		if (App.deal.isDoneHand()) // so we skip the 'done hand'
 			return;
+
 		if (App.isMode(Aaa.REVIEW_PLAY) /* || App.isMode(Aaa.REVIEW_BIDDING) && App.deal.isFinished() */) {
 			App.deal.fastUndoBackTo(App.reviewTrick, App.reviewCard, false /* setDdsNextCard */);
 		}
@@ -946,15 +1074,131 @@ public final class CmdHandler {
 
 	/**
 	 */
-	public static void editHandsShuffWeak() {
+	public static void editHandsRemoveRes() {
 		App.deal.eb_blocker = false;
-		App.ddsAnalyserPanelVisible = false;
-		App.deal.clearPlayerNames();
-		App.deal.ShuffleWeakestAxisHands();
+		App.deal.eb_min_card = 0;
+		App.deal.clearAnyKeptCards();
 		App.dealMajorChange();
 		App.gbp.matchPanelsToDealState();
-		App.setMode(Aaa.NORMAL_ACTIVE);
+	}
+
+	/**
+	 */
+	public static void editHandsShuffOp() {
+		if (App.deal.isDoneHand()) // so we skip the 'done hand'
+			return;
+
+		boolean old_localShowHidden = App.localShowHidden;
+
+		boolean analyserWasOn = App.ddsAnalyserPanelVisible;
+		App.ddsAnalyserPanelVisible = false;
+		App.deal.clearPlayerNames();
+		App.deal.shufOp_ShuffleDefendersHands();
+		App.dealMajorChange();
+		App.gbp.matchPanelsToDealState();
+		if (App.deal.isContractReal()) {
+			App.setMode(Aaa.NORMAL_ACTIVE);
+			App.gbp.c1_1__tfdp.makeCardSuggestions();
+		}
+
+		if (App.localShowHiddPolicy == 0 /*hidden*/) {
+			App.localShowHidden = false;
+		}
+		else if (App.localShowHiddPolicy == 1 /*show*/) {
+			App.localShowHidden = true;
+		}
+		else if (App.localShowHiddPolicy == 2 /*leave as is */) {
+			App.localShowHidden = old_localShowHidden;
+		}
+
 		App.frame.repaint();
+		if (analyserWasOn) {
+			ddsAnalyse();
+		}
+	}
+
+	public static void editHands_ssS() {
+		boolean analyserWasOn = App.ddsAnalyserPanelVisible;
+		App.ddsAnalyserPanelVisible = false;
+		App.deal.clearPlayerNames();
+		App.deal.wipePlay();
+
+		App.deal.swapSuits(Suit.Spades, Suit.Hearts);
+
+		App.dealMajorChange();
+		App.gbp.matchPanelsToDealState();
+		App.frame.repaint();
+		if (analyserWasOn) {
+			ddsAnalyse();
+		}
+	}
+
+	public static void editHands_ssH() {
+		boolean analyserWasOn = App.ddsAnalyserPanelVisible;
+		App.ddsAnalyserPanelVisible = false;
+		App.deal.clearPlayerNames();
+		App.deal.wipePlay();
+
+		App.deal.swapSuits(Suit.Hearts, Suit.Diamonds);
+
+		App.dealMajorChange();
+		App.gbp.matchPanelsToDealState();
+		App.frame.repaint();
+		if (analyserWasOn) {
+			ddsAnalyse();
+		}
+	}
+
+	public static void editHands_ssD() {
+		boolean analyserWasOn = App.ddsAnalyserPanelVisible;
+		App.ddsAnalyserPanelVisible = false;
+		App.deal.clearPlayerNames();
+		App.deal.wipePlay();
+
+		App.deal.swapSuits(Suit.Diamonds, Suit.Clubs);
+
+		App.dealMajorChange();
+		App.gbp.matchPanelsToDealState();
+		App.frame.repaint();
+		if (analyserWasOn) {
+			ddsAnalyse();
+		}
+	}
+
+	public static void editHands_ssC() {
+		boolean analyserWasOn = App.ddsAnalyserPanelVisible;
+		App.ddsAnalyserPanelVisible = false;
+		App.deal.clearPlayerNames();
+		App.deal.wipePlay();
+
+		App.deal.swapSuits(Suit.Clubs, Suit.Spades);
+
+		App.dealMajorChange();
+		App.gbp.matchPanelsToDealState();
+		App.frame.repaint();
+		if (analyserWasOn) {
+			ddsAnalyse();
+		}
+	}
+
+	public static void editHands_low() {
+		boolean analyserWasOn = App.ddsAnalyserPanelVisible;
+		App.ddsAnalyserPanelVisible = false;
+		App.deal.clearPlayerNames();
+		App.deal.wipePlay();
+
+		int upto_default = 6; // magic number
+
+		int upto = App.gbp.c0_0__tlp.getuptoValue(upto_default);
+
+		App.deal.suffleLowerCards(upto);
+
+		App.dealMajorChange();
+		App.gbp.matchPanelsToDealState();
+		App.frame.repaint();
+		if (analyserWasOn) {
+			ddsAnalyse();
+		}
 	}
 
 	/**   
@@ -969,7 +1213,9 @@ public final class CmdHandler {
 
 	static void editBidding() {
 		App.deal.eb_blocker = false;
+		App.deal.showBidQuestionMark = false;
 		App.deal.clearPlayerNames();
+		App.deal.wipeContractAndPlay();
 		App.setMode(Aaa.EDIT_BIDDING);
 		App.gbp.matchPanelsToDealState();
 		App.frame.repaint();
@@ -1003,17 +1249,21 @@ public final class CmdHandler {
 	static void editHandsRotateAnti() {
 		// App.deal.clearPlayerNames();
 		App.deal.rotateHands(-1);
-		App.dealMajorChange();
+		App.gbp.dealDirectionChange();
+		App.gbp.dealMajorChange();
 		App.gbp.matchPanelsToDealState();
 		App.frame.repaint();
+		App.frame.invalidate();
 	}
 
 	static void editHandsRotateClock() {
 		// App.deal.clearPlayerNames();
 		App.deal.rotateHands(+1);
+		App.gbp.dealDirectionChange();
 		App.dealMajorChange();
 		App.gbp.matchPanelsToDealState();
 		App.frame.repaint();
+		App.frame.invalidate();
 	}
 
 	static void runTests() {
@@ -1068,7 +1318,13 @@ public final class CmdHandler {
 			origName = "";
 		}
 
-		if (origName.contentEquals("")) {
+		if (App.force_savename_xxx) {
+			if (pathWithSep.contentEquals(App.autoSavesPath)) {
+				pathWithSep = App.realSavesPath;
+			}
+			s = pathWithSep + App.xxx_lin_name;
+		}
+		else if (origName.contentEquals("")) {
 
 			SimpleDateFormat sdfDate = new SimpleDateFormat("yyyy-MM-dd__HH-mm-ss");
 			s = pathWithSep + "d__" + sdfDate.format(new Date()) + "__";
@@ -1093,6 +1349,11 @@ public final class CmdHandler {
 
 		App.mouseWheelDoes = App.WMouse_STEP;
 
+		if (App.cameFromPbnOrSimilar() && App.pbnAutoEnter) {
+			Controller.Left_keyPressed();
+			return;
+		}
+
 		if (App.isVmode_Tutorial())
 			App.mg.tutorialBackOne();
 		else if (App.isMode(Aaa.REVIEW_BIDDING))
@@ -1110,6 +1371,11 @@ public final class CmdHandler {
 
 		App.mouseWheelDoes = App.WMouse_FLOW;
 
+		if (App.cameFromPbnOrSimilar() && App.pbnAutoEnter) {
+			Controller.Left_keyPressed();
+			return;
+		}
+
 		if (App.isVmode_Tutorial())
 			App.mg.tutorialBackOne();
 		else if (App.isMode(Aaa.REVIEW_BIDDING))
@@ -1126,6 +1392,11 @@ public final class CmdHandler {
 	static void commonStepFwd() { // also called by "inside a deal" Step Forward
 
 		App.mouseWheelDoes = App.WMouse_STEP;
+
+		if (App.cameFromPbnOrSimilar() && App.pbnAutoEnter) {
+			Controller.Right_keyPressed();
+			return;
+		}
 
 		if (App.isVmode_Tutorial())
 			App.mg.tutorialStepFwd();
@@ -1145,6 +1416,11 @@ public final class CmdHandler {
 
 		App.mouseWheelDoes = App.WMouse_FLOW;
 
+		if (App.cameFromPbnOrSimilar() && App.pbnAutoEnter) {
+			Controller.Right_keyPressed();
+			return;
+		}
+
 		if (App.isVmode_Tutorial())
 			App.mg.tutorialFlowFwd((App.movieBidFlowDoesFlow == false) && App.isMode(Aaa.NORMAL_ACTIVE));
 		else if (App.isMode(Aaa.REVIEW_BIDDING))
@@ -1162,7 +1438,6 @@ public final class CmdHandler {
 		App.ddsAnalyserPanelVisible = false;
 		MassGi_utils.do_dealmodeBackToMovie();
 		App.frame.repaint();
-		// App.biddingVisibilityCheck();
 	}
 
 	/**
@@ -1183,7 +1458,6 @@ public final class CmdHandler {
 	 */
 	public static void tutorialIntoDealCont() {
 		MassGi_utils.do_tutorialIntoDealCont();
-		App.show_poor_def_msg = true;
 		App.gbp.matchPanelsToDealState();
 		// App.frame.repaint();
 	}
@@ -1192,7 +1466,6 @@ public final class CmdHandler {
 	 */
 	public static void tutorialIntoDealB1st() {
 		MassGi_utils.do_tutorialIntoDealB1st();
-		App.show_poor_def_msg = true;
 		App.gbp.matchPanelsToDealState();
 		// App.frame.repaint();
 	}

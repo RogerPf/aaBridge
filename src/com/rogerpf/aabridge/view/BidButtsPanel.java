@@ -24,6 +24,7 @@ import javax.swing.JButton;
 import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Bid;
 import com.rogerpf.aabridge.model.Call;
@@ -45,6 +46,7 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 	Suit halfBidSuit = Suit.Invalid;
 	boolean halfBidAlert = false;
 
+	JButton passBtn;
 	JButton doubleBtn;
 	JButton redoubleBtn;
 	JButton suitBtn[] = new JButton[5];
@@ -61,35 +63,40 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 
 		// this.greenBackground = greenBackground;
 
-		Font cardFaceFont = BridgeFonts.faceAndSymbFont.deriveFont(24f);
-		Font bridgeBoldFont = BridgeFonts.bridgeBoldFont.deriveFont(20f);
+		Font suitSymbolFont = BridgeFonts.faceAndSymbolFont.deriveFont(24f);
+		Font cardFaceFont = BridgeFonts.faceAndSymbolFont.deriveFont(24f);
+		Font interBoldFont = BridgeFonts.internatBoldFont.deriveFont(20f);
 
 		RpfResizeButton b;
 
-		b = new RpfResizeButton(Aaa.s_SelfCmd, Call.Pass.toBidPanelString(), -2, 20, 0.75f);
+		b = new RpfResizeButton(Aaa.s_SelfCmd, Aaf.game_pass, -2, 20, 0.75f);
 		b.addActionListener(this);
-		b.setFont(bridgeBoldFont);
+		b.setFont(interBoldFont);
 		b.setHoverColor(Cc.GreenStrong);
 		b.setBackground(Aaa.passButtonColor);
 		b.setForeground(Color.WHITE);
+		b.setActionCommand("p");
 		add(b, "span 2");
+		passBtn = b;
 
-		b = new RpfResizeButton(Aaa.s_SelfCmd, Call.Double.toBidPanelString(), -2, 20, 0.75f);
+		b = new RpfResizeButton(Aaa.s_SelfCmd, "X", -2, 20, 0.70f);
 		b.addActionListener(this);
-		b.setFont(bridgeBoldFont);
+		b.setFont(interBoldFont);
 		b.setHoverColor(Cc.RedStrong);
 		b.setBackground(Aaa.dblButtonColor);
 		b.setForeground(Color.WHITE);
+		b.setActionCommand("x");
 		add(b, "hidemode 2, span 2");
 		doubleBtn = b;
 		doubleBtn.setVisible(false);
 
-		b = new RpfResizeButton(Aaa.s_SelfCmd, Call.ReDouble.toBidPanelString(), -3, 20, 0.75f);
+		b = new RpfResizeButton(Aaa.s_SelfCmd, "XX", -2, 20, 0.70f);
 		b.addActionListener(this);
-		b.setFont(bridgeBoldFont);
+		b.setFont(interBoldFont);
 		b.setHoverColor(Cc.BlueStrong);
 		b.setBackground(Aaa.redblButtonColor);
 		b.setForeground(Color.WHITE);
+		b.setActionCommand("r");
 		add(b, "hidemode 2, span 3, wrap");
 		redoubleBtn = b;
 		redoubleBtn.setVisible(false);
@@ -105,16 +112,29 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 			levelBtn[i] = b;
 		}
 
-		for (Suit su : Suit.fiveDenoms) {
-			int i = su.v;
-			b = new RpfResizeButton(Aaa.s_SelfCmd, su.toStrNu(), ((i == 4) ? -2 : -1), 20);
+		for (Suit su : Suit.cdhs) {
+			b = new RpfResizeButton(Aaa.s_SelfCmd, su.toStrLower(), -1, 20);
 			b.addActionListener(this);
 			b.setHoverColor(Aaa.strongHoverColor);
 			b.setBackground(Aaa.buttonBkgColorStd);
 			b.setForeground(su.color(Cc.Ce.Strong));
-			b.setFont(cardFaceFont);
-			add(b, ((i == 4) ? "span 2" : ""));
-			suitBtn[i] = b;
+			b.setFont(suitSymbolFont);
+			b.suit_symbol = true;
+			add(b);
+			suitBtn[su.v] = b;
+		}
+
+		{
+			Suit su = Suit.NoTrumps;
+			b = new RpfResizeButton(Aaa.s_SelfCmd, Aaf.game_nt, -2, 20);
+			b.addActionListener(this);
+			b.setHoverColor(Aaa.strongHoverColor);
+			b.setBackground(Aaa.buttonBkgColorStd);
+			b.setForeground(su.color(Cc.Ce.Strong));
+			b.setFont(interBoldFont);
+			b.setActionCommand("n");
+			add(b, "span 2");
+			suitBtn[su.v] = b;
 		}
 
 		{
@@ -123,7 +143,7 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 			b.setHoverColor(Aaa.strongHoverColor);
 			b.setBackground(Aaa.buttonBkgColorStd);
 			b.setForeground(Cc.RedStrong);
-			b.setFont(bridgeBoldFont);
+			b.setFont(interBoldFont);
 			b.setToolTipText("Alert");
 			add(b, "");
 			alertBtn = b;
@@ -231,33 +251,54 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 //			return;
 
 		String a = e.getActionCommand();
+
 		int cmd = 0;
-		for (Call call : Call.threeCalls) {
-			if (a.contentEquals(call.toBidPanelString())) {
-				cmd = Aaa.CMD_CALL | call.v;
-				break;
-			}
+		boolean found = false;
+
+		if (a.contentEquals("p")) {
+			cmd = Aaa.CMD_CALL | Call.Pass.v;
+			found = true;
 		}
 
-		if (cmd == 0) {
+		else if (a.contentEquals("x")) {
+			cmd = Aaa.CMD_CALL | Call.Double.v;
+			found = true;
+		}
+
+		else if (a.contentEquals("r")) {
+			cmd = Aaa.CMD_CALL | Call.ReDouble.v;
+			found = true;
+		}
+
+		else if (a.contentEquals("n")) {
+			setHalfBidSuit(Suit.NoTrumps);
+			found = true;
+		}
+
+		if (!found) {
 			for (int i = 1; i <= 7; i++) {
 				if (a.equals(Character.toString((char) (i + '0')))) { // ugly
 					setHalfBidLevel(Level.levelFromInt(i));
+					found = true;
 					break;
-				}
-			}
-			for (Suit su : Suit.fiveDenoms) {
-				if (a.contentEquals(su.toStrNu())) {
-					setHalfBidSuit(su);
-					break;
-				}
-			}
-			{
-				if (a == "!") {
-					setHalfBidAlert();
 				}
 			}
 		}
+
+		if (!found) {
+			for (Suit su : Suit.cdhs) {
+				if (a.contentEquals(su.toStrLower())) {
+					setHalfBidSuit(su);
+					found = true;
+					break;
+				}
+			}
+		}
+
+		if (!found && a == "!") {
+			setHalfBidAlert();
+		}
+
 		// we can now process it as if it was a key Command
 		keyCommand(cmd);
 	}

@@ -43,13 +43,13 @@ public enum Call { // => a Call enum
 	}
 
 	//@formatter:off
-	private final static String[] call_to_bid_panel_string = { "-", "Pass", "Dbl", "ReDbl", "RealBid" };
+	private final static String[] call_to_bid_panel_string = { "-", "Pass", "X",   "XX",    "RealBid" };
 	private final static String[] call_to_string_short     = { "",  "P",    "*",   "**",    "RealBid" };
 	private final static String[] call_to_cmd_string       = { "",  "p",    "*",   "r",     "RealBid" };
 	private final static String[] call_to_lin_string       = { "",  "p",    "d",   "r",     "RealBid" };
 
-	public  static Call threeCalls[] = {          Pass, Double, ReDouble          };
-	private static Call instAy[]     = { NullBid, Pass, Double, ReDouble, RealBid };
+	public  static Call twoCalls[] = {                Double, ReDouble };
+	private static Call instAy[]   = { NullBid, Pass, Double, ReDouble, RealBid };
 	//@formatter:on
 
 	public final int v;

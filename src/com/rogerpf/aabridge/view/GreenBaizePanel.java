@@ -17,6 +17,7 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Dir;
 import com.rogerpf.aabridge.model.Hand;
@@ -191,8 +192,7 @@ public class GreenBaizePanel extends ClickPanel {
 			c1_1__empt.setVisible(false);
 			c1_1__bfdp.setVisible(false);
 			c1_1__tfdp.setVisible(false);
-			c1_1__mdp.textArea.setText("Drag and Drop the cards from\none hand to another.\n"
-					+ "First, for all hands, move ALL\nthe spades, ONLY THEN\nstart on the hearts ...");
+			c1_1__mdp.textArea.setText(Aaf.instruct_edit);
 			c1_1__mdp.setVisible(true);
 
 			c2_0__btpBlank.setVisible(alwaysShowBlank);

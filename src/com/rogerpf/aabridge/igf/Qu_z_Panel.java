@@ -20,6 +20,7 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.controller.CmdHandler;
 import com.rogerpf.aabridge.model.Cc;
@@ -41,6 +42,7 @@ public class Qu_z_Panel extends JPanel {
 	Qu_z_AnsBoxPanel qaboxp;
 	QuTellMePanel tmep;
 	Qu_z_CFlowPanel cFlowp;
+	Qu_z_CTmePanel cTmep;
 	Qu_z_NewPanelT newpT;
 	Qu_z_NewPanelE newpE;
 	Qu_z_NewAndTellPanel newAndTellp;
@@ -61,6 +63,7 @@ public class Qu_z_Panel extends JPanel {
 		qbutsp = new QuAskButtsPanel();
 		tmep = new QuTellMePanel();
 		cFlowp = new Qu_z_CFlowPanel();
+		cTmep = new Qu_z_CTmePanel();
 		newpT = new Qu_z_NewPanelT();
 		newpE = new Qu_z_NewPanelE();
 		newAndTellp = new Qu_z_NewAndTellPanel();
@@ -78,6 +81,7 @@ public class Qu_z_Panel extends JPanel {
 		qbutsp.fillButtonsWithAnswers();
 
 		add(cFlowp, App.hm3oneHun + ", cell 0 2");
+		add(cTmep, App.hm3oneHun + ", cell 0 2");
 		add(qaboxp, App.hm0oneHun + ", cell 0 0, spanx, center");
 		qaboxp.matchToQuestion(t);
 		add(qvidp, App.hm0oneHun + ", cell 0 1, spanx, left, split3, gap 2%, width 15%, flowx");
@@ -92,10 +96,12 @@ public class Qu_z_Panel extends JPanel {
 			add(tmep, App.hm0oneHun + ", cell 2 2");
 			add(newAndTellp, App.hm0oneHun + ", cell 3 2");
 			cFlowp.setVisible(false);
+			cTmep.setVisible(App.dfcAutoNext == 3 ? false : true);
 			newpT.setVisible(App.dfcAutoNext == 3);
 			newAndTellp.setVisible(App.dfcAutoNext == 3);
 		}
 		else if (t == '1') { // DFC Exam
+			cTmep.setVisible(false);
 			cFlowp.setVisible(true);
 			add(newpE, App.hm0oneHun + ", cell 3 2");
 			newpE.setVisible(true);
@@ -249,11 +255,33 @@ class Qu_z_CFlowPanel extends JPanel {
 	 */
 	Qu_z_CFlowPanel() { /* Constructor */
 		// ============================================================================
-		setLayout(new MigLayout(App.simple, "[]", "5%[center]5%"));
+		setLayout(new MigLayout(App.simple, "[]", "2%[center]5%"));
 
 		setOpaque(false);
 
-		RpfResizeButton b = new RpfResizeButton(Aaa.s_SelfLabel, "                     Keep clicking   Flow", 15, 15, 0.7f);
+		RpfResizeButton b = new RpfResizeButton(Aaa.s_SelfLabel, "               " + Aaf.gT("quest.kcFlow"), 15, 15, 0.7f);
+		b.addActionListener(App.con);
+		add(b, App.hm1oneHun);
+	}
+
+}
+
+/**   
+ */
+class Qu_z_CTmePanel extends JPanel {
+	// ---------------------------------- CLASS -------------------------------------
+
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 */
+	Qu_z_CTmePanel() { /* Constructor */
+		// ============================================================================
+		setLayout(new MigLayout(App.simple, "[]", "2%[center]5%"));
+
+		setOpaque(false);
+
+		RpfResizeButton b = new RpfResizeButton(Aaa.s_SelfLabel, "             " + Aaf.gT("quest.kcTellMe"), 15, 15, 0.7f);
 		b.addActionListener(App.con);
 		add(b, App.hm1oneHun);
 	}
@@ -341,11 +369,15 @@ class Qu_z_VideoPanel extends JPanel {
 		setOpaque(false);
 
 		RpfResizeButton b;
-		b = new RpfResizeButton(Aaa.s_Std, "question_z_Video", 20, 15, 0.65f);
-		add(b, App.hm1oneHun);
 
 		b = new RpfResizeButton(Aaa.s_Std, "question_z_Learn", 20, 15, 0.65f);
+		b.setForeground(Cc.BlueStrong);
 		add(b, App.hm1oneHun);
+
+		b = new RpfResizeButton(Aaa.s_Std, "question_z_Video", 20, 15, 0.70f);
+		b.setForeground(Cc.RedStrong);
+		add(b, App.hm1oneHun);
+
 	}
 }
 
@@ -397,6 +429,12 @@ class Qu_z_TrainExamPanel extends JPanel implements ActionListener {
 		exam_b.addActionListener(this);
 		add(exam_b, App.hm1oneHun);
 
+		train_b.setSelectedBackground(Aaa.tutorialBackground);
+		exam_b.setSelectedBackground(Aaa.tutorialBackground);
+
+		train_b.setBackground(Aaa.trainExamUnSelectedBackground);
+		exam_b.setBackground(Aaa.trainExamUnSelectedBackground);
+
 		applyButtonVisiblity();
 	}
 
@@ -409,7 +447,7 @@ class Qu_z_TrainExamPanel extends JPanel implements ActionListener {
 
 		train_b.changeType(!App.lbx_modeExam ? Aaa.m_Label : Aaa.m_Std );
 		exam_b .changeType( App.lbx_modeExam ? Aaa.m_Label : Aaa.m_Std );
-		
+
 		// @formatter:on
 	}
 

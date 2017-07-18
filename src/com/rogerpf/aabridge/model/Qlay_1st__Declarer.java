@@ -116,10 +116,10 @@ public class Qlay_1st__Declarer {
 
 		if (card == null) {
 
-			// We are out of Stratergy Steps, so we default to a 'reasonable tactic'
+			// We are out of Strategy Steps, so we default to a 'reasonable tactic'
 
 			if (g.trumpContract) { // we are onlead in OUR own SUIT contract (so never to the 1st trick)
-				// Primary stratergy is to draw trumps
+				// Primary strategy is to draw trumps
 				if (g.outstandingTrumps == 0 || (g.outstandingTrumps == 1 && g.isTopOutstandingTrumpMaster)) {
 					; // card is still null
 				}

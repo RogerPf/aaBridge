@@ -21,6 +21,7 @@ import javax.swing.border.Border;
 import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 
 /**   
@@ -41,48 +42,59 @@ class AaRopPrefs6_RedHints extends ClickPanel implements ItemListener, ActionLis
 	QCheckBox showRedVuGraphArrow;
 	QCheckBox showDfcExamHlt;
 
+	QCheckBox showPoorDefHint;
+	QCheckBox showContNeededHint;
+
 	QButton applyDefaults;
 
 	public AaRopPrefs6_RedHints() {
 		setOpaque(true); // remember - we derive from ClickPanel which is setOpaque(false)
-//		setBackground(SystemColor.control);
 
 		setLayout(new MigLayout(App.simple + ", flowy"));
 
 		Border bdr4 = BorderFactory.createEmptyBorder(1, 4, 1, 4);
 
 		// @formatter:off
-		add(anyLabel  = new QLabel("  Red Hints              -  Hide or Show"), "gapy 5");
+		add(anyLabel  = new QLabel(Aaf.menuOpt_red_D), "gapy 5");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
 		
-		add(showMouseWheelSplash = new QCheckBox(this, App.showMouseWheelSplash, "'Wheel Mouse' hint   "), "gapy 8");
+		add(showMouseWheelSplash = new QCheckBox(this, App.showMouseWheelSplash, Aaf.gT("redHintsTab.wheel")), "gapy 8");
 		    showMouseWheelSplash.setBorder(bdr4);
 
-		add(anyLabel = new QLabel("Prompts - Show the . . ."), "gapy 18");
+		add(anyLabel = new QLabel(Aaf.gT("redHintsTab.prompts")), "gapy 18");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
 
-		add(showBidPlayMsgs     = new QCheckBox(this, App.showBidPlayMsgs,     "'Bid' and 'Play' prompt messages   "), "gapy 3");
+		add(showBidPlayMsgs     = new QCheckBox(this, App.showBidPlayMsgs,       Aaf.gT("redHintsTab.bidAnd")), "gapy 3");
         showBidPlayMsgs.setBorder(bdr4);
 
-		add(anyLabel  = new QLabel("Red Arrows"), "gapy 18");
+		add(anyLabel  = new QLabel("Red Arrows"), "gapy 20");
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
 
-		add(showRedNewBoardArrow = new QCheckBox(this, App.showRedNewBoardArrow, "'Click  New Board' hint   "), "gapy 3");
+		add(showRedNewBoardArrow = new QCheckBox(this, App.showRedNewBoardArrow, Aaf.gT("redHintsTab.newBoard")), "gapy 3");
 			showRedNewBoardArrow.setBorder(bdr4);
-		add(showRedVuGraphArrow = new QCheckBox(this, App.showRedVuGraphArrow, "'Extra Bar 4 Clickalbe Columns' hint   "));
+		add(showRedVuGraphArrow = new QCheckBox(this, App.showRedVuGraphArrow,   Aaf.gT("redHintsTab.vugraph")));
 	        showRedVuGraphArrow.setBorder(bdr4);
-		add(showRedEditArrow    = new QCheckBox(this, App.showRedEditArrow,    "'Edit button usage' hint   "));
+	        
+		add(showRedEditArrow    = new QCheckBox(this, App.showRedEditArrow,      Aaf.gT("redHintsTab.edit")));
 		    showRedEditArrow.setBorder(bdr4);
-		add(showRedDividerArrow = new QCheckBox(this, App.showRedDividerArrow, "'Drag Divider...' hint   "));
+		add(showRedDividerArrow = new QCheckBox(this, App.showRedDividerArrow,   Aaf.gT("redHintsTab.divider")));
 		    showRedDividerArrow.setBorder(bdr4);
 
-		add(anyLabel  = new QLabel("Red Border"), "gapy 18");
+		add(anyLabel  = new QLabel(Aaf.gT("redHintsTab.redBorder")), "gapy 20");
 			anyLabel.setForeground(Aaa.optionsTitleGreen);
-		add(showDfcExamHlt      = new QCheckBox(this, App.showDfcExamHlt,      "DFC  Exam btn border  highlight   "), "gapy 3");
+		add(showDfcExamHlt      = new QCheckBox(this, App.showDfcExamHlt,        Aaf.gT("redHintsTab.exam")), "gapy 3");
 		    showDfcExamHlt.setBorder(bdr4);
 
+		add(anyLabel = new QLabel(Aaf.gT("redHintsTab.guidance")), "gapy 20");
+			anyLabel.setForeground(Aaa.optionsTitleGreen);
+			
+		add(showPoorDefHint     = new QCheckBox(this, App.showPoorDefHint,    Aaf.gT("redHintsTab.poorDef")), "gapy 3");
+		    showPoorDefHint.setBorder(bdr4);
+		add(showContNeededHint  = new QCheckBox(this, App.showContNeededHint, Aaf.gT("redHintsTab.contract")), "gapy 3");
+		    showContNeededHint.setBorder(bdr4);
+
 		anyLabel.setForeground(Aaa.optionsTitleGreen);
-		add(applyDefaults = new QButton(this, "Apply Defaults"), "gapy20, gapx4");
+		add(applyDefaults = new QButton(this, Aaf.gT("cmnTab.applyDef")), "gapy20, gapx4");
 		if (App.onMac == false)
 			applyDefaults.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
 		// @formatter:on
@@ -101,6 +113,8 @@ class AaRopPrefs6_RedHints extends ClickPanel implements ItemListener, ActionLis
 			App.showRedEditArrow = true;
 			App.showRedDividerArrow = false;
 			App.showDfcExamHlt = true;
+			App.showPoorDefHint = true;
+			App.showPoorDefHint = true;
 
 			showMouseWheelSplash.setSelected(App.showMouseWheelSplash);
 			showBidPlayMsgs.setSelected(App.showBidPlayMsgs);
@@ -109,6 +123,8 @@ class AaRopPrefs6_RedHints extends ClickPanel implements ItemListener, ActionLis
 			showRedEditArrow.setSelected(App.showRedEditArrow);
 			showRedDividerArrow.setSelected(App.showRedDividerArrow);
 			showDfcExamHlt.setSelected(App.showDfcExamHlt);
+			showPoorDefHint.setSelected(App.showPoorDefHint);
+			showPoorDefHint.setSelected(App.showPoorDefHint);
 		}
 	}
 
@@ -141,6 +157,12 @@ class AaRopPrefs6_RedHints extends ClickPanel implements ItemListener, ActionLis
         }
 		else if (source == showBidPlayMsgs) {
             App.showBidPlayMsgs = b;
+        }
+		else if (source == showPoorDefHint) {
+            App.showPoorDefHint = b;
+        }
+		else if (source == showContNeededHint) {
+            App.showContNeededHint = b;
         }
 
 		if (App.allConstructionComplete) {

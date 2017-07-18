@@ -39,6 +39,7 @@ import javax.swing.Timer;
 import net.miginfocom.swing.MigLayout;
 
 import com.rogerpf.aabridge.controller.Aaa;
+import com.rogerpf.aabridge.controller.Aaf;
 import com.rogerpf.aabridge.controller.App;
 import com.rogerpf.aabridge.model.Bal;
 import com.rogerpf.aabridge.model.Bid;
@@ -61,7 +62,7 @@ public class BidTablePanel extends ClickPanel { /* Constructor */
 
 	BidTablePanelHeader btph;
 	JScrollPane scroller;
-	BidTablePanel2 btp2;
+	public BidTablePanel2 btp2;
 
 	/**
 	 */
@@ -190,6 +191,10 @@ public class BidTablePanel extends ClickPanel { /* Constructor */
 		btp2.displayFinalAnotation(showIt);
 	}
 
+	public void AlertDisplaySet(boolean b) {
+		btp2.lastBidAlertDisplay = b;
+	}
+
 }
 
 /**   
@@ -232,12 +237,12 @@ class BidTablePanelHeader extends ClickPanel {
 		float width = (float) getWidth();
 		float height = (float) getHeight();
 
-		g2.setFont(BridgeFonts.bridgeLightFont.deriveFont(height * 0.8f));
+		g2.setFont(BridgeFonts.internationalFont.deriveFont(height * 0.78f));
 
 		float xBlk = 0;
 		float sep = width * 0.24f * 4 / deal.columnsInBidTable;
 		float x = width * 0.04f;
-		float y = height * (1 - 0.17f);
+		float y = height * (1 - 0.20f);
 		int c = 0;
 		int i = -1;
 		for (Hand hand : deal.rota[App.cpeFromPhyScreenPos(Dir.West).v]) {
@@ -248,7 +253,7 @@ class BidTablePanelHeader extends ClickPanel {
 			g2.setColor((vun) ? Aaa.vulnerableColor : Aaa.handAreaOffWhite);
 			g2.fill(new Rectangle2D.Float(xBlk, 0, sep + 0.5f + ((++c == 4) ? 100 : 0), height));
 			g2.setColor((vun) ? Aaa.handAreaOffWhite : Aaa.weedyBlack);
-			String text = (deal.columnsInBidTable == 2 ? hand.compass.toOpenResp() : hand.compass.toLongStr());
+			String text = (deal.columnsInBidTable == 2 ? hand.compass.toOpenResp() : Dir.getLangDirStr(hand.compass));
 			g2.drawString(text, x, y);
 			xBlk += sep;
 			x += sep;
@@ -480,12 +485,15 @@ class BidTablePanel2 extends ClickPanel implements MouseListener, MouseMotionLis
 		x = 0;
 		y = 0;
 
-		Font cardFaceFont = BridgeFonts.faceAndSymbFont.deriveFont(lineHeight * 0.80f);
-		Font suitSymbolsFont = BridgeFonts.faceAndSymbFont.deriveFont(lineHeight * 0.80f);
-		Font stdTextFont = BridgeFonts.bridgeLightFont.deriveFont(lineHeight * 0.6f);
-		Font alertFont = BridgeFonts.bridgeBoldFont.deriveFont(lineHeight * 0.75f);
-		Font alertSymbolsFont = BridgeFonts.faceAndSymbFont.deriveFont(lineHeight * 0.75f);
-		Font doubleRedoubleFont = BridgeFonts.bridgeBoldFont.deriveFont(lineHeight * 0.75f);
+		Font cardFaceFont = BridgeFonts.faceAndSymbolFont.deriveFont(lineHeight * 0.80f);
+		Font suitSymbolsFont = BridgeFonts.faceAndSymbolFont.deriveFont(lineHeight * 0.80f);
+		Font ntFont = BridgeFonts.internatBoldFont.deriveFont(lineHeight * 0.65f);
+
+		Font passFont = BridgeFonts.internationalFont.deriveFont(lineHeight * 0.5f);
+		Font symbolsFont = BridgeFonts.faceAndSymbolFont.deriveFont(lineHeight * 0.75f);
+		Font doubleRedoubleFont = BridgeFonts.internatBoldFont.deriveFont(lineHeight * 0.75f);
+
+		Font alertFont = BridgeFonts.internatBoldFont.deriveFont(lineHeight * 0.75f);
 
 		int cell = ((4 + dealer.v - App.cpeFromPhyScreenPos(Dir.West).v) % 4) - 1;
 
@@ -559,23 +567,32 @@ class BidTablePanel2 extends ClickPanel implements MouseListener, MouseMotionLis
 						g2.draw(bid.rr2dBid);
 					}
 
-					if (bid.isPass()) {
-						g2.setColor(Aaa.weedyBlack);
-						x += lineHeight * 0.40f;
-						g2.setFont(stdTextFont);
-						g2.drawString(bid.call.toBidPanelString(), x, y);
-					}
-					else if (bid.isNullBid()) { // used by us to show a question mark
+					if (bid.isNullBid()) { // used by us to show a question mark
 						g2.setColor(floating ? Color.black : Cc.g(Cc.blackWeak));
 						x += lineHeight * 0.40f;
 						g2.setFont(doubleRedoubleFont);
 						g2.drawString("  ?", x, y);
 					}
-					else if (bid.isCall()) { // i.e. PASS DOUBLE or REDOUBLE
-						g2.setColor(floating ? Color.black : (bid.isPass() ? Aaa.weedyBlack : Cc.g(Cc.blackWeak)));
+					else if (bid.isPass()) {
+						g2.setColor(Aaa.weedyBlack);
+						x += lineHeight * 0.40f;
+						g2.setFont(passFont);
+						float adj = lineHeight * 0.2f;
+						g2.drawString(Aaf.game_pass, x + adj, y - lineHeight * 0.12f);
+					}
+					else if (bid.isDouble()) { // i.e. DOUBLE or REDOUBLE
+						g2.setColor(floating ? Color.black : Cc.g(Cc.blackWeak));
 						x += lineHeight * 0.40f;
 						g2.setFont(doubleRedoubleFont);
-						g2.drawString(bid.call.toBidPanelString(), x, y);
+						float adj = lineHeight * 0.5f;
+						g2.drawString("X", x + adj, y);
+					}
+					else if (bid.isReDouble()) { // i.e. DOUBLE or REDOUBLE
+						g2.setColor(floating ? Color.black : Cc.g(Cc.blackWeak));
+						x += lineHeight * 0.40f;
+						g2.setFont(doubleRedoubleFont);
+						float adj = lineHeight * 0.25f;
+						g2.drawString("XX", x + adj, y);
 					}
 					else { // Normal suit and NT bids
 						x += lineHeight * 0.50f;
@@ -585,8 +602,14 @@ class BidTablePanel2 extends ClickPanel implements MouseListener, MouseMotionLis
 
 						x += lineHeight * 0.50f;
 						g2.setColor(bid.suit.color(floating ? Cc.Ce.Strong : Cc.Ce.Weak));
-						g2.setFont(suitSymbolsFont);
-						g2.drawString(bid.suit.toStrNu(), x, y);
+						if (bid.suit == Suit.NoTrumps) {
+							g2.setFont(ntFont);
+							g2.drawString(Aaf.game_nt, x, y);
+						}
+						else {
+							g2.setFont(suitSymbolsFont);
+							g2.drawString(bid.suit.toStrLower(), x, y);
+						}
 					}
 				}
 			}
@@ -654,7 +677,6 @@ class BidTablePanel2 extends ClickPanel implements MouseListener, MouseMotionLis
 				}
 
 				String sIn = bid.alertText;
-				sIn = sIn.trim();
 				String sTemp = sIn.replace("@", "");
 				if (sTemp.length() <= 7) {
 					if (sTemp.length() < 3) {
@@ -690,7 +712,7 @@ class BidTablePanel2 extends ClickPanel implements MouseListener, MouseMotionLis
 					if (suit == Suit.Invalid)
 						continue;
 
-					astr.addAttribute(TextAttribute.FONT, alertSymbolsFont, j - 1, j);
+					astr.addAttribute(TextAttribute.FONT, symbolsFont, j - 1, j);
 					astr.addAttribute(TextAttribute.FOREGROUND, suit.color(Cc.Ce.Strong), j - 1, j);
 				}
 

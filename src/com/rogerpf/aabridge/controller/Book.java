@@ -11,7 +11,6 @@
 package com.rogerpf.aabridge.controller;
 
 import java.io.File;
-import java.net.URL;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -39,11 +38,13 @@ public class Book extends ArrayList<Book.LinChapter> {
 
 	public int lastChapterIndexLoaded = -1;
 
+	public boolean displayTitle_is_langSpecific = false;
+
 	int frontNumber = 0;
 
 	public class LinChapter {
 		// ---------------------------------- CLASS -------------------------------------
-		Book book;
+		public Book book;
 		char type;
 		String parentOrJar;
 		public String filenamePlus;
@@ -52,9 +53,15 @@ public class Book extends ArrayList<Book.LinChapter> {
 		public String displayNoNumb;
 		public String displayNoUscore;
 		public int index;
+		public boolean langSpecific;
 
 		public String getName() {
 			return displayNoUscore;
+		}
+
+		public Boolean isEditable() {
+			// System.out.println(filename + "  " + type + "  " + "  ");
+			return type == 'f';
 		}
 
 		public LinChapter(Book book, char type, String base, String filenameIn) { // Constructor
@@ -65,13 +72,28 @@ public class Book extends ArrayList<Book.LinChapter> {
 			filenamePlus = filenameIn;
 			String s = filenameIn;
 
+			langSpecific = false;
+
 			int sl = s.lastIndexOf('/'); // always "/" never sep
 			if (sl > -1) {
 				s = s.substring(sl + 1);
 			}
 			filename = s;
+
+//			System.out.println("const chap: " + type + "   " + filename);
+
 			assert (s.toLowerCase().endsWith(".lin") || s.toLowerCase().endsWith(".pbn"));
-			s = s.substring(0, s.length() - 4); // it always ends with .lin
+			s = s.substring(0, s.length() - 4);
+
+			String langDisplay = "";
+
+			int ind = s.indexOf("__" + Aaf.iso_lang_active + "__");
+			if (ind > -1) {
+				langSpecific = true;
+				langDisplay = (s.substring(ind + 8)).replace('_', ' ').trim();
+				s = s.substring(0, ind);
+			}
+
 			displayNoExt = s = s.trim();
 
 			int i = 0;
@@ -88,6 +110,11 @@ public class Book extends ArrayList<Book.LinChapter> {
 			}
 			s = s.replace('_', ' ');
 			displayNoUscore = s = s.trim();
+
+			if (!langDisplay.isEmpty())
+				displayNoUscore = langDisplay;
+
+//			System.out.println("add chap: " + filename);
 
 			add(this);
 		}
@@ -152,6 +179,8 @@ public class Book extends ArrayList<Book.LinChapter> {
 			// ==============================================================================================
 			Boolean success = false;
 
+//			App.handPanelNameAreaInfoNumbersShow = true;
+
 			App.flowOnlyCommandBar = false;
 			App.hideCommandBar = false; // only set true by the lbx (distr Flash cards question special)
 			App.hideTutNavigationBar = false; // only set true by the lbx (distr Flash cards question special)
@@ -159,13 +188,17 @@ public class Book extends ArrayList<Book.LinChapter> {
 //  			App.allTwister_reset();
 //			}
 
+			// the loaders use this to save history so we do it in advance
+			LinChapter prev_load = App.lastLoadedChapter;
+			App.lastLoadedChapter = this;
+
 			if (type == 'r') {
 				success = BridgeLoader.readLinOrPbnResourseIfExists(bookJarName, filenamePlus);
 				App.debug_pathlastLinLoaded = "";
 			}
 
 			if (type == 'f') {
-				success = BridgeLoader.readLinOrPbnFileIfExists(bookFolderName, filenamePlus);
+				success = BridgeLoader.readLinOrPbnFileIfExists(bookFolderName, filenamePlus, bookFolderName);
 				App.debug_pathlastLinLoaded = book.bookFolderName + filename;
 			}
 
@@ -173,6 +206,12 @@ public class Book extends ArrayList<Book.LinChapter> {
 				lastChapterIndexLoaded = index;
 				setTitleBookStyle();
 				App.biddingVisibilityCheck();
+
+//				App.history.histRecordChange( "chap_load");
+			}
+			else {
+				// if the failed replace the chapter name
+				App.lastLoadedChapter = prev_load;
 			}
 
 			return success;
@@ -187,6 +226,8 @@ public class Book extends ArrayList<Book.LinChapter> {
 			boolean loaded = load();
 
 			if (loaded) {
+				App.lastLoadedChapter = this;
+
 				App.book = Book.this;
 				if (replace.contentEquals("replaceBookPanel")) {
 					App.aaBookPanel.matchToAppBook();
@@ -205,6 +246,7 @@ public class Book extends ArrayList<Book.LinChapter> {
 				App.mg.mruChap = App.mruCollection.createMatchingMru(type, srcName, filenamePlus, displayNoUscore, prev_pg_numb);
 
 				App.ddsScoreShow = false;
+				App.tutRotate = 0;
 
 				App.gbp.c1_1__tfdp.clearAllCardSuggestions(); // DIRTY nasty way to do things - its a bug fix - no excuse
 
@@ -273,23 +315,22 @@ public class Book extends ArrayList<Book.LinChapter> {
 //			}
 		}
 
-		if (basePath.isEmpty()) {
-
-			assert (false); // I don't think we EVER have an empty book path now (since having bookshelf)
-
-			URL locationMethodUrl = AaBridge.class.getProtectionDomain().getCodeSource().getLocation();
-			File locMethodFile = null;
-			try {
-				locMethodFile = new File(locationMethodUrl.toURI());
-			} catch (Exception e1) {
-				String s = "book (cons) - locationMethodUrl FAILED  help! - " + e1.getMessage();
-				System.out.println(s);
-				return;
-			}
-
-			if (basePath.toLowerCase().endsWith(".jar") == false)
-				basePath = locMethodFile.getPath() + sep + shelfname;
-		}
+//		if (basePath.isEmpty()) {
+//
+//			assert (false); // I don't think we EVER have an empty book path now (since having bookshelves)
+//
+//			URL locationMethodUrl = AaBridge.class.getProtectionDomain().getCodeSource().getLocation();
+//			File locMethodFile = null;
+//			try {
+//				locMethodFile = new File(locationMethodUrl.toURI());
+//			} catch (Exception e1) {
+//				System.out.println("book (cons) - locationMethodUrl FAILED  help! - " + e1.getMessage());
+//				return;
+//			}
+//
+//			if (basePath.toLowerCase().endsWith(".jar") == false)
+//				basePath = locMethodFile.getPath() + sep + shelfname;
+//		}
 
 		/** for basic testing only
 		 */
@@ -313,7 +354,7 @@ public class Book extends ArrayList<Book.LinChapter> {
 
 			// We are running in a .jar on either windows, mac or linux or ...
 
-			Pattern pattern = Pattern.compile(bookJarExtra + ".*[.lin|.title|.reldate]");
+			Pattern pattern = Pattern.compile(bookJarExtra + ".*[.lin|book_title|.reldate]");
 
 			ArrayList<String> ret = (ArrayList<String>) ResourceList.getResourcesFromJarFile(jarFile, pattern);
 
@@ -334,14 +375,74 @@ public class Book extends ArrayList<Book.LinChapter> {
 				}
 			}
 
-			// parse each of the files realy for the .lin files
+			// parse each of the files really for the .lin files
 			if (process_as_normal) {
-				for (String sFile : ret) {
-					if (sFile.toLowerCase().endsWith(".title"))
-						setDisplayTitle(sFile, "/");
 
-					if (sFile.toLowerCase().endsWith(".lin") || sFile.toLowerCase().endsWith(".pbn")) {
+				for (String sFile : ret) {
+					String low = sFile.toLowerCase();
+
+					if (low.contains("__macosx"))
+						continue;
+
+					if (low.endsWith("book_title"))
+						setDisplayTitle(sFile, "/", sFile, 'r');
+
+					if (low.endsWith(".lin") || low.endsWith(".pbn")) {
+
+						if (App.showAllLangLin == false) {
+
+							boolean ans[] = new boolean[2];
+							String searchName = Aaf.has_iso_lang(sFile, ans, "/");
+							boolean new_specificLang = ans[0];
+							boolean new_activeLang = ans[1];
+
+							if (new_specificLang && !new_activeLang)
+								continue; // skip this one not a language we are currently interesting in
+
+							LinChapter existing = this.getChapterByDisplayNamePart(searchName);
+							if (existing != null) {
+								if (new_specificLang && existing.langSpecific == false) {
+									this.remove(existing.index);
+								}
+								else {
+									System.out.println("Clash - lin file name clash - may have language set:  " + sFile + "       " + existing.filenamePlus);
+								}
+							}
+						}
 						new LinChapter(this, 'r', bookJarName, sFile);
+					}
+				}
+
+				for (String sFile : ret) {
+					String low = sFile.toLowerCase();
+
+					if (App.showAllLangLin)
+						continue; // this 2nd parse causes double entries when showing all
+
+					if (low.contains("__macosx"))
+						continue;
+
+					if (low.endsWith("book_title"))
+						setDisplayTitle(sFile, "/", sFile, 'r');
+
+					if (App.showAllLangLin == false && (low.endsWith(".lin_title") || low.endsWith(".pbn_title"))) {
+
+						boolean ans[] = new boolean[2];
+						String searchName = Aaf.has_iso_lang(sFile, ans, "/");
+						boolean new_specificLang = ans[0];
+						boolean new_activeLang = ans[1];
+
+						if (new_specificLang && !new_activeLang)
+							continue; // skip this one not a language we are currently interesting in
+
+						LinChapter existing = this.getChapterByDisplayNamePart(searchName);
+						if (existing == null)
+							continue;
+
+						String s = Aaf.readfirstlineOfFileOrRes(sFile, basePathIn, 'r');
+						if (s.trim().length() > 1) {
+							existing.displayNoUscore = s;
+						}
 					}
 				}
 			}
@@ -362,13 +463,13 @@ public class Book extends ArrayList<Book.LinChapter> {
 			}
 
 			if (displayTitle.isEmpty())
-				setDisplayTitle(bookJarExtra, "/");
+				setDisplayTitle(bookJarExtra, "/", bookJarExtra, 'r');
 
 			@SuppressWarnings("unused")
 			int z = 0;
 		}
 
-		else {
+		else { // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< r above - f below <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 			/**
 			 *  We are in eclipse getting the local book pseudo resource 
 			 *  OR someone has dragged and dropped a folder on to us
@@ -390,24 +491,28 @@ public class Book extends ArrayList<Book.LinChapter> {
 					boolean load_lins_as_normal = true;
 
 					// parse for whole book reldate
-					if (App.observeReleaseDates) {
-						for (File file : files) {
-							String sFile = file.getName();
-							if (sFile.endsWith(".reldate") == false)
-								continue;
-							if (sFile.contains(all_lin_files_in_this_book) == false)
-								continue;
-							if (isValidReldateAndInFuture(sFile) == false)
-								continue;
+//					if (App.observeReleaseDates) {
+//						for (File file : files) {
+//							String sFile = file.getName();
+//							if (sFile.endsWith(".reldate") == false)
+//								continue;
+//							if (sFile.contains(all_lin_files_in_this_book) == false)
+//								continue;
+//							if (isValidReldateAndInFuture(sFile) == false)
+//								continue;
+//
+//							load_lins_as_normal = false;
+//							break;
+//						}
+//					}
 
-							load_lins_as_normal = false;
-							break;
-						}
-					}
-
-					// parse each of the files realy for the .lin files
+					// parse each of the files really for the .lin files
 					if (load_lins_as_normal) {
 						for (File file : files) {
+
+							if (file.getPath().toLowerCase().contains("__macosx"))
+								continue;
+
 							String sFile = file.getName();
 
 							/** filter the files by  the onlyThese  list
@@ -424,28 +529,103 @@ public class Book extends ArrayList<Book.LinChapter> {
 									continue;
 							}
 
-							if (sFile.toLowerCase().endsWith(".title"))
-								setDisplayTitle(sFile, sep);
+							String low = sFile.toLowerCase();
 
-							if (sFile.toLowerCase().endsWith(".lin") || sFile.toLowerCase().endsWith(".pbn"))
+							if (low.endsWith(".lin") || low.endsWith(".pbn")) {
+
+								if (App.showAllLangLin == false) {
+
+									boolean ans[] = new boolean[2];
+									String searchName = Aaf.has_iso_lang(sFile, ans, sep);
+									boolean new_specificLang = ans[0];
+									boolean new_activeLang = ans[1];
+
+									if (new_specificLang && !new_activeLang)
+										continue; // skip this one not a language we are currently interesting in
+
+									LinChapter existing = this.getChapterByDisplayNamePart(searchName);
+									if (existing != null) {
+										if (new_specificLang && existing.langSpecific == false) {
+											this.remove(existing.index);
+										}
+										else {
+											System.out.println("Clash - lin file name clash - may have language set:  " + sFile + "  " + existing.filenamePlus);
+										}
+									}
+									// System.out.println("new Lin Chapter: " + sFile);
+								}
 								new LinChapter(this, 'f', "", sFile);
+							}
 						}
-					}
 
-					if (App.observeReleaseDates) {
+						/* 
+						 * now we do a second pass for any title overwrites
+						 */
 						for (File file : files) {
-							String sFile = file.getName();
-							if (isValidReldateAndInFuture(sFile) == false)
+
+							if (App.showAllLangLin)
+								continue; // this 2nd pass causes double entries when showing all
+
+							if (file.getPath().toLowerCase().contains("__macosx"))
 								continue;
-							String filenameNoLin = extract_linfilename(sFile);
-							for (LinChapter ch : this) {
-								if (filenameNoLin.contentEquals(ch.displayNoExt)) {
-									remove(ch);
-									break;
+
+							String sFile = file.getName();
+
+							/** filter the files by  the onlyThese  list
+							 */
+							if (onlyThese != null) {
+								boolean found = false;
+								for (File f : onlyThese) {
+									if (sFile.contentEquals(f.getName())) {
+										found = true;
+										break;
+									}
+								}
+								if (!found)
+									continue;
+							}
+
+							String low = sFile.toLowerCase();
+
+							if (low.endsWith("book_title"))
+								setDisplayTitle(sFile, sep, file.getPath(), 'f');
+
+							if (App.showAllLangLin == false && (low.endsWith(".lin_title") || low.endsWith(".pbn_title"))) {
+
+								boolean ans[] = new boolean[2];
+								String searchName = Aaf.has_iso_lang(sFile, ans, sep);
+								boolean new_specificLang = ans[0];
+								boolean new_activeLang = ans[1];
+
+								if (new_specificLang && !new_activeLang)
+									continue; // skip this one not a language we are currently interesting in
+
+								LinChapter existing = this.getChapterByDisplayNamePart(searchName);
+								if (existing == null)
+									continue;
+
+								String s = Aaf.readfirstlineOfFileOrRes(sFile, file.getPath(), 'f');
+								if (s.trim().length() > 1) {
+									existing.displayNoUscore = s;
 								}
 							}
 						}
 					}
+
+//					if (App.observeReleaseDates) {
+//						for (File file : files) {
+//							String sFile = file.getName();
+//							if (isValidReldateAndInFuture(sFile) == false)
+//								continue;
+//							String filenameNoLin = extract_linfilename(sFile);
+//							for (LinChapter ch : this) {
+//								if (filenameNoLin.contentEquals(ch.displayNoExt)) {
+//									remove(ch);
+//									break;
+//								}
+//							}
+//						}
+//					}
 				}
 
 			} catch (Exception e) {
@@ -453,7 +633,7 @@ public class Book extends ArrayList<Book.LinChapter> {
 				return;
 			}
 			if (displayTitle.isEmpty()) {
-				setDisplayTitle(bookFolderName, sep);
+				setDisplayTitle(bookFolderName, sep, bookFolderName, 'f');
 			}
 		}
 
@@ -466,6 +646,11 @@ public class Book extends ArrayList<Book.LinChapter> {
 		for (int i = 0; i < size(); i++) {
 			get(i).index = i;
 		}
+	}
+
+	public String getMenuKey(String basePath) {
+		// =============================================================
+		return basePath + "//" + bookJarExtra + "//" + displayTitle;
 	}
 
 	private String extract_linfilename(String sFile) {
@@ -522,21 +707,45 @@ public class Book extends ArrayList<Book.LinChapter> {
 		return "";
 	}
 
-	private void setDisplayTitle(String text, String sepSpecial) {
+	private void setDisplayTitle(String text_v, String sep, String cpath, char res_type) {
 		// ==============================================================================================
-		if (text.toLowerCase().endsWith(".title"))
-			text = text.substring(0, text.length() - 6);
+		String text = text_v;
 
-		if (text.toLowerCase().endsWith(sepSpecial))
-			text = text.substring(0, text.length() - sepSpecial.length());
+		int cutAt = text.lastIndexOf(".book_title");
+		if (cutAt > -1)
+			text = text.substring(0, cutAt);
+
+		if (text.toLowerCase().endsWith(sep))
+			text = text.substring(0, text.length() - sep.length());
 
 		/* titles in jar's arrive with a long path embedded 
 		 * so we do see unix sep on windows */
-		int p = text.lastIndexOf(sepSpecial);
-		if (p >= 0)
-			text = text.substring(p + 1);
+		int p = text.lastIndexOf(sep);
+		if (p > -1)
+			text = text.substring(p + sep.length());
+
+		boolean ans[] = new boolean[2];
+		text = Aaf.has_title_iso_lang(text, ans);
+		boolean new_specificLang = ans[0];
+		boolean new_activeLang = ans[1];
+
+		if (new_specificLang == true && new_activeLang == false)
+			return;
+
+		if (new_specificLang == false && this.displayTitle_is_langSpecific)
+			return;
+
+		this.displayTitle_is_langSpecific = new_specificLang;
 
 		displayTitle = Aaa.stripFrontDigitsAndClean(text);
+
+		if (displayTitle.isEmpty() && displayTitle_is_langSpecific) {
+			String s = Aaf.readfirstlineOfFileOrRes(text_v, cpath, res_type);
+			if (s.trim().length() > 1) {
+				displayTitle = s;
+			}
+		}
+
 	}
 
 	public LinChapter getChapterByDisplayNamePart(String s) {
@@ -569,6 +778,7 @@ public class Book extends ArrayList<Book.LinChapter> {
 		// ==============================================================================================
 		LinChapter chapter = getChapterByDisplayNamePart(s);
 		if (chapter != null) {
+			App.lastLoadedChapter = chapter;
 			return chapter.loadWithShow("");
 		}
 		return false;
@@ -578,19 +788,21 @@ public class Book extends ArrayList<Book.LinChapter> {
 		// ==============================================================================================
 		LinChapter chapter = getChapterByIndex(index);
 		if (chapter != null) {
+			App.lastLoadedChapter = chapter;
 			return chapter.loadWithShow("");
 		}
 		return false;
 	}
 
-	public boolean loadChapterByIndexNoShow(int index) {
-		// ==============================================================================================
-		LinChapter chapter = getChapterByIndex(index);
-		if (chapter != null) {
-			return chapter.load();
-		}
-		return false;
-	}
+//	public boolean loadChapterByIndexNoShow(int index) {
+//		// ==============================================================================================
+//		LinChapter chapter = getChapterByIndex(index);
+//		if (chapter != null) {
+//			App.lastLoadedChapter = chapter;
+//			return chapter.load();
+//		}
+//		return false;
+//	}
 
 	public void reduceToOnly(File[] files) {
 		// ==============================================================================================
