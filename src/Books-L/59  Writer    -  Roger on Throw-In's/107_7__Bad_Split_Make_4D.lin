@@ -1,0 +1,277 @@
+%%
+%%
+
+ss|chapter,7.                                Bad  Split  Make  4@D |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-01-11          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Roger  on  Throw-ins                   2018  August|
+%%
+cr|m140|cg|m180|cb|m090|   fill   m  m-mastColor       on Title Pages
+cr|c208|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s29|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=03___FP_general_text.ins
+%%
+ht|s|lg|m|
+at|^c@2Please read all the ^*b ANSWER ^*n  even if you play it out correctly.   The text in the solution is there to help you see  HOW  to find that answer at the table.|
+%%
+<<--INSERT-END**-->>=03___FP_general_text.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|i|
+at|^c@2^z@3^^|n#|9|
+fp|t-title|at|Bad Split Make 4@d|fp||
+lg|h|
+n#|8|at| 
+^d@2I played this hand a long time ago and so I have had to recreate the thoughts I had (or should have had).
+I agree it is an unusual hand but having the occasional  'from the table'  problem helps to keep it real.
+Good luck.|
+
+
+qx|# 7|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+rh||ah|Throw-in 7|
+md|1sQT85hK43dAJT3cK7,shA75d9852cAJT842,sA9hQ82dKQ764cQ96,sKJ76432hJT96dc53|
+sv|-|sk|s|
+nt|^z@3^b@2^^|n^|5|
+lg||
+at|^*bThrow-in  7^*n     The hand,|
+pg| ***** 1 ***** |
+
+
+at|     the bidding,|
+mb|1D|
+pg| ***** 2 ***** |
+
+
+mb|2C|
+pg| ***** 3 ***** |
+
+
+mb|3C!|an|@d support & a good raise|
+pg| ***** 4 ***** |
+
+
+mb|3S|
+pg| ***** 5 ***** |
+
+
+mb|4d|
+pg| ***** 6 ***** |
+
+
+mb|p|
+pg| ***** 7 ***** |
+
+
+mb|p|mb|p|
+pg| ***** 8 ***** |
+
+
+pc|cA|
+at|     the lead.|
+pg| ***** 9 ***** |
+
+
+qx|Thnk,wide|
+eb|y___|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 10 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Try,wide|
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+at|^^|cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the solution.|
+pf|first-button|
+pg| ***** 11 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Ans,wide|
+nt|^z@3^c@2^^|n^|5|
+Lg|f|
+at|^b^*bAnswer^*n|
+
+at|^^On the lead you have   2@c  5@d  1@s  1@h(an easy set up)  for 9 tricks.|
+pg| ***** 12 ***** |
+
+
+at|^^At the table I got a 2nd @c and next discovered the bad split in  @d's  (trumps).|
+pg| ***** 13 ***** |
+
+
+%%_aapg-NEAR
+pc|c6|pc|c5|pc|c7|pg||
+pc|cJ|pc|c9|pc|c3|pc|cK|pg||
+pc|dA|pc|d5|pc|d4|pc|s7|pg||
+%%_aapg-STD
+at|^^As ruffing a couple of @s in dummy (reverse dummy for the 10th trick) was now impossible.  I drew trumps ^^and played the @hK.|
+pg| ***** 17 ***** |
+
+
+%%_aapg-NEAR
+pc|dJ|pc|d2|pc|d6|pc|s2|pg||
+pc|d3|pc|d9|pc|dQ|pc|s3|pg||
+pc|d7|pc|s4|pc|dT|pc|d8|pg||
+pc|hK|pc|hA|pc|h2|pc|h6|
+%%_aapg-STD
+pg| ***** 21 ***** |
+
+
+---------------------------------------------------------------------------
+ht|d|at|@4^^|n^|2|
+at|West's return of a @c2 pretty much reveals the distribution.  His partner bid @s's for the first time at the 3 level and twice he has declined to lead them even with @sA9 in dummy, so we can put West as void and East as starting with 7@s's.|
+pc|c2|
+pg| ***** 22 ***** |
+
+
+pc|cQ|pc|h9|pc|s5|
+pg| ***** 23 ***** |
+
+
+at|^^East's initial doubleton club (she just threw a @h) means that it is very likely that she started  7402  and is now down to 3@s's and 2 @h's.|
+pg| ***** 24 ***** |
+
+
+---------------------------------------------------------------------------
+tt|y|
+ht|d|at|@4^^|n^|2|
+at|Let's show the East cards we know, and ^*b x ^*n for the others.  (In real play YOU need to ^*i imagine ^*n this).|
+PG| ***** 25 ***** |
+
+
+sk||
+vp|----,****,----,----|
+vx|----,-A-A,----,-A--|
+vi|n|
+vj|n|
+pg| ***** 26 ***** |
+
+
+at|^^We have to hope East's two @h's are the @hJ10   OR   if they have @hJx left then we have to pray that East is NOT expert enough to throw the Jack under our Queen.|
+pg| ***** 27 ***** |
+
+
+tt|n|
+pc|hQ|pc|hT|pc|h3|pc|h5|
+pg| ***** 28 ***** |
+
+
+n#|2|at|^^We are now home and dry and can throw-in East with our last @h.    (Assuming that East does have 
+^t the @hJ  in her hand.)|
+pg| ***** 29 ***** |
+
+
+pc|h8|pc|hJ|pc|h4|pc|h7|
+pg| ***** 30 ***** |
+
+
+---------------------------------------------------------------------------
+ht|d|at|@4^^|n^|2|
+pc|s6|
+at|Whatever East leads now we will get the last 3 tricks and make the contract.
+|n#|9|at|It is true that earlier we could have cashed the last trump (@dK) but keeping it made sense just incase West had the @hJ and then tried to run his @c's. |
+pg| ***** 31 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Done,wide|
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+at|^*bDone^*n
+^c We are done with this problem.  However, if you wish ...
+^^|fg|y|at|Once you have clicked  { ^*b Cont ^*n }  you can use the  { ^*b Show ^*n }  button in the green area on the right to see all the cards.|fg||
+mx|x|
+eb|y___|
+bv|c,v|
+pf|cont-button|
+pg| ***** 32 ***** |
+
+
+---------------------------------------------------------------------------
+qx|DDS,wide|
+eb||
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+bv|a,v|
+at|^*bDDS^*n    ^eYou are now free to explore the deal.
+|n^|7|lg|k|at|^^^c@2If you still need help then, when in the deal, click the ^*b DDS  { is Off/On ^*n }  button top right.
+|fp|s|at|A number (of tricks) in a GREEN oval shows a good to play for THAT side.|fp||
+pf|all-res-lifted|
+pg| ***** 33 ***** |
+
+

@@ -1,0 +1,1368 @@
+%%
+%%
+
+ss|chapter,Chapter 19.1               Complex   2@d Multi 2@H   |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2016-01-31        set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=001___FP_masthead.ins
+%%
+ss|masthead,Oliver Clarke Precision                                 2018  |
+%%
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       Precision Blue
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor    that Gray
+%%
+<<--INSERT-END**-->>=001___FP_masthead.ins
+
+
+<<--INSERT-START-->>=002___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|f35|                    Font   f  f-fine
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  position adjustment USED BY 'GRAPHICS'
+%%
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=002___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=005___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+ht|z|n#|k|at|@0^*h https://www.youtube.com/channel/UCTGNUS8jbx85QOMUPlHoRMA, OCP Videos ^*n|
+%%
+<<--INSERT-END**-->>=005___FP_footer.ins
+
+
+<<--INSERT-START-->>=005___FP_gg_extra.ins
+%%
+ht|z|n#|m|Lg||fp|s|at|^q with hand input and improvements by GG_Bridge|fp||
+%%
+<<--INSERT-END**-->>=005___FP_gg_extra.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+Lg||
+ht|j|
+qx|19.1|
+
+lg|i|
+at|^cBelow is a list of the meanings of the text in the  'bumps'  that you can see in the  ^*bNavbar^*n  below.
+|n^|c|at|
+^e Mult ^g              ^h    ...                      ^n Introduction to the Multi                  
+|n^|c|at|
+^e 2D   ^g ...          ^h    2@d                      ^n Summary of Responses to 2@D Multi
+^e 2H   ^g ...          ^h    2@d - 2@h                ^l |fp|s|at|(responder)|fp||at| no game interests if opposite a Weak 2 in @h's
+^e 2S   ^g ...          ^h    2@d - 2@h -  2@s         ^n Weak 2 in @s's
+^e 2NT  ^g ...          ^h    2@d - 2@h -  2NT         ^n 4441 @c/@d/@h/@s singletons   16-19 hcp   
+^e 3C   ^g ...          ^h    2@d - 2@h -  3@c         ^n 8 trick hand with 6@c's and 5@h's
+^e 3D   ^g ...          ^h    2@d - 2@h -  3@d         ^n 8 trick hand with 6@d's and 5@s's
+^e 3H   ^g ...          ^h    2@d - 2@h -  3@h         ^n 8 trick hand with 6@d's and 5@h's 
+^e 3S   ^g ...          ^h    2@d - 2@h -  3@s         ^n 8 trick hand with 5@s's and 6@c's 
+^e othr ^g ...          ^h    2@d - 2@h -  3NT/        ^n 4441 @c/@d/@h/@s singletons   20-23 hcp  
+^e                                 ^k|n^|5|at|4@c/4@d/4@h 
+|
+pg| ***** 0 ***** |
+
+
+-----------------------------------------------------------------------------------------------  
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,hide|
+nt|^z@3^b@2|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class            Complex   2@d Multi  2@H ^*n^-^^|cs||fp||cp||at|^^|
+lg|c|
+cp|red|at|^*bOliver:^*n|cp||at|     Hi Everyone and welcome to today's OCP session, in which we'll continue to study the full COMPLEX version of this Precision Club system.   
+
+None of what we'll be looking at over the next few weeks has ANYTHING to do with "standard" Precision.
+
+As a reminder, you absolutely CANNOT learn or play this part of the system ON YOUR OWN.
+
+You must learn it and practice is with a regular partner who plays the REST of this System or as one of a group.   
+
+I will ALWAYS happily play the Complex System with anyone who asks but you must be comfortable with the rest of it, including all the Asking Bids before you do so.
+
+Tonight we're going to start looking at the  Complex 2@d Multi.
+|n^|5|at|
+
+Specifically, we're going to be looking at continuations over |fp|g|at| 2@D Multi,    2@H|fp|t|at| Responses|fp||at|.
+
+If you have not already done so, please have a look at the notes I have prepared on the Complex 2@D Multi .
+|ht|v|n#|9|at|
+^*bMM:^*n  This class presented here is a combination of Oliver's lesson text, table extracts from the website and Oliver's voice comments given during the class.
+
+See Oliver's Complex 2@D web page at  |fp|t-title|at| ^*h http://ocp.pigpen.org.uk/Complex_2d.php^*n|fp||
+pg| ***** 1 ***** |
+
+
+--------------------------------------------------------------------
+nt|^b@2|at|^^^^|
+fp|t-title|at|Introduction  and  Abbreviations |fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|
+|n#|7|at|Oliver's introduction to the 2@d Multi begins on the next page.
+
+|ht|i|lg|s|fp|t|at|Hand Types|fp||at|
+The Complex Multi 2@d shows 1 of
+|n#|9|at|^c@2A   ^*bweak 2^*n   in either Major (typically 5-9 points with a 6 card suit)
+^*b16-23^*n  hcp   and ^*b any  4441^*n distribution
+less than  ^*b16^*n  hcp,  8 Playing Tricks (Acol-style) in a 2 suited hand with at 5 card Major and a 6+ card Minor
+
+|ht|t|lg|c|cp|mg|at|@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-|cp||at|
+|n^|7|at|
+^*bMM:^*n   Meaning of |fp|t-title|at| ^*bUR^*n|fp||at|,|fp|t-title|at| ^*bLR^*n  etc|fp||at|   in various contexts  ^t  (^*bsov^*n   =   Singleton or Void)
+|n^|5|at|
+                ^fcontext   ^h 5-9 (weak 2)   ^l 8-10                ^p 11-13            
+|n^|6|at|                   ^h@-@-@-@-@-@-   ^l@-@-@-@-@-@-@-     ^p@-@-@-@-@-@-@-@-
+^c ^*bUR^*n ^d  Upper Range ^h    8 - 9  ^l      9+- 10       ^p        12+- 13 
+^c ^*bLH^*n ^d  Lower Range ^h    5 - 7  ^l      8  -   9     ^p        11  - 12
+^c ^*bMax^*n                ^h      9    ^l         10        ^p            13     |cp|dg|at|
+^c ^*bMin^*n                ^h     5-6   ^l           8       ^p            10     |cp||
+pg| ***** 2 ***** |
+
+
+--------------------------------------------------------------------
+qx|Mult,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Multi  2@D  General Concepts|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  For those of you unfamiliar with it, here is a very quick introduction to the general idea behind the Multi-Coloured 2@D Opening.
+|n^|5|at|
+The main feature of the Multi is that it ALWAYS has one particular option, which is a weak 2 in either Major (and our Multi is no exception).
+|n^|5|at|
+Sometimes that is the ONLY option, but usually there is a second, STRONG, option, quite often a strong balanced range.  Occasionally, you'll find pairs who have a third option, but usually it's just the two options.
+|n^|2|at|
+Partner has 4 main options when  - ^*b Responding to a Multi ^*n
+|n^|c|lg|i|at|
+^c1.  With @2any weak hand, or a hand that is only interested in game if partner has @s's, Responder bids 2@H.
+^c2.  With a hand that has no game interest if partner has @s's, but DEFINITE game interest if partner has @H's,
+|n^|5|at|^u   Responder bids 2@S.
+^c3.  With any strong hand with game interest opposite either weak 2, Responder bids 2NT.
+^c4.  With a fundamentally weak hand but 4+ card support for both Majors, Responder can bid 3@H pre-emptively.
+|n^|5|lg|f|at|^b@2
+Over Responder's bid, the Multi 2@d bidder  -  
+^d Passes   
+^cOR   (if partner has bid the "wrong" Major)  bids their  Weak 2  
+^cOR    bids 2NT themselves if they have the strong balanced option.
+|n^|a|at|
+In the unlikely event that they have the strong option and partner has bid 2NT, the usual advice is to either tell partner to stop mucking about  or  just bid 7NT.    :)
+|n^|8|at|
+The Multi is built up into this "awful" convention that has the ACBL wetting their pants at the mere mention of it, but in truth it's a pretty innocuous device and fairly easy to defend against (something I'm NOT going to go into here).|
+pg| ***** 3 ***** |
+
+
+--------------------------------------------------------------------
+qx|-,hide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Multi  2@D  Complex|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  The key advantage to Multi is that it frees up 2@H and 2@S Openings for "something else", and potentially gives 2/1, SAYC and Acol Pairs another strong balanced range they can use before resorting to a 2@C Opening.
+
+The Complex System Multi is more complex than most - in that we have 3 main options, and 2 of those have multiple sub-options.
+
+This means that in total we have 14 possible hand-types that the Opening can show <insert a sinister-sounding chuckle at this point>.
+
+The Complex Multi 2@d shows 1 of
+|n^|9|lg|j|at|^c@2
+A weak 2 in either Major (typically 5-9 points with a 6-card suit)
+16-23 points  and ^*b any  4441^*n distribution
+<16 points,  8 Playing Tricks (Acol-style) in a 2-suited hand with at least a 5 card Major and a 6 card Minor
+ 
+|n^|9|lg|c|at|^b@2
+The first two of those is easy enough.
+
+The third is a hand something like   @SAK109x   @Hx   @Dx   @CAQ10xxx    with the points in the long suits.|
+pg| ***** 4 ***** |
+
+
+--------------------------------------------------------------------
+qx|-,hide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Multi  2@D  From the Web Site|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  
+
+|lg|h|at|
+   1.   A weak 2 in either Major (typically 5-9 points with a 6-card suit)
+   2.   16-23 points  and ^*b any  4441^*n distribution  
+   3.   <16 ,  8 Playing Tricks (Acol-style) in a 2-suited hand with at least a 5 card Major and a 6 card Minor
+
+|n^|h|lg|h|at|^c@2 ^x@3
+
+Given that Multi-style openings are effectively outlawed in the USA and UK (but nowhere else in the world) you will need to have an alternative strategy available of you're ever playing in an ACBL tourney on BBO or face-to-face in either of those two places (ie: the Simple System  2@d, since you will need some way of showing 16+ 4441 hands). 
+
+The hand-types (1) and (2) shown above are relatively common (many Precision Pairs use a Multi with these two options), but option (3) is not. You may think that most 8-trick 5-6 hands would qualify for a 1@c Opening, but lower range hands of this shape very often will not be upgradeable to 1@c without pushing the envelope of a 1@c Opening too much, eg:    ♠AK109x  ♥xx  ♦-  ♣KJ109xx.      
+
+Most upper-range hands of this shape will inevitably qualify for a 1@c Opening and should indeed be opened as such.|
+pg| ***** 5 ***** |
+
+
+--------------------------------------------------------------------
+qx|2D,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Multi  2@D    Initial  Responses|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  The initial responses to our Multi are essentially identical to those in the "standard scheme", with the possible exception that with an intermediate hand with support for both Majors, Responder will probably bid 2NT rather than one of the other possible responses.
+
+|n^|7|at|
+The  2@d  Opening is unconditionally forcing for one round and initial responses are as follows
+
+^c2@d - 2@h	     @2Shows any hand that wishes to play in 2@h opposite a weak 2 in @h's  even if they have game ambitions opposite one of the other hand-types.             ^s|cp|green|at|^*bThis chapter^*n|cp||at| 
+
+^c2@d - 2@s	     Shows any hand that wishes to play in 2@s opposite a weak-2 in @s's but with game interest if partner has a weak-2 in @h's  or  any other hand-type.           ^s^*g 2D:19.2, ^*bSee chapter 19.2^*n
+
+^c2@d - 2NT   Shows any strong hand (or possibly an intermediate one with both Majors) and is unconditionally forcing on Opener to show their hand-type.                          ^s^*g 2D:19.3, ^*bSee chapter 19.3^*n
+
+^c2@d - 3@h/4@h     Weak and pre-emptive with ^*b BOTH ^*n Majors (at least 4-4).      
+In using these last two bids (especially 4@h) Responder must bear in mind that Opener may be very strong, so these really must only be used on weak hands with shape where the possibility of a slam is remote even if partner has a 23-count.                                             ^s(^*bThis is the description^*n)
+
+^cNo other initial responses are permitted to this Opening
+
+
+
+^b Note -  The minimum shape for the 8-trick 2-suiters is a  |fp|t|at|   ^*b5@h/@s's^*n   and  ^*b6@d/@c's^*n|
+pg| ***** 6 ***** |
+
+
+--------------------------------------------------------------------
+qx|2H,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Multi  2@D - 2@H|fp|b|at|^hNO|fp|t|at|  Game interest if opposite a Weak 2 in @h's |fp||at|^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  Over 2@D-2@H,   Opener PASSES with any weak 2 in @h's.
+
+A very common sequence
+
+|n^|e|lg|h|at|^c@2
+2@D - 2@h                    ^i |fp|s|at|(responder)|fp||at|  'to play'  if you have a  Weak 2 in @h's
+2@D - 2@h -|fp|s|at| Pass|fp||at|  ^j  Yes I have
+|n^|3|at|  
+
+^b A Responder who has game ambitions opposite  OTHER  hand types will still bid  2@h's
+|
+pg| ***** 7 ***** |
+
+
+--------------------------------------------------------------------
+qx|2S,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Multi  2@D - 2@H - 2@S|fp||at|      ^i Opener  has a |fp|g|at|  Weak 2 in @S's|fp||at|^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   2@D-2@h-2@s   shows a Weak 2 in @s's
+
+Continuations
+
+|n^|e|lg|h|at|^c@2
+2@D - 2@h - 2@s                    ^i     Weak 2 in @s's
+2@D - 2@h - 2@s -|fp|s|at| Pass|fp||at|  ^j |fp|s|at|(responder)|fp||at| 'to play'
+|n^|e|at| 
+2@D - 2@h - 2@s - 2NT              ^j |fp|s|at|(responder)|fp||at| Game interest in @s's    |cp|gr|at|^*bforcing Enquiry^*n|cp||at|
+|n^|c|at|
+2@D - 2@h - 2@s - 2NT -   3@c      ^j    @d sov  ^*bUR^*n    |n#|6|at|      ^o "   ^s  "  |n^|6|at|
+2@D - 2@h - 2@s - 2NT -   3@d      ^j    @h sov  ^*bUR^*n ^n |fp|s|at|bid the suit ^*bbelow^*n the singleton, skipping 'trumps'|fp||at|
+2@D - 2@h - 2@s - 2NT -   3@h      ^j    @c sov  ^*bUR^*n           ^o "   ^s  "
+2@D - 2@h - 2@s - 2NT -   3@s      ^j    all shapes   ^*bLR^*n 
+|n^|e|at|                
+2@D - 2@h - 2@s - 2NT -   3NT      ^j    ^*bMax^*n hcp   ^*b6322^*n  with ^*b good ^*n suit  (@sKQ109xx minimum)
+|n^|a|at|                                        
+2@D - 2@h - 2@s - 2NT -   3@c      ^j    4+@c's   ^*bUR^*n
+2@D - 2@h - 2@s - 2NT -   3@d      ^j    4+@d's   ^*bUR^*n
+2@D - 2@h - 2@s - 2NT -   3@h      ^j    4+@h's   ^*bUR^*n
+2@D - 2@h - 2@s - 2NT -   3@s      ^j    ^*bMax^*n hcp   ^*b6322^*n  with a suit NOT good enough for a 3NT rebid|
+pg| ***** 8 ***** |
+
+
+--------------------------------------------------------------------
+qx|2NT,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Multi  2@D - 2@H - 2NT|fp||at|     ^i Opener  is    |fp|g|at| 4441|fp||at| any    |fp|g|at| 16-19|fp||at| hcp^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   2@D-2@H-2NT  ^g shows any 4441 distribution with 16-19 points.
+
+Now 3@C asks and Opener bids the suit "below" their singleton (3NT with a @D singleton)
+
+|n^|e|lg|h|at|^c@2
+2@D - 2@h - 2NT                  ^i any 4441   16-19 hcp
+2@D - 2@h - 2NT - 3@c            ^i     |fp|s|at|(responder)|fp||at| forced|cp|gr|at|  ^*b automatic Relay^*n|cp||at|
+|n^|c|at|   
+2@D - 2@h - 2NT - 3@c - 3@d      ^j  ^*b4144^*n  @h singleton      |n#|6|at|      ^p "   ^s  "  |n^|6|at|
+2@D - 2@h - 2NT - 3@c - 3@h      ^j  ^*b1444^*n  @s singleton   ^o |fp|s|at|bid the suit ^*bbelow^*n the singleton|fp||at|
+2@D - 2@h - 2NT - 3@c - 3@s      ^j  ^*b4441^*n  @c singleton             ^p "   ^s  "
+2@D - 2@h - 2NT - 3@c - 3NT      ^j  ^*b4414^*n  @d singleton   ^o |fp|s|at|      (except 3NT for @d's)|fp||at|
+|lg|f|at|^b@2
+Once Opener has shown their singleton suit, Responder either 
+^d sets the final contract 
+^c OR 
+^d may first make a Beta Ask (by bidding the singleton suit). 
+|lg|m|at|^b@2
+Eta Asks are not permitted (nor are Epsilons) even below game level. 
+A Jump in the singleton suit is always 'to play'.
+Bids of No Trumps are also strictly 'to play'.|
+pg| ***** 9 ***** |
+
+
+--------------------------------------------------------------------
+qx|3C,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Multi  2@D - 2@H - 3@c|fp||at| ^i Opener has  |fp|g|at| 8 tricks|fp||at|  with  |fp|g|at|6@c's|fp||at|  and|fp|g|at| 5@h's|fp||at|^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   2@D-2@H-3@C  ^g shows the 8 trick hand with 6@c's and 5@h's.
+
+So we have
+
+|n^|e|lg|h|at|^c@2
+2@D - 2@h - 3@c                       ^i     8 trick hand with 6@c's and 5@h's
+2@D - 2@h - 3@c - |fp|s|at|pass |fp||at| ^j   |fp|s|at|(responder)|fp||at|  with nothing but some  @c's
+|n^|c|at| 
+2@D - 2@h - 3@c -  3@d                 ^j   |fp|s|at|(responder)|fp||cp|gr|at| ^*b forcing Relay^*n|cp||at|    forces  3@h  from opener
+2@D - 2@h - 3@c -  3@d - 3@h - |fp|s|at|pass |fp||at|/ any ^k       |fp|s|at|(responder)|fp||at|  ^*bto play^*n
+2@D - 2@h - 3@c -  3@h                 ^j   |fp|s|at|(responder)|fp||at| ^*b Gamma ^*n in @h's       ASKING BIDS ESTABLISHED
+2@D - 2@h - 3@c -  3@s                 ^j   |fp|s|at|(responder)|fp||cp|gr|at| ^*b forcing Enquiry^*n|cp||at| 
+2@D - 2@h - 3@c -  3@s - 3NT           ^k ^*b1516 ^*n    ^m   4@d is now beta    |fp|s|at|thereafter Responder sets the final contract|fp||at|
+2@D - 2@h - 3@c -  3@s - 4@c           ^k @d void  ^m   4@d          "    ^t "
+2@D - 2@h - 3@c -  3@s - 4@d           ^k @s void  ^m   4@s          "    ^t "
+2@D - 2@h - 3@c -  3@s - 4@h           ^k 66 or 57 ^m   4@s          "    ^t "
+2@D - 2@h - 3@c -  3NT                 ^j   |fp|s|at|(responder)|fp||at| ^*b Beta ^*n    ^t "
+2@D - 2@h - 3@c -  4@c                 ^j   |fp|s|at|(responder)|fp||at| ^*b Gamma ^*n in @c's       ASKING BIDS ESTABLISHED
+|lg|h|at|^c@2
+
+^bNotes
+                ...|
+pg| ***** 10 ***** |
+
+
+--------------------------------------------------------------------
+qx|3D,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Multi  2@D - 2@H - 3@d|fp||at| ^i Opener has  |fp|g|at| 8 tricks|fp||at|  with  |fp|g|at|6@d's|fp||at|  and|fp|g|at| 5@s's|fp||at|^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   2@D-2@H-3@D ^g shows the 8 trick hand with 6@d's and 5@s's.
+
+The continuations closely follow the logic of the 3@C rebids with some differences
+
+|n^|e|lg|h|at|^c@2
+2@D - 2@h - 3@d                       ^i     8 trick hand with 6@d's and 5@s's
+2@D - 2@h - 3@d - |fp|s|at|pass |fp||at| ^j   |fp|s|at|(responder)|fp||at|  with nothing but some  @d's
+|n^|c|at| 
+2@D - 2@h - 3@d -  3@h                 ^j   |fp|s|at|(responder)|fp||cp|gr|at| ^*b forcing Relay^*n|cp||at|    forces  3@s  from opener
+2@D - 2@h - 3@d -  3@h - 3@s - |fp|s|at|pass |fp||at|/ any ^k       |fp|s|at|(responder)|fp||at|  ^*bto play^*n
+2@D - 2@h - 3@d -  3@s                 ^j   |fp|s|at|(responder)|fp||at| ^*b Gamma ^*n in @s's       ASKING BIDS ESTABLISHED
+2@D - 2@h - 3@d -  3NT                 ^j   |fp|s|at|(responder)|fp||cp|gr|at| ^*b forcing Enquiry^*n|cp||at| 
+2@D - 2@h - 3@d -  3NT - 4@c           ^k @h sov   ^m   4@h is now beta    |fp|s|at|thereafter Responder sets the final contract|fp||at|
+2@D - 2@h - 3@d -  3NT - 4@d           ^k @d 5161  ^m   4@h          "    ^t "
+2@D - 2@h - 3@d -  3NT - 4@h           ^k @c sov   ^m   4NT        "    ^t "
+2@D - 2@h - 3@d -  3NT - 4@s           ^k 66 or 57 ^m   4NT        "    ^t "
+2@D - 2@h - 3@d -  4@c                 ^j   |fp|s|at|(responder)|fp||at| ^*b Beta ^*n    ^t "
+2@D - 2@h - 3@d -  4@d                 ^j   |fp|s|at|(responder)|fp||at| ^*b Gamma ^*n in @d's       ASKING BIDS ESTABLISHED
+|lg|h|at|^c@2
+
+^bNotes
+                ...|
+pg| ***** 11 ***** |
+
+
+--------------------------------------------------------------------
+qx|3H,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Multi  2@D - 2@H - 3@H|fp||at| ^i Opener has  |fp|g|at| 8 tricks|fp||at|  with  |fp|g|at|6@d's|fp||at|  and|fp|g|at| 5@h's|fp||at|^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   2@D-2@H-3@H ^g shows the 8 trick hand with 6@d's and 5@h's.
+
+
+
+|n^|e|lg|h|at|^c@2
+2@D - 2@h - 3@h                       ^i   |fp|s|at|(opener)|fp||at| 8 trick hand with 6@d's and 5@h's
+2@D - 2@h - 3@h - |fp|s|at|pass |fp||at| ^j    with nothing but some  @h's
+|n^|c|at|   
+2@D - 2@h - 3@h -  3@s                    ^j   ^*b Beta ^*n |fp|s|at|thereafter Responder sets the final contract|fp||at|
+2@D - 2@h - 3@h -  3NT                    ^j   ^*b Gamma ^*n in @h's       ASKING BIDS ESTABLISHED
+2@D - 2@h - 3@h -  4@c                    ^j   ^*b Gamma ^*n in @d's       ^o    "        ^s "
+2@D - 2@h - 3@h -  4@d                    ^j     - to play -
+2@D - 2@h - 3@h -  4@h                    ^j     - to play -
+|lg|c|at|^c@2
+
+Bear in mind here that over 2@D-2@H, Responder has not promised ANYTHING in the way of high card strength.
+This is why over the 8-trick hands, Responder can always use the |cp|gr|at|^*b forcing Relay^*n |cp||at| to sign off over the 3@C and 3@D rebids, and can pass the Major or sign off in the Minor over the 3@H and 3@S rebids.
+
+"ASKING BIDS ESTABLISHED" simply means that Relay Beta and Epsilons are permitted over the Gamma response.    
+
+If, however, Responder makes an immediate Beta over Opener's initial rebid (eg: 2@D-2@H-3@C-3NT), then Responder has no options over the Beta Response and must simply decide the final contract.|
+pg| ***** 12 ***** |
+
+
+--------------------------------------------------------------------
+qx|3S,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Multi  2@D - 2@H - 3@S|fp||at| ^i Opener has  |fp|g|at| 8 tricks|fp||at|  with  |fp|g|at|5@s's|fp||at|  and|fp|g|at| 6@c's|fp||at|^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   2@D-2@H-3@S ^g shows the 8 trick hand with 5@s's and 6@c's.
+
+
+
+|n^|e|lg|h|at|^c@2
+2@D - 2@h - 3@s                       ^i   |fp|s|at|(opener)|fp||at| 8 trick hand with 5@s's and 6@c's
+2@D - 2@h - 3@s - |fp|s|at|pass |fp||at| ^j    with nothing but some  @s's
+|n^|c|at|   
+2@D - 2@h - 3@s -  3NT                    ^j   ^*b Beta ^*n |fp|s|at|thereafter Responder sets the final contract|fp||at|
+2@D - 2@h - 3@s -  4@c                    ^j     - to play -
+2@D - 2@h - 3@s -  4@d                    ^j   ^*b Gamma ^*n in @s's       ^o    "        ^s "
+2@D - 2@h - 3@s -  4@h                    ^j   ^*b Gamma ^*n in @c's       ^o    "        ^s "
+2@D - 2@h - 3@s -  4@s                    ^j     - to play -
+|lg|c|at|^c@2
+
+Bear in mind here that over 2@D-2@H, Responder has not promised ANYTHING in the way of high card strength.
+This is why over the 8-trick hands, Responder can always use the |cp|gr|at|^*b forcing Relay^*n |cp||at| to sign off over the 3@C and 3@D rebids, and can pass the Major or sign off in the Minor over the 3@H and 3@S rebids.
+
+"ASKING BIDS ESTABLISHED" simply means that Relay Beta and Epsilons are permitted over the Gamma response.    
+
+If, however, Responder makes an immediate Beta over Opener's initial rebid (eg: 2@D-2@H-3@C-3NT), then Responder has no options over the Beta Response and must simply decide the final contract.|
+pg| ***** 13 ***** |
+
+
+--------------------------------------------------------------------
+qx|othr,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Multi  2@D - 2@H - 3NT / 4@c / 4@d / 4@h|fp||at|     ^m Opener  is    |fp|g|at| 4441|fp||at| any    |fp|g|at| 20-23|fp||at| hcp^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   2@D-2@H-3NT  ^g shows any 4441 distribution with 20-23 points.
+
+
+
+|n^|e|lg|h|at|^c@2
+2@D - 2@h - 3NT             ^i  ^*b4441^*n  @c singleton   20-23  hcp
+2@D - 2@h - 4@c             ^i  ^*b4414^*n  @d         "               "
+2@D - 2@h - 4@d             ^i  ^*b4144^*n  @h         "               "
+2@D - 2@h - 4@h             ^i  ^*b1444^*n  @s         "               "
+|lg|f|at|^b@2
+Once Opener has shown their singleton suit, Responder either 
+^d sets the final contract 
+^c OR 
+^d may first make a Beta Ask (by bidding the singleton suit). 
+|lg|m|at|^b@2
+Eta Asks are not permitted (nor are Epsilons) even below game level. 
+A Jump in the singleton suit is always 'to play'.
+Bids of No Trumps are also strictly 'to play'.|
+pg| ***** 14 ***** |
+
+
+--------------------------------------------------------------------
+qx|Teac, wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Multi  2@D - 2@H        Teaching Hands|fp||at|         ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  
+
+|
+
+
+ht|u|lg|c|
+cp|dg|at|@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-|cp||at|
+|n#|9|at|^*bMM:^*n   I have moved all the teaching hands so they follow next. 
+|n^|9|at|
+^i   This way the earlier tables can remain un-split,  each on a single page.|
+pg| ***** 15 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|t 1,thin|
+pn|South,West,North,East|rh||ah|Teach 1|sv|b|
+%% 3sKQ854hKdAQ4cKQ85,sAJ76hJ942d83cA73,s3hQT87653dK652c9,sT92hAdJT97cJT642
+md|3sKQ854hKdAQ4cKQ85,,s3hQT87653dK652c9,|
+sk|n|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 1    |
+pg| ***** 16 ***** |
+
+
+mb|2d|an|Weak Two in Maj or 16+ 4441 or   11-15     5Maj - 6minor|
+pg| ***** 17 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 18 ***** |
+
+
+mb|2h|an|To play if opposite weak 2 in @h's|
+pg| ***** 19 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 20 ***** |
+
+
+sk||mb|p|
+pg| ***** 21 ***** |
+
+
+mb|p|
+at|   Here is the standard system in action.
+^^Note despite North having 7@h's !, South even with a 19 count and the K of @h's does not have enough to make 4@h's.|
+md|0sKQ854hKdAQ4cKQ85,sAJ76hJ942d83cA73,s3hQT87653dK652c9,sT92hAdJT97cJT642|
+pg| ***** 22 ***** |
+
+
+pc|d8|
+pf|Y|
+pg| ***** 23 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 24 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|t 2,thin|
+pn|South,West,North,East|rh||ah|Teach 2|sv|-|
+
+md|3sT3hJT72dAJ5cQJ42,sK94hAQ863dQ3cK53,sAQJ872h4dT72c876,s65hK95dK9864cAT9|
+sk|n|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 2    |
+pg| ***** 25 ***** |
+
+
+mb|2d|an|Weak Two in Maj or 16+ 4441 or   11-15     5Maj - 6minor|
+pg| ***** 26 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 27 ***** |
+
+
+mb|2h|an|To play if opposite weak 2 in @h's|
+pg| ***** 28 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 29 ***** |
+
+
+mb|2s|an|I have a weak 2 in @s's|
+pg| ***** 30 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 31 ***** |
+
+
+sk||mb|p|an|Still not interested|
+pg| ***** 32 ***** |
+
+
+mb|p|
+at|   This again is a VERY common sequence.|
+md|0sT3hJT72dAJ5cQJ42,sK94hAQ863dQ3cK53,sAQJ872h4dT72c876,s65hK95dK9864cAT9|
+pg| ***** 33 ***** |
+
+
+pc|d8|
+pf|Y|
+pg| ***** 34 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 35 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|t 3,thin|
+pn|South,West,North,East|rh||ah|Teach 3|sv|b|
+%% 2sAK54h43dKJ43cT54,s3hKQJT5d5cAKJ862,sJ87h876dQ987cQ97,sQT962hA92dAT62c3
+md|2,s3hKQJT5d5cAKJ862,,sQT962hA92dAT62c3|
+sk|w|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 3    |
+pg| ***** 36 ***** |
+
+
+mb|2d|an|Weak Two in Maj or 16+ 4441 or   11-15     5Maj - 6minor|
+pg| ***** 37 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 38 ***** |
+
+
+mb|2H!|an|To play if opposite weak 2 in @h's|
+pg| ***** 39 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 40 ***** |
+
+
+mb|3C|an|11-15      5@h  &  6@c|
+pg| ***** 41 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 42 ***** |
+
+
+mb|3H|an|Gamma in @h's|
+pg| ***** 43 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 44 ***** |
+
+
+mb|4C|an|HHxxx  or  HHHxx  in @h'd|
+pg| ***** 45 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 46 ***** |
+
+
+mb|4D|an|Beta (relay beta)|
+pg| ***** 47 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 48 ***** |
+
+
+mb|4N|an|4 ctrls|
+pg| ***** 49 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 50 ***** |
+
+
+mb|5D|an|Epsilon in @d's|
+pg| ***** 51 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 52 ***** |
+
+
+mb|5N|an|2nd rd ctrl  [x, Kxx, K]|
+pg| ***** 53 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 54 ***** |
+
+
+mb|6H|
+pg| ***** 55 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 56 ***** |
+
+
+sk||mb|p|
+pg| ***** 57 ***** |
+
+
+mb|p|
+at|This may be an over elaborate bidding example but it shows the idea of the 8 trick 6-5 hands.|
+md|02sAK54h43dKJ43cT54,s3hKQJT5d5cAKJ862,sJ87h876dQ987cQ97,sQT962hA92dAT62c3|
+pg| ***** 58 ***** |
+
+
+pc|d3|
+pf|Y|
+pg| ***** 59 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 60 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|t 4,thin|
+pn|South,West,North,East|rh||ah|Teach 4|sv|e|
+%% 4sA9432h52dAJ5cKJ2,sQJT7h8763d643c94,sK865hT9d8cAQT765,shAKQJ4dKQT972c83
+md|4,sQJT7h8763d643c94,,shAKQJ4dKQT972c83|
+sk|e|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 4    |
+pg| ***** 61 ***** |
+
+
+mb|2d|an|Weak Two in Maj or 16+ 4441 or   11-15     5Maj - 6minor|
+pg| ***** 62 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 63 ***** |
+
+
+mb|2h|an|To play if opposite weak 2 in @h's|
+pg| ***** 64 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 65 ***** |
+
+
+mb|3h|an|11-15      5@h  &  6@d|
+pg| ***** 66 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 67 ***** |
+
+
+sk||mb|p|
+at|^^^^East passes the hand out as she has not got enough to get to 10 tricks (even in @h's).|
+pg| ***** 68 ***** |
+
+
+mb|p|
+md|0sA9432h52dAJ5cKJ2,sQJT7h8763d643c94,sK865hT9d8cAQT765,shAKQJ4dKQT972c83|
+pg| ***** 69 ***** |
+
+
+pc|d8|
+pf|Y|
+pg| ***** 70 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 71 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|t 5,thin|
+pn|South,West,North,East|rh||ah|Teach 5|sv|-|
+%% 2s3hKJT96dA54cT932,sAKJ6h3dKQJTcAKQ7,s87hQ872d9863c865,sQT9542hA54d72cJ4 
+md|2s,sAKJ6h3dKQJTcAKQ7,,sQT9542hA54d72cJ4|
+sk|w|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 5    |
+pg| ***** 72 ***** |
+
+
+mb|2d|an|Weak Two in Maj or 16+ 4441 or   11-15     5Maj - 6minor|
+pg| ***** 73 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 74 ***** |
+
+
+mb|2h|an|To play if opposite weak 2 in @h's|
+pg| ***** 75 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 76 ***** |
+
+
+mb|4d|an|20-24    4414 Singleton @h|
+pg| ***** 77 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 78 ***** |
+
+
+mb|4h|an|Beta (short suit beta)|
+pg| ***** 79 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+at|Remember that this is using the ^*b Strong ^*n Scale  so the the 1st level is  0-4  ctrls.|
+pg| ***** 80 ***** |
+
+
+mb|5d|an|7 ctrls|
+pg| ***** 81 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 82 ***** |
+
+
+mb|6s|
+pg| ***** 83 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 84 ***** |
+
+
+sk||mb|p|
+at|^^^^East can see that they have no losers in @h's and are effectively playing in a "30" point deck (actually 34 in this case). |
+pg| ***** 85 ***** |
+
+
+mb|p|
+md|0s3hKJT96dA54cT932,sAKJ6h3dKQJTcAKQ7,s87hQ872d9863c865,sQT9542hA54d72cJ4|
+pg| ***** 86 ***** |
+
+
+pc|d4|
+pf|Y|
+pg| ***** 87 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+qx|Prac,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Multi  2@D - 2@H        Practice Hands|fp||at|         ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  
+
+Ok, we're going to stop the teaching there for tonight as we've covered a LOT of ground.
+
+Let's practice some of those sequences...|
+pg| ***** 88 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|p 1,thin|
+pn|RogerPfi,boleo1,GG_Bridge,17Tezcan|st||rh||ah|Practice 1|sv|-|
+%% 3SATHT932DAJ75C532,S943HQJ86DQ3CKQJ4,SKQJ872H74DT2C876,S65HAK5DK9864CAT9
+md|3SATHT932DAJ75C532,,SKQJ872H74DT2C876,|
+sk|n|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 1    |
+pg| ***** 89 ***** |
+
+
+mb|2d|an|Weak Two in Maj or 16+ 4441 or   11-15     5Maj - 6minor|
+pg| ***** 90 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 91 ***** |
+
+
+mb|2h|an|To play if opposite weak 2 in @h's|
+pg| ***** 92 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 93 ***** |
+
+
+mb|2S|an|I have the Weak 2 in @s|
+pg| ***** 94 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 95 ***** |
+
+
+sk||mb|p|
+pg| ***** 96 ***** |
+
+
+mb|p|
+at|^^^^This is the standard sequence when Opener has the weak two in @s's and South has very little.
+^^The 4@h's even with the two aces are just not enough.|
+md|0SATHT932DAJ75C532,S943HQJ86DQ3CKQJ4,SKQJ872H74DT2C876,S65HAK5DK9864CAT9|
+pg| ***** 97 ***** |
+
+
+pc|d8|
+pf|Y|
+pg| ***** 98 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 99 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|p 2,thin|
+pn|RogerPfi,boleo1,GG_Bridge,17Tezcan|st||rh||ah|Practice 2|sv|n|
+%% 4SA764H3DK65CJ8542,SKJT2HA876DQJ932,S985H94DAT87CAKQT,SQ3HKQJT52D4C9763
+md|4,SKJT2HA876DQJ932,,SQ3HKQJT52D4C9763|
+sk|e|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2    |
+pg| ***** 100 ***** |
+
+
+mb|2d|an|Weak Two in Maj or 16+ 4441 or   11-15     5Maj - 6minor|
+pg| ***** 101 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+at|As we have not covered the  2NT Opening  -  West can choose ... which bid ?|
+pg| ***** 102 ***** |
+
+
+mb|4h|an|Will play in a major game opposite either Weak 2|
+at|^^^^This bid is reasonable alternative (and the 2NT would be even better).|
+pg| ***** 103 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 104 ***** |
+
+
+sk||mb|p|
+pg| ***** 105 ***** |
+
+
+mb|p|
+md|0SA764H3DK65CJ8542,SKJT2HA876DQJ932,S985H94DAT87CAKQT,SQ3HKQJT52D4C9763|
+pg| ***** 106 ***** |
+
+
+pc|h4|
+pf|Y|
+pg| ***** 107 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 108 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|p 3,thin|
+pn|RogerPfi,boleo1,GG_Bridge,17Tezcan|st||rh||ah|Practice 3|sv|e|
+%% 1SKQJ5HAQJ3D3CKQT5,SA9843H42DQJT2CA9,ST62HK765DA76C872,S7HT98DK9854CJ643
+md|1SKQJ5HAQJ3D3CKQT5,,ST62HK765DA76C872,|
+sk|s|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 3    |
+pg| ***** 109 ***** |
+
+
+mb|2d|an|Weak Two in Maj or 16+ 4441 or   11-15     5Maj - 6minor|
+pg| ***** 110 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 111 ***** |
+
+
+mb|2h|an|To play if opposite weak 2 in @h's|
+pg| ***** 112 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 113 ***** |
+
+
+mb|2N|an|16-19    any 4441|
+pg| ***** 114 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 115 ***** |
+
+
+mb|3C|an|Relay asking for short suit|
+pg| ***** 116 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 117 ***** |
+
+
+mb|3N|an|short suit is @d|
+pg| ***** 118 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 119 ***** |
+
+
+mb|4H|
+at|Now North can choose to play in @h's, knowing of the 4-4 fit|
+pg| ***** 120 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 121 ***** |
+
+
+sk||mb|p|
+at|^^^^unluckily for North,  the Opps have a @s ruff (if they lead spades).|
+pg| ***** 122 ***** |
+
+
+mb|p|
+md|0SKQJ5HAQJ3D3CKQT5,SA9843H42DQJT2CA9,ST62HK765DA76C872,S7HT98DK9854CJ643|
+pg| ***** 123 ***** |
+
+
+pc|s7|
+pf|Y|
+pg| ***** 124 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 125 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|p 4,thin|
+pn|RogerPfi,Major_Blue,GG_Bridge,17Tezcan|st||rh||ah|Practice 4|sv|b|
+%% 2SAK54H43DKJ43CT54,S3HKQJT5D5CAKJ862,SJ87HA9876DQ987C7,SQT962H2DAT62CQ93
+md|2,S3HKQJT5D5CAKJ862,,SQT962H2DAT62CQ93|
+sk|w|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 4               Hi David|
+pg| ***** 126 ***** |
+
+
+mb|2d|an|Weak Two in Maj or 16+ 4441 or   11-15     5Maj - 6minor|
+pg| ***** 127 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 128 ***** |
+
+
+mb|2h|an|To play if opposite weak 2 in @h's|
+pg| ***** 129 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 130 ***** |
+
+
+mb|3c|an|5@H's  &  6@c's  (8 playing tricks)|
+pg| ***** 131 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+at|       Here  Gamma in the minor (@c's) will always start from a 6 card base.|
+pg| ***** 132 ***** |
+
+
+mb|4C|an|Gamma in @c's|
+pg| ***** 133 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 134 ***** |
+
+
+mb|4S|an|HHxxxx or HHHxxx  in @c's|
+pg| ***** 135 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+at|^^This is the best response that East could have wished for.|
+pg| ***** 136 ***** |
+
+
+mb|5C|
+pg| ***** 137 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 138 ***** |
+
+
+sk||mb|p|
+at|^^^^If East was not planning to to go on after the best response possible he should have bid  5@c  not  4@c  straight off.|
+pg| ***** 139 ***** |
+
+
+mb|p|
+md|0SAK54H43DKJ43CT54,S3HKQJT5D5CAKJ862,SJ87HA9876DQ987C7,SQT962H2DAT62CQ93|
+pg| ***** 140 ***** |
+
+
+pc|s7|
+pf|Y|
+pg| ***** 141 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 142 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|p 5,thin|
+pn|RogerPfi,Major_Blue,GG_Bridge,17Tezcan|st||rh||ah|Practice 5|sv|n|
+%% 3S3HQJ982DQ7CA9762,SKT5HA765D52CKQ54,SAQ986DAKJT643C3,SJ742HKT43D98CJT8
+md|3S3HQJ982DQ7CA9762,,SAQ986DAKJT643C3,|
+
+sk|n|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 5 |
+pg| ***** 143 ***** |
+
+
+mb|2d|an|Weak Two in Maj or 16+ 4441 or   11-15     5Maj - 6minor|
+pg| ***** 144 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+at|         South please bid  2@h  not the more appropriate  2@s  (as this is the 2@h lesson).|
+pg| ***** 145 ***** |
+
+
+mb|2h|an|To play if opposite weak 2 in @h's      (OK Oliver)|
+pg| ***** 146 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 147 ***** |
+
+
+mb|3d|an|5@s's  &  6@d's  (8 playing tricks)|
+pg| ***** 148 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 149 ***** |
+
+
+mb|5@d|an|to play (some values)|
+pg| ***** 150 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 151 ***** |
+
+
+mb|6d|
+at|^^^^^*bGG_Bridge:^*n   As I feel I am too strong to pass, I bid  6@d.|
+pg| ***** 152 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 153 ***** |
+
+
+sk||mb|p|
+n#|5|at|^^^^|cp|red|at|^*bOliverC:^*n|cp||at|  wd |
+pg| ***** 154 ***** |
+
+
+mb|p|
+md|0S3HQJ982DQ7CA9762,SKT5HA765D52CKQ54,SAQ986DAKJT643C3,SJ742HKT43D98CJT8|
+pg| ***** 155 ***** |
+
+
+pc|d9|
+pf|Y|
+pg| ***** 156 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 157 ***** |
+
+
+--------------------------------------------------------------------
+st||
+qx|p 6,thin|
+pn|RogerPfi,Major_Blue,GG_Bridge,17Tezcan|st||rh||ah|Practice 6|sv|e|
+%% 4SA9432H52DJ65CKJ2,SQJT7H8763DA43C94,SK865HT9D8CAQT765,HAKQJ4DKQT972C83
+md|4,SQJT7H8763DA43C94,,HAKQJ4DKQT972C83|
+sk|e|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 6 |
+pg| ***** 158 ***** |
+
+
+mb|2d|an|Weak Two in Maj or 16+ 4441 or   11-15     5Maj - 6minor|
+pg| ***** 159 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 160 ***** |
+
+
+mb|2h|an|To play if opposite weak 2 in @h's      (OK Oliver)|
+pg| ***** 161 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 162 ***** |
+
+
+mb|3h|an|5@h's  &  6@d's  (8 playing tricks)|
+pg| ***** 163 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 164 ***** |
+
+
+mb|4h|
+pg| ***** 165 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 166 ***** |
+
+
+sk||mb|p|
+at|^^^^West with their limited but working values in  @d's  and the  @hxxxx  can go for the game.|
+pg| ***** 167 ***** |
+
+
+mb|p|
+md|0SA9432H52DJ65CKJ2,SQJT7H8763DA43C94,SK865HT9D8CAQT765,HAKQJ4DKQT972C83|
+pg| ***** 168 ***** |
+
+
+pc|c7|
+pf|Y|
+pg| ***** 169 ***** |
+
+
+Goodbyes--------------------------------------------------------------------
+qx|end,thin|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Multi  2@D - 2@H ^^^^|fp||
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  I think that will be all tonight. 
+
+Next week we will look at the    2@D - 2@s  sequences
+
+
+Major_Blue:  Thanks Oliver
+ 
+Curls77:  ty Oliver and all players :)
+
+RogerPfi:  ty Oliver
+
+Kritter2:  thx Oliver:)
+
+
+
+|cp|red|at|^*bOliverC:^*n|cp||at|   night all. Bye for now|
+pg| ***** 170 ***** |
+
+

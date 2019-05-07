@@ -1,0 +1,3354 @@
+
+%%
+%%  Date last Edited    2019-03-30
+%%
+
+ss|masthead,Learn to Play Bridge 2                  Ch 2.3  -  Defense  |
+
+ss|chapter,Always cover an honor with an honor (sometimes)|
+
+
+<<--INSERT-START-->>=01___LTPB2__header_colors.ins
+%%
+cr|m120|cg|m040|cb|m069|   fill   m  m-mastColor       maroon
+cr|c248|cg|c231|cb|c189|   fill   c  c-chapterColor    beige cream
+%%
+<<--INSERT-END**-->>=01___LTPB2__header_colors.ins
+
+<<--INSERT-START-->>=02___LTPB___common.ins
+%%
+fh|180|ff|1Arial|fb|10|fm|1|      Font 1   Kia
+fh|235|ff|2Arial|fb|28|fm|2|      Font 2   Kia
+fh|350|ff|3Arial|fb|30|fm|3|      Font 3   Kia
+fh|430|ff|4Arial|fb|48|fm|4|      Font 4   Kia
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|60|fm|6|      Font 6
+fh|770|ff|7Arial|fb|70|fm|7|      Font 7
+fh|880|ff|8Arial|fb|80|fm|8|      Font 8
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1255|cg|1230|cb|1189|   Beige Cream
+cr|2200|cg|2245|cb|2210|   green ish
+cr|3249|cg|3249|cb|3255|   grey medium
+cr|4190|cg|4210|cb|4255|   blue grey
+cr|5198|cg|5205|cb|5229|   light grey
+cr|6122|cg|6000|cb|6049|   dark maroon
+cr|9255|cg|9255|cb|9255|   'white'
+
+fh|s29|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m60|                    Font   m  m-mastHead        size in banner 1
+fh|c60|                    Font   c  c-chapTitle       size in banner 2
+
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint           feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight       text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+%%
+pd|first          ,^a You can `cp`red`at`^*b now ^*n`cp``at` ^*bClick { ^*b 1st ^*n } below @0@1 to enter the deal and ^*b PLAY ^*n the cards.   Later click  { ^*b Back to Movie ^*n }  to return.|
+%%
+%%
+bv|f,v|  %% button visibility
+%%
+<<--INSERT-END**-->>=02___LTPB___common.ins
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+
+at|^b@2^z@3|
+cs|5|cp|6|fp|4|
+at|
+|fp||cp||at|
+It is time to turn our attention to a new guideline that will help you to make decisions on defense. The subject of this topic is perhaps the most famous defensive guideline of them all:
+
+|
+qx|2.3|
+pg| ***** 0 ***** |
+
+
+cs|3|at|^-{ Always cover an honor with an honor (sometimes) }
+^-
+|
+pg| ***** 1 ***** |
+
+
+at|Always cover an honor with an honor is also arguably the most dangerous guideline we have seen because it contains a very misleading word - ^*Ialways^*N. As you should know by now, words like ^*Ialways^*N and ^*Inever^*N do not apply in the game of bridge. 
+
+Actually, that is not quite true. Here is an exception:
+
+|
+pg| ***** 2 ***** |
+
+
+cs|2|at|^-{ Always think! Never treat guidelines as if they are rules! }
+^-
+|
+pg| ***** 3 ***** |
+
+
+at|The word ^*Isometimes^*N has been added to the title of this topic in order to remind you that the word ^*Ialways^*N is what bridge players might call an overbid. Always cover an honor with an honor is a useful guideline, but as you will see there are plenty of situations where it should be rejected. Here is what this guideline means:
+
+|
+pg| ***** 4 ***** |
+
+
+cs|1|at|^-{ If you, as a defender, are second to play to a trick and the first card played to 
+ that trick is an honor, you should cover with a higher honor if you have one. }
+^-
+|
+pg| ***** 5 ***** |
+
+
+at|Note that this guideline contradicts (or at least supersedes) second hand low. |
+pg| ***** 6 ***** |
+
+
+tb||
+st||ha|y|md|1sq85,skjt,sa72,s9643|
+
+
+nt|^b@2^z@3If you have used the original Learn to Play Bridge program, you will be familiar with the concept of the pseudo-finesse which was discussed at length in that program. As an example of a pseudo-finesse, consider the lead of the @SQ by South. |
+pg| ***** 7 ***** |
+
+
+pc|sq|at|If West plays the @SJ or the @S10 to this trick, |
+pg| ***** 8 ***** |
+
+
+pc|st|at|South will play a low spade from the dummy and his @SQ will win the trick. |
+pg| ***** 9 ***** |
+
+
+pc|ss|
+pg| ***** 10 ***** |
+
+
+nt|^b@2^z@3The @SA will still win a trick, of course, so South will end up with 2 spade tricks - an apparent victory for the pseudo-finesse! |
+pg| ***** 11 ***** |
+
+
+up|3|at|Not so fast! As you probably know, the ^*Ipseudo^*N in pseudo-finesse means "false". South's play does not count as a real finesse because all West has to do is cover the @SQ with his @SK (covering an honor with an honor). |
+pg| ***** 12 ***** |
+
+
+pc|sk|at|It doesn't matter if declarer wins the @SA or not - he has no hope of winning a second trick in spades anymore. |
+pg| ***** 13 ***** |
+
+
+up|1|
+
+nt|^b@2^z@3The play of the @SQ by South is not a real finesse because it can never gain a trick against proper defense. As we just saw, if West has the @SK he will cover the @SQ |
+pg| ***** 14 ***** |
+
+
+md|0,s9,,sk|at|and if East has the @SK instead, he will win the trick with that card. |
+pg| ***** 15 ***** |
+
+
+pc|sssk|
+pg| ***** 16 ***** |
+
+
+up|4|at|^^^^Meanwhile, South has a legitimate play for a second spade trick. All he has to do is lead a low spade to dummy's @SA |
+pg| ***** 17 ***** |
+
+
+pc|sssas|
+pg| ***** 18 ***** |
+
+
+at|followed by a spade toward his @SQ. |
+pg| ***** 19 ***** |
+
+
+pc|s|at|If East has the @SK then the @SQ will score a trick. |
+pg| ***** 20 ***** |
+
+
+up|5|md|0,sk,,s9|
+
+
+nt|^b@2^z@3Recall the following principle that was introduced earlier in this chapter:
+|
+pg| ***** 21 ***** |
+
+
+cs|2|at|^^^-{ Don't make a play that will succeed only if an opponent makes (or has made) a mistake! }
+^-
+|
+pg| ***** 22 ***** |
+
+
+at|That's exactly what the @SQ amounts to here. This pseudo-finesse will only gain a trick if West errs by failing to cover with the @SK.  Declarers should not take pseudo-finesses!
+|
+pg| ***** 23 ***** |
+
+
+nt|^b@2^z@3If this particular declarer has not learned that pseudo-finesses are exercises in futility and leads the @SQ, |
+pg| ***** 24 ***** |
+
+
+pc|sq|at|the fact that West has that card surrounded by the @SKJ (not to mention that the @S10 further strengthens his spade holding), |
+pg| ***** 25 ***** |
+
+
+at|
+should make it easy for West to know that covering the @SQ with the @SK is the indicated play. |
+pg| ***** 26 ***** |
+
+
+at|^^^^West should be able to foresee the danger of playing the @SJ or the @S10 to this trick.|
+pg| ***** 27 ***** |
+
+
+nt|^b@2^z@3Here is one time that you should cover an honor with an honor:
+|
+pg| ***** 28 ***** |
+
+
+ht|i|cs|4|at|^^^-{ Cover an honor with an honor when you know that by doing so you will promote an other 
+ card that you hold into a winner. If your holding surrounds the honor that was led, cover it! }
+^-
+|
+pg| ***** 29 ***** |
+
+
+at|Here West knows that the @SJ (and @S10) will come into their own |
+pg| ***** 30 ***** |
+
+
+at|if the @SK is played.|
+pg| ***** 31 ***** |
+
+
+nt|^b@2^z@3West's problem is much more difficult if, instead of the @SJ10 to back up his @SK, |
+pg| ***** 32 ***** |
+
+
+md|0,s643,,sjt|at|he has a bunch of small spades instead. |
+pg| ***** 33 ***** |
+
+
+at|Now East has all of the relevant middle spades |
+pg| ***** 34 ***** |
+
+
+at|and it is just as important for West to cover the @SQ with 
+his @SK. If he does so, |
+pg| ***** 35 ***** |
+
+
+pc|sk|at|the declarer will be able to come to only 1 spade trick (the @SA) regardless of how he plays from here. |
+pg| ***** 36 ***** |
+
+
+up|1|at|^^If West plays a low spade instead of covering the @SQ with his @SK, |
+pg| ***** 37 ***** |
+
+
+pc|s3|at|South will steal a second spade trick with his pseudo-finesse. |
+pg| ***** 38 ***** |
+
+
+pc|s2s|
+pg| ***** 39 ***** |
+
+
+up|3|
+
+nt|^b@2^z@3Here is another good time to cover an honor with an honor:
+|
+pg| ***** 40 ***** |
+
+
+cs|2|at|^^^-{ Cover an honor with an honor when you suspect that there is a good chance that, 
+ by doing so, you will be able to promote a card that your partner holds into a winner.  }
+^-
+|
+pg| ***** 41 ***** |
+
+
+at|The tricky part is that you cannot see your partner's hand!|
+pg| ***** 42 ***** |
+
+
+nt|^b@2^z@3Could it cost for West to play the @SK in this situation? |
+pg| ***** 43 ***** |
+
+
+pc|sk|at|Yes, it could cost. One way to see this is by switching the South and East spade holdings. |
+pg| ***** 44 ***** |
+
+
+md|0sjt9,,,s85|at|Once West covers the @SQ with his @SK, the declarer will win dummy's @SA |
+pg| ***** 45 ***** |
+
+
+pc|sas|
+pg| ***** 46 ***** |
+
+
+at|and win 3 more spade tricks (for a total of 4) with the @SJ, @S10, and @S9 that remain in his hand. |
+pg| ***** 47 ***** |
+
+
+up|3|
+
+nt|^b@2^z@3Now let's see what happens if West does not cover the @SQ with his @SK. |
+pg| ***** 48 ***** |
+
+
+pc|s3|at|The declarer will play low from the dummy and the @SQ will win the trick. |
+pg| ***** 49 ***** |
+
+
+pc|ss|
+pg| ***** 50 ***** |
+
+
+at|^^^^South will lead another spade for a second finesse |
+pg| ***** 51 ***** |
+
+
+pc|sj|at|and, as before, West does best to withhold his @SK. |
+pg| ***** 52 ***** |
+
+
+pc|s4|at|Dummy's remaining low spade is played and South's @SJ wins the trick. |
+pg| ***** 53 ***** |
+
+
+pc|ss|
+pg| ***** 54 ***** |
+
+
+nt|^b@2^z@3The dummy is now out of low spades so the declarer cannot finesse in that suit anymore. All he can do is play a spade to dummy's now singleton @SA. |
+pg| ***** 55 ***** |
+
+
+pc|sss|md|0,,,h2|at|Let's give East something to discard so we can complete this trick. |
+pg| ***** 56 ***** |
+
+
+pc|h|
+pg| ***** 57 ***** |
+
+
+at|South has won 3 spade tricks, but he will not win a 4th trick in this suit since West has retained the @SK to guard South's remaining spade. |
+pg| ***** 58 ***** |
+
+
+md|1sqjt9,sk643,sa72,s85|
+
+
+nt|^b@2^z@3So when the spades that West cannot see are distributed as above |
+pg| ***** 59 ***** |
+
+
+at|and South leads the @SQ (or any of his other 3 equal spades for that matter), |
+pg| ***** 60 ***** |
+
+
+pc|sq|at|West will give declarer an undeserved 4th spade winner if he covers an honor with an honor by playing his @SK. You now have concrete proof that the word ^*Ialways^*N does not belong in the guideline that we are studying!|
+pg| ***** 61 ***** |
+
+
+nt|^b@2^z@3Here is the lesson to be learned from this example:
+|
+pg| ***** 62 ***** |
+
+
+ht|i|cs|3|at|^^^-{ Cover an honor with an honor should usually be rejected if the declarer or dummy 
+ is unable to run the suit that was led by taking repeated finesses against your honor. }
+^-
+|
+pg| ***** 63 ***** |
+
+
+at|Here your @SK is guarded by 3 small cards, but the declarer can take only 2 finesses. |
+pg| ***** 64 ***** |
+
+
+up|1|
+
+nt|^b@2^z@3If we take South's @S10 and give it to East, |
+pg| ***** 65 ***** |
+
+
+md|0,,,st|at|the resulting position illustrates another reason why, when South leads the @SQ, |
+pg| ***** 66 ***** |
+
+
+pc|sq|at|it could be costly for the defense to have West cover with the @SK.
+
+|
+pg| ***** 67 ***** |
+
+
+pc|sk|At|If West does so, the dummy's @SA will win the trick |
+pg| ***** 68 ***** |
+
+
+pc|sas|
+pg| ***** 69 ***** |
+
+
+at|and South's remaining @SJ9 will allow him to take a successful finesse against East's @S10. South can win 2 more spade tricks for a total of 3 tricks in that suit |
+pg| ***** 70 ***** |
+
+
+up|3|at|as a result of West covering the @SQ with his @SK. |
+pg| ***** 71 ***** |
+
+
+nt|^b@2^z@3Now look what happens if West refuses to cover the @SQ with his @SK. |
+pg| ***** 72 ***** |
+
+
+pc|s3|at|A low spade is played from the dummy and the @SQ wins the trick. |
+pg| ***** 73 ***** |
+
+
+pc|s2s|
+pg| ***** 74 ***** |
+
+
+at|If South continues with the @S9, |
+pg| ***** 75 ***** |
+
+
+pc|s9|at|West plays low again |
+pg| ***** 76 ***** |
+
+
+pc|s4|at|and if the @S7 is played from the dummy, East will win his @S10. |
+pg| ***** 77 ***** |
+
+
+pc|s7st|
+pg| ***** 78 ***** |
+
+
+at|There is no way that South can win 3 spade tricks now! |
+pg| ***** 79 ***** |
+
+
+up|2|at|If the declarer plays the @SA (instead of the @S7), he will win the trick, |
+pg| ***** 80 ***** |
+
+
+pc|sas|
+pg| ***** 81 ***** |
+
+
+at|but West's @SK will prevent South from winning a 3rd spade trick. |
+pg| ***** 82 ***** |
+
+
+up|4|
+
+nt|^b@2^z@3Suppose South tries the @SJ (instead of the @S9) on the second round of spades. |
+pg| ***** 83 ***** |
+
+
+pc|sj|at|Now West can cover with the @SK (admittedly this is not an easy play to find since West cannot see the @S10) |
+pg| ***** 84 ***** |
+
+
+pc|sk|at|and the best South can do is to win the dummy's @SA. |
+pg| ***** 85 ***** |
+
+
+pc|sas|
+pg| ***** 86 ***** |
+
+
+at|All of a sudden East's @S10 is the highest remaining spade in the deck and, as before, South will be held to 2 spade tricks. |
+pg| ***** 87 ***** |
+
+
+up|7|at|West's refusal to cover the @SQ with his @SK on the first round of the suit saves a trick for the defense.|
+pg| ***** 88 ***** |
+
+
+nt|^b@2^z@3|at|This example demonstrates the following instructive point:
+|
+pg| ***** 89 ***** |
+
+
+cs|1|at|^^^-{ Cover an honor with an honor should usually be rejected if doing so 
+ will set up a finessing position against a card in your partner's hand. }
+^-
+|
+pg| ***** 90 ***** |
+
+
+at|Again, it is hard to judge when this advice applies, since you cannot see your partner's hand!|
+pg| ***** 91 ***** |
+
+
+up|1|
+
+nt|^b@2^z@3As we have seen, in both this layout of the unseen spades |
+pg| ***** 92 ***** |
+
+
+md|0st|at|and the layout now shown above, |
+pg| ***** 93 ***** |
+
+
+at|when South leads the @SQ |
+pg| ***** 94 ***** |
+
+
+pc|sq|at|it is best for the defense if West refuses to cover an honor with an honor. |
+pg| ***** 95 ***** |
+
+
+md|0s85,,,sjt9|at|^^^^To be fair, we did see a layout where covering the @SQ with the @SK gained a trick for the defense. The big question is: how can West know if he should play his @SK in this situation when he cannot see the South and East hands?|
+pg| ***** 96 ***** |
+
+
+nt|^b@2^z@3You may be disappointed by the answer to this big question: West cannot know for sure. The only thing that West has to go on is the knowledge that South would be taking a pseudo-finesse if the unseen spades were distributed as above.
+
+A pseudo-finesse is a poor play and West should not play South to be making a mistake like this. |
+pg| ***** 97 ***** |
+
+
+md|0sjt9,,,s85|
+
+nt|^b@2^z@3This argues for West playing a small spade instead of covering the @SQ with his @SK. It is much more likely that the spades are distributed something like what you now see above (where the @SQ is a good play for declarer to make) |
+pg| ***** 98 ***** |
+
+
+md|0s85,,,sjt9|at|^^than that the spade layout is such that the declarer is attempting a pseudo-finesse (a very poor play). |
+pg| ***** 99 ***** |
+
+
+nt|^b@2^z@3Sometimes there will be clues available from the bidding (or from East's signals) that can help West to decide if he should play the @SK or not, but on some deals West can do no better than to fall back on the following piece of advice (which we have seen before): 
+|
+pg| ***** 100 ***** |
+
+
+ht|t|cs|4|at|^-{ Don't make a play that will succeed only if an opponent makes (or has made) a mistake! }
+^-
+|
+pg| ***** 101 ***** |
+
+
+md|3,,hj63,hq52|
+
+
+nt|^b@2^z@3Consider this situation where the declarer leads the @HJ from the dummy. |
+pg| ***** 102 ***** |
+
+
+pc|hj|at|There are several possible layouts where East's best play is to cover the @HJ with the @HQ. |
+pg| ***** 103 ***** |
+
+
+pc|hq|md|0hat87,hk94|at|For example, consider this distribution of the unseen hearts. |
+pg| ***** 104 ***** |
+
+
+at|The declarer can take East's @HQ with his @HA, |
+pg| ***** 105 ***** |
+
+
+pc|hah|
+pg| ***** 106 ***** |
+
+
+at|but West's @HK9 sitting over South's @H10 will represent 2 heart winners for the defense. |
+pg| ***** 107 ***** |
+
+
+up|3|
+
+nt|^b@2^z@3If East had followed suit with a small heart (instead of covering the @HJ with his @HQ), |
+pg| ***** 108 ***** |
+
+
+pc|h2|at|South would play low from his hand and West's @HK would win the trick. |
+pg| ***** 109 ***** |
+
+
+pc|h7hk|
+pg| ***** 110 ***** |
+
+
+wt|n|at|The next time the lead is in the dummy, South can finesse against East's @HQ by playing low to his @H10. |
+pg| ***** 111 ***** |
+
+
+pc|hhhth|
+pg| ***** 112 ***** |
+
+
+at|The @HA will take care of all of the defenders' remaining hearts. |
+pg| ***** 113 ***** |
+
+
+pc|hahhh|
+pg| ***** 114 ***** |
+
+
+at|^^^^The defense is thus held to 1 heart trick (instead of 2) |
+pg| ***** 115 ***** |
+
+
+up|11|at|due to East's failure to cover the @HJ with his @HQ on the first round of the suit. |
+pg| ***** 116 ***** |
+
+
+md|0hk9,ht7|
+
+
+nt|^b@2^z@3Here is another possible layout of the South and West hearts |
+pg| ***** 117 ***** |
+
+
+at|where East must cover the @HJ or else lose a trick that the defense is entitled to. |
+pg| ***** 118 ***** |
+
+
+pc|hq|at|^^^^South will win the trick |
+pg| ***** 119 ***** |
+
+
+pc|hah|
+pg| ***** 120 ***** |
+
+
+wt|n|at|and return to the dummy with some other suit in order to attempt a finesse against the @H10 with East (South cannot see that West actually has that card). |
+pg| ***** 121 ***** |
+
+
+pc|hhh9|at|On this layout, West can win the @H10. |
+pg| ***** 122 ***** |
+
+
+pc|ht|at|That will be the one and only heart trick for the defense. |
+pg| ***** 123 ***** |
+
+
+up|7|
+
+nt|^b@2^z@3One trick may not sound like much, but it is much better than none! None is exactly the number of heart tricks that the defense will take if East fails to cover the @HJ with the @HQ on the first trick. |
+pg| ***** 124 ***** |
+
+
+at|If East follows small, |
+pg| ***** 125 ***** |
+
+
+pc|H2|at|South will also play a small heart and the @HJ will win the trick. |
+pg| ***** 126 ***** |
+
+
+pc|h8h|
+pg| ***** 127 ***** |
+
+
+at|^^^^All the remaining East-West hearts will fall under the @HA and @HK, leaving the defense with no chance to win a trick in this suit. |
+pg| ***** 128 ***** |
+
+
+up|3|
+
+nt|^b@2^z@3There are several other possible layouts where it will help the defense if East covers an honor with an honor by playing his @HQ when the @HJ is led from the dummy.
+
+There are a few possible layouts where playing the @HQ in this position will cost the defense and there are other layouts in which it does not matter if East covers or not.|
+pg| ***** 129 ***** |
+
+
+nt|^b@2^z@3There are 2 reasons why it is a good idea for East to play his @HQ in this situation. |
+pg| ***** 130 ***** |
+
+
+at|First, playing the @HQ may result in a heart in West's hand being promoted into a winner (which is what happens to the @H10 on this layout). |
+pg| ***** 131 ***** |
+
+
+at|^^^^Second, if East is not going to win a trick with his @HQ, the best he can do is use that card to blot out a card that may be of value to the declarer (the @HJ in this case). |
+pg| ***** 132 ***** |
+
+
+up|1|
+
+nt|^b@2^z@3|ht|d|cs|2|at|^-{ Usually when an unsupported honor is led from the dummy and the partner of the 
+ opening leader has a higher honor, covering will be an effective play for the defense. }
+^-
+|
+pg| ***** 133 ***** |
+
+
+ht|q|at|The @HJ is said to be unsupported in this situation because it is not backed up by the next lower touching honor (that is, the @H10). Things would be different if the @H10 was in the dummy. |
+pg| ***** 134 ***** |
+
+
+md|1dj83,dkt95,dq62,da74|
+
+nt|^b@2^z@3It is time to revisit a card combination that arose when we were considering second hand low. |
+pg| ***** 135 ***** |
+
+
+at|Recall that when South started by leading a small diamond from his hand, |
+pg| ***** 136 ***** |
+
+
+pc|d3|at|^^^^West had to play second hand low in order to prevent the declarer from winning a trick in this suit. |
+pg| ***** 137 ***** |
+
+
+up|1|wt|n|at|Similarly, when the first lead of the suit was a small card from the dummy, |
+pg| ***** 138 ***** |
+
+
+pc|d2|at|East had to play second hand low or the declarer would win a diamond trick. |
+pg| ***** 139 ***** |
+
+
+up|1|
+
+nt|^b@2^z@3Consider the difference if the declarer starts diamonds by leading an honor instead of a small card. |
+pg| ***** 140 ***** |
+
+
+at|First let's see what happens if he leads the @DQ from the dummy. |
+pg| ***** 141 ***** |
+
+
+pc|dq|at|If East plays second hand low (the play that worked when a low diamond was led), |
+pg| ***** 142 ***** |
+
+
+pc|d4|at|West will win the @DK. |
+pg| ***** 143 ***** |
+
+
+pc|ddk|
+pg| ***** 144 ***** |
+
+
+wt|n|at|^^^^When declarer eventually leads a second round of diamonds from the dummy, |
+pg| ***** 145 ***** |
+
+
+pc|d2|at|the @DJ will be certain to win a trick either now or later (depending on whether East plays his @DA or not). |
+pg| ***** 146 ***** |
+
+
+up|4|
+
+nt|^b@2^z@3So if East plays second hand low on the lead of the @DQ, South will win a diamond trick. |
+pg| ***** 147 ***** |
+
+
+at|If instead East chooses to cover an honor with an honor by playing his @DA, |
+pg| ***** 148 ***** |
+
+
+pc|dadd|
+pg| ***** 149 ***** |
+
+
+at|the declarer will not win a diamond trick since West still has the @DK109 over declarer's @DJ8. |
+pg| ***** 150 ***** |
+
+
+up|3|at|^^^^Second hand low and cover an honor with an honor cannot both be right at the same time. |
+pg| ***** 151 ***** |
+
+
+at|In this particular situation, cover an honor with an honor is the winner!|
+pg| ***** 152 ***** |
+
+
+up|1|wt|s|
+
+nt|^b@2^z@3If South starts diamonds by leading the @DJ out of his hand, |
+pg| ***** 153 ***** |
+
+
+pc|dj|at|the result is the same. If West plays second hand low (as he should when South leads a low diamond instead of the @DJ), |
+pg| ***** 154 ***** |
+
+
+pc|d5|at|East will win the @DA. |
+pg| ***** 155 ***** |
+
+
+pc|dda|
+pg| ***** 156 ***** |
+
+
+wt|s|at|^^^^When South later leads a second round of diamonds from his hand, it won't matter which diamond West plays - the dummy's @DQ will come into its own and become a winner. |
+pg| ***** 157 ***** |
+
+
+up|3|
+
+nt|^b@2^z@3It's a different story if West applies cover an honor with an honor and plays his @DK on South's lead of @DJ. |
+pg| ***** 158 ***** |
+
+
+pc|dkdd|
+pg| ***** 159 ***** |
+
+
+wt|s|at|The only remaining test for the defense is that, if South later leads the @D8 from his hand, |
+pg| ***** 160 ***** |
+
+
+pc|d8|at|West must remember to split his @D109 |
+pg| ***** 161 ***** |
+
+
+at|(splitting low with the @D9 as we do in this program). |
+pg| ***** 162 ***** |
+
+
+pc|d9|at|^^^^The dummy's @DQ will be trapped and the declarer will not be able to win a trick in diamonds.|
+pg| ***** 163 ***** |
+
+
+up|6|md|1cj,cq873,ca|
+
+
+
+nt|^b@2^z@3Let's look at a few situations where a defender should know that it would be a bad idea to cover an honor with an honor. In the example shown above, South leads the @CJ. |
+pg| ***** 164 ***** |
+
+
+pc|cj|at|It should be easy for West to realize that covering the @CJ with the @CQ would be a poor play. |
+pg| ***** 165 ***** |
+
+
+at|^^^^Regardless of the club that West plays, the singleton @CA is going to have to be played from the dummy. West should simply play second hand low. There is no reason to waste the @CQ. |
+pg| ***** 166 ***** |
+
+
+up|1|md|0ckt9,,,c6542|
+
+nt|^b@2^z@3Perhaps the complete layout of the club suit is something like this. |
+pg| ***** 167 ***** |
+
+
+at|Why did South play the @CJ? |
+pg| ***** 168 ***** |
+
+
+at|Well, the @CJ, @C10, and @C9 are all equals. |
+pg| ***** 169 ***** |
+
+
+at|Perhaps South led the @CJ in the hope that this particular West was a believer in the ^*Ialways^*N part of always cover an honor with an honor!
+|
+pg| ***** 170 ***** |
+
+
+ht|t|cs|3|at|^-{Do not cover an honor with an honor if you know that dummy  HAS TO  play a higher honor!}
+|
+pg| ***** 171 ***** |
+
+
+md|1sq,sk432,sajt98|
+
+nt|^b@2^z@3Consider this card combination where South leads the @SQ out of his hand. |
+pg| ***** 172 ***** |
+
+
+pc|sq|at|West can see that if he applies cover an honor with an honor and plays his @SK, |
+pg| ***** 173 ***** |
+
+
+pc|sk|at|the dummy's @SA will be played |
+pg| ***** 174 ***** |
+
+
+pc|sa|at|and the rest of the dummy's spades will be high. |
+pg| ***** 175 ***** |
+
+
+up|2|at|^^^^Since the defenders cannot possibly win a single spade trick if West covers the @SQ with his @SK, |
+pg| ***** 176 ***** |
+
+
+at|he cannot do any worse if he plays a low spade instead. |
+pg| ***** 177 ***** |
+
+
+pc|s2|md|0s5,,,76|
+
+nt|^b@2^z@3On this layout of the unseen spades, the defense will do better if West refuses to cover the @SQ. |
+pg| ***** 178 ***** |
+
+
+at|South will play small from the dummy and his @SQ will win the trick. |
+pg| ***** 179 ***** |
+
+
+pc|ss|
+pg| ***** 180 ***** |
+
+
+at|The declarer will repeat the spade finesse, |
+pg| ***** 181 ***** |
+
+
+pc|ssss|
+pg| ***** 182 ***** |
+
+
+at|but South is now out of spades and, as such, he cannot take any more finesses in that suit. |
+pg| ***** 183 ***** |
+
+
+md|0h2,,,h3|at|^^^^Let's give East and South something to discard on the @SA. |
+pg| ***** 184 ***** |
+
+
+pc|sahh|at|West still has a small spade to play on this trick |
+pg| ***** 185 ***** |
+
+
+pc|s4|
+pg| ***** 186 ***** |
+
+
+at|and his @SK will win a trick after all. |
+pg| ***** 187 ***** |
+
+
+up|12|md|3sajt98,s76,sq5,sk432|
+
+
+nt|^b@2^z@3The card combination that we have just looked at has now been turned upside down. |
+pg| ***** 188 ***** |
+
+
+at|Now the lead of the @SQ comes from the dummy. |
+pg| ***** 189 ***** |
+
+
+pc|sq|at|^^^^East has to decide if he should cover an honor with an honor by playing the @SK (which would not be a success on this layout) |
+pg| ***** 190 ***** |
+
+
+at|or play second hand low (the winning play for the defense). |
+pg| ***** 191 ***** |
+
+
+nt|^b@2^z@3As we have seen in our study of second hand low, the partner of the opening leader often has to make a very difficult decision when he is second to play to a trick. |
+pg| ***** 192 ***** |
+
+
+at|^^^^The reason is that he cannot see the holding of the third hand to play. Life is easier for the opening leader because when he is second to play to a trick, the dummy will be third to play and he can see the dummy's cards. The partner of the opening leader sometimes has to make these decisions in the dark.|
+pg| ***** 193 ***** |
+
+
+nt|^b@2^z@3Given the layout of the spades that he cannot see, second hand low works best for the defense here. |
+pg| ***** 194 ***** |
+
+
+at|Suppose we move the @S10 and the @S9 to the West hand. |
+pg| ***** 195 ***** |
+
+
+md|0,st9|at|In the resulting layout of the unseen spades, |
+pg| ***** 196 ***** |
+
+
+at|the second hand low play of the @S2 by East will cost the defense a trick. |
+pg| ***** 197 ***** |
+
+
+pc|s2|at|^^^^South will play the @S8 and the @SQ will win the trick. |
+pg| ***** 198 ***** |
+
+
+pc|s8s|
+pg| ***** 199 ***** |
+
+
+at|The declarer can then repeat the spade finesse and win 2 more tricks in the suit for a total of 3 spade tricks. |
+pg| ***** 200 ***** |
+
+
+up|3|
+
+nt|^b@2^z@3On this layout the defense does better if East covers the @SQ with his @SK. |
+pg| ***** 201 ***** |
+
+
+pc|sk|at|South wins the @SA, |
+pg| ***** 202 ***** |
+
+
+pc|sas|
+pg| ***** 203 ***** |
+
+
+at|but the @SJ will be his only other trick in the suit. West's @S10 has been promoted into a third-round winner for the defense. |
+pg| ***** 204 ***** |
+
+
+up|3|at|^^^^The upshot is that East must cover an honor with an honor to hold the declarer to 2 tricks in spades. |
+pg| ***** 205 ***** |
+
+
+up|1|
+
+nt|^b@2^z@3In conclusion, when the @SQ is led from dummy, |
+pg| ***** 206 ***** |
+
+
+pc|sq|at|sometimes it will be right for East to cover an honor with an honor |
+pg| ***** 207 ***** |
+
+
+md|0st9|at|and sometimes second hand low will work out better for the defense. 
+|
+pg| ***** 208 ***** |
+
+
+cs|1|at|^^^-{ The partner of the opening leader often has to guess if second hand low 
+ or cover an honor with an honor will work out better for the defense. }|
+pg| ***** 209 ***** |
+
+
+nt|^b@2^z@3|cs|2|ht|d|at|^-{ The bidding can help a defender to know if he should cover an honor with an honor. }^-
+|
+pg| ***** 210 ***** |
+
+
+ht|k|at|In this example, if South really has a spade holding like @SAJ1098 (where second hand low is best for East), he probably would have bid spades at some point. |
+pg| ***** 211 ***** |
+
+
+md|0,st9|n^|5|at|^^^^If South's spades were shorter he would not have bid the suit. East may well know that he should cover the @SQ with his @SK.|
+pg| ***** 212 ***** |
+
+
+md|3,,hqjt98,hk653|
+
+nt|^b@2^z@3Poor old East never seems to have it easy when he is second to play to a trick, but that is not always the case. Consider this situation where the @HQ is led from the dummy. |
+pg| ***** 213 ***** |
+
+
+pc|hq|at|^^^^East has to decide if he should play second hand low or cover an honor with an honor by playing the @HK. Here the partner of the opening leader should be able to figure out which strategy rates to be best for the defense. Can you work it out?|
+pg| ***** 214 ***** |
+
+
+nt|^b@2^z@3East should play second hand low. |
+pg| ***** 215 ***** |
+
+
+at|If East decides to cover an honor with an honor by playing the @HK, it can only hurt the defense. |
+pg| ***** 216 ***** |
+
+
+pc|hk|md|0h742,ha|at|^^^^The @HA is obviously an important card and East does not know who has it. If West has the @HA, there is no reason for East to win a trick that his partner could win. If West's @HA happens to be singleton, East will be very sorry if he plays the @HK as both of the defenders' high hearts will be wasted on the same trick!|
+pg| ***** 217 ***** |
+
+
+pc|hha|
+pg| ***** 218 ***** |
+
+
+up|2|md|0ha,h2|
+
+nt|^b@2^z@3If the declarer has the @HA instead of West, again East has nothing to gain by playing the @HK. South would win the @HA |
+pg| ***** 219 ***** |
+
+
+pc|hah|
+pg| ***** 220 ***** |
+
+
+at|and the rest of the hearts in the dummy would all become winners. |
+pg| ***** 221 ***** |
+
+
+up|3|at|Meanwhile, if East had correctly played second hand low, |
+pg| ***** 222 ***** |
+
+
+pc|h3|at|South would also play low and the @HQ would win the trick. |
+pg| ***** 223 ***** |
+
+
+pc|hh|
+pg| ***** 224 ***** |
+
+
+at|^^^^The declarer can take one more heart finesse, but East has enough low hearts to retain a stopper in the suit. |
+pg| ***** 225 ***** |
+
+
+up|3|
+
+nt|^b@2^z@3Remember that the main reason to cover an honor with an honor is to promote smaller cards in either your hand or your partner's hand into winners. The sight of the dummy's powerful hearts should be enough to convince East that this will not happen if he covers the @HQ with his @HK. |
+pg| ***** 226 ***** |
+
+
+at|^^^^East should therefore play second hand low. At worst this play will break even, but as we just saw, there are layouts where playing second hand low will save a trick for the defense.|
+pg| ***** 227 ***** |
+
+
+md|3,,djt4,dq92|
+
+nt|^b@2^z@3Here is a more complex situation where the partner of the opening leader is in a good position to know what to play as second hand. The @DJ is led from the dummy. |
+pg| ***** 228 ***** |
+
+
+pc|dj|at|^^^^East has to decide if he should cover an honor with an honor by playing the @DQ |
+pg| ***** 229 ***** |
+
+
+at|or play second hand low. It turns out that second hand low is the correct play in this situation |
+pg| ***** 230 ***** |
+
+
+at|and the way to see this is to consider what might go wrong if East covers with the @DQ instead. |
+pg| ***** 231 ***** |
+
+
+nt|^b@2^z@3|pc|dq|md|0dak85,d763|
+
+at|The layout of the unseen diamonds is important, |
+pg| ***** 232 ***** |
+
+
+at|especially the position of the @DA and @DK. If South has both of those cards, it can only cost for East to cover the @DJ with his @DQ. South will win the trick |
+pg| ***** 233 ***** |
+
+
+pc|dkd|
+pg| ***** 234 ***** |
+
+
+at|and be able to play the rest of the suit without losing a trick |
+pg| ***** 235 ***** |
+
+
+at|since all of the defenders' remaining diamonds will fall under South's @DA and the 
+dummy's @D10. |
+pg| ***** 236 ***** |
+
+
+up|3|
+
+nt|^b@2^z@3On this particular layout, playing second hand low is no better. |
+pg| ***** 237 ***** |
+
+
+pc|d2|at|South can play low from his hand, finessing East for the @DQ. |
+pg| ***** 238 ***** |
+
+
+pc|dd|
+pg| ***** 239 ***** |
+
+
+at|Now the rest of the defenders diamonds will fall when South cashes the @DA and @DK. As before the defense will not win any tricks. |
+pg| ***** 240 ***** |
+
+
+up|3|at|^^^^On this layout it does not matter what diamond East plays, |
+pg| ***** 241 ***** |
+
+
+at|but he can make South work harder if he plays second hand low. |
+pg| ***** 242 ***** |
+
+
+at|Covering the @DJ with the @DQ makes South's task a little easier. |
+pg| ***** 243 ***** |
+
+
+nt|^b@2^z@3Let's trade South's @DA for one of West's low diamonds. |
+pg| ***** 244 ***** |
+
+
+md|0d3,da|at|In the layout that results, |
+pg| ***** 245 ***** |
+
+
+at|again it does not matter if East covers the @DJ with his @DQ or plays second hand low instead. We won't go through all the motions this time, but the play of the @DQ or the @D2 will result in 2 tricks for the defense against this layout of the unseen diamonds. |
+pg| ***** 246 ***** |
+
+
+nt|^b@2^z@3The only other way that the @DA and the @DK can be distributed is shown when we exchange those 2 cards between the West and South hands. |
+pg| ***** 247 ***** |
+
+
+md|0da,dk|at|It turns out that, in this layout of the diamond suit, |
+pg| ***** 248 ***** |
+
+
+at|East's decision when the @DJ is led will make a difference to the outcome. |
+pg| ***** 249 ***** |
+
+
+at|First let's see what happens if East incorrectly covers the @DJ with his @DQ. |
+pg| ***** 250 ***** |
+
+
+pc|Dq|
+
+nt|^b@2^z@3South will win the @DA |
+pg| ***** 251 ***** |
+
+
+pc|Dad|
+pg| ***** 252 ***** |
+
+
+at|and lead a second round of diamonds toward the dummy's remaining @D10 doubleton. |
+pg| ***** 253 ***** |
+
+
+pc|d3|at|It doesn't matter what West does here - the result will be the same, |
+pg| ***** 254 ***** |
+
+
+at|but let's assume that West wants to practice his second hand low technique. |
+pg| ***** 255 ***** |
+
+
+pc|d7|at|Dummy's @D10 will win |
+pg| ***** 256 ***** |
+
+
+pc|dtd|
+pg| ***** 257 ***** |
+
+
+at|and, although West's @DK and East's @D9 are the highest diamonds left, they will both fall on the next trick. |
+pg| ***** 258 ***** |
+
+
+pc|dddd|
+pg| ***** 259 ***** |
+
+
+up|11|at|The defense scores only 1 diamond trick when East covers the @DJ with his @DQ. |
+pg| ***** 260 ***** |
+
+
+nt|^b@2^z@3The defense will win a second diamond trick if East correctly plays second hand low when the dummy's @DJ is led. |
+pg| ***** 261 ***** |
+
+
+pc|d2|at|South will play low from his hand (playing the @DA only makes things easier for the defense) |
+pg| ***** 262 ***** |
+
+
+pc|d3|at|and West will win his @DK. |
+pg| ***** 263 ***** |
+
+
+pc|dk|
+pg| ***** 264 ***** |
+
+
+at|In the resulting position, there is no way for the declarer to prevent East from winning a second diamond trick for the defense. |
+pg| ***** 265 ***** |
+
+
+wt|s|
+
+nt|^b@2^z@3Laying down the @DA is no good, East would follow with the @D9 |
+pg| ***** 266 ***** |
+
+
+pc|daddd|
+pg| ***** 267 ***** |
+
+
+at|and be left with the winning @DQ. |
+pg| ***** 268 ***** |
+
+
+up|4|at|Leading a low diamond out of the South hand is no better - East would be able to win a trick at once. |
+pg| ***** 269 ***** |
+
+
+pc|dddtdq|
+pg| ***** 270 ***** |
+
+
+up|4|wt|n|at|East's @DQ9 has the dummy's @D10 surrounded, |
+pg| ***** 271 ***** |
+
+
+at|so if the @D10 is led from dummy, |
+pg| ***** 272 ***** |
+
+
+pc|dt|at|East should know to cover an honor with an honor by playing the @DQ. |
+pg| ***** 273 ***** |
+
+
+pc|dq|at|South can win the @DA, |
+pg| ***** 274 ***** |
+
+
+pc|dad|
+pg| ***** 275 ***** |
+
+
+at|but East's @D9 has grown up to become the master card in the suit. |
+pg| ***** 276 ***** |
+
+
+up|4|
+
+nt|^b@2^z@3The declarer's only other option is to lead the @D4 from the dummy, |
+pg| ***** 277 ***** |
+
+
+pc|d4|at|but East can counter by playing second hand low with the @D9. |
+pg| ***** 278 ***** |
+
+
+pc|d9|at|South wins the trick with his @DA, |
+pg| ***** 279 ***** |
+
+
+pc|dad|
+pg| ***** 280 ***** |
+
+
+at|but East's @DQ will end up winning a trick. |
+pg| ***** 281 ***** |
+
+
+up|7|at|What it all boils down to is that once East plays the @D2 when the @DJ is led from the dummy, there is no way for the declarer to avoid losing 2 diamond tricks. |
+pg| ***** 282 ***** |
+
+
+at|If instead East covers an honor with an honor by playing the @DQ, South will lose only 1 diamond trick. |
+pg| ***** 283 ***** |
+
+
+up|1|
+
+nt|^b@2^z@3|cs|4|ht|b|at|There is a valuable lesson to be learned from this card combination:
+|
+pg| ***** 284 ***** |
+
+
+ht|j|at|^-{ When the dummy has 2 or more touching honors, it is usually best for the partner of the 
+ opening leader to wait until the last of these is played before he covers with a higher honor. }
+|
+pg| ***** 285 ***** |
+
+
+ht|v|at|Here, East's best defense is to cover when the second diamond honor is led from dummy.|
+pg| ***** 286 ***** |
+
+
+md|3,,cqj6,ck8|
+
+nt|^b@2^z@3The guideline that we just learned in which the partner of the opening leader should wait until the last of a series of touching honors is played from the dummy before covering is a good one, but there is one notable exception to this principle. Consider this situation where the @CQ is led from the dummy. |
+pg| ***** 287 ***** |
+
+
+pc|cq|at|According to the guideline that we just learned, East should play the @C8 here and wait until the @CJ is led before he covers with is @CK. |
+pg| ***** 288 ***** |
+
+
+pc|c8|md|0cat32,c9754|
+
+nt|^b@2^z@3The problem with this strategy is that, |
+pg| ***** 289 ***** |
+
+
+at|after South plays low from his hand and wins the finesse, |
+pg| ***** 290 ***** |
+
+
+pc|cc|
+pg| ***** 291 ***** |
+
+
+at|his next lead may not be the @CJ that East was hoping to cover, |
+pg| ***** 292 ***** |
+
+
+at|but rather the @C6 instead! |
+pg| ***** 293 ***** |
+
+
+pc|c6|at|East now has to play his @CK and South happily takes that card with his @CA. |
+pg| ***** 294 ***** |
+
+
+pc|ccac|
+pg| ***** 295 ***** |
+
+
+at|The dummy's @CJ will win the next trick, |
+pg| ***** 296 ***** |
+
+
+at|and the declarer's @C10 will win the trick after that. When all is said and done, South will have won 4 club tricks and the defense will not have won any!|
+pg| ***** 297 ***** |
+
+
+up|7|
+
+nt|^b@2^z@3On this layout, the defense will gain a trick if East covers the first club honor that is led from the dummy. |
+pg| ***** 298 ***** |
+
+
+pc|ck|at|South can win the @CA, |
+pg| ***** 299 ***** |
+
+
+pc|cac|
+pg| ***** 300 ***** |
+
+
+at|but West's clubs are long enough and strong enough to ensure that he will control the 4th round of the suit. |
+pg| ***** 301 ***** |
+
+
+at|If it turns out that South was dealt West's @C9 instead of the @C3 or @C2, |
+pg| ***** 302 ***** |
+
+
+md|0c9,c2|at|there is nothing the defense can do to stop South from winning 4 club tricks. |
+pg| ***** 303 ***** |
+
+
+md|0c2,c9|up|3|
+
+nt|^b@2^z@3What makes this situation different from the last one that we saw is that East has a doubleton @CK. |
+pg| ***** 304 ***** |
+
+
+at|If he plays the @CK when dummy's first honor is led, his @CK will fall, but at least it will take a relevant card with it. |
+pg| ***** 305 ***** |
+
+
+at|If East does not play the @CK now, |
+pg| ***** 306 ***** |
+
+
+pc|ccc|
+pg| ***** 307 ***** |
+
+
+at|he will not be happy when that card is used to capture the lowly @C6 on the next round of the suit. |
+pg| ***** 308 ***** |
+
+
+up|3|
+
+nt|^b@2^z@3|cs|1|at|
+The principle at work in this card combination applies in many others as well:
+|
+pg| ***** 309 ***** |
+
+
+at|^^^-{ Cover an honor with an honor is often good advice when you are dealt a doubleton honor. 
+ By covering in these situations you ensure that your honor is used to capture a relevant card. }
+^-
+|
+pg| ***** 310 ***** |
+
+
+at|In this example, East would rather play his @CK on the @CQ than on the @C6!|
+pg| ***** 311 ***** |
+
+
+qx|def,wide|
+<<--INSERT-START-->>=03___LTPB___defense_twist.ins
+%%
+bt||
+nt|^b@2|cs|4|cp||fp|3|at|^^^i{  aaBridge and Hand Play  }|fp||cp||cs||
+ht|b|n#|3|at|^*baaBridge editors note:^*n |
+ht|e|n^|3|at|^b@2Readers who have worked through ^*b Learn to Play Bridge 1 ^*n will know that whenever you can see the  { ^*b 1st ^*n }  button in the lower green area and a full bridge deal above it, you can:^^^c@2|
+cs|lg|ht|g|n^|0|at|{ ^^|n^|5|at| ^y       }|cs||ht|g|n#|4|
+at||cp||at|^c  ^*bClick { ^*b 1st ^*n } @0@1 to enter the deal and ^*b PLAY ^*n the cards.   Later you will need to click  { ^*b Back to Movie ^*n }  to return.|
+n#|0|at|^^^^^b@2Here in ^*b Learn to Play Bridge 2 ^*n you can do exactly the same and PLAY out the deal against the aaBridge bots.
+|lg|b|n^|5|fp|t|at|^^BUT|fp||at|, for these defense hands you may ^*b first ^*n want to read through the original author's text and THEN play the hand yourself.  Fred Gitelman's fantastic work can be more effective when you have NOT yet seen all four hands.^^|
+cs|2|cp||fp|3|at|^^^^^i  {  Defense with a Twist  }|fp||cp||
+n#|5|at|^b@2^z@3^^^^It is common with ^*b bridge hand diagrams ^*n to always have the declarer in the bottom zone and to have the defenders sitting in the left and right seats.
+^^^*bIF ^*n instead you want the defenders seat you are viewing in to be at the bottom, where South normally is,^^
+^h ^*bLook ^*n in the far right-hand column below the words ...|fp|t|cp|gr|at|   ^t ^*b Power Kib ^*n|cp||fp||cs||at|
+|n#|4|at|^h ^*bClick ^*n on either of the two rotate buttons marked ...   ^t     {^*b  <  }  {  > ^*n } |cp|red|at|  ^*bRotate ^*n ...|cp||at|^^
+^g This way you can get the seat  YOU  want into the bottom zone.^^|
+n#|9|at|^^^*b Later^*n, to restore everything to normal, click the   |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button, on the right above the rotate buttons.|
+%%
+<<--INSERT-END**-->>=03___LTPB___defense_twist.ins
+pg| ***** 312 ***** |
+
+
+qx|d 5,wide|sv||
+
+
+nt|^b@2^z@3|
+st||
+ha||sk|w|
+rh||ah|Deal 5|ah|Cover an honor|ah|with an honor|
+md|1sqjt98hajdakqjcj7,sk762hkqt2d76ckt4,sa54h865dt92caq63|
+mb|1sp2cp2dp2sp6sppp|
+
+
+nt|^b@2^z@3It is unusual to find yourself defending against a slam contract when you have 11 high card points, but that is the situation that you find yourself in on this example deal. South, the dealer,opened the bidding with 1@S. North responded 2@C and South rebid 2@D. North rebid 2@S and South then jumped all the way to 6@S which became the final contract. |
+pg| ***** 313 ***** |
+
+
+nt|^b@2^z@3It is true that quadruple jumps (like South's 6@S) are more common in figure skating than they are in bridge. In this case South's exuberance can be explained by where this deal took place. It happened shortly after midnight at a New Year's Eve party for bridge players. South, who had enjoyed a few drinks over the course of the evening, wanted to be the first bridge player to bid and make a slam in the new year! It's up to you and your partner to stop him!|
+pg| ***** 314 ***** |
+
+
+nt|^b@2^z@3You have an honor sequence in hearts (one of the unbid suits) and, |
+pg| ***** 315 ***** |
+
+
+at|since none of the other suits appear to be attractive for your opening lead, |
+pg| ***** 316 ***** |
+
+
+at|you lead the @HK (the standard lead from your heart holding). |
+pg| ***** 317 ***** |
+
+
+pc|hk|at|The declarer takes a quick look at the dummy before calling for a small heart. |
+pg| ***** 318 ***** |
+
+
+pc|hhha|at|South wins the @HA |
+pg| ***** 319 ***** |
+
+
+pc|sq|at|and places the @SQ on the table. Do you cover an honor with an honor or play second hand low?|
+pg| ***** 320 ***** |
+
+
+nt|^b@2^z@3You should play second hand low. |
+pg| ***** 321 ***** |
+
+
+at|Remember that the reason to cover an honor with an honor is to promote smaller cards in either your own hand or your partner's hand into winners. |
+pg| ***** 322 ***** |
+
+
+at|Your small spades are certainly nothing to write home about and, since South has shown at least 5 spades in the bidding, your partner has 1 spade at the most. Nothing is going to be promoted in either of your hands |
+pg| ***** 323 ***** |
+
+
+at|if you play the @SK in this position. |
+pg| ***** 324 ***** |
+
+
+nt|^b@2^z@3Furthermore, if you correctly play second hand low, |
+pg| ***** 325 ***** |
+
+
+at|you will get a trick with your @SK later in the play. There are not enough spades in the dummy to take the number of finesses that would be required to neutralize your @SK. |
+pg| ***** 326 ***** |
+
+
+at|If you cannot see this yet, watch the effect of playing second hand low. |
+pg| ***** 327 ***** |
+
+
+pc|s2|
+
+nt|^b@2^z@3The declarer calls for a low spade from the dummy |
+pg| ***** 328 ***** |
+
+
+pc|s4s|at|and his @SQ wins the trick as East follows with the @S3. |
+pg| ***** 329 ***** |
+
+
+pc|sj|at|The @SJ comes next and you play second hand low again for the same reason that you did the last time. |
+pg| ***** 330 ***** |
+
+
+pc|s6|at|Dummy's last small spade is played. |
+pg| ***** 331 ***** |
+
+
+pc|sh|at|Your partner discards a heart and the @SJ wins the trick. |
+pg| ***** 332 ***** |
+
+
+at|South winces as he now knows that you are going to win a trump trick despite the fact that the spade finesse worked for him. |
+pg| ***** 333 ***** |
+
+
+nt|^b@2^z@3|pc|st|at|South leads the @S10 to the next trick. This time you have yet another reason for playing second hand low. |
+pg| ***** 334 ***** |
+
+
+pc|s|at|You can see that the dummy is going to have to play the now singleton @SA so there can be no reason to play the @SK now! |
+pg| ***** 335 ***** |
+
+
+pc|Sah|
+pg| ***** 336 ***** |
+
+
+at|With the @SA gone, it should now be 100% clear that your @SK is going to take a trick. The defense will need to win just one other trick to defeat South's small slam. |
+pg| ***** 337 ***** |
+
+
+nt|^b@2^z@3
+A diamond is played from the dummy |
+pg| ***** 338 ***** |
+
+
+pc|dddad|at|and South wins the @DA. |
+pg| ***** 339 ***** |
+
+
+pc|cj|at|The @CJ is led to the next trick and, once again, you have a decision to make. Would you play second hand low or cover an honor with an honor? |
+pg| ***** 340 ***** |
+
+
+nt|^b@2^z@3Cover with the @CK! |
+pg| ***** 341 ***** |
+
+
+pc|ck|at|The fact that you hold the @C10, a card that might be promoted once you cover the @CJ with the @CK, should help make this decision easier for you. |
+pg| ***** 342 ***** |
+
+
+sk||at|The rest of the cards that you cannot see might be laid out as above. South will take your @CK with the @CA, |
+pg| ***** 343 ***** |
+
+
+pc|cac|
+pg| ***** 344 ***** |
+
+
+at|but he is left with no way to avoid losing a trick in both spades and hearts. |
+pg| ***** 345 ***** |
+
+
+mc|11|at|Your @SK and @HQ will both win tricks and the declarer will end up failing by 1 trick in his small slam. |
+pg| ***** 346 ***** |
+
+
+up|3|
+
+nt|^b@2^z@3Watch what would have happened if, when the declarer led the @CJ from his hand, you had played second hand low (as opposed to correctly covering with the @CK). |
+pg| ***** 347 ***** |
+
+
+pc|c4|at|A low club would be played from the dummy and the @CJ would win the trick. |
+pg| ***** 348 ***** |
+
+
+pc|cc|
+pg| ***** 349 ***** |
+
+
+at|South would repeat the club finesse against your @CK |
+pg| ***** 350 ***** |
+
+
+pc|cccqc|
+pg| ***** 351 ***** |
+
+
+at|and then proceed to discard his losing @HJ on dummy's @CA. |
+pg| ***** 352 ***** |
+
+
+pc|cachJc|
+pg| ***** 353 ***** |
+
+
+mc|12|at|Declarer's only remaining loser would be the @SK and he would therefore succeed in his 6@S contract.|
+pg| ***** 354 ***** |
+
+
+up|11|
+
+nt|^b@2^z@3Notice that even if you did not have the @C10 (a card that you thought you might promote when you covered the @CJ with your @CK), |
+pg| ***** 355 ***** |
+
+
+md|0,c2,,ct|at|you partner might have been dealt that card instead. |
+pg| ***** 356 ***** |
+
+
+at|It is just as vital to the defense for you to cover the @CJ with your @CK here |
+pg| ***** 357 ***** |
+
+
+pc|ck|at|even though your own @C4 and @C2 have no chance of being promoted into winners. |
+pg| ***** 358 ***** |
+
+
+at|After South wins the @CA |
+pg| ***** 359 ***** |
+
+
+pc|cac|
+pg| ***** 360 ***** |
+
+
+at|and cashes the @CQ, |
+pg| ***** 361 ***** |
+
+
+pc|cqccc|
+pg| ***** 362 ***** |
+
+
+at|if either defender holds the @C10, the defense will control the club suit. |
+pg| ***** 363 ***** |
+
+
+up|23|md|0,ct,,c2|
+
+nt|^b@2^z@3Early in the play, West had to make another decision between second hand low and cover an honor with an honor. That decision came when the declarer led the @SQ out of his hand. |
+pg| ***** 364 ***** |
+
+
+at|Second hand low was the winning play in this case. |
+pg| ***** 365 ***** |
+
+
+at|If West had covered the @SQ with his @SK instead of playing second hand low, |
+pg| ***** 366 ***** |
+
+
+pc|sk|at|the defense would never come to a trump trick. |
+pg| ***** 367 ***** |
+
+
+nt|^b@2^z@3The declarer would have taken the @SK with dummy's @SA |
+pg| ***** 368 ***** |
+
+
+pc|sas|
+pg| ***** 369 ***** |
+
+
+at|and drawn the rest of West's trump. |
+pg| ***** 370 ***** |
+
+
+pc|shsjs|
+pg| ***** 371 ***** |
+
+
+pc|stssh|
+pg| ***** 372 ***** |
+
+
+pc|s9shd|
+pg| ***** 373 ***** |
+
+
+at|He would then lead the @CJ out of his hand as before. |
+pg| ***** 374 ***** |
+
+
+pc|cj|at|West should still cover with the @CK, but all that is at stake now is an overtrick. |
+pg| ***** 375 ***** |
+
+
+pc|ck|at|With the club finesse working for declarer, |
+pg| ***** 376 ***** |
+
+
+mc|12|at|he will lose only 1 trick (in hearts) and make 6@S. |
+pg| ***** 377 ***** |
+
+
+up|17|at|The defense also needed a trump trick in order to defeat South's slam and once West covered the @SQ with his @SK, he could not win a trump trick. |
+pg| ***** 378 ***** |
+
+
+up|1|
+
+nt|^b@2^z@3In summary, in order to defeat 6@S West must not cover an honor with an honor when South leads the @SQ (and then the @SJ) from his hand. |
+pg| ***** 379 ***** |
+
+
+at|Later, West must cover an honor with an honor, when South leads the @CJ. |
+pg| ***** 380 ***** |
+
+
+at|Remember that covering honors is done for the sake of promotion of smaller cards. West knows that his spot cards in spades cannot be promoted into winners, |
+pg| ***** 381 ***** |
+
+
+at|but that his @C10 can be promoted.|
+pg| ***** 382 ***** |
+
+
+nt|^b@2^z@3|cs|2|ht|d|at|^-{ Cover an honor with an honor only if there is a good chance to promote lower cards in 
+ either your hand or your partner's hand into winners. Otherwise play second hand low. }^-
+|
+pg| ***** 383 ***** |
+
+
+ht|p|at|In spades there is no possibility for promotion. West should not cover an honor with an honor. |
+pg| ***** 384 ***** |
+
+
+at|West should cover an honor with an honor in clubs since promotion is possible in that suit. |
+pg| ***** 385 ***** |
+
+
+up|4|
+
+nt|^b@2^z@3Meanwhile, back at the New Year's Eve party, South's quest to bid and make the first slam of the year failed only because West was on his toes on defense. If you figured out when to cover an honor with an honor and when to reject that guideline on this deal then you have earned yourself a drink!|
+pg| ***** 386 ***** |
+
+
+qx|d 6,Example Deal 6|sv||
+
+
+nt|^b@2^z@3|
+ha||sk|e|
+rh||ah|Deal 6|ah|Cover an honor|ah|with an honor|
+md|1sa43hAkt92da98ca5,skqjth3dt754cj972,s982hj874dqj2ck63|
+mb|1hp2hp4hppp|
+
+
+nt|^b@2^z@3You are sitting East in our next example deal (where the bidding was considerably more sober). South, the dealer, opened 1@H. North raised to 2@H and South went on to 4@H. |
+pg| ***** 387 ***** |
+
+
+pc|sk|at|Your partner, West, led the @SK |
+pg| ***** 388 ***** |
+
+
+pc|sssa|at|and South won the @SA. |
+pg| ***** 389 ***** |
+
+
+pc|ha|at|The declarer laid down the @HA at trick 2 |
+pg| ***** 390 ***** |
+
+
+pc|hhh|at|to which your partner followed with the @H3. |
+pg| ***** 391 ***** |
+
+
+pc|c|at|South then led the @C5 from his hand. |
+pg| ***** 392 ***** |
+
+
+pc|c|at|West followed with the @C2 and dummy's @CK won the trick. |
+pg| ***** 393 ***** |
+
+
+pc|ckc|
+pg| ***** 394 ***** |
+
+
+nt|^b@2^z@3The declarer then called for the @HJ from the dummy. |
+pg| ***** 395 ***** |
+
+
+pc|hj|at|Would you ^*Bcover an honor with an 
+honor^*N by playing the @HQ or play second hand low with the @H6? |
+pg| ***** 396 ***** |
+
+
+at|You should play second hand low with the @H6 and, if at all possible, try to duck smoothly so that you won't give away the position of the @HQ to declarer!|
+pg| ***** 397 ***** |
+
+
+nt|^b@2^z@3This problem is very solvable. You started with 3 hearts and the dummy started with 4 hearts. South, playing 5-card majors, promised at least 5 hearts when he opened the bidding 1@H. That means that your partner was dealt a singleton heart at the most and, since West already followed suit on the first round of trump, he is now void in hearts. |
+pg| ***** 398 ***** |
+
+
+nt|^b@2^z@3South must have all of the rest of the unseen hearts. There is no chance for promotion in this suit so don't cover the @HJ with the @HQ! |
+pg| ***** 399 ***** |
+
+
+pc|h|at|If South is planning on finessing against your @HQ, there is nothing you can do to stop him. |
+pg| ***** 400 ***** |
+
+
+pc|hk|at|However, If you are able to duck smoothly when the @HJ is led from the dummy, there is a good chance that the declarer will not take the heart finesse. Here, he actually goes up with the @HK |
+pg| ***** 401 ***** |
+
+
+pc|s|at|and West discards the @S10. |
+pg| ***** 402 ***** |
+
+
+nt|^b@2^z@3Did declarer's play in the heart suit seem strange to you? If he was always planning on playing the @HK on the second round of trump, why did he bother to go to the dummy to lead the @HJ? |
+pg| ***** 403 ***** |
+
+
+at|^^^^What South did was really very smart. He was missing 4 trumps including the @HQ and knew that 9 never suggested playing the heart suit by cashing the @HA and @HK (as opposed to finessing against the @HQ on the second round). |
+pg| ***** 404 ***** |
+
+
+up|4|
+
+nt|^b@2^z@3South figured that he had nothing to lose by leading the @HJ from the dummy on the second round of the suit. |
+pg| ***** 405 ***** |
+
+
+pc|hj|at|There were 2 ways that this play might gain. First, East might blindly cover an honor with an honor by playing the @HQ from the holding above. |
+pg| ***** 406 ***** |
+
+
+at|^^^^Second, East might correctly play the @H6, but after several seconds of thought. |
+pg| ***** 407 ***** |
+
+
+pc|h6|at|The declarer would then know to finesse East for the @HQ (as East would not think in this position with a singleton @H6). |
+pg| ***** 408 ***** |
+
+
+nt|^b@2^z@3|cs|4|ht|d|at|^-{ Experienced declarers know all kinds of clever ways to try to induce the defenders 
+ to err. The good news is that most defenders will fall into each of these traps only once! }
+^-|up|1|
+pg| ***** 409 ***** |
+
+
+ht|p|at|Don't be embarassed if a smart declarer fools you on defense. Try to learn from your mistake and try the same play on an unsuspecting defender when you are the declarer!|
+pg| ***** 410 ***** |
+
+
+nt|^b@2^z@3Back to the play of this deal, assume that East, having been there before, ducks smoothly when the @HJ is led from the dummy. |
+pg| ***** 411 ***** |
+
+
+pc|h6hks|at|South finds out that he is not the only brilliant player at the table when he plays his @HK and West discards the @S10. |
+pg| ***** 412 ***** |
+
+
+sb|sNice smooth duck East!|at|It's nice to get a compliment from a master and you have earned one here!|
+pg| ***** 413 ***** |
+
+
+sb|s|pc|ht|
+
+nt|^b@2^z@3The declarer continues by leading the @H10 out of his hand. |
+pg| ***** 414 ***** |
+
+
+pc|dh|at|West discards the @D4 and you win your @HQ. |
+pg| ***** 415 ***** |
+
+
+pc|hq|
+pg| ***** 416 ***** |
+
+
+at|As we have seen, returning the suit that your partner led tends to be a good idea, so you play the @S7 (the highest card from your remaining doubleton). |
+pg| ***** 417 ***** |
+
+
+pc|s7ssjs|at|South follows and West wins the trick with his @SJ. |
+pg| ***** 418 ***** |
+
+
+pc|sqs|at|West leads the @SQ to the next trick. You play your last spade |
+pg| ***** 419 ***** |
+
+
+pc|ss|at|and you are happy to see South follow suit as well. |
+pg| ***** 420 ***** |
+
+
+nt|^b@2^z@3The defense has now won 3 tricks. Only 1 more trick is needed to defeat South's 4@H contract, but you are going to have to stay sharp in order to get it! |
+pg| ***** 421 ***** |
+
+
+pc|cc|at|West returns the @C7 and you play the @CQ (third hand high). |
+pg| ***** 422 ***** |
+
+
+pc|cqca|at|South wins the @CA |
+pg| ***** 423 ***** |
+
+
+pc|h2c9|
+at|and leads the @H2 out of his hand. West discards the @C9 |
+pg| ***** 424 ***** |
+
+
+at|and dummy wins the @H8 as you discard a club as well. |
+pg| ***** 425 ***** |
+
+
+pc|h8c8|
+pg| ***** 426 ***** |
+
+
+nt|^b@2^z@3The @DQ is then led from the dummy. |
+pg| ***** 427 ***** |
+
+
+pc|dq|at|The moment of truth has come. Do you cover an honor with an honor or play second hand low? |
+pg| ***** 428 ***** |
+
+
+at|^^^^It is correct to play second hand low here |
+pg| ***** 429 ***** |
+
+
+at|and the way to see this is to consider what could go wrong if you cover an honor with an honor by playing the @DK. |
+pg| ***** 430 ***** |
+
+
+pc|dk|sk||at|What could go wrong is that the unseen diamonds may be distributed as above. |
+pg| ***** 431 ***** |
+
+
+nt|^b@2^z@3If this is the diamond layout, South will win his @DA |
+pg| ***** 432 ***** |
+
+
+pc|dad|
+pg| ***** 433 ***** |
+
+
+at|and continue by leading the @D9 or the @D8. |
+pg| ***** 434 ***** |
+
+
+pc|d9|at|If West covers with the @D10, the dummy's @DJ will win |
+pg| ***** 435 ***** |
+
+
+pc|dtdjd|
+pg| ***** 436 ***** |
+
+
+mc|10|at|and South's remaining diamond will be high. The defense will not score a diamond trick and South will make his contract. |
+pg| ***** 437 ***** |
+
+
+up|3|at|West does no better by playing second hand low when the @D9 is led. |
+pg| ***** 438 ***** |
+
+
+pc|d7|at|The @D2 will then be played from the dummy and South's @D9 will win the trick. |
+pg| ***** 439 ***** |
+
+
+pc|d2d|
+pg| ***** 440 ***** |
+
+
+mc|10|at|Again, South makes 4@H. |
+pg| ***** 441 ***** |
+
+
+up|7|
+
+nt|^b@2^z@3If you thought that covering the @DQ with the @DK was a good play because you might be able to promote a card in the West hand into a winner, then you were on the right track. |
+pg| ***** 442 ***** |
+
+
+pc|dk|at|^^^^West did have the @D10 and that card was ripe for promotion. |
+pg| ***** 443 ***** |
+
+
+at|The problem is that, after South wins the @DA, |
+pg| ***** 444 ***** |
+
+
+pc|dad|
+pg| ***** 445 ***** |
+
+
+At|his strong spot cards allow West's @D10 to become exposed to a finesse. |
+pg| ***** 446 ***** |
+
+
+nt|^b@2^z@3It is somewhat unlucky that South had the @D9 and the @D8, but there is no reason to take that chance. |
+pg| ***** 447 ***** |
+
+
+up|4|at|Recall that we learned that when dummy has 2 or more equal honors, the partner of the opening leader should wait until the last of these is led before covering. |
+pg| ***** 448 ***** |
+
+
+at|^^^^An exception to this principle occurs when the partner of the opening leader has a doubleton in the key suit, but that is not the case here since East has 3 diamonds. |
+pg| ***** 449 ***** |
+
+
+nt|^b@2^z@3So, when the @DQ is led from the dummy, |
+pg| ***** 450 ***** |
+
+
+pc|dq|at|East should play second hand low. |
+pg| ***** 451 ***** |
+
+
+pc|D3|at|South will play small from his hand and the @DQ will win the trick. |
+pg| ***** 452 ***** |
+
+
+pc|dd|
+pg| ***** 453 ***** |
+
+
+at|If the @DJ is led next, |
+pg| ***** 454 ***** |
+
+
+pc|dj|at|now East should cover as the @DJ represents the last of the equal diamond honors that the dummy was dealt. |
+pg| ***** 455 ***** |
+
+
+pc|dk|at|^^^^South wins the @DA, |
+pg| ***** 456 ***** |
+
+
+pc|dad|
+pg| ***** 457 ***** |
+
+
+mc|9|at|but West's @D10 has now been promoted into the highest remaining diamond. The defense will score its 4th trick in diamonds to defeat 4@H. |
+pg| ***** 458 ***** |
+
+
+up|4|
+
+nt|^b@2^z@3It would not have helped the declarer to lead the @D2 (instead of the @DJ) on the second round of the suit. |
+pg| ***** 459 ***** |
+
+
+pc|d2|at|Now you could play the @D6, second hand low, as East |
+pg| ***** 460 ***** |
+
+
+pc|D6|at|leaving South with no answer. |
+pg| ***** 461 ***** |
+
+
+at|The @D9 would lose to West's @D10 |
+pg| ***** 462 ***** |
+
+
+at|and, if South plays the @DA instead, |
+pg| ***** 463 ***** |
+
+
+pc|dad|
+pg| ***** 464 ***** |
+
+
+mc|9|at|your @DK would win the critical 4th trick for the defenders. |
+pg| ***** 465 ***** |
+
+
+up|40|
+
+
+nt|^b@2^z@3Before we move on, let's have a look at the maneuver that South attempted in the trump suit with all 4 hands in view. 9 never suggests that with 9 cards in a suit between the declarer and dummy, |
+pg| ***** 466 ***** |
+
+
+at|the best play is to lay down the Ace and King in the hope that the Queen will drop. |
+pg| ***** 467 ***** |
+
+
+at|That plan would not succeed on the actual layout because East was dealt 3 hearts including the @HQ. |
+pg| ***** 468 ***** |
+
+
+nt|^b@2^z@3|at|
+The fact that 9 never does not work on this deal does not mean you should ignore it.
+
+|
+pg| ***** 469 ***** |
+
+
+cs|1|at|^-{ 9 never and 8 ever will both gain more often than they will lose, but they still lose a lot of 
+ the time! The odds favor both of these plays, but that doesn't mean that they always work! }
+^-
+|
+pg| ***** 470 ***** |
+
+
+at|8 ever and 9 never are known as the percentage plays for their respective card combinations.|
+pg| ***** 471 ***** |
+
+
+nt|^b@2^z@3
+On this deal the declarer knew all about 9 never, but he found a way to give himself an extra chance to play the heart suit without loss against one of the layouts where 9 never would normally fail. |
+pg| ***** 472 ***** |
+
+
+at|^^^^After cashing the @HA, |
+pg| ***** 473 ***** |
+
+
+pc|Hahhh|
+pg| ***** 474 ***** |
+
+
+at|South crossed to the dummy in clubs^*N |
+pg| ***** 475 ***** |
+
+
+pc|ccckc|
+pg| ***** 476 ***** |
+
+
+at|and led the @HJ. |
+pg| ***** 477 ***** |
+
+
+pc|hj|
+
+nt|^b@2^z@3This nice play gave East a chance to make the mistake of covering the @HJ with the @HQ. |
+pg| ***** 478 ***** |
+
+
+pc|hq|at|If East errs in this way, South will win the @HK |
+pg| ***** 479 ***** |
+
+
+pc|hks|
+pg| ***** 480 ***** |
+
+
+at|and avoid losing a trump trick that 9 never would have lost to. |
+pg| ***** 481 ***** |
+
+
+up|3|at|Even if East comes up with the correct second hand low play of the @H6, |
+pg| ***** 482 ***** |
+
+
+pc|h6|at|but he does not duck smoothly, South will know that East has the @HQ and will take a finesse that he was not planning on taking. |
+pg| ***** 483 ***** |
+
+
+pc|hs|
+pg| ***** 484 ***** |
+
+
+at|Again, South will have avoided a trump loser. |
+pg| ***** 485 ***** |
+
+
+up|4|
+
+nt|^b@2^z@3We have learned the principle of not making a play that will only gain if an opponent makes a mistake. South's lead of the @HJ does not fall into this category because this play can never lose. |
+pg| ***** 486 ***** |
+
+
+pc|hj|at|If East covers with the @HQ or plays the @H6 after some consideration, then South gains by East's mistake. |
+pg| ***** 487 ***** |
+
+
+at|If East correctly ducks smoothly, |
+pg| ***** 488 ***** |
+
+
+pc|h6|at|then South will go up with the @HK as 9 never suggests. |
+pg| ***** 489 ***** |
+
+
+pc|hks|
+pg| ***** 490 ***** |
+
+
+at|On this layout he will lose the same trump trick that he was always going to lose.|
+pg| ***** 491 ***** |
+
+
+up|4|
+
+nt|^b@2^z@3Here is a more accurate way to think about how the opponents' mistakes should impact your play:
+
+|
+pg| ***** 492 ***** |
+
+
+cs|3|at|^-{ If you have nothing to lose by giving an opponent a chance to err, then you should do so,
+ but you should favor a legitimate play over a play that will work ^*Ionly^*N if a mistake is made. }
+^-
+|
+pg| ***** 493 ***** |
+
+
+at|It is hard to argue with a play that has something to gain and nothing to lose!|
+pg| ***** 494 ***** |
+
+
+qx|rev,wideCover an honor with an honor - Review and Exercises|
+tb|y|bt||
+
+nt|^b@2^z@3|cs|5|cp|6|fp|t|at|
+^-{  Cover an honor with an honor - Review and Exercises  }
+^-|fp||at|
+|cp||at|By now you should know that the ^*Ialways^*N that traditionally appears in always cover an honor with an honor is misleading. There are times and places for cover an honor with an honor, but there are also plenty of situations where this guideline should be rejected in favor of second hand low. 
+
+As was mentioned at the start of this topic, just about the only use of ^*Ialways^*N and ^*Inever^*N in bridge is the following:
+
+|
+pg| ***** 495 ***** |
+
+
+cs|4|at|^-{ Always think! Never treat guidelines as if they are rules! }
+^-
+|
+pg| ***** 496 ***** |
+
+
+at|Here is a reminder of what is meant by cover an honor with an honor:
+
+|
+pg| ***** 497 ***** |
+
+
+cs|1|at|^-{ If you, as a defender, are second to play to a trick and the first card played to 
+ that trick is an honor, you should cover with a higher honor if you have one. }
+^-
+|
+pg| ***** 498 ***** |
+
+
+at|The whole purpose of cover an honor with an honor is to promote smaller cards in either your hand or your partner's hand into winners.
+
+|
+pg| ***** 499 ***** |
+
+
+cs|3|at|^-{ Cover an honor with an honor when you know that you will promote a card that you
+ hold into a winner by doing so. If your holding surrounds the honor that was led, cover it! }
+^-
+|
+pg| ***** 500 ***** |
+
+
+cs|2|at|^-{ Cover an honor with an honor when you suspect that there is a good chance that, 
+ by doing so, you will be able to promote a card that your partner holds into a winner.  }
+^-
+|
+pg| ***** 501 ***** |
+
+
+tb||
+
+nt|^b@2^z@3
+Here are some other guidelines that describe situations where it is usually best for the defense to cover an honor with an honor:
+
+|
+pg| ***** 502 ***** |
+
+
+cs|4|at|^-{ Usually when an unsupported honor is led from the dummy and the partner of the 
+ opening leader has a higher honor, covering will be an effective play for the defense. }
+^-
+|
+pg| ***** 503 ***** |
+
+
+cs|1|at|^-{ Cover an honor with an honor is often good advice when you are dealt a doubleton honor. 
+ By covering in these situations you ensure that your honor is used to capture a relevant card. }
+^-
+|
+pg| ***** 504 ***** |
+
+
+at|The above guideline generally supersedes the following guideline:
+
+|
+pg| ***** 505 ***** |
+
+
+cs|3|at|^-{ When the dummy has 2 or more touching honors, it is usually best for the partner of the 
+ opening leader to wait until the last of these is played before he covers with a higher honor. }
+
+|
+pg| ***** 506 ***** |
+
+
+at|^-Here are some situations in which you should not cover an honor with an honor. The first of these ties in with the guideline mentioned above:
+
+|
+pg| ***** 507 ***** |
+
+
+cs|2|at|^-{ Cover an honor with an honor should usually be rejected if doing so 
+ will set up a finessing position against a card in your partner's hand. }
+^-
+|
+pg| ***** 508 ***** |
+
+
+cs|4|at|^-{Do not cover an honor with an honor if you know that dummy has to play a higher honor!}
+^-
+|
+pg| ***** 509 ***** |
+
+
+cs|1|at|^-{ Cover an honor with an honor should usually be rejected if the declarer or dummy 
+ is unable to run the suit that was led by taking repeated finesses against your honor. }
+^-|
+pg| ***** 510 ***** |
+
+
+nt|^b@2^z@3
+Here is a reminder that, in some situations, there is no clearly right play for the defense when the declarer leads an honor out of his hand or off the dummy:
+
+|
+pg| ***** 511 ***** |
+
+
+cs|3|at|^-{Both the opening leader and his partner sometimes can be faced with a guess as to whether
+  second hand low or cover an honor with an honor will work out better for the defense. }
+^-
+|
+pg| ***** 512 ***** |
+
+
+cs|2|at|There are several ways in which a defender can try to resolve these guesses:
+
+|
+pg| ***** 513 ***** |
+
+
+at|^-{ The bidding can help a defender to know if he should cover an honor with an honor. 
+ Drawing inferences from partner's signals and how declarer has played can also help. }
+^-
+|
+pg| ***** 514 ***** |
+
+
+cs|4|at|^-{ The defenders should assume that the declarer is not taking a pseudo-finesse. 
+ Pseudo-finesses are very bad plays and most declarers are aware of this fact! }
+^-
+|
+pg| ***** 515 ***** |
+
+
+at|It is almost always a serious mistake for a declarer to take a pseudo-finesse and, as we have seen, the defenders should assume that the declarer has good reasons for the plays that he chooses to make (and vice versa). Here is a refined policy that describes how you should think about the possibility of an opponent making an error:
+
+|
+pg| ***** 516 ***** |
+
+
+cs|1|at|^-{ If you have nothing to lose by giving an opponent a chance to err, then you should do so,
+ but you should favor a legitimate play over a play that will work ^*Ionly^*N if a mistake is made. }
+^-
+|
+pg| ***** 517 ***** |
+
+
+cs|3|at|^-{ Experienced declarers know all kinds of clever ways to try to induce the defenders 
+ to err. The good news is that most defenders will fall into each of these traps only once! }
+^-
+|
+pg| ***** 518 ***** |
+
+
+st||ha|y|rh||md|1sq,skj54,sa97|
+
+
+qx|ex|
+nt|^b@2^z@3
+South leads the @SQ out of his hand. |
+pg| ***** 519 ***** |
+
+
+pc|Sq|at|Would you cover an honor with an honor by playing the @SK or play second hand low?|
+pg| ***** 520 ***** |
+
+
+lb|*MShould you cover an honor with an honor?^Yes~No^1|
+
+
+
+nt|^b@2^z@3You should cover with the @SK |
+pg| ***** 522 ***** |
+
+
+at|because your @SKJ means that the @SQ is surrounded. In this situation you know that playing the @SK will promote your @SJ into a winner. |
+pg| ***** 523 ***** |
+
+
+md|0s82,,,st63|at|If your partner has the @S10 then the declarer's play of the @SQ is a pure pseudo-finesse. This is not very likely because, as we have seen, the pseudo-finesse is a very poor play. Still, there are some declarers out there who have not learned this yet!|
+pg| ***** 524 ***** |
+
+
+nt|^b@2^z@3If this South is one of those declarer's then you had better cover the @SQ with your @SK or the declarer will win a trick that he does not deserve. |
+pg| ***** 525 ***** |
+
+
+md|0st,,,s2|at|It is more likely that the @S10 is in the declarer's hand. Now his @SQ play makes some sense - it is the start of a double finesse. |
+pg| ***** 526 ***** |
+
+
+at|Still, you should cover the @SQ with your @SK. |
+pg| ***** 527 ***** |
+
+
+pc|sk|at|Dummy's @SA will win the trick |
+pg| ***** 528 ***** |
+
+
+pc|sas|
+pg| ***** 529 ***** |
+
+
+at|and declarer can use the @S10 or the @S9 to drive out your @SJ. |
+pg| ***** 530 ***** |
+
+
+pc|s9sssj|
+pg| ***** 531 ***** |
+
+
+nt|^b@2^z@3South will be left with the master spade so he will win a second trick in the suit, but perhaps you can use this opportunity of being on lead to play a suit that will help the defense. The fact that South ends up with 2 spade tricks should not concern West. |
+pg| ***** 532 ***** |
+
+
+up|8|at|South is always entitled to 2 spade tricks on this layout |
+pg| ***** 533 ***** |
+
+
+at|once he starts the suit by leading the @SQ. |
+pg| ***** 534 ***** |
+
+
+pc|sq|
+
+nt|^b@2^z@3In that sense it does not matter if West covers with the @SK or plays second hand low - South will win 2 tricks in either case. |
+pg| ***** 535 ***** |
+
+
+at|The advantage of playing the @SK, however, is that West will gain the lead with the @SJ before South can win a second spade trick. Hopefully, West will be able to use this opportunity to lead a suit that will be good for the defense.|
+pg| ***** 536 ***** |
+
+
+md|1hq,hkt54,ha97|
+
+nt|^b@2^z@3
+This next problem is similar to the last one. South leads the @HQ from his hand. |
+pg| ***** 537 ***** |
+
+
+pc|hq|at|This time West does not have South's @HQ surrounded (since his second highest heart is the @H10, not the @HJ). |
+pg| ***** 538 ***** |
+
+
+at|Should West cover an honor with an honor by playing the @HK or play second hand low? |
+pg| ***** 539 ***** |
+
+
+lb|*MShould you cover an honor with an honor?^Yes~No^1|
+
+nt|^b@2^z@3You should cover an honor with an honor by playing the @HK. |
+pg| ***** 541 ***** |
+
+
+pc|hk|md|0h832,,,hj63|at|In the unlikely event that your partner has the @HJ (meaning that South has taken a pseudo-finesse) covering is necessary for the defense. |
+pg| ***** 542 ***** |
+
+
+md|0hj,,,h2|at|It is much more likely that the declarer has the @HJ. |
+pg| ***** 543 ***** |
+
+
+at|South will win dummy's @HA |
+pg| ***** 544 ***** |
+
+
+pc|hah|
+pg| ***** 545 ***** |
+
+
+at|and, although your @H10 has not been promoted into a winner yet, South's @HJ is the only remaining heart higher than your @H10. The @HJ will be South's last trick in this suit.|
+pg| ***** 546 ***** |
+
+
+up|4|
+
+nt|^b@2^z@3Again, South is always entitled to win exactly 2 tricks with this combination. |
+pg| ***** 547 ***** |
+
+
+at|On this layout of the unseen cards, when the @HQ is led, |
+pg| ***** 548 ***** |
+
+
+pc|hq|at|it doesn't matter if West covers with the @HQ or plays second hand low. |
+pg| ***** 549 ***** |
+
+
+at|Still, West should cover with the @HK since this play cannot cost |
+pg| ***** 550 ***** |
+
+
+pc|hk|md|0h2,,,hj|at|and covering gains in the unlikely event that East has the @HJ (where South's @HQ play is a pseudo-finesse). |
+pg| ***** 551 ***** |
+
+
+md|1dq,dk43,da97|
+
+
+nt|^b@2^z@3
+Here is another similar problem. South leads the @DQ from his hand. |
+pg| ***** 552 ***** |
+
+
+pc|dq|at|West still has the King in the suit that South led, |
+pg| ***** 553 ***** |
+
+
+at|but he now has only 3 cards in the suit. The @D4 and @D3 do not look they have potential for promotion. |
+pg| ***** 554 ***** |
+
+
+at|Should West cover an honor with an honor or play second hand low?|
+pg| ***** 555 ***** |
+
+
+lb|*MShould you cover an honor with an honor?^Yes~No^2|
+
+nt|^b@2^z@3West should play second hand low. |
+pg| ***** 557 ***** |
+
+
+pc|d3|md|0d82,,,djt65|at|This play will be a disaster for the defense if East has both the @DJ and the @D10. However, this would make South's play of the @DQ a pseudo-finesse. |
+pg| ***** 558 ***** |
+
+
+md|0dj,,,d2|at|It is much more likely that South has the @DJ (or the @D10 at least) to back up his @DQ. |
+pg| ***** 559 ***** |
+
+
+at|There is some hope that East has the @D10, a card that might eventually be promoted into a winner. |
+pg| ***** 560 ***** |
+
+
+at|If East has the @D10 then the @D8 becomes a critical card. |
+pg| ***** 561 ***** |
+
+
+nt|^b@2^z@3Once West properly plays second hand low, a small card is played from the dummy and South's @DQ wins the trick. |
+pg| ***** 562 ***** |
+
+
+pc|dd|
+pg| ***** 563 ***** |
+
+
+at|If South plays the @DJ next, |
+pg| ***** 564 ***** |
+
+
+pc|dj|at|West should cover. He might as well hope his partner has the @D10 or else the defense has no chance to win a trick in this suit. |
+pg| ***** 565 ***** |
+
+
+pc|dk|at|The @DA wins the trick, |
+pg| ***** 566 ***** |
+
+
+pc|Dad|
+pg| ***** 567 ***** |
+
+
+At|but East's @D10 has been promoted into a winner. |
+pg| ***** 568 ***** |
+
+
+up|7|
+
+nt|^b@2^z@3When West correctly refused to cover the @DQ on the first round, |
+pg| ***** 569 ***** |
+
+
+pc|d3dd|
+pg| ***** 570 ***** |
+
+
+at|it would not have helped South to lead the @D8 (instead of the @DJ) on the second round. |
+pg| ***** 571 ***** |
+
+
+pc|d8|at|West would play second hand low |
+pg| ***** 572 ***** |
+
+
+pc|d4|at|and either the @DK or the @D10 would end up scoring a trick for the defense (depending on whether the @DA or the @D9 is played from the dummy now). |
+pg| ***** 573 ***** |
+
+
+up|5|at|The bottom line is that if West plays second hand low when the @DQ is led, the declarer has no way to win more than 2 diamond tricks. |
+pg| ***** 574 ***** |
+
+
+nt|^b@2^z@3The story has a different ending if West makes the mistake of covering the @DQ with the @DK. |
+pg| ***** 575 ***** |
+
+
+pc|dk|at|The dummy's @DA wins the trick |
+pg| ***** 576 ***** |
+
+
+pc|dad|
+pg| ***** 577 ***** |
+
+
+at|and a finessing position remains over East's @D10. South will end up winning 3 diamond tricks |
+pg| ***** 578 ***** |
+
+
+up|3|at|instead of the 2 diamond tricks that were available when West refused to cover an honor with an honor. |
+pg| ***** 579 ***** |
+
+
+md|1cj,cq652,ca4|
+
+
+
+nt|^b@2^z@3
+South leads the @CJ out of his hand. |
+pg| ***** 580 ***** |
+
+
+pc|cj|at|You have to decide as West if you should cover an honor with an honor or play second hand low. What will it be?|
+pg| ***** 581 ***** |
+
+
+lb|*MShould you cover an honor with an honor?^Yes~No^2|
+
+
+
+nt|^b@2^z@3Play second hand low. |
+pg| ***** 583 ***** |
+
+
+pc|c2|md|0ck3,,,ct987|at|Unless South is taking a very strange type of pseudo-finesse, there is no way that playing second hand low can cost |
+pg| ***** 584 ***** |
+
+
+md|0ct98,,,c3|at|and on several layouts refusing to play the @CQ will gain. For example, consider the above distribution of the unseen clubs. |
+pg| ***** 585 ***** |
+
+
+at|The best that South can do is play the @C4 from the dummy. His @CJ will win the trick |
+pg| ***** 586 ***** |
+
+
+pc|c4c|
+pg| ***** 587 ***** |
+
+
+at|and the dummy's @CA will win the second round of the suit. |
+pg| ***** 588 ***** |
+
+
+pc|cccc|
+pg| ***** 589 ***** |
+
+
+wt|s|
+
+nt|^b@2^z@3South can return the lead to his hand in some other suit and play the @CK, |
+pg| ***** 590 ***** |
+
+
+pc|ck|at|but West still has a small club to play on this trick. |
+pg| ***** 591 ***** |
+
+
+pc|c6|at|The @CQ will remain as the master club so West will end up winning a club trick. |
+pg| ***** 592 ***** |
+
+
+up|9|at|1 trick may not sound like much, but it is 1 more trick than West would have won if he had covered the @CJ with his @CQ on the first trick! |
+pg| ***** 593 ***** |
+
+
+pc|cq|at|The dummy's @CA would win |
+pg| ***** 594 ***** |
+
+
+pc|cac|
+pg| ***** 595 ***** |
+
+
+at|and the rest of South's clubs would be winners. |
+pg| ***** 596 ***** |
+
+
+up|3|
+
+nt|^b@2^z@3One of the reasons why West should play second hand low when the @CJ is led is that his very low spot cards in clubs suggest that promotion is not very likely. |
+pg| ***** 597 ***** |
+
+
+at|Furthermore, between the dummy having only 2 clubs and West having 4 clubs, West knows that the declarer can take only 1 club finesse. The @CQ cannot be picked up by repeated finesses and this is an additional reason for West not to cover the @CJ. |
+pg| ***** 598 ***** |
+
+
+up|1|
+
+nt|^b@2^z@3In order to see another layout where it is essential for West to play second hand low, we will move the @C9 and the @C8 from the South hand to the East hand. |
+pg| ***** 599 ***** |
+
+
+md|0,,,c98|at|In the resulting position, declarer has a 2-way finesse for the @CQ with only 1 trick at stake. He will win either 2 or 3 club tricks, depending on whether or not he guesses the position of the @CQ. |
+pg| ***** 600 ***** |
+
+
+nt|^b@2^z@3If South is one of those tricky declarers who looks for opportunities to induce the defense to err, he will start this suit by leading the @CJ from his hand. |
+pg| ***** 601 ***** |
+
+
+pc|cj|at|If West makes the mistake of covering the @CJ with the @CQ, it will be all over for the defense. |
+pg| ***** 602 ***** |
+
+
+pc|Cq|at|The dummy's @CA will win |
+pg| ***** 603 ***** |
+
+
+pc|cac|
+pg| ***** 604 ***** |
+
+
+at|and South will have 2 more club tricks with the @CK and @C10 in his hand. He will win 3 tricks without making any guesses. |
+pg| ***** 605 ***** |
+
+
+up|3|
+
+nt|^b@2^z@3If West plays second hand low (especially if he ducks smoothly), |
+pg| ***** 606 ***** |
+
+
+pc|c2|at|there is a good chance that the declarer will win the dummy's @CA |
+pg| ***** 607 ***** |
+
+
+pc|cac|
+pg| ***** 608 ***** |
+
+
+at|and play a club to his @C10 on the second round in the hope that East was dealt the @CQ. |
+pg| ***** 609 ***** |
+
+
+pc|ccc|at|That will suit West just fine! He will win the @CQ |
+pg| ***** 610 ***** |
+
+
+pc|Cq|
+pg| ***** 611 ***** |
+
+
+at|to hold South to 2 tricks in the suit. |
+pg| ***** 612 ***** |
+
+
+up|7|
+
+nt|^b@2^z@3If West ducks smoothly in clubs, |
+pg| ***** 613 ***** |
+
+
+pc|c2|at|South may still choose to finesse him for the @CQ by playing the @C4 from the dummy. If he does so, the @CJ will win the trick |
+pg| ***** 614 ***** |
+
+
+pc|cc|
+pg| ***** 615 ***** |
+
+
+at|and the @CA and @CK will bring declarer up to 3 tricks in clubs. |
+pg| ***** 616 ***** |
+
+
+up|3|at|West did the best he could when he ducked the @CJ smoothly. He just happened to be unlucky that this declarer is not only a clever player, but a good guesser as well!|
+pg| ***** 617 ***** |
+
+
+up|1|
+
+nt|^b@2^z@3If you are not convinced yet that it is right for West to refuse to cover the @CJ with his @CQ, exchanging South's @CK for any of East's clubs (even the @C3) will provide some further evidence that this is the case. |
+pg| ***** 618 ***** |
+
+
+md|0c3k,,,ck|at|When South leads the @CJ, |
+pg| ***** 619 ***** |
+
+
+pc|cj|at|if West errs by covering with the @CQ, |
+pg| ***** 620 ***** |
+
+
+pc|Cq|at|dummy's @CA wins the trick. |
+pg| ***** 621 ***** |
+
+
+pc|cac|
+pg| ***** 622 ***** |
+
+
+at|South can establish a second club trick by leading toward his @C10. Regardless of whether or not East takes his @CK, the @C10 will score a trick.|
+pg| ***** 623 ***** |
+
+
+up|3|
+
+nt|^b@2^z@3Now look at the difference if West properly plays second hand low when the @CJ is led by South. |
+pg| ***** 624 ***** |
+
+
+pc|C2|at|Playing the @CA is not going to help the declarer - that would be his last trick in the suit. |
+pg| ***** 625 ***** |
+
+
+at|The @C4 does not work any better. |
+pg| ***** 626 ***** |
+
+
+pc|c4|at|East will win the @CK |
+pg| ***** 627 ***** |
+
+
+pc|ck|
+pg| ***** 628 ***** |
+
+
+at|and, in the remaining position, the dummy's @CA is the only winner that the declarer will have in the suit. |
+pg| ***** 629 ***** |
+
+
+up|3|at|Hopefully you are now fully convinced that West should not cover an honor with an honor when South leads the @CJ!|
+pg| ***** 630 ***** |
+
+
+md|3,,sj4,q872|
+
+
+nt|^b@2^z@3
+You are now sitting East. The declarer, playing in a notrump contract leads the @SJ off of the dummy. |
+pg| ***** 631 ***** |
+
+
+pc|sj|at|Do you cover an honor with an honor or play second hand low?
+
+|
+pg| ***** 632 ***** |
+
+
+lb|*MShould you cover an honor with an honor?^Yes~No^1|
+
+nt|^b@2^z@3You should cover an honor with an honor and play the @SQ. It is usually best for the partner of the opening leader to cover when an unsupported honor is led from the dummy. |
+pg| ***** 634 ***** |
+
+
+pc|sq|at|Furthermore, allow the @S8 may not look like a very big card, it doesn't take much in your partner's hand for the @S8 to be promoted into a winner. |
+pg| ***** 635 ***** |
+
+
+md|0sakt65,s93|
+
+nt|^b@2^z@3For example, consider this possible layout of the remaining spades. |
+pg| ***** 636 ***** |
+
+
+at|Your partner's doubleton @S9 may not look to have much value, but it is just enough to ensure that that @S8 eventually is promoted into the master spade. |
+pg| ***** 637 ***** |
+
+
+at|South will win this trick |
+pg| ***** 638 ***** |
+
+
+pc|Sas|
+pg| ***** 639 ***** |
+
+
+at|and the @SK comes next under which West's @S9 falls. |
+pg| ***** 640 ***** |
+
+
+pc|sksss|
+pg| ***** 641 ***** |
+
+
+md|0,h2,h3|at|When the @S10 is cashed, West and the dummy will have to discard so they have each been given a small heart for that purpose. |
+pg| ***** 642 ***** |
+
+
+pc|sthh3s|
+pg| ***** 643 ***** |
+
+
+nt|^b@2^z@3Lo and behold! Your puny @S8 is now the highest remaining spade in the deck! It has been promoted into a winner |
+pg| ***** 644 ***** |
+
+
+md|3sakt65,93,sj4,q872|pc|!Sj|at|thanks to the fact that you covered the dummy's @SJ with your @SQ. |
+pg| ***** 645 ***** |
+
+
+at|If instead you had made the mistake of playing second hand low, |
+pg| ***** 646 ***** |
+
+
+pc|s2|at|South would play small from his hand and win the finesse. |
+pg| ***** 647 ***** |
+
+
+pc|s5s|
+pg| ***** 648 ***** |
+
+
+at|He would then take another finesse against your @SQ by leading to his @S10. |
+pg| ***** 649 ***** |
+
+
+pc|sssts|
+pg| ***** 650 ***** |
+
+
+at|Both of your remaining spades would then fall under the @SA and the @SK. |
+pg| ***** 651 ***** |
+
+
+up|7|
+
+nt|^b@2^z@3So if you play second hand low, you will not win a spade trick on this layout, |
+pg| ***** 652 ***** |
+
+
+at|but if you get some value for your @SQ and cover an honor with an honor, |
+pg| ***** 653 ***** |
+
+
+pc|sq|at|your @S8 will eventually score a trick. |
+pg| ***** 654 ***** |
+
+
+at|If it turns out that West's @S9 is in the declarer's hand, |
+pg| ***** 655 ***** |
+
+
+up|1|md|0s9,s6|at|South's spades become strong enough so that you will not win a spade trick even if you properly cover an honor with an honor when the @SJ is led from the dummy. |
+pg| ***** 656 ***** |
+
+
+at|Your play does not matter on this layout. |
+pg| ***** 657 ***** |
+
+
+md|3,,hj,hk95|
+
+nt|^b@2^z@3
+In this next quiz, imagine that South opened the bidding with a 3@H preempt, suggesting a strong 7-card heart suit. Hearts are trump and the @HJ is led from the dummy. |
+pg| ***** 658 ***** |
+
+
+pc|hj|at|What's it going to be this time? Do you cover an honor with an honor or do you play second hand low?|
+pg| ***** 659 ***** |
+
+
+lb|*MShould you cover an honor with an honor?^Yes~No^2|
+
+nt|^b@2^z@3You should play second hand low. |
+pg| ***** 661 ***** |
+
+
+pc|H5|md|0haqt7632,h84|at|There is a good chance that the outstanding hearts are distributed something like what you see above. |
+pg| ***** 662 ***** |
+
+
+at|South will play low from his hand and his @HJ finesse will win. |
+pg| ***** 663 ***** |
+
+
+pc|H2h|
+pg| ***** 664 ***** |
+
+
+wt|s|at|When South later leads the @HA out of his hand, you will contribute the @H9 to this trick, leaving you with the @HK which will represent a certain trump trick for the defense. |
+pg| ***** 665 ***** |
+
+
+up|3|
+
+nt|^b@2^z@3If you had made the mistake of covering dummy's @HJ with your @HK, |
+pg| ***** 666 ***** |
+
+
+pc|hk|at|South would win the @HA. |
+pg| ***** 667 ***** |
+
+
+pc|hah|
+pg| ***** 668 ***** |
+
+
+at|The @HQ and @H10 would then remove all of the remaining trumps from the defenders' hands. |
+pg| ***** 669 ***** |
+
+
+at|It is true that if West had been dealt the @H10 instead of South, |
+pg| ***** 670 ***** |
+
+
+md|0h8,ht|at|your @H9 would be promoted into a winner, |
+pg| ***** 671 ***** |
+
+
+up|3|at|but playing second hand low on this layout works just as well. |
+pg| ***** 672 ***** |
+
+
+at|Covering the @HJ with the @HK breaks even at best |
+pg| ***** 673 ***** |
+
+
+md|0ht,h8|at|and this play may well cost a trick. |
+pg| ***** 674 ***** |
+
+
+nt|^b@2^z@3The way to come up with the right solution to this problem (playing second hand low) is to realize that since dummy was dealt only 1 card in hearts, the declarer will be able to take only 1 finesse in that suit. |
+pg| ***** 675 ***** |
+
+
+at|Your @HK is guarded by 2 small cards so the declarer would have to be able to take 2 heart finesses in order to prevent the @HK from scoring a trick. |
+pg| ***** 676 ***** |
+
+
+at|That is impossible here. Playing second hand low ensures that your @HK will live long enough to become a winner. |
+pg| ***** 677 ***** |
+
+
+md|3,,dt96,dj84|
+
+
+
+nt|^b@2^z@3
+In this next problem, the @D10 is led from the dummy. |
+pg| ***** 678 ***** |
+
+
+pc|dt|at|Your have to decide if you would cover an honor with an honor by playing the @DJ or if you would play second hand low instead. |
+pg| ***** 679 ***** |
+
+
+lb|*MShould you cover an honor with an honor?^Yes~No^2|
+
+
+
+nt|^b@2^z@3You should play second hand low. Do you remember the principle you learned that when the dummy has 2 (or more) touching honors, the partner of the opening leader should cover the last of these (unless he was dealt a doubleton)? |
+pg| ***** 681 ***** |
+
+
+at|That principle applies here even though the @D9 is not really an honor card. The fact that it is touching the @D10 (which is an honor card) means that the @D10 and the @D9 are equals.|
+pg| ***** 682 ***** |
+
+
+md|0dk32,daq75|
+
+nt|^b@2^z@3Here is one possible layout of the missing diamonds |
+pg| ***** 683 ***** |
+
+
+at|where East's proper second hand low play saves a trick for the defense. |
+pg| ***** 684 ***** |
+
+
+pc|d4|at|There is now no way for South to come to a winner in diamonds. His best shot is to play low from his hand, |
+pg| ***** 685 ***** |
+
+
+pc|d2|at|but West can win the @DQ. |
+pg| ***** 686 ***** |
+
+
+pc|dq|
+pg| ***** 687 ***** |
+
+
+wt|n|at|Suppose that the declarer later gets to the dummy and leads the @D9 (no other play works any better). |
+pg| ***** 688 ***** |
+
+
+pc|d9|at|Cover with your @DJ |
+pg| ***** 689 ***** |
+
+
+pc|dj|at|and South will not win a trick regardless of the diamond that he plays from his hand. |
+pg| ***** 690 ***** |
+
+
+up|5|
+
+nt|^b@2^z@3If East incorrectly covers the @D10 with his @DJ on the first round of the suit. |
+pg| ***** 691 ***** |
+
+
+pc|dj|at|South plays the @DK and West wins the @DA. |
+pg| ***** 692 ***** |
+
+
+pc|dkda|
+pg| ***** 693 ***** |
+
+
+wt|s|at|Later in the play, South will be able to lead a second round of diamonds toward the dummy's remaining @D96. It won't matter if West takes his @DQ or not - the @D9 will win a trick for declarer sooner or later. |
+pg| ***** 694 ***** |
+
+
+up|3|at|Therefore, East's cover of the @D10 with the @DJ gives South a trick that he could not have won |
+pg| ***** 695 ***** |
+
+
+at|if East had made the proper play of second hand low. |
+pg| ***** 696 ***** |
+
+
+md|3,,cj43,cqt5|
+
+
+nt|^b@2^z@3In this problem South has opened the bidding with a 3@C preempt to suggest a strong 7-card club suit. 3@C is the final contract and, after winning West's opening lead in the dummy, the declarer (who you know is a crafty player) calls for the @CJ. |
+pg| ***** 697 ***** |
+
+
+pc|cj|at|Would you cover an honor with an honor by playing the @CQ or play second hand low instead?|
+pg| ***** 698 ***** |
+
+
+lb|*MShould you cover an honor with an honor?^Yes~No^2|
+
+
+
+nt|^b@2^z@3You should play second hand low. This is the hardest problem in this section so don't be at all concerned if you got it wrong! For that matter, you should not be concerned if you got any of these problems wrong - as long as you understand the reasoning behind the right answers you will have a good chance to play the right card when these situations arise at the table. |
+pg| ***** 700 ***** |
+
+
+nt|^b@2^z@3At first glance it appears obvious to cover the @CJ with the @CQ here since your @CQ10 surround the @CJ. This appears to be a situation that is tailor-made for promotion. |
+pg| ***** 701 ***** |
+
+
+md|0cak98762|at|Take a second glance and consider how the rest of the clubs are laid out. Both you and the dummy started with 3 clubs and South's bidding promised a 7-card club suit. South must have all of the 7 unseen clubs, leaving your partner with a void in that suit. |
+pg| ***** 702 ***** |
+
+
+nt|^b@2^z@3If you make the mistake of covering the @CJ with your @CQ (a mistake that many fine players might make), |
+pg| ***** 703 ***** |
+
+
+pc|cq|at|South will win the trick |
+pg| ***** 704 ***** |
+
+
+pc|ca|md|0,d2|at|and your partner's discard |
+pg| ***** 705 ***** |
+
+
+pc|D2|
+pg| ***** 706 ***** |
+
+
+at|will let the declarer know that you still have the 2 outstanding clubs. |
+pg| ***** 707 ***** |
+
+
+wt|n|at|After crossing back to the dummy in another suit, the declarer will then finesse against your @C10. South will therefore be able to play the trump suit without losing a trick |
+pg| ***** 708 ***** |
+
+
+up|3|at|if you cover the dummy's @CJ with your @CQ. |
+pg| ***** 709 ***** |
+
+
+nt|^b@2^z@3Now suppose that you are able to figure out to duck smoothly and play the @C5 when the @CJ is led from the dummy. |
+pg| ***** 710 ***** |
+
+
+pc||pc|c5|at|It is true that the declarer ^*Icould^*N play the trump suit without losing a trick if he plays low from his hand. |
+pg| ***** 711 ***** |
+
+
+pc|cd|
+pg| ***** 712 ***** |
+
+
+at|Your remaining 2 clubs, the @CQ and the @C10, would later fall under South's @CA and @CK. |
+pg| ***** 713 ***** |
+
+
+md|3cak98762,,cj43,cqt5|pc|!CJ|
+
+nt|^b@2^z@3However, as you know, in bridge there is a very big difference between ^*Icould^*N and ^*Iwould^*N. Once you duck smoothly by playing the @C5, |
+pg| ***** 714 ***** |
+
+
+pc|c5|at|you can bet that South ^*Iwould not^*N play low from his hand. |
+pg| ***** 715 ***** |
+
+
+pc|c2|md|0,cq|at|To do so would mean that South would lose a trick if West was dealt the @CQ either singleton |
+pg| ***** 716 ***** |
+
+
+md|0,ct|at|or doubleton. |
+pg| ***** 717 ***** |
+
+
+up|1|md|0,,,cqt|at|You can bet that South will go up with the @CA or @CK here. If 9 never is to believed then surely ^*I10 never ever^*N must be true as well!|
+pg| ***** 718 ***** |
+
+
+up|2|
+
+nt|^b@2^z@3Give this declarer full credit for giving you a chance to make a mistake when he made the clever play of leading the @CJ from the dummy. |
+pg| ***** 719 ***** |
+
+
+pc|cj|at|He was always planning on playing a high club from his hand, but it could never hurt for him to try this play |
+pg| ***** 720 ***** |
+
+
+at|in the hope that you would cover the @CJ with your @CQ from the exact holding that you were dealt. If you did so |
+pg| ***** 721 ***** |
+
+
+pc|Cq|at|then South would avoid losing a trick that he normally would have lost. |
+pg| ***** 722 ***** |
+
+
+qx||bt||nt||cs|c|cp||fp|t|ht|i|at|^-{^^End^^ ^^          ^*nChapter  2.3^*n       ^^ ^^ }^- |
+pg| ***** 723 ***** |
+
+

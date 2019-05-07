@@ -1,0 +1,1224 @@
+%%
+%%
+
+ss|chapter,Chapter 18.3                  Complex   1@d - 1NT   |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2016-01-31        set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=001___FP_masthead.ins
+%%
+ss|masthead,Oliver Clarke Precision                                 2018  |
+%%
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       Precision Blue
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor    that Gray
+%%
+<<--INSERT-END**-->>=001___FP_masthead.ins
+
+
+<<--INSERT-START-->>=002___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|f35|                    Font   f  f-fine
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  position adjustment USED BY 'GRAPHICS'
+%%
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=002___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=005___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+ht|z|n#|k|at|@0^*h https://www.youtube.com/channel/UCTGNUS8jbx85QOMUPlHoRMA, OCP Videos ^*n|
+%%
+<<--INSERT-END**-->>=005___FP_footer.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+Lg||
+ht|j|
+qx|18.3|
+
+lg|l|
+at|^cBelow is a list of the meanings of the text in the  'bumps'  that you can see in the  ^*bNavbar^*n  below.
+|n^|c|at|
+^e 1D   ^g Summary      ^i    1@d                     ^n covered in chapters    ^*b18.1   18.2   18.3^*n
+^e 1S   ^g Summary      ^i    1@d - 1NT               ^n covered ^*b THIS ^*n class  (18.3)
+^e 2C   ^g ...          ^i    1@d - 1NT - 2@c         ^n sequence
+^e 2D   ^g ...          ^i    1@d - 1NT - 2@d         ^n sequence
+^e 2H   ^g ...          ^i    1@d - 1NT - 2@h         ^n sequence
+^e 2S   ^g ...          ^i    1@d - 1NT - 2@s         ^n sequence
+^e 2NT  ^g ...          ^i    1@d - 1NT - 2NT         ^n sequence
+|n^|b|at|                       
+^e Prac ^g Start of the  Practice hands    ^n Other hands show as a single peak|
+pg| ***** 0 ***** |
+
+
+--------------------------------------------------------------------
+qx|1D,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D |fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   The 1@d Opening is STILL not forcing in the Complex System.
+ 
+With  0-7  points Responder will normally pass, but might bid 1@h if they have 
+^o a @d shortage and a 6-card or longer Major. 
+^c@2|lg|i|at|
+^bThe initial responses to the Complex 1@d are completely artificial: 
+1@d   -   1@h ^f            8-10 ^i hcp (any shape)            ^n^*g 1D:18.1, ^*bSee chapter 18.1^*n  
+1@d   -   1@s ^f          11-13  ^i hcp (any shape)            ^n^*g 1D:18.2, ^*bSee chapter 18.2^*n
+1@d   -   1NT ^f          14+    ^i hcp (any shape)            ^n|cp|gr|at| ^*bThis lesson^*n|cp||at|
+1@d   -   2@c ^f          16+    ^i Alpha 
+1@d   -   2@d ^f          16+    ^i Alpha 
+1@d   -   2@h ^f          16+    ^i Alpha 
+1@d   -   2@s ^f          16+    ^i Alpha
+^b@2|lg||n^|7|at|
+1@h and 1@s are fairly straightforward but 1NT is 14+ UNLIMITED.       
+
+If Responder has a 16+ hand that is of a type where Alpha seems the best route then they use  2@c, 2@h, 2@h  or  2@s,  but otherwise they bid 1NT and let Opener describe their hand further. 
+
+Needless to say the 1NT bid is invariably Game-forcing.
+ 
+Tonight we're only going to look at the  1@d - 1NT  (14+ hcp) sequences. 
+
+I'll outline all of Opener's rebids and then go through each one in more detail.|
+pg| ***** 1 ***** |
+
+
+-----------------------------------------------------------------------------------------------  
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,wide|
+nt|^z@3^b@2|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class                   Complex   1@d - 1NT ^*n^-^^|cs||fp||cp||at|^^|
+lg|c|
+cp|red|at|^*bOliver:^*n|cp||at|     Hi Everyone and welcome to today's OCP session, in which we'll continue to study the full COMPLEX version of this Precision Club system.   
+
+None of what we'll be looking at over the next few weeks has ANYTHING to do with "standard" Precision.
+
+As a reminder, you absolutely CANNOT learn or play this part of the system ON YOUR OWN.
+
+You must learn it and practice is with a regular partner who plays the REST of this System or as one of a group.   
+
+I will ALWAYS happily play the Complex System with anyone who asks but you must be comfortable with the rest of it, including all the Asking Bids before you do so.
+
+Tonight we're going to carry on looking at the Complex 1@D responses.
+|n^|5|at|
+
+Specifically, we're going to be looking at continuations over |fp|g|at| 1@D - 1NT|fp||at|.
+
+If you have not already done so, please have a look at the notes I have prepared on on the Complex 1@D.
+|ht|v|n#|9|at|
+^*bMM:^*n  This class presented here is a combination of Oliver's lesson text, table extracts from the website and Oliver's voice comments given during the class.
+
+See Oliver's Complex 1@D web page at  |fp|t-title|at| ^*h http://ocp.pigpen.org.uk/Complex_1d.php^*n|fp||
+pg| ***** 2 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex 1@d System is Off After a Pass |fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   As a reminder, the requirements for the 1@D Opening stay largely unchanged in the Complex System.
+
+The only exception is that if you are using the Reverse Roman 2@H and 2@S Openings (which show 11-15 and a 4-card Major with a 6-card Diamond suit), then the 1@D Opening now specifically DENIES that kind of holding.
+|n#|7|at|
+|fp|t-title|at|The Complex 1@d system is  OFF  after a PASS |fp||n#|5|at|
+If Responder is a PASSED hand then the Complex 1@d System simply does NOT apply and all bidding over the 1@d Opening is STRICTLY NATURAL along identical lines to the "normal" system (with the one exception that the 2@c and 2@h bids are no longer forcing to 2NT).
+
+So the Complex 1@d System ONLY applies in 1st or 2nd position.
+
+
+^*bMM:^*n Oliver's recap of the  1@d - 1@s  sequences omitted.  Instead see Chapter 18.2  1@d - 1@s    
+^p(at the bottom of the of the left hand column).
+
+
+|ht|t|lg|c|cp|mg|at|@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-|cp||at|
+|n^|7|at|
+^*bMM:^*n   Meaning of |fp|t-title|at| ^*bUR^*n|fp||at|,|fp|t-title|at| ^*bLR^*n  etc|fp||at|   in various contexts  ^t  (^*bsov^*n   =   Singleton or Void)
+|n^|5|at|
+                ^fcontext   ^h 11-15 (1@D)   ^l 8-10 (1@h resp)   ^p 11-13 (1@s resp)           
+|n^|6|at|                   ^h@-@-@-@-@-@-   ^l@-@-@-@-@-@-@-     ^p@-@-@-@-@-@-@-@-
+^c ^*bUR^*n ^d  Upper Range ^h   14 - 15  ^l      9+- 10       ^p        12+- 13 
+^c ^*bLH^*n ^d  Lower Range ^h   11 - 13  ^l      8  -   9     ^p        11  - 12
+^c ^*bMax^*n                ^h      15    ^l         10        ^p            13     |cp|dg|at|
+^c ^*bMin^*n                ^h      11    ^l           8       ^p            10     |cp||
+pg| ***** 3 ***** |
+
+
+--------------------------------------------------------------------
+qx|1NT,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D  -  1NT        Outline|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   The 1NT response to an Opening of 1@D shows |fp|t|at| 14+ hcp's with potentially ANY |fp||at| distribution.
+
+The 1NT response is effectively game-forcing and as with  1@D-1@H  and  1@D-1@S,  Opener rebids to show 
+^v their hand-type.
+
+These responses are, however, ^*b much simpler ^*n in nature than those covered previously.
+^c@2|lg|p|at|
+^b  Responders Rebid
+1@D - 1NT  -     2@C  ^h   ^*bany ^*n 5+@c's  (inc semi-bal)    EXCEPT     those with  5+@d's
+1@D - 1NT  -     2@D  ^h   ^*bany ^*n 5+@d's  (inc semi-bal)  INCLUDING  those with  5+@d's ^*b AND ^*n 5+@c's
+1@D - 1NT  -     2@H  ^h   ^*bany ^*n 4441
+1@D - 1NT  -     2@S  ^h   ^*bany ^*n 4432
+1@D - 1NT  -     2NT  ^h   ^*bany ^*n 4333
+^b@2
+Let's take these one at a time over the following pages.|
+pg| ***** 4 ***** |
+
+
+--------------------------------------------------------------------
+qx|2C,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D  -  1NT  -   2@c|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at| 1@D-1NT-2@C     |fp|t|at|^*bany ^*n hand with  5+@c's  (inc semi-bal)  EXCEPT  those with  5+@d's|fp||at|.
+|n^|3|at|
+For all intents and purposes, this is treated EXACTLY like a Positive 2@C response to a 1@C Opening, so far as continuations are concerned, with the sole exception of the Relay Beta.
+|n^|3|at|^c@2
+1@D - 1NT - 2@C - 2@D          ^h  |fp|s|at|(responder)|fp||at| RANGE Beta (2@h = ^*bLR^*n,   2@s = ^*bUR^*n 0-2,   2NT = ^*bUR^*n 3,   3@c = ^*bUR^*n 4, ...)
+|n^|3|at|
+^bIf Responder ends up Handing Over the Captaincy with 2NT after the 2@d Range Beta and a  2@h or 2@s  response: 
+|n^|5|lg|g|at|
+1@D - 1NT - 2@C - 2@D - 2@h/@s - 2NT                    ^l       |fp|s|at|(responder)|fp||at| HOC
+1@D - 1NT - 2@C - 2@D - 2@h/@s - 2NT - 3@C              ^m    weak 6@c's    or    3145    or    1345
+1@D - 1NT - 2@C - 2@D - 2@h/@s - 2NT - 3@C - 3@D        ^m        |fp|s|at|(responder)|fp||at| |cp|gr|at|^*bforcing Enquiry^*n|cp||at|
+1@D - 1NT - 2@C - 2@D - 2@h/@s - 2NT - 3@C - 3@D - 3@h  ^m          1345   or   x3x6  (including  3316)
+1@D - 1NT - 2@C - 2@D - 2@h/@s - 2NT - 3@C - 3@D - 3@s  ^m          3145   or   3xx6  ( except     3316)
+1@D - 1NT - 2@C - 2@D - 2@h/@s - 2NT - 3@C - 3@D - 3NT  ^m                            xxx6  (with NO 3-card Maj)   or   ^*bany^*n 5332
+|n^|a|at|                                                           
+1@D - 1NT - 2@C - 2@D - 2@h/@s - 2NT - 3@D              ^m    2245
+1@D - 1NT - 2@C - 2@D - 2@h/@s - 2NT - 3@H              ^m    x4x5       4@h's  ^*b&^*n  weak 5@c's
+1@D - 1NT - 2@C - 2@D - 2@h/@s - 2NT - 3@S              ^m    4xx5       4@s's  ^*b&^*n  weak 5@c's
+1@D - 1NT - 2@C - 2@D - 2@h/@s - 2NT - 3NT              ^m    2236,  1246,  2146   or   any semi-bal hand with 5@c's.
+|n^|5|lg|c|at|^b@2
+Apart from the above, sequences after   1@d - 1NT - 2@C   are EXACTLY as over  1@C - 2@C(positive).  
+^k (Notice that  RESPONDER is the captain, 'the assumed 1@c bidder').
+|n^|5|at|
+So 2@h and 2@s are Alpha in that suit, 2NT is Alpha in @d's, and 3@c is Gamma (Opener's @c suit) whether bid directly or preceded by the Range Beta.|
+pg| ***** 5 ***** |
+
+
+--------------------------------------------------------------------
+qx|2D,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D  -  1NT  -   2@d|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at| 1@D-1NT-2@D     |fp|t|at|^*bany ^*n hand with  5+@d's  (inc semi-bal)|fp||at|.
+|n^|3|at|
+For all intents and purposes, this is treated EXACTLY like a Positive 2@D response to a 1@C Opening, so far as continuations are concerned, with the sole exception of the Relay Beta.
+|n^|3|at|^c@2
+1@D - 1NT - 2@D - 2@h          ^h  |fp|s|at|(responder)|fp||at| RANGE Beta (2@s = ^*bLR^*n,   2NT = ^*bUR^*n 0-2,   3@c = ^*bUR^*n 3,   3@d = ^*bUR^*n 4, ...)
+|n^|3|at|
+^bIf Responder ends up Handing Over the Captaincy with 2NT after the 2@h Range Beta and a  2@s  response: 
+|n^|5|lg|g|at|
+1@D - 1NT - 2@D - 2@h - 2@s - 2NT                    ^l       |fp|s|at|(responder)|fp||at| HOC
+1@D - 1NT - 2@D - 2@h - 2@s - 2NT - 3@C              ^m    xx54  OR  xx55       5@d's  ^*b&^*n  4@c's    or    5@d's  ^*b&^*n  5@c's
+1@D - 1NT - 2@D - 2@h - 2@s - 2NT - 3@D              ^m    nn6x     6@d's ^*b&^*n  NO 4 card @h/@s    (4@c's also rare)
+1@D - 1NT - 2@D - 2@h - 2@s - 2NT - 3@H              ^m    x45x     4@h's  ^*b&^*n  5@d's
+1@D - 1NT - 2@D - 2@h - 2@s - 2NT - 3@S              ^m    4x5x     4@s's  ^*b&^*n  5@d's
+1@D - 1NT - 2@D - 2@h - 2@s - 2NT - 3NT              ^m    ^*bany^*n 5332 
+|n^|5|lg|c|at|^b@2
+Apart from the above, sequences after   1@d - 1NT - 2@D   are EXACTLY as over  1@C - 2@D(positive).  
+^k (Notice that  RESPONDER is the captain, 'the assumed 1@c bidder').
+|n^|5|at|
+So 2@s and 3@c are Alpha in that suit, 2NT is Alpha in @h's, and 3@d is Gamma (Opener's @d suit) whether bid directly or preceded by the Range Beta. eg:
+|n^|5|at|^c@2
+1@D - 1NT - 2@D - 2@s             ^m  |fp|s|at|(responder)|fp||at| Alpha in @s
+1@D - 1NT - 2@D - 2NT             ^m  |fp|s|at|(responder)|fp||at| Alpha in @h
+1@D - 1NT - 2@D - 3@c             ^m  |fp|s|at|(responder)|fp||at| Alpha in @c
+1@D - 1NT - 2@D - 3@d             ^m  |fp|s|at|(responder)|fp||at| Gamma (Opener's @d suit)
+1@D - 1NT - 2@D - 2@h(Range) - 3@c(^*bUR^*n, 3) - 3@d  ^m  |fp|s|at|(responder)|fp||at| Gamma (Opener's @d suit)|
+pg| ***** 6 ***** |
+
+
+--------------------------------------------------------------------
+qx|2H,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D  -  1NT  -   2@h|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at| 1@D-1NT-2@H            |fp|t|at|^*n any ^*n |fp|b|at| 4441|fp||at|
+|n^|3|at|
+Now 2@S asks  'Where the singleton ?'   and    2NT,  3@C,  3@D,  &  3@H  are bids of the  'suit'  below.
+|n^|5|Lg|m|at|^c@2
+1@D - 1NT - 2@h                          ^j^*bany^*n 4441
+1@D - 1NT - 2@h - 2@s                    ^j  |fp|s|at|(responder)|fp||at|   ^*b2@s^*n   |cp|gr|at|^*bautomatic Relay^*n|cp||at|     Where is your singleton ?
+1@D - 1NT - 2@h - 2@s - 2NT              ^j      4441  singleton @c  |n#|3|at|^q"     ^t"  |n^|3|at|
+1@D - 1NT - 2@h - 2@s - 3@c              ^j      4414  singleton @d   ^p |fp|s|at|bid the suit ^*bbelow^*n the singleton|fp||at|
+1@D - 1NT - 2@h - 2@s - 3@d              ^j      4144  singleton @h           ^q"     ^t"
+1@D - 1NT - 2@h - 2@s - 3@h              ^j      1444  singleton @s           ^q"     ^t"
+|n^|5|lg|c|at|^b@2
+
+Once Opener has shown where his singleton lies, Responder can make an Eta Ask below game level to set the suit, thereby establishing Asking Bids. 
+
+If Responder uses Beta (^*bNORMAL^*n Beta) in the singleton suit ^*b before ^*n setting the suit, then Eta is not available and Responder must set the contract thereafter. 
+
+(Note - Eta below game level will NOT always be available)|
+pg| ***** 7 ***** |
+
+
+--------------------------------------------------------------------
+qx|2S,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D  -  1NT  -   2@s|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at| 1@D-1NT-2@S            |fp|t|at|^*n any ^*n |fp|b|at| 4432|fp||at|     of  the opposite range to the ^*bopening 1NT ^*n
+|n^|3|at|
+Now 2NT is Baron, asking for 4-card suits to be bid up the line.   All continuations natural.
+
+3-level suit bids are all Iota with (of course) Relay Beta available over a positive response.  Asking Bids are established.
+
+As a table
+|n^|5|Lg|m|at|^c@2
+1@D - 1NT - 2@s - 2NT        ^j|fp|s|at|(responder)|fp||at| Baron, asking for 4-card suits to be bid up the line
+1@D - 1NT - 2@s - 3@c        ^j|fp|s|at|(responder)|fp||at| Iota @c, usually with a marked single suited or 2 suited hand. |n^|3|cp|red|fp|b|at|@.|fp||cp||n#|3|at|
+1@D - 1NT - 2@s - 3@d        ^j|fp|s|at|(responder)|fp||at| Iota @d, ^p " ^v "
+1@D - 1NT - 2@s - 3@h        ^j|fp|s|at|(responder)|fp||at| Iota @h, ^p " ^v "
+1@D - 1NT - 2@s - 3@s        ^j|fp|s|at|(responder)|fp||at| Iota @s, ^p " ^v "
+^r |n^|3|cp|red|fp|b|at|@.|fp||cp||n#|3|at| =  Asking Bids are established.|
+pg| ***** 8 ***** |
+
+
+--------------------------------------------------------------------
+qx|2NT,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D  -  1NT  -   2NT|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at| 1@D-1NT-2NT            |fp|t|at|^*n any ^*n |fp|b|at| 4333|fp||at|     of  the opposite range to the ^*bopening 1NT ^*n
+|n^|3|at|
+Now 2NT is HoC  (Hand Over Control)
+
+Now 3@C asks Opener to bid their 4-card suit (3NT shows Clubs).
+Alternatively  3@D,  3@H,  3@S and 4@C  are all Zeta in the suit bid.
+
+As a table
+|n^|5|Lg|k|at|^c@2
+1@D - 1NT - 2NT           ^i     HOC   (Hand Over Control)
+|n^|g|at|
+1@D - 1NT - 2NT - 3@c        ^j  |fp|s|at|(responder)|fp||at|   ^*b3@c^*n   |cp|gr|at|^*bforcing Enquiry^*n|cp||at|     Where is your 4 card suit ?
+1@D - 1NT - 2NT - 3@c - 3@d  ^j      3343  4 card @d
+1@D - 1NT - 2NT - 3@c - 3@h  ^j      3433  4 card @h
+1@D - 1NT - 2NT - 3@c - 3@s  ^j      4333  4 card @d
+1@D - 1NT - 2NT - 3@c - 3NT  ^j      3334  4 card @c
+|n^|9|at|
+1@D - 1NT - 2NT - 3@d  ^j   |fp|s|at|(responder)|fp||at| Zeta in @d
+1@D - 1NT - 2NT - 3@h  ^j   |fp|s|at|(responder)|fp||at| Zeta in @h
+1@D - 1NT - 2NT - 3@s  ^j   |fp|s|at|(responder)|fp||at| Zeta in @d
+1@D - 1NT - 2NT - 4@c  ^j   |fp|s|at|(responder)|fp||at| Zeta in @c|
+pg| ***** 9 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+qx|Prac,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Practice / Demo  Hands|fp||at|^^
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  4 victims please   :)
+
+Curls77:  4 complex victims u should say
+
+
+RogerPfi:  What happened to the teaching hands ?   :)
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Better if you play them Roger  :)
+
+
+Curls77:  i dont know simple, cant deal with complex!
+
+maysie:  Sry just got out of bed
+
+
+
+boleo1:  Hi Barry
+
+
+boleo1:  wc Roger
+
+
+RogerPfi:  Hi Clement|
+pg| ***** 10 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 1,thin|
+pn|RogerPfi,Curls77,boleo1,Eszter5|rh||ah|Practice 1|st|-|sk|n|
+%% 3SQ6HA9732DKQ86CA2,ST94HT6D743CKJT98,SKJ75HKJ8DAJ92C74,SA832HQ54DT5CQ653
+md|3SQ6HA9732DKQ86CA2,,SKJ75HKJ8DAJ92C74,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Practice 1 |
+pg| ***** 11 ***** |
+
+
+mb|1D|an|11-15, 1+@d, No 5M, No 6@C, not 10-12 bal|
+pg| ***** 12 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 13 ***** |
+
+
+mb|1N|an|14+,   any shape|
+pg| ***** 14 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 15 ***** |
+
+
+mb|2S|an|13-15, any 4432|
+pg| ***** 16 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 17 ***** |
+
+
+mb|3H|an|Iota in @h's|
+pg| ***** 18 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 19 ***** |
+
+
+mb|4C|an|HH  or  Hxx  agrees @h's|
+pg| ***** 20 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 21 ***** |
+
+
+mb|4S|an|epsilon in @s's|
+pg| ***** 22 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 23 ***** |
+
+
+mb|5D|an|2nd rd ctrl    [ x   Kxx   K ]|
+pg| ***** 24 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 25 ***** |
+
+
+mb|5H|
+at|^^^^South knows from the bidding that he has 2 probable losers @- a @H and a @S,  and stops in 5@H.|
+pg| ***** 26 ***** |
+
+
+mb|p|mb|?|
+pg| ***** 27 ***** |
+
+
+mb|p|
+pg| ***** 28 ***** |
+
+
+mb|p|
+sk||
+pg| ***** 29 ***** |
+
+
+pf|Y|
+md|0SQ6HA9732DKQ86CA2,ST94HT6D743CKJT98,SKJ75HKJ8DAJ92C74,SA832HQ54DT5CQ653|
+mb|p|
+pc|cT|
+pg| ***** 30 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 31 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2,thin|
+pn|RogerPfi,Curls77,boleo1,Eszter5|rh||ah|Practice 2|sv|n|sk|e|
+%% 4SJ743H73DJ632CJ75,SKT9HAKQJ82D7CKT4,S862H65DKQ854CA63,SAQ5HT94DAT9CQ982
+md|4,SKT9HAKQJ82D7CKT4,,SAQ5HT94DAT9CQ982|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Practice 2 |
+pg| ***** 32 ***** |
+
+
+mb|1D|an|11-15, 1+@d, No 5M, No 6@C, not 10-12 bal|
+pg| ***** 33 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 34 ***** |
+
+
+mb|1N|an|14+,   any shape|
+pg| ***** 35 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 36 ***** |
+
+
+mb|2N|an|NF,13-15, any 4333|
+pg| ***** 37 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 38 ***** |
+
+
+mb|3H|an|Zeta    ctrl ask    @h trumps|
+pg| ***** 39 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 40 ***** |
+
+
+mb|4C|an|4 ctrls|
+pg| ***** 41 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 42 ***** |
+
+
+mb|4D|an|Epsilon in @d's|
+pg| ***** 43 ***** |
+
+
+sj|c|
+mb|d|mb|?|
+pg| ***** 44 ***** |
+
+
+mb|4N|an|1st rd ctrl  [void, Axx]|
+at|^^^^Here East would normally bid 5 steps to show her 1st round control, but 2 steps are taken up by the RDBL and pass (ROPI), so she only bids up 3 steps to 4NT.|
+pg| ***** 45 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 46 ***** |
+
+
+mb|6H|
+pg| ***** 47 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 48 ***** |
+
+
+mb|p|
+sk||
+pg| ***** 49 ***** |
+
+
+pf|Y|
+md|04SJ743H73DJ632CJ75,SKT9HAKQJ82D7CKT4,S862H65DKQ854CA63,SAQ5HT94DAT9CQ982|
+mb|p|
+pc|dK|
+pg| ***** 50 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 51 ***** |
+
+
+--------------------------------------------------------------------------
+qx|p 3,thin|
+pn|RogerPfi,Curls77,maysie,Eszter5|rh||ah|Practice 3|sv|e|sk|s|
+%% 1SQ94HKQT8DAKJT7C6,ST53H54DQ984CJT97,SAKJ82HAJ973D5CK2,S76H62D632CAQ8543
+md|1SQ94HKQT8DAKJT7C6,,SAKJ82HAJ973D5CK2,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 3    |
+pg| ***** 52 ***** |
+
+
+mb|1D|an|11-15, 1+@d, No 5M, No 6@C, not 10-12 bal|
+pg| ***** 53 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 54 ***** |
+
+
+mb|1N|an|14+,   any shape|
+pg| ***** 55 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 56 ***** |
+
+
+mb|2D|an|any hand with 5@D's|
+pg| ***** 57 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 58 ***** |
+
+
+mb|2H|an|(Range) Beta   -  relay beta|
+pg| ***** 59 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 60 ***** |
+
+
+mb|3D|an|4 ctrls   Upper Range|
+pg| ***** 61 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 62 ***** |
+
+
+mb|3H|an|Theta ask in @H's|
+pg| ***** 63 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 64 ***** |
+
+
+mb|4N|an|HHxx|
+pg| ***** 65 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 66 ***** |
+
+
+mb|5D|an|Epsilon in @d's|
+pg| ***** 67 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 68 ***** |
+
+
+mb|5H|an|None   or   1st & 2nd    in @d's  [none   A   AKx]|
+pg| ***** 69 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 70 ***** |
+
+
+mb|6H|
+pg| ***** 71 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 72 ***** |
+
+
+sk||mb|p|
+at|          Alpha might have been a better route with the North hand, because as you  can see you've ended up here with a slightly more expensive sequence.
+^^May if you were trying for the Grand, the ask in @c's would have been better.  You need to know that most of all.|
+pg| ***** 73 ***** |
+
+
+pf|Y|
+md|0SQ94HKQT8DAKJT7C6,ST53H54DQ984CJT97,SAKJ82HAJ973D5CK2,S76H62D632CAQ8543|
+mb|p|
+pc|cA|
+pg| ***** 74 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 75 ***** |
+
+
+---------------------------------------------------------------------------
+qx|p 4,thin|
+pn|RogerPfi,Curls77,maysie,Eszter5|rh||ah|Practice 4|sv|b|sk|w|
+%% 2SQJ75HT93DJT2CK85,ST6HK8DAK53CQ9762,S432HA754DQ9764C4,SAK98HQJ62D8CAJT3
+md|2,ST6HK8DAK53CQ9762,,SAK98HQJ62D8CAJT3|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 4    |
+pg| ***** 76 ***** |
+
+
+mb|1D|an|11-15, 1+@d, No 5M, No 6@C, not 13-15 bal|
+pg| ***** 77 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 78 ***** |
+
+
+mb|1N|an|14+,   any shape|
+pg| ***** 79 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 80 ***** |
+
+
+mb|2C|an|5+ @c's|
+pg| ***** 81 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 82 ***** |
+
+
+mb|2D|an|(Range) Beta|
+pg| ***** 83 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 84 ***** |
+
+
+mb|2H|an|Lower Range|
+pg| ***** 85 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 86 ***** |
+
+
+mb|2N|an|HOC|
+pg| ***** 87 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 88 ***** |
+
+
+mb|3D|an|4@d's (to go with the 5@c's)|
+at|  Notice that  West  while bidding 4 card suits  'up the line'  skips over her 5 card @c suit as it has already been shown.  A bid of  3@c  here would show a 6 card suit.|
+pg| ***** 89 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 90 ***** |
+
+
+mb|3N|
+pg| ***** 91 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 92 ***** |
+
+
+sk||mb|p|
+at|^^^^wd|
+pg| ***** 93 ***** |
+
+
+pf|Y|
+md|0SQJ75HT93DJT2CK85,ST6HK8DAK53CQ9762,S432HA754DQ9764C4,SAK98HQJ62D8CAJT3|
+mb|p|
+pc|dJ|
+pg| ***** 94 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 95 ***** |
+
+
+-------------------------------------------------------------------------
+qx|p 5,thin|
+pn|RogerPfi,GG_Bridge,maysie,17Tezcan|rh||ah|Practice 5|sv|n|sk|e|
+%% 3SK842HAJ986DT8C64,SAQ9HK75DQ9CAJT82,ST63HQT43D7643C53,SJ75H2DAKJ52CKQ97
+md|3,SAQ9HK75DQ9CAJT82,,SJ75H2DAKJ52CKQ97|
+mb|p|mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 5   |
+pg| ***** 96 ***** |
+
+
+mb|1D|an|11-15, 1+@d, No 5M, No 6@C, not 10-12 bal|
+pg| ***** 97 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 98 ***** |
+
+
+mb|1N|an|14+,   any shape|
+pg| ***** 99 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 100 ***** |
+
+
+mb|2D|an|any hand with 5@D's  |
+pg| ***** 101 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 102 ***** |
+
+
+mb|2H|an|Range Beta|
+pg| ***** 103 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 104 ***** |
+
+
+mb|3D|an|4 ctrls  Upper Range|
+pg| ***** 105 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 106 ***** |
+
+
+mb|3N|
+pg| ***** 107 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 108 ***** |
+
+
+sk||mb|p|
+at|              While 12 tricks are there on these hands bidding a slam with only 9 controls that needs the @sK and the @hA  to be right is a tough ask.
+^^The way to it would be to start with  3@c Theta  over East's 2@d bid.|
+pg| ***** 109 ***** |
+
+
+pf|Y|
+md|0SK842HAJ986DT8C64,SAQ9HK75DQ9CAJT82,ST63HQT43D7643C53,SJ75H2DAKJ52CKQ97|
+mb|p|
+pc|H3|
+pg| ***** 110 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 111 ***** |
+
+
+-----------------------------------------------------------------------------------------------------------------------
+qx|p 6,thin|
+pn|RogerPfi,Curls77,maysie,17Tezcan|rh||ah|Practice 6|sv|e|sk|e|
+%% 4SJ8HKT94DA84CKT42,SAQT952HAQ2DK93C7,S73HJ8763D65C8653,SK64H5DQJT72CAQJ9
+md|4,SAQT952HAQ2DK93C7,,SK64H5DQJT72CAQJ9|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 6    |
+pg| ***** 112 ***** |
+
+
+mb|1D|an|11-15, 1+@d, No 5M, No 6@C, not 13-15 bal|
+pg| ***** 113 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 114 ***** |
+
+
+mb|2S|an|16+  Alpha in @s's|
+pg| ***** 115 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 116 ***** |
+
+
+mb|3D|an|0-3 ctrls    Hxx  or  xxxx      sets @s as trumps  |  
+pg| ***** 117 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 118 ***** |
+
+
+mb|3H|an|Beta (Weak Scale)|
+pg| ***** 119 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 120 ***** |
+
+
+mb|4D|an|3 ctrls  A=2, K=1|
+pg| ***** 121 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 122 ***** |
+
+
+mb|4S|
+pg| ***** 123 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 124 ***** |
+
+
+sk||mb|p|
+at|Again another marginal slam that you may or may not want to bid.  
+1@d - 1NT  might get to there.  You can use range Beta and maybe discover the double fit in @s's and @d's
+^^As on the last hand this approach (via Alpha) is not wrong.|
+pg| ***** 125 ***** |
+
+
+pf|Y|
+md|0SJ8HKT94DA84CKT42,SAQT952HAQ2DK93C7,S73HJ8763D65C8653,SK64H5DQJT72CAQJ9|
+mb|p|
+pc|D6|
+pg| ***** 126 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 127 ***** |
+
+
+------------------------------------------------------------------------------
+qx|p 7,thin|
+pn|RogerPfi,Curls77,maysie,17Tezcan|rh||ah|Practice 7|sv|b|sk|s|
+%% 1SJ95HKQDKQT862CA7,SKQT4H943DJ5CQT98,SA62HAJ52DA3CK652,S873HT876D974CJ43
+md|1SJ95HKQDKQT862CA7,,SA62HAJ52DA3CK652,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 7    |
+pg| ***** 128 ***** |
+
+
+mb|1D|an|11-15, 1+@d, No 5M, No 6@C, not 10-12 bal|
+pg| ***** 129 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 130 ***** |
+
+
+mb|1N|an|14+,   any shape|
+pg| ***** 131 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 132 ***** |
+
+
+mb|2D|an|5+@d's|
+pg| ***** 133 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 134 ***** |
+
+
+mb|2H|an|Range Beta|
+pg| ***** 135 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 136 ***** |
+
+
+mb|3D|an|13-15    4 ctrls|
+pg| ***** 137 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 138 ***** |
+
+
+mb|4D|an|ask in @d's Gamma|
+pg| ***** 139 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 140 ***** |
+
+
+mb|5D|an|HHxxxx|
+pg| ***** 141 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 142 ***** |
+
+
+mb|5H|an|ask in @h's|
+pg| ***** 143 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 144 ***** |
+
+
+mb|6D|an|2nd + 3rd   [Kx  KQx  KQ]|
+pg| ***** 145 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 146 ***** |
+
+
+sk||mb|p|
+at| Well done guys
+^^You don't really want to be in 7d's for all North knows, South could have @hKx.  Also Sa 4-1 split in @d's would make 7@d's a dangerous place to be.|
+pg| ***** 147 ***** |
+
+
+pf|Y|
+md|0SJ95HKQDKQT862CA7,SKQT4H943DJ5CQT98,SA62HAJ52DA3CK652,S873HT876D974CJ43|
+mb|p|
+pc|C8|
+pg| ***** 148 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 149 ***** |
+
+
+------------------------------------------------------------------------------
+qx|p 8,thin|
+pn|RogerPfi,Curls77,maysie,17Tezcan|rh||ah|Practice 8|sv|o|sk|n|
+%% 2SAT6H86DAK62CAJ74,S953HJ7532DT9CKQ2,SQJ8HAK4DQJ7543C9,SK742HQT9D8CT8653
+md|2SAT6H86DAK62CAJ74,,SQJ8HAK4DQJ7543C9,|
+mb|p|mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 8    |
+pg| ***** 150 ***** |
+
+
+mb|1D|an|11-15, 1+@d, No 5M, No 6@C, not 10-12 bal|
+pg| ***** 151 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 152 ***** |
+
+
+mb|1N|an|14+,   any shape|
+pg| ***** 153 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 154 ***** |
+
+
+mb|2D|an|5+@d's|
+pg| ***** 155 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 156 ***** |
+
+
+mb|2H|an|Range Beta|
+pg| ***** 157 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 158 ***** |
+
+
+mb|2S|an|Lower Range|
+pg| ***** 159 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 160 ***** |
+
+
+mb|3D|an|Gamma in @d's|
+pg| ***** 161 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 162 ***** |
+
+
+mb|4C|an|Hxxxxx|
+pg| ***** 163 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 164 ***** |
+
+
+mb|4H|an|Relay Beta|
+pg| ***** 165 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 166 ***** |
+
+
+mb|4N|an|3 ctrls|
+pg| ***** 167 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+at|             ^*bRogerPfi:^*n        Toss of the coin time. |
+pg| ***** 168 ***** |
+
+
+at|^^^^|cp|red|at|^*bOliverC:^*n|cp||at|  Yes - Roger it is. |
+pg| ***** 169 ***** |
+
+
+mb|5D|
+pg| ***** 170 ***** |
+
+
+sj|c|
+mb|p|mb|?|
+pg| ***** 171 ***** |
+
+
+sk||mb|p|
+at|^^wd    although   6  would have paid off.|
+pg| ***** 172 ***** |
+
+
+pf|Y|
+md|0SAT6H86DAK62CAJ74,S953HJ7532DT9CKQ2,SQJ8HAK4DQJ7543C9,SK742HQT9D8CT8653|
+mb|p|pc|CT|
+pg| ***** 173 ***** |
+
+
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Complex  1@D - 1NT|fp||at|      ^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  
+|n^|5|at|
+Ok, we're going to leave it there for tonight. 
+
+Next week we start on the Multi 2@D
+
+
+RogerPfi: ty Oliver
+
+
+Curls77:  thanks, gn!
+
+
+Eszter5: gn
+
+
+maysie:  Ty Oliver |
+
+ht|z|lg|c|n#|0|at|^^^a  ^*bEnd^*n|
+pg| ***** 174 ***** |
+
+

@@ -1,0 +1,316 @@
+%%
+%%
+
+ss|chapter,4.                                    A  Meckwell  3 NT |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2017-08-08          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,More from Oliver                                        2017  |
+%%
+cr|m245|cg|m225|cb|m000|   fill   m  m-mastColor       yellow
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    some for of gray
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=03___FP_general_text.ins
+%%
+ht|i|
+Lg|g|
+n^|5|fp|4|at|^c@2^z@3^^|
+at|Oliver Clarke is the driving force behind OCP, a high end version of Super Precision.  To find more on OCP
+see inside aaBridge (this app) under    ^*b menubar    >    Books-L ^*n.
+|n^|7|at|
+The main OCP website it at   ^*h http://ocp.pigpen.org.uk/,ocp.pigpen.org.uk^*n which includes a forum section.  This series of articles are each based on posts made, mainly by Oliver, to the ^*h http://ocp.pigpen.org.uk/smf/index.php?board18.0,  Interesting Play Hands ^*n  sub-forum.
+|cp|mg|n^|5|at|^^^d@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-
+|cp||
+%%
+<<--INSERT-END**-->>=03___FP_general_text.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+%%
+%% Oliver's Title:   A Mechwell 3NT
+%% http://ocp.pigpen.org.uk/smf/index.php?topic=697.0
+%%
+lg|d|
+at|^z@3^c@2^^|
+ht|r|fp|t|at|Here Oliver shows us how to think like a  "Meckwell"   :)|fp||
+n^|7|at|^^^^And you can play out the hand yourself first.|
+
+qx|# 4|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+bv|e,h|
+rh||ah|Oliver 4|
+pn|OliverC,West,Partner,East|
+md|3s752h52d9854cKJ86,s9864hAT64dT2cT32,sAKQ3hKQ973dQJ7c4,sJThJ8dAK63cAQ975|
+sv|e|sk|s|
+nt|^z@3^b@2^^|n^|5|
+lg||
+at|^*bOliver 4^*n     The hand|
+pg| ***** 1 ***** |
+
+
+at|,   the bidding|
+mb|1C!|an|16+, no 4441|
+pg| ***** 2 ***** |
+
+
+mb|d|
+pg| ***** 3 ***** |
+
+
+mb|p!|an|0-4 any shape|
+pg| ***** 4 ***** |
+
+
+mb|p|
+pg| ***** 5 ***** |
+
+
+mb|1H|an|5+@h   natural|
+pg| ***** 6 ***** |
+
+
+mb|2C|
+pg| ***** 7 ***** |
+
+
+mb|p|
+pg| ***** 8 ***** |
+
+
+mb|p|
+pg| ***** 9 ***** |
+
+
+mb|2S|
+pg| ***** 10 ***** |
+
+
+mb|p|
+pg| ***** 11 ***** |
+
+
+mb|2N!|an|Leb, forces 3@c|
+pg| ***** 12 ***** |
+
+
+mb|p|
+pg| ***** 13 ***** |
+
+
+mb|3C!|an|forced|
+pg| ***** 14 ***** |
+
+
+mb|p|
+pg| ***** 15 ***** |
+
+
+mb|3N|
+pg| ***** 16 ***** |
+
+
+pn|OliverC,West,Dummy,East |
+mb|p|mb|p|mb|p|
+pg| ***** 17 ***** |
+
+
+qx|Lead,wide|
+pc|cT|
+at|,     the lead|
+pg| ***** 18 ***** |
+
+
+lg|c|
+pc|c4|pc|cA|pc|c6|
+n#|3|at|^^|cp|red|at|^*bOliverC:^*n|cp||at|  The first trick goes ...   |
+pg| ***** 19 ***** |
+
+
+pc|c5|
+n#|5|at|^^^d  and East returns the 5@c     now ^*b Plan the play^*n|
+pg| ***** 20 ***** |
+
+
+---------------------------------------------------------------------------
+eb|y___|
+qx|1st,wide|
+bv|f,v|
+nt|^z  @3^b@2^^|n^|5|lg|f|
+at|^*bMM:^*N  Oliver's analysis and what happened on |fp|t|cp|red|at|^*b Oliver^*n|fp||at|'s|cp||at|  table is coming next  @- ^*b DON'T MISS IT ^*n|
+n^|7|at|^^^^But first,   if you wish to,    you can Play out the rest of the hand yourself.|
+cp|dg|n#|5|at|^^Because the aaBridge bots "cheat" (they play double dummy)  YOU  won't be able to make the contract.
+^o   Oliver faces human Opps that he can lead astray.|
+pf|first-button|
+pg| ***** 21 ***** |
+
+
+---------------------------------------------------------------------------
+bv|f,h|
+nt|^z   @3^b@2^^|n^|5|lg|m|
+cp|red|at|^*bOliverC:^*n|cp||at|   Okay, so Partner is considerably weaker than you were expecting.
+Maybe they should have doubled instead of bidding 2@S.
+Either way you now have to try and make this "Meckwell" style 3NT contract on a combined 21 hcp.
+In addition you have only 1 potential entry to hand and the likelyhood that no suit is going to split well for you.|
+pg| ***** 22 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z   @3^b@2^^|n^|5|lg|h|
+cp|red|at|^*bOliverC:^*n|cp||at|   Oh well, I figured some serious stuff was going to have to go right for me here, so I have to assume the @c's and @h's are relatively favourable.    |
+pg| ***** 23 ***** |
+
+
+pc|c8|pc|c2|pc|h3|
+at|I inserted the  @c8  which held the trick.|
+pg| ***** 24 ***** |
+
+
+pc|h5|pc|h4|pc|hQ|pc|h8|
+at|   I now played a @h to the Queen, which held.|
+pg| ***** 25 ***** |
+
+
+pc|sA|pc|sT|pc|s2|pc|s4|
+at|^^Then the @sA  |
+pg| ***** 26 ***** |
+
+
+pc|sK|pc|sJ|pc|s5|pc|s6|
+at|and @sK|
+pg| ***** 27 ***** |
+
+
+pc|dQ|
+at| and exited with the @DQ|
+pg| ***** 28 ***** |
+
+
+pc|dK|pc|d4|pc|d2|
+at|, which East took with the King|
+pg| ***** 29 ***** |
+
+
+pc|hJ|pc|h2|pc|h6|pc|hK|
+at| and led the @HJ, which is allowed to run round to King of @h's.    Now what ?|
+pg| ***** 30 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z   @3^b@2^^|n^|5|lg|d|
+cp|red|at|^*bOliverC:^*n|cp||at|   Well, I decided I might as well go for it and play East for  2245  shape and West for the doubleton @d10.|
+pg| ***** 31 ***** |
+
+
+pc|dJ|
+at|^^So I now led the  Jack of @d's  to pin West's theoretical doubleton @d10 and 2 (played earlier).|
+pg| ***** 32 ***** |
+
+
+pc|dA|pc|d5|pc|dT|
+at|  East won with the  @dA  and the 10 duly appeared from West.|
+pg| ***** 33 ***** |
+
+
+pc|d3|pc|d8|pc|c3|pc|d7|
+at|   East (knowing I had the Clubs completely covered) returned a third @d.|
+pg| ***** 34 ***** |
+
+
+pc|d9|
+at|^^After cashing the 4th @d|
+pg| ***** 35 ***** |
+
+
+pc|hT|pc|h7|pc|d6|
+pg| ***** 36 ***** |
+
+
+sk||
+pc|cK|
+at|,  the @cK duly squeezed West in the Majors.|
+pg| ***** 37 ***** |
+
+
+n#|6|at|^^So I ended up with an overtrick on a hand where I should probably be -2. Sometimes, the Fates really do smile on you.   Yes, the defence can do a lot better.  :)|
+pg| ***** 38 ***** |
+
+
+qx|Play,wide|
+eb||
+bv|a,v|
+ht|u|at|@4|
+ht|v|at|^g For more on this Squeeze  see     ^*g:Positional::Roger on Squeezes,Roger on Squeezes  -  Positional^*n|
+pf|both-first-cont|
+pg| ***** 39 ***** |
+
+

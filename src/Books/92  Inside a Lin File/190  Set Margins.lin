@@ -1,0 +1,101 @@
+%% Margins H Position
+%% Last edited  2013 Dec 03
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+bt||
+
+at|
+^b@2^*bMargins^*n^z@3|
+at|
+
+So far, if you have been reading these files in order, all the commands have been of the form  !xy!<text>!    This topic introduces another form of command, the in-line character sequences that you find in the text following an   !at!   (and of course !nt!).
+
+^c@@2 ^eSets the left hand margin (to the current position). ^q@@1 ^sClears the left hand margin.
+
+^c@@3 ^eSets the right hand margin (to the current position). ^q@@0 ^sClears the right hand margin.
+
+
+
+^b@2^*bHorizontal Position^*n
+
+You can set the current horizontal position, where on the line next piece of text will appear, by using  @^<letter>  where <letter> is  a to z,  or  A to Z.  Every line is divided up into 26 segments the far left is at position 'a'  and the far right at position 'z'.
+
+It is considered good practice to start every page (after an !nt!) with a sequence that sets the left hand margin to position b.  So a fragment like the following is common @-
+
+
+!nt!!
+at!|cp|7|at|^*b@^b@@2|cp||at|^*n
+This would appear on the second line of the page, exactly where the word   ^*bMargins^*n   can now be seen (above).|
+qx|@0123|
+pg| ***** 0 ***** |
+
+
+ss|w,`at`WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW`|
+ss|ww,cp`mus``at`@0@1`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`vv`W`cp``
+ht`z`at`^^ ^bYou need a  'new line'   @^@^   or some other position command  AFTER the @@ command or you will not see the next text.`|
+
+
+qx|@4|
+nt|^^^b@2^*bWiping (clearing) part of the Screen^*n     'in line'  @@ commands|
+vv|ww|
+ht|d|at|^^^c@@4 ^*bwipes (clears) down >@4^*n|
+pg| ***** 1 ***** |
+
+
+qx|@5|
+nt|^^^b@2^*bWiping (clearing) part of the Screen^*n     'in line'  @@ commands|
+vv|ww|
+ht|d|at|^^^c@@5 ^*bwipes (clears) to the right >@5^*n|
+pg| ***** 2 ***** |
+
+
+qx|@6|
+nt|^^^b@2^*bWiping (clearing) part of the Screen^*n     'in line'  @@ commands|
+vv|ww|
+ht|d|at|^^^c@@6 ^*bwipes (clears) the bottom right corner >@6^*n|
+pg| ***** 3 ***** |
+
+
+qx|@7|
+nt|^^^b@2^*bWiping (clearing) part of the Screen^*n     'in line'  @@ commands|
+vv|ww|
+ht|d|at|^^^c@@7 ^*bwipes (clears) the top right corner only >@7^*n|
+pg| ***** 4 ***** |
+
+
+qx|@8|
+nt|^^^b@2^*bWiping (clearing) part of the Screen^*n     'in line'  @@ commands|
+vv|ww|
+ht|d|at|^^^c@@8 ^*bwipes (clears) the bottom left corner only >@8^*n|
+pg| ***** 5 ***** |
+
+
+qx|@9|
+nt|^^^b@2^*bWiping (clearing) part of the Screen^*n     'in line'  @@ commands|
+vv|ww|
+ht|d|n#|b|at|^^^c@@9 ^*bwipes (clears) the top left corner only >|n^|b|at|@9^*n|
+pg| ***** 6 ***** |
+
+
+qx|@4@5|
+nt|^^^b@2^*bWiping (clearing) part of the Screen^*n     'in line'  @@ commands|
+vv|ww|
+ht|d|at|^^^c@@4@@5 together ^*bwipes (clears) ALL BUT the top left hand corner >@4@5^*n^^|
+pg| ***** 7 ***** |
+
+
+at|^^^^ ^c@2You need a  'new line'   @^@^   or some other position command immediately AFTER the @@ command
+
+OTHERWISE you will not see the next piece of text.|
+pg| ***** 8 ***** |
+
+
+qx|end|
+ht|z|at|@0
+^*b end ^*n|
+pg| ***** 9 ***** |
+
+

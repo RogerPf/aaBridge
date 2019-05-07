@@ -1,0 +1,684 @@
+RespondingtoJacoby2NT.lin
+%%Last edited 10-11-2013
+%%%% By Kia, BBO nickname "nome"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|155|ff|1Arial|fb|17|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|35|fm|3|                           FOR 3
+fb|49|fm|4|fb|4|fm|4|
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|3255|cg|3255|cb|3255|            White
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|6124|cb|6250|cg|6200|             6=TURQUOISE
+cr|70|cb|7220|cg|7235|              green/blue 7
+cr|8255|cb|80|cg|80|                red 8
+cr|9128|cb|90|cg|950|               Reddish-brown 9
+bt||ht|b|FP|2|cs|1|CP|4|at|^-{    Opener's rebids after the Jacoby 2NT response    }
+^-|fp||cs||cp||at|^B@2
+Opener's rebids after Jacoby 2NT is simple as long as we follow a "more often than not" Bergen-Schutzman style and not to worry about the esoteric chatters. At the end there are several references for your additional review.|
+PG| ***** 0 ***** |
+
+
+AT|
+
+The Jacoby 2N promises 4-card support and 13+ points (Bergen hand evaluation is the guide). Here, quickly, we need to mention that in Bergen-Schutzman style you may use splinter bid if you have a void or singleton and the hand is worth 13 to 16 points. But responder should bid Jacoby 2N if his/her hand is worth 17+ points with or without a void or singleton.|
+PG| ***** 1 ***** |
+
+
+AT|
+
+After a 2N response, opener's hand either has:|
+PG| ***** 2 ***** |
+
+
+fp|3|cs|1|cp|4|AT|^-
+
+{     shortness or 5-card long suit     }|
+PG| ***** 3 ***** |
+
+
+AT|
+
+{     or     }|
+PG| ***** 4 ***** |
+
+
+AT|
+
+{     without shortness or 5-card long suit     }
+^-
+
+ |
+PG| ***** 5 ***** |
+
+
+NT||
+%%Page
+bt||ht|b|FP|3|cs|1|CP|4|at|^-{    Opener's rebids after the Jacoby 2NT Response    
+    Holding a hand with shortness or 5-card long suit    }
+|fp|2|AT|
+{    They are:    }|
+PG| ***** 6 ***** |
+
+
+cs|8|cp|4|AT|
+
+{  1. New suit at 3 level shows shortness in that suit-singleton or void- and 13 HCP or less 
+The 5-card long side suit is not a QUALITY suit}|
+PG| ***** 7 ***** |
+
+
+AT|
+
+{  2. New suit at 4 level shows a 5-card quality suit and 13 HCP or less  }
+^-|
+PG| ***** 8 ***** |
+
+
+cp||fp||AT|
+
+
+
+^b5-card long QUALITY suit = 5-card long with at least 2 of the top 3 honors.
+|
+PG| ***** 9 ***** |
+
+
+NT||
+
+%%%page
+bt||ht|b|FP|3|cs|1|CP|4|at|^-{    Opener's rebids after the Jacoby 2NT Response    
+    Holding a hand without shortness or 5-card long suit    }
+|fp|2|AT|
+{    They are:    }|
+PG| ***** 10 ***** |
+
+
+cs|8|cp|4|AT|
+
+
+{  3. Rebidding the major at 4 level shows a minimum hand-13 to 15 points  }|
+PG| ***** 11 ***** |
+
+
+AT|
+
+{  4. Bidding 3NT shows a medium hand-16 to 18 points  }|
+PG| ***** 12 ***** |
+
+
+AT|
+
+{  5. Rebidding the major at 3 level shows a maximum hand-19+ points.  }|
+PG| ***** 13 ***** |
+
+
+AT|
+
+{  Bergen recommends you don't jump to the 4 level with a strong hand,  
+because that crowds the bidding too much.}
+
+^-|CS||CP||
+PG| ***** 14 ***** |
+
+
+fp||cp||at|^b@2
+Next there are few examples. The section is a double delight because you learn Bergen's hand evaluation along with how to respond to Jacoby 2N -:). You are (North) and open 1@H/1@S and pard bids 2N. Look at the hand and after counting the points (using Bergen hand evaluation) choose your bid?|
+PG| ***** 15 ***** |
+
+
+NT||
+%%%%% B 4-7
+HT|e|cs|6|AT|^-
+{      Jacoby 2N      }
+^-|
+ht|i|va|6|cs|6|at|^B{|ia|,1hp2np|at|} ^mBoard 4-7|HT|i|cs|6|at|^p{|ih|pSAHKJ985D964CAT32|at|}
+|hf|P|cq||lb|*mWhat is the value of the hand? ^16~14~12~15^1|
+cs||ht|p|at|^b{ |ht|x|at|^m
+^m }
+|ht|p|at|
+^B  Calculating Declarer's Points with Bergen's Method
+
+^b  1- Starting Points plus,
+^b  2- Additional Points after a fit using below guideline:
+^c- Two points for any Singleton;
+^c- 0 point for one doubleton;
+^c- 1 point only for 2-3 doubleton;
+^c- 4 points and not 3 as is traditional for a Void;
+^c- 1 point for each trump over 5
+^c- 1 point for a 4-card side suit (even a weak one).
+
+|HT|p|AT|^n^*BThis hand is worth  |CP|8|AT|(16)|CP||AT|  Bergen Points.^*N
+
+^n12 Raw HCP
+^n+ 1 Length point 
+^*B^o= 13 Starting Points^*N
+^n2) Additions after the fit:
+^n  + 2 for singleton
+^N  + 1 for a 4+card side suit
+^*B^o= 3 Total Declarer's Additions
+^*N|
+pg| ***** 17 ***** |
+
+
+nt|| 
+%% REPEAT 4-7
+HT|e|cs|6|AT|^-
+{      Jacoby 2N      }
+^-|
+ht|i|va|6|cs|6|at|^B{|ia|,1hp2np?|at|} ^mBoard 4-7|HT|i|cs|6|at|^p{|ih|pSAHKJ985D964CAT32|at|}
+|hf|P|cq||lb|*BNow, What bid would you make?^^3s|HT|q|CP|8|AT|
+^C@2^Z@3^*BHoward: ^*N|cp||at|3@S is the correct rebid. Bergen recommends you show shortness even with a singleton Ace.
+
+|HT|P|AT|^c^*BThis hand is worth  |CP|8|AT|(16)|CP||AT|  Bergen Points ^*N
+|ht|i|va|6|cs|6|at|^B{|ia|,1hp2np3s|at|}|
+pg| ***** 19 ***** |
+
+
+nt|| 
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%=========== b 4-8
+HT|e|cs|6|AT|^-
+{      Jacoby 2N      }
+^-|
+ht|i|va|6|cs|6|at|^B{|ia|,1HP2NP|at|} ^mBoard 4-8|HT|i|cs|6|at|^p{|ih|pS982HAKJ865CAK74|at|}
+|hf|P|cq||lb|*mWhat is the value of the hand? ^20~24~22~21^2|
+cs||ht|p|at|^b{ |ht|x|at|^m
+^m }
+|ht|p|at|
+^B  Calculating Declarer's Points with Bergen's Method
+
+^b  1- Starting Points plus,
+^b  2- Additional Points after a fit using below guideline:
+^c- Two points for any Singleton;
+^c- 0 point for one doubleton;
+^c- 1 point only for 2-3 doubleton;
+^c- 4 points and not 3 as is traditional for a Void;
+^c- 1 point for each trump over 5
+^c- 1 point for a 4-card side suit (even a weak one).
+
+|HT|p|AT|^n^*BThis hand is worth  |CP|8|AT|(24)|CP||AT|  Bergen Points.^*N
+
+^n15 Raw HCP
+^n+ 2 Length point 
+^N+ 1 quality suit
+^*B^o= 18 Starting Points
+^*N
+^n2) Additions after the fit:
+^n  + 1 for trump card  over 5
+^N  + 4 for a void
+^N  + 1 for 4+card side suit
+^*B^o= 6 Total Declarer's Additions
+^*N|
+pg| ***** 21 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  REPEAT 4-8
+HT|e|cs|6|AT|^-
+{      Jacoby  2N     }
+^-|
+ht|i|va|6|cs|6|at|^B{|ia|,1hp2np?|at|} ^mBoard 4-8|HT|i|cs|6|at|^p{|ih|pS982HAKJ865CAK74|at|}
+|hf|P|cq||lb|*BNow, What bid would you make?^^3d|HT|q|CP|8|AT|
+^C@2^Z@3^*BHoward: ^*N|cp||at|3@d is the correct answer. 
+|HT|P|AT|^c^*BThis hand is worth  |CP|8|AT|(24)|CP||AT|  Bergen Points ^*N
+|ht|i|va|6|cs|6|at|^B{|ia|,1hp2np3d|at|}|
+PG| ***** 23 ***** |
+
+
+NT|| 
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 4-9
+HT|e|cs|6|AT|^-
+{      Jacoby 2N     }
+^-|
+ht|i|va|6|cs|6|at|^B{|ia|,1hp2np|at|} ^mBoard 4-9|HT|i|cs|6|at|^p{|ih|pSA3HKJ852DA9764C3|at|}
+|hf|P|cq||lb|*mWhat is the value of the hand? ^18~14~17~16^3|
+cs||ht|p|at|^b{ |ht|x|at|^m
+^m }
+|ht|p|at|
+^B  Calculating Declarer's Points with Bergen's Method
+
+^b  1- Starting Points plus,
+^b  2- Additional Points after a fit using below guideline:
+^c- Two points for any Singleton;
+^c- 0 point for one doubleton;
+^c- 1 point only for 2-3 doubleton;
+^c- 4 points and not 3 as is traditional for a Void;
+^c- 1 point for each trump over 5
+^c- 1 point for a 4-card side suit (even a weak one).
+
+|HT|p|AT|^n^*BThis hand is worth  |CP|8|AT|(17)|CP||AT|  Bergen Points.^*N
+
+^n12 Raw HCP
+^n+ 2 Length points 
+^*B^o= 14 Starting Points
+^*N
+^n2) Additions after the fit:
+^n  + 2 for singleton
+^n  + 1 for 4+card diamond side suit
+^*B^o= 3 Total Declarer's Additions
+^*N|
+pg| ***** 25 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% REPEAT BOARD 4-9
+HT|e|cs|6|AT|^-
+{      Jacoby 2N     }
+^-|
+ht|i|va|6|cs|6|at|^B{|ia|,1hp2np?|at|} ^mBoard 4-9|HT|i|cs|6|at|^p{|ih|pSA3HKJ852DA9764C3|at|}
+|hf|P|cq||lb|*BNow, What bid would you make?^^3c|HT|q|CP|8|AT|
+^C@2^Z@3^*BHoward: ^*N|cp||at|3@C is the correct answer. Your diamond suit is too weak to jump to 4@D. 
+
+|HT|P|AT|^c^*BThis hand is worth  |CP|8|AT|(17)|CP||AT|  Bergen Points ^*N
+|ht|i|va|6|cs|6|at|^B{|ia|,1hp2np3c|at|}|
+pg| ***** 27 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 4-10
+HT|e|cs|6|AT|^-
+{      Jacoby 2N     }
+^-|
+ht|i|va|6|cs|6|at|^B{|ia|,1hp2np|at|} ^mBoard 4-10|HT|i|cs|6|at|^p{|ih|pSj4hk9865d9cakt94|at|}
+|hf|P|cq||lb|*mWhat is the value of the hand? ^12~14~15~16^4|
+cs||ht|p|at|^b{ |ht|x|at|^m
+^m }
+|ht|p|at|
+^B  Calculating Declarer's Points with Bergen's Method
+
+^b  1- Starting Points plus,
+^b  2- Additional Points after a fit using below guideline:
+^c- Two points for any Singleton;
+^c- 0 point for one doubleton;
+^c- 1 point only for 2-3 doubleton;
+^c- 4 points and not 3 as is traditional for a Void;
+^c- 1 point for each trump over 5
+^c- 1 point for a 4-card side suit (even a weak one).
+
+|HT|p|AT|^n^*BThis hand is worth  |CP|8|AT|(16)|CP||AT|  Bergen Points.^*N
+
+^n11 Raw HCP
+^n+ 2 Length points
+^N+ 1 quality suit
+^N- 1 for dubious singleton/Doubleton
+^*B^o= 13 Starting Points
+^*N
+^n2) Additions after the fit:
+^n  + 1 for 4+card side suit
+^n  + 2 for singleton
+^*B^o= 3 Total Declarer's Additions
+^*N|
+pg| ***** 29 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% REPEAT BOARD 4-10
+HT|e|cs|6|AT|^-
+{      Jacoby 2N     }
+^-|
+ht|i|va|6|cs|6|at|^B{|ia|,1hp2np?|at|} ^mBoard 4-10|HT|i|cs|6|at|^p{|ih|pSj4hk9865d9cakt94|at|}
+|hf|P|cq||lb|*BNow, What bid would you make?^^4c|HT|q|CP|8|AT|
+^C@2^Z@3^*BHoward: ^*N|cp||at|4@C. Let me review the criteria for bidding a new suit at the 4 level.
+You need a good 5 card suit, either 2 of the top 3 or 3 of the top 5 and 13 HCP or less. This hand qualifies, so 4@C is the bid. By "HCP" I mean Raw HCP. Here, Bergen does not use Bergen points.
+|HT|P|AT|^c^*BThis hand is worth  |CP|8|AT|(16)|CP||AT|  Bergen Points ^*N
+|ht|i|va|6|cs|6|at|^B{|ia|,1hp2np4c|at|}|
+pg| ***** 31 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 4-11
+HT|e|cs|6|AT|^-
+{      Jacoby 2N     }
+^-|
+ht|i|va|6|cs|6|at|^B{|ia|,1HP2NP|at|} ^mBoard 4-11|HT|i|cs|6|at|^p{|ih|pSQ3HKJT53D4CAKQJ8|at|}
+|hf|P|cq||lb|*mWhat is the value of the hand? ^23~22~19~20^2|
+cs||ht|p|at|^b{ |ht|x|at|^m
+^m }
+|ht|p|at|
+^B  Calculating Declarer's Points with Bergen's Method
+
+^b  1- Starting Points plus,
+^b  2- Additional Points after a fit using below guideline:
+^c- Two points for any Singleton;
+^c- 0 point for one doubleton;
+^c- 1 point only for 2-3 doubleton;
+^c- 4 points and not 3 as is traditional for a Void;
+^c- 1 point for each trump over 5
+^c- 1 point for a 4-card side suit (even a weak one).
+
+|HT|p|AT|^n^*BThis hand is worth  |CP|8|AT|(22)|CP||AT|  Bergen Points.^*N
+
+^n16 Raw HCP
+^n+ 2 Length points
+^N+ 2 quality suits
+^N- 1 for dubious singleton/Doubleton
+^*B^o= 19 Starting Points
+^*N
+^n2) Additions after the fit:
+^N  + 2 for 1 singleton
+^n  + 1 for 4+card side suit
+^*B^o= 3 Total Declarer's Additions
+^*N|
+pg| ***** 33 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% REPEAT BOARD 4-11
+HT|e|cs|6|AT|^-
+{      Jacoby 2N     }
+^-|
+ht|i|va|6|cs|6|at|^B{|ia|,1HP2NP?|at|} ^mBoard 4-11|HT|i|cs|6|at|^p{|ih|pSQ3HKJT53D4CAKQJ8|at|}
+|hf|P|cq||lb|*BNow, What bid would you make?^^3d|HT|q|CP|8|AT|
+^C@2^Z@3^*BHoward: ^*N|cp||at|3@d is the correct answer. This hand is way too strong for 4@C, which takes up too much room, so 3@D is correct. Remember, only jump to the 4 level with 13 HCP or less. 
+
+|HT|P|AT|^c^*BThis hand is worth  |CP|8|AT|(22)|CP||AT|  Bergen Points ^*N
+|ht|i|va|6|cs|6|at|^B{|ia|,1HP2NP3d
+|at|}|
+pg| ***** 35 ***** |
+
+
+nt||
+%%%%%%b 4-12
+HT|e|cs|6|AT|^-
+{      Jacoby 2N     }
+^-|
+ht|i|va|6|cs|6|at|^B{|ia|,1hp2np|at|} ^mBoard 4-12|HT|i|cs|6|at|^p{|ih|pSJ83HKQJ85DQJ4CKT|at|}
+|hf|P|cq||lb|*mWhat is the value of the hand? ^14~13~12~15^1|
+cs||ht|p|at|^b{ |ht|x|at|^m
+^m }
+|ht|p|at|
+^B  Calculating Declarer's Points with Bergen's Method
+
+^b  1- Starting Points plus,
+^b  2- Additional Points after a fit using below guideline:
+^c- Two points for any Singleton;
+^c- 0 point for one doubleton;
+^c- 1 point only for 2-3 doubleton;
+^c- 4 points and not 3 as is traditional for a Void;
+^c- 1 point for each trump over 5
+^c- 1 point for a 4-card side suit (even a weak one).
+
+|HT|p|AT|^n^*BThis hand is worth  |CP|8|AT|(14)|CP||AT|  Bergen Points.^*N
+
+^n13 Raw HCP
+^n+ 1 Length point
+^N+ 1 quality suit point
+^N- 1 because quacks exceed Aces/tens
+^*B^o= 14 Starting Points
+^*N
+^n2) Additions after the fit:
+^*B^o= No Total Declarer's Additions
+^*N|
+pg| ***** 37 ***** |
+
+
+nt|| 
+%%%%%%% REPEAT BOARD 4-12
+HT|e|cs|6|AT|^-
+{      Jacoby 2N     }
+^-|
+ht|i|va|6|cs|6|at|^B{|ia|,1hp2np?|at|} ^mBoard 4-12|HT|i|cs|6|at|^p{|ih|pSJ83HKQJ85DQJ4CKT|at|}
+|hf|P|cq||lb|*BNow, What bid would you make?^^4h|HT|q|CP|8|AT|
+^C@2^Z@3^*BHoward: ^*N|cp||at|4@H is the correct answer. This is a good example of a weak opener. 
+
+|HT|P|AT|^c^*BThis hand is worth  |CP|8|AT|(14)|CP||AT|  Bergen Points ^*N
+|ht|i|va|6|cs|6|at|^B{|ia|,1hp2np4h|at|}|
+pg| ***** 39 ***** |
+
+
+nt|| 
+%%%%%% b 4-13
+HT|e|cs|6|AT|^-
+{      Jacoby 2N     }
+^-|
+ht|i|va|6|cs|6|at|^B{|ia|,1hp2np|at|} ^mBoard 4-13|HT|i|cs|6|at|^p{|ih|pS63HAQ6543DA4CKT9|at|}
+|hf|P|cq||lb|*mWhat is the value of the hand? ^15~18~16~17^4|
+cs||ht|p|at|^b{ |ht|x|at|^m
+^m }
+|ht|p|at|
+^B  Calculating Declarer's Points with Bergen's Method
+
+^b  1- Starting Points plus,
+^b  2- Additional Points after a fit using below guideline:
+^c- Two points for any Singleton;
+^c- 0 point for one doubleton;
+^c- 1 point only for 2-3 doubleton;
+^c- 4 points and not 3 as is traditional for a Void;
+^c- 1 point for each trump over 5
+^c- 1 point for a 4-card side suit (even a weak one).
+
+|HT|p|AT|^n^*BThis hand is worth  |CP|8|AT|(17)|CP||AT|  Bergen Points.^*N
+
+^n13 Raw HCP
+^n+ 2 Length points
+^*B^o= 15 Starting Points
+^*N
+^n2) Additions after the fit:
+^n  + 1 for trump card  over 5
+^n  + 1 for 2 doubletons 
+^*B^o= 2 Total Declarer's Additions
+^*N|
+pg| ***** 41 ***** |
+
+
+nt|| 
+%%%%%%%REPEAT BOARD
+HT|e|cs|6|AT|^-
+{      Jacoby 2N     }
+^-|
+ht|i|va|6|cs|6|at|^B{|ia|,1hp2np?|at|} ^mBoard 4-13|HT|i|cs|6|at|^p{|ih|pS63HAQ6543DA4CKT9|at|}
+|hf|P|cq||lb|*BNow, What bid would you make?^^3n|HT|q|CP|8|AT|
+^C@2^Z@3^*BHoward: ^*N|cp||at|3NT is the correct answer. 
+
+|HT|P|AT|^c^*BThis hand is worth  |CP|8|AT|(17)|CP||AT|  Bergen Points ^*N
+|ht|i|va|6|cs|6|at|^B{|ia|,1hp2np3nt|at|}|
+pg| ***** 43 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%% 4-14
+HT|e|cs|6|AT|^-
+{      Jacoby 2N     }
+^-|
+ht|i|va|6|cs|6|at|^B{|ia|,1hp2np|at|} ^mBoard 4-14|HT|i|cs|6|at|^p{|ih|pS63HAQ65432DA4CKT|at|}
+|hf|P|cq||lb|*mWhat is the value of the hand? ^16~20~19~18^3|
+cs||ht|p|at|^b{ |ht|x|at|^m
+^m }
+|ht|p|at|
+^B  Calculating Declarer's Points with Bergen's Method
+
+^b  1- Starting Points plus,
+^b  2- Additional Points after a fit using below guideline:
+^c- Two points for any Singleton;
+^c- 0 point for one doubleton;
+^c- 1 point only for 2-3 doubleton;
+^c- 4 points and not 3 as is traditional for a Void;
+^c- 1 point for each trump over 5
+^c- 1 point for a 4-card side suit (even a weak one).
+
+|HT|p|AT|^n^*BThis hand is worth  |CP|8|AT|(19)|CP||AT|  Bergen Points.^*N
+
+^n13 Raw HCP
+^n+ 3 Length points 
+^*B^o= 16 Starting Points
+^*N
+^n2) Additions after the fit:
+^n  + 2 for trump card  over 5
+^n  + 1 for 2 doubletons 
+^*B^o= 3 Total Declarer's Additions
+^*N|
+pg| ***** 45 ***** |
+
+
+nt|| 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% REPEAT BOARD 4-14
+HT|e|cs|6|AT|^-
+{      Jacoby 2N     }
+^-|
+ht|i|va|6|cs|6|at|^B{|ia|,1hp2np?|at|} ^mBoard 4-14|HT|i|cs|6|at|^p{|ih|pS63HAQ65432DA4CKT|at|}
+|hf|P|cq||lb|*BNow, What bid would you make?^^3h|HT|q|CP|8|AT|
+^C@2^Z@3^*BHoward: ^*N|cp||at|3@H is the correct bid. This hand is worth 19 Declarer points. Remember, when calculating points for length, you use regular length points for starting points (3 for 7 card suit). You then double dip, by adding extra points for trump length above 5, so you add 2 additional points for the 7 card heart suit if that is the trump suit.
+
+So far my results have been very good using Bergen's methods. at worst, I have bid some slams on 1 finesse. 
+
+|HT|P|AT|^c^*BThis hand is worth  |CP|8|AT|(19)|CP||AT|  Bergen Points ^*N
+|ht|i|va|6|cs|6|at|^B{|ia|,1hp2np3h|at|} |
+PG| ***** 47 ***** |
+
+
+HT|x|AT|
+^C@2^Y@3In the next section we have to figure out what the partner is telling us.|
+PG| ***** 48 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+HT|e|Va|8|cs|6|AT|^-
+{          Jacoby 2N          }
+
+{      What the Partner is Telling Us      }
+^-|cs|6|HT|j|AT|^B{|ia|,1hp?|at|}|
+PG| ***** 49 ***** |
+
+
+HT|j|AT|^m@2^Y@3That is easy. Partner has 5+ card in heart suit and at least an opener. |
+PG| ***** 50 ***** |
+
+
+HT|n|AT|^B{|ia|  ,1hp2np?|at|} |
+PG| ***** 51 ***** |
+
+
+HT|n|AT|^m@2^Y@3Partner has 13+ Dummy Points plus 4+ card support. Partner may or may not have a singleton or void.|
+PG| ***** 52 ***** |
+
+
+HT|s|AT|^B{|ia|  ,1hp4dp?|at|} |
+PG| ***** 53 ***** |
+
+
+HT|s|AT|^m@2^Y@3Partner has 13- 16 dummy Points, 4+ card support, and a diamond  singleton or void. |
+PG| ***** 54 ***** |
+
+
+NT||
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+HT|e|Va|8|cs|6|AT|^-
+{          Jacoby 2N          }
+
+{      What the Partner is Telling Us      }
+^-|cs|6|HT|j|AT|^B{|ia|,1hp2np4hp?|at|}|
+PG| ***** 55 ***** |
+
+
+HT|i|AT|^m@2^Y@3Partner has a minimum opener 13-16 Bergen points. Partner also does not have a void/singleton or a strong 5-card side suit. Responder only considers slam if we have 19+ Dummy Points. |
+PG| ***** 56 ***** |
+
+
+HT|p|AT|^B{|ia|,1hp2np3np?|at|}|
+PG| ***** 57 ***** |
+
+
+HT|p|AT|^m@2^Y@3Partner has a medium opener 15-17 Bergen Points. No strong 5-card side suit or a void or singleton. |
+PG| ***** 58 ***** |
+
+
+HT|u|AT|^B{|ia|,1hp2np3hp?|at|}|
+PG| ***** 59 ***** |
+
+
+HT|u|AT|^m@2^Y@3Partner has a maximum opener 18+ Bergen Points. No strong 5-card side suit or a void or singleton. |
+PG| ***** 60 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+HT|e|Va|8|cs|6|AT|^-
+{          Jacoby 2N          }
+
+{      What the Partner is Telling Us      }
+^-|cs|6|HT|j|AT|^B{|ia|,1hp2np4dp?|at|}|
+PG| ***** 61 ***** |
+
+
+HT|j|AT|^m@2^Y@3Partner has a strong 5-card diamond side suit and 13 or fewer HCP.   |
+PG| ***** 62 ***** |
+
+
+HT|p|AT|^B{|ia|,1hp2np3sp?|at|}|
+PG| ***** 63 ***** |
+
+
+HT|p|AT|^m@2^Y@3Partner has a singleton or void. His hand is an opener +. Partner could have a singleton honor or 5-card side suit regardless of suit or hand strength.|
+PG| ***** 64 ***** |
+
+
+HT|u|AT|^B{|ia|,1hp2np4np?|at|}|
+PG| ***** 65 ***** |
+
+
+HT|u|AT|^m@2^Y@3Partner has control of all suits and looking for slam in hearts. |
+PG| ***** 66 ***** |
+
+
+HT|y|AT|^B@2^Y@3Not done yet. Let us get a nice summary on Jacoby 2N and opener's rebid.|
+PG| ***** 67 ***** |
+
+
+NT||
+%%%%%%
+HT|e|Va|8|cs|6|AT|^-
+{      Jacoby 2N - A Summary      }
+^-|HT|g|AT|^c@2^Y@3^b@2- Partner opens 1@H/1@s
+- You are unpassed hand and the RHO passes
+- You have 13+ "dummy points" with no upper limits. You could have fewer than 13 "HCP".  Please note the two |AT|
+^B   different yard stick of dummy points and HCP. 
+- You have 4+ card support, you may have a strong side suit. And, with 17+ dummy points you bid 2N even with a  singleton. Therefore, with 13-16 dummy points and a singleton you bid splinter.|CS|6|
+PG| ***** 68 ***** |
+
+
+AT|
+^-
+{Opener's rebid to Jacoby 2N in order of its priority}
+^-|CS||AT|
+- A. |CP|8|AT|3 of a new suit|CP||AT| with a hand with a singleton or void and no upper limit. It may also contain:
+^C- 1. A singleton honor;
+^C- 2. Contain a five-card side suit regardless of the suit's strength or the strength of the hand.|
+PG| ***** 69 ***** |
+
+
+AT|
+
+- B. |CP|8|AT|4 of a new suit |CP||AT|with a hand holding a strong (at least two of the top 3 honors) 5-card side suit and no void. Therefore, this bid is made with minimum opener 13 or fewer HCP and an excellent second suit.|
+PG| ***** 70 ***** |
+
+
+AT|
+
+- C. |CP|8|AT|4 of opening major.|CP||AT| This is a minimum opening hand with no features.|
+PG| ***** 71 ***** |
+
+
+AT|
+
+- D. |CP|8|AT|3NT.|CP||AT| This hand is a 15-17 Bergen points and has no features. Four of the opening major is usually the final auction.|
+PG| ***** 72 ***** |
+
+
+AT|
+
+- E. |CP|8|AT|3 of the opening bid.|CP||AT|With this bid opener promises an 18+ Bergen Points with no short suit. |
+PG| ***** 73 ***** |
+
+
+AT|
+
+When you click the forward arrow you will end this presentation.|
+PG| ***** 74 ***** |
+
+

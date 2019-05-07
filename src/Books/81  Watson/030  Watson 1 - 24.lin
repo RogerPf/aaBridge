@@ -1,0 +1,526 @@
+%%CH-24-P-1.lin
+%%%%%%%%%%%%%% DEFENSIVE SUIT PLAY BY THIRD HAND Chapter 
+%%%By Kia
+%%%Recent update  Eileen/kr 01/08/2012 done 
+mn|    DEFENSIVE SUIT PLAY BY THIRD HAND            Chapter XXIV          |
+bt||
+fh|155|ff|1Arial|fb|17|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|35|fm|3|                           FOR 3
+fb|49|fm|4|fb|4|fm|4|
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|30|cg|30|cb|3128|                dark Blue 3
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|664|cb|6255|cg|6255|             6=TURQUOISE
+cr|70|cb|7220|cg|7235|              green/blue 7
+cr|8255|cb|80|cg|80|                red 8
+cr|9128|cg|950|cb|90|               Reddish-brown 9
+
+os|y|  %%   Overlap Shrink   -  floating Hand will shink if they overlap
+
+
+
+%%%%===================
+tu|1|cs|6|ht|e|fp|2|at|^-
+WATSON's Classic Book on The Play of the Hand at Bridge
+
+Part I, Fundamentals of  Play
+
+Chapter XXIV, DEFENSIVE SUIT PLAY BY THIRD HAND
+^-|FP||ht|n|at|
+^*U^DTABLE OF TOPICS ^*N|cp|1|at|
+ 
+^d^*G24B01,Defensive Suit Play By Third Hand^*N  
+^d     @2^*G24B02,Discards (Signals) in Suit Defense^*N    
+^d     @2^*G24B03,Another Echo To Show A Short Suit^*N   
+^d     @2^*G24B04,Discouraging and Temporizing Discards in Suit defense^*N 
+^d     @2^*G24B05,Third Hand Play To Short-Suit Leads^*N
+^d     @2^*G24SUM,Summary^*N|CP||at|
+
+^C@2^Y@3 |
+PG| ***** 0 ***** |
+
+
+cp||nt|| 
+%%%%%%%%% Enter the information here
+qx|24B01,Defensive Suit Play By Third Hand  |
+nt||HT|e|AT|^B@2^Z@3After the opening lead has been made, the defense devolves upon the leader's Partner, who is Third Hand in playing to the trick. The conventions learned for Third Hand defense against no-trump apply with full force to suit defense. You should still, as Third Hand, play high when the Dummy contains no high cards. You should still play the bottom card of your highest sequence when playing Third Hand high. You should still finesse against the Dummy when there seems to be a fair chance of gaining a trick by this means.|
+PG| ***** 1 ***** |
+
+
+AT|
+
+In finessing against the Dummy, you must modify your procedure to the extent of preventing the Declarer from winning a trick with a singleton honor. The following illustration shows what is meant.|
+PG| ***** 2 ***** |
+
+
+ht|W|cp|8|AT|Movie Maker: |CP||AT|I used the programming format to illustrate the diagrams in the book. |
+PG| ***** 3 ***** |
+
+
+NT||
+
+st||pn|Declarer,Partner, Dummy,You|md|,c3,ck65,cajt|ha|y|rh||ah|A|wt|W|NT|^B@2
+Partner opens the trey (of a suit not the trump suit). |
+PG| ***** 4 ***** |
+
+
+at| Assuming that a low card is played from Dummy,|PC|C3c5|
+pg| ***** 5 ***** |
+
+
+AT| which card should you, in East's position, play here? |
+PG| ***** 6 ***** |
+
+
+lb|*CAs East which card would you play?^^Ct^Cajt^|pc|ct|at| If you play the Ten and Partner happens to have the Queen, you are obviously gaining a trick by finessing around the Dummy; |
+PG| ***** 8 ***** |
+
+
+md|0cq,0,0,0|AT| but if the Declarer has the Queen, you are allowing him to take the first trick in the led suit. Is there any objection to letting the Declarer take this trick if he can?|
+pg| ***** 9 ***** |
+
+
+PC|CQ|
+pg| ***** 10 ***** |
+
+
+NT|^B@2
+The answer to this question depends entirely on the distribution of the suit. By applying the Rule of Eleven you learn that Partner cannot hold more than five cards of the suit he opened - consequently the Declarer must hold at least two. Even if one of these two cards should happen to be the Queen, you still will not lose a trick by finessing the Ten against the Dummy's visible King, for the Declarer must still hold a loser and will probably have to concede it later. Put another way, one of two possible distributions probably exists - B1 and B2.|
+PG| ***** 11 ***** |
+
+
+NT||
+st||md|cq42,c9873,ck65,cajt|rh||AH|B1|wt|w|pc|c3c5ctcq|NT|^B@2
+In distribution B1, the play of the Ten by East lets the Declarer win a trick at once but leaves the Ace-Jack in perfect tenace position over the Dummy - to win the next two rounds. The play of the Ace, on the other hand, concedes 2 club tricks to the Declarer. |
+PG| ***** 12 ***** |
+
+
+NT||
+st||md|c942,cq873,ck65,cajt|rh||AH|B2|wt|w|pc|c3c6ctc2|NT|^B@2
+In distribution B2, it should be obvious that the play of the Ace allows Dummy's King to become a winner, while the play of the Ten places the King in a precarious position.|
+PG| ***** 13 ***** |
+
+
+at| As a contrast with those preceding, consider the following club situation. |
+PG| ***** 14 ***** |
+
+
+NT||
+st||pn|Declarer,Partner, Dummy,You|md|,ct872,cq654,caj93|rh||AH|C|NT|^B@2
+Partner opens the deuce and the Dummy plays low. |wt|w|PC|c2c4|
+pg| ***** 15 ***** |
+
+
+at|  The Declarer must hold a singleton, which you learn by application of the Rule of Eleven. That singleton may or may not be the King. If you were defending here against no-trump, you would play your Jack - finessing it against the Dummy - in the hope that Partner holds the King, for, even if he does not, you can obtain 3 tricks in the suit later if Partner ever regains the lead. |
+PG| ***** 16 ***** |
+
+
+md|0ck,0,0,0|PC|cjck|
+PG| ***** 17 ***** |
+
+
+NT|^B@2
+Against a suit contract, it is risky to try this. If you finesse the Jack, and it loses to Declarer's singleton King, you probably will obtain no tricks in clubs at all - because of Declarer's control of the suit by ruffling. Even if your Ace captures only a low card, you have not lost much because your club tricks in this situation are limited by the threatening trump suit. |UP||UP||
+pg| ***** 18 ***** |
+
+
+pc|CACK|
+pg| ***** 19 ***** |
+
+
+NT|^B@2
+By playing high you assure your side of at least 1 trick, and you have time to map out your later defense. 
+
+Later defense by Third Hand also follows, in general, the defense against no-trump contracts - developing 1 or 2 tricks in your own suit, leading through strength or up to weakness, and similar plays.|
+PG| ***** 20 ***** |
+
+
+NT||PF||BT||ha||
+%%%%%%%%%%%%%%%%%%%%%%%% 
+qx|24B02,DISCARDS (SIGNALS) IN SUIT DEFENSE|
+nt||HT|e|cs|1|cp|4|fp||
+at|
+^-{    DISCARDS (SIGNALS) IN SUIT DEFENSE    }
+^-|
+CS||CP||FP||AT|^B@2^Z@3Y|FP||AT|ou should recall that discarding signals in no-trump defense were of three kinds, namely, encouraging, discouraging, and temporizing. The same three kinds of discards are used in defensive suit play, but with a slightly different application.|
+PG| ***** 21 ***** |
+
+
+AT|
+
+Against a no-trump contract, an encouraging discard usually shows an honor in the led suit plus some length also. Against a suit contract an encouraging discard shows an honor in the led suit but does not also promise length, which is more of a disadvantage than otherwise.|
+PG| ***** 22 ***** |
+
+
+AT|
+
+Furthermore, the encouraging signal known as the echo is often used in suit defense to show shortness in the led suit. The ensuing three deals (which are all variations of the same basic deal) illustrate these principles. The following is the first situation:|
+PG| ***** 23 ***** |
+
+
+st||SK|E|pn|,Partner,,You|md|sJTHJ72DAKQ5CAQT4,s98542HAK96D32C76,sAQ7HT43DJ87CKJ83,|rh||AH|Board 1|NT|
+^B@2You are sitting East defending against South's four diamond contract. |MB|4dPPP|
+PG| ***** 24 ***** |
+
+
+PC|HKH3|at| Partner opens the heart King. Your hand tells you that the King lead must show the Ace, for you yourself have the Queen. You see, then, that you can win the third round of the suit if the Declarer has three hearts. Certainly you must encourage your Partner to continue the suit,|
+PG| ***** 25 ***** |
+
+
+pc|h8|AT| which you do by playing your eight. |pc|H2|
+PG| ***** 26 ***** |
+
+
+AT| When Partner complies by leading the Ace on the second trick, |
+PG| ***** 27 ***** |
+
+
+pc|haH4|at| you complete your echo by playing the five-spot.|PC|h5h7|
+PG| ***** 28 ***** |
+
+
+NT|^B@2
+Partner again complies, leading his six, which you win with your Queen.|pc|H6HTHQHJ|
+PG| ***** 29 ***** |
+
+
+sk||AT| You need but 1 more trick to set South's contract, and you will make it in spades if you never lead the suit to Declarer.|
+PG| ***** 30 ***** |
+
+
+UP|12|SK||NT|^B@2
+You may have noticed that in the example given, the Dummy contains tenaces in spades and clubs. Sometimes you should fail to make an encouraging discard, even when your holding in the led suit justifies it, in order to suggest to Partner that he lead through strength by shifting to one of the suits in which Dummy has a tenace. |
+PG| ***** 31 ***** |
+
+
+NT|^B@2
+In this particular deal, however, you do not dare to give Partner the discouraging discard of the five-spot, because he would then be forced to choose between spades and clubs. It happens to make no difference ultimately, but you cannot know this spontaneously, so your best policy is to urge Partner to continue leading hearts, which is the suit in which you stand the best chance of obtaining tricks quickly.|
+PG| ***** 32 ***** |
+
+
+NT|^B@2
+Now consider the following slight variation of the same deal:|
+PG| ***** 33 ***** |
+
+
+NT||
+st||SK|E|md|1st62hj7dakq5caq84,s985hak9632d32c76,saq74ht4dj87ckjt3,|rh||AH|Board 2|mb|4dppp|PC|hkh4|nt|^B@2
+Again Partner (West) opens the heart King against South's contract of four diamonds. You hold precisely the same heart combination as before, but notice that the Dummy, instead of holding three hearts, holds a doubleton. This means that your Queen cannot possibly win the third round of hearts, because it will be ruffed in Dummy. Consequently you do not want the suit continued, and you must not make an encouraging discard. |
+PG| ***** 34 ***** |
+
+
+NT|
+^B@2You play the five to suggest to Partner|PC|h5|
+PG| ***** 35 ***** |
+
+
+AT| that he will do better to shift to another suit.|PC|h7|
+PG| ***** 36 ***** |
+
+
+at| Confronted with a choice between spades and clubs, Partner will probably lead a spade.|PC|s9|
+PG| ***** 37 ***** |
+
+
+AT| The club situation presents an undesirable combination for leading through strength. West leads the nine of spades, on which Declarer probably will play low from Dummy|PC|s4|
+PG| ***** 38 ***** |
+
+
+AT| since a double finesse appears to be called for.|
+PG| ***** 39 ***** |
+
+
+NT|
+^B@2You win with the Jack|
+PC|sjs2|
+PG| ***** 40 ***** |
+
+
+at| and return the eight of hearts to Partner's Ace.|
+PC|h8hjhaht|
+pg| ***** 41 ***** |
+
+
+AT| Another spade lead by West|PC|S8|SK||
+pg| ***** 42 ***** |
+
+
+at| assures the defeat of the contract.|
+PG| ***** 43 ***** |
+
+
+NT|^B@2
+Note that, in the deal just given, if you had echoed in the heart suit, Partner would have led a third round which Dummy would have trumped. This would have enabled the Declarer to throw off one of his spades, and he would have then been able to keep his losers down to 3 tricks.|
+PG| ***** 44 ***** |
+
+
+at|
+
+The following is a third variation of the same deal:|
+PG| ***** 45 ***** |
+
+
+st||SK|E|md|1s632hqj7dakq5caq4,st84hak9632d3c763,saq75ht4dj842ckjt,|rh||AH|Board 3|mb|3dppp|PC|HKh4|NT|^B@2
+Now South's contract is only three diamonds, but West's opening lead is again the heart King. As in the preceding deal, the Dummy holds but two hearts, but this time you (East) also hold only two. Consequently you see that it is to your advantage to have the suit continued even through three rounds. On Partner's King lead, therefore, you play the eight (an encouraging discard),|
+PG| ***** 46 ***** |
+
+
+PC|h8h7|
+PG| ***** 47 ***** |
+
+
+NT|^B@2
+and on the lead of the Ace you play the five (completing the echo). |PC|hahth5hj|
+PG| ***** 48 ***** |
+
+
+at| The lead of a third heart at the third trick causes the Declarer acute embarrassment. |PC|h9|SK||at| If he simply discards a spade, you will ruff, and he can only follow suit from his own hand. If he ruffs with Dummy's eight or lower card, you will over-ruff.|
+PG| ***** 49 ***** |
+
+
+PF|Y|NT|^B@2
+In either case two spades must be taken subsequently. If he goes up with Dummy's Jack, the situation is apparently the same, as he will establish a sure diamond trick in your hand, and the two spade tricks still seem available. However, at this point the contract can actually be made, as will be pointed out when this hand is used in the Chapter on End Plays.|
+PG| ***** 50 ***** |
+
+
+up|9|fp|y|at|
+
+|cp|8|at|Movie Maker: |cp||at|The double dummy feature is on now. You may try to make this hand using End Play. The suggested lead is heart King. If not interested in double dummy play please click the forward arrow.|
+PG| ***** 51 ***** |
+
+
+PF||NT||bt||pf||
+%%%%%%%%%%%%%%%%%%%%%
+QX|24B03,ANOTHER ECHO TO SHOW A SHORT SUIT|
+HT|e|cs|1|cp|4|fp||
+at|
+^-{    ANOTHER ECHO TO SHOW A SHORT SUIT    }
+^-|
+cp||fp||at|^B@2^Y@3T|FP||AT|he following deal presents a situation which occurs very frequently in defending against suit contracts - the echo to show a short suit:|
+PG| ***** 52 ***** |
+
+
+NT||
+st||SK|E|md|1sAKt84hAK3dQJcJ94,s2h765d9532cAKt75,sQJ765ht2dK84cQ86,|rh||AH|Board 4|mb|4sppp|pc|ck|NT|^B@2
+Your Partner (West) opens the club King against South's four spade contract. When a low club is played from Dummy,|
+PG| ***** 53 ***** |
+
+
+pc|c6|aT| you play your three-spot, Declarer dropping the four.^*N|PC|c3c4|
+PG| ***** 54 ***** |
+
+
+at| Your trey may not be very illuminating to Partner at this point, for he can hardly place any great hope on so low a card being encouraging. However, he has one glimmer of light in the fact that the deuce has not yet appeared. |
+PG| ***** 55 ***** |
+
+
+NT|^B@2
+He reasons as follows: If the Declarer holds the deuce and is deliberately holding it up, the club Ace must surely win the second round; if Partner holds the deuce, the trey must have been the beginning of an echo to show ruffing power at the third round. Either way, the lead of the Ace seems wise. West lays down his Ace,|PC|cac8c2|at| and is overjoyed to see your deuce discarded on it, which shows that you held originally a club doubleton. |
+PG| ***** 56 ***** |
+
+
+SK||NT|^B@2
+The Declarer will probably play the Jack in an endeavor to confuse the issue,|PC|CJ|
+PG| ***** 57 ***** |
+
+
+AT| but Partner's reading has been so perfect that he should not be fooled. West's proper play is to lead a third round of clubs, letting you ruff.|
+PG| ***** 58 ***** |
+
+
+PC|c7cqs9c9|
+PG| ***** 59 ***** |
+
+
+PC|DA|AT| The diamond Ace sets the contract. |
+PG| ***** 60 ***** |
+
+
+NT|^B@2
+
+The echo can also be used in the following two situations:|
+PG| ***** 61 ***** |
+
+
+NT||
+st||HA|Y|md|,dk,da76,d84|rh||AH|Board 5A|wt|W|NT|^B@2
+You are East in this situation. Partner opens the King of the suit,|PC|DK|at| and, provided the Ace is played from Dummy,|
+PG| ***** 62 ***** |
+
+
+PC|DA|AT| you must play the eight,|PC|D8|AT| because you want Partner to lay down the Queen the next time he is in the lead. Since you, as East, have a doubleton, you can ruff the third round if you have a trump left.|
+PG| ***** 63 ***** |
+
+
+NT||
+st||HA|Y|md|,dk,da76,dj84|rh||AH|Board 5B|wt|W|NT|^B@2
+Again, you are East. Partner opens the King of the suit,|PC|DK|at| and, provided the Ace is played from Dummy,|
+PG| ***** 64 ***** |
+
+
+PC|DA|AT| you must play the eight,|PC|D8|AT| because you at least can make an effort to win the third round with the Jack, if Declarer has three diamonds. ^*N|
+PG| ***** 65 ***** |
+
+
+NT|^B@2
+
+In the following diagram, however, East must not echo:|
+PG| ***** 66 ***** |
+
+
+NT||
+st||HA|Y|md|,dq,dk62,d84|rh||AH|Board 5C|wt|W|NT|^B@2
+You are East. Partner opens the Queen of the suit.|
+PG| ***** 67 ***** |
+
+
+PC|Dq|at|
+Your chances, as East, of obtaining a ruff on the third round are extremely slim. You must simply play the four-spot on the Queen. A continuation by Partner might easily sacrifice the third round of the suit to the Opponents.
+|
+pg| ***** 68 ***** |
+
+
+nt||bt||
+%%%%%%%%%%%
+QX|24B04,DISCOURAGING AND TEMPORIZING DISCARDS IN SUIT DEFENSE|
+HT|e|CS|1|CP|4|AT|
+^-{    DISCOURAGING AND TEMPORIZING DISCARDS IN SUIT DEFENSE    }
+^-|
+CS||cp||fp||at|^B@2^Y@3T|FP||AT|here is not much to be said about discouraging discards used in defensive suit play. Whenever you wish to discourage the continuation of a suit and suggest some sort of shift by Partner, you simply play the lowest card you have available in the led suit. Your Partner must interpret this kind of discard as a signal to shift his defense.|
+PG| ***** 69 ***** |
+
+
+at|
+
+When it comes to temporizing discards in suit play, you run into a few snags. The following deal may help you to avoid them:|
+PG| ***** 70 ***** |
+
+
+NT||
+st||SK|E|HA||md|1sKQt983hJ7dAtcA94,s64hAK953dJ764c73,sJ75ht4d9852cKQJ5,|rh||AH|Board 6|mb|4sppp|pc|hk|NT|^B@2
+Partner opens the heart King against South's four spade contract. You notice Dummy's heart doubleton, which makes a continuation to the third round very unattractive in view of your own long holding in the suit. However, a second round will apparently do no harm. You therefore play the six-spot, knowing that this will urge Partner to lead out his heart Ace.|PC|h4h6h7|
+pg| ***** 71 ***** |
+
+
+NT|^B@2
+He undoubtedly follows with this card on the second trick, and you then play the eight-spot, thus failing to complete the echo which your six-spot might have begun.|PC|hAHth8hj|
+PG| ***** 72 ***** |
+
+
+SK|S|AT| This temporizing on your part should induce Partner to shift to another suit at the third trick. He will probably choose diamonds, since Dummy's clubs are patently too strong to lead through.|
+PG| ***** 73 ***** |
+
+
+sk||NT|^B@2
+Leading his fourth best diamond, Partner enables you to set up a trick in this suit before your spade Ace (trumps) is taken out. It should be clear that a third round of hearts or a shift to clubs at the third trick will permit the Declarer to make his contract.|
+PG| ***** 74 ***** |
+
+
+NT||bt||
+%%%%%%%%%%%
+QX|24B05,THIRD HAND PLAY TO SHORT-SUIT LEADS|
+HT|e|CS|1|CP|4|AT|
+^-{    THIRD HAND PLAY TO SHORT-SUIT LEADS    }
+^-|
+CS||cp||fp||at|^B@2^Y@3T|FP||AT|his is a much more important phase of the game against a suit contract than against a no-trump contract, partly because the short-suit lead is more frequent but chiefly because of the ever-present importance of ruffing power. It is impossible to give any hard and fast rules for telling whether a lead which is obviously from a short suit is a singleton, a doubleton, or a tripleton, but experience has shown that it generally pays to assume a doubleton.|
+PG| ***** 75 ***** |
+
+
+AT|
+
+When the card led is not an honor you must play whatever honor combinations you hold yourself, as though Partner were not involved in the hand at all, and merely strive to produce the maximum number of tricks in the specific suit without Partner's aid.|
+PG| ***** 76 ***** |
+
+
+AT|
+
+One rather interesting type of play must be described here. When Partner's opening lead is some card like an eight or seven and you hold four or five cards to the Ace, it generally pays to refuse to win the first round of the suit, contenting yourself with giving the most encouraging discard available. This play is based on the assumption that Partner's opening lead is a doubleton and that he will continue the suit when he next obtains the lead, allowing you to give him a third round ruff.|
+PG| ***** 77 ***** |
+
+
+AT|
+
+Naturally this applies only when the Dummy holds three or four cards of the suit led. When the Dummy holds two, together with some high trump honor, the play is useless because he can over-trump on the third round. If the Dummy holds five or six cards, the assumption of a doubleton no longer holds water and it is best to go right up with the Ace and return the suit in the hope that the lead was a singleton.|
+PG| ***** 78 ***** |
+
+
+AT|
+
+The following deal, which you will remember was used in the Chapter on Ruffing Power, illustrates the hold-up of the Ace when Partner's lead appears to be a doubleton:|
+PG| ***** 79 ***** |
+
+
+NT||
+st||sk||md|1sAKQ84hJt5d62cQt2,sjt3haq86dqt74c86,s975h32dAK83cKJ74,|rh||AH|Board 7|mb|4sppp|PC|D4|NT|^B@2
+In our previous discussion (Chapter XIII), West opened the four of diamonds against South's contract of four spades. The trick was won in the Dummy and a heart led immediately in an attempt to develop Dummy's ruffing power.|PC|dad5d2|
+PG| ***** 80 ***** |
+
+
+pc|h2h7hthq|
+PG| ***** 81 ***** |
+
+
+at| West won the trick with the Queen and shifted to a trump, but it was too late for this play to be successful, and the contract was made.|
+PG| ***** 82 ***** |
+
+
+NT|^B@2
+Actually West had a much better play at his disposal. After winning the Queen of hearts he should lead the eight-spot of clubs (the top card of his doubleton),|PC|C8|
+PG| ***** 83 ***** |
+
+
+at| on which East should play the nine!|pc|c4c9|
+pg| ***** 84 ***** |
+
+
+at| Now Declarer wins the trick with the Ten|pc|ct|
+pg| ***** 85 ***** |
+
+
+at| and lays down one round of trumps as a safety measure.|pc|sas3s5s2|
+pg| ***** 86 ***** |
+
+
+at| He cannot afford to lead any more, however, and has to play another heart. Whether this trick is won by East or West is immaterial, as the clubs are continued and West trumps the third round for the setting trick.^*N|
+PG| ***** 87 ***** |
+
+
+NT|^B@2
+It should be obvious why East cannot go up with his Ace on the first round of clubs and return the suit immediately. If he does so, Declarer will no longer try to establish a ruffing-trick in Dummy, as he has a perfectly good discard available on the fourth club in Dummy. He will simply draw trumps and fulfill his contract.|
+PG| ***** 88 ***** |
+
+
+NT||bt||
+%%%%%%%%%%%%%%%%%
+qx|24SUM,Summary|
+HT|e|CS|1|CP|4|AT|
+^-{    Summary    }
+^-|
+CS||cp||fp||at|^B@2^Y@3T|FP||AT|hird Hand no-trump defense applies equally well to suit defense. In particular, the echo in suit defense may have a wider variety of uses than in no-trump defense, for it may show the possession of an honor (to win the second or third round), or ruffing ability (at the third round).|
+PG| ***** 89 ***** |
+
+
+AT|
+
+Also, failure to echo may indicate either the lack of a winning honor or the knowledge that Declarer or Dummy will be able to ruff the third round.|
+PG| ***** 90 ***** |
+
+
+AT|
+
+A temporizing discard may be used to induce Partner to continue his opening suit through the second round, on which a higher discard fails to complete the echo, implying that he should shift to another suit at the third trick.|
+PG| ***** 91 ***** |
+
+
+AT|
+
+Third Hand play to short suit leads is more important in suit play than in no-trump play. It is usually good policy to assume that Partner's opening is a doubleton, and play low on his lead when holding the Ace so that he can retain his lower card for a subsequent lead.
+|HT|x|at|^B@2^Y@3This is the end of Chapter XXIV.|
+PG| ***** 92 ***** |
+
+
+LF|CH-25-P-1.LIN| 
+ 

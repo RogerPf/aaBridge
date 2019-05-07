@@ -1,0 +1,608 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% File       : Peterb370c_Winning Techniques in Declarer Play_ 2011-05-05.lin
+%% Description: Peter's teaching session on Declarer play, BIL, 2011-05-05
+%% Programmer : Vanyvon
+%% Version    : 
+%%            : 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+mn| Peterb370c:Winning Techniques in Declarer Play,2011-05-05|tu||bt||nt||
+
+%% --- Definitions ---
+cr|116|cg|116|cb|1255|        %% blue
+cr|2255|cg|2255|cb|264|       %% yellow
+cr|316|cg|3128|cb|316|        %% dark green
+cr|4255|cb|40|cg|40|          %% red
+fh|120|ff|1Arial|fb|14|fm|1|  %% smaller light
+fh|220|ff|2Arial|fb|26|fm|2|  %% smaller bold
+fh|330|ff|3Arial|fb|34|fm|3|  %% larger light
+fh|430|ff|4Arial|fb|46|fm|4|  %% larger bold
+%% --- End Definitions ---
+
+%% --- Main ---
+qx|Main|
+cs|1|cp|2|fp|4|
+at|
+^-{ Peter Brennan (Peterb370c): Winning Techniques in Declarer Play, 4th lesson,
+   teaching at BIL, May 5, 2011. }
+^-|
+fp|2|cp||ht|f|at|   @2The LIN presentation of Peter 's lesson on Winning Techniques in Declarer Play in the Beginner Intermediate Lounge, 2011-05-05.|
+ht|i|cp||cs|2|
+at|^i   @2{
+
+             ^*GIntroduction, Introduction^*N
+
+^*GB01,    Board 01- discovery play^*N
+
+^*GB02,    Board 02- deja vu^*N
+
+^*GB03,    Board 03- info from lead^*N
+
+^*GB04,    Board 04- discovery and safety play^*N
+
+^*GB05,    Board 05- a special finesse^*N
+
+
+              ^*GFinal notes, Final notes^*N
+
+} @0|
+ht|z|at|   @2^*GHelp,Click here for help^*N
+
+(c) Peter & Bridge Base Online - Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|fp|1|at|^y Vanyvon|
+pg| ***** 0 ***** |
+
+
+%% --- End Main ---
+
+%% ---------- INTRODUCTION ----------
+qx|Introduction|
+nt||cs|1|cp|2|
+at|
+^-{ Introduction }
+^-|
+cp||ht|x|at|@0
+^*GHelp, Click here for help^*N
+
+(c) Peter & Bridge Base Online - Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|fp|1|at|^y Vanyvon|
+ht|e|fp|1|
+at|Peter Brennan: The purpose of this course is to acquaint you with some useful tools when you declare a hand. Hopefully, by seeing a number of examples in random order you'll recognize these situations when they pop up in your game.  
+
+Each hand features a common challenge of some sort:  dealing with bad suit breaks, handling tricky entry situations, making inferences from the bidding or play, counting enemy distribution and/or points, when to draw trumps, basic end plays, etc.
+
+These hands should be played using IMP or rubber bridge tactics.  Don't even think of risking the contract to make a measly overtrick or two.
+
+The next few hands will feature the ability to count the opps distribution and points.  I came across this quote from Steve Weinstein, currently reigning world champion as a member of the USA Bermuda Bowl team.
+
+Q: What tip for improving Bridge would you give a new player?
+
+A: I think the improving player would benefit greatly from trying to count the hand. There are not that many patterns of 13 and, if they made a habit of doing the exercise every hand until it was automatic, they would see a ton of improvement.
+
+I'll have some tools you may find helpful later in this lesson.
+
+|
+pg| ***** 1 ***** |
+
+
+%% ---------------------------
+
+
+qx|B01,BOARD 1|
+rh||ah|Board 1|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|1SAT63HKJT2DKJ2CAT,S75H9874DT3CKJ973,SKQ2HAQDAQ6C86542,SJ984H653D98754CQ|sv|0|pn|peterb370c,peterb370c,peterb370c,peterb370c|
+pw|peterb370c,peterb370c,peterb370c,peterb370c|
+mb|---1Np6Nppp---|sk|S|%small text set kibbing South|nt|Let me show you the way I play a hand.  Hopefully, you'll adapt some of these methods to suit you.|
+pc|H9|
+pg| ***** 2 ***** |
+
+
+at|
+First, get paper and pen(cil). You can't do this in F2F bridge, but on BBO I feel it's OK while you'r learning. Either as declarer or defender, memorize (or write down) dummy's and your initial distribution.|
+pg| ***** 3 ***** |
+
+
+at|
+For example: Dummy -  3 - 2 - 3 - 5    Me - 4 - 4 - 3 - 2  Get used to the normal bridge arrangement of suits, @S @H @D @c.|
+pg| ***** 4 ***** |
+
+
+at|
+Count your winners in NT, losers in suit contracts.  Here, 3@Ss, 4@Hs, 3@Ds and @cA - 11 tricks.|
+pg| ***** 5 ***** |
+
+
+at|
+Look for extra tricks.  Here, only @S can produce our 12th trick.|
+pg| ***** 6 ***** |
+
+
+at|
+Now let's look at the tactical considerations.|
+pg| ***** 7 ***** |
+
+
+at|
+There are several possible ways to make 4@s tricks.  Name one now.|
+pg| ***** 8 ***** |
+
+
+nt|If @Ss split 3 - 3 or if they divide 4 - 2 or worse and East has the @sJ.  Also if either player has @sJ singleton or doubleton.  If West has @sJxxx(x) our @s10 will never be  good and our slam will fail.  OK so far?|
+pg| ***** 9 ***** |
+
+
+at|
+We must see what we can learn about the opps distribution.  This series of plays is known as a DISCOVERY PLAY.  Let's see what happens as we play and count.|
+pg| ***** 10 ***** |
+
+
+at|
+To begin, many people count inefficiently.  Keep an open mind as you follow along.|
+pg| ***** 11 ***** |
+
+
+at|
+Opening lead - @h9 We have 6@hs; they have 7. When both defenders follow they have 5 left.  Lead a 2nd @h.|
+pc|HA|pc|H3|pc|H2|
+pg| ***** 12 ***** |
+
+
+at|
+Both follow.  Opps have 3 left.  @hs were originally 5 - 2 or 4 - 3.  Lead the 3rd@h.|
+pc|HQ|pc|H6|pc|HK|pc|H4|
+pg| ***** 13 ***** |
+
+
+at|
+Both follow.  @hs were 4 - 3 so it's perfectly safe to cash the last @h.|
+pc|HJ|pc|H8|pc|C4|pc|H5|
+pg| ***** 14 ***** |
+
+
+nt|West had 4 @hs, East had 3. On to the @ds.|
+pc|HT|pc|H7|pc|C5|pc|D4|
+pg| ***** 15 ***** |
+
+
+pc|D2|pc|D3|pc|DA|pc|D5|
+pg| ***** 16 ***** |
+
+
+at|
+Both follow to the first 2 rounds.  Opps have 2 left. (East pitched a@D) @ds were originally 5 - 2 or 4 - 3.  Lead the 3rd@d.|
+pc|DQ|pc|D7|pc|DJ|pc|DT|
+pg| ***** 17 ***** |
+
+
+at|
+West started with 2@ds, so East had 5. East had 8 red cards. Let's see if we can figure out how his 5 black cards divide.|
+pc|D6|pc|D8|pc|DK|pc|C7|
+pg| ***** 18 ***** |
+
+
+pc|CA|pc|C9|pc|C6|pc|CQ|
+pg| ***** 19 ***** |
+
+
+pc|S3|pc|S5|pc|SK|pc|S4|
+pg| ***** 20 ***** |
+
+
+pc|SQ|pc|S8|pc|S6|pc|S7|
+pg| ***** 21 ***** |
+
+
+pc|S2|pc|S9|at|
+We've seen East play 1@c and 3@ss.  If he was 3 - 3 - 5 - 2, we play @sA dropping the @sJ, from West. But he could be 4 - 3 - 5 - 1.  If so, we must finesse the @s10 now.  What should we do?|
+pg| ***** 22 ***** |
+
+
+at|
+There is a simple answer.  Go back and play the hand correctly!|up|41|
+pg| ***** 23 ***** |
+
+
+at|
+To get a complete count we must be able to play 2 rounds of @c not merely cash the @cA.  Is that clear to you all?|
+pg| ***** 24 ***** |
+
+
+nt|Since we can't cash the @cA, then surrender a trick, we must do it the other way around; duck a @c as soon as possible. It cost us nothing as it's a sure loser no matter what.|
+pg| ***** 25 ***** |
+
+
+pc|HA|pc|H3|pc|H2|
+pg| ***** 26 ***** |
+
+
+nt| Are you all OK with this so far?|
+pc|C2|pc|CQ|pc|CT|pc|C3|
+pg| ***** 27 ***** |
+
+
+pc|H6|pc|HK|pc|H4|pc|HQ|
+pg| ***** 28 ***** |
+
+
+pc|HJ|pc|H7|pc|C4|pc|H5|
+pg| ***** 29 ***** |
+
+
+pc|HT|pc|H8|pc|C5|pc|D4|
+pg| ***** 30 ***** |
+
+
+pc|D2|pc|D3|pc|DA|pc|D5|
+pg| ***** 31 ***** |
+
+
+pc|DQ|pc|D7|pc|DJ|pc|DT|
+pg| ***** 32 ***** |
+
+
+pc|D6|pc|D8|pc|DK|pc|C7|
+pg| ***** 33 ***** |
+
+
+at|
+Once again we discover East had 8 red cards.  But when we play the 2nd round of @c......East shows out.  Now we know for sure East was 4 - 3 - 5 - 1.  The @ss are 2 - 4 and 4 @s tricks are waiting for us.|
+pc|CA|pc|C9|pc|C6|pc|D9|
+pg| ***** 34 ***** |
+
+
+pc|S3|pc|S5|pc|SK|pc|S4|
+pg| ***** 35 ***** |
+
+
+pc|SQ|pc|S8|pc|S6|pc|S7|
+pg| ***** 36 ***** |
+
+
+at|
+There's no guess here. We know to finesse.|
+pc|S2|pc|S9|pc|ST|pc|CJ|
+pg| ***** 37 ***** |
+
+
+pc|SA|pc|CK|pc|C8|pc|SJ|
+pg| ***** 38 ***** |
+
+
+mc|12|sk||sc|y|nt|The lesson text: With 11 top tricks we must play the @ss correctly to make our slam. By using a DISCOVERY PLAY, we find East started with 3@hs, 5@ds and 1@c. Placing him with 4@ss, we know we can cash 4@s tricks and make our slam.|
+pg| ***** 39 ***** |
+
+
+qx|B02,BOARD 2|
+rh||ah|Board 2|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|1SAT63HKJT2DKJ2CAT,SJ75H987DT3CKJ973,SKQ2HAQDAQ6C86542,S984H6543D98754CQ|mb|1N|mb|p|mb|6N|mb|p|mb|p|mb|p|pc|H9|sc||sk|S|%small text set kibbing South|nt|Deja vu all over again.  Can you bring in this slam? Good luck!|
+pg| ***** 40 ***** |
+
+
+at|
+The N-S hands are the same as first hand, therefore the same discovery play as the last hand works.|
+pg| ***** 41 ***** |
+
+
+at|
+We take the 1st trick, and concede a club, planning to take any return, then playing our sure tricks to count the hand.|
+pc|HA|pc|H3|pc|H2|
+pg| ***** 42 ***** |
+
+
+pc|C2|pc|CQ|pc|CT|pc|C7|
+pg| ***** 43 ***** |
+
+
+pc|H4|pc|HK|pc|H8|pc|HQ|
+pg| ***** 44 ***** |
+
+
+pc|HJ|pc|H7|pc|c4|pc|h5|
+pg| ***** 45 ***** |
+
+
+at|
+And since @hs break nicely, we play a last round.|
+pc|HT|pc|c7|pc|c5|pc|h6|
+pg| ***** 46 ***** |
+
+
+at|
+@hs divide 3-3, now the @ds...|
+pc|d2|pc|d3|pc|dA|pc|d4|
+pg| ***** 47 ***** |
+
+
+pc|DQ|pc|D8|pc|DK|pc|dT|
+pg| ***** 48 ***** |
+
+
+at|
+And we find @ds divide 2-5...|
+pc|DJ|pc|s5|pc|d6|pc|d7|
+pg| ***** 49 ***** |
+
+
+at|
+When the @CA is played and we discover East had only 1 @c we know the hand.  4@Hs, 5@Ds and 1@c, so 3@Ss.|
+pc|cA|pc|c9|pc|c6|pc|d5|
+pg| ***** 50 ***** |
+
+
+pc|s3|pc|s7|pc|sK|pc|s4|
+pg| ***** 51 ***** |
+
+
+pc|sQ|pc|s8|pc|s6|pc|sJ|mc|12|sk||sc|y|nt| In both deals we were lucky to find @cs breaking 5 - 1. That gave us an exact count of the opps hands so we could play @ss with certainty. But we played correctly to uncover the distribution so we deserved a lucky break.|
+pg| ***** 52 ***** |
+
+
+qx|B03,BOARD 3|
+rh||ah|Board 3|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|3SK53HK7DQ86CKJ532,SQT82HJ83DAT3CQ87,SA6HA64DJ74CAT964,SJ974HQT952DK952|mb|1C|mb|p|mb|2C|mb|p|mb|2D|an|Not the right rebid|mb|p|mb|2N|mb|p|mb|3N|mb|p|mb|p|mb|p|pc|S2|sk|S|sc||
+nt|Playing inverted minor raises I should rebid 2NT showing stoppers in both majors. If you don't play IVM, then South could respond 2 or 3NT depending on agreement.|
+pg| ***** 53 ***** |
+
+
+at|
+With 2@ss, 2@hs, the @ds are frozen, so no tricks there unless the opps lead them, it looks like we need 5@cs tricks to guarantee our game. With our 2-way finesse in @c, we can pick up the @cQ if @cs are 3 - 0 (22%), no matter which opponent has them. Can you improve on purely guessing who may have @cQxx?|
+pg| ***** 54 ***** |
+
+
+at|
+If @cs are 2 - 1 (78%), we can't miss our 9 tricks. If they split 3 - 0, it seems we just have to guess who to finesse.  Agree?|
+pg| ***** 55 ***** |
+
+
+at|
+ However, there's a subtle clue to which opp may be void in @c.  It's in the opening lead. West led the @s2. What inference can we draw from this?|
+pg| ***** 56 ***** |
+
+
+at| Right.  West had 4 @ss.  Does West have a longer suit than @ss?|
+pg| ***** 57 ***** |
+
+
+nt|He shouldn't because standard leads against No Trump contracts are 4th from longest and strongest.  Everybody agree?|
+pg| ***** 58 ***** |
+
+
+at|
+Here's the interesting point - with only 4 card suits, is it possible for West to be void in a suit?|
+pg| ***** 59 ***** |
+
+
+at|
+Of course not!  4 - 4 - 4 - 0 distribution is called a MISDEAL.  :)|
+pg| ***** 60 ***** |
+
+
+at|
+Since West can't have a @c void, he's the only opp who can have @cQxx so it's perfectly safe to begin @c by cashing your @cK.  If East follows suit, the board's @cA will clear the suit. If East shows out on the @cK, you'll know to finesse West's @cQ for 5 @c tricks and the game.|
+pg| ***** 61 ***** |
+
+
+pc|sA|pc|S4|pc|s3|
+pg| ***** 62 ***** |
+
+
+pc|c4|pc|d2|pc|cK|pc|c7|
+pg| ***** 63 ***** |
+
+
+pc|c3|pc|c8|pc|c9|mc|9|sk||sc|y|sb|sclaiming 9 tricks, 2 spades, 2 hearts, and 5 clubs|
+pg| ***** 64 ***** |
+
+
+sb|s|nt| Here's the lesson text:  A good player is ALWAYS looking for clues. Declarer has 4 sure tricks in the majors, so 5 @cs will see him home. The only danger is a 3 - 0 @c break (22%), but with the @cA10 in dummy and the @cKJ in hand, either opponent  can be finessed if one holds @cQxx. Which opponent might hold all three missing @c? The clue we need was on the opening lead, West's @s2.|
+pg| ***** 65 ***** |
+
+
+qx|B04,BOARD 4|
+rh||ah|Board 4|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|1S54HAQ643DAJ6CQ84,SQJT8HKDT74CJ9653,SA763HT852DK83CK2,SK92HJ97DQ952CAT7|mb|1H|mb|p|mb|3H|mb|p|mb|4H|mb|p|mb|p|mb|p|pc|SQ|sk|S|sc||nt|Good limit raise, 4+@Hs, 10 -12 support pts. This is the type of hand that gives declarers gray hair! With sure losers in @s and @c, a potential @d loser and a very shaky trump suit, you have your work cut out for you. Good luck!|
+pg| ***** 66 ***** |
+
+
+at|
+This hand features a type of DISCOVERY PLAY we encounter all the time. We'll use it here to determine how to play trumps. Let's look at the those trumps.  What is the "correct" way to play @hs?|
+pg| ***** 67 ***** |
+
+
+at|
+That's a trick question! If we can't allow a loser in the suit, we must hope East began with @hKx exactly, and finesse by leading to our @hQ.  This is only a 20% chance but it may be the only way to make the contract.|
+pg| ***** 68 ***** |
+
+
+at|
+However, if we can afford to lose a @h trick and are playing in "maximum safety mode", there is a standard SAFETY PLAY available.  Cash the @hA and, if neither the K or J appears, later lead from the table towards the @hQ.|
+pg| ***** 69 ***** |
+
+
+nt|This won't help if West has @hKJx but you will lose only one trick 78% of the time. Notice how similar this SAFETY PLAY is to the one encountered in the previous lesson, @cQ9xx - @cAJxx.|
+pg| ***** 70 ***** |
+
+
+at|
+So, should we try for no losers in @h or one loser?|
+pg| ***** 71 ***** |
+
+
+at|
+At the moment there's no way  to know. We must try the @d finesse first.  If it loses, we can't afford a @h loser so we'll have to hope East has @hKx. If the @d finesse wins, then we can use the safety play in @h.|
+pg| ***** 72 ***** |
+
+
+pc|sA|pc|s9|pc|s4|
+pg| ***** 73 ***** |
+
+
+pc|d3|pc|d9|pc|dJ|pc|d4|
+pg| ***** 74 ***** |
+
+
+pc|HA|pc|HK|pc|H2|pc|H7|mc|10|sk||sc|y|at|
+Why does the safety play give such good odds (78%)?|
+pg| ***** 75 ***** |
+
+
+at|
+There are exactly 16 different arrangements of the 4 outstanding @hs, ranging from West having @hKJ97 and East void to the reverse, West void and East with @hKJ97. OK so far?|
+pg| ***** 76 ***** |
+
+
+nt|Using the safety play ,(@HA first, later low to the @HQ), the holdings where we must lose 2 or more tricks are (West - East) KJ97 - void, KJ9 - 7, KJ7 - 9 and void - KJ97. These individual holdings have a combined probability of 22%.|
+pg| ***** 77 ***** |
+
+
+at|
+For the other 12 holdings, the safety play insures only one trick lost so the chances of success are 78%.|
+pg| ***** 78 ***** |
+
+
+at|
+Here's the lesson text: With a sure loser in both @S and @c, we can afford only one red suit loser. We should take the @D finesse first as a form of a DISCOVERY PLAY.  If it loses to West's @DQ, we must hope East has hKx (20%) and take the @H finesse. If the @D finesse wins, we can take the SAFETY PLAY in @H and cash the @HA first.|
+pg| ***** 79 ***** |
+
+
+qx|B05,BOARD 5|
+rh||ah|Board 5|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|4SAJ84HKJ8DQJ2CJ96,ST62HQ73DT9764CA7,SKQ93HA965DK83CT8,S75HT42DA5CKQ5432|mb|p|mb|1C|mb|p|mb|1H|mb|p|mb|1S|mb|p|mb|4S|an|Game forcing  :)|mb|p|mb|p|mb|p|pc|CA|sk|S|sc||nt| Assuming a 3 - 2 @s split (68%), you have 4 losers, 1@h, 1@d and 2@cs - one too  many. Winners: 4@ss, 1@c ruff, 2@hs and 2@ds - one too few. Looks like finding the @hQ is the key to this hand. Good luck!|
+pg| ***** 80 ***** |
+
+
+pc|C8|pc|C5|pc|C9|
+pg| ***** 81 ***** |
+
+
+pc|C7|pc|CT|pc|CQ|pc|C6|
+pg| ***** 82 ***** |
+
+
+at|
+So @cs divide 6-2. Now, there is no reason to delay pulling trumps.|
+pc|CK|pc|CJ|pc|D4|pc|S3|
+pg| ***** 83 ***** |
+
+
+pc|SK|pc|S5|pc|S4|pc|S6|
+pg| ***** 84 ***** |
+
+
+pc|SQ|pc|S7|pc|S8|pc|S2|
+pg| ***** 85 ***** |
+
+
+at|
+@Ss are 3-2. Now the @ds...|
+pc|S9|pc|C2|pc|SA|pc|ST|
+pg| ***** 86 ***** |
+
+
+pc|D2|pc|D6|pc|DK|pc|DA|
+pg| ***** 87 ***** |
+
+
+pc|C4|pc|SJ|pc|D7|pc|H5|
+pg| ***** 88 ***** |
+
+
+pc|DQ|pc|D9|pc|D3|pc|D5|
+pg| ***** 89 ***** |
+
+
+pc|DJ|pc|DT|pc|D8|pc|C3|
+pg| ***** 90 ***** |
+
+
+at|
+Now we know East started with 2326. Could he have the @HQ? Then his hand would be:  @sxx @hQxx @dAx @c KQxxxx.|
+pg| ***** 91 ***** |
+
+
+at|
+Only a very very very timid East would pass with @sxx @hQxx @dAx @cKQxxxx, imho.  (In My Humble Opinion)|
+pg| ***** 92 ***** |
+
+
+at|
+If you concede the @hQ to West, you have to play for what is the only chance - East started with  @sxx @h10xx @dAx @cKQxxxx because if West has @hQ10x you're doomed. Are you all OK with this so far?|
+pg| ***** 93 ***** |
+
+
+nt|Which @h do you play if West has Qxx and East has 10xx?|
+pg| ***** 94 ***** |
+
+
+at|
+Now let's see all four hands.|sk||
+PC|HJ|
+pg| ***** 95 ***** |
+
+
+at|
+West must cover the @HJ or South wins the last 3 tricks with @HJAK. This is called a "backwards finesse." In short, your best chance, given the inference by East's initial pass and discovering he started with three @hs, is to hope he holds @h10xx.|
+pg| ***** 96 ***** |
+
+
+pc|HQ|pc|hA|pc|H2|
+pg| ***** 97 ***** |
+
+
+pc|H6|pc|H4|pc|H8|pc|H3|
+pg| ***** 98 ***** |
+
+
+pc|HK|pc|H7|pc|H9|pc|HT|mc|10|sc|y|at|
+About discovery plays - you won't be able to use this technique on every hand. Sometimes you'll be forced to make a critical decision early in a contract before you've had a chance to "discover" enough about the hand. In this hand, we struck "informational gold" when @c split 2 - 6.  Often that's the case.  A singleton or doubleton lead can get declarer started on a "discovery mission."|
+pg| ***** 99 ***** |
+
+
+nt|The lesson text is: When East showed up with @cKQxxxx and the @dA and remained silent throughout the auction, it is highly unlikely he also holds the @hQ so a "normal" @h finesse is doomed. Instead, you must hope East started with the @h10 and try the "backward" finesse.|
+pg| ***** 100 ***** |
+
+
+%% ---------- FINAL NOTES ----------
+qx|Final notes|
+bt||pf||nt||cs|1|cp|2|fp|4|
+at|
+^-{ Final notes }
+^-|
+ht|h|cp||fp|2|at|   @2Thanks, all.  Looking forward to see you all at the next lesson on winning techniques in declarer play. :)^*N
+
+Counting Resources:
+
+Howard Schutzman (Hondo 717) has a wonderful site with a number of great lessons available.  You should read carefully his tutorial on counting and download any "movies" that are there too.
+
+^*Hwww.bridgesights.com/hondobridge/CountingDistribution.txt^*N
+
+Fred has developed a pattern game.  The distribution of 3 hands are given; you must supply the fourth.  e.g. 6 2 1 you type 4.  Nothing too exciting but if familiarizes you with bridge hand patterns.
+
+^*Hbbi.bridgebase.com/game/game.html^*N
+
+Some time spent at these sites will help you in learning to count bridge hands.
+
+
+
+|
+ht|z|at|
+
+(c)Peter & Bridge Base Online - Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|fp|1|at|^y Vanyvon|
+pg| ***** 101 ***** |
+
+
+%% --- End Final notes ---
+
+%% --- Help ---
+qx|Help, Help notes|
+bt||pf||nt||cs|2|fp|3|ht|b|at|^-{ Help }
+^-|
+hb|z|wb|b|bm|BIL.bmp|
+fp|2|ht|e|at|^b@2
+Short instruction on how to navigate through the movie:
+
+ ^$6  Previous page, go back one page.
+ ^$40  Next page, go forward one page.
+ ^$7  Previous chapter (the first page of the previous chapter).
+ ^$41  Next chapter (the first page of the next chapter).
+ ^$119  The first page of this movie. Once a trick is complete, click on the first card of the next trick. |
+%% --- End Help ---
+
+%% EOF

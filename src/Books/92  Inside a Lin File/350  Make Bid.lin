@@ -1,0 +1,254 @@
+%% Make Bid
+%% Last edited  2013 Dec 31
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+st||
+qx|mb1|
+
+md|1S9H8TQD3469JAC7TQ,S248TJAH29DQC69JA,S57QH457KAD2KC234|
+
+at|^b@2^*bMake Bid^*n^f^*b!mb! ... !^*n|at|^z@3|
+pg| ***** 0 ***** |
+
+
+mb|1d!|
+at|
+
+^c@2!mb!1d|cp|7|at|^*b!^*n|cp||at|! ^f@2This is the most common form.  The exclamation mark following the bid makes it an (un-annotated) alert.
+|
+pg| ***** 1 ***** |
+
+
+mb|2dd!r|
+at|
+^c!mb!2dd|cp|7|at|^*b!^*n|cp||at|r! ^f@2This is the more complex form, where there is an unlimited string of bids. Notice how the letter  'd'  can be both the  'd'  of diamond and the  'd'  of double,  and that  'r'  is redouble. The |cp|7|at|^*b!^*n|cp||at| exclamation mark of an alert must again  ^*b follow^*n  the alerted bid.
+|
+pg| ***** 2 ***** |
+
+
+nt||
+qx|an|
+at|^b@2^*bAnnotation^*n^f^*b!an! <text> !^*n|at|^z@3|
+
+at|
+
+^c@2Single bids can be immediately followed by an annotation.
+
+|
+pg| ***** 3 ***** |
+
+
+mb|4d|an|This is getting silly|mb|p|mb|p|mb|p|
+at|!mb!4d!an! This is getting silly !mb!p!mb!p!mb!p!        @2Hover over the  4@d  bid in the bid display panel (top-right) to see the bid.
+|
+pg| ***** 4 ***** |
+
+
+nt||
+qx|ub|
+at|^b@2^*bUndo Bid^*n^f^*b!ub!99!^*n|at|^z@3|
+pg| ***** 5 ***** |
+
+
+ub||
+at|
+
+!ub!!   ^ghas just  "undone"  the  last pass.
+|
+pg| ***** 6 ***** |
+
+
+ub|4|
+at|
+!ub!4!  ^ghas just  "undone"  the 4 bids before that.
+|
+
+
+qx|test|
+pn|South,West,North,East|rh||ah|Ex Alerts|sv|e|sk|e|sk||
+nt|^z@3^b@2|at|^^|
+%% 4S3HJ73DA5CKQJ8762,SAK9642HKQ5DKQ2C5,ST85H862D9863CT94,SQJ7HAT94DJT74CA3
+md|4,SAK9642HKQ5DKQ2C5,,SQJ7HAT94DJT74CA3|
+
+cp|8|at|^*bTest:^*n|cp||at|  Ex Alerts   Heavy alert test          use mouse hover for more testing|
+
+
+
+mb|1n|an|One two @C@D@H@S four five six|
+pg| ***** 7 ***** |
+
+
+sj|L|
+mb|2c|
+pg| ***** 8 ***** |
+
+
+sj|L|
+mb|2s|an|fun time|
+pg| ***** 9 ***** |
+
+
+qx|10|
+bt||
+pg| ***** 10 ***** |
+
+
+st||
+pg| ***** 11 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 12 ***** |
+
+
+sj|L|
+mb|3d|an|again|
+pg| ***** 13 ***** |
+
+
+qx|14|
+sj|L|
+mb|d!|
+pg| ***** 14 ***** |
+
+
+sj|L|
+mb|r!|
+pg| ***** 15 ***** |
+
+
+sj|L|
+mb|p!|
+pg| ***** 16 ***** |
+
+
+sj|L|
+mb|3h|an|last|
+pg| ***** 17 ***** |
+
+
+qx|18|
+sj|L|
+mb|d|an|hello|
+pg| ***** 18 ***** |
+
+
+sj|L|
+mb|r|an|don't say hello|
+pg| ***** 19 ***** |
+
+
+sj|L|
+mb|p|an|Why not|
+pg| ***** 20 ***** |
+
+
+sj|L|
+an|@C@D@H@S|mb|4C|an|. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1. . . . . . . . . 2  |
+pg| ***** 21 ***** |
+
+
+sj|c|
+mb|p|an|@d|mb|4D|an|cue|
+pg| ***** 22 ***** |
+
+
+sj|c|
+mb|p!|mb|4H|an|cue|
+pg| ***** 23 ***** |
+
+
+sj|c|
+mb|p|mb|4s|an|cue|
+pg| ***** 24 ***** |
+
+
+qx|25|
+sj|c|
+mb|ppS|mb|4N|an|0314|
+pg| ***** 25 ***** |
+
+
+sj|j|
+mb|5c|an|5@c - @S@H@C@D this is xxxxxxxxxxxxxxxxxoaaaaaaaaaasssssssssssssssss |
+pg| ***** 26 ***** |
+
+
+sj|j|
+mb|5d|an|5@d - @S@H@C@D this is an alert|
+pg| ***** 27 ***** |
+
+
+sj|j|
+mb|?|
+pg| ***** 28 ***** |
+
+
+mb|5h|an|5@h - @S@H@C@D this is an alert|
+pg| ***** 29 ***** |
+
+
+qx|30|
+sj|j|
+mb|5s|an|5@s - @S@H@C@D this is an alert|
+pg| ***** 30 ***** |
+
+
+sj|j|
+mb|6C|an|6@C - @S@H@C@D this is an alert|
+pg| ***** 31 ***** |
+
+
+sj|j|
+mb|6d|an|6@d - @S@H@C@D this is an alert|
+pg| ***** 32 ***** |
+
+
+sj|j|
+mb|6h|an|6@h - @S@H@C@D this is an alert|
+pg| ***** 33 ***** |
+
+
+sj|j|
+mb|6s|an|6@s - @S@H@C@D this is an alert|
+pg| ***** 34 ***** |
+
+
+qx|35|
+sj|j|
+mb|7C|an|7@C - @S@H@C@D this is an alert|
+pg| ***** 35 ***** |
+
+
+sj|j|
+mb|7d|an|7@d - @S@H@C@D this is an alert|
+pg| ***** 36 ***** |
+
+
+sj|j|
+mb|7h|an|7@h - @S@H@C@D this is an alert|
+pg| ***** 37 ***** |
+
+
+qx|38|
+sj|j|
+mb|7s|an|7@s - @S@H@C@D this is an alert|
+pg| ***** 38 ***** |
+
+
+sj|j|
+mb|7n|an|7NT - @S@H@C@D this is an alert|
+pg| ***** 39 ***** |
+
+
+qx|end|
+mb|p|mb|p|
+pg| ***** 40 ***** |
+
+
+ht|z|at|@0
+^*b end ^*n|

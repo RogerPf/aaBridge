@@ -1,0 +1,154 @@
+%% Internal Link
+%% Last edited  2013 Dec 04
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+bt||
+at|
+^b@2^*bInternal Link    -       @^*g....^*n|
+at|
+
+Internal links go inline in text and have the form  @-
+
+^d^*b@^*g<qx_label>,^*nNice text you can see and click on^*b@^*n^*n
+
+Note the  ^*b@^*g^*n  which marks the start and the  ^*b@^*n^*n  which marks the end. The <qx_label> must match a 'qx label' somewhere in the lin file.  They have fixed display and hover colors.
+
+^c^*glast,Clicking Here ^*n will take you to the last page of this lin file
+
+
+
+^b@2^*bqx_label    -       !qx! ABCD, <wide><thin><hide>^*n any other text ignored !
+
+
+^*bABCD^*n is the name of the qx_label that the above jump will jump to.
+
+Every qx_label produces a bump on the  Navbar.
+
+^*baaBridge^*n  automatically works out whether these bumps should be wide or thin.
+
+^cqx_lables followed by a lot of  !pg!!'s  will be wide.
+
+^cqx_labels with an empty  ^*bABCD^*n  text will be thin.
+
+You can override this behaviour by adding   <wide><thin><hide>^*n as shown above.  Hide does what it says.  Jumps will still work to a hidden qx_label.
+
+
+This lin file contains a selection of such jumps as you can see by the bumps on the  Navbar  below.
+|
+pg| ***** 0 ***** |
+
+
+qx|Book|
+nt|
+^b@2^*bInternal Link   (to another file in the book)  -       @^*g....^*n      this is an|cp|7|at| aaBridge only|cp||at| feature
+
+Write the <qx_label> in your link to as 
+
+^c <qx_label^*b^*n>                                 ^mto target a  qx_label in  THE SAME FILE
+
+^c <qx_label^*b:^*npart_filename>                   ^mto target a file in the  THE SAME FOLDER    (qx_label is optional)   
+ 
+^c <qx_label^*b:^*npart_filename::part_foldername>  ^mto target a file in a   DIFFERENT FOLDER    (qx_label is optional) 
+
+where 'part_filename' matches ^*bany part^*n of the filename of another lin file in the current book.  The files are tested in alphabetic order so the early ones will match first.
+
+
+^c^*gStr2:Lin file St,Click here ^*n to go to the  'Str2'  page of the file     'nnn ... Lin_filename.lin'.
+
+
+The link above has the form
+
+^d^*b@^*g|cp|7|at|Str2:Lin filename|cp||at|,Click here ^*b@^*n^*n  to go to...
+|
+pg| ***** 1 ***** |
+
+
+nt||
+qx|qx_1|
+at|
+^b@2^*bInternal Link    -       @^*g....^*n|
+at|^^^^^^
+^dExtra Page 1
+|
+pg| ***** 2 ***** |
+
+
+nt||
+qx|qx_2|
+at|
+^b@2^*bInternal Link    -       @^*g....^*n|
+at|^^^^^^
+^dExtra Page 2^^
+|
+pg| ***** 3 ***** |
+
+
+at|
+some text  |
+pg| ***** 4 ***** |
+
+
+at|more text   |
+pg| ***** 5 ***** |
+
+
+qx|std|
+at|more text   |
+pg| ***** 6 ***** |
+
+
+qx|b,thin|
+at|more text     |
+pg| ***** 7 ***** |
+
+
+qx|More,wide|
+at|more text       |
+pg| ***** 8 ***** |
+
+
+nt||
+qx|qx_3,wide|
+at|
+^b@2^*bInternal Link    -       @^*g....^*n|
+at|^^^^^^
+^dExtra Page 3
+|
+pg| ***** 9 ***** |
+
+
+nt||
+qx|last,thin|
+at|
+^b@2^*bInternal Link    -       @^*g....^*n|
+at|^^^^^^^^|
+at|more text   |
+pg| ***** 10 ***** |
+
+
+at|moreeee text     |
+pg| ***** 11 ***** |
+
+
+qx||
+at|moreeeee text       |
+pg| ***** 12 ***** |
+
+
+qx||
+qx||
+qx||
+qx||
+qx||
+
+
+at|
+^dThis is the last page of the lin file.
+
+|
+ht|z|at|@0
+^*b end ^*n|
+

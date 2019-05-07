@@ -1,0 +1,72 @@
+%%
+%% BBO hands to aaBridge
+%% Last edited   2019 April 20
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<<--INSERT-START-->>=005__Common_Header.ins
+%%
+fh|v24|        v-24     very small
+fh|s28|        s-28     small
+fh|j32|        j-32
+fh|k35|        k-35
+fh|e37|        e-37
+fh|t40|        t-40     title
+fh|n42|        n-42
+fh|p45|        p-45
+fh|b50|        b-50     big
+fh|g60|        g-60     graphSuit 
+fh|m64|        m-64     mastHead
+fh|c70|        c-70     chapTitle
+%
+fh|x33|ff|xCourier|          FONT   x-33-Courier
+%
+cr|a230|cg|a040|cb|a130|     a  action
+cr|b100|cg|b100|cb|b255|     b  light Blue
+cr|f200|cg|f255|cb|f255|     f  fake-button
+cr|h000|cg|h095|cb|h169|     h  h-highlight
+cr|p255|cg|p000|cb|p255|     p  pink    fake pink button
+cr|u160|cg|u040|cb|u200|     u  pUrple
+cr|y170|cg|y190|cb|y255|     y  youtube border
+%
+bt||
+fp|b-50|at|^^^^^a   @s @h @d @c  ^v     @c @d @h @s|fp||
+at|^b@2^z@3^^|
+ht|f|        
+%%
+<<--INSERT-END**-->>=005__Common_Header.ins
+
+qx|ToaaB|
+mn|Get BBO hands into aaBridge|
+
+Lg|c|
+
+at|On the  Welcome page  |fp|n-42|at|@z|fp||at|,  is a link to  'aaBridge on^*b YouTube^*n'.    |lg|m|fp|j-32|cp|a|at|^*bClick that link^*n|cp||fp||at|   and 
+|n#|3|fp|j-32|cp|a|at|^*bPlay the Videos^*n|cp||fp||at|
+|fp|k-35|
+at|^d 014   Get hands from BBO Hand Records into aaBridge
+|n^|3|at|^d 003   Get hands from a BBO Table into aaBridge|fp||at|
+|lg|a|at|
+ 
+|n#|3|at|From the  ^*g :Doc Collection, aaBridge Doc Collection^*n  |fp||at|   (  @2If it is NOT on your desktop click the blue link and follow the
+instructions.   You can return by clicking the  |fp|n|n#|1|at|@L|fp||n^|1|at|  icon, top left. )
+^b@2
+|n^|d|fp|j-32|cp|a|at|^*bRead the Document^*n|cp||fp||at|
+|n#|7|fp|k-35|at|^d Get BBO hands into aaBridge.doc|fp||
+at|^^^^^^|
+
+fp|t|at|Short Version|fp||at|
+|n^|a|lg|f|at|^c@2
+Have aaBridge open.
+With Chrome (others browsers will also work) @- visit the  ^*h http://www.bridgebase.com/myhands/index.php, BBO Hand Records Page^*n.  (Login if you need to)
+^*bSelect ^*n the - Player ID, dates and time period you want the hands to cover.
+^*n|n#|2|at|Click ^*n the  {^*b Get hands ^*n}  button.    Once the table of hands is showing...
+^d|n#|3|fp|j-32|at|^*bRight Click |fp||at| just outside table of hands  then  from the menu... 
+^e Click |fp|k-35|at|^*b   Save As..  ^*n|fp||at|   If asked - Click |fp|k-35|at|^*b Yes ^*n |fp||at| to accept overwriting the previous save.
+^fAfter a few seconds, the deals will appear in ^*baaBridge^*n.
+|n^|7|at|
+^dIf it does not work  -  see the document above which has clear images.
+|
+pg| ***** 0 ***** |
+
+

@@ -1,0 +1,197 @@
+%%
+%%
+
+ss|chapter,3.                                             The  Patterns|
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-01-11          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Roger  on  Throw-ins                   2018  August|
+%%
+cr|m140|cg|m180|cb|m090|   fill   m  m-mastColor       on Title Pages
+cr|c208|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s29|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|i|
+at|^c@2^z@3^^|n#|9|
+fp|t-title|at|What does  'Pattern'  mean ? |fp||
+lg|h|
+n#|4|at| 
+^d@2As used here I am referring to the common (frequently occurring) arrangement of cards in different hands; that is, across declarer, dummy and Opps hands.  To give the simplest example possible, the basic finesse.|
+cp|red|
+ht|o|at|^f ^*b AQ ^*n|
+ht|p|at|^e ^*b |n>|1|at|Kx ^*n |at|{      }|
+ht|q|at|^f ^*b   x ^*n|
+cp||
+at|^^Here if you know that West has the @hK then when you lead the  ^*b@hx^*n  from South you can be sure of  2 tricks.  the "Pattern" for the basic finesse is so simple few would bother to think of it that way.|
+n#|5|at|^^But when it comes to ^*b Throw-in's ^*n the advice is @- get familiar with the patterns.|
+
+pd|first-show, Use {^*b 1st ^*n } to Play out the cards.  { ^*b Show ^*n } will let you see them OR use the checkbox in far right column `cp`red`at`^*bShow ALL... ^*n`cp``at` |
+
+ss|2of3,`at`Lead low. LHO has to win and lead to your tenace.  You get 2 of the 3 tricks.   Lead any other, you get just 1.`|
+
+qx|3 Pat|
+pg| ***** 0 ***** |
+
+
+st||
+bv|f,v|
+---------------------------------------------------------------------------
+qx|1a,wide|
+rh||ah|Pattern 1a|
+md|1 AQ 2, KJ A, 32 3, 54 4|
+sv||sk|s|sk||
+vz|y|
+vx|9999,9999,9999,9999|
+vp|----,----,dd--,dd--|
+
+mb|3nppp|
+bs|7,3|
+wt|s|
+nt|@1^b@2^^|n^|5|
+at|^*bPattern 1a ^*n |
+lg|m|at|^^^c@2|
+at|You have a tenace and you ^*b KNOW ^*n LHO ^*b WILL HAVE TO ^*n win and lead the tenace suit.|
+ht|r|fp|s|at|^e    (the 2 lines below apply all the time and, to reduce clutter, will ^*bNOT^*n be repeated)|fp||
+ht|w|vv|2of3|
+pf|first-show|
+pg| ***** 1 ***** |
+
+
+---------------------------------------------------------------------------
+qx|1b,wide|
+rh||ah|Pattern 1b|
+md|1 AQ 2, 54 A, 32 3, KJ 4|
+sv||sk|s|sk||
+vz|n|
+vx|9999,9999,9999,9999|
+vp|----,----,dd--,cc--|
+
+mb|3nppp|
+bs|7,3|
+wt|s|
+nt|@1^b@2^^|n^|5|
+at|^*bPattern 1b ^*n|
+lg|m|at|^^^c@2|
+at|As long as LHO wins (and so leads to your tenace) it does not matter where the Opps high cards are.|
+pg| ***** 2 ***** |
+
+
+---------------------------------------------------------------------------
+qx|1c,wide|
+rh||ah|Pattern 1c|
+md|1 AQ2, KJT, 543, 876 |
+sv||sk|s|sk||
+vx|99--,99--,99--,99--|
+vp|----,----,dd--,dd--|
+
+mb|3nppp|
+bs|7,3|
+wt|s|
+nt|@1^b@2^^|n^|5|
+at|^*bPattern 1c ^*n|
+lg|m|at|^^^c@2|
+at|Forcing LHO to win in the tenace suit also works, as in all these cases, LHO has no OTHER exit.|
+pg| ***** 3 ***** |
+
+
+---------------------------------------------------------------------------
+qx|1d,wide|
+rh||ah|Pattern 1d|
+md|1 A2 2, KJ A, q3 3, 54 4|
+sv||sk|s|sk||
+vx|99--,99--,99--,99--|
+vp|----,----,cc--,----|
+
+mb|3nppp|
+bs|7,3|
+wt|s|
+nt|@1^b@2^^|n^|5|
+at|^*bPattern 1d ^*n|
+lg|m|at|^^^c@2|
+at|When you know (or hope) LHO holds the @sK you have more flexibility.|
+pg| ***** 4 ***** |
+
+
+---------------------------------------------------------------------------
+qx|1e,wide|
+rh||ah|Pattern 1e|
+md|1 A2 2, KJT, q3 3, - 654|
+sv||sk|s|sk||
+vx|99--,99--,99--,99--|
+vp|----,----,cc--,----|
+
+mb|4sppp|
+bs|8,2|
+wt|s|
+nt|@1^b@2^^|n^|5|
+at|^*bPattern 1e ^*n|
+lg|m|at|^^^c@2|
+at|When LHO holds only trumps (here @s's) that will catch them.|
+pg| ***** 5 ***** |
+
+

@@ -1,0 +1,739 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% File       : Peterb370c_Winning Techniques in Declarer Play_ 2011-06-16.lin
+%% Description: Peter's teaching session on Declarer play, BIL, 2011-06-16
+%% Programmer : Vanyvon
+%% Version    : 
+%%            : 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+mn| Peterb370c:Winning Techniques in Declarer Play,2011-06-16|tu||bt||nt||
+
+%% --- Definitions ---
+cr|116|cg|116|cb|1255|        %% blue
+cr|2255|cg|2255|cb|264|       %% yellow
+cr|316|cg|3128|cb|316|        %% dark green
+cr|4255|cb|40|cg|40|          %% red
+fh|120|ff|1Arial|fb|14|fm|1|  %% smaller light
+fh|220|ff|2Arial|fb|26|fm|2|  %% smaller bold
+fh|330|ff|3Arial|fb|34|fm|3|  %% larger light
+fh|430|ff|4Arial|fb|46|fm|4|  %% larger bold
+%% --- End Definitions ---
+
+%% --- Main ---
+qx|Main|
+cs|1|cp|2|fp|4|
+at|
+^-{ Peter Brennan (Peterb370c): Winning Techniques in Declarer Play,9th lesson,
+   teaching at BIL, June 16, 2011. }
+^-|
+fp|2|cp||ht|f|at|   @2The LIN presentation of Peter 's lesson on Winning Techniques in Declarer Play in the Beginner Intermediate Lounge, 2011-06-16.|
+ht|i|cp||cs|2|
+at|^i   @2{
+
+             ^*GIntroduction, Introduction^*N
+
+^*GB01,    Board 01- elimination and endplay^*N
+
+^*GB02,    Board 02- endplay variant^*N
+
+^*GB03,    Board 03- info from lead - suit combo^*N
+
+^*GB04,    Board 04- scissors coup^*N
+
+^*GB05,    Board 05- play variations including a squeeze^*N
+
+
+              ^*GFinal notes, Final notes^*N
+
+} @0|
+ht|z|at|   @2^*GHelp,Click here for help^*N
+
+(c) Peter & Bridge Base Online - Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|fp|1|at|^y Vanyvon|
+pg| ***** 0 ***** |
+
+
+%% --- End Main ---
+
+%% ---------- INTRODUCTION ----------
+qx|Introduction|
+nt||cs|1|cp|2|
+at|
+^-{ Introduction }
+^-|
+cp||ht|x|at|@0
+^*GHelp, Click here for help^*N
+
+(c) Peter & Bridge Base Online - Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|fp|1|at|^y Vanyvon|
+ht|e|fp|1|
+at|Peter Brennan: The purpose of this course is to acquaint you with some useful tools when you declare a hand. Hopefully, by seeing a number of examples in random order you'll recognize these situations when they pop up in your game.  
+
+Each hand features a common challenge of some sort:  dealing with bad suit breaks, handling tricky entry situations, making inferences from the bidding or play, counting enemy distribution and/or points, when to draw trumps, basic end plays, etc.
+
+These hands should be played using IMP or rubber bridge tactics.  Don't even think of risking the contract to make a measly overtrick or two.
+
+
+
+|
+pg| ***** 1 ***** |
+
+
+%% ---------------------------
+
+
+qx|B01,BOARD 1|
+rh||ah|Board 1|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|1SKQJ95HA93D5CQ764,ST4HKQT7D9863CA98,SA8732HJ5DAK2CJ52,S6H8642DQJT74CKT3|mb|1S|mb|p|mb|2N|an|G.F. 4+!s, no sing. or void|mb|p|mb|3D|an|Sing. or void|mb|p|mb|4S|mb|p|mb|p|mb|p|pc|HK|sk|s|%small text set kibbing South|nt|You have 1 sure @h loser. If you play @c there may be 3 losers in the suit unless you get lucky (@cAK in one hand or a defender has @cHx). Can you avoid losing 4 tricks?  Good luck!|
+pg| ***** 2 ***** |
+
+
+at|
+This hand is similar to one we played several weeks ago.  There too the @cs were "frozen", meaning whoever leads the suit loses a trick. So our plan must be to force the opponents to help us. In short, we ENDPLAY them.|
+pg| ***** 3 ***** |
+
+
+at|
+Often it's right to holdup the @hA with these cards, but not here. We'll need the @hJ to throw an opp (presumably West) into the lead after we've removed all safe exit cards.|
+pg| ***** 4 ***** |
+
+
+at|
+Draw trump and cash the @dAK.|
+pg| ***** 5 ***** |
+
+
+pc|h5|pc|h2|pc|hA|
+pg| ***** 6 ***** |
+
+
+pc|sK|pc|s4|pc|s2|pc|s6|
+pg| ***** 7 ***** |
+
+
+pc|sQ|pc|sT|pc|s3|pc|d7|
+pg| ***** 8 ***** |
+
+
+pc|d5|pc|d3|pc|dA|pc|dT|
+pg| ***** 9 ***** |
+
+
+at|
+On the @dK South should throw...what?|
+pc|dK|pc|dJ|
+pg| ***** 10 ***** |
+
+
+at| Yes, a low @h.  Ruff the last @d and exit with a @h.|
+pc|h3|pc|d4|
+pg| ***** 11 ***** |
+
+
+  
+pc|d2|pc|dQ|pc|s9|pc|d6|
+pg| ***** 12 ***** |
+
+
+pc|h9|pc|hQ|pc|hJ|pc|h4|nt|The defense can cash 2 @c tricks but that's all.  Our contract is safe.|sk||
+pg| ***** 13 ***** |
+
+
+pc|cA|pc|c2|pc|c3|pc|c4|
+pg| ***** 14 ***** |
+
+
+pc|c8|pc|c5|pc|c9|pc|cQ|
+pg| ***** 15 ***** |
+
+
+mc|10|sc|y|at|
+Here's the lesson text:  Declarer may lose a @h and 3 @c tricks if he has to play @c himself.  How about an ENDPLAY instead?  Win the opening lead, draw trumps and eliminate @d, pitching a @h from hand on the second @d.  Lead your losing @h and enjoy either a @c lead or a ruff - sluff.|
+pg| ***** 16 ***** |
+
+
+qx|B02,BOARD 2|
+rh||ah|Board 2|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|2HAQ9732DJT542C43,S86H5D963CAJT9765,SAKT942HJ84DQCQ82,SQJ753HKT6DAK87CK|mb|3C|mb|3S|mb|d|mb|4d|mb|d|mb|p|mb|p|mb|4H|mb|p|mb|p|mb|d|mb|p|mb|p|mb|p|mb|-|mb|-|sk|S|sc||PC|CA|nt|The opps lead the top @c and continue the suit...|
+pg| ***** 17 ***** |
+
+
+pc|C2|pc|CK|pc|C3|
+pg| ***** 18 ***** |
+
+
+pc|CJ|pc|CQ|pc|H6|pc|C4|
+pg| ***** 19 ***** |
+
+
+pc|HT|nt|Assuming West doesn't have the @hK because of his preempt, you have 8 tricks, 6 @h and 2 @s.  The good news is you only have 3 losers on top, 2 @cs and a @d. You may be able to ruff two @ds in dummy or possibly set up extra @s or @d tricks.  Good luck!|
+pg| ***** 20 ***** |
+
+
+pc|H2|pc|H5|pc|HJ|at|
+When East returns the @h10 at trick 3, it should be obvious we won't be able to ruff two @ds.  East is marked with the @dAK so it would be wrong to play @d at this point.  He'll win our @dQ and exit with the @hK leaving us a trick short.|
+pg| ***** 21 ***** |
+
+
+at|
+Let's think about East's hand. We know he began with 1 @c and 3 @hs so he has 9 cards in the "pointed" suits (@s - @d).  If East got in and had to lead either @d or @s we'd be in good shape.|
+pg| ***** 22 ***** |
+
+
+nt|So, before we play @d we'll "strip" East of his safe exit card, the @hK.  That done, we plan to then lead the @d.|
+pg| ***** 23 ***** |
+
+
+at|
+Even though this looks a little different, it's still a form of the ELIMINATION AND THROW-IN endplay we've seen before.  We put East in the lead when he's forced to make a helpful lead for us.|
+pg| ***** 24 ***** |
+
+
+pc|H4|pc|HK|pc|HA|pc|C5|
+pg| ***** 25 ***** |
+
+
+pc|D2|pc|D3|pc|DQ|pc|DK|
+pg| ***** 26 ***** |
+
+
+at|
+Now if he leads a low @d...|pc|d7|
+pg| ***** 27 ***** |
+
+
+at|
+...we put up the @dJ which wins. We can ruff one @d and throw our remaining @d on the @sAK.|
+pc|dJdc|
+pg| ***** 28 ***** |
+
+
+pc|ddhd|hc|SAKDT5|
+pg| ***** 29 ***** |
+
+
+at|
+However, if he leads a @s honor...|lc|sAKdT5|up|8|pc|SQ|
+pg| ***** 30 ***** |
+
+
+at|
+...we win on the board and cash the @sA.  East's first double of partner's 3@s bid indicates the @s are likely 2 - 5 so the ruffing finesse is our best bet here.|pc|D4|pc|S6|pc|SK|
+pg| ***** 31 ***** |
+
+
+pc|SA|pc|S5|pc|DT|pc|C6|
+pg| ***** 32 ***** |
+
+
+pc|ST|pc|SJ|pc|H3|pc|S8|
+pg| ***** 33 ***** |
+
+
+pc|DJdhd|
+pg| ***** 34 ***** |
+
+
+pc|S9sdd|
+pg| ***** 35 ***** |
+
+
+mc|10|sk||sc|y|nt|Here's the lesson text:  Sometimes an ENDPLAY can come relatively early in the hand.  After trick 3 it is obvious we won't be able to ruff two losing @d in dummy.  But think of East's hand - nine @s and @d.  Strip his exit card, the @HK, then play a @d.  East will have to lead away from the @dA or into dummy's @s tenace.|
+pg| ***** 36 ***** |
+
+
+qx|B03,BOARD 3|
+rh||ah|Board 3|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st|s|md|3SA72HA87DK62CA843,SJ6HQ942DA4CKJ972,SKQ5H653DQJ73CQ65,ST9843HKJTDT985CT|mb|p|mb|p|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|pc|C7|sk|s|sc||nt|NT contracts are more difficult when you don't have a 5+ card suit to set up.  In this hand, you have only 4 tricks in the major suits, so you'll need 5 tricks in @d and @c to make 3NT.  Good luck! |
+pg| ***** 37 ***** |
+
+
+at|
+What are we to make of the opening lead?  Since we can see dummy's @c65, the @c7 is not the top if an interior sequence.  We can assume it's a standard 4th best lead. (Both in "live" bridge and BBO, it's correct to either look at opps convention card or ask about leads.)|
+pg| ***** 38 ***** |
+
+
+at|
+One of the first things we learn in bridge is the Rule of 11.  It tells us the other 3 hands have exactly 4 cards that beat the @c7.  We can see 3 of them (@cA, Q, 8).  So East has one card higher than the @c7.|
+pg| ***** 39 ***** |
+
+
+nt|It can't be the @cK!  With @cJ1097(x) West would have led the @cJ.  So we know the @cQ will be a winner.  It's important to know when we will take it.  In other words, should we hold up our @cQ or take it right away?|
+pg| ***** 40 ***** |
+
+
+at|
+We MUST play the @cQ on trick 1.  If we don't win this trick, a @h shift will set up too many tricks for the defense, 3 @hs (if @hs are 4 - 3), @dA and a @c.    Does everyone understand this so far?|
+pg| ***** 41 ***** |
+
+
+at|
+Even if we win the first trick with the @cA we can be defeated.  We need the @cA later in the play as an entry to our hand.|
+pg| ***** 42 ***** |
+
+
+at|
+With 2 @c tricks accounted for we need to score 3 @d tricks to make 3NT.  If we're lucky and @ds split 3 - 3 (36%), it doesn't matter how we play the suit.  Anything works.|
+pg| ***** 43 ***** |
+
+
+at| But we've learned both life and bridge seldom go so smoothly.  What's the correct way to play this @d combination to maximize the chance of making 3 tricks?|
+pg| ***** 44 ***** |
+
+
+nt|We should plan to lead @d twice from our hand towards the board's QJ.  This won't help if either opponent started with @dA10xx.  But it wins whenever West has @dA either single or doubleton.  This simple maneuver increases our chances for 3 @d tricks to 45%.|
+pg| ***** 45 ***** |
+
+
+pc|cQ|pc|cT|pc|c3|
+pg| ***** 46 ***** |
+
+
+pc|s5|pc|s3|pc|sA|pc|s6|
+pg| ***** 47 ***** |
+
+
+at|
+That went well!  Now how do we return to our hand to lead a second @d?  Our first thought is a @h because it seems wrong to release our @c stopper.  But leaving ourself open in @h could set up 4 defensive tricks if @hs break 5 - 2.|
+pc|d2|pc|d4|pc|dJ|pc|d8|
+pg| ***** 48 ***** |
+
+
+at|
+We don't know how the @hs are distributed.  But, even if @cs split 5 - 1, West can only cash 3 @c tricks after winning his (theoretical) @dA.  So we can safely return to hand with the @cA.|
+pg| ***** 49 ***** |
+
+
+pc|c5|pc|s4|pc|cA|pc|c2|
+pg| ***** 50 ***** |
+
+
+pc|d6|pc|dA|pc|d3|pc|d5|
+pg| ***** 51 ***** |
+
+
+pc|cK|pc|c6|pc|s8|pc|c4|
+pg| ***** 52 ***** |
+
+
+pc|cJ|pc|h3|pc|s9|pc|c8|
+pg| ***** 53 ***** |
+
+
+pc|c9|pc|h6|pc|sT|pc|h7|
+pg| ***** 54 ***** |
+
+
+pc|sJ|pc|sQ|pc|d9|pc|s2|
+pg| ***** 55 ***** |
+
+
+pc|d7|pc|dT|pc|dK|pc|h2|
+pg| ***** 56 ***** |
+
+
+pc|hA|pc|h4|pc|h9|pc|hT|
+pg| ***** 57 ***** |
+
+
+pc|s7|pc|h5|pc|sK|pc|hJ|
+pg| ***** 58 ***** |
+
+
+mc|9|sk||sc|y|nt|Here's the lesson text:  There are several hurdles to cross to make this contract.  From the Rule of 11 and West's failure to lead the @cJ we know the @cQ will win the first trick.  With 2 @c tricks, we'll need three @ds to make the contract.  We should lead @d twice from our hand towards the @dQJ.  To reenter our hand for the 2nd @d lead we should use the @cA not the hA.|
+pg| ***** 59 ***** |
+
+
+qx|B04,BOARD 4|
+rh||ah|Board 4|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|1SQJT965H7DJT653C7,S8742HKJ982DKCK94,SAH653DAQ42CAQ865,SK3HAQT4D987CJT32|mb|3Sp4Sppp|pc|DK|sk|S|sc||nt|Wotta lead! It sure seems @ds are NOT 2 - 2!  That's bad news because the defense might score 2 @d ruffs plus the @hA and @sK.  Can you save this contract if the defense has the worst distribution imaginable?  Good luck!|
+pg| ***** 60 ***** |
+
+
+at|
+So we capture the @dK with the Ace and cash the @sA.  Good thing @ds were not 4 - 0 but the lead of the unsupported @dK suggests a 1 - 3 break.  We can afford to let the defense score one @d ruff, but not two.|
+pg| ***** 61 ***** |
+
+
+pc|DA|pc|D7|pc|D3|
+pg| ***** 62 ***** |
+
+
+pc|SA|pc|S3|pc|S5|pc|S4|
+pg| ***** 63 ***** |
+
+
+at|
+Missing the @sK means we are unable to draw all the trumps before losing the lead.|
+pg| ***** 64 ***** |
+
+
+at|
+If we had a quick entry to our hand we could try the @c finesse.  If the @cQ wins we could throw our losing @h on the @cA.  Of course if East produced the @cK he'd give West a @d ruff and we'd never make 4 @s.|
+pg| ***** 65 ***** |
+
+
+nt|Although we don't have that entry we need to take the @c finesse, there is an extra chance to play for in case the worst possible distribution exists - the hand with 3 @d has both the @hA and @sK.|
+pg| ***** 66 ***** |
+
+
+at|
+Cash the @cA.|pc|CA|pc|C3|pc|C7|pc|C4|
+pg| ***** 67 ***** |
+
+
+at| At trick 4 we lead the...|
+pg| ***** 68 ***** |
+
+
+pc|CQ|
+pg| ***** 69 ***** |
+
+
+at| ...if East does not cover we play the...|pc|C2|pc|H7|pc|CK|
+pg| ***** 70 ***** |
+
+
+at|
+The reason is simple - West is the "safe" hand because he can't give himself a @d ruff.  So our plan must be to keep East off lead, if possible.|
+pg| ***** 71 ***** |
+
+
+at|
+We exchanged our sure @h loser for the @cQ, so we didn't gain a trick or lose one either.  But we did gain a lot from the exchange!  We cut the defender's line of communication in @h.  This is another example of the SCISSORS COUP.|
+pg| ***** 72 ***** |
+
+
+nt|Of course, if East plays the @cK on our @cQ we'll ruff and hope the hand that started with 3 @d doesn't have the entries needed for 2 @d ruffs or that trump splits 3 - 3.|
+pg| ***** 73 ***** |
+
+
+at|
+BTW, if it turns out West led the @dK from Kxx congratulate him for his brilliant lead and ask if he's looking for a partner!|
+pg| ***** 74 ***** |
+
+
+at|
+West tries to reach his partner for a @d ruff by leading a @h.  We're able to ruff in to prevent East from gaining the lead.|
+pc|H2|pc|H3|pc|HA|pc|S6|
+pg| ***** 75 ***** |
+
+
+pc|SQ|pc|S2|pc|C5|pc|SK|
+pg| ***** 76 ***** |
+
+
+pc|D9|pc|D5|pc|S7|pc|D2|at|
+We can't prevent East winning the @sK and giving pard a @d ruff but that's the last trick for the defense.  We make 5 @ss, 4 @ds and the @cA.|
+pg| ***** 77 ***** |
+
+
+pc|C9|pc|C6|pc|CT|pc|S9|
+pg| ***** 78 ***** |
+
+
+mc|10|sk||sc|y|nt|Here's the lesson text:  Declarer sees two sure losers,  the @sK and @hA.  However, if @ds are 3 - 1, there's the possibility of two @d ruffs if the hand with 3 @ds has the major suits entries.  If West has the @cK, declarer can execute a SCISSORS COUP by leading the @cQ and pitching his singleton @h.|
+pg| ***** 79 ***** |
+
+
+qx|B05,BOARD 5|
+rh||ah|Board 5|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|1SAJTHA82DK54CQT32,SKQ973HT64D82C985,S85HKQ3DQJ93CAJ74,S642HJ975DAT76CK6|mb|-|mb|-|mb|-|mb|1C|mb|p|mb|1D|mb|p|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|pc|SK|sk|S|sc||nt|Your top tricks are 1 @s, 3 @hs and 1 @c.  The @sJ10 and those @d and @c honors should produce at least 4 more tricks.  Play carefully and bring this contract home.  Good luck!|
+pg| ***** 80 ***** |
+
+
+at|
+The suit that can sink our contract is @s.  Neither a 6 - 2 nor a 4 - 4 break will harm us.  It's the 5 - 3 split we must guard against.|
+pg| ***** 81 ***** |
+
+
+at|
+If @ss are 6 - 2, we'll be sure to knock out the @dA first because it's West's only possible entry.  Later, if East gets in with the @cK he won't have a @s left to get to West's hand.|
+pg| ***** 82 ***** |
+
+
+at|
+If @ss are 4 - 4, we'll only lose 2 @s tricks.  The defense can make the @dA and the @cK and we'll have 9 tricks.  Do you all understand this?|
+pg| ***** 83 ***** |
+
+
+nt|So, how do we protect 3NT if @ss are 5 - 3?  As mentioned earlier we must go after @d before @c.|
+pg| ***** 84 ***** |
+
+
+at|
+We just played a hand with a similar @d holding and the recommended play was to lead twice from the closed hand towards the @dQJ on the table. We gained a trick when West had @dAx. What is good technique in one hand is not necessarily correct for another.  Such is the case here.|
+pg| ***** 85 ***** |
+
+
+at|
+If West held @sKQxxx and either the @dA or the @cK it's likely he'd have overcalled 1@s even at unfavorable vulnerability so we can assume East has both those valuable cards.  (Later, I'll play a variation where West has the @dA.)|
+pg| ***** 86 ***** |
+
+
+at|
+If that's the case, and @ss are 5 - 3, it appears our contract is doomed.|
+pg| ***** 87 ***** |
+
+
+nt|When East wins the @dA, back will come a @s which West will duck so East still has 1 @s left.  Upon winning the @cK, he'll lead that @s and West will take 3 @s tricks and we'll be down 1.  :(  Any questions up to now?|
+pg| ***** 88 ***** |
+
+
+at| 
+But all is not lost.  Win the first trick and lead a small @h to dummy's @hK.|
+pg| ***** 89 ***** |
+
+
+pc|S5|pc|S2|pc|SA|
+pg| ***** 90 ***** |
+
+
+at|
+From the board lead the...|
+pc|H2|pc|H4|pc|HQ|pc|H5|
+pg| ***** 91 ***** |
+
+
+at| ...@d3 planning to put up the @dK if the @dA isn't played.  If East hops up with the @dA and leads a 2nd @s we have the next 9 tricks, 2 @ss, 3 @hs, 3 @ds and the @cA.  No @c finesse is needed.  Do you all agree so far?|
+pg| ***** 92 ***** |
+
+
+at|
+When the @dK holds we abandon @d and switch to a @c.  With great intermediates we'll score 3 easy @cs - 2 @ss, 3 @hs, 1 @d and 3 @cs give us 9 tricks.|pc|D3|pc|D7|pc|DK|pc|D2|
+pg| ***** 93 ***** |
+
+
+ 
+pc|C2|pc|C5|pc|CA|pc|C6|
+pg| ***** 94 ***** |
+
+
+pc|C4|pc|CK|pc|C3|pc|C8|
+pg| ***** 95 ***** |
+
+
+pc|S6|pc|SJ|pc|S3|pc|S8|
+pg| ***** 96 ***** |
+
+
+pc|CQ|pc|C9|pc|C7|pc|DT|
+pg| ***** 97 ***** |
+
+
+pc|CT|pc|H6|pc|CJ|pc|H7|
+pg| ***** 98 ***** |
+
+
+pc|HK|pc|H9|pc|H8|pc|HT|
+pg| ***** 99 ***** |
+
+
+pc|H3|pc|HJ|pc|HA|pc|D8|
+pg| ***** 100 ***** |
+
+
+mc|9|sk||sc|y|
+pg| ***** 101 ***** |
+
+
+nt|You may have noticed this hand would make if we used the RULE OF SEVEN and planned to duck two @ss.|up|37|sc||
+pg| ***** 102 ***** |
+
+
+pc|ST|at|
+Of course, West would switch after trick 1 because our first duck resulted in the venerable BATH COUP.|
+pg| ***** 103 ***** |
+
+
+at|
+West should switch to a @c. We rise with the @cA (can't let East have the lead to play a @s) and play the @d3 as before.  When the @dK wins, once again we knock out the @cK.|
+pg| ***** 104 ***** |
+
+
+PC|ccAcc|
+pg| ***** 105 ***** |
+
+
+PC|dddKd|
+pg| ***** 106 ***** |
+
+
+PC|cccJcK|
+pg| ***** 107 ***** |
+
+
+at|
+When East returns a @s, we play the @sJ.  West must win this trick. The best he can do is set up his suit even though he has no entries to get in and cash the long @ss.  And the 3rd @s lead exhausts East's @ss.|
+pg| ***** 108 ***** |
+
+
+PC|SSJSQd|
+pg| ***** 109 ***** |
+
+
+PC|sdhSA|
+pg| ***** 110 ***** |
+
+
+at|
+Now we'll need an extra @d trick.  Luckily, East has the @dA so we make 1 @s, 3 @hs, 2 @ds and 3 @cs.|
+pg| ***** 111 ***** |
+
+
+nt|The lesson text:  Because @ss split 5 - 3 and East has both the @dA and @cK, the Rule of 7 play, ducking two rounds of @ss, works here.  But a better chance is to assume East has the @dA.  Lead a small @d to our @dK.  If it wins, switch to a @c to develop 3 tricks so we take 2 @ss, 3 @hs, 1 @d and 3 @cs for our 9 tricks.|
+pg| ***** 112 ***** |
+
+
+nt|Now let's play a variation where we give West the @DA.|
+md|0,dA,,D8|up|21|sc||
+pg| ***** 113 ***** |
+
+
+at|
+As you see, West now has the @dA as an entry to his long @s so both lines of play we looked at before could well fail here.  But, like the last hand, the better chance is to play East for the @dA.  So we...|
+pg| ***** 114 ***** |
+
+
+at|
+play as earlier...|
+pc|sA|
+pg| ***** 115 ***** |
+
+
+pc|h2|pc|h4|pc|hQ|pc|h7|
+pg| ***** 116 ***** |
+
+
+pc|d3|pc|d8|pc|dK|pc|dA|
+pg| ***** 117 ***** |
+
+
+at|
+West wins the @dA - leads low spade|
+pg| ***** 118 ***** |
+
+
+pc|s3|pc|s8|pc|s4|pc|sT|
+pg| ***** 119 ***** |
+
+
+at|
+Now it's too dangerous to try the @c finesse.  East will win and shoot back his 3rd @s and down we go.  Instead we must hope @ds are 3 - 3 or an opp has the doubleton @d10x.|
+pg| ***** 120 ***** |
+
+
+nt|There's another chance also.  Since West didn't overcall with @sKQxxx (we assume that's the situation since it is the only "dangerous" distribution) and the @dA, we "know" with some assurance East must have the @cK.  All agree?|
+pg| ***** 121 ***** |
+
+
+at|
+If East started with 4 or 5 @ds with the 10, he will come under pressure in the endgame while trying to protect his @d and @c holding.  In other words, East will be SQUEEZED.|
+pg| ***** 122 ***** |
+
+
+at|
+Now I don't want to scare anyone but what follows gets pretty technical.  If you're just starting with bridge don't worry about squeeze plays.  Get a drink of water, read the paper, etc.|
+pg| ***** 123 ***** |
+
+
+at|
+My friend, Athene (Bill Frisby), has taught a wonderful course called "Squeezes Are Simple" here in the BIL.  Hopefully, he'll repeat it soon.|
+pg| ***** 124 ***** |
+
+
+nt|The correct way to give us all the chances is to play for the squeeze.  If @ds are 3 - 3 or the 10 falls doubleton now it will be the same situation later in the play.|
+pg| ***** 125 ***** |
+
+
+at|
+To set the stage for the squeeze we must lose some tricks.  This process is called RECTIFYING the COUNT.  It removes spare cards that can be used later as "safe discards" from the victim of our play.
+So at trick 5 we lead the...|
+pg| ***** 126 ***** |
+
+
+at|
+We give West his @s tricks now. As long as he started with 5 @ss he can only cash 3 tricks and he MUST take them now or lose them.|
+pc|sJ|pc|sQ|pc|c4|pc|s6|
+pg| ***** 127 ***** |
+
+
+at|
+Declarer and dummy can both pitch @cs on the @s run; East lets go 2 @hs.|
+pc|s9|pc|c7|pc|h5|pc|c2|
+pg| ***** 128 ***** |
+
+
+pc|s7|pc|cJ|pc|h9|pc|c3|
+pg| ***** 129 ***** |
+
+
+nt|West realizes declarer has the @hA for his opening bid, but his partner must have the @d10.  If declarer had it he'd claim the rest of the tricks. So he exits with a @d.|
+pc|ddQdd|
+pg| ***** 130 ***** |
+
+
+at|
+Actually, it makes no difference with which card West exits,  the results will be the same.  We planned to play a @d honor anyway to see if the @d10 dropped.   Note there is only the @d10 and a small one still out.|
+pg| ***** 131 ***** |
+
+
+at|
+There's one more step in preparation for the squeeze.  We must unblock the @cA.  The threat East must guard against is South's @cQ.  If we fail to cash the @cA we'll have no entry to our hand to cash the @cQ after East is squeezed.|
+pg| ***** 132 ***** |
+
+
+at|
+This unblocking maneuver has been known for hundreds of years in Whist as the VIENNA COUP.|
+pg| ***** 133 ***** |
+
+
+pc|cAccc|
+pg| ***** 134 ***** |
+
+
+pc|HKhhh|
+pg| ***** 135 ***** |
+
+
+at| On the 2nd @h East has no safe discard.  If he throws the @cK..., our @cQ is our 9th trick.|
+pc|h|
+pg| ***** 136 ***** |
+
+
+at| or the low @d..., then it sets-up a 2nd @d trick. |
+pg| ***** 137 ***** |
+
+
+mc|9|sc|y|nt|Here's the lesson text:  When West, silent throughout the auction, produces the @dA we know the @c finesse will surely fail.  We hope @ds split 3 - 3 or the @d10 is doubleton.  If East has the guarded @d10 and the @cK he'll be SQUEEZED in the minor suits.|
+pg| ***** 138 ***** |
+
+
+%% ---------- FINAL NOTES ----------
+qx|Final notes|
+bt||pf||nt||cs|1|cp|2|fp|4|
+at|
+^-{ Final notes }
+^-|
+ht|h|cp||fp|2|at|   @2Thanks, all.  Looking forward to see you all at the next lesson on winning techniques in declarer play. :)|
+ht|z|at|
+
+(c)Peter & Bridge Base Online - Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|fp|1|at|^y Vanyvon|
+pg| ***** 139 ***** |
+
+
+%% --- End Final notes ---
+
+%% --- Help ---
+qx|Help, Help notes|
+bt||pf||nt||cs|2|fp|3|ht|b|at|^-{ Help }
+^-|
+hb|z|wb|b|bm|BIL.bmp|
+fp|2|ht|e|at|^b@2
+Short instruction on how to navigate through the movie:
+
+ ^$6  Previous page, go back one page.
+ ^$40  Next page, go forward one page.
+ ^$7  Previous chapter (the first page of the previous chapter).
+ ^$41  Next chapter (the first page of the next chapter).
+ ^$119  The first page of this movie. Once a trick is complete, click on the first card of the next trick. |
+%% --- End Help ---
+
+%% EOF

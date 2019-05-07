@@ -1,0 +1,53 @@
+%% Make Book - How to
+%% Last edited  2013 Dec 03
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|150|ff|1Arial|fb|19|fm|1|       1 large
+fh|236|ff|2Arial|fb|29|fm|2|       2 med
+fh|342|ff|3Arial|fb|39|fm|3|       2 med+
+fh|664|ff|6Arial|fb|69|fm|6|       6 v large
+fh|925|ff|9Arial|fb|99|fm|9|       very small for faking 'buttons'
+
+cr|3200|cg|3255|cb|3255|     3  light blue
+cr|4170|cg|4190|cb|4255|     4  med blue
+cr|516|cg|5128|cb|516|       5  green 
+cr|7230|cg|70|cb|70|         7  red
+
+bt||
+fp|1|at|
+
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp|9|
+mn|   How to   -   Write a Lin file   |
+qx|Book|
+ht|d|
+at|^^|fp||at|
+^b@2The topics covered are all visible in the chapter headings column (click-able), the tall grey area  ^*bon  your  left^*n.
+|n^|5|at|
+   In summary they are -
+
+^d@2
+@.   Collect your material
+
+
+@.   Write the lin file.  A single lin file is also called a 'chapter'. Having only one chapter is fine
+
+
+@.   Test the lin file as you write it
+
+
+@.   Possibly build up a number of lin files (chapters) in a folder to form a 'book'
+
+
+@.   (Optionally)  Zip your chapters into a ^*bzip^*n file  and rename it to  end in  .linzip  
+
+	
+@.   Send it to people.    :)
+
+
+
+
+^b@2Click the     ^*bFlow >^*n     button below to open the next chapter.        |cp|5|at|^*iPlease do this at the end of all pages^*n|cp||at|
+|
+ht|z|at|@0
+^r Roger Pfister   -   December 2013|

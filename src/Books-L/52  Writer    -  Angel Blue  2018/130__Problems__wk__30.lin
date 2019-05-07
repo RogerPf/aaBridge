@@ -1,0 +1,466 @@
+%%
+%%
+
+ss|chapter,Declarer  Play                 Problems  Week  30 |
+
+ss|movie-maker,GG_Bridge|
+%%Tourney Date - 2018-06-11%%
+%%
+%%  Date last Edited    2018-04-26          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead_2018.ins
+%%
+ss|masthead,Angel Blue                                                     2018 |
+%%
+cr|m205|cg|m125|cb|m205|   fill   m  m-mastColor       dull bluey pink
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    std
+%%
+<<--INSERT-END**-->>=01___FP_masthead_2018.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s29|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=03___FP_gen_arik_intro.ins
+%%
+Lg|f|n^|6|
+fp|4|at|^c@2^z@3|
+at|Arik, BBO ID 'Angel Blue', runs a weekly card play tournament and lesson in the  ^*h http://iac.pigpen.org.uk/,IAC^*n  club on  ^*h http://bridgebaseonline.com/,BBO^*n.  The focus is on  difficult to play  hands.  He has kindly allowed his problems to appear here in aaBridge lin file format.
+|n^|9|at|
+Do visit Angel Blue's bridge web site at ^*h http://angelblue.co.il/^*n|
+%%
+<<--INSERT-END**-->>=03___FP_gen_arik_intro.ins
+
+
+<<--INSERT-START-->>=03___FP_general_2018.ins
+%%
+ht|n|n^|0|at|@1^z  @3^b   {^^^^^^^^^^^^^^ ^z } |
+at|^c@2^z@3^^|
+%%
+ht|n|n#|7|at|All the hands for each lesson are given in a single .lin file.   Each deal has a summary and a few have a link to the full answer text on Angel Blue's website.  Before consulting it we suggest that:-|
+n#|7|at|^^^*bIF^*n after clicking  { ^*b 1st ^*n }  you cannot work out how to play the hand THEN click on the ^*b DDS  { is Off/On ^*n }  button.   This will show little green 'trick total' numbers by each of your cards.   Click on, and so play, any card that is marked with a light green oval.   This will show you the best lines of play.|
+n#|5|at|^^Your task is to solve the hand and if possible to categorize it as to being a  throw-in, squeeze or whatever.|
+%%
+%%
+ss|play-it-out,at`^^^d`cp`red`at`^*bNow `cp``at`  click  { ^*b 1st ^*n }  `cp`red`at`^*band play out the hand.^*n`cp``at`     ^*b Flow ^*n  will show the hands and end the problem.^^^^^n If you get stuck  -  use the ^*b DDS  {  is Off/On ^*n }  button.`|
+%%
+<<--INSERT-END**-->>=03___FP_general_2018.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|a|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|5|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|c|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+qx|30|
+pg| ***** 0 ***** |
+
+
+st||
+---------------------------------------------------------------------------
+qx|1,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 30.1|
+md|4sAKThAK743d65cKJT,sQ842hQT8dKQTc653,sJ63h9652d874cAQ7,s975hJdAJ932c9842|
+%
+bh|Play, E, d9, bad, p3,      T1, always|
+bh|Play, E, dU  bad, p3,      T2, always|
+bh|Play, W, sL  res, on-lead, T8-12, always|
+%
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 30.1^*n     The hand,|
+pg| ***** 1 ***** |
+
+
+at|      the bidding,|
+mb|p|mb|1H|mb|p|mb|2H|mb|p|mb|4H|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+at|      the lead,|
+pc|dK|
+pg| ***** 3 ***** |
+
+
+eb|y___|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 4 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 5 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n 
+|n#|3|at|Declarer counts 4 possible losers, 2 certain in @ds, possibly a @s and @H loser.  If trumps are 2/2 or the @s finesse works, you will succeed.  You play 2 rounds of @H's and RHO shows out on the second round.  You could finesse RHO for the @sQueen, but a better solution is to play out the @cs and throw LHO in with the last trump - win whatever they return -- success.
+| 
+pf|all-res-lifted| 
+pg| ***** 6 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 7 ***** |
+
+
+---------------------------------------------------------------------------
+qx|2,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 30.2|
+md|4sAQ432h4dA82cAJ98,s9865hJd9765c6532,sKJT7hA86dKJ4cKQT,hKQT97532dQT3c74|
+%
+bh|Play, W, sU, res, p2, T2-9, cond, Rnds S=1 Won=1|
+%
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 30.2^*n     The hand,|
+pg| ***** 8 ***** |
+
+
+at|      the bidding,|
+mb|4H|mb|4S|mb|p|mb|4N|mb|p|mb|5D|mb|p|mb|5H|mb|p|mb|5N|mb|p|mb|7S|mb|p|mb|p|mb|p|
+pg| ***** 9 ***** |
+
+
+at|      the lead,|
+pc|hJ|
+pg| ***** 10 ***** |
+
+
+eb|y___|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 11 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 12 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|7|
+Lg|b|
+at|^b^*bSummary^*n 
+|n#|3|at|If North is the master hand, you have 11 top winners and 2 @hs that can be ruffed in South.  Since RHO bid 4@h, the @hJack is likely a singleton, so win the @hAce and Ruff the 2nd @h high in hand. When next you play a low trump to the @sKing -- discovering the 4/0 trump split  -- you ruff the last @h high, and finesse LHO for the rest of the trump. Finally, you discard a losing @d on a @c.
+| 
+pf|all-res-lifted| 
+pg| ***** 13 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 14 ***** |
+
+
+---------------------------------------------------------------------------
+qx|3,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 30.3|
+md|1sJT5h6dAKQT53cAK6,s9742hQ532d87c843,sAQ6h874dJ94cJ752,sK83hAKJT9d62cQT9|
+%
+bh|Play, E, hU, res, p3, T1, always|
+bh|Play, E, hU, res, on-lead, T2, always|
+%
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 30.3^*n     The hand,|
+pg| ***** 15 ***** |
+
+
+at|      the bidding,|
+mb|1D|mb|p|mb|1N|mb|2H|mb|4D|mb|p|mb|5D|mb|p|mb|p|mb|p|
+pg| ***** 16 ***** |
+
+
+at|      the lead,|
+pc|h2|
+pg| ***** 17 ***** |
+
+
+eb|y___|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 18 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 19 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n 
+|n#|3|at|With 9 top tricks (10 if you count the 2nd @s) you have chances for others in the @s finesse, the @c Queen dropping or the @cs splitting 3-3.  If on the bidding you put the @sK and @cQ with RHO and get a 2-2 trump split.  You can strip the @hs, draw trumps and play of three round of @cs expecting RHO to win the third with her Queen and not have a 4th.  This way you create an extra chance by engineering the throw-in.| 
+pf|all-res-lifted| 
+pg| ***** 20 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 21 ***** |
+
+
+---------------------------------------------------------------------------
+qx|4,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 30.4|
+md|4sAJ753hKT9d83cAT2,sK2hQ63dQJT5cK976,sQT964hAJ84dK94cJ,s8h752dA762cQ8543|
+%
+bh|Play, W, dU, res, on-lead, T2, always|
+%
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 30.4^*n     The hand,|
+pg| ***** 22 ***** |
+
+
+at|      the bidding,|
+mb|p|mb|1S|mb|p|mb|3S|mb|p|mb|4S|mb|p|mb|p|mb|p|
+pg| ***** 23 ***** |
+
+
+at|      the lead,|
+pc|dQ|
+pg| ***** 24 ***** |
+
+
+eb|y___|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 25 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 26 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n 
+|n#|3|at|2 @d losers and a possible trump loser, with a double finesse available in @hs.  You could finesse the @sK, but it would 50/50 at best.  A better way is to eliminate the @c's by ruffing them in dummy and throwing either Opp in with the trump - whoever wins it is endplayed, forced to play on @hs or give a ruff and sluff.
+| 
+pf|all-res-lifted| 
+pg| ***** 27 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 28 ***** |
+
+
+---------------------------------------------------------------------------
+qx|5,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 30.5|
+md|2sQ98752hAQ8dQ6cK3,sT4h763dAK52cA864,sAJ63hKJT52d94cQJ,sKh94dJT873cT9752|
+sv|-|sk|S|
+%
+bh|Play, W, cL, res, on-lead, T4, always|
+%
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 30.5^*n     The hand,|
+pg| ***** 29 ***** |
+
+
+at|      the bidding,|
+mb|p|mb|1H|mb|p|mb|1S|mb|p|mb|2S|mb|p|mb|4S|mb|p|mb|p|mb|p|
+pg| ***** 30 ***** |
+
+
+at|      the lead,|
+pc|dK|
+pg| ***** 31 ***** |
+
+
+eb|y___|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 32 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 33 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n 
+|n#|3|at|Opps will quickly take their 3 top tricks @-  2 @ds and 1 @c, leaving you the possible @sK loser.  Should you finesse LHO for the @sK ?  Often, your clue lies in what an Opp didn't do.  LHO has already shown 11 hcp and surely would have opened the bidding if he also held the @sK.   Therefore, you must play for RHO to hold the @sK singleton (25% chance), as that is your only hope for success.
+| 
+pf|all-res-lifted| 
+pg| ***** 34 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 35 ***** |
+
+
+---------------------------------------------------------------------------
+qx|6,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 30.6|
+md|1sA96hT7dAK63cAK42,sQT852h643dJT2cQT,sKJ3hQJ985d74c653,s74hAK2dQ985cJ987|
+%
+bh!Play, LHO, sL, res, on-lead, T2-3, always!
+%
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 30.6^*n     The hand,|
+pg| ***** 36 ***** |
+
+
+at|      the bidding,|
+mb|1D|mb|p|mb|1H|mb|p|mb|2N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 37 ***** |
+
+
+at|      the lead,|
+pc|s5|
+pg| ***** 38 ***** |
+
+
+eb|y___|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 39 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 40 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n 
+|n#|3|at|Taking the lead as 4th highest @s you know RHO has only 1 card higher than it (the @s5).  So once she plays you will win the trick and can later take the now marked @s finesse against LHO for the two @s entries you will need in order to enjoy the @hs.    BUT did you fall into the trap ?   To create the needed 2 @s entries you must unblock the @sAce at trick one whatever lowly card RHO produces.
+| 
+pf|all-res-lifted| 
+pg| ***** 41 ***** |
+
+
+-------------------------------------------------------------------------------
+bt||
+nt|^z@3^b@2^^|
+ht|m|n#|7|cs|c-chapterColor|at|^a     ^-{  ^*nEnd  -  Problems wk 30^*n  ^^ }^-|
+pg| ***** 42 ***** |
+
+

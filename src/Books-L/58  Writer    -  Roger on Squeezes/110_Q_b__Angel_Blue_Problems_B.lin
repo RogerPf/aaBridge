@@ -1,0 +1,557 @@
+%%
+%%
+
+ss|chapter,Q b.                        Angel  Blue  Problems  B|
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2017-03-16          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead__problems.ins
+%%
+ss|masthead,Roger  on  Squeezes                         2018  March|
+%%
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       on Title Pages   Precision Blue
+cr|c215|cg|c245|cb|c215|   fill   c  c-chapterColor    on Title Pages   PROBLEMS <<<<<<<<<<<<<<<<
+%%
+<<--INSERT-END**-->>=01___FP_masthead__problems.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s29|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pd|hint,^b   There is a `cp`green`at`^*b Hint ^*n`cp``AT` on the next page but if you want to  PLAY  the hand NOW, the  { ^*b 1st ^*n }  button is available.|
+%%
+pd|choose,`cp`red`at`^b    ^*bPlease   CHOOSE^*n`cp``at`   you can use  {^*b Flow >^*n }  to see the answer  `cp`red`at`^*bOR^*n`cp``at`  you can click  { ^*b 1st ^*n }  to PLAY the hand.|
+%%
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|i|
+fp|1|at|^c@2^y@3^^|
+lg|b|
+at|Arik, BBO ID 'Angel Blue', runs a weekly card play tournament and free lesson in the  ^*h http://iac.pigpen.org.uk/,IAC^*n  club on  ^*h http://bridgebaseonline.com/,BBO^*n.
+|n^|7|at|
+The focus for his classes is on difficult to play  hands.  He also hold an occasional Squeeze class and has kindly allowed his squeeze lesson deals to appear here in aaBridge.   Thank you Arik.
+|n^|7|at|^^Do visit Angel Blue's bridge web site at ^*h http://angelblue.co.il/^*n
+Angel Blue's more varied (and more difficult hands) are also here in aaBridge click the  link below|
+n#|3|at|^^^f   ^*g:Lesson  1.1::Angel Blue  2017  Season 1,Angel Blue's general Problem Hands^*n        you can use |fp|b|n#|2|at| @L |n^|2|fp||at| (top right) to return.|
+
+ht|p|n#|7|at|@1^b    @2 { ^^^^^^^^^^^^   ^y } ^^|
+
+ht|p|lg|f|at|^c@2^y@3
+Answer play is NOT provided.  ^*bIf^*n after clicking { ^*b 1st ^*n }  you cannot work out how to play the hand then click on ^*b DDS  { is Off/On ^*n }.  This will show little green 'trick total' numbers by each of your cards.  Click, and so play, any card that is marked with the light green oval.   This will show you the best lines of play|
+ht|u|n^|3|at|Your task is to work out what type of squeeze it is and which cards form its many parts.|
+
+ss|play-it-out,at`^^^d`cp`red`at`^*bNow `cp``at`  click  { ^*b 1st ^*n }  `cp`red`at`^*band play out the hand.^*n`cp``at`     ^*b Flow ^*n  will show the hands and end the problem.^^^^^n If you get stuck  -  use the ^*b DDS  {  is Off/On ^*n }  button.`|
+
+ss|roger-on-squeezes,ht`a`n#`7`at`^g `|
+
+qx|Q b.| 
+pg| ***** 0 ***** |
+
+
+st||
+-------------------------------------------------------------------------------
+qx|1|
+rh||ah|Squeeze 1|
+md|1sAK4h3dKQJ952cA63,s986hJT974d843cJ5,sQJ3hK85dATcK9742,sT752hAQ62d76cQT8|
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bSqueeze 1^*n     The hand,|
+vv|roger-on-squeezes|
+pg| ***** 1 ***** |
+
+
+at|      the contract,|
+mb|6d|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+at|      the lead,|
+pc|hJ|
+pg| ***** 3 ***** |
+
+
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 4 ***** |
+
+
+---------------------------------------------------------------------------
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bPlay it Out^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 5 ***** |
+
+
+---------------------------------------------------------------------------
+eb||
+bv|a,v|
+sk||
+nt|^z@3^c@2^^|n^|5|
+at|^b^*bSummary^*n  |
+Lg|e|
+at|^^^dThis is a Simple Automatic Squeeze  with a ^*b SPLIT ^*n Long Menace (threat). 
+(In this case) operating against   EAST  -  in  @c's (long menace)   and  @h's (single card menace).  
+You need to duck the @h lead in dummy and so preserve your  @hK  as the single card menace (threat) or West will also have high cards in @h's and the squeeze will fail.|
+pf|all-res-lifted|
+pg| ***** 6 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 7 ***** |
+
+
+-------------------------------------------------------------------------------
+qx|2|
+ha|n|
+rh||ah|Squeeze 2|
+md|4s842hKQ3dAT6cKQJ4,sQJT965h6dKQJ4c85,sAK7hAJ87d753cAT6,s3hT9542d982c9732|
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bSqueeze 2^*n     The hand,|
+vv|roger-on-squeezes|
+pg| ***** 8 ***** |
+
+
+at|      the bidding,|
+%%_aapg-NEAR
+mb|p|mb|1N|mb|2S!|mb|6N|mb|p|mb|p|mb|p|pg||
+%%_aapg-STD
+
+
+at|      the lead,|
+pc|dK|
+pg| ***** 10 ***** |
+
+
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 11 ***** |
+
+
+---------------------------------------------------------------------------
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bPlay it Out^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 12 ***** |
+
+
+---------------------------------------------------------------------------
+eb||
+bv|a,v|
+sk||
+nt|^z@3^c@2^^|n^|5|
+at|^b^*bSummary^*n  |
+n#|c|
+at|^^^d^*bYES^*n    This is an   Inverted Simple Automatic Squeeze   
+|n#|7|at|^h (in this case) against WEST  -  in  @d's (long menace)   and  @h's (single card menace).|
+pf|all-res-lifted|
+pg| ***** 13 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 14 ***** |
+
+
+-------------------------------------------------------------------------------
+qx|3|
+ha|y|
+rh||ah|Squeeze 3|
+md|1sAKQ865h972d6cKQ3,s942hJT64dAK953c8,sJT3hAK83dQ72cJ65,s7hQ5dJT84cAT9742|sv||
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bSqueeze 3^*n     The hand,|
+vv|roger-on-squeezes|
+pg| ***** 15 ***** |
+
+
+at|      the contract,|
+mb|4s|mb|p|mb|p|mb|p|
+pg| ***** 16 ***** |
+
+
+at|      the lead,|
+pc|dA|
+pg| ***** 17 ***** |
+
+
+at|      the early play,|
+pg| ***** 18 ***** |
+
+
+%%_aapg-NEAR
+pc|d2|pc|d4|pc|d6|pg||
+pc|c8|pc|c5|pc|cA|pc|c3|pg||
+pc|cT|pc|cK|pc|s2|pc|c6|pg||
+pc|h4|
+%%_aapg-STD
+pg| ***** 22 ***** |
+
+
+eb|y___|
+lg|c|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 23 ***** |
+
+
+---------------------------------------------------------------------------
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bPlay it Out^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 24 ***** |
+
+
+---------------------------------------------------------------------------
+eb||
+bv|a,v|
+sk||
+nt|^z@3^c@2^^|n^|5|
+at|^b^*bSummary^*n  |
+n#|c|
+at|^^^dThis is a   Simple Automatic Squeeze   
+|n#|7|at|^h (in this case) against WEST  -  in  @h's (long menace)   and  @d's (single card menace).|
+pf|all-res-lifted|
+pg| ***** 25 ***** |
+
+
+ha|y|
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 26 ***** |
+
+
+-------------------------------------------------------------------------------
+qx|4|
+rh||ah|Squeeze 4|
+md|1sJT2hAKQJ4d64c976,s987654h76dK2cJ54,sAQh5dAQ9753cAKQ3,sK3hT9832dJT8cT82|
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|4|
+lg|f|
+at|^*bSqueeze 5^*n     The hand,|
+vv|roger-on-squeezes|
+pg| ***** 27 ***** |
+
+
+at|      the contract,|
+mb|7c|mb|p|mb|p|mb|p|
+pg| ***** 28 ***** |
+
+
+at|      the lead,|
+pc|c4|
+pg| ***** 29 ***** |
+
+
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 30 ***** |
+
+
+---------------------------------------------------------------------------
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bPlay it Out^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 31 ***** |
+
+
+---------------------------------------------------------------------------
+eb||
+bv|a,v|
+sk||
+nt|^z@3^c@2^^|n^|5|
+at|^b^*bSummary^*n  |
+lg|e|
+at|^^^cThis requires a Complex Successive squeeze.  The fates grant the 3-3 @c split giving you  1@s 4@h 1@d 4@c  (10 tricks).  Running the clubs will put pressure on EAST if she holds  5@h's, 3@d's and the guarded @sK.  If she throws her 3rd @d it is all over as the (needed) successful finesse of @dQ will set up the @d's (as they will then be 2-2).   If instead she discards a @h then your 5th @h's squeezes her again, death by @s or @d discard.|
+pf|all-res-lifted|
+pg| ***** 32 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 33 ***** |
+
+
+-------------------------------------------------------------------------------
+qx|5|
+rh||ah|Squeeze 5|
+md|1sAKQh62dQ74cAKQJ9,sJT953hTdJ93cT653,s74hAKQ873dA8c742,s862hJ954dKT652c8|
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bSqueeze 5^*n     The hand,|
+vv|roger-on-squeezes|
+pg| ***** 34 ***** |
+
+
+at|      the contract,|
+mb|7n|mb|p|mb|p|mb|p|
+pg| ***** 35 ***** |
+
+
+at|      the lead,|
+pc|sJ|
+pg| ***** 36 ***** |
+
+
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 37 ***** |
+
+
+---------------------------------------------------------------------------
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bPlay it Out^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 38 ***** |
+
+
+---------------------------------------------------------------------------
+eb||
+bv|a,v|
+sk||
+nt|^z@3^c@2^^|n^|5|
+at|^b^*bSummary^*n  |
+lg|e|
+at|^^^eThis is a   Simple Automatic Squeeze
+Assuming you unblock the @dA (Vienna Coup) and then play of the @s's and @c's, if either defender started with four @h's and the guarded @dK then she (here WEST) will be squeezed on the last @c.
+
+|
+pf|all-res-lifted|
+pg| ***** 39 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 40 ***** |
+
+
+-------------------------------------------------------------------------------
+qx|6|
+ha|n|
+rh||ah|Squeeze 6|
+md|4sAJhQ832dAQJT3cA5,s976hT65d9864c764,s843hA74dK5cKQJT3,sKQT52hKJ9d72c982|
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bSqueeze 6^*n     The hand,|
+vv|roger-on-squeezes|
+pg| ***** 41 ***** |
+
+
+at|      the bidding,|
+mb|2S|
+pg| ***** 42 ***** |
+
+
+mb|3N|
+pg| ***** 43 ***** |
+
+
+mb|p|mb|6N|
+pg| ***** 44 ***** |
+
+
+mb|p|mb|p|mb|p|
+pg| ***** 45 ***** |
+
+
+at|      the lead,|
+pc|d9|
+pg| ***** 46 ***** |
+
+
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 47 ***** |
+
+
+---------------------------------------------------------------------------
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bPlay it Out^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 48 ***** |
+
+
+---------------------------------------------------------------------------
+eb||
+bv|a,v|
+sk||
+nt|^z@3^c@2^^|n^|5|
+at|^b^*bSummary^*n  |
+lg|e|
+at|^^^eThis is an  Inverted Simple Squeeze   (against East)
+By ignoring partners bid West has given you a chance at the over trick.  Play EAST for the @sKQ and @hK and you have an Inverted Simple Squeeze against her in @s's (two cards menace) and @h's (one card menace).|
+pf|all-res-lifted|
+pg| ***** 49 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 50 ***** |
+
+
+-------------------------------------------------------------------------------
+qx|7|
+rh||ah|Squeeze 7|
+md|1sQ5h8d852cAQJ9765,sJ93hAKJ74d94cT43,sA8742hT5dAKQ6cK2,sKT6hQ9632dJT73c8|
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bSqueeze 7^*n     The hand,|
+vv|roger-on-squeezes|
+pg| ***** 51 ***** |
+
+
+at|      the bidding,|
+mb|6c|mb|p|mb|p|mb|p|
+pg| ***** 52 ***** |
+
+
+at|      the lead,|
+pc|hA|
+pg| ***** 53 ***** |
+
+
+at|      the early play,|
+pg| ***** 54 ***** |
+
+
+%%_aapg-NEAR
+pc|h5|pc|h9|pc|h8|pg||
+pc|hK|pc|hT|pc|h2|
+%%_aapg-STD
+pg| ***** 56 ***** |
+
+
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 57 ***** |
+
+
+---------------------------------------------------------------------------
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bPlay it Out^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 58 ***** |
+
+
+---------------------------------------------------------------------------
+eb||
+bv|a,v|
+sk||
+nt|^z@3^c@2^^|n^|5|
+at|^b^*bSummary^*n  |
+lg|e|
+at|^^^eThis is a   Simple Automatic Squeeze   
+Unblocking the   @sA  (Vienna coup)   and running the @c's means that if either defender (here East) started with four @d's AND the  @sK  they will be squeezed.|
+pf|all-res-lifted|
+pg| ***** 59 ***** |
+
+
+-------------------------------------------------------------------------------
+qx||
+bt||
+nt|^z@3^b@2^^|
+ht|m|n#|7|cs|c-chapterColor|at|^a     ^-{  ^*nEnd  -  Angel Blue's Problems A^*n  
+}^-|
+pg| ***** 60 ***** |
+
+

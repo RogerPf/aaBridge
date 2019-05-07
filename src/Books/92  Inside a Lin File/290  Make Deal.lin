@@ -1,0 +1,346 @@
+%% Make Deal
+%% Last edited  2013 Dec 30
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5225|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+bt||
+qx|md0|
+
+at|
+^b@2^*bMake Deal^*n^e^*bmd! ... !^*n|at|^z@3
+|
+at|
+
+When it comes to showing the cards, this is the command that does the heavy lifting.
+
+
+^dmd!|cp|7|at|^*b3^*n|cp||at||cp|5|at|^*bs^*n|cp||at|J4|cp|5|at|^*bh^*n|cp||at|A98|cp|5|at|^*bd^*n|cp||at|T62|cp|5|at|^*bc^*n|cp||at|,KJT93,hQJ764dQ983cQ874,sAQ532h32dA754cA5!
+
+
+The (optional) digit at the front of the first hand, here a three (|cp|7|at|^*b3^*n|cp||at|), says the dealer is North. 
+1 = South,   2 = West,   3 = North,   4 = East    If omitted then the default is  1 = South.
+
+A zero (|cp|7|at|^*b0^*n|cp||at|) has a special meaning - the cards listed in the hands are to be inserted.  In other words any cards still in the hand will not be cleared away first, as is normal.  More on this later.
+
+There can be up to 4 hands defined.   If the number of unplaced cards matches the number missing from a single hand then they will be filled in for you.   The three commas (,) in this example shows that there are four hands.
+
+The first hand is always South.
+
+The letters in green - |cp|5|at|^*bs^*n|cp||at| - (shown for the first hand only) mark the start of each suit. You can use capitals or lower case.
+
+^d@2In pracrtice most hands are just cut and pasted from exiting hands. Alternatively, you can make them and save them as a lin file with the 'drag n drop' hand editor that is in aaBridge.
+
+^b@2For the cards order is unimportant, use capitals or lower case and use  t (or T)  for a ten.
+
+
+Please click   ^*bFlow > ^*n  to see this example displayed|
+pg| ***** 0 ***** |
+
+
+qx|md 1|
+nt|^b@2^*bMake Deal^e md! ... !^*n^z@3
+|
+st||
+md|3sJ4hA98dT62cKJT93,hQJ764dQ983cQ874,sAQ532h32dA754cA5|
+at|
+
+^dmd!|cp|7|at|^*b3^*n|cp||at||cp|5|at|^*bs^*n|cp||at|J4|cp|5|at|^*bh^*n|cp||at|A98|cp|5|at|^*bd^*n|cp||at|T62|cp|5|at|^*bc^*n|cp||at|KJT93,hQJ764dQ983cQ874,sAQ532h32dA754cA5!
+|
+pg| ***** 1 ***** |
+
+
+qx|md 2|
+
+nt|^b@2^*bMake Deal^e md! ... !^*n^z@3|
+
+md|1sKQ2hK    ,sAT96h642dKT54c32,s74hQ97dJ92cJT876,sJ853hAT3dAQ876c9|
+
+at|
+
+If you fill in three of the hands completely any extra cards are automaticaly put into the incomplete hand.
+
+^dmd!1sKQ2hK    ,sAT96h642dKT54c32,s74hQ97dJ92cJT876,sJ853hAT3dAQ876c9!
+|
+pg| ***** 2 ***** |
+
+
+qx|md 3|
+
+nt|^b@2^*bMake Deal^e md! ... !^*n^z@3|at|
+
+You can have just fragments of each hand
+
+^dmd!hkj,s97,st4,hq6! |
+md|hkj,s97,st4,hq6|
+pg| ***** 3 ***** |
+
+
+qx|md 4|
+nt|^b@2^*bMake Deal^e md! ... !^*n^z@3|at|
+With a zero (0) in front of a hand the command becomes more of an insert/edit, here moving the @hQ      click   ^*bFlow >^*n
+
+^dmd!hkj,s97,st4,hq6!
+|
+pg| ***** 4 ***** |
+
+
+md|0,,hq,|
+at|^dmd!|cp|7|at|^*b0^*n|cp||AT|,,hq,!|
+at|^kNote - examples that show zeros other than in the first position 
+^k  like     md!|cp|7|at|^*b0^*n|cp||AT|,0,0hq,0!    are misleading, those 3 extra zeros are ignored.|
+pg| ***** 5 ***** |
+
+
+qx|rc|
+nt|^b@2^*bRemove Cards^f!rc! ... !^*n ^jthe extra "pseudo bar"  !   at the front is to make things clearer I hope it does   :)^^                     
+If you want to change a card or cards for another.  You need to remove them.  They MUST be unplayed cards.|
+pg| ***** 6 ***** |
+
+
+at|^^^^^d!rc!s97!|
+rc|s97|
+pg| ***** 7 ***** |
+
+
+at| ^hAdd re-add them or others
+^dmd!0,s86!|
+md|0,s86|
+pg| ***** 8 ***** |
+
+
+qx|rt|
+md|4S74HAKJ6DAKJ62CA9,S862H75D843CKT873,SJ53HT84DT9CQ6542,SAKQT9HQ932DQ75CJ|
+sv|E|sk|E|mb|p1cppp|
+nt|^b@2^*bRotate Tutorial^g!rt!n! ^*n ^k  (the East hand is displayed)|
+pg| ***** 9 ***** |
+
+
+at|^^^^ ^d!rt!1!  ^g The hand is now rotated 90 deg clockwise.    So East is now in the South zone.
+                  ^g If it is not check you have used the   { Apply defaults }   button.|
+rt|1|
+pg| ***** 10 ***** |
+
+
+at|^^^^^d!rt!0!^^ ^dmd!4...!   ^g The rotation is cleared by any  !rt!n!  command that is not 1-3  or by a non zero md!    ...  |
+md|4S74HAKJ6DAKJ62CA9,S862H75D843CKT873,SJ53HT84DT9CQ6542,SAKQT9HQ932DQ75CJ| 
+sv|e|sk|E|mb|p1cppp|
+pg| ***** 11 ***** |
+
+
+qx|vx 1|
+md|4S74HAKJ6DAKJ62CA9,S862H75D843CKT873,SJ53HT84DT9CQ6542,SAKQT9HQ932DQ75CJ|
+sv|b|sk||mb|p1cppp|
+nt|^b@2^*bVisibility X'es^f!vx! ----, ----, ----, ----! ^*n|
+pg| ***** 12 ***** |
+
+
+at|^^   
+^d vx!----,---x,----,----!        makes  West's  @c's  show as    x's       the hand order is as in   !^*bmd^*n! ...  S,W,N,E  |
+vx|----,---x,----,----|   
+pg| ***** 13 ***** |
+
+
+at|^^^d vx!----,----,-x--,----!        makes  North's  @h's  show as    x's       the suits in the hand are in   SHDC   order|
+vx|----,----,-x--,----|
+pg| ***** 14 ***** |
+
+
+at|^^^d vx!----,---c,----,----!        restores Wests @c's  to "cards"             fields with a hyphen cause no change |
+vx|----,---c,----,----|         
+pg| ***** 15 ***** |
+
+
+at|^^^d vx!xxxx,----,----,----!       all South's suits now also show as   x's |
+vx|xxxx,----,----,----|         
+pg| ***** 16 ***** |
+
+
+at|^^^d vx!!                               unspecified fields default to     'c'  =  "cards"   so this resets  ALL to cards|
+vx||
+pg| ***** 17 ***** |
+
+
+at|^^^ethe settings persist across from one  !^*bmd^*n!  to the next so the lin file author MUST reset them to 'cards'.|
+pg| ***** 18 ***** |
+
+
+qx|vx 2|
+nt|^b@2^*bVisibility X'es^f!vx! KK--, -**-, ----, -8-8!                      part 2^*n|
+pg| ***** 19 ***** |
+
+
+at|^^                             ^i   You can  'x'  all the cards from a particular rank and below.
+^c vx!--J-,----,----,----!        ^i   The  'J'  here sets  South's  @d's  that are  ^*b less than or equal to ^*n   'Jack',   to    'x'|
+vx|--J-,----,----,----|   
+pg| ***** 20 ***** |
+
+
+at|
+^c vx!8888,8888,8888,8888!        ^i   All the cards  '8'  and below now show as  'X'es|
+vx|8888,8888,8888,8888|
+pg| ***** 21 ***** |
+
+
+at|
+^c vx!qqqq,qqqq,qqqq,QQqq!        ^i   Only the Aces and Kings are left   NOT  as 'X'es|
+vx|qqqq,qqqq,qqqq,QQqq|   
+pg| ***** 22 ***** |
+
+
+at|^^^c vx!!                        ^i   Standard reset|
+vx||
+pg| ***** 23 ***** |
+
+
+at|
+^c vx!--*-,----,----,----!                    The    ^*b*^*n   asterisk   blots out South's  @d's  (go invisible)    |cp|red|at|Show All ...|cp||at| will override|
+vx|--*-,----,----,----|   
+pg| ***** 24 ***** |
+
+
+qx|vi| 
+nt|^b@2^*bVisibility i/j  ^g!vi!n! ^*n (x's visble when INSIDE A DEAL)         ^*b !vj!n! ^*n (visibility of on-table) |
+pg| ***** 25 ***** |
+
+
+at|
+^c vx!qqqq,qqqq,qqqq,qqqq!        ^i    All the hands (cards)  'q'  and below now show as  'X's|
+vx|qqqq,qqqq,qqqq,qqqq|
+pg| ***** 26 ***** |
+
+
+tc|y|
+pc|s8|pc|sJ|pc|sK|pc|s7|
+pc|sQ|pc|s4|pc|s2|pc|s3|
+pc|h2|pc|hK|pc|h5|pc|h4|
+pc|dK|pc|d4|pc|d9|eb|y___|
+tc|n|
+at|^^^i^*b&^*n hands AND on-table matches  and  also matches after ^*b Enter the Deal ^*n .|
+pg| ***** 27 ***** |
+
+
+vi|n|
+at|^^^iafter   ^*b vi!n! ^*n    TEST - ^*b Enter the Deal ^*n     cards  AND  on-table do  NOT match, |
+pg| ***** 28 ***** |
+
+
+qx|vj| 
+at|^^^iafter   ^*b vj!n!  ^*n       "                    "                          ?|
+vj|n|
+pg| ***** 29 ***** |
+
+
+at|^^^iafter   ^*b vi!y!  ^*n       "                    "                          ?|
+vi|y|
+pg| ***** 30 ***** |
+
+
+at|^^^iafter   ^*b vj!y!  ^*n       "                    "                          ?|
+vj|y|
+pg| ***** 31 ***** |
+
+
+up|99|
+at|^^^c vx!!                        ^d   Standard reset|
+vx||
+pg| ***** 32 ***** |
+
+
+qx|vp 1|
+nt|^b@2^*bVisibility Played^g!vp! ----, -**-, ----, -p-p! ^*n|
+pg| ***** 33 ***** |
+
+
+tc|Y|
+pc|s8|pc|sJ|pc|sK|pc|s7|
+pc|sQ|pc|s4|pc|s2|pc|s3|
+pc|h2|pc|hK|pc|h5|pc|h4|
+pc|dK|pc|d4|pc|d9|pc|d7|
+pc|dJ|pc|d8|
+tc|n|
+pg| ***** 34 ***** |
+
+
+at|^c@2^^
+vp!----, ----, ----, p---!        ^i   East's (only East's) played  @sKQ  are now (faintly) visible |
+vp|--J-, ----, ----, p---|   
+pg| ***** 35 ***** |
+
+
+at|
+vp!--p-,--p-,--p-,--p-!        ^i   All the played  @d's  are now visible including those on the table, East @s unaffected|
+vp|--p-,--p-,--p-,--p-|   
+pg| ***** 36 ***** |
+
+
+at|
+^*bvx^*n!--7-,--7-, ----, ----!        ^i   Works well with the  'vx'  command.  South and West's @d's of 7 and below are 'x'  | 
+vx|--7-,--7-, ----, ----|        
+pg| ***** 37 ***** |
+
+
+at|
+vp!----, ----, ----, --c-!        ^i   as with  'vx'   a   'c'  clears.     Here, only for East's  @d's | 
+vp|----, ----, ----, --c-|               
+pg| ***** 38 ***** |
+
+
+at|
+vp!!                        ^i   Standard reset|
+vp||
+pg| ***** 39 ***** |
+
+
+at|
+vx!!                        ^i   Standard reset of     vx|
+vx||
+pg| ***** 40 ***** |
+
+
+qx|vp 2|
+eb
+up|99|
+sv|b|sk||mb|p1cppp|
+
+nt|^b@2^*bVisibility Played^g!vp! ----, -dd-, --*-, -*--!                part 2^*n| 
+pg| ***** 41 ***** |
+
+
+at|^c@2
+
+vp!--*-,     ----,   ----, ----!       ^i   The    ^*b*^*n   asterisk   blots out South's  @d's (go invisible)    |cp|red|at|Show All ...|cp||at| no override |
+vp|--*-,     ----,   ----, ----|   
+pg| ***** 42 ***** |
+
+
+at|
+vp!dddd, dddd, ----, dddd!         ^i   South and West and East hands (all four suits) are now     d = dimmed|
+vp|dddd, dddd, ----, dddd|   
+pg| ***** 43 ***** |
+
+
+tc|y|
+tt|y|
+pc|h7|pc|h4|pc|h2|pc|hK|
+pc|s7|pc|s6|pc|s5|pc|sk|
+tc||
+at|^^                              ^i   Play 2 round  hearts  and spades|
+pg| ***** 44 ***** |
+
+
+at|
+vp!----,    ----, ----, pppp!         ^i   East is now  showing played, a suit can be set  dimmed  or  played  NOT both|
+vp|----,    ----, ----, pppp|   
+pg| ***** 45 ***** |
+
+
+at|
+vp!!                        ^i   Standard reset|
+vp||
+pg| ***** 46 ***** |
+
+
+ht|z|at|@0
+^*b end ^*n|

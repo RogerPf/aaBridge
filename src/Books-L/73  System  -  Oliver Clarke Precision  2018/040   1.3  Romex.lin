@@ -1,0 +1,1708 @@
+%%
+%%
+
+ss|chapter,Chapter 1.3            1 @h   and   1 @S   Romex  |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2015-02-28          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=001___FP_masthead.ins
+%%
+ss|masthead,Oliver Clarke Precision                                 2018  |
+%%
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       Precision Blue
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor    that Gray
+%%
+<<--INSERT-END**-->>=001___FP_masthead.ins
+
+
+<<--INSERT-START-->>=002___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|f35|                    Font   f  f-fine
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  position adjustment USED BY 'GRAPHICS'
+%%
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=002___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=005___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+ht|z|n#|k|at|@0^*h https://www.youtube.com/channel/UCTGNUS8jbx85QOMUPlHoRMA, OCP Videos ^*n|
+%%
+<<--INSERT-END**-->>=005___FP_footer.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+Lg||
+ht|j|
+qx|1.3|
+fp|t-title|at|^d@2^z@3|
+at|
+^*gGS,1@h  and  1@S    Romex            Graphical Summary^*n|
+fp|t-title|at|
+
+
+^*gOliv,Oliver's class on 1@h  and  1@S  Romex   Starts HERE^*n|fp||cp|red|at|^u<<<  Click title|fp||cp||at|
+
+^*gSpln,   Re-cap   ^gSplinter^*n
+
+^*gFSJS,   Re-cap   ^gFit Showing Jump Shifts^*n
+
+^*gLSTB_m,   Romex    ^gLong Suit Trial Bids^*n
+
+^*gSSTB_m,   Romex    ^gShort Suit Trial Bids^*n
+
+
+^*gPrac,   Practice Hands^*n
+|
+pg| ***** 0 ***** |
+
+
+=====================================================================
+qx|LSTB_g,wide|
+qx|GS,hide|
+tu|y|
+mn|Romex  -  Long Suit Trial bids   (like FSJS)|
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts     ^g {@H}|cs|f|at|{@S}{ N }{@C@D}|cs|e|at|{@H}
+|cs|e|at|Spades  ^f        {@S}|cs|f|at|{ N }{@C@D@H}|cs|e|at|{@S}
+|cp||fp||at|^e     @2
+^eOnce a major is agreed at the two level, bids of    2NT  3@c  3@d  3@h    can continue the auction
+|n^|9|at|
+1@h         ^j(2NT  3@c  3@d)       ^n |n#|5|fg|y|at| called a  ^*b FSJS ^*n  when bid after  1@h  or  1@s |fg||n^|5|at|
+1@s         ^j(3@c  3@d  3@h)|
+pg| ***** 1 ***** |
+
+
+n^|5|at|^^^^       OR  when the Major is agreed    ... after a 1 Diamond Opening
+|n^|9|at|
+1@d  -  1@h   -  2@h                  ^n |n#|5|cp|dg|at| called a  ^*b Romex  Long ...   ^*n  when bid after ... |cp||n^|5|at|
+1@d  -  1@S   -  2@s
+1@h  -  2@h  
+1@S  -  2@s|
+pg| ***** 2 ***** |
+
+
+n^|5|at|^^^^       ... via 1NT
+|n^|9|at|
+1@S  -  1NT  -  2@c  - 2@s 
+1@h  -  1NT  -  2@d  - 2@h|
+pg| ***** 3 ***** |
+
+
+n^|5|at|^^^^      ... with a MOTOR sequence
+|n^|9|at|
+1@h  -  (X)  -  2@h
+1@S  -  (X)  -  2@s
+1@h  -  (X)  -  2@d(xfr @h)
+1@h  -  (X)  -  2@c(xfr @d)  -  2@d  -  2@h|
+pg| ***** 4 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts     ^g {@H}|cs|f|at|{@S}{ N }{@C@D}|cs|e|at|{@H}@S N @C@D
+|cs|e|at|Spades  ^f        {@S}|cs|f|at|{ N }{@C@D@H}|cs|e|at|{@S} N @C@D@H
+|cp||fp||at|^e@2
+... either partner can make the appropriate bid  -  each is called a ...
+|
+pg| ***** 5 ***** |
+
+
+nt|^b@2|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts          ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H}|cs||at|@S|cs||at|{ N }{@C@D}
+|cs|e|at|Spades  ^f        {@S}|cs|f     |at|{ N }{@C@D@H@S}|cs|wh|at| N |cs||at|{@C@D@H}
+|cp||fp||at|^e@2
+Long Suit Trial Bid             (when the major is @h's  the  LSTB  for  @s's  is  2NT)|
+ht|f|fp|z|at|^^^^^^^^^^^^^^|fp||at|^n@s|
+ht|m|
+pg| ***** 6 ***** |
+
+
+n^|7|fg|y|at|^*u^^^^^g LSTB ^q Fit showing Jump Shift (FSJS) ^*n|n#|7|fg||at|
+You can be Opener or Responder (so varies)                        ^p 8-9 points  mild game try,  for thin games
+
+4+ cards (in what can be YOUR major)            ^p Reasonable 3+ card support for Openers major
+
+4(3)+ cards in side suit that need help            ^p 5+ card side suit as source of tricks, eg:  AQ10xx
+|
+pg| ***** 7 ***** |
+
+
+ht|v|
+at|^c(end  of   Romex - LSTB  /  FSJS)|
+pg| ***** 8 ***** |
+
+
+qx|SSTB_g,wide|
+qx|GS,hide|
+tu|y|
+mn|Romex  -  Short Suit Trial bids   (Mini Splinter)|
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts     ^g {@H}|cs|f|at|{@S}{ N }{@C@D}|cs|e|at|{@H}
+|cs|e|at|Spades  ^f        {@S}|cs|f|at|{ N }{@C@D@H}|cs|e|at|{@S}
+|cp||fp||at|^e     @2
+^eThe two (major agreeing) Mini Splinter bids  2@s  and  2NT  are used to continue auctions like
+|n^|9|at|
+1@h         ^j(2@s   agrees @h)       ^n |n#|5|cp|dg|at| called a ^*b Mini Splinter ^*n  when used like this |cp||n^|5|at|
+1@s         ^j(2NT  agrees @s)|
+pg| ***** 9 ***** |
+
+
+n^|5|at|^^^^       OR  when the Major is agreed    ... after a 1 Diamond Opening
+|n^|9|at|
+1@d  -  1@h   -  2@h                  ^n |n#|5|cp|dg|at| called ^*b Romex Short ... ^*n  when used like this |cp||n^|5|at|
+1@d  -  1@S   -  2@s
+1@h  -  2@h  
+1@S  -  2@s|
+pg| ***** 10 ***** |
+
+
+n^|5|at|^^^^       ... via 1NT
+|n^|9|at|
+1@S  -  1NT  -  2@c  - 2@s 
+1@h  -  1NT  -  2@d  - 2@h|
+pg| ***** 11 ***** |
+
+
+n^|5|at|^^^^      ... with a MOTOR sequence
+|n^|9|at|
+1@h  -  (X)  -  2@h
+1@S  -  (X)  -  2@s
+1@h  -  (X)  -  2@d(xfr @h)
+1@h  -  (X)  -  2@c(xfr @d)  -  2@d  -  2@h|
+pg| ***** 12 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts     ^g {@H}|cs|f|at|{@S}{ N }{@C@D}|cs|e|at|{@H}@S N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|f|at|{ N }{@C@D@H}|cs|e|at|{@S} N @C@D@H@S
+|cp||fp||at|^e@2
+.. either partner can make the appropriate bid  -  each is called a ...
+|
+pg| ***** 13 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts     ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H}|cs||at|{@S} N @C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|f|at|{ N }{@C@D@H@S}|cs||at|{ N }@C@D@H@S
+|cp||fp||at|^e@2
+Short Suit Trial Bid (SSTB)  /  Mini Splinter  ^*b REQUEST ^*n   (may I make one ?)|
+pg| ***** 14 ***** |
+
+
+n^|7|fg|y|at|^*u^^^^^g SSTB ^q Mini Splinter ^*n|n#|7|fg||at|
+when responder 8 - 9  (good 7 after 1M - 2M)  ^p 8 - 9  as a guideline
+
+4+ cards  (in what can be YOUR major)         ^p 4+ card support,   ruffing is the essence
+
+Shortage  -  Singleton or Void                ^p Shortage  -  Singleton or Void
+|
+pg| ***** 15 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts     ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H@S}|cs||at|{ N }@C@D@H
+|cs|e|at|Spades  ^f        {@S}|cs|f|at|{ N }{@C@D@H@S}{ N }|cs||at|{@C}@D@H@S
+|cp||fp||at|^e@2
+YES  you may       (any other response is no,  please do NOT tell me).
+|
+pg| ***** 16 ***** |
+
+
+nt|^b@2^z@3|
+at|^^^^^^^^^^|
+fp|g-graphSuit|cp|n|at|
+^e   1^j 2^n   3^s 4|fp|z|at|^^^^^^^^^^^^^^^^^^^^^^^^|fp|g-graphSuit
+|cs|e|at|Hearts     ^g {@H}|cs|f|at|{@S}{ N }{@C@D@H@S}{ N }|cs|  |at|{@C@D@H}
+|cs|e|at|Spades  ^f        {@S}|cs|f|at|{ N }{@C@D@H@S}{ N }{@C}|cs||at|{@D@H@S}
+|cp||fp||at|^e@2
+The asker now shows where, by bidding the suit  BELOW  the shortage.
+|
+ht|f|fp|z|at|^^^^^^^^^^^^^^^^|fp||at|^n        @d   @S   @c|
+ht|j|fp|z|at|^^^^^^^^^^^^|fp|    |at|^n               @h   @c   @d|
+pg| ***** 17 ***** |
+
+
+ht|v|
+at|^c(end of  Romex - SSTB  /  Mini Splinter)|
+pg| ***** 18 ***** |
+
+
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,wide|
+nt|^b@2^z@3|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class      1 @h   and   1 @S   Romex ^*n^-^^|cs||fp||cp||at|^^|
+
+ht|f|
+
+cp|red|at|^*bOliverC:^*n|cp||at|  Hi Everyone and welcome to today's Precision Club session, in which we'll continue our look at the Precision 1@H & 1@S Openings & Responses. 
+
+Last week we covered Mini-splinters, Splinters and fit-showing Jump-Shift responses. This week we'll be looking at Romex Trial Bids. If you have not already done so, please have a look at the notes I have prepared on Precision Club bidding. 
+
+You can find these on: ^*hhttp://ocp.pigpen.org.uk^*n  You might want to have these onscreen in the background for reference during the session. The notes on Romex can be found on the 1@H and 1@S pages.
+
+Even if you have no interest in Precision, please stick around Romex can be applied to ANY bidding system, and if you want to sharpen up your Major Suit sequences, this is the session for you.  
+
+Firstly, a brief recap of what we covered last week:
+| 
+pg| ***** 19 ***** |
+
+
+qx|Spln,wide|
+nt|^b@2^z@3|
+at|^^^^|
+fp|t-title|at|Re-cap       Splinter  Responses     to     1@h   and  1@s   Openings|fp||at|
+
+Splinters are a double jump-shift over an Opening bid of 1@H or 1@S. They absolutely agree Opener's Major, show a strong (ostensibly 16+) hand with GOOD controls and also show a shortage.
+
+They show a hand strongly interested in more than a game contract.  In most systems you splinter in your SHORT suit, so 1@S-4@C would show a Club shortage. This is NOT the method recommended or used in this system. 
+
+Instead we splinter in the suit BELOW our shortage, ignoring the agreed trump suit and NT's. Thus 1@S-4@C shows a DIAMOND shortage amd 1@S-4@H would show a CLUB shortage. 
+
+This is primarily to facilitate a cheap control Asking Bid (Beta) in responder's short suit and this method of showing a shortage is fairly consistent throughout this system.
+|
+pg| ***** 20 ***** |
+
+
+nt|^z@3^b@2|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  In practice, as I said last week, we actually use splinters VERY RARELY immediately over an opening of 1@H or 1@S. The reason for this is that we have a very much more space-efficient way of exploring for slam that leaves Responder in control of the auction rather than Opener, who is limited.
+
+More of that later in the series once we've covered the Asking Bids. 
+
+Next we dealt with Mini-Splinters and Fit-showing Jump-shifts.   Most systems use jump-shift responses to show a game-forcing hand of some sort.  Some pairs play jump-shifts as weak. 
+|
+pg| ***** 21 ***** |
+
+
+qx|FSJS,wide|
+at|^^^^^^^^|
+fp|t-title|at|Re-cap     Fit Showing Jump Shift (FSJS)       responses   to   1@h   and  1@s   Openings|fp||at|
+
+This system plays jump-shifts over 1@H and 1@S as being mildly invitational in Opener's Major, along these lines.
+
+Jump-shifts in a SUIT (with one exception - see below) show about 8-9 points, reasonable 3+-card trump support for Opener's Major and a 5-card or longer side-suit that can be expected to be a source of tricks (eg: something like AQxxx rather than Q86xx. 
+
+So 1@H-3@C would show a reasonably good Club suit, some Heart support and about 8-9 HCP The exception mentioned above relates to Spades. 1@H-2NT is used to show a fit-showing jump-shift in Spades. 
+
+This is because 1@H-2@S is required for a different purpose (Mini-splinters below). 
+
+These fit-showing jump-shifts are NOT forcing but they do agree Opener's Major and are aimed at getting to thin (sub-minimum) games if Opener is Maximum and/or has a suitable fit for Responder's side-suit. 
+|
+pg| ***** 22 ***** |
+
+
+qx|Mini,wide|
+nt|^z@3^b@2|
+at|^^^^|
+fp|t-title|at|Re-cap     Mini-Splinter      responses    to   1@h   and  1@s   Openings|fp||at|
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Next came mini-splinters  1@S - 2NT  and  1@H - 2@S  are used to show Mini-Splinters. These also show about 8-9 points and decent 4-card or longer support for Opener's Major. 
+
+They show a shortage in an UNSPECIFIED suit. 
+
+Opener can sign off at any level in their Major if not interested in knowing where the shortage is or can relay in the next bid up.  
+
+For example  1@H-2@S-2NT,  1@S-2NT-3@C  to enquire about the location of the shortage if that makes a difference, bear in mind that that information can be useful to the Opponent on the Opening lead.
+
+If Opener asks for the location of the short suit, Responder bids the suit BELOW their shortage in a sort of rotating wheel ignoring the trump suit @-|
+pg| ***** 23 ***** |
+
+
+at|
+
+^e1@H - 2@S - 2NT - 3@C   shows  a   Diamond     ^oshortage
+^e1@H - 2@S - 2NT - 3@D   shows  a   Spade       ^oshortage
+^e1@H - 2@S - 2NT - 3@H   shows  a   @CCLUB@C    ^oshortage
+|
+pg| ***** 24 ***** |
+
+
+at|
+^e1@S - 2NT - 3@C - 3@D   shows  a   Heart       ^oshortage
+^e1@S - 2NT - 3@C - 3@H   shows  a   @CCLUB@C    ^oshortage
+|
+pg| ***** 25 ***** |
+
+
+^e1@S - 2NT - 3@C - 3@S   shows  a   @DDIAMOND@D ^oshortage
+
+
+at|
+As with fit-showing jump-shifts, Mini-Splinters are aimed at getting to thin games based mainly on fit rather than a solid point-count. If mid-range, Opener will judge whether the hands are likely to be fitting well given their holding in the mini-splinter suit.  
+
+So xxx(x) or perhaps Axx(x) is an ideal holding whereas KJx(x), KQx(x) or x tends not to be indicative of a good fit.
+|
+pg| ***** 26 ***** |
+
+
+nt|^z@3^b@2|
+at|^^^^|
+fp|t-title|at|Trial Bids    Use and Purpose (background)|fp||at|
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Let's move on to Trial Bids. In case any of you are not familiar with the concept of trial bids let's cover that general ground (only because there are lots of people who have misconceptions about them)  first @-
+
+Trial bids generally occur ANY time we've explicitly agreed a Major suit at the 2-level and the original bidder of the suit has a hand worth an invitation. 
+
+This doesn't have to be an immediate agreement like 1@H - 2@H, but might be something like     1@H - 1NT - 2@C - 2@H, 
+or     1@H - 1@S - 2@S    or even     1@D - 1@H - 1@S - 2@S     or     1@D - 1@S - 2@S. 
+
+Trial bids are an invitation to game in the agreed Major suit. Instead of simply raising the major to the 3-level (which is somewhat uninformative) the player making the trial bid is showing something else about their hand. 
+
+This is intended to give partner some clue as to what to do ONLY if they are mid-range and undecided as to whether or not to accept the invitation. 
+
+With a minimum hand partner is expected to sign off in the Major at the 3-level and to go to game with a maximum. 
+
+It is the nebulous middle ground when you're not sure whether to treat your hand as lower or upper range that trial bids help with. There are normally 2 possible kinds of trial bids over a Major @-
+|
+pg| ***** 27 ***** |
+
+
+at|
+^c(1)^d@2Most systems use LONG-suit (AKA "Help suit") Trial Bids. Using this method the trial-bidder is showing a 3-card or longer suit and are looking for partner to have a shortage or some honour strength in that suit. So a singleton or void is helpful, as is a holding such as Ax(x) or Kx(x).
+|
+pg| ***** 28 ***** |
+
+
+at|
+^c@2(2)^d@2Classic Precision uses a different method: Short-suit Trial Bids are where the Trial-bidder shows a shortage (singleton or void) and is now looking for partner to have NO wasted values in that suit if they are mid-range (eg: xxx(x) is fine and Axx(x) is also okay, but a holding like KJx(x) or KQx(x) is not so good) as you are less likely to get full value from those honours opposite a singleton or void.
+|
+pg| ***** 29 ***** |
+
+
+nt|^z@3^b@2|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Most systems tend to use Long-suit trial bids because they give less information away to opponents. A long-suit trial bids might be anything from xxx up to AKxxx, whereas a short-suit trial bid is always going to be a singleton or void, making it much easier for the defence to count the hand.
+
+Classic Precision's use of short-suit trial bids owes much to the fact that  1M - 2M  sequences are largely pre-emptive rather than being limit bids as such.  Trial Bids, therefore, are a more scientific way of raising the agreed Major to the 3-level as an invitation to game.
+
+
+|fp|t-title|at|Romex Trial Bids|fp||at|
+
+The problem is that normally you have to agree whether to play long or short trial bids before you start and have to stick with that decision.  You cannot normally play both methods at the same time but Romex is a method to permit you to do exactly that.
+ 
+Romex allows you to play both long and short-suit trials bids and to choose which method to use on any given hand to give partner the most help in making their decision. 
+ 
+The way it achieves this is fairly ingenious (similar in many ways to the concept behind Lebensohl) and it also gives the additional benefit that you only actually get to MAKE a SHORT-suit trial bid when it really matters to partner (which is really good, because, as I said before, short-suit trial bids tend to give more info to Opps). 
+
+^c"How can you possibly tell whether or not it really matters to partner?" 
+
+I hear you ask. Well I'll leave you in suspense for a short while as we'll cover long-suit trials first.
+
+Using Romex, Long-suit trial bids are, with one exception, identical to long-suit trial bids in any other system.
+|
+pg| ***** 30 ***** |
+
+
+qx|LSTB_m,wide|
+nt|^z@3^b@2|
+at|^^^^|
+fp|t-title|at|Romex Long Suit Trial Bids|fp||
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  For example  
+
+^c 1@D - 1@H - 2@H - 3@D    is a long-suit trial bid in Diamonds 
+
+^c 1@D - 1@S - 2@S - 3@H    is a long-suit trial bid in Hearts  
+
+Opener bids game with a maximum 14-15 and signs off at the 3-level with a minimum 11-12. 
+
+With a good 12 up to a poor 14-count, they let their holding in the trial suit decide. The exception to this, as with fit-showing jump-shifts, relates to SPADES.
+
+
+To make a long-suit trial bid in SPADES if Hearts are agreed at the 2-level you bid 2NT rather than 2@S. 
+
+So using Romex Trial Bids   
+
+^c 1@H - 2@H - 2NT   is a long-suit trial bid in  @sSPADES@s
+
+^c 1@H - 2@H - 2@S     is something else (see later). 
+
+All other long-suit trial bids are exactly as you would find them in any other system.
+
+Looking at a hand  @- 
+|
+pg| ***** 31 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 1,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 1|sv|-|sk|w|sk||
+md|2,SQ832HK2DK954C986,,SAJ974HA87DAJT2C4|
+mb|?|
+nt|^z@3^b@2
+|cp|red|at|^*bOliverC:^*n|cp||at|  Teach 1     |
+pg| ***** 32 ***** |
+
+
+mb|p|
+pg| ***** 33 ***** |
+
+
+sj|c|
+mb|p|mb|1S|an|5+ @s  11-15|
+pg| ***** 34 ***** |
+
+
+sj|c|
+mb|p|mb|1N|an|Forcing|
+pg| ***** 35 ***** |
+
+
+sj|c|
+mb|p|mb|2D|
+pg| ***** 36 ***** |
+
+
+sj|c|
+mb|p|mb|2S|
+pg| ***** 37 ***** |
+
+
+sj|c|
+mb|p|mb|3H|an|Long Trial Bid|
+pg| ***** 38 ***** |
+
+
+sj|c|
+mb|p|mb|4S|
+pg| ***** 39 ***** |
+
+
+mb|pp|
+at|    East's long suit trial bid in Hearts (@hA87) also, effectively, shows a Club SHORTAGE, so West, besides having a good holding in Hearts(@hK2), also has an ideal holding in Clubs opposite the shortage there.  
+
+So here, West is in that nebulous middle ground, neither min or max, and so they let their holding in the trial-bid suit decide what to do.
+
+Any questions?
+|
+pg| ***** 40 ***** |
+
+
+nt|^z@3^b@2|
+at|
+P0STM0RTEM:  What is the poorest holding in the trial suit worthy of accepting game in such situations?
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  There is no definite answer to that but a holding such as xxx in about as bad as it gets xx not ideal, but if the rest of the hand was "good", I might accept a long-suit trial bid in that suit Hx or Hxx, no problem, and a singleton of void, no problem.
+|
+pg| ***** 41 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 2,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 2|sv|-|sk|e|sk||
+md|3,SA987HK8754DJ7CK4,,S3HAJ92DAKT95CT98|
+mb|p?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 2     |
+pg| ***** 42 ***** |
+
+
+mb|1D|an|11-15, 1+@d, No 5M, No 6@C, not 10-12 bal|
+pg| ***** 43 ***** |
+
+
+sj|c|
+mb|p|mb|1H|
+pg| ***** 44 ***** |
+
+
+sj|c|
+mb|p|mb|2H|
+pg| ***** 45 ***** |
+
+
+sj|c|
+mb|p|mb|2N|an|long trial bid in @S|
+pg| ***** 46 ***** |
+
+
+sj|c|
+mb|p|mb|4H|
+pg| ***** 47 ***** |
+
+
+mb|pp|
+at|^^^^Here East has a GOOD 12-count and counts themselves as mid-range so let's their holding in @S decide what to do.   There are 12 tricks here on a good day, but 10 safe enough.
+
+A key point to remember is  1@H - 2@H - 2NT  is the long trial bid in  ^*bSpades^*n  as on this hand.
+|
+pg| ***** 48 ***** |
+
+
+qx|SSTB_m,wide|
+bt||
+nt|^z@3^b@2|
+at|^^^^|
+fp|t-title|at|Romex Short Suit Trial Bids|fp||at|
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Have you worked out how Romex achieves the seemingly impossible yet?  No?  Ok, I'll put you out of your misery: Romex achieves this by not permitting you to make a short-suit trial bid DIRECTLY.
+
+You have to ask PERMISSION first and you do this by relaying in the next bid up over the agreed Major.
+
+Thus   1@H - 2@H - 2@S   
+and     1@S - 2@S - 2NT   are ASKING PERMISSION to make a short-suit trial bid rather than actually making one.
+
+The idea here is that if you make this request, and partner is minimum or maximum they do not allow you to actually make the short-suit trial bid but instead sign off directly in 3 or 4 of the agreed Major, as appropriate.
+
+The trick is that they only permit you to MAKE the short suit trial bid when they are mid-range AND it matters to THEM where your shortage is.
+|
+pg| ***** 49 ***** |
+
+
+at|^^
+Thus in a sequence like      1@H - 2@H - 2@S - 3@H  Opener has asked to make a short suit trial bid and Responder has declined and showed no game interest by signing off immediately at the 3-level.
+
+Similarly, in a sequence like  1@S - 2@S - 2NT - 4@S  Responder clearly is maximum for their 2@S bid and the mere fact that Opener can make the game try is enough for them to bid Game. 
+|
+pg| ***** 50 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 3,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 3|sv|-|sk|s|sk||
+md|3SQ3HKJ954D4CKJT53,,SKT5HAQT2DQ863C76,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 3       Here, South could make a long trial bid in Clubs or a SHORT trial bid in Diamonds I'd prefer the long trial bid in Clubs, myself, but suppose they go for the short trial bid in Diamonds.
+|
+pg| ***** 51 ***** |
+
+
+mb|1D|an|11-15, 1+@d, No 5M, No 6@C, not 10-12 bal|
+pg| ***** 52 ***** |
+
+
+sj|c|
+mb|p|mb|1H|
+pg| ***** 53 ***** |
+
+
+sj|c|
+mb|p|mb|2H|
+pg| ***** 54 ***** |
+
+
+sj|c|
+mb|p|mb|2S|an|Romex, ask to make SSTB|
+pg| ***** 55 ***** |
+
+
+sj|c|
+mb|p|mb|3H|an|not interested|
+pg| ***** 56 ***** |
+
+
+mb|pp|
+pg| ***** 57 ***** |
+
+
+at|
+North is a rock-bottom flat minimum and the likelyhood is that South's shortage will be in Diamonds or Spades rather than Clubs, so on several counts they're just not interested Again, on a good day, you might still make 10 tricks.
+|
+pg| ***** 58 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 4,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 4|sv|-|sk|e|sk||
+md|4,S53HA962DK65CJT94,,SA7HKQJ873D2CA875|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 4      This is great, because it means that you only get to actually show WHERE your shortage lies (thereby giving more information to the defence) when partner is mid-range and/or it makes a definite difference to partner which suit your shortage is in.
+
+So it's not usually the case that you give info away to Opps unless YOU and partner are going to get some benefit from exposing the location of your shortage.
+|
+pg| ***** 59 ***** |
+
+
+mb|1H|an|5+ @H  11-15|
+pg| ***** 60 ***** |
+
+
+sj|c|
+mb|p|mb|1N|an|Forcing|
+pg| ***** 61 ***** |
+
+
+sj|c|
+mb|p|mb|2C|
+pg| ***** 62 ***** |
+
+
+sj|c|
+mb|p|mb|2H|
+pg| ***** 63 ***** |
+
+
+bt||
+nt|^z@3^b@2|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   ...bidding of that hand will be continued in a moment.
+
+
+Bear in mind that it's always the player who is going to be Declarer who makes the trial bid.
+
+To ask you where the shortage is, partner simply relays in the next suit up over the Romex Bid.  Thus 1@H - 2@H - 2@S - 2NT and 1@S - 2@S - 2NT - 3@C are each saying "Ok, where is your shortage?".
+
+Now the trial bidder bids the suit BELOW their shortage (the scheme is identical to that for Mini-Splinters, as it happens). Thus:
+
+^e1@H - 2@H - 2@S - 2NT - 3@C   shows  a   Diamond     ^pshortage
+^e1@H - 2@H - 2@S - 2NT - 3@D   shows  a   Spade       ^pshortage
+^e1@H - 2@H - 2@S - 2NT - 3@H   shows  a   @CCLUB@C    ^pshortage
+              
+^e1@S - 2@S - 2NT - 3@C - 3@D   shows  a   Heart       ^pshortage
+^e1@S - 2@S - 2NT - 3@C - 3@H   shows  a   @CCLUB@C    ^pshortage
+^e1@S - 2@S - 2NT - 3@C - 3@S   shows  a   @DDIAMOND@D ^pshortage
+
+Although it is extremely unlikely that you would ever want to use the short-suit as a control asking bid in this kind of sequence, we use the suit-below method for consistency with the rest of this system.
+
+If you are not playing Precision then you can happily just bid the short suit itself rather than the suit below (but even there you may need to make some adjustments when the shortage is in a Minor.
+
+Either way, you cannot afford for your response to go PAST 3 of the agreed Major, otherwise you're committed to game regardless.
+|
+pg| ***** 64 ***** |
+
+
+Qx|MMTO,hide|
+nt|^z@3^b@2|
+at|^^^^|
+fp|t-title|at|^bMovie Maker  @-  Time Out|fp||at|^mIf this sort of thing does not work for you, just click flow.
+
+ ^*bsov^*n  means   Singleton or Void   a short way of writing the longer word   "shortage".
+
+Oliver's table on the previous page can be learnt, it's not that hard.  What works for me is to study it looking for the structure and then trying to remember and hold that structure in my mind.
+
+Once the major is agreed, next bid up is ROMEX, next bid up from that is 'go-ahead'.
+
+The earlier table is good for de-coding what partners bid means.  It is less useful for quickly en-coding a given shortage in your hand into a bid.      Here are some observations @-  
+
+^c@2The highest bid you can make is three of the agreed major.
+
+A @CClub sov always maps to a bid of  3@H's     (for both majors).
+^w @3
+If your sov is the  ^*bsuit above^*n  the lowest bid allowed for that major then that is the bid you want.
+For @Hhearts agreed, a @DDiamond  sov  is shown by the lowest bid allowed 3@C's
+For @sspades agreed, a @HHeart  sov      is shown by the lowest bid allowed 3@D's
+
+I think of the suits in a column with spades at the top.  I noticed from Oliver's table that hearts push one unit into the next ring of suits and spades pushes two units in.  What this tells me is that when @SSpades, are agreed a @DDiamond sov must be shown by 3@S's,  the highest allowed bid. 
+
+That is five of the six sovs done.  Leaving, for hearts (the first double step) which is interestingly  the reverse of the case discussed above.
+When @hhearts are agreed, a @SSpade sov is is shown by a bid of 3@D's.
+
+|ht|q|at|^^^^@0@1^x@2@s^^@h^^@d^^@c |
+ht|z|at|@0@1^b@2^*bMM:^*n  Back to Oliver   @- 
+|
+pg| ***** 65 ***** |
+
+
+qx|t 4b,thin|
+st||
+sj|c|
+mb|p?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  ...bringing back the unfinished  Teach 4^z@3|
+pg| ***** 66 ***** |
+
+
+mb|2S|an|May I make a short trial bid ?|
+pg| ***** 67 ***** |
+
+
+sj|c|
+mb|p|mb|2N|an|OK go on|
+pg| ***** 68 ***** |
+
+
+sj|c|
+mb|p|mb|3C|an|@D shortage|
+pg| ***** 69 ***** |
+
+
+sj|c|
+mb|p|mb|3H|
+pg| ***** 70 ***** |
+
+
+mb|pp|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Questions?|
+pg| ***** 71 ***** |
+
+
+nt|^z@3^b@2|
+at|^^billyjef:  If spades was the short suit, would you accept the short suit game try?
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Clubs would be the best suit for West.  The problem with Spades is that there's not a lot of ruffing value there (probably only 1 ruff in the East hand) But certainly Diamonds is the worst possible suit for West Kxx opposite a singleton or void is largely valueless.     Again here, on a good day, you might make 4@H (and lots of East's might bid game straight off here), but if they ask the question, West should decline on this sequence.
+|
+pg| ***** 72 ***** |
+
+
+nt|^z@3^b@2|
+at|
+nekthen:  Have you got a deal where short suit trial works better than long?|
+pg| ***** 73 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 5,thin|
+rh||ah|Teach 5|sv|e|sk|n|sk||
+md|2SAJT95H9DKT9CAQ93,,SK643HT875DQ84CK7,|
+mb|p?|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 5      I'd not say that the Short Trial bid in @H necessarily works BETTER here than a long trial in Diamonds. Both work equally well.|
+pg| ***** 74 ***** |
+
+
+mb|p|
+pg| ***** 75 ***** |
+
+
+sj|c|
+mb|p|mb|1S|an|5+ @S, 11-15 hcp|
+pg| ***** 76 ***** |
+
+
+sj|c|
+mb|p|mb|1N|an|forcing|
+pg| ***** 77 ***** |
+
+
+sj|c|
+mb|p|mb|2C|
+pg| ***** 78 ***** |
+
+
+sj|c|
+mb|p|mb|2S|
+pg| ***** 79 ***** |
+
+
+sj|c|
+mb|p|mb|2N|An|May I make an SSTB (Romex)|
+pg| ***** 80 ***** |
+
+
+sj|c|
+mb|p|mb|3C|an|OK, go on|
+pg| ***** 81 ***** |
+
+
+sj|c|
+mb|p|mb|3D|an|@h  shortage|
+pg| ***** 82 ***** |
+
+
+sj|c|
+mb|p|mb|4S|
+pg| ***** 83 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^3@D here effectively shows a @H shortage.  North has the perfect holding opposite a @H shortage. lots of losing Hearts to ruff in Declarer's hand.
+|
+pg| ***** 84 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 6,thin|
+st||
+rh||ah|Teach 6|sv|-|sk|n|sk||
+md|3SA975HQJ752DJCQ82,,SQJT8DAQ986CAJT6,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 6     |
+pg| ***** 85 ***** |
+
+
+mb|1D|
+pg| ***** 86 ***** |
+
+
+sj|c|
+mb|p|mb|1H|
+pg| ***** 87 ***** |
+
+
+sj|c|
+mb|p|mb|1S|
+pg| ***** 88 ***** |
+
+
+sj|c|
+mb|p|mb|2S|
+at| South might well bid 3@S here, but suppose they're a wimp and only bid 2@S.
+|
+pg| ***** 89 ***** |
+
+
+sj|c|
+mb|p|mb|2N|An|May I make an SSTB ?
+|
+pg| ***** 90 ***** |
+
+
+mb|p|mb|4S|an|game anyway|
+at|
+South by-passes the SSTB request and just goes to game anyway.|
+pg| ***** 91 ***** |
+
+
+mb|pp|
+at|^^^^Any questions?
+|
+pg| ***** 92 ***** |
+
+
+bt||
+nt|^z@3^b@2|
+at|^^
+lute57:  Can Intervener and Advancer (defenders) use ROMEX?
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Yes, you can but the situation is a little different when Opps have opened.
+
+You've overcalled and partner has raised you only to the 2-level (given the availability of Unassuming cue-bids etc). 
+My system wouldn't use Romex in that situation, for example because some of the time you're going to end up making a bid that is indistinguishable from a slow cue-bid of their suit, which we use for something else @-
+
+^c(1@D)  -  1@S  -  (2@D)  -  2@S  -  2NT(Romex)  -  3@C(OK do it)  -  3@D(@H shortage)                 ^uclashes with 
+^c(1@D)  -  2@S  -  (2@D)  -  2@S  -  2NT(Leb)        -  3@C(forced)    -  3@D(GF in @S, @D control) 
+
+but if you weren't using those methods, you could try Romex over overcalls. ... let's move on.
+|
+pg| ***** 93 ***** |
+
+
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  One thing that it's VERY important to be clear on concerning the whole issue of making Trial Bids is the Captaincy of the Hand.Once you make a trial bid (or ask permission to make one), you hand over the Captaincy of the Hand to PARTNER, 100%.    So if the bidding starts :@-
+^c@21@H - 1@S
+2@S - 3@D(Long Trial Bid for @S)
+3@S(Not interested) - ???
+^b@2If Responder now bids 4@S, ignoring Opener's statement with 3@S that they are not interested in game, this is unilaterally grabbing back the Captaincy of the Hand when the 3@D Trial Bid hands it over to Opener 100%. 
+
+This is utterly wrong, tends to destroy partnership confidence in each other and is effectively saying "I know better than you, and what you think doesn't matter".
+
+If you're not interested in hearing the answer to the question, then don't ask the question in the first place (ie: bid 4@S over 2@S in this instance).
+
+Karen10: ?  Is it not possible, responder makes trial bid with SLAM interest and then reverts to game ?
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Coming right up...
+|
+pg| ***** 94 ***** |
+
+
+bt||
+nt|^z@3^b@2|
+at|^^^^|cp|red|at|^*bOliverC:^*n|cp||at|  The ONLY time it is defensible to have a sequence such as that is when the Trial Bid is actually a "slam trial bid".
+
+The Trial bid itself is, of course, 100% forcing so Responder, in this instance, can make a cheap slam try IN THE GUISE of a Trial Bid. 
+
+Take the following hand:  You hold @SAK107xx, @Hx, @DAKJ10x, @Cx and partner opens 1@H. Over your 1@S response, partner bids 2@S.
+ 
+Now what?  4@D would be a Splinter in @H, for Spades, but a shortage in @H is not likely to set partner on fire. 
+
+Similarly a 4@H bid, ostensibly showing the Club shortage, might be misunderstood for a Delayed Game Raise in Hearts (it is an ambiguous sequence).
+
+3@D, however, is bombproof. If Opener is lower range or if they nothing helpful in Diamonds, they will bid 3@S and now you sign off in game. 
+
+If, however, Opener is Upper Range, or mid-range with a helpful holding in Diamonds, they will bid 4@S and now 4NT from you can only be an invitation to cue-bid (specifically looking for the Ace of Clubs with partner, or you'd bid 5@C yourself) which will make everything clearer. 
+
+Situations like these will, for practical purposes, always be ones where it is Responder's suit that Opener has agreed, and Responder (whose hand will not be limited in any way) is making the invitation. 
+
+If Responder has agreed Opener's suit by making only a 2-level raise, then it is inconceivable that Opener (who has already limited their hand by their choice of Opening) has enough to invite slam rather than game (assuming you're playing Precision, of course). 
+|
+pg| ***** 95 ***** |
+
+
+bt||
+nt|^z@3^b@2|
+at|^^^^|cp|red|at|^*bOliverC:^*n|cp||at|  If you're playing 2/1 or Standard American, of course, Opener might well be strong enough.
+
+Romex therefore achieves the seemingly impossible and gives additional advantages in that we only give information to Opp's when it is more important to US to decide at what level to play.
+
+On many hands you will find that you could potentially make either a short-suit or a long-suit trial bid.
+
+On these occasions you have to think about what you want partner to have in the trial suit, but normally long-suit trial bids give less away and should be preferred.
+
+For example, suppose you hold   @SAQxxx  @HAxxx  @Dx  @CAxx     You open 1@S and partner raises to 2@S.
+
+Do you make a long-suit trial bid in Hearts or Clubs or ask to make a short-suit trial bid and then show your Diamond shortage?
+
+On the kind of hand where you have good control of the other side-suits, I would prefer a short-suit trial bid in Diamonds.
+
+But if the hand was more like    @SAKQTxx   @HJ10xx   @Dx   @CAx   I would definitely make a long-suit trial bid in Hearts rather than a short-suit trial in Diamonds.
+
+Ok, if there are no more questions for now, let's play some practice hands to drive these points home.
+|
+pg| ***** 96 ***** |
+
+
+--------------------------------------------------------------------
+qx|Prac,wide|
+at|^^^^|
+fp|t-title|at|Practice Hands|fp||
+at|^^|
+at|^^4 volunteers pls, ^^
+Karen10:  hi David and ops:)
+lute57:  hi
+billyjef: Hi
+|
+pg| ***** 97 ***** |
+
+
+------------------------------------------------------------------------------------------------  
+%% Alert Insert start --------------------------------------------------------------------------
+nt|^z@3^b@2|
+at|^^^^|
+%%   header box with text
+ht|b|cs|y|fp||at|^b{ ^^|
+ht|c|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^|fp|x-insertAlert|at|^- A small insert on Alerts^*n^-^^|cs||fp||cp||at|^^|
+
+ht|d|at|^^|
+cp||at|^*bMM:^*n|cp||at|  We all know we have to alert when playing  'proper'  bridge.
+
+The laws of the game say that what we have to put in the alert is  ^*b our agreement with partner ^*n about that bid.
+
+While creating these bridge movies, I have gone through and added to, or amended, many of the alerts that were in the original text.
+
+I have changed them from being ^*b REAL ^*n alerts, that you should give to real opponents, and have replaced them with ^*b STUDY ^*n alerts.   Study alerts are only useful to students of Oliver's Precision.  Of course in many cases no changes were needed.   For example    1@c     16+ Any dist except 16-23 4441
+
+It is particularly important that we make the alerts for  ^*b Asking bids and their responses^*n,  as clear as possible
+
+	    ^c ^*b Study Alert ^*n           ^i ^*b Real Alert ^*n                ^o ^*b It would be great if you could add ^*n
+     ^b      @-@-@-@-@-@-@-@-@-@- ^h       @-@-@-@-@-@-@-@-@-@-   ^n       @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-
+		^c Beta    Relay Beta ...          ^i Gen Ctrl Ask                    ^o A = 2,  K = 1 
+		^c Alpha                           ^i Asking  in                      ^o Trump ...
+		^c Gamma                           ^i Asking  in partners suit        ^o Trump ...
+		^c Epsilon                         ^i Specific Ctrl Ask               ^o in ... 
+		^c Hxx                             ^i Hxx                             ^o in ... 
+		^c none  or  1st & 2nd             ^i none  or  1st & 2nd             ^o [xxx, AKx(x)]
+		^c 3rd rd ctrl                     ^i 3rd rd ctrl                     ^o [xx, Qxx(x), Qx]
+		
+An easy mistake in reply to an Epsilon is when, say, you hold ^*b Q76 ^*n in the suit, and so give only ^*b Qxx ^*n in the alert.   THAT  IS  WRONG.  The agreement is ^*b 3rd round control ^*n and that is what should be told to the opps.   
+
+The ^*b ethical ^*n problem with telling too much to your opps is that it disadvantages the other pairs who will play your opponents cards.|
+%% Alert Insert End ----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------  
+pg| ***** 98 ***** |
+
+
+--------------------------------------------------------------------
+st||
+md|1,,,|sk|n|
+nt|^b@2^z@3|
+cp||at|^*bMM:^*n|cp||at|  ^*bPractice Hands  @-  How to^*n
+^^With all Practice Hands, when you see the |fp|g-graphSuit|cp||at|^*b ? ^*n|cp||fp||at| in the bidding area, please @- |cp|red|at|^*bStop^*n|cp||at| @- and think through your bid.
+If you can't work it out then the best thing is to do, is  @- go back and re-read that part of Oliver's lesson.|
+pg| ***** 99 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 1,thin|
+pn|lute57,Karen10,billyjef,Major_Blue|rh||ah|Practice 1|sk|n|
+md|3SAQ876HA987DAT2C7,,SKJ9HT5DKQ93CT853,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|    Practice 1       Your bid ?| 
+pg| ***** 100 ***** |
+
+
+mb|p|
+pg| ***** 101 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 102 ***** |
+
+
+mb|1S|an|5+ @S, 11-15 hcp|
+pg| ***** 103 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 104 ***** |
+
+
+mb|1N|an|Forcing 1 round|
+pg| ***** 105 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 106 ***** |
+
+
+mb|2H|
+pg| ***** 107 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 108 ***** |
+
+
+mb|2S|an|Spades agreed|
+pg| ***** 109 ***** |
+
+
+sj|c|
+mb|p?|
+at|     What would be a good long suit trial bid ?
+|
+pg| ***** 110 ***** |
+
+
+mb|3D|an|long suit trial bid in D|
+pg| ***** 111 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 112 ***** |
+
+
+mb|4S|
+pg| ***** 113 ***** |
+
+
+sk||
+mb|pp|
+pg| ***** 114 ***** |
+
+
+nt|^z@3^b@2|
+at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  So here a long trial bid in Diamonds from South, pinpointing the Club shortage as well, as it happens.
+
+lute57:  23 HCP game
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  North has the perfect holding opposite a Club shortage and a Diamond fragment.|
+pg| ***** 115 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 116 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2,thin|
+pn|lute57,Karen10,billyjef,Major_Blue|rh||ah|Practice 2|sk|e|
+md|4,SA987HK754DT97C64,,S3HAQ982DAKJ5CT98|
+mb|?|
+nt|^z@3^b@2|
+at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2      |
+pg| ***** 117 ***** |
+
+
+mb|1H|an|5+ @H  11-15|
+pg| ***** 118 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 119 ***** |
+
+
+mb|2H|
+pg| ***** 120 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 121 ***** |
+
+
+mb|3D|
+pg| ***** 122 ***** |
+
+
+sj|c|
+mb|p?|
+pg| ***** 123 ***** |
+
+
+mb|3H|
+pg| ***** 124 ***** |
+
+
+sk||
+mb|pp|
+pg| ***** 125 ***** |
+
+
+at|Long trial in Diamonds  -  here declined.|
+pg| ***** 126 ***** |
+
+
+ub|99|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Let me show you a couple of ways we might bid this ultra thin game using Precision.|
+pg| ***** 127 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2b,thin|
+rh||ah|Practice 2b|sk|e|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2b        If West decides to show her spades then -|
+mb|?|
+pg| ***** 128 ***** |
+
+
+mb|1H|an|5+ @H  11-15|
+pg| ***** 129 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 130 ***** |
+
+
+mb|1S|
+pg| ***** 131 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 132 ***** |
+
+
+mb|2D|an|2nd Suit|
+pg| ***** 133 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 134 ***** |
+
+
+mb|2H|an|Agreeing @H's|
+pg| ***** 135 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 136 ***** |
+
+
+mb|2S|an|May I do a short suit trial|
+pg| ***** 137 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 138 ***** |
+
+
+mb|2N|an|OK, go on|
+pg| ***** 139 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 140 ***** |
+
+
+mb|3D|an|singleton or void in @S|
+pg| ***** 141 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 142 ***** |
+
+
+mb|4H|
+pg| ***** 143 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 144 ***** |
+
+
+mb|p|
+pg| ***** 145 ***** |
+
+
+sk||
+at|^^^^|cp|red|at|^*bOliverC:^*n|cp||at|   And you are there.|
+pg| ***** 146 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2c,thin|
+ub|99|
+rh||ah|Practice 2c|sk|e|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2c        If West decides to use the forcing 1NT then -|
+mb|?|
+pg| ***** 147 ***** |
+
+
+mb|1H|an|5+ @H  11-15|
+pg| ***** 148 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 149 ***** |
+
+
+mb|1N|
+pg| ***** 150 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 151 ***** |
+
+
+mb|2D|an|2nd Suit|
+pg| ***** 152 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 153 ***** |
+
+
+mb|2H|an|Agreeing @H's|
+pg| ***** 154 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 155 ***** |
+
+
+mb|3c|an|Long suit trial in @C|
+pg| ***** 156 ***** |
+
+
+sk||
+sj|c|
+mb|p|
+mb|?|
+at|^^^^Now West might infer a ruffing value in Clubs and a @S shortage and decide to revalue their hand upwards.|
+pg| ***** 157 ***** |
+
+
+mb|4h|
+at|^^^^|cp|red|at|^*bOliverC:^*n|cp||at|   And you are there.|
+pg| ***** 158 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 159 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 3,thin|
+md|1S6HAQ53DA9763CQT4,,SAT98HKJT742DT4C7,|rh||ah|Practice 3|sk|s|
+mb|?|
+nt|^z@3^b@2|
+at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 3      |
+pg| ***** 160 ***** |
+
+
+mb|1D|
+pg| ***** 161 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 162 ***** |
+
+
+mb|1H|an|5+ @H  11-15|
+pg| ***** 163 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 164 ***** |
+
+
+mb|2H|an|Oliver - probably 3@H better|
+pg| ***** 165 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 166 ***** |
+
+
+mb|2S|an|May I make a short suit trial bid|
+pg| ***** 167 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 168 ***** |
+
+
+mb|4H|
+pg| ***** 169 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 170 ***** |
+
+
+sk||
+mb|p|
+at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Here 2@S was asking to make a short trial bid and South answered by just going straight to game.
+
+South is only a little short of bidding 3@H anyway, so if North can make ANY kind of invitation, South wants to be there.
+|
+pg| ***** 171 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 172 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 4,thin|
+md|2ST96HKT9D874CAJT8,,SK8HAQ643DQJ92CK7,|rh||ah|Practice 4|sv|b|sk|n|
+nt|^z@3^b@2|
+at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 4       |
+mb|p?|
+pg| ***** 173 ***** |
+
+
+mb|1H|
+pg| ***** 174 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 175 ***** |
+
+
+mb|1N|
+pg| ***** 176 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 177 ***** |
+
+
+mb|2D|
+pg| ***** 178 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 179 ***** |
+
+
+mb|2H|
+pg| ***** 180 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 181 ***** |
+
+
+mb|3D|an|Long suit trial bid in D|
+pg| ***** 182 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 183 ***** |
+
+
+mb|3H|an|not interested|
+pg| ***** 184 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 185 ***** |
+
+
+sk||
+mb|p|
+pg| ***** 186 ***** |
+
+
+at|  Here North makes a long suit trial bid in @D and is declined.  xxx  is the worst possible holding opposite a long trial in @D (apart from xxxx, that is).
+
+lute57(John):  Since jef did not do a LSGT with frag should I infer he lacks shortage in the two unbid suits?
+
+|
+cp|red|at|^*bOliverC:^*n|cp||at|   Quite possibly, John, yes, but it's also possible that he is 5-5, of course. |
+pg| ***** 187 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 188 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 5,thin|
+pn|lute57,Karen10,billyjef,Major_Blue|rh||ah|Practice 5|sv|e|sk|e|
+md|3,SQJT3HQT76DA7652,,SA962HAKJ32DTCJ54|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 5    |
+mb|p?|
+pg| ***** 189 ***** |
+
+
+mb|1H|an|5+ @H  11-15|
+pg| ***** 190 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 191 ***** |
+
+
+mb|2s|an|mini-splinter, may I|
+pg| ***** 192 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 193 ***** |
+
+
+mb|2N|an|OK - tell me|
+pg| ***** 194 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 195 ***** |
+
+
+mb|3H|an|@c shortage|
+pg| ***** 196 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 197 ***** |
+
+
+mb|4h|an|That will do nicely|
+pg| ***** 198 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 199 ***** |
+
+
+sk||
+mb|p|
+pg| ***** 200 ***** |
+
+
+at|^^^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   That  ^*bIS^*n  the RIGHT sequence.|
+pg| ***** 201 ***** |
+
+
+md|1,,,|nt|^^^bcleared|
+pg| ***** 202 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 6,thin|
+pn|lute57,Karen10,billyjef,Major_Blue|rh||ah|Practice 6|sv|e|sk|e|
+md|4,SKJ872DAK764CA74,,SAQ954HAQ2DT53C85|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 6      |
+mb|?|
+pg| ***** 203 ***** |
+
+
+mb|1S|an|5+ @S, 11-15 hcp|
+pg| ***** 204 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 205 ***** |
+
+
+mb|4H|an|@H splinter|
+pg| ***** 206 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 207 ***** |
+
+
+mb|4S|
+pg| ***** 208 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 209 ***** |
+
+
+sk||
+sj|c|
+mb|p|
+pg| ***** 210 ***** |
+
+
+at|A good example of West not seizing the Captaincy back.  Nicely done.  
+
+The @H splinter has done East no good at all.  There is too much wasted in @H, and no help in the Minors and minimum anyway, so 4@S  and  (a good) West, takes the hint.
+
+Any questions or comments?|
+pg| ***** 211 ***** |
+
+
+--------------------------------------------------------------------
+qx|end,thin|
+bt||
+nt|^z@3^b@2|
+at|
+
+
+Ruah:  Earlier you said @-
+
+^dxxx  is the worst possible holding opposite a long trial bid, apart from  xxxx,  that is.
+
+Ruah:  What's the best ?   (singleton ?)
+
+|cp|red|at|^*bOliverC:^*n|cp||at|   Well a shortage (singleton or void) is good and a holding such as Hx or Hxx is fine.
+
+
+
+
+Next week we will be turning our attention to how this system deals with the situation where 
+
+OUR Opening of 1@H or 1@S is doubled for takeout: MOTOR.
+
+Aspirin is DEFINITELY recommended LOL.
+
+
+
+Ruah:  ha
+
+Ruah:  And Valium
+
+
+
+|cp|red|at|^*bOliverC:^*n|cp||at|   Thanks for coming - Night all|

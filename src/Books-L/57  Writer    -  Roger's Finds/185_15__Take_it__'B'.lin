@@ -1,0 +1,216 @@
+%%
+%%
+
+ss|chapter,15.                                            Take  It   'B'   |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2017-08-08          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Roger's  Finds                   2019  and  Past  Years |
+%%
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       Maroon
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    Around the normal Grey
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title     
+fh|b50|                    Font   b  b-bigTitle
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+%
+cr|a230|cg|a040|cb|a130|   text   a  a-action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       on Title Pages
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    on Title Pages
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|y|n#|b|lg||at|^b@2@1|at|
+^*bClick^*n          ^*bFlow >^*n         or use your    ^*bMouse Wheel^*n|
+ht|z|at|@0
+^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|j|
+Lg|f|
+fp|4|at|^c@2^z@3|
+
+at|This deal also fits with the proverb quoted back in   Roger's Find  ##7  
+
+|fp|t-title|at|       If you only get one chance   -   Take It.|fp||at|  |
+qx|# 14|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+bv|a,h|
+rh||ah|Find 15|
+md|1s85hAQJ82dAKcT742,sQJ,sK62h764dQ732cAK5,A73|
+kc|sQJ sA73|
+sv|e|sk|s|
+nt|^z@3^b@2^^|n^|5|
+lg||
+at|^*bFind 15^*n     The hand|
+pg| ***** 1 ***** |
+
+
+at|,     the bidding|
+mb|1h|
+pg| ***** 2 ***** |
+
+
+mb|p|mb|1n|an|forcing|
+pg| ***** 3 ***** |
+
+
+mb|p|mb|2c|
+pg| ***** 4 ***** |
+
+
+mb|p|mb|4h|
+pg| ***** 5 ***** |
+
+
+mb|p|mb|p|mb|p|
+pg| ***** 6 ***** |
+
+
+pc|sQ|
+at|,     the lead.|
+pg| ***** 7 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Thnk,wide|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|Do your thinking  NOW.|
+pg| ***** 8 ***** |
+
+
+eb|y___|
+at|           (Later you will get a chance to generate some  E-W  hands and  play out the deal.)|
+n#|5|at|
+Taking  South  as the master hand we have  6  losers    2@s   2@h   0@d   2@c
+
+So what is the best line (or lines) to get 10 tricks.    In other words,  how to - reduce the losers to 3  ?|
+pg| ***** 9 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Shuf,wide|
+
+bt||
+nt|^z@3^b@2^^|n#|5|
+lg|2|fp|t-title|at|How to Shuffle and deal the  East-West  hands|fp||at|          ^*bREAD^*n the document  
+
+Full instructions are provided (with clear diagrams) in the file called   ^*b Shuf Op - The aaBridge Button.doc ^*n
+
+which is in the   ^*g:Doc Collection::Welcome, aaBridge Document collection^*n    click on the blue link to read how to get it.  Below is a 'refesher'.
+|n^|3|at|
+
+
+|n#|m|lg|b|
+fp|t-title|cp|he|at|^*bHow to  Create and Shuffle  the  East-West  hands|fp||cp||at|         (quick summary)
+|n^|5|at|
+At the bottom far right (in the green) you will ^*b LATER ^*n see the  { ^*b Enter the Deal  ^*n }  button.  ^*b Click It. ^*n    
+|n^|0|at|^d|fp|s|at|(It will not show  ^*bNOW^*n.  It can only show when you have a deal occupying the the top area of the page.)|fp||at|
+|n^|5|at|
+Whenever you click the   { ^*b Shuf Op ^*n }   button (top left in the green) the  ^*bEast - West^*n  hands will be re-dealt.  
+|n^|0|at|^k|fp|s|at|(Note - the problem author MAY have chosen to fix some cards in place.)|fp||at|
+|n#|5|at|Click the { ^*b Play ^*n } |at|button (on the left) and see if your PLAN will succeed against that pair of East West hands.
+
+|n#|i|fp|t-title|cp|he|at|^*bHow to   Control the  East-West  visibility^*n|fp||cp||at|
+|n#|3|at|You can control the visibility of the East West hands by clicking one of the radio buttons in the right-hand column under   |cp|cl|at|^*bNon You Seats are set ?^*n|cp||at|   ^*bShow^*n  will show them,   ^*bHide^*n  will hide them,  but only AFTER each shuffle.
+
+|n#|f|fp|t-title|cp|he|at|^*bAnalyser|fp||cp||at|
+|n#|3|at|You can also click the  { ^*b Analyse ^*n }  button  (top right in the green) to show the Analyser Grid.  This shows you which contracts can make and which will fail, assuming perfect play by both sides.
+|n^|6|at|
+At other times if you have NO contract you can quickly set one by clicking on any contract in the Analyser Grid.  
+
+|ht|z|n#|g|at|Later when you have finished remember to - click  the     |cp|red|fp|t|at|@.|cp||fp||at|{ ^*bApply Defaults^*n }   button on the right.@0|
+pg| ***** 10 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Try,wide|
+st||
+nt|^z@3^b@2^^|n^|5|
+
+cp|red|at|^*bUsing the methods covered on the previous page^*n|cp||at|  Play Out  your plan.  See if you can get an idea as to what percentage of hands your plan works on.   More generally you can get an idea of how often the contract can be made by|
+lg|m|at|
+Turning on  { ^*b Analyse ^*n }  and repeatedly clicking the { ^*b Shuf Op ^*n }  to show which contracts are makable.
+Clicking  { ^*b Shuf Op ^*n }   for a while will give you an idea.    Is it   50-50,   60-40,   70-30   or  whatever ?|
+pg| ***** 11 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Asys,wide|
+st||
+bv|f,h|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bAnalysis^*n      We can 'evaporate' a @h loser by deciding that the @h's must be 3-2.  The other @h loser goes away because we can finesse @hK (twice if we need to) so the @hK must be with East.      One of the @c losers can go on the @dQ, so the @d's need to be 4-3.   Given the @sQ lead the @sA is almost certainly with East, one could try the @sK anyway.   This does mean that we need West to have at least 3 spades, to stop West over ruffing East's third @s.   But if all this is true we can ruff the 3rd @s. Unblock @dAK.  Cross to @cA.  @dQ discarding low @c.  Finesse against @hK.  Cross to @cK.  Finesse against @hK.  Drop the @hK with our @hA and the final @h (trump) gives you 10 tricks.|
+pg| ***** 12 ***** |
+
+
+---------------------------------------------------------------------------
+qx|DDS,wide|
+kc||
+eb||
+nt|^z@3^b@2^^|n^|5|
+at|^*bDDS^*n    ^eYou are now free to explore the deal.
+|n^|7|lg|k|at|^^^c@2If you still need help then, when in the deal, click the ^*b DDS  { is Off/On ^*n }  button top right.
+|fp|s|at|A number (of tricks) in a GREEN oval shows a good card to play for THAT side.|fp||
+
+ht|z|n#|8|at|^a All restrictions on the  { ^*b Enter the Deal  ^*n }  button are now lifted.  {^*b Shuf Op ^*n} will now shuffle ALL the East - West cards.|
+pg| ***** 13 ***** |
+
+

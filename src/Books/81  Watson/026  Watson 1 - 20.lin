@@ -1,0 +1,785 @@
+%%CH-20-P-1.lin
+%%%%%%%%%%%%%% DEFENSIVE  DISCARDS
+%%By Kia
+%%%Last edit by Gail Ballou 12-24, 2011/01-08-2012
+mn|  DEFENSIVE  DISCARDS        Chapter XX|
+bt||
+%%Font and color codes
+fh|155|ff|1Arial|fb|19|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|36|fm|3|                           FOR 3
+fh|430|ff|4Arial|fi|4y|fm|4|     %%Larger than default -  italic
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|30|cg|30|cb|3128|                dark Blue 3
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|664|cg|6255|cb|6255|             6=TURQUOISE
+cr|70|cg|7235|cb|7235|              green/blue 7
+cr|8255|cg|80|cb|80|                red 8
+cr|9128|cg|950|cb|90|               Reddish-brown 9
+
+os|y|  %%   Overlap Shrink   -  floating Hand will shink if they overlap
+
+%%%
+tu|1|cs|6|ht|e|fp|3|at|^-
+WATSON's Classic Book on The Play of the Hand at Bridge
+
+Part I, Fundamentals of Play
+
+Chapter Chapter XX, DEFENSIVE DISCARDS
+^-|FP||ht|L|at|
+^*U^DTABLE OF TOPICS ^*N
+
+|cp|1|AT|^D^*G20B01,Defensive Discards ^*N  
+^D     ^*G20B02,The Echo and Its Uses ^*N   
+^D     ^*G20B03,When to Encourage and When to Discourage Partner ^*N   
+^D     ^*G20B04,Echoing With an Honor^*N  
+^D     ^*G20B05,Echoing When Unable to Follow Suit ^*N   
+^D     ^*G20B06,Temporizing Discards ^*N
+^D     ^*G20B07,Miscellaneous Discarding ^*N
+^D     ^*G20B08,Third Hand's Play to Partner's Short-Suit Leads^*N
+^D     ^*G20SUM,Summary^*N|CP||at|
+
+^C@2^Y@3 |
+PG| ***** 0 ***** |
+
+
+cp||nt||
+%%%%%%%%%  %%%%%%%%%%%%%%%%%%
+qx|20B01,DEFENSIVE DISCARDS |
+nt||HT|e|at|^B@2^Y@3One of the most complex aspects of defensive play is the proper handling of discards. Strictly speaking, a ^*Idiscard^*N is the throwing off an unwanted card - familiar in the common phrase "to throw into the discard," which means to abandon as worthless. In this sense, in Bridge, a card thrown off when the player is unable to follow to the suit led is a discard. |
+PG| ***** 1 ***** |
+
+
+AT|But in the language we use in describing the play of the hand the term discard also includes the play of certain cards of the led suit. A discard, then, may be a card thrown off on a suit of which you are exhausted, or a card of the suit led played without any intention of taking the trick. For example, if you play the four of hearts on a heart lead, that is a discard in the wide meaning used here, and also if, lacking a heart, you throw off a spade (not a trump, of course), on a heart lead, that is a discard too. |
+PG| ***** 2 ***** |
+
+
+AT|
+
+Many "family" Bridge players who have made no study of the game think that discards are unimportant. If they cannot take the trick, they throw off any card that seems useless at the moment, failing entirely to take Partner into consideration or to consider very carefully what the future of the hand may have in store. This is lamentably unimaginative and may prove costly more often than not. |cp|8|at|Every play and every card are of importance|cp||at|. Even with what looks like a hopeless hand, you must not resign yourself to the role of a "dummy."|
+PG| ***** 3 ***** |
+
+
+AT| The player who, because he holds no card above the Ten, sits back and pays attention only enough to follow suit when able - to avoid being penalized for a revoke - should take up some other game.|
+PG| ***** 4 ***** |
+
+
+cp|8|FP|2|at|
+
+Discards, like leads, should tell a story|cp||FP||at|. It may be a sad story,|
+Pg| ***** 5 ***** |
+
+
+AT| if you have a blank hand, but the story must be told nevertheless. In this way, discards become signals. Some are red lights telling Partner to stop; others are beckoning green lights telling him to make full speed ahead. There are thus discouraging discards and encouraging discards.|
+PG| ***** 6 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%%%%Page
+nt||HT|e|at|^B@2^Y@3Discards, or signals, as they are sometimes called, fall into three main classes. Two have just been mentioned - |cp|8|FP|2|at|encouraging|cp||FP||at|  and |cp|8|FP|2|at| discouraging|cp||FP||at|. The third class consists of what, for want of a better name, may be called    "|cp|8|FP|2|AT|temporizing discards|cp||FP||at|" - or "|cp|8|FP|2|AT|stalling|cp||FP||at|," or "|cp|8|FP|2|AT|marking time|cp||FP||at|." The encouraging discard is a signal to Partner that you desire a certain suit to be continued or to be led; the discouraging discard is a signal to Partner that you desire a certain suit to be discontinued or not to be led. The temporizing discard is perhaps the most important, and it indicates that you are not sure, at the moment, whether a certain lead is desirable or undesirable.|
+PG| ***** 7 ***** |
+
+
+AT|
+
+Encouraging and discouraging discards were once separated by a rather sharp line of demarcation - at|cp|8|FP|2|at| the six-spot|cp||FP||at|. Any card higher than the six was considered encouraging; any card lower than the six, discouraging. The only doubtful card was the six-spot itself. |
+PG| ***** 8 ***** |
+
+
+AT|
+
+The limitations of this cut-and-dried system are at once apparent. What on earth could you do if your lowest card in a suit happened to be the seven, and you had to discard in this suit, and yet you wished to discourage your Partner? Or, holding A K 3 2 in a suit, you wanted to tell Partner to lead it, and yet had no encouraging card to discard? Certainly you would not throw off the Ace or King to encourage Partner, and the trey or deuce would be bound to tell him |cp|8|at|No|cp||at|.|
+PG| ***** 9 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%%%%55
+qx|20B02,THE ECHO AND ITS USES |
+nt||HT|e|cs|1|cp|4|fp||at|^-{    THE ECHO AND ITS USES    }
+^-|cp||fp||at|^B@2^Y@3M|FP||AT|r. Joseph B. Elwell,|cp|8|at|^*B*^*N|cp||at| a famous Bridge authority, solved the problem by inventing a play which is now widely used in Contract Bridge. This play is known as the |CP|8|AT|^*Iecho^*N|CP||AT|. It consists of discarding a card of any denomination whatsoever, either in following to Partner's led suit or in throwing off on a suit to which the player is unable to follow. Subsequently a lower card in the same suit is played, completing the |CP|8|AT|^*Iecho^*N|CP||AT|. This is a definite signal - also dubbed the "|cp|8|at|high-low|cp||at| "signal - for Partner to continue the suit, if it is the one he is leading, or to shift to that suit at the first opportunity. This play has liberalized the iron-clad "six-spot" rule. A player could echo, you see, by playing as low a card as the trey, and later playing the deuce. Thus important cards could be conserved - an impossible thrift under the old regime. Today the echo has been considerably improved upon.|
+PG| ***** 10 ***** |
+
+
+AT|
+
+Of course, the trouble with the echo is that sometimes it is not possible to complete the play. Holding @D Q 9 3, for example, the nine-spot must be played on Partner's lead of the King. Obviously the three-spot cannot be either led or discarded at a later time, as this will succeed only in blocking the suit. Under circumstances such as these, Partner must interpret the nine as an encouraging discard or, if he prefers, as the beginning of an echo which cannot be completed. Of course, with @D Q 9 7 3, it is easy to first play the nine-spot and discard the seven-spot later. Now the echo is completed.|
+PG| ***** 11 ***** |
+
+
+AT|
+
+Sometimes a card as high as the nine-spot is not available. For example, suppose that you held @D Q 5 3 and your Partner opens the Jack. You must play the most encouraging card available, namely, the five-spot. It is a little difficult for Partner to read this discard, but he may find the necessary clue from the fact that the three-spot is missing. This depends entirely on his judgment.|
+PG| ***** 12 ***** |
+
+
+AT|
+
+You will see, therefore, that there is some point in retaining a part of the old Whist convention. A card higher than a six-spot is more likely to be the beginning of an echo (whether it is subsequently completed or not) than a card lower than a six-spot. However, it is still true that a seven may on occasion be discouraging and a trey encouraging. Partner must watch each trick very carefully and form his opinion on the basis of the outstanding cards.
+|
+PG| ***** 13 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%%Page
+nt||HT|e|cs|1|cp|4|fp||
+at|^-{    THE ECHO AND ITS USES    }
+^-|
+cp|8|fp|1|at|^B@2^Y@3*|FP||AT|^*I  Many readers will remember that Elwell was murdered, and that his slayer was never brought to justice. His name is thus famous not only in Bridge but also in the annals of unsolved murder cases.
+
+Sam Fry, Jr.^*N|
+PG| ***** 14 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%
+QX|20B03,WHEN TO ENCOURAGE AND WHEN TO DISCOURAGE PARTNER |
+HT|e|cs|1|cp|4|fp||at|^-{    WHEN TO ENCOURAGE AND WHEN TO DISCOURAGE PARTNER    }
+^-|
+cp||fp||at|^B@2^Y@3T|FP||AT|he question of when to encourage and when to discourage Partner is rather simple when defending against a no-trump contract. If Partner leads an honor, the chances are that he holds a strong honor sequence. Therefore, if you also hold an honor in the suit, you must inform Partner of the good news, if possible, so that when he regains the lead he will have no qualms about continuing that suit. The following rather elementary situation makes this clear:|
+PG| ***** 15 ***** |
+
+
+NT||st||PN|Declarer,Partner,,You|md|1cat75,cqj932,c6,ck84|rh||ah|Diagram 1|MB|3nPPP|SK|E|NT|^B@2
+Your Partner (West) opens the Queen against South's no-trump contract. The Dummy's six is played, of course, and you are now faced with a choice of cards.|PC|cq|PC|c6|
+PG| ***** 16 ***** |
+
+
+at| An unthinking player would automatically drop the four-spot. If the distribution of the suit between Declarer's hand and your Partner's is fairly normal, which you must take for granted until you learn otherwise, you should not expect your Partner to have more than five clubs.|
+PG| ***** 17 ***** |
+
+
+NT|^B@2
+If he held originally the Queen-Jack-Ten or Queen-Jack-nine, Declarer will have either four to the Ace-nine or four to the Ace-Ten. Therefore, you cannot afford to unblock by plunking your King right on the Queen. And if you play the four-spot, Partner will not know, when he regains the lead, whether to continue clubs or shift to some other suit, for you can never play a lower card than the four. |
+PG| ***** 18 ***** |
+
+
+NT|^B@2
+You must do your best to be informative, so your proper play is the eight.|
+PG| ***** 19 ***** |
+
+
+PC|C8|
+PG| ***** 20 ***** |
+
+
+SK||AT|
+
+Contrary to a widespread belief, this does not immediately tell your Partner that you have the King - it simply tells him that you want the suit continued. If you play the four-spot, Partner must assume that you do not want the suit continued, since you have not encouraged him. (He knows that the four-spot must be your lowest card in the suit, as he holds the trey and deuce himself.)|
+PG| ***** 21 ***** |
+
+
+NT|^B@2
+Take the following slightly more advanced case:|
+PG| ***** 22 ***** |
+
+
+NT||
+  
+%%%%%%%%%%%Page
+st||md|1cak75,cqj932,c6,ct84|sk|E|rh||ah|Diagram 2|MB|3NPPP|NT|^B@2
+Again your partner leads the Queen,|PC|CQ|PC|C6|
+PG| ***** 23 ***** |
+
+
+cp||AT| and you should still play the eight. |PC|C8|
+PG| ***** 24 ***** |
+
+
+cp||AT| Why? Because you know that against a no-trump contract, Partner's Queen must mean either from A Q J or Q J 9 (since you have the Ten). In either instance, you must inform him that the continuation of the suit seems advantageous. Even if you hold 9 8 4, your play would still be the eight on the first round, letting Partner know that he can return a low card of the suit from his holding of Q J 10 (it must be Q J 10 or A Q J now) with the expectation that you have a card that will force out Declarer's second stopper. |
+PG| ***** 25 ***** |
+
+
+SK||NT|^B@2
+Of course, if Partner's holding is as good as A Q J, he will continue with his high cards instead of a low one, but he is glad to know that you like the suit.|
+PG| ***** 26 ***** |
+
+
+AT|
+
+Even with echoing there must be a limit somewhere. If you hold 8 7 4 in the above situation, and Dummy still has only the six, you cannot encourage Partner - you cannot even temporize - but you must play the four. You realize that if Partner holds Q J 10 9 he will not care whether he receives any encouragement or not.|
+PG| ***** 27 ***** |
+
+
+NT|^B@2
+The proper play is more obvious when the Dummy has an honor - next situation:|
+PG| ***** 28 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%% Page
+st||md|1dq7,Djt932,Dk54,Da86|sk|E|ha|y|rh||ah|Diagram 3|MB|3NPPP|NT|^B@2
+If Partner opens the Jack and Dummy plays low,|
+PG| ***** 29 ***** |
+
+
+PC|dj|pc|d4|
+PG| ***** 30 ***** |
+
+
+AT| you are naturally going to hold up your Ace as you must retain your tenace position over the Dummy, in order to keep that King from becoming the commanding card.|
+PG| ***** 31 ***** |
+
+
+SK||AT| However, you do not unthinkingly play the six, but you deliberately play the eight so that your Partner, when he regains the lead, can push his Ten through Dummy's King and render it worthless. Thus Declarer wins but 1 trick in this suit.|
+PG| ***** 32 ***** |
+
+
+PC|d8dq|
+pg| ***** 33 ***** |
+
+
+NT||BT||
+%%%%%%%%%%
+HT|e|cs|1|cp|4|fp||at|^-{    WHEN TO ENCOURAGE AND WHEN TO DISCOURAGE PARTNER - Continued    }
+^-|
+cp||fp||at|^B@2^Y@3T|FP||AT|he question naturally arises as to what you should do when your lowest card is one which may easily be construed by Partner as encouraging. The answer is that your Partner is expected to be on the lookout for such situations and recognize them by examining his own and Dummy's low cards, to determine, if possible, whether your apparently high discard is likely to be your lowest in the suit.|
+PG| ***** 34 ***** |
+
+
+AT|
+
+Now suppose that, in the preceding situation, you hold only the eight and six (doubleton), instead of these two cards plus the Ace. Now you do not wish to encourage your Partner, so you play the six, and Declarer wins with his Queen. Could your Partner ever take that six as an encouraging card? Not on this deal, for he holds the trey and deuce himself and he can see the five and four in the Dummy. Consequently he knows that the six is your ^*Ilowest^*N card. Against a clever Declarer the true aspect of the suit may not be at once apparent if, for example, the Declarer holds the lower cards in the suit, for he may try to confuse the Defending Side by holding up those lower cards at first, in order to make a discard seem encouraging when it is really the lowest card the player has. But this is rather rare, and, furthermore, the dilemma can be escaped by the application of a little common sense.|
+PG| ***** 35 ***** |
+
+
+AT|
+
+Whenever you are the Opening Leader, you should watch your Partner's card very carefully. If there seem to be at least two cards lower than the one played, which are not visible, it is best for you to believe that your Partner intends to encourage you. If there is but one lower card missing, you must be wary and suspicious - your Partner may be encouraging you or the Declarer may possibly be laying a trap for you. Your decision must be based on the merits of the situation. If it is desperate, you had better be encouraged and take the consequences if any. Or perhaps you know your Declarer, and your knowledge of his psychology may help you. Do not let occasional errors demoralize you, for even experts often guess wrong.|
+PG| ***** 36 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%
+st||SK|E|md|1hak9,hjt876,h5,hq432|HA|Y|rh||ah|Diagram 4|MB|3NPPP|NT|^B@2
+As we have seen, the importance of the echo depends chiefly on the fact that it permits signaling with very low cards, as, for example.|
+PG| ***** 37 ***** |
+
+
+PC|HJh5|at| Your Partner opens his Jack, and you know that he must have held either A J 10 or K J 10, or something of the kind. Possibly he may have held only J 10 8. You like the suit, since you have four to the Queen, and you hope your Partner will continue it when he regains the lead. But certainly you cannot play your highest card - the Queen. |
+PG| ***** 38 ***** |
+
+
+NT|^B@2
+Your best encouraging card is the four, and you therefore play it.|PC|H4|
+PG| ***** 39 ***** |
+
+
+AT| Declarer wins the trick with his Ace. Partner reasons:|
+PG| ***** 40 ***** |
+
+
+PC|HA|AT| 
+
+That four is probably encouraging, since both the trey and deuce are not to be seen and Partner may easily have one of them. The odds are in favor of this supposition, and the suit may be continued. |
+PG| ***** 41 ***** |
+
+
+SK||NT|^B@2
+You, as East, must show Partner the trey or deuce of hearts at the first chance. This may be either on the second round of hearts (if you are in the lead), or, if a suit of which you are void is led, you must throw it off then. As soon as your Partner sees that lower heart he gets your message. Until you play the trey or deuce of hearts, your Partner must remain in doubt about your four-spot's meaning.|
+PG| ***** 42 ***** |
+
+
+NT||BT||
+%%%%%%%%%%%%%%
+QX|20B04,ECHOING WITH AN HONOR|
+HT|e|CS|1|CP|4|AT|^-{    ECHOING WITH AN HONOR    }
+^-|
+CS||cp||fp||at|^B@2^z@3I|FP||AT|t is not impossible to echo with an honor, but the occasion for it is very rare. When such a play is made it is really not an echo in essence, but is the beginning of an unblocking play. For example, if your Partner leads a small card in a suit of which you hold the Jack-Ten and a small card, you naturally play the Ten if the Dummy plays low. However, if the Dummy plays a card higher than the Jack, you must encourage a continuation of that suit by playing your Ten or Jack under Dummy's commanding card. In this instance, your proper play is the Jack, which absolutely guarantees that you hold the Ten (unless the Jack is a singleton). Similarly, from a Queen-Jack combination, the discard of the Queen guarantees the Jack, and from a King-Queen combination, the discard of the King guarantees the Queen. As you will readily see, this is a combination of the echo and an unblocking play. |
+PG| ***** 43 ***** |
+
+
+NT||bt||
+%%%%%%%%%%%
+qx|20B05,ECHOING WHEN UNABLE To FOLLOW SUIT|
+HT|e|CS|1|cp|4|AT|^-{    ECHOING WHEN UNABLE TO FOLLOW SUIT    }
+^-|
+CS||cp||fp||at|^B@2^Y@3E|FP||AT|ncouraging discards can be effectively made when you cannot follow to the suit led, and the opportunity occurs rather often. The following deal illustrates this play:|
+PG| ***** 44 ***** |
+
+
+NT||
+st||md|saqh532dk9432caq5,sjt98h76daqjcj942,sk76haqtdt75ck763,s5432hkj984d86ct8|ha||rh||ah|Diagram 5|MB|3NPPP|NT|^B@2
+Your Partner (West) opens the spade Jack against South's three no-trump contract. The six is played from Dummy.|PC|SJS6|
+PG| ***** 45 ***** |
+
+
+cp||AT| Clearly you do not like this suit as a means of defense, so you discard your deuce - even though you hold four cards of your Partner's suit, you still do not wish to encourage him. |PC|S2|
+PG| ***** 46 ***** |
+
+
+cp||AT|Declarer wins with the Ace, deliberately concealing the fact that he also has the Queen, though his ruse will probably avail him nothing since East's deuce practically denies the Queen.|PC|SA|
+PG| ***** 47 ***** |
+
+
+NT|^B@2
+Now suppose the Declarer tries to take 4 club tricks, leading the Ace and Queen out of his own hand and winning the third round with Dummy's King.|
+PC|cac2c3ct|
+PG| ***** 48 ***** |
+
+
+PC|cqc4c6c8|
+PG| ***** 49 ***** |
+
+
+PC|c5c9ck|
+PG| ***** 50 ***** |
+
+
+cp||AT| On this third round of clubs you have an opportunity to make a discard of some other suit. What card do you throw away?|
+PG| ***** 51 ***** |
+
+
+lb|*CWhich card should East play ?^^h9^Hkj984s543d86|cp||AT| You should not hesitate, for you now have a chance to tell your Partner what suit of yours promises the best defensive hope. Hearts!|
+PG| ***** 53 ***** |
+
+
+NT|^B@2
+And which heart?|
+PG| ***** 54 ***** |
+
+
+cp||at| The nine, of course,|cp||PC|H9|
+PG| ***** 55 ***** |
+
+
+AT| which is so high that Partner cannot possibly mistake its significance. There is nothing to be gained by saving the nine and throwing off the eight, which may, once in a hundred times, mislead Partner. He ^*Imight^*N think the eight is your lowest heart, and the nine is a little more emphatic in its encouragement.|
+PG| ***** 56 ***** |
+
+
+NT|^B@2
+Declarer, having failed to make that fourth club trick (of course, he abandons the suit at the end of the third round when you make your high heart discard), now busies himself with diamonds, though they offer small hope. He will probably lead the Ten from Dummy and let it run around,|PC|dtd8d2|
+PG| ***** 57 ***** |
+
+
+AT| your Partner winning with his Jack (the bottom card of his Queen-Jack). |PC|DJ|
+PG| ***** 58 ***** |
+
+
+NT|^B@2
+Your Partner, getting the message broadcast by your high heart discard, is under no misapprehensions about his lead. Your spade deuce told a story which the nine of hearts confirmed. You do not like spades, but you are crazy about hearts. Being thrifty as well as cautious, Partner first cashes in his good club Jack, of course,|PC|CJc7|
+PG| ***** 59 ***** |
+
+
+at| and you jubilantly throw off your four of hearts, completing the echo.|PC|h4d3|
+PG| ***** 60 ***** |
+
+
+NT|^B@2
+There is now no doubt whatever - Partner leads a heart through Dummy's tenace.|PC|H7|
+PG| ***** 61 ***** |
+
+
+cp||AT| The Declarer probably will not go up with the Ace, but will attempt some sort of finesse. Whether he plays the Queen or Ten from Dummy, you win the trick.|PC|HtHJH2|
+PG| ***** 62 ***** |
+
+
+cp||AT| Your best return is probably a spade. Though you do not particularly like the suit, you do not need to neglect it, since Partner's first lead showed he had some spades. Furthermore, you cannot lead hearts, and you are exhausted of clubs.|
+PG| ***** 63 ***** |
+
+
+NT|^B@2
+Since the Declarer has been trying to establish diamonds, there is no reason for you to be so generous as to lead the suit for him. The spade is led then,|PC|s3sqs8s7|
+PG| ***** 64 ***** |
+
+
+cp||at| which Declarer wins. Having little choice, Declarer continues his diamonds, giving your Partner another trick in this suit and the chance to lead his second heart.|pc|d9dqd5d6|
+PG| ***** 65 ***** |
+
+
+pc|h6hqhkh3|
+PG| ***** 66 ***** |
+
+
+cp||AT| Again the Declarer finesses, and again you win the trick. Your best return is again a spade. At this point Declarer cannot help losing |cp|8|at|^*Itwo^*N|cp||at| more tricks to West - 1 diamond trick and 1 spade trick.|
+PG| ***** 67 ***** |
+
+
+AT|
+|cp|8|at|Movie Maker: |cp||at|The last sentence cannot be correct. I consulted one of our on-line experts and you will see his response next.|
+PG| ***** 68 ***** |
+
+
+NT||UP|40|cp|8|AT|
+^B@2^*BExpert: ^*N|cp||at|Watson's analysis was not correct. Declarer always has 7 tricks, 3 clubs, 3 spades, and one heart. So, the last sentence should read "^*IAt this point, Declarer cannot avoid losing one more diamond trick to West.^*N"|
+PG| ***** 69 ***** |
+
+
+AT|
+
+|cp|8|at|Movie Maker: |cp||at|Now, let us resume Watson's instructions.|
+PG| ***** 70 ***** |
+
+
+NT|^B@2
+This hand is very elementary, and yet it exemplifies very well the proper way to signal Partner by means of discards. If you did not hold both the King and Jack of hearts, or, in other words, if you did not hold 2 sure tricks in the suit, you could not make quite so emphatic a discard as the nine. You would be better advised to temporize - a form of signaling soon to be explained.|
+PG| ***** 71 ***** |
+
+
+NT|^B@2
+The discouraging discard requires but a few words. It is the reverse of the encouraging discard. It tells Partner that, if he thinks a suit can be established, he must attempt it entirely on his own responsibility. In other words, he cannot hope to find any aid in your hand. The discouraging discard says, in effect, that if Partner cannot take full responsibility he must try some other suit in which you may possibly be able to help him - in short, he must shift to another line of defense.|
+PG| ***** 72 ***** |
+
+
+NT|^B@2
+You signal Partner to go warily, and to take the entire burden on his own shoulders, by playing your lowest possible card on his lead, whether the lead be a strong sequence lead or a plain length lead. By thus discouraging that particular suit, you indicate that you very likely have some assistance in one of the other suits. If you have no assistance anywhere - if your hand is entirely blank - it is better to play some mildly encouraging or ambiguous card rather than to discourage Partner in his opening suit, for then the first suit may be as good as any defensive forces you have at your disposal. |
+PG| ***** 73 ***** |
+
+
+NT||BT||
+%%%%%%%%%%%%%%
+QX|20B06,TEMPORIZING DISCARDS |
+HT|e|CS|1|CP|4|AT|^-{    TEMPORIZING DISCARDS     }
+^-|
+CS||cp||fp||at|^B@2^Y@3T|FP||AT|he necessity for a temporizing discard arises more often than for either a discouraging or an encouraging discard. After all, Contract Bridge is not the sort of game in which the proper line of play is as plain as daylight from the start. Even after a few tricks have been won or lost, it may not be entirely obvious which line of defense is likely to prove the best. Therefore you have to make allowances, leaving some leeway for a change of mind later on, if desirable.|
+PG| ***** 74 ***** |
+
+
+AT|
+
+The following example of an encouraging discard will serve to show exactly how the temporizing discard works:|
+PG| ***** 75 ***** |
+
+
+NT||
+st||SK|E|md|1d76,dkqt5,da32,dj984|HA|Y|rh||ah|Diagram 6|MB|3NPPP|NT|^B@2
+Your Partner (West) opens the King against South's no-trump contract.|PC|DK|
+PG| ***** 76 ***** |
+
+
+cp||AT| A low card is played from Dummy.|
+PG| ***** 77 ***** |
+
+
+PC|d2|cp||AT| You, as East, are eager to have the suit continued, since you know Partner's lead cannot be from anything other than King-Queen-Ten (you have the nine yourself, and the Ace is in the Dummy). As a matter of fact, you could throw off the Jack here without doing any damage, but this is not essential. Your play of the nine will tell your Partner the same story - that you hold the Jack and wish the suit continued. |
+PG| ***** 78 ***** |
+
+
+PC|D9|SK||
+PG| ***** 79 ***** |
+
+
+NT||
+st||SK|E|md|1cj6,ckqt5,ca32,c9874|HA|Y|rh||ah|Diagram 7|NT|^B@2
+Suppose, however, that the situation is as follows:|MB|3NPPP|
+PG| ***** 80 ***** |
+
+
+AT|  West makes the same King lead, |PC|ck|
+PG| ***** 81 ***** |
+
+
+cp||AT| and Dummy plays low.|
+PG| ***** 82 ***** |
+
+
+PC|C2|
+PG| ***** 83 ***** |
+
+
+cp||AT| Now which card should you, as East, play? You have four cards in the suit; you know that your Partner is making a strength-showing lead - from either King-Queen-Jack or King-Queen-Ten - and yet you do not dare encourage him too strongly lest the Jack be in Declarer's hand.|
+PG| ***** 84 ***** |
+
+
+AT| If you want to encourage him, you should play your eight; if you want to discourage him, you should play your four. Actually, you do not want to do either positively. You would much rather leave the decision to your Partner. Therefore, your proper play is the seven - to temporize. |
+PG| ***** 85 ***** |
+
+
+PC|C7|
+PG| ***** 86 ***** |
+
+
+SK||NT|^B@2
+You may ask, "How can Partner interpret this card?" The answer is that he may have trouble, but, allowing for the law of averages, he should decide that the seven may not be your lowest card. In fact, the Declarer will play the six-spot, leaving but one card lower than the seven missing - the four-spot. If Partner has no better lead, he will therefore feel that he had better continue this suit.|
+PG| ***** 87 ***** |
+
+
+at|  Consider Partner's reasoning somewhat further. He decides that the seven is not a downright discouraging discard, and that, in fact, it looks like a compromise. What holding can East have which induces him to make such a compromise? He cannot have four cards to the Jack, for then he would certainly want to be positively encouraging.|
+PG| ***** 88 ***** |
+
+
+NT|^B@2
+If his seven-spot is neither his second highest nor his lowest card, East must have somewhat less than four to the Jack. If the holding were but three cards, he would have played his lowest beyond a doubt. His only possible holding, then, is four cards without the Jack. If this is true, the Declarer must hold the Jack alone, which can be caught under the Ace by the simple lead of the Queen.|
+PG| ***** 89 ***** |
+
+
+NT||
+st||SK||md|2sk75,sa84,sqt6,sj932|HA|y|rh||ah|Diagram 8|NT|^B@2
+A temporizing discard may occur when Declarer tackles a suit, thus:|
+PG| ***** 90 ***** |
+
+
+MB|3NPPP|
+PG| ***** 91 ***** |
+
+
+cp||AT| The Declarer leads low from Dummy (North) with the intention of playing his King.|PC|S6|
+PG| ***** 92 ***** |
+
+
+cp||AT| On Dummy's six what should you, as East, play? Should you casually follow suit with the deuce? No!|
+PG| ***** 93 ***** |
+
+
+cp||AT| You should play the trey.|PC|s3|
+PG| ***** 94 ***** |
+
+
+AT| The King will still be played, and your Partner will win with the Ace.|PC|SKSA|
+PG| ***** 95 ***** |
+
+
+cp||NT|^B@2
+Of course, at this point your Partner cannot tell that you would like to have the suit led again. However, there will come a time later in the play when you will be able to discard on the lead of a suit of which you have no cards. Then you can complete your |cp||at|echo|cp||at| in spades by playing the deuce so that your partner will be absolutely certain that you hold the protected Jack over the Dummy, and he will lead the suit if he finds it necessary to the defensive campaign.|
+PG| ***** 96 ***** |
+
+
+NT|^B@2
+Sometimes early discarding prepares the way for plays made on the very last trick, as in the following deal:|
+PG| ***** 97 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%
+pn||st||md|3SAKQ83HKT4DAJ4C98,S62H9632DQT62CK53,SJTHAQJ5D983CAJ74,S9754H87DK75CQT62|rh||ah|Diagram 9|ha||mb|p|mb|p|mb|6N|mb|p|mb|p|mb|p|NT|^B@2
+Suppose you and your Partner (East and West) are defending against South's contract of six no-trump.|
+PG| ***** 98 ***** |
+
+
+AT| West opens a heart (the deuce).|pc|h2|
+PG| ***** 99 ***** |
+
+
+pc|h5|pc|h7|pc|hT|
+pg| ***** 100 ***** |
+
+
+at| Difficulties present themselves at once. The Declarer will simply run off the first 9 tricks without stopping for breath - 5 spade tricks and 4 heart tricks. If you and your Partner do not exchange some information, there is grave danger that you will both throw away the same suit. |
+PG| ***** 101 ***** |
+
+
+NT|^B@2
+In other words, suppose that you, as East, decide to protect your King of diamonds by discarding clubs. Suppose that West should decide to do precisely the same thing - that is, keep his diamond Queen guarded by throwing off clubs.|
+PG| ***** 102 ***** |
+
+
+pc|hK|pc|h3|pc|hJ|pc|h8|
+pg| ***** 103 ***** |
+
+
+pc|h4|pc|h6|pc|hQ|pc|d5|
+pg| ***** 104 ***** |
+
+
+pc|hA|pc|c2|pc|c8|pc|h9|
+pg| ***** 105 ***** |
+
+
+pc|sT|pc|s4|pc|s3|pc|s2|
+pg| ***** 106 ***** |
+
+
+pc|sJ|pc|s5|pc|sA|pc|s6|
+pg| ***** 107 ***** |
+
+
+pc|sK|pc|c3|pc|d3|pc|s7|
+pg| ***** 108 ***** |
+
+
+pc|sQ|pc|d2|pc|c4|pc|s9|
+pg| ***** 109 ***** |
+
+
+pc|s8|pc|d6|pc|c7|pc|d7|
+pg| ***** 110 ***** |
+
+
+NT|^B@2
+The result will be as above at the end of the ninth trick (displayed above): You may be sure that Declarer will have watched your discards. He will now simply lead a low diamond, conceding you the trick.|
+PG| ***** 111 ***** |
+
+
+pc|d4|pc|dT|pc|d8|pc|dK|
+pg| ***** 112 ***** |
+
+
+at| You have to return a club, giving Declarer the lead with his Ace. |pc|c6|PC|c9|pc|cK|pc|cA|
+pg| ***** 113 ***** |
+
+
+cp||at| He then plays his diamond Ace, on which West's Queen falls, and the Jack will be good for the last trick.|pc|d9|pc|cT|pc|dA|pc|dQ|
+pg| ***** 114 ***** |
+
+
+pc|dJ|pc|c5|pc|cJ|pc|cQ|
+pg| ***** 115 ***** |
+
+
+cp||NT|^B@2
+How can your partnership avoid the debacle?|
+PG| ***** 116 ***** |
+
+
+Up|52|at|  Looking at all four hands, you can easily see the answer. Your hand should hold on to the singleton King of diamonds, and three clubs to the Queen-Ten, just as you did before. But your Partner should retain the singleton King of ^*Iclubs^*N, and ^*Ithree diamonds^*N to the Queen-Ten. Then, no matter how the Declarer plays, you will have both diamonds and clubs protected twice so that he cannot take more than 1 trick in either suit. |
+PG| ***** 117 ***** |
+
+
+NT|^B@2
+How can you exchange the necessary information to bring about this result without seeing all four hands? Simply by making a temporizing discard at the first opportunity. Let us say that after the opening heart lead, Declarer starts cashing the hearts as before.|
+PG| ***** 118 ***** |
+
+
+cp|8|at|
+
+Movie Maker: |cp||at|Here, I made minor changes in Watson's text to keep the same Declarer's play.|
+PG| ***** 119 ***** |
+
+
+pc|h2|pc|h5|pc|h7|pc|hT|
+pg| ***** 120 ***** |
+
+
+pc|hK|pc|h3|pc|hJ|pc|h8|
+pg| ***** 121 ***** |
+
+
+pc|h4|pc|h6|pc|hQ|NT|^B@2
+East exhausted of hearts, East should discard the six of clubs. This discard will later show Partner the suit you are protecting.|
+PG| ***** 122 ***** |
+
+
+pc|c6|
+pg| ***** 123 ***** |
+
+
+pc|hA|pc|d5|pc|c8|pc|h9|
+pg| ***** 124 ***** |
+
+
+pc|sT|pc|s4|pc|s3|pc|s2|
+pg| ***** 125 ***** |
+
+
+pc|sJ|pc|s5|pc|sQ|pc|s6|
+pg| ***** 126 ***** |
+
+
+pc|sA|NT|^B@2
+Now, West has the opportunity to give East information. His first informative discard is the six of diamonds.|PC|D6|
+PG| ***** 127 ***** |
+
+
+AT|  From now on the Declarer is doomed. East knows that West holds something in diamonds, and East can therefore afford to blank his diamond King by throwing off the two little ones. Similarly, West knows that East has something in clubs, and he can afford to blank his King of that suit. Thus East/West partnership secures command of the diamond and club situation by an exchange of signals.^*N|
+PG| ***** 128 ***** |
+
+
+pc|c4|pc|s7|
+pg| ***** 129 ***** |
+
+
+pc|sK|pc|c3|pc|d3|pc|s9|
+pg| ***** 130 ***** |
+
+
+pc|s8|pc|c5|pc|c7|pc|d7|
+pg| ***** 131 ***** |
+
+
+pc|d4|at| And the auction is set. |
+PG| ***** 132 ***** |
+
+
+cp||NT||bt||
+
+%%%%%%%%%%%%%%%%%
+qx|20B07,MISCELLANEOUS DISCARDING|
+HT|e|CS|1|cp|4|AT|^-{    MISCELLANEOUS DISCARDING    }
+^-|
+CS||cp||fp||at|^B@2^Y@3A|FP||AT|nother rather important feature of discarding is the proper play after opening the highest card of Partner's bid suit. It is customary, under circumstances such as this, to ^*Idiscard downward^*N. For example, if you hold 8 5 3 of the suit Partner has bid, and make the eight-spot your opening lead, the five should be played the next time the suit is led. This gives Partner a partial count on your hand, and enables him to place you definitely with a void in the suit whenever your second card is the lowest one outstanding. This conventional discarding downward, as a matter of fact, is of more importance against a suit contract than against a no-trump contract.|
+PG| ***** 133 ***** |
+
+
+AT|
+
+Another unusual discard occurs when Partner opens an Ace against a no-trump contract. This lead must be from a long and very strong suit. It requires you to unblock that suit and to give Partner as much information as possible regarding your own holding in it. |cp|8|at|You do this by playing your highest card first, regardless of its denomination|cp||at|, and following with your next highest. For instance, with 9 7 6, play first the nine and follow with the seven-spot.|
+PG| ***** 134 ***** |
+
+
+NT||BT||
+%%%%%%%%%%%%%%%%%
+qx|20B08,THIRD HAND'S PLAY TO PARTNER'S SHORT-SUIT LEADS|
+HT|e|CS|1|cp|4|AT|^-{    THIRD HAND'S PLAY TO PARTNER'S SHORT-SUIT LEADS    }
+^-|CS||cp||fp||at|^B@2^Y@3W|FP||AT|hen you are sitting Third Hand, and Partner's opening lead is either the top of a short honor sequence or a pure desperation lead, the problem of what to do next is not by any means as difficult as it might appear.|
+PG| ***** 135 ***** |
+
+
+AT|
+
+When Partner's opening lead is an honor, you know immediately that he must also hold the honor directly below it in rank, but you cannot be very positive about the length of the suit. As a general rule, to be safe, you should assume that the suit probably contains at least four cards, but you must at the same time provide for the possibility that it contains only three cards - or even, occasionally, only two cards. The distribution of the suit is bound to show up more clearly after a few tricks have been played.|
+PG| ***** 136 ***** |
+
+
+AT|
+
+Naturally, when you yourself hold two cards headed by an honor, it is almost certain that Partner's lead is from four or five cards, and you must pave the way in your subsequent defense by unblocking immediately. When you hold three cards to an honor, you must encourage Partner by playing the middle card; when you hold four or more cards to an honor, the matter is even simpler, because you do not care whether Partner's lead is a short suit or not. With four low cards a temporizing discard is called for. In all other instances, the proper play is the ^*Ilowest^*N card you hold.|
+PG| ***** 137 ***** |
+
+
+AT|
+
+The desperation lead - top of a worthless short suit - does not require much comment. The only difficulty is how to tell Partner's desperation lead from a plain length lead. As a matter of fact, this dilemma is really your Partner's, not yours. He should avoid ever making a desperation lead with any card lower than the seven-spot, lest you mistake it for a length lead. If he simply cannot give you a desperation lead with a card higher than a seven, the application of the Rule of Eleven to Partner's lead will usually tell whether it ^*Iis^*N a length lead - or whether it ^*Ican be^*N a length lead. If the Rule of Eleven obviously does not fit the lead, the card may be taken as "top of nothing" - and usually it pays to assume that such a lead is being made from a three-card suit until later information tells you otherwise. In playing on such a lead, your own honor holdings should be handled as though Partner did not exist so far as that particular suit is concerned.|
+PG| ***** 138 ***** |
+
+
+NT||
+%%%%%%%%%%%%%
+qx|20SUM,Summary|
+HT|e|CS|1|CP|4|AT|^-{    Summary    }
+^-|
+CS||cp||fp||at|^B@2^Y@3T|FP||AT|his Chapter has by no means told the whole story of defensive discards, but these elementals are always true:|
+PG| ***** 139 ***** |
+
+
+FP|2|CS|1|CP|4|AT|
+^-
+{
+     The echo is the discard of a high card in a suit      
+     followed at a later time by a lower card of the same suit.     
+}
+^-
+|
+PG| ***** 140 ***** |
+
+
+FP||CP||CS||AT| 
+The echo can be made by playing a trey first, later followed by the deuce - either in following suit or in throwing off on a suit of which your hand has no more cards. The echo, or "high-low" signal, is always encouraging. Until it is completed, Partner must take the first card - whether apparently encouraging or otherwise - with a grain of salt.|
+PG| ***** 141 ***** |
+
+
+FP|2|CS|1|CP|4|AT|
+^-
+{
+    The normal discarding of the lowest card followed by higher ones is discouraging.    
+}
+^-
+|
+PG| ***** 142 ***** |
+
+
+FP||CP||CS||AT| 
+The temporizing discard, by far the most important because used the oftenest, consists of a card of a denomination such that, for the moment, Partner does not know whether it is encouraging or not. He has to decide for himself. |
+PG| ***** 143 ***** |
+
+
+at|
+
+
+This is the end of Chapter XX. |
+pg| ***** 144 ***** |
+
+
+LF|CH-21-P-1.LIN| 
+ 
+ 

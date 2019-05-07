@@ -1,0 +1,1377 @@
+
+%%
+%%  Date last Edited    2019-03-30
+%%
+
+ss|masthead,Learn to Play Bridge 2                  Ch 4.4  -  Defense  |
+
+ss|chapter,Suit  Preference  Signals                                        |
+
+
+<<--INSERT-START-->>=01___LTPB2__header_colors.ins
+%%
+cr|m120|cg|m040|cb|m069|   fill   m  m-mastColor       maroon
+cr|c248|cg|c231|cb|c189|   fill   c  c-chapterColor    beige cream
+%%
+<<--INSERT-END**-->>=01___LTPB2__header_colors.ins
+
+<<--INSERT-START-->>=02___LTPB___common.ins
+%%
+fh|180|ff|1Arial|fb|10|fm|1|      Font 1   Kia
+fh|235|ff|2Arial|fb|28|fm|2|      Font 2   Kia
+fh|350|ff|3Arial|fb|30|fm|3|      Font 3   Kia
+fh|430|ff|4Arial|fb|48|fm|4|      Font 4   Kia
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|60|fm|6|      Font 6
+fh|770|ff|7Arial|fb|70|fm|7|      Font 7
+fh|880|ff|8Arial|fb|80|fm|8|      Font 8
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1255|cg|1230|cb|1189|   Beige Cream
+cr|2200|cg|2245|cb|2210|   green ish
+cr|3249|cg|3249|cb|3255|   grey medium
+cr|4190|cg|4210|cb|4255|   blue grey
+cr|5198|cg|5205|cb|5229|   light grey
+cr|6122|cg|6000|cb|6049|   dark maroon
+cr|9255|cg|9255|cb|9255|   'white'
+
+fh|s29|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m60|                    Font   m  m-mastHead        size in banner 1
+fh|c60|                    Font   c  c-chapTitle       size in banner 2
+
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint           feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight       text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+%%
+pd|first          ,^a You can `cp`red`at`^*b now ^*n`cp``at` ^*bClick { ^*b 1st ^*n } below @0@1 to enter the deal and ^*b PLAY ^*n the cards.   Later click  { ^*b Back to Movie ^*n }  to return.|
+%%
+%%
+bv|f,v|  %% button visibility
+%%
+<<--INSERT-END**-->>=02___LTPB___common.ins
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+
+at|^b@2^z@3|
+cs|5|cp|6|fp|t|
+at|
+^-{ Suit preference signals }
+^-|fp||cp||at|
+You have come a long way in your studies of defensive signals. By now you should have a solid understanding of both attitude signals and count signals. The third (and last) type of signal that will be presented in this program is the suit preference signal. While the vast majority of the signals that you make as a defender will be either attitude or count signals, you will see that there are a few special situations where a suit preference signal can work wonders for the defense. Here is a reminder of the type of message that a suit preference signal delivers:
+
+|
+qx|4.4|
+pg| ***** 0 ***** |
+
+
+cs|4|at|^-{ Suit preference signals are used to tell your partner that 
+ you would like him to play a specific suit if he should gain the lead. }
+^-
+|
+pg| ***** 1 ***** |
+
+
+at|From the above description, you may think that suit preference signals are no different from encouraging attitude signals (which can also be used to ask your partner to lead a specific suit). In a sense that is true, but there is one aspect of suit preference signals that make these signals very different from encouraging attitude signals (or any other type of signal that we have seen for that matter):
+
+|
+pg| ***** 2 ***** |
+
+
+cs|2|at|^-{ A suit preference signal carries a message about a suit 
+ that is different from the suit in which the signal is made. }
+^-
+|
+pg| ***** 3 ***** |
+
+
+at|Attitude signals encourage or discourage the suit of the signal. Count signals show an even or an odd number of cards in the suit of the signal. Suit preference signals are different - they are signals in one suit that carry a message about some other suit. |
+pg| ***** 4 ***** |
+
+
+tb||
+nt|^b@2^z@3|n#|5|at|There are several situations where a partnership could agree to use suit preference signals on defense, but there is really only one situation where these types of signals are commonly used. Here is an example:
+
+|
+pg| ***** 5 ***** |
+
+
+at|Suppose that your partner is the opening leader against a trump contract and he leads a card in a side suit that is obviously a singleton (ignore for now why this is ^*Iobvious^*N). Let's assume that your partner's opening lead is the @D3 and your diamond holding is:
+
+|cs|3|at|^-{ |ih|pda952|at| }
+^-
+|
+pg| ***** 6 ***** |
+
+
+at|It seems like a good idea to win your @DA |
+pg| ***** 7 ***** |
+
+
+at|and to lead one of your small diamonds to the next trick so that your partner can win that trick with a ruff. From a purely trick-winning point of view, it won't matter which of your spot cards you lead to the second trick so you might as well use this opportunity to give your partner some kind of signal. 
+
+|
+pg| ***** 8 ***** |
+
+
+cs|2|at|^-{ One of the basic premises of signaling is that cards that are not relevant in terms of 
+ winning tricks should be put to some use - the use of sending a message to your partner! }
+^-
+|
+pg| ***** 9 ***** |
+
+
+cs|4|at|^-{ In deciding what kind of message a signal should carry in a given situation, 
+ the most important question to ask is: what does your partner need to know? }
+^-
+|
+pg| ***** 10 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|In this particular situation, when you are about to give your partner a ruff, the most important thing you can tell him is which suit you would like him to lead back after he gets his ruff. There are several reasons why this information might be important to your partner. The main reason is that if your partner can find a way to get you back on lead, you will be able to give him a second ruff.
+
+|
+pg| ***** 11 ***** |
+
+
+at|These are the diamonds that you have left at the point where you are about to lead a diamond for your partner to ruff:
+|cs|3|at|^-{ |ih|pd952|at| }
+^-
+|
+pg| ***** 12 ***** |
+
+
+cs|2|at|^-{ Using suit preference signals, the diamond that you lead will tell your partner
+ which suit you would like him to lead after he wins the next trick with a ruff. }
+^-
+|
+pg| ***** 13 ***** |
+
+
+cs|4|at|^-{ In a suit preference situation, the play of a low card asks your 
+ partner to lead the lower-ranking of the remaining side suits. }
+^-
+|
+pg| ***** 14 ***** |
+
+
+cs|1|at|^-{ In a suit preference situation, the play of a high card asks your 
+ partner to lead the higher-ranking of the remaining side suits. }
+^-
+|
+pg| ***** 15 ***** |
+
+
+cs|3|at|^-{ In a suit preference situation, the play of a middle card tells your partner 
+ that you have no preference as to which of the remaining side suits he leads. }
+^-
+|
+pg| ***** 16 ***** |
+
+
+nt|^b@2^z@3
+Suppose that in the current example hearts is the trump suit. Here are your diamonds again:
+
+|cs|3|at|^-{ |ih|pd952|at| }
+^-
+|
+pg| ***** 17 ***** |
+
+
+at|If you lead the @D2 (your lowest diamond) to the second trick, you are sending your partner the message that you would like him to return the lower-ranking of the remaining side suits after he ruffs. The remaining side suits are spades and clubs with clubs being the lower-ranking of these 2 suits. The @D2 would ask your partner to lead a club. Perhaps you were dealt the @CA and you will be able to give your partner a second ruff if he puts you on lead with that card.
+
+|
+pg| ***** 18 ***** |
+
+
+at|If you had the @SA instead of the @CA, you would return the @D9. The @D9, being your highest diamond, is a suit preference signal that asks your partner to lead a spade after he takes his ruff. If your partner gets the message he will put you back on lead in spades so that you can give him another diamond ruff.
+
+|
+pg| ***** 19 ***** |
+
+
+at|Finally, if you had no high cards to speak of in either of the remaining side suits, the correct card to lead back as a suit preference signal is the @D5. The @D5, being a middle diamond, suggests that you have no strong preference between the remaining side suits. Your partner will have to use his judgment to decide on the best suit to lead back after receiving his ruff.
+
+|
+pg| ***** 20 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|In the diamond holding that we have been considering so far:
+|n#|5|cs|3|at|^-{ |ih|pd952|at| }
+^-
+|
+pg| ***** 21 ***** |
+
+
+at|you were fortunate to have been dealt diamond spot cards that look high (the @D9), |
+pg| ***** 22 ***** |
+
+
+at|middle (the @D5), |
+pg| ***** 23 ***** |
+
+
+at|and low (the @D2). |
+pg| ***** 24 ***** |
+
+
+at|You could use these 3 diamonds to send the exact suit preference message that you want to your partner. You can ask him to return the lower ranking side suit (clubs), |
+pg| ***** 25 ***** |
+
+
+at|the higher ranking side suit (spades), |
+pg| ***** 26 ***** |
+
+
+at|or you can tell him that you have no preference as to which suit he leads back after scoring his ruff.
+
+|
+pg| ***** 27 ***** |
+
+
+cs|2|at|^-{ As with all types of signals, sometimes you are not dealt the ideal cards for
+ giving your partner as clear a suit preference signal as you would like. }
+^-
+|
+pg| ***** 28 ***** |
+
+
+at|You already know that the only thing you can do when you are not dealt the ideal cards for expressing the message that you would like to send to your partner is to do the best you can with what you were dealt. Hopefully your partner will consider the possibility that you may have been dealt a hand in which you did not have the card for making a signal that would be easy for him to interpret. Also, if you follow this piece of advice (which you have also seen before), your partner will have an easier time reading your signals:
+|n#|7|
+pg| ***** 29 ***** |
+
+
+cs|4|At|^-{ Always signal with the loudest card that you can afford! }
+^-
+|
+pg| ***** 30 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|For example, sometimes you will have only 2 cards to choose from in making your suit preference signal. Since it is impossible to send 3 different messages when you have only 2 cards to play, it may be harder for your partner to understand your intended message.
+|
+pg| ***** 31 ***** |
+
+
+n#|5|cs|3|at|^-{ |ih|pd95|at| }
+^-
+In this example, leading back your higher diamond (the @D9) would be a suit preference signal for spades |
+pg| ***** 32 ***** |
+
+
+at|and leading back your lower diamond (the @D5) would be a suit preference signal for clubs. It does not matter that the @D5 is a ^*Imiddle-looking^*N spot card. What matters is that it is the lowest diamond that you have.
+
+|
+pg| ***** 33 ***** |
+
+
+cs|2|at|^-{ With only 2 cards to choose from for your suit preference signal, these cards are used to 
+ show preference for the highest and lowest side suits. There is no way to say "no preference". }
+^-
+|
+pg| ***** 34 ***** |
+
+
+at|What if you really have no preference in a situation like this? That's just too bad. You have to go one way or the other and hope that your partner can figure out that you may not have been dealt a perfect holding to convey the message you would have liked. 
+
+It is usually the case that you have at least ^*Isome^*N preference between the 2 remaining side suits, but if you truly have no preference you will sometimes have to guess which card to return from a holding like the one above and leave it to your partner to work things out.|
+pg| ***** 35 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|Selecting a card to lead as a suit preference signal is not difficult from the following holdings, but as before, your partner will need to be on the ball if he is going to be able to read your signal:
+|cs|3|at|^F{ |ih|pd432|at| } |n#|s|at|^Q{|ih|pd987|at| }|n^|q|at|
+
+|at|In the first example, you have 3 diamonds to choose from. You can use these cards to ask for |
+pg| ***** 36 ***** |
+
+
+at|the highest suit (with the @D4), |
+pg| ***** 37 ***** |
+
+
+at|the lowest suit (with the @D2), |
+pg| ***** 38 ***** |
+
+
+at|or neither suit (with the @D3). 
+
+|
+pg| ***** 39 ***** |
+
+
+at|The problem is that all 3 of your diamonds might look low to your partner. Unless he is paying close attention to the other diamonds that he sees, he may read your suit preference signal as asking for the lowest side suit regardless of the diamond that you play. |
+pg| ***** 40 ***** |
+
+
+at|^^^^He will read the @D2 properly for sure, |
+pg| ***** 41 ***** |
+
+
+at|but he might not get the message if you lead back the @D4 or @D3. There is nothing you can do about this except to hope that your partner is able to see the light.
+
+|
+pg| ***** 42 ***** |
+
+
+at|Similarly, in the second example, all 3 of your diamonds might look high to your partner. |
+pg| ***** 43 ***** |
+
+
+at|If you give suit preference for the higher side suit with the @D9, the message will get through to him. |
+pg| ***** 44 ***** |
+
+
+at|^^^^However, it is possible that the @D8 (no preference) |
+pg| ***** 45 ***** |
+
+
+at|or the @D7 (preference for the lower side suit) will be difficult signals for your partner to read. |
+pg| ***** 46 ***** |
+
+
+at|He may well return the higher side suit regardless of the diamond that you play. 
+|n#|7|
+pg| ***** 47 ***** |
+
+
+cs|1|at|^^^-{ Don't let these examples scare you - holdings like those shown above are quite rare! }
+|
+pg| ***** 48 ***** |
+
+
+nt|^b@2^z@3|cs|2|at|^^
+ { Historical Note } |cs|1|at|^F {  @2Attitude and count signals are older than the game of contract bridge itself. These signals were developed in the 19th century by whist players. The suit preference signal was pioneered in 1934 by Hy Lavinthal of Trenton, New Jersey. The development of suit preference signals was arguably the most important and influential development in the science of defensive play in the 20th century. }
+^b@2^^
+Lavinthal designed the suit preference signal specifically for the type of situation that we have been considering (as a signal to ask your partner to lead back a specific side suit after he receives a ruff). For much of the history of contract bridge, suit preference signals were used almost exclusively in this kind of situation. 
+
+In recent years, some bridge authorities have advocated that these suit preference signals should be extended to other situations as well. It is beyond the intended scope of this program to go into a lot of detail about other situations where a partnership might choose to employ suit preference signals, but some of these situations will be mentioned here as food for thought.
+
+|
+pg| ***** 49 ***** |
+
+
+cs|4|at|^-{ Warning! Do not use suit preference signals in these situations unless 
+ you and your partner have had a thorough discussion on these matters! }
+^-
+|
+pg| ***** 50 ***** |
+
+
+at|Attitude and count signals as well as suit preference signals in the situation that we have seen are used by almost all serious bridge players. ^^^^The same is not true of the other forms of suit preference signals that you will soon be reading about. Do not assume that your partner is using suit preference signals in these situations!|
+pg| ***** 51 ***** |
+
+
+nt|^b@2^z@3|cs|1|at|
+^-{ Some players use suit preference signals when a honor card is led in a side suit 
+ against a trump contract and the dummy has a singleton or void in that suit. }
+^-
+|
+pg| ***** 52 ***** |
+
+
+at|Suppose, for example, that your partner's opening lead against a trump contract is the King of a side suit and the dummy has a singleton in that suit. Your partner's lead suggests that he also holds the Queen of the suit that he led and that he does not hold the Ace of that suit. 
+
+|
+pg| ***** 53 ***** |
+
+
+at|At the end of the first trick, your partner will know who holds the Ace of the suit he led. Either the declarer will have won the first trick with his Ace or your partner's King will win the trick (suggesting that you have the Ace of the suit that he led). As such, there is not much point in you giving your partner an attitude signal to tell him if you have the Ace in the suit that he led - he will be finding out about the location of the Ace all by himself.
+
+An attitude signal for the Jack of the suit that he led or a count signal (expressing if you have an even or an odd number of cards in the suit) is not likely to provide any useful information to your partner. The declarer is likely going to start ruffing his losers in the suit that was led. On many deals, the count of the suit and the location of the Jack will not be relevant to your partner.
+
+|
+pg| ***** 54 ***** |
+
+
+cs|3|at|^-{ One piece of information that rates to be useful to your partner is which of the 2 
+ other side suits you prefer. Suit preference signals can give him this message! }
+^-
+|
+pg| ***** 55 ***** |
+
+
+at|The bottom line here is that the defense does not have a bright future in the suit your partner led. Suit preference signals are useful in this situation for suggesting a different suit to attack.
+|
+pg| ***** 56 ***** |
+
+
+nt|^b@2^z@3|cs|2|at|
+^-{ Some players use suit preference signals when both their
+  attitude and their count in a given suit is already known. }
+^-
+|
+pg| ***** 57 ***** |
+
+
+cs|3|at|For example, suppose that you were dealt the following holding in clubs:
+
+|ht|e|at|^B{ |ih|pc97643|at| }
+
+|
+pg| ***** 58 ***** |
+
+
+ht|g|at|
+^G@2Some time during the course of the play of a deal, you discard the @C3 as a discouraging attitude signal. You will be left with these 4 cards in clubs: 
+^b@2
+|
+pg| ***** 59 ***** |
+
+
+ht|m|at|^B { |ih|pc9764|at| }
+
+|ht|o|at|^G@2The next time you discard a club, you will be giving a remainder count signal. You would discard the @C9 to tell your partner that you had an even number of cards left in clubs. You will be left with these 3 clubs:
+^b@2
+|
+pg| ***** 60 ***** |
+
+
+ht|s|at|^B  { |ih|pc764|at| }
+
+|ht|u|n#|5|at|^G@2If you are going to discard another club, it makes a lot of sense to use that discard as a suit preference signal. The is nothing more you can tell your partner about your club holding (since he already knows your attitude and count). You might as well take advantage of this opportunity to tell him something about your holdings in the other suits.
+
+|
+pg| ***** 61 ***** |
+
+
+nt|^b@2^z@3|cs|1|at|
+^-{ Some players use suit preference signals in the trump suit itself. }
+^-
+|
+pg| ***** 62 ***** |
+
+
+cs|3|at|Suppose that spades are trump and that the declarer wins the first trick and starts drawing trump. This is your holding in the trump suit:
+|n#|5|ht|h|at|^B{ |ih|ps863|at| }
+
+|ht|h|n#|5|at|^G@2We have not discussed the concept of signaling in the trump suit. Most partnerships use count signals in trump, but it is common to reverse the normal meaning of count signals where the trump suit is concerned:
+^b@2
+|
+pg| ***** 63 ***** |
+
+
+cs|2|n#|5|at|
+^-{ A high-low in the trump suit suggests an odd number of trumps and
+ playing low-high in the trump suit suggests an even number of trumps. }
+^-
+|
+pg| ***** 64 ***** |
+
+
+at|The theory behind this switch from the normal methodology of count signals is that you are more likely to be able to afford to part with a higher trump when you have 3 cards in the trump suit to choose from (as opposed to when you have a doubleton trump).
+
+Giving count in the trump suit is usually not very helpful to your partner because he will quickly learn how many trumps you have when the declarer draws trump. For this reason, there is a good case for using suit preference signals in the trump suit. On most deals the most useful message you can give your partner when declarer is drawing trump is which of the side suits you like the best.|
+pg| ***** 65 ***** |
+
+
+qx|def,wide|
+<<--INSERT-START-->>=03___LTPB___defense_twist.ins
+%%
+bt||
+nt|^b@2|cs|4|cp||fp|3|at|^^^i{  aaBridge and Hand Play  }|fp||cp||cs||
+ht|b|n#|3|at|^*baaBridge editors note:^*n |
+ht|e|n^|3|at|^b@2Readers who have worked through ^*b Learn to Play Bridge 1 ^*n will know that whenever you can see the  { ^*b 1st ^*n }  button in the lower green area and a full bridge deal above it, you can:^^^c@2|
+cs|lg|ht|g|n^|0|at|{ ^^|n^|5|at| ^y       }|cs||ht|g|n#|4|
+at||cp||at|^c  ^*bClick { ^*b 1st ^*n } @0@1 to enter the deal and ^*b PLAY ^*n the cards.   Later you will need to click  { ^*b Back to Movie ^*n }  to return.|
+n#|0|at|^^^^^b@2Here in ^*b Learn to Play Bridge 2 ^*n you can do exactly the same and PLAY out the deal against the aaBridge bots.
+|lg|b|n^|5|fp|t|at|^^BUT|fp||at|, for these defense hands you may ^*b first ^*n want to read through the original author's text and THEN play the hand yourself.  Fred Gitelman's fantastic work can be more effective when you have NOT yet seen all four hands.^^|
+cs|2|cp||fp|3|at|^^^^^i  {  Defense with a Twist  }|fp||cp||
+n#|5|at|^b@2^z@3^^^^It is common with ^*b bridge hand diagrams ^*n to always have the declarer in the bottom zone and to have the defenders sitting in the left and right seats.
+^^^*bIF ^*n instead you want the defenders seat you are viewing in to be at the bottom, where South normally is,^^
+^h ^*bLook ^*n in the far right-hand column below the words ...|fp|t|cp|gr|at|   ^t ^*b Power Kib ^*n|cp||fp||cs||at|
+|n#|4|at|^h ^*bClick ^*n on either of the two rotate buttons marked ...   ^t     {^*b  <  }  {  > ^*n } |cp|red|at|  ^*bRotate ^*n ...|cp||at|^^
+^g This way you can get the seat  YOU  want into the bottom zone.^^|
+n#|9|at|^^^*b Later^*n, to restore everything to normal, click the   |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button, on the right above the rotate buttons.|
+%%
+<<--INSERT-END**-->>=03___LTPB___defense_twist.ins
+pg| ***** 66 ***** |
+
+
+qx|d 5,Example Deal 5|
+
+st||sv||ha||
+rh||ah|Deal 5|ah|Suit Preference|ah|Signals|
+
+md|3skq983hk3dkqcq972,sa65h7djt86cjt865,sjt74hjqt92da3ca3|
+sk|e|ha||mb|1hp1sp2sp4sppp|
+
+
+
+nt|^b@2^z@3You are sitting East. North, the dealer, opened the bidding with 1@H. South responded 1@S and North raised to 2@S. South jumped to 4@S which became the final contract. |
+pg| ***** 67 ***** |
+
+
+pc|h|at|Your partner, West, selected the @H7 as his opening lead. |
+pg| ***** 68 ***** |
+
+
+at|The declarer called for the @H2 from the dummy. |
+pg| ***** 69 ***** |
+
+
+pc|h2|at|Think about how you would defend as East. |
+pg| ***** 70 ***** |
+
+
+nt|^b@2^z@3One of the first things you should consider is the heart suit. What is going on in that suit? You have 5 hearts and the dummy started with 5 cards in that suit as well. There are only 3 hearts left for the other 2 players. Your partner has played one of these hearts (the @H7). 
+
+Only the @H3 and the @HK are unaccounted for. Furthermore, assuming your partner is using standard leads, he must have either started with the @H73 doubleton or a singleton @H7. |
+pg| ***** 71 ***** |
+
+
+nt|^b@2^z@3In either case, it must be right to take your @HA. |
+pg| ***** 72 ***** |
+
+
+pc|hahk|at|South follows suit with the @HK so the only outstanding heart that you cannot see is the @H3. Either declarer has that card or your partner does - there is no way to know for sure. 
+
+If your partner still has the @H3 then his lead of the @H7 (from @H73 doubleton) was in accordance with the principles of standard leads. If the declarer has the @H3, he started with @HK3 doubleton and chose to drop his @HK under your @HA.|
+pg| ***** 73 ***** |
+
+
+nt|^b@2^z@3Is it really possible that South played the @HK under your @HA when he did not have to? Yes. This is quite possible. In fact, if South was really dealt the @HK3 doubleton, playing the @HK to the first trick would be a very good play. For one thing, this play would leave the heart suit unblocked. More important, playing the @HK from @HK3 doubleton leaves you in doubt as to the location of the @H3. If South played the @H3 you would have no doubt about who was dealt that card!|
+pg| ***** 74 ***** |
+
+
+nt|^b@2^z@3Assuming that your partner and the declarer are both reasonably good players, there is strong reason to believe that the missing @H3 is in the South hand. Do you know what it is? |
+pg| ***** 75 ***** |
+
+
+at|Consider the fact that West led a heart. Hearts is a suit that was bid by the opponents and we have learned that it is generally a good idea to select your opening lead from one of the unbid suits. |
+pg| ***** 76 ***** |
+
+
+nt|^b@2^z@3Given that North opened the bidding with 1@H, West would not have led a heart unless he had a very good reason for doing so. If your partner was dealt a singleton @H7, he would have an excellent reason for leading hearts. If he was dealt a doubleton @H73, however, the chances of a heart lead being good for the defense are not nearly as strong. It is unlikely that West would have selected a heart as his opening lead if he was dealt a doubleton in that suit. |
+pg| ***** 77 ***** |
+
+
+nt|^b@2^z@3
+So it is reasonable to conclude that the declarer has the missing @H3 and that your partner is now void in hearts. You can lead back a heart and he will win the next trick with a ruff. All that remains is to decide which heart to return. |
+pg| ***** 78 ***** |
+
+
+nt|^b@2^z@3
+This is a classic situation for using suit preference signals. You know you are about to give your partner a ruff and the heart that you return can be used to tell him which of the side suits you would like him to lead back to you! |
+pg| ***** 79 ***** |
+
+
+nt|^b@2^z@3If you had a preference for diamonds, the highest ranking of the remaining side suits, |
+pg| ***** 80 ***** |
+
+
+at|you would return your highest remaining heart (the @H8). |
+pg| ***** 81 ***** |
+
+
+at|If you had no strong preference between diamonds and clubs, you would return a middle heart (the @H6 or the @H5). |
+pg| ***** 82 ***** |
+
+
+at|On this particular hand, you have the @CK and nothing of value in diamonds. You should therefore indicate your suit preference for the lowest remaining side suit |
+pg| ***** 83 ***** |
+
+
+At|by leading back your lowest heart, the @H4. |
+pg| ***** 84 ***** |
+
+
+nt|^b@2^z@3|pc|h4h|at|It is comforting to see South follow suit with the missing @H3, |
+pg| ***** 85 ***** |
+
+
+pc|sh|at|exciting to see your partner win the trick with a ruff, |
+pg| ***** 86 ***** |
+
+
+pc|cj|at|and positively exhilarating to see him return a club - the suit that you asked for with your suit preference signal! |
+pg| ***** 87 ***** |
+
+
+at|South thinks this over, shrugs his shoulders, and calls for the @C3 from the dummy. |
+pg| ***** 88 ***** |
+
+
+pc|c3|at|You win your @CK |
+pg| ***** 89 ***** |
+
+
+pc|ckc|at|as South follows suit. |
+pg| ***** 90 ***** |
+
+
+nt|^b@2^z@3It might not do any good because the declarer is also void in hearts, but you might as well play a third round of that suit. The heart that you play will be another suit preference signal. |
+pg| ***** 91 ***** |
+
+
+at|At this point in the hand you really have no preference between diamonds and clubs |
+pg| ***** 92 ***** |
+
+
+at|and you can express this to your partner by playing the middle card of your 3 remaining hearts, the @H6. |
+pg| ***** 93 ***** |
+
+
+nt|^b@2^z@3|pc|h6ksk|at|The declarer ruffs with the @SK |
+pg| ***** 94 ***** |
+
+
+pc|sah|at|and your partner overruffs with the @SA to win the 4th trick for the defense. |
+pg| ***** 95 ***** |
+
+
+sk||mc|9|at|Apparently that will also be the last trick for the defense as South claims the balance. Don't let that bother you - the defense has won enough tricks to defeat South's 4@S contract and that should be all that matters to the defense! |
+pg| ***** 96 ***** |
+
+
+up|16|
+
+nt|^b@2^z@3Let's go back to the start of the play of this deal and go over some of the instructive things that happened. First note your partner's excellent opening lead. He led his singleton @H7 |
+pg| ***** 97 ***** |
+
+
+pc|h7|at|despite the fact that North had bid hearts. As you have learned, opening leads in suits that were bid by the opponents should normally be avoided, but leading a side suit singleton against a trump contract often works well, regardless of whether or not your opponents have bid that suit. |
+pg| ***** 98 ***** |
+
+
+nt|^b@2^z@3When you won your @HA, |
+pg| ***** 99 ***** |
+
+
+pc|hha|at|the declarer did well to play his @HK. |
+pg| ***** 100 ***** |
+
+
+pc|hk|
+pg| ***** 101 ***** |
+
+
+at|Given the strength of the hearts in the dummy, South did not need his @HK for the purposes of winning a trick. |
+pg| ***** 102 ***** |
+
+
+at|The advantage of playing the @HK was that the declarer was able to keep you in the dark as to the location of the @H3. Your confidence in your partner's opening lead allowed you to see through South's deception, but it was still a nice try by the declarer!|
+pg| ***** 103 ***** |
+
+
+nt|^b@2^z@3You suspected that South had the missing @H3 becaues your partner would not have led a mere doubleton in a suit that the opponents had bid. |
+pg| ***** 104 ***** |
+
+
+at|It was clear to give your partner a heart ruff |
+pg| ***** 105 ***** |
+
+
+at|and you played back the @H4, your lowest heart, as a suit preference signal |
+pg| ***** 106 ***** |
+
+
+pc|h4|at|to tell your partner about your preference for clubs (over diamonds). |
+pg| ***** 107 ***** |
+
+
+at|South followed suit with the missing @H3 and your partner ruffed to win the trick. |
+pg| ***** 108 ***** |
+
+
+pc|hsh|
+pg| ***** 109 ***** |
+
+
+nt|^b@2^z@3Now think about the remaining position from your partner's point of view and keep in mind that he can see only his own hand and the dummy. West's holding in diamonds and clubs are close to identical |
+pg| ***** 110 ***** |
+
+
+at|and the dummy's holdings in these suits are identical. |
+pg| ***** 111 ***** |
+
+
+at|If it wasn't for suit preference signals, West would have to guess what suit to lead now. He would sometimes guess wrong and lead a diamond. |
+pg| ***** 112 ***** |
+
+
+pc|dj|at|That would not work well for the defense. |
+pg| ***** 113 ***** |
+
+
+nt|^b@2^z@3South could win West's diamond return |
+pg| ***** 114 ***** |
+
+
+pc|dddk|
+pg| ***** 115 ***** |
+
+
+at|and drive out your partner's @SA. |
+pg| ***** 116 ***** |
+
+
+pc|sksass|
+pg| ***** 117 ***** |
+
+
+at|Even if West figured out to switch to clubs now, |
+pg| ***** 118 ***** |
+
+
+pc|cj|at|it would be too late. The declarer would win the dummy's @CA |
+pg| ***** 119 ***** |
+
+
+pc|cacc|
+pg| ***** 120 ***** |
+
+
+at|and draw your partner's last trump. |
+pg| ***** 121 ***** |
+
+
+pc|sjdss|
+pg| ***** 122 ***** |
+
+
+mc|10|at|South could then claim the rest of the tricks to make his contract as the dummy's 3 remaining heart winners would take care of his 3 losers in clubs. |
+pg| ***** 123 ***** |
+
+
+up|16|
+
+nt|^b@2^z@3Fortunately for your partnership, West did have something to guide him as to which minor suit he should return after taking his ruff. |
+pg| ***** 124 ***** |
+
+
+at|Your suit preference signal of the @H4 told your partner that you wanted him to lead a club. That is exactly what he did. |
+pg| ***** 125 ***** |
+
+
+pc|cj|at|The declarer was now dead. It did not matter if he played the @CA or the @C3 from the dummy. |
+pg| ***** 126 ***** |
+
+
+at|There was no way for him to prevent the defense from winning tricks with both the @CK and the @SA. |
+pg| ***** 127 ***** |
+
+
+nt|^b@2^z@3South did the right thing when he played the @C3 from the dummy. |
+pg| ***** 128 ***** |
+
+
+pc|C3|md|0,ck,,c5|at|He would have made his contract by doing so if your partner had been dealt the @CK |
+pg| ***** 129 ***** |
+
+
+md|0,c5,,ck|at|instead of you. As it was, you won the @CK |
+pg| ***** 130 ***** |
+
+
+pc|ckc|
+pg| ***** 131 ***** |
+
+
+at|and West still had the @SA as a certain winner. |
+pg| ***** 132 ***** |
+
+
+up|8|at|Suit preference signals deserve a lot of the credit for the defeat of this contract! |
+pg| ***** 133 ***** |
+
+
+qx|d 6,Example Deal 6|
+
+st||sv||ha||
+rh||ah|Deal 6|ah|Suit Preference|ah|Signals|
+
+md|1sk975ha9864ckq4dj,saq62h53ct986dkt3,sjt8hkt7cj52dq965,s43hqj2dca73da8742|
+sk|w|ha||mb|1hp2hppp|
+
+
+nt|^b@2^z@3In this example deal you are sitting West and you are the opening leader against South's 2@H contract. South, the dealer, opened the bidding with 1@H. North raised to 2@H and everybody passed. |
+pg| ***** 134 ***** |
+
+
+at|Your nice sequence in clubs made that suit attractive for an opening lead |
+pg| ***** 135 ***** |
+
+
+at|and you correctly led the @C10 (the standard lead from this holding). |
+pg| ***** 136 ***** |
+
+
+pc|ct|
+
+nt|^b@2^z@3The declarer called for the @C2 from the dummy |
+pg| ***** 137 ***** |
+
+
+pc|ccac|at|and your partner won the @CA as the declarer followed with the @C4. |
+pg| ***** 138 ***** |
+
+
+pc|s4s|at|^^^^East switched to the @S4. South thought this over for a few seconds and then played the @S5. You won your @SQ |
+pg| ***** 139 ***** |
+
+
+pc|sqs|
+pg| ***** 140 ***** |
+
+
+at|and cashed your @SA. |
+pg| ***** 141 ***** |
+
+
+pc|sasssk|tc|h|at|East followed suit with the @S3 while the declarer dropped the @SK. What do you think is going on in the spade suit?|
+pg| ***** 142 ***** |
+
+
+nt|^b@2^z@3Superficially, it looks like South started with a doubleton @SK, but if you consider the spades that you have seen and trust your partner, you will know that this is not the case. The first spade that your partner led was the @S4 and he played the @S3 on the second round of the suit. 
+
+Either he started with a doubleton spade or the @S4 was his 4th best card from a 5-card suit. If East was dealt 3 or 4 spades he would have led his lowest spade, not the @S4, on the first round of the suit.
+
+|
+pg| ***** 143 ***** |
+
+
+nt|^b@2^z@3|tc|r|at|Add up the spades that you have seen. You started with 4 spades, the dummy started with 3 spades, and South has followed suit twice in spades. If your partner was dealt 4 spades then there were at least 14 spades in this deck of cards! So either East was dealt a doubleton spade (and South was being tricky when he played his @SK) or your partner's @S4 was the wrong spade to lead from whatever holding he was actually dealt. |
+pg| ***** 144 ***** |
+
+
+nt|^b@2^z@3You should trust your partner and return a spade for him to ruff. The spade you lead now will be a suit preference signal and, |
+pg| ***** 145 ***** |
+
+
+at|since you like diamonds a lot more than you like clubs, |
+pg| ***** 146 ***** |
+
+
+at|you should lead your higher remaining spade, the @S6, to show your preference for the higher ranking of the remaining side suits. |
+pg| ***** 147 ***** |
+
+
+pc|s6|at|The @SJ is played from the dummy |
+pg| ***** 148 ***** |
+
+
+pc|sjh2s|at|and your partner ruffs to win the trick as South follows. Yahoo! |
+pg| ***** 149 ***** |
+
+
+nt|^b@2^z@3|pc|d4dj|at|East returns the @D4 and you take South's @DJ with your @DK. |
+pg| ***** 150 ***** |
+
+
+pc|dkd|
+pg| ***** 151 ***** |
+
+
+at|The defense has won the first 5 tricks. You need only 1 more trick to defeat South's 2@H contract. While it is quite possible that your partner has the @DA, there is no reason to play a diamond now. If your partner has the @DA (and if the declarer has a diamond left), the @DA is not going to go away - your partner will eventually win a trick with that card. |
+pg| ***** 152 ***** |
+
+
+nt|^b@2^z@3Meanwhile, this will be your last chance to lead another spade. If you have been counting the spades carefully, you will know that the declarer has a spade left. |
+pg| ***** 153 ***** |
+
+
+pc|s|at|Even though the dummy is now void in spades and will be able to ruff this trick, playing your @S2 might well result in an extra trick for the defense. |
+pg| ***** 154 ***** |
+
+
+at|The declarer thinks things over for a few seconds and then calls for the @H10 from the dummy. |
+pg| ***** 155 ***** |
+
+
+pc|ht|sk||
+
+nt|^b@2^z@3You can now see the rest of the cards in the other 2 hands. East overruffs the @H10 to win the 6th trick for the defense as South follows suit. Note that East should not interpret your @S2 as a suit preference signal - if he has been counting the spades he will know that the @S2 was your last spade and it is impossible to signal when you are playing a singleton!|
+pg| ***** 156 ***** |
+
+
+pc|hs|
+pg| ***** 157 ***** |
+
+
+nt|^b@2^z@3It turns out East did have the @DA, but he also knows that if South has another diamond, it is not going away anywhere. |
+pg| ***** 158 ***** |
+
+
+at|East might as well lead a club now, |
+pg| ***** 159 ***** |
+
+
+pc|c7|at|but South wins the trick, |
+pg| ***** 160 ***** |
+
+
+pc|ckcc|
+pg| ***** 161 ***** |
+
+
+at|draws the outstanding trump, |
+pg| ***** 162 ***** |
+
+
+pc|hhhkh|
+pg| ***** 163 ***** |
+
+
+pc|hdhah|
+pg| ***** 164 ***** |
+
+
+mc|7|at|and claims the rest of the tricks for down 1 in his 2@H contract. Once again the defense has come out on top, thanks in part to their use of suit preference signals!|
+pg| ***** 165 ***** |
+
+
+up|35|
+
+nt|^b@2^z@3The defenders were dealt 5 easy winners on this hand. They had the @CA which East took at trick 1, |
+pg| ***** 166 ***** |
+
+
+pc|ccac|
+pg| ***** 167 ***** |
+
+
+at|the @SA and @SQ which they took on the next 2 tricks, |
+pg| ***** 168 ***** |
+
+
+pc|s4ssqs|
+pg| ***** 169 ***** |
+
+
+pc|sasssk|
+pg| ***** 170 ***** |
+
+
+At|a certain trump winner in the form of East's @HQJ2, |
+pg| ***** 171 ***** |
+
+
+at|and only 1 trick in diamonds since South was dealt a singleton in that suit. |
+pg| ***** 172 ***** |
+
+
+at|In order to defeat South's 2@H contract, it was necessary for the defenders to turn East's 1 certain trump trick into 2. Easier said than done! |
+pg| ***** 173 ***** |
+
+
+nt|^b@2^z@3
+One of the key moments for the defense came when you led your @S6 to give your partner a ruff. |
+pg| ***** 174 ***** |
+
+
+pc|s6sh2s|
+pg| ***** 175 ***** |
+
+
+at|The @S6 was a suit preference signal and, since it was your highest spade, by playing the @S6 you suggested that you preferred the higher ranking of the remaining side suits - diamonds. |
+pg| ***** 176 ***** |
+
+
+nt|^b@2^z@3Your suit preference signal made it a lot easier for your partner to make a big play. He led the @D4 (note that the @D4, his 4th best diamond, was the standard lead from his 5-card holding). |
+pg| ***** 177 ***** |
+
+
+pc|D4|at|You will recall that, in the chapter on opening leads, it was stated that leading a low card against a trump contract from a suit headed by the Ace should generally be avoided. It is also dangerous to make such leads in the middle of the play.|
+pg| ***** 178 ***** |
+
+
+nt|^b@2^z@3To appreciate the risk that your partner took, we will exchange South's @CK for your @DK. |
+pg| ***** 179 ***** |
+
+
+md|0dkc6,ckdj|at|You could have the @CK despite your opening lead of the @C10 because the standard lead from a holding headed by the @CK109 is the @C10. |
+pg| ***** 180 ***** |
+
+
+at|On this layout, East's @D4 lead does not work out very well at all. South will win his singleton @DK and will most likely end up making his contract. |
+pg| ***** 181 ***** |
+
+
+nt|^b@2^z@3Fortunately, East was in a good position to know that the minor suit Kings were not distributed as you see above. If you had been dealt the @CK instead of the @DK, |
+pg| ***** 182 ***** |
+
+
+At|you would have led back the @S2, not the @S6, for your partner to ruff. On this layout of the cards, you would have wanted East to lead back a club so you would have returned your lowest spade as a suit preference signal to ask for the lowest ranking of the remaining side suits.|
+pg| ***** 183 ***** |
+
+
+md|0ckdj,dkc6|
+
+nt|^b@2^z@3East put real trust in your suit preference @S6 when he led back a low diamond and that trust was rewarded when you won the @DK |
+pg| ***** 184 ***** |
+
+
+pc|ddkd|
+pg| ***** 185 ***** |
+
+
+at|and led back your last spade. |
+pg| ***** 186 ***** |
+
+
+pc|s|at|South made a good effort when he ruffed with dummy's @H10. |
+pg| ***** 187 ***** |
+
+
+pc|ht|at|If the East-West hearts had been reversed, |
+pg| ***** 188 ***** |
+
+
+md|0,hqj,,h53|at|East would have been unable to overruff the @H10 and South would have won the rest of the tricks. |
+pg| ***** 189 ***** |
+
+
+md|0,h53,,hqj|
+
+nt|^b@2^z@3
+As it was, East's remaining @HQJ doubleton grew up into a winner through what is called a trump promotion. Once you led back a spade, there was no way for the declarer to prevent East from winning a second trump trick.|
+pg| ***** 190 ***** |
+
+
+nt|^b@2^z@3Be sure to appreciate how important this second trump winner was to the defense. |
+pg| ***** 191 ***** |
+
+
+up|21|at|At the start of the play, you had a certain trump trick already. Getting one ruff did not really help the defense because you were always going to score a trick in the trump suit. It was the second trump trick that you won through the trump promotion that really made the difference between success and failure for the defense on this deal.|
+pg| ***** 192 ***** |
+
+
+tc|c|pc|!c!ca!c|tc|r|
+
+nt|^b@2^z@3Before we move on, let's take one more look at the early play in the spade suit. |
+pg| ***** 193 ***** |
+
+
+at|East started the play in spades by leading the higher card from his doubleton (the @S4) to your @SQ. |
+pg| ***** 194 ***** |
+
+
+pc|s4ssqs|
+pg| ***** 195 ***** |
+
+
+at|When you continued by cashing the @SA and East followed with the @S3, |
+pg| ***** 196 ***** |
+
+
+pc|sass|at|South made you pause for thought when he produced the @SK. |
+pg| ***** 197 ***** |
+
+
+nt|^b@2^z@3The @SK is another in a series of deceptive plays that we have seen from the declarers of our example deals. Notice here that South could afford to play the @SK without fear of giving up a trick |
+pg| ***** 198 ***** |
+
+
+pc|sk|
+pg| ***** 199 ***** |
+
+
+at|because he had been watching the spot cards in spades. South knew that he was going to be left with all of the highest spades regardless of whether or not he played his @SK. |
+pg| ***** 200 ***** |
+
+
+nt|^b@2^z@3By playing the @SK, the declarer was hoping to muddy the waters in order to make it more difficult for you to give your partner a spade ruff. Fortunately, you are harder to trick than that! You had noticed that the spades that your partner played were the @S4 and then the @S3 - a sequence of plays consistent only with an original holding of a doubleton @S43. You correctly put your faith in your partner's signals instead of in South's @SK!|
+pg| ***** 201 ***** |
+
+
+qx|rev,Suit preference signals - Review and Exercises|
+bt||
+
+nt|^b@2^z@3|cs|5|cp|6|tb|y|fp|t|at|
+^-{  Suit preference signals - Review and Exercises  }
+^-|fp||at|
+|cp||at|Suit preference signals are the 3rd and last major type of defensive signals that we have studied. Opportunities for using suit preference signals are rare compared to those for the other 2 types of signals (attitude and count), but as we have seen, a well-timed suit preference signal can be very helpful to the defense.
+
+Here is a reminder of the type of message that a suit preference signal conveys:
+
+|
+pg| ***** 202 ***** |
+
+
+cs|4|at|^-{ Suit preference signals are used to tell your partner that 
+ you would like him to play a specific suit if he should gain the lead. }
+^-
+|
+pg| ***** 203 ***** |
+
+
+at|Suit preference signals have an interesting property that makes them fundamentally different from both attitude signals and count signals:
+
+|
+pg| ***** 204 ***** |
+
+
+cs|2|at|^-{ A suit preference signal carries a message about a suit 
+ that is different from the suit in which the signal is made. }
+^-
+|
+pg| ***** 205 ***** |
+
+
+at|Here are some principles to keep in mind that hold true for all types of signals:
+
+|
+pg| ***** 206 ***** |
+
+
+cs|3|at|^-{ As with all types of signals, sometimes you are not dealt the ideal cards for
+ giving your partner as clear a suit preference signal as you would like. }
+^-
+|
+pg| ***** 207 ***** |
+
+
+cs|1|At|^-{ Always signal with the loudest card that you can afford! }
+|
+pg| ***** 208 ***** |
+
+
+tb||
+
+nt|^b@2^z@3|n#|5|at|The basic mechanics of suit preference signals are the same as they are for both attitude signals and count signals. High and low cards are used to carry different messages. In the case of suit preference signals, the messages carried by high and low cards are as follows:
+
+|
+pg| ***** 209 ***** |
+
+
+cs|4|at|^-{ In a suit preference situation, the play of a low card asks your 
+ partner to lead the lower-ranking of the remaining side suits. }
+^-
+|
+pg| ***** 210 ***** |
+
+
+cs|2|at|^-{ In a suit preference situation, the play of a high card asks your 
+ partner to lead the higher-ranking of the remaining side suits. }
+^-
+|
+pg| ***** 211 ***** |
+
+
+cs|2|at|With suit preference signals, middle cards also carry their own messages. This is not the case with either attitude signals or count signals.
+
+|
+pg| ***** 212 ***** |
+
+
+cs|3|at|^-{ In a suit preference situation, the play of a middle card tells your partner 
+ that you have no preference as to which of the remaining side suits he leads. }
+^-
+|
+pg| ***** 213 ***** |
+
+
+at|If you are in a situation where you want to give a suit preference signal and you have only 2 cards that you can choose from, this is the principle that you should follow:
+
+|
+pg| ***** 214 ***** |
+
+
+cs|1|at|^-{ With only 2 cards to choose from for your suit preference signal, these cards are used to 
+ show preference for the highest and lowest side suits. There is no way to say "no preference". }
+^-
+|
+pg| ***** 215 ***** |
+
+
+at|There is only one situation in bridge where suit preference signals are commonly used:
+|n#|7|
+pg| ***** 216 ***** |
+
+
+cs|4|at|^-{ Give a suit preference signal when you lead a suit that you think your partner will ruff. }
+
+|
+pg| ***** 217 ***** |
+
+
+nt|^b@2^z@3
+In recent years, some bridge authorities have advocated the use of suit preference signals in other defensive situations. There is merit to these ideas, but they are far from mainstream at this point in time. If you want to consider using suit preference signals in these situations, make sure that your partner will be on the same wavelength! 
+
+Unless you have had prior discussion with your partner to the contrary, you should assume that suit preference signals only apply in one situation: when you lead a suit to give your partner a ruff. Here are some other situations in which it makes some sense to use suit preference:
+
+|
+pg| ***** 218 ***** |
+
+
+cs|2|at|^-{ Some players use suit preference signals when a honor card is led in a side suit 
+ against a trump contract and the dummy has a singleton or void in that suit. }
+^-
+|
+pg| ***** 219 ***** |
+
+
+cs|3|at|^-{ Some players use suit preference signals when both their
+  attitude and their count in a given suit is already known. }
+^-
+|
+pg| ***** 220 ***** |
+
+
+cs|1|at|^-{ Some players use suit preference signals in the trump suit itself. }
+^-
+|
+pg| ***** 221 ***** |
+
+
+at|We have not had much discussion about signals in the trump suit because there is no real ^*Istandard^*N in this area. The most common agreement is that players should give count in the trump suit, but in a manner opposite to normal count signals:
+
+|
+pg| ***** 222 ***** |
+
+
+cs|4|at|^-{ Playing high-low in the trump suit suggests an odd number of trumps and
+ playing low-high in the trump suit suggests an even number of trumps. }
+^-
+
+|
+pg| ***** 223 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|Here are 2 concepts that relate to the philosophy of all types of signals and which types of signals should be used in various defensive situations:
+
+|
+pg| ***** 224 ***** |
+
+
+cs|1|at|^-{ One of the basic premises of signaling is that cards that are not relevant in terms of 
+ winning tricks should be put to some use - the use of sending a message to your partner! }
+^-
+|
+pg| ***** 225 ***** |
+
+
+cs|4|at|^-{ In deciding what kind of message a signal should carry in a given situation, 
+ the most important question to ask is: what does your partner need to know? }
+^-
+|
+pg| ***** 226 ***** |
+
+
+at|This last principle is arguably the most important lesson to be learned from this chapter. We have tried to categorize situations in which each of the 3 main kinds of defensive signals apply, but it is not practical to try to make rules about ^*Ievery^*N signaling situation that you might one day face as a defender. The scope of the play of the cards at bridge is simply too large.
+
+This state of affairs is not something that you should be upset about. Indeed, the fact that you will constantly face new situations every time you play bridge is one of the reasons why the game is so challenging and stimulating. In the same way that ^*Inever^*N and ^*Ialways^*N do not really apply to principles like second hand low, third hand high, and cover an honor with an honor, making statements like "always give count in this situation" should be avoided as well.
+
+|
+pg| ***** 227 ***** |
+
+
+at|Signaling is all about helping your partner to defend better. When you are thinking about making a signal you should try to think about the deal from your partner's point of view and try to give him the information that you think he will need the most. The guidelines that we have established for when to use each type of signal are very sound and they will usually work for you, but remember they are still guidelines - not rules!
+
+|
+pg| ***** 228 ***** |
+
+
+nt|^b@2^z@3
+You are defending against a contract in which spades are trump. At some point in the play, you are on lead and you know you can give your partner a heart ruff. You would like him to lead back a diamond after he gets his ruff. Which of your hearts would you lead?
+
+|cq|4|hf|f|lb|*CWhich card would you play?^^h9^h98653|
+
+cs|3|at|^-{ |ih|ph98653|at| }
+^-
+Lead the @H9, your highest heart, as a suit preference signal to ask your partner to lead back the higher ranking of the remaining 2 side suits (diamonds) after he gets his ruff. |
+pg| ***** 230 ***** |
+
+
+at|The @H8 is a high spot card in the grand scheme of things, but following the principle of signaling with the loudest card you can afford, |
+pg| ***** 231 ***** |
+
+
+at|the @H9 is the correct heart to lead in this situation.
+
+|
+pg| ***** 232 ***** |
+
+
+cs|2|at|^-{ In a suit preference situation, the play of a high card asks your 
+ partner to lead the higher-ranking of the remaining side suits. }
+^-
+|
+pg| ***** 233 ***** |
+
+
+nt|^b@2^z@3
+You are defending against a contract in which hearts are trump. At some point in the play, you are on lead and you know you can give your partner a spade ruff. You would like him to lead back a club after he gets his ruff. Which of your spades would you lead?
+
+|cq|4|hf|f|lb|*CWhich card would you play?^^s3^s98653|cs|3|at|^-{ |ih|ps98653|at| }
+^-
+You should lead the @S3. Clubs, the suit that you want your partner to lead after he gets his ruff, is the lower-ranking of the remaining side suits. Your partner will get the message that you want him to lead a club if you play your lowest spade, the @S3, as a suit preference signal.
+
+|
+pg| ***** 235 ***** |
+
+
+cs|2|at|^-{ In a suit preference situation, the play of a low card asks your 
+ partner to lead the lower-ranking of the remaining side suits. }
+^-
+|
+pg| ***** 236 ***** |
+
+
+nt|^b@2^z@3
+You are defending against a contract in which clubs are trump. At some point in the play, you are on lead and you know you can give your partner a diamond ruff. You have no preference between the 2 remaining side suits (hearts and spades). Which of your diamonds would you lead?
+
+|cq|4|hf|f|lb|*CWhich card would you play?^^d5,d6^d98653|cs|3|at|^-{ |ih|pd98653|at| }
+^-
+You should lead a middle diamond to tell your partner that you have no strong preference between hearts and spades. |
+pg| ***** 238 ***** |
+
+
+at|The @D6 is probably the best card to play from a technical point of view. |
+pg| ***** 239 ***** |
+
+
+at|You have 2 diamonds higher than the @D6 |
+pg| ***** 240 ***** |
+
+
+at|and 2 diamonds lower than the @D6 |
+pg| ***** 241 ***** |
+
+
+at|so, in a sense, your @D6 is your middle diamond. 
+
+|
+pg| ***** 242 ***** |
+
+
+at|On the other hand, your partner doesn't know your exact diamond holding and there is a good chance that the @D5 will look like a middle diamond from his point of view. |
+pg| ***** 243 ***** |
+
+
+at|As you know, a defender should always signal with the loudest card that he can afford, but it is sometimes hard to know which card will send the loudest signal of ^*Imiddleness^*N from a given holding!
+
+|
+pg| ***** 244 ***** |
+
+
+cs|2|at|^-{ In a suit preference situation, the play of a middle card tells your partner 
+ that you have no preference as to which of the remaining side suits he leads. }
+^-
+|
+pg| ***** 245 ***** |
+
+
+qx||bt||nt||cs|c|cp||fp|t|ht|i|at|^-{^^End^^ ^^          ^*nChapter  4.4^*n       ^^ ^^ }^- |
+pg| ***** 246 ***** |
+
+

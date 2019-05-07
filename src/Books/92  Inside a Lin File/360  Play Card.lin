@@ -1,0 +1,239 @@
+%% Play Card
+%% Last edited  2013 Dec 31
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+bt||st||
+qx|pc|
+nt||
+at||
+md|1s9hQT8dAJ9643cQT7,sAJT842h92dQcAJ96,sQ75hAK754dK2c432,sK63hJ63dT875cK85|
+sk||
+at|^b@2^*bPlayCard^*n^f^*b!pc! ... !^*n|at|^z@3|
+mb|4dppp|
+pg| ***** 0 ***** |
+
+
+pc|h9|
+at|
+
+^c@2!pc!h|cp|7|at|^*b9^*n|cp||at|! ^fThis is the standard single card form.
+|
+pg| ***** 1 ***** |
+
+
+pc|h|
+at|^c@2!pc!|cp|7|at|^*bh^*n|cp||at|! ^fIf you specify only the suit the lowest will be played.
+|
+pg| ***** 2 ***** |
+
+
+pc|hA|
+at|^c@2!pc!h|cp|7|at|^*bA^*n|cp||at|! ^fIf you specify a card that is not in the hand the lowest will be played.
+|
+pg| ***** 3 ***** |
+
+
+pc|dJ|
+at|^c@2!pc!d|cp|7|at|^*bJ^*n|cp||at|! ^fIf you specify a card that you have but it is not valid to play, it ^*b will ^*n be played.
+^gYes @- you can command a revoke in lin file players !|
+pg| ***** 4 ***** |
+
+
+nt||
+qx|pc m|
+up|4|
+at|^b@2^*bPlayCard^*n^f^*b!pc! ... !^*n|at|^z@3|
+at|
+
+|
+pg| ***** 5 ***** |
+
+
+pc|h9h7h6|
+at|^c!pc!h9h7h6dJ! ^hYou can specify more than one card.|
+pg| ***** 6 ***** |
+
+
+up|3|at| (now undone) |
+pg| ***** 7 ***** |
+
+
+pc|h9hh|
+at|
+
+^c!pc!h9hh! ^hThe card rank can be omitted, it then plays the lowest rank of that suit.
+|
+pg| ***** 8 ***** |
+
+
+nt||
+qx|wt m|
+pc|hQ|
+at|^b@2^*bWhose Trick^*n^f^*b!wt! <nsew> !^*n|at|^z@3|
+at|
+
+^c@2 You can override whoever is to lead to the next trick. Here South has won with the @hQ.
+|
+pg| ***** 9 ***** |
+
+
+wt|w|pc|d|
+at|
+^c!wt!w!pc!d! ^gBut it is the West hand that leads to the next trick.
+|
+pg| ***** 10 ***** |
+
+
+nt||
+qx|bs|
+at|^b@2^*bBase Score ^*n          Base the Score on THIS number of ADDITIONAL tricks          hey it's BS !
+^^^f This is mostly used when active endings are being shown and the earlier tricks are omitted.
+^^^*n^d^*bbs!5,2!^*n|at|     the first number is Declarer's extra tricks the second (optional) is Opp's
+^d@2 ^^^b Changes the  'Tricks Won'  to show ...|
+pg| ***** 11 ***** |
+
+
+bs|5,2|
+pg| ***** 12 ***** |
+
+
+nt||
+qx|up|
+
+at|^b@2^*bUndo Play^*n^f^*b!up!99!^*n|at|^z@3|
+at|
+^d@2As with bidding you can 'undo' the play.
+|
+pg| ***** 13 ***** |
+
+
+up|| 
+at|
+!up!! ^g undoes one card|
+pg| ***** 14 ***** |
+
+
+up|3| 
+at|
+!up!3! ^g will attempt to undo three cards|
+pg| ***** 15 ***** |
+
+
+pc|h4h3hT|
+at|^p (playing them again)|
+pg| ***** 16 ***** |
+
+
+up|0| 
+at|^^
+!up!0! ^g Will undo  ^*bZERO^*n  cards  but will   CLEAR THE DISPLAY  of any  ^*bCOMPLETED^*n  trick |
+pg| ***** 17 ***** |
+
+
+qx|jp|
+nt||
+tc|y|
+pc|d3|pc|dQ|pc|dK|pc|d5|
+pc|d2|pc|d7|pc|dJ|pc|h2|
+pc|dA|pc|c6|pc|h5|pc|d8|
+pc|d4|pc|c9|pc|c2|pc|dT|
+pc|c5|
+tc|n|
+nt||
+at|^b@2^*bJump Play^*n^f^*b!jp!13!^*n|at|       ^*bJump^*n  to card  played  ^z@3 | 
+at|
+^d@2Like  up!n!  except that is UNDOES  back to the play of the 'n'th card.
+|
+pg| ***** 18 ***** |
+
+
+jp|14| 
+at|
+!jp!14! ^g undoes to back the  14 th  card played|
+pg| ***** 19 ***** |
+
+
+jp|7| 
+at|
+!jp!7! ^g undoes back to the  7 th  card played|
+pg| ***** 20 ***** |
+
+
+jp|1| 
+at|
+!jp!1! ^g undoes back to the  opening lead|
+pg| ***** 21 ***** |
+
+
+qx|aa|
+up|99|
+rc|h92,,hj63|
+nt|^b@2^*bAuto Add^f!aa!y!^*n
+up!99!        rc!h92,,hj63!|
+pg| ***** 22 ***** |
+
+
+at|^^If you have missing (undelt) cards then you can have then automatically added to the correct hand as you play them.| 
+at|^^^^^d!aa!y!|
+pg| ***** 23 ***** |
+
+
+lg|d|
+at|^^^d!pc!h9!            ^h Advice:  Switch the  aa  option on only when you need it
+                          ^h See md (Make Deal)   for  rc  (Remove Cards)  for how the above cards vanished.|
+aa|y|
+pc|h9|
+pg| ***** 24 ***** |
+
+
+qx|tt|
+up|99|
+aa|n|
+nt|^b@2^*bTidy Trick^ftt!y!
+|
+md|0,h92,,hj63|
+wt|w|
+pg| ***** 25 ***** |
+
+
+pc|sA|pc|s5|pc|s3|pc|s9|
+pg| ***** 26 ***** |
+
+
+at|^^  ^c ^*btt!y!^*n    clears the trick display from the table, keeping it (of course) in the tricks pile.| 
+tt|y|
+pg| ***** 27 ***** |
+
+
+at|^^^^  ^c ^*btt!!^*n   ^*bYOU MUST^*n  turn the clearing  off  when staring to re-display played cards once more.|
+tt||
+pg| ***** 28 ***** |
+
+
+qx|xl|
+md|s32,sK6,sAQ,s45|
+ha|y|
+mb|1Nppp|
+wt|s|
+tc|y|pc|s3s6sQ|tc|n|
+
+nt|^b@2^*bCut (x) Lead^fxL!y!^*n       an md!!  of a partial deal is pre-entered
+  ^fwt!s!                     ^k Make South next to lead,  
+  ^ftc!y!pc!s3s6sQ!tc!n!      ^k   play  three cards with  'table conceal'  so they play instantly
+  
+  When you click  ^*b Enter the Deal ^*n  because the @s3 is the ^*b FIRST ^*n lead of this "hand" it will display.|
+pg| ***** 29 ***** |
+
+
+tc|n|
+xL|y|
+at|^^^^  ^f xL!y!     now it will not be displayed|
+pg| ***** 30 ***** |
+
+
+sk|s|sk||
+ht|z|at|@0
+^*b end ^*n|

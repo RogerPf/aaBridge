@@ -1,0 +1,756 @@
+
+%%
+%% Endplays n - Quiz
+%%
+%% Reformatted for aaBridge  2018 August
+%%
+%% Roger Pfister
+%%
+
+<<--INSERT-START-->>=005__Common_Header.ins
+%%
+fh|130|ff|1Arial|fb|14|fm|1|                       
+fh|240|ff|2Arial|fb|24|fm|2|
+fh|340|ff|3Arial|fb|3y|fm|3|fu|3y|
+fh|490|ff|4Times New Roman|fb|49|fm|4| 
+%
+cr|164|cg|1255|cb|1255|           
+cr|2000|cg|2000|cb|2239|                 
+cr|3255|cg|3250|cb|3205|      
+cr|5065|cg|5105|cb|5255|
+cr|6238|cg|6106|cb|6080|       
+cr|8255|cg|8250|cb|8205|     
+cr|9176|cg|9048|cb|9096|  
+%
+bv|a,v|
+bt||
+at|^b@2^z@3^^|
+
+
+pd|cont-etd-msg,  You can use  { ^*b Cont ^*n }  to play out the rest of the cards  OR  do as suggested above and click  { ^*b Enter the Deal ^*n }|
+
+ss|process-txt,`ht`e`lg`o`at`^c@2^^Click   { ^*b Enter the Deal ^*n }   then on the right in the `cp`gr`at`^*b  green table area ^*n `cp``at` click  { ^*b Show ^*n }^^You can then click  ^*b Flow ^*n  or  ^*b Mouse wheel ^*n  through the correct play, to see how it all works.`pf`cont-etd-msg`|
+ 
+%%
+<<--INSERT-END**-->>=005__Common_Header.ins
+
+qx|Fk |
+ht|a|n#|5|fp|2|at|^a^*b Fk ^c|fp||at|^*gIndx:Index,Click for Index^*n|
+
+mn|  Endplays  1   -   The Basic Elements  | 
+tu|y|
+
+ht|f|fp|2|at|The Fork (or tenace) position|fp||at|
+|n^|5|at|
+We use the term "fork" to indicate the missing guarded high card in a sequence of high cards. Utilizing a fork position in this context is based on your ability to compel the proper enemy to lead up into the fork at the proper unit of time. 
+|n^|5|at|
+For example, you make him lead away from a guarded King up to your Ace-Queen or lead a suit in which you have a two-way finesse, saving you the guess work.|
+
+ht|k|at|Example:|
+
+ht|l|at|^f@s65|
+ht|m|at|^d@sK8|
+ht|m|at|^h@sJ10|
+ht|n|at|^f@sAQ|
+ht|o|n#|5|at|South declares a No trump contract. If West is on lead, he must lose his @sK by leading it, or away from it, up to south's fork.
+|n^|5|at|
+How can South achieve the above endplay position? If we take this layout one move backward, we will get this:|
+ht|s|at|^j@s65|
+ht|t|at|^j@h4|
+ht|u|at|^h@sK8|
+ht|v|at|^h@h10|
+ht|u|at|^l@sJ10|
+ht|v|at|^l@c8|
+ht|w|at|^j@sAQ|
+ht|x|at|^j@c6|
+ht|y|at|From this position, South is able to throw West in by playing the @h4 from dummy, discarding the @c6.|
+ht|z|n#|b|at|^b^*bMM:^*n  Remember you can |cp|red|at| ^*b PLAY ^*n|cp||at| ^*b ANY HAND ^*n  at  ^*b ANY TIME ^*n  by clicking the  { ^*b 1st ^*n }  button.|
+pg| ***** 0 ***** |
+
+
+nt|^b@2^z@3^^|
+ht|f|at|The card you play in order to throw a defender in is called an "Exit card" and the defender who won the card is "Endplayed", as he has no safe exit card and must lead a suit of your interest. 
+
+In the last example, dummy's @h4 was the exit card and West, after winning the @h10, was Endplayed @-  he has no safe exit card and was forced to lead a spade. This throw-in play was possible only because dummy was on lead. 
+
+Can you see what would happen if declarer has to play in this situation from his own hand?
+
+Let's return to the last position:|
+
+ht|n|at|^g@s65|
+ht|o|at|^g@h4|
+ht|p|at|^e@sK8|
+ht|q|at|^e@h10|
+ht|p|at|^i@sJ10|
+ht|q|at|^i@c8|
+ht|r|at|^g@sAQ|
+ht|s|at|^g@c6|
+
+ht|u|at|When declarer has to lead from his hand, the endplay position does not exist anymore. If he leads the @c6, West will discard his heart and now East can win and lead a spade through declarer's AQ. If, instead, he leads a spade, West will win both the @sK and the @h10. In both cases, declarer will win only one trick. 
+
+As you could see from these examples, to perform an endplay it is vital to have the lead in the correct hand and to give the lead up to the appropriate defender. 
+
+Let's now see a full hand that is based on the fork position.| 
+pg| ***** 1 ***** |
+
+
+st||
+--------------------------------------------------------------------------------------------------------------------
+qx|1|rh||ah|Eliminations|ah|Deal 1|
+md|1SAQHK652DAKQJCAK4,SK8HJT98DT987CJT9,S65432HAQ43D2CQ32,SJT97H7D6543C8765|
+sk|ns|
+mb|2Cp2Dp3Np6Nppp|
+pc|hj|
+nt|^b@2^z@3^^|ht|b|at|Deal  1       |
+ht|z|at|^*bMM:^*n  Remember you can |cp|red|at| ^*b PLAY ^*n|cp||at| ^*b ANY HAND ^*n  at  ^*b ANY TIME ^*n  by clicking the  { ^*b 1st ^*n }  button.|
+pg| ***** 2 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Deal  1        West leads the @hJ which you win.|
+pg| ***** 3 ***** |
+
+
+pc|h3h7hk|
+pg| ***** 4 ***** |
+
+
+ht|b|at|^^^^After winning all your diamond and club tricks ending in dummy, you finesse the @sQ.|
+pg| ***** 5 ***** |
+
+
+pc|djd7d2d3|
+pg| ***** 6 ***** |
+
+
+pc|dqd8s2d4|
+pg| ***** 7 ***** |
+
+
+pc|dkd9s3d5|
+pg| ***** 8 ***** |
+
+
+pc|dadTs4d6|
+pg| ***** 9 ***** |
+
+
+pc|ckc9c2c5|
+pg| ***** 10 ***** |
+
+
+pc|cactc3c6|
+pg| ***** 11 ***** |
+
+
+pc|c4cjcqc7|
+pg| ***** 12 ***** |
+
+
+pc|s5s7sq|
+pg| ***** 13 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Of course, West wins this trick with his King...|pc|sK|
+pg| ***** 14 ***** |
+
+
+ht|b|at|^^^^...and plays a second round of hearts.|pc|ht|
+pg| ***** 15 ***** |
+
+
+at|^^^^All you can do now is to cash all your winners but West will have established a heart trick, defeating the contract.|
+pc|hqc8h2|
+pg| ***** 16 ***** |
+
+
+pc|has9h5h8|
+pg| ***** 17 ***** |
+
+
+pc|s6stsas8|
+pg| ***** 18 ***** |
+
+
+pc|h6h9h4sj|
+pg| ***** 19 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|The play was amazing…
+
+…until the lead of the spade.|	
+
+up|20|
+nt|^b@2^z@3^^|ht|b|at|Instead, back at a few tricks you should concede a @h trick to West...|
+pg| ***** 20 ***** |
+
+
+pc|hac8h2h8|
+pg| ***** 21 ***** |
+
+
+pc|hqs7h5h9|
+pg| ***** 22 ***** |
+
+
+pc|h4s9h6ht|
+pg| ***** 23 ***** |
+
+
+sk||
+at|^^^^...thereby forcing him to lead away from his @sK|
+pc|s8|
+pg| ***** 24 ***** |
+
+
+at|^^^^Note that 6@h or 6@d can also be made the same way.|
+pg| ***** 25 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Let's see the the process with the complete deal visible. This will allow you to see how the Elimination-throw-in process influences the defender's hands.|
+pg| ***** 26 ***** |
+
+
+jp|1|
+pg| ***** 27 ***** |
+
+
+pc|h3|pc|h7|pc|hK|
+pg| ***** 28 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Step one:  Eliminate the diamonds.|
+pg| ***** 29 ***** |
+
+
+pc|dJ|pc|d7|pc|d2|pc|d3|
+pg| ***** 30 ***** |
+
+
+pc|dQ|pc|d8|pc|s2|pc|d4|
+pg| ***** 31 ***** |
+
+
+pc|dK|pc|d9|pc|s3|pc|d5|
+pg| ***** 32 ***** |
+
+
+pc|dA|pc|dT|pc|s4|pc|d6|
+pg| ***** 33 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Step two:  Eliminate the clubs from West's hand, leaving him with only hearts and spades.|
+pg| ***** 34 ***** |
+
+
+pc|cK|pc|c9|pc|c2|pc|c5|
+pg| ***** 35 ***** |
+
+
+pc|cA|pc|cT|pc|c3|pc|c6|
+pg| ***** 36 ***** |
+
+
+pc|c4|pc|cJ|pc|cQ|pc|c7|
+nt|^b@2^z@3^^|ht|b|at|Step three:  Throw-in West with a heart|
+pg| ***** 37 ***** |
+
+
+pc|hA|pc|c8|pc|h2|pc|h8|
+pg| ***** 38 ***** |
+
+
+pc|hQ|pc|s7|pc|h5|pc|h9|
+pg| ***** 39 ***** |
+
+
+pc|h4|
+pg| ***** 40 ***** |
+
+
+vv|process-txt|
+pg| ***** 41 ***** |
+
+
+nt|^b@2^z@3^^|
+bt||
+ht|b|at|^y   3|
+qx|Fk-c,wide|
+ht|a|n#|5|fp|2|at|^*b^a Fk-c ^c|fp||at|^*gIndx:Index,Click for Index^*n|
+
+ht|f|at|As you could see from this example, it was vital to give the lead up to the defender who sits on your left and 
+to do that at the crucial moment, i.e., when he has nothing left but spades.
+
+Now, look at the following layout, after the spades holding has been switched between yours and your LHO's hands:|
+ht|j|at|^f@s65|
+ht|l|at|^d@sAQ|
+ht|l|at|^h@s43|
+ht|n|at|^f@sK8|
+ht|o|at|This is also a fork position but this time the AQ combination is on your left while you hold the missing card.
+
+|n^|7|at|Here, again, you wish to have your LHO on lead. If you can force him to lead his @sA, or away from this Ace, your @sK will make a trick. On the other hand, if you play the suit yourself or allow your RHO to lead, you will not have a single spade trick.
+
+|n^|5|at|Here is one more layout where similar principles apply:|
+ht|t|at|^n@hK54|
+ht|v|at|^l@hQ108|
+ht|v|at|^p@hAJ73|
+ht|x|at|^n@h962|
+ht|x|at|This time you should try to throw your RHO in. 
+
+Let's see an example of the first layout in a full deal. Due to the similarity with the previous deal, I will not follow the play  with notes.|
+pg| ***** 42 ***** |
+
+
+st||
+-------------------------------------------------------------------------------------------
+qx|2|rh||ah|Eliminations|ah|Deal 2|
+md|1SK87HK65DAKQ3CAK4,SAQ9HQJT9DT98CJT9,S6543HA843D42CQ32,SJT2H72DJ765C8765|sk|ns|
+mb|2N|mb|p|mb|3C|mb|p|mb|3D|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pc|hQ|
+nt|^b@2^z@3^^|ht|b|at|Deal  2     |
+pg| ***** 43 ***** |
+
+
+pc|h3|pc|h2|pc|hK|
+pg| ***** 44 ***** |
+
+
+pc|dA|pc|d8|pc|d2|pc|d5|
+pg| ***** 45 ***** |
+
+
+pc|dK|pc|d9|pc|d4|pc|d6|
+pg| ***** 46 ***** |
+
+
+pc|dQ|pc|dT|pc|s3|pc|d7|
+pg| ***** 47 ***** |
+
+
+pc|cA|pc|c9|pc|c2|pc|c5|
+pg| ***** 48 ***** |
+
+
+pc|c4|pc|cT|pc|cQ|pc|c6|
+pg| ***** 49 ***** |
+
+
+pc|c3|pc|c7|pc|cK|pc|cJ|
+pg| ***** 50 ***** |
+
+
+pc|h6|pc|h9|pc|hA|pc|h7|
+pg| ***** 51 ***** |
+
+
+at|^^^^Now, when you throw West in with a small heart, he must allow you a ninth trick.|
+pc|h8|
+sk||
+pg| ***** 52 ***** |
+
+
+pf|cont-button|
+pg| ***** 53 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Let's now see the play with the complete deal visible:|
+pg| ***** 54 ***** |
+
+
+vv|process-txt|
+pg| ***** 55 ***** |
+
+
+---------------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+bt||
+ht|b|at|^y   4|
+qx|PS,wide|
+ht|a|n#|5|fp|2|at|^*b^a PS  ^c|fp||at|^*gIndx:Index,Click for Index^*n|
+
+ht|g|fp|2|at|The "Problem" Suit Position|fp||at|
+
+A problem suit is a side suit where it would be to your advantage if you can force the defenders to play it first.
+
+It can be:
+^c1. A lead of the suit itself, or:
+
+^c2. A lead in another suit that allows you to get rid of a card in the problem suit by a ruff and discard play.
+
+In both cases, you should prepare the ground with an elimination play.  It may of course happen that both positions, 
+
+the "fork" and the "problem suit", will appear in a particular hand together.
+
+It has to be said that the difficult part of those techniques is not the knowledge on ^*Bhow^*N|at| to execute them but the     
+
+understanding  of ^*Bwhen^*N|at| to use them.  There will be nobody to whisper in your ear: 
+
+"Attention! in this hand you have to find the endplay". 
+
+You can memorize all kinds of endplay techniques but that will be only the beginning. That is because the most difficult part 
+
+is to recognize when an endplay situation exists.
+
+Let's now move ahead to discover a few more secrets of the elimination technique.| 
+pg| ***** 56 ***** |
+
+
+nt|^b@2^z@3^^|
+ht|e|at|Look at the following hand:|
+ht|f|at|^c|ih|hsj876hak9d753ckj8|
+ht|n|at|^c|ih|hsakq3h876dakqcat7|
+ht|k|at|^dN|
+ht|l|at|^eE|
+ht|m|at|^dS|
+ht|l|at|^cW|
+ht|s|at|You arrived at the contract of 6@s and got the lead of the @hQ.
+
+You have a sure heart loser and a possible club loser. 
+
+Does your slam depend on a guess of the @cQ location? 
+
+Or do you have a sure way to make the slam?
+
+See what would happen if you draw trumps, play three rounds of diamonds and the @hK, then give up the lead to the 
+opponents with the @h9.|
+pg| ***** 57 ***** |
+
+
+nt|^b@2^z@3^^|
+
+ht|e|at|This position would be the result of your initial play:|
+ht|f|at|^c|ih|hsjhckj8|
+ht|m|at|^c|ih|hsqcat7|
+ht|k|at|^dN|
+ht|l|n^|4|at|^eE|
+ht|m|n^|6|at|^dS|
+ht|l|n^|4|at|^cW|
+
+ht|r|at|If the opponent who won the heart trick will play a club, there will be no need to guess the clubs position and if he plays a diamond or a heart,  you can now discard a club from one hand and ruff in the other hand. This way or that way, the slam is in your pocket.
+
+Your clever play was based on two steps:
+^c1. E@2limination play: the play of the trumps, followed by three rounds of diamonds and one round of hearts, aiming to remove the cards in these suits.
+
+^c2. Throw-in play: the play of the third round of hearts in order to give up the lead to one of the defenders, forcing him to lead away from his clubs or to lead one of the red suits, giving you the opportunity to make a ruff and discard play.
+
+|n^|5|at|^bI will now illustrate the above line of play with a complete deal.|
+pg| ***** 58 ***** |
+
+
+st||
+---------------------------------------------------------------------------------------------------------
+qx|3|rh||ah|Eliminations|ah|Deal 3|st||
+md|3SAKQ3H876DAKQCAT7,ST9HQJT5DT842C963,SJ876HAK9D753CKJ8,S542H432DJ96CQ542|
+sk|ns|
+mb|1C|mb|p|mb|1S|mb|p|mb|2S|mb|p|mb|4N|mb|p|mb|5C|mb|p|mb|6S|mb|p|mb|p|mb|p|
+pc|hQ|
+nt|^b@2^z@3^^|ht|b|at|Deal  3      The spade and diamond suits are solid. 
+
+You have one loser in hearts, clubs is your problem suit and you would dearly like the defenders to make the first lead there.| 
+pg| ***** 59 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|The idea now is to put a defender on lead with a third round of hearts.  
+
+It is no good doing this immediately because then the defender would have a safe exit in either black suit. 
+
+Before exiting with a heart, you must eliminate the trumps and the diamonds, your two solid suits.|
+pg| ***** 60 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|You win the heart lead.|
+pg| ***** 61 ***** |
+
+
+pc|hK|pc|h2|pc|h6|ht|b|
+pg| ***** 62 ***** |
+
+
+at|^^^^Then you draw trumps.|
+pg| ***** 63 ***** |
+
+
+pc|s6|pc|s2|pc|sQ|pc|s9|
+pg| ***** 64 ***** |
+
+
+pc|sA|pc|sT|pc|s7|pc|s4|
+pg| ***** 65 ***** |
+
+
+pc|sK|pc|c3|pc|s8|pc|s5|
+pg| ***** 66 ***** |
+
+
+at|^^^^Next you play three round of diamonds.|
+pg| ***** 67 ***** |
+
+
+pc|dQ|pc|d2|pc|d3|pc|d6|
+pg| ***** 68 ***** |
+
+
+pc|dK|pc|d4|pc|d5|pc|d9|
+pg| ***** 69 ***** |
+
+
+pc|dA|pc|d8|pc|d7|pc|dJ|
+pg| ***** 70 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|You eliminated the diamonds suit, leaving yourself with no diamond cards in either hand. 
+
+The defenders will not be able to play a diamond without allowing you a ruff and discard.|
+pg| ***** 71 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|You play the @hA and a third round of hearts, putting West on lead and at the same time eliminating the hearts suit from both your hand and dummy's.|
+pg| ***** 72 ***** |
+
+
+ 
+pc|h7|pc|h5|pc|hA|pc|h3|
+pg| ***** 73 ***** |
+
+
+pc|h9|pc|h4|pc|h8|pc|hT|
+nt|^b@2^z@3^^|ht|b|at|In bridge terms this is called an "Eliminating-throw-in". 
+
+Think about that: In a single move you achieved two goals @- you eliminated the heart suit from both your hand and dummy's while throwing West in with his @h10.|
+pg| ***** 74 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|You can now see the result of all this hard work.|sk||
+pg| ***** 75 ***** |
+
+
+at|^^^^West must either play your problem suit (clubs),  saving you a trick there...|
+pg| ***** 76 ***** |
+
+
+pc|c9|pc|c8|pc|c2|pc|cT|
+pg| ***** 77 ***** |
+
+
+nt|^b@2^z@3^^|
+at|@4|
+up|4|
+nt|^b@2^z@3^^|ht|b|at|...or return a diamond or a heart, allowing you to ruff in one hand and throw a club from the other.|
+pg| ***** 78 ***** |
+
+
+pc|dt|pc|sj|pc|c2|pc|c7|
+pg| ***** 79 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Remembering the play: |
+pg| ***** 80 ***** |
+
+
+at|^^^^You eliminated the trump and the diamond suits, and threw West on lead with the third round of hearts. 
+^^He then had to give you a trick with his return.|
+pg| ***** 81 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Let's see the play with the complete visible:.|
+vv|process-txt|
+pg| ***** 82 ***** |
+
+
+nt|^b@2^z@3^^|
+-------------------------------------------------------------------------------------
+bt||
+ht|b|at|^y   7|
+qx|EL,wide|
+ht|a|n#|5|fp|2|at|^*b^a EL  ^c|fp||at|^*gIndx:Index,Click for Index^*n|
+
+ht|f|at|An important condition of every elimination play in a suit contract is, that both the dummy and declarer's hand contain at least one trump when the defender has been put on lead. 
+
+That is exactly why West, on the last deal, could not exit safely in one of the red suits. It would allow you a ruff and discard.
+
+There are four main ways of eliminating a suit. 
+
+Look at these four side-suit holdings:
+^c@2
+a. ^d@sK9           ^f@sA8
+   
+b. ^d@hKQ96         ^f@hAJ87
+   
+c. ^d@dA96          ^f@dK5
+   
+d. ^d@cA8            ^f@c75
+^b@2
+In  a.  you cash the Ace and King, eliminating the spades from both hands.
+       
+In  b.  you play sufficient rounds to remove the hearts from both defenders' hands. 
+       
+In  c.  you eliminate the suit by cashing the Ace and King and ruffing the third round. 
+       
+In  d.  you play the Ace followed by the remaining club to eliminate the suit and put a defender on lead. 
+           This is an example of "Eliminating-exit" play that has been shown already in the last example hand.| 
+pg| ***** 83 ***** |
+
+
+nt|^b@2^z@3^^|
+
+ht|f|at|The main goal of the Elimination-throw-in play is to force a defender into a position where his next play will help us to make our contract, and if we do our job correctly, this defender cannot escape. 
+
+As we have already seen, this help can be: playing into a fork held by our own hand or dummy's, playing a suit in which we have a two-way finesse situation, avoiding the risk of guessing, or by playing a suit in which we are void in both declarer's and dummy's hands, allowing us to make a ruff and discard play.
+
+In addition, the defenders may give us a help by leading a suit in which we should lose more tricks if we make the first play in that suit.
+
+Here are a few layouts where we might lose at least one trick less, if a defender plays the suit first:
+^c@2
+AJx    -  K10x                 A10x  -  Jxx
+AJx    -  K9x                   A10x  -  K9x
+A10x  -  Qxx                   A9x    -  Q8x
+Q9x    -  K8x                  Qxx    -  K109
+Jxx     -  Kxx                   Jxx     -  Qxx   
+^b@2
+In all the above cases we will have a problem if we play the suit first. 
+
+To make the best of these suits, we will need to guess the location of the missing cards correctly. 
+
+On the other hand, if a defender leads the suit first, it would be much easier for us to handle the suit for maximum tricks.
+
+When you hold a similar layout, look for a possible endplay.|
+pg| ***** 84 ***** |
+
+
+nt|^b@2^z@3^^|
+
+ht|e|at|Of course, we can't expect defenders to play the problem suit voluntarily for us @- we should first make sure they don't have any other card they can play safely (a safe exit-card). 
+
+Then, to be able to force them to play our suit, we must give them the lead at the right moment. Hence the process of elimination-throw-in.
+
+Very often we need the defenders' help in opening a problem suit in which we have only a small chance, if any, to make a trick if we start the suit ourselves.
+|n#|5|at|Look at this example hand:|
+ht|l|n#|5|at|^g|ih|hst9732hq84da3scj65|ht|s|n#|5|at|^g|ih|hsakq65hakjd92cq43|
+ht|q|at|^hN|
+ht|r|at|^iE|
+ht|s|at|^hS|
+ht|r|at|^gW|
+ht|x|at|You arrived at the contract of 4@s and got the lead of the @dK. You have one diamond and three club losers. If you play the  club suit yourself, you will lose three club tricks if the Ace and King are divided.
+
+Let's see that:|
+pg| ***** 85 ***** |
+
+
+nt|^b@2^z@3^^|
+st||
+------------------------------------------------------------------------------------------------------------------------------
+qx|4|rh||ah|Eliminations|ah|Deal 4|
+md|1SAKQ65HAKJD92CQ43,SJ4HT73DKQ85CA972,ST9732HQ84DA3CJ65,S8H9652DJT764CKT8|sk|ns|
+mb|1S|mb|p|mb|2S|mb|p|mb|4S|mb|p|mb|p|mb|p|
+pc|dK|
+ht|b|at|Deal  4      |
+pg| ***** 86 ***** |
+
+
+at|Assuming you win the opening lead, draw the adverse trumps and play a small club toward the Jack.|
+pg| ***** 87 ***** |
+
+
+pc|dA|pc|dJ|pc|d2|
+pg| ***** 88 ***** |
+
+
+pc|s2|pc|s8|pc|sQ|pc|s4|
+pg| ***** 89 ***** |
+
+
+pc|sK|pc|sJ|pc|s3|pc|d4|
+pg| ***** 90 ***** |
+
+
+pc|c3|pc|c2|pc|cJ|
+pg| ***** 91 ***** |
+
+
+pc|cK|
+nt|^b@2^z@3^^|ht|b|at|East wins the King ...|
+pg| ***** 92 ***** |
+
+
+at|^^^^...and returns a club through your Queen into West's possible A9 or A10 (or similar) holding.|
+pc|cT|pc|c4|pc|c7|pc|c5|
+pg| ***** 93 ***** |
+
+
+pc|c8|pc|cQ|pc|cA|pc|c6|
+pg| ***** 94 ***** |
+
+
+at|^^^^You will lose three clubs and one diamond - down 1|
+pc|dQ|
+pg| ***** 95 ***** |
+
+
+nt|^b@2^z@3^^|
+
+jp|12|
+ht|b|at|On the other hand, if a defender starts the play in clubs, you can play a small club in second hand and the third hand defender will have to catch "air".
+
+How can you force a defender to do the job for you? 
+
+Drawing the adverse trumps was a first step of an elimination play. You should complete the process by eliminating your hearts.|
+pg| ***** 96 ***** |
+
+
+pc|hA|pc|h3|pc|h4|pc|h5|
+pg| ***** 97 ***** |
+
+
+pc|hK|pc|h7|pc|h8|pc|h6|
+pg| ***** 98 ***** |
+
+
+pc|hJ|pc|hT|pc|hQ|pc|h9|
+pg| ***** 99 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Finally, play a diamond to throw a defender in.|
+pg| ***** 100 ***** |
+
+
+pc|d3|pc|d7|pc|d9|pc|dQ|
+pg| ***** 101 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|The defender who wins the trick must open the clubs for you...|sk||
+pg| ***** 102 ***** |
+
+
+pc|cA|pc|c5|pc|c8|pc|c3|
+pg| ***** 103 ***** |
+
+
+pc|c2|pc|c6|pc|cK|pc|c4|
+pg| ***** 104 ***** |
+
+
+pc|cT|pc|cQ|pc|c7|pc|cJ|up|12|
+pg| ***** 105 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|...or play a diamond, allowing you to ruff in one hand and discard a club from the other.|
+pc|d8|
+nt|^b@2^z@3^^|
+
+
+nt|^b@2^z@3^^|
+ht|b|at|Let's see the play with the complete deal visible:|
+pg| ***** 106 ***** |
+
+
+vv|process-txt|
+pg| ***** 107 ***** |
+
+
+------------------------------------------------------------------------------------
+bt||
+nt|^b@2^z@3^^|
+tu|y|
+ht|n|fp|2|at|^k    End of Section|fp||
+pg| ***** 108 ***** |
+
+

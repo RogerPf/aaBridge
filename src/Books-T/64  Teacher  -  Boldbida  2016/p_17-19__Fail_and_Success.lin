@@ -1,0 +1,372 @@
+%%
+%%
+
+ss|chapter,Boards                                              17 - 19 |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2016-05-04     set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Boldbida                            Play  Problems   2016|
+%%
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       on Title Pages   Precision Blue
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages   tiny tweek
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s25|                    Font   s  s-small
+fh|t40|                    Font   t  t-title             section titles (if any)
+fh|f42|                    Font   f  f-flow
+fh|b50|                    Font   b  b-bigTitle   bigger section titles
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+%%
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor      on Title Pages
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor   on Title Pages
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor      fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=03___FP_general_text.ins
+%%
+ht|j|
+Lg|e|
+at|If you are  |cp|red|at|^*bNew  to  aaBridge^*n|cp||at| please  click the |fp|t|at| @z |fp||at| button in the far top left and then click  { ^*bFlow^*n > }  button.
+Once you have a little knowledge about how to use   ^*baaBridge^*n   please come back to this 'movie'.|  
+%%
+ht|m|n#|7|fp|t|at|^*bInstructions^*n|fp||at|   -   When the   |cs||fp|t|at| { ^*b 1st ^*n } |cs||fp||at|  button is visible (bottom right) you can click it and ^*b PLAY ^*n the hand.|
+%%
+ht|p|fp|t-title|cp|blue|at|^- ^*b-----  Shuf Op  -----^*n     ^-|cp||fp||at|^^|
+n#|3|
+at|^b@2When  you are  'Inside a deal',  high on the left in green baize area you will see the  {^*b Shuf Op ^*n}  button.|
+n#|5|
+at|^^Click on it to shuffle the  East - West  cards and leave you ready to  PLAY  the hand against the 
+^o ^*b aaBridge ^*n bots and the new defensive layout.|
+%%
+<<--INSERT-END**-->>=03___FP_general_text.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+bv|a,v|    %% make all 3 buttons visible 
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+pg| ***** 0 ***** |
+
+
+st||
+--------------------------------------------------------------------
+qx|17 F|nt|^b@2^^|rh||ah|Practice 17 |pn| , , , |md|1SKHAKT9DAQ653CAK6,SQT63H653DJ987CJ4,SA7542HJ8DK4C9752,SJ98HQ742DT2CQT83|sv|O|sk|S |at|^*bPractice 17^*n        Fail |
+pg| ***** 1 ***** |
+
+
+mb|2C|mb|p|mb|2D|mb|p|mb|3D|mb|p|mb|3S|mb|p|mb|3N|mb|p|mb|6N|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+pc|h6|at|    With 9 sure tricks   2@s 3@h 3@d 2@C   we need 2 more.   As the @h lead gives us 3 sure @h tricks we only need 2 more and a 3-3 split in @d's will provide.|
+pg| ***** 3 ***** |
+
+
+pc|h8|pc|h2|pc|h9|
+pg| ***** 4 ***** |
+
+
+pc|sK|pc|s3|pc|s2|pc|s8|
+pg| ***** 5 ***** |
+
+
+pc|d3|pc|d7|pc|dK|pc|d2|
+pg| ***** 6 ***** |
+
+
+pc|sA|pc|s9|pc|c6|pc|s6|
+pg| ***** 7 ***** |
+
+
+pc|d4|pc|dT|pc|dQ|pc|d8|
+pg| ***** 8 ***** |
+
+
+pc|dA|pc|d9|pc|c2|pc|c3|
+pg| ***** 9 ***** |
+
+
+at| ^^ ^^ That has not worked out.   We need to plan for the normal (67%)  4-2  @d split. |
+pf|cont-button|
+sk||
+pg| ***** 10 ***** |
+
+
+qx|17 S|nt|^b@2^^|rh||ah|Practice 17 |pn| , , , |md|1SKHAKT9DAQ653CAK6,SQT63H653DJ987CJ4,SA7542HJ8DK4C9752,SJ98HQ742DT2CQT83|sv|O|sk|S |at|^*bPractice 17^*n        Success |
+pg| ***** 11 ***** |
+
+
+mb|2C|mb|p|mb|2D|mb|p|mb|3D|mb|p|mb|3S|mb|p|mb|3N|mb|p|mb|6N|mb|p|mb|p|mb|p|
+pg| ***** 12 ***** |
+
+
+pc|h6|at|    With 9 sure tricks   2@s 3@h 3@d 2@c   we need 2 more.   To cope with a 4-2 @d split we will need to duck a @d (early) and unblock the singleton @sK and take the @h finesse again, (well West won't have under-led the @hQ would she ?)  because we need an extra @H trick to make up for the trick we cannot now make.|
+pg| ***** 13 ***** |
+
+
+pc|hJ|pc|h2|pc|h9|
+pg| ***** 14 ***** |
+
+
+pc|d4|pc|d2|pc|d3|pc|d7|
+pg| ***** 15 ***** |
+
+
+pc|cJ|pc|c2|pc|c3|pc|cK|
+pg| ***** 16 ***** |
+
+
+pc|sK|pc|s3|pc|s2|pc|s8|
+pg| ***** 17 ***** |
+
+
+pc|d5|pc|d8|pc|dK|pc|dT|
+pg| ***** 18 ***** |
+
+
+pc|sA|pc|s9|pc|c6|pc|s6|
+pg| ***** 19 ***** |
+
+
+pc|h8|pc|h4|pc|hT|
+pg| ***** 20 ***** |
+
+
+at|^^ And the rest are ours - check.   ^*bNote^*n - that if we had kept the J@h at the beginning we would now be stuck on table.|
+pf|cont-button|
+sk||
+pg| ***** 21 ***** |
+
+
+qx|18 F|nt|^b@2^^|rh||ah|Practice 18 |pn| , , , |md|1SAK3HKJ2DQ63CA987,SQJ854H654DA4CKT3,S96HAQTDKJ52C6542,ST72H9873DT987CQJ|sv|O|sk|S |at|^*bPractice 18^*n        Fail |
+pg| ***** 22 ***** |
+
+
+mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 23 ***** |
+
+
+pc|S5|at|    With 6 sure tricks   2@s 3@h 1@C   we need 3 more.   As after this we have only 1 spade stop and as the ONLY chance of three extra tricks must be from @d's (there IS no where else) we therefore must knock out the @dA and play for that 3-3 @d split.      What else is there  ? ? ?|
+pg| ***** 24 ***** |
+
+
+pc|s6|pc|s7|pc|sK|
+pg| ***** 25 ***** |
+
+
+pc|d3|pc|d4|pc|dJ|pc|d7|
+pg| ***** 26 ***** |
+
+
+pc|d2|pc|d8|pc|dQ|pc|dA|
+pg| ***** 27 ***** |
+
+
+pc|sQ|pc|s9|pc|s2|pc|sA|
+pg| ***** 28 ***** |
+
+
+pc|d6|pc|h4|
+pg| ***** 29 ***** |
+
+
+at| ^^ O dear. We will only make 5 more tricks (count 'em).  I guess we have to look for another way to make the 3rd @d. |
+pf|cont-button|
+sk||
+pg| ***** 30 ***** |
+
+
+qx|18 S|nt|^b@2^^|rh||ah|Practice 18 |pn| , , , |md|1SAK3HKJ2DQ63CA987,SQJ854H654DA4CKT3,S96HAQTDKJ52C6542,ST72H9873DT987CQJ|sv|O|sk|S |at|^*bPractice 18^*n        Success |
+pg| ***** 31 ***** |
+
+
+mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 32 ***** |
+
+
+pc|S5|at|    With 6 sure tricks   2@s 3@h 1@C   we need 3 more.   These must come from @d's.  To cater for both a  3-3  split and the additional chance that West  (who with long spades could be short in @d's but might have the  @dA doubleton) we need to lead twice toward dummy.  This is called finessing against the Ace. |pc|s6|pc|s7|pc|sK|
+pg| ***** 33 ***** |
+
+
+pc|d3|pc|d4|pc|dJ|pc|d7|
+pg| ***** 34 ***** |
+
+
+pc|hT|pc|h3|pc|hJ|pc|h4|
+pg| ***** 35 ***** |
+
+
+pc|d6|pc|dA|at|^^ Yes, we hit that little extra chance.|sk||
+pg| ***** 36 ***** |
+
+
+pc|d2|pc|d8|
+pg| ***** 37 ***** |
+
+
+pc|sQ|pc|s9|pc|s2|pc|sA|
+pg| ***** 38 ***** |
+
+
+pc|dQ|at|   We now have 5 top tricks to take and so make contract.  Count 'em.|
+pf|cont-button|
+sk||
+pg| ***** 39 ***** |
+
+
+qx|19 F|nt|^b@2^^|rh||ah|Practice 19 |pn| , , , |md|1SA93HAKDT92CAJT83,SKQJT8HT853D874CK,S54HJ94DAQJ63CQ96,S762HQ762DK5C7542|sv|O|sk|S |at|^*bPractice 19^*n        Fail |
+pg| ***** 40 ***** |
+
+
+mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 41 ***** |
+
+
+pc|sK|at|     With 5 sure tricks   1@s 2@h 1@d 1@C   we need 4 more.   If we hold up the @sA to exhaust East (should she have three) then we can finesse @d's into East's hand in safety.  And if we don't make all four extra @d's we can try the @c finesse into West.     Can you see anything wrong with this approach ? |pc|s4|pc|s2|pc|s3|
+pg| ***** 42 ***** |
+
+
+pc|sQ|pc|s5|pc|s6|pc|s9|
+pg| ***** 43 ***** |
+
+
+pc|sJ|pc|h4|pc|s7|pc|sA|
+pg| ***** 44 ***** |
+
+
+pc|dT|pc|d4|pc|d3|pc|dK|
+pg| ***** 45 ***** |
+
+
+pc|h2|at|  Yes, no more @s's in East.|
+pg| ***** 46 ***** |
+
+
+pc|hK|pc|h3|pc|h9|
+pg| ***** 47 ***** |
+
+
+pc|d9|pc|d7|pc|dA|pc|d5|
+pg| ***** 48 ***** |
+
+
+pc|dQ|pc|h6|pc|d2|pc|d8|
+pg| ***** 49 ***** |
+
+
+pc|dJ|pc|c2|pc|c3|pc|h5|
+pg| ***** 50 ***** |
+
+
+pc|d6|pc|h7|pc|c8|pc|h8|
+pg| ***** 51 ***** |
+
+
+pc|cQ|pc|c4|pc|cT|pc|cK|
+pg| ***** 52 ***** |
+
+
+at|^^ O dear - did we miss a way to make the contract ?  (East still has two spades left if you were counting.) |
+pf|cont-button|
+sk||
+pg| ***** 53 ***** |
+
+
+qx|19 S|nt|^b@2^^|rh||ah|Practice 19 |pn| , , , |md|1SA93HAKDT92CAJT83,SKQJT8HT853D874CK,S54HJ94DAQJ63CQ96,S762HQ762DK5C7542|sv|O|sk|S |at|^*bPractice 19^*n        Success |
+pg| ***** 54 ***** |
+
+
+mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 55 ***** |
+
+
+pc|sK|at|     With 5 sure tricks   1@s 2@h 1@d 1@C   we need 4 more.   We are going to hold up twice to exhaust East.  Then finesse @d's in to East.  If we still need a ninth trick no point in finessing in @c's as we don't care if East wins.  Instead we plan to play off the @cA (we might get lucky and drop a singleton @cK) and then lead a low @c to (hopefully) East's King. |pc|s4|pc|s2|pc|s3|
+pg| ***** 56 ***** |
+
+
+pc|sQ|pc|s5|pc|s6|pc|s9|
+pg| ***** 57 ***** |
+
+
+pc|sJ|pc|h4|pc|s7|pc|sA|
+pg| ***** 58 ***** |
+
+
+pc|dT|pc|d4|pc|d3|pc|dK|
+pg| ***** 59 ***** |
+
+
+pc|h2|pc|hK|pc|h3|pc|h9|
+pg| ***** 60 ***** |
+
+
+pc|d9|pc|d7|pc|dA|pc|d5|
+pg| ***** 61 ***** |
+
+
+pc|dQ|pc|h6|pc|d2|pc|d8|
+pg| ***** 62 ***** |
+
+
+pc|dJ|pc|c2|pc|c3|pc|h5|
+pg| ***** 63 ***** |
+
+
+pc|d6|pc|h7|pc|c8|pc|h8|
+pg| ***** 64 ***** |
+
+
+pc|cQ|pc|c4|pc|cA|pc|cK|
+pg| ***** 65 ***** |
+
+
+at|   We did get lucky  :)       But  ^*bWE^*n  gave ourselves that extra lucky chance. |
+pf|cont-button|
+sk||
+pg| ***** 66 ***** |
+
+

@@ -1,0 +1,2117 @@
+
+%%
+%%  Date last Edited    2019-03-30
+%%
+
+ss|masthead,Learn to Play Bridge 2                  Ch 4.1  -  Bidding   |
+
+ss|chapter,Transfer  Responses  to  the  1 No-trump  Opening|
+
+
+<<--INSERT-START-->>=01___LTPB2__header_colors.ins
+%%
+cr|m120|cg|m040|cb|m069|   fill   m  m-mastColor       maroon
+cr|c248|cg|c231|cb|c189|   fill   c  c-chapterColor    beige cream
+%%
+<<--INSERT-END**-->>=01___LTPB2__header_colors.ins
+
+<<--INSERT-START-->>=02___LTPB___common.ins
+%%
+fh|180|ff|1Arial|fb|10|fm|1|      Font 1   Kia
+fh|235|ff|2Arial|fb|28|fm|2|      Font 2   Kia
+fh|350|ff|3Arial|fb|30|fm|3|      Font 3   Kia
+fh|430|ff|4Arial|fb|48|fm|4|      Font 4   Kia
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|60|fm|6|      Font 6
+fh|770|ff|7Arial|fb|70|fm|7|      Font 7
+fh|880|ff|8Arial|fb|80|fm|8|      Font 8
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1255|cg|1230|cb|1189|   Beige Cream
+cr|2200|cg|2245|cb|2210|   green ish
+cr|3249|cg|3249|cb|3255|   grey medium
+cr|4190|cg|4210|cb|4255|   blue grey
+cr|5198|cg|5205|cb|5229|   light grey
+cr|6122|cg|6000|cb|6049|   dark maroon
+cr|9255|cg|9255|cb|9255|   'white'
+
+fh|s29|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m60|                    Font   m  m-mastHead        size in banner 1
+fh|c60|                    Font   c  c-chapTitle       size in banner 2
+
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint           feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight       text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+%%
+pd|first          ,^a You can `cp`red`at`^*b now ^*n`cp``at` ^*bClick { ^*b 1st ^*n } below @0@1 to enter the deal and ^*b PLAY ^*n the cards.   Later click  { ^*b Back to Movie ^*n }  to return.|
+%%
+%%
+bv|f,v|  %% button visibility
+%%
+<<--INSERT-END**-->>=02___LTPB___common.ins
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+
+at|^b@2^z@3|
+cs|5|cp|6|fp|t|
+at|
+^-{  Introduction to Chapter 4  }
+^-|fp||cp||at|
+Partnerships in bridge make agreements as to the meaning of various bids. The collection of agreements that a partnership uses is known as their bidding system. In the original Learn to Play Bridge program, a bidding system that was referred to as Modern Standard American with 5-card majors was presented. This bidding system was designed to be suitable for new bridge players.
+
+While the bidding system presented in Learn to Play Bridge was sufficient to teach the reader the basics of the theory of bidding, Modern Standard American with 5-card majors was flawed in some ways. First of all, for the sake of simplicity, this bidding system was not meant to be comprehensive or complete - some important bidding sequences were not discussed. 
+
+In addition, the bidding system in Learn to Play Bridge was not designed to be maximally effective - more advanced bidding systems allow a partnership to bid to the optimum contract with greater frequency.
+
+During the past few years a new bidding system named Standard American Yellow Card (or SAYC) has become increasingly popular. SAYC is used by both casual and serious partnerships who play social bridge, competitive bridge in clubs and tournaments, and bridge over the Internet.
+
+|
+qx|4.1|
+pg| ***** 0 ***** |
+
+
+cs|2|at|^-{ One of the primary goals of this program (and future programs in this series) will
+ be to teach you with the Standard American Yellow Card bidding system. }
+
+
+|
+pg| ***** 1 ***** |
+
+
+tb||
+
+nt|^b@2^z@3|n#|5|at|Are you wondering where the name Standard American Yellow Card comes from?
+|
+pg| ***** 2 ***** |
+
+
+hb|c|
+ht|i|at|^d   (  @2Not supplied in aaBridge but click this 
+Amazon link for a partial example  ^*h https://www.amazon.com/Standard-Bidding-Sayc-Ned-Downey/dp/1897106033, SAYC^*n. ) |
+
+
+ht|b|n#|m|at|^o    @2A picture is worth a thousand words and what you see here is a picture of an actual Standard American Yellow Card. As you can see, it is yellow. Less obviously, it is also a card - something called a convention card to be more specific. 
+|n#|7|
+pg| ***** 3 ***** |
+
+
+at|In bridge clubs and tournaments, each partnership fills out a convention card like the one you see here by filling in various blank spaces and checking various boxes. 
+
+The purpose of this exercise is to inform the opponents of the bidding conventions and signaling agreements that each partnership has. Remember that partnerships cannot have secret agreements. The convention card is used to disclose a partnership's agreements to the opponents.
+^b@2
+|
+pg| ***** 4 ***** |
+
+
+ht|t|n#|8|at|^b@2This particular convention card was designed by the American Contract Bridge League  (or ACBL) specifically for partnerships that are using the SAYC bidding system. 
+
+The ACBL prints another type of convention card that is used by their members who play other bidding systems. Look closely at this picture. Some areas will make sense to you and when you finish reading this chapter, you will understand much more about the SAYC convention card!
+
+|
+pg| ***** 5 ***** |
+
+
+bm||
+
+nt|^b@2^z@3
+All of the agreements that a partnership makes when deciding on a bidding system describe 2 possible types of bids, natural bids and artificial bids.
+
+|
+pg| ***** 6 ***** |
+
+
+cs|1|at|^-{ A natural bid has something to say about the strain of the bid that was made. }
+^-
+|
+pg| ***** 7 ***** |
+
+
+at|For example, if a partnership is using weak 2-bids, then their 2@D, 2@H, and 2@S openings are all considered natural bids. These bids are said to be natural because they all have something to say about the suit that was named. For example, when a player opens the bidding with a weak 2@H, he describes a hand with a strong 6-card heart suit.
+
+|
+pg| ***** 8 ***** |
+
+
+cs|3|at|^-{ An artificial bid says nothing about the strain of the bid that was made. }
+^-
+|
+pg| ***** 9 ***** |
+
+
+at|Partnerships that use weak 2-bids generally use the 2@C opening bid as an artificial bid that is used to announce the possession of a very strong hand. Since a player who opens the bidding with 2@C does not promise any particular length or strength in the club suit, the 2@C opening is said to be an artificial bid.
+
+|
+pg| ***** 10 ***** |
+
+
+at|In the earliest days of bridge (the late 1920s), the bidding systems used by most players contained virtually no artificial bids. During the next 30 years or so, some artificial bids (or conventions) were shown to be so effective that they were eagerly embraced by the masses. Many conventions were developed during this time period, but only Blackwood, Stayman, and Gerber (which were all introduced in the Learn to Play Bridge program) became so popular as to be considered part of ^*Istandard bidding^*N.
+
+|
+pg| ***** 11 ***** |
+
+
+nt|^b@2^z@3
+The trend toward average bridge players using more and more conventions really started to accelerate in the 1960s and it has continued to this day. Nowadays, most bridge partnerships employ several conventions and many bridge players take great pleasure in adding new conventions to their arsenal of bidding weapons.
+
+Bridge has become a more complicated game as a result of the widespread use of many conventions. Whether or not it has become a better game is a subject of intense debate, but one thing is certain: the average modern bridge partnership bids much more effectively than the average partnership from the early days of the game.
+
+|
+pg| ***** 12 ***** |
+
+
+cs|4|at|^-{ Learning the SAYC bidding system will involve learning several new conventions, 
+ but most bids in this system mean exactly what you would expect them to mean. }
+^-
+|
+pg| ***** 13 ***** |
+
+
+at|In other words, you don't have to worry about unlearning everything that you have already learned about bidding. In SAYC, a 1NT opening bid still promises a balanced hand with 15 to 17 high card points. If your partner opens the bidding with 1@S, you can still bid 3@S if you were dealt a limit raise. 
+
+Some bids in SAYC will have unexpected meanings for you, but by and large this bidding system should be seen as an ^*Iextension^*N (rather than a ^*Ireplacement^*N) of the bidding system that you currently use.
+
+One area in which SAYC is quite different from the bidding system taught in Learn to Play Bridge (as well as the system taught by the great masters Culbertson and Goren) is in responding to your partner's 1NT or 2NT opening bid. The way in which SAYC handles these important bidding sequences will be the main focus of this chapter.
+|
+pg| ***** 14 ***** |
+
+
+qx|tfrs,Jacoby transfer bids|
+
+nt|^b@2^z@3|cs|5|cp|6|tb|y|fp|t|at|
+^-{  Transfer bids  }
+^-|fp||at|
+|cp||at|Other than Blackwood, Stayman, and Gerber, arguably the most commonly used convention in bridge is known as Jacoby transfer bids (or Jacoby transfers or simply transfers). While Jacoby transfer bids are used in response to 1NT, 2NT, and 3NT opening bids in the SAYC bidding system, for now we will concentrate on their use after a 1NT opening bid.
+
+|
+pg| ***** 15 ***** |
+
+
+at|If you are not currently using Jacoby transfer bids and your partner opens the bidding with 1NT, here is a summary of what it would mean if you responded by bidding 2 of a suit:
+
+^-{|cs|1|ia|o1n?|at|}
+^-
+|
+pg| ***** 16 ***** |
+
+
+cs|2|at|^C@2{ 2@C - ^EThe Stayman convention
+ 2@D - ^EA signoff bid suggesting a weak hand with at least 5 cards in diamonds 
+ 2@H - ^EA signoff bid suggesting a weak hand with at least 5 cards in hearts 
+ 2@S - ^EA signoff bid suggesting a weak hand with at least 5 cards in spades }
+^b@2
+^b@2
+|
+pg| ***** 17 ***** |
+
+
+at|Here, 2@C (Stayman) is an artificial bid that is used to ask the opening bidding if he was dealt a 4-card major. 2@D, 2@H, and 2@S are all natural bids that the responder can use when he has a weak hand with a long suit. 
+
+The 1NT opener is expected to pass when his partner responds 2@D, 2@H, or 2@S - he has already told his partner that he has a strong balanced hand so he should respect his partner's signoff bid.
+
+|
+pg| ***** 18 ***** |
+
+
+tb||
+
+nt|^b@2^z@3|n#|5|At|In the SAYC bidding system, most of the responses to a 1NT opening bid of 2 of a suit have different meanings than those that were taught in the original Learn to Play Bridge program:
+
+^-{|cs|1|ia|o1n?|at|}
+^-
+|
+pg| ***** 19 ***** |
+
+
+cs|4|at|^-{ The 2@C response to 1NT is still the Stayman convention. }
+^-
+|
+pg| ***** 20 ***** |
+
+
+at|Stayman is one of the most useful conventions ever devised and it is an integral part of the SAYC bidding system. The basic mechanics of Stayman are exactly the same in SAYC as they are in the version of Stayman that was presented in Learn to Play Bridge. As you will see later in the chapter, the use of Jacoby transfer bids has some impact on the type of hands with which the responder should invoke Stayman.
+
+|
+pg| ***** 21 ***** |
+
+
+cs|2|at|^-{ The 2@D and 2@H responses to 1NT are Jacoby transfer bids. }
+^-
+|
+pg| ***** 22 ***** |
+
+
+at|In the bidding system that was presented in Learn to Play Bridge, the 2@D and 2@H responses to 1NT were signoffs in diamonds and hearts respectively. You will soon be learning when Jacoby transfer bids should be used and what can happen after a Jacoby transfer.
+
+|
+pg| ***** 23 ***** |
+
+
+cs|3|at|^-{ The 2@S response to 1NT is used by responder to sign off in a minor suit at the 3-level. }
+^-
+|
+pg| ***** 24 ***** |
+
+
+at|The 2@S response to 1NT is not a signoff in spades anymore. The use of the 2@S response to 1NT in SAYC will be discussed in detail later in this chapter. |
+pg| ***** 25 ***** |
+
+
+nt|^b@2^z@3
+The 2@D and 2@H responses to a 1NT opening bid are examples of Jacoby transfers:
+
+^D{|cs|1|ia|o1n!2d|at|} ^O{|cs|1|ia|o1n!2h|at|}
+
+|
+pg| ***** 26 ***** |
+
+
+at|The next question is: what are Jacoby transfer bids used for? 
+
+|
+pg| ***** 27 ***** |
+
+
+cs|4|at|^-{ A Jacoby transfer bid promises at least 5 cards in the next higher-ranking (major) suit. }
+^-
+|
+pg| ***** 28 ***** |
+
+
+at|So a Jacoby transfer bid of 2@D promises at least 5 cards in hearts and a Jacoby transfer bid of 2@H promises at least 5 cards in spades. With a few exceptions (that will be discussed later in the chapter) the high card strength of the responder's hand and the number of cards that he was dealt in the other 3 suits are not relevant in his decision as to whether or not he should use a Jacoby transfer bid.
+
+|
+pg| ***** 29 ***** |
+
+
+cs|2|at|^-{ Jacoby transfer bids can be used with signoff hands, invitational hands, hands that are 
+ strong enough to force to game, and hands that are strong enough to explore for slam. }
+^-
+|
+pg| ***** 30 ***** |
+
+
+cs|3|at|^-{ Jacoby transfer bids can be used with balanced hands, unbalanced 
+ hands, hands with only 1 long suit, or hands with 2 or 3 long suits. }
+^-
+|
+pg| ***** 31 ***** |
+
+
+at|Yes, Jacoby transfers are very versatile bids! All you need to use this convention is a hand with a 5-card (or longer) major suit. |
+pg| ***** 32 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|The next issue to explore is what happens ^*Iafter^*N the responder to a 1NT opening bid uses a Jacoby transfer bid of 2@D (showing 5 or more hearts) or 2@H (showing 5 or more spades):
+
+|ht|d|n#|3|at|^D{|cs|1|ia|o1n!2d?|at|} ^O{|cs|1|ia|o1n!2h?|at|}
+
+|
+pg| ***** 33 ***** |
+
+
+ht|d|n#|3|at|^D{|cs|1|ia|o1n2d!2h|at|} ^O{|cs|1|ia|o1n2h!2s|at|}
+
+|cs|4|at|^-{ After a Jacoby transfer bid, the opening bidder almost always completes the transfer
+ by bidding 2 of the major suit that the responder promised by using a Jacoby transfer. }
+^-
+|
+pg| ***** 34 ***** |
+
+
+at|After the responder uses a Jacoby transfer bid of 2@D, the opener will almost always rebid 2@H. Similarly, after the responder uses a Jacoby transfer bid of 2@H, the opener will almost always rebid 2@S. There are some circumstances in which the opener should do something besides completing the transfer. We will explore these possibilities later in this chapter.
+
+One of the most obvious consequences of using Jacoby transfer bids is also one of the main reasons why these bids are so effective (and also why they are called transfers):
+
+|
+pg| ***** 35 ***** |
+
+
+cs|2|at|^-{ After a Jacoby transfer bid is used, the 1NT opener will become the
+ declarer if the responder's long major suit becomes the trump suit. }
+^-
+|
+pg| ***** 36 ***** |
+
+
+at|If Jacoby transfer bids are not being used and the responder is dealt a long major suit, he will usually end up being the first member of the partnership to bid that suit. He would thus become declarer if that suit ends up being the trump suit.
+|
+pg| ***** 37 ***** |
+
+
+nt|^b@2^z@3
+|cs|2|at|^-{ If a partnership has a choice as to which player will be the declarer, on most deals 
+ it will be to their advantage to try to arrange for the stronger hand to be declarer. }
+^-
+|
+pg| ***** 38 ***** |
+
+
+at|That is not to say that the stronger (that is, better) ^*Iplayer^*N should be the declarer! The above statement means that it will often be possible to win more tricks if the player who has the stronger ^*Ihand^*N ends up being the declarer.
+
+There is a good reason for this. The opening lead give the defense the first chance to attack a suit of their choice. A player with a 1NT opening bid will invariably have a lot of high cards and, if it can be arranged that this player is the declarer, some of those high cards will be protected from immediate attack.
+
+|
+pg| ***** 39 ***** |
+
+
+cs|3|at|For example, suppose that hearts are trump and that the 1NT opener has the following hand:
+
+^-{|ih|psaqt4hqj7dk654ckj|at|}
+^-
+|
+pg| ***** 40 ***** |
+
+
+at|Each of the 3 side suits contain high cards that are vulnerable to attack, especially if the partner of the player with this hand has no high cards in these suits. It will be more difficult for the defenders to effectively attack these suits if this hand is the declarer than it would be if this hand is the dummy.|
+pg| ***** 41 ***** |
+
+
+nt|^b@2^z@3
+|cs|4|At|^-{ One of the main advantages of using Jacoby transfer bids is that these bids allow the 
+ partnership to protect the 1NT opener's high cards by making him the declarer more often. }
+^-
+|
+pg| ***** 42 ***** |
+
+
+cs|2|at|^-{ The word transfer is part of the name of Jacoby transfer bids because these bids 
+ effectively transfer the declaration from the (weak) responder to the (strong) opener. }
+^-
+|
+pg| ***** 43 ***** |
+
+
+at|Even when a partnership is using Jacoby transfer bids as outlined in the SAYC bidding system, they will not always be able to arrange for the 1NT opener to be the declarer. It is the case, however, that the 1NT opener will end up as the declarer on a much larger percentage of deals when Jacoby transfers are being used. This is one of the two primary reasons why the Jacoby convention is so effective in practice. Here is the other reason:
+
+|
+pg| ***** 44 ***** |
+
+
+cs|3|at|^-{ After the 1NT opener completes the transfer, the responder 
+ is well-placed to continue describing his hand with his next bid. }
+^-
+|
+pg| ***** 45 ***** |
+
+
+at|^D{|cs|1|ia|o1n2d2h?|at|} ^O{|cs|1|ia|o1n2h2s?|at|}
+
+When the responder invokes a Jacoby transfer bid, he knows what is going to happen next - the opener will complete the transfer, leaving the bidding at a low level for the responder's next bid. The responder can take advantage of this opportunity to give his partner some more information about the strength and/or distribution of his hand.
+
+|
+pg| ***** 46 ***** |
+
+
+nt|^b@2^z@3
+Here are some example hands that contain 5-card (or longer) major suits. In each case, the partner of the player holding these hands opens the bidding with 1NT. The player with each hand uses a Jacoby transfer bid and the opener completes the transfer. Let's see what happens next.
+
+|
+pg| ***** 47 ***** |
+
+
+ht|g|cs|3|at|^D{ |ih|psat942h4d52c97532|at|} {|n#|8|cs|1|at|^O|ia|o1n2h2s?|at| }
+
+|n#|5|at|This hand has only 6 total points - 4 HCP (the @SA) |
+pg| ***** 48 ***** |
+
+
+at|and 2 long suit points (1 for each 5-card suit). That is not enough to explore for a possible game contract opposite a 15-17 HCP 1NT opening bid. |
+pg| ***** 49 ***** |
+
+
+at|At the same time, the responder has good reason to believe that 2@S will be a more comfortable contract than 1NT. If Jacoby transfers were not being used, it would be correct to sign off by responding 2@S to the 1NT opening.  
+
+When Jacoby transfer bids are being used, the responder should start by bidding 2@H in order to tell his partner that he was dealt at least 5 cards in spades. After the opener completes the transfer, the responder is able to use his next turn to further describe his hand. |
+pg| ***** 50 ***** |
+
+
+at|In this particular case, the responder has no more describing to do. |ht|g|n#|8|cs|1|at|^O|ia|o1n2h2s!p|at| }
+
+|n#|5|at|
+
+
+
+
+
+
+
+
+
+|
+pg| ***** 51 ***** |
+
+
+cs|2|at|
+^-{ To sign off in 2 of a major after a 1NT opening bid, transfer to your 5-card 
+ (or longer) major suit and pass when your partner completes the transfer. }
+|
+pg| ***** 52 ***** |
+
+
+nt|^b@2^z@3|ht|b|cs|3|at|^D{ |ih|psk74hkqt65d932ct4|at|} {|n#|8|cs|1|at|^O|ia|o1n2d2h?|at| }
+
+|n#|5|at|This hand has 8 HCP |
+pg| ***** 53 ***** |
+
+
+at|and 1 long suit point for the 5-card heart suit. 9 total points is enough to invite a game contract opposite a 15-17 HCP 1NT opening bid. 
+
+If the opener has a maximum hand with at least 3-card heart support then 4@H rates to be the best final contract. If the opener has a maximum hand with only 2 hearts, then 3NT is probably the place to be. If the opener has a minimum hand, then the partnership will belong in a partial (in either hearts or notrump, depending upon the number of hearts in the opener's hand).
+
+|
+pg| ***** 54 ***** |
+
+
+ht|b|n#|8|cs|1|at|^O|ia|o1n2d2h!2n|at| }
+
+|n#|5|at|
+
+
+
+
+
+
+
+After the responder transfers to hearts and the opener completes the transfer, the correct rebid for the responder is 2NT. This sequence describes an invitational hand with exactly 5 hearts. The opener will be in a good position to place the contract. The number of hearts in his hand will determine whether the partnership will play in hearts or in notrump. The strength of his hand will determine whether to play in a game contract or in a partial.
+
+|
+pg| ***** 55 ***** |
+
+
+cs|2|at|^-{ A Jacoby transfer followed by a 2NT rebid describes an 
+ invitational hand with exactly 5 cards in responder's major. }
+
+|
+pg| ***** 56 ***** |
+
+
+nt|^b@2^z@3
+Now you now know how to invite game opposite a 1NT opening bid when you have exactly 5 cards in one of the major suits. What if you have 6 (or more) cards in a major and a hand with invitational strength?
+
+|
+pg| ***** 57 ***** |
+
+
+ht|f|cs|3|at|^D{ |ih|psaqj943h652d9ct73|at|} {|n#|8|cs|1|at|^O|ia|o1n2h2s?|at| }
+
+|n#|5|at|This hand has 7 HCP in the form of the @SA, @SQ, and @SJ. |
+pg| ***** 58 ***** |
+
+
+at|Add 2 long suit points for the 6-card spade suit and you come to 9 total points - enough to invite a game contract. While a 2NT rebid would suggest an invitational hand, it would be a mistake to rebid 2NT here. The 2NT rebid would suggest exactly 5 spades and you have a 6-card spade suit.
+
+With this hand you are not particularly interested in playing in notrump. There will be an 8-card fit in spades even if your partner has only 2-card support for your 6-card suit (he cannot have a singleton or void in spades given that he opened the bidding with 1NT).
+
+
+|
+pg| ***** 59 ***** |
+
+
+ht|f|n#|8|cs|1|at|^O|ia|o1n2h2s!3s|at| }
+
+|n#|5|at|
+
+
+
+
+
+
+
+
+The correct rebid is 3@S. This bid describes an invitational hand with at least 6 cards in spades. Your partner will pass if he has a minimum hand and bid 4@S if he has a maximum hand.
+
+|
+pg| ***** 60 ***** |
+
+
+cs|2|at|^-{ With an invitational hand containing a 6-card (or longer) major suit, transfer
+ to your major and, after the transfer is completed, rebid 3 of your major. }
+|
+pg| ***** 61 ***** |
+
+
+nt|^b@2^z@3
+We have now covered all of the signoff and invitational sequences that the responder can use after he invokes a Jacoby transfer bid. In each of the remaining examples, the responder's hand will be strong enough to insist on playing in at least a game contract.
+
+|
+pg| ***** 62 ***** |
+
+
+ht|f|cs|3|at|^D{ |ih|psqj6haj873dk2c653|at|} {|n#|8|cs|1|at|^O|ia|o1n2d2h?|at| }
+
+|n#|5|at|This hand has 11 HCP |
+pg| ***** 63 ***** |
+
+
+at|and a long suit point should be counted for the 5-card heart suit. 12 total points is more than enough to force to game opposite a 15-17 1NT opening bid, but not enough to explore for a possible slam contract. 
+
+The only question that remains is which game contract rates to be best. If the 1NT opener has at least 3-card heart support, an 8-card major suit fit will be present and 4@H will probably be the best place to play. If the opener has only 2 hearts then 3NT will be the contract of choice.
+
+|
+pg| ***** 64 ***** |
+
+
+ht|f|n#|8|cs|1|at|^O|ia|o1n2d2h!3n|at| }
+
+|n#|5|at|
+
+
+
+
+
+
+
+Rebid 3NT. This bidding sequence describes a hand with exactly 5 hearts and enough strength to force to game. If the opener has only a doubleton heart, he will pass 3NT. Otherwise he will go on to 4@H. In either case you rate to end up in the best contract.
+
+|
+pg| ***** 65 ***** |
+
+
+cs|2|At|^-{ A Jacoby transfer followed by a 3NT rebid shows exactly 5 cards in the major and
+ asks the 1NT opener to choose between 3NT and 4 of the major as a final contract. }
+
+|
+pg| ***** 66 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|Here is another example of a hand with sufficient strength to force to game opposite a 1NT opening bid. As in the last example, the responder needs help in selecting the best contract.
+
+|ht|d|cs|3|at|^D{ |ih|pskqj72h9daq965c64|at|} {|n#|8|cs|1|at|^O|ia|o1n2h2s?|at| }
+
+|
+pg| ***** 67 ***** |
+
+
+n#|5|at|This hand has 12 HCP |
+pg| ***** 68 ***** |
+
+
+at|and 2 long suit points for the 2 5-card suits. With 14 total points, a game contract is certain, but it is far from clear from the responder's point of view which game contract rates to be best. Usually 3NT or 4@S will be right, but once in a while the partnership will belong in 5@D. Furthermore, it is possible that some small slam contract (or even a grand slam) will be a good bet if the opener's hand meshes well with these cards. 
+
+|
+pg| ***** 69 ***** |
+
+
+at|Without the use of Jacoby transfers this would be a very difficult hand to bid. The responder would have to bid 3@S over 1NT. This bid would force to game and describe a hand with at least 5 spades, but a lot of bidding space would be consumed in the process |
+pg| ***** 70 ***** |
+
+
+at|and the opener would be left in the dark about responder's fine diamond suit. 
+
+|
+pg| ***** 71 ***** |
+
+
+ht|d|n#|8|cs|1|at|^O|ia|o1n2h2s!3d|at| }
+
+|n#|5|at|
+
+
+
+
+
+
+
+
+
+
+With Jacoby transfers this hand is much easier to bid. After opener completes the transfer to 2@S, show him your second suit by rebidding 3@D. 
+
+|
+pg| ***** 72 ***** |
+
+
+cs|2|at|^-{ A Jacoby transfer followed by the bid of a new suit is forcing to game and describes 
+ a hand with at least a 5-card major and at least 4 cards in the new suit that was introduced. }
+|
+pg| ***** 73 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|The bidding sequence just described (the rebid of a new suit by the responder after a Jacoby transfer bid) causes problems for a lot of players who learn to use this convention. There are 2 points about the bidding sequence shown below that are worth clarifying:
+
+
+|ht|e|cs|3|at|^D{ |ih|pskqj72h9daq965c64|at|} {|n#|8|cs|1|at|^O|ia|o1n2h2s!3d|at| }
+
+
+|
+pg| ***** 74 ***** |
+
+
+cs|2|at|^-{ 1.  A Jacoby transfer followed by the bid of a new suit does not necessarily 
+ imply that the responder might have interest in playing in a slam contract. }
+^-
+|
+pg| ***** 75 ***** |
+
+
+at|Some bridge players mistakenly believe that when responder transfers and then bids a new suit he promises enough strength to suggest a slam contract. This sequence of bids does promise a good hand and the responder might have have slam interest. It is possible, however, for the responder to bid this way even for the sake of exploring for the best game contract. As we will soon see, there is one special sequence in which the bid of a new suit after a Jacoby transfer is not even forcing to game.
+
+|
+pg| ***** 76 ***** |
+
+
+cs|4|at|^-{ 2.  A Jacoby transfer followed by the bid of a new suit shows at least 4 cards in the new suit. }
+^-
+|
+pg| ***** 77 ***** |
+
+
+at|Some bridge players are under the mistaken impression that 3@D in the above bidding sequence is a cuebid to show the presence of the @DA in a strong hand with very long spades. That is not correct. 3@D shows at least 4 cards in diamonds.
+
+|
+pg| ***** 78 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|Sometimes when your partner opens the bidding with 1NT you know exactly what you want the final contract to be. That is the case with the following hand:
+
+|ht|d|cs|3|at|^D{ |ih|psj4hkqj9762d5c942|at|} {|n#|8|cs|1|at|^O|ia|o1n2d2h?|at| }
+
+|
+pg| ***** 79 ***** |
+
+
+n#|5|at|This hand has only 7 HCP, |
+pg| ***** 80 ***** |
+
+
+at|but the 3 long suit points counted for the 7-card heart suit result in this hand being worth 10 total points - enough to insist on a game contract opposite a 15-17 1NT opening bid. One of the nice things about this hand is that only one game contract is in the picture. You should insist on playing in 4@H since your heart suit is more than sufficient to make for a good trump suit even if your partner has a small doubleton in hearts.
+
+If you were not using Jacoby transfer bids you would simply jump to 4@H over your partner's 1NT opening. You would arrive in the desired contract immediately, but the weak hand (yours) would end up as declarer. |
+pg| ***** 81 ***** |
+
+
+ht|d|n#|8|cs|1|at|^O|ia|o1n2d2h!4h|at| }
+
+|n#|5|at|
+
+
+
+
+
+
+
+
+
+In the SAYC bidding system you can arrange for your partner (with his strong hand) to be the declarer by rebidding 4@H after your Jacoby transfer bid. This will have the effect of protecting his honor cards from attack on the opening lead.
+
+|
+pg| ***** 82 ***** |
+
+
+cs|2|at|^-{ To sign off in 4 of a long major after a 1NT opening bid, transfer to your 
+ major and then rebid 4 of your major (which your partner will pass). }
+
+|
+pg| ***** 83 ***** |
+
+
+nt|^b@2^z@3|ht|a|n#|5|cs|3|at|^D{ |ih|psqj974haq2dk7ckt6|at|} {|n#|8|cs|1|at|^O|ia|o1n2h2s?|at| }
+
+|n#|5|at|This hand has 15 HCP |
+pg| ***** 84 ***** |
+
+
+at|and 1 long suit point for the 5-card spade suit. 16 total points is enough to suggest to your partner that a small slam might be in the cards. If your partner has a maximum hand for his 15-17 HCP 1NT opening then either 6@S or 6NT will probably be a desirable contract. However, if your partner has a minimum 1NT opening, the partnership is unlikely to belong in slam.
+
+|
+pg| ***** 85 ***** |
+
+
+ht|a|n#|8|n#|5|cs|1|at|^O|ia|o1n2h2s!4n|at| }
+
+|n#|5|at|
+
+
+
+
+
+After you transfer to 2@S to show your 5-card suit, rebid 4NT. This 4NT bid is not Blackwood - it is a quantitative raise similar to a direct 4NT response to a 1NT opening bid. As you will learn, there is another bidding sequence in SAYC that allows you to ask for Aces after showing a long major suit. Some bridge players might interpret the 4NT bid shown above as the Blackwood convention. They would be wrong in the SAYC bidding system!
+
+If your partner has a minimum hand, he will either pass 4NT or correct the contract to 5@S (depending on his degree of support for your major). If your partner has a maximum hand, he will place the contract in either 6@S or 6NT (again depending on the number of spades he has).
+
+|
+pg| ***** 86 ***** |
+
+
+cs|2|at|^-{ A Jacoby transfer bid followed by a 4NT rebid is not Blackwood - it is a quantitative try 
+ for slam that is based on a balanced hand with exactly 5 cards in the major that was shown. }
+
+|
+pg| ***** 87 ***** |
+
+
+nt|^b@2^z@3
+When Jacoby transfer bids were first presented in this chapter, it was stated that when the responder uses a Jacoby transfer, the 1NT opener ^*Ialmost always^*N completes the transfer. This statement implies that there are times when the opener would take some other action in response to his partner's Jacoby transfer bid. Consider the following hand:
+
+|ht|g|cs|3|at|^D{ |ih|psa2hajt3dkq4ckt87|at|} {|n#|8|cs|1|at|^O|ia|o1n2d?|at| }
+
+|
+pg| ***** 88 ***** |
+
+
+n#|5|at|Under normal circumstances, the opening bidding would complete the transfer by bidding 2@H. This hand, however, is not normal. With 17 HCP it is a maximum for a 1NT opening bid. |
+pg| ***** 89 ***** |
+
+
+at|In addition, once the responder is known to have at least a 5-card heart suit, a short suit point for the doubleton spade should be counted. |
+pg| ***** 90 ***** |
+
+
+at|The strong 4-card heart support that this hand contains is the icing on the cake. In every sense this is a great hand for hearts!
+
+|
+pg| ***** 91 ***** |
+
+
+ht|g|n#|8|cs|1|at|^O|ia|o1n2d!3h|at| }
+
+|n#|5|at|
+
+
+
+
+
+|cs|2|at|^-{ With a maximum hand including 4-card support for his partner's major, the 1NT opener 
+ should super-accept in response to a Jacoby transfer by jumping to 3 of the major. }
+^-
+|
+pg| ***** 92 ***** |
+
+
+at|In this example, the 1NT opener would jump to 3@H instead of simply completing the ^*Btransfer. The responder would know right away that his partner was dealt a maximum 1NT opening with 4-card support for hearts. Bridge players use the term super-accept to describe this kind of jump response to a Jacoby transfer bid.
+
+|
+pg| ***** 93 ***** |
+
+
+nt|^b@2^z@3
+There are 2 reasons why it is a good idea for the 1NT opening bidder to super-accept a Jacoby transfer bid when he has 4-card support for his partner's major and a maximum hand.
+
+^D{|cs|1|ia|o1n2d!3h|at|} ^O{|cs|1|ia|o1n2h!3s|at|}
+
+|
+pg| ***** 94 ***** |
+
+
+cs|2|at|^-{ 1) If the responder's hand was not quite strong enough to issue an invitation to game, 
+ the responder might reconsider after the opener super-accepts his transfer. }
+^-
+|
+pg| ***** 95 ***** |
+
+
+cs|3|at|For example, if the responder was dealt a hand like the following:
+
+^B{ |ih|pskq984h53d8cjt764|at| }   @2
+
+|ht|p|n#|3|at|He would respond 2@H to 1NT and pass when his partner simply completed the transfer by bidding 2@S. If instead the opener super-accepts the transfer by jumping to 3@S, the knowledge that his partner has a maximum with 4-card spade support should induce the responder to take a shot at 4@S.
+^b@2
+|
+pg| ***** 96 ***** |
+
+
+n#|5|
+cs|4|At|^-{ 2) If the responder has interest in a possible slam, the bidding will be easier for him if he 
+ learns right away that his partner has a great hand in support of his long major suit. }
+
+|
+pg| ***** 97 ***** |
+
+
+at|^-And that is exactly what a super-accept of his Jacoby transfer bid will tell him! |
+pg| ***** 98 ***** |
+
+
+nt|^b@2^z@3|cs|2|at|^^^^
+ { Historical Note } |cs|1|at|^F { @2Jacoby transfer bids were named after Oswald Jacoby of Dallas, one of the greatest players in the history of the game of bridge. Jacoby first wrote about using 2@D and 2@H responses to 1NT opening bids as transfers in 1956. In 1953-54, Olle Wilner, a Swedish bridge writer and player, wrote a series of articles on the subject. It is therefore not clear that Jacoby deserves credit for the brilliant convention that bears his name. }
+^b@2
+|
+pg| ***** 99 ***** |
+
+
+at|@b@2Nowadays Jacoby transfers are just one of the many types of transfer bids used by expert players, but Jacoby transfers are the only type of transfer bids that have been embraced by average bridge players (and they are the only type of transfers in the SAYC bidding system). 
+
+The basic concept of transfers (that is, a bid that asks your partner to bid a particular suit at a particular level) is a very powerful one. When a player invokes a transfer bid, he knows how the bidding is going to continue (at least most of the time) and this allows him to plan his next bid in advance. 
+
+The fact that transfer bids tend to keep the bidding at a low level gives the player who invokes a transfer a lot of options when it is his turn to bid again.
+
+Jacoby transfer bids are one of the most useful and effective conventions that have ever been devised, but these artificial bids are more complex than most of the conventions that are commonly used by average bridge players. 
+
+Keep the following warning in mind when you learn any new convention, but be especially careful when the convention you learn has as many possible followup bids as do Jacoby transfers!
+
+|
+pg| ***** 100 ***** |
+
+
+cs|4|At|^-{ Do not adopt any convention until you have thoroughly discussed its use with your partner! }
+
+|
+pg| ***** 101 ***** |
+
+
+qx|2majors,When responder has both majors|
+
+nt|^b@2^z@3|cs|5|cp|6|tb|y|fp|t|at|
+^-{  When responder has both majors  }
+^-|fp||at|
+|cp||at|Bridge players use the term 2-suiter (or 2-suited hand) to describe a hand that has a suit with at least 5 cards in it and another suit with at least 4 cards in it. A major 2-suiter is a 2-suited hand in which spades and hearts (the majors) are the 2 long suits.
+
+There are a few specially designed bidding sequences that the responder to a 1NT opening bid can use to describe various types of major 2-suiters. In some cases the responder starts by bidding Stayman and in other cases he uses a Jacoby transfer bid. The strength and exact distribution of the responder's hand determine which course of action he should take.
+
+|
+pg| ***** 102 ***** |
+
+
+cs|1|at|^-{ With less than invitational strength, the responder should transfer to his longest 
+ and strongest major suit and then pass when his partner completes the transfer. }
+^-
+|
+pg| ***** 103 ***** |
+
+
+cs|2|at|^-{ When the responder has exactly 5 cards in one major suit, 4 cards in the other 
+ major suit, and at least invitational strength, he should start by using Stayman. }
+^-
+|
+pg| ***** 104 ***** |
+
+
+cs|4|at|^-{ When the responder has at least 5 cards in both major suits and at 
+ least invitational strength, he should start with a Jacoby transfer bid. }
+^-
+|
+pg| ***** 105 ***** |
+
+
+at|The specifics of exactly how these bidding sequences work will be discussed in detail in this section of the program. |
+pg| ***** 106 ***** |
+
+
+tb||
+
+nt|^b@2^z@3|n#|5|at|Here are some examples of weak major 2-suiters facing a 1NT opening bid:
+
+|ht|c|cs|3|at|^D{ |ih|psqt963ht8742d6cj2|at|} {|n#|8|cs|1|at|^O|ia|o1n?|at| }
+
+|
+pg| ***** 107 ***** |
+
+
+n#|7|at|
+This hand with only 3 HCP |
+pg| ***** 108 ***** |
+
+
+at|and 2 long suit points (1 for each of the 5-card majors) is not strong enough to invite a game contract opposite the opener's 15-17 HCP hand. It is very likely, however, that either 2@S or 2@H will be a better contract than 1NT due to the unbalanced nature of the responder's hand. 
+
+It would be nice if there was some way for the responder to ask the opener to choose between the majors, but there is no way to do this in SAYC. The responder simply has to take his best guess as to whether 2@S or 2@H will be a better contract.
+
+|
+pg| ***** 109 ***** |
+
+
+ht|c|n#|8|cs|1|at|^O|ia|o1n!2h|at| }
+
+
+
+
+
+
+
+
+
+
+
+|n#|7|at|Given that the responder has equal length in the majors (he has 5 cards in both hearts and spades), he should resolve this decision by transferring to his better major (spades in this case) with the intention of passing when his partner completes the transfer. There is no guarantee that spades will make a better trump suit than hearts, but the odds are that at least as many tricks will be available if spades are trump.
+
+|
+pg| ***** 110 ***** |
+
+
+cs|2|At|^-{ With 5-5 in the majors and less than invitational strength, the responder to a 1NT opening
+ should transfer to his stronger major and pass when his partner completes the transfer. }
+|
+pg| ***** 111 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|In this next example, the responder has 5-4 instead of 5-5 in the majors:
+
+|ht|c|cs|3|at|^D{ |ih|pskj86hj9653d4c863|at|} {|n#|8|cs|1|at|^O|ia|o1n?|at| }
+
+
+|
+pg| ***** 112 ***** |
+
+
+n#|7|at|This hand has 5 HCP |
+pg| ***** 113 ***** |
+
+
+at|and 1 long suit point for the 5-card heart suit. 6 total points is not enough for a game invitation opposite a 15-17 1NT opening, but the responder should not stay in 1NT. |
+pg| ***** 114 ***** |
+
+
+at|He has an unbalanced hand and it is likely that either 2@S or 2@H will be a more comfortable contract than 1NT.
+
+|
+pg| ***** 115 ***** |
+
+
+at|The spades in this hand are stronger |
+pg| ***** 116 ***** |
+
+
+at|than the hearts, but length is more important than strength when it comes to selecting a trump suit. |
+pg| ***** 117 ***** |
+
+
+at|It is entirely possible that a spade contract will play better than a heart contract (for example, the opener might have 4 spades and 2 hearts), |
+pg| ***** 118 ***** |
+
+
+at|but the odds are that the partnership will have more hearts between the 2 hands. 
+
+|
+pg| ***** 119 ***** |
+
+
+ht|c|n#|8|cs|1|at|^O|ia|o1n!2d|at| }
+
+
+
+
+
+
+
+
+
+
+
+
+|n#|7|at|Therefore, the proper course of action is for the responder to transfer to 2@H with the intention of passing when the opener completes the transfer. If the opener super-accepts the transfer by jumping to 3@H, this hand is close to being strong enough to take a chance at 4@H.
+
+|
+pg| ***** 120 ***** |
+
+
+cs|2|At|^-{ With 5-4 in the majors and less than invitational strength, the responder to a 1NT opening
+ should transfer to his 5-card major and pass when his partner completes the transfer. }
+|
+pg| ***** 121 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|Here is a slightly stronger hand with 5-5 in the majors:
+
+|ht|c|cs|3|at|^D{ |ih|psaj852hq7643d7ct5|at|} {|n#|8|cs|1|at|^O|ia|o1n?|at| }
+
+
+|
+pg| ***** 122 ***** |
+
+
+n#|7|at|This hand has 7 HCP |
+pg| ***** 123 ***** |
+
+
+at|and 2 long suit points (one for each of the 5-card majors). 9 total points is enough to invite game when your partner opens with a 15-17 1NT opening. Ideally, the responder would like to tell the opener about his distribution and invitational strength and leave it up to his partner to make the decision as to the final contract.
+
+|
+pg| ***** 124 ***** |
+
+
+ht|c|n#|8|cs|1|at|^O|ia|o1n!2d|at| }
+
+
+
+
+
+
+
+|n#|4|at|Fortunately, in the SAYC bidding system there is a way to do exactly that. The responder should start by bidding 2@D as a transfer to 2@H. If by some chance the opener were to super-accept by jumping to 3@H, the responder with this particular hand should certainly go on to game (since he was planning on inviting game in any case).
+
+|
+pg| ***** 125 ***** |
+
+
+ht|c|n#|8|cs|1|at|^O{|ia|o1n2d2h!2s|at| }
+
+
+
+
+
+
+
+
+
+
+|n#|7|at|Most of the time, however, the opener will simply complete the transfer by bidding 2@H. The responder should bid 2@S next. This special sequence describes an invitational hand with 5-5 in the majors. The opener might pass 2@S, but he might also bid 3@H, 4@H, or 4@S at his next turn (depending on his strength and his distribution in the majors). This is the one sequence in SAYC where a Jacoby transfer followed by the bid of a new suit is not forcing to game.
+|
+pg| ***** 126 ***** |
+
+
+n#|8|
+cs|2|At|^-{ With 5-5 in the majors and invitational strength, the responder to a 1NT opening should 
+ bid 2@D to transfer to hearts and rebid 2@S when his partner completes the transfer. }
+|
+pg| ***** 127 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|What if the responder has an invitational hand with 5-4 in the majors?
+
+|ht|c|cs|3|at|^D{ |ih|pskqt83hk974d6c982|at|} {|n#|8|cs|1|at|^O|ia|o1n?|at| }
+
+
+|
+pg| ***** 128 ***** |
+
+
+n#|7|at|This hand is worth 9 total points - 8 HCP |
+pg| ***** 129 ***** |
+
+
+at|and 1 long suit point for the 5-card spade suit. If the opener is maximum for his 15-17 1NT opener then the partnership should have the values to be in a game contract. The responder should therefore issue an invitation to game and attempt to describe his distribution to his partner in the process.
+
+
+|
+pg| ***** 130 ***** |
+
+
+ht|c|n#|8|cs|1|at|^O|ia|o1n!2c|at| }
+
+
+
+
+
+
+
+|n#|4|at|Once again, the SAYC bidding system gets the job done. In this case Jacoby transfer bids are not used. The responder should start by bidding 2@C, the Stayman convention. If the opener shows a 4-card major by bidding 2@H or 2@S next, |
+pg| ***** 131 ***** |
+
+
+at|this hand becomes strong enough to raise the opener's major to game (since the singleton diamond is worth 3 support points once an 8-card fit is revealed).
+
+|
+pg| ***** 132 ***** |
+
+
+ht|c|n#|8|cs|1|at|^O{|ia|o1n2c2d!2s|at| }
+
+
+
+
+
+
+
+
+
+
+
+|n#|7|
+at|If the opener denies a 4-card major by responding 2@D to the Stayman inquiry, the responder should rebid his 5-card major next (2@S in this case). This sequence describes an invitational hand with 5 spades and 4 hearts. The opener will be in a good position to select the best final contract.
+|
+pg| ***** 133 ***** |
+
+
+n#|8|cs|2|at|^-{ With 5-4 in the majors and invitational strength, the responder to a 1NT opening should 
+ use Stayman, planning to raise 2@H or 2@S and to rebid 2 of his 5-card major over 2@D. }
+
+|
+pg| ***** 134 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|SAYC also has an answer when the responder has a strong hand with both majors:
+
+|ht|c|cs|3|at|^D{ |ih|psaqj96hqJ954dA4c2|at|} {|n#|8|cs|1|at|^O|ia|o1n?|at| }
+
+
+|
+pg| ***** 135 ***** |
+
+
+n#|7|at|This hand, with 14 HCP, |
+pg| ***** 136 ***** |
+
+
+At|2 long suit points for the 2 5-card majors, and 16 total points is so strong that a small slam might be in the cards opposite a 15-17 HCP 1NT opening. |
+pg| ***** 137 ***** |
+
+
+ht|c|n#|8|cs|1|at|^O{|ia|o1n!2h2s?|at| }
+
+
+
+
+|at|The responder can tell his partner that he has a hand like this by starting with 2@H, a Jacoby transfer to 2@S. When his partner completes the transfer, the responder's rebid will finish painting the picture of his hand type.
+
+|
+pg| ***** 138 ***** |
+
+
+ht|c|n#|8|cs|1|at|^O{|ia|o1n2h2s!3h|at| }
+
+
+
+
+
+
+
+
+|at|3@H is the proper rebid for the responder when he has a hand like this. This sequence suggests at least enough strength to force to game and 5-5 in the major suits. Remember that if the responder had shown his majors in the other order (by first transferring to 2@H and then bidding 2@S) he would be describing an invitational hand with the same major suit distribution.
+
+|
+pg| ***** 139 ***** |
+
+
+at|In the actual sequence, if the opener prefers spades to hearts he can bid 3@S next. If he likes hearts better he can raise to 4@H or even cuebid a new suit as a move toward slam.
+|
+pg| ***** 140 ***** |
+
+
+cs|2|At|
+^-{ With 5-5 in the majors and enough strength to force to game opposite a 1NT opening,  
+ bid 2@H to transfer to spades and rebid 3@H when your partner completes the transfer. }
+|
+pg| ***** 141 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|There is only 1 more type of hand to consider - a game forcing hand with 5-4 in the majors:
+
+|ht|c|cs|3|at|^D{ |ih|psaq92hkj876d43c92|at|} {|n#|8|cs|1|at|^O|ia|o1n?|at| }
+
+
+|
+pg| ***** 142 ***** |
+
+
+n#|7|at|Here the responder has 10 HCP |
+pg| ***** 143 ***** |
+
+
+at|and 1 long suit point for the 5-card heart suit. 11 total points is more than enough to insist upon some game contract opposite a 15-17 HCP 1NT opener. |
+pg| ***** 144 ***** |
+
+
+at|The best game contract will be a function of the opener's major suit distribution. Either 3NT, 4@H, or 4@S could be the place to play and the responder needs help making this decision.
+
+|
+pg| ***** 145 ***** |
+
+
+ht|c|n#|8|cs|1|at|^O{|ia|o1n!2c|at| }
+
+
+
+
+
+
+
+|n#|7|at|As with the earlier example we saw where the responder was dealt an invitational hand with 5-4 in the majors, he should also start by bidding 2@C (the Stayman convention) when he has a hand that is strong enough to force to game with 5-4 in the majors. If the opener rebids 2@H or 2@S to show a 4-card major, the responder will raise that suit to game.
+
+|
+pg| ***** 146 ***** |
+
+
+ht|c|n#|8|cs|1|at|^O{|ia|o1n2c2d!3h|at| }
+
+
+
+
+
+
+
+
+
+
+
+|at|If the opener denies a 4-card major by rebidding 2@D, the responder should jump to 3 of his 5-card suit at his next turn (3@H in this case). This sequence describes a game forcing hand with 5 hearts and 4 spades. The opener will bid 3NT if he has only 2 hearts and he will raise to 4@H (or perhaps cuebid another suit if he is interested in slam) if he has 3-card heart support.
+
+|
+pg| ***** 147 ***** |
+
+
+cs|2|at|^-{ With 5-4 in the majors and game forcing strength, the responder to a 1NT opening should 
+ use Stayman, planning to raise 2@H or 2@S and to rebid 3 of his 5-card major over 2@D. }
+
+|
+pg| ***** 148 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|We have now defined ways to handle just about any kind of major 2-suiter that you could ever be dealt opposite a 1NT opening bid. The SAYC bidding system has sequences for bidding 5-5 and 5-4 hands in the signoff, invitational, and game forcing ranges. Before we move on, here are a few more points that should be mentioned:
+
+|
+pg| ***** 149 ***** |
+
+
+cs|1|at|^-{ With 6-5 (or better) in the majors facing a 1NT opening bid, the responder should 
+ usually follow the same strategy that he would use if he had been dealt 5-5 in the majors. }
+^-
+|
+pg| ***** 150 ***** |
+
+
+cs|2|at|^-{ With 6-4 or 7-4 in the majors facing a 1NT opening bid, the responder should
+ usually ignore his 4-card major and treat his hand as if it was a 1-suited hand. }
+^-
+|
+pg| ***** 151 ***** |
+
+
+at|When the responder has a 6-card (or longer) major suit and his partner opens the bidding with 1NT, he already knows that an 8-card major suit fit is present. In most cases there is not much point in exploring for another 8-card major suit fit for his 4-card major (by using Stayman for example). This is really a judgment situation, but the responder won't be too far off the mark if he always ignores his 4-card major when he also has a 6-card (or longer) major suit.
+
+|
+pg| ***** 152 ***** |
+
+
+cs|3|at|^-{ With a weak major 2-suiter, the responder cannot afford to use Stayman because
+ he will have no good rebid if the opener denies a 4-card major by bidding 2@D. }
+^-
+|
+pg| ***** 153 ***** |
+
+
+at|As we have seen, when the responder is not strong enough to issue a game invitation, he should transfer to his longest and strongest major and pass when his partner completes the transfer. Sometimes the partnership will end up in an inferior trump suit as a result, but it is too dangerous for the responder to explore for a better fit via Stayman. Everything would be OK if the opener rebid 2@H or 2@S, but the responder would be in trouble if the opener rebid 2@D.
+
+
+|
+pg| ***** 154 ***** |
+
+
+qx|rev, Jacoby transfer bids - Review and Exercises|
+
+nt|^b@2^z@3|cs|5|cp|6|tb|y|fp|t|at|
+^-{  Jacoby transfer bids - Review and Exercises  }
+^-|fp||at|
+|cp||at|In this chapter you have been introduced to the Standard American Yellow Card (SAYC) bidding system. In the original Learn to Play Bridge program, the bidding system that was presented was referred to as Modern Standard American with 5-card majors. That bidding system was specifically designed for teaching new bridge players about bidding. 
+
+SAYC on the other hand is arguably the most popular bidding system in the world today. Most of the bidding sequences that were discussed in Learn to Play Bridge have the same meanings that they would using SAYC. It is the case, however, that the SAYC bidding system is different than Modern Standard American with 5-card majors in some areas. One of the main areas of difference involves responding to a 1NT opening bid. In particular, Jacoby transfer bids are used in SAYC and this convention was never mentioned in the Learn to Play Bridge program.
+
+|
+pg| ***** 155 ***** |
+
+
+at|In SAYC, the 2@D and 2@H responses to a 1NT opening bid are Jacoby transfer bids:
+
+^D{|cs|1|ia|o1n!2d|at|} ^O{|cs|1|ia|o1n!2h|at|}
+
+|
+pg| ***** 156 ***** |
+
+
+cs|4|at|^-{ A Jacoby transfer bid promises at least 5 cards in the next higher-ranking (major) suit. }
+^-
+|
+pg| ***** 157 ***** |
+
+
+at|So in the first bidding sequence, the 2@D response to 1NT promises at least 5 hearts. In the second bidding sequence, the 2@H response to 1NT promises at least 5 spades.
+|
+pg| ***** 158 ***** |
+
+
+tb||
+
+nt|^b@2^z@3
+As we have seen, Jacoby transfers are very flexible bids that can be used when the responder to a 1NT opening has a wide variety of hand types. The only constant about the type of hands that are appropriate for Jacoby transfer bids is that the responder must always have at least a 5-card major to use one of these bids.
+
+|
+pg| ***** 159 ***** |
+
+
+cs|2|at|^-{ Jacoby transfer bids can be used with signoff hands, invitational hands, hands that are 
+ strong enough to force to game, and hands that are strong enough to explore for slam. }
+^-
+|
+pg| ***** 160 ***** |
+
+
+cs|3|at|^-{ Jacoby transfer bids can be used with balanced hands, unbalanced 
+ hands, hands with only 1 long suit, or hands with 2 or 3 long suits. }
+^-
+|
+pg| ***** 161 ***** |
+
+
+at|The 1NT opener does not have much to think about when his partner uses a Jacoby transfer:
+
+|
+pg| ***** 162 ***** |
+
+
+ht|p|n#|3|at|^D{|cs|1|ia|o1n2d!2h|at|} ^O{|cs|1|ia|o1n2h!2s|at|}
+
+|cs|4|at|^-{ After a Jacoby transfer bid, the opening bidder almost always completes the transfer
+ by bidding 2 of the major suit that the responder promised by using a Jacoby transfer. }
+^-
+|
+pg| ***** 163 ***** |
+
+
+ht|p|n#|3|at|^D{|cs|1|ia|o1n2d!3h|at|} ^O{|cs|1|ia|o1n2h!3s|at|}
+
+|cs|1|at|
+
+
+^-{ With a maximum hand including 4-card support for his partner's major, the 1NT opener 
+ should super-accept in response to a Jacoby transfer by jumping to 3 of the major. }
+^-
+|
+pg| ***** 164 ***** |
+
+
+nt|^b@2^z@3^^
+^D{|cs|1|ia|o1n2d!3h|at|} ^O{|cs|1|ia|o1n2h!3s|at|}
+
+|cs|1|at|Super-accepting a Jacoby transfer bid can be dangerous because the responder could have a very weak hand for his transfer. That is one of the reasons why the opener should not super-accept very often - he should wait until he has both a maximum hand for his 1NT opener and 4-card support for the responder's major suit. 
+
+There are 2 reasons why the opener should super-accept his partner's transfer under these circumstances:
+
+|
+pg| ***** 165 ***** |
+
+
+cs|4|at|^-{ 1) If the responder's hand was not quite strong enough to issue an invitation to game, 
+ the responder might reconsider after the opener super-accepts his transfer. }
+^-
+|
+pg| ***** 166 ***** |
+
+
+cs|2|At|^-{ 2) If the responder has interest in a possible slam, the bidding will be easier for him if he 
+ learns right away that his partner has a great hand in support of his long major suit. }
+^-
+|
+pg| ***** 167 ***** |
+
+
+at|Jacoby transfer bids are among the most popular conventions that have ever been devised. This is largely a function of how effective these bids are in practice. Here is one of the reasons why Jacoby transfers work so well:
+
+|
+pg| ***** 168 ***** |
+
+
+cs|3|at|^-{ After a Jacoby transfer bid is used, the 1NT opener will become the
+ declarer if the responder's long major suit becomes the trump suit. }
+^-
+|
+pg| ***** 169 ***** |
+
+
+nt|^b@2^z@3|cs|1|at|
+It may not have been immediately obvious why it is advantageous for the 1NT opening bidder rather than the responder to end up as the declarer, but we have explored this issue in some detail. This phenomena is not restricted to the bidding sequences that start with a 1NT opening bid. In general we have seen:
+
+|
+pg| ***** 170 ***** |
+
+
+at|^-{ If a partnership has a choice as to which player will be the declarer, on most deals 
+ it will be to their advantage to try to arrange for the stronger hand to be declarer. }
+^-
+|
+pg| ***** 171 ***** |
+
+
+at|The reason for this is that the opening lead gives the defenders a chance to attack a suit of their choice. Making the stronger hand the declarer (rather than the dummy) will often serve to protect the high cards in that hand from immediate attack.
+
+|
+pg| ***** 172 ***** |
+
+
+cs|4|at|^-{ One of the main advantages of using Jacoby transfer bids is that these bids allow the 
+ partnership to protect the 1NT opener's high cards by making him the declarer more often. }
+^-
+|
+pg| ***** 173 ***** |
+
+
+cs|2|at|^-{ The word transfer is part of the name of Jacoby transfer bids because these bids 
+ effectively transfer the declaration from the (weak) responder to the (strong) opener. }
+^-
+|
+pg| ***** 174 ***** |
+
+
+at|Allowing the 1NT opener to be declarer on a large percentage of hands is certainly a relevant advantage to using Jacoby transfer bids, but there is an even more important reason why these bids are effective in practice:
+
+|
+pg| ***** 175 ***** |
+
+
+cs|3|at|^-{ After the 1NT opener completes the transfer, the responder 
+ is well-placed to continue describing his hand with his next bid. }
+^-
+|
+pg| ***** 176 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|There are a lot of things that the responder can do after the opener completes the transfer. Fortunately the responder's rebids all mean what you would expect.
+
+|cs|1|ht|d|n#|3|at|^D{|cs|1|ia|o1n2d2h?|at| } ^O{|cs|1|ia|o1n2h2s?|at| }
+
+|
+pg| ***** 177 ***** |
+
+
+cs|3|at|^-{ To sign off in 2 of a major after a 1NT opening bid, transfer to your 5-card 
+ (or longer) major suit and pass when your partner completes the transfer. }
+
+|
+pg| ***** 178 ***** |
+
+
+cs|2|at|{ A Jacoby transfer followed by a 2NT rebid describes an 
+ invitational hand with exactly 5 cards in responder's major. }
+
+|
+pg| ***** 179 ***** |
+
+
+cs|4|at|{ With an invitational hand containing a 6-card (or longer) major suit, transfer
+ to your major and, after the transfer is completed, rebid 3 of your major. }
+
+|
+pg| ***** 180 ***** |
+
+
+cs|1|at|{ A Jacoby transfer followed by a 3NT rebid shows exactly 5 cards in the major and
+ asks the 1NT opener to choose between 3NT and 4 of the major as a final contract. }
+
+|
+pg| ***** 181 ***** |
+
+
+cs|3|at|{ To sign off in 4 of a long major after a 1NT opening bid, transfer to your 
+ major and then rebid 4 of your major (which your partner will pass). }
+
+|
+pg| ***** 182 ***** |
+
+
+cs|2|at|{ A Jacoby transfer bid followed by a 4NT rebid is not Blackwood - it is a quantitative try 
+ for slam that is based on a balanced hand with exactly 5 cards in the major that was shown. }
+|
+pg| ***** 183 ***** |
+
+
+nt|^b@2^z@3
+|cs|4|at|All of responder's possible rebids after the opener completes the transfer were covered on the last page except for those that involve the rebid of a new suit. The following principle that covers this case has only 1 exception (which we will review shortly):
+
+|
+pg| ***** 184 ***** |
+
+
+at|^-{ A Jacoby transfer followed by the bid of a new suit is forcing to game and describes 
+ a hand with at least a 5-card major and at least 4 cards in the new suit that was introduced. }
+^-
+|
+pg| ***** 185 ***** |
+
+
+at|For some reason this rebid by the responder after a Jacoby transfer causes confusion for some bridge players. It is important to understand the following 2 points about these bidding sequences:
+
+|
+pg| ***** 186 ***** |
+
+
+cs|1|at|^-{ 1. A Jacoby transfer followed by the bid of a new suit does not necessarily 
+ imply that the responder might have interest in playing in a slam contract. }
+^-
+|
+pg| ***** 187 ***** |
+
+
+at|Responder needs to have the strength to force to game (that is, 10 or more total points) in order to rebid a new suit after a Jacoby transfer. Many bridge players mistakenly think the responder must have slam interest in order to bid this way.
+
+|
+pg| ***** 188 ***** |
+
+
+cs|3|at|^-{ 2. A Jacoby transfer followed by the bid of a new suit shows at least 4 cards in the new suit. }
+^-
+|
+pg| ***** 189 ***** |
+
+
+at|Some bridge players are under the wrong impression that when they bid this way, the new suit bid is actually a cuebid (as opposed to a possible trump suit). In other words, they might bid a new suit after their Jacoby transfer bid was completed in order to show the Ace of that suit in a hand with interest in slam. That would be a serious mistake. Responder's rebid of a new suit after a Jacoby transfer guarantees that he holds at least 4 cards in that suit.
+
+|
+pg| ***** 190 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|We then went on to consider how the responder should handle major 2-suiters with varying strengths and distributions after a 1NT opening bid by his partner. A major 2-suiter is any hand with at least 5 cards in one of the majors and at least 4 cards in the other major. Here are some general reminders of how the responder should select his first action with such hands:
+
+|
+pg| ***** 191 ***** |
+
+
+cs|4|at|^-{ With less than invitational strength, the responder should transfer to his longest 
+ and strongest major suit and then pass when his partner completes the transfer. }
+^-
+|
+pg| ***** 192 ***** |
+
+
+cs|2|at|^-{ When the responder has exactly 5 cards in one major suit, 4 cards in the other 
+ major suit, and at least invitational strength, he should start by using Stayman. }
+^-
+|
+pg| ***** 193 ***** |
+
+
+cs|3|at|^-{ When the responder has at least 5 cards in both major suits and at 
+ least invitational strength, he should start with a Jacoby transfer bid. }
+^-
+|
+pg| ***** 194 ***** |
+
+
+at|Here is a more detailed decription of how the responder should bid with 5-5 or 5-4 in the majors when he has less than enough strength to invite game opposite a 1NT opening:
+
+|
+pg| ***** 195 ***** |
+
+
+cs|1|At|^-{ With 5-5 in the majors and less than invitational strength, the responder to a 1NT opening
+ should transfer to his stronger major and pass when his partner completes the transfer. }
+
+|
+pg| ***** 196 ***** |
+
+
+cs|4|At|{ With 5-4 in the majors and less than invitational strength, the responder to a 1NT opening
+ should transfer to his 5-card major and pass when his partner completes the transfer. }
+
+|
+pg| ***** 197 ***** |
+
+
+cs|2|at|{ With a weak major 2-suiter, the responder cannot afford to use Stayman because
+ he will have no good rebid if the opener denies a 4-card major by bidding 2@D. }
+|
+pg| ***** 198 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|When the responder to a 1NT opening has a major 2-suiter with at least invitational strength, he can afford to investigate the possibility of playing in both major suits. 
+|
+pg| ***** 199 ***** |
+
+
+n#|7|
+cs|1|At|^-{ With 5-5 in the majors and invitational strength, the responder to a 1NT opening should 
+ bid 2@D to transfer to hearts and rebid 2@S when his partner completes the transfer. }
+^-|
+pg| ***** 200 ***** |
+
+
+n#|7|
+at|This special sequence is the one exception to a principle mentioned earlier. In all other cases, a Jacoby transfer bid followed by the rebid of a new suit by the responder is forcing to game. In this sequence, however, the bid of a new suit by the responder (2@S) is only invitational.
+|
+pg| ***** 201 ***** |
+
+
+n#|7|
+cs|3|at|^-{ With 5-4 in the majors and invitational strength, the responder to a 1NT opening should 
+ use Stayman, planning to raise 2@H or 2@S and to rebid 2 of his 5-card major over 2@D. }
+
+|
+pg| ***** 202 ***** |
+
+
+cs|2|at|{ With 5-5 in the majors and enough strength to force to game opposite a 1NT opening,  
+ bid 2@H to transfer to spades and rebid 3@H when your partner completes the transfer. }
+
+|
+pg| ***** 203 ***** |
+
+
+cs|4|at|{ With 5-4 in the majors and game forcing strength, the responder to a 1NT opening should 
+ use Stayman, planning to raise 2@H or 2@S and to rebid 3 of his 5-card major over 2@D. }
+|
+pg| ***** 204 ***** |
+
+
+n#|7|
+at|^-Here are some guidelines for handling other major 2-suiters after a 1NT opening bid:
+|
+pg| ***** 205 ***** |
+
+
+n#|7|
+cs|1|at|^-{ With 6-5 (or better) in the majors facing a 1NT opening bid, the responder should 
+ usually follow the same strategy that he would use if he had been dealt 5-5 in the majors. }
+
+|
+pg| ***** 206 ***** |
+
+
+cs|2|at|{ With 6-4 or 7-4 in the majors facing a 1NT opening bid, the responder should
+ usually ignore his 4-card major and treat his hand as if it was a 1-suited hand. }
+^-
+|
+pg| ***** 207 ***** |
+
+
+nt|^b@2^z@3|n#|5|At|In each of the following exercises, your partner opens the bidding with 1NT. You make a Jacoby transfer bid to show your 5-card (or longer) major suit and your partner completes the transfer. What would you rebid with each of the following hands?
+
+|ha||mb|1np2dp2hp|cs|1|ht|e|n#|8|at|^-{ |ia|o1n2d2h?|at| }
+
+|
+pg| ***** 208 ***** |
+
+
+cs|3|at|{ |ih|psk98hqj763dq976ct|at|}
+^-
+|
+hf|q|cq|4|lb|*BWhat call would you make?^^2n|cs|1|ht|e|n#|8|at|^-{ |ia|o1n2d2h!2n|at| }
+|ht|r|at|^-Rebid 2NT. This sequence shows an invitational hand with exactly 5 hearts and that is exactly what you have. |
+pg| ***** 210 ***** |
+
+
+at|You have 8 HCP |
+pg| ***** 211 ***** |
+
+
+at|and 1 long suit point for your 5-card heart suit. If your partner has a maximum for his 15-17 HCP 1NT opening, the partnership has enough combined strength to play in a game contract.
+
+|
+pg| ***** 212 ***** |
+
+
+at|The only problem with this course of action is that you may end up playing in notrump despite the fact that you hold a singleton. |
+pg| ***** 213 ***** |
+
+
+at|However, you will end up in hearts if your partner has 3-card support for your suit. Furthermore, every other possible rebid would mislead your partner as to either your strength or your distribution.
+
+|
+pg| ***** 214 ***** |
+
+
+nt|^b@2^z@3
+|md||ha||mb|1np2hp2sp|ht|b|cs|1|at|^-{ |ia|o1n2h2s?|at| }
+
+|cs|3|at|{ |ih|psj987642ha87dk2c9|at|}
+^-
+|hf|n|cq|4|lb|*BWhat call would you make?^^4s|
+ht|b|cs|1|at|^-{ |ia|o1n2h2s!4s|at| }
+^-
+|ht|n|n#|3|at|You should rebid 4@S and expect your partner to pass (since your bidding sequence is defined as a signoff). While your spades are not very strong, you do have a 7-card suit and your partner must have at least 2 spades of his own for his 1NT opening bid. 
+
+Your 7-card spade suit is worth 3 long suit points. |
+pg| ***** 216 ***** |
+
+
+At|Add that to your 8 HCP and you get 11 total points - more than enough to insist on playing in a game contract when your partner has promised 15-17 HCP. 
+
+|
+pg| ***** 217 ***** |
+
+
+At|Furthermore, you know exactly which game contract you want to play in. There is no reason to even think about notrump or any other suit as trump. You know that 4@S is the place to be. Tell your partner the news by signing off in what is almost certainly the best contract.
+
+|
+pg| ***** 218 ***** |
+
+
+nt|^b@2^z@3
+|md||ha||mb|1np2dp2hp|ht|b|cs|1|at|^-{ |ia|o1n2d2h?|at| }
+
+|cs|3|at|{ |ih|ps6hK9753dqt942c73|at|}
+^-
+|hf|n|cq|4|lb|*BWhat call would you make?^^p|
+ht|b|cs|1|at|^-{ |ia|o1n2d2h!p|at| }
+^-|ht|n|n#|3|at|This time you should not make any rebid at all - you should pass! |
+pg| ***** 220 ***** |
+
+
+at|This hand, with 2 5-card suits, has nice distribution. Those 5-card suits are worth 2 long suit points (1 for each suit). |
+pg| ***** 221 ***** |
+
+
+at|With only 5 HCP, however, this hand has only 7 total points and that is not enough to get involved in looking for a game contract when your partner has 17 HCP at the very most.
+
+|
+pg| ***** 222 ***** |
+
+
+at|You should pass 2@H and let your partner play the hand in that contract. In all likelihood 2@H will be a more comfortable place to play than 1NT would have been. |
+pg| ***** 223 ***** |
+
+
+At|It is quite possible that diamonds is actually the best combined trump suit that the partnership has, but there is no way of investigating this possibility in the SAYC bidding system.
+
+|
+pg| ***** 224 ***** |
+
+
+at|If your partner had super-accepted your transfer by jumping to 3@H you would have had a close decision as to whether or not you should go on to 4@H. When your partner simply completes the transfer by bidding 2@H, your decision is much easier!|
+pg| ***** 225 ***** |
+
+
+nt|^b@2^z@3
+|md||ha||mb|1np2hp2sp|ht|b|cs|1|at|^-{ |ia|o1n2h2s?|at| }
+
+|cs|3|at|{ |ih|psA9763hq2d4ckj872|at|}
+^-
+|hf|n|cq|4|lb|*BWhat call would you make?^^3c|
+
+ht|b|cs|1|at|^-{ |ia|o1n2h2s!3c|at| }
+|ht|o|at|^-Tell your partner about your second 5-card suit by rebidding 3@C. |
+pg| ***** 227 ***** |
+
+
+at|This hand has 12 total points (10 HCP |
+pg| ***** 228 ***** |
+
+
+at|and 2 long suit points - 1 for each of the 2 5-card suits). The partnership is certain to belong in some game contract, but whether the best game contract is 3NT, 4@S, or even 5@C is something that you cannot decide on your own.
+
+|
+pg| ***** 229 ***** |
+
+
+at|When the responder bids a new suit after the opener completes the transfer, the partnership is forced to game. Your partner will know you have a good hand with at least 5 spades and at least 4 clubs. He will be in a good position to select the best final contract by examining how much support he has for the 2 suits that you have bid.
+
+|
+pg| ***** 230 ***** |
+
+
+at|If the opener lacks 3-card spade support |
+pg| ***** 231 ***** |
+
+
+at|he will probably choose to play in 3NT unless he has no stopper in either hearts or diamonds. |
+pg| ***** 232 ***** |
+
+
+at|Playing in 5 of a minor should be seen as a last resort. |
+pg| ***** 233 ***** |
+
+
+nt|^b@2^z@3
+|md||ha||mb|1np2dp2hp|ht|b|cs|1|at|^-{ |ia|o1n2d2h?|at| }
+
+|cs|3|at|{ |ih|psA4hjt843dj987cat|at|}
+^-
+|hf|n|cq|4|lb|*BWhat call would you make?^^3n|
+
+ht|b|cs|1|at|^-{ |ia|o1n2d2h!3n|at| }
+|ht|o|at|^-This hand contains a second suit, but it would be a mistake to tell your partner about your diamonds by rebidding 3@D. Even though the opener would only consider playing in 5@D as a last resort, you have enough information to know that 5@D is unlikely to be the best game contract. |
+pg| ***** 235 ***** |
+
+
+at|In particular, your strong holdings in spades and clubs tell you that the partnership has a stopper in both of your short suits. The opener cannot know this and it would be a bad idea to get him to shy away from notrump and possibly into diamonds.
+
+|
+pg| ***** 236 ***** |
+
+
+at|By rebidding 3NT after the opener completes the transfer, you are giving your partner a choice between playing in 3NT and playing in 4@H. If he has 3 or 4-card heart support, he will bid 4@H next (and you will pass). Otherwise, he will pass 3NT and it will be very likely that 3NT will be the best place to play. |
+pg| ***** 237 ***** |
+
+
+at|This is not a good hand for suggesting the possibility of playing in 5 of a minor so do not rebid 3@D here (as that would bring a 5@D contract into the picture). |
+pg| ***** 238 ***** |
+
+
+nt|^b@2^z@3
+|md||ha||mb|1np2hp2sp|ht|b|cs|1|at|^-{ |ia|o1n2h2s?|at| }
+
+|cs|3|at|{ |ih|pskj972haq4da9cj62|at|}
+^-
+|hf|n|cq|4|lb|*BWhat call would you make?^^4n|
+
+ht|b|cs|1|at|^-{ |ia|o1n2h2s!4n|at| }
+|ht|o|at|^-You should rebid 4NT. 4NT in this bidding sequence is not the Blackwood convention. 4NT suggests a balanced hand with exactly 5 spades and enough strength to suggest a slam 
+contract if the opener has a maximum hand for his 1NT opening bid.
+
+|
+pg| ***** 240 ***** |
+
+
+at|You have 1 long suit point for your 5-card spade suit |
+pg| ***** 241 ***** |
+
+
+at|and 15 HCP. If your partner has a maximum for his 15-17 1NT opening then your 16 total points should be enough to make some small slam contract a good proposition. 
+
+|
+pg| ***** 242 ***** |
+
+
+at|You don't know how many spades your partner has so you have no way of knowing whether the final contract should be in spades or in notrump. The bidding sequence shown above will leave the opener in a strong position to pick the best possible resting place. He will either pass 4NT, return to 5@S, or go on to 6@S or 6NT, depending on his strength and his degree of spade support.
+
+|
+pg| ***** 243 ***** |
+
+
+nt|^b@2^z@3
+|md||ha||mb|1np2dp2hp|ht|b|cs|1|at|^-{ |ia|o1n2d2h?|at| }
+
+|cs|3|at|{ |ih|ps4ht97642dat3ck85|at|}
+^-
+|hf|n|cq|4|lb|*BWhat call would you make?^^3h|
+ht|b|cs|1|at|^-{ |ia|o1n2d2h!3h|at| }
+|ht|o|at|^-Rebid 3@H to describe an invitational hand with 6 or more hearts. Don't worry about your heart suit being weak - your partner must have at least 2 hearts for his 1NT opening bid so there must be at least an 8-card trump fit in hearts. 
+
+|
+pg| ***** 245 ***** |
+
+
+at|This hand contains 7 HCP |
+pg| ***** 246 ***** |
+
+
+at|and the 6-card heart suit is worth 2 long suit points. With 9 total points, this hand is worth a game invitation opposite a 15-17 HCP 1NT opening bid. If your partner has a minimum 1NT opening he will pass 3@H, but if he has a maximum he will go on to game by bidding 4@H. 
+
+He should not give any thought to playing in 3NT since this bidding sequence will tell him that your heart suit is at least 6 cards long. Your 3@H rebid will let him know that an 8-card major suit fit is certain to be present.
+
+|
+pg| ***** 247 ***** |
+
+
+nt|^b@2^z@3|n#|5|at|In each of the following quizzes you have been dealt a major 2-suiter and your partner opens the bidding with 1NT. Recall that there are special ways of handling these types of hands in the SAYC bidding system. Plan the bidding that you intend to use in each case.
+
+|ht|f|cs|1|at|^-{ |ia|o1n?|at| }
+^-
+|
+pg| ***** 248 ***** |
+
+
+md||ha||mb|1np|cs|3|at|^-{ |ih|ps976432hqt872d6c8|at| }
+^-
+|hf|q|lb|*BWhat call would you make?^^2h|ht|f|cs|1|at|^-{ |ia|o1n!2h|at| }
+^-
+|ht|q|at|Respond 2@H as a transfer to spades, intending to pass when your partner completes the transfer. |
+pg| ***** 250 ***** |
+
+
+at|It is true that you have a 5-card heart suit and that your hearts are stronger |
+pg| ***** 251 ***** |
+
+
+at|than your spades, but you have 6 cards in spades and length is more important than strength when it comes to selecting a trump suit. With spades as trump, the partnership is certain to have at least an 8-card fit. |
+pg| ***** 252 ***** |
+
+
+at|In hearts, there would be only 7 combined trumps if the opener has a doubleton.
+
+|
+pg| ***** 253 ***** |
+
+
+at|Using Stayman instead of a Jacoby transfer bid could work out with this hand, but if the opener were to respond 2@D to a 2@C Stayman inquiry, there would be no way for the responder to survive without seriously misdescribing his hand. |
+pg| ***** 254 ***** |
+
+
+at|With such a weak hand with both majors, the prudent course of action is to transfer to the longer major suit.
+
+|
+pg| ***** 255 ***** |
+
+
+nt|^b@2^z@3
+|md||ha||mb|1np|ht|b|cs|1|at|^m|ia|o1n?|at|
+
+
+|cs|3|at|^m|ih|psj876haq954dt32c7|at|
+|
+pg| ***** 256 ***** |
+
+
+hf|n|cq|4|lb|*BWhat call would you make?^^2c|
+ht|b|cs|1|At|^m|ia|o1n!2c|at|
+
+|ht|n|at|Start by bidding 2@C as the Stayman convention since this hand is (barely) strong enough to investigate playing in both of the majors. |
+pg| ***** 258 ***** |
+
+
+at|With 7 HCP |
+pg| ***** 259 ***** |
+
+
+at|and 1 long suit point for the 5-card heart suit, this hand has 8 total points. The responder should invoke an invitational sequence |
+pg| ***** 260 ***** |
+
+
+at|and with 5-4 in the majors, Stayman is the way to begin in SAYC.
+
+|
+pg| ***** 261 ***** |
+
+
+ha||mb|2dp|ht|b|cs|1|At|^m|ia|o1n2c2d?|at|
+
+|hf|s|lb|*BYour partner rebids 2 Diamonds. What call would you make?^^2h|ht|b|cs|1|At|^m|ia|o1n2c2d!2h|at|
+
+|ht|s|at|Rebid 2@H. This bidding sequence describes a hand with invitational strength including a 5-card heart suit and a 4-card spade suit. After receiving such an accurate description of your hand, your partner will be in a good position to know what the final contract should be. 
+
+There are not very many hands with which you should reject using a Jacoby transfer bid when you have been dealt a 5-card (or longer) major suit, |
+pg| ***** 263 ***** |
+
+
+at|but when you have exactly 5-4 in the majors with at least invitational strength, the Stayman convention is the way to go.
+|
+pg| ***** 264 ***** |
+
+
+nt|^b@2^z@3
+|ht|b|cs|1|at|^m|ia|o1n?|at|
+
+|ht|e|n#|3|cs|3|at|^m|ih|psaj976hqt854d52c6|at|
+|hf|n|cq|4|lb|*BWhat call would you make?^^2d|
+
+
+ht|b|cs|1|at|^m|ia|o1n!2d|at|
+|ht|n|at|Start with 2@D as a Jacoby transfer to 2@H. |
+pg| ***** 266 ***** |
+
+
+at|Here you have 5 cards in both major suits and it does not matter that your spades are stronger than your hearts. |
+pg| ***** 267 ***** |
+
+
+at|What matters is that this is an invitational hand (it has 7 HCP |
+pg| ***** 268 ***** |
+
+
+at|and 2 long suit points for 9 total points). Invitational hands with 5-5 in the majors start by transferring to 2@H.
+
+|
+pg| ***** 269 ***** |
+
+
+ht|b|cs|1|at|^m|ia|o1n2d2h ?|at|
+
+|ha||mb|2hp|hf|s|lb|*BPartner completes the transfer. What call would you make?^^2s|
+ht|b|cs|1|at|^m|ia|o1n2d2h!2s|at|
+
+|ht|s|at|Rebid 2@S to tell your partner about your second 5-card major. |
+pg| ***** 271 ***** |
+
+
+at|This special bidding sequence describes an invitational hand with 5-5 in the major suits. This is the one bidding sequence in which the responder can bid a new suit after making a Jacoby transfer bid without creating a game force in the process.
+
+|
+pg| ***** 272 ***** |
+
+
+at|The opener will look at the strength of his hand and his length in the major suits and either pass your 2@S rebid or bid 3@H, 4@H, or 4@S at his next opportunity. Whatever he decides, there will be a very good chance that he will be right given how well you have described your hand to him!|
+pg| ***** 273 ***** |
+
+
+nt|^b@2^z@3
+|md||ha||mb|1np|ht|b|cs|1|at|^m|ia|o1n?|at|
+
+
+|cs|3|at|^m|ih|psk9764haqjt2d6cj7|at|
+
+|hf|n|cq|4|lb|*BWhat call would you make?^^2h|
+ht|b|cs|1|at|^m|ia|o1n!2h|at|
+|ht|n|at|The way to start bidding this promising hand is with 2@H - a Jacoby transfer to 2@S. |
+pg| ***** 275 ***** |
+
+
+at|Once again, the relative strength of your major suits is not an issue. With 5-5 in the majors and enough strength to force to game, transferring to 2@S is the correct initial action. You will be able to continue the description of your hand at your next turn to bid.
+
+|
+pg| ***** 276 ***** |
+
+
+ht|b|cs|1|at|^m|ia|o1n2h2s?|at|
+
+|ha||mb|2sp|hf|s|lb|*BPartner completes the transfer. What call would you make?^^3h|
+ht|b|cs|1|at|^m|ia|o1n2h2s!3h|at|
+|ht|s|at|Rebid 3@H. In the SAYC bidding system, this sequence promises 5-5 in the majors and enough strength to force to game. |
+pg| ***** 278 ***** |
+
+
+at|With 11 HCP |
+pg| ***** 279 ***** |
+
+
+at|and 2 long suit points (1 for each of the 2 5-card majors), this hand has 13 total points. The partnership is certain to belong in a game contract, but the best game contract will be a function of the opener's major suit distribution.
+
+|
+pg| ***** 280 ***** |
+
+
+at|Your partner will not have 2 doubletons given his 1NT opening bid so he must have at least 3-card support for at least one of your 5-card major suits. An 8-card major suit fit is certain to be present. You have described your hand well. Your partner can now decide on the trump suit.
+|
+pg| ***** 281 ***** |
+
+
+nt|^b@2^z@3
+|
+ht|b|cs|1|at|^m|ia|o1n?|at|
+^^
+|cs|3|at|^m|ih|psak974hakt3dk5ct5|at|
+|hf|n|cq|4|lb|*BWhat call would you make?^^2c|
+
+ht|b|cs|1|at|^m|ia|o1n!2c|at|
+|ht|n|at|You have a massive hand, but your first move should be to bid 2@C, the Stayman convention, in order to find out if your partner has a 4-card major. |
+pg| ***** 283 ***** |
+
+
+at|This hand, with 17 HCP |
+pg| ***** 284 ***** |
+
+
+At|and 1 long suit point for the 5-card spade suit, is strong enough to insist upon a small slam opposite a 15-17 HCP 1NT opening bid. |
+pg| ***** 285 ***** |
+
+
+at|The problem is figuring out whether 6@H, 6@S, or 6NT rates to be best.
+
+|
+pg| ***** 286 ***** |
+
+
+ht|b|cs|1|at|^m|ia|o1n2c2d?|at|
+
+|ha||mb|2dp|hf|s|
+lb|*BPartner rebids 2 diamonds. What call would you make?^^3s|
+
+ht|b|cs|1|at|^m|ia|o1n2c2d!3s|at|
+|
+
+ht|r|n#|7|at|Jump to 3@S and don't worry that your partner might pass you here! By bidding Stayman and then jumping to 3@S over your partner's 2@D reply, you have forced to game and described a hand with 5 spades |
+pg| ***** 288 ***** |
+
+
+at|and 4 hearts in the process. 
+|
+pg| ***** 289 ***** |
+
+
+n#|7|
+at|
+Your partner will probably bid either 3NT (if he has only 2 spades) or 4@S (if he has 3-card support) at his next opportunity. Over 3NT you can place the contract in 6NT. If your partner's next bid is 4@S, you can jump to 6@S secure in the knowledge that an 8-card fit has been found. At this point in the bidding your partner does not know that your hand is so strong, but he will find out soon enough!
+|
+pg| ***** 290 ***** |
+
+
+qx||bt||nt||cs|c|cp||fp|t|ht|i|at|^-{^^End^^ ^^          ^*nChapter  4.1^*n       ^^ ^^ }^- |
+pg| ***** 291 ***** |
+
+

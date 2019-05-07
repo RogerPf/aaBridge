@@ -1,0 +1,93 @@
+%%
+%% 'Interesting Deals
+%% Last edited   2018 Aug 01
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<<--INSERT-START-->>=005__Common_Header.ins
+%%
+fh|v24|        v-24     very small
+fh|s28|        s-28     small
+fh|j32|        j-32
+fh|k35|        k-35
+fh|e37|        e-37
+fh|t40|        t-40     title
+fh|n42|        n-42
+fh|p45|        p-45
+fh|b50|        b-50     big
+fh|g60|        g-60     graphSuit 
+fh|m64|        m-64     mastHead
+fh|c70|        c-70     chapTitle
+%
+fh|x33|ff|xCourier|          FONT   x-33-Courier
+%
+cr|a230|cg|a040|cb|a130|     a  action
+cr|b100|cg|b100|cb|b255|     b  light Blue
+cr|f200|cg|f255|cb|f255|     f  fake-button
+cr|h000|cg|h095|cb|h169|     h  h-highlight
+cr|p255|cg|p000|cb|p255|     p  pink    fake pink button
+cr|u160|cg|u040|cb|u200|     u  pUrple
+cr|y170|cg|y190|cb|y255|     y  youtube border
+%
+bt||
+fp|b-50|at|^^^^^a   @s @h @d @c  ^v     @c @d @h @s|fp||
+at|^b@2^z@3^^|
+ht|f|        
+%%
+<<--INSERT-END**-->>=005__Common_Header.ins
+
+qx|Inter|
+mn|  The  'Interesting'  Deals  feature  |
+lg|c|
+at|The short version is easy  -  go to the  Welcome page  |fp|n-42|at|@z|fp||at|, and click on the BIG
+^c   @2|
+ht|j|n^|6|fp|    |cs|lg|at|{ |n#|2|at|^*b   inc  'Interesting'  Deals ^*n^j|n<|b|n^|9|at|^^^^}|
+ht|i|n^|6|fp|g-60|cs|lg|at|{ |n#|2|at|^*b Play Bridge ^*n ^j|n<|b|n#|5|fp||at|^^}|
+
+ht|k|n#|5|at|^b@2button and just  'play bridge'.
+
+
+The longer version is:   First...^^|
+n#|5|at|From the  ^*g :Doc Collection, aaBridge Doc Collection^*n  |fp||at|   (  @2If it is NOT on your desktop click the blue link and follow the
+instructions.   You can return by clicking the  |fp|n|n#|2|at|@L|fp||n^|2|at|  icon, top left. )
+^b@2
+|n^|7|fp|j-32|cp|a|at|^*bRead the Document^*n|cp||fp||at|
+|n#|8|cp||fp|k-35|at|^dInteresting Deals - a feature in aaBridge.doc|cp||fp||
+
+ht|z|at|Click ^*bFlow > ^*n or  (or use your mouse wheel)  to see the            |
+fp|k|at|Deal Area Size Adjust|fp||at|^v(on the next page)|
+pg| ***** 0 ***** |
+
+
+nt||
+fp|b-50|at|^^^^^a   @s @h @d @c  ^v     @c @d @h @s|fp||
+at|^b@2^z@3^^|
+ht|f|     
+At|^b@2@3^^|
+qx|Size|
+mn|  Deal  Area  Size  Adjust  |
+lg|b|
+ht|g|
+n#|3|at|One commonly asked question is 
+
+^c How can I make the text that I can see below the deal,  LARGER ?
+
+While you cannot do this directly you can achieve the same effect by  making
+
+^c(a)  the main aaBridge window larger  (eg: drag the lower right corner)
+^c(b)  the area that the deal takes up smaller
+
+To change the size of the deal area look in the ^*b Size & Misc ^*n option tab in the right hand column.  
+
+Alternately (eg: on a MAC) you can go there via    ^*b  Menubar  >  Options   >   Size & Misc ^*n
+
+there will see the  ^*bDeal Area Size^*n  setting.
+
+Try selecting   '^*bTiny^*n'   and then moving between pages to let the new  size  settle down.
+
+
+
+|n^|5|at|This can be of particular use to those with large screens    (|cp|a|at|^*bTry It^*n|cp||at|).|  
+pg| ***** 1 ***** |
+
+

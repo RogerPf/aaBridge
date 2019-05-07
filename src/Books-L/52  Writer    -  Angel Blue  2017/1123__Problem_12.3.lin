@@ -1,0 +1,306 @@
+%%
+%%
+
+ss|chapter,Declarer  Play                           Problem  12.3 |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2017-11-25          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead_2017.ins
+%%
+ss|masthead,Angel Blue                                                      2017 |
+%%
+cr|m225|cg|m125|cb|m045|   fill   m  m-mastColor       dull orange
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    std
+%%
+<<--INSERT-END**-->>=01___FP_masthead_2017.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s29|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=03___FP_gen_arik_intro.ins
+%%
+Lg|f|n^|6|
+fp|4|at|^c@2^z@3|
+at|Arik, BBO ID 'Angel Blue', runs a weekly card play tournament and lesson in the  ^*h http://iac.pigpen.org.uk/,IAC^*n  club on  ^*h http://bridgebaseonline.com/,BBO^*n.  The focus is on  difficult to play  hands.  He has kindly allowed his problems to appear here in aaBridge lin file format.
+|n^|9|at|
+Do visit Angel Blue's bridge web site at ^*h http://angelblue.co.il/^*n|
+%%
+<<--INSERT-END**-->>=03___FP_gen_arik_intro.ins
+
+
+<<--INSERT-START-->>=03___FP_general_2017.ins
+%%
+ht|n|n#|0|at|@1^z  @3^b   {^^^^^^^^^^^^^^ ^z } |
+at|^c@2^z@3^^|
+%%
+ht|n|n^|7|at|^^In every deal you will be given an opportunity to play the hand against the aaBridge 'bots'.
+You do this by by clicking the  button labeled  { ^*b 1st ^*n }   which will then be visible.
+|n^|7|at|
+Once you have played the hand you can ^*b and should^*n, return to the tutorial via the ^*b Return to Movie ^*n button 
+and ^*b READ the comments on the hand^*n, these are nearly always supplied by Arik.
+|n^|7|at|
+To read more on the 'in deal' features click  |fp|b|at|@z|fp||at|  icon, then in the left hand column on ^*b  '^*bDouble Dummy etc^*n'.   You can later return back here  by clicking the   |fp|t|at|@L|fp||at|   left pointing arrow a couple of times.| 
+%%
+<<--INSERT-END**-->>=03___FP_general_2017.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|a|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|5|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|c|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+qx|12.3|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+bv|a,h|
+rh||ah|Problem 12.3|
+md|1sQ54hKQJT2dKQc532,sT976h7dT765cQJT6,sAK32hA965dA9cAK9,sJ8h843dJ8432c874|
+sv||sk|s|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 12.3^*n     The hand,      the bidding,|
+%%_aapg-NEAR
+mb|1H|mb|p|mb|2N|mb|p|mb|4H|mb|p|mb|4N|mb|p|mb|5C|mb|p|mb|5D|mb|p|mb|6D|mb|p|mb|7H|mb|p|mb|p|mb|p|pg||
+%%_aapg-STD
+
+
+at|      the lead,|
+pc|cq|
+pg| ***** 2 ***** |
+
+
+qx|Thnk,wide|
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 3 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Try,wide|
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+at|^^|cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the answer.|
+pf|first-button|
+pg| ***** 4 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Ans,wide|
+sk||
+bv|e,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|f|
+at|^b^*bAns^*n
+You have 12 tricks, which means that the count is already rectified.  A thirteenth will be there if spades break 3-3.
+However, if spades don’t break, a defender can be squeezed if he has the long spades and has to guard clubs.
+The threat cards are the @c9 and @s3.  Note that both threat cards are in North’s hand.|
+pg| ***** 5 ***** |
+
+
+ht|x|at|^^^b^*bMM:^*n  FYI   -   many books use the word   “menace”   where Angel Blue uses   “threat”.|
+pg| ***** 6 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^c@2^^|n^|5|
+Lg|f|
+at|^b^*bAns^*n
+As you need at least one threat card to be in the upper hand, you can here squeeze only LHO.
+Note also that the  @s3  is (going to be in the course of the play) one-card threat and the  @cA9  represents the two-card threat (a threat card combined with an honor that provides an entry).
+|n#|5|at|Remember also that the squeeze card must lie in the hand opposite the two-card threat.|
+pg| ***** 7 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^c@2^^|n^|5|
+Lg|f|
+at|^b^*bAns^*n
+Win the first trick and draw trumps.|
+pg| ***** 8 ***** |
+
+
+%%_aapg-NEAR
+pc|cK|pc|c4|pc|c2|pg||
+pc|h5|pc|h3|pc|hK|pc|h7|pg||
+pc|h2|pc|c6|pc|hA|pc|h4|pg||
+pc|h6|pc|h8|pc|hT|pc|d5|pg||
+
+at|^^Cash the three top spades (discovering the 4-2 break).|pg||
+pc|sQ|pc|s6|pc|s2|pc|s8|pg||
+pc|s5|pc|s7|pc|sK|pc|sJ|pg||
+pc|sA|pc|d2|pc|s4|pc|s9|pg||
+
+at|^^Cash the diamonds, |pg|| 
+pc|d9|pc|d3|pc|dQ|pc|d6|pg||
+pc|dK|pc|d7|pc|dA|pc|d4|pg||
+
+at|^^and the rest of the trumps.|pg||
+pc|h9|pc|d8|pc|hJ|pc|dT|pg||
+%%_aapg-STD
+
+
+---------------------------------------------------------------------------
+nt|^z@3^c@2^^|n^|5|
+Lg|b|
+at|^b^*bAns^*n
+When you play the last trump (the squeeze card),|
+pg| ***** 22 ***** |
+
+
+pc|hQ|
+pg| ***** 23 ***** |
+
+
+at|^^All you need to do is to watch for the appearance of either of the key ten's.
+    If the  @s10  appears, discard the nine of clubs from dummy.
+    If the  @c10  appears, discard your last spade.
+Now you can see the role of the two-card threat.
+If you were to play the Ace of clubs prematurely, you would have not be able to reach the 9 at the end.|
+pg| ***** 24 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^c@2^^|n^|5|
+bv|c,h|
+Lg|f|
+at|^b^*bWinding Back^*n        
+^fto where you discover that LHO has the 13th @s.         (which you know is the @s10)
+|n#|h|at|^b^*bMM:^*n  What follows is an alternative approach to  @-  How to track the ending of a  "Simple Positional Squeeze",  
+^u (which is what this is).|
+jp|27|
+pc|s9|
+pg| ***** 25 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Alt,wide|
+nt|^z@3^c@2^^|n^|5|
+Lg|f|
+at|^b^*bAlt^*n
+As LHO plays his cards all you have to do is @-  look out for the  @s10.  
+If you see it, you ^*b KNOW ^*n your  @s3  (your one-card menace) is now a master.
+|n#|5|at|YOU DO NOT HAVE TO THINK ABOUT THE CLUBS   in anyway.|
+pg| ***** 26 ***** |
+
+
+%%_aapg-NEAR
+pc|d9|pc|d3|pc|dQ|pc|d6|pg||
+pc|dK|pc|d7|pc|dA|pc|d4|pg||
+pc|h9|pc|d8|pc|hJ|pc|dT|pg||
+pc|hQ|pc|cT|pg||
+%%_aapg-STD
+
+
+---------------------------------------------------------------------------
+nt|^z@3^c@2^^|n^|5|
+Lg|f|
+
+at|^b^*bAlt^*n
+^*bMM:^*n  Now it is easy,  the  @s3  has  NOT  come good, so you throw it, |
+pg| ***** 31 ***** |
+
+
+%%_aapg-NEAR
+pc|s3|pc|dJ|pg||
+
+at|and lead to the two-card Menace, 
+playing for its second card to come good.   (There is no other option ☺ )|pg||
+pc|c5|pc|cJ|pc|cA|pg||
+%%_aapg-STD
+
+qx|Squz,wide|
+n#|7|at|^^See   ^*g:Positional::Roger on Squeezes, Roger on Squeezes - the Positional Simple Squeeze ^*n   (click the link, it will stay inside ^*baaBridge^*n).|
+pg| ***** 35 ***** |
+
+
+n#|5|at|^^^j You can return here later by clicking the  |fp|b|n#|3|at|@l|n^|3|fp||at|  icon, in the left hand column.|
+pg| ***** 36 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Done,wide|
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+at|^*bDone^*n
+^^^c We are done with this problem.  However, if you wish ...|
+mx|x|
+eb|y___|
+bv|c,v|
+pf|cont-button|
+pg| ***** 37 ***** |
+
+
+---------------------------------------------------------------------------
+qx|DDS,wide|
+eb||
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+bv|a,v|
+at|^*bDDS^*n    ^eYou are now free to explore the deal.
+|n^|7|lg|k|at|^^^c@2If you still need help then, when in the deal, click the ^*b DDS  { is Off/On ^*n }  button top right.
+|fp|s|at|A number (of tricks) in a GREEN oval shows a good to play for THAT side.|fp||
+pf|all-res-lifted|
+pg| ***** 38 ***** |
+
+

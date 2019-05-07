@@ -1,0 +1,46 @@
+%% Color Definitions
+%% Last edited  2013 Dec 01
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+bt||
+fh|325|ff|3Arial|fb|30|fi|3|fm|3|   3  Arial italic font
+fh|466|ff|4Times Roman|fb|45|fm|4|  4  Times Roman  bold and large
+
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+fh|540|
+bt||
+fp|5|
+at|
+^b@2^*bFont Definitions^*n^z@3|fp||
+
+at|^^^g(^*b aaBridge ^*n supports   35 configurable fonts } ^*b 1 - 9 ^*n   and   ^*b a - z ^*n      eg:   fp!|cp|7|at|^*bm^*n|cp||at|! )
+
+Fonts definitions, if used, should be set at the start of the lin file. They consist of a set of commands normally all written on one line. For example @- 
+
+^d fh!|cp|7|at|^*b4^*n|cp||at|66!   ff!|cp|7|at|^*b4^*n|cp||at|Arial!   fb!|cp|7|at|^*b4^*n|cp||at|5!  fm!|cp|7|at|^*b4^*n|cp||at|!                (it is safe to add a comment here, like @-)    Font 4
+
+The above is a definition for   Font |cp|7|at|^*b4^*n|cp||at|   there can be up to a maximum of 35 fonts (see above)
+
+^c fh!|cp|7|at|^*b4^*n|cp||at|66!    ^hHeight @- defines the Font Height as 66
+
+^c ff!|cp|7|at|^*b4^*n|cp||at|Times Roman!    ^hFamily @- defines the Font Family as   Times Roman
+
+^c fb!|cp|7|at|^*b4^*n|cp||at|5!    ^hBoldness @- defines the Font Boldness as 5   (normal, <=4  OR  bold, >= 5)
+
+^c ff!|cp|7|at|^*b4^*n|cp||at|5!    ^hFont Make @- with the power of modern computers this cmd is no longer needed
+
+^ewith ^*b aaBridge ^*n  you only ^*b NEED ^*N the Font Height     eg.       !fh!|cp|7|at|^*bm^*n|cp||at|40!     
+
+^b@2^*bUsing the Font^*n^z@3|
+at|
+
+You switch to using font  |cp|7|at|^*b4^*n|cp||at|  with the command     fp!|cp|7|at|^*b4^*n|cp||at|!     while     fp!!    will restore the standard font.
+
+So the string @-     at! I wonder  !fp!|cp|7|at|^*b4^*n|cp||at|!at!how big!fp!!at!  this font will make the text. !        shows as
+
+
+^f   I wonder |fp|4|at|how big|fp||at| this font will make the text.
+
+There is also the cmd  fi!|cp|7|at|^*b4^*n|cp||at|!   |fp|3|at|italic font|fp||at|.  Rarely used as there is an option to make  ^*ispecific text italic^*n, covered later.
+|

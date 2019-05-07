@@ -1,0 +1,471 @@
+%%
+%%
+
+ss|chapter,Declarer  Play                 Problems  Week  24 |
+
+ss|movie-maker,GG_Bridge|
+
+%%
+%%  Date last Edited    2018-04-26          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead_2018.ins
+%%
+ss|masthead,Angel Blue                                                     2018 |
+%%
+cr|m205|cg|m125|cb|m205|   fill   m  m-mastColor       dull bluey pink
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    std
+%%
+<<--INSERT-END**-->>=01___FP_masthead_2018.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s29|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=03___FP_gen_arik_intro.ins
+%%
+Lg|f|n^|6|
+fp|4|at|^c@2^z@3|
+at|Arik, BBO ID 'Angel Blue', runs a weekly card play tournament and lesson in the  ^*h http://iac.pigpen.org.uk/,IAC^*n  club on  ^*h http://bridgebaseonline.com/,BBO^*n.  The focus is on  difficult to play  hands.  He has kindly allowed his problems to appear here in aaBridge lin file format.
+|n^|9|at|
+Do visit Angel Blue's bridge web site at ^*h http://angelblue.co.il/^*n|
+%%
+<<--INSERT-END**-->>=03___FP_gen_arik_intro.ins
+
+
+<<--INSERT-START-->>=03___FP_general_2018.ins
+%%
+ht|n|n^|0|at|@1^z  @3^b   {^^^^^^^^^^^^^^ ^z } |
+at|^c@2^z@3^^|
+%%
+ht|n|n#|7|at|All the hands for each lesson are given in a single .lin file.   Each deal has a summary and a few have a link to the full answer text on Angel Blue's website.  Before consulting it we suggest that:-|
+n#|7|at|^^^*bIF^*n after clicking  { ^*b 1st ^*n }  you cannot work out how to play the hand THEN click on the ^*b DDS  { is Off/On ^*n }  button.   This will show little green 'trick total' numbers by each of your cards.   Click on, and so play, any card that is marked with a light green oval.   This will show you the best lines of play.|
+n#|5|at|^^Your task is to solve the hand and if possible to categorize it as to being a  throw-in, squeeze or whatever.|
+%%
+%%
+ss|play-it-out,at`^^^d`cp`red`at`^*bNow `cp``at`  click  { ^*b 1st ^*n }  `cp`red`at`^*band play out the hand.^*n`cp``at`     ^*b Flow ^*n  will show the hands and end the problem.^^^^^n If you get stuck  -  use the ^*b DDS  {  is Off/On ^*n }  button.`|
+%%
+<<--INSERT-END**-->>=03___FP_general_2018.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|a|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|5|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|c|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+qx|25|
+pg| ***** 0 ***** |
+
+
+st||
+---------------------------------------------------------------------------
+qx|1,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 25.1|
+md|3sJ96hKQ943dKTcA62,sQ742h76dA74cQJT3,sA5hJT852dQ83cK74,sKT83hAdJ9652c985|
+%
+bh!Play, LHO, sL, res, on-lead, T2-3, always!
+%
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 25.1^*n     The hand,|
+pg| ***** 1 ***** |
+
+
+at|      the bidding,|
+mb|p|mb|p|mb|1H|mb|p|mb|3H|mb|p|mb|4H|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+at|      the lead,|
+pc|cQ|
+pg| ***** 3 ***** |
+
+
+eb|y___|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 4 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 5 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n 
+|n#|3|at|There are certain losers in @S @h @d and @c.  If you touch trumps all 4 will be taken.  The only chance you have is to at once set up a @d by finnessing against the @dJ.    
+|n#|7|at|It's the only shot you have so take it.   Win with the @cK and lead a low @d towards the @dK10.  
+| 
+pf|all-res-lifted| 
+pg| ***** 6 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 7 ***** |
+
+
+---------------------------------------------------------------------------
+qx|2,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 25.2|
+md|1sQ7hA4dQ54cAJ9732,sT865hKQJ75d92c84,sA2h93dAK86cKQT65,sKJ943hT862dJT73|
+%
+bh!Play, RHO, sL, res, on-lead, T2-3, always!
+%
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 25.2^*n     The hand,|
+pg| ***** 8 ***** |
+
+
+at|      the bidding,|
+mb|1C|mb|p|mb|1D|mb|p|mb|2C|mb|p|mb|4C|mb|p|mb|4H|mb|p|mb|4S|mb|p|mb|6C|mb|p|mb|p|mb|p|
+pg| ***** 9 ***** |
+
+
+at|      the lead,|
+pc|hK|
+pg| ***** 10 ***** |
+
+
+eb|y___|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 11 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 12 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n 
+|n#|3|at|After a bit of head scratching you should spot the Automatic Squeeze as a good backup if (WHEN) the @d's do not split 3-3.  @d's are the Long Menace.  @s's (the @sQ) is the one-card menace.  So you must rectify the count (trick one is a good time to do it).  The unblock the @sA (Vienna Coup) and run the clubs. ^^On South's last @c, if either Opp started with 4@d's AND the @sK they will be squeezed.
+| 
+pf|all-res-lifted| 
+pg| ***** 13 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 14 ***** |
+
+
+---------------------------------------------------------------------------
+qx|3,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 25.3|
+md|3s43hAKQJdAKcAKQ52,s9hT532dQJ9642cT7,sAKQ752h864d75c63,sJT86h97dT83cJ984|
+%
+bh!Play, LHO, sL, res, on-lead, T2-3, always!
+%
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 25.3^*n     The hand,|
+pg| ***** 15 ***** |
+
+
+at|      the bidding,|
+mb|2S|mb|p|mb|2N|mb|p|mb|3N|mb|p|mb|7N|mb|p|mb|p|mb|p|
+pg| ***** 16 ***** |
+
+
+at|      the lead,|
+pc|dQ|
+pg| ***** 17 ***** |
+
+
+eb|y___|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 18 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 19 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n 
+|n#|3|at|With 12 top tricks this hand nearly plays itself.  You need either  @c's  OR  @s's  to split with no 4 card holding.  BUT you will also succeed if an Opp holding 4 cards in BOTH  @s's  ^*band^*n  @c's  by playing an Automatic Squeeze.  Test the @c's with 3 rounds and then play off the @d's and @h's.    If the last @c is not thrown (and it almost never will be) run the @s's.     FYI - The @c5 will be the one card menace and @s's the long menace.
+| 
+pf|all-res-lifted| 
+pg| ***** 20 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 21 ***** |
+
+
+---------------------------------------------------------------------------
+qx|4,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 25.4|
+md|2s92hKJT96dK96cKJ9,sAKQJT4h3dQJ4cQ85,s865hQ7542dA3cA72,s73hA8dT8752cT643|
+%
+bh|Play, W, sU, res, on-lead, T1-3, always|
+%
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 25.4^*n     The hand,|
+pg| ***** 22 ***** |
+
+
+at|      the bidding,|
+mb|1S|mb|p|mb|p|mb|2H|mb|2S|mb|4H|mb|p|mb|p|mb|p|
+pg| ***** 23 ***** |
+
+
+at|      the lead,|
+pc|sA|
+pg| ***** 24 ***** |
+
+
+eb|y___|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 25 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 26 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n      With 4 losers the issue is to find the @cQ and play the @c suit correctly.   The light bulb moment should come with the first round of trumps (@h's).  When RHO plays the  @hA  you can deduce that she does not have the @cQ,  because with  6 hcp  MOST people will reply 1NT to  1@s  and not pass.   So you have to play LHO for the @cQ.  The correct way to play THIS (N-S) suit combination is to lead  @cJ  and when covered with the  @cQ  take it with the @cA  and return a low @c finessing RHO for the @c10.
+| 
+pf|all-res-lifted| 
+pg| ***** 27 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 28 ***** |
+
+
+---------------------------------------------------------------------------
+qx|5,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 25.5|
+md|4sAQJ83hK96dAK8cAK,hQT7542dJT97c976,sK754hA3d653cT842,sT962hJ8dQ42cQJ53|
+sv|-|sk|S|
+%
+bh!Play, LHO, sL, res, on-lead, T2-3, always!
+%
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 25.5^*n     The hand,|
+pg| ***** 29 ***** |
+
+
+at|      the bidding,|
+mb|p|mb|6S|mb|p|mb|p|mb|p|
+pg| ***** 30 ***** |
+
+
+at|      the lead,|
+pc|dJ|
+pg| ***** 31 ***** |
+
+
+eb|y___|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 32 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 33 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n 
+|n#|3|at|After leading the @sA you know RHO started with 4 @s's.  So ruffing the 3rd @h in dummy now needs to be supplemented with taking the marked finesse against RHO - TWICE.  Fingers crossed that the @h's are no worse that 6-2, (as LHO did not pre-empt this is reasonable).  Cross to the @hA and take the @s finesse.  @hK,  and ruff the 3rd @h high with the @sK.  Take the @s finesse again.
+| 
+pf|all-res-lifted| 
+pg| ***** 34 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 35 ***** |
+
+
+---------------------------------------------------------------------------
+qx|6,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 25.6|
+md|3sA5hAJ4dQJ65cAQ74,sQT872hT72d972cK3,sK6h853dAKT3c9652,sJ943hKQ96d84cJT8|
+%
+bh|Play, W, dLhL, res, p24, T2-7, always|
+%
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 25.6^*n     The hand,|
+pg| ***** 36 ***** |
+
+
+at|      the bidding,|
+mb|p|mb|p|mb|1C|mb|p|mb|1D|mb|p|mb|2N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 37 ***** |
+
+
+at|      the lead,|
+pc|s7|
+pg| ***** 38 ***** |
+
+
+eb|y___|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 39 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 40 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n 
+|n#|3|at|You have 8 and need 9 before Opps get 5.  The @c finesse is 50-50.  Can you do better.  Yes if you also try for RHO to have @hKQ.  The order of play is important.  If the @c finesse is right you are in no rush to take it.  Start by winning in dummy and lead a low @h towards the @hAJx.  If LHO plays high cross with a @d and repeat.  Even if LHO has  @hKQx  Opps cannot come to 5 before you get to take the @c finesse. 
+| 
+pf|all-res-lifted| 
+pg| ***** 41 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 42 ***** |
+
+
+-------------------------------------------------------------------------------
+bt||
+nt|^z@3^b@2^^|
+ht|m|n#|7|cs|c-chapterColor|at|^a     ^-{  ^*nEnd  -  Problems wk 25^*n  ^^ }^-|
+pg| ***** 43 ***** |
+
+

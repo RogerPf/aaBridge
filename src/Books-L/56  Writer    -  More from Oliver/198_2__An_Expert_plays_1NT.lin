@@ -1,0 +1,285 @@
+%%
+%%
+
+ss|chapter,2.                           An  Expert  Plays  1 NT |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2017-08-08          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,More from Oliver                                        2017  |
+%%
+cr|m245|cg|m225|cb|m000|   fill   m  m-mastColor       yellow
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    some for of gray
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=03___FP_general_text.ins
+%%
+ht|i|
+Lg|g|
+n^|5|fp|4|at|^c@2^z@3^^|
+at|Oliver Clarke is the driving force behind OCP, a high end version of Super Precision.  To find more on OCP
+see inside aaBridge (this app) under    ^*b menubar    >    Books-L ^*n.
+|n^|7|at|
+The main OCP website it at   ^*h http://ocp.pigpen.org.uk/,ocp.pigpen.org.uk^*n which includes a forum section.  This series of articles are each based on posts made, mainly by Oliver, to the ^*h http://ocp.pigpen.org.uk/smf/index.php?board18.0,  Interesting Play Hands ^*n  sub-forum.
+|cp|mg|n^|5|at|^^^d@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-
+|cp||
+%%
+<<--INSERT-END**-->>=03___FP_general_text.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+%%
+%% Oliver's Title:   Making the best of it      (reverse) Page 1 
+%% http://ocp.pigpen.org.uk/smf/index.php?topic=719.0
+%%
+lg|d|
+at|^z@3^c@2^^|
+ht|r|fp|t|at|Here Oliver plays a very standard 1NT.      How would you play it ?|fp||
+n^|7|at|^^^^When ^*b NOT vulnerable ^*n OCP bidders open a |cp|red|at|^*b 10 - 12 |cp||at| 1NT^*n,  it only feels scary the first couple of times.|
+
+qx|# 2|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+bv|e,h|
+rh||ah|Oliver 2|
+pn|OliverC,West,Eszter5,East|
+%% 4sT32hA654dA62cKT2,sJ96hT97dKJ43cJ85,sKQ84hQJdQ875cQ63,sA75hK832dT9cA974
+md|4sT32hA654dA62cKT2,,sKQ84hQJdQ875cQ63,|
+sv|e|sk|s|
+nt|^z@3^b@2^^|n^|5|
+lg||
+at|^*bOliver 2^*n     The hand|
+pg| ***** 1 ***** |
+
+
+lg|f|
+n#|3|at|^^|cp|red|at|^*bOliverC:^*n|cp||at|   Occasionally a hand comes along where you get everything right, which can be very satisfying.  It is especially satisfying when OCP has got you to a reasonable contract when a third of the tables are passing the hand out.     You play to give yourself every chance just to make a contract that isn't totally straightforward, but end up making overtricks because some or all of what you played for actually came about. | 
+pg| ***** 2 ***** |
+
+
+nt|^z@3^b@2^^|n^|5|at|^*bOliver 2^*n     The hand,     the bidding|
+mb|p|
+pg| ***** 3 ***** |
+
+
+mb|1N|an|10-12|
+pg| ***** 4 ***** |
+
+
+mb|p|mb|p|mb|p|
+pg| ***** 5 ***** |
+
+
+aa|y|
+qx|Lead,wide|
+pc|d3|
+at|,     the lead  ^n  ^*n How do you assess your chances ?^*n|
+pg| ***** 6 ***** |
+
+
+lg|c|
+n#|3|at|^^|cp|red|at|^*bOliverC:^*n|cp||at|  Although you have 23 hcp between the two hands and 1NT ought to be fairly straightforward, your lack of intermediates is a worry here.   You can count on 1@s, 2@h's, 1@d and 1@c, so need to engineer two more tricks from somewhere.|
+pg| ***** 7 ***** |
+
+
+at|   You can play the @dQ at trick 1, but that's putting all of your eggs in one basket, and if West has the King of @d, you will always get a second @d trick.|
+pg| ***** 8 ***** |
+
+
+n#|5|at|^^You therefore play small from Dummy and East inserts the 9, taken by your Ace.|
+pc|d5|pc|d9|pc|dA|
+pg| ***** 9 ***** |
+
+
+tt|y|
+at|    What now?|
+pg| ***** 10 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^b@2^^|n^|5|lg|f|
+cp|red|at|^*bOliverC:^*n|cp||at|  You need to try to make something of the @s's, because there are too many intermediates missing
+in the @d's, and you're never going to get rich in @c's or @h's. 
+|n#|9|at|So at trick 2,   I led the 10@s's, playing for West to have the 9.|
+pg| ***** 11 ***** |
+
+
+tt|n|
+pc|sT|pc|sJ|pc|sQ|pc|sA|
+n#|9|at|^^The play went...|
+pg| ***** 12 ***** |
+
+
+pc|dT|
+at|             and  East switched back to the 10@d. |
+pg| ***** 13 ***** |
+
+
+---------------------------------------------------------------------------
+pc|d2|pc|dK|pc|d7|
+nt|^z@3^b@2^^|n^|5|lg|f|
+cp|red|at|^*bOliverC:^*n|cp||at|  West erred badly by winning this trick with his King rather than letting the @d10 ride and leaving themselves with 2 @d winners.|
+pg| ***** 14 ***** |
+
+
+at|       Next he led a Heart ...|
+pc|h7|pc|hJ|pc|hK|pc|hA|
+pg| ***** 15 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^b@2^^|n^|5|lg|f|
+cp|red|at|^*bOliverC:^*n|cp||at|  ^*bRe-assess  ^*n Two tricks so far.  It looks fairly certain that West started with @dKJxx and the play in the suit has set up a 3rd round @d finesse against their Jack.|
+pg| ***** 16 ***** |
+
+
+at|    I've therefore got a 1@s, a 2nd @h, and  2@d's to look forward to, and cannot be denied a @c, so the contract seems secure. |
+pg| ***** 17 ***** |
+
+
+n#|9|at|^^Sticking to my original plan, I now finessed the  @s8,|
+pg| ***** 18 ***** |
+
+
+pc|s2|pc|s6|pc|s8|pc|s5|
+at|     which held the trick (Yeehah!)|
+pg| ***** 19 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^b@2^^|n^|5|lg|t|
+cp|red|at|^*bOliverC:^*n|cp||at|  Next I tried a @c to my 10,|
+pg| ***** 20 ***** |
+
+
+at|   which lost to West's Jack|
+pc|c3|pc|c7|pc|cT|pc|cJ|
+pg| ***** 21 ***** |
+
+
+at|    
+(You can't have everything in life and 10 tricks on these cards would be preposterous).|
+pg| ***** 22 ***** |
+
+
+pc|c8|pc|cQ|pc|cA|pc|c2|
+at|^^West continued with a 2nd @c         |
+pg| ***** 23 ***** |
+
+
+pc|c4|pc|cK|pc|c5|pc|c6|
+at| and East continued with a 3rd third.|
+pg| ***** 24 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^b@2^^|n^|5|lg|p|
+cp|red|at|^*bOliverC:^*n|cp||at|  ^*bRe-assess  ^*n 4 tricks now, but I'm well in control. |
+pg| ***** 25 ***** |
+
+
+pc|d6|pc|d4|pc|d8|pc|h2|
+at|^^The @d finesse against West's Jack succeeds,|
+pg| ***** 26 ***** |
+
+
+at|^^The Spades were 3-3 so I was able to swiftly wrap up the rest for 9 tricks and a joint  "top"  of 3½ IMPs.|
+pg| ***** 27 ***** |
+
+
+qx|Play,wide|
+bv|a,v|
+md|0sT32hA654dA62cKT2,sJ96hT97dKJ43cJ85,sKQ84hQJdQ875cQ63,sA75hK832dT9cA974|
+nt|^z@3^b@2^^|n^|5|lg|f|
+at|^*bMM:^*N  A summary from |fp|t|cp|red|at|^*b Oliver ^*n|fp||cp||at| is on the next page @-  please  ^*b DO NOT MISS IT ^*n|
+
+n#|0|at|^^^^But first,   if you wish to,    you can Play out the hand yourself.|
+
+pf|both-first-cont|
+pg| ***** 28 ***** |
+
+
+bt||
+nt|^z@3^b@2^^|n#|5|lg|k|
+fp|t|at|Summary|fp||
+at|^^|cp|red|at|^*bOliverC:^*n|cp||at|  Brilliant play ?
+No, not really.
+You can only play as well as Opps allow you on many occasions.  Here an initial @h lead might have left me struggling to find my 7th trick before EW got their 7th.   Similarly, West rising with the King of @d on the second round of the suit was a serious mistake, because it exposed their Jack.   What I got right, was to realise after trick 1, that I had to try to make something of the @s, and just playing a small @s towards Dummy is an "all or nothing" play for West to have the Ace.   Leading the 10 encouraged West to cover with their Jack and now when they turned up with the 9 and the suit is split 3-3, I've ended up with 3 tricks in the suit rather than 1 or 2. 
+
+The other thing is to do with developing tricks before you cash quick tricks elsewhere. I could have continued @s immediately after finessing the 8, but that puts a tiny bit of pressure on me to find a discard (@H is easy enough), but also it doesn't give Opps the opportunity to mistakenly discard a @s, which would have assured me of the 3rd @s trick whatever the position was.   I ended up taking the last 5 tricks having spent the time developing those 5 tricks and getting rid of Opps' winners that were in my way.   The other thing about cashing winners is that it can compromise transport between the two hands when you might be able to use those entries back and forth later on.
+
+On the Traveller, the hand was inevitably passed out at several tables. Several pairs were going off in 2NT or even 1NT (or 2@D or 2@S ), but the biggest block were in 1NT making exactly or with 1 overtrick only. Only one other pair gained 9 tricks in No Trumps.|
+pg| ***** 29 ***** |
+
+
+ht|z|lg|c|n#|3|at|^^^a  ^*bEnd^*n|
+pg| ***** 30 ***** |
+
+

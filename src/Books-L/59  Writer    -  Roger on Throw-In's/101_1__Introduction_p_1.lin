@@ -1,0 +1,255 @@
+%%
+%%
+
+ss|chapter,1.                                        Introduction p 1|
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-01-11          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Roger  on  Throw-ins                   2018  August|
+%%
+cr|m140|cg|m180|cb|m090|   fill   m  m-mastColor       on Title Pages
+cr|c208|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s29|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|i|
+at|^c@2^z@3^^|n#|9|
+fp|t-title|at|Throw-ins  are  Hard|fp||
+lg|h|
+n#|4|at| 
+^d@2In my opinion Throw-ins are the hardest thing in Bridge - Yes, much harder, for example, than Squeezes.
+Why. There are rules to follow for things like Squeeze, Throw-in's are all about recognising a 'pattern'.^^^^|
+fp|t-title|at|^cExample|fp||
+n#|4|at|
+The following hand was played by real people (I was kibbing) at a friendly game, much of the play can therefore be excused.  
+|n#|7|at|But as you will see, just a little thought is all that is needed.
+|n#|7|at|You are sitting South ^*b defending ^*n against 1@s. . .   PLEASE  read to the ^*b END  of this chapter.^*n|
+
+qx|# 1|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+rh||ah|Example Intro|
+md|3sAKJ43hT94d8762c3,s52hQJ862dAJ3cQ62,s6hAK73dT54cKJT94,sQT987h5dKQ9cA875|sv||
+sv|E|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bExample  ^*n     The hand,|
+pg| ***** 1 ***** |
+
+
+at|       the bidding,|
+mb|1C|
+pg| ***** 2 ***** |
+
+
+mb|1S?|
+pg| ***** 3 ***** |
+
+
+n#|5|at|^^Hard for you (South) to do anything but pass and hope partner makes a re-opening double  (which you would convert to penalties by passing).  Otherwise 1NT is a possible bid.|
+pg| ***** 4 ***** |
+
+
+mb|p|mb|p|mb|p|
+n#|7|at|^^Partner does NOT re-open with a double and you play against 1@s.|
+pg| ***** 5 ***** |
+
+
+qx|Lead,wide|
+ht|g|at|@4^^|
+ht|c|n#|1|at|^k the lead,|
+pc|c3|
+pg| ***** 6 ***** |
+
+
+n#|5|at|^^You lead the  @c3  (both, a singleton and partners suit) and now you should ask the question that you should ALWAYS yourself when you see dummy   -  ^*b What is going On ?^*n|
+pg| ***** 7 ***** |
+
+
+n#|7|at|^^For one thing if Declarer has only 5 spades then partner will have a singleton @s and she can (will ?) lead it to you.|
+pg| ***** 8 ***** |
+
+
+ht|g|at|@4^^|
+ht|c|n#|1|at|^m      the play,   |
+n#|5|at|^^We are going to skip forward in the play to the lead to trick 8.|
+pg| ***** 9 ***** |
+
+
+%%_aapg-NEAR
+tc|y|
+pc|cQ|pc|cK|pc|cA|
+pc|h5|pc|h4|pc|hQ|pc|hK|
+pc|cJ|pc|c5|pc|d2|pc|c2|
+pc|cT|pc|c7|pc|d6|pc|c6|
+pc|c4|pc|c8|pc|h9|pc|h2|
+pc|dK|pc|d7|pc|d3|pc|d4|
+pc|d9|pc|d8|pc|dA|pc|d5|
+tt||
+%%_aapg-STD
+
+pc|h6|
+at|   Because no @s's (trumps) have yet been played (this is what really happened) the other cards are therefore of no importance.  |
+pg| ***** 10 ***** |
+
+
+pc|h3|pc|sT|pc|hT|
+pg| ***** 11 ***** |
+
+
+pc|dQ|pc|s3|pc|dJ|pc|dT|
+pg| ***** 12 ***** |
+
+
+n#|5|at|^^Note - Declarer (with the @dQ) must just have led his last non-trump and so partner must have started with one @s.|
+pg| ***** 13 ***** |
+
+
+ht|g|at|@4^^|
+ht|c|n#|1|at|^m      the play,   |
+n#|5|at|^^We have 4 tricks and they have 5.   So we need 3 of the last 4 to beat this contract.|
+pg| ***** 14 ***** |
+
+
+n#|5|at|^^Before we decide how to play we need to work out what declarer has left in his hand.  Ideally you should have had these thoughts when dummy went down but now is better than never.|
+pg| ***** 15 ***** |
+
+
+qx|Imag,wide|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bImagine  ^*n|
+n#|5|at|^^The only other spade played so far is the  @s10  by declarer.  Leaving  @sQ9876  currently UNSEEN.   Let's assume that partner has the lowest one - the @s6,  leaving declarer with  @sQ987.|
+pg| ***** 16 ***** |
+
+
+n#|5|at|^^All the other (non-trump) cards might just as well be little  ^*bX^*n'es  so lets go double dummy.|
+pg| ***** 17 ***** |
+
+
+sk||
+vx|----,----,-AAA,----|
+pg| ***** 18 ***** |
+
+
+xx|y|
+at|^^The point is you need be able to do this (imagine the cards) ^*i in your mind ^*n and that  ONLY comes with PRACTICE.|
+pg| ***** 19 ***** |
+
+
+ht|g|at|@4^^|
+ht|c|n#|1|
+n#|5|at|^^In case you can't see it I will show you the wrong way, the way it happened at the table.|
+pg| ***** 20 ***** |
+
+
+%%_aapg-NEAR
+pc|sA|
+pc|s2|pc|s6|pc|s8|pg||
+pc|sK|pc|s5|pc|h7|pc|s7|pg||
+pc|sJ|pg|| 
+%%_aapg-STD
+
+n#|9|at|^^Now Declarer will make the contract.|
+pg| ***** 24 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^c@2^^|n^|5|
+vx||
+Lg|l|
+at|^b^*bWinding Back^*n       to the play of the  @sA|
+jp|37|
+mx|x|
+pg| ***** 25 ***** |
+
+
+at|^^^c@2Click the  { ^*b Cont ^*n }  button  and then click the { ^*b Show ^*n }  button in the green area on the right to see all the cards.
+Can you see that the throw-in,  playing the @s4,  will get you an extra trick and defeat the contract ?|
+mx|x|
+eb|y___|
+bv|c,v|
+pf|cont-button|
+pg| ***** 26 ***** |
+
+
+---------------------------------------------------------------------------
+qx|DDS,wide|
+eb||
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+bv|a,v|
+at|^*bDDS^*n    ^eYou are now free to explore the deal.
+|n^|7|lg|k|at|^^^c@2If you still need help, then when in the deal, click the ^*b DDS  { is Off/On ^*n }  button top right.
+|fp|s|at|A number (of tricks) in a GREEN oval shows a good to play for THAT side.|fp||
+pf|all-res-lifted|
+pg| ***** 27 ***** |
+
+

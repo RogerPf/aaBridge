@@ -1,0 +1,316 @@
+%%
+%%
+
+ss|chapter,11.                                     A  Master  Play  |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2016-05-29          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Roger's  Finds                   2019  and  Past  Years |
+%%
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       Maroon
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    Around the normal Grey
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title     
+fh|b50|                    Font   b  b-bigTitle
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+%
+cr|a230|cg|a040|cb|a130|   text   a  a-action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       on Title Pages
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    on Title Pages
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|y|n#|b|lg||at|^b@2@1|at|
+^*bClick^*n          ^*bFlow >^*n         or use your    ^*bMouse Wheel^*n|
+ht|z|at|@0
+^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|j|
+Lg|f|
+fp|4|at|^c@2^z@3|
+
+at|Neither you nor I, will ever find this  Master Play  at a table, but we are allowed to dream.
+
+
+I watched this hand being bid at a practice bidding table and wondered if the hand could actually be made.
+
+The aaBridge double dummy analyser said  -  Yes, 12 tricks are always there.  
+
+Once I had seen how it was done,  I thought you might like to see it too.|
+
+
+qx|# 11|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+bv|a,h|
+rh||ah|Find 11|
+md|3SQ64HAKQ84DA2CK72,SA987HT76DT73CT64,SKT3HJ952DKJ65CA8,SJ52H3DQ984CQJ953|sv|O|sk|S|
+
+nt|^z@3^b@2^^|n^|5|
+lg||
+at|^*bFind 11^*n     The hand|
+pg| ***** 1 ***** |
+
+
+at|,     the bidding|
+mb|1D|mb|p|mb|1H|mb|p|mb|2H|mb|p|mb|3C|mb|p|mb|4H|mb|p|mb|5D|mb|p|mb|6H|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+at|,     the lead.|
+pc|c4|
+pg| ***** 3 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Thnk,wide|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|Do your thinking  NOW.|
+pg| ***** 4 ***** |
+
+
+at|              (Later after a few tricks, you will get a chance to play the hand out.)|
+n#|5|at|
+Taking  South  as the master hand we have  3  losers    2@s   0@h   0@d   1@c    we need to reduce this to  1.
+Clearly we can ruff a club in dummy and yes as a cross-check we have 11 tricks (count 'em). 
+We could try either @s finesse (lead to the @s10) or the @d finesse (lead to @dJ).
+BUT @- here is the bad news you need to assume they will both fail (which they will).|
+pg| ***** 5 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|The first 7 tricks.|
+
+pc|cA|pc|c3|pc|c2|
+pg| ***** 6 ***** |
+
+
+pc|h2|pc|h3|pc|hA|pc|h6|
+pg| ***** 7 ***** |
+
+
+pc|hK|pc|h7|pc|h5|pc|c5|
+pg| ***** 8 ***** |
+
+
+pc|hQ|pc|hT|pc|h9|pc|c9|
+pg| ***** 9 ***** |
+
+
+pc|cK|pc|c6|pc|c8|pc|cJ|
+pg| ***** 10 ***** |
+
+
+pc|c7|pc|cT|pc|hJ|pc|cQ|
+pg| ***** 11 ***** |
+
+
+pc|d5|pc|d4|pc|dA|pc|d3|
+pg| ***** 12 ***** |
+
+
+up|0|
+at|     We are already assuming that the  @sJ and @dQ are badly placed (that is with East) so we will put the @sA with West.  Playing for a doubleton @sA (leading to the @sK and ducking a round) will not work either.   :)
+So how are you going to get 5 of these last 6 tricks ?|
+pg| ***** 13 ***** |
+
+
+n#|5|at|
+After the   next click / mouse wheel   you will get to see all the remaining cards.|
+pg| ***** 14 ***** |
+
+
+sk||
+up|0|
+n#|5|at|
+Can you NOW work out the possible endings  (I could not) ?|
+pg| ***** 15 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Try,wide|
+nt|^z@3^b@2^^|
+bv|f,v|
+n#|7|
+at|^^ |cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the analysis.|
+n#|7|
+pf|first-button|
+pg| ***** 16 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Asys,wider|
+bv|f,h|
+eb|y___|
+up|0|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bAnalysis^*n     It's a Squeeze without the count  @-  with throw-ins as needed.
+The play of the @h8  (on which you MUST throw the @s3) squeezes East.|
+pg| ***** 17 ***** |
+
+
+pc|h8|pc|d7|pc|s3|
+pg| ***** 18 ***** |
+
+
+pc|d8|
+at|^^If he parts with a @d  then @- cross to dummy with the @dK  and ruff a diamond so the @dJ comes good.|
+pg| ***** 19 ***** |
+
+
+pc|d2|pc|dT|pc|dK|pc|d9|
+pg| ***** 20 ***** |
+
+
+pc|d6|pc|dQ|pc|h4|pc|s7|
+pg| ***** 21 ***** |
+
+
+pc|s4|pc|s8|pc|sK|pc|s2|
+pg| ***** 22 ***** |
+
+
+pc|dJ|pc|s5|pc|s6|pc|s9|
+pg| ***** 23 ***** |
+
+
+up|17|
+n#|5|
+at|^^(Winding back)|
+pg| ***** 24 ***** |
+
+
+pc|s2|
+at| - If East parts with a @s then - cross to dummy with the @sK and lead back another @s and  ^*bDUCK^*n !!!|
+pg| ***** 25 ***** |
+
+
+pc|s4|pc|s8|pc|sK|pc|s5|
+pg| ***** 26 ***** |
+
+
+pc|sT|pc|sJ|pc|s6|
+pg| ***** 27 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^b@2^^|
+n^|5|
+Lg|l|
+at|There are NOW  two  possibilities |
+Pg| ***** 28 ***** |
+
+
+pc|s9|
+at| 
+Either West will also  ^*bDUCK^*n  and let the @sJ hold.
+In which case East will be end played and will have to lead a @d and give you two @d tricks, |
+pg| ***** 29 ***** |
+
+
+pc|d8|pc|d2|pc|dT|
+pg| ***** 30 ***** |
+
+
+at| plus the @h4  makes 12.|
+pg| ***** 31 ***** |
+
+
+up|4|
+at| Or (winding back)|
+pg| ***** 32 ***** |
+
+
+pc|sA|
+at| West will overtake with the @sA|
+pg| ***** 33 ***** |
+
+
+pc|dT|at|  and nothing can then stop the  @sQ  from making your twelfth trick.|
+pg| ***** 34 ***** |
+
+
+pc|dK|pc|d8|pc|d2|
+pg| ***** 35 ***** |
+
+
+pc|d6|pc|d9|pc|h4|pc|s7|
+pg| ***** 36 ***** |
+
+
+pc|sQ|
+pg| ***** 37 ***** |
+
+
+---------------------------------------------------------------------------
+qx|DDS,wide|
+nt|^z@3^b@2^^|
+at|^*bDDS^*n    ^eYou are now free to explore the deal.
+|n^|7|lg|k|at|^^^c@2If you still need help then, when in the deal, click the ^*b DDS  { is Off/On ^*n }  button top right.
+|fp|s|at|A number (of tricks) in a GREEN oval shows a good card to play for THAT side.|fp||
+
+bv|a,v|
+eb||
+pf|all-res-lifted|
+pg| ***** 38 ***** |
+
+

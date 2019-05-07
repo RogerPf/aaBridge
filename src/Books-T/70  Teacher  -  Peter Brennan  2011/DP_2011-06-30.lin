@@ -1,0 +1,564 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% File       : Peterb370c_Winning Techniques in Declarer Play_ 2011-06-30.lin
+%% Description: Peter's teaching session on Declarer play, BIL, 2011-06-30
+%% Programmer : Vanyvon
+%% Version    : 
+%%            : 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+mn| Peterb370c:Winning Techniques in Declarer Play,2011-06-30|tu||bt||nt||
+
+%% --- Definitions ---
+cr|116|cg|116|cb|1255|        %% blue
+cr|2255|cg|2255|cb|264|       %% yellow
+cr|316|cg|3128|cb|316|        %% dark green
+cr|4255|cb|40|cg|40|          %% red
+fh|120|ff|1Arial|fb|14|fm|1|  %% smaller light
+fh|220|ff|2Arial|fb|26|fm|2|  %% smaller bold
+fh|330|ff|3Arial|fb|34|fm|3|  %% larger light
+fh|430|ff|4Arial|fb|46|fm|4|  %% larger bold
+%% --- End Definitions ---
+
+%% --- Main ---
+qx|Main|
+cs|1|cp|2|fp|4|
+at|
+^-{ Peter Brennan (Peterb370c): Winning Techniques in Declarer Play,11th lesson,
+   teaching at BIL, June 30, 2011. }
+^-|
+fp|2|cp||ht|f|at|   @2The LIN presentation of Peter 's lesson on Winning Techniques in Declarer Play in the Beginner Intermediate Lounge, 2011-06-30.|
+ht|i|cp||cs|2|
+at|^i   @2{
+
+             ^*GIntroduction, Introduction^*N
+
+^*GB01,    Board 01- managing entries^*N
+
+^*GB02,    Board 02- trump coup^*N
+
+^*GB03,    Board 03- scissors coup^*N
+
+^*GB04,    Board 04- intra finesse 1^*N
+
+^*GB05,    Board 05- intra finesse 2^*N
+
+
+              ^*GFinal notes, Final notes^*N
+
+} @0|
+ht|z|at|   @2^*GHelp,Click here for help^*N
+
+(c) Peter & Bridge Base Online - Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|fp|1|at|^y Vanyvon|
+pg| ***** 0 ***** |
+
+
+%% --- End Main ---
+
+%% ---------- INTRODUCTION ----------
+qx|Introduction|
+nt||cs|1|cp|2|
+at|
+^-{ Introduction }
+^-|
+cp||ht|x|at|@0
+^*GHelp, Click here for help^*N
+
+(c) Peter & Bridge Base Online - Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|fp|1|at|^y Vanyvon|
+ht|e|fp|1|
+at|Peter Brennan: The purpose of this course is to acquaint you with some useful tools when you declare a hand. Hopefully, by seeing a number of examples in random order you'll recognize these situations when they pop up in your game.  
+
+Each hand features a common challenge of some sort:  dealing with bad suit breaks, handling tricky entry situations, making inferences from the bidding or play, counting enemy distribution and/or points, when to draw trumps, basic end plays, etc.
+
+These hands should be played using IMP or rubber bridge tactics.  Don't even think of risking the contract to make a measly overtrick or two.
+
+
+
+|
+pg| ***** 1 ***** |
+
+
+%% ---------------------------
+
+
+qx|B01,BOARD 1|
+rh||ah|Board 1|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|2SAKT62HK7DAQCKJ82,SQ973HQT8642D52C4,S84H93D97643CAT97,SJ5HAJ5DKJT8CQ653|mb|p|mb|p|mb|1D|mb|d|mb|2H|mb|p|mb|p|mb|2N|mb|p|mb|3N|mb|p|mb|p|mb|p|mb|-|mb|-|mb|-|pc|H6|sk|s|%small text set kibbing South|nt|This is a very shaky contract.  You can count 2 @ss, 1 @h and, assuming the @d finesse works, 2 @ds.  Since you must run your tricks because the @h will be wide open, you'll need 4 @c tricks to make 3NT.  Good luck!|
+pg| ***** 2 ***** |
+
+
+at|
+The lesson from this hand is pretty simple - handle your entries with care.|
+pg| ***** 3 ***** |
+
+
+at|
+In hands like this where dummy has very limited entries we should try thinking creatively how to play the key suit to maximize our chances.|
+pg| ***** 4 ***** |
+
+
+at|
+Assuming East has the @dK and the @cQ we may have to be on the board twice.  That could be a problem if @cs are 4 - 1.  Let's say East has @cQxxx.|
+pg| ***** 5 ***** |
+
+
+at| We lead the @c2 to the @cA and lead the @c10 from the table.  If the @cQ doesn't appear we play the @c8 so we can repeat the finesse.  Do you see the problem?|
+pg| ***** 6 ***** |
+
+
+nt|Yes, after the 2nd round the lead's in dummy with the @cKJ left in our hand.  We must take another @c finesse to bring in 4 @c tricks, and we haven't taken the @d finesse yet.  Maybe leading the @c8 is better?|
+pg| ***** 7 ***** |
+
+
+pc|H3|pc|HA|pc|H7|
+pg| ***** 8 ***** |
+
+
+pc|HJ|pc|HK|pc|H2|pc|H9|
+pg| ***** 9 ***** |
+
+
+pc|c8ccAc|
+pg| ***** 10 ***** |
+
+
+pc|cTcch|
+pg| ***** 11 ***** |
+
+
+at|
+Basically, it's the same thing.  What about leading the @cJ to the @cA in dummy?|
+pg| ***** 12 ***** |
+
+
+up|8|
+pc|CJ|pc|C4|pc|CA|pc|C3|
+pg| ***** 13 ***** |
+
+
+pc|CT|pc|C5|pc|C8|pc|H4|
+pg| ***** 14 ***** |
+
+
+pc|C9|pc|C6|pc|C2|pc|H8|
+pg| ***** 15 ***** |
+
+
+at|
+Yes!!  By unblocking the @cJ we solve the problem.  After 3 rounds of @cs, if East refuses to cover our honors we can...|
+pg| ***** 16 ***** |
+
+
+at|
+...just take the @d finesse and then cash the @cK.  And suppose East did cover the 2nd or 3rd @c lead...|
+pg| ***** 17 ***** |
+
+
+up|8|
+pc|cTcQcKh|
+pg| ***** 18 ***** |
+
+
+at|
+...we can use @c to reenter dummy for the @d finesse.|
+pc|c2sc9c5|
+pg| ***** 19 ***** |
+
+
+mc|10|sc|y|sk||nt|Here's the lesson text:  In this hand we hope to find East with both the @dK and @cQ for his opening bid.  We must unblock by leading the @cJ to dummy's @cA so we can take two @c finesses and the @d finesse to make 3NT.|
+pg| ***** 20 ***** |
+
+
+qx|B02,BOARD 2|
+rh||ah|Board 2|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|1SK7HAQJTDAKT98C83,SQJ842DQJ4CKJT96,SA96H7632D72CQ542,ST53HK9854D653CA7|mb|-|mb|-|mb|-|mb|1D|mb|1S|mb|d|mb|2S|mb|4H|mb|p|mb|p|mb|d|mb|p|mb|p|mb|p|mb|-|mb|-|sk|S|sc||PC|SQ|nt|Looking at partner's hand, the opponents surely didn't double on high card strength.  Expect trump to break poorly. Can you make East regret his last call?  Good luck!|
+pg| ***** 21 ***** |
+
+
+at|
+This hand was played by the great New York player Michael Kamil who will represent the U.S. in the Bermuda Bowl later this year.  This hand is from the quarterfinal match of the team trials seen on BBO VuGraph.|
+pg| ***** 22 ***** |
+
+
+at|
+Anxious to begin trump, Kamil won the first trick on the table and led a @h finessing the @hQ.  He was not too surprised by West's void.|
+pg| ***** 23 ***** |
+
+
+pc|SA|pc|S3|pc|S7|
+pg| ***** 24 ***** |
+
+
+pc|H2|pc|H4|pc|HQ|pc|C6|
+pg| ***** 25 ***** |
+
+
+at|
+Kamil paused to take stock of the hand.  When an 8-card overcalled suit (@s) is advanced (the partner of the overcaller is the "advancer") usually expect a 5 - 3 split.  East's play of the @s3 on trick 1 implied 3 cards in @s as well.  Everyone OK so far?|
+pg| ***** 26 ***** |
+
+
+nt|With 3 @ss and 5 @hs East has 5 cards in the minors.  South realized if East had 3 @ds and 2 @cs he would be the victim of a TRUMP COUP.|
+pg| ***** 27 ***** |
+
+
+at|
+Any other split of East's minors would make the contract fail. Notice West's discard of the @c6 at trick 2.  Often the first defensive discard is from a 5-card suit and Mike was hoping @cs were 5 - 2 on this hand.|
+pg| ***** 28 ***** |
+
+
+pc|DA|pc|D4|pc|D2|pc|D3|
+pg| ***** 29 ***** |
+
+
+pc|DK|pc|DQ|pc|D7|pc|D5|
+pg| ***** 30 ***** |
+
+
+at|
+The @ds divided 3 - 3, confirmed when Kamil ruffed the 3rd @d in dummy.|
+pc|D8|pc|DJ|pc|H3|pc|D6|
+pg| ***** 31 ***** |
+
+
+pc|H6|pc|H5|pc|HT|pc|C9|
+pg| ***** 32 ***** |
+
+
+at|
+After a 2nd trump finesse he cashed the @sK and led the...|
+pc|SK|pc|S2|pc|S6|pc|S5|
+pg| ***** 33 ***** |
+
+
+at|
+...established @d10 discarding dummy's last @s.  East was helpless.  At the table he ruffed this trick but discarding wouldn't have helped.|
+pc|DT|pc|S4|pc|S9|pc|H8|sk||
+pg| ***** 34 ***** |
+
+
+pc|CA|pc|C3|pc|CJ|pc|C2|
+pg| ***** 35 ***** |
+
+
+nt|After 2 rounds of @cs the end position is reached.  West led a @s and declarer ruffed with the @h7.  The @c return trapped East's @hK9 behind South's @hAJ.|
+pc|C7|pc|C8|pc|CK|pc|C4|
+pg| ***** 36 ***** |
+
+
+pc|SJ|pc|H7|pc|ST|pc|D9|
+pg| ***** 37 ***** |
+
+
+pc|C5|pc|H9|pc|HJ|pc|CT|
+pg| ***** 38 ***** |
+
+
+pc|HA|pc|S8|pc|CQ|pc|HK|
+pg| ***** 39 ***** |
+
+
+mc|10|sk||sc|y|at|
+At the other table in the match, 4 @h undoubled went down 1 so Kamil's team was +590 and +50 for a 12 IMP gain on their way to victory.|
+pg| ***** 40 ***** |
+
+
+at|
+Here's the lesson text:  Sometimes declarer must picture a particular distribution of defenders' cards and play as if that distribution exists.  Here, at trick 2, Mike Kamil had to hope East was 3 - 5 - 3 - 2 and made 4 @h by means of a TRUMP COUP despite a 5 - 0 @h split. |
+pg| ***** 41 ***** |
+
+
+qx|B03,BOARD 3|
+rh||ah|Board 3|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st|s|md|1SA9876HAT4DA98C53,H96D5432CAQT9864,SQ543HQJ32DKJT6C7,SKJT2HK875DQ7CKJ2|mb|-|mb|-|mb|-|mb|1S|mb|3C|mb|3S|mb|3N|mb|p|mb|p|mb|4S|mb|d|mb|p|mb|p|mb|p|mb|-|mb|-|sk|s|sc||nt|East should have 3 or 4 @ss and, hopefully, the @hK to justify his 3NT bid over his partner's preempt and subsequent double.  Can you bring home this game if trump splits badly?  Good luck!|
+pc|D5|
+pg| ***** 42 ***** |
+
+
+at|
+The first thing to consider is trump.  Both how and when to play them.|
+pg| ***** 43 ***** |
+
+
+at|
+One way to play @s is to cash the @sA and lead low to the @sQ on the board but that would be wrong with the bidding done by East.|
+pg| ***** 44 ***** |
+
+
+at| East bid 3NT over West's preempt and doubled 4@s like a person with @sKJ10 or @sKJ10x.  If he has all 4 @ss, playing the @sA will set up 3 @s tricks for him and down we go.|
+pg| ***** 45 ***** |
+
+
+at|
+No, the first trump lead should come from the board.  We'll cover East's card .  We don't mind if West can win the first @s trick.  It assures us we'll only lose 2 @ss.  That's the "how."  Next is when to play @s.|
+pg| ***** 46 ***** |
+
+
+nt|The only entry to dummy is in @d and it's too dangerous to lead a @d now.  No problem if @ds are 3 - 3 (36%) but if they split 4 - 2 (49%) East may win the 2nd round of @s and put West in the lead for a @d ruff.  Any questions so far?|
+pg| ***** 47 ***** |
+
+
+at|
+The only possible entry to West's hand is in @c.  If we give the defense it's @c trick now while East still has a @d we can disrupt their line of communication!|
+pg| ***** 48 ***** |
+
+
+at|
+We can do this at trick 2 by leading a ...|
+pc|DJ|pc|DQ|pc|DA|
+pg| ***** 49 ***** |
+
+
+pc|C3|pc|C8|pc|C7|pc|CJ|at|
+This modest looking play cuts the defenders off from each other.  East will make his 2 trump tricks to go with the @c trick but that's all.  We've seen this play before in this class.  It's a SCISSORS COUP.|
+pg| ***** 50 ***** |
+
+
+at|
+Now we can go after trump.  We lead the @s3.|
+pc|D7|pc|D8|pc|D2|pc|DT|
+pg| ***** 51 ***** |
+
+
+nt|East correctly splits honors.  Had he played the @s2 we'd play the @s6.|
+pc|S3|pc|ST|pc|SA|pc|C6|
+pg| ***** 52 ***** |
+
+
+pc|S6|pc|C9|pc|S4|pc|SJ|
+pg| ***** 53 ***** |
+
+
+pc|C2|pc|C5|pc|CT|pc|SQ|
+pg| ***** 54 ***** |
+
+
+pc|HQ|pc|H5|pc|H4|pc|H6|
+pg| ***** 55 ***** |
+
+
+pc|H2|pc|H7|pc|HT|pc|H8|
+pg| ***** 56 ***** |
+
+
+pc|S9|pc|C4|pc|S5|pc|SK|
+pg| ***** 57 ***** |
+
+
+pc|C4|pc|S7|pc|CQ|pc|D6|
+pg| ***** 58 ***** |
+
+
+pc|S8|pc|D3|pc|H3|pc|S2|mc|10|sk||sc|y|at|
+Here's the lesson text:  The aggressive bidding by East warned declarer of a bad trump split.  To prevent a future @d ruff, he destroyed the defensive line of communications using a SCISSORS COUP at trick 2.|
+pg| ***** 59 ***** |
+
+
+qx|B04,BOARD 4|
+rh||ah|Board 4|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|4SA8543H73DKJ82CA6,ST6HT982D54CT9752,SQ92H654DAQ3CK843,SKJ7HAKQJDT976CQJ|mb|1N|mb|2D|mb|p|mb|2H|mb|d|mb|2S|mb|p|mb|4S|mb|p|mb|p|mb|p|mb|-|mb|-|mb|-|pc|HT|sk|S|sc||nt|It's not difficult to count points in this hand.  With East showing 15 - 17 high card points West can only have a Queen or a few Jacks at best.  Since there are 2 sure @h losers your challenge is to lose only 1 trick in @s.  Good luck!|
+pg| ***** 60 ***** |
+
+
+at|
+This hand features a play many experienced bridgers have never seen.  It's called an INTRA-FINESSE.|
+pg| ***** 61 ***** |
+
+
+at|
+One common type of intra-finesse can be used by declarer in this hand.  Obviously if East has @sKJ10(x) there's nothing we can do.  We'll lose 2 @s tricks and go down.  We must hope @ss are 3 - 2 and the doubleton contains at least one of the missing honors.|
+pg| ***** 62 ***** |
+
+
+pc|H4|pc|HJ|pc|H3|
+pg| ***** 63 ***** |
+
+
+pc|HA|pc|H7|pc|H2|pc|H5|
+pg| ***** 64 ***** |
+
+
+pc|HK|pc|S3|pc|H8|pc|H6|
+pg| ***** 65 ***** |
+
+
+at|
+We begin trump by leading small from hand and we play the...|pc|S4|pc|S6|
+pg| ***** 66 ***** |
+
+
+nt|...@s9 which loses to East's @sJ.  At this point we aren't sure if East started with @sKJ or @sKJx.  (We know he started with the @sK for his 1NT opener.)|pc|S9|pc|SJ|
+pg| ***** 67 ***** |
+
+
+pc|CQ|pc|CA|pc|C2|pc|C3|
+pg| ***** 68 ***** |
+
+
+pc|C6|pc|C9|pc|CK|pc|CJ|
+pg| ***** 69 ***** |
+
+
+pc|C4|pc|D6|pc|S5|pc|C5|
+pg| ***** 70 ***** |
+
+
+at|
+When East showed out on the 3rd round of @c we can place him with @sKJx originally (would he open 1NT with 2 doubletons?), so we lead a @d to the board and return the...|
+pc|D2|pc|D5|pc|DA|pc|D7|
+pg| ***** 71 ***** |
+
+
+at| ...@sQ which pins West's @s10.  Whether East covers or not we hold our trump losers to just one trick and bring home our contract.|
+pc|SQ|pc|SK|pc|SA|pc|ST|SK||
+pg| ***** 72 ***** |
+
+
+mc|10|sc|y|nt|The lesson text:  When trying to establish a shaky suit missing several high honors, consider if we can prepare for an INTRA-FINESSE by ducking with the 8 or 9.  In this hand we begin trumps by leading to dummy's @s9.  Later we lead the @sQ from the board pinning West's @s10 to make 4@s.|
+pg| ***** 73 ***** |
+
+
+md|4HA962S2,Hj7S5,hq853SA,hkt4S8|mb|6C|mb|p|mb|p|mb|p|nt|Here's another example of a combination where we can use an intra-finesse to lose 1 trick.|sc||
+pg| ***** 74 ***** |
+
+
+at|
+After we lead low to dummy's @h8 losing to RHO's @h10 we reach the above position.|
+pc|hh|pc|h8|pc|hT|
+pg| ***** 75 ***** |
+
+
+pc|ssss|
+pg| ***** 76 ***** |
+
+
+at|
+When we lead the @hQ we'll take the rest of the tricks.|
+pc|hQ|
+pg| ***** 77 ***** |
+
+
+qx|B05,BOARD 5|
+rh||ah|Board 5|
+pn|dearbilly,peterb370c,dearbilly,peterb370c|st||md|2SAT85H873DA83CA83,SKQ7H96542DJ2CT62,S96432HADQ9764CK5,SJHKQJTDKT5CQJ974|mb|p|mb|p|mb|1C|mb|p|mb|1H|mb|d|mb|2H|mb|2S|mb|p|mb|3S|mb|p|mb|4S|mb|p|mb|p|mb|p|pc|H6|sk|S|sc||nt|East - West were playing "support doubles (redoubles)" so the raise to 2@h promised 4 card @h support.  With 3 @hs East would redouble.
+Despite missing the @sKQJ7 you may escape with 1 @s loser if they split 2 - 2 (40%).  That will be a big help because there is a possibility of losing 2 @d tricks as well.  If those suits don't behave can you avoid the loss of 2 @s and 2 @d tricks?  Good luck!|
+pg| ***** 78 ***** |
+
+
+at|
+One of the many wonderful things BBO has to offer is the ability to watch great players from around the world.  Not too long ago I happened to see some hands played by Richard Pavlicek and Billy Miller, two of the best.|
+pg| ***** 79 ***** |
+
+
+at|
+Miller (BBO ID - dearbilly) sat South.  The bidding was the same at the table.  After winning the @h lead he led a small @s and ducked when East played the @sJ.|
+pg| ***** 80 ***** |
+
+
+pc|HA|pc|HK|pc|H3|
+pg| ***** 81 ***** |
+
+
+pc|S2|pc|SJ|pc|S5|pc|SQ|nt|West, realizing he had 2 @s tricks, overtook and shot back the @c10 hoping to set up 2 @c tricks for the defense.|
+pg| ***** 82 ***** |
+
+
+pc|CT|pc|C5|pc|C4|pc|CA|
+pg| ***** 83 ***** |
+
+
+at|
+Billy won in hand and cashed the @sA getting the bad news about a 2nd @s loser.  He paused for some thinking about how to play @ds.|
+pc|SA|pc|S7|pc|S3|pc|C7|
+pg| ***** 84 ***** |
+
+
+at|
+Without any clues from the bidding the normal play is to cash the @dA and lead low to the @dQ hoping West has the @dK.  But is that correct in this hand?|
+pg| ***** 85 ***** |
+
+
+at|
+East opened the bidding in 3rd seat.  He's shown the stiff @sJ and the @hKQJ.  He can't have more than @cQJ.  Is it likely he does NOT have the @dK?|
+pg| ***** 86 ***** |
+
+
+at| More evidence needed?  West, already showing @sKQ would have competed to 3@h in the known nine-card fit with 8 points.  Miller decided East must have the @dK to justify his vulnerable opening bid.|
+pg| ***** 87 ***** |
+
+
+ 
+pc|D3|pc|D2|nt|Now we see the INTRA-FINESSE is not just for the trump suit.  Declarer led the @d3, and when West played the @d2, inserted the...|sk||
+pg| ***** 88 ***** |
+
+
+pc|D6|pc|DT|
+pg| ***** 89 ***** |
+
+
+at|
+...@d9 losing to East's @d10.  East's @c return rode to dummy's @cK.  Miller then clicked on the...|
+pc|C9|pc|C3|pc|C6|pc|CK|
+pg| ***** 90 ***** |
+
+
+at|
+What card did he play?|
+pg| ***** 91 ***** |
+
+
+at|
+:)...@dQ and the opps were helpless.  In due time West scored his @sK but that was the 3rd and last trick for the defense.|
+pc|DQ|pc|D5|pc|D8|pc|DJ|
+pg| ***** 92 ***** |
+
+
+pc|D4|pc|DK|pc|DA|pc|SK|
+pg| ***** 93 ***** |
+
+
+pc|C2|pc|S4|pc|CQ|pc|C8|
+pg| ***** 94 ***** |
+
+
+pc|D7|pc|HT|pc|H7|pc|H2|
+pg| ***** 95 ***** |
+
+
+pc|D9|pc|CJ|pc|H8|pc|H4|
+pg| ***** 96 ***** |
+
+
+mc|10|sc|y|nt|Here's the lesson text:  When it became clear that East had the @dK for his opening bid declarer had to abandon the normal play in @d and rely on an INTRA-FINESSE to hold his @d losers to one trick.|
+pg| ***** 97 ***** |
+
+
+%% ---------- FINAL NOTES ----------
+qx|Final notes|
+bt||pf||nt||cs|1|cp|2|fp|4|
+at|
+^-{ Final notes }
+^-|
+ht|h|cp||fp|2|at|   @2Thanks, all.  Looking forward to see you all at the next lesson on winning techniques in declarer play. :)|
+ht|z|at|
+
+(c)Peter & Bridge Base Online - Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|fp|1|at|^y Vanyvon|
+pg| ***** 98 ***** |
+
+
+%% --- End Final notes ---
+
+%% --- Help ---
+qx|Help, Help notes|
+bt||pf||nt||cs|2|fp|3|ht|b|at|^-{ Help }
+^-|
+hb|z|wb|b|bm|BIL.bmp|
+fp|2|ht|e|at|^b@2
+Short instruction on how to navigate through the movie:
+
+ ^$6  Previous page, go back one page.
+ ^$40  Next page, go forward one page.
+ ^$7  Previous chapter (the first page of the previous chapter).
+ ^$41  Next chapter (the first page of the next chapter).
+ ^$119  The first page of this movie. Once a trick is complete, click on the first card of the next trick. |
+%% --- End Help ---
+
+%% EOF

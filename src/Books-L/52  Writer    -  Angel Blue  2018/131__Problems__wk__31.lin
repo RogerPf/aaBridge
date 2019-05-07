@@ -1,0 +1,532 @@
+%%
+%%
+
+ss|chapter,Declarer  Play                 Problems  Week  31 |
+
+ss|movie-maker,GG_Bridge|
+
+%%
+%%  Tourney Date        2018-11-05
+%%
+%%  Date last Edited    2018-11-28          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead_2018.ins
+%%
+ss|masthead,Angel Blue                                                     2018 |
+%%
+cr|m205|cg|m125|cb|m205|   fill   m  m-mastColor       dull bluey pink
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    std
+%%
+<<--INSERT-END**-->>=01___FP_masthead_2018.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s29|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=03___FP_gen_arik_intro.ins
+%%
+Lg|f|n^|6|
+fp|4|at|^c@2^z@3|
+at|Arik, BBO ID 'Angel Blue', runs a weekly card play tournament and lesson in the  ^*h http://iac.pigpen.org.uk/,IAC^*n  club on  ^*h http://bridgebaseonline.com/,BBO^*n.  The focus is on  difficult to play  hands.  He has kindly allowed his problems to appear here in aaBridge lin file format.
+|n^|9|at|
+Do visit Angel Blue's bridge web site at ^*h http://angelblue.co.il/^*n|
+%%
+<<--INSERT-END**-->>=03___FP_gen_arik_intro.ins
+
+
+<<--INSERT-START-->>=03___FP_general_2018.ins
+%%
+ht|n|n^|0|at|@1^z  @3^b   {^^^^^^^^^^^^^^ ^z } |
+at|^c@2^z@3^^|
+%%
+ht|n|n#|7|at|All the hands for each lesson are given in a single .lin file.   Each deal has a summary and a few have a link to the full answer text on Angel Blue's website.  Before consulting it we suggest that:-|
+n#|7|at|^^^*bIF^*n after clicking  { ^*b 1st ^*n }  you cannot work out how to play the hand THEN click on the ^*b DDS  { is Off/On ^*n }  button.   This will show little green 'trick total' numbers by each of your cards.   Click on, and so play, any card that is marked with a light green oval.   This will show you the best lines of play.|
+n#|5|at|^^Your task is to solve the hand and if possible to categorize it as to being a  throw-in, squeeze or whatever.|
+%%
+%%
+ss|play-it-out,at`^^^d`cp`red`at`^*bNow `cp``at`  click  { ^*b 1st ^*n }  `cp`red`at`^*band play out the hand.^*n`cp``at`     ^*b Flow ^*n  will show the hands and end the problem.^^^^^n If you get stuck  -  use the ^*b DDS  {  is Off/On ^*n }  button.`|
+%%
+<<--INSERT-END**-->>=03___FP_general_2018.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|a|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|5|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|c|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+qx|31|
+pg| ***** 0 ***** |
+
+
+st||
+---------------------------------------------------------------------------
+qx|1,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 31.1|
+md|1sAKJ743hAQ5d8cQ75,sQ92hKT2dQJT2cT32,sT865hJ8dA765cAK9,h97643dK943cJ864|
+%
+
+%
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 31.1^*n     The hand,|
+pg| ***** 1 ***** |
+
+
+at|      the bidding,|
+mb|1S|mb|p|mb|3S|mb|p|mb|4N|mb|p|mb|5H|mb|p|mb|6S|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+at|      the lead,|
+pc|dQ|
+pg| ***** 3 ***** |
+
+
+eb|y___|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 4 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 5 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|b|
+at|^b^*bSummary^*n 
+|n#|1|at|As long as spades behave, you have only one possible loser in @h's.  But what can go wrong? |
+pg| ***** 6 ***** |
+
+
+at|   If LHO holds @SQxx, and you finesse the @HQ and it loses, you will be down.  Is there a way to assure your contract? |
+pg| ***** 7 ***** |
+
+
+at|
+You must strip the hands of @d's and @c's, and you must start immediately as your entries to dummy are limited.  Once in hand, you pull 2 rounds of trump (LHO does hold @SQxx), use the club entries to strip the hand of @Cs and @ds, and throw LHO in with a trump. LHO can do no harm.|
+pg| ***** 8 ***** |
+
+
+ 
+pf|all-res-lifted| 
+pg| ***** 9 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 10 ***** |
+
+
+---------------------------------------------------------------------------
+qx|2,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 31.2|
+md|1sAQT83hA43dA9cAQ3,s92hT92dKQ72cKT92,sKJ765hKJ7dJ8c876,s4hQ865dT6543cJ54|
+%
+bh||
+%
+sv|n|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 31.2^*n     The hand,|
+pg| ***** 11 ***** |
+
+
+at|      the bidding,|
+mb|2N|mb|p|mb|3H|mb|p|mb|3S|mb|p|mb|4S|mb|p|mb|p|mb|p|
+pg| ***** 12 ***** |
+
+
+at|      the lead,|
+pc|dK|
+pg| ***** 13 ***** |
+
+
+eb|y___|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 14 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 15 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|7|
+Lg|b|
+at|^b^*bSummary^*n 
+|n#|3|at|You count your losers as 1@D,1@H, and 2@C. How do you play at trick one?  You could finesse the @HJ, but if that loses RHO will lead a @d to LHO's @dQueen, and you are down.  Is there a way?
+Yes, You need to draw trumps, play the Ace-King of @H's and throw Opps in with the @HJack.  If RHO gets in, he will lead either a @D (to LHO's known @DQueen) or @c calulating that he is leading through declarer's club strength,  LHO is endplayed either way.  If LHO gets in he can only take his @d winner, but then is still endplayed.|
+pg| ***** 16 ***** |
+
+
+at|
+
+
+| 
+pf|all-res-lifted| 
+pg| ***** 17 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 18 ***** |
+
+
+---------------------------------------------------------------------------
+qx|3,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 31.3|
+md|1sA97hKJT732dKQ3c8,sQJT432h9dJT2cAK2,sK86hAQ86dA87cQ96,s5h54d9654cJT7543|
+%
+bh||
+%
+sv|e|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 31.3^*n     The hand,|
+pg| ***** 19 ***** |
+
+
+at|      the bidding,|
+mb|1H|mb|1S|mb|2S|mb|p|mb|4H|mb|p|mb|4N|mb|p|mb|5H|mb|p|mb|6H|mb|p|mb|p|mb|p|
+pg| ***** 20 ***** |
+
+
+at|      the lead,|
+pc|cA|
+pg| ***** 21 ***** |
+
+
+eb|y___|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 22 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 23 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n 
+|n#|3|at| With one @C loser on the first trick, how do you avoid a second loser in spades.  From the Bidding and lead, you know that LHO holds the @cK and at lRHO 5@S's, and you have no hope of any finesse in spades succeeding.  Your only hope is a positional squeeze against LHO.  Once you clear the hand of @d's, and take the @SAce winner, you squeeze LHO with the @H's and watch for the @CKing to drop.
+|n#|5|at|         See   "Roger on Squeezes"  under ^*bBooks-L^*n,   for a graphic of the positional squeeze layout.| 
+pg| ***** 24 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 25 ***** |
+
+
+---------------------------------------------------------------------------
+qx|4,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 31.4|
+md|1s9843hK72dAKQcA87,sAKQdJ9832cJ9654,s76hA86d7654cKQ32,sJT52hQJT9543dTcT|
+%
+bh||
+%
+sv|b|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 31.4^*n     The hand,|
+pg| ***** 26 ***** |
+
+
+at|      the bidding,|
+mb|1N|mb|p|mb|2N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 27 ***** |
+
+
+at|      the lead,|
+pc|sA|
+pg| ***** 28 ***** |
+
+
+eb|y___|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 29 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 30 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n 
+|n#|3|at|From the play, you know that RHO holds the @SJack.  When LHO switches to a @c (or @d) you throw RHO in your last @s (rectifying the count).  Whatever RHO returns (the @h situation will soon be reaveled) you can catch LHO in a simple positional squeeze with @ds as the long menace and @cs as the short menace.|
+pf|all-res-lifted| 
+pg| ***** 31 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 32 ***** |
+
+
+---------------------------------------------------------------------------
+qx|5,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 31.5|
+md|1sAhKQT94dKQ63cK84,sKT92hJ832d92cQ93,sJ76h765dAJ87cA76,sQ8543hAdT54cJT52|
+sv|n|sk|S|
+%
+bh|Play, E, sL, res, on-lead, T3-5, always|
+%
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 31.5^*n     The hand,|
+pg| ***** 33 ***** |
+
+
+at|      the bidding,|
+mb|1H|mb|p|mb|1N|mb|p|mb|3H|mb|p|mb|4H|mb|p|mb|p|mb|p|
+pg| ***** 34 ***** |
+
+
+at|      the lead,|
+pc|sT|
+pg| ***** 35 ***** |
+
+
+eb|y___|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 36 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 37 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n 
+|n#|3|at|You have an easy time if @h's split 3-2, but what about a 4-1 split?  You have a certain club loser and must play the trump suit carefully so as not to risk losing trump control.  You win the @SAce and play the @HKing, which RHO wins and returns a @s which you ruff in hand.  You cannot now risk playing the @HQueen on the 4th trick, you must play the @HT.  If LHO wins and continues spades, you ruff and discard your losing @c.
+| 
+pf|all-res-lifted| 
+pg| ***** 38 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 39 ***** |
+
+
+---------------------------------------------------------------------------
+qx|6,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 31.6|
+md|1sAQ32hQ7dAJ2cAT92,s6h8543dK943cQJ43,sK875hAKJT9dQ87c5,sJT94h62dT65cK876|
+%
+bh||
+%
+sv|e|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 31.6^*n     The hand,|
+pg| ***** 40 ***** |
+
+
+at|      the bidding,|
+mb|1N|mb|p|mb|2C|mb|p|mb|2S|mb|p|mb|4N|mb|p|mb|5D|mb|p|mb|5H|mb|p|mb|6S|mb|p|mb|p|mb|p|
+pg| ***** 41 ***** |
+
+
+at|      the lead,|
+pc|cQ|
+pg| ***** 42 ***** |
+
+
+eb|y___|
+at|^r  ^*b Do your thinking  NOW ^*n|
+eb|y___|
+pg| ***** 43 ***** |
+
+
+qx|Try,wide|
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 44 ***** |
+
+
+qx|Ans,wide|
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|a|
+at|^b^*bAns^*n 
+|n#|3|at|The contract looks like a laydown @- you have 5@hs  5@ss (inc a @c ruff) 1@d  and 1@c @- at most you lose a @d... BUT ... what if trumps are 4-1?  Can you still succeed?|
+pg| ***** 45 ***** |
+
+
+qx|2,wide|
+nt|^z@3^c@2^^|n^|5|
+Lg|f|
+at|^b^*bSuccess^*n 
+You must make a safety play, and lose a small trump early to RHO.|
+pg| ***** 46 ***** |
+
+
+at|  After winning the @cAce, ruff a club and give up a small trump to RHO.|
+pg| ***** 47 ***** |
+
+
+%%_aapg-NEAR
+pc|c5|pc|c6|pc|cA|pg||
+pc|c2|pc|c3|pc|s5|pc|c7|pg||
+pc|s7|pc|s9|pc|s2|pc|s6|
+%%_aapg-STD
+pg| ***** 50 ***** |
+
+
+at|  If RHO plays a @d, you win with the @dAce, and ruff a second @c then cash your @sKing.|
+pg| ***** 51 ***** |
+
+
+%%_aapg-NEAR
+pc|d5|pc|dA|pc|d9|pc|d7|pg||
+pc|c9|pc|c4|pc|s8|pc|c8|pg||
+pc|sK|pc|s4|pc|s3|pc|h3|
+%%_aapg-STD
+pg| ***** 54 ***** |
+
+
+at|  Go to hand with the @hQueen, pull the last 2 trump, and clear the rest with your @h winners.  Whatever RHO leads at trick 4, your contract still succeeds.|
+pg| ***** 55 ***** |
+
+
+%%_aapg-NEAR
+pc|h9|pc|h2|pc|hQ|pc|h4|pg||
+pc|sA|pc|h5|pc|d8|pc|sT|pg||
+pc|sQ|pc|h8|pc|dQ|pc|sJ|
+%%_aapg-STD
+pg| ***** 58 ***** |
+
+
+pf|all-res-lifted| 
+pg| ***** 59 ***** |
+
+
+-------------------------------------------------------------------------------
+bt||
+nt|^z@3^b@2^^|
+ht|m|n#|7|cs|c-chapterColor|at|^a     ^-{  ^*nEnd  -  Problems wk 31^*n  ^^ }^-|
+pg| ***** 60 ***** |
+
+

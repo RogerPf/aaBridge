@@ -1,0 +1,784 @@
+QT.lin
+%%A synopsis on Quick Tricks
+%%January 10, 2013 
+%%%%%%%%%%%%%%%%
+fh|155|ff|1Arial|fb|17|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|35|fm|3|                           FOR 3
+fb|49|fm|4|fb|4|fm|4|
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|3255|cg|3255|cb|3255|            White
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|6124|cb|6250|cg|6200|             6=TURQUOISE
+cr|70|cb|7220|cg|7235|              green/blue 7
+cr|8255|cb|80|cg|80|                red 8
+cr|9128|cb|90|cg|950|               Reddish-brown 9
+%%%%2C Opening
+bt||cs|6|ht|b|fp|1|at|^-{             A Synopsis on Quick Tricks with 2C Opening                }
+^-|FP||AT|^-January, 2013
+^-|ht|i|cs||fp||at|^-
+To begin the presentation
+
+in BBO click the forward arrow, right bottom of the screen   ^$40
+
+in the Viewer click Next Page, top of the screen left
+ 
+^-|
+pg| ***** 0 ***** |
+
+
+cs|6|ht|b|fp|1|at|^-{             A Synopsis on Quick Tricks with 2C Opening                }
+^-|FP||AT|^-January, 2013
+^-|ht|i|cs||fp||at|^-
+To begin the presentation
+
+in BBO click the forward arrow, right bottom of the screen   ^$40
+
+in the Viewer click Next Page, top of the screen left
+ 
+^-|qx|B|HT|s|AT|^b^*BMovie Maker^*N (Kia, BBO nickname "nome") has based this tutorial mostly on lessons in BBO by
+^B^*BHoward Schutzman^*N, BBO nickname "hondo717".|
+PG| ***** 1 ***** |
+
+
+%%
+ht|h|at|@4|cs|6|ht|b|fp|1|at|^-{             A Synopsis on Quick Tricks with 2C Opening                }
+^-|FP||AT|^-January, 2013
+^-|fp||cp||ht|D|at|^B@2
+Quick Tricks (QT) are High-Card holdings that will usually win early tricks in the suit. Below is the table of Quick Tricks before bidding:|
+PG| ***** 2 ***** |
+
+
+ht|D|at|^B@2
+Quick Tricks (QT) are High-Card holdings that will usually win early tricks in the suit. Below is the table of Quick Tricks before bidding:|
+
+ht|h|fp|2|AT|All suits headed by the Ace, with no King or Queen = 1 Quick Trick |
+PG| ***** 3 ***** |
+
+
+ht|j|AT|Suit headed by the AK = 2 Quick Tricks|
+PG| ***** 4 ***** |
+
+
+ht|l|AT|Suit headed by AQ without the King = 1 1/2 Quick Tricks|
+PG| ***** 5 ***** |
+
+
+ht|n|AT|Suit headed by KQ without the Ace = 1 Quick Trick|
+PG| ***** 6 ***** |
+
+
+ht|p|AT|All 2+ card suits headed by a king with no ace or queen = 1/2 Quick Trick|
+PG| ***** 7 ***** |
+
+
+ht|r|at|Singleton Ace = 1 Quick Trick|
+PG| ***** 8 ***** |
+
+
+ht|t|AT|Singleton King, Singleton Queen, and Singleton Jack = Zero Quick Trick|
+PG| ***** 9 ***** |
+
+
+ht|v|AT|Suit headed by Queen-Jack combination = Zero Quick Trick|
+PG| ***** 10 ***** |
+
+
+ht|x|fp||AT|
+Let us look at a few examples.|
+PG| ***** 11 ***** |
+
+
+NT||
+%%%%%%%%%%Example  A
+bt||HT|b|CS|6|AT|^-
+{    Quick Tricks (QT)    }
+^-|HT|D|AT|^-Example A 
+^-|
+HT|F|cs|1|at|^b{|ih|pSA HA4 CAK5 DAQJ6543|at|}|hf|l|cq||lb|*mHow many Quick Tricks in spades?^0~1~2~3~4^2|ht|f|at|^j@2
+@SA = 1 Quick Trick. All singleton Aces = 1 Quick Trick. |
+pg| ***** 13 ***** |
+
+
+cq||hf|l|lb|*mHow many Quick Tricks in hearts?^0~1~2~3~4^2|ht|g|at|^j@2
+@HA 4 = 1 Quick Trick. Suit headed by the Ace, with no King or Queen = 1 Quick Trick. |
+PG| ***** 15 ***** |
+
+
+cq||hf|l|lb|*mHow many Quick Tricks in clubs?^0~1~2~3~1.5^3|ht|I|at|^j@2
+@CA K 5 = 2 Quick Tricks. Suits headed by the AK = 2 Quick Tricks.|
+PG| ***** 17 ***** |
+
+
+cq||hf|l|lb|*mHow many Quick Tricks in diamonds?^0~1~2~3~1.5^5|ht|J|at|^j@2
+@DA Q J 6 5 4 3 = 1.5 Quick Trick. Suits headed by AQ without the King = 1.5 Quick Tricks|
+PG| ***** 19 ***** |
+
+
+cq||hf|n|lb|*mHow many Quick Tricks in the hand?^5.5~2~3~4.5^1|ht|l|at|^j@2
+There are 5.5 Quick Tricks in this hand.|
+PG| ***** 21 ***** |
+
+
+ht|x|AT|
+Let us change the example.|
+PG| ***** 22 ***** |
+
+
+NT||
+%%%Example B
+bt||HT|b|CS|6|AT|^-
+{    Quick Tricks (QT)    }
+^-|HT|D|AT|^-Example B 
+^-|
+HT|F|cs|1|at|^b{|ih|pSK HAQ CKQ2 DQJ76543|at|}|hf|l|cq||lb|*mHow many Quick Tricks in spades?^0~1~1.5~2~2.5~3^1|ht|f|at|^j@2
+Singleton @SK = Zero Quick Trick. Only singleton Aces = 1 Quick Trick. All other singleton honors = Zero Quick Trick.|
+pg| ***** 24 ***** |
+
+
+cq||hf|l|lb|*mHow many Quick Tricks in hearts?^0~1~1.5~2~2.5~3^3|ht|h|at|^j@2
+@HA Q doubleton = 1.5 Quick Tricks. All 2+ card suits headed by AQ without the King = 1.5 Quick Trick. |
+PG| ***** 26 ***** |
+
+
+cq||hf|l|lb|*mHow many Quick Tricks in clubs?^0~1~1.5~2~2.5~3^2|ht|j|at|^j@2
+@CK Q 2 = 1 Quick Trick. All 2+ card suits headed by KQ with no Ace = 1 Quick Trick|
+PG| ***** 28 ***** |
+
+
+cq||hf|l|lb|*mHow many Quick Tricks in diamonds?^0~1~1.5~2~2.5~3^1|ht|l|at|^b@2
+@D Q J 7 6 5 4 3 = Zero Quick Tricks. Suits headed by Queen-Jack = Zero Quick Trick.|
+PG| ***** 30 ***** |
+
+
+cq||hf|n|lb|*mHow many Quick Tricks in the hand?^2~2.5~3~3.5~4~4.5~5^2|ht|m|at|^b@2
+There are 2.5 Quick Tricks in this hand.|
+PG| ***** 32 ***** |
+
+
+ht|x|AT|
+Let us change the example.|
+PG| ***** 33 ***** |
+
+
+NT||
+%%%Example C
+bt||HT|b|CS|6|AT|^-
+{    Quick Tricks (QT)    }
+^-|HT|D|AT|^-Example C 
+^-|
+HT|F|cs|1|at|^b{|ih|pSK2 HKt43 CQ DQJ7654|at|}|hf|l|cq||lb|*mHow many Quick Tricks in spades?^0~0.5~1~1.5~2^2|ht|f|at|^j@2
+@SK 2 = 1/2 Quick Trick. All 2+ card suits headed by the King, with no Ace or Queen, = 1/2 Quick Trick.|
+pg| ***** 35 ***** |
+
+
+cq||hf|l|lb|*mHow many Quick Tricks in  hearts?^0~0.5~1~1.5~2^2|ht|h|at|^j@2
+@HK 10 4 3 = 1/2 Quick Trick. All 2+ card suits headed by the King, with no Ace or Queen, = 1/2 Quick Trick.|
+PG| ***** 37 ***** |
+
+
+cq||hf|l|lb|*mHow many Quick Tricks in clubs?^0~1~1.5~2~2.5~3^1|ht|j|at|^j@2
+@CQ = Zero Quick Trick. Singleton Kings, Queens, and Jacks = Zero Quick Trick|
+PG| ***** 39 ***** |
+
+
+cq||hf|l|lb|*mHow many Quick Tricks in diamonds?^0~1~1.5~2~2.5~3^1|ht|l|at|^b@2
+@DQ J 7 6 5 4 = Zero Quick Tricks. Suits headed by Queen-Jack = Zero Quick Trick.|
+PG| ***** 41 ***** |
+
+
+cq||hf|n|lb|*mHow many Quick Tricks in the hand?^1~2.5~3~3.5~4^1|ht|n|at|^b@2
+There is 1 Quick Tricks in this hand.|
+PG| ***** 43 ***** |
+
+
+ht|x|AT|
+The next section is how Howard Schutzman makes use of Quick Tricks.|
+PG| ***** 44 ***** |
+
+
+NT||
+%%2C
+cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|On close decisions, I use Quick Tricks to decide whether or not my hand is a bit better than Bergen evaluation tells me it is. Here is my methodology. There are a max of 8 quick tricks and there are 40 HCP. Therefore, on average, each 5 HCP (40 / 8) should contain 1 quick trick. Hands with above average quick trick count are better than their HCP indicate. |
+PG| ***** 45 ***** |
+
+
+AT|
+
+So,  for example, if I have 12 HCP, on average I should have about 2.5 quick tricks. If my hand contains, for example, 3 quick tricks, then it is probably worth more than 12 HCP and I will stretch on close decisions. On the other hand, if it has only 2 quick tricks, I will be conservative. This is particularly useful on slam decisions, where an abundance of Aces and Kings is particularly important.|
+PG| ***** 46 ***** |
+
+
+AT|
+
+I also use Quick Tricks for the Bergen 4 and 4 rule. When I have a balanced 22-24 HCP points I open 2C intending to bid 2N over partner's response. However, with distributional 20+ HCP and when a major suit contract is the likely auction I use the "9 trick" rule and/or Bergen's "4 and 4" rule.
+|
+PG| ***** 47 ***** |
+
+
+ht|n|AT|The "9 trick rule" says I can open 2C if I can count 9 tricks in my hand. For example with the hand shown on the left:|HT|o|cs|1|at|^b{|ih|pSA HAKJT542 C65 DAK6|at|}|ht|o|AT|^j@2I have 9 sure tricks|
+PG| ***** 48 ***** |
+
+
+HC|SAHAKJT54DAK|AT| in my hand no matter what is partner's hand.|
+PG| ***** 49 ***** |
+
+
+LC|SAHAKJT54DAK|AT|
+
+Marty Bergen uses the "4 and 4" rule. The rule says you should open 2C if you have at least 4 Quick Tricks and no more than 4 losers. Quick Tricks are easy to count. They are basically the number of tricks you expect to take immediately in a suit. A= 1, AK= 2, Kx= ½, AQ= 1 ½ KQ= 1. There can only be a maximum of 2 Quick Tricks in each suit.|
+PG| ***** 50 ***** |
+
+
+AT| With the hand on the left I have 5 Quick Tricks.|hc|SAHAKDAK|at|-1 spade, 2 hearts, 2 diamond.|
+PG| ***** 51 ***** |
+
+
+LC|SAHAKDAK|
+HT|w|AT|^B@2The Losers part is a bit more problematical. Bergen does not intend for you to use the "Losing Trick Count" (LTC) popularized by Ron Klinger. He wants you to actually figure out the number of losers based on tricks you would expect to lose if partner shows up with no help at all or an average holding.|
+PG| ***** 52 ***** |
+
+
+AT|
+
+For example this hand I have 3 losers outside of hearts,|HC|D6C65|at| and counting that heart suit as 1 loser is ok.|
+PG| ***** 53 ***** |
+
+
+NT||lC|D6C65|
+%%
+cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|He also assumes all finesses lose. For example in a holding of:|
+PG| ***** 54 ***** |
+
+
+ht|d|cs|1|AT|^b{|ih|pHAKQ8|at|}|
+pg| ***** 55 ***** |
+
+
+ht|d|AT|^g@2there would be 1 loser, as you are likely to lose the J. LTC would call this a 0 loser suit.|
+PG| ***** 56 ***** |
+
+
+ht|g|at|But a holding of|cs|1|AT|^k{|ih|pHAKQ876|at|}|
+pg| ***** 57 ***** |
+
+
+ht|g|va|3|AT|^p@2would have no losers. Since there are 7 cards remaining between the other 3 hands, partner's average holding is 2.33. You are likely to have an 8+ card fit. This means if you get normal breaks, even if partner only  holds 2, you are likely to not lose any tricks.|
+PG| ***** 58 ***** |
+
+
+AT| Further, the following holding on the left:|
+ht|m|at|^b{|ih|pHAKJT|at|}|ht|m|va|3|at|^f@2has one loser.|
+PG| ***** 59 ***** |
+
+
+va|8|AT|  But|HT|n|va|4|at|^j{|ih|pHAKJ6|at|}|ht|o|at|^n@2holding has|
+PG| ***** 60 ***** |
+
+
+AT| two losers. Even though partner's average holding is 3-cards (1/3 of the 9 remaining cards), you more often than not will lose 2 tricks.|
+PG| ***** 61 ***** |
+
+
+ht|u|va|2|at|^B@2And finally the|HT|u|at|^f{|ih|pHAKJ65|at|}|HT|v|at|^k@2holding is harder to calculate.|
+PG| ***** 62 ***** |
+
+
+AT| Partner's average holding is 2.66. So if partner has 3 cards, if you get a 3-2 break, you have 1 loser. But if partner has 2 cards or fewer you have 2 losers. I would call this a 1.5 loser suit.|
+PG| ***** 63 ***** |
+
+
+ht|y|AT|^k@2^*BMM: ^*NMarty Bergen in Chapter 4 of his Slam Bidding Made Easier (2008), has nicely explained 2C opening. As Howard mentioned his standard for opening 2 clubs is based on a combination of Quick Tricks and Losers-with no help from the partner. Let us look at a few examples. |
+PG| ***** 64 ***** |
+
+
+NT||
+%%
+ht|b|cp|8|AT|^B@2^*BMarty Bergen: ^*N|cp||at|Counting your quick tricks helps you:|
+PG| ***** 65 ***** |
+
+
+ht|b|cp|8|AT|^B@2^*BMarty Bergen: ^*N|cp||at|Counting your quick tricks helps you:|
+HT|d|AT|Appreciate the true value of aces and kings.|
+PG| ***** 66 ***** |
+
+
+ht|b|cp|8|AT|^B@2^*BMarty Bergen: ^*N|cp||at|Counting your quick tricks helps you:|
+HT|d|AT|Appreciate the true value of aces and kings.|
+HT|e|AT|Distinguish between "good points" and "schmoints."|
+PG| ***** 67 ***** |
+
+
+ht|b|cp|8|AT|^B@2^*BMarty Bergen: ^*N|cp||at|Counting your quick tricks helps you:|
+HT|d|AT|Appreciate the true value of aces and kings.|
+HT|e|AT|Distinguish between "good points" and "schmoints."|
+HT|f|AT|Appreciate that the value of all honor cards is greater when in combination with other honors.|
+PG| ***** 68 ***** |
+
+
+ht|b|cp|8|AT|^B@2^*BMarty Bergen: ^*N|cp||at|Counting your quick tricks helps you:|
+HT|d|AT|Appreciate the true value of aces and kings.|
+HT|e|AT|Distinguish between "good points" and "schmoints."|
+HT|f|AT|Appreciate that the value of all honor cards is greater when in combination with other honors.|
+HT|g|AT|Make good bidding decisions, such as:|
+HT|h|AT|^c@21. Deciding whether to open a borderline hand. (Avoid opening a marginal hand in first or second seat with fewer than two quick tricks.)|
+PG| ***** 69 ***** |
+
+
+ht|b|cp|8|AT|^B@2^*BMarty Bergen: ^*N|cp||at|Counting your quick tricks helps you:|
+HT|d|AT|Appreciate the true value of aces and kings.|
+HT|e|AT|Distinguish between "good points" and "schmoints."|
+HT|f|AT|Appreciate that the value of all honor cards is greater when in combination with other honors.|
+HT|g|AT|Make good bidding decisions, such as:|
+HT|h|AT|^c@21. Deciding whether to open a borderline hand. (Avoid opening a marginal hand in first or second seat with fewer than two quick tricks.)|
+HT|j|AT|^c@22. Avoiding penalty doubles based only on having "a lot of points."|
+PG| ***** 70 ***** |
+
+
+ht|b|cp|8|AT|^B@2^*BMarty Bergen: ^*N|cp||at|Counting your quick tricks helps you:|
+HT|d|AT|Appreciate the true value of aces and kings.|
+HT|e|AT|Distinguish between "good points" and "schmoints."|
+HT|f|AT|Appreciate that the value of all honor cards is greater when in combination with other honors.|
+HT|g|AT|Make good bidding decisions, such as:|
+HT|h|AT|^c@21. Deciding whether to open a borderline hand. (Avoid opening a marginal hand in first or second seat with fewer than two quick tricks.)|
+HT|j|AT|^c@22. Avoiding penalty doubles based only on having "a lot of points."|
+HT|k|AT|^c@23. Knowing when it is correct to open 2C.|
+PG| ***** 71 ***** |
+
+
+NT||
+%%%
+ht|b|cs|1|cp|4|fp|2|at|^-{    What Do You Need to Open 2C?    }
+^-|
+pg| ***** 72 ***** |
+
+
+fp||cp||
+ht|d|cp|8|AT|
+^B@2^*BMarty Bergen: ^*N|cp||at|If you intend to rebid 2NT, you need a hand worth at least 22 points in notrump.|
+PG| ***** 73 ***** |
+
+
+AT|
+If you intend to rebid 2H or 2S, you need a 5+ card major suit, but HCP are NOT the key. To open 2C and then bid a major, the key number is "four."|
+PG| ***** 74 ***** |
+
+
+ht|h|fp|2|cp|4|at|^-{
+Count your losers; 
+  tricks you expect to lose if partner has no help. The maximum is four.  
+  }|
+PG| ***** 75 ***** |
+
+
+HT|l|at|
+{
+    Count your quick tricks. The minimum is four    
+}|
+PG| ***** 76 ***** |
+
+
+ht|p|at|
+{
+    Open 2C only if you satisfy both "fours."    
+    }^-
+|FP||CP||
+pg| ***** 77 ***** |
+
+
+ht|w|AT|^B@2
+Let us look at a few examples:|
+PG| ***** 78 ***** |
+
+
+NT||
+%%%%%Example  I
+bt||HT|b|CS|6|AT|^-
+{    Bergen 2C Opener    }
+^-|HT|D|AT|^-Example I 
+^-|
+HT|F|cs|1|at|^b{|ih|pSAJ HKQJT762 DAK4 C8|at|}|hf|l|cq||lb|*bWhat should you open this hand?^^2c|ht|f|at|^j@2
+Open 2@C.|
+PG| ***** 80 ***** |
+
+
+AT| 4 losers (1 in each suit)|HC|SJHJC8D4|
+pg| ***** 81 ***** |
+
+
+LC|SJHJC8D4|AT| and 4 Quick Tricks.|HC|SAHKQDAK|
+PG| ***** 82 ***** |
+
+
+LC|SAHKQDAK|NT||
+%%%%%Example  II
+bt||HT|b|CS|6|AT|^-
+{    Bergen 2C Opener    }
+^-|HT|D|AT|^-Example II 
+^-|
+HT|F|cs|1|at|^b{|ih|pSAKQJ9874H72 D 65 CA|at|}|hf|l|cq||lb|*bWhat should you open this hand?^^1S|ht|f|at|^j@2
+Open 1@S.|
+PG| ***** 84 ***** |
+
+
+AT| Only 3 Quick tricks.|HC|SAKCA|
+pg| ***** 85 ***** |
+
+
+AT| Case closed!|
+PG| ***** 86 ***** |
+
+
+LC|SAKCA|NT||
+%%%%%%%%%%Example  III
+bt||HT|b|CS|6|AT|^-
+{    Bergen 2C Opener    }
+^-|HT|D|AT|^-Example III 
+^-|
+HT|F|cs|1|at|^b{|ih|pSAKQT3 HAKQJ2 D42 C8|at|}|hf|l|cq||lb|*bWhat should you open this hand?^^2c|ht|f|at|^j@2
+Open 2C.|
+PG| ***** 88 ***** |
+
+
+AT| 3 losers (in the minors),|HC|D42C8|
+pg| ***** 89 ***** |
+
+
+LC|D42C8|AT| and 4 Quick Tricks.|HC|SAKHAK|
+pg| ***** 90 ***** |
+
+
+LC|SAKHAK|NT||
+%%%%%%%%%%Example  IV
+bt||HT|b|CS|6|AT|^-
+{    Bergen 2C Opener    }
+^-|HT|D|AT|^-Example IV 
+^-|
+HT|F|cs|1|at|^b{|ih|pSA HAQ643 DK763 CAKJ|at|}|hf|l|cq||lb|*bWhat should you open this hand?^^1H|ht|f|at|^j@2
+Open 1H.|
+PG| ***** 92 ***** |
+
+
+AT| The @SA is a downgrade, and your two longest suits are not very strong. I'd guess 5+ losers, and wouldn't open 2C despite the 5|HC|SAHAQDKCAK|AT| Quick Tricks.|
+pg| ***** 93 ***** |
+
+
+LC|SAHAQDKCAK|NT||
+%%%%%%%%%%Example  V
+bt||HT|b|CS|6|AT|^-
+{    Bergen 2C Opener    }
+^-|HT|D|AT|^-Example V 
+^-|
+HT|F|cs|1|at|^b{|ih|pSAKT54 HAK5 DAKT3 C8|at|}|hf|l|cq||lb|*bWhat should you bid with this hand?^^2C|ht|f|va|5|at|^j@2Open 2C.|
+PG| ***** 95 ***** |
+
+
+AT| No downgrades in this hand. Any hand with 6 Quick Tricks|HC|SAKHAKDAK|AT| is too strong to open 1H or 1S.|
+PG| ***** 96 ***** |
+
+
+AT| ^*BMM: ^*NThe hand and the comment is a direct quote but before the final printing I had a question about the number of losers in the hand. It could be as low as 5 or as high as six if you strictly follow Bergen's instructions. So I sent him an email asking him whether I was missing something. The response was his usual short and to the point. Click the forward arrow to read the answer.|LC|SAKHAKDAK|
+pg| ***** 97 ***** |
+
+
+ht|l|at|^B@2
+"None"
+
+We will agree to disagree.
+I am not the least concerned about losing 5 or 6 tricks.
+
+Regards,
+Marty Bergen|
+PG| ***** 98 ***** |
+
+
+HT|v|AT|^B@2^*BMM: ^*NThat response was enough for the Movie Maker to carry on. Aside from chapter 4 of Slam Bidding Made Easier (2008) by Marty Bergen there are many other great sources to review the 2C opening. A nice blog by Tommy Solberg, BBO nickname "tommylee" at |CP|1|AT|^*Htinyurl.com/adooa4u^*N|CP||AT| is worth reviewing. Mr. Solberg starts with the next two hands questioning opening them 2C. Let us go through both and you decide. |
+PG| ***** 99 ***** |
+
+
+NT|| 
+%%%%%%%%%%%%%Example  VI
+bt||HT|b|CS|6|AT|^-
+{    Bergen 2C Opener    }
+^-|HT|D|AT|^-Example VI 
+^-|
+HT|F|cs|1|at|^b{|ih|pSKQ432HQDAQ32CAKT|at|}|hf|l|cq||lb|*yWould you open this hand 2C?^^N|ht|f|at|^j@2
+"Marty is not going to open 2 clubs. It meets the 4 quick trick requirement but also has too many losing tricks."|
+pg| ***** 101 ***** |
+
+
+AT|
+
+^*BMM: ^*N7 losers-2.5 spades, 1 heart, 1 club, 2.5 diamonds.|
+PG| ***** 102 ***** |
+
+
+NT||
+
+%%%%%%%%%%%%%Example  VII
+bt||HT|b|CS|6|AT|^-
+{    Bergen 2C Opener    }
+^-|HT|D|AT|^-Example VII 
+^-|
+HT|F|cs|1|at|^b{|ih|pSAQ876HAKT2DAQJC2|at|}|hf|l|cq||lb|*yWould you open this hand 2C?^^N|ht|f|at|^j@2
+"Marty is not going to open either Hand 1 or 2 with 2 clubs. They both meet the 4 quick trick requirement but also have too many losing tricks."|
+PG| ***** 104 ***** |
+
+
+AT|
+
+^*BMM: ^*N6.5 losers-2.5 spades, 2 hearts, 1 club, 1 diamond.|
+PG| ***** 105 ***** |
+
+
+HT|m|AT|^b@2"What is the downside of the '2 club overuse syndrome?' In three words, 'loss of communication.' You are starting the auction on the 2 level and by the time you get through with responses and rebids, it is no trick at all to be on the 3 level and not know much more than you did when you first sorted the cards. If your hand is one that deserves to play in game no matter what partner has, then opening 2 clubs is an effective way to tell him that. You don't need a lot of bidding room. If your hand is not that strong, then give yourself the optimum opportunity to gain helpful information from partner by a one level opening.|
+PG| ***** 106 ***** |
+
+
+AT|
+
+"What? Worried about getting passed out? Trust me, in this day and age good partners are looking for reasons to bid, not reasons to pass. Even if partner does not have a minimum bid, the chances are very good that the opponents will either overcall or balance. This sucker is not going to die, and on the rare occasion when it does, you are probably in the right spot.|
+PG| ***** 107 ***** |
+
+
+AT|
+
+"So what do we have? Marty Bergen who said 'Bridge is a Bidder's Game' rejects the current fad to reduce standards for forcing 2 club opening bids and goes traditional on us. When you have one of the World's most aggressive bidders saying '|CP|8|AT|Pull in your horns|CP||AT|', maybe it is time to listen. So consider making 4+4 your partnership standard."|
+PG| ***** 108 ***** |
+
+
+ht|y|AT|
+
+^B@2^*BMM: ^*NNext there are a few quizzes on Quick Tricks.|
+PG| ***** 109 ***** |
+
+
+NT||
+%%%%%
+qx||cs|1|cp|1|fp|3|AT|
+^-Quick Tricks Quizzes
+^-|CS||CP||FP||AT|
+
+Next are several examples. For each hand count the quick tricks based on the guideline given. Please click the appropriate box in the chat section or just click the "Tell Me" box for the correct answer.|
+PG| ***** 110 ***** |
+
+
+NT||
+
+%%%%%%%%%%%%%%%%%%%% Boards 
+qx|o1|st||md|3SH34KAD3TKAC249JK,S3TJQKAH289D79JCQ,S4H67QD2468QC36TA,|rh||ah|Board 1|SK|S|
+lb|*mHow many Quick Tricks in this hand?^1~2~3~4.5^4|AT|^B@2
+The correct answer is 4.5 QT|HC|hakckjdak|AT|.|
+PG| ***** 112 ***** |
+
+
+NT||LC|hakckjdak|
+qx|o2|st||md|3SH34KAD3TKAC249JK,S3TJQKAH289D79JCQ,S4H67QD2468QC36TA,|rh||ah|Board 2|SK|W|
+lb|*mHow many Quick Tricks in this hand?^1~2~3~4^2|AT|^B@2
+The correct answer is 2 QT.|HC|sak|AT||
+PG| ***** 114 ***** |
+
+
+NT||LC|sak| 
+
+qx|o3|st||md|3SH34KAD3TKAC249JK,S3TJQKAH289D79JCQ,S4H67QD2468QC36TA,|rh||ah|Board 3|SK|n|lb|*mHow many Quick Tricks in this hand?^1~2~3~4^1|AT|^B@2
+The correct answer is 1 QT.|HC|ca|AT||
+PG| ***** 116 ***** |
+
+
+nt||LC|ca|
+
+qx|o4|st||md|3SH34KAD3TKAC249JK,S3TJQKAH289D79JCQ,S4H67QD2468QC36TA,|rh||ah|Board 4|SK|e|lb|*mHow many Quick Tricks in this hand?^1~0~3~4^2|AT|^B@2
+The correct answer is Zero QT.|hc||
+PG| ***** 118 ***** |
+
+
+nt||lc||
+
+qx|o5|st||md|4S3H247KADTJC579TQ,S57JKH58D38AC468K,S28H369JQD2567C2J,|rh||ah|Board 5|sk|s|lb|*mHow many Quick Tricks in this hand?^1~2~3~4^2|AT|^B@2
+The correct answer is 2 QT.|hc|hak|
+PG| ***** 120 ***** |
+
+
+nt||lc|hak|
+
+qx|o6|st||md|4S3H247KADTJC579TQ,S57JKH58D38AC468K,S28H369JQD2567C2J,|rh||ah|Board 6|sk|w|lb|*mHow many Quick Tricks in this hand?^1~2~3~4^2|AT|^B@2
+The correct answer is 2 QT.|hc|dacksk|
+PG| ***** 122 ***** |
+
+
+nt||lc|dacksk|
+
+qx|o7|st||md|4S3H247KADTJC579TQ,S57JKH58D38AC468K,S28H369JQD2567C2J,|rh||ah|Board 7|sk|n|lb|*mHow many Quick Tricks in this hand?^0~2~3~4^1|AT|^B@2
+The correct answer is Zero QT.|hc||
+PG| ***** 124 ***** |
+
+
+nt||lc||
+
+qx|o8|st||md|4S3H247KADTJC579TQ,S57JKH58D38AC468K,S28H369JQD2567C2J,|rh||ah|Board 8|sk|e|lb|*mHow many Quick Tricks in this hand?^1~2.5~3.5~4^3|AT|^B@2
+The correct answer is 3.5 QT.|hc|saqcadkq|
+PG| ***** 126 ***** |
+
+
+nt||lc|saqcadkq|
+
+qx|o9|st||md|1S23457HAD58QC89TJ,SJKH2349KD79KC237,S69TAH6JD34JAC5QA,|rh||ah|Board 9|SK|s|lb|*mHow many Quick Tricks in this hand?^1~2~3~4^1|AT|^B@2
+The correct answer is 1 QT.|hc|ha|
+PG| ***** 128 ***** |
+
+
+nt||lc|ha|
+
+qx|o10|st||md|1S23457HAD58QC89TJ,SJKH2349KD79KC237,S69TAH6JD34JAC5QA,|rh||ah|Board 10|SK|w|lb|*mHow many Quick Tricks in this hand?^1~1.5~2~3~^2|AT|^B@2
+The correct answer is 1.5 QT.|hc|skhkdk|
+PG| ***** 130 ***** |
+
+
+nt||lc|skhkdk|
+
+qx|o11|st||md|1S23457HAD58QC89TJ,SJKH2349KD79KC237,S69TAH6JD34JAC5QA,|rh||ah|Board 11|SK|n|lb|*mHow many Quick Tricks in this hand?^2~3~3.5~4^3|AT|^B@2
+The correct answer is 3.5 QT.|hc|sacaqda|
+PG| ***** 132 ***** |
+
+
+nt||lc|sacaqda|
+
+qx|o12|st||md|1S23457HAD58QC89TJ,SJKH2349KD79KC237,S69TAH6JD34JAC5QA,|rh||ah|Board 12|SK|e|lb|*mHow many Quick Tricks in this hand?^1~.5~2~3^2|AT|^B@2
+The correct answer is 0.5 QT.|hc|ck|
+PG| ***** 134 ***** |
+
+
+nt||lc|ck|
+
+qx|o13|st||md|2S67QH389TD9JAC69K,S4TH6KD38TQC578JA,S3589JAH245JD24KC,|rh||ah|Board 13|SK|s|lb|*mHow many Quick Tricks in this hand?^1~1.5~3~2^2|AT|^B@2
+The correct answer is 1.5 QT.|hc|ckda|
+PG| ***** 136 ***** |
+
+
+nt||lc|ckda|
+
+qx|o14|st||md|2S67QH389TD9JAC69K,S4TH6KD38TQC578JA,S3589JAH245JD24KC,|rh||ah|Board 14|SK|w|lb|*mHow many Quick Tricks in this hand?^1~1.5~2~4^2|AT|^B@2
+The correct answer is 1.5 QT.|hc|hkca|
+PG| ***** 138 ***** |
+
+
+nt||lc|hkca|
+
+qx|o15|st||md|2S67QH389TD9JAC69K,S4TH6KD38TQC578JA,S3589JAH245JD24KC,|rh||ah|Board 15|SK|n|lb|*mHow many Quick Tricks in this hand?^1~2~1.5~4^3|AT|^B@2
+The correct answer is 1.5 QT.|hc|sadk|
+PG| ***** 140 ***** |
+
+
+nt||lc|sadk|
+
+qx|o16|st||md|2S67QH389TD9JAC69K,S4TH6KD38TQC578JA,S3589JAH245JD24KC,|rh||ah|Board 16|SK|e|lb|*mHow many Quick Tricks in this hand?^1~2~3~4^2|AT|^B@2
+The correct answer is 2 QT.|hc|skhaq|
+PG| ***** 142 ***** |
+
+
+nt||lc|skhaq|
+
+
+qx|o17|st||md|3S247H2569D35TQC59,S689KAHTD26789CQA,SH4JQKAD4JKAC234J,|rh||ah|Board 17|SK|s|lb|*mHow many Quick Tricks in this hand?^1~0~2~3^2|AT|^B@2
+The correct answer is Zero QT.|hc||
+PG| ***** 144 ***** |
+
+
+nt||lc||
+
+qx|o18|st||md|3S247H2569D35TQC59,S689KAHTD26789CQA,SH4JQKAD4JKAC234J,|rh||ah|Board 18|SK|w|lb|*mHow many Quick Tricks in this hand?^1.5~2~3.5~4^3|AT|^B@2
+The correct answer is 3.5 QT.|hc|sakcaq|
+PG| ***** 146 ***** |
+
+
+nt||lc|sakcaq|
+
+qx|o19|st||md|3S247H2569D35TQC59,S689KAHTD26789CQA,SqH4JKAD4JKAC234J,|rh||ah|Board 19|SK|n|lb|*mHow many Quick Tricks in this hand?^4~2~5~6^1|AT|^B@2
+The correct answer is 4 QT.|hc|hakdak|
+PG| ***** 148 ***** |
+
+
+nt||lc|hakdak|
+
+qx|o20|st||md|3S247H2569D35TQC59,S689KAHTD26789CQA,SH4JQKAD4JKAC234J,|rh||ah|Board 20|SK|e|lb|*mHow many Quick Tricks in this hand?^1~2~.5~4^3|AT|^B@2
+The correct answer is 0.5 QT.|hc|ck|
+PG| ***** 150 ***** |
+
+
+nt||lc|ck|
+
+qx|o21|st||md|4S38QAH489KD27JCQA,S279TJHAD48TC2347,S4KH2JD3569QKAC58,|rh||ah|Board 21|SK|s|lb|*mHow many Quick Tricks in this hand?^3~3.5~5~4^2|AT|^B@2
+The correct answer is 3.5 QT.|hc|saqhkcaq|
+PG| ***** 152 ***** |
+
+
+nt||lc|saqhkcaq|
+
+qx|o22|st||md|4S38QAH489KD27JCQA,S279TJHAD48TC2347,S4KH2JD3569QKAC58,|rh||ah|Board 22|SK|w|lb|*mHow many Quick Tricks in this hand?^1~2~3~4^1|AT|^B@2
+The correct answer is 1 QT.|hc|ha|
+PG| ***** 154 ***** |
+
+
+nt||lc|ha|
+
+qx|o23|st||md|4S38QAH489KD27JCQA,S279TJHAD48TC2347,S4KH2JD3569KAC589,|rh||ah|Board 23|SK|n|lb|*mHow many Quick Tricks in this hand?^3.5~2~2.5~4^3|AT|^B@2
+The correct answer is 2.5 QT.|hc|skdak|
+PG| ***** 156 ***** |
+
+
+nt||lc|skdak|
+
+qx|o24|st||md|4S38QAH489KD27JCQA,S279TJHAD48TC2347,S4KH2JD3569QKAC58,|rh||ah|Board 24|SK|e|lb|*mHow many Quick Tricks in this hand?^1~2~.5~4^3|AT|^B@2
+The correct answer is 0.5 QT.|hc|ck|
+PG| ***** 158 ***** |
+
+
+nt||lc|ck|
+
+qx|o25|st||md|1S789JKH46TD89KC2J,S4H279D23456TJC46,S23QAH35AD7AC79TA,|rh||ah|Board 25|SK|s|lb|*mHow many Quick Tricks in this hand?^1~2~3~4^1|AT|^B@2
+The correct answer is 1 QT.|hc|skdk|
+PG| ***** 160 ***** |
+
+
+nt||lc|skdk|
+
+qx|o26|st||md|1S789JKH46TD89KC2J,S4H279D23456TJC46,S23QAH35AD7AC79TA,|rh||ah|Board 26|SK|n|lb|*mHow many Quick Tricks in this hand?^6~4.5~3~4^2|AT|^B@2
+The correct answer is 4.5 QT.|hc|saqhacada|
+PG| ***** 162 ***** |
+
+
+nt||lc|saqhacada|
+
+qx|o27|st||md|1S789JKH46TD89KC2J,S4H279D23456TJC46,S23QAH35AD7AC79TA,|rh||ah|Board 27|SK|e|lb|*mHow many Quick Tricks in this hand?^1~2~3~4^2|AT|^B@2
+The correct answer is 2 QT.|hc|hkqckq|
+PG| ***** 164 ***** |
+
+
+nt||lc|hkqckq|
+
+qx|o28|st||md|2S78TJKAH79QKD5QC4,S36H2JAD289TAC25Q,S4QH3568D347C36TA,|rh||ah|Board 28|SK|s|lb|*mHow many Quick Tricks in this hand?^1~2~3~4^3|AT|^B@2
+The correct answer is 3 QT.|hc|sakhkq|
+PG| ***** 166 ***** |
+
+
+nt||lc|sakhkq|
+
+qx|o29|st||md|,S875HKQ3DAT7CQT62,,|rh||ah|Board 29|SK|W|lb|*mHow many Quick Tricks in this hand?^1~2~1.5~4^2|AT|^B@2
+The correct answer is 2 QT.|hc|hkqda|
+pg| ***** 168 ***** |
+
+
+lc|hkqda|ht|v|AT|^*GB, Click |CP|1|AT|here|CP||AT| to return to the first page.^*N|
+PG| ***** 169 ***** |
+
+
+AT| THE END|
+pg| ***** 170 ***** |
+
+
+ 

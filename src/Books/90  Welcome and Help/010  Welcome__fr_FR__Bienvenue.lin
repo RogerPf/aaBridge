@@ -1,0 +1,86 @@
+%%
+%% Help - Welcome - FRENCH
+%% Last edited  2017 May 11
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+fh|150|fb|15|                1  large
+fh|240|fb|25|                2
+fh|342|fb|35|                3  med+
+fh|460|fb|75|                4     
+fh|536|fb|38|                5     greater than 4 as it is in the 30 - 39 zone
+fh|635|fb|65|                6     
+fh|740|fb|75|                7     
+fh|836|fb|85|                8     
+fh|932|fb|95|                8     
+fh|s24|                      s  the word updated
+fh|v|                        v  the little video button
+
+cr|2200|cg|2060|cb|2255|     2  purple
+cr|f200|cg|f255|cb|f255|     f  fake-button
+cr|4170|cg|4190|cb|4255|     4  medium blue
+cr|5016|cg|5128|cb|5016|     5  green 
+cr|p255|cg|p180|cb|p180|     p  pink
+cr|y255|cg|y255|cb|y000|     y  Yellow
+
+bt||
+
+qx|Bienv|
+mn|    Bienvenue à    -    aaBridge  5.1  |
+
+fp|1|at|^^^^^a   @s @h @d @c  ^v     @c @d @h @s|  %% suit symbols around the  MN  header         
+
+ht|f|n#|0|fp|5|at|^d  Click one of the buttons|
+
+ht|f|n^|2|cs|red|fp|8|cp|red|at|^p|n<|2|at|{  |n^|9|at|^^ ^p  ^*b ^p aaBridge on YouTube ^*n|n>|6|cp||at| } |
+     
+ht|f|n^|0|cs|red|fp|1|cp|red|at|^p|n<|4|at|{  |n^|c|at|^^ ^p  ^*b ^p |fp||at|aaBridge  on  |fp|1|at|YouTube ^*n|n>|a|cp||fp||at| } | 
+ht|f|n#|3|cs|wh|fp|1|at|^p{ ^*h https://www.youtube.com/channel/UCjqx0Cofc7-TT-N0tfYR8rg, |fp||at|aaBridge  on  |fp|1|at|YouTube ^*n }|
+
+ht|g|n#|0|at|^k  @-  |fp|1|at|^*bOR^*n|fp||at|  @-|
+
+at|^c    @2| %% sets the left edge of the LEFT hand column
+
+ht|k|n^|6|fp| |cs|f|at|{ |n#|2|at|   ^*g :Interesting,inc  'Interesting'  Deals  ^j|n<|b|n#|2|fp||at|^^}|
+ht|j|n^|6|fp|4|cs|f|at|{ |n#|2|at|^*f playBridge_and_dealChoice, Play Bridge ^*n ^j|n<|b|n#|1|fp||at|^^}|
+
+ht|L|n#|h|fp|1|cs|f|at|{ |n#|1|at|^*f open_random_lin_file,   Random Lin^*n|
+fp||at|^^^*f open_random_lin_file,   |n#|2|at| open that Bridge Movie   ^*n^^}|
+
+ht|r|n^|j|fp|3|cs|f|at|{ |n#|3|at|^*f openPage_ListOfInterestingLins, List of Interesting Lins ^*n|n#|2|at|^^}|
+
+
+ht|u|n^|i|fp|7|cs|f|at|{ |n#|2|at|^*f openPage_distrFlashCards,Learn the Suit Distributions^*n|n#|g|at|^^}|
+ht|v|n^|h|fp|6|cs|f|at|{ |n#|2|at|^*f openPage_distrFlashCards,        ( using 'Flash Cards' )^*n|n#|0|at|^^}|
+
+ht|x|n^|3|fp|2|cs|f|at|{ |n#|3|at|^*f openPage_DefendExpert,How to - Defend like an Expert ^*n|n#|2|at|^^}|fp||
+
+
+
+
+
+at|^n    @2|  %% sets the left edge of the  RIGHT  hand column
+
+
+ht|i|n#|4|fp|8|at|^*bClick^*n |fp||at|on any |fp|3|at| ^*b^*uB^*n^*books^*n |fp||cp||at| menu on the Menubar.|
+
+
+ht|m|n^|3|fp|8|at|^*bClick^*n |fp||at|on any of the  |fp|8|at|^*bHelp^*n|fp||at|  or  |fp|8|at|^*bExample^*n|fp||at|  files you
+^o|n#|2|at|can see listed in the tall gray column on your left.|
+		  
+
+lg|f|ht|q|n^|0|fp|2|at|^*bDrag n Drop^*n|fp||at|  a  ^*n.lin^*n file,   
+^p@2any group of  ^*n.lin^*n  files,  
+any folder with  ^*n.lin^*n  files in it,
+any zipfile with  ^*n.lin^*n  files in it
+^o and they will Open and show in the left hand column. 
+^p|n#|3|fp|w|at|(Windows users can ^*b dbl-click ^*n on any .lin file)|fp||
+
+
+
+lg||ht|z|at|@0@1|n#|b|cp|red|cs||fp|2|at|^f    New user ? |fp|8|n#|2|at|^j    click |fp|2|cp||cs|wh|n#|2|at|^l   ^*b{ Flow  > }^*n@2|fp|s|cp|red|n#|4|at|    ^*bbelow^*n|cp||
+
+
+ht|y|n#|0|fp|5|at|@0
+^q  Roger Pfister    |fp|s|at|updated|fp||at|   May  2017
+|
