@@ -20,12 +20,11 @@ import com.rogerpf.aabridge.controller.Aaa;
 public class VersionAndBuilt {
 	static int prob_fmt_req_numb = /* best to leave this alone ... best to leave THIS setting alone unless */5220;// compatibility needed
 	
-	static String ver = "5.2.0.";  public static String devExtra = "_a";    // extra is dev only, normally null
+	static String ver = "5.2.0.";  public static String devExtra = "";    // extra is dev only, normally null
 
-	public static int buildNo = 5223;    static String y = "2020", m = "Jan", d = "02";
+	public static int buildNo = 5222;    static String y = "2020", m = "Jan", d = "01";
 
 
-	// 2020-01-01  5223  _a   
 	// 2020-01-01  5222  Release Candidate
 	// 2020-01-01  5221  _k   pre release build
 	// 2019-12-25  5221  _j   New 100 plus and 150 + slams
