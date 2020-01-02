@@ -1,0 +1,612 @@
+%% Ronalds Original
+%% Last edited  2013 Dec 04
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+bt||
+mn|Ronald's Original|
+ht|e|
+at|
+^b@2^*bRonald's Original^*n
+
+
+On all the following pages is the original version of a lin file I got from the web. 
+
+Written by a Dutch fellow called Ronald, it was the core without which I would never have started to write this the 'tutorial lin' version  of  ^*baaBridge^*n.
+
+It not perfect and is of course, because of its age, aimed at the windows based lin file player that was developed by in the late 1990s into the early 2000s that is out on the web at time of writing.
+
+
+^fa big |cp|5|at|^*b thank you to Ronald^*n|cp||at|, where ever and who ever you are.
+
+
+
+^pRoger Pfister           December 2013
+
+
+P.S.   Ronald's  original  .doc  is included in the  ^*g:Collection::Help, aaBridge - Document Collection ^*n
+
+
+
+
+Please click   ^*bFlow > ^*n
+|
+pg| ***** 0 ***** |
+
+
+nt||
+
+
+qx|oooo|
+
+   qx[tekst] is used to divide your text in chapters. if you use it, then the book 
+   with open leaves will be visible and will work.
+bt||
+
+    bt[] is the start of Bare Text. The table vieuw will almost all
+    times with st[], Standard Text i have called that.
+
+tu|1|
+
+    tu[] will keep the mn[] header on the page after pg[] with tu[1], 
+    tu[] will lose the header after pg[] default seems to be tu[]     
+    tu[Y] and tu[1] have the same effect.
+    
+mn|^0examples of lin tags..every tag commented inside|
+
+    mn[some text] puts a coloured header on top of page
+
+nt||
+    nt[with or without text] clears the text you entered with at[] or nt[]. 
+    Only the mn[] part will survive. I think nt[] followed by at[] is easier. 
+    Personal preference i think
+
+ht|g|
+
+    ht[g] will start the next text just below the header you create with mn[]
+    remember to refresh you row-position after every nt[]
+
+at|If you have saved hands from bbo vugraph or from lessons, teaching sessions or by yourself played hands then you will see that each new hand starts with qx[01], qx[02] and so on. You can give the user of your lin-file the opportunity to jump to the beginning of a particular chapter. Soner or later if qx[] is used you will see ^$41and or ^$7 at the bottom so you can go forward or backward one chapter.
+
+I will show and document it later on. First the more basic single chaptered lin file.
+
+To see how this lin tags work it is easiest to open the lin-file in notepad or any other editor to your liking. 
+Then open the file in your bbo viewer and you can arrange both windows in such a way that you can read the annotation in text while you see the effect in the bbo viewer
+Thats the way i learned some things, maybe you find a different way. Easier for you.
+happy editing
+
+ronald|
+pg| ***** 1 ***** |
+
+
+qx|hfdst1|
+nt||ht|g|    
+at|So this text appears height/row g just below the header made with mn[].Simple as that.
+all tags are documented inside. You will recognize them easy because they do not start at the beginning of the line.
+Besides that i have divided them by an empty line from the next tag.
+^fStarting text at column f
+^ehere at column e
+^dor here at d
+^cor wherever you like, even at c
+is done with the accent circonflex in the text
+I call this inline text formatters/positioners
+|
+
+     There are special characters used WITHIN at[] and nt[]
+     ^ followed by a letter will start the next text in the column you
+     indicate by the letter. If you use 
+     ^- the following text will be centered on the page. You have tot undo
+     that effect with a next ^-
+     
+     then there is the {} pair. Text within this pair will be shown in a box.
+     You avoid many problems if you start a new line after using ^-, 
+     specially if you want to center boxes. If the following text is
+     starting to low you can correct it with ht[]. just experiment 
+     and you will find your style.
+
+at|^-
+Nice idea to
+see
+all things
+centered
+in
+this
+fragmented text
+^-
+|
+at|use ^$40 to go to the next page|
+
+   ^$ followed by a number indicate various icons you can put between at[]
+pg| ***** 2 ***** |
+
+
+   pg[] waits for you to hit the next PaGe button or the cursor keys.
+mn|positioning text|nt||ht|f|
+
+   you see above you can chain the various commands on a line. spaces,
+   linefeeds, tabs, for LIN all is equal. Lin parses the text in this file until
+   it meets two letters followed by [. If the code before [ is known something 
+   will be shown on your screen.
+   If unknown?.. End of game. Rest of your file will not been
+   shown. Worst case i had was complete crash of my computer.    
+
+3d|4|
+
+   3d[4] will render all your boxes on the page with a simple 3d effect.
+   in this case 4 pixels wide. This setting will survive nt[] and pg[].
+
+at|^-
+{3d[4] made this box with 4 pixels 3d effect}
+^-|
+   use of ^- was already explained.
+pg| ***** 3 ***** |
+
+
+    besides waiting for next page pg[] greys out text inserted before
+    nice attention focussing feature. nb. text in boxes is NOT greyed out.
+
+at|
+^u{this text will start at column u and boxed. You see the problems. The text starts at column u, but the new line just starts at the beginning. Not in column u}|
+
+  ^u is not remembered as position to start after a line-feed. If you want to start
+  the new line at say column e, you have to use @2 to tell that. ^u@2 will do
+  that. 
+
+  Curious is that @2 will work on its own. It will then keep the column where you are
+  at the moment you type it.
+
+  @3 is used to mark the END of the text. @2 and @3 are reset by the use @0@1
+  (see below..) The @0@1 has to be followed by a new line, either in the
+  current at[] or in the new at[]. Do not do that and you wind up with some
+  very narrow columns at unwanted places. But experiment with it. A new indent within
+  already indented text is quite possible. 
+pg| ***** 4 ***** |
+
+
+  
+at|
+
+^u@2{this text will start at column u and boxed. You see no problems now.just starting new line at column u}
+@0@1|
+pg| ***** 5 ***** |
+
+
+at|
+This text will @2indent. if i hit the <enter> key
+you will see that
+it
+starts at the new position.
+@0@1|
+pg| ***** 6 ***** |
+
+
+ht|l|
+at|^t@3Now i used an end tab ^*band^*n row positioning to put this text on a before not used part of the page. You can do that always and evrywhere.
+^f@2And now i set the starttext tab at column f and see the curious effects that you can get with this simple inline text formatting characters.
+@0@1|
+
+   with ^t@3 the end-text-tab @3 is set at column t. the begin-text-tab @2
+   was not set, so the current setting will be used. 
+   You see then with ^f@2 the setting of begin-text-tab to colummn f. Here it
+   works but most of the time it is easier to reset first with @0@1 and then
+   define both tabs together. And always at the end of the text reset. Forget it
+   and later you will have a hell of a job to sort out the unexpected layout 
+   problems on your page
+pg| ***** 7 ***** |
+
+
+ht|o|
+at|
+
+
+^m@2^y@3Now end-text-tab and start-text-tab are set at the same time. so all text is rendered between these tabs. @0@1
+|
+ht|x|
+at|this ends the part about positioning text. (hmm  well the boxes were there because they give sometimes ugly positioning problems.
+On the next page more about formatting text. use ^$40 for next page.|
+pg| ***** 8 ***** |
+
+
+nt||ht|f|
+at|Just a moment. You can use all what is said on previous pages in pages where you have only the "chat-space" below the cards-table. You will see it in a hand i have inserted behind the qx[examplehand]
+the ht[a-z] do work now but now seem to be divide over the much smaller available space.
+In the full page as this one the a,b,c,d etc. put you lower on the page with about one text line. In the smaller chat-space that is ^*inot the case^*n|
+pg| ***** 9 ***** |
+
+
+at|
+Well now more about formatting text. Colors, bold, italic, fonts used, width and height of fonts, as far as i could find it| 
+pg| ***** 10 ***** |
+
+
+qx|hfdst2|
+nt||ht|f|mn|formatting text|
+at|You can make your text ^*bbold^*n
+or you can make your text ^*iitalic^*n
+
+{ the combination of both i have not found }
+|
+
+    In-line formatting of text starts again with ^ . 
+    followed by *b the following text will be bold
+    followed by *i the following text will be italic
+    nb. no space needed her. see above for actual use.
+pg| ***** 11 ***** |
+
+
+cr|1255|cb|255|cg|1148|    you could write down here a colournames to remember.
+cr|264|cb|2255|cg|2049|    i would not know how these colours look 
+cr|364|cb|3155|cg|344|     but i use them colours very seldom anyway. 
+cr|40|cb|40|cg|4255|
+cr|50|cb|50|cg|5206|       Make a palet of colors from one "family"  
+cr|60|cg|60|cb|6148|       like you do in designing a web site..
+cr|70|cb|70|cg|799|        could be an advice. 
+cr|8255|cg|8255|cb|8214|
+cr|9239|cb|9235|cg|9222|
+
+  colour management is done by using a palet of 9 colours
+  each color can be defined by giving its rgb values. A colour picker
+  you can find on many places on the net and will make your color-live much easier
+
+  so evry c?[] starts with the paletnumber, followed BY the rgb value cr gives
+  the amount of red, cb the amount of blue, cg the amount of green in the 
+  chosen palet color.
+
+at|You can use colors, for letters, for the background of letters, for the background of boxes. These colours you have to define beforehand if you want some unity and beauty in the used colors.
+
+You can not define the used colors inline; so you have to close at..], do a cp[7] for color 7, reopen at[ ,|cp|7|at| type your coloured text , close at..] again, go back to default color with cp[]|cp||at| and see your default colors back. If your text-colour is the same as the background color you can not read anything. 
+|
+at|Now the background color of the letter will change, achieved in the same way, now with cs[5]|cs|5|at|
+{and hopefully you will see the effect}
+|cs||at|{undone now.} 
+boxes around here because this only works in text typed in boxes.|
+   cs[number] chooses the background on which you type but only witin boxes.
+   cs[] returns to default colors
+pg| ***** 12 ***** |
+
+
+3d||
+at|
+and finally i remove the 3d effect by inserting 3d[]. And change the background-color of this page with bg[2]|
+bg|2|
+      bg[number] works for the background of the current page. 
+      bg[] resets to default colors.
+      3d[] resets the bordereffect of boxes includet mn[] to none.
+pg| ***** 13 ***** |
+
+
+ 
+bg||
+qx|hfdst3|
+bt||nt||mn|built in display options|ht|f|
+at|From the chat-space in BBO you know the use of @h to get @h on your screen.As you see this now possible too. You use @ followed by s,h,d,c to display @s,@h,@d and @c.So in its simplest form you can write something like: Suppose you have in your hand
+@sAKJT75 ^dand in dummy appears
+@s932 ^dwould you finesse or cash @sAK
+So far so good.
+| 
+     @ has here a new use. Followed dirctly by s,h,d,c for spades,heart,
+     diamonds or clubs it will show the selected image.
+     If you would have written @sAKJT7f^d in stead of @sAKJT7f ^d the effect 
+     would indent starting with @sAKJT7  strange but true. 
+pg| ***** 14 ***** |
+
+
+at|The same is now done a little more posh with ih[]. Now no inline typing, close the at..]type ih[psAk etc. and you wil see the effect below.
+|
+pg| ***** 15 ***** |
+
+
+ih|sakjt75|at|
+|ih|ps932|
+ht|p|
+at|^f@2 nice? yes but see next page for another use of ih[pxxxx,xx,xxx,xxxx]. This will show you how the suit was distributed over hands, you can type all suits in a hand. Find out yourself. Piece of cake if you followed till here.
+
+The p in ih[p...] shows the pictures of the cards. Leave the p out and you will see a somewhat simpler kind of display. If you want to highlight cards, please choose with p. Otherwise som unpredictable effects!|
+pg| ***** 16 ***** |
+
+
+hc|sak|at|
+There are 4 cards out. You have 2 x 2 tricks from top = 4. ergo: cash @sAK and hope @sQ drops.|
+       hc[sahatc5] stand for Highlight Card(s) and will higlight spade ace,
+       heart ace an club 5. You must undo this with lc[] and 
+       name the same cards. hc[] want do this for you.
+pg| ***** 17 ***** |
+
+
+nt||
+ht|f|
+     once you get the rythm of this works getting easy even....
+
+at|Below comes now a more full form of ih[]
+|
+ih|psAKJd7,,s9da34,dt|
+at| ^*bwere the side suits in a 7@h contract.^*n lead @d10.|
+ht|i|
+at|^h@2How would you play? As you see i forgot to put the higlights out, so there they are here again.|
+pg| ***** 18 ***** |
+
+
+lc|sak|at| And now the higlights are of and you can think freely about this without being distracted by yellow cards. 
+How the bidding went?
+You could write something like 2@c-2@d-2@h-3@h-4NT-5@h-6@h
+but see below ^tor below here.
+|
+pg| ***** 19 ***** |
+
+
+cs|3|
+at|{|ia| 2cp2dp2hp3hp4np5hp6hppp|at|}|ia|O2c2d2h3h4n5h6h|
+
+     ia[] stands for Insert Auction
+    i put ia[] in a box..first at[{] for opening the box
+    then ia[] followed by at[}] for closing the box
+    within the box cs[3] does its colouring work. 
+
+cs||
+    
+    and away with that colour
+
+at|@0@1
+
+First is made with ia[bids], second with ia[^*bo^*nbids]: o of opener?|
+qx|hfdst4|
+pg| ***** 20 ***** |
+
+
+nt||ht|f|mn|specials|
+at|You have the possibility to let your user answer questions.
+The questions are introduced by lb[]. I have found 5 flavors.
+1. ^clb[*P....] asking how many points are in a suit.
+2. ^clb[*T....] about how many total points  are in a suit
+3. ^clb[*H....] comparing two handsthere
+4. ^clb[*C....] choose a card that you would play
+5. ^clb[*M....] multiple choice question.
+6. ^clb[*b....] asks for your next bid.
+|
+lb|*PHow many high card points?^^^sj9864hakqtcAk4d6|
+    
+   the three ^^^^ are necessary.. have not tried what happens if put
+   something between them.
+
+at|should show itself.|
+at|This one did evrything automatic, as will do the next..
+|
+lb|*THow many total points?^^^sj9864hakqtck54d6|
+
+  as with this one.. same 3 ^^^
+
+at|comparing hands you have to indicate the right alternative.
+|
+lb|*HWhich hand is the right for an 1NT opening^^2^s4dkq7ckq6hak9732^saq5hkqt7cqj8dqj53|
+
+  here the alternative is 1 or 2, inserted after the second ^.
+  
+at|As you have to do in the cards question..
+|
+lb|*cWhich card would you choose to lead against an 1 NT contract?^^ca^Cakq8H843S9876D52|
+
+   after the second ^ you now insert first the suit, s/h/d/c then which one.
+   i inserted CAPITALS for ease of reading. but all small works the same.
+at|and then we have the multiple choice question
+|
+lb|*mAfter a 1NT opening double means^6 suiter~penalty~takeout~depends on &partnership^4|
+
+    really different format. right alternative at the back!! now indicating 
+    first, second, third etc. alternative. See the & before th p, makes the p a hotkey
+    you can press
+
+at|in which you indicate too yourself the right alternative
+With 4@s's,4@h's,2@d's, 3@c's and 13HCP, what would be your openingsbid?|
+lb|*bWhat bid would you open?^^1c|at|
+1@c must be right i thought.
+
+Next page will show a table, and some text possibilities you have there.
+@0@1|
+pg| ***** 27 ***** |
+
+
+qx|examplehand|
+st||
+nt||
+sk|s|
+ah|a slam|
+ah|in|
+ah|clubs|
+
+   ah[text] adds text to the header. To get rid of text
+   and stop it growing, you use rh[].. Reset Header i use as mnemonic
+ 
+md|0,kq765hj84dk875cj,st942h2dq92ckq973,S83hk9653djt63c86|
+mb|?|
+at|what would you bid here?|
+lb|*bWhat bid would you open?^^1c|
+nt|the balloon text is new ^*isb[stext]^*n |sb|s1c first.. rebid i show strength..|
+
+   with sb[] you can show a textballoon. first letter is s/w/n/e. this
+   puts the balloon with south, west, north or east, then 
+   you fill the balloon with text sb stands for Show Balloon?
+
+mb|1c1S|
+pg| ***** 29 ***** |
+
+
+sb|s|sb|ni have just enough to bid 3C..hcp wise and clubwise|mb|3cp?|
+
+   mb[] can be broken up to insert text it at[], alerts with an[] inserting
+   questions with lb[*b]. Fabulous how the last bid in mb[] works through
+   in the lb[*b] part. Just get your opening [ and closing ] right. And the
+   time between checks on how things work out will diminish quickly
+pg| ***** 30 ***** |
+
+
+nt|you seem to have a fit; let's use LTC to estimate the possible height of our contract.|
+pg| ***** 31 ***** |
+
+
+sb|n|
+
+   with sb[n] you empty the textballoon with north
+   and it disappears
+
+lb|*mHow many losers does your partner have?^10~9~8~7^3 |
+at|The jump raise to 3 indicates about 8 losers.|
+pg| ***** 33 ***** |
+
+
+lb|*mHow many losers does your own hand have?^7~6~5~4~3~2~1~0^4 |
+at|Right, 4 is a good estimate. In @s's 1, in @h's 1, in @d's 1 and in @c's 2. That makes 5, i hear you cry. But i have 2 aces that do not have to compensate a queen, so that is -1. There are the 4|
+pg| ***** 35 ***** |
+
+
+at| ..and maybe i should discount 1 or two tricks because partner expected me to have 3 @c's and i have 5. wow... 3 losers in my hand... surely worth to examine slem-possibilities.|
+pg| ***** 36 ***** |
+
+
+sb|sno hurry to slem.. first control bids...maybe later rkc|
+mb|4d|an|first or second control in @d|nt|I am telling partner opps can not get 2 tricks in a row by playing @d's|
+pg| ***** 37 ***** |
+
+
+sb|s|sb|npartner is captain, here is my control bid|mb|p4h|an|f/s round control in @h|
+
+    with an[]  after a made bid you show the alert of the bid just made.
+    if the bidding sequence originally was mb[p4hp4n] and you would like to 
+    annotate/alert the 4h bid you end the mb with ] and insert an[]mb[
+    Now the bid sequense looks like this   mb[p4h]an[controlbid]mb[p4n]
+
+at|
+Nice.. partner tells me that 2 consecutive tricks in hearts can not be won by opps|
+pg| ***** 38 ***** |
+
+
+sb||
+       
+    with sb[] you get rid of all balloons    
+
+mb|p4n|an|RKC 0314|sb|n|at|
+asking partner how many keycards do you have?|
+pg| ***** 39 ***** |
+
+
+mb|p5d|an|1 or 4 partner|
+pg| ***** 40 ***** |
+
+
+at|
+hmm partner tells me one or 4. I have 4, partner must have 1. @cK.. nice| 
+mb|p6c|sb|spartner is minimal..6C just above 50% i hope.|mb|ppp|
+pg| ***** 41 ***** |
+
+
+nt|I could have asked partner wether he had @cQ or how many Kings he had , but seen the minimal HCP with partner the contract of 6@c is high enough.|sb||
+pc|sk|
+at|
+West leads the @sK and open goes the dummy
+Now you could with a sequence of ^*bpc[]'s^*n show how a game would be played..
+however i will use sk[] and pf[y] now to set this hand free to play yourself.|
+sk||pf|Y|
+   
+    pf[Y] sets the rest of the card playing free
+    sk[] opens all hands. Othrwise you could not play any card.
+pg| ***** 42 ***** |
+
+
+qx|slot|
+bt||
+
+   bt[] necessary to return to Bare Text.. get rid of that table..
+
+nt||
+ht|f|
+mn|The End|
+at|Remains the promise to let you see how you can make sort of button that lets you jump to the other chapters.
+
+I think i have covered all the aspects of lin-tags that i could find. Enjoyed the searching. Please let me now if you discover new gadgets or new use of existing tags.. like the lb[*  ] serie.
+
+^f { ^*Gnonsens5,^*bjump to last senseless part^*n }
+
+^f { ^*Ghfdst1,^*bpositioning examples^*n }
+
+^f { ^*Ghfdst2,^*bformatting^*n }
+
+In this way you could jump to differen hands too.
+You can only to a qx[label] if that qx[] is put behind a pg[]
+So i can not jump too qx[oooo] at the top of this document.
+
+But the button ^$119 will do that anyway for you. So no big deal.
+^-
+{happy editing.. Ronald} 
+^-
+|
+
+    the whole part ^f { ^*Gnonsens5,^*bjump to last senseless part^*n }
+    seems to be necessary. the f may be g,h any letter, all the ^* are needed too
+    else it did not work. 
+pg| ***** 43 ***** |
+
+
+qx|nonsens1|
+nt||
+ht|m|
+3d|5|
+at|
+^-
+{ this will first be jumped over.} 
+^-
+|
+pg| ***** 44 ***** |
+
+
+qx|nonsens2|
+nt||
+ht|m|
+3d|5|
+at|
+^-
+{ this will secondly be jumped over.} 
+^-
+|
+pg| ***** 45 ***** |
+
+
+qx|nonsens3|
+nt||
+ht|m|
+3d|5|
+at|
+^-
+{ this will be jumped over as third.} 
+^-
+|
+pg| ***** 46 ***** |
+
+
+qx|nonsens4|
+
+nt||
+ht|m|
+3d|5|
+at|
+^-
+{ this will the 4th jump-over.} 
+^-|
+pg| ***** 47 ***** |
+
+
+qx|nonsens5|
+nt||
+ht|m|
+3d|5|
+at|
+^-
+{ And here you will land } 
+^-
+
+{ ^*Gslot,^*bdoes jump to 'the end'^*n }
+
+
+|
+
+

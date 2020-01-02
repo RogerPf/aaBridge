@@ -6,20 +6,21 @@ error_reporting(E_ALL);
 
 global $g;
 $g = new stdClass();
-$g->version = 'v1';
-$g->updated = '2019-05-02';
+$g->version = 'v2.5';
+$g->updated = '2019-05-30';
 $g->show_progress = false; // 0 = don't stop otherwise a number to stop at
 
 $g->anonymize = true; // if set true also rotates declarer / LHO LHO to south
+$g->and_shuffle = false; // if anonymized then will also shuffle
 $g->stop_after = 0; // 0 = don't stop otherwise a number to stop at
 
-$g->f_bidding = strToUpper('rho'); // 'rho' or 'lho' or '' or anything or '' is no-restrictions
+$g->f_bidding = strToUpper(''); // 'rho' or 'lho' or '' or anything or '' is no-restrictions
 
 $g->forced_folder_out = '';
 
-$g->f_minLevel = 2;
-$g->f_maxLevel = 5;
-$g->f_skip_suits = ''; // any of SHDC or N N = NT
+$g->f_minLevel = 7;
+$g->f_maxLevel = 7;
+$g->f_skip_suits = ''; // any of SHDCN N = NT
 $g->f_min_cards_played = 0; //
 $g->f_extra_RHO_LHO_rotate = true;
 $g->f_ramdomize = true;
@@ -133,7 +134,7 @@ function main()
 
     pn_out("\n  Read-in: " . ($accepted + $disc) . "       Accepted: $accepted      Discarded: $disc \n");
 
-    if ($g->anonymize) {
+    if ($g->and_shuffle) {
         if ($g->f_ramdomize) {
             shuffle($all);
         }

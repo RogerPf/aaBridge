@@ -1,0 +1,4493 @@
+
+%%
+%%  Date last Edited    2019-03-30
+%%
+
+ss|masthead,Learn to Play Bridge 1                          Chapter 7      |
+
+ss|chapter,Bidding  -  Responding                                           |
+
+
+<<--INSERT-START-->>=01___LTPB1__header_colors.ins
+%%
+cr|m070|cg|m095|cb|m169|   fill   m  m-mastColor       light blue grey
+cr|c248|cg|c231|cb|c189|   fill   c  c-chapterColor    beige cream
+%%
+<<--INSERT-END**-->>=01___LTPB1__header_colors.ins
+
+<<--INSERT-START-->>=02___LTPB___common.ins
+%%
+fh|180|ff|1Arial|fb|10|fm|1|      Font 1   Kia
+fh|235|ff|2Arial|fb|28|fm|2|      Font 2   Kia
+fh|350|ff|3Arial|fb|30|fm|3|      Font 3   Kia
+fh|430|ff|4Arial|fb|48|fm|4|      Font 4   Kia
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|60|fm|6|      Font 6
+fh|770|ff|7Arial|fb|70|fm|7|      Font 7
+fh|880|ff|8Arial|fb|80|fm|8|      Font 8
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1255|cg|1230|cb|1189|   Beige Cream
+cr|2200|cg|2245|cb|2210|   green ish
+cr|3249|cg|3249|cb|3255|   grey medium
+cr|4190|cg|4210|cb|4255|   blue grey
+cr|5198|cg|5205|cb|5229|   light grey
+cr|6122|cg|6000|cb|6049|   dark maroon
+cr|9255|cg|9255|cb|9255|   'white'
+
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m60|                    Font   m  m-mastHead        size in banner 1
+fh|c60|                    Font   c  c-chapTitle       size in banner 2
+
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint           feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight       text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+%%
+pd|first,^a You can `cp`red`at`^*b now ^*n`cp``at` ^*bClick { ^*b 1st ^*n } below @0@1 to enter the deal and ^*b PLAY ^*n the cards.   Later click  { ^*b Back to Movie ^*n }  to return.|
+%%
+ha|y|    %% hide auction
+bv|f,v|  %% button visibility
+%%
+<<--INSERT-END**-->>=02___LTPB___common.ins
+
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+qx|7|
+at|^b@2^z@3|
+Lg|c|
+at|^c@2
+^*Gwhat, What you will learn in this chapter^*N 
+|n#|3|at|
+^*G1su, Responding to a  1 of a suit  opening^*N
+^*Grevex1, Review and exercises^*N
+
+
+^*G1nt, Responding to a  1NT  opening^*N
+^*Grevex2, Review and exercises^*N
+
+
+^*G2c, Responding to a  2@c  opening^*N
+^*Grevex3, Review and exercises^*N
+
+
+^*Gpre, Responding to a  Preemptive  opening^*N
+^*Grevex4, Review and exercises^*N
+
+
+|ht|k|at|^p@2
+^*Gmin, Opener's  minimum  rebids^*N
+^*Gexercise1, Exercises^*N
+
+
+^*Gmed, Opener's  medium  rebids^*N
+^*Gexercise2, Exercises^*N
+
+
+^*Gmax, Opener's  maximum  rebids^*N
+^*Gexercise3, Exercises^*N
+
+
+^*Gorebid2c, Opener's rebid after a  2@c  opening^*N|
+
+
+ht|z|at|^b To start, click a blue link  OR  ^*bclick^*n  { ^*b Flow  > ^*n } below   then (if you have one) use your |cp|red|at|^*b mouse wheel^*n|cp||at|.|
+pg| ***** 0 ***** |
+
+
+qx|what,hide What you will learn in this chapter|
+nt|^z@3^b@2|cs|5|fp|t|at|
+^-{ ^*bWhat you will learn in this chapter^*n }
+^-|fp||at|
+In the last chapter we learned all about opening the bidding and how to decide if your hand qualifies for an 
+opening bid of 1 of a suit, 1NT, 2NT, 3NT, 2@C, or a preempt. If your hand does not qualify for any of these
+opening bids you should pass and give another player (hopefully your partner) a chance to open.
+
+This chapter is all about what happens ^*Iafter^*N the opening bid has been made. In particular, you will learn:
+^^|
+pg| ***** 1 ***** |
+
+
+cs|4|at|^-{1. How to respond to an opening bid made by your partner.}
+
+|
+pg| ***** 2 ***** |
+
+
+cs|2|at|{2. How the opening bidder decides upon his rebid.}
+
+|
+pg| ***** 3 ***** |
+
+
+at|^^In the next and final chapter you will see that in many bridge deals ^*Iboth^*N partnerships get involved in the bidding. 
+
+For now, however, we are going to assume that once an opening bid is made the opposing partnership will pass throughout the bidding.|
+pg| ***** 4 ***** |
+
+
+qx|1su,Responding to a 1 of a suit opening|
+nt|^z@3^b@2|cs|5|fp|t|at|
+^-{ Responding to a 1 of a suit opening }
+^-|fp||at|
+Your partner has opened the bidding and the next hand passes. You are the responder and it is your turn to bid. When should you pass your partner's opening and if you choose to respond, how do you decide which bid to make?
+
+There are no simple answers to these questions - it depends a great deal on which opening bid your partner has made as well as the strength of your hand and the number of cards you were dealt in various suits.
+
+|
+pg| ***** 5 ***** |
+
+
+at|Regardless of which opening bid was made, the responder must always be aware of what the partnership is trying to accomplish:
+
+|cs|1|at|^-{1. To discover which trump suit (if any) would be best for the partnership. In particular, 
+the search for an 8-card major suit fit is one of the primary objectives in the bidding.}
+
+|cs|2|at|{2. To discover the combined strength of the partnership's hands so that a decision can be 
+made as to whether the contract should be a partial, game, small slam, or grand slam.}
+^-
+|
+pg| ***** 6 ***** |
+
+
+at|Some opening bids reveal a great deal of information about both the strength and distribution (the number cards held in various suits) of the opener's hand. The more responder knows about opener's hand, the easier it will be for him to select the best strain and level for the contract. Notrump opening bids and preempts, for example, will often tell responder at once everything he needs to know to select the best contract for the partnership.|
+pg| ***** 7 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Responder's task is usually more difficult when the opening bid is 1 of a suit. Suppose that your partner opens 1@C and you are dealt the following hand:
+
+|ht|e|cs|1|at|^C{|ia| 1cp?|at|}
+|ht|d|cs|3|at|^P{|ih|pssaq987hk632d9cJ76|at|}
+
+|
+pg| ***** 8 ***** |
+
+
+at|^^So far all you know is that your partner has between 13 and 21 total points, at least 3 clubs, probably no 5-card major (unless he also has 6 or more clubs), and a hand unsuitable for a 1NT or 2NT opening bid. That may seem like a lot of information, but you still have no idea what the best strain or level for the contract is.
+
+|
+pg| ***** 9 ***** |
+
+
+at|If your partner has 3 or more spades, your 5-card suit means an 8-card major suit fit will be present and spades should be trump. You also have 4 hearts and if partner has 4 hearts then you will have an 8-card fit in that major suit. If there is no 8-card fit in either major then either clubs or notrump might make the best strain. All you really know about strain at this point is that diamonds should not be trump.
+
+|
+pg| ***** 10 ***** |
+
+
+at|The best level for the contract is also a mystery. You have 11 total points (10 HCP plus 1 long suit point). If partner's opening has only 13 total points, the partnership will not have the combined 25 total points required to make game contracts of 4@S, 4@H, and 3NT attractive - the best contract could be a partial. If partner has a maximum hand with 21 total points, however, the partnership is close to having the 33 total points required for a small slam.|
+pg| ***** 11 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|The bottom line is that you need more information about both the strength and distribution of your partner's hand before you can accurately place the contract.
+
+|ht|e|cs|1|at|^C{|ia| 1cp?|at|}
+|ht|d|cs|3|at|^P{|ih|pssaq987hk632d9cJ76|at|}|
+pg| ***** 12 ***** |
+
+
+ht|e|cs|1|at|^C{|ia| 1cp1s|at|}
+
+
+
+It will probably come as no surprise to you that the correct response to your partner's 1@C opening bid on this hand is 1@S. You have 5 cards in spades, a major suit, and if partner has 3 spades, the magic 8-card major suit fit will be present. By bidding 1@S you are sending 2 messages to your partner:
+
+|
+pg| ***** 13 ***** |
+
+
+cs|2|at|^-{1. You think that spades could make the best trump suit.}
+
+|
+pg| ***** 14 ***** |
+
+
+cs|4|at|{2. You have a strong enough hand to keep the bidding going.}
+^-
+|
+pg| ***** 15 ***** |
+
+
+at|The fact that spades could make the best trump suit when you hold this hand is obvious, but how strong a hand do you need to make a bid when your partner opens 1 of a suit? There is a widely accepted guideline that answers this question:
+
+|cs|1|at|^-{When your partner opens the bidding with 1 of a suit, you should make some bid whenever
+you are dealt 6 or more total points. Otherwise, you should pass your partner's opening bid.}
+|
+pg| ***** 16 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|So when responder makes a bid like 1@S after a 1@C opening he is promising his partner that he holds 6 or more total points. Is their any worry that the opener might pass at his next opportunity and that a game contract could be missed?
+
+|ht|e|cs|1|at|^C{|ia| 1cp1sp?|at|}
+|ht|d|cs|3|at|^P{|ih|pssaq987hk632d9cJ76|at|}
+
+|cs|2|at|^^^^^-{No, there is no need to worry. In almost all bidding sequences, when the responder
+introduces a new suit he is making a forcing bid - the opener should never pass.}
+^-
+|
+pg| ***** 17 ***** |
+
+
+cs|4|at|The reason that 1@S is considered a forcing bid here is that it has no upper limit as far as total points. This particular hand has 11 total points - not quite enough to insist upon a game contract opposite an opening bid. Responder could have a much ^*Istronger^*N hand, however, and still bid 1@S. In that case it would be a disaster if the opener passed - the partnership would certainly belong in at least a game contract.
+
+
+^-{In the same way that responder should never pass a forcing 2@C opening bid, the opener
+should always make some bid when the responder forces by introducing a new suit.}
+^-
+Once again, the rules of bridge allow the opener to pass here, but it is highly recommended that he never do so. Passing a forcing bid usually leads to both a poor contract and an unhappy partner!|
+ht|e|cs|1|at|^C{|ia| 1cp1sp?|at|}|
+pg| ***** 18 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|The example hand that we have been considering contains 2 new suits, hearts and spades, worthy of consideration as the trump suit:
+|ht|e|cs|1|at|^C{|ia| 1cp1s|at|}
+|ht|d|cs|3|at|^P{|ih|pssaq987hk632d9cJ76|at|}
+
+^^Responder will often be faced with the decision of which new suit to bid first. Here are a few simple rules that responder can use to resolve this decision:
+|
+pg| ***** 19 ***** |
+
+
+n#|7|cs|2|at|^-{Responder must have ^*I4 or more cards^*N in a new suit in order to respond in that suit.
+5-card majors only applies to the opening bid - responder can bid a 4-card major.}
+
+|
+pg| ***** 20 ***** |
+
+
+cs|4|at|{If responder has 2 new suits with 4 or more cards, but with unequal
+length, he should respond in the suit that contains the greater length.}
+
+|
+pg| ***** 21 ***** |
+
+
+cs|1|at|{If responder has 2 new suits that each contain ^*Iexactly^*N 5
+cards he should respond in the higher-ranking of these suits.}
+
+|
+pg| ***** 22 ***** |
+
+
+cs|3|at|{If responder has 2 (or 3) new suits that each contain ^*Iexactly^*N 4 cards
+he should respond in the suit that keeps the bidding as low as possible.}
+
+|
+pg| ***** 23 ***** |
+
+
+cs|2|at|{At least 10 total points are required for a new suit response at the 2-level.}|
+pg| ***** 24 ***** |
+
+
+nt|^z@3^b@2
+Here are some example hands to illustrate the principles of which new suit to respond. Try to think about what you would bid as responder in each case:
+
+|ht|f|cs|1|at|^C{|ia| 1cp?|at|}
+|ht|e|cs|3|at|^P{|ih|pssAQ98h742dj8632ct|at|}
+|
+pg| ***** 25 ***** |
+
+
+ht|f|cs|1|at|^C{|ia| 1cp1d|at|}
+
+
+
+Respond 1@D, not 1@S. The spades are stronger and spades is a major suit, but the diamond suit contains 5 cards while there are only 4 cards in spades. Length is more important than strength for both opening bids and responses.
+|
+pg| ***** 26 ***** |
+
+
+ht|q|cs|1|at|^C{|ia| 1dp?|at|}
+|ht|p|cs|3|at|^P{|ih|pshAQ98s742cj8632dt|at|}
+|
+pg| ***** 27 ***** |
+
+
+ht|q|cs|1|at|^C{|ia| 1dp1h|at|}
+
+
+
+Respond 1@H, not 2@C. The club suit is longer, but you would have to go to the 2-level to bid clubs. A new suit response at the 2-level promises 10 or more total points. This hand has only 8 total points (7 HCP plus 1 long suit point for the 5-card club suit). The 5-card majors principle applies only to the opening bidder - it is fine for responder to bid a 4-card major.|
+pg| ***** 28 ***** |
+
+
+nt|^z@3^b@2|cs|1|ht|c|at|^C {|ia| 1dp?|at|}
+|ht|b|cs|3|at|^P{|ih|psK9642hakq83da2c7|at|}
+|
+pg| ***** 29 ***** |
+
+
+cs|1|ht|c|at|^C {|ia| 1dp1s|at|}
+
+
+
+Respond 1@S, not 1@H. The heart suit is considerably stronger than the spade suit, but you should always respond in the higher-ranking of 2 5-card suits (the same principle applies when the opening bidder has 2 5-card suits).
+
+This is a very strong hand with 18 total points (16 HCP plus 2 long suit points for the 2 5-card suits). If opener has a strong hand there might even be enough combined total points for a grand slam. There is no need to worry about partner passing your 1@S response - a new suit bid by responder is forcing.
+
+|
+pg| ***** 30 ***** |
+
+
+ht|s|cs|1|at|^C {|ia| 1dp?|at|}
+|ht|r|cs|3|at|^P{|ih|psqj83hj964d6cAK74|at|}
+|
+pg| ***** 31 ***** |
+
+
+cs|1|ht|s|cs|1|at|^C {|ia| 1dp1h|at|}
+
+
+
+Respond 1@H, not 1@S or 2@C. With exactly 4 cards in 2 or 3 new suits you should respond in the suit that keeps the bidding as low as possible.|
+pg| ***** 32 ***** |
+
+
+nt|^z@3^b@2|cs|1|ht|c|at|^C {|ia| 1hp?|at|}
+|ht|b|cs|3|at|^P{|ih|psQt832h7d832dcJ876|at|}
+|
+pg| ***** 33 ***** |
+
+
+cs|1|ht|c|at|^C {|ia| 1hpp|at|}
+
+
+
+Pass, do not respond 1@S. That was a bit of a trick question. Remember that you need 6 total points in order to respond to an opening bid of 1 of a suit. The hand has only 4 total points (3 HCP and 1 long suit point for the 5-card spade suit) - not enough for a response.
+
+|
+pg| ***** 34 ***** |
+
+
+at|It is true that hearts might not make the best trump suit for your partnership. Your partner's 1@H opening promises at least 5 cards in hearts, but he also could have several spades. It is not at all unlikely that the partnership has more combined cards in spades (or clubs or diamonds) than it does in hearts.
+
+The danger in bidding 1@S in an attempt to improve the trump suit is that your partner will expect you to hold a hand with at least 6 total points - he could easily place the contract at a high level and be very disappointed at the quality of your hand. It is best to keep the contract as low as possible when you are dealt this weak of a hand. Passing your partner's 1@H opening bid is the best way to keep the bidding low.
+
+|
+pg| ***** 35 ***** |
+
+
+cs|2|at|^-{Making a bid that promises more total points than you have is called overbidding.
+The usual result of an overbid is to arrive in a contract that cannot possibly succeed.}
+|
+pg| ***** 36 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|You have learned pretty much all there is to know about responding in a new suit to your partner's opening bid. It is frequently the case, however, that you should respond either in notrump or by raising the suit that was opened to a higher level. Here is an example:
+
+|
+pg| ***** 37 ***** |
+
+
+ht|f|cs|1|at|^C{|ia| 1hp?|at|}
+|ht|e|cs|3|at|^P{|ih|psKJ65hq752d92cQ76|at|}
+|
+pg| ***** 38 ***** |
+
+
+cs|1|ht|f|at|^C{|ia| 1hp2h|at|}
+
+
+
+Raise to 2@H, do not bid 1@S. Your partner's 1@H opening promises at least 5 hearts and he cannot have more spades than hearts (or he would have opened 1@S). You already know that your partnership has at least 9 hearts between the 2 hands - more than enough to make hearts an attractive trump suit. There is no reason to confuse the issue by suggesting another suit as trump. Let your partner know about your fine support for his suit immediately!
+
+|
+pg| ***** 39 ***** |
+
+
+cs|2|at|^-{The raise of a major suit opening to the 2-level (a single raise) promises between
+6 and 9 total points and at least 3-card support for the opening bidder's suit.}
+^-
+|
+pg| ***** 40 ***** |
+
+
+at|One of the main advantages of a 5-card majors bidding system is that you can comfortably raise your partner's major suit opening bid with 3-card support and be secure in the knowledge that an 8-card major suit fit exists. The above example contains 4-card support for opener's heart suit, but it would still be correct to raise to 2@H (and not bid 1@S) on a similar hand with only 3 hearts.|
+pg| ***** 41 ***** |
+
+
+nt|^z@3^b@2|cs|1|n#|5|at|The responder sends the opener 2 messages with a single raise of a major suit opening bid:
+
+^B{|ia| 1Hp2H|at|} ^O{|ia| 1Sp2S|at|}
+
+|
+pg| ***** 42 ***** |
+
+
+cs|4|at|^-{1. I know that the major suit you opened should be the
+trump suit as we must have at least an 8-card fit in that suit.}
+
+|
+pg| ***** 43 ***** |
+
+
+cs|2|at|{2. I have enough total points to keep the bidding going. A game contract is still possible,
+but only if you have significant extra values beyond your minimum of 13 total points.}
+^-
+|
+pg| ***** 44 ***** |
+
+
+at|The first of these messages is obviously useful to the opener - it tells him what the trump suit should be. Here's how the opener makes use of the second message: The 1@S opening bid promises between 13 and 21 total points. The 2@S single raise promises between 6 and 9 total points. 25 combined total points are required for a game contract of 4@S.
+
+|
+pg| ***** 45 ***** |
+
+
+cs|3|at|^-{If the opener has between 13 and 15 total points he will know that the partnership
+has 24 combined total points at most - not enough for a game contract of 4@S.}
+
+|
+pg| ***** 46 ***** |
+
+
+cs|1|at|{If the opener has between 16 and 18 total points he will know that the partnership
+^*Imight^*N have the requisite 25 combined total points for a game contract of 4@S.}
+
+|
+pg| ***** 47 ***** |
+
+
+cs|4|at|{If the opener has between 19 and 21 total points he will know that the partnership is
+^*Icertain^*N to have at least 25 combined total points - enough for a game contract of 4@S.}
+
+|
+pg| ***** 48 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|We have had our first look at raising the opening bidder's suit. Before we go on and look at some other raising situations (such as a jump raise like 1@H-3@H), there is an important lesson to learn about how the responder should count his total points when considering a raise. Take this hand for example:
+
+|
+pg| ***** 49 ***** |
+
+
+ht|e|n#|7|cs|1|at|^C{|ia| 1hp?|at|}
+|ht|e|cs|3|at|^P{|ih|ps8hk765daj87ct842|at|}
+
+|
+pg| ***** 50 ***** |
+
+
+at|^^We have been counting 8 total points for this hand, all in HCP. There are no long suit points because there is no 5-card or longer suit. There is something of great value in this hand beyond its 8 HCP after partner opens 1@H. Can you see what it is?
+
+|
+pg| ***** 51 ***** |
+
+
+at|The hand contains a singleton spade. The opening bidder is likely to have small cards in spades. He will be able to ruff some of these losers in your hand when you are dummy in a contract with hearts as trump.
+|
+pg| ***** 52 ***** |
+
+
+cs|3|at|^^^^^P{|ih|ps872hk765daj8ct84|at|}
+|ht|q|at|The first hand above is clearly better than this balanced
+hand with the same hearts and high cards. It would be
+nice if our method of counting total points took the
+side suit singleton into account.
+
+
+|
+pg| ***** 53 ***** |
+
+
+cs|2|at|^^^-{We should be counting points for ^*Ishort suits^*N when we think about raising opener's suit.}
+
+|
+pg| ***** 54 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Here's how short suit points work:
+
+|cs|2|at|^-{When raising a suit that partner has bid, count short suit points, not long suit points. Count
+1 short suit point for each side suit doubleton, 3 for each singleton, and 5 for each void.}
+^-
+|
+pg| ***** 55 ***** |
+
+
+at|So the hand we just saw:|
+ht|h|cs|1|at|^C{|ia| 1hp?|at|}
+|ht|g|cs|3|at|^P{|ih|ps8hk765daj87ct842|at|}
+^^
+is worth 11 total points once partner opens the bidding with 1@H. There are still 8 HCP, but the singleton spade is worth 3 short suit points.
+
+|
+pg| ***** 56 ***** |
+
+
+cs|4|at|Notice how this hand became ^*Ibetter^*N after partner opened 1@H. The hand was worth only 8 total points before partner bid hearts. Once the responder knows he is going to be raising, 3 additional total points are added in the form of short suit points for the singleton spade.
+
+^-{The number of total points a hand is worth sometimes ^*Ichanges^*N as the bidding develops.
+This adjustment of total points during the bidding is known as reevaluating your hand.}
+^-
+The above hand reevaluates to 11 total points after partner opens the bidding with 1@H.|
+pg| ***** 57 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Once partner opens 1@H this hand reevaluates to 11 total points - too much for a single raise that promises to deliver a hand in the 6 to 9 total point range.
+
+|ht|e|cs|1|at|^C{|ia| 1hp2h|at|}
+|ht|d|cs|3|at|^P{|ih|ps8hk765daj87ct842|at|}
+
+|
+pg| ***** 58 ***** |
+
+
+ht|e|cs|1|at|^C{|ia| 1hp3h|at|}
+
+
+|n#|5|at|The correct response to partner's 1@H opening bid with this hand is 3@H, a jump raise.
+|cs|2|n#|7|at|^-{In our bidding system the jump raise of a major suit opening bid promises 10 or 11
+total points and at least 3-card trump support. Another name for this bid is a limit raise.}
+^-|
+pg| ***** 59 ***** |
+
+
+n#|7|at|Like its little brother, the single raise, the limit raise of a major suit opening sends 2 messages from the responder to the opener. The first of these messages is the same as it was for the single raise:
+|
+pg| ***** 60 ***** |
+
+
+n#|6|cs|4|at|^-{1. I know that the major suit you opened should be the
+trump suit as we must have at least an 8-card fit in that suit.}
+
+|
+pg| ***** 61 ***** |
+
+
+cs|1|at|{2. I have almost enough total points to insist on a game contract in your major suit.
+Please go on to the 4-level unless your opening bid is based on a very minimum hand.}
+^-|n#|7|at|If the opener has only 13 or 14 total points, the 10 to 11 total point limit raise will not be quite enough for a game contract of 4 of a major (requiring 25 total points). With 15 or more total points the opener should insist on game opposite a limit raise.|
+pg| ***** 62 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Let's look at the same hand again and suppose that the opening bid was 1@S instead of 1@H. What do you think the responder should bid now? Hint: you have not seen this response before.
+|ht|e|cs|1|at|^C{|ia| 1sp?|at|}
+|ht|d|cs|3|at|^P{|ih|ps8hk765daj87ct842|at|}
+
+|
+pg| ***** 63 ***** |
+
+
+at|Let's figure this out by process of elimination. This hand is back to being worth only 8 total points. Do not count short suit points unless you are going to raise partner's suit. The hand has only 1 spade and we would need at least 3-card support to raise.
+
+There are 3 new suits that each contain 4 cards, but we cannot bid any of these suits without going on to the 2-level. We already know that 10 total points are required for a new suit bid at the 2-level and this 8-point hand does not quite measure up.
+
+We can't raise spades and we can't bid a new suit. We have to bid something, however, as all hands with 6 or more total points should respond in some way to an opening bid of 1 of a suit. There is only 1 possibility.
+|
+pg| ***** 64 ***** |
+
+
+cs|2|at|^-{Respond 1NT.}
+
+|ht|y|cs|4|at|{A 1NT response to an opening bid of 1 of a suit promises between 6 and 9 total points.
+Furthermore, the 1NT response denies the ability to raise the opener or to bid a new suit.}
+^-
+|ht|e|cs|1|at|^C{|ia| 1sp1n|at|}|
+pg| ***** 65 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|We have already seen that notrump contracts work out best with balanced hands in which there is at least 1 high card stopper in every suit. According to our bidding system, however, the responder will sometimes have to bid 1NT on some hands that are not suitable for play in a notrump contract. For example:
+
+|ht|g|cs|1|at|^C{|ia| 1hp?|at|}
+|ht|f|cs|3|at|^P{|ih|ps5h7dk8732cqj8764|at|}|
+pg| ***** 66 ***** |
+
+
+ht|g|cs|1|at|^C{|ia| 1hp1n|at|}
+
+
+|n#|5|at|This hand is extremely unbalanced as it contains 2 singletons. The singleton heart is not the end of the world as far as notrump is concerned. Your partner's 1@H opening promised a 5-card suit and he is very likely to have some high cards in hearts - the defenders are not likely to get rich from the heart suit against a notrump contract. The spade singleton is another matter as the defenders could easily win several spade tricks at notrump.
+
+You would really like to bid clubs here to suggest your own long suit as trump. Unfortunately, you would have to bid 2@C to mention that suit and you do not have the 10 total points that a 2-level response in a new suit demands. Since raising partner's hearts is out of the question and since this hand is too strong to pass, a 1NT response is the only alternative. You don't have a good hand for notrump, but you have to bid 1NT, nonetheless, in our bidding system.
+
+|
+pg| ***** 67 ***** |
+
+
+cs|2|at|^-{In our bidding system the 1NT response sends opener the message that the responder
+has enough total points to keep the bidding going, but that he has no other bid to make.}|
+pg| ***** 68 ***** |
+
+
+nt|^z@3^b@2
+The 1NT response to an opening bid is more of a ^*Idenial^*N bid than a suggestion of notrump as a good strain for the contract. It is a different story with the jump responses of 2NT and 3NT. Both of these responses to an opening bid of 1 of a suit strongly suggest notrump as a strain.
+
+|
+pg| ***** 69 ***** |
+
+
+cs|4|at|^-{A 2NT response to an opening bid of 1 of a suit promises a balanced hand with 13-15 HCP.
+A 3NT response to an opening bid of 1 of a suit promises a balanced hand with 16-18 HCP.}
+^-
+|
+pg| ***** 70 ***** |
+
+
+cs|2|at|There's more to it than that:
+
+^-{Do not respond 2NT or 3NT if you have a 4-card major suit or a 5-card minor suit. 
+Bid that suit instead. A new suit bid is a forcing bid - do not worry about partner passing.}
+
+|
+pg| ***** 71 ***** |
+
+
+cs|3|at|{Do not respond 2NT or 3NT if you have good support for the suit that partner opened.
+We will soon learn what to bid with strong hands that contain good support for partner.}
+
+|
+pg| ***** 72 ***** |
+
+
+cs|1|at|{The 2NT and 3NT responses are forcing to a game contract as they promise that there are
+enough combined total points for a game contract even if opener has only 13 total points.}
+^-
+|
+pg| ***** 73 ***** |
+
+
+at|We have seen forcing bids before, bids that virtually demand that partner should not pass. The 2NT and 3NT responses to a 1-level opening are the first examples we have seen of bids that are forcing to a specific level - the game level in this case.
+
+|
+pg| ***** 74 ***** |
+
+
+cs|4|at|^-{When your partner makes a bid that is forcing to game you should
+never pass until at least a game contract has been reached.}
+
+|
+pg| ***** 75 ***** |
+
+
+nt|^z@3^b@2
+Here are some example hands for the 2NT and 3NT responses to the opening bid of 1 of a suit:
+|cs|3|n#|5|at|^D{|ih|psJ7HAJ6DQJ94CKJt2|at|} |n#|u|at|^P{|ih|psKQ6hkj9DA82CAt94|at|}|n^|n|at|
+
+^B   {|cs|1|ia| 1sp2n|at|} ^N   {|ia| 1dp3n|at|}
+
+|
+pg| ***** 76 ***** |
+
+
+at|Both of these hands are balanced, they do not contain good support for the suit that partner opened, and they do not contain any 4-card majors or 5-card minors. The first hand contains 13 HCP, just enough for the 13-15 HCP 2NT response. The second hand contains 17 HCP, right in the middle of the 16-18 HCP range of the 3NT response.
+
+|
+pg| ***** 77 ***** |
+
+
+cs|2|at|Notice also that both of the hands could conceivably respond with a forcing new suit bid of 2@C. Both hands have considerably more than the 10 total points required for a new suit response at the 2-level and enough cards in clubs (4) to introduce the suit.
+
+^-{The advantage of the 2NT and 3NT responses is that they accurately describe a hand in a
+single bid. The 2@C response is wide-ranging in terms of both strength and distribution.}
+
+|
+pg| ***** 78 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|If a player is able to accurately describe his strength and distribution to his partner, the partner will be in a good position to select the best contract. The 2NT and 3NT responses immediately paint an excellent picture of what the responder's hand looks like. The opening bidder is usually able to select the best contract immediately after one of these responses is made. Here are some hands that look like 2NT or 3NT responses, but are flawed in some way:
+
+|
+pg| ***** 79 ***** |
+
+
+ht|h|cs|1|at|^C{|ia| 1cp?|at|}
+|ht|g|cs|3|at|^P{|ih|psAQ2hkq94dKJ5c742|at|}|
+pg| ***** 80 ***** |
+
+
+ht|h|cs|1|at|^C{|ia| 1cp1h|at|}
+
+
+|n#|7|at|Respond 1@H, not 2NT. This is a balanced hand with 15 HCP which makes it look very much like a 13-15 HCP 2NT response. The problem with 2NT is that this bid denies a 4-card major and this hand contains 4 hearts. Start with a forcing new suit bid of 1@H. You will have to wait for your next rebid to tell your partner more about your strength and distribution.|
+pg| ***** 81 ***** |
+
+
+ht|t|cs|1|at|^C{|ia| 1hp?|at|}
+|ht|s|cs|3|at|^P{|ih|pskq6h72dak4ckqt53|at|}|
+pg| ***** 82 ***** |
+
+
+ht|t|cs|1|at|^C{|ia| 1hp2c|at|}
+|ht|y|n#|7|at|Respond 2@C, not 3NT, despite the fact that this is a balanced hand with 16 HCP. The 2NT and 3NT responses deny holding a 5-card minor. Start with a forcing new suit bid of 2@C.|
+pg| ***** 83 ***** |
+
+
+nt|^z@3^b@2|ht|c|cs|1|at|^C {|ia| 1sp?|at|}
+|ht|b|cs|3|at|^P{|ih|psaq7hkj8dajt5cqj2|at|}|
+pg| ***** 84 ***** |
+
+
+ht|c|cs|1|at|^C {|ia| 1sp2d|at|}
+
+
+
+Respond 2@D, not 3NT. This balanced hand with 18 total points looks just right for a 3NT response. The hand is flawed for a 3NT response because it contains 3-card support for partner's known 5-card major. There is a danger that partner might pass your 3NT response, not expecting 3-card support for his major. Your known 8-card major suit fit could be lost forever.
+
+It is best to start with 2@D on this hand. You don't have to worry about your partner passing this forcing bid. You will be able to describe the strength of your hand as well as your spade support later in the bidding (you will learn how to do this soon).
+
+|
+pg| ***** 85 ***** |
+
+
+at|Recall that a jump raise (or limit raise) of a major suit opening bid promises 3-card (or longer) support in a hand with 10-11 total points (and remember, we count short suit points, not long suit points in this situation). We have just seen our first example of what responder bids on a hand with good support for partner's major that is too strong for a limit raise.
+
+|
+pg| ***** 86 ***** |
+
+
+cs|2|at|^-{Responder should start with the forcing bid of a new suit with a hand containing 3-card 
+(or longer) support for opener's major that is too strong for a limit raise (10-11 total points).}
+
+|
+pg| ***** 87 ***** |
+
+
+nt|^z@3^b@2|cs|1|at|
+^B{|ia| 1Hp?|at|} ^O{|ia| 1Sp?|at|}
+
+We have a near complete set of responses defined for bids that raise partner's major suit opening bid. Assume that partner opens 1@H or 1@S and that you have at least 3-card support for his suit. Use short suit points to calculate your total points and follow these guidelines:
+
+|
+pg| ***** 88 ***** |
+
+
+cs|4|at|^-{With 6-9 total points make a single raise to 2 of partner's major suit.}
+
+|
+pg| ***** 89 ***** |
+
+
+cs|2|at|{With 10-11 total points make a limit raise to 3 of partner's major suit.}
+
+|
+pg| ***** 90 ***** |
+
+
+cs|3|at|{With 12 or more total points your hand is strong enough to eventually force to game.
+Start with the forcing bid of a new suit and plan to show your strength and support later.}
+^-
+|
+pg| ***** 91 ***** |
+
+
+cs|3|at|Make sure that you understand that a new suit bid neither promises nor denies support for opener's major. The correct response to either 1@H or 1@S would be 2@D (forcing) with both of the following hands. The first hand would plan to support later, the second hand would not.
+
+|ht|u|n#|5|at|^C    {|ih|psaq7hkj8dajt5cqj2|at|} ^P  {|ih|ps65hadaqj543cj932|at|}
+|
+pg| ***** 92 ***** |
+
+
+nt|^z@3^b@2|cs|1|n#|5|at|How about the responses that raise opener's major suit directly to game?
+
+^B{|ia| 1Hp4H|at|} ^O{|ia| 1Sp4S|at|}
+
+|
+pg| ***** 93 ***** |
+
+
+at|Intuitively it would seem like these bids should describe hands with 12 or more total points with at least 3-card support for opener's major. After all, a game contract of 4@H or 4@S requires 25 combined total points and the opening bid might contribute only 13 of these.
+
+This is one area of our bidding system that is not very intuitive. Remember that we already have a way of describing hands with support that are too strong for a 10-11 point limit raise - we start with a forcing bid of a new suit and plan to show our strength and support later.
+
+|cs|2|at|^-{In our bidding system, direct raises of a major suit opening to the 4-level (game) are
+preemptive in nature. These bids show excellent support, good distribution, but few HCP.}
+^-
+|
+pg| ***** 94 ***** |
+
+
+cs|3|at|Here is a hand that should raise an opening bid of either 1@H or 1@S directly to the 4-level:
+
+^-{|ih|psJt874hkt932d6ct5|at|}
+|
+pg| ***** 95 ***** |
+
+
+nt|^z@3^b@2|cs|3|at|
+^-{|ih|psJt874hkt932d6ct5|at|}
+^-
+This hand is worth only 8 total points, 4 HCP plus 4 short suit points (3 for the singleton and 1 for the doubleton). Remember, we never count both long suit points and short suit points - it is one or the other. How can it be right to commit the partnership to a 4@H or 4@S contract (which requires 25 combined total points) with such a weak hand?
+
+|cs|1|at|^B{|ia| 1Hp4H|at|} ^O{|ia| 1Sp4S|at|}
+
+|
+pg| ***** 96 ***** |
+
+
+at|In fact, there are 2 reasons why it is a good idea to jump all the way to a game when your partner opens 1 of a major and you are dealt a hand like this:
+
+|
+pg| ***** 97 ***** |
+
+
+cs|2|at|^-{1. A hand is usually worth far more than its total points suggests when the partnership 
+is known to have lots of trumps, especially when there are singletons or voids about.}
+
+|
+pg| ***** 98 ***** |
+
+
+cs|4|at|{2. With so few HCP, the opponents may be able to succeed in some game contract.
+The jump to the 4-level will preempt the opponents, making it harder for them to bid.}
+
+|
+pg| ***** 99 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Here is an example hand for your partner that demonstrates how effective this bid can be:
+^^
+|cs|3|at|^D{|ih|psJt874hkt932d6ct5|at|} 
+^^
+^D{|ih|pskq632haqj7dt84c7|at|}
+|ht|d|cs|1|at|^N{|ia|   1sp4s?|at|}
+
+
+|n#|5|at|^NSuppose your partner opens 1@S on the South
+^Nhand and you correctly raise all the way to
+^N4@S with the North hand. Despite having only
+^N8 total points, there are 2 ways this bid
+^Ncould work out.
+|
+pg| ***** 100 ***** |
+
+
+at|
+If the next 3 players pass then 4@S will become the contract. You may think that's not so great - South has a minimum 13 total point hand and North has only 8 total points. These hands do not have even close to the 25 combined total points that a 4@S contract is suppose to require.
+
+Luckily, point count does not really work here. Try counting the losers between the 2 hands. The @SA is the only missing high card in the majors. South's singleton club and North's singleton diamond will limit North-South's minor suit losers to 2. With only 3 losers North-South should be able to win 10 tricks and succeed in 4@S, despite holding only 21 combined total points.|
+ht|d|cs|1|at|^N{|ia|   1sp4sppp|at|}|
+pg| ***** 101 ***** |
+
+
+ht|v|n#|5|cs|2|at|^-{4@S could well succeed with few combined total points - that's one good reason to bid 4@S!}
+
+|
+pg| ***** 102 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|To see the other reason why 4@S is a good bid, consider the defensive prospects of these hands:
+^^
+|cs|3|at|^D{|ih|psJt874hkt932d6ct5|at|} 
+^^
+^D{|ih|pskq632haqj7dt84c7|at|}
+|ht|d|cs|1|at|^N{|ia|   1sp4s?|at|}
+
+
+|n#|5|at|^NYour partner opens 1@S as South and you
+^Ncorrectly bid 4@S on the North hand. It 
+^Nis East's turn to bid and he has been
+^Npreempted into starting at the 5-level.
+
+
+|
+pg| ***** 103 ***** |
+
+
+at|Suppose that East has the courage to bid 5@D or 5@C (both game contracts). What do you think of your partnership's chances of defeating a 5-level minor suit contract played by the opponents?
+|ht|d|cs|1|at|^N{|ia|   1sp4s5dppp|at|}|
+pg| ***** 104 ***** |
+
+
+ht|r|at|Your chances are zero. East-West will have no losers in the minor suits or in spades. The opponents have only 3 spades between them so either East or West must have a singleton (or void) in spades. Their @SA will prevent them from losing any spade tricks. East-West could lose 2 heart tricks, but only if their 4 combined hearts are divided 2-2. With 2 losers at the most, an 11-trick contract is certain for East-West - they could even have a slam if their 4 hearts are 3-1!
+
+|
+pg| ***** 105 ***** |
+
+
+cs|2|at|^-{The opponents may be able to succeed in a game contract - another good reason to bid 4@S!}
+|
+pg| ***** 106 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|We have now seen 2 places in our bidding system for preemptive bids:
+|n#|9|cs|2|at|^-{1. Any suit opening bid of 2@D or higher.}
+
+|cs|4|at|{2. The raise of a major suit opening bid to the 4-level.}
+^-
+|
+pg| ***** 107 ***** |
+
+
+at|The types of hands that you hold when you make these bids have 2 things in common:
+
+|cs|1|at|^-{1. They are hands that are offensively strong with their long suit as trump.}
+
+|cs|3|at|{2. They are hands that are defensively weak with any other suit as trump.}
+^-
+|
+pg| ***** 108 ***** |
+
+
+at|We have seen that there are 2 ways that such preemptive bids can be effective:
+
+|cs|2|at|^-{1. By leading to a successful contract for your partnership with few combined total points.}
+
+|cs|4|at|{2. By making it difficult for the opposing partnership to arrive in a making contract of their own.}
+^-
+|
+pg| ***** 109 ***** |
+
+
+at|Hopefully you have been sold on the concept of the preemptive raise to 4 of opener's major!
+
+|ht|u|n#|7|cs|3|at|^D{|ih|psJt874hkt932d6ct5|at|} 
+|ht|v|n#|7|cs|1|at|^N{|ia| 1sp4s|at|}
+|
+pg| ***** 110 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Even if you have not been convinced of the merits of the preemptive raise to 4 of opener's major, it is part of our bidding system. Here is the definition that we will be using for these bids:
+
+|cs|1|at|^B{|ia| 1Hp4H|at|} ^O{|ia| 1Sp4S|at|}
+
+|
+pg| ***** 111 ***** |
+
+
+cs|2|at|^-{Responder's raise to game in opener's major promises a hand in the 6-9 total point
+range that contains at least 5-card support as well as a singleton or void in a side suit.}
+^-
+|
+pg| ***** 112 ***** |
+
+
+at|So the preemptive game raise of a major suit opening bid has the same 6-9 total point range of the single raise (to the 2-level), but it is based on a hand with at least 5-card trump support plus a singleton or void on the side. Remember that only 3-card support is required for a single raise and that the single raise can be made on a balanced hand.
+
+|
+pg| ***** 113 ***** |
+
+
+at|We have now learned all of the ways that a major suit can be raised in our bidding system. There is the 6-9 point single raise, the 10-11 point limit raise, the 6-9 point preemptive game raise (which has extra distributional requirements). We also have learned to respond with a forcing new suit bid with hands containing support that are too strong for a limit raise.
+
+|
+pg| ***** 114 ***** |
+
+
+at|It is time to discuss the requirements for raising a minor suit opening bid. Suppose that your partner opens the bidding with 1@D or 1@C. What sort of hand is required to raise partner's suit to the 2, 3, or 4 level?
+|
+pg| ***** 115 ***** |
+
+
+n#|7|cs|4|at|^-{^*UGood news!!!^*N Raising a minor suit is very similar to raising a major suit.}
+|
+pg| ***** 116 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|The total point ranges of the various minor suit raises are identical to the corresponding total point ranges of the major suit raises that we have already defined.
+|
+pg| ***** 117 ***** |
+
+
+n#|7|cs|1|at|^B{|ia| 1dp2d|at|} ^O{|ia| 1cp2c|at|}
+
+|cs|2|at|^-{The single raise of a minor suit opening promises 6-9 total points.}
+^-
+|
+pg| ***** 118 ***** |
+
+
+cs|1|at|^B{|ia| 1dp3d|at|} ^O{|ia| 1cp3c|at|}
+
+|cs|2|at|^-{The jump raise (or limit raise) of a minor suit opening promises 10-11 total points.}
+^-
+|
+pg| ***** 119 ***** |
+
+
+cs|1|at|^B{|ia| 1dp4d|at|} ^O{|ia| 1cp4c|at|}
+
+|cs|2|at|^-{The double jump raise of a minor suit opening promises 6-9 total points,
+but there are additional distributional requirements for this preemptive raise.}
+^-|
+pg| ***** 120 ***** |
+
+
+n#|7|at|In fact, all of these minor suit raises have different distributional requirements than their corresponding major suit raises. This is a consequence of our bidding system being based on 5-card majors. A 1@S or 1@H opening bid shows at least a 5-card suit. 1@D and 1@C openings can sometimes be based on as few as 3 cards in the suit opened.|
+pg| ***** 121 ***** |
+
+
+nt|^z@3^b@2|cs|1|at|
+^-{Responder should not raise a minor suit opening bid (which could be bid on a 3-card suit)
+with less than 4-card support. 5-card support is preferred so that an 8-card fit is guaranteed.}
+^-
+|
+pg| ***** 122 ***** |
+
+
+at|Raising a major suit opening bid with only 3-card support is fine because 1@S and 1@H opening bids are always based on 5-card (or longer) suits. If you were to raise a minor suit opening bid (a possible 3-card suit) with only 3-card support, the partnership could end up in a contract with only 6 combined trumps. The defenders would have the 7 remaining trumps.
+
+|
+pg| ***** 123 ***** |
+
+
+cs|4|at|^-{A sure sign of a bad contract is when the defenders have the majority of the trumps.
+A 7-card trump fit is barely acceptable. An 8-card fit (or longer) is much more attractive.}
+^-
+|
+pg| ***** 124 ***** |
+
+
+cs|2|at|^-{Raising a minor suit opening bid should be seen as a low priority for the responder.
+Responder should try to bid a major suit or notrump in preference to raising a minor.}
+^-
+|
+pg| ***** 125 ***** |
+
+
+at|Here is the type of hand responder should have in order to raise opener's minor suit:
+
+|ht|r|cs|3|at|^D{|ih|ps73ht6daj842cqt32|at|} 
+|ht|s|cs|1|at|^N{|ia| 1dp2d|at|}
+
+
+
+|
+pg| ***** 126 ***** |
+
+
+ht|x|n#|5|at|Responder has 5-card support for opener's diamonds, no 4-card major, and an inappropriate hand for notrump (2 doubletons and few stoppers). All signs point to raising diamonds. With 9 total points (7 HCP and 2 short suit points), the 6-9 HCP single raise is the correct response.|
+pg| ***** 127 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Here are some hands with which responder should not raise opener's minor despite holding excellent trump support:
+
+|ht|d|cs|3|at|^D{|ih|ps73ct6daj842hqt32|at|} 
+|ht|e|cs|1|at|^N{|ia| 1dp?|at|}|
+pg| ***** 128 ***** |
+
+
+ht|e|cs|1|at|^N{|ia| 1dp1h|at|}
+
+
+
+Respond 1@H, do not raise diamonds. The raise of a minor suit opening bid denies a 4-card major. Start with a forcing new suit bid of 1@H. The opener could have 4 hearts as well in which case an 8-card major suit fit will be found. If the opener cannot raise your hearts with his rebid, you can always show your diamond support at your next opportunity to bid.
+
+|
+pg| ***** 129 ***** |
+
+
+ht|p|cs|3|at|^D{|ih|psqj7hk96dkt4ct843|at|} 
+|ht|q|cs|1|at|^N{|ia| 1cp?|at|}|
+pg| ***** 130 ***** |
+
+
+ht|q|cs|1|at|^N{|ia| 1cp1n|at|}
+
+
+
+Respond 1NT, do not raise clubs. You have only 4-card support for clubs, which is acceptable for a raise if there are no good alternatives. Here 1NT is an excellent alternative. This hand is very balanced and contains stoppers in all 3 of the other suits. It sure likes like a good hand for notrump and this 9 HCP hand falls within 1NT's 6-9 point range.|
+pg| ***** 131 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Here is the sort of hand with which the responder should raise opener's minor despite holding only 4-card support (remember, 5-card support is desirable for raising a minor):
+
+|ht|d|cs|3|at|^D{|ih|ps6h582dk984ckt763|at|} 
+|ht|e|cs|1|at|^N{|ia| 1dp?|at|}|
+pg| ***** 132 ***** |
+
+
+ht|e|cs|1|at|^N{|ia| 1dp2d|at|}
+
+
+
+Raise to 2@D, despite holding only 4-card support. This time there is no alternative. You have a nice club suit, but this hand lacks the 10 total points required for a 2-level new suit bid. 1NT is also unattractive with your singleton spade and no stoppers in the major suits. The hand is too strong to pass and all that's left is to raise diamonds. This hand, with 6 HCP and 3 short suit points, falls within the 6-9 total point range for a single raise.
+
+|
+pg| ***** 133 ***** |
+
+
+at|It is possible that the partnership will end up in a 7-card fit as a result of this raise. The good news is that this is not very likely. A 1@D opening bid will only be based on a 3-card suit when opener has exactly 4 spades, 4 hearts, 3 diamonds, and 2 clubs (and the wrong number of HCP for a 1NT or 2NT opening bid). It is much more likely that a 1@C opening could be based on a 3-card suit (since 1@C is the correct opening bid with 3 cards in both minors and a hand unsuitable for a major suit or notrump opening bid).
+
+|
+pg| ***** 134 ***** |
+
+
+cs|2|at|^-{Raising diamonds with only 4-card support is not as bad as raising clubs with only
+4-card support. 1@C is much more likely to be based on a 3-card suit than 1@D is.}
+|
+pg| ***** 135 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Here are some other example hands with which responder should raise opener's minor:
+
+|ht|c|cs|3|at|^D{|ih|psj87h54da76ckqt73|at|} 
+|ht|d|cs|1|at|^N{|ia| 1cp?|at|}|
+pg| ***** 136 ***** |
+
+
+ht|d|cs|1|at|^N{|ia| 1cp3c|at|}
+
+
+
+Respond with a limit raise of 3@C, showing 10-11 total points with (very likely) 5-card support (or better). This hand is considered balanced, but with 10 HCP it is a little too strong for 1NT (showing 6-9) and not nearly strong enough for a 13-15 HCP 2NT response. Even if this hand had fallen within the range of a notrump response, the lack of major suit stoppers suggests that a club contract could be better than notrump.
+
+|
+pg| ***** 137 ***** |
+
+
+ht|p|cs|3|at|^D{|ih|ph932dkj9843c8652|at|} 
+|ht|q|cs|1|at|^N{|ia| 1dp?|at|}|
+pg| ***** 138 ***** |
+
+
+ht|q|cs|1|at|^N{|ia| 1dp4d|at|}
+
+
+
+|ht|u|at|Respond with a preemptive raise of 4@D. This bid suggests a highly distributional hand, usually with 6-card support and not much in the way of HCP. Bidding to 4 of a minor bypasses the game contract of 3NT. Therefore, these raises should made with hands unsuitable for notrump play. 4@D may not succeed, but this bid will make life difficult for the opponents.|
+pg| ***** 139 ***** |
+
+
+qx|revex1,hide Responding to a 1 of a suit opening - Review and exercises|
+nt|^z@3^b@2|cs|5|fp|t|at|
+^-{ Responding to a 1 of a suit opening - Review and exercises }
+^-|fp||at|
+|
+pg| ***** 140 ***** |
+
+
+cs|4|at|^-{Responder should not pass his partner's opening on any hand with 6 or more total points.}
+
+|
+pg| ***** 141 ***** |
+
+
+cs|2|at|{Raising a major suit opening is very attractive and only 3-card support is required for the
+single raise (6-9) or the limit raise (10-11). We count short suit points when raising.}
+
+|
+pg| ***** 142 ***** |
+
+
+cs|3|at|{Raising a minor suit opening is less attractive. 4-card support is acceptable, but 5-card
+support is preferred. Single and limit raises of minors have the same ranges as with majors.}
+
+|
+pg| ***** 143 ***** |
+
+
+cs|1|at|{A 4-level raise is preemptive, suggesting excellent support (5 cards for majors, 6 cards
+for minors), a side singleton or void, and about the same values as a single raise (6-9).}
+
+|
+pg| ***** 144 ***** |
+
+
+cs|4|at|{With a hand containing support that is too strong for a limit raise, respond by bidding a
+new suit. Opener will not pass this forcing bid and you can show your support later.}
+
+|
+pg| ***** 145 ***** |
+
+
+cs|2|at|{A new suit shows 4 or more cards in that suit. 10 total points are required for a new suit at
+the 2-level. Respond in a 4-card major in preference to bidding notrump or raising a minor.}
+
+|
+pg| ***** 146 ***** |
+
+
+cs|3|at|{Responder should try to bid his longest new suit first. Respond in the higher-ranking of
+2 5-card new suits, but make the lowest possible bid with 4 cards in 2 or 3 new suits.}
+
+|
+pg| ***** 147 ***** |
+
+
+cs|1|at|{The 6-9 1NT response denies the ability to raise or to bid a new suit. The 13-15 2NT and 
+16-18 3NT responses show balanced hands with no 4-card major and without good support.}
+|
+pg| ***** 148 ***** |
+
+
+md||mb|1h|mb|p|
+nt|^z@3^b@2
+Here are some exercises to test you on responding to a 1-level suit opening bid:|
+
+ht|d|cs|3|at|^C{|ih|psk986ha75d6432c97|at|}|
+ht|e|cs|1|at|^O{|ia| 1hp?|at|}|
+hf|k|cq|3|lb|*BWhat would you respond to 
+your partner's opening bid?^^2h|
+ht|e|cs|1|at|^O{|ia| 1hp2h|at|}
+
+
+
+This hand, with 7 HCP and 1 short suit point, is strong enough to keep the bidding going. With 3-card support for partner's known 5-card major it is best to raise at once. There is no reason to confuse the issue by introducing your 4-card spade suit. You already know that hearts is at least an 8-card fit. Let partner in on the good news. Your single raise has a range of 6-9 total points.|
+pg| ***** 150 ***** |
+
+
+md||mb|1s|mb|p|ht|p|cs|3|at|^C{|ih|psat53ht64d5cat543|at|}|
+ht|q|cs|1|at|^O{|ia| 1sp?|at|}|
+hf|z|lb|*BWhat would you respond to your partner's opening bid?^^3s|
+ht|q|cs|1|at|^O{|ia| 1sp3s|at|}
+
+
+
+Respond 3@S, a limit raise showing 10-11 total points. This hand, with 8 HCP and 3 short suit points is too strong for a single raise.|
+pg| ***** 152 ***** |
+
+
+nt|^z@3^b@2|
+ht|b|cs|3|at|^C{|ih|psk9854hj653ct842|at|}|
+ht|c|cs|1|at|^O{|ia| 1sp?|at|}|
+hf|i|lb|*BWhat would you respond to your partner's opening bid?^^4s|
+ht|c|cs|1|at|^O{|ia| 1sp4s|at|}
+
+
+
+Respond with a preemptive raise to 4@S. This hand meets all of the qualifications for a 4@S response: 5-card support, a singleton or void, and around the strength of a single raise (6-9 total points). This hand is worth 9 total points once partner opens 1@S as the diamond void is counted for 5 short suit points.|
+pg| ***** 154 ***** |
+
+
+md||mb|1c|mb|p|ht|n|cs|3|at|^C{|ih|ps73hk982d854caq763|at|}|
+ht|o|cs|1|at|^O{|ia| 1cp?|at|}|
+hf|t|lb|*BWhat would you respond to your partner's opening bid?^^1h|
+ht|o|cs|1|at|^O{|ia| 1cp1h|at|}
+
+
+
+Respond 1@H. Your hand and club support are strong enough to make a limit raise of 3@C, but that bid would deny a 4-card major. If you respond 3@C and partner was also dealt 4 hearts, your 8-card major suit fit might never be found.
+
+Start with a forcing bid of 1@H. Partner will not pass and you will be able to show your club support at your next turn to bid.|
+pg| ***** 156 ***** |
+
+
+md||mb|1h|mb|p|
+nt|^z@3^b@2|
+ht|b|cs|3|at|^C{|ih|ps73h4dj965ckq8632|at|}|
+ht|c|cs|1|at|^O{|ia| 1hp?|at|}|
+hf|i|lb|*BWhat would you respond to your partner's opening bid?^^1n|
+ht|c|cs|1|at|^O{|ia| 1hp1n|at|}
+
+
+
+Respond 1NT. It is a shame to have to bid notrump with such an unbalanced weak hand, but a new suit response at the 2-level promises 10 or more total points. This hand has only 8 total points (6 HCP and 2 long suit points), not enough to respond 2@C. Raising hearts is also out of the question and this hand is too strong to pass. A 1NT response is the least of evils.|
+pg| ***** 158 ***** |
+
+
+md||mb|1c|mb|p|ht|n|cs|3|at|^C{|ih|pskj4haq8dat76ct72|at|}|
+ht|o|cs|1|at|^O{|ia| 1cp?|at|}|
+hf|t|lb|*BWhat would you respond to your partner's opening bid?^^2n|
+ht|o|cs|1|at|^O{|ia| 1cp2n|at|}
+
+
+
+Respond 2NT, describing a balanced hand with 13-15 HCP, no 4-card major, and no strong support for partner. A forcing 1@D response will only serve to confuse matters. You can describe your hand precisely with 1 bid so you should make that bid. The fact that you have solid stoppers in all the other suits makes a 2NT response all the more attractive.|
+pg| ***** 160 ***** |
+
+
+nt|^z@3^b@2|
+ht|b|cs|3|at|^C{|ih|psj9876hkt542d7c42|at|}|
+ht|c|cs|1|at|^O{|ia| 1cp?|at|}|
+hf|i|lb|*BWhat would you respond to your partner's opening bid?^^1s|
+ht|c|cs|1|at|^O{|ia| 1cp1s|at|}
+
+
+
+Respond 1@S. Your 6 total points (4 HCP and 2 long suit points) are just enough for a response. Responder should start with the higher-ranking of 2 5-card suits regardless of the relative strength of the suits.|
+pg| ***** 162 ***** |
+
+
+ht|n|cs|3|at|^C{|ih|psaq53hakj7dj862ct|at|}|
+ht|o|cs|1|at|^O{|ia| 1cp?|at|}|
+hf|t|lb|*BWhat would you respond to your partner's opening bid?^^1d|
+ht|o|cs|1|at|^O{|ia| 1cp1d|at|}
+
+
+
+Respond 1@D. With 4 cards in 2 or 3 new suits the responder should start with the suit that keeps the bidding the lowest. There is no need to worry about partner passing 1@D. The new suit response is forcing.
+
+If partner has a 4-card major he will show it when he rebids and an 8-card major suit fit will be found. Otherwise 3NT will likely be the best contract.|
+pg| ***** 164 ***** |
+
+
+nt|^z@3^b@2|
+ht|b|cs|3|at|^C{|ih|psaqj7h5dt8732cj94|at|}|
+ht|c|cs|1|at|^O{|ia| 1cp?|at|}|
+hf|i|lb|*BWhat would you respond to your partner's opening bid?^^1d|
+ht|c|cs|1|at|^O{|ia| 1cp1d|at|}
+
+
+
+Respond 1@D. Despite spades being a stronger suit and a major suit, it is correct to respond in your longest suit first. Your partner will not pass this forcing response. If an 8-card fit exists in spades there will be plenty of time to find out about it later.|
+pg| ***** 166 ***** |
+
+
+md||mb|1d|mb|p|ht|n|cs|3|at|^C{|ih|pst962h8d95caq9623|at|}|
+ht|o|cs|1|at|^O{|ia| 1dp?|at|}|
+hf|t|lb|*BWhat would you respond to your partner's opening bid?^^1s|
+ht|o|cs|1|at|^O{|ia| 1dp1s|at|}
+
+
+
+Respond 1@S even though your spades are shorter (and weaker) than your clubs. You would like to respond in your longest suit first, but you lack the 10 total points that a new suit response at the 2-level requires. Since you are not strong enough to show your longest suit by bidding 2@C, you might as well show your shorter suit with a 1@S response.|
+pg| ***** 168 ***** |
+
+
+nt|^z@3^b@2|
+ht|b|cs|3|at|^C{|ih|ps9654hq8432ct643|at|}|
+ht|c|cs|1|at|^O{|ia| 1dp?|at|}|
+hf|i|lb|*BWhat would you respond to your partner's opening bid?^^p|
+ht|c|cs|1|at|^O{|ia| 1dpp|at|}
+
+
+
+Pass. Any response by you would promise 6 or more total points. You have only 3 total points (2 HCP and 1 long suit point). It is too bad that you have a void in partner's suit, but it is too dangerous to suggest another trump suit. Partner will play you for a better hand if you respond and could place the contract at a high level as a result.|
+pg| ***** 170 ***** |
+
+
+ht|n|cs|3|at|^C{|ih|psajthkq9dq65caj98|at|}|
+ht|o|cs|1|at|^O{|ia| 1dp?|at|}|
+hf|t|lb|*BWhat would you respond to your partner's opening bid?^^3n|
+ht|o|cs|1|at|^O{|ia| 1dp3n|at|}
+
+
+
+Respond 3NT to describe a balanced hand with 16-18 HCP, no 4-card major, and no strong support for partner's suit. This 17 HCP hand with stoppers in all the unbid suits is perfect for a 3NT response.|
+pg| ***** 172 ***** |
+
+
+nt|^z@3^b@2|
+ht|b|cs|3|at|^C{|ih|ps54h32cJ643dajt82|at|}|
+ht|c|cs|1|at|^O{|ia| 1dp?|at|}|
+hf|i|lb|*BWhat would you respond to your partner's opening bid?^^2d|
+ht|c|cs|1|at|^O{|ia| 1dp2d|at|}
+
+
+
+Make a single raise to 2@D. 5-card support is good enough to raise a minor suit (4 cards will do in a pinch). Also, this response denies a 4-card major. This 8 total point hand (6 HCP and 2 short suit points) meets all of the qualifications for a 6-9 total point single raise to 2@D. If your 4-card suit had been a major (instead of clubs) it would have been correct to respond in that suit.|
+pg| ***** 174 ***** |
+
+
+md||mb|1s|mb|p|ht|n|cs|3|at|^C{|ih|psaq87h3dkq973ca72|at|}|
+ht|o|cs|1|at|^O{|ia| 1sp?|at|}|
+hf|t|lb|*BWhat would you respond to your partner's opening bid?^^2d|
+ht|o|cs|1|at|^O{|ia| 1sp2d|at|}
+
+
+
+Respond 2@D. This hand is worth 18 total points once partner opens 1@S (15 HCP and 3 short suit points). Despite holding 4-card support for partner's major there is no raise we can make to show this strong of a hand. The solution is to start with a forcing new suit bid.
+
+2@D is the correct response. Partner will not pass and you will be able to show your strength and spade support later in the bidding.|
+pg| ***** 176 ***** |
+
+
+qx|1nt,Responding to a 1NT opening|
+nt|^z@3^b@2|cs|5|fp|t|at|
+^-{ Responding to a 1NT opening }
+^-|fp||at|
+When the opening bid is 1NT the responder immediately knows a great deal about both the strength and distribution of the opening bidder's hand:
+
+|cs|1|at|^-{Responder knows that the opening bidder has between 15 and 17 HCP.}
+
+|cs|2|at|{Responder knows that the opening bidder has a balanced
+hand (no singletons or voids and at most 1 doubleton).}
+^-
+|
+pg| ***** 177 ***** |
+
+
+at|As the 1NT opening paints a very accurate picture of opener's hand, the responder is often in a position to immediately decide on the best strain and level for the contract. This is generally not the case when the opening bid is one of a suit. Suit opening bids are wide-ranging, both in terms of strength (13-21 total points) and distribution.
+
+|
+pg| ***** 178 ***** |
+
+
+at|The narrow HCP range of a 1NT opening lets the responder know right away if a game or slam contract is either possible or certain. If, for example, the responder has 11 total points he will know that the partnership has between 27 and 29 combined points - more than enough for the game contracts of 4@S, 4@H, and 3NT (requiring 25 combined total points), but not enough for 5@D, 5@C, or any slam contract.
+
+|
+pg| ***** 179 ***** |
+
+
+at|The 1NT opening also tells responder that the opener has at least 2-card support for all 4 suits, which will often allow the responder to know the best strain at once. For example, when responder is dealt any 6-card suit he will know that the partnership has at least an 8-card fit.|
+pg| ***** 180 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Here are some examples of how easy it can be to respond to a 1NT opening bid:
+
+|
+pg| ***** 181 ***** |
+
+
+ht|c|cs|3|at|^D{|ih|ps842ht97dk8caqj54|at|} 
+|ht|d|cs|1|at|^N{|ia| 1np?|at|}|
+pg| ***** 182 ***** |
+
+
+ht|d|cs|1|at|^N{|ia| 1np3n|at|}
+
+
+
+Raise to the game contract of 3NT. With 10 HCP and 1 long suit point the partnership is certain to have more than the 25 total points that 3NT requires, even if the opening bid is based on a minimum hand of 15 HCP. There is no need to worry about an 8-card major suit fit as partner is unlikely to have a 5-card major for his 1NT opening. Don't worry about your lack of major suit stoppers either. Partner has a lot of high cards and it is very likely that he has stoppers in both major suits.
+
+|
+pg| ***** 183 ***** |
+
+
+ht|q|cs|3|at|^D{|ih|ps7haqj543dj852c76|at|} 
+|ht|r|cs|1|at|^N{|ia| 1np?|at|}|
+pg| ***** 184 ***** |
+
+
+ht|r|cs|1|at|^N{|ia| 1np4h|at|}
+
+
+
+Respond with 4@H (a game contract). You have 10 total points (8 HCP and 2 long suit points). The partnership must have at least the 25 combined total points required for 4@H. You know hearts is the strain of choice as the partnership must have at least an 8-card fit in that major suit.|
+pg| ***** 185 ***** |
+
+
+nt|^z@3^b@2|cs|1|at|
+^B{|ia| 1np3n|at|} ^O{|ia| 1np4h|at|}
+
+|cs|2|at|^-{If responder bids a game contract after a 1NT opening he is making a signoff bid.
+A signoff bid sets the contract and informs partner that he should pass.}
+^-
+|
+pg| ***** 186 ***** |
+
+
+at|In a sense, a signoff bid is the opposite of a forcing bid. A signoff bid tells partner that you know what the contract should be and that he must pass. A forcing bid suggests that you need more information to know what the contract should be and that partner must not pass.
+
+As with forcing bids, the rules of bridge do not demand that a player respect his partner's signoff bids. It is perfectly legal for the 1NT opening bidder not to pass after both of the above bidding sequences. It is legal for opener to keep bidding here, but it would be a horrible idea for him to do so. The opener has already described his hand, allowing the responder to make the final decision for the partnership.
+
+|
+pg| ***** 187 ***** |
+
+
+cs|3|at|^-{Bidding some more after your partner signs off is an insult to his judgement.
+Have confidence in your partner's judgement - you are members of the same team!}
+ 
+|
+pg| ***** 188 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Sometimes the responder to a 1NT opening bid would like to sign off in a partial:
+|n#|3|cs|3|at|^C    {|ih|psjt8764h965d2cj84|at|} ^P    {|ih|ps5hj54dqt873ct632|at|}
+
+|ht|i|n#|4|cs|1|at|^B{|ia| 1np?|at|} ^O{|ia| 1np?|at|}
+
+|
+pg| ***** 189 ***** |
+
+
+at|The first hand has only 4 total points (2 HCP and 2 long suit points). Even if the notrump opener has a maximum hand with 17 HCP there is no way that the partnership has even close to the 25 combined total points that a game contract requires. This hand would like to signoff in a partial contract. There is a known 8-card fit (or better) in the spade suit. It would be nice to play in 1@S, but the 1NT opening makes this impossible. How about 2@S?
+
+|
+pg| ***** 190 ***** |
+
+
+at|The correct bid is 2@S. A new suit by responder is forcing opposite a 1 of a suit opening bid, but it is a signoff bid opposite a 1NT opening. The message of the 2@S response is: "I already know you have a strong hand partner, but I have a weak hand with long spades. Please leave me alone and let me play a contract with spades as trump at the lowest possible level!"|
+ht|i|n#|4|cs|1|at|^B{|ia| 1np2s|at|}
+|
+pg| ***** 191 ***** |
+
+
+ht|u|n#|5|at|Similarly, the second hand should signoff in 2@D. The chances are good that an 8-card fit exists in diamonds. Even if the opener has only 2 diamonds, the resulting 7-card fit could well be better than notrump (since responder has a weak and unbalanced hand).|
+ht|i|n#|4|cs|1|at|^O{|ia| 1np2d|at|}
+|
+pg| ***** 192 ***** |
+
+
+nt|^z@3^b@2
+|cs|1|at|^B{|ia| 1np2s|at|} ^O{|ia| 1np2d|at|}
+
+When responder signs off in a partial contract opposite a 1NT opening he is forced to go to the 2-level. That means that 8 tricks will be required for the contract to succeed as opposed to the 7 tricks that 1NT requires. Nevertheless, when responder is dealt a weak hand with a long suit, it is usually best to have that suit as trump despite the necessity of increasing the level of the contract.
+
+|
+pg| ***** 193 ***** |
+
+
+cs|3|at|^C    {|ih|psjt8764h965d2cj84|at|} |n#|t|at|^P    {|ih|ps5hj54dqt873ct632|at|}|n^|t|at|
+
+Think about how many tricks these hands rate to be worth both at notrump and with their long suits as trump. Neither hand is likely to be of much help in winning tricks in 1NT. Both hands are likely to win several tricks, however, with their respective long suits as trump. The advantage of a trump suit will usually more than compensate for the extra trick that a 2-level contract demands.
+
+|
+pg| ***** 194 ***** |
+
+
+cs|2|at|^-{Hands with less than 8 total points should sign off in a partial after a 1NT
+opening, either by passing 1NT or by bidding a 5-card (or longer) suit at the 2-level.}
+|
+pg| ***** 195 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|8 total points is a magic number when your partner opens 1NT. With less than 8 total points you know that the partnership cannot have the 25 combined total points required for a game contract, even if the opener has a 17 HCP maximum. Once you know that a game contract is impossible the object becomes finding the best strain at the lowest possible level.
+
+|
+pg| ***** 196 ***** |
+
+
+ht|f|cs|3|at|^D{|ih|psq72hKt8dt954cq86|at|} 
+|ht|g|cs|1|at|^N{|ia| 1np?|at|}|
+pg| ***** 197 ***** |
+
+
+ht|g|cs|1|at|^N{|ia| 1npp|at|}
+
+
+
+Pass. With only 7 total points (all in HCP) you know a game contract is not recommended since partner has 17 HCP at most. You might have an 8-card fit somewhere, but you would be taking a big risk in signing off by bidding 2 of a suit. Diamonds is your longest suit, but you have only 4 of them. If partner has a doubleton diamond then 2@D will be a very silly contract.
+
+This hand looks good for notrump anyway as it is very balanced and contains some useful high cards. Pass 1NT and let partner play there - he will thank you for providing such a nice dummy.
+
+|cs|3|ht|u|at|^D{|ih|ps572hKt8dt954c986|at|}|
+ht|u|at|^MThis hand should also pass a 1NT opening despite
+^Mits pathetic 3 total points. Balanced hands, even
+^Mthose that are very weak, tend to play best in
+^Mnotrump. Do not risk a silly 6-card trump fit with a 
+^Msignoff bid of 2@D. Pass 1NT and hope that your
+^Mpartner is ready for a challenge as declarer!|
+pg| ***** 198 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Suppose we add a Queen to the 7-point hand we saw, putting it above the 8-point threshold:|
+ht|c|cs|3|at|^D{|ih|psq72hKt8dq954cq86|at|} 
+|ht|d|cs|1|at|^N{|ia| 1np?|at|}
+
+
+
+This 9-point hand is too strong to pass 1NT. If the opener has a hand with 16 or 17 HCP the partnership will have enough combined total points to try the game contract of 3NT. Yet, this hand is not quite strong enough to bid 3NT. If partner has a 15-point 1NT opening then 3NT rates to be too high (as there will be only 24 combined total points). What to do?
+
+|
+pg| ***** 199 ***** |
+
+
+at|Considering that passing 1NT would be an underbid and bidding 3NT would be an overbid, it should come as no surprise that the correct bid is a compromise between these choices - 2NT.
+
+|ht|d|cs|1|at|^N{|ia| 1np2n|at|}|
+pg| ***** 200 ***** |
+
+
+ht|p|cs|2|at|^-{Raising a 1NT opening to 2NT is an invitational bid. The opening bidder is invited to
+go on to 3NT if he has a maximum 1NT opening. He passes 2NT with a minimum hand.}
+^-
+|
+pg| ***** 201 ***** |
+
+
+at|Invitational bids are neither signoffs (which must be passed) nor forcing bids (which must not be passed). When your partner makes an invitational bid you are being asked to decide whether you should pass or not, based on where your hand falls within the range that you have shown.
+
+|
+pg| ***** 202 ***** |
+
+
+cs|4|at|^-{The invitational raise of 1NT to 2NT suggests 8 or 9 total points in a balanced hand.
+Opener should pass with 15 HCP, bid 3NT with 17 HCP, and use his judgement with 16 HCP.}
+|
+pg| ***** 203 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Let's have a closer look at the definition of the 2NT response to a 1NT opening bid:
+|n#|7|cs|1|at|^-{|ia| 1np2n|at|}
+
+|cs|4|at|{The invitational raise of 1NT to 2NT suggests 8 or 9 total points in a balanced hand.
+Opener should pass with 15 HCP, bid 3NT with 17 HCP, and use his judgement with 16 HCP.}
+^-
+|
+pg| ***** 204 ***** |
+
+
+at|The concept of opener "using his judgement" with a 16 HCP hand may seem mysterious. If the responder's 2NT invitation is based on 8 total points then it would be best for the opener to pass with 16 HCP as the partnership will have only 24 combined total points. If responder has 9 total points, however, the opener would do best to go on to 3NT with a 16 HCP hand. How can opener's judgement possibly help him decide whether responder has 8 or 9 total points?
+
+|
+pg| ***** 205 ***** |
+
+
+cs|2|at|^-{Opener cannot know whether the 2NT response contains 8 total points or 9 total points.
+With a 16 HCP hand he must judge whether he has a ^*Igood^*N 16 HCP or a ^*Ibad^*N 16 HCP.}
+^-|
+pg| ***** 206 ***** |
+
+
+n#|7|at|^^Not all 16 HCP hands are created equal. Have a look at these 2 hands which both contain 16 HCP and try to decide which hand is better:
+
+|cs|3|ht|r|n#|7|at|^E {|ih|psat8hatckjt84dat9|at|} |n#|u|at|^P{|ih|pssqjhakj2dkq93c652|at|}|
+pg| ***** 207 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Hopefully you like the first 16 HCP hand better. This hand should accept a 2NT invitation, while the second hand should decline a 2NT invitation.
+
+|cs|3|at|^D   {|ih|psat8hatckjt84dat9|at|} |n#|t|at|^P   {|ih|pssqjhakj2dkq93c652|at|} |n^|t|at|
+
+|cs|1|at|^C{|ia| 1np2np3n|at|} ^O{|ia| 1np2npp|at|}
+
+There are several reasons why the first hand is better, despite both hands having 16 HCP:
+
+|
+pg| ***** 208 ***** |
+
+
+cs|2|at|^-{The first hand has a 5-card suit. We do not count long suit points for notrump openings,
+but it is still the case that long suits will often result in extra tricks for the declarer.}
+
+|
+pg| ***** 209 ***** |
+
+
+cs|4|at|{The first hand has far more 10s, 9s, and 8s, than the second hand. These cards do not
+count for any points, but we have seen that they are often useful in winning extra tricks.}
+
+|
+pg| ***** 210 ***** |
+
+
+cs|3|at|{The first hand has stoppers in all suits. The second hand has no club stopper at all and the
+spade holding may also be worthless (the Queen and Jack could fall under the Ace and King).}
+
+|
+pg| ***** 211 ***** |
+
+
+nt|^z@3^b@2|cs|4|at|
+^-{When partner invites and your decision is close, consider factors like the presence of a
+5-card suit, strong spot cards, and stoppers to decide whether to accept or to decline.}
+^-
+|
+pg| ***** 212 ***** |
+
+
+at|Considering these kind of things is what judgement is all about. Good judgement allows a player to look beyond point count in evaluating the potential of a hand.
+
+|
+pg| ***** 213 ***** |
+
+
+at|Suppose your partner opens 1NT and you have the following tremendous hand:
+
+|cs|3|ht|j|at|^D{|ih|psaqjhkq4dakt4ck98|at|}
+|cs|1|ht|k|at|^N{|ia| 1np?|at|}|
+pg| ***** 214 ***** |
+
+
+ht|k|at|^N{|ia| 1np7n|at|}
+
+
+
+Respond 7NT - your first grand slam bid! You have a whopping 22 HCP. Even if partner has a minimum 1NT opening with 15 HCP, the 37 combined total points required for a grand slam contract are certain to be present. Notrump is likely to be best when both partners are known to have balanced hands - there is no need to search for a possible trump suit.
+
+|
+pg| ***** 215 ***** |
+
+
+cs|2|at|^-{A completely balanced hand contains a 4-card suit and 3 3-card suits. Bridge players use
+the term 4-triple-3 (or 4333) to describe such hands. 4333 hands usually belong in notrump.}
+^-
+|
+pg| ***** 216 ***** |
+
+
+at|A 4333 hand is as balanced as a 13-card hand can ever be. These hands scream for notrump play, especially when partner is also known to be balanced.|
+pg| ***** 217 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Suppose we remove an Ace from the last hand, leaving "only" 18 HCP:
+
+|cs|3|ht|c|at|^D{|ih|psaqjhkq4dkt42ck98|at|}
+|cs|1|ht|d|at|^N{|ia| 1np?|at|}|
+pg| ***** 218 ***** |
+
+
+ht|d|at|^N{|ia| 1np6n|at|}
+
+
+
+Respond 6NT - your first small slam bid! If partner has a minimum 1NT with 15 HCP the 33 combined total points that a small slam requires are certain to be present. Even if partner has a maximum hand with 17 HCP, the partnership will not have enough for a grand slam (requiring 37 combined total points). Your 18 HCP tell you the best level for the contract and your 4333 distribution tells you the best strain. Place the contract in 6NT.
+
+The 6NT response to a 1NT opening is an absolute signoff bid. Opener has already described his hand and responder has placed the contract based on this description. It would be a serious mistake for the 1NT opener to go on to the 7-level after a 6NT signoff response.
+
+|
+pg| ***** 219 ***** |
+
+
+cs|2|at|^-{Raise 1NT to 6NT with a balanced hand containing 18 or 19 HCP.}
+
+|
+pg| ***** 220 ***** |
+
+
+cs|4|at|{Raise 1NT to 7NT with a balanced hand containing 22 or more HCP.}
+^-
+|
+pg| ***** 221 ***** |
+
+
+at|What if the responder's hand falls between the 2 ranges? If responder has 20 or 21 HCP a small slam is certain, but the 37 combined total points that a grand slam requires will only be present if the 1NT opener has a maximum. How can responder invite a grand slam contract?|
+pg| ***** 222 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|This hand contains 21 HCP, enough so that 6NT is certain and 7NT is possible:
+
+|cs|3|ht|c|at|^D{|ih|psaqjhkq4daq42ck98|at|}
+|cs|1|ht|d|at|^N{|ia| 1np?|at|}|
+pg| ***** 223 ***** |
+
+
+ht|d|at|^N{|ia| 1np5n|at|}
+
+
+
+Raise to 5NT. This is a forcing bid that carries the following message: "I have enough points that I know a small slam will be safe. If you have a maximum hand then we should be in a grand slam. Please make the final decision, partner!"
+
+|
+pg| ***** 224 ***** |
+
+
+cs|2|at|^-{Raise 1NT to 5NT with a balanced hand containing 20 or 21 HCP. Opener will
+bid 6NT with 15 HCP, bid 7NT with 17 HCP, and use his judgement with 16 HCP.}
+^-
+|
+pg| ***** 225 ***** |
+
+
+at|The 5NT response to a 1NT opening is the first example we have seen of a bid that is ^*Iboth^*N forcing and invitational. This bid is forcing because it guarantees the values to play at least a small slam. It is also an invitational bid because the opener is invited to go on to 7NT with a maximum hand.
+
+|
+pg| ***** 226 ***** |
+
+
+at|Remember that 5NT is among the least attractive of all contracts. 5NT awards the same bonus points to a successful declarer as the game contract of 3NT, but demands that the declarer win 2 additional tricks. As such, it would make no sense to use the 5NT response as a signoff bid - the responder would do much better to sign off in 3NT. Our definition of the 5NT response takes a useless bid and gives it a very useful meaning.|
+pg| ***** 227 ***** |
+
+
+nt|^z@3^b@2
+Suppose responder has either 16 or 17 HCP, enough so that 6NT is possible opposite a maximum 1NT opening bid:
+|cs|3|ht|e|at|^D{|ih|psaqjhkq4dqt42ck98|at|}
+|cs|1|ht|f|at|^N{|ia| 1np?|at|}|
+pg| ***** 228 ***** |
+
+
+ht|f|at|^N{|ia| 1np4n|at|}
+
+
+
+Raise to 4NT. This non-forcing and invitational bid carries the following message: "I have enough points that we should be safe in 4NT opposite a minimum 1NT opening, but we belong in a small slam opposite a maximum 1NT. Please make the final decision, partner!"
+
+|
+pg| ***** 229 ***** |
+
+
+cs|2|at|^-{Raise 1NT to 4NT with a balanced hand containing 16 or 17 HCP. Opener will
+pass with 15 HCP, bid 6NT with 17 HCP, and use his judgement with 16 HCP.}
+^-
+|
+pg| ***** 230 ***** |
+
+
+at|The only problem with the 4NT response to a 1NT opening is that 4NT will become the final contract when opener is minimum. 4NT awards the same bonus points as 3NT, but requires an additional trick. As such, 4NT is a contract that should generally be avoided.
+
+The good news is that even if both opener and responder have minimum hands for their bids there will still be 31 combined HCP between the 2 hands. This will almost always be enough for a 4NT contract to succeed.|
+pg| ***** 231 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Finally, consider this 15 HCP balanced hand opposite a 1NT opening bid:
+
+|cs|3|ht|c|at|^D{|ih|psaqjhkq4d9842ck98|at|}
+|cs|1|ht|d|at|^N{|ia| 1np?|at|}|
+pg| ***** 232 ***** |
+
+
+ht|d|at|^N{|ia| 1np3n|at|}
+
+
+
+Raise to 3NT. We are back to where we started in examining responses to a 1NT opening. This game contract should be easy, but a slam is not in the cards even if opener has 17 HCP. Place the contract in 3NT, an absolute signoff bid.
+
+|
+pg| ***** 233 ***** |
+
+
+cs|2|at|^-{Raise 1NT to 3NT with a balanced hand containing 10 to 15 HCP.}
+^-
+|
+pg| ***** 234 ***** |
+
+
+at|Occasionally responder should raise 1NT to 3NT with an unbalanced hand:|
+cs|3|ht|r|at|^D{|ih|ps5h962dakt7653ct3|at|}
+|cs|1|ht|s|at|^N{|ia| 1np?|at|}|
+pg| ***** 235 ***** |
+
+
+ht|s|at|^N{|ia| 1np3n|at|}
+
+
+
+|ht|x|n#|8|at|It is correct to raise 1NT to 3NT with this unbalanced 7 HCP hand. There is a good chance that this hand will win 7 diamond tricks all by itself. As we have learned, 3NT is usually a better contract than 5@D, even with the 9-card (or longer) diamond fit that must be present.|
+pg| ***** 236 ***** |
+
+
+nt|^z@3^b@2
+We now have a complete set of responses for balanced hands opposite a 1NT opening bid:
+
+|
+pg| ***** 237 ***** |
+
+
+cs|1|at|^-{Pass 1NT with a hand containing fewer than 8 HCP and no 5-card suit.}
+ 
+|
+pg| ***** 238 ***** |
+
+
+cs|4|at|{Raise 1NT to 2NT, inviting game, with a hand containing 8 or 9 HCP.}
+
+|
+pg| ***** 239 ***** |
+
+
+cs|2|at|{Raise 1NT to 3NT, signing off in game, with a hand containing 10 to 15 HCP.}
+
+|
+pg| ***** 240 ***** |
+
+
+cs|3|at|{Raise 1NT to 4NT, inviting a small slam, with a hand containing 16 or 17 HCP.}
+
+|
+pg| ***** 241 ***** |
+
+
+cs|1|at|{Raise 1NT to 6NT, signing off in a small slam, with a hand containing 18 or 19 HCP.}
+
+|
+pg| ***** 242 ***** |
+
+
+cs|4|at|{Raise 1NT to 5NT, inviting a grand slam, with a hand containing 20 or 21 HCP.}
+
+|
+pg| ***** 243 ***** |
+
+
+cs|2|at|{Raise 1NT to 7NT, signing off in a grand slam, with a hand containing 22 or more HCP.}
+^-
+|
+pg| ***** 244 ***** |
+
+
+at|We have also learned what to do with some unbalanced hands opposite a 1NT opening bid:
+
+|
+pg| ***** 245 ***** |
+
+
+cs|3|at|^-{With less than 8 total points and a 5-card (or longer) suit, sign off in 2 of the long suit.}
+
+|
+pg| ***** 246 ***** |
+
+
+cs|1|at|{With 10 to 15 total points and a 6-card (or longer) major suit, sign off in 4 of the long major.}
+
+|
+pg| ***** 247 ***** |
+
+
+cs|4|at|{With 10 to 15 total points and a 6-card (or longer) minor suit, raise 1NT to 3NT.
+3NT will usually be a better contract than 5 of the long minor in this case.}
+
+|
+pg| ***** 248 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|How about if the responder is dealt this sort of hand:
+
+|cs|3|ht|c|at|^D{|ih|psJ5haq863dk76cqt4|at|}
+|cs|1|ht|d|at|^N{|ia| 1np?|at|}
+
+
+
+|at|This hand has 13 total points (12 HCP and 1 long suit point), more than enough to insist on a game contract opposite a 15-17 HCP 1NT opening bid. The only question is which game contract to play. This hand contains a 5-card heart suit. If opener has 3 or more hearts then 4@H will probably be best (as there will be an 8-card major suit fit). If opener has a doubleton heart then 3NT rates to be best. How can responder choose between 4@H and 3NT?
+
+|
+pg| ***** 249 ***** |
+
+
+at|Respond 3@H, a game forcing bid. There is no way for responder to know whether 3NT or 4@H is best, but the 3@H response will put opener in a good position to make this decision. 3@H describes a hand with 5 or more hearts and at least 10 total points. Opener will raise to 4@H with 3-card (or longer) support, but he will rebid 3NT with a doubleton heart.|
+ht|d|at|^N{|ia| 1np3h|at|}|
+pg| ***** 250 ***** |
+
+
+ht|r|n#|7|cs|2|at|^-{The 3@S and 3@H responses to a 1NT opening promise 5 or more cards in the suit named
+and 10 or more total points. These forcing bids ask opener if he has 3-card support.}
+^-
+|
+pg| ***** 251 ***** |
+
+
+ht|u|n#|7|at|Note that the 3@H and 3@S responses to 1NT have no upper limit in terms of total points. This is how the responder would start on a hand with interest in slam that contained a 5-card (or longer) major suit. There is no need to worry about opener passing these forcing bids.|
+pg| ***** 252 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Consider this strong hand with 5 cards in both minor suits:
+
+|cs|3|ht|c|at|^D{|ih|ps7haQdkq964caq843|at|}
+|cs|1|ht|d|at|^N{|ia| 1np?|at|}
+
+
+
+This hand has 19 total points (17 HCP and 2 long suit points), enough to insist on a small slam opposite a 15-17 HCP 1NT opening bid. Responder's problem is which small slam to play. The opener is certain to have at least 3-card support for at least one of responder's minor suits (as the 1NT opener will never have 2 doubletons). Responder would like to find out which minor suit opener prefers and play a small slam contract with that suit as
+trump.
+
+|
+pg| ***** 253 ***** |
+
+
+at|Respond 3@D. This bid is forcing to game, promises at least 5 diamonds, and a hand that is interested in contracts other than 3NT. If the opener goes back to 3NT, suggesting poor support for diamonds, responder can bid his clubs next and see how opener likes that suit. As with other situations we have seen, it is correct to bid the higher-ranking of 2 5-card suits.|
+cs|1|ht|d|at|^N{|ia| 1np3d|at|}
+|
+pg| ***** 254 ***** |
+
+
+cs|2|ht|r|n#|7|at|^-{The 3@S, 3@H, 3@D, and 3@C responses to 1NT promise 5-card (or longer) suits and enough
+total points to force to game. Opener either raises or bids 3NT, depending on his support.}
+^-
+|
+pg| ***** 255 ***** |
+
+
+ht|u|n#|7|at|It should also be noted that these responses deny the ability to place the contract. Simply respond 4 of a long major or 3NT with a long minor if you know such a contract is best. Responding 3 of a suit suggests uncertainty as to what the final contract should be.|
+pg| ***** 256 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|We almost have a complete set of responses to a 1NT opening bid. There is one problem that responder could have, however, that we cannot handle as of yet. Suppose the responder has:
+
+|cs|3|ht|c|at|^D{|ih|pskj62haq84dj965c9|at|}
+|cs|1|ht|d|at|^N{|ia| 1np?|at|}
+
+
+
+This hand contains 11 total points (all in HCP). Responder has enough to insist on game, but either 4@S, 4@H, or 3NT could be best. This hand contains 4 cards in both major suits. If opener also has a 4-card major then the contract should be 4 of that suit (where the partnership has an 8-card major suit fit). If opener does not have a 4-card major then 3NT rates to be best.
+
+|
+pg| ***** 257 ***** |
+
+
+at|So far we have no way of asking opener if he has 4-card support for a major suit - the 3@S and 3@H responses promise 5-card suits and ask opener to raise with 3-card support. Neither of these bids will get the job done on this hand - the partnership could end up playing in a 7-card major suit fit (3NT rates to be better in this case).
+
+|
+pg| ***** 258 ***** |
+
+
+at|The solution to this problem is going to look very strange. Responder should bid 2@C!
+|cs|1|ht|d|at|^N{|ia| 1np2c|at|}|
+pg| ***** 259 ***** |
+
+
+ht|t|n#|3|at|What? The 2@C response is supposed to be a signoff bid, suggesting 5 or more clubs and a hand with fewer than 8 total points. The last contract this hand would want to play in is 2@C.
+
+|
+pg| ***** 260 ***** |
+
+
+cs|2|at|^-{Don't panic! Our bidding system uses the 2@C response to 1NT as an artificial forcing bid.}
+
+|
+pg| ***** 261 ***** |
+
+
+nt|^z@3^b@2|cs|3|ht|c|at|^D{|ih|pskj62haq84dj965c9|at|}
+|cs|1|ht|d|at|^N{|ia| 1np2c|at|}
+^^
+
+The 2@C response to a 1NT opening bid is the second example we have seen of a conventional bid. The first convention that we learned was the 2@C opening bid that says nothing about clubs, but instead carries the message, "My hand has 22 or more total points and is inappropriate for a 3NT opening bid."
+
+|
+pg| ***** 262 ***** |
+
+
+cs|2|at|The 2@C response to 1NT is similarly artificial - this bid says nothing about clubs. We will use this response as a forcing bid that asks the opening bidder if he has a 4-card major suit.
+
+|ht|o|n#|5|at|^-{This artificial 2@C response to a 1NT opening bid is called the Stayman convention.
+Stayman is one of the most popular and useful conventions ever devised.}
+
+|
+pg| ***** 263 ***** |
+
+
+cs|4|at|{The Stayman 2@C response to a 1NT opening asks the opener if he has a 4-card major.
+The opener replies by bidding a 4-card major if he has one. Otherwise opener bids 2@D.}
+
+|
+pg| ***** 264 ***** |
+
+
+cs|1|at|{Opener has only 3 choices after Stayman. 2@D shows no 4-card major, 2@H shows 4 hearts,
+and 2@S shows 4 spades. If the opener has 4 cards in ^*Iboth^*N majors he should respond 2@H.}
+
+|
+pg| ***** 265 ***** |
+
+
+cs|3|at|{Opener has no other choices after Stayman - in particular, he must never pass 2@C!}
+|
+pg| ***** 266 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Watch how well the Stayman convention works with the difficult hand we have been examining:
+
+|cs|3|ht|c|at|^D{|ih|pskj62haq84dj965c9|at|}
+|cs|1|ht|d|at|^N{|ia| 1np2cp?|at|}
+
+
+Partner has opened 1NT, we have bid 2@C, Stayman, and it is partner's turn to rebid.
+
+|
+pg| ***** 267 ***** |
+
+
+at|If partner rebids 2@D, denying a 4-card major, we will sign off in 3NT. Once we know that there is no 8-card major suit fit it is very likely that 3NT is the best game contract.|
+cs|1|ht|d|at|^N{|ia| 1np2cp2dp3n|at|}|
+pg| ***** 268 ***** |
+
+
+ht|q|at|If partner rebids 2@H (instead of 2@D), showing 4 cards in that suit, we will sign off in 4@H, secure in the knowledge that an 8-card major suit fit has been found.|
+cs|1|ht|d|at|^N{|ia| 1np2cp2hp4h|at|}|
+pg| ***** 269 ***** |
+
+
+ht|t|at|Similarly, if partner rebids 2@S (instead of 2@D or 2@H), showing 4 cards in that suit, we will sign off in 4@S, a known 8-card major suit fit.|
+cs|1|ht|d|at|^N{|ia| 1np2cp2sp4s|at|}|
+pg| ***** 270 ***** |
+
+
+ht|w|cs|2|at|^-{If the responder rebids 3NT after opener's 2@D reply to Stayman or raises opener's
+2@H or 2@S reply to game, he is making a signoff bid - the 1NT opener should always pass.}
+|
+pg| ***** 271 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Here is another good advertisement for the Stayman convention:
+
+|cs|3|ht|c|at|^D{|ih|pskj62hA84dt962c94|at|}
+|cs|1|ht|d|at|^N{|ia| 1np2cp?|at|}
+
+
+This 8-point hand is only strong enough to invite game opposite a 15-17 HCP 1NT opening bid. If this hand contained no 4-card major it would invite by responding 2NT. With 4 spades, however, it is a good idea to investigate for an 8-card fit in that suit. Stayman does the trick.
+
+|
+pg| ***** 272 ***** |
+
+
+at|If opener denies a 4-card major by rebidding 2@D, this hand should rebid an invitational 2NT. There is no 8-card major suit fit, but 3NT could still be worth a try if the opener has a maximum.|
+cs|1|ht|d|at|^N{|ia| 1np2cp2dp2n|at|}|
+pg| ***** 273 ***** |
+
+
+ht|r|at|If opener shows 4 hearts by rebidding 2@H, an invitational 2NT is still the correct rebid. If opener also has a 4-card spade suit he will then bid 3@S with a minimum and 4@S with a maximum. If opener has fewer than 4 cards in spades he will pass 2NT with a minimum, but go on to 3NT with a maximum. The recommended strain and level will always be found.
+|cs|1|ht|d|at|^N{|ia| 1np2cp2hp2n|at|}
+
+|
+pg| ***** 274 ***** |
+
+
+ht|w|at|If opener replies 2@S to your Stayman inquiry, you have an 8-card major suit fit. Invite game by raising to 3@S. Partner will pass with a minimum, but go on to 4@S with a maximum.
+|cs|1|ht|d|at|^N{|ia| 1np2cp2sp3s|at|}
+|
+pg| ***** 275 ***** |
+
+
+ht|z|cs|2|at|^-{Responder's rebids of 2NT and 3 of opener's major after Stayman are invitational bids.}
+|
+pg| ***** 276 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|There is one other type of hand for which the Stayman convention can be used:
+
+|cs|3|ht|c|at|^D{|ih|pskj652h4dt962ca93|at|}
+|cs|1|ht|d|at|^N{|ia| 1np?|at|}
+
+
+
+This hand contains a 5-card spade suit and 9 total points (8 HCP and 1 long suit point), too much to sign off in 2@S, but not strong enough to force to game with 3@S. This hand would like to invite game and seek 3-card support at the same time. Stayman gets the job done.
+
+|
+pg| ***** 277 ***** |
+
+
+cs|2|at|Start with a Stayman 2@C inquiry. If partner rebids 2@D or 2@H continue with 2@S, suggesting an invitational hand with a 5-card spade suit. The opener will then be in a good position to either pass, raise to 4@S, bid 2NT, or 3NT, depending on the strength of his hand and the number of cards he has in spades. If you have an 8-card major suit fit you will find it, otherwise you will play in notrump. In either case, the correct level will also be found.
+
+^-{With an invitational hand and a 5-card major, start with Stayman and rebid your major.}
+^-
+|cs|1|ht|d|at|^N{|ia| 1np2cp2dp2s|at|}|
+pg| ***** 278 ***** |
+
+
+ht|w|at|If your partner replies 2@S to your Stayman 2@C, reevaluate your hand using short suit points (instead of long suit points). Your hand reevaluates to 11 total points (8 HCP and 3 short suit points) - too much for an invitational bid. Raise 2@S to 4@S since you know the partnership has more than the 25 combined total points that this contract requires.|
+cs|1|ht|d|at|^N{|ia| 1np2cp2sp4s|at|}|
+pg| ***** 279 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|We have seen that there are 3 types of hands for which the Stayman convention can be useful:
+
+|cs|1|ht|d|at|^n{|ia| 1np2c|at|}
+
+|
+pg| ***** 280 ***** |
+
+
+cs|4|at|^^^-{1. Game forcing hands with at least one 4-card major. Raise to game or rebid
+3NT (both signoffs), depending on whether or not an 8-card fit is found.}
+
+|
+pg| ***** 281 ***** |
+
+
+cs|2|at|{2. Invitational hands with at least one 4-card major. Invite with a raise to
+the 3-level or with 2NT, depending on whether or not an 8-card fit is found.}
+
+|
+pg| ***** 282 ***** |
+
+
+cs|3|at|{3. Invitational hands with a 5-card major. Invite by rebidding
+your long major or raise partner if he happens to bid your suit.}
+^-
+|
+pg| ***** 283 ***** |
+
+
+cs|1|at|Notice that all 3 hand types have 2 things in common:
+
+^-{Each has at least ^*I4 cards^*N in at least one major and at least enough strength to invite game.
+Never use Stayman without the proper major suit length or with less than 8 total points.}
+^-
+|
+pg| ***** 284 ***** |
+
+
+cs|4|ht|v|n#|3|at| {Historical note:} |cs|2|at|{^FThe Stayman convention is named after Sam Stayman, one of the top
+^FAmerican players from the 1930s to the 1980s. While Stayman helped
+^Fpioneer the convention that bears his name (and made several other 
+^Fcontributions to bidding theory), George Rapee, another American, is
+^Falso given credit for the concept of the artificial 2@C response to 1NT.}|
+pg| ***** 285 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|The Stayman convention gives us the ability to describe 3 types of hands after a 1NT opening that we could not show before. This hand shows the downside of the Stayman convention:
+
+|cs|3|ht|d|at|^D{|ih|ps52h74dt92cQt9643|at|}
+|cs|1|ht|e|at|^N{|ia| 1np?|at|}
+
+
+
+|
+pg| ***** 286 ***** |
+
+
+at|This hand has a 6-card club suit and only 4 total points (2 HCP and 2 long suit points). The partnership must have at least an 8-card fit in clubs and 2@C is very likely to be a superior contract to 1NT. If the long suit was elsewhere we could sign off in 2@D, 2@H, or 2@S. Now that we use Stayman we cannot sign off in 2@C anymore.
+
+|
+pg| ***** 287 ***** |
+
+
+cs|2|at|^-{Don't even think about bidding 2@C on this hand. 2@C is not a signoff in clubs, it is Stayman.
+Stayman promises at least 8 total points and at least 1 4-card major. This hand has neither.}
+^-
+|
+pg| ***** 288 ***** |
+
+
+at|You have no choice except to pass 1NT. 2@C is probably a better contract than 1NT, but there is no way to get there anymore. That is the price you pay for using the Stayman convention.|
+cs|1|ht|e|at|^N{|ia| 1npp|at|}|
+pg| ***** 289 ***** |
+
+
+ht|t|n#|6|cs|4|at|^-{Every artificial bid has a downside of replacing a natural bid. For a convention to be
+good, its advantages must provide compensation for the natural bid that it replaces.}
+^-
+|
+pg| ***** 290 ***** |
+
+
+ht|w|n#|6|at|Stayman lets us show 3 hand types with game interest at the cost of 1 hand type where only a partial is at stake. Stayman is a great convention, and it is used by almost all bridge players.|
+pg| ***** 291 ***** |
+
+
+qx|revex2,hide Responding to a 1NT opening - Review and exercises|
+nt|^z@3^b@2|cs|5|fp|t|at|
+^-{ Responding to a 1NT opening - Review and exercises }
+^-|fp||at|
+|
+pg| ***** 292 ***** |
+
+
+cs|1|at|^-{With a balanced and no interest in a major suit contract, either pass 1NT or raise to
+2NT, 3NT, 4NT, 5NT, 6NT or 7NT. Some of these are signoffs and some are invitational.}
+
+|
+pg| ***** 293 ***** |
+
+
+cs|4|at|{Use Stayman 2@C with at least invitational hands containing 1 or 2 4-card majors.
+Stayman is also used on invitational hands containing a 5-card major.}
+
+|
+pg| ***** 294 ***** |
+
+
+cs|2|at|{Sign off in 2@S, 2@H, or 2@D with a 5-card (or longer) suit and less than 8 total points.
+Because of Stayman we cannot sign off in 2@C. Pass 1NT with a weak hand and long clubs.}
+
+|
+pg| ***** 295 ***** |
+
+
+cs|3|at|{Sign off in 4@S or 4@H with a 6-card (or longer) suit and 10-15 total points. With these
+hands, you know what the best contract is - there is no reason to complicate matters.}
+
+|
+pg| ***** 296 ***** |
+
+
+cs|1|at|{Bid 3@S, 3@H, 3@D, or 3@C (all game forcing) with 10 or more total points, a 5-card (or longer)
+suit, and either slam interest or interest in possibly playing a game contract other than 3NT.}
+^-
+|
+pg| ***** 297 ***** |
+
+
+at|Here are some other important lessons we learned in this section:
+
+|
+pg| ***** 298 ***** |
+
+
+cs|4|at|^-{Use short suit points, not long suit points, when deciding to which level you should raise.}
+
+|
+pg| ***** 299 ***** |
+
+
+cs|2|at|{Factors like 5-card suits, strong spot cards, and stoppers help resolve close decisions.}
+
+|
+pg| ***** 300 ***** |
+
+
+cs|3|at|{A good convention is one that is more useful than the natural bid that it replaces.}
+
+|
+pg| ***** 301 ***** |
+
+
+md||mb|1n|mb|p|
+nt|^z@3^b@2
+Here are some exercises to test you on responding to a 1NT opening bid:|
+
+ht|d|cs|3|at|^C{|ih|pskj752h6dj763ct62|at|}|
+ht|e|cs|1|at|^O{|ia| 1np?|at|}|
+hf|k|cq|3|lb|*BWhat would you respond to your partner's 1NT opening bid?^^2s|
+ht|e|cs|1|at|^O{|ia| 1np2s|at|}
+
+
+
+Respond 2@S, a signoff bid. You have 6 total points (5 HCP and 1 long suit point). That's not enough for a game contract even if partner is at the top of his 15-17 HCP range. 2@S rates to be a better contract than 1NT with this unbalanced hand. Partner is certain to have at least 2 spades (as his 1NT denies holding any singletons or voids).|
+pg| ***** 303 ***** |
+
+
+ht|p|cs|3|at|^C{|ih|psaq6ha98dq652c842|at|}|
+ht|q|cs|1|at|^O{|ia| 1np?|at|}|
+hf|z|lb|*BWhat would you respond to your partner's 1NT opening bid?^^3n|
+ht|q|cs|1|at|^O{|ia| 1np3n|at|}
+
+
+
+Respond 3NT, a signoff bid. You have a balanced hand with 12 HCP. Partner has a balanced hand with 15-17 HCP. There are certain to be more than enough combined total points for 3NT, but not enough combined total points for a slam contract.|
+pg| ***** 305 ***** |
+
+
+nt|^z@3^b@2|
+ht|b|cs|3|at|^C{|ih|ps64hkq942da87cj96|at|}|
+ht|c|cs|1|at|^O{|ia| 1np?|at|}|
+hf|i|cq|3|lb|*BWhat would you respond to your partner's 1NT opening bid?^^3h|
+ht|c|cs|1|at|^O{|ia| 1np3h|at|}
+
+
+
+Respond 3@H, a forcing bid. With 11 total points (10 HCP and 1 long suit point), a game contract is certain opposite partner's 15-17 HCP. If partner has 3-card support for hearts, an 8-card major suit fit will be present. He will raise to 4@H, likely the game contract of choice. If partner has only 2 hearts he will rebid 3NT which will probably turn out to be a good contract.|
+pg| ***** 307 ***** |
+
+
+ht|n|cs|3|at|^C{|ih|psaq6haj8dkt84ca72|at|}|
+ht|o|cs|1|at|^O{|ia| 1np?|at|}|
+hf|x|lb|*BWhat would you respond to your partner's 1NT opening bid?^^6n|
+ht|o|cs|1|at|^O{|ia| 1np6n|at|}
+
+
+
+Respond 6NT, a signoff bid. You have 18 HCP and partner has between 15 and 17. The 33 combined total points that a small slam requires are sure to be present, but a grand slam (requiring 37 combined total points) is out of reach. The contract certainly belongs at the 6-level. The balanced nature of this hand points strongly towards notrump as the best strain. 6NT is very likely to be the best final contract. Let partner in on the news!|
+pg| ***** 309 ***** |
+
+
+nt|^z@3^b@2|
+ht|b|cs|3|at|^C{|ih|psqj9863h7daj92c53|at|}|
+ht|c|cs|1|at|^O{|ia| 1np?|at|}|
+hf|i|cq|3|lb|*BWhat would you respond to your partner's 1NT opening bid?^^4s|
+ht|c|cs|1|at|^O{|ia| 1np4s|at|}
+
+
+
+Respond 4@S, a signoff bid. With 10 total points (8 HCP and 2 long suit points) a game contract is certain opposite partner's 15-17 HCP. Since the 1NT opener promises at least 2 cards in every suit, an 8-card major suit fit is sure to exist. You know the right level (game) and the right strain (spades). Respond 4@S to tell your partner what you know.|
+pg| ***** 311 ***** |
+
+
+ht|n|cs|3|at|^C{|ih|pskt42hkq86da4c742|at|}|
+ht|o|cs|1|at|^O{|ia| 1np?|at|}|
+hf|x|lb|*BWhat would you respond to your partner's 1NT opening bid?^^2c|
+ht|o|cs|1|at|^O{|ia| 1np2c|at|}
+
+
+
+Respond 2@C, the Stayman convention. You are strong enough to insist on a game contract, but do not know which game contract rates to be best. Stayman will solve your problem.
+
+If partner shows a 4-card major by bidding 2@H or 2@S, you will raise his suit to game, secure in the knowledge that an 8-card major suit fit has been found. If partner denies a 4-card major by bidding 2@D, you will place the contract in 3NT.|
+pg| ***** 313 ***** |
+
+
+nt|^z@3^b@2|
+ht|b|cs|3|at|^C{|ih|psk4ha65dkjt8ckq92|at|}|
+ht|c|cs|1|at|^O{|ia| 1np?|at|}|
+hf|i|cq|3|lb|*BWhat would you respond to your partner's 1NT opening bid?^^4n|
+ht|c|cs|1|at|^O{|ia| 1np4n|at|}
+
+
+
+Respond 4NT, an invitational bid. You have 16 HCP and partner promises 15-17 HCP. If partner has a maximum then there will be enough combined total points for 6NT. If partner is minimum, however, 4NT will be high enough. Your 4NT response invites partner to go on to 6NT if he has a maximum 1NT opening bid.|
+pg| ***** 315 ***** |
+
+
+ht|n|cs|3|at|^C{|ih|ph4saq974dqt62c982|at|}|
+ht|o|cs|1|at|^O{|ia| 1np?|at|}|
+hf|x|lb|*BWhat would you respond to your partner's 1NT opening bid?^^2c|
+ht|o|cs|1|at|^O{|ia| 1np2c|at|}
+
+
+
+Respond 2@C, the Stayman convention. This hand has 9 total points (8 HCP and 1 long suit point). That falls into the invitational range - you only want to get to game if partner is maximum.
+
+To invite game on a hand with a 5-card major you should start with Stayman. If partner responds 2@S (showing 4 spades), your hand becomes strong enough to go to 4@S. If your partner responds 2@D or 2@H to your Stayman inquiry, you can then bid 2@S, suggesting a hand like this.|
+pg| ***** 317 ***** |
+
+
+nt|^z@3^b@2|
+ht|b|cs|3|at|^C{|ih|ps9h65dj942cqt8532|at|}|
+ht|c|cs|1|at|^O{|ia| 1np?|at|}|
+hf|i|cq|3|lb|*BWhat would you respond to your partner's 1NT opening bid?^^p|
+ht|c|cs|1|at|^O{|ia| 1npp|at|}
+
+
+
+Pass. You would like to signoff in clubs with this weak unbalanced hand, but there is no way to do it. 2@C would be Stayman and 3@C is a forcing bid that shows a very strong hand. 1NT may not be the best contract, but there is nothing you can do about it. You have to pass and hope for the best.|
+pg| ***** 319 ***** |
+
+
+ht|n|cs|3|at|^C{|ih|phQ5s92d853cakjt42|at|}|
+ht|o|cs|1|at|^O{|ia| 1np?|at|}|
+hf|x|lb|*BWhat would you respond to your partner's 1NT opening bid?^^3n|
+ht|o|cs|1|at|^O{|ia| 1np3n|at|}
+
+
+
+Respond 3NT, a signoff bid. You could bid 3@C to suggest a strong hand with a long club suit, but there is not much point to that. 3NT is usually superior to 5@C, even if an 8-card (or longer) minor suit fit is present.
+
+If this hand contained another Ace, 3@C would be the correct response. It would then have 16 total points (14 HCP and 2 long suit points) - enough to invite a small slam.|
+pg| ***** 321 ***** |
+
+
+nt|^z@3^b@2|
+ht|b|cs|3|at|^C{|ih|psq864hj952d7c9852|at|}|
+ht|c|cs|1|at|^O{|ia| 1np?|at|}|
+hf|i|cq|3|lb|*BWhat would you respond to your partner's 1NT opening bid?^^p|
+ht|c|cs|1|at|^O{|ia| 1npp|at|}
+
+
+
+Pass. You need at least a 5-card suit to signoff in 2@H or 2@S and you need at least 8 total points to use Stayman. Stayman would work well here if partner responded 2@H or 2@S (you could then pass). Stayman would be a disaster, however, if partner responded 2@D. Play it safe and pass 1NT. You may be better off in 2 of a major, but it is too dangerous to try to find out.|
+pg| ***** 323 ***** |
+
+
+ht|n|cs|3|at|^C{|ih|psak4hk82dakj7caqj|at|}|
+ht|o|cs|1|at|^O{|ia| 1np?|at|}|
+hf|x|lb|*BWhat would you respond to your partner's 1NT opening bid?^^7n|
+ht|o|cs|1|at|^O{|ia| 1np7n|at|}
+
+
+
+Respond 7NT. You have 25 HCP. There are only 40 HCP in the deck so your partner must have the other 15 HCP. 37 combined total points is enough for a grand slam and you know that the partnership has more than that. Your partner will win all 13 tricks without breathing hard!
+
+By the way, it is extremely rare to be dealt a hand this strong opposite a 1NT opening bid. If you are ever dealt a hand of this strength, you will know what to do!|
+pg| ***** 325 ***** |
+
+
+qx|2c,Responding to a 2 club opening|
+nt|^z@3^b@2|cs|5|fp|t|at|
+^-{ Responding to a 2@C opening }
+^-|fp||at|
+^n|cs|1|ia| 2cp?|at|}
+
+|ht|g|n#|8|at|Recall that we use the 2@C opening bid to describe any hand with 22 or more total points that is unsuitable for a 3NT opening (which would show a balanced hand with 25-27 HCP). The 2@C opening is both artificial and forcing. That makes our first rule about responding to 2@C easy:
+
+|
+pg| ***** 326 ***** |
+
+
+cs|3|at|^-{You must respond ^*Isomething^*N to a 2@C opening. The 2@C opening is forcing - never pass!}
+^-
+|
+pg| ***** 327 ***** |
+
+
+at|2@C is perhaps the easiest of all opening bids to respond to. Since the 2@C opening shows such a strong hand, the other 3 players tend to have weak hands after this opening has been made. The most common response to 2@C is 2@D, an artificial negative that carries the message: "I do not have a very good hand." All other responses to 2@C are called positive responses.
+
+|
+pg| ***** 328 ***** |
+
+
+cs|2|at|^-{When partner opens 2@C and you have less than 8 total points, always respond 2@D.
+This 2@D bid is an artificial negative that denies the ability to make a positive response.}
+
+|
+pg| ***** 329 ***** |
+
+
+cs|4|at|{Other responses to a 2@C opening are natural positives, promising at least 8 total points.}
+^-
+|
+pg| ***** 330 ***** |
+
+
+at|So, when partner opens 2@C you should always respond with a negative 2@D if your hand has less than 8 total points. This artificial bid says nothing about your diamond holding. All hands with 8 or more total points, should make some positive response.|
+pg| ***** 331 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|The rules for which positive response to make are quite simple:
+
+|cs|1|at|^-{The 2@H, 2@S, 3@C, and 3@D positive responses to 2@C show a good 5-card (or longer) suit.
+Note that the 3@D positive is a jump bid since we use 2@D as an artificial negative.}
+
+|cs|2|at|{With enough total points to make a positive response, but without a long enough
+or strong enough suit for 2@H, 2@S, 3@C, or 3@D, make the positive response of 2NT.}
+^-
+|
+pg| ***** 332 ***** |
+
+
+at|Here are some example hands for various responses to a 2@C opening bid:
+
+|cs|3|ht|k|n#|5|at|^D{|ih|ps432d2h432c543287|at|}
+|cs|1|ht|l|n#|5|at|^N{|ia| 2cp?|at|}
+
+
+
+|
+pg| ***** 333 ***** |
+
+
+at|Respond 2@D, an artificial negative. Do not even think about passing 2@C, despite having such a horrible hand with long clubs. Partner could have a strong enough hand to make a game or slam contract without any help from you. He will not appreciate it if you pass his forcing opening bid. Don't worry about having only 1 diamond for this bid. 2@D is an artificial bid - it says nothing about your diamond holding.|
+cs|1|ht|l|n#|5|at|^N{|ia| 2cp2d|at|}
+
+|
+pg| ***** 334 ***** |
+
+
+ht|x|n#|5|at|The nice thing about the negative 2@D response to a 2@C opening is that it sends the opener an immediate warning that responder is quite weak. Opener knows at once that he should proceed with caution.|
+pg| ***** 335 ***** |
+
+
+nt|^z@3^b@2|cs|3|ht|b|at|^D{|ih|psaqj32d432h432c32|at|}
+|cs|1|ht|c|at|^N{|ia| 2cp?|at|}
+
+
+
+|
+pg| ***** 336 ***** |
+
+
+at|Respond 2@S, a natural positive. This hand has 8 total points (7 HCP and 1 long suit point). That is just enough for a positive response. This hand has good 5-card spade suit, so 2@S is the positive response of choice.|
+cs|1|ht|c|at|^N{|ia| 2cp2s|at|}|
+pg| ***** 337 ***** |
+
+
+cs|3|ht|m|at|^D{|ih|psk54hkqj2dq32cq32|at|}
+|cs|1|ht|n|at|^N{|ia| 2cp?|at|}
+
+
+
+|
+pg| ***** 338 ***** |
+
+
+at|Respond 2NT, a positive response that denies a good long suit. This 13-point hand is a monster opposite a 2@C opening. Partner has promised 22 or more total points. A small slam (requiring 33 combined total points) is certain and a grand slam (requiring 37 combined total points) is not unlikely.
+
+This hand has a nice heart suit, but it is only 4-cards long - a 2@H positive would require at least a 5-card suit. The positive response of 2NT is used when no suit positive is appropriate.|
+cs|1|ht|n|at|^N{|ia| 2cp2n|at|}|
+pg| ***** 339 ***** |
+
+
+nt|^z@3^b@2
+The 13-point hand we just saw where the 2NT positive is recommended:
+
+|cs|3|ht|d|at|^D{|ih|psk54hkqj2dq32cq32|at|}
+|cs|1|ht|e|at|^N{|ia| 2cp2n|at|}
+
+
+
+is certain to produce at least a small slam opposite a 2@C opening bid. Are you at all concerned that partner might pass 2NT and that your hands which belong in slam will end up in a partial?
+
+|
+pg| ***** 340 ***** |
+
+
+cs|2|at|^-{There is no need to worry. A positive response to a 2@C opening is forcing to game.
+Your partner will not pass until the partnership has arrived in at least a game contract.}
+^-
+|
+pg| ***** 341 ***** |
+
+
+cs|4|at|Furthermore, a positive response (showing 8 or more total points) opposite a 2@C opening (showing 22 or more total points) suggests that the partnership has at least close to the 33 combined total points required for a small slam.
+
+^-{A positive response tells the 2@C opener that a slam contract is either likely or certain.}
+^-
+|
+pg| ***** 342 ***** |
+
+
+at|A positive response sends an immediate slam suggestion to the 2@C opener. The opener can then focus his attention on making sure the values for a small slam exist, finding the best strain, and possibly exploring for a grand slam.|
+pg| ***** 343 ***** |
+
+
+nt|^z@3^b@2|cs|3|ht|b|at|^D{|ih|psK54hq76dat9832c7|at|}
+|cs|1|ht|c|at|^N{|ia| 2cp?|at|}
+|
+pg| ***** 344 ***** |
+
+
+ht|c|at|^N{|ia| 2cp3d|at|}
+
+
+
+Respond 3@D, a natural positive. Remember that the 2@D response to a 2@C opening is an artificial negative. You have to jump to the 3-level to make a positive response in diamonds. The 6-card length of the diamond suit and good spot cards in that suit makes up for the fact that this hand has only 4 HCP in diamonds. Besides, the only other possibility is a positive response of 2NT. Try to avoid the 2NT positive if your hand is unbalanced.
+
+|
+pg| ***** 345 ***** |
+
+
+cs|2|at|^-{A suit positive response should contain 2 of the top 3 cards (the Ace, King, and Queen).
+With strong spot cards and/or extra length (beyond 5 cards) it is OK to relax this restriction.}
+
+|
+pg| ***** 346 ***** |
+
+
+cs|4|at|{Try to avoid using the natural positive of 2NT when you have an unbalanced hand.}
+^-|
+pg| ***** 347 ***** |
+
+
+n#|7|at|These guidelines sometimes make life very difficult for the responder to a 2@C opening:
+|cs|3|n#|3|at|^^^^^D{|ih|psK54haqj6dj7645c7|at|} 
+|ht|r|n#|5|at|^LThis hand must make ^*Isome^*N positive response, but it
+^Llacks the 5th heart that 2@H demands, lacks the diamond
+^Lquality that 3@D demands, and is sufficiently unbalanced
+^Lthat 2NT is not very appealing.|
+pg| ***** 348 ***** |
+
+
+nt|^z@3^b@2|cs|2|at|
+^-{In every bidding system some hands falls through the cracks and no bid offers a perfect
+description. Use your judgement in these cases to select the bid that is the ^*Ileast flawed^*N.}
+^-
+|
+pg| ***** 349 ***** |
+
+
+ht|e|cs|3|at|^D{|ih|psK54haqj6dj7645c7|at|}
+|cs|1|ht|f|at|^N{|ia| 2cp2h|at|}
+
+
+
+Your author's judgement is that a 2@H positive is the least of evils on this hand. 2@H is only wrong by one small heart, while 3@D on such an ugly suit, 2NT with a singleton, and 2@D on a 12 total point hand all seem like greater distortions. It is really a matter of judgement, however, as none of these bids are perfect.
+
+|
+pg| ***** 350 ***** |
+
+
+cs|4|at|^-{Sometimes in bridge there is no clearly correct bid to make or card to play. This helps make
+bridge an interesting and challenging game. Bridge would be boring if rules solved all problems!}
+^-
+|
+pg| ***** 351 ***** |
+
+
+nt|^z@3^b@2
+Sometimes the 2@D negative response to a 2@C opening bid can be based on a decent hand:|
+cs|3|ht|d|at|^D{|ih|psKt97hat83d76ct94|at|}
+|cs|1|ht|e|at|^N{|ia| 2cp2d|at|}
+
+
+
+2@D is the correct response on this hand, showing a negative hand (less than 8 total points). This hand is about as good as a negative hand can be. It has 7 HCP in the form of an Ace and a King as well as some excellent spot cards. Furthermore, this hand contains a doubleton which may be of value opposite long spades, hearts, or clubs.
+
+|
+pg| ***** 352 ***** |
+
+
+at|Do we have to worry that partner will pass our 2@D bid because he thinks we have a terrible hand? That would be a pretty negative experience. We already know there are more than enough combined total points for game and the last thing we want is to play in a partial contract.
+
+|
+pg| ***** 353 ***** |
+
+
+cs|2|at|^-{There is no need to worry. A 2@C opening promises another bid over any response.
+Your 2@D response is forcing on partner, even though it could be based on a terrible hand.}
+^-
+|
+pg| ***** 354 ***** |
+
+
+at|Not only is the 2@C opening a forcing bid, any response to a 2@C opening bid is also forcing. When you open 2@C you are promising your partner that you will bid again.|
+pg| ***** 355 ***** |
+
+
+qx|revex3, hide Responding to a 2 club opening - Review and exercises|
+nt|^z@3^b@2|cs|5|fp|t|at|
+^-{ Responding to a 2@C opening - Review and exercises }
+^-|fp||at|
+|
+pg| ***** 356 ***** |
+
+
+cs|1|at|^-{A 2@C opening is an artificial forcing bid, used for all hands with 22 or more 
+total points that are unsuitable for a 3NT opening bid (a balanced 25-27 HCP hand).}
+
+|
+pg| ***** 357 ***** |
+
+
+cs|3|at|{The responder to a 2@C opening uses the 2@D artificial negative on all hands with less
+than 8 total points. All responses to 2@C, including 2@D, are forcing on the opening bidder.}
+
+|
+pg| ***** 358 ***** |
+
+
+cs|2|at|{There are 5 positive responses (promising 8 or more total points) to a 2@C opening bid.
+The 5 positive responses are: 2@H, 2@S, 2NT, 3@C, and 3@D (a jump - 2@D is the negative).}
+
+|
+pg| ***** 359 ***** |
+
+
+cs|4|at|{All of the positive responses to a 2@C opening force the partnership to at least a
+game contract. They also suggest that a slam contract could well be in the cards.}
+
+|
+pg| ***** 360 ***** |
+
+
+cs|1|at|{The 2@H, 2@S, 3@C, and 3@D positives promise at least 5-cards in the suit named. 2 of the top
+3 cards are preferred, but extra length and/or good spot cards can reduce this requirement.}
+
+|
+pg| ***** 361 ***** |
+
+
+cs|3|at|{Ideally, the 2NT positive should be used to show a balanced hand with its high cards spread
+out among several suits, but sometimes 2NT is the best response on a less than ideal hand.}
+
+|
+pg| ***** 362 ***** |
+
+
+cs|2|at|{Some hands are not quite right for any of the responses to a 2@C opening bid. When every
+bid is^*N flawed in some way, use your judgement to decide which choice is the least of evils.}
+
+
+|
+pg| ***** 363 ***** |
+
+
+md||mb|2c|mb|p|
+nt|^z@3^b@2
+Here are some exercises to test you on responding to a 2@C opening bid:|
+
+ht|d|cs|3|at|^C{|ih|ps854ht72djcj98542|at|}|
+ht|e|cs|1|at|^O{|ia| 2cp?|at|}|
+hf|k|cq|3|lb|*BWhat would you respond to your
+partner's 2 club opening bid?^^2d|
+ht|e|cs|1|at|^O{|ia| 2cp2d|at|}
+
+
+
+Respond 2@D, an artificial negative. You can't ever pass 2@C, even with a weak hand with long clubs. 2@C is a forcing bid and partner may be strong enough to make a game contract without any help from you. Don't worry that you have only 1 diamond. Your 2@D response just says that you less than 8 total points - it says nothing about your diamond length.|
+pg| ***** 365 ***** |
+
+
+ht|p|cs|3|at|^C{|ih|psaqj32h53d9752ct3|at|}|
+ht|q|cs|1|at|^O{|ia| 2cp?|at|}|
+hf|z|lb|*BWhat would you respond to your
+partner's 2 club opening bid?^^2s|
+ht|q|cs|1|at|^O{|ia| 2cp2s|at|}
+
+
+
+Respond 2@S, a positive response. 8 total points (7 HCP and 1 long suit point) is just enough for a positive response. Your strong 5-card spade suit makes it clear which positive response is best. Don't worry about partner passing you in 2@S. Any positive response to a 2@C opening is forcing to game.|
+pg| ***** 367 ***** |
+
+
+nt|^z@3^b@2|
+ht|b|cs|3|at|^C{|ih|psk97hqt2dqj54ck82|at|}|
+ht|c|cs|1|at|^O{|ia| 2cp?|at|}|
+hf|i|cq|3|lb|*BWhat would you respond to your
+partner's 2 club opening bid?^^2n|
+ht|c|cs|1|at|^O{|ia| 2cp2n|at|}
+
+
+
+Respond 2NT, a positive response. With 11 total points (all in HCP) a positive response is in order. This hand is perfect for the 2NT positive as it is balanced and contains high cards in all 4 suits.|
+pg| ***** 369 ***** |
+
+
+ht|n|cs|3|at|^C{|ih|psk5h92dakt862cq54|at|}|
+ht|o|cs|1|at|^O{|ia| 2cp?|at|}|
+hf|x|lb|*BWhat would you respond to your
+partner's 2 club opening bid?^^3d|
+ht|o|cs|1|at|^O{|ia| 2cp3d|at|}
+
+
+
+Respond 3@D, a positive response. You have 14 total points (12 HCP and 2 long suit points). With partner holding at least 22 total points, a small slam is certain and a grand slam is quite likely.
+
+Start telling your partner about your strength with a positive response in diamonds. Remember that you have to jump to 3@D to make a positive in that suit - 2@D would be an artificial negative.|
+pg| ***** 371 ***** |
+
+
+qx|pre,Responding to a preemptive opening|
+nt|^z@3^b@2|cs|5|fp|t|at|
+^-{ Responding to a preemptive opening }
+^-|fp||at|
+Recall that all suit opening bids of 2@D and higher are preemptive in nature. These bids describe hands with long strong suits, but with less than enough total points for a 1-level opening bid. These sorts of hands are generally only useful if their long suit is trump.
+
+|
+pg| ***** 372 ***** |
+
+
+at|Here is a reminder of the types of hands that opener describes with various preemptive openings. First the weak 2 openings:
+
+|cs|1|at|^-{2@D, 2@H, and 2@S openings promise a strong 6-card suit and less than 13 total points.}
+^-
+|
+pg| ***** 373 ***** |
+
+
+at|And here are the definitions of the 3 and 4-level preemptive openings:
+
+|cs|3|at|^-{3@C, 3@D, 3@H, and 3@S openings promise a strong 7-card suit and less than 13 total points.} 
+
+|cs|2|at|{4@C, 4@D, 4@H, and 4@S openings promise a strong 8-card suit and less than 13 total points.} 
+^-
+|
+pg| ***** 374 ***** |
+
+
+cs|4|at|Here is how we define a strong suit for the purposes of a preemptive opening:
+
+^-{A strong suit contains at least 2 of the top 3 cards (the Ace, King, and Queen).}
+^-
+|
+pg| ***** 375 ***** |
+
+
+at|The key to responding to a preempt is to think about what your partner's hand looks like. Try to estimate the number of tricks you rate to win and how many losers there rate to be with your partner's long suit as trump.
+
+|
+pg| ***** 376 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Try to think about this principle in the example hands that follow:
+
+|cs|2|at|^-{Responding to a preempt is more about ^*Icounting tricks^*N than it is about counting points.}
+^-
+|
+pg| ***** 377 ***** |
+
+
+ht|e|cs|3|at|^D{|ih|ps7hqt84dak9542c62|at|}
+|cs|1|ht|f|at|^N{|ia|   2hp?|at|}
+
+
+Your partner opens with a weak 2-bid in hearts, showing a strong 6-card heart suit and less than 13 total points. Once partner has shown long hearts, this hand is worth 13 total points (9 HCP and 4 short suit points). It is most unlikely that the partnership has the 25 combined total points that 4@H requires. Does that imply we should pass?
+
+|
+pg| ***** 378 ***** |
+
+
+cs|3|at|No. Responding to a preempt involves counting tricks, not points. Think about what your partner's hand rates to look like and count the losers with hearts as trump:
+
+|ht|r|at|^D{|ih|ps853hak9762d86c94|at|}|
+pg| ***** 379 ***** |
+
+
+ht|r|n#|9|at|^LThere will be no losers in diamonds or the trump suit.
+^LYour singleton spade will hold the partnership's spade
+^Llosers to 1. Both you and your partner have doubletons
+^Lin clubs - there will be only 2 club losers. That's only
+^L3 losers in total - 4@H rates to be a big success.|
+pg| ***** 380 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|It is correct to raise partner's weak 2@H opening to 4@H on this hand:|
+cs|1|ht|d|at|^N{|ia|   2hp4h|at|}
+|ht|c|cs|3|at|^C{|ih|ps7hqt84dak9542c62|at|}
+
+|
+pg| ***** 381 ***** |
+
+
+at|^^^^^C{|ih|ps853hak9762d86c94|at|}|
+ht|i|n#|7|at|^LThe example hand we gave for partner is very fair. 2@H
+^Lpromises a 6-card heart suit with 2 of the top 3 cards.
+^LSince we have the @HQ, partner must have the @HA and
+^L@HK. This hand contains nothing in the way of high cards
+^Lor distribution beyond what partner has promised.
+|
+pg| ***** 382 ***** |
+
+
+n#|8|at|Partner has a typical weak 2-bid with 9 total points (7 HCP and 2 long suit points). Your 13 total points (9 HCP and 4 short suit points) give the partnership only 22 combined total points - well below the 25 that 4@H is supposed to require.
+|
+pg| ***** 383 ***** |
+
+
+cs|2|n#|8|at|^-{Point count says pass 2@H, but loser count says bid 4@H (since there rates to be 3 losers
+at most between the 2 hands). Trust loser count, not point count, when partner preempts.}
+^-|
+pg| ***** 384 ***** |
+
+
+n#|8|at|Also consider how the opponents rate to do in a spade or club contract of their own. We have 3 defensive tricks at most - 1 heart trick and 2 diamond tricks. The opponents have only 3 hearts between them so one of them must have a singleton or void in hearts. The opponents can make 4@S for sure (and perhaps 5@C too). Bidding 4@H will make it hard for them to find this out.|
+pg| ***** 385 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Here is another interesting hand that illustrates the value of counting tricks, not points, when your partner opens with a preempt:|
+cs|1|ht|e|at|^N{|ia|   3sp?|at|}
+|ht|d|cs|3|at|^C{|ih|psa87ha52dat7cjt98|at|}
+
+
+Your partner preempts with 3@S, suggesting a 7-card spade suit headed by 2 of the top 3 cards. Your @SA means that partner must have the @SK and @SQ. Point count suggests that 4@S is unlikely to succeed as you have only 13 total points (all in HCP) and partner has 12 at the most.
+
+|
+pg| ***** 386 ***** |
+
+
+cs|3|at|Think about your trick-winning prospects opposite this typical hand for partner:
+
+^^^^^C{|ih|pskqt9532h84d92c43|at|}
+|ht|p|at|^LIt looks like point count is right this time as there appear
+^Lto be 4 losers (1 in hearts, 1 in diamonds, and 2 in
+^Lclubs). The 3-level is high enough as far as spades are
+^Lconcerned. Now think about your winners in a notrump
+^Lcontract. There are 9, 7 spade tricks, the @HA and the
+^L@DA. 9 tricks are all the game contract of 3NT requires!
+
+|
+pg| ***** 387 ***** |
+
+
+at|Your club holding may not win a trick at notrump, but it is certain to provide a stopper. The defenders can take the @CA, @CK, and @CQ, but your @CJ will control the 4th round of the suit.|
+pg| ***** 388 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|It looks strange to opt for 3NT when the partnership is known to have a 10-card major suit fit, but 3NT is certainly the correct response to a 3@S preempt with this hand:
+
+|cs|1|ht|e|at|^N{|ia|   3sp3n|at|}
+|ht|d|cs|3|at|^C{|ih|psa87ha52dat7cjt98|at|}
+
+|
+pg| ***** 389 ***** |
+
+
+at|^^^^^^^C{|ih|pskqt9532h84d92c43|at|}|
+ht|k|at|^LOpposite this typical hand for partner 4@S stands no
+^Lchance, but 3NT is certain to succeed. It is true that even
+^Lan 8-card fit is ^*Iusually^*N enough to make 4@S a better
+^Lgame contract than 3NT, but usually does not mean
+^Lalways. These hands (with a 10-card major suit fit) 
+^Lbelong in 3NT.
+
+|
+pg| ***** 390 ***** |
+
+
+cs|2|at|^-{Rules can be useful at bridge and "select an 8-card major suit fit as trump" is a
+good rule. Partner's 3@S preempt informed us that the time had come to break this rule.}
+^-|
+pg| ***** 391 ***** |
+
+
+n#|8|at|Also notice that once again the opponents might be able to succeed in a game contract of their own! In defense of a heart contract these hands have only 3 obvious tricks, the @HA, the @DA, and a spade trick (and perhaps no spade trick if one of the opponents has a void).
+|
+pg| ***** 392 ***** |
+
+
+cs|4|n#|8|at|^-{As usual, the more your partnership bids, the harder it becomes for the other partnership to
+find their best contract. It is very likely both opponents will pass and allow you to play in 3NT.}|
+pg| ***** 393 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Here is one more example of why point count and preempts don't mix well:|
+cs|1|ht|d|at|^N{|ia|   3hp?|at|}
+|ht|c|cs|3|at|^C{|ih|pskqjthaj6dqjtcqjt|at|}
+
+
+This hand has 17 HCP, enough for a maximum 1NT opening bid. Partner has opened 3@H in front of you, however. He must have the @HK and @HQ (5 HCP) as well as 3 long suit points for his 7-card heart suit. The partnership is certain to have at least the 25 combined total points that 4@H is supposed to need, but think about partner's typical hand:
+
+|
+pg| ***** 394 ***** |
+
+
+at|^C{|ih|phkqt9532s84d92c43|at|}|
+pg| ***** 395 ***** |
+
+
+ht|m|at|^LThere are 5 certain losers in either hearts or notrump.
+^LThere is no way to avoid losing tricks to the @SA, @DA,
+^L@DK, @CA, and @CK. Even 3@H is too high on these hands,
+^Ldespite the 25 combined total points! 
+
+|
+pg| ***** 396 ***** |
+
+
+n#|7|at|Pass 3@H. You may get lucky and make this contract if partner has a singleton in one of the minor suits. Making either 4@H or 3NT is most unlikely, despite what your point count suggests.|
+cs|1|ht|d|at|^N{|ia|   3hpp|at|}
+
+|
+pg| ***** 397 ***** |
+
+
+ht|u|cs|2|at|^-{Preempts can make a mockery of point count as some good hands become bad and some
+bad hands become good. Visualizing partner's hand and counting tricks is the way to go!}
+|
+pg| ***** 398 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|The following 13-point hand with a singleton in partner's suit is better than the 17-point hand we just saw that contained 3-card support for partner:|
+cs|1|ht|e|at|^N{|ia|   3hp?|at|}
+|ht|d|cs|3|at|^C{|ih|ps9732hqdat53cak86|at|}
+
+|
+pg| ***** 399 ***** |
+
+
+at|Opposite this typical hand for partner:
+
+|cs|3|ht|l|at|^C{|ih|ps94hakj9732d94c75|at|}|
+ht|m|n#|0|at|^LThere are 10 likely winners (7 hearts tricks, the @DA,
+^Lthe @CA, and the @CK). Counting losers, there are 2 fast
+^Lspade losers and an eventual loser in diamonds for
+^La total of 3 losers. No matter how you add things up,
+^L4@H looks like it will be an excellent contract.
+
+|
+pg| ***** 400 ***** |
+
+
+n#|2|at|Raise to 4@H and expect your partner to make his contract. Do not be tempted to try 3NT. You have no spade
+stopper and the defenders might be able to win the first 5 tricks in that suit.|
+cs|1|ht|e|at|^N{|ia|   3hp4h|at|}|
+pg| ***** 401 ***** |
+
+
+ht|t|n#|8|cs|2|at|^-{Queens and Jacks are often worthless opposite a preempt, but Aces and Kings are useful.}
+^-
+|ht|v|n#|5|at|This hand has only 4 high cards, the @HQ, @DA, @CA, and @CK. It is a good hand, however, once partner preempts 3@H as all 4 of these cards rate to win tricks. The last hand we saw, with 17 points, was inferior because several of its high cards were worthless Queens and Jacks.|
+pg| ***** 402 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|How would you respond to partner's preempt on this nice hand with a void in partner's suit?|
+cs|1|ht|d|at|^N{|ia|   3dp?|at|}
+|ht|c|cs|3|at|^C{|ih|psqj7ha6cakqjt752|at|}
+
+|
+pg| ***** 403 ***** |
+
+
+at|Visualize partner's typical hand and think about the play in various contracts.
+
+|cs|3|at|^C{|ih|ps84h974dkqj9743c3|at|}|
+pg| ***** 404 ***** |
+
+
+ht|l|at|^LSince your hand contains so many clubs, there is a good
+^Lchance that partner is very short in that suit. There are
+^Lat least 3 certain losers if diamonds are trump (the @DA,
+^L@SA, and @SK) - 5@D has no chance. 5@C is equally poor
+^Las at least 2 spade tricks and 1 heart trick must be lost.
+^LIs there any game contract that stands a chance?
+
+|
+pg| ***** 405 ***** |
+
+
+at|Bid 3NT - a game contract that is certain to succeed. You have 9 certain winners in notrump, 8 club tricks and the @HA. Your spade holding represents a certain stopper and you know that your partner can stop diamonds. Respond 3NT and be confident that this contract will succeed.|
+cs|1|ht|d|at|^N{|ia|   3dp3n|at|}
+|
+pg| ***** 406 ***** |
+
+
+ht|w|cs|2|n#|2|at|^-{When you respond 3NT to a preempt you either expect to run the opener's suit or 
+you have a long solid of suit your own. In either case, stoppers in all suits are required.}
+
+|
+pg| ***** 407 ***** |
+
+
+ht|z|n#|2|cs|4|at|{The 3NT response to a preempt means you think you can make 3NT. Isn't that sensible?}
+|
+pg| ***** 408 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|In most of the examples we have seen the responder ^*Iknew^*N what the best contract was after an opening preempt. On this hand the responder is not sure, but he can find out:|
+cs|1|ht|d|n#|5|at|^N{|ia|   3cp?|at|}
+|ht|d|cs|3|at|^C {|ih|psa54hakjt3d65cat3|at|}
+
+|
+pg| ***** 409 ***** |
+
+
+at|^^Visualizing partner's hand is a bit more complicated this time. You know he has a 7-card club suit headed by the @CK and @CQ, but there is one important thing about his hand that you do not know.
+
+|
+pg| ***** 410 ***** |
+
+
+cs|2|at|^-{Partner's heart holding is critical. If he has 3-card support for your 5-card major,
+you belong in 4@H. If there is no 8-card major suit fit then 5@C is probably best.}
+^-
+|
+pg| ***** 411 ***** |
+
+
+cs|3|at|^^Here are 2 typical hands for partner, the first has heart support while the second does not:
+
+|ht|q|n#|7|at|^C {|ih|ps5h964dt8ckqj8762|at|} |n#|t|at|^P  {|ih|ph5st8d964ckqj8762|at|}|
+
+ht|v|n#|5|cs|2|at|^B{4@H is best. There could be 3 losers
+^Bwith either trump suit - 5@C could fail.}|
+ht|v|n#|5|cs|2|at|^O{5@C is best. If clubs are trump there 
+^Oare only 2 losers. 4@H has little hope.}|
+pg| ***** 412 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|So on this hand is it necessary to find out if partner has heart support before we are able to decide upon the best contract. How can we do that?|
+cs|1|ht|d|n#|5|at|^N{|ia|   3cp?|at|}
+|ht|d|cs|3|at|^C {|ih|psa54hakjt3d65cat3|at|}
+
+|n#|3|at|^^Respond 3@H. A new suit bid by the responder to a preempt is a forcing bid (unless it is a game contract). The opener is asked to raise if he has support for the new suit.|
+cs|1|ht|d|n#|5|at|^N{|ia|   3cp3h|at|}|
+pg| ***** 413 ***** |
+
+
+cs|3|ht|n|at|^C {|ih|ps5h964dt8ckqj8762|at|}|
+ht|o|cs|2|n#|5|at|{^NIf partner has heart support he will
+^Nraise you to 4@H. You will pass and
+^Nthe best game contract will be reached.}|
+cs|1|ht|d|n#|5|at|^N{|ia|   3cp3hp4hpp|at|}|
+pg| ***** 414 ***** |
+
+
+cs|3|ht|u|at|^C {|ih|ph5st8d964ckqj8762|at|}|
+ht|v|cs|2|n#|5|at|{^NIf partner lacks heart support he will likely
+^Nrebid his clubs. You will raise to 5@C,
+^Nagain reaching the best game contract.}|
+cs|1|ht|d|n#|5|at|^N{|ia|   3cp3hp4cp5c|at|}|
+pg| ***** 415 ***** |
+
+
+nt|^z@3^b@2|cs|2|at|
+^-{The response of a game contract to a preemptive opening is an absolute signoff bid.
+All other new suit responses to preempts are forcing on the opening bidder.}
+^-
+|
+pg| ***** 416 ***** |
+
+
+cs|4|at|Intuitively this makes good sense. The opening preempt does an excellent job of describing a hand, often putting partner in a good position to select the best contract at once. If responder uses this information to choose a game contract, opener is in no position to overrule.
+
+|
+pg| ***** 417 ***** |
+
+
+at|For example, suppose you open with a 4@D preempt and your partner responds 4@S:|
+cs|1|ht|l|n#|5|at|^N{|ia| 4dp4sp?|at|}
+|ht|k|n#|5|cs|3|at|^C {|ih|ph654dkqj98743cj6|at|}
+
+|
+pg| ***** 418 ***** |
+
+
+at|^^Pass - partner's response in a game contract is an absolute signoff when you have opened with a preempt. It doesn't matter that you have a spade void. Partner did not ask you if you had spade support - he is telling you that he wants to play 4@S regardless of what your preempt looks like. It would be nice to have some spades, but your 4@D opening did not promise any. Partner is prepared to play 4@S even if you are void.|
+cs|1|ht|l|n#|5|at|^N{|ia| 4dp4spp|at|}|
+pg| ***** 419 ***** |
+
+
+ht|v|cs|4|at|^-{When you preempt, your partner knows what your hand looks like and he takes charge of
+the bidding. If he decides on a game contract, you should respect his decision and pass.}|
+pg| ***** 420 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|In this example your partner opens with a weak 2-bid in diamonds, suggesting a good 6-card diamond suit and not much else. You have nice support for your partner's diamonds, but you also have a weak hand. 2@D probably will be a reasonable contract. Should you pass?|
+
+cs|1|ht|f|at|^N{|ia|   2dp?|at|}
+|ht|e|cs|3|at|^C {|ih|psa764ht8dat6c8253|at|}
+
+|
+pg| ***** 421 ***** |
+
+
+cs|2|at|You should raise to 3@D, even though 2@D has a much better chance of succeeding. Think about partner's typical hand and what the fate of various contracts rate to be and remember:
+
+^-{The main purpose of preempts is to make it hard for the opponents to find their best contract}.
+^-
+|cs|1|ht|f|at|^N{|ia|   2dp3d|at|}|
+pg| ***** 422 ***** |
+
+
+ht|q|cs|3|at|^C {|ih|pst5h952dkqj952c94|at|}|
+ht|q|at|^LIf 3@D becomes the final contract it will likely fail
+^Lby 1 trick (losing 1 spade, 2 hearts, and 2 clubs). Rats!
+^L2@D would have been a success. Think about the
+^Lopponents' possible game contracts now. They will
+^Llose 3 tricks at most (the @SA and 2 diamond tricks).
+^LThe opponents have a certain game contract of 4@H.
+
+|
+pg| ***** 423 ***** |
+
+
+cs|1|at|^-{Raising partner's 2@D preempt to 3@D increases the preemptive effect. 3@D will fail,
+but your raise will make it even harder for the opponents to bid to their game contract.}
+|
+pg| ***** 424 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|When you raise partner's preempt as a further preemptive measure, you are intentionally bidding a contract that probably will not succeed. The purpose of this raise is to make it harder for the opponents to find their best game contract.|
+cs|1|ht|f|at|^N{|ia|   2dp3d|at|}
+|ht|e|cs|3|at|^C {|ih|psa764ht8dat6c8253|at|}
+
+|
+pg| ***** 425 ***** |
+
+
+cs|2|at|There are 2 requirements for the preemptive raise of partner's preempt:
+
+^-{1. Your hand (and support) is strong enough that the contract you bid will not fail by much.}
+
+|cs|4|at|{2. You expect that the opponents can succeed in some game contract of their own.}
+^-
+|
+pg| ***** 426 ***** |
+
+
+at|The hand we have been looking at meets both of these criteria. 3@D should fail by 2 tricks at the most (as 6 diamond tricks and the @SA are certain winners). The opponents have a certain game contract in 4@H as they cannot possibly lose more than 2 diamond tricks and the @SA.
+
+|
+pg| ***** 427 ***** |
+
+
+cs|1|at|In order to understand exactly how many tricks a contract can fail by and still turn out better than a successful game contract by the opponents, you have to understand scoring in bridge. There is an appendix in this program that explains bridge scoring. For now you can assume:
+|n#|7|at|^-{A 2-trick failure in your contract is better than the opponents' success in a game contract.}
+|
+pg| ***** 428 ***** |
+
+
+qx|revex4,hide Responding to a preemptive opening - Review and exercises|
+nt|^z@3^b@2|cs|5|fp|t|at|
+^-{ Responding to a preemptive opening - Review and exercises }
+^-|fp||at|
+|
+pg| ***** 429 ***** |
+
+
+cs|4|at|^-{Responding to a preempt is more about ^*Icounting tricks^*N than counting points.
+Visualize partner's hand and estimate the outcome of various contracts (for both partnerships).}
+
+|
+pg| ***** 430 ***** |
+
+
+cs|2|at|{To visualize partner's hand expect 2 of the Ace, King, and Queen in his long suit. Weak 2-bids
+promise 6-card suits, 3-level preempts 7-card suits, and 4-level preempts 8-card suits.}
+
+|
+pg| ***** 431 ***** |
+
+
+cs|3|at|{Side suit Aces and Kings tend to be very valuable when partner
+preempts while side suit Queens and Jacks are often worthless.}
+
+|
+pg| ***** 432 ***** |
+
+
+cs|1|at|{The response of a game contract after a preempt is an absolute signoff. Responder
+knows what opener's hand looks like and has made the final decision for the partnership.}
+
+|
+pg| ***** 433 ***** |
+
+
+cs|4|at|{When you respond 3NT to a preempt you either expect to run the opener's suit or
+you have a long solid suit of your own. In either case, stoppers in all suits are required.}
+
+|
+pg| ***** 434 ***** |
+
+
+cs|2|at|{After a preempt, a new suit response (that is not a game contract) is a forcing bid.
+The opener will raise with support and normally return to his own suit without support.}
+
+|
+pg| ***** 435 ***** |
+
+
+cs|3|at|{Consider raising partner's preempt as a further preempt. If the contract you bid fails
+by 2 tricks or fewer and the opponents have a game contract, you will be showing a profit.}
+
+|
+pg| ***** 436 ***** |
+
+
+cs|1|at|{Remember, preempts are all about making life difficult for the opponents.}|
+pg| ***** 437 ***** |
+
+
+md||mb|3h|mb|p|
+nt|^z@3^b@2
+Here are some exercises to test you on responding to a preemptive opening bid:|
+
+ht|d|cs|3|at|^C{|ih|psA98h7dak532ca872|at|}|
+ht|e|cs|1|at|^O{|ia| 3hp?|at|}|
+hf|k|cq|3|lb|*BWhat would you respond to your
+partner's preemptive opening?^^4h|
+ht|e|cs|1|at|^O{|ia| 3hp4h|at|}
+
+
+
+Raise partner to 4@H. Your partner's 3@H opening promised a strong 7-card heart suit. It is reasonable to hope that partner can win 6 heart tricks. You have 4 tricks to add. Raise to 4@H because you expect partner to win 10 tricks, not because of the number of points that you have. It would be a mistake to try 3NT without either a fit for partner or a long solid suit of your own.|
+pg| ***** 439 ***** |
+
+
+ht|p|cs|3|at|^C{|ih|pskqjh9dkqj53cqj43|at|}|
+ht|q|cs|1|at|^O{|ia| 3hp?|at|}|
+hf|z|lb|*BWhat would you respond to your
+partner's preemptive opening?^^p|
+ht|q|cs|1|at|^O{|ia| 3hpp|at|}
+
+
+
+Pass. This hand has the same distribution and HCP as the previous hand, but it is not nearly as strong opposite a preempt. Even if partner can play the trump suit without losing a trick (unlikely), he probably will have to lose tricks to the @SA, @DA, @CA, and @CK. Pass 3@H as you expect your partner to lose at least 4 tricks with hearts as trump.|
+pg| ***** 441 ***** |
+
+
+nt|^z@3^b@2|
+md||mb|2s|mb|p|
+ht|b|cs|3|at|^C{|ih|psaJ6ha82dak53cqjt|at|}|
+ht|c|cs|1|at|^O{|ia| 2sp?|at|}|
+hf|i|cq|3|lb|*BWhat would you respond to your
+partner's preemptive opening?^^3n|
+ht|c|cs|1|at|^O{|ia| 2sp3n|at|}
+
+
+
+Respond 3NT, a signoff bid. You expect to win 9 easy tricks in notrump, 6 spade tricks, the @HA, @DA, and @DK. Your club holding is a sure stopper which will prevent the defenders from running that suit. 4@S may also succeed, but it could fail. 3NT is the only game contract that you know will be secure.|
+pg| ***** 443 ***** |
+
+
+ht|n|cs|3|at|^C{|ih|ps6hkqj93dkqj6cak3|at|}|
+ht|o|cs|1|at|^O{|ia| 2sp?|at|}|
+hf|x|lb|*BWhat would you respond to your
+partner's preemptive opening?^^3h|
+ht|o|cs|1|at|^O{|ia| 2sp3h|at|}
+
+
+
+Respond 3@H, a forcing bid. This hand is strong enough to insist on some game contract opposite partner's weak 2-bid. The problem is that you don't know which game contract rates to be best. 3@H will help get you the information that you need.
+
+If partner has heart support he will raise to 4@H. Otherwise, he will likely rebid his spades and you can choose between 3NT and 4@S as the final contract.|
+pg| ***** 445 ***** |
+
+
+nt|^z@3^b@2|
+md||mb|3c|mb|p|
+ht|b|cs|3|at|^C{|ih|ps5hakt54dak963ckt|at|}|
+ht|c|cs|1|at|^O{|ia| 3cp?|at|}|
+hf|i|cq|3|lb|*BWhat would you respond to your
+partner's preemptive opening?^^6c|
+ht|c|cs|1|at|^O{|ia| 3cp6c|at|}
+
+
+
+Raise to 6@C, a signoff bid. With your @CK to fill in his suit, partner can be counted on to win 7 club tricks. Your 2 Ace-Kings bring the total up to 11 tricks. Partner should not have much trouble finding a twelfth trick, either by ruffing a spade in your hand (the dummy) or by establishing one of your long suits. Bid 6@C because you expect your partner to win 12 tricks!|
+pg| ***** 447 ***** |
+
+
+ht|n|cs|3|at|^C{|ih|ps97h8daq9743cq854|at|}|
+ht|o|cs|1|at|^O{|ia| 3cp?|at|}|
+hf|x|lb|*BWhat would you respond to your
+partner's preemptive opening?^^5c|
+ht|o|cs|1|at|^O{|ia| 3cp5c|at|}
+
+
+
+Raise to 5@C, mostly to further the effect of partner's preempt. It is possible that 5@C will succeed, but it is not very likely. What is very likely is that the opponents can succeed in a game or slam contract of their own.
+
+5@C is unlikely to fail by more than 2 tricks and this bid will make it all the more difficult for the opponents to find their best contract.|
+pg| ***** 449 ***** |
+
+
+qx|min,Opener's minimum rebids|
+nt|^z@3^b@2|cs|5|fp|t|at|
+^-{ Opener's minimum rebids }
+^-|fp||at|
+Bidding is a conversation. The purpose of this conversation is for the partners to describe the strength and distribution of their hands so that one partner will eventually be in a position to select the best contract.
+
+We have seen that some opening bids (like 1NT and preempts) narrowly define opener's strength and distribution immediately. This is not the case when the opening bid is 1 of a suit.
+
+|
+pg| ***** 450 ***** |
+
+
+cs|1|ht|l|at|^n{|ia| 1c|at|}
+
+
+Suppose that you open the bidding 1@C. Your partner knows that you have anywhere between 13 and 21 total points and at least 3 clubs. You could have lots of clubs and/or you could have 4-card support for any of the other 3 suits. In other words, the 1@C opening bid does not place a very narrow limit on either opener's strength or his distribution.
+
+|
+pg| ***** 451 ***** |
+
+
+at|Suppose now that your partner responds 1@H, a forcing bid promising 6 or more total points and 4 or more hearts. It is your turn to rebid and you should use this opportunity to tell your partner more about your hand.|
+cs|1|ht|l|at|^n{|ia| 1cp1Hp?|at|}
+
+|
+pg| ***** 452 ***** |
+
+
+ht|w|n#|2|cs|2|at|^-{Opener's rebid is used to tell responder more about opener's strength and distribution.}
+^-
+|
+pg| ***** 453 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|One of opener's primary missions with his rebid is to limit the strength of his hand to a much narrower range than the 13 to 21 total points shown by the opening bid.
+|cs|3|n#|7|at|^-{Opener places his hand into one of these categories: minimum (13-15), medium (16-18),
+or maximum (19-21). He tries to tell responder which one when he makes his rebid.}
+^-|
+pg| ***** 454 ***** |
+
+
+n#|8|at|Here are some examples of rebids by opener that promise a minimum (13-15) hand^*N:
+
+|cs|1|ht|k|at|^B{|ia| 1cp1Hp1n|at|} 
+|cs|2|ht|i|at|^C {A non-jump rebid in notrump.}
+|
+pg| ***** 455 ***** |
+
+
+cs|1|ht|k|at|^O{|ia| 1cp1Hp2c|at|}
+|cs|2|ht|i|at|^O   {A non-jump rebid of the same suit.}
+|
+pg| ***** 456 ***** |
+
+
+ht|s|cs|1|at|^B{|ia| 1cp1Hp2h|at|}
+|cs|2|ht|q|at|^B    {A non-jump raise of partner's suit.}|
+pg| ***** 457 ***** |
+
+
+cs|4|ht|q|at|^O    {A non-jump rebid in a new suit.}
+|ht|s|cs|1|at|^O{|ia| 1cp1Hp1s|at|}
+
+The last example is special because opener's new suit rebid does not specifically place opener's strength into only 1 category. This rebid could be based on either a minimum (13-15) or a medium (16-18) strength hand. It cannot be based on a maximum strength hand.|
+pg| ***** 458 ***** |
+
+
+nt|^z@3^b@2
+|cs|1|ht|b|at|^-{|ia| 1cp1Hp?|at|}
+^-
+|n#|5|at|When you open the bidding with 1 of suit and your partner responds with 1 of a new suit, you have 4 choices when you are dealt a minimum hand with 13-15 total points. These choices can be arranged in terms of priority:
+
+|
+pg| ***** 459 ***** |
+
+
+cs|4|ht|k|n#|5|at|^-{1. Make a non-jump raise of partner's suit. First priority is to show support.}
+^-
+|cs|1|ht|b|at|^-{|ia| 1cp1Hp2h|at|}
+^-
+|
+pg| ***** 460 ***** |
+
+
+cs|2|ht|m|at|^-{2. Make a non-jump rebid in a new suit. Second priority is to try to find a trump fit.}
+^-
+|cs|1|ht|b|at|^-{|ia| 1cp1Hp1s|at|}
+^-
+|
+pg| ***** 461 ***** |
+
+
+cs|3|ht|o|at|^-{3. Make a non-jump rebid in the suit you opened. Third priority is to show extra length.}
+^-
+|cs|1|ht|b|at|^-{|ia| 1cp1Hp2c|at|}
+^-
+|
+pg| ***** 462 ***** |
+
+
+cs|1|ht|q|at|^-{4. Make a non-jump rebid in notrump. A notrump rebids says: none of the above.}
+^-
+|cs|1|ht|b|at|^-{|ia| 1cp1Hp1n|at|}
+^-
+|
+pg| ***** 463 ***** |
+
+
+ht|u|at|It is usually not that hard for a minimum opener to decide upon his rebid. First, he checks to see if he has support. If he does, he raises. Next, he looks to see if he has any new suits to show. If he does, he bids a new suit. Next, he checks for extra length in the suit he opened. If he has extra length, he rebids his suit. Otherwise, he rebids in notrump.
+
+|
+pg| ***** 464 ***** |
+
+
+cs|4|at|^-{Don't worry if that sounds complicated. It isn't. You will get the hang of it in no time!}
+|
+pg| ***** 465 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Here are some examples of how the opener chooses his rebid.
+|cs|1|ht|e|at|^N{|ia| 1cp1hp?|at|}
+|ht|d|cs|3|at|^C{|ih|ps86hkj43dat2cajt5|at|}
+
+|
+pg| ***** 466 ***** |
+
+
+at|^^Raise to 2@H, suggesting good support for partner in a minimum hand. Your first priority is to raise and you have a perfect hand for a non-jump raise to 2@H.|
+cs|1|ht|e|at|^N{|ia| 1cp1hp2h|at|}
+|
+pg| ***** 467 ***** |
+
+
+ht|m|at|This hand has 13 HCP and add a short suit point for the doubleton now that you are considering a raise. Your hand is worth 14 total points and falls right in the middle of the 13-15 range of minimum hands. Your 4-card support is about as much as partner could ever hope for. 
+
+|cs|2|at|^-{Opener should always raise responder's suit on any hand with 4-card support.}
+^-
+|
+pg| ***** 468 ***** |
+
+
+cs|4|at|When opener raises responder, he is sending the message that he accepts responder's suggestion of a trump suit. Responder promises only 4 cards in hearts for his 1@H bid which is why it is desirable for opener to have 4-card support for a raise. That is the only way that opener can be sure of an 8-card fit.
+
+|
+pg| ***** 469 ***** |
+
+
+at|^-{Occasionally it is correct for opener to raise responder with only 3-card support, but such
+action is only advisable if there is no good alternative. Beware! A 7-card trump fit could result.}
+|
+pg| ***** 470 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|What would you rebid on this minimum hand? You have only 2-card support for partner's suit so your first priority, to raise, is out of the question.|
+cs|1|ht|e|at|^N{|ia| 1cp1hp?|at|}
+|ht|d|cs|3|at|^C{|ih|ph86skj43dat2cajt5|at|}
+
+|
+pg| ***** 471 ***** |
+
+
+at|^^Respond 1@S. Your second priority is to rebid in a new suit and in doing so you promise at least 4-card length in the suit named. This hand has 4 cards in spades and, since spades is a major suit, you should be especially pleased to suggest it as the trump suit.
+|cs|1|ht|e|at|^N{|ia| 1cp1hp1s|at|}
+
+|
+pg| ***** 472 ***** |
+
+
+ht|o|cs|2|at|^-{When opener rebids in a new suit he promises 4 or more cards in the suit named.
+The 5-card major principle applies only to opening bids of 1@S and 1@H, not to rebids.}
+^-
+|at|Remember that when you, as opener, make your non-jump rebid in a new suit, you are not limiting your hand into one of the 3 categories. You could have either a minimum or a medium hand for this rebid. Sometimes it takes 3 bids for opener to pin down the strength of his hand. However, opener may not get the chance to make a third bid.
+
+|
+pg| ***** 473 ***** |
+
+
+cs|4|at|^-{New suit bids by responder are forcing, but non-jump ^*bnew suit bids^*N by opener are not.}
+^-
+Responder is allowed to pass opener's non-forcing 1@S rebid, but he should be aware that opener could have up to 18 total points (the top of the medium range) for a 1@S rebid.
+|
+pg| ***** 474 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|The next example hand lacks both support for partner and any 4-card (or longer) new suits. Neither of the first 2 priorities apply. What would you rebid with this minimum hand?|
+cs|1|ht|e|at|^N{|ia| 1cp1hp?|at|}
+|ht|d|cs|3|at|^C{|ih|psakqh86d52cat8743|at|}
+
+|
+pg| ***** 475 ***** |
+
+
+at|^^Rebid 2@C. You have considerable extra length in clubs and your third priority is to inform your partner about extra length. You are right at the top of the 13-15 minimum range with 13 HCP and 2 long suit points. You have the right length and strength for a non-jump rebid in the suit that you opened. You have the strongest possible 3-card spade holding, but a 1@S rebid would promise a 4-card spade suit.
+|cs|1|ht|e|at|^N{|ia| 1cp1hp2c|at|}
+|
+pg| ***** 476 ***** |
+
+
+ht|q|at|Your partner will know that you have a 13-15 total point hand with long clubs. He will also know that you lack support for hearts or the ability to bid a new suit. That 2@C rebid goes a long way towards describing your hand to your partner.
+
+This rebid is not even close to being forcing. Partner knows that you have 15 total points at the most and that clubs rates to be a reasonable trump suit. He is welcome to pass your 2@C rebid if his hand is too weak to explore for a game contract.
+
+|
+pg| ***** 477 ***** |
+
+
+cs|2|at|^-{A rebid in the suit that was opened tends to show at least a ^*I6-card suit^*N.
+Rebidding a ^*I5-card suit^*N is only acceptable if there is no good alternative.}
+^-
+|
+pg| ***** 478 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|This next example fails to meet any of the first 3 priorities. This hand cannot raise, show a new suit, or rebid the suit that was opened. What's left for this minimum hand to rebid?|
+cs|1|ht|e|at|^N{|ia| 1cp1hp?|at|}
+|ht|d|cs|3|at|^C{|ih|psa6ht54dkj7caj843|at|}
+
+|
+pg| ***** 479 ***** |
+
+
+at|^^Rebid 1NT. Your 3-card support for hearts makes a raise to 2@H acceptable if there had been no good alternative. Similarly, your 5-card club suit is rebiddable if you are in trouble. You are not in trouble here. You have a balanced minimum with stoppers in both the unbid suits (spades and diamonds). This hand is a perfect 1NT rebid.
+|cs|1|ht|e|at|^N{|ia| 1cp1hp1n|at|}|
+pg| ***** 480 ***** |
+
+
+ht|p|at|Opener's 1NT rebid reveals a great deal of information to the responder. The 1NT rebid shows a balanced minimum and denies the ability to raise, show a new suit, or rebid the suit that was opened. It is nice to have stoppers in the unbid suits for this rebid, but 1NT is sometimes the best choice without stoppers.
+
+|
+pg| ***** 481 ***** |
+
+
+cs|2|at|^-{In a perfect world, opener will always have a balanced hand with stoppers for a 1NT rebid.
+Sometimes 1NT is the best rebid with a hand that is slightly unbalanced or lacks stoppers.}
+^-
+|
+pg| ***** 482 ***** |
+
+
+at|We have seen that several of opener's minimum rebids can be made on slightly flawed hands if there is no reasonable alternative. The next few hands are examples of when no rebid is perfect and opener's choice should be seen as the least of evils.|
+pg| ***** 483 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Nothing is perfect on this hand. Raising to 2@H or showing a new suit is out of the question. 2@C would tend to show a sixth club and 1NT would tend to show stoppers. What would you do?|
+cs|1|ht|e|at|^N{|ia| 1cp1hp?|at|}
+|ht|d|cs|3|at|^C{|ih|psj42hKJdj53caqjt8|at|}
+
+|
+pg| ***** 484 ***** |
+
+
+at|^^Rebid 2@C as the least of evils. You have only 5 clubs, but the suit is strong, making it more attractive as a rebid. Your very weak holdings in both unbid suits should provide a good warning that you should not suggest notrump.|
+cs|1|ht|e|at|^N{|ia| 1cp1hp2c|at|}
+|
+pg| ***** 485 ***** |
+
+
+cs|1|ht|p|at|^N{|ia| 1cp1hp?|at|}
+|ht|o|cs|3|at|^C{|ih|psj42haqtdqjcK9764|at|}
+
+|
+pg| ***** 486 ***** |
+
+
+cs|2|at|^^Raise to 2@H as the least of evils. You have only 3-card support, but the 3 hearts you have are very strong. You have some more high cards in the unbid suits this time, but you still do not have any true stoppers. Your ratty 5-card club suit is not worthy of consideration as a rebid.
+
+^-{A 3-card raise requires strong trumps. Rebidding a ^*I5-card suit^*N requires a strong suit.}
+^-
+|cs|1|ht|p|at|^N{|ia| 1cp1hp2h|at|}|
+pg| ***** 487 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Here is another example where opener has no completely satisfactory rebid. The choices this time are a raise with
+3-card support and 1NT on a hand without stoppers.|
+cs|1|ht|e|at|^N{|ia| 1cp1hp?|at|}
+|ht|d|cs|3|at|^C{|ih|psj42hajtdj53caq43|at|}
+
+|
+pg| ***** 488 ***** |
+
+
+at|^^Rebid 1NT as the least of evils. Your hearts are strong enough for a 3-card raise, but 4333 hands belong in notrump. It is usually best to rebid 1NT with 4333 hands, even without stoppers.|
+cs|1|ht|e|at|^N{|ia| 1cp1hp1n|at|}|
+pg| ***** 489 ***** |
+
+
+cs|1|ht|o|at|^N{|ia| 1dp1hp?|at|}
+|ht|n|cs|3|at|^C{|ih|psahkq9dk8742c8543|at|}
+
+|
+pg| ***** 490 ***** |
+
+
+cs|2|at|^^Raise to 2@H, even though you have only 3-card support ^*Iand^*N a new suit that you could bid. 2@C is the obvious rebid on this hand, but there are 2 reasons why 2@H is a better choice. First, the clubs are very weak and the hearts are very strong. Second, 2@H immediately limits this hand into the minimum range while 2@C could be based on either a minimum or a medium hand.
+
+^-{If you have a choice of rebids, it is often best to choose the rebid that limits your hand.}
+^-
+|cs|1|ht|o|at|^N{|ia| 1dp1hp2h|at|}
+|
+pg| ***** 491 ***** |
+
+
+qx|exercise1,hide Opener's minimum rebids - Exercises|
+md||mb|1c|mb|p|mb|1h|mb|p|
+nt|^z@3^b@2|cs|5|at|
+^-{Opener's minimum rebids - Exercises}
+^-
+|ht|d|cs|3|at|^C{|ih|psA983hQ854d73cak6|at|}|
+ht|e|cs|1|at|^O{|ia| 1cp1hp?|at|}|
+hf|k|cq|3|
+lb|*BYou are the opening bidder.
+Which rebid would you make?^^2h|
+
+
+ht|e|cs|1|at|^O{|ia| 1cp1hp2h|at|}
+
+Raise to 2@H. Your first priority is to raise partner. There is no good reason to introduce your spades as you already know that the partnership has at least an 8-card major suit fit in hearts. With 14 total points (13 HCP and 1 short suit point) this hand falls in the range of the single raise (showing 13-15 total points).|
+pg| ***** 493 ***** |
+
+
+ht|p|cs|3|at|^C{|ih|pskq75h7da6ckt9732|at|}|
+ht|q|cs|1|at|^O{|ia| 1cp1hp?|at|}|
+hf|z|lb|*BYou are the opening bidder.
+Which rebid would you make?^^1s|
+ht|q|cs|1|at|^O{|ia| 1cp1hp1s|at|}
+
+
+Rebid 1@S. Your 6-card club suit is good enough to rebid, but showing a new suit is a higher priority than showing extra length in the suit that was opened. Partner might still have 4 spades. In this case your 1@S rebid will uncover an 8-card major suit fit. A 2@C rebid would deny as many as 4 cards in spades.|
+pg| ***** 495 ***** |
+
+
+nt|^z@3^b@2|
+ht|b|cs|3|at|^C{|ih|psk43h873dacajt854|at|}|
+ht|c|cs|1|at|^O{|ia| 1cp1hp?|at|}|
+hf|i|cq|3|lb|*BYou are the opening bidder.
+Which rebid would you make?^^2c|
+ht|c|cs|1|at|^O{|ia| 1cp1hp2c|at|}
+
+Rebid 2@C. Raising partner with only 3-card support is permissible only as a ^*Ilast resort^*N. This minimum hand, with a strong 6-card club suit, has a good alternative in 2@C. If partner is strong enough to bid again you will be able to show your heart support at your next opportunity. If partner passes 2@C then you will probably be in a reasonable contract.|
+pg| ***** 497 ***** |
+
+
+ht|n|cs|3|at|^C{|ih|psj97hq84daq2ckq93|at|}|
+ht|o|cs|1|at|^O{|ia| 1cp1hp?|at|}|
+hf|x|lb|*BYou are the opening bidder.
+Which rebid would you make?^^1n|
+ht|o|cs|1|at|^O{|ia| 1cp1hp1n|at|}
+
+
+Rebid 1NT, suggesting a balanced minimum without 4-card support or a new suit to show. Your hand would be perfect for 1NT except for one thing - you would like to have a stronger holding in spades. The 4333 distribution of this hand is more than enough to make 1NT (and not 2@H) the proper rebid.|
+pg| ***** 499 ***** |
+
+
+nt|^z@3^b@2|
+md||mb|1n|mb|p|
+ht|b|cs|3|at|^C{|ih|psaq64h97da42ckj94|at|}|
+ht|c|cs|1|at|^O{|ia| 1cp1np?|at|}|
+hf|i|cq|3|lb|*BYou are the opening bidder.
+Which rebid would you make?^^p|
+ht|c|cs|1|at|^O{|ia| 1cp1npp|at|}
+
+Pass. Your partner has promised 6-9 total points with his 1NT response. You have 14 total points so game is out of the question. There is no point in introducing your 4-card major with a 2@S bid. Partner's 1NT response denied holding a 4-card major. 1NT rates to be a reasonable contract - all the more reason to pass!|
+pg| ***** 501 ***** |
+
+
+md||mb|2h|mb|p|ht|n|cs|3|at|^C{|ih|psa5hkqt42daj82ct6|at|}|
+ht|o|cs|1|at|^O{|ia| 1hp2hp?|at|}|
+hf|x|lb|*BYou are the opening bidder.
+Which rebid would you make?^^p|
+ht|o|cs|1|at|^O{|ia| 1hp2hpp|at|}
+
+
+Pass. You have a nice hand with 15 total points (14 HCP and 1 long suit point). Partner has 9 total points at the most for his single raise to 2@H. With game out of the picture and a known 8-card fit, there is no reason to suggest any contract other than 2@H.|
+pg| ***** 503 ***** |
+
+
+nt|^z@3^b@2|
+md||mb|2n|mb|p|
+ht|b|cs|3|at|^C{|ih|psaq64h97da42ckj94|at|}|
+ht|c|cs|1|at|^O{|ia| 1cp2np?|at|}|
+hf|i|cq|3|lb|*BYou are the opening bidder.
+Which rebid would you make?^^3n|
+ht|c|cs|1|at|^O{|ia| 1cp2np3n|at|}
+
+Raise to 3NT. Your partner is promising a balanced hand with 13-15 HCP. Your 14 HCP mean that game is certain, but slam is out of the picture. There is no reason to mention your spades as partner denied a 4-card major with his 2NT response. 3NT is almost certain to be the best game contract.|
+pg| ***** 505 ***** |
+
+
+md||mb|3h|mb|p|ht|n|cs|3|at|^C{|ih|psa5hkqt42daj82ct6|at|}|
+ht|o|cs|1|at|^O{|ia| 1hp3hp?|at|}|
+hf|x|lb|*BYou are the opening bidder.
+Which rebid would you make?^^4h|
+ht|o|cs|1|at|^O{|ia| 1hp3hp4h|at|}
+
+
+Go on to 4@H. Partner's limit raise promised heart support and 10-11 total points. Your 15 total points (14 HCP and 1 long suit point) are enough that 4@H should be a reasonable contract. You should only pass a limit raise with a very minimum opening bid.|
+pg| ***** 507 ***** |
+
+
+qx|med,Opener's medium rebids|
+nt|^z@3^b@2|cs|5|fp|t|at|
+^-{ Opener's medium rebids }
+^-|fp||at|
+A medium opener (with 16-18 total points) tries to use his rebid to tell responder about his extra values. Once again, opener has 4 choices.|
+pg| ***** 508 ***** |
+
+
+at| The first of these choices, a jump rebid in notrump falls on the boundary of the medium (16-18) and maximum (19-21) ranges. To be specific, the jump rebid in notrump promises a balanced hand with 18-19 HCP.|
+
+cs|1|ht|k|at|^B{|ia| 1cp1Hp2n|at|} 
+|cs|4|ht|i|at|^D{A jump rebid in notrump.}
+|
+pg| ***** 509 ***** |
+
+
+cs|1|ht|k|at|^O{|ia| 1cp1Hp3c|at|}
+|cs|2|ht|i|at|^P{A jump rebid of the same suit.}
+|
+pg| ***** 510 ***** |
+
+
+ht|s|cs|1|at|^B{|ia| 1cp1Hp3h|at|}
+|cs|2|ht|q|at|^C   {A jump raise of partner's suit.}|
+pg| ***** 511 ***** |
+
+
+cs|4|ht|q|at|^O    {A non-jump rebid in a new suit.}
+|ht|s|cs|1|at|^O{|ia| 1cp1Hp1s|at|}
+
+As we have seen, opener's non-jump rebid of a new suit can based on a hand either in the minimum (13-15) or the medium (16-18) range. With a medium hand, opener must hope for a chance to make a third bid so that he will be able to show his extra strength.|
+pg| ***** 512 ***** |
+
+
+nt|^z@3^b@2|n#|4|at|Before we look at some examples of opener's rebids with medium hands, this is a good time to point out how nicely our bidding system is coming together. We now have an almost complete set of methods for when the opening bidder has a balanced hand.
+
+|
+pg| ***** 513 ***** |
+
+
+ht|e|n#|2|cs|1|at|^-{With a balanced 13-15 HCP, open 1 of a suit and make a non-jump rebid in notrump.}
+
+|
+pg| ***** 514 ***** |
+
+
+ht|g|n#|2|cs|4|at|{With a balanced 15-17 HCP, open 1NT.}
+
+|
+pg| ***** 515 ***** |
+
+
+ht|i|n#|2|cs|2|at|{With a balanced 18-19 HCP, open 1 of a suit and make a jump rebid in notrump.}
+
+|
+pg| ***** 516 ***** |
+
+
+ht|k|n#|2|cs|3|at|{With a balanced 20-21 HCP, open 2NT.}
+
+|
+pg| ***** 517 ***** |
+
+
+ht|m|n#|2|cs|1|at|{With a balanced 22-24 HCP, we currently have no solution.}
+
+|
+pg| ***** 518 ***** |
+
+
+ht|o|n#|2|cs|4|at|{With a balanced 25-27 HCP, open 3NT.}
+
+|
+pg| ***** 519 ***** |
+
+
+ht|q|n#|2|cs|2|at|{With a balanced 28 or more HCP, we currently have no solution.}
+^-
+
+|
+pg| ***** 520 ***** |
+
+
+n#|5|at|^^The solution to showing balanced hands in the 22-24 and 28 plus point ranges is to start by opening 2@C. Your 2NT, 3NT, and 4NT rebids are then used to show the remaining balanced ranges. A description of how this works is shown above.|
+ht|m|n#|2|cs|1|at|^-{With a balanced 22-24 HCP, open 2@C and make a non-jump rebid in notrump (2NT).}
+|ht|q|n#|2|cs|2|at|{With a balanced 28-30 HCP, open 2@C and make a jump rebid in notrump (3NT).}
+|ht|s|n#|2|cs|3|at|{With a balanced 31-32 HCP, open 2@C and make a double jump rebid in notrump (4NT).}
+^-|
+pg| ***** 521 ***** |
+
+
+ht|x|n#|8|at|In the very unlikely event that you are dealt a balanced hand with 33 or more HCP, open 2@C, but do not let the
+bidding die below slam. Your own hand contains enough total points for a small slam without any help from partner!|
+pg| ***** 522 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Here is the priority list for how the opening bidder with a medium (16-18) hand selects his rebid:
+|cs|1|ht|c|n#|2|at|^-{|ia| 1cp1Hp?|at|}
+^-
+|
+pg| ***** 523 ***** |
+
+
+cs|4|ht|i|at|^-{1. Make a jump raise of partner's suit. First priority is to show support.
+Opener's jump raise of responder's suit ^*Iguarantees^*N 4-card support.}
+^-
+|cs|1|ht|c|n#|2|at|^-{|ia| 1cp1Hp3h|at|}
+^-
+|
+pg| ***** 524 ***** |
+
+
+cs|2|ht|l|at|^-{2. Make a jump rebid in notrump (showing a balanced 18-19 HCP). Second priority is to
+limit your hand. When opener was minimum, rebidding notrump was opener's last priority.}
+^-
+|cs|1|ht|c|n#|2|at|^-{|ia| 1cp1Hp2n|at|}
+^-
+|
+pg| ***** 525 ***** |
+
+
+cs|3|ht|o|at|^-{3. Make a jump rebid in the suit you opened. Third priority is to show extra length.
+This rebid ^*Iguarantees^*N at least a ^*I6-card suit^*N and limits opener to the medium range.}
+^-
+|cs|1|ht|c|n#|2|at|^-{|ia| 1cp1Hp3c|at|}
+^-
+|
+pg| ***** 526 ***** |
+
+
+cs|1|ht|r|at|^-{4. Make a non-jump rebid in new suit. Remember, this rebid could be based
+on a minimum. This is still a common rebid, despite it being the last priority.}
+^-
+|cs|1|ht|c|n#|2|at|^-{|ia| 1cp1Hp1s|at|}
+^-
+|
+pg| ***** 527 ***** |
+
+
+ht|u|at|In fact, it is not really fair to make opener's rebid in a new suit as his last priority with a medium hand. There are plenty of hands for which such a rebid would be 100% correct, but there is one good reason why you should try to avoid new suit rebids if there is a good alternative:
+
+|
+pg| ***** 528 ***** |
+
+
+cs|4|at|^-{The other 3 rebids all limit a medium hand, but a new suit rebid can be either minimum
+or medium. These non-forcing rebids can be passed - your extra strength is never shown.}
+|
+pg| ***** 529 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|What would you rebid with this medium hand:|
+cs|1|ht|d|at|^N{|ia| 1cp1hp?|at|}
+|ht|c|cs|3|at|^C{|ih|ps6hak83cak982dt54|at|}
+
+|
+pg| ***** 530 ***** |
+
+
+at|^^Jump raise to 3@H. Your first priority is to raise and you have 4-card support. This hand is too strong for 2@H, which would show a minimum (13-15) hand. This hand has 14 HCP and 3 short suit points for the singleton spade. 17 total points is just right for a 16-18 point jump raise.|
+cs|1|ht|d|at|^N{|ia| 1cp1hp3h|at|}|
+pg| ***** 531 ***** |
+
+
+ht|n|cs|2|at|^-{Remember to reevaluate your hand using short suit points when you are going to raise.}
+^-
+This hand was worth only 15 total points (14 HCP and 1 long suit point) until partner responded 1@H. After partner's 1@H response we reevaluated the hand to 17 total points - enough for a medium rebid.
+
+|
+pg| ***** 532 ***** |
+
+
+at|When opener rebids 3@H he is making a ^*Ihighly^*N invitational, but non-forcing, rebid. The responder needs only about 9 total points to warrant a game contract opposite a 16-18 point medium hand. The 1@H response promised at least 6 total points. Responder doesn't need much more than that to justify a game contract.
+|
+pg| ***** 533 ***** |
+
+
+n#|7|cs|4|at|^-{Opener's jump raise rebid is a non-forcing, but highly invitational, bid. Responder will
+pass with a 6-8 total point response. With 9 or more total points he will bid at least game.}
+|
+pg| ***** 534 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|There are 2 conceivable rebids with this medium range hand, namely 1@S and 2NT.|
+cs|1|ht|d|at|^N{|ia| 1cp1hp?|at|}
+|ht|c|cs|3|at|^C{|ih|pskj97ha6ddkq5caj74|at|}
+
+|
+pg| ***** 535 ***** |
+
+
+at|^^Rebid 2NT, describing a balanced hand with 18 or 19 HCP. The alternative, a 1@S rebid, is inferior. 2NT gets the nod because this rebid immediately limits both the strength and the distribution of your hand. A 1@S rebid, however, could be based on either a minimum or a medium hand - it does not limit opener's strength. Also, a 1@S rebid could be based on either a balanced or an unbalanced hand - it does not limit opener's distribution.
+|cs|1|ht|d|at|^N{|ia| 1cp1hp2n|at|}|
+pg| ***** 536 ***** |
+
+
+ht|p|cs|3|at|^C{|ih|pskj97hakqdd63caj74|at|}
+|cs|1|ht|q|at|^N{|ia| 1cp1hp1s|at|}
+
+Conversely, 1@S is the correct rebid with this balanced 18 HCP hand. The small doubleton diamond is not even close to being a stopper - a sound reason to avoid notrump.
+|
+pg| ***** 537 ***** |
+
+
+n#|7|cs|2|at|^-{Opener should usually rebid 2NT in preference to a new suit when he holds a medium
+range hand. A new suit rebid can be right, however, if the hand contains an unstopped suit.}
+|
+pg| ***** 538 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|This medium hand has long clubs, but it is too strong for a minimum rebid of 2@C:|
+cs|1|ht|d|at|^N{|ia| 1cp1hp?|at|}
+|ht|c|cs|3|at|^C{|ih|psa7h54da98caqjt84|at|}
+
+|
+pg| ***** 539 ***** |
+
+
+at|^^Rebid 3@C. A jump rebid in the suit that was opened suggests a medium hand with a strong 6-card (or longer) suit. This hand is perfect. It contains 17 total points (15 HCP and 2 long suit points) and the club suit is certainly very strong.
+|cs|1|ht|d|at|^N{|ia| 1cp1hp3c|at|}|
+pg| ***** 540 ***** |
+
+
+ht|n|cs|3|at|^C{|ih|psakhadq87432ck972|at|}
+|cs|1|ht|o|at|^N{|ia| 1dp1hp2c|at|}
+
+This 18 total point hand (16 HCP and 2 long suit points) also falls into the medium range and contains 6 cards in the suit that was opened (diamonds this time). The diamond suit is too weak, however, to consider a jump rebid. Fortunately there is an acceptable alternative - you have a new suit to show. The correct rebid is 2@C.
+|
+pg| ***** 541 ***** |
+
+
+n#|7|cs|2|at|^-{The jump rebid of the suit opened is a very descriptive bid. One of the things that it describes
+is a powerful suit. Try to find an alternative if your medium hand has a weak 6-card suit.}
+|
+pg| ***** 542 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|We have now seen 2 examples of when a medium hand should rebid in a new suit because higher priority rebids were flawed:
+|cs|4|n#|7|at|^-{1. Consider rebidding a new suit with a hand that is otherwise perfect for a
+jump rebid to 2NT, but lacks a stopper in one (or more) unbid suits.}
+
+|cs|2|at|{2. Consider rebidding a new suit with a hand that is otherwise perfect for a jump rebid
+in the suit that was opened, but lacks the strong 6-card suit that this rebid implies.}
+^-|
+pg| ***** 543 ***** |
+
+
+n#|8|at|It is often the case that a new suit rebid is more than just a least of evils alternative:
+|cs|1|ht|m|at|^N{|ia| 1dp1hp?|at|}
+|ht|l|cs|3|at|^C{|ih|psa2h6dkqj74caj963|at|}
+
+|
+pg| ***** 544 ***** |
+
+
+at|^^Rebid 2@C. There is no alternative to this new suit rebid. We have a second 5-card suit to tell our partner about and 2@C is a good start in that direction. This new suit rebid does not completely describe either the strength (since 2@C could also be based on a minimum hand) or the distribution (since 2@C only promises 4 clubs) of our hand. We will have to hope for a third chance to bid so that we can complete the description of this hand.|
+cs|1|ht|m|at|^N{|ia| 1dp1hp2c|at|}
+
+|
+pg| ***** 545 ***** |
+
+
+cs|4|ht|y|at|^-{When you a make new suit rebid on a medium hand you hope your partner does not exercise
+his right to pass this non-forcing bid - you need another chance to show your extra strength.}
+|
+pg| ***** 546 ***** |
+
+
+qx|exercise2,hide Opener's medium rebids - Exercises|
+md||mb|1c|mb|p|mb|1h|mb|p|
+nt|^z@3^b@2|cs|5|at|
+^-{Opener's medium rebids - Exercises}
+^-
+|ht|d|cs|3|at|^C{|ih|psaj63hkt52d9cak72|at|}|
+ht|e|cs|1|at|^O{|ia| 1cp1hp?|at|}|
+hf|k|cq|3|lb|*BYou are the opening bidder.
+Which rebid would you make?^^3h|
+ht|e|cs|1|at|^O{|ia| 1cp1hp3h|at|}
+
+Raise to 3@H. Your first priority is to raise partner. This 15 HCP hand was originally in the minimum range, but partner's 1@H response added 3 short suit points and promoted this hand to the medium range. Jump raise to 3@H to suggest your extra strength. This rebid promises 4-card support so your partner will know at once that an 8-card major suit fit is present.|
+pg| ***** 548 ***** |
+
+
+ht|p|cs|3|at|^C{|ih|psaqt2hj7dkq9ckqj6|at|}|
+ht|q|cs|1|at|^O{|ia| 1cp1hp?|at|}|
+hf|z|lb|*BYou are the opening bidder.
+Which rebid would you make?^^2n|
+ht|q|cs|1|at|^O{|ia| 1cp1hp2n|at|}
+
+Rebid 2NT. 1@S is a reasonable alternative, but 2NT has the advantage of limiting both the strength and distribution of your hand. It is almost always correct to make a jump rebid in notrump, rather than rebid a new suit, with all balanced hands containing 18 or 19 HCP.|
+pg| ***** 550 ***** |
+
+
+nt|^z@3^b@2|
+ht|b|cs|3|at|^C{|ih|psajth8dk76caqjt54|at|}|
+ht|c|cs|1|at|^O{|ia| 1cp1hp?|at|}|
+hf|i|cq|3|lb|*BYou are the opening bidder.
+Which rebid would you make?^^3c|
+ht|c|cs|1|at|^O{|ia| 1cp1hp3c|at|}
+
+
+Rebid 3@C. This hand contains 17 total points (15 HCP and 2 long suit points). A medium rebid is called for. A jump to 3@C is the rebid of choice as it desribes this hand perfectly: a medium strength hand with a strong 6-card club suit.|
+pg| ***** 552 ***** |
+
+
+ht|n|cs|3|at|^C{|ih|pskq62hakjd2ck9873|at|}|
+ht|o|cs|1|at|^O{|ia| 1cp1hp?|at|}|
+hf|x|lb|*BYou are the opening bidder.
+Which rebid would you make?^^1s|
+ht|o|cs|1|at|^O{|ia| 1cp1hp1s|at|}
+
+
+Rebid 1@S. There is no choice except to rebid in a new suit as this hand lacks the heart and club length to jump rebid in either of those suits. Hopefully partner will make another bid and you will be able to show your strength and 3-card support for hearts at your next opportunity.|
+pg| ***** 554 ***** |
+
+
+qx|max,Opener's maximum rebids|
+nt|^z@3^b@2|cs|5|fp|t|at|
+^-{ Opener's maximum rebids }
+^-|fp||at|
+A maximum opener (with 19-21 total points) must ensure that the partnership reaches at least a game contract (since responder's 6 promised total points ensure that 25 or more combined total points are present). A maximum opener has 4 ways to force to game:|
+pg| ***** 555 ***** |
+
+
+cs|1|ht|k|at|^B{|ia| 1cp1Hp3n|at|} 
+|cs|2|ht|i|at|^C  {A double jump rebid to 3NT.}
+|
+pg| ***** 556 ***** |
+
+
+cs|1|ht|k|at|^O{|ia| 1cp1hp5c|at|}
+|cs|2|ht|i|at|^O     {A game bid in the suit opened.}
+|
+pg| ***** 557 ***** |
+
+
+ht|s|cs|1|at|^B{|ia| 1cp1Hp4h|at|}
+|cs|2|ht|q|at|^B      {A raise of partner's suit to game.}|
+pg| ***** 558 ***** |
+
+
+cs|4|ht|q|at|^P  {A jump rebid in a new suit.}
+|ht|s|cs|1|at|^O{|ia| 1cp1Hp2s|at|}
+
+The last of these rebids, a jump in a new suit, does not take the partnership to game at once, but it does create a game force. Responder must not pass when opener makes a jump rebid in a new suit. We use the term jump shift to describe this type of maximum rebid.|
+pg| ***** 559 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Here is the priority list for how the opening bidder with a maximum (19-21) hand selects his rebid:
+|cs|1|ht|c|n#|2|at|^-{|ia| 1cp1Hp?|at|}
+^-
+|
+pg| ***** 560 ***** |
+
+
+cs|4|ht|i|at|^-{1. Raise partner's suit to game. First priority is to show support.
+Opener's game raise of responder's suit ^*Iguarantees^*N 4-card support.}
+^-
+|cs|1|ht|c|n#|2|at|^-{|ia| 1cp1Hp4h|at|}
+^-
+|
+pg| ***** 561 ***** |
+
+
+cs|2|ht|l|at|^-{2. Make a jump rebid in a new suit (a jump shift). Second priority is to suggest
+another trump suit. Remember that opener's jump shift creates a game force.}
+^-
+|cs|1|ht|c|n#|2|at|^-{|ia| 1cp1Hp2s|at|}
+^-
+|
+pg| ***** 562 ***** |
+
+
+cs|3|ht|o|at|^-{3. Make a double jump rebid to 3NT. This third priority rebid suggests a
+specific type of hand - one with a long solid suit and stoppers in all unbid suits.}
+^-
+|cs|1|ht|c|n#|2|at|^-{|ia| 1cp1Hp3n|at|}
+^-
+|
+pg| ***** 563 ***** |
+
+
+cs|1|ht|r|at|^-{4. Jump to game in the suit that was opened. The last priorty is to rebid game in
+the suit that was opened. Select this rebid only if there is no good alternative.}
+^-
+|cs|1|ht|c|n#|2|at|^-{|ia| 1cp1Hp5c|at|}
+^-
+|
+pg| ***** 564 ***** |
+
+
+ht|u|at|There are a couple of good reasons why opener's last priority with a maximum hand is to rebid a game contract in the suit that he opened. The main reason is that these bids can bypass desirable contracts (especially 3NT). Also, when opener's suit is a minor it will not be certain that the partnership has the 29 combined total points that 5@C and 5@D are supposed to require.|
+pg| ***** 565 ***** |
+
+
+cs|4|ht|y|at|
+^-{Remember, 3NT will often be better than 5 of a minor even if a big minor suit fit is present.}
+|
+pg| ***** 566 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Here is an example of opener's rebid with a maximum hand:|
+
+cs|1|ht|d|at|^N{|ia| 1cp1hp?|at|}
+|ht|c|cs|3|at|^C{|ih|psak54hkqj6d72caq7|at|}
+
+|
+pg| ***** 567 ***** |
+
+
+cs|1|ht|d|at|^N{|ia| 1cp1hp4h|at|}
+
+|at|Raise partner to game with 4@H. This hand has 19 HCP and a short suit point for the doubleton diamond is added once partner responds 1@H. The first priority is to raise and we have 4-card support - it would be wrong to complicate the bidding with a jump shift rebid of 2@S. It is clear to raise and you can show your maximum strength by raising all the way to game.
+
+|
+pg| ***** 568 ***** |
+
+
+cs|2|at|^-{You know that hearts should be trump and that game should be
+reached. A game raise to 4@H will let partner in on the good news!}
+^-
+
+|
+pg| ***** 569 ***** |
+
+
+ht|r|cs|3|at|Opener is balanced in the above example, but sometimes a game raise can be based on an unbalanced hand:
+
+|ht|u|at|^C{|ih|ps4hat98dak2caqj87|at|}|
+ht|u|n#|5|at|^LThis hand has 4-card support and 21 total points
+^L(18 HCP and 3 short suit points). This hand is so good
+^Lthat you could call it a ^*Imaximum^*N maximum! The
+^Lcorrect rebid is 4@H with this unbalanced hand, the
+^Lsame rebid we made with the balanced hand above.|
+pg| ***** 570 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|It's time to have a look at opener's jump shift rebid:|
+
+cs|1|ht|d|at|^N{|ia| 1cp1hp?|at|}
+|ht|c|cs|3|at|^C{|ih|psakJ9h7da98caqjt4|at|}
+
+|
+pg| ***** 571 ***** |
+
+
+at|^^Jump shift to 2@S. This rebid promises 4 or more spades and forces the partnership to the game level. Neither responder nor opener can pass until at least a game contract has been reached. Our 20 total points (19 HCP and 1 long suit point) put us in maximum range and we have a new suit to show. The jump shift rebid^*N of 2@S gets this message across:|
+cs|1|ht|d|at|^N{|ia| 1cp1hp2s|at|}|
+pg| ***** 572 ***** |
+
+
+ht|o|cs|2|at|^-{"Partner, I have enough total points to insist on a game contract, even if you have only
+6 total points. I do not know which strain is best. Please help me out with your rebid!"}
+^-
+|cs|1|ht|s|at|^N{|ia| 1cp1hp?|at|}
+|ht|r|cs|3|at|^C{|ih|psQt84ha3dak6caq85|at|}
+|
+pg| ***** 573 ***** |
+
+
+n#|8|at|^^Rebid 2NT, not 2@S. We learned about the jump rebid to 2NT in the section on medium hands. This rebid promises 18 or 19 HCP in a balanced hand - a perfect description of this 19 HCP hand. Furthermore, you have stoppers in both unbid suits - a 2NT rebid is not flawed in any way.|
+cs|1|ht|s|at|^N{|ia| 1cp1hp2n|at|}|
+pg| ***** 574 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Here is another example of how opener can describe a maximum hand with his rebid:|
+
+cs|1|ht|d|at|^N{|ia| 1cp1hp?|at|}
+|ht|c|cs|3|at|^C{|ih|psa4htda98cakqJ943|at|}
+
+|
+pg| ***** 575 ***** |
+
+
+at|^^Rebid 3NT. This specialized rebid promises a maximum hand with a long solid suit and stoppers in both unbid suits. This 21 total point hand (18 HCP and 3 long suit points) clearly fits the bill. As long as partner has a heart stopper (likely since he bid that suit) you will be able to make 3NT without breathing hard - you have 9 immediate winners (7 club tricks and 2 Aces).|
+cs|1|ht|d|at|^N{|ia| 1cp1hp3n|at|}|
+pg| ***** 576 ***** |
+
+
+ht|o|cs|3|at|Sometimes it is best to rebid 3NT even with a slightly flawed hand. For example:
+
+^C{|ih|psajhtdaj8cakJt943|at|} |n#|t|at|^P{|ih|psaQhtdq85cakqj943|at|} |n^|t|at|
+^^
+The first hand is flawed in that the @CQ is missing - the suit is not solid. The second hand is flawed in that diamonds, an unbid suit, is not securely stopped. A 3NT rebid, while not perfect, is the least of evils with both of these maximum hands. The other maximum rebids are more flawed.|
+pg| ***** 577 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Here is an example of opener's ^*Ilast resort^*N with a maximum hand:|
+
+cs|1|ht|d|at|^N{|ia| 1cp1hp?|at|}
+|ht|c|cs|3|at|^C{|ih|phk4daqjckqjt8643|at|}
+
+|
+pg| ***** 578 ***** |
+
+
+at|^^Rebid 5@C, a game contract in the suit that you opened. This rebid suggests a very long and strong suit and a maximum hand that is inappropriate for any other rebid. This hand does not have enough hearts for a game raise, it does not have another suit to show with a jump shift, and it is not appropriate for a 3NT rebid. 5@C is the only other choice for this maximum hand with 20 total point (16 HCP and 4 long suit points).|
+cs|1|ht|d|at|^N{|ia| 1cp1hp5c|at|}|
+pg| ***** 579 ***** |
+
+
+cs|1|ht|q|at|^N{|ia| 1hp1sp4h|at|}
+|ht|p|cs|3|at|^C{|ih|psaqhaqj9872dkjtc9|at|}
+^^
+Opener's rebid of game in his own suit is more common when that suit is a major (where 1 less trick is required than for a minor suit game and where bypassing 3NT is not as important). This hand has 20 total points (17 HCP and 3 long suit points) - enough for a maximum rebid. 4@H may be your last resort, but you should be happy that your long suit is a major!|
+pg| ***** 580 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|This maximum hand is a square peg that does not fit in any of our 4 round holes:|
+
+cs|1|ht|d|at|^N{|ia| 1dp1hp?|at|}
+|ht|c|cs|3|at|^C{|ih|psakqhakqdj98542c8|at|}
+
+|
+pg| ***** 581 ***** |
+
+
+at|^^This hand has 21 total points (19 HCP and 2 long suit points). A maximum rebid is called for, but all 4 of our choices contain serious flaws:
+
+|
+pg| ***** 582 ***** |
+
+
+ht|m|cs|2|at|^-{1. We do not have the 4-card support that a raise to 4@H would promise.}
+^-
+|cs|1|ht|d|at|^N{|ia| 1dp1hp4h|at|}|
+pg| ***** 583 ***** |
+
+
+ht|o|cs|4|at|^-{2. We do not have a 4-card spade suit that a jump shift to 2@S would promise.}
+^-
+|cs|1|ht|d|at|^N{|ia| 1dp1hp2s|at|}|
+pg| ***** 584 ***** |
+
+
+ht|q|cs|1|at|^-{3. We have no club stopper and our diamonds are far too weak for a 3NT rebid.}
+^-
+|cs|1|ht|d|at|^N{|ia| 1dp1hp3n|at|}|
+pg| ***** 585 ***** |
+
+
+ht|s|cs|3|at|^-{4. We do not have anywhere near a good enough suit for a game rebid of 5@D.}
+^-
+|cs|1|ht|d|at|^N{|ia| 1dp1hp5d|at|}
+
+|
+pg| ***** 586 ***** |
+
+
+ht|u|at|This is truly a choice of evils, with 4 very evil choices. Our bidding system has no good answer for this problem. It is necessary to use your bridge judgement to decide which of these choices is the least flawed. Your author's judgement says that this is a close decision between rebidding 4@H (promising 4 hearts) and 2@S (promising 4 spades). We are going to have to tell partner a lie.|
+cs|1|ht|d|at|^N{|ia| 1dp1hp?|at|}|
+pg| ***** 587 ***** |
+
+
+ht|z|cs|2|at|^-{It is a sad truth in bridge that sometimes you have no choice except to lie to your partner.}
+|
+pg| ***** 588 ***** |
+
+
+qx|exercise3,hide Opener's maximum rebids - Exercises|
+md||mb|1c|mb|p|mb|1h|mb|p|
+nt|^z@3^b@2|cs|5|at|
+^-{Opener's maximum rebids - Exercises}
+^-
+|ht|d|cs|3|at|^C{|ih|psakj3hqj84d9cak72|at|}|
+ht|e|cs|1|at|^O{|ia| 1cp1hp?|at|}|
+hf|k|cq|3|lb|*BYou are the opening bidder.
+Which rebid would you make?^^4h|
+ht|e|cs|1|at|^O{|ia| 1cp1hp4h|at|}
+
+Raise to 4@H. With 4-card support for partner the only question is how high to raise. This hand was originally worth 18 total points (all in HCP), but partner's 1@H response allows us to add 3 short suit points for the singleton diamond. This hand is now in the maximum range so our raise must be to game. Even if partner has only 6 total points, 4@H will usually be a reasonable contract.|
+pg| ***** 590 ***** |
+
+
+ht|p|cs|3|at|^C{|ih|psa2h96da4cakqt973|at|}|
+ht|q|cs|1|at|^O{|ia| 1cp1hp?|at|}|
+hf|z|lb|*BYou are the opening bidder.
+Which rebid would you make?^^3n|
+ht|q|cs|1|at|^O{|ia| 1cp1hp3n|at|}
+
+Rebid 3NT. This rebid describes a maximum hand with a long solid suit and stoppers in all unbid suits. Assuming partner can stop the heart suit, 3NT looks like a big favorite to succeed. It is likely that your hand will produce 9 tricks all by itself, 7 club tricks, the @SA, and the @DA.|
+pg| ***** 592 ***** |
+
+
+nt|^z@3^b@2|
+md||mb|1h|mb|p|mb|1s|mb|p|
+ht|b|cs|3|at|^C{|ih|psa6hkqj9753daqjc4|at|}|
+ht|c|cs|1|at|^O{|ia| 1hp1sp?|at|}|
+hf|i|cq|3|lb|*BYou are the opening bidder.
+Which rebid would you make?^^4h|
+ht|c|cs|1|at|^O{|ia| 1hp1sp4h|at|}
+
+
+Rebid 4@H. This hand has 20 total points (17 HCP and 3 long suit points). With a strong 7-card heart suit, 4@H is the maximum rebid of choice. Your hand is strong enough to force to game and it is very likely that hearts is the best strain.|
+pg| ***** 594 ***** |
+
+
+ht|n|cs|3|at|^C{|ih|psA7hat862dacak983|at|}|
+ht|o|cs|1|at|^O{|ia| 1hp1sp?|at|}|
+hf|x|lb|*BYou are the opening bidder.
+Which rebid would you make?^^3c|
+ht|o|cs|1|at|^O{|ia| 1hp1sp3c|at|}
+
+
+Rebid 3@C, a jump shift. With 21 total points (19 HCP and 2 long suit points) this hand is strong enough to insist upon game. The best strain, however, is still up in the air. Either spades, hearts, clubs, or notrump could be right, depending on partner's distribution.
+
+Start by showing your strength and your second suit with a 3@C jump shift. Partner cannot pass this forcing rebid. Hopefully he will be in a position to suggest a strain for the contract.|
+pg| ***** 596 ***** |
+
+
+qx|2c,wide Opener's rebid after a 2 club opening|
+nt|^z@3^b@2|cs|5|fp|t|at|
+^-{ Opener's rebid after a 2@C opening }
+^-|fp||at|
+You have opened with an artificial forcing 2@C, promising 22 or more total points. Your partner responds with 2@D, an artificial negative promising less than 8 total points. You, the 2@C opener, use your rebid to tell the responder more about your hand:
+
+|ht|h|cs|1|at|^-{|ia| 2cp2dp?|at|}
+^-
+|
+pg| ***** 597 ***** |
+
+
+cs|3|at|We have already seen how the 2@C opener chooses his rebid with a balanced hand:
+
+^-{The 2@C opener rebids 2NT to describe a balanced hand with 22-24 HCP.}
+
+|cs|2|at|{The 2@C opener rebids 3NT to describe a balanced hand with 28-30 HCP.}
+
+|cs|4|at|{The 2@C opener rebids 4NT to describe a balanced hand with 31-32 HCP.}
+^-
+|
+pg| ***** 598 ***** |
+
+
+cs|1|at|When the 2@C opener has an unbalanced hand he rebids in a suit, using the same rules that we used for opening the bidding at the 1-level:
+
+^-{Rebid your longest suit after opening 2@C with an unbalanced hand. With 2 5-card suits
+rebid the higher-ranking. With 3 4-card suits rebid the suit that keeps the bidding the lowest.}
+|
+pg| ***** 599 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|Here are some examples of a 2@C opener's rebid:|
+
+cs|1|ht|d|at|^N{|ia| 2cp2dp?|at|}
+|ht|c|cs|3|at|^C{|ih|psak4hkq97da94caqj|at|}
+
+|
+pg| ***** 600 ***** |
+
+
+at|^^Rebid 2NT, showing a balanced hand with 22-24 HCP. This hand has 23 HCP, too strong for a 20-21 2NT opening bid and not strong enough for a 25-27 3NT opening bid. The range between the 2NT and 3NT openings is shown by opening 2@C and rebidding 2NT. This 2NT rebid is non-forcing, but responder would have to be very weak to pass.
+|cs|1|ht|d|at|^N{|ia| 2cp2dp2n|at|}|
+pg| ***** 601 ***** |
+
+
+cs|1|ht|p|at|^N{|ia| 2cp2dp?|at|}
+|ht|o|cs|3|at|^C{|ih|psakqjh7dkqj86cak6|at|}
+
+|
+pg| ***** 602 ***** |
+
+
+at|^^Rebid 3@D, your longest suit, even though your spades are stronger than your diamonds. It's kind of strange that your partner will end up as declarer if diamonds are trump.|
+cs|1|ht|p|at|^N{|ia| 2cp2dp3d|at|}|
+pg| ***** 603 ***** |
+
+
+ht|y|cs|2|at|^-{A suit rebid by a 2@C opener is forcing. The responder
+must keep the bidding alive, no matter how weak his hand is.}
+
+|
+pg| ***** 604 ***** |
+
+
+nt|^z@3^b@2|
+cs|1|ht|c|at|^N {|ia| 2cp2dp?|at|}
+|ht|b|cs|3|at|^C{|ih|psajt87dakqt3ha3ca|at|}
+
+|
+pg| ***** 605 ***** |
+
+
+at|^^Rebid 2@S (forcing), the higher-ranking of your 2 5-card suits.|
+cs|1|ht|c|at|^N {|ia| 2cp2dp2s|at|}|
+
+cs|1|ht|l|at|^N{|ia| 2cp2dp?|at|}
+|ht|k|cs|3|at|^C{|ih|phkqj8s5dakqjcakq2|at|}
+
+|
+pg| ***** 606 ***** |
+
+
+at|^^Rebid 2@H (forcing). With 3 4-card suits select the rebid that keeps the bidding lowest.|
+cs|1|ht|l|at|^N{|ia| 2cp2dp2h|at|}|
+
+cs|1|ht|u|at|^N{|ia| 2cp2dp?|at|}
+|ht|t|cs|3|at|^C{|ih|pskq6hatdakqjcakqj|at|}
+
+|
+pg| ***** 607 ***** |
+
+
+at|^^Rebid 3NT, describing a balanced hand with 28-30 HCP (you have 29 HCP).|
+cs|1|ht|u|at|^N{|ia| 2cp2dp3n|at|}|
+pg| ***** 608 ***** |
+
+
+nt|^z@3^b@2|
+%%%%%%%%
+qx||bt||ht|i|fp|t|cs|c|cp||
+at|
+^-{^^    End   ^^^^	        Chapter 7         ^^ 
+}
+^-|
+CP||fp||
+pg| ***** 609 ***** |
+
+

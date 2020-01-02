@@ -1,0 +1,1305 @@
+balancingV1.lin 
+%% Last edited  12-15-2014
+%% Last edited  12-31-2017 
+%%%% By Kia, BBO nickname "nome"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|160|ff|1Arial|fb|19|fm|19|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|28|                           FOR 2
+fh|340|ff|3Arial|fb|38|fm|38|                           FOR 3
+fb|46|fm|4|fb|4|fm|4|
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|3255|cg|3255|cb|3255|            White
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|564|cg|5255|cb|564|              green 5
+cr|6124|cb|6250|cg|6200|             6=TURQUOISE
+cr|70|cb|7220|cg|7235|              green/blue 7
+cr|8255|cb|80|cg|80|                red 8
+cr|9128|cb|90|cg|950|               Reddish-brown 9
+bt||
+%%%%%%%%%%%%%%%%%%%%%%
+ht|d|fp|1|cs|1|cp|4|at|^f{ |ht|h|at|^v
+^u }
+|ht|e|at|^-ALL ABOUT
+
+BALANCING
+^-|
+fp||cs||cp||ht|m|AT|^b@2I would like to thank ^*BHoward Schutzman^*N |CP|1|at|^*Hkwbridge.com/^*N|CP||AT|, (BBO nickname "hondo717"), our teacher and mentor, who supervised this work and made sure it stayed ^*Ibalanced^*N throughout. 
+
+Further, I would like to extend my thanks to ^*BMarty Bergen^*N (BBO nickname "mbsez")-|CP|1|AT| ^*Hwww.martybergen.com^*N|CP||AT|, ^*BKaren Walker^*N- |cp|1|at|^*Hkwbridge.com^*N|cp||at|, ^*BRichard Pavlicek^*N-|cp|1|at|^*Hwww.rpbridge.net/^*N|cp||at| (BBO nickname "rfp"), ^*BMichael Lawrence^*N (BBO nickname "mikesl")-|cp|1|at|^*Hwww.michaelslawrence.com/^*N|cp||at|, and ^*BBridgeguys^*N-|CP|1|FP|2|AT|^*Hwww.bridgeguys.com/Conventions/balancing_protection_or_balancing_action.html^*N|CP||FP||at|, and ^*BJerry Helms^*N-|cp|1|at|^*Hwww.jerryhelms.com/^*N|cp||at| in Bridge Bulletin Feb 2013 edition for their generous contributions to my learning this topic. I hope this being a free teaching presentation would be sufficient enough to hold me harmless for not using all the copyright requirements.
+
+|ht|v|AT|^b
+Prepared by ^*BKia^*N (BBO nickname "nome"), aka ^*BMovie Maker ^*N. He wishes to thank ^*BBonnie^*N, BBO nickname "bjmue" and ^*BEileen^*N, BBO nickname "wyoming33" for proofreading this synopsis. ^*BLast updated January 2018^*N.|
+pg| ***** 0 ***** |
+
+
+NT||
+ht|c|cs|1|fp|3|CP|4|at|^-{
+    There Are a Few Markers    
+    }
+^-|cs||fp||CP||at|^B@2
+Either select a marker to view that section or click to forward arrow to proceed.|
+ht|m|cp||at|^*GA1,^bMarker 1: |cp|1|at|Who and Who and the Basics ^*N|
+ht|n|cp||at|^*GA2,^bMarker 2: |cp|1|at|The Best of Times and the Worst of Times ^*N|
+ht|o|cp||at|^*GA3,^bMarker 3: |cp|1|at|Balancing Act in the Balancing Seat, the Double and Others ^*N|
+ht|p|cp||at|^*GA4,^bMarker 4: |cp|1|at|Responding to the Balancing Bids ^*N|
+ht|q|cp||at|^*GA5,^bMarker 5: |cp|1|at|Examples ^*N|
+ht|r|cp||at|^*GA6,^bMarker 6: |cp|1|at|A Look at Ask Jerry  ^*N|
+ht|s|cp||at|^*GA7,^bMarker 7: |cp|1|at|The Final Act - the Practice Session ^*N|
+
+ht|w|cp||AT|
+^B@2^*BMM: ^*NPlease note that this presentation (tutorial) is a collection of information from the sources outlined in the first panel. However, Howard had his final stamp on it. Therefore, when required his comments are added to the particular section.  |
+PG| ***** 1 ***** |
+
+
+NT||
+%%%
+qx|A1|st||pn|Balancing Seat,Opener,Direct Seat,Responder|md|2,,,|sv|o|RH||AH|A1|ah|Balancing Seat|mb|1hpp?|SB|SHi all, I am in the Balancing Seat.|NT|^B@2
+Soon after a player opens (Opener) the other seats receive specific designations. For example in the above auction North gets "Immediate Seat and/or the Direct Seat" designation. East is the responder and South gets the "Balancing Seat" designation which is the focus of this presentation.|
+PG| ***** 2 ***** |
+
+
+sb|s|NT|^B@2
+The player in the Balancing seat has the option of either bidding the third Pass, which ends the auction, or to take some additional action in order to increase the level of play by the opponents and/or to compete for his side. Therefore, all bids, including double at that seat are considered ^*bbalancing^*N bids.|
+PG| ***** 3 ***** |
+
+
+AT|^B@2
+
+Further, from the bidding as is shown above, South has the following information which Howard will outline in the next panel.|
+PG| ***** 4 ***** |
+
+
+NT||BT||
+ht|b|cs|6|cp|4|at|^-{|ia|1hpp?|at|}
+^-|ht|f|CP||CS||at|
+^bFrom the above auction we can gather the following information:
+
+^b@2a) It is known that East has 5 HCP or less
+
+^B@2b) South knows nothing about opener's hand other than he has 5 hearts, less than a 2@C opener, and did not open 1N or 2N. That still leaves a wide range of possible hands. There is a difference than if Opener bid 1@C or 1@D. There, it is possible (although not that likely) that Opener only has a 3-card suit. And he often will have only a 4-card suit. So on this auction, you do know that Opener has some protection in that his suit is real.
+
+^B@2c) Generally partner (direct seat) will have less than 15 or so. With 15+, partner almost always takes some action, even an imperfect one.
+
+^B@2d) South know that your side has at least 16 or 17 HCP between them, usually much more. Opener has no more than 20, responder no more than 5. So theoretically they could have 25, But a practical absolute max for them is 23, leaving at least 17 for the other side-South's side. The main point is that, at worst, the HCP are pretty evenly divided and more often than not South's side has the majority of HCP.|
+PG| ***** 5 ***** |
+
+
+AT|^B@2
+
+Now let us go back to the table we left.|
+PG| ***** 6 ***** |
+
+
+NT||
+%%  repeat A1
+st||pn|Balancing Seat,Opener,Direct Seat,Responder|md|2,,,|sv|o|RH||AH|A1|ah|Balancing Seat|mb|1hpp?|NT|^B@2
+Therefore,  balancing is built on the principle that letting the opponents play hands at 2@S or lower is not good bridge. As the saying goes, "Try to Bid 'Em Up" particularly with favorable vulnerability. Let us borrow a board from Howard's recent mentoring session and get more insight.|
+PG| ***** 7 ***** |
+
+
+NT||
+%%%
+pn|hondo717,Mentee 1,Mentee 2,Mentee 3|st||sk|s|md|4S256HAD256KC4589A,S9JQH8TJKD79QC7TJ,S7KH23569D48C236K,|rh||ah|A2 - If they have a fit|ah|You have a fit|sv|n|mb|1S|mb|p|mb|2S|mb|p|mb|p|lb|*bPlease make a bid. Keep trying till you get the correct answer.^^2n|mb|2N|an|balancing-take out for minors (5-4 in the lower 2 suits).|
+PG| ***** 9 ***** |
+
+
+cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Obviously the 2N ^*Bis not Unusual 2N^*N. If I were 5/5 in the minors, I would have bid 2N over 1@S. If I had a strong NT, I would have bid 1N over 1S. So my 2N can be neither of those. My 2N bid is takeout for the minors. In a pinch, I could even be 4/4 in the minors although 5/4 is more common. I do not want to let them play in 2@S, as you know. |
+PG| ***** 10 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|I cannot make a balancing double, because I do not have long enough hearts. One choice would be to bid 3@C, which would be reasonable. However, because I also have diamonds I can bid 2N, which asks partner to choose his better minor.|
+PG| ***** 11 ***** |
+
+
+AT|
+
+stanira3: is that an OBAR bid?|
+PG| ***** 12 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|OBAR stands for "Opponents Bid And Raise". It is Bergen's method of getting into the auction when it goes 1x-p-2x-?. His theory is that whichever person is short in the opponents suit should get into the auction. |
+PG| ***** 13 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|So, if it is your turn to bid after 2x, and you are short in suit x, you should bid if you possibly can. You can overcall a good suit or you can make a takeout double. A third alternative that Bergen recommends is to bid 2N, which is takeout for the 2 lower unbid suits (usually the minors), similar in concept to what I discussed above. |
+PG| ***** 14 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|Absent an agreement that you are playing 2N as a Bergen OBAR 2N, that would be unusual, showing 5/5. But Bergen feels (and I agree) that you should get into the auction even with less distribution, so 2N should show 5/4 or possibly even 4/4.|
+PG| ***** 15 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at| Bergen also calls OBAR bids "pre-balancing" because the person who bids directly over 2x is not showing strength, just shortness in suit x and a willingness to compete. Partner of the bidder should not get too excited because, just as with normal balancing, the OBAR bidder is bidding on the combined partnership assets and is assuming even if his hand is not that strong, his partner's must be.|
+PG| ***** 16 ***** |
+
+
+mb|p|mb|3C|mb|3S|mb|p|mb|p|mb|p|
+pg| ***** 17 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|On this hand, as you will see shortly, since they make 3@S it did not matter that I balanced. But on some hands, they can make 2 but not 3. You rarely get a good score when the opponents stop in 2 with an 8-card fit, so you should strain to balance. "If they have a fit" you have a fit.|
+PG| ***** 18 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Let us look at the math. If they have an 8 card fit, you only have 5 cards in their suit between your hand and partners. So you have 21 cards in the other 3 suits. It is barely possible that you have 3 7-card fits (3 x 7 = 21). However, odds strongly favor an 8 or even 9 card fit as on this hand. And my competitive bidding rules say it is ok to bid 3 over 2 with an 8 card fit, even though it does not meet the LOTT.|
+PG| ***** 19 ***** |
+
+
+NT||bt||
+%%A3
+st||pn|Balancing Seat (You),,Partner,Opener|md|3,,,|sv|o|RH||AH|A3|ah|Balancing Seat|mb|p1hp2hpp?|SB|SHi all, I am in the Balancing Seat.|NT|^B@2
+Now, let us look at this more common occurrence of balancing.|
+PG| ***** 20 ***** |
+
+
+NT|^B@2
+By the progress of the bidding it is clear that:
+^cThe points are evenly divided.
+^cOpponents have a fit and you have a fit.
+^cIt is bad bridge to let them play the hand in 2H unless you (South) are broke.|
+PG| ***** 21 ***** |
+
+
+NT|^B@2
+Balancing bids come in many flavors and requires use of logic and thinking based on the concept of, "Do not let the opponents play many hands at 2 Spades or lower unmolested.", particularly with favorable vulnerability.|sb|S|
+PG| ***** 22 ***** |
+
+
+NT|^B@2 
+When in Balancing seat, based on the hand and vulnerability, the more common options are:|
+PG| ***** 23 ***** |
+
+
+AT|^*B
+^CPass 
+^cBidding a suit at 1 level or higher
+^cDoubling^*N|
+PG| ***** 24 ***** |
+
+
+NT|^B@2
+Before, we deal with those options let us look at the several "Dos and Don'ts" from Karen Walker's web site |cp|1|at|^*Hkwbridge.com/bal1.htm^*N|cp||at|.|
+PG| ***** 25 ***** |
+
+
+NT||bt||
+%%%%A2
+qx|A2|st||pn|Balancing Seat, Opener,Direct Seat,Responder|md|2,,,|sv|b|RH||AH|A4 - The BEST time to balance|mb|1hpp?|NT|^B@2
+The BEST time to balance is:|
+PG| ***** 26 ***** |
+
+
+at|
+When you're short in the opponent's suit.|md|0sK54h6dJt2cAJt854,0,0,0|hc|h6|
+PG| ***** 27 ***** |
+
+
+mb|2c|
+PG| ***** 28 ***** |
+
+
+NT||lc|h6|
+%%%%%%% A5
+st||pn|Balancing Seat, Opener,Direct Seat,Responder|md|2,,,|sv|b|RH||AH|A5 - The BEST time to balance|mb|1hpp?|NT|^B@2
+The BEST time to balance is:|
+PG| ***** 29 ***** |
+
+
+at|
+When you have length and high-card strength in the other three suits.|md|0sQJ93h2dA874cKt32,0,0,0|
+PG| ***** 30 ***** |
+
+
+mb|x|
+PG| ***** 31 ***** |
+
+
+NT||
+%%%%%%% A6
+st||pn|Balancing Seat, Opener,Direct Seat,Responder|md|2,,,|sv|b|RH||AH|A6 - The BEST time to balance|mb|1hpp?|NT|^B@2
+The BEST time to balance is:|
+PG| ***** 32 ***** |
+
+
+at|
+When you have a good 5-card or longer quality suit of your own.|md|0sAQJt3h754d6cAQJ3,0,0,0|
+PG| ***** 33 ***** |
+
+
+mb|1s|
+PG| ***** 34 ***** |
+
+
+NT||
+%%%%%%%A7
+st||pn|Balancing Seat, Opener,Direct Seat,Responder|md|2,,,|sv|e|RH||AH|A7 - The BEST time to balance|mb|1hpp?|NT|^B@2
+The BEST time to balance is:|
+PG| ***** 35 ***** |
+
+
+at|
+When you're not vulnerable (if you can't make your bid, the penalty will be lower, and may be even less than the score you would have lost if you had defended the one-bid).|md|0sQ3hKQ4dAt97cQJ92,0,0,0|
+PG| ***** 36 ***** |
+
+
+mb|1n|
+PG| ***** 37 ***** |
+
+
+NT||
+%%%%%%%A8
+st||pn|Balancing Seat, Opener,Direct Seat,Responder|md|2,,,|sv|b|RH||AH|A8 - The WORST time to balance|mb|1hpp?|NT|^B@2
+The WORST time to balance is :|
+PG| ***** 38 ***** |
+
+
+at|
+When you have a very weak hand (fewer than 8 points). |md|0s65h64dJt2ckJt854,0,0,0|
+PG| ***** 39 ***** |
+
+
+mb|p|
+PG| ***** 40 ***** |
+
+
+NT|^B@2
+Some experts, Howard included, balance with this hand-2@C. "As you have a 6-card quality club suit that you would like led. There is very little danger balancing, as your partner must have some values, and the nice 6-card suit offers you some protection."|
+PG| ***** 41 ***** |
+
+
+NT||
+%%%%%%%A9
+st||pn|Balancing Seat, Opener,Direct Seat,Responder|md|2,,,|sv|b|RH||AH|A9 - The WORST time to balance|mb|1hpp?|NT|^B@2
+The WORST time to balance is :|
+PG| ***** 42 ***** |
+
+
+at|
+When you have a weak suit.|md|0K5h64dkt2cj96543,0,0,0|
+PG| ***** 43 ***** |
+
+
+mb|p|
+PG| ***** 44 ***** |
+
+
+NT||
+%%%%%%%A10
+st||pn|Balancing Seat, Opener,Direct Seat,Responder|md|2,,,|sv|b|RH||AH|A10 - The WORST time to balance|mb|1hpp?|NT|^B@2
+The WORST time to balance is :|
+PG| ***** 45 ***** |
+
+
+at|
+When you have length in OPENER'S suit-hearts here.|md|0sthQJ84dQ7654cAQ7,0,0,0|
+PG| ***** 46 ***** |
+
+
+mb|p|
+PG| ***** 47 ***** |
+
+
+NT|^B@2
+The more cards you have in the opponents' suit, the less chance there is that you and partner will have a fit. It's often best to pass and let opener play in what may be a bad contract.|
+PG| ***** 48 ***** |
+
+
+AT|
+
+^B@2^*BMM: ^*NNext is an in depth analysis of such situation by Howard.|
+PG| ***** 49 ***** |
+
+
+NT|^B@2
+There is some merit to passing with that hand, because partner is probably short in hearts (since there are at most 4 hearts between North and East) and chose not to double or overcall. However, I have found you rarely get a good result by letting the opponents play at the 1 level. |
+PG| ***** 50 ***** |
+
+
+NT|^B@2
+I would bid 1NT with that hand, despite the singleton spade. If the opponents were at the 2 level, I would let them play rather than bid. The main danger in bidding is that the opponents will find their likely spade fit and you will get a worse result.|
+PG| ***** 51 ***** |
+
+
+AT|
+
+^B@2^*BMM: ^*NAt my age keeping my balance is a tough assignment -:).|
+PG| ***** 52 ***** |
+
+
+NT||
+%%%A11
+st||pn|Balancing Seat, Opener,Direct Seat,Responder|md|2,,,|sv|n|RH||AH|A11 - The WORST time to balance|mb|1hpp?|NT|^B@2
+The WORST time to balance is :|
+PG| ***** 53 ***** |
+
+
+at|
+When You're vulnerable and the opponents are not. If you can't make your bid, the penalty may be expensive. So be conservative.|md|0,0,0,0|
+PG| ***** 54 ***** |
+
+
+mb|p|
+PG| ***** 55 ***** |
+
+
+AT|
+
+^B@2^*BMM: ^*NPlease hit the forward key to read a comment by Howard dealing with "Bridge Chickens."|
+PG| ***** 56 ***** |
+
+
+NT||
+cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|While it is true you should be more conservative, in general, other than some very rare borderline hands, vulnerability has very little effect on when you balance. Most people do not balance when they should, and this just gives them another excuse to make a bad decision not to balance. Bottom line is, vulnerability is a minor factor at best in deciding whether or not to balance.|
+PG| ***** 57 ***** |
+
+
+NT||
+%%A12
+st||pn|Balancing Seat, Opener,Direct Seat,Responder|md|2,,,|sv|n|RH||AH|A12 - Balancing|AH|How strong is partner's hand|mb|1hpp?|NT|^B@2
+Another reason for making a balancing bid is to protect partner when he has good values, but did not have a descriptive bid available in the direct seat. Therefore, it is important to know how strong is partner's hand.|
+PG| ***** 58 ***** |
+
+
+NT|^B@2
+Conventional wisdom has it that when the opponents pass out a one level bid, you can probably assume that on average, your side will have about one half of the points. Your side will have 20-22 points and the opponents will have 18-20 points. (14-16 for opener, 4 for his partner). Subtract your High Card Points from your side's 20-22 to determine partner's points-but hardly ever above 17 points. Those are probably just educated guesses.|
+PG| ***** 59 ***** |
+
+
+NT|^B@2
+Further, there are times that partner's pass is a "trap pass"-has a strong hand and length in opener's suit. At 1 level you possibly can figure out how many trumps partner has. In this example, assuming opener has five hearts and the responder has 2, your side could have about 6 hearts. Subtract the number of cards you have from 6 to determine partner's length in that suit-partner could have about 5 hearts.|
+PG| ***** 60 ***** |
+
+
+NT|^B@2
+In the example as is shown above|MD|0sk974h3caj74dqt93,0,0,0|
+pg| ***** 61 ***** |
+
+
+at| partner is likely to have 5 hearts. Therefore, he probably converts the double by South to a penalty double. However, those assumptions as mentioned are conventional wisdom. For a more realistic calculation let us listen to Howard next. |
+PG| ***** 62 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|While it is true, with a singleton heart, that partner is more likely to have hearts, it is not true on average your side will have 6 hearts. You have no idea how many hearts either side has. Opener could easily have 6  hearts and occasionally will have 7 or (rarely) 8.|
+PG| ***** 63 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|And let's say opener has 5 hearts. That leaves 8 between the other 3 hands. You have 1, leaving 7 for North and East. On average, partner will have 3.5 hearts (half of the 7 remaining hearts) meaning the opponents have an average of 8.5 hearts even if opener has 5 hearts (and opener could easily have more). I grant you that when responder has 4 hearts he will jump to 3@H if playing Bergen raises. If responder has 5 hearts he will jump to 4@H. So that means it is slightly less likely that responder has 4 or 5 hearts and slightly more likely he has 3 or fewer hearts.|
+PG| ***** 64 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|If opener has 6 hearts and you have a singleton, on average their side will have a 9-card fit. So once opener opens 1@H, it is quite likely that their side has 8 or more hearts when you have a singleton.|
+PG| ***** 65 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Nevertheless, you should still stretch to balance with shortness in opener's suit, for the same reason you always stretch to compete when short in their suit-your hand is worth more on offense when you are short. But it is very unlikely partner has 5 hearts.|
+PG| ***** 66 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|Even with the likelihood that partner has a lot of hearts, defending 1@H doubled will rarely net you a good result. Because, if you beat it 2, which is pretty hard, you often can make 3N, which will get you more points. It is likely at best you will get an average result, and often below average.|
+PG| ***** 67 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|In summary, if you're short in opener's suit, stretch to balance. It's more likely partner has the stronger hand-his length in their suit may well be the reason he couldn't bid.|mb|x|
+PG| ***** 68 ***** |
+
+
+NT||
+%%A13
+st||pn|Balancing Seat, Opener,Direct Seat,Responder|md|2,,,|sv|n|RH||AH|A13 - Balancing|AH|How strong is partner's hand|mb|1hpp?|NT|^B@2
+On the other hand strongly consider passing if you have length in opener's suit|
+PG| ***** 69 ***** |
+
+
+md|0hk9743s3caj74dqt9|AT| as with the hand as is shown above.|MB|P|
+PG| ***** 70 ***** |
+
+
+NT||  
+%%A14
+st||pn|Balancing Seat, Opener,Direct Seat,Responder|md|2,,,|sv|n|RH||AH|A14 - Balancing|AH|Vulnerability is Supreme|mb|1hpp?|NT|^B@2
+Bidding in balancing seat is literally a balancing act and battling for part score contract. If you bid more than you should and get doubled while vulnerable you lose way more points than opponents could collect making a part score. You have room for safety when not vulnerable and the opponents are. Be conservative when you are vulnerable and they are not-as is now.|
+PG| ***** 71 ***** |
+
+
+NT|^B@2
+Further, Howard strongly stressed the following:|
+PG| ***** 72 ***** |
+
+
+AT|
+
+"You will rarely get doubled in a part score, particularly once it goes 1x-p-p. In fact, the fewer points you have, the better positioned your side is to do well. Since your side usually has at least half the deck, if you have fewer points, that means your partner has more points. And your partner's points are well positioned behind the opponent with most of the points."|
+PG| ***** 73 ***** |
+
+
+NT|^B@2
+"Your finesses are all going to work. Although it is counter intuitive, it is actually worse if the balancer has a pretty good hand with the majority of the partnership assets, because, by the same reasoning. most of the opponents strength is behind your side's strength, meaning your finesses all rate to lose."|
+PG| ***** 74 ***** |
+
+
+NT||bt||
+%%%
+qx|A3|HT|b|CS|1|fp|2|CP|4|at|^-{    Balancing Act in the Balancing Seat, the Double and Others    }
+^-|CP||CS||fp||AT|
+Balancing is an extensive topic and only the fundamental principles are presented here. Please review the sources mentioned in early part of this presentation along with other sources for a comprehensive understanding of it. In balancing seat, as it was mentioned, the available bids are:|
+pg| ***** 75 ***** |
+
+
+HT|b|CS|1|fp|2|CP|4|at|^-{    Balancing Act in the Balancing Seat, the Double and Others    }
+^-|CP||CS||fp||AT|
+Balancing is an extensive topic and only the fundamental principles are presented here. Please review the sources mentioned in early part of this presentation along with other sources for a comprehensive understanding of it. In balancing seat, as it was mentioned, the available bids are:|
+ht|g|at|^cPass|
+pg| ***** 76 ***** |
+
+
+HT|b|CS|1|fp|2|CP|4|at|^-{    Balancing Act in the Balancing Seat, the Double and Others    }
+^-|CP||CS||fp||AT|
+Balancing is an extensive topic and only the fundamental principles are presented here. Please review the sources mentioned in early part of this presentation along with other sources for a comprehensive understanding of it. In balancing seat, as it was mentioned, the available bids are:|
+ht|g|at|^cPass|
+ht|h|at|^cOvercall a suit at 1 level or higher|
+pg| ***** 77 ***** |
+
+
+ 
+
+HT|b|CS|1|fp|2|CP|4|at|^-{    Balancing Act in the Balancing Seat, the Double and Others    }
+^-|CP||CS||fp||AT|
+Balancing is an extensive topic and only the fundamental principles are presented here. Please review the sources mentioned in early part of this presentation along with other sources for a comprehensive understanding of it. In balancing seat, as it was mentioned, the available bids are:|
+ht|g|at|^cPass|
+ht|h|at|^cOvercall a suit at 1 level or higher|
+ht|i|at|^cBid 1N or higher|
+pg| ***** 78 ***** |
+
+
+HT|b|CS|1|fp|2|CP|4|at|^-{    Balancing Act in the Balancing Seat, the Double and Others    }
+^-|CP||CS||fp||AT|
+Balancing is an extensive topic and only the fundamental principles are presented here. Please review the sources mentioned in early part of this presentation along with other sources for a comprehensive understanding of it. In balancing seat, as it was mentioned, the available bids are:|
+ht|g|at|^cPass|
+ht|h|at|^cOvercall a suit at 1 level or higher|
+ht|i|at|^cBid 1N or higher|
+ht|j|at|^CDouble|
+PG| ***** 79 ***** |
+
+
+HT|b|CS|1|fp|2|CP|4|at|^-{    Balancing Act in the Balancing Seat, the Double and Others    }
+^-|CP||CS||fp||AT|
+Balancing is an extensive topic and only the fundamental principles are presented here. Please review the sources mentioned in early part of this presentation along with other sources for a comprehensive understanding of it. In balancing seat, as it was mentioned, the available bids are:|
+ht|g|at|^cPass|
+ht|h|at|^cOvercall a suit at 1 level or higher|
+ht|i|at|^cBid 1N or higher|
+ht|j|at|^CDouble|
+ht|k|at|^cBid something else|
+PG| ***** 80 ***** |
+
+
+HT|b|CS|1|fp|2|CP|4|at|^-{    Balancing Act in the Balancing Seat, the Double and Others    }
+^-|CP||CS||fp||AT|
+Balancing is an extensive topic and only the fundamental principles are presented here. Please review the sources mentioned in early part of this presentation along with other sources for a comprehensive understanding of it. In balancing seat, as it was mentioned, the available bids are::|
+ht|g|at|^cPass|
+ht|h|at|^cOvercall a suit at 1 level or higher|
+ht|i|at|^cBid 1N or higher|
+ht|j|at|^CDouble|
+ht|k|at|^cBid something else|
+ht|l|at|^cBalancing Over an Opening Notrump|
+PG| ***** 81 ***** |
+
+
+HT|b|CS|1|fp|2|CP|4|at|^-{    Balancing Act in the Balancing Seat, the Double and Others    }
+^-|CP||CS||fp||AT|
+Balancing is an extensive topic and only the fundamental principles are presented here. Please review the sources mentioned in early part of this presentation along with other sources for a comprehensive understanding of it. In balancing seat, as it was mentioned, the available bids are:|
+ht|g|at|^cPass|
+ht|h|at|^cOvercall a suit at 1 level or higher|
+ht|i|at|^cBid 1N or higher|
+ht|j|at|^CDouble|
+ht|k|at|^cBid something else|
+ht|l|at|^cBalancing Over an Opening Notrump|
+ht|n|fp|2|at|^b@2Pass :|FP||AT| You pass when you have length in opener's suit or you have a weak hand. Please note that 1@H making 3 is 140 but 2@C going down 1 vulnerable is -100 (-200 if doubled).|
+PG| ***** 82 ***** |
+
+
+HT|q|fp|2|at|^b@2Balancing Over an Opening Notrump (1NT - Pass - Pass - ?):|FP||AT| Is either natural or conventional and will not be reviewed here. There are many very good learning resources available.|
+PG| ***** 83 ***** |
+
+
+ht|s|fp|2|at|Balancing after a Suit Opening Bid (1@C/1@D/1@H/1@S - Pass - Pass - ?):|FP||AT| Minimum requirements for suit bid at 1 level (1@D-Pass-Pass-1@H) = 8-13 points, usually a 5+-card suit (but may be a good 4-card suit at the one-level). The better your suit, the fewer points you need to bid. The lower number is about 3 points less than 11 points required for a direct overcall-thus the term borrowing a King from partner. A jump in the balancing seat in a new suit (1@H-Pass-Pass-2@S = 13-16 points) invites game.|
+PG| ***** 84 ***** |
+
+
+ht|x|at|^b@2Many experts, including Howard, do not agree with 8-13 mentioned above. As was said in example A8 many experts will balance with a quality suit and fewer points particularly at the 2 level or could have more points than 13. Further, Howard says, "The 'borrowing a king' expression is incorrect. When you are balancing, you are bidding based on the partnership resources, not what you have in your own hand."|
+PG| ***** 85 ***** |
+
+
+NT||
+%%%
+HT|b|CS|1|fp|2|CP|4|at|^-{    Balancing Act in the Balancing Seat, the Double and Others    }
+^-|CP||CS||ht|d|fp|2|AT|^B@2To bid 1NT (1@D-Pass-Pass-1NT):|fp||AT| You need about 11-14 points with stoppers (or moderate length) in the opponent's suit. Some experts raise the range to 13-15 (or a poor 16) points if notrumper is vulnerable and/or if the opening bid was 1@H or 1@S.|
+pg| ***** 86 ***** |
+
+
+HT|g|fp|2|AT|Jump to 2NT (1@S-Pass-Pass-2NT):|fp||AT| = This can also be assigned one of two meanings: 
+   1 - 21-22 points, balanced-Bergen and Howard play this option; or 
+   2 - Unusual, showing length in the two lower unbid suits (this meaning is probably more valuable).|
+PG| ***** 87 ***** |
+
+
+ht|j|fp|2|AT|^B@2Bid of the opponent's suit (1@H-Pass-Pass-2@H)|fp||AT|: 2@H in this sequence is called a cuebid, and depending on your partnership's agreement, it can be one of followings: 
+   1 - A two-suited hand (the Michaels convention); or 
+   2 - A strong, game-forcing takeout.|
+PG| ***** 88 ***** |
+
+
+ht|n|fp|2|AT|Double|fp||AT|: The double in balancing seat is very similar to takeout double in direct seat except the points needed are less. You can make a balancing double with as little as 7 or 8 points, especially if you are short in opener's suit.
+
+Further, you:|fp|2|AT|
+^c@2Double |fp||AT|and bid 1N on the second round to show a 15-18 points hand. 1NT bid originally shows only 11/12-14/15 points.|fp|2|AT|
+^C@2Double |fp||AT|and correct to a suit is just about the same as a double and correct in direct seat (16+). You can shave it a point with a real nice suit.|
+PG| ***** 89 ***** |
+
+
+ht|x|at|^B@2Next is an entire section devoted to doubles in balancing seat-Balancing Doubles. It is very much converting the section from Marty Bergen's ^*ISecrets To Winning Bridge Number 1 - Modern Doubles^*N into BBO movie format.|
+PG| ***** 90 ***** |
+
+
+NT||
+%%%%%%% M1
+MB.lin 
+%% Last edited  02-06-2013 
+%%%% By Kia, BBO nickname "nome"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+qx||st||pn|(You),,Partner,|md|4,,,|sv|o|RH||AH|Doubling in Balancing Seat|ah|Hand M1|mb|1hp2hpp?|NT|^B@2
+The bidding goes as is shown above and you hold this hand.|md|0ST953 H4 DT865 CA964,0,0,0|
+PG| ***** 91 ***** |
+
+
+lb|*bWhat would you bid?. Keep trying till you get the correct answer.^^x|mb|x|at|
+Regardless of vulnerability, you should double. Why?|
+PG| ***** 93 ***** |
+
+
+NT|^B@2
+The opponents have a fit in a major suit, but they stopped in 2@H. Not only is the 2H bidder weak, but when opener re-evaluated his hand after finding a fit, he didn't even have enough strength for a game-try. He must have a minimum opening bid, so their side has only 18-22 HCP. You have just 4 HCP, so partner must have a very strong hand.|
+PG| ***** 94 ***** |
+
+
+NT|^B@2
+The question is, why didn't partner bid or double?|
+PG| ***** 95 ***** |
+
+
+NT|^B@2
+Here is one possible hand for partner and why.|sk||MD|0,0,SA642 HA872 DK CKJ72,0|
+pg| ***** 96 ***** |
+
+
+NT||
+%%%%%%% M1a
+st||pn|(You),,Partner,|md|4ST953 H4 DT865 CA964,,SKQ HT765 DAQ32 CKQ3,|sv|o|RH||AH|Doubling in Balancing Seat|ah|Hand M1a|mb|1hp2hppx|NT|^B@2
+Here is another possible hand for partner.|
+PG| ***** 97 ***** |
+
+
+ub||sk||NT|^B@2
+If you asked the best 100 players in the world what they would do with the hand North is holding|
+PG| ***** 98 ***** |
+
+
+AT| 
+all 100 would pass in tempo.|mb|p|
+PG| ***** 99 ***** |
+
+
+AT| 
+However, allowing the opponents play in 2@H would NOT be winning bridge. |
+PG| ***** 100 ***** |
+
+
+ub||NT|^B@2
+Whether or not your side can make something, you must strive to not let the opponents play at a low level. With your shapely hand the likely results of your balancing double are:|mb|x|
+PG| ***** 101 ***** |
+
+
+NT||
+ht|c|at|^B1. Your side will make a part score.|
+pg| ***** 102 ***** |
+
+
+ht|c|at|^B1. Your side will make a part score.|
+ht|g|at|^c2. Your side will go down one in a part score.|
+pg| ***** 103 ***** |
+
+
+ht|c|at|^B1. Your side will make a part score.|
+ht|g|at|^c2. Your side will go down one in a part score.|
+ht|k|at|^d3. The opponents will bid 3@H and make it.|
+pg| ***** 104 ***** |
+
+
+ht|c|at|^B1. Your side will make a part score.|
+ht|g|at|^c2. Your side will go down one in a part score.|
+ht|k|at|^d3. The opponents will bid 3@H and make it.|
+ht|o|at|^e4. The opponents will bid 3@H and go down.|
+pg| ***** 105 ***** |
+
+
+ht|c|at|^B1. Your side will make a part score.|
+ht|g|at|^c2. Your side will go down one in a part score.|
+ht|k|at|^d3. The opponents will bid 3@H and make it.|
+ht|o|at|^e4. The opponents will bid 3@H and go down.|
+ht|v|at|^B^*BSo, by balancing: heads you win, tails you tie.^*N|
+PG| ***** 106 ***** |
+
+
+NT||
+%%%%%%% M2
+st||pn|(You),,Partner,|md|1,,,|sv|o|RH||AH|Doubling in Balancing Seat|ah|Hand M2|mb|1d1spp?|NT|^B@2
+There are many auctions where you should be eager to make a balancing double if you're short in the opponent's suit. |
+pg| ***** 107 ***** |
+
+
+md|0S5 HKQ95 DAT864 CA83,0,0,0|NT|^B@2
+Here is an important one.|
+PG| ***** 108 ***** |
+
+
+NT||lb|*bWhat should you bid?. Keep trying till you get the correct answer.^^x|mb|x|NT|^B@2
+Double is clear cut. What could partner have?|sk||
+PG| ***** 110 ***** |
+
+
+AT|
+Because the opponents stopped in 1@S, he clearly has some spades.|
+PG| ***** 111 ***** |
+
+
+NT|^B@2
+He may have a weak hand such as is shown above.|md|0,0,ST984 H743 DK2 CQT97,0|
+PG| ***** 112 ***** |
+
+
+NT|^B@2 
+In that case, he'll respond 2@C,|MB|P2C|
+PG| ***** 113 ***** |
+
+
+AT| and the final contract will either be 2@C by your side or 2@S by the opponents.|
+PG| ***** 114 ***** |
+
+
+NT|^B@2
+By the way, double would also have been correct if the overcaller had jumped to 2@S or 3@S.|
+PG| ***** 115 ***** |
+
+
+NT||
+%%%%%%% M2a
+st||pn|(You),,Partner,|md|1S5 HKQ95 DAT864 CA83,,,|sv|b|RH||AH|Doubling in Balancing Seat|ah|Hand M2a|mb|1d1sppxp|NT|^B@2
+But it is very possible that the opponents stopped bidding because partner has a "trap pass," with a hand |
+PG| ***** 116 ***** |
+
+
+AT| as is shown above.|MD|0,0,SKJ973 HA82 D7 CQ964,0|
+PG| ***** 117 ***** |
+
+
+NT|^B@2
+Then, partner will be delighted to pass your double|
+PG| ***** 118 ***** |
+
+
+mb|p|NT|^B@2
+and get rich at the one level. |
+PG| ***** 119 ***** |
+
+
+NT|^B@2
+Once again, by correctly balancing:^*B heads you win, tails you tie.^*N|
+PG| ***** 120 ***** |
+
+
+NT||
+%%%%%%% M3
+st||pn|(You),,Partner,|md|2,,,|sv|b|RH||AH|Doubling in Balancing Seat|ah|Hand M3|mb|1dpp?|NT|^B@2
+Here is another example. The bidding goes as is shown above |
+PG| ***** 121 ***** |
+
+
+at|
+and you hold this hand.|md|0SK98 HAT76 D72 CQT84,0,0,0|
+PG| ***** 122 ***** |
+
+
+lb|*bWhat should you bid?. Keep trying till you get the correct answer.^^x|mb|x|NT|^B@2
+Once again, you should double at any vulnerability. Because it's more difficult for partner to bid when he's vulnerable, you must be more eager to balance!|
+PG| ***** 124 ***** |
+
+
+NT||
+%%%%%%% M4
+st||pn|(You),,Partner,|md|1,,,|sv|o|RH||AH|Doubling in Balancing Seat|ah|Hand M4|mb|p2hpp?|NT|^B@2
+In this example, the bidding goes as is shown above and you hold this hand.|md|0SA875 H7 DT86 CA9743,0,0,0|
+PG| ***** 125 ***** |
+
+
+lb|*bWhat should be the bid?. Keep trying till you get the correct answer.^^x|mb|x|NT|^B@2
+Another obvious double. Once you passed, partner knows that you can't have a good hand. In fact, if the opponent had pre-empted 3@H or 4@H, you should still double.|
+PG| ***** 127 ***** |
+
+
+NT||
+%%%
+st||pn||md|2,,,|sv|o|RH||AH|MM - Balancing|mb||AT|
+^B@2^*BMM: ^*NNext is responder's bids after partner balances.|
+PG| ***** 128 ***** |
+
+
+NT||bt||
+
+qx|A4|HT|b|CS|1|fp|2|CP|4|at|^-{    Responder's Bids After Partner Balances With a Suit   }
+^-|CP||CS||ht|c|fp||AT|^B@2
+If your partner balances with a suit don't get excited. He is showing at the most 8-13 points-even less with a quality suit. Pass if you have a weak hand and no fit.|
+PG| ***** 129 ***** |
+
+
+cs|6|AT| Otherwise, in the following auctions:|
+HT|f|at|^B{|ia|1hpp1sp2s|at|}|ht|f|at|^m@2Despite the fact that partner can balance with a weak hand, a raise of 1@S to 2@S should show the same thing (6-9 with 3 spades) as always-LOTT. |
+PG| ***** 130 ***** |
+
+
+HT|j|at|^B{|ia|1hpp1s2h2s|at|}|ht|j|at|^m@22@S response is competitive raise of partner's suit (over an intervening bid) and could be weaker hand than a free raise.|
+PG| ***** 131 ***** |
+
+
+HT|n|at|^B{|ia|1hpp1sp3s|at|}|ht|n|at|^m@23@S response is preemptive. With an 11-13 raise you cue bid 2@H.|
+PG| ***** 132 ***** |
+
+
+HT|r|at|^B{|ia|1hpp1sp1n|at|}|ht|r|at|^m@2Notrump responses show good strength, stoppers in the opponent's suit and no fit for partner's major. (1NT = about 9-12, 2NT = 12-13, and 3NT = 14+ points.)|
+PG| ***** 133 ***** |
+
+
+HT|v|at|^B{|ia|1hpp1sp2d|at|}|ht|v|at|^m@2A new suit response shows a 5+-card suit and good playing strength. If partner balanced with a major, your new-suit bid usually denies support for his suit.|
+PG| ***** 134 ***** |
+
+
+NT||
+%%
+HT|b|CS|1|fp|2|CP|4|at|^-{    Responder's Bids After Partner Balances With a Double  }
+^-|CP||CS|6|ht|c|fp||AT|^B@2
+If partner balances by doubling-showing 10+ points.|
+HT|e|at|^B{|ia|1hppxp?|at|}|
+pg| ***** 135 ***** |
+
+
+ht|e|at|^m@2Partner can be relatively light in high-card points, so don't punish him. With most hands, respond at the cheapest level possible. Don't jump, even with 10-11 points. If partner has a full opening bid, he'll usually bid again.|
+PG| ***** 136 ***** |
+
+
+ht|j|at|^bIf partner balances with 1NT-showing 11-14 points.|
+HT|k|at|^B{|ia|1hpp1np?|at|}|
+pg| ***** 137 ***** |
+
+
+ht|k|at|^m@2Pass with most fairly balanced hands of up to 10-11 points.|
+PG| ***** 138 ***** |
+
+
+ht|p|at|^bIf partner balances with 1NT-showing 11-14 points.|
+HT|q|at|^B{|ia|1hpp1np2n|at|}|
+pg| ***** 139 ***** |
+
+
+ht|q|at|^m@22NT response is invitational, showing about 11-13 points not vulnerable.|
+PG| ***** 140 ***** |
+
+
+HT|u|at|^B@2
+Other responses to 1NT balancing bid can follow one of two approaches, depending on your partnership's preference:
+
+^C^*BSystem on^*N-2@C is Stayman, 2@D/2@H are transfers, and etc-^*BHoward strongly recommends you play systems on^*N.; or
+^C^*BSystem off^*N|
+PG| ***** 141 ***** |
+
+
+HT|y|at|^B@2
+Next we have many practice boards covering the various aspects of balancing.|
+PG| ***** 142 ***** |
+
+
+NT||
+
+%%% A15
+qx|A5|st||pn|Balancing Seat, Opener,Direct Seat,Responder|md|2,,,|sv|o|RH||AH|A15 - After A Suit Opening|ah|Balancing|mb|1hPP?|lb|*mWith a minimum 8 HCP which action should South take?^Always Pass~Stretch to bid something^2|NT|^B@2
+South should bid something on the assumption that his partner has some strength. East is weak-has less that 6 HCP. West hand cannot be huge-would have bid 2@C or 2N. South should bid something with a minimum of 8 HCP particularly if:^c@2
+if has spades;
+if is short in the opponent's suit (hearts here), and
+pass if is long opponents suit.|
+PG| ***** 144 ***** |
+
+
+NT||
+%%% A16
+st||pn|Balancing Seat, Opener,Direct Seat,Responder|md|2S32HAJ643DKJ5CJ64,,,|sv|w|RH||AH|A16 - A good time to Pass|ah|Balancing|mb|1DPP?|lb|*bPlease make a bid. Keep trying till you get the correct answer.^^P|NT|^B@2
+Smart money would be on pass. One of the bids in balancing process is a pass. Sure South can overcall 1@H. However, Most likely West has a strong hand (probably half of the deck) and given another chance the opponents probably can find their spades fit and out bid North/South. Pass and let them play in 1@D which would be a poor contract for them. Let us change the opening bid.|mb|p|
+PG| ***** 146 ***** |
+
+
+NT||ub||AT|^B@2
+^*BMM: ^*NOf course Howard would not pass as he said, "I don't agree with passing 1@D. Maybe in match points. But in IMPs, letting them play 1@D when you have a perfectly good 1@H bid is losing bridge."|
+PG| ***** 147 ***** |
+
+
+AT|
+
+^B@2^*BMM: ^*NNot me. I have lost a ton of smart money betting against Howard -:(.|
+PG| ***** 148 ***** |
+
+
+NT||
+%%% A17
+st||pn|Balancing Seat, Opener,Direct Seat,Responder|md|2S3HAQ64DKJ53CQ642,,,|sv|o|RH||AH|A17 - A Good Time to Double|ah|Balancing|mb|1SPP?|lb|*bPlease make a bid. Keep trying till you get the correct answer.^^x|NT|^B@2
+It is time to balance. South has perfect hand for a balancing double.|mb|x|an|balancing double|
+pg| ***** 150 ***** |
+
+
+NT|^B@2
+A double promises 4 hearts (the other major) with at least 7-card support in the other two unbid minors.|
+PG| ***** 151 ***** |
+
+
+AT|
+
+^B@2^*BMM: ^*NHoward has a more complete answer, "A balancing double tends to show 4 cards in the other major, but you  can do it with a 3-card suit much more often than when you make a direct seat takeout double. So I would say it promises 3.5."|
+PG| ***** 152 ***** |
+
+
+AT|
+
+Nevertheless, we also glean the following information:|
+PG| ***** 153 ***** |
+
+
+NT|^B@2
+South has 12 Starting Points.
+West has an Opening hand.
+North has some strength.
+East is very weak. Therefore, after an expected pass by West.|mb|p|
+pg| ***** 154 ***** |
+
+
+NT|^B@2
+North can bid 2@C, 2@D, or 2@H, putting pressure on East to make an undesirable bid with a possible undesirable result.|
+PG| ***** 155 ***** |
+
+
+NT|^B@2
+North will frequently pass with a strong hand with length and strength in the suit of the opponents-5/6 good Spades in this example. In all those probable events North/South could collect a good result.|
+PG| ***** 156 ***** |
+
+
+NT|| 
+%%A18
+st||pn|Balancing Seat, Opener,Direct Seat,Responder|sk|n|md|2S3HAQ6DKQ9853CQ64,,,|sv|o|RH||AH|A18 - Time to Think|ah|Balancing|mb|1SPP3D|lb|*yIs the bid by South weak?^^N|NT|^B@2
+The 3@D by South is strong and could be as is shown above.|SK||
+pg| ***** 158 ***** |
+
+
+AT| A hand with 15 Starting Point-much higher than required for a simple balancing action, a six-card sold diamonds suit and a singleton in the opponents hand. North needs to carefully chose his options for bidding.|
+PG| ***** 159 ***** |
+
+
+NT|^B@2
+With an appropriate hand North can bid 3N. When South jumps in a new suit, he shows a hand too good for a simple balancing bid.|
+PG| ***** 160 ***** |
+
+
+NT||
+%%%A19
+st||pn|Balancing Seat, Opener,Direct Seat,Responder|md|2ST654HKJT7DK983C3,,,|sv|o|RH||AH|A19 - Balancing|ah|The minimum Value needed|mb|1CPP?|lb|*yWould you double with this hand^^y|mb|x|NT|^B@2
+An expert has been quoted, "Even vulnerable, this is a fine double. You should feel no qualms about doubling here."|
+PG| ***** 162 ***** |
+
+
+NT||
+%%%A20
+st||pn|Balancing Seat (You), Opener,Direct Seat,Responder|md|2S984  HQJ6  DAQT32   CKT,,,|sv|o|RH||AH|Balancing|AH|Example A20|mb|1hpp?|lb|*bWhat should South bid?. Keep trying till you get the correct answer.^^1n,2d|mb|1n|NT|^B@2
+1NT is the correct bid. A 2@D bid is also a possibility, but with your balanced shape and heart stopper, 1NT is a better description.|
+PG| ***** 164 ***** |
+
+
+NT||
+%%%A21
+st||pn|Balancing Seat (You), Opener,Direct Seat,Responder|md|2SK5  H64  DJT2 CAJT854,,,|sv|o|RH||AH|Balancing|AH|Example A21|mb|1hpp?|lb|*bWhat should South bid?. Keep trying till you get the correct answer.^^2c|mb|2c|NT|^B@2
+Bid 2@C. Don't be afraid to balance light if you have a good suit, especially if you're relatively short in your opponent's suit.|
+PG| ***** 166 ***** |
+
+
+NT||
+%%%A22
+st||pn|Balancing Seat (You), Opener,Direct Seat,Responder|md|2SQJ93  H2  DA874 CKT32,,,|sv|o|RH||AH|Balancing|AH|Example A22|mb|1hpp?|lb|*bWhat should South bid?. Keep trying till you get the correct answer.^^x|mb|x|NT|^B@2
+Double is the bid. You have minimum points, but you have right distribution.|
+PG| ***** 168 ***** |
+
+
+NT||
+%%%A23
+st||pn|Balancing Seat (You), Opener,Direct Seat,Responder|md|2S4  HT43 DAQ7 CAKJT84,,,|sv|o|RH||AH|Balancing|AH|Example A23|mb|1hpp?|lb|*bWhat should South bid?. Keep trying till you get the correct answer.^^3c|mb|3c|NT|^B@2
+3@C. This hand is too strong for a simple 2@C balance. South should jump to show his strong suit and invite game.|
+PG| ***** 170 ***** |
+
+
+NT||
+%%%A24
+st||pn|Balancing Seat (You), Opener,Direct Seat,Responder|md|2SJ  HQJ84 DQ7654 CAQ7,,,|sv|o|RH||AH|Balancing|AH|Example A24|mb|1hpp?|lb|*bWhat should South bid?. There are two good answers.^^p,1n|mb|p|NT|^B@2
+Pass is one correct bid by South. His long suit is very weak and he has length in opener's suit. Also, they may have a better contract in spades, and they may find it if he reopen the bidding for them.|
+PG| ***** 172 ***** |
+
+
+NT||ub||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|I don't dislike pass, but 1N is a reasonable alternative as well. They are not running spades as neither opponent bid them.|
+pg| ***** 173 ***** |
+
+
+mb|1n|
+PG| ***** 174 ***** |
+
+
+NT||
+%%%A25
+st||pn|Balancing Seat (You), Opener,Direct Seat,Responder|md|2S53  HJ973 DKQT32 CQ9,,,|sv|o|RH||AH|Balancing|AH|Example A25|mb|1hpp?|lb|*bWhat should South bid?. Keep trying till you get the correct answer.^^p|mb|p|NT|^B@2
+Pass is the correct bid for South. He has a good suit, but he is very weak. Partner's failure to bid suggests that opener has a powerhouse, or that the opponents have a better fit somewhere.|
+PG| ***** 176 ***** |
+
+
+NT||bt||
+%%%
+Jerry.lin
+%% Last edited  02-06-2013 
+%%%% By Kia, BBO nickname "nome"
+
+qx|A6|HT|b|CS|1|fp|2|CP|4|at|^-{    Balancing Act and Ask Jerry    }
+^-|CP||CS||fp||AT|
+^B@2^*BMM: ^*NThe next section is from ^*IAsk Jerry^*N, by ^*BJerry Helms^*N in Bridge Bulletin February 2013 edition.|
+PG| ***** 177 ***** |
+
+
+NT||
+%%%
+st||pn|Steve,LHO,Partner,RHO|md|2,,,|sv|o|RH||AH|Balancing Act|ah|and Jerry Helms|mb|1cpp|cp|8|AT|
+^B@2^*BSteve: ^*N|cp||at|Dear Jerry, LHO opened 1@C and after two passes, I had a problem deciding what to bid with this|md|0SK5 HAK932 DAQ CQJ64,0,0,0|at| hand.|
+PG| ***** 178 ***** |
+
+
+NT|^B@2 
+After thinking a little, I decided to reopen with 2@H.|MB|2H|
+PG| ***** 179 ***** |
+
+
+NT|^B@2 
+Everyone passed.|MB|ppp|at| Ten tricks later, my partner remarked that she thought we played weak jump overcalls. |
+PG| ***** 180 ***** |
+
+
+NT|^B@2
+I explained that I felt my bid showed a strong hand in this position. |
+PG| ***** 181 ***** |
+
+
+NT|^B@2
+She countered that I could have doubled, which I considered, but decided not to with only two spades. What do you think?|
+PG| ***** 182 ***** |
+
+
+NT||
+cp|8|AT|
+^B@2^*BJerry: ^*N|cp||at|Dear Steve, I think that you were right, but perhaps you could have been "righter." |
+PG| ***** 183 ***** |
+
+
+NT|^B@2
+In fourth position, it is illogical to use a jump bid to show a weak hand. If your partner could not voluntarily act over 1@C, why would you want to reopen the bidding, allowing LHO another opportunity to express the extra values he would surely hold in this scenario?|UB||
+pg| ***** 184 ***** |
+
+
+NT|^B@2
+This being said, there is no perfect bid to describe your holding, but I think the action you chose could have been improved upon. |
+PG| ***** 185 ***** |
+
+
+NT||
+%%
+st||pn|Steve,LHO,Partner,RHO|md|2,,,|sv|o|RH||AH|Balancing Act|ah|and Jerry Helms|mb|1cpp2h|NT|^B@2
+For a jump bid in the pass-out position,|
+PG| ***** 186 ***** |
+
+
+AT| I would have expected something more like the hand which is shown above.|md|0SA5 HAQJT632 DK8 C64,0,0,0|
+PG| ***** 187 ***** |
+
+
+NT|^B@2
+Values like this scream for offense, not defense. A takeout double could be a mistake for a number of reasons.|
+PG| ***** 188 ***** |
+
+
+NT|^B@2
+First and foremost, if partner opted to pass, converting your takeout to penalty with club length, this might not work out very well. |
+PG| ***** 189 ***** |
+
+
+NT|^B@2
+In addition, why ask your partner’s opinion via double, when in reality, you don’t much care what she thinks. A jump to 2H in this position shows a hand of intermediate strength with a long, strong suit.|
+PG| ***** 190 ***** |
+
+
+NT|^B@2
+Hmm, an action that clearly resembles the cards above. After this descriptive bid, partner is invited to take action, but should not be terribly concerned about the length or strength of support for your suit. |
+PG| ***** 191 ***** |
+
+
+NT||
+%%
+st||pn|Steve,LHO,Partner,RHO|md|2SK5 HAK932 DAQ CQJ64,,,|sv|o|RH||AH|Balancing Act|ah|and Jerry Helms|mb|1cpp?|NT|^B@2
+The hand you actually held (the original hand is reloaded) could best be played in any of the three available suits or notrump, and should partner pass for penalty (not likely, but possible, the way some people open two card club suits), you would be delighted.|
+PG| ***** 192 ***** |
+
+
+NT|^B@2
+My preferred action with your hand would be a jump to 2NT.|MB|2N|
+PG| ***** 193 ***** |
+
+
+NT|^B@2
+Although typically played as some type of weak, two-suited hand when bid in the direct seat, 2NT in the passout seat is best defined as a natural bid, showing 19 to 21 high-card points with a stopper. After this action, your partnership should play the same response structure you play to an opening bid of 2NT.|
+PG| ***** 194 ***** |
+
+
+NT|^B@2
+Although this action is not perfect (because it conceals your five-card heart suit), I think it is the best compromise. One of my ^*BJerryisms^*N covers this very topic:|
+PG| ***** 195 ***** |
+
+
+NT||fp|2|cs|1|cp|4|AT|
+^-
+{    The best available bid is often the least bad alternative    }
+^-|FP||
+pg| ***** 196 ***** |
+
+
+CS||CP||ht|w|AT|^B@2^*BMM: ^*NNext is a wrap up from Richard Pavlicek web site.|
+PG| ***** 197 ***** |
+
+
+NT||
+Richard Pavlicek.lin 
+%% Last edited  02-06-2013 
+%%%% By Kia, BBO nickname "nome"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Lesson 5E by Richard Pavlicek
+%%http://www.rpbridge.net/5e00.htm
+%%After One of a Suit
+%%% R1
+qx|A7|st||pn|Balancing Seat (You), Opener,Direct Seat,Responder|md|2,,SK 9 7 4H4 3DQ T 3CA J 7 4,|sv|o|RH||AH|R1 - Balancing|mb|1h?|lb|*bPlease make a bid for North. Keep trying till you get the correct answer.^^P|mb|p|nt|^B@2
+In direct seat pass is the correct answer. Let us give that hand to South-balancing seat.|
+PG| ***** 199 ***** |
+
+
+NT||
+%%% R1a
+st||pn|Balancing Seat (You), Opener,Direct Seat,Responder|md|2SK 9 7 4H4 3DQ T 3CA J 7 4,,,|sv|o|RH||AH|R1a - Balancing|mb|1hpp?|lb|*bPlease make a bid. Keep trying till you get the correct answer.^^x|mb|x|nt|^B@2
+In balancing seat you can make a takeout double with as few as 10 points and proper distribution. You have 4 cards in spades and you are 4-3 in the unbid minors. However, you must pass the same hand in direct seat. Further, you can make a balancing double with as few as 7 o 8 HCP if you are short (singleton or void) in opener's suit Clearly, in balancing seat, you do not wish to let the opponents play in 1H-not a good bridge.|
+PG| ***** 201 ***** |
+
+
+NT||
+
+%%%R2
+st||pn|Balancing Seat (You), Opener,Direct Seat,Responder|md|2S3HKJ94DA 6 2CQ 9 6 4 3,,,|sv|o|RH||AH|R2 - Balancing|mb|1hpp?|lb|*bPlease make a bid. Keep trying till you get the correct answer.^^p|mb|p|nt|^B@2
+You have strength to bid something. But, with length in the opponent's suit and shortness in the unbid major, pass is the best bid. let them play in a mediocre contract-good bridge.|
+PG| ***** 203 ***** |
+
+
+NT||
+%%% R3
+st||pn|Balancing Seat (You), Opener,Direct Seat,Responder|md|2,,SA 8 4HK T 9 7 5D9 5 4C4 3,|sv|o|RH||AH|R3 - Balancing|mb|1c?|lb|*bPlease make a bid for North.^^p|mb|p|nt|^B@2
+You do not have a good suit and enough power to overcall 1@H. But let us give the same hand to balancing seat.|
+PG| ***** 205 ***** |
+
+
+NT||
+%%% R3a
+st||pn|Balancing Seat (You), Opener,Direct Seat,Responder|md|2SA 8 4HK T 9 7 5D9 5 4C4 3,,,|sv|o|RH||AH|R3a - Balancing|mb|1cpp?|lb|*bPlease make a bid. Keep trying till you get the correct answer.^^1h|mb|1h|nt|^B@2
+In balancing seat you stretch to bid and prevent the opponents play in a cheap contract. For this 1 level overcall in balancing seat you need about 8 to 15 points.|
+PG| ***** 207 ***** |
+
+
+NT||
+%%%R4
+st||pn|Balancing Seat (You), Opener,Direct Seat,Responder|md|2SA J 2H4 3DK J 9 7 5 4C4 3,,,|sv|o|RH||AH|R4 - Balancing|mb|1hpp?|lb|*bPlease make a bid.^^2d|mb|2d|nt|^B@2 
+You could not bid this hand in direct seat. However, in balancing seat you have enough to overcall 2@D. You need about 10 to 15 points at the 2 level-the lower range is higher for a 2 level. With a stronger hand (16+) you double first then bid your suit later-next example.|
+PG| ***** 209 ***** |
+
+
+NT||
+%%% R5
+st||pn|Balancing Seat (You), Opener,Direct Seat,Responder|md|2,,S3HA Q J 9 4DK Q 8 2CK43,|sv|o|RH||AH|R5 - Balancing|mb|1s?|lb|*bPlease make a bid for North.^^2h|mb|2h|nt|^B@2
+You have a great 2@H overcall. Now let us move the hand to balancing seat.|
+PG| ***** 211 ***** |
+
+
+NT||
+%%% R5a
+st||pn|Balancing Seat (You), Opener,Direct Seat,Responder|md|2S3HA Q J 9 4DK Q 8 2CK43,,,|sv|o|RH||AH|R5a - Balancing|mb|1spp?|lb|*bPlease make a bid. Keep trying till you get the correct answer.^^x|mb|x|nt|^B@2
+You are too strong for a 2@H overcall in balancing seat. You need to double first and introduce your heart on the second round. Partner cannot pass even if the LHO passes. In balancing seat with 16+ points you double first then bid your suit later.|
+PG| ***** 213 ***** |
+
+
+NT||
+%%%R6
+st||pn|Balancing Seat (You), Opener,Direct Seat,Responder|md|2SA K Q 9 8 6HA T 2D3C9 7 3,,,|sv|o|RH||AH|R6 - Balancing|mb|1DPP?|lb|*bPlease make a bid. Keep trying till you get the correct answer.^^2s|MB|2S|nt|^B@2
+This is not a weak bid. Jump suit bids show a self-sufficient suit and within one playing trick of your bid.|
+PG| ***** 215 ***** |
+
+
+NT||
+%%%R7
+st||pn|Balancing Seat (You), Opener,Direct Seat,Responder|md|2SA 3HA 2DK Q J 9 7 6 3C4 3,,,|sv|o|RH||AH|R7 - Balancing|mb|1CPP?|lb|*bPlease make a bid. Keep trying till you get the correct answer.^^3d|MB|3D|nt|^B@2
+Again this is not a weak bid. You have 8 tricks in your hand so you bid at one level higher. Jump suit bids show a self-sufficient suit and within one playing trick of your bid.|
+PG| ***** 217 ***** |
+
+
+NT||
+
+%NT bids RR
+qx||st||pn|Balancing Seat (You), Opener,Direct Seat,Responder|md|2,,,|sv|o|RH||AH|RR - Balancing|mb|1spp|nt|^B@2
+^*BMM^*N: Bidding 1N or 2N in the balancing seat can get a bit confusing. The experts hardly agree on the points needed for bidding 1NT in balancing seat. The ranges are 10 to 11 for the lower limit and 12 to 15 for the upper limit. Howard plays 11-14 range and is used in this presentation.|
+PG| ***** 218 ***** |
+
+
+NT||	
+&&R8
+st||pn|Balancing Seat (You),Opener,Direct Seat,Responder|md|2K J 4HA 8 3DA T8 4C9 7 4,,,|sv|o|RH||AH|R8 - Balancing|mb|1spp?|lb|*bPlease make a bid. Keep trying till you get the correct answer.^^1N|mb|1n|NT|^B@2
+South should bid 1NT which shows 11/12 to 14/15 HCP, balanced hand and spade stopper. With 16 to 18 HCP South must double first then bid notrump later.|
+PG| ***** 220 ***** |
+
+
+NT||
+%%%%%%R9
+st||pn|Balancing Seat (You),Opener,Direct Seat,Responder|md|2,,SA 8HK Q 4DA 9 7 4CK J 8 6,|sv|o|RH||AH|R9 - Balancing|mb|1d?|lb|*bWhat should be the bid by North?.^^1N|mb|1n|NT|^B@2
+In direct seat you would bid 1 NT. However, let us move the hand to balancing seat and after 2 passes.|
+PG| ***** 222 ***** |
+
+
+NT||
+%%%R9a
+st||pn|Balancing Seat (You),Opener,Direct Seat,Responder|md|2SA 8HK Q 4DA 9 7 4CK J 8 6,,,|sv|o|RH||AH|R9a - Balancing|mb|1dpp?|lb|*bWhat should be the bid by South? ^^x|mb|x|NT|^B@2
+In balancing seat with the same hand South must double. At your next turn he will bid notrump to show 15-18 HCP.|
+PG| ***** 224 ***** |
+
+
+NT||
+%%%R10
+st||pn|Balancing Seat (You),Opener,Direct Seat,Responder|md|2SK J 8 4HA 3dK Q T 8CA Q 9,,,|sv|o|RH||AH|R10 - Balancing|mb|1spp?|lb|*bWhat should be the bid by South?^^2n|mb|2n|NT|^B@2
+A jump to 2 NT shows 19 to 21 HCP. (The unusual 2 NT bid does not apply unless you have previously passed.) If South doubled and bid 2 NT, it would show 16-18, so this logically shows a better hand.|
+PG| ***** 226 ***** |
+
+
+NT||
+%%R11
+st||pn|Balancing Seat (You),Opener,Direct Seat,Responder|md|2s3hk4dqt964caqt64,,,|sv|o|RH||AH|R11 - Balancing|mb|1SPP?|lb|*bWhat should be the bid by South?^^2d|mb|2d|NT|^B@2
+Since South cannot bid the unusual 2NT, the sensible plan is to bid diamonds first; this is unlikely to be passed out, then South will bid 3@C next.|
+PG| ***** 228 ***** |
+
+
+NT||
+%%%RR
+st||pn|Balancing Seat (You),Opener,Direct Seat,Responder|md|4,,,|sv|o|RH||AH|RR - Balancing|mb|1hp2hpp?|AT|^B@2
+^*BMM: ^*NA desirable situation to balance occurs when the opponents have shown a trump fit and stop at the two level. If they have a trump fit, you probably do also.|
+PG| ***** 229 ***** |
+
+
+NT||AT|^B@2
+^*BMM: ^*NGenerally you should balance unless you have secondary strength (Q-J-x, K-J-x-x, etc.) in the enemy suit. There are no specific point-count requirements; whatever you lack, partner should have.|
+PG| ***** 230 ***** |
+
+
+NT||
+%%%R12
+st||pn|Balancing Seat (You),Opener,Direct Seat,Responder|sk|s|md|4SA 8 4H6 5 4DK T 8 4CQ 8 4,,SKJ73 H72 DAJ76 CJ92,|sv|o|RH||AH|R12 - Double if you|ah|support at least two suits|mb|1HP2HPP?|lb|*bWhat should be the bid by South? Keep trying till you get the correct answer.^^x|mb|xp|sk||lb|*bPlease make a bid. Keep trying till you get the correct answer.^^2s|mb|2SPP|NT|^B@2
+South has a dismal looking hand, but it is winning tactics to balance-double. Many times the opponents will compete to the three level and be defeated.|
+PG| ***** 233 ***** |
+
+
+NT||
+%%R13
+st||pn|Balancing Seat (You),Opener,Direct Seat,Responder|sk|s|md|4s96 hkt84daj983c43,,sa82 h32 dq74 ckt872,|sv|o|RH||AH|R13 - Double if you|ah|support at least two suits|mb|1s|lb|*bPlease make a bid for South. ^^p|MB|p|
+PG| ***** 235 ***** |
+
+
+mb|2spp|lb|*bWhat should be the bid by South? Keep trying till you get the correct answer.^^x|mb|xp|sk||lb|*bPlease make a bid. Keep trying till you get the correct answer.^^3c|mb|3cp?|lb|*bPlease make a bid. Keep trying till you get the correct answer.^^3d|mb|3d|NT|^B@2
+South doubles hoping that West will bid hearts. At his next turn South corrects to 3@D  since he lacks club support.|
+PG| ***** 239 ***** |
+
+
+AT| 
+
+BTW, the correct of 3@C to 3@D is not "double and correct" showing a strong hand. If South had a strong hand with diamonds, he would have doubled 1S originally.|
+PG| ***** 240 ***** |
+
+
+NT||
+%%14
+st||pn|Balancing Seat (You),Opener,Direct Seat,Responder|md|4SK Q 6 HJ 8 3 DA 7 5 2 CJ 7 6,,ST2HQ 7 5 4DQ 8 4CA 9 5 4,|sv|o|RH||AH|R14 - An Omen for disaster|mb|1sp2spp?|lb|*bWhat should be the bid by South?^^p|mb|p|NT|^B@2
+South’s strong spade holding is an omen for disaster. It is too risky to force North to bid a suit at the three level.|
+PG| ***** 242 ***** |
+
+
+NT||
+%%%R15
+st||pn|Balancing Seat (You),Opener,Direct Seat,Responder|md|4SJ 9 7 5 2HA 8 2D9 7CQ 8 3,,SK T 4HJ 3DA K 8 4C7 5 4 2,|sv|o|RH||AH|R15 - Balancing|ah|Bid your longest suit|mb|1HP2HPP?|lb|*bWhat should be the bid by South? Keep trying till you get the correct answer.^^2s|mb|2s|NT|^B@2
+Bid your longest suit. Usually this shows five or more cards but it could be a good four-card suit if no other option exists.|
+PG| ***** 244 ***** |
+
+
+NT||
+%%%R16
+st||pn|Balancing Seat (You),Opener,Direct Seat,Responder|md|4S8 2HK Q T 6D8 7 4CA 5 3 2,,SK Q 7 4HJ 8 4DA 3C9 7 6 4,|sv|o|RH||AH|R16 - Balancing|ah|bids your strong four-card|mb|1DP2DPP?|lb|*bWhat should be the bid by South? Keep trying till you get the correct answer.^^2h|mb|2h|NT|^B@2
+South does not want to double for fear of a spade bid, so he bids his strong four-card heart suit.|
+PG| ***** 246 ***** |
+
+
+NT||
+%%%R17
+st||pn|Balancing Seat (You),Opener,Direct Seat,Responder|md|2SA 8 4HQ 9 7 4 3 2DQ 4C7 2,,SK T 7 2HJ 5DK J TCQ J 5 3,|sv|o|RH||AH|R17 - Balancing|ah|bid your six-card suit|mb|1DP1SP1NPP?|lb|*bWhat should be the bid by South? Keep trying till you get the correct answer.^^2h|mb|2HPPP|NT|^B@2
+With a six-card suit South could take a chance and bid it, especially considering that North is likely to lead a club against 1NT.|
+PG| ***** 248 ***** |
+
+
+NT||
+%%R18
+st||pn|Balancing Seat (You),Opener,Direct Seat,Responder|md|2SK 9 8 4H7 6 2DA T 9 6 4C4,,SA 3HQ 9 8 5DQ 8 3CA 9 7 5,|sv|o|RH||AH|R18 - Balancing|mb|1CP1HP2CPP?|lb|*bWhat should be the bid by South? Keep trying till you get the correct answer.^^x|mb|xp?|lb|*bPlease make a bid for North.^^2d|mb|2d|NT|^B@2
+Holding both unbid suits, either of which partner could bid at the two level, it pays to be sporting and double. Note that North bids his longer of the two unbid suits.|
+PG| ***** 251 ***** |
+
+
+NT||AT|
+
+^B@2^*BMM: ^*NThis concludes the presentation.|
+PG| ***** 252 ***** |
+
+

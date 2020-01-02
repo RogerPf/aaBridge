@@ -1,0 +1,204 @@
+
+
+%% 2019-08-05  Patterns  Two_Suited Squeeze
+
+%% All hands are copyright  Richard Pavlicek
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pd|hint,^b   There is a `cp`green`at`^*b Hint ^*n`cp``AT` on the next page but if you want to  PLAY  the hand NOW, the  { ^*b 1st ^*n }  button is available.|
+%%
+pd|choose,`cp`red`at`^b    ^*bPlease   CHOOSE^*n`cp``at`   you can use  {^*b Flow >^*n }  to see the answer  `cp`red`at`^*bOR^*n`cp``at`  you can click  { ^*b 1st ^*n }  to PLAY the hand.|
+%%
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+<<--INSERT-START-->>=07a__FP_Patterns.ins
+%%
+fh|b48| %%  'banner' font
+fh|t40| %%  'target' font
+fh|s28| %%  'small'  font
+fh|p45| %%  'pink dot' size
+
+cr|a230|cg|a040|cb|a130|          a  action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       pink dot button
+
+bv|e,h| %%   Enter the deal button hidden
+bv|f,v| %%   1st visible 
+bv|d,v| %%   DDS visible
+
+ha|y|   %%   hide auctions
+
+ss|head,     ah`Part 4.    Two-Suit Squeeze`|
+
+ss|banner,   ht`e`fp`b-big`at`^*b^j   ^*n Two-Suit Squeeze^*n`fp``|
+ss|link,     ht`z`at`^kvisit  Richard Pavlicek's  Two-Suit Squeeze  page    ^*h http://www.rpbridge.net/9j01.htm, rpbridge.net  9j01^*n`|
+ss|means,    ht`e`fp`small`at`^x ^*h http://www.rpbridge.net/9gc8.htm, meaning^*n`fp``|
+ss|new,      nt`^b@2^^`vv`means`vv`link`vv`banner`ht`e`vv`head`|
+ss|contract, mb`3nppp`|
+ss|p1,       vv`contract`wt`s`sk`s`fp`t`ht`e`at`^q    ^*b`|
+ss|p2,       fp`t`ht`e`at`^*n^u`|
+ss|p3,       fp``ht`q`at`^d`|
+%%
+
+<<--INSERT-END**-->>=07a__FP_Patterns.ins
+
+
+qx|-|
+st||
+nt|^b@2^^|
+rh||ah|--- -|vv|head|
+vv|banner|
+ht|k|
+lg|e|
+at|A two-suit squeeze is a squeeze that involves two threat suits. A third suit provides a squeeze card that forces an opponent, usually a defender but not necessarily, to unguard one of the threats allowing the remaining tricks to be won. A squeeze that does not win all the remaining tricks is called a “strip” squeeze, covered as a separate category.
+|n#|7|at|^k See Richard Pavlicek's  ^*h http://www.rpbridge.net/9gc8.htm,About the Techniques^*n  web page for more info.|
+pg| ***** 0 ***** |
+
+
+nt|^b@2^^|vv|banner|
+ht|t|ht|n|at|In the far right-hand column two lines below |fp|t|cp|gr|at|^*b Power Kib ^*n|cp||fp||at| is the   { @m }|cp|red|at| ^*bShow all hands^*n|cp||at| ^*b checkbox^*n.  
+^^^i Set this to ^*b CHECKED^*n,  the first few times you look at these patterns. |
+rh||ah|--- -|vv|head|
+ht|a|n#|0|at|^q  Your target is |cp|red|at|^*b 9 ^*n |cp||at|tricks|
+pg| ***** 1 ***** |
+
+
+qx|1|
+rh||ah|Pattern 1|
+vv|new|at|^*b 1.  Positional^*n|
+%
+md|1  42 - - A, KQ A, AJ K, 3 32|
+%
+bs|6,4|
+vv|p1|at|win 3|
+vv|p2|at||
+vv|p3|
+pg| ***** 2 ***** |
+
+
+qx|2|
+rh||ah|Pattern 2|
+vv|new|at|^*b 2.  Split positional^*n|
+%
+md|1  J4 - - A, KQ A, A5 K, T9 2|
+%
+bs|6,4|
+vv|p1|at|win 3|
+vv|p2|at||
+vv|p3|
+pg| ***** 3 ***** |
+
+
+qx|3|
+rh||ah|Pattern 3|
+vv|new|at|^*b 3.  Automatic^*n|
+%
+md|1  4 K - A, 32 2, AJ K, KQ A|
+%
+bs|6,4|
+vv|p1|at|win 3|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 4 ***** |
+
+
+qx|4|
+rh||ah|Pattern 4|
+vv|new|at|^*b 4.  Twin-entry^*n|
+%
+md|1  K95 - - A, 32 32, A4 K - 2, QJT A|
+%
+bs|5,4|
+vv|p1|at|win 4|
+vv|p2|at|auto re|
+vv|p3|
+pg| ***** 5 ***** |
+
+
+qx|5|
+rh||ah|Pattern 5|
+vv|new|at|^*b 4.  Threat unblock^*n|
+%
+md|1  4 J4 - AK, 32 T98, AJ A5 - 4, KQ KQ - 2|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at|auto bi|
+vv|p3|at|Commonly called a Vienna coup.|
+pg| ***** 6 ***** |
+
+
+qx|6|
+rh||ah|Pattern 6|
+vv|new|at|^*b 6.  Crisscross^*n|
+%
+md|1  A J4 - A, 32 32, J4 A - 2, KQ KQ|
+%
+bs|5,4|
+vv|p1|at|win 4|
+vv|p2|at|auto re|
+vv|p3|
+pg| ***** 7 ***** |
+
+
+qx|7|
+rh||ah|Pattern 7|
+vv|new|at|^*b 7.  Show-up^*n|
+%
+md|1  42 - - A, K5 A, AQ K, JT 2|
+%
+bs|6,4|
+vv|p1|at|win 3|
+vv|p2|at||
+vv|p3|
+pg| ***** 8 ***** |
+
+
+qx|8|
+rh||ah|Pattern 8|
+vv|new|at|^*b 8.  Count ^*n|
+%
+md|1  42 - - A, J5 A, AQ K, K 32|
+%
+bh|Play, East,  hL, res, p4,  T1,  always|
+%
+bs|6,4|
+vv|p1|at|win 3|
+vv|p2|at|auto|
+vv|p3|at|Same as show-up except South knows @sK offside.|
+pg| ***** 9 ***** |
+
+
+qx|9|
+rh||ah|Pattern 9|
+vv|new|at|^*b 9.  Count rectification before^*n|
+%
+md|1  4 AJ - A6, KQ2 KQ, AJ 4 - 54, - 32 - KQJ|
+%
+bs|5,4|
+vv|p1|at|win 4|
+vv|p2|at|auto|
+vv|p3|
+pg| ***** 10 ***** |
+
+
+qx|10|
+rh||ah|Pattern 10|
+vv|new|at|^*b 10.  Threat isolation before ^*n|
+%
+md|1  K765 54 - A, JT98 QJT, A4 AK9 - 32, Q32 32 - KQ|
+%
+bh|Play, East,  sL, res, p2,  T2,  always|
+bh|Play, West,  hH, res, p1,  T3,  always|
+%
+bs|3,3|
+vv|p1|at|win 6|
+vv|p2|at|auto bi|
+vv|p3|at|A General tactic that may precede many squeezes.|
+pg| ***** 11 ***** |
+
+

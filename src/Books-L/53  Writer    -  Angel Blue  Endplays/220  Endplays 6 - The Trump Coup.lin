@@ -1,0 +1,1251 @@
+%%
+%% Endplays 6
+%%
+%% Reformatted for aaBridge  2018 August
+%%
+%% Roger Pfister
+%%
+
+<<--INSERT-START-->>=005__Common_Header.ins
+%%
+fh|130|ff|1Arial|fb|14|fm|1|                       
+fh|240|ff|2Arial|fb|24|fm|2|
+fh|340|ff|3Arial|fb|3y|fm|3|fu|3y|
+fh|490|ff|4Times New Roman|fb|49|fm|4| 
+%
+cr|164|cg|1255|cb|1255|           
+cr|2000|cg|2000|cb|2239|                 
+cr|3255|cg|3250|cb|3205|      
+cr|5065|cg|5105|cb|5255|
+cr|6238|cg|6106|cb|6080|       
+cr|8255|cg|8250|cb|8205|     
+cr|9176|cg|9048|cb|9096|  
+%
+bv|a,v|
+bt||
+at|^b@2^z@3^^|
+
+
+pd|cont-etd-msg,  You can use  { ^*b Cont ^*n }  to play out the rest of the cards  OR  do as suggested above and click  { ^*b Enter the Deal ^*n }|
+
+ss|process-txt,`ht`e`lg`o`at`^c@2^^Click   { ^*b Enter the Deal ^*n }   then on the right in the `cp`gr`at`^*b  green table area ^*n `cp``at` click  { ^*b Show ^*n }^^You can then click  ^*b Flow ^*n  or  ^*b Mouse wheel ^*n  through the correct play, to see how it all works.`pf`cont-etd-msg`|
+ 
+%%
+<<--INSERT-END**-->>=005__Common_Header.ins
+
+
+mn|  Endplays  6   -   The Trump Coup  |
+tu|y|
+qx|TC|
+ht|a|n#|5|fp|2|at|^*b^a TC ^c|fp||at|^*gIndx:Index,Click for Index^*n|
+
+ht|f|n^|9|at|"Trump coup" is a trump-endplay method based on drawing a defender's finesseable trumps whenever an ordinary finesse is impossible.
+
+Trump Coups have a wide variety of types and subtypes as well as a number of difficulty levels and complications, but to be devoted to my declaration to make it a simple guide, I will do my best to deal only with its simplest forms.
+
+|n^|5|at|The trump coup is a technique based on the trump reducing tactic and can be used by declarer when the adverse trumps are divided unevenly but he cannot finesse the suit as he doesn't have a trump available for this mission.
+
+|n^|5|at|The trump coup allows declarer to make the finesse without the lead of trump itself.
+|lg|c|at|
+|n^|5|at|Here are the conditions required for a trump coup:
+^c@21.  The defender's trumps are on the right side of declarer's fork position.
+2.  Declarer is able to cash the winners needed for his contract without suffering a ruff.
+3.  Declarer is in a position to lead a card through the threatening defender towards his own trump holding. 
+4.  There are entries to both declarer and dummy's hand.
+
+^bDeclarer should execute his coup as follows:
+1.  Reduce his trump holding to match the number held by the defender.|n^|4|cp|red|at|@.|cp||n#|4|at|
+2.  Cash his winners until only trumps left in his hand.|n^|4|cp|red|at|@.|cp||n#|4|at|
+3.  Finish in the hand opposite his trumps (usually dummy).  
+4.  Lead from this hand, forcing the defender to ruff. 
+5.  Overruff whichever trump played by the defender.
+6.  Cash his remaining trump winners.
+|n#|3|n^|2|cp|red|at|^b  @.|cp||n#|2|at|  Steps 1 and 2 can be reversed or combined.|
+
+ht|z|n#|b|at|^b^*bMM:^*n  Remember you can |cp|red|at| ^*b PLAY ^*n|cp||at| ^*b ANY HAND ^*n  at  ^*b ANY TIME ^*n  by clicking the  { ^*b 1st ^*n }  button.|
+pg| ***** 0 ***** |
+
+
+nt|^b@2^z@3^^|
+
+ht|f|at|Here is a basic example of a position where the trump coup can be accomplished:|
+
+ht|h|at|^e@s 107|
+ht|i|at|^e@h -|
+
+ht|j|at|^c@s 54| 
+ht|k|at|^c@h -| 
+
+ht|j|at|^g@s -|
+ht|k|at|^g@h K7|
+
+ht|l|at|^e@s -|
+ht|m|at|^e@h AQ|
+
+ht|n|n#|2|at|With South declaring a heart contract, he can win two trump tricks if North has the lead. Declarer leads a spade from dummy, forcing East to ruff. Declarer overruffs and cashes his remaining trump. The play of the spade from dummy allows declarer  a trump finesse without leading a trump from the opposite hand.
+
+|n^|5|at|But suppose the end position was:|
+
+ht|r|at|^i@s 1072|
+ht|s|at|^i@h -|
+
+ht|t|at|^g@s 543| 
+ht|u|at|^g@h -| 
+
+ht|t|at|^k@s 9|
+ht|u|at|^k@h K7|
+
+ht|v|at|^i@s -|
+ht|w|at|^i@h AQ5|
+
+ht|x|n#|5|at|Again, a spade is led from dummy, but this time declarer has to ruff and must give up a trump trick to East. In order to avoid being locked in the lead from hand prematurely, declarer has to set up the coup through a trump reduction first. The timing of the coup must therefore be perfect. |
+pg| ***** 1 ***** |
+
+
+nt|^b@2^z@3^^|
+
+ht|f|at|I hope the following partial deal will clarify the necessity of this perfection:|
+ht|h|at|^e@s Q109|
+ht|i|at|^e@h -|
+ht|j|at|^e@d AQ|
+
+ht|k|at|^c@s 876| 
+ht|l|at|^c@h -| 
+ht|m|at|^c@d K7|
+
+ht|k|at|^g@s 4|
+ht|l|at|^g@h K7|
+ht|m|at|^g@d 83|
+
+ht|n|at|^e@s -|
+ht|o|at|^e@h AQ5|
+ht|p|at|^e@d 42|
+
+ht|r|at|Declarer, requiring all five tricks in a heart game, finesses the @dQ successfully. If declarer now cashes the @dA, the results will not be satisfactory.
+
+To avoid this, declarer should instead ruff one of his spade winners.
+
+Then he should play a diamond to the Ace, completing the correctly timed preparation for the endplay.
+
+Finally, he will play one of his remaining spade winners to trap East's trumps.
+
+Let's see these two variations in a movie format.|
+pg| ***** 2 ***** |
+
+
+qx|Ex|st||rh||ah|Ex Ending Trump Coup|ah|End position|
+md|1haq5d42,s432dk7,sqt9daq,7hk7d83|mb|4hppp|
+wt|s|
+pc|d2|
+nt|^b@2^z@3^^|ht|b|at|Example Ending       |
+ht|z|n#|0|at|^b^*bMM:^*n  Remember you can |cp|red|at| ^*b PLAY ^*n|cp||at| ^*b ANY HAND ^*n  at  ^*b ANY TIME ^*n  by clicking the  { ^*b 1st ^*n }  button.|
+pg| ***** 3 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Example Ending       |
+pg| ***** 4 ***** |
+
+
+ 
+pc|d7|
+pg| ***** 5 ***** |
+
+
+ 
+pc|dq|
+pg| ***** 6 ***** |
+
+
+pc|d3|
+pg| ***** 7 ***** |
+
+
+pc|da|
+pg| ***** 8 ***** |
+
+
+pc|d8|
+pg| ***** 9 ***** |
+
+
+pc|d4|
+pg| ***** 10 ***** |
+
+
+pc|dk|
+pg| ***** 11 ***** |
+
+
+pc|s9|
+pg| ***** 12 ***** |
+
+
+pc|s7|
+pg| ***** 13 ***** |
+
+
+pc|h5|
+pg| ***** 14 ***** |
+
+
+pc|s2|
+at|^^^^Now declarer has to give up a trump trick.
+
+Instead of playing this way, violating the perfect timing, declarer should have proceeded differently.|
+pg| ***** 15 ***** |
+
+
+up|8|
+
+nt|^b@2^z@3^^|ht|b|at|Let's see how he should play to achieve the perfect endplay position.   |
+pg| ***** 16 ***** |
+
+
+at|^^^^First things first, he has to complete the trump reduction (ruffing winners in hand to reduce the trump holding, described as "Grand Coup". Later we will have more on this issue).|
+wt|n|
+pc|s9|
+pg| ***** 17 ***** |
+
+
+pc|s7|
+pg| ***** 18 ***** |
+
+
+pc|h5|
+pg| ***** 19 ***** |
+
+
+pc|s2|
+pg| ***** 20 ***** |
+
+
+at|^^^^Now he can move back to dummy to execute the coup, trapping East's trumps.| 
+pg| ***** 21 ***** |
+
+
+pc|d4|
+pg| ***** 22 ***** |
+
+
+pc|dk|
+pg| ***** 23 ***** |
+
+
+pc|da|
+pg| ***** 24 ***** |
+
+
+pc|d8|
+pg| ***** 25 ***** |
+
+
+pc|sT|
+pg| ***** 26 ***** |
+
+
+pf|both-first-cont|
+pg| ***** 27 ***** |
+
+
+bt||
+qx|TC-s,wide|
+nt|^b@2^z@3^^|ht|a|n#|5|fp|2|at|^*b^a TC-s ^c|fp||at|^*gIndx:Index,Click for Index^*n|
+
+ht|g|at|Let's summarize what we know so far about the trump coup tactic:
+
+A trump coup is a method of beating defender's finessable trumps without the lead of a trump through defender's hand.
+
+It achieves the same effect as a regular finesse in the trump suit but without requiring a trump lead from the opposite hand.
+
+To achieve this, the play should be arranged in a way that the defender will be forced to ruff into the fork behind him.
+
+In preparing the coup, declarer should play the required number of winning tricks in the side suits and reduce his trumps to match the threatening opponent's holding. 
+
+The final step of a trump coup is the lead of a card through the defender with only trumps left. Declarer can now score his remaining trumps by an overruff. 
+
+If declarer, instead, discards losers in a side suit before reducing his trumps and the threatening defender refuses to ruff, he would endplay himself, having to lead a trump from his holding.
+
+Entries are critical in planning this play.
+
+The following deals will illustrate the whole process.|
+pg| ***** 28 ***** |
+
+
+nt|^b@2^z@3^^| 
+st||
+
+qx|1|rh||ah|Trump Coup|ah|Deal 1|
+md|1SJ4HAQJT86DK7C864,SQ9653H3DJ963CT92,SAK8H54DAT84CAQJ3|
+sk|ns|
+mb|1H|mb|p|mb|2D|mb|p|mb|2H|mb|p|mb|3C|mb|p|mb|3h|mb|p|mb|6hppp|pc|cT|
+nt|^b@2^z@3^^|ht|b|at|Deal  1      |
+pg| ***** 29 ***** |
+
+
+pc|cJ|pc|cK|pc|c4|
+pg| ***** 30 ***** |
+
+
+pc|c7|pc|c8|pc|c9|pc|cQ|
+at|The club finesse loses and East returns a club, won in dummy.|
+pg| ***** 31 ***** |
+
+
+at|^^^^You finesse the @h10 successfully, return to dummy with a spade and repeat the heart finesse, West discarding a spade.|
+pg| ***** 32 ***** |
+
+
+ 
+pc|h4|pc|h2|pc|hT|pc|h3|
+pg| ***** 33 ***** |
+
+
+pc|s4|pc|s3|pc|sK|pc|s2|
+pg| ***** 34 ***** |
+
+
+pc|h5|pc|h7|pc|hJ|pc|s5|
+pg| ***** 35 ***** |
+
+
+nt|^b@2^z@3^^|lg|8|ht|b|at|How can you prevent the @hK9 from taking a trick?
+
+You must shorten your trumps to the same length as East's, planning to return to dummy one more time for the actual trump coup. 
+
+Play the @dKA and ruff a @d.|
+pg| ***** 36 ***** |
+
+
+pc|dK|pc|d3|pc|d4|pc|d2|
+pg| ***** 37 ***** |
+
+
+pc|d7|pc|d6|pc|dA|pc|d5|
+pg| ***** 38 ***** |
+
+
+pc|d8|pc|dQ|pc|h6|pc|d9|
+pg| ***** 39 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Play your last club to the Ace and ruff another diamond.|
+pg| ***** 40 ***** |
+
+
+pc|c6|pc|c2|pc|cA|pc|c5|
+pg| ***** 41 ***** |
+
+
+pc|dT|pc|s7|pc|h8|pc|dJ|
+nt|^b@2^z@3^^|ht|b|at|A spade to the Ace achieves the end position.|
+pg| ***** 42 ***** |
+
+
+pc|sJ|pc|s6|pc|sA|pc|sT|
+pg| ***** 43 ***** |
+
+
+sk||
+nt|^b@2^z@3^^|ht|b|at|Whichever black card you lead from dummy now will have the same effect as taking a finesse of the @hQ. 
+^^You score the last two tricks.|
+pf|cont-button|
+pg| ***** 44 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Suppose you did not reduced your trumps to the same length as East's.  
+
+Let's undo and see what would happen.|
+pg| ***** 45 ***** |
+
+
+up|8|
+pg| ***** 46 ***** |
+
+
+pc|sA|pc|s7|pc|sJ|pc|s6|
+pg| ***** 47 ***** |
+
+
+pc|DT|pc|sT|pc|h8|pc|dJ|
+pg| ***** 48 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|When you lead any card from dummy East will play the @s10 and you will have to ruff. 
+
+With the lead in your hand at trick 12, you will not be able to perform the trump coup. 
+
+This is why reducing your trump length is such a vital part of a trump coup.|
+pg| ***** 49 ***** |
+
+
+nt|^b@2^z@3^^|
+vv|process-txt|
+pg| ***** 50 ***** |
+
+
+----------------------------------------------------------------------------------------------------------------
+qx|2|rh||ah|Trump Coup|ah|Deal 2|
+md|1SAQJ843HK72DK8C63,S2HT83DJT96CJT984,ST9HAQJDA543CAQ52|
+sk|ns|
+mb|1S|mb|p|mb|2C|mb|p|mb|2S|mb|p|mb|4N|mb|p|mb|5C|mb|p|mb|6Sppp|pc|cJ|
+nt|^b@2^z@3^^|lg|m|ht|b|at|Deal  2         |
+pg| ***** 51 ***** |
+
+
+at|You finesse the @cQ, losing to the King, East returns a club to dummy's Ace.|
+pg| ***** 52 ***** |
+
+
+pc|cQ|pc|cK|pc|c3|
+pg| ***** 53 ***** |
+
+
+pc|c7|pc|c6|pc|c4|pc|cA|
+pg| ***** 54 ***** |
+
+
+at|^^It was a fine slam but it went bad when that @c finesse lost. 
+Now you must pick up the trump suit for no losers. 
+You run the @s10 and it holds.|
+pg| ***** 55 ***** |
+
+
+pc|sT|pc|s5|pc|s3|pc|s2|
+pg| ***** 56 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|When you repeat the finesse, West shows out.|
+pg| ***** 57 ***** |
+
+
+pc|s9|pc|s6|pc|s4|pc|h3|
+pg| ***** 58 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|East still has @sK7 but there are no spades left in dummy with which to repeat the finesse.
+That might seem like a certain trump loser.
+How will you overcome this obstacle?
+You have a resource, you can perform a Trump Coup.|
+pg| ***** 59 ***** |
+
+
+nt|^b@2^z@3^^|
+
+nt|^b@2^z@3^^|ht|b|at|For this to work you must shorten your trumps down to two (the same length as East) and also make sure that you win
+the eleventh trick in dummy. 
+
+If you can do that, then when you lead from dummy at trick twelve, East will be forced to ruff in front of you, thereby losing his "sure" trump trick.
+
+So, after the second trump finesse wins, the play should go this way:|
+pg| ***** 60 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|Play the @dAK and ruff a diamond.|
+pg| ***** 61 ***** |
+
+
+pc|d3|pc|d2|pc|dK|pc|d6|
+pg| ***** 62 ***** |
+
+
+pc|d8|pc|d9|pc|dA|pc|d7|
+pg| ***** 63 ***** |
+
+
+pc|d4|pc|dQ|pc|s8|pc|dT|
+pg| ***** 64 ***** |
+
+
+at|^^Play a @h to the Jack and ruff a @c.|
+pg| ***** 65 ***** |
+
+
+pc|h2|pc|h8|pc|hJ|pc|h4|
+pg| ***** 66 ***** |
+
+
+pc|c2|pc|h5|pc|sJ|pc|c8|
+pg| ***** 67 ***** |
+
+
+at|^^Back to dummy's @hQ, cash the @hA and lead one of the remaining cards.|
+pg| ***** 68 ***** |
+
+
+pc|h7|pc|hT|pc|hQ|pc|h6|
+pg| ***** 69 ***** |
+
+
+pc|hA|pc|h9|pc|hK|pc|c9|
+pg| ***** 70 ***** |
+
+
+pc|d5|
+sk||
+pg| ***** 71 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|East is forced to ruff in front of your @sAQ. 
+Be sure to realize that you needed both those ruffs in your hand.
+If you had not shortened your trumps to the right length, then there would have been no Trump Coup.
+Let's go back and see that.|
+pg| ***** 72 ***** |
+
+
+up|13|
+pg| ***** 73 ***** |
+
+
+pc|hQ|pc|h5|pc|hK|pc|hT|
+pg| ***** 74 ***** |
+
+
+pc|h7|pc|c8|pc|hA|pc|h6|
+pg| ***** 75 ***** |
+
+
+pc|d5|pc|h9|pc|sJ|pc|dJ|
+pg| ***** 76 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|You are endplayed now and can't prevent east from gaining a trump trick.|
+pg| ***** 77 ***** |
+
+
+vv|process-txt|
+pg| ***** 78 ***** |
+
+
+--------------------------------------------------------------------------------------------------------------
+qx|3|rh||ah|Trump Coup|ah|Deal 3|
+md|1SKQ62HAT753DACA74,SJ93HDKQT93CKQJT9,SA4HKQ84DJ76542C2|
+sk|ns|
+mb|1H|mb|2N|mb|4C|mb|p|mb|4N|mb|p|mb|5|mb|5S|mb|p|mb|7Hppp|pc|cK|
+nt|^b@2^z@3^^|ht|b|at|Deal  3      ^^^^Sometimes the need to take several ruffs in dummy prevents you from picking up your right-hand opponent's trump holding by a finesse.  
+
+If you can shorten the trumps in your hand, you may be able to reach a trump ending.|
+pg| ***** 79 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|You win the opening lead with the Ace and play a trump to the King, West showing out.| 
+pg| ***** 80 ***** |
+
+
+pc|c2|pc|c3|pc|cA|
+pg| ***** 81 ***** |
+
+
+pc|h3|pc|d3|pc|hK|pc|h2|
+pg| ***** 82 ***** |
+
+
+at|^^You can pick up East's @hJ96 with a straightforward finesse, but that would leave you with losers in your hand. 
+West's Unusual 2NT overcall has told you that you cannot establish the diamond suit, so you will have to ruff your black-suit losers in dummy.|
+pg| ***** 83 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|Cash the top three spades.|
+pg| ***** 84 ***** |
+
+
+ 
+pc|sA|pc|s5|pc|s2|pc|s3|
+pg| ***** 85 ***** |
+
+
+pc|s4|pc|s7|pc|sQ|pc|s9|
+pg| ***** 86 ***** |
+
+
+pc|sK|pc|sJ|pc|d2|pc|s8|
+pg| ***** 87 ***** |
+
+
+at|^^Unblock the @dA and lead a your last @s.|
+pg| ***** 88 ***** |
+
+
+pc|dA|pc|d9|pc|d4|pc|d8|
+pg| ***** 89 ***** |
+
+
+pc|s6|
+pg| ***** 90 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|West shows out and you ruff.| 
+pg| ***** 91 ***** |
+
+
+pc|c9|pc|h4|pc|sT|
+pg| ***** 92 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|At this moment, you hold four trumps and East's holds three. 
+You should plan to achieve an end position where you hold @hA10 over East's @hJ9.
+In this case you need to shorten your trumps twice.|
+pg| ***** 93 ***** |
+
+
+at|^^Lead a @d from dummy.|
+pg| ***** 94 ***** |
+
+
+pc|d5|pc|c5|pc|h5|pc|dT|
+nt|^b@2^z@3^^|lg|m|ht|b|at|East cannot gain by ruffing so he discards a @c and you ruff.
+Ruff a @c in dummy and play a @d.|
+pg| ***** 95 ***** |
+
+
+pc|c4|pc|cT|pc|h8|pc|c6|
+pg| ***** 96 ***** |
+
+
+pc|d6|
+pg| ***** 97 ***** |
+
+
+at|^^East discards his last @c and you ruff.|
+pg| ***** 98 ***** |
+
+
+pc|c8|pc|h7|pc|dQ|
+pg| ***** 99 ***** |
+
+
+at|^^Ruff your last @c...|
+pg| ***** 100 ***** |
+
+
+pc|c7|pc|cJ|pc|hQ|pc|h6|
+pg| ***** 101 ***** |
+
+
+sk||
+nt|^b@2^z@3^^|ht|b|at|... to make it hopeless for East.|
+pg| ***** 102 ***** |
+
+
+vv|process-txt|
+pg| ***** 103 ***** |
+
+
+---------------------------------------------------------------------------------------------------------
+qx|4|rh||ah|Trump Coup|ah|Deal 4|
+md|3S9HAKT9532DKQ4C53,SKQT76H6DJ952CJT8,S8532HQDA83CAK964|
+sk|ns|
+mb|1C|mb|p|mb|1H|mb|p|mb|1S|mb|p|mb|4H|mb|p|mb|6Hppp|pc|sK|
+nt|^b@2^z@3^^|lg|m|ht|b|at|Deal  4     Sometimes you have to be careful which suit you ruff in order to reduce your trump holding.|
+pg| ***** 104 ***** |
+
+
+at|^^The defenders play two rounds of spades and you ruff the second round.|
+pg| ***** 105 ***** |
+
+
+pc|s2|pc|sA|pc|s9|
+pg| ***** 106 ***** |
+
+
+pc|sJ|pc|h2|pc|s6|pc|s3|
+pg| ***** 107 ***** |
+
+
+at|^^You play a trump to the Queen, then back to hand with the @dQ .|
+pg| ***** 108 ***** |
+
+
+  
+pc|h3|pc|h6|pc|hQ|pc|h4|
+pg| ***** 109 ***** |
+
+
+pc|d3|pc|d6|pc|dQ|pc|d2|
+pg| ***** 110 ***** |
+
+
+at|^^You follow with the @hA.   West shows out, discarding a spade.|
+pg| ***** 111 ***** |
+
+
+pc|hA|pc|s7|pc|c4|pc|h7|
+pg| ***** 112 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|A trump coup will be needed to pick up East's remaining @hJ8.
+You need to take two more ruffs in your hand to match East's trump length. 
+You will still need one further entry to be able to lead a card towards your eventual  @hK10.|
+pg| ***** 113 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|Cross to the @cK, and ruff a spade.|
+pg| ***** 114 ***** |
+
+
+pc|c5|pc|c8|pc|cK|pc|c2|
+pg| ***** 115 ***** |
+
+
+pc|s5|pc|s4|pc|h5|pc|sT|
+pg| ***** 116 ***** |
+
+
+at|^^Play a club to the Ace.|
+pg| ***** 117 ***** |
+
+
+pc|c3|pc|cT|pc|cA|pc|c7|
+pg| ***** 118 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|If you ruff another @s now, East will discard one of his @d (the play of the @s so far showed an almost certain three-card holding by East).|
+pg| ***** 119 ***** |
+
+
+ 
+pc|s8|pc|d7|pc|h9|pc|sQ|
+pg| ***** 120 ***** |
+
+
+pc|dK|pc|d5|pc|d8|pc|dT|
+pg| ***** 121 ***** |
+
+
+pc|d4|pc|d9|pc|dA|pc|h8|
+pg| ***** 122 ***** |
+
+
+at|^^When you continue with the @dAK, East will ruff and you will be one down.
+Let's undo to the critical position.|
+pg| ***** 123 ***** |
+
+
+up|12|
+nt|^b@2^z@3^^|ht|b|at|Instead, you should lead a @c from dummy.|
+pg| ***** 124 ***** |
+
+
+pc|c6|
+pg| ***** 125 ***** |
+
+
+at|^^^^As the cards lie, East follows suit so you ruff.|
+pg| ***** 126 ***** |
+
+
+pc|cQ|pc|h9|pc|cJ|
+pg| ***** 127 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|Cash the @dKA and now you can lead one of dummy's two black cards through East's trumps.|
+pg| ***** 128 ***** |
+
+
+pc|dK|pc|d5|pc|d8|pc|d7|
+pg| ***** 129 ***** |
+
+
+pc|d4|pc|d9|pc|dA|pc|dT|
+pg| ***** 130 ***** |
+
+
+pc|s8|
+pg| ***** 131 ***** |
+
+
+sk||
+vv|process-txt|
+pg| ***** 132 ***** |
+
+
+qx|5|rh||ah|Trump Coup|ah|Deal 5|
+md|1SJ6HAQ6D4CAQ87542,SQT3HJT93DJ98653C,SAK75HK852DAK2CKT|
+sk|ns|
+mb|1C|mb|p|mb|1H|mb|p|mb|3C|mb|p|mb|4N|mb|p|mb|5S|mb|p|mb|7Cppp|
+pc|hJ|
+nt|^b@2^z@3^^|lg|m|ht|b|at|Deal   5      |
+pg| ***** 133 ***** |
+
+
+at|You win the opening lead with the @hA.       |
+pg| ***** 134 ***** |
+
+
+pc|h2|pc|h4|pc|hA|
+pg| ***** 135 ***** |
+
+
+at|^^On the lead of the @c to the King, West discards.|
+pg| ***** 136 ***** |
+
+
+pc|c2|pc|d3|pc|cK|pc|c3|
+pg| ***** 137 ***** |
+
+
+at|^^You lead the @c10, East covers with the Jack and you win the Queen.|
+pg| ***** 138 ***** |
+
+
+pc|cT|pc|cJ|pc|cQ|pc|d5|
+pg| ***** 139 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|You must now aim for a trump coup to catch East's remaining @c96. 
+To shorten your trumps to the same length as East, you will need to take three ruffs in your hand.
+Cross to the @dA and cash the @dK, throwing the @h6.|
+pg| ***** 140 ***** |
+
+
+pc|d4|pc|d6|pc|dK|pc|d7|
+pg| ***** 141 ***** |
+
+
+pc|dA|pc|dT|pc|h6|pc|d8|
+pg| ***** 142 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|Ruff a diamond, play the @hQ to the King and ruff a @h.|
+pg| ***** 143 ***** |
+
+
+pc|d2|pc|dQ|pc|c4|pc|d9|
+pg| ***** 144 ***** |
+
+
+pc|hQ|pc|h3|pc|hK|pc|h7|
+pg| ***** 145 ***** |
+
+
+pc|h5|
+pg| ***** 146 ***** |
+
+
+at|^^East showing out.|
+pg| ***** 147 ***** |
+
+
+pc|s2|pc|c5|pc|h9|
+pg| ***** 148 ***** |
+
+
+at|^^Cross to the @sA and ruff another @h, reducing your trump length to the same as East's.|
+pg| ***** 149 ***** |
+
+
+pc|s6|pc|s3|pc|sA|pc|s4|
+pg| ***** 150 ***** |
+
+
+pc|h8|pc|s8|pc|c7|pc|hT|
+pg| ***** 151 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|A @s to dummy's King achieves the end position.|
+pg| ***** 152 ***** |
+
+
+pc|sJ|
+pg| ***** 153 ***** |
+
+
+sk||
+vv|process-txt|
+pg| ***** 154 ***** |
+
+
+qx|6|rh||ah|Trump Coup|ah|Deal 6|
+md|3SAQ9642HKJ9DQJ6C8,STHT7542DT7CQT652,SK5HQ63DAK42CAJ73|
+sk|ns|
+mb|1N|mb|p|mb|3S|mb|p|mb|4C|mb|p|mb|4N|mb|p|mb|5D|mb|p|mb|6Sppp|
+pc|h4|
+nt|^b@2^z@3^^|lg|h|ht|b|at|Deal  6     |
+pg| ***** 155 ***** |
+
+
+at|East goes up with the @hA and returns the @h8.|
+pg| ***** 156 ***** |
+
+
+pc|h3|pc|hA|pc|h9|
+pg| ***** 157 ***** |
+
+
+pc|h8|pc|hK|pc|h2|pc|h6|
+pg| ***** 158 ***** |
+
+
+at|^^As soon as you see dummy, you should notice that only a 4-1 trump break can hurt you, so that should be your sole concern. 
+There's no hope if West has four trumps, but if East has them, not all is lost. 
+At trick three you should lead a @c to the Ace, and ruff a @c in hand.|
+pg| ***** 159 ***** |
+
+
+ 
+pc|c8|pc|c2|pc|cA|pc|c4|
+pg| ***** 160 ***** |
+
+
+pc|c3|pc|c9|pc|s2|pc|c5|
+pg| ***** 161 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|This cannot cost a trick and is the key to trump reduction, should it be necessary.|
+pg| ***** 162 ***** |
+
+
+at|^^Play the @sA, then the @sK.|
+pg| ***** 163 ***** |
+
+
+pc|sA|pc|sT|pc|s5|pc|s3|
+pg| ***** 164 ***** |
+
+
+pc|s4|pc|h5|pc|sK|pc|s7|
+pg| ***** 165 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|Now you are in the correct hand when you learn about the 4-1 trump break.
+Ruff a second @c and play three rounds of @d, ending in dummy.|
+pg| ***** 166 ***** |
+
+
+pc|c7|pc|cK|pc|s6|pc|c6|
+pg| ***** 167 ***** |
+
+
+pc|dQ|pc|d7|pc|d2|pc|d3|
+pg| ***** 168 ***** |
+
+
+pc|dJ|pc|dT|pc|d4|pc|d5|
+pg| ***** 169 ***** |
+
+
+pc|d6|pc|h7|pc|dK|pc|d8|
+pg| ***** 170 ***** |
+
+
+at|^^Finally, discard a @h on the fourth diamond.|
+pg| ***** 171 ***** |
+
+
+pc|dA|pc|d9|pc|hJ|pc|cT|
+pg| ***** 172 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|All that remains is to lead a card from dummy, trapping East's trumps.|
+pg| ***** 173 ***** |
+
+
+pc|hQ|
+sk||
+pg| ***** 174 ***** |
+
+
+vv|process-txt|
+pg| ***** 175 ***** |
+
+
+qx|7|rh||ah|Trump Coup|ah|Deal 7|
+md|3SAQT4H54D2CAKT543,S653HJT982DKT94C7,SKJ2HKQ3DAQ753CQ2,S987HA76DJ86CJ986|sk|s|
+mb|p|mb|p|mb|1C|mb|p|mb|1D|mb|p|mb|1S|mb|p|mb|2H|mb|p|mb|3C|mb|p|mb|4N|mb|p|mb|5D|mb|p|mb|6C|mb|p|mb|p|mb|p|
+nt|^b@2^z@3^^|ht|b|at|Deal  7     |
+pc|hJ|
+pg| ***** 176 ***** |
+
+
+pc|hQ|pc|hA|pc|h4|
+pg| ***** 177 ***** |
+
+
+pc|h7|pc|h5|pc|h2|pc|hK|
+pg| ***** 178 ***** |
+
+
+pc|cQ|pc|c6|pc|c3|pc|c7|
+pg| ***** 179 ***** |
+
+
+pc|c2|pc|c8|pc|cK|pc|h8|
+pg| ***** 180 ***** |
+
+
+at|As you have no way to pick up East's @cJ9 with a straightforward finesse, you should try to perform a trump coup.
+^^|n^|5|at|To achieve the coup position you must ruff two of dummy's red cards in your hand.  That will leave you with the @cK10 over East's @cJ9.
+^^But you must arrange your play in a way that allows you to put dummy on lead at trick 11.  Are there any problems ?|
+pg| ***** 181 ***** |
+
+
+pc|d2|pc|d4|pc|dA|pc|d6|
+pg| ***** 182 ***** |
+
+
+pc|h3|pc|h6|pc|c4|pc|h9|
+pg| ***** 183 ***** |
+
+
+pc|s4|pc|s3|pc|sJ|pc|s7|
+pg| ***** 184 ***** |
+
+
+pc|d3|pc|d8|pc|c5|pc|d9|
+pg| ***** 185 ***** |
+
+
+pc|sT|pc|s5|pc|sK|pc|s8|
+pg| ***** 186 ***** |
+
+
+pc|s2|pc|s9|pc|sQ|pc|s6|
+pg| ***** 187 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|Do you see what happened ?      You got stuck in your hand, unable to reach dummy to carry out the coup.
+The problem is in the @s suit. The way this suit splits, there will be no way to reach dummy through it.
+What can you do about that?
+Let's go back to the point where you won the @cK.|
+pg| ***** 188 ***** |
+
+
+up|24|
+pg| ***** 189 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|Instead of playing a @d to the Ace, simply finesse the @dQ!|
+pg| ***** 190 ***** |
+
+
+pc|d2|pc|d4|pc|dQ|pc|d6|
+pg| ***** 191 ***** |
+
+
+at|^^Next, play the @dA, discarding one of your @s.|
+pg| ***** 192 ***** |
+
+
+pc|dA|pc|d8|pc|s4|pc|d9|
+pg| ***** 193 ***** |
+
+
+at|^^The @s suit is now split evenly, and allows flexibility.|
+pg| ***** 194 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|The rest is simple @- you can ruff two red cards in hand and still reach dummy with a third round of @s.|
+pg| ***** 195 ***** |
+
+
+pc|d3|pc|dJ|pc|c4|pc|dT|
+pg| ***** 196 ***** |
+
+
+pc|sT|pc|s3|pc|sJ|pc|s7|
+pg| ***** 197 ***** |
+
+
+pc|h3|pc|h6|pc|c5|pc|h9|
+pg| ***** 198 ***** |
+
+
+pc|sA|pc|s5|pc|s2|pc|s8|
+pg| ***** 199 ***** |
+
+
+pc|sQ|pc|s6|pc|sK|pc|s9|
+pg| ***** 200 ***** |
+
+
+sk||
+vv|process-txt|
+pg| ***** 201 ***** |
+
+
+qx|8|rh||ah|Trump Coup|ah|Deal 8|
+md|1SQ2HA7DT73CAKQT96,S873HJ9654DJ862C4,SAKJT5HKQ3DAQ5C73,S964HT82DK94CJ852|sk|ns|
+mb|1C|mb|p|mb|1S|mb|p|mb|3C|mb|p|mb|4N|mb|p|mb|5D|mb|p|mb|7C|mb|p|mb|p|mb|p|
+pc|s8|
+nt|^b@2^z@3^^|lg|m|ht|b|at|Deal  8      |
+pg| ***** 202 ***** |
+
+
+pc|s5|pc|s4|pc|sQ|
+pg| ***** 203 ***** |
+
+
+pc|cA|pc|c4|pc|c3|pc|c2|
+pg| ***** 204 ***** |
+
+
+pc|cK|pc|h4|pc|c7|pc|c5|
+pg| ***** 205 ***** |
+
+
+at|All looked fine until you discovered the hostile trump split.
+A successful coup may solve the problem.
+To shorten your trumps to the same length as East's, you need to ruff twice in hand.
+Looking at dummy, you notice that the only cards you can ruff in hand are all winners.|
+pg| ***** 206 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|When the cards that declarer has to ruff, in order to shorten his trump holding, are ^*b winners^*n, the play is called as a "Grand Coup".
+
+|n^|6|at|This play is not difficult and worth being familiar with despite its rarity.|
+pg| ***** 207 ***** |
+
+
+nt|^b@2^z@3^^|
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|Play three rounds of @h, ruffing the third in hand.|
+pg| ***** 208 ***** |
+
+
+pc|hA|pc|h5|pc|h3|pc|h2|
+pg| ***** 209 ***** |
+
+
+pc|h7|pc|h6|pc|hQ|pc|h8|
+pg| ***** 210 ***** |
+
+
+pc|hK|pc|hT|pc|c6|pc|h9|
+pg| ***** 211 ***** |
+
+
+at|^^Play three rounds of @s, discarding your two @d losers, then ruff the last @s in hand.|
+pg| ***** 212 ***** |
+
+
+pc|s2|pc|s3|pc|sA|pc|s6|
+pg| ***** 213 ***** |
+
+
+pc|sK|pc|s9|pc|d3|pc|s7|
+pg| ***** 214 ***** |
+
+
+pc|sT|pc|d4|pc|d7|pc|d2|
+pg| ***** 215 ***** |
+
+
+pc|sJ|pc|d9|pc|c9|pc|d6|
+pg| ***** 216 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Finally, play your last @d to the Ace and claim what you deserve.|
+pg| ***** 217 ***** |
+
+
+pc|dT|pc|d8|pc|dA|pc|dK|
+pg| ***** 218 ***** |
+
+
+sk||
+vv|process-txt|
+pg| ***** 219 ***** |
+
+
+qx|9|rh||ah|Trump Coup|ah|Deal 9|
+md|3SKQJ832HK94DAJC98,HAJ872D63CT76532,SA6HQ6DKQT875CAQ4,ST9754HT53D942CKJ|sk|ns|
+mb|p|mb|p|mb|1S|mb|p|mb|2D|mb|p|mb|2S|mb|p|mb|4N|mb|p|mb|5S|mb|p|mb|6S|mb|d|mb|p|mb|p|mb|p|
+pc|hA|
+nt|^b@2^z@3^^|lg|m|ht|b|at|Deal  9    |
+pg| ***** 220 ***** |
+
+
+at|You win the 2nd round of @h with the @hQ, cash the @sA and are just about to claim the rest of the 
+tricks when West shows out !|
+pg| ***** 221 ***** |
+
+
+pc|h6|pc|h3|pc|h4|
+pg| ***** 222 ***** |
+
+
+pc|h2|pc|hQ|pc|h5|pc|h9|
+pg| ***** 223 ***** |
+
+
+pc|sA|pc|s4|pc|s2|pc|c2|
+pg| ***** 224 ***** |
+
+
+at|^^You can realize that you have somehow to finesse trumps twice and you can do so only once.|
+pg| ***** 225 ***** |
+
+
+pc|s6|pc|s9|pc|sJ|pc|c3|
+nt|^b@2^z@3^^|lg|c|ht|b|at|You lead the @s6, but East, cleverly, goes up with @s9, so you still need to finesse again. The only way you can do that is to lead a @d from dummy, overruffing when East ruffs.
+
+|n^|7|at|But there is a snag: you can see that East would be unwilling to ruff any @d for fear of being overruffed and the time would come when you will have nothing left in your own hand but trumps, and you would have to ruff a @d before East.
+
+|n^|7|at|Then you would have to lead a trump away from your own hand.|
+pg| ***** 226 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|To prevent this from happening, you will have to ruff a winning @d, then return to dummy with @cA to continue the @d.
+Play the @sK, then play the @dA and overtake the @dJ in dummy.|
+pg| ***** 227 ***** |
+
+
+pc|sK|pc|d3|pc|c4|pc|s5|
+pg| ***** 228 ***** |
+
+
+pc|dA|pc|d6|pc|d5|pc|d2|
+pg| ***** 229 ***** |
+
+
+pc|dJ|pc|c5|pc|dQ|pc|d4|
+pg| ***** 230 ***** |
+
+
+at|^^Play one of your @d winners, discarding a @c from your hand.|
+pg| ***** 231 ***** |
+
+
+pc|dT|pc|d9|pc|c8|pc|c6|
+pg| ***** 232 ***** |
+
+
+nt|^b@2^z@3^^|lg|m|ht|b|at|Ruff a @d in hand, go back to dummy with the @cA and play a @d.|
+pg| ***** 233 ***** |
+
+
+pc|d7|pc|hT|pc|s3|pc|c7|
+pg| ***** 234 ***** |
+
+
+pc|c9|pc|cT|pc|cA|pc|cJ|
+pg| ***** 235 ***** |
+
+
+pc|dK|
+pg| ***** 236 ***** |
+
+
+at|^^East has nothing to gain by ruffing, so he plays the @cK and you discard the @hK.|
+pg| ***** 237 ***** |
+
+
+pc|cK|pc|hK|pc|h7|
+pg| ***** 238 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|The lead is still in dummy while you hold the  @sK8  over East's  @s107.|
+pg| ***** 239 ***** |
+
+
+sk||
+vv|process-txt|
+pg| ***** 240 ***** |
+
+
+bt||
+nt|^b@2^z@3^^|
+tu|y|
+ht|n|fp|2|at|^k    End of Section|fp||
+pg| ***** 241 ***** |
+
+

@@ -1,0 +1,57 @@
+
+%%
+%%     LTPB1 - Common
+%%
+
+<--THIS-LINE-AND-ALL-BEFORE-EXCLUDED-->
+%%
+fh|180|ff|1Arial|fb|10|fm|1|      Font 1   Kia
+fh|235|ff|2Arial|fb|28|fm|2|      Font 2   Kia
+fh|350|ff|3Arial|fb|30|fm|3|      Font 3   Kia
+fh|430|ff|4Arial|fb|48|fm|4|      Font 4   Kia
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|60|fm|6|      Font 6
+fh|770|ff|7Arial|fb|70|fm|7|      Font 7
+fh|880|ff|8Arial|fb|80|fm|8|      Font 8
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1255|cg|1230|cb|1189|   Beige Cream
+cr|2200|cg|2245|cb|2210|   green ish
+cr|3249|cg|3249|cb|3255|   grey medium
+cr|4190|cg|4210|cb|4255|   blue grey
+cr|5198|cg|5205|cb|5229|   light grey
+cr|6122|cg|6000|cb|6049|   dark maroon
+cr|9255|cg|9255|cb|9255|   'white'
+
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m60|                    Font   m  m-mastHead        size in banner 1
+fh|c60|                    Font   c  c-chapTitle       size in banner 2
+
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint           feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight       text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+%%
+pd|first,^a You can `cp`red`at`^*b now ^*n`cp``at` ^*bClick { ^*b 1st ^*n } below @0@1 to enter the deal and ^*b PLAY ^*n the cards.   Later click  { ^*b Back to Movie ^*n }  to return.|
+%%
+ha|y|    %% hide auction
+bv|f,v|  %% button visibility
+%%
+<--THIS-LINE-AND-ALL-AFTER-EXCLUDED-->

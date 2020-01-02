@@ -1,0 +1,62 @@
+%% New to Lin files
+%% Last edited  2018 AUg
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% BBO Deal to aaBridge
+%% Last edited   2018 Aug 15
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+fh|v24|        v-24     very small
+fh|s28|        s-28     small
+fh|j32|        j-32
+fh|k35|        k-35
+fh|e37|        e-37
+fh|t40|        t-40     title
+fh|n42|        n-42
+fh|p45|        p-45
+fh|b50|        b-50     big
+fh|g60|        g-60     graphSuit 
+fh|m64|        m-64     mastHead
+fh|c70|        c-70     chapTitle
+
+cr|a230|cg|a040|cb|a130|     a  action
+cr|b100|cg|b100|cb|b255|     b  light Blue
+cr|f200|cg|f255|cb|f255|     f  fake-button
+cr|h000|cg|h095|cb|h169|     h  h-highlight
+cr|p255|cg|p000|cb|p255|     p  pink    fake pink button
+cr|u160|cg|u040|cb|u200|     u  pUrple
+cr|y170|cg|y190|cb|y255|     y  youtube border
+
+
+bt||
+fp|t|at|
+^b@2^*bNew to Lin files ?^*n ^z@3|fp||
+at|
+
+|n#|9|at|From the  ^*g :Doc Collection, aaBridge Doc Collection^*n  |fp||at|   (  @2If it is NOT on your desktop click the blue link and follow the
+instructions.   You can return by clicking the  |fp|n|n#|1|at|@L|fp||n^|1|at|  icon, top left. )
+^b@2
+|lg|g|
+n^|f|fp|j-32|cp|a|at|^*bis the doc^*n|cp||fp||at|
+|n#|4|fp|t|at|  ^e  Lin Files - a Starter|fp||at|
+
+|n^|4|at|^c@2The document covers USE of lin files in a sophisticated way but does not require you to know about the internals of a Lin file.
+
+|n^|2|fp|j-32|cp|a|at|^b^*band the zip file^*n|cp||fp||at|
+|n#|0|fp|k-35|at|^e 102__aaBridge_and_Lin_Files.zip|fp||at|
+
+|n^|4|at|Is a course for users who want to know more about the details of an files.   You can do the course on your own without assistance.
+
+|n^|4|lg|k|at|
+^bFinally there is the ultimate reference for lin files -
+^d ^*bMenubar     >     Help & How do I     >     |cp|red|at|^*bWhat goes on inside  .lin  file^*n|
+cp||fp|s|at|       (near the end of the menu)|fp||at|
+
+|n^|3|at|which   |fp|t|at|you are already reading  ☺|fp||at|
+
+^bWhat follows in the ^*b original ^*n introduction to lin files.
+^bIn future, at the end of every page, please click   ^*bFlow >^*n   or use the  ^*bRight Arrow^*n  on your keyboard
+|n^|0|at|^p( OR   even better use a |cp|gr|at| ^*b Mouse Wheel ^*n |cp||at|)
+|

@@ -1,0 +1,403 @@
+              %%
+              %%  Tell users of old win player they need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the ^*b aaBridge ^*n player available  FREE  from |
+cb|8255|cp|8|ht|L|at|   ^i  ^*hrogerpf.com/aaBridge^*n|
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+              %%
+			  
+ss|chapter,31.       Find the @hQ in 5@dx, but is that all ?|
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-05-23          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Roger's  Finds                   2019  and  Past  Years |
+%%
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       Maroon
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    Around the normal Grey
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title     
+fh|b50|                    Font   b  b-bigTitle
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+%
+cr|a230|cg|a040|cb|a130|   text   a  a-action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       on Title Pages
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    on Title Pages
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|y|n#|b|lg||at|^b@2@1|at|
+^*bClick^*n          ^*bFlow >^*n         or use your    ^*bMouse Wheel^*n|
+ht|z|at|@0
+^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|j|n^|4|
+lg|f|
+at|^c@2^z@3|  
+
+n#|3|at|You are playing in 5@d doubled.  Is there a way to find where the @hQ is likely to be, or any other way to make ?
+This is a real deal played by real people. The aaaBridge bots will defend exactly as the real opponents did.|
+n#|d|at|^^Your challenge is to |cp|red|at| ^*b make the contract ^*n |cp||at| at  YOUR FIRST ATTEMPT.|
+n#|d|at|^^The first time you play the hand you do so without assistance from aaBridge, when set like this the hand is called a ^*b Study Deal^*n.  There is no looking at the Opps cards but you CAN ^*b UNDO ^*n as much as you like.|   
+n#|9|at|^^After that you get to play the hand a 2nd time but with access to the ^*b DDS ^*n (Double Dummy Solver)  etc.|
+
+ht|t|at| ^e@2 { |n#|4|at|Don't forget to read the Analysis Section (^*bAsys^*n).  That is what a ^*b Roger's Find ^*n is all about. |n^|b|at|^^ ^^}|
+
+
+fh|940|fm|9|fp|9|at|@0@1|ht|i|rq|3164|at|@4^^^^^^ ^- This   Bridge Movie   requires a more recent version of ^*b aaBridge^*n.   ^^^^ Your copy of ^*b aaBridge ^*n is out of date.    You can get the latest version   ^^^^  FREE   from    ^*h http://rogerpf.com/aaBridge ^*n ^- ^^^^ ^L   click the link above to visit.|
+
+qx|# 31|
+pg| ***** 0 ***** |
+
+
+st||
+---------------------------------------------------------------------------
+rh||ah|Find 31|
+nt|^b@2^^|n^|5|at|^*bFind 31^*n ^e the hand,      |
+zm|+study+|
+md|1sThAJ7dKQJT8743c8,sKQ9752h54c97532,s843hKT2d965cAJT6,sAJ6hQ9863dA2cKQ4|
+%
+bh|Play, West,  sL, res, p24,  T3-9,     always|
+%
+sv|e|sk|s|
+pg| ***** 1 ***** |
+
+
+at|^h the bidding,|
+%%_aapg-NEAR
+mb|1D|pg||
+mb|1S|pg||
+mb|p|pg||
+mb|2D|an|@s support|pg||
+mb|4D|pg||
+mb|p|pg||
+mb|5D|pg||
+mb|d|pg||
+mb|p|pg||
+mb|p|pg||
+mb|p|
+%%_aapg-STD
+pg| ***** 12 ***** |
+
+
+at|^k    the lead, ^n|
+pc|sK|
+pg| ***** 13 ***** |
+
+
+at|    ^*bDo your thinking NOW^*n|
+pg| ***** 14 ***** |
+
+
+qx|Try,wide|bv|f,v|
+n#|h|cp|red|at|^^ ^c ^*bNow |cp||
+at| Click^*n  the blue  { ^*b 1st ^*n }  button below|
+cp|red|at|^*b  and play out the hand^*n|cp||
+at|.     ^*b Flow ^*n  will skip the Study Deal.|
+pf|first-button|
+pg| ***** 15 ***** |
+
+
+zm|-study-|
+ht|f|at|^e@4^^|
+ht|m|at|^c This is your last chance to play the hand without seeing the answer.|
+at|^^^^^c 'Study Deal'  restrictions lifted, |
+at|hence in the deal the  ^*b DDS  { Off/On ^*n }  buttons, |
+at|etc are |cp|red|at|^*b NOW ^*n|cp||at| available.|
+at|^^^^^L You can still use the blue  { ^*b 1st ^*n }  button.|
+pg| ***** 16 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Asys,wide|
+bv|f,h|
+mx|x|
+ht|f|at|^c@2^z@3^d@4@5^^|
+ht|c|n#|1|at|^e^*bAnalysis^*n   | 
+lg|k|
+pg| ***** 17 ***** |
+
+
+at|^^West leads the @sK and switches to the @c9.|
+pg| ***** 18 ***** |
+
+
+pc|s3|pc|s6|pc|sT|
+pg| ***** 19 ***** |
+
+
+pc|c9|
+pg| ***** 20 ***** |
+
+
+at|  You have to take it or go 1 down (@dA still out).|
+pg| ***** 21 ***** |
+
+
+pc|cA|pc|c4|pc|c8|
+pg| ***** 22 ***** |
+
+
+at|^^Now what ?  Clearly You have to find the @hQ but at the moment it is just a guess.  
+What can you do to improve your chances of finding the queen ?|
+pg| ***** 23 ***** |
+
+
+at|^^The standard approach is find out a much as you can about the Opps suit lengths.|
+pg| ***** 24 ***** |
+
+
+ht|e|at|^g    @4@5^^^c@2|
+lg|n|
+ht|k|n^|5|at|But what do we already know ?  West overcalled a 1@s (5+) and East supported (3+).   Were the @s 6-3 or 5-4 ?  West did not try to give East his @sAce which is enough to make it likely that West started with 6@s and so knew the next round would be ruffed.   |
+at|The switch to the @c9 also makes it likely that East has both @c hons (@cKQ).|
+pg| ***** 25 ***** |
+
+
+ht|e|at|^g    @4@5^^^c@2|
+lg|n|
+ht|k|n^|5|at|Given all that, we need to ruff some @c and so see who has what.  To ruff @c we need to enter dummy as many times a possible.  |
+pg| ***** 26 ***** |
+
+
+at|Look carefully and see that there are 2 certain entries in trumps (@d) even if one of the Opps choses to hold up the @dAce.  |
+pg| ***** 27 ***** |
+
+
+at|  First we need ruff the 2nd round of @c (high).|
+pg| ***** 28 ***** |
+
+
+pc|cJ|pc|cQ|pc|dK|pc|c2|
+pg| ***** 29 ***** |
+
+
+ht|e|at|^g    @4@5^^^c@2|
+lg|n|
+ht|k|n^|5|at|To retun to dummy the correct play is the @d8 to the @d9|
+pg| ***** 30 ***** |
+
+
+pc|d8|pc|s2|pc|d9|pc|dA|
+pg| ***** 31 ***** |
+
+
+at|  and ruff the expected @s return (high).|
+pg| ***** 32 ***** |
+
+
+pc|sA|pc|dQ|pc|s5|pc|s4|
+pg| ***** 33 ***** |
+
+
+at|^^Use the @d4 to cross to dummy's @d5 while drawing the last trump (@d2).  |
+pg| ***** 34 ***** |
+
+
+pc|d4|pc|s7|pc|d5|pc|d2|
+pg| ***** 35 ***** |
+
+
+at|Ruff the third round of @c (high) |
+pg| ***** 36 ***** |
+
+
+pc|cT|pc|cK|pc|dJ|pc|c3|
+pg| ***** 37 ***** |
+
+
+at|^^... and repeat.|
+pg| ***** 38 ***** |
+
+
+%%_aapg-NEAR
+pc|d3|pc|s9|pc|d6|pc|h3|pg||
+pc|c6|pc|h6|pc|dT|pc|c5|
+%%_aapg-STD
+pg| ***** 40 ***** |
+
+
+n#|a|at|      So what do we know ?|
+pg| ***** 41 ***** |
+
+
+ht|e|at|^g    @4@5^^^c@2|
+lg|n|
+ht|k|n^|5|at|We know that West started with exactly 5@c and a void in @d and most likely 6 (not 5) @s.    So ^*b 6205 ^*n which =  2@h.|
+pg| ***** 42 ***** |
+
+
+at|^^so east started ^*b 3523 ^*m.    Meaning that East started with 5 @h to West's 2. So East is two and half times more likely (5/2) to have the @hQ than West.|
+pg| ***** 43 ***** |
+
+
+pc|d7|pc|c7|pc|s8|pc|sJ|
+pg| ***** 44 ***** |
+
+
+sk||
+pg| ***** 45 ***** |
+
+
+n#|9|at|   Did we miss anything ?|
+pg| ***** 46 ***** |
+
+
+ht|e|at|^g    @4@5^^^c@2|
+lg|n|
+ht|k|n^|5|at|^*bYes ^*n -  clearly we could have allowed for the possibility that East's clubs were @cKQx and so should have preserved the @cJ in case it came good.  Therefore we should have started the @c ruffs with the @c6.|
+pg| ***** 47 ***** |
+
+
+at|^^Back to trick 2.|
+up|32|
+pg| ***** 48 ***** |
+
+
+ht|e|at|^g    @4@5^^^c@2|
+lg|n|
+ht|k|n^|5|at|There is deeper point, once we have the inkling that West could have both the @cKQ, we should have seen that East (with a 4th @c) may feel compelled to cover a low @c at trick 3.  
+Look at it from Easts point of view (assuming that East started with a 4th @c).|
+pg| ***** 49 ***** |
+
+
+tt|Y|
+rc|sQ9752, h54, c7532, hAj7, DkqjT8743|
+pg| ***** 50 ***** |
+
+
+rc|h3|
+md|0,,,c3|
+pg| ***** 51 ***** |
+
+
+ht|e|at|^g    @4@5^^^c@2|
+lg|n|
+
+ht|k|n^|5|at|On the lead of the @c6.   |
+pg| ***** 52 ***** |
+
+
+tt|N|
+pc|6c|
+pg| ***** 53 ***** |
+
+
+at|East holding a low 4th @c could reasonably fear that South might have the touching @c to the @C10 which is currently the  @c7  (the @c8 and @c9 were just played).  |
+pg| ***** 54 ***** |
+
+
+md|0c7|
+vp|---d,----,----,----|
+pg| ***** 55 ***** |
+
+
+at|And so could not risk you sneaking a trick with the hypothetical @c7 and must cover.|
+pg| ***** 56 ***** |
+
+
+pc|cQ|
+pg| ***** 57 ***** |
+
+
+vp||
+ht|e|at|^g    @4@5^^^c@2|
+lg|n|
+ht|k|n^|f|at|^^Back to the original hands |
+md|1sThAJ7dKQJT8743c8,sKQ9752h54c97532,s843hKT2d965cAJT6,sAJ6hQ9863dA2cKQ4|
+%
+bh|Play, West, sL, res, p24, T3-9, always|
+%
+sv|e|sk|s|sk||
+pg| ***** 58 ***** |
+
+
+at|and all the play.|
+mb|1D|mb|1S|mb|p|mb|2D!|an|@s support|mb|4D|mb|p|mb|5D|mb|d|mb|p|mb|p|mb|p|
+tc|y|
+pc|sK|pc|s3|pc|s6|pc|sT|
+pc|c9|pc|cA|pc|c4|pc|c8|
+pc|cJ|pc|cQ|pc|dK|pc|c2|
+pc|d8|pc|s2|pc|d9|pc|dA|
+pc|sA|pc|dQ|pc|s5|pc|s4|
+pc|d4|pc|s7|pc|d5|pc|d2|
+pc|cT|pc|cK|pc|dJ|pc|c3|
+pc|d3|pc|s9|pc|d6|pc|h3|
+pc|c6|pc|h6|pc|dT|pc|c5|
+pc|d7|pc|c7|pc|s8|pc|sJ|
+pg| ***** 59 ***** |
+
+
+qx|DDS,wide|
+ht|f|at|^d@4@5^^|
+ht|c|n#|1|at|^e^*bDDS^*n  ^g You are now free to explore the deal.|
+at|^^^^^c    @2If you still need help, ^*b  when in the deal, ^*n  click the ^*b DDS  { is Off/On ^*n }  button top right.|
+lg|f|at|^^The number (of tricks) in a |cp|green|at|^*b GREEN ^*n|cp||at| oval shows a good card to play for THAT side.|fp||
+bv|a,v|
+eb||
+pd|rem-res,When in the deal`cp`red`at` ^*b click ^*n`cp``at` the  { ^*b Rem ^*n }  button to remove all restrictions on  { ^*b 1st ^*n }   { ^*b Cont ^*n }  and  { ^*b Enter the Deal ^*n }|
+pf|rem-res|
+pg| ***** 60 ***** |
+
+
+------------------------------------------------------------------------
+qx||
+md|2|
+nt||
+ht|z|n#|7|at| @0^*b End ^*n|
+pg| ***** 61 ***** |
+
+

@@ -1,0 +1,54 @@
+%%
+%%
+
+%% Also see
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-09-01          set by human hand (if at all)
+%%
+
+%%
+ss|masthead,Books-S                Survival  -  Competitive Bidding  |
+%%
+cr|m090|cg|m200|cb|m070|   fill   m  m-mastColor       on Title Pages
+%%
+
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+
+
+bt||
+nt|^c@2^z@3^^|
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+
+ht|d|n#|9|
+at|^^^^^^^^^dYou are in  |fp|t|at|^h Books-S      >       Survival   -   Competitive Bidding |fp||at|
+
+^^^^
+
+also see 
+
+^d^*bmenubar ^*n      >      |fp|t|cp|gr|at| ^*bBooks-L^*n|cp||fp|t|at|      >       Lessons   -   Competitive Bidding  |fp||at|
+
+
+
+|ht|z|n#|b|at|^s^*bMM:^*n  Roger Pfister|
+
+qx|Intro|
+pg| ***** 0 ***** |
+
+

@@ -1,0 +1,768 @@
+%%
+%%
+
+ss|chapter,Chapter 10.4               Interference Revised   |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2015-05-30        set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=001___FP_masthead.ins
+%%
+ss|masthead,Oliver Clarke Precision                                 2018  |
+%%
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       Precision Blue
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor    that Gray
+%%
+<<--INSERT-END**-->>=001___FP_masthead.ins
+
+
+<<--INSERT-START-->>=002___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|f35|                    Font   f  f-fine
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  position adjustment USED BY 'GRAPHICS'
+%%
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=002___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=005___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+ht|z|n#|k|at|@0^*h https://www.youtube.com/channel/UCTGNUS8jbx85QOMUPlHoRMA, OCP Videos ^*n|
+%%
+<<--INSERT-END**-->>=005___FP_footer.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+Lg||
+ht|j|
+qx|10.4|
+fp|t-title|at|^d@2^z@3|
+at|
+^*gGS, Interference Revised ^*n |fp||at| (an Extract from the lesson)
+^^^^^^^^|
+fp|t-title|at|^*gOliv, Oliver's class on  Interference Revised   |fp||at|^*n  |fp||cp|red|at|<<< First time ?  Click here|fp||cp||at|
+^^^^^^
+^*gPrac,      Practice Hands  -   What would You Bid ? ^*n|
+pg| ***** 0 ***** |
+
+
+=====================================================================
+qx|GS,hide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Interference Revised|fp||at|^s(An Extract from the Lesson)^^^^|
+
+lg||n^|4|
+
+at|^^^^Where Asker is concerned, |fp|t|at|^*b Pre-emptive Interference ^*n|fp||at| is now ^*b defined as ^*n any sequence where...
+
+^d @2Responder has shown a POSITIVE
+^c^*band^*n
+^d @2Asker's RHO has  BID  (^*bnot ^*n X or XX) 
+^c^*band^*n
+^e@2Asker's RHO makes  ANY  bid at or above the 4 level
+^d ^*bor^*n
+EITHER opponent has ^*b jumped ^*n a level
+^d ^*bor^*n
+Opps demonstrate   ^*b Barrage Bidding^*n
+
+|n#|3|at|^g^*b Barrage Bidding^*n is ...|n#|2|lg|5|at|
+
+^i@2Opps have BID (^*bnot^*n X or XX) ^*b at least  3  times^*n
+^h^*b  &^*n  		   
+the most recent interference by ^*b Asker's RHO ^*n was at the ^*b 3  level^*n
+^h^*b  &^*n|n#|3|at| 
+^k@2We have ^*b NOT ^*n agreed a trump suit
+^j^*b  &^*n     ^u |fp|b|cp|bl|at|@.|cp||fp||at|
+the vulnerability is anything but   |cp|red|at|^*bRed ^*n|cp||at| v |cp|gr|at|^*b Green ^*n|cp||at|
+|n#|2|at|^i^*b   OR^*n|n#|5|at| 
+We HAVE agreed a trump suit
+^j^*b  &^*n     ^u |fp|b|cp|mu|at|@.|cp||fp||at|
+the vulnerability    ^*b IS ^*n ^q   |cp|gr|at|^*bGreen ^*n|cp||at| v |cp|red|at|^*b Red ^*n|cp||
+lg|c|n#|h|at|^c@2
+The |fp|b|cp|bl|at|@.|cp||fp||at| is when they do NOT have a minimal risk sacrifice. 
+The |fp|b|cp|mu|at|@.|cp||fp||at| is where we can possibly punish them more than we can score from a game.| 
+pg| ***** 1 ***** |
+
+
+ht|z|n#|5|at|
+^a ^*bend^*n|
+pg| ***** 2 ***** |
+
+
+-----------------------------------------------------------------------------------------------  
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,wide|
+nt|^z@3^b@2|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class               Interference Revised  ^*n^-^^|cs||fp||cp||at|^^|
+
+ht|f|n^|5|at|
+|cp||at|^*bMM:^*n|cp||at|  This class was given in  June 2018  during a later 12 month long cycle of OCP lessons.  
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Hi Everyone and welcome to today's Precision Club session, in which we'll be completing our look at what to do when opponents interfere during our Asking Bid Sequence.
+
+Over the last few weeks we've been looking at how we cope with opposition interference during our Asking Bid sequences.
+
+Over that same period, a discussion has been continuing in the OCP Forums on how we should define "pre-emptive interference"  ...or rather "re-define" it.   The existing definition dates back to the very first version of OCP (late 1970's and early 1980's) and hasn't change much until now.
+
+Those discussions are now complete and the OCP Asking Bid Interference has now been changed to reflect what I'm going to explain to you today.
+
+The ^*h http://ocp.pigpen.org.uk/AskingInterference.php, Asking Bid Interference ^*n page on the OCP site has been updated and as with the rest of the system is the ultimate reference for OCP.
+
+So what's this all about?   Up until now we've defined  '^*bpre-emptive interference^*n'  fairly simply (a jump by Opps to a level at or beyond 3NT).
+
+In a number of ways that simple definition has been shown to be inadequate and not to give sufficient scope to doubling interference by Opps for penalties.
+
+We also recognised that there were a number of tangential aspects to this whole question that weren't properly explained or, in some cases, defined at all in the OCP system notes.|
+pg| ***** 3 ***** |
+
+
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Up until Now|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Over the past three weeks, we have split Asking Bids into the following groups:
+
+   |cp|h-highlight|at|^*b[A.] ^*n|cp||fg|y|at|^e Intervention immediately over a  1@C  Opening^*n                      ^t |fg|n|at|  |cp|r|at|^*bChapter 10.1|cp||at|
+   
+   |cp|h-highlight|at|^*b[B.1]^*n|cp|dg|at|^e Intervention immediately over an ASK^*n        ^t   |cp|r|at|^*bChapter 10.1|cp||at|
+   |cp|h-highlight|at|^*b[B.2]^*n|cp||at|^c    &^*n  Pre-empt Interfer immediately over an ASK^*n	 
+	
+   |cp|h-highlight|at|^*b[C.1]^*n|cp|dg|at|^e Intervention over the RESPONSE to an Asking Bid             ^t   |cp|r|at|^*bChapter 10.2|cp||at|
+   |cp|h-highlight|at|^*b[C.2]^*n|cp||at|^c    &^*b  Pre-empt Interfer over the RESPONSE to an Asking Bid^*n
+	
+   |cp|h-highlight|at|^*b[D.1]^*n|cp||fg|y|at|^e Intervention over a POSITIVE Response to 1@C^*n  ^t   |fg|n|cp|r|at|^*bChapter 10.3|cp||at|
+   |cp|h-highlight|at|^*b[D.2]^*n|cp||at|^c    &^*b  Pre-empt Interfer over a POSITIVE Response to 1@C^*n   at the ^*b 4 ^*n level |cp||at|
+   |cp|h-highlight|at|^*b[D.3]^*n|cp||at|^c    &^*b  Pre-empt Interfer over a POSITIVE Response to 1@C^*n   at the ^*b 5 ^*n level |cp||at|
+^^
+|n#|3|cp|h-highlight|at|^*b[B.2]^*n|cp||at| above is completely unaffected by any of these changes, in that for |cp|h-highlight|at|^*b[B.2]^*n|cp||at|  "pre-emptive interference" is STILL defined as a jump by Opps (over an Ask) to a level at or beyond 3NT.
+
+D1P2 and R1P2 still always apply, as covered in that lesson  and as before ...
+
+The contracted scales ^*b ONLY ^* kick in when Opps  JUMP  over the Asking Bid to a level at or beyond 3NT.
+
+The only other thing worth mentioning at this point is to remind you (as Teller) that in the event of ^*b 4 LEVEL ^*n interference over your positive response to 1@c, if Asker uses Alpha (rather than Pass=Leb or Gamma) then the responses REDUCE to only 2 LEVELS.|lg|g|at|^c@2 
+1 step     denies    support
+2 steps ^*b SHOWS ^*n support  ^*b Hxx ^*n  or  ^*b xxxx ^*n   or  better                  so    ...  ^*bNO ^*n CONTROL showing ...|
+pg| ***** 4 ***** |
+
+
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|What is affected|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   So the sections in bold below show the affected sections. 
+
+   |cp|h-highlight|at|^*b[C.1]^*n|cp|dg|at|^e Intervention over the RESPONSE to an Asking Bid             ^t   |cp|r|at|^*bChapter 10.2|cp||at|
+   |cp|h-highlight|at|^*b[C.2]^*n|cp||at|^c    &^*b  Pre-empt Interfer over the RESPONSE to an Asking Bid^*n
+	
+   |cp|h-highlight|at|^*b[D.1]^*n|cp||fg|y|at|^e Intervention over a POSITIVE Response to 1@C^*n  ^t   |fg|n|cp|r|at|^*bChapter 10.3|cp||at|
+   |cp|h-highlight|at|^*b[D.2]^*n|cp||at|^c    &^*b  Pre-empt Interfer over a POSITIVE Response to 1@C^*n   at the ^*b 4 ^*n level |cp||at|
+   |cp|h-highlight|at|^*b[D.3]^*n|cp||at|^c    &^*b  Pre-empt Interfer over a POSITIVE Response to 1@C^*n   at the ^*b 5 ^*n level |cp||at|
+|n^|5|at|
+^^^^|fp|t-title|at|Point and Purpose|fp||at|
+     
+^*bMM: ^*n  One thing that is easy to miss out on is the point and purpose of the (quite complex) descriptions that follow.
+
+The core idea is that in some circumstances we want to have a mechanism to BOTH switch on the use of the compressed tables and to be able to ^*b DOUBLE ^*n the Opps for ^*B PENALTIES^*n.  To do the latter we need to remove a bid from the set of meanings covered in the previous 3 chapters.
+
+The actual method is to define situations in which the meaning of a ^*b PASS ^*n (by Asker)  is changed so that it instructs Responder to ^*b DOUBLE ^*n so Asker can then either PASS (for penalties) or bid on.
+
+Oliver chooses to call this    ^*b" PASS ^*n which forces a ^*b DOUBLE "^*n  |fp|t|cp|red|at|^*b Lebensohl^*n|cp||fp||at|.  To me using this name for what is really just a "forcing relay" causes confusion (with real Lebensohl), but I guess we have to live with it.
+
+Others have suggested  'Oliversohl'  and you will see  'Pass=Lebensohl'  on the OCP webiste.  but best of all (IMO) is just to think:
+ ^f^*b PASS  forces  DOUBLE^*n
+^^The question now becomes   when does     PASS  forces  DOUBLE      apply ?|   
+pg| ***** 5 ***** |
+
+
+   
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Interference over the response to a previous Ask|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Now we get onto the meat of this lesson, which is how the changes affect ASKER.
+|n#|7|at| 
+Where Asker is concerned, |fp|t|at|^*b Pre-emptive Interference ^*n|fp||at| is now ^*b defined as ^*n any sequence where...
+
+^d @2Responder has shown a POSITIVE
+^c^*band^*n
+^d @2Asker's RHO has  BID  (^*bnot ^*n X or XX) 
+^c^*band^*n
+^e@2Asker's RHO makes  ANY  bid at or above the 4 level
+^d ^*bor^*n
+EITHER opponent has ^*b jumped ^*n a level
+^d ^*bor^*n
+Opps demonstrate   ^*b Barrage Bidding^*n
+
+|n#|3|at|^g^*b Barrage Bidding^*n is ...|n#|2|lg|5|at|
+
+^i@2Opps have BID (^*bnot^*n X or XX) ^*b at least  3  times^*n
+^h^*b  &^*n  		   
+the most recent interference by ^*b Asker's RHO ^*n was at the ^*b 3  level^*n
+^h^*b  &^*n|n#|3|at| 
+^k@2We have ^*b NOT ^*n agreed a trump suit
+^j^*b  &^*n     ^u |fp|b|cp|bl|at|@.|cp||fp||at|
+the vulnerability is anything but   |cp|red|at|^*bRed ^*n|cp||at| v |cp|gr|at|^*b Green ^*n|cp||at|
+|n#|2|at|^i^*b   OR^*n|n#|5|at| 
+We HAVE agreed a trump suit
+^j^*b  &^*n     ^u |fp|b|cp|mu|at|@.|cp||fp||at|
+the vulnerability    ^*b IS ^*n ^q   |cp|gr|at|^*bGreen ^*n|cp||at| v |cp|red|at|^*b Red ^*n|cp||
+lg|c|n#|h|at|^c@2
+The |fp|b|cp|bl|at|@.|cp||fp||at| is when they do NOT have a minimal risk sacrifice. 
+The |fp|b|cp|mu|at|@.|cp||fp||at| is where we can possibly punish them more than we can score from a game.| 
+pg| ***** 6 ***** |
+
+
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Interference over the response to a previous Ask|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Let's see some examples: 
+|lg|c|at|^^
+1@c  -  (p)  -  1@h  -  (3@c)  -  ?     ^j@2Asker's RHO has bid   and  one of the Opps has jumped.
+^*bPass^*n      is 'Lebensohl'.     
+^*bDouble^*n  is Gamma in @h's. 
+
+^b1@c  -  (2@c)  -  2@h  -  (3@c)  -  ?  ^jNeither Opponent has jumped  and  there has been NO Barrage Bidding (only 2 bids by Opps) therefore it is NOT pre-emptive interference.
+^*bDouble^*n  is Alpha in @s's 
+^*bPass^*n      is Gamma in @h's.      
+
+^b1@c  -  (2@s)  -  3@h  -  (3@s)  -  ?  ^jAsker's RHO has bid  and  Asker's LHO has jumped.
+^*bDouble^*n  is Gamma in @h's.
+^*bPass^*n      is 'Lebensohl'
+
+^b1@c  -  (2@s)  -  X(Pos)  -  (XX)  -  ? ^jAsker's LHO has jumped  but  Asker's RHO has NOT bid (XX is not a bid)
+^*nDouble^*n   is ....  there is NO double here.   :)
+^*bPass^*n      is Gamma in @h's 
+
+^b1@c   ^d-   (1@h)   -  1@s  -  (2@c) 
+^bp(Gamma)  -  (p)   -   2@d  -  (2@h)  -  ? ^j^jAsker's RHO has bid  and  Opps HAVE bid 3 times, but it is NOT  "Barrage Bidding", because the most recent interference was only at the 2 level.
+^*bDouble^*n  is Epsilon in @d's 
+^*bPass^*n      is Epsilon in @c's | 
+pg| ***** 7 ***** |
+
+
+nt|^z  @3^b@2|at|^^^^|
+fp|t-title|at|Interference over the response to a previous Ask|fp||at|   (continued)^^
+|lg|c|at|
+^b1@c  -  (2@c)  -  2@s  -   (p)
+^b3@s  -   (p)    -  4@d  -  (4@h) - ?	^j@2Asker's RHO has bid at the 4 level because the bid in front of Asker was at the 4-level so
+^*bDouble^*n  is  Relay Beta.
+^*bPass^*n      is  'Lebensohl'
+
+^b1@c    ^d  -  (1@h)  -  1@s  -  (2@h)
+^b^*bp^*n(Gamma)  -  (p)   -  3@c  -  (3@h)  -  ? ^jOpps HAVE bid 3 times  and  Asker's RHO has bid at the 3 level,  so ^*b IF ^*n we are at  Favourable Vulnerability  then this is ^*b Barrage Bidding ^*n and
+^*bDouble^*n  is  Relay Beta
+^*bPass^*n      is  'Lebensohl'
+
+
+^b1@c  -  (2@s)  -  X(Pos)  -  (XX)  -  ?   ^jAsker's LHO has jumped  but  Asker's RHO has NOT bid (XX is not a bid)
+^q so  this is NOT pre-emptive interference
+^*nDouble^*n   is ....  there is NO double here.   :)
+^*bPass^*n      Alpha in @h's
+
+
+|at|^z@3|at|^b@2
+|cp|red|at|^*bOliverC:^*n|cp||at|   Any questions on the new definition of pre-emptive interference where Asker is concerned? 
+
+ok moving on|   
+pg| ***** 8 ***** |
+
+
+qx|d1p2|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Two changes to ^*b D1P2 ^*n and ^*b R1P2 ^*n backwards asking|fp||at|         One^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   There are two NEW exceptions to when D1P2 and R1P2 backwards asking when NOT in any normal pre-emptive situation such as those just covered.
+|lg|c|at|
+The first of these is  -  any time (over pre-emptive interference OR otherwise) when 
+|n#|5|at|^cAsker's RHO makes a 
+^f@2lead-directing ^*bDouble^*n  of a
+^*nresponse to a previous Asking bid ^*n that is 
+in a side-suit which has 
+NOT been the subject of an Epsilon Ask.
+
+^d@2In these circumstances ^*b R1P2 ^*n effectively becomes ^*b R0P1 ^*n in that 
+Re^*b-Double^*n  is an Epsilon Ask in the suit RHO has just ^*bDoubled^*n (rather than the suit below that).
+^*bPass ^*n        also moves up one step  hence   R0P1
+|n#|7|at|
+^bExample
+|lg|g|at|
+^c@21@c     ^f-    1@h
+1NT(Beta)   ^f-    2@d
+2@h(Gamma)  ^f-    3@h 
+4@d(Epsilon)^f-    5@c(2nd & 3rd)
+^b(X) - ??? ^j@2Re^*b-Double^*n     is Epsilon in @c's (rather than @s's)
+^*bPass^*n               is Epsilon in @s's.|   
+pg| ***** 9 ***** |
+
+
+   
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Two changes to ^*b D1P2 ^*n and ^*b R1P2 ^*n backwards asking|fp||at|         Two^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   The second exception is normally going to be immediately over a positive response to 1@c when Asker's RHO makes any kind of ARTIFICIAL overcall where they don't PROMISE the suit they've actually BID.
+
+Now, once again, D1P2 effectively becomes D0P1 in that 
+^i@2^*bDouble^*n   is now ^*b Alpha ^*n in the suit Asker's RHO actually BID
+^*bPass^*n       remains Gamma/Beta depending on the nature of the positive
+^e@2
+This, therefore, will routinely apply to overcalls such as Panama, Amsbury, and standard Suction, for example, but might also apply in other situations.
+|lg|D|at|
+^bExamples
+
+^b1@c  -  (p)  -  1@h  -  (2@c = @d or @h+@s)   -  ?    ^l@2^*bDouble^*n  is  Alpha in @c
+^*bPass^*n      is  Gamma in @h
+
+^b1@c  -  (p)  -  1@s  -  (2@d = @d or @c+@h+@s)  -  ?   ^l^*bDouble^*n  is  Alpha in @d
+^*bPass^*n      is  Beta
+
+
+^bBut don't forget: 
+
+^b1 @c  -  1NT  -  (3@h = @h's  or  @h+@s)  -  ? ^lThis is now  "pre-emptive", and as Asker's RHO definitely has @H's
+^*bDouble^*n  is Gamma in @s's, 
+^*bPass^*n      is 'Lebensohl'|   
+pg| ***** 10 ***** |
+
+
+   
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Order of Preference|fp||at|         ^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|   Next up is Order of Preference: 
+
+^c@.   @2If the interference on Asker's right is considered "pre-emptive", then 
+^*bPass^*n='Lebensohl'  takes precedence over anything else.
+
+^c@.   @2Just as  ^*bPass^*n='Lebensohl'  takes precedence over anything else, Sigma likewise takes precedence over Relay Beta or any other Ask if there is interference over the Positive response to Alpha and Sigma would be a Relay rather than a bid in the trump suit.
+
+^c@.   @2Lastly whether or not  ^*bPass^*n='Lebensohl'  or Sigma are "in play", Relay Beta takes precedence over any other Ask if IT is in play.
+
+.
+^b@2So take the following sequence: |lg|h|at|^c@2
+  1@c       -        1@h
+  1@s(alpha)  -  2@d(0-3,+sup)
+^b(4@c)  -  ?? ^j@2^*bPass^*n      is 'Lebensohl'.        As @s is NOT within 2 bids ...
+^*bDouble ^*n is Sigma,        
+Relay Beta  is "bumped" to 4@d.
+
+
+^b...which nicely brings us onto the question of Sigma at Game Level.|   
+pg| ***** 11 ***** |
+
+
+   
+nt|^z   @3^b@2|at|^^^^|
+fp|t-title|at|Sigma at Game Level|fp||at|         ^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|...which nicely brings us onto the question of Sigma at Game Level: 
+|lg|d|at|
+We have had a POSITIVE response to an Alpha Ask 
+
+It is possible but very rare, for Sigma to be at Game Level WITHOUT interference from Opps, when it is, (so we can distinguish between Sigma and a Sign-Off). ^m ^*b Sigma ^*n is - the next bid up.
+
+If there is NO interference then the normal rules apply
+|n^|9|at|
+^cOver a  3 or 4 step  positive (below game level), ^m ^*b Sigma ^*n is - an immediate repeat of the agreed trump suit.
+^cOver a  5+ step positive response  ^m ^*b Sigma ^*n is - a the next bid up.
+
+If there  is   NON Pre-emptive  ^*b Interference^*n  
+^cif game of the agreed trump suit is within 2 bids,  ^m ^*b Sigma ^*n is - the next ^*b step ^*n up and  ^*bRelay beta ^*n is above that.
+^cif the agreed trump suit is within 2 bids,  ^m ^*b Sigma ^*n is - an immediate repeat of the agreed trump suit.
+^cotherwise                                   ^m ^*b Sigma ^*n is - the next ^*b step ^*n up and  ^*bRelay beta ^*n is above that.
+|n#|7|at|
+|fp|t-title|at|Precedence|fp||at|   (again)
+|n^|5|at|
+If there  is  |fp|t-title|at|^*b Pre-emptive    Interference^*n|fp||at||fp||at|
+^c@2UNLESS the agreed suit is within 2 bids
+AND  below game level then Sigma takes
+precedence over  'Lebensohl'  as shown ^m  Double     = ^*b Sigma ^*n  (highest precedence)
+^m  Pass        =  'Lebensohl'
+^m  Cheapest =  Relay Beta |   
+pg| ***** 12 ***** |
+
+
+   
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Interference over a Positive Double|fp||at|         ^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Positive Doubles NOW kick in at 2@h, but it is still up to each partnership to decide their own level.
+
+In practice that still means that Positive Doubles only come into play when there has been a jump-bid by Opps over the 1@c Opening.
+
+If, therefore, Asker's RHO BIDS anything over the Positive Double, we have automatically satisfied the new definition of Pre-emptive Interference (because one Opp has jumped and Asker's RHO has bid something).
+
+The criteria for using a Positive Double, however, has NOT changed.
+
+It remains a hand worth a positive response, but with no "good bid".
+
+This will often mean a relatively balanced hand but with an insufficiently good holding in Opps suit to make a balanced positive.
+
+That doesn't have to be the case, however.  Sometimes a Positive Double will be preferred to a positive in a poorish suit, especially if it would be a relatively expensive bid.
+
+Since the new criteria for "Pre-emptive Interference" has been satisfied, a 
+^c^*bDouble ^*n    by Opener  ^his ^*b  Beta ^*n        ^k     (in recognition of the fact that Responder is most often balanced)
+^c@2^*bPass                 " ^*n ^his ^*b 'Lebensohl' ^*n 
+
+^bAn alternative approach has been suggested, which is that a 
+^*bPositive Double ^*n    is treated as PENALTY-orientated, especially at favourable vulnerability.
+Opener simply passes if they feel the situation is right, given their hand.
+If, however, Opener doesn't fancy converting the Positive Double into a Penalty, they simply continue, as now.
+|n^|5|at|
+The website doesn't currently have continuations if Opener's RHO bids over such a penalty-orientated double, but I will update it as things are confirmed.|   
+pg| ***** 13 ***** |
+
+
+   
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Repeat Trump Asks|fp||at| ^^^^|
+lg|m|
+cp|red|at|^*bOliverC:^*n|cp||at|  Repeat Trump Asks are not normally available at game level unless slam values have been established or Teller decides their hand is worth treating them as a repeat trump ask, because they're indistinguishable from a sign-off.
+
+In the event of interference in front of Asker, however, we can "count backwards" to a repeat ask in the trump suit, and the rule is that we DO include the trump suit in backwards asking.
+
+When there is ^*b pre-emptive interference ^*n in front of Asker at game level, it is very easy to distinguish between a repeat trump ask and a sign-off, however, as the sign-off will always go via 
+
+^cthe         ^*bPass^*n='Lebensohl'          sequence
+
+this means that     ^*b backwards asking will always ignore the trump suit^*n.|
+pg| ***** 14 ***** |
+
+
+qx|Prac,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Practice / Demo  Hands|fp||at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|
+
+We have very little time left tonight so I will just bid a couple of hands for you as a demo.|
+pg| ***** 15 ***** |
+
+
+------------------------------------------------------------------------------------------------  
+%% Alert Insert start --------------------------------------------------------------------------
+nt|^z@3^b@2|
+at|^^^^|
+%%   header box with text
+ht|b|cs|y|fp||at|^b{ ^^|
+ht|c|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^|fp|x-insertAlert|at|^- A small insert on Alerts^*n^-^^|cs||fp||cp||at|^^|
+
+ht|d|at|^^|
+cp||at|^*bMM:^*n|cp||at|  We all know we have to alert when playing  'proper'  bridge.
+
+The laws of the game say that what we have to put in the alert is  ^*b our agreement with partner ^*n about that bid.
+
+While creating these bridge movies, I have gone through and added to, or amended, many of the alerts that were in the original text.
+
+I have changed them from being ^*b REAL ^*n alerts, that you should give to real opponents, and have replaced them with ^*b STUDY ^*n alerts.   Study alerts are only useful to students of Oliver's Precision.  Of course in many cases no changes were needed.   For example    1@c     16+ Any dist except 16-23 4441
+
+It is particularly important that we make the alerts for  ^*b Asking bids and their responses^*n,  as clear as possible
+
+	    ^c ^*b Study Alert ^*n           ^i ^*b Real Alert ^*n                ^o ^*b It would be great if you could add ^*n
+     ^b      @-@-@-@-@-@-@-@-@-@- ^h       @-@-@-@-@-@-@-@-@-@-   ^n       @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-
+		^c Beta    Relay Beta ...          ^i Gen Ctrl Ask                    ^o A = 2,  K = 1 
+		^c Alpha                           ^i Asking  in                      ^o Trump ...
+		^c Gamma                           ^i Asking  in partners suit        ^o Trump ...
+		^c Epsilon                         ^i Specific Ctrl Ask               ^o in ... 
+		^c Hxx                             ^i Hxx                             ^o in ... 
+		^c none  or  1st & 2nd             ^i none  or  1st & 2nd             ^o [xxx, AKx(x)]
+		^c 3rd rd ctrl                     ^i 3rd rd ctrl                     ^o [xx, Qxx(x), Qx]
+		
+An easy mistake in reply to an Epsilon is when, say, you hold ^*b Q76 ^*n in the suit, and so give only ^*b Qxx ^*n in the alert.   THAT  IS  WRONG.  The agreement is ^*b 3rd round control ^*n and that is what should be told to the opps.   
+
+The ^*b ethical ^*n problem with telling too much to your opps is that it disadvantages the other pairs who will play your opponents cards.|
+%% Alert Insert End ----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------  
+pg| ***** 16 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 1,wide|
+st||
+pn|South, West, North, East|rh||ah|Practice 1|sv|n|sk|n|sk||
+%% 3S9852HKJT752DA5C9,SAT64H8D862CJT872,HAQ94DKQJ743CAQ6,SKQJ73H63DT9CK543
+md|3S9852HKJT752DA5C9,,HAQ94DKQJ743CAQ6,|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 1 |
+pg| ***** 17 ***** |
+
+
+mb|1C|
+pg| ***** 18 ***** |
+
+
+sj|L|
+mb|1S|
+pg| ***** 19 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 20 ***** |
+
+
+mb|2H|
+pg| ***** 21 ***** |
+
+
+sj|L|
+mb|3S|
+pg| ***** 22 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 23 ***** |
+
+
+at|  Asker's RHO has bid  and  Asker's LHO has jumped  so  pre-emptive interference rules apply.|
+mb|d|an|Gamma in @H|
+pg| ***** 24 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 25 ***** |
+
+
+mb|4H|an|@H Hxxxxx|
+pg| ***** 26 ***** |
+
+
+sj|L|
+mb|4S|
+pg| ***** 27 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 28 ***** |
+
+
+at|^^^^ Asker's RHO has bid  at the 4 level  so  again  pre-emptive interference rules apply.|
+mb|d|an|Relay Beta|
+pg| ***** 29 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 30 ***** |
+
+
+mb|5C|an|3 ctrls|
+pg| ***** 31 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 32 ***** |
+
+
+mb|5D|an|Epsilon|
+pg| ***** 33 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 34 ***** |
+
+
+mb|6H|an|1+3|
+pg| ***** 35 ***** |
+
+
+sj|c|
+mb|p|
+mb|?|
+pg| ***** 36 ***** |
+
+
+mb|7H|
+pg| ***** 37 ***** |
+
+
+sj|L|
+mb|p|mb|p|mb|p|
+pg| ***** 38 ***** |
+
+
+pf|Y|
+md|0S9852HKJT752DA5C9,SAT64H8D862CJT872,HAQ94DKQJ743CAQ6,SKQJ73H63DT9CK543|
+mb|p|
+pc|s7|
+pg| ***** 39 ***** |
+
+
+md|1,,,|
+nt|^z@3^b@2|at|^^|
+at|  cleared|
+pg| ***** 40 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2,wide|
+st||
+pn|South, West, North, East|rh||ah|Practice 2|sv|e|sk|e|sk||
+%% 4SQT3H52D92CKQJ832,SK2H43DAJT863CT95,SJ9754HJT86D54C74,SA86HAKQ97DKQ7CA6
+md|4,SK2H43DAJT863CT95,,SA86HAKQ97DKQ7CA6|
+mb|?|
+nt|^z@3^b@2|at|^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2 |
+pg| ***** 41 ***** |
+
+
+mb|1C|
+pg| ***** 42 ***** |
+
+
+sj|L|
+mb|2C|
+pg| ***** 43 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 44 ***** |
+
+
+mb|2D|
+pg| ***** 45 ***** |
+
+
+sj|L|
+mb|2S|
+pg| ***** 46 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 47 ***** |
+
+
+lg|c|
+at|   No pre-emptive interference so  normal interference rules apply so    ^*bPass^*n=Gamma (in @d's)|
+mb|p|an|Gamma in !D|
+pg| ***** 48 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 49 ***** |
+
+
+sj|L|
+mb|?|
+pg| ***** 50 ***** |
+
+
+at|^^^c@2Standard     4 step response  (of course, an extra first step is ^*bDouble^*n).|
+mb|3D|an|!D Hxxxxx|
+pg| ***** 51 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 52 ***** |
+
+
+sj|L|
+at|^^Standard     Suit above is  ^*bRelay Beta^*n.|
+mb|3H|an|Relay Beta|
+pg| ***** 53 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 54 ***** |
+
+
+sj|L|
+mb|3N|an|3 ctrls|
+pg| ***** 55 ***** |
+
+
+sj|L|
+mb|4C|
+pg| ***** 56 ***** |
+
+
+at|^^As Asker's RHO has just bid at the 4 level we have   Pre-emptive interference  - so 
+^h  ^*bPass^*n='Lebensohl'     and     ^*bDouble^*n becomes an ask in the suit below (ie: @s's).|
+sj|L|
+mb|d|an|Eps in !S|
+pg| ***** 57 ***** |
+
+
+sj|L|
+mb|r|
+pg| ***** 58 ***** |
+
+
+sj|L|
+mb|4S|an|2+3|
+pg| ***** 59 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 60 ***** |
+
+
+sj|L|
+mb|7D|mb|p|mb|p|mb|p|
+pg| ***** 61 ***** |
+
+
+pf|Y|
+md|0SQT3H52D92CKQJ832,SK2H43DAJT863CT95,SJ9754HJT86D54C74,SA86HAKQ97DKQ7CA6|
+mb|p|
+pc|s7|
+pg| ***** 62 ***** |
+
+
+qx|end|
+md|1,,,|
+nt|^z@3^b@2^^|cp|red|at|^*bOliverC:^*n|cp||at|    Night All|
+ht|z|n#|7|at|^a^*b  End ^*n|
+pg| ***** 63 ***** |
+
+

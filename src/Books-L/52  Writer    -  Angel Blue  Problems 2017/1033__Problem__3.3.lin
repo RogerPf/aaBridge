@@ -1,0 +1,280 @@
+
+%%
+
+ss|chapter,Declarer  Play                            Problem  3.3 |
+
+ss|movie-maker,GG_Bridge|
+
+%%
+%%  Date last Edited    2017-11-29          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead_2017.ins
+%%
+ss|masthead,Angel Blue                                                      2017 |
+%%
+cr|m225|cg|m125|cb|m045|   fill   m  m-mastColor       dull orange
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    std
+%%
+<<--INSERT-END**-->>=01___FP_masthead_2017.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=03___FP_gen_arik_intro.ins
+%%
+Lg|f|n^|6|
+fp|4|at|^c@2^z@3|
+at|Arik, BBO ID 'Angel Blue', runs a weekly card play tournament and lesson in the  ^*h http://iac.pigpen.org.uk/,IAC^*n  club on  ^*h http://bridgebaseonline.com/,BBO^*n.  The focus is on  difficult to play  hands.  He has kindly allowed his problems to appear here in aaBridge lin file format.
+|n^|9|at|
+Do visit Angel Blue's bridge web site at ^*h http://angelblue.co.il/^*n|
+%%
+<<--INSERT-END**-->>=03___FP_gen_arik_intro.ins
+
+
+<<--INSERT-START-->>=03___FP_general_2017.ins
+%%
+ht|n|n#|0|at|@1^z  @3^b   {^^^^^^^^^^^^^^ ^z } |
+at|^c@2^z@3^^|
+%%
+ht|n|n^|7|at|^^In every deal you will be given an opportunity to play the hand against the aaBridge 'bots'.
+You do this by by clicking the  button labeled  { ^*b 1st ^*n }   which will then be visible.
+|n^|7|at|
+Once you have played the hand you can ^*b and should^*n, return to the tutorial via the ^*b Return to Movie ^*n button 
+and ^*b READ the comments on the hand^*n, these are nearly always supplied by Arik.
+|n^|7|at|
+To read more on the 'in deal' features click  |fp|b|at|@z|fp||at|  icon, then in the left hand column on ^*b  '^*bDouble Dummy etc^*n'.   You can later return back here  by clicking the   |fp|t|at|@L|fp||at|   left pointing arrow a couple of times.| 
+%%
+<<--INSERT-END**-->>=03___FP_general_2017.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|a|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|5|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|c|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+qx|3.3|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+bv|a,h|
+rh||ah|Problem 3.3|
+md|1sAKQ752h3dQ6cA762,s9hQ765dT842cQJT8,s64hAT42dAKJ953c5,sJT83hKJ98d7cK943|
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bProblem 3.3^*n     The hand,      the bidding,|
+mb|1S|mb|p|mb|2D|mb|p|mb|2S|mb|p|mb|3H|mb|p|mb|3S|mb|p|mb|4N|mb|p|mb|5D|mb|p|mb|5H|mb|p|mb|6S|mb|p|mb|p|mb|p|
+pg| ***** 1 ***** |
+
+
+at|      the lead,|
+pc|cQ|
+pg| ***** 2 ***** |
+
+
+qx|Thnk,wide|
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 3 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Try,wide|
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+at|^^|cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the answer.|
+pf|first-button|
+pg| ***** 4 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Ans,wide|
+sk||
+bv|e,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|f|
+at|^b^*bAns^*n
+One of the primary reasons to choose a trump suit is that you can prevent the defenders from cashing winners in another suit.  Perhaps your immediate reaction when you see dummy is that you have missed an easy grand slam.  Such thoughts, though, are only likely to distract you from the task in this hand, making twelve tricks.  |
+pg| ***** 5 ***** |
+
+
+qx|0,wide|
+nt|^z@3^c@2^^|n^|5|
+Lg|f|
+at|^bLine - 0  FAIL
+With all of those diamond winners in dummy, you have plenty of tricks, so it seems clear that you should start drawing trumps immediately. But it soon becomes clear that your unfavorable trump split will take you down with that line of play.|
+pg| ***** 6 ***** |
+
+
+%%_aapg-NEAR
+pc|c5|pc|c9|pc|cA|pg||
+pc|sA|pg||
+%%_aapg-STD
+
+
+---------------------------------------------------------------------------
+bv|c,v|
+at|^^^^^b^*bMM:^*n  You can use  { ^*b Cont ^*n }  and turn ON the DDS to verify that the contract is now down. |  
+pg| ***** 9 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^c@2^^|n^|5|
+bv|c,h|
+Lg|f|
+at|^b^*bWinding Back^*n        to the Opening Lead|
+jp|1|
+pg| ***** 10 ***** |
+
+
+---------------------------------------------------------------------------
+qx|1,wide|
+nt|^z@3^c@2^^|n^|5|
+Lg|b|
+at|^bLine - 1  FAIL
+A slightly better option is to ruff a club, cross back to hand with the Queen of diamonds and ruff a second club.  You can then re-enter your hand with a heart ruff and cash the three top trumps.|  
+pg| ***** 11 ***** |
+
+
+%%_aapg-NEAR
+pc|c5|pc|c9|pc|cA|pg||
+pc|c2|pc|c8|pc|s4|pc|c3|pg||
+pc|d3|pc|d7|pc|dQ|pc|d2|pg||
+pc|c6|pc|cT|pc|s6|pc|c4|pg||
+pc|hA|pc|h8|pc|h3|pc|h5|pg||
+pc|h2|pc|h9|pc|s2|pc|h6|pg||
+%%_aapg-STD
+
+n^|5|at|^^^^If either defender started with four trumps and a singleton diamond, though, this line will also fail.  A rule of thumb: When a contract looks easy, you should always take a moment to ask yourself “What could go wrong?”|
+pg| ***** 18 ***** |
+
+
+bv|c,v|
+pf|cont-button|
+pg| ***** 19 ***** |
+
+
+----------------------------------------------------------------------------
+nt|^z@3^c@2^^|n^|5|
+Lg|b|
+at|^bLine - 1  FAIL 
+If you start by cashing two high trumps and either opponent shows out, you will almost certainly go down.  Your primary objective should be to safeguard your contract against the not insignificant chance that the trumps will break 4-1, which is supposed to happen one third of the time.  Since you will have to give up a trick in the suit if a defender holds four trumps, you should make sure you do so when it is safe.  That means when there is still a trump in dummy to deal with a club continuation.|
+pf|cont-button|
+pg| ***** 20 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^c@2^^|n^|5|
+bv|c,h|
+Lg|f|
+at|^b^*bWinding Back^*n        to the Opening Lead|
+jp|1|
+pg| ***** 21 ***** |
+
+
+---------------------------------------------------------------------------
+
+qx|2,wide|
+nt|^z@3^c@2^^|n^|5|
+Lg|b|
+at|^bLine 2  -  SUCCESS
+The best option is to lead a low trump from your hand at trick two.  Sure, two-thirds of the time you are giving up an overtrick, but this is a small investment to pay for virtually ensuring the success of a slam contract.
+^^This line of play fails only against some 5-0 trump breaks that would likely also defeat other lines too.   |
+pg| ***** 22 ***** |
+
+
+---------------------------------------------------------------------------
+%%_aapg-NEAR
+pc|c5|pc|c9|pc|cA|pg||
+pc|s2|pc|s9|pc|s4|pc|s3|pg||
+pc|d8|pc|d3|pc|d7|pc|dQ|pg||
+pc|sA|pc|d2|pc|s6|pc|s8|pg||
+pc|sK|pc|d4|pc|h2|pc|sT|pg||
+pc|sQ|pc|h5|pc|h4|pc|sJ|pg||
+
+%%_aapg-STD
+
+
+---------------------------------------------------------------------------
+qx|Done,wide|
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+at|^*bDone^*n
+^^^c We are done with this problem.  However, if you wish ...|
+mx|x|
+eb|y___|
+bv|c,v|
+pf|cont-button|
+pg| ***** 29 ***** |
+
+
+---------------------------------------------------------------------------
+qx|DDS,wide|
+eb||
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+bv|a,v|
+at|^*bDDS^*n    ^eYou are now free to explore the deal.
+|n^|7|lg|k|at|^^^c@2If you still need help then, when in the deal, click the ^*b DDS  { is Off/On ^*n }  button top right.
+|fp|s|at|A number (of tricks) in a GREEN oval shows a good to play for THAT side.|fp||
+pf|all-res-lifted|
+pg| ***** 30 ***** |
+
+

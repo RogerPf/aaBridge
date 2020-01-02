@@ -1,0 +1,488 @@
+%%
+%%
+
+ss|chapter,Declarer  Play                 Problems  Week  16 |
+
+ss|movie-maker,GG_Bridge|
+
+%%
+%%  Date last Edited    2018-02-29          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead_2018.ins
+%%
+ss|masthead,Angel Blue                                                     2018 |
+%%
+cr|m205|cg|m125|cb|m205|   fill   m  m-mastColor       dull bluey pink
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    std
+%%
+<<--INSERT-END**-->>=01___FP_masthead_2018.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=03___FP_gen_arik_intro.ins
+%%
+Lg|f|n^|6|
+fp|4|at|^c@2^z@3|
+at|Arik, BBO ID 'Angel Blue', runs a weekly card play tournament and lesson in the  ^*h http://iac.pigpen.org.uk/,IAC^*n  club on  ^*h http://bridgebaseonline.com/,BBO^*n.  The focus is on  difficult to play  hands.  He has kindly allowed his problems to appear here in aaBridge lin file format.
+|n^|9|at|
+Do visit Angel Blue's bridge web site at ^*h http://angelblue.co.il/^*n|
+%%
+<<--INSERT-END**-->>=03___FP_gen_arik_intro.ins
+
+
+<<--INSERT-START-->>=03___FP_general_2018.ins
+%%
+ht|n|n^|0|at|@1^z  @3^b   {^^^^^^^^^^^^^^ ^z } |
+at|^c@2^z@3^^|
+%%
+ht|n|n#|7|at|All the hands for each lesson are given in a single .lin file.   Each deal has a summary and a few have a link to the full answer text on Angel Blue's website.  Before consulting it we suggest that:-|
+n#|7|at|^^^*bIF^*n after clicking  { ^*b 1st ^*n }  you cannot work out how to play the hand THEN click on the ^*b DDS  { is Off/On ^*n }  button.   This will show little green 'trick total' numbers by each of your cards.   Click on, and so play, any card that is marked with a light green oval.   This will show you the best lines of play.|
+n#|5|at|^^Your task is to solve the hand and if possible to categorize it as to being a  throw-in, squeeze or whatever.|
+%%
+%%
+ss|play-it-out,at`^^^d`cp`red`at`^*bNow `cp``at`  click  { ^*b 1st ^*n }  `cp`red`at`^*band play out the hand.^*n`cp``at`     ^*b Flow ^*n  will show the hands and end the problem.^^^^^n If you get stuck  -  use the ^*b DDS  {  is Off/On ^*n }  button.`|
+%%
+<<--INSERT-END**-->>=03___FP_general_2018.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|a|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|5|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|c|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+qx|16|
+pg| ***** 0 ***** |
+
+
+st||
+---------------------------------------------------------------------------
+qx|1,wide|
+bv|a,h|
+ha|n|
+rh||ah|Problem 16.1|
+md|2sK8hQT9764dTcT862,sAJ652h852dQ9cJ95,s74hAKJ3dKJ3cAK73,sQT93hdA876542cQ4|
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 16.1^*n     The hand,|
+pg| ***** 1 ***** |
+
+
+at|      the bidding,|
+%%_aapg-NEAR
+mb|p|mb|1C|pg||
+mb|1D|pg||
+mb|1H|pg||
+mb|p|mb|3H|pg||
+mb|p|mb|4H|pg||
+mb|p|mb|p|mb|p|
+%%_aapg-STD
+pg| ***** 7 ***** |
+
+
+at|      the lead,|
+pc|dQ|
+pg| ***** 8 ***** |
+
+
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 9 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 10 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n  
+^^A spade lead from RHO through your @sK8 is likely to mean you have 4 losers   2@s 0@h 1@d 1@c   Taking RHO for the @dA  do you cover ?   Notice that if you duck and RHO overtakes LHO's @dQ with the Ace he is giving you 2 @d tricks the @dKJ on which you can park the @c loser so she needs to hold off, so you make.|
+pf|all-res-lifted|
+pg| ***** 11 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 12 ***** |
+
+
+---------------------------------------------------------------------------
+qx|2,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 16.2|
+md|1s6hAQ43dAKJT3cA65,sK7hJ65d65cKQJT98,sQ5432hK2dQ92c432,sAJT98hT987d874c7|
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 16.2^*n     The hand,|
+pg| ***** 13 ***** |
+
+
+at|      the bidding,|
+pg| ***** 14 ***** |
+
+
+%%_aapg-NEAR
+mb|1D|pg||mb|2C|pg||
+mb|p|pg||
+mb|p|mb|2H|pg||
+mb|p|mb|3D|pg||
+mb|p|mb|4D|pg||
+mb|p|mb|5D|pg||
+mb|p|mb|p|mb|p|
+%%_aapg-STD
+pg| ***** 22 ***** |
+
+
+at|      the lead,|
+pc|cK|
+pg| ***** 23 ***** |
+
+
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 24 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 25 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n  
+^^You are facing 3 possible losers 1@S and 2@c   The only solution is to ruff both a @d ^*b AND ^*N a @c  in dummy.  (@h's need to be  4-3).  You take the this trick and run the top 3 @h's throwing a @c.   Ruff the 4th @h high (if needed) and exit with dummy's last @c.  If you get a @d return preserve a high @d in dummy to ruff you last @c.|
+pf|all-res-lifted|
+pg| ***** 26 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 27 ***** |
+
+
+---------------------------------------------------------------------------
+qx|3,wide|
+bv|a,h|
+ha|n|
+rh||ah|Problem 16.3|
+md|1s32hAK2dAT984cKJ3,s5hJT8764d7c98765,sKQThQ9dKJ32cAQT2,sAJ98764h53dQ65c4|
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 16.3^*n     The hand,|
+pg| ***** 28 ***** |
+
+
+at|      the bidding,|
+pg| ***** 29 ***** |
+
+
+%%_aapg-NEAR
+mb|1N|pg||
+mb|p|mb|2C|pg||
+mb|3S|pg||
+mb|p|pg||
+mb|p|mb|6N|pg||
+mb|p|mb|p|mb|p|pg||
+%%_aapg-STD
+
+at|      the lead,|
+pc|5s|
+pg| ***** 36 ***** |
+
+
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 37 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 38 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n  
+^^If RHO plays the @sA on your @sK then the issue becomes find the @dQ.  Playing all the @h's then all the @c's will show RHO with at lRHO 3 of the 4 unseen @d's.  So cash the @dK and take the marked finesse against RHO for the @dQ.     If RHO ducks the @s at trick one take basically the same line for plus one.|
+pf|all-res-lifted|
+pg| ***** 39 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 40 ***** |
+
+
+---------------------------------------------------------------------------
+qx|4,wide|
+bv|a,h|
+ha|y|
+rh||ah|Problem 16.4|
+md|1sAKJT43hAdA9cA932,s9652hKQ982dT4cQ6,sQ8h63dKQ752cT874,s7hJT754dJ863cKJ5|
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 16.4^*n     The hand,|
+pg| ***** 41 ***** |
+
+
+at|      the contract,|
+mb|6S|mb|p|mb|p|mb|p|
+pg| ***** 42 ***** |
+
+
+at|      the lead,|
+pc|hK|
+pg| ***** 43 ***** |
+
+
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 44 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 45 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|d|
+at|^b^*bSummary^*n  
+^eIf @d's are 3-3, life is easy.  What if @d's are 4-2 and spades 4-1 ?   Then to start with it plays itself.  On your 5th @s, if the defender with the 4 @d's also has 3 @c's (here RHO) then she will be squeezed and will probably then part with a low @c.   Now the @c's have become 2-2 so a low @c throws in one of the opps and the @c suit is set up.   This and other lines would be hard to see at the table.|
+pf|all-res-lifted|
+pg| ***** 46 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 47 ***** |
+
+
+---------------------------------------------------------------------------
+qx|5,wide|
+bv|a,h|
+ha|n|
+rh||ah|Problem 16.5|
+md|2sK987h2dQJ3cKQJT9,s65hAK98dT982cA72,sAJT4hQJT43d764c8,sQ32h765dAK5c6543|
+sv|-|sk|S|
+%
+bh|Play, E, dA, res, on-lead, T3, always|
+bh|Play, E, dL, res, on-lead, T4, always|
+%
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 16.5^*n     The hand,|
+pg| ***** 48 ***** |
+
+
+at|      the bidding,|
+pg| ***** 49 ***** |
+
+
+%%_aapg-NEAR
+mb|p|mb|p|mb|p|mb|1C|pg||
+mb|p|mb|1H|pg||
+mb|p|mb|1S|pg||
+mb|p|mb|3S|pg||
+mb|p|mb|p|mb|p|
+%%_aapg-STD
+pg| ***** 54 ***** |
+
+
+at|      the lead,|
+pc|hA|
+pg| ***** 55 ***** |
+
+
+eb|y___|
+lg|k|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 56 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 57 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|d|
+at|^b^*bSummary^*n  
+|n#|7|at|Did you count ?   Count what you ask, each defenders hcp that's what.   So far each Opp has shown up with an Ace and a King.  One of them has the @cA.  As both of them WERE PASSED hands (did you notice that ?) she who does ^*b NOT ^*n hold the  @cA  must hold the @sQ, as any hand with 13 hcp can be expected to open.|
+pf|all-res-lifted|
+pg| ***** 58 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 59 ***** |
+
+
+---------------------------------------------------------------------------
+qx|6,wide|
+bv|a,h|
+ha|y|
+rh||ah|Problem 16.6|
+md|1sAKQ2hA2dK42cKQ92,s5hJ86dQJT3cT8765,s7643hK943dA8cA43,sJT98hQT75d9765cJ|
+sv|-|sk|S|
+%
+bh|Play, E, d7hL, res, p2, T4-10, cond, Led North c|
+%
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 16.6^*n     The hand,|
+pg| ***** 60 ***** |
+
+
+at|      the contract,|
+mb|6S|mb|p|mb|p|mb|p|
+pg| ***** 61 ***** |
+
+
+at|      the lead,|
+pc|dQ|
+pg| ***** 62 ***** |
+
+
+eb|y___|
+lg|k|
+at|^r  ^*b Do your thinking  NOW ^*n|
+pg| ***** 63 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 64 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n  
+|n#|4|at|Once you discover the 1-4 trup split.  You need to stop RHO from killing a winner when he trumps.  So you want to lead through RHO so that he can only ruff 'air' and NOT ruff one of your winners, here the @c's.  (Optionally - You can draw a 3rd round of trumps first).    Start by caching the @cA (hoping RHO has to follow this once) then lead low to the @cKQxx and return via the @d ruff (or the @hK) to do the same again. |
+pf|all-res-lifted|
+pg| ***** 65 ***** |
+
+
+-------------------------------------------------------------------------------
+bt||
+nt|^z@3^b@2^^|
+ht|m|n#|7|cs|c-chapterColor|at|^a     ^-{  ^*nEnd  -  Problems wk 16^*n  ^^ }^-|
+pg| ***** 66 ***** |
+
+

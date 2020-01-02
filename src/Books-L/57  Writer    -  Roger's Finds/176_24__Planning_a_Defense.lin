@@ -1,0 +1,260 @@
+              %%
+              %%  Tell users of old win player they need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the ^*b aaBridge ^*n player available  FREE  from |
+cb|8255|cp|8|ht|L|at|   ^i  ^*hrogerpf.com/aaBridge^*n|
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+              %%
+
+
+			  
+ss|chapter,24.                               Planning a Defense |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-05-06          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Roger's  Finds                   2019  and  Past  Years |
+%%
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       Maroon
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    Around the normal Grey
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title     
+fh|b50|                    Font   b  b-bigTitle
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+%
+cr|a230|cg|a040|cb|a130|   text   a  a-action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       on Title Pages
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    on Title Pages
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|y|n#|b|lg||at|^b@2@1|at|
+^*bClick^*n          ^*bFlow >^*n         or use your    ^*bMouse Wheel^*n|
+ht|z|at|@0
+^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|j|n^|4|
+lg|f|
+at|^c@2^z@3|  
+
+n#|3|at|This is a real deal I watched being played.  You are the defender on lead and have to come up with a plan for the defense. Even telling you this will not make it easy but try to think out how you can come to 4 tricks before the superior forces of declarer and dummy get their 10.|
+
+n#|d|at|^^The first time you play the hand you do so without assistance from aaBridge, when set like this the hand is called a ^*b Study Deal^*n.  There is no looking at the Opps cards but you CAN ^*b UNDO ^*n as much as you like.|   
+n#|9|at|^^After that you get to play the hand a 2nd time but with access to the ^*b DDS ^*n (Double Dummy Solver)  etc.|
+
+ht|t|at| ^e@2 { |n#|4|at|Don't forget to read the Analysis Section (^*bAsys^*n).  That is what a ^*b Roger's Find ^*n is all about. |n^|b|at|^^ ^^}|
+
+
+fh|940|fm|9|fp|9|at|@0@1|ht|i|rq|3164|at|@4^^^^^^ ^- This   Bridge Movie   requires a more recent version of ^*b aaBridge^*n.   ^^^^ Your copy of ^*b aaBridge ^*n is out of date.    You can get the latest version   ^^^^  FREE   from    ^*h http://rogerpf.com/aaBridge ^*n ^- ^^^^ ^L   click the link above to visit.|
+
+qx|# 24|
+pg| ***** 0 ***** |
+
+
+st||
+---------------------------------------------------------------------------
+rh||ah|Find 24|
+nt|^b@2^^|n^|5|at|^*bFind 24^*n ^e the hand,      |
+zm|+study+|
+md|2sAKT972h943d5cT97,s43hAQdKJ9742c865,sQ865h865dA83cQ43,sJhKJT72dQT6cAKJ2|
+%
+bh|Play, North, d8, res, on-lead, T2, always |
+%
+sv|n|sk|s|
+pg| ***** 1 ***** |
+
+
+at|^h the bidding,|
+%%_aapg-NEAR
+mb|2D|pg||
+mb|p|pg||
+mb|2H|pg||
+mb|2S|pg||
+mb|3H|pg||
+mb|3S|pg||
+mb|4H|pg||
+mb|p|pg||
+mb|p|mb|p|
+%%_aapg-STD
+pg| ***** 10 ***** |
+
+
+at|^k    YOU  to lead lead, ^p|
+at|    ^*bDo your thinking NOW^*n|
+at|^^^^^^ ^h What is you PLAN for ^*b FOUR ^*n (4) tricks ?| 
+pg| ***** 11 ***** |
+
+
+qx|Try,wide|
+bv|f,v|
+ht|d|at|@4|n#|f|cp|red|at|^^ ^c ^*bNow |cp||
+at| Click^*n  the blue  { ^*b 1st ^*n }  button below|
+cp|red|at|^*b  and play out the hand^*n|cp||
+at|.     ^*b Flow ^*n  will skip the Study Deal.|
+pf|first-button|
+pg| ***** 12 ***** |
+
+
+zm|-study-|
+ht|f|at|^e@4^^|
+ht|m|at|^c This is your last chance to play the hand without seeing the answer.|
+at|^^^^^c 'Study Deal'  restrictions lifted, |
+at|hence in the deal the  ^*b DDS  { Off/On ^*n }  buttons, |
+at|etc are |cp|red|at|^*b NOW ^*n|cp||at| available.|
+at|^^^^^L You can still use the blue  { ^*b 1st ^*n }  button.|
+pg| ***** 13 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Asys,wide|
+bv|f,h|
+mx|x|
+ht|f|at|^c@2^z@3^d@4@5^^|
+ht|c|n#|1|at|^e^*bAnalysis^*n   | 
+lg|k|
+pg| ***** 14 ***** |
+
+
+at|^^By now you have played the hand and know "the answer" but remember that the point of having the deal here is to guide your thinking on future hands like this one  and so to find such a defense "at the table".|
+pg| ***** 15 ***** |
+
+
+at|^^West has started with a Weak 2.  Partner could not intervene.   You bravely (vulnerable) intervened with just your 7 hcp and East bid strongly to their @h game with partner supporting your @s bid.|
+pg| ***** 16 ***** |
+
+
+ht|f|at|^g@4@5^^|
+ht|c|n#|1|
+at|^^You can put partner with 3 (or 4) @s's.  So you can't expect more than a single @s winner. ^^ (You need partner to have ONLY 3 and then Opps @s's to split 2-2 for  to make 2 @s tricks.)|
+pg| ***** 17 ***** |
+
+
+at|^^So we can safely play the @sAce to have a peek at dummy      -   STOP such thoughts, that is not a PLAN is it  "kicking the can down road"  and when later you get to,  "that can",  it may be too late. | 
+pg| ***** 18 ***** |
+
+
+ht|f|at|^g@4@5^^|
+ht|c|n#|1|
+at|^^The only other possibilities are partner has lots of high cards - 3 tricks worth ! (unlikely)  OR  @d ruffs.
+So let's start to dream,  What if partner has the @dA (West only bid a WEAK 2@d, so its quite possible).|
+pg| ***** 19 ***** |
+
+
+at|^^And if partner returns a @d, very likely as there will be 6 in dummy as it goes down.  After ruffing you will need to find a 2nd entry to partner for that magical 4th trick  (the 2nd @d ruff).|
+pg| ***** 20 ***** |
+
+
+ht|f|at|^g@4@5^^|
+ht|c|n#|1|
+at|^^So the play goes to plan.|
+pg| ***** 21 ***** |
+
+
+%%_aapg-NEAR
+pc|d5|pc|d2|pc|dA|pc|d6|pg||
+pc|d8|pc|dQ|pc|h3|pc|d4|
+%%_aapg-STD
+pg| ***** 23 ***** |
+
+
+at|   What should you be thinking (to yourself) at this moment ?|
+pg| ***** 24 ***** |
+
+
+at|^^To get that 2nd ruff you need to find partner with another entry.   I has to be either @c's or @s's and as partner supported @s's it cannot be a @s ruff.  So which is more likely,  partner has the @cA or the @sQ ?|
+pg| ***** 25 ***** |
+
+
+ht|f|at|^g@4@5^^|
+ht|c|n#|1|
+at|^^On the bidding I think it very unlikely that partner started with 2 Aces.
+So I would strongly lean towards under-leading the  @sAK  hoping to find partner with the @sQ.|
+pg| ***** 26 ***** |
+
+
+ht|f|at|^g@4@5^^|
+ht|c|n#|1|
+at|^^Also, if you are eagle eyed you will have noticed that partner led the @d8  AND  the @d3 is as yet unseen.
+This (a high card) asks for a return of the highest of the other two suits (excluding the suit led and trumps).|
+pg| ***** 27 ***** |
+
+
+bv|c,v|
+pf|cont-button|
+pg| ***** 28 ***** |
+
+
+qx|DDS,wide|
+ht|f|at|^d@4@5^^|
+ht|c|n#|1|at|^e^*bDDS^*n  ^g You are now free to explore the deal.|
+at|^^^^^c    @2If you still need help, ^*b  when in the deal, ^*n  click the ^*b DDS  { is Off/On ^*n }  button top right.|
+lg|f|at|^^The number (of tricks) in a |cp|green|at|^*b GREEN ^*n|cp||at| oval shows a good card to play for THAT side.|fp||
+bv|a,v|
+eb||
+pd|rem-res,When in the deal`cp`red`at` ^*b click ^*n`cp``at` the  { ^*b Rem ^*n }  button to remove all restrictions on  { ^*b 1st ^*n }   { ^*b Cont ^*n }  and  { ^*b Enter the Deal ^*n }|
+pf|rem-res|
+pg| ***** 29 ***** |
+
+
+------------------------------------------------------------------------
+qx||
+bv|a,h|
+md|2|
+nt||
+ht|z|n#|7|at| @0^*b End ^*n|
+pg| ***** 30 ***** |
+
+

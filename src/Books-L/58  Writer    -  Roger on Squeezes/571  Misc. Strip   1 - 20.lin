@@ -1,0 +1,347 @@
+
+
+%% 2019-09-12  Patterns  Squeeze
+
+%% All hands are copyright  Richard Pavlicek
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pd|hint,^b   There is a `cp`green`at`^*b Hint ^*n`cp``AT` on the next page but if you want to  PLAY  the hand NOW, the  { ^*b 1st ^*n }  button is available.|
+%%
+pd|choose,`cp`red`at`^b    ^*bPlease   CHOOSE^*n`cp``at`   you can use  {^*b Flow >^*n }  to see the answer  `cp`red`at`^*bOR^*n`cp``at`  you can click  { ^*b 1st ^*n }  to PLAY the hand.|
+%%
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+<<--INSERT-START-->>=07i__FP_Patterns.ins
+%%
+fh|b48| %%  'banner' font
+fh|t40| %%  'target' font
+fh|s28| %%  'small'  font
+fh|p45| %%  'pink dot' size
+
+cr|a230|cg|a040|cb|a130|          a  action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       pink dot button
+
+bv|e,h| %%   Enter the deal button hidden
+bv|f,v| %%   1st visible 
+bv|d,v| %%   DDS visible
+
+ha|y|   %%   hide auctions
+
+ss|head,     ah`Part  17.  Misc. Strip Squeeze`|
+
+ss|banner,   ht`e`fp`b-big`at`^*b^j^*n   Misc. Strip Squeeze^*n`fp``|
+ss|link,     ht`z`at`^h   visit  Richard Pavlicek's  Miscellaneous Strip Squeeze  page    ^*h http://www.rpbridge.net/9m01.htm, rpbridge.net  9m01^*n`|
+ss|means,    ht`e`fp`small`at`^x ^*h http://www.rpbridge.net/9gc8.htm, meaning^*n`fp``|
+ss|new,      nt`^b@2^^`vv`means`vv`link`vv`banner`ht`e`vv`head`|
+ss|contract, mb`3nppp`|
+ss|p1,       vv`contract`wt`s`sk`s`fp`t`ht`e`at`^r    ^*b`|
+ss|p2,       fp`t`ht`e`at`^*n^u`|
+ss|p3,       fp``ht`q`at`^d`|
+%%
+<<--INSERT-END**-->>=07i__FP_Patterns.ins
+
+
+qx|-|
+st||
+nt|^b@2^^|
+rh||ah|--- -|vv|head|
+ss|bannerfull,   ht`e`fp`b-big`at`^*b^i^*n   Miscellaneous Strip Squeeze^*n`fp``|
+vv|bannerfull|
+ht|k|
+lg|e|
+at|This is a catchall for strip squeezes involving more than two threat suits; i.e., not fitting the category of two-suit strip squeeze. Like miscellaneous squeezes, some are rare and unlikely to occur in practice — and even when they do probably go unrecognized. Fun surfing, nonetheless. 
+|n#|7|at|^k See Richard Pavlicek's  ^*h http://www.rpbridge.net/9gc8.htm, About the Techniques^*n  web page for more info.|
+pg| ***** 0 ***** |
+
+
+nt|^b@2^^|vv|bannerfull|
+ht|n|at|In the far right-hand column two lines below |fp|t|cp|gr|at|^*b Power Kib ^*n|cp||fp||at| is the   { @m }|cp|red|at| ^*bShow all hands^*n|cp||at| ^*b checkbox^*n.  
+^^^i Set this to ^*b CHECKED^*n,  the first few times you look at these patterns. |
+rh||ah|--- -|vv|head|
+ht|a|n#|0|at|^q  Your target is |cp|red|at|^*b 9 ^*n |cp||at|tricks|
+pg| ***** 1 ***** |
+
+
+qx|1|
+rh||ah|Pattern 1|
+vv|new|at|^*b 1.  Triple fork ^*n|
+md|1  Q4 K - A, 32 - AK, A5 2 - 2, KJ A 4|
+%
+bh|Play, W,  sL, res, p2,  t1,  always|
+%
+bs|6,2|
+vv|p1|at|win 3|
+vv|p2|at|auto re|
+vv|p3|at|Same as two-suit variety but exit in the third suit.|
+pg| ***** 2 ***** |
+
+
+qx|2|
+rh||ah|Pattern 2|
+vv|new|at|^*b 2.  Establishment winner ^*n|
+md|1  - AJ KQ A, AK KQ A, - 32 32 2, 32 54 - 3|
+bs|6,2|
+vv|p1|at|win 3|
+vv|p2|at|auto re|
+vv|p3|at||
+pg| ***** 3 ***** |
+
+
+qx|3|
+rh||ah|Pattern 3|
+vv|new|at|^*b 3.  Establishment fork ^*n|
+md|1  54 AJ - A, JT 3 KQ, K6 42 - 2, AQ KQ A|
+%
+bh|Play, W,  sL, res, p2,  t2,  always|
+%
+bs|6,2|
+vv|p1|at|win 3|
+vv|p2|at|auto re|
+vv|p3|at|If East pitches @sQ, duck a spade.|
+pg| ***** 4 ***** |
+
+
+qx|4|
+rh||ah|Pattern 4|
+vv|new|at|^*b 4.  Triple trim fork ^*n|
+md|1  K54 A A A, 2 876 32, QT6 32 - 2, AJ9 54 4|
+%
+bh|Play, W,  dL, res, p2,  t1,  always|
+%
+bs|4,3|
+vv|p1|at|win 5|
+vv|p2|at|auto? bi|
+vv|p3|at||
+pg| ***** 5 ***** |
+
+
+qx|5|
+rh||ah|Pattern 5|
+vv|new|at|^*b 5.  Detached triple fork ^*n|
+md|1  A65 - 42 AK, - 32 KQJT3, JT4 AJ A 4, KQ9 KQ 65|
+%
+bh|Play, W,  hL, res, p2,  t2,  always|
+bh|Play, E,  hL, res, p4,  t3,  always|
+bh|Play, E,  sQ, res, p2,  t5,  always|
+%
+bs|3,3|
+vv|p1|at|win 6|
+vv|p2|at|auto bi|
+vv|p3|at||
+pg| ***** 6 ***** |
+
+
+qx|6|
+rh||ah|Pattern 6|
+vv|new|at|^*b 6.  Triple squeeze squash ^*n|
+md|1  Q4 - K A, K87 - 2, A9 K - 2, JT A A|
+%
+bh|Play, W,  dL, res, p2,  t1,  always|
+%
+bs|6,3|
+vv|p1|at|win 3|
+vv|p2|at|bi|
+vv|p3|at||
+pg| ***** 7 ***** |
+
+
+qx|7|
+rh||ah|Pattern 7|
+vv|new|at|^*b 7.  Fork strip  or  stepping-stone  1 ^*n|
+md|1  - AJ QJ, JT KQ, AQ2 2, K4 - AK|
+%
+bh|Play, E,  sL, res, p4,  t1,  always|
+%
+bs|6,2|
+vv|p1|at|win 3|
+vv|p2|at|auto bi|
+vv|p3|at||
+pg| ***** 8 ***** |
+
+
+qx|8|
+rh||ah|Pattern 8|
+vv|new|at|^*b 8.  Fork strip  or  stepping-stone  2 ^*n|
+md|1  AQ2 4, K4 - AQ, - AJ2 K, JT KQ|
+%
+bh|Play, W,  dA, res, p2,  t1,  always|
+%
+bs|6,3|
+vv|p1|at|win 3|
+vv|p2|at|auto bi|
+vv|p3|at||
+pg| ***** 9 ***** |
+
+
+qx|9|
+rh||ah|Pattern 9|
+vv|new|at|^*b 9.  Step-winkle ^*n|
+md|1  Q4 4 - A, AJ KQ, 65 AJ, K - - KQJ|
+bs|6,3|
+vv|p1|at|win 3|
+vv|p2|at|auto bi|
+vv|p3|at||
+pg| ***** 10 ***** |
+
+
+qx|10|
+rh||ah|Pattern 10|
+vv|new|at|^*b 10.  Detached step-winkle ^*n|
+md|1  Q4 Q4 - A, AJ KT9, 2 AJ32, K - - KQJT|
+bs|5,3|
+vv|p1|at|win 4|
+vv|p2|at|bi|
+vv|p3|at||
+pg| ***** 11 ***** |
+
+
+qx|11|
+rh||ah|Pattern 11|
+vv|new|at|^*b 11.  Step-winkle fork ^*n|
+md|1  Q4 Q5 - A, AJT KJ, 32 A4 - 2, K - - KQJT|
+bs|6,3|
+vv|p1|at|win 3|
+vv|p2|at|auto re|
+vv|p3|at||
+pg| ***** 12 ***** |
+
+
+qx|12|
+rh||ah|Pattern 12|
+vv|new|at|^*b 12.  Clash establishment ^*n|
+md|1  Q Q4 A4 A, K AK QJT, A4 2 K95, JT98 - 32|
+%
+bh|Play, W,  hL, res, p2,  t1,  always|
+%
+bs|4,3|
+vv|p1|at|win 5|
+vv|p2|at|auto|
+vv|p3|at|If @sA won early, plain two-suit strip squeeze.|
+pg| ***** 13 ***** |
+
+
+qx|13|
+rh||ah|Pattern 13|
+vv|new|at|^*b 13.  Clash strip squeeze avoidance ^*n|
+md|1  Q 432 K A, K T987 A, A4 AK65, JT98 QJ|
+%
+bh|Play, W,  hL, res, p2,  t1,  always|
+%
+bs|4,3|
+vv|p1|at|win 5|
+vv|p2|at|auto bi|
+vv|p3|at||
+pg| ***** 14 ***** |
+
+
+qx|14|
+rh||ah|Pattern 14|
+vv|new|at|^*b 14.  Vice clash stepping-stone ^*n|
+md|1  Q 4 K A, K QJ A, A4 KT, JT A9|
+%
+bh|Play, E,  hL, res, p4,  t1,  always|
+%
+bs|6,3|
+vv|p1|at|win 3|
+vv|p2|at|auto|
+vv|p3|at||
+pg| ***** 15 ***** |
+
+
+qx|15|
+rh||ah|Pattern 15|
+vv|new|at|^*b 15.  Split vice clash stepping-stone ^*n|
+md|1  Q K K A, K QJ A, A4 T4, JT A9|
+%
+bh|Play, E,  hL, res, p4,  t1,  always|
+%
+bs|6,3|
+vv|p1|at|win 3|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 16 ***** |
+
+
+qx|16|
+rh||ah|Pattern 16|
+vv|new|at|^*b 16.  Triple squeeze winkle ^*n|
+md|1  4 J94 - A, KT9 K A, AQJ Q - 2, 32 AT8|
+bs|5,3|
+vv|p1|at|win 4|
+vv|p2|at|bi|
+vv|p3|at||
+pg| ***** 17 ***** |
+
+
+qx|17|
+rh||ah|Pattern 17|
+vv|new|at|^*b 17.  Double stepping-stone ^*n|
+md|1  K Q Q A, QJ AK, A8 2 - 2, T9 - AK|
+bs|6,3|
+%
+bh|Play, E,  dL, res, p4,  t1,  always|
+%
+vv|p1|at|win 3|
+vv|p2|at|auto re|
+vv|p3|at||
+pg| ***** 18 ***** |
+
+
+qx|18|
+rh||ah|Pattern 18|
+vv|new|at|^*b 18.  Fraticide establishment ^*n|
+md|1  J5 AJ - 4, - - - AQJT9, 4 4 - K65, AKQ KQ|
+%
+bh|Play, W,  cQ, res, p1,  t2,  always|
+%
+bs|6,2|
+vv|p1|at|win 3|
+vv|p2|at|bi|
+vv|p3|at||
+pg| ***** 19 ***** |
+
+
+qx|19|
+rh||ah|Pattern 19|
+vv|new|at|^*b 19.  Squeeze or finesse fork ^*n|
+md|1  AQ9 4 - 4, - - - 	AJT98, J KQ - KQ, KT8 AJ|
+%
+bh|Play, W,  cL, res, p2,  t1,  always|
+bh|Play, E,  sK, res, p2,  t2,  always|
+%
+bs|5,3|
+vv|p1|at|win 4|
+vv|p2|at|bi|
+vv|p3|at||
+pg| ***** 20 ***** |
+
+
+qx|20|
+rh||ah|Pattern 20|
+vv|new|at|^*b 20.  Vice throw-in or establishment ^*n|
+md|1  AQ7 4 - A, K94 JT, 65 A5 K, JT KQ A|
+bs|5,3|
+vv|p1|at|win 4|
+vv|p2|at|auto|
+vv|p3|at|If West sheds a spade, pitch @h3 and lead @sQ.|
+pg| ***** 21 ***** |
+
+
+qx|+|
+rh||ah|Pattern +|
+ss|means, |
+vv|new|at|^*b  ^*n|
+md|1|
+rh||ah|--- -|vv|head|
+bs|0,0|
+vv|p1|at||
+vv|p2|at||
+vv|p3|at|^cAdditional squeezes of this type can be found at|
+pg| ***** 22 ***** |
+
+

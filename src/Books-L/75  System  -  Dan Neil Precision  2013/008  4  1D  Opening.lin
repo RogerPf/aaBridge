@@ -1,0 +1,1181 @@
+%%
+%%
+
+%% Session 4                             1 @D Opening    
+%%
+%%
+%%  Date last Edited    2015-04-05          set by human hand (if at all)
+%%
+%%  MovieMaker          Karen10
+%%
+
+
+
+fh|136|ff|1Arial|fb|10|fm|1|      Font 1
+fh|238|ff|2Arial|fb|20|fm|2|      Font 2
+fh|339|ff|3Arial|fb|30|fm|3|      Font 3
+fh|440|ff|4Arial|fb|40|fm|4|      Font 4  Section titles in chapters
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|50|fm|6|      Font 6
+fh|764|ff|7Arial|fb|70|fm|7|      Font 7  Officer Precision size in banner
+fh|870|ff|8Arial|fb|80|fm|8|      Font 8  Chapter title size in banner
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1210|cg|1255|cb|1255|   touch of blue
+cr|2000|cg|2000|cb|2000|   text font color - this is NOT full black it is changed to a dark gray
+cr|3255|cg|3240|cb|3240|
+cr|4255|cg|4240|cb|4240|   all so far highlight color
+cr|5198|cg|5205|cb|5229|
+cr|6063|cg|6110|cb|6065|   Top Title Color   On Title Page
+cr|7198|cg|7205|cb|7229|   Lower Title Color On Title Page
+cr|8255|cg|8000|cb|8000|   red for emphasis
+cr|9255|cg|9255|cb|9255|   'white' but not white - on Title page for Font color behind blue title
+
+fh|t40|                    Font   t  t-title      section titles within chapters
+fh|b50|                    Font   b  b-bigTitle
+
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+
+cr|m188|cg|m195|cb|m199|   fill   m  m-mastColor     on Title Pages     Sickly Orange
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    on Title Pages
+
+
+bt||
+nt|^b@2^z@3|
+
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-Dan  Neil  Precision                                    2013 ^*n^-^^|cs||fp||cp||
+
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*nSession 4                             1 @D Opening    ^*n^-^^|cs||fp||cp||at|^^|
+
+ht|j|
+
+
+
+at|^b@2^*bdjneill:^*n  This is the next lesson in the Standard Modern Precision series.  We have up until now concentrated on the 1@c opening, 16+ and strong, artificial.   Indeed that is the hallmark opening of precsion, separating it from SAYC.
+
+Now we turn to 1@d - "could be short"
+Or as rodwell says, "a billion served"
+The reason he says that is that it's 1@d that is the most likely opening in precision.
+Technically it's 11-15 with 2+ @d's, but let's break that down into hand types
+
+- First, there is the "weak NT" - 11-13 balanced
+- Next there is the real hand with long diamonds
+- and finally there are the hands with both minors (or 3-suiters)
+
+The key thing to remember when partner opens 1@d is:
+^*bASSUME PARTNER IS 11-13 BALANCED^*n    until further notice
+Because that is exactly what she is most likely to have.
+So what this means is:     ^*bWe invite not with 10 or 11, but 12^*n and we force to game with 13 
+
+In SAYC you would force to game with 12 most often, but Precision opens 1 HCP lighter
+So you need 1 HCP more!
+However, we will see that opener may have 14-15 if unbalanced, and that she will reveal in time.
+But if opener is balanced, she is 11-13
+Let's take a look|
+
+
+%% <<--FRONTPAGE_FOOTER_REPLACE_START->>
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2886|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2886 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+%% <<--FRONTPAGE_FOOTER_REPLACE_END->>
+pg| ***** 0 ***** |
+
+
+nt||
+
+
+
+
+%%%%%%board 1
+mn|session 4  board 1|
+qx|01|st||pn|South,West,North,East|rh||ah|example 1|sv|o|sk|n|
+md|3ST96HA953DKT72C62,SQJ853HQJ2DA3CAK4,SAK72HK84DQ65CJT9,S4HT76DJ984CQ8753|
+mb|1d|an|could be short|at|djneill:  You announce "could be short" verbally (or type it), it's not an alert, 
+just an announcement.
+Just like "forcing" if you play 1NT forcing, or "transfer"
+If they ask how short, you say "two"|
+pg| ***** 1 ***** |
+
+
+nt||mb|p|sk|s|lb|*bPlease chose your bid.^^1h|mb|1hp|at|djneill:  Responding to 1@d is just like responding to a convenient minor in SAYC, 
+pretty much you bid 4-card majors up the line|
+pg| ***** 3 ***** |
+
+
+nt||sk|n|mb|1sp|
+pg| ***** 4 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^1n|mb|1nppp|
+pg| ***** 6 ***** |
+
+
+sk||at|djneill: South should not bid 2@d over 1@s, because 1@d could be 2 cards
+Much like if North opened a short club, it is dangerous to assume partner has more than 2 or 3 of the cards.
+1NT should play fine if both hands are balanced.
+Another thing about the 1@d is that neither opponents nor responder know for sure what minor(s) opener really has
+This can produce some good results and some bad results, for both sides - it's just part of the system.
+Much of 1@d bidding is totally natural|
+pg| ***** 7 ***** |
+
+
+nt||at|There are no "steps" like in 1@c, no   "0+ card suits"
+gypsy1308: Could 1@D be less than 2?
+djneill:  No, 1@d must be at least 2 cards
+There is a special 2@d opening for hands with 0-1  @d's and no 5-card major.|
+pg| ***** 8 ***** |
+
+
+nt||
+
+
+
+
+
+
+
+
+%%%%%%board 2
+mn|session 4  board 2|
+qx|02|st||pn|South,West,North,East|rh||ah|example 2|sv|o|sk|n|
+md|3SAQTH87654DQ53CJ3,SK764HKT9DT4C9876,SJ3HAQ32D8762CA52,S9852HJDAKJ9CKQT4|
+mb|1d|
+pg| ***** 9 ***** |
+
+
+mb|p|sk|s|mb|1h|mb|p|
+pg| ***** 10 ***** |
+
+
+sk|n|lb|*bPlease chose your bid.^^2h|mb|2hp|
+pg| ***** 12 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^p|mb|pp|
+pg| ***** 14 ***** |
+
+
+sk||at|djneill: Opener can raise the major response with 4 cards
+This shows 11-13 BALANCED, or rarely a very bad hand unbalanced.
+But always 4 cards, never 3
+In Standard Modern Precision, it is the choice the designers made, but it's a good agreement for anyone to have.
+That way you know pretty sure how to follow the LAW quickly.|
+pg| ***** 15 ***** |
+
+
+nt||at|djneill:  Here South has 9 HCP and a 9 trump fit
+How to know how high to go?
+The key is:   ^*bASSUME OPENER HAS 11-13 BALANCED^*n  until further notice
+So opposite 11-13 balanced, South can count only 20-22 HCP total
+Not enough for game, especially if balanced, so South can Pass|
+pg| ***** 16 ***** |
+
+
+nt||at|
+This auction should appear very natural - 1@d auctions very often are
+(next week we will get into some artificial complexity however)|
+pg| ***** 17 ***** |
+
+
+nt||
+
+
+
+
+%%%%%%board 3
+mn|session 4  board 3|
+qx|03|st||pn|South,West,North,East|rh||ah|example 3|sv|o|sk|n|
+md|3S6HQ874DAK65CAJ65,S98542H63D72CQ874,SAQHKJT9DQJT984C3,SKJT73HA52D3CKT92|
+mb|1dp|
+pg| ***** 18 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^1h|mb|1hp|at|djneill:  South starts with 1@h rather than 2@c or 2@d because the major is by far more important than minors
+If the opponents jump in @s, South wants North to know about the @h first|
+pg| ***** 20 ***** |
+
+
+nt||sk|n|lb|*bPlease chose your bid.^^4c|mb|4cp|at|djneill:  Just because opener is USUALLY 11-13 BALANCED, 
+doesn't mean she is always...
+North has an amazing hand for such a humble 1@d
+13 HCP, but NOT balanced, 6 nice diamonds, 4 nice trumps and a singleton
+North can't be much better, remember with a hand that wants to be in game opposite a random 8 HCP we open 1@c
+North is pushing the maximum, so North can SPLINTER
+|
+pg| ***** 22 ***** |
+
+
+nt||sk|s|lb|*bPlease chose your bid.^^4d|mb|4dp|at|djneill:  South has much more than a minimum as well
+The @cJ is wasted, but the other cards look pretty good
+South will try one more time with a cue-bid of 4@d, inviting North to bid on with good cards
+|
+pg| ***** 24 ***** |
+
+
+nt||sk|n|lb|*bPlease chose your bid.^^4n|mb|4np|at|djneill:  That @d cue is just what North wanted to hear  
+- now the @d will often run for lots of tricks
+North will use RKC 0314
+|
+pg| ***** 26 ***** |
+
+
+nt||sk|s|mb|5sp|
+pg| ***** 27 ***** |
+
+
+sk|n|mb|6hppp|
+pg| ***** 28 ***** |
+
+
+sk||at|djneill: So slam should be at least 50% (if South is missing @dK e.g.)
+Isabelle10:  Could the diamond cue show a void?
+djneill:  That's a good question because if Souh could be void (or singleton), the @d don't appear to set up that quickly
+When I or my partners cue-bid in partner's suit, we do not have a singleton or void, it's always an honor.
+The reason is just what you said, a void is not good but bad, in partner's suit, usually
+So in the case we are looking at, 4@d shows an Ace (or King).|
+pg| ***** 29 ***** |
+
+
+nt||at|gypsy1308: But as @D artificial????
+djneill:  Good point again, couldn't @d be short?
+It could be short, UNTIL FURTHER NOTICE
+4@c announced short @c,     so @d must be... LONG|
+pg| ***** 30 ***** |
+
+
+nt||
+
+
+%%%%%%board 4
+mn|session 4  board 4|
+qx|04|st||pn|South,West,North,East|rh||ah|example 4|sv|o|sk|n|
+md|3SA32HA842DJ3CJ863,SQT98HQJT973CQ74,S65HK6DAQ97542CK9,SKJ74H5DKT86CAT52|
+mb|1dp|
+pg| ***** 31 ***** |
+
+
+sk|s|mb|1hp|
+pg| ***** 32 ***** |
+
+
+sk|n|lb|*bPlease chose your bid.^^2d|mb|2dp|at|djneill:  Here is an example of North not having the "weak NT" type, but rather just long diamonds.
+In SAYC you would bid this exactly the same way.
+|
+pg| ***** 34 ***** |
+
+
+nt||sk|s|lb|*bPlease chose your bid.^^p|mb|p|at|djneill: South has 10 HCP, including the useful @dJ
+This is not normally an invite, I would say it is on the edge
+The @cJ appears to be useless.
+And remember, if North had a nice maximum North would have rebid not 2@d, but 3@d|
+pg| ***** 36 ***** |
+
+
+nt||mb|2h|sk|n|lb|*bPlease chose your bid.^^3d|mb|3dppp|sk||at|rickc54:  With 5@d's and 4@c's what would you bid?
+djneill:  With 5@d's and 4@c's (or 4@d's and 5@c's or 5@d's and 5@c's) we open 1@d and rebid 2@c
+SAYC you might do the same thing
+Bad break for declarer here.|
+pg| ***** 38 ***** |
+
+
+nt||
+
+
+
+%%%%%%board 5
+mn|session 4  board 5|
+qx|05|st||pn|South,West,North,East|rh||ah|example 5|sv|o|sk|n|
+md|3SQ876HKJ86DJT6C95,SK42HQ72D98543CJ6,SJ95H9DAKQ2CKQ843,SAT3HAT543D7CAT72|
+mb|1dp|
+pg| ***** 39 ***** |
+
+
+sk|s|mb|1hp|
+pg| ***** 40 ***** |
+
+
+sk|n|lb|*bPlease chose your bid.^^2c|mb|2cp|at|djneill:  lo we have the hand mentioned in the earlier question! 
+North has 4 diamonds and 5 clubs
+The plan is to describe a hand with lots of minor cards by opening 1@d and rebidding 2@c
+North has 15 HCP though, and 1@d is 11-15, so might not North want to leap to 3@c instead?
+In Precision, you only leap with very nice shape
+So    1@d...3@c    would be 5-5,     but North might roar yet
+|
+pg| ***** 42 ***** |
+
+
+nt||sk|s|lb|*bPlease chose your bid.^^2d|mb|2dp|at|djneill:  South can't be sure which minor is longer
+But odds are, @d is better than @c since South has 3 diamonds and just 2 clubs
+|
+pg| ***** 44 ***** |
+
+
+nt||sk|n|lb|*bPlease chose your bid.^^2s|mb|2sp|at|djneill:  Now North can show a complete maximum by bidding one more for the road
+What should she bid, 2NT?  Probably not without a @s stopper
+3@d?  Probably not without a known 8 card fit
+2@s then, kind of impossible suit
+|
+pg| ***** 46 ***** |
+
+
+nt||sk|s|lb|*bPlease chose your bid.^^2n|mb|2nppp|sk||at|djneill: South does not want to go to game so just bids 2NT
+So North did get to bid again, given the chance.
+Isabelle10:  Does south need spade stopper to bid NT, since N may not have spade?
+djneill:  Yes in this case, North is warning South that there is no @s stopper
+5th suit forcing? :)|
+pg| ***** 48 ***** |
+
+
+nt||
+
+
+
+%%%%%%board 6
+mn|session 4  board 6|
+qx|06|st||pn|South,West,North,East|rh||ah|example 6|sv|o|sk|n|
+md|3SKHKT92DJT842CJ93,ST9763H8543DKC654,SA84HAJDQ9763CT87,SQJ52HQ76DA5CAKQ2|
+mb|1dp|at|djneill:  Here we see North again with the typical 11-13 BALANCED|
+pg| ***** 49 ***** |
+
+
+nt||sk|s|mb|1hp|at|djneill:  South has a 4-card major so should mention it
+To raise diamonds or Pass might miss a 4-4 major fit.
+|
+pg| ***** 50 ***** |
+
+
+nt||sk|n|lb|*bPlease chose your bid.^^1n|mb|1np|at|djneill:  North has 5 diamonds, that's 3 more than minimum
+However, North's overall hand is balanced, so a 1NT rebid it is
+We never bypass spades here  =>  North does not have 4 spades
+|
+pg| ***** 52 ***** |
+
+
+nt||sk|s|lb|*bPlease chose your bid.^^2d|mb|2dp|at|djneill:  Clearly South is worried that the opponents have 9 spades so retreats now to 2@d|
+pg| ***** 54 ***** |
+
+
+nt||mb|pxp2s|sk|n|lb|*bPlease chose your bid.^^3d|mb|3dppp|sk||at|djneill: Down pretty quickly I think, but 2@s was pretty cold
+So a good result for N-S.
+donnaruthe: What about bidding (responding) with 5 pts?
+djneill:  In general, you respond with as much as you would normally respond in SAYC
+If you would respond 1@h in SAYC, you would do so in Precision.
+Isabelle10:  Is 1@d forcing?
+djneill:  No, 1@d is not forcing|
+pg| ***** 56 ***** |
+
+
+nt||at|djneill:  Often though, you will want to mess with the opponents, so respond with just 4 or 5 HCP
+Think about it this way
+If partner is 11-15, and you have 4-5 HCP, the opponents have half the deck if not a lot more
+So why just sit there and Pass like a dummy
+If you bid the opponents may mess up
+realrowdy:  or X you|
+pg| ***** 57 ***** |
+
+
+nt||at|djneill:  Yes that happens occasionally, 
+but it's much easier to get away with things if you bid confidently and light rather than Pass.
+cdt: Would the vulnerability make a difference?
+djneill:  Yes, vulnerable you would be more careful|
+pg| ***** 58 ***** |
+
+
+nt||
+
+
+
+
+
+%%%%%%board 7
+mn|session 4  board 7|
+qx|07|st||pn|South,West,North,East|rh||ah|example 7|sv|o|sk|n|
+md|3SKQHAKT9DK72CK983,SJ873H63DJT9863C6,S92H854DAQ5CAJ754,SAT654HQJ72D4CQT2|
+mb|1dp|
+pg| ***** 59 ***** |
+
+
+sk|s|mb|1hp|
+pg| ***** 60 ***** |
+
+
+sk|n|lb|*bPlease chose your bid.^^1n|mb|1np|at|djneill:  North again here has the 11-13 balanced hand
+But North has 5 clubs!
+North still rebids 1NT since 11-13 balanced
+To rebid 2@c would show not just clubs, but also 4+ diamonds
+But North is not "both minors", just balanced, so rebids 1NT|
+pg| ***** 62 ***** |
+
+
+nt||sk|s|lb|*bPlease chose your bid.^^3n|mb|3nppp|sk||at|djneill: South has a very fine hand....18 HCP!
+In SAYC you would be gearing up for a slam try
+But let's think here,  if partner is 11-13 balanced, we have 29-31 HCP total
+No singleton, no void, no big fits
+So slam is unlikely - not even worth inviting on|
+pg| ***** 64 ***** |
+
+
+nt||at|This looks like it's in trouble
+With clubs not falling, it looks like it will take very lucky hearts
+But let's imagine
+If spades are 5-4, we can execute a suicide squeeze on E-W
+If we let them cash their 4 spades now, someone may be squeezed in hearts and clubs
+And we aren't risking much - just overtricks, if this were IMPs, it would be a valid play|
+pg| ***** 65 ***** |
+
+
+nt||
+pc|S5|pc|SQ|pc|S8|pc|S2|
+pg| ***** 66 ***** |
+
+
+pc|SK|pc|S3|pc|S9|pc|SA|
+pg| ***** 67 ***** |
+
+
+pc|S4|pc|C3|pc|SJ|pc|H4|
+pg| ***** 68 ***** |
+
+
+pc|S7|pc|C4|pc|ST|pc|H9|
+pg| ***** 69 ***** |
+
+
+pc|S6|pc|C8|pc|DJ|pc|C5|at|djneill:  OK, North has rectified the count
+North has lost exactly 4 tricks, and needs the rest
+If the @cQ is falling, it's cold
+Or, if someone has the long @h and @cQ, it's cold
+as here
+|
+pg| ***** 70 ***** |
+
+
+nt||
+pc|D4|pc|D2|pc|D8|pc|DQ|
+pg| ***** 71 ***** |
+
+
+pc|DA|pc|H2|pc|D7|pc|D3|
+pg| ***** 72 ***** |
+
+
+pc|D5|pc|C2|pc|DK|pc|D6|at|djneill:  East has too much to guard|
+pg| ***** 73 ***** |
+
+
+nt||
+pc|HA|pc|H3|pc|H5|pc|H7|
+pg| ***** 74 ***** |
+
+
+pc|HK|pc|H6|pc|H8|pc|HQ|
+pg| ***** 75 ***** |
+
+
+pc|CK|pc|C6|pc|C7|pc|CT|
+pg| ***** 76 ***** |
+
+
+pc|C9|pc|D9|pc|CA|pc|CQ|
+pg| ***** 77 ***** |
+
+
+pc|CJ|pc|HJ|pc|HT|pc|DT|
+pg| ***** 78 ***** |
+
+
+up|52|pf|y|at|djneill:  5@c would have been much easier, sorry guys :-)
+
+MM: You can try this again Double dummy if you wish, by clicking on the cards
+For the next deal click  ^$40|
+pg| ***** 79 ***** |
+
+
+pf||nt||
+
+
+%%%%%%board 8
+mn|session 4  board 8|
+qx|08|st||pn|South,West,North,East|rh||ah|example 8|sv|o|sk|n|
+md|3SAQT4HJ93DK965CT7,SJ72HKQT85D8CK986,SK98H42DAJT73CAJ3,S653HA76DQ42CQ542|
+mb|1dp|
+pg| ***** 80 ***** |
+
+
+sk|s|mb|1sp|
+pg| ***** 81 ***** |
+
+
+sk|n|lb|*bPlease chose your bid.^^1n|mb|1np|at|North again has the 11-13 balanced type
+I said it was the most common
+North this time has good 3-card support for South
+and no heart stopper, and 5 good diamonds
+The systemic bid here is not 2@s or 2@d, but 1NT
+By telling South about the 11-13 balanced in one bid, it helps South know what to do next.
+You do not have to announce 11-13 or alert, much like you don't have to announce a 1NT rebid in SAYC|
+pg| ***** 83 ***** |
+
+
+nt||sk|s|lb|*bPlease chose your bid.^^p|mb|
+pp|sk||at|djneill: South has 10 HCP
+Getting out the calculator again, we see N-S have 10 + (11-13)    =>   21-23 HCP
+That is not enough to even invite game on
+Generally, responder will invite with 12|
+pg| ***** 85 ***** |
+
+
+nt||
+
+
+
+%%%%%%board 9
+mn|session 4  board 9|
+qx|09|st||pn|South,West,North,East|rh||ah|example 9|sv|o|sk|n|
+md|3SA98632H765DQ6CQ3,SQT75HKJ98D9CJ765,SKHQ432DAK752CT92,SJ4HATDJT843CAK84|
+mb|1d|at|djneill:  North here has an interesting shape
+not 5-4 minors, not balanced, not 6+ @d's
+not 3-suited
+an oddball
+|
+pg| ***** 86 ***** |
+
+
+nt||mb|p|sk|s|mb|1sp|
+pg| ***** 87 ***** |
+
+
+sk|n|lb|*bPlease chose your bid.^^2c|mb|2cp|at|djneill:  The system bid here is 2@c
+North is not strong enough to reverse to 2@h, which would take 5+ @d's - 4 @h's and 14-15 HCP
+North only has 12
+And a 2@d rebid should have 6 diamonds
+So 2@c is the rebid here, it promises 8 cards in the minors   (or more)
+|
+pg| ***** 89 ***** |
+
+
+nt||sk|s|lb|*bPlease chose your bid.^^2s|mb|2sppp|
+pg| ***** 91 ***** |
+
+
+sk||at|djneill: South though has a 6-card spade suit so can rebid it, just like in SAYC
+North would never think of running to 2NT - not exactly a safety point
+The same bridge saying applies to all systems:
+"In a misfit, pass low and early"
+I suspect the final contract would be the same in SAYC|
+pg| ***** 92 ***** |
+
+
+nt||
+
+
+
+%%%%%%board 10
+mn|session 4  board 10|
+qx|10|st||pn|South,West,North,East|rh||ah|example 10|sv|o|sk|n|
+md|3SAKQJ65HJ72DT6C83,S8HQ6543DK97CKT97,S2HAK98DAQ542CJ54,ST9743HTDJ83CAQ62|
+mb|1dp|
+pg| ***** 93 ***** |
+
+
+sk|s|mb|1sp|
+pg| ***** 94 ***** |
+
+
+sk|n|lb|*bPlease chose your bid.^^2h|mb|2hp|at|djneill:  This time North has a reverse.
+Let's compare a ^*ureverse in precision^*n to a   ^*ureverse in SAYC^*n
+In SAYC, a reverse shows 17+ HCP, but Precision openings are limited to 11-15
+So the "max" in this case is just 14-15
+|
+pg| ***** 96 ***** |
+
+
+nt||sk|s|lb|*bPlease chose your bid.^^4s|mb|4sppp|
+pg| ***** 98 ***** |
+
+
+sk||at|djneill: South can't really see much point into anything but 4@s now
+11 HCP for South           14-15 for North
+So 25-26 total, enough for game
+Unfortunately there is a bad spade split
+and bad heart split|
+pg| ***** 99 ***** |
+
+
+nt||
+pc|CT|pc|C4|pc|CA|pc|C3|
+pg| ***** 100 ***** |
+
+
+pc|C2|pc|C8|pc|CK|pc|C5|
+pg| ***** 101 ***** |
+
+
+pc|C7|pc|CJ|pc|CQ|pc|S5|
+pg| ***** 102 ***** |
+
+
+pc|SA|pc|S8|pc|S2|pc|S3|
+pg| ***** 103 ***** |
+
+
+pc|SK|pc|H3|pc|D2|pc|S4|at|djneill:  the @d finesse may as well be on to make this
+so let's take it now.
+|
+pg| ***** 104 ***** |
+
+
+nt||
+pc|D6|pc|D7|pc|DQ|pc|D3|
+pg| ***** 105 ***** |
+
+
+pc|DA|pc|D8|pc|DT|pc|D9|
+pg| ***** 106 ***** |
+
+
+pc|D4|pc|DJ|pc|S6|pc|DK|
+pg| ***** 107 ***** |
+
+
+pc|SQ|pc|H4|pc|H8|pc|S7|
+pg| ***** 108 ***** |
+
+
+pc|SJ|pc|C9|pc|H9|pc|S9|at|djneill:  If @h's split 2-2 that's 10 tricks|
+pg| ***** 109 ***** |
+
+
+nt||
+pc|H2|pc|H5|pc|HK|pc|HT|
+pg| ***** 110 ***** |
+
+
+pc|HA|pc|ST|pc|H7|pc|H6|
+pg| ***** 111 ***** |
+
+
+pc|C6|pc|HJ|pc|HQ|pc|D5|
+pg| ***** 112 ***** |
+
+
+up|52|at|djneill:  darn
+
+|
+pg| ***** 113 ***** |
+
+
+nt||
+
+%%%%%%board 11
+mn|session 4  board 11|
+qx|11|st||pn|South,West,North,East|rh||ah|example 11|sv|o|sk|n|
+md|3SKJT9H964DAK53C98,S74HAKJT87DT4C542,SAQ2HQ3DQJ9762CJ7,S8653H52D8CAKQT63|
+mb|1dp|
+pg| ***** 114 ***** |
+
+
+sk|s|mb|1sp|
+pg| ***** 115 ***** |
+
+
+sk|n|lb|*bPlease chose your bid.^^2d|mb|2dp|at|djneill:  This time North is balanced, but the diamond suit is reasonable to rebid
+We said that inviting is 12 HCP in general|
+pg| ***** 117 ***** |
+
+
+nt||sk|s|lb|*bPlease chose your bid.^^3d|mb|3dp|at|djneill:  But here South has 11 and a 10-card diamond fit, 
+that must count for something extra|
+pg| ***** 119 ***** |
+
+
+nt||sk|n|mb|pp|sk||at|djneill:  North has a minimum... a BAD minimum
+The @hQx and @cJx could be worth zero
+This could be the same auction in SAYC
+Both East and West could overcall here, but we will go over competition next week
+Isabelle10:  You count two doubletons as balanced?
+djneill:  2 doubletons you can take a judgement call, but in general, YES
+I recommend opening/rebidding 1NT on 5422 shapes, unless the doubletons are very weak|
+pg| ***** 120 ***** |
+
+
+nt||at|
+djneill:  This hand would be interesting if North chose to rebid 1NT
+E-W could take the first 12 tricks :)
+|
+pg| ***** 121 ***** |
+
+
+nt||
+
+
+%%%%%%board 12
+mn|session 4  board 12|
+qx|12|st||pn|South,West,North,East|rh||ah|example 12|sv|o|sk|n|
+md|3SKT76HKT94D82CKT8,SA9832HQ8732DJC92,SQ4H5DAK753CAQ653,SJ5HAJ6DQT964CJ74|
+mb|1dp|
+pg| ***** 122 ***** |
+
+
+sk|s|mb|1hp|
+pg| ***** 123 ***** |
+
+
+sk|n|lb|*bPlease chose your bid.^^3c|mb|3cp|at|djneill: Now North has 5-5 maximum
+This hand will merit a jump rebid of some sort.
+|
+pg| ***** 125 ***** |
+
+
+nt||sk|s|lb|*bPlease chose your bid.^^3n|mb|3nppp|
+pg| ***** 127 ***** |
+
+
+sk||at|djneill:  South has very good major stoppers.
+9 HCP + 14-15 is 23-24
+The @cKT8 could be good too
+At IMPs, I would not mind taking a shot at 3NT here
+In SAYC, North may not have enough to rebid 3@c,  so  1@d - 1@h - 2@c is the start of the SAYC auction
+After that start, South with 9 can't really do much but Pass 2@c
+So Precision got us to the tight game.
+|
+pg| ***** 128 ***** |
+
+
+nt||
+
+pc|S3|pc|S4|pc|SJ|pc|SK|
+pg| ***** 129 ***** |
+
+
+pc|CK|pc|C2|pc|C3|pc|C4|
+pg| ***** 130 ***** |
+
+
+pc|C8|pc|C9|pc|CA|pc|C7|
+pg| ***** 131 ***** |
+
+
+pc|SQ|pc|S5|pc|S6|pc|SA|
+pg| ***** 132 ***** |
+
+
+pc|S9|pc|D3|pc|H6|pc|ST|
+pg| ***** 133 ***** |
+
+
+mc|9|
+pg| ***** 134 ***** |
+
+
+up|20|at|MM: You can play the hand DD if you wish
+For the next hand click     ^$40   |
+pg| ***** 135 ***** |
+
+
+nt||
+
+
+
+%%%%%%board 13
+mn|session 4  board 13|
+qx|13|st||pn|South,West,North,East|rh||ah|example 13|sv|o|sk|n|
+md|3SKT93HQJ2DAKQCK43,S852HA84D73CT8652,SAH7653DJ984CAQ97,SQJ764HKT9DT652CJ|
+mb|1dp|
+pg| ***** 136 ***** |
+
+
+sk|s|mb|1sp|
+pg| ***** 137 ***** |
+
+
+sk|n|lb|*bPlease chose your bid.^^2c|mb|2cp|at|djneill: North is unbalanced so cannot rebid 1NT
+So North rebids 2@c to show 8+ cards in the minors, unbalanced
+|
+pg| ***** 139 ***** |
+
+
+nt||sk|s|lb|*bPlease chose your bid.^^2h|mb|2hp|at|djneill:  South has 18
+If North has good shape, we might have slam
+So South can use 4th suit forcing (game forcing)
+I recommend game forcing 4th suit, but you can use whatever you want.
+|
+pg| ***** 141 ***** |
+
+
+nt||sk|n|mb|3hp|at|djneill:  North completes her shape with a @h-raise|
+pg| ***** 142 ***** |
+
+
+nt||sk|s|mb|3nppp|sk||at|djneill: South's hopes have been dashed, there is no clear fit.
+The @sK might be useless
+The calculator has North at 11-15, South at 18, so 29-33 HCP
+But with no fit, even 32 HCP could be difficult to play.
+3NT is the most secure contract.
+In SAYC, North might Pass, and thus you would probably reach the same contract   1@c - 1@h - 2NT - 3NT e.g.|
+pg| ***** 143 ***** |
+
+
+nt||
+
+
+%%%%%%board 14
+mn|session 4  board 14|
+qx|14|st||pn|South,West,North,East|rh||ah|example 14|sv|o|sk|n|
+md|3SJ9875HQJ4DAQCA95,SK432HA86DJT87C76,SAQ6H32DK9642CKJT,STHKT975D53CQ8432|
+mb|1dp|
+pg| ***** 144 ***** |
+
+
+sk|s|mb|1sp|
+pg| ***** 145 ***** |
+
+
+sk|n|lb|*bPlease chose your bid.^^1n|mb|1np|sk|s|lb|*bPlease chose your bid.^^2c|mb|2cp|at|djneill: Not only can you use 4th suit forcing in precision,
+you can also use ^*unew minor forcing^*n
+Pretty much all your SAYC bids can be used in precision.
+Just remember that in precision, opener is 11-15, not 12-21
+It's more precise, hence the name.
+|
+pg| ***** 148 ***** |
+
+
+nt||sk|n|mb|3sp|
+pg| ***** 149 ***** |
+
+
+sk|s|mb|4sppp|
+pg| ***** 150 ***** |
+
+
+sk||nt||
+
+
+
+%%%%%%board 15
+mn|session 4  board 15|
+qx|15|st||pn|South,West,North,East|rh||ah|example 15|sv|o|sk|n|
+md|3S72HAT4DQJ975CA73,SQ865HKQ5DK4CJ852,SAKJHJ986D32CQT94,ST943H732DAT86CK6|
+mb|1dp|
+pg| ***** 151 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^2n|mb|2np|at|djneill:  This time South has no 4 card major
+We will discuss 2 of a minor response to 1@d next time.
+But here, South is balanced so will bid some number of NT
+We talked about assuming opener is 11-13 BALANCED until further notice....
+So what should South bid opposite 11-13 balanced?
+It's 11, but a good 11, maybe an aggressive 2NT would be good
+|
+pg| ***** 153 ***** |
+
+
+nt||sk|n|lb|*bPlease chose your bid.^^p|mb|pp|
+pg| ***** 155 ***** |
+
+
+sk||at|djneill: North is 11 only so declines the invite.
+It will be an interesting contract - South needs lots of finesses.
+This hand may even be a Passout in SAYC!      11-11-11-7 around the table
+It's fun to play Precision, you get to open more hands than in SAYC or 2/1|
+pg| ***** 156 ***** |
+
+
+nt||
+
+
+
+%%%%%%board 16
+mn|session 4  board 16|
+qx|16|st||pn|South,West,North,East|rh||ah|example 16|sv|o|sk|n|
+md|3SQJH753DAJ54CJT93,SKT974H62DK76C754,S852HAQJ9DQT92CQ2,SA63HKT84D83CAK86|
+mb|1dp|
+pg| ***** 157 ***** |
+
+
+sk|s|mb|1nppp|
+pg| ***** 158 ***** |
+
+
+sk||at|djneill:  Last time, South bid 2NT
+Remember, South cannot be sure North has more than 2 diamonds (or 2 clubs), so South is forced to bid 1NT
+And of course North cannot know about the 4 diamonds South has either.
+South could be 2335 or 3334 e.g.     even 3325
+So rebidding 2@d would be quite risky, and 1NT is probably the right final contract|
+pg| ***** 159 ***** |
+
+
+nt||at|djneill:  This contract is doomed, everything is wrong.
+But it does make a number of spades for E-W so that's not too bad.
+Both not vulnerable, it's even a good matchpoint score
+Look if North Passes to start, as in SAYC, East opens 1@c, and E-W may end up in 1NT or 2@s
+Should make  +110 or  +120 maybe for E-W|
+pg| ***** 160 ***** |
+
+
+nt||at|djneill:  But in 1NT N-S, down 1 or 2 is just  -50 or  -100
+Very good for N-S here.
+The light openings do this frequently
+.........occasionally a bad score results :-)|
+pg| ***** 161 ***** |
+
+
+nt||
+
+
+%%%%%%board 17
+mn|session 4  board 17|
+qx|17|st||pn|South,West,North,East|rh||ah|example 17|sv|o|sk|n|
+md|3S642HQ63D42CAQT92,S97HKJT2DQ9865C43,SJ5H975DAKJTCKJ85,SAKQT83HA84D73C76|
+mb|1dp|
+pg| ***** 162 ***** |
+
+
+sk|s|mb|1np|
+pg| ***** 163 ***** |
+
+
+sk|n|lb|*bPlease chose your bid.^^2c|mb|2cppp|
+pg| ***** 165 ***** |
+
+
+sk||at|djneill: Here again, South bids 1NT
+Now, let's use some logic...   North knows South has no 4-card major
+So South must have a 4-card minor.
+North has no help in the majors either, so North can judge to rebid 2@c here|
+pg| ***** 166 ***** |
+
+
+nt||
+%%%%%%board 18
+mn|session 4  board 18|
+qx|18|st||pn|South,West,North,East|rh||ah|example 18|sv|o|sk|n|
+md|3SQ8765HJ7653D3CA9,HKQ982DKT7CT8752,ST943HA4DA9854CK4,SAKJ2HTDQJ62CQJ63|
+mb|1dp|
+pg| ***** 167 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^2h|mb|2hp|at|
+djneill:  Here we get into an artificial response by South to the 1@d opening that shows:    
+
+5@s's and 4/5 @h's    and a weak hand|
+pg| ***** 169 ***** |
+
+
+nt||at|The reason for this bid is two-fold:
+First, it describes the hand precisely
+Second, it preempts the opponents
+But there is a third reason:
+If opener is, say, 1453 and responder 5422,    it might start 1@d - 1@s - 2@c
+Both sides are too weak to find the heart fit.
+So this way you find the hearts
+|
+pg| ***** 170 ***** |
+
+
+nt||sk|n|lb|*bPlease chose your bid.^^2s|mb|2sppp|
+pg| ***** 172 ***** |
+
+
+sk||at|djneill:  South is proclaiming to be less than invite, so North, with just 11, 
+does not even consider inviting with the 9 card spade fit.
+North just corrects to spades.
+This is called "Reverse Flannery" sometimes.
+^*uIt is only in response to a 1@d opening^*n
+
+You may use it in your own SAYC or 2/1 system over a 1@c or 1@d opening if you like.
+|
+pg| ***** 173 ***** |
+
+
+nt||
+
+
+%%%%%%board 19
+mn|session 4  board 19|
+qx|19|st||pn|South,West,North,East|rh||ah|example 19|sv|o|sk|n|
+md|3SA9754HA754D3CK65,SKT8HK862DJ6CT972,SQJ2H3DQ985CAQ843,S63HQJT9DAKT742CJ|
+mb|1dp|
+pg| ***** 174 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^2s|mb|2sp|at|
+djneill: Here South is a bit stronger, let's call it an invite, since it is all Aces and Kings.
+This is also part of Reverse Flannery
+2@h was the ^*uweak^*n one           2@s is the ^*uinvite^*n one
+
+With 5@s-4@h  Game Force, you just bid 1@s to start, then hearts later.
+
+
+|
+pg| ***** 176 ***** |
+
+
+nt||sk|n|lb|*bPlease chose your bid.^^p|mb|pp|
+pg| ***** 178 ***** |
+
+
+sk||at|djneill: North has 3 spades (good) but a bare minimum strength.
+So there is no hand South would have that would make accepting the invite good.|
+pg| ***** 179 ***** |
+
+
+nt||
+
+
+%%%%%%board 20
+mn|session 4  board 20|
+qx|20|st||pn|South,West,North,East|rh||ah|example 20|sv|o|sk|n|
+md|3sA9862hJ842dJ2ct3,,sK753hQ73dK53cQJ2,|
+mb|1dp|
+pg| ***** 180 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^2h|mb|2hp|at|djneill: There is no real minimum strength for this 2@h response.|
+pg| ***** 182 ***** |
+
+
+nt||sk|n|lb|*bPlease chose your bid.^^2s|mb|2sppp|
+pg| ***** 184 ***** |
+
+
+sk||at|djneill: North corrects to @s  
+Remember, the weaker you are, the more likely the opponents have game.
+So N-S with just 17 HCP have preempted the auction quickly.  
+E-W can probably make 3@c or 3@d but would never know.  
+North got to open with just a bad 11 HCP because of the Precision system.|
+pg| ***** 185 ***** |
+
+
+nt||
+
+%%%%%%board 21
+mn|session 4  board 21|
+qx|21|st||pn|South,West,North,East|rh||ah|example 21|sv|o|sk|n|
+md|3SAJ973HQJT87DKT7,SKQT865HK4D32C652,HA532DAJ854CK874,S42H96DQ96CAQJT93|
+mb|1dp|
+pg| ***** 186 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^1s|mb|1sp|sk|n|mb|2cp|
+pg| ***** 188 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^3h|mb|3hp4hppp|
+pg| ***** 190 ***** |
+
+
+sk||at|
+This time South has 5 @s's -5 @h's but it is such an interesting shape and has good spots, 
+it's probably worth a game force.|
+pg| ***** 191 ***** |
+
+
+nt||
+
+
+%%%%%%board 22
+mn|session 4  board 22|
+qx|22|st||pn|South,West,North,East|rh||ah|example 22|sv|o|sk|n|
+md|3SJ9764HKQT8DA73C9,SA83HA97653DQCQ53,SK2HJ4DK9654CAJT6,SQT5H2DJT82CK8742|
+mb|1dp|
+pg| ***** 192 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^2h|mb|2hp|at|
+djneill: This time, South is pretty good, but less than invite|
+pg| ***** 194 ***** |
+
+
+nt||sk|n|lb|*bPlease chose your bid.^^2s|mb|2sppp|
+pg| ***** 196 ***** |
+
+
+sk||at|djneill:  North is not that happy 
+But, South for sure has 5 @s's
+So a 5-2 fit is better than nothing.|
+pg| ***** 197 ***** |
+
+
+nt||
+
+
+
+%%%%%%board 23
+mn|session 4  board 23|
+qx|23|st||pn|South,West,North,East|rh||ah|example 23|sv|o|sk|n|
+md|3SJ42HA8DKT97CAJ95,SK98HQ94D8CQT6432,SQ65HJT52DAQJ4CK8,SAT73HK763D6532C7|
+mb|1dp|
+pg| ***** 198 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^3n|mb|3nppp|
+pg| ***** 200 ***** |
+
+
+sk||at|djneill: Here South has enough for game - 13
+The best way to bid 3NT is quickly.|
+pg| ***** 201 ***** |
+
+
+nt||
+
+
+%%%%%%board 24
+mn|session 4  board 24|
+qx|24|st||pn|South,West,North,East|rh||ah|example 24|sv|o|sk|n|
+md|3SKQJ8754HAJ9C762,SA32HT6543DKJ5CAT,ST6HK7DQT62CKQJ85,S9HQ82DA98743C943|
+mb|1dp|
+pg| ***** 202 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^4s|mb|4sppp|
+pg| ***** 204 ***** |
+
+
+sk||at|djneill: Notice that South has 11 HCP
+Over 1@d, South though knows there probably is no slam.
+If North is 11-15, there are only 26 HCP max between the hands.
+So in Precision you can leap to games you would otherwise have to bid slowly on.
+This is not a weak bid, it is "to play"     (but it COULD be weak)
+Let the opponents figure it out.|
+pg| ***** 205 ***** |
+
+
+nt||at|
+Isabelle10:  What is bid if responder has 5 @H's and 4 @S's?
+djneill:  With 5@h-4@s, the plan is to bid 1@h first, and then see if opener rebids 1@s|
+pg| ***** 206 ***** |
+
+
+nt||
+
+
+%%%%%%board 25
+mn|session 4  board 25|
+qx|25|st||pn|South,West,North,East|rh||ah|example 25|sv|o|sk|n|
+md|3S82HKQJ7643DJ4C76,SKJ54H92DKT93CJ84,S97HA8DA652CKQ932,SAQT63HT5DQ87CAT5|
+mb|1dp|
+pg| ***** 207 ***** |
+
+
+sk|s|lb|*bPlease chose your bid.^^4h|mb|4hppp|
+pg| ***** 209 ***** |
+
+
+sk||at|djneill: To play!
+
+
+This concludes session 4
+To continue with session 5 click    ^$40
+|
+pg| ***** 210 ***** |
+
+

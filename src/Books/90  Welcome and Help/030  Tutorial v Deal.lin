@@ -1,0 +1,67 @@
+%%
+%% Tutorial v Deal
+%% Last edited   2018 Aug 01
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<<--INSERT-START-->>=005__Common_Header.ins
+%%
+fh|v24|        v-24     very small
+fh|s28|        s-28     small
+fh|j32|        j-32
+fh|k35|        k-35
+fh|e37|        e-37
+fh|t40|        t-40     title
+fh|n42|        n-42
+fh|p45|        p-45
+fh|b50|        b-50     big
+fh|g60|        g-60     graphSuit 
+fh|m64|        m-64     mastHead
+fh|c70|        c-70     chapTitle
+%
+fh|x33|ff|xCourier|          FONT   x-33-Courier
+%
+cr|a230|cg|a040|cb|a130|     a  action
+cr|b100|cg|b100|cb|b255|     b  light Blue
+cr|f200|cg|f255|cb|f255|     f  fake-button
+cr|h000|cg|h095|cb|h169|     h  h-highlight
+cr|p255|cg|p000|cb|p255|     p  pink    fake pink button
+cr|u160|cg|u040|cb|u200|     u  pUrple
+cr|y170|cg|y190|cb|y255|     y  youtube border
+%
+bt||
+fp|b-50|at|^^^^^a   @s @h @d @c  ^v     @c @d @h @s|fp||
+at|^b@2^z@3^^|
+ht|f|        
+%%
+<<--INSERT-END**-->>=005__Common_Header.ins
+
+
+qx|Tutor|
+mn|Tutorial  v  Deal|
+
+
+lg|c|
+
+at|You are playing a |cp|b|fp|n-42|at|^*bTutorial |fp|e-37|cp||at|^*bBridge Movie^*n|fp||cp||at|.   There is a second style of ^*bBridge Movie^*n that just has |fp|n-42|cp|b|at|^*bDeals|cp||fp||at|. This ^*bTutorial Bridge Movie^*n  (which is stored as a .lin file) is embedded inside the ^*baaBridge^*n app.
+
+You can see the location and name of this tutorial by looking at the very top, outer border, of this app's window.  The name is also displayed in the tall gray bar on the left and is highlighted by its own white box.
+
+|lg||at|
+|fp|n-42|cp|bl|at| ^*bQ.^*n|cp||fp||at|  What do you |fp|e-37|at|^*bdo^*n|fp||at| in a  |cp|b|fp|n-42|at|^*bTutorial |fp|e-37|cp||at|^*bBridge Movie ?^*n|fp||cp||at|
+
+|fp|n-42|cp|red|at| ^*bA.^*n|cp||fp||at|  ^*bPlay it^*n by  moving forward,  using your  |fp|e-37|cp|u|at|^*bMouse Wheel^*n|cp||fp||at|  or by clicking on the  |fp|n-42|cp|gr|at|^*bFlow >|cp||fp||at| button.
+
+^- @{ |fp|s|at|There is a Wheel & Trackpad ^*bsensitivity^*n setting  @-  Menubar > Options > ^*bSize & Misc^*n >  right hand column |fp||at|@} ^-
+
+To see the difference between the  ^*bFlow^*n  and  ^*bStep^*n  buttons, hover your cursor over each and read the tooltips.
+^^
+You can also jump around by using the  |fp|n-42|cp|gr|at|^*bNavigation Bar^*n|cp||fp||at|  at the bottom of each page (covered later).
+
+|lg|d|at|
+When you are NOT in a tutorial you will be |fp|n-42|cp|b|at|^*b in a Deal|cp||fp||at|^*n.  You can always tell when you are ^*bin a Deal^*n  because the navigation bar, bottom of the screen (below the Step and Flow buttons), shows the words |fp|k-35|cp||at|  ^*b Bid   Lead    End^*n|cp||fp||at|.
+
+In both modes you will often see a deal of four bridge hands on the screen, that is  |fp|e-37|cp||at|^*bnot|cp||fp||at|  the difference.|
+pg| ***** 0 ***** |
+
+

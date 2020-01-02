@@ -1,0 +1,349 @@
+%%
+%%
+
+ss|chapter,Boards                                              65 - 66 |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2016-05-12     set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Boldbida                            Play  Problems   2016|
+%%
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       on Title Pages   Precision Blue
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages   tiny tweek
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s25|                    Font   s  s-small
+fh|t40|                    Font   t  t-title             section titles (if any)
+fh|f42|                    Font   f  f-flow
+fh|b50|                    Font   b  b-bigTitle   bigger section titles
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+%%
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor      on Title Pages
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor   on Title Pages
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor      fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=03___FP_general_text.ins
+%%
+ht|j|
+Lg|e|
+at|If you are  |cp|red|at|^*bNew  to  aaBridge^*n|cp||at| please  click the |fp|t|at| @z |fp||at| button in the far top left and then click  { ^*bFlow^*n > }  button.
+Once you have a little knowledge about how to use   ^*baaBridge^*n   please come back to this 'movie'.|  
+%%
+ht|m|n#|7|fp|t|at|^*bInstructions^*n|fp||at|   -   When the   |cs||fp|t|at| { ^*b 1st ^*n } |cs||fp||at|  button is visible (bottom right) you can click it and ^*b PLAY ^*n the hand.|
+%%
+ht|p|fp|t-title|cp|blue|at|^- ^*b-----  Shuf Op  -----^*n     ^-|cp||fp||at|^^|
+n#|3|
+at|^b@2When  you are  'Inside a deal',  high on the left in green baize area you will see the  {^*b Shuf Op ^*n}  button.|
+n#|5|
+at|^^Click on it to shuffle the  East - West  cards and leave you ready to  PLAY  the hand against the 
+^o ^*b aaBridge ^*n bots and the new defensive layout.|
+%%
+<<--INSERT-END**-->>=03___FP_general_text.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+bv|a,v|    %% make all 3 buttons visible 
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+pg| ***** 0 ***** |
+
+
+st||
+--------------------------------------------------------------------
+qx|65 H|
+bv|a,h|
+nt|^b@2^^|rh||ah|Practice 65 |pn| , , , |
+md|1SA732HAQ73DA82CQ9,ST8HJ986DT954CK73,SKJ65H52DKQJC8542,SQ94HKT4D763CAJT6|
+sv|O|sk|S|
+nt|^z@3^b@2^^|
+Lg|f|
+n^|5|
+at|^*bPractice 65        Hand^*n |
+pg| ***** 1 ***** |
+
+
+mb|1N|mb|p|mb|2C|mb|p|mb|2H|mb|p|mb|3N|mb|p|mb|4s|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+pc|d4|
+eb|y___|
+pg| ***** 3 ***** |
+
+
+bv|f,h|
+at|      ^g taking  North   as the master hand we have  7  losers    2@s(s)   1@h(s)   4@c(2f, 2s)  
+         ^g taking  South  as the master hand we have  7  losers    2@s(s)   3@h(s)   2@c(f)| 
+pg| ***** 4 ***** |
+
+
+bv|f,v|
+n#|7|
+at|^^ |cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the analysis and play.|
+pf|first-button|
+pg| ***** 5 ***** |
+
+
+st||
+--------------------------------------------------------------------
+qx|65 A|
+up|99|
+eb||
+bv|f,h|
+nt|^z@3^b@2^^|
+Lg|f|
+n^|5|
+at|^*bPractice 65        Success A^*n |
+pg| ***** 6 ***** |
+
+
+pc|d4|
+at|^i taking South as the master hand we have  7  losers  2@s(s)   3@h(s)   2@c(f).
+With this many losers we are going to need a few things to go right such as the trumps being split  3-2  and at least one of the  @h  or  @s (trump) finesses working.|
+pg| ***** 7 ***** |
+
+
+at|^^If the  @h  finesse works we can draw two rounds of trumps leaving the @sQ out there.  Play on @h's ruffing in dummy and returning via the @dA to lead another.  If the Opps ruff, who cares as, we will be getting back the trick via our now unconsumed trump.            So we start by winning the trick in dummy and finesse the  @hQ. |
+pg| ***** 8 ***** |
+
+
+pc|dK|pc|d3|pc|d2|
+pg| ***** 9 ***** |
+
+
+pc|h2|pc|h4|pc|hQ|pc|h6|
+pg| ***** 10 ***** |
+
+
+pc|s2|pc|s8|pc|sK|pc|s4|
+pg| ***** 11 ***** |
+
+
+pc|s5|pc|s9|pc|sA|pc|sT|
+pg| ***** 12 ***** |
+
+
+pc|hA|pc|h8|pc|h5|pc|hT|
+pg| ***** 13 ***** |
+
+
+pc|h3|pc|h9|pc|s6|pc|hK|
+pg| ***** 14 ***** |
+
+
+pc|dJ|pc|d6|pc|dA|pc|d5|
+pg| ***** 15 ***** |
+
+
+pc|h7|pc|hJ|pc|sJ|
+pg| ***** 16 ***** |
+
+
+sk||
+nt|^z@3^b@2^^|
+Lg|f|
+n^|5|
+at|^*bPractice 65        Success A^*n |
+at|             It may not look it at first sight, but it really is all over.|
+pg| ***** 17 ***** |
+
+
+pc|sQ|
+bv|a,v|
+
+n#|7|
+at|^^West can ruff with the @sQ, any-time she wants to to but nothing can stop you getting your 10 tricks.|
+pf|cont-button|
+pg| ***** 18 ***** |
+
+
+st||
+--------------------------------------------------------------------
+qx|65 B|
+bv|a,h|
+up|99|
+sk|S|
+md|0,sQhK,,h68|  %% swap some cards around
+nt|^z@3^b@2^^|
+Lg|f|
+n^|5|
+at|^*bPractice 65        Success / Fail ?   B^*n  |
+pg| ***** 19 ***** |
+
+
+pc|d4|
+eb||
+at|   ^*bWhat if the @h finesse loses ? ^*n
+Of course the E-W hands have to be changed.  A layout is provided here with, this time, the trump finesse working and the @h finesse failing.            So the first couple of tricks would go. . . |
+pg| ***** 20 ***** |
+
+
+pc|dK|pc|d3|pc|d2|
+pg| ***** 21 ***** |
+
+
+pc|h5|pc|h6|pc|hQ|pc|hK|
+pg| ***** 22 ***** |
+
+
+pc|d5|
+pg| ***** 23 ***** |
+
+
+sk||
+bv|a,v|
+at|      Feel free to  PLAY  out  the rest.|
+at|^^|cp|green|at|^h( You will find that it cannot be made, against good defence )|cp||
+pf|cont-button|
+pg| ***** 24 ***** |
+
+
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+qx|66 H|
+bv|a,h|
+rh||ah|Practice 66 |pn| , , , |
+md|3SAK2HQ765DK3CKT83,SJTHKJ9DQ76CQ9765,S7543HA843DAT4CA4,SQ986HT2DJ9852CJ2|sv|O|sk|S|
+nt|^z@3^b@2^^|
+Lg|f|
+n^|5|
+at|^*bPractice 66        Hand^*n |
+pg| ***** 25 ***** |
+
+
+mb|1D|mb|p|mb|1H|mb|p|mb|2H|mb|p|mb|4H|mb|p|mb|p|mb|p|
+pg| ***** 26 ***** |
+
+
+pc|sJ|
+eb|y___|
+pg| ***** 27 ***** |
+
+
+at|      ^g taking  North   as the master hand we have  6  losers    2@s(s)   3@h(s)   1@d(s)
+		 ^g taking  South  as the master hand we have  6  losers    1@s(s)   3@h(s)   2@c(s)|
+pg| ***** 28 ***** |
+
+
+bv|f,v|
+n#|7|
+at|^^ |cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the analysis and play.|
+pf|first-button|
+pg| ***** 29 ***** |
+
+
+st||
+--------------------------------------------------------------------
+qx|65 S|
+bv|a,h|
+up|99|
+nt|^z@3^b@2^^|
+Lg|e|
+n^|5|
+at|^*bPractice 66        Success^*n |
+pg| ***** 30 ***** |
+
+
+pc|sJ|
+eb||
+at|^i taking  South  as the master hand we have  6  losers    1@s(s)   3@h(s)   2@c(s)
+With this many losers and weak trumps we need to keep trump control.  So duck the first round of trumps (@h's), win the return.  Draw a 2nd round of trumps (@h's) with the Ace and play to ruff both your low clubs in dummy.|
+n#|2| 
+at|^^It will not matter when or even if an Opp ruffs with the @hK (master trump).|
+pg| ***** 31 ***** |
+
+
+pc|s3|pc|s6|pc|sA|
+pg| ***** 32 ***** |
+
+
+pc|h5|pc|h9|pc|h3|pc|h2|
+pg| ***** 33 ***** |
+
+
+pc|sT|pc|s7|pc|s8|pc|sK|
+pg| ***** 34 ***** |
+
+
+pc|h6|pc|hJ|pc|hA|pc|hT|
+pg| ***** 35 ***** |
+
+
+pc|cA|pc|c2|pc|c3|pc|c5|
+pg| ***** 36 ***** |
+
+
+pc|c4|pc|cJ|pc|cK|pc|c6|
+pg| ***** 37 ***** |
+
+
+pc|c8|pc|c9|pc|h4|pc|d2|
+pg| ***** 38 ***** |
+
+
+pc|d4|pc|d5|pc|dK|pc|d6|
+pg| ***** 39 ***** |
+
+
+pc|cT|pc|cQ|pc|h8|pc|d8|
+pg| ***** 40 ***** |
+
+
+pc|dA|pc|d9|pc|d3|pc|d7|
+pg| ***** 41 ***** |
+
+
+pc|dT|pc|dJ|pc|h7|pc|dQ|
+pg| ***** 42 ***** |
+
+
+sk||
+bv|a,v|
+pf|cont-button|
+pg| ***** 43 ***** |
+
+

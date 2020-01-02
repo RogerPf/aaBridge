@@ -1,0 +1,732 @@
+%% Make your plan; How to win tricks
+
+mn| Al (xx1943) teaching : Declarer play for beginners (1)|
+tu||
+bt||
+fh|150|ff|1Arial|fb|110|fm|1|
+fh|235|ff|2Arial|fb|28|fm|2|
+fh|340|ff|3Arial|fb|35|fm|3|
+fb|49|fm|4|fb|4|fm|4|
+cr|116|cg|116|cb|1255|              blau
+cr|2255|cg|2255|cb|264|             gelb
+cr|30|cg|30|cb|3128|                dunkelblau
+cr|4255|cg|4255|cb|40|              dunkleres gelb
+cr|516|cg|5128|cb|516|              grün
+cr|6245|cg|6235|cb|6220|            beige
+cr|70|cg|7210|cb|70|                licht grün
+cr|8255|cg|8200|cb|8200|            rosa
+cr|9250|cg|9220|cb|9180|            braun
+
+
+qx|Menu|
+bg|6|pf||nt||
+cs|3|cp|4|fp|2|
+at|^-{ Al teaching }
+
+{ D E C L A R E R   P L A Y   F O R   B E G I N N E R S }
+^-|
+cp||cs|2|fp||
+ht|f|
+at|^f@2
+{
+^*Gintro, ^gIntroduction ^kAbout this series of lessons              ^*N
+^*Gconclusion, ^kWhat you'll learn in this lesson^*N
+^*Gbooks, ^kRecommendations^*N
+
+^*Go1, ^gExample 1 ^kPlay without a plan^*N 
+^*Go1a, ^kMake your plan^*N 
+^*Go1b, ^kPrevent defenders to take their tricks  ^*N 
+
+^*Go2, ^gExample 2 ^kDefenders win the race?^*N 
+^*Go2a, ^kDeclarer wins the race!^*N 
+
+^*Go3, ^gExample 3 ^k10 tricks to cash??^*N 
+^*Go3a, ^k9 tricks is enough^*N 
+^*Go3b, ^kFree play^*N
+
+^*Gcredits, ^gCredits^*N 
+}
+@0@1| %%% Reset tabulator
+ht|y|fp||at|
+(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon") and Mihailo Krstic ("Miksa")|
+pg| ***** 0 ***** |
+
+
+qx|intro|
+bg|6|pf||nt||
+cs|3|cp|4|fp|2|
+at|^-{ Al teaching - About this series of lessons }
+^-|
+cp||cs|9|fp||
+ht|d|
+at|^b@2{* My target group are absolutely beginners.
+
+* My topic is the DECLARER PLAY; not the bidding, not the defense.
+
+* I presuppose only a few things about bridge which you can find here:
+^c^*Hwww.rpbridge.net/1a00.htm^*N Learn to play bridge with Richard Pavlicek
+^c^*Hwww.rpbridge.net/1t05.htm ^*N Introduction to R. Pavlicek lessons
+^c^*Hwww.prairienet.org/bridge/start.htm^*N Getting started with Karen's bridge library
+^c^*Hwww.prairienet.org/bridge/glos.htm^*N Glossary for Beginners in Karen's bridge library
+
+
+^bIf you have any question feel free to mail me to albrecht.hollstein@@freenet.de}
+|
+fp|2|at|
+{If you like my lessons, tell it to others, if you dislike something, tell it to me.}@0@1|
+ht|y|fp||at|
+(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon") and Mihailo Krstic ("Miksa")|
+pg| ***** 1 ***** |
+
+
+qx|conclusion|
+bg|6|pf||nt||
+cs|3|cp|4|fp|2|
+at|^-{ Al teaching - What you'll learn in this lesson }
+^-|
+cp||cs|9|fp||
+ht|d| %% Vertikale position
+at|^c@2{* Make your plan of play, BEFORE you touch a card in dummy!!!
+
+* The plan for a NT contract consists of the following steps:
+^d@21. Count your sure tricks in high cards.
+2. Calculate how many additional tricks are needed to make your bid.
+3. Decide from which suit these tricks may come from.
+4. Be aware what can damage your plan.
+    4.1 Can opponents do me any harm?
+    4.2 Is there a dangerous opponent?
+    4.3 Are there enough entries to my long suit (either in dummy or in my hand)
+    4.4 Is there a danger to block suits?
+    4.5 What do I discard, when a long suit is played?
+
+^c@2* The Hold-up play is a great weapon to cut off the opponents communication 
+^d(transportation).
+
+* The RULE OF 7 tells how often you should normally hold up
+^d^*Hhomepage.mac.com/bridgeguys/Conventions/Rule7.html^*N
+
+* Do not mix up counting "sure" and "potential" losers.}@0@1|
+ht|y|at|
+(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon") and Mihailo Krstic ("Miksa")|
+pg| ***** 2 ***** |
+
+
+qx|books|
+bg|6|pf||nt||
+cs|3|cp|4|fp|2|
+at|^-{ Al teaching - Recommendations }
+^-|
+cp||fp||ht|d|at|Books|
+cs|8|at|^e{^f@21) Robert Berthe, Norbert Lebely: "Step by Step" Vol1 NT-declarer-play. 
+    This is the best book to learn the basics
+
+2) Victor Mollo, Nico Gardener: Card Play technique
+    A classical from 1955, but useful forever
+
+3) William S. Root: How to play a bridge hand.
+    12 easy chapters to winning bridge
+
+4) Louis H. Watson: Play of the hand at bridge
+    Another classical from 1934; very instructive, but you need time }@0|
+pg| ***** 3 ***** |
+
+
+cp||ht|r|at|Software|
+cs|7|at|^e{^f@21) Learn to play bridge
+    Great introduction and it is free.
+    ^*Hweb3.acbl.org/internet/websiteForms.nsf/ltpbForm?OpenForm^*N     
+
+2) Bridge Master 2000 by Fred Gitelman
+    The best software to learn declarer play.
+    ^*Hbbi.bridgebase.com/software/bmdesc.html^*N }|
+pg| ***** 4 ***** |
+
+
+qx|o1, Example 1 - Play without a plan|
+sk||st||pf||sk|S|
+md|3SA432hk32dk32ckq2,skqjt9h45d456c456,s56ha67da78cjt987,|
+sv|0|
+rh||ah|Example 1|ah|Play without a plan|
+mb|pp1np3nppp|
+pc|sk|nt|This is a beginner's play without a plan.|
+pg| ***** 5 ***** |
+
+
+at| Declarer cashes his 5 top cards in a hurry,|pc|sssA|
+pg| ***** 6 ***** |
+
+
+pc|hkhhh|
+pg| ***** 7 ***** |
+
+
+pc|hhhAh|
+pg| ***** 8 ***** |
+
+
+pc|dddKd|
+pg| ***** 9 ***** |
+
+
+pc|dddad|at| and then hopes for the best.|
+pg| ***** 10 ***** |
+
+
+pc|ccAcc|sk|E|at|
+BUT alas, East (the RHO) can claim now. He can count 3@h+2@d+1@c+2@s (with partner)=8 tricks.|
+pg| ***** 11 ***** |
+
+
+sk||at|
+But let's play all 13 tricks, to demonstrate how this works:|
+pg| ***** 12 ***** |
+
+
+pc|hhch|
+pg| ***** 13 ***** |
+
+
+pc|hscs|
+pg| ***** 14 ***** |
+
+
+pc|hddd|
+pg| ***** 15 ***** |
+
+
+pc|dssc|
+pg| ***** 16 ***** |
+
+
+pc|dssc|
+pg| ***** 17 ***** |
+
+
+pc|scsc|
+pg| ***** 18 ***** |
+
+
+pc|sccc|at|
+Declarer made only 5 tricks instead of 9 for what he contracted.|
+pg| ***** 19 ***** |
+
+
+at||
+sk||up|52|sb|SDid I do something wrong??|
+pg| ***** 20 ***** |
+
+
+nt|Probably something went wrong when you go down -4 in 3NT holding 24 HCP in the combined hands.
+
+So let's start the hand from the beginning and make another try:|
+pg| ***** 21 ***** |
+
+
+qx|o1a, Example 1 - Make your plan|
+sk||st||pf||sk|S|
+md|3SA432hk32dk32ckq2,skqjt9h45d456c456,s56ha67da78cjt987,|sv|0|
+rh||ah|Example 1|ah|Make your plan|
+mb|pp1np3nppp|
+pc|sk|
+nt|This time let's make a plan.
+|cs|2|
+at|^- 
+{Rule 1: Make your plan of play, BEFORE you touch a card in dummy.}
+^-|
+pg| ***** 22 ***** |
+
+
+nt||sb|SHow many tricks do I have from the top?|
+pg| ***** 23 ***** |
+
+
+hc|sA|at|1@s +|
+pg| ***** 24 ***** |
+
+
+hc|hAK|at| 2@h +|
+pg| ***** 25 ***** |
+
+
+hc|dAK|at| 2@d = 5
+|
+pg| ***** 26 ***** |
+
+
+at||lc|sAhAKdAK|sb|SHow many tricks need I to establish?|
+pg| ***** 27 ***** |
+
+
+at|You contracted for 3NT so you need 9 tricks. 9 - 5 = 4 more tricks are needed.
+|
+pg| ***** 28 ***** |
+
+
+at||sb|SWhich suit(s) will provide the 4 missing tricks?|
+pg| ***** 29 ***** |
+
+
+hc|cKQJT9872|at|@cs will provide 4 tricks, AFTER the low honors are promoted, i.e. after the A is driven out.|
+pg| ***** 30 ***** |
+
+
+at||sb|SOk, let's promote the Clubs.|
+pg| ***** 31 ***** |
+
+
+lc|cKQJT9872|sb|S|at||
+pc|sssA|
+pg| ***** 32 ***** |
+
+
+pc|ckccca|
+pg| ***** 33 ***** |
+
+
+pc|ssss|
+pg| ***** 34 ***** |
+
+
+pc|shcs|
+pg| ***** 35 ***** |
+
+
+pc|sdhs|
+pg| ***** 36 ***** |
+
+
+pc|scdc|
+pg| ***** 37 ***** |
+
+
+mc|8|nt|Hmhhhh, declarer has the rest of the tricks, but alas, he is down again. The defenders took 5 tricks. 
+Declarer made only 8 tricks while he contracted for 9.|
+pg| ***** 38 ***** |
+
+
+at||
+sb|SIs there anything I could do to prevent WEST from cashing his tricks?|
+pg| ***** 39 ***** |
+
+
+nt|Yes, you have a chance to make 9 tricks, BEFORE they make 5. 
+You should apply a hold-up play.|
+pg| ***** 40 ***** |
+
+
+at|
+Let us start the hand again:|
+pg| ***** 41 ***** |
+
+
+qx|o1b, Example 1 - Prevent defenders|
+sk||st||pf||sk|S|
+md|3SA432hk32dk32ckq2,skqjt9h45d456c456,s56ha67da78cjt987,|sv|0|
+rh||ah|Example 1|ah|Prevent defenders|
+mb|pp1np3nppp|nt||
+pc|sk|nt|You made your plan:
+1. How many sure tricks do I have?|
+pg| ***** 42 ***** |
+
+
+at| 1@s + 2@h + 2@d = 5
+|
+pg| ***** 43 ***** |
+
+
+at|2. How many tricks do I need yet?|
+pg| ***** 44 ***** |
+
+
+at| 9 - 5 = 4
+|
+pg| ***** 45 ***** |
+
+
+at|3. Where will the 4 missing tricks come from?|
+pg| ***** 46 ***** |
+
+
+at| @c
+|
+pg| ***** 47 ***** |
+
+
+at|There is one more question to ask: What damage can be done by defenders?|
+pg| ***** 48 ***** |
+
+
+sb|SWhat damage can be done by defenders?|
+pg| ***** 49 ***** |
+
+
+nt|Defenders can cash 4@s tricks along with the @cA.|
+pg| ***** 50 ***** |
+
+
+at||sb|SHow can I prevent this?|
+pg| ***** 51 ***** |
+
+
+nt|There are 13 @s-cards in the deck. You and dummy own 6 of them.
+So defenders have got 7 @ss. These can be distributed 7-0, 6-1, 5-2 or 4-3.|
+pg| ***** 52 ***** |
+
+
+nt|Let us assume that West has led from a long @s-suit (4, 5, 6 or 7 cards).
+There is no problem if the distribution is 4-3. They can only cash 4 tricks (3@s and @cA).
+If @s are 7-0 or 6-1 and the @cA is with East, he cannot reach West to give him the lead to cash his high @ss.
+The only critical situation is a 5-2 distribution with East holding @cA and exactly 2 @ss.|
+pg| ***** 53 ***** |
+
+
+at||sb|SOhhhhhhhhhh, I guess I got it!|
+pg| ***** 54 ***** |
+
+
+sb|SI have to refuse the first trick and destroy defenders transportation.|
+pg| ***** 55 ***** |
+
+
+pc|sss|nt|Clap, clap, clap, you executed a HOLD-UP PLAY.|sb|S|
+pg| ***** 56 ***** |
+
+
+pc|sQsssA|
+pg| ***** 57 ***** |
+
+
+pc|cKccc|at|
+Defenders are allowed to hold-up too LOL.|
+pg| ***** 58 ***** |
+
+
+pc|cQccc|nt|Now the contract is safe as long as West holds the longer @s-suit.
+If East has got another @s, that means the suit is distributed 4-3 and defenders make only 3 @s-tricks.
+And if the suit is distributed 5-2, East has no other @s to return.|
+pg| ***** 59 ***** |
+
+
+sk||mc|9|nt|Declarer claims his 9 tricks.|
+pg| ***** 60 ***** |
+
+
+sc|y|mc|9|
+pg| ***** 61 ***** |
+
+
+qx|o2, Example 2 - Defenders win the race?|
+%% Hold-up twice
+sk||st||pf||sk|S|
+md|4SA32hk32dk32ckq32,skqjt9h45d456c456,s56ha67da78cjt987,|sv|n|
+rh||ah|Example 2|ah|Defenders|ah|win the race?|
+mb|p1np3nppp|pc|sk|nt|Another example.|
+pg| ***** 62 ***** |
+
+
+at||sb|SThis hand is identical to the first example. I've learned my lesson!|
+pg| ***** 63 ***** |
+
+
+pc|sss|sb|SPerfect Hold-up.|
+pg| ***** 64 ***** |
+
+
+pc|sQsssa|sb|SNow let's develop the nice clubs.|
+pg| ***** 65 ***** |
+
+
+pc|ckcccA|
+pg| ***** 66 ***** |
+
+
+pc|s|sb|SOuch, East has a spade left!|
+pg| ***** 67 ***** |
+
+
+nt|And down goes the contract, when defenders scored @cA and 4 @s-tricks.|sk||mc|8|
+pg| ***** 68 ***** |
+
+
+cs|y|nt|The hand isn't identical to the first example! This time you hold only 5 cards in the @s-suit, so the possible distributions are 8-0, 7-1, 6-2, 5-3 and 4-4.|sb|S|
+pg| ***** 69 ***** |
+
+
+at|
+The critical distributions are now 6-2 and 5-3.|
+pg| ***** 70 ***** |
+
+
+at|
+Holding-up once guarded against 6-2, but not against 5-3 distribution.|
+pg| ***** 71 ***** |
+
+
+at|
+If the short hand holds 3 cards, it is necessary to hold up twice.|
+pg| ***** 72 ***** |
+
+
+nt||cs|2|at|^-
+{The RULE OF 7 tells how often you should normally hold up}
+
+{^*Hhomepage.mac.com/bridgeguys/Conventions/Rule7.html^*N}
+^-|
+pg| ***** 73 ***** |
+
+
+qx|o2a, Example 2 - Declarer wins the race!|
+%% Hold-up twice
+sk||st||pf||sk|S|
+md|4SA32hk32dk32ckq32,skqjt9h45d456c456,s56ha67da78cjt987,|sv|n|
+rh||ah|Example 2|ah|Declarer|ah|wins the race!|
+mb|p1np3nppp|pc|sk|nt|We repeat the plan we made in the first example:|
+pg| ***** 74 ***** |
+
+
+nt|1. How many sure tricks do I have: |
+pg| ***** 75 ***** |
+
+
+at| 1@s + 2@h + 2@d = 5
+|
+pg| ***** 76 ***** |
+
+
+at|2. How many tricks do I need yet?|
+pg| ***** 77 ***** |
+
+
+at| 9 - 5 = 4
+|
+pg| ***** 78 ***** |
+
+
+at|3. Where will the 4 missing tricks come from?|
+pg| ***** 79 ***** |
+
+
+at| @c.
+|
+pg| ***** 80 ***** |
+
+
+at|4. How can I prevent WEST from cashing his @ss?|
+pg| ***** 81 ***** |
+
+
+at| I must hold up twice, according to the Rule of 7: 7 - ( 2 + 3 ) = 7 - 5 = 2.|
+pg| ***** 82 ***** |
+
+
+nt|All hands are shown, because you know them already.
+And here we go:|sk||
+pg| ***** 83 ***** |
+
+
+pc|sss|
+pg| ***** 84 ***** |
+
+
+pc|sqsss|at|
+Executed the second hold up. 7-5 (cards in my combined hands) = 2 times to hold up.|
+pg| ***** 85 ***** |
+
+
+at||
+pc|sjdss|
+pg| ***** 86 ***** |
+
+
+pc|ckccc|
+pg| ***** 87 ***** |
+
+
+pc|h|nt|Bravo!! East has no @S to return. 
+Declarer can cash 8 more tricks (2@h + 2@d + 4@c = 8 tricks).|mc|9|
+pg| ***** 88 ***** |
+
+
+qx|o3, Example 3 - 10 tricks to cash??|
+%% Establish side-suits first
+st||sk|S|pf||sc||
+md|1Sq23hkqtdkqj2c234,sat86haj975dat86,sj4h23d534cakqjt9,|sv|e|
+rh||ah|Example 3|ah|10 tricks to cash??|
+mb|1dx2cp2np3nppp|
+nt|Here is another example.|pc|h7|
+pg| ***** 89 ***** |
+
+
+at| Declarer "counts" his tricks:
+2@h + 2@d + 6@c = 10
+The defenders can only cash the 2 red Aces, @sA and @sK, so 9-10 tricks should be made.|
+pg| ***** 90 ***** |
+
+
+at||
+sb|SI've got a nice suit and a lot of tricks. Let's cash them and see what happens.|
+pc|hhh|
+pg| ***** 91 ***** |
+
+
+sb|s|
+pc|cscc|
+pg| ***** 92 ***** |
+
+
+pc|caccs|
+pg| ***** 93 ***** |
+
+
+pc|cccd|
+pg| ***** 94 ***** |
+
+
+pc|ccdd|
+pg| ***** 95 ***** |
+
+
+pc|cd|sb|SIf I discard a spade, they'll cash 4 tricks in that suit. Grrrrrrrrrr|
+at|
+But he didn't think about how to realize his tricks.|
+pg| ***** 96 ***** |
+
+
+pc|dd|at|
+Declarer squeezed himself. He had to discard his @d winners in order to keep the @ss guarded.|
+pg| ***** 97 ***** |
+
+
+pc|cddh|sb|S|
+pg| ***** 98 ***** |
+
+
+pc|hhhha|
+pg| ***** 99 ***** |
+
+
+pc|ddhd|
+pg| ***** 100 ***** |
+
+
+at||pc|hdsh|
+pg| ***** 101 ***** |
+
+
+pc|sssjsk|
+pg| ***** 102 ***** |
+
+
+pc|ssss|
+pg| ***** 103 ***** |
+
+
+pc|hdss|
+pg| ***** 104 ***** |
+
+
+sk||up|52|nt|This is what happened:
+Declarer mixed up "sure" tricks with "potential" tricks. After the first trick declarer had 1@h+6@c=7 sure tricks and 3 more "potential" tricks in the red suits.
+He must promote these tricks by driving out the red Aces BEFORE he cashes his long @cs.|
+pg| ***** 105 ***** |
+
+
+bt||bg|6|nt||
+cs|3|cp|4|fp|2|
+at|^-{ Al teaching - The plan for a NT contract }
+^-|
+cp||cs|9|fp||
+ht|c|
+at|So we must add some subitems to question 4 of our agenda:
+
+|
+at|^c@2{
+^d1. How many sure tricks are there?
+
+^d2. How many tricks are needed yet?
+
+^d3. Where will the needed tricks come from?
+
+^d4. What can happen?
+
+^e4.1 Can opponents do me any harm?
+
+^e4.2 Is there a dangerous opponent?
+
+^e4.3 Are there enough entries to my long suit (either in dummy or in my hand)?
+
+^e4.4 Is there a danger to block suits?
+
+^e4.5 What do I discard, when a long suit is played? 
+}
+@0@1|
+pg| ***** 106 ***** |
+
+
+at|
+Now let's play Example 3 once more.|
+pg| ***** 107 ***** |
+
+
+qx|o3a, Example 3 - 9 tricks is enough|
+%% Establish side-suits first
+st||sk|S|pf||sc||
+md|1Sq23hkqtdkqj2c234,sat86haj975dat86,sj4h23d534cakqjt9,|sv|e|
+mb|1dx2cp2np3nppp|pc|h7|nt||
+rh||ah|Example 3|ah|9 tricks is enough|
+pg| ***** 108 ***** |
+
+
+pc|hhh|
+pg| ***** 109 ***** |
+
+
+pc|dkddd|nt|Good hold-up play by opponent.|
+pg| ***** 110 ***** |
+
+
+pc|dqdadd|at|
+Now declarer has 1@h+2@d+6@c=9 sure tricks.
+Opponents can cash at most 2 red Aces and @sA and K.
+So you can claim 9 tricks at once or wait for a defensive slip (maybe they present you with a 10th trick LOL).|
+pg| ***** 111 ***** |
+
+
+up|52|sc|y|mc|9|sk||
+pg| ***** 112 ***** |
+
+
+qx|o3b, Example 3 - Free play|
+rh||ah|Example 3|ah|Free play|
+sk||sc||
+nt||cs|2|ht|b|
+md|1Sq23hkqtdkqj2c234,sat86haj975dat86,sj4h23d534cakqjt9,|sv|e|
+mb|1dx2cp2np3nppp|pc|h7|
+at|^-
+{You may now play whatever cards you like! Just click on the card you wish to play.
+ The most recently played card may be taken back by clicking on ^$6 , Undo.
+Once a trick is complete, click on the first card of the next trick.
+Inspect a played trick by pointing at it with the mouse.}|
+pf|y|
+pg| ***** 113 ***** |
+
+
+qx|credits|
+bt||bg|6|pf||nt||
+cs|3|cp|4|fp|2|
+at|^-{ Al teaching - Credits }
+^-|
+cp||cs|9|fp||
+ht|d|
+at|^b@2{All hands in this lesson are composed by me, so no credits to any other authors.
+
+Many thanks to Yvon and Mihailo for their help, hints and suggestions.}@0@1|
+ht|y|fp||at|
+(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon") and Mihailo Krstic ("Miksa")|
+pg| ***** 114 ***** |
+
+

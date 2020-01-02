@@ -1,0 +1,201 @@
+
+
+%% 2019-07-26  Patterns
+
+%% All hands are copyright  Richard Pavlicek
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+bv|a,h|   %% hide all three buttons
+%%
+ss|head,     ah`Part 2.    Finesse`|
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+<<--INSERT-START-->>=07___FP_Patterns.ins
+%%
+fh|b48| %%  'banner' font
+fh|t40| %%  'target' font
+fh|s28| %%  'small'  font
+fh|p45| %%  'pink dot' size
+
+cr|a230|cg|a040|cb|a130|          a  action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       pink dot button
+
+bv|e,h| %%   Enter the deal button hidden
+bv|f,v| %%   1st visible 
+bv|d,v| %%   DDS visible
+
+ha|y|   %%   hide auctions
+
+ss|banner,   ht`e`fp`b-big`at`^*b^L  ^*nFinesse^*n`fp``|
+ss|link,     ht`z`at`^L     visit  Richard Pavlicek's  Finesse  page    ^*h http://www.rpbridge.net/9g41.htm, rpbridge.net  9g41^*n`|
+ss|means,    ht`e`fp`small`at`^x ^*h http://www.rpbridge.net/9gc8.htm, meaning^*n`fp``|
+ss|new,      nt`^b@2^^`vv`means`vv`link`vv`banner`ht`e`vv`head`|
+ss|contract, mb`3nppp`|
+ss|p1,       vv`contract`wt`s`sk`s`fp`t`ht`e`at`^q    ^*b`|
+ss|p2,       fp`t`ht`e`at`^*n^u`|
+ss|p3,       fp``ht`q`at`^d`|
+%%
+<<--INSERT-END**-->>=07___FP_Patterns.ins
+
+
+qx|31|
+rh||ah|Pattern 31|
+vv|new|at|^*b 31.  Obligatory duck^*n|
+%
+md|1  Q32 A, A6 KQ, K54 2, JT98|
+%
+bs|6,3|
+vv|p1|at|win 3|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 0 ***** |
+
+
+qx|32|
+rh||ah|Pattern 32|
+vv|new|at|^*b 32.  Entry retention combined^*n|
+%
+md|1  932 A2, Q765 3, AJT8 4, K4 KQJ|
+%
+bh|Play, East, hU, res, p1,  T2,  always|
+%
+bs|5,3|
+vv|p1|at|win 4|
+vv|p2|at|auto bi|
+vv|p3|at||
+pg| ***** 1 ***** |
+
+
+qx|33|
+rh||ah|Pattern 33|
+vv|new|at|^*b 33.  Unblock ^*n|
+%
+md|1  AT65, K7 KQ, Q4 A2, J98 3|
+%
+bh|Play, W, sU, res, p2,  T1,  always|
+%
+bs|6,3|
+vv|p1|at|win 3|
+vv|p2|at|bi|
+vv|p3|at||
+pg| ***** 2 ***** |
+
+
+qx|34|
+rh||ah|Pattern 34|
+vv|new|at|^*b 34.  Unblock combined^*n|
+%
+md|1  J2 A43, Q9865, AT43 2, K7 KQJ|
+%
+bh|Play, East, hU, res, p1,  T2,  always|
+%
+bs|6,2|
+vv|p1|at|win 3|
+vv|p2|at||
+vv|p3|at||
+wt|w|
+pc|s5|
+pg| ***** 3 ***** |
+
+
+qx|35|
+rh||ah|Pattern 35|
+vv|new|at|^*b 35.  Unblock duck^*n|
+%
+md|1  T92 AK2, KJ76 65, A843 43, Q5 QJT9|
+%
+bh|Play, S, s9, res, p4,  T1,  always|
+bh|Play, E, hU, res, p1,  T2,  always|
+bh|Play, S, sU, res, p1,  T3,  always|
+bh|Play, W, sU, res, p2,  T3,  always|
+bh|Play, N, sL, res, p3,  T3,  always|
+%
+bs|5,2|
+vv|p1|at|win 4|
+vv|p2|at||
+vv|p3|at||
+wt|w|
+pc|s6|
+eb|y___|
+pg| ***** 4 ***** |
+
+
+qx|36|
+rh||ah|Pattern 36|
+vv|new|at|^*b 36.  Preparatory unblock^*n|
+%
+md|1  AT2 32, J765 4, KQ943, 8 AKQJ|
+%
+bh|Play, N, sU, res, p3,  T1,  always|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at|bi|
+vv|p3|at||
+pc|sT|
+eb|y___|
+pg| ***** 5 ***** |
+
+
+qx|37|
+rh||ah|Pattern 37|
+vv|new|at|^*b 37.  Entry retention unblock dual^*n|
+%
+md|1  QT9 32, K43 K4, AJ2 AQ, 8765 5|
+%
+bh|Play, W, sU, res, p2,  T2,  always|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 6 ***** |
+
+
+qx|38|
+rh||ah|Pattern 38|
+vv|new|at|^*b 38.  Forced revelation double^*n|
+%
+md|1  KT32 A, Q976 3, AJ84 2, 5 7654|
+%
+bh|Play, W, sU, res, p2,  T2,  always|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at|bi|
+vv|p3|at||
+pc|sK|
+eb|y___|
+pg| ***** 7 ***** |
+
+
+qx|39|
+rh||ah|Pattern 39|
+vv|new|at|^*b 39.  High-risk^*n|
+%
+md|1  A32 - A, QT9 - 4, KJ - 32, 87 - T9|
+%
+bs|5,4|
+vv|p1|at|win 4|
+vv|p2|at||
+vv|p3|at|If East has @sQ, South wins only 2 tricks.|
+pg| ***** 8 ***** |
+
+
+qx|40|
+rh||ah|Pattern 40|
+vv|new|at|^*b 40.  Finesse refusal^*n|
+%
+md|1  J43 A, T98 4, AQ 32, K2 K5|
+%
+bs|6,3|
+vv|p1|at|win 3|
+vv|p2|at|auto bi|
+vv|p3|at||
+pg| ***** 9 ***** |
+
+

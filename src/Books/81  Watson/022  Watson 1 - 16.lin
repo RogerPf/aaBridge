@@ -1,0 +1,863 @@
+%% CH-16-P-1.lin
+%%% 01-07-3012 Joan/kr 11-25-2011
+mn|      MISCELLANEOUS TRUMP  PLAYS                       Chapter XVI                  |
+bt||
+%%Font and color codes
+fh|155|ff|1Arial|fb|19|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|36|fm|3|                           FOR 3
+fh|430|ff|4Arial|fi|4y|fm|4|     %%Larger than default -  italic
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|30|cg|30|cb|3128|                dark Blue 3
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|664|cg|6255|cb|6255|             6=TURQUOISE
+cr|70|cg|7235|cb|7235|              green/blue 7
+cr|8255|cg|80|cb|80|                red 8
+cr|9128|cg|950|cb|90|               Reddish-brown 9
+
+os|y|  %%   Overlap Shrink   -  floating Hand will shink if they overlap
+
+%%%
+tu|1|cs|6|ht|e|fp|2|at|^-
+WATSON's Classic Book on The Play of the Hand at Bridge
+
+Part I, Fundamentals of Play
+
+Chapter XVI, MISCELLANEOUS TRUMP PLAYS
+^-|FP||ht|n|at|
+^*U^DTABLE OF TOPICS ^*N|cp|1|AT|
+ 
+^D^*G16B01,Miscellaneous Trump Plays^*N  
+^e^*G16B02,The Cross-Ruff^*N   
+^e^*G16B03,High-Card Tricks in the "other" Suit^*N 
+^e^*G16B04,Sacrificing a Principle to Efficiency^*N 
+^e^*G16B05,Another Exception to the Rule^*N   
+^e^*G16B06,Playing a Hopeless Trump Contract^*N
+^e^*G16B07,Leading Trumps With a Weak Suit^*N
+^e^*G16SUM,Summary^*N|CP||at|
+
+^C@2^Y@3 |
+PG| ***** 0 ***** |
+
+
+cp||nt||
+%%%%%%%%%%%%%%%%%%
+qx|16B01,MISCELLANEOUS TRUMP PLAYS  |HT|e|at|^B@2^Y@3The principal situations in which trumps should be drawn immediately, or in which the trump lead should be postponed in order to secure some other advantage, have already been covered. The principles thus far laid down will take care of practically all the elementary trump situations that will occur in the average evening's play. But there remain certain specific situations which must be handled in a particular way. These are the subject of this chapter.   |
+PG| ***** 1 ***** |
+
+
+AT|
+
+On an earlier page a certain kind of trump play was referred to as the  ^*Icross-ruff.^*n It was not illustrated at the time, because it was first necessary to impress on the reader the difference between ruffing in the Dummy and ruffing in Declarer's hand. As a general rule, it is not worth while to trump with Declarer's own hand, but with a certain type of hand this becomes not only advisable but necessary. The hand calling for the cross-ruff, as this mode of play is named, occurs with relative rarity, but when it does occur it is essential that the player recognize it.  
+|
+PG| ***** 2 ***** |
+
+
+NT||PF||BT||
+%%%%%%%%%%%%%%%%%%%%%%%%55
+qx|16B02,THE CROSS-RUFF|
+nt||HT|e|cs|1|cp|4|fp||
+at|
+^-{    THE CROSS-RUFF    }
+
+^-|
+cp||at|^B@2The cross-ruff consists of refusing to lead trumps so that the trump holding in each hand can be cashed in independently by ruffing first with the one hand and then with the other. The following deal is a good example:
+|
+PG| ***** 3 ***** |
+
+
+nt||
+pn|You,,Dummy,|st||SK|S|md|3SA984HAT872D3C963,SKT52H64DQT7CAKQJ,S7HKQJ3DA642CT842,SQJ63H95DKJ985C75|rh||ah|Board 1|mb|p|mb|p|mb|4H|mb|p|mb|p|mb|p|NT|^B@2
+Your contract is four hearts.|
+PG| ***** 4 ***** |
+
+
+AT| West opens the club King,|
+PG| ***** 5 ***** |
+
+
+pc|ckc2|pc|c7|pc|c3|
+pg| ***** 6 ***** |
+
+
+at| continuing with the Queen,|
+pc|cQ|pc|c4|pc|c5|pc|c6|
+PG| ***** 7 ***** |
+
+
+AT| and then with the Jack,|
+pc|cJ|
+PG| ***** 8 ***** |
+
+
+AT| winning all 3 tricks.|
+pc|c8|pc|d8|pc|c9|
+pg| ***** 9 ***** |
+
+
+NT|^B@2
+West now shifts to hearts, leading a trump,|
+pc|h6|
+PG| ***** 10 ***** |
+
+
+AT| hoping by this lead to hamper your development of ruffing-tricks.|
+PG| ***** 11 ***** |
+
+
+at| You play a low heart from Dummy,|pc|h3|
+PG| ***** 12 ***** |
+
+
+AT| letting this trick come around to your own hand, so that, if East plays the nine,|
+pc|h9|
+pg| ***** 13 ***** |
+
+
+at| you can win the trick with your Ten.|pc|ht|
+pg| ***** 14 ***** |
+
+
+NT|^B@2
+The only high-card tricks you have, you now perceive (outside the trump suit), are the spade Ace and the diamond Ace. You also note that Dummy has only three trumps left to take care of the three losing spades in your own hand. Hence, not even one more round of trumps can be led.|
+PG| ***** 15 ***** |
+
+
+NT|^B@2
+The proper play at the fifth trick is for you to lead the spade Ace,|pc|sA|pc|s5|pc|s7|pc|s3|
+PG| ***** 16 ***** |
+
+
+AT| and follow it with another spade which you ruff in Dummy.|
+pc|s4|pc|s2|pc|hJ|pc|s6|
+pg| ***** 17 ***** |
+
+
+NT|^B@2
+You now return the diamond Ace,|
+pc|dA|pc|d9|pc|d3|pc|d7|
+PG| ***** 18 ***** |
+
+
+AT| and follow it with a low diamond which you ruff in your own hand.|
+pc|d2|pc|d5|pc|h2|pc|dT|
+pg| ***** 19 ***** |
+
+
+AT| Next you lead a low spade,|pc|s8|
+PG| ***** 20 ***** |
+
+
+AT| ruffing in Dummy,|
+pc|sT|pc|hQ|pc|sJ|
+PG| ***** 21 ***** |
+
+
+AT| and then another diamond,|pc|d4|
+PG| ***** 22 ***** |
+
+
+AT| which you ruff in your hand.|
+pc|dJ|pc|h7|pc|dQ|
+pg| ***** 23 ***** |
+
+
+NT|^B@2
+You do this still once again, crossing from one hand to the other by means of ruffing - which explains why this play is called cross ruffing. |
+PG| ***** 24 ***** |
+
+
+pc|s9|pc|sK|pc|hK|pc|sQ|
+pg| ***** 25 ***** |
+
+
+pc|d6|pc|dK|pc|h8|pc|cA|
+pg| ***** 26 ***** |
+
+
+SK||AT|
+You have left at the thirteenth trick only the Ace of hearts, which drops the last two outstanding trumps. |
+PG| ***** 27 ***** |
+
+
+pc|hA|pc|h4|pc|cT|pc|h5|sk||
+pg| ***** 28 ***** |
+
+
+sc|y|mc|10|NT|^B@2
+Thus, you make the Ace of spades, the Ace and Ten of hearts, the Ace of diamonds, 3 ruffing-tricks in spades (with Dummy's King-Queen-Jack of trumps) and 3 ruffing-tricks in diamonds (with your own eight-seven-deuce). Note that after you ruff with your own deuce of hearts, all your trumps are higher than the two outstanding, which means that you are never in any danger of being over-ruffed.|
+pg| ***** 29 ***** |
+
+
+NT|^B@2
+Frequently, in playing the cross-ruff, it is necessary to trump with low cards and run the risk of losing to some higher trump held adversely. Many players, faced with this threat, are prone to trump with the highest trumps they hold, but this is not a good idea at all, for it succeeds only in postponing the inevitable. If you are going to play a hand by cross-ruffing, you must follow it through. If you refuse to take chances in the earlier stages, you will eventually reach a point where the only outstanding trumps will be higher than any you have left. |
+PG| ***** 30 ***** |
+
+
+NT|^B@2
+You will then be in the predicament of having used up your high trumps unnecessarily, and your remaining low trumps will be over-ruffed. A suit which has gone around only once or twice may be safely ruffed, as a rule, with a low trump, but a suit which has gone around three or four times stands no chance whatever of being controlled by low trumps against outstanding higher ones. |
+PG| ***** 31 ***** |
+
+
+NT||bt||sc||
+%%%%%%%%%%%%%%%%%%%%%
+QX|16B03,HIGH-CARD TRICKS IN THE "OTHER" SUIT|
+HT|e|cs|1|cp|4|fp||
+at|
+^-{    HIGH-CARD TRICKS IN THE "OTHER" SUIT    }
+^-|
+cp||fp||at|^B@2^Y@3I|FP||AT|n hands which require cross-ruffing, two suits are being utilized for ruffing purposes, and of course the trump suit is utilized also. The "other" or fourth suit must not be ignored, for it may contain high-card tricks. If the cross-ruff is begun early in the hand, the trumps in Declarer's and Dummy's hands will rapidly be reduced, while the Opponents (unable to over-ruff) still have some trumps left. Since they do not over-ruff, the Opponents will have had some opportunity, as a rule, to make some discards, and they will probably discard that fourth suit in which you have high-card tricks. |
+PG| ***** 32 ***** |
+
+
+AT|
+
+What will happen then is that when you come to cash in those tricks in your "other" suit, the Opponents will intrude with their developed ruffing-tricks. |
+PG| ***** 33 ***** |
+
+
+AT|
+
+The way to avoid losing high-card tricks in the fourth suit, in a hand which requires cross-ruffing, is to take them before the Opponents have any chance to discard their losers in that suit. The following deal, which is a rearrangement of the preceding example, shows what is meant:  |
+PG| ***** 34 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%5
+pn|You,,Dummy,|st||SK|S|md|4SA984HAT872D5C963,SKTH6DQT987CQT742,S7HKQJ3DA6432CAK8,SQJ6532H954DKJCJ5|rh||ah|Board 2|mb|p|mb|6H|mb|p|mb|pP|NT|^B@2
+Against your contract of six hearts,|
+PG| ***** 35 ***** |
+
+
+AT| this time West opens a diamond,|pc|dQ|
+PG| ***** 36 ***** |
+
+
+AT| which you win with Dummy's Ace.|
+pg| ***** 37 ***** |
+
+
+pc|dA|pc|dJ|pc|d5|
+PG| ***** 38 ***** |
+
+
+NT|^B@2 
+You find yourself considering a choice of plays. You can undertake to cross-ruff the hand, or you can try to establish a long-suit trick in diamonds, meanwhile drawing trumps. Surely the cross-ruff is preferable, for you might easily fail to set up that long diamond, and, further, if it should require three leads to draw trumps, you would have available no alternate play if the diamond trick did not materialize. In fact, the cross-ruff may actually develop more tricks as you can dispose of all your spades by this means. |
+PG| ***** 39 ***** |
+
+
+NT|^B@2
+Should the cross-ruff be started without delay? No, for to do so will give the Opponents a good chance to make discards - and they will probably throw off their clubs, since they can see your Ace-King commanding the suit in the Dummy. If this happens, you will probably find yourself at the end of the hand with your Ace and King of clubs struck down by adverse trumps. |
+PG| ***** 40 ***** |
+
+
+NT|^B@2
+Your first act, therefore, is to lead out your Ace and King of clubs before you do anything else. Both win,|pc|cA|pc|c5|pc|c3|pc|c2|
+pg| ***** 41 ***** |
+
+
+pc|cK|pc|cJ|pc|c6|pc|c4|
+PG| ***** 42 ***** |
+
+
+AT| and you then lead one round of trumps, winning with Dummy's Jack.|pc|hJ|pc|h4|pc|h2|pc|h6|
+pg| ***** 43 ***** |
+
+
+AT| You can afford to do this, for you need only three trumps in the Dummy for ruffing spades.|
+PG| ***** 44 ***** |
+
+
+NT|^B@2
+Proceeding with your cross-ruff, you trump spades in the Dummy|
+pg| ***** 45 ***** |
+
+
+pc|s7|pc|s5|pc|sA|pc|sT|
+PG| ***** 46 ***** |
+
+
+pc|s4|pc|sK|pc|h3|pc|s2|
+pg| ***** 47 ***** |
+
+
+AT| and lead diamonds|pc|d2|
+PG| ***** 48 ***** |
+
+
+AT| to ruff in your own hand.|pc|dK|pc|h7|pc|d7|
+PG| ***** 49 ***** |
+
+
+AT| It now makes very little difference to you what cards the Opponents play on these tricks.|sk||
+PG| ***** 50 ***** |
+
+
+pc|s8|pc|d8|pc|hQ|pc|s3|
+pg| ***** 51 ***** |
+
+
+pc|d3|pc|h9|pc|hT|pc|d9|
+pg| ***** 52 ***** |
+
+
+pc|s9|pc|c7|pc|hK|pc|s6|
+pg| ***** 53 ***** |
+
+
+pc|d4|pc|sJ|pc|h8|pc|dT|
+pg| ***** 54 ***** |
+
+
+SK||sc|y|mc|12|NT|^B@2
+What a difference if you start the cross-ruff before leading clubs! East, with only two diamonds to start with, would discard a club on the third round of diamonds. This would automatically hold you to 1 club trick, as East could then ruff the second round. If by any chance you lead a fourth round of diamonds, East could discard his other club, holding you to no club tricks at all. |
+PG| ***** 55 ***** |
+
+
+NT|^B@2
+Like all other principles in Bridge, even this one can be carried to extremes. It is playing with dynamite to try to cash in as many as 3 tricks in a side suit before starting your cross-ruff. The third round of the side suit gives the Opponents the break they are always looking for, and they are likely to trump in and spoil the effectiveness of your cross-ruff by slapping a trump lead into the proceedings.|
+PG| ***** 56 ***** |
+
+
+NT|
+^B@2 It is consequently better, as a rule, to content yourself with two leads in a side suit-always provided, naturally, that the cross-ruff itself promises enough tricks to complete your contract. If the three rounds of a side suit offer the only likely way of making your contract, you have no choice but to be bold and try to make them. |
+pg| ***** 57 ***** |
+
+
+nt||bt||sc||
+%%%%%%%%%%%
+QX|16B04,SACRIFICING A PRINCIPLE TO EFFICIENCY|
+HT|e|CS|1|CP|4|AT|
+^-{    SACRIFICING A PRINCIPLE TO EFFICIENCY    }
+^-|
+CS||cp||fp||at|^B@2^Y@3I|FP||AT|t has been stated that when the Opponents have left only one trump and that is high, |cp|8|at|it is costly to draw it if by doing so you must sacrifice two of yours - one from each hand|cp||at|. It is better, you recall, to try to force the play of this outstanding high trump by leading a suit which will induce the Opponent to ruff with it. |
+PG| ***** 58 ***** |
+
+
+AT|
+
+An important exception to this rule occurs when the Declarer holds a strong side suit in a hand which lacks re-entries. The principle must then be sacrificed for the greater efficiency of doing otherwise, and the high trump driven out. The following deal shows this:  |
+PG| ***** 59 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%
+pn|You,,Dummy,|st||SK|S|md|1S97HAK8743DA3CAQ6,SAKQ5HT5DT542CKT7,S842H96DKQJ98C543,SJT63HQJ2D76CJ982|rh||ah|Board 3|mb|4H|mb|p|mb|p|mb|p|NT|^B@2 
+Your contract is four hearts.|
+pg| ***** 60 ***** |
+
+
+pc|sK|AT| West's opening lead is the spade King,|pc|s2|pc|s3|pc|s7|
+PG| ***** 61 ***** |
+
+
+AT| which he follows with the Queen|pc|sQ|pc|s4|pc|s6|pc|s9|
+PG| ***** 62 ***** |
+
+
+AT| and then the Ace.|pc|sA|
+pg| ***** 63 ***** |
+
+
+NT|^B@2
+You trump the Ace in your own hand, thus reducing your trumps to five.|pc|s8|pc|sT|pc|h3|
+PG| ***** 64 ***** |
+
+
+AT| It is at once apparent that Dummy offers no ruffing power, but the diamond suit is unquestionably already established. The best thing to do is to lead out the hearts (trumps), and then run off the diamonds, discarding clubs on the good diamonds when your hand has no more of the latter. The club finesse need never be taken.|
+PG| ***** 65 ***** |
+
+
+AT|When you lay down the Ace|pc|hA|pc|h5|pc|h6|pc|h2|
+pg| ***** 66 ***** |
+
+
+at| and King of hearts,|pc|hK|pc|hT|pc|h9|pc|hJ|
+PG| ***** 67 ***** |
+
+
+at| it pleases you to see both Opponents follow suit on both rounds.|
+PG| ***** 68 ***** |
+
+
+NT|^B@2
+This leaves but one trump outstanding - the Queen, which is high. On this hand, if you follow the rule to let this Queen alone, on the assumption that it can never be worth more than 1 trick, you will never be able to make your contract. |
+PG| ***** 69 ***** |
+
+
+at|Proceeding along these lines, you would lead the Ace |pc|dad2d8d6|
+pg| ***** 70 ***** |
+
+
+at| and the trey of diamonds,|pc|d3d4dkd7|
+pg| ***** 71 ***** |
+
+
+at| and then a third round from the Dummy,|pc|dq|
+PG| ***** 72 ***** |
+
+
+AT| which East would ruff.|pc|hq|
+PG| ***** 73 ***** |
+
+
+AT| You would discard a club from your hand on that same third round,|pc|c6d5|sk||
+pg| ***** 74 ***** |
+
+
+at| but you would still hold a losing club which you could never dispose of.|
+PG| ***** 75 ***** |
+
+
+NT|^B@2
+The Dummy would be shut out of further play, with the two last diamonds as inaccessible as money in a closed bank.|
+PG| ***** 76 ***** |
+
+
+AT| Yet you can easily avoid this predicament - [let us go back three tricks].|
+pg| ***** 77 ***** |
+
+
+UP|12|
+PG| ***** 78 ***** |
+
+
+sk||at| All you have to do is lead a third round of hearts,|pc|h8|pc|d2|pc|c3|
+PG| ***** 79 ***** |
+
+
+AT| letting East win with his Queen.|pc|hQ|
+pg| ***** 80 ***** |
+
+
+at| Then whatever East leads, you would still be able to take a trump trick, a club trick and 5 uninterrupted diamond tricks.|
+PG| ***** 81 ***** |
+
+
+PC|c2|PC|ca|PC|ct|PC|c4|
+PG| ***** 82 ***** |
+
+
+mc|10|
+pg| ***** 83 ***** |
+
+
+UP|28|NT|^B@2
+By sacrificing one of your trumps to the high one held adversely (you would willingly sacrifice two, if necessary), you would secure a clear title to the rest of the hand. |
+PG| ***** 84 ***** |
+
+
+NT|^B@2
+This play would be unnecessary, of course, if the club Ace were in the Dummy instead of in your own hand. You would then simply lead all your diamonds until East ruffed, for you could use the club Ace to re-enter the Dummy. It would also not be necessary to draw that Queen if Dummy held one more trump originally, provided this trump would serve for an entry after East's diamond ruff.|
+PG| ***** 85 ***** |
+
+
+nt||sc||cs|6|ht|c|
+at|
+^-{You may now play this hand double dummy.  The opening lead was spade King.
+The most recently played card may be taken back by clicking the backward arrow
+or the the undo button. When finished or if not interested in the double dummy
+play please tap the forward arrow to move to the next section.}|
+pf|y|
+pg| ***** 86 ***** |
+
+
+NT||pf||bt||
+%%%%%%%%%%%
+QX|16B05,ANOTHER EXCEPTION TO THE RULE|HT|e|CS|1|CP|4|AT|
+^-{    ANOTHER EXCEPTION TO THE RULE    }
+^-|
+CS||CP||fp||at|^B@2^Y@3I|FP||AT|t was further stated, you remember, that when only two trumps are left outstanding, and both are high, an attempt should be made by the Declarer to drop both of them on one more trump lead - inducing them to fall together. This is not always the best play. Sometimes the danger involved is so great that it must be avoided, for if the Opponents are allowed to have the lead too many times, they may be able to run off their own established suit without interference. If you can still make your contract, you must permit the Opponents to take both of their trumps, not caring even whether they are divided or not. Again you must put the making of your contract above all. The following deal brings out this exception to the rule:|
+PG| ***** 87 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%
+pn|You,,Dummy,|st||SK|S|md|2S5HAK976DQ43CKJ75,SAK76HQJT8D95C642,S942H53DAKJ82CAQ3,SQJT83H42DT76CT98|rh||ah|Board 4|mb|p|mb|p|mb|p|mb|4H|mb|p|mb|p|mb|p|NT|
+^B@2You are playing a contract of four hearts.|
+PG| ***** 88 ***** |
+
+
+AT| West's opening lead is the spade King.|pc|sK|
+PG| ***** 89 ***** |
+
+
+pc|s2|pc|s3|pc|s5|
+pg| ***** 90 ***** |
+
+
+AT| He follows on the second trick with the spade Ace,|pc|sA|
+PG| ***** 91 ***** |
+
+
+AT| which you trump in your own hand.|pc|s4|pc|s8|pc|h6|
+pg| ***** 92 ***** |
+
+
+NT|^B@2
+You have left six trumps in your two hands, and the Opponents also have six.|
+PG| ***** 93 ***** |
+
+
+AT| When you lead out the Ace and King, the Opponents follow both times.|pc|hA|pc|h8|pc|h3|pc|h2|
+pg| ***** 94 ***** |
+
+
+pc|hK|pc|hT|pc|h5|pc|h4|
+pg| ***** 95 ***** |
+
+
+AT| This means that you have two trumps left, and the Opponents also have two but the pair held by the Opponents are both higher than yours. |
+PG| ***** 96 ***** |
+
+
+NT|^B@2
+Now if you lead a third heart, and the outstanding Queen and Jack are divided, you will drop them both and be left free to take the rest of the tricks, for you have all the top cards in diamonds and clubs and you will still have a heart to stem the run of the adverse spades. But suppose the Queen and Jack of trumps are not divided. |
+PG| ***** 97 ***** |
+
+
+NT|^B@2
+If they are in one hand, the Opponent who holds them will certainly lead the second as soon as he wins with the first, eliminating trumps altogether. You then have no protection against spades, and you will have to throw away some of your good diamonds or clubs. |
+PG| ***** 98 ***** |
+
+
+NT|^B@2
+To lead another trump in the hope of dropping the last two high ones on the same trick is nothing but madness on this hand. You have already lost 1 trick, and you can afford to lose 2 more.|
+PG| ***** 99 ***** |
+
+
+AT| All you have to do is to lead diamonds until|pc|dQ|pc|d5|pc|d2|pc|d6|
+pg| ***** 100 ***** |
+
+
+pc|d3|pc|d9|pc|dA|pc|d7|
+pg| ***** 101 ***** |
+
+
+pc|dK|pc|dT|pc|d4|
+PG| ***** 102 ***** |
+
+
+AT| at last West ruffs.|pc|hJ|
+pg| ***** 103 ***** |
+
+
+at|  This puts you one time unit ahead, for you have two trumps left to the Opponents' one.|
+PG| ***** 104 ***** |
+
+
+NT|^B@2
+If West now leads a spade,|pc|s7|
+PG| ***** 105 ***** |
+
+
+AT| forcing you to ruff,|pc|s9|pc|sT|pc|h7|
+PG| ***** 106 ***** |
+
+
+AT| you continue with the rest of your diamonds and clubs|pc|c5|pc|c2|pc|cA|pc|c8|
+pg| ***** 107 ***** |
+
+
+pc|cQ|pc|c9|pc|c7|pc|c4|
+pg| ***** 108 ***** |
+
+
+pc|c3|pc|cT|pc|cJ|pc|c6|
+pg| ***** 109 ***** |
+
+
+pc|cK|sk||
+PG| ***** 110 ***** |
+
+
+AT| until West ruffs again.|pc|hQ|
+PG| ***** 111 ***** |
+
+
+at| As soon as this happens, the rest of the tricks are yours.|pc|d8|pc|sJ|
+pg| ***** 112 ***** |
+
+
+mc|10|
+pg| ***** 113 ***** |
+
+
+up|48|
+pg| ***** 114 ***** |
+
+
+NT|^B@2
+Successful as your play was on this example, it might conceivably have lost a trick. If the hearts had been adversely divided 3-3 instead of 4-2, you could have made 11 tricks very easily instead of only 10. But why risk the success of your contract for a nebulous extra trick? The way you played, your contract was never in jeopardy. The loss of an extra trick is insignificant against the loss of a game contract. |
+PG| ***** 115 ***** |
+
+
+NT|^B@2
+Perhaps you say, "Well, what if the contract was five hearts?" Ah, this puts a different complexion on things. You have a chance of making your contract by trying to drop the Queen and Jack of trumps on the same trick. You also risk being set 4 tricks. It is entirely a question of how good a gambler you are. If the contract is not doubled, and your side is not vulnerable, the chance should be taken, for you can lose only 200 points at most. |
+PG| ***** 116 ***** |
+
+
+NT|
+^B@2But if the contract is doubled and your side is vulnerable, the chance should not be taken, for you are running the risk of losing 1400 points - certainly not worth pitting against the five hearts bid and made, which you are gambling to make. |
+PG| ***** 117 ***** |
+
+
+NT|^B@2
+It is much better to be discreet (doubled and vulnerable), and accept the set of 1 trick - which you can be sure will be no worse if you let the Opponents ruff with Queen and Jack separately which is only 200 points. Doubled and not vulnerable, or not doubled and vulnerable, the gamble is at about even odds, and depends on the player's temperament. Choices of this kind frequently arise, and the best way to play is always determined by considering what you stand to lose if your procedure fails to work.|
+PG| ***** 118 ***** |
+
+
+NT||bt||
+
+%%%%%%%%%%%%%%
+qx|16B06,|
+HT|e|CS|1|cp|4|AT|^-
+{    PLAYING A HOPELESS TRUMP CONTRACT    }
+^-|
+CS||cp||fp||at|^B@2^Y@3I|FP||AT|n all the example deals thus far analyzed, you have been presented automatically with fairly strong trump holdings. In actual play, you will not always be so lucky. The best players will now and then bid rashly and find themselves suddenly plunged into rather weird contracts, considering their holdings. Mr. Oswald Jacoby, one of the world's great Contract Bridge players, often boasts that he is the most expert player of hopeless contracts on earth. Anyone who has ever seen him play a hopeless hand will agree that he has considerable right to make such a boast. But the fact that he can make the boast is clearly an indication that even he must get into hopeless contracts occasionally, and if Mr. Jacoby can, you can - and will. The following deal is certainly an example of a hopeless contract if there ever was one:  
+|
+PG| ***** 119 ***** |
+
+
+NT||
+%%
+pn|You,,Dummy,|st||md|3SA95HJ8542D9542C3,,SKJ6H73DAQ63C8752,|rh||ah|Board 5|mb|p|mb|p|mb|3H|mb|p|mb|p|mb|p|NT|^B@2
+Suppose you are South and that you must try to make a contract of three hearts;|
+PG| ***** 120 ***** |
+
+
+AT| we need not discuss how you ever got into such a contract.|
+PG| ***** 121 ***** |
+
+
+SK|S|MD|0,SQ873HAQT9DKTC964,0,ST42HK6DJ87CAKQJT|
+pg| ***** 122 ***** |
+
+
+AT| West's opening lead is the nine of clubs,|pc|c9|
+PG| ***** 123 ***** |
+
+
+AT| which East wins|pc|c2|pc|cT|pc|c3|
+pg| ***** 124 ***** |
+
+
+AT| and continues|pc|cJ|
+PG| ***** 125 ***** |
+
+
+AT| the suit - but you ruff the second round with your deuce of hearts.|pc|h2|pc|c4|pc|c5|
+pg| ***** 126 ***** |
+
+
+AT| It can take only a moment to tell you that your contract is indeed hopeless. All you can attempt to do is to hold your loss down to as few tricks as possible.|
+PG| ***** 127 ***** |
+
+
+NT|^B@2
+Only a madman would try to draw trumps here. If you start it, your Opponents will gladly lead them for you, and will then satisfy their appetite for slaughter by running off 3 more club tricks. Never were desperate measures more urgently required. It is barely possible that your Opponents will not discover the woeful weakness of your trump holding until it is too late to do much about it.|
+PG| ***** 128 ***** |
+
+
+NT|^B@2
+At the third trick, therefore, you lead a low spade|pc|s5|pc|s7|
+PG| ***** 129 ***** |
+
+
+AT| and nonchalantly finesse the Jack.|pc|sJ|pc|s2|
+pg| ***** 130 ***** |
+
+
+AT| When, to your surprise (which you do not reveal), this holds, you come back to the spade Ace in your own hand.|pc|s6|pc|s4|pc|sA|pc|s3|
+PG| ***** 131 ***** |
+
+
+AT| Another spade puts you in the Dummy with the King.|pc|s9|pc|s8|pc|sK|pc|sT|
+pg| ***** 132 ***** |
+
+
+NT|^B@2
+These three rounds hold, and you have won 4 tricks. You now speculate as to whether one of those silly-looking small trumps in your hand might not take another trick. You therefore lead a club|pc|c7|
+PG| ***** 133 ***** |
+
+
+AT| and ruff - and|pc|cQ|pc|h4|
+PG| ***** 134 ***** |
+
+
+AT| it holds.|pc|c6|
+pg| ***** 135 ***** |
+
+
+NT|^B@2
+Luck is with you. Quickly you lead a diamond|pc|d2|
+PG| ***** 136 ***** |
+
+
+AT| and finesse Dummy's Queen.|pc|dT|pc|dQ|pc|d7|
+pg| ***** 137 ***** |
+
+
+AT| Then you cash in your diamond Ace - and|pc|dA|pc|d8|pc|d4|pc|dK|
+PG| ***** 138 ***** |
+
+
+AT| stop to get your breath. After all, out of this mess of rubbish you have managed to eke 7 tricks. |
+PG| ***** 139 ***** |
+
+
+NT|^B@2
+It is difficult to see how you can make any more, but you must keep on playing. You lead a low diamond,|pc|d3|
+PG| ***** 140 ***** |
+
+
+AT| throwing the lead to East - and|pc|dJ|pc|d5|pc|sQ|SK||at| the story is ended. You are down 2 tricks. Still, it looked much worse at first glance!|mc|7|
+pg| ***** 141 ***** |
+
+
+UP|36|NT|^B@2
+This hand teaches little, except that it is but another instance when trumps should not be drawn immediately. The reason for inserting it at this point is to lend contrast to the following deal, which shows a situation in which many players would hesitate to lead trumps because of the weakness of the suit.|
+PG| ***** 142 ***** |
+
+
+NT||BT||
+%%%%%%%%%%%%%%%%% East%%S98HAT6DK9532C642
+%%West%%SQT75HKQ9D87CQJT9
+qx|16B07,LEADING TRUMPS WITH A WEAK SUIT|
+HT|e|CS|1|cp|4|AT|^-
+{    LEADING TRUMPS WITH A WEAK SUIT    }
+^-|
+CS||cp||fp||at|^B@2^Y@3I|FP||AT|n the following deal (contract four hearts) trumps must be led even though the Declarer holds but seven trumps against the Opponents' six, and the six adverse trumps include the Ace, King, Queen, Ten, and nine-spot!  
+|
+PG| ***** 143 ***** |
+
+
+NT||
+pn|You,,Dummy,|st||SK||md|4SA43HJ8542DA64CK3,,SKJ62H73DQJTCA875,|rh||AH|Board 6|mb|p|mb|4H|mb|p|mb|p|mb|p|NT|^B@2
+Again it is hard to see how North and South reach a contract of four hearts, but that is not pertinent here. In spite of the tremendous trump strength in top cards against you, if you are South you must lead trumps because this offers your only chance of making anywhere near 10 tricks. If you fail to lead trumps, the time will come when the Opponents will start ruthless ruffing.|
+PG| ***** 144 ***** |
+
+
+NT|^B@2
+As soon as they find that they are both out of certain suits, they will start trumping everything in sight. This means that they will make their trumps separately rather than together, and consequently will pile up just that many more tricks against you.|
+PG| ***** 145 ***** |
+
+
+NT|^B@2
+West opens the|MD|0,SQT75HKQ9D87CQJT9,0,S98HAT6DK9532C642|sk|s|pc|cq|at| club Queen,|
+PG| ***** 146 ***** |
+
+
+AT| which you win with your King.|pc|c5|pc|c2|pc|cK|
+pg| ***** 147 ***** |
+
+
+NT|^B@2
+You can see that your trump suit is as weak as water, and you would welcome something to brace you up. Your chief solace lies in the fact that your other suits contain several tenaces. If you play around with them a bit (you say to yourself), you may be able to wrangle a few tricks before the Opponents can trump in. Your first thought, then, is to take a spade finesse by leading low toward the Jack in Dummy. But this would be a mistake!|
+PG| ***** 148 ***** |
+
+
+NT|^B@2
+There is one loophole by which you may escape from the Waterloo that is marked down in the cards for you. Look for a moment and try to spot this way out. It is a chance, and some chance is always better than none. If you see this means of escape you must attempt it at all costs.|
+PG| ***** 149 ***** |
+
+
+NT|^B@2
+Think, first, that the Opponents' six trumps may be divided 3-3. If they are, their imposing rank is of less consequence. |cp|8|at|Three generals are worth no more than one private if they stand in a line to be shot!|cp||at| What is equally consoling is the fact that every time an Opponent takes a trump trick he must lead something back which may produce a trick from one of your tenace positions. Certainly one trump lead can do no great harm, and suppose you try it and see.|
+PG| ***** 150 ***** |
+
+
+AT|
+
+Leading a low heart from your own hand,|cp|8|at| *|cp||at| you watch West play, let us say, the nine-spot, which holds the trick. |
+PG| ***** 151 ***** |
+
+
+pc|h2|pc|h9|pc|h3|pc|h6|
+pg| ***** 152 ***** |
+
+
+NT||cp|8|at|^B@2
+*|cp||at| "The compulsion to lead from the weaker holding toward the stronger need not embarrass you here, for neither hand is of sufficient strength to warrant more than a split second's consideration."  |HT|s|at|^VSam Fry, Jr.|
+PG| ***** 153 ***** |
+
+
+NT|^B@2
+West returns the club Jack,|pc|cJ|
+PG| ***** 154 ***** |
+
+
+AT| which you win with Dummy's Ace,|pc|cA|pc|c4|pc|c3|
+pg| ***** 155 ***** |
+
+
+AT| establishing the suit for the Opponents. But this is not so bad, for eight clubs have been played, and Dummy still has two.|
+PG| ***** 156 ***** |
+
+
+at| Now you may as well try one more round of hearts.|pc|h7|
+PG| ***** 157 ***** |
+
+
+AT| This time East plays the Ten and West wins with the Queen.|pc|hT|pc|h4|pc|hQ|
+PG| ***** 158 ***** |
+
+
+NT|^B@2
+Well, well! The outstanding trumps are now much less formidable - in fact, they are only two, Ace and King. If they are divided, and the Ace kills partner's King - but you will soon learn.|
+PG| ***** 159 ***** |
+
+
+AT| A third round of clubs now comes upon you, which you ruff.|pc|c9|pc|c7|pc|c6|pc|h5|
+PG| ***** 160 ***** |
+
+
+AT| Both Opponents follow, leaving only one club out. |
+pg| ***** 161 ***** |
+
+
+NT|^B@2
+Having two trumps left, you bang down another one|pc|h8|
+PG| ***** 162 ***** |
+
+
+AT| (even if the trump Ace-King are not divided, you can bear up under the loss of a trick to that one outstanding club), |pc|hK|pc|c8|
+pg| ***** 163 ***** |
+
+
+AT| and - the trump top honors fall together. |pc|hA|
+pg| ***** 164 ***** |
+
+
+sk||NT|^B@2
+East is in the lead, but it makes no difference what card he leads. Indeed, it does not matter which Opponent leads, or what he leads. If it is a club, you can ruff with your last trump. And West has the spade Queen, which means that your spade finesse will win, and East has the diamond King, which means that your diamond finesse also wins. Thus, by making the best of a bad situation, you tally your 10 tricks, four hearts - and the better to make it sound when you tell it to your friends, let us hope that the contract, this once, was doubled and redoubled!|mc|10|
+PG| ***** 165 ***** |
+
+
+sk||NT||BT||
+%%%%%%%%%%%%%%%%%
+qx|16SUM,Summary|
+HT|e|CS|1|CP|4|AT|
+^-{     Summary    }
+^-|
+CS||CP||fp||at|^B@2^Y@3T|FP||AT|here is little to be said in the summary of this chapter. You should be sure, of course, that you understand cross-ruffling, and realize the necessity of cashing in a side suit before allowing the Opponents to get in some discards while you are occupied with your cross-ruff.|
+PG| ***** 166 ***** |
+
+
+AT|
+
+The other example hands, like many of those which follow, illustrate situations which tend to clarify what is, after all, a highly complex subject. No two Bridge hands are exactly alike, and these little analyses of what may seem to be minor bits of strategy will all prove of value in your playing experience.|
+PG| ***** 167 ***** |
+
+
+ht|u|at|
+
+
+
+This is the end of Chapter XVI. |
+pg| ***** 168 ***** |
+
+
+LF|CH-17-P-1.LIN| 

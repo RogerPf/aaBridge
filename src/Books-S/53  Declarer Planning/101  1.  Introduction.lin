@@ -1,0 +1,85 @@
+%%
+%%
+
+ss|chapter,1.   Introduction                                           |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-07-01          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Declarer  Planning                                                  |
+%%
+cr|m140|cg|m080|cb|m110|   fill   m  m-mastColor       on Title Pages
+cr|c208|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor  fake pink button
+cr|b200|cg|b255|cb|b255|   fill   b  light blue   fake blue button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|h|
+at|^c@2^z@3^^|n#|7|
+fp|t-title|at||fp||
+lg|c|
+at|The truth is,  @- Planning is Hard @-,  although that is not often mentioned by mentors who tell you to 'do it'.   Surprisingly the lower the contract the harder it is to plan the hand.  It is simple to play 7 NT when you have 37 hcp between the two hands.  Playing (let alone planning) a contract of 1NT with a combined 20 count is tough.
+|n^|7|at|
+So a good place to start practicing planning is with the slam deals that aaBridge can produce to order.  See 
+the ^*g :Interesting::Welcome, 'Interesting' Deals^*n feature.  These are generally the more easy hands.  Later under 'Practicing Planning' you will get directions to where you can find much tougher slam practice hands.
+|n^|7|at|
+As your high contract planning improves it will get easier and easier to plan the  1@h - 2@h  (all pass), deals.  While in outline it is always the same.  You could call it a Declarer Play check list.
+|lg|e|n^|8|at|
+When you first see your hand 
+^d@2Say your hand pattern to yourself (twice !) eg: ^*b 2542 ^*n
+Count your HCP (and repeat it to yourself) @- you never forget it do you ?
+Listen to the bidding @- tell yourself what each player is showing (suit length and hcp) as they bid.
+|lg|e|n^|9|at|
+^cWhen you first see the Lead 
+^d@2Say dummies hand pattern to yourself (twice !) eg: ^*b 3442 ^*n
+Look at the lead @- ask yourself, what is going on in the suit led ?   eg:  What does it say about the honors ?
+|lg|h|n^|9|at|
+^c@2That is enough for now, the rest can wait until  ^*b The Check List ^*n  section.
+|n^|9|at|
+^bThe next section  |fp|t|at|  2. The Example |fp||at|   is really  THE  core material   DO NOT RUSH   it,
+|n^|3|at|^r when told to, work out your own plan.
+|
+%%
+qx|1.|
+pg| ***** 0 ***** |
+
+

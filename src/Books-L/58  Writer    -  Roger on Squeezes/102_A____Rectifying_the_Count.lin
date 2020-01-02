@@ -1,0 +1,566 @@
+%%
+%%
+
+ss|chapter,A.                              Rectifying the Count  |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2017-03-16          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead__technique.ins
+%%
+ss|masthead,Roger  on  Squeezes                                              |
+%%
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       on Title Pages   Precision Blue
+cr|c255|cg|c225|cb|c229|   fill   c  c-chapterColor    on Title Pages   TECHNIQUE <<<<<<<<<<<<<<<<
+%%
+<<--INSERT-END**-->>=01___FP_masthead__technique.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pd|hint,^b   There is a `cp`green`at`^*b Hint ^*n`cp``AT` on the next page but if you want to  PLAY  the hand NOW, the  { ^*b 1st ^*n }  button is available.|
+%%
+pd|choose,`cp`red`at`^b    ^*bPlease   CHOOSE^*n`cp``at`   you can use  {^*b Flow >^*n }  to see the answer  `cp`red`at`^*bOR^*n`cp``at`  you can click  { ^*b 1st ^*n }  to PLAY the hand.|
+%%
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|i|
+fp|1|at|^c@2^y@3^^|
+lg|b|
+at|You have a potential squeeze against an opponent but you still have un-played losers.  You know that when the squeeze card hits the table you need there to be only one loser remaining.  
+
+^*bRectifying the Count^*n, is the traditional name for this requirement.   
+
+|n#|5|at|^e  @2{
+|n^|9|at|    The common way of  ^*b Rectifying the Count ^*n  is to duck tricks early in the play.   
+|n^|9|at|^^ }
+^c@2|
+
+qx|A.|
+pg| ***** 0 ***** |
+
+
+qx|Busy, wide|
+st||
+ha|y|
+md|1 s2 h dA c3, sKQ hA d c, sAJ hK d c, s h d c987|  
+nt|^b@2|at|^^|
+at|As we saw in the previous chapter       ^*b All  West's  (LHO's)  cards must be  'BUSY'^*n.|
+ht|L|
+pg| ***** 1 ***** |
+
+
+md|0 c2, c4, c5, c6|
+at|If we add an idle card into West's hand (and the other 3 hands)|
+pg| ***** 2 ***** |
+
+
+pc|dA|
+n#|3|at|^^THEN  the ^*b squeeze card ^*n |
+pg| ***** 3 ***** |
+
+
+pc|c4|pc|c5|pc|c6|
+at|generates NO pressure and the  'squeeze'  fails.|
+pg| ***** 4 ***** |
+
+
+ht|f|at|@4^^|
+ht|L|
+lg|m|
+at|For all ^*b Simple Squeezes ^*n you must have ^*b only one loser remaining^*n.
+Fixing this issue and so getting the timing right is called |cp|8|at|^*b Rectifying the Count^*n|cp||at|.|
+pg| ***** 5 ***** |
+
+
+at|^^The standard way to fix this problem is to  - ^*b lose your losers early^*n.|
+pg| ***** 6 ***** |
+
+
+md|1,,,|
+bv|a,h|
+nt|^z@3^b@2^^cleared|
+pg| ***** 7 ***** |
+
+
+-------------------------------------------------------------------------------
+bt||
+nt|^z@3^b@2^^^^|
+fp|b-bigtitle|at|How to  ^*bPlay^*   the  Practice Hands|fp||at|^^|
+n#|2|at|
+To  ^*bPlay^*n  the Practice hands    -   Click either the  {^*b Cont ^*n}  or the  {^*b Enter the Deal ^*n}  button.  
+
+When available, the two buttons will appear in the green area at the bottom right of this window.
+
+Clicking either takes you  'into the deal'.   You return back to this tutorial by clicking the  {^*b Back to Movie ^*n}  button.
+
+The  ^*g:Doc Collection::Help,Doc Collection^*n  document  ^*b Down the Rabbit Hole ^*n  contains a diagram that will help to explain this.
+
+After clicking  { ^*b 1st ^*n }  you continue the play by clicking on a ^*b CARD ^*n or on the  { ^*b Undo ^*n }  button.
+
+While playing you can  use the  {^*b Show ^*n}  /  {^*b Hide ^*n}  button to  show / hide  the opponents cards.
+
+
+The  {^*b Enter the Deal ^*n}  button is like a 'grown-up' version of the continue button.
+|n^|a|at|
+ ^g after clicking it you get to choose (by use of a button) which of three things you want to do. 
+
+|n^|5|at|
+{^*b Edit ^*n}  let's you explore the deal  'double dummy'.   Click a ^*bCARD^*n to play it.    Use  {^*b Undo ^*n}  to unplay cards.
+
+{^*b Play ^*n}  let's you play the remaining cards (against the computer).    As with  ^*bEdit^*n  any un-reviewed play is discarded.
+
+{^*b Review ^*n}  (the default)  let's you run back and forth in the existing play.     Use  ^*bFlow^*n,    "^*b>^*n"   and the  ^*bNavbar^*n.
+^s(^*bMouse wheel^*n  is best)
+
+|cp|mg|n^|8|at|           @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-|cp||at|
+|cp|red|n#|8|at|^*bAdvice^*n|cp||
+lg|f|
+at|      Come back to this tutorial time and time again.  The first few times when you play through the hands, you may need to view the opponents cards or even skip playing them and just watch the winning line.
+|n#|5|at|Come back another time and play them through again.       Repetition will,  ^*b really will^*n,   get it all to sink in.|
+pg| ***** 8 ***** |
+
+
+qx|1, wide|
+bt||
+nt|^z   @3^b@2^^^^|
+fp|b-bigtitle|at|What is an Answer ?|fp||at|^^|
+n#|2|at|
+I know that the first (and even the second time) you go through the practice hands you will be just about starting to understand what is going on.   BUT after that ...
+
+Successfully playing the hand against the bots is |cp|red|at|^*b NOT ^*n |cp||at|an answer, I repeat |cp|red|at|^*b NOT ^*n|cp||at| an answer, to the question.
+
+The type of answer you NEED to give (assuming that you want to benefit from your work here) is - 
+|n#|a|at|^c@2
+|fp|t|at|Part 1   -   The 'Trick 1' PLAN|fp||at|          (NOT in the supplied answers, but YOU should think it out)
+|n^|7|at|
+A detailed statement (to yourself) of the order of the play of the tricks, including which hand you will be in at each stage and stating any discards.  The plan ends with the words 
+  -  "With the play of the squeeze card (named) ... East or West or Both ... will be squeezed".
+|n#|a|at|
+|fp|t|at|Part 2   -   The Key Cards of the Squeeze|fp||at| 
+|n^|5|at|
+A statement defining YOUR important cards and where they will be when the squeeze card is played.
+|n#|a|at|
+|fp|t|at|Part 3   -   Your Opps remaining (important) Cards|fp||at|         (NOT in the supplied answers)
+|n^|5|at|
+A statement about the important cards your Opps hold and about which hand you expect to find them in, such as -   "I am playing for LHO to have the @sK and the ..."    Part 3 is an extension of 'Part 1 - the Plan', as it also covers what comes after the squeeze card is played.
+^^
+^b@2See the Specimen Answer on the next page.
+
+|cp|mg|n^|8|at|           @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-|cp||at|
+|cp|red|n#|8|at|^*bRemember^*n|cp||
+lg|f|
+at|      Do remember that repetition of these practice hands this is the KEY, it will all sink in if you let it.|
+pg| ***** 9 ***** |
+
+
+-------------------------------------------------------------------------------
+bt||
+nt|^z@3^b@2^^^^|
+fp|b-bigtitle|at|Specimen Answer|fp||at|         (to  Practice 1   of    1. The Simple Positional Squeeze)
+|n^|2|at|
+|lg|c|at|
+|fp|t|at|Part 1   -   The 'Trick 1' PLAN|fp||at|       
+|n^|7|at|
+^c@2Win the lead of the @sQ with the dummy's Ace.
+Play the top two @d's ending in hand.
+Cash the @hAK
+Run the @c's, at first discarding two low hearts (keeping only the Jack)   
+^d then discarding low @s's,  so ending with   @sK9  @hJ   in dummy.
+With the play of the last club (the squeeze card @c9), ^*b East ^*n will be squeezed.
+|n#|a|at|
+|fp|t|at|^bPart 2   -   The Key Cards of the Squeeze|fp||at| 
+|n^|7|at|
+^c ^*b Long menace ^*n     ^i |fg|y|at|(North)|fg||at| ^k  @sK9
+^c ^*n One-card  menace ^*n    ^i |fg|y|at|     " |fg||at| ^k  @hJ
+^c ^*b Communication card ^*n  ^i |fg|y|at|(South)|fg||at| ^k  @s7
+^c ^*n Squeeze card ^*n        ^i |fg|y|at|     " |fg||at| ^k  @c9  |fg|y|at|   (the last @c) |fg||at|
+|n#|8|at|
+|fp|t|at|^bPart 3   -   Your Opps remaining (important) Cards|fp||at|
+|n^|8|at|
+I am playing for East to have started with   @SQJ10  @HQxx.     On the play of the squeeze card (@c9), East will  EITHER -
+	^d ... discard his @hQ.  In which case, I will discard the @s9 and lead to the @sK and cash the @hJ.
+^c OR  |fp|s|at|(more likely)|fp||at|
+	^d ... discard his @s guard (keeping the @hQ).  In which case I will discard the @HJ and lead to the  @sK  
+	       ^p expecting the @sJ to fall so promoting my @s9.
+|n#|5|at|
+^b I know this is a lot to expect but it will come with repetition of the hands, again and again.
+|
+pg| ***** 10 ***** |
+
+
+-------------------------------------------------------------------------------
+st||
+ha||
+rh||ah|Practice 1|
+md|1s6532hA8dK74cAKQJ,sJT98hKQJ5d932c97,sAKQ7hT932dAQ5cT2,s4h764dJT86c86543|
+sk|S|
+nt|^z@3^b@2^^|
+Lg|l|
+at|^*bPractice 1^*n      ^gThe hand.|
+pg| ***** 11 ***** |
+
+
+at|  You (slowly) bid to 6NT.|
+mb|6N|
+pg| ***** 12 ***** |
+
+
+mb|d|mb|p|mb|p|mb|p|
+pc|hK|
+eb|y___|
+mx|x|
+at|   West doubles and leads of the  @hK.|
+pg| ***** 13 ***** |
+
+
+Lg|g|
+at|^^You are in  ^*b6NT^*n  with 11 top tricks.   Where can you find a 12th ?    What can West possibly have for her double ?|  
+pg| ***** 14 ***** |
+
+
+bv|f,v|
+eb|y___|
+ht|z|n^|2|at|There is a hint on the next page but if you want to play the hand NOW, the  { ^*b 1st ^*n }  button is available. |
+pg| ***** 15 ***** |
+
+
+nt|^z@3^b@2^^|
+Lg|f|
+at|^*bPractice 1^*n  ^e |cp|gr|at|^*bHint^*n|cp||at|   ^g Play West for  @sJ1098  @hKQJx.   Work out NOW which cards will be left when the Squeeze card is played.   In North, which cards will be the ^*b long ^*n menace and which the ^*b one-card ^*n menace ?    In South, which will be the ^*b squeeze ^*n card and which the ^*b communication ^*n card  -  BE EXACT.
+
+|cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button   |cp|red|at|^*bOR^*n|cp||at|   you can use  {^*b Flow >^*n }  to see the answer.|
+n#|7|
+pg| ***** 16 ***** |
+
+
+bv|e,v|
+mx|x|
+eb|n|
+nt|^z  @3^b@2^^|
+Lg||
+at|^*bPractice 1^*n  ^e |cp|red|at|^*bAns^*n|cp||n#|3|at|  ^g
+^c ^*b Long menace ^*n           ^j  @sQ 7
+^c ^*n One-card  menace ^*n          ^j  @h10 |fg|y|at| (or  9)|fg||at|
+^c ^*b Communication card^*n         ^j  @s6 |fg|y|at|(any @s)|fg||at|
+^c ^*n Squeeze card ^*n              ^j  @cJ |fg|y|at|(any @c)|fg||at| | 
+n#|6|at|^^You have one too many losers and need to  'Rectify the Count'.         Now play for ^*b THAT ^*n ending.|
+
+ht|k|at| ^n@2   { The KEY is to decide if it is safe or even necessary to 
+    duck the first trick.  You many not get another chance.  
+}|
+pg| ***** 17 ***** |
+
+
+%%_aapg-NEAR
+pc|h2|pc|h4|pc|h8|pg||
+pc|hQ|pc|h3|pc|h6|pc|hA|pg||
+pc|s2|pc|s8|pc|sA|pc|s4|pg||
+pc|sK|pc|h7|pc|s3|pc|s9|pg||
+pc|dA|pc|d6|pc|d4|pc|d2|pg||
+pc|dQ|pc|d8|pc|d7|pc|d3|pg||
+pc|d5|pc|dT|pc|dK|pc|d9|pg||
+pc|cA|pc|c7|pc|cT|pc|c3|pg||
+pc|cK|pc|c9|pc|c2|pc|c4|pg||
+pc|cQ|pc|h5|pc|h9|pc|c5|pg||
+pc|cJ|
+%%_aapg-STD
+pg| ***** 28 ***** |
+
+
+bv|f,v|
+eb|n|
+sk||
+ht|f|at|@4^c@2|
+lg|k|
+at|^^On the play of the  ^*bSqueeze Card^*n  (@cJ)   West is squeezed.
+Try playing the hand again - but this time without ducking the first trick.|
+pf|all-res-lifted|
+pg| ***** 29 ***** |
+
+
+md|1,,,|
+bv|a,h|
+nt|^z@3^b@2^^cleared|
+pg| ***** 30 ***** |
+
+
+-------------------------------------------------------------------------------
+qx|2, wide|
+bv|a,h|
+ha||
+rh||ah|Practice 2|
+md|1sAJ83hK4dJT8cAK62,sT97hQJ876d965c43,sKQ52hA92dA42cQ75,s64hT53dKQ73cJT98|
+sk|S|
+nt|^z@3^b@2^^|
+Lg|l|
+at|^*bPractice 2^*n      ^gThe hand.|
+pg| ***** 31 ***** |
+
+
+at|  You (slowly) bid to 6@s.|
+mb|6s|
+pg| ***** 32 ***** |
+
+
+mb|p|mb|p|mb|d|mb|p|mb|p|mb|p|
+pc|sT|
+eb|y___|
+mx|x|
+at|   East doubles and West leads of the  @s10.|
+pg| ***** 33 ***** |
+
+
+Lg|g|
+at|^^You are in  ^*b6@s^*n  with 10 top tricks, a @h ruff for 11.   Where can you find a 12th ?    What has East got for his double ?|  
+pg| ***** 34 ***** |
+
+
+bv|f,v|
+eb|y___|
+ht|z|n^|2|at|There is a hint on the next page but if you want to play the hand NOW, the  { ^*b 1st ^*n }  button is available. |
+pg| ***** 35 ***** |
+
+
+qx|h2, hide|
+nt|^z@3^b@2^^|
+Lg|f|
+at|^*bPractice 2^*n  ^e |cp|gr|at|^*bHint^*n|cp||at|   ^g Play East for  @dKQxx  @cJT98.   Work out NOW which cards will be left when the Squeeze card is played.   In North, which cards will be the ^*b long ^*n menace and which the ^*b one-card ^*n menace ?    In South, which will be the ^*b squeeze ^*n card and which the ^*b communication ^*n card  -  BE EXACT.
+
+|cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button   |cp|red|at|^*bOR^*n|cp||at|   you can use  {^*b Flow >^*n }  to see the answer.|
+n#|7|
+pg| ***** 36 ***** |
+
+
+bv|e,v|
+mx|x|
+eb|n|
+nt|^z  @3^b@2^^|
+Lg||
+at|^*bPractice 2^*n  ^e |cp|red|at|^*bAns^*n|cp||n#|3|at|  ^g
+^c ^*b Long menace ^*n     ^h   |fg|y|at|(South)|fg||at| ^j  @cK6
+^c ^*n One-card  menace ^*n    ^h   |fg|y|at|     " |fg||at| ^j  @d10
+^c ^*b Communication card ^*n  ^h   |fg|y|at|(North)|fg||at| ^j  @c7
+^c ^*n Squeeze card ^*n        ^h   |fg|y|at|     " |fg||at| ^j  @sQ |fg|y|at|  (final @S)|fg||at|
+|n#|6|at|You have one too many losers and need to  'Rectify the Count'.         Now play for ^*b THAT ^*n ending.|
+
+ht|k|at| ^n@2 {  The KEY is this ^*b Inverted ^*n Positional Simple Squeeze 
+             is to decide when and how to lose your loser.
+}|
+pg| ***** 37 ***** |
+
+
+%%_aapg-NEAR
+pc|s2|pc|s4|pc|sA|pg||
+pc|sJ|pc|s7|pc|s5|pc|s6|pg||
+pc|s8|pc|s9|pc|sK|pc|d3|pg||
+pc|c5|pc|c8|pc|cA|pc|c3|pg||
+pc|dJ|pc|d5|pc|d4|pc|dQ|pg||
+pc|hT|pc|hK|pc|h6|pc|h2|pg||
+pc|c2|pc|c4|pc|cQ|pc|c9|pg||
+pc|hA|pc|h3|pc|h4|pc|h7|pg||
+pc|h9|pc|h5|pc|s3|pc|h8|pg||
+pc|d8|pc|d6|pc|dA|pc|d7|
+%%_aapg-STD
+pg| ***** 47 ***** |
+
+
+bv|a,v|
+pc|sQ|
+eb|n|
+sk||
+ht|f|at|@4^c@2|
+lg|k|
+at|^^On the play of the  ^*bSqueeze Card^*n  (@sQ)   East is squeezed.|
+pf|all-res-lifted|
+pg| ***** 48 ***** |
+
+
+md|1,,,|
+bv|a,h|
+nt|^z@3^b@2^^cleared|
+pg| ***** 49 ***** |
+
+
+-------------------------------------------------------------------------------
+qx|3, wide|
+bv|a,h|
+ha||
+rh||ah|Practice 3|
+md|2sAK43hAQ76dAcA753,s9h852d752cKQJ842,sQ752hKJT3dKQ93cT,sJT86h94dJT864c96|
+%
+bh|Play, W, cU, res, p1, T2, always|
+%
+sk|S|
+nt|^z@3^b@2^^|
+Lg|l|
+at|^*bPractice 3^*n      ^gThe hand,|
+pg| ***** 50 ***** |
+
+
+n#|5|at|^^^c@2This is a real deal with real bidding and lead.   It features in the aaBridge doc collection document: 
+^d ^*bPath to Advanced Bridge^*n       (see section 5  -  Techniques inc Squeezes)|
+pg| ***** 51 ***** |
+
+
+ht|e|at|@4^^|ht|c|n#|5|at|^i    |
+at|    the bidding,|
+pg| ***** 52 ***** |
+
+
+%%_aapg-NEAR
+mb|3C|pg||
+mb|d|pg||
+mb|p|pg||
+mb|6N|pg||
+mb|p|mb|p|mb|p|
+%%_aapg-STD
+pg| ***** 57 ***** |
+
+
+pc|cK|
+eb|y___|
+mx|x|
+pg| ***** 58 ***** |
+
+
+ht|e|n#|2|at|@4^^|ht|c|n#|5|at|^m |
+at| a ^*b comment ^*n|
+
+
+Lg|b|
+n#|5|at|^^Working out  "How to rectify the count"  is the easy part of this deal.   The real issue is, which card should you discard from dummy once West continues with another @c ?|
+pg| ***** 59 ***** |
+
+
+n#|3|at|^^The answer requires that YOU decide which suits the squeeze will operate in and which "way up" (Standard or Inverted) you want the positional squeeze to be.   
+|n#|3|at|Note - West's hand is full of @cs, so which player most is likely to be the guarding BOTH the @ss and the @ds ?|  
+pg| ***** 60 ***** |
+
+
+bv|f,v|
+eb|y___|
+ht|e|n#|2|at|@4^^|ht|c|n#|5|at|^m |
+ht|z|n^|2|at|There is a hint on the next page but if you want to play the hand NOW, the  { ^*b 1st ^*n }  button is available. |
+pg| ***** 61 ***** |
+
+
+qx|h2, hide|
+nt|^z@3^b@2^^|
+Lg|f|
+at|^*bPractice 3^*n  ^e |cp|gr|at|^*bHint^*n|cp||at|   ^g Play East for to have @sJTxx  @dJxxxx.   So the one card menace will be a @d in dummy ! 
+|n#|3|at|^c@2Work out NOW which cards will be left when the Squeeze card is played.   In North, which cards will be the ^*b long ^*n menace and which the ^*b one-card ^*n menace ?    In South, which will be the ^*b squeeze ^*n card and which the ^*b communication ^*n card  -  BE EXACT.
+|n#|7|
+cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button   |cp|red|at|^*bOR^*n|cp||at|   you can use  {^*b Flow >^*n }  to see the answer.|
+n#|7|
+pg| ***** 62 ***** |
+
+
+bv|e,v|
+mx|x|
+eb|n|
+nt|^z  @3^b@2^^|
+Lg||
+at|^*bPractice 3^*n  ^e |cp|red|at|^*bAns^*n|cp||n#|3|at|  ^g
+^c ^*b Communication card ^*n  ^h   |fg|y|at|(North)|fg||at| ^j  @s7
+^c ^*n Squeeze card ^*n        ^h   |fg|y|at|     " |fg||at| ^j  @hK |fg|y|at|  (final @h)|fg||at|
+^c ^*n One-card  menace ! ^*n  ^h   |fg|y|at|     " |fg||at| ^j  @d9
+^c ^*b Long menace ^*n     ^h   |fg|y|at|(South)|fg||at| ^j  @sA4|fg|y|at|  (@sK4)|fg||at|     ... plus a idle card here a @c
+|n#|6|at|You have one too many losers and need to  'Rectify the Count'.         Now play for ^*b THAT ^*n ending.|
+
+ht|k|at| ^n@2 {  The KEY is this ^*b Inverted ^*n Positional Simple Squeeze 
+             is to decide when and how to lose your loser.
+}|
+pg| ***** 63 ***** |
+
+
+%%_aapg-NEAR
+pc|cT|pc|c9|pc|c3|pg||
+pc|cQ|pc|s2|pc|c6|pc|cA|pg||
+pc|dA|pc|d2|pc|d3|pc|d4|pg||
+pc|hA|pc|h2|pc|h3|pc|h4|pg||
+pc|hQ|pc|h5|pc|hT|pc|h9|pg||
+pc|h7|pc|h8|pc|hJ|pc|d6|pg||
+pc|dK|pc|d8|pc|h6|pc|d5|pg||
+pc|dQ|pc|dT|pc|c5|pc|d7|pg||
+pc|s5|pc|s6|pc|sK|pc|s9|pg||
+pc|s3|pc|c2|pc|sQ|pc|s8|pg||
+%%_aapg-STD
+pg| ***** 74 ***** |
+
+
+bv|a,v|
+pc|hK|
+eb|n|
+sk||
+ht|f|at|@4^c@2|
+lg|f|
+at|^^On the play of the  ^*bSqueeze Card^*n  (@hK)   East is squeezed.
+If you also noticed that you can keep the two spade rounds (@sK, @sQ) unplayed and still successfully play the squeeze card (@hK), those two tricks earlier, Well Done.   This is covered in   Chapter 1.1   Extended Menace.|
+pf|all-res-lifted|
+pg| ***** 75 ***** |
+
+
+qx||
+bt||
+nt|^z@3^b@2^^|
+ht|m|n#|7|cs|c-chapterColor|at|^a     ^-{  ^*nEnd  -  Rectifying the Count^*n  
+}^-|
+pg| ***** 76 ***** |
+
+

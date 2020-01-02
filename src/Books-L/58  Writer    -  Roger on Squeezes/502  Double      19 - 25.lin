@@ -1,0 +1,169 @@
+
+
+%% 2019-08-05  Patterns  Double Squeeze
+
+%% All hands are copyright  Richard Pavlicek
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pd|hint,^b   There is a `cp`green`at`^*b Hint ^*n`cp``AT` on the next page but if you want to  PLAY  the hand NOW, the  { ^*b 1st ^*n }  button is available.|
+%%
+pd|choose,`cp`red`at`^b    ^*bPlease   CHOOSE^*n`cp``at`   you can use  {^*b Flow >^*n }  to see the answer  `cp`red`at`^*bOR^*n`cp``at`  you can click  { ^*b 1st ^*n }  to PLAY the hand.|
+%%
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+<<--INSERT-START-->>=07b__FP_Patterns.ins
+%%
+fh|b48| %%  'banner' font
+fh|t40| %%  'target' font
+fh|s28| %%  'small'  font
+fh|p45| %%  'pink dot' size
+
+cr|a230|cg|a040|cb|a130|          a  action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       pink dot button
+
+bv|e,h| %%   Enter the deal button hidden
+bv|f,v| %%   1st visible 
+bv|d,v| %%   DDS visible
+
+ha|y|   %%   hide auctions
+
+ss|head,     ah`Part 10.    Double Squeeze`|
+
+ss|banner,   ht`e`fp`b-big`at`^*b^k^*nDouble Squeeze^*n`fp``|
+ss|link,     ht`z`at`^kvisit  Richard Pavlicek's  Double Squeeze  page    ^*h http://www.rpbridge.net/9j81.htm, rpbridge.net  9j01^*n`|
+ss|means,    ht`e`fp`small`at`^x ^*h http://www.rpbridge.net/9gc8.htm, meaning^*n`fp``|
+ss|new,      nt`^b@2^^`vv`means`vv`link`vv`banner`ht`e`vv`head`|
+ss|contract, mb`3nppp`|
+ss|p1,       vv`contract`wt`s`sk`s`fp`t`ht`e`at`^q    ^*b`|
+ss|p2,       fp`t`ht`e`at`^*n^u`|
+ss|p3,       fp``ht`q`at`^d`|
+%%
+<<--INSERT-END**-->>=07b__FP_Patterns.ins
+
+
+<<--INSERT-START-->>=08b__FP_Patterns_Anti.ins
+%%
+ss|banner,   ht`e`fp`b-big`at`^*b^j^*n Anti Double Squeeze^*n`fp``|
+%%
+<<--INSERT-END**-->>=08b__FP_Patterns_Anti.ins
+
+
+qx|-|
+st||
+nt|^b@2^^|vv|banner|
+lg|k|
+ht|n|at|The following group of patterns are, to quote the creator Richard Pavlicek,
+^d" ...  'anti' techniques, i.e., plays to counteract a technique in that category."
+You are defending (as N or S) and are trying to stop declarer from making their contract.|
+rh||ah|--- -|vv|head|
+ht|a|n#|0|at|^q  Your target is |cp|red|at|^*b 5 ^*n |cp||at|tricks|
+pg| ***** 0 ***** |
+
+
+qx|19|
+rh||ah|Pattern 19|
+vv|new|at|^*b 19.  Common entry removal^*n|
+%
+md|4  KQT - KQ, AJ 4 A9, 2 KQ JT, 4 AJ 4 A|
+%
+bs|4,4|
+vv|p1|at|win 1|
+vv|p2|at|auto bi|
+vv|p3|at||
+pg| ***** 1 ***** |
+
+
+qx|20|
+rh||ah|Pattern 20|
+vv|new|at|^*b 20.  Twin entry attack^*n|
+%
+md|4  KQT - QJT, J4 K A42, 32 A 987, A - K65 AK|
+%
+bs|3,4|
+vv|p1|at|win 1|
+vv|p2|at|auto bi|
+vv|p3|at|No matter which hand wins @dQ, no squeeze.|
+pg| ***** 2 ***** |
+
+
+qx|21|
+rh||ah|Pattern 21|
+vv|new|at|^*b 21.  Dual entry attack^*n|
+%
+md|4  KQT - QJT, J4 AJ 54, 2 KQ 987, A 4 AK6 A|
+%
+bh|Play, E,  sH, res, p1,  T2,  always|
+bh|Play, E,  cH, res, p1,  T3,  always|
+%
+bs|3,4|
+vv|p1|at|win 1|
+vv|p2|at|bi|
+vv|p3|at|Causes West to be squeezed before South.|
+pg| ***** 3 ***** |
+
+
+qx|22|
+rh||ah|Pattern 22|
+vv|new|at|^*b 22.  Lone-stopper retention^*n|
+%
+md|4  - A2 987, - - A65 AK, A K QJT, K Q K4 2|
+%
+bh|Play, E,  sH, res, p3,  T2,  always|
+%
+bs|4,4|
+vv|p1|at|win 1|
+vv|p2|at|auto? bi|
+vv|p3|at||
+wt|w|
+pc|cA|
+pg| ***** 4 ***** |
+
+
+qx|23|
+rh||ah|Pattern 23|
+vv|new|at|^*b 23.  RHO-stopper retention^*n|
+%
+md|4  - KQ2 JT, - A9 4 AK, A JT KQ, K 4 A9 2|
+%
+bs|4,4|
+vv|p1|at|win 1|
+vv|p2|at|auto re|
+vv|p3|at||
+wt|w|
+pc|cA|
+pg| ***** 5 ***** |
+
+
+qx|24|
+rh||ah|Pattern 24|
+vv|new|at|^*b 24.   Forced early discard   I^*n|
+%
+md|4  2 KQ QJT, 4 AJ 54 A, KQ 2 987, AJ - AK6 4|
+%
+bh|Play, E,  cL, res, p4,  T1,  always|
+%
+bs|3,4|
+vv|p1|at|win 1|
+vv|p2|at|auto bi|
+vv|p3|at|Auto case any lead suffices (no squeeze).|
+pg| ***** 6 ***** |
+
+
+qx|25|
+rh||ah|Pattern 25|
+vv|new|at|^*b 25.   Forced early discard   II^*n|
+%
+md|4  KQ - QJT 4, J4 A K4 A, 2 KQ 987, A J4 A65|
+%
+bs|3,4|
+vv|p1|at|win 1|
+vv|p2|at|auto|
+vv|p3|at|Auto case any lead suffices (no squeeze).|
+pg| ***** 7 ***** |
+
+

@@ -1,0 +1,253 @@
+%%
+%%
+
+ss|chapter, 3.  Probability Example                                |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-05-30          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Suit  Combinations  and  Probability                       |
+%%
+cr|m200|cg|m100|cb|m090|   fill   m  m-mastColor       on Title Pages
+cr|c208|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02a__FP_fonts_colors.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+<<--INSERT-END**-->>=02a__FP_fonts_colors.ins
+
+
+<<--INSERT-START-->>=02b__FP_bars.ins
+%%
+bt||
+nt|^b@2^z@3|
+%%
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02b__FP_bars.ins
+
+
+%%
+%%   The text below is special to this lin file and not part of any header ------------------------
+%%
+ht|j|
+at|^t    |ih|-JT9|
+at|^t|n#|z|n#|f|ih|-AK876|
+ht|p|n^|8|
+at|^t  |ih|-JT92|
+at|^t|n#|z|n#|f|ih|-AK876|
+
+ht|i|
+lg|f|at|^c@2^s@3
+You are playing in 4@h and the trump suit is as shown on the right.
+What is the correct way to play the suit ?
+|fp|s|at|^*i   @2Problems like this assume that you have no other information about the opps hands.  So if West had doubled your 4@h contract you might play differently. ^*n|fp||n#|3|at|
+^c@2Should you finesse the  @hQ  ^*n  OR  ^*n  play for the drop ? ^Z@3
+
+The dictum  ^*b^*i  Eight Ever,  Nine Never^*n,    tells you ^*b to ^*n finesse with EIGHT
+
+Whereas, when you hold  NINE  cards you should play for the drop.
+
+I am not going to detail the full reasoning here.  Basically, in each case you are comparing the 50% chance that the finesse will work (there is a 50 - 50 chance of the @hQ being on either side), against the chance that the Queen will drop.  The actual logic turns out to be a little more fiddly that you might expect.
+|n^|9|at|
+   Here is Hondo giving his insight: ^k ^*g 113:finesses::Declarer Play Lessons, Books-L   -   Declarer Play Lessons   -   Finesses   p 113^*n
+|n^|1|fp|s|at|^m return  HERE  by clicking the  |fp|t|n#|1|at|@L|fp|s|n^|1|at|   icon button, top left.
+|fp||n^|a|at|
+The key point to bear in mind is that the actual hand will have its own logic. That is what you must tune into, as shown by the problem example on the next page.|
+qx|3.|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+rh||ah|Example Prob|vv|head|
+%
+md|4sAKQ3hAK876d43c65,sThQ43dJT8752cJ94,s962hJT9dAK9cT872,sJ8754h52dQ6cAKQ3|
+%
+bh|Play, East, cU, res, p1, T4-9, always|
+%
+sv||sk|s|
+nt|^z@3^b@2^^|n^|5|
+lg||
+at|^*bProbability Example ^*n     The hand,|
+pg| ***** 1 ***** |
+
+
+at|     the bidding,|
+mb|1S|mb|d|mb|p|mb|2C|mb|p|mb|2H|mb|p|mb|3H|mb|p|mb|4H|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+at|     the lead.|
+pc|sT|eb|y___|
+pg| ***** 3 ***** |
+
+
+qx|Thnk,wide|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 4 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Try,wide|
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+at|^^|cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the solution.|
+pf|first-button|
+pg| ***** 5 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Ans,wide|
+bv|e,v|
+nt|^z@3^c@2^^|n^|5|
+at|^b^*bAnswer^*n|
+lg|c|
+ht|f|at|@4|
+ht|e|n^|5|at|^c@2^z@3
+The question is NOT - how to play this hand, you should have already found the winning line.  The issue is how to think about hands like this so that you will get to the BEST line of play, in future deals.
+|n^|9|at|
+A quick look at the deal shows that you have 4 losers   @-   @hQ (trump),  2@cs   and a possible @s.
+|n^|9|at|
+So how to get rid of a loser ?   and WHICH loser ?|
+pg| ***** 6 ***** |
+
+
+nt|^z@3^c@2^^|n^|5|
+at|^b^*bAnswer^*n|
+Lg|c|
+at|
+The 'quoted earlier' ^*b^*i Eight Ever,  Nine Never^*n,  tells you that in this situation you should cross to dummy and take the finesse against the @hQ (trumps).  That way you have a  50%  chance of making your contract. 
+|n^|5|at|
+And even if the finesse against the  @hQ  fails you still have the chance of the spades splitting  3 - 3, (then the @s loser will become a winner) which, if you look it up in the table given earlier, is 36%.|
+pg| ***** 7 ***** |
+
+
+nt|^z@3^c@2^^|n^|5|
+at|^b^*bAnswer^*n|
+lg|c|
+ht|f|at|@4|
+ht|e|n^|5|at|^c@2^z@3
+STOP right there @- on this deal there is ZERO chance of the @s's splitting 3-3.   East opened 1@s, so you can take West's  @s10 lead  to be a singleton (or doubleton if you don't play 5 card majors !).  
+|n^|9|at|
+West is also more likely to have longer @h's that East,  West has 12 unknown cards while East has just 8.
+|n^|5|at|
+But is there an alternative way to play the deal ?|
+pg| ***** 8 ***** |
+
+
+nt|^z@3^c@2^^|n^|5|
+at|^b^*bAnswer^*n|
+lg|c|
+ht|f|at|@4|
+ht|e|n^|5|at|^c@2^z@3
+First notice that if West has  @hQxxx you have no chance, as she will have both a natural trump trick and be able to ruff a @s so we can ignore that possibility.
+|n^|0|at|
+A way to get to the winning line is to ask yourself  @-  wouldn't be nice if I could ruff a @s in dummy ?|
+pg| ***** 9 ***** |
+
+
+nt|^z@3^c@2^^|n^|5|
+at|^b^*bAnswer^*n|
+lg|c|
+ht|f|at|@4|
+ht|e|n^|5|at|^c@2^z@3
+Then you just might get the thought that, if you @-
+draw two rounds of trumps and leave only the @hQ outstanding then as you RUN the @s's  @-
+   @2if the @hQ is used to ruff you @2          get back a trump trick, 
+AND  you will have a trump remaining in dummy to ruff your 4th @s.
+|n^|9|at|
+^c   if the @hQ is NOT used to ruff  ^*i'weird'^*n  then you make all your @s's and still ruff the 4th @s.|
+pg| ***** 10 ***** |
+
+
+nt|^z@3^c@2^^|n^|5|
+at|^b^*bAnswer^*n|
+lg|c|
+ht|f|at|@4|
+ht|e|n^|5|at|^c@2^z@3
+The core issue here is probability. At first it looked like there was a simple choice of the 50-50 finesse or playing for the drop.   Then we noticed that as long as the trumps divide 3-2 can still make.
+|n^|7|at|
+So we should compare the  50%  chance with the  68%  chance of the 3-2 trump split   (look it up).
+|n^|7|at|
+Therefore we go for drawing two rounds of trumps (@h's)  before running the @s's.|
+pg| ***** 11 ***** |
+
+
+nt|^z@3^c@2^^|n^|5|
+at|^b^*bAnswer^*n|
+lg|c|
+ht|f|at|@4|
+ht|e|n^|5|at|^c@2^z@3
+^^The play should go something like ...|
+pg| ***** 12 ***** |
+
+
+%%_aapg-NEAR
+pc|s2|pc|s4|pc|sA|pg||
+pc|hA|pc|h3|pc|h9|pc|h2|pg||
+pc|hK|pc|h4|pc|hT|pc|h5|pg||
+pc|sK|pc|hQ|pc|s6|pc|s5|pg||
+pc|cJ|pc|c2|pc|c3|pc|c5|pg||
+pc|c9|pc|c7|pc|cQ|pc|c6|pg||
+pc|cA|pc|h6|pc|c4|pc|c8|pg||
+pc|sQ|pc|d2|pc|s9|pc|s7|pg||
+pc|s3|pc|d5|pc|hJ|
+%%_aapg-STD
+pg| ***** 21 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Done,wide|
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+at|^*bDone^*n
+^c We are done with this problem.  However, if you wish ...
+^^|fg|y|at|Once you have clicked  { ^*b Cont ^*n }  you can use the  { ^*b Show ^*n }  button in the green area on the right to see all the cards.|fg||
+bv|c,v|
+pf|cont-button|
+pg| ***** 22 ***** |
+
+
+---------------------------------------------------------------------------
+qx|DDS,wide|
+nt|^z@3^b@2^^|n^|5|
+g|f|
+bv|a,v|
+at|^*bDDS^*n    ^eYou are now free to explore the deal.
+|n^|7|lg|k|at|^^^c@2If you still need help then, when in the deal, click the ^*b DDS  { is Off/On ^*n }  button top right.
+|fp|s|at|A number (of tricks) in a GREEN oval shows a good to play for THAT side.|fp||
+pf|all-res-lifted|
+pg| ***** 23 ***** |
+
+

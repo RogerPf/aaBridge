@@ -1,0 +1,996 @@
+%%
+%% Endplays 4
+%%
+%% Reformatted for aaBridge  2018 August
+%%
+%% Roger Pfister    edited cpg 2018-18-August
+%%
+
+<<--INSERT-START-->>=005__Common_Header.ins
+%%
+fh|130|ff|1Arial|fb|14|fm|1|                       
+fh|240|ff|2Arial|fb|24|fm|2|
+fh|340|ff|3Arial|fb|3y|fm|3|fu|3y|
+fh|490|ff|4Times New Roman|fb|49|fm|4| 
+%
+cr|164|cg|1255|cb|1255|           
+cr|2000|cg|2000|cb|2239|                 
+cr|3255|cg|3250|cb|3205|      
+cr|5065|cg|5105|cb|5255|
+cr|6238|cg|6106|cb|6080|       
+cr|8255|cg|8250|cb|8205|     
+cr|9176|cg|9048|cb|9096|  
+%
+bv|a,v|
+bt||
+at|^b@2^z@3^^|
+
+
+pd|cont-etd-msg,  You can use  { ^*b Cont ^*n }  to play out the rest of the cards  OR  do as suggested above and click  { ^*b Enter the Deal ^*n }|
+
+ss|process-txt,`ht`e`lg`o`at`^c@2^^Click   { ^*b Enter the Deal ^*n }   then on the right in the `cp`gr`at`^*b  green table area ^*n `cp``at` click  { ^*b Show ^*n }^^You can then click  ^*b Flow ^*n  or  ^*b Mouse wheel ^*n  through the correct play, to see how it all works.`pf`cont-etd-msg`|
+ 
+%%
+<<--INSERT-END**-->>=005__Common_Header.ins
+
+
+mn|  Endplays  4   -   The "Entry" position|
+tu|y|
+ht|f|
+lg|e|
+fp|2|at|The "Entry" Position|
+qx|EP|
+ht|a|n#|5|fp|2|at|^*b^a EP ^c|fp||at|^*gIndx:Index,Click for Index^*n|
+
+ht|g|at|An Entry position occurs when it is impossible for the declarer to reach the dummy from his own hand, but he can attempt  to get there with a defender's help.
+
+When you, as declarer, have a winner in what looks like an isolated dummy, it is sometimes possible to achieve an entry  by forcing a defender to put dummy in the lead.
+
+^bYou can either:
+|n#|5|at|^b1. Put a defender on lead in a suit that he can't play without giving you the required entry.
+^b2. Put a defender on lead and force him to choose between three alternatives. 
+
+^b    He can: 
+^ca. Deliver you a trick by giving you an extra entry to dummy or by leading into a fork.
+^cb. Give you an extra entry or allow you a ruff and a discard play.
+^cc. Give you an extra entry or lead your problem suit, saving you a trick there.
+
+^b3. Perform a throw-in while at the same time discarding a blocking high card from the opposite hand. 
+         The defender may then have to give you an entry to the honor that was promoted by the unblock play. 
+         This is what in bridge terms called "Jettison play" or "Jettison coup", which is covered at the end of this section.|
+		   
+ht|z|n#|b|at|^b^*bMM:^*n  Remember you can |cp|red|at| ^*b PLAY ^*n|cp||at| ^*b ANY HAND ^*n  at  ^*b ANY TIME ^*n  by clicking the  { ^*b 1st ^*n }  button.|
+pg| ***** 0 ***** |
+
+
+st||
+pf||
+
+-------------------------------------------------------------------------------------------------------------------
+qx|1|rh||ah|Entry position|ah|Deal 1|
+md|1SAHAKQJ42DA7632CA,ST643HT85D9CQ9872,SKQJ7H963DJ854CKT,S9852H7DKQTCJ6543|sk|ns|
+mb|2C|mb|p|mb|2N|mb|p|mb|3H|mb|p|mb|4N|mb|p|mb|6H|mb|p|mb|p|mb|p|
+pc|d9|
+nt|^b@2^z@3^^|ht|b|at|Deal  1     |
+ht|z|n#|0|at|^b^*bMM:^*n  Remember you can |cp|red|at| ^*b PLAY ^*n|cp||at| ^*b ANY HAND ^*n  at  ^*b ANY TIME ^*n  by clicking the  { ^*b 1st ^*n }  button.|
+pg| ***** 1 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Deal  1     |
+pg| ***** 2 ***** |
+
+
+lg|e|at|      The only chance to make your slam is to discard four diamonds on dummy's high spades and clubs. 
+Alas, dummy has no entry.|
+pc|d4|pc|dT|pc|dA|
+pg| ***** 3 ***** |
+
+
+at|^^^^Your first chance is to drop the @h10 under one of the two top trump honors, establishing the @h9 as an entry. If that does not happen, you must hope to find the @h10 to three  in West. We will soon see why.|
+pg| ***** 4 ***** |
+
+
+pc|hA|pc|h5|pc|h3|pc|h7|
+pg| ***** 5 ***** |
+
+
+pc|hK|pc|h8|pc|h6|pc|c3|
+pg| ***** 6 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|East showed out on the second round, so it is now impossible to reach the dummy from your own hand.|
+pg| ***** 7 ***** |
+
+
+n#|5|lg|e|at|^^West would probably not lead the @d9 if he holds one of the missing honors, therefore, the @d9 must be a singleton. 
+If that is true, West can only hold spades, clubs and the @h10. The latter allows you to throw West in. But this requires some preperation work.|
+pg| ***** 8 ***** |
+
+
+lg|m|at|^^Cash the two black Aces, unblocking the suits|
+pg| ***** 9 ***** |
+
+
+pc|cA|pc|c2|pc|cT|pc|c4|
+pg| ***** 10 ***** |
+
+
+pc|sA|pc|s3|pc|s7|pc|s2|
+pg| ***** 11 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Then lead a small heart.|
+pg| ***** 12 ***** |
+
+
+pc|h2|pc|hT|pc|h9|pc|s5|
+pg| ***** 13 ***** |
+
+
+ht|h|at|West is now endplayed. He must put you in dummy with whichever card he chooses to lead.|
+sk||
+pg| ***** 14 ***** |
+
+
+nt|^b@2^z@3^^|
+vv|process-txt|
+pg| ***** 15 ***** |
+
+
+-------------------------------------------------------------------------------
+qx|2|rh||ah|Entry position|ah|Deal 2|
+md|2SAHAQJT8753DK3CAJ,SQJ7HK9DAQ87CKQ98,SK642H6D642CT7642,ST9853H42DJT95C53|sk|ns|
+mb|1D|mb|p|mb|p|mb|4H|mb|p|mb|p|mb|p|
+pc|cK|
+nt|^b@2^z@3^^|ht|b|lg|g|at|Deal  2     Occasionally -- when reaching the dummy will be worth more than one trick -- sacrificing tricks to perform a throw-in play can be beneficial.
+You have four losers -- and the @sK, on which you could discard one of them -- seems out of reach.
+The bid marks West with most of the missing points. Therefore, your plan should rely on the @hK in West.|
+pg| ***** 16 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Win the opening lead,  | 
+pg| ***** 17 ***** |
+
+
+pc|c2|pc|c5|pc|cA|
+pg| ***** 18 ***** |
+
+
+at|then play the @hA and the @sA, unblocking the suit.|
+pg| ***** 19 ***** |
+
+
+pc|hA|pc|h9|pc|h6|pc|h2|
+pg| ***** 20 ***** |
+
+
+pc|sA|pc|s7|pc|s2|pc|s3|
+pg| ***** 21 ***** |
+
+
+at|^^^^Play the @hQ, intending to throw West in with the @hK.|
+pg| ***** 22 ***** |
+
+
+pc|hQ|pc|hK|pc|d2|pc|h4|
+pg| ***** 23 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Your assumption proved to be correct!|
+pg| ***** 24 ***** |
+
+
+pc|cQ|
+ht|h|at|After taking his @cQ West can win only one more trick by leading a diamond, or by returning a spade or a club, giving you the required entry to dummy.|
+sk||
+pg| ***** 25 ***** |
+
+
+nt|^b@2^z@3^^|
+vv|process-txt|
+pg| ***** 26 ***** |
+
+
+-----------------------------------------------------------------------------------
+qx|3|rh||ah|Entry position|ah|Deal 3|
+md|2SA843HAKT4DT65C52,ST9HQJ98752DK72C4,SKQDAJ943CAKQJT6,SJ7652H63DQ8C9873|sk|ns|
+mb|3H|mb|6C|mb|p|mb|6N|mb|p|mb|p|mb|p|
+pc|sT|
+nt|^b@2^z@3^^|ht|b|at|Deal  3    @2You have 12 tricks but can reach your heart winners only by overtaking the @sA, giving up a trick in 
+the suit.
+
+^b@2|n^|5|at|One chance is to overtake the @sA, hoping to bring in the diamond suit by a repeated finesse. For this to succeed you will  need to find West with a doubleton or singleton diamond honor or any combination headed by the @dKQ. 
+
+|n^|5|at|You will go down if you find East with a doubleton honor. In this case, East will win and put you in dummy with a spade or club, disconnecting you permanently from your heart honors.|
+pg| ***** 27 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|lg|h|at|A better idea is to hope you can endplay a defender who holds a doubleton diamond honor.
+Win the @sQ, cash the @sK |
+pg| ***** 28 ***** |
+
+
+pc|sQ|pc|s2|pc|s3|
+pg| ***** 29 ***** |
+
+
+at|and play six rounds of clubs, |
+pg| ***** 30 ***** |
+
+
+pc|sK|pc|s5|pc|s4|pc|s9|
+pg| ***** 31 ***** |
+
+
+pc|cA|pc|c3|pc|c2|pc|c4|
+pg| ***** 32 ***** |
+
+
+pc|cK|pc|c7|pc|c5|pc|h2|
+pg| ***** 33 ***** |
+
+
+at|^^^k discarding one diamond, two hearts, and a spade from your hand.|
+pg| ***** 34 ***** |
+
+
+pc|cQ|pc|c8|pc|d5|pc|h5|
+pg| ***** 35 ***** |
+
+
+pc|cJ|pc|c9|pc|h4|pc|h7|
+pg| ***** 36 ***** |
+
+
+pc|cT|pc|h3|pc|hT|
+pc|h8|
+pg| ***** 37 ***** |
+
+
+pc|c6|pc|s6|pc|s8|pc|h9|
+pg| ***** 38 ***** |
+
+
+at|^^Cash the @dA and play a second diamond.|
+pg| ***** 39 ***** |
+
+
+pc|dA|pc|d8|pc|d6|pc|d2|
+pg| ***** 40 ***** |
+
+
+pc|d3|pc|dQ|pc|dT|pc|d7|
+pg| ***** 41 ***** |
+
+
+sk||
+nt|^b@2^z@3^^|lg|g|ht|b|at|If East wins, he must give you an entry to the three winners in your hand.|
+pg| ***** 42 ***** |
+
+
+up|7|
+sk|S|
+at|^^East may prefer to unblock the @dQ under the Ace.|
+pg| ***** 43 ***** |
+
+
+pc|dq|pc|d6|pc|d2|
+pg| ***** 44 ***** |
+
+
+at|^^In this case you simply play a small diamond toward the 10.|
+pg| ***** 45 ***** |
+
+
+pc|d3|pc|d8|pc|dT|pc|dk|
+pg| ***** 46 ***** |
+
+
+sk||
+nt|^b@2^z@3^^|ht|b|at|West can win the King and will then have a choice of whether to give you an entry to hand with a heart or to dummy with a diamond.|
+pg| ***** 47 ***** |
+
+
+nt|^b@2^z@3^^|
+vv|process-txt|
+pg| ***** 48 ***** |
+
+
+-----------------------------------------------------------------------------------
+qx|3b|rh||ah|Entry position|ah|Deal 3b|
+md|2SA843HAKT4DT65C52,ST9HQJ98752DQ7C43,SKQDAJ943CAKQJT6,SJ7652H63DK82C987|sk|ns|
+mb|3H|mb|6C|mb|p|mb|6N|mb|p|mb|p|mb|p|
+pc|sT|
+nt|^b@2^z@3^^|ht|b|at|Deal  3b     Here is the hand again, this time with a different @d split (Qx-Kxx instead of Kxx-Qx).|
+pg| ***** 49 ***** |
+
+
+ht|h|at|Again, win the @sQ, cash the @sK and play six rounds of clubs, discarding one diamond, two hearts, and a spade from your hand. | 
+pg| ***** 50 ***** |
+
+
+pc|sQ|pc|s2|pc|s3|
+pg| ***** 51 ***** |
+
+
+pc|sK|pc|s5|pc|s4|pc|s9|
+pg| ***** 52 ***** |
+
+
+pc|cA|pc|c7|pc|c2|pc|c3|
+pg| ***** 53 ***** |
+
+
+pc|cK|pc|c8|pc|c5|pc|c4|
+pg| ***** 54 ***** |
+
+
+pc|cQ|pc|c9|pc|h4|pc|h2|
+pg| ***** 55 ***** |
+
+
+pc|cJ|pc|h3|pc|d5|pc|h5|
+pg| ***** 56 ***** |
+
+
+pc|cT|pc|s6|pc|s8|pc|h7|
+pg| ***** 57 ***** |
+
+
+pc|c6|pc|s7|pc|hT|pc|h8|
+pg| ***** 58 ***** |
+
+
+ht|r|at|Finally, lead the @dAce from dummy, followed by a low @d to throw East in. | 
+pg| ***** 59 ***** |
+
+
+pc|dA|pc|d2|pc|d6|pc|d7|
+pg| ***** 60 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|East can win, and he is endplayed.|
+pg| ***** 61 ***** |
+
+
+sk||
+pc|d3|pc|dK|pc|dT|pc|dQ|
+pg| ***** 62 ***** |
+
+
+up|3|sk|s|
+ht|h|at|Or duck, and now West is endplayed.|
+pg| ***** 63 ***** |
+
+
+pc|d8|pc|dT|pc|dq|
+pg| ***** 64 ***** |
+
+
+nt|^b@2^z@3^^|
+vv|process-txt|
+pg| ***** 65 ***** |
+
+
+-----------------------------------------------------------------------------------
+qx|4|rh||ah|Entry position|ah|Deal 4|
+md|2SAHAKQT53DK86CAQ2,SQJT84H9DAQTCKT95,SK932H762D432CJ83,S765HJ84DJ975C764|sk|ns|
+mb|1S|mb|p|mb|p|mb|d|mb|p|mb|2C|mb|p|mb|4H|mb|p|mb|p|mb|p|
+pc|sQ|
+nt|^b@2^z@3^^|ht|b|at|Deal  4      Assuming the trumps split no worse than 3-1, you have four losers.
+^^The problem is that the @sK, the card you need to discard a diamond on, is inaccessible through your own hand. 
+^^With only 14 points out, you can place most of the honors in West, and your plan should aim to take advantage of that knowledge.|
+pg| ***** 66 ***** |
+
+
+nt|^b@2^z@3^^|
+
+ht|b|at|Win the opening lead and draw the adverse trumps in three rounds.|
+pc|s2|pc|s5|pc|sA|
+pg| ***** 67 ***** |
+
+
+pc|hA|pc|h9|pc|h2|pc|h4|
+pg| ***** 68 ***** |
+
+
+pc|hK|pc|s4|pc|h6|pc|h8|
+pg| ***** 69 ***** |
+
+
+pc|hQ|pc|dT|pc|h7|pc|hJ|
+pg| ***** 70 ***** |
+
+
+at|^^^^Play the @cA and follow with the @cQ.|
+
+pc|cA|pc|c5|pc|c3|pc|c4|
+pg| ***** 71 ***** |
+
+
+pc|cQ|pc|cK|pc|c8|pc|c6|
+pg| ***** 72 ***** |
+
+
+sk||
+
+nt|^b@2^z@3^^|lg|h|ht|b|at|West can win the @cK whenever he chooses to.
+If he wins the King immediately, he would not be able to attack @d's successfully, and if he exits with a spade or a club, you will be able to discard one of your diamond losers on the @sK.|
+pg| ***** 73 ***** |
+
+
+pf|both-first-cont|
+pg| ***** 74 ***** |
+
+
+up|3|sk|s|
+nt|^b@2|ht|b|at|Returning to the sixth trick, |
+pg| ***** 75 ***** |
+
+
+at|let's assume West ducks the second round of clubs |
+pc|c9|pc|c8|pc|c6|
+pg| ***** 76 ***** |
+
+
+lg|e|at|^^and wins the third.|
+pc|c2|pc|cK|pc|cJ|pc|c7|
+pg| ***** 77 ***** |
+
+
+at|^^West can cash the @c10 on which you will discard a diamond loser from hand|
+pc|cT|pc|d2|pc|d5|pc|d6|
+pg| ***** 78 ***** |
+
+
+sk||
+lg|e|at|^^But then he will have to deal with the same dilemma of whether to play a @d, or give you the entry to the @sK.|
+pg| ***** 79 ***** |
+
+
+nt|^b@2^z@3^^|
+vv|process-txt|
+pg| ***** 80 ***** |
+
+
+-----------------------------------------------------------------------------------
+qx|5|rh||ah|Entry position|ah|Deal 5|
+md|1S7532HAQ4DAKQCAKQ,SKQJTHK8DT632C953,SA84H52DJ954CJ742,S96HJT9763D87CT86|sk|ns|
+mb|2C|mb|p|mb|2D|mb|p|mb|2N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pc|sK|
+nt|^b@2|ht|b|at|Deal  5      The opening lead of the @sK is painful for you. If any other suit had been led, you would have had ten top tricks. Unfortunately, the @sA is a vital entry to dummy, and once it is played, you will no longer be able to get there to cash dummy's two Jacks. 
+^^|n^|5|at|You have only eight tricks. One way to try for a ninth trick is to take a @h finesse.|
+pg| ***** 81 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Let's see that.|
+pc|sA|pc|s9|pc|s2|
+pg| ***** 82 ***** |
+
+
+pc|h2|pc|h3|pc|hQ|pc|hK|
+pg| ***** 83 ***** |
+
+
+at|^^^^If the finesse fails, West can cash his three @s winners and then disconnect you from dummy with whichever card he continues.|
+
+pc|sQ|pc|s4|pc|s6|pc|s3|
+pg| ***** 84 ***** |
+
+
+pc|sJ|pc|s8|pc|d7|pc|s5|
+pg| ***** 85 ***** |
+
+
+pc|sT|pc|h5|pc|c6|pc|s7|
+pg| ***** 86 ***** |
+
+
+pc|h8|pc|d4|pc|h6|pc|hA|mc|8|
+pg| ***** 87 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|So you should resist the temptation of the heart finesse, since with proper play the 3NT contract cannot fail.|
+up|20|
+pg| ***** 88 ***** |
+
+
+at|^^^^After winning the opening lead, cash your three top clubs and three top diamonds.|
+pc|c2|pc|c6|pc|cQ|pc|c3|
+pg| ***** 89 ***** |
+
+
+pc|cA|pc|c5|pc|c4|pc|c8|
+pg| ***** 90 ***** |
+
+
+pc|cK|pc|c9|pc|c7|pc|cT|
+pg| ***** 91 ***** |
+
+
+pc|dQ|pc|d2|pc|d4|pc|d7|
+pg| ***** 92 ***** |
+
+
+pc|dK|pc|d3|pc|d5|pc|d8|
+pg| ***** 93 ***** |
+
+
+pc|dA|pc|d6|pc|d9|pc|h3|
+pg| ***** 94 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Then exit with a spade.|
+pc|s3|pc|sT|pc|s4|pc|s6|
+pg| ***** 95 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|After winning the trick, West can cash his last spade winners.|
+pg| ***** 96 ***** |
+
+
+ 
+pc|sQ|pc|s8|pc|h6|pc|s5|
+pg| ***** 97 ***** |
+
+
+pc|sJ|pc|h2|pc|h7|pc|s7|
+pg| ***** 98 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|But with only hearts and a diamond left, West is now forced to play a heart into your AQ fork or play a diamond, putting you in dummy.|
+sk||
+pg| ***** 99 ***** |
+
+
+at|^^^^You have made your game with an overtrick!|
+pg| ***** 100 ***** |
+
+
+nt|^b@2^z@3^^|
+vv|process-txt|
+pg| ***** 101 ***** |
+
+
+-----------------------------------------------------------------------------------
+qx|6|rh||ah|Entry position|ah|Deal 6|
+md|1SAKQHAKQ5DAK5CAKQ,ST987HJT97DQJCJT8,SJ642H8642D8642C6,S53H3DT973C975432|sk|ns|
+mb|2C|mb|p|mb|2D|mb|p|mb|6N|mb|p|mb|p|mb|p|
+pc|hJ|
+nt|^b@2^z@3^^|ht|b|at|Deal  6       |
+pg| ***** 102 ***** |
+
+
+at|After winning the opening lead, you can simply lay down all your winners.|
+pg| ***** 103 ***** |
+
+
+pc|h2|pc|h3|pc|hQ|
+pg| ***** 104 ***** |
+
+
+pc|sA|pc|s7|pc|s2|pc|s3|
+pg| ***** 105 ***** |
+
+
+pc|sK|pc|s8|pc|s4|pc|s5|
+pg| ***** 106 ***** |
+
+
+pc|sQ|pc|s9|pc|s6|pc|c2|
+pg| ***** 107 ***** |
+
+
+pc|cQ|pc|c8|pc|c6|pc|c3|
+pg| ***** 108 ***** |
+
+
+pc|cA|pc|cT|pc|h4|pc|c4|
+pg| ***** 109 ***** |
+
+
+pc|cK|pc|cJ|pc|h6|
+pc|c5|
+pg| ***** 110 ***** |
+
+
+pc|dA|pc|dJ|pc|d2|pc|d3|
+pg| ***** 111 ***** |
+
+
+pc|dK|pc|dQ|pc|d4|pc|d7|
+pg| ***** 112 ***** |
+
+
+pc|hA|pc|h7|pc|h8|pc|c7|
+pg| ***** 113 ***** |
+
+
+pc|hK|pc|h9|pc|d6|pc|c9|
+pg| ***** 114 ***** |
+
+
+nt|^b@2^z@3^^|lg|c|ht|b|at|The original layout of the adverse cards has been discovered: West has started with 4-4-3-2 ditribution and has only the @s10 and the @h10 left.
+
+You can now throw West in with your last heart and so get to dummy's @sJ.|
+pg| ***** 115 ***** |
+
+
+sk||
+pc|h5|pc|hT|pc|d8|pc|d9|
+pg| ***** 116 ***** |
+
+
+nt|^b@2^z@3^^|
+vv|process-txt|
+pg| ***** 117 ***** |
+
+
+-----------------------------------------------------------------------------------
+qx|7,wide|rh||ah|Entry position|ah|Deal 7|
+md|2SAT4HAKJT976DAKCA,SKQJ976H3D865CT65,S853H542DQJCKQ873,S2HQ8DT97432CJ942|
+sk|ns|
+mb|2S|mb|p|mb|p|mb|d|mb|p|mb|3C|mb|p|mb|3H|mb|p|mb|4H|mb|p|mb|6H|mb|p|mb|p|mb|p|
+pc|sK|
+nt|^b@2^z@3^^|lg|e|ht|b|at|Deal  7        The @cKQ in dummy seems unreachable. 
+|n^|9|at|
+After the first round, East will have no spades left.  Your only chance is to find East with @hQx, so that you can endplay him on the second round of trumps.|
+pg| ***** 118 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Win the opening lead and cash the @hA.|
+pg| ***** 119 ***** |
+
+
+pc|s3|pc|s2|pc|sA|
+pg| ***** 120 ***** |
+
+
+pc|hA|pc|h3|pc|h2|pc|h8|
+pg| ***** 121 ***** |
+
+
+at|^^^^When both defenders follow, cash your three minor winners.|
+pg| ***** 122 ***** |
+
+
+pc|cA|pc|c5|pc|c3|pc|c2|
+pg| ***** 123 ***** |
+
+
+pc|dK|pc|d5|pc|dJ|pc|d2|
+pg| ***** 124 ***** |
+
+
+pc|dA|pc|d6|pc|dQ|pc|d3|
+pg| ***** 125 ***** |
+
+
+at|^^^^Now exit with a trump.|
+pg| ***** 126 ***** |
+
+
+pc|h6|pc|s6|pc|h4|pc|hQ|
+pg| ***** 127 ***** |
+
+
+sk||
+nt|^b@2^z@3^^|ht|b|at|With no spade to return, East is endplayed.
+|n^|5|at|
+A club return will give you an access to dummy's winners, allowing you to discard your spade losers, while a diamond return will allow you to discard a spade from hand and ruff in dummy.
+|n^|5|at|
+You will then be able to discard your second spade loser on the @cK.|  
+pg| ***** 128 ***** |
+
+
+nt|^b@2^z@3^^|
+vv|process-txt|
+pg| ***** 129 ***** |
+
+
+-----------------------------------------------------------------------------------
+bt||
+nt|^b@2^z@3^^|ht|g|fp|2|at|The Jettison play.|fp||
+qx|EP-j,wide|
+ht|a|n#|5|fp|2|at|^*b^a EP-j ^c|fp||at|^*gIndx:Index,Click for Index^*n|
+
+ht|h|at|The term "Jettison" was borrowed from the seamanship world. 
+
+The original context of this term is "Throwing cargo overboard in order to save the ship from sinking".
+
+High cards often get in the Declarer's way as they block the effective play of the hand. 
+
+A solution to these blocking problems may occcasionally be to throw away high cards. 
+
+This unblocking act is known as "Jettison play" and it is sometimes a vital feature in endplays.
+
+              ^e@s 32
+              ^e@d -
+              ^e@c A                                    
+^c@s -                      ^g@s 64
+^c@d 6                      ^g@d -
+^c@c Q10                    ^g@c -
+              ^e@s -
+              ^e@d 2
+              ^e@c KJ|
+ht|x|at|Playing a No trump contract, South needs two tricks but he can win only one as long as the clubs are blocked.
+
+To solve the problem, South can lead a diamond to throw West in while Jettisoning the @cA.|
+pg| ***** 130 ***** |
+
+
+st||
+-----------------------------------------------------------------------------------
+qx|8|rh||ah|Entry position|ah|Deal 8|
+md|1SAKQJT9HAK42DKQJ,S3H6D987632CAKT85,S542H8753DAT4CQJ9,S876HQJT9D5C76432|sk|ns|
+mb|2C|mb|p|mb|2D|mb|p|mb|2S|mb|p|mb|4S|mb|p|mb|6S|mb|p|mb|p|mb|p|
+pc|cK|
+nt|^b@2^z@3^^|lg|f|ht|b|at|Deal  8      You have two heart losers and there will be no problem if the suit splits 3-2.|
+pg| ***** 131 ***** |
+
+
+at|^^^^Ruff the opening lead and draw trumps in three rounds.|
+pg| ***** 132 ***** |
+
+
+pc|c9|pc|c2|pc|s9|
+pg| ***** 133 ***** |
+
+
+pc|sA|pc|s3|pc|s2|pc|s6|
+pg| ***** 134 ***** |
+
+
+pc|sK|pc|d2|pc|s4|pc|s7|
+pg| ***** 135 ***** |
+
+
+pc|sQ|pc|d3|pc|s5|pc|s8|
+pg| ***** 136 ***** |
+
+
+at|^^Cash your Heart winners.|
+pg| ***** 137 ***** |
+
+
+pc|hA|pc|h6|pc|h3|pc|h9|
+pg| ***** 138 ***** |
+
+
+pc|hK|pc|c5|pc|h5|pc|hT|
+pg| ***** 139 ***** |
+
+
+nt|^b@2^z@3^^|lg|g|ht|b|at|West showed out on the second heart round.|
+pg| ***** 140 ***** |
+
+
+at|^^Your only chance now is to establish a club trick in dummy for a heart discard.
+Alas, you do not have enough entries to do that on your own, so you should try to get a help from West.|
+pg| ***** 141 ***** |
+
+
+at|^^^^The opening lead suggests West holds the @cA, in which case you can make your contract by a throw-in play.|
+pg| ***** 142 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Cash the @dK, then lead the @dQ and overtake it with dummy's Ace.|
+pg| ***** 143 ***** |
+
+
+pc|dK|pc|d6|pc|d4|pc|d5|
+pg| ***** 144 ***** |
+
+
+pc|dQ|pc|d7|pc|dA|pc|c3|
+pg| ***** 145 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|The @dJ is now in your way, preventing the @d10 from turning into an entry.
+
+
+Lead the @cQ and ^*Bjettison^*N the @dJ, removing the obstacle.|
+pg| ***** 146 ***** |
+
+
+pc|cQ|pc|c4|pc|dJ|pc|cA|
+pg| ***** 147 ***** |
+
+
+nt|^b@2^z@3^^|lg|g|ht|b|at|If West wins the @cA, he must put you in dummy and you will be able to discard your two heart losers on the @cJ 
+and the @d10.|
+sk||
+pg| ***** 148 ***** |
+
+
+nt|^b@2|
+up|1|pc|cT|ht|b|at|And if West refuses to win the Ace, the lead remains in dummy and you can discard one of your heart losers on the @d10.|
+pg| ***** 149 ***** |
+
+
+pc|dT|pc|c6|pc|h2|pc|d9|
+pg| ***** 150 ***** |
+
+
+nt|^b@2^z@3^^|
+vv|process-txt|
+pg| ***** 151 ***** |
+
+
+-----------------------------------------------------------------------------------
+qx|9|rh||ah|Entry position|ah|Deal 9|
+md|4SA32HAKQT954CAK6,S4H8762DAJTCT8432,S76DKQ987432CQJ7,SKQJT985HJ3D65C95|sk|ns|
+mb|3S|mb|d|mb|p|mb|5D|mb|p|mb|6H|mb|p|mb|p|mb|p|
+pc|s4|
+nt|^b@2^z@3^^|ht|b|at|Deal  9     East's three-level opening  marks the opening lead as singleton. The @s32 in your hand are further proof.
+|ht|h|at|Win the opening lead and draw the adverse trumps.|
+pg| ***** 152 ***** |
+
+
+pc|s6|pc|s8|pc|sA|
+pg| ***** 153 ***** |
+
+
+pc|hA|pc|h2|pc|d2|pc|h3|
+pg| ***** 154 ***** |
+
+
+pc|hK|pc|h6|pc|d3|pc|hJ|
+pg| ***** 155 ***** |
+
+
+pc|hQ|pc|h7|pc|d4|pc|s5|
+pg| ***** 156 ***** |
+
+
+pc|hT|pc|h8|pc|d7|pc|s9|
+pg| ***** 157 ***** |
+
+
+nt|^b@2^z@3^^|lg|g|ht|b|at|On the second round of the trumps East dropped the Jack. Together with the @sKQJ, he has already shown seven points.    East would certainly not open 3@s with seven cards and eleven points, so it becomes evident that the @dA is in West's hand.
+|n#|5|at|Here is how you are going to take advantage of the @dA location:|
+pg| ***** 158 ***** |
+
+
+at|
+Play the @cK and continue with a small club to the Jack.|
+pg| ***** 159 ***** |
+
+
+pc|cK|pc|c2|pc|c7|pc|c5|
+pg| ***** 160 ***** |
+
+
+pc|c6|pc|c3|pc|cJ|pc|c9|
+pg| ***** 161 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Play the @dK and.... jettison the @cA!!!.|
+pg| ***** 162 ***** |
+
+
+pc|dK|pc|d5|pc|cA|pc|dA|
+pg| ***** 163 ***** |
+
+
+ht|b|at|^^^^This way you endplay West while unblocking dummy's @cQ.|
+pg| ***** 164 ***** |
+
+
+sk||
+at|^^^^With only clubs and diamonds left, West must put you in dummy with whichever card he chooses to continue.|
+pg| ***** 165 ***** |
+
+
+nt|^b@2^z@3^^|
+vv|process-txt|
+pg| ***** 166 ***** |
+
+
+-----------------------------------------------------------------------------------
+qx|10|rh||ah|Entry position|ah|Deal 10|
+md|1SKQJHKQJDKJ973CAK,SA97543H9DAQTCQ65,ST62HAT32D8CJT987,S8H87654D6542C432|sk|ns|
+mb|2C|mb|2S|mb|d|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pc|s5|
+nt|^b@2^z@3^^|ht|b|at|Deal  10       |
+pg| ***** 167 ***** |
+
+
+lg|g|at|You won the opening lead |
+pg| ***** 168 ***** |
+
+
+pc|s2|pc|s8|pc|sJ|
+pg| ***** 169 ***** |
+
+
+at|and laid down the @cAK. All followed, |
+pg| ***** 170 ***** |
+
+
+pc|cA|pc|c5|pc|c7|pc|c2|
+pg| ***** 171 ***** |
+
+
+pc|cK|pc|c6|pc|c8|pc|c3|
+pg| ***** 172 ***** |
+
+
+at|but there was no sign of the Queen.|
+pg| ***** 173 ***** |
+
+
+at|^^^^Play the @hKQ.|
+pg| ***** 174 ***** |
+
+
+pc|hK|pc|h9|pc|h2|pc|h4|
+pg| ***** 175 ***** |
+
+
+pc|hQ|pc|s3|pc|h3|pc|h5|
+pg| ***** 176 ***** |
+
+
+at|^^^^West failed to follow to the second round.|
+pg| ***** 177 ***** |
+
+
+nt|^b@2^z@3^^|lg|g|ht|b|at|You can set up the clubs, but without a second entry to dummy, you can't get there to take them.
+And if you go for the @d, West will be a move ahead in clearing his @ss. 
+And yet, the contract can be made provided West holds the @cQ (as expected from his two-level overcall).|
+pg| ***** 178 ***** |
+
+
+at|^^^^Overtake the @hJ with the Ace and throw the @sQ on the @h10.|
+pg| ***** 179 ***** |
+
+
+pc|hJ|pc|s4|pc|hA|pc|h6|
+pg| ***** 180 ***** |
+
+
+pc|hT|pc|h7|pc|sQ|pc|s7|
+pg| ***** 181 ***** |
+
+
+nt|^b@2^z@3^^|lg|g|ht|b|at|Then lead the @cJ and jettison the @sK.|
+pg| ***** 182 ***** |
+
+
+at|^^^^West wins the @cQ,|
+pg| ***** 183 ***** |
+
+
+pc|cJ|pc|c4|pc|sK|pc|cQ|
+pg| ***** 184 ***** |
+
+
+sk||
+at|    but he is now endplayed.|
+pg| ***** 185 ***** |
+
+
+sk||
+nt|^b@2^z@3^^|lg|h|ht|b|at|If he clears his spades, dummy's @s10 will provide an entry to the clubs.|
+pg| ***** 186 ***** |
+
+
+at|^^And if instead he cashes the @sA and exits with a @d, you will have plenty of time to set up @d.
+Either way you end with nine tricks.|
+pg| ***** 187 ***** |
+
+
+nt|^b@2^z@3^^|
+vv|process-txt|
+pg| ***** 188 ***** |
+
+
+----------------------------------------------------------------------------------------------------
+bt||
+nt|^b@2^z@3^^|
+tu|y|
+ht|n|fp|2|at|^k    End of Section|fp||
+pg| ***** 189 ***** |
+
+

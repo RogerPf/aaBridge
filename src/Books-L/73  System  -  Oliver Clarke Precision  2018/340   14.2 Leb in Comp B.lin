@@ -1,0 +1,909 @@
+%%
+%%
+
+ss|chapter,Chapter 14.2               Leb  in  Competition B|
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2015-12-05        set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=001___FP_masthead.ins
+%%
+ss|masthead,Oliver Clarke Precision                                 2018  |
+%%
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       Precision Blue
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor    that Gray
+%%
+<<--INSERT-END**-->>=001___FP_masthead.ins
+
+
+<<--INSERT-START-->>=002___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|f35|                    Font   f  f-fine
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  position adjustment USED BY 'GRAPHICS'
+%%
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=002___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=005___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+ht|z|n#|k|at|@0^*h https://www.youtube.com/channel/UCTGNUS8jbx85QOMUPlHoRMA, OCP Videos ^*n|
+%%
+<<--INSERT-END**-->>=005___FP_footer.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+Lg||
+ht|j|
+qx|14.2|
+fp|t-title|at|^d@2^z@3|
+at|
+^*gGS,Leb in Competition B  ^*n
+|fp||at|^^^^|
+fp|t-title|at|^*gOliv,Oliver  on     Leb in Competition B|fp||at|   starts HERE^*n       |fp||cp|red|at|<<< First time ?  Click title|fp||cp||at|
+
+
+^*gPrac,      Practice Hands  -   What would You Bid ? ^*n|
+pg| ***** 0 ***** |
+
+
+=====================================================================
+qx|GS,hide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Leb  in  Competition B|fp||at|^s(An Extract from the Lesson)^^^^|
+
+lg|m|n^|4|
+cp|red|at|^^^*bOliverC:^*n|cp||at|  Lebensohl in Competition applies when
+^c@2|n^|e|at|
+@.    We're in a natural bidding sequence and both sides have bid.
+@.    The bidding has reached the 2-level (below 2NT), and
+@.    2NT is NOT required for some other purpose.
+|n^|8|at|
+
+^bTo summarise: 
+^c^*b 1.  ^*n2@2-level bids merely competitive.
+^c^*b 2.  ^*nDirect (fast) raises of partner's suit tend to be pre-emptive.
+^c^*b 3.  ^*nSlow raises of partner's suit are invitational if they could have been bid competitively at the 2-level,
+|n^|6|at|but merely competitive if not.
+^c^*b 4.  ^*nSlow and fast bids of 3NT are natural and promise (slow) or deny (fast) a stop in Opps' suit.
+^c^*b 5.  ^*nSlow and fast cue-bids of their suit are normally game-forcing raises in PARTNER's suit and 
+|n^|6|at|Show (slow) or Deny (fast) 1st or 2nd Round Control of their suit.
+^c^*b 6.  ^*nFast new-suit bids at the next level are stronger/more encouraging than slow new-suit bids at the next level.
+|n^|6|at|FAST new suit bids tend to imply support/tolerance for partner's suit.
+^b@2|	
+pg| ***** 1 ***** |
+
+
+ht|z|n#|5|at|
+^a ^*bend^*n|
+pg| ***** 2 ***** |
+
+
+-----------------------------------------------------------------------------------------------  
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,wide|
+nt|^z@3^b@2|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class              Leb  in  Competition B^*n^-^^|cs||fp||cp||at|^^|
+lg|d|
+cp|red|at|^*bOliverC:^*n|cp||at|  Hi Everyone and welcome to today's session, in which we'll be continuing our look at Defensive / Competitive Bidding.
+
+Last time we took an initial look at Lebensohl in Competition.
+
+Today we're going to really drive that point home by mainly practising bidding competitive hands.
+
+Let me stress that this is not a part of Precision (no aspect of defensive bidding really belongs to one system or another) and does not really affect any other part of the system.
+
+Similarly, you can happily use (or not use) these methods WHATEVER system you are playing.
+
+If you have not already done so, please have a look at the notes I have prepared on tonight's topic.
+
+You can find these on: ^*h http://ocp.pigpen.org.uk/index.php ^*n 
+
+The section on Defensive Bidding can be accessed from there ^*h http://ocp.pigpen.org.uk/Defensive.php ^*n
+
+
+First a quick recap on what we covered last week. |
+pg| ***** 3 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+lg|b|
+cp|red|at|^*bOliverC:^*n|cp||at|  Lebensohl in Competition works in much the same way as Lebensohl over a 1NT Opening, but with a few different nuances caused by the fact that at least one of us has bid a SUIT already.
+|n^|5|at|
+^b   ^*b 1.  @2^*nLeb in Competition applies in any NATURAL competitive sequence where both sides are bidding and we've reached the 2-level and when 2NT would otherwise be available as a natural raise.
+
+^b   ^*b 2.  ^*nGenerally Leb in Competition does not apply when 2NT would already have an artificial meaning (eg: Romex, Jacoby 2NT, etc).  That situation is very fluid, however, and even though Leb in Competition might NOT apply at one particular point in an auction, it can STILL apply a moment later when another bid has been made.
+
+^b   ^*b 3.  ^*nGenerally, FAST new suits at the 3-level are MORE ENCOURAGING (in fact they are normally forcing)  and tend to imply at least a decent tolerance for partner's suit.
+
+^b   ^*b 4.  ^*nSLOW new suits tend to imply the lack of a decent tolerance for partner's suit and are less encouraging.
+
+^b   ^*b 5.  ^*nDirect suit raises are always pre-emptive and non-forcing.
+When our suit is higher-ranking than theirs, a SLOW raise to the 3-level is genuinely invitational, but when their suit is higher-ranking, the FAST raise to the 3-level is more encouraging than a SLOW one.
+
+^b   ^*b 6.  ^*nCue-bids of Opps suit (not when it's an Unassuming Cue-Bid) are a game-forcing raise in Partner's suit.
+A FAST cue-bid of Opps suit DENIES 1st or 2nd-round Control of Opps Suit, and a SLOW cue-bid of their suit promises 1st or 2nd-round control of the suit.
+
+^b   ^*b 7.  ^*nSLOW and FAST bids of 3NT have the same implications as after:     1NT   -   (2x)   -   ???
+
+^b   ^*b 8.  ^*nLeb in Competition doesn't prevent you from using other devices, such as Unassuming Cue-Bids, Negative, Competitive and Support Doubles, etc.
+
+^b@2Okay, that's a very brief recap of what we covered last week.
+
+Any questions thus far ?|
+pg| ***** 4 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+lg|a|
+at|^*blute57:^*n  Could you review the Leb case where one is interested in raising one's OWN SUIT instead of partner's.
+|n^|3|at|
+|cp|red|at|^*bOliverC:^*n|cp||at|   Well essentially the same principles apply:  A FAST return to your own suit is generally more encouraging if Opps' suit is higher-ranking than yours, 
+|n^|3|at|
+but if your suit is higher-ranking than Opps', then the SLOW return to your suit is genuinely invitational and the fast raise more pre-emptive.
+|n^|3|at|
+But it really does depend on the exact sequence, and what action partner has taken to date.
+|n^|3|at|
+^*blute57:^*n     1@h   -   (2@c)   -   2@d   -   (p)   -    3@h       for example
+|n^|3|at|
+|cp|red|at|^*bOliverC:^*n|cp||at|   Here, Hearts are higher-ranking than any other suit that's been bid so over partner's 2@d (which itself in only COMPETITIVE, because we were in a Lebensohl situation over Opps' 2@c bid).
+|n^|3|at|
+A SLOW 3@h would be a genuine invitation (Max with 6-card hearts, eg a hand worth a jump rebid).
+|n^|3|at|
+Similarly the FAST 3@h is showing long Hearts (possibly 7+-card), but not necessarily maximum in terms of HCP.
+|n^|3|at|
+At the same time, though, the fast 3@h can also suggest a reasonably good tolerance or support for Partner's Diamonds, whereas, the SLOW 3@h would suggest no great interest in Diamonds.
+|n^|3|at|
+Once again, you can decide as a partnership how to mesh these considerations together, ie: whether the difference between SLOW and FAST in those sequences is more to do with invitation/pre-emptive or to do with support for partner's suit.
+|n^|3|at|
+^*bMajor_Blue:^*n  And an immediate bid of 2@h in this example would be very weak ?.
+|n^|3|at|
+|cp|red|at|^*bOliverC:^*n|cp||at|   Yes, merely suggesting 6-card Hearts, lower range.
+|n^|3|at|
+It doesn't really say much about support for Diamonds but it's likely that Opener will NOT have good support foir Diamonds, because 2@d from Partner wasn't forcing (competitive), and so with a minimum hand and Diamond support, Opener could pass.|
+pg| ***** 5 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   Let's look at a typical sequence where Lebensohl is in use in this way:  
+South opens 1@s, West overcalls 2@c, North bids 2@h and East passes.       
+|n^|5|at|
+^d 1@s    -   (2@c)   -   2@h   -   (p)   -    ???  
+|n^|5|at|
+Here we are in a competitive sequence and the bidding has reached the 2-level.  South is next to bid and they have a number of options 
+
+^b   ^*b 1.  @2^*nIf South bids 2@s here this is simply competitive, showing no additional values.
+|n^|8|at|
+^d 1@s    -   (2@c)   -   2@h   -   (p)   -    2@s
+
+^b   ^*b 2.  @2^*nIf South bids a fast 3@s then this is strong and encouraging 
+|n^|8|at|
+^d 1@s    -   (2@c)   -   2@h   -   (p)   -    3@s
+|n^|8|at|
+but if the opening is limited to 15 HCP (as in Precision), it is unlikely to be game-forcing, especially bearing in mind that North's  2@h  is also in a Leb situation, and so mainly competitive 
+
+|n^|8|at|
+^b   ^*b 3.  @2^*nIf South bids 2NT, then this tells North to bid 3@c after which South can make an invitational bid in either Hearts or Spades.   So here, it's a similar situation to that you outlined, John.
+^d 1@s   -   (2@c)   -   2@h   -   (p)   -    2NT(Leb)   -   (p)   -    3@c(forced)   -   (p)   -    3@h/3@s   
+^b@2
+^*blute57: ^*n would the fast 3@s be stronger than the slow 3@s there?
+
+|cp|red|at|^*bOliverC:^*n|cp||at|   FAST 3@s is strongish and pre-emptive, but suggesting a decent tolerance, for Hearts (but less than full support), whereas the SLOW 3@s is genuinely invitational in Spades, but suggesting NOT good tolerance for Hearts.
+
+Don't forget, Opener will never have good Heart support for this sequence unless they make a slow or fast raise in Hearts or a slow or fast cue-bid of Opps' Clubs.|
+pg| ***** 6 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|lg|c|
+^*bkritter2:^*n  then fast shows values in partners suit and slow shows little tolerance ?
+
+cp|red|at|^*bOliverC:^*n|cp||at|   Yes.    Worth noting here that OUR suits are both HIGHER-RANKING than Opps suit.   This means we can bid COMPETITIVELY at the same level.
+
+That in turn means that a SLOW bid in either of our suits at the NEXT level (ie: the 3-level after ...2NT-3@c) is invitational.
+
+If South's Opening was a 2/1 or SAYC Opening, then a fast 3@s over 2@h probably would be forcing.
+
+It's also worth noting that Partner's 2@h was only competitive, so not forcing (because they were also in a Leb situation over Opps' 2@c
+
+If Opps suit is HIGHER-RANKING than ours, this this changes the sense of SLOW and FAST bids in our suit(s).
+
+Now a SLOW bid in our suit is competitive and less encouraging, and the FAST bid is more encouraging.
+
+The other thing to notice here is that NORTH is also in a position to use Lebensohl over the overcall of 2@c, so their initial 2@h bid is merely competitive.
+
+If North bids, I think this is where the confusion comes in;)) 2NT over 2@c then this is ALSO Lebensohl forcing 3@c from South and now North could make an invitational bid in Hearts or Spades.
+
+Similarly a "fast" 3@h bid would be strong and forcing in nature.
+
+We can have a number of Lebensohl situations in the same sequence 
+
+^*bmaysie:^*n    What  then  is        1@S   -   (2@C)   -   3@S     ? 
+
+|cp|red|at|^*bOliverC:^*n|cp||at|   purely pre-emptive.                 Hopefully you are beginning to get the picture.|
+pg| ***** 7 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|   Let's try another:   South Opens 1@d, West bids 1@h, North bids 1@s and East supports with 2@h 
+|n^|7|at|
+^d 1@d    -   (1@h)   -   1@s   -   (2@h)   -    ???  
+
+^b   ^*b 1.  @2^*nA fast bid of 3@d is strong and encouraging, and implies a reasonable partial fit for Spades, whereas
+
+^b   ^*b 2.  ^*nA "slow" bid of 3@d is less encouraging, showing long Diamonds but a weakish hand and no good fit for Spades 
+
+^b   ^*b 3.  @2^*n2@s would be just competitive, probably a weaker hand but with decent Spade support
+
+^b   ^*b 4.  ^*nA "slow" bid of 3@s is genuinely invitational and a "fast" bid of 3@s is pre-emptive
+ 
+^b   ^*b 5.  ^*nIf South bids a FAST 3NT, then this shows a strong hand, presumably with long running Diamonds, but no good Heart stop.
+
+^b   ^*b 6.  ^*nA "slow" bid of 3NT, however, also shows a strong hand, but now PROMISES decent Heart values as well.
+
+^b   ^*b 7.  ^*nSuppose the bidding starts 
+^d 1@d   -   (1@h)   -   1@s   -   (2@h)
+^d 2@s   -     (p)    -   3@h
+Here the 3@h bid shows a game-forcing raise in Spades (which we've agreed), but DENYING 1st or 2nd round control of Hearts.
+^b@2
+A SLOW cue-bid of Hearts in this situation would be similar, but PROMISING 1st or 2nd round control of Hearts and thereby slam invitational.
+
+So although the game-forcing cue-bids normally apply when we want to agree PARTNER's suit, we can also use them once partner has agreed OUR suit Ok, I think that's enough example hands.
+
+^b@2
+^*bPajac_99:^*n  what would X mean?
+
+|cp|red|at|^*bOliverC:^*n|cp||at|   I would take Double by South to be a Support Double, showing exactly 3-card support for Spades|
+
+
+--------------------------------------------------------------------
+qx|Prac,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Practice / Demo  Hands|fp||at|^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  Let's practice some hands.
+
+I'd prefer people to sit as PAIRS having agreed what system to play already.
+
+It doesn't have to be Precision, but that way we avoid lots of discussion to start with.
+
+Unless we find an interesting play hand, I'd prefer just to  bid the hands, and then lead and claim.
+
+Don't forget that these hands rely on competitive bidding, so don't be slow to compete :)  
+
+4 victims, pls 
+
+
+^*bRaNTuL:  ^*nI'm not victim Oliver, I'm a volunteer :)
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  lol
+one more, please
+
+
+^*bRaNTuL: ^*nre-hi all dear friends
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Welcome all, and thanks for sitting|
+pg| ***** 8 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 1,wide|
+st||
+pn|RaNTuL,Major_Blue,lute57,Eszter5|rh||ah|Practice 1|sv|-|sk|n|sk||
+%% 3S543HKJ93D7643C74,SJT9H7DJT982CAK85,S8HQT865DAK5CQJT2,SAKQ762HA42DQC963
+md|3,SJT9H7DJT982CAK85,,SAKQ762HA42DQC963|
+mb|?|
+nt|^z@3^b@2|Lg|f|n#|6|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 1     |
+pg| ***** 9 ***** |
+
+
+mb|1H|an|5+ @h, 11-15 hcp|
+pg| ***** 10 ***** |
+
+
+sj|L|
+mb|1S|
+pg| ***** 11 ***** |
+
+
+sj|L|
+mb|2H|
+pg| ***** 12 ***** |
+
+
+sj|L|
+mb|2N|an|Leb forces 3@c|
+pg| ***** 13 ***** |
+
+
+sj|c|
+mb|p|mb|3C!|an|forced|
+pg| ***** 14 ***** |
+
+
+sj|c|
+mb|p|mb|3S|
+at|  Here the SLOW 3@s from West, is genuinely invitational.  West ^*b could ^*n also make a UCB (Unassuming Cue Bid) bid of 3@H showing support for partners spades and a Game Force.  The partnership has to agree which is the stronger investigation.  Myself, I'd make the UCB stronger than the SLOW 3@s.
+|n#|5|at|UCB's take precedence over the GF cue-bids,  so 3@h from West would be a UCB rather than GF in @s without a @h control.   On the other hand, if West bid a SLOW 3@h, I would take that as GF in @s WITH a @h control because the SLOW 3@h cannot be confused with a UCB.|
+pg| ***** 15 ***** |
+
+
+sj|c|
+mb|p|mb|4S|
+pg| ***** 16 ***** |
+
+
+mb|p|mb|p|
+pg| ***** 17 ***** |
+
+
+nt|^z@3^b@2|Lg|k|n#|6|
+cp|red|at|^*bOliverC:^*n|cp||at|  One more thing here
+Over the 1@s overcall we're not strictly in a Lebensohl situation (not at the 2-level yet), so a new suit at the 2-level by South would carry the same meaning as it would without the interference, so forcing (ostensibly to 2NT).
+|n#|6|at|^*blute57:  ^*n is the   Forcing 1NT   still on after     1@h   -   (1@s)   ?
+|cp|red|at|^*bOliverC:^*n|cp||at|  Yes|
+pg| ***** 18 ***** |
+
+
+mb|p|
+md|0S543HKJ93D7643C74,SJT9H7DJT982CAK85,S8HQT865DAK5CQJT2|
+pg| ***** 19 ***** |
+
+
+pf|Y|
+pc|S4|
+pg| ***** 20 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|6|at|^bcleared |
+pg| ***** 21 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2,wide|
+st||
+pn|RaNTuL,Major_Blue,lute57,Eszter5|rh||ah|Practice 2|sv|n|sk|e|sk||
+%% 4SK3HKDKQJ974CKT63,SAQT2HAQ42DA653CA,S87H9863DT8C98754,SJ9654HJT75D2CQJ2
+md|4,SAQT2HAQ42DA653CA,,SJ9654HJT75D2CQJ2|
+mb|?|
+nt|^z@3^b@2|Lg|f|n#|6|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2     |
+pg| ***** 22 ***** |
+
+
+mb|p|
+pg| ***** 23 ***** |
+
+
+sj|L|
+mb|1D|
+pg| ***** 24 ***** |
+
+
+at|^^^*bMajor_Blue: ^*n someone att the door, sorry|
+pg| ***** 25 ***** |
+
+
+pn|RaNTuL,OliverC,lute57,Eszter5|
+pg| ***** 26 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 27 ***** |
+
+
+sj|c|
+mb|p|mb|1S|
+pg| ***** 28 ***** |
+
+
+sj|L|
+mb|2C|
+pg| ***** 29 ***** |
+
+
+sj|L|
+at|^^|cp|red|at|^*bOliverC:^*n|cp||at|   Ok Here we are in a competitive situation at the 2-level so Leb applies.|
+pg| ***** 30 ***** |
+
+
+mb|2N|an|Leb, forces 3@c|
+pg| ***** 31 ***** |
+
+
+sj|L|
+mb|3C|
+pg| ***** 32 ***** |
+
+
+sj|L|
+mb|p|an|Well, I can't bid 3@c now can I|
+pg| ***** 33 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 34 ***** |
+
+
+sj|L|
+mb|3D|an|GF in @s, Control of @d|
+nt|^z@3^b@2|Lg|k|n#|6|
+cp|red|at|^*bOliverC:^*n|cp||at|  I could just have blasted 4@s earlier (instead of 2NT), but I wanted partner to know I have an absolute rock-crushing hand.
+So this (3@d) is game-forcing in Partner's Spades and PROMISING control of Diamonds.|
+pg| ***** 35 ***** |
+
+
+sj|c|
+mb|p|
+mb|3S|
+nt|^z@3^b@2|Lg|g|n#|6|
+cp|red|at|^*bOliverC:^*n|cp||at|  Ok, what's 3@s here, anyone?
+^*bManso21: ^*n zero (nothing)
+^*bmaysie: ^*n no Control Cues in other suits.
+|cp|red|at|^*bOliverC:^*n|cp||at|   The point is that 3@s is STRONGER than 4@s  (principle of fast arrival).
+It certainly suggests no Control of Clubs or Hearts, though, since East could have cue-bid either of those suits below game level.|
+pg| ***** 36 ***** |
+
+
+sj|c|
+mb|p|mb|4C|an|cue|
+pg| ***** 37 ***** |
+
+
+sj|c|
+mb|p|mb|4D|an|cue, 1st OR 2nd rnd ctrl|
+pg| ***** 38 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 39 ***** |
+
+
+sj|L|
+mb|r|an|1st round control of Diamonds|
+nt|^z@3^b@2|Lg|g|n#|6|
+cp|red|at|^*bOliverC:^*n|cp||at|  Redouble is a (standard Bridge) method for showing 1st round control of a suit if Opps double a cue-bid by partner.|
+pg| ***** 40 ***** |
+
+
+sj|c|
+mb|p|mb|4S|
+at|   East needs to be a little careful here. I know she has no first round control of Hearts or Clubs from her failure to cue one of them instead of 3@s, but at the end of the day she only has a 5-count.   I know East has a Diamond control of some sort, and can be fairly that that if the Kings of either Major are missing, they're likely to be with South because of their opening bid.
+In fact, I will be able to place most, if not all the outstanding HCP strength with South.|
+pg| ***** 41 ***** |
+
+
+sj|c|
+mb|p|mb|5H|
+nt|^z@3^b@2|Lg|k|n#|6|
+cp|red|at|^*bOliverC:^*n|cp||at|  So I've shown 1st round control of all the side suits by this point.|
+pg| ***** 42 ***** |
+
+
+sj|c|
+mb|p|mb|6D|
+pg| ***** 43 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 44 ***** |
+
+
+sj|L|
+mb|6S|
+at|^^High enough for me.  I can afford for North to have ONE of the Major suit kings.  In practice, they cannot possibly have 2 Kings, or South would not have a (1 level) opening bid.|
+pg| ***** 45 ***** |
+
+
+mb|p|mb|p|
+pg| ***** 46 ***** |
+
+
+mb|p|
+md|0SK3HKDKQJ974CKT63,SAQT2HAQ42DA653CA,S87H9863DT8C98754|
+pg| ***** 47 ***** |
+
+
+pf|Y|
+pc|dK|
+pg| ***** 48 ***** |
+
+
+md|4,,,|nt||Lg|f|n#|6|at|^bcleared |
+pg| ***** 49 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 3,wide|
+pn|RaNTuL,OliverC,lute57,Eszter5|rh||ah|Practice 3|sv|e|sk|s|sk||
+%% 1SAQT93H7DA8CAJ842,SJ865H64DT9762C65,S2HKQ92DQJ5CKQT97,SK74HAJT853DK43C3
+md|1SAQT93H7DA8CAJ842,,S2HKQ92DQJ5CKQT97,|
+mb|?|
+nt|^z@3^b@2|Lg|f|n#|6|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 3     |
+pg| ***** 50 ***** |
+
+
+mb|1S|an|5+ @s, 11-15 hcp|
+pg| ***** 51 ***** |
+
+
+sj|c|
+mb|p|mb|2C|
+pg| ***** 52 ***** |
+
+
+sj|L|
+mb|2H|
+pg| ***** 53 ***** |
+
+
+sj|L|
+mb|2N|an|Leb forces 3@c|
+pg| ***** 54 ***** |
+
+
+sj|c|
+mb|p|mb|3C|an|forced|
+pg| ***** 55 ***** |
+
+
+sj|c|
+mb|p|mb|3H|
+at|3@h is a slow cue of Opps' Hearts, GF in Clubs and promising 1st or 2nd round control of @h.|
+pg| ***** 56 ***** |
+
+
+sj|c|
+mb|p|mb|3N|
+pg| ***** 57 ***** |
+
+
+sj|c|
+mb|p|mb|4D|
+an|Now South saying they couldn't care less about 3NT, so their control of @h probably a singleton or void|
+pg| ***** 58 ***** |
+
+
+sj|c|
+mb|p|mb|4H|
+pg| ***** 59 ***** |
+
+
+sj|c|
+mb|p|mb|4S|
+pg| ***** 60 ***** |
+
+
+sj|c|
+mb|p?|
+at|^^^*blute57: ^*n I am taking your 1@s as 11-15 HCP so I am really scratching my head here.|
+pg| ***** 61 ***** |
+
+
+at|^^^*bRaNTuL: ^*n yes 2 suiter   and very nice holding especially after your 2@c.|
+pg| ***** 62 ***** |
+
+
+at|
+|cp|red|at|^*bOliverC:^*n|cp||at|  fair enough John, but your 2@c does promise 12+, so if South has a distributional 2-suiter with good controls, their actions not unreasonable ...especially since, in the play, you will have little or no trouble placing the outstanding HCP strength.  So you can bail out now with 5@c or 6@c.|
+pg| ***** 63 ***** |
+
+
+mb|6C|
+pg| ***** 64 ***** |
+
+
+mb|p|mb|p|
+nt|^z@3^b@2|Lg|f|n#|6|
+cp|red|at|^*bOliverC:^*n|cp||at|  South right to push here, I feel.   
+If North's 2@c was based in a @s fit and intending to play in Spades, they'd bid 3@s over 3@h.     Failing that they must have a decent Club suit.     If North is 12+, then little chance of West having ANYTHING,  so easy to play the hand with confidence.   
+^^Any questions or comments?|
+pg| ***** 65 ***** |
+
+
+mb|p|
+md|0SAQT93H7DA8CAJ842,SJ865H64DT9762C65,S2HKQ92DQJ5CKQT97|
+pg| ***** 66 ***** |
+
+
+pf|Y|
+pc|c3|
+pg| ***** 67 ***** |
+
+
+md|4,,,|nt||Lg|f|n#|6|at|^bcleared |
+pg| ***** 68 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 4,wide|
+pn|RaNTuL,OliverC,lute57,Eszter5|rh||ah|Practice 4|sv|b|sk|w|sk||
+%% 2SQ72HK85DA3CAK542,SAK6543HAJ963C83,HQ7DKQJ976CQJT76,SJT98HT42DT8542C9
+md|2SQ72HK85DA3CAK542,SAK6543HAJ963C83,HQ7DKQJ976CQJT76,SJT98HT42DT8542C9|
+mb|?|
+nt|^z@3^b@2|Lg|f|n#|6|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 4     |
+pg| ***** 69 ***** |
+
+
+mb|1S|an|5+ @s, 11-15 hcp|
+at|^^My hand does  NOT  qualify for the Precision 2NT Opening, because I am 6-5 rather than 5-5.|
+pg| ***** 70 ***** |
+
+
+sj|L|
+mb|1S|an|5+ @s, 11-15 hcp|
+
+
+mb|2D|
+n#|4|at|^^^*bPajac_99: ^*n I would expect most players to bid bid 2NT over 1@s when they are 5-5 or longer in the minors.
+|n#|4|cp|red|at|^*bOliverC:^*n|cp||at|  Well the way I teach UNT, it's weak or strong, but NEVER intermediate (as North is), because that creates problems for South if they are also intermediate.|
+pg| ***** 71 ***** |
+
+
+sj|L|
+mb|2S|
+pg| ***** 72 ***** |
+
+
+sj|L|
+mb|3N|
+nt|^z@3^b@2|Lg|f|n#|6|
+cp|red|at|^*bOliverC:^*n|cp||at|  Here Leb applies over 2@s so South's FAST 3NT suggests values, but no @s stop.|
+pg| ***** 73 ***** |
+
+
+sj|L|
+mb|4S|
+pg| ***** 74 ***** |
+
+
+sj|L|
+mb|5D|
+pg| ***** 75 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 76 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 77 ***** |
+
+
+sj|L|
+mb|?|
+at|^^I'm loathe to give up so easily on this hand.  I suspect NS can make 6 of either Minor here certainly 5.|
+pg| ***** 78 ***** |
+
+
+mb|5S|
+pg| ***** 79 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 80 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 81 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 82 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 83 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 84 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 85 ***** |
+
+
+ 
+n#|4|at|^^^*blute57: ^*n I should have bid  5@c  not  5@d  to let partner know my hand better.
+|cp|red|at|^*bOliverC:^*n|cp||at|  Yes, that would have encouraged South.
+^*bPajac_99: ^*n The main thing is to know what your bids mean.
+|cp|red|at|^*bOliverC:^*n|cp||at|  Yes           and of course, it is hard to cope with strongly distributional hands like this.|
+pg| ***** 86 ***** |
+
+
+pf|Y|
+pc|dK|
+pg| ***** 87 ***** |
+
+
+md|4,,,|nt||Lg|f|n#|6|at|^bcleared |
+pg| ***** 88 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 5,wide|
+pn|RaNTuL,OliverC,lute57,Eszter5|rh||ah|Practice 5|sv|e|sk|e|sk||
+md|4SQHAJT92DA3CJ7432,SAJT82HK4DJ9765CA,S9543HQ763D2CT985,SK76H85DKQT84CKQ6|
+mb|?|
+nt|^z@3^b@2|Lg|f|n#|6|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 5     |
+pg| ***** 89 ***** |
+
+
+mb|1D|an|11-15, 1+@d, No 5M, No 6@C, not 10-12 bal|
+pg| ***** 90 ***** |
+
+
+sj|L|
+mb|1H|
+pg| ***** 91 ***** |
+
+
+sj|L|
+mb|1S|
+pg| ***** 92 ***** |
+
+
+sj|L|
+mb|2H|
+pg| ***** 93 ***** |
+
+
+sj|L|
+mb|2N|an|Leb forces 3c|
+pg| ***** 94 ***** |
+
+
+sj|L|
+mb|3C|
+pg| ***** 95 ***** |
+
+
+sj|L|
+mb|3D|
+at|^^Okay, my normal action here (given South's 3@c) would be to pass  but I do have something definite to say, and I can be fairly sure East was not intending to pass 3@c from me, so this is definitely SHOWING a Diamond suit.|
+pg| ***** 96 ***** |
+
+
+sj|L|
+mb|3H|
+pg| ***** 97 ***** |
+
+
+sj|L|
+mb|3S|
+pg| ***** 98 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 99 ***** |
+
+
+sj|L|
+mb|4S|
+
+
+sj|L|
+mb|p|
+pg| ***** 100 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 101 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 102 ***** |
+
+
+n#|5|at|^^I would be bidding 5@h like a shot at this vul, but it doesn't really matter.   But whether NS sacrifice or not is not really the point of the hand|
+pg| ***** 103 ***** |
+
+
+pf|Y|
+pc|h3|
+pg| ***** 104 ***** |
+
+
+Goodbyes--------------------------------------------------------------------
+qx|end,thin|
+bt||
+nt|^b@2^z@3|at|^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  Alright, I think we'd better leave it there for tonight.  Thanks for coming and I hope that you've found this useful in driving home some of the issues related to Lebensohl in Competition.
+
+Please don't worry if some of this is still a little murky. This is a pretty complex
+gadget to take on board and it can take a while before you really get your head.
+
+
+hossam1996:  thanks oliver :) 
+
+RaNTuL:  okay.... Ty so much Oliver for your  efforts to teach us  prec your style. appreciated.
+
+lute57:  Thank you Oliver - The system gets clearer with each lesson
+
+maysie:  Ty Volunteers ... a grand effort!
+
+lute57:  happy Holidays all!
+
+FleuretteD: ty same to you :)
+
+kritter2:  Happy Holidays :))
+
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  All the best for Christmas. No lesson next week
+
+So the next session will be the first week in January.  
+
+night all, bye for now

@@ -1,0 +1,203 @@
+%%
+%%
+
+ss|chapter,2.                                           Five Nil Split |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-01-11          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Techniques                               5.  Trump Control |
+%%
+cr|m145|cg|m060|cb|m140|   fill   m  m-mastColor       on Title Pages
+cr|c208|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=03___FP_general_text.ins
+%%
+ht|s|lg|m|
+at|^c@2Please read all the ^*b ANSWER ^*n  even if you play it out correctly.   The text in the solution is there to help you see  HOW  to find that answer at the table.|
+%%
+<<--INSERT-END**-->>=03___FP_general_text.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+bv|a,h|   %% hide all three buttons
+%%
+ss|head,     ah`Part 5.    Trump Control`|
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|i|
+at|^c@2^z@3^^|n#|9|
+fp|t-title|at|Five Nil Split|fp||
+lg|h|
+n#|8|at| 
+^d@2Would you get the answer right when at the table ?
+
+This deal is from ^*g60bS:59-60::Boldbida, Teacher  -  Boldbida^*n   in   ^*bBooks-T^*n.     |
+
+n#|9|at|^^^fIf you do follow the link you can return  HERE  by clicking the  |fp|b|n#|3|at|@L|fp||n^|3|at|   icon button, top left.|
+
+qx|2|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+rh||ah|Ex 2|vv|head|
+%
+md|1SJ53HAKQ42DAK63CK,SK9HJT976DJ95C832,SQ4H853D72CAQJT65,SAT8762HDQT84C974|
+%
+sv||sk|s|
+nt|^z@3^b@2^^|n^|5|
+lg||
+at|^*bFive Nil split ^*n     The hand,|
+pg| ***** 1 ***** |
+
+
+at|     the contract,|
+mb|4H|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+at|     the lead.|
+pc|d5|eb|y___|
+pg| ***** 3 ***** |
+
+
+qx|Thnk,wide|
+eb|y___|
+at|^q  ^*b Do your thinking  NOW ^*n
+^^
+^f Which way to take the needed @s finesse ?|
+pg| ***** 4 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Try,wide|
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+at|^^|cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the solution.|
+pf|first-button|
+pg| ***** 5 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Ans,wide|
+bv|e,v|
+sk||
+nt|^z@3^c@2^^|n^|5|
+Lg|f|
+at|^b^*bAnswer^*n|
+eb||sk||
+lg|c|
+ht|f|at|@4|
+ht|e|n^|5|at|^c@2^z@3^e  Insight                    ( FYI - the source of this deal also covers the case of a 4-1 split )
+|n#|3|at|Having  5  losers   3@s(f)  0+@h(s)  2@d(s)   we need to shed  2.  We can clearly cash some  @c's  (2 if they split 4-2,  more if we draw trumps).  But what if  @h's (trumps) are 5-0 ?   Then we will have to rely on the 5 trump hand also having 3 @c's and 3 @d's.|
+pg| ***** 6 ***** |
+
+
+n#|3|at|^^So the play will go something like ...|
+
+%%_aapg-NEAR
+pc|d7|pc|d4|pc|dA|pg||
+pc|hA|pc|h6|pc|h3|pc|s2|at|^^^kOoooh  5 - 0    |pg||
+pc|dK|pc|d9|pc|d2|pc|d8|pg||
+pc|cK|pc|c2|pc|cA|pc|c4|pg||
+pc|cQ|pc|c9|pc|s3|pc|c3|pg||
+pc|cT|pc|c7|pc|s5|pc|c8|pg||
+pc|cJ|pc|s6|pc|sJ|pc|h7|pg||
+pc|hJ|pc|h8|pc|s7|pc|hK|pg||
+pc|d6|
+%%_aapg-STD
+pg| ***** 15 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Done,wide|
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+at|^*bDone^*n
+^c We are done with this problem.  However, if you wish ...
+^^|fg|y|at|Once you have clicked  { ^*b Cont ^*n }  you can use the  { ^*b Show ^*n }  button in the green area on the right to see all the cards.|fg||
+
+mx|x|
+eb|y___|
+bv|c,v|
+pf|cont-button|
+pg| ***** 16 ***** |
+
+
+---------------------------------------------------------------------------
+qx|DDS,wide|
+eb||
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+bv|a,v|
+at|^*bDDS^*n    ^eYou are now free to explore the deal.
+|n^|7|lg|k|at|^^^c@2If you still need help then, when in the deal, click the ^*b DDS  { is Off/On ^*n }  button top right.
+|fp|s|at|A number (of tricks) in a GREEN oval shows a good to play for THAT side.|fp||
+pf|all-res-lifted|
+pg| ***** 17 ***** |
+
+

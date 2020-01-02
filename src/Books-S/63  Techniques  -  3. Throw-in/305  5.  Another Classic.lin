@@ -1,0 +1,212 @@
+%%
+%%
+
+ss|chapter,5.                                     Another  Classic|
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-01-11          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Techniques                                       3.  Throw-in   |
+%%
+cr|m080|cg|m170|cb|m060|   fill   m  m-mastColor       on Title Pages
+cr|c208|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=03___FP_general_text.ins
+%%
+ht|s|lg|m|
+at|^c@2Please read all the ^*b ANSWER ^*n  even if you play it out correctly.   The text in the solution is there to help you see  HOW  to find that answer at the table.|
+%%
+<<--INSERT-END**-->>=03___FP_general_text.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+bv|a,h|   %% hide all three buttons
+%%
+ss|head,     ah`Part 3.    Throw-in`|
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|i|
+at|^c@2^z@3^^|n#|9|
+fp|t-title|at|Another Classic Throw-in|fp||
+lg|h|
+n#|8|at| 
+^d@2You are in 6@h and unsurprisingly you will need a throw-in to bring home the contract.
+Good luck.|
+
+
+qx|e2|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+rh||ah|Ex 2|vv|head|
+md|3sA93hAKdKQ3cAKJ62,sKQ85hJT987dT92c7,sJT76h54dA76cQT94,s42hQ632dJ854c853|
+sv|-|sk|s|
+nt|^z@3^b@2^^|n^|5|
+lg||
+at|^*bThrow-in^*n     The hand,|
+pg| ***** 1 ***** |
+
+
+at|     the bidding,|
+%%_aapg-NEAR
+mb|p|mb|p|mb|2C|pg||
+mb|p|mb|2H|an|1 ace or 2 Kings|pg||
+mb|p|mb|3C|pg||
+mb|p|mb|4C|pg||
+mb|p|mb|6C|pg||
+mb|p|mb|p|
+%%_aapg-STD
+pg| ***** 7 ***** |
+
+
+mb|p|
+pc|h|
+at|     the lead.|
+pg| ***** 8 ***** |
+
+
+qx|Thnk,wide|
+eb|y___|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 9 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Try,wide|
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+at|^^|cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the solution.|
+pf|first-button|
+pg| ***** 10 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Ans,wide|
+bv|e,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|f|
+at|^b^*bAnswer^*n|
+at|^^On the lead you have   1@s  2@h  3@d  5@c   =   11   plus the chance of a successful repeat finesse in @s's.  If East has either the @sK or the @sQ you are home.  BUT what if West has BOTH ?|
+pg| ***** 11 ***** |
+
+
+n#|5|at|^^... then play it as a throw in.  As long as the @c's (trumps) are  NOT  4-0  you are home.
+Draw trumps (@c's),  play of all your  @h's  and  @d's   and take the @s finesse into West.|
+pg| ***** 12 ***** |
+
+
+%%_aapg-NEAR
+pc|h5|pc|h2|pc|hK|pg||
+pc|c2|pc|c7|pc|cQ|pc|c3|pg||
+pc|c4|pc|c5|pc|cA|pc|d2|pg||
+pc|cK|pc|d9|pc|c9|pc|c8|pg||
+pc|hA|pc|h8|pc|h4|pc|h3|pg||
+pc|dK|pc|dT|pc|d6|pc|d4|pg||
+pc|dQ|pc|h9|pc|d7|pc|d5|pg||
+pc|d3|pc|hT|pc|dA|pc|d8|pg||
+pc|sJ|pc|s2|pc|s3|
+%%_aapg-STD
+pg| ***** 21 ***** |
+
+
+sk||
+ht|d|at|@4^^|n^|2|
+at|... when you lead the  @sJ  there is nothing West can do.|
+pg| ***** 22 ***** |
+
+
+n#|5|at|^^But what if the trumps split 4-0 ?  Draw trumps and take the  @s  finesse twice giving you a 75% chance.|
+pg| ***** 23 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Done,wide|
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+at|^*bDone^*n
+^c We are done with this problem.  However, if you wish ...
+^^|fg|y|at|Once you have clicked  { ^*b Cont ^*n }  you can use the  { ^*b Show ^*n }  button in the green area on the right to see all the cards.|fg||
+mx|x|
+eb|y___|
+bv|c,v|
+pf|cont-button|
+pg| ***** 24 ***** |
+
+
+---------------------------------------------------------------------------
+qx|DDS,wide|
+eb||
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+bv|a,v|
+at|^*bDDS^*n    ^eYou are now free to explore the deal.
+|n^|7|lg|k|at|^^^c@2If you still need help then, when in the deal, click the ^*b DDS  { is Off/On ^*n }  button top right.
+|fp|s|at|A number (of tricks) in a GREEN oval shows a good to play for THAT side.|fp||
+pf|all-res-lifted|
+pg| ***** 25 ***** |
+
+

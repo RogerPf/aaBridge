@@ -1,0 +1,51 @@
+%% Book into Jar
+%% Last edited  2013 Dec 03
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|150|ff|1Arial|fb|19|fm|1|       1 large
+fh|236|ff|2Arial|fb|29|fm|2|       2 med
+fh|342|ff|3Arial|fb|39|fm|3|       2 med+
+fh|664|ff|6Arial|fb|69|fm|6|       6 v large
+fh|925|ff|9Arial|fb|99|fm|9|       very small for faking 'buttons'
+
+cr|3200|cg|3255|cb|3255|     3  light blue
+cr|4170|cg|4190|cb|4255|     4  med blue
+cr|516|cg|5128|cb|516|       5  green 
+cr|7230|cg|70|cb|70|         7  red
+
+bt||
+fp|1|at|
+
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp|9|
+mn|   Chapters  into  linzip    (Optional)|
+qx|jar1|
+ht|e|
+at|^^|fp||at|^c@2
+
+^bIf you have written more than one  .lin  file  then - 
+
+
+@.  ^dyou can combine them into a .zip file using 
+|n^|5|at|
+^ethe normal method using the "zip" method that comes with your computer
+
+
+@. ^d(Optionally) You can then rename the file from being a  .zip  to being a  .linzip
+|n^|5|at|
+^e windows users will then beable to double click on the file to make it open in ^*baaBridge^*n
+
+
+@. ^dThis  .linzip  (or .zip)  file  can then be  dragged and dropped  on an open  ^*baaBridge^*n  window
+
+
+@. ^dThis  .linzip  (or .zip)  file  can then be sent to others for them to use with  ^*baaBridge^*n
+
+
+
+
+^eA other document is also available in the  ^*g:Doc Collection::Help,aaBridge Doc Collection^*n|
+
+
+ht|z|at|@0
+^r Roger Pfister   -   September 2016|

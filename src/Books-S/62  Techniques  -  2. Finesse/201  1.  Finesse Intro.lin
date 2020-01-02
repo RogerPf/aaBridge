@@ -1,0 +1,179 @@
+%%
+%%
+
+ss|chapter,1.                                         Finesse  Intro |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-01-11          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Techniques                                           2.  Finesse  |
+%%
+cr|m145|cg|m060|cb|m040|   fill   m  m-mastColor       on Title Pages
+cr|c208|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+bv|a,h|   %% hide all three buttons
+%%
+ss|head,     ah`Part 2.    Finesse`|
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|i|
+at|^c@2^z@3^^|n#|9|
+fp|t-title|at|Finesses are possible because of Dummy being Visible.|fp||
+lg|e|
+n#|4|at| 
+^d@2Of all the 9 sections covered in the  ^*g:Index::Index  and  Misc,Index^*n,  Finessing, is one of the bed rock game ideas that comes out of the 'Rules of Bridge'.  Playing with one of the four hands fully visible makes the finesse conceivable for declarer. It also allows the defense to finesse both against dummy and declarer.
+|n^|5|at|
+^^|
+fp|t-title|at|^cTopic Structure|fp||
+n#|4|at|
+This topic follows a standard layout of: an example, a reminder of what a pattern is, followed by a few more examples, and lastly the Richard Pavlicek patterns presented in playable form.  
+|n#|5|at|It is the last section @- the Playable patterns @- that may hold one or two surprises.|
+
+qx|# 1|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+rh||ah|Ex 1  Part 2.    Finesse|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bFinesse  ^*n|
+
+
+at|^^I remember reading, in my youth, a bridge book (by Terence Reese ?) with a section on finessing that opened with the sentiment ...
+^g ^*i "If you think one finesse is too easy, then we will start with two." ^*n.
+... so let's do just that.|
+pg| ***** 1 ***** |
+
+
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bFinesse  ^*n     The hand,|
+
+%
+md|1sAK2h32dAK32cAK32,sQJT9hKJ98cQJT98,s43hAQTd7654c7654,s8765h7654dQJT98|
+%
+bh|Play, West,  cL, res, p24,  T2-9,  always|
+bh|Play, West,  dL, res, p1,   T2-9,  always|
+%
+sv||sk|S|
+pg| ***** 2 ***** |
+
+
+at|       the contract,|
+mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 3 ***** |
+
+
+qx|Lead,wide|
+ht|g|at|@4^^|
+ht|c|n#|1|at| ^k the lead,|
+pc|cQ|eb|y___|
+pg| ***** 4 ***** |
+
+
+n#|5|at|^^^^^f The  { ^*b 1st ^*n }  button is there so you can play this easy hand yourself.|
+bv|f,v|
+bv|e,v|
+pf|first-button|
+pg| ***** 5 ***** |
+
+
+sk||
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bFinesse  ^*n     
+What you have been looking at is a ^*b Double finesse^*n,  which is where you can finesse at two different levels into the same suit in the same hand classically into  AQ10.|
+n#|5|at|
+To get 2 extra tricks you need to make the contract, the correct play is to play the @h10 on the first round,
+playing West for @hKJx.  If you play the @hQ on the first round the @h10 will ^*b never ^*n make a trick.|
+pg| ***** 6 ***** |
+
+
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bFinesse  ^*n | 
+ht|e|
+n^|5|
+at|
+When in the hand you use the ^*b DDS ^*b { ^*bis on/off ^*n } button to show the tricks that can be made playing either the @hAQ10.
+|n^|3|at|
+If you again use the  { ^*b 1st ^*n }  button and then click the ^*b DDS ^*b { ^*bis on/off ^*n } button, then when you are about to play the first @h from dummy, the ^*b DDS ^*n will show you how many tricks you will get when playing each of the  @hA Q or 10. |
+pg| ***** 7 ***** |
+
+
+---------------------------------------------------------------------------
+qx|DDS,wide|
+eb||
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+bv|a,v|
+at|^*bDDS^*n    ^eYou are now free to explore the deal.
+|n^|7|lg|k|at|^^^c@2If you still need help, then when in the deal, click the ^*b DDS  { is Off/On ^*n }  button top right.
+|fp|s|at|A number (of tricks) in a GREEN oval shows a good to play for THAT side.|fp||
+pf|all-res-lifted|
+pg| ***** 8 ***** |
+
+

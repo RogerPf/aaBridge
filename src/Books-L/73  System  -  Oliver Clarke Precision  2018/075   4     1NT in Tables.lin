@@ -1,0 +1,503 @@
+%%
+%%
+
+ss|chapter,Chapter 4.                             1NT  in  Tables |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2016-10-11          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=001___FP_masthead.ins
+%%
+ss|masthead,Oliver Clarke Precision                                 2018  |
+%%
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       Precision Blue
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor    that Gray
+%%
+<<--INSERT-END**-->>=001___FP_masthead.ins
+
+
+<<--INSERT-START-->>=002___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|f35|                    Font   f  f-fine
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  position adjustment USED BY 'GRAPHICS'
+%%
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=002___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=005___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+ht|z|n#|k|at|@0^*h https://www.youtube.com/channel/UCTGNUS8jbx85QOMUPlHoRMA, OCP Videos ^*n|
+%%
+<<--INSERT-END**-->>=005___FP_footer.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+Lg||
+qx|4|
+ht|j|
+Lg|m|
+fp|4|at|^c@2^z@3|
+n^|k|
+at| This is an insertion into the OCP lessons.   First time readers may wish to read to the next two chapters
+^d 4.1    1NT  Opening
+^d 4.2    1NT  2-way 2D
+and then return to this tabular summary.
+|lg|f|at|
+The  Oliver Clarke  approach to playing 1NT is independent of his OCP Precision system and so can be played with any 3 point 1 NT opening range.   A list of examples in given on the next page.
+
+The ^*b 1NT ^*n opener is assumed to have either a  4333 or 4432 shape (balanced) or  5332  (semi-bal)  and  at least when playing OCP will NOT have have a 5 card Major.|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Rnge,wide|
+nt||fp|t-title|n#|3|cp||at|^*bOCP^*n |fp||ht|a|at|^z@3^b@2|at|^^^^|
+fp|t-title|at|1NT Opening  and  Response  HCP Ranges|fp||
+ht|c|n#|5|
+lg|g|
+
+at|^c@2
+ ^c  ^*b  Open^*n  ^f      ^*bInvite-L^*n  ^*bInvite-U^*n  ^L  ^*bGF^*n   ^o ^*bSlam Inv^*n
+ ^c  @-@-@-@-      ^f     @-@-@-@-  @-@-@-@-       ^L@-@-@-      ^o@-@-@-@-@-           
+ ^c   16 - 18      ^g       7   -     8       ^L   9 - 13?       ^o above GF              
+ ^c   ^*b15 - 17   ^g       8   -     9       ^L 10 - 14?        ^o       "           ^r 2/1 NT range   ^*n  
+ ^c   14 - 16      ^g       9   -   10        ^L 11 - 15?        ^o       "             
+{^c   13 - 15      ^g     10   -   11         ^L 12 - 16?        ^o       "           ^r OCP range when      ^*bVun^*n  ^x  }
+ ^c   12 - 14      ^g     11   -   12         ^L 13 - 17?        ^o       "          
+{^c   10 - 12      ^g     13   -   14         ^L 15 - 19?        ^o       "           ^r OCP range when   ^*bnon-Vun^*n ^x  }
+|
+lg|e|at|
+You do not need to remember the Invite range values.  The magic number is ^*b 25 ^*n 
+|n^|5|at|
+^d @.   The opening range is always  3  points  
+^d @.   The   invite   range is always  2  points    ^*bInvite-L^*n    and    ^*bInvite-U^*n    (Lower and Upper).
+|n^|3|at|
+Take the  ^*btop^*n  value of the opening range  and subtract it from  ^*b 25 ^*n      So starting with   ^*b15^*n   (top of 13 - 15)  we get      25 - 15  =  10      so the invite range matching    13 - 15    is    10 - 11.
+
+|n^|0|fp|t-title|at|^bEssence|fp||
+n#|3|at|
+The essence of Oliver's system is that with an  
+^d ^*bInvite-L^*n   hand responder will use    2@c Stayman     |fp|s|at|an exception to this is suggested later|fp||at|     And with an  
+^d ^*bInvite-U^*n   hand responder will use   2way-2@d               |fp|s|at|also used for slam going hands.|fp||at|
+|n#|5|at|This way opener can know responders invitational point count exactly, so can choose to avoid bidding   balanced  24  point NT games.|
+pg| ***** 1 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Tr,hide|
+nt||fp|t-title|n#|3|cp||at|^*bOCP^*n |cp||at|^w   ^*gTr  2std,goto  Std^*n|cp||fp||ht|a|at|^b@2|at|^^^^|
+fp|t-title|at|4 Way Transfers   -   To a  5+ card major   ^*bor^*n   Responder has  BOTH  5 card majors|fp||
+ht|d|
+lg|b|
+at|      ^d     ^*bResp^*n                  ^h    Opener        ^n ^*bResp^*n              ^r          ----- Responder has -----|
+n#|5|at|
+	^c 1N               .     ^g            .                   ^m    -     4@c(Beta Ask)  ^r Slam Try	 ^u Strength|
+n#|5|
+pg| ***** 2 ***** |
+
+
+fp||at|^^Transfer to Hearts|fp||
+n#|3|at|
+	^c 1N   -   2@d(tr to @h) ^g    -     2@h                   ^m    -     2N          ^r Invite    ^u 5@h's               
+	^c 1N   -   2@d(tr to @h) ^g    -     2@h                   ^m    -     3N          ^r GF        ^u 5@h's               
+|n^|3|at|                                                                                        
+	^c 1N   -   2@d(tr to @h) ^g    -     2@h                   ^m    -     3@h         ^r Invite    ^u 6@h's               
+	^c 1N   -   2@d(tr to @h) ^g    -     2@h                   ^m    -     4@h         ^r Mild Slam Try ^u 6@h's               
+	^c 1N               .     ^g            .                   ^m    -     4@d(Texas @h's)  ^r GF   ^u 6@h's 
+|n^|0|at|
+	^c 1N   -   2@d(tr to @h) ^g    -     2@h                   ^m    -     2@s         ^r 2 Way - 2@D  ^u (^*g2w2d-2,go there^*n)
+	^c 1N   -   2@d(tr to @h) ^g    -     2@h                   ^m    -     3@s         ^r Slam Try ^u 5@S  &  5@h
+|
+pg| ***** 3 ***** |
+
+
+ht|o|n^|5|
+fp||at|^^Transfer to Spades|fp||
+n#|2|at|
+	^c 1N   -   2@h(tr to @s) ^g    -     2@s                   ^m    -     2N          ^r Invite        ^u 5@s's  
+	^c 1N   -   2@h(tr to @s) ^g    -     2@s                   ^m    -     3N          ^r GF            ^u 5@s's               
+|n^|9|at|                                                                               
+    ^c 1N   -   2@h(tr to @s) ^g    -     2@S                   ^m    -     3@h         ^r Slam Try|fp||at| ^u 5@S  &  ^*b4^*n+@h|at|     
+    ^c 1N   -   2@h(tr to @s) ^g    -     2@S                   ^m    -     4@h         ^r GF            ^u 5@S  &  5@h
+|n^|9|at|                                                                               
+	^c 1N   -   2@h(tr to @s) ^g    -     2@s                   ^m    -     3@s         ^r Invite        ^u 6@s's               
+	^c 1N   -   2@h(tr to @s) ^g    -     2@s                   ^m    -     4@s         ^r Mild Slam Try ^u 6@s's 
+	^c 1N               .     ^g            .                   ^m    -     4@h(Texas @s's)  ^r GF       ^u 6@s's 
+|
+pg| ***** 4 ***** |
+
+
+qx|Tr  2ocp,wide|
+ht|w|n^|5|at|
+|fp||at|Breaking the Transfer  (Super Accept)|fp||at|     ^l    ----- Opener has -----|                                 
+n#|3|at| 
+	^c 1N   -   2@d(tr to @h) ^g    -     2@s/3@c/3@d   ^k     ^*bMax^*n hcp,   ^*bHxxx^*n @h (or better),  Worthless  ^*bxx^*n  in  @c/@d/@s |fp|s|at|...(suit 'above')|fp||at|
+	^c 1N   -   2@h(tr to @s) ^g    -     3@c/3@d/3@h   ^k     ^*bMax^*n hcp,   ^*bHxxx^*n @s (or better), ^t   ^*bAce^*n in  @c/@d/@h|fp|s|at|...(the bid suit)|fp||at|
+	^c 1N   -   2@d(tr to @h) ^g    -     2NT           ^k     ^*bMax^*n hcp,   ^*bHxxx^*n @h (or better),|n#|6|at|    (when NOT covered above)|n^|6|at|
+	^c 1N   -   2@h(tr to @s) ^g    -     2NT           ^k     ^*bMax^*n hcp,   ^*bHxxx^*n @s (or better),
+|	
+pg| ***** 5 ***** |
+
+
+---------------------------------------------------------------------------
+qx|MsTr,hide|
+nt||fp|t-title|n#|3|cp||at|^*bOCP^*n |cp||at|^w   ^*gMsTr2std,goto  Std^*n|cp||fp||ht|a|at|^b@2|at|^^^^|
+
+fp|t-title|at|Minor  Suit  Transfers     -     (Part of  4 Way Transfers)|fp||at||
+ht|d|
+lg|c|
+at|      ^d     ^*bResp^*n                  ^h    Opener        ^n ^*bResp^*n              ^r          ----- Responder has -----|
+n#|5|
+pg| ***** 6 ***** |
+
+
+fp|f-fine|at|^^^^The Minor Suit Transfer|fp||
+n#|5|at|    
+	^c 1N   -   2@s(tr to @c) ^g    -     3@c                   ^m    -     pass          ^s weak   ^u 6+@c       
+	^c 1N   -   2N (tr to @d) ^g    -     3@d                   ^m    -     pass          ^s weak   ^u 6+@d	
+
+	
+|fp|t_title|at|Breaking the Minor Suit Transfer|fp||
+n#|3|at|
+  With a  ^*bH^*nxx (in tr suit)   and MAX,  ^*bOpener^*n  will   ^*bbid the gap^*n,   aiming towards   3NT   ^*bOR^*n   the minor suit slam.
+|n^|9|at|  
+				^l  ----- Opener Has -----                          ^r          ----- Responder has -----
+|n^|9|at|  
+	^c 1N   -   2@s(tr to @c) ^g    -     2N     ^l    ^*bMax^*n hcp,   @c^*bHxx^*n            ^s      ^u 6+@c       
+	^c 1N   -   2N (tr to @d) ^g    -     3@c    ^l    ^*bMax^*n hcp,   @d^*bHxx^*n            ^s      ^u 6+@d	
+|
+n#|s|
+pg| ***** 7 ***** |
+
+
+qx|MsTr2ocp,wide|
+fp|t-title|at|^^Showing   5 - 5   in the Majors |fp||
+n#|5|at|
+	^c 1N   -   2@d(tr to @h) ^g    -     2@h                   ^m    -     3@s         ^r Slam Try     ^u 5@S  &  5@h 
+	^c 1N   -   2@h(tr to @s) ^g    -     2@S                   ^m    -     3@h         ^r Slam Try     ^u 5@S  &  ^*b4^*n+@h|fp|t|cp|green|n^|3|at|^*b@.^*n|n#|3|fp||cp||at|       
+	^c 1N   -   2@h(tr to @s) ^g    -     2@S                   ^m    -     4@h         ^r GF           ^u 5@S  &  5@h       
+	^c 1N   -   2@h(tr to @s) ^g    -     2@s                   ^m    -     6@h         ^r Choose Slam  ^u 5@S  &  5@h
+^^^^^b|n#|9|fp|t|cp|green|n^|3|at|^*b@.^*n|n#|3|fp|s|cp||at| Std would be  5@S & 5@h.   OCP requires  5@S & 4@h  here, to allow Responder to show weak 54/45 Maj with other sequences.|fp||
+pg| ***** 8 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Stay,hide|
+nt||fp|t-title|n#|3|cp||at|^*bOCP^*n |cp||at|^w   ^*gStay2std,goto  Std^*n|cp||fp||ht|a|at|^b@2^z@3|at|^^^^|
+fp|t-title|at|Non-Promissory Stayman  ^i                        ^n Responder has     0 - 2       4 card Majors|fp||
+ht|d|
+lg|c|
+at|      ^d     ^*bResp^*n                  ^h    Opener        ^n ^*bResp^*n                 ^r          ----- Responder has -----|
+pg| ***** 9 ***** |
+
+
+ht|d|                                                                                           
+n#|5|at|                                                                                        
+	^c 1N   -   2@c           ^g    -     2@d(no 4 card maj)    ^m    -     2N                ^r     Invite-L ^u 0-2   4 card maj  
+	^c 1N   -   2@c           ^g    -     2@d(no 4 card maj)    ^m    -     3N                ^r     GF       ^u 0-2   4 card maj  
+|n^|7|at|                                                                                                     
+	^c 1N   -   2@c           ^g    -     2@d(no 4 card maj)    ^m    -     2@h  to play      ^r     Weak     ^u 4@s  &  5@h     
+	^c 1N   -   2@c           ^g    -     2@d(no 4 card maj)    ^m    -     3@h               ^r     Invite-L ^u 4@s  &  5@h       
+	^c 1N   -   2@c           ^g    -     2@d(no 4 card maj)    ^m    -     4@h               ^r     GF       ^u 4@s  &  5@h       
+|n^|0|at|                                                                                                     
+	^c 1N   -   2@c           ^g    -     2@d(no 4 card maj)    ^m    -     2@s  to play      ^r     Weak     ^u 5@S  &  4@h          
+	^c 1N   -   2@c           ^g    -     2@d(no 4 card maj)    ^m    -     3@s               ^r     Invite-L ^u 5@S  &  4@h          
+	^c 1N   -   2@h(tr to @s) ^g    -     2@S                   ^m    -     3@h               ^r     Slam Try ^u 5@S  &  ^*b4^*n+@h       
+|                                                                                               
+pg| ***** 10 ***** |
+
+
+n^|0|at|                                                                                                 
+	^c 1N   -   2@c           ^g    -     2@h(4 hearts)         ^m    -     2@s               ^r     Invite-L ^u 4@s       
+	^c 1N   -   2@c           ^g    -     2@h(4 hearts)         ^m    -     2N                ^r     Invite-L ^u no 4 card maj
+	^c 1N   -   2@c           ^g    -     2@h(4 hearts)         ^m    -     3@h               ^r     Invite-L ^u 4@h
+	^c 1N   -   2@c           ^g    -     2@h(4 hearts)         ^m    -     3@s               ^r     ^*g:Eta and Zeta,Eta^*n in @h's ^u ...
+	^c 1N   -   2@c           ^g    -     2@h(4 hearts)         ^m    -     3N                ^r     GF       ^u no 4 card maj
+	^c 1N   -   2@c           ^g    -     2@h(4 hearts)         ^m    -     4@h  to play      ^r     -        ^u 4@h               
+|                                                                                               
+pg| ***** 11 ***** |
+
+
+qx|Stay2,wide|
+n^|0|at|                                                                                                     
+	^c 1N   -   2@c           ^g    -     2@S(4 spades)         ^m    -     2N                ^r     Invite-L ^u could have 4@h
+	^c 1N   -   2@c           ^g    -     2@S(4 spades)         ^m    -     3@h               ^r     ^*g:Eta and Zeta,Eta^*n in @s's ^u ...
+	^c 1N   -   2@c           ^g    -     2@S(4 spades)         ^m    -     3@s               ^r     Invite-L ^u 4@s     
+	^c 1N   -   2@c           ^g    -     2@S(4 spades)         ^m    -     3N                ^r     GF       ^u no 4 card maj
+	^c 1N   -   2@c           ^g    -     2@S(4 spades)         ^m    -     4@s  to play      ^r     -        ^u 4@s   
+|	                                                                             
+pg| ***** 12 ***** |
+
+
+---------------------------------------------------------------------------
+qx|StaC,hide|
+nt||fp|t-title|n#|3|cp||at|^*bOCP^*n |fp||ht|a|at|^b@2|at|^^^^|
+fp|t-title|at|Non-Promissory Stayman  ^i     continued    ^n Responder has     0 - 2       4 card Majors|fp||
+ht|d|
+lg|c|
+at|      ^d     ^*bResp^*n                  ^h    Opener        ^n ^*bResp^*n                 ^r          ----- Responder has -----|
+pg| ***** 13 ***** |
+
+
+lg|d|
+ht|d|                                                                                           
+n#|5|at|                                                                                        
+	^c 1N   -   2@c           ^g    -     2@d(no 4 card maj)    ^m    -     3@c |fp|s|at|(passed hand)|fp||at| ^r      6 card @c's   &   4 card @h/@s 
+	^c 1N   -   2@c           ^g    -     2@h                   ^m    -     3@c |fp|s|at|(passed hand)|fp||at| ^r      6 card @c's   &   4 card     @s
+	^c 1N   -   2@c           ^g    -     2@s                   ^m    -     3@c |fp|s|at|(passed hand)|fp||at| ^r      6 card @c's   &   4 card @h
+|n^|5|at| 	                                                                                                        
+	^c 1N   -   2@c           ^g    -     2@d(no 4 card maj)    ^m    -     3@d |fp|s|at|(passed hand)|fp||at| ^r      6 card @d's   &   4 card @h/@s
+	^c 1N   -   2@c           ^g    -     2@h                   ^m    -     3@d |fp|s|at|(passed hand)|fp||at| ^r      6 card @d's   &   4 card     @s
+	^c 1N   -   2@c           ^g    -     2@s                   ^m    -     3@d |fp|s|at|(passed hand)|fp||at| ^r      6 card @d's   &   4 card @h
+^^|                                                                                               
+pg| ***** 14 ***** |
+
+
+qx|StaC2,wide|
+n#|5|at|                                                                                        
+	^c 1N   -   2@c           ^g    -     2@d(no 4 card maj)    ^m    -     3@c               ^r      Game Vals,  Weak @d (or @h/@s rare) 
+	^c 1N   -   2@c           ^g    -     2@h                   ^m    -     3@c               ^r      Game Vals,  Weak @d (or     @s rare)
+	^c 1N   -   2@c           ^g    -     2@s                   ^m    -     3@c               ^r      Invite,           5+@c  &  4@h
+|n^|5|at| 	                                                                                  
+	^c 1N   -   2@c           ^g    -     2@d(no 4 card maj)    ^m    -     3@d               ^r      Game Vals,  Weak @c 
+	^c 1N   -   2@c           ^g    -     2@h                   ^m    -     3@d               ^r      Game Vals,  Weak @c 
+	^c 1N   -   2@c           ^g    -     2@s                   ^m    -     3@d               ^r      Invite,           5+@d  &  4@h
+|                                                                                               
+pg| ***** 15 ***** |
+
+
+---------------------------------------------------------------------------
+qx|2w2d,hide|
+nt||fp|t-title|n#|3|cp||at|^*bOCP^*n |fp||ht|a|at|^b@2|at|^^^^|
+
+fp|t-title|at|2 Way  -  2 Diamond    ^i                        ^n Responder has     0 - 2       4 card Majors|fp||
+ht|d|
+lg|c|
+at|      ^d     ^*bResp^*n    ^f      Opener   ^*bResp^*n    Opener ^M   ----- Opener has ----- ^r          ----- Responder has -----| 
+pg| ***** 16 ***** |
+
+
+n#|5|at|                                                                                
+	^c 1N   -   2@d(tr to @h) ^g  -  2@h -  2@s                      ^n  |fp|s-small|at| (2@s cancels transfer and Enquires)|fp||at|
+	^c 1N   -   2@d(tr to @h) ^g  -  2@h -  2@s    -     2N   ^m minimum
+	^c 1N   -   2@d(tr to @h) ^g  -  2@h -  2@s    -     3@c  ^m 4 card @c's   |fp|s|at|better than min|fp||at|    ^t Invite-U  or  Strong
+	^c 1N   -   2@d(tr to @h) ^g  -  2@h -  2@s    -     3@d  ^m 4 card @d's   ^p       " ^t      "  ^w "  
+	^c 1N   -   2@d(tr to @h) ^g  -  2@h -  2@s    -     3@h  ^m 4 card @h's   ^p       " ^t      "  ^w "  
+	^c 1N   -   2@d(tr to @h) ^g  -  2@h -  2@s    -     3@s  ^m 4 card @s's   ^p       " ^t      "  ^w "  
+	|
+pg| ***** 17 ***** |
+
+
+at|^^^^      ^d     ^*bResp^*n    ^f      Opener   ^*bResp^*n    Opener ^m      ^*bResp^*n        ^r          ----- Responder has -----|
+n#|5|at|
+	^c 1N   -   2@d(tr to @h) ^g  -  2@h -  2@s    -     2N        ^m   -     p             ^t Invite-U
+	^c 1N   -   2@d(tr to @h) ^g  -  2@h -  2@s    -     2N        ^m   -     3@c@d@h@s     ^t ^*nStrong^n
+	^c 1N   -   2@d(tr to @h) ^g  -  2@h -  2@s    -     2N        ^m   -     3N            ^t Strong  |fp|s|at|(now no Slam interest)|fp||at|
+	^c 1N   -   2@d(tr to @h) ^g  -  2@h -  2@s    -     3@c@d@h@s ^m   -     any           ^t Invite-U  or  Strong
+|
+pg| ***** 18 ***** |
+
+
+qx|2w2d-2,wide|
+at|^z@3^b@2
+When Opener is bidding suits up the line (see 3@c@d@h@s immediately above) then Opener is not allowed to bypass 3NT unless a Major-suit fit is found.
+|n^|5|at|
+^*bResponder^*n  is  allowed to go beyond 3NT to show a  ^*bMinor^*n  suit fit.
+|n^|5|at|
+A fit is shown by either explicitly agreeing it at the 4-level or by cue-bidding the cheapest 1st-round control held.
+|n^|5|at|
+^b@2A 3NT rebid by responder is always "to play".  If Opener ends up bidding 3NT and Responder now bids 4NT, this asks Opener to show any 4-card Minor-suit fit that has been "concealed" (because Opener is not allowed to bypass 3NT) and Opener shows the suit or passes (ie: Responder cannot go this route if they want to play in 6NT regardless).|
+pg| ***** 19 ***** |
+
+
+qx||
+nt||
+ht|m|at| ^l       Separator|
+pg| ***** 20 ***** |
+
+
+---------------------------------------------------------------------------
+qx|-,hide|
+nt||fp|t-title|n#|3|cp|green|at|^*bNot  OCP^*n  (A Std simple approach for contrast)|cp|r|at|^w   ^*gTr  2ocp,goto  OCP^*n|cp||fp||ht|a|at|^b@2|at|^^^^|
+fp|t-title|at|4 Way Transfers   -   To a  5+ card major   ^*bor^*n   Responder has  BOTH  5 card majors|fp||
+ht|d|
+lg|b|
+at|      ^d     ^*bResp^*n                  ^h    Opener        ^n ^*bResp^*n           ^r    ----- Responder has -----|
+n#|5|at|
+|
+n#|5|
+pg| ***** 21 ***** |
+
+
+fp||at|^^Transfer to Hearts|fp||
+n#|3|at|
+	^c 1N   -   2@d(tr to @h) ^g    -     2@h                   ^m    -     2N          ^r Invite    ^u 5@h's               
+	^c 1N   -   2@d(tr to @h) ^g    -     2@h                   ^m    -     3N          ^r GF        ^u 5@h's               
+|n^|3|at|                                                                                        
+	^c 1N   -   2@d(tr to @h) ^g    -     2@h                   ^m    -     3@h         ^r Invite    ^u 6@h's               
+	^c 1N   -   2@d(tr to @h) ^g    -     2@h                   ^m    -     4@h         ^r GF        ^u 6@h's
+|
+pg| ***** 22 ***** |
+
+
+ht|o|n^|5|
+fp||at|^^Transfer to Spades|fp||
+n#|2|at|
+	^c 1N   -   2@h(tr to @s) ^g    -     2@s                   ^m    -     2N          ^r Invite        ^u 5@s's  
+	^c 1N   -   2@h(tr to @s) ^g    -     2@s                   ^m    -     3N          ^r GF            ^u 5@s's               
+|n^|9|at|^^^^                                                                               
+|n^|9|at|                                                                             
+	^c 1N   -   2@h(tr to @s) ^g    -     2@s                   ^m    -     3@s         ^r Invite        ^u 6@s's               
+	^c 1N   -   2@h(tr to @s) ^g    -     2@s                   ^m    -     4@s         ^r GF            ^u 6@s's 
+^^|
+pg| ***** 23 ***** |
+
+
+qx|Tr  2std,wide|
+ht|w|n^|5|at|
+|fp||at|Breaking the Transfer|fp||at|     ^l    ----- Opener has -----|
+n#|3|at|
+	^c 1N   -   2@d(tr to @h) ^g    -     3@h   ^k     ^*bMax^*n hcp,   ^*bHxxx^*n @h (or better)
+	^c 1N   -   2@h(tr to @s) ^g    -     3@s   ^k     ^*bMax^*n hcp,   ^*bHxxx^*n @s (or better)
+|	
+pg| ***** 24 ***** |
+
+
+---------------------------------------------------------------------------
+qx|MsTr2,hide|
+nt||fp|t-title|n#|3|cp|green|at|^*bNot  OCP^*n  (A Std simple approach for contrast)|cp|r|at|^w   ^*gMsTr2ocp,goto  OCP^*n|cp||fp||ht|a|at|^b@2^z@3|at|^^^^|
+
+fp|t-title|at|Minor  Suit  Transfers     -     (Part of  4 Way Transfers)|fp||at||
+ht|d|
+lg|c|
+at|      ^d     ^*bResp^*n                  ^h    Opener        ^n ^*bResp^*n              ^r          ----- Responder has -----|
+n#|5|
+pg| ***** 25 ***** |
+
+
+fp|f-fine|at|^^^^The Minor Suit Transfer|fp||
+n#|5|at|    
+	^c 1N   -   2@s(tr to @c) ^g    -     3@c                   ^m    -     pass          ^s weak   ^u 6+@c       
+	^c 1N   -   2N (tr to @d) ^g    -     3@d                   ^m    -     pass          ^s weak   ^u 6+@d	
+
+	
+|fp|t_title|at|Breaking the Minor Suit Transfer|fp||
+n#|3|at|
+  With a  ^*bH^*nxx (in tr suit)   and MAX,  ^*bOpener^*n  will   ^*bbid the gap^*n,   aiming towards   3NT   ^*bOR^*n   the minor suit slam.
+|n^|9|at|  
+				^l  ----- Opener Has -----                          ^r          ----- Responder has -----
+|n^|9|at|  
+	^c 1N   -   2@s(tr to @c) ^g    -     2N     ^l    ^*bMax^*n hcp,   @c^*bHxx^*n            ^s      ^u 6+@c       
+	^c 1N   -   2N (tr to @d) ^g    -     3@c    ^l    ^*bMax^*n hcp,   @d^*bHxx^*n            ^s      ^u 6+@d	
+|
+n#|s|
+pg| ***** 26 ***** |
+
+
+qx|MsTr2std,wide|
+fp|t-title|at|^^Showing   5 - 5   in the Majors |fp||
+n#|5|at|
+	^c 1N   -   2@d(tr to @h) ^g    -     2@h                   ^m    -     3@s         ^r Slam Inv     ^u 5@S  &  5@h 
+	^c 1N   -   2@h(tr to @s) ^g    -     2@S                   ^m    -     3@h         ^r GF|fp|s|at| (stronger)|fp||at|           ^u 5@S  &  ^*b4^*n+@h|fp|t|cp|green|n^|3|at|^*b@.^*n|n#|3|fp||cp||at|       
+	^c 1N   -   2@h(tr to @s) ^g    -     2@S                   ^m    -     4@h         ^r GF           ^u 5@S  &  5@h       
+	^c 1N   -   2@h(tr to @s) ^g    -     2@s                   ^m    -     6@h         ^r Choose Slam  ^u 5@S  &  5@h
+^^^^^b|n#|9|fp|t|cp|green|n^|3|at|^*b@.^*n|n#|3|fp|s|cp||at| Std would be  5@S & 5@h.   OCP requires  5@S & 4@h  here, to allow Responder to show weak 54/45 Maj with other sequences.|fp||
+pg| ***** 27 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Staystd,hide|
+nt||fp|t-title|n#|3|cp|green|at|^*bNot  OCP^*n  (A Std simple approach for contrast)|cp|r|at|^w   ^*gStay2,goto  OCP^*n|cp||fp||ht|a|at|^b@2^z@3|at|^^^^|
+fp|t-title|at|Non-Promissory Stayman  ^i                        ^n Responder has     0 - 2       4 card Majors|fp||
+ht|d|
+lg|c|
+at|      ^d     ^*bResp^*n                  ^h    Opener        ^n ^*bResp^*n                 ^r          ----- Responder has -----|
+pg| ***** 28 ***** |
+
+
+ht|d|                                                                                           
+n#|5|at|                                                                                        
+	^c 1N   -   2@c           ^g    -     2@d(no 4 card maj)    ^m    -     2N                ^r     Invite    ^u 0-2   4 card maj  
+	^c 1N   -   2@c           ^g    -     2@d(no 4 card maj)    ^m    -     3N                ^r     GF        ^u 0-2   4 card maj  
+|n^|7|at|                                                                                                     
+	^c 1N   -   2@c           ^g    -     2@d(no 4 card maj)    ^m    -     2@h               ^r     Invite    ^u 4@S  &  5@h     
+	^c 1N   -   2@c           ^g    -     2@d(no 4 card maj)    ^m    -     3@h               ^r     GF        ^u 4@S  &  5@h       
+     
+|n^|0|at|                                                                                                     
+	^c 1N   -   2@c           ^g    -     2@d(no 4 card maj)    ^m    -     2@s               ^r     Invite    ^u 5@S  &  4@h          
+	^c 1N   -   2@c           ^g    -     2@d(no 4 card maj)    ^m    -     3@s               ^r     GF        ^u 5@S  &  4@h
+	^c 1N   -   2@h(tr to @s) ^g    -     2@S                   ^m    -     3@h               ^r     Invite    ^u 5@S  &  5@h       
+|                                                                                               
+pg| ***** 29 ***** |
+
+
+n^|0|at|                                                                                                 
+	^c 1N   -   2@c           ^g    -     2@h(4 hearts)         ^m    -     2@s               ^r     Invite   ^u 4@s
+	^c 1N   -   2@c           ^g    -     2@h(4 hearts)         ^m    -     2N                ^r     Invite   ^u no 4 card maj
+	^c 1N   -   2@c           ^g    -     2@h(4 hearts)         ^m    -     3@h               ^r     Invite   ^u 4@h
+	^c 1N   -   2@c           ^g    -     2@h(4 hearts)         ^m    -     3@s               ^r     GF       ^u 4@s
+	^c 1N   -   2@c           ^g    -     2@h(4 hearts)         ^m    -     3N                ^r     GF       ^u no 4 card maj
+	^c 1N   -   2@c           ^g    -     2@h(4 hearts)         ^m    -     4@h  to play       ^r     -        ^u 4@h
+|                                                                                               
+pg| ***** 30 ***** |
+
+
+qx|Stay2std,wide|                                                                                                
+n^|0|at|                                                                                                       
+	^c 1N   -   2@c           ^g    -     2@S(4 spades)         ^m    -     2N                ^r     Invite   ^u could have 4@h
+	^c 1N   -   2@c           ^g    -     2@S(4 spades)         ^m    -     3@h               ^r     Invite   ^u 4@h   
+	^c 1N   -   2@c           ^g    -     2@S(4 spades)         ^m    -     3@s               ^r     Invite   ^u 4@s   
+	^c 1N   -   2@c           ^g    -     2@S(4 spades)         ^m    -     3N                ^r     GF       ^u could have 4@h
+	^c 1N   -   2@c           ^g    -     2@S(4 spades)         ^m    -     4@s  to play       ^r     -       ^u 4@s               
+|	                                                                             
+pg| ***** 31 ***** |
+
+
+qx|end,wide|
+lg||
+ht|Z|n#|5|at|
+^*bEnd^*n|
+pg| ***** 32 ***** |
+
+

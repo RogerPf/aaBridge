@@ -1,0 +1,175 @@
+%%
+%%
+
+ss|chapter,1.                                       Ruff-Sluff  Intro|
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-01-11          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Techniques                                      8.  Ruff-Sluff |
+%%
+cr|m130|cg|m060|cb|m200|   fill   m  m-mastColor       on Title Pages
+cr|c208|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+bv|a,h|   %% hide all three buttons
+%%
+ss|head,     ah`Part 8.    Ruff-Sluff `|
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|i|
+at|^c@2^z@3^^|n#|9|
+fp|t-title|at|Ruff-Sluff|fp||
+lg|e|
+n#|4|at| 
+^d@2First a randomly dealt hand from  ^*gB5:mitche 082::Mitche 2015,  Books-T,  Mitche 2015,  set 82,  board 5^*n.  It is presented as a problem.  You are playing for an^*b overtrick^*n.  If wish to read the original Mitche lesson you can follow the link.|
+n#|9|at|^^^fIf you do follow the link you can return  HERE  by clicking the  |fp|b|n#|3|at|@L|fp||n^|3|at|   icon button, top left.|
+
+ht|q|n#|3|fp|t-title|at|^cTopic Structure|fp||
+n#|4|at|
+This topic follows a standard layout of: an example, a reminder of what a pattern is, followed by a few more examples, and lastly the Richard Pavlicek patterns presented in playable form.  
+|n#|5|at|It is the last section @- the Playable patterns @- that may hold one or two surprises.|
+
+qx|1|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+rh||ah|Ex 1|vv|head|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bRuff-Sluff ^*n     The hand,|
+%
+md|3sKJhAJ964dAQ84cJT,sQ97542hKQd6c8742,sA83hT8532dJ932cK,sT6h7dKT75cAQ9653|
+%
+bh|Play, E, dT, res, p3, T1, always|
+%
+sv|n|sk|s|
+pg| ***** 1 ***** |
+
+
+at|       the bidding,|
+mb|p|mb|p|mb|1H|mb|1S|mb|4H|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+qx|Lead|
+ht|g|at|@4^^|
+ht|c|n#|1|at|^l   the lead,|
+pc|c7|eb|y___|
+pg| ***** 3 ***** |
+
+
+qx|Thnk,wide|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 4 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Try,wide|
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+at|^^^c|cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the solution.|
+pf|first-button|
+pg| ***** 5 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bRuffing Finesse  Ans^*n | 
+ht|e|n^|5|at|^c@2^z@3^e
+|n#|3|at|There are many reasonable lines with this deal. You soon know that West has the remaining master trump so you can strip the North and South hands of @s and @c and then take the @d finesse East and throw West in with their master.   If West had just a singleton @d then you get the ruff-sluff  if they have one to exit with ... also good.
+|n#|3|at|^i Here is an example line ...|
+pg| ***** 6 ***** |
+
+
+%%_aapg-NEAR
+pc|cK|pc|cA|pc|cT|pg||
+pc|h7|pc|hA|pc|hQ|pc|h2|pg||
+pc|sK|pc|s2|pc|s3|pc|s6|pg||
+pc|sJ|pc|sQ|pc|sA|pc|sT|pg||
+pc|s8|pc|c3|pc|h4|pc|s4|pg||
+pc|cJ|pc|c2|pc|h3|pc|c5|pg||
+pc|dJ|pc|dK|pc|dA|pc|d6|pg||
+pc|h6|pc|hK|pc|h5|pc|c6|
+%%_aapg-STD
+pg| ***** 14 ***** |
+
+
+sk||
+qx|DDS,wide|
+eb||
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+bv|a,v|
+at|^*bDDS^*n    ^eYou are now free to explore the deal.
+|n^|7|lg|k|at|^^^c@2If you still need help, then when in the deal, click the ^*b DDS  { is Off/On ^*n }  button top right.
+|fp|s|at|A number (of tricks) in a GREEN oval shows a good to play for THAT side.|fp||
+pf|all-res-lifted|
+pg| ***** 15 ***** |
+
+

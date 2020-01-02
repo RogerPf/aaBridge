@@ -1,0 +1,189 @@
+
+
+%% 2019-07-26  Patterns
+
+%% All hands are copyright  Richard Pavlicek
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+bv|a,h|   %% hide all three buttons
+%%
+ss|head,     ah`Part 3.    Throw-in`|
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+<<--INSERT-START-->>=07___FP_Patterns.ins
+%%
+fh|b48| %%  'banner' font
+fh|t40| %%  'target' font
+fh|s28| %%  'small'  font
+fh|p45| %%  'pink dot' size
+
+cr|a230|cg|a040|cb|a130|          a  action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       pink dot button
+
+bv|e,h| %%   Enter the deal button hidden
+bv|f,v| %%   1st visible 
+bv|d,v| %%   DDS visible
+
+ha|y|   %%   hide auctions
+
+ss|head,     ah`Part 3.    Throw-in`|
+ss|banner,   ht`e`fp`b-big`at`^*b^L^*nThrow-in^*n`fp``|
+ss|link,     ht`z`at`^L     visit  Richard Pavlicek's  Throw-in  page    ^*h http://www.rpbridge.net/9h01.htm, rpbridge.net  9h01^*n`|
+ss|means,    ht`e`fp`small`at`^x ^*h http://www.rpbridge.net/9gc8.htm, meaning^*n`fp``|
+ss|new,      nt`^b@2^^`vv`means`vv`link`vv`banner`ht`e`vv`head`|
+ss|contract, mb`3nppp`|
+ss|p1,       vv`contract`wt`s`sk`s`fp`t`ht`e`at`^q    ^*b`|
+ss|p2,       fp`t`ht`e`at`^*n^u`|
+ss|p3,       fp``ht`q`at`^d`|
+%%
+<<--INSERT-END**-->>=07___FP_Patterns.ins
+
+
+qx|-|
+st||
+nt|^b@2^^|vv|banner|
+ht|n|at|In the far right-hand column two lines below |fp|t|cp|gr|at|^*b Power Kib ^*n|cp||fp||at| is the   { @m }|cp|red|at| ^*bShow all hands^*n|cp||at| ^*b checkbox^*n.  
+^^^i Set this to ^*b CHECKED^*n,  the first few times you look at these patterns. |
+rh||ah|--- -|vv|head|
+ht|a|n#|1|at|^q( Your target is |cp|red|at|^*b 9 ^*n |cp||at|tricks )|
+pg| ***** 0 ***** |
+
+
+qx|1|
+rh||ah|Pattern 1|
+vv|new|at|^*b 1.  Establishment  or  stepping-stone  ^*n|
+%
+md|1  K2, AJ, 3 A, Q K|
+%
+bs|8,3|
+vv|p1|at|win 1|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 1 ***** |
+
+
+qx|2|
+rh||ah|Pattern 2|
+vv|new|at|^*b 2.  Finesse^*n|
+%
+md|1  432, 876, AJ10, KQ9|
+%
+bs|7,3|
+vv|p1|at|win 2|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 2 ***** |
+
+
+qx|3|
+rh||ah|Pattern 3|
+vv|new|at|^*b 3.  Forced duck finesse^*n|
+%
+md|1  AQ K2, T9 JT, 32 Q3, KJ A4|
+%
+bs|6,3|
+vv|p1|at|win 3|
+vv|p2|at|bi|
+vv|p3|
+pg| ***** 3 ***** |
+
+
+qx|4|
+rh||ah|Pattern 4|
+vv|new|at|^*b 4.  Strip finesse^*n|
+%
+md|1  432 A, Q98 4, K105 2, AJ7 3|
+%
+bs|7,2|
+vv|p1|at|win 2|
+vv|p2|at|auto bi|
+vv|p3|at|Any throw-in may require strip maneuver prior.|
+pg| ***** 4 ***** |
+
+
+qx|5|
+rh||ah|Pattern 5|
+vv|new|at|^*b 5.  Duck strip finesse^*n|
+%
+md|1  A2 Q102, KQJ 87, 43 K43, T9 AJ9|
+%
+bh|Play, West,  sU, res, p1,  T2,  always|
+%
+bs|6,2|
+vv|p1|at|win 3|
+vv|p2|at|bi|
+vv|p3|
+pg| ***** 5 ***** |
+
+
+qx|6|
+rh||ah|Pattern 6|
+vv|new|at|^*b 6.  Duck strip combined finesse^*n|
+%
+md|1  A32 32, KQ10 Q4, 54 AJ10, J9 K98|
+%
+bh|Play, East,  sU, res, p4,  T1,  always|
+%
+bs|6,2|
+vv|p1|at|win 3|
+vv|p2|at|auto? bi|
+vv|p3|at||
+pg| ***** 6 ***** |
+
+
+qx|7|
+rh||ah|Pattern 7|
+vv|new|at|^*b 7.  Deep finesse^*n|
+%
+md|1  432, J76, AQ9, K108|
+%
+bs|7,3|
+vv|p1|at|win 2|
+vv|p2|at|auto|
+vv|p3|
+pg| ***** 7 ***** |
+
+
+qx|8|
+rh||ah|Pattern 8|
+vv|new|at|^*b 8.  Duck ^*n|
+%
+md|1  432, 987,AQ5, KJT |
+%
+bs|7,3|
+vv|p1|at|win 2|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 8 ***** |
+
+
+qx|9|
+rh||ah|Pattern 9|
+vv|new|at|^*b 9.  Repeat duck ^*n|
+%
+md|1  32 32, KQJ9, AT54, 87 AK|
+%
+bs|7,2|
+vv|p1|at|win 2|
+vv|p2|at||
+vv|p3|
+pg| ***** 9 ***** |
+
+
+qx|10|
+rh||ah|Pattern 10|
+vv|new|at|^*b 10.  Unblock duck^*n|
+%
+md|1  Q2 32, AJT8, K943, 76 AK|
+%
+bs|7,2|
+vv|p1|at|win 2|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 10 ***** |
+
+

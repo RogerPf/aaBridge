@@ -1,0 +1,240 @@
+%%
+%%
+
+ss|chapter,Boards                                              53 - 54 |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2016-05-04     set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Boldbida                            Play  Problems   2016|
+%%
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       on Title Pages   Precision Blue
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages   tiny tweek
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s25|                    Font   s  s-small
+fh|t40|                    Font   t  t-title             section titles (if any)
+fh|f42|                    Font   f  f-flow
+fh|b50|                    Font   b  b-bigTitle   bigger section titles
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+%%
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor      on Title Pages
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor   on Title Pages
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor      fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=03___FP_general_text.ins
+%%
+ht|j|
+Lg|e|
+at|If you are  |cp|red|at|^*bNew  to  aaBridge^*n|cp||at| please  click the |fp|t|at| @z |fp||at| button in the far top left and then click  { ^*bFlow^*n > }  button.
+Once you have a little knowledge about how to use   ^*baaBridge^*n   please come back to this 'movie'.|  
+%%
+ht|m|n#|7|fp|t|at|^*bInstructions^*n|fp||at|   -   When the   |cs||fp|t|at| { ^*b 1st ^*n } |cs||fp||at|  button is visible (bottom right) you can click it and ^*b PLAY ^*n the hand.|
+%%
+ht|p|fp|t-title|cp|blue|at|^- ^*b-----  Shuf Op  -----^*n     ^-|cp||fp||at|^^|
+n#|3|
+at|^b@2When  you are  'Inside a deal',  high on the left in green baize area you will see the  {^*b Shuf Op ^*n}  button.|
+n#|5|
+at|^^Click on it to shuffle the  East - West  cards and leave you ready to  PLAY  the hand against the 
+^o ^*b aaBridge ^*n bots and the new defensive layout.|
+%%
+<<--INSERT-END**-->>=03___FP_general_text.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+bv|a,v|    %% make all 3 buttons visible 
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+pg| ***** 0 ***** |
+
+
+st||
+--------------------------------------------------------------------
+qx|53 F|nt|^b@2^^|rh||ah|Practice 53 |pn| , , , |md|1S53HAK84DK93CAQ82,SKQHQJT93DJ854C63,S987642H62DAQCK54,|sv|O|sk|S |at|^*bPractice 53^*n        Fail |
+pg| ***** 1 ***** |
+
+
+mb|1N|mb|p|mb|2H|mb|p|mb|2S|mb|p|mb|4S|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+pc|HQ|at|        We have up to 5 (fast) losers in the master hand (dummy), these being the top 5 @s's.  There is nothing we can do except hope the spades are split 3-2.  So, for example, playing just a couple of rounds of  @c's  can't hurt us.   Can it ? |
+pg| ***** 3 ***** |
+
+
+pc|h6|pc|h7|pc|hA|
+pg| ***** 4 ***** |
+
+
+pc|c2|pc|c3|pc|cK|pc|c7|
+pg| ***** 5 ***** |
+
+
+pc|c5|pc|cJ|pc|cA|pc|c6|
+pg| ***** 6 ***** |
+
+
+pc|s5|pc|sK|pc|s2|pc|sA|
+pg| ***** 7 ***** |
+
+
+pc|cT|pc|cQ|pc|sQ|at|^^ Oh dear  -  we have let the Opps make an extra trick by ruffing.      Please  { ^*bPlay^*n }  out the rest of the cards yourself.  |
+pf|cont-button|
+sk||
+pg| ***** 8 ***** |
+
+
+qx|53 S|nt|^b@2^^|rh||ah|Practice 53 |pn| , , , |md|1S53HAK84DK93CAQ82,SKQHQJT93DJ854C63,S987642H62DAQCK54,|sv|O|sk|S |at|^*bPractice 53^*n        Success |
+pg| ***** 9 ***** |
+
+
+mb|1N|mb|p|mb|2H|mb|p|mb|2S|mb|p|mb|4S|mb|p|mb|p|mb|p|
+pg| ***** 10 ***** |
+
+
+pc|HQ|at|        We have up to 5 (fast) losers in the master hand (dummy), these being the top 5 @s's.  There is nothing we can do except hope the spades are split 3-2.     However we need to draw the Opps trumps straight away so they do not make any extra tricks by ruffing.|
+pg| ***** 11 ***** |
+
+
+pc|h6|pc|h7|pc|hA|
+pg| ***** 12 ***** |
+
+
+pc|s5|pc|sQ|pc|s2|pc|sT|
+pg| ***** 13 ***** |
+
+
+pc|hJ|pc|h2|pc|h5|pc|hK|
+pg| ***** 14 ***** |
+
+
+pc|s3|pc|sK|pc|s4|pc|sJ|
+pg| ***** 15 ***** |
+
+
+pc|hT|
+pg| ***** 16 ***** |
+
+
+at|^^ Good,  the Opps trumps have split 3-2.  ^nPlease  { ^*bPlay^*n }  out the rest of the cards yourself.  |
+pf|cont-button|
+sk||
+pg| ***** 17 ***** |
+
+
+qx|54 F|nt|^b@2^^|rh||ah|Practice 54 |pn| , , , |md|4SAKJT8H854D72CAJT,S963HT762DQJ6CQ75,SQ42HA93DK543C862,|sv|O|sk|S |at|^*bPractice 54^*n        Fail |
+pg| ***** 18 ***** |
+
+
+mb|1D|mb|1S|mb|p|mb|2S|mb|p|mb|p|mb|p|
+pg| ***** 19 ***** |
+
+
+at|      We have 6 losers   2@h(s)  2@d(f)  2@c(s)   in the master hand (South)   we need to shed 1 to get to our 8 trick target   13 - (6 - ^*b1^*n)  =  8.    A club finesse might do it, as East has overcalled (in @d's).  But let's try drawing trumps first.|pc|DQ|
+pg| ***** 20 ***** |
+
+
+pc|dK|pc|dA|pc|d2|
+pg| ***** 21 ***** |
+
+
+pc|hK|pc|h4|pc|h7|pc|hA|
+pg| ***** 22 ***** |
+
+
+pc|s2|pc|s5|pc|sA|pc|s6|
+pg| ***** 23 ***** |
+
+
+pc|sK|pc|s3|pc|s4|pc|s7|
+pg| ***** 24 ***** |
+
+
+pc|s8|pc|s9|pc|sQ|pc|c4|
+pg| ***** 25 ***** |
+
+
+pc|c2|pc|c3|pc|cT|pc|cQ|
+pg| ***** 26 ***** |
+
+
+pc|dJ|at|             ^gOh dear.  East was supposed to have both @c honors.  Now we can't get rid of a club loser.^^ Please  { ^*bPlay^*n }  out the rest of the cards yourself. |
+pf|cont-button|
+sk||
+pg| ***** 27 ***** |
+
+
+qx|54 S|nt|^b@2^^|rh||ah|Practice 54 |pn| , , , |md|4SAKJT8H854D72CAJT,S963HT762DQJ6CQ75,SQ42HA93DK543C862,|sv|O|sk|S |at|^*bPractice 54^*n        Success |
+pg| ***** 28 ***** |
+
+
+mb|1D|mb|1S|mb|p|mb|2S|mb|p|mb|p|mb|p|
+pg| ***** 29 ***** |
+
+
+at|      We have 6 losers   2@h(s)  2@d(f)  2@c(s)   in the master hand (South)   we need to shed 1 to get to our 8 trick target   13 - (6 - ^*b1^*n)  =  8.    A club finesse might do it, as East has overcalled (in @d's).  But we will need to take the finesse twice incase West has one of the two  @c  honors.|pc|DQ|
+pg| ***** 30 ***** |
+
+
+pc|dK|pc|dA|pc|d2|
+pg| ***** 31 ***** |
+
+
+pc|hK|pc|h4|pc|h7|pc|hA|
+pg| ***** 32 ***** |
+
+
+pc|c2|pc|c4|pc|cT|pc|cQ|
+pg| ***** 33 ***** |
+
+
+pc|dJ|at| ^^ ^fPlease  { ^*bPlay^*n }  out the rest of the cards yourself and bring in the 8 tricks needed.|
+pf|cont-button|
+sk||
+pg| ***** 34 ***** |
+
+

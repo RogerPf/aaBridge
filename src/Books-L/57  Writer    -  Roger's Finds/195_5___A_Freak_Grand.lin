@@ -1,0 +1,266 @@
+%%
+%%
+
+ss|chapter,5.                                    A  Freak  Grand   |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2016-02-20          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Roger's  Finds                   2019  and  Past  Years |
+%%
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       Maroon
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    Around the normal Grey
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title     
+fh|b50|                    Font   b  b-bigTitle
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+%
+cr|a230|cg|a040|cb|a130|   text   a  a-action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       on Title Pages
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    on Title Pages
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|y|n#|b|lg||at|^b@2@1|at|
+^*bClick^*n          ^*bFlow >^*n         or use your    ^*bMouse Wheel^*n|
+ht|z|at|@0
+^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|j|
+Lg|f|
+fp|4|at|^c@2^z@3|
+at|
+This is a freak hand that I picked up in normal play.   I played it just a couple of weeks ago.
+
+
+My partner (a local  face-to-face  partner, but this was on-line)  can make some strange bids at times.
+
+For example, just because he promises a     LONG SOLID SUIT  
+^o does not necessarily mean he has the Ace ! 
+|
+
+
+qx|# 5|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+bv|a,h|    %% *a*ll  three  [Cont, 1st, 'Enter the Deal']  buttons forced  *h*idden.
+rh||ah|Find 5|
+md|3SAKQJT52HDAKQ943C,S7HA9432DJT75C543,S843HJ76D2CKQJT97,S96HKQT85D86CA862|
+sv|E|sk|S|
+mb|p|mb|p|mb|?|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bFind 5^*n     You pick up this  ^*bFreak^*n.|
+pg| ***** 1 ***** |
+
+
+at|^^At first I though this was a joke hand that someone had added, but this was normal play.   The bidding goes.|   
+pg| ***** 2 ***** |
+
+
+mb|2C!|an|Strong|
+pg| ***** 3 ***** |
+
+
+mb|p|mb|4C!|an|Long suit solid|
+pg| ***** 4 ***** |
+
+
+mb|p|mb|7S|
+pg| ***** 5 ***** |
+
+
+mb|p|mb|p|mb|p|
+at|^^ What else can you bid ?    The hand has an  LTC  of zero !|
+pg| ***** 6 ***** |
+
+
+at|^^Bidding and making six is nothing special but  7@s  in normal play,  that would be special.|
+pg| ***** 7 ***** |
+
+
+at|^^This lead is the @h2|
+pc|h2|
+pg| ***** 8 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|So plan your play.    FYI  3 declarers went down in  7@s and 2 made it.     You are going to make it, as I did.|
+pg| ***** 9 ***** |
+
+
+qx|Try,wide|
+eb|y___|     %% 'end blocker'  on
+bv|f,v|   %%  1st (*f*irst) button forced *v*isible
+n#|7|
+at|^^ |cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the analysis.|
+pf|first-button|
+pg| ***** 10 ***** |
+
+
+---------------------------------------------------------------------------
+bv|f,h|   %%  1st (*f*irst) button forced *h*idden
+nt|^z@3^b@2^^|
+Lg|f|
+n^|5|
+at|^*bTime for some Questions^*n|
+n#|5|
+at|^^Are we in a good contract ?      Will others be playing here ?     Which hand should we pick as the Master hand ?    How many losers do we have ?    You know the drill.|    
+pg| ***** 11 ***** |
+
+
+n#|7|
+at|^^It is important when anything odd happens at the bridge table, to  FOLLOW THE NORMAL ROUTINE.   Don't let yourself be thrown off balance.|
+pg| ***** 12 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^b@2^^|
+Lg|f|
+n^|5|
+at|Taking South as the Master hand we have      No losers in @s's,     No losers in @h's,     No losers in  @c's   but we do have ^*b some ^*n possible losers in @d's (if they split ANYTHING but 3-3).    Note the obvious  we have 7 and they have 6.|  
+n#|5|
+at|^^So it all comes down to how to  BEST  play the @d suit for  ZERO losers.    
+If they are  6-0  you can expect a ruff.     
+If they are  5-1  you are still likely to get ruffed on the 2nd round of @d's and if that opp has the @s9|
+n#|b| 
+at|^t you can't even over ruff.| 
+pg| ***** 13 ***** |
+
+
+qx|Asys,wide|
+bv|f,v|
+nt|^z@3^b@2^^|
+n^|5|
+Lg|f|
+at|^*bAnalysis^*n^^|
+n^|5|at|^^ |cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the answer.|
+pf|first-button|
+pg| ***** 14 ***** |
+
+
+---------------------------------------------------------------------------
+bv|f,h|
+nt|^z@3^b@2^^|
+n^|5|
+Lg|k|
+at|Think about the  4-2  and  3-3 @d splits ?|
+n#|5|at|
+This is the CORE of the problem, obvious but only if you pause and THINK.    If one opponent has 4 @d's then you have only 1 possible @d loser.  So you ONLY NEED TO RUFF ONCE.|
+n#|7|at|    
+Doing this means that you have an 85% chance of making this grand slam      4-2 (49%)  +  3-3 (36%)   =   (85%)|
+pg| ***** 15 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^b@2^^|
+n^|5|
+Lg|f|
+at|So the  PLAN OF THE PLAY   is now very simple.  
+Ruff the first trick.         Two rounds of trumps (leaving 1 still out if we have to)
+Lead a top @d (taking out dummy's singleton)   
+Ruff a low diamond.       Back to hand with any ruff (and draw the last trump, if one is still out)  -  claim.|
+pg| ***** 16 ***** |
+
+
+pc|h6|pc|hT|pc|s2|
+pg| ***** 17 ***** |
+
+
+pc|sA|pc|s7|pc|s3|pc|s6|
+pg| ***** 18 ***** |
+
+
+pc|sK|pc|h3|pc|s4|pc|s9|
+pg| ***** 19 ***** |
+
+
+pc|dA|pc|d5|pc|d2|pc|d6|
+pg| ***** 20 ***** |
+
+
+pc|d3|pc|d7|pc|s8|pc|d8|
+pg| ***** 21 ***** |
+
+
+qx|DD,wide|
+sk||
+pc|h7|
+eb||
+mx|x|
+bv|a,v|
+pf|cont-button|
+pg| ***** 22 ***** |
+
+
+qx|PS,wide|
+up|20|
+sk||
+
+bv|a,v|
+
+nt|^z@3^b@2^^|
+n^|5|
+Lg|k|
+at|^*bPost Script^*n         So how is it that ^*b 3 ^*n declarers managed to go down ?  
+They tried to ruff 2 @d's in dummy (and got over ruffed by East's @s9).    Why did they do that ?      I am sure that they did it without really thinking.   They did it because they could !    In effect they played  ^*bFOR^*n  a 5-1 split and so gave themselves a chance to go down if the split was a more normal 4-2.        ^*bMoral^*n  -  think normally.|
+at|^^FYI  your  ^*b1510^*n (7@s making) is not the top score, that honor goes to  ^*b1620^*n (6@s redoubled making ONLY 12)  !|
+pg| ***** 23 ***** |
+
+

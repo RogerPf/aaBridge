@@ -1,0 +1,328 @@
+
+
+%% 2019-08-05  Patterns  Clash Squeeze
+
+%% All hands are copyright  Richard Pavlicek
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pd|hint,^b   There is a `cp`green`at`^*b Hint ^*n`cp``AT` on the next page but if you want to  PLAY  the hand NOW, the  { ^*b 1st ^*n }  button is available.|
+%%
+pd|choose,`cp`red`at`^b    ^*bPlease   CHOOSE^*n`cp``at`   you can use  {^*b Flow >^*n }  to see the answer  `cp`red`at`^*bOR^*n`cp``at`  you can click  { ^*b 1st ^*n }  to PLAY the hand.|
+%%
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+<<--INSERT-START-->>=07e__FP_Patterns.ins
+%%
+fh|b48| %%  'banner' font
+fh|t40| %%  'target' font
+fh|s28| %%  'small'  font
+fh|p45| %%  'pink dot' size
+
+cr|a230|cg|a040|cb|a130|          a  action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       pink dot button
+
+bv|e,h| %%   Enter the deal button hidden
+bv|f,v| %%   1st visible 
+bv|d,v| %%   DDS visible
+
+ha|y|   %%   hide auctions
+
+ss|head,     ah`Part 13.    Clash Squeeze`|
+
+ss|banner,   ht`e`fp`b-big`at`^*b^k ^*n Clash Squeeze^*n`fp``|
+ss|link,     ht`z`at`^kvisit  Richard Pavlicek's  Clash Squeeze  page    ^*h http://www.rpbridge.net/9k65.htm, rpbridge.net  9k65^*n`|
+ss|means,    ht`e`fp`small`at`^x ^*h http://www.rpbridge.net/9gc8.htm, meaning^*n`fp``|
+ss|new,      nt`^b@2^^`vv`means`vv`link`vv`banner`ht`e`vv`head`|
+ss|contract, mb`3nppp`|
+ss|p1,       vv`contract`wt`s`sk`s`fp`t`ht`e`at`^q    ^*b`|
+ss|p2,       fp`t`ht`e`at`^*n^u`|
+ss|p3,       fp``ht`q`at`^d`|
+%%
+<<--INSERT-END**-->>=07e__FP_Patterns.ins
+
+
+qx|-|
+st||
+nt|^b@2^^|
+rh||ah|--- -|vv|head|
+vv|banner|
+ht|j|
+lg|c|
+at|A clash squeeze is a triple squeeze against one opponent, although one of his stoppers is not the ordinary kind but the only outstanding card between your winner and its communication card; hence if discarded, your communication card becomes a separate winner. In practice this almost always occurs as a double clash squeeze, where the clash threat overcomes a defective double squeeze or pure squeeze. 
+|n#|3|at|^hFor a detailed study see Richard Pavlicek's  ^*h http://www.rpbridge.net/6d93.htm, Non-Pure Squeezes^*n  web page for more info.|
+pg| ***** 0 ***** |
+
+
+nt|^b@2^^|vv|banner|
+ht|n|at|In the far right-hand column two lines below |fp|t|cp|gr|at|^*b Power Kib ^*n|cp||fp||at| is the   { @m }|cp|red|at| ^*bShow all hands^*n|cp||at| ^*b checkbox^*n.  
+^^^i Set this to ^*b CHECKED^*n,  the first few times you look at these patterns. |
+rh||ah|--- -|vv|head|
+ht|a|n#|0|at|^q  Your target is |cp|red|at|^*b 9 ^*n |cp||at|tricks|
+pg| ***** 1 ***** |
+
+
+qx|1|
+rh||ah|Pattern 1|
+vv|new|at|^*b 1. ^*n (basic)|
+%
+md|1  Q 4 K A, K KQ A, A9 AJ, JT32|
+%
+bs|5,4|
+vv|p1|at|win 4|
+vv|p2|at||
+vv|p3|at|Rare since @sA won early leaves a simple squeeze.|
+pg| ***** 2 ***** |
+
+
+qx|2|
+rh||ah|Pattern 2|
+vv|new|at|^*b 2.  Double^*n|
+%
+md|1  Q A 94 A, K KQ KQ, A9 J4 A, JT2 - JT|
+%
+bh|Play, W, DL, res, p2, T1, always|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 3 ***** |
+
+
+qx|3|
+rh||ah|Pattern 3|
+vv|new|at|^*b 3.  Inverted double^*n|
+%
+md|1  A9 4 A A, K KQ KQ, Q AJ 94, JT2 - JT|
+%
+bh|Play, W, DL, res, p2, T1, always|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 4 ***** |
+
+
+qx|4|
+rh||ah|Pattern 4|
+vv|new|at|^*b 4.  Twin-entry double^*n|
+%
+md|1  Q A4 Q A, K QJT K, A9 K95, JT32 - A|
+%
+bh|Play, W, DL, res, p2, T1, always|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 5 ***** |
+
+
+qx|5|
+rh||ah|Pattern 5|
+vv|new|at|^*b 5.  Inverted twin-entry double^*n|
+%
+md|1  A9 A4 - A, K QJT K, Q K95 Q, JT32 - A|
+%
+bh|Play, W, DL, res, p2, T1, always|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 6 ***** |
+
+
+qx|6|
+rh||ah|Pattern 6|
+vv|new|at|^*b 6.  Extended double^*n|
+%
+md|1  KJ 4 Q A, Q6 KQ K, A74 AJ, T982 - A|
+%
+bh|Play, W, DL, res, p2, T1, always|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 7 ***** |
+
+
+qx|7|
+rh||ah|Pattern 7|
+vv|new|at|^*b 7.  Inverted extended double^*n|
+%
+md|1  A64 A - A, QJ KQ K, KT J4 Q, 9872 - A|
+%
+bh|Play, W, DL, res, p2, T1, always|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 8 ***** |
+
+
+qx|8|
+rh||ah|Pattern 8|
+vv|new|at|^*b 8.  Simultaneous double^*n|
+%
+md|1  KJ - 94 A, Q6 A KQ, A74 K A, T98 - JT|
+%
+bh|Play, W, DL, res, p2, T1, always|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 9 ***** |
+
+
+qx|9|
+rh||ah|Pattern 9|
+vv|new|at|^*b 9.  Inverted simultaneous double^*n|
+%
+md|1  A64 - A A, QJ A KQ, KT K 94, 987 - JT|
+%
+bh|Play, W, DL, res, p2, T1, always|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 10 ***** |
+
+
+qx|10|
+rh||ah|Pattern 10|
+vv|new|at|^*b 10.  Double clash squeeze ^*n (RHO) |
+%
+md|1  Q AK65 - A, JT32 - K2, A9 Q4 Q 2, K JT98 A|
+%
+bh|Play, E, D,  res, p4, T1, always|
+bh|Play, W, DL, res, p4, T3, always|
+%
+bs|3,4|
+vv|p1|at|win 6|
+vv|p2|at|re|
+vv|p3|at||
+pg| ***** 11 ***** |
+
+
+qx|11|
+rh||ah|Pattern 11|
+vv|new|at|^*b 11.  Double clash crisscross^*n|
+%
+md|1  Q A95 A A, JT2 - KQ2, A9 K4 94, K QJT JT|
+%
+bh|Play, E, dL,  res, p4, T1, always|
+%
+bs|3,4|
+vv|p1|at|win 6|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 12 ***** |
+
+
+qx|12|
+rh||ah|Pattern 12|
+vv|new|at|^*b 12.  Compound^*n|
+%
+md|1  A9 4 A AK, K JT JT2, Q A9 94 2, JT KQ KQ|
+%
+bh|Play, E, dL,  res, p4, T1, always|
+bh|Play, W, hL, res,  p2, T2, always|
+%
+bs|3,4|
+vv|p1|at|win 6|
+vv|p2|at|bi|
+vv|p3|at||
+pg| ***** 13 ***** |
+
+
+qx|13|
+rh||ah|Pattern 13|
+vv|new|at|^*b 13.  Compound twin-entry^*n|
+%
+md|1  A9 A4 - AK, K QJT K2, Q K65 Q 2, JT 987 A|
+%
+bh|Play, W, dL,  res, p2, T1, always|
+bh|Play, E, hL,  res, p4, T1, always|
+bh|Play, W, d,   res, p2, T2, always|
+%
+bs|3,4|
+vv|p1|at|win 6|
+vv|p2|at|bi|
+vv|p3|at||
+pg| ***** 14 ***** |
+
+
+qx|14|
+rh||ah|Pattern 14|
+vv|new|at|^*b 14.  Compound extended   1^*n|
+%
+md|1  A64 A - AK, QJ JT K2, KT 94 Q 2, 987 KQ A|
+%
+bh|Play, W, dL,  res, p2, T1, always|
+bh|Play, E, d,   res, p4, T1, always|
+bh|Play, W, hL,  res, p2, T2, always|
+%
+bs|3,4|
+vv|p1|at|win 6|
+vv|p2|at|bi|
+vv|p3|at||
+pg| ***** 15 ***** |
+
+
+qx|15|
+rh||ah|Pattern 15|
+vv|new|at|^*b 15.  Compound extended   2^*n|
+%
+md|1  A64 - A9 A5, QJ JT2 JT, KT A9 4 K4, 987 KQ KQ|
+%
+bh|Play, E, dL,   res, p4, T1, always|
+bh|Play, W, hL,   res, p4, T2, always|
+%
+bs|2,4|
+vv|p1|at|win 7|
+vv|p2|at|re|
+vv|p3|at|Clubs may be cashed in either order.|
+pg| ***** 16 ***** |
+
+
+ss|banner,   ht`e`fp`b-big`at`^*b^j^*n Anti Clash Squeeze^*n`fp``|
+
+qx|-|
+st||
+nt|^b@2^^|vv|banner|
+lg|k|
+ht|n|at|The following group of patterns are, to quote the creator Richard Pavlicek,
+^d" ...  'anti' techniques, i.e., plays to counteract a technique in that category."
+You are defending (as N or S) and are trying to stop declarer from making their contract.|
+rh||ah|--- -|vv|head|
+ht|a|n#|0|at|^q  Your target is |cp|red|at|^*b 5 ^*n |cp||at|tricks|
+pg| ***** 17 ***** |
+
+
+qx|16|
+rh||ah|Pattern 16|
+vv|new|at|^*b 16.  Clash stopper release^*n|
+%
+md|4  JT2 A, A9 - 4 A, K K KQ, Q Q AJ|
+%
+bs|5,4|
+vv|p1|at|win 1|
+vv|p2|at|auto bi|
+vv|p3|at|With @sA only West entry, good @sQ is useless.|
+wt|w|
+sk|n|
+pc|cA|
+pg| ***** 18 ***** |
+
+

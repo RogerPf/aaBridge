@@ -1,0 +1,408 @@
+%%ruleof7.lin
+%% Last edited  07-29-2013 
+%%%% By Kia, BBO nickname "nome"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|155|ff|1Arial|fb|17|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|35|fm|3|                           FOR 3
+fb|49|fm|4|fb|4|fm|4|
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|3255|cg|3255|cb|3255|            White
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|6124|cb|6250|cg|6200|             6=TURQUOISE
+cr|70|cb|7220|cg|7235|              green/blue 7
+cr|8255|cb|80|cg|80|                red 8
+cr|9128|cb|90|cg|950|               Reddish-brown 9
+
+%%%%===================
+qx|R7, RULE OF 7|bt||
+ht|b|CS|1|CP|4|HT|b|FP|3|at|^-{      Rule of 7      }
+^-|CP||fp||at|Before we deal with rule of 7 let us define "Hold up, Ducking from wikipedia,|CP|1|AT|^*Hen.wikipedia.org/wiki/Hold_up_(bridge)^*N|CP||AT| , which practically is the logic behind Rule of 7.|
+PG| ***** 0 ***** |
+
+
+cp|4|CS|1|FP|3|AT|
+
+^-{In the card game of contract bridge,
+to hold up means to play low to a trick led by the opponents,
+  losing it intentionally in order to sever their communication.  }|
+PG| ***** 1 ***** |
+
+
+AT|
+
+{The primary purpose is to give as many tricks to opponents as needed
+to exhaust all the cards in the suit from one of their hands.
+  If that hand regains the lead, it will not be able to put the partner on lead  
+to cash its tricks. Hold up is one of basic techniques in play.}|
+PG| ***** 2 ***** |
+
+
+AT|
+
+{While mechanically identical, a hold up is in a suit played by the opponents
+while a duck (or ducking) is a manoeuver in one's own suit.
+Nevertheless the terms are used interchangeably
+with duck or ducking more common.}
+^-|CP||CS||FP||
+pg| ***** 3 ***** |
+
+
+AT|
+Rule of 7 is useful to sever communications between opponents when playing a Notrump contract with losers in opponents' suit and insufficient quick tricks to guarantee the contract. To determine the number of times holding back before winning the trick, declare subtracts his side's combined cards from number 7. For example if the combined cards in the suit led is 5 then declarer holds back twice - 7 - 5 = 2. If the combined cards is 4 the he must hold back three times - 7 - 4 = 3. |
+PG| ***** 4 ***** |
+
+
+AT|
+
+Of course, the Rule of 7 should not be used when the declarer has the required number of tricks to make the contract. He should instantly win the opening lead and proceed to secure the contract unless he is in MP scoring and is reasonably assured of extra trick or tricks. Let us look at a few examples.|
+PG| ***** 5 ***** |
+
+
+NT||
+%%%%
+%%example A
+st||pn|Declarer (You),,Partner,|sk|s|md|1SA98,S5,S42,|sv|o|rh||ah|Rule of 7 - A|mb|3nppp|NT|B@2
+You are playing 3N and West opens @S5. For purpose of our learning the other cards are grayed out.|
+PG| ***** 6 ***** |
+
+
+pc|s5|
+PG| ***** 7 ***** |
+
+
+lb|*mIf elects to, how many times Declarer should hold back?^7~6~5~4~3~2~1~0^6|NT|^B@2
+Declare, if elects to, should hold back twice before wining the lead. 7 - 5 = 2|
+PG| ***** 9 ***** |
+
+
+AT|
+
+^B@2^*BMM: ^*NNext we will look at a full board.|
+PG| ***** 10 ***** |
+
+
+NT||
+%%example B
+st||pn|Declarer (You),,Partner,|sk|s|md|1hAK8 sAK9 D86 CQ9652,hQ96 s754 DKQJT9 C83, hJT7 sT832 dA53 CKJT,h5432 sQJ6 D742 CA74|sv|o|rh||ah|Rule of 7 - B|mb|1np2cp2dp3nppp|NT|^B@2
+South is playing a contract of three notrump, and West leads the @dK.|
+PG| ***** 11 ***** |
+
+
+PC|DK|
+PG| ***** 12 ***** |
+
+
+NT|^B@2
+South hads 5 sure tricks. He needs 4 more. The club suit is the only source for the rest of tricks needed to make the contract. He has to hope East has the @CA and only 3 diamonds.|
+PG| ***** 13 ***** |
+
+
+lb|*mUsing Rule of 7, how many times should South hold back?^2~1~0^1|NT|^B@2
+He has 5 combined diamonds. 7 - 5 = 2. Therefore, he has to let West win 2 tricks. Let us see.|pc|d3|pc|d2|pc|d6|
+PG| ***** 15 ***** |
+
+
+pc|dq|pc|d5|pc|d4|pc|d8|
+PG| ***** 16 ***** |
+
+
+PC|dj|PC|da|PC|d7|PC|s9|
+PG| ***** 17 ***** |
+
+
+PC|h7|PC|h2|PC|ha|PC|h6|
+PG| ***** 18 ***** |
+
+
+PC|c2|PC|c3|PC|ck|PC|ca|
+pg| ***** 19 ***** |
+
+
+sk||NT|^B@2
+East does not have a diamond to play so his partner can win 2 more diamonds and set the contract. Of course Declarer can do nothing if West has the @CA. But with 12 HCP, if we add @CA to his hand, West would have opened.|
+PG| ***** 20 ***** |
+
+
+NT|^B@2
+Now let us find out what happens if Declarer ignores Rule of 7 and wins the second diamond trick.|UP|16|
+pg| ***** 21 ***** |
+
+
+pc|dq|pc|da|pc|d4|pc|d8|
+PG| ***** 22 ***** |
+
+
+PC|h7|PC|h2|PC|ha|PC|h6|
+PG| ***** 23 ***** |
+
+
+PC|c2|PC|c3|PC|ck|PC|ca|
+pg| ***** 24 ***** |
+
+
+NT|^B@2
+Now East has one more diamond which can lead back and defenders will take 3 more trick setting the contract by 1.|hc|d7|
+PG| ***** 25 ***** |
+
+
+lc|d7|NT|^B@2
+Defenders also can benefit from Rule of 7 which is outside the scope of this synopsis.|
+PG| ***** 26 ***** |
+
+
+NT||
+ht|b|cs|1|cp|4|fp|3|AT|
+^-
+{  Rule of 7 was designed to tell declarer in notrump how many times to hold up.  }
+^-|
+pg| ***** 27 ***** |
+
+
+NT||cs||cp||fp||at|
+^B@2^*BMM: ^*NThat is the extent of Rule of 7. However, like anything else in bridge there are many fine prints. Mr. Larry Cohen has a compelling argument comparing of "Rule of 7" and "Rule of Thinking" |CP|1|at|^*Hwww.larryco.com/BridgeArticles/ArticleDetails.aspx?articleID=436^*N|CP||AT| which we will look at next.|
+PG| ***** 28 ***** |
+
+
+NT||bt||
+%%http://www.larryco.com/BridgeArticles/ArticleDetails.aspx?articleID=436
+%%Larry Cohen
+ht|b|cp|4|cs|1|fp|3|at|^-{If you must know, the "Rule of 7"
+
+    was designed to tell declarer in notrump how many times to hold up.    
+
+Rules? Schmules.
+
+There are too many "Rules of ##x" out there.
+
+I prefer the Rule of Thinking.}
+^-|
+pg| ***** 29 ***** |
+
+
+CP||CS||FP||AT|
+
+To prove the superiority of the "Rule of Thinking" Mr. Cohen compares the result in 4 deals using both Rules. In each deal declarer is playing 3N and has heart holding of @HA875  opposite @H4. First he plays the hand using Rule of 7 and next using Rule of Thinking. Of course the results proves his point. However, I wonder whether the result would be the same using random heart holding. Regardless, let us go through his experiment.|
+PG| ***** 30 ***** |
+
+
+NT||
+%%example LC 1
+st||pn|Declarer,,,|sk|s|md|1SA Q J 7 HA 8 7 5 D6 5 2 C8 3,S9 8 2 HQ T 6 2 D7 4 C9 5 4 2,SK T 3 H4 DK Q J T 9 8 CA 7 6,S6 5 4 HK J 9 3 DA 3 CK Q J T|sv|o|rh||ah|Larry Cohen - 1|ah|Rule of 7 - Rule of Thinking|mb|3nppp|NT|^B@2
+Against 3NT, West leads the @H2 (fourth best).|
+PG| ***** 31 ***** |
+
+
+pc|h2|
+PG| ***** 32 ***** |
+
+
+NT|^B@2
+The Rule of 7 says to hold up twice (7-5).|
+PG| ***** 33 ***** |
+
+
+NT|^B@2
+So let us do that and let East win the trick.|pc|h4|PC|h9|PC|h5|
+PG| ***** 34 ***** |
+
+
+sk||NT|^B@2
+East now can switch to clubs. Regardless whether declarer holds back or wins the first club with his @CA, eventually he has to play a diamond and lose the lead to East who can win enough clubs to set the contract.|
+PG| ***** 35 ***** |
+
+
+NT|^B@2
+Now let us back up and try the "Rule of Thinking" for comparison.|sk|s|
+PG| ***** 36 ***** |
+
+
+up|3|NT|^B@2
+The Rule of Thinking says to win the first heart and don't hold up. Why?|
+PG| ***** 37 ***** |
+
+
+NT|^B@2
+Because from the lead of the deuce (4th best), declarer knows the hearts are splitting 4-4.|
+PG| ***** 38 ***** |
+
+
+AT|
+
+^B@2^*BMM: ^*NLet us state the obvious. Because, @H2 is the fourth best and the lowest card, West cannot have more than 4 hearts and declarer can see 5 hearts. So East has only 4.|
+PG| ***** 39 ***** |
+
+
+sk||NT|^B@2
+Not only does that make a hold-up play irrelevant, but it gives the defense a chance to switch to a devastating club and defeat the contract. Winning the first heart produces 9 tricks.|
+PG| ***** 40 ***** |
+
+
+NT|^B@2
+The scores are "Rule of 7" zero and "Rule of Thinking" 1. On to the next experiment.|
+PG| ***** 41 ***** |
+
+
+NT||
+%%%
+%%example LC 2
+st||pn|Declarer,,,|sk|s|md|4SA T 9 7 HA 8 7 5 DK 4 CQ J 8,SK 6 4 3 HK 6 DA 7 6 2 C7 5 3,SQ J 8 H4 D9 5 3 CA K T 9 6 2,S5 2 HQ J T 9 3 2 DQ J T 8 C4|sv|o|rh||ah|Larry Cohen - 2|ah|Rule of 7 - Rule of Thinking|mb|2h2np3nppp|NT|^B@2
+East opens 2@H and South reaches 3NT on the @HK lead. The Rule of 7 says to hold up twice (7-5). |pc|hk|
+PG| ***** 42 ***** |
+
+
+NT|^B@2
+In that case you would duck the @HK and duck the next heart.|PC|h4|PC|h9|PC|h5|
+pg| ***** 43 ***** |
+
+
+PC|h6|PC|d3|PC|ht|pc|h7|
+pg| ***** 44 ***** |
+
+
+NT|^B@2
+East would then shift to the @DQ for down two.|pc|dq|sk||
+PG| ***** 45 ***** |
+
+
+AT| Again let us back up and give Rule of thinking a try.|
+PG| ***** 46 ***** |
+
+
+up|5|sk|s|NT|^B@2
+The Rule of Thinking says that hearts are 6-2 (East opened 2@H). Win the second heart (you know they are 6-2) and cross to dummy in clubs for the spade finesse.|PC|ha|pc|hk|PC|d3|
+PG| ***** 47 ***** |
+
+
+NT|^B@2
+If the @SK is wrong and East has the @DA, it's not your day.|sk||
+pg| ***** 48 ***** |
+
+
+NT|^B@2
+On this deal the Winning Play was to Hold up 1 time. Let's try another.|
+PG| ***** 49 ***** |
+
+
+NT||
+%%example LC 3
+st||pn|Declarer,,,|sk|s|md|1SA K 3 HA 8 7 5 DA 6 5 CK 6 4,SQ T 2 HK J 9 6 2DJ 7 2C7 5,S9 8 5H4DK 9 8CQ J T 9 8 3,SJ 7 6 5 HQ T 3 DQ T 4 3 CA 2|sv|o|rh||ah|Larry Cohen - 3|ah|Rule of 7 vs Rule of Thinking|mb|3nppp|NT|^B@2
+Against 3NT, West leads the @H6, fourth best. East plays the @HQ.|pc|h6|pc|h4|PC|hq|
+PG| ***** 50 ***** |
+
+
+NT|^B@2
+The Rule of 7 says to hold up 2 times (7-5). This time the Rule of Thinking yields the same result.|pc|h5|
+pg| ***** 51 ***** |
+
+
+PC|ht|pc|h7|pc|h9|PC|s4|
+PG| ***** 52 ***** |
+
+
+PC|h3|PC|ha|PC|hj|PC|s8|
+PG| ***** 53 ***** |
+
+
+NT|^B@2
+You will have to knock out the @CA. There is no other suit you fear a shift to.|pc|ck|
+pg| ***** 54 ***** |
+
+
+NT|^B@2
+If hearts are 4-4, nothing will matter. If hearts are 6-2, holding up once would suffice, but you have no way to know if they are 6-2.|sk||
+pg| ***** 55 ***** |
+
+
+NT|^B@2
+Holding up twice (winning the third round) caters to this very common 5-3 split. East's @HQ wins the first trick. You let the @H10 hold the second trick. On the third heart, there is no benefit to holding up again (if they are 4-4, it won't matter). So, you win the third round of hearts and play clubs.|
+pg| ***** 56 ***** |
+
+
+NT|^B@2
+If one defender has 5 hearts and the CA, there is nothing you can do about it. Here, the holdup play (twice) leads to 10 tricks.|
+PG| ***** 57 ***** |
+
+
+NT|^B@2
+On this deal the Winning Play was to Hold up 2 times. And one final deal.|
+PG| ***** 58 ***** |
+
+
+NT||
+%%example LC 4
+st||pn|Declarer,,,|sk|s|md|1SA Q J HA 8 7 4 D8 3 CK Q J 8,ST 9 6 4 HK Q J T Dk 5 C6 3 2,SK 8 7 H5 DA Q 7 6 2 CA T 9 7,S5 3 2 H9 6 3 2 Dj T 9 4 C5 4|sv|o|rh||ah|Larry Cohen - 4|ah|Rule of 7 vs Rule of Thinking|mb|3nppp|NT|^B@2
+Playing matchpoints, you are in 3NT with the @HK lead.|pc|hk|
+PG| ***** 59 ***** |
+
+
+NT|^B@2
+The Rule of 7 says to hold up twice (7-5).|
+PG| ***** 60 ***** |
+
+
+AT| The Rule of Thinking says to hold up 3 times!|
+PG| ***** 61 ***** |
+
+
+NT|^B@2
+You have 9 top tricks. The only issue is how to try for an overtrick. The obvious source for an overtrick is the diamond finesse--but is it safe to take it?|
+PG| ***** 62 ***** |
+
+
+NT|^B@2
+If you win an early heart and run your winners and then take the diamond finesse, the defense might set you by cashing too many hearts. You don't know they are 4-4. They could be 5-3.|
+PG| ***** 63 ***** |
+
+
+NT|^B@2
+If you win an early heart, you won't know the heart split. Even winning the third heart is not safe. What if West started with @HKQJ and East with @H109xxx? Then when you take the diamond finesse, you risk defeat - if East has the @DK.|
+PG| ***** 64 ***** |
+
+
+NT|^B@2
+Why not hold up hearts (no shift will hurt) until the 4th round?
+|PC|h5|PC|h2|pc|h4|
+pg| ***** 65 ***** |
+
+
+pc|hq|PC|d2|PC|h3|pc|h7|
+pg| ***** 66 ***** |
+
+
+pc|hj|PC|d6|PC|h6|pc|h8|
+pg| ***** 67 ***** |
+
+
+pc|ht|PC|d7|PC|h9|pc|ha|
+pg| ***** 68 ***** |
+
+
+SK||NT|^B@2
+Once you see they are 4-4, you can take the diamond finesse in complete safety.|
+pg| ***** 69 ***** |
+
+
+NT|^B@2
+On this deal the Winning Play was to Hold up 3 times!|
+PG| ***** 70 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BLarry Cohen: ^*N|cp||at|There you have it. I always prefer thinking and logic to "rules." The Rule of 7 told you the wrong information nearly every time.|
+PG| ***** 71 ***** |
+
+
+NT|^B@2
+With it, you would have woodenly held up twice on each deal. In Real Life, the correct play was to hold up 0,1,2, and 3 times. This should put the Rule of 7 into "Rule Heaven."   Maybe the "Rule Graveyard" is a better phrase.|
+PG| ***** 72 ***** |
+
+
+NT||AT|
+^B@2^*BMM: ^*NThis concludes this synopsis.|
+PG| ***** 73 ***** |
+
+
+NT||

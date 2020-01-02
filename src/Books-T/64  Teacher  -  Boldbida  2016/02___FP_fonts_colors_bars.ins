@@ -1,0 +1,32 @@
+%%
+%%
+%%     Boldbidda 2016 - First page  fonts colors bars 
+%%
+%%
+<--THIS-LINE-AND-ALL-BEFORE-EXCLUDED-->
+%%
+fh|s25|                    Font   s  s-small
+fh|t40|                    Font   t  t-title             section titles (if any)
+fh|f42|                    Font   f  f-flow
+fh|b50|                    Font   b  b-bigTitle   bigger section titles
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+%%
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor      on Title Pages
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor   on Title Pages
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor      fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<--THIS-LINE-AND-ALL-AFTER-EXCLUDED-->

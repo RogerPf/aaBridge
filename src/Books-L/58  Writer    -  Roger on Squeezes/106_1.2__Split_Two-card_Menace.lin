@@ -1,0 +1,552 @@
+%%
+%%
+
+ss|chapter,1.2  Split  Two-card  Menace  Positional|
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2017-03-16          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead__main.ins
+%%
+ss|masthead,Roger  on  Squeezes                                              |
+%%
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       on Title Pages   Precision Blue
+cr|c208|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages   MAIN <<<<<<<<<<<<<
+%%
+<<--INSERT-END**-->>=01___FP_masthead__main.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pd|hint,^b   There is a `cp`green`at`^*b Hint ^*n`cp``AT` on the next page but if you want to  PLAY  the hand NOW, the  { ^*b 1st ^*n }  button is available.|
+%%
+pd|choose,`cp`red`at`^b    ^*bPlease   CHOOSE^*n`cp``at`   you can use  {^*b Flow >^*n }  to see the answer  `cp`red`at`^*bOR^*n`cp``at`  you can click  { ^*b 1st ^*n }  to PLAY the hand.|
+%%
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|i|
+fp|1|at|^c@2^y@3^^|
+lg|b|
+at|A simple squeeze is one that squeezes a single opponent in only two suits.  The simplest of the 'simple' squeezes are the 'Positional' squeezes.  The 'Positional' squeezes are so called because they only work against an opponent sitting in a particular position.   In the early examples this will mainly be West.
+
+The secret of squeezes is to  ^*bLearn the Patterns^*n.
+
+With the  'patterns'  in your mind you can try to find them in the examples.  With practice, just repeatedly going through examples is enough, you will start to  'see'  squeezes.|
+
+fp|t|lg|g|at|@1^^
+^b  If the long menace has only two cards it can be split between Declarer and Dummy.
+|n#|7|
+at|            As a reminder it is then called a  ^*b Two-card ^*n  menace.|
+
+qx|1.2|
+pg| ***** 0 ***** |
+
+
+bt||
+qx|Patn, wide|
+nt|^z@3^b@2|
+ht|a|n#|7|cs|c-chapterColor|at|^b{^^|
+ht|c|at|^u }|cs||
+ht|b|n#|9|fp|m-mastColor|at|  Split Two-card Menace|fp|t|at|   Positional Simple Squeeze|fp||
+ht|e|n^|7|at|^v South is on Lead|
+
+
+ht|f|at|^r|
+at|@0@1@2^*b|lg||
+n>|z|n>|4|at|A|n>|1|at|J^^|
+n>|z|n>|4|cp|hearts|at|K^^|cp||
+n#|2|n>|z|n<|1|at| { |n>|j|at| |n#|6|at|^^|n^|7|n>|z|at| }|cp||at|^^|
+n^|m|n>|e|cp|spades|at|K|n>|1|at|Q^^|cp||
+n>|e|cp|hearts|at|A^^|cp||
+n#|2|n>|z|n>|6|cp|spades|at|2^^|cp||
+n#|3|n>|z|n>|5|cp|diam|at|A^*n|cp||
+
+ht|g|at|^z@3^b@2|
+at|Starting from the core pattern of the  ^*bPositional  Simple Squeeze^*n.|
+pg| ***** 1 ***** |
+
+
+ht|m|at|^r|
+at|@0@1@2^*b|lg||
+n>|z|n>|4|at|A|n>|1|at|x^^|
+n>|z|n>|4|cp|hearts|at|K^^|cp||
+n#|2|n>|z|n<|1|at| { |n>|j|at| |n#|6|at|^^|n^|7|n>|z|at| }|cp||at|^^|
+n^|m|n>|e|cp|spades|at|K|n>|1|at|J^^|cp||
+n>|e|cp|hearts|at|A^^|cp||
+n#|2|n>|z|n>|5|cp|spades|at|Q|n>|1|at|x^^|cp||
+n#|3|n>|z|n>|5|cp|diam|at|A^*n|cp||
+
+ht|m|n^|5|
+lg|g|
+at|@0@1^p@3^b@2|
+at|Split and strengthen the  ^*bTwo-card^*n  menace (@sAJ), moving the lower high card to South, (here strengthening it to a Queen).
+Add an additional  '^*bx^*n'  to restore the two-cardness of the menace.
+(and of course reducing the strength of King Queen to King Jack)
+|n^|9|at|   
+@1So getting the ^*b Split Two-card Menace ^*n Positional  Simple Squeeze.|
+pg| ***** 2 ***** |
+
+
+ht|u|at|^r|
+at|@0@1@2^*b|lg||
+n>|z|n>|4|at|A|n>|1|at|x^^|
+n>|z|n>|4|cp|hearts|at|K^^|cp||
+n#|2|n>|z|n<|1|at| { |n>|j|at| |n#|6|at|^^|n^|7|n>|z|at| }|cp||at|^^|
+n^|m|n>|e|cp|spades|at|K|n>|1|at|x|n>|z|n>|5|at|J|n>|1|at|x^^|cp||
+n>|e|cp|hearts|at|A^^|cp||
+n#|2|n>|z|n>|5|cp|spades|at|Q|n>|1|at|x^^|cp||
+n#|3|n>|z|n>|5|cp|diam|at|A^*n|cp||
+
+
+ht|v|n^|f|
+lg|g|
+at|@0@1^p@3^b@2|
+at|A common variant is to find the Jack in East,
+so in a sense the ^*bQx^*n menaces the ^*bJx^*n.
+|n^|9|at|
+The Split Two-card menace is often associated with frozen suits.   As neither side wants to lead them, they will often be present towards the end of the hand.|
+pg| ***** 3 ***** |
+
+
+qx|Core, wide|
+st||
+ha|y|
+md|1 sQ2 dA, sKJ hA, sA3 hK|
+mb|7nppp|
+bs|10,0|
+wt|s|
+nt|^b@2|at|^^|
+lg|h|
+at|^*bSplit Two-card Menace ^*n  positional simple squeeze      Core Pattern^^|
+pg| ***** 4 ***** |
+
+
+md|0 ,,,s54 c2|
+ht|f|at|@4^^|
+ht|L|at|Add in the  'out of it'  cards|
+pg| ***** 5 ***** |
+
+
+bv|f,v|
+bv|e,v|
+pc|dA|
+ht|f|at|@4^^|
+ht|L|
+lg|m|
+cp|red|at|^*bCHOOSE^*n|cp||at| ^e click    ^*b Flow^*n     ^i and  flow through a common line of play^^|
+at|^c  |cp|red|at|^*bOR|cp||at| ^*n|cp||at|  ^e click   { ^*b 1st ^*n }  ^i and  play against the bots line of play   |cp|dg|at|     (Hint - there is a  ^*bShow / Hide ^*n button)^^|cp||
+at|^c  |cp|red|at|^*bOR|cp||at| ^*n|cp||at|  ^e click   { ^*b Enter the Deal ^*n }   then click   {  ^*b Edit ^*n  }    and  play the cards for all 4 hands.|
+pg| ***** 6 ***** |
+
+
+ht|g|at|@4^b@2|
+ht|L|at|This is the most common line of play.  Opps hardly ever discard their lone Master.|
+mx|x|
+pg| ***** 7 ***** |
+
+
+%%_aapg-NEAR
+pc|sJ|pc|hK|pc|c2|pg||
+pc|s2|pc|sK|pc|sA|pc|s4|pg||
+pc|s3|pc|s5|pc|sQ|pc|hA|
+%%_aapg-STD
+pg| ***** 10 ***** |
+
+
+md|1,,,|
+bv|a,h|
+nt|^z@3^b@2^^cleared|
+pg| ***** 11 ***** |
+
+
+qx|Inv, wide|
+md|1 A3 hK, ,sQ2 dA, sKjhA|
+mb|7nppp|
+bs|10,0|
+wt|n|
+nt|^z@3^b@2|at|^^|
+at|^*bSplit Two-card Menace^*n  positional simple squeeze      Core Pattern         ^*bInverted^*n|fp||at||
+pg| ***** 12 ***** |
+
+
+md|0 ,s54 c2,,|
+ht|f|at|@4^^|
+ht|L|at|Add in the  'out of it'  cards|
+pg| ***** 13 ***** |
+
+
+bv|f,v|
+bv|e,v|
+pc|dA|
+ht|f|at|@4^^|
+ht|L|
+lg|m|
+cp|red|at|^*bCHOOSE^*n|cp||at| ^e click    ^*b Flow^*n     ^i and  flow through a common line of play^^|
+at|^c  |cp|red|at|^*bOR|cp||at| ^*n|cp||at|  ^e click   { ^*b 1st ^*n }  ^i and  play against the bots line of play   |cp|dg|at|     (Hint - there is a  ^*bShow / Hide ^*n button)^^|cp||
+at|^c  |cp|red|at|^*bOR|cp||at| ^*n|cp||at|  ^e click   { ^*b Enter the Deal ^*n }   then click   {  ^*b Edit ^*n  }    and  play the cards for all 4 hands.|
+pg| ***** 14 ***** |
+
+
+ht|g|at|@4^b@2|
+ht|L|at|This is the most common line of play.  Opps hardly ever discard their lone Master.|
+mx|x|
+pg| ***** 15 ***** |
+
+
+%%_aapg-NEAR
+pc|sJ|pc|hK|pc|c2|pg||
+pc|s2|pc|sK|pc|sA|pc|s4|pg||
+pc|s3|pc|s5|pc|sQ|pc|hA|
+%%_aapg-STD
+pg| ***** 18 ***** |
+
+
+qx|Recg, wide|
+bt||
+nt|^z@3^b@2|
+ht|z|n#|e|
+at|To jump to the ^*b Recognition Rules ^*n of neighbouring squeezes,  Click . . .|
+fp|t|
+at|^s^*g RePN:Extended, < Prev^*n|
+at|^v^*g RePN:Automatic, Next >^*n|cp||fp||
+
+ht|b|n#|9|fp|b-bigTitle|at|Split Two-card Menace  |
+fp|5|at|Positional Simple Squeeze|cs||fp||at|  ^p |cp|red|at|^*bLearn  This^*n|cp||
+n^|d|cp|dg|at|^t Works against West|cp||
+ht|c|n#|0|
+at|^r|n>|f|
+at|@1@2|fp|t-title|lg||at|^*b|
+at|^^|n#|0|n>|z|n>|z|n>|0|cp|spades|at|A|n>|1|at|x|n>|2|at||cp||
+at|^^|n#|0|n>|z|n>|z|n>|0|cp|hearts|at|K|cp||
+at|^^|n#|2|n>|z|n>|w|n>|0|cp|      |at|{^^|n>|z|n>|z|n>|w|n#|2|at| }|cp||
+at|^^|n^|v|n>|w|n>|0|n>|0|cp|spades|at|K|n>|2|at|J|n>|1|at||
+at|^^|n#|0|n>|w|n>|0|n>|0|cp|hearts|at|A|cp||
+at|^^|n#|3|n>|z|n>|z|n>|1|cp|      |at|Q|n>|2|at|x|
+at|^^|n#|3|n>|z|n>|z|n>|2|cp|diamon|at|A|cp||fp||
+pg| ***** 19 ***** |
+
+
+ht|c|n#|7|at|^b@2^s@3|
+Lg|g|
+at|The high part of the ^*bSplit Two-card ^*n menace is the  |fp|t|cp|spades|at|^*bAx^*n|cp||fp||
+pg| ***** 20 ***** |
+
+
+cp|dg|at|   ( Menacing the  |cp|spades|at|^*bKJ^*n |cp|dg|at|)|cp||at|^^|
+pg| ***** 21 ***** |
+
+
+at|The low  part of the ^*bSplit Two-card ^*n menace is the  |fp|t|cp|spades|at|^*bQx^*n|cp||fp||at|^^|
+pg| ***** 22 ***** |
+
+
+at|The ^*b One-card ^*n menace is the  |fp|t|cp|hearts|at|^*bK|cp||fp||at|^*n|
+pg| ***** 23 ***** |
+
+
+cp|dg|at|^j( The holding it menaces is the  |cp|hearts|at|^*bA^*n |cp|dg|at|)|cp||at|^^|
+pg| ***** 24 ***** |
+
+
+n#|7|
+at|The ^*b Communication ^*n card(s) are the North and South   |fp|t|cp|spades|at|^*bx^*n|cp||fp||at| 's|
+pg| ***** 25 ***** |
+
+
+at|^^The ^*b Squeeze card ^*n card is the     |fp|t|cp|diamonds|at|^*b A^*n|cp||fp||
+pg| ***** 26 ***** |
+
+
+ht|l|
+fp|Title|at|Things to   MAKE / FIND|fp||
+pg| ***** 27 ***** |
+
+
+n#|8|at|@1^c@2
+@.  All of the above are present.     |cp|dg|at|HINT   -   Pick them out  -  find them early.^^|cp||
+pg| ***** 28 ***** |
+
+
+at|@.  The  Split Two-card  menace has a gap that none of East's cards fill.^^|cp||
+pg| ***** 29 ***** |
+
+
+at|@.  The  One-card  menace would be a master but for the card it menaces.^^|
+pg| ***** 30 ***** |
+
+
+at|@.  The  High split  menace and the  One-card  menace are in the same hand.^^|cp||
+pg| ***** 31 ***** |
+
+
+at|@.  The  High split  menace and the  One-card  menace lie  OVER  the menaced cards.^^|cp||
+pg| ***** 32 ***** |
+
+
+at|@.  The  Communication  cards are present in both the North and South hands.^^|cp||
+pg| ***** 33 ***** |
+
+
+at|@.  When the squeeze card is played, there  MUST  be  NO  idle cards in the 3 hands.^^|
+pg| ***** 34 ***** |
+
+
+qx|RePN, hide|
+cp|red|at|^^^^^*bHint^*n|cp||at|   When playing out the hand   ^*ball you need to look out for is ...^*n    |cp|dg|at|(having played the squeeze card)|cp||
+n#|5|at| ^^Has my  ^*bOne-card^*n  menace become the master ?   If not, throw it away and keep the  ^*bTwo-card^*n  menace intact.| 
+pg| ***** 35 ***** |
+
+
+-------------------------------------------------------------------------------
+bt||
+nt|^z@3^b@2^^^^|
+fp|b-bigtitle|at|How to  ^*bPlay^*   the  Practice Hands|fp||at|^^|
+n#|2|at|
+To  ^*bPlay^*n  the Practice hands    -   Click either the  {^*b Cont ^*n}  or the  {^*b Enter the Deal ^*n}  button.  
+
+When available, the two buttons will appear in the green area at the bottom right of this window.
+
+Clicking either takes you  'into the deal'.   You return back to this tutorial by clicking the  {^*b Back to Movie ^*n}  button.
+
+The  ^*g:Doc Collection::Help,Doc Collection^*n  document  ^*b Down the Rabbit Hole ^*n  contains a diagram that will help to explain this.
+
+After clicking  { ^*b 1st ^*n }  you continue the play by clicking on a ^*b CARD ^*n or on the  { ^*b Undo ^*n }  button.
+
+While playing you can  use the  {^*b Show ^*n}  /  {^*b Hide ^*n}  button to  show / hide  the opponents cards.
+
+
+The  {^*b Enter the Deal ^*n}  button is like a 'grown-up' version of the continue button.
+|n^|a|at|
+ ^g after clicking it you get to choose (by use of a button) which of three things you want to do. 
+
+|n^|5|at|
+{^*b Edit ^*n}  let's you explore the deal  'double dummy'.   Click a ^*bCARD^*n to play it.    Use  {^*b Undo ^*n}  to unplay cards.
+
+{^*b Play ^*n}  let's you play the remaining cards (against the computer).    As with  ^*bEdit^*n  any un-reviewed play is discarded.
+
+{^*b Review ^*n}  (the default)  let's you run back and forth in the existing play.     Use  ^*bFlow^*n,    "^*b>^*n"   and the  ^*bNavbar^*n.
+^s(^*bMouse wheel^*n  is best)
+
+|cp|mg|n^|8|at|           @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-|cp||at|
+|cp|red|n#|8|at|^*bAdvice^*n|cp||
+lg|f|
+at|      Come back to this tutorial time and time again.  The first few times when you play through the hands, you may need to view the opponents cards or even skip playing them and just watch the winning line.
+|n#|5|at|Come back another time and play them through again.       Repetition will,  ^*b really will^*n,   get it all to sink in.|
+pg| ***** 36 ***** |
+
+
+-------------------------------------------------------------------------------
+qx|1, wide|
+bt||
+nt|^z   @3^b@2^^^^|
+fp|b-bigtitle|at|What is an Answer ?|fp||at|^^|
+n#|2|at|
+I know that the first (and even the second time) you go through the practice hands you will be just about starting to understand what is going on.   BUT after that ...
+
+Successfully playing the hand against the bots is |cp|red|at|^*b NOT ^*n |cp||at|an answer, I repeat |cp|red|at|^*b NOT ^*n|cp||at| an answer, to the question.
+
+The type of answer you NEED to give (assuming that you want to benefit from your work here) is - 
+|n#|a|at|^c@2
+|fp|t|at|Part 1   -   The 'Trick 1' PLAN|fp||at|          (NOT in the supplied answers, but YOU should think it out)
+|n^|7|at|
+A detailed statement (to yourself) of the order of the play of the tricks, including which hand you will be in at each stage and stating any discards.  The plan ends with the words 
+  -  "With the play of the squeeze card (named) ... East or West or Both ... will be squeezed".
+|n#|a|at|
+|fp|t|at|Part 2   -   The Key Cards of the Squeeze|fp||at| 
+|n^|5|at|
+A statement defining YOUR important cards and where they will be when the squeeze card is played.
+|n#|a|at|
+|fp|t|at|Part 3   -   Your Opps remaining (important) Cards|fp||at|         (NOT in the supplied answers)
+|n^|5|at|
+A statement about the important cards your Opps hold and about which hand you expect to find them in, such as -   "I am playing for LHO to have the @sK and the ..."    Part 3 is an extension of 'Part 1 - the Plan', as it also covers what comes after the squeeze card is played.
+^^
+^b@2See the Specimen Answer on the next page.
+
+|cp|mg|n^|8|at|           @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-|cp||at|
+|cp|red|n#|8|at|^*bRemember^*n|cp||
+lg|f|
+at|      Do remember that repetition of these practice hands this is the KEY, it will all sink in if you let it.|
+pg| ***** 37 ***** |
+
+
+-------------------------------------------------------------------------------
+bt||
+nt|^z@3^b@2^^^^|
+fp|b-bigtitle|at|Specimen Answer|fp||at|         (to  Practice 1   of    1. The Simple Positional Squeeze)
+|n^|2|at|
+|lg|c|at|
+|fp|t|at|Part 1   -   The 'Trick 1' PLAN|fp||at|       
+|n^|7|at|
+^c@2Win the lead of the @sQ with the dummy's Ace.
+Play the top two @d's ending in hand.
+Cash the @hAK
+Run the @c's, at first discarding two low hearts (keeping only the Jack)   
+^d then discarding low @s's,  so ending with   @sK9  @hJ   in dummy.
+With the play of the last club (the squeeze card @c9), ^*b East ^*n will be squeezed.
+|n#|a|at|
+|fp|t|at|^bPart 2   -   The Key Cards of the Squeeze|fp||at| 
+|n^|7|at|
+^c ^*b Two-card menace ^*n     ^i |fg|y|at|(North)|fg||at| ^k  @sK9
+^c ^*n One-card  menace ^*n    ^i |fg|y|at|     " |fg||at| ^k  @hJ
+^c ^*b Communication card ^*n  ^i |fg|y|at|(South)|fg||at| ^k  @s7
+^c ^*n Squeeze card ^*n        ^i |fg|y|at|     " |fg||at| ^k  @c9  |fg|y|at|   (the last @c) |fg||at|
+|n#|8|at|
+|fp|t|at|^bPart 3   -   Your Opps remaining (important) Cards|fp||at|
+|n^|8|at|
+I am playing for East to have started with   @SQJ10  @HQxx.     On the play of the squeeze card (@c9), East will  EITHER -
+	^d ... discard his @hQ.  In which case, I will discard the @s9 and lead to the @sK and cash the @hJ.
+^c OR  |fp|s|at|(more likely)|fp||at|
+	^d ... discard his @s guard (keeping the @hQ).  In which case I will discard the @HJ and lead to the  @sK  
+	       ^p expecting the @sJ to fall so promoting my @s9.
+|n#|5|at|
+^b I know this is a lot to expect but it will come with repetition of the hands, again and again.
+|
+pg| ***** 38 ***** |
+
+
+-------------------------------------------------------------------------------
+st||
+ha||
+bv|a,h|
+rh||ah|Practice 1|
+md|1sQ75hAK6dKcAKQJT8,sKJ8hQ72dJT987c63,sA632hJT84dAQ5c92,sT94h953d6432c754|
+sv|N|sk|S|
+nt|^z@3^b@2^^|
+Lg|l|
+at|^*bPractice 1^*n      ^gThe hand.|
+pg| ***** 39 ***** |
+
+
+at|  You (slowly) bid to 7NT.|
+mb|7N|mb|d|mb|p|mb|p|mb|p|
+pc|dJ|
+eb|y___|
+mx|x|
+at|   West doubles and leads the @dJ.|
+pg| ***** 40 ***** |
+
+
+Lg|g|
+at|^^You are in  ^*b7NT^*n  with 12 top tricks.   Where can you find a 13th ?    What can West possibly have for his double ?|  
+pg| ***** 41 ***** |
+
+
+bv|f,v|
+eb|y___|
+ht|z|n^|2|at|There is a hint on the next page but if you want to play the hand NOW, the  { ^*b 1st ^*n }  button is available. |
+pg| ***** 42 ***** |
+
+
+nt|^z@3^b@2^^|
+Lg|f|
+at|^*bPractice 1^*n  ^e |cp|Gr|at|^*bHint^*n|cp||at|   ^g With the ^*bDbl^*n, play West for   @sKJ   @hQxx.   Work out NOW which cards will be left when the Squeeze card is played.   In North, which cards will be the ^*b split two-card ^*n menace and which in the ^*b one-card ^*n menace ?    In South, which will be the ^*b squeeze ^*n card and  the ^*b split two-card ^*n menace  -  BE EXACT.
+
+|cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button   |cp|red|at|^*bOR^*n|cp||at|   you can use  {^*b Flow >^*n }  to see the answer.|
+n#|7|
+pg| ***** 43 ***** |
+
+
+bv|e,v|
+mx|x|
+eb|n|
+nt|^z  @3^b@2^^|
+Lg||
+at|^*bPractice 1^*n  ^e |cp|red|at|^*bAns^*n|cp||n#|3|at|  ^g
+^c ^*b Split     Two-card menace ^*n ^j  @sAx   @sQx
+^c ^*n One-card  menace ^*n          ^j  @hJ
+^c ^*b Communication card^*n(s)      ^j  @s7    @S6
+^c ^*n Squeeze card ^*n              ^j  @c10|
+n#|6|at|^^There is no  'Rectifying the Count'  when you are in a Grand Slam             Now play for ^*b THAT ^*n ending.|
+pg| ***** 44 ***** |
+
+
+%%_aapg-NEAR
+pc|d5|pc|d2|pc|dK|pg||
+pc|c8|pc|c3|pc|c9|pc|c4|pg||
+pc|dA|pc|d3|pc|h6|pc|d7|pg||
+pc|dQ|pc|d4|pc|s5|pc|d8|pg||
+pc|h4|pc|h5|pc|hA|pc|h2|pg||
+pc|hK|pc|h7|pc|h8|pc|h3|pg||
+pc|cA|pc|c6|pc|c2|pc|c5|pg||
+pc|cK|pc|d9|pc|hT|pc|c7|pg||
+pc|cQ|pc|dT|pc|s2|pc|d6|pg||
+pc|cJ|pc|s8|pc|s3|pc|s4|pg||
+pc|cT|
+%%_aapg-STD
+pg| ***** 55 ***** |
+
+
+bv|a,v|
+eb|n|
+sk||
+ht|f|at|@4^c@2^^|
+at|On the play of your  ^*bSqueeze Card^*n  (@c10)   West is squeezed.
+^^ ^f Notice that if the  @sJ  was moved from West to East, the play would be identical.|
+pf|all-res-lifted|
+pg| ***** 56 ***** |
+
+
+-------------------------------------------------------------------------------
+qx||
+bt||
+nt|^z@3^b@2^^|
+ht|m|n#|7|cs|c-chapterColor|at|^a     ^-{  ^*nEnd  -  The  Two-card Menace  positional simple squeeze^*n  
+}^-|
+pg| ***** 57 ***** |
+
+

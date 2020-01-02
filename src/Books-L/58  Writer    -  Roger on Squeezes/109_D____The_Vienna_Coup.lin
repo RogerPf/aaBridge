@@ -1,0 +1,404 @@
+%%
+%%
+
+ss|chapter,D.                                       The Vienna Coup |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-02-18          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead__technique.ins
+%%
+ss|masthead,Roger  on  Squeezes                                              |
+%%
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       on Title Pages   Precision Blue
+cr|c255|cg|c225|cb|c229|   fill   c  c-chapterColor    on Title Pages   TECHNIQUE <<<<<<<<<<<<<<<<
+%%
+<<--INSERT-END**-->>=01___FP_masthead__technique.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pd|hint,^b   There is a `cp`green`at`^*b Hint ^*n`cp``AT` on the next page but if you want to  PLAY  the hand NOW, the  { ^*b 1st ^*n }  button is available.|
+%%
+pd|choose,`cp`red`at`^b    ^*bPlease   CHOOSE^*n`cp``at`   you can use  {^*b Flow >^*n }  to see the answer  `cp`red`at`^*bOR^*n`cp``at`  you can click  { ^*b 1st ^*n }  to PLAY the hand.|
+%%
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|i|
+fp|1|at|^c@2^y@3^^|
+lg|b|
+at|In a positional Squeese a split menace, ^*b Ax ^*n opposite ^*b Qx^*n,  can be an asset but when it comes to the Automatic squeeze it is a liability.  
+|n^|5|at|
+According to Wikipedia the ^*h https://en.wikipedia.org/wiki/Vienna_coup, Vienna Coup^*n  is so named because the author James Clay wrote about it being played there in the days of whist.
+|n^|5|at|     
+I can only assume that what, those far distant Viennese players thought remarkable, is that you hold a top honor (almost most always the ace) and you have to 'play it off' and NOT use it to cover one of your opponents a high cards.
+|n#|c|at|^b  @2{
+|n^|9|at|     The  ^*b Vienna Coup ^*n is an unblocking play, normally of an Ace, that allows the mechanism of an 
+        ^r    Automatic Squeeze to work.   
+|n^|9|at| 
+      A failure to play off the Ace before the end will gum up the works and there will NO squeeze.
+|n^|9|at|		}
+^c@2|
+
+qx|D.|
+pg| ***** 0 ***** |
+
+
+-------------------------------------------------------------------------------
+bt||
+nt|^z@3^b@2^^^^|
+fp|b-bigtitle|at|How to  ^*bPlay^*   the  Practice Hands|fp||at|^^|
+n#|2|at|
+To  ^*bPlay^*n  the Practice hands    -   Click either the  {^*b Cont ^*n}  or the  {^*b Enter the Deal ^*n}  button.  
+
+When available, the two buttons will appear in the green area at the bottom right of this window.
+
+Clicking either takes you  'into the deal'.   You return back to this tutorial by clicking the  {^*b Back to Movie ^*n}  button.
+
+The  ^*g:Doc Collection::Help,Doc Collection^*n  document  ^*b Down the Rabbit Hole ^*n  contains a diagram that will help to explain this.
+
+After clicking  { ^*b 1st ^*n }  you continue the play by clicking on a ^*b CARD ^*n or on the  { ^*b Undo ^*n }  button.
+
+While playing you can  use the  {^*b Show ^*n}  /  {^*b Hide ^*n}  button to  show / hide  the opponents cards.
+
+
+The  {^*b Enter the Deal ^*n}  button is like a 'grown-up' version of the continue button.
+|n^|a|at|
+ ^g after clicking it you get to choose (by use of a button) which of three things you want to do. 
+
+|n^|5|at|
+{^*b Edit ^*n}  let's you explore the deal  'double dummy'.   Click a ^*bCARD^*n to play it.    Use  {^*b Undo ^*n}  to unplay cards.
+
+{^*b Play ^*n}  let's you play the remaining cards (against the computer).    As with  ^*bEdit^*n  any un-reviewed play is discarded.
+
+{^*b Review ^*n}  (the default)  let's you run back and forth in the existing play.     Use  ^*bFlow^*n,    "^*b>^*n"   and the  ^*bNavbar^*n.
+^s(^*bMouse wheel^*n  is best)
+
+|cp|mg|n^|8|at|           @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-|cp||at|
+|cp|red|n#|8|at|^*bAdvice^*n|cp||
+lg|f|
+at|      Come back to this tutorial time and time again.  The first few times when you play through the hands, you may need to view the opponents cards or even skip playing them and just watch the winning line.
+|n#|5|at|Come back another time and play them through again.       Repetition will,  ^*b really will^*n,   get it all to sink in.|
+pg| ***** 1 ***** |
+
+
+-------------------------------------------------------------------------------
+qx|1, wide|
+bt||
+nt|^z   @3^b@2^^^^|
+fp|b-bigtitle|at|What is an Answer ?|fp||at|^^|
+n#|2|at|
+I know that the first (and even the second time) you go through the practice hands you will be just about starting to understand what is going on.   BUT after that ...
+
+Successfully playing the hand against the bots is |cp|red|at|^*b NOT ^*n |cp||at|an answer, I repeat |cp|red|at|^*b NOT ^*n|cp||at| an answer, to the question.
+
+The type of answer you NEED to give (assuming that you want to benefit from your work here) is - 
+|n#|a|at|^c@2
+|fp|t|at|Part 1   -   The 'Trick 1' PLAN|fp||at|          (NOT in the supplied answers, but YOU should think it out)
+|n^|7|at|
+A detailed statement (to yourself) of the order of the play of the tricks, including which hand you will be in at each stage and stating any discards.  The plan ends with the words 
+  -  "With the play of the squeeze card (named) ... East or West or Both ... will be squeezed".
+|n#|a|at|
+|fp|t|at|Part 2   -   The Key Cards of the Squeeze|fp||at| 
+|n^|5|at|
+A statement defining YOUR important cards and where they will be when the squeeze card is played.
+|n#|a|at|
+|fp|t|at|Part 3   -   Your Opps remaining (important) Cards|fp||at|         (NOT in the supplied answers)
+|n^|5|at|
+A statement about the important cards your Opps hold and about which hand you expect to find them in, such as -   "I am playing for LHO to have the @sK and the ..."    Part 3 is an extension of 'Part 1 - the Plan', as it also covers what comes after the squeeze card is played.
+^^
+^b@2See the Specimen Answer on the next page.
+
+|cp|mg|n^|8|at|           @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-|cp||at|
+|cp|red|n#|8|at|^*bRemember^*n|cp||
+lg|f|
+at|      Do remember that repetition of these practice hands this is the KEY, it will all sink in if you let it.|
+pg| ***** 2 ***** |
+
+
+-------------------------------------------------------------------------------
+bt||
+nt|^z@3^b@2^^^^|
+fp|b-bigtitle|at|Specimen Answer|fp||at|         (to  Practice 1   of    1. The Simple Positional Squeeze)
+|n^|2|at|
+|lg|c|at|
+|fp|t|at|Part 1   -   The 'Trick 1' PLAN|fp||at|       
+|n^|7|at|
+^c@2Win the lead of the @sQ with the dummy's Ace.
+Play the top two @d's ending in hand.
+Cash the @hAK
+Run the @c's, at first discarding two low hearts (keeping only the Jack)   
+^d then discarding low @s's,  so ending with   @sK9  @hJ   in dummy.
+With the play of the last club (the squeeze card @c9), ^*b East ^*n will be squeezed.
+|n#|a|at|
+|fp|t|at|^bPart 2   -   The Key Cards of the Squeeze|fp||at| 
+|n^|7|at|
+^c ^*b Long menace ^*n     ^i |fg|y|at|(North)|fg||at| ^k  @sK9
+^c ^*n One-card  menace ^*n    ^i |fg|y|at|     " |fg||at| ^k  @hJ
+^c ^*b Communication card ^*n  ^i |fg|y|at|(South)|fg||at| ^k  @s7
+^c ^*n Squeeze card ^*n        ^i |fg|y|at|     " |fg||at| ^k  @c9  |fg|y|at|   (the last @c) |fg||at|
+|n#|8|at|
+|fp|t|at|^bPart 3   -   Your Opps remaining (important) Cards|fp||at|
+|n^|8|at|
+I am playing for East to have started with   @SQJ10  @HQxx.     On the play of the squeeze card (@c9), East will  EITHER -
+	^d ... discard his @hQ.  In which case, I will discard the @s9 and lead to the @sK and cash the @hJ.
+^c OR  |fp|s|at|(more likely)|fp||at|
+	^d ... discard his @s guard (keeping the @hQ).  In which case I will discard the @HJ and lead to the  @sK  
+	       ^p expecting the @sJ to fall so promoting my @s9.
+|n#|5|at|
+^b I know this is a lot to expect but it will come with repetition of the hands, again and again.
+|
+pg| ***** 3 ***** |
+
+
+-------------------------------------------------------------------------------
+st||
+ha||
+bv|h,a|
+rh||ah|Practice 1|
+md|1s74hQ5dAKQcAKQJ96,s32hJT984d86432c2,sAKJ98hA6d7c87543,sQT65hK732dJT95cT|
+sk|S|
+nt|^z@3^b@2^^|
+Lg|l|
+at|^*bPractice 1^*n      ^gThe hand.|
+pg| ***** 4 ***** |
+
+
+at|    You (slowly) bid to 7NT.|
+mb|7NT|
+pg| ***** 5 ***** |
+
+
+mb|p|mb|p|mb|d|mb|p|mb|p|mb|p|
+pc|s3|
+at|    East doubles and gets the lead of the  @s3.|
+pg| ***** 6 ***** |
+
+
+eb|y___|
+Lg|g|
+at|^^You are in  ^*b7NT^*n  with 12 top tricks.   Where can you find a 13th ?    What can East possibly have for the double ?|  
+pg| ***** 7 ***** |
+
+
+bv|f,v|
+ht|z|n^|2|at|There is a hint on the next page but if you want to play the hand NOW, the  { ^*b 1st ^*n }  button is available. |
+pg| ***** 8 ***** |
+
+
+qx|h1, hide|
+nt|^z@3^b@2^^|
+Lg|f|
+at|^*bPractice 1^*n  ^e |cp|gr|at|^*bHint  A^*n|cp||at|   Take  East's  to be holding  @sQxx  and  @hKx  for his double.  
+^^^^^^            ^*b Hint ^*n continues on the next page.|
+pg| ***** 9 ***** |
+
+
+nt|^z@3^b@2^^|
+Lg|f|
+at|^*bPractice 1^*n  ^e |cp|gr|at|^*bHint  B^*n|cp||at|   ^g But you hold a Split Menace in @h's  when you want there to be only a one card menace.          Work out NOW which cards will be left when the Squeeze card is played.   In North, which cards will be the ^*b extended ^*n menace and which the ^*b one-card ^*n menace?    In South, which will be the ^*b squeeze ^*n card and  the ^*b communication ^*n card  -  BE EXACT.|
+pd|choice, ^c^*bYou have a  CHOICE^*n`cp``at`   you can click the  { ^*b 1st ^*n }  button   `cp`red`at`^*bOR^*n`cp``at`   you can use  {^*b Flow >^*n }  to see the answer.|
+pf|choice|
+pg| ***** 10 ***** |
+
+
+qx|a1, hide|
+bv|e,v|
+nt|^z  @3^b@2^^|
+Lg||
+at|^*bPractice 1^*n  ^e |cp|red|at|^*bAns^*n|cp||n#|3|at|  ^g
+^c ^*b Extended menace ^*n           ^j  @sAKJ
+^c ^*n One-card  menace ^*n          ^j  @hQ
+^c ^*b Communication card^*n         ^j  @s7 |fg|y|at| (or 4)|fg||at|
+^c ^*n Squeeze card ^*n              ^j  @c6 |fg|y|at|(any @c)|fg||at| | 
+n#|6|at|^^There is no  'Rectifying the Count'  when you are in a Grand Slam.             Now play for ^*b THAT ^*n ending.|
+ht|k|at| ^n@2 { The KEY is to play off the @hA early (Vienna Coup) 
+     so the Automatic Squeeze can work.  
+}|
+pg| ***** 11 ***** |
+
+
+%%_aapg-NEAR
+pc|sA|pc|s5|pc|s4|pg||
+pc|hA|pc|h2|pc|h5|pc|h4|pg||
+pc|d7|pc|d5|pc|dA|pc|d2|pg||
+pc|dK|pc|d3|pc|h6|pc|d9|pg||
+pc|dQ|pc|d4|pc|s8|pc|dT|pg||
+pc|cA|pc|c2|pc|c8|pc|cT|pg||
+pc|cK|pc|s2|pc|c7|pc|dJ|pg||
+pc|cQ|pc|d6|pc|c5|pc|h3|pg||
+pc|cJ|pc|d8|pc|c4|pc|h7|pg||
+pc|c9|pc|h8|pc|c3|pc|s6|pg||
+pc|c6|pc|h9|pc|s9|
+%%_aapg-STD
+pg| ***** 22 ***** |
+
+
+bv|a,v|
+eb|n|
+sk||
+ht|f|at|@4^c@2^^|
+at|^^On the play of the  ^*bSqueeze Card^*n  (@c6)   East is squeezed.|
+pf|all-res-lifted|
+pg| ***** 23 ***** |
+
+
+md|1,,,|
+bv|a,h|
+nt|^z@3^b@2^^cleared|
+pg| ***** 24 ***** |
+
+
+-------------------------------------------------------------------------------
+qx|2, wide|
+ha||
+bv|a,h|
+rh||ah|Practice 2|
+md|1sAKQ63hA83dAJcAJ5,sT98754hK6dT7c743,sJ2hQ975dKQ54cKQ2,hJT42d98632cT986|
+sk|S|
+nt|^z@3^b@2^^|
+Lg|l|
+at|^b^*bPractice 2^*n      ^gThe hand.|
+pg| ***** 25 ***** |
+
+
+at|  You (slowly) bid to 7NT.|
+mb|7N|mb|d|mb|p|mb|p|mb|p|
+pc|sT|
+at|   West doubles and leads  @s10,|
+pg| ***** 26 ***** |
+
+
+at|    the play goes.|
+pc|sJ|pc|d2|
+pg| ***** 27 ***** |
+
+
+eb|y___|
+Lg|g|
+at|^^You are in  ^*b7NT^*n  with 12 top tricks.   Where can you find a 13th ?    What ELSE can West have for her double ?|  
+pg| ***** 28 ***** |
+
+
+bv|f,v|
+ht|z|n^|2|at|There is a hint on the next page but if you want to play the hand NOW, the  { ^*b 1st ^*n }  button is available. |
+pg| ***** 29 ***** |
+
+
+qx|h2, hide|
+nt|^z@3^b@2^^|
+Lg|f|
+at|^b^*bPractice 2^*n  ^e |cp|Gr|at|^*bHint^*n|cp||at|   ^g With the ^*bDbl^*n, play West for her known  @s1098754   AND   @hKx.   
+Work out NOW which cards will be left when the Squeeze card is played.   
+Who will have the Long menace and who the One-card menace ?   Which will be the squeeze card and which the communication card ?   -   BE EXACT.|
+pf|choice|	
+pg| ***** 30 ***** |
+
+
+bv|e,v|
+nt|^z  @3^b@2^^|
+Lg||
+at|^b^*bPractice 2^*n  ^e |cp|red|at|^*bAns^*n|cp||n#|3|at|  ^g
+^c ^*b Long menace ^*n               ^j  @sAKQ6 
+^c ^*n One-card  menace ^*n          ^j  @hQ
+^c ^*b Communication card^*n         ^j  @s2
+^c ^*n Squeeze card ^*n              ^j  @dQ     |fg|y|at|(or @dK)|fg||at||
+n#|6|at|^^There is no  'Rectifying the Count'  when you are in a Grand Slam.             Now play for ^*b THAT ^*n ending.|
+ht|k|at| ^n@2 { The KEY is to play off the @hA early (Vienna Coup) 
+        so the Automatic Squeeze can work.  
+}|
+pg| ***** 31 ***** |
+
+
+%%_aapg-NEAR
+pc|s3|pg||
+pc|h5|pc|hT|pc|hA|pc|h6|pg||
+pc|dA|pc|d7|pc|d4|pc|d3|pg||
+pc|dJ|pc|dT|pc|d5|pc|d6|pg||
+pc|cA|pc|c3|pc|c2|pc|c6|pg||
+pc|cJ|pc|c4|pc|cQ|pc|c8|pg||
+pc|cK|pc|c9|pc|c5|pc|c7|pg||
+pc|dK|pc|d8|pc|h3|pc|s4|pg||
+pc|dQ|pc|d9|pc|h8|
+%%_aapg-STD
+pg| ***** 40 ***** |
+
+
+bv|a,v|
+eb|n|
+sk||
+ht|f|at|@4^c@2^^|
+at|^^ ^d On the play of the  ^*bSqueeze Card^*n  (@dQ)   West is squeezed.|
+pf|all-res-lifted|
+pg| ***** 41 ***** |
+
+
+md|1,,,|
+bv|a,h|
+nt|^z@3^b@2^^cleared|
+pg| ***** 42 ***** |
+
+
+qx||
+bt||
+nt|^z@3^b@2^^|
+ht|m|n#|7|cs|c-chapterColor|at|^a     ^-{  ^*nEnd  -  The Vienna Coup^*n  
+}^-|
+pg| ***** 43 ***** |
+
+

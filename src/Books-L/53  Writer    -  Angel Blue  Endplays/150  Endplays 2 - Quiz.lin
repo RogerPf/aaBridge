@@ -1,0 +1,616 @@
+%%
+%% Endplays 2 - Quiz
+%%
+%% Reformatted for aaBridge  2018 August
+%%
+%% Roger Pfister
+%%
+
+<<--INSERT-START-->>=005__Common_Header.ins
+%%
+fh|130|ff|1Arial|fb|14|fm|1|                       
+fh|240|ff|2Arial|fb|24|fm|2|
+fh|340|ff|3Arial|fb|3y|fm|3|fu|3y|
+fh|490|ff|4Times New Roman|fb|49|fm|4| 
+%
+cr|164|cg|1255|cb|1255|           
+cr|2000|cg|2000|cb|2239|                 
+cr|3255|cg|3250|cb|3205|      
+cr|5065|cg|5105|cb|5255|
+cr|6238|cg|6106|cb|6080|       
+cr|8255|cg|8250|cb|8205|     
+cr|9176|cg|9048|cb|9096|  
+%
+bv|a,v|
+bt||
+at|^b@2^z@3^^|
+
+
+pd|cont-etd-msg,  You can use  { ^*b Cont ^*n }  to play out the rest of the cards  OR  do as suggested above and click  { ^*b Enter the Deal ^*n }|
+
+ss|process-txt,`ht`e`lg`o`at`^c@2^^Click   { ^*b Enter the Deal ^*n }   then on the right in the `cp`gr`at`^*b  green table area ^*n `cp``at` click  { ^*b Show ^*n }^^You can then click  ^*b Flow ^*n  or  ^*b Mouse wheel ^*n  through the correct play, to see how it all works.`pf`cont-etd-msg`|
+ 
+%%
+<<--INSERT-END**-->>=005__Common_Header.ins
+
+
+qx|Q2|
+mn|  Endplays 2   -    Quizzes  |
+tu|y|
+ht|f|at|The six quizzes were designed in three steps.
+
+First, you will get a chance to plan your play with only your and dummy's hands visible. 
+
+You will have to play some tricks ahead to reach the position from which you will have to find out a line of play that will allow you to achieve the end position. 
+
+Next, you will have the hand in a playable mode and will be able to check whether your plan was correct. 
+
+If it is not, you may consider a different plan, then trying to execute it.
+
+To get the most out of the playable mode, I recommend to move back and forth through all the available variations, 
+including the erroneous plays.
+
+This way you will learn to avoid errors when, in the future, you will have to cope with similar situations.
+
+Finally, you will have the solution.
+
+Take your time, don't rush.   Remember:  ^*BThe harder the training the easier the battle^*N.| 
+
+ht|z|n#|b|at|^b^*bMM:^*n  Remember you can |cp|red|at| ^*b PLAY ^*n|cp||at| ^*b ANY HAND ^*n  at  ^*b ANY TIME ^*n  by clicking the  { ^*b 1st ^*n }  button.|
+pg| ***** 0 ***** |
+
+
+st||
+---------------------------------------------------------------------------------------
+qx|1|rh||ah|Eliminations|ah|Quiz 1|
+md|1SAKQHAKT95DAK2C95,SJT96HQ86D63CKJ62,S842HJ7432D754CAQ|sk|ns|
+mb|2Cp2Dp2Hp3Hp4Np5Cp6Hppp|
+pc|sJ|
+nt|^b@2^z@3^^|ht|b|at|Quiz  1     @2Make your plan.|
+ht|z|n#|0|at|^b^*bMM:^*n  Remember you can |cp|red|at| ^*b PLAY ^*n|cp||at| ^*b ANY HAND ^*n  at  ^*b ANY TIME ^*n  by clicking the  { ^*b 1st ^*n }  button.|
+pg| ***** 1 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Quiz  1     @2Make your plan.|
+pg| ***** 2 ***** |
+
+
+pc|s2|pc|s3|pc|sQ|
+pg| ***** 3 ***** |
+
+
+pc|hA|pc|h6|pc|h2|pc|c3|
+pg| ***** 4 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Win the opening lead and play the @hA, receiving the rude news when East shows out.
+^^Having a sure trump loser, what can you do to assure 12 tricks ?|
+pg| ***** 5 ***** |
+
+
+at|^^^^ ^f   NOW is a good time to click the  { ^*b Cont ^*n }  button|
+pf|cont-button|
+pg| ***** 6 ***** |
+
+
+mx|x|
+nt|^b@2^z@3^^|ht|b|at|Did you find the solution ?   You can now move ahead to see the recommended play.|
+pg| ***** 7 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Without the possibility to discard your sure diamond loser on anything, your only chance to make your contract is to find the @cK and no more than two diamonds in West.|
+pg| ***** 8 ***** |
+
+
+at|^^^^Win a second trump trick, cash your remaining spades, |
+pg| ***** 9 ***** |
+
+
+pc|hK|pc|h8|pc|h3|pc|c4|
+pg| ***** 10 ***** |
+
+
+pc|sA|pc|s6|pc|s4|pc|s5|
+pg| ***** 11 ***** |
+
+
+pc|sK|pc|s9|pc|s8|pc|s7|
+pg| ***** 12 ***** |
+
+
+at|play the @dAK,|
+pc|dA|pc|d3|pc|d4|pc|d8|
+pg| ***** 13 ***** |
+
+
+pc|dK|pc|d6|pc|d5|pc|d9|
+pg| ***** 14 ***** |
+
+
+at| finesse the @cQ and cash the @cA.|
+pg| ***** 15 ***** |
+
+
+pc|c5|pc|c2|pc|cQ|pc|c7|
+pg| ***** 16 ***** |
+
+
+pc|cA|pc|c8|pc|c9|pc|c6|
+pg| ***** 17 ***** |
+
+
+at|^^^^Finally, throw West in with the trump Queen.|
+pg| ***** 18 ***** |
+
+
+pc|h4|pc|dT|pc|h5|pc|hQ|
+pg| ***** 19 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Whichever black card West returns, you can ruff in dummy and discard your diamond loser from hand.|
+sk||
+pg| ***** 20 ***** |
+
+
+nt|^b@2^z@3^^|
+vv|process-txt|
+pg| ***** 21 ***** |
+
+
+-----------------------------------------------------------------------------------------
+qx|2|rh||ah|Eliminations|ah|Quiz 2|
+md|1SA8HA853DJ65CAQ86,SQJT4HQT2DKT3C942,SK5HK974DQ82CKJT3|sk|ns|
+mb|1Np2Cp2Hp4Hppp|pc|sq|ht|b|
+nt|^b@2^z@3^^|ht|b|at|Quiz  2        @2Make your plan based upon one trump loser.|
+pg| ***** 22 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Did you find the solution ?   You can now move ahead to see the recommended play.|
+pg| ***** 23 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|You have one loser in the trump suit, provided it breaks 3-2.
+
+Diamonds is your problem suit and you can't play it yourself without risking your game.
+
+You would rather have the defenders make the first lead in the suit. 
+
+Win the opening lead and play the trump King and Ace.|
+pg| ***** 24 ***** |
+
+
+pc|s5|pc|s2|pc|sA|
+pg| ***** 25 ***** |
+
+
+pc|h3|pc|h2|pc|hK|pc|h6|
+pg| ***** 26 ***** |
+
+
+pc|h4|pc|hJ|pc|hA|pc|hT|
+pg| ***** 27 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|When both defenders follow, you should realize that you can plan to put the @hQ holder on lead once you play a third round of the suit. 
+
+Before exiting with a trump, eliminate the two black suits.  Cash the second spade honor then play four rounds of clubs. |
+pg| ***** 28 ***** |
+
+
+pc|s8|pc|s4|pc|sK|pc|s3|
+pg| ***** 29 ***** |
+
+
+pc|c3|pc|c5|pc|cQ|pc|c2|
+pg| ***** 30 ***** |
+
+
+pc|cA|pc|c4|pc|cT|pc|c7|
+pg| ***** 31 ***** |
+
+
+pc|c6|pc|c9|pc|cJ|pc|s6|
+pg| ***** 32 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|lg|e|at| West may ruff the fourth round of clubs but then he will find himself forced to play a diamond, saving you a trick there or play a spade, allowing you a ruff and discard.|
+pg| ***** 33 ***** |
+
+
+pc|cK|pc|s7|pc|c8|pc|sT|
+pg| ***** 34 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|When West refuses to ruff your club, exit with a trump.|
+pg| ***** 35 ***** |
+
+
+pc|h7|pc|s9|pc|h5|pc|hQ|
+pg| ***** 36 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Whoever holds the @hQ is thrown in now with this card. He must then either play a diamond, your problem suit, saving you a trick there or play a spade, allowing you a ruff and discard, again restricting your diamond losers to two. 
+
+The same will happen if West chooses to ruff the fourth round of clubs|
+pg| ***** 37 ***** |
+
+
+sk||
+pg| ***** 38 ***** |
+
+
+nt|^b@2^z@3^^|
+vv|process-txt|
+pg| ***** 39 ***** |
+
+
+----------------------------------------------------------------------------------------
+qx|3|rh||ah|Eliminations|ah|Quiz 3|
+md|3SA9HAT873D752CA76,SQJT63H5DJ83CT853,SK8HK642DAQ4CKQJ9|sk|ns|
+mb|1Cp1Hp4Hp6Hppp|
+pc|sq|
+nt|^b@2^z@3^^|ht|b|at|Quiz  3      @2The first three trick do as follows|
+pg| ***** 40 ***** |
+
+
+pc|sK|pc|s2|pc|s9|
+pg| ***** 41 ***** |
+
+
+pc|h2|pc|h9|pc|hA|pc|h5|
+pg| ***** 42 ***** |
+
+
+pc|h3|pc|c3|pc|hK|pc|hJ|
+pg| ***** 43 ***** |
+
+
+at|^^^^You win the opening lead and play the @hAK, discovering the 3-1 split.
+A successful finesse in diamonds will assure the twelfth trick.    Is that your only chance?|
+pg| ***** 44 ***** |
+
+
+at|^^^^ ^f   NOW is a good time to click the  { ^*b Cont ^*n }  button|
+pf|cont-button|
+pg| ***** 45 ***** |
+
+
+mx|x|
+nt|^b@2^z@3^^|ht|b|at|Quiz  3     Did you find the solution ?   You can now move ahead to see the recommended play.|
+pg| ***** 46 ***** |
+
+
+jp|0|
+nt|^b@2^z@3^^|ht|b|at|Returning to the first trick...|
+pc|sq|
+pg| ***** 47 ***** |
+
+
+pc|sK|pc|s2|pc|s9|
+pg| ***** 48 ***** |
+
+
+pc|h2|pc|h9|pc|hA|pc|h5|
+pg| ***** 49 ***** |
+
+
+pc|h3|pc|c3|pc|hK|pc|hJ|
+pg| ***** 50 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Cash the @sA |
+pg| ***** 51 ***** |
+
+
+pc|s8|pc|s4|pc|sA|pc|s3|
+pg| ***** 52 ***** |
+
+
+at|followed by four rounds of clubs for a diamond discard.  |
+pg| ***** 53 ***** |
+
+
+pc|cA|pc|c5|pc|c9|pc|c2|
+pg| ***** 54 ***** |
+
+
+pc|c6|pc|c8|pc|cJ|pc|c4|
+pg| ***** 55 ***** |
+
+
+pc|cQ|pc|d6|pc|c7|pc|cT|
+pg| ***** 56 ***** |
+
+
+at|^^^^East may ruff one of your clubs but then he will find himself forced to play a diamond into your dummy's AQ or play a spade, allowing you a ruff and discard.
+
+If East declines to ruff any of your clubs, you would then exit with a trump, throwing him in with his Queen.|
+pg| ***** 57 ***** |
+
+
+pc|cK|pc|s5|pc|d2|pc|d3|
+pg| ***** 58 ***** |
+
+
+pc|h4|pc|hQ|pc|h7|pc|s6|
+pg| ***** 59 ***** |
+
+
+sk||
+pg| ***** 60 ***** |
+
+
+nt|^b@2^z@3^^|
+vv|process-txt|
+pg| ***** 61 ***** |
+
+
+---------------------------------------------------------------------------------------------------
+qx|4,Board Four|rh||ah|Eliminations|ah|Quiz 4|
+md|1SA63D654CAQT6543,S98HAKJ76DJT87C87,SK542H5432DAQ2CKJ,SQJT7HQT98DK93C92|sk|ns|
+mb|1C1Hd2H3Cp3Hp4Cp5Cppp|
+pc|hA|
+nt|^b@2^z@3^^|ht|b|at|Quiz  4      @2Make your plan|
+pg| ***** 62 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Did you find the solution ?   You can now move ahead to see the recommended line of play.|
+pg| ***** 63 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Ruff the opening lead, |
+pg| ***** 64 ***** |
+
+
+pc|h2|pc|h8|pc|c3|
+pg| ***** 65 ***** |
+
+
+at|play small trump to the King, and ruff a heart in hand.|
+pg| ***** 66 ***** |
+
+
+pc|c4|pc|c7|pc|cK|pc|c2|
+pg| ***** 67 ***** |
+
+
+pc|h3|pc|h9|pc|c5|pc|h6|
+pg| ***** 68 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Enter dummy with the @cJ and ruff a third heart.|
+pg| ***** 69 ***** |
+
+
+pc|c6|pc|c8|pc|cJ|pc|c9|
+pg| ***** 70 ***** |
+
+
+pc|h4|pc|hT|pc|cT|pc|h7|
+pg| ***** 71 ***** |
+
+
+at|^^^^Play the @sAK and ruff a fourth heart.|
+pg| ***** 72 ***** |
+
+
+pc|sA|pc|s8|pc|s2|pc|s7|
+pg| ***** 73 ***** |
+
+
+pc|s3|pc|s9|pc|sK|pc|sT|
+pg| ***** 74 ***** |
+
+
+pc|h5|pc|hQ|pc|cQ|pc|hJ|
+pg| ***** 75 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Play a spade, conceding the lead to East.|
+pg| ***** 76 ***** |
+
+
+pc|s6|pc|d7|pc|s4|pc|sJ|
+pg| ***** 77 ***** |
+
+
+at|^^^^If the spades split 3-3, your last spade in dummy will be established for a diamond discard (If West owned four spades, you will have to hope that he holds also the @dK).|
+pg| ***** 78 ***** |
+
+
+pc|sQ|
+nt|^b@2^z@3^^|ht|b|at|When East continues with the @sQ, discard a diamond from hand.
+^^With only diamonds left, East must play into your @dAQ.|
+pg| ***** 79 ***** |
+
+
+sk||
+pg| ***** 80 ***** |
+
+
+nt|^b@2^z@3^^|
+vv|process-txt|
+pg| ***** 81 ***** |
+
+
+---------------------------------------------------------------------------------------
+qx|5|rh||ah|Eliminations|ah|Quiz 5|
+md|2SA2HKQJT4DK76CK53,SQJT987H9DA98CJ82,SK65HA8763D432CA6,S43H52DQJT5CQT974|sk|ns|
+mb|2Spp3Hp4Hp4Np5Hppp|
+pc|sQ|
+nt|^b@2^z@3^^|ht|b|at|Quiz  5      @2Make your plan to protect your vulnerable @dK!|
+pg| ***** 82 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Did you find the solution ?   You can now move ahead to see the recommended play.|
+pg| ***** 83 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Win the @sA, draw the adverse trumps and eliminate your clubs.|
+pg| ***** 84 ***** |
+
+
+pc|s5|pc|s3|pc|sA|
+pg| ***** 85 ***** |
+
+
+pc|hK|pc|h9|pc|h3|pc|h2|
+pg| ***** 86 ***** |
+
+
+pc|h4|pc|d8|pc|hA|pc|h5|
+pg| ***** 87 ***** |
+
+
+pc|cA|pc|c4|pc|c3|pc|c2|
+pg| ***** 88 ***** |
+
+
+pc|c6|pc|c7|pc|cK|pc|c8|
+pg| ***** 89 ***** |
+
+
+pc|c5|pc|cJ|pc|h6|pc|c9|
+pg| ***** 90 ***** |
+
+
+at|^^^^Play the @sK then the @s6, discarding a diamond from your hand.|
+pg| ***** 91 ***** |
+
+
+pc|sK|pc|s4|pc|s2|pc|s7|
+pg| ***** 92 ***** |
+
+
+pc|s6|pc|d5|pc|d6|pc|s8|
+pg| ***** 93 ***** |
+
+
+at|^^^^West now must give you a trick with the @dK or lead a spade, allowing you a ruff and discard.|
+
+sk||
+pg| ***** 94 ***** |
+
+
+nt|^b@2^z@3^^|
+vv|process-txt|
+pg| ***** 95 ***** |
+
+
+-------------------------------------------------------------------------------------------------------
+qx|6|rh||ah|Eliminations|ah|Quiz 6|
+md|1SJT754H4DAKQ9CK54,SA9HKQT9DJT87CAQ8,SKQ863HA2D43C7632,S2HJ87653D652CJT9|sk|ns|
+mb|1Sd2Np4Sppp|pc|hK|
+nt|^b@2^z@3^^|ht|b|at|Quiz  6      @2Make your plan to prevent three club losers!|
+pg| ***** 96 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Did you find the solution ?    You can now move ahead to see the recommended play.|
+pg| ***** 97 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Win the opening lead and ruff a heart, eliminating the suit.|
+pg| ***** 98 ***** |
+
+
+pc|hA|pc|h3|pc|h4|
+pg| ***** 99 ***** |
+
+
+pc|h2|pc|h6|pc|s4|pc|h9|
+pg| ***** 100 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Draw trumps. West wins the Ace and exits with a trump (or a diamond for same results).|
+pg| ***** 101 ***** |
+
+
+pc|s5|pc|sA|pc|s3|pc|s2|
+pg| ***** 102 ***** |
+
+
+pc|s9|pc|s6|pc|d2|pc|sT|
+pg| ***** 103 ***** |
+
+
+nt|^b@2^z@3^^|lg|8|ht|b|at|Cash three rounds of diamonds, the Jack fails to appear.|
+pg| ***** 104 ***** |
+
+
+pc|dA|pc|d7|pc|d3|pc|d5|
+pg| ***** 105 ***** |
+
+
+pc|dK|pc|d8|pc|d4|pc|d6|
+pg| ***** 106 ***** |
+
+
+pc|dQ|pc|dT|pc|c2|pc|h5|
+pg| ***** 107 ***** |
+
+
+ht|b|at|^^^^Play your last diamond, eliminating the suit, with the intention to throw a defender in with his Jack.|
+pg| ***** 108 ***** |
+
+
+pc|d9|pc|dJ|
+pg| ***** 109 ***** |
+
+
+at|^^^^West wins.|
+pg| ***** 110 ***** |
+
+
+at|^^^^Instead of ruffing, discard a club from dummy.|
+pg| ***** 111 ***** |
+
+
+pc|c3|pc|h7|
+pg| ***** 112 ***** |
+
+
+sk||
+nt|^b@2^z@3^^|ht|b|at|West is forced now to lead a club, giving you a trick with the @cK...|
+pg| ***** 113 ***** |
+
+
+pc|cA|
+pg| ***** 114 ***** |
+
+
+at|^^^^What if West attempts a different line of play?  Flow forward to see that.|
+pg| ***** 115 ***** |
+
+
+pf|cont-button|
+pg| ***** 116 ***** |
+
+
+mx|x|
+nt|^b@2^z@3^^|
+
+up|1|
+nt|^b@2^z@3^^|ht|b|at|...Lead of a heart by West, allows you to discard a club from dummy and ruff in hand.|
+pg| ***** 117 ***** |
+
+
+pc|hq|pc|c6|pc|h8|pc|s7|
+pg| ***** 118 ***** |
+
+
+sk||
+pg| ***** 119 ***** |
+
+
+nt|^b@2^z@3^^|
+vv|process-txt|
+pg| ***** 120 ***** |
+
+
+bt||
+nt|^b@2^z@3^^|
+tu|y|
+ht|n|fp|2|at|^k    End of Section|fp||
+pg| ***** 121 ***** |
+
+

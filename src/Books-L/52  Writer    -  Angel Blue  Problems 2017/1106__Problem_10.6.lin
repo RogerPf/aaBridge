@@ -1,0 +1,243 @@
+%%
+%%
+
+ss|chapter,Declarer  Play                           Problem  10.6 |
+
+ss|movie-maker,IAC|
+
+%%
+%%  Date last Edited    2017-11-25          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead_2017.ins
+%%
+ss|masthead,Angel Blue                                                      2017 |
+%%
+cr|m225|cg|m125|cb|m045|   fill   m  m-mastColor       dull orange
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    std
+%%
+<<--INSERT-END**-->>=01___FP_masthead_2017.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=03___FP_gen_arik_intro.ins
+%%
+Lg|f|n^|6|
+fp|4|at|^c@2^z@3|
+at|Arik, BBO ID 'Angel Blue', runs a weekly card play tournament and lesson in the  ^*h http://iac.pigpen.org.uk/,IAC^*n  club on  ^*h http://bridgebaseonline.com/,BBO^*n.  The focus is on  difficult to play  hands.  He has kindly allowed his problems to appear here in aaBridge lin file format.
+|n^|9|at|
+Do visit Angel Blue's bridge web site at ^*h http://angelblue.co.il/^*n|
+%%
+<<--INSERT-END**-->>=03___FP_gen_arik_intro.ins
+
+
+<<--INSERT-START-->>=03___FP_general_2017.ins
+%%
+ht|n|n#|0|at|@1^z  @3^b   {^^^^^^^^^^^^^^ ^z } |
+at|^c@2^z@3^^|
+%%
+ht|n|n^|7|at|^^In every deal you will be given an opportunity to play the hand against the aaBridge 'bots'.
+You do this by by clicking the  button labeled  { ^*b 1st ^*n }   which will then be visible.
+|n^|7|at|
+Once you have played the hand you can ^*b and should^*n, return to the tutorial via the ^*b Return to Movie ^*n button 
+and ^*b READ the comments on the hand^*n, these are nearly always supplied by Arik.
+|n^|7|at|
+To read more on the 'in deal' features click  |fp|b|at|@z|fp||at|  icon, then in the left hand column on ^*b  '^*bDouble Dummy etc^*n'.   You can later return back here  by clicking the   |fp|t|at|@L|fp||at|   left pointing arrow a couple of times.| 
+%%
+<<--INSERT-END**-->>=03___FP_general_2017.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|a|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|5|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|c|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+bv|a,h|
+rh||ah|Problem 10.6|
+md|1sKQ6hAQJ973dK86c2,sT987h2dJ92cK9863,sA43hT4dA753cAJ74,sJ52hK865dQT4cQT5|
+sv|n|sk|s|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 10.6^*n     The hand,      the bidding,|
+%%_aapg-NEAR
+mb|1H|mb|p|mb|2C|mb|p|mb|2H|mb|p|mb|2N|mb|p|mb|3H|mb|p|mb|4H|mb|p|mb|4N|mb|p|mb|5D|mb|p|mb|6H|mb|p|mb|p|mb|p|pg||
+%%_aapg-STD
+
+
+at|      the lead,|
+pc|sT|
+pg| ***** 2 ***** |
+
+
+qx|Thnk,wide|
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 3 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Try,wide|
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+at|^^|cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the answer.|
+pf|first-button|
+pg| ***** 4 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Ans,wide|
+sk||
+bv|e,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bAns^*n
+Say you win the opening lead in dummy and run the 10 of trumps successfully.|
+pg| ***** 5 ***** |
+
+
+%%_aapg-NEAR
+pc|SA|pc|S2|pc|S6|pg||
+pc|HT|pc|H5|pc|H3|pc|H2|pg||
+pc|H4|pc|H6|pc|HQ|pc|C3|pg||
+%%_aapg-STD
+
+
+---------------------------------------------------------------------------
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bAns^*n
+You play a trump to the Queen and have to bring you contract home after LHO shows out.
+You cannot catch RHO's King of hearts with a straightforward finesse and there is an apparent second loser in the diamond suit.
+You must plan to add six trump tricks to the six winners you have in the side suits.
+The first move is to cash the King and the Queen of spades.|
+pg| ***** 9 ***** |
+
+
+%%_aapg-NEAR
+pc|SK|pc|S7|pc|S3|pc|S5|pg||
+pc|SQ|pc|S8|pc|S4|pc|SJ|pg||
+%%_aapg-STD
+
+
+---------------------------------------------------------------------------
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bAns^*n
+You need RHO to have at least three spades anyway and you don’t want him to discard a spade when you ruff clubs in your hand.
+When this works successfully, cross to the Ace of clubs and ruff a club.|
+pg| ***** 12 ***** |
+
+
+%%_aapg-NEAR
+pc|C2|pc|C6|pc|CA|pc|C5|pg||
+pc|C4|pc|CT|pc|H7|pc|C8|pg||
+
+at|^^Play the Ace of diamonds and ruff another club.
+|pg||
+pc|D6|pc|D2|pc|DA|pc|D4|pg||
+pc|C7|pc|CQ|pc|H9|pc|C9|pg||
+
+at|The two club ruffs have reduced your trump length to two, the same as RHO's trump length.|pg||
+pc|DK|pc|D9|pc|D3|pc|DT|pg||
+pc|D8|pg||
+%%_aapg-STD
+
+
+---------------------------------------------------------------------------
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bAns^*n
+Look at the end position that you have reached.|
+pg| ***** 21 ***** |
+
+
+at|^^As you can see, there is no need to cross to dummy to lead a card towards your trump tenace. You simply exit with your losing diamond.
+It makes no difference which defender wins the trick. You are assured of the last two tricks with your  @hAJ  (trumps) which placed over RHO's  @hK8.|
+pg| ***** 22 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Done,wide|
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+at|^*bDone^*n
+^^^c We are done with this problem.  However, if you wish ...|
+mx|x|
+eb|y___|
+bv|c,v|
+pf|cont-button|
+pg| ***** 23 ***** |
+
+
+---------------------------------------------------------------------------
+qx|DDS,wide|
+eb||
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+bv|a,v|
+at|^*bDDS^*n    ^eYou are now free to explore the deal.
+|n^|7|lg|k|at|^^^c@2If you still need help then, when in the deal, click the ^*b DDS  { is Off/On ^*n }  button top right.
+|fp|s|at|A number (of tricks) in a GREEN oval shows a good to play for THAT side.|fp||
+pf|all-res-lifted|
+pg| ***** 24 ***** |
+
+

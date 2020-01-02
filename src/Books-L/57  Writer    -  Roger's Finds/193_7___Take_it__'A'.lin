@@ -1,0 +1,226 @@
+%%
+%%
+
+ss|chapter,7.                                              Take  It   'A'   |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2016-05-29          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Roger's  Finds                   2019  and  Past  Years |
+%%
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       Maroon
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    Around the normal Grey
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title     
+fh|b50|                    Font   b  b-bigTitle
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+%
+cr|a230|cg|a040|cb|a130|   text   a  a-action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       on Title Pages
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    on Title Pages
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|y|n#|b|lg||at|^b@2@1|at|
+^*bClick^*n          ^*bFlow >^*n         or use your    ^*bMouse Wheel^*n|
+ht|z|at|@0
+^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|j|
+Lg|f|
+fp|4|at|^c@2^z@3|
+
+fp|t-title|at|Proverb:        If you only get one chance   -   Take It.|fp||at|  
+
+Playing at a random Pick-Up table I was a defender against this contract.
+
+Somehow the declarer managed to go down.    This time YOU are going to make it.
+
+
+From the feedback I get on these hands, I keep hearing that,  "Some easy ones would be nice".  
+
+I promise you, this one is as easy as they are  EVER  going to get.       :)|
+
+qx|# 7|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+bv|a,h|
+rh||ah|Find 7|
+md|1S7HKTDQ86532CT952,SKJHJ98543DK974CJ,SAQ843H76DACAKQ74,ST9652HAQ2DJTC863|
+sv|E|sk|S|
+mb|?|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bFind 7^*n     The hand|
+pg| ***** 1 ***** |
+
+
+at|,      the bidding|
+mb|p|mb|p|mb|1S|mb|p|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+at|,     the lead.|
+pc|h5|
+eb|y___|
+pg| ***** 3 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Thnk,wide|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|Do your thinking  NOW.|
+pg| ***** 4 ***** |
+
+
+qx|Try,wide|
+eb|y___|
+bv|f,v|
+n#|7|
+at|^^ |cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the analysis.|
+pf|first-button|
+pg| ***** 5 ***** |
+
+
+---------------------------------------------------------------------------
+bv|f,h|
+nt|^z@3^b@2^^|
+Lg|f|
+n^|5|
+at|^*bTime for some Questions^*n|
+n#|5|
+at|^^Are we in a good contract ?      Will others be playing here ?     How many sure tricks do we have ?    You know the 'No Trump' drill.|    
+pg| ***** 6 ***** |
+
+
+n#|7|
+at|^^ Horrible contract, in that 3 or 4 @c's would be much more sane.     But we have had a lucky lead,    but then again more than likely almost everyone else gets that lead.   To beat the @c'ers we MUST make.  1 down is NO GOOD.|
+pg| ***** 7 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^b@2^^|
+eb||
+qx|Asys,wide|
+n^|5|
+Lg|f|
+at|^*bAnalysis^*n            |
+ht|h|
+at|^^ |cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the answer.|
+bv|f,v|
+pf|first-button|
+pg| ***** 8 ***** |
+
+
+---------------------------------------------------------------------------
+bv|f,h|
+nt|^z@3^b@2^^|
+n^|5|
+Lg|k|
+at|We have  8  sure tricks on the lead    1@s   1@h   1@d   5@C (unless a 5-0 split).
+There is only one possible source of an extra trick.   Only one chance, so we must. . . Take It. (Yes the @s finesse)|
+pg| ***** 9 ***** |
+
+
+pc|h6|pc|hA|pc|hT|
+pg| ***** 10 ***** |
+
+
+pc|hQ|pc|hK|pc|h3|pc|h7|
+pg| ***** 11 ***** |
+
+
+pc|c2|pc|cJ|pc|cA|pc|c3|
+pg| ***** 12 ***** |
+
+
+pc|cK|pc|c6|pc|c5|pc|d4|
+pg| ***** 13 ***** |
+
+
+pc|c4|pc|c8|pc|c9|pc|d7|
+pg| ***** 14 ***** |
+
+
+pc|cT|pc|h4|pc|c7|pc|dT|
+pg| ***** 15 ***** |
+
+
+pc|s7|pc|sJ|
+pg| ***** 16 ***** |
+
+
+qx|DD,wide|
+bv|a,v|
+at|^^I will leave you to Play out the rest.| 
+pf|cont-button|
+pg| ***** 17 ***** |
+
+
+sk||
+qx|PS,wide| 
+nt|^z@3^b@2^^|
+
+at|^*bPost Script:^*n       Don't forget there is always the   { ^*b Shuf Op ^*n }   button.
+
+You can use it to get a feel for the answer to the question,    "How often will I make this contract ?"|
+
+ht|y|at|^^^a   ^*bEnd^*n|
+pg| ***** 18 ***** |
+
+

@@ -1,0 +1,192 @@
+%%
+%%
+
+ss|chapter,1.                               Trump Control  Intro |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-01-11          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Techniques                               5.  Trump Control |
+%%
+cr|m145|cg|m060|cb|m140|   fill   m  m-mastColor       on Title Pages
+cr|c208|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+bv|a,h|   %% hide all three buttons
+%%
+ss|head,     ah`Part 5.    Trump Control`|
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|i|
+at|^c@2^z@3^^|n#|9|
+fp|t-title|at|Trump Control|fp||
+lg|e|
+n#|4|at| 
+^d@2If there is a single fear common to players of our beautiful game it is probably about trumps:
+  @-  Will they split badly ?   
+  @-  How should I stop the opps from forcing me in trumps and so lose control ?
+
+|
+ht|p|n#|3|fp|t-title|at|^cTopic Structure|fp||
+n#|4|at|
+This topic follows a standard layout of: an example, a reminder of what a pattern is, followed by a few more examples, and lastly the Richard Pavlicek patterns presented in playable form.  
+|n#|5|at|It is the last section @- the Playable patterns @- that may hold one or two surprises.|
+
+qx|1|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+rh||ah|Ex 1|vv|head|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bTrump Control  ^*n|
+
+
+at|^^^c@2I suspect most reading this are thinking that trump control is pretty easy, I agree, so lets start with just such a simple example.  This deal is from ^*g5:1.1  Trump::Problems for new Players, Problems for new Players  (Angel Blue)^*n.|
+
+n#|9|at|^^^fIf you do follow the link you can return  HERE  by clicking the  |fp|b|n#|3|at|@L|fp||n^|3|at|   icon button, top left.|
+pg| ***** 1 ***** |
+
+
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bTrump Control  ^*n     The hand,|
+%
+md|3sAKQJT4h865dA84c4,s83hAQ7dJ976cQJT9,s76hJ94dK2cA86532,s952hKT32dQT53cK7|
+%
+xx|Play, West,  cL, res, p24,  T2-9,  always|
+%
+sv|n|sk|s|
+pg| ***** 2 ***** |
+
+
+at|       the bidding,|
+mb|p|mb|p|mb|1S|mb|p|mb|1N|mb|p|mb|3S|mb|p|mb|4S|mb|p|mb|p|mb|p|
+pg| ***** 3 ***** |
+
+
+qx|Lead|
+ht|g|at|@4^^|
+ht|c|n#|1|at|^l   the lead,|
+pc|cQ|eb|y___|
+pg| ***** 4 ***** |
+
+
+qx|Thnk,wide|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 5 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Try,wide|
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+at|^^^c|cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the solution.|
+pf|first-button|
+pg| ***** 6 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bTrump Control  Ans^*n | 
+ht|e|
+
+at|^^^c@2You need to ruff a @d in dummy for your 10th trick, so you must preserve a trump in dummy to do that job.   
+Play one round of trumps, and then play to ruff the third round of diamonds in dummy.  So control (drawing trumps) has to be delayed untill after the ruff in dummy.
+|n#|5|at|^mLet's look at that line in action.|
+pg| ***** 7 ***** |
+
+
+%%_aapg-NEAR
+pc|cA|pc|c7|pc|c4|pg||
+pc|s6|pc|s9|pc|sA|pc|s3|pg||
+pc|d4|pc|d6|pc|dK|pc|d3|pg||
+pc|d2|pc|d5|pc|dA|pc|d7|pg||
+pc|d8|pc|d9|pc|s7|pc|dT|pg||
+pc|c2|pc|cK|pc|sK|pc|c9|
+%%_aapg-STD
+pg| ***** 13 ***** |
+
+
+sk||
+pc|sQ|
+pg| ***** 14 ***** |
+
+
+qx|DDS,wide|
+eb||
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+bv|a,v|
+at|^*bDDS^*n    ^eYou are now free to explore the deal.
+|n^|7|lg|k|at|^^^c@2If you still need help, then when in the deal, click the ^*b DDS  { is Off/On ^*n }  button top right.
+|fp|s|at|A number (of tricks) in a GREEN oval shows a good to play for THAT side.|fp||
+pf|all-res-lifted|
+pg| ***** 15 ***** |
+
+

@@ -1,0 +1,73 @@
+%%
+%% Introduction
+%% Last edited   2018 Aug 01
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<<--INSERT-START-->>=005__Common_Header.ins
+%%
+fh|v24|        v-24     very small
+fh|s28|        s-28     small
+fh|j32|        j-32
+fh|k35|        k-35
+fh|e37|        e-37
+fh|t40|        t-40     title
+fh|n42|        n-42
+fh|p45|        p-45
+fh|b50|        b-50     big
+fh|g60|        g-60     graphSuit 
+fh|m64|        m-64     mastHead
+fh|c70|        c-70     chapTitle
+%
+fh|x33|ff|xCourier|          FONT   x-33-Courier
+%
+cr|a230|cg|a040|cb|a130|     a  action
+cr|b100|cg|b100|cb|b255|     b  light Blue
+cr|f200|cg|f255|cb|f255|     f  fake-button
+cr|h000|cg|h095|cb|h169|     h  h-highlight
+cr|p255|cg|p000|cb|p255|     p  pink    fake pink button
+cr|u160|cg|u040|cb|u200|     u  pUrple
+cr|y170|cg|y190|cb|y255|     y  youtube border
+%
+bt||
+fp|b-50|at|^^^^^a   @s @h @d @c  ^v     @c @d @h @s|fp||
+at|^b@2^z@3^^|
+ht|f|        
+%%
+<<--INSERT-END**-->>=005__Common_Header.ins
+
+
+
+fp||
+at|^b@2^z@3|
+lg|c|
+qx|Intro|
+mn|Introduction   &   Tooltips|
+ht|f|
+at|^b@2To get back here quickly  @- ^*b Click ^*n the|fp|e-37|at| ^*b Home ^*n |fp|p-45|at|@Z |fp||at|icon, top left.  That will take you back to the Welcome page
+then click the|fp|e-37|at|   ^*bFlow >^*n   |fp||at|button at the bottom of THAT page to come back here.    
+|n#|2|cp|a|at|^*bPlease try this NOW^*n|cp||at|
+
+|n#|c|fp|p-45|at|Tooltips|fp||
+n#|2|at|
+Next to the |fp|e-37|at| ^*b Home ^*n |fp|p-45|at|@Z |fp||at|icon,  is the ^*n Back Arrow ^*n |fp|p-45|at|@L |fp||at| icon.  
+|n#|2|cp|a|at|^*bHover your Cursor over it^*n|cp||at||
+cr|z255|cg|z255|cb|z000|
+n#|8|at|
+After a couple of seconds you should see a  'tooltip'  message that says:
+|n#|5|fp|j-32|cs|z-poor-yellow|at|^d{  @2Go back to the lin file you were last viewing.  
+Like the  'Back'  button on a Web browser   }|cs||
+at|^b@2
+|n#|5|fp|s-small|at|^c(If you do not see the message click anywhere on this page, NOT on a 'button' and @- try again)|fp||at|
+
+|n^|2|at|Almost all the buttons in aaBridge have these 'tooltips'    -    |fp|n|at|they are your first  'go to'  for  HELP|fp||at|
+|n#|9|at|
+When you ^*b Click ^*n the ^*n Back Arrow ^*n |fp|p-45|at|@L |fp||at| icon you will be taken back to the previous lin file you were viewing, in this case that will be the Welcome page.  
+|n#|2|at|Yet again, you can then click the|fp|e-37|at|   ^*bFlow >^*n   |fp||at|button at the bottom of THAT page to come back here. 
+|n#|2|cp|a|at|^*bPlease try this NOW^*n|cp||at|
+^^|
+ht|z|n#|5|cp||at|^b@2Click     |cp||fp|e-37|at|^*bFlow >^*n|fp||at|      to move to the next page.        |cp|green|at|^*iPlease do this when you have read to the end of future pages^*n|cp||
+n#|2|fp|s|at|^^^b   OR  use your mouse wheel|fp||
+pg| ***** 0 ***** |
+
+

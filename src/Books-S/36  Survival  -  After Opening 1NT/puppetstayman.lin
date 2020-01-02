@@ -1,0 +1,274 @@
+%%%PuppetStayman.lin
+%%Last edited October 9, 2013
+%%%% By Kia, BBO nickname "nome"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|155|ff|1Arial|fb|17|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|35|fm|3|                           FOR 3
+fh|460|ff|4Arial|fb|45|fm|4|                           FOR 4
+fb|49|fm|4|fb|4|fm|4|
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|3255|cg|3255|cb|3255|            White
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|6124|cb|6250|cg|6200|             6=TURQUOISE
+cr|70|cb|7220|cg|7235|              green/blue 7
+cr|8255|cb|80|cg|80|                red 8
+cr|9128|cb|90|cg|950|               Reddish-brown 9
+bt||ht|b|FP|4|cs|1|CP|4|at|
+^-{    Puppet Stayman    }
+^-|fp||cs||cp||at|^B@2
+^B@2Puppet Stayman is a version of Stayman used in response to a 2NT opening bid. (20-21 hcp)
+
+
+Puppet Stayman also applies when it goes    2@C - p - 2@D - p - 2N - p -3@C  (22+ hcp)
+
+
+In general, whatever you play over a 2N opener, you also play over when opener bids 2@C and then rebids 2N. Usually, 2NT opener promises a balanced hand with 20 to 21 high-card points - with or without 5-card majors. 
+
+Therefore, a 5-3 major suit fit could be missed if responder has only 3-card in the suit which opener has 5-cards. Puppet Stayman is intended to remedy that problem. Let us look at  a few examples. 
+
+This short synopsis on Puppet Stayman is mainly based on an article from The Bidding Toolkit series by ACBL 
+^c|CP|1|AT|^*Hweb2.acbl.org/documentLibrary/play/Commonly_Used_Conventions/puppetstayman.pdf^*N|CP||AT| 
+with Howard's supervision.
+
+
+Larry Cohen also has an article covering Puppet Stayman which discusses its use after 1N opening. Please click
+^c|CP|1|AT|^*Hwww.larryco.com/BridgeArticles/ArticleDetails.aspx?articleID=565^*N|CP||AT| 
+link to review it.
+
+
+Let us look at a few examples. In all examples the opponents are silent.
+
+February, 2018.|
+pg| ***** 0 ***** |
+
+
+NT||
+%%Board 1
+qx|1,wide|
+%%s94hat83cjt75d765,S237JH27JD9JKC39K,S6QKH4569KDQAC8QA,S58TAHQD2348TC246
+pn|Responder,,Opener,|st||md|3,,,|rh||ah|Pup 1|mb|2np3c|an|Puppet Stayman|
+pg| ***** 1 ***** |
+
+
+NT|^B@2
+3@C promises at least game-going values and asks opener whether he has a 4- or 5-card major.|
+pg| ***** 2 ***** |
+
+
+MB|p|NT|^B@2
+With five hearts, opener rebids 3@H.|MD|0,0,S6QKH4569KDQAC8QA,0|mb|3H|
+pg| ***** 3 ***** |
+
+
+NT||
+%%%Pup 2
+qx|2,wide|
+st||md|3,,,|rh||ah|Pup 2|mb|2np3c|an|Puppet Stayman|
+pg| ***** 4 ***** |
+
+
+mb|p|NT|^B@2
+With five spades, opener rebids 3@S.|MD|0,0,h6QKs4569KDQAC8QA,0|mb|3S|
+pg| ***** 5 ***** |
+
+
+NT||
+%%%Pup 3
+qx|3,wide|
+st||md|3,,,|rh||ah|Pup 3|mb|2np3c|an|Puppet Stayman|
+pg| ***** 6 ***** |
+
+
+mb|p|NT|^B@2
+With no four- or five-card major suit holding, opener rebids 3NT.|MD|0,0,h6QKs69KD4QAC58QA,0|mb|3n|
+PG| ***** 7 ***** |
+
+
+NT||
+%%%Pup 4
+qx|4,wide|
+st||md|3,,,|rh||ah|Pup 4|mb|2np3c|an|Puppet Stayman|
+pg| ***** 8 ***** |
+
+
+mb|p|NT|^B@2
+With four hearts or four spades (or both), opener rebids 3@D. BTW, opener's rebids are alertable.|MD|0,0,h46QKs569KDQAC8QA,0|mb|3D|
+PG| ***** 9 ***** |
+
+
+NT|^B@2 
+Now let us consider what should responder bid after opener's 3@D rebid. Responder still is in dark about opener's holding in one or both major suits. Again examples.|
+PG| ***** 10 ***** |
+
+
+NT||
+%%%Pup 5
+qx|5,wide|
+st||md|3,,,|rh||ah|Pup 5|mb|2np3c|an|Puppet Stayman|
+pg| ***** 11 ***** |
+
+
+MB|p3dp|NT|^B@2
+With only one 4-card major Responder bids the other major.|
+pg| ***** 12 ***** |
+
+
+MD|0s94hat83cjt75d765,0,0,0|NT|^B@2
+As with this hand Responder bids 3@S.|hc|hat83|MB|3S|
+PG| ***** 13 ***** |
+
+
+NT||cc|hat83|
+%%%Pup 6
+qx|6,wide|
+st||md|3,,,|rh||ah|Pup 6|mb|2np3c|an|Puppet Stayman|
+pg| ***** 14 ***** |
+
+
+MB|p3dp|NT|^B@2
+And with this hand Responder bids hearts at 3 level--3@H.|hc|sat83|MD|0h94sat83cjt75d765,0,0,0|MB|3h|
+PG| ***** 15 ***** |
+
+
+NT||lc|sat83|NT|^B@2
+With a fit for responder's major, Opener bids that suit at four level, ensuring that the strong hand declares. For example:|
+PG| ***** 16 ***** |
+
+
+NT||
+%%%Pup 7
+qx|7,wide|
+st||md|3,,,|rh||ah|Pup 7|mb|2np3c|an|Puppet Stayman|sb|SDo you have a 
+four- or five-card major?|
+pg| ***** 17 ***** |
+
+
+sb||
+MB|p3d|SB|N 3 Diamonds means - I have at least one four-card major.|
+PG| ***** 18 ***** |
+
+
+sb||
+mb|p3s|SB|SI have four hearts.|
+PG| ***** 19 ***** |
+
+
+sb||
+mb|p4H|SB|NGreat. We will play 4H as I have 4 -card heart suit.|MD|0,0,S6QKH569KD4QAC8QA,0|
+pg| ***** 20 ***** |
+
+
+sb||
+mb|ppp|
+pg| ***** 21 ***** |
+
+
+NT||
+%%%Pup 8
+qx|8,wide|
+st||md|3,,,|rh||ah|Pup 8|mb|2np3c|an|Puppet Stayman|sb|SDo you have a 
+four- or five-card major?|
+pg| ***** 22 ***** |
+
+
+sb||
+MB|p3d|SB|NI have at least one four-card major.|
+PG| ***** 23 ***** |
+
+
+sb||
+mb|p3s|SB|S 3 Spades means - I have four hearts.|
+PG| ***** 24 ***** |
+
+
+mb|p3n|SB|N3NT means Sorry. We will play 3N as I have 4 -card spade suit.|
+MD|0,0,h6QKs569KD4QAC8QA,0|
+pg| ***** 25 ***** |
+
+
+sb||
+mb|ppp|
+pg| ***** 26 ***** |
+
+
+NT||
+%%%Pup 9
+qx|9,wide|
+st||md|3,,,|rh||ah|Pup 9|mb|2np3c|an|Puppet Stayman|sb|SDo you have a 
+four- or five-card major?|
+pg| ***** 27 ***** |
+
+
+sb||
+MB|p3d|SB|N3 Diamonds means - I have at least one four-card major.|
+PG| ***** 28 ***** |
+
+
+sb||
+mb|p4d|SB|SI have four hearts and four spades. Choose a major-suit game.|
+PG| ***** 29 ***** |
+
+
+mb|p4s|SB|NI have four spades.|
+MD|0,0,h6QKs569KD4QAC8QA,0|
+pg| ***** 30 ***** |
+
+
+sb||
+mb|ppp|
+pg| ***** 31 ***** |
+
+
+NT|^B@2
+Responder need to get into the habit of asking about opener's major suit holdings even when he has only three cards in hearts or spades. For example:|
+pg| ***** 32 ***** |
+
+
+NT||
+%%%Pup 10
+qx|10,wide|st||md|3SQ89 H49 DA 897 CQ 987,,,|rh||ah|Pup 10|NT|^B@2
+As responder you have this hand and partner opens 2N.|mb|2np|
+PG| ***** 33 ***** |
+
+
+NT|^B@2
+Playing Puppet Stayman, you do not have to bid 3N. |
+PG| ***** 34 ***** |
+
+
+NT|^B@2
+Bid 3@C first.|MB|3Cp|
+PG| ***** 35 ***** |
+
+
+AT| You will be glad to bid 4@S if partner shows a 5-card spade suit by rebidding 3@S.|MB|3sp4s|
+PG| ***** 36 ***** |
+
+
+NT|^B@2
+Otherwise you will sign off|UB|3|
+pg| ***** 37 ***** |
+
+
+mb|3dp|
+PG| ***** 38 ***** |
+
+
+AT| in 3N.|MB|3n|
+PG| ***** 39 ***** |
+
+
+NT|^B@2
+The same would be true if you change the spades suit with heart suit. In that case you bid 3@C and if opener bids 3@H you would be glad to bid 4@H.|
+PG| ***** 40 ***** |
+
+
+qx|end,wide|
+NT|^B@2
+This is the end of Puppet Stayman synopsis.|
+pg| ***** 41 ***** |
+
+
