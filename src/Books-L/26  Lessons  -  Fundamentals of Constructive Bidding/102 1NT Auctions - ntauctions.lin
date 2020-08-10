@@ -1,0 +1,2884 @@
+
+Auction Starting with 1NT.lin
+%%%%%%% Constructive Bidding
+%%Lesson 2
+%%lin format
+%%%% Last edited March 29, 2013, 11-22, 2013, 10-04-2015 11-19-2016
+%%%%%%%%%%%%%%%%
+mn|            Constructive Auctions after                              a 1NT Opening Bid                |
+TU||bt||
+fh|155|ff|1Arial|fb|110|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|35|fm|3|                           FOR 3
+fb|49|fm|4|fb|4|fm|4|
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|30|cg|30|cb|3128|                dark Blue 3
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|664|cb|6255|cg|6255|             6=TURQUOISE
+cr|70|cb|7220|cg|7235|              green/blue 7
+cr|8255|cb|80|cg|80|                red 8
+cr|9128|cb|90|cg|950|               Reddish-brown 9
+%%%%%%%%%%% --- Opening ---
+qx|Opening|
+cs|1|cp|2|fp|1|at|
+^-{ Constructive Auctions after a 1NT Opening Bid }
+^-|cs|2|HT|e|fp||at|^c@2{
+^*GB00,    Introduction^*N, ^*GBIL, BIL our Home^*N, ^*GHOW, Howard our Mentor^*N
+
+^*GB01,   1: Constructive Auctions after a 1NT Opening Bid^*N
+
+^*GB02,   2: The Stayman Convention^*N
+ 
+^*GB03,   3: The Jacoby Transfer Convention^*N
+
+^*GB04,   4: Quizzes^*N
+ 
+^*GB05,   5: Advanced Topics^*N
+
+^*GB06,   6: 4-Suit Jacoby Transfers - Transfer to Minors^*N
+ 
+^*GB07,   7:  Garbage Stayman ^*N
+
+^*GB08,   8:  Weak NT Opening Bids^*N
+
+^*GLast,   9: More Quizzes^*N
+
+^*GQA,   10: Questions and Answers^*N
+
+^*GTRAN,   11: The Complete Transcript of the Session^*N
+
+^*GHelp,   12: Introductions and Help Notes^*N
+
+} @0|CP||
+ht|d|AT|^p@2^Z@3This presentation is based on the second lesson of a five-lesson series on "Fundamentals of Constructive Bidding" by Howard Schutzman (BBO nickname "hondo717") in the BIL. You can find the original material under the "Introduction to Constructive Bidding" in the "Tutorials" section in his web site at ^*Hwww.bridgesights.com/hondobridge^*N. Further, he has supervised this presentation for which I am thankful.
+
+Moreover, I would like to thank Marge DeFries (BBO nickname "mardef") for editing  these presentations.
+
+To begin the presentation, in BBO click the forward arrow, right bottom of the screen. In the Viewer click "Next Page", top of the screen left. You can also view this presentation in sections by clicking the desired topic from the Table of Contents. Click |cP|1|CS||at|^*GHelp,HELP^*N|CP||AT| here for additional help. 
+|ht|w|AT|^p@2^z@3Prepared by Kia (BBO nickname "nome"). ^*BLast update: November 2016^*N.|
+pg| ***** 0 ***** |
+
+
+NT||
+TU|y|qx|BIL, Beginner Intermediate Lounge - Our Home|CS|1|CP|4|HT|d|FP|2|at|
+^-
+{      Beginner Intermediate Lounge, Our Home      }
+^-|CP||fp|2|ht|f|at|^c@2^z@3Maureen Hall |FP||AT|( hallway on BBO) wanted somewhere on BBO :
+
+^D* Where teachers could give lessons without interference from Advanced players
+
+^D* Where beginner players could get to meet one another and play together to practice
+
+^D* For the beginner to go to and have one-on-one lessons with a mentor free from interruptions.
+
+Maureen asked BBO for a Private Club to be called the Beginner Intermediate Lounge and so the BIL began on September 3, 2003.
+
+With the dedicated help of a great team of Volunteers, Teachers & Mentors the BIL provides learning opportunities for the membership daily – activities include Open Teaching Sessions, Tournaments, Beginner Courses, One on One Mentoring, visits from the Bridge Elite.
+
+In 2005  having a  Library for  storing all the lessons notes and help notes for using BBO became a priority and work began on developing a suitable web site. A major project-–the BIL Library--was opened in Aug 2007. Today members have access to it 24/7.  The archives grow daily and an important feature of the Library is the growing section of Bridge Movies which with their interactive features are an outstanding way to study the game.
+
+Maureen encourages all members to contribute to the Library, to participate in the BIL Forum (the Alfresco Café), and to send in articles and suggestions for publication in the monthly Gazette.
+
+Maureen Hall (hallway): Founder and Manager, Beginner Intermediate Lounge (BIL), ^*Hwww.bilbridge.com^*N Maureen@@bilbridge.com|
+PG| ***** 1 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%% Page
+TU|Y|qx|HOW, Howard our Mentor|CS|1|CP|4|HT|E|FP|2|at|^-
+{      Howard, Our Mentor      }
+^-|
+ 
+CP||fp|2|ht|f|at|
+^c@2^Y@3Howard Schutzman|FP||AT| is a teacher and expert player on Bridge Base Online. His nickname  on BBO is hondo717. Click |CP|1|AT|^*Hwww.bridgesights.com/hondobridge/bbohondo/bbohondo.htm^*N |CP||AT|to see an article that BBO wrote about Howard. He has been playing duplicate bridge for more than 40 years. Over the years, he has developed articles and notes on learning to play bridge. This material is presented at |CP|1|AT|^*Hwww.hondobridge.com/ ^*N|CP||AT|and is available for anyone to download at no charge. 
+
+In addition to frequent free bridge lessons, Howard runs two mentoring sessions each week. The first one is held every Tuesday at 2200 hour in the Main Bridge Club and the second at 2130 hour in the Beginner Intermediate Lounge (BIL) every Wednesday. All times are Eastern time. Kibitzers are always welcome at these sessions and encouraged to chat with Howard. His current schedule is posted on his web site. This BBO movie covers his recent session.
+
+Students are encouraged to mark Howard as a BBO friend and are welcome to watch him play and ask questions any time he is online. He will also gladly answer any questions sent to him via BBO e-mail. He also maintains an e-mail list of interested students to whom he sends these movies and other materials of interest. You may sign up for his e-mail list at his web site.|
+
+cp||fp|2|ht|v|at|
+©^*B Howard Schutzman "hondo717"    ^*N   
+    ^*Hwww.hondobridge.com/ ^*N
+^*B    hschutzman@@alum.mit.edu  ^*N|
+PG| ***** 2 ***** |
+
+
+nt||
+%%%%%%%%%%%Constructive Auctions after a 1NT Opening Bid
+
+TU||qx|B00,Constructive Auctions after a 1NT Opening Bid|nt||cs|2|fp|3|at|
+^-{        Constructive Auctions after a 1NT Opening Bid        
+}
+
+{ Constructive bidding is defined as auctions with 
+no interference by the opponents.}
+^-|fp||AT|^B@2^Y@3This is the second tutorial of a five-lesson series on the Fundamentals of Constructive Bidding held by Howard Schutzman (BBO nickname "hondo717") on September 30, 2010 in the BIL. The series consists of 5 lessons:
+
+^F- Introduction to Constructive Bidding ^Q- Presented on Aug 26, 2010
+^F- Constructive Auctions after a 1NT Opening Bid  ^q- Current presentation
+^F- Auctions Starting with 1 of a Major (Part 1) ^Q- To be presented on Oct 28, 2010
+^F- Auctions Starting with 1 of a Major (Part 2) ^Q- To be presented on Nov 18, 2010
+^F- Auctions Starting with 1 of a Minor ^q- To be presented on DEC 23, 2010
+|cp|8|AT|^B@2^Y@3
+
+
+"The purpose of these lessons is for students to learn the concepts behind constructive bidding. I have found that, although many students understand the (often complicated) rules about bidding, they do not understand the reasoning behind these rules. By learning the fundamentals rather than just the rules, a student will be able to more intuitively and comfortably bid, without being confused by the many (sometimes conflicting) rules that may or may not apply. Note that these lessons will not teach any particular system. It will simply teach the fundamentals upon which most bidding systems are built. A student should therefore be able to more comfortably play any of the popular systems."|CP||AT|
+^rHoward Schutzman|
+PG| ***** 3 ***** |
+
+
+NT||
+
+%%%%
+qx|B01,Constructive Auctions after a 1NT Opening Bid|
+cs|2|fp|3|at|^-
+{        Constructive Auctions after a 1NT Opening Bid       }
+^-|FP||at|^b@2^Y@3Constructive auctions after a 1NT opener are very straightforward. These auctions very much 
+illustrate the "responder is Captain" principle which we discussed in the last lesson. As opener, you should open 1NT if at all possible. This includes opening 1NT without stoppers in some suits and with a 5-card major. 1NT is a very descriptive bid--it shows 15-17 HCP and only 3 possible hand shapes (4-4-3-2, 5-3-3-2, and 4-3-3-3). |
+PG| ***** 4 ***** |
+
+
+AT|
+
+^-{ Responder Hand Categories }
+^-|AT|^b@2^Y@3
+In all of these lessons, I will assume the reader uses basic hand evaluation techniques. That is, he or she uses the standard 4-3-2-1 method for counting HCP and makes small adjustments for either shortness or length. I now teach, and prefer, the more accurate Bergen methodology, but because it is not familiar to everyone, I will not use it in these lessons.
+
+|
+PG| ***** 5 ***** |
+
+
+AT|As responder, hands fall into one of 3 categories--|CP|8|FP|2|AT|MINIMUM, MEDIUM, or MAXIMUM. |FP||CP||AT|The point ranges are slightly different than the ranges we discussed earlier.  The  point ranges are:|
+PG| ***** 6 ***** |
+
+
+CP|8|FP|2|AT|
+
+  ^cMinimum |FP||CP||AT|^f- no more than 7 points; game is not possible;|CP|8|FP|2|AT|
+  ^CMedium |FP||CP||AT|^f- 8-9 points; game is possible if opener has a maximum NT (defined below);|CP|8|FP|2|AT|
+  ^CMaximum |FP||CP||AT|^f- 10 or more points; you must bid game.|
+PG| ***** 7 ***** |
+
+
+AT|
+    
+When responder has a medium hand, opener is invited to bid game with maximum NT hand. A hand is considered maximum NT if it meets any of the following criteria:
+^C* Any hand with 17 HCP
+^C* Any hand with 16 HCP and a fit with responder's major suit
+^C* Any hand with 16 HCP and a 5-card suit
+^C* Any hand with 16 HCP, not 4-3-3-3 distribution, and at least two 10s or 9s.|
+PG| ***** 8 ***** |
+
+
+AT|
+  
+Now that you understand how to determine whether or not to bid game, the rest of the lesson will focus on how to determine whether the best contract is NT, hearts, or spades.|
+PG| ***** 9 ***** |
+
+
+cp|8|AT|
+
+^B@2^*BMovie Maker: ^*N|cp||at|Note that some partnerships open a hand 1NT with two doubletons--with certain requirements.|
+PG| ***** 10 ***** |
+
+
+%%%%%%%Page
+NT||cs|2|fp|3|at|
+^-
+{   Determining if You Should Explore for a Major Suit Fit   }
+|FP||AT| 
+As responder, it is easy to determine if you should explore for a major suit contract.|
+PG| ***** 11 ***** |
+
+
+AT|
+
+If you do not hold at least four cards in either major, you should not bother to look for a
+major suit fit. (On the few occasions when opener has a five-card major, you may miss a 5-3
+fit, but most of the time NT will play just as well anyway.)|
+PG| ***** 12 ***** |
+
+
+AT|
+
+If you do not have 4 or more cards in either major suit, your choices as responder are simple.|
+PG| ***** 13 ***** |
+
+
+AT|
+
+With a minimum hand (seven points or less), pass.|
+PG| ***** 14 ***** |
+
+
+AT|
+
+With a medium hand, bid 2NT. Partner should bid 3NT with a maximum NT hand (described earlier).|
+PG| ***** 15 ***** |
+
+
+AT|
+
+With a maximum hand, bid 3NT.|
+PG| ***** 16 ***** |
+
+
+AT|
+
+If, as responder, you have 4 or more cards in a major suit, you should use the |
+PG| ***** 17 ***** |
+
+
+cp|8|AT|
+
+^*BStayman^*N|
+PG| ***** 18 ***** |
+
+
+cp||at|
+
+or 
+
+|cp|8|AT|^*BJacoby Transfer^*N|cp||at|
+
+conventions as described in the next sections.  
+^-|
+PG| ***** 19 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%
+qx|B02,The Stayman Convention|cs|2|fp|3|at|
+^-{    The Stayman Convention    }
+|FP||AT|
+The Stayman Convention is used to find a 4-4 major suit fit in NT auctions.|
+PG| ***** 20 ***** |
+
+
+AT|
+You should only use Stayman if you have a |FP|2|CP|8|at|medium (8-9)|FP||CP||AT| or |FP|2|CP|8|at|maximum (10 or more)|FP||CP||AT| hand.
+Do not bid Stayman if you have a |CP|8|AT|minimum (0 to 7 points)|CP||AT| hand. 
+(The Garbage Stayman Convention is described in the Advanced Topics at the end of this tutorial. 
+If you decide to play garbage Stayman, then you can bid Stayman when you are 4-4 in the majors with a minimum response.)|
+PG| ***** 21 ***** |
+
+
+AT|
+
+You should bid Stayman if you have a medium or maximum hand and your hand meets any of the following criteria:|
+PG| ***** 22 ***** |
+
+
+cp|8|AT|
+{ You have one 4-card majors }|
+PG| ***** 23 ***** |
+
+
+AT|
+{ You have two 4-card majors }|
+PG| ***** 24 ***** |
+
+
+AT|
+{ You have one 4-card majors and one 5-card major }|
+PG| ***** 25 ***** |
+
+
+cp||AT|
+
+The Stayman convention is initiated when the responder bids 2@C.
+This is a completely artificial bid that says nothing about clubs.
+It is merely asking the NT opener if he has a 4 (or 5) card major.^-|
+PG| ***** 26 ***** |
+
+
+ht|n|AT|
+^BAfter the 2@C bid the opener must bid one of the following responses which says:
+|
+PG| ***** 27 ***** |
+
+
+ht|n|at|
+^BAfter the 2@C bid the opener must bid one of the following responses which says:
+|HT|P|AT|^B@2^Y@3
+{|ia|o1n2c2d|at|}|AT|^jOpener: I have no 4-card major.|
+PG| ***** 28 ***** |
+
+
+ht|n|at|
+^BAfter the 2@C bid the opener must bid one of the following responses which says:
+|HT|P|AT|^B@2^Y@3
+{|ia|o1n2c2d|at|}|AT|^jOpener: I have no 4-card major.|HT|r|
+AT|^i{|ia|o1n2c2h|at|}|HT|q|AT|^q@2^Y@3Opener: Good news. I have 4 (could be 5) hearts and possibly 4 spades.|
+pg| ***** 29 ***** |
+
+
+ht|n|at|
+^BAfter the 2@C bid the opener must bid one of the following responses which says:
+|HT|P|AT|^B@2^Y@3
+{|ia|o1n2c2d|at|}|AT|^jOpener: I have no 4-card major.|HT|r|
+AT|^i{|ia|o1n2c2h|at|}|HT|q|AT|^q@2^Y@3Opener: Good news. I have 4 (could be 5) hearts and possibly 4 spades.|HT|v|at|^B@2^Y@3
+{|ia|o1n2c2s|at|}|HT|v|AT|^j@2^Y@3Opener: I have four or possibly five spades but do not have four hearts.|
+PG| ***** 30 ***** |
+
+
+ht|n|at|
+^bAfter the 2@C bid the opener must bid one of the following responses which says:
+|HT|P|AT|^B@2^Y@3
+{|ia|o1n2c2d|at|}|AT|^jOpener: I have no 4-card major.|HT|r|
+AT|^i{|ia|o1n2c2h|at|}|HT|q|AT|^q@2^Y@3Opener: Good news. I have 4 (could be 5) hearts and possibly 4 spades.|HT|v|at|^B@2^Y@3
+{|ia|o1n2c2s|at|}|HT|v|AT|^j@2^Y@3Opener: I have four or possibly five spades but do not have four hearts.|ht|x|at|^j@2^Y@3After the opener's rebid, with a |CP|8|AT|medium|CP||AT| hand, responder should invite game or with |CP|8|AT|maximum|CP||AT| should bid game as we shall see in the following examples. Bidding slam is outside the scope of this lesson.|
+PG| ***** 31 ***** |
+
+
+NT||
+%%%%%%%%%%% page end of repeat
+HT|b|CS|6|AT|^-
+{      The Stayman Convention - Quizzes      }
+^-|HT|D|AT|^-Board S1
+^-|
+HT|F|at|^B@2
+You are South holding this medium hand.|HT|i|CS|4|at|^b{|ih|pSk976HAq95D98C654|at|}^jThe bidding is|
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2dp?|at|} 
+|hf|N|cq||lb|*BNow, what bid would you make?^^2n|HT|Q|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|If opener does not bid one of your 4-card majors, bid 2NT. This is also an invitational sequence. Opener has the following options:
+
+a) Usually opener will pass with a minimum NT opener, or 
+b) Opener will bid 3NT with a maximum opener (as defined in earlier section).| 
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2dp2n|at|} |
+pg| ***** 33 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%
+HT|b|CS|6|AT|^-
+{      The Stayman Convention - Quizzes      }
+^-|HT|D|AT|^-Board S2
+^-|
+HT|F|at|^B@2
+You are South holding this medium hand.|HT|i|CS|4|at|^b{|ih|pSk976HA59q5D98C654|at|}^jThe bidding is|
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2hp?|at|} 
+|hf|N|cq||lb|*BNow, what bid would you make?^^3h|HT|Q|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|If opener has bid one of your 4-card majors, raise to 3 (e.g., 1NT-2C-2H-3H), inviting opener to bid 4 with 16 or 17 points.| 
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2hp3h|at|} |
+pg| ***** 35 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%
+HT|b|CS|6|AT|^-
+{      The Stayman Convention - Quizzes      }
+^-|HT|D|AT|^-Board S3
+^-|
+HT|F|at|^B@2
+You are South holding this medium hand.|HT|i|CS|4|at|^b{|ih|pSk976HA59q5D98C654|at|}^jThe bidding is|
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2sp?|at|} 
+|hf|N|cq||lb|*BNow, what bid would you make?^^3s|HT|Q|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|Same as last board. If opener has bid one of your 4-card majors, raise to 3 (e.g., 1NT-2C-2S-3S), inviting opener to bid 4 with 16 or 17 points.| 
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2sp3s|at|} |
+pg| ***** 37 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%
+HT|b|CS|6|AT|^-
+{      The Stayman Convention - Quizzes      }
+^-|HT|D|AT|^-Board S4
+^-|
+HT|F|at|^B@2
+You are North (opener) holding this maximum hand.|HT|i|CS|4|at|^b{|ih|pSk976HAq65Dak9Cjt|at|}^jThe bidding is|
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2hp2np?|at|} 
+|hf|N|cq||lb|*BNow, what bid would you make?^^4s|HT|Q|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|If the auction proceeds 1NT-2C-2H-2NT, responder must have 4 spades. Initiating Stayman guarantees at least one 4-card major, and since responder did not raise hearts, responder must have 4 spades. Therefore, if opener has 4 spades as well as 4 hearts, opener should accept responder's game invitation with 16 or 17 points and bid 4S | 
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2hp2np4s|at|} |
+pg| ***** 39 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%% bs4a
+HT|b|CS|6|AT|^-
+{      The Stayman Convention - Quizzes      }
+^-|HT|D|AT|^-Board S4a
+^-|
+HT|F|at|^B@2
+You are North (opener) holding this hand.|HT|i|CS|4|at|^b{|ih|pSk976HAj65Daq9Cjt|at|}^jThe bidding is|
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2hp2np?|at|} 
+|hf|N|cq||lb|*BNow, what bid would you make?^^3s|HT|Q|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|If the auction proceeds 1NT-2C-2H-2NT, responder must have 4 spades. Initiating Stayman guarantees at least one 4-card major, and since responder did not raise hearts, responder must have 4 spades. Therefore, if opener has 4 spades as well as 4 hearts, opener should correct to 3@S with 15 points. Opener does not have enough to accept responder's game invitation. | 
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2hp2np3s|at|} |
+pg| ***** 41 ***** |
+
+
+nt||
+%%%%%%%%%%%%%% bs5
+HT|b|CS|6|AT|^-
+{      The Stayman Convention - Quizzes      }
+^-|HT|D|AT|^-Board S5
+^-|
+HT|F|at|^B@2
+You are South holding this medium hand.|HT|i|CS|4|at|^b{|ih|pSjt986HAK95D 98C54|at|}^jThe bidding is|
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2dp?|at|} 
+|hf|N|cq||lb|*BNow, what bid would you make?^^2s|HT|Q|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|If opener bids 2D and responder has a 5-card major, responder should bid it (e.g., 1NT-2C-2D-2S). Opener then has the following options: 
+a) With 15 points, opener does not have enough to accept responder's invitation and should pass. If opener has 3-card support to an honor, he can raise to 3, giving responder one last chance to bid a thin game. 
+b) With 16 points and 2-card support, opener will often pass. However, if opener has a 16-point maximum NT bid (as described earlier), he can bid 3NT. 
+c) With 17 points and 2-card support, opener should accept responder's invitation and bid 3NT. 
+d) With 17 points and 3-card support, opener should bid game in the major. | 
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2dp2s|at|} |
+pg| ***** 43 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%
+HT|b|CS|6|AT|^-
+{      The Stayman Convention - Quizzes      }
+^-|HT|D|AT|^-Board S6
+^-|
+HT|F|at|^B@2
+You are South holding this hand.|HT|i|CS|4|at|^b{|ih|pSq896HKJ52D65C954|at|}^jThe bidding is|
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2dp?|at|} 
+|hf|N|cq||lb|*BNow, what bid would you make?^^??|HT|Q|cp|8|AT|
+^B@2^Y@3^*BMovie Maker: ^*N|cp||fp|2|at|Trick question to see whether you are paying attention. You do not have enough points to bid Stayman. You should have passed. Let us move to the examples when responder has a maximum hand.| 
+ht|i|va|6|cs|6|at|^n{|ia| 1npppp|at|} |
+pg| ***** 45 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%% maximum responder hand s7
+HT|b|CS|6|AT|^-
+{      The Stayman Convention - Quizzes      }
+^-|HT|D|AT|^-Board S7
+^-|
+HT|F|at|^B@2
+You are South holding this maximum hand.|HT|i|CS|4|at|^b{|ih|pSkq76HA59q5D98C654|at|}^jThe bidding is|
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2dp?|at|} 
+|hf|N|cq||lb|*BNow, what bid would you make?^^3n|HT|Q|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|If opener does not bid one of your 4-card majors, bid 3NT. Normally opener will pass. However, if the auction proceeds 1NT-2C-2H-3NT, responder must have 4 spades, using the same reasoning as before. Therefore, when opener has 4 spades as well as 4 hearts, he should correct 3N to 4S.| 
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2dp3n|at|} |
+pg| ***** 47 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%% s8
+HT|b|CS|6|AT|^-
+{      The Stayman Convention - Quizzes      }
+^-|HT|D|AT|^-Board S8
+^-|
+HT|F|at|^B@2
+You are South holding this maximum hand.|HT|i|CS|4|at|^b{|ih|pSkq76HA59q5D98C654|at|}^jThe bidding is|
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2hp?|at|} 
+|hf|N|cq||lb|*BNow, what bid would you make?^^4h|HT|Q|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|If opener has bid one of your 4-card majors, raise to 4 (e.g. 1NT-2C-2H-4H). | 
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2hp4h|at|} |
+pg| ***** 49 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%% s9
+HT|b|CS|6|AT|^-
+{      The Stayman Convention - Quizzes      }
+^-|HT|D|AT|^-Board S9
+^-|
+HT|F|at|^B@2
+You are South holding this maximum hand.|HT|i|CS|4|at|^b{|ih|pSkq76HA59q5D98C654|at|}^jThe bidding is|
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2sp?|at|} 
+|hf|N|cq||lb|*BNow, what bid would you make?^^4s|HT|Q|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|If opener has bid one of your 4-card majors, raise to 4 (e.g. 1NT-2C-2S-4S).| 
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2dp4s|at|} |
+pg| ***** 51 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%s10
+HT|b|CS|6|AT|^-
+{      The Stayman Convention - Quizzes      }
+^-|HT|D|AT|^-Board S10
+^-|
+HT|F|at|^B@2
+You are South holding this maximum hand.|HT|i|CS|4|at|^b{|ih|pSkq764HA59q5D98C65|at|}^jThe bidding is|
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2dp?|at|} 
+|hf|N|cq||lb|*BNow, what bid would you make?^^3s|HT|Q|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|If opener bids 2D and responder has a 5-card major, responder should bid 3 of that suit (e.g. 1NT-2C-2D-3S). Opener should bid 3NT with 2-card support, and 4 of the major with 3-card support. | 
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2dp3s|at|} |
+pg| ***** 53 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%% s11
+HT|b|CS|6|AT|^-
+{      The Stayman Convention - Quizzes      }
+^-|HT|D|AT|^-Board S11
+^-|
+HT|F|at|^B@2
+You are South holding this maximum hand.|HT|i|CS|4|at|^b{|ih|pSkq76HA594q5D98C65|at|}^jThe bidding is|
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2dp?|at|} 
+|hf|N|cq||lb|*BNow, what bid would you make?^^3h|HT|Q|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|If opener bids 2D and responder has a 5-card major, responder should bid 3 of that suit (e.g. 1NT-2C-2D-3H). Opener should bid 3NT with 2-card support, and 4 of the major with 3-card support. | 
+ht|i|va|6|cs|6|at|^n{|ia| 1np2cp2dp3h|at|} |
+pg| ***** 55 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%% s12
+HT|b|CS|6|AT|^-
+{      The Stayman Convention - Quizzes      }
+^-|HT|D|AT|^-Board S12
+^-|
+HT|F|at|^B@2
+You are South holding this maximum hand.|HT|i|CS|4|at|^b{|ih|pSkq7HA5qD5t98Ct86|at|}^jThe bidding is|
+ht|i|va|6|cs|6|at|^n{|ia| 1np?|at|} 
+|hf|N|cq||lb|*BNow, what bid would you make?^^3N|HT|Q|cp|8|AT|
+^B@2^Y@3^*BMovie Maker: ^*N|cp||fp|2|at|Trust me, 3NT is the best contract. Let your partner shine while you are having a drink. | 
+ht|i|va|6|cs|6|at|^n{|ia| 1np3nPPP|at|} |
+pg| ***** 57 ***** |
+
+
+ht|u|at|
+Next, let us mix it up and have a fun practicing the responses to a 1NT opener. Partner has opened 1NT and the responder, the Captain, takes charge.|
+PG| ***** 58 ***** |
+
+
+NT||
+%%%%%%%Page Check thing from here<<<<<<<<<<<<<<<<<<<<
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 1
+cs|2|at|
+^-{ ^*BConstructive Auctions after a 1NT Opening Bid^*N }
+
+{ Responder Has a Medium Hand - 8-9  Points }
+^-|HT|e|AT|^-Board 1
+^-|
+HT|F|at|^B@2
+Partner opened 1NT and you have this hand.|HT|i|cs|1|at|^b{|ih|pSt965hkj95dat4c76|at|}|ht|i|va|6|cs|6|at|^n{|ia|,1np?|at|}|hf|N|cq||lb|*BWhat bid would you make?^^2c|ht|i|va|6|cs|6|at|^n{|ia|,1np2cp2hp?|at|}|HT|J|at|^i  And with this bidding|hf|N|cq||lb|*BWhat bid would you make now?^^3h|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|3@H is the correct answer. After your Stayman bid opener is promising at least four hearts. Therefore with a medium hand, responder should raise, inviting opener to bid 4@H with a maximum hand.|ht|i|va|6|cs|6|at|^n{|ia|,1np2cp2hp3h|at|} |
+pg| ***** 61 ***** |
+
+
+nt||
+%%%%%%%%%%%% b2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 2
+cs|2|at|
+^-{ ^*BConstructive Auctions after a 1NT Opening Bid^*N }
+
+{Responder Has a Medium Hand - 8-9  Points}
+^-|HT|e|AT|^-Board 2
+^-|
+HT|F|at|^B@2
+Partner opened 1NT and you have this hand.|HT|i|cs|1|at|^b{|ih|pSt965hkj95dat4c76 |at|}|ht|i|va|6|cs|6|at|^n{|ia|,1np?|at|}|hf|N|cq||lb|*BWhat bid would you make?^^2c|ht|i|va|6|cs|6|at|^n{|ia|,1np2cp2d |at|}|HT|J|AT|^I  And with this bidding 
+|hf|N|cq||lb|*BNow, What bid would you make?^^2n|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|Bid 2NT. You bid Stayman asking opener to define his/her hand more and opener denied holding one of your 4-card majors. Next, you should bid 2NT, inviting opener to bid 3NT with a maximum hand.| 
+ht|i|va|6|cs|6|at|^n{|ia|,1np2cp2dp2n |at|} |
+pg| ***** 64 ***** |
+
+
+nt||
+%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 3
+cs|2|at|
+^-{^*BConstructive Auctions after a 1NT Opening Bid^*N }
+
+{Responder Has a Medium Hand - 8-9  Points}
+^-|HT|e|AT|^-Board 3
+^-|
+HT|F|at|^B@2
+Partner opened 1NT and you have this hand.|HT|i|cs|1|at|^b{|ih|pht965skj95dat4c76 |at|}|ht|i|va|6|cs|6|at|^n{|ia|,1np?|at|}|hf|N|cq||lb|*BWhat bid would you make?^^2c|HT|J|AT|^I  And with this bidding|ht|i|va|6|cs|6|at|^n{|ia|,1np2cp2sp?|at|} 
+|hf|N|cq||lb|*BWhat bid would you make?^^3s|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|After your Stayman bid, opener is promising four spades. Opener should bid 2H holding four cards in both majors. Therefore, with a medium hand, responder should raise, inviting opener to bid 4S with a maximum hand. There is also one other wrinkle for opener which we look at it next.| 
+ht|i|va|6|cs|6|at|^n{|ia|,1np2cp2sp3s|at|} |
+pg| ***** 67 ***** |
+
+
+nt||
+%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 4
+cs|2|at|
+^-{^*BConstructive Auctions after a 1NT Opening Bid^*N }
+
+{ Responder Has a Medium Hand - 8-9  Points }
+^-|HT|e|AT|^-Board 4
+^-|
+HT|F|at|^B@2
+Partner opened 1NT and you have this hand.|HT|i|cs|1|at|^b{|ih|pSat96hkj9dt94c876 |at|}|ht|i|va|6|cs|6|at|^n{|ia|,1np?|at|} 
+|hf|N|cq||lb|*BWhat bid would you make?^^2c|HT|J|AT|^I  And with this bidding|ht|i|va|6|cs|6|at|^n{|ia|,1np2cp2hp?|at|} 
+|hf|N|cq||lb|*BNow, what bid would you make?^^2n|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|In this auction after the Stayman bid, opener promised four hearts. However, opener may have four spades as well. Therefore, after 2NT bid, opener should bid 3@S with 15 points and 4@S with 16 or 17 points (since responder must have 4 spades to bid Stayman).| 
+ht|i|va|6|cs|6|at|^n{|ia|,1np2cp2hp2n|at|} |
+pg| ***** 70 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 5
+cs|2|at|
+^-{ ^*BConstructive Auctions after a 1NT Opening Bid^*N }
+
+{ Responder Has a Medium Hand - 8-9  Points }
+^-|HT|e|AT|^-Board 5
+^-|
+HT|F|at|^B@2
+Partner opened 1NT and you have this hand.|HT|i|cs|1|at|^b{|ih|pSt9hkj965dat4c765 |at|}|
+ht|i|va|6|cs|6|at|^n{|ia|,1np?|at|} 
+|hf|N|cq||lb|*BWhat bid would you make?^^2D|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|The correct bid is 2D which is Jacoby Transfer--we will discuss this next. You should not bid Stayman. You only use Stayman with one 4-card major, two 4-card majors, or 4-5 in the majors. This hand simply has a 5-card heart suit and is a classic hand for using a transfer. We will review Jacoby Transfer next. | 
+ht|i|va|6|cs|6|at|^n{|ia|,1np2d|at|} |
+pg| ***** 72 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 6
+cs|2|at|
+^-{^*BConstructive Auctions after a 1NT Opening Bid^*N }
+
+{Responder Has a Maximum Hand - Ten or more  points }
+^-|HT|e|AT|^-Board 6
+^-|
+HT|F|at|^B@2
+Partner opened 1NT and you have this hand.|HT|i|cs|1|at|^b{|ih|pSkt96hkj95dat4c76 |at|}|ht|i|va|6|cs|6|at|^n{|ia|,1np?|at|} 
+|hf|N|cq||lb|*BWhat bid would you make?^^2c|HT|J|AT|^I  And with this bidding|ht|i|va|6|cs|6|at|^n{|ia|,1np2cp2hp?|at|} 
+|hf|N|cq||lb|*BNow, what bid would you make?^^4h|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|Bid 4H. After your Stayman bid, if opener has bid one of your 4-card majors, raise that major to 4. Here opener shows at least a 4-card heart suit but does not deny holding a 4-card spade suit.| 
+ht|i|va|6|cs|6|at|^n{|ia|,1np2cp2hp4h|at|} |
+pg| ***** 75 ***** |
+
+
+nt||
+%%%%%%%%%%%%b7
+cs|2|at|
+^-{ ^*BConstructive Auctions after a 1NT Opening Bid^*N }
+
+{ Responder Has a Maximum Hand - Ten or more  points }
+^-|HT|e|AT|^-Board 7
+^-|
+HT|F|at|^B@2
+Partner opened 1NT and you have this hand.|HT|i|cs|1|at|^b{|ih|phkt96skj95datc765 |at|}|ht|i|va|6|cs|6|at|^n{|ia|,1np?|at|}|hf|N|cq||lb|*BNow, what bid would you make?^^2c|HT|J|AT|^I  And with this bidding|ht|i|va|6|cs|6|at|^n{|ia|,1np2cp2sp?|at|} 
+|hf|N|cq||lb|*BNow, what bid would you make?^^4s|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|4S is the correct bid. Your first bid, Stayman, was correct. If opener has bid one of your 4-card majors, with a maximum hand you should raise to 4. Here opener promises four spades and denies holding four hearts.| 
+ht|i|va|6|cs|6|at|^n{|ia|,1np2cp2sp4s|at|} |
+pg| ***** 78 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 8
+cs|2|at|
+^-{^*BConstructive Auctions after a 1NT Opening Bid^*N}
+
+{Responder Has a Maximum Hand - Ten or more  points}
+^-|HT|e|AT|^-Board 8
+^-|
+HT|F|at|^B@2
+Partner opened 1NT and you have this hand|HT|i|cs|1|at|^b{|ih|pSkt96hkj95dat4c76|at|}|ht|i|va|6|cs|6|at|^n{|ia|,1np?|at|} 
+|hf|N|cq||lb|*BNow, What bid would you make?^^2c|HT|J|AT|^I  And with this bidding|ht|i|va|6|cs|6|at|^n{|ia|,1np2cp2dp?|at|} 
+|hf|N|cq||lb|*BNow, What bid would you make?^^3n|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|First you bid 2C--Stayman. Then, with a maximum hand you bid 3NT when opener denies holding any four-card major.| 
+ht|i|va|6|cs|6|at|^n{|ia|,1np2cp2dp3n|at|} |
+pg| ***** 81 ***** |
+
+
+nt||
+%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 9
+cs|2|at|
+^-{^*BConstructive Auctions after a 1NT Opening Bid^*N }
+
+{ Responder Has a Maximum Hand - Ten or more  points }
+^-|HT|e|AT|^-Board 9
+^-|
+HT|F|at|^B@2
+Partner opened 1NT and you have this hand.|HT|i|cs|1|at|^b{|ih|pSkt96hkj9dat4c765 |at|}|ht|i|va|6|cs|6|at|^n{|ia|,1np?|at|} 
+|hf|N|cq||lb|*BWhat bid would you make?^^2c|HT|J|AT|^I  And with this bidding|ht|i|va|6|cs|6|at|^n{|ia|,1np2cp2hp?|at|} 
+|hf|N|cq||lb|*BNow, what bid would you make?^^3n|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|First you bid Stayman and then 3NT. By bidding 3NT you inform the opener that you do not have a four-card heart suit and by inference the opener now knows that you must have four spades. So, opener can correct the 3NT to 4S holding four spades. On the other hand, opener can pass 3NT if in fact he/she does not have four spades. As you recall a bid of 2H by opener does not deny holding four cards in both majors.| 
+ht|i|va|6|cs|6|at|^n{|ia|,1np2cp2hp3n|at|} |
+pg| ***** 84 ***** |
+
+
+nt||
+%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B 10
+cs|2|at|
+^-{ ^*BConstructive Auctions after a 1NT Opening Bid^*N }
+
+{ Responder Has a Maximum Hand - Ten or more  points }
+^-|HT|e|AT|^-Board 10
+^-|
+HT|F|at|^B@2
+Partner opened 1NT and you have this maximum hand.|HT|i|cs|1|at|^b{|ih|pSkt9hkj965datc765 |at|}|
+ht|i|va|6|cs|6|at|^n{|ia|,1np?|at|} 
+|hf|N|cq||lb|*BWhat bid would you make?^^2d|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|Again, with only a five-card major you bid Jacoby Transfer. You would bid Stayman if your club five was a spade. | 
+ht|i|va|6|cs|6|at|^n{|ia|,1np2d|at|}|
+PG| ***** 86 ***** |
+
+
+fp||HT|F|at|^B@2
+Partner opened 1NT and you have this maximum hand.|HT|i|fp||cs|1|at|^b{|ih|pSkt95hkj965datc76 |at|}|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|Again, with only a five-card major you bid Jacoby Transfer. You would bid Stayman if your club five was a spade. Now, with the hand changed you can bid Stayman.|ht|i|va|6|cs|6|at|^n{|ia|,1np2C|at|}|
+pg| ***** 87 ***** |
+
+
+nt||
+%%%%%%%%%%%% new Jacoby
+%%%%%%%%%%%%%%% Jacoby Transfer
+qx|B03,The Jacoby Transfer Convention|cs|2|fp|3|at|
+^-{    The Jacoby Transfer Convention    }
+|FP|2|cp|8|AT|Jacoby Transfers|CP||FP||AT| were devised to allow the 1NT opener to play the hand.
+This is often advantageous, because it is more likely that the defense will give away a trick on  opening lead
+if the strong hand (the 1NT opener) plays the last card at trick 1.
+In fact, when the strong hand is concealed, you may take more than one additional trick
+because the defense has to guess more.|
+PG| ***** 88 ***** |
+
+
+AT|
+
+As responder, you should use Jacoby Transfers under the following circumstances:|
+PG| ***** 89 ***** |
+
+
+AT|
+{ If you have a 6-card or longer major (even with 4 cards in the other major), even if you have a minimum hand. } |
+PG| ***** 90 ***** |
+
+
+AT| 
+{ If you have a 5-card major and a minimum hand (even if you also have a 4-card major). }|
+PG| ***** 91 ***** |
+
+
+AT|
+{ If you have a medium or maximum hand, a 5-card major and not precisely 4 cards in the other major
+(as described earlier, you should use Stayman with a non-minimum and 5-4 in the majors). }|
+PG| ***** 92 ***** |
+
+
+AT|
+{ Note: with 5-5 in the majors, you should use Jacoby Transfer. }|
+PG| ***** 93 ***** |
+
+
+AT|
+{ And finally, if your hand qualifies, you should transfer even if you have very few points 
+( even with 0 HCP!). It is always easier to play in a suit than in NT, particularly when responder is weak. }
+^-|
+PG| ***** 94 ***** |
+
+
+HT|p|At|
+^CTransfers work as follows:|HT|q|at| 
+^CWith 5 hearts, responder bids 2@D (artificial).|HT|r|AT|
+^cOpener is required to bid 2@H (you have "transferred" the heart contract to opener).|
+PG| ***** 95 ***** |
+
+
+HT|p|AT|
+^CTransfers work as follows:|HT|q|AT| 
+^CWith 5 hearts, responder bids 2@D (artificial).|HT|r|AT|
+^COpener is required to bid 2@H (you have "transferred" the heart contract to opener).|HT|s|AT|
+^CWith 5 spades, responder bids 2@H (artificial).
+^COpener is required to bid 2@S (you have "transferred" the spade contract to opener).|
+PG| ***** 96 ***** |
+
+
+HT|p|AT|
+^CTransfers work as follows:|HT|q|AT| 
+^CWith 5 hearts, responder bids 2@D (artificial).|HT|r|AT|
+^COpener is required to bid 2@H (you have "transferred" the heart contract to opener).|HT|s|AT|
+^CWith 5 spades, responder bids 2@H (artificial).
+^COpener is required to bid 2@S (you have "transferred" the spade contract to opener).|ht|v|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|I have more details in the Advanced Topics section at the end of the tutorial, but it is imperative you understand the principles above before tackling the Advanced Topics.|
+PG| ***** 97 ***** |
+
+
+HT|Z|cp|8|AT|
+^B@2^*BMovie Maker: ^*N|cp||at|For general guidelines for responder, let us look at some examples.|
+PG| ***** 98 ***** |
+
+
+NT||
+%% examples for responder J1
+st||pn|You,,Partner,|rh||ah|Jacoby Transfer|ah|Example J1|md|3St96hkj954dqt4c76,,,|sv|0|
+mb|1np?|lb|*bWhat bid would you make?^^2d|mb|2d|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|2@D is correct. Responder has a minimum hand @- 7 points or less.|
+pg| ***** 100 ***** |
+
+
+NT||mb|p2hp?|lb|*bWhat bid would you make now?^^p|mb|p|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|With a minimum hand, you pass. Transfer to hearts is completed.|
+pg| ***** 102 ***** |
+
+
+NT||
+%%J1a
+st||pn|You,,Partner,|rh||ah|Jacoby Transfer|ah|Example J1a|md|3ht96skj954dqt4c76,,,|sv|0|
+mb|1np?|lb|*bWhat bid would you make?^^2h|mb|2h|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|With this board you have 5 spades. 2@H is the correct bid to transfer to spades.|
+pg| ***** 104 ***** |
+
+
+NT||mb|p2sp?|lb|*bWhat bid would you make now?^^p|mb|p|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|With a minimum hand, you pass. Transfer to spades is completed.|
+pg| ***** 106 ***** |
+
+
+NT||
+%%%%%% J2
+st||pn|You,,Partner,|rh||ah|Jacoby Transfer|ah|Example J2|md|3St9hkqj954dqt4c76,,,|sv|0|
+mb|1np?|lb|*bWhat bid would you make?^^2d|mb|2d|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|With six hearts you bid 2@D to transfer to hearts.|
+pg| ***** 108 ***** |
+
+
+NT||mb|p2hp?|lb|*bWhat bid would you make now?^^3h|mb|3h|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|3@H is the correct answer. After a Transfer, invite game with a 6-card suit.|
+pg| ***** 110 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%% J2a
+st||pn|You,,Partner,|rh||ah|Jacoby Transfer|ah|Example J2a|md|3Sj96hkj954dkt4c76,,,|sv|0|
+mb|1np?|lb|*bWhat bid would you make?^^2d|mb|2d|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|2@D, transfer to hearts, is correct. The hand has 8 HCP.|
+pg| ***** 112 ***** |
+
+
+NT||mb|p2hp?|lb|*bWhat bid would you make now?^^2n|mb|2n|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|With a medium hand and a 5-card major, invite game by bidding 2NT.|
+pg| ***** 114 ***** |
+
+
+nt||
+%%%% J3
+st||pn|You,,Partner,|rh||ah|Jacoby Transfer|ah|Example J3|md|3ht9skq9854dkt4c76,,,|sv|0|
+mb|1np?|lb|*bWhat bid would you make?^^2h|mb|2h|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|You have six spades and a medium hand. Bid 2H to transfer to spades.|
+pg| ***** 116 ***** |
+
+
+NT||mb|p2sp?|lb|*bWhat bid would you make now?^^3s|mb|3s|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|3@S is the correct answer. After a Transfer, invite game with 6-card suit.|
+pg| ***** 118 ***** |
+
+
+nt||
+%%%%% J3a
+st||pn|You,,Partner,|rh||ah|Jacoby Transfer|ah|Example J3a|md|3ht96skj954dat4c76,,,|sv|0|
+mb|1np?|lb|*bWhat bid would you make?^^2h|mb|2h|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|2@H is the correct bid @- transfer to spades.|
+pg| ***** 120 ***** |
+
+
+NT||mb|p2sp?|lb|*bWhat bid would you make now?^^2n|mb|2n|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|With a medium hand and a 5-card major, invite game by bidding 2NT.|
+pg| ***** 122 ***** |
+
+
+nt||
+%%%%%%%%% J4
+st||pn|You,,Partner,|rh||ah|Jacoby Transfer|ah|Example J4|md|3Sajthkj985dqt4c76,,,|sv|0|
+mb|1np?|lb|*bWhat bid would you make?^^2d|mb|2d|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|2@D is the correct bid.|
+pg| ***** 124 ***** |
+
+
+NT||mb|p2hp?|lb|*bWhat bid would you make now?^^3n|mb|3n|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|Bid 3NT with a 5-card suit and a maximum hand.|
+pg| ***** 126 ***** |
+
+
+nt||
+%%%%%%%%% J4a
+st||pn|You,,Partner,|rh||ah|Jacoby Transfer|ah|Example J4a|md|3Sajhkj9543dqt4c76,,,|sv|0|
+mb|1np?|lb|*bWhat bid would you make?^^2d|mb|2d|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|2@D is the correct bid @- transfer to hearts.|
+pg| ***** 128 ***** |
+
+
+NT||mb|p2hp?|lb|*bWhat bid would you make now?^^4h|mb|4h|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|Bid 4@H with a 6-card suit and a maximum hand.|
+pg| ***** 130 ***** |
+
+
+nt||cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|For opener, if responder has invited game by bidding over the Transfer--2NT or 3H/S:|
+PG| ***** 131 ***** |
+
+
+AT| 
+• With a minimum, pass with 2-card support, correct to transferred suit with 3-card support, or bid game with 4-card support.|
+PG| ***** 132 ***** |
+
+
+AT|
+
+• With a maximum make sure you bid game (either 3NT with 2-card support or 4 of the major with 3+ card support).|
+PG| ***** 133 ***** |
+
+
+NT||at|
+
+^B@2^*BMovie Maker: ^*N|cp||at|More on the subject later. Next is the quiz section.|
+pg| ***** 134 ***** |
+
+
+nt||bt||
+
+%%%%%%%%%%%%%% Quizzes
+QX|B04,Quiz|md||cs|2|fp|3|at|
+^-
+{         Quizzes         }|
+CS||FP||AT|
+
+You are responder and your partner has opened 1NT. In the following hand
+a) determine the hand type (minimum, medium, maximum), and
+b) determine your next bid as well as what you will do over opener's possible responses.
+Hand 1
+|ht|h|cs|3|at|{|ih|pssk987hk632dj97c76|at|}|hf|M|
+lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^1|
+
+lb|*bWhat is your bid?^^P|at|
+
+
+Pass. Your hand is minimum.|
+PG| ***** 137 ***** |
+
+
+NT||
+%%%%%%%%%%%%
+AT|^-
+
+You are responder and your partner has opened 1NT. In the following hand
+a) determine the hand type (minimum, medium, maximum), and
+b) determine your next bid as well as what you will do over opener's possible responses.  
+
+Hand 2
+
+|ht|G|cs|3|at|{|ih|pssk987hk9632dj9c76|at|}|hf|l|
+lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^1|
+
+lb|*bWhat is your bid?^^2D|at|
+
+Your hand is minimum. Bid 2D (transfer to hearts) and pass the 2@H response by the opener.|
+PG| ***** 140 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%% 
+AT|^-
+
+You are responder and your partner has opened 1NT. In the following hand
+a) determine the hand type (minimum, medium, maximum), and
+b) determine your next bid as well as what you will do over opener's possible responses.
+
+Hand 3
+|ht|G|cs|3|at|{|ih|psk987hk632dQ97c76|at|}|hf|l|
+lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^2|
+
+lb|*bWhat is your bid?^^2C|at|
+
+Your hand is Medium.
+Bid 2@C (Stayman)
+Over 2@D, bid 2NT; partner should bind 3NT with a maximum.
+Over 2@H/2@S, bid 3@H/3@S; partner should raise to game with a maximum.|
+PG| ***** 143 ***** |
+
+
+NT||
+AT|^-
+
+You are responder and your partner has opened 1NT. In the following hand
+a) determine the hand type (minimum, medium, maximum), and
+b) determine your next bid as well as what you will do over opener's possible responses. 
+
+Hand 4
+|ht|G|cs|3|at|{|ih|psq87hk9863dk97c76|at|}|hf|l|
+lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^2|
+
+lb|*bWhat is your bid?^^2D|at|
+
+Your hand is Medium.
+Bid 2@D (transfer); over partner's 2@H bid 2NT.
+With 2 hearts and a minimum, partner should pass.
+With 2 hearts and a maximum, partner should bid 3NT.
+With 3+ hearts and a minimum, partner should bid 3@H (you should consider bidding 4@H).
+With 3+ hearts and a maximum, partner should bid 4@H.|
+PG| ***** 146 ***** |
+
+
+NT||   
+%%%%%%%%%%
+AT|^-
+
+You are responder and your partner has opened 1NT. In the following hand
+a) determine the hand type (minimum, medium, maximum), and
+b) determine your next bid as well as what you will do over opener's possible responses.
+
+Hand 5
+|ht|G|cs|3|at|{|ih|pskq87hk9632d97c76|at|}|hf|l|
+lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^2|
+
+lb|*bWhat is your bid?^^2c|at|
+
+Your hand is Medium.
+Bid 2@C (Stayman).
+Over 2@D, bid 2@H (showing a medium hand with 5@H and 4@S).
+Over 2@H, bid 3@H (or 4@H if you feel lucky).
+Over 2@S, bid 3@S.|
+PG| ***** 149 ***** |
+
+
+NT||   
+%%%%%%%%%%%%% 
+AT|^-
+
+You are responder and your partner has opened 1NT. In the following hand
+a) determine the hand type (minimum, medium, maximum), and
+b) determine your next bid as well as what you will do over opener's possible responses.
+
+Hand 6
+|ht|G|cs|3|at|{|ih|psk98hk64dq9874c76|at|}|hf|l|
+lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^2|
+
+lb|*bWhat is your bid?^^2n|at|
+
+Your hand is Medium.
+Bid 2NT; partner should bid 3 with a maximum.|
+PG| ***** 152 ***** |
+
+
+NT||
+%%%%%%%%
+AT|^-
+
+You are responder and your partner has opened 1NT. In the following hand
+a) determine the hand type (minimum, medium, maximum), and
+b) determine your next bid as well as what you will do over opener's possible responses.
+
+Hand 7
+|ht|G|cs|3|at|{|ih|psk9874hk9632d97c6|at|}|hf|l|
+lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^1|
+
+lb|*bWhat is your bid?^^2d|at|
+
+You hand is Minimum.
+Bid 2@D (transfer) or 2@H (transfer), your choice; pass partner's response.
+Responder is assured that opener has at least 2 cards in each major.|
+PG| ***** 155 ***** |
+
+
+NT||
+%%%%%%%%%%%%
+AT|^-
+
+You are responder and your partner has opened 1NT. In the following hand
+a) determine the hand type (minimum, medium, maximum), and
+b) determine your next bid as well as what you will do over opener's possible responses. 
+
+Hand 8
+|ht|G|cs|3|at|{|ih|pskj87hq32dkq975c6|at|}|hf|l|
+lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^3|
+
+lb|*bWhat is your bid?^^2c|at|
+
+Your hand is Maximum.
+Bid 2@C (Stayman).
+Over 2@D, bid 3NT.
+Over 2@H, bid 3NT (if partner has 4 hearts and 4 spades, he should bid 4@S).
+Over 2@S, bid 4@S.|
+PG| ***** 158 ***** |
+
+
+NT||
+%%%%%%%%
+AT|^-
+
+You are responder and your partner has opened 1NT. In the following hand
+a) determine the hand type (minimum, medium, maximum), and
+b) determine your next bid as well as what you will do over opener's possible responses. 
+
+Hand 9
+|ht|G|cs|3|at|{|ih|ps7hq32dkq987ck976|at|}|hf|l|
+lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^3|
+
+lb|*bWhat is your bid?^^3n|at|
+
+With a maximum hand the only bid is 3NT.
+You can bid neither Stayman nor Jacoby Transfer.|
+PG| ***** 161 ***** |
+
+
+NT||   
+%%%%%%%%%%%
+AT|^-
+
+You are responder and your partner has opened 1NT. In the following hand
+a) determine the hand type (minimum, medium, maximum), and
+b) determine your next bid as well as what you will do over opener's possible responses.
+
+Hand 10
+|ht|G|cs|3|at|{|ih|ps7hkq632dq97ck976|at|}|hf|l|
+lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^3|
+
+lb|*bWhat is your bid?^^2d|at|
+
+Your hand is Maximum.
+Bid 2@D (transfer).
+Over 2@H, bid 3NT; partner should bid 4@H with 3+ hearts.|
+PG| ***** 164 ***** |
+
+
+NT||
+%%%%%%%%%%%   
+AT|^-
+
+You are responder and your partner has opened 1NT. In the following hand
+a) determine the hand type (minimum, medium, maximum), and
+b) determine your next bid as well as what you will do over opener's possible responses.
+
+Hand 11
+|ht|G|cs|3|at|{|ih|pskj874hkq632d97c7|at|}|hf|l|
+lb|*mHow do you rate this hand?^Minimum~Medium~Maximum^3|
+
+lb|*bWhat is your bid?^^2h|at|
+
+Consider this a maximum hand. Further, partner must have a fit for one of your majors. So, bid 2@H (transfer).
+Over 2@S response, bid 4@H (showing 5 hearts and 5 spades).
+Partner should pass 4@H with better hearts or bid 4S with better spades.|
+PG| ***** 167 ***** |
+
+
+NT||
+%%%%%%%%%%%%%% Advanced Topics
+qx|B05,Advanced Topics|cs|2|at|
+^-{          ^*BAdvanced Topics^*N          }
+^-|FP||AT|^B@2
+For the interested reader, next is a set of more advanced topics:
+
+1. More Details on Jacoby Transfers
+2. 4-Suit Jacoby Transfers
+3. Garbage Stayman
+4. Weak NT Opening Bids
+
+These are optional. You may find them confusing. If so, just skip over them. They are not essential to your understanding of bidding over 1NT openers.|
+PG| ***** 168 ***** |
+
+
+nt||
+%%
+
+
+qx||cs|2|AT|^-
+{ More Details On Jacoby Transfers }
+
+This section contains more details about Jacoby Transfers.
+It simply gives examples of how to apply the principles I already described.
+I will repeat those principles here as a convenience to the reader.|
+PG| ***** 169 ***** |
+
+
+fp|2|AT|
+
+{ General set of guidelines for responder }
+
+^-|
+PG| ***** 170 ***** |
+
+
+ht|i|at|^B@2^*U
+Once the opener has accepted the transfer^*N|
+PG| ***** 171 ***** |
+
+
+ht|k|at|^b@2With a minimum hand, responder should ^*Bpass^*N. If responder has a weak hand, it is almost always better to play in responder's long suit (even with a 5-2 fit).|
+PG| ***** 172 ***** |
+
+
+ht|i|at|^B@2^*U
+Once the opener has accepted the transfer^*N
+|ht|k|at|^b@2With a minimum hand, responder should ^*Bpass^*N. If responder has a weak hand, it is almost always better to play in responder's long suit (even with a 5-2 fit).|ht|m|AT|^B@2
+With a medium hand, responder should invite game by bidding either:
+^C2NT with a 5-card suit, or 
+^C3 of a major with a 6-card suit).|
+PG| ***** 173 ***** |
+
+
+ht|i|at|^B@2^*U
+Once the opener has accepted the transfer^*N
+|ht|k|at|^b@2With a minimum hand, responder should ^*Bpass^*N. If responder has a weak hand, it is almost always better to play in responder's long suit (even with a 5-2 fit).|ht|m|AT|^B@2
+With a medium hand, responder should invite game by bidding either:
+^C2NT with a 5-card suit, or
+^C3 of a major with a 6-card suit).|ht|p|AT|
+With a maximum hand, responder should bid game by bidding either:
+^C3NT with a 5-card suit, or
+^C4 of a major with a 6-card suit).|
+PG| ***** 174 ***** |
+
+
+ht|i|at|^B@2^*U
+Once the opener has accepted the transfer^*N
+|ht|k|at|^b@2With a minimum hand, responder should ^*Bpass^*N. If responder has a weak hand, it is almost always better to play in responder's long suit (even with a 5-2 fit).|ht|m|AT|^B@2
+With a medium hand, responder should invite game by bidding either:
+^C2NT with a 5-card suit, or
+^C3 of a major with a 6-card suit).|ht|p|AT|
+With a maximum hand, responder should bid game by bidding either:
+^C3NT with a 5-card suit, or
+^C4 of a major with a 6-card suit).|ht|t|fp||cp|8|AT|
+^B@2^*BMovie Maker: ^*N|cp||at|Next, we like to repeat the examples for the above guidelines. You may recall the "J" series examples.  However, I would be adding the guidelines for opener, if responder has bid over the transfer as recommended by Howard.|
+PG| ***** 175 ***** |
+
+
+NT||
+%%%%%%% repeat of J series
+%%%%%%%%%%% examples for responder J1
+cs|2|at|
+^-{ ^*BConstructive Auctions after a 1NT Opening Bid^*N }
+
+{ Responder Has a Minimum Hand - 7 Points or Less }
+^-|HT|e|AT|^-Board J1R
+^-|
+HT|F|at|^B@2
+Partner opened 1NT and you have this hand.|HT|i|cs|1|at|^b{|ih|pSt96hkt954dqt4c76|at|}|ht|i|va|6|cs|6|at|^n{|ia|,1np?|at|}|hf|N|cq||lb|*BWhat bid would you make?^^2d|ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp?|at|}|HT|J|at|^i  And with this bidding|hf|N|cq||lb|*BWhat bid would you make now?^^p|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|With a minimum hand, you pass. Transfer to hearts is completed. If responder has a weak hand, it is almost always better to play in responder's long suit (even with a 5-2 fit). Yes, you can transfer with even fewer points than what you see here.|ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hpp|at|} |
+pg| ***** 178 ***** |
+
+
+nt||
+%%%%%%%%%%% examples for responder J1a
+cs|2|at|
+^-{ ^*BConstructive Auctions after a 1NT Opening Bid^*N }
+
+{ Responder Has a Minimum Hand - 7 Points or Less }
+^-|HT|e|AT|^-Board J1aR
+^-|
+HT|F|at|^B@2
+Partner opened 1NT and you have this hand.|HT|i|cs|1|at|^b{|ih|pht96skj954dt84c76|at|}|ht|i|va|6|cs|6|at|^n{|ia|,1np?|at|}|hf|N|cq||lb|*BWhat bid would you make?^^2h|ht|i|va|6|cs|6|at|^n{|ia|,1np2hp2sp?|at|}|HT|J|at|^i  And with this bidding|hf|N|cq||lb|*BWhat bid would you make now?^^p|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|With a minimum hand, you pass. Transfer to spades is completed.|ht|i|va|6|cs|6|at|^n{|ia|,1np2hp2spp|at|} |
+pg| ***** 181 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%% J2r
+cs|2|at|
+^-{ ^*BConstructive Auctions after a 1NT Opening Bid^*N }
+
+{ Responder Has a Medium Hand - 8-9  Points }
+^-|HT|e|AT|^-Board J2r
+^-|
+HT|F|at|^B@2
+Partner opened 1NT and you have this medium hand.|HT|i|cs|1|at|^b{|ih|pSt9hkqj954dqt4c76|at|}|ht|i|va|6|cs|6|at|^n{|ia|,1np?|at|}|hf|N|cq||lb|*BWhat bid would you make?^^2d|ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp?|at|}|HT|J|at|^i  And with this bidding|hf|N|cq||lb|*BWhat bid would you make now?^^3h|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|3@H is the correct answer. After Transfer, responder invites game with a six-card suit and a medium hand.|ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp3h|at|}|
+PG| ***** 184 ***** |
+
+
+HT|p|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|Opener passes with a minimum NT hand and with 2-card support,|ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp3hppp|at|} |
+pg| ***** 185 ***** |
+
+
+HT|s|at|Bids game with a minimum NT hand and 4-card support.|ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp3hp4h|at|}|
+PG| ***** 186 ***** |
+
+
+HT|u|at|With a maximum, opener should bid either 3NT with 2-card support, or |ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp3hp3n|at|}|
+PG| ***** 187 ***** |
+
+
+HT|w|at|4 of the major with 3+ card support.|ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp3hp4h|at|}
+|
+PG| ***** 188 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%% J2ar
+cs|2|at|
+^-{ ^*BConstructive Auctions after a 1NT Opening Bid^*N }
+
+{ Responder Has a Medium Hand - 8-9  Points }
+^-|HT|e|AT|^-Board J2ar
+^-|
+HT|F|at|^B@2
+Partner opened 1NT and you have this hand.|HT|i|cs|1|at|^b{|ih|pSj96hkj954dkt4c76|at|}|ht|i|va|6|cs|6|at|^n{|ia|,1np?|at|}|hf|N|cq||lb|*BWhat bid would you make?^^2d|ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp?|at|}|HT|J|at|^i  And with this bidding|hf|N|cq||lb|*BWhat bid would you make now?^^2n|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|With a medium hand and a five-card major responder invites game by bidding 2NT. |ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp2n|at|}|
+PG| ***** 191 ***** |
+
+
+HT|p|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|Opener passes with a minimum NT hand and with 2-card support, or |ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp2npp|at|}|
+PG| ***** 192 ***** |
+
+
+HT|r|at|
+With a minimum NT hand and 3-card support, opener corrects to transfer suit, or
+|ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp2np3h|at|}|
+PG| ***** 193 ***** |
+
+
+HT|t|at|Bids game with 4-card support.|ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp2np4h|at|}|
+PG| ***** 194 ***** |
+
+
+HT|v|at|With a maximum, opener should bid game (either 3NT with 2-card support or 4 of the major with 3+ card support).|ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp2np4h|at|}
+
+|
+pg| ***** 195 ***** |
+
+
+nt||
+%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% J3r
+cs|2|at|
+^-{ ^*BConstructive Auctions after a 1NT Opening Bid^*N }
+
+{ Responder Has a Medium Hand - 8-9  Points }
+^-|HT|e|AT|^-Board J3r
+^-|
+HT|F|at|^B@2
+Partner opened 1NT and you have this hand.|HT|i|cs|1|at|^b{|ih|pht9skq9854dkt4c76|at|}|ht|i|va|6|cs|6|at|^n{|ia|,1np?|at|}|hf|N|cq||lb|*BWhat bid would you make?^^2h|ht|i|va|6|cs|6|at|^n{|ia|,1np2hp2sp?|at|}|HT|J|at|^i  And with this bidding|hf|N|cq||lb|*BWhat bid would you make now?^^3s|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|3@S is the correct answer. After the transfer, responder should invite game with a 6-card suit and a medium hand.|ht|i|va|6|cs|6|at|^n{|ia|,1np2hp2sp3s|at|} |
+PG| ***** 198 ***** |
+
+
+HT|p|cp|8|AT|
+^B@2^Y@3^*BMovie Maker: ^*N|cp||fp|2|at|Do you recall what the guidelines are for the opener?|
+PG| ***** 199 ***** |
+
+
+HT|R|AT|
+Of course you do. But let me repeat them.|
+PG| ***** 200 ***** |
+
+
+AT|
+
+For opener, if responder has bid over the transfer: 
+• With a minimum, pass with 2-card support or 3-card support, bid game with 4-card support. 
+• With a maximum, opener should bid game. |
+pg| ***** 201 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%% J3ar
+cs|2|at|
+^-{ ^*BConstructive Auctions after a 1NT Opening Bid^*N }
+
+{ Responder Has a Medium Hand - 8-9  Points }
+^-|HT|e|AT|^-Board J3ar
+^-|
+HT|F|at|^B@2
+Partner opened 1NT and you have this medium hand.|HT|i|cs|1|at|^b{|ih|pht96skj954dat4c76|at|}|ht|i|va|6|cs|6|at|^n{|ia|,1np?|at|}|hf|N|cq||lb|*BWhat bid would you make?^^2h|ht|i|va|6|cs|6|at|^n{|ia|,1np2hp2sp?|at|}|HT|J|at|^i  And with this bidding|hf|N|cq||lb|*BWhat bid would you make now?^^2n|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|With a medium hand and a five-card major invite game by bidding 2NT.|ht|i|va|6|cs|6|at|^n{|ia|,1np2hp2sp2n|at|}|
+PG| ***** 204 ***** |
+
+
+HT|p|at|
+Opener should pass with a minimum hand and 2-card support, or |ht|i|va|6|cs|6|at|^n{|ia|,1np2hp2sp2npp|at|}|
+PG| ***** 205 ***** |
+
+
+HT|r|at|
+Correct back to the transfer suit with 3 card support, or |ht|i|va|6|cs|6|at|^n{|ia|,1np2hp2sp2np3s|at|}|
+PG| ***** 206 ***** |
+
+
+HT|t|at|
+Bid game with 4-card support, or |ht|i|va|6|cs|6|at|^n{|ia|,1np2hp2sp2np4S|at|}|
+PG| ***** 207 ***** |
+
+
+HT|v|at|
+With a maximum, opener should bid game (either 3NT with 2-card support or 4 of the major with 3+ card support). |ht|i|va|6|cs|6|at|^n{|ia|,1np2hp2sp2np4s|at|}|
+pg| ***** 208 ***** |
+
+
+nt||
+%%%%%%%%% J4r
+cs|2|at|
+^-{ ^*BConstructive Auctions after a 1NT Opening Bid^*N }
+
+{ Responder Has a Maximum Hand - More Than Ten Points }
+^-|HT|e|AT|^-Board J4r
+^-|HT|f|at|^B@2
+Partner opened 1NT and you have this hand.|HT|i|cs|1|at|^b{|ih|pSajthkj985dqt4c76|at|}|ht|i|va|6|cs|6|at|^n{|ia|,1np?|at|}|hf|N|cq||lb|*BWhat bid would you make?^^2d|ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp?|at|}|HT|J|at|^i  And with this bidding|hf|N|cq||lb|*BWhat bid would you make now?^^3n|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|Bid 3NT with a 5-card suit and a maximum hand.|ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp3n|at|}|
+PG| ***** 211 ***** |
+
+
+HT|q|at|Opener should pass with 2-card support or bid 4@H with 3+ card support.|ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp3n|at|} 
+
+|
+pg| ***** 212 ***** |
+
+
+nt||
+%%%%%%%%% J4ar
+cs|2|at|
+^-{ ^*BConstructive Auctions after a 1NT Opening Bid^*N }
+
+{ Responder Has a Maximum Hand - More Than Ten Points }
+^-|HT|e|AT|^-Board J4ar
+^-|
+HT|F|at|^B@2
+Partner opened 1NT and you have this hand.|HT|i|cs|1|at|^b{|ih|pSajhkj9543dqt4c76|at|}|ht|i|va|6|cs|6|at|^n{|ia|,1np?|at|}|hf|N|cq||lb|*BWhat bid would you make?^^2d|ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp?|at|}|HT|J|at|^i  And with this bidding|hf|N|cq||lb|*BWhat bid would you make now?^^4h|HT|n|cp|8|AT|
+^B@2^Y@3^*Bhondo717: ^*N|cp||fp|2|at|Bid 4@H with a 6-card suit and a maximum hand.|ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp4h|at|}|
+PG| ***** 215 ***** |
+
+
+ht|q|at|
+Opener should obey the captain and pass.|ht|i|va|6|cs|6|at|^n{|ia|,1np2dp2hp4hpp|at|}|
+PG| ***** 216 ***** |
+
+
+HT|t|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|I suggest you do not try to memorize every sequence. If you just use common sense, you can figure out what to do.|
+PG| ***** 217 ***** |
+
+
+NT||
+
+%%%%%%%%%%%%%%%%
+qx||cs|2|AT|^-
+{ More Details On Jacoby Transfers }
+
+{ With 5-5 Hands }
+
+^-|
+HT|e|AT|^B@2^Y@3With 5-5 or better in the majors, responder should bid 2@H (transfer to 2@S). |
+PG| ***** 218 ***** |
+
+
+HT|e|AT|^B@2^Y@3With 5-5 or better in the majors, responder should bid 2@H (transfer to 2@S). |AT|After the forced 2@S response:|
+PG| ***** 219 ***** |
+
+
+HT|e|AT|^B@2^Y@3With 5-5 or better in the majors, responder should bid 2@H (transfer to 2@S). |AT|After the forced 2@S response:|AT|
+^Ca) responder should pass with a minimum. |
+PG| ***** 220 ***** |
+
+
+HT|e|AT|^B@2^Y@3With 5-5 or better in the majors, responder should bid 2@H (transfer to 2@S). |AT|After the forced 2@S response:|AT|
+^Ca) responder should pass with a minimum.|AT|
+^Cb) responder should bid 3@H with a medium hand. This is an invitational sequence. |
+PG| ***** 221 ***** |
+
+
+HT|e|AT|^B@2^Y@3With 5-5 or better in the majors, responder should bid 2@H (transfer to 2S). |AT|After the forced 2S response:|AT|
+^Ca) responder should pass with a minimum.|AT|
+^Cb) responder should bid 3@H with a medium hand. This is an invitational sequence. |AT|
+^Cc) responder should bid 4@H with a maximum; opener should correct to 4@S with better spades than hearts.|
+PG| ***** 222 ***** |
+
+
+at|
+
+^B@2^Y@3Over any rebid by the responder, opener then has the following options: 
+^C@2^Y@3a) With 15 points, opener should pass with 3 hearts or bid 3@S with 3 spades. Opener should bid 4 with 4-card support. 
+^C@2^Y@3b) With 16-17 points, opener should bid 4 in whichever suit he has better support. |
+PG| ***** 223 ***** |
+
+
+HT|o|Va|6|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|Let me also discuss "Texas Transfers", which is a popular but unnecessary convention. The idea behind Texas Transfers is that, if responder has a 6-card suit and a maximum hand, he knows that he wants to play game in his 6-card suit. So, playing Texas Transfers, responder can bid 4D as a transfer to 4@H and 4@H as a transfer to 4S. If you care to play them, there is nothing wrong with doing that, assuming your partner does not forget the convention. However, unless you differentiate between the sequence 1N-2@D-2@H-4@H and 1N-4@D-4@H (and the same thing for spade transfers), there is no added value to playing Texas, as both auctions accomplish exactly the same thing.|
+PG| ***** 224 ***** |
+
+
+cp|8|AT|
+
+^B@2^*BMovie Maker: ^*N|cp||at|But, Howard, some experts strongly differentiate between the Texas Transfer and simple Jacoby Transfer.|
+PG| ***** 225 ***** |
+
+
+cp|8|AT|
+
+^B@2^*Bhondo717: ^*N|cp||at|I know. Those experts who play Texas (and most do), do play that the auctions 1N-2@D-2@H-4@H and 1N-2@H-2@S-4@S are mild slam tries (since they can just use Texas to stop in game). But, in practice, because such an auction rarely occurs, I have found that partner never remembers that they are mild slam tries.|
+PG| ***** 226 ***** |
+
+
+NT||
+ 
+
+%%%%%%%%%%%%
+qx|B06,4-Suit Jacoby Transfers - Transfer to Minors|cs|2|at|^-
+
+{ 4-Suit Jacoby Transfers - Transfer to Minors }
+
+The transfer to minors can be used for two purposes:|
+PG| ***** 227 ***** |
+
+
+AT|
+
+a) to allow responder to bid 3NT with a 6-8 point hand and a 6-card minor suit.|
+PG| ***** 228 ***** |
+
+
+AT|
+  
+b) to play in three of a minor with five or fewer points and a 6-card minor.
+^-|
+PG| ***** 229 ***** |
+
+
+AT|^B@2^Y@3
+Most partnerships play Jacoby Transfers for major suits. However, interested players may use Jacoby Transfers for the minors as well. First, let me explain the benefits of transfers in minors.|
+PG| ***** 230 ***** |
+
+
+AT|
+
+In general, if you have a weak hand with a long suit opposite a strong hand, it is more desirable to play in the weak hand's suit because in that suit, the long cards will take tricks, whereas in another suit it may not be possible to score the low cards in the weak hand's long suit. The only tradeoff is you have to play at the three level, which is kind of high. However, given a weak hand with seven clubs or diamonds, the tradeoff is worth it.|
+PG| ***** 231 ***** |
+
+
+AT|
+
+Some partnerships play 2@S as a transfer to minors. Opener automatically responds 3@C. The partner bidding the transfer passes with clubs or corrects to 3D. That is easier to play, but not quite as flexible. I recommend you start with this simpler transfer and then progress to the stronger and more flexible version which I will explain next. Let me first show you a few examples of the simple transfer to minors.|
+PG| ***** 232 ***** |
+
+
+AT|
+
+BTW, all "transfer bids" (2@S and 2NT) should be alerted. Further both "accepted" and "rejected" response bids by the NT opener should be alerted as these are additional information available to the partnership that opponents should be aware of. To economize his time, the Movie Maker has not included the alerts in the following examples. Please consider it in every situation.|
+PG| ***** 233 ***** |
+
+
+nt||
+ST||sk|S|MD|3s98h762datcjt9876,,sak43hak45dq4c542,|rh||AH|Board A1|ah||mb|,1np?|lb|*bYou are South and your partner opened 1NT. What would you bid?^^2s|mb|2sp|sk|N|lb|*bYour partner transferred to minors. What would you bid?^^3c|mb|3c|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|Opener must bid 3@C even with two clubs and wait for more instructions from the responder.|
+PG| ***** 236 ***** |
+
+
+MB|ppp|sk||
+pg| ***** 237 ***** |
+
+
+cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|Partnership successfully transferred to clubs. Now let us change the responder's hand. As you note opener just follows the order by the Captain.|
+PG| ***** 238 ***** |
+
+
+NT||
+ST||sk|S|MD|3s98h762catdjt9876,,sak43hak45dq4c542, |rh||AH|Board A2|ah||mb|,1np?|lb|*bYou are South and your partner opened 1NT. What would you bid?^^2s|mb|2sp|sk|N|lb|*bYour partner transferred to minors. What would you bid?^^3c|mb|3cp|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|Again opener bids 3@C and waits for more instructions from the responder.|
+PG| ***** 241 ***** |
+
+
+sk|s|lb|*bWhat would you bid?^^3d|mb|3dppp|sk||cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|Partnership successfully transferred to diamonds. |
+PG| ***** 243 ***** |
+
+
+NT||bt||
+%%%%%%%%%%%%%%%%%%%%%%%%%
+cs|2|at|^-
+{ 4-Suit Jacoby Transfers - Transfer to Minors }
+^-|AT|^B@2^Y@3One variant of Jacoby that I use is 4-suit Jacoby transfer. A 2@S bid by responder is a transfer to clubs, and a 2NT bid is a transfer to diamonds. Since there are two bids between the transfer bid and the transfer suit, opener now has two choices. |
+PG| ***** 244 ***** |
+
+
+AT|
+
+With good support (ONLY if you have 1 of the top 3 honors, regardless of the length of your support), opener "accepts" the transfer by bidding the suit (1NT-2@S-3@C or 1NT-2NT-3@d). BTW, Notrumper always has at least 2-card support.|
+PG| ***** 245 ***** |
+
+
+AT|
+ 
+With less than good support, opener "rejects" the transfer by not bidding the transfer suit (1NT-2@S-2NT or 1NT-2NT-3@C). |
+PG| ***** 246 ***** |
+
+
+AT|
+
+Again, this convention can be used for two purposes:
+1. To allow responder to bid 3NT with a 6-8 point hand and a 6-card minor suit if opener accepts the transfer. Otherwise, the contract will be 3 of the minor.
+
+2. To play in 3 of a minor with 5 or fewer points and a 6-card minor.|
+PG| ***** 247 ***** |
+
+
+AT|
+
+As an important clarification. If you play 4-suit Jacoby transfer you cannot make a 2NT invitational bid. In another word, 1N-P-2N is not invitational bid. In its place you bid Stayman followed by 2NT. Now we have to 1NT bidder should be alert to the following:
+^C1NT-2@C-2@S-2NT does not necessarily promise hearts and simply shows a 2N invite.
+^C1NT-2@C-2@H-2N denies 4 spades by responder and simply shows a 2N invite. 
+^B@2If responder bids Stayman with an invitational hand and 4 spades, he must bid 2@S when opener responds 2@H (e.g. the auction should go 1N-2@C-2@H-2@S).|
+PG| ***** 248 ***** |
+
+
+AT|
+
+^B@2Let us look at a few examples illustrating 4-suit Jacoby transfer. Your partnership is playing 4-way Jacoby transfer.|
+PG| ***** 249 ***** |
+
+
+NT||
+
+%%%%%%%%%%%%%% A3
+ST||sk|S|MD|3s98h67datcjt98763,,sak43hat45dq4ck42,|rh||AH|Board A3|ah||mb|1np?|lb|*bYour partner opened 1NT. What should you bid?^^2s|mb|2sp?|sk|N|lb|*bYour partner transferred to clubs. What should you bid?^^3C|mb|3c|sk||cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|3@C is the correct bid as opener has clubs with 1 of the top 3 honors. The NT bidder only "accepts" the transfer, by bidding 3@C, when he has 1 of the top 3 honors, regardless of length. |
+PG| ***** 252 ***** |
+
+
+MB|PPP|
+PG| ***** 253 ***** |
+
+
+NT|^B@2
+Here South correctly places the contract at 3@C. As I will explain later, South with an appropriate hand can think about bidding 3NT.|
+PG| ***** 254 ***** |
+
+
+NT||
+
+%%%%%%%%%%%%A4
+ST||sk|S|MD|3s98h76datcjt98763,,sak43hak45dq42c54,|rh||AH|Board A4|ah||mb|1np?|lb|*bYour partner opened 1NT. What should you bid?^^2s|mb|2sp?|sk|N|lb|*bPartner transferred to clubs. What should you bid?^^2n|mb|2np3cppp|sk||cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|Opener has clubs without 1 of the top 3 honors and rejects the transfer. |
+PG| ***** 257 ***** |
+
+
+NT||
+%%%%%%%%A5
+ST||sk|S|MD|3s98h76catdjt98763,,sak43hak45cq42d54,|rh||AH|Board A5|ah||mb|1np?|lb|*bYour partner opened 1NT. What should you bid?^^2n|mb|2np?|sk|N|lb|*bPartner transferred to diamonds. What should you bid?^^3c|mb|3cp3dppp|sk||cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|Opener has diamonds without 1 of the top 3 honors and rejects the transfer to diamonds.|
+PG| ***** 260 ***** |
+
+
+NT||bt||
+%%%%%%%%%%%%%A6
+ST||sk|S|MD|3s98h76catdjt98763,,skj43haq45cq4da42,|rh||AH|Board A6|ah||mb|1np?|lb|*bYour partner opened 1NT. What should you bid?^^2n|mb|2np?|sk|N|lb|*bPartner transferred to diamonds. What should you bid?^^3D|mb|3dp|sk||cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|Opener has diamonds with 1 of the top 3 honors and accepts the transfer to diamonds. With that information and a stronger hand South will seriously think about bidding 3NT.|
+PG| ***** 263 ***** |
+
+
+NT||BT||
+
+qx||cs|2|at|^-
+
+{4-Suit Jacoby Transfers - Transfer to Minors}
+
+^-|cs||at|^B@2^Y@3
+
+This version of Transfer to Minors is very powerful but can be confusing because the traditional invitational 2NT bid by responder no longer is available. To make an invitational raise to 2N (since a direct 2N is a diamond transfer), you bid Stayman first and then 2N. Therefore, if responder bids Stayman, on rare occasions she will not have  a 4-card major. You should have a thorough discussion with your partner if you would like to use this version of transfer to minors.|
+PG| ***** 264 ***** |
+
+
+AT| 
+
+One major benefit of this version is that the partnership  can use it to bid thin 3N games. For example, suppose your partner opens 1N and you have AQxxxx of diamonds. You might transfer to diamonds, and if partner bids 3@D which shows holding a top honor in diamond the @DK, you bid 3N since you likely have 6 diamond tricks. Let me show you an example.|
+PG| ***** 265 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% A7
+ST||sk|S|MD|3s98h76ct65daq9876,,sat43ha945ca4dk42,|rh||AH|Board A7|ah||mb|1np?|lb|*bYour partner opened 1NT. What should you bid?^^2n|mb|2np?|sk|N|lb|*bPartner transferred to diamonds. What should you bid?^^3d|mb|3dp?|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|Opener has diamonds with 1 of the top 3 honors and bids 3@d.|
+PG| ***** 268 ***** |
+
+
+sk|S|lb|*bWhat should you bid?^^3n|mb|3nppp|sk||cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|Knowing how good the support is, responder bids 3NT which probably makes.|
+PG| ***** 270 ***** |
+
+
+NT||bt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cs|2|fp|1|at|^-
+{Jacoby Transfers - Advanced Features} 
+
+^-|CS||FP||at|^B@2^Y@3
+It turns out that Jacoby Transfers have enabled experts to develop many sophisticated auction treatments. Let us look as a few examples.|
+PG| ***** 271 ***** |
+
+
+cs|2|
+HT|H|at|{|ia|o1n4d4h|at|}|HT|g|at|^K@2^Y@3Auction is a closeout. Actually, experts use "Texas" transfers to reach the same contract as:|
+pg| ***** 272 ***** |
+
+
+HT|l|at|^B{|ia|o1n4h4s|at|}|HT|l|at|^K@2^Y@3which is a Texas Transfer. |
+PG| ***** 273 ***** |
+
+
+AT| The next two auctions are slam tries.|
+PG| ***** 274 ***** |
+
+
+HT|q|at|^B{|ia|o1N3h|at|}
+|HT|u|at|^B{|ia|o1N3S|at|}|HT|q|at|^k@2^Y@3Opener bids 3NT with a doubleton, otherwise makes a control bid. |
+PG| ***** 275 ***** |
+
+
+at| That part and many other Jacoby Transfer variations are outside the scope of this tutorial.|
+PG| ***** 276 ***** |
+
+
+NT||
+BT||cs|1|cp|2|fp|1|at|
+^-{Constructive Auctions after a NT Opening Bid}
+
+{Should You Transfer to Minors?}
+
+^-|HT|f|cp||FP||cp||at|As a general rule, it is usually much harder to take nine tricks than seven tricks. And three of a minor requires that you take nine tricks whereas 1N requires you only have to take seven tricks. Therefore, unless you are pretty sure you are going to take three more tricks in a minor-suit contract than in NT, you should not transfer. (If you take two more tricks in a minor-suit contract, you break even.) So, how do you know if a minor-suit contract will yield three more tricks? |
+PG| ***** 277 ***** |
+
+
+AT|
+
+Well, you don't. But here are some guidelines that work pretty well. If you have a 7-card minor and a weak hand, transfer. If you have a 6-card minor and shortness somewhere (a singleton or void) and a weak hand, transfer. Otherwise, don't bother.|
+PG| ***** 278 ***** |
+
+
+AT| 
+
+By the way, this is essentially the same logic as to why you strongly prefer to play 3N as opposed to 5 of a minor. It is much easier to take nine tricks than eleven.|
+PG| ***** 279 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%Garbage Stayman
+qx|B07, Garbage Stayman|cs|1|cp|2|fp|1|HT|b|at|
+^-{Constructive Auctions after a NT Opening Bid}
+
+{          Garbage Stayman          }
+^-|HT|g|cp||FP||at|^b@2^z@3In general, it is usually easier to play in a suit than NT. This is particularly true when responder has a weak hand. Garbage Stayman was invented to allow the contract to be played in a suit at the 2 level when responder has a very weak hand (usually 4 or fewer points).|
+PG| ***** 280 ***** |
+
+
+HT|j|AT|
+
+There are 2 variations:
+* Classic Garbage Stayman
+* Major Suit Garbage Stayman|
+PG| ***** 281 ***** |
+
+
+HT|j|AT|
+
+There are 2 variations:
+* Classic Garbage Stayman
+* Major Suit Garbage Stayman
+
+Classic Garbage Stayman works as follows. Responder has a weak hand with at least 4 diamonds and at least 3 cards in each major. Over 1N, responder bids 2@C. No matter what opener bids, responder passes. Therefore, the final contract will be either 2@D, 2@H, or 2@S.|
+PG| ***** 282 ***** |
+
+
+HT|j|AT|
+
+There are 2 variations:
+* Classic Garbage Stayman
+* Major Suit Garbage Stayman
+
+Classic Garbage Stayman works as follows. Responder has a weak hand with at least 4 diamonds and at least 3 cards in each major. Over 1N, responder bids 2@C. No matter what opener bids, responder passes. Therefore, the final contract will be either 2@D, 2@H, or 2@S.
+
+Major Suit Garbage Stayman works as follows. Responder has a weak hand with at least 4-4 in the majors. Over 1N, responder bids 2C. If opener bids 2H or 2S, responder has an easy pass, and is playing in a 4-4 fit. If opener bids 2D, then responder bids 2@H. This tells opener that responder wants to play in either 2@H or 2@S. Opener passes with better hearts, and corrects to 2@S with better spades. The final contract is often a 7-card major suit fit (since the NT opener cannot have a doubleton in both hearts and spades), but this is usually better than playing 1N with a weak dummy.|
+PG| ***** 283 ***** |
+
+
+HT|j|AT|
+
+There are 2 variations:
+* Classic Garbage Stayman
+* Major Suit Garbage Stayman
+
+Classic Garbage Stayman works as follows. Responder has a weak hand with at least 4 diamonds and at least 3 cards in each major. Over 1N, responder bids 2C. No matter what opener bids, responder passes. Therefore, the final contract will be either 2@D, 2@H, or 2@S.
+
+Major Suit Garbage Stayman works as follows. Responder has a weak hand with at least 4-4 in the majors. Over 1N, responder bids 2C. If opener bids 2@H or 2@S, responder has an easy pass, and is playing in a 4-4 fit. If opener bids 2D, then responder bids 2@H. This tells opener that responder wants to play in either 2@H or 2@S. Opener passes with better hearts, and corrects to 2@S with better spades. The final contract is often a 7-card major suit fit (since the NT opener cannot have a doubleton in both hearts and spades), but this is usually better than playing 1N with a weak dummy.
+
+You can play both Classic and Major Suit Garbage Stayman simultaneously.
+ |
+PG| ***** 284 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%^*Weak NT Opening Bids
+QX|B08, Weak NT Opening Bids|cs|1|cp|2|fp|1|HT|b|at|
+^-{Constructive Auctions after a NT Opening Bid}
+
+{          Weak NT Opening Bids          }
+^-|HT|g|cp||FP||at|^b@2^z@3I like NT openings so much that I play 12-14 point 1NT openers, which means that I open many more hands 1NT than most people. I'm not sure why this treatment has not caught on more (most bridge players feel the strong NT has been ordained from on high!) because I think it has many advantages.|
+PG| ***** 285 ***** |
+
+
+AT|
+
+Before I get into the advantages, let me explain how I show a strong NT. After opening a minor suit, I simply bid NT as my next bid (e.g. 1D-1S-1NT).|
+PG| ***** 286 ***** |
+
+
+AT|
+
+The major advantage is that weak NTs lead to a more natural bidding style. For strong NT bidders, opening one of a minor can describe many different hand types, from a long suit to a minimum hand with NT distribution. With a weak NT, when I open 1 of a minor, I usually have a 5-card suit (with a 4-card suit I would open 1NT). Also, the weak NT has pre-emptive value; responder knows a lot about opener's hand and where we should play the contract, but the opponents are somewhat in the dark, having to bid at the 2 level in order to get into the auction.|
+PG| ***** 287 ***** |
+
+
+AT|
+
+Clearly, the point values for responder's hand change accordingly:|
+PG| ***** 288 ***** |
+
+
+HT|s|AT|
+* Minimum - no more than 9 points; game is not possible|
+PG| ***** 289 ***** |
+
+
+HT|s|AT|
+* Minimum - no more than 9 points; game is not possible
+* Medium - 10-11 points; game is possible if opener has a maximum NT|
+PG| ***** 290 ***** |
+
+
+HT|s|AT|
+* Minimum - no more than 9 points; game is not possible
+* Medium - 10-11 points; game is possible if opener has a maximum NT
+* Maximum - 12 or more points; you must bid game|
+PG| ***** 291 ***** |
+
+
+HT|s|AT|
+* Minimum - no more than 9 points; game is not possible
+* Medium - 10-11 points; game is possible if opener has a maximum NT
+* Maximum - 12 or more points; you must bid game
+
+Other than that, the auctions are pretty much identical to strong NT auctions.|
+PG| ***** 292 ***** |
+
+
+at|
+
+I am not suggesting you play weak no trumps (in fact, quite the contrary, because it will be  difficult for you to find any partners who play it), but hopefully it will help you appreciate how nice it is when partner opens 1NT.|
+PG| ***** 293 ***** |
+
+
+NT||
+%%%%Last,   10: More Quizzes
+qx|Last, More Quizzes|HT|a|cp||FP||
+cs|1|cp|2|fp|1|at|
+^-{More Quizzes}
+^-|HT|c|cp||FP||cp|8|AT|
+^B@2^*BMovie Maker: ^*N|cp||at|I have been collecting good teaching boards for many bidding conventions including NT. They are from lessons by many distinguished teachers in the BIL. I have no record which board is from whom. So, I did not get their individual permission to use the boards. Further, this is a teaching presentation and no one has financial gains. Now, without further ado, let me present a few. Of course, I only have chosen boards that comply with Howard's style.|
+PG| ***** 294 ***** |
+
+
+NT||
+%%%Boards
+st||pn|Opener,,Responder(You),|sk|N|md|1SAK86HA52DK875CQT,,S3HKJ864D632C8752,,|rh||ah|Board 1|mb|1N|an|15-17 HCP, balanced|mb|p|lb|*bWhat would you bid here?  ^^2D|
+mb|2D!|an|transfer to heart with 5+!H|
+PG| ***** 296 ***** |
+
+
+mb|p|mb|2H|mb|p|lb|*bWhat would you bid here?  ^^p|mb|p|an|minimum hand (0-7)|
+PG| ***** 298 ***** |
+
+
+sk||mb|p|at|
+^B@2^Z@3Responder has a minimum hand and should pass.  |
+pg| ***** 299 ***** |
+
+
+nt||
+%%%%%%%%%%% b2
+st||pn|Responder(You),,Partner,|sk|s|md|3SJ962HT652D94C853,,SK8HAQ83DJ53CAQ42, |sv|0|rh||ah|Board |rh||ah|Board 2|
+mb|1n|mb|p|lb|*bWhat would you bid here?  ^^2C|
+mb|2c|SK||mb|p|mb|2h|mb|p|mb|p|mb|p|NT|^B@2^Z@3
+This is Garbage Stayman. Had opener bid 2@D responder would rebid 2@H. Partner will either pass ( holding three hearts). Or bids 2@S with three Spades. |
+PG| ***** 301 ***** |
+
+
+nt||
+%%%%%%%%%% B3
+pn|Opener,,Responder(You),|st||SK|N|md|1S83HAQ2DKQ8CAJT65,,SKQ752H54D9762C94,,|rh||ah|Board 3|mb|1N|an|15-17 HCP balanced|mb|p|lb|*bWhat would you bid here?  ^^2h|mb|2H|an|Transfer with 5+!S|
+PG| ***** 303 ***** |
+
+
+mb|p|mb|2S|mb|p|lb|*bWhat would you bid here?  ^^p|mb|p|an|minimum had--less than 7 points|
+PG| ***** 305 ***** |
+
+
+SK||mb|p|nt|
+^B@2^Z@3Responder’s 2@H bid is a Jacoby Transfer to spades.  Opener, does NOT get to ignore partner’s transfer just because he doesn't’t like his suit. Responder is in charge as he knows a lot about opener’s hand, and opener knows very little about responder's hand.|
+pg| ***** 306 ***** |
+
+
+nt|| 
+%%%%b4
+st||sk|s|md|3SJ96HT76542D94C85,,SK8HAQ83DJ53CAQ42,|sv|0|rh||ah|Board 4|
+mb|1np|lb|*bWhat would you bid here?  ^^2d|MB|2d|MB|p|NT|^B@2^Z@3
+Your only choice is transfer to heart. Yes, you can do transfers with zero points and 5+ cards in one of the majors.|
+PG| ***** 308 ***** |
+
+
+MB|2hppp|
+PG| ***** 309 ***** |
+
+
+NT||
+%%%%b5
+pn|Opener,,Responder(You),|st||SK|N|md|1SAQHJ965DK862CKQ8,,SJ76542H42DA9C972,,|rh||ah|Board 5|mb|1N|an|15-17 HCP balanced|mb|p|lb|*bWhat would you bid here?  ^^2h|mb|2H|an|Transfer with 5+!S|
+PG| ***** 311 ***** |
+
+
+mb|p|mb|2S|mb|p|lb|*bWhat would you bid here?  ^^p|mb|p|an|minimum hand (0-7)|
+PG| ***** 313 ***** |
+
+
+nt|^B@2^Z@3Responder should pass.|
+PG| ***** 314 ***** |
+
+
+sk||mb|p|
+PG| ***** 315 ***** |
+
+
+nt||
+%%%%%%% b6
+st||pn|Responder(You),,Partner,|sk|s|md|3SJ852H97532D7CQ42,,SAQ9HK4DK642CA853,|sv|0|rh||ah|Board 6|rh||ah|Board 6|
+mb|1n|mb|p|lb|*bWhat would you bid here?  ^^2C|
+mb|2c|mb|p|mb|2d|mb|p|lb|*bWhat would you bid here?  ^^2h|mb|2h|mb|p|mb|2s|sk||mb|p|mb|p|mb|p|nt|^B@2^Z@3This is another example of Garbage Stayman. South has a choice between a transfer to Hearts  or looking for a reasonable major fit using Garbage Stayman. After a 2@D bid by partner, South bids 2H. If North held three hearts, the auction would be over. In this hand, North, with three spades, corrects 2@H to 2@S.  |
+pg| ***** 318 ***** |
+
+
+nt||
+%%%%%%%%%%% b7
+pn|Opener,,Responder(You),|st||SK|n|md|1SAJHKT7DQ875CAKT9,,ST52HAJ843DKJ6C73,,|rh||ah|Board 7|mb|1N|an|15-17 HCP|mb|p|lb|*bWhat would you bid here?  ^^2d|mb|2D|an|transfer with 5+!H|
+PG| ***** 320 ***** |
+
+
+nt|^B@2^Z@3With a medium hand (8-9 points), responder starts by bidding 2@D--a Jacoby Transfer.|
+PG| ***** 321 ***** |
+
+
+mb|p|mb|2H|mb|p|lb|*bWhat would you bid here?  ^^2n|mb|2N|an|invitational hand (8-9) with exactly 5!H|nt|^B@2^Z@3With invitational strength (8-9), responder has to do one of two things after his/her transfer:|cp|8|at|
+^c* bid 2NT with exactly a 5-card heart suit
+^C* raise to 3 of his major with a 6+ card suit.|
+pg| ***** 323 ***** |
+
+
+CP||nt|
+^B@2^Z@3Here, responder’s 2NT rebid says, “I have an invitational hand with EXACTLY 5-card heart suit. You should decide whether we play in hearts or in no trump, or stop in a part score or bid game.”|mb|p|sk|s|lb|*bWhat would you bid here?  ^^4h|mb|4H|an|max with 3+!H|nt||aT|
+^B@2^Z@3There are two issues opener needs to address. Should the partnership play in hearts or in no trump? |
+pg| ***** 325 ***** |
+
+
+at|
+^B@2^Z@3With 3+ hearts, the partnership has a 5-3 fit and should play in hearts. If opener only has a doubleton ( no heart fit) partnership should play in no trump instead.|
+pg| ***** 326 ***** |
+
+
+sk||mb|p|mb|p|mb|p|
+pg| ***** 327 ***** |
+
+
+nt||
+%%%%%%%%%%%% b8
+st||pn|Opener,,Responder(You),|SK|n|md|1SATHAK43DT75CAQ86,,SQ6532H92DA96CKT4,|sv|0|rh||ah|Board 8|mb|1N|mb|p|lb|*bWhat would you bid here? ^^2h|mb|2H|an|transfer to 2!S--5+!S|
+PG| ***** 329 ***** |
+
+
+mb|p|mb|2S|mb|p|lb|*bWhat would you bid here? ^^2n|mb|2N|an|8-9 points hand with exactly 5!S|
+PG| ***** 331 ***** |
+
+
+mb|p|SK|s|lb|*bWhat would you bid here?  ^^3n|mb|3N|an|maximum NT with only 2 spades|
+PG| ***** 333 ***** |
+
+
+sk||mb|p|mb|p|mb|p|at|^B@2^Z@3 Responder’s 2@H bid was a Jacoby Transfer to 2@S. It showed at least a 5-card spade suit. Responder’s 2NT rebid confirmed a medium hand and a 5-card spade suit.  Opener has a maximum no trump hand and a doubleton spade--a 5-2 spade fit. So, the partnership should play in 3NT. |
+pg| ***** 334 ***** |
+
+
+nt||
+%%%%%%%%%% b9
+st||pn|Responder(You),,Partner,|sk|s|md|3SK762HAJ952D73CT8,,SAT9HKQ7DA85CA972,|sv|0|rh||ah|Board 9|
+mb|1n|mb|p|lb|*bWhat would you bid here?  ^^2C|
+mb|2c|mb|p|mb|2d|nt|^B@2^Z@3Again, bid Stayman and do not transfer with all 5-4 major-suit hands. In this hand, opener denies holding a 4-card major. |
+PG| ***** 336 ***** |
+
+
+mb|p|lb|*bWhat would you bid here? ^^2n|nt|^b@2 ^z@3Responder cannot bid 2S because he does not have five spades. However, responder, can bid 2NT to  show a minimum hand.  |
+PG| ***** 338 ***** |
+
+
+mb|2n|mb|p|sk||lb|*bWhat would you bid here?  ^^3h|nt|^b@2 ^z@3With a strong hand opener can bid his first 3-card major or can bid 3NT if he or she does not have 3-card major. |
+PG| ***** 340 ***** |
+
+
+mb|3h|mb|p|lb|*bWhat would you bid here?  ^^4h|nt|^B@2^Z@3Responder finds a 5-3 fit and bids game. |
+PG| ***** 342 ***** |
+
+
+mb|4h|mb|p|mb|p|mb|p|nt|^b@2 ^z@3Some play 2@D-2@H-2@S with this hand.|
+PG| ***** 343 ***** |
+
+
+nt||
+%%%%%%%%%%%% b10
+pn|Opener,,Responder(You),|st||SK|n|md|1SKQ52HJ4DKQ32CA92,,SJ3HK8652DA6CJ764,,|rh||ah|Board 10|mb|1N|mb|p|lb|*bWhat would you bid here?  ^^2d|mb|2D|an|transfer to 2!H with 5+!H|
+PG| ***** 345 ***** |
+
+
+mb|p|mb|2H|mb|p|lb|*bWhat would you bid here?  ^^2n|mb|2N|an|8-9 points with exactly 5!H|
+PG| ***** 347 ***** |
+
+
+mb|p|sk||lb|*bWhat would you bid here?  ^^p|mb|p|an|minimum with only 2!H|mb|p|at|^B@2^Z@3Again, responder’s transfer followed by 2NT shows a medium strength hand (8-9 points) and exactly a 5-card heart suit. Opener has to decide whether (1) there is a heart fit, and (2) if so, whether he wants to accept the invitation.
+
+In this case, "no" is the answer to both questions. Therefore, opener stops in a NT part score.  |
+pg| ***** 349 ***** |
+
+
+nt||
+%%%%%% b11
+st||pn|Responder(You),,Partner,|sk|s|md|3SK853HAQ82DKQ65C6,,SAQT2HKJ7DAT9CQT8,|sv|0|rh||ah|Board 11|
+mb|1n|mb|p|lb|*bWhat would you bid here?  ^^2C|
+mb|2c|mb|p|mb|2s|nt|^B@2^Z@32C is the correct bid and South becomes interested in slam with a maximum hand which has improved by the spade fit. She is the captain and and must take charge.|
+PG| ***** 351 ***** |
+
+
+mb|p|lb|*bWhat would you bid here?  ^^4c|nt||mb|4c!|an|splinter|
+PG| ***** 353 ***** |
+
+
+sk||nt|^B@2^Z@3Responder can show interest in slam by either bidding 4@C (splinter) or rebidding 3H. The rest is simple cue-bidding and asking for Aces before the partnership lands in slam.|
+PG| ***** 354 ***** |
+
+
+mb|p|mb|4d!|an|Diamond control|
+PG| ***** 355 ***** |
+
+
+mb|p|mb|4n!|an|RKC 1430|
+PG| ***** 356 ***** |
+
+
+mb|p|mb|5s1|an|two key cards and the trump queen|
+PG| ***** 357 ***** |
+
+
+mb|p|mb|6s|mb|p|mb|p|mb|p|
+PG| ***** 358 ***** |
+
+
+nt||
+%%%%% b12
+pn|Opener,,Responder(You),|st||SK|n|md|1SAJ3H64DKQ43CAJ63, ,SKT942HQ87D82CKT8,,|rh||ah|Board 12|mb|1N|mb|p|mb|2H|an|transfer to 2!S--5+!S|
+PG| ***** 359 ***** |
+
+
+mb|p|mb|2S|mb|p|lb|*bWhat would you bid here?  ^^2n|mb|2N|an|a medium (8-9 points) hand with exactly 5!S|
+PG| ***** 361 ***** |
+
+
+mb|p|sk||lb|*bWhat would you bid here?  ^^3s|mb|3S|an|a minimum hand with 3+!S|
+PG| ***** 363 ***** |
+
+
+mb|p|mb|p|mb|p|nt|^B@2^Z@3Opener has a fit but is not strong enough to bid game. |
+pg| ***** 364 ***** |
+
+
+nt||
+%%%%%13
+pn|Opener,,Responder(You),|st||SK|n|md|1SK4HA982DKT73CAQT,,St9875Ht73D5C9642,,|rh||ah|Board 13|mb|1N|mb|p|mb|2H|an|transfer to 2!S--5+!S|
+PG| ***** 365 ***** |
+
+
+mb|p|mb|2S|sk||mb|ppp|NT|^B@2^Z@3In this hand, obviously responder isn't thrilled at the idea of bidding, but playing at part score sounds as good as a contract as any other. Yes, you can transfer even with no points.|
+PG| ***** 366 ***** |
+
+
+NT||
+------------------------------------------ 14
+pn|Opener,,Responder(You),|st||SK|n|md|1SAK3HKJ54DA8CT972,,SQJ542H86DK32CKQ8,,|rh||ah|Board 14|mb|1N|mb|p|lb|*bWhat would you bid here?  ^^2h|mb|2H|an|transfer promising 5+!S|
+PG| ***** 368 ***** |
+
+
+mb|p|mb|2S|mb|p|lb|*bWhat would you bid here?  ^^3n|mb|3N|an|10-14 points with exactly 5!S|
+PG| ***** 370 ***** |
+
+
+mb|p|sk||lb|*bWhat would you bid here?  ^^4s|mb|4S|an|3+ spades|mb|p|mb|p|mb|p|nt|^B@2^Z@3Here, responder's 3NT rebid shows game values (10-14 points) with exactly a 5-card spade suit.  Opener has 3+ card support for responder's major and bids game.|
+pg| ***** 372 ***** |
+
+
+nt||
+%%%%%%%%% b15
+pn|Opener,,Responder(You),|st||SK|n|md|1SQJ43H76DQJ4CAKQ4, ,SAK2HKJ543D865C32,,|rh||ah|Board 15|mb|1N|mb|p|lb|*bWhat would you bid here?  ^^2d|mb|2D|an|transfer--promises 5+!H|
+PG| ***** 374 ***** |
+
+
+mb|p|mb|2H|mb|p|lb|*bWhat would you bid here?  ^^3n|mb|3N|an|10-14 points hand with exactly 5!H|
+PG| ***** 376 ***** |
+
+
+mb|p|SK||lb|*bWhat would you bid here?  ^^p|mb|p|an|showing only 2 hearts|mb|p|nt|^B@2^Z@3In this bidding cycle, opener bids 2@H as partner asked him to. Responder's 3NT rebid says, "We should be in game (3N or 4H) and I have exactly a 5-card heart suit."  Opener's pass says, "We don't have a heart fit, so let's play in 3NT." |
+pg| ***** 378 ***** |
+
+
+nt|^B@2^Z@3With the points to invite or force to game, responder never insists on playing in his 5-card major suit. He always gives opener the option of playing in either the transfer suit or no trump, because he (responder) can't be sure that they have an 8-card fit. |
+pg| ***** 379 ***** |
+
+
+nt|^B@2^Z@3If responder transfers and then rebids no trump, it isn't because he wants to play in no trump. If he just wanted to play in no trump, he wouldn't have bothered transferring. When responder transfers and rebids no trump, it is because he needs you to decide whether the partnership belongs in the major (if opener has 3+ card support) or in NT if opener only has a doubleton. |
+pg| ***** 380 ***** |
+
+
+nt|^B@2^Z@3 If opener has 3+ card support, HE IS EXPECTED TO GO BACK TO RESPONDER'S MAJOR. If opener doesn't do that, then the whole thing falls apart. There definitely should be some partnership trust involved in these transfer auctions.|
+pg| ***** 381 ***** |
+
+
+nt||
+
+-------------------------------- 16
+pn|Opener,,Responder(You),|st||SK|n|md|1SA9HK74DAK94CK952,,SJT8432HAJ6DQ7C63,,|RH||AH|Board  16|mb|1N|mb|p|lb|*bWhat would you bid here?  ^^2h|mb|2H|an|transfer to spades--5+!S|
+PG| ***** 383 ***** |
+
+
+mb|p|mb|2S|mb|p|lb|*bWhat would you bid here?  ^^3s|mb|3S|an|invitation with 8-9 points and 6+!S|
+PG| ***** 385 ***** |
+
+
+SK||mb|p|mb|4S|an|accepting the invite|
+PG| ***** 386 ***** |
+
+
+mb|p|mb|p|mb|p|nt|^B@2^Z@3With a medium hand, the only time that responder gets to insist on playing in his major suit is when he has at least 6 of them. Because with 6, he knows that the partnership is guaranteed an 8+ card fit even if opener only has a doubleton. Responder's 3@S rebid says, "We are playing in spades. You decide whether we should stop in a part score or go to game." In this  auction, opener is maximum and will take it to game.|
+PG| ***** 387 ***** |
+
+
+NT||
+%%%%%%%%%% 17
+pn|Opener,,Responder(You),|st||SK|n|md|1SKJ3HK9DQ762CAQ96,,S72HAT8754DJ43CK7,,|rh||ah|Board 17|mb|1N|mb|p|lb|*bWhat would you bid here?  ^^2d|mb|2D|an|transfer to hearts--5+!H|
+PG| ***** 389 ***** |
+
+
+mb|p|mb|2H|mb|p|lb|*bWhat would you bid here?  ^^3h|mb|3H|an|inviting with  medium hand with 6+!H|
+PG| ***** 391 ***** |
+
+
+sk||mb|p|mb|p|an|rejecting invite|
+PG| ***** 392 ***** |
+
+
+mb|p|nt|^B@2^Z@3With a 6-card heart suit responder can invite in playing in hearts--his 3@H bid asks opener to choose between 3@H and 4@H. Opener is minimum and with doubleton hearts rejects the invitation by passing. |
+PG| ***** 393 ***** |
+
+
+nt|^B@2^Z@3With a 5+ card major, responder's rebidding options are determined by: |
+pg| ***** 394 ***** |
+
+
+cp|8|at|
+^C1. His overall strength, and |
+pg| ***** 395 ***** |
+
+
+cp|8|at|
+^C2. His major-suit length.|
+PG| ***** 396 ***** |
+
+
+nt|^B@2^Z@3With 0-7 points:|
+PG| ***** 397 ***** |
+
+
+cp|8|at|
+Transfer, then pass = 5+ card major suit (hoping for a 5-3 or 5-4 fit.|
+pg| ***** 398 ***** |
+
+
+nT|^B@2^Z@3 With 8-9 points:|
+PG| ***** 399 ***** |
+
+
+CP|8|AT|
+* Transfer, then bid 2NT = inviting game with a 5-card major. It asks opener to choose between playing in the major  game or in no trump, and between a part score or game. OR |
+PG| ***** 400 ***** |
+
+
+AT|
+* Transfer, then bid 3 of the major = inviting game with a 6+ card major. Here, no trump isn't an option. Opener should choose between part score or game.|
+pg| ***** 401 ***** |
+
+
+nt|^B@2^Z@3With a maximum hand, 10-14 points, responder should:|
+PG| ***** 402 ***** |
+
+
+CP|8|AT|
+   1. Transfer, then rebid 3NT = game values with exactly a 5-card major. Opener should choose between 3NT or four of a major, depending on whether he has a fit with responder or not.|
+PG| ***** 403 ***** |
+
+
+AT|
+   2. Transfer, then rebid a new suit = game values, exactly 5-cards in the major and   4+ cards in the second suit. It gives opener a choice of games.|
+pg| ***** 404 ***** |
+
+
+nt||
+%%%%%%%%% 18
+pn|Opener,,Responder(You),|st||SK|n|md|1SA72HKQ52DAT95CK2,S98HJT96DKj72C987,SKQJ65HA8D43CAQJ4,Sy43H743Dq86CT653,|rh||ah|Board 18|mb|1N|mb|p|at| 
+^B@2^Z@3With his great hand, responder definitely wants to be in slam. But, which one. He can go slow and get the information needed.|
+pg| ***** 405 ***** |
+
+
+lb|*bWhat would you bid here?  ^^2h|NT||mb|2H|an|transfer, showing 5+!S|
+PG| ***** 407 ***** |
+
+
+mb|p|mb|2Sp|lb|*bWhat would you bid here?  ^^3c|nt||MB|3c|an|Game force|
+PG| ***** 409 ***** |
+
+
+nt|^B@2^Z@3So, responder starts with Jacoby Transfer, which establishes his spade suit. Then he bids a natural and game-forcing 3C. |
+PG| ***** 410 ***** |
+
+
+MB|P|SK|s|lb|*bWhat would you bid here?  ^^3s|NT||MB|3s|an|3+ spades|
+PG| ***** 412 ***** |
+
+
+sk|n|MB|P|lb|*bWhat would you bid here?  ^^4c|NT|^B@2^Z@3When opener bids 3@S responder knows they have a spade fit (which sets spades as trump) and they should play in spades. So, he bids 4C--a control cuebid showing slam interest.|
+pg| ***** 414 ***** |
+
+
+mb|4C|an|cuebid|
+PG| ***** 415 ***** |
+
+
+sk||mb|p|mb|4D|an|cuebid|mb|p|nt|
+^B@2^Z@3 Once opener cooperates with a 4@D cuebid, responder knows that all of the side suits are under control and he can continue with RKC 1430 Blackwood. |
+pg| ***** 416 ***** |
+
+
+mb|4N|an|RKC 1430|mb|p|mb|5H|an|2 key cards no !SQ|sk||mb|p|mb|7sppp|nt|
+^B@2^Z@3Responder in this hand uses a natural sequence to describe his hand and find out whether or not there’s a spade fit. It leaves the partnership plenty of room to exchange information.|
+pg| ***** 417 ***** |
+
+
+sk||pf|y|cp|8|AT|
+
+^B@2^*BMovie Maker: ^*N|cp||at|Before clicking the forward arrow, you can play this hand double dummy if you wish. The opening lead is the diamond king. It is really simple because the hand will make!|
+PG| ***** 418 ***** |
+
+
+NT||bt||tu|Y|
+%%%%%%%%%%%%%%%%%%%%% Q&A
+QX|QA,Questions and Answers|cs|1|cp|2|fp|1|ht|d|at|
+^-{Questions and Answers }
+^-|FP||cp||at|^b@2^z@3The following are the answer to questions by the students during the session. For some questions and to make sure it is clear, the related topic discussed by Howard just before the question is repeated. That part begins with "|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|" and Howard's answers to all questions begin with "|CP|8|AT| *** |CP||AT|" right after the question. The questions is recorded without any changes. Let us start with the first question.|
+PG| ***** 419 ***** |
+
+
+cp|8|AT|
+
+^B@2^*Bhondo717: ^*N|cp||at|However, one thing that I highly recommend is that you open 1NT even with a 5 card major.|
+PG| ***** 420 ***** |
+
+
+AT|
+
+taxlady: What about a 5-card minor?|
+PG| ***** 421 ***** |
+
+
+AT|
+
+|CP|8|AT| *** |CP||AT|The same applies for a 5 card minor. I recommend opening 1NT with any 5-3-3-2 hand and 15-17 HCP, regardless of which suit is 5 cards in length.|
+PG| ***** 422 ***** |
+
+
+AT|
+
+x_ruff: is there any (balanced 5332) hand with 15-17 HCP and 5 card major which Howard would not open 1NT?|
+PG| ***** 423 ***** |
+
+
+CP|8|AT|
+
+*** |CP||AT|No. Even if I lack stoppers in 2 suits, I like to open 1N. Otherwise it is very difficult to get your hand strength across.|
+PG| ***** 424 ***** |
+
+
+cp|8|AT|
+
+^B@2^*Bhondo717: ^*N|cp||at|So, if responder makes an invitational bid, and you have a hand that meets one of those criteria (see the chat), you should bid game.|
+PG| ***** 425 ***** |
+
+
+AT|
+
+EddyHaskel: Movie Question:   Why not with a good fit for partner's minor, too?|
+PG| ***** 426 ***** |
+
+
+CP|8|AT|
+
+*** |CP||AT|The problem with that question is, based on what was presented in the lesson, there is no way of finding out if responder has a 5 card minor.|
+PG| ***** 427 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%% page
+QX|QA,Questions and Answers|cs|1|cp|2|fp|1|ht|d|at|
+^-{Questions and Answers }
+^-|FP||cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|-- any 16 HCP with at two or more 10s and 9s and not 4-3-3-3 distribution.|
+PG| ***** 428 ***** |
+
+
+AT|
+
+bobottawa: 10's and 9's don't have to be adjacent in same suite?|
+PG| ***** 429 ***** |
+
+
+CP|8|AT|
+
+*** |CP||AT|No, they do not.|
+PG| ***** 430 ***** |
+
+
+cp|8|AT|
+
+^B@2^*Bhondo717: ^*N|cp||at|You almost never want to play 5 of a minor.|
+PG| ***** 431 ***** |
+
+
+AT|
+
+Dorothy1: does the 5 of minor thing hold true for IMPs as well as MPs?  I'm an old MP player and now that I play on BBO, I find that MOST go for the minor because they see it as safer.|
+PG| ***** 432 ***** |
+
+
+CP|8|AT|
+
+*** |CP||AT|There are very few hands where 3N does not make and 5 of a minor does make. I recommend you not look for excuses to avoid 3NT. Rather, try and play 3N when you have game going values and no major suit fit. Even if you are short in a particular suit. In the long run, you will do better playing 3N rather than 5 of a minor. Too many players unnecessarily avoid playing 3N, and often go down in 5 of the minor.|
+PG| ***** 433 ***** |
+
+
+AT|
+
+SpiceGirl3: Must the four card major have a face card to do Stayman?|
+PG| ***** 434 ***** |
+
+
+CP|8|AT|
+
+*** |CP||AT|No, any 4-card major will do.|
+PG| ***** 435 ***** |
+
+
+AT|
+
+Retsel: Hondo refers to HCP in eval. of responder's holding, can't length also be counted?|
+PG| ***** 436 ***** |
+
+
+CP|8|AT|
+
+*** |CP||AT|If responder's hand has a 5 card suit, that is an upgrade. As to whether you should consider a 9 HCP hand with a 5 card suit a max response, generally no, unless the 5 card suit has 3 honors.|
+PG| ***** 437 ***** |
+
+
+NT||%%%%%%%%%%%%%%%%% page
+QX|QA,Questions and Answers|cs|1|cp|2|fp|1|ht|d|at|
+^-{Questions and Answers }
+^-|FP||cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|You have one 4-card major, 2 four-card majors, or one 4-card major and one 5-card major (in when to do Stayman).|
+PG| ***** 438 ***** |
+
+
+AT|
+
+dcb: Would 4/5 be the same?|
+PG| ***** 439 ***** |
+
+
+CP|8|AT|
+
+*** |CP||AT|You should Stayman with 4 spades and 5 hearts, or 5 spades and 4 hearts.|
+PG| ***** 440 ***** |
+
+
+AT|
+
+jpb1130: What is the exception if you have 5/4 in the majors? That's not clear to me.|
+PG| ***** 441 ***** |
+
+
+CP|8|AT|
+
+*** |CP||AT|You should only Stayman with a medium or maximum hand (e.g 8+ HCP). If you are 5/4 with a weak hand, transfer and pass opener's forced response. If you are 5/4 with 8+, you should use Stayman.|
+PG| ***** 442 ***** |
+
+
+cp|8|AT|
+
+^B@2^*Bhondo717: ^*N|cp||at|With two 4-card majors, most people play that opener bids 2@H.|
+PG| ***** 443 ***** |
+
+
+AT|
+
+bobottawa: Do the same rules apply if opener has a 5 card major, not just a 4?|
+PG| ***** 444 ***** |
+
+
+CP|8|AT|
+
+*** |CP||AT|Yes, if opener bids a major in response to Stayman, on occasion it will be a 5 card suit. However, responder should assume it is a 4 card suit. Some people play a complicated form of Stayman known as "Puppet Stayman", where opener can show whether his length is 5 cards or 4 cards. Over 1N, some people use 3C as Puppet Stayman, 2@C as regular Stayman. For most people, I recommend straight Stayman, not worrying about occasionally missing the 5-3 fit. With straight Stayman, you will always discover the 5-4 fit. And often, since opener has a balanced hand, NT plays as well (or better) than the 5-3 fit. Remember, you only have to take 9 tricks to make a NT game, 10 tricks to make a major suit game.|
+PG| ***** 445 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%% page 4
+QX|QA,Questions and Answers|cs|1|cp|2|fp|1|ht|d|at|
+^-{Questions and Answers }
+^-|FP||cp||at|^B@2dmfav: Max is defined as 10+ but you would sometimes have enough to look for slam - what is the process for that after a) Stayman and b) Transfers..thank you!|
+PG| ***** 446 ***** |
+
+
+CP|8|AT|
+
+*** |CP||AT|That is beyond the scope of this lesson. My slam bidding lesson series discusses that issue. Or feel free to email me with specific questions.|
+PG| ***** 447 ***** |
+
+
+AT|
+
+pear: Under ABCL rules do transfers have to be alerted?|
+PG| ***** 448 ***** |
+
+
+CP|8|AT|
+
+*** |CP||AT|Under ACBL rules, if responder makes a transfer, opener is required to announce "transfer" (not "alert").|
+PG| ***** 449 ***** |
+
+
+AT|
+
+leslie_s: what about super accept?|
+PG| ***** 450 ***** |
+
+
+CP|8|AT|
+
+*** |CP||AT|If responder transfers, most experts play that opener can jump to 3 of the transfer suit with 4 card support. That is known as a "super accept". That response is based on the Law of Total Tricks (known 9 card fit). That is a reasonable way to play. On the plus side, it allows responder to raise to 4 on some hands where you might otherwise only bid a part score. On the minus side, if responder has a weak hand, you occasionally get too high. Some experts even have complicated super-accept conventions, but that is beyond the scope of this lesson.|
+PG| ***** 451 ***** |
+
+
+AT|
+
+bobottawa: At the start, Howard indicated that he is in favour of opening 1NT EVEN when he has a 5-card major. Are all the responses the same for the opener, regardless whether or not he (opener) has a 5-card major. Is there any way to convey the fact that opener has a 5-card major, not just a 4-card major?|
+PG| ***** 452 ***** |
+
+
+CP|8|AT|
+
+*** |CP||AT|In general, unless you play Puppet Stayman, there is no way to figure out if opener has a 5 card major. There is one exception. As an example, if the auction goes 1N-2@C-2@H-2N-3@H, opener is showing a max NT opener with 5 hearts. 3@H is forcing, and responder must either bid 3N with a doubleton or 4@H with 3 card support. The same applies if the auction goes 1N-2@C-2@S-3N-3@S.|
+PG| ***** 453 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%% page 5
+QX|QA,Questions and Answers|cs|1|cp|2|fp|1|ht|d|at|
+^-{Questions and Answers }
+^-|FP||cp||at|^B@2MsPetey: How does Opener know Resp. has 6 card suit=9 card fit ?|
+PG| ***** 454 ***** |
+
+
+CP|8|AT|
+
+*** |CP||AT|When responder has a six card suit, he or she does not return to NT. With a min hand, obviously responder still passes. With a medium hand, responder bids 3 of the major. (1N-2@D-2@H-3@H and 1N-2@H-2@S-3@S). With a max hand, responder bids 4 of the major. (1N-2@D-2@H-4@H and 1N-2@H-2@S-4@S). So, the auctions 1N-2@D/2@H-2@H/2@S-2N and 1N-2@D/2@H-2@H/2@S-3N mean that responder has exactly a 5 card major.|
+PG| ***** 455 ***** |
+
+
+AT|
+
+marikaSz: What would responder bid with medium hand and 2 five card major?|
+PG| ***** 456 ***** |
+
+
+CP|8|AT|
+
+*** |CP||AT|I play that the auction 1N-2@H-2@S-3@H is invitational with 5/5. Not all experts agree. Some play that as forcing. With a game forcing 5/5, I would bid 1N-2H-2S-4H.|
+PG| ***** 457 ***** |
+
+
+cp|8|AT|
+
+^B@2^*Bhondo717: ^*N|cp||at|But most non-experts do not differentiate (Texas Transfer).|
+PG| ***** 458 ***** |
+
+
+AT|
+
+Sunrise4U: Why do experts differentiate and how?|
+PG| ***** 459 ***** |
+
+
+CP|8|AT|
+
+*** |CP||AT|Experts consider the auction 1N-2D-2H-4H and 1N-2H-2S-4S as mild slam tries. Responder has 15ish points and a six card major. In my experience, that auction rarely occurs. For years, I did not play Texas (still don't with many partners), and I have not missed it. I do play 1N-3x (any suit)  is a slam try in the suit bid. |
+PG| ***** 460 ***** |
+
+
+ht|Z|at|
+This is the end of Q & A section. Next, is the complete transcript of the session.|
+pg| ***** 461 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%% Transcrript
+qx|TRAN, Transcript|cs|1|cp|2|fp|1|HT|D|at|
+^-{Chat log of Bridge Base Online session - Sept 30, 2010}
+^-|FP||cp|8|AT|^B@2^*BMovie Maker: ^*N|cp||at|Some of Howard's students are eager to have the complete transcript of the session. They probably feel more comfortable to print the entire chat and leisurely read it. So, the following is the entire chat from the live session--no editing except removing unrelated chats. As the content of this BBO movie cannot be printed into a readable format, I have prepared a text file which would be sent along with this presentation.|
+PG| ***** 462 ***** |
+
+
+cp|8|AT|
+
+^B@2^*Bhondo717: ^*N|cp||at|Okay, let's get started. Welcome to my second class on Fundamentals of Constructive Bidding. The purpose of these classes is to teach you the fundamentals behind most popular bidding systems. Many people memorize rules of bidding but do not understand why those rules were invented. Hopefully, after these classes, you will understand the whys and therefore will be able to figure out what to bid, rather than memorizing a bunch of rules. Tonight's lesson is on auctions starting with 1NT. Auctions when the opening bid is 1N are usually pretty straight forward. Those who attended the last lesson remember the concept of the "captain of the bidding."|
+PG| ***** 463 ***** |
+
+
+at|
+
+To briefly review, in every auction, one person is "captain", the other is "subordinate." It is the job of the captain to determine the final contract, both level and strain. The captain does this by asking his or her partner "questions" about their hand. It is the job of the subordinate partner to answer those questions. On many auctions, responder is the captain. On hands where the opening bid is 1NT, this is particularly true. Once you open 1NT, your partner is responsible for placing the final contract.|
+PG| ***** 464 ***** |
+
+
+at|
+
+Because 1NT is such a descriptive bid, that is usually pretty easy to do. Please, remember, if your partner opens 1NT, you are in charge of making sure you get to the right contract. Further, because 1NT is such a descriptive bid, you should open it whenever possible. Most people play a 1NT opener shows 15-17 HCP, and one of 3 distributions: 4-3-3-3 4-4-3-2 or 5-3-3-2. Another way to say this is your hand can have at most one doubleton. There is a tendency by some people to stretch the distributions on occasion and open 1N with 6-3-2-2 and perhaps 5-4-2-2. But I personally don't care to do that. However, one thing that I highly recommend is that you open 1NT even with a 5 card major. Most experts agree with that. When you have a 15-17 point balanced hand, it is very difficult to get your points across if you open 1H or 1S.|
+PG| ***** 465 ***** |
+
+
+NT||
+ht|e|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|When the auction often goes 1H/1S-P-1N, you can bid 2N, but that will often get you too high. So, because 1N is so descriptive, opening 1N with a 5 card major is preferable. Some people worry about missing a major suit fit. The only time that is even an issue is when partner has exactly 3 card support in the 5 card major. With 4 card support, partner would bid Stayman. Obviously,, it is possible to miss a 5-3 fit, but most of the time NT plays as well as the 5-3 fit.|
+PG| ***** 466 ***** |
+
+
+at|
+
+Now let's talk about responder. If you remember from last time, responder can classify his hand as one of three categories-- minimum response, medium response, or maximum response. The only difference from the last lesson is the point counts for these classifications is different. A minimum response hand is 7 points or less. If responder has a minimum hand, game is not possible, so the idea is to stay as low as you can. You will either play in 1NT or 2 of a major. So, with a minimum hand, the idea is to get out ASAP.|
+PG| ***** 467 ***** |
+
+
+at|
+
+A medium hand is 8 or 9 points. If responder has a medium hand, game is possible, but only if opener has a maximum NT opener. I will define what a maximum NT opener is in a few minutes. But the point is, with a medium hand, responder invites game, and opener accepts with a maximum. If responder has 10 or more points, then he or she has a maximum response. In that case, responder is responsible for making sure their side gets to game. With a maximum hand, responder must NEVER make a bid that opener can pass.|
+PG| ***** 468 ***** |
+
+
+at|
+
+It is time to talk about opener's hand categories. For NT openers, since the range is so narrow, there are only two categories:
+a minimum NT opener, and a maximum NT opener. The only time it is important for opener to distinguish is when responder makes an invitational bid. If responder makes an invitational bid, opener goes to game with a maximum NT hand. A max NT hand meets one of the following criteria
+ -- any 17 point hand
+ -- any 16 HCP hand with a fit for partner's major
+ -- any 16 HCP hand with a 5 card suit
+ -- any 16 HCP with at two or more 10s and 9s and not 4-3-3-3 distribution.|
+PG| ***** 469 ***** |
+
+
+NT||ht|e|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|Okay, now that we know when we should bid game, let's talk about what strain (suit or NT) to choose. One important rule to remember is, it is fairly rare that you would rather play 5 of a minor than 3NT. I won't say it never happens that you want to play 5 of a minor, but too many people bypass 3NT when they should be there. It is usually much harder to take 11 tricks than 9 tricks. So, your mind set should be, you want to play either 3NT or 4 of a major. You almost never want to play 5 of a minor. Therefore, responder's job in defining which suit to play in is simply to determine if there is the possibility of a major suit fit.|
+PG| ***** 470 ***** |
+
+
+AT|
+
+If there is no possibility of a major suit fit, then responder should place the contract in the appropriate level of NT. Responder should look for a major suit fit if he or she has 4 or more cards in at least one of the major suits. Otherwise responder should assume the contract will be in NT. As responder, if you do not have a 4+ card major, your choices are simple.
+With a minimum hand, pass.
+With a medium hand, invite by bidding 2N
+With a maximum hand, bid 3N. It is pretty simple. Don't worry about shortness or long minors. If you have the right number of HCP bid 3NT or 2NT. You will occasionally be wrong, but most of the time you will do fine.|
+PG| ***** 471 ***** |
+
+
+AT|
+
+What do responders do if they have a 4+ card major. There are two conventions that take care of finding out whether or not to play in a major. They are Stayman and Jacoby Transfers. You should bid Stayman under the following circumstances:
+a) You have a medium or maximum hand. I will talk about a possible exception to this later, but for now, assume you cannot bid Stayman with a minimum. You have one 4-card major, 2 four-card majors, or one 4-card major and one 5-card major. Those are the only distributions where you should bid Stayman.|
+PG| ***** 472 ***** |
+
+
+AT|
+
+Basically, Stayman is defined to find a 4-4 major fit. If you have more than 4 cards in a major, you generally should use Jacoby Transfers. The only exception being when you are exactly 5/4 in the majors. As most of you know, I am sure, a 2@C response to 1NT is the Stayman convention. When responder bids 2C, he or she is saying nothing about clubs. Responder is simply asking if opener has a 4-card major. If opener has a 4 card major, he or she bids that major. If opener does not have a 4-card major, the response is 2@D. With two 4-card majors, most people play that opener bids 2@H.|
+PG| ***** 473 ***** |
+
+
+NT||nt||ht|e|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|Okay, let's first talk about what responder does with a maximum hand. If opener does not show a one of responder's 4 card majors, then responder simply bids 3NT. If opener shows one of responder's 4 card majors, then responder bids 4 of that major. That's it. Opener almost always respects responder's final decision. There is one exception. If opener has two 4-card majors, then opener knows that there has to be a 4-4 major fit. Responder should never bid Stayman without a 4-card major. Therefore, if responder bids Stayman, and opener has 2 4-card majors, there has to be a 4-4 fit.|
+PG| ***** 474 ***** |
+
+
+AT|
+
+So, if the auction goes 1N-2@C-2@H-3N. Opener knows that responder must have 4 spades. Responder bid Stayman showing a 4-card major. If the 4-card major is not hearts, it has to be spades. So, if opener has two 4-card majors, he or she is allowed to override responder's decision to bid 3N, and bid 4S. That is the only case where that is true, when opener has two 4-card majors.|
+PG| ***** 475 ***** |
+
+
+AT|
+
+With a medium hand, responder does one of the following. If opener bids a 4-card major that responder has, responder raises to 3 of the major. Otherwise, responder bids 2N. Opener should bid game with a maximum hand, as I defined before. If responder invites in 3 of a major, opener should go with 16-17 points. If responder invites with 2N, then opener should go with a maximum hand, using the criteria I defined before. And, if opener has 2 four-card majors, and the auction goes 1N-2@C-2@H-2N. Then opener should correct to 3@S with a min hand (15 HCP) and bid 4S with a max hand. That's it for Stayman. I said a lot, but the principles are pretty simple. Responder invites with a medium hand, bids game with a maximum hand, and opener accepts an invitation with a maximum hand.|
+PG| ***** 476 ***** |
+
+
+AT|
+
+Finally, let's talk about Jacoby transfers. Jacoby transfers are used by responder when he or she has a 5+ card major. Pretty much any time responder has a 5-card major, responder should bid a Jacoby Transfer, regardless of strength (even with a min). The only exception (and it is fairly rare) is if responder has exactly 5/4 in the majors and a medium or maximum response. Then responder should use Stayman. But virtually all of the time, responder should use Jacoby with a 5+ card major. So, when partner opens 1N and you have a 5+ card major, your first instinct should be to use a Jacoby transfer.|
+PG| ***** 477 ***** |
+
+
+NT||nt||ht|e|AT|
+Let's briefly review the mechanics of the convention, although I am sure most of you know it. If you have 5+ hearts responders bid 2@D. This obligates opener to bid 2@H. You have "transferred" the heart contract from your hand to opener's hand even though you have hearts you want opener to be declarer. There are a number of theoretical reasons why this is a good thing. But don't worry about them for now. Just remember you have to use a transfer with a 5+ card major.|
+PG| ***** 478 ***** |
+
+
+AT|
+
+Similarly, if you have spades, you, as responder bid 2@H. This obligates opener to bid 2@S. That's it for the most part. There are extensions to Jacoby Transfers, but for this lesson I am not going to worry about them. Here, I am going to stick with the simple 2@D forces 2@H and 2@H forces 2@S. On most hands, that is what should happen.|
+PG| ***** 479 ***** |
+
+
+AT|
+
+Once responder forces opener to accept the transfer, what should responder do? With a minimum hand, the answer is easy
+just pass. If responder has a weak hand, playing in responder's 5-card suit (even with a 5-2 fit) is almost always better than playing in 1NT. So, if you have a weak hand and a 5-card major, make a Jacoby transfer intending to pass opener's response.|
+PG| ***** 480 ***** |
+
+
+AT|
+
+What would you do with a maximum hand? If responder has a maximum (10+ HCP), their side must be in game. The only question is, which game. If responder has a six-card major, then their side must have at least an 8 card fit (opener must have at least a doubleton). So, responder should just bid 4 of the major. With a 5-card major, responder is not sure whether to play 3N or 4 of the major. So, responder bids 3N. Some people claim this is a "shut out" bid. Those people are wrong, lol. 3NT by responder, after a transfer, is giving opener a choice of games.|
+PG| ***** 481 ***** |
+
+
+AT|
+
+With a doubleton in the major, opener passes, with 3 or more in the major, opener bids 4 of the major. Please, remember, the auction 1N-2@H-2@S-3N is not a shut out. It is a choice between 3N and 4@S.|
+PG| ***** 482 ***** |
+
+
+AT|
+
+What about with a medium hand? The choices are similar to what you do with a max hand, but at a lower level. If responder has a six card major, responder should invite by bidding 3 of the major. Opener should accept with a max hand, or 3 or more cards in the major even with 15 HCP, if opener has 3 cards in the major suit, with a known 9 card fit, opener should accept. For example, if the auction goes 1N-2@D-2@H-3@H, opener should bid 4@H with any hand that has 3 or more hearts. And should also bid 4@H even with a doubleton heart, with a maximum hand, as defined before.|
+PG| ***** 483 ***** |
+
+
+NT||nt||ht|e|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|One good general bidding principle to remember is 9 card fits are very powerful. So, you should tend to be more aggressive with a 9 card fit. If partner invites game (in any auction) and you know you have a 9 card major suit fit, you should accept the invitation. Similarly, you should be conservative with an 8 card fit. If partner invites and you know you only have an 8 card fit, you should tend to not bid a close game. That principle applies to all auctions not just NT auctions.|
+PG| ***** 484 ***** |
+
+
+AT|
+
+Okay, back to Jacoby transfers. The only thing left is when responder has a medium hand and a 5 card major. In that case, responder bids 2N over the transfer. For example, the auction 1N-2@D-2@H-2N says the following. Responder has exactly 5 hearts and 8 or 9 points. Opener can now easily figure out what to do. With a doubleton and a minimum hand, pass. With 3 card support, and a minimum hand, correct to 3 of the major. With a minimum hand and 4 card support, bid 4 of the major (known 9 card fit). With a max hand and a doubleton, opener bids 3N. And with a maximum hand and 3+ card support, opener bids 4 of the major. That's pretty much it.|
+PG| ***** 485 ***** |
+
+
+AT|
+
+You can have some complicated auctions with transfers. But for now, I suggest you keep things simple, until you get the basics down. Most of the time, you will do fine with the simple approach. One small comment about Texas Transfers. Most people on BBO play that with a maximum response and a 6 card major, you transfer at the 4 level. In other words, the auction 1N-4D means responder has 6+ hearts and a maximum hand. Responder is telling opener to bid 4H. Similarly, the auction 1N-4H shows responder has a maximum with 6+ spades. There is nothing wrong with playing Texas, but it is also unnecessary.|
+PG| ***** 486 ***** |
+
+
+AT|
+
+Experts differentiate between the following two auctions: 1N-2@H-2@S-4@S and 1N-4@H-4@S. But most non-experts do not differentiate. If you do not differentiate between those 2 auctions then there is no reason to play Texas. However, there is no reason not to play it either, unless partner forgets the convention :). Okay, lets do a few quiz hands. Assume partner opens 1NT. I will give you a hand. You need to determine two things. The first thing is: is the hand a minimum, medium, or maximum response. The second thing is: what do you bid, both initially, and after hearing opener's rebid. On any auction where partner opens 1N, this is what your thinking process should be. First, determine your hand strength. Second, figure out not only your first bid, but the follow ups to opener's possible rebids. Next is hand 1.|
+PG| ***** 487 ***** |
+
+
+NT||nt||ht|e|at|^B@2^y@3
+
+@SKxxx @HKxxx @DJxx @Cxx|
+PG| ***** 488 ***** |
+
+
+AT|
+It is a  minimum response. Remember, only bid Stayman with a medium or maximum hand. Otherwise partner will often overbid.|
+PG| ***** 489 ***** |
+
+
+AT|
+
+@SKxxx @HKxxxx @Dxx @Cxx|
+PG| ***** 490 ***** |
+
+
+AT|
+It is a minimum hand. Therefore, you want to get out ASAP. But, you would rather play in a 5 card suit than 1N. So, you bid 2@D, transfer to hearts, and plan on passing the forced 2H bid. Don't worry about the spade suit.|
+PG| ***** 491 ***** |
+
+
+AT|
+ 
+@SKxxx @HKxxx @DQxx @Cxx|
+PG| ***** 492 ***** |
+
+
+AT|
+The hand is medium. Since you have at least one 4-card majors, you should bid Stayman. Bid 2@C. If partner shows a major suit you raise to 3, asking him or her to bid 4 with a maximum NT. If partner bids 2@D over 2@C, you bid 2N, asking partner to bid 3N with a maximum NT opener.|
+PG| ***** 493 ***** |
+
+
+AT|
+
+@SQxx @HKxxxx @DKxx @Cxx|
+PG| ***** 494 ***** |
+
+
+AT|
+This is medium. You also have a 5 card major, so Jacoby is appropriate. Bid 2@D. Over partner's forced 2@H response, bid 2N. Remember, that shows you have exactly 5 hearts and a medium hand. It is giving partner a choice of contracts. With a minimum hand and a doubleton, pard passes. With a minimum hand and 3 hearts, pard bids 3@H. With a minimum hand and 4-card support, pard bids 4@H (9 card fit). With a maximum hand and a doubleton, pard bids 3N. With a maximum hand and 3+ hearts, pard bids 4@H. Again, if you understand the concepts, figuring out what to bid is a matter of deduction, not memorizing rules.|
+PG| ***** 495 ***** |
+
+
+AT|
+
+@SKQxx @HKxxxx @Dxx @Cxx
+This is the rare hand where, because you are exactly 5/4 in the majors, and have a medium or max hand, you bid Stayman. Bid 2@C. If partner responds 2@D, you bid 2@H. That shows 5 hearts and 4 spades. If partner bids 2H, I would bid 4@H (9 card fit), although that is aggressive. And if partner bids 2@S, I would bid 3@S, inviting pard to bid 4@S with a maximum.|
+PG| ***** 496 ***** |
+
+
+NT||ht|e|at|^B@2^y@3
+
+@SKxx @HKxx @AQxxxx @Cxx|
+PG| ***** 497 ***** |
+
+
+AT|
+This is medium, no 4+ card major. So, simply invite with 2N. Pard will bid 3N with a maximum NT opener, as I defined before.|
+PG| ***** 498 ***** |
+
+
+AT|
+
+@SQxxxx @SQxxxx @Dxx @Cx|
+PG| ***** 499 ***** |
+
+
+AT|
+You want to play in one of your majors with minimum. You can transfer to either one. So, you either bid 2@D planning on passing 2@H, or you bid 2@H planning on passing 2@S. Your choice.|
+PG| ***** 500 ***** |
+
+
+AT|
+
+@SKxxx @HQxx @DKQxxx @Cx
+You have maximum. You want to see if you have a 4-4 spade fit, Bid 2@C. Over a 2@S response, bid 4@S. Over any other response bid 3N. Remember, if partner responded 2@H and also had a 4-card spade suit, partner can correct 3N to 4@S.|
+PG| ***** 501 ***** |
+
+
+AT|
+ 
+@Sx @HQxx @DKQxxx @CKxxx|
+PG| ***** 502 ***** |
+
+
+AT|
+This is maximum with no chance of a major suit fit. Just bid 3N (and hope pard has spades stopped :).|
+PG| ***** 503 ***** |
+
+
+AT|
+ 
+@Sx @HKxxx @DQxx @CKxxx |
+PG| ***** 504 ***** |
+
+
+AT|
+Indeed this is a maximum and you have a 5 card major. Bid 2@D. Over the forced 2@H response, bid 3N. This tells partner you have exactly 5 hearts and a maximum hand. Remember, 3N is a choice of games. It is NOT a shutout bid. Partner should correct 3N to 4@H with 3+ hearts.|
+PG| ***** 505 ***** |
+
+
+NT||ht|e|at|^B@2^y@3
+
+@SKxxxx @HKQxxx @Dxx @Cx|
+PG| ***** 506 ***** |
+
+
+AT|
+This is a slightly trick question. Yes officially you only have 8 HCP. But you must have at least one 8 card major suit fit. Partner cannot have doubletons in both majors. Also, you are entitled to count your shortness which gets your hand up to 11 points using classical point count (2 for singleton, 1 for doubleton). So, I would consider this a maximum and I would bid it as follows:
+I would first transfer to spades, by bidding 2@H and then over the forced 2@S response, I would bid 4@H. This gives partner a choice of games. With better hearts, partner passes. With better spades, partner corrects to 4@S . |
+PG| ***** 507 ***** |
+
+
+AT|
+
+This is the end of tonight's lesson. There are some advanced topics in the tutorial. I did not have time to cover them but, if you have questions about them, feel free to email me. The next lesson is 10/28. |
+PG| ***** 508 ***** |
+
+
+ht|x|cp|8|AT|
+^B@2^*BMovie maker: ^*N|cp||at|The help section is next.|
+PG| ***** 509 ***** |
+
+
+NT||bt||
+%%%%%%%%%%%%%%55 Help
+qx|HELP,How to Navigate Through This Presentation|tu||
+cs|1|cp|4|fp|2|at|
+^-{ How to Navigate Through This Presentation }
+^-|cs||CP||fp||at|
+
+Use the toolbar buttons at the top of this window (if using the Viewer) or at the bottom of this window (if using the BBO program) to move around this presentation. The buttons either have text labels as in the Viewer such as "^*BNext page^*N" for the forward arrow or "^*BPrevious Page^*N" for the back arrow. In the BBO toolbar you can see the function of each button by rolling the cursor over it. 
+
+Click the "^*BNext Page^*N" or the forward arrow button to move to the next page or the "^*BPrevious Page^*N" button to move back a page. The chapters are broken down into several ^*Itopics^*N. The "^*BNext topic^*N" button is used to skip ahead to the first page of the following topic. You can go back to the first page of the previous topic by clicking the "^*BPrevious topic^*N" button if you are already on the first page of the current topic. Regardless. to enjoy this presentation all you need is clicking the ^*BNext page^*N button again and again.
+
+This presentation, like the book, has a table of contents. To return to the table of contents at any time you can either click the second button on the left of the toolbar in BBO or the "^*BFirst page^*N" button in the Viewer. You should also know that if you are ever having trouble figuring out how to use this presentation, you can always click the  |cs||CP|8|at|{HELP}|CP||AT|  button. 
+
+However, please note that, on a computer that is running Windows Vista, Windows 7, Windows Server 2008, or Windows Server2008 R2, you may be unable to use the Help feature in many programs including this presentation. When you try to use the Help feature, you may receive the following message in the Windows Help and Support window:|CS|6|cp||va|6|at|
+^-{    Why can't I get Help from this program?    }
+^-|CP||AT|
+For additional information and down loading the needed file please click the |CP|1|AT| ^*Hsupport.Microsoft.Com/kb/917607^*N|CP||AT| site. If you have a 64 bit machine then you need to down load the necessary file from|CP|1|AT| ^*Hwww.delphi7.nl/download.php?file=Windows6.1-KB917607-x64.msu&typefile=tutorials^*N|CP||AT|. BTW, Viewer does not have this issue.
+
+BTW, Many blue color links such as the one above are hyperlinks. A new notice box will appear informing you of the expected action when you move your cursor over it. clicking over the blue line will move you to the intended information. Try it now. Move your cursor over the blue link but do not click.  |
+pg| ***** 510 ***** |
+
+
+cp||nt||
+%%page 2
+CS|6|AT|^-{    HOW TO PLAY DOUBLE DUMMY    }
+^-|CS||AT|
+To play a board double dummy, play free, means you can manually play out the cards seeing all 4 hands. This is a great way to practice. To do so, click on the card you wish to play from that hand on lead. Click on the cards from the next 3 hands in order of the play to complete the trick. Click on the trick to "close" it. Continue this procedure until all 13 tricks are played.
+
+You can place your cursor over any closed trick to review the cards played to that trick. You can undo a play by clicking on the back arrow button in the BBO toolbar or the undo button in the viewer. To cancel double dummy play and move to the next section, click forward arrow button.|CS|6|AT|^-
+
+{    HOW TO OPEN A CLOSED FORMAT DEAL    }
+^-|CS||AT| 
+As you may know, you can see the cards in all hand diagrams, examples, and deals. In this presentation, in many instances again to enhance its teaching, they are presented in a closed format similar to as you experience at a bridge table. Some may not like this feature and prefer an open format. A ^*Ione^*N left click on the seat will open that hand, if closed, and a ^*Itwo^*n left click will open all four hands. You can reverse your action by another left click. |CS|6|AT|^-
+
+{    Navigation USING YOUR KEYBOARD    }
+^-|CS||AT|
+In addition to buttons in the BBO toolbar, you can also use the keyboard to move around this presentation, as follows:
+
+^cThe right arrow is equivalent to the Next Page. 
+^cThe left arrow is equivalent to the Previous Page.|CS|6|at| 
+^-
+{    How TO ANSWER A QUIZ    }
+^-|CS||AT| 
+Simple. Select the bid or the card from the available choices and click it. BBO software will reward you with one of its approving melodies if you answer correctly.|
+cs|6|at|^-
+{    WHAT IF YOU CANNOT SEE THE ENTIRE PAGE    }
+^-|CS||AT|
+In order to enjoy this presentation you need to be in "Wide Screen BBO Mode" and your display resolution should be higher than 800 X 600. The best viewing resolution is 1600 X 1200. There is a comprehensive instruction on these subjects in BIL library web site at|CP|1|AT| ^*Hwww.bilbridge.Com/^*N|CP||AT|. Further, in that site, those who are using Apple devices can get information in how to enjoy this presentation.|
+PG| ***** 511 ***** |
+
+
+NT||
+
+%%%%%%%%%%%%%
+qx|End,End|HT|H|AT|^- 
+
+@D@DThis is the end of "Constructive Auctions after a 1NT Opening Bid" section.  
+
+
+^-|
+PG| ***** 512 ***** |
+
+

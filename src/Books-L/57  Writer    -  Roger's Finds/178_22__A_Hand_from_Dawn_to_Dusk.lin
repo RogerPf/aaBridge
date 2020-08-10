@@ -1,0 +1,388 @@
+              %%
+              %%  Tell users of old win player they need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the ^*b aaBridge ^*n player available  FREE  from |
+cb|8255|cp|8|ht|L|at|   ^i  ^*hrogerpf.com/aaBridge^*n|
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+              %%
+
+
+			  
+ss|chapter,22.                 A  Hand  from  Dawn to Dusk |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-04-04          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Roger's  Finds                   2020  and  Past  Years |
+%%
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       Maroon
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    Around the normal Grey
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title     
+fh|b50|                    Font   b  b-bigTitle
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+%
+cr|a230|cg|a040|cb|a130|   text   a  a-action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       on Title Pages
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    on Title Pages
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|y|n#|b|lg||at|^b@2@1|at|
+^*bClick^*n          ^*bFlow >^*n         or use your    ^*bMouse Wheel^*n|
+ht|z|at|@0
+^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|j|n^|4|
+lg|f|
+at|^c@2^z@3|  
+
+n#|3|at|This is a hand that I played in the  ^*h https://www.bilbridge.com/,BIL^*n  ^*b Dawn to Dusk ^*n event,  held on 2018 April 1st.   
+
+|n^|9|at|A main theme in  Roger's Finds  is to slowly take the reader through a complex hand.  You also get to play the hand against the aaBridge bots.  The bots have been set up to give you exactly the same defense that I got at the table.
+
+|n^|9|at|The first time you play the hand you do so without assistance from aaBridge, when set like this the hand is called a ^*b Study Deal^*n.  There is no looking at the Opps cards but you CAN ^*b UNDO ^*n as much as you like.   
+
+|n^|9|at|After that you get to play the hand a 2nd time but with access to the ^*b DDS ^*n (Double Dummy Solver)  etc.
+
+|ht|t|at| ^e@2 { |n#|4|at|Don't forget to read the Analysis Section (^*bAsys^*n).  That is what a ^*b Roger's Find ^*n is all about. |n^|b|at|^^ ^^}|
+
+
+fh|940|fm|9|fp|9|at|@0@1|ht|i|rq|3163|at|@4^^^^^^ ^- This   Bridge Movie   requires a more recent version of ^*b aaBridge^*n.   ^^^^ Your copy of ^*b aaBridge ^*n is out of date.    You can get the latest version   ^^^^  FREE   from    ^*h http://rogerpf.com/aaBridge ^*n ^- ^^^^ ^L   click the link above to visit.|
+
+qx|# 22|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+bv|a,h|
+rh||ah|Find 22|
+zm|+study+|
+md|4sKQJT984h93d3cA73,sA3hQJ8765dKQTcQT,s752hK2dA8654cK94,s6hAT4dJ972cJ8652|
+sv|n|sk|s|
+%
+bh|Play, W-E,  sL, BAD, on-lead, T3-4,  always|
+bh|Play, W-E,  hL, res, p24,     T6-11, always|
+%
+nt|^z@3^b@2^^|
+at|^*bFind 22   Try^*n      ^e  The hand,|
+pg| ***** 1 ***** |
+
+
+at|      the bidding, |
+%%_aapg-NEAR
+mb|p|mb|1S|pg||
+mb|2H|pg||
+mb|2S|pg||
+mb|3H|pg||
+mb|4S|pg||
+mb|p|mb|p|pg||
+mb|p|
+%%_aapg-STD
+pg| ***** 8 ***** |
+
+
+at|     the lead,|
+pc|hQ|
+pg| ***** 9 ***** |
+
+
+at|      ^p^*b Do your thinking NOW^*n|
+pg| ***** 10 ***** |
+
+
+qx|Try,wide|
+bv|f,v|
+
+n#|7|
+ht|r|n#|0|cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the blue  { ^*b 1st ^*n }  button  below  |cp|red|at|^*bOR^*n|cp||at|   use ^*b Flow ^*n to  SKIP  playing.|
+
+pf|first-button|
+pg| ***** 11 ***** |
+
+
+zm|-study-|
+ht|f|at|^c@2^z@3^e@4@5^^|
+ht|e|at|^e    @2If you still need help, ^*b  when in the deal, ^*n  click the ^*b DDS  { is Off/On ^*n }  button top right.|
+lg|f|at|^^The number (of tricks) in a |cp|green|at|^*b GREEN ^*n|cp||at| oval shows a good card to play for THAT side.|fp||
+ht|r|n#|0|cp|red|at|^b^*bYou have a  CHOICE^*n|cp||at|   you can click the blue  { ^*b 1st ^*n }  button  below  |cp|red|at|^*bOR^*n|cp||at|   use ^*b Flow ^*n to  SKIP  playing.
+^s     ^*bSecond and LAST Chance^*n|
+pf|first-button|
+pg| ***** 12 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Asys,wide|
+bv|f,h|
+mx|x|
+lg|h|
+ht|f|at|^c@2^z@3^d@4@5^^|
+ht|e|at|^d  ^*bAnalysis^*n   |  
+ht|f|at|^f    @4@5^^|
+lg|n|
+ht|e|at|^g The Opps take their two @h's, the @sA and put you in.^^|
+pf|show-all-always|
+pg| ***** 13 ***** |
+
+
+ht|f|at|^c@2^z@3^d    @4^^|
+%%_aapg-NEAR
+pc|hK|pc|hA|pc|h9|pg||
+pc|hT|pc|h3|pc|h5|pc|h2|pg||
+pc|s6|pc|sK|pc|sA|pc|s2|pg||
+pc|s3|
+%%_aapg-STD
+pg| ***** 17 ***** |
+
+
+lg|n|
+ht|j|n#|5|at|You have 9 top tricks and need all the rest.  Which means, your 10th ^*b has to be ^*n from some sort of end play.
+^d ^*b Can you come up with ANY sort of a plan ? ^*n|
+pg| ***** 18 ***** |
+
+
+at|^^Actually STOP.         Let's ^*b WIND BACK ^*n the last 4 cards.|
+pg| ***** 19 ***** |
+
+
+%%_aapg-NEAR
+up|2|pc|s2|pg||
+up||pg||
+up||pg||
+up||
+%%_aapg-STD
+pg| ***** 23 ***** |
+
+
+ht|f|at|^g@4@5^^|
+lg|e|
+ht|e|at|^g When you first played a card to the @s6, you did play a HIGH @s, didn't you ? |
+pg| ***** 24 ***** |
+
+
+n#|3|at|^^If you noticed that dummy's @s7 was enough to force the Ace - Well Done.   But shame on you if you then lazily played the @s4.| 
+pg| ***** 25 ***** |
+
+
+n#|3|at|^^Out of pure habit you should nurture  ANY  entry possibilities, for  'Justin'  @-  'Just in case'.|
+pg| ***** 26 ***** |
+
+
+n#|3|at|^^That is why I played the @sK and not the @s4, not a thought of an end play in my head.|
+pg| ***** 27 ***** |
+
+
+ht|f|at|^g@4@5^^|
+lg|h|
+ht|e|at|^g Back to where we were.|
+pc|sK|pc|sA|pc|s2|
+pg| ***** 28 ***** |
+
+
+pc|s3|
+pg| ***** 29 ***** |
+
+
+at|   We have 9 tricks.  The 10th must come from some end play.  |
+pg| ***** 30 ***** |
+
+
+n#|7|at|^^It turns out that the 'End Play' we need is a Squeeze.
+Don't be put off by the "S", word it is just a technique and like all techniques it can be learnt.|
+pg| ***** 31 ***** |
+
+
+n#|5|at|^^On the other hand, don't necessarily expect to follow along with everything the first time you see  it here today. |
+pg| ***** 32 ***** |
+
+
+lg|j|
+ht|f|at|^g@4@5^^|
+ht|e|at|^g If you are interested in reading more on Squeezes here in ^*b aaBridge ^*n see  
+^d^*g :Introduction::Roger on Squeezes, Roger on Squeezes ^*n 
+or look for it later under        ^*b Menubar ^*n     >     ^*b Books-L      >      Writer  -  Roger on Squeezes ^*n |
+pg| ***** 33 ***** |
+
+
+n#|5|at|^^Back to this hand and  THIS  squeeze.|
+pg| ***** 34 ***** |
+
+
+ht|f|at|^g@4@5^^|
+lg|h|
+ht|e|at|^g To me this position has prospects.  |
+pg| ***** 35 ***** |
+
+
+at|Looking at the @d's, we have 6 so they have 7, which means once three rounds of @d's have been played, only ONE defender will be able to control the @d suit.|
+pg| ***** 36 ***** |
+
+
+n#|5|at|^^So with nothing to lose we set about playing the needed three rounds of @d's.
+|n#|5|at|As long as you remember to preserve the wonderful @s4 you still have a chance.|
+pg| ***** 37 ***** |
+
+
+ht|f|at|^g@4@5^^|
+lg|c|
+ht|e|at|^g Let the ...
+^c@s3   run to the @sQ 
+@d3   to the       @dA  
+@d back, ruffing high  
+@s4   to             @s7   
+@d back, again ruffing.  ^j Watch it happen...|
+pg| ***** 38 ***** |
+
+
+%%_aapg-NEAR
+pc|s5|pc|c2|pc|sQ|pg||
+pc|d3|pc|dT|pc|dA|pc|d2|pg||
+pc|d4|pc|d7|pc|sJ|pc|dQ|pg||
+pc|s4|pc|h6|pc|s7|pc|h4|pg||
+pc|d5|pc|d9|pc|sT|pc|dK|
+%%_aapg-STD
+pg| ***** 43 ***** |
+
+
+ht|f|at|^g@4@5^^|
+lg|e|
+ht|e|at|^g       West has just shown 1 @h and the @dKQ10,  East has shown  1 @h and the @d972.
+To me, that says, the missing @dJ is with East.|
+pg| ***** 44 ***** |
+
+
+tt|y|
+n#|4|at|^^If West (who bid 2@H) started with 6 cards in @h's we are home.  Why ?   Because West with only five cards left in her hand and putting her with 3 of them being the 3 remaining @h's means that she will then have at most 2 other cards that are not @h's.  These 2 cards can only be @c's.|
+pg| ***** 45 ***** |
+
+
+sk||
+zm|su_clear_once|
+ht|f|at|^g@4@5^^|
+lg|k|
+ht|e|at|^g(For those who did not show the Opps cards earlier, they are showing now.)|
+pg| ***** 46 ***** |
+
+
+n#|4|at|^^If West has only got 2 @c's then it means that she will have NO say in the @c suit,
+as once we play our @cAK, then only East can control @c's  AND  we already know that East is controlling the @d's (having the @dJ).|
+pg| ***** 47 ***** |
+
+
+ht|f|at|^g@4@5^^|
+ht|e|at|^g If you are wondering if I worked all this out at the table, the answer is NO.
+I did have an inkling that such an outcome might be possible because West had bid 2 @h's, so was likely to have little space for the other suits.  
+The key is that, once the Opps have taken their tricks, - there is only this one chance - so TAKE IT.|
+pg| ***** 48 ***** |
+
+
+ht|f|at|^g@4@5^^|
+lg|f|
+ht|e|at|^g We still have to finish the Squeeze.
+Technically for those (like me) who like names, this is an 'Inverted Automatic Squeeze' with a 'Two Part Extended Menace', which in this this case is the  @cA73  together with the  @cK94.
+|n#|3|at|The @d8 is a one card Menace (it menaces the @dJ) while the combined @c holding threatens to make a trick from a third @c should East give up her guard.|
+pg| ***** 49 ***** |
+
+
+pc|s9|
+ht|f|at|^g@4@5^^|
+lg|m|
+ht|e|at|^g The play of the @s9 causes  East  no problems.|
+pg| ***** 50 ***** |
+
+
+tt||
+pc|h7|pc|d6|pc|c5|
+pg| ***** 51 ***** |
+
+
+at|^^^d But on the play of the @s8,  called the 'Squeeze Card' for obvious reasons.|
+pg| ***** 52 ***** |
+
+
+bv|c,v|
+tt||
+pc|s8|pc|h8|pc|c4|
+pg| ***** 53 ***** |
+
+
+at|^^ East is Squeezed.    Which card would YOU play (for East) ?|
+pf|cont-button|
+pg| ***** 54 ***** |
+
+
+---------------------------------------------------------------------------
+qx|DDS,wide|
+ht|f|at|^d@4@5^^|
+ht|e|at|^d  ^*bDDS^*n  ^g You are now free to explore the deal.|
+at|^^^^^c    @2If you still need help, ^*b  when in the deal, ^*n  click the ^*b DDS  { is Off/On ^*n }  button top right.|
+lg|f|at|^^The number (of tricks) in a |cp|green|at|^*b GREEN ^*n|cp||at| oval shows a good card to play for THAT side.|fp||
+bv|a,v|
+eb||
+pd|rem-res,When in the deal`cp`red`at` ^*b click ^*n`cp``at` the  { ^*b Rem ^*n }  button to remove all restrictions on  { ^*b 1st ^*n }   { ^*b Cont ^*n }  and  { ^*b Enter the Deal ^*n }|
+pf|rem-res|
+pg| ***** 55 ***** |
+
+
+------------------------------------------------------------------------
+qx||
+md|4|
+nt||
+ht|z|n#|7|at| @0^*b End ^*n|
+pg| ***** 56 ***** |
+
+

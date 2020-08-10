@@ -1,0 +1,288 @@
+%%
+%%
+
+ss|chapter,17.                                           Defense 'A'     |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2017-08-08          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Roger's  Finds                   2020  and  Past  Years |
+%%
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       Maroon
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    Around the normal Grey
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title     
+fh|b50|                    Font   b  b-bigTitle
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+%
+cr|a230|cg|a040|cb|a130|   text   a  a-action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       on Title Pages
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    on Title Pages
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|y|n#|b|lg||at|^b@2@1|at|
+^*bClick^*n          ^*bFlow >^*n         or use your    ^*bMouse Wheel^*n|
+ht|z|at|@0
+^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|j|
+Lg|c|
+fp|4|at|^c@2^z@3|
+
+at|This problem is another  'hand from the table'  as dealt and as bid.      Your Opps are playing a standard 2/1.
+|n^|2|at|
+It is  ^*bDefense^*n  so it's going to test your ability to listen to the bidding.   You have a LISTENING ROUTINE ?
+|n^|2|at|
+|cp|red|at|^*bAs each player bids^*n|cp||at|   you  allocate them a ^*b SPECIFIC ^*n number of points.
+^d@2  13   for an opener 
+    7   for a 1 level response                             |cp|dg|at|  you can use your 'from experience' starting numbers|cp||at|
+  11   for a 2 level (non GF) response
+    5   for a pass opposite an Opener
+^c@2You change the number (up or down) on Openers rebid.  NOT a range, ALWAYS a specific number.
+|lg||at|
+At the end of the bidding calculate partners points.    When dummy comes down - does everything match ?
+^^I promise   -   you will be amazed as to how often you hit the target.|
+
+qx|# 17|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+bv|a,h|
+rh||ah|Find 17|
+%% 4sJ543h862dA52cAT6,sAT7hAK975d64cJ74,s862hQJ4dKQT83c53,sKQ9hT3dJ97cKQ982
+md|4sJ543h862dA52cAT6|
+sv|e|sk|s|
+nt|^z@3^b@2^^|n^|5|
+lg||
+at|^*bFind 17^*n     The hand|
+pg| ***** 1 ***** |
+
+
+at|,     the bidding|
+mb|p|
+pg| ***** 2 ***** |
+
+
+mb|p|
+pg| ***** 3 ***** |
+
+
+mb|1H|
+pg| ***** 4 ***** |
+
+
+mb|p|mb|1N|
+pg| ***** 5 ***** |
+
+
+mb|p|mb|2N|
+pg| ***** 6 ***** |
+
+
+mb|p|mb|3N|
+pg| ***** 7 ***** |
+
+
+mb|p|mb|p|mb|p|
+pg| ***** 8 ***** |
+
+
+at|^^^^After some thought you decide on the 4th highest of the longest  (which is also the unbid major)  and lead the ... @s3|
+pg| ***** 9 ***** |
+
+
+md|0,sAT7hAK975d64cJ74|
+pc|s3|
+pg| ***** 10 ***** |
+
+
+at|^^^^The play goes . . .|
+aa|y|
+pc|ST|pc|S2|pc|S9|
+pg| ***** 11 ***** |
+
+
+pc|C4|pc|C5|pc|CK|
+pg| ***** 12 ***** |
+
+
+at| ^g. . . you take it with the @cA ...  |
+pc|CA|
+pg| ***** 13 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Thnk,wide|
+nt|^z@3^b@2^^|n^|5|
+tt|Y|
+lg|f|
+at|Do your thinking  NOW.|
+pg| ***** 14 ***** |
+
+
+cp|dg|at|          You have it easy, at the table no one will be there to tell you  'this is a key moment'.|cp||
+n#|4|at|^^Your plan for the defense is ?|
+pg| ***** 15 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Try,wide|
+bv|f,v|
+aa|n|
+md|04sJ543h862dA52cAT6,sAT7hAK975d64cJ74,s862hQJ4dKQT83c53,sKQ9hT3dJ97cKQ982|
+n#|4|at|^^|cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the analysis.|
+n#|4|at|^^|cp|dg|at|^l Even if you play it out, you ^*b WILL ^*n benefit from reading the analysis.|cp||
+pf|first-button|
+pg| ***** 16 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Asys,wide|
+bv|f,h|
+eb|y___|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+sk||
+rc| s86 hQJ4 dKQT83 c3 sKQ hT3 dJ97 cQ982|
+at|^*bAnalysis^*n      I hope you got a shock when you saw dummy.  You should have.  West has clearly overbid with 2NT.  Even if we give East a massive 11 hcp for her passed hand and 3NT bid they still have only 23 between them.  So partner has at least 8.|
+pg| ***** 17 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bAnalysis^*n      The first trick     @s3  @s10  @s2  @s9    is like a search light turning on (but ONLY if you think).  Partner who can't beat the @s10 has given count,   low = odd  (so here 3).  East's  @s9  says everything, she must have started with  @sKQ9.  This is true even if you had no idea of the meaning of partners @s2.|
+pg| ***** 18 ***** |
+
+
+vp|----,----,----,p---|
+md|0,,,sKQ|
+pg| ***** 19 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z @3^b@2^^|n^|5|
+lg|f|at|^*bAnalysis^*n      Have you counted declarer's tricks ?    She has 3 @s's, one in the bag, plus 2 more (KQ opposite Ax) and two @h's in dummy (the AK) making a total of 5.|
+pg| ***** 20 ***** |
+
+
+at|   What about the 2nd trick,   @c4  @c5  @cK  @cA     What did that 'say'?   Would she really have led from @cJxx towards her @cK missing the @cA10 and ^*bQ^*n ?  Unlikely,  so that puts her as starting with @cKQxx(x)|
+pg| ***** 21 ***** |
+
+
+vp|----,----,----,---p|
+vx|----,----,----,---9|
+md|0,,,cQ98|
+at| and if she does have that 5th @c she has her total of 9 all ready to run.   |
+pg| ***** 22 ***** |
+
+
+at|Just a moment, partner played the @c5  (count on Opps lead) and with 3 cards in @c's including either the 2 or 3 he would have played one of them - so he could indeed have only 2 cards in @c's so putting declarer with (originally) 5.|
+pg| ***** 23 ***** |
+
+
+md|0,,,c2|
+pg| ***** 24 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z @3^b@2^^|n^|5|
+lg|f|at|^*bAnalysis^*n      And so to declarers points.  If our logic is correct and declarer has the @sKQ @cKQ then she has at most a Jack some where,  either @hJ(x) (can't have 3 @h's on that bidding)  or @dJxx(x).|
+pg| ***** 25 ***** |
+
+
+at|^^If She has  @dJxxx,  can we take 5 tricks before she gets her 9 ?
+|n#|5|at|Once you have an answer to that question, you have to make it clear to partner how he should play.  
+|n#|3|at|^f To see what and how;  I would tell partner,  Click  { ^*b Flow ^*n } |
+pg| ***** 26 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z @3^b@2^^|n^|5|
+lg|f|at|^*bAnalysis^*n     @dA|
+sk|s|
+tt|n|
+vp||
+vx||
+md|04sJ543h862dA52cAT6,sAT7hAK975d64cJ74,s862hQJ4dKQT83c53,sKQ9hT3dJ97cKQ982|
+pc|dA|
+pg| ***** 27 ***** |
+
+
+pc|d4|pc|d8|pc|d7|
+pg| ***** 28 ***** |
+
+
+at|      followed by the @d5|
+pc|d5|
+pg| ***** 29 ***** |
+
+
+---------------------------------------------------------------------------
+qx|DDS,wide|
+sk|s|
+
+nt|^z@3^b@2^^|
+at|^*bDDS^*n    ^eYou are now free to explore the deal.
+|n^|7|lg|k|at|^^^c@2If you still need help then, when in the deal, click the ^*b DDS  { is Off/On ^*n }  button top right.
+|fp|s|at|A number (of tricks) in a GREEN oval shows a good card to play for THAT side.|fp||
+bv|a,v|
+eb||
+pf|all-res-lifted|
+pg| ***** 30 ***** |
+
+

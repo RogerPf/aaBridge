@@ -1,0 +1,131 @@
+%% Add header
+%% Last edited  2013 Dec 30
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+bt||st||
+qx|ah|
+
+at|^b@2^*bAdd Header^*n^f^*b!ah! ... !^*n|at|^z@3
+|
+pg| ***** 0 ***** |
+
+
+qx|rh|
+at|^d!rh!!  ^ithink   ^*bRemove Header^*n       clears the current header.
+|
+rh||
+pg| ***** 1 ***** |
+
+
+at|^d!rh!|cp||at|^*b7^*n|cp||at|!  ^iclears the current header and sets a  NUMERIC ONLY  (>1) board number.
+|
+rh|77|
+pg| ***** 2 ***** |
+
+
+at|^drh!!ah! stuff !    ^ithink   ^*bAdd Header^*n      adds new stuff to the current header.
+|
+rh||ah| stuff |
+pg| ***** 3 ***** |
+
+
+ah| more |
+at|^dah! more !    ^iand you can add more
+|
+pg| ***** 4 ***** |
+
+
+at|^d         ^iby default the Board Number shows as a number extracted from the qx text or 1.
+|
+pg| ***** 5 ***** |
+
+
+sv|e|
+at|^dsv!e!       ^gbut if you set the vulnerability then it is set to the standard for that dealer and vulnerability
+|
+pg| ***** 6 ***** |
+
+
+at|      ^iyou can override the  Board Number in other ways   (see next page) |
+pg| ***** 7 ***** |
+
+
+-------------------------------------------------------------
+qx|ah1|
+nt||
+rh||
+sv||at|^b@2^*bAdd Header^*n^f^*b!ah! ... !  ^*n ^k  (If there is one of the words from the list below)|at|^z@3|
+lg||
+n#|3|at|Include ANYWHERE in the header one of the following 5 words  ^*b Board,  Deal,  Hand,  Example,  Diagram ^*n  THEN the next word (group of characters) will always be the board "number".|
+pg| ***** 8 ***** |
+
+
+rh||ah| Board 57 |
+n#|3|at|^^^crh!!ah! ^*bBoard^*n 57 !|
+pg| ***** 9 ***** |
+
+
+rh||ah| Example ABC |
+at|^^^crh!!ah! ^*bExample^*n ABC !|
+pg| ***** 10 ***** |
+
+
+rh||ah| Stuff before Deal 144 stuff after|
+at|^^^crh!!ah! Stuff before ^*bDeal^*n 144 stuff after !|
+pg| ***** 11 ***** |
+
+
+rh||ah| Front Hand 27 middle Board 42 at end|
+at|^^^crh!!ah! Front ^*bHand^*n 27 middle ^*bBoard^*n 42 at end !   if more than one then either could be selected|
+pg| ***** 12 ***** |
+
+
+-------------------------------------------------------------
+qx|ah2|
+nt||
+
+sv||rh|1|
+at|^b@2^*bAdd Header^*n^f^*b!ah! ... !  ^*n ^k  If there are  NONE  of the words from the list ... |at|^z    @3|at|
+|
+n#|3|at|^b... then the FIRST "word" that starts with a digit will be the Board number and the word BEFORE that will be displayed. |
+pg| ***** 13 ***** |
+
+
+n#|3|rh||ah| Anything 119a|
+at|^^^crh!!ah! Anything  ^*b119a^*n !|   
+pg| ***** 14 ***** |
+
+
+n#|3|rh||ah| First sec  One-word 32a  and some more|
+at|^^^crh!!ah! First sec  One-word  ^*b32a^*n  and some more !|    
+pg| ***** 15 ***** |
+
+
+n#|3|rh||ah| First sec  Anything a123  and some more|
+at|^^^crh!!ah! First sec  Anything ^*ba123^*n  and some more !              a letter in front  -  DOES NOT WORK |  
+pg| ***** 16 ***** |
+
+
+-------------------------------------------------------------
+qx|ah L|
+nt||
+
+sv||rh||
+at|^b@2^*bAdd Header^*n^f^*brh!!ah!Board 3  interesting text here  \    line 2    \    line 3 !  ^*n ^k |  
+rh||ah|Board 3  interesting text here
+\    line 2
+\    line 3 |
+
+at|^^Will display as ...
+^f@2^*brh!!ah!Board 3  interesting text here
+\    line 2
+\    line 3 !
+^*n^b@2... when the deal is saved in Standard format.  This is useful for leaving in-line comments for viewing in an editor.  
+Notice that these separate  "lines"  survive being saved in the BBO (all-on-one-line) format and do not show above.|
+pg| ***** 13 ***** |
+
+ht|z|at|@0
+^*b end ^*n|

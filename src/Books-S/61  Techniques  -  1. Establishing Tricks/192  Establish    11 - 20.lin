@@ -1,0 +1,177 @@
+
+
+%% 2019-07-26  Pat - Establishing Tricks
+
+%% All hands are copyright  Richard Pavlicek
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+bv|a,h|   %% hide all three buttons
+%%
+ss|head,     ah`Part 1.    Establishing Tricks`|
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+<<--INSERT-START-->>=07___FP_Patterns.ins
+%%
+fh|b48| %%  'banner' font
+fh|t40| %%  'target' font
+fh|s28| %%  'small'  font
+fh|p45| %%  'pink dot' size
+
+cr|a230|cg|a040|cb|a130|          a  action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       pink dot button
+
+bv|e,h| %%   Enter the deal button hidden
+bv|f,v| %%   1st visible 
+bv|d,v| %%   DDS visible
+
+ha|y|   %%   hide auctions
+
+ss|head,     ah`Part 1.    Establishing Tricks`|
+ss|banner,   ht`e`fp`b-big`at`^*b^k  ^*nEstablishment^*n`fp``|
+ss|link,     ht`z`at`^k     visit  Richard Pavlicek's  Establishment  page    ^*h http://www.rpbridge.net/9g01.htm, rpbridge.net  9g01^*n`|
+ss|means,    ht`e`fp`small`at`^x ^*h http://www.rpbridge.net/9gc8.htm, meaning^*n`fp``|
+ss|new,      nt`^b@2^^`vv`means`vv`link`vv`banner`ht`e`vv`head`|
+ss|contract, mb`3nppp`|
+ss|p1,       vv`contract`wt`s`sk`s`fp`t`ht`e`at`^q    ^*b`|
+ss|p2,       fp`t`ht`e`at`^*n^u`|
+ss|p3,       fp``ht`q`at`^d`|
+%%
+<<--INSERT-END**-->>=07___FP_Patterns.ins
+
+
+
+
+
+qx|11|
+rh||ah|Pattern 11|
+vv|new|at|^*b 11.  Unblock Sacrifice^*n|
+%
+md|1  K2 5432, Q4 9876, JT93 AK, A65 QJT|
+%
+bs|5,2|
+vv|p1|at|win 4|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 0 ***** |
+
+
+qx|12|
+rh||ah|Pattern 12|
+vv|new|at|^*b 12.  Internal Unblock Cashout^*n|
+%
+md|1  9872 2, 5 6543, AKQ43, JT6 AK|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 1 ***** |
+
+
+qx|13|
+rh||ah|Pattern 13|
+vv|new|at|^*b 13.  Jettison Unblock Cashout^*n|
+%
+md|1  KQ76 - 32, J 432 76, A5432 A, T98 5 54|
+%
+bs|3,3|
+vv|p1|at|win 6|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 2 ***** |
+
+
+qx|14|
+rh||ah|Pattern 14|
+vv|new|at|^*b 14.  Two Suit^*n|
+%
+md|1  432 KQJ, A5 AT98, QJT9 32, K87 765|
+%
+bs|6,1|
+vv|p1|at|win 3|
+vv|p2|at|auto bi|
+vv|p3|at|Leading a heart first gets zero spade tricks.|
+pg| ***** 3 ***** |
+
+
+qx|15|
+rh||ah|Pattern 15|
+vv|new|at|^*b 15.  Tempo Two Suit^*n|
+%
+md|1  q2 KQ A, A3 A T9, KJT - 32, 4 2 KQJ|
+%
+bs|6,2|
+vv|p1|at|win 3|
+vv|p2|at|auto bi|
+pg| ***** 4 ***** |
+
+
+qx|16|
+rh||ah|Pattern 16|
+vv|new|at|^*b 16. Two-suit whipsaw ^*n|
+%
+md|1 Q65 KQJ A -,AJT A KQJ -,K987 432,432 5 432 -|
+%
+bs|5,1|
+vv|p1|at|win 4|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 5 ***** |
+
+
+qx|17|
+rh||ah|Pattern 17|
+vv|new|at|^*b 17.  Entry duck ^*n|
+%
+md|1 32 A2,KQ KQ,A54 3,JT JT|
+%
+bs|6,3|
+vv|p1|at|win 3|
+vv|p2|at|auto bi |
+vv|p3|at||
+pg| ***** 6 ***** |
+
+
+qx|18|
+rh||ah|Pattern 18|
+vv|new|at|^*b 18.  Repeat entry duck ^*n|
+%
+md|1 432 AK2,JT 9876,A8765 3,KQ9 QJT|
+%
+bs|5,3|
+vv|p1|at|win 4|
+vv|p2|at|auto bi |
+vv|p3|at||
+pg| ***** 7 ***** |
+
+
+qx|19|
+rh||ah|Pattern 19|
+vv|new|at|^*b 19.  Communication duck ^*n|
+%
+md|1 32 K543,87 Q876,KQ54 A2,AJT JT9 |
+%
+bs|5,2|
+vv|p1|at|win 4|
+vv|p2|at|auto bi |
+vv|p3|at||
+pg| ***** 8 ***** |
+
+
+qx|20|
+rh||ah|Pattern 20|
+vv|new|at|^*b 20.  Avoidance duck ^*n|
+%
+md|1 432 A,KT KQ, A65 2,QJ 3 A |
+%
+bs|6,3|
+vv|p1|at|win 3|
+vv|p2|at| |
+vv|p3|at|If West plays low, win @sA, avoidance hop.|
+pg| ***** 9 ***** |
+
+

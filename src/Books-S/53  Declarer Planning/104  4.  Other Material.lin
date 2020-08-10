@@ -1,0 +1,78 @@
+%%
+%%
+
+ss|chapter,4.  Other  Material                                        |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-07-01          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Declarer  Planning                                                  |
+%%
+cr|m140|cg|m080|cb|m110|   fill   m  m-mastColor       on Title Pages
+cr|c208|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor  fake pink button
+cr|b200|cg|b255|cb|b255|   fill   b  light blue   fake blue button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+fh|j32|
+cr|a230|cg|a040|cb|a130|     a  action
+
+ht|h|
+at|^c@2^z@3^^|n#|5|
+fp|t-title|at||fp||
+lg|i|
+n#|f|at|The only other significant piece of work on Planning that exists  INSIDE  aaBridge is in; 
+|n^|9|at|
+^*b^e menubar       >      |cp|red|at| Books |cp|r|at|      >        Learn to Play Bridge 1       >       5. Planning the Play^*n
+|n^|9|at|
+This is a link  ^*g :Planning the Play::Learn to Play Bridge 1, Planning the Play^*n.   |fp|s|at|      Return by clicking the  |fp|t|n#|1|at|@L|fp|s|n^|1|at|  icon,  top left.|fp||at|
+
+It is not as simplistic as you might expect from it location in a book called. ^*b Learn to Play Bridge 1^*n.  In fact the total of 16 deals that are the method of presentation make a good compliment to the Techniques tutorials.
+|n^|7|at|
+^*b^e menubar       >      |cp|  |at| Books-S |cp|r|at|      >        Techniques  ...
+
+|
+qx|4.|
+pg| ***** 0 ***** |
+
+

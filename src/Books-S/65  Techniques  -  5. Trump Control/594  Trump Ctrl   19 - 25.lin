@@ -1,0 +1,164 @@
+
+
+%% 2019-07-26  Pat - Trump Control
+
+%% All hands are copyright  Richard Pavlicek
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+bv|a,h|   %% hide all three buttons
+%%
+ss|head,     ah`Part 5.    Trump Control`|
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+<<--INSERT-START-->>=07___FP_Patterns.ins
+%%
+fh|b48| %%  'banner' font
+fh|t40| %%  'target' font
+fh|s28| %%  'small'  font
+fh|p45| %%  'pink dot' size
+
+cr|a230|cg|a040|cb|a130|          a  action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       pink dot button
+
+bv|e,h| %%   Enter the deal button hidden
+bv|f,v| %%   1st visible 
+bv|d,v| %%   DDS visible
+
+ha|y|   %%   hide auctions
+
+ss|banner,   ht`e`fp`b-big`at`^*b^k  ^*nTrump Control^*n`fp``|
+ss|link,     ht`z`at`^k     visit  Richard Pavlicek's  Trump Control  page    ^*h http://www.rpbridge.net/9n01.htm, rpbridge.net  9n01^*n`|
+ss|means,    ht`e`fp`small`at`^x ^*h http://www.rpbridge.net/9gc8.htm, meaning^*n`fp``|
+ss|new,      nt`^b@2^^`vv`means`vv`link`vv`banner`ht`e`vv`head`|
+ss|contract, mb`4sppp`|
+ss|p1,       vv`contract`wt`s`sk`s`fp`t`ht`e`at`^q    ^*b`|
+ss|p2,       fp`t`ht`e`at`^*n^u`|
+ss|p3,       fp``ht`q`at`^d`|
+%%
+<<--INSERT-END**-->>=07___FP_Patterns.ins
+
+<<--INSERT-START-->>=08___FP_Patterns_Anti.ins
+%%
+ss|banner,   ht`e`fp`b-big`at`^*b^j   ^*nAnti Trump Control^*n`fp``|
+%%
+<<--INSERT-END**-->>=08___FP_Patterns_Anti.ins
+
+
+qx|-|
+st||
+nt|^b@2^^|vv|banner|
+lg|k|
+ht|n|at|The following group of patterns are, to quote the creator Richard Pavlicek,
+^d" ...  'anti' techniques, i.e., plays to counteract a technique in that category."
+You are defending (as N or S) and are trying to stop declarer from making their contract.|
+rh||ah|--- -|vv|head|
+ht|a|n#|1|at|^q ( @s are trumps, your target is |cp|red|at|^*b 4 ^*n |cp||at|tricks )|
+pg| ***** 0 ***** |
+
+
+qx|19|
+rh||ah|Pattern 19|
+vv|new|at|^*b 19.  Duck anti^*n|
+%
+md|4  A32 - A, QJ7 A, 54 - 32, K6 32|
+%
+bh|Play, East, sK, res, p3, T1, always|
+%
+bs|7,2|
+vv|p1|at|win 2|
+vv|p2|at|auto bi|
+vv|p3|
+wt|w|
+pg| ***** 1 ***** |
+
+
+qx|20|
+rh||ah|Pattern 20|
+vv|new|at|^*b 20.  Repeat duck anti ^*n|
+%
+md|4  A432 - A, JT98 A, 65 - 432, KQ7 32|
+%
+bh|Play, East, sK, res, p3, T1, always|
+%
+bs|6,2|
+vv|p1|at|win 2|
+vv|p2|at|auto bi|
+vv|p3|
+wt|w|
+pg| ***** 2 ***** |
+
+
+qx|21|
+rh||ah|Pattern 21|
+vv|new|at|^*b 21.  Finesse block anti^*n|
+%
+md|4  Q4 - 32, 98 A3, K32 - A, AJT 2|
+%
+bs|7,2|
+vv|p1|at|win 2|
+vv|p2|at|auto bi|
+vv|p3|
+wt|w|
+pg| ***** 3 ***** |
+
+
+qx|22|
+rh||ah|Pattern 22|
+vv|new|at|^*b 22.  Finesse refusal^*n|
+%
+md|4  K32 - A, T9 A3, 654 - 2, AQJ 2|
+%
+bs|7,2|
+vv|p1|at|win 2|
+vv|p2|at|bi|
+vv|p3|
+wt|w|
+pg| ***** 4 ***** |
+
+
+qx|23|
+rh||ah|Pattern 23|
+vv|new|at|^*b 23.  Block anti trump^*n|
+%
+md|4  76 - 654, K983 - K, AT2 A 3, QJ - AQ2|
+%
+bs|6,2|
+vv|p1|at|win 2|
+vv|p2|at|bi|
+vv|p3|
+wt|w|
+pg| ***** 5 ***** |
+
+
+qx|24|
+rh||ah|Pattern 24|
+vv|new|at|^*b 24.  Overruff refusal anti^*n|
+%
+md|4  T2 - AKQ, AK KQJ, Q A 432, 9 - 8765|
+%
+bs|6,2|
+vv|p1|at|win 2|
+vv|p2|at|auto bi?|
+vv|p3|at|bi case trivial and N-S win 3 tricks.|
+wt|w|
+pg| ***** 6 ***** |
+
+
+qx|25|
+rh||ah|Pattern 25|
+vv|new|at|^*b ^*n|
+%
+md|4  Q8 - 43, AJ2 A, KT9 - - a, 543 2|
+%
+bs|8,1|
+vv|p1|at|win 3|
+vv|p2|at|auto bi|
+vv|p3|
+wt|w|
+pg| ***** 7 ***** |
+
+

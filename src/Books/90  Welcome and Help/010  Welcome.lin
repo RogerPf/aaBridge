@@ -1,0 +1,90 @@
+%%
+%% Welcome
+%% Last edited  (except for date)  2018 Oct 11
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<<--INSERT-START-->>=005__Common_Header.ins
+%%
+fh|v24|        v-24     very small
+fh|s28|        s-28     small
+fh|j32|        j-32
+fh|k35|        k-35
+fh|e37|        e-37
+fh|t40|        t-40     title
+fh|n42|        n-42
+fh|p45|        p-45
+fh|b50|        b-50     big
+fh|g60|        g-60     graphSuit 
+fh|m64|        m-64     mastHead
+fh|c70|        c-70     chapTitle
+%
+fh|x33|ff|xCourier|          FONT   x-33-Courier
+%
+cr|a230|cg|a040|cb|a130|     a  action
+cr|b100|cg|b100|cb|b255|     b  light Blue
+cr|f200|cg|f255|cb|f255|     f  fake-button
+cr|h000|cg|h095|cb|h169|     h  h-highlight
+cr|p255|cg|p000|cb|p255|     p  pink    fake pink button
+cr|u160|cg|u040|cb|u200|     u  pUrple
+cr|y170|cg|y190|cb|y255|     y  youtube border
+%
+bt||
+fp|b-50|at|^^^^^a   @s @h @d @c  ^v     @c @d @h @s|fp||
+at|^b@2^z@3^^|
+ht|f|        
+%%
+<<--INSERT-END**-->>=005__Common_Header.ins
+
+qx|Welcm|
+mn|   Welcome to    -    aaBridge  5.2  |   
+at|@1| 
+ht|f|n#|0|fp|k-35|at|^d  Click one of the buttons ^w |n#|3|cp|red|at| <<<  ^*bclick it^*n|cp||
+at|^b@2^z@3^^|
+ht|f|n^|0|cs|y|fp|b-50|cp|a|at|^p|n<|4|at|{  |n^|c|at|^^ ^p  ^*b ^p |fp||at|aaBridge  on  |fp|b-50|at|^*bYouTube ^*n|n>|a|cp||fp||at| } | 
+ht|f|n#|3|cs|wh|fp|b-50|at|^p{ ^*h https://www.youtube.com/channel/UCjqx0Cofc7-TT-N0tfYR8rg, |fp||at|aaBridge  on  |fp|b-50|at|^*bYouTube ^*n }|
+
+ht|g|n#|0|fp||at|^k  @- |fp|b-50|at|^*b OR ^*n|fp||at| @-|fp||
+
+at|^c    @2| %% sets the left edge of the LEFT hand column
+
+ht|k|n^|6|fp|    |cs|f|at|{ |n#|2|at|   ^*g :Interesting,inc  'Interesting'  Deals ^*n^j|n<|b|n#|2|fp||at|^^}|
+ht|j|n^|6|fp|g-60|cs|f|at|{ |n#|2|at|^*f playBridge_and_dealChoice, Play Bridge ^*n ^j|n<|b|n#|1|fp||at|^^}|
+
+ht|L|n#|j|fp|b-50|cs|f|at|{ |n#|1|at|^*f open_random_lin_file,   Random Lin^*n|
+fp||at|^^^*f open_random_lin_file,   |n#|2|at| open that Bridge Movie   ^*n^^}|
+
+ht|r|n^|k|fp|n-42|cs|f|at|{ |n#|3|at|^*f openPage_ListOfInterestingLins, List of Interesting Lins ^*n|n#|2|at|^^}|
+
+
+ht|t|n^|a|fp|t-40|cs|f|at|{ |n#|2|at|^*f openPage_distrFlashCards,Learn the Suit Distributions^*n|n#|g|at|^^}|
+ht|u|n^|b|fp||cs|f|at|{ |n#|2|at|^*f openPage_distrFlashCards,    ( using aaBridge 'Flash Cards' )^*n|n#|0|at|^^}|
+
+ht|y|n^|e|fp|    |cs|f|at|{ |n#|2|at|   ^*g :Easy Counting Practice,inc  Easy Counting Practice^*n^m|fp|     |n<|9|n#|2|at|^^}|
+ht|x|n^|e|fp|p-45|cs|f|at|{ |n#|2|at|^*f openPage_pathToAdvanced, Path to Advanced Bridge^*n^m|fp| |n<|9|n#|1|at|^^}|
+
+
+at|^n    @2|  %% sets the left edge of the  RIGHT  hand column
+
+
+ht|i|n#|4|fp|k-35|at|^*bClick^*n |fp||at|on any |fp|n-42|at| ^*b^*uB^*n^*books^*n |fp||cp||at| menu on the Menubar.|
+
+
+ht|m|n^|3|fp|k-35|at|^*bClick^*n |fp||at|on any of the  |fp|k-35|at|^*bHelp^*n|fp||at|  or  |fp|k-35|at|^*bExample^*n|fp||at|  files you
+^o|n#|2|at|can see listed in the tall gray column on your left.|
+
+
+lg|f|ht|q|n^|0|fp|t-40|at|^*bDrag n Drop^*n|fp||at|  a  ^*n.lin^*n file,   
+^p@2any group of  ^*n.lin^*n  files,  
+any folder with  ^*n.lin^*n  files in it,
+any zipfile with  ^*n.lin^*n  files in it
+^o and they will Open and show in the left hand column. 
+^p|n#|3|fp|s-28|at|(Windows users can ^*b dbl-click ^*n on any .lin file)|fp||
+
+
+
+lg||ht|z|at|@0@1|n#|b|cp|a|cs||fp|n-42|at|^d ^*b New to  aaBridge ? |fp|k-35|n#|2|at|^j   ^*b click |fp|t-40|cp||cs|wh|n#|2|at|^l   ^*b{ Flow  > }^*n@2|fp|v-24|cp|a|n#|4|at|   ^*b below ^*n|cp||
+
+
+ht|y|n#|0|fp|k-35|at|@0
+^q Roger Pfister   |fp|v-24|at|updated|fp||at|   August  2020|

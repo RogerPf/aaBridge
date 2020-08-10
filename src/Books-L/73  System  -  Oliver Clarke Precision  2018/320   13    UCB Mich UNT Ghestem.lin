@@ -1,0 +1,1218 @@
+%%
+%%
+
+ss|chapter,Chapter 13     UCB  Michaels  UNT  Ghestem|
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2015-12-05        set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=001___FP_masthead.ins
+%%
+ss|masthead,Oliver Clarke Precision                                 2018  |
+%%
+cr|m000|cg|m095|cb|m169|   fill   m  m-mastColor       Precision Blue
+cr|c198|cg|c205|cb|c229|   fill   c  c-chapterColor    that Gray
+%%
+<<--INSERT-END**-->>=001___FP_masthead.ins
+
+
+<<--INSERT-START-->>=002___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|f35|                    Font   f  f-fine
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+fh|x72|                    Font   x  x-insertAlert
+fh|z06|                    Font   z  z very small for  position adjustment USED BY 'GRAPHICS'
+%%
+cr|e210|cg|e255|cb|e255|   fill   e  graphic   a touch of blue
+cr|i250|cg|i110|cb|i220|   fill   i  graphic   intervention bid   red/purple
+cr|r250|cg|r110|cb|r220|   fill   r  graphic   text highlight   red/purple
+cr|f255|cg|f240|cb|f240|   fill   f  graphic   all so far highlight color
+cr|k198|cg|k205|cb|k229|   fill   k  graphic   mid-dark
+cr|z255|cg|z255|cb|z255|   fill   z  graphic   light-gray
+cr|n128|cg|n128|cb|n128|   TEXT   n  graphic   N or No trumps
+cr|u198|cg|u205|cb|u229|   TEXT   u  graphic   x'es  bluish light grey
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=002___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=005___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+ht|z|n#|k|at|@0^*h https://www.youtube.com/channel/UCTGNUS8jbx85QOMUPlHoRMA, OCP Videos ^*n|
+%%
+<<--INSERT-END**-->>=005___FP_footer.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+Lg||
+ht|j|
+qx|13|
+fp|t-title|at|^d@2^z@3|
+at|
+^*gGS, Defensive Bidding     Mich  UNT  Ghest   ^*n
+|fp||at|^^^^|
+fp|t-title|at|^*gOliv, Oliver  on  Defensive Bidding  Mich  UNT  Ghest  |fp||at|HERE^*n  |fp||cp|red|at|<<< First time ?  Click title|fp||cp||at|
+
+
+^*gPrac,      Practice Hands  -   What would You Bid ? ^*n|
+pg| ***** 0 ***** |
+
+
+=====================================================================
+qx|GS,hide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Defensive  Bidding   -  UCB   Michaels  UNT  Ghestem|fp||at|^s(An Extract from the Lesson)^^^^|
+ht|h|
+
+at|^b@2^*bMM:^*n  Rather than provide extracts as a summary here I suggest you use the larger "bumps"  on the Navbar below.
+
+
+         ^e^*b Over^*n          ^h Overcalls                  
+		 
+		 ^e^*b UCB^*n           ^h Unassuming Cue-Bid      
+		 
+		 ^e^*b Mich^*n          ^h Michaels Cue-Bid                
+		 
+		 ^e^*b UNT^*n           ^h Unusual No Trump
+		 
+		 ^e^*b Ghst^*n          ^h Modified Ghestem  
+	
+
+		 ^e^*b Prac^*n          ^h Practice hands
+
+
+		 
+		 ^d and jump directly to that topic.
+|
+	
+pg| ***** 1 ***** |
+
+
+ht|z|n#|5|at|
+^a ^*bend^*n|
+pg| ***** 2 ***** |
+
+
+-----------------------------------------------------------------------------------------------  
+Oliver's Class --------------------------------------------------------------------------------
+qx|Oliv,wide|
+nt|^z@3^b@2|
+tu||
+at|^^^^|
+%%   Chapter header box and Text
+ht|b|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|b|fp|z|at|^^^^^^^^^^^^^^^^|fp|c-chapTitle|at|^-^*bOliver's Class                Defensive  Bidding^*n^-^^|cs||fp||cp||at|^^|
+lg|d|
+cp|red|at|^*bOliverC:^*n|cp||at|  Hi Everyone and welcome to today's Precision Club session, in which we'll be looking at Defensive Bidding.
+
+Let me say at the outset that Precision as such makes no specification for defensive bidding, and so what I'm going to show you tonight is my own preference, effectively.
+
+Clearly you are free to play whatever system of defensive bids you are comfortable with and it doesn't affect ANY of the rest of the system.
+
+Hopefully I might be able to give you some ideas and food for thought.
+
+So tonight's session is utterly NOT Precision-specific and can be applied to any system you like If you have not already done so, please have a look at the notes I have prepared on Precision Club bidding.
+
+You can find these on: ^*h http://ocp.pigpen.org.uk/index.php ^*n   
+The section on Defensive Bidding can be accessed from there  ^*h http://ocp.pigpen.org.uk/Defensive.php ^*n
+
+Defensive Bidding comes into play when your opponents open the bidding rather than you, so we're into the realms of overcalls, jump overcalls,  takeout doubles,  Michaels,  Unusual No Trump  and the  Unassuming Cue-Bid.
+
+Tonight we'll also take a quick look at Overcalls,  Michaels, Unusual No Trump and Modified Ghestem.
+
+Next week we will spend time on the use of Lebensohl over Takeout Doubles and in competitive sequences.|
+pg| ***** 3 ***** |
+
+
+--------------------------------------------------------------------
+qx|Over,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Defensive Bidding  -  Overcalls|fp||at|^^^^|
+lg|b|
+cp|red|at|^*bOliverC:^*n|cp||at|  Firstly, though, let's have a very quick look at overcalls.
+
+Simple overcalls can vary from 7 up to about 17 points.
+
+They may be simply lead-directing or competitive right up to strong distributional hands.
+
+Indeed it is the very wide range of possible hand-strengths that makes concepts like Unassuming Cue-Bids and Lebensohl so attractive to permit the partnership to establish easily and cheaply what category the overcaller and advancer's hand falls into.
+
+If you do NOT have methods like that in your bidding arsenal, then you may well struggle to cope with such a wide-ranging scope for overcalls.  Some people tend to make simple overcalls on pretty rubbishy suits and slim values.
+
+My experience is that this is usually counter-productive:  If opps win the auction and partner ends up on lead, do you REALLY want them to lead up to your ^*b J8653 ^*n suit ?
+
+Moreover, entering the bidding when Opps end up declaring inevitably gives them a LOT of information about who has which suits and who is likely to have which honour cards.
+
+Overcalling JUST because you have something around opening values or JUST to remind everyone that you are still sat at the table is not in your best interests, therefore.
+
+Overcall as a lead-directing measure when you have a GOOD suit that you want partner to lead OR when you have the points/distribution to make a serious shot at competing for the contract.
+
+Just making a noise (we've all seen people who do that and feel they HAVE to bid on every single hand or they're not getting their money's worth) can be completely counter-productive.|
+pg| ***** 4 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Defensive Bidding  -  Overcalls|fp||at|      continued^^^^|
+lg|b|
+cp|red|at|^*bOliverC:^*n|cp||at|  If you have nothing to say, don't say anything.
+
+Direct suit raises over a simple overcall should be largely pre-emptive and aimed at  making life more difficult for Opps and consuming their bidding space.
+
+They are NOT normally invitational as such, though obviously with a good hand Partner is free to take matters further.
+
+In response to a simple overcall, a simple change of suit response is often treated as a 1-round Force, much like over an Opening Bid, but if you use Unassuming Cue-Bids (which we'll come to in a minute), that doesn't have to be the case, since you can stipulate that any hand that wants to set up a forcing sequence has to go via an Unassuming Cue-Bid, and so any sequence that does  NOT  use a UCB is ^*b non-forcing ^*n.
+
+That alone can be very useful (being able to make non-forcing change-of-suit responses).  Much the same is true over jump-overcalls.
+
+As I said, though, some pairs stipulate that ANY sequence NOT going via an Unassuming Cue-Bid is by definition non-forcing.
+
+The second method is, to some extent, my preference, but the use of UCB's and Competitive Lebensohl, however, does make a difference.
+
+Any questions thus far on Simple overcalls and jump overcalls?
+
+ok, 
+
+let's move on to UCB's |
+pg| ***** 5 ***** |
+
+
+--------------------------------------------------------------------
+qx|UCB,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Defensive Bidding  -  Unassuming Cue-Bids|fp||at|      ^^^^|
+lg|b|
+cp|red|at|^*bOliverC:^*n|cp||at|  Unassuming Cue-Bids (in the past known as "Western Cue Bids", but hereafter called UCBs) are termed "unassuming" in that the Overcaller cannot make any assumptions about exactly what kind of hand the Advancer has.
+
+In particularly the UCB doesn't say ANYTHING about their holding in opponents' suit.
+
+This is different to some other uses of cue-bids where you may be promising some kind of control in the suit  OR  denying a full stop in Opp's suit for the purposes of playing in No Trumps and ASKING partner, if they have a stop.
+
+UCB's are generally used by 3 kinds of hands: 
+^c@2|n^|b|lg|j|at|
+^*b1.^*n   Strong supporting hands with a good raise to the 3-level or higher in the Overcaller's suit, or 
+^*b2.^*n   ANY strong hand worth at least a serious invitation to game-level or higher, or 
+^*b3.^*n   Game-going hands looking for partner to have a stop in the opponents' suit for the purposes of playing
+^b@2|n^|5|lg|b|at|^v in No Trumps.
+|n^|9|lg|b|at|
+This is quite often the case when partner has overcalled a Minor, but may be also where the Advancer has a running Minor themselves and no good support for partner's Major.
+
+Type 1.  is @2probably one of the commonest uses for UCBs, to show a hand worth a genuine invitation in partner's suit (because, remember any direct raise is essentially pre-emptive).
+
+^bType 2.  does not have to contain support for partner's suit (but you may want to hold off using a UCB on a marginal hand if you have a complete misfit for partner's suit)
+
+^bType 3.  is less common, in that you may make some other move FIRST, and THEN cue-bid Opps' suit.
+(This is called a Directional Asking Bid rather than a UCB).  Indeed you might make a UCB and then make a second cue in Opps' suit as a DAB.
+^b@2
+Any questions thus far?|
+pg| ***** 6 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Defensive Bidding  -  Unassuming Cue-Bids|fp||at|      continued^^^^|
+lg|b|
+cp|red|at|^*bOliverC:^*n|cp||at|  The general tactics when the Advancer makes a UCB are that 
+
+Overcaller makes the most common-sense clarification of his hand-type, strength and distribution, in particular: 
+
+^c@2|n^|b|lg|j|at|
+^*b1.^*n   Returns to their original suit at the minimum level tend to show a fairly minimum overcall with little 
+|n^|5|at|^u or nothing to spare.
+^*b2.^*n   Jumps to game show at least a decent opening strength hand and a long suit.  (Bearing in mind that
+|n^|5|at|^n partner doesn't HAVE to have support for your suit).
+^*b3.^*n   Bids in a new suit are natural.
+|n^|3|lg|b|at|
+^*b4.^*n   Bids in No trumps show stop(s) in Opps' suit.
+|n^|5|lg|b|at|
+^b@2
+Time for an example hand.|
+pg| ***** 7 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 1,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 1|sv|-|sk|n|sk||
+md|3sKJ43hT63dAK72cJ3,sT985hQ98752d8cQ7,sAQ72hAJ4dQJ95cA5,s6hKdT643cKT98642|
+mb|?|
+nt|^z@3^b@2|Lg|k|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 1       NS are playing a weak (12-14) 1NT. |
+pg| ***** 8 ***** |
+
+
+mb|1D|
+pg| ***** 9 ***** |
+
+
+sj|L|
+mb|2c|
+at|^^I HATE this 2@c overcall.  Either pre-empt properly, or stay silent.  This 2@c bid might mislead partner into action that you simply are not strong enough to support.     So 3@c (natural WJO) better than 2@c here.|
+pg| ***** 10 ***** |
+
+
+sj|L|
+mb|d|an|neg|
+nt|^z@3^b@2|Lg|d|n#|9|
+at|^*b^*bIsabelle10: ^*n ?  Would a 3@c cue bid here show support for diamonds and invite ?  or Is it important to Double Here ?
+|cp|red|at|^*bOliverC:^*n|cp||at|    Yes it would, but since South had a 4-card Major, worth using the negative double to see if partner has
+^f one as well  -  you can always escape to NT's or Diamonds if not,
+ 
+^*bIsabelle10: ^*n  Was once told to support after interference. 
+|cp|red|at|^*bOliverC:^*n|cp||at|    Yes, good approach but here ^*b better ^*n to double for the reasons I gave above. |
+pg| ***** 11 ***** |
+
+
+sj|c|
+mb|p|mb|2s|
+pg| ***** 12 ***** |
+
+
+sj|c|
+mb|p|mb|3c|an|Game Force Cue-bid|
+nt|^z@3^b@2|Lg|a|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  So now this is a completely different type of cue-bid, just forcing to game.  This is  ^*b NOT ^*n a UCB, which only comes into play when Opps opened the bidding and partner overcalled.|
+pg| ***** 13 ***** |
+
+
+sj|c|
+mb|p|mb|3n|
+pg| ***** 14 ***** |
+
+
+sj|c|
+mb|p|mb|4s|
+pg| ***** 15 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+at|^^^^So no UCB's here.  West wasn't strong enough to do anything over partner's 2@c overcall.|
+pg| ***** 16 ***** |
+
+
+mb|p|
+pg| ***** 17 ***** |
+
+
+pf|Y|
+pc|c2|
+pg| ***** 18 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Defensive Bidding  -  Unassuming Cue-Bids|fp||at|      continued^^^^|
+lg|b|
+cp|red|at|^*bOliverC:^*n|cp||at|  So UCB's are a good way to distinguish between hands worth a GENUINE invitation in partner's suit and those that merely want to make a pre-emptive raise.
+
+If responder has a STRONG game-going hand WITHOUT support for partner's suit, then they're a good way of creating a FORCING sequence without the need to jump-shift all over the place, which consumes valuable bidding space.
+
+Once you've made an UCB, you can then show your suits naturally (and cheaply), because the UCB has always created a FORCING sequence UNLESS you support partner's suit at the 2 or 3 level after making the UCB.
+
+Anyone struggling with this? 
+
+One last point here: One thing to consider where the overcaller shows a second suit, especially when they initially overcalled a Minor: 
+
+There is an implication that they do NOT have 3-card support for the 4th (unbid) suit, as otherwise they might have made a take-out double rather than overcalling in the first place.
+
+That's less true when they initially overcalled a Major, though.
+
+
+Time for the next example hand.|
+pg| ***** 19 ***** |
+
+
+--------------------------------------------------------------------
+qx|t 2,thin|
+st||
+pn|South,West,North,East|rh||ah|Teach 2|sv|-|sk|s|sk||
+md|1SAK8752HKJT2DK7C4,S4H96DAQ964CAKT83,ST3H8543D532CJ965,SQJ96HAQ7DJT8CQ72|
+mb|?|
+nt|^z@3^b@2|Lg|g|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Teach 2       |
+pg| ***** 20 ***** |
+
+
+mb|1S|
+pg| ***** 21 ***** |
+
+
+sj|L|
+mb|2D|
+pg| ***** 22 ***** |
+
+
+sj|c|
+mb|p|mb|2S|an|UCB|
+at|  So here we have an  Unassuming Cue-Bid.   So East's  2@s  bid says absolutely NOTHING about their Spade holding and at this stage.   West doesn't know what the UCB is based on.|
+pg| ***** 23 ***** |
+
+
+sj|c|
+mb|p|mb|3C|
+n#|5|at|^^West makes the common-sense continuing description of their hand.|
+pg| ***** 24 ***** |
+
+
+sj|c|
+mb|p|mb|3N|
+n#|5|at|^^No need for East to "ask" anything here given their holding in the Majors So here, East was always thinking in terms of heading towards 3NT, but just used the UCB to make partner bid again.            Any questions? |
+pg| ***** 25 ***** |
+
+
+mb|p|mb|p|mb|p|
+pg| ***** 26 ***** |
+
+
+nt|^z@3^b@2|Lg|h|n#|9|
+at|^*blute57: ^*n   If East lacked a Major suit stopper how would he proceed ? 
+|cp|red|at|^*bOliverC:^*n|cp||at|  With no Major stoppers, they might not have been strong enough for a UCB.
+|n#|5|at|^*bIsabelle10:  ^*n Is it always a good idea to bid a second suit after partner makes UCB ?
+|cp|red|at|^*bOliverC:^*n|cp||at| When partner makes a UCB, just try to make the best common-sense further description of your hand that you can.    Here it was obvious for West to show their 2nd suit.|
+pg| ***** 27 ***** |
+
+
+nt|^z@3^b@2|Lg|d|n#|9|
+at|^*blute57:   ^*n  What if East only missing a spade stopper ?  also what if East missing a heart stopper? 
+|cp|red|at|^*bOliverC:^*n|cp||at| Give East the K@d, Q@c and some scattered values in the Majors, and they might have bid 3@s over 3@c, a DAB  (Directional Asking Bid) asking partner if THEY have a Spade stop for 3NT.
+|n#|4|at|When West then denied with 4@c (showing the 5th Club), East would have to make a decision whether to stop there or push on to 5@d.  Having said that, 2@s and then 3@s effectively makes the sequence game-forcing, so East would pretty much HAVE to bid on to 5 of a minor.      ^o Any more questions on Unassuming Cue-Bids ?|
+mb|p|
+pg| ***** 28 ***** |
+
+
+pf|Y|
+pc|SA|
+pg| ***** 29 ***** |
+
+
+--------------------------------------------------------------------
+qx|Mich,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Defensive Bidding  -  Michaels  Cue-Bid|fp||at|      ^^^^|
+lg|b|
+cp|red|at|^*bOliverC:^*n|cp||at|  Now we'll move on to Michaels, Unusual NT, and Ghestem.
+
+A Michaels cue-bid is a simple cue-bid of Opponents suit, eg: (1@c)  -  2@c,    or   (1@h)  -   2@h.
+
+Michaels always shows a distributional 2-suiter weighted towards the Majors.
+
+Over a Minor-suit Opening, a Michaels cue-bid always shows both Majors.   Michaels cue-bids can be used in two different ways over a Major suit opening:
+^c@2
+^*b1.^*n   To show the OTHER Major and an unspecified Minor
+^*b2.^*n   To @2show the Other Major and Diamonds (ie: the two highest unbid suits)
+^b@2
+There is not much to choose between these methods, in my view, but my preference is to ALWAYS use Michaels to show the two HIGHEST two unbid suits.
+
+Using Method ^*b1.^*n  the 2NT response is used to ask which Minor suit is held.
+
+Using Method ^*b2.^*n  @2the 2NT bid is available as Lebensohl, but you can be stuck for a bid to show a @h/@c or @s/@c 2-suiter if you are NOT playing Ghestem or Modified Ghestem (which I'll touch on in a minute).
+^b@2
+...so I would always suggest that you play Michaels as showing the highest 2 unbid suits, UNT (Unusual No Trump) as showing the two lowest unbid suits, and include Ghestem (or better Modified Ghestem) in your arsenal, and now you are ALWAYS showing two specific suits with your 2-suited overcalls.|
+pg| ***** 30 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Defensive Bidding  -  Michaels  Cue-Bid|fp||at|      continued^^^^|
+lg|b|
+cp|red|at|^*bOliverC:^*n|cp||at|  Michaels (and UNT and Ghestem) is usually played as either weak or strong, but ^*b NOT ^*n "intermediate".
+
+There is an important reason for this:  Partner can assume you are  WEAK  and bid accordingly.
+
+If  YOU  are strong then YOU can then invite further.
+
+But if you use Michaels when you are intermediate (11-15 ish) then if partner is intermediate themselves they don't know whether their hand is worth an invitation or not.
+
+So if you're in the 11-15 range, better to make a simple overcall rather than using Michaels, UNT or Ghestem.  After all, you might be weakish (12) and if partner invites on an intermediate hand (11) you can get too high.
+
+Similarly, if they bid cheaply and you have an intermediate hand, now YOU do not know whether to invite or not.
+
+Using the WEAK/STRONG method.    This is never a problem.
+
+You only ever invite when at least ONE of you is strong.
+
+UCB's and Lebensohl can be useful devices over Michaels.
+
+Over a UCB by partner, the Michaels-bidder can show their second suit (if the initial Michaels bid didn't specify it), and/or, if it did, they can indicate their range by bidding a 2/3-card fragment so, by inference, show where their shortage is.|
+pg| ***** 31 ***** |
+
+
+--------------------------------------------------------------------
+qx|UNT,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Defensive Bidding  -  Michaels  Cue-Bid|fp||at|      continued^^^^|
+lg|b|
+cp|red|at|^*bOliverC:^*n|cp||at|  You can get silly-sounding sequences such as
+|n#|5|at|^c(1@c)     -     2@c(Michaels = Majors)      -      3@c(UCB)      -     4@c(Club Fragment)    -    4@s        :) 
+|n#|5|at|Not going to spend any more time on Michaels as such, since I'm sure you all already use it.
+^^^^
+
+|fp|t-title|at|The  Unusual  No  Trump|fp||at|      ^^^^|
+at|The Unusual No Trump (UNT) is to the Minors what Michaels is for the Majors.
+
+Over a Major opening it always shows Both Minors, whereas over a Minor suit opening it either shows the 2 lowest unbid suits OR the other Minor and an unspecified Major.
+
+Responder normally shows their better Minor or, where UNT used over a Minor, a response in Hearts shows no support for the Minor and asks partner to pass or correct to Spades.
+
+Do remember that you can play UNT (and Michaels for that matter) at any level if you like, so 
+|n#|5|at|^c(1@s)    -    4NT       is STILL an Unusual No Trump bid but at that level, probably  6-6  or  6-5  distribution.
+
+With the UNT, Lebensohl 2NT is not, of course, available to assist the advancer to clarify their hand.
+
+UCB's are available, however.|
+pg| ***** 32 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Defensive Bidding  -  Unusual  No  Trump|fp||at|      ^^^^|
+lg|b|
+cp|red|at|^*bOliverC:^*n|cp||at|  As with Michaels, it's best to play UNT as either WEAK or STRONG, but  NOT  intermediate.
+
+With intermediate hands just bid your suit naturally with an overcall.
+
+This helps partner AND you to judge the hand correctly in subsequent bidding.
+
+Restoring the previous hand.|
+pg| ***** 33 ***** |
+
+
+qx|,thin|
+st||
+up|1|ub|8|mb|?|
+nt|^z@3^b@2|Lg|b|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Here with the 2@d bid, West being in the Intermediate range (11-15) chose to overcall 2@d rather than bid an Unusual 2NT.
+|n#|5|at|If West had bid 2NT instead, East would have to assume West was WEAK, and simply convert to 3@c or 3@d, since they're not strong enough for game opposite a 5-9 hcp strength hand.
+|n#|5|at|Anyone not getting the point of Michaels, UNT and Ghestem being used on hands that are weak (5-9ish) or strong (16+), but ^*b NOT ^*n on Intermediate 11-15 strength hands ?        ^q ok,  back to the previous text.|
+pg| ***** 34 ***** |
+
+
+--------------------------------------------------------------------
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Defensive Bidding  -  Unusual  No  Trump|fp||at|      ^^^^|
+lg|b|
+cp|red|at|^*bOliverC:^*n|cp||at|  As with Michaels, it's best to play UNT as either WEAK or STRONG, but  NOT  intermediate.
+
+With intermediate hands just bid your suit naturally with an overcall.
+
+This helps partner AND you to judge the hand correctly in subsequent bidding.
+
+Restoring the previous hand.|
+pg| ***** 35 ***** |
+
+
+lg|b|at|^^^^|
+cp|red|at|^*bOliverC:^*n|cp||at|  I would definitely suggest that you play 
+|n#|5|at|^cUNT ^eas showing the  LOWEST TWO UNBID SUITS    and 
+^cMichaels ^eas showing the  HIGHEST TWO UNBID SUITS    and using Ghestem or better Modified Ghestem
+
+It's far easier for partner when they know IMMEDIATELY which two suits you have.
+
+Now they're in a better position to judge the full worth of their hand.
+
+If you use Michaels and UNT to show one specified suit and ONE of the other two unbid suits, it's much more difficult for partner to assess how good a supporting hand they really have, 
+
+|n^|8|at|and so judge whether they are worth just a simple action or worth a UCB or a more pre-emptive one.
+
+
+Lastly, let's move onto Ghestem.|
+pg| ***** 36 ***** |
+
+
+--------------------------------------------------------------------
+qx|Ghst,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Defensive Bidding  -  Modified  Ghestem|fp||at|      ^^^^|
+lg|b|
+cp|red|at|^*bOliverC:^*n|cp||at|  If you are using the "2 Highest" method for Michaels and the "2 lowest" method for UNT, then you need a bid when you have the EXTREME unbid suits  ie:  the ^*b highest unbid Major ^*n and the ^*b lowest unbid Minor^*n.
+
+"Normal" Ghestem is a 3@c overcall which shows the 2 highest unbid suits, (ie: the hand-type you show with Michaels) and the immediately (Michaels-like) cue-bid of Opps' suit is used to show the extreme unbid suits.
+
+I prefer "Modified Ghestem" in which the 3@c Overcall shows the EXTREME unbid suits and Michaels and UNT are left as normal, but it doesn't REALLY make much difference.
+
+Similarly, some people play a jump-shift in the cheapest Minor as  Ghestem  or  Mod Ghestem   so
+|n#|5|at|^c(1@c)   -   2@d   is Ghestem          and     (1x)   -   3@c    is Ghestem
+|n#|5|at|Not much to choose between the two methods, but I find it easier to remember that a jump overcall in Clubs is ALWAYS Ghestem.
+
+If you start playing Ghestem, though, you do have to remember that weak jump overcalls in Clubs are "off the menu".
+
+Expect to forget a couple of times in the early days.   LOL
+
+So Over a Major, Ghestem 3@c shows the other Major and @c's whilst over a Minor, it shows the other Minor and @s's.
+
+Using Modified Ghestem means you always have a means of showing a distributional 2-suiter, whichever 2 suits are held.|
+pg| ***** 37 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Defensive Bidding  -  Modified  Ghestem|fp||at|      continued^^^^|
+lg|b|
+cp|red|at|^*bOliverC:^*n|cp||at|  I prefer to keep Michaels "as is" and use Modified Ghestem to show the extreme unbid suits, but there's nothing intrinsically wrong with playing Ghestem straight out of the box.
+
+As with UNT and Michaels, the right way to use Ghestem is to use it with WEAK or STRONG hands, but NOT with intermediate ones (make a simple overcall with an intermediate hand).
+
+Any questions on Michaels, UNT or Ghestem? 
+
+
+^*bCurls77: ^*n  Are Michaels and UNT used in 4th seat? (1@d) -  p  -  (p)  -  2@d?
+  
+|cp|red|at|^*bOliverC:^*n|cp||at|  Sure but it's a matter of partnership agreement, of course If you have a better use for a cue-bid overcall in 4th seat, then go for it.|
+
+
+--------------------------------------------------------------------
+qx|Prac,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Practice / Demo  Hands|fp||at|^^^^|
+lg|c|
+cp|red|at|^*bOliverC:^*n|cp||at|  Let's practice some hands of this type...
+
+4 volunteers pls play whatever system you like  c'mon, guys and gals, time is money 
+
+lute57:  Hi eleanor 
+
+gypsy1308:   hi John :) 
+
+maysie:  hello all     ^k^*bMM^*n:   Maysie  lost her connection and Oliver had to step in her place.
+
+RogerPfi: Hi
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  this session is nothing to do with Precision, remember, so play Acol,  SAYC or 2/1,  Moscito, Forcing Pass (just kidding) or Culbertson if you like.
+
+gypsy1308:    2/1 please John  I am rusty at OCP
+
+lute57:      ok
+
+^^^^^^^*bMM:^*n   As this is a very different subject from all the earlier Precision Chapters, I will mainly bring you the bidding as it happened.  This way we can then all benefit from Oliver's comments as to how it could have been improved.|
+pg| ***** 38 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 1,thin|
+st||
+pn|lute57,RogerPfi,gypsy1308,OliverC|rh||ah|Practice 1|sv|-|sk|n|sk||
+md|3SA93H7DK843CAQT42,S764HKQ852DT965C5,SKJT5H3DAQJ72CK93,SQ82HAJT964CJ876|
+mb|?|
+nt|^z@3^b@2|Lg|a|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 1     |
+pg| ***** 39 ***** |
+
+
+mb|1D|
+pg| ***** 40 ***** |
+
+
+sj|L|
+mb|2H|an|weak|
+pg| ***** 41 ***** |
+
+
+sj|L|
+mb|3H!|an|Asking for @h stop|
+pg| ***** 42 ***** |
+
+
+sj|L|
+mb|4H|
+pg| ***** 43 ***** |
+
+
+sj|L|
+mb|4S|
+pg| ***** 44 ***** |
+
+
+mb|p|mb|p|
+pg| ***** 45 ***** |
+
+
+at|Okay, Here we had a jump overcall, a Directional Asking Bid, a pre-empting direct-suit raise.
+
+However  6@d  on the NS cards looks pretty trivial here so 4@s making is a decent result for EW.
+
+If NS bid to  6@d,  6@h  is a cheap sac (-500) for EW   but  4@s  is making only  +480  or  +450  for  NS.|
+pg| ***** 46 ***** |
+
+
+mb|p|
+pg| ***** 47 ***** |
+
+
+pf|Y|
+pc|hA|
+pg| ***** 48 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared|
+pg| ***** 49 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 2,thin|
+st||
+pn|lute57,RogerPfi,gypsy1308,OliverC|rh||ah|Practice 2|sv|n|sk|e|sk||
+%% 4SK7HAK9842D7CAT96,S32H5DJT532CJ5432,SQ964HJT76DAK86C8,SAJT85HQ3DQ94CKQ7 
+md|4SK7HAK9842D7CAT96,,SQ964HJT76DAK86C8,|
+mb|?|
+nt|^z@3^b@2|Lg|c|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 2     |
+pg| ***** 50 ***** |
+
+
+mb|1S|
+pg| ***** 51 ***** |
+
+
+sj|L|
+mb|2H|
+pg| ***** 52 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 53 ***** |
+
+
+sj|L|
+mb|2S|
+pg| ***** 54 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 55 ***** |
+
+
+sj|L|
+mb|3C|
+at|Here 3@h would show a basic 2@h overcall with nothing to spare but as South's K@s is so well placed and he has a 6-card @h suit and a second suit, it is worth showing his second suit with the  3@c  bid.|
+pg| ***** 56 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 57 ***** |
+
+
+sj|L|
+mb|3H|
+pg| ***** 58 ***** |
+
+
+sj|L|
+mb|p|
+n#|5|at|^^South's hand is looking better and better.|
+pg| ***** 59 ***** |
+
+
+sj|L|
+mb|3S!|an|1St or 2nd rd Ctrl|
+pg| ***** 60 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 61 ***** |
+
+
+sj|L|
+mb|4D|
+n#|5|at|^^Control Cue here in Diamonds|
+pg| ***** 62 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 63 ***** |
+
+
+sj|L|
+mb|4H|
+pg| ***** 64 ***** |
+
+
+mb|p|mb|p|
+pg| ***** 65 ***** |
+
+
+nt|^z@3^b@2|Lg|c|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  I know 6@h is making on a perfect fit here, but realistically, South cannot assume a Club shortage in the North hand here North effectively DENIED a Club Control with 4@d.
+
+South might be more interested if North had bid 4@c over 3@s but at the end of the day, North is only showing an INVITATIONAL hand (here only 10 hcp) with 2@s and then 3@h. |
+pg| ***** 66 ***** |
+
+
+nt|^z@3^b@2|Lg|c|n#|9|
+at|^*blute57:  ^*n  Would 3NT by North be rolling  ?
+|n#|5|cp|red|at|^*bOliverC:^*n|cp||at|  Yes, for my money, since we've agreed @h with 3@h and 3NT cannot possibly be suggested an alternative place to play.
+|n#|5|at|^*bkritter2:  ^*n So how to bid when using Lebensohl ? 
+|cp|red|at|^*bOliverC:^*n|cp||at|  Well Leb is only available to South here over 2@s  and they'd definitely bid a fast  3@c  here.
+So Leb wouldn't make much of a difference here.| 
+pg| ***** 67 ***** |
+
+
+nt|^z@3^b@2|Lg|d|n#|9|
+at|^*blute57: ^*m   What about     (1@S)  -  2@H  -  (P)  -  2NT?
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Well that would be Leb, and a SLOW 3@h would be MILDLY invitational in @h, whereas the UCB and 
+^dthen 3@h is strongly invitational  -  take your pick.|
+pg| ***** 68 ***** |
+
+
+mb|p|
+md|0SK7HAK9842D7CAT96,S32H5DJT532CJ5432,SQ964HJT76DAK86C8|
+pg| ***** 69 ***** |
+
+
+pf|Y|
+pc|s3|
+pg| ***** 70 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared|
+pg| ***** 71 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 3,thin|
+st||
+pn|lute57,RogerPfi,gypsy1308,OliverC|rh||ah|Practice 3|sv|n|sk|w|sk||
+%% 2SKQ87HAK986D8C853,S654H7DK9653CAKQ7,SAJT92HQJT54DQ42,S3H32DAJT7CJT9642
+md|2SKQ87HAK986D8C853,,SAJT92HQJT54DQ42,|
+mb|?|
+nt|^z@3^b@2|Lg|c|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 3     |
+pg| ***** 72 ***** |
+
+
+mb|1D|
+pg| ***** 73 ***** |
+
+
+sj|L|
+mb|2D|
+pg| ***** 74 ***** |
+
+
+sj|L|
+mb|3D|
+pg| ***** 75 ***** |
+
+
+sj|L|
+mb|4D|
+at|    Lol,    I love this sequence  :)      Michaels, and then a UCB  (Unassuming Cue Bid)|
+pg| ***** 76 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 77 ***** |
+
+
+sj|L|
+mb|4S|
+pg| ***** 78 ***** |
+
+
+sj|L|
+mb|p|mb|p|
+pg| ***** 79 ***** |
+
+
+mb|p|
+md|0SKQ87HAK986D8C853,S654H7DK9653CAKQ7,SAJT92HQJT54DQ42|
+pg| ***** 80 ***** |
+
+
+n#|5|at|^^12 tricks available here.  True, North is weak so not looking past game.   I would have bid 4@h rather than 4@s with the North hand.  Suggesting that partner  passes  or  corrects to 4@s.   I think 5@d (Fragment bid) would be too much on the North cards.
+|n#|5|at|^*bkritter2:^*n  Would that be saying leave if better trump ?  or   pull to spades if stronger there ?
+|cp|red|at|^*bOliverC:^*n|cp||at|  4@s suggests 6-5 in the Majors, I think (ie: a definite preference for @s's).|
+pg| ***** 81 ***** |
+
+
+nt|^z@3^b@2|Lg|f|n#|9|
+at|^*bCurls77: ^*n If EW were  White (on Red), should East bid 5 of a minor ?
+|n#|5|cp|red|at|^*bOliverC:^*n|cp||at|  South might have tried  5@d  with their singleton.
+EW not competing further suggests they don't have a massive @d fit, so North's shortage is likely in @c rather than @d. |
+pg| ***** 82 ***** |
+
+
+pf|Y|
+pc|s3|
+pg| ***** 83 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared|
+pg| ***** 84 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 4,thin|
+st||
+pn|lute57,RogerPfi,gypsy1308,OliverC|rh||ah|Practice 4|sv|n|sk|n|sk||
+md|3SAQ9H7654DAKT96CK,S8542H3D542CA8762,SKJT76HAQ8DQJ83C4,S3HKJT92D7CQJT953|
+md|3SAQ9H7654DAKT96CK,,SKJT76HAQ8DQJ83C4,|
+mb|?|
+nt|^z@3^b@2|Lg|c|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 4         Mod Ghestem, Roger
+^*bRogerPfi: ^*n  fine|
+
+
+mb|1S|
+pg| ***** 85 ***** |
+
+
+sj|L|
+mb|3C|an|@h + @c, weak or strong|
+pg| ***** 86 ***** |
+
+
+sj|L|
+mb|4C|
+pg| ***** 87 ***** |
+
+
+sj|L|
+mb|5C|
+pg| ***** 88 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 89 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 90 ***** |
+
+
+sj|L|
+mb|6S|
+pg| ***** 91 ***** |
+
+
+mb|p|mb|p|
+pg| ***** 92 ***** |
+
+
+at|^^|n#|5|cp|red|at|^*bOliverC:^*n|cp||at|   6@d can make, but not 6@s.   It is true that the bluster by EW makes finding 6@d awkward for NS.   North might have shown their 2nd suit over the  5@c  bid by West.  After that South has an easy option of   6@d   rather   than   6@s.   It costs North nothing to show their 2nd suit and they DO have the @c shortage, so the @c bids have effectively improved their hand.|
+
+
+mb|p|
+md|0SAQ9H7654DAKT96CK,S8542H3D542CA8762,SKJT76HAQ8DQJ83C4|
+pg| ***** 93 ***** |
+
+
+pf|Y|
+pc|s3|
+pg| ***** 94 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared|
+pg| ***** 95 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 5,thin|
+st||
+pn|lute57,RogerPfi,gypsy1308,OliverC|rh||ah|Practice 5|sv|e|sk|e|sk||
+md|4SQ9742HK8D2CAT872,SAKJ8H5DAT95CKJ43,ST65HT963DJ843CQ9,S3HAQJ742DKQ76C65|
+md|4SQ9742HK8D2CAT872,,ST65HT963DJ843CQ9,|
+mb|?|
+nt|^z@3^b@2|Lg|c|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 5|
+
+mb|1H|
+pg| ***** 96 ***** |
+
+
+sj|L|
+mb|3C|an|mod Ghestem         @s + @c  Weak  OR  Strong|
+at|           Modified Ghestem again, this time showing  Clubs  and  Spades|
+pg| ***** 97 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 98 ***** |
+
+
+sj|L|
+mb|3S|
+pg| ***** 99 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 100 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 101 ***** |
+
+
+sj|L|
+mb|3N|
+pg| ***** 102 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 103 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 104 ***** |
+
+
+sj|L|
+mb|4S|
+pg| ***** 105 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 106 ***** |
+
+
+sj|L|
+mb|p|mb|p|
+pg| ***** 107 ***** |
+
+
+at|^^^dGlutton for punishment LOL I think this is going for -800 
+|n#|5|at|^*blute57: ^*n If its only -500 we are OK 
+|cp|red|at|^*bOliverC:^*n|cp||at|  K@c,  A@h,  @h ruff,  K@d,  @h ruff  and still 2 top trumps to cash.  :)
+Remember that 3@s by North here isn't promising ANYTHING except a preference for Spades over Clubs.   West's X over 3@c is 100% for penalties, in my view, suggesting a misfit for @h and an ability to penalise either Black suit.|
+pg| ***** 108 ***** |
+
+
+mb|p|
+md|0SQ9742HK8D2CAT872,SAKJ8H5DAT95CKJ43,ST65HT963DJ843CQ9|
+pg| ***** 109 ***** |
+
+
+pf|Y|
+pc|c6|
+pg| ***** 110 ***** |
+
+
+md|4,,,|nt||Lg|k|n#|9|at|^bcleared|
+pg| ***** 111 ***** |
+
+
+--------------------------------------------------------------------
+qx|p 6,thin|
+st||
+pn|lute57,RogerPfi,gypsy1308,OliverC|rh||ah|Practice 6|sv|-|sk|w|sk||
+%% 2SK652H64DA32CAT93,SAJ98H83DKQJT85C2,S7HAKT952D4CKQJ76,SQT43HQJ7D976C854
+md|2SK652H64DA32CAT93,,S7HAKT952D4CKQJ76,|
+mb|?|
+nt|^z@3^b@2|Lg|c|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Practice 6       last hand|
+pg| ***** 112 ***** |
+
+
+mb|1D|
+pg| ***** 113 ***** |
+
+
+sj|L|
+mb|d|
+n#|2|at|^^An awkward choice for North here.    I know there are only 14 HCP, but the 6-5 distribution makes is almost worth a "strong" UNT bid.  Anyone else  dislike  the Double by North here?   Double suggests the ability to support the other 3 suits, which North plainly cannot do. 
+|n#|5|at|^*bKritter2: ^*n  better to use a bid showing two suits.|
+pg| ***** 114 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 115 ***** |
+
+
+sj|L|
+mb|1S|
+pg| ***** 116 ***** |
+
+
+sj|L|
+mb|2D|
+pg| ***** 117 ***** |
+
+
+sj|L|
+mb|2H|
+nt|^z@3^b@2|Lg|c|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Now this sequence suggests a rock-crushing 20-count in the North hand.|
+ 
+pg| ***** 118 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 119 ***** |
+
+
+sj|L|
+mb|3N|
+pg| ***** 120 ***** |
+
+
+sj|L|
+mb|p|
+pg| ***** 121 ***** |
+
+
+sj|L|
+mb|4H|
+pg| ***** 122 ***** |
+
+
+mb|p|mb|p|mb|p|
+at|^^^^Clubs?   What   Clubs?   :)|
+pg| ***** 123 ***** |
+
+
+at|^^
+ok, what went wrong here ?|
+pg| ***** 124 ***** |
+
+
+nt|^z@3^b@2|Lg|e|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at|  Firstly, I HATE North's initial Double.    North doesn't have the kind of rock-crushing 19+ hand that 
+^d Double and then Bid suggests.
+|n#|5|at|^*bgypsy1308: ^*n X and bid showing strong hand ?
+|n#|5|cp|red|at|^*bOliverC:^*n|cp||at| Well North does have an awkward choice to make here.   But you're not strong enough for that, Eleanor.  
+^dEither 1@h, treating your hand as Intemediate, ^*B OR ^*n...|
+pg| ***** 125 ***** |
+
+
+nt|^z@3^b@2|Lg|e|n#|9|
+cp|red|at|^*bOliverC:^*n|cp||at| ... ^*b OR ^*n  2NT treating your hand as "strong" because of the 6th @h and excellent playing strength.
+^*bgypsy1308: ^*n I luv my hand  :)  I've only got 4 losers 
+|n#|5|cp|red|at|^*bOliverC:^*n|cp||at|  I love your hand as well, but Double and then 2@h is not the way to show it, in my view.
+That sequence suggests a hand that is FAR stronger in high card strength.  Give yourself the A@s instead of the 7 and it marginally worth that sequence.|
+pg| ***** 126 ***** |
+
+
+nt|^z@3^b@2|Lg|e|n#|9|
+at|^*bgypsy1308: ^*n really?   oh dear seems i am wrong again :( 
+|n#|5|cp|red|at|^*bOliverC:^*n|cp||at| Just IMO, Eleanor.  As the sequence went, I would DEFINITELY be bidding 4@c over 3NT rather than 4@h.
+|n#|5|at|Clearly South is not exactly enamoured of your Hearts, so why not show your 2nd suit.  The attraction of your hand is the 6-5 shape, but Clubs never got into the bidding.
+You've bid it as if you have a 7+ card @h suit in a rock-crushing hand, in my view.|
+pg| ***** 127 ***** |
+
+
+nt|^z@3^b@2|Lg|e|n#|9|
+at|^*bgypsy1308: ^*n  because I have 6 @h  and figured p has at least 1 to bid NT 
+|n#|5|cp|red|at|^*bOliverC:^*n|cp||at| 6@c will make here...  but you can't make 6@h.
+^dI think North MUST show their Clubs at some stage.
+
+^*bgypsy1308: ^*n  Yes 4@c is better bid  agreed I should have bid that   'give partner the option'.|
+pg| ***** 128 ***** |
+
+
+nt|^z@3^b@2|Lg|e|n#|9| 
+cp|red|at|^*bOliverC:^*n|cp||at| Better still, show the 2 lowest unbid immediately with 2NT, and when South corrects to 3@c, show the strength of your hand with some kind of forward going move.  
+
+By doing that you are showing a 16+ type of hand (which is what your hand is worth).
+
+ok, any questions before we finish?              With your permission we'll leave it there for tonight.|
+pg| ***** 129 ***** |
+
+
+mb|p|
+md|02SK652H64DA32CAT93,SAJ98H83DKQJT85C2,S7HAKT952D4CKQJ76|
+pg| ***** 130 ***** |
+
+
+pf|Y|
+pc|c5|
+pg| ***** 131 ***** |
+
+
+Goodbyes--------------------------------------------------------------------
+qx|end,thin|
+bt||
+nt|^b@2^z@3|at|^^^^|
+lg|c|
+at|^*blute57: ^*n  thanks for sitting opposite me Eleanor 
+^*bgypsy1308: ^*n Your welcome  Sorry I not bid better 
+^*blute57:  ^*n you did great in my book 
+^*bRogerPfi: ^*n the audience don't learn if we all bid well  :)
+|cp|red|at|^*bOliverC:^*n|cp||at|  true enough Rog 
+|n#|5|at|^*blute57: ^*n The courage to sit is to be admired too.
+^*bgypsy1308: ^*n oh well I am not scared of being a fool lol   
+^*bmaysie: ^*n well said Roger ... and John
+  
+|cp|red|at|^*bOliverC:^*n|cp||at| Next week will be devoted to Lebensohl in Competitive sequences.
+
+Next week is one of the toughest weeks in the whole series and I guarantee that if this concept is new to you, you will NOT fully understand it in one session.
+
+It will positively impact on your Bridge more than any other single topic, however, so please make sure you come along.
+
+It really would be worth your while to have a read up on Leb in Competitive sequences on the website BEFORE next week's session, though  
+
+^*bRogerPfi: ^*n thank you oliver  
+^*bmaysie: ^*n  ty Oliver and participants  
+^*bCurls77: ^*n ty 
+^*bgypsy1308: ^*n thanks Oliver
+
+|cp|red|at|^*bOliverC:^*n|cp||at|  Bye for now.      Night all.       Seeya next week  -  bring aspirin LOL|
+pg| ***** 132 ***** |
+
+
+ok, what went wrong here? 
+lute57:  I thought 3@h was pre-emptive here Well I think the problem was the 3@h bid, a non-forcing pre-emptive raise 
+Curls77:  N is too strong for preempt raise 
+gypsy1308->Club: no 
+Curls77:  only non forcing bid 3@h is utterly non-forcing 
+lute57:  yes, by your cards I see 
+gypsy1308: well p may only have 10 hcp   cue bid for limit raise or better 
+isabable: 2s i think 
+isabable: sorry wrong place 
+Curls77:  if S is weak hell correct to 3@h anyway 
+OliverC: but here North has nice 4-card @h support and a Club shortage, so 2@s (cheaper that 3@h as well) still gives NS the option of stopping in 3@h, but also ends up showing an invitational hand when the bidding goes (1@s)-2@h-2@s-3@c(2nd suit)-3@h(inv in @h)-4@h It shouldn't matter WHAT system you're playing here  -  only really affects the choice of opening bid 
+gypsy1308: well i was thinking 2@s in this lesson would show other 2 suits OliverC: Bid it again using a UCB The other 2 suits? how come? 
+gypsy1308: because 2 suits been bid 
+
+OliverC: Bt nothing in this lesson has suggested that 2@s here shows both Minors 
+gypsy1308: ok must be getting it wrong then sry 

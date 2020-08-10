@@ -1,0 +1,105 @@
+
+
+%% 2019-07-26
+
+%% All hands are copyright  Richard Pavlicek
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+bv|a,h|   %% hide all three buttons
+%%
+ss|head,     ah`Part 9.    Trump Coup`|
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+<<--INSERT-START-->>=07___FP_Patterns.ins
+%%
+fh|b48| %%  'banner' font
+fh|t40| %%  'target' font
+fh|s28| %%  'small'  font
+fh|p45| %%  'pink dot' size
+
+cr|a230|cg|a040|cb|a130|          a  action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       pink dot button
+
+bv|e,h| %%   Enter the deal button hidden
+bv|f,v| %%   1st visible 
+bv|d,v| %%   DDS visible
+
+ha|y|   %%   hide auctions
+
+ss|banner,   ht`e`fp`b-big`at`^*b^k    ^*nTrump Coup^*n`fp``|
+ss|link,     ht`z`at`^k  visit  Richard Pavlicek's  Trump Coup  page    ^*h http://www.rpbridge.net/9p65.htm, rpbridge.net  9p65^*n`|
+ss|means,    ht`e`fp`small`at`^x ^*h http://www.rpbridge.net/9gc8.htm, meaning^*n`fp``|
+ss|new,      nt`^b@2^^`vv`means`vv`link`vv`banner`ht`e`vv`head`|
+ss|contract, mb`4sppp`|
+ss|p1,       vv`contract`wt`s`sk`s`fp`t`ht`e`at`^q    ^*b`|
+ss|p2,       fp`t`ht`e`at`^*n^u`|
+ss|p3,       fp``ht`q`at`^d`|
+%%
+<<--INSERT-END**-->>=07___FP_Patterns.ins
+  
+ 
+
+
+
+qx|21|
+rh||ah|Pattern 21|
+vv|new|at|^*b 21.  Elopement trump endplay ^*n|
+%
+md|1  QT5 2 - 2, K8 K4 A, A76 3 2, J9 A5 - A|
+%
+bs|6,2|
+vv|p1|at|win 4|
+vv|p2|at||
+vv|p3|at|If either ruffs, discard and pick up trumps.|
+pg| ***** 0 ***** |
+
+
+qx|22|
+rh||ah|Pattern 22|
+vv|new|at|^*b 22.  Extended trump endplay ^*n|
+%
+md|1  K82 32, - 654 32, QJ943, AT765|
+%
+bh|play, E, sL, res, p4, T1, always|
+%
+bs|6,2|
+vv|p1|at|win 4|
+vv|p2|at||
+vv|p3|at|Curiously fails in auto case with trumps onside.|
+pg| ***** 1 ***** |
+
+
+qx|23|
+rh||ah|Pattern 23|
+vv|new|at|^*b 23.  Forced ruff repeat trump endplay ^*n|
+%
+md|1  432 32, - AKQ 32, AQT 54, KJ987|
+%
+bh|play, E, sL, res, p1, T2, always|
+bs|7,1|
+vv|p1|at|win 3|
+vv|p2|at|auto bi|
+vv|p3|at||
+pg| ***** 2 ***** |
+
+
+qx|24|
+rh||ah|Pattern 24|
+vv|new|at|^*b 24.  Underruff reduction trump endplay ^*n|
+%
+md|1  A543 - - 2, KQ9 2 3, T2 AK 2, J - 7654|
+%
+bs|7,1|
+vv|p1|at|win 3|
+vv|p2|at|auto bi|
+vv|p3|at|Auto/bi cases trivial (no @sJ uppercut).|
+wt|w|
+pc|h2|
+eb|y|
+pg| ***** 3 ***** |
+
+

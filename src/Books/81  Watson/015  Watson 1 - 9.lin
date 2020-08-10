@@ -1,0 +1,1111 @@
+%%CH-9-P-1.lin
+%%%04/12/2013
+mn|      THE STRATEGY OF CONTROL AND                  THE HOLD-UP - Chapter  IX       |
+bt||
+%%Font and color codes
+fh|155|ff|1Arial|fb|19|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|36|fm|3|                           FOR 3
+fh|430|ff|4Arial|fi|4y|fm|4|     %%Larger than default -  italic
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|30|cg|30|cb|3128|                dark Blue 3
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|664|cg|6255|cb|6255|             6=TURQUOISE
+cr|70|cg|7235|cb|7235|              green/blue 7
+cr|8255|cg|80|cb|80|                red 8
+cr|9128|cg|950|cb|90|               Reddish-brown 9
+
+os|y|  %%   Overlap Shrink   -  floating Hand will shink if they overlap
+
+%%%
+tu|1|cs|6|ht|e|fp|3|at|^-
+WATSON's Classic Book on The Play of the Hand at Bridge
+
+Part I, Fundamentals of Play
+Chapter IX, THE STRATEGY OF CONTROL AND THE HOLD-UP
+^-|FP||ht|n|at|
+^*U^DTABLE OF TOPICS ^*N
+
+|cp|1|AT|^D^*G9B01,The Strategy of Control and the Hold-Up^*N
+^e^*G9B0X,When the Situation Does Not Call for the Hold-Up ^*N
+^e^*G9B02,Should Dummy Play High or Low Second Hand?^*N
+^e^*G9B03,Keeping a Weather Eye Open for Suit Control^*N 
+^e^*G9B04,A Hold-Up in a Suit With Two Stoppers^*N 
+^e^*G9SUM,Summary^*N
+^d^*GHOW,Rules 11 and 7 by Howard Schutzman^*N 
+|CP||at|
+
+^C@2^Y@3 |
+PG| ***** 0 ***** |
+
+
+cp||nt||
+%%%%%%%%%%
+qx|9B01,THE STRATEGY OF CONTROL AND THE HOLD-UP|
+ht|e|fp||at|^B@2^Y@3Having gone through a necessary amount of groundwork in suit establishment, you are now ready to return to a subject which was but touched upon in the first chapter, namely, the control of a suit.|
+PG| ***** 1 ***** |
+
+
+AT|
+
+In the handling of no-trump hands, which permits of considerable flexibility, you have learned that it is important to establish a suit netting you a profitable number of tricks before leading out your good cards without any purpose in view. So far, however, you have not been confronted with a hand in which you have been unable to retain control of the adverse suit which might be established against you. To make the preliminary explanation simpler, you were deliberately given example hands in which a suit was attacked by the Opponents, but in which you were also provided with adequate defensive units to circumvent the attack.|
+PG| ***** 2 ***** |
+
+
+AT|
+
+Unfortunately, in playing Contract Bridge you will have to handle whatever cards fate deals out to you, and you can by no means expect to have double control cards in every suit in the majority of hands you will get. Very frequently you will find yourself with but one defensive time unit in one of your suits, and you will be annoyed when your Opponents are usually discerning enough to choose that suit for their immediate attack!|
+PG| ***** 3 ***** |
+
+
+AT|
+
+Naturally, if you have but one defensive unit against them, the Opponents will ultimately establish their suit in spite of everything you can do, especially if they keep on leading it. |
+PG| ***** 4 ***** |
+
+
+cs|1|fp|2|CP|4|AT|
+
+^-{
+ You can minimize the danger to some extent by keeping the Opponents from getting the lead. 
+If you cannot keep both Opponents out of the lead,
+you can try to confine the lead to one Opponent
+and hope that he is the one who does not hold the established cards in the suit you fear.
+}
+^-|
+PG| ***** 5 ***** |
+
+
+CP||nt||
+%%%%
+HT|E|FP||AT|^B@2^Y@3It may usually be taken for granted that the player who opens a suit (that is, the player who first leads that suit) is the one who holds the greater length in it. Later you will have to remember that this rule is not invariable, but just now let us assume that it is always true. Your object will then be to hold on to your controlling card in that suit until there is a fairly good chance that the Opponent who is not leading the suit will be exhausted of it. Then, if you have to give up the lead, you will try to let that Opponent have it who quite probably has no cards left of his partner's suit to lead to him. This sort of play is called, in Bridge language, |CP|8|FP|2|AT|the hold-up|CP||FP||AT|, because you refuse to play ("hold up") the controlling card until you have to play it. The following deal illustrates the successful use of the hold-up:|
+PG| ***** 6 ***** |
+
+
+NT||
+pn|You,,,|st||sk|s|rH||ah|Board  1|sv|0|
+md|SAQ4HK72DQ742CA76,ST73HQJ65D9CKJ942,SK65HA84DKJT83C53,SJ982HT93DA65CQT8|mb|3NPPP|NT|^B@2
+You are the Declarer (South), faced with the problem of making 9 tricks at no-trump.|
+PG| ***** 7 ***** |
+
+
+pc|C4|AT| West opens a low club to start the attack in a suit which may net him some long-suit tricks.|
+PG| ***** 8 ***** |
+
+
+pc|C3|
+pg| ***** 9 ***** |
+
+
+at|
+
+East plays the Queen,|pc|CQ|
+PG| ***** 10 ***** |
+
+
+AT| hoping to force your Ace.|
+PG| ***** 11 ***** |
+
+
+NT|^B@2
+The weakest point in your armor is being attacked: your club Ace is your only stopper (controlling card) in that suit, but you have two or more controlling cards in each of the other suits. You cannot afford to release the Ace of clubs immediately, for you do not have enough high cards to make your contract in the teeth of an established club suit against you. |
+pg| ***** 12 ***** |
+
+
+NT|^B@2
+The moment you lose the lead, when your club Ace is gone, the Opponents will cash in you have no idea how many club tricks (at the worst, as many as 6). Meanwhile you earnestly desire to set up some diamond tricks on your own behalf, and you can do this by forcing out the adverse Ace.|
+PG| ***** 13 ***** |
+
+
+NT|^B@2
+But you cannot take your club Ace and then let an adversary take his diamond Ace, for he will surely come right back with a club. If the clubs are divided 4-2 (there are six outstanding), the Opponents will then make 4 club tricks and 1 diamond trick - enough to set your contract.|
+pg| ***** 14 ***** |
+
+
+NT|^B@2
+Though it is true that if the adverse clubs were originally split 4-4, the loss of 3 club tricks and 1 diamond trick will not defeat your contract, you have no right to expect such a favorable break in the club suit. |
+PG| ***** 15 ***** |
+
+
+NT|^B@2
+The fact that West has opened the suit suggests that he has fair length in it, probably five cards. Indeed, if West has five clubs, and his partner the other three, there is a way you can nip the plans of your Opponent in the bud. You have only to refuse to win the first two rounds of clubs, holding up your Ace until the third round. |
+pg| ***** 16 ***** |
+
+
+NT|^B@2
+By doing this, you wait until East is exhausted of clubs before you release control, so that, if East also has the diamond Ace, he will not be able to lead a club to his partner when he gets the lead with that sure winner. In fact, if East has no clubs at that time, he will have to lead a suit in which you have the controlling cards.|
+pg| ***** 17 ***** |
+
+
+NT|^B@2
+The play proceeds. You play your six of clubs on East's Queen.|pc|C6|
+pg| ***** 18 ***** |
+
+
+at| East returns a club, on which you play the seven-spot.|
+PG| ***** 19 ***** |
+
+
+pc|CT|pc|C7|pc|Cj|pc|C5|
+pg| ***** 20 ***** |
+
+
+NT|^B@2
+Whichever Opponent wins, the suit is continued. Now East has to play his last club, and you have to play your Ace. On this third round, incidentally, you discard a heart from Dummy's hand. You have to make some discard, since Dummy has no more clubs, and you must retain as many diamonds as possible. Since you can take at the most only 2 heart tricks the discard of a heart is indicated.|
+pg| ***** 21 ***** |
+
+
+pc|C2|pc|H4|pc|C8|pc|CA|
+pg| ***** 22 ***** |
+
+
+NT|^B@2
+Your next step, since it is now your lead, is to lead a low diamond while murmuring a prayer to the gods of chance. |
+pg| ***** 23 ***** |
+
+
+pc|D2|
+pg| ***** 24 ***** |
+
+
+CP||at|
+You are practically certain that West holds the two outstanding clubs. If he also holds the diamond Ace, all is lost.|
+PG| ***** 25 ***** |
+
+
+CP|8|at| When West plays low on the diamond lead, you have reason to hope.|
+pg| ***** 26 ***** |
+
+
+cp||pc|D9|
+pg| ***** 27 ***** |
+
+
+at| You play the King from Dummy, |
+pg| ***** 28 ***** |
+
+
+pc|dk|
+pg| ***** 29 ***** |
+
+
+pc|DA|cp|8|at| and you sigh with a measure of relief when East wins with the Ace.|
+pg| ***** 30 ***** |
+
+
+cp||sk||NT|^B@2
+Even if East has another club, his partner has one also, so that the loss of a club trick cannot defeat your contract. As it happens, East has no more clubs, and must lead a spade, a heart, or a diamond. Whichever of these suits East chooses, you can claim the balance of the tricks.|
+pg| ***** 31 ***** |
+
+
+NT|^B@2
+The hold-up is one of the simplest bits of strategy in the play of any hand, but it is also one of the most important plays in any good player's repertoire. |
+PG| ***** 32 ***** |
+
+
+AT|
+
+There is a strangely prevailing opinion among average players that the use of the hold-up is confined to Aces. Actually the play can be used with cards as low as the Jack.|
+pg| ***** 33 ***** |
+
+
+NT|^B@2
+One more example of the hold-up is not out of place here. Follow it through carefully so that you will surely be able to recognize the play whenever it comes up in your own experience at the card table:|
+st||sk|s|rH||ah|Board  2|sv|0|md|1SA64HKQJDT942CK75,SJT5HT762D8CQT963,SKQ2HA43DAQJ53C82,S9873H985DK76CAJ4|NT|^B@2
+The principle is the same as in the preceding hand. West opens a small club against your no-trump contract.|mb|3nppp|pc|C6|
+pg| ***** 34 ***** |
+
+
+at|
+East plays the Ace and returns the Jack.|
+pg| ***** 35 ***** |
+
+
+pc|C2|pc|CA|pc|C5|
+pg| ***** 36 ***** |
+
+
+pc|CJ|
+pg| ***** 37 ***** |
+
+
+at|
+
+The King is your only defensive time unit against the establishment of the club suit. You must therefore hold on to it as long as possible. Hence you play a low club on the second round, holding up the King.|
+pg| ***** 38 ***** |
+
+
+pc|C7|pc|C3|pc|C8|
+pg| ***** 39 ***** |
+
+
+NT|^B@2
+Really, you have less reason to be afraid on this hand than on the preceding one, for you are worried about the location of only one card, the diamond King. If West holds it, you can finesse against it successfully. If East holds it, the chances are better than even that East held originally three clubs at the most. If this is so, the hold-up will prevent any established clubs from winning.|
+PG| ***** 40 ***** |
+
+
+PC|c4|AT| When East leads his last club, you win with the King,|
+pg| ***** 41 ***** |
+
+
+pc|CK|pc|C9|pc|S2|
+pg| ***** 42 ***** |
+
+
+NT|^B@2
+and you follow this up by taking the diamond finesse. The finesse consists of leading your Ten through West, |pc||pc|DT|
+pg| ***** 43 ***** |
+
+
+at|
+letting it ride up to East when West does not cover. |pc|D8|pc|D3|
+pg| ***** 44 ***** |
+
+
+at| East wins with his King, |
+pg| ***** 45 ***** |
+
+
+pc|DK|
+pg| ***** 46 ***** |
+
+
+at| but he is exhausted of clubs. |sk||
+pg| ***** 47 ***** |
+
+
+NT|^B@2
+Whatever East leads you can win and claim the balance of the tricks.|
+pg| ***** 48 ***** |
+
+
+nt||bt||
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+QX|9B0X, WHEN THE SITUATION DOES NOT CALL FOR THE HOLD-UP|
+ht|e|cs|1|cp|4|at|^-
+{ WHEN THE SITUATION DOES NOT CALL FOR THE HOLD-UP }
+^-|FP||cp||at|^B@2^Y@3
+T|FP||AT|he ^*Ihold-up^*N is not the proper play when you hold more than 1 potential trick in that suit. In the two examples just given, the hold-up was effective because you held only one possible stopper in the suit attacked by the Opponents. Sometimes the suit opened against you is one in which you hold the Ace accompanied by certain lower cards which can be developed if you do not employ the hold-up, but which will be valueless if you hold up the Ace. This fact is due to the promotional value of honors.|
+PG| ***** 49 ***** |
+
+
+FP|2|CP|4|AT|
+^-
+{ 
+    The hold-up should be employed only when you have    
+no chance at all of    
+promoting a lower card in the same suit. 
+}
+^-|
+PG| ***** 50 ***** |
+
+
+FP||CP||AT|
+Whenever there is a chance of making a trick  with a lower card, it is better strategy to cash in the controlling card immediately in order to have that chance of making a second trick in the suit. The following hand contains a situation in which the hold-up should not be employed:|
+PG| ***** 51 ***** |
+
+
+st||sk|s|rH||ah|Board  3|sv|0|md|1SAT3HAK2DQ843CK85,SK9762HT94DA7CJ43,SJ4HQ863DKJ952CA2,SQ85HJ75DT6CQT976|NT|^B@2
+West opens the six of spades against your (South's) three no-trump contract.|mb|3nppp|pc|S6|
+pg| ***** 52 ***** |
+
+
+at| You might play the Jack from Dummy, hoping to force East to play an honor. You may consider that if East has the Queen and plays it on the Jack, you can win with your Ace and thereby have a chance of making a trick on the third round with your Ten. |
+pg| ***** 53 ***** |
+
+
+pc|SJ|pc|SQ|pc|SA|
+pg| ***** 54 ***** |
+
+
+NT|^B@2
+However, since you play after East, what is to be gained by playing the Jack? If East does not play his Queen, your Ten will win the trick, since you play after East. Let us go back.|
+pg| ***** 55 ***** |
+
+
+up|3|
+pg| ***** 56 ***** |
+
+
+at| The proper play is the four-spot from Dummy,|
+PG| ***** 57 ***** |
+
+
+pc|s4|
+pg| ***** 58 ***** |
+
+
+at| and, when East plays the Queen, the immediate play of the Ace from your hand.|
+pg| ***** 59 ***** |
+
+
+pc|SQ|pc|SA|
+pg| ***** 60 ***** |
+
+
+sk||NT|^B@2
+To hold up will, as it happens, cost you a trick. By retaining the Jack in the Dummy and the Ten plus a small card in your own hand, you hold two cards which can be beaten only by the King. This means that one of your two cards must win a trick. You ultimately establish your diamonds in this hand and come out at the end of the play with 11 tricks piled up for your side.|
+pg| ***** 61 ***** |
+
+
+NT||cs|1|cp|4|FP|2|AT|^-
+{ 
+The play of the hand just given provides the novice with a chance to do two things wrong. 
+The first, the wrong play of the Jack instead of the four-spot from Dummy, 
+has already been discussed. 
+To play the Jack is senseless. 
+}
+^-|
+pg| ***** 62 ***** |
+
+
+nt||cs|1|CP|4|FP|2|AT|
+^-
+{ 
+The second is the mistaken use of the hold-up 
+by
+ letting East's Queen hold the first round of the suit. 
+ }
+^-|
+PG| ***** 63 ***** |
+
+
+NT||
+st||sk|s|rH||ah|Board  3a|sv|0|md|1SAT3HAK2DQ843CK85,SK9762HT94DA7CJ43,SJ4HQ863DKJ952CA2,SQ85HJ75DT6CQT976|MB|3NPPP|NT|^B@2
+Notice what would have happened if South did this. East's Queen would hold the trick.|
+PG| ***** 64 ***** |
+
+
+PC|s6|PC|s4|PC|sq|PC|s3|
+PG| ***** 65 ***** |
+
+
+at| In the lead, East would return the eight of spades. |
+PG| ***** 66 ***** |
+
+
+PC|s8|
+pg| ***** 67 ***** |
+
+
+at| Committed to the hold-up, South must let this card ride through also, letting West win with his King.|
+PG| ***** 68 ***** |
+
+
+PC|st|PC|sk|PC|sj|
+PG| ***** 69 ***** |
+
+
+NT|^B@2
+The third lead of spades will now drive out the Ace,|
+PG| ***** 70 ***** |
+
+
+PC|s7|PC|d2|PC|s5|PC|sa|
+PG| ***** 71 ***** |
+
+
+sk||at| and West will regain the lead with his Ace of diamonds, whereupon he can take his 2 established spade tricks and defeat South's contract by 1 trick.|
+PG| ***** 72 ***** |
+
+
+NT||cs|1|FP|2|CP|4|AT|^-
+{  
+  This principle of not holding up when the Ace is accompanied 
+  by lower cards 
+  which may be promoted to trick winners 
+  is applicable even to cards as low as Tens and nines. 
+}
+^-|
+PG| ***** 73 ***** |
+
+
+NT||
+%%%%%%%%
+st||sk|s|rH||ah|Board  4|sv|0|md|1Sat82haj2d984ck62,skq74hq64da5cqt73,s93hk75dqjt73caj5,sj65ht983dk62c984|MB|3NPPP|NT|^B@2
+Consider, for example, the present deal [shown above].|
+PG| ***** 74 ***** |
+
+
+at| West leads the four of spades against your three no-trump contract. |
+PG| ***** 75 ***** |
+
+
+PC|S4|AT| You play the three from Dummy (not the nine, which would avail you nothing since you hold the eight in your own hand). |
+PG| ***** 76 ***** |
+
+
+PC|s3|
+PG| ***** 77 ***** |
+
+
+CP||AT| East plays the Jack,|PC|SJ|
+PG| ***** 78 ***** |
+
+
+at| and you must play what?|
+PG| ***** 79 ***** |
+
+
+lb|*CWhich card should South play?^^sa^sAT82|cp|8|AT| The Ace, of course; no other card will work out so well. |
+PG| ***** 81 ***** |
+
+
+PC|SA|SK||CP||
+PG| ***** 82 ***** |
+
+
+NT|^B@2
+By capturing the Jack you promote your Ten, nine, and eight to a higher rank in the suit. Since you hold two of these cards guarded in one hand, you can successfully withstand the further bombardment in the suit which will occur when the Opponents play their King and Queen.|
+PG| ***** 83 ***** |
+
+
+cp||NT|^B@2
+You should be able to perceive immediately that this situation does not call for the hold-up. If you hold one less spade in your own hand, well and good - hold up your Ace then, because your Ten, nine, and eight will all fall together on the adverse King and Queen. Without an original holding of four spades you would not have a potential second spade stopper.|
+PG| ***** 84 ***** |
+
+
+NT|^B@2
+Having won the first round of spades, then, with your Ace, what do you do next? You probably see all sorts of finessing situations confronting you. You can finesse against the club Queen; if West holds this card, you will make 3 club tricks. You can also finesse against the heart Queen; if East holds this card, you will make 3 heart tricks. What can be gained by taking these finesses immediately? They will be available somewhat later, if you find it advisable to take them. |
+PG| ***** 85 ***** |
+
+
+NT|^B@2
+Your main object should be, instead, to try to establish certain winners before you do any fooling around with possible winners. After all, good though a finesse may be in the proper time and place, it cannot compare with the certainty of developing tricks by establishing a suit along lines of play which are almost sure to succeed.|
+PG| ***** 86 ***** |
+
+
+AT|
+
+Look, for instance, at your diamond holding. If you concede 2 tricks to the Opponents for their Ace and King, you establish 3 tricks in the suit. |
+PG| ***** 87 ***** |
+
+
+NT|^B@2
+You must also lose the King and Queen of spades, and that will make 4 tricks for the Opponents. However, you are certain of winning the fourth round of spades, so that if the spades are divided adversely 4-3 you can lose no more than 2 spade tricks. Has the finessing possibility any advantage over developing diamonds? None. Indeed, even if both finesses succeed, they will not assure you of your contract, and it will still be necessary to attack the diamond suit. The best procedure is clearly to make the diamond attack without delay.|
+PG| ***** 88 ***** |
+
+
+NT|^B@2
+You will find it enlightening to follow this hand play by play.|
+PG| ***** 89 ***** |
+
+
+UP|4|sk|S|
+PG| ***** 90 ***** |
+
+
+cp|8|AT|
+
+^B@2^*BMovie Maker: ^*N|cp||at|To enlighten you further the play is set by a ^*Bpause^*N where you have time to make your selection before the card from South is played according to Watson's instructions.|
+PG| ***** 91 ***** |
+
+
+PC|s4|PC|s3|PC|sj|
+pg| ***** 92 ***** |
+
+
+PC|sa|
+pg| ***** 93 ***** |
+
+
+PC|d9|PC|d5|
+PG| ***** 94 ***** |
+
+
+PC|d3|PC|dk|
+PG| ***** 95 ***** |
+
+
+PC|s6|
+PG| ***** 96 ***** |
+
+
+PC|s2|PC|sq|PC|s9|
+PG| ***** 97 ***** |
+
+
+PC|sk|PC|h5|PC|s5|
+PG| ***** 98 ***** |
+
+
+PC|s8|
+PG| ***** 99 ***** |
+
+
+NT|^B@2
+West's lead holds the trick. You are now perfectly content with the developments, for you know that there is only one spade outstanding, and your Ten will beat it. It makes no difference what West decides to lead.|
+PG| ***** 100 ***** |
+
+
+PC|s7|PC|c5|PC|c4|PC|st|
+pg| ***** 101 ***** |
+
+
+PC|d8|PC|da|PC|d7|PC|d2|
+PG| ***** 102 ***** |
+
+
+at|
+The situation at this point is as you see above.|SK||
+PG| ***** 103 ***** |
+
+
+NT|^B@2
+With 7 tricks still to be made, you are certain of winning 2 club tricks, 3 diamond tricks, and 2 heart tricks - your contract.|
+PG| ***** 104 ***** |
+
+
+AT|
+
+Suppose that, instead of playing as just recommended, you decide the spade suit is dangerous and that you must take the club and heart finesses at once. |
+PG| ***** 105 ***** |
+
+
+UP|24|RH||AH|Board 4a|SK|S|PC|s4|
+PG| ***** 106 ***** |
+
+
+NT|^B@2
+You have only a one-way finesse, for you cannot lead the Jack blindly without having the Ten to back it up. You might lead the King of clubs from your own hand and follow it with a low club, finessing the Jack on the second round if West plays low. It so happens that this will hold the trick and you can turn your attention to hearts. By following the same procedure here, the Jack will lose to West's Queen. This would be enough to set your contract 1 trick, for East and West still hold the King and Queen of spades and the Ace and King of diamonds against you, making 5 tricks won by your Opponents.|
+PG| ***** 107 ***** |
+
+
+at|^B@2
+Suppose you refuse to win the Jack of spades on the first trick with your Ace. Notice how the play develops trick by trick:|
+PG| ***** 108 ***** |
+
+
+PC|s3|PC|sj|PC|s2|
+PG| ***** 109 ***** |
+
+
+PC|s6|PC|s8|PC|sq|PC|s9|
+PG| ***** 110 ***** |
+
+
+PC|d5|PC|d3|PC|dk|PC|d4|
+PG| ***** 111 ***** |
+
+
+PC|s5|PC|sa|PC|s7|PC|h5|
+PG| ***** 112 ***** |
+
+
+PC|d9|PC|da|PC|d7|PC|d2|
+PG| ***** 113 ***** |
+
+
+PC|sk|PC|c5|PC|c4|PC|st|
+PG| ***** 114 ***** |
+
+
+SK||NT|^B@2
+West's King holds the trick. At the sixth trick, East and West have taken 3 spade tricks and 2 diamond tricks, enough to defeat South's contract by 1 trick. In other words, your refusal, as South, to promote your lower honors immediately has resulted in the loss of your contract.|
+PG| ***** 115 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+qx|9B02,SHOULD DUMMY PLAY HIGH OR Low SECOND HAND?|
+BT||HT|E|CS|1|cp|4|AT|^-
+{    SHOULD DUMMY PLAY HIGH OR LOW SECOND HAND?    }
+^-|cp||AT|^B@2^Y@3
+The question came up, earlier in this chapter, whether Dummy should play a high or a low card on the opening lead coming from Declarer's left. The statement was made that it was inadvisable to play a high card when there was no good reason for doing so. This statement requires elucidation. The contract is still no-trump, and spades are opened against you by West on the first lead. Say, the four of spades is the actual opening lead. Slightly different treatment is required in each distribution.|
+PG| ***** 116 ***** |
+
+
+NT||
+%%%%%%%
+st||sk||rH||ah|Distribution  A1|sv|0|md|1Sa73,,sq8,|ha|y|NT|^B@2 
+Notice in this distributions of spades (A1) for Declarer (South) and Dummy (North).|
+PG| ***** 117 ***** |
+
+
+AT| Consider with Queen-eight in Dummy.|MD|0,s4,0,0|wt|w|pc|s4|
+PG| ***** 118 ***** |
+
+
+AT| If you play the eight, East will probably play the nine, Ten, or Jack, forcing you to win the trick with your Ace, thus permitting the outstanding King to capture Dummy's Queen some time later. You must always weigh the possibility of making as many tricks in any suit as you can. |
+PG| ***** 119 ***** |
+
+
+NT|^B@2
+Your only chance of making 2 spade tricks in this distribution is to play|PC|SQ|
+PG| ***** 120 ***** |
+
+
+AT| the Queen immediately, hoping that the King lies with West. If East covers the Queen with the King (which he may, of course, have), you must refuse to win that trick, and also refuse to win the second round of spades. In other words, if the Queen does not hold the first trick, you proceed to hold up your Ace. |cp|8|FP||at|*|
+pg| ***** 121 ***** |
+
+
+CP|8|fp|1|AT|
+^c@2 * |fp||CP||AT|^*IIn all of these instances there are exceptions, depending on special factors which may exist in a particular hand. These are covered in the advanced sections. - S. F. Jr.^*N|CP||
+PG| ***** 122 ***** |
+
+
+NT|| 
+st||rH||ah|Distribution  A2|sv|0|md|1Sa73,,sq85,|ha|y|NT|^B@2 
+The distribution (A2) requires other tactics.|MD|0,s4,0,0|wt|w|pc|s4|
+PG| ***** 123 ***** |
+
+
+AT| Now you should not play the Queen. The better procedure is to play low from Dummy,|PC|S5|
+PG| ***** 124 ***** |
+
+
+AT| and, if East plays the nine, Ten, or Jack, win the trick with the Ace in your own hand.|
+PG| ***** 125 ***** |
+
+
+NT|^B@2
+Thereafter you should try to put East in the lead rather than West, in order to keep West from leading through Dummy's guarded Queen. If West does happen to gain the lead and return a spade, you must play your Queen and hope for the best. If East ever leads a spade, Dummy's guarded Queen becomes a sure trick in that suit.|
+PG| ***** 126 ***** |
+
+
+NT|^B@2
+What is the essential difference between (A1) and (A2)?|
+PG| ***** 127 ***** |
+
+
+AT| In the first situation, if the Queen is not played on the first trick, it gets left alone there in the Dummy and is of no value. That is, you may as well play it at once, and gain whatever advantage you can from it. In the second situation, if you play a low card you still leave the Queen guarded, and consequently the Queen may win later.|
+PG| ***** 128 ***** |
+
+
+NT||
+st||rH||ah|Distribution  A3|sv|0|md|1Sa73,,sqt5,|ha|y|wt|w|NT|^B@2 
+Look now at distribution (A3). Dummy's holding is a little bit stronger.|MD|0,s4,0,0|wt|w|pc|s4|
+PG| ***** 129 ***** |
+
+
+AT| Your best play from Dummy is the Ten,|PC|ST|
+PG| ***** 130 ***** |
+
+
+AT| in the hope that it will force the King from East's hand. You can then win with your Ace, leaving the Queen to control the second round of the suit.|
+PG| ***** 131 ***** |
+
+
+NT|^B@2
+If East covers the Ten with the Jack, you are in the same situation as you were in No. 2. You win with your Ace and try to let East lead (not West).|
+PG| ***** 132 ***** |
+
+
+NT||
+%%%%%%%
+st||rH||ah|Distribution  A4|sv|0|md|1Sa73,,sqt9,|ha|y|NT|^B@2 
+Now take distribution (A4).|MD|0,s4,0,0|wt|w|pc|s4|
+PG| ***** 133 ***** |
+
+
+AT| Here 2 spade tricks are practically certain, but there is a chance for you to win 3 tricks.|
+PG| ***** 134 ***** |
+
+
+AT| In fact, you will probably make 3 tricks, by playing properly, if the suit is distributed as shown now.|MD|0,sj65,0,sk82|sk||
+PG| ***** 135 ***** |
+
+
+AT| You play the nine from Dummy and,|PC|S9|
+PG| ***** 136 ***** |
+
+
+AT| if East plays his King, |
+PG| ***** 137 ***** |
+
+
+PC|SK|AT| you win with your Ace. |
+PG| ***** 138 ***** |
+
+
+PC|SA|
+PG| ***** 139 ***** |
+
+
+SK||CP||NT|^B@2
+The Queen-Ten in Dummy now forms a perfect tenace over West. All you have to do is lead spades through West, or let West lead the suit. The best play, therefore, is the nine from Dummy, in the hope that East has the King. It loses nothing, and stands to gain a trick, as you see.|
+PG| ***** 140 ***** |
+
+
+CP||NT|^B@2
+You should have been able to follow the logic of the four situations just discussed. In your playing experience you will often be faced with exactly such simple decisions as these. If you fear you may forget the logical analysis, memorize the situations and the proper card to play in each. The profit you will make on the tricks accruing from your correct play will more than repay you for your efforts.|
+PG| ***** 141 ***** |
+
+
+st||md|,,,|
+NT|^B@2
+Indeed, this is probably as good a spot as any to insert three other common situations, in which the King and Queen of a suit are held by Declarer and Dummy when the suit is opened against no-trump. These three situations are as follows:|
+PG| ***** 142 ***** |
+
+
+NT||
+%%%
+st||sk|s|rH||ah|No. 1|sv|0|SK||md|1dk73,d4,dq85,|ha|y|wt|w|PC|d4|NT|^B@2 
+In No. 1, if a low diamond is opened by West,|
+PG| ***** 143 ***** |
+
+
+AT| it should be apparent that to play the Queen will do no good whatever, for if East has the Ace and wins the trick, you are reduced forthwith to but one defensive time unit in the suit (your King). If West holds the Ace, the Queen will win the trick, but you have seriously endangered your King. Whenever East obtains the lead, he need but return a diamond through your guarded King up to West's Ace, and where's your King? |
+PG| ***** 144 ***** |
+
+
+NT|^B@2
+You will find it best always to play low from Dummy in this situation,|
+PC|D5|
+PG| ***** 145 ***** |
+
+
+AT| on the off-chance that East will play the Ace anyway (if he has it), giving you 2 sure tricks after that. If East plays some other card, such as the nine, the Ten, or the Jack, you win in your own hand with the King. If West holds the Ace, you need but lead low toward Dummy's guarded Queen to be sure of another diamond trick.|
+PG| ***** 146 ***** |
+
+
+NT||
+%%
+st||sk|s|rH||ah|No. 2|sv|0|SK||md|1dk73,d4,dq8,|ha|y|wt|w|PC|d4|NT|^B@2 
+In No. 2, however, all is changed. To play Dummy's eight can by no stretch of the imagination hope to induce East to play the Ace if he has it, for he will much prefer to keep the Ace for the second round and surely capture that lone Queen left in the Dummy. |
+PG| ***** 147 ***** |
+
+
+NT||CP|4|CS|1|FP|2|AT|^-
+{
+ East knows, you see, that an Ace which captures an honor has done heavier duty than an  
+ Ace which merely wins a trick.
+ }^- |
+PG| ***** 148 ***** |
+
+
+cp||cs||NT|^B@2
+On Dummy's eight, East will play some card which will force you to play the King if you wish to win the trick, and Dummy's Queen is as good as dead. Your only hope of gain is to play Dummy's Queen|PC|DQ|
+PG| ***** 149 ***** |
+
+
+AT| boldly on the first trick (on West's low lead). To be sure, if East captures the trick with the Ace, you have accomplished nothing, but you have also lost nothing which you would not otherwise have lost. |
+PG| ***** 150 ***** |
+
+
+NT|^B@2
+What is more pertinent, if East does not have the Ace, the Queen will hold the trick, leaving you with secondary control of the suit (your guarded King). From this point, you will find it to your advantage to keep East out of the lead, if possible, by throwing the lead into West's hand whenever you have to lose it. You pursue these tactics, of course, to protect your King from a fatal lead by East up to West's Ace.|
+PG| ***** 151 ***** |
+
+
+NT||
+%%%
+st||sk|s|rH||ah|Diagram  No. 3|sv|0|SK||md|1dk73,d4,dqt5,|ha|y|wt|w|PC|d4|NT|^B@2 
+Situation No. 3 is almost exactly the same as No. 3 in the first group (A3).|
+PG| ***** 152 ***** |
+
+
+AT| On West's low diamond lead,|
+PG| ***** 153 ***** |
+
+
+AT| you must play the Ten|PC|DT|
+PG| ***** 154 ***** |
+
+
+AT| and hope that West (not East) has the Jack. The Ten must then force the Ace, or else hold the trick. If East covers the Ten with the Jack, you win the trick with the King, but you can still hope that West has the Ace so that you can lead through it and make a trick with Dummy's guarded Queen.|
+PG| ***** 155 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+qx|9B03,KEEPING A WEATHER EYE OPEN FOR SUIT CONTROL|
+BT||HT|E|CS|1|cp|4|AT|^-
+{    KEEPING A WEATHER EYE OPEN FOR SUIT CONTROL    }
+^-|CP||CS||AT|^B@2^Y@3The high-card situations just discussed are vitally important in suit control. The effort, you should perceive, was always to keep some measure of control in the suit West attacked in his opening lead. The following deal illustrates how these tactics - always keeping a weather eye open for suit control - are carried out:|
+PG| ***** 156 ***** |
+
+
+nt||
+st||sk|s|rH||ah|Board  5|sv|0|SK|S|md|1Sk73ha62dat954ck2,saj654hj84dk8cq95,sq8hk75dqj32ca863,st92hqt93d76cjt74|ha||MB|3NPPP|NT|^B@2
+Your contract, as South (Declarer), is three no-trump. West's normal opening lead is a low spade. |
+PG| ***** 157 ***** |
+
+
+sk|W|PC|s5|
+PG| ***** 158 ***** |
+
+
+SK|S|AT| By now you should not need to hesitate about which card to play from Dummy.|
+pg| ***** 159 ***** |
+
+
+lb|*CWhich card should the Declarer play?^^sq^sq8|NT|^B@2
+You know that your best play is the Queen, so you go up with it promptly.|
+PG| ***** 161 ***** |
+
+
+PC|SQ|
+PG| ***** 162 ***** |
+
+
+CP||AT| You are happy to notice that the Queen wins. |
+PG| ***** 163 ***** |
+
+
+PC|s2|PC|s3|
+PG| ***** 164 ***** |
+
+
+CP||AT| Looking a bit ahead, you see that only the diamond suit offers any possibility of development.|
+PG| ***** 165 ***** |
+
+
+AT| Your lead is therefore the Queen of diamonds to the second trick, on which you play low from your hand. |Pc|dQ|PC|d7|PC|d4|
+PG| ***** 166 ***** |
+
+
+NT|^B@2
+You can take this sort of finesse, you recall, because you hold the next lower card (Jack).|
+PG| ***** 167 ***** |
+
+
+AT| The diamond Queen loses to West's King, |
+PG| ***** 168 ***** |
+
+
+PC|DK|
+PG| ***** 169 ***** |
+
+
+AT| but this does not help West much. If he cashes in his spade Ace, he knows that your King will be set up for a sure trick. He will probably decide to lead some other suit in the hope of putting his partner in the lead to return a spade through your guarded King. However, as you can see from the diagram, West's hope is a forlorn one; East cannot get in the lead.|SK||
+PG| ***** 170 ***** |
+
+
+NT|^B@2
+You must make your contract with 1 spade trick (already taken), 2 heart tricks, 4 diamond tricks, and 2 club tricks. If West should lead the spade Ace after all, you make an extra trick (spade King).|
+PG| ***** 171 ***** |
+
+
+NT|^B@2
+What a difference if you had played low from the Dummy on that first trick!|
+PG| ***** 172 ***** |
+
+
+UP|7|SK|S|
+PG| ***** 173 ***** |
+
+
+PC|s8|
+PG| ***** 174 ***** |
+
+
+AT|
+East would have covered with the nine, forcing you to win with your King. |
+PG| ***** 175 ***** |
+
+
+PC|S9|PC|SK|
+PG| ***** 176 ***** |
+
+
+AT|
+Your next step would have been to enter Dummy's hand with the heart King in order to take the diamond finesse. ^*N|PC|h2|PC|h4|PC|hk|PC|h3|
+PG| ***** 177 ***** |
+
+
+PC|dq|PC|d6|PC|d4|PC|dk|
+PG| ***** 178 ***** |
+
+
+NT|^B@2
+The finesse, of course, would have failed, and West, having gained the lead, would have played his spade Ace, capturing Dummy's now unguarded Queen. |
+PG| ***** 179 ***** |
+
+
+PC|sa|PC|sq|PC|st|PC|s7|
+PG| ***** 180 ***** |
+
+
+sk||NT|^B@2
+West's 3 additional spade tricks would have defeated your contract by 1 trick.|
+PG| ***** 181 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%%
+qx|9B04,A HOLD-UP IN A SUIT WITH TWO STOPPERS|
+BT||HT|E|CS|1|cp|4|AT|^-
+{    A HOLD-UP IN A SUIT WITH TWO STOPPERS    }
+^-|CP||CS||AT|^B@2
+Don't think you are through with hold-ups, for you've just begun. In a later Chapter you will be given further examples of hold-ups with unusual card combinations. Before going on to some other basic and more essential principles of no-trump play, however, you should give some study to the following deal, which illustrates a hold-up with two defensive time units (stoppers) in the suit which is led against the Declarer, who is playing a three no-trump contract:|
+PG| ***** 182 ***** |
+
+
+NT||
+st||sk|s|rH||ah|Board  6|sv|0|SK|S|md|1SAK2HK43DQ76C9432,SJT54HQT985DA5C76,S863HA62DJT983CAK,SQ97HJ7DK42CQJT85|ha||mb|3NPPP|NT|^B@2
+The first few tricks in this hand require careful attention.|
+PG| ***** 183 ***** |
+
+
+AT| West leads @H10|
+PG| ***** 184 ***** |
+
+
+PC|ht|PC|h2|PC|hj|
+PG| ***** 185 ***** |
+
+
+lb|*CWhat card would you play if you were the Declarer?^^h3^Hk43|NT|^B@2
+You, as South (Declarer), purposely refuse to win the first round of hearts because you can see at once that you are a time unit behind your Opponents. |
+PG| ***** 187 ***** |
+
+
+PC|h3|
+PG| ***** 188 ***** |
+
+
+NT|^B@2
+You must establish your diamonds if possible, and you must do it while under fire from your Opponents in their efforts to establish hearts for themselves. Since you have only two defensive units in hearts, and they have two defensive units in diamonds, apparently they must win the battle because they already have the advantage of having made the first lead. Your only hope is that one of the Opponents will be exhausted of hearts as a result of your hold-up.|
+PG| ***** 189 ***** |
+
+
+PC|h7|NT|^B@2
+East is returning his partner's suit|
+PG| ***** 190 ***** |
+
+
+PC|hk|PC|h5|PC|h6|
+PG| ***** 191 ***** |
+
+
+PC|d6|PC|d5|PC|d8|PC|dk|
+PG| ***** 192 ***** |
+
+
+PC|c8|PC|c2|PC|c6|PC|ck|
+PG| ***** 193 ***** |
+
+
+AT|
+
+What you hoped would happen, has happened! By holding up for one round of hearts, you eliminated all hearts from East's hand so that, in the lead at this trick, he has had to lead some other suit.|
+PG| ***** 194 ***** |
+
+
+PC|d3|PC|d2|PC|dq|
+PG| ***** 195 ***** |
+
+
+AT| West wins with @DA.|PC|da|
+PG| ***** 196 ***** |
+
+
+NT|^B@2
+At this point, West can establish his hearts by driving out Dummy's Ace, but it is too late. Your strategy of holding up to exhaust East of hearts has offset the advantage the Opponents had in their one defensive unit.|
+PG| ***** 197 ***** |
+
+
+NT|^B@2
+If you win the first round of hearts, East will obtain the lead soon enough to return a heart, enabling West to establish the suit in time to benefit when he gains the lead on the second round of diamonds. In fact, if you fail to hold up in hearts,|CP|8|at|^*B*^*N|CP||AT| even with two stoppers, you must be set 2 tricks.|
+PG| ***** 198 ***** |
+
+
+nt||cp|8|at|^B@2
+^*B*^*N|CP||AT| ^*ISomeone is sure to ask why he cannot win the first round of hearts with, say, his Ace, and hold up the King on the second round. Won't East be exhausted of hearts just the same? Oh, yes; East will be exhausted of hearts eventually, no matter what else happens, but will it do you any good? If you win the first round, and hold up your second stopper on the second round, West will simply overtake his partner's heart lead and return the suit. Then where are you? Play the hand with actual cards if you still do not see the point.|CP||AT| - Sam Fry, J.|CP||AT|^*N|
+PG| ***** 199 ***** |
+
+
+CP||NT|^B@2
+Though it is too early to bring up the subject of defensive play, it may be mentioned here (to forestall any criticism by some alert reader) that East could defeat your contract on this hand by good play in spite of your hold-up in hearts. He needs only to switch from hearts to clubs at the second trick. In other words, he abandons trying to establish his partner's suit and seeks to set up a suit of his own. The full explanation of this defensive strategy will come in a later chapter.|SK||
+PG| ***** 200 ***** |
+
+
+NT||cp|8|AT|^B@2
+Movie Maker: |CP||AT|The following board and the play of the hand which depict what was said above is not part of the Part I of the book. It is here to show what Watson is referring to.|
+PG| ***** 201 ***** |
+
+
+NT||
+st||sk||rH||ah|Board  6a|sv|0|SK||md|2SAK2HK43DQ76C9432,SJT54HQT985DA5C76,S863HA62DJT983CAK,SQ97HJ7DK42CQJT85|mb|p|mb|p|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg| ***** 202 ***** |
+
+
+pc|hT|pc|h2|pc|hJ|pc|h3|
+pg| ***** 203 ***** |
+
+
+pc|cQ|pc|c2|pc|c6|pc|cK|
+pg| ***** 204 ***** |
+
+
+pc|d3|pc|d4|pc|dQ|pc|dA|
+pg| ***** 205 ***** |
+
+
+pc|c7|pc|cA|pc|c5|pc|c3|
+pg| ***** 206 ***** |
+
+
+pc|h6|pc|h7|pc|hK|pc|h5|
+pg| ***** 207 ***** |
+
+
+pc|d6|pc|d5|pc|d8|pc|dK|
+pg| ***** 208 ***** |
+
+
+pc|cJ|pc|c4|pc|s4|pc|s3|
+pg| ***** 209 ***** |
+
+
+pc|cT|pc|c9|pc|s5|pc|s6|
+pg| ***** 210 ***** |
+
+
+pc|c8|pc|s2|pc|h8|pc|d9|
+pg| ***** 211 ***** |
+
+
+mc|7|
+pg| ***** 212 ***** |
+
+
+UP|24|PF|Y|
+NT|^B@2
+The subject of the hold-up play has not been exhausted in this chapter. A further discussion of this important play may be found in Chapter IX of Part II.|SK||
+PG| ***** 213 ***** |
+
+
+NT||
+%%%%%%%%%%%%%%%%%%%%%
+qx|9SUM,SUMMARY|
+bt||HT|E|CS|1|cp|4|AT|^-
+{    Summary    }
+^-|
+CP||CS||AT|
+^B@2Surely the great mystery of "card sense" now begins to clear up a little. You can even feel some confidence in your ability, for by now you should be well on the way toward realizing the value of controlling cards. You have learned when the hold-up may be to your advantage, and when it may not. Always it is the lure of tricks that goads you on to whatever you do. If to hold up looks profitable, you hold up; if not to hold up may mean gaining a trick, you refuse to hold up.|
+PG| ***** 214 ***** |
+
+
+HT|x|AT|^B@2
+This the end of Chapter IX. Next is Rules 11 and 7 by Howard Schutzman. |
+PG| ***** 215 ***** |
+
+
+nt||
+%%%%%%%%%%%%%%%%%%%
+QX|HOW,Rules 11 and 7 by Howard Schutzman|
+HT|e|CS|1|CP|4|AT|^-
+{    Rules 11 and 7 by Howard Schutzman    }
+^-|CP||FP||AT|^B@2^z@3I|FP||AT|f the opponents play 4th best leads, you can often determine the distribution of the suit from the opening lead. The easiest case is when an opponent leads the 2, in which case, he must have a 4 card suit, since he has no lower cards. Similarly, if he leads a higher card, and you can see all the lower cards between you and dummy (for example, he leads the 5, and you can see the 4, 3, and 2), then he also has a 4 card suit. How does that help you? Well, if the opponents have 8 cards in the suit led, you know they are divided 4-4, so if you have a single stopper, there is no gain in holding up. Even if you cannot see all the cards below the suit led, you can often determine how the suit is divided. For example, if you are missing just one lower card in the suit led, the opponent has at most a 5 card suit, and if the other player plays that lower card, then you know the leader started with 4 cards in the suit.|
+PG| ***** 216 ***** |
+
+
+AT|
+
+A rule that is sometimes useful when the opponents lead 4th best is known as the "|CP|8|FP|2|AT|Rule of 11|FP||CP||AT|". Let me explain the math behind it first. Given any card in a suit, because there are 13 cards in that suit, if you subtract the number of that card from 14, that tells you how many cards there are that are higher than that card. For example, with an 8, there are six higher cards (14 - 8 = 6), the A, K, Q, J, 10, and 9. Now if an opponent plays 4th best, you know he has 3 cards higher than the card led. Therefore, you can do some simple math to figure out how many higher cards are in the other 3 hands  -  14 - 3 (number of higher in leader's hand) - the number of the card led. Since 14 -3 is always 11, if you subtract the number of the card led from 11, you can figure out how many higher cards there are in the remaining 3 hands.|
+PG| ***** 217 ***** |
+
+
+AT|
+
+How can you apply that rule? Say, for example, your opponent leads the 8, and you know it is 4th best. Remember, I said there are six cards higher than the 8. The leader has 3 of them, and therefore the other 3 hands have the other 3 (and, indeed, 11 - 8 = 3). If between you and dummy, you have 3 cards higher than the 8, then the leader's partner has no cards higher than the 8. Similarly, if you and dummy have 2 cards higher than the 8, the leader's partner has one card higher. This information can often help you determine how the high cards are distributed, which increases the likelihood that you will play the suit to your best advantage. 
+|
+PG| ***** 218 ***** |
+
+
+LF|CH-10-P-1.LIN|

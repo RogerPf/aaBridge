@@ -1,0 +1,211 @@
+
+
+%% 2019-07-26  Patterns  41 - 49
+
+%% All hands are copyright  Richard Pavlicek
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+bv|a,h|   %% hide all three buttons
+%%
+ss|head,     ah`Part 3.    Throw-in`|
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+<<--INSERT-START-->>=07___FP_Patterns.ins
+%%
+fh|b48| %%  'banner' font
+fh|t40| %%  'target' font
+fh|s28| %%  'small'  font
+fh|p45| %%  'pink dot' size
+
+cr|a230|cg|a040|cb|a130|          a  action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       pink dot button
+
+bv|e,h| %%   Enter the deal button hidden
+bv|f,v| %%   1st visible 
+bv|d,v| %%   DDS visible
+
+ha|y|   %%   hide auctions
+
+ss|head,     ah`Part 3.    Throw-in`|
+ss|banner,   ht`e`fp`b-big`at`^*b^L^*nThrow-in^*n`fp``|
+ss|link,     ht`z`at`^L     visit  Richard Pavlicek's  Throw-in  page    ^*h http://www.rpbridge.net/9h01.htm, rpbridge.net  9h01^*n`|
+ss|means,    ht`e`fp`small`at`^x ^*h http://www.rpbridge.net/9gc8.htm, meaning^*n`fp``|
+ss|new,      nt`^b@2^^`vv`means`vv`link`vv`banner`ht`e`vv`head`|
+ss|contract, mb`3nppp`|
+ss|p1,       vv`contract`wt`s`sk`s`fp`t`ht`e`at`^q    ^*b`|
+ss|p2,       fp`t`ht`e`at`^*n^u`|
+ss|p3,       fp``ht`q`at`^d`|
+%%
+<<--INSERT-END**-->>=07___FP_Patterns.ins
+
+<<--INSERT-START-->>=08___FP_Patterns_Anti.ins
+%%
+ss|banner,   ht`e`fp`b-big`at`^*b^k    ^*nAnti Throw-in^*n`fp``|
+%%
+<<--INSERT-END**-->>=08___FP_Patterns_Anti.ins
+
+
+qx|-|
+st||
+nt|^b@2^^|vv|banner|
+lg|k|
+ht|n|at|The following group of patterns are, to quote the creator Richard Pavlicek,
+^d" ...  'anti' techniques, i.e., plays to counteract a technique in that category."
+You are defending (as N or S) and are trying to stop declarer from making their contract.|
+rh||ah|--- -|vv|head|
+ht|a|n#|1|at|^q( Your target is |cp|red|at|^*b 5 ^*n |cp||at|tricks )|
+pg| ***** 0 ***** |
+
+
+qx|54|
+rh||ah|Pattern 54|
+vv|new|at|^*b 54.  Duck anti^*n|
+%
+md|4  AJ2, T87, 943, KQ6|
+%
+bh|Play, North,  sL, res, p2,  T1,  always|
+bh|Play, East,   sQ, res, p3,  T1,  always|
+%
+bs|7,3|
+vv|p1|at|win 2|
+vv|p2|at|auto bi|
+vv|p3|
+wt|w|
+pc|s7|eb|y___|
+pg| ***** 1 ***** |
+
+
+qx|55|
+rh||ah|Pattern 55|
+vv|new|at|^*b 55.  Second-hand high anti^*n|
+%
+md|4  AQT, 987, J32, K54|
+%
+bs|7,2|
+vv|p1|at|win 3|
+vv|p2|at|bi|
+vv|p3|
+sk|n|
+wt|w|
+pc|s7|eb|y___|
+pg| ***** 2 ***** |
+
+
+qx|56|
+rh||ah|Pattern 56|
+vv|new|at|^*b 56.  Second-hand middle anti^*n|
+%
+md|4  AJ8, T32, Q96, K54|
+%
+bs|8,2|
+vv|p1|at|win 3|
+vv|p2|at|bi|
+vv|p3|
+wt|w|
+sk|n|
+pc|s2|eb|y___|
+pg| ***** 3 ***** |
+
+
+qx|57|
+rh||ah|Pattern 57|
+vv|new|at|^*b 57.  Unblock anti^*n|
+%
+md|4  K2 AQ, JT 54, Q3 32, A9 K7|
+%
+bh|Play, East,   sA, res, p3,  T1,  always|
+%
+bs|7,2|
+vv|p1|at|win 3|
+vv|p2|at|bi|
+vv|p3|
+wt|w|
+pc|sJ|eb|y___|
+pg| ***** 4 ***** |
+
+
+qx|58|
+rh||ah|Pattern 58|
+vv|new|at|^*b 58.  Crocodile anti^*n|
+%
+md|4  KT2 32, 987 Q6, QJ KJ4, A65 A5|
+%
+bh|Play, North,   sQ, res, p2,  T1,  always|
+bh|Play, East,    sL, res, p1,  T2,  always|
+%
+bs|6,2|
+vv|p1|at|win 3|
+vv|p2|at|auto bi|
+vv|p3|at|Assumes West is dummy to be meaningful.|
+wt|w|
+pc|s7|eb|y___|
+pg| ***** 5 ***** |
+
+
+qx|59|
+rh||ah|Pattern 59|
+vv|new|at|^*b 59.  Anti finesse exit anti^*n|
+%
+md|4  A Q92, 4 AT8, 2 J43, 3 K76|
+%
+bs|6,3|
+vv|p1|at|win 2|
+vv|p2|at|auto? bi|
+vv|p3|
+wt|w|
+pc|s4|eb|y___|
+pg| ***** 6 ***** |
+
+
+qx|60|
+rh||ah|Pattern 60|
+vv|new|at|^*b 60.  Unblock gambit anti^*n|
+%
+md|4  K2 AQJ, QJ 654, 543 32, AT9 K7|
+%
+bh|Play, East,    sA, res, p3,  T1,  always|
+%
+bs|6,2|
+vv|p1|at|win 3|
+vv|p2|at|bi|
+vv|p3|
+wt|w|
+pc|sQ|eb|y___|
+pg| ***** 7 ***** |
+
+
+qx|61|
+rh||ah|Pattern 61|
+vv|new|at|^*b 61.  Exit retention anti^*n|
+%
+md|4  K987 2, 3 AQ QJ, 2 KJ AK, AQJT 3|
+%
+bh|Play, East,    sT, res, p4,  T1,  always|
+bh|Play, East,    sQ, res, p1,  T3,  always|
+%
+bs|5,3|
+vv|p1|at|win 2|
+vv|p2|at| bi|
+vv|p3|
+pg| ***** 8 ***** |
+
+
+qx|62|
+rh||ah|Pattern 62|
+vv|new|at|^*b 62.  Duck gambit anti entry^*n|
+%
+md|4  32 AQJ, AJ7 K2, KQ654, T98 43|
+%
+bs|6,3|
+vv|p1|at|win 3|
+vv|p2|at|auto|
+vv|p3|
+wt|w|
+pc|sJ|eb|y___|
+pg| ***** 9 ***** |
+
+

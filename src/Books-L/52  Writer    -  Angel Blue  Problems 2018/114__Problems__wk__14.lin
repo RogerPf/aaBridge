@@ -1,0 +1,494 @@
+%%
+%%
+
+ss|chapter,Declarer  Play                 Problems  Week  14 |
+
+ss|movie-maker,GG_Bridge|
+
+%%
+%%  Date last Edited    2018-01-27          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead_2018.ins
+%%
+ss|masthead,Angel Blue                                                     2018 |
+%%
+cr|m205|cg|m125|cb|m205|   fill   m  m-mastColor       dull bluey pink
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    std
+%%
+<<--INSERT-END**-->>=01___FP_masthead_2018.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=03___FP_gen_arik_intro.ins
+%%
+Lg|f|n^|6|
+fp|4|at|^c@2^z@3|
+at|Arik, BBO ID 'Angel Blue', runs a weekly card play tournament and lesson in the  ^*h http://iac.pigpen.org.uk/,IAC^*n  club on  ^*h http://bridgebaseonline.com/,BBO^*n.  The focus is on  difficult to play  hands.  He has kindly allowed his problems to appear here in aaBridge lin file format.
+|n^|9|at|
+Do visit Angel Blue's bridge web site at ^*h http://angelblue.co.il/^*n|
+%%
+<<--INSERT-END**-->>=03___FP_gen_arik_intro.ins
+
+
+<<--INSERT-START-->>=03___FP_general_2018.ins
+%%
+ht|n|n^|0|at|@1^z  @3^b   {^^^^^^^^^^^^^^ ^z } |
+at|^c@2^z@3^^|
+%%
+ht|n|n#|7|at|All the hands for each lesson are given in a single .lin file.   Each deal has a summary and a few have a link to the full answer text on Angel Blue's website.  Before consulting it we suggest that:-|
+n#|7|at|^^^*bIF^*n after clicking  { ^*b 1st ^*n }  you cannot work out how to play the hand THEN click on the ^*b DDS  { is Off/On ^*n }  button.   This will show little green 'trick total' numbers by each of your cards.   Click on, and so play, any card that is marked with a light green oval.   This will show you the best lines of play.|
+n#|5|at|^^Your task is to solve the hand and if possible to categorize it as to being a  throw-in, squeeze or whatever.|
+%%
+%%
+ss|play-it-out,at`^^^d`cp`red`at`^*bNow `cp``at`  click  { ^*b 1st ^*n }  `cp`red`at`^*band play out the hand.^*n`cp``at`     ^*b Flow ^*n  will show the hands and end the problem.^^^^^n If you get stuck  -  use the ^*b DDS  {  is Off/On ^*n }  button.`|
+%%
+<<--INSERT-END**-->>=03___FP_general_2018.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|a|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|5|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|c|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+qx|14|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+qx|1,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 14.1|
+md|1sAQ8653hAKT7d64c5,sThQJ9863dAKQcT87,sK72h42dT87cA9432,sJ94h5dJ9532cKQJ6|
+sv|-|sk|s|
+bh|Play, W, dH, BAD, on-lead, T1-3, always|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 14.1^*n     The hand,|
+pg| ***** 1 ***** |
+
+
+at|      the bidding,|
+mb|1S|mb|2h|mb|4s|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+at|      the lead,|
+lg|f|
+pc|dA|
+pg| ***** 3 ***** |
+
+
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 4 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 5 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n  
+^^Your 10th trick has to come from a @h ruff but RHO can only have a singleton @h on the bidding.  So you have to avoid getting either @h honor ruffed and ruff a @h and draw trumps and it is almost certain that RHO will have at lRHO three trumps.  As always the  the ^*b DDS  {  is Off/On ^*n }  button  can light your way. |
+pf|all-res-lifted|
+pg| ***** 6 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 7 ***** |
+
+
+---------------------------------------------------------------------------
+qx|2,wide|
+bv|a,h|
+ha|y|
+rh||ah|Problem 14.2|
+md|1sA6hJ75dAQJT72cA5,sJT75hKQT4d4cT843,sKQ42hA3dK9863cK6,s983h9862d5cQJ972|
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 14.2^*n     The hand,|
+pg| ***** 8 ***** |
+
+
+at|      the contract,|
+
+mb|7D|mb|p|mb|p|mb|p|
+pg| ***** 9 ***** |
+
+
+at|      the lead,|
+lg|f|
+pc|hK|
+pg| ***** 10 ***** |
+
+
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 11 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 12 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n  
+^^With 12 top tricks the source of a 13th has to be a squeeze.  You can put LHO with the @hQ so play her to also have 4 spades hence it will be a Simple Automatic Squeeze in @s's (long menace) and @h's (one-card menace).|
+pf|all-res-lifted|
+pg| ***** 13 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 14 ***** |
+
+
+---------------------------------------------------------------------------
+qx|3,wide|
+bv|a,h|
+ha|y|
+rh||ah|Problem 14.3|
+md|1sKQJT53hK5dK72cK5,s9hQJT84dAQ9cAT64,sA862hA762d853cQ7,s74h93dJT64cJ9832|
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 14.3^*n     The hand,|
+pg| ***** 15 ***** |
+
+
+at|      the contract,|
+
+mb|4S|mb|p|mb|p|mb|p|
+pg| ***** 16 ***** |
+
+
+at|      the lead,|
+lg|f|
+pc|hQ|
+pg| ***** 17 ***** |
+
+
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 18 ***** |
+
+
+bv|a,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 19 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n  
+^^Your 10th trick will come from the @dK if RHO has the Ace.  So play for LHO to have it and, if she does, pray for her to also have the @cA and control of the 4th round of @h's. Then stripping the clubs ruffing a @h and a 4th @h will throw her in (or if @h's 3-3) Christmas will have come early.|
+pf|all-res-lifted|
+pg| ***** 20 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 21 ***** |
+
+
+---------------------------------------------------------------------------
+qx|4,wide|
+bv|a,h|
+ha||
+rh||ah|Problem 14.4|
+md|4sAJhAQ83dKT92cKQ3,s6hJT764d4cJ98652,sT82hK52dAJ765cAT,sKQ97543h9dQ83c74|
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 14.4^*n     The hand,|
+pg| ***** 22 ***** |
+
+
+at|      the bidding,|
+mb|3S|mb|d|mb|p|mb|5d|mb|p|mb|6N|mb|p|mb|p|mb|p|
+pg| ***** 23 ***** |
+
+
+at|      the lead,|
+lg|f|
+pc|s6|
+pg| ***** 24 ***** |
+
+
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 25 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 26 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n  
+^^Time for a discovery play - After covering the @sQ lead the @sJ to confirm that RHO started with 7 @s's now you can win the return and play off the @c's, @h's, @sA (and even throw the @s10)  KEEPING  all the @d's.  After this you know that E started 7132 (so W was 1516).  Now you can cash the @dA and finesse against the @dQ. |
+pf|all-res-lifted|
+pg| ***** 27 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 28 ***** |
+
+
+---------------------------------------------------------------------------
+qx|5,wide|
+bv|a,h|
+ha|y|
+rh||ah|Problem 14.5|
+md|1sAQ2hK5dKQJT976cA,sKT4hT862d3cKQJ75,s753hAQdA542c8643,sJ986hJ9743d8cT92|
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 14.5^*n     The hand,|
+pg| ***** 29 ***** |
+
+
+at|      the contract,|
+
+mb|6d|mb|p|mb|p|mb|p|
+pg| ***** 30 ***** |
+
+
+at|      the lead,|
+lg|f|
+pc|cK|
+pg| ***** 31 ***** |
+
+
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 32 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 33 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bSummary^*n  
+^^The 12th trick and only come from the @sQ but if the finesse is wrong you need to throw LHO in.  It's a near certainty that RHO can beat the @s7 so that won't work.  Instead try (given LHO @cK lead) ruffing RHO out of @c's. So plan your entries well.  If RHO does win the 4th @c and lead a @s well you haven't lost anything by trying.|
+pf|all-res-lifted|
+pg| ***** 34 ***** |
+
+
+bv|a,h|
+md|1,,,|
+nt|^z@3^b@2|n^|5|
+at|^^cleared|
+pg| ***** 35 ***** |
+
+
+---------------------------------------------------------------------------
+qx|6,wide|
+bv|a,h|
+ha|y|
+rh||ah|Problem 14.6|
+md|1sAK7653hKQ874d2cA,s8hJ963d954cKQJ73,shAT2dAQJT876cT52,sQJT942h5dK3c9864|
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 14.6^*n     The hand,|
+pg| ***** 36 ***** |
+
+
+at|      the contract,|
+
+mb|6h|mb|p|mb|p|mb|p|
+pg| ***** 37 ***** |
+
+
+at|      the lead,|
+lg|f|
+pc|cK|
+pg| ***** 38 ***** |
+
+
+eb|y___|
+lg|k|
+at|^q  ^*b Do your thinking  NOW ^*n|
+pg| ***** 39 ***** |
+
+
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+vv|play-it-out|
+pf|first-button|
+pg| ***** 40 ***** |
+
+
+eb||
+sk||
+bv|a,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|d|
+at|^b^*bSummary^*n  
+^dPlay to the @dA and then take the ruffing finesse with the @dQ.  If the @dQ is covered, ruff.  Cash the @hK and lead to the @hA10 and make the safety play (when LHO ducks) of the @h10.  
+If RHO wins with the @hJ, trumps are 3-2 and you are home.  If RHO shows out you can now switch to @d's. When LHO eventually ruffs the @hA will be your (re-)entry.|
+pf|all-res-lifted|
+pg| ***** 41 ***** |
+
+
+qx|6 a,wide|
+md|0,c4,,hJ|sv||
+pc||
+nt|^z@3^c@2^^|n^|5|
+Lg|d|
+at|^b^*bMM:  ba^*n    ^h If RHO has @hJx   
+^dDoes the same line work if RHO as @hJx ?    Try it out.     
+^l REMEMBER this is a safety play and your target is ONLY 12.   
+Play to the @dA and then take the ruffing finesse with the @dQ.  If the @dQ is covered, ruff.     Cash the @hK and lead to the @hA10 and make the safety play (when LHO ducks) of the @h10. |
+pf|all-res-lifted|
+pg| ***** 42 ***** |
+
+
+qx|6 b,wide|
+md|0,dK,,d5|sv||
+pc||
+nt|^z@3^c@2^^|n^|5|
+Lg|d|
+at|^b^*bMM:  6b^*n   ^h If LHO has @dK and trumps are 3-2  
+^dDoes the same line work if LHO has @dK and trumps are 3-2 ?    Try it out.     
+^l REMEMBER this is a safety play and your target is ONLY 12.   
+|n#|5|at|Play to the @dA and then take the ruffing finesse with the @dQ.  If the @dQ is not covered throw a @s.|
+pf|all-res-lifted|
+pg| ***** 43 ***** |
+
+
+md|0,hJd4,,dKc4|
+pc||
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bReset^*n
+^^Restoring the original deal.|
+pf|all-res-lifted|
+pg| ***** 44 ***** |
+
+
+-------------------------------------------------------------------------------
+bt||
+nt|^z@3^b@2^^|
+ht|m|n#|7|cs|c-chapterColor|at|^a     ^-{  ^*nEnd  -  Problems wk 14^*n  ^^ }^-|
+pg| ***** 45 ***** |
+
+

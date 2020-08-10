@@ -1,0 +1,222 @@
+%%
+%% Doc Collection
+%% Last edited   2018 Aug 01
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+xf|| %% this prohibits eXit from the Front by mouse wheel and stepping etc
+xe|| %% this prohibits eXit from the End   by mouse wheel and stepping etc
+
+
+<<--INSERT-START-->>=005__Common_Header.ins
+%%
+fh|v24|        v-24     very small
+fh|s28|        s-28     small
+fh|j32|        j-32
+fh|k35|        k-35
+fh|e37|        e-37
+fh|t40|        t-40     title
+fh|n42|        n-42
+fh|p45|        p-45
+fh|b50|        b-50     big
+fh|g60|        g-60     graphSuit 
+fh|m64|        m-64     mastHead
+fh|c70|        c-70     chapTitle
+%
+fh|x33|ff|xCourier|          FONT   x-33-Courier
+%
+cr|a230|cg|a040|cb|a130|     a  action
+cr|b100|cg|b100|cb|b255|     b  light Blue
+cr|f200|cg|f255|cb|f255|     f  fake-button
+cr|h000|cg|h095|cb|h169|     h  h-highlight
+cr|p255|cg|p000|cb|p255|     p  pink    fake pink button
+cr|u160|cg|u040|cb|u200|     u  pUrple
+cr|y170|cg|y190|cb|y255|     y  youtube border
+%
+bt||
+fp|b-50|at|^^^^^a   @s @h @d @c  ^v     @c @d @h @s|fp||
+at|^b@2^z@3^^|
+ht|f|        
+%%
+<<--INSERT-END**-->>=005__Common_Header.ins
+
+qx|local|
+mn|  How  to  Localize  aaBridge  |
+Lg|c|
+
+at|This for those who want to localize ^*b aaBridge ^*n (and / or lin files) to a new language.
+
+^b@2^*b|cp|bl|at|Q|cp||at|.^*n   @2What is   ^*bLocalization^*n  ? 
+
+|cp|red|at|^*b^bA|cp||at|.^*n    @2^*bLocalization^*n is where you adapt,  an existing application  OR  some content,  to a new language.
+^i Including |cp|u|at|^*b improving an existing translation^*n|cp||at|  (buttons and messages).
+|n^|7|at|
+Compare that to ^*b Internationalization^*n (google - ^*bi18n^*n), which is where you change an application so that it can be localized by other people.  ^*b aaBridge ^*n is an Internationalized application.
+^b@2
+
+The  ^*b Books-Z ^*n (Inserted-menu-Z)  folder contains an example of a localized lin file.  The file text is the first verse of the Poem 'If'  by  Rudyard Kipling in Chinese, English and French. 
+|n^|7|at|  
+You can  |cp|a|at|^*bhide / show^*n|cp||at|  this ^*b Books-Z ^*n menu using the first setting in the ^*b Language ^*n menu on the menubar.
+|n#|c|at|
+
+From the  ^*g :Doc Collection, aaBridge Doc Collection^*n  |fp||at|   (  @2If it is NOT on your desktop click the blue link and follow the
+instructions.   You can return by clicking the  |fp|n|n#|2|at|@L|fp||n^|2|at|  icon, top left. )
+^b@2
+|n^|f|fp|j-32|cp|a|at|^*bRead the Document^*n|cp||fp||at|
+|n#|8|cp||fp|k-35|at|^dyyy  Localization  and  aaBridge.doc^*n|fp||
+
+ht|z|n#|f|fp|t|at|^iFont examples follow on the next page.|fp||
+pg| ***** 0 ***** |
+
+
+%% Languages UTF-8.lin
+
+%% Last edited   2017 Mar 01
+
+
+              %%  Tell users of old win player then need aaBridge
+bt||          %%
+mn|This  Movie  requires the  aaBridge  player|
+ht|j|at|^c This  Bridge Movie  requires the  FREE  ^*b aaBridge ^*n player available from|
+cb|8255|cp|8|at|       ^*hrogerpf.com/aaBridge^*n ^- |
+ip||          %%  non aaBridge  lin file players   STOP  on this  'ip'  command
+mn||tu||nt||  %%  Clean up the above mess  - turn off mn headers and  CLEAR THE SCREEN
+
+bt||
+tu|y|
+%%Font and color codes
+fh|150|ff|1Arial|fb|19|fm|1|  
+fh|235|ff|2Arial|fb|28|fm|2|  
+fh|340|ff|3Arial|fb|36|fm|3|    
+fh|535|ff|5Arial|fb|56|fm|5|    
+
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|30|cg|30|cb|3128|                dark Blue 3
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|664|cg|6255|cb|6255|             6=TURQUOISE
+cr|70|cg|7235|cb|7235|              green/blue 7
+cr|8255|cg|80|cb|80|                red 8
+cr|9128|cg|950|cb|90|               Reddish-brown 9
+
+bt||
+fp|1|at|^^
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp||at|^z@3|
+mn| International  Characters  UTF-8 |
+lg|h|
+ht|f|at|^b@2I was asked by  |fp|3|at|.lin file writer|fp||at|  Yuchong (雨悠悠) to improve ^*baaBridge^*n's support for Chinese characters.  The following lines show the result -
+|
+n^|8|
+at|^c@2
+English:    ^h I can eat glass.
+Arabic:     ^h أنا قادر على أكل الزجاج و هذا لا يؤلمني. 
+Armenian:   ^h Կրնամ ապակի ուտել և ինծի անհանգիստ չըներ։  
+Chinese:    ^h 我能吞下玻璃而不伤身体。 
+Chinese (Traditional):^h 我能吞下玻璃而不傷身體。 
+Georgian:   ^h მინას ვჭამ და არა მტკივა. 
+Greek:      ^h Μπορώ να φάω σπασμένα γυαλιά χωρίς να πάθω τίποτα. 
+Hebrew:     ^h אני יכול לאכול זכוכית וזה לא מזיק לי. 
+Hindi:      ^h मैं काँच खा सकता हूँ और मुझे उससे कोई चोट नहीं पहुंचती. 
+Japanese:   ^h 私はガラスを食べられます。それは私を傷つけません。 
+Russian:    ^h Я могу есть стекло, оно мне не вредит.  
+Thai:       ^h ฉันกินกระจกได้ แต่มันไม่ทำให้ฉันเจ็บ 
+|n^|8|at|
+
+^b@2All samples courtesy of ^*h http://www.columbia.edu/~fdc/utf8/ ^*n  (scroll down that long page)
+
+|fp|2|at|To  |cp|red|at|.lin file writers|cp||at|  -  please read the   How to Use   pages that follow.|fp||
+
+ht|z|at|@0
+^r Roger Pfister   -   March 2017|
+
+fh|940|fm|9|fp|9|at|@0@1|
+ht|i|
+rq|2941|at|@4^^^^^^^^^^ ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 2942 ^*n  or later   ^^^^  available from    ^*h rogerpf.com/aaBridge ^*n ^- |
+pg| ***** 1 ***** |
+
+
+qx|A|
+nt||
+fp|1|at|^^
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp||at|^z@3|
+mn|What works  ?         不傷身體|
+
+
+at|^y@3^c@2^^^^^^|
+at|As you can see  International Text  does work in the ^*bMN^*n  header command  (as used above).
+
+^f  >>  Remember all this is information for  ^*b.lin file writers^*n  only  << 
+
+Text layout test but first we have this line written only in English just for an extra test all of this is in a single.     أنا قادر على أكل الزجاج و هذا لا يؤلمني.      Կրնամ ապակի ուտել և ինծի անհանգիստ չըներ։        我能吞下玻璃而不伤身体。   我能吞下玻璃而不傷身體。   მინას ვჭამ და არა მტკივა.   Μπορώ να φάω σπασμένα γυαλιά χωρίς να πάθω τίποτα.|
+at|^z  @3^^|
+lg|i|
+at|Normal:      ^e أنا قادر على أكل     ^j 我能吞下玻璃而不伤身体。 ^*n^r Larger font  |fp|3|at|      ^u 我能吞下^*n|fp||at|^^|
+at|Bold:     ^*b^e أنا قادر على أكل     ^j 我能吞下玻璃而不伤身体。 ^*n^r Larger font  |fp|3|at|   ^*b^u 我能吞下^*n|fp||at|^^|
+at|Italic:   ^*i^e أنا قادر على أكل     ^j 我能吞下玻璃而不伤身体。 ^*n^r Larger font  |fp|3|at|   ^*i^u 我能吞下^*n|fp||at|^^|
+at|Both:  ^*i^*b^e أنا قادر على أكل     ^j 我能吞下玻璃而不伤身体。 ^*n^r Larger font  |fp|3|at|^*i^*b^u 我能吞下^*n|fp||at|^^|
+
+at|^^This page looks good on my system showing the   ^*b AT^*n,  ^*b NT^*n,   ^*bMN^*n   and   ^*b LB ^*n   commands all working.   
+|ht|u|cp|mg|at|@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-|cp||
+
+lb|*m Q  -  As you can see  "International text"   我能吞   DOES  work in an  LB!*m  (question) ^ 能吞 ~ abc 而不傷 ~ не вредит ~ 4th answer^2|
+%% ****** LB ******
+
+
+qx|B|
+st||
+nt|^z@3|
+md|3S248TJAH29DQC69JA,S57QH457KAD2KC234,S9H8TQD3469JAC7TQ,|
+sv|B|sk|s|
+rh||ah|ex 吞下玻  |
+ah| Я могу есть стекло   我能吞|
+pn| John Glass, 我能吞下玻璃, 유리를, стекло|
+mb|p|mb|p|mb|1S|an|Strong  -------- @c @d @h @s|
+mb|p|mb|1n|an|hello|mb|p|mb|2S|an|Strong  吞下玻  @c @d @h @s|
+sb|s我能吞下玻璃而不伤身体             but I don't like glass. @c @d @h @s |
+at|^b@2^^|
+Lg|k|
+at|^b@2Here is an example of International Characters  showing in the 
+^c ^*bAH^*n (Add Header),   ^*bPN^*n (Player Names),   ^*bAN^*n (Announce/Alert)   and the  ^*bSB^*n (Speech Bubble) commands.
+|n#|9|at|When you click  { ^*b Enter the Deal ^*n }  you can then click { ^*b Save ^*n } (top right) and all the text of THIS deal
+^s     will be saved to a lin file.
+^^on my system ALL are showing correctly.|
+pg| ***** 3 ***** |
+
+
+qx|How|
+bt||
+nt||
+fp|1|at|^^
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp||at|^z@3^b@2|
+tu|Y|
+mn| How  to  Use|
+ht|f|
+Lg|h|S
+at|Only UTF-8 encoding is supported by ^*baaBridge^*n.  This is increasingly becoming the go to choice for supporting International characters for web pages and for small files distributed on the net.
+
+All good modern 'text only' editors support UTF-8. For example my choice for Windows is the Free  Notepad++  from ^*h https://notepad-plus-plus.org/ ^*n.   So just write your .lin file using any of the supported character sets (see earlier).
+
+It works so easily because BOTH Java and modern OS'es  (Windows, MAC and Linux)  have built in support but you will need to use UTF-8 encoding.  You DO NOT need to have the UTF-8 BOM (Byte Order Mark) at the front of the file.  If present aaBridge will ignore it.  In Java the built-in support comes from an internal 'multi-script' font called 'Dialog'.    
+^c^*baaBridge will |cp|red|at|^*b automatically ^*b|cp||at| use the Java Dialog font for ANY and ALL international characters.^*n  
+
+To change size of your International text you can use a normal .lin Font description with the size you want.  
+|
+fh|c30|ff|cCourier|fb|c4|fm|c|
+fh|z50|ff|zTimes|fm|z| 
+ 
+at|^c@2|n#|5|
+fp|c|at|fh!z50!ff!zTimes!fm!z!
+  +++
+fp!z!at!size50 璃而 стекло पहुंचती !^l  =>  ^n|fp|z|at|size50  璃而 стекло पहुंचती|fp||at|
+
+^b@2The actual font family  |fp|c|at|'Times'|fp||at|  is used for the English text  |fp|c|at|'size50'|fp||at|  but is ignored for the International text.|
+
+
+ht|y|at|@0^^^^^*b  End^*n|
+pg| ***** 4 ***** |
+
+

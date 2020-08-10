@@ -1,0 +1,3668 @@
+
+%%
+%%  Date last Edited    2019-03-30
+%%
+
+ss|masthead,Learn to Play Bridge 1                          Chapter 2      |
+
+ss|chapter,Taking Tricks                                                           |
+
+
+<<--INSERT-START-->>=01___LTPB1__header_colors.ins
+%%
+cr|m070|cg|m095|cb|m169|   fill   m  m-mastColor       light blue grey
+cr|c248|cg|c231|cb|c189|   fill   c  c-chapterColor    beige cream
+%%
+<<--INSERT-END**-->>=01___LTPB1__header_colors.ins
+
+<<--INSERT-START-->>=02___LTPB___common.ins
+%%
+fh|180|ff|1Arial|fb|10|fm|1|      Font 1   Kia
+fh|235|ff|2Arial|fb|28|fm|2|      Font 2   Kia
+fh|350|ff|3Arial|fb|30|fm|3|      Font 3   Kia
+fh|430|ff|4Arial|fb|48|fm|4|      Font 4   Kia
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|60|fm|6|      Font 6
+fh|770|ff|7Arial|fb|70|fm|7|      Font 7
+fh|880|ff|8Arial|fb|80|fm|8|      Font 8
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1255|cg|1230|cb|1189|   Beige Cream
+cr|2200|cg|2245|cb|2210|   green ish
+cr|3249|cg|3249|cb|3255|   grey medium
+cr|4190|cg|4210|cb|4255|   blue grey
+cr|5198|cg|5205|cb|5229|   light grey
+cr|6122|cg|6000|cb|6049|   dark maroon
+cr|9255|cg|9255|cb|9255|   'white'
+
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m60|                    Font   m  m-mastHead        size in banner 1
+fh|c60|                    Font   c  c-chapTitle       size in banner 2
+
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint           feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight       text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+%%
+pd|first,^a You can `cp`red`at`^*b now ^*n`cp``at` ^*bClick { ^*b 1st ^*n } below @0@1 to enter the deal and ^*b PLAY ^*n the cards.   Later click  { ^*b Back to Movie ^*n }  to return.|
+%%
+ha|y|    %% hide auction
+bv|f,v|  %% button visibility
+%%
+<<--INSERT-END**-->>=02___LTPB___common.ins
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+
+qx|2|
+at|^b@2^z@3^^|
+Lg|f|
+
+at|^c^*Gintro,|cp|6|at|   Introduction to the trick^*N
+^C^*Gsolid,|cp|6|at|   Solid suits^*N
+^C^*Gsmall,   Winning tricks with small cards in long suits^*N
+^C^*Gpromotion,   Promotion^*N
+^C^*Ge1,   Review and      Example 1^*N
+^C^*Ge2,   Example 2  -  Promotion in action^*N
+^C^*Ge3,   Example 3  -  Winning tricks with small cards in long suits^*N
+^C^*Ge4,   Example 4  -  The high card from the short hand^*N
+|n^|5|at|
+^C^*Gexercises,   Exercises^*N
+^C^*Gd1,   Deal 1^*N
+^C^*Gd2,   Deal 2^*N
+^C^*Gd3,   Deal 3^*N
+^C^*Gd4,   Deal 4^*N
+^C^*Gd5,   Deal 5^*N
+|
+cp||at|^^^b To start, click a blue link  OR  ^*bclick^*n  { ^*b Flow  > ^*n } below   then (if you have one) use your |cp|red|at|^*b mouse wheel^*n|cp||at|.|
+pg| ***** 0 ***** |
+
+
+nt|^z@3^b@2|
+%%%%%%%%
+qx|intro,hide Introduction to the trick|
+nt|^z@3^b@2|cs|1|fp|3|at|
+
+^-{ Introduction to the ^*bTrick^*n }
+^-|fp||at|
+Bridge is a game of taking ^*b tricks^*n . You may have played other card games (Hearts, Whist, Spades, and Euchre for example) where tricks play a central role. If you have played these games, then you already have some experience with taking tricks and learning bridge will be a snap for you.
+
+Even if you are not an experienced card player, the concept of the trick in bridge is an easy one to master. Let's open a bridge deal and look at a trick.|
+pg| ***** 1 ***** |
+
+
+cm|Y|ha|y|sv||
+nt|^z@3^b@2|
+md|ssJ8hakq96dt2ckj53,saq10952hjdj9754cqt,sk6ht842daq83c972|st||at|
+Are you ready ?     When you click   { ^*b Flow > ^*n }  below   you will see a trick being played. ^^ ^^|
+pg| ***** 2 ***** |
+
+
+mb|1hppp|wt|s|
+pc|ha|pc|hj|pc|h2|pc|h3|sb|nNice work partner! You won your first trick!|
+at|There you have it  -  your first bridge trick.|
+pg| ***** 3 ***** |
+
+
+nt|^z@3^b@2|
+cs|1|at|
+So what exactly is a trick ?
+
+^-{  A trick consists of each of the 4 players playing a single card.  }^^|
+pg| ***** 4 ***** |
+
+
+nt|^z@3^b@2
+When you are really playing bridge the act of playing a card to a trick involves placing that card face up in the middle of the table.|
+pg| ***** 5 ***** |
+
+
+nt|^z@3^b@2|at|
+Since each player is dealt 13 cards in bridge and each player plays 1 card to each trick, there are 13 tricks in the
+play of the cards of every bridge deal. Bridge literature refers to these tricks as trick 1, trick 2, ..., trick 13.|
+pg| ***** 6 ***** |
+
+
+nt|^z@3^b@2
+As you can see above, South was the winner of this trick. South won this trick because South played the highest of the 4 cards in the trick (the @HA). Remember Aces are the highest cards in bridge.|
+pg| ***** 7 ***** |
+
+
+nt|^z@3^b@2
+Unlike some other trick-taking card games, winning lots of tricks in bridge is considered a good thing to do. For now we will assume that the goal of every bridge deal is to win as many tricks as possible. |
+pg| ***** 8 ***** |
+
+
+nt|^z@3^b@2
+You will soon see that this approach is not always strictly correct at bridge. For the purposes of learning, however, assume for now that the object of bridge is to win as many tricks as you can.|
+pg| ***** 9 ***** |
+
+
+nt|^z@3^b@2
+Always remember that bridge is a partnership game. The tricks that you and your partner win are added together. As such, you should not be battling your partner to win tricks - work together with your partner to try to win as many combined tricks as you can.|
+pg| ***** 10 ***** |
+
+
+nt|^z@3^b@2
+Now let's back up and have a closer look at the trick we just saw.|
+pg| ***** 11 ***** |
+
+
+sb|n|
+nt|^z@3^b@2|up||up||up||up||
+nt|^z@3^b@2
+OK - all the cards have been restored to their proper hands.  Move forward as normal and we will examine the same
+trick card by card.|
+pg| ***** 12 ***** |
+
+
+nt|^z@3^b@2|tc|s|pc|ha|
+nt|^z@3^b@2
+The trick begins with South leading the @HA. We will get to the rules about which player is allowed to lead to a given
+trick in a moment. |
+PG| ***** 13 ***** |
+
+
+nt|^z@3^b@2
+Once a trick has been started the other 3 players get a chance to contribute a card to the trick. The rotation always follows clockwise around the table.|
+pg| ***** 14 ***** |
+
+
+nt|^z@3^b@2
+Therefore West, the next player after South in this clockwise rotation, gets to play next to this trick.|
+pg| ***** 15 ***** |
+
+
+nt|^z@3^b@2|pc|hj|
+nt|^z@3^b@2
+West's contribution to the trick is the @HJ. Do you see anything strange about that?|
+PG| ***** 16 ***** |
+
+
+nt|^z@3^b@2
+After all, the @HJ is the 4th highest heart, but it cannot possibly win this trick as the @HA has already been played. Wouldn't West be better off to play a low card (like the @S2 for example) to this trick rather than ^*Iwaste^*N the @HJ?|
+pg| ***** 17 ***** |
+
+
+nt|^z@3^b@2|cs|1|at|
+Well, West would prefer to have been able to play a lower card on this trick, but one of the very most important rules of bridge is:
+^-{You must always ^*Ifollow suit^*N to a trick if you are able to.}|
+pg| ***** 18 ***** |
+
+
+sb|wI hate to waste a Jack, but I must follow suit!|sb|e
+Bummer partner!|
+nt|^z@3^b@2
+Following suit means that if you have any cards in the suit that was led to a trick, you must play one of those cards to that trick. |
+PG| ***** 19 ***** |
+
+
+nt|^z@3^b@2
+Since hearts were originally led to this trick (by South) and West was dealt a heart (the @HJ), the rules of bridge force him to play it on this trick.|
+pg| ***** 20 ***** |
+
+
+nt|^z@3^b@2|sb|w|sb|e|sb|nHmmm... I've got a choice of hearts to play to this trick.|
+nt|^z@3^b@2
+North, who is the next player clockwise after West, now gets his chance to play a card to this trick. North must also follow suit (that is, he must play a heart). |
+PG| ***** 21 ***** |
+
+
+nt|^z@3^b@2
+Unlike poor West who was dealt just one heart, North has 4 hearts he can choose from for this trick.|
+pg| ***** 22 ***** |
+
+
+sb|n|pc|h2|
+nt|^b@2
+North, who knows he cannot possibly beat the @HA, reasonably chooses to play his lowest heart, the @H2, on this trick.|
+PG| ***** 23 ***** |
+
+
+nt|^z@3^b@2
+North shouldn't be disappointed that he can't win this trick. In fact he should be pleased - he can see that his partner's @HA is certain to win the trick.|
+pg| ***** 24 ***** |
+
+
+sb|eMy turn to play, at last!|
+pg| ***** 25 ***** |
+
+
+nt|^z@3^b@2
+East is the only player who hasn't played a card to this trick yet. Conveniently, he is also the next player after North in the clockwise rotation. East too must follow suit and he has 3 hearts to choose from.|
+pg| ***** 26 ***** |
+
+
+sb|e|
+nt|^z@3^b@2|pc|h3|
+nt|^z@3^b@2
+East (who also knows he cannot win this trick) wisely contributes his lowest heart, the @H3.|
+PG| ***** 27 ***** |
+
+
+nt|^z@3^b@2
+The trick is now complete as each of the 4 players has played a card. South wins the trick because his card, the @HA, ranks higher than any of the other 3 cards in the trick (the @HJ, @H2, and @H3).|
+pg| ***** 28 ***** |
+
+
+nt|^z@3^b@2
+Watch what happens after a trick is completed in bridge.|
+pg| ***** 29 ***** |
+
+
+nt|^z@3^b@2|tc|r|
+nt|^z@3^b@2
+The 4 cards from the completed trick are collected together and the resulting pile of cards is placed on the side of the bridge table. |
+PG| ***** 30 ***** |
+
+
+nt|^z@3^b@2
+In a little while you will learn the proper way to organize your piles of played tricks so that it is easy to see how many
+tricks each partnership has won.|
+pg| ***** 31 ***** |
+
+
+nt|^z@3^b@2
+In this program you can move your mouse over the pile of played tricks to review the cards from previous tricks (try it). |
+PG| ***** 32 ***** |
+
+
+nt|^z@3^b@2
+Do not get too dependent on this feature, however, as you are not allowed to review past tricks when you are really playing bridge!|
+pg| ***** 33 ***** |
+
+
+nt|^z@3^b@2|cs|1|at|
+Now that trick 1 is complete, it is time to go on to trick 2 (remember, each bridge deal has 13 tricks in all). |
+PG| ***** 34 ***** |
+
+
+nt|^z@3^b@2
+Who gets to play first to trick 2?|CS|1|AT|
+
+^-{The player who wins a trick earns the right to lead the first card to the next trick.}^^|
+pg| ***** 35 ***** |
+
+
+nt|^z@3^b@2
+Since South won trick 1, he will be the leader to trick 2. The play of the cards will continue in this manner until all 13 tricks (and all 52 cards) are played out. |
+PG| ***** 36 ***** |
+
+
+nt|^z@3^b@2
+You may be wondering, "How is it decided which player gets to make the opening lead (that is, the first card in trick 1)?"|
+pg| ***** 37 ***** |
+
+
+nt|^z@3^b@2
+Recall that every bridge deal contains 2 main phases, the bidding and the play of the cards. Our current study of
+tricks is part of the play of the cards. |
+PG| ***** 38 ***** |
+
+
+nt|^z@3^b@2
+The opening leader (the player that leads to trick 1), however, is determined in the bidding. Bidding is presented much later in this program. Until that time you will just be told which player is the opening leader.|
+pg| ***** 39 ***** |
+
+
+nt|^z@3^b@2
+Let's continue with the play of this deal. Something interesting happens in trick 2. South, having won the first trick, is the leader to the second trick. The @HA worked well at trick 1. Suppose South decides to try the @HK as his lead to trick 2.|
+pg| ***** 40 ***** |
+
+
+pc|hk|sb|wI have no hearts left so I cannot follow suit!|
+nt|^z@3^b@2
+It is West's turn to play a card. We have already learned that a player must follow suit to a trick if he can. West was dealt only one heart, however, and he played that card (the @HJ) to trick 1. West is now out of hearts. What can he play?|
+pg| ***** 41 ***** |
+
+
+nt|^z@3^b@2|cs|1|at|
+The answer is that West can play any card he chooses.
+
+^-{If a player is unable to follow suit to a trick he can play ^*Iany^*N of his remaining cards.}|
+pg| ***** 42 ***** |
+
+
+sb|wSo I must make a discard...|
+nt|^z@3^b@2
+Bridge players use the word discard to describe the play of a card that is made when a player is unable to follow suit.|
+PG| ***** 43 ***** |
+
+
+nt|^z@3^b@2
+West, who has no hearts left, must make a discard. Any thoughts as to what a reasonable discard might be?|
+pg| ***** 44 ***** |
+
+
+sb|wI have so many cards to choose from. Help!|
+nt|^z@3^b@2
+West has a big choice to make as he is allowed to play any of his 12 remaining cards.|sb|wHow about this for a discard? This should win trick 2...|pc|sa|
+pg| ***** 45 ***** |
+
+
+nt|^z@3^b@2
+Did you think that perhaps West should discard the @SA in an attempt to win trick 2? After all, we have already learned that the Ace is the highest card in bridge.|
+pg| ***** 46 ***** |
+
+
+sb|wOh... Perhaps I have erred.|
+nt|^z@3^b@2|cs|1|at|
+In fact, you have been misled (sorry) as there is something important you have not learned about tricks yet:
+
+^-{A discard cannot win a trick. 
+The card that wins a trick is the highest card in the suit that was led.}|
+pg| ***** 47 ***** |
+
+
+sb|w|
+nt|^z@3^b@2
+In a little while you will learn that there are times in bridge when a discard can in fact win a trick - when a trump suit is involved. |
+PG| ***** 48 ***** |
+
+
+nt|^z@3^b@2
+We won't be talking about trump suits for a while, however, so for now the rule you just learned is a solid one: 
+^^^ddiscards can't win tricks.|
+pg| ***** 49 ***** |
+
+
+nt|^z@3^b@2
+In fact, it would be a very poor play for West to discard the @SA. West has no chance to win this trick and the @SA is West's best card. It should be saved for winning a future trick.|
+pg| ***** 50 ***** |
+
+
+sb|wCan I take it back please?|
+nt|^z@3^b@2
+Let's be good sports and let West take back his mistake. Don't get too used to this - you won't be able to take back your mistakes in a real bridge game!|
+pg| ***** 51 ***** |
+
+
+nt|^z@3^b@2|sb|wThanks! But I still don't know what to play!|up||at|
+So now that you know that West cannot possibly win this trick, do you have any thoughts on what would make a reasonable discard?|
+pg| ***** 52 ***** |
+
+
+nt|^z@3^b@2
+Well, West has plenty of low cards in both spades and diamonds. Getting rid of one of those low cards seems like a sound idea, doesn't it?|
+pg| ***** 53 ***** |
+
+
+nt|^z@3^b@2|sb|wThis time I will discard my lowest card.|pc|s2|at|
+Suppose that West chooses to discard his @S2. It is now North's turn to play. North still has some hearts left so he must follow suit.|
+pg| ***** 54 ***** |
+
+
+nt|^z@3^b@2|sb|w|sb|nLooks like you are going to win another trick, partner!|pc|h4|
+at|^^North logically chooses to play his lowest heart, the @H4.|
+PG| ***** 55 ***** |
+
+
+nt|^z@3^b@2
+East now gets to play a card to complete the second trick. East, with 2 hearts left, must also follow suit.|
+pg| ***** 56 ***** |
+
+
+sb|n|
+nt|^z@3^b@2|tc|h|pc|h5|sb|eYou are a natural at bridge, South!|
+nt|^z@3^b@2
+East also chooses to follow suit with his lowest heart, the @H5. South just won his second trick in a row!|
+PG| ***** 57 ***** |
+
+
+nt|^z@3^b@2
+Just like with trick 1, the contents of trick 2 will be collected in a pile that will be stored at the edge of the bridge table.|
+pg| ***** 58 ***** |
+
+
+sb|e|tc|r|
+nt|^z@3^b@2
+The play of the cards will continue in this manner until all 13 tricks are played out. The deal will then be finished. The score will be entered (you will learn how to keep score later), the cards shuffled and dealt, and a brand new deal will be played.|
+PG| ***** 59 ***** |
+
+
+nt|^z@3^b@2
+You can keep playing bridge deals forever and each one is unique!|
+pg| ***** 60 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%
+bt||
+nt|^z@3^b@2|cs|4|at|
+
+
+Before we continue with our study of tricks, let's review what we have learned about tricks so far:|
+pg| ***** 61 ***** |
+
+
+at|
+
+^-{A trick consists of each of the 4 bridge players playing a card.}|
+pg| ***** 62 ***** |
+
+
+cs|2|at|
+
+{There are 13 tricks in every bridge deal.}|
+pg| ***** 63 ***** |
+
+
+cs|3|at|
+
+{The 2 players of each partnership work together to try to take as many tricks as possible.}|
+pg| ***** 64 ***** |
+
+
+cs|1|at|
+
+{You must follow suit (play a card from the suit that was led) if you can.}|
+pg| ***** 65 ***** |
+
+
+cs|4|at|
+
+{If you cannot follow suit you can discard any card, but you cannot win the trick.}|
+pg| ***** 66 ***** |
+
+
+cs|2|at|
+
+{The card that wins a trick is the highest card played in the suit that was led.}|
+pg| ***** 67 ***** |
+
+
+cs|3|at|
+
+{The player who wins a trick leads to the next trick.}|
+pg| ***** 68 ***** |
+
+
+cs|1|at|
+
+{The bidding determines which player leads to trick 1 (the opening lead).}|
+pg| ***** 69 ***** |
+
+
+cs|4|at|
+
+{If you cannot possibly win the trick, it is a good idea to play (or discard)
+a low card. Save your high cards for tricks that you might be able to win!}|
+pg| ***** 70 ***** |
+
+
+%%%%%%%%%
+qx|solid,Solid suits|cm||
+nt|^z@3^b@2|st||
+md|sakq,sJT9,s432,s876|
+cs||ht|E|CS|1|fp|t|at|^-{          Solid suits          }
+^-
+|
+PG| ***** 71 ***** |
+
+
+nt|^z@3^b@2
+One of the best ways to learn about tricks is to study combinations of cards to see how the play will go. Have a look at the spades in the above diagram, for example. |
+PG| ***** 72 ***** |
+
+
+nt|^z@3^b@2
+Each player has 3 cards so there will be 3 tricks in total. South is on lead. How many tricks will each partnership win?|
+pg| ***** 73 ***** |
+
+
+nt|^z@3^b@2
+South was fortunate to have been dealt the 3 highest spades. So he will win all 3 tricks. 
+
+Watch...|
+pg| ***** 74 ***** |
+
+
+nt|^z@3^b@2|pc|sa|pc|s9|pc|s2|pc|s6|at|
+The @SA is the biggest spade there is. South therefore wins the first trick.|
+pg| ***** 75 ***** |
+
+
+nt|^z@3^b@2|pc|sk|pc|st|pc|s3|pc|s7|at|
+Once the @SA is gone (having been played to trick 1), the @SK is the highest remaining spade in the deck. South therefore wins trick 2 as well.|
+pg| ***** 76 ***** |
+
+
+nt|^z@3^b@2|pc|sq|pc|sj|pc|s4|pc|s8|sb|wRats, I was hoping to win a trick with that Jack!|
+at|
+With the @SA and @SK already played, the @SQ becomes the master card in that suit. West has saved his @SJ as long as possible in the hope of winning a trick with it. |
+PG| ***** 77 ***** |
+
+
+nt|^z@3^b@2
+It was a good try by West, but South's spades were just too strong. East and West could do nothing but sit there and follow suit.|
+pg| ***** 78 ***** |
+
+
+nt|^z@3^b@2|bt||cs|3|at|
+
+
+
+What we just saw is that this card combination:
+^-{|ih|ps432|at|}
+{|ih|psakq|at|}
+^-
+is worth 3 tricks for the North-South partnership (not that North contributed much).
+
+In the above notation, the upper card holding (the @S432) belongs to North while the lower holding (the @SAKQ) belongs to South. Try to get used to this notation as you will see it a great deal in your study of tricks.
+
+Also make sure that you understand that the suit being spades in this example is purely arbitrary.|
+pg| ***** 79 ***** |
+
+
+nt|^z@3^b@2|cs|3|at|
+
+
+
+^C{|ih|ps432|at|} ^I{|ih|ph432|at|} ^O{|ih|pc432|at|} ^U{|ih|pd432|at|}
+^^|n^|d|at|^C{|ih|pSakq|at|} ^I{|ih|phakq|at|} ^O{|ih|pcakq|at|} ^U{|ih|pdakq|at|}
+
+Each of the above 4 combinations is exactly the same as far as trick-winning purposes go. They will each produce 3 tricks for North-South. We will continue to use the spade suit in our examples, but do not be misled by this. For trick-winning purposes each of the 4 suits in bridge are the same.
+
+You will eventually learn that there is sometimes a particular suit, the trump suit, that is considerably more powerful than the other suits. As we look at various card combinations, however, the actual suit being used is never important.|
+pg| ***** 80 ***** |
+
+
+nt|^z@3^b@2|cs|3|n#|5|at|
+
+Suppose we take the card combination we have been examining:|
+ht|b|at|
+
+
+^F{|ih|ps432|at|} 
+^F{|ih|psAKQ|at|}|
+pg| ***** 81 ***** |
+
+
+ht|f|at|^J And turn it upside down:|ht|b|at|
+
+
+^R{|ih|pSakq|at|} 
+^R{|ih|ps432|at|}
+Now North has the 3 top spades and he will win 3 tricks in the suit. For partnership purposes, however, nothing changes. The North-South partnership will win 3 tricks with either of the above combinations.
+
+In the first combination South will win all 3 tricks and in the second combination North will win all 3 tricks. Since North and South are pooling their tricks together, it amounts to the same thing - 3 tricks for North-South.|
+cs|1|at|
+^-
+{For partnership trick-winning purposes, card combinations
+do not change when you turn them upside down.}
+^-|
+pg| ***** 82 ***** |
+
+
+nt|^z@3^b@2|cs|3|n#|5|at|
+
+Going back to the original combination:
+
+|ht|b|at|
+
+
+^F{|ih|ps432|at|} 
+^F{|ih|psAKQ|at|}|
+pg| ***** 83 ***** |
+
+
+ht|f|at|^J   Let's add some cards:|ht|b|at|
+
+
+^R{|ih|pS5432|at|} 
+^R{|ih|psakqj|at|}|
+pg| ***** 84 ***** |
+
+
+at|
+Since each hand has 4 cards there will now be 4 tricks. How many of the 4 tricks will North-South win?|
+pg| ***** 85 ***** |
+
+
+at|
+
+Hopefully, you came up with the correct answer: the combination on the right will produce 4 tricks for the North-South partnership.
+
+The presence of the @SJ is a welcome addition to South's spade holding. The @SJ is the 4th highest spade after the
+@SA, @SK, and @SQ. South will use those 3 cards to win the first 3 tricks. 
+
+The @SJ will be left as the highest remaining spade and will thus win trick 4. Regardless of the cards that East and West were dealt they will be powerless to prevent South from winning all 4 tricks from this combination.|
+pg| ***** 86 ***** |
+
+
+nt|^z@3^b@2|cs|3|n#|5|at|
+
+Returning once more to the combination we started with:|
+ht|b|at|
+
+
+^F{|ih|ps432|at|} 
+^F{|ih|psAKQ|at|}|
+pg| ***** 87 ***** |
+
+
+at|^JLet's change North's cards:|ht|a|at|
+
+
+
+^R  {|ih|pst|at|} 
+^R{|ih|psakq|at|}
+
+Now North has just 1 spade so he will only be able to follow suit once. It is a high spade, the @S10, but it should not cause North any pain to use this card - his partner is in the process of winning 3 tricks.
+
+North will be forced to discard on the second and third tricks. Presumably North will have some low cards in other suits that he can discard as South is playing his spades.|
+pg| ***** 88 ***** |
+
+
+nt|^z@3^b@2|cs|4|at|
+
+
+The lesson to be learned from the last few examples can be summed up as follows:
+
+^-{Whenever one player is dealt only the highest cards in a suit he
+will always win 1 trick for every card he was dealt in that suit.}
+
+|cs|1|at|{Furthermore, it will not matter which cards the other 3 players
+were dealt or the order in which they choose to play these cards.}|
+pg| ***** 89 ***** |
+
+
+at|
+^-
+Holdings like these (we have been studying the third one):
+^^^^
+^C {|cs|3|ih|psa|at|} |n#|s|at| ^f  {|cs|3|ih|psak|at|}    {|cs|2|ih|psakq|at|}    {|cs|3|ih|psakqj|at|}    {|ih|psakqjt|at|}
+
+^^^^|n^|z|n^|s|at|are known as solid suits. A player lucky enough to be dealt a solid suit will win 1 trick for every card in that suit regardless of what the other players were dealt in that suit or how they play.
+
+The above solid suits are worth 1, 2, 3, 4, and 5 tricks respectively.
+
+Solid suits are a joy to hold as you cannot help but win tricks in such suits. Before we go on to look at some suits that are less solid, there is one more important lesson to be learned from the combination that we started with.|
+pg| ***** 90 ***** |
+
+
+nt|^z@3^b@2|st||
+md|sakq,sjt9,s432,s876|
+nt|^z@3^b@2
+Suppose that instead of leading the @SA to trick 1, South leads the @SQ.|
+pg| ***** 91 ***** |
+
+
+nt|^z@3^b@2|pc|sq|
+nt|^z@3^b@2
+
+Do you think this will make any difference to how many tricks are taken by each partnership?|
+pg| ***** 92 ***** |
+
+
+nt|^z@3^b@2|pc|s9|pc|s2|pc|s6|at|
+The other 3 players follow suit as before, and none of them are able to top the @SQ.
+
+South wins the first trick just as easily with the @SQ as he would have had he led the @SA instead.|
+pg| ***** 93 ***** |
+
+
+nt|^z@3^b@2
+Not surprisingly, it doesn't matter which spade South chooses to lead to trick 2 either. The @SA would obviously win the trick (being the highest spade). Suppose South leads his second highest spade, the @SK, instead.|
+pg| ***** 94 ***** |
+
+
+nt|^z@3^b@2|pc|sk|at|
+Since only the @SA can beat the @SK (and since South holds the @SA), the @SK will get the job done and win trick 2.|
+pg| ***** 95 ***** |
+
+
+nt|^z@3^b@2|pc|st|pc|s3|pc|s7|at|
+As predicted the @SK wins the trick as the other 3 players follow suit.|
+PG| ***** 96 ***** |
+
+
+nt|^z@3^b@2
+South has saved his best spade for last. The @SA will obviously win trick 3 and South will have won the same 3 tricks as when he played his spades from the top (@SA then @SK then @SQ). The order in which South plays his spades does not matter.|
+pg| ***** 97 ***** |
+
+
+nt|^z@3^b@2|bt||cs|3|at|
+
+
+The fact that with:
+
+^-{|ih|psakq|at|}
+^-South can play his spades in any order to the same effect is very important to understand. In this combination the @SA, @SK, and @SQ are all considered to be equals as far as trick-winning goes.
+
+The @SA and the @SK are said to be touching cards as there are no other cards that rank between the Ace and the King. The same goes for the @SK and the @SQ - they are touching cards.|
+cs|1|at|
+
+The principle of equal cards can be summed up as:
+
+^-{Whenever a player is dealt 2 or more touching cards in the same suit it does
+not matter for trick-taking purposes the order in which he plays these cards.}
+
+^-Make sure you understand this principle as it applies to virtually all of the card combinations that we will be studying.|
+pg| ***** 98 ***** |
+
+
+nt|^z@3^b@2|st||
+md|sAK2,sJT9,sQ43,s876|
+nt|^z@3^b@2
+The above card combination is the first we have seen in which there is no solid suit.|
+pg| ***** 99 ***** |
+
+
+at|
+
+South has been dealt the 2 top spades, the @SA and @SK.|
+pg| ***** 100 ***** |
+
+
+at|
+
+The @SQ is now in the North hand, however, and South was dealt the lowly @S2 instead.|
+pg| ***** 101 ***** |
+
+
+sb|nThis time I will be able to win a trick.|sb|sThanks for your help, partner|
+nt|^z@3^b@2
+The 3 top spades are now shared between North and South. South cannot take 3 spade tricks on his own anymore. The North-South partnership can still take 3 spade tricks, however, and that is just as good.|
+PG| ***** 102 ***** |
+
+
+nt|^z@3^b@2
+Let's have a look at how the play might go.|
+pg| ***** 103 ***** |
+
+
+sb|s|sb|n|
+nt|^z@3^b@2|pc|sa|pc|s9|pc|s3|pc|s6|
+nt|^z@3^b@2
+South leads the @SA and wins trick 1 as the other players contribute their lowest spades.|
+pg| ***** 104 ***** |
+
+
+nt|^z@3^b@2|pc|sk|pc|st|pc|s4|pc|s7|
+nt|^z@3^b@2
+South leads the @SK next, winning trick 2.|
+pg| ***** 105 ***** |
+
+
+nt|^z@3^b@2
+South is still on lead, but his remaining spade, the @s2, is the lowest spade in the deck. There is no way it is going to win trick 3.|
+pg| ***** 106 ***** |
+
+
+nt|^z@3^b@2
+There is no need for South to panic, however. Now that the @SA and @SK are gone, the @SQ is the highest spade left. North has that card and North is South's partner!|
+pg| ***** 107 ***** |
+
+
+nt|^z@3^b@2|pc|s2|pc|sj|pc|sq|pc|s8|at|
+South leads the @S2 to trick 3 and North wins the trick with his @SQ.|
+pg| ***** 108 ***** |
+
+
+nt|^z@3^b@2|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|at|
+So North-South are entitled to 3 tricks from this card combination (with South winning 2 tricks and North winning 1 trick). As you might have suspected, these tricks can be taken in any order.|
+pg| ***** 109 ***** |
+
+
+nt|^z@3^b@2|pc|s2|pc|s9|pc|sq|pc|s6|at|
+This time North is allowed to win the first trick with his @SQ.|
+pg| ***** 110 ***** |
+
+
+nt|^z@3^b@2|pc|s3|pc|s7|pc|sk|pc|st|at|
+Having won the first trick, North is the leader to the second trick. He plays the @S3 and South wins the trick with his @SK.|
+pg| ***** 111 ***** |
+
+
+nt|^z@3^b@2|pc|sa|pc|sj|pc|s4|pc|s8|at|
+South's lead of the @SA wins the third trick. North-South have won the same 3 tricks as before, but in a different order.|
+pg| ***** 112 ***** |
+
+
+nt|^z@3^b@2|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|at|
+In fact, North-South can take the @SA, @SK, and @SQ is any order they want and always come to 3 tricks. When you are really playing bridge, the order in which you win tricks in a suit is often important. 
+
+For the sake of studying these card combinations, however, it's the number of tricks taken, not the order in which they are played, that is critical.|
+pg| ***** 113 ***** |
+
+
+nt|^z@3^b@2
+When we were talking about solid suits, there was not much that could go wrong - any card from a solid suit can be counted on to win the trick.|
+PG| ***** 114 ***** |
+
+
+nt|^z@3^b@2 
+South's spade holding is not solid because it contains a losing card, the @S2. North-South must ^*Icooperate^*N if they are to win the trick in which the @S2 is played.|
+pg| ***** 115 ***** |
+
+
+nt|^z@3^b@2
+There are a couple of pitfalls for North-South to avoid with this combination. Watch...|
+pg| ***** 116 ***** |
+
+
+nt|^z@3^b@2|pc|sa|pc|s9|pc|s3|pc|s6|at|
+South leads the @SA and wins the first trick.|
+pg| ***** 117 ***** |
+
+
+nt|^z@3^b@2|pc|s2|at|
+Suppose South leads his losing @S2 to the second trick.|
+pg| ***** 118 ***** |
+
+
+nt|^z@3^b@2|pc|st|at|
+West follows suit with the @S10 (or the @SJ, they are equal cards).
+
+We already know that North could win the trick by playing the @SQ here.|
+pg| ***** 119 ***** |
+
+
+nt|^z@3^b@2|sb|nLet's see how well a small card works...|pc|s4|at|
+Suppose, however, that North decides to play the @S4 instead.|
+pg| ***** 120 ***** |
+
+
+sb|n|
+nt|^z@3^b@2|tc|h|pc|s7|sb|wThanks North! Nice to win a trick at last!|sb|eWay to go, partner!|at|
+East follows with the @S7 and West's @S10 wins the second trick!|
+pg| ***** 121 ***** |
+
+
+cm|Y|sb|w|sb|e|
+nt|^z@3^b@2
+Since this is the first time we have seen East or West win a trick, let's take a look at what happens to the pile of played tricks in this case.|
+pg| ***** 122 ***** |
+
+
+nt|^z@3^b@2|tc|r|at|
+Notice how the trick that East-West won is sitting ^*Ilengthwise^*N on the edge of the table while the trick that North-South won is pointing the other way. That's how the pile of played tricks will always appear in this program. This should help make it easier for you to know how many tricks each partnership has won.|
+pg| ***** 123 ***** |
+
+
+nt|^z@3^b@2
+Remember, this program allows you to move your mouse over the pile of played tricks in order to review the cards that have already been played. Also remember that you will not be able to do this when you are really playing bridge!|
+pg| ***** 124 ***** |
+
+
+cm||
+nt|^z@3^b@2|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|
+nt|^z@3^b@2|at|
+We just saw that North-South are capable of losing a trick with this combination if they are not careful. Here is the key to North-South winning all 3 tricks:|
+PG| ***** 125 ***** |
+
+
+nt|^z@3^b@2|
+
+ht|E|cs|4|at|^-{Whenever South plays his losing @S2, North must play the @SQ on that trick.
+If he fails to do so, East-West will win a trick that they are not entitled to.}
+|
+pg| ***** 126 ***** |
+
+
+sb|nOops... Sorry about that partner.|sb|sNo problem. Everyone makes mistakes.|
+nt|^z@3^b@2
+North's play of the @S4 (instead of the @SQ) on the lead of the @S2 was a mistake. It is a nice gesture to apologize to your partner when you make a mistake at bridge. Also, you should always try to be supportive when your partner errs, even if he does not apologize. |
+PG| ***** 127 ***** |
+
+
+nt|^z@3^b@2
+You and your partner are on the same team. Criticizing your partner's errors will just make him feel worse and make it harder for him to concentrate on the next deal.|
+pg| ***** 128 ***** |
+
+
+sb|s|sb|n|
+nt|^z@3^b@2
+There is one more mistake that North can make that will prevent his partnership from scoring all 3 tricks with this combination. Suppose South starts by leading the @SA as before.|
+pg| ***** 129 ***** |
+
+
+nt|^z@3^b@2
+|pc|sa|pc|s9|sb|nTime for another experiment...|sb|sNot again!|at|West follows suit with the @S9 and it is North's turn to play a card.|
+PG| ***** 130 ***** |
+
+
+nt|^z@3^b@2
+Can you predict the outcome if North plays the @SQ (instead of the @S3 or @S4)? Earlier, we referred to the play of an unnecessarily high card that could not possibly win a trick as a ^*Iwaste^*N. Watch what happens if North wastes his @SQ.|
+pg| ***** 131 ***** |
+
+
+sb|s|sb|n|
+nt|^z@3^b@2|pc|sq|pc|s6|at|
+South wins the first trick with the @SA, gobbling up his partner's @SQ in the process.|
+pg| ***** 132 ***** |
+
+
+nt|^z@3^b@2|pc|sk|pc|st|pc|s3|pc|s7|at|
+There are no problems for North-South in trick 2 as South's lead of the @SK wins. Trick 3 is going to be trouble, however...|
+pg| ***** 133 ***** |
+
+
+nt|^z@3^b@2|pc|s2|pc|sj|at|
+South leads his losing @S2 and West follows suit with the @SJ.|
+PG| ***** 134 ***** |
+
+
+nt|^z@3^b@2
+North could have really used his @SQ right about now. The @SQ would have won the trick, but North made the mistake of playing the @SQ under his partner's @SA at trick 1. |
+PG| ***** 135 ***** |
+
+
+nt|^z@3^b@2
+As it is, North has just one spade left, the @s4, and it is not big enough to challenge West's @SJ!|
+pg| ***** 136 ***** |
+
+
+nt|^z@3^b@2|pc|s4|pc|s8|sb|nOK - no more experiments (for now hahaha).|at|
+After North plays the @S4, East follows with the @S8 and West wins trick 3. Once again North's error has resulted in his partnership losing a trick they could have won.|
+pg| ***** 137 ***** |
+
+
+nt|^z@3^b@2|cs|3|sb|n|bt||at|
+
+
+To review, with this card combination:
+
+
+^-{|ih|psQ43|at|}{|ih|psak2|at|}
+^-|cs|4|at|North-South can take 3 tricks provided that North's @SQ is used to take care of South's losing @S2. There are 2 possible mistakes that North can make that will mess things up:
+
+^-{North could play the @S3 or @S4 when South leads the @S2.}
+|cs|2|at|
+{North could waste his @SQ by playing it under South's lead of the @SA or @SK.}
+^-
+If these seem like silly mistakes to you it is a good sign - you are starting to understand the mechanics and objectives of trick-taking in bridge.|
+pg| ***** 138 ***** |
+
+
+nt|^z@3^b@2|cs|2|at|
+
+
+^B{|ih|psQ43|at|}|ht|e|at|
+^B{|ih|psak2|at|}|ht|d|at|^GThe card combination we have been studying is essentially the
+^Gsame as all 5 of the combinations below. In some cases, North will
+^Gwin 2 tricks while South will win 1 trick. In the other cases, South
+^Gwill win 2 tricks and North will win 1 trick.|
+cs|3|ht|l|
+ht|j|at|^B{|ih|psK43|at|} |n#|z|n#|3|at|^G{|ih|psA43|at|} ^L{|ih|psak4|at|} ^Q{|ih|psaq4|at|} ^V{|ih|pskq4|at|}|
+ht|l|at|^B{|ih|pSAQ2|at|} |n#|z|n#|3|at|^G{|ih|psKQ2|at|} ^L{|ih|psQ32|at|} ^Q{|ih|psk32|at|} ^V{|ih|psa32|at|}|
+
+ht|q|at|The bottom line is that as long as the @SA, @SK, and @SQ are held jointly by North-South, 3 sure tricks will be available for the partnership (provided that nobody makes a mistake).|
+pg| ***** 139 ***** |
+
+
+nt|^z@3^b@2|cs|3|n#|7|at|
+Be careful, however. Holding the Ace, King, and Queen of a suit does not always guarantee 3 tricks for the partnership. Consider this card combination:
+
+^-{|ih|psQJ|at|}^^{|ih|psAK|at|}
+^-North-South actually hold the 4 highest spades (the @SA, @SK, @SQ, and @SJ) between their 2 hands, yet only 2 tricks are available.
+
+The reason is easy to see. Both North and South were dealt just 2 cards in spades. North will have no choice but to waste his @SQ and @SJ under South's @SA and @SK. What a shame! North might as well hold the @S32 instead of
+the @SQJ.|
+cs|1|
+at|
+
+^-{In order for a partnership to take a given number of tricks in a suit, 
+one (or both) of the partners must hold at least that many cards in the suit.}|
+pg| ***** 140 ***** |
+
+
+%%%%%%%
+qx|small,Winning tricks with small cards in long suits|
+nt|^z@3^b@2|cs|3|fp|3|at|
+
+
+^-{Winning tricks with small cards in long suits}
+^-
+|fp||cs|3|at|So far we have not seen a card lower than the Jack win a trick. On most bridge deals, however, some tricks are won with small cards. Here's an example of how this can happen:
+
+^-{   |ih|ps543|at|}
+{|ih|psAKQ2|at|}  
+^-South's spade holding is not quite solid - although he was dealt the @SA, @SK, and @SQ, his @S2 is a loser. North certainly doesn't appear to have anything resembling a trick. Isn't this just another example of 3 sure tricks, no more and no less, for North-South?
+
+|
+pg| ***** 141 ***** |
+
+
+cs|2|at|^-{The answer is: not necessarily. Perhaps neither East nor West was dealt more than
+3 spades. If that is the case then neither of them will have a say in the fourth spade trick.}
+|
+pg| ***** 142 ***** |
+
+
+nt|^z@3^b@2|st||
+md|sakq2,sjt9,s543,s876|at|
+Notice that both East and West were dealt 3 spades. That is good news for South. Watch how the play will go and pay special attention to the East-West cards.|
+pg| ***** 143 ***** |
+
+
+nt|^z@3^b@2|pc|sa|pc|s9|pc|s3|pc|s6|at|
+South leads the @SA and wins trick 1. As we have seen, the @SK or @SQ would have been equally effective.|
+pg| ***** 144 ***** |
+
+
+nt|^z@3^b@2|pc|sk|pc|st|pc|s4|pc|s7|at|
+The @SK wins trick 2.
+^^Have you noticed that all this following suit is starting to run East and West out of spades? Each of them has just 1 spade remaining.|
+pg| ***** 145 ***** |
+
+
+nt|^z@3^b@2|pc|sq|pc|sj|pc|s5|pc|s8|at|
+The @SQ forces both East and West to follow suit with their remaining spades. All of a sudden the pathetic @S2 is the only spade left in the deck! 
+
+The @s2 is certain to win an unexpected fourth trick for South regardless of what East and West discard on that trick.|
+pg| ***** 146 ***** |
+
+
+nt|^z@3^b@2|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|at|
+As this example shows, low cards can (and frequently do) take tricks in bridge. In order for them to do so, however, all of the higher cards must be gone first. Here the @S2 becomes the highest spade after 3 rounds of the suit are played.|
+pg| ***** 147 ***** |
+
+
+nt|^z@3^b@2
+In this example, South is able to exhaust all of the East-West spades higher than his @S2 because he has the 3 top spades (the @SA, @SK, and @SQ) and because neither defender has more than 3 spades. That will not always be the case when North and South are dealt this combination of cards.|
+pg| ***** 148 ***** |
+
+
+nt|^z@3^b@2
+All 13 spades in the deck are accounted for above so there is no way to give out any more spades to East or West. We can rearrange their spades slightly, however, and things are quite different for North-South's trick-taking prospects. Suppose we give West one of his partner's spades...|
+pg| ***** 149 ***** |
+
+
+md|0,s8,h2,h43|
+nt|^z@3^b@2
+West now has the @S8 (in addition to his @SJ109). Some small hearts have been added to the North and East hands so that all players have 4 cards. Can you see how many tricks North-South will take now?|
+pg| ***** 150 ***** |
+
+
+nt|^z@3^b@2|pc|sa|pc|s8|pc|s3|pc|s6|at|
+Everyone follows suit as the @SA wins the first trick.|
+pg| ***** 151 ***** |
+
+
+nt|^z@3^b@2|pc|sk|pc|s9|pc|s4|pc|s7|at|
+All follow to the @SK as well, but East is now out of spades.|
+pg| ***** 152 ***** |
+
+
+nt|^z@3^b@2|pc|sq|pc|st|pc|s5|pc|h3|at|
+West and North follow suit to the @SQ, but East discards the @H3.|
+pg| ***** 153 ***** |
+
+
+nt|^z@3^b@2
+South still has the @S2 that won a glorious fourth trick a moment ago. This time however, there will be no glory for the @S2.|
+pg| ***** 154 ***** |
+
+
+nt|^z@3^b@2
+The difference is that West started with 4 spades this time. He still has the @SJ left and South's days of taking spade
+tricks are over.|
+pg| ***** 155 ***** |
+
+
+nt|^z@3^b@2|pc|s2|pc|sj|pc|h2|pc|h4|at|
+South leads the @S2, but West's @SJ wins trick 4. North-South are limited to 3 spade tricks as a consequence of West being dealt 4 spades.|
+pg| ***** 156 ***** |
+
+
+md|sakq2,,s543,|
+nt|^z@3^b@2
+To summarize, this card combination (as well as many other equivalent layouts) is worth either 3 or 4 tricks for North-South.|
+pg| ***** 157 ***** |
+
+
+md|0,sjt9,,s876|
+nt|^z@3^b@2
+When both East and West are dealt 3 spades, all of their spades will be exhausted by the @SA, @SK, and @SQ. The @S2 will take a magical fourth trick for North-South.|
+pg| ***** 158 ***** |
+
+
+md|0,s8,,|
+nt|^z@3^b@2
+If East or West are dealt 4 (or more) spades, however, North-South will be held to their 3 top spade winners - the @SA, @SK, and @SQ.|
+pg| ***** 159 ***** |
+
+
+md|0,,,s89|
+nt|^z@3^b@2
+Up until now West has been the one with the spade length. It is important to understand that 4 spades in the East hand will have the same net effect in terms of tricks for North-South.|
+pg| ***** 160 ***** |
+
+
+nt|^z@3^b@2|bt||cs|2|at|
+
+
+^B {|ih|ps543|at|}
+^B{|ih|psakq2|at|}|ht|b|at|
+^GThis card combination and its relatives (some of which are listed 
+^Gbelow) are each worth 3 or 4 tricks to North-South, depending on 
+^Ghow the East-West spades are divided. North-South will need some 
+^Gluck to come to a fourth spade trick.
+
+^GNorth-South must hope that the 6 outstanding spades are divided 3
+^Gwith East and 3 with West. If that is the case, all of the East and
+^GWest spades will fall under the @SA, @SK, and @SQ. The puny @S2
+^Gwill be the last spade left - a certain trick winner.|
+
+
+cs|3|ht|k|
+
+ht|k|at|^B{|ih|psakq2|at|} |n#|z|n#|3|at|^G {|ih|psk54|at|} ^L{|ih|psaq32|at|} ^Q {|ih|psak5|at|} ^V{|ih|psq432|at|}|
+ht|n|at|^B{|ih|ps543|at|}  |n#|z|n#|3|at|^G{|ih|psaq32|at|} ^L {|ih|psk54|at|} ^Q{|ih|psq432|at|} ^V {|ih|psak5|at|}|
+ht|s|cs|1|at|^-{Small cards are not just for following suit - they sometimes win tricks.}|
+pg| ***** 161 ***** |
+
+
+nt|^z@3^b@2|bt||cs|3|n#|5|at|
+^-{    |ih|ps543|at|}
+{|ih|psAKQ2|at|}|cs|1|at|
+^-The most important lesson to be learned from this card combination:
+
+^-{Low cards have some value - they can win tricks once all the high cards are gone.}
+^-
+|
+pg| ***** 162 ***** |
+
+
+at|Another point to remember:
+
+|cs|2|at|^-{Some card combinations produce various numbers of tricks for North-South
+depending on how the East-West cards in that suit are distributed.}
+^-
+The fact that the above card combination is sometimes worth 3 tricks and sometimes worth 4 tricks implies that luck is sometimes involved in bridge. That is in fact the case. On some days your @S2 will become a winner and on some days it will remain a loser. Luck tends to even out in the long run, however, despite what some bridge players think!|
+pg| ***** 163 ***** |
+
+
+nt|^z@3^b@2|cs|2|n#|5|at|
+We have seen that the @S2 can have great value in this card combination:|
+ht|c|at|
+^D {|ih|ps543|at|} 
+^D{|ih|psAKQ2|at|}|
+pg| ***** 164 ***** |
+
+
+cs|3|at|^I If we remove a spade from North:|ht|c|at|
+^T  {|ih|ps43|at|} 
+^T{|ih|psakq2|at|}
+|
+pg| ***** 165 ***** |
+
+
+at|We can also appreciate the value of North's 3 small spades in the original combination.
+
+In the new combination there are now 7 outstanding spades, rather than 6 outstanding spades. That means that either East or West must have been dealt ^*Iat least 4^*N spades. After the @SA, @SK, and @SQ are cashed, one player will still have a spade (or spades) left. Whatever spade that is, it will be bigger than the @S2. The bottom line is that there is no way to come to a fourth trick with the card combination on the right.
+
+So make sure you appreciate the @s5, @s4, and @s3 in the left combination just as much as the @S2. The @s2 is the only small card that (with some luck) can win a trick, but the other 3 small cards are vital as well.|
+pg| ***** 166 ***** |
+
+
+nt|^z@3^b@2|st||
+md|sak876,,s5432,|at|
+In the above card combination South has the @SA and @SK but most of the North-South spades are pretty small. Those small cards are pulling plenty of weight, however, and may be worth as many as 3 tricks for North-South!|
+pg| ***** 167 ***** |
+
+
+nt|^z@3^b@2|
+md|0,qj,,t9|at|
+North and South have 9 spades between them. There are 13 spades in all. Suppose the 4 remaining spades are divided 2 with East and 2 with West. Although East and West hold the @SQ, @SJ, @S10, and @S9 between them, watch how quickly these cards vanish...|
+pg| ***** 168 ***** |
+
+
+nt|^z@3^b@2|pc|sa|pc|sj|pc|s2|pc|s9|at|
+South leads the @SA, drawing the @SJ from West and the @S9 from East.
+
+East and West are each down to just 1 spade.|
+pg| ***** 169 ***** |
+
+
+nt|^z@3^b@2|pc|sk|pc|sq|pc|s3|pc|st|at|
+The @SK removes all of the remaining spades from the East-West hands. It may seem like a miracle but South's 3 small spades will all win tricks. It was a bit lucky that the spades were divided 2-2 in the East-West hands. What if the suit had not divided so evenly?|
+pg| ***** 170 ***** |
+
+
+nt|^z@3^b@2|
+md|sak876,sq,s5432,sjt9|ht|e|at|If either East or West is dealt any 3 of the 4 remaining spades, things are different.|
+pg| ***** 171 ***** |
+
+
+nt|^z@3^b@2
+If East has 3 spades, there is only 1 spade left for West. |
+pg| ***** 172 ***** |
+
+
+md|0,h32|at|He has been given a couple of small hearts so that he will have some cards to play.|
+pg| ***** 173 ***** |
+
+
+nt|^z@3^b@2|pc|sa|pc|sq|pc|s2|pc|s9|at|
+When South leads the @SA, West must follow suit with his only spade, the @SQ. East contributes the @S9 as South wins the trick.|
+pg| ***** 174 ***** |
+
+
+nt|^z@3^b@2|pc|sk|at|
+South tries the @SK next, hoping for a 2-2 division of the East-West spades (remember, you can't see the opponents' cards when you are really playing bridge so South would not normally know how spades divide).|
+pg| ***** 175 ***** |
+
+
+nt|^z@3^b@2|pc|h2|at|
+West, having no more spades to play, discards the @H2.|
+pg| ***** 176 ***** |
+
+
+nt|^z@3^b@2|pc|s3|pc|st|at|
+North and East both follow and South wins trick 2.|
+pg| ***** 177 ***** |
+
+
+nt|^z@3^b@2|at|
+The 3-1 spade division means that East still has a spade left. His @SJ is the highest outstanding spade and there is no way that South's small spades are going to take 3 tricks this time. That doesn't mean they are worthless, however.|
+pg| ***** 178 ***** |
+
+
+nt|^z@3^b@2|pc|s6|at|
+Suppose South plays one of his low spades now. South knows he is going to lose this trick, but something good might come of it...|
+pg| ***** 179 ***** |
+
+
+nt|^z@3^b@2|pc|h3|pc|s4|at|
+West must discard again and North follows suit with the @S4.|
+pg| ***** 180 ***** |
+
+
+nt|^z@3^b@2|pc|sj|at|
+When East's @SJ wins the third trick it is a case of bad news/good news for North-South.
+
+The bad news is that East just won a trick. Can you see the good news?|
+pg| ***** 181 ***** |
+
+
+nt|^z@3^b@2|at|
+The good news is that both East and West are out of spades. South's remaining 2 spades will both win tricks (provided that South is able to gain the lead again - remember that East just won trick 3 so he will lead to trick 4).|
+pg| ***** 182 ***** |
+
+
+nt|^z@3^b@2|
+md|sak876,sqj,s5432,st9|ht|e|at|So a lucky 2-2 division of the East-West spades will produce 5 tricks for North-South,|
+pg| ***** 183 ***** |
+
+
+md|0,,,sj|at| but an unlucky 3-1 division will result in just 4 tricks. Sometimes you get really unlucky...|
+pg| ***** 184 ***** |
+
+
+nt|^z@3^b@2|
+md|sak876,sqjt9,s5432,|at|
+On a really bad day East or West might be dealt all 4 outstanding spades.|
+pg| ***** 185 ***** |
+
+
+md|0,,,h5432|at|
+
+East needs something to discard so we will give him 4 hearts.|
+pg| ***** 186 ***** |
+
+
+nt|^z@3^b@2|pc|sa|pc|s9|pc|s2|pc|h2|at|
+In this layout, East discards on the very first spade trick.
+
+The 4-0 spade break may come as a shock to South, but he soldiers on...|
+pg| ***** 187 ***** |
+
+
+nt|^z@3^b@2|pc|sk|pc|st|pc|s3|pc|h3|at|
+After the @SK wins trick 2, West still has 2 spades left and they are the highest spades. It looks pretty grim for North-South.|
+pg| ***** 188 ***** |
+
+
+nt|^z@3^b@2
+All is not lost, however. Giving up the lead worked pretty well when spades were 3-1. Let's see how this play fares against the cruel 4-0 spade break.|
+pg| ***** 189 ***** |
+
+
+nt|^z@3^b@2|pc|s6|pc|sj|pc|s4|pc|h4|at|
+South leads the @S6, surrendering the trick to West's @SJ.
+
+West is now free to take another spade trick. Suppose he does so.|
+pg| ***** 190 ***** |
+
+
+nt|^z@3^b@2|pc|sq|pc|s5|pc|h5|pc|s7|at|
+West leads his last spade, the @SQ, and wins trick 4.|
+pg| ***** 191 ***** |
+
+
+nt|^z@3^b@2
+West might be pretty pleased with himself for winning 2 tricks, but the party's over.|
+PG| ***** 192 ***** |
+
+
+nt|^z@3^b@2
+South is the only player to have any spades left. If he should regain the lead he will have a certain spade trick he can win.|
+pg| ***** 193 ***** |
+
+
+nt|^z@3^b@2|
+md|sak876,sqjt9,s5432|at|
+We have just seen that with this card combination, even if the East-West spades are 4-0, North-South can taken an extra trick (beyond the obvious @SA and @SK) with one of South's small cards.|
+pg| ***** 194 ***** |
+
+
+md|0,sq,,sjt9|at| A 3-1 break will produce 2 extra tricks for North-South,|
+pg| ***** 195 ***** |
+
+
+md|0,sj|at| and a 2-2 break is worth 3 extra tricks.|
+pg| ***** 196 ***** |
+
+
+nt|^z@3^b@2|bt||cs|2|at|
+
+
+^B {|ih|ps5432|at|}
+^B{|ih|psak876|at|}|ht|b|at|
+^GThis card combination and its relatives (some of which are listed 
+^Gbelow) are each worth 3, 4, or 5 tricks to North-South, depending 
+^Gon how the East-West spades are divided. Luck comes into play with
+^Gthis card combination.
+
+^GIf the 4 outstanding spades are divided 2 with West and 2 with 
+^GEast, then all of these cards will fall under the @SA and @SK. There
+^Gwill be 3 extra spade tricks. A 3-1 spade division will result in 2
+^Gextra tricks. A 4-0 division will result in 1 extra trick.|
+cs|3|ht|l|
+
+ht|k|at|^B{|ih|psak876|at|} |n#|z|n#|3|at|^G {|ih|psk432|at|} ^L{|ih|psa8765|at|} ^Q {|ih|psak32|at|}  ^V{|ih|ps87654|at|}|
+ht|n|at|^B{|ih|ps5432|at|} |n#|z|n#|3|at|^G{|ih|psa8765|at|} ^L {|ih|psk432|at|} ^Q{|ih|ps87654|at|} ^V {|ih|psak32|at|}
+|ht|r|cs|1|at|^-{Having lots of cards in a suit, even mostly small cards, often results in extra tricks.}|
+pg| ***** 197 ***** |
+
+
+nt|^z@3^b@2|bt||cs|3|n#|5|at|
+
+^-{|ih|ps5432|at|}
+{|ih|psAK876|at|}|cs|2|at|
+
+^-The combination we have been studying reinforces 2 earlier lessons:
+
+^-{1. Small cards in long suits can sometimes win tricks.}
+
+|cs|1|at|{2. Some card combinations produce various numbers of tricks for
+North-South depending on the division of the East-West cards.}
+^-
+|
+pg| ***** 198 ***** |
+
+
+cs|4|at|There is also something new, and very important, that we can learn from this combination:
+
+^-{Sometimes losing a trick (or tricks) can result in winning an
+extra trick (or tricks) at a later point in the play of the cards.}|
+pg| ***** 199 ***** |
+
+
+%%%%
+qx|promotion,Promotion|
+nt|^z@3^b@2|st||
+md|skqj,sat9,s432,s876|
+cs||ht|D|fp|t|CS|3|at|^-{          Promotion          }
+^-
+|
+PG| ***** 200 ***** |
+
+
+nt|^z@3^b@2
+Here is another example of a card combination in which North-South can develop extra tricks by losing a trick. In this combination, however, the extra tricks that are established will be in the form of high cards (as opposed to low cards in a long suit as in the previous combination).|
+pg| ***** 201 ***** |
+
+
+sb|wAbout time one of us gets to hold an Ace!|
+nt|^z@3^b@2
+This is the first time that the Ace of the suit we have been studying has been dealt to either East or West. The @SA is certain to take a trick for West.|
+pg| ***** 202 ***** |
+
+
+sb|w|
+nt|^z@3^b@2
+However, South holds the balance of the high spades. Will they be worth any tricks? There is one way to find out...|
+pg| ***** 203 ***** |
+
+
+nt|^z@3^b@2|pc|sk|at|
+Suppose that South leads the @SK (or the @SQ or @SJ - they are all equals).|
+pg| ***** 204 ***** |
+
+
+nt|^z@3^b@2|pc|sa|at|
+West, who is eager to capture such a big card, plays the @SA.|
+pg| ***** 205 ***** |
+
+
+nt|^z@3^b@2|pc|s2|pc|s6|at|
+North and East both follow suit as West's @SA wins trick 1.|
+pg| ***** 206 ***** |
+
+
+nt|^z@3^b@2
+Look what has happened to South's spades. The @SQ and @SJ are the highest remaining spades. When South regains the lead he will be able to take 2 tricks with these cards.|
+pg| ***** 207 ***** |
+
+
+nt|^z@3^b@2
+It is not really that mysterious when you think about it. There are only 2 cards higher than the @SQ and @SJ - the @SA
+and @SK. South was able to use his @SK to drive out West's @SA at trick 1.
+
+The net effect is that the @SQ and @SJ are promoted to the 2 highest cards in the suit.|
+pg| ***** 208 ***** |
+
+
+nt|^z@3^b@2
+Could West have done any better by withholding his @SA? Let's find out...|
+pg| ***** 209 ***** |
+
+
+nt|^z@3^b@2|up||up||up||at|
+We are now back at West's turn to play a card to trick 1.|
+pg| ***** 210 ***** |
+
+
+nt|^z@3^b@2|pc|s9|at|
+Suppose that West decides to play one of his smaller spades instead of the @SA.|
+pg| ***** 211 ***** |
+
+
+nt|^z@3^b@2|pc|s2|pc|s6|at|
+North and East both follow and South wins the first trick. North-South already have 1 trick in and South is still on lead.|
+pg| ***** 212 ***** |
+
+
+nt|^z@3^b@2|pc|sq|at|
+South persists with the @SQ, playing the same game on West. If West plays low again, South will have won 2 spade tricks as before.|
+pg| ***** 213 ***** |
+
+
+nt|^z@3^b@2|pc|sa|at|
+Suppose, therefore, that West chooses to take his @SA at trick 2.|
+pg| ***** 214 ***** |
+
+
+nt|^z@3^b@2|pc|s3|pc|s7|at|
+The @SA wins the second trick, but South's @SJ is the highest spade left. As soon as South gets on lead he will be able to play that card and win a second spade trick.|
+pg| ***** 215 ***** |
+
+
+nt|^z@3^b@2
+Regardless of when West chooses to play his @SA, he is powerless to stop North-South from taking 2 tricks in spades.|
+pg| ***** 216 ***** |
+
+
+nt|^z@3^b@2|bt||cs|2|at|
+
+
+^B{|ih|ps432|at|}
+^B{|ih|psKQJ|at|}|ht|b|at|
+^GThis card combination and its relatives (some of which are listed 
+^Gbelow) are each worth 2 tricks to North-South regardless of how the 
+^GEast-West cards are divided and which cards East and West choose 
+^Gto play. No luck is required.
+
+^GIn each combination the @SA is the only relevant high card that is
+^Gmissing. One of the @SK, @SQ, and @SJ, can be used to drive out the
+^G@SA. North-South will then be left with the 2 highest spades which
+^Gcan be used to win tricks.|
+cs|3|ht|l|at|
+
+|ht|k|at|^B{|ih|psKQJ|at|} |n#|z|n#|3|at|^G{|ih|psKQ4|at|} ^L{|ih|psJ32|at|} ^Q{|ih|psQ43|at|} ^V{|ih|psQJ4|at|}
+|ht|m|at|^B{|ih|ps432|at|} |n#|z|n#|3|at|^G{|ih|psj32|at|} ^L{|ih|psKQ4|at|} ^Q{|ih|psKJ2|at|} ^V{|ih|psK32|at|}|
+cs|1|at|^-{Establishing tricks in this way is called promotion of high cards.}
+|
+pg| ***** 217 ***** |
+
+
+nt|^z@3^b@2
+
+
+Remember when we discussed  solid suits:|
+ht|f|at|^C  {|cs|3|ih|psa|at|}  |n#|t|n#|0|at|  {|ih|psak|at|}    {|ih|psakq|at|}    {|ih|psakqj|at|}    {|ih|psakqjt|at|}|
+ht|k|at|Each of the above holdings is said to be solid because each will provide 1 certain trick for every card held in the suit.|
+pg| ***** 218 ***** |
+
+
+at|
+
+Now consider these holdings  (we have been studying the third one):
+
+^C  {|cs|3|ih|psk|at|}   |n#|t|n#|0|at| {|ih|pskq|at|}    {|cs|2|ih|pskqj|at|}    {|cs|3|ih|pskqjt|at|}    {|ih|pskqjt9|at|}
+
+|ht|r|at|Each of these would be a solid suit except that the @SA is missing. We have seen that the third holding is worth
+2 tricks to the player who owns it - once the @SA is driven out by any 1 of the 3 cards, the remaining 2 cards will be
+promoted into certain trick winners.|
+pg| ***** 219 ***** |
+
+
+nt|^z@3^b@2^^^^
+The same principle applies to all of these solid suits missing the Ace:
+^^
+^C  {|cs|3|ih|psk|at|}  |n#|t|n#|0|at|  {|ih|pskq|at|}    {|ih|pskqj|at|}    {|cs|3|ih|pskqjt|at|}    {|ih|pskqjt9|at|}
+|ht|i|cs|1|at|
+^-{A solid suit missing the Ace is worth 1 less trick
+than the number of cards held in the suit.}
+^-
+|
+pg| ***** 220 ***** |
+
+
+at|^^According to the above principle, the first holding is not worth any tricks as there is only 1 card held (the @SK). That makes sense - after the @SA takes the @SK there won't be any spades left to win tricks with.|
+ht|p|cs|1|at|^C  {|cs|2|ih|psk|at|}|
+pg| ***** 221 ***** |
+
+
+ht|t|at|The second holding, being 2 cards long, is worth 1 trick. Again that makes sense as 1 of the cards can force out
+the @SA and the remaining card will be promoted into a sure trick winner.|
+ht|n|cs|3|n#|t|at|^g    {|ih|pskq|at|}|
+pg| ***** 222 ***** |
+
+
+ht|v|at|We have already seen how the third holding, a 3-carder, is worth 2 certain tricks (in accordance with the above principle).|
+ht|n|cs|3|n#|t|at|^l  {|ih|skqj|at|}|
+pg| ***** 223 ***** |
+
+
+ht|x|at|The principle tells us that the fourth and fifth holdings are, respectively, worth 3 and 4 sure tricks (as they are 4 and 5 cards long).|
+ht|n|cs|3|n#|t|at|^p  {|cs|2|ih|pskqjt|at|}|n#|t|n#|0|at|^u {|ih|pskqjt9|at|}|
+pg| ***** 224 ***** |
+
+
+nt|^z@3^b@2|MN||st||
+md|sqjt,sk98,s432,sa76|at|
+In this card combination both the @SA and the @SK are missing. South's spades are just strong enough that a trick can be taken by promotion.|
+pg| ***** 225 ***** |
+
+
+nt|^z@3^b@2|pc|sq|at|
+South leads the @SQ to the first trick. Either East or West could win this trick. One of them had better do so or else South will have succeeded in his objective of taking 1 trick.|
+pg| ***** 226 ***** |
+
+
+nt|^z@3^b@2|pc|sk|pc|s2|pc|s6|at|
+Suppose that West wins the trick with his @SK.|
+pg| ***** 227 ***** |
+
+
+wt|s|
+nt|^z@3^b@2
+Once South regains the lead he can continue building his spade trick.|
+pg| ***** 228 ***** |
+
+
+nt|^z@3^b@2|pc|sj|pc|s8|pc|s3|pc|sa|at|
+South leads the @SJ and East has to take his @SA or else South will have his trick in the bag.|
+pg| ***** 229 ***** |
+
+
+nt|^z@3^b@2
+South's @S10 has really grown up - it has been promoted into the master card in spades. 
+
+As soon as South gains the lead again he can lead the @S10 and win a trick.|
+pg| ***** 230 ***** |
+
+
+nt|^z@3^b@2|bt||cs|2|at|
+
+
+^B{|ih|ps432|at|}
+^B{|ih|psqjt|at|}|ht|b|at|
+^GThis card combination and its relatives (some of which are listed 
+^Gbelow) are each worth 1 trick to North-South regardless of how the 
+^GEast-West cards are divided and which cards East and West choose 
+^Gto play. No luck is required.
+
+^GIn each combination the @SA and @SK are the only relevant high cards 
+^Gthat are missing. 2 of the @SQ, @SJ, and @S10 can be used to drive out
+^Gthose cards. Once the @SA and @SK are gone, North-South will then 
+^Gbe left with the highest remaining spade - a certain trick winner.|
+cs|3|ht|l|at|
+
+|ht|l|at|^B {|ih|psqjt|at|} |n#|t|n#|0|at| ^G {|ih|psqj4|at|} ^L{|ih|pst32|at|} ^Q{|ih|psj43|at|} ^V{|ih|psjt4|at|}
+|ht|n|at|^B {|ih|ps432|at|} |n#|t|n#|0|at| ^G{|ih|pst32|at|} ^L{|ih|psqj4|at|} ^Q{|ih|psqt2|at|} ^V{|ih|psq32|at|}
+|ht|p|cs|1|n#|4|at|
+^^^-{ Promotion can be used to develop tricks even when several top cards are missing.}|
+pg| ***** 231 ***** |
+
+
+nt|^z@3^b@2
+^B@2It is time to see how the card combinations we have learned about fit into ^*Ithe big picture^*N - the play of the cards of an entire bridge deal. Before we move on, here's a quick review of some of the card combinations we have seen:|
+
+ht|d|at|^B|ih|ps432 |n#|z|n#|3|at|  ^G |ih|ps543|at| ^L |ih|ps5432|at|  ^Q  |ih|ps432|at| ^V|ih|ps432|
+ht|f|at|^B|ih|psakq|n#|z|n#|3|at|  ^G|ih|psakq2|at| ^L|ih|psak876|at| ^Q  |ih|pskqj|at| ^V|ih|psqjt|at|
+|
+pg| ***** 232 ***** |
+
+
+ht|k|at|The first combination is easy - it is a solid suit. The @SA, @SK, and @SQ will all take tricks and that's all there is to it.|
+ht|m|n#|3|cs|8|
+ht|m|at|^B |ih|ps432|
+ht|o|at|^B |ih|psakq|at||
+pg| ***** 233 ***** |
+
+
+ht|s|at|In the second and third combinations extra tricks may be available from the small cards in long suits. Luck will play a role in how many extra tricks can be taken.|
+ht|m|at|^G |ih|ps543 |n#|t|n#|0|at| ^L |ih|ps5432|
+ht|o|at|^G |ih|psakq2|n#|t|n#|0|at| ^L|ih|psak876|at||
+pg| ***** 234 ***** |
+
+
+ht|v|at|In the fourth and fifth combinations extra tricks can always be developed by promotion. Once the high cards are knocked out of the East-West hands, there will be tricks to win.|
+ht|m|at|^q |ih|ps432 |n#|t|n#|0|at| ^v |ih|ps432|
+ht|o|at|^q |ih|pskqj|n#|t|n#|0|at| ^v|ih|psqjt|at||
+pg| ***** 235 ***** |
+
+
+%%%%%%
+qx|e1,Review and example deal 1|
+nt|^z@3^b@2|cm|Y|cs|3|fp|3|at|
+
+^-{  Review and Example 1  }
+^-|fp||at|
+Let's step back for a moment and put what we have learned about tricks and card combinations into its proper perspective in bridge:
+
+|cs|4|at|^-{Every bridge deal has 2 phases - the bidding and the play of the cards.}
+
+|cs|2|at|{The play of the cards consists of 13 tricks being played.}
+^-
+There are 4 suits in each bridge deal. When you are actually playing bridge you should be looking at each of the 4 suits as a card combination. By examining each suit for its trick-taking potential you will find it is much easier to win as many tricks as possible.
+
+|
+pg| ***** 236 ***** |
+
+
+at|It is time we had a look at the entire play of the cards of a bridge deal. Before we do so, there are a few of important things you need to know about bridge:
+
+|cs|3|at|^-{During the bidding one of the players is designated as the declarer.}
+
+|cs|1|at|{The player sitting to the left of the declarer makes the opening lead.}
+
+^-In the following example (and throughout this program), South will be the declarer. West, who is sitting to the left of South, will always lead to trick 1.|
+pg| ***** 237 ***** |
+
+
+tc|w|sk|s|
+nt|^z@3^b@2|st||
+md|s432hak876dak2ckq,sakqjhqjdqjtcAjt9,s765h5432d543c432|mb|2N|mb|p|mb|p|mb|p|sb|sI declare!|sb|wI get to make the opening lead!|ht|D|at|Assume you are sitting South. The bidding has made you the declarer (we will learn how this works later). This is what you would see (you can only see your own cards, of course).|
+PG| ***** 238 ***** |
+
+
+nt|^z@3^b@2
+To start the play of the cards West would make the opening lead.|
+pg| ***** 239 ***** |
+
+
+nt|^z@3^b@2|sb|wI will lead the Jack of spades.|sb|s|pc|sj|at|
+West's opening lead is the @SJ. Look at the above picture and you will see that something else has happened. Your partner, North, has placed all of his cards face up on the table! What's going on here? Does your partner think he is being sporting?|
+pg| ***** 240 ***** |
+
+
+nt|^z@3^b@2|cs|1|sb|w|sb|nI have to show my hand. I am the dummy!|
+at|
+In fact, your partner is playing by the rules. Here's a major rule of bridge:
+
+^-{The partner of the declarer is designated as the dummy. The dummy places
+his cards face up on the table immediately after the opening lead is made.}|
+pg| ***** 241 ***** |
+
+
+nt|^z@3^b@2|cs|1|sb|n|at|
+The name dummy is not particularly flattering for North, but there is a good reason for it:
+
+^-{The declarer is responsible for playing cards both for himself and for the dummy.}
+
+^-The dummy just sits there while his partner, the declarer, plays his cards for him.|
+pg| ***** 242 ***** |
+
+
+nt|^z@3^b@2
+None of this means that you should feel hurt if the bidding makes you the dummy on a particular bridge deal. In fact, you will be the dummy on roughly a quarter of all the bridge deals you ever play! Remember, bridge is a partnership game. |
+PG| ***** 243 ***** |
+
+
+nt|^z@3^b@2
+Your partner will be in control of your cards when you are the dummy and he has your best interests at heart. Also, being dummy gives you a chance to take a break from the game for a few minutes.|
+pg| ***** 244 ***** |
+
+
+nt|^z@3^b@2
+Depending on the type of bridge being played (social or competitive) and perhaps on the size of the bridge table, the declarer might actually pick up and play cards from dummy or instruct the dummy to do so instead.|
+pg| ***** 245 ***** |
+
+
+nt|^z@3^b@2
+Most trick-taking games do not have a dummy. The presence of the dummy makes bridge easier to play. Being able to see the dummy allows declarer to know the combined assets of the partnership.|
+PG| ***** 246 ***** |
+
+
+nt|^z@3^b@2
+As such the declarer is in a good position to study each of the 4 card combinations in the deal.|
+pg| ***** 247 ***** |
+
+
+sk|w|
+nt|^z@3^b@2
+East and West also get to see the dummy. For example, as West, this is what you would see - your own cards and the dummy's cards. The declarer can see his partner's hand while East and West (known as the defenders) cannot see their partner's hands. |
+PG| ***** 248 ***** |
+
+
+nt|^z@3^b@2
+Being able to see the dummy helps each defender know what their partner was ^*Inot^*N dealt, but that is not as useful as knowing what they ^*Iwere^*N dealt.|
+pg| ***** 249 ***** |
+
+
+sk|s|sb|nSorry pard, I was not dealt any high cards!|sb|sThank-you partner!|
+nt|^z@3^b@2
+Back to declarer's (South's) point of view, we can see that this particular dummy is a pretty wretched collection of cards. |
+PG| ***** 250 ***** |
+
+
+nt|^z@3^b@2
+Even so, you should always thank your partner when he puts down his dummy, be it good or bad. He cannot help what he was dealt.|
+pg| ***** 251 ***** |
+
+
+sb|n|sb|s|
+nt|^z@3^b@2
+To make matters worse, West has found the weakness in the North-South hands - the spade suit. Neither North nor South has any high cards at all in spades. It looks like East and West are going to be winning some tricks.|
+pg| ***** 252 ***** |
+
+
+nt|^z@3^b@2
+South must select a spade for the dummy to follow suit with to trick 1. Since dummy's cards are all so small, South will not have any big decisions to make on this deal in terms of picking cards to play from dummy!| 
+pg| ***** 253 ***** |
+
+
+nt|^z@3^b@2|pc|s5|at|
+South calls for the @S5 from the dummy.|
+pg| ***** 254 ***** |
+
+
+nt|^z@3^b@2|pc|s8|at|
+East follows suit with the @S8 and South must now choose a spade to play from his own hand. Being the declarer can be lots of work! That's one of the reasons you will enjoy the chance to relax as the dummy.|
+PG| ***** 255 ***** |
+
+
+nt|^z@3^b@2
+South's spades are all very small so again this is not much of a decision.|
+pg| ***** 256 ***** |
+
+
+nt|^z@3^b@2|pc|s2|at|
+South decides to play the @S2 and West wins trick 1 leaving him on lead for trick 2.|
+pg| ***** 257 ***** |
+
+
+nt|^z@3^b@2|pc|sq|pc|s6|pc|s9|pc|s3|at|
+Spades worked so well for West at trick 1 that you can't really blame him for trying that suit again. West's lead of the @SQ wins trick 2.|
+pg| ***** 258 ***** |
+
+
+nt|^z@3^b@2|pc|sk|pc|s7|pc|st|pc|s4|at|
+On to a good thing, West leads the @SK and wins trick 3.|
+PG| ***** 259 ***** |
+
+
+nt|^z@3^b@2
+The bad news is that South has not won a trick yet. The good news is that there is only 1 spade left. There were 13 spades to begin with and all 4 players have followed suit 3 times (accounting for 12 of the spades).|
+pg| ***** 260 ***** |
+
+
+nt|^z@3^b@2|sb|wI saved the best spade for last!|pc|sa|at|
+The last spade is the @SA and South must choose a discard from the dummy. As dummy has absolutely nothing of value, it does not matter what card South chooses.|
+pg| ***** 261 ***** |
+
+
+nt|^z@3^b@2|sb|w|pc|d3|pc|c5|at|
+Suppose that South chooses to discard the @D3 from the dummy. East discards the @c5 and South must find a discard from his hand. Any thoughts on the matter?|
+pg| ***** 262 ***** |
+
+
+nt|^z@3^b@2
+South has plenty of high cards and it would be a bad idea to discard any of these. We already know that high cards tend to win tricks.|
+pg| ***** 263 ***** |
+
+
+nt|^z@3^b@2
+South still has 4 low cards from which to choose his discard. One of these cards is clearly the best play. Do you know which card?|
+pg| ***** 264 ***** |
+
+
+nt|^z@3^b@2|pc|d2|at|
+South should discard the @D2, but not because it is South's lowest card.|
+PG| ***** 265 ***** |
+
+
+nt|^z@3^b@2
+The reason that the @D2 is the best discard is that we have already seen how low cards in long suits can sometimes win tricks. As the North-South partnership has 9 hearts between them South's small hearts have great trick-winning potential.|
+pg| ***** 266 ***** |
+
+
+nt|^z@3^b@2
+In fact, the North-South heart combination is identical to a card combination we have already studied. If South is lucky, all 5 of his hearts could win tricks. That's a good reason not to discard any of them!|
+pg| ***** 267 ***** |
+
+
+nt|^z@3^b@2|pc|dq|at|
+Fortunately, the defenders are out of spades. West leads the @DQ to trick 5.|
+pg| ***** 268 ***** |
+
+
+nt|^z@3^b@2|pc|d4|pc|d6|pc|dk|at|
+The dummy and North follow suit and South wins the trick with the @DK (the @DA would be just as good, of course, as the @DA and @DK are touching cards).|
+pg| ***** 269 ***** |
+
+
+nt|^z@3^b@2
+South is finally on lead and he can play whatever suit he wants.|
+PG| ***** 270 ***** |
+
+
+nt|^z@3^b@2
+Hearts clearly has the most potential for tricks so it makes sense to play that suit now. Also, we have seen that the heart combination will produce various numbers of tricks depending on how the 4 East-West hearts divide.|
+pg| ***** 271 ***** |
+
+
+nt|^z@3^b@2
+It will help for South to know quickly how many tricks the hearts are worth.|
+PG| ***** 272 ***** |
+
+
+nt|^z@3^b@2
+In addition, since the lead may have to be lost to develop heart tricks, it is a good idea for South to keep his high cards in diamonds and clubs. The last thing South needs is to create more trick winners for the defenders.|
+pg| ***** 273 ***** |
+
+
+nt|^z@3^b@2|pc|ha|pc|hj|pc|h2|pc|h9|at|
+Both defenders follow suit to the @HA, West with the @HJ and East with the @H9.|
+pg| ***** 274 ***** |
+
+
+nt|^z@3^b@2|pc|hk|pc|hq|pc|h3|pc|ht|at|
+Even better news is that both defenders follow suit to the @HK. The 4 outstanding hearts were divided 2-2 between the East-West hands. The defenders have no hearts left.|
+PG| ***** 275 ***** |
+
+
+nt|^z@3^b@2
+That means that South's @H8, @H7, and @H6 will all win tricks. It was a good idea not to discard any of those small hearts!|
+pg| ***** 276 ***** |
+
+
+nt|^z@3^b@2|pc|h8|pc|c9|pc|h4|pc|d7|at|
+South might as well take his heart tricks immediately. Both defenders discard, as expected, on the third round of hearts. West parts with a club while East pitches a diamond. South wins trick 8 and continues the heart barrage.|
+pg| ***** 277 ***** |
+
+
+nt|^z@3^b@2|pc|h7|pc|ct|pc|h5|pc|c6|at|
+The @H7 wins trick 9 as both defenders discard clubs.|
+pg| ***** 278 ***** |
+
+
+nt|^z@3^b@2|pc|h6|pc|cj|pc|c2|pc|c7|at|
+When South plays his last heart he must choose a discard from the dummy. South selects the @C2 and both defenders also discard in clubs.|
+pg| ***** 279 ***** |
+
+
+nt|^z@3^b@2
+There are only 3 cards left and South would like to win as many of those tricks as possible. The @DA is certain to win a trick, of course, but one of the defenders is still holding the @CA (they would never discard such a high card).|
+PG| ***** 280 ***** |
+
+
+nt|^z@3^b@2
+Should South play the @DA or a club now?|
+pg| ***** 281 ***** |
+
+
+nt|^z@3^b@2
+If you figured out that South should play a club now, you are going to be a whiz at bridge!|
+PG| ***** 282 ***** |
+
+
+nt|^z@3^b@2
+Don't despair, however, if you thought the @DA was a better play - you're just learning. In order to see why it is better to play a club, let's look at all of the remaining cards.|
+pg| ***** 283 ***** |
+
+
+sk||
+nt|^z@3^b@2
+Suppose that South makes the mistake of winning a trick with his @DA immediately.|
+pg| ***** 284 ***** |
+
+
+nt|^z@3^b@2|pc|da|pc|dt|pc|d5|pc|d8|at|
+South wins trick 11, as expected, but that will be the last trick that South wins. South has no choice but to play a club now.|
+pg| ***** 285 ***** |
+
+
+nt|^z@3^b@2|pc|ck|pc|ca|pc|c3|pc|c8|at|
+South leads the @CK to trick 12, but West is able to win the trick with his @CA.|
+pg| ***** 286 ***** |
+
+
+nt|^z@3^b@2|pc|dj|pc|c4|pc|d9|pc|cq|at|
+West is on lead to trick 13 and his last card is the @DJ. West leads that card and wins the last trick.|
+pg| ***** 287 ***** |
+
+
+nt|^z@3^b@2
+North-South did not do badly on this deal. They won 7 of the 13 tricks while East-West won the other 6.|
+PG| ***** 288 ***** |
+
+
+nt|^z@3^b@2
+South could have taken an eighth trick, however, if he had led a club at the critical point. Let's return to that point of the play.|
+pg| ***** 289 ***** |
+
+
+nt|^z@3^b@2|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|up|1|at|
+This was the position when South had to decide whether to play the @DA or a club. We have seen that if South plays the @DA it will be the last trick he wins. Let's see how a club works out.|
+pg| ***** 290 ***** |
+
+
+nt|^z@3^b@2|pc|ck|pc|ca|pc|c3|pc|c8|at|
+South's lead of the @CK forces out West's @CA and promotes the @CQ as the master card in the suit. South has lost 1 of the last 3 tricks, but he will win the 2 remaining tricks.|
+pg| ***** 291 ***** |
+
+
+nt|^z@3^b@2|pc|dj|pc|d5|pc|d8|pc|da|at|
+West, with only diamonds left, is forced to lead that suit to South's @DA. It would not have mattered if West still had a club to lead at this point.|
+PG| ***** 292 ***** |
+
+
+nt|^z@3^b@2
+It is important to see that South's @DA did not ^*Igo away^*N even though South did not win a trick with that card when he had the chance to lead it earlier.|
+pg| ***** 293 ***** |
+
+
+nt|^z@3^b@2
+South is on lead for trick 13 and his @CQ is going to win a well-deserved eighth trick for the North-South partnership.|
+pg| ***** 294 ***** |
+
+
+nt|^z@3^b@2|pc|cq|pc|dt|pc|c4|pc|d9|cs|1|at|
+The lesson to be learned is:
+
+^-{It is not always best to win your tricks as early as possible. Sometimes
+you should save your high cards so that you can regain the lead later.}|
+pg| ***** 295 ***** |
+
+
+cm||
+nt|^z@3^b@2|
+md|s432hak876dak2ckq,sakqjhqjdqjtcAjt9,s765h5432d543c432|mb|2N|mb|p|mb|p|mb|p|at|
+Let's have another quick look at the entire play of the cards of this deal, this time with all 52 cards in view.|
+pg| ***** 296 ***** |
+
+
+nt|^z@3^b@2|pc|sj|at|
+West's opening lead was the @SJ (he was showing off a bit as he could have led one of his higher spades with the same effect). North then put down his dummy.|
+pg| ***** 297 ***** |
+
+
+nt|^z@3^b@2|pc|s5|pc|s8|pc|s2|at|
+West's @SJ won the first trick.|
+pg| ***** 298 ***** |
+
+
+nt|^z@3^b@2|pc|sq|pc|s6|pc|s9|pc|s3|at|
+West continued spades, winning the first 4 tricks.|
+pg| ***** 299 ***** |
+
+
+pc|sk|pc|s7|pc|st|pc|s4|
+pg| ***** 300 ***** |
+
+
+pc|sa|pc|d3|pc|c5|pc|d2|at|
+
+South wisely chose to discard the @D2 on the fourth round of spades.|
+pg| ***** 301 ***** |
+
+
+nt|^z@3^b@2|pc|dq|pc|d4|pc|d6|pc|dk|at|
+West led the @DQ to trick 5 and South won the @DK.|
+pg| ***** 302 ***** |
+
+
+nt|^z@3^b@2|pc|ha|pc|hj|pc|h2|pc|h9|at|
+South cashed the @HA as both defenders followed.|
+pg| ***** 303 ***** |
+
+
+nt|^z@3^b@2|pc|hk|pc|hq|pc|h3|pc|ht|at|
+Both East and West also followed suit to the @HK. Hearts had divided 2-2 and all of South's small hearts were high.|
+pg| ***** 304 ***** |
+
+
+nt|^z@3^b@2|pc|h8|pc|c9|pc|h4|pc|d7|at|
+South played off his remaining hearts, forcing both defenders to make 3 discards.|
+pg| ***** 305 ***** |
+
+
+pc|h7|pc|ct|pc|h5|pc|c6|
+pg| ***** 306 ***** |
+
+
+pc|h6|pc|cj|pc|c2|pc|c7|at|
+
+The critical point of the play had been reached.|
+pg| ***** 307 ***** |
+
+
+nt|^z@3^b@2|pc|ck|pc|ca|pc|c3|pc|c8|at|
+South led the @CK, driving out West's @CA and promoting the @CQ into a winner. |
+PG| ***** 308 ***** |
+
+
+nt|^z@3^b@2
+We have seen that South would have taken a trick less had he won a trick with the @DA at this point instead of playing a club.|
+pg| ***** 309 ***** |
+
+
+nt|^z@3^b@2|pc|dj|pc|d5|pc|d8|pc|da|at|
+West led the @DJ and South won the trick with the @DA.|
+pg| ***** 310 ***** |
+
+
+nt|^z@3^b@2|pc|cq|pc|dt|pc|c4|pc|d9|at|
+South's last card, the @CQ, won trick 13.|
+PG| ***** 311 ***** |
+
+
+nt|^z@3^b@2
+North-South won 8 tricks in total to East-West's 5 tricks.|
+pg| ***** 312 ***** |
+
+
+nt|^z@3^b@2|
+md|s432hak876dak2ckq,sakqjhqjdqjtcAjt9,s765h5432d543c432|at|
+Here's the whole deal one more time. We will now examine each of the 4 suits in isolation, keeping in mind the card combinations we learned in this chapter.|
+pg| ***** 313 ***** |
+
+
+nt|^z@3^b@2
+As was mentioned, North-South's heart combination is identical to a card combination that we have already seen. |
+PG| ***** 314 ***** |
+
+
+nt|^z@3^b@2
+We learned that this combination will win between 3 and 5 tricks depending on how the 4 outstanding hearts are divided between the East and West hands.|
+pg| ***** 315 ***** |
+
+
+nt|^z@3^b@2
+On this deal North-South are lucky that both East and West were dealt 2 hearts. As such, all 5 of South's hearts will win tricks. Had the hearts been split less favorably, North-South would not have been able to win so many tricks.|
+pg| ***** 316 ***** |
+
+
+nt|^z@3^b@2
+Turning our attention to clubs, that suit is also very similar to a card combination we have seen. The North-South club holding will produce exactly 1 trick (by promotion), but the lead must be lost to the @CA first.|
+pg| ***** 317 ***** |
+
+
+nt|^z@3^b@2
+The diamond suit is not a complete stranger to us either. Here the @DA and @DK are certain tricks. We have seen how low cards in long suits sometimes win tricks, but that is not going to happen in diamonds. Can you see why this is the case?|
+pg| ***** 318 ***** |
+
+
+nt|^z@3^b@2
+North-South were dealt only 6 diamonds between the 2 hands. There are 7 diamonds outstanding. At least one defender is sure to hold enough diamonds to guard the third round of that suit. |
+PG| ***** 319 ***** |
+
+
+nt|^z@3^b@2
+On this deal both defenders have enough diamonds to guard the third round. There is no way that more than 2 diamonds tricks could ever be available for North-South.|
+pg| ***** 320 ***** |
+
+
+nt|^z@3^b@2
+Finally, let's have a look at the spades. The North-South spades are unlike any of the card combinations that we have studied. |
+PG| ***** 321 ***** |
+
+
+nt|^z@3^b@2
+North and South were each dealt 3 small spades. It should come as no surprise to you that the North-South partnership can never win any tricks with this card combination.|
+pg| ***** 322 ***** |
+
+
+nt|^z@3^b@2
+If we look at the East-West spades, however, we will recognize an old friend. West's spades constitute a solid suit. We learned that a solid suit will win 1 trick for each card in the suit. |
+PG| ***** 323 ***** |
+
+
+nt|^z@3^b@2
+Since West has 4 spades he is able to win 4 tricks in that suit. That is exactly what we saw happen on the first 4 tricks of this deal.|
+pg| ***** 324 ***** |
+
+
+nt|^z@3^b@2
+Our study of card combinations allows us to make some pretty accurate predictions about this deal. We know that North-South have exactly 2 diamond tricks and that 1 club trick can be built. |
+PG| ***** 325 ***** |
+
+
+nt|^z@3^b@2
+Furthermore, since the East-West hearts are 2-2, we know 5 heart tricks are available. That's 8 tricks in all - exactly the number of tricks that South was able to win as declarer. South's 8 trick winners are hilited above.|
+pg| ***** 326 ***** |
+
+
+nt|^z@3^b@2
+The other 5 tricks were all won by West. His solid spade suit was worth 4 tricks. The @CA is the only other card that won a trick for the defenders.|
+pg| ***** 327 ***** |
+
+
+nt|^z@3^b@2|bt||cs|4|at|
+
+
+Before we go on to study some new card combinations, let's review what we have learned from watching the play of the cards of an entire bridge deal. 
+
+First of all, we have learned a great deal about the mechanics of the play of the cards in bridge:
+|
+pg| ***** 328 ***** |
+
+
+at|
+^-{The bidding determines which player will be the declarer.}
+|
+pg| ***** 329 ***** |
+
+
+cs|2|at|
+{The opening lead is made by the player to the left of the declarer.}
+|
+pg| ***** 330 ***** |
+
+
+cs|3|at|
+{The partner of the declarer will be the dummy. The dummy places
+all of his cards face up on the table after the opening lead is made.}
+|
+pg| ***** 331 ***** |
+
+
+cs|1|at|
+{The declarer plays cards both from his own hand and from dummy.}
+|
+pg| ***** 332 ***** |
+
+
+cs|4|at|
+{The other 2 players (outside of the declarer and dummy) are called the defenders.}
+|
+pg| ***** 333 ***** |
+
+
+at|
+^-Every bridge deal you ever play will have these properties. All of this may seem overwhelming now, but it won't take long until the basic mechanics of the play of the cards at bridge seem second nature to you!|
+pg| ***** 334 ***** |
+
+
+nt|^z@3^b@2|cs|4|at|
+
+
+This deal also provided some valuable insights into the strategies of playing the cards as declarer:
+|
+pg| ***** 335 ***** |
+
+
+at|
+^-{It is not always a good idea to win as many tricks as you can as quickly as
+you can. High cards should sometimes be kept so that the lead can be regained.}
+|
+pg| ***** 336 ***** |
+
+
+cs|2|at|
+{It is generally a good idea for declarer to play on his long suits as early as 
+possible in an attempt to start developing tricks with the low cards in those suits.}
+|
+pg| ***** 337 ***** |
+
+
+cs|3|at|
+{It is a good idea to discard cards that cannot possibly win tricks.}
+|
+pg| ***** 338 ***** |
+
+
+cs|1|at|
+{Studying card combinations makes it easier to make good decisions
+as declarer. That's why we are going to continue studying them!}
+|
+pg| ***** 339 ***** |
+
+
+at|
+^-You may have noticed that some of these suggestions are a little bit vague. Unfortunately there are very few ^*Iuniversal rules^*N in bridge. It is always possible to come up with a deal where a rule of strategy that has always served well does not apply.
+
+That is one of the reasons why bridge is a difficult game - the words ^*Inever^*N and ^*Ialways^*N cannot really be applied to the strategies of play. This is also one of the reasons that bridge is such a great game. Every new deal of the cards can be looked at as a unique learning opportunity.
+
+|cs|4|at|^-{There are so many possible deals that you can never see it all in bridge!}
+|
+pg| ***** 340 ***** |
+
+
+%%%%%%%%
+qx|e2,Example 2 - Promotion in action!|
+nt|^z@3^b@2|st||ah|Board 1|
+md|s432hak876dak2ckq,sakqjhqjdqjtcAjt9,s765h5432d543c432|
+cs||ht|e|fp|t|cs|3|at|^-{  Example 2 - Promotion in action  }
+^-|fp||
+at|
+The deal that we just looked at (still showing above) was pretty complicated. There were points of interest in all 4 of the suits. Most real bridge deals are like that.|
+pg| ***** 341 ***** |
+
+
+sk||rh||
+md|sakqhakqdakqcjt98,sjt98hjt98djt98ca,s432h432d432c5432|mb|4n|mb|p|mb|p|mb|p|
+nt|^z@3^b@2
+In this program, many of the bridge deals you see  WILL  look like that one.
+
+The deal you NOW see above is not very realistic - it is extremely rare for so many touching cards to be dealt together.|
+PG| ***** 342 ***** |
+
+
+nt|^z@3^b@2
+Another reason why this deal is not very realistic is that you could play bridge for many years and never be dealt a hand with as many high cards as South holds.|
+pg| ***** 343 ***** |
+
+
+nt|^z@3^b@2
+Nonetheless, this type of deal makes it convenient to illustrate a point. You will see this sort of deal quite a bit in this program. |
+PG| ***** 344 ***** |
+
+
+nt|^z@3^b@2
+When there are lots of solid suits it is easy to focus on the suit that is not solid (that's a hint).|
+PG| ***** 345 ***** |
+
+
+nt|^z@3^b@2
+South is the declarer and West, sitting to declarer's left, makes the opening lead.|
+pg| ***** 346 ***** |
+
+
+pc|sj|
+nt|^z@3^b@2
+West chooses the @SJ as his opening lead and North puts down yet another meager dummy. Fortunately, South really has him covered!|
+pg| ***** 347 ***** |
+
+
+nt|^z@3^b@2|pc|s2|pc|s5|pc|sq|at|
+South wins trick 1 with the @SQ. The @SK or @SA would have done just as well, of course, as all 3 of those cards are equals. What do you think of North-South's trick-winning prospects?|
+pg| ***** 348 ***** |
+
+
+nt|^z@3^b@2
+Suppose we choose not to think about it and just start winning tricks with all of the high cards in the South hand.|
+pg| ***** 349 ***** |
+
+
+nt|^z@3^b@2|pc|da|pc|d8|pc|d2|pc|d5|at|
+Diamonds are a girl's best friend so let's start with that suit...|
+pg| ***** 350 ***** |
+
+
+pc|dk|pc|d9|pc|d3|pc|d6|
+pg| ***** 351 ***** |
+
+
+pc|dq|pc|dt|pc|d4|pc|d7|
+pg| ***** 352 ***** |
+
+
+nt|^z@3^b@2|pc|ha|pc|h8|pc|h2|pc|h5|at|
+Hearts also has some sentimental appeal, so let's play that suit next...|
+pg| ***** 353 ***** |
+
+
+pc|hk|pc|h9|pc|h3|pc|h6|
+pg| ***** 354 ***** |
+
+
+pc|hq|pc|ht|pc|h4|pc|h7|
+pg| ***** 355 ***** |
+
+
+nt|^z@3^b@2|pc|sa|pc|s8|pc|s3|pc|s6|at|
+Finally the spades...|
+pg| ***** 356 ***** |
+
+
+pc|sk|pc|s9|pc|s4|pc|s7|
+nt|^z@3^b@2
+South has managed to take the first 9 tricks all by himself! Let's see how the last 4 tricks go.|
+pg| ***** 357 ***** |
+
+
+nt|^z@3^b@2|pc|cj|at|
+Clubs is the only suit remaining in South's hand. The @CJ is led to trick 10.|
+pg| ***** 358 ***** |
+
+
+nt|^z@3^b@2|pc|ca|pc|c2|pc|c6|at|
+West wins the trick with the @CA as North and East follow suit.|
+pg| ***** 359 ***** |
+
+
+nt|^z@3^b@2
+West's 3 remaining cards are the only cards left in their respective suits. West will win the last 3 tricks, holding South to his 9 top tricks, 3 in each of his 3 solid suits.|
+pg| ***** 360 ***** |
+
+
+nt|^z@3^b@2|up|39|at|
+Suppose we go back to trick 1 and think things out more carefully this time. It should come as no surprise that South can win 3 tricks in each of his 3 solid suits (spades, hearts, and diamonds) for a total of 9 tricks. How about a tenth trick?| 
+pg| ***** 361 ***** |
+
+
+nt|^z@3^b@2
+Have a look at South's non-solid suit, his clubs. Is winning a club trick possible?|
+PG| ***** 362 ***** |
+
+
+nt|^z@3^b@2
+After the @CA, @CK, and @CQ, South has the next 4 highest clubs. We have already seen how the @CKQ or @CQJ10 might win a trick via promotion. Would you believe that @CJ1098 can be promoted into a winner as well?|
+pg| ***** 363 ***** |
+
+
+nt|^z@3^b@2
+One way to see this immediately is to think as follows: the @CJ will take out the @CA, then the @C10 will force the @CK, and finally the @C9 will take care of the @CQ. The @c8 will be left as the highest club in the deck and a tenth trick-winner for North-South.|
+PG| ***** 364 ***** |
+
+
+nt|^z@3^b@2
+You still don't believe it is possible? Watch...|
+pg| ***** 365 ***** |
+
+
+nt|^z@3^b@2|pc|s2|pc|s5|pc|sq|at|
+South wins the opening spade lead with the @SQ as before. This time South will go after clubs at once.|
+pg| ***** 366 ***** |
+
+
+nt|^z@3^b@2|pc|cj|pc|ca|pc|c2|pc|c6|at|
+South leads the @CJ and West wins the trick with his @CA.|
+pg| ***** 367 ***** |
+
+
+nt|^z@3^b@2|pc|st|pc|s3|pc|s6|pc|sk|at|
+West plays another spade and South wins the trick with his @SK.|
+pg| ***** 368 ***** |
+
+
+nt|^z@3^b@2|pc|ct|at|
+South persists in clubs, leading the @C10 from his hand.
+
+West is out of clubs so he will have to discard on this trick.|
+pg| ***** 369 ***** |
+
+
+nt|^z@3^b@2|pc|h8|pc|c3|pc|cq|at|
+West discards the @H8 as East wins the trick with the @CQ.|
+pg| ***** 370 ***** |
+
+
+nt|^z@3^b@2|pc|s7|pc|sa|pc|s9|pc|s4|at|
+East leads a spade and South wins the @SA.|
+pg| ***** 371 ***** |
+
+
+nt|^z@3^b@2|pc|c9|pc|d8|pc|c4|pc|ck|at|
+South has to give up the lead one more time to promote a club trick. He leads the @C9 and West discards the @D8 as East wins the @CK. As predicted, South's @C8 is the highest remaining club.|
+pg| ***** 372 ***** |
+
+
+nt|^z@3^b@2|at|
+Did you notice that the @C8 is not the only eight in the deck that is the master card in its suit? West's @S8 is also a potential winner.|
+PG| ***** 373 ***** |
+
+
+nt|^z@3^b@2
+Fortunately, East (and not West) is on lead. Moreover, South has all the other high cards in the deck so there is no way for West to gain the lead. West's @S8 will be left to rot!|
+pg| ***** 374 ***** |
+
+
+nt|^z@3^b@2|pc|h5|at|
+The card East chooses to lead now will not make a difference. Suppose East plays a heart.|
+pg| ***** 375 ***** |
+
+
+nt|^z@3^b@2|pc|hq|pc|h9|pc|h2|at|
+South wins East's heart return with the @HQ. Now it is time for a great moment in bridge...|
+pg| ***** 376 ***** |
+
+
+nt|^z@3^b@2|pc|c8|at|
+South triumphantly leads the @C8 out of his hand.|
+pg| ***** 377 ***** |
+
+
+nt|^z@3^b@2|pc|d9|pc|c5|pc|c7|at|
+West discards the @d9 while North and East both follow suit. All that hard work suddenly seems worthwhile when the @C8 wins the trick!|
+pg| ***** 378 ***** |
+
+
+nt|^z@3^b@2
+North-South have already won 5 tricks and South's 5 remaining cards are all certain to win tricks as well. By making clubs the focus of his attack, South is able to win 10 tricks - a trick more than he won when he played all of his solid suits first.|
+pg| ***** 379 ***** |
+
+
+nt|^z@3^b@2|bt||cs|3|n#|5|at|
+
+So even when the Ace, King, and Queen of a suit are all missing:
+|ht|a|n#|5|at|^-{|ih|pc5432|at|}
+{|ih|pcjt98|at|}
+
+^-it may be possible to win a trick (or tricks) by promotion.
+
+|
+pg| ***** 380 ***** |
+
+
+at|Make sure you appreciate the ^*Iinternal solidity^*N of South's clubs. Each of the @CJ, @C10, @C9, and @C8 played a role in North-South winning their tenth trick on the deal we just saw. As with other promotion combinations, it would be just as good if these same clubs were divided in any other way between the North and South hands.
+
+|
+pg| ***** 381 ***** |
+
+
+cs|1|at|The deal we just saw further illustrates another lesson we previously learned:
+
+^-{It is not always the best strategy to win tricks as quickly as possible when you are the
+declarer. High cards should sometimes wait until after low cards have been promoted.}|
+pg| ***** 382 ***** |
+
+
+%%%%%%%
+qx|e3,Example 3 - Winning tricks with small cards in long suits|
+nt|^z@3^b@2|cs|3|fp|t|at|
+
+^-{  Example 3 - Winning tricks with small cards in long suits  }
+^-|fp||at|
+Now that you have learned to appreciate the value of all 4 of South clubs holding:|
+ht|f|cs|3|at|^D{|ih|pc5432|at|}
+^D{|ih|pcjt98|at|}
+|
+pg| ***** 383 ***** |
+
+
+ht|l|at|^-you may be surprised to learn that holding:
+^-|ht|f|cs|3|at|^T{|ih|pc5432|at|}
+^T{|ih|pc9876|at|}
+
+may be enough to produce a trick. Notice that North-South's 8 cards represent the 8 lowest clubs in the deck. As such, it may strike you as remarkable that this combination could ever produce a trick. North-South do, in fact, need a little luck to come to a trick with this combination, but it is not a long shot. Can you see how this card combination could be worth a trick?
+
+|
+pg| ***** 384 ***** |
+
+
+cs|4|at|^-{^*UHint^*N: promotion is not the answer.}
+
+|
+pg| ***** 385 ***** |
+
+
+cs|1|at|{^*UAnother hint^*N: you have already seen how small cards in long suits can sometimes win tricks.}
+
+|
+pg| ***** 386 ***** |
+
+
+st||
+md|sakqhakqdakqc9876,sjt98hjt98djt9caQ,s432h432d432c5432|mb|4n|mb|p|mb|p|mb|p|sk|s|
+
+
+nt|^z@3^b@2
+Enough hints already! Let's see how it works... This time we will play through the deal without looking at the East-West hands.|
+PG| ***** 387 ***** |
+
+
+nt|^z@3^b@2
+South's hand is the same as his last one except that the clubs have been weakened. With a little bit of luck North-South can still win 10 tricks.|
+pg| ***** 388 ***** |
+
+
+nt|^z@3^b@2|pc|sj|at|
+West's opening lead is the @SJ and North lays down a familiar (and depressing) dummy.|
+pg| ***** 389 ***** |
+
+
+nt|^z@3^b@2|pc|s2|pc|s5|pc|sq|at|
+After winning trick 1 with the @SQ, South should begin his assault on the club suit. If you don't see how the North-South clubs could ever win a trick, you will see shortly.|
+pg| ***** 390 ***** |
+
+
+nt|^z@3^b@2|pc|c6|pc|cq|pc|c2|pc|ct|at|
+South leads a club from his hand. West's @CQ wins the trick as East follows suit with a fairly high club, the @C10.|
+pg| ***** 391 ***** |
+
+
+nt|^z@3^b@2|pc|st|pc|s3|pc|s6|pc|sk|at|
+The defenders play a second round of spades, South winning the @SK.|
+pg| ***** 392 ***** |
+
+
+nt|^z@3^b@2|pc|c7|pc|ca|pc|c3|pc|cj|at|
+When South plays another club both defenders again play big enough clubs to win the trick. West's @CA wins the trick as East follows suit with the @CJ.|
+pg| ***** 393 ***** |
+
+
+nt|^z@3^b@2|pc|s9|pc|s4|pc|s7|pc|sa|at|
+South wins the spade continuation with the @SA.
+
+Did you notice that the @CA, @CQ, @CJ, and @C10 have all been played? The only card that is standing between the @c9 and a trick is the @CK.|
+pg| ***** 394 ***** |
+
+
+nt|^z@3^b@2|pc|c8|pc|h8|pc|c4|pc|ck|at|
+West discards on the third round of clubs as East wins his @CK. It may seem strange, but your @C9 is going to win a trick!|
+pg| ***** 395 ***** |
+
+
+nt|^z@3^b@2|pc|h5|pc|hq|pc|h9|pc|h2|at|
+Evidently East is now out of spades. He returns a heart and South wins the @HQ.|
+pg| ***** 396 ***** |
+
+
+nt|^z@3^b@2|pc|c9|pc|ht|pc|c5|pc|h6|at|
+Yes, the @C9 really is worth a trick! Both defenders are out of clubs and have to discard.|
+PG| ***** 397 ***** |
+
+
+nt|^z@3^b@2
+South has already won 5 tricks and he still has 5 certain winners in his hand. North-South come to 10 tricks in all, their 9 top tricks and the trick that was built in clubs.|
+pg| ***** 398 ***** |
+
+
+md|sakqhakqdakqc9876,sjt98hjt98djt9caQ,s432h432d432c5432|mb|2n|mb|p|mb|p|mb|p|sk|s|sk||
+
+nt|^z@3^b@2
+Have a look at all 52 cards and pay special attention to the club suit.|
+PG| ***** 399 ***** |
+
+
+nt|^z@3^b@2
+Can you see why North-South were able to build a trick in clubs despite the fact that East and West were dealt the 5 highest clubs between them?|
+pg| ***** 400 ***** |
+
+
+nt|^z@3^b@2|bt||cs|3|n#|5|at|
+
+Here, in isolation, is the club suit from the last deal:|
+ht|a|at|^h|ih|pc9876,caq,c5432,ckjt|at|
+
+
+North-South win a club trick because neither defender was dealt as many as 4 clubs. Once 3 rounds of clubs are played, East-West will have been forced to play all of their clubs. After 3 club tricks have been lost, North-South will be left with the only clubs in the deck (1 each). Once they regain the lead in another suit they will be able to win a trick in clubs.
+
+|cs|1|at|^-{This is not an example of winning a trick by promoting high cards.
+It is length, not strength, that wins a trick for North-South with this card combination.}|
+pg| ***** 401 ***** |
+
+
+nt|^z@3^b@2|bt||cs|3|ht|a|at|^b{|ih|pc9876,caq,c5432,ckjt|at|}
+^^
+North-South have 8 clubs, leaving East-West with 5 clubs. In the deal we have just seen (and in the diagram to the above left), the 5 East-West clubs are divided 3-2.
+
+|
+pg| ***** 402 ***** |
+
+
+at|If the East-West clubs had been divided 4-1, North-South would not have been able to win a club trick. In the diagram to the right, East can follow suit to all 4 rounds of clubs. North-South do not have a length advantage over the defenders anymore and they cannot win a trick.
+
+|cs|2|ht|a|at|^O{|ih|pc9876,ca,c5432,ckqjt|at|}|
+pg| ***** 403 ***** |
+
+
+nt|^z@3^b@2|cs|3|at|
+To summarize, with:|
+ht|c|at|^-{|ih|pc5432|at|}
+{|ih|pc9876|at|}
+
+|cs|1|at|{North-South can win a trick if the 5 East-West clubs are divided 3 and 2. 
+It doesn't matter which defender was dealt 3 clubs and which was dealt 2 clubs.}
+
+|
+pg| ***** 404 ***** |
+
+
+cs|2|at|{North-South cannot win a trick if either defender was dealt 4 (or 5) clubs.}
+
+|
+pg| ***** 405 ***** |
+
+
+cs|4|at|{North-South will, therefore, require some luck to win a trick with this card combination.}
+
+|
+pg| ***** 406 ***** |
+
+
+cs|1|at|{North-South's potential trick in this suit is based on length, not strength.}
+
+|
+pg| ***** 407 ***** |
+
+
+cs|2|at|{It is sometimes possible to win a trick (or tricks) in a suit with no high cards at all!}|
+pg| ***** 408 ***** |
+
+
+%%%%%%%%
+qx|e4,Example 4 - The high card from the short hand|
+nt|^z@3^b@2|st||sk|s|
+md|sa2hak2dak32cak32,sjt9hqjt9dqjtcqjt,skq76543h43d54c54|mb|7n|mb|p|mb|p|mb|p|
+ht|d|cs|3|fp|t|at|^-{ Example 4 - The high card from the short hand }
+^-
+|
+pg| ***** 409 ***** |
+
+
+ht|k|fp||at|Here is your hand for the next example deal.|
+pg| ***** 410 ***** |
+
+
+nt|^z@3^b@2|pc|hq|at|
+West leads the @HQ and North finally puts down a dummy with some assets! Not only does North have the @SK and @SQ, he has lots of small spades too. We have already seen how low cards in long suits can win tricks. How many tricks do you think North-South can win on this deal?|
+pg| ***** 411 ***** |
+
+
+nt|^z@3^b@2
+If you answered, "all 13," then go to the head of the class! Outside of the spade suit, North-South have 6 certain tricks, the @HAK, the @DAK, and the @CAK.|
+pg| ***** 412 ***** |
+
+
+nt|^z@3^b@2
+North-South also have 3 certain tricks in spades, the @SA, @SK, and @SQ. These cards are split between the 2 hands, but that shouldn't make a difference - there are still 3 easy spade tricks for the North-South partnership.|
+pg| ***** 413 ***** |
+
+
+nt|^z@3^b@2
+That's still only 9 tricks in immediate winners. Where are the other 4 tricks going to come from?|
+pg| ***** 414 ***** |
+
+
+nt|^z@3^b@2
+Dummy's 7-card spade suit is the answer. Once the @SA, @SK, and @SQ have all won tricks there will still be 4 small spades in the dummy. |
+PG| ***** 415 ***** |
+
+
+nt|^z@3^b@2
+If both defenders are out of spades by this time, then all 4 of dummy's remaining small spades will win tricks. North-South will win all 13 tricks - 9 tricks in top cards and 4 tricks with small spades.|
+pg| ***** 416 ***** |
+
+
+nt|^z@3^b@2
+The nicest thing about this plan is that it is probably going to work. There are 9 spades between the North and South hands leaving only 4 spades for East and West. |
+PG| ***** 417 ***** |
+
+
+nt|^z@3^b@2
+Unless all 4 outstanding spades are with one defender (not very likely) the @SA, @SK, and @SQ will draw all of the outstanding spades. Dummy will be left with 4 extra spade winners.|
+pg| ***** 418 ***** |
+
+
+nt|^z@3^b@2|pc|h3|pc|h5|pc|hk|at|
+After winning the opening heart lead in his hand, South should focus his attention on his main source of tricks, the spade suit.|
+pg| ***** 419 ***** |
+
+
+nt|^z@3^b@2
+When we were talking about card combinations you learned that, for trick-winning purposes, it doesn't matter which order the high cards are played.|
+PG| ***** 420 ***** |
+
+
+nt|^z@3^b@2
+On this deal it is very important which of the @SA, @SK, and @SQ are played first. Can you see which spade should win the next trick and why?|
+pg| ***** 421 ***** |
+
+
+nt|^z@3^b@2|pc|sa|at|
+The @SA is the only correct answer. First let's see how well this play works before exploring why the alternatives won't work.|
+pg| ***** 422 ***** |
+
+
+nt|^z@3^b@2|pc|s9|pc|s3|pc|s8|at|
+The @SA wins the first spade trick as both defenders follow suit. That is a very good sign. It means that neither defender was dealt all 4 outstanding spades. Dummy's entire suit will run.|
+pg| ***** 423 ***** |
+
+
+nt|^z@3^b@2|pc|s2|pc|st|pc|sq|pc|h6|at|
+South continues with the @S2 to dummy's @SQ (or @SK). East's discard should not be a cause for concern. West has just 1 spade left (he started with 3 spades and followed suit twice already). The @SK will take care of that spade.|
+pg| ***** 424 ***** |
+
+
+nt|^z@3^b@2|pc|sk|pc|h7|pc|c2|pc|sj|at|
+As expected, East discards again on the @SK and West follows suit with the last remaining spade, the @SJ. South discards a small card, of course, saving his high cards to win future tricks. |
+PG| ***** 425 ***** |
+
+
+nt|^z@3^b@2
+Let's just make sure all of those small spades are really good...|
+pg| ***** 426 ***** |
+
+
+nt|^z@3^b@2|pc|s7|pc|h8|pc|d2|pc|h9|at|
+Sure enough, the @S7 wins the trick! The other 3 players are out of spades and are, thus, forced to discard.|
+pg| ***** 427 ***** |
+
+
+nt|^z@3^b@2
+North-South have won the first 5 tricks. There are still 3 winning spades in the dummy and 5 winning high cards in the South hand. That adds up to North-South winning all 13 tricks!|
+PG| ***** 428 ***** |
+
+
+nt|^z@3^b@2
+We will now go back and see the result of South playing the wrong high spade at trick 2.|
+pg| ***** 429 ***** |
+
+
+nt|^z@3^b@2|up|16|at|
+The play has been returned to just after trick 1 (where South won the heart opening lead). |
+PG| ***** 430 ***** |
+
+
+nt|^z@3^b@2
+We saw how South's leading the @SA to trick 2 results in North-South winning all 13 tricks. Let's see what happens if the @SK or @SQ wins the first spade trick instead.|
+pg| ***** 431 ***** |
+
+
+nt|^z@3^b@2|pc|s2|pc|s9|pc|sq|pc|s8|at|
+South leads the @S2 from his hand and wins the trick with the @SQ in the dummy. Both defenders follow as before, meaning dummy's small spades are going to be winners.|
+pg| ***** 432 ***** |
+
+
+nt|^z@3^b@2
+There is not much choice as far as the second spade trick goes. South has only 1 spade left. It is the @SA and South will have to play that card to the next trick.|
+pg| ***** 433 ***** |
+
+
+nt|^z@3^b@2|pc|s3|pc|h6|pc|sa|pc|st|at|
+The @s3 is led from the dummy and South wins the trick with the @SA as East discards.|
+pg| ***** 434 ***** |
+
+
+nt|^z@3^b@2
+OK - North's @SK will draw West's last spade and dummy will be left with 4 extra winning small spades. There is just one small problem...
+|
+pg| ***** 435 ***** |
+
+
+cs|1|at|^-{The lead is in the South hand and there is no way to give dummy the lead!!!}|
+pg| ***** 436 ***** |
+
+
+nt|^z@3^b@2
+Dummy's spades are stranded. Everything would be fine if dummy had one of South's Aces or Kings - the lead could be transferred to the dummy in that suit.|
+pg| ***** 437 ***** |
+
+
+nt|^z@3^b@2
+As it is, the lead is locked in the South hand. North-South have won 3 tricks already and South still has 5 high card winners. That's only 8 tricks in total.|
+pg| ***** 438 ***** |
+
+
+sk||
+md|sa2hak2dak32cak32,sjt9hqjt9dqjtcqjt,skq76543h43d54c54|mb|7n|mb|p|mb|p|mb|p|at|
+
+|
+nt|^z@3^b@2
+Now 8 tricks may not sound so bad - after all it represents a clear majority of the 13 total tricks. Remember, however, that North-South could have won all 13 tricks with proper play.|
+PG| ***** 439 ***** |
+
+
+nt|^z@3^b@2
+This huge (5 trick) difference is a direct result of South's play in the spade suit. The correct play results in 7 spade tricks while the incorrect play results in only 2 spade tricks.|
+pg| ***** 440 ***** |
+
+
+nt|^z@3^b@2|bt||cs|3|n#|5|at|
+To summarize, with this card combination:|
+ht|c|at|^-{|ih|pskq76543|at|}
+{|ih|psa2|at|}
+
+|
+pg| ***** 441 ***** |
+
+
+n^|m|cs|4|at|{North-South can win 7 tricks provided that neither defender was dealt all 4 missing spades.}
+^-|
+pg| ***** 442 ***** |
+
+
+n#|8|cs|2|at|^-{When North has no way to win a trick (and thus the lead) in any of the
+other suits it is important that the @SA is the card that wins the first trick.}
+^-|
+pg| ***** 443 ***** |
+
+
+n#|8|cs|1|at|^-{Leaving winners stranded in the dummy is not much fun. To avoid this
+pitfall, always think carefully about the order in which you win your tricks.}
+^-|
+pg| ***** 444 ***** |
+
+
+n#|8|at|When we were just thinking about card combinations, the order of winning tricks was not important - we could always say, "when North regains the lead he can win some tricks." In some real bridge deals there is no way for the hand with winning tricks to regain the lead. When this is the case, you have to be very careful with the order in which you win your tricks.|
+pg| ***** 445 ***** |
+
+
+nt|^z@3^b@2|n#|5|at|
+
+Here is a good rule to use in order to help you avoid the pain of stranding your winning tricks. Remember that bridge is not very well suited to rules. The following rule is one of the soundest bridge rules of them all, but even it has exceptions on some deals.
+
+|
+pg| ***** 446 ***** |
+
+
+cs|1|at|^-{If a suit has unequal numbers of cards between the two hands,
+you should win tricks with the high cards in the shorter hand first.}
+
+|
+pg| ***** 447 ***** |
+
+
+cs|2|at|^-For example, with:
+|ht|h|n#|5|at|^G  {|ih|psAK2|at|}
+^G{|ih|psQJT98|at|}|
+ht|l|at|^LNorth has 3 cards and South has 5 cards, 
+^Lan unequal number with North being the short hand. 
+
+^LWin the first 2 tricks with the @SA and the @SK 
+^L(the high cards in the short hand).
+
+|
+pg| ***** 448 ***** |
+
+
+ht|t|at|If the @s2 is played to either the first or second trick, South will win that trick, but the suit will become messed up. The third trick will have to be won in the North hand, stranding 2 winning spades in the South hand.
+
+Everything will still be OK if South can regain the lead in some other suit. If South has no way to regain the lead, however, he should pay attention to the above rule!|
+pg| ***** 449 ***** |
+
+
+%%%%%%
+qx|exercises,Exercises|
+nt|^z@3^b@2|cs|3|fp|3|at|
+
+^-{      Exercises       }
+^-
+|fp||cs||at|That brings us to the end of the new material that will be presented in this chapter. Before moving on to the next chapter there are several quizzes for you to answer and exercises for you to do. You will even get a chance to be declarer on some deals of bridge.
+
+Use these exercises to test yourself on what you have learned so far about trick-taking, card combinations, and various strategies that a declarer might adopt. Don't worry if you can't get all of these right the first time you try.
+
+|cs|1|at|^-{Learning from your mistakes is the best way to improve at bridge!}|
+pg| ***** 450 ***** |
+
+
+nt|^z@3^b@2|cs|3|ht|c|at|^-{|ih|psJt98|at|}
+
+{|ih|psakq|at|}
+^-
+|hf|o|cq|3|lb|*MHow many tricks can North-South win with this card combination?^1~2~3~4~It depends^4|
+ht|p|cs|2|at|^-{North-South can win 4 tricks with this card combination.}
+^-
+The @SA, @SK, and @SQ will win the first 3 tricks. North will have to follow suit 3 times, but his remaining card, the @SJ, will then be the highest spade left. North will therefore be able to win a fourth trick for the partnership.|
+pg| ***** 452 ***** |
+
+
+hz|y| %% TURN ON - fill floating hands background so allowing later replacement by Overlap
+
+
+nt|^z@3^b@2|cs|3|ht|c|at|^-{|ih|ps5432|at|}
+
+{|ih|psakq|at|}
+^-
+|hf|o|lb|*MHow many tricks can North-South win with this card combination?^1~2~3~4~It depends^5|
+ht|p|cs|2|at|^-{North-South can win either 3 or 4 tricks with this card combination.
+The answer depends on how the 6 East-West spades are divided.}
+^-
+The @SA, @SK, and @SQ will win the first 3 tricks. If all of the East-West spades fall then North's remaining spade will win a fourth trick for the partnership.
+
+|
+pg| ***** 454 ***** |
+
+
+at|North's remaining spade will win a trick only if the 6 East-West spades are divided 3 and 3. In this case all 6 of the defenders' spades will fall under the @SA, @SK, and @SQ.|
+cs|3|ht|e|at|^h{|ih|psjt9|at|} |n#|z|at|^r{|ih|ps876|at|}|
+pg| ***** 455 ***** |
+
+
+ht|w|at|If either defender was dealt 4 (or more) spades, however, he will still have a spade left that can beat North's @S5 and North-South will win only 3 tricks.|
+cs|3|ht|e|at|^H{|ih|psjt|at|} |n#|z|at|^Q    {|ih|ps9876|at|}
+
+|
+pg| ***** 456 ***** |
+
+
+hz|n| %% TURN OFF - fill floating hands background so real background shows through (e.g. for Questions)
+
+
+nt|^z@3^b@2|cs|3|ht|c|at|^-{|ih|psaq43|at|}
+
+{|ih|psk2|at|}
+^-
+|hf|o|
+lb|*CWhich card should be used to win the first trick?^^sk^sakq|
+
+
+
+ht|p|cs|2|at|^-{The @SK (the ^*Ihigh card from the short hand^*N) should be used to win the first trick.}
+^-|
+pg| ***** 458 ***** |
+
+
+hf|q|lb|*MHow many tricks can North-South win with this card combination?^1~2~3~4~It depends^3|
+
+
+ht|r|cs|4|at|^-{North-South can win 3 tricks with this card combination.}
+^-^^^^The defenders have 7 spades between them. That means that one of them must have been dealt 4 or more spades. That defender will still have a spade left after the @SA, @SK, and @SQ are played. North's remaining small spade will not win a trick.|
+cs|3|ht|e|at|^H{|ih|psjt9|at|} |n#|z|at|^Q{|ih|ps8765|at|}|
+pg| ***** 460 ***** |
+
+
+nt|^z@3^b@2|cs|3|ht|c|at|^-{|ih|pskq32|at|}
+
+{|ih|psa87654|at|}
+^-
+|hf|o|lb|*MHow many tricks can North-South win with this card combination?^3~4~5~6~It depends^4|
+ht|p|cs|2|at|^-{North-South can win 6 tricks with this card combination.}
+^-
+North-South have 10 spades between them so there are only 3 spades left for the defenders. Even if one defender holds all 3 of these cards they will all fall under the @SA, @SK, and @SQ. South's 3 remaining spades will all win tricks and North-South will win 6 spade tricks in all.|
+cs|3|ht|e|at|^H{|ih|psjt9|at|}|
+pg| ***** 462 ***** |
+
+
+nt|^z@3^b@2|cs|3|ht|c|at|^-{|ih|ps5432|at|}
+
+{|ih|pst9876|at|}
+^-
+|hf|o|lb|*MWhat is the maximum number of tricks that this card combination can win?^0~1~2~3~4~5^4|
+ht|p|cs|2|at|^-{If North-South are lucky they can win 3 tricks with this card combination.}
+^-
+North-South have 9 spades between them leaving 4 for East and West. If those 4 spades are divided 2 and 2, then they will all have to be played on the first 2 spade tricks. South's 3 remaining spades will all win tricks.|
+cs|3|ht|e|at|^H{|ih|psak|at|} |n#|z|at|^s{|ih|psqj|at|}|
+pg| ***** 464 ***** |
+
+
+nt|^z@3^b@2|cs|3|ht|c|at|^-{|ih|ps5432|at|}
+
+{|ih|pst9876|at|}
+^-
+|hf|o|lb|*MWhat is the minimum number of tricks that this card combination can win?^0~1~2~3~4~5^2|
+ht|p|cs|2|at|^-{If North-South are very unlucky they will win only 1 trick with this card combination.}
+^-
+If one of the defenders was dealt all 4 of the outstanding spades, North-South will still win 1 spade trick. North-South will have to lose 4 spade tricks, but South will be left with the last spade in the deck - good for 1 trick.|
+cs|3|ht|e|at|^H{|ih|psakqj|at|}|
+pg| ***** 466 ***** |
+
+
+nt|^z@3^b@2|cs|3|ht|c|at|^-{|ih|ps5432|at|}
+
+{|ih|pst9876|at|}
+^-
+|ht|p|cs|2|at|^-{If North-South are very unlucky they will win only 1 trick with this card combination.}
+^-
+If one of the defenders was dealt all 4 of the outstanding spades, North-South will still win 1 spade trick. North-South will have to lose 4 spade tricks, but South will be left with the last spade in the deck - good for 1 trick.
+
+|cs|4|at|^-{Good luck (a 2-2 split) results in 3 tricks. Bad luck (a 4-0 split) results in 1 trick.
+It will come as no surprise that a 3-1 split, neither lucky nor unlucky, results in 2 tricks.}
+^-
+With spades 3-1, all the East-West spades are exhausted after 3 tricks have been played. South's 2 remaining spades will both win tricks.
+|cs|3|ht|e|at|^H{|ih|psakq|at|} |n#|z|at|^s {|ih|psj|at|}|
+pg| ***** 467 ***** |
+
+
+nt|^z@3^b@2|cs|3|ht|c|at|^-{|ih|psqt54|at|}
+
+{|ih|pskj32|at|}
+^-
+|hf|o|lb|*MHow many tricks can North-South win with this card combination?^0~1~2~3~4~It depends^4|
+ht|p|cs|2|at|^-{Promotion results in 3 tricks for North-South with this card combination.}
+^-
+The @SK can be led to drive out the @SA. The @SQ, @SJ, and @S10 will be promoted into the 3 highest spades. North-South will therefore win 3 spade tricks even if one of the defenders was dealt 4 or 5 spades.|
+pg| ***** 469 ***** |
+
+
+cs|3|ht|e|at|^H{|ih|psa987|at|} |n#|z|at|^r {|ih|ps6|at|}|
+pg| ***** 470 ***** |
+
+
+nt|^z@3^b@2|cs|3|ht|c|at|^-{|ih|psjt9876|at|}
+
+{|ih|psq5|at|}
+^-
+|hf|o|lb|*CWhat card should be led first with this card combination?^^sq^sqjt98765|
+ht|p|cs|2|at|^-{The @SQ, the ^*Ihigh card from the short hand^*N, should be led first.}
+^-
+|hf|r|lb|*MHow many tricks can North-South win with this card combination?^0~2~4~6~It depends^3|
+ht|s|cs|4|at|^-{Promotion results in 4 tricks for North-South with this card combination.}
+^-
+The only high spades that the defenders hold are the @SA and @SK. It will take 2 tricks to drive out those cards, but North's 4 remaining spades will all be promoted into certain winners.|
+pg| ***** 473 ***** |
+
+
+cs|3|ht|e|at|^H{|ih|psak4|at|} |n#|z|at|^r {|ih|ps32|at|}|
+pg| ***** 474 ***** |
+
+
+nt|^z@3^b@2|
+%%%%%%%%%%%%%%%%%%%%%%
+HT|c|at|^d    |ih|pskqjthkqjdkqjckqj|
+HT|c|at|^s |ih|psa987ha98da98ca98|hf|i|lb|*mWhich hand rates to win more tricks?^First~Second^1|ht|i|at|The hand on the left has only 4 losers, the 4 Aces. Once those cards are driven out the remaining 9 cards in this hand will be promoted into winners.|
+pg| ***** 476 ***** |
+
+
+at|
+
+The second hand is certain to win 4 tricks with its 4 Aces, but is unlikely to be able to win any more tricks. There is no chance to develop extra tricks either through promotion or with small cards in a long suit.|
+pg| ***** 477 ***** |
+
+
+ht|N|cs|2|at|^-{  If you and your partner were each dealt one of these hands, then the partnership would win 
+^B 13 tricks without breathing hard. It's easier to win tricks with a partner than it is by yourself!}^-|
+pg| ***** 478 ***** |
+
+
+qx|d1,Bridge Master deal 1|st||
+md|sakqhkjtdaq2cqt86,sjt98h9876d9876ca,s432haq2cdkjtckj97,|mb|6n|mb|p|mb|p|mb|p|pc|!sj|
+
+nt|^z@3^b@2|cs|2|ht|c|at|{  Deal 1  }
+ 
+|ht|i|cs|4|at|^B{You, South, are the declarer playing 6NT contract.
+}|cs||
+
+sk|s|pf|first,s|
+pg| ***** 479 ***** |
+
+
+sk||
+nt|^z@3^b@2
+12 tricks can be won with proper play. |
+pg| ***** 480 ***** |
+
+
+at|There are 3 immediate winners in spades, |
+pg| ***** 481 ***** |
+
+
+at|hearts, |
+pg| ***** 482 ***** |
+
+
+at|and diamonds. |
+pg| ***** 483 ***** |
+
+
+at|3 extra winners can be developed in the club suit where only the @CA is missing. Once that card is dislodged, promotion results in 3 club tricks for North-South.
+
+|
+pg| ***** 484 ***** |
+
+
+at|After winning the spade opening lead, |
+pg| ***** 485 ***** |
+
+
+pc|s|pc|s|pc|s|
+pg| ***** 486 ***** |
+
+
+at|it is best to drive out the @CA at once.|
+pg| ***** 487 ***** |
+
+
+pc|c|pc|c|pc|c|pc|c|
+pg| ***** 488 ***** |
+
+
+nt|^z@3^b@2
+You can win whatever suit West returns. |
+pg| ***** 489 ***** |
+
+
+pc|s|pc|s|pc|s|pc|s|
+pg| ***** 490 ***** |
+
+
+at|Now that North-South's clubs have been promoted into winners the remaining 10 tricks can be won. The order that the suits are played does not matter.
+
+|
+pg| ***** 491 ***** |
+
+
+up|11|
+nt|^z@3^b@2
+There is one trap to avoid on this deal. We are back at trick 1 to have a look at the danger.
+
+|
+pg| ***** 492 ***** |
+
+
+pc|s|pc|s|pc|s|at|Suppose that after winning the spade opening lead we play all of our winners in another suit before touching clubs. |
+pg| ***** 493 ***** |
+
+
+at|It doesn't matter which of the other 3 suits we play, so suppose we choose diamonds.|
+pg| ***** 494 ***** |
+
+
+pc|da|pc|d|pc|d|pc|d|
+pg| ***** 495 ***** |
+
+
+pc|d|pc|d|pc|dk|pc|d|
+pg| ***** 496 ***** |
+
+
+pc|d|pc|d|pc|d|pc|d|
+pg| ***** 497 ***** |
+
+
+nt|^z@3^b@2
+Now watch happens when we drive out the @CA in an attempt to set up some extra winners.
+
+|
+pg| ***** 498 ***** |
+
+
+pc|c|pc|c|pc|c|pc|c|at|West wins the @CA, but we have set up a diamond winner for him. West is on lead and is about to win a second trick for the defenders. |
+pg| ***** 499 ***** |
+
+
+pc|d|pc|c|pc|c|pc|c|at|You will still win 11 tricks which is not bad, but it is not as good as the 12 tricks you could have won by playing clubs at once.|
+pg| ***** 500 ***** |
+
+
+nt|^z@3^b@2|up|23|cs|1|at|
+The key lesson of this deal:
+^^^-{Try to lose the tricks that must be lost as early as possible. Save your high cards in your short
+suit(s) to prevent the defenders from winning extra tricks should you have to lose the lead.}|
+PG| ***** 501 ***** |
+
+
+nt|^z@3^b@2|
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%
+qx|d2,Bridge Master deal 2|st||
+md|sakqhak2d32cat987,sjt98hqjtdqjtckqj,s432h543dak4c5432,|mb|4n|mb|p|mb|p|mb|p|pc|!sj|st||
+nt|^z@3^b@2|cs|2|ht|c|at|{  Deal 2  }
+ 
+|ht|i|cs|4|at|^B{You, South, are the declarer playing 4N contract.
+}|
+sk|s|pf|first,s|
+pg| ***** 502 ***** |
+
+
+sk||
+nt|^z@3^b@2
+10 tricks can be won with proper play. |
+pg| ***** 503 ***** |
+
+
+at|There are 3 immediate winners in spades, |
+pg| ***** 504 ***** |
+
+
+at|2 in hearts, |
+pg| ***** 505 ***** |
+
+
+at|and 2 in diamonds. |
+pg| ***** 506 ***** |
+
+
+at|The @CA is an an eighth immediate winner. 2 extra winners can be developed with small cards in South's long club suit.
+
+|
+pg| ***** 507 ***** |
+
+
+at|After winning the spade opening lead, |
+pg| ***** 508 ***** |
+
+
+pc|s|pc|s|pc|s|
+pg| ***** 509 ***** |
+
+
+at|it is correct to play clubs at once.|
+pg| ***** 510 ***** |
+
+
+pc|ca|pc|c|pc|c|pc|c|
+pg| ***** 511 ***** |
+
+
+nt|^z@3^b@2
+After the @CA is cashed a club trick should be surrendered to the defenders. |
+pg| ***** 512 ***** |
+
+
+pc|c|pc|c|pc|c|pc|d|at|East's discard reveals that the defenders' 4 clubs were originally dealt 3 to West and 1 to East.  |
+pg| ***** 513 ***** |
+
+
+at|If clubs had divided 2-2, East would have followed suit to the last trick and all 3 of South's remaining clubs would be winners. With the actual 3-1 club division, West still has a club left and only 2 tricks with small clubs can be developed. There is some work to do.|
+pg| ***** 514 ***** |
+
+
+nt|^z@3^b@2
+Win whatever suit West returns. |
+pg| ***** 515 ***** |
+
+
+pc|s|pc|s|pc|s|pc|s|
+pg| ***** 516 ***** |
+
+
+at|Then continue the assault on clubs, driving out West's last card in that suit. |
+pg| ***** 517 ***** |
+
+
+pc|c|pc|c|pc|c|pc|d|
+pg| ***** 518 ***** |
+
+
+at|Now that the defenders' clubs are all exhausted, South's 2 remaining small clubs are winners.
+
+|
+pg| ***** 519 ***** |
+
+
+at|Win whatever suit West returns. |
+pg| ***** 520 ***** |
+
+
+pc|s|pc|s|pc|s|pc|s|
+pg| ***** 521 ***** |
+
+
+at|You will win 6 of the last 7 tricks - 10 tricks in all.|
+pg| ***** 522 ***** |
+
+
+up|23|
+nt|^z@3^b@2|cs|1|at|
+The key lesson of this deal:
+^^^-{Extra winners can be developed with ^*Ismall cards in long suits^*N. The division of the defenders'
+cards in your long suit can impact the number of extra winners that you are able to develop.}|
+PG| ***** 523 ***** |
+
+
+%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+qx|d3,Bridge Master deal 3|st||
+md|skqhakqdqjt987cak,sa32hjt987dakc987,sjt9h2d5432c65432,|mb|3n|mb|p|mb|p|mb|p|pc|!hj|st||tc|n|
+nt|^z@3^b@2|cs|2|ht|c|at|{  Deal 3  }
+ 
+|ht|i|cs|4|at|^B{You, South, are the declarer playing 3N contract.
+}|
+sk|s|pf|first,s|
+pg| ***** 524 ***** |
+
+
+sk||
+nt|^z@3^b@2
+9 tricks can be won with proper play. |
+pg| ***** 525 ***** |
+
+
+at|There are 5 immediate winners, 3 in hearts and |
+pg| ***** 526 ***** |
+
+
+at|2 in clubs. |
+pg| ***** 527 ***** |
+
+
+at|Promotion can be used to develop extra winners in both spades |
+pg| ***** 528 ***** |
+
+
+at|and diamonds. |
+pg| ***** 529 ***** |
+
+
+at|It makes a difference, however, which suit declarer chooses to play first.
+
+|
+pg| ***** 530 ***** |
+
+
+at|Suppose that after winning the heart opening lead, |
+pg| ***** 531 ***** |
+
+
+pc|h|pc|h|pc|h|
+pg| ***** 532 ***** |
+
+
+at|you decide to play on spades.|
+pg| ***** 533 ***** |
+
+
+pc|sk|pc|sa|pc|s|pc|s|
+pg| ***** 534 ***** |
+
+
+nt|^z@3^b@2
+After West wins the @SA, he will play another heart to you. |
+pg| ***** 535 ***** |
+
+
+pc|h|pc|c|pc|h|pc|h|
+pg| ***** 536 ***** |
+
+
+at|You have set up a spade winner, but it is too late to maximize the trick-winning potential of this deal.
+
+|
+pg| ***** 537 ***** |
+
+
+at|Suppose you now turn your attention to diamonds. |
+pg| ***** 538 ***** |
+
+
+pc|dq|pc|d|pc|d|pc|d|at|West wins the trick and plays another heart.|
+pg| ***** 539 ***** |
+
+
+pc|h|pc|c|pc|h|pc|h|
+pg| ***** 540 ***** |
+
+
+nt|^z@3^b@2
+West has just driven out your last heart stopper - you can no longer prevent him from winning tricks in hearts. The @DA will be the third trick for the defenders and West's 2 heart winners will bring their total up to 5 tricks.
+
+You will be able to win the remaining 8 tricks - quite a bit better than the 5 tricks that you started with, but not as well as you could have done by playing diamonds before spades.|
+pg| ***** 541 ***** |
+
+
+up|19|
+nt|^z@3^b@2
+We are back at trick 1 where West has just played the @HJ as his opening lead. 
+
+|
+pg| ***** 542 ***** |
+
+
+pc|h|pc|h|pc|h|at|After winning the first trick, let's see what happens if we play on diamonds instead of spades. Remember that playing on spades led to 8 tricks for North-South.|
+pg| ***** 543 ***** |
+
+
+pc|dq|pc|d|pc|d|pc|d|
+nt|^z@3^b@2
+West wins the @DK and plays another heart. |
+pg| ***** 544 ***** |
+
+
+pc|h|pc|c|pc|h|pc|h|
+pg| ***** 545 ***** |
+
+
+at|We can continue diamonds now, secure in the knowledge that the heart suit still contains a stopper. |
+pg| ***** 546 ***** |
+
+
+pc|dj|pc|d|pc|d|pc|c|at|West wins the @DA and plugs away at hearts. |
+pg| ***** 547 ***** |
+
+
+pc|h|pc|c|pc|h|pc|h|
+pg| ***** 548 ***** |
+
+
+nt|^z@3^b@2
+We have developed 4 extra winners in diamonds. |
+pg| ***** 549 ***** |
+
+
+at|There is no time to develop a spade trick anymore - West would win the @SA and then 2 heart tricks. 
+
+|
+pg| ***** 550 ***** |
+
+
+at|It is best to settle for 9 tricks by taking the 6 remaining winners in diamonds and clubs. That's 1 trick more than we won by playing on spades before diamonds.|
+pg| ***** 551 ***** |
+
+
+up|19|
+nt|^z@3^b@2
+We were fortunate enough to have been dealt 3 heart stoppers on this deal, but one of those was knocked out by the opening lead. We were left with 2 heart stoppers (and 2 club stoppers) so we could only afford to lose the lead twice (after that the defenders could win extra tricks). 
+
+By losing the lead twice in diamonds (and never in spades), we were able to maximize the number of tricks that we were able to win.|
+pg| ***** 552 ***** |
+
+
+nt|^z@3^b@2|cs|1|at|
+The key lesson of this deal:
+^^^-{It is usually best to develop tricks in your longest combined suits, not your strongest suits.
+Always be aware, however, of the number of stoppers you have in your short suits.}
+|
+PG| ***** 553 ***** |
+
+
+nt|^z@3^b@2|
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+qx|d4,wide Bridge Master deal 4|st||
+md|sk2hk54dakqcak432,sa65hqjtd9876cqjt,sqjt987ha32d432c5,|mb|6n|mb|p|mb|p|mb|p|pc|!hq|st||tc|n|
+nt|^z@3^b@2|cs|2|ht|c|at|{  Deal 4  }
+ 
+|ht|i|cs|4|at|^B{You, South, are the declarer playing 4N contract.
+}|
+sk|s|pf|first,s|
+pg| ***** 554 ***** |
+
+
+sk||
+nt|^z@3^b@2
+12 tricks can be won with proper play. |
+pg| ***** 555 ***** |
+
+
+at|There are 7 immediate winners, 2 in hearts, |
+pg| ***** 556 ***** |
+
+
+at|3 in diamonds, |
+pg| ***** 557 ***** |
+
+
+at|and 2 in clubs. |
+pg| ***** 558 ***** |
+
+
+at|Promotion will result in 5 extra winners in spades once the @SA is dislodged.
+
+|
+pg| ***** 559 ***** |
+
+
+nt|^z@3^b@2
+There are 2 critical plays that must be made, the first of these comes at trick 1. West's heart opening lead should be won with the @HK in the South hand, not the @HA in the dummy.|
+pg| ***** 560 ***** |
+
+
+pc|h|pc|h|pc|hk|
+pg| ***** 561 ***** |
+
+
+nt|^z@3^b@2
+By winning the first trick with the @HK, the @HA in dummy is saved as a means of access to the long spade suit in the dummy.
+
+|
+pg| ***** 562 ***** |
+
+
+at|The second critical play on this deal comes at trick 2. The spade suit should be started by leading the @SK, the ^*Ihigh card from the short hand^*N. |
+pg| ***** 563 ***** |
+
+
+pc|sk|pc|s|pc|s|pc|s|
+pg| ***** 564 ***** |
+
+
+nt|^z@3^b@2
+When the defenders allow the @SK to win the trick, the @S2 is led next. |
+pg| ***** 565 ***** |
+
+
+pc|s|pc|s|pc|s|pc|s|
+pg| ***** 566 ***** |
+
+
+at|Once again the defenders refuse to take the @SA, but they can't refuse forever - eventually they will have to win the @SA.|
+pg| ***** 567 ***** |
+
+
+pc|s|pc|d|pc|c|pc|s|
+pg| ***** 568 ***** |
+
+
+at|
+
+West's heart return is won with dummy's @HA, |
+pg| ***** 569 ***** |
+
+
+pc|h|pc|ha|pc|h|pc|h|
+pg| ***** 570 ***** |
+
+
+at|placing the lead in the right hand to enjoy the long spades. |
+pg| ***** 571 ***** |
+
+
+at|There are 8 winners available for the last 8 tricks. North-South win 12 tricks in all.|
+pg| ***** 572 ***** |
+
+
+up|19|
+nt|^z@3^b@2|cs|1|at|
+There are 2 key lessons in this deal:
+^^^-{When setting up a long suit, start with the ^*Ihigh card from the short hand^*N.}
+
+|
+pg| ***** 573 ***** |
+
+
+cs|2|at|{Preserve a high card in the hand with the long suit for later access to the winners you set up.}|
+PG| ***** 574 ***** |
+
+
+nt|^z@3^b@2|
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+qx|d5,wide Bridge Master deal 5|st||
+md|sak54h8765da2c654,sqjt98hat9d765c87,s32h432dqjt98ca32|mb|1n|mb|p|mb|p|mb|p|pc|!sq|st||tc|n|
+nt|^z@3^b@2|cs|2|ht|c|at|{  Deal 5  }
+ 
+|ht|i|cs|4|at|^B{You, South, are the declarer playing 1N.
+}|
+sk|s|pf|first,s|
+pg| ***** 575 ***** |
+
+
+sk||
+nt|^z@3^b@2
+7 tricks can be won with proper play. |
+pg| ***** 576 ***** |
+
+
+at|There are 4 immediate winners, 2 in spades, |
+pg| ***** 577 ***** |
+
+
+at|the @DA, |
+pg| ***** 578 ***** |
+
+
+at|and the @CA. |
+pg| ***** 579 ***** |
+
+
+at|3 extra winners can be developed with dummy's diamond suit by a form of promotion that we have not seen before. |
+pg| ***** 580 ***** |
+
+
+at|
+^^Notice that the @DK is the only high card that the defenders were dealt in the diamond suit. Once that card is dislodged all of dummy's diamonds will be promoted into extra winners.|
+pg| ***** 581 ***** |
+
+
+nt|^z@3^b@2
+Start by winning West's spade opening lead. |
+pg| ***** 582 ***** |
+
+
+pc|s|pc|s|pc|sk|
+pg| ***** 583 ***** |
+
+
+at|Next, continue with the @DA (the ^*Ihigh card from the short hand^*N). |
+pg| ***** 584 ***** |
+
+
+pc|da|pc|d|pc|d|pc|d|
+pg| ***** 585 ***** |
+
+
+at|Now surrender a trick to the @DK. |
+pg| ***** 586 ***** |
+
+
+pc|d|pc|d|pc|d|pc|dk|
+pg| ***** 587 ***** |
+
+
+at|North's remaining diamonds have been promoted into winners and the @CA can be used to gain access to the dummy.
+
+|
+pg| ***** 588 ***** |
+
+
+at|North-South have won 2 tricks and will win 5 more - 7 tricks in all.|
+pg| ***** 589 ***** |
+
+
+up|11|
+nt|^z@3^b@2|cs|1|at|
+The key lesson of this deal:
+^^^-{We have not explored every card combination where promotion can produce extra winners.
+Be on the lookout for new combinations where the principles you have learned can be applied.}|
+PG| ***** 590 ***** |
+
+
+nt|^z@3^b@2|
+%%%%%%%%
+qx||bt||ht|i|fp|t|cs|c|cp||
+at|
+^-{^^    End   ^^^^	        Chapter 2       ^^ 
+}
+^-|
+CP||fp||
+pg| ***** 591 ***** |
+
+

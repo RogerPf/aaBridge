@@ -1,0 +1,88 @@
+%%
+%%
+
+ss|chapter, 2.  Probability                                               |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-05-30          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Suit  Combinations  and  Probability                       |
+%%
+cr|m200|cg|m100|cb|m090|   fill   m  m-mastColor       on Title Pages
+cr|c208|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02a__FP_fonts_colors.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+<<--INSERT-END**-->>=02a__FP_fonts_colors.ins
+
+
+<<--INSERT-START-->>=02b__FP_bars.ins
+%%
+bt||
+nt|^b@2^z@3|
+%%
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02b__FP_bars.ins
+
+
+
+
+%%
+%%   The text below is special to this lin file and not part of any header ------------------------
+%%
+
+
+at|^c@2
+While  Suit Combinations  and  Probability  are inextricably linked it does make sense to tease them apart so we can focus on practical uses in our game of bridge.
+
+^d ^*h https://en.wikipedia.org/wiki/Contract_bridge_probabilities ^*n
+
+|lg|c|
+at|is an oft visited page giving the probabilities for the split of cards in a suit that you as declarer do NOT hold.  For example, the wikipedia table says the chance of an opps suit splitting  2 - 2  is  ^*b 0.41^*n,  where  1.0  is certainty and  0.0  guarantees it will never happen.^*n 
+
+|lg|8|at|I prefer to use the BridgeHands table that covers the same material
+
+^d ^*h https://www.bridgehands.com/P/Probability_of_Card_Distribution.htm ^*n
+
+and to get to it I normally just ...
+
+^d ^*b google ^*n  ^*h https://www.google.com/search?q=bridgehands+prob, bridgehands  prob ^*n  and the wanted link is at the top of the list.
+
+|lg|c|at|The ^*b BridgeHands ^*n table gives the probability of the  2 - 2  split as ^*b 40.7% ^*n  (where 100% is certainty).
+
+I suggest you go and have a look at the ^*b BridgeHands ^*n table for yourself now.  You will see the 3 - 1 split is highlighted in blue to show it is the most likely.|
+
+qx|2.|
+pg| ***** 0 ***** |
+
+

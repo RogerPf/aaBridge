@@ -1,0 +1,52 @@
+%% Test as You Write
+%% Last edited  2013 Dec 03
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|150|ff|1Arial|fb|19|fm|1|       1 large
+fh|236|ff|2Arial|fb|29|fm|2|       2 med
+fh|342|ff|3Arial|fb|39|fm|3|       2 med+
+fh|664|ff|6Arial|fb|69|fm|6|       6 v large
+fh|925|ff|9Arial|fb|99|fm|9|       very small for faking 'buttons'
+
+cr|3200|cg|3255|cb|3255|     3  light blue
+cr|4170|cg|4190|cb|4255|     4  med blue
+cr|516|cg|5128|cb|516|       5  green 
+cr|7230|cg|70|cb|70|         7  red
+
+bt||
+fp|1|at|
+
+^a   @s @h @d @c  ^v     @c @d @h @s|
+fp|9|
+mn|   Test as You Write   |
+qx|Test|
+ht|d|
+at|^z@3^^|fp||at|
+^b@2So you have written a small lin file in your text editor and want to test it @-
+
+^c@.   |cp|7|at|^*bDrag n Drop^*n|cp||at| on to ^*baaBridge^*n, any files you want to work on. They will appear in gray column on your left.
+
+                       (Windows users can instead double click on single .lin files.)
+
+Your file will now appear in that column exactly as does the title to this file, black text in a white box.  Note the
+|cp|7|at|^*bNavigation Bar^*n|cp||at|.  The cream and grey line, with bobbles on it, at the bottom of this window. Clicking on that bar will move you to that point in your lin file.           |cp|5|at|(For  ^*bWindows users  ^*ndouble clicking just one file should also work.)|cp||at|
+
+The  'edit and test cycle'  is now as follows -
+
+^c@2@.   Move to the place in your file where you are about to make changes, so you can see that area in aaBridge.
+
+^c@2@.   You are in your editor happily editing away - until you decide you want see what your changes look like.
+
+^c@2@.   Save the file from inside your editor (as normal).
+
+^c@2@.   Your changes will appear on the page in aaBridge as if by Magic.
+
+
+^b@2You can of course  ^*b Step ^*n or ^*b Flow ^*n  normally to see any changes you have done on other pages.
+  
+This is called a   'zero click'   edit and test cycle  @-  enjoy.
+
+
+|
+ht|z|at|@0
+^r Roger Pfister   -   March 2015|

@@ -1,0 +1,170 @@
+%%
+%%
+
+ss|chapter, 6.  Suit  Combinations                                 |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-05-30          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Suit  Combinations  and  Probability                       |
+%%
+cr|m200|cg|m100|cb|m090|   fill   m  m-mastColor       on Title Pages
+cr|c208|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02a__FP_fonts_colors.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+<<--INSERT-END**-->>=02a__FP_fonts_colors.ins
+
+
+<<--INSERT-START-->>=02b__FP_bars.ins
+%%
+bt||
+nt|^b@2^z@3|
+%%
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02b__FP_bars.ins
+
+
+%%
+%%   The text below is special to this lin file and not part of any header ------------------------
+%%
+
+
+at|^c@2
+It happens that aaBridge contains the best introduction to ^*b Suit Combinations ^*n that there is.  Actually it is far more than an introduction as you will see if you follow the link below.   
+|n^|3|at|
+^d ^*g :fglb7a::Learn to Play Bridge 2, Books   -   Learn to Play Bridge 2    -    Suit Combinations^*n|
+n#|7|fp|s|at|^^^fIf you do follow the link you can return  HERE  by clicking the  |fp|t|n#|1|at|@L|fp|s|n^|1|at|   icon button, top left.|fp||at|
+
+|n^|7|at|
+The resource I use most is the ^*b BridgeHands Suit Combinations ^*n table
+|n^|3|at|
+^d ^*h https://www.bridgehands.com/S/Suit_Combinations.htm ^*n
+|n^|3|at|
+|
+lg||
+n#|3|at|
+
+|fp|t|at|^bHow to use|fp||at|
+|n^|6|at|
+|lg|f|at|After a session of bridge when you review your play (you do a review, don't you) see ^*g :BBO Hands to aaBridge::Welcome, BBO Hands to aaBridge^*n.  You can pick out the spots where you did not know best to play a particular suit combination then look it up in the BridgeHands SuitComb table.   Then make and keep a note on this combination.
+|n^|6|at|
+How to do this is covered in the next few pages.|
+qx|6.|
+pg| ***** 0 ***** |
+
+
+nt|^b@2^z@3^^|
+ff|zTimes New Roman|fp|z|
+at|^t@2 ^-{ |n#|5|at|^*b HCP held by Opponents ^*n
+|n^|5|at|
+^*u ^*hhttps://www.bridgehands.com/S/Suit_Combination_0.htm,Zero HCP^*n
+^*u ^*hhttps://www.bridgehands.com/S/Suit_Combination_1.htm,1 HCP^*n
+^*u ^*hhttps://www.bridgehands.com/S/Suit_Combination_2.htm,2 HCP^*n
+^*u ^*hhttps://www.bridgehands.com/S/Suit_Combination_3.htm,3 HCP^*n
+^*u ^*hhttps://www.bridgehands.com/S/Suit_Combination_4.htm,4 HCP^*n
+^*u ^*hhttps://www.bridgehands.com/S/Suit_Combination_5.htm,5 HCP^*n
+^*u ^*hhttps://www.bridgehands.com/S/Suit_Combination_6.htm,6 HCP^*n
+^*u ^*hhttps://www.bridgehands.com/S/Suit_Combination_7.htm,7 HCP^*n
+^*u ^*hhttps://www.bridgehands.com/S/Suit_Combination_8.htm,8 HCP^*n
+^*u ^*hhttps://www.bridgehands.com/S/Suit_Combination_9.htm,9 HCP^*n
+|n^|5|at|
+}^-|
+
+fp||
+ht|a|at|^b@2^t@3^^^^|
+lg|c|
+at|The ^*b BridgeHand's Suit Combinations ^*n table you get to when you follow the ^*hhttps://www.bridgehands.com/S/Suit_Combinations.htm,link^*n looks something like the one on the right, except the real one also has |cp|gr|at|^*bgreen stripes^*n|cp||at|. 
+
+The important thing to understand is that each  'HCP entry'  links to its own large table.  And that each entry is the number of HCP help by the Opps.
+
+The number of HCP held by the Opps is used because that is normally your first concern.  i.e.  What high cards are you missing in the suit ?
+
+|fp|t|at|Example|fp||
+at|^b  |n#|c|ih|-KT85|
+at|^b  |n#|z|n#|c|ih|-q732|
+ht|l|n^|9|at|^f@2You play in a contract and this is the holding in a key suit.^z@3
+|n^|9|at|
+When you come to look back at the hand you want to know how you should have played it.
+|n^|9|at|
+The key question you need to ask yourself is: 
+|n#|3|at|
+|fp|t|at|^bHow Many tricks do I need from this suit ?|fp||at|
+^c@2|n^|6|at|
+Let's say you need ^*b 3 tricks ^*n to make your contract. |fp|s|at|  (missing the Ace you can never expect to make 4)|fp||at|
+you have the ^*b KQ^*n,  this means Opps have the ^*b AJ ^*n  and ^*b 5 HCP^*n.
+|n^|9|at|
+Click the  ^*h https://www.bridgehands.com/S/Suit_Combination_5.htm,5 HCP ^*n link in the real BridgeHand's table.  When the page opens, scroll down hunting for the suit combination you want to know about.
+|n^|9|at|
+You will find in on ^*b row 35 ^*n.  @2Take care because this table also has the entries for  '^*bOpps have  KQ^*n'   and that part of the table ALSO has a row 35.
+^c@2There are two sub-rows in the entry, one for making 3 tricks and one for making 2.  The entry for 3 says:
+|n^|6|at|
+^d  |cp|gr|at|^*b Play low toward Q then finesse J (low toward 10)^*n|cp||at| 
+|n^|6|at|
+It also tells you that this line has a ^*b 40% ^*n chance of making 3 tricks.
+|n^|2|at|
+^b|fp|s|at|<more on next page>|fp||
+pg| ***** 1 ***** |
+
+
+fh|j32|                      j-32
+fh|k35|                      k-35
+cr|a230|cg|a040|cb|a130|     a  action
+nt|^c@2^z@3^^^^|
+lg|f|
+fp|t|at|^bExpanded Table Entries|fp||at|
+
+If you look in the far LEFT-hand column in the lower section you will see a number of entries with names like
+^d@2^*b|lg|h|at|
+|n^|k|at|
+^*n   ---- ----- ^*b
+AJ 35.  KTxx  -  Qxxx
+AJ 36.  KTxx  -  QT98
+AJ 37.  Kxxx  -  Qxxx
+^*n   ---- ----- ^*b
+KQ 35.  A987  -  Jxx
+KQ 36.  Axxx  -  JT9
+^*n^c@2
+The first entry matches ^*b Row 35 ^*n of the ^*b BridgeHands   AJ ^*n  table that we have just been looking at.
+|n^|9|at|
+You can go to that entry and play out the hands against selected Opps distributions.   The samples also include Row 35 and 36 entries for the^*b KQ ^*n table which (of course) also comes under  'the Opps have 5 HCP'.
+|n^|3|at|
+If you want to develop your aaBridge skills you can create your own Suit Combinations lin files. It's not as hard as you might expect.  Look in the  ^*g :Doc Collection, aaBridge Doc Collection^*n  and 
+
+|n^|7|fp|j-32|cp|a|at|^*bRead the Document^*n|cp||fp||at|
+|n#|8|cp||fp|k-35|at|^dEnter (Type) Hands into aaBridge.doc|cp||fp||at|
+
+The next section is a guide to playing the expanded sample entries.|
+pg| ***** 2 ***** |
+
+

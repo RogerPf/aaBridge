@@ -1,0 +1,1028 @@
+%%
+%% Endplays 2
+%%
+%% Reformatted for aaBridge  2018 August
+%%
+%% Roger Pfister
+%%
+
+<<--INSERT-START-->>=005__Common_Header.ins
+%%
+fh|130|ff|1Arial|fb|14|fm|1|                       
+fh|240|ff|2Arial|fb|24|fm|2|
+fh|340|ff|3Arial|fb|3y|fm|3|fu|3y|
+fh|490|ff|4Times New Roman|fb|49|fm|4| 
+%
+cr|164|cg|1255|cb|1255|           
+cr|2000|cg|2000|cb|2239|                 
+cr|3255|cg|3250|cb|3205|      
+cr|5065|cg|5105|cb|5255|
+cr|6238|cg|6106|cb|6080|       
+cr|8255|cg|8250|cb|8205|     
+cr|9176|cg|9048|cb|9096|  
+%
+bv|a,v|
+bt||
+at|^b@2^z@3^^|
+
+
+pd|cont-etd-msg,  You can use  { ^*b Cont ^*n }  to play out the rest of the cards  OR  do as suggested above and click  { ^*b Enter the Deal ^*n }|
+
+ss|process-txt,`ht`e`lg`o`at`^c@2^^Click   { ^*b Enter the Deal ^*n }   then on the right in the `cp`gr`at`^*b  green table area ^*n `cp``at` click  { ^*b Show ^*n }^^You can then click  ^*b Flow ^*n  or  ^*b Mouse wheel ^*n  through the correct play, to see how it all works.`pf`cont-etd-msg`|
+ 
+%%
+<<--INSERT-END**-->>=005__Common_Header.ins
+
+mn|  Endplays  2   -   Beyond the Basics|
+tu|y|
+qx|ET  |
+ht|a|n#|5|fp|2|at|^*b^a ET ^c|fp||at|^*gIndx:Index,Click for Index^*n|
+
+ht|g|at|So far we have discussed two basic positions (the "Fork" and the "Problem suit") in their elementary form: after executing the elimination process, we simply threw a defender in by playing two unproductive cards in the throw-in suit.
+
+Next, I will show you additional ways to throw a defender in. 
+
+They are less elementary but do occur frequently.
+
+
+|fp|2|at|1. Exiting with a trump.|fp||at|
+
+This possibility occurs when, in a potential elimination setting, declarer holds a trump combination that allows him to 
+put a defender on lead with a trump.
+
+For example: When you are missing three or four trumps to the King, it is usually right to finesse. 
+
+An exception may occur when you hold an elimination setting.
+
+In such cases it may be a better idea to lay down the Ace. 
+
+If the trumps break 2-1 but the King does not fall, you will then have the option of endplaying the defender who is left with the King.| 
+
+ht|z|n#|b|at|^b^*bMM:^*n  Remember you can |cp|red|at| ^*b PLAY ^*n|cp||at| ^*b ANY HAND ^*n  at  ^*b ANY TIME ^*n  by clicking the  { ^*b 1st ^*n }  button.|
+pg| ***** 0 ***** |
+
+
+nt|^b@2^z@3^^|
+
+ht|f|at|Here are some possible trump combinations where this sort of play might be preferable:
+^c@2
+1. AKxxx-xxxx(x)  against Qxx-x(x).
+
+2. Axxxx-Jxxxx  against Kx-Q or Qx-K.
+
+3. Axxx-Kxxx  against any 3-2 split.
+
+4. AQxxx -10xxx  against Kx in situations where a losing finesse may cost.
+
+^bHolding the following hand, you arrived at the contract of 4@h and got the lead of the @d10.|
+ht|o|n^|9|at|^h|ih|hsa4hj8743daq5cq73|ht|v|at|^h|ih|hskqhat952dk72cj54|
+ht|s|at|^iN|
+ht|t|at|^jE|
+ht|u|at|^iS|
+ht|t|at|^hW|
+ht|x|at| 
+
+
+^b@2As we have already seen, if you play the club suit yourself, you will lose three club tricks if the clubs Ace and King 
+are divided.|
+pg| ***** 1 ***** |
+
+
+-------------------------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+st||
+pf||
+
+qx|1,|rh||ah|Eliminations|ah|Deal 1|
+md|1SKQHAT952DK72CJ54,SJ862HQDT986CKT62,SA4HJ8743DAQ5CQ73|sk|n|
+mb|1Hp2Np4Hppp|
+pc|dt|
+nt|^b@2^z@3^^|ht|b|at|Deal  1      Let's review the situation:|
+ht|z|at|^*bMM:^*n  Remember you can |cp|red|at| ^*b PLAY ^*n|cp||at| ^*b ANY HAND ^*n  at  ^*b ANY TIME ^*n  by clicking the  { ^*b 1st ^*n }  button.|
+pg| ***** 2 ***** |
+
+
+nt|^b@2^z@3^^|
+ht|b|at|Assuming you win the opening lead in hand and play a small club toward the Queen.|
+pc|d5djdk|
+pg| ***** 3 ***** |
+
+
+pc|c4c2cqca|
+at|^^^^East wins the @cA and returns a club through your @cJ5 into West's possible K10 holding.|
+pg| ***** 4 ***** |
+
+
+pc|c9c5ctc3|
+pg| ***** 5 ***** |
+
+
+pc|ckc7c8cj|
+pg| ***** 6 ***** |
+
+
+up|15|
+nt|^b@2^z@3^^|ht|b|lg|c|at|Going back to the first trick ...The same could happen if you win the opening lead in dummy and play a small club toward the Jack.|
+pg| ***** 7 ***** |
+
+
+pc|dqd3d2|
+pg| ***** 8 ***** |
+
+
+pc|c3c8cjck|
+pg| ***** 9 ***** |
+
+
+pc|c2c7c9c4|
+pg| ***** 10 ***** |
+
+
+pc|cac5c6cq|
+nt|^b@2^z@3^^|ht|b|at|Next you will have to give up at least one trump trick|
+pg| ***** 11 ***** |
+
+
+up|15|
+nt|^b@2^z@3^^|ht|b|lg|c|at|Back again to trick one, if a defender starts the play in clubs, you can play a small club in second hand and the third hand defender will have to catch "air".|
+pg| ***** 12 ***** |
+
+
+at|^^^^How can you force a defender to do the job for you? |
+pg| ***** 13 ***** |
+
+
+at|^^^^You should first perform an elimination play.|
+pg| ***** 14 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|After winning the opening lead, play the trump Ace.|
+pc|d5djdk|
+pg| ***** 15 ***** |
+
+
+pc|hahqh3h6|
+pg| ***** 16 ***** |
+
+
+at|^^^^Then eliminate the spades and diamonds.|pc|sks2s4s3|
+pg| ***** 17 ***** |
+
+
+pc|sqs6sas5|
+pg| ***** 18 ***** |
+
+
+pc|dqd3d2d6|
+pg| ***** 19 ***** |
+
+
+pc|dad4d7d8|
+nt|^b@2^z@3^^|ht|b|at|Next, play a second round of trump. Regardless of who wins the trick with the King, he must open the clubs for you...|
+pg| ***** 20 ***** |
+
+
+sk||pc|h4|pc|hk|pc|h2|pc|s8|
+pg| ***** 21 ***** |
+
+
+pc|cac4c2c3|
+pg| ***** 22 ***** |
+
+
+pc|c9c5ckc7|
+pg| ***** 23 ***** |
+
+
+pc|ctcqc8cj|
+pg| ***** 24 ***** |
+
+
+up|12|
+nt|^b@2^z@3^^|ht|b|at|...or play another suit, in which case you can discard a club from one hand and ruff in the other.|
+pg| ***** 25 ***** |
+
+
+pc|stc4sJh7|
+pg| ***** 26 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Let's see the process with the complete deal visible:|
+pg| ***** 27 ***** |
+
+
+vv|process-txt|
+pg| ***** 28 ***** |
+
+
+nt|^b@2^z@3^^|
+bt||
+qx|ET-c,wide|
+ht|a|n#|5|fp|2|at|^*b^a ET-c ^c|fp||at|^*gIndx:Index,Click for Index^*n|
+
+ht|g|at|Assuming you hold the following layout in a 6@s contract and get the lead of the @hQ.|
+ht|h|at|^c|ih|hst742hak64da5c962|at||ht|p|at|^c|ih|hsak853h75dqj9cakq|at||
+ht|m|at|^dN|
+ht|n|at|^eE|
+ht|o|at|^dS|
+ht|n|at|^cW|
+
+ht|u|at|You win the opening lead and play the trump Ace and King, West shows out at the second round. 
+
+How would you proceed to prevent a possible diamond loser? 
+
+Let's see the process that might prevent this loss:|
+pg| ***** 29 ***** |
+
+
+pf||
+nt|^b@2^z@3^^|
+st||
+
+-------------------------------------------------------------------------------------------------
+qx|2|rh||ah|Elimination plays|ah|Deal 2|
+md|1SAK853H75DQJ9CAKQ,S6HQJT2D8643CJ875,ST742HAK64DA5C962|sk|ns|
+mb|1Sp3Sp4Cp4Dp4Np5Hp6Sppp|
+pc|hq|
+nt|^b@2^z@3^^|ht|b|at|Deal  2     |
+pg| ***** 30 ***** |
+
+
+pc|hK|pc|h3|pc|h5|
+pg| ***** 31 ***** |
+
+
+pc|s2|pc|s9|pc|sK|pc|s6|
+pg| ***** 32 ***** |
+
+
+pc|sA|pc|d3|pc|s4|pc|sJ|
+pg| ***** 33 ***** |
+
+
+nt|^b@2^z@3^^|at|You arrived at trick four with a sure trump loser and your goal now is to prevent a diamond loser.
+
+To be able to eliminate East's hearts, you need to find him with no more than three @Hs.|
+pg| ***** 34 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Play a small heart to the Ace and ruff a heart.|
+pg| ***** 35 ***** |
+
+
+pc|h7|pc|h2|pc|hA|pc|h8|
+pg| ***** 36 ***** |
+
+
+pc|h4|pc|h9|pc|s3|pc|hT|
+pg| ***** 37 ***** |
+
+
+at|^^^^Play three rounds of club to eliminate the suit.|
+pg| ***** 38 ***** |
+
+
+pc|cQ|pc|c5|pc|c2|pc|c3|
+pg| ***** 39 ***** |
+
+
+pc|cK|pc|c7|pc|c6|pc|c4|
+pg| ***** 40 ***** |
+
+
+pc|cA|pc|c8|pc|c9|pc|cT|
+pg| ***** 41 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Exit with a trump, throwing East in with his Queen.|
+pg| ***** 42 ***** |
+
+
+pc|s5|pc|d4|pc|s7|pc|sQ|
+pg| ***** 43 ***** |
+
+
+sk||
+nt|^b@2^z@3^^|ht|b|at|Having no hearts left, East must play a diamond, giving you a free finesse.|
+pg| ***** 44 ***** |
+
+
+pc|d2|
+pg| ***** 45 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Let's see the process with the complete deal visible:|
+pg| ***** 46 ***** |
+
+
+vv|process-txt|
+pg| ***** 47 ***** |
+
+
+-----------------------------------------------------------------------------------------------
+qx|3|rh||ah|Eliminations|ah|Deal 3|
+md|1SA2HAK643DAK32C43,SJ954HQJ5DJ9CJT98,SKQ3HT987D8765CAK,ST876H2DQT4CQ7652|sk|ns|
+mb|1Hp3Hp4Np5Cp6Hppp|
+pc|cJ|
+nt|^b@2^z@3^^|
+ht|b|at|Deal  3      Here is one more hand based upon the same idea.
+
+This hand looks simple until...|
+pg| ***** 48 ***** |
+
+
+pc|cK|pc|c7|pc|c3|
+pg| ***** 49 ***** |
+
+
+pc|h7|pc|h2|pc|hK|pc|h5|
+pg| ***** 50 ***** |
+
+
+pc|hA|pc|hJ|pc|h8|pc|c2|
+pg| ***** 51 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|As the adverse trumps do not split 2-2, you have to lose a trump in addition to a sure diamond (assuming you will be able to discard the second diamond loser on your extra spade winner without being ruffed by West).
+
+Your only chance now is to throw West in with the trump Queen. To achieve this goal you must find West with exactly two diamonds.|
+pg| ***** 52 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|You should first play three rounds of spades, discarding a diamond.|
+pg| ***** 53 ***** |
+
+
+pc|sA|pc|s4|pc|s3|pc|s6|
+pg| ***** 54 ***** |
+
+
+pc|s2|pc|s5|pc|sQ|pc|s7|
+pg| ***** 55 ***** |
+
+
+pc|sK|pc|s8|pc|d2|pc|s9|
+pg| ***** 56 ***** |
+
+
+at|^^^^Then you should play the @cA and the two top diamonds.|
+
+pc|cA|pc|c5|pc|c4|pc|c8|
+pg| ***** 57 ***** |
+
+
+pc|d5|pc|d4|pc|dK|pc|d9|
+pg| ***** 58 ***** |
+
+
+pc|dA|pc|dJ|pc|d6|pc|dT|
+pg| ***** 59 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Finally, exit with a trump in order to throw West in.|
+pg| ***** 60 ***** |
+
+
+pc|h3|
+pg| ***** 61 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|With only spades and clubs left, you will be able to ruff in dummy and discard a diamond from hand after whichever card West chooses to exit with.|
+pg| ***** 62 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Let's see the process with the complete deal visible:|
+pg| ***** 63 ***** |
+
+
+vv|process-txt|
+pg| ***** 64 ***** |
+
+
+-----------------------------------------------------------------------------------------------
+st||qx|4|rh||ah|Eliminations|ah|Deal 4|
+md|1SAQ7HAQ865D73CJ63,SJT93HK7DJ62CK982,S85HJT932DAK5CQ75,SK642H4DQT984CAT4|sk|ns|
+mb|1Hp4Hppp|
+pc|sJ|
+nt|^b@2^z@3^^|
+ht|b|at|Deal  4       Let's see one more example on same idea.|
+pg| ***** 65 ***** |
+
+
+pc|s5|pc|s6|pc|sQ|
+nt|^b@2^z@3^^|ht|b|at|After winning the opening lead with the Queen you may consider a finesse against the trump King.|
+pg| ***** 66 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|The obvious way to do that is to enter dummy with a diamond and running the @hJ.
+
+A successful finesse followed by a spade ruff, will give you all you need for your game.
+
+On the other hand, If the finesse loses, you will have to play the club suit yourself, running the risk of losing three tricks there.|
+pg| ***** 67 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Let's see a possible variation.|
+pg| ***** 68 ***** |
+
+
+ 
+
+pc|d7|pc|d2|pc|dK|pc|d4|
+pg| ***** 69 ***** |
+
+
+pc|hJ|pc|h4|pc|h5|pc|hK|
+pg| ***** 70 ***** |
+
+
+pc|sT|pc|s8|pc|s2|pc|sA|
+pg| ***** 71 ***** |
+
+
+pc|hA|pc|h7|pc|h2|pc|d8|
+pg| ***** 72 ***** |
+
+
+pc|s7|pc|s3|pc|h3|pc|s4|
+pg| ***** 73 ***** |
+
+
+pc|dA|pc|d9|pc|d3|pc|d6|
+pg| ***** 74 ***** |
+
+
+pc|d5|pc|dT|pc|h6|pc|dJ|
+pg| ***** 75 ***** |
+
+
+pc|c3|pc|c2|pc|cQ|pc|cA|
+pg| ***** 76 ***** |
+
+
+pc|cT|pc|cJ|pc|cK|pc|c5|
+pg| ***** 77 ***** |
+
+
+pc|c9|pc|c7|pc|c4|pc|c6|
+pg| ***** 78 ***** |
+
+
+mc|9|
+nt|^b@2^z@3^^|ht|b|at|Is there a better line?|
+pg| ***** 79 ***** |
+
+
+jp|1|
+pg| ***** 80 ***** |
+
+
+pc|s5|pc|s6|pc|sQ|
+nt|^b@2^z@3^^|ht|b|at|Returning to trick 1 -- After winning the opening lead, you should cash the @hA.
+
+If the King falls, you will be home.|
+pg| ***** 81 ***** |
+
+
+ 
+pc|hA|pc|h7|pc|h2|pc|h4|
+pg| ***** 82 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|When the @hK does not fall and trumps are 2-1, you can eliminate spades and diamonds, then exit with a trump.|
+pg| ***** 83 ***** |
+
+
+pc|sA|pc|s3|pc|s8|pc|s2|
+pg| ***** 84 ***** |
+
+
+pc|s7|pc|s9|pc|h3|pc|s4|
+pg| ***** 85 ***** |
+
+
+pc|dA|pc|d4|pc|d3|pc|d2|
+pg| ***** 86 ***** |
+
+
+pc|dK|pc|d8|pc|d7|pc|d6|
+pg| ***** 87 ***** |
+
+
+pc|d5|pc|d9|pc|h5|
+pc|dJ|
+pg| ***** 88 ***** |
+
+
+pc|h6|pc|hK|pc|h9|pc|dT|
+pg| ***** 89 ***** |
+
+
+tt|y|
+nt|^b@2^z@3^^|ht|b|at|The defender who wins the trick will then have to make the first play in the club suit, guaranteeing you a trick there...|
+sk||
+pg| ***** 90 ***** |
+
+
+tt||
+pc|c2|
+pg| ***** 91 ***** |
+
+
+pf|cont-button|
+pg| ***** 92 ***** |
+
+
+nt|^b@2^z@3^^|
+ht|b|at|^^Or:|
+up|1|
+pg| ***** 93 ***** |
+
+
+at|^^^^... he will lead another suit, allowing you a ruff and discard.|
+pc|sT|
+pg| ***** 94 ***** |
+
+
+pf|cont-button|
+pg| ***** 95 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Let's see the process with the complete deal visible:|
+pg| ***** 96 ***** |
+
+
+vv|process-txt|
+pg| ***** 97 ***** |
+
+
+-----------------------------------------------------------------------------------------------
+st||qx|5|rh||ah|Eliminations|ah|Deal 5|
+md|1SAKHAKJTDKJT74CQ4,SQJT93H8654C8753,S75HQ97DA9862CAJ6,S8642H32DQ53CKT92|sk|ns|
+mb|1D|mb|p|mb|3d|mb|p|mb|4N|mb|p|mb|5H|mb|p|mb|6D|mb|ppp|
+pc|sQ|
+nt|^b@2^z@3^^|ht|b|at|Deal  5     @2   |
+pg| ***** 98 ***** |
+
+
+pc|s5|pc|s2|pc|sK|
+ht|b|at|You win the opening lead, realizing that West is the danger hand and if he owns the @dQ, he may win it and lead a club through your AJx.|
+pg| ***** 99 ***** |
+
+
+pc|dK|pc|c3|pc|d2|pc|d3|
+nt|^b@2^z@3^^|ht|b|at|To be prepared for the worst, you play the @dK, recieving the bad news about the trump split.
+
+Elimination-throw-in play is called for.   Play the @dA and the @sA then start playing your hearts. |
+pg| ***** 100 ***** |
+
+
+pc|d4|pc|h4|pc|dA|pc|d5|
+pg| ***** 101 ***** |
+
+
+pc|s7|pc|s4|pc|sA|pc|s3|
+pg| ***** 102 ***** |
+
+
+pc|ht|pc|h5|pc|hq|pc|h2|
+pg| ***** 103 ***** |
+
+
+pc|h9|pc|h3|pc|hj|pc|h6|
+sk||
+pg| ***** 104 ***** |
+
+
+pc|hk|pc|h8|pc|h7|pc|dq|
+nt|^b@2^z@3^^|ht|b|at|^b East can ruff whenever he wants to but then he will be endplayed.|
+pg| ***** 105 ***** |
+
+
+up|4|ht|b|at|^^^a  Or ^^^b if he refuses to ruff, you will be able to play a trump, throwing him in with Queen.|
+pg| ***** 106 ***** |
+
+
+pc|hK|pc|h8|pc|h7|pc|s6|
+pg| ***** 107 ***** |
+
+
+pc|ha|pc|c5|pc|c6|pc|s8|
+pg| ***** 108 ***** |
+
+
+pf|both-first-cont|
+
+pc|d7|
+pg| ***** 109 ***** |
+
+
+jp|1|
+
+nt|^b@2^z@3^^|ht|b|at|Back to trick 1, let's see the main variation with the complete deal visible|
+vv|process-txt|
+pg| ***** 110 ***** |
+
+
+bt||
+qx|LoL,wide|
+nt|^b@2^z@3^^|
+ht|a|n#|5|fp|2|at|^*b^a LoL ^c|fp||at|^*gIndx:Index,Click for Index^*n|
+
+ht|f|fp|2|at|2. Loser-on-loser elimination-throw-in.|fp||at|
+
+This is one of the most common ways to throw a particular defender in, forcing him to make a lead to our advantage.
+
+The loser-on-loser concept is basically a form of the general elimination-throw-in tactic that aims to save a trick we would otherwise lose.  
+Look at this layout:|
+
+ht|k|at|^f|ih|hsKJ65hq42d543ckq6|ht|r|n#|5|at|^f|ih|hsaqt9832h-daq8cajt|
+ht|p|at|^bLead: @hK|
+ht|p|at|^gN|
+ht|q|at|^hE|
+ht|r|at|^gS|
+ht|q|at|^fW|
+
+ht|w|at|Playing a 6@s contract, You can ruff the opening lead in hand and draw the adverse trumps in one or two rounds.
+Sooner or later you will have to deal with your two potential diamond losers. A successful finesse in the suit will bring 
+your slam home. Alas, if the finesse fails you will lose two diamond tricks and your slam. What can you do about that? 
+
+Move ahead and see!|
+pg| ***** 111 ***** |
+
+
+-----------------------------------------------------------------------------------------------
+st||
+qx|6|rh||ah|Eliminations|ah|Deal 6|
+md|1SAQT9832DAQ8CAJT,HAKT9DKT96C98432,SKJ65HQ42D543CKQ6,S74HJ87653DJ72C75|sk|ns|
+mb|1S|mb|p|mb|3S|mb|p|mb|5H|an|Asking for Aces excluding hearts|mb|p5n|an|One 'Ace' (the @sK)|mb|p|mb|6S|mb|ppp|
+pc|hK|
+nt|^b@2^z@3^^|ht|b|at|Deal  6     Given the opening lead, you know that West is surely holding the @hA.   How can you use this fact ?
+
+You should first execute the well-known elimination process.|
+pg| ***** 112 ***** |
+
+
+pc|h2|pc|h3|pc|s2|
+pg| ***** 113 ***** |
+
+
+pc|s3|pc|c2|pc|sK|pc|s4|
+pg| ***** 114 ***** |
+
+
+pc|h4|pc|h5|pc|s8|pc|h9|
+pg| ***** 115 ***** |
+
+
+pc|sA|pc|d6|pc|s5|pc|s7|
+pg| ***** 116 ***** |
+
+
+pc|cA|pc|c3|pc|c6|pc|c5|
+pg| ***** 117 ***** |
+
+
+pc|cJ|pc|c4|pc|cQ|pc|c7|
+pg| ***** 118 ***** |
+
+
+pc|cK|pc|h6|pc|cT|pc|c8|
+pg| ***** 119 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Now that you arrived at the critical moment, you may still consider finessing the @dQ. Would you?
+
+Of course you would, but only when there is no other option to consider. Look at the @hQ. This Queen is the key card of what should be your entire plan @- you can use it to throw West in with his Ace.
+
+Play the Queen, but instead of ruffing it in your hand, discard your small diamond @- a loser-on-loser play.|
+pg| ***** 120 ***** |
+
+
+pc|hQ|pc|h7|pc|d8|
+pg| ***** 121 ***** |
+
+
+sk||
+pc|hA|
+nt|^b@2^z@3^^|ht|b|at|West can win the @hA, but will then have to lead a diamond into your AQ holding or lead another suit, allowing you a ruff and discard.| 
+tt|y|
+pg| ***** 122 ***** |
+
+
+pf|both-first-cont|
+pg| ***** 123 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Let's see the process with the complete deal visible:|
+pg| ***** 124 ***** |
+
+
+vv|process-txt|
+pg| ***** 125 ***** |
+
+
+tt||
+-----------------------------------------------------------------------------------------------
+qx|7|rh||ah|Eliminations|ah|Deal 7|
+md|1SAKQJ942HA8DAQ5CA,S3HJT95DKJ84CQ962,ST875H42D632CKJ73,S6HKQ763DT97CT854|sk|ns|
+mb|2Cp2Dp2Sp3Sp4Cp4Sp6Sppp|
+pc|hJ|
+nt|^b@2^z@3^^|ht|b|at|Deal  7     Here is a slightly more complicated example:|
+pg| ***** 126 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|As in the previous deal, your goal is to prevent two diamond losers. 
+
+Just that this time the opening lead does not provide any clue about a throw-in possibility.
+
+Yet, there is a chance to throw West in if he holds the @cQ.
+
+To make towards this opportunity, you should start by drawing the adverse trump, then eliminate hearts and clubs.
+
+As your can reach the dummy only with trumps, you must manage the suit carefully and economically.|
+pg| ***** 127 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Win The @hA, cash the @cA and play a trump to the 7.|
+pc|h2|pc|h7|pc|hA|
+pg| ***** 128 ***** |
+
+
+pc|cA|pc|c2|pc|c3|pc|c4|
+pg| ***** 129 ***** |
+
+
+pc|s2|pc|s3|pc|s7|pc|s6|
+nt|^b@2^z@3^^|ht|b|at|Cash the @cK, discarding your heart loser, then ruff your last heart with one of your top trumps.| 
+pc|cK|pc|c5|pc|h8|pc|c6|
+pg| ***** 130 ***** |
+
+
+pc|h4|pc|h3|pc|sJ|pc|h5|
+pg| ***** 131 ***** |
+
+
+at|^^^^Play a small trump to the 8 and ruff the @c7 high.|
+pc|s4|pc|d4|pc|s8|pc|d7|
+pg| ***** 132 ***** |
+
+
+pc|c7|pc|c8|pc|sQ|pc|c9|
+pg| ***** 133 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Overtake the @s9 with the 10 and play the @cJ.|
+pg| ***** 134 ***** |
+
+
+pc|s9|pc|h9|pc|sT|pc|h6|
+pg| ***** 135 ***** |
+
+
+pc|cJ|pc|cT|pc|d5|
+at|^^^^When you lead the @cJ and East follows with the @c10. Discard the @d5 from your hand  @- a loser-on-loser play @- allowing West to win the trick.|
+pg| ***** 136 ***** |
+
+
+pc|cQ|sk||
+nt|^b@2^z@3^^|ht|b|at|West can win the @cQ but he is endplayed. He can either play a diamond into your AQ or play a heart, allowing you a ruff and discard.|
+pf|both-first-cont|
+pg| ***** 137 ***** |
+
+
+nt|^b@2^z@3^^| 
+ht|b|at|Let's see the process with the complete deal visible:|
+pg| ***** 138 ***** |
+
+
+vv|process-txt|
+pg| ***** 139 ***** |
+
+
+------------------------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+
+ht|b|at|The last two hands illustrated the use of the loser-on-loser throw-in technique where you have to protect an AQ fork.
+
+The next two will demonstrate the use of the technique in order to protect a vulnerable King.|
+qx|8|rh||ah|Eliminations|ah|Deal 8|st||
+md|1SAKQ842H2DT62CA84,S75HQJT5DQ98CKJ73,SJT963HK763DK54C9,HA984DAJ73CQT652|sk|n|
+mb|1Sp4Spmbpp|
+pc|hQ|
+nt|^b@2^z@3^^|ht|b|at|Deal  8     |
+pg| ***** 140 ***** |
+
+
+at|Given the lead, you can place the  @hA  in East so you should look for a way to make use of this fact.| 
+pg| ***** 141 ***** |
+
+
+pc|h3|pc|h8|pc|h2|
+nt|^b@2^z@3^^|ht|b|at|To be able to eventually endplay East, you must duck trick one.|
+pg| ***** 142 ***** |
+
+
+at|^^^^When West continues the suit, duck in dummy and ruff in hand.|pc|hJ|pc|h6|pc|h4|pc|s2|
+pg| ***** 143 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Draw the adverse trumps in two rounds...|
+pc|sA|pc|s5|pc|s3|pc|c2|
+pg| ***** 144 ***** |
+
+
+pc|sK|pc|s7|pc|s6|pc|c5|
+pg| ***** 145 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|...then play the @cA and ruff a club.|pc|cA|pc|c3|pc|c9|pc|c6|
+pg| ***** 146 ***** |
+
+
+pc|c4|pc|c7|pc|s9|pc|cT|
+ht|b|at|^^^^Ruff a heart in hand following by a second club ruff|
+pg| ***** 147 ***** |
+
+
+pc|h7|pc|h9|pc|s4|pc|h5|
+pg| ***** 148 ***** |
+
+
+pc|c8|pc|cJ|pc|sT|pc|cQ|
+pg| ***** 149 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|The elimination process has come to its end and you have arrived at the critical moment.|
+pg| ***** 150 ***** |
+
+
+at|^^^^Play the @hK which East covers.|
+pc|hK|pc|hA|
+pg| ***** 151 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|If you ruff the Ace, it would be a sign that you played too fast!|
+pg| ***** 152 ***** |
+
+
+at|^^^^Instead, in order to leave East on lead, you should discard a diamond!|
+pg| ***** 153 ***** |
+
+
+pc|d2|
+pg| ***** 154 ***** |
+
+
+nt|^b@2^z@3^^|sk||ht|b|at|East is now endplayed! He must play a diamond, giving you the desired trick with the @dK.|
+pf|both-first-cont|
+pg| ***** 155 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Here is the process with the complete hand visible:|
+pg| ***** 156 ***** |
+
+
+vv|process-txt|
+pg| ***** 157 ***** |
+
+
+------------------------------------------------------------------------------------------
+qx|9|rh||ah|Eliminations|ah|Deal 9|
+md|1SQT743H4DAKQ9CK54,SA9HKQT9DJT87CAQ8,SKJ865HA2D43C7632,S2HJ87653D652CJT9|sk|n|
+mb|1Sp4Sppp|
+pc|hK|
+nt|^b@2^z@3^^|ht|b|at|Deal  9      |
+pg| ***** 158 ***** |
+
+
+at|Win with the @hA, |
+pc|hA|pc|h3|pc|h4|
+pg| ***** 159 ***** |
+
+
+at|ruff a heart |
+pc|h2|pc|h5|pc|s3|pc|h9|
+pg| ***** 160 ***** |
+
+
+at|and follow with a trump.|
+pc|s4|pc|sA|pc|s5|pc|s2|
+pg| ***** 161 ***** |
+
+
+at|^^^^West wins the Ace, and let's assume he exits with a second trump.|
+pg| ***** 162 ***** |
+
+
+pc|s9|pc|s6|pc|d2|pc|sT|
+nt|^b@2^z@3^^|ht|b|at|After winning the @sT, Cash three rounds of diamonds |
+pg| ***** 163 ***** |
+
+
+pc|dA|pc|d7|pc|d3|pc|d5|
+pg| ***** 164 ***** |
+
+
+pc|dK|pc|d8|pc|d4|pc|d6|
+pg| ***** 165 ***** |
+
+
+pc|dQ|pc|dT|pc|c2|pc|h6|
+pg| ***** 166 ***** |
+
+
+at|and when the Jack fails to appear, play the @d9, discarding a club from dummy.|
+pc|d9|pc|dJ|pc|c3|pc|h7|
+pg| ***** 167 ***** |
+
+
+tt|y|
+nt|^b@2^z@3^^|sk||
+ht|b|at|West now must now lead a club to your @cK  OR  play a heart, giving you a ruff and discard.|
+pf|both-first-cont|
+pg| ***** 168 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Here is the process with the complete deal visible:|
+pg| ***** 169 ***** |
+
+
+vv|process-txt|
+pg| ***** 170 ***** |
+
+
+tt||
+qx|10|rh||ah|Eliminations|ah|Deal 10|
+md|1SKQT82HK43DAT5CAK,S3HAQT9D932CQJ976,SA954H765DKQ4CT32,SJ76HJ82DJ876C854|sk|ns|
+mb|1SP2Sp4Np5Cp5Sppp|
+pc|cQ|
+nt|^b@2^z@3^^|ht|b|at|Deal  10    Win the opening lead, draw trumps and cash a second club.|
+pg| ***** 171 ***** |
+
+
+pc|c2|pc|c4|pc|cK|
+pg| ***** 172 ***** |
+
+
+pc|sK|pc|s3|pc|s4|pc|s6|
+pg| ***** 173 ***** |
+
+
+pc|s2|pc|d2|pc|sA|pc|s7|
+pg| ***** 174 ***** |
+
+
+pc|s5|pc|sJ|pc|sQ|pc|d3|
+pg| ***** 175 ***** |
+
+
+pc|cA|pc|c6|pc|c3|pc|c5|
+pg| ***** 176 ***** |
+
+
+nt|^b@2^z@3^^|ht|b|at|Eliminate the diamonds, ending in dummy.|
+pg| ***** 177 ***** |
+
+
+pc|dA|pc|d9|pc|d4|pc|d6|
+pg| ***** 178 ***** |
+
+
+pc|d5|pc|h9|pc|dQ|pc|d7|
+pg| ***** 179 ***** |
+
+
+nt|^b@2^z@3^^|pc|dK|pc|d8|pc|dT|pc|c7|
+ht|b|at|Lead the @c10 discarding a heart.|
+pg| ***** 180 ***** |
+
+
+pc|cT|pc|c8|pc|h3|pc|cJ|sk||
+ht|b|at|^^^^West, presumably holding the @cJ, will have to break the hearts or allow you a ruff and discard.|
+pg| ***** 181 ***** |
+
+
+tt|y|
+pf|both-first-cont|
+pg| ***** 182 ***** |
+
+
+tt|n|
+nt|^b@2^z@3^^|ht|b|at|Here is the process with the complete deal visible:|
+pg| ***** 183 ***** |
+
+
+vv|process-txt|
+pg| ***** 184 ***** |
+
+
+tt|n|
+
+bt||
+nt|^b@2^z@3^^|
+tu|y|
+ht|n|fp|2|at|^k    End of Section|fp||
+pg| ***** 185 ***** |
+
+

@@ -1,0 +1,175 @@
+
+
+%% 2019-07-26  Patterns  31 - 40
+
+%% All hands are copyright  Richard Pavlicek
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+bv|a,h|   %% hide all three buttons
+%%
+ss|head,     ah`Part 3.    Throw-in`|
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+<<--INSERT-START-->>=07___FP_Patterns.ins
+%%
+fh|b48| %%  'banner' font
+fh|t40| %%  'target' font
+fh|s28| %%  'small'  font
+fh|p45| %%  'pink dot' size
+
+cr|a230|cg|a040|cb|a130|          a  action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       pink dot button
+
+bv|e,h| %%   Enter the deal button hidden
+bv|f,v| %%   1st visible 
+bv|d,v| %%   DDS visible
+
+ha|y|   %%   hide auctions
+
+ss|head,     ah`Part 3.    Throw-in`|
+ss|banner,   ht`e`fp`b-big`at`^*b^L^*nThrow-in^*n`fp``|
+ss|link,     ht`z`at`^L     visit  Richard Pavlicek's  Throw-in  page    ^*h http://www.rpbridge.net/9h01.htm, rpbridge.net  9h01^*n`|
+ss|means,    ht`e`fp`small`at`^x ^*h http://www.rpbridge.net/9gc8.htm, meaning^*n`fp``|
+ss|new,      nt`^b@2^^`vv`means`vv`link`vv`banner`ht`e`vv`head`|
+ss|contract, mb`3nppp`|
+ss|p1,       vv`contract`wt`s`sk`s`fp`t`ht`e`at`^q    ^*b`|
+ss|p2,       fp`t`ht`e`at`^*n^u`|
+ss|p3,       fp``ht`q`at`^d`|
+%%
+<<--INSERT-END**-->>=07___FP_Patterns.ins
+
+
+qx|31|
+rh||ah|Pattern 31|
+vv|new|at|^*b 31.  Establishment jettison^*n|
+%
+md|1  KJ KQ, 2 - AKQ, A - 432, QT9 A|
+%
+bs|6,3|
+vv|p1|at|win 3|
+vv|p2|at|auto|
+vv|p3|
+pg| ***** 0 ***** |
+
+
+qx|32|
+rh||ah|Pattern 32|
+vv|new|at|^*b 32.  Establishment repeat jettison^*n|
+%
+md|1  AJT J2, KQ AT9, - KQ K32, - 43 AQJ|
+%
+bs|6,2|
+vv|p1|at|win 3|
+vv|p2|at|auto|
+vv|p3|
+pg| ***** 1 ***** |
+
+
+qx|33|
+rh||ah|Pattern 33|
+vv|new|at|^*b 33.  Entry duck^*n|
+%
+md|1  K54 43, JT9 QJ, Q32 K2, A87 AT|
+%
+bs|7,1|
+vv|p1|at|win 2|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 2 ***** |
+
+
+qx|34|
+rh||ah|Pattern 34|
+vv|new|at|^*b 34.  Entry or tempo gain^*n|
+%
+md|1  K2 A AT2, 4 KQJ 98, Q3 32 QJ,AJ 54 K7|
+%
+bs|5,2|
+vv|p1|at|win 4|
+vv|p2|at|bi|
+vv|p3|
+pg| ***** 3 ***** |
+
+
+qx|35|
+rh||ah|Pattern 35|
+vv|new|at|^*b 35.  Establishment or stepping-stone^*n|
+%
+md|1  KJ A32, 43 JT9, AT987, Q65 KQ|
+%
+bs|5,3|
+vv|p1|at|win 4|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 4 ***** |
+
+
+qx|36|
+rh||ah|Pattern 36|
+vv|new|at|^*b 36.  Establishment or winkle^*n|
+%
+md|1  KJ AT2, 32 KQ9, AT987, Q654 J|
+%
+bs|5,3|
+vv|p1|at|win 4|
+vv|p2|at|auto bi|
+vv|p3|at|Also works with @s 3-3 (then @h 2-2)|
+pg| ***** 5 ***** |
+
+
+qx|37|
+rh||ah|Pattern 37|
+vv|new|at|^*b 37.  Forced stepping-stone^*n|
+%
+md|1  K32, JT9, Q4 A, A5 2|
+%
+bs|7,3|
+vv|p1|at|win 2|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 6 ***** |
+
+
+qx|38|
+rh||ah|Pattern 38|
+vv|new|at|^*b 38.  Blocked stepping-stone^*n|
+%
+md|1  KT2, AQ9, 43 A, J8 2|
+%
+bs|8,2|
+vv|p1|at|win 1|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 7 ***** |
+
+
+qx|39|
+rh||ah|Pattern 39|
+vv|new|at|^*b 39.  One-suit squeeze ^*n|
+%
+md|1  432 - - A, T76 - - 3, K95 - - 2, AQJ8|
+%
+bs|7,2|
+vv|p1|at|win 2|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 8 ***** |
+
+
+qx|40|
+rh||ah|Pattern 40|
+vv|new|at|^*b 40.  One-suit squeeze double^*n|
+%
+md|1  432 - - 3, 965 - - A, AQ8 - - 2, KJT7|
+%
+bs|7,2|
+vv|p1|at|win 2|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 9 ***** |
+
+

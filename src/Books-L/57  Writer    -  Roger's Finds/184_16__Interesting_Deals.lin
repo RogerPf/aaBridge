@@ -1,0 +1,223 @@
+%%
+%%
+
+ss|chapter,16.                                 Interesting Deals  |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2017-04-08          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Roger's  Finds                   2020  and  Past  Years |
+%%
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       Maroon
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    Around the normal Grey
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title     
+fh|b50|                    Font   b  b-bigTitle
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+%
+cr|a230|cg|a040|cb|a130|   text   a  a-action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       on Title Pages
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    on Title Pages
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|y|n#|b|lg||at|^b@2@1|at|
+^*bClick^*n          ^*bFlow >^*n         or use your    ^*bMouse Wheel^*n|
+ht|z|at|@0
+^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|j|
+Lg|f|
+fp|4|at|^c@2^z@3|
+
+at|aaBridge has a new feature  called   'Interesting' Deals.   Those who want to can read more about it ^*g :Interesting::Welcome, HERE^*n.
+
+It is all part of the  { ^*b Play Bridge ^*n }  button on the Welcome page.  
+
+WHEN YOU ARE ON THAT PAGE  and you have the 'Interesting' Deal feature level selector (in the right hand column) set far to the right, to the 'more' setting then @-
+|n^|7|at|
+    when you click  { ^*b New Board ^*n }  aaBridge will try to generate an  'interesting'  Deal.   
+|n^|7|at| 
+An  'interesting' deal  is one where, with perfect play from both sides the contract would make exactly  AND  the dumb bots built into aaBridge have failed to make it.  
+|n^|7|at|
+So you know that the contract can be made and won't be totally trivial to play.  This an example.|
+qx|# 16|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+bv|a,h|
+rh||ah|Find 16|
+%% 1sAQJhAJ4dAT8cQ865,s732hQT63dJ6532c4,sKT85hK5d974cAKJ7,s964h9872dKQcT932
+md|1sAQJhAJ4dAT8cQ865,d3,sKT85hK5d974cAKJ7,|
+sv|e|sk|s|
+nt|^z@3^b@2^^|n^|5|
+lg||
+at|^*bFind 16^*n     The hand|
+pg| ***** 1 ***** |
+
+
+at|,     the bidding|
+mb|6c|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+aa|y|
+pc|d3|
+at|,     the lead.|
+pg| ***** 3 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Thnk,wide|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|Do your thinking  NOW.|
+pg| ***** 4 ***** |
+
+
+at|              (Next, you will get a chance to play out the hand.)|
+n#|5|at|
+Taking  South  as the master hand we have  3  losers    0@s   1@h   2@d   0@c  |
+pg| ***** 5 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Try,wide|
+bv|f,v|
+aa|n|
+md|0sAQJhAJ4dAT8cQ865,s732hQT63dJ6532c4,sKT85hK5d974cAKJ7,s964h9872dKQcT932|
+nt|^z@3^b@2^^|n^|5|
+at|Pick your line^^|
+n#|7|
+at|^^|cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the analysis.|
+n#|7|
+pf|first-button|
+pg| ***** 6 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Asys,wide|
+bv|f,h|
+eb|y___|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bAnalysis^*n      Win with the @dA and play the top tree trumps (@c's) from dummy.  Play the @hK then low to the @hA and ruff the J@h.  Now play low to the  @sA  in hand.  
+|n^|7|at|
+If the trumps started as 4-1 there will still be one out.  Play the @cQ to draw it. Cash the @sQ and use the @sJ to re-enter dummy by overtaking with the @sK and throw a losing @d on the @s10.   
+Concede the final trick, the remaining @d loser. |
+pg| ***** 7 ***** |
+
+
+pc|d4|pc|dQ|pc|dA|
+pg| ***** 8 ***** |
+
+
+pc|c5|pc|c4|pc|cA|pc|c2|
+pg| ***** 9 ***** |
+
+
+pc|cK|pc|c3|pc|c6|pc|h3|
+pg| ***** 10 ***** |
+
+
+pc|cJ|pc|c9|pc|c8|pc|s2|
+pg| ***** 11 ***** |
+
+
+pc|hK|pc|h2|pc|h4|pc|h6|
+pg| ***** 12 ***** |
+
+
+pc|h5|pc|h7|pc|hA|pc|hT|
+pg| ***** 13 ***** |
+
+
+pc|hJ|pc|hQ|pc|c7|pc|h8|
+pg| ***** 14 ***** |
+
+
+pc|s5|pc|s6|pc|sA|pc|s3|
+pg| ***** 15 ***** |
+
+
+pc|cQ|pc|s7|pc|d7|pc|cT|
+pg| ***** 16 ***** |
+
+
+pc|sQ|pc|d2|pc|s8|pc|s4|
+pg| ***** 17 ***** |
+
+
+pc|sJ|pc|d5|pc|sK|pc|s9|
+pg| ***** 18 ***** |
+
+
+pc|sT|pc|h9|pc|d8|pc|d6|
+pg| ***** 19 ***** |
+
+
+---------------------------------------------------------------------------
+qx|DDS,wide|
+nt|^z@3^b@2^^|
+at|You are now free to use the three buttons (lower right) to play out  and  fully investigate this deal.
+
+|cp|red|at|^*bTeaser^*n|cp||at|   How would you play it if the contract was 6NT and you suspected the @h finesse would fail (which it does).|
+bv|a,v|
+eb||
+pf|all-res-lifted|
+pg| ***** 20 ***** |
+
+

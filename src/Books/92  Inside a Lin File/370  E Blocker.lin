@@ -1,0 +1,757 @@
+%% E Blocker was Table Conceal
+%% Last edited  2018 Aug 29
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+bt||
+
+at|^z@3
+^b@2^*bTable Conceal  (tc)     End Blocker  (eb)       Button Visibility  (bv)      Keep Cards (kc)  ^*n  HInts and Study Deal|
+at|
+^^
+^cThese commands are covered  over the next few pages.
+
+|ht|h|at|^c@2^*b
+Table Conceal  ^h tc
+
+End Blocker  ^h ^*beb!|cp|7|at|^*by^*n|cp||at|^*b!^*n  ^*n              ^j    ALSO see   ^*beb|cp|7|at|^*bY+^*n|cp||at|^*b^*n  ^*n  later   about  saving as "Problem" format ^*n
+
+^*bContinuity cut (x) ^h ^*bmx!|cp|7|at|^*bx^*n|cp||at|^*b!^*n ^*n      ^j    Deal (think md) continuity cut 'x'   
+
+^*bButton Visibility    ^h bv    
+
+End Blocker    ^h ^*beb|cp|7|at|^*bY+^*n|cp||at|^*b^*n  ^*n                ^j    AGAIN 
+
+^*bKeep Cards        ^h kc ^*n  
+
+^*bStudy Deal        ^h zm ^*n         ^j    STUDY DEAL
+
+^*bBot Hint          ^h bh ^*n  
+
+^*bBot Instruction   ^h bi ^*n  |
+pg| ***** 0 ***** |
+
+
+qx|tc,wide|
+st||
+nt|^b@2^z@3|
+ha|y|    %%    *h*ide  the  *a*ution
+rh||ah|Hand 1|
+md|1S9H8TQD3469JAC7TQ,S248TJAH29DQC69JA,S57QH457KAD2KC234|
+
+at|^b@2^*bTable Conceal^*n^f^*b!tc!|cp|7|at|^*bc^*n|cp||at|^*b!^*n^z@3|
+tc|c|
+mb|4dppp|
+pc|h9|pc|h4|pc|h3|pc|hq|
+pc|d3|pc|dq|pc|dk|pc|d5|
+pc|d2|pc|d7|
+tc||
+at|
+
+^c@2tc!|cp|7|at|^*bc^*n|cp||at|!
+mb!4dppp!
+pc!h9!pc!h4!pc!h3!pc!hq!    pc!d3!pc!dq!pc!dk!pc!d5!     pc!d2!pc!d7!     
+tc!!
+^eThis way, the first sight the user sees of this deal is in the middle of trick 3.         (  !tc!!  cancels  )|
+pg| ***** 1 ***** |
+
+
+nt|^b@2^*ncleared^*n|
+md|1|
+pg| ***** 2 ***** |
+
+
+qx|eb y,wide|
+bv|a,v|
+rh||ah|Hand 2|
+st||
+sk||
+ha|y|
+nt|^z@3^b@2|
+md|1S2HDAKQJT9CAKQJT2,SKQT87HAJT9843D2C,SAJ965HKQ7652D76C,S43HD8543C9876543|
+tc|y|
+mb|7Nppp|
+pc|D2|pc|D6|pc|D8|pc|D9|
+pc|CA|pc|H3|pc|H2|pc|C9|
+pc|CK|pc|H4|pc|H5|pc|C8|
+pc|CQ|pc|H8|pc|H6|pc|C7|
+pc|CJ|pc|H9|pc|H7|pc|C6|
+pc|CT|pc|S8|pc|S9|pc|C3|
+pc|DK|pc|S7|pc|D7|pc|D5|
+pc|DQ|pc|ST|pc|S5|pc|D4|
+pc|DJ|pc|HT|pc|S6|pc|D3|
+pc|DT|pc|HJ|pc|HQ|pc|C5|
+pc|DA|eb|y___|        %%  The   Enter the Deal  Blocker    cmd
+%%_aapg-NEAR
+pc|sQ|pc|hK|pc|s3|
+pc|s2|pc|sK|pc|sA|
+%%_aapg-STD      
+tc||
+lg|f|fp|4|at|^*bEnter the deal   Blocker^*n  ^i^*beb!|cp|7|at|^*by^*n|cp||at|^*b!^*n ^l Above you can see a hand before the last trick.
+|cp|gr|at|^a   (Note - When ^*b SAVING ^*n lin files aaBridge saves    ^*beb!|cp|7|at|^*by|cp|gr|at|!^*n     as   ^*b eb!|cp|7|at|^*by___|cp|gr|at|!^*n      this is only to help you SEE them easily)|cp||
+lg|f|
+n#|2|at|^^^*bClick^*n  { ^*b Enter the Deal ^*n } - you will see you are blocked from going back earlier than the @dA play.    This is the block point, where an   ^*beb!|cp|7|at|^*by^*n|cp||at|^*b!^*n   has been used.  (You can use still  { ^*b Edit ^*n }  or  { ^*b Play ^*n }  to examine the deal.)|
+pg| ***** 3 ***** |
+
+
+eb|n|  %% removes the block              
+
+n#|3|at|^^^d^*beb!|cp|7|at|^*b^*n|cp||at|^*b!^*n     removes the block           click   { ^*b Enter the Deal^*n }     to test|
+pg| ***** 4 ***** |
+
+
+n#|5|at|^^^b^*bALSO^*n   see the         ^*beb|cp|7|at|^*b+|cp||at|^*n,   ^*beb|cp|7|at|^*bY2|cp||at|^*n        BUMPs     at the end of the NAVBAR.| 
+pg| ***** 5 ***** |
+
+
+nt|^b@2^*ncleared^*n|
+md|1|
+pg| ***** 6 ***** |
+
+
+nt|^b@2^*bEBlocker 'y'           ^*beb!|cp|7|at|^*by|cp||at|!^*n|
+lg|d|cp|gr|at|^^^a   (Note - When ^*b SAVING ^*n lin files aaBridge saves    ^*beb!|cp|7|at|^*by|cp|gr|at|!^*n     as   ^*b eb!|cp|7|at|^*by___|cp|gr|at|!^*n      this is only to help you SEE them easily)|cp||
+n#|1|at|^^Select the  ^*bSave in Problem format^*n  button   it is BELOW the lower bottom divider - raise the divider.
+Use { ^*bCont^*n }  to enter this deal and once in the Deal, save it with the { ^*bSave^*n }  button the save button.
+Now play that saved .lin file  AND  view it with your editor.  It will present this deal in a "Problem" format.    Note the ^*beb!|cp|7|at|^*by|cp||at|!^*n ^*n that marks the the end of the early play is preserved in the actual saved  'Problem'  file.|
+
+rh||ah|Board 77|
+md|4sKQ764hK76dAJcA87,sJ2hJ32dK2cQJ9432,sA98hA98d87654c65,sT53hQT54dQT93cKT|
+mb|p|mb|1s|mb|p|mb|2s|mb|p|mb|3s|mb|p|mb|4S|mb|p|mb|p|mb|p|
+tc|Y|
+
+%%_aapg-NEAR
+pc|cQ|
+pc|c5|pc|ck|pc|c7|
+pc|cT|eb|y___|pg||
+pc|cA|pc|c2|pc|c6|
+pc|sK|pc|s2|pc|s8|pc|s3|
+pc|c8|pc|c9|pc|h8|pc|h4|
+pc|sJ|pc|sA|pc|s5|pc|s4|
+pc|hA|pc|h5|pc|h6|pc|h2|
+pc|h9|pc|hT|pc|hK|pc|h3|
+pc|h7|pc|hJ|pc|s9|
+tc||pg||
+%%_aapg-STD
+
+nt|^b@2^*bcleared^*n|
+md|1|
+pg| ***** 9 ***** |
+
+
+st||
+nt|^b@2^z@3|
+md|1S9H8TQD3469JAC7TQ,S248TJAH29DQC69JA,S57QH457KAD2KC234|
+
+tc|c|
+mb|4dppp|
+pc|h9|pc|h4|pc|h3|pc|hq|
+pc|d3|pc|dq|pc|dk|pc|d5|
+pc|d2|pc|d7|
+tc||
+
+at|^b@2^*bPrevious deal reinstated^*n|
+at|^^^^ This is a repeat of the earlier deal
+
+It shows that the "Eb Blocker" is cleared by the   ^*n^*bmd!|cp|7|at|^*b...^*n|cp||at|^*b!^*n   command for the next deal.|
+pg| ***** 10 ***** |
+
+
+qx|mx,wide|
+bv|a,v|
+ha|| %% (un)hide auction
+rh||ah|Hand 3|
+md|3SAKQJT52HDAKQ943C,S7HA9432DJT75C543,S843HJ76D2CKQJT97,S96HKQT85D86CA862|
+sv|N|sk||
+mb|p|mb|p|mb|2C|mb|p|mb|3C|mb|p|mb|7S|mb|p|mb|p|mb|p|
+nt|^z   @3^b@2^^|
+lg|f|ht|a|
+fp|4|at|^*bmx!|cp|7|at|^*bx^*n|cp||at|^*b!^*n         ^*n ^h think    current deal (md)  -  continuity cut 'x'|  
+n#|5|at|^^^*bmx!|cp|7|at|^*bx^*n|cp||at|^*b!^*n   @2Makes a change to the current deal so that when you press the  "1st"   "Cont"   "Enter the Deal"  buttons they will NOT search FORWARD into or though THIS point in the deal.  
+|n#|5|at|You can think of   ^*bmx!|cp|7|at|^*bx^*n|cp||at|^*b!^*n  as being like an  ^*beb!|cp|7|at|^*by^*n|cp||at|^*b!^*n (which as well as blocking, stops BACKWARDS searching) but affecting the FORWARD direction.|
+pg| ***** 11 ***** |
+
+
+nt|^z@3^b@2|
+at|Using this deal as an example.|
+Lg|f|
+n#|5|at|^^When you click the  { ^*b Cont ^*n }  button you will see that the extent of the existing play shown to you is effected by YOUR position relative to the position where the    |fp|4|at|^*bmx|cp|7|at|^*b1^*n|cp||at|^*b ^*n   and    |fp|4|at|^*bmx|cp|7|at|^*b2^*n|cp||at|^*b ^*n    Navbar  'bobbles'  are showing.|
+n#|7|at|^^Before  a  mark  you only get to see the play up to but  ^*b NOT INCLUDING ^*n  the mark.
+^*bON ^*n and ^*b AFTER ^*n  that mark you get to see all the play to the next mark or to the end of the play.|
+pg| ***** 12 ***** |
+
+
+%%_aapg-NEAR
+tc|y|
+pc|s7|pc|s3|pc|s6|pc|sA|
+pc|sK|pc|h2|pc|s4|
+tc||
+%%_aapg-STD
+pg| ***** 13 ***** |
+
+
+qx|mx1,wide|
+mx|x|
+tc|y|
+pc|s9|
+pc|dA|pc|d5|pc|d2|
+tc||
+ht|a|fp|4|at|^j      ^*bmx|cp|7|at|^*b1^*n|cp||at|^*b^*n |
+pg| ***** 14 ***** |
+
+
+%%_aapg-NEAR
+tc|y|
+pc|d6|
+pc|d3|pc|d7|pc|s8|pc|d8|
+pc|cK|pc|cA|pc|s2|pc|c3|
+pc|dK|pc|dT|pc|c7|
+tc||
+%%_aapg-STD
+pg| ***** 15 ***** |
+
+
+qx|mx2,wide|
+mx|x|
+tc|y|
+pc|h5|
+pc|dQ|pc|dJ|pc|c9|
+tc||
+ht|a|fp|4|at|^m     ^*bmx|cp|7|at|^*b2^*n|cp||at|^*b^*n|
+pg| ***** 16 ***** |
+
+
+%%_aapg-NEAR
+tc|y|
+pc|c2|
+pc|d9|pc|h3|pc|h6|pc|h8|
+pc|d4|pc|c4|pc|cT|pc|c6|
+pc|sQ|pc|c5|pc|h7|pc|hT|
+pc|sJ|
+tc||
+%%_aapg-STD
+pg| ***** 17 ***** |
+
+
+qx|bv 1,wide|
+bv|a,v|
+nt|^b@2| 
+Lg|h|
+at|^b@2^*bButton Visibility^*n   ^i^*b bv!|cp|7|at|^*ba,h^*n|cp||at|^*b!^*n^z@3^r 52  cards dealt
+The three buttons  { ^*b 1st ^*n }   { ^*b Cont |cp|dg|at|^*b/ DDS|cp||at|^*n }  and  { ^*b Enter the Deal ^*n }  can have their visibility controlled by  ^*b bv!...!^*n
+(The following are showing with a 52 card deck.)|
+pg| ***** 18 ***** |
+
+
+n#|7| 
+bv|a,h|
+at|^^ ^d^*b bv!|cp|7|at|^*ba,h^*n|cp||at|^*b!^*n    forces  |cp|7|at|^*ba^*n|cp||at|ll  three to be  |cp|7|at|^*bh^*n|cp||at|idden|
+pg| ***** 19 ***** |
+
+
+nt|^b@2| 
+Lg|m|
+at|^b@2^*bButton Visibility^*n   ^i^*b bv!|cp|7|at|^*b^*n|cp||at|^*b!^*n^z@3^r 52  cards dealt|
+bv|e,v|
+at|^^^d^*b bv!|cp|7|at|^*be,v^*n|cp||at|^*b!^*n    effects  ^*bONLY^*n   { ^*b Enter the Deal ^*n }  ^n and forces it visible.|
+pg| ***** 20 ***** |
+
+
+bv|c,v|
+at|^^ ^d^*b bv!|cp|7|at|^*bc,v^*n|cp||at|^*b!^*n    effects  ^*bONLY^*n   { ^*b Cont |cp|dg|at|^*b/ DDS|cp||at|^*n }  ^n and forces it visible.|
+pg| ***** 21 ***** |
+
+
+bv|d,v|
+at|^^ ^d^*b bv!|cp|7|at|^*bd,v^*n|cp||at|^*b!^*n    effects  ^*bONLY^*n   { ^*b Cont |cp|dg|at|^*b/ DDS|cp||at|^*n }  ^n and forces it to be the   (1st +)  { ^*b DDS ^*n }  button.    (try it)|
+pg| ***** 22 ***** |
+
+
+bv|f,v|
+at|^^ ^d^*b bv!|cp|7|at|^*bf,v^*n|cp||at|^*b!^*n     effects  ^*bONLY^*n   { ^*b 1st ^*n }  ^n and forces it visible.|
+pg| ***** 23 ***** |
+
+
+nt|^b@2| 
+Lg|m|
+at|^b@2^*bButton Visibility^*n   ^i^*b bv!|cp|7|at|^*b^*n|cp||at|^*b!^*n^z@3^r 52  cards dealt|
+pg| ***** 24 ***** |
+
+
+bv|e,h|
+at|^^^d^*b bv!|cp|7|at|^*be,h^*n|cp||at|^*b!^*n    effects  ^*bONLY^*n   { ^*b Enter the Deal ^*n }  ^n and forces it hidden.|
+pg| ***** 25 ***** |
+
+
+bv|c,v|
+at|^^ ^d^*b bv!|cp|7|at|^*bd,v^*n|cp||at|^*b!^*n    effects  ^*bONLY^*n   { ^*b Cont |cp|dg|at|^*b/ DDS|cp||at|^*n }  ^n and forces it back to being the  { ^*b Cont ^*n }   button.|
+pg| ***** 26 ***** |
+
+
+bv|c,h|
+at|^^^a  ^*bbv!|cp|7|at|^*bd,h^*n|cp||at|^*b!^*n   & ^d^*b bv!|cp|7|at|^*bc,h^*n|cp||at|^*b!^*n    effects  ^*bONLY^*n   { ^*b Cont |cp|dg|at|^*b/ DDS|cp||at|^*n }  ^n and forces it hidden.|
+pg| ***** 27 ***** |
+
+
+bv|f,h|
+at|^^ ^d^*b bv!|cp|7|at|^*bf,h^*n|cp||at|^*b!^*n     effects  ^*bONLY^*n   { ^*b 1st ^*n }  ^n and forces it hidden.|
+pg| ***** 28 ***** |
+
+
+qx|bv 2,wide|
+bv|a,v|
+md|1s32hK543dc,s87hQ876dc,sKQ54hA2dc,sAJThJT9dc| %% 6 cards in each hand
+mb|3nppp|
+bs|5|
+wt|s|
+nt|^b@2| 
+Lg|h|
+at|^b@2^*bButton Visibility^*n   ^i^*b bv!|cp|7|at|^*ba,h^*n|cp||at|^*b!^*n^z@3^r partial deal
+The three buttons  { ^*b Cont ^*n }   { ^*b 1st ^*n }  and  { ^*b Enter the Deal ^*n }  can have their visibility controlled by  ^*b bv!...!^*n
+(The following are showing with a partial deal.)|
+pg| ***** 29 ***** |
+
+
+n#|7| 
+bv|a,h|
+at|^^ ^d^*b bv!|cp|7|at|^*ba,h^*n|cp||at|^*b!^*n    forces  |cp|7|at|^*ba^*n|cp||at|ll  three to be  |cp|7|at|^*bh^*n|cp||at|idden|
+pg| ***** 30 ***** |
+
+
+nt|^b@2| 
+Lg|m|
+at|^b@2^*bButton Visibility^*n   ^i^*b bv!|cp|7|at|^*b^*n|cp||at|^*b!^*n^z@3^r partial deal|
+bv|e,v|
+at|^^^d^*b bv!|cp|7|at|^*be,v^*n|cp||at|^*b!^*n    effects  ^*bONLY^*n   { ^*b Enter the Deal ^*n }  ^n and forces it visible.|
+pg| ***** 31 ***** |
+
+
+bv|c,v|
+at|^^ ^d^*b bv!|cp|7|at|^*bc,v^*n|cp||at|^*b!^*n    effects  ^*bONLY^*n   { ^*b Cont |cp|dg|at|^*b/ DDS|cp||at|^*n }  ^n and forces it visible.|
+pg| ***** 32 ***** |
+
+
+bv|d,v|
+at|^^ ^d^*b bv!|cp|7|at|^*bd,v^*n|cp||at|^*b!^*n    effects  ^*bONLY^*n   { ^*b Cont |cp|dg|at|^*b/ DDS|cp||at|^*n }  ^n and forces it to be the   (1st +)  { ^*b DDS ^*n }  button.    (try it)|
+pg| ***** 33 ***** |
+
+
+bv|f,v|
+at|^^ ^d^*b bv!|cp|7|at|^*bf,v^*n|cp||at|^*b!^*n     effects  ^*bONLY^*n   { ^*b 1st ^*n }  ^n and forces it visible.|
+pg| ***** 34 ***** |
+
+
+nt|^b@2| 
+Lg|m|
+at|^b@2^*bButton Visibility^*n   ^i^*b bv!|cp|7|at|^*b^*n|cp||at|^*b!^*n^z@3^r partial deal|
+pg| ***** 35 ***** |
+
+
+bv|e,h|
+at|^^^d^*b bv!|cp|7|at|^*be,h^*n|cp||at|^*b!^*n    effects  ^*bONLY^*n   { ^*b Enter the Deal ^*n }  ^n and forces it hidden.|
+pg| ***** 36 ***** |
+
+
+bv|c,v|
+at|^^ ^d^*b bv!|cp|7|at|^*bd,v^*n|cp||at|^*b!^*n    effects  ^*bONLY^*n   { ^*b Cont |cp|dg|at|^*b/ DDS|cp||at|^*n }  ^n and forces it back to being the  { ^*b Cont ^*n }   button.|
+pg| ***** 37 ***** |
+
+
+bv|c,h|
+at|^^^a  ^*bbv!|cp|7|at|^*bd,h^*n|cp||at|^*b!^*n   & ^d^*b bv!|cp|7|at|^*bc,h^*n|cp||at|^*b!^*n    effects  ^*bONLY^*n   { ^*b Cont |cp|dg|at|^*b/ DDS|cp||at|^*n }  ^n and forces it hidden.|
+pg| ***** 38 ***** |
+
+
+bv|f,h|
+at|^^ ^d^*b bv!|cp|7|at|^*bf,h^*n|cp||at|^*b!^*n     effects  ^*bONLY^*n   { ^*b 1st ^*n }  ^n and forces it hidden.|
+pg| ***** 39 ***** |
+
+
+nt|^b@2| 
+Lg|m|
+at|^b@2^*bButton Visibility^*n   ^i^*b bv!|cp|7|at|^*b^*n|cp||at|^*b!^*n^z@3|
+pg| ***** 40 ***** |
+
+
+bv|a,v|
+at|^^ ^d^*b bv!|cp|7|at|^*ba,v^*n|cp||at|^*b!^*n    forces all 3 visible|
+pg| ***** 41 ***** |
+
+
+bv|e,h|
+at|^^ ^d^*b bv!|cp|7|at|^*ba,h^*n|cp||at|^*b!^*n    forces { ^*b Enter the Deal ^*n }  hidden|
+pg| ***** 42 ***** |
+
+
+bv||
+n#|7|
+at|^^ ^d^*b bv!|cp|7|at|^*b^*n|cp||at|^*b!^*n    restores the default settings  { ^*b 1st ^*n }   and   { ^*b Cont ^*n }   hidden,     { ^*b Enter the Deal ^*n }  visible|
+pg| ***** 43 ***** |
+
+
+nt|^b@2| 
+Lg|m|
+at|^b@2^*bButton Visibility^*n   ^i^*b bv!|cp|7|at|^*b^*n|cp||at|^*b!^*n^z@3|
+pg| ***** 44 ***** |
+
+
+bv|a,v|
+at|^^ ^d^*b bv!|cp|7|at|^*ba,v^*n|cp||at|^*b!^*n    forces all 3 visible|
+pg| ***** 45 ***** |
+
+
+bv|e,h|
+at|^^ ^d^*b bv!|cp|7|at|^*ba,h^*n|cp||at|^*b!^*n    forces { ^*b Enter the Deal ^*n }  hidden|
+pg| ***** 46 ***** |
+
+
+bv||
+n#|7|
+at|^^ ^d^*b bv!|cp|7|at|^*b^*n|cp||at|^*b!^*n    restores the default settings  { ^*b 1st ^*n }   and   { ^*b Cont ^*n }   hidden,     { ^*b Enter the Deal ^*n }  visible|
+pg| ***** 47 ***** |
+
+
+qx|ebY+,wide|
+mx|x|
+bv|a,v|
+nt|^b@2^*beb!|cp|7|at|^*by___^*n|cp||at|^*b!^*n and   partial deals|
+pg| ***** 48 ***** |
+
+
+lg|k|
+at|^^Two tricks played   and  an  ^*beb!|cp|7|at|^*by___^*n|cp||at|^*b!^*n  marker placed.    Use the usual three buttons to see that it is also blocked
+and the ^*b  DDS  {  is Off/On  } ^*n  button also works on partial deals  (and the Analyser does not). 
+|n#|7|at|Also notice that cards played before the  ^*beb!|cp|7|at|^*by___^*n|cp||at|^*b!^*n  marker are not shuffled when the { ^*b Shuf Op ^*n } is pressed.
+|cp|gr|at|The  ^*bkc!|cp|gr|at|^*b...^*n|cp|gr|at|^*b!^*n  command (next)  is another method of keeping cards from being shuffled.|
+tc|Y|
+pc|s3|pc|s7|pc|s4|pc|sT|
+pc|hJ|pc|hK|pc|h6|pc|h2|eb|y___|
+tc||
+pg| ***** 49 ***** |
+
+
+nt|^b@2^*bcleared^*n|
+md|1|
+pg| ***** 50 ***** |
+
+
+qx|kc|
+nt|^b@2^*bKeep Cards^e kc! ... !^*n^z@3|
+lg|h|
+at|
+When you, as a user, are  "inside a deal"  you can use the { ^*b Shuf Op ^*n } button and re-deal the Opps hands.  Please use the { ^*b Enter the Deal ^*n } and then the { ^*b Shuf Op ^*n }  button to see that  ALL  of EW's @d's  ARE  shuffled.|
+eb||  %% in case the last eb has been left ON !!!
+md|1SA8653HA852D98CK9,SJ92HQT97DAK63CJ8,SK74HK63DJ52CA764,SQTHJ4DQT74CQT532|
+sv|O|sk||
+tc|c|
+mb|1S|mb|p|mb|1N|mb|p|mb|2H|mb|p|mb|3S|mb|p|mb|p|mb|p|
+pc|dA|pc|d2|pc|dT|pc|d9|
+pc|dK|pc|d5|pc|d4|pc|d8|
+pc|d3|pc|dJ|pc|dQ|
+tc||
+mx|x| 
+pg| ***** 51 ***** |
+
+
+kc|dAK63 dQT74|
+at|^^^c  kc! dAK63 dQT74!          ^i Now when  { ^*b Shuf Op ^*n } is pressed  ^*bNONE^*n  of EW's  @d's are shuffled.|
+mx|x| 
+pg| ***** 52 ***** |
+
+
+kc|| 
+mx|x| 
+at|^^^c  kc!!                 ^i Now when  { ^*b Shuf Op ^*n } is pressed  EW's @d's  WILL again be shuffled.|
+pg| ***** 53 ***** |
+
+
+nt|^b@2^*bKeep Cards^e kc! ... !^*n|at|         continued |
+lg|h|
+eb|y___|
+pc|s3|pc|sA|pc|SJ|
+n#|5|  
+at|^^^c^*beb!|cp|7|at|^*by___^*n|cp||at|^*b!^*npc!s3!  pc!sA! pc!sJ!     The ^*b eb ^*n mechanism will also stop played cards being shuffled
+^i Only includes cards that were played before the  ^*beb!|cp|7|at|^*by___^*n|cp||at|^*b!^*n   marker.|
+n#|5|at|
+Just above the  { ^*b Shuf Op ^*n }  button is SOMETIMES the   { ^*b Rem ^*n }  button this will remove any restrictions imposed by the ^*b eb ^*n or ^*b kc ^*n commands.           { ^*b Add ^*n }  will add an  ^*beb!|cp|7|at|^*by___^*n|cp||at|^*b!^*n  restriction at that point in the play.  |
+pg| ***** 54 ***** |
+
+
+qx|zm,wide|
+nt|^b@2^*bSpecial Use Clear^g zm!|cp|7|at|^*bsu_...|cp||at|!^*n|
+pg| ***** 55 ***** |
+
+
+sk|s|
+n#|5|at|^^FIRST - Check the |cp|red|at|^*b Show ALL Always ^*n|cp||at| check box in the far right hand column.  The E-W hands will show.|
+pg| ***** 56 ***** |
+
+
+at|^^^eMove fwd and they stay showing,|
+pg| ***** 57 ***** |
+
+
+at|   and again,|
+pg| ***** 58 ***** |
+
+
+at|   and again,|
+pg| ***** 59 ***** |
+
+
+lg|f|
+zm|su_clear_always| 
+at|^^zm!|cp|7|at|^*bsu_clear_always|cp||at|!^*n    clears that setting and you CANNOT (re)set it NOW| 
+pg| ***** 60 ***** |
+
+
+at|     or NOW after the next pg |
+pg| ***** 61 ***** |
+
+
+at|     or NOW|
+pg| ***** 62 ***** |
+
+
+zm|su_clear_never| 
+at|^^zm!|cp|7|at|^*bsu_clear_never|cp||at|!^*n    means all is back to normal and you CAN set that check box.  TRY IT| 
+pg| ***** 63 ***** |
+
+
+zm|su_clear_once| 
+at|^^zm!|cp|7|at|^*bsu_clear_once|cp||at|!^*n    is as earlier except that it just lasts for the next pg ONLY.  Try to set it NOW,| 
+pg| ***** 64 ***** |
+
+
+at|  and NOW.| 
+pg| ***** 65 ***** |
+
+
+sk||
+zm|su_clear_once| 
+nt|^b@2^*bStudy Deal^e zm!|cp|7|at|^*b+study+|cp||at|!^*n|
+pg| ***** 66 ***** |
+
+
+zm|+study+|
+at|^c@2^^^^^*bzm!|cp|7|at|+study+|cp||at|!^*n|at|     sets a deal to be a Study deal.      NOTE - 'bi' commands ALWAYS make a deal a Study Deal.|
+pg| ***** 67 ***** |
+
+
+zm|-study-|
+at|^c@2^^^^^*bzm!|cp|7|at|-study-|cp||at|!^*n|at|        restores a deal to normal.    NOTE - 'bi' commands STILL ALWAYS make a deal a Study Deal.|
+pg| ***** 68 ***** |
+
+
+nt|^b@2^^cleared |
+md|1|
+pg| ***** 69 ***** |
+
+
+%%=====================================================================================
+qx|bh,wide|
+rh||ah|Comp... 1|
+md|1sAKQ3hJT98dT83cA2,sJ62h75dKQJ5cT873,sT94hK3dA972cQJ64,s875hAQ642d64cK95|
+sv|e|sk|s|sk||
+mb|3N|mb|p|mb|p|mb|p|
+pc|dK|
+%
+nt|^c@2^z@3^^^b^*bCompanion 1 ^*n   ^f This is a beginner level problem @- YOU are the problem SETTER.^*n|
+lg|d|n#|6|
+at|^^The @dK is the set lead.  When the student (who cannot see the E-W cards) clicks the ^*b { 1st } ^*n button ^*b they need to duck that lead^*n.|
+pg| ***** 70 ***** |
+
+
+at|  After that, you (the problem setter) WANT the West bot to lead the @dQ.  BUT, because the bot cannot pick out which is the hardest line for the human student, it INSTEAD leads the @h5.|
+pg| ***** 71 ***** |
+
+
+bv|f,v|
+n#|5|at|^^Click the ^*b { 1st } ^*n button  and check that (once you duck in N & S) the West bot leads the @h5 at trick two.|
+pg| ***** 72 ***** |
+
+
+qx|h5,hide|
+mx|x|
+tc|y|
+pc|d2|pc|d4|pc|d3|eb|y___|
+tc||
+ht|f|at|@4^^|
+at|We have moved on to trick 2.   
+|n^|5|at|^^^d Again check that when you click the ^*b { 1st } ^*n button the West bot still leads the @h5.|
+pg| ***** 73 ***** |
+
+
+qx|dQ,hide|
+%
+bh|Play, West, dQ, res, on-lead, T2, always|
+%
+ht|f|at|@4^^|
+at|The following  ^*b bh ^*n (bot hint)   command has NOW 	been added        (the command bars are shown as the tiny `)
+|n#|5|at|^d ^*b bh`Play, West, dQ, res , on-lead, T2, always` ^*n  
+|n#|7|at|When you click the ^*b { 1st } ^*n button  the West bot will follow the hint and play the @dQ|
+pg| ***** 74 ***** |
+
+
+qx|x d5,hide|
+%
+bh|clear|
+bh|Play, West, d5, res, on-lead, T2, always|
+%
+ht|f|at|@4^^|
+at|What if you want to lead a card that will cost a trick ?    (here the  @d5)
+|n#|5|at|^d ^*b bh`Play, West, |cp|red|at|d5|cp||at|,  res , on-lead, T2, always` ^*n ^q  
+|n#|7|at|When you click the ^*b { 1st } ^*n button  the bot will REFUSE to play the @d5, as it knows that it will cost a trick, instead, it picks another @d,  one that will NOT cost a trick, here (as it happens) it is the @dQ.|
+pg| ***** 75 ***** |
+
+
+qx|d5,hide|
+%
+bh|clear|
+bh|Play, West, d5, BAD, on-lead, T2, always |
+%
+ht|f|at|@4^^|
+at|^cThe solution is that you call tell the bots you know it is a BAD lead and to they should do it anyway.
+|n#|5|at|^d ^*b bh`Play, West, d5, |cp|red|at|BAD|cp||at|, on-lead, T2, always` ^*n ^p change ^*b res ^*n (reserved)  to  BAD     
+|n#|7|at|^b NOW - when you click the ^*b { 1st } ^*n button  the bot will  play the @d5 even though ^*b IT KNOWS ^*n  that it will cost a trick.|
+pg| ***** 76 ***** |
+
+
+md|1|
+nt|^b@2^z@3^^cleared|
+pg| ***** 77 ***** |
+
+
+%%=====================================================================================
+qx|bh2,wide|
+rh||ah|Comp... 2|
+md|1sJT42hQT5dAKTcAJ5,sQ975h74dQ97cQ872,sAK63hAJ32dJ85cK3,s8hK986d6432cT964|
+sv||sk|s|sk||
+mb|6N|mb|p|mb|p|mb|p|
+tc|y|
+pc|h7|
+pc|h2|pc|hK|pc|h5|
+pc|d2|pc|dA|pc|d7|pc|d5|
+pc|sJ|eb|y___|
+tc||
+
+nt|^b@2^z@3^^^*bCompanion 2 ^*n ^f A finesse that you might want a student to play.|
+lg|d|n#|6|at|^^^^^^|
+n#|9|at|When you click the ^*b { 1st } ^*n button  the bot (without hints) plays the @s5 and does  NOT  cover the @sJ with the @sQ.|
+pg| ***** 78 ***** |
+
+
+qx|sQ,hide|
+bh|clear|
+bh|Play, West, sQ, res, p2, T2-4, cond, Played Dec sJ, Played Dec sT,  or|
+at|^c ^*b bh`clear`^*n|ht|f|at|@4^^^r ... adding the following  bot hint.|
+n#|5|at|                        
+^c ^*b bh`Play, West, sJ, |cp||at|res|cp||at|, p2, T2-4, cond,  Played Dec sJ^*n^*n  
+|n#|7|at|When you click the ^*b { 1st } ^*n button  the bot  WILL  cover the  @sJ        ^r with the  @sQ.|
+pg| ***** 79 ***** |
+
+
+up||
+pc|sT|eb|y___|
+bh|clear|
+bh|Play, West, sQ, res, p2, T2-4, cond, Played Dec sJ, Played Dec sT,  or|
+ht|f|at|@4^^^r|
+at|^c ^*b bh`clear`^*n|n#|5|at|                        
+^c ^*b bh`Play, West, sJ, |cp||at|res|cp||at|, p2, T2-4, cond,  Played Dec sJ,   Played Dec sT,  or^*n
+|n#|7|at|When you click the ^*b { 1st } ^*n button  the bot  WILL  cover the  @sJ  OR  the  @s10 ^r with the  @sQ|
+pg| ***** 80 ***** |
+
+
+up||
+pc|sT|eb|y___|
+bh|clear|
+bh|Play, West, sQ, res, p2, T2-4, cond, Played Dec sJsT|
+ht|f|at|@4^^|
+at|^c ^*b bh`clear`^*n|n#|5|at|                        
+^c ^*b bh`Play, West, sJ, |cp||at|res|cp||at|, p2, T2-4, cond,  Played Dec sJsT^*n    ^t     ...  ALSO  works
+|n#|7|at|When you click the ^*b { 1st } ^*n button  the bot  WILL  cover the  @sJ  OR  the  @s10 ^r with the  @sQ |
+pg| ***** 81 ***** |
+
+
+up||
+pc|sT|eb|y___|
+bh|clear|
+bh|Play, West, sQ, res, p2, T2-4, cond, Played Dec sJ, Played Dec sT,  or|
+ht|f|at|@4^^|
+at|^c ^*b bh`clear`^*n|n#|5|at|                        
+^c ^*b bh`Play, West, sJ, |cp||at|res|cp||at|, p2, T2-4, cond,  Played Dec sJ,   Played Dec sT,  or` ^*n  ^t     ...  back to example
+|n#|7|at|When you click the ^*b { 1st } ^*n button  the bot  WILL  cover the  @sJ  OR  the  @s10 ^r with the  @sQ|
+pg| ***** 82 ***** |
+
+
+up||
+pc|s4|eb|y___|
+bh|Play, West, sQ, res, p2, T2-4, cond, Played Dec sJ, Played Dec sT,  or|
+ht|f|at|@4^^|
+at|^c ^*b bh`clear`^*n|n#|5|at|                        
+^c ^*b bh`Play, West, sJ, |cp||at|res|cp||at|, p2, T2-4, cond,  Played Dec sJ,   Played Dec sT,  or` ^*n   
+|n#|7|at|When you click the ^*b { 1st } ^*n button  the bot  WILL  NOT  cover the  @s4  with the  @sQ  and plays the @s5 instead.|
+pg| ***** 83 ***** |
+
+
+md|1|
+nt|^b@2^z@3^^cleared|
+pg| ***** 84 ***** |
+
+
+%%=====================================================================================
+qx|bi,wide|
+rh||ah|Comp... 3|
+md|4sK2h654dAQ32cAKQ3,s7hJT87dJ976cJT75,s6543hAQ32dK54c42,sAQJT98hK9dT8c986|
+sv|n|sk|s|
+mb|2S|mb|d|mb|p|mb|3H|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pc|s7|
+nt|^b@2^z    @3^^^*b Companion 3 ^*n  ^f A ^*b Bot Instruction ^*n(bi)  Example   ^p no ^*b bi ^*n currently added |
+lg|f|n#|5|at|^c@2
+@. Declarer MUST always be South  -  unlike  Bot Hints (bh)  which work on  ANY deals.
+@. ^*bbi'^*ns tell the Bots (East or West) to ^*b SWAP ^*n a card when certain things happen.   (Hints tell Bots what to ^*bPlay^*n)
+|n#|3|at|^b@2It will help to see this example if you have the  "Study Deal visibility"  ON   -   see the Bot Hints doc in doc Collection.
+|n#|2|at|You are in 3NT and need either the @d split  OR  the @h finesse.  As you can see, neither are right for you.|
+pg| ***** 85 ***** |
+
+
+qx|swap,hide|
+ht|f|at|^m@4@5^^|ht|e|at|^p ^*b bi ^*n  Bot Instruction  NOW  added|
+%
+bi|Swap, West, hK, h, p2, T4-9, Cond, Rnds D=3 Won=3, Played Dec h, and|
+%
+ht|f|at|@4^^|lg|g|
+n#|3|at|^c^*b  bi`Swap,  W,  hK,  h,  p2,  T4-9,  Cond,    Rnds D=3 Won=3,   Played Dec h,   and` ^*n 
+|n#|3|at|The above  Bot Instruction (bi)  swaps the @hK from East to West,  but ^*b ONLY ^*n once you have tested the @d's (and so found them NOT breaking) ^*b AND ^*n have just led a @h from declarer.     
+|n^|1|at|^o Click the  { ^*b 1st ^*n }  button to check that this is true.|
+pg| ***** 86 ***** |
+
+
+nt|^b@2^z^^  ^*b Additional Example              bi ^*n  Bot Instruction |
+md|3sKQ6hA83dAJ95cA94,sAT753hJ9dQ76cT75,s84hK764dKT84cKQ6,sJ92hQT52d32cJ832|
+%
+bh|Play, W, sL, res, p3, T2,    always|
+bi|Swap, E, dQ,   d, p4, T2-11, cond, NeededToWinP4|
+%
+sv||sk|s|sk||
+mb|p|mb|p|mb|3N|mb|p|mb|p|mb|p|
+tc|c|
+pc|s3|
+pc|s8|pc|s9|pc|s6|
+pc|sJ|pc|sQ|pc|s5|pc|s4|
+pc|dJ|pc|d6|
+tc|n|
+
+ht|f|at|@4^^|lg|g|
+n#|6|at|^c^*b  bi`Swap,  E,  dQ,  d,  p4,  NeededToWinP4` ^*n 
+|n#|3|at|The above  Bot Instruction (bi)  swaps the @dK from East to West,  but Only if it is needed to win the trick (AND next to play is 4th pos).    So if the @dK is played by north the @dQ will not be swapped.     
+|n^|1|at|^m Click the  { ^*b Cont ^*n }  button and play a @d to check that this is true.|
+pg| ***** 87 ***** |
+
+
+qx|end,wide|
+
+
+

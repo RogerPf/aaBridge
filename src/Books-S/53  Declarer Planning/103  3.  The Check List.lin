@@ -1,0 +1,139 @@
+%%
+%%
+
+ss|chapter,3.  The  Check  List                                      |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-07-08          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Declarer  Planning                                                  |
+%%
+cr|m140|cg|m080|cb|m110|   fill   m  m-mastColor       on Title Pages
+cr|c208|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor  fake pink button
+cr|b200|cg|b255|cb|b255|   fill   b  light blue   fake blue button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|h|
+at|^c@2^y@3^^|n#|0|
+fp|t-title|at||fp||
+lg|h|
+n#|4|at| 
+The single page  'check list'  that follows is a summary of the planning process.  You wanted more ?   then my advice is to:   
+
+
+|fp|t|at|Write Your Own - Check List|fp||at|
+
+Seriously, the two sections above and the one page summary here have all the material you need.  Write it out.  Only you know your strengths and your weaknesses.
+
+Your plan should concentrate on what you need to remind yourself to do.
+
+Write it out and  'own'  it.
+
+
+|
+qx|3.|
+pg| ***** 0 ***** |
+
+
+ht|i|
+nt|^b@2^z@3^^|n#|9|
+fp|b-title|at|^a   The Check List|fp||
+lg|f|
+n#|5|at|^b@2
+     Do the Standard Drill on your hand - to remember it
+     Follow the bidding - give hcps & shape to every bid
+|
+n#|5|fp|t-title|at|^*bPre Planning^*n|fp||at|  -  on the LEAD
+^c@2What is going on - in the suit led ?  
+(If trump) - What is going on in trumps (quick) 
+Standard Drill on dummy - to remember it
+^*bSummarize^*n the Opps hands, their hcp, shape
+|cp|red|at|^*bSet your trick target^*n|cp||at|
+|
+n#|7|fp|t-title|at|^b^*bPlanning^*n|fp||at|
+For each suit in turn
+       What is going on ?
+       List the missing high cards - imagine them
+       They have ?    Are missing hons split ?
+|n#|3|at|^cDo  ^*bTop Trick Count ^*n  (inc in trump contracts)
+|n#|3|at|^cIf in a trump contract
+^d@2Do ^*b Loser Count ^*n on  each  hand 
+Consider ^*b Master hand ^*n?   Cross-ruff ?
+|n#|3|at|^cState the objective
+|cp|red|at|^*bEXTRA tricks to find ?^*n|cp||at|    (+ any issues)
+|
+n#|9|fp|t-title|at|^b^*bPlanning Core^*n|fp||at|
+^c@2You have, a set number of EXTRA tricks to find.  You know the ^*b Top Trick Count ^*n and for suit contracts you have 1 or 2 ^*b Loser Counts^*n.    Your task is to find the best  PLAY LIST  that will meet the objective.
+|
+
+ht|c|n#|3|fp||lg|1|
+at|^n  @2
+¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦
+|ht|c|n#|6|at|¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦
+|ht|x|n#|4|at|^n|n>|7|at|@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-|
+lg|c|
+ht|c|n#|7|n>|o6|at|@2|
+fp|t-title|at|^n    ^*bPlanning Core^*n     |fp|s|at|continued |fp||at|
+|n#|9|cp|red|at|^*bPr@2oduce a LIST of techniques^*n|cp||at|, that MIGHT gain extra tricks, consider each suit in turn,    eg:
+   @.  Finesse against the King of Hearts.
+   @.  Keep a low trump as an entry to dummy.
+|
+n#|9|n>|o6|cp|red|at|^*bWork through ^*n|cp||at|all the techniques on THAT list
+(combining them if needed)  
+AND put them together with the information got from the bidding and lead.@1^z    @3
+|
+n#|9|n>|o6|at|@2|cp|red|at|^*bTo produce ^*n|cp||at| 
+   @2a  LIST  (yes another list) of ^*b Lines of play ^*n each of which has some chance of achieving the objective.
+|
+n#|9|n>|o6|at|@2|cp|red|at|^*bSelect  ^*n|cp||at|
+    the ^*b Line of play ^*n that you think most likely to work.
+|
+n#|9|n>|o6|cp|red|at|^*bConvert^*n|cp||at|  
+    that ^*b Line of play ^*n into a  PLAY LIST.
+^^|
+n#|c|n>|p6|cp|gr|at|^*bWhat could possibly go wrong ?^*n|cp||at|  
+^q   is a great thought to keep in mind.|
+qx|ck L|
+pg| ***** 1 ***** |
+
+

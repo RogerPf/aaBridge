@@ -1,0 +1,608 @@
+%%dontrunouts.lin
+%%%http://www.bridgesights.com/hondobridge/WeakNTPart3.pdf
+%% Last edited  11-3-2015 9 am
+%%%% By Kia, BBO nickname "nome"
+bt||
+fh|155|ff|1Arial|fb|110|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|35|fm|3|                           FOR 3
+fh|490|ff|4Arial|fb|48|fm|4|
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|3255|cg|3255|cb|3255|            White 3
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|664|cb|6255|cg|6255|             6=TURQUOISE
+cr|7000|cb|7000|cg|7000|            Black 7
+cr|8255|cb|80|cg|80|                red 8
+cr|9107|cb|9186|cg|9140|            9 shade of blue
+%%%%%
+cs|6|ht|b|fp|1|at|
+^-{  Bidding when the opponents interfere over 1NT  
+DONT Runouts - By Howard Schutzman}
+^-|fp||
+ht|g|at|^CTable of Content|
+ht|h|cp|1|at|^*GRUND,^CBidding When the Opponents Double^*N
+^*GRUNO,^CBidding When the Opponents Overcall^*N
+^*GSTO,^CSystems on and Stolen Bid Double^*N
+^*GLEB,^CLebensohl convention ^*N|cp||AT|^b@2
+
+This tutorial is based on Howard Schutzman's teaching as outlined in his article:
+|CP|1|AT|^*Hwww.bridgesights.com/hondobridge/WeakNTPart3.pdf^*N|CP||at|
+
+There have been various Runouts schemes invented over the years, but the DONT Runouts (which Howard Schutzman |CP|1|AT|^*Hwww.bridgesights.com/hondobridge/^*N|CP||AT| and Marty Bergen |CP|1|AT|^*Hwww.martybergen.com/^*N|CP||AT| independently invented are the simplest to play. Notable quotes from other sources have been added. It is based on the DONT convention played by many pairs when competing over 1NT opening bids. The approach is, therefore, named "^*BDONT Runouts^*N". It lets you to find the best place to play when the opponents have doubled or overcalled your partner's 1NT opening bid. The method applies whether the double/overcall is made directly or by responder's right hand opponent.|
+
+ht|w|cp||at|^bPlease click either a topic from the table of content above or click the "Next Page" to begin.
+
+^b@2In the Viewer version, additional navigation tips are available by clicking the |cs|9|CP|3|AT| { ? } |CP||cs||AT| icon in the Viewer.|at|
+
+^rReleased date: November 2015
+|
+PG| ***** 0 ***** |
+
+
+NT||
+%%
+qx|RUND,opponents doubled|cs|6|ht|b|fp|1|at|^-{  Bidding when the Opponents Double Partner's 1NT bid  
+DONT Runouts - By Howard Schutzman}
+^-|fp||ht|e|at|^B@2As we mentioned, the method applies whether the double/overcall is made directly or by responder's right hand opponent. The example bid are:|
+PG| ***** 1 ***** |
+
+
+ht|g|cs|6|at|^b{|ia|1nd|at|}|
+pg| ***** 2 ***** |
+
+
+Ht|g|at|^m{|ia|1d1nd|at|}|ht|k|at|^m  It also works in the above bidding sequences too.|
+PG| ***** 3 ***** |
+
+
+ht|k|at|^b{|ia|1nppdpp|at|}|ht|m|at|^mor in balancing seat.|
+pg| ***** 4 ***** |
+
+
+ht|t|at|As most already know the double after 1N is either for penalty, reasonably rare, or is a convention such is DONT or others. To use DONT Runouts, do we need to know the double we are dealing with? Not really. We can play DONT Runouts even if RHO's double is not penalty (for example, showing a single suited hand). Let us quote from Larry Cohen in  |CP|1|AT|^*Hwww.larryco.com/bridge-learning-center/detail/42^*N|CP||AT|
+
+^-{  If they double 1NT (as a convention), don't even bother asking what the ALERT means.  
+Just ignore them. I mean ^*BI-G-N-O-R-E!^*N}
+^-|
+PG| ***** 5 ***** |
+
+
+AT|
+It is simpler and more consistent, very flexible, and allows you to compete effectively. Let us look how it works.|
+PG| ***** 6 ***** |
+
+
+NT||
+%%%%
+at|
+^*BExample A^*N
+
+Partner bids 1N ^*b(15-17)^*n, RHO doubles| 
+HT|e|cs|6|at|^b{|ia|1nd?|at|}|HT|e|at|^mand you (East) have the hand as is shown below.|
+HT|i|cs|2|at|^b{|ih|pST9HJ9DKQ98C98765|at|}|ht|i|at|^mYou are playing DONT Runouts. What can you bid?|
+PG| ***** 7 ***** |
+
+
+HT|e|cs|6|at|^b{|ia|1ndp|at|}|ht|k|at|^kYou ^*BPass.^*N|
+pg| ***** 8 ***** |
+
+
+ht|p|at|You ^*Bpass^*N with this hand, With 6 Bergen Starting Points, you are willing to play 1N doubled.|
+ht|s|cs|6|at|^-{
+  Partnership can play in 1N doubled if responder (East here) has a sufficiently strong hand.  
+
+}^-|
+PG| ***** 9 ***** |
+
+
+NT||
+%%%%
+at|
+^*BExample A1^*N
+
+Partner bids ^*b1N (12-14)^*n, RHO doubles| 
+HT|e|cs|6|at|^b{|ia|1nd?|at|}|HT|e|at|^mand you (East) have the hand as is shown below.|
+HT|i|cs|2|at|^b{|ih|pSK9HJ9DKQ98C98765|at|}|ht|i|at|^mYou are playing DONT Runouts. What can you bid?|
+PG| ***** 10 ***** |
+
+
+HT|e|cs|6|at|^b{|ia|1ndp|at|}|ht|k|at|^kYou ^*BPass.^*N|
+pg| ***** 11 ***** |
+
+
+ht|p|at|You ^*Bpass^*N with this hand, With 9 Bergen Starting Points, you are willing to play weak 1N doubled.|
+PG| ***** 12 ***** |
+
+
+NT||
+%%%
+at|
+^*BExample B^*N
+
+Partner bids 1N (), RHO doubles| 
+HT|e|cs|6|at|^b{|ia|1nd?|at|}|HT|e|at|^mand you (East) have the hand as is shown below.|
+HT|i|cs|2|at|^b{|ih|pS76H76Dt987Ck8765|at|}|ht|i|at|^mYou are playing DONT Runouts. What can you bid?|
+PG| ***** 13 ***** |
+
+
+HT|e|cs|6|at|^b{|ia|1ndr|at|}|ht|k|at|^kYou ^*Bredouble.^*N|
+pg| ***** 14 ***** |
+
+
+ht|p|at|You ^*Bredouble^*N, showing a single suited hand. Partner is forced to bid 2@C, and you bid your suit (or pass if your suit is clubs as in this example). With spades, you have the option of bidding 2@S directly, which jams the opponents.|
+ht|s|cs|6|at|^-{
+  With a single suited hand (5 card suit or longer), you redouble.   
+
+}^-|
+PG| ***** 15 ***** |
+
+
+NT||
+%%%
+at|
+^*BExample B1^*N
+
+Partner bids 1N, RHO doubles| 
+HT|e|cs|6|at|^b{|ia|1nd?|at|}|HT|e|at|^mand you (East) have the hand as is shown below.|
+HT|i|cs|2|at|^b{|ih|pS76H76ct987dk8765|at|}|ht|i|at|^mYou are playing DONT Runouts. What can you bid?|
+PG| ***** 16 ***** |
+
+
+HT|e|cs|6|at|^b{|ia|1ndr|at|}|ht|k|at|^kYou ^*Bredouble.^*N|
+pg| ***** 17 ***** |
+
+
+ht|p|at|You ^*BRedoule^*n, showing a single suited hand. Partner is forced to bid 2@C, and you bid your suit (or pass if your suit is diamonds as in this example). |
+ht|s|cs|6|at|^-{
+  With a single suited hand (5 card suit or longer), you redouble.   
+
+}^-|
+PG| ***** 18 ***** |
+
+
+NT||
+%%%
+at|
+^*BExample C^*N
+
+Partner bids 1N, RHO doubles| 
+HT|e|cs|6|at|^b{|ia|1nd?|at|}|HT|e|at|^mand you (East) have the hand as is shown below.|
+HT|i|cs|2|at|^b{|ih|phA432dQ567s89C432|at|}|ht|i|at|^mYou are playing DONT Runouts. What can you bid?|
+PG| ***** 19 ***** |
+
+
+HT|e|cs|6|at|^b{|ia|1nd2d|at|}|ht|k|at|^kYou ^*Bbid 2@D.^*N|
+pg| ***** 20 ***** |
+
+
+ht|p|at|^*BBid 2@D^*n, showing diamonds and a suit higher. Notrumper passes with 3 diamonds. With doubleton diamonds he will bid the next higher suit - hearts. Notrumper most likely does not have 2 doubletons.|
+ht|s|cs|6|at|^-{
+  Playing DONT Runouts, you can be 4-4 and show 2 suits.   
+
+}^-|
+PG| ***** 21 ***** |
+
+
+NT||
+%%%
+at|
+^*BExample C1^*N
+
+Partner bids 1N, RHO doubles| 
+HT|e|cs|6|at|^b{|ia|1nd?|at|}|HT|e|at|^mand you (East) have the hand as is shown below.|
+HT|i|cs|2|at|^b{|ih|psA432hQ567d89C432|at|}|ht|i|at|^mYou are playing DONT Runouts. What can you bid?|
+PG| ***** 22 ***** |
+
+
+HT|e|cs|6|at|^b{|ia|1nd2h|at|}|ht|k|at|^kYou ^*Bbid 2@H.^*N|
+pg| ***** 23 ***** |
+
+
+ht|p|at|^*BBid 2@H^*n, showing hearts and spades. Notrumper passes with 3 hearts. With doubleton hearts he will bid the next higher suit - spades. Notrumper most likely does not have 2 doubletons.|
+ht|s|cs|6|at|^-{  With two suits (and you may have as little as 4-4), you bid the lower ranking suit.  
+Partner passes with 3 card support, and bids the next higher suit with a doubleton. 
+  Since partner cannot open 1N with 2 doubletons, you are guaranteed to play in a 4-3 fit at worst.  
+For example, with diamonds and spades, you would bid 2 diamonds. 
+If partner has a doubleton diamond, he bids 2@H.You then correct to 2 spades.   
+}^-|
+PG| ***** 24 ***** |
+
+
+at|
+
+If you prefer the "new" DONT, you can modify this system appropriately. In the new DONT, 2@H and 2@S are single suited hands. Let us look at some examples.|
+PG| ***** 25 ***** |
+
+
+NT||
+at|
+^*BExample D^*N
+
+Partner bids 1N, RHO doubles| 
+HT|e|cs|6|at|^b{|ia|1nd?|at|}|HT|e|at|^mand you (East) have the hand as is shown below.|
+HT|i|cs|2|at|^b{|ih|psA432hQ567d89C432|at|}|ht|i|at|^kYou play DONT Runouts and prefer the "new" DONT. What can you bid?|
+PG| ***** 26 ***** |
+
+
+HT|e|cs|6|at|^b{|ia|1ndr|at|}|ht|k|at|^kYou ^*Bredouble.^*N|
+pg| ***** 27 ***** |
+
+
+ht|q|cs|6|at|
+If your prefer the "new" DONT and would like to play DONT Runouts, redouble shows either a single suited minor, or hearts and spades (if responder corrects 2@C to 2@H, it shows hearts and spades). The advantage of the new DONT is that with a single suited major, you can compete more effectively.  
+|
+PG| ***** 28 ***** |
+
+
+NT||
+%%%
+at|
+^*BExample E^*N
+
+Partner bids 1N, RHO doubles| 
+HT|e|cs|6|at|^b{|ia|1nd?|at|}|HT|e|at|^mand you (East) have the hand as is shown below.|
+HT|i|cs|2|at|^b{|ih|pS87H65DKQ43C98765|at|}|ht|i|at|^mYou are playing DONT Runouts. What can you bid?|
+PG| ***** 29 ***** |
+
+
+HT|e|cs|6|at|^b{|ia|1ndr|at|}|ht|k|at|^kYou ^*Bredouble.^*N|
+pg| ***** 30 ***** |
+
+
+ht|p|at|Although 2@C (clubs and another suit) is a possible bid, I prefer, with 5-4 treating it as a single suited hand and I would ^*Bredouble^*N. You are almost always better off playing in the weak hand's 5-card suit. With 5 diamonds and 5 clubs, 2@C is clearly the better bid.|
+PG| ***** 31 ***** |
+
+
+NT||
+%%%%
+at|
+^*BExample F^*N
+
+Partner bids 1N, RHO doubles| 
+HT|e|cs|6|at|^b{|ia|1nd?|at|}|HT|e|at|^mand you (East) have the hand as is shown below.|
+HT|i|cs|2|at|^b{|ih|pSKQJ987HA87D987C9|at|}|ht|i|at|^mYou are playing DONT Runouts. What can you bid?|
+PG| ***** 32 ***** |
+
+
+HT|e|cs|6|at|^b{|ia|1nd4h|at|}|ht|k|at|^kYou ^*Bbid 4@H.^*N|
+pg| ***** 33 ***** |
+
+
+ht|p|at|^*BBid 4@H^*N (transfer) if you play Texas, or 4@S if you don't. This is the same as what you would have done with no double. There is no point in letting the opponents find out if they can compete.|
+PG| ***** 34 ***** |
+
+
+NT||
+%%%
+at|
+^*BExample G^*N
+
+Partner bids 1N, RHO doubles| 
+HT|e|cs|6|at|^b{|ia|1nd?|at|}|HT|e|at|^mand you (East) have the hand as is shown below.|
+HT|i|cs|2|at|^b{|ih|pSKQJ98HA98DQ98C98|at|}|ht|i|at|^mYou are playing DONT Runouts. What can you bid?|
+PG| ***** 35 ***** |
+
+
+HT|e|cs|6|at|^b{|ia|1nd3s|at|}|ht|k|at|^kYou ^*Bbid 3@S.^*N|
+pg| ***** 36 ***** |
+
+
+ht|p|at|Bid 3@S (natural and forcing). This gives partner a choice of games. At first blush, you may feel that not being able to transfer is a problem, However, the advantage of the transfer (hiding the strong hand) is not that important when responder has such a strong hand.|
+PG| ***** 37 ***** |
+
+
+NT||
+%%%
+cs|6|ht|b|fp|1|at|^-{DONT Runouts
+  Bidding When the Opponents Double  }
+^-|fp||ht|e|at|Below is a short summary. |
+PG| ***** 38 ***** |
+
+
+ht|i|at|^-{  It is based on the DONT convention played by many pairs when competing over 1NT opening bids.  }
+^-|
+PG| ***** 39 ***** |
+
+
+ht|k|cs|1|cp|4|at|^-{  You pass if you want to play 1N (15-17) doubled (typically a balanced hand with at 5+ HCP) }
+^-|
+pg| ***** 40 ***** |
+
+
+ht|m|cs|7|cp|3|at|^-{  With a single suited hand (5 card suit or longer), you redouble. Partner is forced to bid 2C, and you bid your suit
+(or pass if your suit is clubs). With spades, you have the option of bidding 2S directly, which jams the opponents.   }
+^-|
+PG| ***** 41 ***** |
+
+
+ht|p|cs|8|cp|3|at|^-{ With two suits (and you may have as little as 4-4), you bid the lower ranking suit.
+Partner passes with 3 card support, and bids the next higher suit with a doubleton. 
+  Since partner cannot open 1N with 2 doubletons, you are guaranteed to play in a 4-3 fit at worst.  }
+^-|
+PG| ***** 42 ***** |
+
+
+ht|t|cs|7|cp|3|at|^-{ Howard recommends you play this system even if RHO's double is not penalty.  
+It is simpler and more consistent, and allows you to compete effectively. }
+^-|cs||cp||
+PG| ***** 43 ***** |
+
+
+AT|
+
+That is it. Next is how to bid after your partner's 1N is overcalled.|
+PG| ***** 44 ***** |
+
+
+NT||
+%%%%
+qx|RUNO,Bidding When The Opponents Overcall|cs|6|ht|b|fp|1|at|^-{  Bidding When the Opponents Overcall  }
+^-|fp||ht|d|cp|8|AT|
+^B@2^*BHoward Schutzman: ^*N|cp||at|With the strong NT, when the opponents overcall I recommend that you play "^*BSystems on and stolen bid doubles^*n". This means that all bids by responder retain the same meaning as if there had been no overcall, and a double means "the opponent made the bid I wanted to make (^*Bhe 'stole' my bid)^*n". This is a very simple and effective approach.
+
+However, with the weak NT, it is more likely the points are evenly divided between the two sides, and you need more flexibility in competing for part scores. Therefore, I recommend you play the Lebensohl convention if you play weak 1N openers. It is somewhat more complicated than systems on, but it is a lot more flexible.|CP|1|AT|
+
+^d^*GSTO,Systems on and Stolen Bid Doubles^*N
+^d^*GLEB,Lebensohl convention ^*N|cp||
+PG| ***** 45 ***** |
+
+
+NT||
+
+%%%New section
+%%%%http://www.betterbridge.com/misc/StandardArticles/Standard200406.pdf
+qx|STO,|cs|6|ht|b|fp|1|at|^-{  Bidding When the Opponents Overcall 1N 
+Systems on Double Stolen Bid}
+^-|fp||ht|e|fp||at|Let us go through the bids most often used after partner opens 1N. The bidding by responder after partner's 2N is overcalled is not addressed here.
+
+^*UOPENING BIDS ^KRESPONSES^*N
+1NT: 15 to 17 ^j2@C ^l: Stayman
+^J2@D ^L: 5+ hearts (transfer)
+^J2@H ^L: 5+ spades (transfer)
+^J2@S ^L: transfer to 3@C with possible relay to 3@D
+^J2N ^L:  is invitational
+^J3@C/3@D ^L: 6+ suit; are forcing and natural
+^J3@H/3@S ^L: Forcing; invit. to slam
+^J3N ^L: is to play|
+PG| ***** 46 ***** |
+
+
+AT|
+
+The overcalls, if any, most often, could be 2@C, 2@D, 2@H or 2@S. We discussed the double in the last section. We will outline the "Systems on Stolen Bid" arrangement to treat each overcall. Please note that this arrangement won't always work well with every possible hand. So a healthy dose of judgement and an alert partner would be very helpful. Further, please note that there are many other similar arrangements which you can choose.|
+PG| ***** 47 ***** |
+
+
+AT|
+
+^*BAfter a 2@C Overcall^*N
+Partner opens 1N and our RHO overcalls 2@C which is alerted showing either a one-suited or two-suited type of hand. As you see we are only robbed of 2@C Stayman. So depending on our hand:
+
+^CWe can pass if we have nothing to say,
+^CWe can bid 2@D, 2@H, and 2@S to transfer to Hearts, Spades and Minors respectively. ^*BSystems on^*N, 
+^CAnd we double for 2@C Stayman which we are robbed of. Thus, ^*BDouble Stolen Bid^*N. Let us look at some examples:|
+PG| ***** 48 ***** |
+
+
+NT||
+%%%%%%%% Example S1
+md||
+CS|6|fp|1|AT|^-
+{      Your RHO Overcalls 2@C Partner's 1N Opening Bid    }
+^-|ht|e|fp||at|^B@2You are South holding this hand |ih|st9hkqt76dk98cj54|ht|g|at|^land the bidding is|ht|e|
+cs|6|at|^p{|ia|,1n2c?|at|}|ht|d|cs||at|^kExample S1|hf|j|lb|*bWhat should you make?^^2d|
+ht|k|at|^B@2
+Bid 2@D. Absent the interference, we were going to bid 2@D to transfer to Hearts. So we ignore the 2@C and bid as we were?^*BSystems on^*N. 
+|ht|e|
+cs|6|at|^p{|ia|,1n2c2d|at|}|
+PG| ***** 50 ***** |
+
+
+NT||
+%%%%%%%% Example S2
+CS|6|fp|1|AT|^-
+{      Your RHO Overcalls 2@C Partner's 1N Opening Bid    }
+^-|ht|e|fp||at|^B@2You are South holding this hand |ih|ht9skqt76dk98cj54|ht|g|at|^land the bidding is|ht|e|
+cs|6|at|^p{|ia|,1n2c?|at|}|ht|d|cs||at|^kExample S2|hf|j|lb|*bWhat should you make?^^2h|
+ht|k|at|^B@2
+Bid 2@H. Absent the interference, we were going to bid 2@H to transfer to Spades. So we ignore the 2@C and bid as we were?^*BSystems on^*N. BTW, on this and the previous hand you can play Texas transfer.
+|ht|e|
+cs|6|at|^p{|ia|,1n2c2h|at|}|
+PG| ***** 52 ***** |
+
+
+NT||
+%%%%%%%% Example S3
+CS|6|fp|1|AT|^-
+{      Your RHO Overcalls 2@C Partner's 1N Opening Bid    }
+^-|ht|e|fp||at|^B@2You are South holding this hand |ih|sq9ckt9765dk9hj54|ht|g|at|^land the bidding is|ht|e|
+cs|6|at|^p{|ia|,1n2c?|at|}|ht|d|cs||at|^kExample S3|hf|j|lb|*bYou play 2S to transfer to Minors. What should you make?^^2S|
+ht|k|at|^B@2
+Bid 2@S. Partner is forced to bid 3@C and you pass. Again the overcall is ignored?^*BSystems on^*N.
+|ht|e|
+cs|6|at|^p{|ia|,1n2c2s|at|}|
+PG| ***** 54 ***** |
+
+
+NT||
+%%%%%%%% Example S4
+CS|6|fp|1|AT|^-
+{      Your RHO Overcalls 2@C Partner's 1N Opening Bid    }
+^-|ht|e|fp||at|^B@2You are South holding this hand|ih|pd 9 4s K J 7 3h A T 8 3C 543|ht|h|at|^lbidding is on the right.|ht|e|
+cs|6|at|^p{|ia|,1n2c?|at|}|ht|d|cs||at|^kExample S4|hf|k|lb|*bWhat bid should you make?^^x|
+ht|k|va|4|at|^B@2
+With this hand we were planning to bid 2@C Stayman. That bid is not available - stolen. So we double instead - ^*BDouble Stolen Bid^*N. 
+
+You may ask what if the LHO bids either 2@H or 2@S. No problem. The alert partner, depending on his holding in the majors either can bid the other major or double if his 4+card major is the suit bid by our LHO. This would be highly unlikely but can happen. 
+
+The rest of our bids, 2N, 3@C/3@D, 3@H/3@S, and 3N are unchanged?^*BSystems on^*N. 
+|ht|e|
+cs|6|at|^p{|ia|,1n2cd|at|}|
+PG| ***** 56 ***** |
+
+
+NT||bt||
+%%%%
+cs|6|ht|b|fp|1|at|^-{  Bidding When the Opponents Overcall 1N 
+Systems on Double Stolen Bid}
+^-|fp||ht|e|fp||at|^*BAfter 2@D Overcall^*N
+
+When the opponent's overcall is 2@D, it takes away both 2@C Stayman and 2@D transfer to hearts. So with our ^*BSystems on Double Stolen Bid^*N agreement:
+
+^CDouble is transfer to Hearts - ^*BStolen Bid^*N
+^C3@D cuebid is Stayman.
+^CThe rest of our bids 2@H, 2@S, 2N, 3@C 3@H/3@S, and 3N are unchanged?^*BSystems on^*N.
+
+Next we have a few examples.|
+PG| ***** 57 ***** |
+
+
+NT||
+%%%%%%%% Example S5
+CS|6|fp|1|AT|^-
+{      Your RHO Overcalls 2@D Partner's 1N Opening Bid    }
+^-|ht|e|fp||at|^B@2You are South holding this hand|ih|pS Q 43H K T 8 7 5 D 8 4C 9 7 2|ht|h|at|^lthe bidding is|ht|e|
+cs|6|at|^p{|ia|,1n2d?|at|}|ht|d|cs||at|^kExample S5|hf|k|lb|*bWhat bid should you make?^^x|ht|k|at|^B@2
+We were planing to transfer to Hearts by bidding 2@D. That bid is stolen so we bid double instead - ^*NDouble Stolen Bid^*N. Some experts play transfers are off after a 2@D or higher overcall. Here for example they bid 2@H which is not forcing. But if we play ^*BSystems on Double Stolen Bid^*N the 2@H is transfer to Spades.
+|ht|e|
+cs|6|at|^p{|ia|,1n2dd|at|}|
+PG| ***** 59 ***** |
+
+
+NT||
+%%%%%%%% Example S6
+CS|6|fp|1|AT|^-
+{      Your RHO Overcalls 2@D Partner's 1N Opening Bid    }
+^-|ht|e|fp||at|^B@2You are South holding this hand |ih|hjt9skt743dk98cj5|ht|g|at|^land the bidding is|ht|e|
+cs|6|at|^p{|ia|,1n2d?|at|}|ht|d|cs||at|^kExample S6|hf|j|lb|*bWhat should you make?^^2h|
+ht|k|at|^B@2
+Bid 2@H. We were going to transfer to Spades if our RHO had not overcalled. Now we ignore his 2@D overcall and bid our transfer - ^*BSystems on^*N.
+|ht|e|
+cs|6|at|^p{|ia|,1n2d2h|at|}|
+PG| ***** 61 ***** |
+
+
+NT||
+%%%%%%%% Example S7
+CS|6|fp|1|AT|^-
+{      Your RHO Overcalls 2@D Partner's 1N Opening Bid    }
+^-|ht|e|fp||at|^B@2You are South holding this hand |ih|dt9hkqt7skq98cj5|ht|g|at|^land the bidding is|ht|e|
+cs|6|at|^p{|ia|,1n2d?|at|}|ht|d|cs||at|^kExample S7|hf|j|lb|*bWhat should you make?^^3d|
+ht|k|at|^B@2
+With our 2@C Stayman blocked or stolen the 3@D cuebid is Stayman. Bid 3@D.
+
+All other bids (2@H, 2@S, 2N, 3@C/3@D, 3@H/3@S and 3N are still available). |ht|e|
+cs|6|at|^p{|ia|,1n2d3d|at|}|
+PG| ***** 63 ***** |
+
+
+NT||
+
+%%%%%start of 2H
+%%%%%%8
+qx||CS|6|fp|1|AT|^-
+{      Your RHO Overcalls 2@H Partner's 1N Opening Bid    }
+^-|ht|e|fp||at|^B@2You are South holding this hand |ih|ht97dkt9skq987cj5|ht|g|at|^land the bidding is|ht|e|
+cs|6|at|^p{|ia|,1n2h?|at|}|ht|d|cs||at|^kExample S8|hf|j|lb|*bWhat should you make?^^x|
+ht|k|at|^B@2
+Bid Double. It is still "^*Bstolen bid^*N", so it is a transfer to spades.
+
+After 2@H overcall, all other bids (2@S, 2N, 3@C/3@D, 3@H/3@S and 3N are still available). |ht|e|
+cs|6|at|^p{|ia|,1n2hd|at|}|
+PG| ***** 65 ***** |
+
+
+NT||
+%%%%%%9 Stayman
+CS|6|fp|1|AT|^-
+{      Your RHO Overcalls 2@H Partner's 1N Opening Bid    }
+^-|ht|e|fp||at|^B@2You are South holding this hand |ih|dt97hkt97skq98cj5|ht|g|at|^land the bidding is|ht|e|
+cs|6|at|^p{|ia|,1n2h?|at|}|ht|d|cs||at|^kExample S9|hf|j|lb|*bWhat should you make?^^3h|
+ht|k|at|^B@2
+Bid 3@H. The 3@H is Stayman.
+
+After 2@H overcall, all other bids (2@S, 2N, 3@C/3@D, 3@S, and 3N are still available). |ht|e|
+cs|6|at|^p{|ia|,1n2h3h|at|}|
+PG| ***** 67 ***** |
+
+
+NT||
+%%%%%%10 transfer to minor
+CS|6|fp|1|AT|^-
+{      Your RHO Overcalls 2@H Partner's 1N Opening Bid    }
+^-|ht|e|fp||at|^B@2You are South holding this hand |ih|dt97653hktsk98cj5|ht|g|at|^land the bidding is|ht|e|
+cs|6|at|^p{|ia|,1n2h?|at|}|ht|d|cs||at|^kExample S10|hf|j|lb|*bWhat should you make?^^2s|
+ht|k|at|^B@2
+Bid 2@s transfer to minors. Assuming you play 2@S over 1NT is a minor suit transfer (e.g. the 1NT bidder bids 3@C over 2@S and responder passes or corrects to 3@D - in this case), 2@S is still a minor suit transfer.
+|ht|e|
+cs|6|at|^p{|ia|,1n2h2s|at|}|
+PG| ***** 69 ***** |
+
+
+NT||
+%%%%%%%%
+cs|6|ht|b|fp|1|at|^-{  Bidding When the Opponents Overcall 1N 
+Systems on Double Stolen Bid}
+^-|fp||ht|e|fp||at|^*BAfter 2@H Overcall^*N
+
+^CTransfer to Hearts is off
+^CDouble is transfer to Spades - ^*BStolen Bid^*N
+^C3@H cuebid is Stayman.
+^C2@S is transfer to minors
+^C2N is invitational is before ^*BSystem is on^*N
+^C3@C/3@D are still forcing and natural
+^C3@H/3@S are still forcing and natural
+^C3N is to play - unchanged - ^*BSystems on^*N.|
+PG| ***** 70 ***** |
+
+
+NT||
+%%%%%%11 after 2S overcall
+CS|6|fp|1|AT|^-
+{      Your RHO Overcalls 2@S Partner's 1N Opening Bid    }
+^-|ht|e|fp||at|^B@2You are South holding this hand |ih|dt97hkqt8skqj8cj5|ht|g|at|^land the bidding is|ht|e|
+cs|6|at|^p{|ia|,1n2s?|at|}|ht|d|cs||at|^kExample S11|hf|j|lb|*bWhat should you make?^^3s|
+ht|k|at|^B@2
+Bid 3@S which is Stayman.
+|ht|e|
+cs|6|at|^p{|ia|,1n2s3s|at|}|
+PG| ***** 72 ***** |
+
+
+NT||
+%%%%%%12 after 2S overcall
+CS|6|fp|1|AT|^-
+{      Your RHO Overcalls 2@S Partner's 1N Opening Bid    }
+^-|ht|e|fp||at|^B@2You are South holding this hand |ih|dqjt976hkt8st8cj5|ht|g|at|^land the bidding is|ht|e|
+cs|6|at|^p{|ia|,1n2s?|at|}|ht|d|cs||at|^kExample S12|hf|j|lb|*bWhat should you make?^^x|
+ht|k|at|^B@2
+Double is a minor suit transfer (^*Bstolen bid^*N) and usually a way to compete to 3@C or 3@D.
+|ht|e|
+cs|6|at|^p{|ia|,1n2sd|at|}|
+PG| ***** 74 ***** |
+
+
+NT||
+%%% after 2s overcall
+cs|6|ht|b|fp|1|at|^-{  Bidding When the Opponents Overcall 1N 
+Systems on Double Stolen Bid}
+^-|fp||ht|e|
+lg|m|fp||at|   ^*BAfter 2@S Overcall^*N
+
+^CTransfers to Hearts and Spades are off
+^CDouble is transfer to Minors  -  ^*BStolen Bid^*N
+^C3@S cuebid is Stayman.
+^C2N is invitational is before  -  ^*BSystem is on^*N
+^C3@C/3@D are still forcing and natural
+^C3@H/3@S are still forcing and natural
+^C3N is to play - unchanged?  -  ^*BSystems on^*N.|
+pg| ***** 75 ***** |
+
+
+at|^^^^^^^f^*bThis is the end.
+|
+PG| ***** 76 ***** |
+
+

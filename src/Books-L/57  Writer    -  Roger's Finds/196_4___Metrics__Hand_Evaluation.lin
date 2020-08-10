@@ -1,0 +1,582 @@
+%%
+%%
+
+ss|chapter,4                         Hand  Evaluation  Metrics|
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2016-02-11        set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Roger's  Finds                   2020  and  Past  Years |
+%%
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       Maroon
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    Around the normal Grey
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title     
+fh|b50|                    Font   b  b-bigTitle
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+%
+cr|a230|cg|a040|cb|a130|   text   a  a-action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       on Title Pages
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    on Title Pages
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|y|n#|b|lg||at|^b@2@1|at|
+^*bClick^*n          ^*bFlow >^*n         or use your    ^*bMouse Wheel^*n|
+ht|z|at|@0
+^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|i|
+lg|c|at|^c@2^z@3|
+at|This is a VERY BRIEF summary of the Hand Evaluation Methods (Metrics).
+
+Think of these notes as a quick way access the tables (plus a single example) they include NO explanations.  
+
+The  ^*bhumps^*n  on the Navbar at the bottom of the screen match to topics.  You can click anywhere on the Navbar to jump to that position in this .lin file (Bridge Movie).
+|lg|j|at|
+^d SQ   ^g Suit Quality
+^d LTC  ^g Losing Trick Count
+^d RLTC ^g Reverse Losing Trick Count
+^d CovC ^g Cover Cards
+^d Banz ^g Banzi Points  an Alternative  High Card Point  system
+^d Expl ^g Example Hand|
+
+bv|e,v|
+qx|# 4|
+pg| ***** 0 ***** |
+
+
+--------------------------------------------------------------------
+qx|SQ,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|SQ    -     Suit Quality|fp||at|      ^^^^|
+lg|c|n^|5|
+at|
+^*bSuit Quality  ^*n  =   Suit length  +   number of honors  (AKQJT)
+
+				^d ^*b EXCLUDE ^*n the  Jack  and  Ten  unless you have a higher honor
+
+				
+^bThe suit Quality number can be used as a guide to the 'safe to bid at level'.
+
+ 
+^d   Suit Quality      ^h     Safe to bid at level            ^n        Examples
+|n^|5|at|^d @-@-@-@-@-@--       ^h   @-@-@-@-@-@-@-@-@--      ^n      @-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-
+|lg|e|n^|9|at|
+              ^e   5                    ^j -                            ^o JTxxx  ^q    Jxxxx 
+              ^e   6                    ^j -                            ^o Axxxx  ^q    Kxxxx   ^s       Qxxxx  
+              ^e   7                    ^j 1                            ^o AKxxx  ^q    QJxxx   ^s       KTxxx
+              ^e   8                    ^j 2                            ^o AKTxx  ^q    KQTxx   ^s       QJTxx 
+              ^e   9                    ^j 3                            ^o AKJxxx ^q    QJT986  ^s       AKQJx
+              ^e  10                    ^j 4|cp|red|at|^*b**^*n|cp||at| ^o AKQTxx ^q    AKJxxxx ^s       KQJTxx  
+
+^c|cp|red|at|^*b**^*n|cp||at| Bidding  ^*bunsupported^*n  at the 4 level, says - 
+|n#|5|at|  ^h	"Partner, I have only one loser in this suit, even if you have only 1 trump".|
+
+at|^^^^^^ ^bFor   ^*bBergen Hand Evaluation^*n   see the  ^*g :Doc Coll::Welcome, aaBridge Doc Collection^*n    (clickable link).| 
+pg| ***** 1 ***** |
+
+
+--------------------------------------------------------------------
+qx|LTC,wide|
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|LTC    -     Losing  Trick  Count|fp||at|      ^^^^|
+lg|c|n^|5|
+at|Each of the four suits in a hand is reckoned to have a set number of losers. (Roughly one for every A K or Q  you don't have and cannot ruff.)  The scale has been refined over time, see the second column of values.
+|ht|e|n#|8|at|^c@2|lg|8|fp|t-title|at|^*n
+A K Q        ^f 0
+A K          ^f 0        ^h  
+A Q          ^f 0        ^h  ½
+A            ^f 0 
+- |fp||at|void|fp|t-title|at| -        ^f 0
+|n^|9|at|			
+A K x        ^f 1
+K Q x        ^f 1
+A Q x        ^f 1         ^h 1½
+A x          ^f 1
+K x          ^f 1         ^h 1½
+x            ^f 1
+|n^|9|at|			
+A J T        ^f 2         ^h 1½
+A x x        ^f 2
+K x x        ^f 2
+Q x x        ^f 2         ^h  3      2½ |fp||at| if p's suit|fp|t-title|at|
+Q x          ^f 2
+x x          ^f 2
+|n^|9|at|			
+x x x        ^f 3|
+
+%% - - - - - - - - - - - - - - - - 
+ 
+ht|f|fp||lg|1|
+at|^m@2
+¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦
+|n#|f3|at|¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦
+|ht|f|lg|e|
+at|^n@2Estimate of Partners LTC    (low is good)  
+|n^|6|at|@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-
+|n^|f|lg|e|at|
+Average opening bid         ^t 7 
+Limit raise                 ^t 8 
+Single raise                ^t 9 
+1-level response            ^t 9 
+2-level response            ^t 8 
+Game bid over limit raise   ^t 6  or  less
+Partner shows 7-9 hcp       ^t 9 
+Partner shows 10-12 hcp     ^t 8 
+Partner shows 13-15 hcp     ^t 7 
+Partner shows 16-18 hcp     ^t 6 
+Partner shows 19-21 hcp     ^t 5 
+Takeout double              ^t 7  or  8
+1 level overcall            ^t 6  to  8 
+Limit raise                 ^t 8 
+Weak two opener             ^t 7  or  8 
+Weak jump overcalls         ^t 7  or  8 
+Reverse                     ^t 5  or  6 
+Jump shift                  ^t 4  or  5 |
+
+%% - - - - - - - - - - - - - - - - 
+
+ht|y|n#|5|fp||lg|n|
+at|^b@2The formula only works when you are playing in a suit contract with at ^*b LEAST ^*nan^*b|cp|red|at|  8 card fit|cp||at| ^*n  AND  dummy can ruff.
+^d^*bLevel of Contract ^*n  =   24  -  ( Partners LTC  +  Your LTC  -  1 [if a 9 card fit] )| 
+pg| ***** 2 ***** |
+
+
+--------------------------------------------------------------------
+qx|RLTC,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|R-LTC     -     Reverse Losing  Trick  Count|fp||at|       used when     there is a fit but  ^*bNO^*n  ruffing potential^^^^|
+lg|c|n^|5|
+at|LTC (previous page) assumes an 8+ card fit with at least a trick coming from ruffing.  When |cp|red|at| you have the fit|cp||at|  but no chance of a ruff  (eg. Responder is 4333)  then use R-LTC.
+|n#|5|at|^h ^*bNo trumps^*n, even with your fit, maybe the better game.|
+
+%% - - - - - - - - - - - - - - - - 
+
+ht|g|n#|4|at|^r@2 Don't confuse  'Sure' Winners
+          with Quick Tricks|
+n#|h|lg|s|fp|t-title|at|^r{   @2 |n#|5|
+at|  @2Quick Tricks
+|n^|k|
+n<|c|at|@-@-@-@-@-@-@-@-|lg|f|n^|2|at|
+A K          ^v  2
+A Q          ^v  1½    
+A            ^v  1     
+K Q          ^v  1
+K x          ^v  ½
+K            ^v  0 
+^^|n^|k|fp||n<|c|at|(used in many estimates)
+}|
+
+%% - - - - - - - - - - - - - - - - 
+
+ht|g|
+n#|8|fp|t-title|at|^c@2@      'Sure' Winners|fp||at|
+|n^|4|at|     @-@-@-@-@-@-@-@-@-@-@-@-@-@-
+|n^|f|at|^d@2|lg|f|fp|t-title|at|^*n
+A K Q        ^i  3
+A K          ^i  2
+K Q|fp||at|  (in trumps)|fp|t-title|at|  ^i  2
+Q J|fp||at|  (in trumps)|fp|t-title|at|  ^i  1
+A            ^i  1 
+K |fp||at|    (in trumps)|fp|t-title|at|  ^i  1
+K Q|fp||at|  (other)|fp|t-title|at|  ^i  1
+K x  |fp||at|(other)|fp|t-title|at|  ^i  ½|
+
+%% - - - - - - - - - - - - - - - - 
+
+ht|u|n#|h|fp||lg|t|
+at|^b@2Use this formula when you have found a fit   BUT   you (dummy) ^*b CANNOT ^*n ruff.       ^u(consider no trumps)
+^d^*bLevel of Contract ^*n  =                  partner's winners           +        your winners
+                        ^h  =   (13  -  Partner's estimated LTC)    +    Your 'Sure' Winners | 
+pg| ***** 3 ***** |
+
+
+--------------------------------------------------------------------
+qx|CovC,wide|
+bt||
+nt|^b@2|at|^^^^|
+fp|t-title|at|CovC     -     Cover Cards|fp||at|      ^^^^|
+lg|c|n^|2|
+at|The 'Cover Cards' approach can be used, when there is an a known ^*b|cp|red|at|8+ card fit|cp||at|, by RESPONDER as a 'tighter' LTC.  
+|n^|9|at|
+In essence Responder counts all their cards that  COVER  any of the 'holes' in partners hand.  Such as:
+|n^|5|lg|z|at|
+^c    |fp|t-title|at|Ace,  King |fp||at| and |fp|t-title|at| Queen|fp||at|   ^k in the agreed trump suit  OR  in partners second bid suit
+^c    |fp|t-title|at|Ace |fp||at| and |fp|t-title|at| King|fp||at|   ^k in other suits
+^c    |fp|t-title|at|Singleton |fp||at| or |fp|title|at| Void|fp||at|      ^k^*n ONLY ^*n if there is adequate trump support
+^c    |fp|t-title|at|Jack |fp||at| in  ^*b partners side suit^*n|fp|t-title|at||fp||at|    ^k^*b with 8+ card  fit in suit^*n     counts as just  ^*bHALF^*n  a cover card 
+^c    |fp|t-title|at|Fourth  |fp||at|Trump|fp|t-title|at| |fp||at|    ^k just  ^*bHALF^*n  a cover card   DON'T over-count trump length and shortage  
+|lg|c|at|
+The Cover Card approach can be more precise than LTC particularly when Responder has a week hand (high LTC)
+BUT can see they have some 'useful' cards.
+|lg|z|at|
+^c^*bLevel of Contract ^*n  =    24    -    (Partner's estimated LTC    -    your cover cards     -    1 [if a 9 card fit] )
+|n^|g|at| 
+		^d  ^*b OR ^*n		^g  =                  partner's winners              +        your winners         +       adjustment 		
+                            ^g  =   (13  -  Partner's estimated LTC)      +    your cover cards       +    1 [if a 9 card fit] 
+| 
+pg| ***** 4 ***** |
+
+
+--------------------------------------------------------------------
+qx|Banz,wide|
+bt||
+nt|^z@3^b@2|at|^^^^|
+fp|t-title|at|Banz     -     High Card Point  Systems     -    Banzai Points  in  Particular|fp||at|      ^^^^|
+n^|5|
+at|The standard High Card Point system is universally known.  There are others, ^*b click a TITLE ^*n to view its web entry.|
+
+%% - - - - - - - - - - - - - - - - 
+
+ht|f|n#|0|lg|c|fp|t-title|at|^b@2|n<|4|at|   ^*h https://en.wikipedia.org/wiki/Hand_evaluation#High_card_points^*nStandard HCP ^*x
+|n^|9|at|@-@2@-@-@-@-@-@-@-
+A            ^e  4
+K            ^e  3
+Q            ^e  2
+J            ^e  1 
+^^
+Total        ^e40|
+
+%% - - - - - - - - - - - - - - - - 
+ 
+ht|f|fp||lg|1|
+at|^h@2^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦
+|n#|f3|at|¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦
+|
+
+ht|f|n#|0|lg|c|fp|t-title|at|^i@2|n<|4|at|   ^*h http://www.bridgebase.com/forums/topic/43466-better-balanced-bidding-the-banzai-metthod/^*n Banzai Points ^*x
+|n^|9|at|@-@2@-@-@-@-@-@-@-
+ A            ^L  5
+ K            ^L  4
+ Q            ^L  3
+ J            ^L  2 
+10            ^L  1
+
+Total        ^L60|
+
+%% - - - - - - - - - - - - - - - - 
+ 
+ht|f|fp||lg|1|
+at|^o@2^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦
+|n#|f3|at|¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦
+|
+
+ht|f|n#|0|lg|c|fp|t-title|at|^p@2|n<|4|at|   ^*h https://en.wikipedia.org/wiki/Zar_Points^*nZar Points^*x
+|n^|9|at|@-@2@-@-@-@-@-@-
+A            ^s  6
+K            ^s  4
+Q            ^s  2
+J            ^s  1 
+^^
+Total        ^s52|
+
+%% - - - - - - - - - - - - - - - - 
+ 
+ht|f|fp||lg|1|
+at|^u@2^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦
+|n#|f3|at|¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦
+|
+
+ht|f|n#|0|lg|c|fp|t-title|at|^v@2|n<|4|at|   ^*h http://www.bridgebase.com/forums/topic/43466-better-balanced-bidding-the-banzai-metthod/page__view__findpost__p__517836^*nAnalysis^*x
+|n^|9|at|@-@2@-@-@-@-@-@-
+A            ^y11
+K            ^y  7
+Q            ^y  4
+J            ^y  2 
+10           ^y  1 
+
+Total        ^y|n<|6|at|100|
+
+%% - - - - - - - - - - - - - - - - 
+ 
+ht|q|n#|0|fp||at|^b@2Looking only at  ^*bBanzai Points^*n     (Recommend for evaluation of   'close' ^*b No Trump ^*n    bid it,  don't bit it,   situations.)
+|n^|f|at|
+|lg|f|at|
+11 point opening (if ever!) ^h = 17      ^j    BPs
+12-14 point openings        ^h = 18 - 21 ^j    BPs
+15-17 1NT ^h                ^h = 22 - 25 ^j    BPs
+18-19 balanced              ^h = 26 - 29 ^j    BPs
+20-22 2NT                   ^h = 30 - 33 ^j    BPs
+2C - 2D, 2NT - as 23-24 bal ^h = 34 - 36 ^j    BPs
+3NT on 25-26 points         ^h = 37 - 40 ^j    BPs
+6NT on 33-36 points         ^h = 49 - 54 ^j    BPs
+7NT on 37+ points           ^h = 55+     ^j    BPs
+|
+
+ht|s|lg|c|n#|0|fp||at|^n@2^*bAdd additional Banzai Points^*n  (BP's)
+|n^|9|at|
+^*b 2^*n  BP's for any 5 card suit       OR
+|n^|a|at|
+^*b 3^*n  BP's if the suit has an SQ of 8 or more.
+
+^*bMM:^*n   Critics of  Banzai Points  say that Aces ^^are undervalued.
+|n^|9|at|
+For example, going by the Banzai point scale, ^^an Ace is worth the same as two Jacks and a Ten.
+|
+pg| ***** 5 ***** |
+
+
+--------------------------------------------------------------------
+qx|Expl,wide|
+st||
+pn|South,West,North,East|rh||ah|Example 1|sv|-|sk|w|
+%% 2sJ8765hT2dA52cJ83,s94hAQ983dK963cQ5,sAKQ2h76dT84cT962,sT3hKJ54dQJ7cAK74, 
+md|2,s94hAQ983dK963cQ5,,sT3hKJ54dQJ7cAK74,|
+mb|?|
+nt|^z@3^b@2|Lg|c|n#|9|
+
+
+ht|a|
+nt|^z@3^b@2|Lg|c|n#|9|
+
+fp|t-title|n^|3|at|^a ^*bWest ^*n^c@2 |fp||n#|5|
+at|^cQT ^d     1.5 ^f  hcp       ^h 11-   ^jK&R   ^k     12.1|
+pg| ***** 6 ***** |
+
+
+qx|e 1,thin|
+at|^^LTC ^e7      ^f  P-LTC      ^h  -     ^jMake  ^k       - |
+pg| ***** 7 ***** |
+
+
+at|^^SQ(@h)	^e7  ^f  Rof20       ^h 20    ^jCovC  ^k       - |
+pg| ***** 8 ***** |
+
+
+at|^^Banzi   ^d      17|
+pg| ***** 9 ***** |
+
+
+ht|x|at|^^^b^*bWould you Open ?^*n|
+pg| ***** 10 ***** |
+
+
+mb|1h|
+at|^g^*bMM:^*n  I would    (LTC  7)|
+pg| ***** 11 ***** |
+
+
+n#|a0|fp||lg|1|
+at|^m@2^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦
+|n#|a2|at|¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦^^¦
+|
+pg| ***** 12 ***** |
+
+
+sk|e|
+mb|p?|
+ht|a|
+at|@1^b@2|Lg|c|n#|9|
+fp|t-title|n^|3|at|^m   ^*bEast ^*n^c@2 |fp||n#|5|
+
+at|^o@2QT ^p     2.5 ^r  hcp      ^t 14    ^vK&R   ^w     13.6|
+pg| ***** 13 ***** |
+
+
+at|^^LTC ^q7      ^r  P-LTC       ^t   7(8)   ^vMake  ^w       11(10)  9th T|
+pg| ***** 14 ***** |
+
+
+at|^^SQ 	^q    ^r  Rof20        ^t        ^vCovC  ^w       4|
+pg| ***** 15 ***** |
+
+
+at|^^Banzi   ^p      21  |
+pg| ***** 16 ***** |
+
+
+ht|x|at|^^^n^*bDo you expect to end in game (or higher) ?^*n|
+pg| ***** 17 ***** |
+
+
+at|^x^*b Yes^*n|
+pg| ***** 18 ***** |
+
+
+--------------------------------------------------------------------
+nt|^z@3^b@2|
+Lg|k|n#|9|
+at|^*bMM:^*n   Methods of bidding the game and/or checking for a slam are not really the subject of this Bridge Movie.|
+pg| ***** 19 ***** |
+
+
+at|^^A commom method, is to use Jacoby 2NT as an ask.  See the see the  ^*g :Doc Coll::Welcome, aaBridge Doc Collection^*n  for the document   ^*b zzz RPf Reverse Bergen Major Suit Raises^*n,  Jacoby 2NT is included as it fits perfectly with the Bergen system.|
+pg| ***** 20 ***** |
+
+
+mb|2N|an|13-16 hcp  4+@h support|
+pg| ***** 21 ***** |
+
+
+sk||
+sj|c|
+mb|p?|
+pg| ***** 22 ***** |
+
+
+mb|4h|an|min opener no shortage no good second 5 card suit|
+pg| ***** 23 ***** |
+
+
+mb|pp|
+pg| ***** 24 ***** |
+
+
+n#|1|at|^^^hRotating the hand so declarer will be South.|
+pg| ***** 25 ***** |
+
+
+rh||ah|Example 1r|sv|-|sk|s|sk||
+%% 1s94hAQ983dK963cQ5,sAKQ2h76dT84cT962,sT3hKJ54dQJ7cAK74,sJ8765hT2dA52cJ83
+md|1s94hAQ983dK963cQ5,,sT3hKJ54dQJ7cAK74,|
+mb|1H|mb|p|mb|2N!|an|13-16 hcp  4+@H support|mb|p|mb|4H!|an|min opener no shortage no good second 5 card suit|mb|p|mb|p|
+pg| ***** 26 ***** |
+
+
+mb|p|
+md|0s94hAQ983dK963cQ5,sAKQ2h76dT84cT962,sT3hKJ54dQJ7cAK74,sJ8765hT2dA52cJ83|
+pg| ***** 27 ***** |
+
+
+pf|y|
+
+pc|sA|
+pg| ***** 28 ***** |
+
+
+--------------------------------------------------------------------
+qx|e 1x,thin|
+up|1|
+rc|sAKQ2h76dT84cT962,sJ8765hT2dA52cJ83|
+nt|^z@3^b@2|
+Lg|k|n#|9|
+at|^*bMM:^*n   Do remember that these metrics are never going to be 100% accurate.  Sometime like the Opps will have a distribution that can defeat you.|
+pg| ***** 29 ***** |
+
+
+at|   For example when they can take two diamond ruffs, as with this ^*b  new  E-W  layout^*n.|
+pg| ***** 30 ***** |
+
+
+rh||ah|Example 2|
+mb|p|
+md|0,sJ8752hTdAT854c93,,sAKQ6h762d2cJT862,|
+pg| ***** 31 ***** |
+
+
+pc|s5|
+pg| ***** 32 ***** |
+
+
+pc|s3|pc|sQ|pc|s4|
+pg| ***** 33 ***** |
+
+
+pc|d2|pc|d3|pc|dA|pc|d7|
+pg| ***** 34 ***** |
+
+
+pc|d5|pc|dQ|pc|h2|pc|d6|
+pg| ***** 35 ***** |
+
+
+pc|s6|pc|s9|pc|sJ|pc|sT|
+pg| ***** 36 ***** |
+
+
+pc|d8|pc|dJ|pc|h6|pc|d9|
+pg| ***** 37 ***** |
+
+
+pc|sA|pc|h3|pc|s2|pc|c4|
+pg| ***** 38 ***** |
+
+
+pc|hA|pc|hT|pc|h4|pc|h7|
+pg| ***** 39 ***** |
+
+
+pc|dK|pc|d4|pc|c7|pc|c2|
+pg| ***** 40 ***** |
+
+
+pc|cQ|pc|c3|pc|cK|pc|c6|
+pg| ***** 41 ***** |
+
+
+pc|cA|pc|c8|pc|c5|pc|c9|
+pg| ***** 42 ***** |
+
+
+pc|hK|pc|cT|pc|h8|pc|dT|
+pg| ***** 43 ***** |
+
+
+pc|hJ|pc|cJ|pc|h9|pc|s7|
+pg| ***** 44 ***** |
+
+
+pc|h5|pc|sK|pc|hQ|pc|s8|
+pg| ***** 45 ***** |
+
+
+pf|y|
+pg| ***** 46 ***** |
+
+
+qx|End,wide|
+bt||
+nt||
+ht|l|
+fp|t-title|at|^*b^- End      -      Hand  Evaluation  Metrics ^-|
+at|
+|
+pg| ***** 47 ***** |
+
+

@@ -1,0 +1,314 @@
+
+
+%% 2019-08-05  Patterns  Double Squeeze
+
+%% All hands are copyright  Richard Pavlicek
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pd|hint,^b   There is a `cp`green`at`^*b Hint ^*n`cp``AT` on the next page but if you want to  PLAY  the hand NOW, the  { ^*b 1st ^*n }  button is available.|
+%%
+pd|choose,`cp`red`at`^b    ^*bPlease   CHOOSE^*n`cp``at`   you can use  {^*b Flow >^*n }  to see the answer  `cp`red`at`^*bOR^*n`cp``at`  you can click  { ^*b 1st ^*n }  to PLAY the hand.|
+%%
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+<<--INSERT-START-->>=07b__FP_Patterns.ins
+%%
+fh|b48| %%  'banner' font
+fh|t40| %%  'target' font
+fh|s28| %%  'small'  font
+fh|p45| %%  'pink dot' size
+
+cr|a230|cg|a040|cb|a130|          a  action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       pink dot button
+
+bv|e,h| %%   Enter the deal button hidden
+bv|f,v| %%   1st visible 
+bv|d,v| %%   DDS visible
+
+ha|y|   %%   hide auctions
+
+ss|head,     ah`Part 10.    Double Squeeze`|
+
+ss|banner,   ht`e`fp`b-big`at`^*b^k^*nDouble Squeeze^*n`fp``|
+ss|link,     ht`z`at`^kvisit  Richard Pavlicek's  Double Squeeze  page    ^*h http://www.rpbridge.net/9j81.htm, rpbridge.net  9j01^*n`|
+ss|means,    ht`e`fp`small`at`^x ^*h http://www.rpbridge.net/9gc8.htm, meaning^*n`fp``|
+ss|new,      nt`^b@2^^`vv`means`vv`link`vv`banner`ht`e`vv`head`|
+ss|contract, mb`3nppp`|
+ss|p1,       vv`contract`wt`s`sk`s`fp`t`ht`e`at`^q    ^*b`|
+ss|p2,       fp`t`ht`e`at`^*n^u`|
+ss|p3,       fp``ht`q`at`^d`|
+%%
+<<--INSERT-END**-->>=07b__FP_Patterns.ins
+
+
+qx|-|
+st||
+nt|^b@2^^|
+rh||ah|--- -|vv|head|
+vv|banner|
+ht|k|
+lg|e|
+at|A double squeeze is a squeeze against both opponents with threats in three suits: one guarded only by LHO, one guarded only by RHO, and a "common" suit guarded by both opponents. The common threat must be accompanied by an entry in its own suit. Other entry conditions may also be required depending on the layout. 
+|n#|7|at|^hFor a detailed study see Richard Pavlicek's  ^*h http://www.rpbridge.net/6d00.htm, Double Squeezes^*n  web page for more info.|
+pg| ***** 0 ***** |
+
+
+nt|^b@2^^|vv|banner|
+ht|n|at|In the far right-hand column two lines below |fp|t|cp|gr|at|^*b Power Kib ^*n|cp||fp||at| is the   { @m }|cp|red|at| ^*bShow all hands^*n|cp||at| ^*b checkbox^*n.  
+^^^i Set this to ^*b CHECKED^*n,  the first few times you look at these patterns. |
+rh||ah|--- -|vv|head|
+ht|a|n#|0|at|^q  Your target is |cp|red|at|^*b 9 ^*n |cp||at|tricks|
+pg| ***** 1 ***** |
+
+
+qx|1|
+rh||ah|Pattern 1|
+vv|new|at|^*b 1.   Positional^*n|
+%
+md|1  -K 4 A, A - JT, K - A9, - A KQ|
+%
+bs|6,4|
+vv|p1|at|win 3|
+vv|p2|at||
+vv|p3|
+pg| ***** 2 ***** |
+
+
+qx|2|
+rh||ah|Pattern 2|
+vv|new|at|^*b 2.   Positional^*n  (check order)|
+%
+md|1  4 AJ 4 A, KQ 2 JT, AJ 4 A9, 2 KQ KQ|
+%
+bh|Play, W,  dL, res, p2,  T1,  always|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at|bi|
+vv|p3|at|Must win @sA before @cA (@hA serves as reentry).|
+pg| ***** 3 ***** |
+
+
+qx|3|
+rh||ah|Pattern 3|
+vv|new|at|^*b 3. Automatic^*n|
+%
+md|1  K K 4 A, A - QJT, - - AK6 2, - A 987|
+%
+bs|5,4|
+vv|p1|at|win 4|
+vv|p2|at|auto bi|
+vv|p3|at||
+pg| ***** 4 ***** |
+
+
+qx|4|
+rh||ah|Pattern 4|
+vv|new|at|^*b 4.  Finesse^*n|
+%
+md|1  K K 4 A, A - KJT, - - AQ6 2, - A 987|
+%
+bs|5,4|
+vv|p1|at|win 4|
+vv|p2|at|bi|
+vv|p3|at||
+pg| ***** 5 ***** |
+
+
+qx|5|
+rh||ah|Pattern 5|
+vv|new|at|^*b 5.  Twin-entry^*n|
+%
+md|1  - - A65 A, A - 987, K K K4, - A QJT|
+%
+bs|5,4|
+vv|p1|at|win 4|
+vv|p2|at|auto|
+vv|p3|at||
+pg| ***** 6 ***** |
+
+
+qx|6|
+rh||ah|Pattern 6|
+vv|new|at|^*b 6.  Twin-entry ^*n (cash order)|
+%
+md|1  A 4 A65 A, KQ2 - 987, J4 AJ K4, - KQ2 QJT|
+%
+bs|3,4|
+vv|p1|at|win 6|
+vv|p2|at|auto bi|
+vv|p3|at|Must win @hA before @cA (@sA serves as reentry).|
+pg| ***** 7 ***** |
+
+
+qx|7|
+rh||ah|Pattern 7|
+vv|new|at|^*b 7.  Sequential^*n|
+%
+md|1  4 - A9 A, KQ - JT, AJ K 4, 2 A KQ|
+%
+bs|5,4|
+vv|p1|at|win 4|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 8 ***** |
+
+
+qx|8|
+rh||ah|Pattern 8|
+vv|new|at|^*b 8.  Sequential ^*n (cash order)|
+%
+md|1  4 4 A9 AK, KQ 32 KQ, AJ AJ 4 4, 32 KQ JT|
+%
+bh|Play, W,  hL, res, p4,  T2,  always|
+%
+bs|3,4|
+vv|p1|at|win 6|
+vv|p2|at|auto? bi|
+vv|p3|at|Auto case requires @s4 lead first then clubs|
+pg| ***** 9 ***** |
+
+
+qx|9|
+rh||ah|Pattern 9|
+vv|new|at|^*b 9.  Automatic sequential^*n|
+%
+md|1  - 4 AK6 A, A2 - QJT, K AJ 4 2, - KQ 987|
+%
+bh|Play, W,  sL, res, p2,  T1,  always|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at|auto re|
+vv|p3|at||
+pg| ***** 10 ***** |
+
+
+qx|10|
+rh||ah|Pattern 10|
+vv|new|at|^*b 10.  Twin-entry sequential^*n|
+%
+md|1  - K A65 A, KQ - QJT, AJ - K4 2, - A 987 3|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at|auto bi|
+vv|p3|at||
+pg| ***** 11 ***** |
+
+
+qx|11|
+rh||ah|Pattern 11|
+vv|new|at|^*b 11.    Reciprocal^*n|
+%
+md|1  A AJ 4, KQ - JT, J4 - A9, - KQ KQ|
+%
+bs|5,4|
+vv|p1|at|win 4|
+vv|p2|at|bi|
+vv|p3|at|Preferred sequence shown but @hA can be won first.|
+pg| ***** 12 ***** |
+
+
+qx|12|
+rh||ah|Pattern 12|
+vv|new|at|^*b 12.   Automatic reciprocal^*n|
+%
+md|1  AJ AJ 4, KQ - QJT, 2 2 AK6, - KQ 987|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at|auto bi|
+vv|p3|at|No matter which ace is led first.|
+pg| ***** 13 ***** |
+
+
+qx|13|
+rh||ah|Pattern 13|
+vv|new|at|^*b 13.  Twin-entry reciprocal^*n|
+%
+md|1  4 AJ K4, KQ - QJT, AJ - A65, - KQ 987|
+%
+bs|4,4|
+vv|p1|at|NT win 5|
+vv|p2|at|bi|
+vv|p3|at|Preferred sequence shown but @hA can be led first.|
+pg| ***** 14 ***** |
+
+
+qx|14|
+rh||ah|Pattern 14|
+vv|new|at|^*b 14.  Recessed reciprocal^*n|
+%
+md|1  4 AK9 4, KQ 2 JT, AJ 4 A9, - QJT KQ|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at|bi|
+vv|p3|at||
+pg| ***** 15 ***** |
+
+
+qx|15|
+rh||ah|Pattern 15|
+vv|new|at|^*b 15.   Alternative^*n|
+%
+md|1  - K2 54 A, A - JT98, K - AKQ6, 2 A 732|
+%
+bh|Play, E,  sL, res, p4,  T1,  always|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at||
+vv|p3|at|If @sA West and @hA East, @d6 must be good.|
+pg| ***** 16 ***** |
+
+
+qx|16|
+rh||ah|Pattern 16|
+vv|new|at|^*b 16.  Automatic alternative^*n|
+%
+md|1  - - KQ65 A, A 2 732, K K A4 2, - A JT98|
+%
+bh|Play, W,  hL, res, p2,  T1,  always|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at|auto re|
+vv|p3|at|If @sA and @hA are split, @d6 must be good.|
+pg| ***** 17 ***** |
+
+
+qx|17|
+rh||ah|Pattern 17|
+vv|new|at|^*b 17.  ^*iBlocked^*n|
+%
+md|1  A8 - - A, QJ A, K K K, T9 - A|
+%
+bs|6,4|
+vv|p1|at|win 3|
+vv|p2|at|auto|
+vv|p3|at|How a sane person could reach is another story.|
+pg| ***** 18 ***** |
+
+
+qx|18|
+rh||ah|Pattern 18|
+vv|new|at|^*b 18.  ^*iJettison^*n|
+%
+md|1  KQ5 - - AK, JT9 A2, A K AJ2, 876 - KQ|
+%
+bh|Play, W, hL, res, p2,  T1,  always|
+%
+bs|4,4|
+vv|p1|at|win 5|
+vv|p2|at||
+vv|p3|at|Remember this on your next trip to Mars.|
+pg| ***** 19 ***** |
+
+

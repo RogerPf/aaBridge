@@ -1,0 +1,1359 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% File       : barnets_Opening Leads_f.lin
+%% Description: Barnet Shenkin's lesson on Opening leads, BIL, 2010-01-21
+%% Programmer : Miksa
+%% Version    : g  2010-03-06: B05 intro E-W players names exchanged
+%%            : f  2010-03-05: Menu with larger margins; corrections
+%%            : e  2010-03-04: corrections
+%%            : d  2010-03-04: B05 + B06
+%%            : c  2010-03-03: B04
+%%            : b  2010-02-28: B02 + B03 + Final notes
+%%            : a  2010-02-24: Initial + B01.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+mn|Barnet Shenkin: Opening Leads|tu||bt||nt||
+
+%% --- Definitions ---
+cr|116|cg|116|cb|1255|        %% blue
+cr|2255|cg|2255|cb|264|       %% yellow
+cr|316|cg|3128|cb|316|        %% dark green
+cr|4255|cb|40|cg|40|          %% red
+fh|120|ff|1Arial|fb|14|fm|1|  %% smaller light
+fh|220|ff|2Arial|fb|26|fm|2|  %% smaller bold
+fh|330|ff|3Arial|fb|34|fm|3|  %% larger light
+fh|430|ff|4Arial|fb|46|fm|4|  %% larger bold
+%% --- End Definitions ---
+
+
+%% --- Main ---
+qx|Main|
+cs|1|cp|2|fp|4|at|
+^-{ Barnet Shenkin: Opening leads 
+BBO-BIL February 21, 2010. }
+^-|
+fp|2|cp||ht|e|at|^b@2This is the LIN presentation of Barnet Shenkin's lecture on Opening leads in the Beginner Intermediate Lounge (BIL), February 21, 2010.|
+ht|h|cp||cs|2|
+at|^k@2{
+^*GIntro, ^lIntroduction^*N
+
+^*GB01,   1: Culbertson 4NEx^*N
+^*GR01,        Review^*N
+^*GF01,        Free play^*N
+^*GB02,   2: Kelsey & Matheson 7NEx  ^*N
+^*GR02,        Review^*N
+^*GF02,        Free play^*N
+^*GB03,   3: Hamman 7DEx^*N
+^*GR03,        Review^*N
+^*GF03,        Free play^*N
+^*GB04,   4: Shenkin 6DExx^*N
+^*GR04,        Review^*N
+^*GF04,        Free play^*N
+^*GB05,   5: Shenkin 4SE^*N
+^*GR05,        Review^*N
+^*GF05,        Free play^*N
+^*GB06,   6: Cuthberston 6HSx^*N
+^*GR06,        Review^*N
+^*GF06,        Free play^*N
+
+^*GEnd, ^lFinal notes^*N
+} @0|
+ht|z|at|^*GHelp, Click here for help^*N|fp|2|at|^v    compiled by Miksa
+
+(c) Barnet Shenkin & Bridge Base Online – Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|
+pg| ***** 0 ***** |
+
+
+%% --- End Main ---
+
+
+%% --- Introduction ---
+qx|Intro, Introduction|
+bt||nt||cs|2|fp|4|ht|b|at|^-{ Introduction }
+^-|
+fp|2|ht|e|at|@4^b@2BILmanager: @D@D A warm welcome BARNET to the BIL, it is a pleasure to have you do this session for us today. 
+Welcome to Barnet's guests who will be joining us: Magshen1 - Barnet's lovely wife, handp, vivian1, 8025glw, voicy.
+The session is most suited for Improving/Upper Intermediates and BIL Graduates.
+|
+pg| ***** 1 ***** |
+
+
+at|
+barnets: Welcome to everybody. Thank you to Maureen Hall for inviting me to do this lecture. Also thanks to Miksa and Peterb370 at BIL for coaching me in bridge movies and how to show them.
+
+OK let's go everybody - fasten your seatbelts!
+
+As it is my first presentation I want you all to enjoy it. Therefore while there are some important ideas on teaching  there is also a strong accent on entertainment. I have been working on some new presentation ideas which combine some learning ideas with entertainment for the student.
+|
+pg| ***** 2 ***** |
+
+
+at|
+A few hands shown are from "Put yourself in the Hot Seat" a lecture I am currently giving allowing the student the chance to find the winning play at the critical point in the hand. I feature the hands and stories on a full size cinema type screen and there are pictures of the players in their seat positions. If you like what you see here send me an email BridgeIdeas@@aol.com and you can get on my mailing list to see more presentations and also free access to my first Website, Shenkinbridge which will be up  shortly. Constructive comments are also welcome sent as an email.
+
+I now live in USA but originally from Glasgow, Scotland.
+This is my first presentation on BBO so I ask you to put up with occasional blips that are likely to occur.
+|
+pg| ***** 3 ***** |
+
+
+at|
+Today the main focus is on opening leads.
+
+A bridge teaching book will tell which card you should lead from various holdings on opening lead. I like to help student's think perhaps in a different way from the way they normally do.
+
+So today I would like you to give yourself an idea of what the four hands round the table look like before you lead. This different type of approach may be difficult to grasp at first but if you can make a start today you will reap the benefits in the future.|
+pg| ***** 4 ***** |
+
+
+%% --- End Introduction ---
+
+
+%% --- Board 1 introduction ---
+qx|B01, Board 01|
+nt||cs|2|fp|4|at|
+^-{ Board 1 }
+^-|
+fp|2|ht|e|at|^b@2The Scene: Selfridges, London, 1933. A USA team play a British team for the Schwab Trophy.
+
+For USA: Ely and Josephine Culbertson, Teddy Lightner, Michael Gottlieb.
+
+For UK: Henry Beasley and Sir Guy Domville, Lady Doris Rhodes and Graham Mathieson.
+|
+pg| ***** 5 ***** |
+
+
+at|
+Graham Mathieson was a good friend of my late father Louis and I remember having dinner with him in my house in Glasgow  when I was about 12 years old.
+
+A large periscope was used by spectators outside the playing area to follow the play there were so many people trying to watch.
+
+Culbertson did more to publicise bridge than any other person and did an enormous amount to improve the popularity of the game. Perhaps, his wife Josephine was the stronger player.
+|
+pg| ***** 6 ***** |
+
+
+%% --- End Board 1 introduction ---
+
+%% --- Board 1 hand ---
+nt||st||pn|Culbertson,West,North,East|
+md|4SK5HKTDQJ64CAKJ74,SAHJ865DAKT7532C5,SJT8764HQ32D8C862,SQ932HA974D9CQT93|
+sk|S|sv|n|pf||
+rh||ah|Board 1|ah|Original play|
+fp|2|at|Here is a hand from the match. You are in Culbertson's chair, the South seat.
+|
+mb|p?|
+pg| ***** 7 ***** |
+
+
+mb|1C|
+mb|2D!|an|strong|
+pg| ***** 8 ***** |
+
+
+mb|p2N?|
+pg| ***** 9 ***** |
+
+
+mb|p3Npp?|
+pg| ***** 10 ***** |
+
+
+mb|d4D|an|running|
+pg| ***** 11 ***** |
+
+
+mb|p4N?|
+pg| ***** 12 ***** |
+
+
+mb|d|an|xmas come early|
+pg| ***** 13 ***** |
+
+
+mb|ppp|
+at|Let's see what you knew about the hand before making your lead.
+|
+pg| ***** 14 ***** |
+
+
+at|Dummy has a long Diamond suit with at least one outside entry.
+|
+pg| ***** 15 ***** |
+
+
+at|Your partner is broke or almost broke and is unlikely to ever be on lead on the hand.
+|
+pg| ***** 16 ***** |
+
+
+at|Declarer has bits and pieces in his hand. Likely he has a club double stopper and 1 or 2 diamonds.
+What would you lead?|
+pg| ***** 17 ***** |
+
+
+pc|C7|nt||
+fp|2|at|Culbertson started with a poor choice.
+|
+pg| ***** 18 ***** |
+
+
+at||
+pc|C5|pc|C2|pc|C9|
+pg| ***** 19 ***** |
+
+
+pc|D9|
+at|Now declarer led the @D9. Would you cover?
+|
+pg| ***** 20 ***** |
+
+
+at||
+pc|DJ|pc|DK|pc|D8|
+pg| ***** 21 ***** |
+
+
+pc|DA|pc|C6|pc|S2|pc|D4|
+pg| ***** 22 ***** |
+
+
+pc|DT|pc|S6|pc|H4|pc|DQ|
+pg| ***** 23 ***** |
+
+
+pc|CK|pc|H5|pc|C8|pc|C3|
+pg| ***** 24 ***** |
+
+
+pc|S5|pc|SA|pc|S4|pc|S3|
+pg| ***** 25 ***** |
+
+
+pc|D7|pc|S7|pc|H7|pc|D6|
+pg| ***** 26 ***** |
+
+
+pc|D5|pc|S8|pc|S9|pc|C4|
+pg| ***** 27 ***** |
+
+
+pc|D3|pc|ST|pc|CT|pc|CJ|
+pg| ***** 28 ***** |
+
+
+pc|D2|pc|H2|pc|H9|
+at|Now he had to guess what to keep...
+|
+pg| ***** 29 ***** |
+
+
+pc|SK|
+pg| ***** 30 ***** |
+
+
+pc|H6|pc|H3|pc|HA|pc|HT|
+pg| ***** 31 ***** |
+
+
+pc|SQ|at|So he went wrong and they made the impossible contract.|pc|HK|pc|H8|pc|SJ|
+pg| ***** 32 ***** |
+
+
+pc|CQ|pc|CA|pc|HJ|pc|HQ|
+pg| ***** 33 ***** |
+
+
+%% --- End Board 1 hand ---
+
+%% --- Board 1 Review ---
+qx|R01, Board 01 Review|
+pn|barnets,barnets,barnets,barnets|
+st||nt||md|4SK5HKTDQJ64CAKJ74,SAHJ865DAKT7532C5,SJT8764HQ32D8C862,SQ932HA974D9CQT93|
+sk||sv|n|
+rh||ah|Board 1|ah|Review|
+mb|p1C2D!|an|strong|mb|p2Np3Nppd4D|an|running|mb|p4Nd|an|xmas come early|mb|ppp|
+fp|2|at|Let's see where the defence went wrong. First the lead.
+|
+pg| ***** 34 ***** |
+
+
+pc|C7C5C6C9|at|By leading a low club, declarer won a cheap trick...|
+pg| ***** 35 ***** |
+
+
+at| and was able to lead a diamond up to dummy's strong suit.
+|pc|D9|
+pg| ***** 36 ***** |
+
+
+up|5|
+pc|cK|at|Had he led a high club...|pc|c5c2c3|
+pg| ***** 37 ***** |
+
+
+hc|sA|at| he could have shifted to a spade to kill the entry to dummy's long diamonds.
+|pc|s5|
+pg| ***** 38 ***** |
+
+
+lc|sA|up|5|
+at|Back to the original play...|
+pc|C7|pc|C5|pc|C2|pc|C9|
+pg| ***** 39 ***** |
+
+
+pc|D9dJ|nt||
+fp|2|at|Now when declarer led the @D9, there was no gain to cover. He could not promote anything for himself or partner.
+|
+pg| ***** 40 ***** |
+
+
+up|1|pc|d4dK|at|Also declarer could not afford to run it lest North got in to play a second @C.
+|
+pg| ***** 41 ***** |
+
+
+at|Again back to the original play...
+|
+up|2|pc|DJDKD8|
+pg| ***** 42 ***** |
+
+
+pc|DA|pc|C6|at|Here his partner should play the @SJ.|hc|sJc6|
+pg| ***** 43 ***** |
+
+
+lc|sJc6|up|1|pc|sJ|at| Always discard top of a sequence. This would deny the @SQ.|
+pg| ***** 44 ***** |
+
+
+at| Had North done that, South would know declarer held the @sQ...|
+pc|S2D4|
+pg| ***** 45 ***** |
+
+
+tc|c|pc|!DT!C6!H4!DQ|pc|!CK!H5!C8!C3|pc|!S5!SA!S4!S3|pc|!D7!S7!H7!D6|pc|!D5!S6!S9!C4|pc|!D3!S8!CT!CJ|tc|r|pc|D2H2H9hT|
+at| and the last accident would have been prevented.|
+pg| ***** 46 ***** |
+
+
+pc|H6|pc|H3|pc|HA|pc|HK|
+pg| ***** 47 ***** |
+
+
+mc|9|
+pg| ***** 48 ***** |
+
+
+up|44|nt||
+fp|2|at|While the result of this hand was not a success the USA squad went on to win the match.
+
+A recurring theme on opening leads is to try and picture as well as you can the four hands round the table before you make your lead.
+
+I can take a couple of questions...|
+pg| ***** 49 ***** |
+
+
+nt||
+fp|2|at|Q: I thought lead maybe should have been the @cJ?
+barnets: No, the choice from that is always high the A or K or low.
+|
+pg| ***** 50 ***** |
+
+
+at|
+Q: If he leads high diamond might be better, then he knows his @sK is safe, @hK is safe and clubs?
+barnets: Diamonds is the opps suit steer well clear. Clearly the @CA or @CK, then shift to a spade to kill dummy's entry. Then declarer can't establish the @D suit and goes a few down.|
+pg| ***** 51 ***** |
+
+
+nt||
+fp|2|at|Q: Can he get back in with @hs eventuallly?
+barnets: Eventually will be a lot too late.
+|
+pg| ***** 52 ***** |
+
+
+at|Q: The "always discard from the top of a sequence" rule... Does this apply only to NT?
+barnets: No. When you have a sequence and want to discard, discard top.|
+pg| ***** 53 ***** |
+
+
+%% --- End Board 1 Review ---
+
+%% --- Board 1 free play ---
+qx|F01, Board 01 Free play|
+nt||fp|2|st||pn|North,West,North,East|
+md|4SK5HKTDQJ64CAKJ74,SAHJ865DAKT7532C5,SJT8764HQ32D8C862,SQ932HA974D9CQT93|
+sk||sv|n|
+rh||ah|Board 1|ah|Free play|
+mb|p1C2D!|an|strong|mb|p2Np3Nppd4D|an|running|mb|p4Nd|an|xmas come early|mb|ppp|
+cs|2|ht|b|
+at|
+^-{You may now play whatever cards you like! Just click on the card you wish to play.
+ The most recently played card may be taken back by clicking on ^$6 , Undo.
+Once a trick is complete, click on the first card of the next trick.
+Inspect a played trick by pointing at it with the mouse.}|
+pf|y|
+pg| ***** 54 ***** |
+
+
+%% --- End Board 1 free play ---
+
+%% --- Board 2 introduction ---
+qx|B02, Board 02|
+bt||pf||nt||cs|2|fp|4|at|
+^-{ Board 2 }
+^-|
+fp|2|ht|e|at|^b@2I spotted the idea for this hand in an opening lead book by Hugh Kelsey and John Matheson.
+
+Both Scottish, the late Hugh Kelsey is in the very small group of people who rank amongst the world's best ever bridge book authors.
+
+John Matheson was a teammate of mine in days gone bye....
+|
+pg| ***** 55 ***** |
+
+
+at|
+Playing rubber bridge for high stakes, it is 1am and you are a small plus....
+|
+pg| ***** 56 ***** |
+
+
+cp|4|at|
+Your right hand opponent opens 7NT!!!!|
+pg| ***** 57 ***** |
+
+
+cp||
+%% --- End Board 2 introduction ---
+
+%% --- Board 2 hand ---
+nt||st||pn|South,West,North,East|
+md|4SQT2HKJDJ943CJ842,S9853H9752DQ862CT,SJ764HQT8643DT75C,SAKHADAKCAKQ97653|
+sk|S|sv|e|pf||
+rh||ah|Board 2|ah|Original play|
+fp|2|mb|7N?|
+at|Would you Dbl?
+|
+pg| ***** 58 ***** |
+
+
+mb|dppp|
+at|
+What is declarer's likely hand?|
+pg| ***** 59 ***** |
+
+
+at| A long strong suit and a hand with no apparent losers.
+
+So what would you lead?|
+pg| ***** 60 ***** |
+
+
+%% --- End Board 2 hand ---
+
+%% --- Board 2 Review ---
+qx|R02, Board 02 Review|
+pn|barnets,barnets,barnets,barnets|
+st||nt||md|4SQT2HKJDJ943CJ842,S9853H9752DQ862CT,SJ764HQT8643DT75C,SAKHADAKCAKQ97653|
+sk||sv|e|
+rh||ah|Board 2|ah|Review|
+mb|7Ndppp|
+pc|HJ|
+fp|2|at|Your RHO may be a gambler but he would not be foolish enough to try 7NT with any apparent clear loser in his hand. That means his heart holding must be the ACE singleton. The safest lead to ensure a two trick set is the HJ.
+|
+pg| ***** 61 ***** |
+
+
+at|
+Declarer has what he thinks is 13 running tricks. He must either have clubs, diamonds or less likely but possible spades. Ergo, he can't have hearts. So the safe lead in the hand to put the contract down 2 is the @HJ.
+|
+pg| ***** 62 ***** |
+
+
+at|
+You could lead the @HK, which could result in the contract going down several more or 1 less if dummy has the Q.|
+pg| ***** 63 ***** |
+
+
+at||pc|H2H8HA|
+pg| ***** 64 ***** |
+
+
+pc|CAC2CTH3|
+pg| ***** 65 ***** |
+
+
+pc|CKC4S3H4|
+pg| ***** 66 ***** |
+
+
+pc|CQC8S5H6|
+pg| ***** 67 ***** |
+
+
+pc|C5CJS8D5|
+pg| ***** 68 ***** |
+
+
+pc|HKH5HTC3|
+mc|11|
+pg| ***** 69 ***** |
+
+
+up|52|
+fp|2|nt|Q: Why do you think long minor? Is it because he would show long major?
+Q: It is possible he could have 10 spades to the AK and 3 aces?
+Q: I can't see why "he cannot have hearts" but - it is just the only way to beat the contract - so why double?
+Q: Why not lead a low @D?
+
+barnets: OK, please...|
+pg| ***** 70 ***** |
+
+
+fp|2|nt|barnets: He cannot gamble 7N without what he thinks are 13 running tricks. That means NO losers. Not the AQ of hearts, which has a loser. He can have a long suit in diamonds, clubs or less likely spades. He cannot have hearts for the reason I just explained.
+|
+pg| ***** 71 ***** |
+
+
+%% --- End Board 2 Review ---
+
+%% --- Board 2 free play ---
+qx|F02, Board 02 Free play|
+nt||fp|2|st||pn|North,West,North,East|
+md|4SQT2HKJDJ943CJ842,S9853H9752DQ862CT,SJ764HQT8643DT75C,SAKHADAKCAKQ97653|
+sk||sv|e|
+rh||ah|Board 2|ah|Free play|
+mb|7Ndppp|
+cs|2|ht|b|
+at|
+^-{You may now play whatever cards you like! Just click on the card you wish to play.
+ The most recently played card may be taken back by clicking on ^$6 , Undo.
+Once a trick is complete, click on the first card of the next trick.
+Inspect a played trick by pointing at it with the mouse.}|
+pf|y|
+pg| ***** 72 ***** |
+
+
+%% --- End Board 2 free play ---
+
+%% --- Board 3 introduction ---
+qx|B03, Board 03|
+bt||pf||nt||cs|2|fp|4|at|
+^-{ Board 3 }
+^-|
+fp|2|ht|e|at|^b@2The Scene: Final of the Olympiad 1980, Valkenburg, Netherlands.
+
+USA vs France.
+
+The players:|
+pg| ***** 73 ***** |
+
+
+cs|3|ht|j|at|^g@2{ |ht|r|at|^v
+ } |ht|k|cp|2|at|^mBobby Wolff
+^n(USA)
+
+
+^hPaul Chemla ^rChristian Mari 
+^i(Fra) ^s(Fra) 
+
+
+
+^mBob Hamman
+^n(USA) @0 |
+ht|u|cp||at|
+^b@2East was Christian Mari and West was Paul Chemla, France's most famous ever bridge player in those days: @3 an ebullient character and brilliant bridge player, not easy on his partners.
+
+North was Bobby Wolff and South was Bob Hamman: world champions and one of USA's most successful ever partnerships.|
+pg| ***** 74 ***** |
+
+
+%% --- End Board 3 introduction ---
+
+%% --- Board 3 hand ---
+nt||st||pn|Hamman,Chemla,Wolff,Mari|
+md|4SAKJ876HAT7632DC2,S4HDKJ75CAQJT6543,SQ9532HJ854DQ64C7,STHKQ9DAT9832CK98|
+sk|S|sv|b|pf||
+rh||ah|Board 3|ah|Original play|
+fp|2|at|You will take the South hand, that of Bob Hamman.
+|
+mb|1D?|
+pg| ***** 75 ***** |
+
+
+mb|2D!|an|majors|
+pg| ***** 76 ***** |
+
+
+mb|2H|an|cue bid|
+pg| ***** 77 ***** |
+
+
+mb|4S4N?|
+pg| ***** 78 ***** |
+
+
+mb|5S6Cpp?|
+pg| ***** 79 ***** |
+
+
+mb|6S7Dpp?|
+pg| ***** 80 ***** |
+
+
+mb|dppp|
+at|
+Now you have a good chance of finding the lead here.
+|
+pg| ***** 81 ***** |
+
+
+at|They are in 7, you have 2 aces. I suggest you lead one. But which one?
+|
+pg| ***** 82 ***** |
+
+
+pc|HA|sk||at|
+Hamman led the H Ace.|
+pg| ***** 83 ***** |
+
+
+pc|D5|pc|H4|pc|H9|at| This was ruffed and...|
+pg| ***** 84 ***** |
+
+
+pc|DK|pc|D4|pc|D2|pc|S6|
+pg| ***** 85 ***** |
+
+
+pc|DJ|pc|D6|pc|D3|pc|S7|
+pg| ***** 86 ***** |
+
+
+mc|13|
+at| Declarer claimed 13 tricks for 2330 points to France. 
+In the replay 6S was down 1 X. This was a gain of 19 imps to France who went on to win the World Championship. There was a 28 imp swing on this hand and France won by 20.|
+pg| ***** 87 ***** |
+
+
+%% --- End Board 3 hand ---
+
+%% --- Board 3 Review ---
+qx|R03, Board 03 Review|
+pn|barnets,barnets,barnets,barnets|
+st||nt||md|4SAKJ876HAT7632DC2,S4HDKJ75CAQJT6543,SQ9532HJ854DQ64C7,STHKQ9DAT9832CK98|
+sk||sv|b|
+rh||ah|Board 3|ah|Review|
+mb|1D2D!|an|majors|mb|2H|an|cue bid|mb|4S4N5S6Cpp6S7Dppdppp|
+fp|2|at|Perhaps Hamman should have guessed the winning lead due to the underlying idea. Here Chemla had cue bid 2H to show first round heart control. If Hamman was convinced Chemla had first round heart control he should have led a spade.
+|pc|sA|
+pg| ***** 88 ***** |
+
+
+at|
+It would seem a spade lead was indicated unless the brilliant Chemla was preparing a ruse, a ploy to persuade Hamman to lead a spade when in reality he had no spades and one heart.|
+pg| ***** 89 ***** |
+
+
+fp|2|nt|Of course, as well as trying to fool Hamman with his lead would also fool his partner during the bidding.
+The clue in this hand is that with a choice of cues you usually cue your first round control. In these days a cue bid showed generally first round control. The tip here is that hearing the cue bid of 2@H South should lead the @SA. Are we all OK on that?|
+pg| ***** 90 ***** |
+
+
+fp|2|nt|Q: So Hamman hustled himself?
+barnets: Or felt he was being fooled by Chemla.
+|
+pg| ***** 91 ***** |
+
+
+at|
+Q: So what is the usual defence to Michaels, please?
+barnets: I can't go into defence to Michaels at this stage, sorry.|
+pg| ***** 92 ***** |
+
+
+%% --- End Board 3 Review ---
+
+%% --- Board 3 free play ---
+qx|F03, Board 03 Free play|
+nt||fp|2|st||pn|North,West,North,East|
+md|4SAKJ876HAT7632DC2,S4HDKJ75CAQJT6543,SQ9532HJ854DQ64C7,STHKQ9DAT9832CK98|
+sk||sv|b|
+rh||ah|Board 3|ah|Free play|
+mb|1D2D!|an|majors|mb|2H|an|cue bid|mb|4S4N5S6Cpp6S7Dppdppp|
+cs|2|ht|b|
+at|
+^-{You may now play whatever cards you like! Just click on the card you wish to play.
+ The most recently played card may be taken back by clicking on ^$6 , Undo.
+Once a trick is complete, click on the first card of the next trick.
+Inspect a played trick by pointing at it with the mouse.}|
+pf|y|
+pg| ***** 93 ***** |
+
+
+%% --- End Board 3 free play ---
+
+%% --- Board 4 introduction ---
+qx|B04, Board 04|
+bt||pf||nt||cs|2|fp|4|at|
+^-{ Board 4 }
+^-|
+fp|2|ht|e|at|^b@2Scene: New York City "in the eighties". The Cavendish Invitational pairs tournament - the world's largest auction bridge tournament, often with more than $1,000,000 in the prize pool.
+
+The players were:|
+pg| ***** 94 ***** |
+
+
+cs|3|ht|j|at|^g@2{ |ht|r|at|^v
+ } |ht|k|cp|2|at|^m   Irving Rose
+^n(Sco)
+
+
+^hJeff Meckstroth ^r Eric Rodwell 
+^i(USA) ^s(USA) 
+
+
+
+^mBarnet Shenkin
+^n(Sco) @0 |
+ht|u|cp||at|
+^b@2North was the late Irving Rose, a great friend, a character in the bridge world born in Glasgow, Scotland. I had the South chair.
+
+East and West were a young emerging pair from USA: Rodwell and Meckstroth in the West chair. Today their success's in bridge makes them in all probability the world's best ever bridge partnership.|
+pg| ***** 95 ***** |
+
+
+%% --- End Board 4 introduction ---
+
+%% --- Board 4 hand ---
+nt||st||pn|Shenkin,Meckstroth,Rose,Rodwell|
+md|4SJ97HQT6D3CAKJT43,SKHA7DKQT6CQ98765,SQT8432HJ943D752C,SA65HK852DAJ984C2|
+sk|S|sv|0|pf||
+rh||ah|Board 4|ah|Original play|
+fp|2|mb|1D?|
+pg| ***** 96 ***** |
+
+
+mb|2Cp!|an|penalties|
+pg| ***** 97 ***** |
+
+
+mb|pdr!|an|test those guys|at|When 2@C was doubled I decided to see if they knew what they were doing if I was to redouble. I found out the hard way!!
+|
+pg| ***** 98 ***** |
+
+
+at||mb|p!|an|bigger penalties!|
+pg| ***** 99 ***** |
+
+
+mb|2S!|an|running away|
+pg| ***** 100 ***** |
+
+
+mb|p?|
+pg| ***** 101 ***** |
+
+
+mb|p|mb|3C!|an|cue bid to game force|
+pg| ***** 102 ***** |
+
+
+mb|p3H?|
+pg| ***** 103 ***** |
+
+
+mb|p4Dp4S!|an|cue bid|mb|?|
+pg| ***** 104 ***** |
+
+
+mb|p4Np5H?|
+pg| ***** 105 ***** |
+
+
+mb|p6Dd!|an|@c void|
+pg| ***** 106 ***** |
+
+
+mb|r!|an|@c control|mb|?|
+pg| ***** 107 ***** |
+
+
+mb|ppp|
+fp|2|at|So you have a nice quiet auction to 6@DXX. What would you lead?
+|
+pg| ***** 108 ***** |
+
+
+pc|CA|at|I led the @CA and the play went...|
+pg| ***** 109 ***** |
+
+
+sk||pc|C5|pc|S2|pc|C2|
+pg| ***** 110 ***** |
+
+
+pc|D3|pc|D6|pc|D2|pc|D4|
+pg| ***** 111 ***** |
+
+
+pc|SK|pc|S3|pc|S5|pc|S7|
+pg| ***** 112 ***** |
+
+
+pc|HA|pc|H3|pc|H2|pc|H6|
+pg| ***** 113 ***** |
+
+
+pc|H7|pc|H4|pc|HK|pc|HT|
+pg| ***** 114 ***** |
+
+
+pc|H5|pc|HQ|pc|DT|pc|H9|
+pg| ***** 115 ***** |
+
+
+pc|C6|pc|S8|pc|D8|pc|C3|
+pg| ***** 116 ***** |
+
+
+pc|SA|pc|S9|pc|C7|pc|S4|
+pg| ***** 117 ***** |
+
+
+pc|S6|pc|SJ|pc|DQ|pc|ST|
+pg| ***** 118 ***** |
+
+
+pc|C8|pc|SQ|pc|DJ|pc|C4|
+pg| ***** 119 ***** |
+
+
+pc|H8|pc|CT|pc|DK|pc|HJ|
+pg| ***** 120 ***** |
+
+
+mc|12|
+pg| ***** 121 ***** |
+
+
+%% --- End Board 4 hand ---
+
+%% --- Board 4 Review ---
+qx|R04, Board 04 Review|
+pn|barnets,barnets,barnets,barnets|
+st||nt||md|4SJ97HQT6D3CAKJT43,SKHA7DKQT6CQ98765,SQT8432HJ943D752C,SA65HK852DAJ984C2|
+sk||sv|0|
+rh||ah|Board 4|ah|Review|
+mb|1D2Cp!|an|penalties|mb|pdr!|an|test those guys|mb|p!|an|bigger penalties!|mb|2S!|an|running away|mb|pp3C!|an|cue bid to game force|mb|p3H?p4Dp4S!|an|cue bid|mb|p4Np5Hp6Dd!|an|@c void|mb|r!|an|@c control|mb|ppp|
+fp|2|at|Before making my opening lead I had the following information: My LHO Meckstroth had a long club suit, at least 5. My partner was void in clubs. My RHO Rodwell by xx had only 1 club because he was not scared of a club lead. My partner had little in the way of HCP. Dummy had diamond support. 
+|
+pg| ***** 122 ***** |
+
+
+pc|D3|
+at|On opening lead I failed to picture the hand and had I done so could have found the killing lead - a trump.
+|
+pg| ***** 123 ***** |
+
+
+pc|D6|pc|D2|pc|D8|
+pg| ***** 124 ***** |
+
+
+pc|C2|at|Now when declarer leads a club...|
+pg| ***** 125 ***** |
+
+
+at|  I play...
+|pc|C3|pc|C5|pc|D5|
+at|Can everyone see how a trump defeats the contract?
+|
+pg| ***** 126 ***** |
+
+
+at|Kibs: Prevents cross-ruffing.
+barnets: Yes, declarer has to cross-ruff.|
+pc|D7|pc|D4|pc|C4|pc|DT|
+pg| ***** 127 ***** |
+
+
+at||pc|SK|pc|S2|pc|S5|pc|S7|
+pg| ***** 128 ***** |
+
+
+pc|HA|pc|H3|pc|H2|pc|H6|
+pg| ***** 129 ***** |
+
+
+pc|H7|pc|H4|pc|HK|pc|HT|
+pg| ***** 130 ***** |
+
+
+pc|SA|pc|S9|pc|C6|pc|S3|
+pg| ***** 131 ***** |
+
+
+pc|H5|pc|HQ|pc|DQ|pc|H9|
+pg| ***** 132 ***** |
+
+
+pc|C7|pc|S4|pc|D9|pc|CT|
+pg| ***** 133 ***** |
+
+
+pc|S6|pc|SJ|pc|DK|pc|S8|
+pg| ***** 134 ***** |
+
+
+pc|C8|pc|ST|pc|DJ|pc|CJ|
+pg| ***** 135 ***** |
+
+
+pc|DA|pc|CK|pc|C9|pc|SQ|
+pg| ***** 136 ***** |
+
+
+pc|H8|pc|CA|pc|CQ|pc|HJ|
+pg| ***** 137 ***** |
+
+
+up|47|pc|cA|nt||fp|2|at|If I was to win the @CA at trick two...|
+pg| ***** 138 ***** |
+
+
+pc|c5s2|at| and partner not ruff my ace and play a trump, it still makes, because declarer can ruff his losers.|hc|s5h5h2dKdQdT|
+pg| ***** 139 ***** |
+
+
+lc|s5h5h2dKdQdT|
+up|1|pc|d5|at|
+So here is a case when RUFFING PARTNER'S ACE would be the right defence... and the only defence.
+|
+pg| ***** 140 ***** |
+
+
+pc|d7d4c3dT|
+at|Well, I learned a lesson here for sure... The hard way.|
+pg| ***** 141 ***** |
+
+
+%% --- End Board 4 Review ---
+
+%% --- Board 4 free play ---
+qx|F04, Board 04 Free play|
+nt||fp|2|st||pn|North,West,North,East|
+md|4SJ97HQT6D3CAKJT43,SKHA7DKQT6CQ98765,SQT8432HJ943D752C,SA65HK852DAJ984C2|
+sk||sv|0|
+rh||ah|Board 4|ah|Free play|
+mb|1D2Cp!|an|penalties|mb|pdr!|an|test those guys|mb|p!|an|bigger penalties!|mb|2S!|an|running away|mb|pp3C!|an|cue bid to game force|mb|p3H?p4Dp4S!|an|cue bid|mb|p4Np5Hp6Dd!|an|@c void|mb|r!|an|@c control|mb|ppp|
+cs|2|ht|b|
+at|
+^-{You may now play whatever cards you like! Just click on the card you wish to play.
+ The most recently played card may be taken back by clicking on ^$6 , Undo.
+Once a trick is complete, click on the first card of the next trick.
+Inspect a played trick by pointing at it with the mouse.}|
+pf|y|
+pg| ***** 142 ***** |
+
+
+%% --- End Board 4 free play ---
+
+%% --- Board 5 introduction ---
+qx|B05, Board 05|
+bt||pf||nt||cs|2|fp|4|at|
+^-{ Board 5 }
+^-|
+fp|2|ht|d|at|^b@2The Scene: The Sunday Times International Pairs Tournament.
+
+Fourteen of the World's best pairs had arrived in London to play this annual event. It was indeed a rare privilege to receive an invitation.
+
+The players were all dressed in tuxedos. Omar Sharif was there and because of that the playing room was packed with spectators.
+
+The players were:|
+pg| ***** 143 ***** |
+
+
+cs|3|ht|k|at|^g@2{ |ht|t|at|^v
+ } |ht|l|cp|2|at|^mMichael Rosenberg
+^n  (GBr)
+
+
+
+^g  Claude Rodrigue ^r     Tony Priday
+^g       (GBr) ^s   (GBr) 
+
+
+
+
+^m Barnet Shenkin
+^n  (Sco) @0 |
+ht|v|cp||at|
+^b@2North was a young Michael Rosenberg, a brilliant young rising star and early partner of mine. I had the South chair and E/W were Claude Rodrigue and Tony Priday, one of Great Britains stalwart pairs for many years.|
+pg| ***** 144 ***** |
+
+
+%% --- End Board 5 introduction ---
+
+%% --- Board 5 hand ---
+nt||st||pn|Shenkin,Rodrigue,Rosenberg,Priday|
+md|2SJ93HQT85DAQ94CK8,SAK64HA3D87CAQT76,S75H9742DKT62CJ54,SQT82HKJ6DJ53C932|
+sk|S|sv|e|pf||
+rh||ah|Board 5|ah|Original play|
+fp|2|at|The bidding goes...
+|
+mb|1C|mb|p|mb|1S?|
+pg| ***** 145 ***** |
+
+
+mb|p|mb|4S|mb|p|mb|p|mb|p|
+at|What would you lead?|
+pg| ***** 146 ***** |
+
+
+%% --- End Board 5 hand ---
+
+%% --- Board 5 Review ---
+qx|R05, Board 05 Review|
+pn|Shenkin,Rodrigue,Rosenberg,Priday|
+st||nt||md|2SJ93HQT85DAQ94CK8,SAK64HA3D87CAQT76,S75H9742DKT62CJ54,SQT82HKJ6DJ53C932|
+sk|s|sv|e|
+rh||ah|Board 5|ah|Review|
+mb|1Cp1Sp4Sppp|
+fp|2|at|Here is the reasoning I applied that helped me find the winning lead: West has a strong hand with a likely hand pattern of 4-2-2-5. My partner likely has only 1 card in his hand that can be used to take a trick.
+|
+pg| ***** 147 ***** |
+
+
+sk||pc|C8|at|I need to lay a trap for declarer and make him think that the club suit lies badly for him. I will pretend I have a singleton club. He can't see my hand so will rise with the Ace and we will have gained at least one defensive trick.
+|
+pg| ***** 148 ***** |
+
+
+pc|CA|pc|C4|pc|C2|at|This was one of the few times everything proceeded as in the script. The declarer rose with the CA and...|
+pg| ***** 149 ***** |
+
+
+pc|HA|pc|H2|pc|H6|pc|H5|
+pg| ***** 150 ***** |
+
+
+pc|H3|pc|H4|pc|HJ|pc|HQ|at| proceeded to finesse.
+|
+pg| ***** 151 ***** |
+
+
+at||
+pc|DA|pc|D7|pc|DT|pc|D3|
+pg| ***** 152 ***** |
+
+
+pc|CK|pc|C6|pc|C5|pc|C3|
+pg| ***** 153 ***** |
+
+
+pc|D4|pc|D8|pc|DK|pc|D5|
+pg| ***** 154 ***** |
+
+
+pc|CJ|pc|C9|pc|S3|pc|C7|at|He was disappointed.
+|mc|8|
+pg| ***** 155 ***** |
+
+
+up|27|
+at|Another example of envisioning the whole hand round the table.|
+pg| ***** 156 ***** |
+
+
+nt||fp|2|at|Q: Why didn't East take the @HK, then trump his third heart?
+barnets: He could have trumped his third heart, yes, but put youself in declarer's shoes: he sees 2 club LOSERS and 2 diamond LOSERS. He takes his only chance as he see it: to pitch a @D loser on a @h WINNER.|
+pg| ***** 157 ***** |
+
+
+nt||fp|2|at|Q: Why wouldn't he finesse that @C lead?
+barnets: Very good question. He did not finesse because he thought I held a singleton and would lose the first 3 tricks and either a ruff or a slow second club loser.
+|
+pg| ***** 158 ***** |
+
+
+at|Q: Why would he think of a singleton - nothing in the bidding, and the likely break would be 3-2, not 4-1? Just because of the lead?
+barnets: Well, my LHO opened 1@C. Of course, it could have been a doubleton club. Had I a doubleton club declarer's play was the only chance to make his contract. Can everybody understand that?
+|
+pg| ***** 159 ***** |
+
+
+nt||fp|2|at|Q: What if declarer threw off a @d loser with that @hJ?
+barnets: You can try that line as a free play (double dummy) on the next page.|
+pg| ***** 160 ***** |
+
+
+%% --- End Board 5 Review ---
+
+%% --- Board 5 free play ---
+qx|F05, Board 05 Free play|
+nt||fp|2|st||pn|North,West,North,East|
+md|2SJ93HQT85DAQ94CK8,SAK64HA3D87CAQT76,S75H9742DKT62CJ54,SQT82HKJ6DJ53C932|
+sk||sv|e|
+rh||ah|Board 5|ah|Free play|
+mb|1Cp1Sp4Sppp|
+cs|2|ht|b|
+at|
+^-{You may now play whatever cards you like! Just click on the card you wish to play.
+ The most recently played card may be taken back by clicking on ^$6 , Undo.
+Once a trick is complete, click on the first card of the next trick.
+Inspect a played trick by pointing at it with the mouse.}|
+pf|y|
+pg| ***** 161 ***** |
+
+
+%% --- End Board 5 free play ---
+
+%% --- Board 6 introduction ---
+qx|B06, Board 06|
+bt||pf||nt||cs|2|fp|4|at|
+^-{ Board 6 }
+^-|
+fp|2|ht|e|at|^b@2The Scene: Gold Cup Semi Final, 1982, Birmingham, England.
+
+This time our team was down 52 imps with 8 boards to play a story for another day.
+
+It was 12:15 am. The opponents asked us to resign from the match so they could get more sleep to prepare for the final.
+|
+pg| ***** 162 ***** |
+
+
+at|
+If you know anything about the character of our Scottish players you could say we "politely" refused to concede the match.|
+pg| ***** 163 ***** |
+
+
+%% --- End Board 6 introduction ---
+
+%% --- Board 6 hand ---
+nt||st||pn|Cuthbertson,West,Haase,East|
+md|2SAKQ4HKJT6D2CQJT9,SJ8632H32D8CK8653,S97HA84DAT96CA742,ST5HQ975DKQJ7543C|
+sk|S|sv|b|pf||
+rh||ah|Board 6|ah|Original play|
+fp|2|at|This time you are in the South chair that of George Cuthbertson, an early partner of mine. North was Gerald Haase, often known as the "Mad Doc". This was board 60 and we had already reduced the deficit to 30 imps.
+|
+pg| ***** 164 ***** |
+
+
+mb|p|mb|1D|mb|p?|
+pg| ***** 165 ***** |
+
+
+mb|1H|mb|p|mb|2H|mb|p?|
+pg| ***** 166 ***** |
+
+
+mb|6H|at|No science when you are down 50 imps!|
+pg| ***** 167 ***** |
+
+
+mb|p|mb|p|mb|d!|an|for unusual lead|at|
+East-West were playing Lightner slam doubles, a good convention asking partner to find an unusual lead to beat the contract.
+|
+pg| ***** 168 ***** |
+
+
+mb|p|mb|p|mb|p|
+sk|w|at|Sometimes "unusual lead" is dummy's suit and sometimes it is a long suit to give partner a ruff.
+What would you lead as West?|
+pg| ***** 169 ***** |
+
+
+nt||fp|2|at|Here East wanted a club lead but West thought he wanted dummy's suit.
+|
+sk||pc|D8|
+pg| ***** 170 ***** |
+
+
+at||
+pc|DA|pc|D3|pc|D2|
+pg| ***** 171 ***** |
+
+
+pc|H4|pc|H5|pc|HT|pc|H2|at|Now South made a key play!
+|
+pg| ***** 172 ***** |
+
+
+pc|CQ|pc|CK|pc|CA|pc|H7|
+pg| ***** 173 ***** |
+
+
+pc|DK|pc|H6|pc|C3|pc|D6|at|A lucky break in trumps.
+|
+pg| ***** 174 ***** |
+
+
+pc|SA|pc|S2|pc|S7|pc|S5|at|Try and make the rest of the tricks now...|
+pg| ***** 175 ***** |
+
+
+%% --- End Board 6 hand ---
+
+%% --- Board 6 Review ---
+qx|R06, Board 06 Review|
+pn|barnets,barnets,barnets,barnets|
+st||nt||md|2SAKQ4HKJT6D2CQJT9,SJ8632H32D8CK8653,S97HA84DAT96CA742,ST5HQ975DKQJ7543C|
+sk||sv|b|
+rh||ah|Board 6|ah|Review|
+mb|p1Dp1Hp2Hp6Hppd!|an|for unusual lead|mb|ppp|
+pc|d8|fp|2|at|OK, let's see what happened here from declarer's point of view.
+|
+pg| ***** 176 ***** |
+
+
+pc|DA|pc|D3|pc|D2|
+pg| ***** 177 ***** |
+
+
+pc|H4|pc|H5|pc|HT|pc|H2|at|He made a great play by leading a low heart here!
+|
+pg| ***** 178 ***** |
+
+
+pc|CQ|pc|CK|pc|CA|pc|H7|
+pg| ***** 179 ***** |
+
+
+pc|DK|pc|H6|pc|C3|pc|D6|at|Now he was lucky.
+|
+pg| ***** 180 ***** |
+
+
+pc|SA|pc|S2|pc|S7|pc|S5|at|He just had to take care of his spade loser.
+|
+pg| ***** 181 ***** |
+
+
+pc|SK|pc|S6|pc|S9|pc|ST|
+pg| ***** 182 ***** |
+
+
+pc|S4|pc|S3|pc|HA|pc|D4|
+pg| ***** 183 ***** |
+
+
+at||
+pc|H8|pc|H9|pc|HJ|pc|H3|
+pg| ***** 184 ***** |
+
+
+pc|HK|pc|C5|pc|C2|pc|HQ|at|Nice play.
+|mc|12|
+pg| ***** 185 ***** |
+
+
+up|52|
+at|In any event whatever the lead the contract could not be stopped from making!|
+pg| ***** 186 ***** |
+
+
+nt||fp|2|at|My tip to you all is that you should play the Dbl of a slam to ask for an unusual lead; not to increase the penalty, but to tell partner not to make his normal lead. Make sure before you double, if you get the lead you want, you have a chance of another trick somewhere to beat the contract.
+|
+pg| ***** 187 ***** |
+
+
+at|
+Q: When does a double indicate to lead first bid suit, please?
+barnets: The opening leader leans towards dummy's first suit. The Dbl asks partner not to make his normal lead, so it steers him towards dummy's first suit or a long suit which would not be construed as the normal lead. Sometimes even experts get it wrong, but better to have it than nothing.|
+pg| ***** 188 ***** |
+
+
+nt||fp|2|at|Winning 12 imps on that board reduced the deficit to 18 and was part of a remarkeable set of hands when we went on to win the match!
+
+As well as the tip, the last hand was inserted so I could finish on a high note with a good memory I always enjoy replaying.|
+pg| ***** 189 ***** |
+
+
+%% --- End Board 6 Review ---
+
+%% --- Board 6 free play ---
+qx|F06, Board 06 Free play|
+nt||fp|2|st||pn|North,West,North,East|
+md|2SAKQ4HKJT6D2CQJT9,SJ8632H32D8CK8653,S97HA84DAT96CA742,ST5HQ975DKQJ7543C|
+sk||sv|b|
+rh||ah|Board 6|ah|Free play|
+mb|p1Dp1Hp2Hp6Hppd!|an|for unusual lead|mb|ppp|
+cs|2|ht|b|
+at|
+^-{You may now play whatever cards you like! Just click on the card you wish to play.
+ The most recently played card may be taken back by clicking on ^$6 , Undo.
+Once a trick is complete, click on the first card of the next trick.
+Inspect a played trick by pointing at it with the mouse.}|
+pf|y|
+pg| ***** 190 ***** |
+
+
+%% --- End Board 6 free play ---
+
+
+%% --- Final notes ---
+qx|End, Final notes|
+bt||nt||pf||cs|2|fp|4|ht|b|at|^-{ Final notes }
+^-|
+fp|2|ht|e|at|^b@2barnets: As far as this presentation is concerned I am working with what is readily available to me. In the future it is possible that certain aspects can be improved for your further enjoyment.
+|
+pg| ***** 191 ***** |
+
+
+at|
+As far as BBO itself is concerned the ability for all of you to play bridge, watch great players and learn about bridge twenty four hours, seven days a week is a spectacular achievement by Fred and Uday.
+
+Any comments re this presentation should be sent to Bridgeideas@@aol.com - I am setting up a mailing list for future.
+|
+at|
+BILmanager: @D@D THANK YOU  Barnet for a great session - loved the background to the hands. I am sure all the BIL Players have learnt a great deal today about Opening Leads and How to Visualize a Bridge Hand - we so appreciate you giving your time and sharing your expertise with us. I hope we will see you again next month -  Thanks !! @D@D
+|
+pg| ***** 192 ***** |
+
+
+at|
+(over 170 kibitzers):
+Kib: This was just like "playing with the legends!", very cool.
+Kib: Thanks for all good tips - hope some come our way!!
+Kib: Thanks barnets, we really enjoyed this class. Great stories and tips!
+Kib: Would make for a great book on your experiences Barnet, tx vm!
+Kib: Barry, thank you so much for this great (and entertaining) lesson!  @H @H
+Kib: Best lesson I've had so far! Thx!
+Kib: Very exciting for a beginner to hear the stories of the tournaments and know that our teacher played in some of them!
+(...)
+Kib: And great applause for the BIL founder and manager Maureen Hall!  @H Maureen!
+Kib: Bouquet of roses to Maureen, Chivas for Barnets!
+|
+pg| ***** 193 ***** |
+
+
+at|
+BILmanager: @D Thank you all - I will let you know when Barnet will be back.
+
+barnets: Thanks to all for watching! Check out my forthcoming website www.shenkinbridge.com for extraordinary tales and original learning presentations.|
+pg| ***** 194 ***** |
+
+
+%% --- End Final notes ---
+
+
+%% --- Help ---
+qx|Help, Help notes|
+bt||nt||cs|2|fp|4|ht|b|at|^-{ Help }
+^-|
+fp|2|ht|e|at|
+Short instruction on how to navigate through the movie:
+
+ ^$6  Previous page, go back one page.
+ ^$40  Next page, go forward one page.
+ ^$7  Previous chapter (the first page of the previous chapter).
+ ^$41  Next chapter (the first page of the next chapter).
+ ^$119  The first page of this movie.
+
+You can display any hand at any time if you click on the player's name. Double clicking the name will show all hands.
+
+"Free play" is the option to play the hand on your own, all four hands, trick by trick. You may play whatever cards you like! Just click on the card you wish to play. The most recently played card may be taken back by clicking on ^$6 , Undo. Once a trick is complete, click on the first card of the next trick. Inspect a played trick by pointing at it with the mouse.|
+%% --- End Help ---
+%% EOF barnets_Opening Leads_a.lin

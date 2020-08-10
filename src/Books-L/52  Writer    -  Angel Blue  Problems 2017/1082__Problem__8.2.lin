@@ -1,0 +1,240 @@
+%%
+%%
+
+ss|chapter,Declarer  Play                            Problem  8.2 |
+
+ss|movie-maker,GG_Bridge|
+
+%%
+%%  Date last Edited    2017-11-29          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead_2017.ins
+%%
+ss|masthead,Angel Blue                                                      2017 |
+%%
+cr|m225|cg|m125|cb|m045|   fill   m  m-mastColor       dull orange
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    std
+%%
+<<--INSERT-END**-->>=01___FP_masthead_2017.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=03___FP_gen_arik_intro.ins
+%%
+Lg|f|n^|6|
+fp|4|at|^c@2^z@3|
+at|Arik, BBO ID 'Angel Blue', runs a weekly card play tournament and lesson in the  ^*h http://iac.pigpen.org.uk/,IAC^*n  club on  ^*h http://bridgebaseonline.com/,BBO^*n.  The focus is on  difficult to play  hands.  He has kindly allowed his problems to appear here in aaBridge lin file format.
+|n^|9|at|
+Do visit Angel Blue's bridge web site at ^*h http://angelblue.co.il/^*n|
+%%
+<<--INSERT-END**-->>=03___FP_gen_arik_intro.ins
+
+
+<<--INSERT-START-->>=03___FP_general_2017.ins
+%%
+ht|n|n#|0|at|@1^z  @3^b   {^^^^^^^^^^^^^^ ^z } |
+at|^c@2^z@3^^|
+%%
+ht|n|n^|7|at|^^In every deal you will be given an opportunity to play the hand against the aaBridge 'bots'.
+You do this by by clicking the  button labeled  { ^*b 1st ^*n }   which will then be visible.
+|n^|7|at|
+Once you have played the hand you can ^*b and should^*n, return to the tutorial via the ^*b Return to Movie ^*n button 
+and ^*b READ the comments on the hand^*n, these are nearly always supplied by Arik.
+|n^|7|at|
+To read more on the 'in deal' features click  |fp|b|at|@z|fp||at|  icon, then in the left hand column on ^*b  '^*bDouble Dummy etc^*n'.   You can later return back here  by clicking the   |fp|t|at|@L|fp||at|   left pointing arrow a couple of times.| 
+%%
+<<--INSERT-END**-->>=03___FP_general_2017.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|a|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|5|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|c|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+qx|8.2|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+bv|a,h|
+rh||ah|Problem 8.2|
+md|4sKQ983hK98dKJ9cT9,sA7hJT2dQ76cAKQ86,sJT642hAQ5dA43cJ5,s5h7643dT852c7432|
+sv|-|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|k|
+at|^*bProblem 8.2^*n     The hand,   the bidding,|
+%%_aapg-NEAR
+mb|p|mb|1S|mb|1N|mb|4S|mb|p|mb|p|mb|p|pg||
+%%_aapg-STD
+
+
+at|      the lead,|
+pc|cA|
+pg| ***** 2 ***** |
+
+
+lg|b|
+at|      the early play,|
+pg| ***** 3 ***** |
+
+
+%%_aapg-NEAR
+pc|c5|pc|c2|pc|c9|pg||
+pc|cK|pc|cJ|pc|c3|pc|cT|pg||
+pc|sA|pc|s2|pc|s5|pc|s3|pg||
+pc|s7|
+%%_aapg-STD
+
+
+qx|Thnk,wide|
+lg|f|
+at|^q  ^*b Do your thinking  NOW ^*n|
+eb|y___|
+lg|k|
+pg| ***** 7 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Try,wide|
+bv|f,v|
+nt|^z@3^b@2^^|n^|5|
+at|^*bTry^*n ^e|
+n#|c|
+at|^^|cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the answer.|
+pf|first-button|
+pg| ***** 8 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Ans,wide|
+sk||
+bv|e,v|
+nt|^z@3^c@2^^|n^|5|
+Lg|b|
+at|^b^*bAns^*n
+Recap  -  LHO has grabbed the first three tricks with the Ace-King of clubs and the Ace of spades and to the fourth trick led the 7 of spades.
+|n#|3|at|With the unfortunate mirror pattern in the hands, there are no ruffs available, and clearly LHO is assumed to have the Queen of diamonds.  
+|n#|3|at|The only possible additional loser for you is a diamond trick.|
+pg| ***** 9 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bAns^*n
+The normal play of the diamond suit is to cash the Ace and then play toward the King and the Jack, taking the finesse with the Jack.  On this hand, though, the normal play is clearly wrong. The North-South hands have a combined total of 24 high-card-points.  Since LHO was kind enough to announce that he has 15-18 HCP, LHO must have the Queen of diamonds, and the normal finesse will lose.  In order to make the contract you must take a rather unusual diamond finesse.|
+pg| ***** 10 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bAns^*n
+You should play diamonds by first leading the Jack from your hand.  
+|n#|3|at|If LHO does not cover with the Queen, you will just let the Jack ride and it will win the trick.  
+|n#|8|at|If LHO covers, which he probably will, you can win with the Ace and ...|
+pg| ***** 11 ***** |
+
+
+%%_aapg-NEAR
+pc|s4|pc|h3|pc|s8|pg||
+pc|dJ|pc|dQ|pc|dA|pc|d2|pg||
+%%_aapg-STD
+
+
+---------------------------------------------------------------------------
+nt|^z@3^c@2^^|n^|5|
+Lg|c|
+at|^b^*bAns^*n
+... then play a diamond from dummy toward the  @dK9,  taking a backward finesse against the 10.  This requires two cards to be placed properly, the Queen of diamonds with LHO and the 10 with RHO.|
+pg| ***** 14 ***** |
+
+
+%%_aapg-NEAR
+pc|d3|pc|d5|pc|d9|pc|d6|pg||
+%%_aapg-STD
+
+n#|5|at|^^If you had not held the 9, then your only line of play consistent with LHO's 1NT bid would have been to play the Ace-King and hope LHO held Queen doubleton.|
+pg| ***** 16 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Done,wide|
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+at|^*bDone^*n
+^^^c We are done with this problem.  However, if you wish ...|
+mx|x|
+eb|y___|
+bv|c,v|
+pf|cont-button|
+pg| ***** 17 ***** |
+
+
+---------------------------------------------------------------------------
+qx|DDS,wide|
+eb||
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+bv|a,v|
+at|^*bDDS^*n    ^eYou are now free to explore the deal.
+|n^|7|lg|k|at|^^^c@2If you still need help then, when in the deal, click the ^*b DDS  { is Off/On ^*n }  button top right.
+|fp|s|at|A number (of tricks) in a GREEN oval shows a good to play for THAT side.|fp||
+pf|all-res-lifted|
+pg| ***** 18 ***** |
+
+

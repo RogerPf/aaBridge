@@ -1,0 +1,191 @@
+
+
+%% 2019-07-26  Pat - Trump Control
+
+%% All hands are copyright  Richard Pavlicek
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+bv|a,h|   %% hide all three buttons
+%%
+ss|head,     ah`Part 5.    Trump Control`|
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+<<--INSERT-START-->>=07___FP_Patterns.ins
+%%
+fh|b48| %%  'banner' font
+fh|t40| %%  'target' font
+fh|s28| %%  'small'  font
+fh|p45| %%  'pink dot' size
+
+cr|a230|cg|a040|cb|a130|          a  action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       pink dot button
+
+bv|e,h| %%   Enter the deal button hidden
+bv|f,v| %%   1st visible 
+bv|d,v| %%   DDS visible
+
+ha|y|   %%   hide auctions
+
+ss|banner,   ht`e`fp`b-big`at`^*b^k  ^*nTrump Control^*n`fp``|
+ss|link,     ht`z`at`^k     visit  Richard Pavlicek's  Trump Control  page    ^*h http://www.rpbridge.net/9n01.htm, rpbridge.net  9n01^*n`|
+ss|means,    ht`e`fp`small`at`^x ^*h http://www.rpbridge.net/9gc8.htm, meaning^*n`fp``|
+ss|new,      nt`^b@2^^`vv`means`vv`link`vv`banner`ht`e`vv`head`|
+ss|contract, mb`4sppp`|
+ss|p1,       vv`contract`wt`s`sk`s`fp`t`ht`e`at`^q    ^*b`|
+ss|p2,       fp`t`ht`e`at`^*n^u`|
+ss|p3,       fp``ht`q`at`^d`|
+%%
+<<--INSERT-END**-->>=07___FP_Patterns.ins
+
+
+qx|-|
+st||
+nt|^b@2^^|vv|banner|
+ht|n|at|In the far right-hand column two lines below |fp|t|cp|gr|at|^*b Power Kib ^*n|cp||fp||at| is the   { @m }|cp|red|at| ^*bShow all hands^*n|cp||at| ^*b checkbox^*n.  
+^^^i Set this to ^*b CHECKED^*n,  the first few times you look at these patterns.| 
+rh||ah|--- -|vv|head|
+ht|a|n#|1|at|^q( @s are trumps, your target is |cp|red|at|^*b 10 ^*n |cp||at|tricks )|
+pg| ***** 0 ***** |
+
+
+qx|1|
+rh||ah|Pattern 1|
+vv|new|at|^*b 1.  Draw^*n|
+%
+md|1   A A, K - A, 2 - 2, Q - K|
+%
+bs|8,3|
+vv|p1|at|win 2|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 1 ***** |
+
+
+qx|2|
+rh||ah|Pattern 2|
+vv|new|at|^*b 2.  Drive draw^*n|
+%
+md|1  KQ3 A, AJ - AK, 2 - 432, T - 765|
+%
+bh|Play, West, dA, res, p1, T2, always|
+%
+bs|7,2|
+vv|p1|at|win 3|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 2 ***** |
+
+
+qx|3|
+rh||ah|Pattern 3|
+vv|new|at|^*b 3.  Discard drive draw^*n|
+%
+md|1  KQ3 2 2, AJ 54 A, 2 AK3 3, T 9876|
+%
+bs|6,2|
+vv|p1|at|win 4|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 3 ***** |
+
+
+qx|4|
+rh||ah|Pattern 4|
+vv|new|at|^*b 4.  Force^*n|
+%
+md|1  K A, A - A, - - 32, - - 54|
+%
+bs|9,2|
+vv|p1|at|win 1|
+vv|p2|at|auto bi?|
+vv|p3|
+pg| ***** 4 ***** |
+
+
+qx|5|
+rh||ah|Pattern 5|
+vv|new|at|^*b 5.  Drive force trump^*n|
+%
+md|1  QJT A, AK - AK, 2 - 432, 9 - 765|
+%
+bh|Play, West, sA, res, p2, T1, always|
+bh|Play, West, dA, res, p1, T2, always|
+%
+bs|8,1|
+vv|p1|at|win 2|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 5 ***** |
+
+
+qx|6|
+rh||ah|Pattern 6|
+vv|new|at|^*b 6.  Duck^*n|
+%
+md|1  A32 A, KQJ - A, 654 3, T9 - KQ|
+%
+bs|8,1|
+vv|p1|at|win 2|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 6 ***** |
+
+
+qx|7|
+rh||ah|Pattern 7|
+vv|new|at|^*b 7.  Repeat duck^*n|
+%
+md|1  A32 A, KQJ - A, 654 2, T98 - 2|
+%
+bh|Play, West, sk, res, p1, T2, always|
+%
+bs|8,1|
+vv|p1|at|win 2|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 7 ***** |
+
+
+qx|8|
+rh||ah|Pattern 8|
+vv|new|at|^*b 8.  Duck finesse^*n|
+%
+md|1  A2 A, J8 - A, Q9 4, KT - - A|
+%
+bs|8,2|
+vv|p1|at|win 2|
+vv|p2|at|auto|
+vv|p3|
+pg| ***** 8 ***** |
+
+
+qx|9|
+rh||ah|Pattern 9|
+vv|new|at|^*b 9.  Crash^*n|
+%
+md|1  5432 A, JT - AKQ, 9876 3, AKQ - JT|
+%
+bs|8,0|
+vv|p1|at|win 2|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 9 ***** |
+
+
+qx|10|
+rh||ah|Pattern 10|
+vv|new|at|^*b 10.  Finesse refusal^*n|
+%
+md|1  2 AK, T - 32, AQ 2, KJ - A|
+%
+bs|8,2|
+vv|p1|at|win 2|
+vv|p2|at|auto bi|
+vv|p3|
+pg| ***** 10 ***** |
+
+

@@ -1,0 +1,612 @@
+%% Movie file name
+mn|30 Point Deck - session at BIL, December 23, 2007|
+%% Color definition
+tu||bt||nt||
+cr|116|cg|116|cb|1255|
+cr|2255|cg|2255|cb|264|
+cr|316|cg|3128|cb|316|
+cs|1|cp|2|
+
+%% Font definition
+fh|265|ff|2Arial|fb|28|fm|2|
+
+%% ------------------------------------------------------------------------
+%% ------ HELP AND INDEX SCREEN -----
+qx|I01, Main|
+at|
+^-{^*B  30 Point Deck - session at BIL, December 23, 2007
+        by Bob Holmes aka Bobh2 ^*N}
+^-|
+
+ht|g|cp||cs|2|
+at|^k@2{^*GI02, Introduction^*N
+
+^*BShort Suit Game try - SSGT^*N
+^*GB01,     Board 01^*N     ^*GB02, Board 02^*N     ^*GB03, Board 03^*N
+^*GB04,     Board 04^*N     ^*GB05, Board 05^*N
+
+^*BSplinter's^*N
+^*GB06,     Board 06^*N     ^*GB07, Board 07^*N     ^*GB08, Board 08^*N
+^*GB09,     Board 09^*N
+
+^*GI04, Jacoby 2NT - J2NT^*N
+^*GB10,     Board 10^*N
+
+^*GEnd, Final notes^*N }|
+
+ht|r|at|@0
+
+Small instruction on how to read this LIN file:
+ ^$40  Next page, permits you to read the next page of this movie.
+ ^$6  Previous page, permits you to read the previous page of this movie.
+ ^$41  Next chapter, takes you to the first page of the next chapter. 
+ ^$7  Previous chapter, takes you to the first page of the previous chapter..
+ ^$119 Takes you to the first page of this file, this one.|
+
+ht|z|at|@0^e (c) Bridge Base Online - Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|
+pg| ***** 0 ***** |
+
+
+%% ------------------------------------------------------------------------
+
+%% ------------------------------------------------------------------------
+%% ------ INTRODUCTION PAGE -----
+qx|I02, Introduction 01|bt||nt||
+cs|1|cp|2|at|
+^-{^*B  30 Point Deck - session at BIL, December 23, 2007
+        by Bob Holmes aka Bobh2 ^*N}
+^-|
+
+cp||ht|e|at|@4^b@2^*bBILmanager^*n: Welcome Bob thank you for providing this session for us today  - Thanks to your helper JAYDF for preparing and looking after the hands  during the session
+
+^*bbobh2^*n: Ok, ready to start... Hi, everybody.
+
+Today we are going to discuss a way to deal with bidding when partner shows a short suit
+
+^*bA couple of housekeeping issues first:^*n
+
+This link ^*Hforums.bridgebase.com/index.php?showtopic=12429^*N, is the link to a bunch of notes I wrote and archived in the BBO Forum. You will find that it is a ton of good stuff about different things that you need to know there are 3 pages, and if you print all this verbosity, you will burn up 70 to 120 pages of computer paper, so I have been told.
+
+But, save this link, and go read, you will have a lot of fun. Might be the best reading on bridge you will ever have, even if I say so myself... grin
+
+^*bNext issue:^*n
+I need 4 victims...er...volunteers who have never heard of something called the 30 point deck...|
+pg| ***** 1 ***** |
+
+
+ht|e|at|@4I suppose you all know that there are several places we show short suits in the bidding, right?
+
+One is short suit game tries, another, splinters, another in Jacoby 2NT responses. All of those can or do show short suits, singletons or voids the problem is, if you are sort of inexperienced, what do you do with that knowledge, right?
+
+^*bQ^*n: Not the Jacoby 2NT part... sorry.
+
+^*bbobh2^*n: Do you play Jacoby 2NT?
+
+^*bQ^*n: no
+
+^*bbobh2^*n: Let me advise you that Jacoby 2NT is something important to learn...
+
+^*bQ^*n: I didn't know that Jacoby 2NT showed a short suit - could you clarify.
+
+^*bbobh2^*n: 1S-2N-any suit at the 3 level (other than the trump suit) shows a short suit .
+|
+pg| ***** 2 ***** |
+
+
+ht|e|at|@4Now, here's the theory.
+
+Every suit has 10 high card points in it, if we have a short suit, we dont have to worry about those 10 points... The ones in the short suit what we will find is this:
+
+For every missing 4 points in our three long suits, we are missing 1 trick
+
+So we put this knowledge to work
+
+We count up our points in the long suits, subtract from 30 and get a number.
+
+^*BExample^*n:  10... That's 10 missing points... Or 2 and 1/2 missing tricks, we include that we are missing one trick in the short suit that give us 3 and 1/2 missing tricks. That means we are close to a game so we try to find out if pard has a little extra, if he does, we bid a game because then we are missing only 3 tricks, meaning we have 10 tricks. 
+
+Do you see this idea?
+|
+pg| ***** 3 ***** |
+
+
+ht|e|at|@4First, we are going to do short suit game tries this is not common usage, but is a good way to learn about evaluating short suits. 
+
+The standard default is long suit game tries, but we, for today's purposes, are agreeing to play short suit game tries.
+
+We will bid some hands with this and I think it will become real clear.
+|
+pg| ***** 4 ***** |
+
+
+%% ------------------------------------------------------------------------
+%% ------ BOARD 1 HAND (BEGIN SSGT) -----
+qx|B01, Board 01|nt||
+%%Player's names
+pn|,,,|st||
+%%hand
+md|3ST83HKQDKJ7CT7532,SAJ6HT543D943CQJ6,SKQ742HA862DA82C8|rh||
+%%Board title
+ah|30 Point Deck|ah|Board 1|
+%%bidding
+mb|1Sp2Sp|mb|3C|an|Short Suit Game Try|mb|p?|
+hc|hkqdkj| 
+nt|Let me show you how this works, south has 9 points outside of clubs and figures pard for 13 or 14, not a dog but still a minimium.
+
+Add 9 to 14 is 23 and subtract that from 30 that leaves 7. 7 missing points is 1 and 3/4 tricks and you have 1 club to lose, so 2 and 3/4 losers.|
+pg| ***** 5 ***** |
+
+
+lb|*bKnowing that, what would you bid as South?^^4S|
+mb|4Sppp|
+lc|hkqdkj| 
+nt|Good enough for game, you see?
+Now, let's see how we did. We lose 1@S, no @H, 1@c and maybe a @D. Even if the spades are touchy, this game makes if either the spades work or the diamonds work most to lose is 4, but could lose only 2 is a very good game not a cinch, but good.
+
+The important thing is that we reached a good game on 22 high card points.|
+pg| ***** 7 ***** |
+
+
+%%card play
+pc|CA|mc|12|
+
+nt|^*BQ^*N: Where do you get 7 points = 1 3/4 tricks?
+
+^*Bbobh2^*N: You will find, if you bid a lot of these, that for every missing 4 points, you will lose 1 trick. If you are missing 8 points, 2 tricks. So missing 7 is 1 and 3/4s tricks.|
+pg| ***** 8 ***** |
+
+
+nt|Another thing you will find is this: The 30 point deck is a way to bid "magic" games... All based on "fit" this game we just bid is 22 high card points...all on fit.
+
+^*BQ^*N: How many points should the opener have to make a Short Suit Game Try?
+^*Bbobh2^*N: Opener will have to make that decision.  The flatter opener is, the more point he will need. I would suggest for all of you to have about 14 points in general.|
+pg| ***** 9 ***** |
+
+
+%% ------------------------------------------------------------------------
+
+%% ------------------------------------------------------------------------
+%% ------ BOARD 2 HAND  -----
+qx|B02, Board 02|nt||
+%%Player's names
+pn|,,,|st||
+%%hand
+md|4SJ643HT64DQT6CA43,SQT7HK72DA54CT985,SK52H53DJ97CKQJ72|rh||
+%%Board title
+ah|30 Point Deck|ah|Board 2|
+%%bidding
+nt|We have a bunch more to bid, let's do it and see how this works.|
+pg| ***** 10 ***** |
+
+
+mb|1H|mb|p|mb|2H|mb|p|mb|3C|an|Short Suit Game Try|mb|p|
+hc|sqhkda| 
+nt|Let's use the 30 point deck? 
+This is what West should be thinking. I have 9 points, pard has about 14, that's 23, 30 less 23 is 7, 7 missing points, 1 and 3/4 of a trick and one missing club trick. 2 and 3/4's missing tricks --> good enough for game.|
+pg| ***** 11 ***** |
+
+
+mb|4H|mb|p|mb|p|mb|p|
+nt|^*BQ^*N: would you use this only holding a singleton?
+^*Bbobh2^*N: singleton or void
+
+^*BQ^*N: Could you cuebid another suit as a way of showing that you accept the short suit game try?
+^*bbobh2^*N: Just bidding game is enough, but you bring up a good point.|
+pg| ***** 12 ***** |
+
+
+lc|sqhkda|ub|4|mb|3D|nt|Bidding not related to this hand, just to show a point.
+If you bid 3@d over 3@c, it would mean this:
+^*B"Pard, I am right on the borderline, if you have any extras, you bid game"^*N.
+Would say nothing about diamonds.|
+pg| ***** 13 ***** |
+pg| ***** 14 ***** |
+
+
+%%card play
+pc|CA|mc|13|
+pg| ***** 15 ***** |
+
+
+%% ------------------------------------------------------------------------
+
+
+%% ------------------------------------------------------------------------
+%% ------ BOARD 3 HAND  -----
+qx|B03, Board 03|
+nt||
+%%Player's names
+pn|,,,|st||
+%%hand
+md|1SAKT86HKJ52DA72CT,S432HAT6DQ953CJ97,S975H843DKJ6CA852,SQJHQ97DT84CKQ643|rh||
+%%Board title
+ah|30 Point Deck|ah|Board 3|
+%%bidding
+mb|1S|mb|p|mb|2S|mb|p|mb|3C|an|Short Suit Game Try|mb|p|
+nt|Use 30 point deck. What does it tell you to do?|
+pg| ***** 16 ***** |
+
+
+lb|*mHow many points in the long suits?^2~4~6~8~10^2|
+nt|You have 4 points outside of clubs, agree? Play pard for 14 that is 18|
+pg| ***** 18 ***** |
+
+
+lb|*mHow many point are u missing in "your" suits?^6~8~10~12~14^4|
+nt|You are missing 12 in "your'" suits, but, you are not missing a club trick. Then you have 3 missing tricks in the long suits, but that's all. If you lose 3 tricks at spades, that's a game, agree? So bid the game.|
+pg| ***** 20 ***** |
+
+
+mb|4S|mb|p|mb|p|mb|p|
+nt|Let's go over the idea of the 30 point deck again:
+There are 10 points in each suit, if we have a singleton or void in one suit, we only have to worry about the high card points in 3 suits... 30 points. We figure out how many of those 30 points we have. Then, we know that for every 4 missing points, we are going to lose one trick, and we check to see if we are losing one (maybe not) in the short suit, SO, this is the concept of the 30 point deck.|
+pg| ***** 21 ***** |
+
+
+nt|As responder, you assume pard has a minimium, and if you need pard to have more, usually you can ask. so let's do this one again: North has 4 add to 14 (about the minimium you would make a game try) = 18 points, subtract from 30 = 12 or 3 missing tricks but not missing a club trick. This is enough for game, so he bids it, all see?|
+pg| ***** 22 ***** |
+
+
+%%card play
+pc|C7|mc|10|
+pg| ***** 23 ***** |
+
+
+%% ------------------------------------------------------------------------
+
+%% ------------------------------------------------------------------------
+%% ------ BOARD 4 HAND  -----
+qx|B04, Board 04|
+nt||
+%%Player's names
+pn|,,,|st||
+%%hand
+md|2SJ96H542DJ852CKQJ,SAKT87HA86DAT93C7,S54HQJ73DKQCT9643,SQ32HKT9D764CA852|rh||
+%%Board title
+ah|30 Point Deck|ah|Board 4|
+%%bidding
+mb|1S|mb|p|mb|2S|mb|p|mb|3C|an|Short Suit Game Try|mb|p|
+nt|East has 5 points outside, plus pard's 14 (really a great 15)... for 19... or 2 and 3/4's tricks... and East had the club trick, enough for game.|
+pg| ***** 24 ***** |
+
+
+mb|4S|mb|p|mb|p|mb|p|
+nt|This game is a little tricky but can be made, the only thing that keeps it from being dead cold is the missing 10 of @D|
+pg| ***** 25 ***** |
+
+
+nt|^*BQ^*N: You are showing singletons in @C only, if singletons in red suits do you bid that suit?
+^*Bbobh2^*N: It doesnt matter what suit the short suit is in.
+^*BQ^*N: Do you deduct any points for 4333 hands?
+^*Bbobh2^*N: If you have 4333, you need more points to play game.
+^*BQ^*N: If you have 14 and pard is bidding 2 with 6-9, why not bid game yourself?
+^*Bbobh2^*N: If you have 14 and your pard has 9 that doesnt fit or less, you are not making game.
+|
+pg| ***** 26 ***** |
+
+
+%%card play
+pc|DK|mc|10|
+pg| ***** 27 ***** |
+
+
+%% ------------------------------------------------------------------------
+
+%% ------------------------------------------------------------------------
+%% ------ BOARD 5 HAND  -----
+qx|B05, Board 05|
+nt||
+%%Player's names
+pn|,,,|st||
+%%hand
+md|4ST83HA32DKJ98CQ65,SQ65HJ97DQ72CK982,S74HK85DT54CAJ743,SAKJ92HQT64DA63CT|rh||
+%%Board title
+ah|30 Point Deck|ah|Board 5|
+%%bidding
+mb|1S|mb|p|mb|2S|mb|p|mb|3C|an|Short Suit Game Try|mb|p|
+nt|14 + 5 = 19  --  30 -19 = 11 = 2.75 tricks  --  2.75 + 1 club trick  => Not enough for game.|
+pg| ***** 28 ***** |
+
+
+mb|3S|mb|p|
+nt|Listen to me now: you made a game TRY, your pard said NO, you have to leave it at that. If you want to bid game, you can but dont ask pard's opinion, then ignore it. The problem is, your pard has some of his points in your short suit, not much help.|
+pg| ***** 29 ***** |
+
+
+mb|p|mb|p|
+nt|Note that you are going to lose 4 tricks, all because the K@C is in the wrong place.
+
+^*BQ^*N: And with interference?
+^*Bbobh2^*N: I play that if I am using SSGT, and the opponents intefere over the 1 Major bid. We revert to long suit game tries.|
+pg| ***** 30 ***** |
+
+
+ 
+%%card play
+pc|HA|mc|13|nt|The short suit game try enables you to see if your cards fit good, and the 30 point deck evaluation method clarifies it. You can use it for a number of purposes, wanna see how it works with splinters?|
+pg| ***** 31 ***** |
+
+
+%% ------------------------------------------------------------------------
+
+%% ------------------------------------------------------------------------
+%% ------ BOARD 6 HAND (BEGIN Splinters) -----
+qx|B06, Board 06|nt||
+%%Player's names
+pn|,,,|st||
+%%hand
+md|4SJ6HJ7632DKQJ75C9,SKQ843HAQ5D3CK864,S7HT84DA8642CT732,SAT952HK9DT9CAQJ5|rh||
+%%Board title
+ah|30 point deck by Bobh2|ah|Board 6|
+%%vulnerability
+sv|0|
+%%bidding
+nt|We need to define splinters quickly. A splinter is a raise of a suit, and in this case shows a full opening hand. And if anybody tells you splinters can be less, tell them thank you and ignore that advice.
+
+^*BQ^*N: 4 card support at least?
+^*Bbobh2^*N: Splinters are always 4 card support.|
+pg| ***** 32 ***** |
+
+
+mb|1S|mb|p|mb|4D|an|Splinter 4+@S 1-@D|mb|p|mb|4N!|an|RKCB 1430|mb|p|mb|5S|an|2 Keys + Q of trump|mb|p|mb|6S|mb|p|mb|p|mb|p|
+nt|Congratulations, you just hit a 28 point slam, dead cold. West, did you use the 30 point deck? 
+Yes, but I needed to know if 7 was there.
+
+One thing you need to add to your bag of tricks is not to splinter on stiff Aces, counterproductive, so you dont have to worry bout a grand here.|
+pg| ***** 33 ***** |
+
+
+nt|Let's think together a minute: Misssing @D trick and 3/4s of a trick in the long suits. Do we agree that the 4@d bid could be on a good 12 or 13? East has 14 points.
+13+14 is 27. The 30 point deck says you are missing a K, maybe even an ace, so East really needs to find out if pard has a little extra.|
+pg| ***** 34 ***** |
+
+
+ub|8|nt|Here's how he does that: 
+Over 4@d, he q bids a "trial" q bid of 4@h, if you play King value q bids would be good.|
+pg| ***** 35 ***** |
+
+
+mb|4Hp|
+nt|West knows he needs a little help and he has just a little extra and the K@H helps West's hand so he q bids his K@c with 5@c, says a little extra|
+pg| ***** 36 ***** |
+
+
+mb|5Cp|
+nt|And that is all that East needs. Now, East trusts the 30 point deck and steps up and bids 6@s. You dont need blackwood to bid every slam.|
+mb|6Sppp|
+pg| ***** 37 ***** |
+
+
+%%card play
+pc|C9|mc|12|
+pg| ***** 38 ***** |
+
+
+%% ------------------------------------------------------------------------
+
+%% ------------------------------------------------------------------------
+%% ------ BOARD 7 HAND  -----
+qx|B07, Board 07|nt||
+%%Player's names
+pn|,,,|st||
+%%hand
+md|1SKQJ86HA96D32CAT9,S97HQT4DKQ854C542,SA542HKJ53D6CKQJ8,ST3H872DAJT97C763|rh||
+%%Board title
+ah|30 point deck by Bobh2|ah|Board 7|
+%%vulnerability
+sv|0|
+%%bidding
+mb|1S|mb|p|mb|4D|an|Splinter 4+@S 1-@D|mb|p|
+nt|Let's go through the process South:|
+pg| ***** 39 ***** |
+
+
+sk|S|
+lb|*pHow many points do you have?|
+lb|*mHow many points do expect your pard to have?^11~12~13~14^3|
+nt|That makes 27 subtract from 30, leaves 3 and the missing club trick, 1 and 3/4 losing tricks.|
+pg| ***** 42 ***** |
+
+
+lb|*ySo you would be more comfortable if he has something other than a minimium?^^y|
+nt|You are using the 30 point deck assuming pard has a dead minimium, pard could have a lot more, even a little more than minimium will make you a slam. So Just use a cue bid to find out.|
+pg| ***** 44 ***** |
+
+
+mb|4H|mb|p|mb|5C|mb|p|mb|6S|mb|p|mb|p|mb|p|
+nt|4@h is a good bid and so is 5@c, just enough to reach the slam. Both have sort of minimiums, but all controls, they both like their hands and the 30 point deck says they are right on the border.|
+pg| ***** 45 ***** |
+
+
+%%card play
+pc|DK|mc|0|
+pg| ***** 46 ***** |
+
+
+sk||
+%% ------------------------------------------------------------------------
+
+%% ------------------------------------------------------------------------
+%% ------ BOARD 8 HAND  -----
+qx|B08, Board 08|nt||
+%%Player's names
+pn|,,,|st||
+%%hand
+md|2S6H9765DJ87CAKQ74,SKQ543HQT4DAK2C62,S97HK82D964CJ9853,SAJT82HAJ3DQT53CT|rh||
+%%Board title
+ah|30 point deck by Bobh2|ah|Board 8|
+%%vulnerability
+sv|0|
+%%bidding
+mb|1S|mb|p|mb|4C|an|Splinter 4+@S 1-@C|mb|p|mb|4D|mb|p|mb|4Sppp|
+nt|East knows pard took a little move toward slam, he has dead minimium, so he quit, was right. This is a good hand to show how to make a trial q bid then slow down.|
+pg| ***** 47 ***** |
+
+
+nt|^*BQ:^*N wouldd you bid slam if a finesse makes?
+^*Bbobh2^*N: 50% slams are right on the line. Let me make a point, how thin this slam is, without the 10 of heart, this slam does not make.|
+pg| ***** 48 ***** |
+
+
+nt|^*BQ^*N: If you keep passing 50% slams you're going to miss a lot of slams.
+^*Bbobh2^*N: let's discuss 50% slams, the 30 point deck only concerns itself with the high cards but not distribution. Do you all realize that using keycard, if you are off one keycard and the Q of trumps, you are not supposed to bid a slam?
+Let me explain why, if you assume all suits breaking the most likely way, on these 50% slams, you will win 11 imps when you bid and make them and lose 11 when you bid them and go down almost dead even odds.|
+pg| ***** 49 ***** |
+
+
+nt|BUT.............
+What is not being considered is if trump suits break badly, and that means that what you think is a 50% slam really isnt, more like 46% or something, to bid slams, you need a little edge, over thousands of hands a little edge to break even so we are just a little conservative on slam bidding, and it will pay off.|
+pg| ***** 50 ***** |
+
+
+%%card play
+pc|CJ|mc|12|
+pg| ***** 51 ***** |
+
+
+%% ------------------------------------------------------------------------
+
+%% ------------------------------------------------------------------------
+%% ------ BOARD 9 HAND  -----
+qx|B09, Board 09|nt||
+%%Player's names
+pn|,,,|st||
+%%hand
+md|1SA9853HAJD65CAT72,SQJHT84DT732CK865,SKT762HKQ9DAK84C9,S4H76532DQJ9CQJ43|rh||
+%%Board title
+ah|30 point deck by Bobh2|ah|Board 09|
+%%vulnerability
+sv|0|
+%%bidding
+mb|1S|mb|p|mb|4C|an|Splinter 4+@S 1-@C|mb|p|mb|4S|mb|p|mb|5D|mb|p|mb|5H|mb|p|mb|6S|mb|p|mb|p|mb|p|
+nt|Good auction. Hard to reach the grand. Hard to get it right with hidden doubletons...Grin.|
+pg| ***** 52 ***** |
+
+
+sk|N|nt|I got asked if this hand North, is too strong for a splinter, and maybe Jacoby 2NT?
+First, Jacoby 2NT is a flat hand.
+Second, there is no top range on splinters.|
+pg| ***** 53 ***** |
+
+
+sk||
+%%card play
+pc|H8|mc|13|
+pg| ***** 54 ***** |
+
+
+%% ------------------------------------------------------------------------
+
+%% ------------------------------------------------------------------------
+%% ------ BOARD 10 HAND  -----
+qx|B10, Board 10|nt||
+%%Player's names
+pn|,,,|st||
+%%hand
+md|3SA72HT65DKQ92CA85,ST64HK973D86C7632,SKQJ95H8DAT53CKQT,S83HAQJ42DJ74CJ94|rh||
+%%Board title
+ah|30 point deck by Bobh2|ah|Board 10|
+%%vulnerability
+sv|0|
+%%bidding
+nt|Now, we need to see this at work in Jacoby 2NT...just this hand.|
+pg| ***** 55 ***** |
+
+
+mb|1Sp2N|an|Jacoby 2NT|
+nt|^*BQ^*N: Jacoby 2NT with 3 trumps?
+^*Bbobh2^*N: Jacoby 2NT does not need 4 cards to bid it, is silly. The point is, if you have a flat hand, all the trumps you need to guarantee a playable fit is 3 and you dont expect to be doing any ruffing. A lot of people are promoting the idea that you needed 4 trump support to bid Jacoby 2NT. But they are not thinking straight. They are sheep, just following what "everybody" else says.|
+pg| ***** 56 ***** |
+
+
+mb|p3H|an|Short shuit 1-@h|
+nt|Short suit at the 3 level, good long suit at the 4 level are the responses.|
+pg| ***** 57 ***** |
+
+
+mb|p|
+nt|South, do you still have an opening hand knowing that North has a singleton heart? 
+Then bid 3@s, gives North a chance to bid out a big hand.|
+pg| ***** 58 ***** |
+
+
+mb|3S|
+mb|p|
+sk|n|nt|North, you can use the 30 point deck from your side...Grin. 
+You know pard has still an opener, with a trashout due to your stiff heart, she would have bid 4@s. So now you see what you can do, add your points to 13.|
+pg| ***** 59 ***** |
+
+
+lb|*mWhat many do you get?^25~26~27~28~29~30^4|sk||
+nt|Right... Translating to missing a Q at the most, plus the heart trick. If you are missing a Q and no more, you could make a trial q bid and see if South likes her hand at all.|
+pg| ***** 61 ***** |
+
+
+mb|4Dp|
+sk|s|lb|*yNow, South, do you like your hand at all?^^y|sk||
+nt|Yes, because you have no waste, right? Then you take a little push, and pard just bid slam.|
+pg| ***** 63 ***** |
+
+
+mb|5Cp6Sppp|
+nt|now everybody listen closely: The 30 point deck told both of them that they were real close they used "trial q bids" to see if they were doing ok or were pushing, both were doing ok and they knew to bid the slam. This is a great slam, would win a ton of points all a matter of fit, you all see?|
+pg| ***** 64 ***** |
+
+
+%%card play
+pc|HA|mc|12|
+pg| ***** 65 ***** |
+
+
+%% ------------------------------------------------------------------------
+
+%% ------------------------------------------------------------------------
+%% ------ FINAL NOTES -----
+qx|End, Final notes|
+nt||bt||cs|2|fp|2|ht|b|at|^-{  Final notes  }
+^-|
+
+fp||ht|e|at|@4^b@2^*BTO RECAP:^*N
+The 30 point deck will help you find out if your cards are "working". if they are, you will know. My advice is, anytime, every time, your pard shows a short suit, use the 30 point deck.
+
+When pard has a singleton or void, you neednt concern yourself with the high cards in all suits, just the other three suits, there are 10 points in each suit, so you worry about only 30 points. thus the name, the 30 point deck. 
+
+1) You figure out how many points you have outside the short suit, and subtract that from 30, you get some number.
+2) For every missing 4 points, you are going to lose a trick. So you total up losers, and dont for get to add one for the one trick in the short suit.
+3) If you are missing only 3 tricks and have a major fit, bid a game.
+
+That is the idea of the 30 point deck. It applies to slam bidding, too, as you have seen,  you need to be very close to that 30 points, within one or so...or within 4 if you have the A of the short suit.|
+pg| ***** 66 ***** |
+
+
+fp||ht|e|at|@4^b@2^*Bbobh2:^*N I am done... I will answer questions on this or other subjects now.
+
+^*BQ^*N: Can we learn from you pros and cons of SSGT, LSGT and/or "Help suit game try", please?
+^*Bbobh2^*N: Sure, 
+SSGT (Short Suit Game Tries) is dead accurate, due to the 30 point deck, but doesnt come up often.
+LSGT (Long Suit Game Tries) are less accurate, but not a lot and you get to use them more.
+If you join my "Boot Camp", I can teach you how to use all of these, and if you want to kibitz Boot Camp you are welcome to do so all the time.
+HSGT (Help Suit Games Tries) are ticklish.
+
+^*BQ^*N: SSGT always a singleton or can it be doubleton?
+^*Bbobh2^*N: SSGT is singleton or void, period.
+
+^*BQ^*N: A void would make the hand jeven better wouldn't it?
+^*Bbobh2^*N: Void are funny... they can be very good or very bad.
+|
+pg| ***** 67 ***** |
+
+
+fp||ht|e|at|@4^b@2
+^*BQ^*N: how to join "BOOT CAMP"?
+^*Bbobh2^*N: If you are interested in boot camp, send me an email, address is bob@@spectrumpest.com
+
+^*BBILmanager^*N: @H@H Thank you BOB for sharing this concept with us today  and thx to Jaydf for handling the table /hands  - our best wishes to you both for 2008.
+
+^*Bbobh2^*N: Thank Maureen, Merry Christmas all.
+
+|
+pg| ***** 68 ***** |
+
+
+%% ------------------------------------------------------------------------

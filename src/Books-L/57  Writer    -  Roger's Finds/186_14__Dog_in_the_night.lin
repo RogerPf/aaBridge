@@ -1,0 +1,347 @@
+%%
+%%
+
+ss|chapter,14.                                Dog  in  the  Night   |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2017-08-08          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Roger's  Finds                   2020  and  Past  Years |
+%%
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       Maroon
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    Around the normal Grey
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title     
+fh|b50|                    Font   b  b-bigTitle
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c70|                    Font   c  c-chapTitle  size in banner 2
+%
+cr|a230|cg|a040|cb|a130|   text   a  a-action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+cr|m135|cg|m045|cb|m045|   fill   m  m-mastColor       on Title Pages
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    on Title Pages
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|y|n#|b|lg||at|^b@2@1|at|
+^*bClick^*n          ^*bFlow >^*n         or use your    ^*bMouse Wheel^*n|
+ht|z|at|@0
+^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|j|
+Lg|f|
+fp|4|at|^c@2|
+
+at|^b{ This is the hardest hand I have ever tried to write-up, so if you just decide to 'come along of the ride' I will understand }
+|Lg|b|at|
+To paraphrase Sherlock Holmes
+  
+^d"Let me draw your attention to curious indecent of the,   Dog that didn't bark in the Night."
+
+Now 
+
+^dLet me draw your attention to curious indecent of the,   @h lead that was NOT made.
+|lg|h|at|
+I watched this hand being played.  EW were a pick up partnership and gave no extra info on their bids (South did alert).  I have added North's range, 15-17 (as an alert) to the 1NT Opening bid.
+|
+qx|# 14|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+bv|a,h|
+rh||ah|Find 14|
+%% 3sKT983h754dAK93c5,sQ7654hd87654cJ43,sAJhAJT9dQT2cK872,s2hKQ8632dJcAQT96
+md|3sKT983h754dAK93c5,c3,sAJhAJT9dQT2cK872,dJcA|
+sv|e|sk|s|
+nt|^z@3^b@2^^|n^|5|
+lg||
+at|^*bFind 14^*n     The hand|
+pg| ***** 1 ***** |
+
+
+at|,     the bidding|
+mb|1N|an|15-17|
+pg| ***** 2 ***** |
+
+
+mb|2H|
+pg| ***** 3 ***** |
+
+
+mb|3N|an|Game going values but    NO stop in @h's|
+pg| ***** 4 ***** |
+
+
+mb|p|
+pg| ***** 5 ***** |
+
+
+mb|p|
+pg| ***** 6 ***** |
+
+
+mb|4C|
+pg| ***** 7 ***** |
+
+
+mb|4S|
+pg| ***** 8 ***** |
+
+
+187 
+mb|p|mb|p|mb|p|
+pg| ***** 9 ***** |
+
+
+aa|y|
+pc|c3|
+at|,     the lead|
+pg| ***** 10 ***** |
+
+
+at|,    the first two tricks.|
+lg|e|at|
+After much thought  @-  You decide that there  IS  a chance that West has under-led the Ace of @c's, (@c's is his partners 2nd bid suit),  perhaps he knows his Kantar - 'Modern Bridge Defense'.|
+pg| ***** 11 ***** |
+
+
+pc|cK|pc|CA|pc|C5|
+at|^^So you try the  @cK|
+pg| ***** 12 ***** |
+
+
+pc|DJ|
+at|^^and back comes the  J@d.|
+pg| ***** 13 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Thnk,wide|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|Do your thinking  NOW|
+pg| ***** 14 ***** |
+
+
+at|                          (Later you will get a chance to play out the hand.)|
+n#|3|at|
+Taking  South  as the master hand we have  6  losers    1@s   2@h   1@d   1@c    we need to reduce this to  3  or fewer.
+BUT wait what is all that bidding by East?  And a @c not a @h lead by West and then J@d return?  Into the teeth of the visible @dAQ in dummy.   Is this all as crazy as it at first appears? 
+|n#|5|at|^i By the way,  you have to find 10 tricks. . .|
+pg| ***** 15 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Try,wide|
+bv|f,v|
+aa|n|
+md|0sKT983h754dAK93c5,sQ7654hd87654cJ43,sAJhAJT9dQT2cK872,s2hKQ8632dJcAQT96|
+nt|^z@3^b@2^^|n^|5|
+at|Pick your line|
+n#|7|
+at|^^^^|cp|red|at|^*bYou have a  CHOICE^*n|cp||at|   you can click the  { ^*b 1st ^*n }  button    |cp|red|at|^*bOR^*n|cp||at|   you can use ^*b Flow ^*n to see the analysis.|
+n#|7|
+pf|first-button|
+pg| ***** 16 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Asys,wide|
+bv|f,h|
+eb|y___|
+nt|^b@2^^|n^|5|
+lg|f|
+at|^*bAnalysis^*n      What is East's distribution?  Why has West not lead a @h, East's first suit?  ...because he has not got one?!  So that puts East as ?6?5 shape.  A 6-0 trump split is :( so assume the spades are 5-1 putting East with  1615  shape. So he has lead his singleton @d.|
+pg| ***** 17 ***** |
+
+
+at|  So we have West as 5053 (5052 remaining).  This means that West has to follow along to (can't ruff) your top 4 @d tricks.   If you can make those 4@D's, @hA and 5@s's you have ten tricks, but how ?|
+pg| ***** 18 ***** |
+
+
+at|^^First you have to get rid of East's supposed singleton @s (pray, it is not the Queen).      So win this lead in hand and take the @s finesse.|
+pg| ***** 19 ***** |
+
+
+pc|DA|pc|D4|pc|D2|
+pg| ***** 20 ***** |
+
+
+pc|S3|pc|S4|pc|SJ|pc|S2|
+pg| ***** 21 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bAnalysis^*n      It worked.    Any expert South is now playing this double dummy (in her mind) so we will join her.  |
+pg| ***** 22 ***** |
+
+
+sk||
+tt|Y|
+pg| ***** 23 ***** |
+
+
+at|^^We know that West has 4@d's left so we can run our 3@d tricks. We know West has 2@c's so we can ruff 2@c's (to set up a trump coup it is common to shorten your trumps).  We know that we can lead a @h towards dummy and if West ducks we will make the Ace.  |n#|5|at|^^Let's begin by clearing the @sA (as it sadly cannot ruff anything) then ruff a @c and make West think by leading a @h.|
+pg| ***** 24 ***** |
+
+
+tt||
+pc|sA|pc|h3|pc|s8|pc|s5|
+pg| ***** 25 ***** |
+
+
+pc|c8|pc|c6|pc|s9|pc|c4|
+pg| ***** 26 ***** |
+
+
+---------------------------------------------------------------------------
+qx|deci|
+nt|^z  @3^b@2^^|n^|5|
+lg|f|
+at|^*bAnalysis^*n      Now West has a big decision to make.   |
+pc|h4|
+pg| ***** 27 ***** |
+
+
+at| His sneakiest play is to throw his last @c, (to over-ruff later).  In response you make the @hA, play the 3@d winners and exit with a @h.|
+pg| ***** 28 ***** |
+
+
+pc|cJ|pc|hA|pc|h2|
+pg| ***** 29 ***** |
+
+
+pc|dQ|pc|c9|pc|d3|pc|d5|
+pg| ***** 30 ***** |
+
+
+pc|dT|pc|cT|pc|dK|pc|d6|
+pg| ***** 31 ***** |
+
+
+pc|d9|pc|d7|pc|h9|pc|h6|
+pg| ***** 32 ***** |
+
+
+mx|x|
+pc|h5|
+pg| ***** 33 ***** |
+
+
+qx|1st|
+eb|y___|
+bv|f,v|
+at|^^As you can see West's trump length now works against the him.  He will be forced to ruff at trick 11 and then lead a spade from his @sQ7 to your @sK10.  |n#|9|at|The  { ^*b 1st ^*n }  button is now available for you to examine that ending.|
+pg| ***** 34 ***** |
+
+
+bv|f,h|
+n#|5|at|^^Next we will go back to the moment when West had that big decision.|
+eb|y___|
+pg| ***** 35 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z  @3^b@2^^|n^|5|
+lg|f|
+at|^*bAnalysis^*n      Back to moment when West had that big decision.  |
+up|16|
+mx|x|
+eb||
+pg| ***** 36 ***** |
+
+
+at|If instead of discarding, West ruffs.  You duck in dummy, so in effect West will have ruffed one of your @h losers.  Say West returns at @d.  Win in dummy, ruff a @c and repeat the treatment of leading a @h.|
+eb|y___|
+pg| ***** 37 ***** |
+
+
+pc|s6|pc|h9|pc|h2|
+pg| ***** 38 ***** |
+
+
+pc|d5|pc|dQ|pc|h6|pc|d3|
+pg| ***** 39 ***** |
+
+
+pc|c2|pc|c9|pc|sT|pc|cJ|
+pg| ***** 40 ***** |
+
+
+pc|h5|
+pg| ***** 41 ***** |
+
+
+qx|1st 2,wide|
+bv|f,v|
+at|  West is back in the same predicament.  ^^^d|n#|9|at|The  { ^*b 1st ^*n }  button is now available for you to check that he is always held to just one more trick.|
+eb|y___|
+pg| ***** 42 ***** |
+
+
+---------------------------------------------------------------------------
+qx|DDS,wide|
+nt|^z@3^b@2^^|
+at|^*bDDS^*n    ^eYou are now free to explore the deal.
+|n^|7|lg|k|at|^^^c@2If you still need help then, when in the deal, click the ^*b DDS  { is Off/On ^*n }  button top right.
+|fp|s|at|A number (of tricks) in a GREEN oval shows a good card to play for THAT side.|fp||
+
+bv|a,v|
+eb||
+pf|all-res-lifted|
+pg| ***** 43 ***** |
+
+

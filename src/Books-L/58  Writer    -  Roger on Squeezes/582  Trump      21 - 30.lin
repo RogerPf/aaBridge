@@ -1,0 +1,200 @@
+
+%% 2019-09-12  Patterns  Squeeze
+
+%% All hands are copyright  Richard Pavlicek
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pd|hint,^b   There is a `cp`green`at`^*b Hint ^*n`cp``AT` on the next page but if you want to  PLAY  the hand NOW, the  { ^*b 1st ^*n }  button is available.|
+%%
+pd|choose,`cp`red`at`^b    ^*bPlease   CHOOSE^*n`cp``at`   you can use  {^*b Flow >^*n }  to see the answer  `cp`red`at`^*bOR^*n`cp``at`  you can click  { ^*b 1st ^*n }  to PLAY the hand.|
+%%
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+<<--INSERT-START-->>=07j__FP_Patterns.ins
+%%
+fh|b48| %%  'banner' font
+fh|t40| %%  'target' font
+fh|s28| %%  'small'  font
+fh|p45| %%  'pink dot' size
+
+cr|a230|cg|a040|cb|a130|          a  action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       pink dot button
+
+bv|e,h| %%   Enter the deal button hidden
+bv|f,v| %%   1st visible 
+bv|d,v| %%   DDS visible
+
+ha|y|   %%   hide auctions
+
+ss|head,     ah`Part  18.  Trump Squeeze`|
+
+ss|banner,   ht`e`fp`b-big`at`^*b^j^*n     Trump Squeeze^*n`fp``|
+ss|link,     ht`z`at`^jvisit  Richard Pavlicek's  Trump Squeeze  page    ^*h http://www.rpbridge.net/9q01.htm, rpbridge.net  9q01^*n`|
+ss|means,    ht`e`fp`small`at`^x ^*h http://www.rpbridge.net/9gc8.htm, meaning^*n`fp``|
+ss|new,      nt`^b@2^^`vv`means`vv`link`vv`banner`ht`e`vv`head`|
+ss|contract, mb`4sppp`|
+ss|p1,       vv`contract`wt`s`sk`s`fp`t`ht`e`at`^r    ^*b`|
+ss|p2,       fp`t`ht`e`at`^*n^u`|
+ss|p3,       fp``ht`q`at`^d`|
+%%
+<<--INSERT-END**-->>=07j__FP_Patterns.ins
+
+
+qx|-|
+st||
+nt|^b@2^^|
+rh||ah|--- -|vv|head|
+vv|banner|
+ht|k|
+lg|e|
+at|A trump squeeze (as used here) is a generic description for any squeeze in which the trump suit plays a significant role. In fact almost every notrump-feasible squeeze has a counterpart with ruffing involved. Note that techniques described here win all the remaining tricks, else they would be a trump strip squeeze, covered in the final category
+|n#|7|at|^k See Richard Pavlicek's  ^*h http://www.rpbridge.net/9gc8.htm, About the Techniques^*n  web page for more info.|
+xx| ***** 0 ***** |
+
+
+qx|21|
+rh||ah|Pattern 21|
+vv|new|at|^*b 21.  Bare backwash ^*n|
+md|1 K - - A4,  - - - 765, A K K, Q A A|
+bs|7,3|
+vv|p1|at|win 3|
+vv|p2|at||
+vv|p3|at|Same play is necessary if South has @cAK.|
+pg| ***** 0 ***** |
+
+
+qx|22|
+rh||ah|Pattern 22|
+vv|new|at|^*b 22.  Backwash trump coup ^*n|
+md|1  KJ - - A4, - 3 - 765, A K2 K, QT A A|
+bs|5,3|
+vv|p1|at|win 4|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 1 ***** |
+
+
+qx|23|
+rh||ah|Pattern 23|
+vv|new|at|^*b 23.  Trump coup or ... ^*n|
+md|1  - A52 AT, KJ 876, AQ2 Q4, - KJ KQJ|
+%
+bh|Play, W,  hL, res, p2,  T1,  always|
+%
+bs|5,3|
+vv|p1|at|win 5|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 2 ***** |
+
+
+qx|24|
+rh||ah|Pattern 24|
+vv|new|at|^*b 24.  Seesaw ruffout ^*n|
+md|1  K2 Q4, - AK AK, A3 - Q4, Q - 2 32|
+bs|6,3|
+vv|p1|at|win 4|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 3 ***** |
+
+
+qx|25|
+rh||ah|Pattern 25|
+vv|new|at|^*b 25.  Extended threat seesaw ruffout ^*n|
+md|1  K2 KQ9, - AJT AK -, A3 - QJ4, Q - 32 32|
+%
+bh|Play, W,  hL, res, p2,  T1,  always|
+%
+bs|5,3|
+vv|p1|at|win 5|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 4 ***** |
+
+
+qx|26|
+rh||ah|Pattern 26|
+vv|new|at|^*b 26.  Trump extended seesaw ruffout ^*n|
+md|1  K32 J54, - AKQ AKQ, A54 - J54, Q - 32 432|
+bs|4,3|
+vv|p1|at|win 6|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 5 ***** |
+
+
+qx|27|
+rh||ah|Pattern 27|
+vv|new|at|^*b 27.  Guard seesaw ruffout ^*n|
+md|1  K2 KQT - K, - AJ9 QJ A, A3 - AT92, Q - K43 32|
+%
+bh|Play, W,  hL, res, p2,  T1,  always|
+%
+bs|4,3|
+vv|p1|at|win 6|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 6 ***** |
+
+
+qx|-|
+st||
+nt|^b@2^^|vv|banner|
+ht|n|at|The following group of patterns are, to quote the creator Richard Pavlicek,
+^^^d" ... [those] named in ^*i italics ^*n are judged to be too remote for practical benefit."|
+rh||ah|--- -|vv|head|
+ht|a|n#|1|at|^q( @s are trumps, your target is |cp|red|at|^*b 10 ^*n |cp||at|tricks )|
+pg| ***** 7 ***** |
+
+
+qx|28|
+rh||ah|Pattern 28|
+vv|new|at|^*b 28. ^*I Ruffout triple squeeze ^*n|
+md|1  A Q4 A K, - AK KQ A, QJT - J4, K - 9832	|
+bs|5,3|
+vv|p1|at|win 5|
+vv|p2|at|auto bi|
+vv|p3|at||
+pg| ***** 8 ***** |
+
+
+qx|29|
+rh||ah|Pattern 29|
+vv|new|at|^*b 29. ^*I Trump triple squeeze ^*n|
+md|1  A K K, - A A A , 32 - - K, K 2 2|
+bs|4,3|
+vv|p1|at|win 6|
+vv|p2|at||
+vv|p3|at|Pick an ace, any ace!|
+pg| ***** 9 ***** |
+
+
+qx|30|
+rh||ah|Pattern 30|
+vv|new|at|^*b 30. ^*I Crossruff or trump triple ^*n|
+md|1  QJT - - K, K8 - - 32, A9 K K, 2 A A A|
+bs|6,3|
+vv|p1|at|win 4|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 10 ***** |
+
+
+qx|+|
+ss|means, |
+vv|new|at|^*b  ^*n|
+md|1|
+rh||ah|--- -|vv|head|
+bs|0,0|
+vv|p1|at||
+vv|p2|at||
+vv|p3|at|^cAdditional squeezes of this type can be found at|
+pg| ***** 11 ***** |
+
+

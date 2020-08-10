@@ -1,0 +1,323 @@
+
+%% 2019-09-12  Patterns  Squeeze
+
+%% All hands are copyright  Richard Pavlicek
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pd|hint,^b   There is a `cp`green`at`^*b Hint ^*n`cp``AT` on the next page but if you want to  PLAY  the hand NOW, the  { ^*b 1st ^*n }  button is available.|
+%%
+pd|choose,`cp`red`at`^b    ^*bPlease   CHOOSE^*n`cp``at`   you can use  {^*b Flow >^*n }  to see the answer  `cp`red`at`^*bOR^*n`cp``at`  you can click  { ^*b 1st ^*n }  to PLAY the hand.|
+%%
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+<<--INSERT-START-->>=07k__FP_Patterns.ins
+%%
+fh|b48| %%  'banner' font
+fh|t40| %%  'target' font
+fh|s28| %%  'small'  font
+fh|p45| %%  'pink dot' size
+
+cr|a230|cg|a040|cb|a130|          a  action
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       pink dot button
+
+bv|e,h| %%   Enter the deal button hidden
+bv|f,v| %%   1st visible 
+bv|d,v| %%   DDS visible
+
+ha|y|   %%   hide auctions
+
+ss|head,     ah`Part  19.  Trump Strip Squeeze`|
+
+ss|banner,   ht`e`fp`b-big`at`^*b^i^*n      Trump Strip Squeeze^*n`fp``|
+ss|link,     ht`z`at`^jvisit  Richard Pavlicek's  Trump Strip Squeeze  page    ^*h http://www.rpbridge.net/9q53.htm, rpbridge.net  9q53^*n`|
+ss|means,    ht`e`fp`small`at`^x ^*h http://www.rpbridge.net/9gc8.htm, meaning^*n`fp``|
+ss|new,      nt`^b@2^^`vv`means`vv`link`vv`banner`ht`e`vv`head`|
+ss|contract, mb`4sppp`|
+ss|p1,       vv`contract`wt`s`sk`s`fp`t`ht`e`at`^r    ^*b`|
+ss|p2,       fp`t`ht`e`at`^*n^u`|
+ss|p3,       fp``ht`q`at`^d`|
+%%
+<<--INSERT-END**-->>=07k__FP_Patterns.ins
+
+
+qx|-|
+st||
+nt|^b@2^^|
+rh||ah|--- -|vv|head|
+vv|banner|
+ht|k|
+lg|e|
+at|A trump strip squeeze (as used here) is a generic description for any strip squeeze in which the trump suit plays a significant role. Most notrump-feasible strip squeezes have a counterpart with ruffing involved. Note that each technique described here loses at least one trick, else it would be a trump squeeze, covered in the final category
+|n#|7|at|^k See Richard Pavlicek's  ^*h http://www.rpbridge.net/9gc8.htm, About the Techniques^*n  web page for more info.|
+pg| ***** 0 ***** |
+
+
+nt|^b@2^^|vv|banner|
+ht|n|at|In the far right-hand column two lines below |fp|t|cp|gr|at|^*b Power Kib ^*n|cp||fp||at| is the   { @m }|cp|red|at| ^*bShow all hands^*n|cp||at| ^*b checkbox^*n.  
+^^^i Set this to ^*b CHECKED^*n,  the first few times you look at these patterns. |
+rh||ah|--- -|vv|head|
+ht|a|n#|1|at|^q       ( @s are trumps, your target is |cp|red|at|^*b 10 ^*n |cp||at|tricks )|
+pg| ***** 1 ***** |
+
+
+qx|1|
+vv|new|at|^*b 1.  Ruffed squeeze card ^*n|
+md|1  - 32 - A, - KQ A, - AJ K, A 54|
+bs|8,2|
+vv|p1|at|win 2|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 2 ***** |
+
+
+qx|2|
+vv|new|at|^*b 2.  Ruffout ^*n|
+md|1  - Q4 Q4 A, - 32 32 2, 2 - K95 3, - AK AJT|
+bs|6,2|
+vv|p1|at|win 4|
+vv|p2|at|bi|
+vv|p3|at||
+pg| ***** 3 ***** |
+
+
+qx|3|
+vv|new|at|^*b 3.  Discard-or-ruff  ^*n|
+md|1  - - AQ2 2, - AK K7, 2 432, - -  654 A|
+%
+bh|Play, W,  dL, res, p2,  T1,  always|
+%
+bs|7,2|
+vv|p1|at|win 3|
+vv|p2|at|auto?|
+vv|p3|at|If West pitches a @h, ruff and lead a @h.|
+pg| ***** 4 ***** |
+
+
+qx|4|
+vv|new|at|^*b 4.  Loser-on-loser ruffout ^*n|
+md|1  A Q5 - 4, - AK AK, K 4 Q4, - - JT9 A|
+bs|7,2|
+vv|p1|at|win 3|
+vv|p2|at||
+vv|p3|at|If West pitches a @h, ruff and lead @h4.|
+pg| ***** 5 ***** |
+
+
+qx|5|
+vv|new|at|^*b 5.  Forced-duck fork ^*n|
+md|1  AK 54 K5, - A6 AQ 76, - KQJ 4 54, - 32 - AK32|
+%
+bh|Play, W,  cL, res, p2,  T1,  always|
+bh|Play, W,  hL, res, p2,  T2,  always|
+%
+bs|6,1|
+vv|p1|at|win 4|
+vv|p2|at|auto bi|
+vv|p3|at||
+pg| ***** 6 ***** |
+
+
+qx|6|
+vv|new|at|^*b 6.  Elopement fork ^*n|
+md|1  2 KQ5 - 4, A AJ9 2, 3 T4 54, - 2 AK AK|
+%
+bh|Play, W,  dL, res, p2,  T1,  always|
+%
+bs|7,1|
+vv|p1|at|win 3|
+vv|p2|at|bi|
+vv|p3|at|'bi' case (@d ruff first) trivial.|
+pg| ***** 7 ***** |
+
+
+qx|7|
+vv|new|at|^*b 7.  Ruff or double ^*n|
+md|1  KQJ - 4 K, T A2 JT -, 32 K A9, A9 - KQ A|
+%
+bh|Play, E,   s, res, p1,  T2,  always|
+bh|Play, W,  hL, res, p3,  T2,  always|
+%
+bs|6,2|
+vv|p1|at|win 4|
+vv|p2|at|bi|
+vv|p3|at|If East does not return a trump (@s), ruff the @c.|
+pg| ***** 8 ***** |
+
+
+qx|8|
+vv|new|at|^*b 8.  Threat transfer fork ^*n|
+md|1  - KJ2 AK4, 2 AT9 - 54, AK - J65 3, - Q87 QT9|
+bs|5,2|
+vv|p1|at|win 5|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 9 ***** |
+
+
+qx|9|
+vv|new|at|^*b 9.  Crossruff ^*n|
+md|1  3 K 4 K, - - -  AQJT, 2 4 QJ, A A AK|
+bs|8,1|
+vv|p1|at|win 2|
+vv|p2|at|auto|
+vv|p3|at|Pick an ace, any ace.|
+pg| ***** 10 ***** |
+
+
+qx|10|
+vv|new|at|^*b 10.  Crossruff fork ^*n|
+md|1  K - K54 K4, Q J54 AQ, A2 AQT2, - K98 JT A|
+%
+bh|Play, W,  dL, res, p2,  T1,  always|
+bh|Play, E,  dH, res, p1,  T2,  always|
+bh|Play, W,  dA, res, p3,  T2,  always|
+%
+bs|5,2|
+vv|p1|at|win 5|
+vv|p2|at|auto?|
+vv|p3|at||
+pg| ***** 11 ***** |
+
+
+qx|11|
+vv|new|at|^*b 11.  Non-material ruff-sluff ^*n|
+md|1  2 QJ3 4 Q, - K2 AQJT, A A654 K, - T987 - AK|
+%
+bh|Play, W,  hK, res, p2,  T3,  always|
+%
+bs|5,2|
+vv|p1|at|win 5|
+vv|p2|at|bi|
+vv|p3|at||
+pg| ***** 12 ***** |
+
+
+qx|12|
+vv|new|at|^*b 12.  Ruff-sluff ^*n|
+md|1  3 QJ65 4 J, - K2 AQJT9, AK A43 K 2, - T987 - AKQ|
+%
+bh|Play, W,  hK, res, p2,  T3,  always|
+%
+bs|4,2|
+vv|p1|at|win 4|
+vv|p2|at|bi|
+vv|p3|at|If West exits in @h, the same squeeze develops.|
+pg| ***** 13 ***** |
+
+
+qx|13|
+vv|new|at|^*b 13.  Entry ruffout ^*n|
+md|1  AK - K5 Q54, - A8762 32, - KQT93 AT, - J54 QJ AK|
+%
+bh|Play, W,  hL, res, p2,  T1,  always|
+bh|Play, E,  hH, res, p2,  T3,  always|
+%
+bs|4,2|
+vv|p1|at|win 6|
+vv|p2|at|auto bi?|
+vv|p3|at||
+pg| ***** 14 ***** |
+
+
+qx|14|
+vv|new|at|^*b 14.  Delayed elopement fork ^*n|
+md|1  32 K4 - 4, A AQ AQ, 4 - KJT9, - JT 3 AK|
+%
+bh|Play, W,  hL, res, p2,  T1,  always|
+%
+bs|7,1|
+vv|p1|at|win 3|
+vv|p2|at|bi|
+vv|p3|at|'bi' case (diamond-heart crossruff) is trivial.|
+pg| ***** 15 ***** |
+
+
+qx|15|
+vv|new|at|^*b 15.  Lunar threat transfer fork ^*n|
+md|1  -J4 KJ2 2, - 32 AT98 -, AK AK5 - K, - QT9 Q7 A|
+%
+bh|Play, W,  dQ, res, p2,  T2,  always|
+%
+bs|5,2|
+vv|p1|at|win 5|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 16 ***** |
+
+
+qx|16|
+vv|new|at|^*b 16.  Ruff step-winkle ^*n|
+md|1  AK Q32 - 4, - KJ8 4 QJ, - A4 Q K65, - T9 AK AT|
+bs|6,1|
+vv|p1|at|win 4|
+vv|p2|at|auto bi?|
+vv|p3|at||
+pg| ***** 17 ***** |
+
+
+qx|17|
+vv|new|at|^*b 17.  Crossruff step-winkle ^*n|
+md|1  2 - KJ65 4, - A9 Q873, 3 JT2 A4, - KQ8 T9 A|
+bs|5,2|
+vv|p1|at|win 5|
+vv|p2|at||
+vv|p3|at|To avoid throw-in, E-W must let @h set up.|
+pg| ***** 18 ***** |
+
+
+qx|18|
+vv|new|at|^*b 18.  Vice forced-duck establishment ^*n|
+md|1  AK Q32 - Q, - KJ9 A JT, - A5 K K98, - T8 Q A76|
+%
+bh|Play, W,  hL, res, p2,  T1,  always|
+bh|Play, E,  cL, res, p4,  T2,  always|
+%
+bs|5,2|
+vv|p1|at|win 5|
+vv|p2|at|auto|
+vv|p3|at||
+pg| ***** 19 ***** |
+
+
+qx|19|
+vv|new|at|^*b 19.  Elopement establishment or ... ^*n|
+md|1  43 A965 - 4, KQ QJT KQ, A2 K4 J54 , J 32 A AKQ|
+%
+bh|Play, W,  sQ, res, p2,  T1,  always|
+bh|Play, W,  dQ, res, p1,  T2,  always|
+bh|Play, E,  hL, res, p2,  T4,  always|
+%
+bs|4,2|
+vv|p1|at|win 6|
+vv|p2|at||
+vv|p3|at||
+pg| ***** 20 ***** |
+
+
+qx|20|
+vv|new|at|^*b 20.  Elopement or double ^*n|
+md|1  T A9 - AJ, AJ JT A -, KQ 42 K, 2 KQ - KQ|
+bs|6,2|
+vv|p1|at|win 4|
+vv|p2|at||
+vv|p3|at|If West ruffs with the @sA, West must return @sJ to stop ruff.|
+pg| ***** 21 ***** |
+
+
+qx|+|
+ss|means, |
+vv|new|at|^*b  ^*n|
+md|1|
+rh||ah|--- -|vv|head|
+bs|0,0|
+vv|p1|at||
+vv|p2|at||
+vv|p3|at|^cAdditional squeezes of this type can be found at|
+pg| ***** 22 ***** |
+
+

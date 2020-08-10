@@ -1,0 +1,227 @@
+%%
+%% Size Position GRID
+%% Last edited   2018 OCT 13
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<<--INSERT-START-->>=005__Common_Header.ins
+%%
+fh|v24|        v-24     very small
+fh|s28|        s-28     small
+fh|j32|        j-32
+fh|k35|        k-35
+fh|e37|        e-37
+fh|t40|        t-40     title
+fh|n42|        n-42
+fh|p45|        p-45
+fh|b50|        b-50     big
+fh|g60|        g-60     graphSuit 
+fh|m64|        m-64     mastHead
+fh|c70|        c-70     chapTitle
+%
+fh|x33|ff|xCourier|          FONT   x-33-Courier
+%
+cr|a230|cg|a040|cb|a130|     a  action
+cr|b100|cg|b100|cb|b255|     b  light Blue
+cr|f200|cg|f255|cb|f255|     f  fake-button
+cr|h000|cg|h095|cb|h169|     h  h-highlight
+cr|p255|cg|p000|cb|p255|     p  pink    fake pink button
+cr|u160|cg|u040|cb|u200|     u  pUrple
+cr|y170|cg|y190|cb|y255|     y  youtube border
+%
+bt||
+fp|b-50|at|^^^^^a   @s @h @d @c  ^v     @c @d @h @s|fp||
+at|^b@2^z@3^^|
+ht|f|        
+%%
+<<--INSERT-END**-->>=005__Common_Header.ins
+
+
+qx|Scree|
+mn|   Size  Position  GRID |
+lg|b|
+
+n^|7|at|In the |cp|gr|at|^*b Button Area^*n,|cp||at| which is just above the chapter column, are the three letter button icons  { A } { B } { C } .
+You can |cp|a|at|^*bhover^*n|cp||at| over any of them to see its Tooltip,       (|cp|a|at|^*bTry It^*n|cp||at|). 
+|n^|5|at|
+Each of the letter buttons lets you save a different size and layout (position of the two divider bars) in the ^*b aaBridge ^*n window.
+|n^|5|at|
+In addition, you can ^*b optionally ^*n save the POSITION of the ^*b aaBridge ^*n window.  
+
+|n^|1|fp|e-37|at|How to Use|fp||at|^c@2
+|n#|3|at|To  SAVE  the current aaBridge window |fp|e-37|at|^*b size ^*n|fp||at| and |fp|e-37|at|^*b layout ^*n|fp||at| 
+|n#|1|cp|a|at|^*bhold down ^*n|cp||at| the  |fp|e-37|at|^*b Ctrl ^*n|fp||at|  key and keep it held down  ^*b WHILE ^*n you click on  { A } , { B }  or  { C } . 
+
+|n^|3|at|To ^*b also ^*n SAVE  the current aaBridge window |fp|e-37|at|^*b position|fp||at|
+|n#|1|cp|a|at|^*b hold down ^*n|cp||at| ^*bboth^*n|at|  the |fp|e-37|at|^*b Alt ^*n|fp||at| and the |fp|e-37|at|^*b Ctrl ^*n|fp||at| key and keep them held down ^*b WHILE ^*n you click the letter button. 
+
+|n^|3|at|A |cp|a|at|^*b simple click ^*n|cp||at| of the chosen button restores whatever you have saved,     (|cp|a|at|^*bTry It^*n|cp||at|).|
+
+
+lg||
+at|^b@2|
+fp|t|at|^^^^^^Width and Lines Not Fitting|fp||
+
+n#|5|at|^^^c@2Because the standard font in different versions of Java can have different widths, this can cause lines that SHOULD fit across the normal aaBridge page not to fit and so spill over onto the following line.
+|n^|5|at|
+This problem can also be caused because fonts do not expand smoothly as you change the size of the aaBridge window.  As fonts increase they jump up in size, sometimes even pushing lines off the bottom of the page.
+
+^b<solution on the next page>|
+pg| ***** 0 ***** |
+
+
+nt||
+bt||
+fp|b-50|at|^^^^^a   @s @h @d @c  ^v     @c @d @h @s|fp||
+at|^b@2^z@3^^|
+ht|f|        
+%%
+<<--INSERT-END**-->>=005__Common_Header.ins
+
+qx|Width|
+
+mn|        Width  and  GRID       |
+
+n^|7|at|The key issue is that fonts you see can sometimes be wider than is wanted.  This causes the lines to over run.
+|n^|5|at| 
+The  ^*b Main Panel Width ^*n  adjustment setting (below the LOWER divider on the right) allows you to make the main panel wider so you can compensate for the extra width of the fonts.
+|n^|5|at| 
+(At the time, the system  MOST  effected is Linux)
+|n^|0| 
+
+at|
+From the  ^*g :Doc Collection, aaBridge Doc Collection^*n  |fp||at|   (  @2If it is NOT on your desktop click the blue link and follow the instructions.   You can return by clicking the  |fp|n|n#|2|at|@L|fp||n^|2|at|  icon, top left. )
+^b@2
+|n^|7|fp|j-32|cp|a|at|^c^*bRead the Document^*n|cp||fp||at|
+|n#|8|cp||fp|k-35|at|^dWidth and GRID.doc|cp||fp||
+
+
+lg|e|
+n#|9|at|^^The document explains how to use the  ^*b Main Panel Width ^*n  adjustment setting ^^|
+
+lg||n#|3|fp|t|at|^^GRID|fp||n#|3|at|
+If you decide to adjust the Main Panel width then this is best done with the GRID showing.  The 'GRID' is the page that comes next in this lin file.  Please refer to the above document for more information.|
+
+
+lg||n#|3|fp|t|at|^^^^Remember|fp||n#|3|at|
+You can change the width  AND  use the  { A } , { B } or { C }  buttons to remember sizes that look good on your system.
+
+|lg||n#|3|fp|t|at|But...|fp||n#|3|at|
+Do not expect that setting  'good values'  will fix ALL layout issues.  Some old lin files in this collection are a "law unto themselves"  and  who is to say that the original author did a good job in the first place ?|
+pg| ***** 1 ***** |
+
+
+%% Visual Grid
+%% Last edited  2015 Nov 03
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+fh|135|ff|1Arial|fb|10|fm|1|       Font def 1
+fh|240|ff|2Arial|fb|20|fm|2| 
+fh|350|ff|3Arial|fb|30|fm|3| 
+fh|460|ff|4Arial|fb|40|fm|4|
+
+fh|570|ff|5Arial|fb|50|fm|5|
+fh|680|ff|6Arial|fb|60|fm|6|
+
+cr|516|cg|5128|cb|516|      5  green 
+cr|60|cg|60|cb|6255|        6  blue
+cr|7255|cb|70|cg|70|        7  red
+
+bt||
+qx|GRID|
+nt||
+at|line 1 ^z!
+line 2 ^z!
+line 3 ^z!
+line 4 ^z!
+line 5 ^z!
+line 6 ^z!
+line 7 ^z!
+line 8 ^z!
+line 9 ^z!
+line 10 ^z!
+line 11 ^z!
+line 12 ^z!
+line 13 ^z!
+line 14 ^z!
+line 15 ^z!
+line 16 ^z!
+line 17 ^z!
+line 18 ^z!
+line 19 ^z!
+line 20 ^z!
+line 21 ^z!
+line 22 ^z!
+line 23 ^z!
+line 24 ^z!
+line 25 ^z!
+line 26 ^z!
+line 27 ^z!
+line 28 ^z!
+line 20 ^z!
+line 30 ^z!
+line 31 ^z!
+line 32 ^z!
+line 33 ^z!
+line 34 ^z!
+|fp|6|ht|b|n#|9|at|^f  ^*bGRID^*n|fp||n^|3|
+at|^k^*bVisual Grid   -   Lines  &  Zones   -   Font Size Demo^*n|
+cp|5|at|
+^c@2^*b|
+ht|a|at|zone a|
+ht|b|at|zone b|
+ht|c|at|zone c|
+ht|d|at|zone d|
+ht|e|at|zone e|
+ht|f|at|zone f|
+ht|g|at|zone g|
+ht|h|at|zone h|
+ht|i|at|zone i|
+ht|j|at|zone j|
+ht|k|at|zone k|
+ht|l|at|zone l|
+ht|m|at|zone m|
+ht|n|at|zone n|
+ht|o|at|zone o|
+ht|p|at|zone p|
+ht|q|at|zone q|
+ht|r|at|zone r|
+ht|s|at|zone s|
+ht|t|at|zone t|
+ht|u|at|zone u|
+ht|v|at|zone v|
+ht|w|at|zone w|
+ht|x|at|zone x|
+ht|y|at|zone y|
+ht|z|at|zone z^*n|
+
+ht|d|cp|6|at|^fUsing zones you can jump anywhere on the screen and there start adding lines of text.
+|
+ht|g|cp|7|at|@0
+^fThe 26 red letters show the 26    @^<letter>    tab positions
+
+^aa ^bb ^cc ^dd ^ee ^ff ^gg ^hh ^ii ^jj ^kk ^ll ^mm ^nn ^oo ^pp ^qq ^rr ^ss ^tt ^uu ^vv ^ww ^xx ^yy ^zz
+|
+cp||ht|k|at|^g@2 
+|fp||cp|7|at|^e  ^*b Fonts  5-9  and the  new  a-z  are NOT forced down in size for backwards compatibility|cp||at|
+
+|fp| |at|Non bold  Arial            size  30   Font 0   the built-in default
+|fp|1|at|Non bold  Arial            size  35   Font 1   FORCED down to size 30 for compatibility 
+|fp|2|at|Non bold  Arial       size  40 
+|fp|3|at|Non bold  Arial     size  50
+|fp|4|at|Non bold  Arial     size  60
+|fp|5|at|Non bold  Arial     size  70
+|fp|6|at|Non bold  Arial     size  80
+
+|ht|u|fp||at|^f@2
+Arial  abcdefghijklmnopqrstuvwxyz   ABCDEFGHIJKLMNOPQRSTUVWXYZ    built-in
+|fp|1|at|Arial  abcdefghijklmnopqrstuvwxyz   ABCDEFGHIJKLMNOPQRSTUVWXYZ    35
+
+|fp| |at|^*bArial  abcdefghijklmnopqrstuvwxyz   ABCDEFGHIJKLMNOPQRSTUVWXYZ    built-in bold
+|fp|1|at|^*bArial  abcdefghijklmnopqrstuvwxyz   ABCDEFGHIJKLMNOPQRSTUVWXYZ    35 bold 
+
+
+|fp||ht|z|cp||at|
+^w^*b end ^*n|
+

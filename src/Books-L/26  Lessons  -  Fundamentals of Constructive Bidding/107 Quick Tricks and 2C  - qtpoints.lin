@@ -1,0 +1,353 @@
+%%July 26-2017 
+%%%%%%%%%%%%%%%%
+fh|155|ff|1Arial|fb|110|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|35|fm|3|                           FOR 3
+fb|49|fm|4|fb|4|fm|4|
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|3255|cg|3255|cb|3255|            White
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|6124|cb|6250|cg|6200|             6=TURQUOISE
+cr|70|cb|7220|cg|7235|              green/blue 7
+cr|8255|cb|80|cg|80|                red 8
+cr|9128|cb|90|cg|950|               Reddish-brown 9
+%%%%===================
+bt||
+ht|h|fp|1|AT|^-
+This presentation explains how 
+Howard Schutzman
+makes use of "Quick Tricks" 
+to fine tune his hand evaluation
+and its application in 2C opening.
+^-|
+PG| ***** 0 ***** |
+
+
+NT||
+qx||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|On close decisions, I use Quick Tricks to decide whether or not my hand is a bit better than Bergen hand evaluation tells me it is. Here is my methodology. There are a max of 8 quick tricks and there are 40 HCP. Therefore, on average, each 5 HCP (40 / 8) should contain 1 quick trick. Hands with above average quick trick count are better than their HCP indicate. |
+PG| ***** 1 ***** |
+
+
+AT|
+
+So,  for example, if I have 12 HCP, on average I should have about 2.5 quick tricks. If my hand contains, for example, 3 quick tricks, then it is probably worth more than 12 HCP and I will stretch on close decisions. On the other hand, if it has only 2 quick tricks, I will be conservative. This is particularly useful on slam decisions, where an abundance of Aces and Kings is particularly important.|
+PG| ***** 2 ***** |
+
+
+AT|
+
+I also use Quick Tricks for the Bergen 4 and 4 rule. When I have a balanced 22-24 HCP points I open 2@C intending to bid 2N over partner's response. However, with distributional 20+ HCP and when a major suit contract is the likely auction I use the "9 trick" rule and/or Bergen's "4 and 4" rule.
+|
+PG| ***** 3 ***** |
+
+
+ht|n|AT|The "9 trick rule" says I can open 2@C if I can count 9 tricks in my hand. For example with the hand shown on the left:|HT|o|cs|1|at|^b{|ih|pSA HAKJT542 C65 DAK6|at|}|ht|o|AT|^j@2I have 9 sure tricks|
+PG| ***** 4 ***** |
+
+
+HC|SAHAKJT54DAK|AT| in my hand no matter what is partner's hand.|
+PG| ***** 5 ***** |
+
+
+LC|SAHAKJT54DAK|AT|
+
+Marty Bergen uses the "4 and 4" rule. The rule says you should open 2@C if you have at least 4 Quick Tricks and no more than 4 losers. Quick Tricks are easy to count. They are basically the number of tricks you expect to take immediately in a suit. A= 1, AK= 2, Kx= �, AQ= 1 � KQ= 1. There can only be a maximum of 2 Quick Tricks in each suit. With the hand on the left I have 5 Quick Tricks.|hc|SAHAKDAK|at|-1 spade, 2 hearts, 2 diamond.|
+PG| ***** 6 ***** |
+
+
+LC|SAHAKDAK|
+HT|v|AT|^B@2The Losers part is a bit more problematical. Bergen does not intend for you to use the "Losing Trick Count" (LTC) popularized by Ron Klinger. He wants you to actually figure out the number of losers based on tricks you would expect to lose if partner shows up with no help at all or an average holding.|
+PG| ***** 7 ***** |
+
+
+AT|
+
+For example this hand I have 3 losers outside of hearts,|HC|D6C65|at| and counting that heart suit as 1 loser is ok.|
+PG| ***** 8 ***** |
+
+
+NT||lC|D6C65|
+%%
+qx||cp|8|AT|
+^B@2^*BHoward: ^*N|cp||at|He also assumes all finesses lose. For example in a holding of:|
+PG| ***** 9 ***** |
+
+
+ht|d|cs|1|AT|^b{|ih|pHAKQ8|at|}|
+pg| ***** 10 ***** |
+
+
+ht|d|AT|^g@2there would be 1 loser, as you are likely to lose the Jack. LTC would call this a 0 loser suit.|
+PG| ***** 11 ***** |
+
+
+ht|g|at|But a holding of|cs|1|AT|^k{|ih|pHAKQ876|at|}|
+pg| ***** 12 ***** |
+
+
+ht|g|va|3|AT|^p@2would have no losers. Since there are 7 cards remaining between the other 3 hands, partner's average holding is 2.33. You are likely to have an 8+ card fit. This means if you get normal breaks, even if partner only  holds 2, you are likely to not lose any tricks.|
+PG| ***** 13 ***** |
+
+
+AT| Further, the following holding on the left:|
+ht|m|at|^b{|ih|pHAKJT|at|}|ht|m|va|3|at|^f@2has one loser.|
+PG| ***** 14 ***** |
+
+
+va|8|AT|  But|HT|n|va|4|at|^j{|ih|pHAKJ6|at|}|ht|o|at|^n@2holding has two losers. Even though partner's average holding is 3-cards (1/3 of the 9 remaining cards), you more often than not will lose 2 tricks.|
+PG| ***** 15 ***** |
+
+
+ht|u|va|2|at|^B@2And finally the|HT|u|at|^f{|ih|pHAKJ65|at|}|HT|v|at|^k@2holding is harder to calculate. Partner's average holding is 2.66. So if partner has 3 cards, if you get a 3-2 break, you have 1 loser. But if partner has 2 cards or fewer you have 2 losers. I would call this a 1.5 loser suit.|
+PG| ***** 16 ***** |
+
+
+ht|y|AT|^k@2^*BMM: ^*NMarty Bergen in Chapter 4 of his Slam Bidding Made Easier (2008), has nicely explained 2@C opening. As Howard mentioned his standard for opening 2 clubs is based on a combination of Quick Tricks and Losers-with no help from the partner. |
+PG| ***** 17 ***** |
+
+
+NT||
+%%
+qx||
+ht|b|cp|8|AT|^B@2^*BMarty Bergen: ^*N|cp||at|Counting your Quick Tricks helps you:|
+PG| ***** 18 ***** |
+
+
+ht|b|cp|8|AT|^B@2^*BMarty Bergen: ^*N|cp||at|Counting your Quick Tricks helps you:|
+HT|d|AT|Appreciate the true value of aces and kings.|
+PG| ***** 19 ***** |
+
+
+ht|b|cp|8|AT|^B@2^*BMarty Bergen: ^*N|cp||at|Counting your Quick Tricks helps you:|
+HT|d|AT|Appreciate the true value of aces and kings.|
+HT|e|AT|Distinguish between "good points" and "schmoints."|
+PG| ***** 20 ***** |
+
+
+ht|b|cp|8|AT|^B@2^*BMarty Bergen: ^*N|cp||at|Counting your Quick Tricks helps you:|
+HT|d|AT|Appreciate the true value of aces and kings.|
+HT|e|AT|Distinguish between "good points" and "schmoints."|
+HT|f|AT|Appreciate that the value of all honor cards is greater when in combination with other honors.|
+PG| ***** 21 ***** |
+
+
+ht|b|cp|8|AT|^B@2^*BMarty Bergen: ^*N|cp||at|Counting your Quick Tricks helps you:|
+HT|d|AT|Appreciate the true value of aces and kings.|
+HT|e|AT|Distinguish between "good points" and "schmoints."|
+HT|f|AT|Appreciate that the value of all honor cards is greater when in combination with other honors.|
+HT|g|AT|Make good bidding decisions, such as:|
+HT|h|AT|^c@21. Deciding whether to open a borderline hand. (Avoid opening a marginal hand in first or second seat with fewer than two quick tricks.)|
+PG| ***** 22 ***** |
+
+
+ht|b|cp|8|AT|^B@2^*BMarty Bergen: ^*N|cp||at|Counting your Quick Tricks helps you:|
+HT|d|AT|Appreciate the true value of aces and kings.|
+HT|e|AT|Distinguish between "good points" and "schmoints."|
+HT|f|AT|Appreciate that the value of all honor cards is greater when in combination with other honors.|
+HT|g|AT|Make good bidding decisions, such as:|
+HT|h|AT|^c@21. Deciding whether to open a borderline hand. (Avoid opening a marginal hand in first or second seat with fewer than two quick tricks.)|
+HT|j|AT|^c@22. Avoiding penalty doubles based only on having "a lot of points."|
+PG| ***** 23 ***** |
+
+
+ht|b|cp|8|AT|^B@2^*BMarty Bergen: ^*N|cp||at|Counting your Quick Tricks helps you:|
+HT|d|AT|Appreciate the true value of aces and kings.|
+HT|e|AT|Distinguish between "good points" and "schmoints."|
+HT|f|AT|Appreciate that the value of all honor cards is greater when in combination with other honors.|
+HT|g|AT|Make good bidding decisions, such as:|
+HT|h|AT|^c@21. Deciding whether to open a borderline hand. (Avoid opening a marginal hand in first or second seat with fewer than two quick tricks.)|
+HT|j|AT|^c@22. Avoiding penalty doubles based only on having "a lot of points."|
+HT|k|AT|^c@23. Knowing when it is correct to open 2@C.|
+PG| ***** 24 ***** |
+
+
+NT||
+%%%
+qx||ht|b|cs|1|cp|4|fp|2|at|^-{    What Do You Need to Open 2C?    }
+^-|
+pg| ***** 25 ***** |
+
+
+fp||cp||
+ht|d|cp|8|AT|
+^B@2^*BMarty Bergen: ^*N|cp||at|If you intend to rebid 2NT, you need a hand worth at least 22 points in notrump.|
+PG| ***** 26 ***** |
+
+
+AT|
+If you intend to rebid 2@H or 2@S, you need a 5+ card major suit, but HCP are NOT the key. To open 2@C and then bid a major, the key number is "four."|
+PG| ***** 27 ***** |
+
+
+ht|h|fp|2|cp|4|at|^-{
+Count your losers; 
+  tricks you expect to lose if partner has no help. The maximum is four.  
+  }|
+PG| ***** 28 ***** |
+
+
+HT|l|at|
+{
+    Count your Quick Tricks. The minimum is four    
+}|
+PG| ***** 29 ***** |
+
+
+ht|p|at|
+{
+    Open 2@C only if you satisfy both "fours."    
+    }^-
+|FP||CP||
+pg| ***** 30 ***** |
+
+
+ht|w|AT|^B@2
+Let us look at a few examples:|
+PG| ***** 31 ***** |
+
+
+NT||
+%%%%%Example  I
+qx||bt||HT|b|CS|6|AT|^-
+{    Bergen 2C Opener    }
+^-|HT|D|AT|^-Example I 
+^-|
+HT|F|cs|1|at|^b{|ih|pSAJ HKQJT762 DAK4 C8|at|}|hf|l|cq||lb|*bWhat should you open this hand?^^2c|ht|f|at|^j@2
+Open 2@C. 4 losers (1 in each suit)|HC|SJHJC8D4|
+pg| ***** 33 ***** |
+
+
+LC|SJHJC8D4|AT| and 4 Quick Tricks.|HC|SAHKQDAK|
+PG| ***** 34 ***** |
+
+
+LC|SAHKQDAK|NT||
+%%%%%Example  II
+qx||bt||HT|b|CS|6|AT|^-
+{    Bergen 2C Opener    }
+^-|HT|D|AT|^-Example II 
+^-|
+HT|F|cs|1|at|^b{|ih|pSAKQJ9874H72 D 65 CA|at|}|hf|l|cq||lb|*bWhat should you open this hand?^^1S|ht|f|at|^j@2
+Open 1@S.|
+PG| ***** 36 ***** |
+
+
+AT| Only 3 Quick tricks.|HC|SAKCA|AT| Case closed!|
+PG| ***** 37 ***** |
+
+
+LC|SAKCA|NT||
+%%%%%%%%%%Example  III
+qx||bt||HT|b|CS|6|AT|^-
+{    Bergen 2C Opener    }
+^-|HT|D|AT|^-Example III 
+^-|
+HT|F|cs|1|at|^b{|ih|pSAKQT3 HAKQJ2 D42 C8|at|}|hf|l|cq||lb|*bWhat should you open this hand?^^2c|ht|f|at|^j@2
+Open 2@C. 3 losers (in the minors),|HC|D42C8|
+pg| ***** 39 ***** |
+
+
+LC|D42C8|AT| and 4 Quick Tricks.|HC|SAKHAK|
+pg| ***** 40 ***** |
+
+
+LC|SAKHAK|NT||
+%%%%%%%%%%Example  IV
+qx||bt||HT|b|CS|6|AT|^-
+{    Bergen 2C Opener    }
+^-|HT|D|AT|^-Example IV 
+^-|
+HT|F|cs|1|at|^b{|ih|pSA HAQ643 DK763 CAKJ|at|}|hf|l|cq||lb|*bWhat should you open this hand?^^1H|ht|f|at|^j@2
+Open 1@H. The @SA is a downgrade, and your two longest suits are not very strong. I�d guess 5+ losers, and wouldn�t open 2@C despite the 5|HC|SAHAQDKCAK|AT| Quick Tricks.|
+pg| ***** 42 ***** |
+
+
+LC|SAHAQDKCAK|NT||
+%%%%%%%%%%Example  V
+qx||bt||HT|b|CS|6|AT|^-
+{    Bergen 2C Opener    }
+^-|HT|D|AT|^-Example V 
+^-|
+HT|F|cs|1|at|^b{|ih|pSAKT54 HAK5 DAKT3 C8|at|}|hf|l|cq||lb|*bWhat should you bid with this hand?^^2C|ht|f|va|5|at|^j@2Open 2@C. No downgrades in this hand. Any hand with 6 Quick Tricks|HC|SAKHAKDAK|AT| is too strong to open 1@H or 1@S.|
+PG| ***** 44 ***** |
+
+
+AT| ^*BMM: ^*NThe hand and the comment is a direct quote but before the final printing I had a question about the number of losers in the hand. It could be as low as 5 or as high as six if you strictly follow Bergen's instructions. So I sent him an email asking him whether I was missing something. The response was his usual short and to the point. Click the forward arrow to read the answer.|LC|SAKHAKDAK|
+pg| ***** 45 ***** |
+
+
+ht|l|at|^B@2
+"None"
+
+We will agree to disagree.
+I am not the least concerned about losing 5 or 6 tricks.
+
+Regards,
+Marty Bergen|
+PG| ***** 46 ***** |
+
+
+HT|v|AT|^B@2^*BMM: ^*NThat response was enough for the Movie Maker to carry on. Aside from chapter 4 of Slam Bidding Made Easier (2008) by Marty Bergen there are many other great sources to review the 2@C opening. A nice blog by Tommy Solberg, BBO nickname "tommylee" at |CP|1|AT|^*Htinyurl.com/adooa4u^*N|CP||AT| is worth reviewing. Mr. Solberg starts with the next two hands questioning opening them 2@C. Let us go through both and you decide. |
+PG| ***** 47 ***** |
+
+
+NT|| 
+%%%%%%%%%%%%%Example  VI
+qx||bt||HT|b|CS|6|AT|^-
+{    Bergen 2C Opener    }
+^-|HT|D|AT|^-Example VI 
+^-|
+HT|F|cs|1|at|^b{|ih|pSKQ432HQDAQ32CAKT|at|}|hf|l|cq||lb|*yWould you open this hand 2C?^^N|ht|f|at|^j@2
+"Marty is not going to open 2 clubs. It meets the 4 quick trick requirement but also has too many losing tricks."|
+pg| ***** 49 ***** |
+
+
+AT|
+
+^*BMM: ^*N7 losers-2.5 spades, 1 heart, 1 club, 2.5 diamonds.|
+PG| ***** 50 ***** |
+
+
+NT||
+
+%%%%%%%%%%%%%Example  VII
+qx||bt||HT|b|CS|6|AT|^-
+{    Bergen 2C Opener    }
+^-|HT|D|AT|^-Example VII 
+^-|
+HT|F|cs|1|at|^b{|ih|pSAQ876HAKT2DAQJC2|at|}|hf|l|cq||lb|*yWould you open this hand 2C?^^N|ht|f|at|^j@2
+"Marty is not going to open either Hand 1 or 2 with 2 clubs. They both meet the 4 quick trick requirement but also have too many losing tricks."|
+PG| ***** 52 ***** |
+
+
+AT|
+
+^*BMM: ^*N6.5 losers-2.5 spades, 2 hearts, 1 club, 1 diamond.|
+PG| ***** 53 ***** |
+
+
+HT|m|AT|^b@2"What is the downside of the '2 club overuse syndrome?' In three words, 'loss of communication.' You are starting the auction on the 2 level and by the time you get through with responses and rebids, it is no trick at all to be on the 3 level and not know much more than you did when you first sorted the cards. If your hand is one that deserves to play in game no matter what partner has, then opening 2 clubs is an effective way to tell him that. You don�t need a lot of bidding room. If your hand is not that strong, then give yourself the optimum opportunity to gain helpful information from partner by a one level opening.|
+PG| ***** 54 ***** |
+
+
+AT|
+
+"What? Worried about getting passed out? Trust me, in this day and age good partners are looking for reasons to bid, not reasons to pass. Even if partner does not have a minimum bid, the chances are very good that the opponents will either overcall or balance. This sucker is not going to die, and on the rare occasion when it does, you are probably in the right spot.|
+PG| ***** 55 ***** |
+
+
+AT|
+
+"So what do we have? Marty Bergen who said 'Bridge is a Bidder's Game' rejects the current fad to reduce standards for forcing 2 club opening bids and goes traditional on us. When you have one of the World�s most aggressive bidders saying '|CP|8|AT|Pull in your horns|CP||AT|', maybe it is time to listen. So consider making 4+4 your partnership standard."|
+PG| ***** 56 ***** |
+
+
+ht|y|AT|
+^B@2^*BMM: ^*N|CP|1|fp|2|AT|^*Hhttp://www.bridgesights.com/hondobridge/hondoviewer/hondoviewer.php?sf=quicktricks,Quick Tricks^*N|CP||fp||at| has a comprehensive review of Quick Tricks.|
+PG| ***** 57 ***** |
+
+
+NT||

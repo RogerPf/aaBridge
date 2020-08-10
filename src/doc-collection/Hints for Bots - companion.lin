@@ -1,0 +1,185 @@
+
+%% Author:  Roger Pfister
+%%
+%% Date:    2018-03-26
+%%
+
+bt||mn|Hints for Bots  -  a Companion Lin File|
+fh|b45|cr|p255|cg|p0|cb|p255|ht|e|n^|3|at|^b@2^^|lg|5|
+at|^^^^This is the companion lin file for the  ^*baaBridge doc collection ^*n document file called|fp|b|
+at|^c@2^^^^
+^e Hints for Bots  -  a How to.doc^^^^
+|fp||lg|m|n^|7|at|^^^^^b^*bInstructions^*n^^
+Please follow the instructions and explanations that you will find when ^*b READING ^*n the above document.
+
+These start on the first page see the heading in doc called      ^*b Companion 1 ^*n
+^^^^
+^dUse your mouse wheel  or  Click  { ^*b Flow ^*n }  to view  'pg' 1|
+
+ht|m|rq|3163|at| ^- This   Bridge Movie   requires ^*b aaBridge ^*n build  ^*b 3164 ^*n  or later   ^^^^  available FREE from    ^*h rogerpf.com/aaBridge ^*n ^- |
+bv|a,h|
+pg| ***** 0 ***** |
+
+
+st||
+%%=====================================================================================
+qx|1,wide|
+rh||ah|Comp... 1|
+md|1sAKQ3hJT98dT83cA2,sJ62h75dKQJ5cT873,sT94hK3dA972cQJ64,s875hAQ642d64cK95|
+sv|e|sk|s|sk||
+mb|3N|mb|p|mb|p|mb|p|
+pc|dK|
+%
+nt|^c@2^z@3^^^b^*bCompanion 1 ^*n   ^f This is a beginner level problem @- YOU are the problem SETTER.^*n|
+lg|d|n#|6|
+at|^^The @dK is the set lead.  When the student (who cannot see the E-W cards) clicks the ^*b { 1st } ^*n button they need to duck that lead.|
+pg| ***** 1 ***** |
+
+
+at|  After that, you (the problem setter) WANT the West bot to lead the @dQ.  BUT, because the bot cannot pick out which is the hardest line for the human student, it INSTEAD leads the @h5.|
+pg| ***** 2 ***** |
+
+
+bv|f,v|
+n#|5|at|^^Click the ^*b { 1st } ^*n button  and check that (once you duck in N & S) the West bot leads the @h5 at trick two.|
+pg| ***** 3 ***** |
+
+
+qx|h5,wide|
+mx|x|
+tc|y|
+pc|d2|pc|d4|pc|d3|eb|y___|
+tc||
+ht|f|at|@4^^|
+at|We have moved on to trick 2.   
+|n^|5|at|^^^d Again check that when you click the ^*b { 1st } ^*n button the West bot still leads the @h5.|
+pg| ***** 4 ***** |
+
+
+qx|dQ,wide|
+%
+bh|Play, West, dQ, res, on-lead, T2, always|
+%
+ht|f|at|@4^^|
+at|The following  ^*b bh ^*n (bot hint)   command has NOW 	been added        (the command bars are shown as the tiny `)
+|n#|5|at|^d ^*b bh`Play, West, dQ, res , on-lead, T2, always` ^*n  
+|n#|7|at|When you click the ^*b { 1st } ^*n button  the West bot will follow the hint and play the @dQ|
+pg| ***** 5 ***** |
+
+
+qx|x d5,wide|
+%
+bh|clear|
+bh|Play, West, d5, res, on-lead, T2, always|
+%
+ht|f|at|@4^^|
+at|What if you want to lead a card that will cost a trick ?    (here the  @d5)
+|n#|5|at|^d ^*b bh`Play, West, |cp|red|at|d5|cp||at|,  res , on-lead, T2, always` ^*n ^q  
+|n#|7|at|When you click the ^*b { 1st } ^*n button  the bot will REFUSE to play the @d5, as it knows that it will cost a trick, instead, it picks another @d,  one that will NOT cost a trick, here (as it happens) it is the @dQ.|
+pg| ***** 6 ***** |
+
+
+qx|d5,wide|
+%
+bh|clear|
+bh|Play, West, d5, BAD, on-lead, T2, always |
+%
+ht|f|at|@4^^|
+at|^cThe solution is that you call tell the bots you know it is a BAD lead and to they should do it anyway.
+|n#|5|at|^d ^*b bh`Play, West, d5, |cp|red|at|BAD|cp||at|, on-lead, T2, always` ^*n ^p change ^*b res ^*n (reserved)  to  BAD     
+|n#|7|at|^b NOW - when you click the ^*b { 1st } ^*n button  the bot will  play the @d5 even though ^*b IT KNOWS ^*n  that it will cost a trick.|
+pg| ***** 7 ***** |
+
+
+bv|a,h|
+md|1|
+nt|^b@2^z@3^^cleared|
+pg| ***** 8 ***** |
+
+
+%%=====================================================================================
+qx|2,wide|
+bv|f,v|
+rh||ah|Comp... 2|
+md|1sJT42hQT5dAKTcAJ5,sQ975h74dQ97cQ872,sAK63hAJ32dJ85cK3,s8hK986d6432cT964|
+sv||sk|s|sk||
+mb|6N|mb|p|mb|p|mb|p|
+tc|y|
+pc|h7|
+pc|h2|pc|hK|pc|h5|
+pc|d2|pc|dA|pc|d7|pc|d5|
+pc|sJ|eb|y___|
+tc||
+
+nt|^b@2^z@3^^^*bCompanion 2 ^*n ^f A finesse that you might want a student to play.|
+lg|d|n#|6|at|^^^^^^|
+n#|9|at|When you click the ^*b { 1st } ^*n button  the bot (without hints) plays the @s5 and does  NOT  cover the @sJ with the @sQ.|
+pg| ***** 9 ***** |
+
+
+qx|sQ,wide|
+bh|Play, West, sQ, res, p2, T2-4, cond, Played Dec sJ,  Played Dec sT,  or|
+ht|f|at|@4^^^r ... adding the following  bot hint.|
+n#|5|at| ^c                        
+^c ^*b bh`Play, West, sJ, |cp||at|res|cp||at|, p2, T2-4, cond,  Played Dec sJ,  Played Dec sT,  or` ^*n  
+|n#|7|at|When you click the ^*b { 1st } ^*n button  the bot  WILL  cover the  @sJ    with the  @sQ.|
+pg| ***** 10 ***** |
+
+
+qx|sQ,wide|
+up||
+pc|sT|eb|y___|
+bh|Play, West, sQ, res, p2, T2-4, cond,  Played Dec sJ,  Played Dec sT,  or|
+ht|f|at|@4^^|
+n#|5|at| ^c                        
+^c ^*b bh`Play, West, sJ, |cp||at|res|cp||at|, p2, T2-4, cond,  Played Dec sJ,  Played Dec sT,  or` ^*n
+|n#|7|at|When you click the ^*b { 1st } ^*n button  the bot  WILL  cover the  @s10  with the  @sQ.|
+pg| ***** 11 ***** |
+
+
+qx|x sQ,wide|
+up||
+pc|s4|eb|y___|
+bh|Play, West, sQ, res, p2, T2-4, cond,  Played Dec sJ,  Played Dec sT,  or|
+ht|f|at|@4^^|
+n#|5|at| ^c                        
+^c ^*b bh`Play, West, sJ, |cp||at|res|cp||at|, p2, T2-4, cond,  Played Dec sJ,  Played Dec sT,  or` ^*n   
+|n#|7|at|When you click the ^*b { 1st } ^*n button  the bot  WILL NOT  cover the  @s4  with the  @sQueen  and plays the @s5.|
+pg| ***** 12 ***** |
+
+
+bv|a,h|
+md|1|
+nt|^b@2^z@3^^cleared|
+pg| ***** 13 ***** |
+
+
+%%=====================================================================================
+qx|3,wide|
+rh||ah|Comp... 3|
+md|4sK2h654dAQ32cAKQ3,s7hJT87dJ976cJT75,s6543hAQ32dK54c42,sAQJT98hK9dT8c986|
+sv|n|sk|s|
+mb|2S|mb|d|mb|p|mb|3H|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pc|s7|
+nt|^b@2^z    @3^^^*b Companion 3 ^*n  ^f A ^*b Bot Instruction ^*n(bi)  Example   ^p no ^*b bi ^*n currently added |
+lg|f|n#|5|at|^c@2
+@. Declarer MUST always be South  -  unlike  Bot Hints (bh)  which work on  ANY deals.
+@. ^*bbi'^*ns tell the Bots (East - West) to ^*b SWAP ^*n cards when certain things happen.   (Hints tell Bots what to ^*bPlay^*n)
+|n#|3|at|^b@2It will help to see this example if you have the  "Study Deal visibility"  ON   -   see the documentation.
+|n#|2|at|You are in 3NT and need either the @d split  OR  the @h finesse.  As you can see, neither are right for you.|
+pg| ***** 14 ***** |
+
+
+qx|swap|
+bv|f,v|
+ht|f|at|^m@4@5^^|ht|e|at|^p ^*b bi ^*n  Bot Instruction  NOW  added|
+%
+bi|Swap, East, hK, h, p2, T4-9, Cond, Rnds D=3 Won=3,  Played Dec h, and|
+%
+ht|f|at|@4^^|lg|g|
+n#|3|at|^c^*b  bi`Swap,  East,  hK,  h,  p2,  T4-9,  Cond,    Rnds D=3 Won=3,   Played Dec h,   and` ^*n 
+|n#|3|at|The above  Bot Instruction (bi)  swaps the @hK from East to West,  but ^*b ONLY ^*n once you have tested the @d's (and so found them NOT breaking) ^*b AND ^*n have just led (Played) a @h from declarer.     
+|n^|1|at|^o Click the  { ^*b 1st ^*n }  button to check that this is true.|
+pg| ***** 15 ***** |
+
+

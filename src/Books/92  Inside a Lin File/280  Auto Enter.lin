@@ -1,0 +1,22 @@
+%% Auto Enter
+%% Last edited  2017 June 20
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cr|516|cg|5128|cb|516|      5  green 
+cr|7255|cb|70|cg|70|        7  red
+
+
+ae||  %% auto enter
+md||pn|Back to Movie,        Click,        Click,        Click|
+lg|c|
+at|^b@2^*bae^*n^g^*b!ae!!^*n|at|           Auto Enter         was called         "vr"  which will still work ^z@3
+A virgin deal is one that has only ONE  ^*b md!! ^*n cmd    and does NOT have any  ^*b nt!! ^*n  or  ^*b at!! ^*n  cmds. 
+Virgin deals are automatically opened  as if  the  ^*b Enter the Deal ^*n  button has just been clicked.
+This is exactly what you want to happen when you open a deal that you played on-line and have now downloaded.
+|n^|9|at|
+The ^*b ae!! ^*n command  tells aaBridge to treat a lin file with one  ^*b md!! ^*n as  virgin no matter the consequences. There for it will be "Auto Entered".
+^eThis works best in a near virgin deal with just one or two added  ^*b nt!! ^*n  and  ^*b at!! ^*n  commands.
+
+| 
+ht|z|at|@0
+^*B end ^*N|

@@ -1,0 +1,45 @@
+%% Line Spacing
+%% Last edited  2015 Nov 04
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fh|135|ff|1Arial|fb|10|fm|1|       Font def 1
+fh|240|ff|2Arial|fb|20|fm|2| 
+fh|350|ff|3Arial|fb|30|fm|3| 
+fh|460|ff|4Arial|fb|40|fm|4|
+
+fh|570|ff|5Arial|fb|50|fm|5|
+fh|680|ff|6Arial|fb|60|fm|6|
+
+cr|516|cg|5128|cb|516|      5  green 
+cr|60|cg|60|cb|6255|        6  blue
+cr|7255|cb|70|cg|70|        7  red
+
+qx|vPos|
+bt||
+at|^b@2^z@3
+^*bLine Spacing   ^*n              ^*bLg^*n!|cp|Red|at|^*bv^*n|cp||at|!      line gap           (capital  L  used  only  for clarity)
+  
+In ^*b aaBridge ^*n text flows naturally from one line to the next.  The line separation is set at the natural value for the particular font in use. If at the end of the line you are using a |fp|3|at|large|fp||at| font you will get a |fp|3|at|large|fp||at| separation for the start of the next line.  it follows then that a word or two in a different font will not normally effect the line separation.
+
+^d using    ^*bLg^*n!|cp|Red|at|^*bv^*n|cp||at|!  ^k where    |cp|Red|at|^*bv^*n|cp||at|   is   0-9   and   a to z    (A to Z)   will change this.
+
+The values of  |cp|red|at|^*bv^*n|cp||at| are ^*b NON ^*n obvious
+^e@2^^
+|Lg|f
+|cp|red|at|^*bv^*n|cp||at|  ^f is      0 ^h (digit zero)   ^k       0%    no line separation at all.  The next will will overwrite
+|cp|red|at|^*bv^*n|cp||at|  ^f is      1 ^h                ^k     55%    a LOT of overlap of lines
+|cp|red|at|^*bv^*n|cp||at|  ^f is      9 ^h                ^k     95%    the lines will look a little close
+|cp|red|at|^*bv^*n|cp||at|  ^f is        ^h  (blank)       ^k  100%     reset to normal 
+|cp|red|at|^*bv^*n|cp||at|  ^f is      a ^h                ^k  100%     reset to normal    (think ^*b a ^*n = 10 equals 100%)
+|cp|red|at|^*bv^*n|cp||at|  ^f is      b ^h                ^k  105% 
+|cp|red|at|^*bv^*n|cp||at|  ^f is      c ^h                ^k  110%
+etc.
+^b@2
+The table above is displayed using    |cp|blue|at|^*bLg^*n!f!|cp||at|    the text below  (from a speech by Cicero)  is using    |cp|blue|at|^*bLg^*n!c!|cp||at|
+|Lg|c|at|
+Video, patres conscripti, in me omnium vestrum ora atque oculos esse conversos, video vos non solum de vestro ac rei publicae, verum etiam, si id depulsum sit, de meo periculo esse sollicitos. Est mihi iucunda in malis et grata in dolore vestra erga me voluntas, sed eam, per deos inmortales, deponite atque obliti salutis meae de vobis ac de vestris liberis cogitate. 
+
+^i As you would expected    |cp|blue|at|^*bnt^*n!!|cp||at|    resets the line separation   to  100%
+
+|fp||ht|z|cp||at|
+^a^*b end ^*n|

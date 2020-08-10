@@ -1,0 +1,424 @@
+%%
+%%
+
+ss|chapter,2.   The  Example                                         |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2018-07-01          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,Declarer  Planning                                                  |
+%%
+cr|m140|cg|m080|cb|m110|   fill   m  m-mastColor       on Title Pages
+cr|c208|cg|c205|cb|c229|   fill   c  c-chapterColor    on Title Pages
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor  fake pink button
+cr|b200|cg|b255|cb|b255|   fill   b  light blue   fake blue button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+ht|i|
+at|^c@2^z@3^^|n#|9|
+fp|t-title|at|The Foundation of Declarer Play|fp||
+lg|h|
+n#|4|at| 
+^d@2Efficient and effective planning is the foundation of all good declarer play.   This set of very short chapters on planning concentrates on using a  "Declarer Play Check List".  
+|n^|a|at|
+In the same way a pilot works through a check list before take-off,  you will learn to work through a  
+"Declarer Play Check List"  ^*b BEFORE ^*n  you play the first card from dummy.^^^^|
+fp|t-title|at|^cThe Example|fp||
+n#|4|at|
+The core of the work is contained in presenting THIS actual dealt hand that I watched being played.  I will do the thinking on paper.  Please take the time to ^*b THINK ^*n through how YOU would plan the hand before reading the details of the plan I suggest.|
+qx|2.|
+zm|+study+|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+rh||ah|Example Plan|
+md|3hA843dKT642cQ962,s75hQJ65d85cJT874,sAKQJ82hT72dAQ3cA,sT9643hK9dJ97cK53|
+bh|Play, East, s9, res, p2, T2-9, cond, Rnds S=0 Won=0|
+sv|n|sk|S|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|^*bExample  ^*n     The hand,|
+pg| ***** 1 ***** |
+
+
+at|       the bidding,|
+mb|2C|mb|p|mb|3D|mb|p|mb|3S|mb|p|mb|4D|mb|p|mb|4N|an|RKC|mb|p|mb|5H|an|2|mb|p|mb|6D|mb|p|mb|p|mb|p|
+pg| ***** 2 ***** |
+
+
+at|^k the lead,|
+
+pc|cJ|
+pg| ***** 3 ***** |
+
+
+qx|Thnk,wide|
+at|      ^p^*b Do your thinking NOW^*n|
+pg| ***** 4 ***** |
+
+
+n^|a|lg|p|
+at|^c@2^^^^ If you have not yet tried to work out your own plan - STOP - and do it now.   
+That way you will get some idea as to how good your planning skills actually are.|
+pg| ***** 5 ***** |
+
+
+---------------------------------------------------------------------------
+qx|What, wide|
+nt|^b@2^z@3  ^^|
+lg|d|
+ht|c|n#|1|at|Suddenly you have your first sight of both the lead and dummy.  
+Later the CHECK LIST will analyse dummy, but  FIRST  give a thought to the lead.  The question to ask yourself is
+|n^|5|at|
+^d^*b What is going on in @cs ?  ^*n   (the suit led)|
+pg| ***** 6 ***** |
+
+
+n^|5|at|^^
+No gift tricks on this lead, but the  @c10  is likely to be with West and the  @cK  is likely to be with East.  It would be odd for a reasonable player to under-lead a King against a suit contract, especially a slam.|
+pg| ***** 7 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+lg|d|
+ht|c|n#|1|at|Having filed away any deductions or conclusions gained from the lead, this is a key point:-
+|n#|7|at|^cGet into the habit of trying to remember the RESULTS of your thinking.
+|n^|6|at|
+So say to yourself @- East probably has the King of @cs.   That way it will stay in your memory for the time it takes to play the hand.
+|n^|8|at|
+(I know that on this hand, you do not care where the  @cK  actually is, but the  CHECK LIST  is about habits.)|
+pg| ***** 8 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+lg|d|
+ht|c|n#|1|at|Let's assume that you did the "Standard Drill" when you ^*b FIRST ^*n saw your hand.
+That is...    count the hcp and say the "shape" to yourself (in 'shdc' order).  So this hand is ...     9 hcp,   0454.|
+pg| ***** 9 ***** |
+
+
+n#|6|at|^^Why say the shape to yourself ?   Because that will help you remember the hand, and come the middle of trick 7 you can recall @- Did I start with  2, 3  or was it  4@hs ?
+
+What comes next on the check list is predictable - but ...|
+pg| ***** 10 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+lg|d|
+ht|c|n#|1|at|... remember the Check List is about good habits.  It does NOT exist to shackle you.  If you can "see" 13 top tricks, do a double check (for safety) and claim.|
+pg| ***** 11 ***** |
+
+
+n#|6|at|^^As expected, next you do the   "Standard Drill"   on dummy...    20 hcp   6331|
+n#|6|at|^^A side benefit of actually doing the "Standard Drill" ^*b consciously ^*n and early in the scheme is that the information is more easily accessible to your "unconscious bridge brain".   So now it will be thinking while you...|
+pg| ***** 12 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+lg|d|
+ht|c|n#|1|at|... start into the solid meat.   For a trump contract, like this one, thoughts now turn to the trump suit.
+|n^|7|at|
+	^d^*b What is going on in @ds ?  ^*n   (the trump suit)
+|n^|7|at|^^|
+pg| ***** 13 ***** |
+
+
+at|^c(It is about time that  "We"  tackled this hand as a join effort.)|
+pg| ***** 14 ***** |
+
+
+n#|5|at|^^We have 8 trumps, so they have 5.   Be specific, 'voice' the numbers (just in your head).  Here, it is clear that a 3-2 split is no problem.  So the next thing to ask yourself is...|
+pg| ***** 15 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+lg|d|
+ht|c|n#|1|at|... Wait, it is too early to be thinking about 4-1 splits,  they are important,  but will come later. 
+
+^c@2A digression on speed - with practice, everything covered so far will have taken a very few seconds, - REALLY !   As any car driver knows, you can do a lot of thinking in very little time, with practice. 
+
+^bBack to the meat ...
+|
+pg| ***** 16 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Top, wide|
+nt|^b@2^z@3^^|
+lg|d|
+ht|c|n#|1|at|Some authors will tell you that, at this point, you should (for a trump contract), Count your Losers.
+In this  Check List  that will be the step after this one.|  
+n#|6|at|^^^cRight now,  we ^*b Count Top Tricks^*n.     Yes - even for a trump contract.|
+pg| ***** 17 ***** |
+
+
+n#|6|at|^^Here we run into the real issue of the hand.  In theory we have  4@s 1@h 1@c 5@d(assuming 3-2)  =  11 tricks.   So we are one short in top tricks and, even worse, we have a mess in terms of entries and the order of pulling trump.|
+pg| ***** 18 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+lg|d|
+ht|c|n#|1|at|^*bCount Your Losers^*n    @2A complete analysis requires counting losers twice, taking each hand in turn as 
+the ^*b Master Trump Hand^*n.   In many cases (as here) you can quickly dismiss one hand. | 
+n#|6|at|^b@2^^^*bQuestion:^*n   Could it work to take NORTH as the master hand and try to ruff ^*b 3 ^*n @ss in South to gain ^*b1^*n extra trick ?|
+n#|9|at|^^So taking  SOUTH  as the ^*b Master Trump Hand^*n   we have   3@h  3@c  0@s  0@d(assuming 3-2)  =   6  losers.
+Assuming we can cash 4 @s tricks in dummy, we are down to 2 losers @- for a slam we must get down to just 1.|
+pg| ***** 19 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+lg|d|
+ht|c|n#|1|at|On this hand the two approaches  @-  "Top Trick Count"  and  "Counting Losers"  @-  both tell the same story.   We need to make dummy's top 4 @ss  AND  get an extra trick (the 12th trick) from somewhere.^^^^|
+pg| ***** 20 ***** |
+
+
+qx|Core, wide|
+fp|t|at|The Core of the Planning Process|fp||n#|3|at|
+At last we have reached the core of the planning process.  Our analysis has set the objective.  In this case the objective is @- make dummy's top 4 @ss  AND  get an extra trick from somewhere.|
+pg| ***** 21 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+lg|d|
+ht|c|n#|1|at|This is the step that takes the real heavy thinking and should not be rushed.
+
+	^d^*b What ways are there to make extra tricks  ?^*n
+
+Your answer is always a ^*b LIST ^*n  of  ways, methods, techniques,  that  could, might, or will  produce extra tricks.	|
+pg| ***** 22 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+lg|d|
+ht|c|n#|1|at|There are actually two different type of techniques (later chapters will go into more detail) but briefly there are
+|lg|f|n^|9|at|
+^b   ^*bTrick Creating Techniques^*n  ^i eg:   a normal finesse.
+^b   ^*bEntry Creating Techniques^*n  ^i eg:   k@2eeping the 2 of trumps in hand so that a dummy holding only  the 4 or 5 of trumps  can still generate an extra entry once opps trumps have fallen.
+
+|n^|7|at|^bIMPORTANT   -    Do not over critique at this point.  You want as many techniques as you can get.|
+pg| ***** 23 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Hard, wide|
+nt|^b@2^z@3^^|
+lg|d|
+ht|c|n#|1|at|^*bNow we are at the very hardest part of the Planning  -  the hardest part of the hardest part^*n.  
+|n#|2|at|^c@2We work through all the techniques on the list (combining them if needed)  AND  putting them together with the information we got from the bidding and lead (remembered as part of "Standard Procedure") ...  
+^b@2^*bTo produce ^*n
+^cA  LIST  (yes another list) of possible ^*b Strategies ^*n each of which has some chance of reaching the set goal.
+|n#|3|at|^b@2^*bFinally ^*n   we pick the ^*b Strategy ^*n that we think most likely to succeed.|
+pg| ***** 24 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+lg|d|
+ht|c|n#|1|at|We all know that the previous page subsumes a lot of difficulties.  Here are two.
+(1)  @2As you generate the possible  Strategic Lines,  you will need to visualise the play to check that it could produce the desired outcome.  
+|n^|1|at|This can and will get complex @- there is no getting around it.  You must work to improve this skill.|
+pg| ***** 25 ***** |
+
+
+n#|3|at|^^^b(2)  As you - think up / invent / work through each  Strategic Line  there is one question that you must keep asking.|
+n#|2|at|^^^d^*bWhat could possibly go wrong ?^*n|
+pg| ***** 26 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+lg|d|
+ht|c|n#|1|at|Back to the planning  @-  We have chosen our strategic line.  What next ?
+|n^|8|at|^^To stop yourself from slipping up,  re-create the  ^*b Card Sequence List ^*n  that you thought up earlier when creating that Strategy.  
+|n^|8|at|^^Then, and only then do you play the first card from dummy.|
+pg| ***** 27 ***** |
+
+
+n#|5|at|^^^c^*bBUT^*n  if something weird happens,  like a singleton King falling under your Ace,  STOP and re-plan.|
+pg| ***** 28 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+lg|d|
+ht|c|n#|1|at|^*bBack to the Example Hand^*n    above 
+|n#|3|at|What techniques do we have that could get us the extra trick we need.
+^c@.  Ruffing a @c  in Dummy.
+^c@.  Drawing trumps in 3 ending in dummy, and running all dummy's @s's (so the 2 long @ss will come good).|
+pg| ***** 29 ***** |
+
+
+n#|4|at|^^^*bAnalysis^*n
+^cRuffing a @c - makes an extra trick but fails as we cannot then draw trumps and run the @ss.   So ...|
+pg| ***** 30 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+lg|d|
+ht|c|n#|1|at|^c@.  Drawing trumps in 3 ending in dummy, and running all dummy's @s's (so the 2 long @ss will come good).
+|n#|3|at|For this to work we need the trumps to be 3-2 (68%)  but, no matter, we have no other choice.  So let's think out (the very simple) ^*b Play List^*n.|
+pg| ***** 31 ***** |
+
+
+n#|7|at|^^^c@cA,     Low @d to the King,    Low @d to the Ace,    @dQueen   and   run the  @ss  from the top.|
+n#|7|at|^^So off we go  -  Yes ?|
+pg| ***** 32 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+lg|d|
+ht|c|n#|1|at|^*bWAIT^*n  - we have not asked the magic question.|
+pg| ***** 33 ***** |
+
+
+qx|What, wide|
+n#|4|at|^^^c^*bWhat could possibly go wrong ?^*n|
+pg| ***** 34 ***** |
+
+
+n#|4|at|^^(1)  Trumps  MUST  split 3-2.   We know that, and there is nothing we can do about it.|
+pg| ***** 35 ***** |
+
+
+ht|l|at|@4^^|
+ht|o|n#|1|at|(2)  We have 6 @ss spades, so the Opps 7 @ss  have to split  4-3  and there is nothing we can do it about it, is there ?|
+pg| ***** 36 ***** |
+
+
+n#|4|at|^^^c@2If we have kept our mind focused on the set objective we have a discrepancy.  We require 1 more trick and the current plan will either make  2  extra or  0  extra,  NEVER  1  extra.   |
+pg| ***** 37 ***** |
+
+
+n#|6|cp|red|at|    ^*b THINK ^*n |cp||at|-  can we improve the plan ?|
+pg| ***** 38 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+lg|d|
+ht|c|n#|1|at|^*bThe key^*n  is to see that if one Opp has  5 @ss  and we lose a  @s  EARLY then we can still make dummy's 6th @s,
+^c whereas if we lose that 5th @s late we cannot  
+OR  
+^c as we are void in @ss we can instead ruff that early round of @ss.     In which case the Plan becomes -
+|n#|9|at|^b@.  Ruff a low @s, Draw trumps in 3 ending in dummy, and run all dummy's @ss.|
+pg| ***** 39 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+lg|d|
+ht|c|n#|1|at|And the  ^*b Card Sequence List ^*n   becomes|
+n#|7|at|^^^c@cA,     low @s ruff with low @d,    @dKing,    Low @d to the Ace,    @dQueen   and   run the  @ss.|
+pg| ***** 40 ***** |
+
+
+bv|f,v|
+pf|first-button|
+n#|9|at|^^It is down to you to Play out the hand,  the blue ^*b {  1st  } ^*n  is now available, on the right in the green area, below.|
+pg| ***** 41 ***** |
+
+
+zm|-study-|
+---------------------------------------------------------------------------
+nt|^b@2^z@3^^|
+lg||
+ht|c|n#|1|at|^*bChapter Finished^*n|
+ht|k|at|^c The chapter has finished.    If you move |
+at|forward again you will be shown all the cards.|
+at|^^^^^c 'Study Deal'  restrictions lifted, |
+at|hence in the deal the  ^*b DDS  { Off/On ^*n }  buttons, |
+at|etc are |cp|red|at|^*b NOW ^*n|cp||at| available.|
+at|^^^^^L You can still use the blue  { ^*b 1st ^*n }  button.|
+pg| ***** 42 ***** |
+
+
+---------------------------------------------------------------------------
+qx|DDS,wide|
+eb||
+sk||
+nt|^z@3^b@2^^|n^|5|
+Lg|f|
+bv|a,v|
+at|^*bDDS^*n    ^eYou are now free to explore the deal.
+|n^|7|lg|k|at|^^^c@2If you still need help then, when in the deal, click the ^*b DDS  { is Off/On ^*n }  button top right.
+|fp|s|at|A number (of tricks) in a GREEN oval shows a good to play for THAT side.|fp||
+pf|all-res-lifted|
+pg| ***** 43 ***** |
+
+

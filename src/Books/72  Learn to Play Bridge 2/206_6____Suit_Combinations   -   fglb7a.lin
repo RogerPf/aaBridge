@@ -1,0 +1,1982 @@
+
+%%
+%%  Date last Edited    2019-03-30
+%%
+
+ss|masthead,Learn to Play Bridge 2               Ch 6  -  Declarer Play|
+
+ss|chapter,Suit Combinations                                                   |
+
+
+<<--INSERT-START-->>=01___LTPB2__header_colors.ins
+%%
+cr|m120|cg|m040|cb|m069|   fill   m  m-mastColor       maroon
+cr|c248|cg|c231|cb|c189|   fill   c  c-chapterColor    beige cream
+%%
+<<--INSERT-END**-->>=01___LTPB2__header_colors.ins
+
+<<--INSERT-START-->>=02___LTPB___common.ins
+%%
+fh|180|ff|1Arial|fb|10|fm|1|      Font 1   Kia
+fh|235|ff|2Arial|fb|28|fm|2|      Font 2   Kia
+fh|350|ff|3Arial|fb|30|fm|3|      Font 3   Kia
+fh|430|ff|4Arial|fb|48|fm|4|      Font 4   Kia
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|60|fm|6|      Font 6
+fh|770|ff|7Arial|fb|70|fm|7|      Font 7
+fh|880|ff|8Arial|fb|80|fm|8|      Font 8
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1255|cg|1230|cb|1189|   Beige Cream
+cr|2200|cg|2245|cb|2210|   green ish
+cr|3249|cg|3249|cb|3255|   grey medium
+cr|4190|cg|4210|cb|4255|   blue grey
+cr|5198|cg|5205|cb|5229|   light grey
+cr|6122|cg|6000|cb|6049|   dark maroon
+cr|9255|cg|9255|cb|9255|   'white'
+
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m60|                    Font   m  m-mastHead        size in banner 1
+fh|c60|                    Font   c  c-chapTitle       size in banner 2
+
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint           feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight       text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+%%
+pd|first          ,^a You can `cp`red`at`^*b now ^*n`cp``at` ^*bClick { ^*b 1st ^*n } below @0@1 to enter the deal and ^*b PLAY ^*n the cards.   Later click  { ^*b Back to Movie ^*n }  to return.|
+%%
+%%
+bv|f,v|  %% button visibility
+%%
+<<--INSERT-END**-->>=02___LTPB___common.ins
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+lg|m|
+at|^d@2
+^*gK    ,10 card fit  missing ^i King^*N 
+^*gJ    ,  9      "          "^i Jack^*N 
+^*gJT   ,  "      "          "^i Jack - Ten^*N
+^*gQJ  1,  "      "          "^i Queen - Jack ^*N
+^*gKJ  1,  "      "          "^i King - Jack^*N       
+^*gKQ   ,  "      "          "^i King - Queen^*N
+^*gAQ   ,  "      "          "^i Ace - Queen^*N
+^*gKJ  2,  8      "          "^i King - Jack^*N
+^*gQJ  2,  "      "          "^i Queen - Jack^*N
+^*gQT   ,  "      "          "^i Queen - Ten^*N
+|n#|0|at|^*GRev,Review^*N|
+lg|e|
+
+ht|y|n#|5|at|^b To start, click a blue link  OR  ^*bclick^*n  { ^*b Flow  > ^*n } below   then (if you have one) use your |cp|red|at|^*b mouse wheel^*n|cp||at|.|
+lg|f|
+ht|l|at|^y@3^o@2As is normal in aaBridge :- 
+|n^|3|at|
+When you see the blue  { ^*b 1st ^*n }  button  on the buttons bar, you can click it and so enter the deal and play against the aaBridge bots.
+|n^|3|at|
+When you have finish playing a deal you can 
+click the { ^*b Back to Movie ^*n } button and return to this, the 'tutorial level'.|
+
+bv|f,v|
+qx|6|
+pg| ***** 0 ***** |
+
+
+nt|^z@3^b@2^^|
+fh|t40|fp|t|at|^^Ten Deals|fp||at|
+^c@2
+What follows are 10 ^*b playable ^*n deals.
+
+After you have played each one, comes the reasoning as to why the winning line is the best line.|
+pg| ***** 1 ***** |
+
+
+nt|^b@2^^|
+%%
+%%%
+qx|K,Deal 1|
+st||sk|s|ha|y|
+md|1SQJT98H432CA5DAK2,SK6HKQJCJQ87D9654,SA5432H765CK432D3,|sk|s|
+mb|4SPPP|
+
+bh|Play, W, cQ, res, on-lead, T4, always|
+
+cs|2|at|{ ^*b Deal 1 ^*n - 10 card-fit no King }|
+pg| ***** 2 ***** |
+
+
+at|^h       West leads the @HK followed by @HQJ.  After winning the first three tricks |
+pc|hkh5hth2|
+pg| ***** 3 ***** |
+
+
+pc|hqh6h8h3|
+pg| ***** 4 ***** |
+
+
+pc|hjh7h9h4|
+pg| ***** 5 ***** |
+
+
+at|he plays @CQ. |
+pc|cq|
+pg| ***** 6 ***** |
+
+
+cs|4|at|^^^^{  PLAN  the play and make your contract.  } |
+pf|first,t|
+pg| ***** 7 ***** |
+
+
+md|sqjt98,,a5432|sk||
+nt|^z@3^b@2
+The key to making the contract in the deal you just played is to avoid losing a trump trick with the suit combination shown above (that is, a 10-card fit in which the King is the only relevant missing card).|
+PG| ***** 8 ***** |
+
+
+nt|^b@2^z@3
+There are 2 possible ways to play this suit. The declarer could either finesse West for the @SK or he could play the @SA on the first round of the suit in the hope that the @SK is singleton. Let's try to compare these 2 plans by examining various possible layouts of the East-West spades. |
+pg| ***** 9 ***** |
+
+
+md|0,s76,,sk|nt|^b@2^z@3
+Playing the @SA on the first round of this suit will be a big success if East was dealt a singleton @SK.|
+PG| ***** 10 ***** |
+
+
+nt|^b@2^z@3
+This play will also work if West was dealt a singleton @SK, but the alternative plan of the spade finesse will work in this case as well.|md|0,sk,,s76|
+PG| ***** 11 ***** |
+
+
+md|0,s6|nt|^b@2^z@3
+The finesse is necessary when West has a doubleton @SK6, |
+pg| ***** 12 ***** |
+
+
+md|0,s7,,s6|nt|^b@2^z@3
+a doubleton @SK7, |
+pg| ***** 13 ***** |
+
+
+md|0,s6|nt|^b@2^z@3
+or all 3 missing spades. Therefore, the finesse gains in 3 cases, |
+pg| ***** 14 ***** |
+
+
+md|0,,,sk|nt|^b@2^z@3
+and loses in only 1 case (when East has a singleton @SK). |
+pg| ***** 15 ***** |
+
+
+nt|^b@2^z@3^^|md|0,sk|cs|2|ht|d|at|^-{ If you have a 10-card ^*bfit^*N with only the King missing, the percentage play is to finesse. }
+^-
+|
+pg| ***** 16 ***** |
+
+
+at|In some of the explanations of correct percentage plays of the suit combinations that will be presented, the details of all of the winning and losing cases of the various plans will not be given. They were shown here in case you are curious about how these problems can be solved.|
+pg| ***** 17 ***** |
+
+
+md|0s27,st,sj|ha|y|nt|^b@2^z@3
+Here is a slightly different suit combination. The defenders have been given the @S10 and the @SQ and the @SJ are now split between the North-South hands (they were both in the South hand before). It is still correct to finesse West for the missing @SK, but the declarer has to be careful in regard to how he goes about this. |
+pg| ***** 18 ***** |
+
+
+nt|^b@2^z@3
+Suppose the declarer starts by leading a small spade from his hand and that West follows with the @S6. |
+pg| ***** 19 ***** |
+
+
+pc|s2s6|nt|^b@2^z@3
+The @SJ is played from the dummy as a finesse against the @SK. |
+pg| ***** 20 ***** |
+
+
+pc|sj|md|0,,,h2|nt|^b@2^z@3
+East will need something to discard so let's give him a heart to play to this trick. |
+pg| ***** 21 ***** |
+
+
+pc|h2|
+pg| ***** 22 ***** |
+
+
+nt|^b@2^z@3
+The finesse wins, but West's remaining @SK10 surrounds South's @SQ. There is no way to prevent West from coming to a spade trick (he would cover with the @SK if South tried to lead the @SQ next). |
+pg| ***** 23 ***** |
+
+
+up|4|nt|^b@2^z@3
+This problem can be avoided if South leads the @SQ (instead of a small spade) on the first round of the suit. |
+pg| ***** 24 ***** |
+
+
+pc|sq|nt|^b@2^z@3
+If West follows with his small spade, |
+pg| ***** 25 ***** |
+
+
+pc|s6|at|a low card is played from the dummy as well. |
+pg| ***** 26 ***** |
+
+
+pc|s3|nt|^b@2^z@3
+East's discard|pc|h2|
+pg| ***** 27 ***** |
+
+
+nt|^b@2^z@3
+lets the declarer know about the complete layout of the spade suit. He can finesse again by leading low to the dummy's @SJ. The @SA will take care of West's last spade. |
+pg| ***** 28 ***** |
+
+
+up|3|nt|^b@2^z@3
+If West covers an honor with an honor by playing the @SK when the @SQ is led from the South hand, the dummy's @SA wins the trick. |
+pg| ***** 29 ***** |
+
+
+pc|sksa|at|As before, East's heart discard |
+pg| ***** 30 ***** |
+
+
+pc|h2|
+pg| ***** 31 ***** |
+
+
+nt|^b@2^z@3
+tells the declarer that West still has the @S10 and the @S6 left. |
+pg| ***** 32 ***** |
+
+
+wt|s|nt|^b@2^z@3
+He can return to his hand in some other suit and lead the @S9, the @S8, or the @S7 through West. Regardless of whether or not West covers with the @S10, he will not win a trick in this suit. |
+pg| ***** 33 ***** |
+
+
+md|1q9872,skt6,saj543|
+nt|^b@2^z@3^^|ht|d|cs|2|at|^-{ With a 10-card fit missing the King and 10 and when the Queen and Jack are divided, 
+ lead an honor card (that is, not a spot card) for the first finesse you take in the suit. }
+^-
+|
+pg| ***** 34 ***** |
+
+
+ht|q|at|Leading an honor card (the @SQ in this case) is a safety play against a layout where the finesse is working, but the suit is divided 3-0. |
+pg| ***** 35 ***** |
+
+
+md|0st|nt|^b@2^z@3
+If North-South have an 11-card fit missing the King, |
+pg| ***** 36 ***** |
+
+
+at|finessing gains in only 1 case; when both the King and the only missing small card are under the Ace. |
+pg| ***** 37 ***** |
+
+
+md|0,,,sk|nt|^b@2^z@3
+Playing the @SA on the first round will succeed in exactly 1 case as well (when East has a singleton King). |
+pg| ***** 38 ***** |
+
+
+md|0,sk,,s6|nt|^b@2^z@3
+If West has a singleton @SK, there is no way to go wrong |
+pg| ***** 39 ***** |
+
+
+md|0,,,sk|at|and if East has both missing spades there is no way to go right. |
+pg| ***** 40 ***** |
+
+
+md|0,sk6|nt|^b@2^z@3
+With this suit combination, you might as well lead the @SQ out of your hand on the first round of the suit. |
+pg| ***** 41 ***** |
+
+
+pc|sq|nt|^b@2^z@3
+Perhaps West will cover an honor with an honor by playing the @SK when he was dealt a doubleton in the suit. |
+pg| ***** 42 ***** |
+
+
+at|When West follows with the only small outstanding spade, |
+pg| ***** 43 ***** |
+
+
+pc|s6|md|0,,,sk|nt|^b@2^z@3
+the percentage play (by a very narrow margin) is to go up with the dummy's @SA in the hope that East was dealt a singleton @SK. |
+pg| ***** 44 ***** |
+
+
+up|2|nt|^b@2^z@3^^|ht|d|cs|2|at|^-{ With an 11-card fit missing the King, do not finesse. Play the Ace and hope that the King falls. }
+^-
+|
+pg| ***** 45 ***** |
+
+
+ht|l|at|If you are mathematically inclined (if you are not then please do skip this paragraph!), you may be curious as to why this suit combination is not a pure guess since both the finesse and playing the @SA gain in exactly 1 case. The reason is that all cases are not equally likely to have been dealt. |
+pg| ***** 46 ***** |
+
+
+nt|^b@2^z@3^^|
+%%
+%%%%
+qx|J,Deal 2|st||sk|s|
+md|1skqt9hj32ckqjdakq,ht98sj876c654d876,sa5432hakqca32dj2,h7654dt9543ct987|
+rh||ah|Deal 2|ah|9-card fit   missing|AH|the Jack|sv||
+mb|7nppp|
+cs|2|at|{^*b Deal 2 ^*n     9-card fit   missing the Jack }|
+cs|4|at|^^^^{  PLAN  the play and make your contract.  } |
+pf|first,t|
+pc|ht|
+PG| ***** 47 ***** |
+
+
+md|1skqt9,,sa5432|sk||
+nt|^z@3^B@2
+For the declarer to succeed in his 7NT contract in the deal that you just played, he has to avoid losing a trick from the spade suit shown above. 
+
+The nice thing about this suit combination is that the correct play makes it possible to win 5 tricks regardless of the layout of the East-West cards in the suit. That was not the case for the first card combination that we studied in this chapter (a 10-card fit missing the King).|
+PG| ***** 48 ***** |
+
+
+nt|^z@3^B@2
+The correct play is to win the first trick with either the @SK or the @SQ. 
+
+The only problem that could arise is if one of the defenders was dealt all 4 outstanding spades (if both defenders follow to the first round of spades, the rest will be easy since all of their spades will fall under the @SA, the @SK, and the @SQ).|
+pg| ***** 49 ***** |
+
+
+nt|^b@2^z@3^^|
+%%repeat
+sk||st||md|1skqt9,,sa5432|ha|y|
+rh||ah|Deal 2|ah|9-card fits missing the|AH|Jack|sv||
+pc|sk|md|0,h32,,sj876|
+at|You lead the spade king from hand.  Suppose, first that West discards on the first round of spades (he has been given a couple of hearts to play to the next 2 tricks). |
+pg| ***** 50 ***** |
+
+
+pc|h2s2|at|^^
+The declarer will know that East was dealt all 4 of the missing spades. |
+pg| ***** 51 ***** |
+
+
+pc|s6|
+pg| ***** 52 ***** |
+
+
+nt|^b@2^z@3
+He will thus know to win the second trick with dummy's @SA in order to retain a finessing position against East's remaining @SJ doubleton.|
+pg| ***** 53 ***** |
+
+
+pc|s9h3sas7|
+pg| ***** 54 ***** |
+
+
+md|1skqt9,sj876,sa5432,h32|nt|^b@2^z@3
+If instead West follows to the first round of spades |pc|sk|
+pg| ***** 55 ***** |
+
+
+pc|s6s2|at|and East discards, |
+pg| ***** 56 ***** |
+
+
+pc|h2|
+pg| ***** 57 ***** |
+
+
+at|the declarer will know that West was dealt the rest of the missing spades. |
+pg| ***** 58 ***** |
+
+
+at|^b@2^^
+He can lead either the @S10 or the @S9 out of his hand next (cashing the @SQ first is also OK) |
+pg| ***** 59 ***** |
+
+
+pc|st|at|in order to trap West's @SJ. Regardless of whether or not West covers with the @SJ on this trick, the declarer will be able to play the spade suit without losing a trick. |
+pg| ***** 60 ***** |
+
+
+up|5|wt|n|nt|^b@2^z@3
+The pitfall to avoid with this suit combination is one which might result if the @SA were used to win the first trick (instead of the @SK or @SQ). |
+pg| ***** 61 ***** |
+
+
+pc|sa|at|^^
+If the outstanding spades were distributed as above, then East would discard on this trick |
+pg| ***** 62 ***** |
+
+
+pc|h2|at|and the declarer would then have no way of preventing West from eventually winning a spade trick. |
+pg| ***** 63 ***** |
+
+
+up|2|wt|s|nt|^b@2^z@3
+Winning the first trick with the @SK or the @SQ ensures that 5 tricks will be won irrespective of the layout of the outstanding spades. |
+pg| ***** 64 ***** |
+
+
+md|1skqt9,sj876,sa5432|
+cs|2|at|^^^^^-{ With a 9-card fit missing only the Jack and with 2 high honors in one hand and 1 high 
+ honor in the other hand, win the first trick in the hand that was dealt 2 high honors. }
+^-
+|
+pg| ***** 65 ***** |
+
+
+nt|^b@2^z@3^^Winning the first spade trick with either the @SK or the @SQ is an example of a play that can only gain and never lose. Be on the lookout for these types of plays when you play real-life bridge!|
+pg| ***** 66 ***** |
+
+
+%%b3 from old one
+%%%
+qx|JT,Deal 3|nt|^b@2^z@3^^|
+%%b3
+st||rh||ha|y|ah|Deal 3|ah|9-card fits missing|AH|the Jack-Ten|sv||
+cs|2|at|{^*b Deal 3 ^*n     9-card fit   missing the Jack-Ten }|
+cs|4|at|^^^^{  PLAN  the play and make your contract.  } |
+pf|first,t|
+sk|s|
+md|1skq98hj32ckqjdakq,ht976d76543ct987,sa5432hakqca32dj2,h854sjt76c654dt98|
+mb|7nppp|
+pc|ht|
+pg| ***** 67 ***** |
+
+
+nt|^b@2^z@3
+The declarer is faced with a similar problem to that in the previous deal. He has to avoid losing a spade trick in order to succeed in 7NT. 
+|n^|5|at|
+The difference between this spade suit and the spade suit in the previous exercise is that the @S10 (in addition to 
+the @SJ) is missing now. This missing card, even though it is ^*Ionly^*N a 10, has a dramatic impact on the way that this suit combination should be played.|
+PG| ***** 68 ***** |
+
+
+nt|^b@2^z@3
+We have seen that when a 9-card fit is present and only the Jack is missing, the declarer can ensure that no tricks will be lost by winning the first round of the suit in the hand that was dealt 2 high honor cards. 
+
+Let's see what happens when the 10 is also missing and the declarer tries to follow the same plan by leading either the @SK or the @SQ from his hand. |
+PG| ***** 69 ***** |
+
+
+%%repeat
+MD|1skq98,,sa5432|ha|y|sk||
+pg| ***** 70 ***** |
+
+
+nt|^b@2^z@3
+The only possible problem will occur when one of the defenders was dealt all 4 outstanding spades - as in the board you just played.|
+pc|sK|
+PG| ***** 71 ***** |
+
+
+nt|^b@2^z@3
+First let's see what happens when West has 4 spades. The declarer will find this out when East discards on the first round of the suit.|
+md|0,sjt76,,h32|
+pg| ***** 72 ***** |
+
+
+pc|s6s2h2|
+pg| ***** 73 ***** |
+
+
+at|^^
+South now knows that West still has 3 spades including the @SJ and the @S10, but there is nothing he can do about it. |
+pg| ***** 74 ***** |
+
+
+nt|^b@2^z@3
+Suppose that South tries leading the @S9 or the @S8 (cashing the @SQ first is no better). 
+|
+pg| ***** 75 ***** |
+
+
+pc|s9|at|
+West will split his honors |
+pg| ***** 76 ***** |
+
+
+pc|st|at|and the dummy's @SA will win the trick. |
+pg| ***** 77 ***** |
+
+
+pc|sah3|
+pg| ***** 78 ***** |
+
+
+at|^^
+In the position that remains, West still has a doubleton @SJ sitting over the declarer's only remaining honor in the suit. There is nothing that South can do to prevent West from winning a spade trick. |
+pg| ***** 79 ***** |
+
+
+%%
+up|7|md|1skq98,h32,sa5432,sjt67|nt|^b@2^z@3
+Now let's see what happens if East has all 4 spades. In this case West will be the one that discards on the first round of the suit. |
+pg| ***** 80 ***** |
+
+
+pc|skh2s2s6|
+pg| ***** 81 ***** |
+
+
+wt|n|nt|^b@2^z@3
+The best the declarer can do is to cross to the dummy in some other suit in order to lead a low spade. |
+pg| ***** 82 ***** |
+
+
+pc|s3|nt|^b@2^z@3
+East will split his honors and South will win the trick. |
+pg| ***** 83 ***** |
+
+
+pc|stsqh3|
+pg| ***** 84 ***** |
+
+
+nt|^b@2^z@3
+As before, there is no way that the declarer can prevent the defense from winning a trick in spades. |
+pg| ***** 85 ***** |
+
+
+up|8|nt|^b@2^z@3
+The bottom line is that winning the first trick with the @SK or the @SQ (the play that worked so well when the declarer held the @S10) will never work when either of the defenders was dealt all 4 missing spades. |
+pg| ***** 86 ***** |
+
+
+wt|n|nt|^b@2^z@3
+Let's consider the implications of the alternative plan of winning the first trick with the dummy's @SA. |
+pg| ***** 87 ***** |
+
+
+nt|^b@2^z@3^^|pc|sas6s8|nt|^b@2^B@2
+West discards on the first round of spades |
+pg| ***** 88 ***** |
+
+
+pc|h2|
+pg| ***** 89 ***** |
+
+
+nt|^b@2^z@3
+and the declarer thereby learns that East still has 3 spades headed by the @SJ and the @S10. |
+pg| ***** 90 ***** |
+
+
+nt|^b@2^B@2
+A spade is led from the dummy and South wins the trick as East splits his honors (his best defense). |
+pg| ***** 91 ***** |
+
+
+pc|s2stskh3|
+pg| ***** 92 ***** |
+
+
+wt|n|nt|^b@2^z@3
+A finessing position now exists over East's remaining spade honor. The declarer has to get back to the dummy, but once he does so he will be able to pick up the rest of East's spades. |
+pg| ***** 93 ***** |
+
+
+up|8|md|3skq98,,sa5432,jt76|nt|^b@2^z@3
+So if the first trick in this suit is won with dummy's @SA, the declarer can avoid losing a trick when East was dealt all 4 outstanding spades. |
+pg| ***** 94 ***** |
+
+
+nt|^b@2^z@3^^|
+md|3skq98,sjt76,sa5432,|nt|^b@2^z@3
+If it turns out that West was dealt 4 spades, the play of the @SA will not help, but there is nothing that the declarer could have done to prevent the loss of a trick on this layout. |
+pg| ***** 95 ***** |
+
+
+md|3skq98,,sa5432,sjt76|cs|2|at|^^^^^-{ With a 9-card fit missing only the Jack and 10 and with 2 high honors in one hand and one 
+ high honor in the other hand, win the first trick in the hand that was dealt one high honor. }
+^-
+|
+pg| ***** 96 ***** |
+
+
+ht|q|nt|^b@2^z@3
+The correct play of leading the @SA on the first round of the suit is not guaranteed to work, but this play does allow the declarer to win 5 tricks whenever it is possible to do so.|
+pg| ***** 97 ***** |
+
+
+nt|^b@2^z@3^^|
+%%%%%
+%%%%%%%
+%%section 4
+qx|QJ  1,Deal 4|nt|^b@2^z@3^^|
+st||ha|y|sk|s|
+md|1SA2H765432DK32CQ2,SJT98HJ98DJT98CK7,SQ43HAKTDAQ4CJT98,SK765HQD765CA6543|
+rh||ah|Deal 4|ah|9-card fits missing|AH|the Queen-Jack|sv||
+mb|4H|mb|p|mb|p|mb|p|
+cs|2|at|{^*b Deal 4 ^*n     9-card fit   missing the Queen-Jack }|
+cs|4|at|^^^^{  PLAN  the play and make your contract.  } |
+pf|first,t|
+pc|sJ|
+pg| ***** 98 ***** |
+
+
+sk||nt|^b@2^z@3^^|
+md|1h765432,,hakt|ha|y|at|In the deal you have just played, in order to make your 4@H contract, you have to avoid the loss of a trick in the trump suit (shown above).  This is a 9-card fit missing both the Queen and Jack.
+
+|
+pg| ***** 99 ***** |
+
+
+md|0,hq9,,hj8|nt|^b@2^z@3
+It would be a mistake to start this suit by finessing the @H10. That play would gain if West was dealt 3 hearts including the @HQ and the @HJ, |
+pg| ***** 100 ***** |
+
+
+at|but it would lose in the more likely event that East was dealt a doubleton honor in hearts (among other layouts). |
+pg| ***** 101 ***** |
+
+
+wt|n|nt|^b@2^z@3
+It is best to start out by cashing either the @HA or the @HK on the first round of this suit.  |
+pg| ***** 102 ***** |
+
+
+pc|ha|at|If both defenders follow with small cards on this trick, |
+pg| ***** 103 ***** |
+
+
+pc|h8h2h9|
+pg| ***** 104 ***** |
+
+
+at|the declarer must hope that the outstanding @HQ and @HJ are split between the defenders' hands.|
+pc|hk|
+pg| ***** 105 ***** |
+
+
+up|7|md|0,hq8,,|
+at|^^
+If it turns out that East's heart honor was a singleton, |
+pg| ***** 106 ***** |
+
+
+pc|hA|pc|hJ|pc|h2|pc|h8|
+pg| ***** 107 ***** |
+
+
+at|then in order to succeed, the declarer must return to his hand in another suit and finesse the dummy's @H10 (playing West to have started with the remaining outstanding hearts).|
+pg| ***** 108 ***** |
+
+
+up|7|md|0,h8,,hq|nt|^b@2^z@3
+The only time that the declarer will have a decision to make is when East drops the @HQ or the @HJ on the first round of the suit. |
+pg| ***** 109 ***** |
+
+
+pc|hAhqh2h8|
+pg| ***** 110 ***** |
+
+
+wt|s|nt|^b@2^z@3
+If it turns out that East's heart honor was a singleton, then in order to succeed, the declarer must return to his hand in another suit and finesse the dummy's @H10 (playing West to have started with the remaining outstanding hearts). |
+pg| ***** 111 ***** |
+
+
+pc|h3h9ht|md|0,,,hj|
+at|^^
+This play will not be a success if East was dealt an original holding of the @HQJ doubleton since East will be able to win the trick with his remaining heart honor. |
+pg| ***** 112 ***** |
+
+
+up|1|nt|^b@2^z@3
+On this layout the declarer has to play the @HK from the dummy on the second round of the suit. East's remaining heart honor will fall |
+pg| ***** 113 ***** |
+
+
+pc|hkh|
+pg| ***** 114 ***** |
+
+
+at|and the declarer will have succeeded in playing the suit without losing a trick. |
+pg| ***** 115 ***** |
+
+
+up|2|at|^^
+^*bShould ^*n the declarer play the dummy's remaining high heart on the second round of the suit (succeeding when East start with a doubleton @HQJ) |
+pg| ***** 116 ***** |
+
+
+md|0,hj|n#|3|at| 
+^*bOR ^*n should he finesse the @H10 instead (succeeding when East started with a singleton honor in hearts) ^*b?^*n |
+pg| ***** 117 ***** |
+
+
+nt|^b@2^z@3
+The percentage play in this suit is to finesse the @H10 on the second round. It may have occurred to you that this claim contradicts 9 never (since the recommended play amounts to taking a second round finesse with a 9-card fit). 
+
+It turns out that it takes some relatively complex mathematical reasoning (using something called the principle of restricted choice) to demonstrate that it is indeed correct to finesse the @H10 in the position shown above.|
+pg| ***** 118 ***** |
+
+
+nt|^b@2^z@3
+It is beyond the scope of this program to try to explain the principle of restricted choice. That is probably just as well since 99% of the intended audience of this program would likely find such an explanation to be either uninteresting or confusing. 
+
+If you fall into the other 1% of bridge players who has a serious interest in math, there are plenty of bridge books which attempt to explain the principle of restricted choice and show other suit combinations in which this applies.|
+pg| ***** 119 ***** |
+
+
+nt|^b@2^z@3|
+cp|red|AT|
+^B@2^*bHoward Schutzman:  ^*n|cp||at|Once East drops the @HQ or @HJ, rather than the odds being 50% that the finesse on the 2nd round will work, it turns out the odds increase to 67%. 
+
+You don't need to understand the reasoning behind why the restricted choice calculation results in such a dramatic increase in the odds. But you must remember to always take the finesse because it will work much more often than it will lose.|
+PG| ***** 120 ***** |
+
+
+nt|^b@2^z@3^^|
+up|6|nt|^b@2^z@3^^|cs|2|ht|d|at|^-{ With a 9-card fit missing only the Queen and Jack, cash the Ace or King first. If a defender
+ plays either the Queen or Jack, finesse his partner for the other missing honor if possible. }
+^-
+|
+pg| ***** 121 ***** |
+
+
+ht|q|AT|"If possible" is at the end of this statement because if the East-West hearts were reversed, |
+pg| ***** 122 ***** |
+
+
+md|0,hq,,h98j|at|^^
+West would play the @HQ on the first round and it would not be possible to finesse the @H10 next. |
+pg| ***** 123 ***** |
+
+
+nt|^b@2^z@3^^|
+%%%%%
+%%%%%%
+qx|KJ  1,Deal 5|
+st||ha|y|
+rh||ah|Deal 5|ah|9-card fits missing|AH|The King-Jack|sv||sk|s|
+md|1SAK32HK32CKQJD432,SQJtDKJ5H987CT987,S54HAQJCA2DAQT987|
+MB|6NPPP|
+cs|2|at|{^*b Deal 5 ^*n     9-card fit   missing the King-Jack }|
+cs|4|at|^^^^{  PLAN  the play and make your contract.  } |
+pf|first,t|
+pc|sq|
+pg| ***** 124 ***** |
+
+
+%%%
+ha|y|md|1d432,,daqt987|nt|^b@2^z@3
+If the contract in the deal that you just played had been 7NT, it would have been necessary to play this diamond suit without losing a trick. However, the contract was 6NT and, in that contract, the declarer can afford to lose a diamond trick and still make his contract. 
+
+The purpose of this exercise is to try to find a way to maximize your chances of losing only 1 trick in the diamond suit.
+|
+pg| ***** 125 ***** |
+
+
+wt|n|md|0,dkj6,,d5|nt|^b@2^z@3
+It turns out that there is a way to play this suit to avoid losing 2 tricks whenever it is possible to do so. The key is to not take any kind of finesse on the first round of diamonds - make sure to win the first round of the trick with the @DA. |
+pg| ***** 126 ***** |
+
+
+pc|Da|at|^^
+Assume that both defenders follow with small cards to the first trick (if an honor card is played by either defender there would be no way for the declarer to lose more than 1 diamond trick). |
+pg| ***** 127 ***** |
+
+
+pc|d5d2d6|
+pg| ***** 128 ***** |
+
+
+wt|s|nt|^b@2^z@3
+The declarer should continue by crossing back to his hand in another suit in order to lead a second round of diamonds toward the dummy. |
+pg| ***** 129 ***** |
+
+
+pc|d3|at|^^
+On the layout shown above, West is welcome to take his @DK, but that will be the only trick that the defense wins in this suit. |
+pg| ***** 130 ***** |
+
+
+nt|^b@2^z@3
+If West prefers to play the @DJ on this trick, the @DQ is played from the dummy. |
+pg| ***** 131 ***** |
+
+
+pc|djdq|at|^^
+As before, the @DK will be the only diamond winner for the defense. |
+pg| ***** 132 ***** |
+
+
+up|7|md|0,d5|nt|^b@2^z@3
+The recommended play will also work if West was dealt all 4 diamonds. |
+pg| ***** 133 ***** |
+
+
+md|0,,,dkj6|at|^^
+In fact, the only time that this play will lose is if East was dealt 3 or 4 diamonds headed by both the @DK and the @DJ. On this layout there is nothing that the declarer could have done to avoid the loss of 2 diamond tricks. |
+pg| ***** 134 ***** |
+
+
+md|0,dkj|nt|^b@2^z@3
+Cashing the @DA on the first round of the suit allows the declarer to hold his diamond losers to 1 on any layout of the East-West cards in which this is possible. |
+pg| ***** 135 ***** |
+
+
+nt|^b@2^z@3^^|cs|2|ht|d|at|^-{ If you have a 9-card fit missing only the King and Jack and if you can afford to lose a trick
+ in this suit, do not take any ^*bfinesses^*N. Cash the Ace first and then lead toward the Queen. }
+^-
+|
+pg| ***** 136 ***** |
+
+
+wt|s|ht|q|at|Note that on the layout of the East-West cards shown above, the declarer could have also succeeded by finessing against either the @DK or the @DJ on the first round of the suit. |
+pg| ***** 137 ***** |
+
+
+md|0,d6,,dk|nt|^b@2^z@3
+Here is an example of a layout in which the recommended play of laying down the @DA gains over taking a first round finesse. East has the @DK and the declarer can actually play this suit for 6 tricks (not that he needs 6 tricks) by correctly playing the @DA on the first trick. |
+pg| ***** 138 ***** |
+
+
+nt|^b@2^z@3
+Watch what happens if the declarer makes the mistake of finessing the @DQ instead. |
+pg| ***** 139 ***** |
+
+
+pc|d2d5dq|at|^^
+East wins the first trick with his singleton @DK. |
+pg| ***** 140 ***** |
+
+
+pc|dk|
+pg| ***** 141 ***** |
+
+
+wt|s|nt|^b@2^z@3
+When South regains the lead to play a second round of diamonds and West follows small, |
+pg| ***** 142 ***** |
+
+
+pc|d3d6|nt|^b@2^z@3
+South has a decision to make. Finessing will be the winning play when West still has the @DJ, |
+pg| ***** 143 ***** |
+
+
+md|0,,,dj|nt|^b@2^z@3
+but going up with the @DA would be necessary if the @DJ was dealt to East (meaning that he started with a doubleton @DKJ). |
+pg| ***** 144 ***** |
+
+
+up|6|nt|^b@2^z@3
+Playing the @DA on the first round spares the declarer from having to make this guess.
+
+|
+pg| ***** 145 ***** |
+
+
+md|0,dk,,d5|nt|^b@2^z@3
+If the contract in this last deal had been 7NT, it would have been necessary to bring in the diamond suit without losing a trick. The correct percentage play in this case would have been to finesse the @DQ on the first round of the suit. |
+pg| ***** 146 ***** |
+
+
+nt|^b@2^z@3
+This play would succeed when West was dealt a doubleton @DK  |
+pg| ***** 147 ***** |
+
+
+md|0,d5|at| and when East was dealt a singleton @DJ. |
+pg| ***** 148 ***** |
+
+
+nt|^b@2^z@3
+In the latter case, after the finesse of the @DQ wins, |
+pg| ***** 149 ***** |
+
+
+pc|d2d5dqdj|
+pg| ***** 150 ***** |
+
+
+wt|s|nt|^b@2^z@3
+the declarer must return to his hand so that he can finesse again. |
+pg| ***** 151 ***** |
+
+
+up|4|nt|^b@2^z@3^^|cs|2|ht|d|at|^-{ To play a 9-card fit for no losers when the King and the Jack are missing and the
+ Ace and Queen are in the same hand, the percentage play is to finesse the Queen. }
+^-
+|
+pg| ***** 152 ***** |
+
+
+ht|q|at|The part about the Ace and Queen being in the same hand is very important. We will now consider a 9-card fit missing the King and Jack where the Ace and Queen are not in the same hand. |
+pg| ***** 153 ***** |
+
+
+md|1cqt987,,ca432|nt|^b@2^z@3
+Besides the fact that this is a club suit and the last suit we examined was a diamond suit, |
+pg| ***** 154 ***** |
+
+
+at|the big difference between this suit combination and the last one is that the Ace and Queen are now in separate hands. 
+
+If the declarer can afford to lose a trick in this suit, it is still correct to lay down the Ace on the first round of the suit, but things are different if the declarer has to play this suit without losing a trick. |
+pg| ***** 155 ***** |
+
+
+md|0,ck,,cj65|wt|n|nt|^b@2^z@3
+There are only 2 ways in which it is possible to play this suit for no losers against best defense. The simplest method is cash the @CA and hope that West was dealt a singleton @CK. |
+pg| ***** 156 ***** |
+
+
+pc|cac5c7ck|
+pg| ***** 157 ***** |
+
+
+at|^^
+A finessing position will remain over East's @CJ. |
+pg| ***** 158 ***** |
+
+
+up|4|md|0,c65|wt|s|at|^^
+The alternative is to lead the @CQ on the first round of the suit in the hope that East was dealt a singleton @CJ. |
+pg| ***** 159 ***** |
+
+
+pc|cq|
+nt|^b@2^z@3
+If West does not cover, |
+pg| ***** 160 ***** |
+
+
+pc|c5c2cj|
+pg| ***** 161 ***** |
+
+
+at|the declarer will have to take a second finesse against his @CK. |
+pg| ***** 162 ***** |
+
+
+up|4|at|^^
+It turns out that the 2 possible ways to play this suit for no losers are equally likely to succeed. |
+pg| ***** 163 ***** |
+
+
+nt|^b@2^z@3
+Leading the @CQ works only when East has a singleton @CJ |
+pg| ***** 164 ***** |
+
+
+wt|n|md|0,,,c65|at|and laying down the @CA works only when West has a singleton @CK. 
+
+If you are faced with this problem as the declarer, you will have to guess which of these distributions of the outstanding clubs to play for. |
+pg| ***** 165 ***** |
+
+
+wt|s|nt|^b@2^z@3^^|cs|2|ht|d|at|^-{ To play a 9-card fit missing only the King and Jack for no losers when the Ace and Queen 
+ are not in the same hand, guess between laying down the Ace and leading the Queen. } 
+^-
+|
+pg| ***** 166 ***** |
+
+
+ht|q|at|This is the first example of a suit combination that we have seen in this chapter where there are 2 plays that are equally likely to succeed. |
+pg| ***** 167 ***** |
+
+
+nt|^b@2^z@3^^|bt||
+%%%%
+^b@2
+qx|KQ,Deal 6|
+st||sk|s|ha||
+md|1SAJT98DAQ2CAQJT9,sqhkqjt98 d8765 c87,S5432H32DKJT9CK32,SK76HA7654D43C654|
+mb|6s|mb|p|mb|p|mb|p|mb|p|mb|p|mb|p|
+rh||ah|Deal 6|ah|9-card fits missing|AH|the King-Queen|sv||cs|5|
+
+cs|2|at|{^*b Deal 6 ^*n     9-card fit   missing the King-Queen }|
+cs|4|at|^^^^{  PLAN  the play and make your contract.  } |
+pf|first,t|
+pc|hK|
+PG| ***** 168 ***** |
+
+
+nt|^b@2^z@3^^|
+%%
+ha|y|sk||md|3sajt98,,s5432|nt|^b@2^z@3
+In order to succeed in the 6@S contract that you played in this deal, you have to play this trump suit for only 1 loser. Of all of the suit combinations that appear in this chapter, this one is arguably the most likely to arise in practice. 
+
+As such, it is especially important to learn the correct percentage play with this suit combination! |
+pg| ***** 169 ***** |
+
+
+md|0,sq,,sk76|nt|^b@2^z@3
+The correct play is to start by leading this suit from the the side with the low cards. |
+pg| ***** 170 ***** |
+
+
+pc|s2|nt|^b@2^z@3
+Assuming East follows with a small card (otherwise there is no problem), |
+pg| ***** 171 ***** |
+
+
+pc|s6|nt|^b@2^z@3
+you should take a finesse. |
+pg| ***** 172 ***** |
+
+
+pc|sj|nt|^b@2^z@3
+Unless West can win this trick the rest will be easy. When he does so |
+pg| ***** 173 ***** |
+
+
+pc|sq|
+pg| ***** 174 ***** |
+
+
+wt|n|nt|^b@2^z@3
+The percentage play is to return to the dummy in order to take a second finesse against the remaining
+outstanding honor in the East hand. |
+pg| ***** 175 ***** |
+
+
+pc|s3s7st|
+pg| ***** 176 ***** |
+
+
+md|0,sk|nt|^b@2^z@3
+The only time that this plan will lose when the declarer could have succeeded is when West was dealt the @SKQ doubleton. |
+pg| ***** 177 ***** |
+
+
+up|7|wt|s|md|0,s7,,skq|nt|^b@2^z@3
+The alternative plan of playing the @SA on the first round loses in 3 cases: when West has a singleton @S7, |
+pg| ***** 178 ***** |
+
+
+md|0,s6,,s7|at|^^
+a singleton @S6, |
+pg| ***** 179 ***** |
+
+
+md|0,,,s6|at|and when East was dealt all 4 of the missing spades. |
+pg| ***** 180 ***** |
+
+
+md|0,skq7|nt|^b@2^z@3
+If West was dealt 3 or 4 spades including both the @SK and the @SQ, there is no way to avoid losing 2 tricks in this suit. |
+pg| ***** 181 ***** |
+
+
+md|0,,,sk7|wt|n|nt|^b@2^z@3^^|cs|2|ht|d|at|^-{ With a 9-card fit missing only the King and Queen, the percentage play is to finesse twice. }
+^-
+|
+pg| ***** 182 ***** |
+
+
+ht|l|md|0,sk|at|The only time that the recommended play loses when one of the alternative plays would have worked is when West was dealt the @SKQ doubleton. For those of you who are mathematicians, you may be interested in knowing that the odds of this distribution occurring are less than 7%|
+pg| ***** 183 ***** |
+
+
+nt|^b@2^z@3^^|
+
+qx|AQ,Deal 7|ha||
+st||sk|s|ha|y|
+md|SAKQHKJD432CAK432,SJT98HT98DAQ6CQJT,S32HAQ2DKJT987C65,S7654H76543D5C987|
+mb|6N|mb|p|mb|p|mb|p|
+rh||ah|Deal 7|ah|9-card fits missing|AH|the Ace-Queen|sv||
+cs|2|at|{^*b Deal 7 ^*n     9-card fit   missing the Ace-Queen }|
+cs|4|at|^^^^{  PLAN  the play and make your contract.  } |
+pf|first,t|
+pc|sJ|
+PG| ***** 184 ***** |
+
+
+pf||nt|^b@2^z@3^^|
+
+ha|y|sk||md|1d432,,dkjt987|
+nt|^b@2^z@3
+In order to succeed in 6NT on the deal you just played, you have to avoid losing 2 diamond tricks with this suit combination. The @DA is missing so you will have to lose a trick to that card. 
+
+The key to this problem is finding the best percentage play to avoid losing a trick to the missing @DQ as well. |
+pg| ***** 185 ***** |
+
+
+nt|^b@2^z@3
+It must be best to start by leading a diamond toward the high cards. |
+pg| ***** 186 ***** |
+
+
+pc|d2|at|^^
+When West follows suit with a small diamond, |
+pg| ***** 187 ***** |
+
+
+md|0,d5|pc|d5|at| you have to decide whether to play the @DK or a smaller diamond from the dummy. |
+pg| ***** 188 ***** |
+
+
+md|0,da,,dq6|nt|^b@2^z@3
+Let's first consider the relevant cases when diamonds are 2-2. If West has the doubleton @DA, then it will be necessary to play the @DK from the dummy. 
+
+That card will win the trick, |
+pg| ***** 189 ***** |
+
+
+pc|dkd6|
+pg| ***** 190 ***** |
+
+
+at|and the @DA and the @DQ will fall together on the next round. |
+pg| ***** 191 ***** |
+
+
+up|2|nt|^b@2^z@3
+(...backing up...)|
+pg| ***** 192 ***** |
+
+
+md|0,dq,,da|at|  If West was dealt the doubleton @DQ (instead of the doubleton @DA) playing the @DK on the first round of the suit will not be a success|
+pg| ***** 193 ***** |
+
+
+at|^^
+On this layout, you must play a lower diamond from the dummy in order to avoid losing a trick to the @DQ. |
+pg| ***** 194 ***** |
+
+
+pc|dj|nt|^b@2^z@3
+Regardless of whether or not East takes his @DA, that card will represent the only winner in diamonds for the defense. |
+pg| ***** 195 ***** |
+
+
+up|2|nt|^b@2^z@3
+The relevant cases when diamonds are 2-2 cancel each other out. When West has the @DQ and East has the @DA, the declarer must not play the @DK from the dummy. |
+pg| ***** 196 ***** |
+
+
+md|0,da,,dq|nt|^b@2^z@3
+When West has the @DA and East has the @DQ, the declarer must play the @DK from the dummy. The 2 possible layouts of the East-West diamonds are equally likely.|
+pg| ***** 197 ***** |
+
+
+md|0,d6|nt|^b@2^z@3
+It is the 3-1 breaks that reveal the correct percentage play in this suit. Playing the @DK on the first round succeeds in only 1 relevant 3-1 break - when East was dealt a singleton @DQ. |
+pg| ***** 198 ***** |
+
+
+md|0,dq,,da|nt|^b@2^z@3
+There are 3 relevant 3-1 breaks where the declarer can succeed by playing a diamond other than the @DK from the dummy, when East has a singleton @DA, |
+pg| ***** 199 ***** |
+
+
+md|0,da,,d6|at|a singleton @D6, |
+pg| ***** 200 ***** |
+
+
+md|0,d5,,d6|nt|^b@2^z@3
+or a singleton @D5. In all of these cases, the declarer will have to return to his hand to play the second round of diamonds.|
+pg| ***** 201 ***** |
+
+
+md|0,d6,,c32|nt|^b@2^z@3
+As an added bonus for not playing the @DK on the first round of the suit, consider the possibility of West having all 4 outstanding diamonds. |
+pg| ***** 202 ***** |
+
+
+pc|d5|nt|^b@2^z@3
+The @DJ wins the first trick as East discards. |
+pg| ***** 203 ***** |
+
+
+pc|djc2|
+pg| ***** 204 ***** |
+
+
+wt|s|nt|^b@2^z@3
+The declarer must return to his hand to lead a second round of diamonds. |
+pg| ***** 205 ***** |
+
+
+pc|d3|nt|^b@2^z@3
+Suppose West takes his @DA this time (not that it matters). |
+pg| ***** 206 ***** |
+
+
+pc|dad7c3|
+pg| ***** 207 ***** |
+
+
+wt|s|st|s|nt|^b@2^z@3
+The declarer must arrange to return to his hand once again to take a further finesse against West's @DQ. |
+pg| ***** 208 ***** |
+
+
+md|1d432,daq5,dkjt987,d6|
+nt|^b@2^z@3^^|cs|2|ht|d|at|^-{ With a 9-card fit missing only the Ace and Queen, do 
+ not play the King - finesse against the Queen instead. }
+^-
+|
+pg| ***** 209 ***** |
+
+
+ht|q|at|Some bridge players wrongly think that the declarer has a pure guess in this situation, but the correct percentage play is in fact a substantial favorite over the alternative play of the @DK. |
+pg| ***** 210 ***** |
+
+
+md|1d5432,daq6,dkjt987|
+nt|^b@2^z@3
+While we are on the subject, it should be noted that the same percentage play applies to a 10-card fit (and an 8-card fit) when the Ace and Queen are the only missing relevant cards:
+|
+pg| ***** 211 ***** |
+
+
+ht|o|cs|2|at|^-{ With a 10-card fit missing only the Ace and Queen, do 
+ not play the King - finesse against the Queen instead. }
+|
+pg| ***** 212 ***** |
+
+
+md|1d432,daq6,dkjt987,d5|nt|^b@2^z@3
+Let's return to the original 9-card fit that we have been studying in order to note an interesting concept of defensive strategy and how the cards that the defenders choose to play should influence the declarer's plan.
+|
+pg| ***** 213 ***** |
+
+
+nt|^b@2^z@3
+Suppose that when South leads the first round of diamonds, |
+pg| ***** 214 ***** |
+
+
+pc|d2|nt|^b@2^z@3
+West chooses to win the trick with his @DA. |
+pg| ***** 215 ***** |
+
+
+pc|dad7d5|
+pg| ***** 216 ***** |
+
+
+wt|s|nt|^b@2^z@3
+Later, South leads a second round of diamonds from his hand |
+pg| ***** 217 ***** |
+
+
+pc|d3|nt|^b@2^z@3
+and West follows small. |
+pg| ***** 218 ***** |
+
+
+pc|d6|nt|^b@2^z@3
+The question is, "should the declarer play the @DK or a low diamond from the dummy when West plays this way?" |
+pg| ***** 219 ***** |
+
+
+nt|^b@2^z@3
+The correct play is to finesse West for the @DQ. The reason is that the best percentage play involved finessing West for the @DQ and the declarer should not allow West's decision to play the @DA on the first round of the suit alter his strategy. The declarer's plan was always going to work when West was dealt the @DQ |
+pg| ***** 220 ***** |
+
+
+md|0,,,dq|nt|^b@2^z@3
+and it was only going to fail when East was dealt that card. |
+pg| ***** 221 ***** |
+
+
+md|0,dq|nt|^b@2^z@3
+He should stick to his guns and play West for the @DQ! |
+pg| ***** 222 ***** |
+
+
+md|1d432,daq6,dkjt987,d5|nt|^b@2^z@3
+Here is the lesson to be learned from this:
+|
+pg| ***** 223 ***** |
+
+
+cs|2|at|^^^-{ In all suit combination problems, the declarer should make a plan and 
+ he should not let the plays that the defenders make alter that plan. }
+^-
+|
+pg| ***** 224 ***** |
+
+
+ht|x|at|Remember, when you are the declarer, the defenders are not there to help you out!|
+pg| ***** 225 ***** |
+
+
+nt|^b@2^z@3^^|
+%%%%%
+%%%%%
+qx|KJ  2,Deal 8|st||sk|s|ha|y|
+rh||ah|Deal 8|ah|8-card fits missing|AH|the King-Jack|sv||md|1SQT98HAKQDJT98CA2,SJ65HJT98D3C76543,SA432H32DAKQ2CKQJ,SK7H7654D7654CT98|
+mb|6S|mb|p|mb|p|mb|p|
+cs|2|at|{^*b Deal 8 ^*n     8-card fit   missing the King-Jack }|
+cs|4|at|^^^^{  PLAN  the play and make your contract.  } |
+pf|first,t|
+pc|sJ|
+PG| ***** 226 ***** |
+
+
+sk||md|1sqt98,,a432|
+nt|^b@2^z@3
+Succeeding in the 6@S contract in the hand you just played involves losing no more than 1 trump trick from the suit combination shown above (that is, a 4-4 fit missing only the King and Jack).
+
+This is another example of a suit combination that arises with considerable frequency. Despite how common it is, many bridge players do not know the correct percentage play. |
+pg| ***** 227 ***** |
+
+
+nt|^b@2^z@3
+There are quite a number of reasonable ways that you could go about playing this suit. The calculations that would be required to compare the various lines of play are too complex to deal with at the table and they will not be presented here. The correct percentage play will be stated, but no attempt to justify this play will be made. 
+
+You will just have to accept this claim on faith (or try to work it out yourself if you are so inclined).|
+pg| ***** 228 ***** |
+
+
+nt|^b@2^z@3^^|cs|2|ht|d|at|^-{ With a 4-4 fit in which the Ace and Queen are split and 
+ only the King and Jack are missing, take 2 finesses. }
+^-
+|
+pg| ***** 229 ***** |
+
+
+at|The declarer should start by leading from his hand. Whether he should lead the Queen or one of the lower equal cards is a matter that we will return to soon. |
+pg| ***** 230 ***** |
+
+
+nt|^b@2^z@3
+Assume for now that the declarer leads the @SQ. |
+pg| ***** 231 ***** |
+
+
+pc|sq|md|0,sj65,,k7|nt|^b@2^z@3
+When West follows with a small card, |
+pg| ***** 232 ***** |
+
+
+pc|s5|at|a small card should be played from the dummy. |
+pg| ***** 233 ***** |
+
+
+pc|s2|nt|^b@2^z@3
+Suppose that East can win the @SK. |
+pg| ***** 234 ***** |
+
+
+pc|sk|
+pg| ***** 235 ***** |
+
+
+wt|s|nt|^b@2^z@3
+When South regains the lead he should get back to his hand and finesse against the @SJ with West. |
+pg| ***** 236 ***** |
+
+
+pc|sts6s3|md|0,,,sj|nt|^b@2^z@3
+If East was dealt the @SJ in addition to his @SK, then the declarer will fail. The correct percentage play in this suit will not always work, but it will work more often than any of the possible alternative plans. |
+pg| ***** 237 ***** |
+
+
+up|6|md|0,skj65,,s7|nt|^b@2^z@3
+If West covers the @SQ with his @SK |
+pg| ***** 238 ***** |
+
+
+pc|sk|at|the declarer can win dummy's @SA |
+pg| ***** 239 ***** |
+
+
+pc|sas7|
+pg| ***** 240 ***** |
+
+
+nt|^b@2^z@3
+and the @SJ will be his only loser in the suit. |
+pg| ***** 241 ***** |
+
+
+up|3|nt|^b@2^z@3
+Suppose that West makes the interesting (and difficult) play of refusing to cover an honor with an honor from the holding shown above. 
+
+The @SQ will win the trick, |
+pg| ***** 242 ***** |
+
+
+pc|s5s2s7|
+pg| ***** 243 ***** |
+
+
+at|but the declarer must be careful if West again refuses to cover on the second round of spades. |
+pg| ***** 244 ***** |
+
+
+pc|sts6|at|He must play low again from the dummy - to play the @SA would be fatal on this layout.|
+pg| ***** 245 ***** |
+
+
+up|6|nt|^b@2^z@3
+Now let's return to the question of whether the declarer should start by leading the @SQ or a lower spade from his hand. Superficially it doesn't look like it should matter since the declarer's plan should be to take 2 finesses. 
+
+Regardless of the spade he leads to the first trick, he will hold his losers in this suit to 1 as long as West was dealt either the @SK or the @SJ. |
+pg| ***** 246 ***** |
+
+
+md|0,h2,,skj65|nt|^b@2^z@3
+There is a subtle reason why it is better to avoid leading the @SQ on the first round of the suit. Suppose that East was dealt all 5 missing spades. Now, when South leads the @SQ, |
+pg| ***** 247 ***** |
+
+
+pc|Sq|nt|^b@2^z@3
+West will discard |
+pg| ***** 248 ***** |
+
+
+pc|h2|nt|^b@2^z@3
+and the declarer will learn that there is no longer any way to prevent both the @SK and the @SJ from winning tricks for the defense. |
+pg| ***** 249 ***** |
+
+
+up|2|nt|^b@2^z@3
+It makes a big difference if the declarer leads a lower spade out of his hand for the first finesse in this suit. |
+pg| ***** 250 ***** |
+
+
+pc|st|nt|^b@2^z@3
+When West discards, |
+pg| ***** 251 ***** |
+
+
+pc|h2|at|the declarer learns that East was dealt all 5 spades, |
+pg| ***** 252 ***** |
+
+
+at|but he can recover by going up with the dummy's @SA |
+pg| ***** 253 ***** |
+
+
+pc|sas5|
+pg| ***** 254 ***** |
+
+
+at|and leading the next 2 rounds of the suit toward his hand. |
+pg| ***** 255 ***** |
+
+
+up|4|nt|^b@2^z@3
+If spades were trump, the 5-0 split would be too much to handle, but at notrump (or if spades were a side suit), it might well be necessary to refrain from starting with the @SQ. |
+pg| ***** 256 ***** |
+
+
+md|1sqt98,,sa432,skj765|nt|^b@2^z@3^^|cs|2|ht|d|at|^-{ In a double finesse position against the King and Jack when the Ace and Queen are split, 
+ it is best to not lead the Queen on the first round of the suit (in case the next player is void). }
+^-
+|
+pg| ***** 257 ***** |
+
+
+ht|q|at|The odds of the missing spades being divided as you see above are only about 2%. That may not seem like much, but the more bridge you play, the more those extra 2% chances will add up!|
+pg| ***** 258 ***** |
+
+
+%%%%%%
+%%%%%%%%%
+qx|QJ  2,Deal 9|
+nt|^b@2^z@3^^|
+st||sk|s|ha|y|
+md|1SAKT987H2D32CAKQ2,sJ4hJT98dAK64c654,S32HA6543DQJCJT98,SQ65HKQ7DT9876C73|
+%
+bh|Play, West, hJ, res, on-lead, T3, always|
+%
+mb|4s|mb|p|mb|pp|
+rh||ah|Deal 9|ah|8-card fits missing|AH|the Queen-Jack|sv||
+cs|2|at|{^*b Deal 9 ^*n     8-card fit   missing the Queen-Jack }|
+cs|4|at|^^^^{  PLAN  the play and make your contract.  } |
+pf|first,t|
+pc|dK|
+PG| ***** 259 ***** |
+
+
+ha|y|md|1sakt987,,s32|
+
+nt|^b@2^z@3
+The key to making 4@S on the deal that you just played is to avoid losing 2 trump tricks with the above 8-card fit where both the Queen and Jack are missing. |
+pg| ***** 260 ***** |
+
+
+md|0,sqj65,,s4|sk||at|^^
+It may not always be possible to lose only one trump trick with this holding. For example, if West was dealt 4 or 5 spades including both the @SQ and the @SJ, there is no way to stop him from winning 2 tricks in this suit. |
+pg| ***** 261 ***** |
+
+
+md|0,s4,,sqj65|
+nt|^b@2^z@3
+There is a way for the declarer to ensure that he loses only 1 spade trick on almost all the layouts of the East-West cards in which it is possible for him to do so. He should start by leading either the @SA or the @SK. |
+pg| ***** 262 ***** |
+
+
+pc|sa|at|^^
+On this layout both defenders follow small, but if either of them had dropped an honor on this trick, the remainder of the declarer's task would be easy. |
+pg| ***** 263 ***** |
+
+
+pc|s4s2s5|
+pg| ***** 264 ***** |
+
+
+wt|n|nt|^b@2^z@3
+The second round of spades should be led from the short side. |
+pg| ***** 265 ***** |
+
+
+pc|s3|at|^^
+Again, if East plays the @SQ or the @SJ, there will be no further problems so assume that East follows suit with the remaining outstanding low spade. |
+pg| ***** 266 ***** |
+
+
+pc|s6|nt|^b@2^z@3
+The declarer must now make the key play of a low spade from his hand. If he plays the @SK instead, he will lose 2 tricks on the layout shown above. |
+pg| ***** 267 ***** |
+
+
+pc|st|at|^^
+On the actual layout, South will win the trick since East has both the @SQ and the @SJ. East will come to a spade trick, but the declarer does not mind losing 1 trick in this suit. |
+pg| ***** 268 ***** |
+
+
+md|0,sj|nt|^b@2^z@3
+If West had been able to win this trick, |
+pg| ***** 269 ***** |
+
+
+pc|sj|
+pg| ***** 270 ***** |
+
+
+at|there would be no further problems. The last spade that the defenders were dealt would fall on the third round under South's @SK. |
+pg| ***** 271 ***** |
+
+
+up|8|wt|n|md|0,,,sj4|at|^^
+The only time that the recommended play loses when another play would have worked is when East was dealt all 5 missing spades. The only way to pick up this holding for 1 loser is to take a first round finesse. |
+pg| ***** 272 ***** |
+
+
+pc|s2s4st|nt|^b@2^z@3
+While this plan would work wonders if East was indeed dealt all 5 spades, |
+pg| ***** 273 ***** |
+
+
+md|0,sj|at|it would not work very well if the spades were distributed as above. 
+
+On this layout West would win his singleton @SJ. |
+pg| ***** 274 ***** |
+
+
+pc|sj|
+pg| ***** 275 ***** |
+
+
+wt|n|nt|^b@2^z@3
+When the declarer leads a second round of spades from the dummy later in the play |
+pg| ***** 276 ***** |
+
+
+pc|s3|at|and East follows small, |
+pg| ***** 277 ***** |
+
+
+pc|s5|at|the declarer is faced with a dilemma. 
+
+On the above layout he must finesse again in order to avoid losing a second trick, but to do so |
+pg| ***** 278 ***** |
+
+
+pc|s9|md|0,sq6|at|would be disastrous if the remaining spades were distributed as you now see above. |
+pg| ***** 279 ***** |
+
+
+up|7|md|0,,,sqj6|nt|^b@2^z@3
+The bottom line is that the declarer should give up on winning 5 tricks when East has all 5 spades |
+pg| ***** 280 ***** |
+
+
+md|0,sj|at|and worry about more likely layouts like the one that is now displayed. 
+
+The recommended play is not quite perfect, but it almost always brings in 5 tricks when it is possible to do so.|
+pg| ***** 281 ***** |
+
+
+nt|^b@2^z@3^^|ht|d|cs|2|at|^-{ If you can afford 1 loser from an 8-card fit missing only the Queen and Jack and with the 
+ Ace-King in one hand, cash a high honor. If necessary, take a finesse on the second round. }
+^-
+|
+pg| ***** 282 ***** |
+
+
+ht|q|at|On the above layout, the second round finesse is not necessary because West's @SJ will fall on the first round. |
+pg| ***** 283 ***** |
+
+
+md|0,s4,,sj|nt|^b@2^z@3
+When West has a small singleton the finesse is critical. |
+pg| ***** 284 ***** |
+
+
+at|^^
+If the declarer could not afford to lose any tricks from this suit, |
+pg| ***** 285 ***** |
+
+
+at|he could not do so if the layout of the East-West cards were as you now see above. |
+pg| ***** 286 ***** |
+
+
+md|0,s5|nt|^b@2^z@3
+His best chance to play this suit for no losers is to hope that East was dealt exactly 3 cards including both the @SQ and the @SJ. |
+pg| ***** 287 ***** |
+
+
+at|^^
+Here the declarer can win all 6 possible spade tricks by leading the suit from the dummy (twice if necessary) and taking a double finesse against the @SQ and the @SJ. |
+pg| ***** 288 ***** |
+
+
+nt|^b@2^z@3^^|ht|d|cs|2|at|^-{ If you cannot afford any losers from an 8-card fit missing only the Queen and Jack 
+ and with the Ace-King in one hand, double finesse against the Queen and Jack. }
+^-
+|
+pg| ***** 289 ***** |
+
+
+ht|q|at|The chances of East having a spade holding like this are not very good, |
+pg| ***** 290 ***** |
+
+
+md|0,sqj,,s54|at|but they are better than the alternative of playing the @SA and @SK in the hope that West was dealt the @SQJ doubleton. |
+pg| ***** 291 ***** |
+
+
+%%%%%
+%%%%%% 
+qx|QT,Deal 10|nt|^b@2^z@3^^|
+st||sk|s|
+md|1SKJ98HAK2DK43CAK2,SQ76H543DQJCJ9876,SA432HQJT8DA2CQ43,ST5H976DT98765CT5|
+
+mb|6S|mb|p|mb|p|mb|p|
+ha|y|rh||ah|8-card fits missing|AH|the Queen-Ten|ah|Deal 10|sv||
+cs|2|at|{^*b Deal 10 ^*n     8-card fit   missing the Queen-Ten }|
+cs|4|at|^^^^{  PLAN  the play and make your contract.  } |
+pf|first,t|
+pc|dQ|
+PG| ***** 292 ***** |
+
+
+HA|Y|sk||md|1skj98,,sa432|
+nt|^b@2^z@3
+^*bIf^*n the contract in the deal you played just was 7@S, then the declarer could not afford to lose a trump trick. In that case, the spade suit that you see above would call for 8 ever to be applied - the percentage play would be to cash the @SA before finessing East for the @SQ. 
+
+Given that the actual contract was 6@S, the declarer can afford to lose 1 trump trick. The last deal problem boils down to making sure that you do not lose 2 trump tricks.|
+pg| ***** 293 ***** |
+
+
+nt|^b@2^z@3
+There is a neat play available in this suit combination that allows the declarer to guarantee that he will win 3 tricks. This play is far from intuitive, but once you have seen it, you should be able to remember it. |
+pg| ***** 294 ***** |
+
+
+at|^^
+The critical play is to start by cashing the high honor from the hand that contains the @SJ. |
+pg| ***** 295 ***** |
+
+
+nt|^b@2^z@3
+That would mean laying down the @SK in this case. |
+pg| ***** 296 ***** |
+
+
+nt|^b@2^z@3^^|pc|sk|md|0,sqt76,,s5|nt|^b@2^z@3
+The only relevant layouts are those in which one of the defenders was dealt 4 spades including both the @SQ and the @S10 (if the suit is 3-2 or if the @SQ or @S10 is singleton there will be no further problems). Let's first suppose that West was dealt 4 spades headed by the @SQ and @S10. |
+pg| ***** 297 ***** |
+
+
+at|^^
+Both defenders follow small to the first round of spades. |
+pg| ***** 298 ***** |
+
+
+pc|s6s2s5|
+pg| ***** 299 ***** |
+
+
+nt|^b@2^z@3
+South should continue by leading the @S9 or the @S8 out of his hand. |
+pg| ***** 300 ***** |
+
+
+pc|s9|at|^^
+West must play the @S7 from the above holding to cause any problems, |
+pg| ***** 301 ***** |
+
+
+pc|s7|at|but the declarer can counter by playing low from the dummy. |
+pg| ***** 302 ***** |
+
+
+pc|s3|nt|^b@2^z@3
+On the actual layout West has the last 2 spades so the @S9 will win the trick, |
+pg| ***** 303 ***** |
+
+
+md|0,,,st|at|but if East were able to win the trick, |
+pg| ***** 304 ***** |
+
+
+pc|st|
+pg| ***** 305 ***** |
+
+
+at|everything would be all right. 
+
+The only remaining spade would fall under the dummy's @SA on the next round. |
+pg| ***** 306 ***** |
+
+
+up|3|md|0,h2,,sqt7|
+nt|^b@2^z@3
+If it turns out that it was East instead of West who was dealt 4 spades including the @SQ and @S10, |
+pg| ***** 307 ***** |
+
+
+at|then West will discard on the second round of spades. |
+pg| ***** 308 ***** |
+
+
+pc|h2|at|^^
+The declarer's response to this turn of events is to rise with dummy's @SA |
+pg| ***** 309 ***** |
+
+
+pc|sas7|
+pg| ***** 310 ***** |
+
+
+at|and to lead a third round toward his @SJ. East's @SQ will be the only spade winner for the defense. |
+pg| ***** 311 ***** |
+
+
+up|8|md|1skj98,sqt65,sa432,s7|nt|^b@2^z@3
+There are a lot of possible ways to play this spade suit, but none of these offer the same 100% safety that the recommended plan delivers. 
+
+As long as the declarer starts by winning the first trick with the @SK and follows up as was just described, he will ensure 3 spade winners regardless of the layout of the outstanding spades. |
+pg| ***** 312 ***** |
+
+
+nt|^b@2^z@3^^|ht|d|Cs|2|at|^-{ If you can afford to lose 1 trick from a 4-4 fit in which the Queen and 10 are missing and
+ the Ace-King are split, start by cashing the high honor from the hand that has the Jack. 
+ Next, lead low toward the other high honor and finesse against the 10 if necessary. }
+^-
+|
+pg| ***** 313 ***** |
+
+
+ht|v|at|Not very many bridge plays come with a 100% guarantee, but this is one that does! |
+pg| ***** 314 ***** |
+
+
+qx|rev,Review|bt||nt|^b@2^z@3^^|cs|2|fp|3|at|
+^-{          Review          }
+^-|fp||at|
+The purpose of this chapter was to teach you the best percentage play for various suit combinations that occur frequently at the table. In some of these suit combinations, the correct solution can be arrived at through common sense. In others, at least some mathematics is required to come up with the best percentage play.
+|n#|9|at|Most serious bridge players attempt to memorize the percentage plays of common suit combinations rather than figure them out each time they arise in practice. Memorizing the correct way to play various suits is not a skill that comes naturally to a lot of bridge players. It takes practice and experience to become good at this. Hopefully this chapter has provided you with some of the practice you will need in this area!
+|n#|9|at|While it was never said so explicitly, the suit combination problems that appeared in the deals that you played were more or less ^*iin a vacuum^*N. This means that the only real consideration in each of the deals that you played was the best way to play one key suit.
+|n#|9|at|Most real life bridge deals are not like that. In most cases, factors like entries, consideration of the opponent's bidding (or lack thereof), and the danger of the opponent's winning tricks with ruffs must be considered. On some deals these factors will be enough to make what would normally be the correct percentage play in a given suit the incorrect play in the context of a full deal.
+|n#|9|at|Regardless, the study of card combinations is useful not only because these problems do sometimes occur ^*iin a vacuum^*N, but also because learning to think about these problems will make you better at thinking about bridge in general!
+
+|
+pg| ***** 315 ***** |
+
+
+3d||
+
+nt|^b@2^-|ih|gsa5432|at|
+|at|^^|ih|gsqjt98|at|
+
+|cs|1|at|{ If you have a 10-card ^*bfit^*N with only the King missing, the percentage play is to finesse. }
+|
+pg| ***** 316 ***** |
+
+
+nt|^b@2^-|ih|gsaj432|at|
+|at|^^|ih|gsq9876|at|
+
+|cs|1|at|{ With a 10-card fit missing the King and 10 and when the Queen and Jack are divided, 
+ lead an honor card (that is, not a spot card) for the first finesse you take in the suit. }
+^-
+|
+pg| ***** 317 ***** |
+
+
+nt|^b@2^-|ih|gsaj432|at|
+|at|^^|ih|gsqt9876|at|
+
+|cs|1|at|{ With an 11-card fit missing the King, do not finesse. Play the Ace and hope that the King falls. }
+|
+pg| ***** 318 ***** |
+
+
+nt|^b@2^-|ih|gsa5432|at|
+|at|^^|ih|gskqt9|at|
+
+|cs|1|at|{ With a 9-card fit missing only the Jack and with 2 high honors in one hand and 1 high 
+ honor in the other hand, win the first trick in the hand that was dealt 2 high honors. }
+
+|
+pg| ***** 319 ***** |
+
+
+nt|^b@2^-|ih|gsa5432|at|
+|at|^^|ih|gskq98|at|
+
+|cs|1|at|{ With a 9-card fit missing only the Jack and 10 and with 2 high honors in one hand and 1 
+ high honor in the other hand, win the first trick in the hand that was dealt 1 high honor. }
+|
+pg| ***** 320 ***** |
+
+
+nt|^b@2^-|ih|gsakt|at|
+|at|^^|ih|gs765432|at|
+
+|cs|1|at|{ With a 9-card fit missing only the Queen and Jack, cash the Ace or King first. If a defender
+ plays either the Queen or Jack, finesse his partner for the other missing honor if possible. }
+
+|
+pg| ***** 321 ***** |
+
+
+nt|^b@2^-|ih|gsaqt987|at|
+|at|^^|ih|gs432|at|
+
+|cs|1|at|{ If you have a 9-card fit missing only the King and Jack and if you can afford to lose a trick
+ in this suit, do not take any ^*bfinesses^*N. Cash the Ace first and then lead toward the Queen. }
+
+
+|
+pg| ***** 322 ***** |
+
+
+nt|^b@2^-|ih|gsaqt987|at|
+|at|^^|ih|gs432|at|
+
+|cs|1|at|{ To play a 9-card fit for no losers when the King and the Jack are missing and the
+ Ace and Queen are in the same hand, the percentage play is to finesse the Queen. }
+
+
+
+|
+pg| ***** 323 ***** |
+
+
+nt|^b@2^-|ih|gsa432|at|
+|at|^^|ih|gsqt987|at|
+
+|cs|1|at|{ To play a 9-card fit missing only the King and Jack for no losers when the Ace and Queen 
+ are not in the same hand, guess between laying down the Ace and leading the Queen. } 
+
+|
+pg| ***** 324 ***** |
+
+
+nt|^b@2^-|ih|gs5432|at|
+|at|^^|ih|gsajt98|at|
+
+|cs|1|at|{ With a 9-card fit missing only the King and Queen, the percentage play is to finesse twice. }
+
+
+
+|
+pg| ***** 325 ***** |
+
+
+nt|^b@2^-|ih|gskjt987|at|
+|at|^^|ih|gs432|at|
+
+|cs|1|at|{ With a 9-card fit missing only the Ace and Queen, do not play the King
+ as a finesse against the Ace - finesse against the Queen instead. }
+^-
+|
+pg| ***** 326 ***** |
+
+
+nt|^b@2^-|ih|gskjt987|at|
+|at|^^|ih|gs5432|at|
+
+|cs|1|at|{ With a 10-card fit missing only the Ace and Queen, do not play the King
+ as a finesse against the Ace - finesse against the Queen instead. }
+^-
+|
+pg| ***** 327 ***** |
+
+
+nt|^b@2^-|ih|gsa432|at|
+|at|^^|ih|gsqt98|at|
+|ht|j|cs|1|at|{ With a 4-4 fit in which the Ace and Queen are split and 
+ only the King and Jack are missing, take 2 finesses. }
+
+
+|
+pg| ***** 328 ***** |
+
+
+ht|l|n#|3|at|
+|cs|2|At|{ In a double finesse position against the King and Jack when the Ace and Queen are split, 
+ it is best to not lead the Queen on the first round of the suit (in case the next player is void). }
+|
+pg| ***** 329 ***** |
+
+
+nt|^b@2^-|ih|gs32|at|
+|at|^^|ih|gsakt987|at|
+|ht|j|cs|1|at|{ If you can afford 1 loser from an 8-card fit missing only the Queen and Jack and with the 
+ Ace-King in one hand, cash a high honor. If necessary, take a finesse on the second round. }
+
+|
+pg| ***** 330 ***** |
+
+
+ht|l|n#|3|at|
+|cs|2|At|{ If you cannot afford any losers from an 8-card fit missing only the Queen and Jack 
+ and with the Ace-King in one hand, double finesse against the Queen and Jack. }
+
+|
+pg| ***** 331 ***** |
+
+
+nt|^b@2^-|ih|gsa432|at|
+|at|^^|ih|gskj98|cs|1|at|
+
+{If you can afford to lose 1 trick from a 4-4 fit in which the Queen and 10 are missing and
+ the Ace-King are split, start by cashing the high honor from the hand that has the Jack. 
+ Next, lead low toward the other high honor and finesse against the 10 if necessary. }|
+pg| ***** 332 ***** |
+
+
+qx||bt||nt||cs|c|cp||fp|t|ht|i|at|^-{^^End^^ ^^          ^*nChapter  6^*n       ^^ ^^ }^- |
+pg| ***** 333 ***** |
+
+

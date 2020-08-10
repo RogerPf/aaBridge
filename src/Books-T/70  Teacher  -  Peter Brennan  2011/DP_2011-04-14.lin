@@ -1,0 +1,607 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% File       : Peterb370c_Winning Techniques in Declarer Play_ 2011-04-14.lin
+%% Description: Peter's teaching session on Declarer play, BIL, 2011-04-14
+%% Programmer : Vanyvon
+%% Version    : 
+%%            : 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+mn| Peterb370c:Winning Techniques in Declarer Play,2011-04-14|tu||bt||nt||
+
+%% --- Definitions ---
+cr|116|cg|116|cb|1255|        %% blue
+cr|2255|cg|2255|cb|264|       %% yellow
+cr|316|cg|3128|cb|316|        %% dark green
+cr|4255|cb|40|cg|40|          %% red
+fh|120|ff|1Arial|fb|14|fm|1|  %% smaller light
+fh|220|ff|2Arial|fb|26|fm|2|  %% smaller bold
+fh|330|ff|3Arial|fb|34|fm|3|  %% larger light
+fh|430|ff|4Arial|fb|46|fm|4|  %% larger bold
+%% --- End Definitions ---
+
+%% --- Main ---
+qx|Main|
+bv|f,v|
+cs|1|cp|2|fp|4|
+at|
+^-{ Peter Brennan (Peterb370c): Winning Techniques in Declarer Play, 2nd lesson,
+   teaching at BIL, April 14, 2011. }
+^-|
+fp|2|cp||ht|f|at|   @2The LIN presentation of Peter 's lesson on Winning Techniques in Declarer Play in the Beginner Intermediate Lounge, 2011-04-14.|
+ht|i|cp||cs|2|
+at|^i   @2{
+
+             ^*GIntroduction, Introduction^*N
+
+^*GB01,    Board 01- entry management^*N
+
+^*GB02,    Board 02- hold up rules^*N
+
+^*GB03,    Board 03- card reading^*N
+
+^*GB04,    Board 04- safety play^*N
+
+^*GB05,    Board 05- jettison play^*N
+
+^*GB06,    Board 06- ruffs vs discard^*N
+
+
+              ^*GFinal notes, Final notes^*N
+
+} @0|
+ht|z|at|   @2^*GHelp,Click here for help^*N
+
+(c) Peter & Bridge Base Online - Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|fp|1|at|^y Vanyvon|
+pg| ***** 0 ***** |
+
+
+%% --- End Main ---
+
+%% ---------- INTRODUCTION ----------
+qx|Introduction|
+nt||cs|1|cp|2|
+at|
+^-{ Introduction }
+^-|
+cp||ht|x|at|@0
+^*GHelp, Click here for help^*N
+
+(c) Peter & Bridge Base Online - Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|fp|1|at|^y Vanyvon|
+ht|e|fp|1|
+at|Peter Brennan: The purpose of this course is to acquaint you with some useful tools when you declare a hand. Hopefully, by seeing a number of examples in random order you'll recognize these situations when they pop up in your game.  
+
+Each hand features a common challenge of some sort:  dealing with bad suit breaks, handling tricky entry situations, making inferences from the bidding or play, counting enemy distribution and/or points, when to draw trumps, basic end plays, etc.
+
+|
+pg| ***** 1 ***** |
+
+
+%% ---------------------------
+
+
+qx|B01,BOARD 1|
+rh||ah|Board 1|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|1SA43HQ5DAKJ2CKQ84,ST982H642DQ965C62,SQJ7HKJT83D43CT73,SK65HA97DT87CAJ95|mb|1D|mb|p|mb|1H|mb|p|mb|2N|mb|p|mb|3N|mb|p|mb|p|mb|p|sk|S|%small text set kibbing South|
+nt|After that friendly lead you'll have 2 @ss, 2 @ds and 1 @c for sure.  Certainly the @hs seem capable of providing the 4 needed tricks but entries are in short supply.  Good luck!|pc|ST|
+pg| ***** 2 ***** |
+
+
+at|
+On Day 1 we learn, "Always cover an honor with an honor."  It isn't until many lessons later we find that's not the always the best way to play certain hands.|
+pg| ***** 3 ***** |
+
+
+at|
+After we've knocked out the  @hA  the @sQJ will provide the necessary entry to the board for us to score 4 @h tricks.  Unless, of course, we covered the opening @s10 lead.|
+pg| ***** 4 ***** |
+
+
+at|
+A little analysis tells us there are 2 and only 2 @s tricks available if the @s10 is covered  or not.  Nothing is gained by covering and we lose a potential entry needed after the @hA has been knocked out.|
+pg| ***** 5 ***** |
+
+
+nt|An observant kib privated, "This looks verrrry familiar."  Yes, this hand is very similar to last week's hand where declarer had to unblock the @sK to insure a dummy entry.  Here, declarer must preserve the entry until dummy's @h are established.|
+pg| ***** 6 ***** |
+
+
+pc|S7|pc|S6|pc|SA|
+pg| ***** 7 ***** |
+
+
+pc|HQ|pc|H2|pc|H3|pc|H7|
+pg| ***** 8 ***** |
+
+
+pc|H5|pc|H4|pc|HK|pc|HA|
+pg| ***** 9 ***** |
+
+
+pc|DT|pc|DJ|pc|DQ|pc|D3|
+pg| ***** 10 ***** |
+
+
+pc|S9|pc|SJ|pc|SK|pc|S3|
+pg| ***** 11 ***** |
+
+
+pc|D8|pc|DA|pc|D5|pc|D4|
+pg| ***** 12 ***** |
+
+
+pc|S4|pc|S2|pc|SQ|pc|S5|
+pg| ***** 13 ***** |
+
+
+pc|HJ|pc|H9|pc|D2|pc|H6|
+pg| ***** 14 ***** |
+
+
+pc|HT|pc|C9|pc|C4|pc|C2|
+pg| ***** 15 ***** |
+
+
+pc|H8|pc|D7|pc|C8|pc|C6|
+pg| ***** 16 ***** |
+
+
+pc|C3|pc|CA|pc|CQ|pc|D6|
+pg| ***** 17 ***** |
+
+
+pc|CJ|mc|9|sk||sc|y|nt|Here's the lesson text:  The opening lead of the @s10 must NOT be covered by one of dummy's honors.  We need the @sQJ to ensure an entry to the board after the @h are established.|
+pg| ***** 18 ***** |
+
+
+qx|B02,BOARD 2|
+rh||ah|Board 2|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|1S96HA9DKQ8632CAK5,S82HKJT3D97CJT432,SAQT3H8764DJT5C96,SKJ754HQ52DA4CQ87|nt||sv|0|mb|-|mb|-|mb|-|mb|1N|mb|p|mb|2C|mb|2S|mb|p|mb|p|mb|2N|mb|p|mb|3N|mb|p|mb|p|mb|p|mb|-|sk|S|sc||%small text set kibbing South|pc|S8|nt|Partner has put down a very useful hand with a @s stopper and those beautiful @d fillers.  Now make 9 tricks!  Good luck!|
+pg| ***** 19 ***** |
+
+
+at|
+Thanks to Dave Germain (euvid) for this hand from his wonderful series on No Trump play.  This hand was from his unit on "hold up" plays.|
+pg| ***** 20 ***** |
+
+
+at| Generally, we're taught to hold up our stoppers in NT contracts.  The Rule of 7 tells us we should hold up once with our 6-card @s suit.|
+pg| ***** 21 ***** |
+
+
+at|  In fact, if we play low from dummy we're guaranteed a second @s trick because our @s9 will force East to play the @sJ on the first trick.  Then dummy's @sQ10 are equals against the @sK.|
+pg| ***** 22 ***** |
+
+
+at| However useful the rule of 7 may be, it doesn't tell us when to hold up, only how many times to hold up.  Is that clear to everyone?  Never hold up if the opponents can find a damaging shift.|
+pg| ***** 23 ***** |
+
+
+nt|With this hand we have 1 @s, 1 @h and 2 @cs tricks off the top.  The @ds will produce the 5 tricks we need to score out game.  In fact, to hold up could spell defeat in this ice cold contract.|
+pg| ***** 24 ***** |
+
+
+at|
+If we duck the opening lead, East could switch to a @h and then we'd lose 1 @s, 3 @hs and the @dA for -1.|
+pg| ***** 25 ***** |
+
+
+pc|SA|pc|S4|pc|S6|
+pg| ***** 26 ***** |
+
+
+pc|DJ|pc|D4|pc|D3|pc|D2|
+pg| ***** 27 ***** |
+
+
+pc|DT|pc|DA|pc|D2|pc|D9|
+pg| ***** 28 ***** |
+
+
+pc|H2|pc|HA|pc|HT|pc|H4|
+pg| ***** 29 ***** |
+
+
+at|
+Now we can claim our contract with 1@S, 1@H, 2@cs, and 5 @ds...|
+pg| ***** 30 ***** |
+
+
+mc|9|sk||sc|y|nt|Here's the lesson text:  South takes a chance opening 1NT but it's a reasonable gamble.  If we duck the opening @s lead, East can beat this contract by switching to a@h at trick 2.  Instead, we must play the@sA and immediately knock out the @dA to score one trick in each major suit, 5 @ds and 2 @cs to make 3NT.|
+pg| ***** 31 ***** |
+
+
+qx|B03,BOARD 3|
+rh||ah|Board 3|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|4SKQ2HK732DK5CK753,S9874H854D84CJ982,S53HJ6DAJT962CAQ4,SAJT6HAQT9DQ73CT6|mb|1D|mb|d|mb|p|mb|p|mb|r|an|HELP!!|mb|p|mb|1S|mb|2D|mb|2S|mb|2N|mb|p|mb|3N|mb|p|mb|p|mb|p|sk|S|sc||
+nt|Placing East with the @sA for his opening bid we can count 2 @s, 2 @d and 3 @c for sure.  If @c split 3 - 3 (36%) we're up to 8 tricks; in any case it looks like we'll need the @ds to provide extra tricks.  Good luck!|pc|S9|
+pg| ***** 32 ***** |
+
+
+pc|S3|pc|SA|pc|S2|
+pg| ***** 33 ***** |
+
+
+pc|HA|pc|H2|pc|H4|pc|H6|
+pg| ***** 34 ***** |
+
+
+pc|HQ|pc|H3|pc|H5|pc|HJ|
+pg| ***** 35 ***** |
+
+
+pc|HT|at| 
+This hand is an example of using deductive skills to find the best line of play.  In bridge, it's called "card reading."|
+pg| ***** 36 ***** |
+
+
+at|
+We're missing 14 hcps and East opened in first seat vulnerable.  He has shown @sA and likely the @sJ (West led the @s9 remember) and the @hAQ.  So there are only two honors unaccounted for, the @dQ and the @cJ.|
+pg| ***** 37 ***** |
+
+
+at|
+Now, let's think about the opps distribution.  East opened 1@d so he doesn't have 5 @s or 5 @h.  In fact he appears to have a standard "weak NT," i.e. a balanced hand with 12 - 14 hcps.|
+pg| ***** 38 ***** |
+
+
+nt|East's hand should look like @sAJ10 @hAQxx @d?xx @cxxx or @sAJ10x @hAQxx @d?xx @cxx.  The "@d?" is maybe the @dQ or maybe a low @d.  Any problems with this so far?|
+pg| ***** 39 ***** |
+
+
+at|
+Now East's possible hands, @sAJ10 @hAQxx @dxxx @cxxx or @sAJ10x @hAQxx @dxxx @cxx, each look pretty skimpy for a first-seat vulnerable opening.  It's much more likely that East was dealt the @dQ giving him @sAJ10 @hAQxx @dQxx @cxxx or @sAJ10x @hAQxx @dQxx @cxx.|
+pg| ***** 40 ***** |
+
+
+at|
+We can make the hand by going to the table and leading the @dJ planning to let it ride if East doesn't cover.  If our analysis is right we can count 2 @s, 1 @h, 3 @d and 3 @c.  As a matter of fact, if East started with @dQxx we'll score the rest of the tricks.|
+pg| ***** 41 ***** |
+
+
+pc|HK|pc|H8|pc|S5|
+pg| ***** 42 ***** |
+
+
+pc|C3|pc|C9|pc|CA|pc|C6|
+pg| ***** 43 ***** |
+
+
+pc|D9|pc|D3|pc|D5|pc|D8|
+pg| ***** 44 ***** |
+
+
+pc|D2|pc|D7|pc|DK|pc|D4|
+pg| ***** 45 ***** |
+
+
+pc|C5|pc|C2|pc|CQ|pc|CT|
+pg| ***** 46 ***** |
+
+
+pc|DA|pc|DQ|pc|C7|pc|S4|
+pg| ***** 47 ***** |
+
+
+pc|DJ|mc|10|sk||sc|y|nt|Lesson text:  Some hands are relatively easy to discover the probable distribution of hcps (high card points) and the shape of opponents' hands.  From East's opening bid and play to the first several tricks we can form an accurate picture of his hand and play accordingly.|
+pg| ***** 48 ***** |
+
+
+qx|B04,BOARD 4|
+rh||ah|Board 4|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|3SAKT987H5D32CAKQ2,S4HQJ6DAK9874C743,S32HA8432DQ6CJT98,SQJ65HKT97DJT5C65|mb|p|mb|p|mb|1S|mb|2D|mb|2H|mb|3D|mb|3S|mb|4D|mb|4S|mb|p|mb|p|mb|p|sk|S|sc||
+nt|You are in 4@s.   West starts with the @dAK and then switches to the @hQ.|
+pc|DA|
+pg| ***** 49 ***** |
+
+
+pc|D6|pc|D5|pc|D2|
+pg| ***** 50 ***** |
+
+
+pc|DK|pc|DQ|pc|DT|pc|D3|
+pg| ***** 51 ***** |
+
+
+pc|HQ|eb|y___|at|^^With those two @d losers your contract is safe if you can manage to lose only  one @s.  Good luck!  The  { ^*b 1st ^*n }  button is avail.|
+pg| ***** 52 ***** |
+
+
+at|
+This hand is relatively simple.  Play so as NOT to lose 2 @s tricks.  There are three different reasonable lines of play.  What are they? |
+pg| ***** 53 ***** |
+
+
+at|
+The three lines of play are: 1.Bang down the @sAK|
+pg| ***** 54 ***** |
+
+
+at|
+2.Use dummy's 2 entries (@hA and @cJ) for a double finesse against East|
+pg| ***** 55 ***** |
+
+
+at|
+3.A hybrid of the other 2  (I'll explain in a minute.)|
+pg| ***** 56 ***** |
+
+
+nt|Let's examine the odds to see which line is better.  Playing the @sAK will work whenever the 5 missing @ss divide 3 - 2 (68%).  If an unlucky defender holds @sQJ doubleton you'll even make an overtrick.  As a bonus, this line works when trumps divide 4 - 1 if either defender has a singleton honor.  This adds up to about a 79% chance of success; not too bad.|
+pg| ***** 57 ***** |
+
+
+at|
+The double finesse chance of success is around 75%.  It's important to know this because it comes up frequently.  In case you don't know how the 75% is arrived at consider the situation when West has exactly 3 @s.|
+pg| ***** 58 ***** |
+
+
+at|
+West could hold @sQJx, @sQxx, @sJxx or @sxxx.  In 3 of the 4 situations (75%) the double finesse would succeed losing only to the first holding, @sQJx.  Clear so far I hope?|
+pg| ***** 59 ***** |
+
+
+at| The hybrid method, as the name implies, combines the other two.  Here's how it works.  First, lead a low @s to your @sA.|
+pg| ***** 60 ***** |
+
+
+pc|HA|pc|HT|pc|H5|
+pg| ***** 61 ***** |
+
+
+pc|S2|pc|S5|pc|SA|pc|S4|
+pg| ***** 62 ***** |
+
+
+nt|Next, enter dummy with a low @c,|
+pg| ***** 63 ***** |
+
+
+pc|C2|pc|C3|pc|C9|pc|C5|
+pg| ***** 64 ***** |
+
+
+at| lead a @s|
+pg| ***** 65 ***** |
+
+
+pc|S3|pc|S6|at| and if East follows low, play the @s10.|
+pg| ***** 66 ***** |
+
+
+pc|ST|
+pg| ***** 67 ***** |
+
+
+at|
+If West can win this trick, how are @ss divided?|
+pg| ***** 68 ***** |
+
+
+at| 3 - 2, of course.  So @sK will draw the last trump.  And if West shows out on the 2nd @s?|
+pg| ***** 69 ***** |
+
+
+pc|ST|pc|D4|
+pg| ***** 70 ***** |
+
+
+at| 
+Good.  Cash the @sK dropping one of East's honors and claim, losing only to the master trump.  Everybody OK with this?|
+pg| ***** 71 ***** |
+
+
+pc|SK|pc|D7|pc|H2|pc|SJ|
+pg| ***** 72 ***** |
+
+
+pc|CQ|pc|C4|mc|10|sk||sc|y|nt|Is this hybrid line better than the others?  What do you think?|
+pg| ***** 73 ***** |
+
+
+at|
+The hybrid method works the same as playing the @sAK.  (Any 3 - 2 split or singleton honor in the 4 - 1 splits.)  But East will hold @sQJxx about 9% of the time.  So the hybrid will work close to 88% of the time.|
+pg| ***** 74 ***** |
+
+
+at|
+Here's the lesson text:  The key to this hand is to play @s for only one loser.  There are 3 different lines of play:  play the @sAK and hope for a 3 - 2 split or 4 - 1 with a singleton honor, use dummy's two entries to take finesses in @s, or a combination of the first two lines.  Cash the @sA first then lead @s from the table and cover whatever East plays.  The "hybrid" method is best.|
+pg| ***** 75 ***** |
+
+
+qx|B05,BOARD 5|
+rh||ah|Board 5|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|4SAKQJ74H76DK53CAQ,ST63H92D9872CK764,S852HAKJ53DQJTC83,S9HQT84DA64CJT952|mb|p|mb|1sp2hp3sp4sp4np5c|an|1 or 4 keys|mb|p6Sppp|sk|S|sc||nt|The winner-count is 6 @s, 2 @h, 2 @d and the @cA = 11, one trick short.  There are several options for you to consider.  There are finesse positions in both @h and @c and it may be possible to set up an extra @h trick by ruffing.   Good luck!|pc|D9|
+pg| ***** 76 ***** |
+
+
+at|
+With no opposition bidding the finesses in this hand each offer declarer a 50% chance of success.  Can we do better?|
+pg| ***** 77 ***** |
+
+
+at|
+Yes!  By setting up the fifth @h with ruffs our chances are improved quite a bit.  Missing 6 cards, a 4 - 2 or 3 - 3 split happens 84% of the time.  But there is a problem with implementing this plan. What is the problem?|
+pg| ***** 78 ***** |
+
+
+at|
+If @hs break 3 - 3 (35.5%) we only need 2 entries to dummy, one to ruff the 3rd @h and one to cash the established @h; not a problem because the @h and @d provide the necessary entries.|
+pg| ***** 79 ***** |
+
+
+nt|But if @hs are 4 - 2 (48.5%) we'll need 3 entries to the table:  2 for the ruffs to set up the @h and 1 more to cash the 5th @h.  The @h provide 1 entry.  And the @d?  Are you all following this?|
+pg| ***** 80 ***** |
+
+
+at|
+If declarer is not a planner at trick one and holds on to the @dK because it never seems right to throw a King under the enemy's Ace, @d will only provide one entry to dummy.|
+pg| ***** 81 ***** |
+
+
+at|
+But if the declarer has attended this class, she'll toss away the @dK with hardly a pause giving her a 2nd @d entry needed to play for the @h to be 4 - 2.|
+pg| ***** 82 ***** |
+
+
+pc|DT|pc|DA|pc|DK|
+pg| ***** 83 ***** |
+
+
+at|
+This coup of unblocking an unnecessarily high card to gain an entry is called a JETISON PLAY.|
+pg| ***** 84 ***** |
+
+
+pc|CJ|pc|CA|pc|C7|pc|C3|
+pg| ***** 85 ***** |
+
+
+pc|SA|pc|S3|pc|S2|pc|S9|
+pg| ***** 86 ***** |
+
+
+pc|SK|pc|S6|pc|S5|pc|C2|
+pg| ***** 87 ***** |
+
+
+pc|SQ|pc|ST|pc|S8|pc|C5|
+pg| ***** 88 ***** |
+
+
+pc|H7|pc|H2|pc|HA|pc|H8|
+pg| ***** 89 ***** |
+
+
+pc|HK|pc|H4|pc|H6|pc|H9|
+pg| ***** 90 ***** |
+
+
+pc|H3|pc|HT|pc|S4|pc|C4|
+pg| ***** 91 ***** |
+
+
+pc|D3|pc|D2|pc|DJ|pc|D4|
+pg| ***** 92 ***** |
+
+
+pc|H5|pc|HQ|pc|S7|pc|D7|
+pg| ***** 93 ***** |
+
+
+pc|D5|pc|D8|pc|DQ|pc|D6|
+pg| ***** 94 ***** |
+
+
+pc|HJ|pc|C9|pc|CQ|pc|C6|
+pg| ***** 95 ***** |
+
+
+pc|C8|pc|CT|pc|SJ|pc|CK|
+pg| ***** 96 ***** |
+
+
+sk||sc|y|nt|This hand comes with a story.  It was played in Washington, DC in 1953 in the White House by the newly elected 34th President of the United States, Dwight David Eisenhower.  "Ike" was an avid bridge player, and by most accounts, a pretty good one at that.  He certainly played this hand well!|
+pg| ***** 97 ***** |
+
+
+at|
+Here's the lesson text:  After some aggressive bidding by South the partnership lands in a slam.  There are finesses available in both @h and @c but declarer goes for the better percentage play of setting up the 5th @h.  To gain the needed entries to the board, declarer jettisons the @dK under East's @dA at trick one.|
+pg| ***** 98 ***** |
+
+
+qx|B06,BOARD 6|
+rh||ah|Board 6|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|1S8HQ7532CAKQJ964,SK43HKJ94DQJ962C5,SA9752H86DA87CT83,SQJT6HATDKT543C72|mb|1cx1s2d2h3dxp5cppp|sk|S|sc||nt|Too bad the "evil opponents" gave you no chance to play the icy 3NT.  With 9 top tricks you could try to ruff 2 @hs in dummy.  Even if @hs break badly for you, dummy's high spot cards can't be over ruffed.|pc|DQ|
+pg| ***** 99 ***** |
+
+
+at|
+There's a flaw in that plan, though.  The opponent will just lead a trump back after winning the first @h and, if the opp with at least 2 @c wins the second @h, you'll be a trick short.  See if you can come up with a better plan.  Good luck!|
+pg| ***** 100 ***** |
+
+
+at|
+There seem to be two ways to get your 11 tricks.  1.  Hope whoever wins the 2nd @h doesn't have another trump so you can ruff two @h in dummy.|
+pg| ***** 101 ***** |
+
+
+at| 2.  Play to set up a second @s trick.  Then, you'll only need one @h ruff.|
+pg| ***** 102 ***** |
+
+
+at|
+##1 is a non-starter against competent defenders.  They'll just lead trump each time you give up a @h so you can only ruff one @h.|
+pg| ***** 103 ***** |
+
+
+nt|##2 offers a much better chance.  You'll need to find @s splitting 4 - 3 (62%), @c splitting 2 - 1 (78%) AND you have to have the necessary entries to the board to establish and cash the long @s.|
+pg| ***** 104 ***** |
+
+
+at|
+You'll need to ruff three @s to establish dummy's 5th @s and then a 4th entry to get to dummy to cash that good @s you worked so hard to set up.  So four entries are needed.|
+pg| ***** 105 ***** |
+
+
+at|
+@sA, @c10, @c8 and the @c3 will be the entries you need.|
+pg| ***** 106 ***** |
+
+
+at|
+Like many hands, you should delay drawing trumps and instead begin establishing the @s suit.  You expect the defenders to draw trump for you.|
+pg| ***** 107 ***** |
+
+
+at|
+Notice how important high spot cards in trump are to this hand.  If dummy held @c643, the contract would fail.|
+pg| ***** 108 ***** |
+
+
+pc|DA|pc|DT|pc|H2|
+pg| ***** 109 ***** |
+
+
+pc|SA|pc|S6|pc|S8|pc|S3|
+pg| ***** 110 ***** |
+
+
+pc|S2|pc|ST|pc|CA|pc|S4|
+pg| ***** 111 ***** |
+
+
+pc|H3|pc|H9|pc|H6|pc|HT|
+pg| ***** 112 ***** |
+
+
+pc|C7|pc|C4|pc|C5|pc|C8|
+pg| ***** 113 ***** |
+
+
+pc|S5|pc|SJ|pc|CK|pc|SK|
+pg| ***** 114 ***** |
+
+
+pc|H5|pc|H4|pc|H8|pc|HA|
+pg| ***** 115 ***** |
+
+
+pc|C2|pc|C6|pc|D2|pc|CT|
+pg| ***** 116 ***** |
+
+
+pc|S7|pc|SQ|pc|C9|pc|D6|
+pg| ***** 117 ***** |
+
+
+pc|H7|pc|HJ|pc|C3|pc|D3|
+pg| ***** 118 ***** |
+
+
+pc|S9|pc|D4|pc|HQ|pc|D9|
+pg| ***** 119 ***** |
+
+
+pc|D8|mc|11|sk||sc|y|nt|Lesson text:  You may try ruffing two h in dummy, but the opponents will lead trump each time they're in and limit you to only 1 @h ruff.  However, if s break 4 - 3 (62%) you'll have just enough entries to establish and cash a second s trick.  If so, you'll only have to ruff one h to come to eleven tricks.|
+pg| ***** 120 ***** |
+
+

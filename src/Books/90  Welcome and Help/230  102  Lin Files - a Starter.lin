@@ -1,0 +1,63 @@
+%%
+%% Lin Files - a Starter
+%% Last edited   2018 Oct 18
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<<--INSERT-START-->>=005__Common_Header.ins
+%%
+fh|v24|        v-24     very small
+fh|s28|        s-28     small
+fh|j32|        j-32
+fh|k35|        k-35
+fh|e37|        e-37
+fh|t40|        t-40     title
+fh|n42|        n-42
+fh|p45|        p-45
+fh|b50|        b-50     big
+fh|g60|        g-60     graphSuit 
+fh|m64|        m-64     mastHead
+fh|c70|        c-70     chapTitle
+%
+fh|x33|ff|xCourier|          FONT   x-33-Courier
+%
+cr|a230|cg|a040|cb|a130|     a  action
+cr|b100|cg|b100|cb|b255|     b  light Blue
+cr|f200|cg|f255|cb|f255|     f  fake-button
+cr|h000|cg|h095|cb|h169|     h  h-highlight
+cr|p255|cg|p000|cb|p255|     p  pink    fake pink button
+cr|u160|cg|u040|cb|u200|     u  pUrple
+cr|y170|cg|y190|cb|y255|     y  youtube border
+%
+bt||
+fp|b-50|at|^^^^^a   @s @h @d @c  ^v     @c @d @h @s|fp||
+at|^b@2^z@3^^|
+ht|f|        
+%%
+<<--INSERT-END**-->>=005__Common_Header.ins
+
+qx|Lin|
+mn|   102    Lin  Files  -  a  Starter   |
+lg|c|
+
+
+n#|9|at|From the  ^*g :Doc Collection, aaBridge Doc Collection^*n  |fp||at|   (  @2If it is NOT on your desktop click the blue link and follow the
+instructions.   You can return by clicking the  |fp|n|n#|1|at|@L|fp||n^|1|at|  icon, top left. )
+^b@2
+|lg|g|
+n^|f|fp|j-32|cp|a|at|^*bis the doc^*n|cp||fp||at|
+|n#|4|fp|t|at|  ^e  Lin Files - a Starter|fp||at|
+
+The document covers how save multiple deals for upload to BBO.  How save files your lin files in 'problem' mode so others can play them without seeing all the hands at once.
+
+You do ^*b NOT ^*n need to know what goes on inside a lin file to use those features.
+
+
+If you ^*b DO ^*n want to know 'what goes on inside lin file', there is the course in the doc collection that you can take by yourself.  It is called called:
+
+|n#|0|fp|k-35|at|^d 102__aaBridge_and_Lin_Files.zip|fp||at|
+
+|cr|r205|lg|k|at|
+and there is always the ultimate reference for lin files -
+^d ^*bMenubar     >     Help & How do I     >     |cp|r|at|^*bWhat goes on inside  .lin  file^*n|cp||fp|s|at|       (near the end of the menu)|
+pg||

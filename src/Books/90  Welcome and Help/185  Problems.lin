@@ -1,0 +1,67 @@
+%%
+%% Problems
+%% Last edited   2020 July 15
+%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+<<--INSERT-START-->>=005__Common_Header.ins
+%%
+fh|v24|        v-24     very small
+fh|s28|        s-28     small
+fh|j32|        j-32
+fh|k35|        k-35
+fh|e37|        e-37
+fh|t40|        t-40     title
+fh|n42|        n-42
+fh|p45|        p-45
+fh|b50|        b-50     big
+fh|g60|        g-60     graphSuit 
+fh|m64|        m-64     mastHead
+fh|c70|        c-70     chapTitle
+%
+fh|x33|ff|xCourier|          FONT   x-33-Courier
+%
+cr|a230|cg|a040|cb|a130|     a  action
+cr|b100|cg|b100|cb|b255|     b  light Blue
+cr|f200|cg|f255|cb|f255|     f  fake-button
+cr|h000|cg|h095|cb|h169|     h  h-highlight
+cr|p255|cg|p000|cb|p255|     p  pink    fake pink button
+cr|u160|cg|u040|cb|u200|     u  pUrple
+cr|y170|cg|y190|cb|y255|     y  youtube border
+%
+bt||
+fp|b-50|at|^^^^^a   @s @h @d @c  ^v     @c @d @h @s|fp||
+at|^b@2^z@3^^|
+ht|f|        
+%%
+<<--INSERT-END**-->>=005__Common_Header.ins
+
+qx|Prob|
+mn|   List  of  main  sets  of  Problems  |
+
+lg|L|
+ht|e|n^|4|at|^f@2@1
+|n#|4|at|^c^*bBooks^*n^f^*g:6____Suit_Combinations::Learn to Play Bridge 2,Ch 6.  Suit Combinations      —   Learn to Play Bridge 2^*n
+^*gd 1:7____Trump_Management::Learn to Play Bridge 2,Ch 7.  Trump Management   —   Learn to Play Bridge 2^*n
+^*g1:1.1  Trump Play 1::Problems for New Players,Problems for New Players^*n
+|n#|4|at|^c^*bBooks-L^*n^f^*g:::Kantar Quiz  1,Eddie Kantar Quizzes (bidding)^*n
+^*g:::Problem  1.1,Angel Blue  Problems 2017 (hard) ^*n
+^*g:::Problems__wk__13,Angel Blue  Problems 2018 (hard) ^*n
+^*g:::Problems__wk__36,Angel Blue  Problems 2019 (hard) ^*n
+^*g1:Endplays 1 - Quiz::Angel Blue  Endplays,Angel Blue  Endplays ^*n
+^*go1:Karen on Finessing::Karen10,Karen on Finessing (easy)^*n
+^*g:::A Meckwell 3N,More from Oliver ^*n
+^*g:::Only Chance in 6N,Rogers Finds's ^*n
+^*g2:Positional::Roger on Squeezes,Roger on Squeezes ^*n
+|n#|4|at|^c^*bBooks-T^*n^f^*gL1:lrplay_01-06::24 Declarer Problems,24 Declarer Problems^*n
+^*gP1:bwdef_01-06::25 Defense Problems,25 Defense Problems^*n
+^*go1:For Beginners 02::Albrecht Hollstein,For Beginners,   Albrecht Hollstein  2007 ^*n   (the later ones are not so easy)
+^*g:::p_01-03__Fail_and_Success,73 Declarer Play Problems,   Boldbida  2016^*n
+
+
+|
+ht|z|n#|a|cp|red|at|^j^*b>>>    Click on any link to go there    <<<^*n|cp||fp|||
+pg| ***** 0 ***** |
+
+

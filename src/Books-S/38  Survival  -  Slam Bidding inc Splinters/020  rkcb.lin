@@ -1,0 +1,462 @@
+bergen4NT.lin
+%last edited 10-8-2013
+fh|155|ff|1Arial|fb|17|fm|1|       FONT SIZE AND TYPE FOR 1
+fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
+fh|340|ff|3Arial|fb|35|fm|3|                           FOR 3
+fb|49|fm|4|fb|4|fm|4|
+cr|116|cg|116|cb|1255|              blue 1
+cr|2255|cg|2255|cb|264|             gold 2
+cr|3255|cg|3255|cb|3255|            White
+cr|4255|cg|4255|cb|40|              dark Gold 4
+cr|516|cg|5128|cb|516|              green 5
+cr|6124|cb|6250|cg|6200|             6=TURQUOISE
+cr|70|cb|7220|cg|7235|              green/blue 7
+cr|8255|cb|80|cg|80|                red 8
+cr|9128|cb|90|cg|950|               Reddish-brown 9
+%%%
+bt||
+qx|A6,4n|cs|6|ht|b|at|^b{ |ht|z|at|^z
+^z}
+|ht|c|cp||fp|1|at|^hRoman Key Card (RKC) Blackwood
+|fp|2|ht|f|at|^c Bid|ht|f|at|^fTraditional|ht|f|at|^l3014*|ht|f|at|^r1430**|
+ht|h|at|^c 5@C|ht|h|at|^f0 or 4 keycards|ht|h|at|^k0 or 3 key cards|ht|h|at|^q1 or 4 key cards|
+ht|i|at|^c 5@D|ht|i|at|^f1 ace|ht|i|at|^k1 or 4 key cards|ht|i|at|^q0 or 3 key cards|
+ht|j|At|^c 5@H|ht|j|At|^f2 aces|ht|j|At|^k2 or 5 key cards|ht|j|At|^q2 or 5 keycards|
+ht|k|At|^kdenies trump queen|ht|k|At|^qdenies trump queen|
+
+ht|m|At|^c 5@S|ht|m|At|^f3 aces|ht|m|At|^K2 or 5 key cards|ht|m|fp||At|^Q2 or 5 key cards|
+ht|n|at|^Kshows trump queen|HT|N|AT|^Qshows trump queen|
+ht|t|AT|^d@2^w@3*Because "thirty-fourteen" is much easier to say and remember than "0 or 3, 1 or 4" this convention is usually referred to as 3014 rather than 0314.
+
+**This was named 1430 because the 1 or 4 response (5@C) comes before the 0 or 3 response (5@D).
+
+}
+^-|CS||FP||CP||
+PG| ***** 0 ***** |
+
+
+NT||
+
+%%%
+bt||ht|d|cs|1|cp|4|fp|1|at|^-
+{
+
+               Roman Key Card (RKC) Blackwood               
+
+by Marty Bergen
+
+from ACBL Bridge Bulletin
+
+}
+^-|CS||FP||CP||ht|x|at|^vOctober 2013
+
+^bClick the forward arrow to begin.|
+pg| ***** 1 ***** |
+
+
+NT||
+
+
+
+%%
+ht|b|fp|1|cs|1|cp|4|at|^-{    Roman Key Card (RKC) Blackwood    }
+^-|cp||cs||fp||cp|8|AT|
+^B@2^*BMarty Bergen (MB): ^*N|cp||at|Most players respond to Blackwood either In a traditional manner, RKC-30l4, or RKC-1430. 
+
+^*BWhat's your preferred way to respond to Blackwood?^*N
+I surveyed 60 players. Eight preferred traditional, eight said 3014 while 44 chose 1430. Wow! There is certainly no question as to what is "^*Bin^*N" these days.  So for the rest of these series, all RKC responses will be 1430. The concepts discussed, however, will also apply to those who use 3014. When I refer to RKC players, I am addressing adherents of both approaches. The basic principles behind all RKC responses are:|
+PG| ***** 2 ***** |
+
+
+ht|i|cs|1|fp|3|cp|4|AT|^-
+
+{  The King of trump is just as important as any ace.  }
+|
+PG| ***** 3 ***** |
+
+
+va|4|AT|{  The Queen of trumps is also important.  }
+|
+PG| ***** 4 ***** |
+
+
+va|4|AT|{  Don't bid slam missing two key cards.  }
+|
+PG| ***** 5 ***** |
+
+
+va|4|AT|{  Don't bid slam missing one key card and the queen of trumps  
+unless you know you have a least a 10-card trump fit.}
+^-|
+pg| ***** 6 ***** |
+
+
+cs||fp||cp||at|
+^B@2I consider 1430 to be a very complicated convention. If you find 1430 to be overwhelming, you are not alone. Below I am repeating the breakdown of the 1430 RKC responses.|
+pg| ***** 7 ***** |
+
+
+ht|t|at|^c5@C ^e1 or 4 key cards(s)|	
+ht|u|At|^c5@D ^e0 or 3 key cards|
+ht|v|At|^c5@H ^e2 or 5 key cards, denies trump queen, (or extra length in trumps.)|
+ht|w|At|^c5@S ^e2 or 5 key cards, shows trump queen, (or extra length in trumps).|
+PG| ***** 8 ***** |
+
+
+AT|
+
+Student: Marty, where did this chart come from? Five key cards? That is ridiculous!|
+PG| ***** 9 ***** |
+
+
+AT|
+
+MB: Don't shoot the messenger! This is part of 1430. Let us look at a hand.|
+PG| ***** 10 ***** |
+
+
+NT||
+%%
+st||PN|,,,|RH||AH|Example 1|md|1SA5 HAK32 DA5 CA7542,,,|mb|1cp1hp4hp4np?|lb|*bWhat would you bid here?^^5h|hc|sahakdaca|NT||
+cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|Not only 5@H is the correct bid, but if you made any other bid, it would be an outright lie.|mb|5H|
+PG| ***** 12 ***** |
+
+
+AT|
+
+Student: Can I see partner's hand? I don't think I have ever bid 4NT without any key card. I don't think you were allowed to do that.|
+PG| ***** 13 ***** |
+
+
+lc|sahakdaca|NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|MB: This is Partner's hand.|md|0,0,SKQ42 HQ8765 DK4 CKQ,0|
+pg| ***** 14 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|Your jump to 4@H showed 20-ish dummy points. Partner, with 15 high-card points and zero key cant, knew you had five key cards rather than two. If you correctly bid 5@H partner would bid a confident 7NT.|
+PG| ***** 15 ***** |
+
+
+bt||
+%%
+NT|^B@2
+Student: There is something on your chart I don't understand. I am aware that a response of 5@H denies the queen of trumps while 5@S promises that card. But what do you mean when you say, "or extra length in trumps"?|
+PG| ***** 16 ***** |
+
+
+cp|8|AT|
+
+^B@2^*BMB: ^*N|cp||at|I am sure you are not the only RKCB player who's wondering about that. The following hand should be helpful. |
+PG| ***** 17 ***** |
+
+
+NT||
+%%
+ST||PN|You,,Partner,|rh||ah|Example 2|MD|1SAK742 HAJ DKQJT5 CQ,,,|MB|1sp3s|an|limit raise with at least 4 trumps|
+PG| ***** 18 ***** |
+
+
+mb|p4np5hp?|lb|*bWhat would you bid with your hand.^^7s|NT|^B@2
+Student: I'd bid 6@S. I am delighted that partner has two key cards but because we are missing the @SQ, I don't want to be in seven.|
+PG| ***** 20 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|Here is your partner's hand.|MD|0,0,SJT863H874DA7CA84,0|at| With 10 trumps, the correct contract is 7@S.|MB|7s|
+PG| ***** 21 ***** |
+
+
+AT| You will make it almost 90% of the time. The only thing that can stop you is a 3-0 split where your left-hand opponent has @SQ 9 5.|
+PG| ***** 22 ***** |
+
+
+NT|^B@2
+Accurate slam bidding is often very difficult. Although not even an expert partnership can always reach the best contract, this grand slam should have been bid.|
+PG| ***** 23 ***** |
+
+
+NT|^B@2
+Student: Obviously if I knew that partner had five trumps, I would have bid seven. But I am not a mind-reader.|
+PG| ***** 24 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|I agree that you could not know about partner's extra trump. But he did. Had your partner shown extra length in trumps by bidding 5@S, you would have known, as well. When your side has 10-plus trumps, you do not expect to lose a trick to the trump Queen. Therefore, if the responder to 4NT knows that his side has ten trumps, he should respond as if he had the Queen. I'll bet you would have bid the grand then.|
+PG| ***** 25 ***** |
+
+
+NT|^B@2
+Student: Can you give me another example of this?|
+PG| ***** 26 ***** |
+
+
+cp|8|AT|
+
+^B@2^*BMB: ^*N|cp||at|Next is a Jacoby 2N auction.|
+PG| ***** 27 ***** |
+
+
+NT||
+%%%
+st||rh||ah|Example 3|MD|1SAK8742HJDJT5CQJ4,,SJ653HA82DKQ96CAK,|MB|1SP2NP3H|AN|heart shortness|
+PG| ***** 28 ***** |
+
+
+mb|P4C|an|shows a club control|
+PG| ***** 29 ***** |
+
+
+mb|P4SP4NP5S|an|see explantion below|
+PG| ***** 30 ***** |
+
+
+mb|P6SPPP|NT|^B@2
+3@H shows heart shortness
+4@C shows a club control
+5@S shows 2 key cards plus the @SQ or extra length in spades|
+PG| ***** 31 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|Responder knows they're missing a key card; knowing that partner has the trump queen or the extra trump length, however, responder continues on to 6@S--a solid proposition.|
+PG| ***** 32 ***** |
+
+
+NT||
+%%%
+st||rh||ah|Example 4|md|1SAK742 HAJ DKQJT5 Cq,,,|MB|1SP3SP4NP5C|an|one key card|
+PG| ***** 33 ***** |
+
+
+mb|P?|NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|Does your partnership know what to do on this auction?|
+PG| ***** 34 ***** |
+
+
+AT|
+Dejavu--almost. Same hand as the first example, same auction up until partner shows one key card with 5@C.|
+PG| ***** 35 ***** |
+
+
+NT||lb|*bWhat would you bid now?^^6s|NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|Before we go any further, it's time for some practical advice.|
+PG| ***** 37 ***** |
+
+
+AT|
+Do most experts play 1430 along with all the trimmings?|
+PG| ***** 38 ***** |
+
+
+AT|
+Yes. |
+PG| ***** 39 ***** |
+
+
+AT|
+Should most players attempt to do the same?|
+PG| ***** 40 ***** |
+
+
+AT|
+No!|
+PG| ***** 41 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|Can yon benefit from 1430 without playing the whole shebang?|
+PG| ***** 42 ***** |
+
+
+AT| Absolutely!|
+PG| ***** 43 ***** |
+
+
+AT|
+Will some of your friends call you a wimp for not going all the way?|
+PG| ***** 44 ***** |
+
+
+AT|
+Very possibly, but who cares?|
+PG| ***** 45 ***** |
+
+
+NT||
+cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|Partner promises one ace. If he also has the @SQ or any five spades, you are happy to play in 6@S. But if he has four spades without the queen, 6@S does not rate to be a good contract. |
+PG| ***** 46 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|Keep in mind that when you are missing four cards in a suit, the suit will divide 2-2 less than 41% of the time. Therefore, what you would like to do is ask your partner, "Do you have the @SQ or extra trump length (at least five)?" Even if partner has five low spades, your chances of not having a spade loser when missing three cards in the suit are excellent.|
+PG| ***** 47 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|To find out, you bid 5@D. This is referred to as the "queen ask." Why 5@D? Because it is the cheapest artificial bid. Obviously, if diamonds are trumps, 5@D would be natural and non-forcing.|mb|5d|AN|queen ask|
+pg| ***** 48 ***** |
+
+
+mb|p|
+PG| ***** 49 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|The 5@D bid asks partner if he has either the @SQ or extra length. What happens now? Partner will respond as follows:|
+PG| ***** 50 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|5@S denies the @SQ or extra length.
+6@S shows the @SQ or extra length, and denies a side-suit king. If partner has the @SQ or extra length, he will control-bid his cheapest side-suit king:
+5@H shows the @SQ or extra length and the @HK. It does not deny the @CK or @DK.
+6@C shows the @SQ (or extra length) and the @CK. It denies the @HK. It does not deny the @DK.
+6@D shows the @SQ (or extra length) and the @DK. It denies any other kings.|
+PG| ***** 51 ***** |
+
+
+NT|^B@2
+BTW, But many experts (including Howard) play that they bid 5N (rather than 6S) to show that hand. There is no disadvantage and occasionally it may allow partner to make some other bid below 6@S to try for a grand slam (such as showing a 2nd suit or a Q in partner's suit). |
+PG| ***** 52 ***** |
+
+
+NT||
+%%
+ST||PN|You,,Partner,|rh||ah|Example 5|MD|3SJ9742 HA3 D6 CAQJ92,,,|cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|Holding the following hand, it is worth a grand to know which king partner holds.|
+PG| ***** 53 ***** |
+
+
+NT||MB|1DP1SP4SP4NP5D|AN|3 key cards|
+PG| ***** 54 ***** |
+
+
+MB|p?|cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|After partner shows 20 dummy points, his 0 or 3 response must be based on three key cards. Now you know (a) your side has all five key cards; (b) you definitely want to be in slam; and (c) you are interested in seven. Can you "picture" that if partner has the @SQ and the @CK, 7@S must be a great contract? Let us look at partner's hand.|
+pg| ***** 55 ***** |
+
+
+md|0,0,SAKQ3HQ95DAJ43CK7,0|
+pg| ***** 56 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|Regardless of what lead you get, you will win it and draw trump. Next, you will run clubs and discarding hearts. Then, you will ruff your @H3 and claim. No finesse is needed.|
+PG| ***** 57 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|After opener's 5@D response bid 5@H |MB|5h|
+PG| ***** 58 ***** |
+
+
+AT| and hope to hear 6@C. If you do, then your correct action is to bid 7@S. After any other response, you will be content to play in 6@S.|
+PG| ***** 59 ***** |
+
+
+NT||
+%%
+St||rh||ah|Example 6|pn|,,,|md|,,,|cs|1|cp|4|fp|1|at|^-
+{ Roman Key Card Blackwood: Improved King-Ask }
+^-|cs||cp||fp||
+pg| ***** 60 ***** |
+
+
+MD|30SQ98742H3D6CAQ652,,,|NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|You are delighted to pick up this shapely hand. You pick up 6-5 distribution only once every 71 hands. Can you make the most of it? Partner opens 1@D and you respond 1@S.|mb|1dp1sp|
+PG| ***** 61 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|If opener rebids 2@D, you will have to be concerned with the possibility that this is a horrible misfit. Fortunately, opener's rebid represents the other end of the spectrum. Not only does he raise spades, but he jumps to 4@S to show a big hand. Knowing that he has about 20 dummy points is music to your ears, and you are delighted to rebid 4NT.|mb|4sp4np|
+PG| ***** 62 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|Opener obliges with more good news by bidding 5@C to show four key cards. You now know that your side has all five key cards and the trump queen.|mb|5c|an|4 key cards|
+PG| ***** 63 ***** |
+
+
+mb|p|
+pg| ***** 64 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|You're interested in probing for the grand slam, so you bid 5NT to ask for kings.|MB|5np|
+PG| ***** 65 ***** |
+
+
+AT| Opener bids 6@D to show one king.|MB|6dp|
+PG| ***** 66 ***** |
+
+
+NT|^B@2
+Student: I'd bid 6@S. I'm not a gambler. Partner's one outside king doesn't rate to be in clubs. I don't want to be in seven on a finesse. My friend Joan would probably bid seven. She likes to gamble.|
+PG| ***** 67 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|Not to mention that if opener has three low clubs, 7@S might have no play even if the finesses is on. Although 7@S will be easy if opener has the @CK. I definitely agree that on this auction, the correct percentage action is 6@S.|
+PG| ***** 68 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|There is a way to know which side-suit king opener holds. The most efficient way to respond to 5NT is to control-bid your cheapest king. Thus, if opener has the club king, he bids 6@C, and you can bid a confident 7@S. If instead, partner has a red-suit king (or two), once he doesn't bid 6@C, you know that he doesn't have the @CK.|
+PG| ***** 69 ***** |
+
+
+NT||cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|That way, you can be sure that a grand slam could not be a good contract. Responding to 5NT by control-bidding your lowest king is sometimes referred to as the "improved king-ask." It can be the key to knowing whether you should bid a grand slam. Be aware, however, that the improved king-ask can get you too high when a suit other than spades is trumps. Therefore, many RKC players revert to just showing number of kings when spades is not trumps.|
+PG| ***** 70 ***** |
+
+
+NT||bt||
+%%
+cp|8|AT|
+^B@2^*BMB: ^*N|cp||at|Every RKC pair must decide which approach to use. Now I think it would be helpful to summarize what has been covered so far.|
+PG| ***** 71 ***** |
+
+
+AT|
+
+Responses of 5@C and 5@D when playing 1430:
+* 5@C shows 1 or 4 key cards.
+* 5@D shows 0 or 3 key cards.
+These bids neither promise nor deny the trump queen (or extra length).|
+PG| ***** 72 ***** |
+
+
+AT|
+
+Responses of 5@H and 5@S
+Both show 2 or 5 key cards.
+5@H denies the trump queen (or extra length in the trump suit).
+5@S shows the trump queen (or extra length in the trump suit).|
+PG| ***** 73 ***** |
+
+
+AT|
+
+Asking for the trump queen:
+After a response of 5@C or 5@D, a bid in the cheapest new suit asks partner if he has the trump queen (or extra length in trump). If partner has the queen (or extra length), he control-bids his cheapest king. |
+PG| ***** 74 ***** |
+
+
+AT|
+
+Alternate ways of showing kings after 5NT:
+Traditional number of side-suit kings.
+Control-bidding cheapest king but only when spades are trumps. Some pairs have additional agreements here to learn about other kings as well. Control-bidding cheapest king regardless of which suit is trumps. If your cheapest king is in a suit that is higher-ranking than the trump suit, use your judgment on whether to show it.|
+PG| ***** 75 ***** |
+
+
+AT|
+
+^B@2^*BMM: ^*NYou have finished this presentation.|
+PG| ***** 76 ***** |
+
+
+NT||

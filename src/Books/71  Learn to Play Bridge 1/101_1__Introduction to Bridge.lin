@@ -1,0 +1,350 @@
+
+%%
+%%  Date last Edited    2019-03-30
+%%
+
+ss|masthead,Learn to Play Bridge 1                          Chapter 1      |
+
+ss|chapter,Introduction  to  Bridge                                          |
+
+
+<<--INSERT-START-->>=01___LTPB1__header_colors.ins
+%%
+cr|m070|cg|m095|cb|m169|   fill   m  m-mastColor       light blue grey
+cr|c248|cg|c231|cb|c189|   fill   c  c-chapterColor    beige cream
+%%
+<<--INSERT-END**-->>=01___LTPB1__header_colors.ins
+
+<<--INSERT-START-->>=02___LTPB___common.ins
+%%
+fh|180|ff|1Arial|fb|10|fm|1|      Font 1   Kia
+fh|235|ff|2Arial|fb|28|fm|2|      Font 2   Kia
+fh|350|ff|3Arial|fb|30|fm|3|      Font 3   Kia
+fh|430|ff|4Arial|fb|48|fm|4|      Font 4   Kia
+fh|550|ff|5Arial|fb|50|fm|5|      Font 5
+fh|660|ff|6Arial|fb|60|fm|6|      Font 6
+fh|770|ff|7Arial|fb|70|fm|7|      Font 7
+fh|880|ff|8Arial|fb|80|fm|8|      Font 8
+fh|906|ff|9Arial|fb|90|fm|9|      Font 9  small used for position adjustment
+
+cr|1255|cg|1230|cb|1189|   Beige Cream
+cr|2200|cg|2245|cb|2210|   green ish
+cr|3249|cg|3249|cb|3255|   grey medium
+cr|4190|cg|4210|cb|4255|   blue grey
+cr|5198|cg|5205|cb|5229|   light grey
+cr|6122|cg|6000|cb|6049|   dark maroon
+cr|9255|cg|9255|cb|9255|   'white'
+
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m60|                    Font   m  m-mastHead        size in banner 1
+fh|c60|                    Font   c  c-chapTitle       size in banner 2
+
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint           feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight       text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+%%
+pd|first,^a You can `cp`red`at`^*b now ^*n`cp``at` ^*bClick { ^*b 1st ^*n } below @0@1 to enter the deal and ^*b PLAY ^*n the cards.   Later click  { ^*b Back to Movie ^*n }  to return.|
+%%
+ha|y|    %% hide auction
+bv|f,v|  %% button visibility
+%%
+<<--INSERT-END**-->>=02___LTPB___common.ins
+
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+qx|1|
+at|^b@2^z@3^^|
+
+at|^x@3^c@2Why should you learn to play bridge ?
+|n^|5|at|  
+Here are some good reasons:
+
+|
+pg| ***** 0 ***** |
+
+
+cs|4|at|^-{ Bridge is a wonderful game. You will have a great time playing bridge. }
+
+|
+pg| ***** 1 ***** |
+
+
+cs|2|at|{ Bridge is the most popular card game in the world. }
+
+|
+pg| ***** 2 ***** |
+
+
+cs|3|at|{ Many people enjoy bridge as a competitive game. }
+
+|
+pg| ***** 3 ***** |
+
+
+cs|1|at|{ Many people enjoy bridge as a social game. }
+
+|
+pg| ***** 4 ***** |
+
+
+cs|4|at|{ Playing bridge is good exercise for your brain. }
+
+|
+pg| ***** 5 ***** |
+
+
+cs|2|at|{ By learning bridge you will improve your problem solving skills. }
+
+|
+pg| ***** 6 ***** |
+
+
+cs|3|at|{ By learning bridge you will improve your partnership communication skills. }
+
+|
+pg| ***** 7 ***** |
+
+
+cs|1|at|{ Bridge is a game for people of all ages, sexes, nationalities, races and religions. }
+^-
+|
+pg| ***** 8 ***** |
+
+
+n#|5|at|Hopefully you have been convinced you should learn to play bridge.|
+pg| ***** 9 ***** |
+
+
+nt|^z@3^b@2|tu||cs|3|at|
+So let's get started right away. 
+
+Imagine that you are sitting down at an on-line bridge table for the first time.  The first thing you may see is something like this (with face-to-face bridge you will see real cards and with some on-line systems you may have a choice):
+
+^-{|ih|psJ8hakq96d2tckj53|at|}
+^-
+This is your first bridge hand.|
+pg| ***** 10 ***** |
+
+
+at|
+
+All bridge hands contain 13 cards and this one is no exception. This particular bridge hand contains cards from each of the 4 suits in a standard deck of cards:|
+pg| ***** 11 ***** |
+
+
+cs|4|at|^k@2
+
+Spades (@S)
+
+|
+pg| ***** 12 ***** |
+
+
+at|Hearts (@H)
+
+|
+pg| ***** 13 ***** |
+
+
+at|Diamonds (@D)
+
+|
+pg| ***** 14 ***** |
+
+
+at|Clubs (@C)
+|
+pg| ***** 15 ***** |
+
+
+nt|^z@3^b@2|
+cs|3|at|
+Here is the same bridge hand repeated.  Notice that it is conveniently sorted into suits (you will be responsible for sorting your own hand whenever you play face-to-face bridge).
+
+^-{|ih|psJ8hakq96d2tckj53|at|}
+^-
+Notice that each suit has also been sorted for you, from highest card to lowest card.
+
+|cs|2|at|^-{  Aces are the highest cards in each suit in bridge.  }
+^-
+|
+pg| ***** 16 ***** |
+
+
+cs|3|at|^^Unlike some card games, bridge makes use of all 52 cards in the deck (jokers are not used). Each of the 4 suits contains 13 cards. Here, for example, are all of the 13 diamonds sorted from highest (the @DA on the left) to lowest
+(the @D2 on the right):
+
+|ht|n|at|   ^k  |ih|dakqjt987|ht|n|at| ^n   |ih|d65432|ht|p|at|^j@d|
+pg| ***** 17 ***** |
+
+
+ha|y|sv||
+nt|^z@3^b@2|
+md|ssJ8hakq96dt2ckj53,saq10952hjdj9754cqt,sk6ht842daq83c972|st||sk|s|
+at|^^If you take a look around the bridge table you will see something like this.
+
+The first thing you should notice is that you are not alone. You can see your bridge hand in the South position. There are 3 other bridge hands (in the West, North, and East positions) and the cards in these hands are hidden from you.
+|
+pg| ***** 18 ***** |
+
+
+nt|^z@3^b@2|cs|1|at|
+That's how it always is in bridge: 
+
+^-{You need 4 players to play. All 52 cards are dealt out, 13 to each of the 4 players.
+You only get to look at your own 13-card hand.}^-
+|
+pg| ***** 19 ***** |
+
+
+nt|^z@3^b@2
+It is conventional to use the 4 points of the compass to refer to the 4 players in bridge. Get used to being South, because that is where you are going to sit throughout this program.
+
+One of the most interesting and rewarding elements of bridge is that it is a ^*Ipartnership^*N game. Partners always sit across from each other at the bridge table.|
+pg| ***** 20 ***** |
+
+
+nt|^z@3^b@2
+Since you are sitting South, your partner is North. Your partnership is referred to as North-South.|
+pg| ***** 21 ***** |
+
+
+sb|nWelcome to your first bridge game, partner!|at|
+
+It is customary to greet your partner when you sit down to play bridge.|
+pg| ***** 22 ***** |
+
+
+sb|n|
+nt|^z@3^b@2
+Partnerships in bridge work together toward the same goals. Always remember your partner is on your side and try to treat him with courtesy and respect at all times.
+
+You and your partner, North, are facing the East-West partnership. Although bridge is a game that you will want to win, you should always be friendly and polite to the opponents.|
+pg| ***** 23 ***** |
+
+
+nt|^z@3^b@2|hb|b|wb|b|
+sb|wDon't worry, be happy!|
+sb|eHope you enjoy the bridge game, South!|
+at|
+Bridge is a much more enjoyable experience when everyone at the table is happy. Most bridge players, including your current opponents, East and West, are very nice people who will be helpful to and patient with new players.|
+pg| ***** 24 ***** |
+
+
+bm||sb|w|sb|e|sb|sI am new at bridge. Can I see your hands please?|
+nt|^z@3^b@2
+In fact, today your partner and opponents are so friendly that they will show you their hands if you ask them nicely!|
+pg| ***** 25 ***** |
+
+
+sk||sb|s|sb|w
+No problem!|sb|n
+Sure partner.|sb|e
+Here's my hand, South.|
+nt|^z@3^b@2
+Of course, you can't do this when you are really playing bridge. However, it is easier to learn bridge when you can see all 52 cards. In this program (and throughout bridge literature) bridge deals are often presented with all the cards showing. 
+
+Just remember you only get to see your own cards when you are really playing the game.|
+pg| ***** 26 ***** |
+
+
+sb|w|sb|n|sb|e|
+nt|^z@3^b@2
+On the subject of bridge literature and how bridge deals are presented in this program, there is one more important thing you should know before we move on.
+
+This way of presenting a bridge deal is known as ^*b hand diagram notation^*n,  you may have seen similar (without the colors) in the bridge column of a newspaper.|
+pg| ***** 27 ***** |
+
+
+nt|^z@3^b@2
+The suits in a   hand diagram   are always presented in the same order:|
+ht|e|
+cs||at|^U@S Spades|
+pg| ***** 28 ***** |
+
+
+ht|k|
+cs||at|^U@H Hearts|
+pg| ***** 29 ***** |
+
+
+ht|q|
+cs||at|^U@D Diamonds|
+pg| ***** 30 ***** |
+
+
+ht|w|
+cs||at|^U@C Clubs|
+pg| ***** 31 ***** |
+
+
+at|
+Later, you will learn the reason for this order.|
+pg| ***** 32 ***** |
+
+
+fh|f40|
+bt||
+nt|^z@3^b@2^^|fp|f|
+at|Bidding and Play|fp||at|
+
+Each deal of bridge takes about 10 minutes to play and a typical session of bridge will consist of many deals. One of the great things about bridge is that you get a new 13 card hand on every deal. The odds of the same deal occurring twice are so astronomical that it is safe to say that every bridge deal you ever play will present you with a fresh challenge!
+
+There are 2 main things that happen on every bridge deal:|
+pg| ***** 33 ***** |
+
+
+qx|Bid,wide|
+cs|1|at|^^
+
+^g The |fp|f|at| { ^*b Bidding ^*n } |fp||at||
+pg| ***** 34 ***** |
+
+
+cs|2|at|  and the  |fp|f|at| { ^*b Play of the cards ^*n } |fp||
+pg| ***** 35 ***** |
+
+
+qx|Play, wide|
+at|^^^^
+On every bridge deal the bidding always precedes the play of the cards. Although these two phases of a bridge deal are quite different in nature, they impact each other greatly - you will find yourself picturing the play of the cards during the bidding and drawing inferences from the bidding during the play of the cards.
+
+After the bidding and the play of the cards of a bridge deal is complete, one of the partnerships will win points (you will learn how this works later). The cards are then shuffled and redealt. The object of the game of bridge is for your partnership to accumulate more points during the deals that are played than the opposing partnership does.
+
+When teaching bridge to new players the historical tendency been to emphasize ^*b bidding ^*n over ^*b play of the cards^*n. This program will break with that tradition and focus from the start, on the play of the cards. We will look at bidding once you have a sound knowledge of the basics of card play. 
+
+Understanding the nature of the play of the cards in bridge will make the concepts of bidding more comprehensible.|
+pg| ***** 36 ***** |
+
+
+qx||bt||nt||ht|i|fp|t|cs|c|cp||
+at|
+^-{^^    End   ^^^^	        Chapter 1       ^^ 
+}
+^-|
+CP||fp||
+pg| ***** 37 ***** |
+
+

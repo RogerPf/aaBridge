@@ -1,0 +1,240 @@
+%%
+%%
+
+ss|chapter,1.                                               Planning A |
+
+ss|movie-maker,Roger Pfister|
+
+%%
+%%  Date last Edited    2017-08-08          set by human hand (if at all)
+%%
+
+
+<<--INSERT-START-->>=01___FP_masthead.ins
+%%
+ss|masthead,More from Oliver                                        2017  |
+%%
+cr|m245|cg|m225|cb|m000|   fill   m  m-mastColor       yellow
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    some for of gray
+%%
+<<--INSERT-END**-->>=01___FP_masthead.ins
+
+
+<<--INSERT-START-->>=02___FP_fonts_colors_bars.ins
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title           section titles within chapters
+fh|b50|                    Font   b  b-bigTitle        big Titles
+fh|g60|                    Font   g  g-graphSuit
+fh|m64|                    Font   m  m-mastHead        size in banner 1
+fh|c70|                    Font   c  c-chapTitle       size in banner 2
+%%
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|h000|cg|h095|cb|h169|   TEXT   h  h-highlight  text section type etc
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+ht|c|n#|4|fp|m-mastHead|at|^-|uu|at`,masthead,`|at|^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*b|uu|at`,chapter,`|at|^*n^-^^|cs||fp||cp||at|^^|
+ht|i|
+%%
+<<--INSERT-END**-->>=02___FP_fonts_colors_bars.ins
+
+
+<<--INSERT-START-->>=03___FP_general_text.ins
+%%
+ht|i|
+Lg|g|
+n^|5|fp|4|at|^c@2^z@3^^|
+at|Oliver Clarke is the driving force behind OCP, a high end version of Super Precision.  To find more on OCP
+see inside aaBridge (this app) under    ^*b menubar    >    Books-L ^*n.
+|n^|7|at|
+The main OCP website it at   ^*h http://ocp.pigpen.org.uk/,ocp.pigpen.org.uk^*n which includes a forum section.  This series of articles are each based on posts made, mainly by Oliver, to the ^*h http://ocp.pigpen.org.uk/smf/index.php?board18.0,  Interesting Play Hands ^*n  sub-forum.
+|cp|mg|n^|5|at|^^^d@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-
+|cp||
+%%
+<<--INSERT-END**-->>=03___FP_general_text.ins
+
+
+<<--INSERT-START-->>=04___FP_apply_defaults.ins
+%%
+ht|w|n#|5|lg||at|^f@2@1|at|^*b Before you start ^*n  please click the  |fp|c|cp|p|at|@.|cp||fp||at|{ ^*b Apply Defaults ^*n }  button  in the right hand column.|
+%%
+<<--INSERT-END**-->>=04___FP_apply_defaults.ins
+
+
+<<--INSERT-START-->>=05___FP_footer.ins
+%%
+ht|z|n^|9|at|@0@1^c^*b Click ^*n |fp|f|at| { ^*b Flow > ^*n } |fp|s|at|  (below)|fp||at|  ^*b THEN ^*n  use your   ^*bMouse Wheel^*n  |fp|s|at|(if you have one)|fp||at|.|
+%%
+ht|z|n#|a|at|@0^r ^*bMM:^*n  (Movie Maker)    |uu|at`,movie-maker,`|
+%%
+<<--INSERT-END**-->>=05___FP_footer.ins
+
+
+<<--INSERT-START-->>=06___FP_defs_settings_etc.ins
+%%
+pi|n|     %% suppress any display of  hcp etc  in the players names area
+bv|a,h|   %% hide all three buttons
+%%
+<<--INSERT-END**-->>=06___FP_defs_settings_etc.ins
+
+
+%%
+%%   The text below is special to this lin file ------------------------
+%%
+
+%%
+%% Oliver's Title:   Make a Plan! Concentrate on the Essentials!      (reverse) Page 1
+%% http://ocp.pigpen.org.uk/smf/index.php?topic=696.0
+%%
+lg|d|
+at|^z@3^c@2^^|
+ht|r|fp|t|at|As you can tell from the title, this deal focuses on Planning.  
+^m Would you come up with the best plan ?|fp||
+
+qx|# 1|
+pg| ***** 0 ***** |
+
+
+---------------------------------------------------------------------------
+st||
+bv|e,v|
+rh||ah|Oliver 1|
+pn|       You, West, Oliver, East|
+sv|e|sk|s|sk||
+%% 4s974hKT8543d8cA42,sAKJ832hdA32cT965,sThAJ972dK754cQJ7,sQ65hQ6dQJT96cK83
+md|4s974hKT8543d8cA42|
+mb|p|
+sv|e|sk|s|sk||
+nt|^z@3^b@2^^|n^|5|
+lg||
+
+at|^*bOliver 1^*n     The hand|
+pg| ***** 1 ***** |
+
+
+at|,     the bidding|
+mb|2H|
+pg| ***** 2 ***** |
+
+
+sj|L|
+mb|2S|
+pg| ***** 3 ***** |
+
+
+sj|c|
+mb|p|mb|3S|
+pg| ***** 4 ***** |
+
+
+sj|c|
+mb|p|mb|4S|
+pg| ***** 5 ***** |
+
+
+sj|L|
+mb|5H|
+pg| ***** 6 ***** |
+
+
+sj|c|
+mb|p|mb|p|
+pg| ***** 7 ***** |
+
+
+sj|L|
+mb|d|
+pg| ***** 8 ***** |
+
+
+sj|r|
+mb|p|mb|p|
+pg| ***** 9 ***** |
+
+
+sk|s|
+mb|p|
+md|0s974hKT8543d8cA42,,sThAJ972dK754cQJ7,|
+aa|y|
+pc|sA|
+at|,     the lead|
+pg| ***** 10 ***** |
+
+
+---------------------------------------------------------------------------
+lg|f|
+n#|3|at|^^|cp|red|at|^*bOliverC:^*n|cp||at|  In case you're wondering about my (North's) initial Pass over 2@S, I felt I had too many Hearts and too many hcp and didn't want to push EW to a making game they might not bid otherwise.     Once they had bid 4@S, I obviously had a very cheap sacrifice.|
+pg| ***** 11 ***** |
+
+
+n#|5|at|^^The first couple of tricks go as follows -       Click  ^*b  Flow >^*n|
+pg| ***** 12 ***** |
+
+
+pc|ST|pc|S5|pc|S4|
+pg| ***** 13 ***** |
+
+
+pc|CT|pc|CJ|pc|CK|pc|CA|
+pg| ***** 14 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Plan,wide|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+tt|y|
+at|^*bWhat's your plan ? ^*n|
+pg| ***** 15 ***** |
+
+
+n#|3|at|^^That's the really crucial question, because you need to have a plan.  This contract is at most -1 (losing 1 trick in each side suit) but you really need to try to make it, because some NS pairs might buy the contract in 4@H, and some EW pairs might push on to 5@S, which is probably going to be off as we know the @CK is onside.|
+pg| ***** 16 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|Although the Clubs have started well, you have a losing club which needs to be discarded.   The only reasonable chance for that is to find the  @dA  onside.   There is very little chance of finding West with 5 @d's (and East with @dAxx), which would allow you to ruff out the Ace.  
+^^There is similarly no chance of the @c98  disappearing into thin air.|
+pg| ***** 17 ***** |
+
+
+---------------------------------------------------------------------------
+qx|Ans,wide|
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|So your plan should be a very simple one, a @h to dummy's Ace and a @h back to the King in hand (however the trumps are distributed - in practice East had both of them) and then lead the @d towards the King.  West, holding the @dAce, is powerless.  They either let the @dK win, in which case your 3rd losing trick disappears, or they rise with the @dA and now the @dK takes care of your 3rd @c.|
+n#|7|at|^^If it turns out that East has the @dAce, you've lost nothing, because the hand was unmakeable.|
+pg| ***** 18 ***** |
+
+
+---------------------------------------------------------------------------
+nt|^z@3^b@2^^|n^|5|
+lg|f|
+at|To summarise   -   ^*b When making a plan concentrate on the |cp|red|at| essential |cp||at| features of the hand ^*n|
+pg| ***** 19 ***** |
+
+
+qx|Play,wide|
+bv|a,v|
+md|0s974hKT8543d8cA42,sAKJ832hdA32cT965,sThAJ972dK754cQJ7,sQ65hQ6dQJT96cK83|
+lg|m|
+n#|6|at|^^^*bMM:^*N  You can now play out the rest of the hand using the  { ^*b Cont ^*n }  button.
+If you wish you can follow Oliver's Plan.  (Do remember what he just said ?)  ^*b OR ^*n  you can try your own plan.|
+
+
+pf|both-first-cont|
+pg| ***** 20 ***** |
+
+
