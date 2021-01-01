@@ -1,0 +1,494 @@
+%% elimination play (3)
+%% The hands are from my old lesson(17) (......\lesson\endplays\suit-9_a1.lin)
+
+mn| Al (xx1943) teaching : Declarer play for beginners (17) Elimination and endplays|
+tu||
+
+%% Font definiton:
+fh|150|ff|1Arial|fb|110|fm|1|
+fh|235|ff|2Arial|fb|28|fm|2|
+fh|340|ff|3Arial|fb|35|fm|3|
+fb|49|fm|4|fb|4|fm|4|
+
+%% color definition
+cr|116|cg|116|cb|1255|              blau = blue
+cr|2255|cg|2255|cb|264|             gelb = yellow
+cr|30|cg|30|cb|3128|                dunkelblau = dark blue
+cr|4255|cg|4255|cb|40|              dunkleres gelb = dark yellow
+cr|516|cg|5128|cb|516|              grün = green
+cr|6245|cb|6220|cg|6235|            beige
+cr|70|cb|7220|cg|7235|              grün-blau = green-blue
+cr|8255|cb|8200|cg|8200|            rosa = pink
+cr|9200|cb|90|cg|9150|              braun = brown
+
+%%% -----------------------------------menu-------------------------------------------
+qx|Menu|
+set background color
+bg|6|
+bt||nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^-{ Al teaching:  Declarer play for beginners (17) (suit contract 1)  }
+
+{Elimination and endplay (3); More examples}
+^-|
+cp||fp||
+
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+ht|d|
+cs|3|
+cp|4|
+^-
+fp|1|3d|0|
+cp||
+fp||
+cs|2|
+ht|f|
+
+at|^c@2{
+^*Go1,     Example 1 : Critical suit Jxx-Qxx; exit with a loser^*N
+^*Go2,     Example 2 : Critical suit AQ5 - 432; combined chances; exit by loser on loser^*N
+^*Go2a,     Example 2 : Critical suit AQ9 - 432; combined chances; exit with the magic AQ9^*N
+^*Go2b,     Example 2 : Critical suit AQ8 - 432; combined chances; exit with AQ8 and hope RHO is sleeping^*N
+^*Go3,     Example 3 : Critical suit AJ10 - xxx; exit in this suit^*N
+^*Go4,     Example 4 : Which way to exit?^*N
+
+{
+^*Gintro, ^c     About this series of lessons^*N 
+
+{^x@3
+^*Gbooks,     Recommendations^*N
+^*Ghelp,     How to navigate in this movie ^*N
+}|
+pg||
+%%--------------------------summary--What to learn in this lesson---------
+qx|Introduction|
+
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {This is what you'll learn in this lesson ^z}
+|
+
+
+%% Impressum at line "z"
+ht|z|cp||fp||
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+
+
+cp||cs|8|fp||
+ht|c| %% Vertikale position
+fp|3|cs|7|cp|9|
+cs|2|fp||cp||
+
+cs|8|
+at|
+{^c@2In this lesson we shall see a variant of Plan 3, the elimination play: 
+It is described as the situation in which an opponent has to choose between 
+leading towards a tenace or conceding a ruff and discard.  ^z}
+|
+cs|2|pg||at|
+{^c@2Questions you should always ask yourself before you adopt an elimination play:
+^d1. Do I have a problem suit where I have to make a guess or where leading the suit (breaking it) may cost a trick?
+^d2. Do I have enough trumps in both hands to make a ruff and sluff possible?
+^d3. Is it possible to eliminate the side suits?
+^d4. How will I put a defender on lead? ^z|
+pg||at|
+{^c@2Most elimination plays rely on a tenace in some suit. Often it is a holding which will benefit from a lead by an opponent. 
+Let's see some examples:
+^d1. Qxx  Jxx One trick is certain if suit is lead by an opponent.
+^d2. AQT  xxx Two tricks are certain if neither opponent has a safe exit.
+^d3.  AJx  KTx Three tricks are certain. ^z
+
+{There are a lot of suit combinations, which you should avoid to lead yourself, but try to induce an opponent to do so:
+AJx - K10x;   AJx - K9x;    A10x - K9x;   A9x -Q8x; A10x - Jxx;   Qxx - K109;   Q9x - K8x;    Jxx - Kxx;    Jxx - Qxx}|Pg||
+At|
+
+To execute an endplays follow three steps:|pg||
+At|
+1) Eliminate all the side-suits.|pg||
+At|
+2) Throw the opponent in.|pg||
+At|
+   a) In a side suit, in which you and dummy (or defender) have no more cards|pg||
+At|
+   b) with help of an loser on loser play|pg||
+At|
+   c) with one of magic combinations AQ10, AQ9 ....|pg||
+At|
+3) Wait for opponent to open your critical suit or give you a ruff and sluff.|pg||
+
+
+%% --------------------------hand number 1 -------------------------------------
+qx|o1|
+st||
+rh||
+ah|Board #1|
+ah|Exit with a loser|
+md|3SAKQ65HAKJD65CQ54,SJ8HT87DKQ98CA976,ST9732HQ32DA2CJ32,S4H9654DJT743CKT8|nt||sv|0|
+sc||
+sk|S|
+mb|-|mb|p|mb|p|mb|1S|mb|p|mb|4S|mb|p|mb|p|mb|p|mb|-|mb|-|mb|-|pc|DK|
+nt|Count your losers: 1 @d and 3 @c (if you must play them). Your plan?|
+pg||
+at| With lots of trumps, a side suit easy to eliminate, and an obvious exit card (the @d loser), this hand 'begs' for an endplay....|
+pg||
+pc|DA|pc|D4|pc|D5|
+at| First, let's clear the trumps.|
+pg||
+pc|S2|pc|S4|pc|SQ|pc|S8|pg||
+pc|SK|pc|SJ|pc|S3|pc|H4|
+at| Then, you eliminate the side suit|
+pg||
+pc|HA|pc|H7|pc|H2|pc|H5|pg||
+pc|HK|pc|H8|pc|H3|pc|H6|pg||
+pc|HJ|pc|HT|pc|HQ|pc|H9|
+at| and you exit with your @d loser.|
+pg||
+pc|D2|pc|DT|pc|D6|pc|D8|
+at| The opps have no choice but give you a ruff and discard or play the @cs for you....|
+pg||
+sk||
+mc|10|pg||
+sc|y|mc|10|pg||
+
+%% --------------------------hand number 2 -------------------------------------
+
+
+qx|o2|
+st||
+rh||
+ah|Board #2|
+ah|Combination|
+ah|of plans|
+md|4SAQT84HK3DA54CAQ5,S9HQJT7DJT98CK876,SKJ32HA2DKQ32C432,S765H98654D76CJT9|nt||sv|n|
+sc||
+sk|S|
+mb|-|mb|-|mb|p|mb|1S|mb|p|pg||sk|N|mb|2N|an|4 card support + 12 Hcps|pg||mb|p|sk|S|mb|3N|an|slam invite, balanced 18-19|pg||mb|p|sk|N|mb|4D|an|ctl cue|pg||mb|p|sk|S|mb|4H|an|ctl cue|nt|Note: Since North previous bid had denied a @c control, the 4@h cue-bid also promises a 1st round or 2nd round @c control.|pg||mb|p|mb|4N|mb|p|mb|5D|an|3 keys|pg||mb|p|sk|N|mb|5H|an|@s queen?|pg||mb|p|sk|S|mb|6S|an|better stop here since I know we are missing the @cK|pg||mb|p|mb|p|mb|p|mb|-|pc|HQ|nt|You see a sure @c loser, maybe a 2nd if the finesse fails. Can you think of a better plan?|
+pg||
+at| Right, an endplay will secure your contract. You start by eliminating the @s.|
+pg||
+pc|Hhhk|pg||
+pc|Sssjs|pg||
+pc|S2|pc|S6|pc|SQ|pc|C7|pg||
+pc|SA|pc|H7|pc|S3|pc|S7|pg||
+at| Then you test the @ds. If they are 3-3, all is well. And, if West has 4 @d, he cannot escape the endplay. 
+However if East has the 4th., there are 2 possibilities:
+1) throw him in in @d, maybe he makes the mistake to give you a ruff and sluff. OR
+2) Ruff the last @d go back to @hA and lead a low @c and hope the make a mistake and West wins that trick.|
+pg||
+pc|DA|pc|D8|pc|D2|pc|D7|pg||
+pc|D4|pc|D9|pc|DK|pc|D6|pg||
+pc|DQ|pc|H6|pc|D5|pc|DT|
+
+at|
+Grrrrrrrr They split badly. But West holds the length, So the contract is sure.|
+pg||pc|HA|pc|H|pc|H|pc|H|
+pg||pc|D3|pc|H8|pc|C5|pc|DJ|
+at| ........West is now endplayed...|
+pg||
+sk||
+mc|12|pg||
+sc|y|mc|12|pg||
+
+
+%% --------------------------hand number 2 variant a ---------------------------
+
+qx|o2a|
+st||
+rh||
+ah|Board #2a|
+ah|Combination|
+ah|of plans; again|
+md|4SAQT84HK3DA54CAQ9,S965HQJT7DJTCKj86,SKJ32HA2DKQ32C432,|nt||sv|n|
+sc||sk|S|
+mb|-|mb|-|mb|p|mb|1S|mb|p|mb|2N|an|4 card support + 12 Hcps|mb|p|mb|3N|an|slam invite, balanced 18-19|mb|p|mb|4D|an|ctl cue|mb|p|mb|4H|an|ctl cue|mb|p|mb|4N|mb|p|mb|5D|an|3 keys|mb|p|mb|5H|an|@s queen?|mb|p|mb|6S|an|better stop here since I know we are missing the @cK|mb|p|mb|p|mb|p|mb|-|pc|HQ|nt|The hand is almost identical to the last one. So let us adopt the same plan as before:|
+pg||pc|hhhk|nt|Take the lead in your hand. The entry to dummy maybe later very important.|
+pg||pc|sasss|
+pg||pc|sqssh|
+pg||pc|sssjh|at|
+Ok. trumps are pulled.|
+pg||pc|dddad|
+pg||pc|dddqd|
+pg||pc|dkddc7|sb|SBad news: diamonds are 4-2 and the wrong defender (RHO) holds the length.|
+pg||pc|ddsh|at|   @ds are eliminated too.|sb|s|
+pg||pc|hhhh|at|     Now we use the vital entry in @h.|
+pg||pc|c|at|
+Now lead a @c from dummy and claim. Tell them: I'll cover whatever card East plays.|cs|2|at|
+
+^-{I hold the magic AQ9 !!!!}|
+pg||sk||pc|cccj|
+pg||nt|West has the choice to give declarer a ruff and and sluff,
+|pc|hshc|
+pg||at|or to lead up into declarers @c tenace.|up|4|
+pg||pc|cccc|mc|12|
+pg||
+
+%% --------------------------hand number 2 variant b ---------------------------
+
+qx|o2b|
+st||
+rh||
+ah|Board #2b|
+ah|Combination|
+ah|of plans; again|
+md|4SAQT84HK3DA54CAQ8,S965HQJT7DJTCKj96,SKJ32HA2DKQ32C432,|nt||sv|n|
+sc||sk|S|
+mb|-|mb|-|mb|p|mb|1S|mb|p|mb|2N|an|4 card support + 12 Hcps|mb|p|mb|3N|an|slam invite, balanced 18-19|mb|p|mb|4D|an|ctl cue|mb|p|mb|4H|an|ctl cue|mb|p|mb|4N|mb|p|mb|5D|an|3 keys|mb|p|mb|5H|an|@s queen?|mb|p|mb|6S|an|better stop here since I know we are missing the @cK|mb|p|mb|p|mb|p|mb|-|pc|HQ|nt|The hand is almost identical to the last one. So let us adopt the same plan as before:|
+pg||pc|hhhk|nt|Take the lead in your hand. The entry to dummy maybe later very important.|
+pg||pc|sasss|
+pg||pc|sqssh|
+pg||pc|sssjh|at|
+Ok. trumps are pulled.|
+pg||pc|dddad|
+pg||pc|dddqd|
+pg||pc|dkddc7|sb|SBad news: diamonds are 4-2 and the wrong defender (RHO) holds the length.|
+pg||pc|ddsh|at|   @ds are eliminated too.|sb|s|
+pg||pc|hhhh|at|     Now we use the vital entry in @h.|
+pg||pc|c|at|
+Now lead a @c from dummy and hope that East is sleeping|
+pg||sk||pc|ccc|sb|sBINGO|
+pg||nt|As before West the choice to give declarer a ruff and and sluff,
+|pc|hshc|
+pg||at|or to lead up into declarers @c tenace.|up|4|
+pg||pc|cccc|sb|s|
+pg||nt|BUT East could have done better. Let us go 2 tricks back.|
+pg||up|7|
+pg||pc|ct|sb|shmhh congrat opponent, well done|
+pg||pc|cc|sb|s|at|
+This time declarer had no chance|
+pg|ccckc|
+pg||mc|11|
+pg||
+
+
+
+%% --------------------------hand number 3 -------------------------------------
+
+
+qx|o3|
+st||
+rh||
+ah|Board #3|
+ah|Improve the 75%|
+md|1S32HAKQT8DK43CAJT,SJT98H96DJT97CKQ7,SAK4HJ732DA2C6532,SQ765H54DQ865C984|nt||sv|e|
+sc||
+sk|S|
+mb|-|mb|-|mb|-|mb|1H|pg||mb|p|sk|N|mb|2N|an|4 card support + 12 Hcps|pg||mb|p|sk|S|mb|3H|an|one K above minimum at least|pg||mb|p|sk|N|mb|4D|an|ctl cue|pg||mb|p|sk|S|mb|5C|an|if you have a @s ctl - pls. bid slam|pg||mb|p|sk|N|mb|6H|an|glad to oblige|pg||sk|S|mb|p|mb|p|mb|p|mb|-|mb|-|mb|-|pc|DJ|
+nt|Very nice hand... 2 @c losers - You could think of trying a double finesse (75% chance). But is there a better plan? Ensuring your contract 100%.|
+pg||
+at| Yes. You could be unlucky and have both @c honors with West. Therefore think of an endplay.|
+pg||
+pc|DA|pc|D5|pc|D3|
+at| Start by clearing the trumps.|
+pg||
+pc|H2|pc|H4|pc|HQ|pc|H6|pg||
+pc|HA|pc|H9|pc|H3|pc|H5|
+at| Then eliminate the @ss|
+pg||
+pc|S3|pc|S8|pc|SA|pc|S5|pg||
+pc|SK|pc|S6|pc|S2|pc|S9|pg||
+pc|S4|pc|S7|pc|HK|pc|ST|
+at| and the @ds. |
+pg||
+pc|DK|pc|D7|pc|D2|pc|D6|pg||
+pc|D4|pc|D9|pc|HJ|pc|D8|at| The priority of the elimination was important. The lead must be in dummy just now.|
+pg||at| Now endplay West by leading a small @c from dummy... Poor West can only comment: wdo...|
+pg||
+pc|C2|pc|C4|pc|CT|pc|CK|
+pg||
+sk||
+mc|12|pg||
+sc|y|mc|12|pg||
+
+
+
+%% --------------------------hand number 4 -------------------------------------
+%%% hand 6 in the original set of hands
+qx|o4|
+st||
+rh||
+ah|Board #4|
+ah|Which way| 
+ah|to exit?|
+md|4SA3HAK943DAQ5C432,SKQ96HJ7DK87CJ876,SJTHQ8652D432CAK9,S87542HTDJT96CQT5|nt||sv|e|
+sc||
+sk|S|
+mb|-|mb|-|mb|p|mb|1H|mb|p|mb|4H|mb|p|mb|p|mb|p|mb|-|mb|-|mb|-|pc|SK|
+nt|Easy contract if @dK is on side, but should you risk your contract on a finesse?|
+pg||
+at| Never, when there is a no-cost alternative. You learned from the lead that West has the @sQ. So you know how to end-play West. Have you noted something peculiar about this hand?|
+pg||
+at| Right! You can't eliminate completely the @cs. Is this a problem? Let's see.|
+pg||
+pc|ST|pc|S4|pc|SA|
+at| As usual, you start by clearing the trumps|
+pg||
+pc|HA|pc|H7|pc|H2|pc|HT|pg||
+pc|HK|pc|HJ|pc|H5|pc|S2|
+at| and eliminate the @cs.|
+pg||
+pc|C2|pc|C6|pc|CA|pc|C5|pg||
+pc|CK|pc|CT|pc|C3|pc|C7|
+nt|Now do you exit to West with a @s, hoping he had only 2 @c cards (unlikely) or do you risk exiting with a @c and have East take over the trick?|
+pg||
+at| Exiting with a @c is the correct choice. Because you have the @dA, you can take the next trick and then complete your endplay by playing a @s to West @sQ.| 
+pg||
+pc|C9|pc|CQ|pc|C4|pc|C8|pg||
+pc|DJ|pc|DA|pc|D7|pc|D2|pg||
+pc|S3|pc|SQ|pc|SJ|pc|S5|sk||
+at| Now West is in the familiar situation of giving you a ruff and discard or play @d for you.|
+pg||
+mc|10|pg||
+nt| Are you curious to see what happens if you had exited with the @sJ?|
+pg||
+sk|S|
+Up|12|
+pc|SJ|pc|S5|pc|S3|pc|SQ|
+at| You find out that West was not endplayed as he could exit with a @c.|
+pg||
+pc|C8|pc|C9|pc|CQ|pc|C4|pg||
+pc|DJ|
+at| And now you are the one being endplayed and cannot avoid 2 @d losers.| 
+pg||
+sk||
+mc|9|pg||
+sc|y|mc|9|pg||
+
+
+
+%% ------------------------General notes--------------------------------
+qx|intro|
+bt||
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^-{ Al teaching:  }
+
+{About this series of lessons}
+^-|
+cp||cs|2|fp||
+ht|g|
+at|^c@2{My target group are absolutely beginners}
+
+{My topic is the DECLARER PLAY; not the bidding not the defense}
+
+{I presuppose only a few things about bridge which you find e.g.:
+^d@2^*Hwww.rpbridge.net/1a00.htm^*N Learn to play bridge with Richard Pavlicek
+^*Hwww.rpbridge.net/1t05.htm ^*N Introduction to R. Pavlicek lessons
+^*Hwww.prairienet.org/bridge/start.htm^*N Getting started with Karen's bridge library
+^*Hwww.prairienet.org/bridge/glos.htm^*N Glossary for Beginners in Karen's bridge library
+}
+
+{^c@2 If you have any questions feel free to mail me to albrecht.hollstein@@freenet.de}
+|
+fp|2|at|
+{If you like my lessons, tell it to others, if you dislike something, tell it to me.}@0@1|
+ht|z|fp||
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+     pg||
+
+
+
+%%--------------------------summary-----------------------------------
+qx|conclusion|
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {This is what you'll learn in this lesson}
+|
+cp||cs|8|fp||
+ht|d| %% Vertikale position
+at|^c@2{}
+
+
+@0@1|
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|pg||
+
+
+
+%%--------------------recommendations----------------------------------
+qx|books|
+nt||
+bg|6|nt||cs|3|cp|4|fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {Recommendations}
+|
+
+cs|8|cp||fp|2|at|^e@2
+
+{
+^f@2Recommended books:
+|
+fp||at|
+1) Robert Berthe, Norbert Lebely: "Step by Step" Vol1 NT-declarer-play.   
+   This is the best book to learn the basics
+
+2) Victor Mollo, Nico Gardener: Card Play technique
+   A classical from 1955, but useful forever
+
+3) William S. Root: How to play a bridge hand.
+   12 easy chapters to winning bridge
+
+4) Louis H. Watson: Play of the hand at bridge
+   Another classical from 1934; very instructive, but you need time
+   }|
+cs|9|cp||fp|2|at|^e@2
+
+{
+^f@2Recommended software:
+|
+fp||at|
+1) Learn to play bridge; A great introduction and it is free.
+   ^*Hweb3.acbl.org/internet/websiteForms.nsf/ltpbForm?OpenForm^*N     
+
+2) Bridge Master 2000 by Fred Gitelman;
+   the best software to learn declarer play.
+   ^*Hbbi.bridgebase.com/software/bmdesc.html^*N
+   }|
+pg||
+
+
+%
+%% ---------- HELP ----------
+qx|Help, Help notes|
+bt||nt||cs|2|fp|2|ht|b|at|^-{ Help }
+^-|
+fp||ht|e|at|
+Short instruction on how to navigate through the movie:
+
+ ^$6  Previous page, permits you to read the previous page of this movie.
+ ^$40  Next page, permits you to read the next page of this movie.
+ ^$7  Previous chapter, takes you back to the first page of the previous topic.
+ ^$41  Next chapter, takes you forward to the first page of the next topic.
+ ^$119  Takes you back to the first page of this movie.
+
+You can display any hand at any time if you click on the player's name. Double clicking the name will show all hands.|
+
+ht|u|
+fp|2|at|^-
+{If you like my lessons, tell it to others, if you dislike something, tell it to me.
+mail to: albrecht.hollstein@@freenet.de}
+^-|
+ht|z|fp||
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+%% ------------------------------------------------------------------------
+
+0

@@ -61,6 +61,14 @@ public class ButtonPanelLeft extends JPanel {
 	RpfResizeButton normal_b;
 	RpfResizeButton review_b;
 
+	public boolean isShuffOpVisible() {
+		return this.isVisible() && editHandsShuffOp_b.isVisible();
+	}
+
+	public boolean isNormal_Play_Visible() {
+		return this.isVisible() && normal_b.isVisible();
+	}
+
 	/**
 	 */
 	ButtonPanelLeft() { /* Constructor */

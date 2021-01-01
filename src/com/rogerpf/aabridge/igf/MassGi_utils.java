@@ -139,12 +139,19 @@ public class MassGi_utils {
 		 */
 		App.setMode(Aaa.NORMAL_ACTIVE);
 		App.setVisualMode(App.Vm_DealAndTutorial);
+
+		/* 2020 Nov 09 */
+		boolean pos_restore_hidden = (App.mg.lin.linType != Lin.FullMovie); // && !App.isStudyDeal() && !App.sd_dev_visibility;
+		if (pos_restore_hidden && App.localShowHiddPolicy == 0 /* Hide */) {
+			App.localShowHidden = false; // so we still DONT show the normally hidden hands
+		}
+
 		App.gbp.matchPanelsToDealState();
 		App.mg.setTheReadPoints(App.mg.stop_gi, false /* not used */);
 		if (App.mg.lin.linType == Lin.VuGraph) {
 			App.deal.youSeatHint = App.youSeatHint = Dir.South;
 		}
-//		App.youSeatHint = App.deal.youSeatHint;
+
 		App.frame.repaint();
 	}
 
@@ -170,7 +177,7 @@ public class MassGi_utils {
 		String add_o = bbo ? "o" : "";
 		String pg_bars = "pg|" + extra_space + "|";
 
-		String signfBoardId = (bbo || App.deal.signfBoardId.trim().isEmpty() ? "Board" : App.deal.signfBoardId);
+		// String signifier = ""; 
 
 		String local_displayId;
 		int v;
@@ -187,6 +194,22 @@ public class MassGi_utils {
 			local_displayId = "1";
 		}
 
+		String signfBoardId = App.deal.signfBoardId.isEmpty() ? "Board" : App.deal.signfBoardId;
+		String dispBoardId = App.deal.displayBoardId;
+		String possHash = "";
+
+		if (bbo) {
+			signfBoardId = "Board";
+			dispBoardId = local_displayId;
+		}
+		else if (deal.signfBoardId_is_hash_sig) {
+			possHash = "#";
+		}
+		else if (signfBoardId.isEmpty()) {
+			signfBoardId = "Board";
+			dispBoardId = local_displayId;
+		}
+
 		String out = "qx|" + add_o + local_displayId + "|";
 
 		if (App.discardPlayerNames == false) {
@@ -197,7 +220,7 @@ public class MassGi_utils {
 		// Headers and our invented Display Board Number
 		out += "rh||";
 
-		String ahText = signfBoardId + " " + local_displayId + " ";
+		String ahText = possHash + signfBoardId + " " + dispBoardId + " ";
 		deal.ahHeader.trim();
 		deal.ahHeadHid.trim();
 
@@ -276,7 +299,7 @@ public class MassGi_utils {
 		out += "sk|" + kib + "|";
 
 		if (kib.isEmpty() == false) {
-			out += "sk||";
+			out += "sk|-|";
 		}
 
 		out += pg_bars;
@@ -376,15 +399,15 @@ public class MassGi_utils {
 			out += "md|" + dlrChar + deal.cardsForLinSave(omitOpps) + "|" + EOL;
 		}
 
-		if (saveAsStudyDeal) {
-			String bh_bi = deal.botExtra.getBotHintsAndInstructionsAsLinSave(EOL, "" /* never and extra space */);
-
-			if (bh_bi.isEmpty() == false) {
-				out += "%";
-				out += bh_bi;
-				out += "%" + EOL;
-			}
+		out += "%";
+		String bh_bi = deal.botExtra.getBotHintsAndInstructionsAsLinSave(EOL, "" /* = never add extra space */);
+		if (bh_bi.isEmpty()) {
+			out += EOL + "bh!Play, W-E, sH, res, on-lead, T3-7, always!    %% EXAMPLE bot hint  (disabled)" + EOL;
 		}
+		else {
+			out += bh_bi;
+		}
+		out += "%" + EOL;
 
 		// sv => side vulnerability
 		out += "sv|" + deal.getSingleVulnerabilityLetter() + "|";
@@ -473,7 +496,7 @@ public class MassGi_utils {
 		String s3 = deal.cardPlayForLinSave(3 /* stage 0, 1-3 */);
 		if (s3.isEmpty() == false) {
 			out += clearAllButNotTopLeft + EOL;
-			out += "sk||" + EOL;
+			out += "sk|-|" + EOL;
 			out += "ht|m|at|^e Play follows ...|" + EOL;
 			out += "bv|f,v|" + EOL;
 			out += "pf|first-button|" + EOL;
@@ -492,7 +515,7 @@ public class MassGi_utils {
 		}
 
 		out += clearAllButNotTopLeft + EOL;
-		out += "sk||";
+		out += "sk|-|";
 		out += "ht|" + L1 + "|at|^e Complete   -   to play out any remaining ";
 		out += "cards ^*b Click ^*n the blue  { ^*b Cont ^*n }  button.|" + EOL;
 
@@ -506,7 +529,7 @@ public class MassGi_utils {
 		out += "bv|c,v|" + EOL;
 		out += "pg||" + EOL + EOL;
 
-		out += "sk||eb||" + EOL;
+		out += "sk|-|eb||" + EOL;
 		out += clearAllButNotTopLeft + EOL;
 		out += "lg|c|ht|j|at|^c|" + EOL;
 		out += "%%" + EOL;
@@ -518,7 +541,7 @@ public class MassGi_utils {
 		out += "bv|a,v|" + EOL;
 		out += "pg||" + EOL + EOL;
 
-		out += "bv|a,h|md|1,,,|nt||n^|5|at|^^^bcleared|sk||pg||" + EOL;
+		out += "bv|a,h|md|1,,,|nt||n^|5|at|^^^bcleared|sk|-|pg||" + EOL;
 		out += "" + EOL;
 		out += "" + EOL;
 
@@ -849,8 +872,6 @@ public class MassGi_utils {
 				App.reviewCard = 1;
 			}
 		}
-
-		App.cloneToDealBk_or_makeDealBkNull();
 
 		if (App.localShowHiddPolicy != 2) {
 			App.localShowHidden = (App.localShowHiddPolicy == 1);
@@ -2662,8 +2683,7 @@ class Hyperlink_g_int extends Hyperlink {
 
 		String label = getLinkInfo().toLowerCase();
 
-		if (label.contains(":") == false /** contains NONE */
-		) {
+		if (label.contains(":") == false /* contains NONE */) {
 			/**
 			 *  <target_label>
 			 *
@@ -2687,7 +2707,7 @@ class Hyperlink_g_int extends Hyperlink {
 				return;
 			String part_chap_name = sb[1];
 
-			@SuppressWarnings("unused")
+			// @SuppressWarnings("unused")
 			boolean chapterLoaded = false;
 
 			for (Bookshelf shelf : App.bookshelfArray) {
@@ -2700,14 +2720,61 @@ class Hyperlink_g_int extends Hyperlink {
 					}
 				}
 			}
+
+			if (chapterLoaded == false && App.book != null) {
+				LinChapter chapter = App.book.getChapterByDisplayNamePart(part_chap_name);
+				if (chapter != null) {
+					chapterLoaded = chapter.loadWithShow("replaceBookPanel");
+					jumpToQxLabel(sb[0]);
+				}
+			}
 			return;
 		}
 
 		if (label.contains("::")) {
+
 			/** 
 			 * <targetLabel>:<part_name_linfile>::<part_book_name> 
 			 * 
 			 * we need to look in other lin files in other books
+			 */
+
+			if (label.contains("::#")) {
+				String sb[] = label.split("::#");
+				if (sb.length < 2)
+					return;
+				String scc[] = sb[1].split(":");
+				if (scc.length > 0) {
+					String book_id = scc[0];
+					if (book_id.length() != 2)
+						return;
+					char c0 = book_id.charAt(0);
+					char c1 = book_id.charAt(1);
+					if (('0' > c0 || c0 > '9') || ('0' > c1 || c1 > '9'))
+						return;
+					int id = (c0 - '0') * 10 + (c1 - '0');
+					if (App.book != null && App.book.shelf != null) {
+						Book book = App.book.shelf.getBookByFrontNumb(id);
+						if (book != null) {
+							int chapter_index = 0;
+							if (scc.length > 0) {
+								chapter_index = Aaa.extractPositiveIntOrZero(scc[1]);
+							}
+							LinChapter chapter = book.getChapterByIndex(chapter_index);
+							chapter.loadWithShow("replaceBookPanel");
+						}
+					}
+				}
+				return;
+			}
+
+			/** 
+			 * <targetLabel>:<part_name_linfile>::<part_book_name> 
+			 * 
+			 * or 
+			 * 
+			 * ::<part_book_name>    first lin file implied
+			 * 
 			 */
 			String sb[] = label.split("::");
 			if (sb.length < 2 || sb[1].isEmpty())
@@ -2718,42 +2785,48 @@ class Hyperlink_g_int extends Hyperlink {
 
 			/**  Cut again 
 			 **/
-
+			String partName = "";
 			String sa[] = labelPlus.split(":");
-			if (sa.length < 2 || sa[1].isEmpty())
-				return;
 
-			label = sa[0];
-			String partName = sa[1];
+			if (sa.length >= 2) {
+				label = sa[0];
+				partName = sa[1];
+			}
+			else {
+				label = "";
+			}
 
 			LinChapter chapter = null;
 
-			if (partName.length() > 0) {
-				for (Bookshelf shelf : App.bookshelfArray) {
-					for (Book book : shelf) {
-						if (book.displayTitle.toLowerCase().contains(partBookName) == false)
-							continue;
+			for (Bookshelf shelf : App.bookshelfArray) {
+				for (Book book : shelf) {
+					if (book.displayTitle.toLowerCase().contains(partBookName) == false)
+						continue;
+
+					if (partName.isEmpty())
+						chapter = book.getChapterByIndex(0);
+					else
 						chapter = book.getChapterByDisplayNamePart(partName);
-						if (chapter != null) {
-							chapter.loadWithShow("replaceBookPanel");
-							if (label.length() > 0) {
-								jumpToQxLabel(label);
-							}
-							break;
+
+					if (chapter != null) {
+						chapter.loadWithShow("replaceBookPanel");
+						if (label.length() > 0) {
+							jumpToQxLabel(label);
 						}
-					}
-					if (chapter != null)
 						break;
+					}
 				}
+				if (chapter != null)
+					break;
 			}
 			return;
 		}
 
 		/**
-		 * <targetLabel>:<part_name_linfile>     (in the current book)
-		 * 
-		 *  we need to look in other lin files in *THIS*  book
-		 */
+			 * <targetLabel>:<part_name_linfile>     (in the current book)
+			 * 
+			 *  we need to look in other lin files in *THIS*  book
+			 */
 		String sa[] = label.split(":");
 		if (sa.length < 2 || sa[1].isEmpty())
 			return;

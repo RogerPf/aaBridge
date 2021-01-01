@@ -262,6 +262,14 @@ public class AaHomeBtnPanel extends ClickPanel implements ActionListener {
 			if (path == null || path.isEmpty() || new File(path).exists() == false)
 				return;
 
+			if (ctrlKey_depressed && !App.debug_linfile_partner_path.isEmpty() && !App.debug_linfile_partner_ext.isEmpty()) {
+				 String fn = new File(path).getName();
+				 String new_path = App.debug_linfile_partner_path + fn.substring(0, fn.length() - 3) + App.debug_linfile_partner_ext;
+				 if (new File(new_path).exists()) {
+					 path = new_path;
+				 }
+			}
+
 			try {
 				String np = Aaa.getLinFileEditorPath();
 				
@@ -368,8 +376,45 @@ public class AaHomeBtnPanel extends ClickPanel implements ActionListener {
 			}
 			else {
 				/**
-				 *  is the hit entry a zip or equiv ?
+				 *  Check to see it if is was in an external book
+				 *  
 				 */
+				boolean success = App.bookshelfArray.makeBookshelfFromDroppedPath(hit.src, false /* we DONT want the chapter loaded */);
+				if (success) {
+					for (Bookshelf shelf : App.bookshelfArray) {
+						Book b = shelf.getBookWithChapterPartName(hit.displayNoUscore);
+						if (b != null) {
+							boolean chapterLoaded = b.loadChapterByDisplayNamePart(hit.displayNoUscore);
+							if (chapterLoaded) {
+								App.book = b;
+								App.aaBookPanel.matchToAppBook();
+								App.aaBookPanel.showChapterAsSelected(hit.displayNoUscore);
+								App.mg.jump_to_pg_number_display((history_override != 0) ? history_override : hit.hist_pgNumb);
+								return;
+							}
+							break;
+						}
+					}
+				}
+
+				for (Bookshelf shelf : App.bookshelfArray) {
+					Book b = shelf.getBookWithChapterPartName(hit.displayNoUscore);
+
+					if (b != null) {
+						boolean chapterLoaded = b.loadChapterByDisplayNamePart(hit.displayNoUscore);
+						if (chapterLoaded) {
+							App.book = b;
+							App.aaBookPanel.matchToAppBook();
+							App.aaBookPanel.showChapterAsSelected(hit.displayNoUscore);
+							App.mg.jump_to_pg_number_display((history_override != 0) ? history_override : hit.hist_pgNumb);
+						}
+						break;
+					}
+				}	
+				
+				/**
+				 *  is the hit entry a zip or equiv ?
+				 */				
 				String low = src.toLowerCase();
 				if (low.endsWith(".zip") || low.endsWith(".linzip")) {
 					boolean chapterLoaded = BridgeLoader.makeBookFromPath(src, null);

@@ -1,0 +1,154 @@
+%% tags to identify the topic
+
+mn| Al (xx1943) teaching :     Count your loser|
+tu|y|
+
+%% Font definiton:
+fh|150|ff|1Arial|fb|110|fm|1|
+fh|235|ff|2Arial|fb|28|fm|2|
+fh|340|ff|3Arial|fb|35|fm|3|
+fb|49|fm|4|fb|4|fm|4|
+
+%% color definition
+cr|116|cg|116|cb|1255|              blau = blue
+cr|2255|cg|2255|cb|264|             gelb = yellow
+cr|30|cg|30|cb|3128|                dunkelblau = dark blue
+cr|4255|cg|4255|cb|40|              dunkleres gelb = dark yellow
+cr|516|cg|5128|cb|516|              grün = green
+cr|6245|cb|6220|cg|6235|            beige
+cr|70|cb|7220|cg|7235|              grün-blau = green-blue
+cr|8255|cb|8200|cg|8200|            rosa = pink
+cr|9200|cb|90|cg|9150|              braun = brown
+
+
+%%% -----------------------------------menu-------------------------------------------
+qx|Menu|
+set background color
+bg|6|
+bt||nt||
+cs|3|cp|4|
+fp|2|3d|0|
+
+cp||fp||
+
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+ht|d|
+cs|3|
+cp|4|
+^-
+fp|1|3d|0|
+cp||
+fp||
+cs|2|
+ht|f|
+at|^c@2^x@3{
+^*GIntro,     The source of this hand^*N
+
+{
+^*Go1,     Analysis and questions^*N
+^*Gc4,     How my partner misplayed this one^*N
+^*Go4,     How the play went in the other room^*N
+
+{^x@3
+^*Ghelp,     How to navigate in this movie ^*N
+}|
+pg||
+
+
+qx|o1|nt||sk|s|st||md|1S46TJQH34TJQDQC2Q,S58H2679D56C468TJ,,S2379HKD37TKAC37K|rh||ah|Board 4|sv|b|
+mb|p|mb|p|mb|1N|mb|p|mb|2H|mb|p|mb|2S|mb|p|mb|4H|mb|p|mb|p|mb|p|pc|cJ|
+pg||nt|A few remarks to the bidding. I recommend this methods to show a strong (gameforcing) 5-5 majors after 1NT:
+Xfer to @s and rebid 3@h or 4@h according to your partnerships agreement
+You may agree with your partner, that 3@H shows a inviting 5-5  and 3@s a gameforcing 5-5.
+The bidding in the open room (Texas to 4@h) is nonsense imho.)|
+pg||nt|Now to the play:
+Count your losers (as we normally do in a suit-contract)|
+pg||at|
+1@h + 1@d + 1@c = 3 losers, so the contract should be easy.
+The only danger is to lose a 2nd trump.|
+pg||nt|Now answer for yourself these questions:
+1) Do you take @cA or try to finesse the K?
+2) After you get the lead, how do you play the trumps?|
+pg||nt|It is very improbable, that LHO played the J from KJ10 against a suit-contract and if the J is a singleton, your contract is in danger. So take the A.
+But let us assume you were greedy and play a low @C.|
+pg||pc|cckc|
+pg||pc|dadd6d|
+pg||pc|dkhdd|
+pg||nt|Now it is the question wether to finesse the trump or play A and another.
+Remember this is IMP scoring and the only target is to make your contract.
+So it is no question to play A and another trump.
+If you want to know, what may happen, if you finesse, look ^*Gc4,how my partner played the hand^*N|
+pg||nt||
+
+
+
+qx|o4|nt||sk|e|pn|REDCEL,ari65,falcone_tr,breka|st||md|2S2379HKD37TKAC37K,S46TJQH34TJQDQC2Q,S58H2679D56C468TJ,|rh||ah|Board 4|sv|b|mb|p|mb|p|mb|1N|mb|p|mb|4D!|mb|p|mb|4H|mb|p|mb|p|mb|p|pg||pc|DK|pc|DQ|pc|D6|pc|D2|pg||pc|S3|pc|S4|pc|S8|pc|SA|pg||pc|HA|pc|HK|pc|H3|pc|H2|pg||pc|SK|pc|S2|pc|S6|pc|S5|pg||pc|H5|pc|D3|pc|HQ|pc|H7|pg||pc|HJ|pc|H6|pc|H8|pc|D7|pg||pc|HT|pc|H9|pc|D4|pc|DT|pg||pc|SQ|pc|D5|pc|D8|pc|S7|pg||pc|SJ|pc|C4|pc|D9|pc|S9|pg||pc|ST|pc|C6|pc|DJ|pc|C3|pg||pc|H4|pc|C8|pc|C5|pc|C7|pg||pc|C2|pc|CT|pc|CA|pc|CK|pg||pc|C9|pc|DA|pc|CQ|pc|CJ|pg||
+
+qx|c4|nt||pn|,,,,giolidama,Wild_Whist,vmmanu,xx1943|sk|w|st||md|2S2379HKD37TKAC37K,S46TJQH34TJQDQC2Q,S58H2679D56C468TJ,|rh||ah|Board 4|ah|misplayed|sv|b|mb|p|mb|p|mb|1N|mb|p|mb|2H|mb|p|mb|2S|mb|p|mb|4H|mb|p|mb|p|mb|p|pg||pc|CJ|pc|C5|pc|CK|pc|C2|pg||pc|DK|pc|DQ|pc|D6|pc|D2|pg||pc|DA|pc|H3|pc|D5|pc|D4|pg||pc|HQ|pc|H2|pc|H5|pc|HK|pg||pc|D3|pc|HT|pc|S5|pc|D8|pg||pc|HJ|pc|H6|pc|H8|pc|C3|pg||pc|S4|pc|S8|pc|SK|pc|S3|pg||pc|SA|pc|S2|pc|S6|pc|H7|pg||pc|C4|pc|C9|pc|C7|pc|CQ|pg||pc|SQ|pc|H9|pc|HA|pc|S7|mc|9|pg||
+
+
+%% ---------- HELP ----------
+qx|Help, Help notes|
+bt||bg|6|nt||cs|2|fp|2|ht|e|at|
+^b@2^x@3{
+ How to navigate this movie 
+ }
+ |
+
+fp||at|{
+   ^$6  Previous page, permits you to read the previous page of this movie.
+   ^$40  Next page, permits you to read the next page of this movie.
+   ^$7  Previous chapter, takes you back to the first page of the previous topic.
+   ^$41  Next chapter, takes you forward to the first page of the next topic.
+   ^$119  Takes you back to the first page of this movie.
+
+   You can display any hand at any time if you click on the player's name. 
+   Double clicking the name will show all hands.
+}|
+
+ht|o|cs|8|
+fp|2|at|
+
+{
+  This movie is optimized for BBO "wide-screen"  
+  You can toggle between the wide and the small mode by keying CTRL+"W". 
+}|
+cs|9|at|
+
+{
+  If you like my lessons, tell it to others, if you dislike something, tell it to me.  
+  mail to: albrecht.hollstein@@freenet.de
+}
+|
+ht|z|fp||
+%% Impressum at line "z"
+ht|y|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")
+     2009-07-26|
+
+pg||
+
+
+
+%% -----------------INTRO-------------------------------------------------------
+
+qx|intro|nt||cs|2|ht|g|
+at|
+
+^-
+{
+   This hand came up in a BBO-teammatch.
+   My partner lost his game, while his counterpart in the other room made 2 overtricks.
+   The hand has an interesting bidding problem too:
+   How do you treat a major 2-suiter after partner opens 1NT?
+   }
+
+^-|
+pg||
+
+
+%

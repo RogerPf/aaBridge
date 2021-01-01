@@ -557,7 +557,9 @@ public class Aaf {
 		System.out.println(" ");
 			
 		if (new File(App.downloads_folder).exists() == false) {
-			System.out.println("    WARNING  Using Downloads folder:    " + App.downloads_folder + "    which does NOT exist");
+			System.out.println("    WARNING  Using Downloads folder:    " + App.downloads_folder + "    which does NOT exist - will try to create it");
+			File dlf = new File(App.downloads_folder);
+			dlf.mkdir();
 		}
 		System.out.println(" ");
 		

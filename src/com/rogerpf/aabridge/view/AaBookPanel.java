@@ -89,6 +89,8 @@ public class AaBookPanel extends JPanel {
 		JScrollPane scroller = new JScrollPane(aaBookPanelInner);
 		scroller.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
+		scroller.getVerticalScrollBar().setUnitIncrement(32); // 16 * n
+
 		scroller.setBorder(BorderFactory.createEmptyBorder());
 
 		add(scroller, "width 100%, height 100%, push, grow");

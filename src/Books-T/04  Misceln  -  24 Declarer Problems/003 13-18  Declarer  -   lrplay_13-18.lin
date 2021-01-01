@@ -37,7 +37,7 @@ ht|k|cp|1|at|^t@2{|at|
 
 ^V^*GINT, The Authors^*N
 
-^v^*GBOK, The Book^*N 
+^v^*GBook, The Book^*N 
 ^z  }|cp||
 CS||
 FP||CP||
@@ -46,7 +46,7 @@ at|^bThe boards (Problems) in this presentation are from TEST YOUR PLAY AS DECLA
 |CP|1|at|^B@2^*GINT,Paul Lukacs & Jeff Rubens^*N|CP||
 AT| by ^*BVivisphere Publishing^*N from which permission for this specific use was kindly received. The book is available from Vivisphere Publishing 675 Dutchess Turnpike, Poughkeepsie, NY 12603 |CP|1|
 AT|^*Hwww.vivisphere.com/^*N|CP||AT|.|
-ht|j|at|^f@2^r@3IMPORTANT MESSAGE
+ht|j|at|^f@2^r@3
 ^b@2^s@3If this is your first time here, we suggest you click and read the |CP|1|
 AT|^*GDD,INSTRUCTIONS^*N|CP||
 AT|. From there after you are done, or anywhere in this movie, you can return to this main page by clicking the "First Page" arrow, top of the page in Viewer or  ^$119 . ALL text in blue is hyperlink.  
@@ -61,11 +61,12 @@ AT|^*Hwww.bridgesights.com/hondobridge/^*N|CP||AT| has reviewed the original tex
 PG| ***** 0 ***** |
 
 
+bv|f,v|
 NT||
 %%% L13
 qx|L13|pn|You,,Dummy,|st||sk|s|md|1SK64HAQT6D63CAKT8,SJT953H8432DKQJ8,SQ82HJ975DA2CQ642,SA7HKDT9754CJ9753|sv|0|rh||AH|Paul Lukacs and Jeff Rubens|AH|Test Your Play as a Declarer|AH|Problem 13|mb|1h1s2hp2np4hppp|
 NT|^B@2
-The contract is 4@H. The first four tricks are played (please click the forward arrow).|
+The contract is 4@H.  The first four tricks go as follows.|
 PG| ***** 1 ***** |
 
 
@@ -81,17 +82,20 @@ pc|h9hkhah2|
 PG| ***** 4 ***** |
 
 
-pc|hqh3h5d7|
+pc|hqh3h5d7|eb|y___|
 PG| ***** 5 ***** |
 
 
 NT|^B@2
-What is your plan to make the contract? Please consider the unexpected.|
+What is your plan to make the contract?   Please consider the unexpected.|
 PG| ***** 6 ***** |
 
 
-sk||NT|^B@2
-Use ^*BD^*Nouble ^*BD^*Nummy to test your plan. But do not click the forward arrow as it turns off the double dummy feature. The most recently played card may be taken back by clicking the back arrow or the undo button. When finished click the forward arrow to see the solution.|pf|y|
+n#|h|cp|red|at|^^ ^d ^*bNow |cp||
+at| Click^*n  the blue  { ^*b 1st ^*n }  button below|
+cp|red|at|^*b  and play out the hand^*n|cp||
+at|.     ^*b Flow ^*n  will end the problem.|
+pf|first-button|
 PG| ***** 7 ***** |
 
 
@@ -129,84 +133,94 @@ pg| ***** 13 ***** |
 
 
 pf||nt||bt||
-%%
-qx|L14|st||md|3SAK6HKQ742DA9CK76,CT,S52HA53DK8532CA53,|sv|0|rh||AH|Paul Lukacs and Jeff Rubens|AH|Test Your Play as a Declarer|AH|Problem 14|mb|1dp2hp3hp4np5hp5np6dp7hpppp|NT|^B@2
+sk|s|
+qx|L14|st||md|3SAK6HKQ742DA9CK76,SJ97HJ98DQJ76CT98,S52HA53DK8532CA53,SQT843HT6DT4CQJ42|
+sv|0|rh||AH|Paul Lukacs and Jeff Rubens|AH|Test Your Play as a Declarer|AH|Problem 14|mb|1dp2hp3hp4np5hp5np6dp7hpppp|NT|^B@2
 The contract is 7@H and West leads the club ten. Plan the play.|PC|CT|
 pg| ***** 14 ***** |
 
 
+n#|h|cp|red|at|^^ ^d ^*bNow |cp||
+at| Click^*n  the blue  { ^*b 1st ^*n }  button below|
+cp|red|at|^*b  and play out the hand^*n|cp||
+at|.     ^*b Flow ^*n  will end the problem.|
+pf|first-button|
+pg| ***** 15 ***** |
+
+
+sk||
 NT|^B@2
 Declarer must assume trumps are 3-2. If diamonds are 3-3, there is no problem. There is also no problem (and no contract) if diamonds are 5-1 or 6-0.|
-PG| ***** 15 ***** |
-
-
-sk|s|NT|^B@2
-Therefore, declarer should plan to succeed whenever possible if diamonds break 4-2. In this event two ruffs will be required to establish a long diamond in dummy and a spade ruff is also necessary (for the thirteenth trick). |MD|0,SJ97HJ98DQJ76C98,0,SQT843HT6DT4CQJ42|
 PG| ***** 16 ***** |
 
 
 NT|^B@2
-So the basic plan must be: win the club king (retaining the club ace as a late entry to cash the long diamond),|pc|c3c2ck|
+Therefore, declarer should plan to succeed whenever possible if diamonds break 4-2. In this event two ruffs will be required to establish a long diamond in dummy and a spade ruff is also necessary (for the thirteenth trick).| 
 PG| ***** 17 ***** |
 
 
+NT|^B@2
+So the basic plan must be: win the club king (retaining the club ace as a late entry to cash the long diamond),|pc|c3c2ck|
+PG| ***** 18 ***** |
+
+
 NT|^b@2
-take the ace-king of spades.|pc|sas7s2s3|
-pg| ***** 18 ***** |
-
-
-pc|sks9s5s4|
+take the ace-king of spades.|
+pc|sas7s2s3|
 pg| ***** 19 ***** |
 
 
-NT|^B@2
-Win heart ace and king.|pc|h2h8hah6|
+pc|sks9s5s4|
 pg| ***** 20 ***** |
 
 
-pc|h3hthkh9|
+NT|^B@2
+Win heart ace and king.|
+pc|h2h8hah6|
 pg| ***** 21 ***** |
+
+
+pc|h3hthkh9|
+pg| ***** 22 ***** |
 
 
 NT|^B@2
 Cash the @DA and @DK ending in dummy.|pc|dad6d2d4|
-pg| ***** 22 ***** |
+pg| ***** 23 ***** |
 
 
 pc|d9d7dkdt|
-PG| ***** 23 ***** |
-
-
-NT|^b@2
-ruff a diamond,|Pc|d3s8h4dj|
 PG| ***** 24 ***** |
 
 
 NT|^b@2
-ruff a spade,|PC|s6sjh5st|
+ruff a diamond,|Pc|d3s8h4dj|
 PG| ***** 25 ***** |
 
 
 NT|^b@2
-ruff another diamond,|pc|d5c4h7dq|
+ruff a spade,|PC|s6sjh5st|
 PG| ***** 26 ***** |
 
 
 NT|^b@2
-draw trumps,|sk||PC|hhcs|
+ruff another diamond,|pc|d5c4h7dq|
 PG| ***** 27 ***** |
 
 
-pc|cccc|
-pg| ***** 28 ***** |
-
-
-pc|dccc|
-pg| ***** 29 ***** |
+NT|^b@2
+draw the last trump,|
+PC|hhcs|
+PG| ***** 28 ***** |
 
 
 NT|^b@2
 lead a club to the ace, and cash the good diamond in dummy to make the contract.|
+pc|cccc|
+pg| ***** 29 ***** |
+
+
+pc|dccc|
 PG| ***** 30 ***** |
 
 
@@ -224,55 +238,65 @@ click the forward arrow to move to the next hand.}
 pg| ***** 32 ***** |
 
 
-NT||pf||bt||
-%%%%%%
-qx|L15|st||sk|s|md|3SKJ9HK943DAQ2C753,S3d8,SA6HT2DK7654CAK62,s875DJT93|sv|n|rh||AH|Paul Lukacs and Jeff Rubens|AH|Test Your Play as a Declarer|AH|Problem 15|mb|1dp2np3cp3nppp|NT|^B@2
-West leads @S3. Make your plan to make the contract. Please click the forward arrow for the solution.|PC|S3|
-PG| ***** 33 ***** |
+sk|s|
+NT||pf||
+qx|L15|st||
+md|3SKJ9HK943DAQ2C753,sqt432haq6d8cqt84,SA6HT2DK7654CAK62,|
+sv|n|rh||
+AH|Paul Lukacs and Jeff Rubens|AH|Test Your Play as a Declarer|AH|Problem 15|
+mb|1dp2np3cp3nppp|NT|^B@2
+West leads @S3.  Make your plan to make the contract.|
+PC|S3|eb|y___|
+pg| ***** 33 ***** |
 
 
-NT|^B@2
-^*BSolution^*N: South may need three spade tricks for his contract so he should win the first trick in his own hand.|pc|s6s8s9|
+n#|h|cp|red|at|^^ ^d ^*bNow |cp||
+at| Click^*n  the blue  { ^*b 1st ^*n }  button below|
+cp|red|at|^*b  and play out the hand^*n|cp||
+at|.     ^*b Flow ^*n  will end the problem.|
+pf|first-button|
 PG| ***** 34 ***** |
 
 
-sk||NT|^b@2
-With the spade winners blocked, there is now the danger of being blocked out of the South hand if diamonds split badly. If, for example, the cards are distributed as shown in the diagram,|
+sk||
+NT|^B@2
+^*BSolution^*N: South may need three spade tricks for his contract so he should win the first trick in his own hand.|
+pc|s6s8s9|
 PG| ***** 35 ***** |
 
 
-NT|^B@2
-South will be badly placed if he cashes the ace and queen of diamonds immediately.|
+NT|^b@2
+With the spade winners blocked, there is now the danger of being blocked out of the South hand if diamonds split badly. If, for example, the cards are distributed as shown in the diagram,|
 PG| ***** 36 ***** |
 
 
 NT|^B@2
-Instead, South should play just one high diamond from his hand. (If diamonds break five-zero South has time to change his plan of attack.)|pc|dad8d4d3|
+South will be badly placed if he cashes the ace and queen of diamonds immediately.|
 PG| ***** 37 ***** |
 
 
-sk|s|md|0,sqt42haq6cqt84,0,hj875cj9|NT|^b@2
-He should then play a spade to the ace and duck a diamond.|pc|sjs4sas7|
-pg| ***** 38 ***** |
+NT|^B@2
+Instead, South should play just one high diamond from his hand. (If diamonds break five-zero South has time to change his plan of attack.)|
+pc|dad8d4d3|
+PG| ***** 38 ***** |
 
 
-pc|d5d9d2c4|sk||
-PG| ***** 39 ***** |
+NT|^b@2
+He should then play a spade to the ace and duck a diamond.|
+pc|sjs4sas7|
+pg| ***** 39 ***** |
+
+
+pc|d5d9d2c4|
+PG| ***** 40 ***** |
 
 
 NT|^b@2 
 Now, regardless what card East plays (probably losing 2 heart tricks), declarer can use the remaining high diamond in the closed hand as an entry to cash the high spade, and use the high clubs in dummy to provide access to the rest of the diamond suit.|
-PG| ***** 40 ***** |
-
-
-NT|^b@2
-Go ahead and play out the hand. The double dummy feature is on.|pf|Y|
 PG| ***** 41 ***** |
 
 
-pf||nt||
-%%DD15
-st||md|3SKJ9HK943DAQ2C753,Sqt432haq6d8cqt84,SA6HT2DK7654CAK62,s875DJT93hj875cj9|sv|n|rh||AH|Paul Lukacs and Jeff Rubens|AH|Test Your Play as a Declarer|AH|Problem 15|mb|1dp2np3cp3nppp|sc||cs|6|ht|c|at|
+nt||sc||cs|6|ht|c|at|
 ^-{    You may now play this hand double dummy by clicking the cards you want to play @S3 was the original lead.    
 The most recently played card may be taken back by clicking the back arrow or the undo button. 
 After each trick, just click in the middle of the page. When finished or if not interested in double dummy play,
@@ -281,122 +305,151 @@ click the forward arrow to move to the next hand.}
 pg| ***** 42 ***** |
 
 
-NT||pf||bt||
-%%16
-qx|L16|st||sk|s|md|3S7652HKQJT9DKTCA2,h4,SAT4HA32DA63C9865,h7|sv|n|rh||AH|Paul Lukacs and Jeff Rubens|AH|Test Your Play as a Declarer|AH|Problem 16|mb|1cp1hp1np4hppp|NT|^B@2
-N/S vulnerable and North is the dealer. West leads @H4 followed by deuce, and heart seven. Now what? You need to make your plan. The solution is next.|pc|h4h2h7|
-PG| ***** 43 ***** |
+sk|s|
+NT||
+qx|L16|st||sk|s|md|3S7652HKQJT9DKTCA2,SKQ98H8654DQ92CQ7,SAT4HA32DA63C9865,SJ3H7DJ8754CKJT43|
+sv|n|rh||
+AH|Paul Lukacs and Jeff Rubens|AH|Test Your Play as a Declarer|AH|Problem 16|mb|1cp1hp1np4hppp|NT|^B@2
+N/S vulnerable and North is the dealer.|
+at| West leads @H4 followed by deuce, and heart seven.| 
+pc|h4h2h7|eb|y__|
+pg| ***** 43 ***** |
 
 
-NT|^B@2
-^*BSolution^*N: If spades do not split 3-3, declarer will require a spade ruff in dummy for his tenth trick. Although the unfavorable trump lead puts the defense one step ahead in the race, declarer should play spades at once in the hope the defender with four spades has only two trumps (and thus cannot play a third round of trumps when he wins the third round of spades).|MD|0,SKQ98H865DQ92CQ7,0,SJ3HDJ8754CKJT43|
+at|  Now what?  Make your plan.|
+n#|h|cp|red|at|^^ ^d ^*bNow |cp||
+at| Click^*n  the blue  { ^*b 1st ^*n }  button below|
+cp|red|at|^*b  and play out the hand^*n|cp||
+at|.     ^*b Flow ^*n  will end the problem.|
+pf|first-button|
 PG| ***** 44 ***** |
 
 
-sk|s|NT|^B@2
-There is the additional possibility that hearts are 4-1 and the defender with the singleton heart can be forced to win one of the defensive spade tricks. |
+sk||
+NT|^B@2
+^*BSolution^*N: If spades do not split 3-3, declarer will require a spade ruff in dummy for his tenth trick. Although the unfavorable trump lead puts the defense one step ahead in the race, declarer should play spades at once in the hope the defender with four spades has only two trumps (and thus cannot play a third round of trumps when he wins the third round of spades).|
 PG| ***** 45 ***** |
+
+
+NT|^B@2
+There is the additional possibility that hearts are 4-1 and the defender with the singleton heart can be forced to win one of the defensive spade tricks. |
+PG| ***** 46 ***** |
 
 
 NT|^b@2
 Accordingly, declarer should win the first trick in the closed hand and finesse the spade ten.|PC|h9|
-PG| ***** 46 ***** |
+PG| ***** 47 ***** |
 
 
 PC|s2s8st|
-PG| ***** 47 ***** |
+PG| ***** 48 ***** |
 
 
 NT|^b@2
 With cards as shown, West cannot win both spade tricks @- but he can if declarer plays ace and another space.|pc|sj|sk||
-PG| ***** 48 ***** |
-
-
-pf|Y|NT|^B@2
-Go ahead and play out the hand. The double dummy feature is on. The only danger in this line is that spades break 5-1. This is highly unlikely in view of the absence of a spade overcall.|
 PG| ***** 49 ***** |
 
 
+pf|Y|NT|^B@2
+The only danger in this line is that spades break 5-1. This is highly unlikely in view of the absence of a spade overcall.|
+PG| ***** 50 ***** |
+
+
 nt||
-%%16DD
-st||md|3S7652HKQJT9DKTCA2,skq98h4568dq92cq7,SAT4HA32DA63C9865,sj3h7dj8754ckjt43|sv|n|rh||AH|Paul Lukacs and Jeff Rubens|AH|Test Your Play as a Declarer|AH|Problem 16|mb|1cp1hp1np4hppp|
-sc||cs|6|ht|c|at|
+cs|6|ht|c|at|
 ^-{    You may now play this hand double dummy by clicking the cards you want to play @h4 was the original lead.    
 The most recently played card may be taken back by clicking the back arrow or the undo button. 
 After each trick, just click in the middle of the page. When finished or if not interested in double dummy play,
 click the forward arrow to move to the next hand.}
 ^-|pf|y|
-pg| ***** 50 ***** |
+pg| ***** 51 ***** |
 
 
-NT||pf||bt||
-%%17
-qx|L17|st||sk|s|md|3SAQ7HAQ2DK3CAKQ85,SJT9HKT97D6CJ7642,S53H65DAJT9542CT9,SK8642HJ843DQ87C3|sv|n|rh||AH|Paul Lukacs and Jeff Rubens|AH|Test Your Play as a Declarer|AH|Problem 17|mb|3dp6nppp|NT|^b@2
-West leads the @SJ, East playing @S6. Plan the play to make the contract. Next is the solution.|pc|sjs3s6|
-PG| ***** 51 ***** |
-
-
-NT|^B@2
-^*BSolution^*N: Declarer wins the trick in hand.|PC|sq|
+NT||
+qx|L17|st||sk|s|md|3SAQ7HAQ2DK3CAKQ85,SJT9HKT97D6CJ7642,S53H65DAJT9542CT9,SK8642HJ843DQ87C3|
+sv|n|rh||AH|Paul Lukacs and Jeff Rubens|AH|Test Your Play as a Declarer|AH|Problem 17|mb|3dp6nppp|NT|^b@2
+West leads the @SJ, East playing @S6.   Plan the play to make the contract.|
+pc|sjs3s6|eb|y___|
 PG| ***** 52 ***** |
 
 
-NT|^b@2
-Assuming diamonds are not divided 4-0, South can make certain of his contract by leading a diamond to the jack.|pc|d3d6djdq|
-PG| ***** 53 ***** |
+n#|h|cp|red|at|^^ ^d ^*bNow |cp||
+at| Click^*n  the blue  { ^*b 1st ^*n }  button below|
+cp|red|at|^*b  and play out the hand^*n|cp||
+at|.     ^*b Flow ^*n  will end the problem.|
+pf|first-button|
+pg| ***** 53 ***** |
 
 
-NT|^b@2
-If either opponent wins the queen, declarer takes the rest easily. If the jack of diamonds holds, declarer returns to his king of diamonds and leads a low club, forcing entry to dummy in clubs. In any event, declarer will take 12 tricks.|
+sk||
+NT|^B@2
+^*BSolution^*N: Declarer wins the trick in hand.|
+PC|sq|
 PG| ***** 54 ***** |
 
 
-NT|^B@2
-Leading the king of diamonds first is likely to prove superior only if West holds all four missing diamonds. However, the chances of making the contract in that situation are not bright, even if South starts with the king of diamonds. Playing to the jack of diamonds guards against the much more likely possibility that an opponent holds three diamonds to the queen.|
+NT|^b@2
+Assuming diamonds are not divided 4-0, South can make certain of his contract by leading a diamond to the jack.|
+pc|d3d6djdq|
 PG| ***** 55 ***** |
 
 
 NT|^b@2
-Go ahead and play out the hand. The double dummy feature is on.|sk||pf|Y|
+If either opponent wins the queen, declarer takes the rest easily. If the jack of diamonds holds, declarer returns to his king of diamonds and leads a low club, forcing entry to dummy in clubs. In any event, declarer will take 12 tricks.|
 PG| ***** 56 ***** |
+
+
+NT|^B@2
+Leading the king of diamonds first is likely to prove superior only if West holds all four missing diamonds. However, the chances of making the contract in that situation are not bright, even if South starts with the king of diamonds. Playing to the jack of diamonds guards against the much more likely possibility that an opponent holds three diamonds to the queen.|
+PG| ***** 57 ***** |
 
 
 nt||
 %17DD
-st||sk||md|3SAQ7HAQ2DK3CAKQ85,SJT9HKT97D6CJ7642,S53H65DAJT9542CT9,SK8642HJ843DQ87C3|sv|n|rh||AH|Paul Lukacs and Jeff Rubens|AH|Test Your Play as a Declarer|AH|Problem 17|mb|3dp6nppp|sc||cs|6|ht|c|at|
+sc||cs|6|ht|c|at|
 ^-{    You may now play this hand double dummy by clicking the cards you want to play @SJ was the original lead.    
 The most recently played card may be taken back by clicking the back arrow or the undo button. 
 After each trick, just click in the middle of the page. When finished or if not interested in double dummy play,
 click the forward arrow to move to the next hand.}
 ^-|pf|y|
-pg| ***** 57 ***** |
+pg| ***** 58 ***** |
 
 
-NT||pf||bt||
-%% 18
-qx|L18|sk|s|st||md|1SK8HAQ97DQ87CAJT9,c8,SAQJT9HT8DAT94CKQ,|sv|n|rh||AH|Paul Lukacs and Jeff Rubens|AH|Test Your Play as a Declarer|AH|Problem 18|mb|1np3sp3np6nppp|nt|^B@2
-Contract is 6N and West leads @C8. Plan the play. Next is the solution.|pc|c8|
-PG| ***** 58 ***** |
-
-
-NT|^b@2
-^*BSolution^*N: South must decide whether to begin his red suits with diamonds or hearts. By starting hearts, South wins if one of two finesses in hearts succeeds or if either opponent holds the singleton king of diamonds.|MD|0,S43HKJ3DJ632C765,0,S7652H6542DK5C432|sk||
+NT||
+qx|L18|sk|s|st||md|1SK8HAQ97DQ87CAJT9,S43HKJ3DJ632C8765,SAQJT9HT8DAT94CKQ,S7652H6542DK5C432|
+sv|n|rh||AH|Paul Lukacs and Jeff Rubens|AH|Test Your Play as a Declarer|AH|Problem 18|mb|1np3sp3np6nppp|nt|^B@2
+Contract is 6N and West leads @C8.  Plan the play.|
+pc|c8|eb|y___|
 PG| ***** 59 ***** |
 
 
-NT|^B@2
-Starting diamonds also gives declarer the chance to win one of two finesses, but with an important difference. If the first diamond play is from dummy, South can finesse against either the king or jack of diamonds in the East hand. Assuming the finesse loses, declarer can then try to drop the remaining diamond honor doubleton before reverting to the heart finesse. |
+n#|h|cp|red|at|^^ ^d ^*bNow |cp||
+at| Click^*n  the blue  { ^*b 1st ^*n }  button below|
+cp|red|at|^*b  and play out the hand^*n|cp||
+at|.     ^*b Flow ^*n  will end the problem.|
+pf|first-button|
 PG| ***** 60 ***** |
 
 
-NT|^B@2
-Since a particular diamond honor singleton or doubleton is a better chance than the king singleton, starting diamonds from dummy gives declarer a better chance than starting hearts. There is also the additional chance that East will go up with the king of diamonds if he has it (so declarer should probably finesse against the jack of diamonds when he leads from dummy).|
+sk||
+NT|^b@2
+^*BSolution^*N: South must decide whether to begin his red suits with diamonds or hearts. By starting hearts, South wins if one of two finesses in hearts succeeds or if either opponent holds the singleton king of diamonds.|
 PG| ***** 61 ***** |
 
 
 NT|^B@2
-Note that it would be wrong to lead diamonds first from the South hand, for a losing diamond finesse and a heart return will force declarer to commit himself prematurely.|
+Starting diamonds also gives declarer the chance to win one of two finesses, but with an important difference. If the first diamond play is from dummy, South can finesse against either the king or jack of diamonds in the East hand. Assuming the finesse loses, declarer can then try to drop the remaining diamond honor doubleton before reverting to the heart finesse. |
 PG| ***** 62 ***** |
+
+
+NT|^B@2
+Since a particular diamond honor singleton or doubleton is a better chance than the king singleton, starting diamonds from dummy gives declarer a better chance than starting hearts. There is also the additional chance that East will go up with the king of diamonds if he has it (so declarer should probably finesse against the jack of diamonds when he leads from dummy).|
+PG| ***** 63 ***** |
+
+
+NT|^B@2
+Note that it would be wrong to lead diamonds first from the South hand, for a losing diamond finesse and a heart return will force declarer to commit himself prematurely.|
+PG| ***** 64 ***** |
 
 
 nt||sc||cs|6|ht|c|at|
@@ -405,12 +458,12 @@ The most recently played card may be taken back by clicking the back arrow or th
 After each trick, just click in the middle of the page. When finished or if not interested in double dummy play,
 click the forward arrow to move to end this movie.}
 ^-|pf|y|
-pg| ***** 63 ***** |
+pg| ***** 65 ***** |
 
 
 NT||pf||bt||
 %%%%% Intro Authors
-qx|INT,|ht|b|cs|1|cp|4|fp|3|at|^-{
+qx|INT,hide|ht|b|cs|1|cp|4|fp|3|at|^-{
 
     "These are a must for any serious player's library.    
 They are just brilliant books."    
@@ -422,12 +475,12 @@ Two famous internationalists teach you how to analyze and play out the difficult
 ^*BPAUL LUKACS^*N (1915-1982) was a renowned problem constructor and analyst, who represented Israel in international play. His most lasting contribution to bridge literature was as co-author of "Spotlight on Card Play" (with Robert Darvas), the first post-war problem collection to highlight expert thought processes.
 
 ^*BJEFF RUBENS^*N (b. 1941), a former mathematics professor, has been co-editor and then editor of the world's most prestigious bridge magazine, "The Bridge World," since 1967. His best known book is the classic "Secrets of Winning Bridge."|
-PG| ***** 64 ***** |
+PG| ***** 66 ***** |
 
 
 NT||
 %%%
-qx|BOK,|ht|b|cs|1|cp|4|fp|1|at|{               Test Your Play As Declarer - Volume I                
+qx|Book,wide|ht|b|cs|1|cp|4|fp|1|at|{               Test Your Play As Declarer - Volume I                
 |fp|2|at|^-by Paul Lukacs and Jeff Rubens
 ^-}|CS||FP||CP||ht|f|at|^B@2TEST YOUR PLAY is considered an excellent workbook for improving your declarer play and is on the same level of difficulty as that of Watson.  To study in movie format Louis H. Watson's CLASSIC BOOK ON PLAY OF THE HAND AT BRIDGE, click this |CP|1|AT|^*Htiny.cc/ftmhdx^*N|CP||AT| link or get it from BIL library at |CP|1|AT|^*Hwww.bilbridge.com^*N|CP||AT|. 
 
@@ -437,7 +490,7 @@ To adapt the text of the book to work within the movie format, we have made mino
 
 Kia
 April 2014|
-pg| ***** 65 ***** |
+pg| ***** 67 ***** |
 
 
 NT||
@@ -459,7 +512,7 @@ The solution to each problem is found directly on the page after the presentatio
 PAUL LUKACS
 JEFF RUBENS
 New York, 1976|
-PG| ***** 66 ***** |
+PG| ***** 68 ***** |
 
 
 NT||
@@ -483,33 +536,6 @@ Corporation, Poughkeepsie, New York.
 www.vivisphere.com
 1-800-724-1100
 ^-|
-PG| ***** 67 ***** |
-
-
-NT||
-%%%%%% Double Dummy
-qx|DD, Double Dummy Play Instructions|HT|b|cp|1|fp|1|at|^-
-INSTRUCTIONS 
-^-|ht|d|CP||fp||at|^C@2^z@3The movie follows the book's protocol. First, you see the North/South hands with the contract and the opening lead. You, sitting South, are asked to analyze the hand and plan a successful line of play.
-
-Next, you will see the four hands where you can use the double dummy feature to test your line of play. When you are done, you can click the forward arrow and read the authors' solution. Finally, if you wish, you can again play the board double dummy or move on to the next problem.
-
-What is ^*B"double dummy?"^*N  When you play ^*B"double dummy,"^*N you see all four hands @- it's great for practice play!  Click the card you want to play from the hand on lead and then from each of the other hands. You will find you are unable to play the cards out of sequence.
-
-After four cards have been played to the trick, click the center of the trick to 'take it.' Now, you may lead the next card @- from the hand who won the trick of course. You may always review the last trick taken by placing your cursor over the folded trick.
-
-In some instances, you will see the opening lead has been made. You may use the back arrow in BBO or the undo button in the Viewer to undo the lead. You may then click the card you prefer to lead.  In the middle of play, you may undo one trick to replay it or you may undo several tricks one after the other @- use the undo button in the viewer and back arrow in BBO. You may undo all the tricks to start at the opening lead again.  
-
-When you finish, if you wish to repeat your play of the board, click the middle and undo all your tricks. Please note:  When playing double dummy, ^*Bif you click the forward arrow, it cancels the double dummy feature.^*N|
-PG| ***** 68 ***** |
-
-
- 
-
-
-
-
-
-
+PG| ***** 69 ***** |
 
 

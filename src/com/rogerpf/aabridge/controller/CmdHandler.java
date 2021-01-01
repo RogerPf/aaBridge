@@ -1161,6 +1161,15 @@ public final class CmdHandler {
 
 	/**   
 	 */
+	static void hiddenHandsToggle() {
+		if (App.deal.isDoneHand()) // so we skip the 'done hand'
+			return;
+		App.localShowHidden = !App.localShowHidden;
+		App.calcApplyBarVisiblity();
+	}
+
+	/**   
+	 */
 	public static void ddsScoreOnOff() {
 		if (App.deal.isDoneHand()) // so we skip the 'done hand'
 			return;
@@ -1261,6 +1270,7 @@ public final class CmdHandler {
 		if (App.isMode(Aaa.REVIEW_PLAY) /* || App.isMode(Aaa.REVIEW_BIDDING) && App.deal.isFinished() */) {
 			App.deal.fastUndoBackTo(App.reviewTrick, App.reviewCard, false /* setDdsNextCard */);
 		}
+
 		App.gbp.c1_1__tfdp.makeCardSuggestions();
 		App.setMode(Aaa.EDIT_PLAY);
 		App.frame.repaint();

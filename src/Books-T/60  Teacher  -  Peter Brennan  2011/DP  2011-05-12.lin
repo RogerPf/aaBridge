@@ -1,0 +1,399 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% File       : Peterb370c_Winning Techniques in Declarer Play_ 2011-05-12.lin
+%% Description: Peter's teaching session on Declarer play, BIL, 2011-05-12
+%% Programmer : Vanyvon
+%% Version    : 
+%%            : 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+mn|  Winning Techniques in Declarer Play,2011-05-12|tu||bt||nt||
+
+%% --- Definitions ---
+cr|116|cg|116|cb|1255|        %% blue
+cr|2255|cg|2255|cb|264|       %% yellow
+cr|316|cg|3128|cb|316|        %% dark green
+cr|4255|cb|40|cg|40|          %% red
+fh|120|ff|1Arial|fb|14|fm|1|  %% smaller light
+fh|220|ff|2Arial|fb|26|fm|2|  %% smaller bold
+fh|330|ff|3Arial|fb|34|fm|3|  %% larger light
+fh|430|ff|4Arial|fb|46|fm|4|  %% larger bold
+%% --- End Definitions ---
+
+%% --- Main ---
+qx|Main|
+bv|f,v|
+cs|1|cp|2|fp|4|
+at|
+^-{ Peter Brennan (Peterb370c): Winning Techniques in Declarer Play, 5th lesson,
+   teaching at BIL, May 12, 2011. }
+^-|
+fp|2|cp||ht|f|at|   @2The LIN presentation of Peter 's lesson on Winning Techniques in Declarer Play in the Beginner Intermediate Lounge, 2011-05-12.|
+ht|i|cp||cs|2|
+at|^i   @2{
+
+             ^*GIntroduction, Introduction^*N
+
+^*GB01,    Board 01- counting distribution^*N
+
+^*GB02,    Board 02- counting distribution^*N
+
+^*GB03,    Board 03- discovery play^*N
+
+^*GB04,    Board 04- elimination and endplay^*N
+
+^*GB05,    Board 05- imaginative discovery play^*N
+
+
+             ^*GFinal notes, Final notes^*N
+
+} @0|
+ht|z|cs||at|^b Click   { Flow  >  }  below|
+pg| ***** 0 ***** |
+
+
+%% --- End Main ---
+%% ---------- INTRODUCTION ----------
+qx|Introduction|
+nt||cs|1|cp|2|
+at|
+^-{ Introduction }
+^-|
+cp||
+ht|e|fp|1|
+at|Peter Brennan: The purpose of this course is to acquaint you with some useful tools when you declare a hand. Hopefully, by seeing a number of examples in random order you'll recognize these situations when they pop up in your game.  
+
+Each hand features a common challenge of some sort:  dealing with bad suit breaks, handling tricky entry situations, making inferences from the bidding or play, counting enemy distribution and/or points, when to draw trumps, basic end plays, etc.
+
+These hands should be played using IMP or rubber bridge tactics.  Don't even think of risking the contract to make a measly overtrick or two.
+
+
+
+|
+pg| ***** 1 ***** |
+
+
+%% ---------------------------
+
+
+pf|any-time|
+qx|B01,BOARD 1|
+rh||ah|Board 1|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|4S86HAT8732DA2CAJ4,SKJ93HKJD4CKT9763,SAQ74HQ94D976C852,ST52H65DKQJT853CQ|mb|3D|mb|3H|mb|p|mb|4H|mb|p|mb|p|mb|p|sk|S| %% small text set kibbing South
+
+nt|With five potential losers (2 in @cs, 1 each in the other suits) you must think  optimistically.  @h will behave (only 1 loser); the @s finesse will work, etc. Can you  use a positive attitude and good technique to score ten tricks? Good luck!!|pc|D4|
+pg| ***** 2 ***** |
+
+
+pc|D6|pc|DT|pc|DA|
+pg| ***** 3 ***** |
+
+
+nt|One benefit the declarer gains when the opponents have preempted in the auction is it is much easier to count the distribution of their hands. Since N-S have five @ds, E-W must have 8 and since West led a @d and East bid a vulnerable 3@d it's a good bet the @ds are divided 1 - 7. Probably the best way to play trump is @hA and a low @h towards the @hQ on the table. If they divide 2 - 2 (40%) it doesn't matter what you do and if they split 3 - 1 (49%) and your @hA snags an honor you'll only lose one trick at most.|
+pg| ***** 4 ***** |
+
+
+pc|HA|pc|HJ|pc|H4|pc|H5|
+pg| ***** 5 ***** |
+
+
+pc|H2|pc|HK|pc|HQ|pc|H6|
+pg| ***** 6 ***** |
+
+
+pc|S9|nt|West wins @hK and returns a @s. Considerate of him not to attack @c. We must score the @s finesse to have any chance to make 4 @h. We can update our count; West started with 2 @hs and 1 @d.  (If West had another @d he would have led it not the @s.)  And East had 2 @hs and 7 @ds.  Let's see how many @ss the opps had.|
+pg| ***** 7 ***** |
+
+
+pc|SQ|pc|S2|pc|S6|
+pg| ***** 8 ***** |
+
+
+pc|SA|pc|S5|pc|S8|pc|S3|
+pg| ***** 9 ***** |
+
+
+pc|S4|pc|ST|pc|H3|pc|SJ|at|
+Our count is now complete. West still has the @sK (he should have dropped it and kept the @sJ since we know he has the @sK) so he started with 4 @ss, 2 @hs, 1 @d and 6 @cs. That means East was 3-2-7-1 and now is holding 6 @ds and 1 @c;  he's about to be endplayed. First, we must remove East's safe exit card, his @c. BTW, by now we're pretty sure East's singleton is either the @cK or @cQ.  Why?|
+pg| ***** 10 ***** |
+
+
+at| Because West might have led the @cK from @cKQxxxx either his opening lead or, more likely, when in with the @hK.|
+pg| ***** 11 ***** |
+
+
+pc|CA|pc|C3|pc|C2|pc|CQ|
+pg| ***** 12 ***** |
+
+
+pc|D2|pc|C7|pc|D7|pc|d8|nt|Look what happens when East gains the lead...when he has no safe exit card. (That's just about the textbook definition of an ENDPLAY.) Poor East.  He must helplessly lead a @d allowing declarer to toss a losing @c on the @dK (a LOSER-ON-LOSER play).|sk||
+pg| ***** 13 ***** |
+
+
+pc|dQ|pc|cJ|pc|c6|pc|H9|
+pg| ***** 14 ***** |
+
+
+at|
+And on the @dQ we sluff the @cJ and ruff it in dummy. (A RUFF-SLUFF play).  Declarer lost 1 @h ,  @d, and 1 @c to make 4@h.|
+pg| ***** 15 ***** |
+
+
+at|
+This hand is an oddity. Let's revisit the critical point in the hand.|up|8|
+pg| ***** 16 ***** |
+
+
+at|
+At this point, you remember, I led the @d2 causing East discomfort.  But this hand is a true EOO (equal opportunity offender.)  Watch this.|
+pg| ***** 17 ***** |
+
+
+pc|h8|pc|c6|pc|h9|pc|dK|
+pg| ***** 18 ***** |
+
+
+pc|s7|pc|d3|pc|d2|pc|sk|
+pg| ***** 19 ***** |
+
+
+nt|At trick 10 West is down to @cK10xx. Whichever @c he plays will set up declarer's 10th trick, the @cJ.  It's quite unusual to see a hand where either opponent can be endplayed.  This is one.|
+pg| ***** 20 ***** |
+
+
+at|
+Here's the lesson text:  East's preempt made counting out defender's distribution relatively simple.  Stripping East down to nothing but @ds proved fatal to the  defense. East's @d lead at trick 8 gives declarer the opportunity to make a LOSER ON LOSER play and at trick 9 declarer has a RUFF - SLUFF.|
+mc|10|sk||sc|y|
+pg| ***** 21 ***** |
+
+
+pf|any-time|
+qx|B02,BOARD 2|
+rh||ah|Board 2|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|4S6HAKQJT9DKJ7CAJ6,S5H76DQ96543C9842,ST8743H53DAT2CK53,SAKQJ92H842D8CQT7|mb|1S|mb|d|mb|p|mb|1N|mb|p|mb|3H|mb|p|mb|4H|mb|p|mb|4N|mb|p|mb|5C|an|1 or 4 KC|mb|p|mb|6H|mb|p|mb|p|mb|p|sk|S|sc|| %% small text set kibbing South
+pc|S5|nt|You start with 6 @h tricks, 2 @ds and 2 @cs for 10 tricks. In light of East's opening bid he may have both minor suit Queens. Can you bring home this slam? Good luck!|
+pg| ***** 22 ***** |
+
+
+pc|S3|pc|S9|pc|S6|
+nt|This hand may look like any good guesser can make 12 tricks but there's a little more to it once we look a little deeper...and do some counting.|
+pg| ***** 23 ***** |
+
+
+pc|SA|pc|H9|pc|D3|pc|S4|at|
+When West shows out of @s at trick 2 we know they split 1 - 6.  How about trump?|
+pg| ***** 24 ***** |
+
+
+pc|HA|pc|H6|pc|H3|pc|H2|
+pg| ***** 25 ***** |
+
+
+pc|HK|pc|H7|pc|H5|pc|H4|
+pg| ***** 26 ***** |
+
+
+pc|HQ|pc|D4|pc|S7|pc|H8|at|
+OK.  Now we know they divided 2 - 3 so we know 9 of East's cards.  In @c, we don't have a choice. We can only finesse East for the @cQ. If it loses to West the slam was never going to make anyway.|
+pg| ***** 27 ***** |
+
+
+pc|C6|pc|C2|pc|CK|pc|C7|
+pg| ***** 28 ***** |
+
+
+pc|C3|pc|CT|pc|CJ|pc|C4|
+pg| ***** 29 ***** |
+
+
+pc|CA|pc|C8|pc|C5|pc|CQ|at|
+So East followed to all 3 @c tricks.  How many @ds can he have?|
+pg| ***** 30 ***** |
+
+
+nt|There's only one unknown card in East's hand. It may be the 13th @c or it may be a @d. We don't know for sure but, here's the nice part, we don't care! Cash the @dK in case East has the singleton @dQ...|
+pg| ***** 31 ***** |
+
+
+pc|DK|pc|D5|pc|D2|pc|D8|
+pg| ***** 32 ***** |
+
+
+at|
+...then finesse West for the @dQ and make our slam.|
+pg| ***** 33 ***** |
+
+
+pc|D7|pc|D6|pc|DT|pc|S2|
+pg| ***** 34 ***** |
+
+
+at|
+Here's the lesson text:  This slam depends on finding both minor suit Queens. We'll need East to have the @cQ but either defender can be finessed out of the @dQ.  First we use a DISCOVERY PLAY to get a count of the distribution. When we find that East can only have one @D, we finesse West for the @dQ.|mc|12|sk||sc|y|
+pg| ***** 35 ***** |
+
+
+pf|any-time|
+qx|B03,BOARD 3|
+rh||ah|Board 3|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|2SA874HQ73DKT943C9,SKQJH8652D5CJ8732,S3HAK4DAJ82CAK654,ST9652HJT9DQ76CQT|mb|p|mb|1C|mb|p|mb|1D|mb|p|mb|3H|an| shows @H stopper|mb|p|mb|3N|mb|p|mb|p|mb|p|sk|S|sc||
+nt|North took charge of this hand and led you into 3NT when 6@d looks cold.  You start with 1 @s, 3 @hs, 2 @ds and 2 @cs = 8 tricks. In order to win the post mortem you must play with maximum safety to make this contract. Good luck!|pc|SK|
+pg| ***** 36 ***** |
+
+
+pc|S3|pc|S6|pc|S4|
+nt|To play this hand correctly, for maximum safety, you don't have to do much counting. Clearly you can afford to lose 3 @ss and a @d so if @s break 4 - 4 (33%), this contract is icy  cold.
+But what if the @ss are not 4 - 4?  (67%) Then we could go down if we misplay the hand. There's a very simple DISCOVERY PLAY which makes this contract unbeatable.|
+pg| ***** 37 ***** |
+
+
+nt|Since we only need one additional @d trick to come to 9 tricks and we have a two-way finesse in @d, all we have to do is take the finesse so if it loses it will lose to the "safe" hand.|
+pg| ***** 38 ***** |
+
+
+at|
+You may ask who is the "safe" hand.  An excellent question since looking at just the North - South hands there's no way to tell.  But in this deal the safe hand is the hand without any @ss.|
+pg| ***** 39 ***** |
+
+
+at|
+At the moment we assume both opps do have @ss.  (A 7 - 1 split happens less than 3% of the time.)  So we would never win the first trick. To make this contract 100% of the time we must hold up our @sA to the bitter end. Let's say West continues her attack on @ss and leads the @sQ and then the @sJ, on which East shows out.  We don't really care the @ss were 6 - 2. We care that East has no more @s and therefore is the "safe" hand. |
+pg| ***** 40 ***** |
+
+
+pc|SQ|pc|C4|pc|S5|pc|S7|
+pg| ***** 41 ***** |
+
+
+pc|SJ|pc|C5|pc|S2|pc|S8|
+pg| ***** 42 ***** |
+
+
+pc|C2|pc|CA|pc|CT|pc|C9|nt|It seems West started with @sKQJ and East with @s109xxx because of the shift at trick 4. Since we still have @s stopped, we can finesse either opp in @d with no fear of going down in 3NT. But to confirm the 3 - 5 @s split...|
+pg| ***** 43 ***** |
+
+
+pc|H4|pc|H9|pc|HQ|pc|H2|
+pg| ***** 44 ***** |
+
+
+pc|SA|pc|C3|pc|C6|pc|S9|at|
+...we just cash the @sA. Using our earlier definition of "safe hand" we know it's West who's safe so we finesse East for the@dQ and are rewarded with an overtrick.|sk||
+pg| ***** 45 ***** |
+
+
+pc|H3|pc|H5|pc|HK|pc|HT|
+pg| ***** 46 ***** |
+
+
+pc|DA|pc|D6|pc|D3|pc|D5|
+pg| ***** 47 ***** |
+
+
+pc|D8|pc|D7|pc|D4|pc|C7|
+pg| ***** 48 ***** |
+
+
+pc|DJ|pc|DQ|pc|DK|mc|10|sk||sc|y|nt|Of course, with the @s blockage and with East having no entries the contract was always going to make. But that's the difference between a good player and an  average one.  A good player always anticipates disaster striking on every hand and looks for a way to overcome it. The good player says, "There's no problem if @s are 4 - 4.  Is there anything I can do if they aren't?"  Or, "This will be easy if trump is 3 - 2 but what if they split 4 - 1?", or if there's an unexpected early ruff of a trick you counted on making, or ... etc.|
+pg| ***** 49 ***** |
+
+
+at|
+The lesson text:  With 8 top tricks declarer must establish one extra trick in @d to make 3NT.  All we have to do is hold up the @sA until one defender shows out then play the other opp for the @dQ.  Even if the @dQ is wrong we can't lose more than 3 @s and 1 @d.|
+pg| ***** 50 ***** |
+
+
+pf|any-time|
+qx|B04,BOARD 4|
+rh||ah|Board 4|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|3S4H9543DAQCKJT987,SK9876H2DKJT32C62,SA2HAKQD8765CQ543,SQJT53HJT876D94CA|mb|1n|mb|2h|an|majors 5-5|mb|3c|an|natural suit  game force|mb|p|mb|5C|mb|p|mb|p|mb|p|sk|S|sc||
+nt|Let's count your losers - @cA and possibly the @dK. Now your winners:  1 @s, 3 @hs, 1 @d and 5 @cs = 10 so it seems you need to either ruff the @h loser in dummy or find the @dK onside to make game. However, that lead looks like a singleton which could be trouble.  Good luck!|pc|H2|
+pg| ***** 51 ***** |
+
+
+nt|First we eliminate @ss.  Then we can lead trump.|
+pg| ***** 52 ***** |
+
+
+pc|HQ|pc|H6|pc|H3|
+pg| ***** 53 ***** |
+
+
+pc|SA|pc|S3|pc|S4|pc|S6|
+pg| ***** 54 ***** |
+
+
+pc|S2|pc|S5|pc|C7|pc|S7|
+pg| ***** 55 ***** |
+
+
+pc|C8|pc|C2|pc|C3|pc|CA|at|
+Sure enough, East hops up with the @cA and leads a @h... ...which West ruffs. What can West do? A @s lead allows declarer to ruff on the board and sluff the @dQ. A @d lead into the @dAQ gives the contract.|sk||
+pg| ***** 56 ***** |
+
+
+pc|HJ|pc|H4|pc|C6|pc|HK|
+pg| ***** 57 ***** |
+
+
+pc|DJ|mc|11|sc|y|nt|Here's the lesson text:  At first glance, it seems like we only have to negotiate a @h ruff to make 11 tricks.  But the @h2, surely a singleton, could mean trouble if East has the stiff @cA.  If West can ruff a @h we must punish him by forcing him to make a favorable return.  At trick 2, lead the @sA and follow with the @s2 ruffing in hand. Now it's safe to lead a trump because if West does ruff a @h with his last trump, he'll be reduced to @s and @d and will be forced to give a ruff-sluff (!s lead) or a free finesse (@d lead).|
+pg| ***** 58 ***** |
+
+
+pf|any-time|
+qx|B05,BOARD 5|
+rh||ah|Board 5|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|3SQT97632HK5D3CAK7,SAJ8HAJT942D97CJ8,SK4HQ873DA864CQ52,S5H6DKQJT52CT9643|mb|p|mb|p|mb|1S|mb|2H|mb|d|mb|3D|mb|3S|mb|p|mb|4S|mb|p|mb|p|mb|p|sk|S|sc||nt|When a hand looks too easy it's time to be alert for trouble ahead.  West's overcall means @h will split 5 - 2 or worse. You'll have no problem if trump is 2 - 2 but that's less likely because of the uneven @h divide. Good luck!|pc|HA|
+pg| ***** 59 ***** |
+
+
+pc|h3|pc|H6|pc|h5|
+pg| ***** 60 ***** |
+
+
+pc|H9|pc|h7|pc|S5|pc|HK|
+pg| ***** 61 ***** |
+
+
+pc|DK|pc|D3|pc|D7|pc|DA|
+nt|West should have the @sA for her 2-level overcall.  The danger is if West started with @sAJx; then, if we lead low to the @sK in dummy or the @sQ in hand, we will lose 1 @h and 3 @s tricks (East's ruff and West's AJ). We could run the @s10 from our hand, but we'd feel pretty foolish if East started with @sJ5 and we went down. If only we could discover how many @ss East started with, this hand would make easily.|
+pg| ***** 62 ***** |
+
+
+at|^^^^Well, there is a way!  Suppose when we're on the board we lead the good @hQ. From East's point of view we may be trying to get rid of a @d loser on the @hQ. Surely, he'll trump to prevent this, if he can. When East fails to trump the @hQ it's very reasonable to assume he has no more @ss and West started with @sAJx.  The rest is easy.|
+pg| ***** 63 ***** |
+
+
+pc|HQ|pc|C3|pc|S2|pc|H2|nt|This coup is another form of a DISCOVERY PLAY.  We find out the @ss are likely 3  - 1 and play accordingly.|
+pg| ***** 64 ***** |
+
+
+pc|ST|pc|S8|pc|S4|pc|D2|
+pg| ***** 65 ***** |
+
+
+pc|S3|pc|SA|pc|SK|pc|C4|
+pg| ***** 66 ***** |
+
+
+pc|D9|pc|D4|pc|DT|pc|S6|
+pg| ***** 67 ***** |
+
+
+pc|SQ|pc|SJ|mc|10|sc|y|at|^^
+Here's the lesson text:  With 2 Aces to lose and East's unfortunate @H ruff we must take precautions against losing another @S trick.  To learn about the trump  distribution we must lead the established @hQ from dummy.  To East it will look like we're trying to pitch a @D loser.  When East fails to ruff, we can assume all the missing @S are with West and play accordingly.|
+pg| ***** 68 ***** |
+
+
+%% --- Final notes ---
+qx|Final notes|
+bt||pf||nt||cs|1|cp|2|fp|4|
+at|
+^-{ Final notes }
+^-|
+ht|h|cp||fp|2|at|   @2Thanks, all.  Looking forward to see you all at the next lesson on winning techniques in declarer play. :)|
+ht|z|at|
+
+(c)Peter & Bridge Base Online - Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|fp|1|at|^y Vanyvon|
+pg| ***** 69 ***** |
+
+
+0

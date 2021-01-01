@@ -1,0 +1,270 @@
+
+mn| Al (xx1943) teaching:    Who needs the entry?|
+tu|y|
+
+%% Font definiton:
+fh|150|ff|1Arial|fb|110|fm|1|
+fh|235|ff|2Arial|fb|28|fm|2|
+fh|340|ff|3Arial|fb|35|fm|3|
+fb|49|fm|4|fb|4|fm|4|
+
+%% color definition
+cr|116|cg|116|cb|1255|              blau = blue
+cr|2255|cg|2255|cb|264|             gelb = yellow
+cr|30|cg|30|cb|3128|                dunkelblau = dark blue
+cr|4255|cg|4255|cb|40|              dunkleres gelb = dark yellow
+cr|516|cg|5128|cb|516|              grün = green
+cr|6245|cb|6220|cg|6235|            beige
+cr|70|cb|7220|cg|7235|              grün-blau = green-blue
+cr|8255|cb|8200|cg|8200|            rosa = pink
+cr|9200|cb|90|cg|9150|              braun = brown
+
+%% -----------------------------------menu-------------------------------------------
+qx|Menu|
+bg|6|%%set background color
+bt||nt||cp||fp||%% bigtext; newText; standardColor; standardFont
+
+%% Hint wide screen at line "x"
+cp|1|
+ht|x|at|Our comments are optimized for wide screen. To toggle between wide and standard screen please use CTRL+"W".|
+cp||
+
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon")|
+ht|d|
+cs|3|
+cp|4|
+^-
+fp|1|3d|0|
+cp||
+fp||
+cs|2|
+ht|f|
+at|^c@2^x@3{
+^*Gplan, Analyze the hand and make your plan step by step^*N
+
+^*GAce, Take trick ##1 with @hA in your hand^*N
+^*GAceClubs, Take @hA and play on @cs at once^*N
+^*GAceDiamonds, Take @hA, unblock @ds and then establish the @c-suit.^*N
+
+^*GKing, Take trick ##1 with the @hK in dummy.^*N
+ 
+{
+^*Gfreeplay, Freeplay the hand ^*N
+
+^*GBergen, Hand commented by Marty Bergen^*N
+
+{^x@3^*GHelp,     How to navigate in this movie ^*N
+^x@3^*Gintro,     About this movie ^*N
+}|
+pg||
+
+
+%% --------------------------Analyze the hand-------------------------------------
+qx|plan|bt||nt||ht|f|
+ih|3SJ85HA74DAKQCQT74,,SQ32HK53DJ542CKJ3,|
+ia|-pp1np3nppp|
+at|South to play 3NT with @hQ lead. Make your plan.
+^nClick on ^$40 to display the next question!|
+pg||ht|o|at|
+We expect to score 2@h+4@d+3@c(after the A is knocked out)=9 easy tricks.|
+pg||at|
+The only problem maybe that the @d suit is blocked.|
+pg||at|
+
+Now the first and all important question: "What to do with the lead?"
+Do you ^*Ghold,hold up the lead^*N, do you take it ^*GAce,with the A^*N in your hand or do you take it in dummy ^*GKing,with the K^*N?
+
+Please click on one of the 3 choices to see what will happen.|
+pg||
+
+
+%% --------------------------Choices to trick 1-------------------------------------
+qx|q1|bt||nt||ht|f|
+ih|3SJ85HA74DAKQCQT74,,SQ32HK53DJ542CKJ3,|
+ia|-pp1np3nppp|
+at|South to play 3NT with @hQ lead. Make your plan.
+^nClick on ^$40 to display the next question!|
+ht|o|at|
+We expect to score 2@h+4@d+3@c(after the A is knocked out)=9 easy tricks.|
+at|
+The only problem maybe that the @d suit is blocked.|
+at|
+
+Now the first and all important question: "What to do with the lead?"
+Do you ^*Ghold,hold up the lead^*N, do you take it ^*GAce,with the A^*N in your hand or do you take it in dummy ^*GKing,with the K^*N?
+
+Please click on one of the 3 choices to see what will happen.|
+
+
+pg||
+
+
+
+
+%% --------------------------Hold up the lead-------------------------------------
+qx|hold|st||sk|s|
+rh||ah|Who needs the entry?|ah|hold up the lead|
+md|3SJ85HA74DAKQCQT74,SA974HQJT6D97CA96,SQ32HK53DJ542CKJ3,SKT6H982DT863C852|sv|0|nt||
+mb|pp1np3nppp|
+pc|hq|
+nt|You get to 3NT, and West leads the queen of hearts. You decided to hold up the lead.
+
+Click on the "play"-button ^$40 to see what will happen.|
+pg||pc|hhh|
+pg||pc|sssks|
+pg||pc|sssas|
+pg||pc|ssss|
+pg||pc|dddd|
+pg||pc|dddd|
+pg||pc|dcdd|
+pg||pc|ccacc|
+pg||pc|s|at|
+
+And down you are. You lost 1@h+1@c+3@s= 5 tricks. grrrrrrrrrrrr
+
+^*Gq1,Click here to make another choice to trick 1.^*N|
+
+
+pg||
+
+
+%% --------------------------Take the A in your  hand --------------------------
+qx|Ace|st||sk|s|
+rh||ah|Who needs the entry?|ah|Take the lead in your hand|
+md|3SJ85HA74DAKQCQT74,SA974HQJT6D97CA96,SQ32HK53DJ542CKJ3,SKT6H982DT863C852|sv|0|nt||
+mb|pp1np3nppp|
+pc|hq|
+nt|You get to 3NT, and West leads the queen of hearts. You decided to take the lead in your hand with @hA.
+To see the first trick again, mouse over "3NT South" in the yellow box.
+ 
+Which suit do you attack now? ^*GAceClubs,Clubs^*N or ^*GAceDiamonds,diamonds^*N?
+If you want to go back to trick ##1, please ^*Gq1,click here^*N.|
+pc|hhha|
+pg||
+
+
+%% --------------------------Take the A in your  hand and play clubs -----------
+qx|AceClubs|st||sk|s|
+rh||ah|Who needs the entry?|ah|Take the lead with the A|ah|and play on clubs.|
+md|3SJ85HA74DAKQCQT74,SA974HQJT6D97CA96,SQ32HK53DJ542CKJ3,SKT6H982DT863C852|sv|0|nt||
+mb|pp1np3nppp|
+pc|hq|
+pc|hhha|
+nt|You get to 3NT, and West leads the queen of hearts. You decided to take the lead in your hand with @hA and attack clubs at once. 
+
+Click on the "play"-button ^$40 to see what will happen.|
+
+pg||pc|ccckc|
+pg||pc|cjccc|
+pg||pc|cccc|
+pg||pc|hjhkhh|
+pg||pc|dddd|
+pg||pc|cshh|
+
+pg||pc|dddd|
+pg||pc|dsdd|sb|sHmhh, there is no entry to score the nice diamond J.|
+pg||pc|s|sk||nt|And down you are. You lost @CA already and will lose the last 4 tricks.|sb|s|
+pg||sb|sOK, then I must unblock the diamonds, before I touch clubs|
+pg||
+
+
+
+%% --------------------------Take the A in your hand and play diamonds -----------
+qx|AceDiamonds|st||sk|s|
+rh||ah|Who needs the entry?|ah|Take the lead with the A|ah|unblock diamonds first|
+md|3SJ85HA74DAKQCQT74,SA974HQJT6D97CA96,SQ32HK53DJ542CKJ3,SKT6H982DT863C852|sv|0|nt||
+mb|pp1np3nppp|
+pc|hq|
+pc|hhha|
+nt|You get to 3NT, and West leads the queen of hearts. You decided to take the lead in your hand with @hA and unblock the @ds before you attack clubs. 
+
+Click on the "play"-button ^$40 to see what will happen.|
+
+pg||pc|dddd|
+pg||pc|dddd|
+pg||pc|dsdd|
+pg||pc|ccckc|
+pg||pc|cjccc|
+pg||pc|cccc|
+pg||pc|hjhkhh|
+pg||pc|ddhs|sb|sHmhh, there is no entry to score the nice club Q in my hand.|
+pg||pc|s|sk||nt|And down you are. You lost @CA already and will lose the last 4 tricks.|sb|s|
+pg||at|
+
+We saw: If we take the lead with @hA in our hand, we have only 8 tricks no matter if we play on clubs or on diamonds first.
+
+How do you want to continue?
+^*GKing,Take trick##1 with the @hK^*N in dummy, ^*GAceClubs,Play @hA and try clubs^*N at once|
+pg||
+
+
+%% --------------------------Take the K in dummy --------------------------
+qx|King|st||sk|s|
+rh||ah|Who needs the entry?|ah|Take the lead in dummy|
+md|3SJ85HA74DAKQCQT74,SA974HQJT6D97CA96,SQ32HK53DJ542CKJ3,SKT6H982DT863C852|sv|0|nt||
+mb|pp1np3nppp|
+pc|hq|
+nt|You get to 3NT, and West leads the queen of hearts. You decided to take the lead in dummy with @hK.
+
+To see the first trick again, mouse over "3NT South" in the yellow box.
+
+Click on the "play"-button ^$40 to see what will happen now.|pc|hkhh|
+pg||pc|dddd|
+pg||pc|dddd|
+pg||pc|dsdd|
+pg||pc|ccckc|sb|sOh, I see. One of the club honors is my entry to diamond J|
+pg||pc|ddhs|sb|s|
+pg||pc|cjccc|
+pg||pc|cccc|
+pg||pc|hjhhha|sb|sAnd heart A is the needed entry to my club Q.|
+pg||pc|cshh|sb|s|
+pg||mc|9|sk||
+pg||
+
+
+
+%% --------------------------Hand for freeplay-------------------------------------
+qx|freeplay|st||sk||
+rh||ah|Who needs the entry?|ah|freeplay|
+md|3SJ85HA74DAKQCQT74,SA974HQJT6D97CA96,SQ32HK53DJ542CKJ3,SKT6H982DT863C852|sv|0|nt||
+mb|pp1np3nppp|
+pc|hq|pf|y|
+nt|You get to 3NT, and West leads the queen of hearts.
+How would you play?|pg||pf||
+
+
+%% --------------------------Hand commented by Marty Bergen-------------------------------------
+qx|Bergen|st||sk|s|
+rh||ah|Who needs the entry?|ah|comments by|ah|Marty Bergen|
+md|3SJ85HA74DAKQCQT74,SA974HQJT6D97CA96,SQ32HK53DJ542CKJ3,SKT6H982DT863C852|sv|0|nt||
+mb|pp1np3nppp|
+pc|hq|nt|You get to 3NT, and West leads the queen of hearts.
+How would you play?|pg||
+at|
+Step 1 in notrump is counting your winners.
+You have 4 diamonds and 2 hearts.
+You need 3 more, and with your 4 club honors, that should be easy.
+However, here is a warning which is relevant on many deals.
+“Hands where your winners are blocked are invariably harder than they appear.”|pg||
+nt|Before playing on, please take a moment to answer those questions.|pg||at|
+Question 1: What will you do at trick 1?|pg||at|
+Question 2: Will you lead clubs first or start with diamonds?|pg||at|
+Question 3: Are you confident of making this hand against best defense?|pg||nt|Question 1: What will you do at trick 1?|pg||at|
+Clearly, you have three choices: A. You could win in your hand, B. You could win in dummy, and C. You could duck in both hands.|pg||at|
+Answer: You should not duck the opening lead! It won’t solve your dilemma as to where to win the heart. And if West finds a spade shift, you are history. E-W will win 3 spades, 1 heart and the club ace.|pg||nt|In which hand should you win the HQ lead?|pg||at|
+Answer: Most players want to save dummy’s HK. They think they need it to get to the DJ after unblocking the AKQ.
+However, saving the heart king is not necessary. North does have a guaranteed entry to dummy. Because he has 2 club honors, he must win a club trick.|pg||at|
+Although it is not obvious, you do need to save the entry to your hand.
+Why is that?            Let’s put that on hold for a moment.
+Once we answer question ##2, the logic will be much easier to understand.|pg||nt|Question 2: Will you lead clubs first or start with diamonds?|pg||at|
+Answer: Diamonds. You must unblock your 3 honors. On most hands containing a blocked suit, you need to unblock the suit ASAP. If you led clubs first and West correctly held up, you’d be unable to cash the DJ.|pg||at|
+We have determined that diamonds must precede clubs. Can you now see why you must save your ace of hearts?
+If you don’t, how will you get to your 4th club? Remember, West’s correct defense is to win his club ace on the third round.|
+pg||nt|It’s very unusual that a player who opens 1NT would run out of entries. However, you must immediately cash your diamond honors to unblock. Before you know it, the heart ace will be the only outside entry to your clubs.
+You must preserve it.|pg||nt|Question 3: Are you confident of making this hand against best defense?|pg||at|
+Answer: Yes. Once you win the HK and unblock diamonds, E-W is helpless.
+You’ll then lead a low club to the king. It does not matter which opponent holds the CA. Either the CK or the CJ must be an entry to dummy to cash the DJ. And by saving the HA, E-W can’t stop you from winning 3 club tricks.
+It no longer matters when West wins his club ace.|pg||

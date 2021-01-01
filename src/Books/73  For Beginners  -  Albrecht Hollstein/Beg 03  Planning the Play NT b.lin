@@ -1,0 +1,488 @@
+%% For beginners (3))
+%% hold up
+
+mn| Al (xx1943) teaching : Declarer play for beginners (3)|
+tu||
+
+%% Font definiton:
+fh|150|ff|1Arial|fb|110|fm|1|
+fh|235|ff|2Arial|fb|28|fm|2|
+fh|340|ff|3Arial|fb|35|fm|3|
+fb|49|fm|4|fb|4|fm|4|
+
+%% color definition
+cr|116|cg|116|cb|1255|              blau = blue
+cr|2255|cg|2255|cb|264|             gelb = yellow
+cr|30|cg|30|cb|3128|                dunkelblau = dark blue
+cr|4255|cg|4255|cb|40|              dunkleres gelb = dark yellow
+cr|516|cg|5128|cb|516|              grün = green
+cr|6245|cb|6220|cg|6235|            beige
+cr|70|cb|7220|cg|7235|              grün-blau = green-blue
+cr|8255|cb|8200|cg|8200|            rosa = pink
+cr|9200|cb|90|cg|9150|              braun = brown
+
+%% -----------------------------------menu-------------------------------------------
+qx|Menu|
+bg|6|%%set background color
+bt||nt|| %% Big text; new text
+cs|3|cp|4| %% Farbe der Box dunkelblau, Farbe der Schrift gelb
+fp|2| %% Pick font
+at|
+^-{ Al teaching:  }
+
+{ Declarer play for beginners (3) Treatment of the "dangerous" opponent}
+^-|
+cp||fp|| %% Schriftfarbe und -font auf default gesetzt
+
+%% ---------------------------------Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon") and Mihailo Krstic ("Miksa")|
+
+^-
+fp|1|3d|0| %% font 1 ausgewählt
+
+cs|2|
+ht|f|%% Menu starts at line "f"
+%% Anfangs- und Ende Tabulatoren werden gesetzt
+at|^c@2^x@3{
+^*Go1,     Example 1: Who is dangerous? Hold up or not?^*N
+^*Go1a,     Example 1: Free play^*N
+^*Go2,     Example 2: Who is dangerous? Hold up or not?^*N
+^*Go3,     Example 3: Bath Coup? With 9 never?^*N
+
+{^x@3^*Gintro, ^c     About this series of lessons^*N ^n^*Gconclusion,What you'll learn in this lesson^*N
+^*Gbooks,     Recommendations^*N ^n^*Grules_holdup,The dangerous opponent^*N
+^*Ghelp,     How to navigate in this movie ^*N ^n^*GLinks,Links about "Hold up"^*N}|
+pg||
+
+%% --------------------------hand number 1 -------------------------------------------
+qx|o1|
+sk|S|rh||ah|Example 1|ah|Holdup or not (1)|st||
+md|3SAJ2HA32DJT32CAK2,SKT743HJ98D8CQT87,S96HK54DAQ975C643,|
+sv|0|
+mb|-|mb|p|mb|p|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|mb|-|mb|-|mb|-|pc|S4|
+nt|Now make your plan before you touch a card in dummy!!!!!!!!!!!!|
+%% questions 1) 2) and 3)
+pg||sb|SHow many sure tricks do I have?|
+pg||nt|Sure tricks are: 1@s|hc|sA|
+pg||at| + 2@h|hc|hAK|
+pg||at| + 1@d|hc|dA|
+pg||at| + 2@c|hc|cAK|
+pg||at| = 6.|
+pg||sb|SHow many tricks are needed to make my bid?|lc|sAhAkdacAK|
+pg||at|
+To make 3NT we need 9 tricks, so we need 9 - 6 = 3 more.|
+pg||at||sb|SWhich suit(s) may provide this additional trick?|
+pg||nt|@ss can make 1 additional trick, if LHO leads the suit a second time.
+@hs can make 0 additional tricks.
+@ds can make at 3-4 additional tricks.
+@cs can make at 0 additional tricks.|
+pg||nt|So you must establish the @d suit. If the K is with W you have 4 additional tricks if the K is with East only 3.|
+pg||sb|SNow let us imagine what will happen, when I try to establish the diamonds.|
+pg||nt|1) When you get the lead, you'll play @dJ for the finesse.
+2) If the finesse is on, you'll take easy 10 tricks.
+3) So let us concentrate, what will happen, if the crucial finesse is off.|
+pg||at|
+If the finesse is off, East will get the lead and we should plan our play in that way, that 
+^*BEAST IS NOT A DANGEROUS OPPONENT^*N.|
+pg||sb|SOh I see. East will get the lead, if the finesse is not on.|
+pg||sb|sAnd I must try to plan my play so, that HE can do me no harm.|
+pg||nt|Correct. The only opponent, who can get the lead is EAST (the crucial finesse goes to him).|
+pg||sb|S|pc|s9sQ|
+at|
+If you take the lead with your @sA, East will be the dangerous opponent, because he can lead a @s through your Jx, when he takes the @dK.
+I will show you how this works:|
+pg||pc|sa|sk||sb|s|
+pg||pc|djdddk|
+pg||pc|s8|hs|ss|hc|skst|at|
+The @sJ is caught in the fork and West will score 4 more @s tricks.|
+pg||sb|SSo I'm lost, if I take the lead with the A of spades?|ls|ss|lc|skst|
+pg||nt|Correct. This is a typical example were it is necessary to hold up.
+You and dummy have together 5 @s cards. The calculation 7 -5 = 2 shows, that you must hold up twice.|
+pg||sb|SI'm interested to get more infos about the rule of 7.|
+pg||nt|There is a ^*GLinks,page^*N in this movie with all information you need.
+But now let us show, how the hand should be played. |
+pg||up|8|sb|S|
+pg||pc|s9sqs|
+pg||pc|s8sjsks|
+pg||pc|shss|
+pg||pc|djdddk|nt|East got the lead as expected, but has no more @s to lead. 
+He isn't dangerous any more, because your hold-up-play exhausted him from that suit.|
+pg||sc|y|mc|9|
+nt|The decision if you hold up or not should be made while visioning the complete play of the hand.
+You should hold up, if it is necessary and the posiible switch to another suit is not dangerous for you.
+Look ^*Grules_holdup, here ^*N for more details.|
+pg||
+
+%%--------------------------------hand 1 freeplay ------------------------------
+qx|o1a|
+rh||ah|Example 1|ah|Free play|
+sc||st||pf||nt||
+md|3SAJ2HA32DJT32CAK2,SKT743HJ98D8CQT87,S96HK54DAQ975C643,|
+sv|0|
+mb|-|mb|p|mb|p|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|mb|-|mb|-|mb|-|pc|S4|
+at|^-
+{You may now play whatever cards you like! Just click on the card you wish to play.
+ The most recently played card may be taken back by clicking on ^$6 , Undo.
+Once a trick is complete, click on the first card of the next trick.
+Inspect a played trick by pointing at it with the mouse.}|
+pf|y|pg||
+
+%% --------------------------hand number 2 -------------------------------------------
+qx|o2|
+md|4SAJ2HA32DaT32CAK2,SKT743HJ98Dk8CQT7,S96HK54DQj975C643,|
+sv|n|st||sc||sk|S|rh||ah|Example 2|ah|Holdup or not (2)|pf||
+mb|p|mb|2N|an|20-22 HCP|mb|p|mb|3N|mb|p|mb|p|mb|p|mb|-|mb|-|mb|-|pc|S4|
+nt|Now make your plan before you touch a card in dummy!!!!!!!!!!!!|
+%% questions 1) 2) and 3)
+pg||sb|SThis hand looks very similar to the previous one.|
+pg||nt|Yeah, but there is a very important difference. Let us repeat the former analysis:|
+pg||sb|SHow many sure tricks do I have?|
+pg||nt|Sure tricks are: 1@s|hc|sA|
+pg||at| + 2@h|hc|hAK|
+pg||at| + 1@d|hc|dA|
+pg||at| + 2@c|hc|cAK|
+pg||at| = 6.|
+pg||sb|SHow many tricks are needed to make my bid?|lc|sAhAkdacAK|
+pg||at|
+To make 3NT we need 9 tricks, so we need 9 - 6 = 3 more.|
+pg||at||sb|SWhich suit(s) may provide this additional trick?|
+pg||nt|@ss can make 1 additional trick, if LHO leads the suit a second time.
+@hs can make 0 additional tricks.
+@ds can make at 3-4 additional tricks.
+@cs can make at 0 additional tricks.|
+pg||nt|So you must establish the @d suit. If the K is with East you have 4 additional tricks if the K is with West only 3.|
+pg||sb|SNow let us imagine what will happen, when I try to establish the diamonds.|
+pg||nt|1) When you get the lead, you'll goto table play @dQ for the finesse.
+2) If the finesse is on, you'll take easy 10 tricks.
+3) So let us concentrate, what will happen, if the crucial finesse is off.|
+pg||at|
+If the finesse is off, West will get the lead and we should plan our play in that way, that 
+^*BWest IS NOT A DANGEROUS OPPONENT^*N.|
+pg||sb|SOh I see. West will get the lead, if the finesse is not on.|
+pg||nt|Correct. The only opponent, who can get the lead is West (the crucial finesse goes to him).|
+sb|S|pc|s9sQ|
+pg||at|
+If you don't take the lead with your @sA, West will be the dangerous opponent, because his suit will be established and ready to cash.
+I will show you how this works:|sk||
+pg||pc|s2|
+pg||pc|s8sjsks|
+pg||pc|shss|
+pg||pc|hhhkh|
+pg||pc|dqdddk|sb|SOuch, West has 2 more spades to cash. I lost 4 spades and 1 diamond for down 1.|
+pg||nt|Correct. This is a typical example were it is necessary ^*BNOT^*N to hold up.
+Though you and dummy have together 5 @s cards and the rule of 7 tells you to hold up twice.
+That is why West is not dangerous, if you take the first trick with @sA.
+Let us see how this works.|sb|s|
+pg||up|17|nt||
+pg||pc|sa|nt|Now West cannot cash his @ss, when he gets the lead, because your @sJ  is another stopper.|hs|ssws|
+pg||pc|hhhkh|nt|Now it is plain sailing.|
+pg||pc|dqdddk|sb|SOh I see, West can do me no harm, because he cannot cash his spades.|
+pg||ls|ssws|sc|y|mc|9|sb|S|
+pg||
+
+
+%% --------------------------hand number 3 -------------------------------------------
+%% avoid the bath coup
+qx|o3|
+sv|n|st||sc||sk|S|rh||ah|Example 3|ah|Bath Coup??|pf||
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md|1SAJ4HA532DKT3CA43,SKQT85HJT4D5CQT87,S76HQ6DAJ9742CK62,|
+sv|e|
+mb|-|mb|-|mb|-|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|mb|-|mb|-|mb|-|pc|SK|
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt|Now make your plan before you touch a card in dummy!!!!!!!!!!!!|
+
+pg||sb|sOh that's an easy one. Bath-Coup and "9 never"|
+pg||nt|You mean to hold up with AJx and hope that West donates you with a second trick in that suit by leading it a second time? This is called the "Bath-Coup".
+You learned "With 9 never" to play A and K of a suit with 9 cards and the Q missing.
+Ok, take the wheel!!!!!!!!!|
+pg||pc|sss|sb|SHere we go|
+pg||pc|hjhqhk|sb|SOuch West didn't obey. He switched. grrrr|nt||
+pg||pc|h|sb|SI must hold up the hearts too.|
+pg||pc|s9sjsqs|sb|s|
+pg||pc|hthhh|
+pg||pc|hchha|
+pg||nt|Now you are in a very uncomfortable situation.
+You lost 4 tricks already and are bound to bring in the @ds without loss.
+
+By the way, if you were sure to find the @dQ you had 10 tricks from the top:
+1@s + 1@h + 6@d + 2@c = 10|
+pg||pc|dkddd|sb|SNo stiff Diamond Q. grrrrrrrr|
+pg||pc|dtcddq|sb|SDiamonds are not 2-2 as they should. grrrrrrrrrrrrrrrr|
+pg||pc|hccc|sb|S|
+pg||mc|7|nt|And down you are in a foolproof contract.
+It was not a good idea to play on old sayings like 
+"Always apply the Bath Coup" and "With 9 never"."
+You should make your analysis in the 4 steps we learned.|
+pg||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md|1SAJ4HA532DKT3CA43,SKQT85HJT4D5CQT87,S76HQ6DAJ9742CK62,|
+sv|e|
+mb|-|mb|-|mb|-|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|mb|-|mb|-|mb|-|pc|SK|
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt|Now make your plan!|
+
+%% questions 1) 2) and 3)
+pg||sb|SHow many sure tricks do I have?|
+pg||nt|Sure tricks are: 1@s|hc|sA|
+pg||at| + 1@h|hc|hA|
+pg||at| + 2@d|hc|dAk|
+pg||at| + 2@c|hc|cAK|
+pg||at| = 6.|
+pg||sb|SHow many tricks are needed to make my bid?|lc|sAhAdakcAK|
+pg||at|
+To make 3NT we need 9 tricks, so we need 9 - 6 = 3 more.|
+pg||at||sb|SWhich suit(s) may provide this additional trick?|
+pg||nt|@ss can make 1 additional trick, if LHO leads the suit a second time.
+@hs can make 1 additional trick, if the K is with West or East leads the suit.
+@ds can make at 3-4 additional tricks.
+@cs can make at 0 additional tricks.|
+pg||nt|So you must establish the @d suit. 
+If you find the @dQ you have 4 additional tricks, if you lose to the @dQ you'll score only 3 additional tricks.|
+pg||sb|SNow let us imagine what will happen, when I try to establish the diamonds.|
+pg||nt|If you manage to catch @dQ, you'll take 10 easy tricks. 
+But you should concentrate to ensure your contract even if you guess the @dQ wrong.|
+pg||at|
+There is a very important difference, if you miss the Q instead of the K.|
+pg||at|
+You can finesse against boths opponents and therefore decide, who will win the trick, if the finesse loses.|
+
+pg||sb|sOh I see. I can finesse in that way, that the losing finesse is won by the NOT dangerous opponent.|
+pg||nt|Clap, clap, clap you got it.|
+pg||at|
+We saw that the hold up will lead to defeat against not sleeping opponents.
+Therefore you must take the opening lead with your @sA.|
+pg||at|
+Now West is NOT dangerous, while East is dangerous (he can lead through your J4).
+Therefore you must play the the @ds in a way, that you deny EAST the lead.|
+pg||sb|sOK, let me try.|
+pg||pc|sssa|
+pg||pc|dddad|sb|S|
+nt|Now your contract is 100% sure. 
+If East had @dQ865 there is nothing you can do about it - you can get only 3 @d tricks or have to give the lead to East.|
+pg||pc|dddthj|sb|sOK, now it is plain sailing.|nt||
+pg||pc|dhtdd|
+pg||pc|ccckc|
+pg||mc|10|sk||nt|1@h + 3@d + 1@c + 5 already scored = 10 tricks for the good guys.|sb|s|hs|nd|hc|haca|
+pg||lc|haca|ls|nd|
+
+
+%% ------------------------General notes--------------------------------
+qx|intro|
+bt||
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^-{ Al teaching:  }
+
+{About this series of lessons}
+^-|
+cp||cs|2|pf||
+ht|g|
+at|^c@2{My target group are absolutely beginners}
+
+{My topic is the DECLARER PLAY; not the bidding not the defense}
+
+{I presuppose only a few things about bridge which you find e.g.:
+^d@2^*Hwww.rpbridge.net/1a00.htm^*N Learn to play bridge with Richard Pavlicek
+^*Hwww.rpbridge.net/1t05.htm ^*N Introduction to R. Pavlicek lessons
+^*Hwww.prairienet.org/bridge/start.htm^*N Getting started with Karen's bridge library
+^*Hwww.prairienet.org/bridge/glos.htm^*N Glossary for Beginners in Karen's bridge library
+}
+
+{^c@2 If you have any questions feel free to mail me to albrecht.hollstein@@freenet.de}
+|
+fp|2|at|
+{If you like my lessons, tell it to others, if you dislike something, tell it to me.}@0@1|
+ht|z|fp||
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon") and Mihailo Krstic ("Miksa")|
+pg||
+
+%% ------------------------special summary:       The dangerous opponent
+qx|rules_holdup|
+bt||nt||cs|3|cp|4|
+%% ---------------Überschrift-------------------
+at|
+^-{ Al teaching:  }
+
+{ Declarer play for beginners (3) The dangerous opponent}
+^-|
+cp||fp||
+%% Randbegrenzungen setzen
+at|
+^b@2^x@3You should not let you get disturbed by rules and coups and other "good" advices. |
+pg||at|
+Your aim is ^*Bnot to let the dangerous opponent on lead. ^*N|
+pg||at|
+There are in principle 2 possibilities to deny the dangerous opponent he lead:|
+pg||at|
+1) Often you have the choice to make one opponent dangerous or the other. This is important if you have no influence, which opponent gets the lead.|
+pg||at|
+2) If on the other hand one opponent is dangerous you should try to lose a trick you have to lose to the not dangerous opponent.
+|
+pg||at|
+The ^*Bdangerous^*N opponent either can lead a suit which is established yet or can lead through one of your low honours towards partner's tenace.
+|
+at|^c@2E.g. in ^*Go1,Example 1^*N East is dangerous if you take the first or second @s trick, but is not dangerous any more if you hold up twice.
+|
+pg||at|^b@2
+The decision of holding up or not must be come from the analysis of the complete hand.|
+pg||at|
+1) Sure tricks?|pg||at|
+2) How many addtional tricks are needed? |pg||at|
+3) Which suit(s) can provide these additional tricks?|
+pg||at|
+4) Imagine, what may happen while you are establishing your additional tricks.|
+pg||at|^c@2
+4a) How often you'll lose the lead?|pg||at|
+4b) Which opponent will gain the lead?|
+pg||at|
+4c) Which opponent(s) are dangerous?|
+pg||at|
+4d) Can you prevent a specific opponent to gain the lead?|
+pg||at|
+4e) Can you manage the play in that way that the opponent, who will get the lead, is not dangerous?
+|
+pg||at|
+^cE.g. in ^*Go1,Example 1^*N the crucial finesse goes into the EAST hand, so you should make him ^*Bnot^*N dangerous by holding up twice.|
+pg||
+
+%%--------------------------summary-----------------------------------
+qx|conclusion|
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {This lesson is about the dangerous opponent}
+|
+cp||cs|8|fp||
+ht|d| %% Vertikale position
+
+at|^c@2{Make your plan of play, BEFORE you touch a card in dummy!!!
+Make your plan in a 4-step analysis, don't play for old sayings.}|
+cs|2| %% GELB
+at|
+
+{The plan for a NT contract consists of the following steps:
+^d@21) Count your sure tricks in high cards.
+2) Calculate how many additional tricks are needed to make your bid.
+3) Decide from which suit these tricks may come from.
+4) Be aware what can damage your plan.
+^e@24.1 Have opponents a long suit to run before you run your tricks??
+4.2 Is there a dangerous opponent?}|
+cs|7|
+at|^c@2^z@3
+
+{FORESTALL that the dangerous opponent get the lead.
+Identify, who will be the dangerous opponent. 
+Identify which opponent will get the lead.
+
+If there is a dangerous opponent, you cannot prevent from being dangerous, you should try to exclude him from the lead.
+
+If there is an opponent you cannot prevent from lead, be sure, he is NOT dangerous.}
+
+
+@0@1|
+ht|z|at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon") and Mihailo Krstic ("Miksa")|
+pg||
+
+
+
+%%--------------------recommendations----------------------------------
+qx|books|
+nt||
+bg|6|nt||cs|3|cp|4|fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {Recommendations}
+|
+
+cs|8|cp||fp|2|at|^e@2
+
+{
+^f@2Recommended books:
+|
+fp||at|
+1) Robert Berthe, Norbert Lebely: "Step by Step" Vol1 NT-declarer-play.   
+   This is the best book to learn the basics
+
+2) Victor Mollo, Nico Gardener: Card Play technique
+   A classical from 1955, but useful forever
+
+3) William S. Root: How to play a bridge hand.
+   12 easy chapters to winning bridge
+
+4) Louis H. Watson: Play of the hand at bridge
+   Another classical from 1934; very instructive, but you need time
+   }|
+cs|9|cp||fp|2|at|^e@2
+
+{
+^f@2Recommended software:
+|
+fp||at|
+1) Learn to play bridge; A great introduction and it is free.
+   ^*Hweb3.acbl.org/internet/websiteForms.nsf/ltpbForm?OpenForm^*N     
+
+2) Bridge Master 2000 by Fred Gitelman;
+   the best software to learn declarer play.
+   ^*Hbbi.bridgebase.com/software/bmdesc.html^*N
+   }|
+pg||
+
+%%--------------------------Links to the topic HOLD-UP--------------------------------------
+qx|Links|
+bt||nt||bg|6|
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {More links concerning holdup}
+|
+cp||cs|8|fp||
+ht|d| %% Vertikale position
+at|^b@2
+Rule of 7. The explanation by bridgeguys:
+^*hhomepage.mac.com/bridgeguys/Conventions/Rule7.html^*N
+
+Lin file (Movie): lesson(1) from this series had the topic HOLD-UP.
+^*hwww.albrecht-hollstein.de/Bridge/Lessons/For%20beginners/For%20beginners%20(1).lin^*N
+
+Lin file (Movie) with 2 instructive examples))
+^*hwww.albrecht-hollstein.de/Bridge/Lessons/For%20beginners/When%20not%20to%20hold%20up.lin^*N
+
+Lin file with a lot of stuff in bidding and play but an instructive hold-up play in 3NT too.
+Choose from the menu: ^*BHow 3NT should be played^*N
+^*hwww.albrecht-hollstein.de/Bridge/interesting%20hands/Best%20chance%20to%20win%205D.lin^*N|
+pg||
+
+
+%% ---------- HELP ---------------------------------------------------------------
+qx|Help, Help notes|
+bt||nt||cs|2|fp|2|ht|b|at|^-{ Help }
+^-|
+fp||ht|e|at|
+Short instruction on how to navigate through the movie:
+
+ ^$6  Previous page, permits you to read the previous page of this movie.
+ ^$40  Next page, permits you to read the next page of this movie.
+ ^$7  Previous chapter, takes you back to the first page of the previous topic.
+ ^$41  Next chapter, takes you forward to the first page of the next topic.
+ ^$119  Takes you back to the first page of this movie.
+
+You can display any hand at any time if you click on the player's name. Double clicking the name will show all hands.|
+
+ht|u|
+fp|2|at|^-
+{If you like my lessons, tell it to others, if you dislike something, tell it to me.
+mail to: albrecht.hollstein@@freenet.de}
+^-|
+ht|z|fp||
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon") and Mihailo Krstic ("Miksa")|
+pg||
+0

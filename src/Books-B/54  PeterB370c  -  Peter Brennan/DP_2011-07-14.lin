@@ -1,0 +1,528 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% File       : Peterb370c_Winning Techniques in Declarer Play_ 2011-07-14.lin
+%% Description: Peter's teaching session on Declarer play, BIL, 2011-07-14
+%% Programmer : Vanyvon
+%% Version    : 
+%%            : 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+mn| Peterb370c:Winning Techniques in Declarer Play,2011-07-14|tu||bt||nt||
+
+%% --- Definitions ---
+cr|116|cg|116|cb|1255|        %% blue
+cr|2255|cg|2255|cb|264|       %% yellow
+cr|316|cg|3128|cb|316|        %% dark green
+cr|4255|cb|40|cg|40|          %% red
+fh|120|ff|1Arial|fb|14|fm|1|  %% smaller light
+fh|220|ff|2Arial|fb|26|fm|2|  %% smaller bold
+fh|330|ff|3Arial|fb|34|fm|3|  %% larger light
+fh|430|ff|4Arial|fb|46|fm|4|  %% larger bold
+%% --- End Definitions ---
+
+%% --- Main ---
+qx|Main|
+bv|f,v|
+cs|1|cp|2|fp|4|
+at|
+^-{ Peter Brennan (Peterb370c): Winning Techniques in Declarer Play,13th and last lesson of this serie,
+   teaching at BIL, July 14, 2011. }
+^-|
+fp|2|cp||ht|f|at|   @2The LIN presentation of Peter 's lesson on Winning Techniques in Declarer Play in the Beginner Intermediate Lounge, 2011-07-14.|
+ht|i|cp||cs|2|
+at|^i   @2{
+
+             ^*GIntroduction, Introduction^*N
+
+^*GB01,    Board 01- best line of play^*N
+
+^*GB02,    Board 02- combo play^*N
+
+^*GB03,    Board 03- planning at trick 1^*N
+
+^*GB04,    Board 04- keeping away from dangerous hand^*N
+
+^*GB05,    Board 05- elimination and endplay^*N
+
+
+              ^*GFinal notes, Final notes^*N
+
+} @0|
+ht|z|cs||at|^b Click   { Flow  >  }  below|
+pg| ***** 0 ***** |
+
+
+%% --- End Main ---
+
+%% ---------- INTRODUCTION ----------
+qx|Introduction|
+nt||cs|1|cp|2|
+at|
+^-{ Introduction }
+^-|
+cp||
+ht|e|fp|1|
+at|Peter Brennan: The purpose of this course is to acquaint you with some useful tools when you declare a hand. Hopefully, by seeing a number of examples in random order you'll recognize these situations when they pop up in your game.  
+
+Each hand features a common challenge of some sort:  dealing with bad suit breaks, handling tricky entry situations, making inferences from the bidding or play, counting enemy distribution and/or points, when to draw trumps, basic end plays, etc.
+
+These hands should be played using IMP or rubber bridge tactics.  Don't even think of risking the contract to make a measly overtrick or two.
+
+
+
+|
+pg| ***** 1 ***** |
+
+
+%% ---------------------------
+
+
+pf|any-time|
+qx|B01,BOARD 1|
+rh||ah|Board 1|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|3SQ9HKJ874DAQJ852,SKJ86HQT5DT4CT762,SA7532HA62DK3CJ98,ST4H93D976CAKQ543|
+sv|b|mb|-|mb|1S|mb|2C|nt|What is South's best bid?|sk|s| %% small text set kibbing South
+pg| ***** 2 ***** |
+
+
+nt|There's no "right" way to bid the South hand.  But when partner opens and an opponent overcalls in your void suit you certainly want to be in game or even slam.  This is what I'd do.  Start with 2@d.|
+mb|2D|mb|p|mb|2S|mb|p|
+pg| ***** 3 ***** |
+
+
+at|
+Now I'd reverse with 3@h.  This shows an opening bid with more @ds than @hs and is game-forcing.|
+mb|3H|mb|p|mb|4D|mb|p|
+pg| ***** 4 ***** |
+
+
+at|
+Partner has shown a 6-card @s suit, so a @s contract is probably our best strain but I think I should let partner know I am 5 - 6 in @h - @d.  I only needed 4 @hs for my last bid.  My 4@h bid shows the 5 - 6 or better and keeps us below 4@s as well.|
+mb|4H|mb|p|
+pg| ***** 5 ***** |
+
+
+at|
+The North hand has improved with each bid partner has made.  You'll soon see the @hA and @dK which should be most important in filling out South's red 2-suiter.  North should either invite slam or even bid 6@h himself.|sk|n|
+pg| ***** 6 ***** |
+
+
+mb|6H|mb|p|mb|p|mb|p|sk|s|pc|C2|nt|There are 7 top tricks, 6@ds and 1@s, outside of @h.  Therefore you'll need 5@h tricks to make this slam.  Play carefully because you have a @s loser and a potential loser in the trump suit.  Good luck!|
+pg| ***** 7 ***** |
+
+
+nt|Here's a defensive note:  when partner leads a suit in which you have the AKQ (as East does) and dummy has length in the suit, take the first trick with the Ace, not the Queen.  If declarer ruffs, partner will know you have the AKQ.|
+pg| ***** 8 ***** |
+
+
+at|
+If the Ace lives, continue with the Queen.  If declarer ruffs, partner will know you started with the AKQ.  By playing the Ace first, you do not give away the strength of your suit.  The usual play of the Queen, which shows the AKQ, makes it easier for the declarer to place the other missing honor cards.|
+pg| ***** 9 ***** |
+
+
+at| Most players have a blind spot when they play this hand.  They play for the 39% chance the @hQx(x) will be onside and take the losing finesse.  There's a better play available.|
+pg| ***** 10 ***** |
+
+
+nt|If trumps are 3 - 2 (68%) we can make our 5th @h trick by ruffing our @s loser in dummy.|
+pg| ***** 11 ***** |
+
+
+at|
+Draw 2 rounds of trump.  Instead of sacrificing dummy's 3rd trump to take a finesse which may lose, we leave it there and run our @ds pitching @ss from the table.  We can get all 4 low @ss away by throwing them on the good @ds.|
+pg| ***** 12 ***** |
+
+
+pc|C8|pc|CQ|pc|H4|
+pg| ***** 13 ***** |
+
+
+pc|H7|pc|H5|pc|HA|pc|H3|
+pg| ***** 14 ***** |
+
+
+pc|H2|pc|H9|pc|HK|pc|HT|
+pg| ***** 15 ***** |
+
+
+pc|D2|pc|D4|pc|DK|pc|D6|
+pg| ***** 16 ***** |
+
+
+pc|D3|pc|D7|pc|DA|pc|DT|
+pg| ***** 17 ***** |
+
+
+at|
+The opp with the @hQ (West) can ruff a @d or not.  Either way we'll ruff our losing @s in the endgame.|
+pc|DQ|pc|C6|pc|S2|pc|D9|
+pg| ***** 18 ***** |
+
+
+pc|DJ|pc|HQ|pc|S3|pc|C5|
+pg| ***** 19 ***** |
+
+
+pc|CT|pc|CJ|pc|CK|pc|H8|
+pg| ***** 20 ***** |
+
+
+pc|D8|pc|S6|pc|S5|pc|C3|
+pg| ***** 21 ***** |
+
+
+pc|D5|pc|C7|pc|S7|pc|C4|
+pg| ***** 22 ***** |
+
+
+pc|S9|pc|S8|pc|SA|pc|S4|
+pg| ***** 23 ***** |
+
+
+pc|C9|pc|CA|pc|HJ|pc|SJ|
+pg| ***** 24 ***** |
+
+
+pc|SQ|pc|SK|pc|H6|pc|ST|
+
+mc|12|sc|y|sk||nt|Here's the lesson text:  The best line of play in this hand is not obvious to most players who might rely on the 39% probability of finding East with @hQx or @hQxx to make 5@h tricks.  The better play is to hope @hs break 3 - 2 (68%); then we can discard dummy's 4 small @ss on @ds and ruff our losing @s on the board.|
+pg| ***** 25 ***** |
+
+
+pf|any-time|
+qx|B02,BOARD 2|
+rh||ah|Board 2|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||
+md|1SKT9HA9DAK53CKQ92,SJ75HJ842DQJTC873,SA86HKT753D86CAJ5,SQ432HQ6D9742CT64|
+sv|b|mb|-|mb|-|mb|-|mb|1D|mb|p|mb|1H|mb|p|mb|2N|mb|p|mb|4N|mb|p|mb|6N|mb|p|mb|p|mb|p|sk|S|sc||PC|DQ|nt|There are 2@ss, 2@ds and 4@cs tricks so you'll need to make 4@hs to land this slam.  Good luck!|
+pg| ***** 26 ***** |
+
+
+nt|At first glance it appears the only way to make 4@h tricks is if they split 3 - 3 which is only a 36% chance.  But with the @hs10 and 9 among our assets we can do better.|
+pg| ***** 27 ***** |
+
+
+at|
+The best way to play @h is to begin the suit from dummy.|
+pg| ***** 28 ***** |
+
+
+pc|D6|pc|D4|pc|DK|
+pg| ***** 29 ***** |
+
+
+pc|C2|pc|C3|pc|CA|pc|C4|
+pg| ***** 30 ***** |
+
+
+at|
+Lead the @h3 and when East plays the @h6 play the...|
+pc|H3|pc|H6|
+pg| ***** 31 ***** |
+
+
+at| ...@h9.  We would only play the @hA if East played the @hQ or @hJ.|
+pc|H9|pc|HJ|
+pg| ***** 32 ***** |
+
+
+at|
+How does the play of the @h9 improve our chances?  We will still make 4@h tricks when they are 3 - 3 (36%) or when East has @hQx, @hJx, @h8xxx or @hQJxx.|Sk||
+pg| ***** 33 ***** |
+
+
+at|
+Those extras add another 25% to our chance of success bringing the total probability of making 6NT to 61%.|
+pg| ***** 34 ***** |
+
+
+pc|DJ|pc|D8|pc|D2|pc|DA|
+pg| ***** 35 ***** |
+
+
+pc|HA|pc|H2|pc|H5|pc|HQ|
+pg| ***** 36 ***** |
+
+
+pc|C9|pc|C7|pc|CJ|pc|C6|
+pg| ***** 37 ***** |
+
+
+pc|HK|pc|S2|pc|D3|pc|H4|
+pg| ***** 38 ***** |
+
+
+pc|HT|pc|CT|pc|S9|pc|H8|
+pg| ***** 39 ***** |
+
+
+pc|H7|pc|D7|pc|D5|pc|C8|
+pg| ***** 40 ***** |
+
+
+pc|SA|pc|S3|pc|ST|pc|S5|
+pg| ***** 41 ***** |
+
+
+pc|S8|pc|S4|pc|SK|pc|S7|mc|12|sc|y|nt|Here's the lesson text:  We need 4@h tricks to make our slam.  The optimum play is to lead a low @h from dummy and insert the @h9 if East follows small.  This play increases the odds we'll make our slam to 61%.|
+pg| ***** 42 ***** |
+
+
+pf|any-time|
+qx|B03,BOARD 3|
+rh||ah|Board 3|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st|s|md|4SAQJ843HAQDK5CKQJ,HJT9843DJ986CAT3,ST62HK652DA43C642,SK975H7DQT72C9875|mb|p|mb|1S|mb|2H|mb|2S|mb|p|mb|3H|mb|p|mb|4D|mb|p|mb|4H|mb|p|mb|4S|mb|p|mb|6S|mb|p|mb|p|mb|p|sk|s|sc||nt|This is a good hand for Roman Key Card Blackwood.  South will find there are 2 missing key cards (the 5 "key cards" are the 4 Aces and the King of trumps) and stop at 5@s.  But sometimes misunderstandings occur.  Whatever the reason, it appears you're in a makable slam if East has the @sK.  Good luck in the play!|pc|HJ|
+pg| ***** 43 ***** |
+
+
+nt|We begin with the assumption East (RHO) has the @sK.  The probability West was dealt the singleton @sK is 6% so we'll hope East has the @sK and base our play on that.|
+pg| ***** 44 ***** |
+
+
+at|
+We see no problem as long as RHO has 1, 2 or 3@ss.  Our first @s lead will be the @s10 to keep the lead on the board if the @sK doesn't appear.  Is there anything we can do if East has all 4@ss?|
+pg| ***** 45 ***** |
+
+
+at| With East holding @sK9xx we'll have to return to the table a second time to finesse @s because we must win the 2nd @s lead in hand.|
+pg| ***** 46 ***** |
+
+
+nt|With many hands the order of play is not so important.  There are several winning lines declarer can choose from.  Then there are "picky" hands that can only be played one way.  This hand is picky with a capital P.|
+pg| ***** 47 ***** |
+
+
+at|
+On the opening lead the "normal" play is to make 3@h tricks by winning the first trick in hand.  But West's 2-level overcall missing the @hAKQ must be based on length.  And we don't need the extra @h trick anyway.|
+pg| ***** 48 ***** |
+
+
+at|
+We may need 2 entries to the table so we must play the @hK now and hope East has at least 1@h.  We still have the @dA if we discover we need a 2nd entry.  Any questions so far?|
+pg| ***** 49 ***** |
+
+
+pc|hK|pc|h7|pc|hQ|
+pg| ***** 50 ***** |
+
+
+at|
+We lead the @s10 and hold our breath waiting for LHO to finally...|
+pc|sT|
+pg| ***** 51 ***** |
+
+
+at|
+...pitch a low @h.  Our careful planning will pay off when we enter dummy with a @d and finesse away East's @sK9.|sk||
+pc|s5|pc|s3|pc|h3|
+pg| ***** 52 ***** |
+
+
+pc|s6|pc|s7|pc|s8|pc|h4|
+pg| ***** 53 ***** |
+
+
+pc|d5|pc|d6|pc|dA|pc|d2|
+pg| ***** 54 ***** |
+
+
+pc|s2|pc|s9|pc|sQ|pc|h8|
+pg| ***** 55 ***** |
+
+
+pc|sA|pc|cT|pc|c2|pc|sK|
+pg| ***** 56 ***** |
+
+
+pc|cK|pc|cA|pc|c4|pc|c5|
+pg| ***** 57 ***** |
+
+
+pc|hT|mc|12|sk||sc|y|nt|Here's the lesson text:  The importance of PLANNING BEFORE PLAYING TO TRICK 1 is the theme of this hand.  Realizing we may need 2 entries to the table to finesse @ss we must win trick 1with the @hK and immediately lead the @s10.  When West shows out we take a 2nd finesse, reenter dummy with a @d and take the 3rd @s finesse.|
+pg| ***** 58 ***** |
+
+
+pf|any-time|
+qx|B04,BOARD 4|
+rh||ah|Board 4|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|3SQT5HAKQT962C953,S962H854DJ8764CKJ,SAJ4HJ3DA95CAT862,SK873H7DKQT32CQ74|sv|n|mb|-|mb|1C|mb|1D|mb|1H|mb|p|mb|1N|mb|p|mb|4H|mb|p|mb|6H|mb|p|mb|p|mb|p|pc|d6|sk|s|sc||nt|We've suspected poor North has had a drinking problem for some time.  It's bidding like this that confirms it.  
+One loser can go away on dummy's @dA but RHO is more likely to have the @sK because of his overcall.  You'll need all the breaks to make this contract.  Good luck!|
+pg| ***** 59 ***** |
+
+
+nt|This hand is from my class, Planning the Play, in 2009.  It remains as one of my favorite hands of all time.|
+pg| ***** 60 ***** |
+
+
+at|
+A @s or @h lead will always beat 6@h.  But the low @d lead gives us a chance.  One @c loser will go on the @dA.  Then we can duck a @c.  If they split 3 - 2 (68%) we'll have the @sA, 7@hs, @dA and 3@c tricks and actually make this ridiculous slam.|
+pg| ***** 61 ***** |
+
+
+at|
+Not so fast!  The "duck a @c" part could go very badly if the "dangerous opponent" gets in the lead.  Which opp in your opinion is "dangerous?"|
+pg| ***** 62 ***** |
+
+
+nt|Yes, West is dangerous because of the @s position.  If he gets in and leads a @s we must play the @sA or risk the finesse.  But we need the @sA as an entry to the soon to be established @c suit.|
+pg| ***** 63 ***** |
+
+
+at|
+On the other hand, East can't attack @s without giving us a free finesse so if we can set up the @cs without letting West get the lead we'll be OK.|
+pg| ***** 64 ***** |
+
+
+at|
+We might try to duck a @c trick to East.  If he has something like @cKQx we could do it.|
+pg| ***** 65 ***** |
+
+
+sk|w|at|
+Unfortunately, as you see, West is holding @cKJ so trying to duck a @c to East won't work.  We must find another way.  And the @d lead gives us that way!|hs|wc|
+pg| ***** 66 ***** |
+
+
+nt|The winning play is the...|sk|S|ls|wc|
+pg| ***** 67 ***** |
+
+
+at| ...@d9 from dummy so East must play his @dQ and we pitch a low @c from our hand.  This has the effect of "ducking" a @c to the safe hand, East.  Now, we're in control.| 
+pc|d9|pc|dQ|pc|c3|
+pg| ***** 68 ***** |
+
+
+at| East's best return is a @h.  We'll need the @hJ as an entry to the board later so we play the...|
+PC|h|
+pg| ***** 69 ***** |
+
+
+at| ...@hA and lead a @c to the board.|
+pc|hAhh|
+pg| ***** 70 ***** |
+
+
+pc|c5|pc|cJ|pc|cA|pc|c4|
+pg| ***** 71 ***** |
+
+
+at|
+We'll pitch our last @c on the @dA and ruff a @c high.  If @cs are 3 - 2 we can throw our @s losers on the established @cs.|
+pc|dA|pc|d3|pc|c9|pc|d7|
+pg| ***** 72 ***** |
+
+
+pc|c2|pc|c7|pc|hT|pc|cK|
+pg| ***** 73 ***** |
+
+
+pc|hhhs|
+pg| ***** 74 ***** |
+
+
+pc|cch9s|
+pg| ***** 75 ***** |
+
+
+pc|hKhds|
+pg| ***** 76 ***** |
+
+
+pc|sssAs|
+pg| ***** 77 ***** |
+
+
+pc|cTdss|
+pg| ***** 78 ***** |
+
+
+pc|c8|mc|12|sk||sc|y|at|
+Here's the lesson text:  After arriving at a very shaky slam, declarer uses a LOSER-ON-LOSER play at trick 1 to begin to set up dummy's long @cs and keep West, the DANGEROUS OPPONENT, off lead.|
+pg| ***** 79 ***** |
+
+
+pf|any-time|
+qx|B05,BOARD 5|
+rh||ah|Board 5|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|1SAKT86HKJTDKJ9CAJ,S7H984DQT83CT9852,SJ9542HA52DA42CK4,SQ3HQ763D765CQ763|nt||sv|b|mb|-|mb|-|mb|-|mb|2N|mb|p|mb|3H|mb|p|mb|4S|mb|p|mb|6S|mb|p|mb|p|mb|p|mb|-|mb|-|mb|-|pc|CT|sk|S|sc||nt|Despite the annoying "mirror" distribution eliminating any chance of a ruff this is an excellent slam.  Assuming trumps are 2 - 1 (78%) you'll have to take a winning finesse in a red suit.  The probability of "guessing" right is about 75% so your chance of making is about 60%.  Good luck!|
+pg| ***** 80 ***** |
+
+
+pc|C4|pc|CQ|pc|CA|
+pg| ***** 81 ***** |
+
+
+pc|SA|pc|S7|pc|S2|pc|S3|
+pg| ***** 82 ***** |
+
+
+pc|SK|pc|C2|pc|S4|pc|SQ|
+nt|Actually, once trumps are 2 - 1 so there's no possibility of losing a trick in @s there is a 100% play available.  Why take finesses where there's a 1 in 4 chance to fail when we can take no finesses and have no possibility of going down?|
+pg| ***** 83 ***** |
+
+
+at|
+Mirror distribution has one advantage:  equal length side suits can often be used as throw-in suits to force a favorable lead.  First we'll strip the @cs.|
+pc|CJ|pc|C5|pc|CK|pc|C3|
+pg| ***** 84 ***** |
+
+
+at|
+Now our plan is to play the Ace, King and Jack of one of our almost equal red suits giving one of the defenders the lead.|
+pc|DA|pc|D5|pc|D9|pc|D3|
+pg| ***** 85 ***** |
+
+
+pc|D4|pc|D6|pc|DK|pc|D8|
+pg| ***** 86 ***** |
+
+
+nt|He'll be forced to lead a @c, giving us a ruff-sluff to get rid of our remaining red suit loser, or the remaining red suit itself giving us a "free finesse."|
+pc|DJ|pc|DQ|pc|D2|pc|D7|
+pg| ***** 87 ***** |
+
+
+pc|H8|pc|H2|pc|H3|pc|HT|sb|wGrrrrrrrr I have no good play...|
+pg| ***** 88 ***** |
+
+
+at|
+Does it matter which suit, @h or @d, we choose to exit?|sb|w|
+pg| ***** 89 ***** |
+
+
+at|
+In this layout it certainly does make a big difference.  If we try to exit in @h...|sk||up|16|
+pg| ***** 90 ***** |
+
+
+pc|hAhhh|
+pg| ***** 91 ***** |
+
+
+pc|hhhKh|
+pg| ***** 92 ***** |
+
+
+at| ...East will win the 3rd @h and lead back a...|
+pc|hhhhQ|
+pg| ***** 93 ***** |
+
+
+at| ...@d.  Because the @dQ10 are behind our @dJ9 we'll lose a 2nd @d and go -1 in our slam.  Everybody see that?|hc|dQTJ9|
+pc|d|
+pg| ***** 94 ***** |
+
+
+at|
+Clearly it's better to play on @ds so the lead back will have to be in our stronger suit, @h.  As a general rule, use the weaker suit to force a lead in the stronger suit.|lc|dQTJ9|
+pg| ***** 95 ***** |
+
+
+mc|12|sc|y|nt|The lesson text:  In suit contracts "mirror distribution," where dummy and declarer have identical shape, is not desirable because declarer is unable to ruff.  However, there is one advantage.  It's easier to strip suits to prepare for an ELIMINATION AND THROW-IN endplay.  After drawing trump declarer cashes a 2nd @c and plays 3 rounds of@d.  Whichever opp wins must lead @h or give declarer a ruff-sluff.|
+pg| ***** 96 ***** |
+
+
+ 
+
+
+
+0

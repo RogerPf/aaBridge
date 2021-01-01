@@ -46,6 +46,18 @@ public class ButtonPanelRight extends JPanel {
 	RpfResizeButton autoEnterLabelEnter;
 	RpfResizeButton autoEnterOnOff;
 
+	public boolean isDdsScoreOnOffVisible() {
+		return this.isVisible() && ddsScoreOnOff.isVisible();
+	}
+
+	public boolean isAnalyserBtnVisible() {
+		return this.isVisible() && ddsAnalyse.isVisible();
+	}
+
+	public boolean isShowHideKibVisible() {
+		return this.isVisible() && hiddenHandsShow_b.isVisible();
+	}
+
 	/**
 	 */
 	ButtonPanelRight() { /* Constructor */
@@ -111,7 +123,7 @@ public class ButtonPanelRight extends JPanel {
 		// @formatter:on
 
 		boolean sd = App.isStudyDeal();
-		boolean sdDev = sd & !App.sd_dev_visibility;
+		boolean sdDev = sd && !App.sd_dev_visibility;
 		boolean insideDeal = (App.visualMode == App.Vm_InsideADeal);
 
 		{

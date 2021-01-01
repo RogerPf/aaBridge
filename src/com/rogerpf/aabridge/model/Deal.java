@@ -52,6 +52,7 @@ public class Deal {
 	public String displayBoardId = "";
 	public String signfBoardId = "";
 	public boolean signfBoardId_is_quality = false;
+	public boolean signfBoardId_is_hash_sig = false;
 	public Dir dealer = Dir.Invalid; /* compass.v nesw */
 	public boolean vulnerability[] = { false, false }; // ns, ew
 	public Dir contractCompass = Dir.Invalid;
@@ -1548,8 +1549,8 @@ public class Deal {
 				}
 			}
 		}
-		if (report.length() != 0 && added != 13) {
-			System.out.println(bbinf + "  undealt cards added>>>" + report);
+		if ((report.length() != 0 && added != 13) && !(App.debug_suppress_single_undelt && added == 1)) {
+			System.out.println(bbinf + "  undelt cards added>>>" + report);
 		}
 
 //		if (packPristine.size() == 0 && dealerSet == false) {
@@ -1708,6 +1709,7 @@ public class Deal {
 		d.displayBoardId = displayBoardId;
 		d.signfBoardId = signfBoardId;
 		d.signfBoardId_is_quality = signfBoardId_is_quality;
+		d.signfBoardId_is_hash_sig = signfBoardId_is_hash_sig;
 		d.dealer = dealer; /* compass.v nesw */
 		d.vulnerability[Dir.NS] = vulnerability[Dir.NS];
 		d.vulnerability[Dir.EW] = vulnerability[Dir.EW];
@@ -1768,6 +1770,7 @@ public class Deal {
 
 			d_hand.playerName = o_hand.playerName;
 			d_hand.bubbleText = o_hand.bubbleText;
+			d_hand.vh_tutorial_vis = o_hand.vh_tutorial_vis;
 
 			// compass.v, is preset
 
@@ -3536,6 +3539,7 @@ public class Deal {
 		displayBoardId = "";
 		signfBoardId = "";
 		signfBoardId_is_quality = false;
+		signfBoardId_is_hash_sig = false;
 		prevTrickWinner.clear();
 		contract = new Bid(Call.NullBid);
 		contractDblRe = new Bid(Call.NullBid);
@@ -5157,6 +5161,30 @@ public class Deal {
 			String s = as.get(k).trim().toLowerCase() + "cccc";
 			s = s.substring(0, 4);
 			hand.setHandShowPlayedVis(s);
+		}
+	}
+
+	public void setHandsShowTutorialVis(ArrayList<String> as) {
+
+		if (as == null)
+			as = new ArrayList<String>(4);
+
+		// @ formatter:off
+		if (as.size() == 0)
+			as.add("");
+		if (as.size() == 1)
+			as.add("");
+		if (as.size() == 2)
+			as.add("");
+		if (as.size() == 3)
+			as.add("");
+		// @ formatter:on
+
+		for (int i : Zzz.zto3) {
+			Hand hand = hands[i];
+			int k = (i + 2) % 4; // North is zero in the hands and south is zero in the strings
+			String s = as.get(k).trim().toLowerCase() + "-";
+			hand.setHandShowTutorialVis(s.charAt(0));
 		}
 	}
 

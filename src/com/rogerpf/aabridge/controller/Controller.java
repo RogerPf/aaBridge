@@ -48,7 +48,7 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 	DumbAutoDirectives dumbAutoDir = new DumbAutoDirectives();
 
 	/**
-	 * This ia a logical 'constructor' except that is does not happen until all
+	 * This is a logical 'constructor' except that is does not happen until all
 	 * the initial views are constructed and ready to be "controlled"
 	 */
 	public Timer postContructionInitTimer = new Timer(100, new ActionListener() {
@@ -90,8 +90,10 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 //				dealName = "Make Deal";
 //				dealName = "Internal Link";
 //				dealName = "mentoring 2013";
-//				dealName = "Down_13";
-//				dealName = "single test";
+//				dealName = "L5-A01_WIP";
+//				dealName = "K-test";
+//				dealName = "Down 13";
+//				dealName = "big_bidding";
 //				dealName = "Double        1 - 18";
 // 				dealName = "mentoring1705a"; // =============== <<<<<<<<<<<<<<<<<<<<
 
@@ -111,7 +113,7 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 //						App.pbnAutoEnter = true;
 //						App.reinstateAnalyser = true;
 
-//						App.mg.jump_to_pg_number_display(1 + 104);
+//						App.mg.jump_to_pg_number_display(1 + 7);
 
 //						CmdHandler.tutorialIntoDealStd();
 //						CmdHandler.tutorialIntoDealClever();
@@ -294,7 +296,17 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 			case KeyEvent.VK_RIGHT: Right_keyPressed(); return true;
 			case KeyEvent.VK_UP: Up_keyPressed(); return true;
 			case KeyEvent.VK_DOWN: Down_keyPressed(); return true;
-		}
+			case KeyEvent.VK_F: F_keyPressed(); return true; // click 1st btn
+			case KeyEvent.VK_E: E_keyPressed(); return true; // click Enter the deal
+			case KeyEvent.VK_B: B_keyPressed(); return true; // click Back to movie
+			case KeyEvent.VK_I: I_keyPressed(); return true; // toggle kIbs
+			case KeyEvent.VK_O: O_keyPressed(); return true; // toggle DDS sOlver
+			case KeyEvent.VK_N: N_keyPressed(); return true; // toggle aNalyse
+			case KeyEvent.VK_L: L_keyPressed(); return true; // click shuffLe op 
+			case KeyEvent.VK_P: P_keyPressed(); return true; // click Play
+			case KeyEvent.VK_U: U_keyPressed(); return true; // click Undo 
+			case KeyEvent.VK_R: R_keyPressed(); return true; // click UB (undo Robot)
+			}
 		// @formatter:on
 
 		if (App.deal.isPlaying())
@@ -834,15 +846,64 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 	}
 
 	public static void Up_keyPressed() {
-//		if (App.isVmode_Tutorial()) {
 		loadBookChapter_prev(false);
-//		}
 	}
 
 	public static void Down_keyPressed() {
-//		if (App.isVmode_Tutorial()) {
 		loadBookChapter_next();
-//		}
+	}
+
+	public static void F_keyPressed() {
+		if (App.ccb.is1stBtnVisible() || App.ccb.isEnterTheDealBtnVisible()) {
+			CmdHandler.tutorialIntoDealB1st();
+		}
+	}
+
+	public static void E_keyPressed() {
+		if (App.ccb.is1stBtnVisible() || App.ccb.isEnterTheDealBtnVisible()) {
+			CmdHandler.tutorialIntoDealClever();
+		}
+	}
+
+	public static void B_keyPressed() {
+		if (App.ccb.isBackToMovieBtnVisible()) {
+			CmdHandler.dealmodeBackToMovie();
+		}
+	}
+
+	public static void I_keyPressed() {  // kIbs visibility toggle
+		if (App.bpr.isShowHideKibVisible())
+			CmdHandler.hiddenHandsToggle();
+	}
+
+	public static void O_keyPressed() { // dds sOlver  toggle
+		if (App.bpr.isDdsScoreOnOffVisible())
+			CmdHandler.ddsScoreOnOff();
+	}
+
+	public static void N_keyPressed() { // aNalyse toggle
+		if (App.bpr.isAnalyserBtnVisible())
+			CmdHandler.ddsAnalyse();
+	}
+
+	public static void L_keyPressed() { // shuffLe op
+		if (App.bpl.isShuffOpVisible())
+			CmdHandler.editHandsShuffOp();
+	}
+
+	public static void P_keyPressed() { // Play button	
+		if (App.bpl.isNormal_Play_Visible())
+			CmdHandler.leftWingNormal();
+	}
+
+	public static void U_keyPressed() { // Undo
+		if (App.gbp.isMainUndoStandardVisible())
+			CmdHandler.mainUndoStandard();
+	}
+
+	public static void R_keyPressed() { // click UB (undo Robot)
+		if (App.gbp.isMainUndoBotVisible())
+			CmdHandler.mainUndoBot();
 	}
 
 	public static LinCacheAdmin linCacheAdmin = null;

@@ -171,6 +171,7 @@ public class q_ {
 	public final static int vi = q("vi"); // aaBridge only visibility of x'es when inside a deal
 	public final static int vj = q("vj"); // aaBridge only visibility of x'es when as played
 	public final static int vp = q("vp"); // aaBridge only visibility - played cards (feintly)
+	public final static int vh = q("vh"); // aaBridge only visibility of whole hands
 	public final static int rt = q("rt"); // aaBridge only Rotate
 	public final static int zm = q("zm"); // aaBridge only confidential mode
 	public final static int su = q("su"); // aaBridge only used to CLEAR the special use Show all checkbox

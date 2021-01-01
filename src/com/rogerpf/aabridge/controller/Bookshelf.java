@@ -29,7 +29,6 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
 import javax.swing.JMenu;
-import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
 import com.rogerpf.aabridge.controller.Book.LinChapter;
@@ -58,7 +57,7 @@ public class Bookshelf extends ArrayList<Book> {
 
 	/**   
 	 */
-	public Bookshelf(String letter) {
+	public Bookshelf(String letter, String bookpath) {
 		// ==============================================================================================
 		String firstExtra = "";
 		if (letter.isEmpty()) {
@@ -75,7 +74,7 @@ public class Bookshelf extends ArrayList<Book> {
 		shelfname = "Books" + idStr;
 		shelfDisplayName = firstExtra + Aaf.menubar_books + idStr;
 
-		fillWithBooks();
+		fillWithBooks(bookpath);
 	}
 
 	private void setSortOrder(String name) {
@@ -140,20 +139,25 @@ public class Bookshelf extends ArrayList<Book> {
 
 	private final static String sep = File.separator;
 
-	public JMenu addToMenuBar(ActionListener aListener, JMenuBar menuBar) {
+	public JMenu createMenu(ActionListener aListener) {
 		// ==============================================================================================
 
 		if (size() == 0)
 			return null;
 
-		String desc = shelfDisplayName;
+		String extra = "";
 
-		JMenu menu = new JMenu(desc);
+		if (App.Books_E_renamed_to.isEmpty() == false) {
+			shelfDisplayName = App.Books_E_renamed_to;
+			App.Books_E_renamed_to = "";
+			extra = "  ";
+		}
+
+		JMenu menu = new JMenu(extra + shelfDisplayName);
+
 		if (first) {
 			menu.setMnemonic(KeyEvent.VK_B);
 		}
-
-		menuBar.add(menu);
 
 		if (first)
 			menu.setForeground(Cc.RedStrong);
@@ -167,7 +171,23 @@ public class Bookshelf extends ArrayList<Book> {
 				menu.addSeparator();
 			}
 			// System.out.println("Path: " + basePath + ",        " + book.displayTitle);
-			JMenuItem menuItem = new JMenuItem(book.displayTitle);
+
+			String disp = book.displayTitle;
+
+			JMenuItem menuItem = new JMenuItem();
+
+			if (shelfname.equals("Books-B")) {
+				menu.setForeground(Cc.BlueMenubar);
+				int pos1 = disp.indexOf('-');
+				if (pos1 > 2 && disp.indexOf('-', pos1 + 1) < 0) { // i.e. there isn't a 2nd one
+					String front = disp.substring(0, pos1).trim();
+					String back = disp.substring(pos1 + 1).trim();
+					front = Aaf.spacedOut(menuItem, front, 90);
+					disp = front + " -     " + back;
+				}
+			}
+
+			menuItem.setText(disp);
 			menuItem.setActionCommand(book.getMenuKey(basePath));
 			menuItem.addActionListener(aListener);
 			menu.add(menuItem);
@@ -248,6 +268,10 @@ public class Bookshelf extends ArrayList<Book> {
 
 		for (int i = size() - 1; i >= 0; i--) {
 			Book book = get(i);
+//			if (book.bookJarName.contains("Books-E")) {
+//				int x =0;
+//				x++;
+//			}
 			LinChapter chapter = book.getChapterByDisplayNamePart(chapterPartName);
 			if (chapter != null) {
 				return book;
@@ -286,27 +310,38 @@ public class Bookshelf extends ArrayList<Book> {
 
 	static String all_books_in_this_shelf = "all_books_in_this_shelf";
 
-	public void fillWithBooks() {
+	public void fillWithBooks(String path) {
 		// ==============================================================================================
+		String basePath = path;
+
+		boolean test = false;
 
 		success = false;
 
 		/**
 		 * Where is our own 'java' code  i.e. 'us'  is located?
 		 */
-		URL locationMethodUrl = AaBridge.class.getProtectionDomain().getCodeSource().getLocation();
-		File locationMethodFile;
+		if (basePath.isEmpty()) {
+			URL locationMethodUrl = AaBridge.class.getProtectionDomain().getCodeSource().getLocation();
+			File locationMethodFile;
 
-		try {
-			locationMethodFile = new File(locationMethodUrl.toURI());
-		} catch (Exception e1) {
-			System.out.println("Bookshelf:Inspect - locationMethodUrl FAILED  help! - " + e1.getMessage());
-			return;
+			try {
+				locationMethodFile = new File(locationMethodUrl.toURI());
+			} catch (Exception e1) {
+				System.out.println("Bookshelf:Inspect - locationMethodUrl FAILED  help! - " + e1.getMessage());
+				return;
+			}
+
+			basePath = locationMethodFile.getPath();
 		}
+//		else {
+//			test = true;
+//			@SuppressWarnings("unused")
+//			int x = 0;
+//		}
 
-		basePath = locationMethodFile.getPath();
-
-		if ((basePath.toLowerCase().endsWith(".jar") || basePath.toLowerCase().endsWith(".zip")) == false) {
+		String low_bp = basePath.toLowerCase();
+		if ((low_bp.endsWith(".jar") || low_bp.endsWith(".zip") || low_bp.endsWith(".linzip")) == false) {
 
 			/* Bodge ALERT ***************************** start */
 			/**
@@ -340,17 +375,23 @@ public class Bookshelf extends ArrayList<Book> {
 			basePath = App.thisAppBaseJarIncPath;
 		}
 
-		if ((basePath.toLowerCase().endsWith(".jar") || basePath.toLowerCase().endsWith(".zip"))) {
+		String low_bp2 = basePath.toLowerCase();
+		if ((low_bp2.endsWith(".jar") || low_bp2.endsWith(".zip") || low_bp2.endsWith(".linzip"))) {
 			/** 
-			 * A jar file name is us or fake us above for testing - zip must be a dropped file
-			 */
+			* A jar file name is us or fake us above for testing - zip must be a dropped file
+			*/
 			File jarFile = new File(basePath);
 			if (!jarFile.exists()) {
 				System.out.println("Bookshelf:Inspect - Given a jar file name that does not exist " + basePath);
 				return;
 			}
 
-			Pattern pattern = Pattern.compile(shelfname + "/[0-9][0-9][ |_].*[.lin|.reldate|.order|.bar_title]");
+			String extd = "";
+			if (shelfname.contentEquals("Books-E")) {
+				extd = ".*";
+			}
+
+			Pattern pattern = Pattern.compile(shelfname + extd + "/[0-9][0-9][ |_].*[.lin|.reldate|.order|.bar_title]");
 
 			// shelfname will mean that incorrectly capitalised Books-<letter> shelves will be skipped
 
@@ -408,7 +449,12 @@ public class Bookshelf extends ArrayList<Book> {
 						splus.divider = true;
 					}
 
-					Book book = new Book(basePath, splus.s, shelfname, shelfDisplayName, splus.divider);
+					if (test) {
+						@SuppressWarnings("unused")
+						int x = 0;
+					}
+
+					Book book = new Book(this, basePath, splus.s, splus.shelfnamePlus, shelfDisplayName, splus.divider);
 					if (book.size() > 0) {
 						add(book);
 						divider_carryover = false;
@@ -495,7 +541,7 @@ public class Bookshelf extends ArrayList<Book> {
 						}
 						final boolean accept = pattern.matcher(name).matches();
 						if (accept) {
-							Book book = new Book(basePath, name, shelfname, shelfDisplayName, divider_next);
+							Book book = new Book(this, basePath, name, shelfname, shelfDisplayName, divider_next);
 							if (book.size() > 0) {
 								add(book);
 								divider_next = false;
@@ -570,10 +616,12 @@ public class Bookshelf extends ArrayList<Book> {
 
 	class Splus {
 		// ---------------------------------- CLASS -------------------------------------
+		public String shelfnamePlus;
 		public String s;
 		public boolean divider;
 
-		Splus(String s, boolean divider) {
+		Splus(String shelfnamePlus, String s, boolean divider) {
+			this.shelfnamePlus = shelfnamePlus;
 			this.s = s;
 			this.divider = divider;
 		}
@@ -591,25 +639,34 @@ public class Bookshelf extends ArrayList<Book> {
 		public void addFolderOnly(String name, boolean divider) {
 			// ==============================================================================================
 
-			String shelfnameSlash = shelfname + '/';
-			int shelfnameSlashLen = shelfnameSlash.length();
+			int p = name.indexOf('/');
 
-			if (name.startsWith(shelfnameSlash) == false) {
-				@SuppressWarnings("unused")
-				int z = 0;
+			String shelfnamePlus = name.substring(0, p); // shelfname + '/';
+
+			if ((shelfnamePlus.length() > 7) && shelfnamePlus.startsWith("Books-E")) {
+				String s = App.Books_E_renamed_to = shelfnamePlus.substring(7, p).replace('_', ' ');
+				if (s.length() > 1 && ('0' <= s.charAt(0)) && (s.charAt(0) <= '9')) {
+					App.Books_E_renamed_to = s.substring(1).trim();
+				}
 			}
 
-			int secondSlashInd = name.indexOf('/', shelfnameSlashLen);
-			if (secondSlashInd < shelfnameSlashLen + 1)
+			if (name.startsWith(shelfname) == false) {
+				@SuppressWarnings("unused")
+				int z = 0;
+				assert (false);
+			}
+
+			int secondSlashInd = name.indexOf('/', p + 1);
+			if (secondSlashInd < p + 1)
 				return;
 
-			String folder = name.substring(shelfnameSlashLen, secondSlashInd);
+			String folder = name.substring(p + 1, secondSlashInd);
 
 			for (Splus splus : this) {
 				if (splus.s.contentEquals(folder))
 					return;
 			}
-			add(new Splus(folder, divider));
+			add(new Splus(shelfnamePlus, folder, divider));
 		}
 
 	}

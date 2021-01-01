@@ -1,0 +1,264 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% File       : G-Bear_ Play of the Hand Challenges_2011-05-11.lin
+%% Description: Charles's teaching session on Declarer play, BIL, 2011-05-11
+%% Programmer : Vanyvon
+%% Version    : 
+%%            : 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+mn| G-Bear:Play of the Hand Challenges,2011-05-11|tu||bt||nt||
+
+%% --- Definitions ---
+cr|116|cg|116|cb|1255|        %% blue
+cr|2255|cg|2255|cb|264|       %% yellow
+cr|316|cg|3128|cb|316|        %% dark green
+cr|4255|cb|40|cg|40|          %% red
+fh|120|ff|1Arial|fb|14|fm|1|  %% smaller light
+fh|220|ff|2Arial|fb|26|fm|2|  %% smaller bold
+fh|330|ff|3Arial|fb|34|fm|3|  %% larger light
+fh|430|ff|4Arial|fb|46|fm|4|  %% larger bold
+%% --- End Definitions ---
+
+%% --- Main ---
+qx|Main|
+cs|1|cp|2|fp|4|
+at|
+^-{ Charles Lawson (G-Bear): Play of the Hand Challenges, 
+   teaching at BIL, May 11, 2011. }
+^-|
+fp|2|cp||ht|f|at|   @2The LIN presentation of Charles' lesson on Play of the Hand Challenges in the Beginner Intermediate Lounge, 2011-05-11.|
+ht|i|cp||cs|2|
+at|^h   @2{
+^*GB01,    Board 01- elimination and endplay^*N
+
+^*GB02,    Board 02- suit play + unblock + managing entry^*N
+
+^*GB03,    Board 03- combining chances^*N
+
+^*GB04,    Board 04- elimination and endplay^*N
+
+^*GB05,    Board 05- managing entry^*N
+
+^*GB06,    Board 06- combining chances^*N
+
+^*GB07,    Board 07- elimination and endplay^*N
+
+^*GB08,    Board 08- safety play - unblock^*N
+
+^*GB09,    Board 09- combining chances^*N
+
+} @0|
+ht|z|at|   @2^*GHelp,Click here for help^*N
+
+(c) Charles & Bridge Base Online - Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|fp|1|at|^y Vanyvon|pg||
+%% --- End Main ---
+
+
+
+qx|B01,BOARD 1|
+rh||ah|Board 1|
+st||sk|s|sc||
+md|1S763HK5DAKCAQT872,SJ54HJ972DQ963C94,SAQ9HAT6DT85CKJ63,SKT82HQ843DJ742C5|sv|0|pn|hope2008,panim,wyoming33,Shirley_RG|
+pw|hope2008,panim,wyoming33,Shirley_RG|
+mb|---1Cp3n|an|13-15hcps, no 4-card major|mb|p6cppp|nt|G-Bear: Frederico, you started out well, you just needed to finish what you started.  Before taking the spade finesse you need to eliminate the diamonds also. Lead a trump to the @CK and ruff dummy's last diamond.| 
+pc|C4|pg||
+pc|C3|pc|C5|pc|C7|pg||
+pc|C2|pc|C9|pc|CJ|pc|S8|pg||
+pc|H6|pc|H3|pc|HK|pc|H2|pg||
+pc|DA|pc|D3|pc|D5|pc|D2|pg||
+pc|DK|pc|D6|pc|D8|pc|D4|pg||
+pc|H5|pc|H7|pc|HA|pc|H4|pg||
+pc|HT|pc|HQ|pc|C8|pc|H9|pg||
+pc|cthjckh8|pg||
+pc|dtd7cad9|pg||at|
+NOW, you can lead a spade towards dummy. If W plays low, insert the @s9 and East is endplayed.|pg||
+pc|S3|pc|S4|pc|S9|pc|ST|sb|egrrrrrrr well played! I have now no good play!|pg||at|
+A spade return is a finesse, any other return is a ruff/sluff. This is an example of a strip/elimination and endplay.|pg||
+sb|e|mc|12|sk||sc|y|pg||
+
+qx|B02,BOARD 2|
+rh||ah|Board 2|
+st||sk|w|sc||
+md|2SK96HK643D9762C76,SJ42HAQT97DAQCAKQ,SQT8H2DJ8543CT983,SA753HJ85DKTCJ542|sv|0|pn|YaneC,shatha,wyoming33,alimuli|
+pw|YaneC,shatha,wyoming33,alimuli|
+mb|6Hppp|nt|G-Bear: 6@h is a slight overbid, but the hand is makeable with right play. Declarer starts with three possible losers, but the heart finesse MUST be there to make it. However, declarer MUST guard against a 4-1 heart split and be able to finesse three times PLUS get back to dummy after ^*Uunblocking^*  the clubs to discard a losing spade. So since dummy entries are limited, declarer must be very careful to either play the @H8 first or play the @HJ and play the @H9 or @h10 from her hand so the lead will remain in dummy for two more finesses. |pc|CT|pg||
+pc|C2|pc|C7|pc|CA|pg||
+pc|DA|pc|D3|pc|DT|pc|D7|pg||
+pc|DQ|pc|D4|pc|DK|pc|D2|pg||
+pc|H8|pc|H3|pc|H7|pc|H2|pg||
+pc|HJ|pc|H4|pc|H9|pc|D5|pg||
+pc|H5|pc|H6|pc|HT|pc|C3|pg||
+pc|HA|pc|D8|pc|S3|pc|HK|pg||
+pc|Ckc9c4c6|pg||
+pc|Cqc8c5D6|pg||
+pc|S2s8sAs6|pg||
+mc|12|sk||sc|y|pg||
+
+qx|B03,BOARD 3|
+rh||ah|Board 3|
+st||sk|n|sc||
+md|3S84HAK642DJ93C984,S9652HQT83D7C7532,SAQJTDAKQT652CAK,SK73HJ975D84CQJT6|sv|0|pn|YaneC,shatha,gptravel,alimuli|
+pw|YaneC,shatha,gptravel,alimuli|
+mb|-7Dppp---|nt|Make your plan: 2 methods could be used. Relying on the @s finesse or set-up the @h suit for a @s discard. A good declarer would combine the chances by 1st trying to set-up the dummy long suit and if it fails, only then try the @s finesse. 
+Order of play is important here. You must realize that the @d2 could be used as a mean to create a 3rd entry to dummy. Finally, It is better to trump the hearts first just in case they don't split.|
+pc|CQ|pg||
+pc|C4|pc|C3|pc|CK|pg||
+pc|D6|pc|D4|pc|D9|pc|D7|pg||
+pc|H2|pc|H3|pc|DQ|pc|H5|pg||
+pc|DT|pc|D8|pc|DJ|pc|C2|pg||
+pc|H4|pc|H8|pc|DA|pc|H7|pg||
+pc|D2|pc|S3|pc|D3|pc|C5|pg||
+pc|HA|pc|HT|pc|ST|pc|H9|pg||
+pc|HK|pc|HQ|pc|SJ|pc|HJ|pg||
+pc|H6|pc|S2|pc|SQ|pc|C6|pg||
+mc|13|sk||sc|y|pg||
+
+qx|B04,BOARD 4|
+rh||ah|Board 4|
+st||sk|e|sc||
+md|4SKJ932H2DAT73CKJ9,SA85HK973DKQJC743,ST7H865D984CT8652,SQ64HAQJT4D652CAQ|sv|0|pn|JohnnyHiLo,gptravel,dee_dee_20,G-Bear|
+pw|JohnnyHiLo,gptravel,dee_dee_20,G-Bear|
+mb|--1H1s2sp4hppp--|nt|G-Bear: This is another strip and elimination play. Since South bid spades, you have to know that S has the @SK. Since both declarer and dummy have an even number of spades, just give South his two spade tricks. South can cash is @SJ, but is then endplayed. He has to either lead a club or give a ruff/sluff.|pc|H2|pg||pc|H3|pc|H5|pc|HA|pg||
+pc|HQ|pc|S2|pc|H7|pc|H6|pg||
+pc|HJ|pc|S3|pc|H9|pc|H8|pg||at|
+So, after pulling the trumps, start by eliminating the @ds.|pg||
+pc|D2|pc|D7|pc|DJ|pc|D4|pg||
+pc|DK|pc|D9|pc|D5|pc|DA|pg||
+pc|D3|pc|DQ|pc|D8|pc|D6|pg||at|
+Now, cash your @s trick and exit with a spade endplaying South.|pg|| 
+pc|SA|pc|ST|pc|S4|pc|S9|pg||
+pc|S5|pc|S7|pc|SQ|pc|SK|pg||
+pc|SJ|pc|S8|pc|C2|pc|S6|pg||
+pc|CJ|pc|C3|pc|C5|pc|CQ|pg||
+mc|10|sk||sc|y|pg||
+
+qx|B05,BOARD 5|
+rh||ah|Board 5|
+st||sk|s|sc||
+md|1SAJ5HAKQJT8DAK3CA,S2H963DJ854CQ8753,SQT73H752DT76CKT2,SK9864H4DQ92CJ964|sv|0|pn|G-Bear,gptravel,dee_dee_20,MICK357|
+pw|G-Bear,gptravel,dee_dee_20,MICK357|
+mb|---2cp2dp2hp3h|an|positive|mb|p4np5dp6hppp-|nt|G-Bear: The KEY is not wasting dummy's high spades and winning the first trick with the A. The ONLY possible entry to dummy is in the spade suit.  Your plan is to pull trumps, unblock the club suit, and access the dummy with your spade entry allowing you to discard a loser on the @cK.|pc|S2|pg||
+pc|S3|pc|S8|pc|SA|at|
+East did well to not play  the @SK early unless declarer plays the Q. However East will not be able to prevent the declarer an entry to dummy.|pg||
+pc|HA|pc|H3|pc|H2|pc|H4|pg||
+pc|HK|pc|H6|pc|H5|pc|C6|pg||
+pc|HQ|pc|H9|pc|H7|pc|C4|pg||
+pc|CA|pc|C3|pc|C2|pc|C9|pg||
+pc|SJ|pc|C5|pc|SQ|pc|S4|pg||
+pc|CK|pc|CJ|pc|D3|pc|C7|pg||
+mc|12|sk||sc|y|pg||
+
+qx|B06,BOARD 6|
+rh||ah|Board 6|
+st||sk|w|sc||
+md|2S43HQT75DJ98543C9,SAKJT98H64DACAKJ2,S65H932DKQ76CQT87,SQ72HAKJ8DT2C6543|sv|0|pn|JohnnyHiLo,G-Bear,dee_dee_20,MICK357|
+pw|JohnnyHiLo,G-Bear,dee_dee_20,MICK357|
+mb|6Sppp|nt|G-Bear: This was a very tricky one, but you have to combine chances.|
+pc|DK|pg||
+pc|D2|pc|D5|pc|DA|pg||
+pc|SA|pc|S6|pc|S2|pc|S4|pg||
+pc|S8|pc|S5|pc|SQ|pc|S3|pg||
+pc|DT|pc|D3|pc|S9|pc|D6|pg||
+pc|CA|pc|C7|pc|C3|pc|C9|pg||
+pc|H4|pc|H2|pc|HA|pc|H7|pg||at|
+G-Bear: At this point you can try the club finesse, If S started with 4 clubs then the most you lose is one club trick. However, South's discard shows the clubs are not behaving.|pg||
+pc|C4|pc|D4|pc|CK|pc|C8|pg||
+pc|H6|pc|H9|at|
+G-Bear: Now you just have to cover whatever card North plays and South is endplayed. That @H8 in dummy was HUGE. The power of intermediate cards like nines and eights cannot be overlooked. If south returns a diamond then you get a ruff/sluff. |pg||
+pc|HJ|pc|HQ|pg||
+pc|H5|pc|C2|pc|H3|pc|H8|pg||
+pc|HK|pc|HT|pc|CJ|pc|D7|pg||
+mc|12|sk||sc|y|pg||
+
+qx|B07,BOARD 7|
+rh||ah|Board 7|
+st||sk|n|sc||
+md|3SAKHQJ94DA76CT852,SQ853H6DJT532CQ94,S64HAKT83DKQCA763,SJT972H752D984CKJ|sv|0|pn|hope2008,vanyvon,tan1944,anniebmisc|
+pw|hope2008,vanyvon,tan1944,anniebmisc|
+mb|-6Hppp---|nt|G-Bear: This contract may seem hopeless, BUT @HNEVER GIVE UP@H.|pc|SJ|pg||at|
+G-Bear: Your plan is to clear the trumps and eliminate the side suits (@S and @D). Then you are wishing to endplay one opponent if he holds @CKx.|pg||
+pc|SK|pc|S8|pc|S4|pg||
+pc|H4|pc|H6|pc|HK|pc|H2|pg||
+pc|HA|pc|H5|pc|H9|pc|D2|pg||
+pc|H3|pc|H7|pc|HJ|pc|S3|pg||
+pc|D6|pc|D3|pc|DQ|pc|D4|pg||
+pc|DK|pc|D8|pc|D7|pc|D5|pg||
+pc|S6|pc|S2|pc|SA|pc|S5|pg||
+pc|DA|pc|DT|pc|C3|pc|D9|pg||at|
+G-Bear: It seems like North has two unavoidable club losers, but the 3-2 @c split make it possible.  Declarer has to play the club A first then a low club. East is endplayed after winning the K. And it does no good for East to unblock by playing the K under the Ace. Because either he leads the Jack and West lets it hold, or overtakes it with the Q. 
+G-Bear: Now an alert East holding just Kx should unblock by playing the K under the A.|
+pc|C2|pc|C4|pc|CA|pc|CJ|pg||
+pc|c6|pc|cK|pc|c5|pc|c9|pg||
+pc|S7|pc|hQ|pc|sQ|pc|c7|pg||
+mc|12|sk||sc|y|pg||
+
+qx|B08,BOARD 8|
+rh||ah|Board 8|
+st||sk|e|sc||
+md|4S9873HAT43DJT93C5,SKQJT4H72DAK5CT96,S6HQJ986DQ84CJ732,SA52HK5D762CAKQ84|sv|0|pn|hope2008,vanyvon,tutootsie,G-Bear|
+pw|hope2008,vanyvon,tutootsie,G-Bear|
+mb|--6Sppp--|nt|G-Bear: Two key plays on this hand, you have to unblock the clubs AND prepare for a possible 4-1 split. If South has 4 clubs to J, nothing you can do, but if North has 4 clubs to J then you have to plan. |
+pc|DJ|pg||
+pc|DA|pc|D4|pc|D2|pg||
+pc|S4|pc|S6|pc|SA|pc|S3|pg||
+pc|S5|pc|S7|pc|ST|pc|H6|pg||
+pc|SK|pc|H8|pc|S2|pc|S8|pg||
+pc|SQ|pc|H9|pc|D6|pc|S9|pg||
+pc|CT|pc|C2|pc|CA|pc|C5|pg||at|
+Key play, unblock the @c9.|
+pc|CK|pc|D3|pc|C9|pc|C3|pg||
+pc|D7|pc|D9|pc|DK|pc|D8|pg||at|
+If you forgot to unblock...then you will fail because you will not be able to finesse the @cJ.|
+pc|C6|pc|C7|pc|C8|pc|HT|pg||
+pc|CQ|pc|H3|pc|H2|pc|CJ|pg||
+pc|C4|pc|DT|pc|H7|pc|hQ|pg||
+pc|h5|pc|hA|pc|sJ|pc|hJ|pg||
+mc|12|sk||sc|y|pg||
+
+qx|B09,BOARD 9|
+rh||ah|Board 9|
+st||sk|s|sc||
+md|1SAJ8HKJT953DK6CK3,SQ92H42DAJ8CJT874,SK753HAQ8DT54CAQ6,ST64H76DQ9732C952|sv|0|pn|hope2008,vanyvon,tutootsie,G-Bear|
+pw|hope2008,vanyvon,tutootsie,G-Bear|
+mb|---6Hppp-|nt|This is an other case of combining your chances. You have the possibility of setting-up a spade for a discard if they divide 3-3. Failing this, you will have to rely on the @D finesse. But how do you go about the spades? The key play is to discard a spade on the extra @c winner in dummy allowing you to test the spades with no risks at all. Finally, it is also essential to keep a low heart in hand to get a necessary entry to dummy.|pc|CJ|pg||
+pc|C6|pc|C2|pc|CK|pg||
+pc|H3|pc|H2|pc|HQ|pc|H6|pg||
+pc|HA|pc|H7|pc|H9|pc|H4|pg||
+pc|CA|pc|C5|pc|C3|pc|C4|pg||
+pc|CQ|pc|C9|pc|S8|pc|C7|pg||
+pc|S3|pc|S4|pc|SA|pc|S2|pg||
+pc|SJ|pc|SQ|pc|SK|pc|S6|pg||
+pc|S5|pc|ST|pc|HK|pc|S9|pg||
+pc|H5|pc|C8|pc|H8|pc|D2|pg||
+pc|s7|pc|d3|pc|d6|pc|d8|pg||
+mc|12|sk||sc|y|pg||
+
+
+
+%% --- Final notes ---
+qx|End|
+bt||pf||nt||cs|1|cp|2|fp|4|
+at|
+^-{ Final notes }
+^-|
+ht|h|cp||fp|2|at|   @2Thanks, all.  Hope you learned something today. See you next week I hope. J|
+ht|z|at|
+
+(c)Charles & Bridge Base Online - Beginner Intermediate Lounge (BIL) ^*Hwww.bilbridge.com^*N|fp|1|at|^y Vanyvon|pg||
+%% --- End Final notes ---
+
+%% --- Help ---
+qx|Help, Help notes|
+bt||pf||nt||cs|2|fp|3|ht|b|at|^-{ Help }
+^-|
+hb|z|wb|b|bm|BIL.bmp|
+fp|2|ht|e|at|^b@2
+Short instruction on how to navigate through the movie:
+
+ ^$6  Previous page, go back one page.
+ ^$40  Next page, go forward one page.
+ ^$7  Previous chapter (the first page of the previous chapter).
+ ^$41  Next chapter (the first page of the next chapter).
+ ^$119  The first page of this movie. Once a trick is complete, click on the first card of the next trick. |
+%% --- End Help ---
+
+%% EOF0

@@ -36,6 +36,14 @@ public class BottomLeftPanel extends ClickPanel {
 	public ClaimPanel c0_2_0__clam = new ClaimPanel();
 	public NextBoardButtonPanel c0_2_1__nbbp = new NextBoardButtonPanel();
 
+	public boolean isMainUndoBotVisible() {
+		return isVisible() && c0_2_1__nbbp.isMainUndoBotVisible();
+	}
+
+	public boolean isMainUndoStandardVisible() {
+		return isVisible() && c0_2_1__nbbp.isMainUndoStandardVisible();
+	}
+
 	/**
 	 */
 	BottomLeftPanel() { /* Constructor */
@@ -240,6 +248,14 @@ class NextBoardButtonPanel extends ClickPanel {
 	public RpfResizeButton mainNewBoard;
 	public RpfResizeButton mainUndoBot;
 	public RpfResizeButton mainUndoStandard;
+
+	public boolean isMainUndoBotVisible() {
+		return this.isVisible() && mainUndoBot.isVisible();
+	}
+
+	public boolean isMainUndoStandardVisible() {
+		return this.isVisible() && mainUndoStandard.isVisible();
+	}
 
 	/**
 	 */

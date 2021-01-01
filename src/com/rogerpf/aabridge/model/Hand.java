@@ -40,6 +40,7 @@ public class Hand implements Comparable<Hand> {
 	public String bubbleText = "";
 
 	public boolean ddsValuesAssigned;
+	public char vh_tutorial_vis = '-';
 
 	/** 
 	 */
@@ -734,7 +735,7 @@ public class Hand implements Comparable<Hand> {
 	public Frag[] fragsfOrgsVisFeintMerge() {
 		Frag[] frs = new Frag[4];
 
-		boolean suppressHidding = App.devMode && App.alwaysShowHidden;
+		boolean suppressHidding = /* App.devMode && */ App.alwaysShowHidden;
 
 		for (Suit su : Suit.cdhs) {
 			char c = fOrgs[su.v].showPlayedVis;
@@ -1144,7 +1145,13 @@ public class Hand implements Comparable<Hand> {
 			fOrgs[suit.v].setShowPlayedVis(c);
 			frags[suit.v].setShowPlayedVis(c);
 		}
+	}
 
+	public void setHandShowTutorialVis(char c) {
+		// ==============================================================================================
+		if (c != 'v' && c != 'h')
+			c = '-';
+		vh_tutorial_vis = c;
 	}
 
 	public String pdbHand() {
@@ -1164,22 +1171,16 @@ public class Hand implements Comparable<Hand> {
 	public Card getUnplayedCardMatchingRaw(String rawCards, BarBlock bb, boolean selectableNeeded) {
 		// ==============================================================================================
 		Card card = null;
-		String raw = rawCards.trim().toLowerCase();
+		String raw = rawCards.trim().toLowerCase() + " ";
 		int len = raw.length();
-		if (len == 0) {
-			return null;
-		}
 
-		if (len % 2 == 1) {
-			raw += "l";  // L for lower
-			len++;
-		}
-
-		for (int i = 0; i < len; i += 2) {
+		for (int i = 0; i < len; i++) {
+			if (raw.charAt(i) == ' ')
+				continue;
 			Suit suit = Suit.charToSuit(raw.charAt(i));
 			if (suit == Suit.Invalid) {
-				System.out.println(
-						"  line:" + bb.lineNumber + infn + " SUIT Invalid  rawCards  >>> " + rawCards + " <<<  character at pos:" + (i + 1) + "\n    bb:" + bb);
+				System.out.println("  line:" + bb.lineNumber + infn + " SUIT Invalid  rawCards  >>> " + rawCards + " <<<   character at pos:" + (i + 1)
+						+ "\n    bb:" + bb);
 				return null;
 			}
 
@@ -1187,9 +1188,10 @@ public class Hand implements Comparable<Hand> {
 				continue;
 			}
 
-			char rank_c = raw.charAt(i + 1);
+			char rank_c = raw.charAt(i + 1);	// i.e. we look ahead one character		
 
-			if (rank_c == 'u' || rank_c == 'h') {
+			if (rank_c == 'u') {
+				i++;
 				card = getCardHighestIn_Frag(suit);
 				if (card == null)
 					continue;
@@ -1197,6 +1199,7 @@ public class Hand implements Comparable<Hand> {
 			}
 
 			else if (rank_c == 'm') {
+				i++;
 				card = getCardMediumIn_Frag(suit);
 				if (card == null)
 					continue;
@@ -1204,25 +1207,28 @@ public class Hand implements Comparable<Hand> {
 			}
 
 			else if (rank_c == 'l') {
+				i++;
 				card = getCardLowestIn_Frag(suit);
 				if (card == null)
 					continue;
 				return card;
 			}
 
-			else {
-				Rank rank = Rank.charToRank(rank_c);
-				if (rank == Rank.Invalid) {
-					System.out.println("  line:" + bb.lineNumber + infn + " RANK Invalid   rawCard  >>> " + rawCards + " <<<  character at pos:" + (i + 2)
-							+ "\n    bb:" + bb);
-					return null;
-				}
-				card = getCardIfMatching(suit, rank);
+			Rank rank = Rank.charToRank(rank_c);
+
+			if (rank == Rank.Invalid) {
+				// NO  i++;  ...  it is probably another suit
+				card = getCardLowestIn_Frag(suit);
 				if (card == null)
 					continue;
 				return card;
 			}
 
+			i++; // it was a valid rank so eat it
+			card = getCardIfMatching(suit, rank);
+			if (card == null)
+				continue;
+			return card;
 		}
 
 		return null;

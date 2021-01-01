@@ -21,10 +21,7 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Arrays;
-import java.util.Date;
 
 import com.rogerpf.aabridge.model.Call;
 import com.rogerpf.aabridge.model.Cc;
@@ -230,23 +227,6 @@ public class Aaa {
 			return "";
 		}
 		return data.substring(from + m_start.length(), to);
-	}
-
-	/**
-	 */
-	public static Boolean use_gSites_addr() {
-		// =============================================================
-		try {
-			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-			Date today = new Date();
-			String targ = "2025-11-01";
-			if (App.devMode) {
-				targ = "2019-11-01";
-			}
-			return today.after(sdf.parse(targ));
-		} catch (ParseException e) {
-			return true;
-		}
 	}
 
 	/**

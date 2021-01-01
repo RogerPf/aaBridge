@@ -82,6 +82,7 @@ import com.rogerpf.aabridge.igf.MassGi;
 import com.rogerpf.aabridge.igf.MassGi_utils;
 import com.rogerpf.aabridge.igf.TutNavigationBar;
 import com.rogerpf.aabridge.igf.TutorialPanel;
+import com.rogerpf.aabridge.model.Cc;
 import com.rogerpf.aabridge.model.Deal;
 import com.rogerpf.aabridge.model.Dir;
 import com.rogerpf.aabridge.model.Lin;
@@ -310,6 +311,7 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 					Date now_plus_15 = cal.getTime();
 					if (now.before(inDate) && now_plus_15.after(inDate)) {
 						App.study_deal_maker = true;
+						break;
 					}
 				} catch (ParseException e) {
 				}
@@ -465,7 +467,7 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		 * Using Java properties IO to read in values currently RPf dev use only
 		 */
 		Properties prop = new Properties();
-		String fileName = flag_folder + "__aaBridge__DEV_config.txt";
+		String fileName = flag_folder + App.DEV_config_filename;
 		InputStream is = null;
 		try {
 			is = new FileInputStream(fileName);
@@ -476,6 +478,12 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 				}
 				if (App.downloads_folder.contentEquals(App.default_downloads_folder)) {
 					App.downloads_folder = prop.getProperty("downloads_folder");
+				}
+				App.debug_linfile_partner_path = prop.getProperty("debug_linfile_partner_path");
+				App.debug_linfile_partner_ext = prop.getProperty("debug_linfile_partner_ext");
+				String res = prop.getProperty("debug_suppress_single_undelt");
+				if (res.toLowerCase().trim().contentEquals("true")) {
+					App.debug_suppress_single_undelt = true;
 				}
 			} catch (IOException ex) {
 			}
@@ -893,6 +901,64 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		}
 	}
 
+	public void addDroppedShelfToMenu(Bookshelf shelf, boolean forceDisplayTheMenu) {
+
+		if (App.books_E__menu != null)
+			App.menuBar.remove(App.books_E__menu);
+
+		App.books_E__menu = shelf.createMenu(this);
+
+		App.books_E__menu.setForeground(Cc.RedStrong);
+
+		reLayoutMenubarEnd();
+
+		if (forceDisplayTheMenu == true) {
+			show_E_Menu_timer.start();
+		}
+	}
+
+	public void reLayoutMenubarEnd() {
+
+		App.menuBar.remove(App.help_menu);
+		App.menuBar.remove(App.lang_menu);
+		if (App.books_E__menu != null)
+			App.menuBar.remove(App.books_E__menu);
+
+		App.menuBar.remove(App.books_B__menu);
+
+		if (App.books_Z__menu != null)
+			App.menuBar.remove(App.books_Z__menu);
+
+		// put them all back
+
+		if (App.showLanguageMenu && App.showBooksZMenu && App.books_Z__menu != null)
+			App.menuBar.add(App.books_Z__menu);
+
+		App.menuBar.add(App.books_B__menu);
+
+		if (App.books_E__menu != null)
+			App.menuBar.add(App.books_E__menu);
+
+		if (App.showLanguageMenu)
+			App.menuBar.add(App.lang_menu);
+
+		App.menuBar.add(App.help_menu);
+
+		App.menuBar.revalidate();
+		App.menuBar.repaint();
+	}
+
+	/** ******************************************************************************
+	 */
+	Timer show_E_Menu_timer = new Timer(200, new ActionListener() {
+		public void actionPerformed(ActionEvent evt) {
+			show_E_Menu_timer.stop();
+
+			App.books_E__menu.doClick();
+		}
+
+	});
+
 	/**   
 	 */
 	public void createAndAddAllMenus(int droppedBookshelfCount) {
@@ -903,8 +969,6 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		// Create the menu bar.
 		menuBar = new JMenuBar();
 		App.menuBar = menuBar;
-
-		setJMenuBar(menuBar);
 
 		// File - MENU
 		menuBar.add(AaaMenu.makeFileMenu(this, Aaf.gT("menubar.file")));
@@ -920,10 +984,20 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 
 		// Books to Books-Z - MENUS
 		for (Bookshelf shelf : App.bookshelfArray) {
-			if ((App.showBooksZMenu == false) && (shelf.shelfname.contentEquals("Books-Z")))
-				continue;
 
-			JMenu menu = shelf.addToMenuBar(this, menuBar);
+			JMenu menu = shelf.createMenu(this);
+			menuBar.add(menu);
+
+			if (shelf.shelfname.contentEquals("Books-Z")) {
+				App.books_Z__menu = menu;
+				if (App.showBooksZMenu == false || App.showLanguageMenu == false)
+					menuBar.remove(menu); // we did not really want to see it after all
+				continue;
+			}
+
+			if (shelf.shelfname.contentEquals("Books-B")) {
+				App.books_B__menu = menu;
+			}
 
 			if (shelf.shelfname.contentEquals("Books-S")) {
 				App.books_S__menu = menu;
@@ -932,13 +1006,20 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 			if (shelf.shelfname.contentEquals("Books-V")) {
 				App.books_V__menu = menu;
 			}
+
 		}
 
 		// Language - MENU
-		menuBar.add(AaaMenu.makeLangMenu(this, "      " + Aaf.gT("menubar.launguage"))); // add language choice to the Options menu
+		App.lang_menu = AaaMenu.makeLangMenu(this, "      " + Aaf.gT("menubar.launguage")); // Create language choice to the Options menu
+		if (App.showLanguageMenu) {
+			menuBar.add(App.lang_menu); // add language choice to the menubar
+		}
 
 		// Help - MENU
-		menuBar.add(AaaMenu.makeHelpMenu(this, "   " + Aaf.gT("menubar.help")));
+		menuBar.add(App.help_menu = AaaMenu.makeHelpMenu(this, this, "   " + Aaf.gT("menubar.help")));
+
+		setJMenuBar(menuBar);
+
 	}
 
 	/**
@@ -982,7 +1063,13 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		}
 		else if (item == AaaMenu.exampleMenuShowHide) {
 			App.showBooksZMenu = item.isSelected();
-			restart = true;
+			App.frame.reLayoutMenubarEnd();
+			//restart = true;
+		}
+		else if (item == AaaMenu.languageMenuShowHide) {
+			App.showLanguageMenu = item.isSelected();
+			App.frame.reLayoutMenubarEnd();
+			// restart = true;
 		}
 		else if (item == AaaMenu.theDotTest) {
 			App.showTheDotTest = item.isSelected();
@@ -1836,13 +1923,23 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 
 		// lastly look and see if we match an internal lin file
 		for (Bookshelf shelf : App.bookshelfArray) {
-			Book b = shelf.getBookByBasePathAndBookDisplayTitle(cmd);
-			if (b != null) {
-				boolean chapterLoaded = b.loadChapterByIndex(0);
+			Book book = shelf.getBookByBasePathAndBookDisplayTitle(cmd);
+			if (book != null) {
+				int chap_ind = 0;
+				if (cmd.contains("Books-E") && book.frontNumber != 0) {
+					int p = cmd.indexOf("Books-E");
+					if (p >= 0) {
+						char c = cmd.charAt(p + 7);
+						if ('0' <= c && c <= '9') {
+							chap_ind = c - '0';
+						}
+					}
+				}
+				boolean chapterLoaded = book.loadChapterByIndex(chap_ind);
 				if (chapterLoaded) {
-					App.book = b;
+					App.book = book;
 					App.aaBookPanel.matchToAppBook();
-					App.aaBookPanel.showChapterAsSelected(0);
+					App.aaBookPanel.showChapterAsSelected(chap_ind);
 				}
 				return;
 			}

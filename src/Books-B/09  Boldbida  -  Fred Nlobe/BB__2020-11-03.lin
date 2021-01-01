@@ -1,0 +1,387 @@
+
+%% font defined
+fh|220|ff|2Ariel|fb|24|fm|2|                    
+fh|330|ff|3Ariel|fb|34|fm|3|
+fh|440|ff|4Ariel|fb|44|fm|4|
+fh|630|ff|6Ariel|fb|65|fm|6|
+fh|550|ff|54Ariel|fb|54|fm|5|
+fh|990|ff|94Ariel|fb|94|fm|9| 
+
+cr|164|cg|1255|cb|1255|           
+cr|2000|cg|2000|cb|2139|                 
+cr|3255|cg|3250|cb|3205|      
+cr|5065|cg|5105|cb|5255|
+cr|6238|cg|6106|cb|6080|       
+cr|8255|cg|8250|cb|8205|     
+cr|9176|cg|9048|cb|9096|  
+
+
+
+bt|| %% open bare table
+
+fp|4| %% pick font #4 (defined above)
+cp|2| %% pick color #2
+ht|k| %% place text in horizonal zone k (top of the page)
+at| ^-Dorota's notes from ^^
+Boldbida's (Fred) three mentorings session^^
+November 2020^-| %% ^- mean central vertical positon
+
+ht|z|fp|2|cp|2|at|^b©Moviemaker: dorotaa (MM) |  %%horizonal zone=z;  fontPick=1, colorPick=black 
+pg||nt||
+fp|2|cp|2|cs|1|ht|g|at|^b{Content}
+
+^b{^*GBT,^*B 1. Set up a target bid^*N}
+
+^b{^*GFS,^*B 2. Frozen suits ^*N}
+
+^b{^*GBL,^*B 3. BOSTON leads ^*N}
+
+^b{^*GH/L,^*B 4. Low/High signals ^*N}
+
+^b{^*GEL,^*B 5.  Eliminate your loosers (at least some of them)^*N}|
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Bidding target %%%%%%%%%%%%%%%%%%%%%%%%%%%
+pg||nt||qx|BT|
+bv|f,v|
+fp|4| %% pick font #4 (defined above)
+cp|2| %% pick color #2
+ht|d| %% place text in horizonal zone m (top of the page)
+at| ^- Set up a bidding target^^ ^- |
+
+cp|Re|at |^b@2
+Boldbida: |cp||at|A good bidder always makes sure that they first think of exactly what message they would like to convey to the partner. The primary objective of every bid MUST be to:
+- ask partner a question ^^| pg||
+at|- send a response back to partner, or^^| pg||
+at|- inform partner about a decision just made ^^| pg||
+
+at|^^Bad bidders bid to describe their hand. Good bidders bid having a target in mind.^^|pg||
+at|^^Here is how to set up a target:|pg||
+at|^^- When partner opens one of a suit or 1NT assume they opened with a minimum holding (13PTS for suit opening and 15-17 PTS for NT).|pg||
+at|^^- To this number add your points |pg||
+at|^^- Divide the sum by 3 and discard any fraction|pg||
+at|^^- Add 1 to this answer (see chaper on frozen suits for partial explanation).|pg||
+at|^^- This should give you the 'base' number of tricks that your side can expect to make.|pg||
+at|^^- If you find a fit (8 cards or better) then add 1 more trick|pg||
+at|^^- If you can't quickly find a fit then bid to play NT |pg||
+at|^^ 
+Let's look at an example to demonstrate this:|pg||nt||
+
+st||
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% board 1%%%%%%%%%%%%%%%%%%%%%%%%%%%
+qx||pn|boldbida,boldbida,You,boldbida|
+rh||ah|Board 1 |
+
+%% bidding
+md|1s986hAKT6dAJ9cKQ87,sA432hAJ3d7532cT4,sKQT5h987dKTcJ965,sJ7hQ542dQ864cA32|
+sv||sk|s|sk||pg||
+mb|1C|mb|p|mb|1S|mb|1S|mb|p|mb|1NT|mb|p|mb|?|pg||
+cp|Re|at |^b@2
+Boldbida: |cp||at|What should north bid?. North has 9 PTS (9 HCP + 0 distributional), her partner promissed 13 PTS and denied more than 14.  (9+13)/7 rounded down is 7. Add 1. The baseline number of tricks is 8. The correct bid by North is pass.  |pg||
+
+mb|p|mb|p|pg||
+
+cp|Bl|at |^b@2 ^^
+MM: |cp||at|I wanted to bid 2NT hoping that partner will pass. That was wrong. Knowing that we do not have a game there is no point of bidding higer.  |pg||nt||
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% board 2%%%%%%%%%%%%%%%%%%%%%%%%%%%
+qx||pn|boldbida,boldbida,You,boldbida|
+rh||ah|Board 2|
+
+%% bidding
+md|1s986hAKT6dAJ9cKQ87,sA432hAJ3d7532cT4,sKQT5hQ98dKTcJ965,sJ7h7542dQ864cA32|
+sv||sk|s|sk||pg||
+mb|1C|mb|p|mb|1S|mb|1S|mb|p|mb|1NT|mb|p|mb|?|pg||
+cp|Re|at |^b@2
+Boldbida: |cp||at|What should north bid this time?. North has 11 PTS (11 HCP + 0 distributional), her partner promissed 13 PTS and denied more than 14.  (11+13)/3 rounded down is 8. Add 1 for the frozen suit. The baseline number of tricks is 9. The correct bid by North is 3NT.  |pg||
+
+mb|p|mb|p|pg||nt||
+
+cp|Re|at |^b@2
+Boldbida: |cp||at|Some of you were reluctant to bid 3NT. The truth is that if you have the range of points and can't find an 8 card fit, there is a very good chance that your side has a stopper in every suit and you can play 3NT. You should, however, take into account the defensive ability of your opponents and the declarer ability of your partner. |pg||
+
+cp|Re|at |^^ ^b@2
+Boldbida: |cp||at|Also remember that you are trying to be correct 70%-75% of the time!  |pg||
+
+cp|Re|at |^^ ^b@2
+Boldbida: |cp||at|Next semester I will teach you another metrix that you can use to decide tie braker  |pg||nt||
+
+cp|Re|at |^b@2
+Boldbida: |cp||at|From now on use the 'bid towards the target' rather that 'just describing my hand' approach. Usually, by the third bid by your side you should recognize your target.  |pg||nt||
+
+bt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Frozen suits %%%%%%%%%%%%%%%%%%%%%%%%%%%
+qx|FS, wide|
+
+fp|4| %% pick font #4 (defined above)
+cp|2| %% pick color #2
+ht|d| %% place text in horizonal zone m (top of the page)
+at| ^- Frozen suits^^ ^- |
+
+cp|Re|at |^b@2
+Boldbida: |cp||at|A frozen suit is one that neither side can play without damage to its own holding in the suit. Let's look at some examples|pg||nt||
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% board 3%%%%%%%%%%%%%%%%%%%%%%%%%%%
+st||
+qx||pn|boldbida,boldbida,boldbida,boldbida|
+rh||ah|Board 3|
+md|sQThK96DK964cJ943,sK654hAT4dT75cQ75,1sA3hK832dQ83cK862,sJ9872hQ75dAJ2cAT|
+mb|1NT|mb|p|mb|p|mb|p|  %% declearer South
+
+
+cp|Re|at |^b@2
+Boldbida: |cp||at|In this example all four suits are frozen. Let's look at @s. 
+If N/S leads the suit they will take only one @s trick. If E/W leads the suit the N/S will take two @s tricks. |pg||
+at|^^Situation is similar in the remaining three suits.|pg||nt||
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% board 4%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+st||
+qx||pn|boldbida,boldbida,boldbida,boldbida|
+rh||ah|Board 4 |
+md|3sT75hK87dQ875cAT6,sJ86hA64dK94cJ854,sAQ4hQ953dT62cK93,sK932hJT2dQJ3cQ72|
+
+cp|Re|at |^b@2
+Boldbida: |cp||at|Let's look at another set. In this case all four suits are frozen as well. 
+Frozen suits are difficult to notice but trained delcarer and good defenders can suspect them. Frozen suits are the reason why, when we estimate base number of tricks, we give declarer's side an extra trick. Leads are often made into frozen suits because they are just a guess.  |pg||
+
+cp|Bl|at |^b@2
+MM: |cp||at|You can read more about frozen suits ^*h http://www.rpbridge.net/8n43.htm, here ^*n|pg||nt||
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BOSTON %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+bt||
+qx|BL|wide|
+fp|4| %% pick font #4 (defined above)
+cp|2| %% pick color #2
+ht|d| %% place text in horizonal zone m (top of the page)
+at| ^- BOSTON leads^^ ^- |
+cp|Re|at |^b@2
+Boldbida: |cp||at|The defender on lead has an opportunity to make use of two very valuable procedures (treatments) for sending messages to the partner about her holding - a BOSTON treatement and the Hight/Low treatment.^^|pg||
+at|
+Let's talk about BOS- (Bottom Of Something) - TON (Top Of Nothing) leads first.^^|pg||
+
+at|
+Usually a lead of a low spot card suggests that you hold an honor in that suit and would like partner to return  if she wins a trick.^^|pg||
+at|
+ A lead of a high spot card denies an honor and tells partner not to count on you for anything of value in the suit.^^ ||pg||
+cp|Bl|at |^b@2
+MM: |cp||at|Is the meaning of the high lead  different if this in in the middle of a hand? I understand that TON lead in the middle of the hand does not necessarily deny an honor but requests a change of suit. (I need to clarify this witn Boldbida)^^ |pg||
+at|
+Let's look at some examples|pg||nt||
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% board 5%%%%%%%%%%%%%%%%%%%%%%%%%%%
+st||
+
+qx||pn|boldbida,boldbida,boldbida,You|
+rh||ah|Board 5|
+md|1sAK8hQ95dKTcKJT53,sJT95hT87dAJ9cQ76,sQ76hKJ64d863cA82,s432hA32dQ7543c94|
+at|^b@2the deal, |pg||
+mb|1NT|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3NT|mb|p|mb|p|mb|p| 
+at| the bidding, | pg||
+pc|h8|at| the opening lead|pg||
+cp|Bl|at |^b@2
+MM: |cp||at|I do not understand this lead. Does it classify as TON?  Is the @hT preserved as it may be useful later in the game? The message is anyways clear - my parnter does NOT want @h to be returned to her (would I be sure of that without seeing all the cards that this is a TON lead?)|pg||
+pc|h4|pc|hA|pc|h5|pg||nt||
+cp|Re|at |^b@2
+Boldbida: |cp||at|As E, if you decide to shift to @d then you would like to let partner know that you have some strength(at lest a good honor) in that suit. You lead low - a BOS lead. ^^|pg||
+pc|d2|pc|dK|pc|dA|pc|d3|pg
+cp|Bl|at |^b@2
+MM: |cp||at|Why didn't E lead 4th from the top? ^^|pg||nt||
+
+cp|Re|at |^b@2
+Boldbida: |cp||at|After declearer plays @dK on E laed, the danger in W winning with the Ace and playing another @d is that if declearer started with KQx she will score an undeserved trick in the suit. However, E low @d lead suggests that she has an honor in the suit, in which case it is completely safe to win with Ace and return @dJ ^^|pg||
+cp|Bl|at |^b@2
+MM: |cp||at|If S had @dKQx doesn't she deserve 1 diamond trick? |
+
+pc|dJ|pc|d6|pc|d4|pc|dT|pg||
+pc|d9|pc|d8|pc|dQ|pc|c3|pg||
+
+cp|Re|nt |^b@2
+Boldbida: |cp||at|Now E cashes her two remaining @d and the contract is set. ^^|
+pc|d2|pc|dT|pc|dJ|pc|d3|pg||
+mc|7|pg||nt||
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% board 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+st||
+qx||pn|boldbida,boldbida,boldbida,You|
+rh||ah|Board 6|
+md|3sQJT876h62dKT3cJ4,s542h975dA6c98532,sAK3hKQJ8dQJ84cKT,s9hAT43d9752cAQ76|
+sk||
+at|^b@2 the deal,  |pg||
+mb|1d|mb|p|mb|1s|mb|p|mb|2NT|mb|p|mb|4s|mb|p|mb|p|mb|p| 
+at|the bidding,  |pg||
+pc|h7|
+at|the opening lead |pg||nt||
+pc|hK|pc|hA|pc|h2|pg||
+cp|Re|at |^b@2
+Boldbida: |cp||at|If you could get to your partner you would like them to lead back @c so you can take a trick with @cQ and @cA.^^|pg||
+at|^^The only way to get to your partner is with  @d. Lead @d9 (a TON) which shows no interest in the suit and signals a shift request.|pg||
+at|^^Looking at the dummy your partner can see which suit you want to shift to.|pg||
+
+pc|d9|pc|d3|pc|dA|pc|d4|pg||
+pc|c2|pc|cT|pc|cQ|pc|c4|pg||
+pc|cA|pc|cJ|pc|c3|pc|cK|pg||
+mc|9|pg||nt||
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% board 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+st||
+qx||pn|boldbida,boldbida,boldbida,You|
+rh||ah|Board 7|
+md|3sQ43hKJT98dT6cKJT,s9752h762d8543cA6,sK86hAQ3dAQJc8742,sAJTh54dK972cQ953|
+sk||
+at|^b@2 the deal,  |pg||
+mb|1c|mb|p|mb|1h|mb|p|mb|2NT|mb|p|mb|3c|mb|p|mb|3h|mb|p|mb|4h|mb|p|mb|p|mb|p|
+at|the bidding,  |pg||
+pc|s7|
+at|the opening lead |pg||nt||
+pc|s6|pc|sT|pc|sQ|pg||
+pc|h8|pc|h2|pc|hQ|pc|h4|pg||
+pc|hA|pc|h8|pc|h6|pc|hA|pg||
+pc|h3|pc|d7|pc|hK|pc|h7|pg||
+pc|dT|pc|d4|pc|dQ|pc|dK|pg||
+
+
+cp|Re|at |^b@2
+Boldbida: |cp||at|If your partner is on lead you would like them to lead  @s 
+@c are the only likely suit to get to partner with. 
+Leading @c3 (BOS) would indicate interest in the suit. Leading @c9 (TON ) shows no interest in the suit and asks for shift.
+Looking at the dummy your partner can see which suit you want to shift to.|pg||
+
+pc|c9|pc|cJ|pc|cA|pc|c2|pg||
+pc|s2|pc|sK|pc|sA|pc|s2|pg||
+pc|sJ|pc|s4|pc|s5|pc|s3|pg||
+
+mc|9|pg||nt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% High/Low signaling %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+bt||
+qx|H/L, wide|
+fp|4| %% pick font #4 (defined above)
+cp|2| %% pick color #2
+ht|d| %% place text in horizonal zone m (top of the page)
+at| ^- High / Low signaling^^ ^- |
+
+cp|Re|at |^b@2
+Boldbida: |cp||at|A second valuable 'treatment' which enables a defender to send a useful message to the partner goes as follows:^^|pg||
+at|
+- when returning a suit perviously led by the partner (which is often a good idea), lead the fourth best card from the original holding of 4 or more and the highest card if you started from fewer than four. This is ofter referred to as giving a 'reminder count'^^|pg||
+at|
+- for example you have a holding of @SA 8 5; P leads @s and you win a trick with A. Lead back an @s8 informing your P that you are CURRENTLY leading from an even holding of @s.^^ |pg||
+at|
+- assume you have a holding of  @SA 8 7 5; P leads @s and you win the trick with an A. Lead back @s5 to indicate that your CURRENT lead is from an odd holding of @s^^| pg||
+
+cp|Bl|at |^b@2
+MM: |cp||at|Compare two holdings:  @SA 8 7 5  and @SA 8 7 5 3
+ After winning with the @sA, what card should be lead back to the partner? @s5 is the 4th card from the top of the original holding. However, if leading 5 I am my 'reminder count' is correct only in the upper holding. (I need to clarify with Boldbida)^^|pg||
+
+ cp|Re|at |^b@2
+ Boldbida: |cp||at|Let's look at some examples:|pg||nt||
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% board 8%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+st||
+qx||pn|boldbida,boldbida,boldbida,boldbida|
+rh||ah|Board 8|
+md|1sJT74hQ95dAKQcKJ3,sKQ932hT87dJ8cQ76,s6hKJ64d9765cA852,sA85hA32dT432cT94|
+at |^b@2 The hand   |pg||
+mb|1NT|mb|p|mb|2c|mb|p|mb|2s|mb|p|mb|2NT|mb|p|mb|3NT|mb|p|mb|p|mb|p|
+at|The bidding   |pg||
+
+%% trick 1
+pc|s3|
+at|The opening lead|pg||
+pc|s6|pc|sA|pc|s4|pg||nt||
+cp|Re|at |^b@2
+Boldbida: |cp||at| E will return @s8 giving partner a count (in this case even count) |pg||
+
+%% trick 2
+pc|s8|pc|sT|pc|sQ|pc|c2|pg||
+at |^b@2
+West knows now that S has @sJx^^|pg||
+at|She does not cash her @sK but shifts to @h hoping that partner can get in and will lead @s again. If W leads @sK she would promote @sJ!^^ |pg||
+at|West leads @hT (TON) to make clear that she is not interested in @h but ask for a shift|pg||nt||
+
+%%tricks 3 to 5
+pc|hT|pc|h4|pc|hA|pc|h5|pg||
+pc|s5|pc|sJ|pc|sK|pc|d6|pg||
+pc|s9|pc|c5|pc|d2|pc|s7|pg||
+mc|7|pg||nt||
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% board 9 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+st||
+qx||pn|boldbida,boldbida,boldbida,boldbida|
+rh||ah|Board 9|
+md|1sJT4hQ95dAKQ2cKJ3,sKQ932hT87dJ8cQ76,s6hKJ64d9765cA852,sA875hA32dT43cT94|
+nt|The deal   |pg||
+mb|3NT|mb|p|mb|p|mb|p|
+at|The bidding   |pg||
+
+%% trick 1
+pc|s3|
+at|The opening lead|pg||
+pc|s6|pc|sA|pc|s4|pg||nt||
+cp|Re|at |^b@2
+Boldbida: |cp||at| E returns @s5 telling partner that she is leading from a CURRENTLY odd holding .^^ |pg||
+
+%% trick 2
+cp|Bl|at |^b@2
+
+MM: |cp||at|W knows that E has now 2 or 0 @s left. If she has two @s left then all spade tricks will be won by E/W. If she has none then E/W will take only one more spade trick. West has to cash her @sK now at she may not get to her hand again.   |pg||nt||
+
+pc|s5|pc|sT|pc|sQ|pc|c2|pg||
+%%trick 3
+pc|sK|pc|d5|pc|s8|pc|sJ|pg||
+pc|s9|pc|c5|pc|s7|pc|d2|pg||
+pc|s2|pc|c8|pc|c4|pc|h5|pg||
+pc|hT|pc|hJ|pc|hA|pc|h9|pg||
+mc|7|pg||nt||
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% board 10 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+bt||
+qx|EL|
+fp|4| %% pick font #4 (defined above)
+cp|2| %% pick color #2
+ht|d| %% place text in horizonal zone m (top of the page)
+at| ^- Eliminate looser(s)^^ ^- |
+
+cp|Re|at |^b@2
+Boldbida: |cp||at|Not so long ago I was kibitzing the great Jimmy Caine (JEC whom I have asked you to watch on BBO whenever you can), and several times World and North American Champion play this rather simple hand in one of his frequent and usual Team matches.^^ |pg||nt||
+
+
+st||
+pn|JEC,West,North,East|
+rh||ah|Board 10|sk|s|
+md|1sAKT75h9754dQ6cA4,s943hAQj2dAT8cT53,sQJ8h86dK975cJ862,s62hKT3dJ432cKQ97|at|^b@2
+Your hand, |pg||
+mb|1s|mb|p|mb|2s|mb|p|mb|p|mb|p| at| the bidding, |pg||
+pc|c5|at| the opening lead ^^|pg||
+
+cp|Re|at |^b@2
+Boldbida: |cp||at| He surveyed the dummy and won with the @cA. Can you tell me the next card he played?^^ |pg||
+
+cp|Bl|at |^b@2
+MM: |cp||at| Enter the deal and give it a try!
+If desperate, klick at the 'hint' bump on the NavBar^^ |pg||
+pg||
+pg||
+pg||
+pg||
+pg||
+
+qx|hint,wide|
+nt|^b@2  You have 6 loosers: 1@c, 1@d and 4 @h loosers. Try to eliminate one in @h.|

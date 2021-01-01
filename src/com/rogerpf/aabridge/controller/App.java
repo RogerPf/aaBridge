@@ -79,6 +79,13 @@ public class App {
 	public static String linExt = "lin";
 	public static String dotLinExt = '.' + linExt;
 	
+	public static String DEV_config_filename = "__aaBridge__DEV_config.txt";
+	
+	public static String debug_linfile_partner_path = "";
+	public static String debug_linfile_partner_ext = "";
+	public static boolean debug_suppress_single_undelt = false;
+	
+	
 	public static final int numbAllowed_in_Temp_Other = 35;
 	
 	public static final int daysToKeepInLinCache = 91;
@@ -340,11 +347,10 @@ public class App {
 	/**
 	 */
 	public static void cloneToDealBk_or_makeDealBkNull() {
-		if (App.deal.botExtra.haveCardsMoved()) {
-			System.out.println(" Trying to Bk clone a deal with cardsMoved eeek");
-			 // we are broken whatever we do
-			assert(false);	
-		}
+		// if (App.deal.botExtra.haveCardsMoved()) {
+		// System.out.println(" Trying to Bk clone a deal with cardsMoved eeek");
+		// assert(false);	
+		//}
 		App.deal_bk = null;
 		if (App.dealHasBotInstructions()) {
 			App.deal_bk = App.deal.deepClone();
@@ -537,6 +543,7 @@ public class App {
 	public static boolean obeyRtCmd;
 
 	public static boolean showBooksZMenu;
+	public static boolean showLanguageMenu;
 	public static boolean showTheDotTest;
 	public static boolean showAllLangLin;
 	public static boolean showDdsOnPlayedCards;
@@ -604,7 +611,6 @@ public class App {
 				App.ratioFiddle = 100;
 			}
 		}
-
 
 		int orig_width = 1008;
 		int orig_height = 724;
@@ -675,16 +681,21 @@ public class App {
 		force_E_HiddenTut = false;
 		force_S_HiddenTut = false;
 
-		if (App.su_clear_overide || App.devMode) {  
-			compassAllTwister   = appPrefs.getInt("compassAllTwister", 0);
-			if (compassAllTwister < 0 || compassAllTwister > 3) {
-				compassAllTwister = 0;
-			}
+		if (App.su_clear_overide || App.devMode) { 
+			
 			alwaysShowHidden    = appPrefs.getBoolean("alwaysShowHidden",  false);
-			force_N_HiddenTut   = appPrefs.getBoolean("force_N_HiddenTut", false);
-			force_W_HiddenTut   = appPrefs.getBoolean("force_W_HiddenTut", false);
-			force_E_HiddenTut   = appPrefs.getBoolean("force_E_HiddenTut", false);
-			force_S_HiddenTut   = appPrefs.getBoolean("force_S_HiddenTut", false);
+			
+			if (App.su_clear_overide) {
+    			force_N_HiddenTut   = appPrefs.getBoolean("force_N_HiddenTut", false);
+    			force_W_HiddenTut   = appPrefs.getBoolean("force_W_HiddenTut", false);
+    			force_E_HiddenTut   = appPrefs.getBoolean("force_E_HiddenTut", false);
+    			force_S_HiddenTut   = appPrefs.getBoolean("force_S_HiddenTut", false);
+    			
+    			compassAllTwister   = appPrefs.getInt("compassAllTwister", 0);
+    			if (compassAllTwister < 0 || compassAllTwister > 3) {
+    				compassAllTwister = 0;
+    			}
+			}
 		}
 			
 		renumberDealsLin    = false;
@@ -788,8 +799,9 @@ public class App {
 		if (App.devMode) {
 			obeyAeCmd      = appPrefs.getBoolean("obeyAeCmd",           true);
 			obeyRtCmd      = appPrefs.getBoolean("obeyRtCmd",           true);
-			sd_dev_visibility = appPrefs.getBoolean("sd_dev_visibility",           false);
+			sd_dev_visibility = appPrefs.getBoolean("sd_dev_visibility",      false);
 		}
+		showLanguageMenu = appPrefs.getBoolean("showLanguageMenu",  false);
 		showBooksZMenu        = appPrefs.getBoolean("showBooksZMenu",         false);
 		showTheDotTest        = appPrefs.getBoolean("showTheDotTest",         false);
 		
@@ -946,6 +958,7 @@ public class App {
 		appPrefs.putBoolean("obeyAeCmd",               obeyAeCmd);
 		appPrefs.putBoolean("obeyRtCmd",               obeyRtCmd);
 		appPrefs.putBoolean("sd_dev_visibility",       sd_dev_visibility);
+		appPrefs.putBoolean("showLanguageMenu",   showLanguageMenu);
 		appPrefs.putBoolean("showBooksZMenu",          showBooksZMenu);
 		appPrefs.putBoolean("showTheDotTest",          showTheDotTest);
 		appPrefs.putBoolean("showAllLangLin",          showAllLangLin);
@@ -1070,7 +1083,9 @@ public class App {
 		App.ddsDeal = null;
 		// System.out.println(" App.setMode    ddsDeal  set to null");
 
-		if (/* old */mode == Aaa.EDIT_BIDDING) {
+		int oldMode = mode;
+
+		if (oldMode == Aaa.EDIT_BIDDING) {
 			if (newMode == Aaa.NORMAL_ACTIVE) {
 				; // do nothing
 			}
@@ -1086,6 +1101,9 @@ public class App {
 		switch (mode) {
 
 		case Aaa.NORMAL_ACTIVE:
+			// assert oldMode!=newMode;
+			App.cloneToDealBk_or_makeDealBkNull();
+
 			if (App.isLin__Virgin())
 				App.localShowHidden = false;
 			App.con.startAutoBidDelayTimerIfNeeded();
@@ -1110,6 +1128,9 @@ public class App {
 			break;
 
 		case Aaa.EDIT_PLAY:
+			// assert oldMode != newMode;
+			App.cloneToDealBk_or_makeDealBkNull();
+
 			App.deal.finishBiddingIfIncomplete();
 			App.gbp.c1_1__tfdp.normalTrickDisplayTimer_startIfNeeded();
 			break;
@@ -1147,8 +1168,10 @@ public class App {
 
 	/**   
 	 */
-	static public boolean isSeatVisible(Dir compass) {
+	static public boolean isSeatVisible(Hand hand) {
 		// ========================================================================
+
+		Dir compass = hand.compass;
 
 		if (App.isStudyDeal() && App.sd_dev_visibility == false) {
 
@@ -1181,6 +1204,15 @@ public class App {
 
 		if (alwaysShowHidden) {
 			return true;
+		}
+
+		if (hand.vh_tutorial_vis != '-') {
+			if (App.isVmode_Tutorial()) {
+				if (hand.vh_tutorial_vis == 'h')
+					return false;
+				if (hand.vh_tutorial_vis == 'v')
+					return true;
+			}
 		}
 
 		if (localShowHidden) {
@@ -1722,8 +1754,14 @@ public class App {
 	public static boolean poller_boss = false;
 	public static JCheckBoxMenuItem pollMenuItem;
 	public static boolean cont_button_is_cont__cashed = true;
+	public static String Books_E_renamed_to = "";
+	public static JMenu books_B__menu = null;
+	public static JMenu books_E__menu = null;
 	public static JMenu books_S__menu = null;
 	public static JMenu books_V__menu = null;
+	public static JMenu books_Z__menu = null;
+	public static JMenu lang_menu = null;
+	public static JMenu help_menu = null;
 	public static JMenuBar menuBar = null;
 
 	final public static String ghost_jar = "aaBridge_ghost.jar"; // You set this here

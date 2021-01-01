@@ -53,6 +53,18 @@ public class CommonCmdBar extends ClickPanCbar {
 	public JPanel            T4_9__empt = new ClickPanCbar();
 	public MovieModePart4    T4_9__movm = new MovieModePart4();
 	public CommonBar4        T4_9__tbp4 = new CommonBar4();
+	
+	public boolean is1stBtnVisible() {
+		return T3_9__tbp3.is1stBtnVisible();
+	}
+	
+	public boolean isBackToMovieBtnVisible() {
+		return T4_9__movm.isBackToMovieBtnVisible();
+	}
+	
+	public boolean isEnterTheDealBtnVisible() {
+		return T4_9__tbp4.isEnterTheDealBtnVisible();
+	}
 
 	//@formatter:on
 
@@ -278,6 +290,14 @@ class CommonBar3 extends ClickPanCbar {
 	private RpfResizeButton b1st;
 	private RpfResizeButton contdds;
 
+	public boolean is1stBtnVisible() {
+		return b1st.isVisible();
+	}
+
+	public boolean isEnterTheDealBtnVisible() {
+		return b1st.isVisible();
+	}
+
 	CommonBar3() { /* Constructor */
 		// ============================================================================
 		setOpaque(false);
@@ -333,12 +353,18 @@ class MovieModePart4 extends ClickPanCbar {
 	// ---------------------------------- CLASS -------------------------------------
 	private static final long serialVersionUID = 1L;
 
+	RpfResizeButton btm;
+
+	boolean isBackToMovieBtnVisible() {
+		return btm.isVisible() && App.isVmode_InsideADeal();
+	}
+
 	MovieModePart4() { /* Constructor */
 		// =============================================================
 		setOpaque(false);
 		setLayout(new MigLayout(App.simple, "[]", "push[]push"));
 
-		add(new RpfResizeButton(Aaa.s_Std, "dealmodeBackToMovie", 95, 70, 0.75f));
+		add(btm = new RpfResizeButton(Aaa.s_Std, "dealmodeBackToMovie", 95, 70, 0.75f));
 
 		setVisible(false);
 	}
@@ -352,6 +378,10 @@ class CommonBar4 extends ClickPanCbar {
 	private static final long serialVersionUID = 1L;
 
 	RpfResizeButton etd;
+
+	boolean isEnterTheDealBtnVisible() {
+		return etd.isVisible() && !App.isVmode_InsideADeal();
+	}
 
 	CommonBar4() { /* Constructor */
 		// =============================================================

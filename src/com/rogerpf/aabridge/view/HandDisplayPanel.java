@@ -220,7 +220,7 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 		assert (deal.getNextHandToPlay() == hand);
 
 		Boolean playing = deal.isPlaying();
-		if (!playing || playing && !App.isSeatVisible(hand.compass))
+		if (!playing || playing && !App.isSeatVisible(hand))
 			return;
 
 		Card card = null;
@@ -301,7 +301,7 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 				if (!questionHand)
 					return;
 			}
-			else if (!(editing || playing && App.isSeatVisible(hand.compass) && !App.isAutoPlay(hand.compass)))
+			else if (!(editing || playing && App.isSeatVisible(hand) && !App.isAutoPlay(hand.compass)))
 				return;
 
 			Point ep = e.getPoint();
@@ -388,7 +388,7 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 			App.gbp.c1_1__tfdp.clearShowCompletedTrick();
 
 			Boolean playing = App.isMode(Aaa.EDIT_PLAY) || App.isMode(Aaa.NORMAL_ACTIVE) && deal.isPlaying();
-			if (!tutFloating && !(playing && App.isSeatVisible(hand.compass) && !App.isAutoPlay(hand.compass))) {
+			if (!tutFloating && !(playing && App.isSeatVisible(hand) && !App.isAutoPlay(hand.compass))) {
 				return;
 			}
 
@@ -444,7 +444,7 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 				if (!questionHand)
 					return;
 			}
-			else if (!(editing || playing && App.isSeatVisible(hand.compass) && !App.isAutoPlay(hand.compass)))
+			else if (!(editing || playing && App.isSeatVisible(hand) && !App.isAutoPlay(hand.compass)))
 				return;
 
 			Frag[] frags = getAppropriateFrags(false /* actual_display */); // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -887,7 +887,7 @@ public class HandDisplayPanel extends ClickPanel { // ============ HandDisplayPa
 
 			// show the points
 			// ------------------------------------------------------------------
-			visSeat = App.isSeatVisible(hand.compass);
+			visSeat = App.isSeatVisible(hand);
 			if (deal.isDoneHand()) {
 				displayedWordInBox = Aaf.box_text[hand.compass.v];
 				displayedWordColor = Aaa.weedyBlack;

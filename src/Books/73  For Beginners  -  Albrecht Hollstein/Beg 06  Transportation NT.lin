@@ -1,0 +1,499 @@
+%% Communication entries; Coup en blanc
+
+mn| Al (xx1943) teaching : Declarer play for beginners (6)|
+tu||
+
+%% Font definiton:
+fh|150|ff|1Arial|fb|110|fm|1|
+fh|235|ff|2Arial|fb|28|fm|2|
+fh|340|ff|3Arial|fb|35|fm|3|
+fb|49|fm|4|fb|4|fm|4|
+
+%% color definition
+cr|116|cg|116|cb|1255|              blau = blue
+cr|2255|cg|2255|cb|264|             gelb = yellow
+cr|30|cg|30|cb|3128|                dunkelblau = dark blue
+cr|4255|cg|4255|cb|40|              dunkleres gelb = dark yellow
+cr|516|cg|5128|cb|516|              grün = green
+cr|6245|cb|6220|cg|6235|            beige
+cr|70|cb|7220|cg|7235|              grün-blau = green-blue
+cr|8255|cb|8200|cg|8200|            rosa = pink
+cr|9200|cb|90|cg|9150|              braun = brown
+
+%% -----------------------------------menu-------------------------------------------
+qx|Menu|
+%% set background color
+bg|6|
+bt||nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^-{ Al teaching:  Declarer play for beginners (6)}
+
+{Suit management to avoid transportation problems}
+^-|
+cp||fp||
+
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+ht|d|
+cs|3|
+cp|4|
+^-
+fp|1|3d|0|
+cp||
+fp||
+cs|2|
+ht|f|
+at|^c@2^x@3{
+^*Go1,     Example 1 : Axxxxx - xx; only 1 side entry; Coup en blanc^*N
+^*Go2,     Example 2 : Axxxx - Kxx; no side entry^*N
+^*Go3,     Example 3 : KQxxxx - xx; only 1 side entry^*N
+^*Go3f,     Example 3 freeplay: KQxxxx - xx; only 1 side entry^*N
+^*Go4,     Example 4 : Axxxx - xxx; no side entry^*N
+^*Go5,     Example 5 : AJxxx - Kxx; need 4 tricks; no side entry^*N
+
+{
+^*Gconclusion,     What you learn in this lesson^*N
+^*Gintro, ^c     About this series of lessons^*N 
+
+{^x@3
+^*Gbooks,     Recommendations^*N
+^*Ghelp,     How to navigate in this movie ^*N
+
+}|
+pg||
+
+%% --------------------------hand number 1 ------------------------------------
+qx|o1|
+%% Simple Coup en blanc
+%% source: Root p51 number 1
+pf||
+st||sk|S|nt|| %%small text set kibbing South
+md|3Saj65hakqdk732ct3,skq9hjt975dq4cqj8,st2h63da95ca76542,|
+sv|0|%%set vulnerability
+rh||ah|Board 1|ah|Coup en blanc| %%set description box
+mb|pp1np3nppp| %% bidding
+pc|hj|nt|Now make your plan before you touch a card in dummy!!!!!!!!!!!!|
+%% questions 1) 2) and 3)
+pg||sb|SHow many sure tricks do I have?|
+pg||nt|Sure tricks are: 1@s|hc|sA|
+pg||at| + 3@h|hc|hAKQ|
+pg||at| + 2@d|hc|dAK|
+pg||at| + 1@c|hc|cA|
+pg||at| = 7.|
+pg||lc|sAhAkqdakcA|at||sb|SHow many tricks are needed to make my bid?|
+pg||at|
+To make 3NT we need 9 tricks, so we need 9 - 7 = 2 more.|
+pg||at||sb|SWhich suit(s) may provide this additional trick?|
+pg||at|
+@ss can make no additional tricks and @hs can make no additional tricks.
+@ds can make 1 additional trick, if the suit is divided 3-3.
+@cs can make 3 additional tricks, if the suit is divided 3-2.|
+pg||hs|ncsc|nt|So the best (only) chance for 2 additional tricks is the @c-suit.|
+pg||at||sb|SGreat, let us go for that and hope for the best.|
+pg||pc|hhhA|sb|S|
+pg||pc|cccac|
+pg||pc|cccc|sb|sGreat clubs are distributed 3-2, as I hoped.|
+pg||pc|hhhh|sb|s|
+pg||pc|dddAd|
+pg||pc|cssc|sb|SNow all my clubs in dummy are high.|
+pg||at|
+But how to get there??????
+You didn't pay attention to the entries to your long suit.|sb|sOuch!!!!!!!!|
+pg||at|
+You should have adopted the "Coup en blanc".|sb|s|
+pg||at|
+Go back a few tricks and try again.|up|18|
+pg||sb|s"Coup en blanc"?? What is it?|nt|The key play is to lead a club at trick 2 and "duck" in dummy. This is called a "Coup en blanc". Not to be confused with a "Coup de blanc" which is a glass of white wine..lol|
+pg||sb|sok, let's try this.|
+pg||pc|ccK|at| By ducking you have maintained the communication with the dummy. So that when you get back the lead you will be able to play a club to dummy's ace and assuming both opponents follow suit, you will be able to play a third club to set-up the suit.|
+sb|sok, sounds good.|
+pg||pc|h4hKhh|sb|s|
+pg||pc|cccAc|sb|sGreat! Clubs are 3-2.|
+pg||pc|csdc|at| Good work! Your clubs are set-up and you still have an entry to dummy. You can claim.|sb|sThanks!|
+pg||sb|s|sk||mc|9|pg||ls|ncsc|
+
+%% --------------------------hand number 2 ------------------------------------
+qx|o2|
+%% 
+%% 
+pf||
+st||sk|S|%small text set kibbing South
+md|4Sa365hak2dak7ck23,skj9hjt975dq4cqj8,st42h63d395ca7654,|
+sv|n|%%set vulnerability
+rh||ah|Board 2|ah|Coup en blanc|ah|once more| %%set description box
+mb|p2np3nppp| %% bidding
+pc|hj|nt|Now make your plan before you touch a card in dummy!!!!!!!!!!!!|
+%% questions 1) 2) and 3)
+pg||sb|SHow many sure tricks do I have?|
+pg||nt|Sure tricks are: 1@s|hc|sA|
+pg||at| + 2@h|hc|hAK|
+pg||at| + 2@d|hc|dAK|
+pg||at| + 2@c|hc|cAk|
+pg||at| = 7.|
+pg||lc|sAhAkqdakcAk|at||sb|SHow many tricks are needed to make my bid?|
+pg||at|
+To make 3NT we need 9 tricks, so we need 9 - 7 = 2 more.|
+pg||at||sb|SWhich suit(s) may provide this additional trick?|
+pg||at|
+@ss can make 1 additional trick, if the suit is divided 3-3.
+@hs can make no additional tricks and @ds can make no additional tricks.
+@cs can make 2 additional tricks, if the suit is divided 3-2.|
+pg||hs|ncsc|nt|So the best (only) chance for 2 additional tricks is the @c-suit.|
+pg||at||sb|SGreat, let us go for that and hope for the best.|
+pg||pc|hhhk|sb|S|
+pg||pc|ckccc|
+pg||pc|cccac|sb|sGreat clubs are distributed 3-2, as I hoped.|
+pg||pc|cscc|sb|s|
+pg||pc|hhhqha|sb|sNow I cash my high clubs.|
+pg||nt|But how to get there??????
+You didn't pay attention to the entries to your long suit.|sb|s|
+pg||at|
+You should have adopted the "Coup en blanc".|
+pg||at|
+Go back a few tricks and try again.|up|10|sb|sOk, I understand. By ducking, I will maintain communication with dummy and ...|
+pg||sb|s...be able to clear the suit when I get back the lead.|at| 
+Correct!|
+pg||pc|cc|sb|sGreat! With clubs 3-2, my contract is now safe.|
+pg||pc|hThHqhA|sb|sI can now set-up the club suit and claim.|at| Great work!|
+pg||pc|cccAd|sb|sThanks!|
+pg||sb|s|sk||mc|9|
+pg||ls|ncsc|
+
+%% --------------------------hand number 3 ------------------------------------
+qx|o3|
+%% 
+%% source: Al
+pf||
+st||sk|s|%small text set kibbing South
+md|1Saj65hakqdk732ct3,skq93hjt975dq4cj8,st2h63da95cKQ6542,|
+sv|0|%%set vulnerability
+rh||ah|Board 3|ah|Coup en blanc|ah|variation| %%set description box
+mb|1np3nppp| %% bidding
+pc|hj|nt|Now make your plan before you touch a card in dummy!!!!!!!!!!!!|
+%% questions 1) 2) and 3)
+pg||sb|SHow many sure tricks do I have?|
+pg||nt|Sure tricks are: 1@s|hc|sA|
+pg||at| + 3@h|hc|hAKQ|
+pg||at| + 2@d|hc|dAK|
+pg||at| + 0@c|hc||
+pg||at| = 6.|
+pg||lc|sAhAkqdakcA|at||sb|SHow many tricks are needed to make my bid?|
+pg||at|
+To make 3NT we need 9 tricks, so we need 9 - 6 = 3 more.|
+pg||at||sb|SWhich suit(s) may provide this additional trick?|
+pg||at|
+@ss can make no additional trick and @hs can make no additional tricks.
+@ds can make 1 additional trick, if the suit is divided 3-3.
+@cs can make 4 additional tricks, if the suit is divided 3-2.|
+pg||hs|ncsc|nt|So the best (only) chance for 3 additional tricks is the @c-suit.|
+pg||at||sb|SGreat, let us go for that and hope for the best.|
+pg||pc|hhhA|sb|S|
+pg||pc|ctcjcqc|sb|SGreat. It seems that West holds the AJ or AJx of clubs.|
+pg||pc|hhhh|sb|SBack to my hand and lead again towards the honors.|
+pg||pc|ccckca|sb|sOuch. The A is with East, who held up the first round.|
+pg||pc|hhhd|sb|s|
+pg||pc|dddAd|
+pg||pc|ccss9|sb|SNow all my clubs in dummy are high.|
+pg||at| But how to get there??????
+You didn't pay attention to the entries to your long suit.|sb|s|
+pg||at|
+Once more you should have adopted the "Coup en blanc".|
+pg||at|
+Go back a few tricks and try again.|up|22|sb|sThanks for second chance!|
+%%%%%%%%%%%%% Point out too, the defensive mistake not to hold up A of clubs
+pg||nt||pc|cc|sb|eI must hold up and hope that declarer has a club singleton|sb|s|
+pg||pc|hThhhK|sb|e|
+pg||pc|ccckc|
+pg||pc|cQcdh|sb|w|sb|sNow clubs are set-up and my bid is assured. :))|at|Well done this time!!!!!!! You can claim now. This was an other example where to be able to set-up a long suit in dummy you needed to play a coup en blanc at the start to preserve the communication with the dummy. Whenever entries to dummy are scarce, consider using a coup en blanc.|
+pg||pc|hhhs|sb|sThanks!|
+pg||sb|s|sk||mc|9|
+pg||ls|ncsc|
+
+%%--------------------------------hand 3 freeplay ------------------------------
+qx|o3f|
+%% Root page 2 number 1
+%% Choice of suits to establish
+rh||ah|Board 3|ah|Free play|
+sc||st||pf||nt||sk||
+md|1Saj65hakqdk732ct3,skq93hjt975dq4cj8,st2h63da95cKQ6542,|
+sv|0|%%set vulnerability
+rh||ah|Board 3|ah|Coup en blanc|ah|variation| %%set description box
+mb|1np3nppp| %% bidding
+pc|hj|at|^-
+{You may now play whatever cards you like! Just click on the card you wish to play.
+ The most recently played card may be taken back by clicking on ^$6 , Undo.
+Once a trick is complete, click on the first card of the next trick.
+Inspect a played trick by pointing at it with the mouse.}|
+pf|y|pg||
+
+
+%% --------------------------hand number 4 ------------------------------------
+qx|o4|
+%% Simple Coup en blanc
+%% source: Root p51 number 1
+pf||
+st||sk|s|%small text set kibbing South
+md|2Saj6hakqdak73ct23,skq9hjt975dq4cqj8,st52h63d952ca7654,|
+sv|0|%%set vulnerability
+rh||ah|Board 4|ah|Coup en blanc| %%set description box
+mb|ppp2np3nppp| %% bidding
+pc|hj|nt|Now make your plan before you touch a card in dummy!!!!!!!!!!!!|
+%% questions 1) 2) and 3)
+pg||sb|SHow many sure tricks do I have?|
+pg||nt|Sure tricks are: 1@s|hc|sA|
+pg||at| + 3@h|hc|hAKQ|
+pg||at| + 2@d|hc|dAK|
+pg||at| + 1@c|hc|cA|
+pg||at| = 7.|
+pg||lc|sAhAkqdakcA|at||sb|SHow many tricks are needed to make my bid?|
+pg||at|
+To make 3NT we need 9 tricks, so we need 9 - 7 = 2 more.|
+pg||at||sb|SWhich suit(s) may provide this additional trick?|
+pg||at|
+@ss can make no additional tricks and @hs can make no additional tricks.
+@ds can make 1 additional trick, if the suit is divided 3-3.
+@cs can make 2 additional tricks, if the suit is divided 3-2.|
+pg||hs|ncsc|nt|So the best (only) chance for 2 additional tricks is the @c-suit.|
+pg||at||sb|SGreat, let us go for that and hope for the best.|
+pg||at|
+Wait a moment. What about entries to the long suit?|sb|S|
+pg||sb|SI learned to apply the "Coup en blanc"|
+pg||at|
+Great. Give it a try.|
+pg||pc|hhhA|sb|S|
+pg||pc|cccc|sb|SCoup en blanc executed, Sir!|
+pg||pc|hhKhh|sb|s|
+pg||pc|cccac|sb|sGreat! Clubs are distributed 3-2, as I hoped.|
+pg||pc|cscc|sb|SNow all my clubs in dummy are high.|
+pg||nt|But how to get there??????
+You didn't pay enough attention to the entries to your long suit.|sb|sOuch!!!!!!!!|
+pg||at|
+You should have adopted the "Coup en blanc" TWICE.|sb|s|
+pg||at|
+Go back a few tricks and try again.|up|6|sb|sSo by ducking twice I will preserve my only entry to dummy, the club A. Brillant!|
+pg||nt||at|You only need to learn and remember the proper technique. It is really easy, no?|
+pg||pc|cc|sb|s|
+pg||pc|hhhd|
+pg||pc|cccAs|at|
+Perfect play this time. Your contract is assured now. Please claim.|sb|sThanks to you!|
+pg||sk||mc|9|sb|s|
+pg||ls|ncsc|
+%% --------------------------hand number 5 ------------------------------------
+qx|o5|
+%% tags describing hand number 2
+%% source: Root page 52 number 2
+pf||
+st||sk|s|%small text set kibbing South
+md|3Sak4hak63dk87cat2,sqjt92hq2dqt95cj9,s753h7daj642c8654,|
+sv|e|%%set vulnerability
+rh||ah|Board 5|ah|What may happen?| %%set description box
+mb|pp2np3nppp| %% bidding
+pc|sq|nt|Now make your plan before you touch a card in dummy!!!!!!!!!!!!|
+%% questions 1) 2) and 3)
+pg||sb|SHow many sure tricks do I have?|
+pg||nt|Sure tricks are: 2@s|hc|sAk|
+pg||at| + 2@h|hc|hAK|
+pg||at| + 2@d|hc|dAK|
+pg||at| + 1@c|hc|cA|
+pg||at| = 7.|
+pg||lc|sAkhAkqdakcA|at||sb|SHow many tricks are needed to make my bid?|
+pg||at|
+To make 3NT we need 9 tricks, so we need 9 - 7 = 2 more.|
+pg||at||sb|SWhich suit(s) may provide this additional trick?|
+pg||at|
+@ss can make no additional trick @hs can make no additional tricks.
+@ds can make 2 or 3 additional tricks.
+@cs can make 1 additional trick, if the suit is divided 3-3.|
+pg||hs|ndsd|nt|So the best (only) chance for 2 additional tricks is the @d-suit.|
+pg||at||sb|SGreat, let us go for that and hope for the best.|
+pg||pc|sssa|sb|S|
+pg||pc|dkddd|sb|sNow I take the diamond finesse. Even if that loses, I'm home.|
+pg||pc|dddjh|sb|sgrrrrrrrrrrrrrrrrrrrrrrr|
+pg||nt|Misplayed, sorry. You don't need 5 @d tricks. You were too greedy. Your goal is to ensure your contract even against bad breaks and if a contract seems to be very easy, look for a bad distribution which may be dangerous. Try it once more.|up|2|
+pg||sb|sThere is nothing I can do if East started with 4 diamonds Qxxx. Right?|
+at|
+True. In that case you will not be able to set-up the suit against a good defence. But on the same line of thought, what can you do to protect against West holding @dQxxx?|
+pg||nt||sb|sWell...maybe a coup en blanc??|
+pg||sb|sI remember you said to always consider it with a shortage of dummy entries...
+|at|Correct. Go ahead, try it!|
+pg||sb|s|pc|dc7|
+pg||pc|sJsssK|sb|sNow knowing East holds the last 2 diamonds (Q 10), the right play is obvious. :)|
+pg||pc|dddJh|sb|s|at|
+Well done! Needing only 4 tricks, you did not need to play the finesse right away. As you just did, you could concede a trick (coup en blanc) to protect against West holding @dQxxx. It is called a safety play.|sb|sThanks Al|
+pg||sb|s|sk||mc|9|
+pg||ls|sdnd|
+
+
+%% ------------------------General notes--------------------------------
+qx|intro|
+bt||
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^-{ Al teaching:  }
+
+{About this series of lessons}
+^-|
+cp||cs|2|fp||
+ht|g|
+at|^c@2{My target group are absolutely beginners ^z}
+
+{My topic is the DECLARER PLAY; not the bidding not the defense ^z}
+
+{I presuppose only a few things about bridge which you find e.g.:
+^d@2^*Hwww.rpbridge.net/1a00.htm^*N Learn to play bridge with Richard Pavlicek
+^*Hwww.rpbridge.net/1t05.htm ^*N Introduction to R. Pavlicek lessons
+^*Hwww.prairienet.org/bridge/start.htm^*N Getting started with Karen's bridge library
+^*Hwww.prairienet.org/bridge/glos.htm^*N Glossary for Beginners in Karen's bridge library
+^z}
+
+{^c@2 If you have any questions feel free to mail me to albrecht.hollstein@@freenet.de ^z}
+|
+fp|2|at|
+{If you like my lessons, tell it to others, if you dislike something, tell it to me. ^z}@0@1|
+
+%% Impressum at line "z"
+ht|z|fp||
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+pg||
+
+
+
+%%--------------------------summary--What to learn in this lesson---------
+qx|conclusion|
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {This is what you'll learn in this lesson ^z@3}
+|
+cp||cs|8|fp||
+ht|d| %% Vertikale position
+at|{Make your plan of play, BEFORE you touch a card in dummy!!! ^z}
+
+{The plan for a NT contract consists of the following steps:
+^d@21) Count your sure tricks in high cards.
+2) Calculate how many additional tricks are needed to make your bid.
+3) Decide from which suit these tricks may come from.
+4) Be aware what can damage your plan.
+^e@24.1 Have opponents a long suit to run before you run your tricks??
+4.2 Is there a dangerous opponent?
+4.3 Are there enough entries to my long suit (either in dummy or in my hand)
+4.4 Is there a danger to block suits?
+4.5 What do I discard, when a long suit is played? ^z}|
+cs|2|
+at|
+
+{^c@2 In this lesson we emphasize topic 4.3. ^z}
+
+{Count how many entries to your long suit do you need to establish AND enjoy it. Be careful with your entries. Be sure, that you can reach dummy, ^*Bafter^*N you established a long suit. ^z}
+|
+cs|6|
+at|
+{Compare the BM2000 hands number A21 and A29}
+@0@1|
+%% Impressum at line "z"
+ht|z|fp||
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+pg||
+
+
+
+%%--------------------recommendations----------------------------------
+qx|books|
+nt||
+bg|6|nt||cs|3|cp|4|fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {Recommendations ^z}
+|
+
+cs|8|cp||fp|2|at|^e@2
+#3{
+^f@2Recommended books:
+|
+fp||at|#31) Robert Berthe, Norbert Lebely: "Step by Step" Vol1 NT-declarer-play.   
+   This is the best book to learn the basics
+#32) Victor Mollo, Nico Gardener: Card Play technique
+   A classical from 1955, but useful forever
+#33) William S. Root: How to play a bridge hand.
+   12 easy chapters to winning bridge
+#34) Louis H. Watson: Play of the hand at bridge
+   Another classical from 1934; very instructive, but you need time
+   ^z}|
+cs|9|cp||fp|2|at|^e@2
+
+{
+^f@2Recommended software:
+|
+fp||at|#31) Learn to play bridge; A great introduction and it is free.
+   ^*Hweb3.acbl.org/internet/websiteForms.nsf/ltpbForm?OpenForm^*N     
+#32) Bridge Master 2000 by Fred Gitelman;
+   the best software to learn declarer play.
+   ^*Hbbi.bridgebase.com/software/bmdesc.html^*N
+   ^z}|
+pg||
+
+qx|credits|
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }    {Credits ^z}
+|
+cs||cp||fp|2|at|^c@2
+
+|
+cp||cs||fp||
+ht|g|
+at|^c@2{Example 1: W.S.Root "How to play a bridge hand" page 51 hand 1 ^z}
+
+{Example 5: W.S.Root "How to play a bridge hand" page 52 hand 2 ^z}
+
+
+
+
+
+{Many thanks to Ronald, Yvon and Mihailo for help and hints and suggestions ^z}@0@1|
+%% Impressum at line "z"
+ht|z|fp||
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+pg||
+
+
+
+
+%% ---------- HELP ----------
+qx|Help, Help notes|
+bt||nt||cs|2|fp|2|ht|b|at|^-{ Help }
+^-|
+fp||ht|e|at|
+Short instruction on how to navigate through the movie:
+
+ ^$6  Previous page, permits you to read the previous page of this movie.
+ ^$40  Next page, permits you to read the next page of this movie.
+ ^$7  Previous chapter, takes you back to the first page of the previous topic.
+ ^$41  Next chapter, takes you forward to the first page of the next topic.
+ ^$119  Takes you back to the first page of this movie.
+
+You can display any hand at any time if you click on the player's name. Double clicking the name will show all hands.|
+
+ht|u|
+fp|2|at|^-
+{If you like my lessons, tell it to others, if you dislike something, tell it to me.
+mail to: albrecht.hollstein@@freenet.de}
+^-|
+%% Impressum at line "z"
+ht|z|fp||
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+%% ------------------------------------------------------------------------
+
+0

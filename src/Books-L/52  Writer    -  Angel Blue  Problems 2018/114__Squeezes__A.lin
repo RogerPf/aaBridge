@@ -65,7 +65,7 @@ Do visit Angel Blue's bridge web site at ^*h http://angelblue.co.il/^*n|
 ht|n|n^|0|at|@1^z  @3^b   {^^^^^^^^^^^^^^ ^z } |
 at|^c@2^z@3^^|
 %%
-ht|n|n#|7|at|All the hands for each lesson are given in a single .lin file.   Each deal has a summary and a few have a link to the full answer text on Angel Blue's website.  Before consulting it we suggest that:-|
+ht|n|n#|7|at|All the hands for each lesson are given in a single .lin file.   Each deal has a summary answer, before consulting it we suggest that:-|
 n#|7|at|^^^*bIF^*n after clicking  { ^*b 1st ^*n }  you cannot work out how to play the hand THEN click on the ^*b DDS  { is Off/On ^*n }  button.   This will show little green 'trick total' numbers by each of your cards.   Click on, and so play, any card that is marked with a light green oval.   This will show you the best lines of play.|
 n#|5|at|^^Your task is to solve the hand and if possible to categorize it as to being a  throw-in, squeeze or whatever.|
 %%
@@ -134,10 +134,22 @@ pc|s2|
 pg| ***** 3 ***** |
 
 
-eb|y___|
+at|      the early play,|
+pg| ***** 4 ***** |
+
+
+%%_aapg-NEAR
+pc|s4|pc|sA|pc|s6|pg||
+pc|sT|pc|s8|pc|s9|pc|s5|pg||
+pc|s3|pc|sQ|pc|sK|pc|s7|pg||
+pc|sJ|eb|y___|
+%%_aapg-STD
+pg| ***** 8 ***** |
+
+
 lg|k|
 at|^q  ^*b Do your thinking  NOW ^*n|
-pg| ***** 4 ***** |
+pg| ***** 9 ***** |
 
 
 bv|f,v|
@@ -146,7 +158,7 @@ at|^*bPlay it Out^*n ^e|
 n#|c|
 vv|play-it-out|
 pf|first-button|
-pg| ***** 5 ***** |
+pg| ***** 10 ***** |
 
 
 eb||
@@ -160,14 +172,14 @@ at|^^^cYou have TWO possible squeezes, ^k^*bAutomatic ^*n in @d's (long menace) 
      ^c                                ^k^*bPositional ^*n  in @h's (long menace) and  @d's (single card menace).
 |n#|3|at|The automatic is to be preferred as it works against BOTH RHO and LHO.|
 pf|all-res-lifted|
-pg| ***** 6 ***** |
+pg| ***** 11 ***** |
 
 
 bv|a,h|
 md|1,,,|
 nt|^z@3^b@2|n^|5|
 at|^^cleared|
-pg| ***** 7 ***** |
+pg| ***** 12 ***** |
 
 
 -------------------------------------------------------------------------------
@@ -179,7 +191,7 @@ nt|^z@3^b@2^^|n^|5|
 lg|f|
 at|^*bSqueeze 2^*n     The hand,|
 vv|roger-on-squeezes|
-pg| ***** 8 ***** |
+pg| ***** 13 ***** |
 
 
 at|      the contract,|
@@ -190,14 +202,14 @@ mb|3N|mb|p|mb|p|mb|p|pg||
 
 at|      the lead,|
 pc|s2|
-pg| ***** 10 ***** |
+pg| ***** 15 ***** |
 
 
 eb|y___|
 lg|k|
 at|^q  ^*b Do your thinking  NOW ^*n
 ^^ ^d Will the same play that worked against the previous Opps hands work against these ?|
-pg| ***** 11 ***** |
+pg| ***** 16 ***** |
 
 
 bv|f,v|
@@ -206,7 +218,7 @@ at|^*bPlay it Out^*n ^e|
 n#|c|
 vv|play-it-out|
 pf|first-button|
-pg| ***** 12 ***** |
+pg| ***** 17 ***** |
 
 
 eb||
@@ -221,14 +233,14 @@ at|^^^cYou have TWO possible squeezes, ^k^*bAutomatic ^*n in @d's (long menace) 
 |n^|9|
 at|^^^cTo answer the question  -  ^*bYES^*n  but only if you chose the  Automatic Squeeze   (in this case is inverted). |
 pf|all-res-lifted|
-pg| ***** 13 ***** |
+pg| ***** 18 ***** |
 
 
 bv|a,h|
 md|1,,,|
 nt|^z@3^b@2|n^|5|
 at|^^cleared|
-pg| ***** 14 ***** |
+pg| ***** 19 ***** |
 
 
 -------------------------------------------------------------------------------
@@ -240,25 +252,25 @@ nt|^z@3^b@2^^|n^|5|
 lg|f|
 at|^*bSqueeze 3^*n     The hand,|
 vv|roger-on-squeezes|
-pg| ***** 15 ***** |
+pg| ***** 20 ***** |
 
 
 at|      the bidding,|
 ha||
 mb|3s|mb|p|mb|p|mb|4h|mb|p|mb|4s|mb|p|mb|6h|mb|p|mb|p|mb|p|
-pg| ***** 16 ***** |
+pg| ***** 21 ***** |
 
 
 at|      the lead,|
 pc|sK|
-pg| ***** 17 ***** |
+pg| ***** 22 ***** |
 
 
 eb|y___|
 lg|c|
 at|^q  ^*b Do your thinking  NOW ^*n
 ^^ ^d LHO's premptive  3@s  means ...|
-pg| ***** 18 ***** |
+pg| ***** 23 ***** |
 
 
 bv|f,v|
@@ -267,7 +279,7 @@ at|^*bPlay it Out^*n ^e|
 n#|c|
 vv|play-it-out|
 pf|first-button|
-pg| ***** 19 ***** |
+pg| ***** 24 ***** |
 
 
 eb||
@@ -279,7 +291,7 @@ n#|c|
 at|^^^dThis is a   Simple Automatic Squeeze   
 |n#|7|at|^h (in this case) against RHO  -  in  @d's (long menace)   and  @c's (single card menace).|
 pf|all-res-lifted|
-pg| ***** 20 ***** |
+pg| ***** 25 ***** |
 
 
 ha|y|
@@ -287,7 +299,7 @@ bv|a,h|
 md|1,,,|
 nt|^z@3^b@2|n^|5|
 at|^^cleared|
-pg| ***** 21 ***** |
+pg| ***** 26 ***** |
 
 
 -------------------------------------------------------------------------------
@@ -299,23 +311,23 @@ nt|^z@3^b@2^^|n^|5|
 lg|f|
 at|^*bSqueeze 4^*n     The hand,|
 vv|roger-on-squeezes|
-pg| ***** 22 ***** |
+pg| ***** 27 ***** |
 
 
 at|      the contract,|
 mb|6d|mb|p|mb|p|mb|p|
-pg| ***** 23 ***** |
+pg| ***** 28 ***** |
 
 
 at|      the lead,|
 pc|hA|
-pg| ***** 24 ***** |
+pg| ***** 29 ***** |
 
 
 eb|y___|
 lg|k|
 at|^q  ^*b Do your thinking  NOW ^*n|
-pg| ***** 25 ***** |
+pg| ***** 30 ***** |
 
 
 bv|f,v|
@@ -324,7 +336,7 @@ at|^*bPlay it Out^*n ^e|
 n#|c|
 vv|play-it-out|
 pf|first-button|
-pg| ***** 26 ***** |
+pg| ***** 31 ***** |
 
 
 eb||
@@ -336,14 +348,14 @@ n#|c|
 at|^^^dThis is a   Simple Positional Squeeze   
 |n#|7|at|^h  against  LHO  -  in  @s's (long menace)   and  @h's (one card menace).|
 pf|all-res-lifted|
-pg| ***** 27 ***** |
+pg| ***** 32 ***** |
 
 
 bv|a,h|
 md|1,,,|
 nt|^z@3^b@2|n^|5|
 at|^^cleared|
-pg| ***** 28 ***** |
+pg| ***** 33 ***** |
 
 
 -------------------------------------------------------------------------------
@@ -356,23 +368,23 @@ nt|^z@3^b@2^^|n^|5|
 lg|f|
 at|^*bSqueeze 5^*n     The hand,|
 vv|roger-on-squeezes|
-pg| ***** 29 ***** |
+pg| ***** 34 ***** |
 
 
 at|      the contract,|
 mb|6d|mb|p|mb|p|mb|p|
-pg| ***** 30 ***** |
+pg| ***** 35 ***** |
 
 
 at|      the lead,|
 pc|hJ|
-pg| ***** 31 ***** |
+pg| ***** 36 ***** |
 
 
 eb|y___|
 lg|k|
 at|^q  ^*b Do your thinking  NOW ^*n|
-pg| ***** 32 ***** |
+pg| ***** 37 ***** |
 
 
 bv|f,v|
@@ -381,7 +393,7 @@ at|^*bPlay it Out^*n ^e|
 n#|c|
 vv|play-it-out|
 pf|first-button|
-pg| ***** 33 ***** |
+pg| ***** 38 ***** |
 
 
 eb||
@@ -395,14 +407,14 @@ in this case working against RHO  -  in  @c's (long menace)   and  @h's (single 
 Because the Squeeze card  (a @d) is in South you need to keep the split @c long menace intact until the end.  
 This way you can discard (from North) an unneeded @c card while still having communication. |
 pf|all-res-lifted|
-pg| ***** 34 ***** |
+pg| ***** 39 ***** |
 
 
 bv|a,h|
 md|1,,,|
 nt|^z@3^b@2|n^|5|
 at|^^cleared|
-pg| ***** 35 ***** |
+pg| ***** 40 ***** |
 
 
 -------------------------------------------------------------------------------
@@ -415,23 +427,23 @@ nt|^z@3^b@2^^|n^|5|
 lg|f|
 at|^*bSqueeze 6^*n     The hand,|
 vv|roger-on-squeezes|
-pg| ***** 36 ***** |
+pg| ***** 41 ***** |
 
 
 at|      the contract,|
 mb|1N|mb|2s|mb|4N|mb|p|mb|6N|mb|p|mb|p|mb|p|
-pg| ***** 37 ***** |
+pg| ***** 42 ***** |
 
 
 at|      the lead,|
 pc|dK|
-pg| ***** 38 ***** |
+pg| ***** 43 ***** |
 
 
 eb|y___|
 lg|k|
 at|^q  ^*b Do your thinking  NOW ^*n|
-pg| ***** 39 ***** |
+pg| ***** 44 ***** |
 
 
 bv|f,v|
@@ -440,7 +452,7 @@ at|^*bPlay it Out^*n ^e|
 n#|c|
 vv|play-it-out|
 pf|first-button|
-pg| ***** 40 ***** |
+pg| ***** 45 ***** |
 
 
 eb||
@@ -454,14 +466,14 @@ in this case working against LHO  -  in  @s's (long menace)   and  @d's (single 
 If you foolishly decide NOT to duck the first trick ^*b THEN ^*n there is a  'Squeeze (without the count) and Throw-in' 
 ^q   but why make life so hard for yourself.|
 pf|all-res-lifted|
-pg| ***** 41 ***** |
+pg| ***** 46 ***** |
 
 
 bv|a,h|
 md|1,,,|
 nt|^z@3^b@2|n^|5|
 at|^^cleared|
-pg| ***** 42 ***** |
+pg| ***** 47 ***** |
 
 
 -------------------------------------------------------------------------------
@@ -474,23 +486,23 @@ nt|^z@3^b@2^^|n^|5|
 lg|f|
 at|^*bSqueeze 7^*n     The hand,|
 vv|roger-on-squeezes|
-pg| ***** 43 ***** |
+pg| ***** 48 ***** |
 
 
 at|      the contract,|
 mb|6N|mb|p|mb|p|mb|p|
-pg| ***** 44 ***** |
+pg| ***** 49 ***** |
 
 
 at|      the lead,|
 pc|sK|
-pg| ***** 45 ***** |
+pg| ***** 50 ***** |
 
 
 eb|y___|
 lg|k|
 at|^q  ^*b Do your thinking  NOW ^*n|
-pg| ***** 46 ***** |
+pg| ***** 51 ***** |
 
 
 bv|f,v|
@@ -499,7 +511,7 @@ at|^*bPlay it Out^*n ^e|
 n#|c|
 vv|play-it-out|
 pf|first-button|
-pg| ***** 47 ***** |
+pg| ***** 52 ***** |
 
 
 eb||
@@ -513,14 +525,14 @@ in this case working against LHO  -  in  @h's (long menace)   and  @s's (single 
 AGAIN  If you foolishly decide NOT to duck the first trick there is then  'Squeeze (without the count) and Throw-in' 
 ^p but again, why make life so hard for yourself.|
 pf|all-res-lifted|
-pg| ***** 48 ***** |
+pg| ***** 53 ***** |
 
 
 bv|a,h|
 md|1,,,|
 nt|^z@3^b@2|n^|5|
 at|^^cleared|
-pg| ***** 49 ***** |
+pg| ***** 54 ***** |
 
 
 -------------------------------------------------------------------------------
@@ -532,23 +544,23 @@ nt|^z@3^b@2^^|n^|5|
 lg|f|
 at|^*bSqueeze 8^*n     The hand,|
 vv|roger-on-squeezes|
-pg| ***** 50 ***** |
+pg| ***** 55 ***** |
 
 
 at|      the contract,|
 mb|3N|mb|p|mb|p|mb|p|
-pg| ***** 51 ***** |
+pg| ***** 56 ***** |
 
 
 at|      the lead,|
 pc|cA|
-pg| ***** 52 ***** |
+pg| ***** 57 ***** |
 
 
 eb|y___|
 lg|k|
 at|^q  ^*b Do your thinking  NOW ^*n|
-pg| ***** 53 ***** |
+pg| ***** 58 ***** |
 
 
 bv|f,v|
@@ -557,7 +569,7 @@ at|^*bPlay it Out^*n ^e|
 n#|c|
 vv|play-it-out|
 pf|first-button|
-pg| ***** 54 ***** |
+pg| ***** 59 ***** |
 
 
 eb||
@@ -569,14 +581,14 @@ lg|e|
 at|^^^eThis is a   Simple Automatic Squeeze  in  @s's (long menace)   and  @h's (single card menace, @hQ).
 There is also a Simple Positional Squeeze (only against LHO) in  @h's (split long menace @hAx - opposite @hQx) and a @s as the single card menace.   However the  Automatic Squeeze  should always be preferred if both are present.      Did you spot both ?|
 pf|all-res-lifted|
-pg| ***** 55 ***** |
+pg| ***** 60 ***** |
 
 
 bv|a,h|
 md|1,,,|
 nt|^z@3^b@2|n^|5|
 at|^^cleared|
-pg| ***** 56 ***** |
+pg| ***** 61 ***** |
 
 
 -------------------------------------------------------------------------------
@@ -589,23 +601,23 @@ nt|^z@3^b@2^^|n^|5|
 lg|f|
 at|^*bSqueeze 9^*n     The hand,|
 vv|roger-on-squeezes|
-pg| ***** 57 ***** |
+pg| ***** 62 ***** |
 
 
 at|      the contract,|
 mb|3n|mb|p|mb|p|mb|p|
-pg| ***** 58 ***** |
+pg| ***** 63 ***** |
 
 
 at|      the lead,|
 pc|cA|
-pg| ***** 59 ***** |
+pg| ***** 64 ***** |
 
 
 eb|y___|
 lg|k|
 at|^q  ^*b Do your thinking  NOW ^*n|
-pg| ***** 60 ***** |
+pg| ***** 65 ***** |
 
 
 bv|f,v|
@@ -614,7 +626,7 @@ at|^*bPlay it Out^*n ^e|
 n#|c|
 vv|play-it-out|
 pf|first-button|
-pg| ***** 61 ***** |
+pg| ***** 66 ***** |
 
 
 eb||
@@ -627,7 +639,7 @@ at|^^^eThis is a   Simple Automatic Squeeze   (Yes, the same as number 8)
 ^cand as this Opps arrangement shows it works just as well against RHO as it did against LHO.
 |
 pf|all-res-lifted|
-pg| ***** 62 ***** |
+pg| ***** 67 ***** |
 
 
 ------------------------------------------------------
@@ -635,6 +647,6 @@ qx||
 bt||
 nt|^z@3^b@2^^|
 ht|m|n#|7|cs|c-chapterColor|at|^a     ^-{  ^*nEnd  -  Squeezes A^*n   }^-^^|
-pg| ***** 63 ***** |
+pg| ***** 68 ***** |
 
 

@@ -1,0 +1,631 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% File       : Peterb370c_Winning Techniques in Declarer Play_ 2011-06-02.lin
+%% Description: Peter's teaching session on Declarer play, BIL, 2011-06-02
+%% Programmer : Vanyvon
+%% Version    : 
+%%            : 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+mn| Peterb370c:Winning Techniques in Declarer Play,2011-06-02|tu||bt||nt||
+
+%% --- Definitions ---
+cr|116|cg|116|cb|1255|        %% blue
+cr|2255|cg|2255|cb|264|       %% yellow
+cr|316|cg|3128|cb|316|        %% dark green
+cr|4255|cb|40|cg|40|          %% red
+fh|120|ff|1Arial|fb|14|fm|1|  %% smaller light
+fh|220|ff|2Arial|fb|26|fm|2|  %% smaller bold
+fh|330|ff|3Arial|fb|34|fm|3|  %% larger light
+fh|430|ff|4Arial|fb|46|fm|4|  %% larger bold
+%% --- End Definitions ---
+
+%% --- Main ---
+qx|Main|
+bv|f,v|
+cs|1|cp|2|fp|4|
+at|
+^-{ Peter Brennan (Peterb370c): Winning Techniques in Declarer Play, 7th lesson,
+   teaching at BIL, June 02, 2011. }
+^-|
+fp|2|cp||ht|f|at|   @2The LIN presentation of Peter 's lesson on Winning Techniques in Declarer Play in the Beginner Intermediate Lounge, 2011-06-02.|
+ht|i|cp||cs|2|
+at|^i   @2{
+
+             ^*GIntroduction, Introduction^*N
+
+^*GB01,    Board 01- endplays^*N
+
+^*GB02,    Board 02- loser-on-loser^*N
+
+^*GB03,    Board 03- forcing an entry with good spots^*N
+
+^*GB04,    Board 04- partial elimination endplay^*N
+
+^*GB05,    Board 05- partial elimination endplay bis^*N
+
+
+              ^*GFinal notes, Final notes^*N
+
+} @0|
+ht|z|cs||at|^b Click   { Flow  >  }  below|
+pg| ***** 0 ***** |
+
+
+%% --- End Main ---
+
+%% ---------- INTRODUCTION ----------
+qx|Introduction|
+nt||cs|1|cp|2|
+at|
+^-{ Introduction }
+^-|
+cp||
+ht|e|fp|1|
+at|Peter Brennan: The purpose of this course is to acquaint you with some useful tools when you declare a hand. Hopefully, by seeing a number of examples in random order you'll recognize these situations when they pop up in your game.  
+
+Each hand features a common challenge of some sort:  dealing with bad suit breaks, handling tricky entry situations, making inferences from the bidding or play, counting enemy distribution and/or points, when to draw trumps, basic end plays, etc.
+
+These hands should be played using IMP or rubber bridge tactics.  Don't even think of risking the contract to make a measly overtrick or two.
+
+
+
+|
+pg| ***** 1 ***** |
+
+
+%% ---------------------------
+
+
+pf|any-time|
+qx|B01,BOARD 1|
+rh||ah|Board 1|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|3SATHAKT52DQ95CAQ2,SKQ763H94DK6CK864,SJ942HQJ3DA42CT53,S85H876DJT873CJ97|mb|-|mb|p|mb|p|mb|1H|mb|1S|mb|2H|mb|p|mb|4H|mb|p|mb|p|mb|p|pc|H9|sk|S| %% small text set kibbing South
+nt|This hand has too many losers!  1@s, 2@ds and 2@cs to be exact. But the bidding suggests West has most of the missing points. Let's hope that helps you in playing this tricky hand. Good luck!|
+pg| ***** 2 ***** |
+
+
+nt|This is a VuGraph hand played last year in the ACBL Spingold Knockout Teams. If you like endplays, this hand is for you.|
+pg| ***** 3 ***** |
+
+
+at|
+If you've followed my earlier suggestion about memorizing (or writing down while you're learning) the distribution of the dummy and your hand, have you been writing down the high card points as well?|
+pg| ***** 4 ***** |
+
+
+at|
+In this hand a little arithmetic tells us the opps have 13 points; because of West's overcall he must have most of them. The plan is to strip West of as many "safe" exit cards as possible then throw him in the lead.  Hopefully his return(s) will help us to set up tricks.|
+pg| ***** 5 ***** |
+
+
+nt|Dummy's 4 - 3 - 3 - 3 shape means there's no ruffs available, so we should draw trumps. Also, this will remove a few of West's "safe" exit cards.|
+pg| ***** 6 ***** |
+
+
+pc|HJ|pc|H6|pc|H2|
+pg| ***** 7 ***** |
+
+
+pc|HQ|pc|H7|pc|H5|pc|H4|
+pg| ***** 8 ***** |
+
+
+pc|H3|pc|H8|pc|HA|pc|S7|
+pg| ***** 9 ***** |
+
+
+at|
+Now we can begin to set up a 2nd @s trick by playing the @sA and then the @s10.|
+pg| ***** 10 ***** |
+
+
+pc|SA|pc|S3|pc|S2|pc|S8|
+pg| ***** 11 ***** |
+
+
+pc|ST|pc|SQ|pc|S4|pc|S5|
+pg| ***** 12 ***** |
+
+
+at|
+Poor West. Endplayed in the 3 remaining suits already.|
+pg| ***** 13 ***** |
+
+
+at|
+He tries to exit with the @dK. We duck that and win the next @d with our @dQ.  We've managed to avoid a second @d loser.|
+pc|DK|pc|D2|pc|D3|pc|D5|
+pg| ***** 14 ***** |
+
+
+pc|D6|pc|D4|pc|DT|pc|DQ|
+pg| ***** 15 ***** |
+
+
+at|
+At this point the declarer, Archie McKellar, cashed a trump.  What should West pitch?  Does it make a difference?|
+pg| ***** 16 ***** |
+
+
+at|
+Suppose West throws a @s.|
+pg| ***** 17 ***** |
+
+
+pc|HK|pc|S6|pc|C3|pc|D7|
+pg| ***** 18 ***** |
+
+
+pc|D9|pc|C6|pc|DA|pc|D8|
+pg| ***** 19 ***** |
+
+
+pc|SJ|pc|C7|pc|C2|pc|SK|nt|On the @sJ McKellar threw his low @c, a LOSER ON LOSER play. West was endplayed for the 2nd time in this hand, forced to lead away from his @cK into declarer's @cAQ.  Throwing a @c instead of the @s would make no difference.|
+pg| ***** 20 ***** |
+
+
+at|
+Let's replay trick ##8.|up|11|
+pg| ***** 21 ***** |
+
+
+pc|C4|pc|C3|pc|D7|
+pg| ***** 22 ***** |
+
+
+pc|D9|pc|C6|pc|DA|pc|D8|
+pg| ***** 23 ***** |
+
+
+pc|SJ|pc|C7|pc|C2|pc|SK|at|
+Now West can lead from the @cK or give dummy a trick with the @s9.|
+pg| ***** 24 ***** |
+
+
+mc|10|sk||sc|y|nt|The lesson text: Four @h was a difficult contract, especially when West found a safe opening trump lead.  West's safety was short lived when he was put on lead with the 2nd round of @s and forced to concede a @d trick.  Later, declarer executed a LOSER ON LOSER play by leading the @sJ from dummy and pitching the @c2, endplaying West again and making the contract.|
+pg| ***** 25 ***** |
+
+
+pf|any-time|
+qx|B02,BOARD 2|
+rh||ah|Board 2|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|4SQ6HA954DKJT963C7,ST873HQ86DA7CK864,SK5H3DQ542CAJT953,SAJ942HKJT72D8CQ2|mb|1s|mb|2D|mb|3s|mb|5d|mb|p|mb|p|mb|d|mb|p|mb|p|mb|p|sk|S|sc||nt|The defense got off to a good start with the trump lead because you have 2 Aces to lose and you must take care of those 3 little @h losers also. If West is able to continue with another @d, you'll only be able to ruff two of your @hs on the table, leaving you a trick short. Good luck!|pc|DA|
+pg| ***** 26 ***** |
+
+
+nt|Basically, there are two main ways to reduce the number of losers in declarer's hand - ruff them in dummy or pitch them on dummy's long suit.|
+pg| ***** 27 ***** |
+
+
+pc|d2|pc|d8|pc|d3|
+pg| ***** 28 ***** |
+
+
+pc|d7|pc|d4|pc|h2|pc|dJ|at|
+Once the defense has led 2 rounds of trump leaving only 2@ds in dummy, the only source of our 11th trick is in @c. It's right to test them immediately.|
+pg| ***** 29 ***** |
+
+
+at| If they break 3 - 3 (36%) we'll have no problem setting up the suit.  However, with the more likely 4 - 2 split (49%), we'll have to ruff  @cs three times to set up our winner.|
+pg| ***** 30 ***** |
+
+
+nt|This means we'll need 4 entries to the board, 3 to ruff @cs and the 4th to cash the established @cs.  We have the @cA and 2@h ruffs, so we need one more entry.|
+pg| ***** 31 ***** |
+
+
+pc|c7|pc|c4|pc|cA|pc|c2|
+pg| ***** 32 ***** |
+
+
+pc|c3|pc|cQ|pc|d9|pc|c6|
+pg| ***** 33 ***** |
+
+
+at|
+This extra entry can only come from @s. To set up that entry the correct play is to lead the @sQ after getting the @cs going.  If either defender wins and leads back a @s we'll have no trouble establishing our 5th @c for a @h discard.  Everybody following this?|
+pg| ***** 34 ***** |
+
+
+at|
+But defenders have a nasty habit of not getting with the program.  They might hold up the @sA denying us that vital entry.|
+pc|sQ|pc|s3|pc|s5|pc|s4|
+pg| ***** 35 ***** |
+
+
+at|
+In general, that's good defensive play, but it won't work here.|
+pg| ***** 36 ***** |
+
+
+pc|hA|pc|h6|pc|h3|pc|h7|
+pg| ***** 37 ***** |
+
+
+pc|h4|pc|h8|pc|d5|pc|hT|
+pg| ***** 38 ***** |
+
+
+at| North's @cJ109, all equals against West's @cK, give us a chance to unleash a powerful and decisive LOSER-ON-LOSER play. The effect is to exchange our @s loser for a @c loser.|
+pc|cJ|
+pg| ***** 39 ***** |
+
+
+pc|s2|pc|s6|pc|cK|
+pg| ***** 40 ***** |
+
+
+nt|Of course, in the process we've set up our 11th trick, the @c10. That's the purpose of this particular loser-on-loser play.|
+pc|hQ|pc|dQ|pc|hK|pc|h5|
+pg| ***** 41 ***** |
+
+
+pc|cT|pc|s9|pc|h9|pc|c8|
+pg| ***** 42 ***** |
+
+
+pc|sK|pc|sA|pc|d6|pc|s7|
+pg| ***** 43 ***** |
+
+
+mc|11|sk||sc|y|at|
+The lesson text:  We will need to establish@cs to make this contract.  If the split is the normal 4 - 2 (49%), four entries to dummy are needed.  The @cA and two@h ruffs leave us one entry short. To establish another entry, lead the@sQ.  If East wins, the@sK becomes an entry.  If East ducks, we can discard our@s loser on the @cJ.|
+pg| ***** 44 ***** |
+
+
+pf|any-time|
+qx|B03,BOARD 3|
+rh||ah|Board 3|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|3SA6HAK98752D7CQ95,ST874HQ6DAK92C876,SQJ52HJ4D8653CKT3,SK93HT3DQJT4CAJ42|mb|-|mb|p|mb|p|mb|4H|mb|p|mb|p|mb|p|pc|DA|sk|s|sc||nt|The probability of dropping the @hQ, holding 9 @hs, by playing the AK is 53%.  Hence, "8 ever, 9 never."  Even if you don't lose a @h trick you have potentially 1 @s and 2 @c losers not to mention the @dA.  If the @cs are unfavorably located you may have entry problems to take the @s finesse. Play to give yourself the most chances. Good luck!|
+pg| ***** 45 ***** |
+
+
+nt|East's drop of the @dQ is a commonly used signal promising either the Queen was a singleton or East has the @dJ.  West knows it's safe to underlead his King.|
+pc|D3|pc|DQ|pc|D7|
+pg| ***** 46 ***** |
+
+
+pc|D2|pc|D5|pc|DT|pc|H2|
+pg| ***** 47 ***** |
+
+
+at|
+Our volunteer was very unlucky to find the @cAJ offside.  We will now look at the four hands for the replay.|
+pg| ***** 48 ***** |
+
+
+at|
+The probability of making two tricks in @c is 51%. We would just guess which opp had the @cJ and play accordingly.  BTW, the extra 1% is because of a stiff @CA or Jack.|sk||
+pg| ***** 49 ***** |
+
+
+nt|As you see the @s finesse is on but the problem is getting to the board to take it. We can afford to lose 2 @c tricks if we must, as long as we can then try the winning @s finesse.  Everybody agree with that?|
+pg| ***** 50 ***** |
+
+
+at|
+Here's the point of this hand. Given those beautiful @c spots, we can force an entry with clever play even when East holds the @cAJ.  Here's how.|
+pg| ***** 51 ***** |
+
+
+pc|HA|pc|H6|pc|H4|pc|H3|
+pg| ***** 52 ***** |
+
+
+pc|HK|pc|HQ|pc|HJ|pc|HT|
+pg| ***** 53 ***** |
+
+
+at|
+Had the @hQ been single, the @hJ would have been an entry for the @s finesse. Since it didn't happen, we have to lead @c from our hand. We MUST start with the @c__.     Please vote now.  @cQ, @c9, @c5, ni (no idea)|
+pg| ***** 54 ***** |
+
+
+at|
+We lead the @c9 planning to run it if it's not covered.  If it wins or draws the @cA we have our extra @c trick.  Of course, East will win with the @cJ which means we have 2 @c losers.|
+pg| ***** 55 ***** |
+
+
+pc|C9|pc|C6|pc|C3|pc|CJ|
+pg| ***** 56 ***** |
+
+
+pc|DJ|pc|H5|pc|D9|pc|D6|
+pg| ***** 57 ***** |
+
+
+nt|Now we lead the @cQ planning to overtake with the board's @cK if West doesn't play the @cA.  Whether East wins or ducks this trick we will have our entry for the @s finesse.|
+pc|CQ|pc|C7|pc|CK|pc|CA|
+pg| ***** 58 ***** |
+
+
+at|
+I've been telling you good spots are important.  I wasn't kidding!  :)|
+pg| ***** 59 ***** |
+
+
+pc|D4|pc|H7|pc|DK|pc|D8|
+pg| ***** 60 ***** |
+
+
+pc|C5|pc|C8|pc|CT|pc|C4|
+pg| ***** 61 ***** |
+
+
+pc|SQ|pc|S3|pc|S6|pc|S4|
+pg| ***** 62 ***** |
+
+
+pc|S2|pc|S9|pc|SA|pc|S7|
+pg| ***** 63 ***** |
+
+
+pc|H9|pc|S8|pc|S5|pc|C2|mc|10|sk||sc|y|
+pg| ***** 64 ***** |
+
+
+nt|Lesson text: The key to this hand is the handling of the @c suit to force an entry to the board. With this combination, begin by leading the @c9 intending to let it run if West doesn't cover with the @cJ.  If East produces the @cJ, then later lead the @cQ and overtake with the board's @cK.  This guarantees an entry to dummy so declarer can take the@s finesse.|
+pg| ***** 65 ***** |
+
+
+pf|any-time|
+qx|B04,BOARD 4|
+rh||ah|Board 4|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|1SKJ87HKQ73DQ92CA8,SAQT2H95D76CJT943,S653HAJT64DAJT4C2,S94H82DK853CKQ765|mb|-|mb|-|mb|-|mb|1N|mb|p|mb|2D|mb|p|mb|2H|mb|p|mb|3D|mb|p|mb|4H|mb|p|mb|p|mb|p|pc|CJ|sk|S|sc||nt|This looks like a very good contract. There will be a problem only if the @dK and @SAQ are badly placed. Then you run the risk of losing 1@d and 3@ss. Can you improve your chances if you face that disastrous distribution?  Good luck!|
+pg| ***** 66 ***** |
+
+
+nt|This looks like another "dangerous opponent" hand. Which opponent do you want to keep off lead?|
+pg| ***** 67 ***** |
+
+
+at| Yes, East.  Why?|
+pg| ***** 68 ***** |
+
+
+at|
+Yes, because we don't fancy a lead from East through our @ss.|
+pg| ***** 69 ***** |
+
+
+at|
+In earlier hands, we were able to keep a dangerous East off lead. Not so here. We must develop @ds and only East can win the finesse.|
+pg| ***** 70 ***** |
+
+
+at|
+It appears we should tackle the suit by leading the @d9 and letting it run if West doesn't cover.  However, if East produces the @dK he'll surely lead back a @s.|
+pg| ***** 71 ***** |
+
+
+nt|West will win and exit safely in a minor suit and later he'll win 2 more @s tricks and down we will go. Can everybody picture that happening?|
+pg| ***** 72 ***** |
+
+
+at| The way to improve your chances to make this hand is with a PARTIAL ELIMINATION play, a new technique for us in this class.  The idea is similar to a full elimination play.|
+pg| ***** 73 ***** |
+
+
+at|
+Ideally, we'd love to throw West in and force him to lead a @s. That would insure we make a @s trick no matter where the @sA is. We can eliminate @hs and @cs easily, but we can't eliminate @ds from both defenders' hands.  That's why it's a "partial elimination."|
+pg| ***** 74 ***** |
+
+
+at|
+The key is "both defenders" here.  If we can eliminate @ds from West, we can endplay him. To begin, we'll ruff our @c and draw trump. Then we'll do our best to eliminate @ds from West.|
+pg| ***** 75 ***** |
+
+
+pc|C2|pc|C7|pc|CA|
+pg| ***** 76 ***** |
+
+
+pc|C8|pc|C3|pc|H6|pc|C6|
+pg| ***** 77 ***** |
+
+
+pc|HA|pc|H2|pc|H3|pc|H5|
+pg| ***** 78 ***** |
+
+
+pc|H4|pc|H8|pc|HK|pc|H9|
+pg| ***** 79 ***** |
+
+
+pc|D2|pc|D6|nt|If East has the @dK we must find West with only one or two @ds because East will win the 2nd @d lead and return a @s. If West has a 3rd @d that will be his safe exit card. Are you all following this?|
+pg| ***** 80 ***** |
+
+
+at|
+I know some of you are confused.  What if West DOES have the @dK?  Aren't we giving up a trick?  I'll answer that very soon.|
+pc|DA|pc|d5|
+pg| ***** 81 ***** |
+
+
+pc|D4|pc|DK|pc|DQ|pc|D7|
+pg| ***** 82 ***** |
+
+
+at|
+So East wins the 2nd @d lead and returns a @s as we feared. But with nothing but black cards West must return either a @c giving us a ruff-sluff or a @s setting up our @sK.|
+pc|S9|pc|SJ|pc|SQ|pc|S3|sk||
+pg| ***** 83 ***** |
+
+
+mc|10|sk||sc|y|nt|Here's the lesson text:  This very good contract can only be in trouble if the@dK and the@sAQ are badly placed. Upon losing the@d finesse, East will return a @s and we may lose 3 @s tricks  Our best chance to overcome this distribution is to use a PARTIAL ELIMINATION play.  Draw trump, strip @cs and play @dA and a low @d to your @dQ.  If West has a doubleton @d he'll eventually be endplayed.|
+pg| ***** 84 ***** |
+
+
+md|1SKJ87HKQ73DQ92CA8,SAQTH95DK76CJT943,S653HAJT64DAJT4C2,S942H82D853CKQ765|mb|-|mb|-|mb|-|mb|1N|mb|p|mb|2D|mb|p|mb|2H|mb|p|mb|3D|mb|p|mb|4H|mb|p|mb|p|mb|p|pc|CJ|sk||sc||nt|Now let's address the situation when the @dK is onside.|
+pg| ***** 85 ***** |
+
+
+at|
+As you see, West has the @dK. So now we can take the @d finesse and probably make an overtrick.|
+pg| ***** 86 ***** |
+
+
+at|
+Of course, we don't know that at the start of the hand. We should use the same sequence of plays as before because if West has the @dK the hand is perfectly safe anyway.|
+pg| ***** 87 ***** |
+
+
+pc|C2|pc|C7|pc|CA|
+pg| ***** 88 ***** |
+
+
+pc|C8|pc|C3|pc|H6|pc|C6|
+pg| ***** 89 ***** |
+
+
+pc|HA|pc|H2|pc|H3|pc|H5|
+pg| ***** 90 ***** |
+
+
+pc|H4|pc|H8|pc|HK|pc|H9|
+pg| ***** 91 ***** |
+
+
+pc|D2|pc|D6|
+pg| ***** 92 ***** |
+
+
+at|
+There is a category of hands where if the key finesse is onside we don't have to take it! This is one of those hands.|
+pc|DA|pc|D5|
+pg| ***** 93 ***** |
+
+
+at|
+If West has the @dK and gets in the lead with it he can't attack @ss.  It's as simple as that.|
+pc|D4|pc|d8|pc|dQ|pc|dK|
+pg| ***** 94 ***** |
+
+
+at|
+So West is in and can exit safely with another @d. All we have to do is...|
+pg| ***** 95 ***** |
+
+
+pc|D7|pc|DT|pc|D3|pc|D9|
+pg| ***** 96 ***** |
+
+
+pc|S3|pc|S2|
+pg| ***** 97 ***** |
+
+
+at|
+...cover East's @s.  When West wins he is ENDPLAYED, forced to lead either a @c or a @s.  Either way we make our contract.|
+pc|s7|pc|sT|
+pg| ***** 98 ***** |
+
+
+nt|So the hand makes anytime West has the @dK or one or two small @ds.|
+pg| ***** 99 ***** |
+
+
+mc|10|sc|y|nt|Here's the lesson text for this variation:  Here the @dK is onside. The play should go the same way, i.e. eliminate @hs and @cs and play two rounds of @ds.  At IMP's or rubber bridge, NEVER risk a contract to make an overtrick!|
+pg| ***** 100 ***** |
+
+
+pf|any-time|
+qx|B05,BOARD 5|
+rh||ah|Board 5|
+pn|peterb370c,peterb370c,peterb370c,peterb370c|st||md|4SQ5HK765DAQJ2CAQ2,SAKJT43H8D853CKJ7,S72HAQJTDT97CT965,S986H9432DK64C843|mb|p|mb|1D|mb|1S|mb|d|mb|p|mb|4H|mb|p|mb|p|mb|p|pc|SA|sk|s|sc||nt|This looks bleak! Two @ss to lose and a possible @d and 2 @cs also. You'll need some skill and lots of luck to make this one. Good luck!|
+pg| ***** 101 ***** |
+
+
+nt|This is another VuGraph hand. At stake was a chance to represent the USA in last year's Bermuda Bowl championship.  Sitting South was Robert Levin, a star player for 30 years.|
+pg| ***** 102 ***** |
+
+
+at|
+The play proceeded at a fast clip until trick 8 when Levin paused to think things over. East had played the @s6 and @s8 on the first 2 tricks which marked him with an odd number of @s.  Surely they were 6 - 3.  (Are you all OK with that?)|
+pg| ***** 103 ***** |
+
+
+pc|S2|pc|S6|pc|S5|
+pg| ***** 104 ***** |
+
+
+pc|SK|pc|S7|pc|S8|pc|SQ|
+pg| ***** 105 ***** |
+
+
+pc|H8|pc|HT|pc|H2|pc|H5|
+pg| ***** 106 ***** |
+
+
+pc|HJ|pc|H3|pc|H6|pc|S3|
+pg| ***** 107 ***** |
+
+
+pc|DT|pc|D4|pc|D2|pc|D3|
+pg| ***** 108 ***** |
+
+
+pc|D9|pc|D6|pc|DQ|pc|D5|
+pg| ***** 109 ***** |
+
+
+pc|H7|pc|S4|pc|HQ|pc|H4|
+pg| ***** 110 ***** |
+
+
+pc|D7|pc|DK|pc|DA|pc|D8|
+pg| ***** 111 ***** |
+
+
+at|
+The key question is "Where is the @cK?"  To Levin, it seemed certain West was marked with it.|
+pg| ***** 112 ***** |
+
+
+nt|Without it, with just a strong 6 card @s suit, West might have made a weak jump overcall with a bid of 2@s.  More importantly, East has already shown the @dK.  If he had the @cK as well, along with 3 @ss, he wouldn't have passed after North's double.  Make sense?|
+pg| ***** 113 ***** |
+
+
+at|
+Levin has the count.  West had 6@ss, only 1@h and 3@ds so he must have had 3@cs to the King.|
+pg| ***** 114 ***** |
+
+
+at| 
+The location of the @cK mattered because he was going to exit in @c and West had to win the trick.  (If East were able to win the @c trick he could exit safely with another @c or even with his last trump.)|
+pg| ***** 115 ***** |
+
+
+at|
+Levin found the perfect solution.  He played the...|
+pg| ***** 116 ***** |
+
+
+pc|CQ|
+pg| ***** 117 ***** |
+
+
+at| Poor West.  Nothing but black cards.  :(  A @s return allows declarer to ruff with the @hA and discard the small @c from his hand while a @c return gives a free finesse and the contract.|
+pc|CK|pc|C5|pc|C3|sk||
+pg| ***** 118 ***** |
+
+
+nt|Notice the @cQ forced West in the lead with no safe exit card. Not so if East had been able to win with the @cK; his remaining trump was perfectly safe to exit with and wait for another @c trick.|
+pg| ***** 119 ***** |
+
+
+at|
+This type of endplay is another PARTIAL ELIMINATION ENDPLAY.|
+pg| ***** 120 ***** |
+
+
+at|
+Yes, declarer could have exited with a low @c because West had @cKJx.  But if East had the @cJ, a low @c would have been a disaster.|mc|10|sc|y|
+pg| ***** 121 ***** |
+
+
+at|
+The lesson text:  This hand is an example of a PARTIAL ELIMINATION ENDPLAY.  Many elimination plays involve stripping suits so neither opponent has a safe exit card.  The difference here, at trick 9, is only West can be thrown in and forced to make a favorable lead.|
+pg| ***** 122 ***** |
+
+
+0

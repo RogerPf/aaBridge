@@ -1,0 +1,225 @@
+%% tags to identify the topic
+
+mn| Al (xx1943) teaching :              A simple 3NT|
+tu|y|
+
+%% Font definiton:
+fh|150|ff|1Arial|fb|110|fm|1|
+fh|235|ff|2Arial|fb|28|fm|2|
+fh|340|ff|3Arial|fb|35|fm|3|
+fb|49|fm|4|fb|4|fm|4|
+
+%% color definition
+cr|116|cg|116|cb|1255|              blau = blue
+cr|2255|cg|2255|cb|264|             gelb = yellow
+cr|30|cg|30|cb|3128|                dunkelblau = dark blue
+cr|4255|cg|4255|cb|40|              dunkleres gelb = dark yellow
+cr|516|cg|5128|cb|516|              grün = green
+cr|6245|cb|6220|cg|6235|            beige
+cr|70|cb|7220|cg|7235|              grün-blau = green-blue
+cr|8255|cb|8200|cg|8200|            rosa = pink
+cr|9200|cb|90|cg|9150|              braun = brown
+
+
+%%% -----------------------------------menu-------------------------------------------
+qx|Menu|tu||
+set background color
+bg|6|
+bt||nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^-{ Al teaching:  Declarer play for beginners )}
+
+{Which suit to develop}
+^-|
+cp||fp||
+
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+ht|d|
+cs|3|
+cp|4|
+^-
+fp|1|3d|0|
+cp||
+fp||
+cs|2|
+ht|f|
+at|^c@2^x@3{
+^*GIntro,     What you learn in this lesson - please read it first^*N
+
+{
+^*Go7p,     How the hand should be played^*N
+^*Go7pf,     Freeplay of the hand to compare the lines^*N
+^*Go7s,     The hand slightly changed^*N
+^*Go7sf,     Freeplay of the changed hand^*N
+^*Go7o,     How th hand was played in BBO^*N
+
+{
+^*Gintro, ^c     About this series of lessons^*N 
+
+{^x@3
+^*Ghelp,     How to navigate in this movie ^*N
+}|
+pg||
+
+
+
+
+%% ---------- HELP ----------
+qx|Help, Help notes|tu|y|
+bt||bg|6|nt||cs|2|fp|2|ht|e|at|
+^b@2^x@3{
+ How to navigate this movie 
+ }
+ |
+
+fp||at|{
+   ^$6  Previous page, permits you to read the previous page of this movie.
+   ^$40  Next page, permits you to read the next page of this movie.
+   ^$7  Previous chapter, takes you back to the first page of the previous topic.
+   ^$41  Next chapter, takes you forward to the first page of the next topic.
+   ^$119  Takes you back to the first page of this movie.
+
+   You can display any hand at any time if you click on the player's name. 
+   Double clicking the name will show all hands.
+}|
+
+ht|o|cs|8|
+fp|2|at|
+
+{
+  This movie is optimized for BBO "wide-screen"  
+  You can toggle between the wide and the small mode by keying CTRL+"W". 
+}|
+cs|9|at|
+
+{
+  If you like my lessons, tell it to others, if you dislike something, tell it to me.  
+  mail to: albrecht.hollstein@@freenet.de
+}
+|
+ht|z|fp||
+%% Impressum at line "z"
+ht|y|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")
+     2009-07-26|
+
+pg||
+
+
+
+%% -----------------INTRO-------------------------------------------------------
+
+qx|intro|nt||cs|2|ht|g|tu|y|
+at|
+
+^-
+{
+   Here is an example of a (simple?) 3NT contract where declarer had the choice 
+   between 2 suits to look for the extra trick he needed.
+   
+   Declarer played without plan and got it wrong
+   .
+   }
+
+^-|
+pg||
+
+
+%
+
+
+
+
+qx|o7p|st||nt|now make your plan!|
+md|1S3JH3QAD469TC48KA,S689QH578TD35AC23,S25TAH9JKD8QC9TJQ,|rh||ah|Board 7|ah|planned|
+sv|b|mb|1D|mb|p|mb|1S|mb|p|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pc|H5|
+pg||at|
+Sure tricks:|pg||at| 1@S+|hc|sa|pg||at| 3@H+|hc|hakqj93|pg||hc|cakqjt984|at| 4@c=8 tricks. We need 1 more.|
+pg||lc|sahakqj93cakqjt984|at|
+Only @s and @d the 2 suits with 6 cards in the combined hands remain to look for the needed extra trick.
+Development by length is not possible, so you must finesse or promote.|
+pg||lb|*mWhich suit do you plan to work on to establish the needed extra trick?^spades~diamonds^2|
+nt|To score a 2nd trick in @s, you need WEST to hold both @sK and Q. That is about 25%. In @d you hold Q1098 and must score a trick for sure, if A, K and J are knocked out. You promoted the 8 to take the 4th trick. If opponents attack the @s in between, they are very welcome. They cannot prevent you to make a 2nd trick in @s, if THEY play the suit.|
+pg||pc|hhhq|
+pg||pc|ddddj|
+pg||pc|hhhh|
+pg||pc|dddda|
+pg||pc|hhhh|
+pg||pc|ddsdk|mc|9|sc|y|
+pg||nt|REMEMBER|cs|2|
+at|^-
+{A1052 -J3 makes an extra normally only if opponents play the suit}
+
+{Q8 - 10964 makes always an extra trick, if you can afford to lose the lead 3 times.}|
+
+pg||
+
+
+
+qx|o7pf|st||nt||
+md|1S3JH3QAD469TC48KA,S689QH578TD35AC23,S25TAH9JKD8QC9TJQ,|rh||ah|Board 7|ah|planned|ah|freeplay|
+sv|b|mb|1D|mb|p|mb|1S|mb|p|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pc|H5|
+at|^-
+{You may now play whatever cards you like! Just click on the card you wish to play.
+ The most recently played card may be taken back by clicking on ^$6 , Undo.
+Once a trick is complete, click on the first card of the next trick.
+Inspect a played trick by pointing at it with the mouse.}|
+pf|y|pg||pf||
+
+
+
+
+qx|o7s|st||sc||nt|The hands are a bit changed.|pf||
+md|1S3JH3QAD462TC48KA,S682QH578TD35AC23,S95TAH9JKD8QC9TJQ,|rh||ah|Board 7|ah|slightly changed|
+sv|b|mb|1D|mb|p|mb|1S|mb|p|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pc|H5|
+pg||at|
+North is dealt the @s9 instead of the @s2|hc|s9s2|
+pg||at|
+South is dealt the @d2 instead of the @d9|hc|d2d9|
+pg||lc|s9s2d2d9|nt|The analysis is identical to the hand before you need 1 extra trick from @s or @d.|
+
+pg||lb|*mWhich suit do you plan to work on to establish the needed extra trick?^spades~diamonds^2|
+nt|This time you must work on @s. The double finesse has chance of 75% while in !D you'll lose 4 tricks for sure.|
+pg||pc|hhhq|
+pg||pc|sss9sk|
+pg||pc|hhahh|
+pg||pc|sssts|at|
+BINGO|
+pg||mc|9|sc||
+
+pg||
+
+qx|o7sf|st||sc||nt||pf|y|
+md|1S3JH3QAD462TC48KA,S682QH578TD35AC23,S95TAH9JKD8QC9TJQ,|rh||ah|Board 7|ah|slightly changed|ah|freeplay|
+sv|b|mb|1D|mb|p|mb|1S|mb|p|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pc|H5|at|^-
+{You may now play whatever cards you like! Just click on the card you wish to play.
+ The most recently played card may be taken back by clicking on ^$6 , Undo.
+Once a trick is complete, click on the first card of the next trick.
+Inspect a played trick by pointing at it with the mouse.}|
+pf|y|pg||pf||
+
+
+
+
+qx|o7so|st||nt|This is how the original play went|pf||
+md|1S3JH3QAD469TC48KA,S689QH578TD35AC23,S25TAH9JKD8QC9TJQ,|rh||ah|Board 7|ah|original|
+sv|b|mb|1D|mb|p|mb|1S|mb|p|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pg||pc|H5|pc|H9|pc|H2|pc|HA|
+pg||pc|S3|pc|S8|pc|ST|pc|SK|
+pg||pc|S4|pc|SJ|pc|SQ|pc|S2|
+pg||pc|HT|pc|HJ|pc|H6|pc|HQ|
+pg||pc|DT|pc|D3|pc|D8|pc|DJ|
+pg||pc|DK|pc|D4|pc|D5|pc|DQ|
+pg||pc|D2|pc|D6|pc|DA|pc|S5|mc|8|sc|y|
+
+pg||

@@ -18,14 +18,79 @@ import com.rogerpf.aabridge.controller.Aaa;
 //@formatter:off
 
 public class VersionAndBuilt {
-	static int prob_fmt_req_numb = /* best to leave this alone ... best to leave THIS setting alone unless */5220;// compatibility needed
+	static int prob_fmt_req_numb = /* best to leave this alone ... best to leave THIS setting alone unless */6000;// compatibility needed
 	
-	static String ver = "5.2.0.";  public static String devExtra = "_b";    // extra is dev only, normally null
+	static String ver = "6.0.0.";  public static String devExtra = "";    // extra is dev only, normally null
 
-	public static int buildNo = 5229;    static String y = "2020", m = "Aug", d = "11";
+	public static int buildNo = 6003;    static String y = "2021", m = "Jan", d = "01";
 
-
-	// 2020-08-11  5229  _b
+   
+	// 2021-01-01  6002  Release Candidate
+	// 2021-01-01  6000       pre major release test build
+	// 2021-01-01  5229  _p8  Grouping Books and Menubar  -  a How To.doc  updated
+	// 2021-01-01  5229  _p7  More shortcuts added for buttons
+	// 2020-12-31  5229  _p6  change to vp|-*--,...| now CAN show with  Show all hands
+	// 2020-12-30  5229  _p5  Book list scrolling and shortcuts added to
+	// 2020-12-29  5229  _p4  F = 1st,  E = ETD, B = Back to M,  O = toggle DDS sOlver, I = toggle kIb visibility
+	// 2020-12-28  5229  _p3  F = 1st,  E = ETD, B = Back to M,  D = toggle DDS,        K = toggle Kib visibility
+	// 2020-12-28  5229  _p2  F Key now actions enter 1st button
+	// 2020-12-27  5229  _p1  hondo mentoring2012d (last of year) added
+	// 2020-12-27  5229  _n9  first on repo-18
+	//
+	//			migrated to repo-18
+	//
+	// 2020-12-27  5229  _n8  last on repo-17
+	// 2020-12-27  5229  _n7  Bil-2020 now blue and Language menu hidden by default
+	// 2020-12-26  5229  _n6  BIL-2020 now in place
+	// 2020-12-24  5229  _n5  Re-struct of Books-B continues menu now looks better
+	// 2020-12-23  5229  _n4  Re-struct of Books,  BIL-2020 (Books-B) replaces Books-X
+	// 2020-12-22  5229  _n3  mass inclusion of BIL not sorted out fully
+	// 2020-12-20  5229  _n2  hondo mentoring2012c added
+	// 2020-12-17  5229  _n1  DEV_config file params added to help debug lin from xml
+	// 2020-12-15  5229  _n0  hondo mentoring2012b added 
+	// 2020-12-12  5229  _m9  rework of _m8 which is buggy like m3 !
+	// 2020-12-12  5229  _m8  auto add now does NOT stop attempt to play lowest card
+	// 2020-12-12  5229  _m7  fixed bug added _m3 single letter cards eg play a diamond   pg|d| would not play
+	// 2020-12-11  5229  _m6  debug lin file partner quick edit added
+	// 2020-12-09  5229  _m5  new menu support jumping to 2nd lin
+	// 2020-12-09  5229  _m4  Improvements to 'vh' command
+	// 2020-12-07  5229  _m3  vh visibility hands  any hand can now be shown or hidden
+	// 2020-12-07  5229  _m2a  fixed extra '2' report on cards PROBLEMS with drag n drop ALL NOW FIXED
+	// 2020-12-06  5229  _m1  Hondo mentoring12a added
+	// 2020-12-05  5229  _k9  single missing cards (as delt) not now reported if in DEV mode
+	// 2020-12-02  5229  _k8  drag drop Books-E  book  appears   stable
+	// 2020-12-01  5229  _k7  dropped books book marks sort of working
+	// 2020-12-01  5229  _k6  Can drag and drop "books" well sort of 
+	// 2020-11-30  5229  _k5  #text now preserves rh header id
+	// 2020-11-19  5229  _k4  bug fixed in 'Alo' handling
+	// 2020-11-16  5229  _k3  Testing the 'Also' extension to Bot Instructions 'bi'
+	// 2020-11-15  5229  _k2  Hondo mentoring2011c
+	// 2020-11-15  5229  _k1  BI Now stable first field is West's card the second is East's
+	// 2020-11-14  5229  _k0  Some stability now  -  BI bot instructions changed 
+	// 2020-11-13  5229  _j9  bi bot instruction bug fixed (fingers crossed)
+	// 2020-11-11  5229  _j8  changes to  pf 1st button message
+	// 2020-11-10  5229  _j7  tweek to the - fix the non-restore hidden - below
+	// 2020-11-10  5229  _j6  fix the non-restore hidden when in virgin semi tutorial mode
+	// 2020-11-09  5229  _j5  Hondo mentoring2011b  and BM 540 into archive
+	// 2020-11-07  5229  _j4  internal link to file checks current loaded (possibly external) book
+	// 2020-11-07  5229  _j3  aapg package now 3.52  supports multi pg|formats|
+	// 2020-11-02  5229  _j2  L0 - L9 'super names' added
+	// 2020-11-02  5229  _j1  Hondo mentoring2011a
+	// 2020-10-26  5229  _h9  Hondo mentoring2010c
+	// 2020-10-19  5229  _h8  Hondo mentoring2010b added and aadm fix to 2nd copy
+	// 2020-10-04  5229  _h7  Hondo mentoring2010a added
+	// 2020-09-27  5229  _h6  Hondo mentoring2009d added
+	// 2020-09-21  5229  _h5  Hondo mentoring2009c added
+	// 2020-09-13  5229  _h4  Hondo mentoring2009b added and some bot hints on brennan
+	// 2020-09-08  5229  _h3  rename zaXXons to fit contents better
+	// 2020-09-08  5229  _h2  clean up Brannen problems
+	// 2020-09-08  5229  _h1  clean up on zaXXon and Brannen problems and in problem menu
+	// 2020-09-07  5229  _g   now 5.3 and Hondo mentoring2009a added  and Book-T problems tidied
+	// 2020-08-31  5229  _f   Hondo mentoring2008d added
+	// 2020-08-23  5229  _e   Hondo mentoring2008c added
+	// 2020-08-17  5229  _d   Hondo mentoring2008b added
+	// 2020-08-15  5229  _c   tiny fixes to LTPB1
+	// 2020-08-15  5229  _b   sk||  now   sk|-|   (in saved lin files)
 	// 2020-08-10  5229  _a   Hondo mentoring2008a added  and lin file tweaks
 	// 2020-08-07  5228  Release Candidate
 	// 2020-08-07  5227  _w   doc now proof read TY Charlene

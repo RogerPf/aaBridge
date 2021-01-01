@@ -1,0 +1,272 @@
+ %% tags to identify the topic
+
+mn| Al (xx1943) teaching :     Ruff your loser, if possible|
+tu|y|
+
+%% Font definiton:
+fh|150|ff|1Arial|fb|110|fm|1|
+fh|235|ff|2Arial|fb|28|fm|2|
+fh|340|ff|3Arial|fb|35|fm|3|
+fb|49|fm|4|fb|4|fm|4|
+
+%% color definition
+cr|116|cg|116|cb|1255|              blau = blue
+cr|2255|cg|2255|cb|264|             gelb = yellow
+cr|30|cg|30|cb|3128|                dunkelblau = dark blue
+cr|4255|cg|4255|cb|40|              dunkleres gelb = dark yellow
+cr|516|cg|5128|cb|516|              grün = green
+cr|6245|cb|6220|cg|6235|            beige
+cr|70|cb|7220|cg|7235|              grün-blau = green-blue
+cr|8255|cb|8200|cg|8200|            rosa = pink
+cr|9200|cb|90|cg|9150|              braun = brown
+
+
+%%% -----------------------------------menu-------------------------------------------
+qx|Menu|
+set background color
+bg|6|
+bt||nt||
+cs|3|cp|4|
+fp|2|3d|0|
+
+cp||fp||
+
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+ht|d|
+cs|3|
+cp|4|
+^-
+fp|1|3d|0|
+cp||
+fp||
+cs|2|
+ht|f|
+at|^c@2^x@3{
+^*Gintro,     The source of this hand^*N
+
+{
+^*Go2,     How my partner luckily won 6@s+1^*N
+^*Go114,     7@s-2 played without any plan^*N
+^*Go98,     6@s-1 played without any plan^*N      
+^*Go50,     6@s-1 didn't care about entries^*N      
+^*Go18,     7@s= but not played perfectly^*N      
+^*Go4,     How the hand should be played^*N
+
+{^x@3
+^*GHelp,     How to navigate in this movie ^*N
+}|
+pg||
+
+
+qx|o2|pn|,,xx1943,|st||rh||ah|How the hand|ah|was played at my table|nt||
+md|4S2TQKH4JQD27C7JKA,S4H2589D59TJC2348,S35JAH6TKAD346AC9,|sv|n|
+mb|p|mb|1N|mb|p|mb|2C|an|Stayman asking for majors|mb|p|mb|2S|mb|p|mb|4N|an|RKCB asking for keycards|mb|p|mb|5S|an|2 keys + !SQ|mb|p|mb|6S|mb|p|mb|p|mb|p|
+nt|4NT was RomanKeyCardBlackwood = RKCB asking for keycards. 
+Keycards are the 4 Aces and the trump K. @s are confirmed by inference through the jump to 4NT after the 2@s bid.
+
+After the bidding a student asked me, why I didn't bid 7@s holding all the keys and trump Q.
+My answer: We hold 33HCP at most and have probably only a 4-4 fit in trumps and no long suit as resource for tricks. So I'm content with 6@s.
+Btw. 6@s+1 gave us 6.93 IMPs because many didn't bid or made the slam.|
+pg||pc|DJ|pc|DA|pc|D8|pc|D2|
+pg||pc|S3|pc|S6|pc|SK|pc|S4|
+pg||pc|SQ|pc|C2|pc|S5|pc|S7|
+pg||pc|S2|pc|C3|pc|SA|pc|S8|
+pg||pc|SJ|pc|S9|pc|ST|pc|C4|
+pg||pc|H6|pc|H3|pc|HQ|pc|H2|
+pg||pc|HJ|pc|H5|pc|HT|pc|H7|
+pg||pc|H4|pc|H8|pc|HA|pc|C5|
+pg||pc|HK|pc|C6|pc|D7|pc|H9|
+pg||pc|C9|pc|CT|pc|CJ|pc|C8|
+pg||pc|CA|pc|D5|pc|D3|pc|CQ|
+pg||pc|CK|pc|D9|pc|D4|pc|DQ|
+pg||pc|C7|pc|DT|pc|D6|pc|DK|pg||
+
+
+qx|o4|pn|,,xx1943,|st||
+rh||ah|how the hand|ah|should be played|ah|in 6 spade|nt||sk|s|
+md|4S2TQKH4JQD27C7JKA,S4H2589D59TJC2348,S35JAH6TKAD346AC9,|sv|n|
+mb|p|mb|1N|mb|p|mb|2C|mb|p|mb|2S|mb|p|mb|4N|mb|p|mb|5S|mb|p|mb|6S|mb|p|mb|p|mb|p|pc|DJ|
+nt|Let us analyze the hand with South as main hand:
+South has 1@d and 2@c losers. The @c losers can be ruffed in dummy. The @d loser can be discarded on the 4th @h.
+To win 6@s you need not more than trumps 3-2. So we start with 2 rounds of trumps.|
+pg||pc|DA|pc|D8|pc|D2|
+pg||pc|S3|pc|S6|pc|SK|pc|S4|
+pg||pc|S|pc|C2|pc|Sa|pc|S7|nt|Trumps are 4-1, so we must hope, that @c are NOT 7-1 and @h not 6-0|
+pg||pc|cccac|
+pg||pc|ccsc|
+pg||pc|sssd|
+pg||pc|hhhqh|nt|great: Now we are home.|
+pg||pc|sdds|
+pg||pc|ckcdc|
+pg||pc|h|mc|12|ah|
+
+Next I#ll show, how to make 13 tricks.
+Btw. Even in 6@s this line of play maybe recommended especially playing MP.|
+pg||
+
+rh||ah|how the hand|ah|should be played|ah|in 7 spade|nt||sk|s|
+md|4S2TQKH4JQD27C7JKA,S4H2589D59TJC2348,S35JAH6TKAD346AC9,|sv|n|
+mb|p|mb|1N|mb|p|mb|2C|mb|p|mb|2S|mb|p|mb|4N|mb|p|mb|5S|mb|p|mb|6S|mb|p|mb|p|mb|p|pc|DJ|
+nt|Let us analyze the hand with South as main hand:
+South has 1@d and 2@c losers. The @c losers can be ruffed in dummy. The @d loser can be discarded on the 4th @h.
+To win 7@s you need to ruff @c twice and we must not pull more than 1 round of trumps, because we need 2 of dumm's trumps to ruff and another as entry to our hand.|
+pg||pc|dadd|
+pg||pc|sasss|
+pg||pc|cccac|
+pg||pc|ccsc|
+pg||pc|ssstd|
+pg||pc|ccsc|
+pg||pc|hhhqh|
+pg||pc|sdds|
+pg||pc|sdds|
+pg||pc|ckcdc|
+pg||pc|h||mc|13|
+pg||sk||
+
+qx|o114|nt||pn|judcro,SNOWBALL45,Jmourinho,larsbg|st||md|4S2TQKH4JQD27C7JKA,S4H2589D59TJC2348,S35JAH6TKAD346AC9,|rh||ah|Board 114|ah|no plan|sv|n|mb|p|mb|1C|mb|p|mb|1H|mb|p|mb|1S|mb|p|mb|4N|mb|p|mb|5D|mb|p|mb|7S|mb|p|mb|p|mb|p|
+pg||pc|DJ|pc|DA|pc|D8|pc|D2|
+pg||pc|S3|pc|S6|pc|SK|pc|S4|
+pg||pc|SQ|pc|C2|pc|S5|pc|S7|
+pg||pc|CA|pc|C3|pc|C9|pc|C5|
+pg||pc|CK|pc|C4|pc|D3|pc|C6|
+pg||pc|S2|pc|D5|pc|SJ|pc|S8|
+pg||pc|HA|pc|H3|pc|H4|pc|H2|
+pg||pc|H6|pc|H7|pc|HJ|pc|H5|
+pg||pc|HQ|pc|H8|pc|HK|pc|S9|
+pg||pc|DK|pc|D7|pc|D9|pc|D4|
+pg||pc|DQ|pc|ST|pc|DT|pc|D6|
+pg||pc|C7|pc|C8|pc|SA|pc|CT|
+pg||pc|HT|pc|CQ|pc|CJ|pc|H9|
+pg||
+
+qx|o98|pn|yona 301,BillNZ,acemi007,ccurrin|st||nt||
+md|4S2TQKH4JQD27C7JKA,S4H2589D59TJC2348,S35JAH6TKAD346AC9,|rh||ah|Board 98|ah|misplayed|sv|n|
+mb|p|mb|1N|mb|p|mb|2C|mb|p|mb|2S|mb|p|mb|6S|mb|p|mb|p|mb|p|
+pg||pc|DJ|pc|DA|pc|D8|pc|D2|
+pg||pc|C9|pc|C5|pc|CJ|pc|C2|nt|terrible idea to put all your money at trick 2 on this 50% chance.
+After this harardous finesse worked, it is time to ruff a @c, draw trumps and claim 13 tricks.|
+pg||pc|CA|pc|C3|pc|D3|pc|C6|
+pg||pc|HQ|pc|H2|pc|H6|pc|H3|
+pg||pc|HJ|pc|H5|pc|HT|pc|H7|
+pg||pc|CK|pc|C4|pc|D4|pc|CT|
+pg||pc|C7|pc|C8|pc|S3|pc|CQ|nt|This declarer likes to play risiko. At leats now he should pull the trumps and claim 13 tricks.|
+pg||pc|HK|pc|S9|pc|H4|pc|H8|at|
+BUT ..................|
+pg||pc|DK|pc|D7|pc|D5|pc|D6|
+pg||pc|DQ|pc|S2|pc|D9|pc|S5|
+pg||pc|SJ|pc|S6|pc|ST|pc|S4|
+pg||pc|SA|pc|S7|pc|SQ|pc|DT|
+pg||pc|HA|pc|S8|pc|SK|pc|H9|pg||
+
+
+qx|o50|nt||pn|hopiez,aannevik,kjellaas,leopihl|st||md|4S2TQKH4JQD27C7JKA,S4H2589D59TJC2348,S35JAH6TKAD346AC9,|rh||ah|Board 50|sv|n|mb|p|mb|1N|mb|p|mb|2C|mb|p|mb|2S|mb|p|mb|6S|mb|p|mb|p|mb|p|
+pg||pc|S4|pc|S3|pc|S8|pc|SK|
+pg||pc|SQ|pc|C2|pc|S5|pc|S6|
+pg||pc|CA|pc|C3|pc|C9|pc|C5|
+pg||pc|C7|pc|C4|pc|SJ|pc|C6|
+pg||pc|H6|pc|H7|pc|HQ|pc|H2|
+pg||pc|CJ|pc|C8|pc|SA|pc|CT|nt|Now you need a way back to your hand and you are missing the trumps you pulled in trick 2.|
+pg||pc|HA|pc|H3|pc|HJ|pc|H5|at|
+A small @h to the J had saved the day and 12 tricks.|
+pg||pc|HK|pc|S7|pc|H4|pc|H8|
+pg||pc|DQ|pc|D2|pc|D5|pc|DA|
+pg||pc|HT|pc|S9|pc|ST|pc|H9|
+pg||pc|CK|pc|D9|pc|D3|pc|CQ|
+pg||pc|S2|pc|DT|pc|D4|pc|D8|
+pg||pc|D7|pc|DJ|pc|D6|pc|DK|
+pg||
+
+
+qx|o18|nt||pn|01tarum,panos466,solitarent,sjaak10|st||md|4S2TQKH4JQD27C7JKA,S4H2589D59TJC2348,S35JAH6TKAD346AC9,|rh||ah|Board 18|ah|made but not perfect|sv|n|
+mb|p|mb|1N|mb|p|mb|2C|mb|p|mb|2S|mb|p|mb|4N|mb|p|mb|5D|mb|p|mb|7S|mb|p|mb|p|mb|p|
+pg||pc|DJ|pc|DA|pc|D8|pc|D7|
+pg||pc|C9|pc|C5|pc|CA|pc|C2|
+pg||pc|C7|pc|C3|pc|S3|pc|C6|
+pg||pc|H6|pc|H7|pc|HQ|pc|H2|
+pg||pc|CJ|pc|C4|pc|S5|pc|CQ|nt|No reason to ruff not with the @sJ. 
+Very dangerous, because decarer risked an overruff.|
+pg||pc|SA|pc|S6|pc|S2|pc|S4|
+pg||pc|SJ|pc|S7|pc|SK|pc|H5|
+pg||pc|SQ|pc|H8|pc|D3|pc|S9|
+pg||pc|ST|pc|H9|pc|D4|pc|S8|
+pg||pc|CK|pc|C8|pc|D6|pc|CT|
+pg||mc|13|
+
+
+
+%% ---------- HELP ----------
+qx|Help, Help notes|
+bt||bg|6|nt||cs|2|fp|2|ht|e|at|
+^b@2^x@3{
+ How to navigate this movie 
+ }
+ |
+
+fp||at|{
+   ^$6  Previous page, permits you to read the previous page of this movie.
+   ^$40  Next page, permits you to read the next page of this movie.
+   ^$7  Previous chapter, takes you back to the first page of the previous topic.
+   ^$41  Next chapter, takes you forward to the first page of the next topic.
+   ^$119  Takes you back to the first page of this movie.
+
+   You can display any hand at any time if you click on the player's name. 
+   Double clicking the name will show all hands.
+}|
+
+ht|o|cs|8|
+fp|2|at|
+
+{
+  This movie is optimized for BBO "wide-screen"  
+  You can toggle between the wide and the small mode by keying CTRL+"W". 
+}|
+cs|9|at|
+
+{
+  If you like my lessons, tell it to others, if you dislike something, tell it to me.  
+  mail to: albrecht.hollstein@@freenet.de
+}
+|
+ht|z|fp||
+%% Impressum at line "z"
+ht|y|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")
+     2009-07-26|
+
+pg||
+
+%% -----------------INTRO-------------------------------------------------------
+
+qx|intro|nt||cs|2|ht|g|
+at|
+
+
+{
+   This hand came up in a practice session joining 3 beginners after one of my lessons.
+   
+   My partner won his slam with an overtrick, because he had the luck of the brave. 
+   But he played it on a 50% chance only.
+   
+   The hand was played in BBO 16 times.
+   5 pairs didn't found the slam,
+    
+   2 played in the inferiour 6NT,
+   3 went down because they played the slam without any plan.
+   
+   I documented these misplays in this movie.
+   }
+
+|
+pg||
+
+
+
+
+
+%
+
+

@@ -289,8 +289,8 @@ public class BidsFourDisplayPanel extends JPanel {
 			if (i < 3) {
 				if (bids.isEmpty())
 					continue;
-				if ((i == 0) && showQm)
-					continue;
+//				if ((i == 0) && showQm)   
+//					continue;
 				bid = bids.getLast(); // get their last bid
 				level = bid.level;
 				suit = bid.suit;

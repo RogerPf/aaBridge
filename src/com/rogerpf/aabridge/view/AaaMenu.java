@@ -36,6 +36,7 @@ public class AaaMenu {
 
 	public static Action menuSaveStdAction;
 	public static Action menuSaveAsAction;
+	public static JMenuItem languageMenuShowHide;
 	public static JMenuItem exampleMenuShowHide;
 	public static JMenuItem theDotTest;
 
@@ -407,7 +408,7 @@ public class AaaMenu {
 		return menu;
 	}
 
-	public static JMenu makeHelpMenu(ActionListener listener, String menuBarText) {
+	public static JMenu makeHelpMenu(ActionListener listener, ItemListener itemListener, String menuBarText) {
 		// =============================================================
 
 		JMenu menu = new JMenu(menuBarText);
@@ -420,6 +421,12 @@ public class AaaMenu {
 		String web = "(" + Aaf.gT("helpMenu.web") + ")";
 		String courses = Aaf.gT("helpMenu.courses");
 		String videos = Aaf.gT("helpMenu.videos");
+
+		languageMenuShowHide = menuItem = new JCheckBoxMenuItem(Aaf.gT("helpMenu.showLangMenu"), App.showLanguageMenu);
+		menuItem.addItemListener(itemListener);
+		menu.add(menuItem);
+
+		menu.addSeparator();
 
 		String ocp = "OCP";
 

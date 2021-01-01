@@ -59,7 +59,7 @@ md|1sKQ2hK    ,sAT96h642dKT54c32,s74hQ97dJ92cJT876,sJ853hAT3dAQ876c9|
 
 at|
 
-If you fill in three of the hands completely any extra cards are automaticaly put into the incomplete hand.
+If you fill in three of the hands completely any extra cards are automatically put into the incomplete hand.
 
 ^dmd!1sKQ2hK    ,sAT96h642dKT54c32,s74hQ97dJ92cJT876,sJ853hAT3dAQ876c9!
 |
@@ -315,7 +315,7 @@ pg| ***** 43 ***** |
 
 at|^c@2
 
-vp!--*-,     ----,   ----, ----!       ^i   The    ^*b*^*n   asterisk   blots out South's  @d's (go invisible)    |cp|red|at|Show All ...|cp||at| no override |
+vp!--*-,     ----,   ----, ----!       ^i   The    ^*b*^*n   asterisk   blots out South's  @d's (go invisible)    |cp|red|at|Show All ...|cp||at| does override |
 vp|--*-,     ----,   ----, ----|   
 pg| ***** 44 ***** |
 
@@ -346,6 +346,52 @@ vp!!                        ^i   Standard reset|
 vp||
 pg| ***** 48 ***** |
 
+qx|vh|
+nt|^b@2^*bVisibility Hands^g vh! v,-,-,h !       NOTE the commas^*n      ^p ^*b s w n e ^*n  ordering|  
+
+md|1sAK64hAK5dQ983c93,sQ2h42dJT762c7652,s753hQT7dA4cAQT84,sJT98hJ9863dK5cKJ|
+sv|n|sk|s|
+mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|
+pc|dJ|
+at|^^^^@b@2 The examples that follow show the use          
+
+>>> ^*b vh ^*n  <<<   OVERRIDES the ^*b normal ^*n "when to show DUMMY"  and the  "when show the  You Seat"  logic,
+^o    the  POWER KIB  settings still take precedence.
+
+>>> ^*b vh ^*n  <<<  only APPLIES at the TUTORIAL level   not   "inside the deal".|
+pg| ***** 43 ***** |
+
+
+vh|h,h,h,h|                  
+nt|^^^^^c ^*bAll Hidden^*n         ^g vh ! h,h,h,h !  |pg||
+
+vh|v,h,h,h|
+nt|^^^^^c ^*bSouth vis^*n          ^g vh ! v,h,h,h !  |pg||
+                             
+                             
+vh|h,v,h,h|                  
+nt|^^^^^c ^*bWest vis^*n           ^g vh ! h,v,h,h !  |pg||
+                             
+                             
+vh|h,h,v,h|                  
+nt|^^^^^c ^*bNorth vis ^*n         ^g vh ! h,h,v,h !  |pg||
+                             
+                             
+vh|h,h,h,v|                  
+nt|^^^^^c ^*bEast vis^*n           ^g vh ! h,h,h,v !  |pg||
+                             
+                             
+vh|v,h,h,v|                  
+nt|^^^^^c ^*bSouth and East^*n     ^g vh ! v,h,h,v !  |pg||
+                             
+                             
+vh|v,v,v,v|                  
+nt|^^^^^c ^*bAll forced vis^*n    ^g vh ! v,v,v,v !  |pg||
+                             
+vh|-,-,-,-|                  
+nt|^^^^^c ^*bAll normal^*n    ^g vh ! -,-,-,- !  
+^c^*bvisibility restored^*n|pg||
+                             
 
 ht|z|at|@0
 ^*b end ^*n|

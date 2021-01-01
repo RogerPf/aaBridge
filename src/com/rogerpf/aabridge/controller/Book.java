@@ -28,6 +28,7 @@ public class Book extends ArrayList<Book.LinChapter> {
 	// ---------------------------------- CLASS -------------------------------------
 	private static final long serialVersionUID = 1L;
 
+	public Bookshelf shelf = null;
 	public String bookJarName = "";
 	public String bookJarExtra = "";
 	public String bookFolderName = "";
@@ -40,7 +41,7 @@ public class Book extends ArrayList<Book.LinChapter> {
 
 	public boolean displayTitle_is_langSpecific = false;
 
-	int frontNumber = 0;
+	public int frontNumber = 0;
 
 	public class LinChapter {
 		// ---------------------------------- CLASS -------------------------------------
@@ -177,13 +178,18 @@ public class Book extends ArrayList<Book.LinChapter> {
 
 		/**
 		*/
-		public void setTitleBookStyle() {
+		public void setTitleBookStyle(boolean jar_or_zip) {
 			// =============================================================
 			String s = "aaBridge  " + VersionAndBuilt.verAndBuildNo();
 
 			s += "                                ";
 
-			s += originText + "   /   ";
+			if (jar_or_zip && originText.contains("Books-E")) {
+				s += book.shelf.shelfDisplayName + "   /   ";
+			}
+			else {
+				s += originText + "   /   ";
+			}
 
 			if (!displayTitle.isEmpty()) {
 				s += displayTitle + "   /   ";
@@ -224,7 +230,7 @@ public class Book extends ArrayList<Book.LinChapter> {
 
 			if (success) {
 				lastChapterIndexLoaded = index;
-				setTitleBookStyle();
+				setTitleBookStyle(type == 'r');
 				// App.biddingVisibilityCheck();
 
 				// App.history.histRecordChange( "chap_load");
@@ -307,23 +313,25 @@ public class Book extends ArrayList<Book.LinChapter> {
 		return bookJarName + " " + bookFolderName;
 	}
 
-	public Book(String basePathIn, File[] onlyThese) { // Constructor from an external source - drag drop
+	public Book(Bookshelf shelf, String basePathIn, File[] onlyThese) { // Constructor from an external source - drag drop
 		// ==============================================================================================
-		commonBookConstructor(basePathIn, "", onlyThese, "", basePathIn);
+		commonBookConstructor(shelf, basePathIn, "", onlyThese, "", basePathIn);
 	}
 
-	public Book(String basePathIn, String extraPath, String shelfname, String shelfDisplayName, boolean dividerBefore) {
+	public Book(Bookshelf shelf, String basePathIn, String extraPath, String shelfname, String shelfDisplayName, boolean dividerBefore) {
 		// ==============================================================================================
 		this.dividerBefore = dividerBefore;
-		commonBookConstructor(basePathIn, extraPath, null, shelfname, shelfDisplayName);
+		commonBookConstructor(shelf, basePathIn, extraPath, null, shelfname, shelfDisplayName);
 	}
 
 	private final static String sep = File.separator;
 
 	static String all_lin_files_in_this_book = "all_lin_files_in_this_book";
 
-	public void commonBookConstructor(String basePathIn, String extraPath, File[] onlyThese, String shelfname, String originText) {
+	public void commonBookConstructor(Bookshelf shelf_p, String basePathIn, String extraPath, File[] onlyThese, String shelfname, String originText) {
 		// ==============================================================================================
+
+		shelf = shelf_p;
 
 		String basePath = basePathIn;
 
@@ -371,7 +379,7 @@ public class Book extends ArrayList<Book.LinChapter> {
 			}
 
 			bookJarName = jarFile.getPath();
-			if (basePath.toLowerCase().endsWith(".jar"))
+			if (basePath.toLowerCase().endsWith(".jar") || shelfname.contains("Books-E"))
 				bookJarExtra = shelfname + "/" + extraPath;
 
 			// We are running in a .jar on either windows, mac or linux or ...
@@ -777,6 +785,7 @@ public class Book extends ArrayList<Book.LinChapter> {
 
 		if (displayTitle.startsWith("-     ")) {
 			displayTitle = "      " + displayTitle.substring(5);
+
 		}
 
 	}

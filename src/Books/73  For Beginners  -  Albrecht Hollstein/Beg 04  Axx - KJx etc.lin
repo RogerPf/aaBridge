@@ -1,0 +1,430 @@
+%% Beginners lesson (4) How to play Simple suit combinations
+
+mn| Al (xx1943) teaching : Declarer play for beginners (4)|
+tu||
+
+%% Font definiton:
+fh|150|ff|1Arial|fb|110|fm|1|
+fh|235|ff|2Arial|fb|28|fm|2|
+fh|340|ff|3Arial|fb|35|fm|3|
+fb|49|fm|4|fb|4|fm|4|
+
+%% color defintion
+cr|116|cg|116|cb|1255|              blau = blue
+cr|2255|cg|2255|cb|264|             gelb = yellow
+cr|30|cg|30|cb|3128|                dunkelblau = dark blue
+cr|4255|cg|4255|cb|40|              dunkleres gelb = dark yellow
+cr|516|cg|5128|cb|516|              grün = green
+cr|6245|cb|6220|cg|6235|            beige
+cr|70|cb|7220|cg|7235|              grün-blau = green-blue
+cr|8255|cb|8200|cg|8200|            rosa = pink
+cr|9200|cb|90|cg|9150|              braun = brown
+
+%% -----------------------------------menu-------------------------------------------
+qx|Menu|
+%% set background color
+bg|6|
+bt||nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^-{ Al teaching:  }
+
+{ Declarer play for beginners (4) How to play suit-combinations}
+^-|
+cp||fp||
+
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon") and Mihailo Krstic ("Miksa")|
+ht|d|
+cs|3|
+cp|4|
+^-
+fp|1|3d|0|
+cp||
+fp||
+cs|2|
+ht|f|
+at|
+^c@2^x@3{
+^*Go1,     Axx - KJx^*N^o^*Go2,     xxx - AJ9^*N
+^*Go3,     Q10xx - AK9xx^*N^o^*Go4,     Q8xx - AK9xx^*N
+^*Go5,     AKQ43 - 10982^*N^o^*Go6,     KQx - Jxxx^*N
+
+
+{
+^*Gconclusion,     What you'll learn in this lesson^*N
+
+{
+^x@3^*Gintro, ^c     About this series of lessons^*N ^o
+^*Gbooks,     Recommendations^*N ^o
+^*Ghelp,     How to navigate in this movie ^*N
+}|
+pg||
+
+%% --------------------------hand number 1 -------------------------------------------
+qx|o1|
+%% simple finesse
+%% source: 
+st||sk|S|%small text set kibbing South
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md|3SA42ha32dkj2cakqj,st86hqjt9d79tct86,skq5hk54da34c2345,|
+%% set vulnerability
+sv|0|
+rh||ah|Axx|ah|KJx| %%set description box
+mb|1cp6nppp| %% bidding
+pc|hq|nt|All hands in this lesson are similar in that way, that you must pay attention only to the @D-suit.|
+at| In the other suits you have your sure tricks from the top. No more, no less.|
+at| It is not your goal to play the complete hand. Your only job is to find the correct play of the @ds.
+With 34 HCP, 6NT is a reasonable contract. The bidding was not very scientific. South should examine, if there is a grand slam possible. |
+%% questions 1) 2) and 3)
+pg||nt|You count exactly 9 tricks in @s, @h and @c, so you need 3 tricks from the @ds.|
+pg||pc|hkhh|nt||
+pg||pc|daddd|nt|Cash the @dA just in the (very improbable) case there is lurking a stiff Q around.
+Hold your breath ..............................|
+pg||pc|dddjd|at|
+and execute the finesse against the Q.|sb|SBingo|mc|12|
+pg||nt|The odds for the finesse to win were 50%, while the odds to find WEST with the Qx is only 4.4%.
+We'll discuss probabilities in one of the lessons for intermediates players|
+pg||
+
+%% --------------------------hand number 2 -------------------------------------------
+qx|o2|
+%% double finesse
+%% source: 
+sb|S|st||sk|S|% löscht den comment bubble von South; small text; set kibbing South
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md|4SA42ha32dAj9cakqj,st86hjt95dK86ct86,skq5hkq4d234c2345,|
+sv|n|%%set vulnerability
+rh||ah|xxx|ah|AJ9| %%set description box
+mb|p2cp2dp2np6nppp| %% bidding
+pc|hj|nt|All hands in this lesson are similar in that way, that you must pay attention only to the @D-suit.|
+at| In the other suits you have your sure tricks from the top, not more and not less.|
+at| It is not your goal to play the complete hand. Your only job is to find the correct play of the @ds.
+With 33 HCP this is reasonable slam too. Nevertheless the odds to win are only about 38%.|
+pg||nt|But now concentrate on the play. |
+%% questions 1) 2) and 3)
+pg||nt|You count exactly 10 tricks in @s, @h and @c, so you need 2 tricks from the @ds.|
+pg||pc|hkhh|nt|Your only chance is that East holds the @d10 and at least one of the honors K or Q.|
+pg||pc|ddd9dk|sb|SThat looks nice. The diamond 10 seems to be with East at least.|
+pg||pc|hjhhha|sb|S|
+pg||pc|sssqs|nt|In real life perhaps you would cash all your winners now and watch the discards.|
+at| But opponents, who are not asleep will not make a mistake. All depends on East having the @dQ.|
+pg||pc|dddjd|nt|You take the simple finesse against the Q.|sb|SBingo|mc|12|
+pg||nt|The odds for the double finesse to win is about 38%, while the odds to find EAST with the KQx is only 25%.
+We'll discuss probabilities in one of the lessons for intermediates players.|
+pg||at|
+There are more points to discuss in an advanced class:|
+at|
+A good defender will play the Q from Q10x to suggest he splits his honors from KQx.
+This opens a wide field of psychological deliberations ...............|
+pg||
+
+%% --------------------------hand number 3 -------------------------------------------
+qx|o3|
+%% Detect Jxxx
+%% source: 
+sb|S|nt||% löscht den comment bubble von South; delete text
+st||sk|S|%  small text; set kibbing South
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md|1SA4ha3dAK954cakqj,st8hqjt9dj876ct86,s357hk54d23tqc345,|
+sv|e|%%set vulnerability
+rh||ah|Q10xx|ah|AK9xx| %%set description box
+mb|2cp2dp3np4np6nppp| %% bidding
+pc|hq|nt|This is a very good slam, though not easy to bid with a natural system.|
+at| 3NT shows 25-27 HCP. 
+To bid an inviting 4NT with 5 HCP is a very optimistic move by North.
+But this is not the topic of this lesson. Let us concentrate on the declarer play:|
+pg||nt|You count exactly 7 tricks in @s, @h and @c, so you need 5 tricks from the @ds.|
+pg||at|
+That seems plain sailing. With 9 cards including A, K and Q, there should be no problem to score 5 @ds tricks.|
+pg||nt|BUT be cautious.|cs|2|at|
+^-
+{Whenever your contract seems to be foolproof, consider, what will happen in the worst case.}
+^-|
+pg||sb|SThe worst case would be, if one defender holds Jxxx in diamonds.|
+pg||nt|Correct. But your contract is foolproof, if you play the @ds in the correct way.|
+pg||pc|hhha|at|
+There is no reason not to take the lead in the short hand and in the hand with more entries.|
+pg||at|
+But what now and why? |
+pg||lb|*cWhich card do you play now?^^da^dad4|
+nt|If both opponents follow to the first round of @ds you can claim your contract,|
+at| because you'll be able to draw their pips (small cards) in 3 rounds with A, K and Q.
+Retaining Q10 in dummy and K9 in your hand you can successful finesse the J no matter, which defender shows out.
+Therefore it is necessary to start with @dA or @dK. If you lead low to the Q and EAST happens to show out, you'll go down.|
+pg||pc|dadds9|sb|SOuch, it was a good idea to be cautious!|nt||
+pg||pc|dddts|sb|s|
+pg||pc|dsdkd|mc|12|nt|Well done.|
+pg||
+
+%% --------------------------hand number 4 -------------------------------------------
+qx|o4|
+%% Detect Jxxx
+%% source: 
+sb|S|nt||% löscht den comment bubble von South; delete text
+st||sk|S|%  small text; set kibbing South
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md|2SA4ha3dAK954cakqj,st862hqjt9dct8762,s357hk54d238qc345,|
+sv|b|%%set vulnerability
+rh||ah|Q8xx|ah|AK9xx| %%set description box
+mb|ppp2cp2dp3np4np6nppp| %% bidding
+pc|hq|
+nt|This hand is identical with the previous one with the only exception that|
+at| North holds @d8 instead of the 10. Are you surprised that this minor change lowers|
+at| your odds from 100% to 95.3%?|
+pg||nt|You count exactly 7 tricks in @s, @h and @c, so you need 5 tricks from the @ds.|
+pg||at|
+That seems plain sailing. With 9 cards including A, K and Q, there should be no problem to score 5 @d tricks.|
+pg||nt|BUT be cautious.|cs|2|at|
+^-
+{Whenever your contract seems to be foolproof, consider, what will happen in the worst case.}
+^-|
+pg||sb|SThe worst case would be, if one defender holds Jxxx in diamonds.|
+pg||nt|Correct.|
+pg||pc|hhha|sb|s|
+pg||at|
+But what now and why? |
+pg||lb|*cWhich card do you play now?^^d4^dad4|
+nt|If both opponents follow to the first round of @ds you can claim your contract,|
+at| because you'll be able to draw their pips in 3 rounds with A, K and Q.|
+pg||at|
+If West has J10xx of @d there is no way to prevent him from gaining a trick.|
+pg||at|
+If East has J10xx of @d you can score all 5 @d tricks by finessing through him twice.|
+
+pg||pc|dsdqd|sb|SOuch, it was a good idea to be cautious!|nt||
+pg||pc|ddtdas|sb|s|nt|If East had played low, you could finesse the 9 with 100% safety.|
+pg||pc|hhhkh|sb|SOh, I it was important to take the lead with heart A in my hand and spare the entry to table.|
+
+pg||pc|ddd9c|mc|12|nt|Well done.|sb|s|
+pg||
+
+
+%% --------------------------hand number 5 -------------------------------------------
+qx|o5|
+%% Don't block yourself
+%% source: 
+sb|S|nt||% löscht den comment bubble von South; delete text
+st||sk|S|%  small text; set kibbing South
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md|3SA4hak3dt982cakqj,st862hqjt9d5ct762,s357h54dAKQ43c345,|
+sv|n|%%set vulnerability
+rh||ah|AKQ43|ah|10982| %%set description box
+mb|pp2np6nppp| %% bidding
+pc|hq|
+nt|Though only 30 HCP this is a reasonable and seemingly foolproof slam again.
+Forget the bidding. North is a great gambler.|
+
+pg||nt|You count exactly 7 tricks in @s, @h and @c, so you need 5 tricks from the @ds.|
+pg||at|
+That seems plain sailing with 9 cards including A, K and Q there should be no problem to score 5 tricks.|
+pg||nt|BUT be cautious.|cs|2|at|
+^-
+{Whenever your contract seems to be foolproof, consider, what will happen in the worst case.}
+^-|
+pg||sb|SThe worst case would be, if one defender holds Jxxx in diamonds.|
+pg||nt|Correct. If East holds Jxxx, there is nothing to be done, but with all other distributions your contract is sure.|
+pg||pc|hhha|sb|s|
+pg||at|
+But what now and why? |
+pg||at|Cash your tricks, but ................|
+pg||pc|dddAd|
+pg||pc|dkddc|
+pg||pc|dqddc|
+pg||pc|dhdc|sb|SOuch, how can I cash my last diamond at the table?|
+pg||at| ..........you didn't pay attention to the danger to block your suit yourself.
+Try it once more.|up|16|sb|sThank you|
+pg||pc|dtddad|sb|SOh I got it. I have to unblock three times.|
+pg||pc|dkdd9c|
+pg||pc|dqdd8c|
+pg||pc|dhdc|mc|12|sb|s|nt|well done.|
+pg||nt|This works even if WEST holds Jxxx in @d. Look here:|
+
+
+md|3SA4hak3dt982cakqj,st86hqjt9dj765ct7,s357h54dAKQ43c345,|
+sv|n|%%set vulnerability
+mb|pp2np6nppp| %% bidding
+pg||pc|hqhhha|
+pg||pc|dtddAc|nt|Void in @d by East notified!!!|
+pg||pc|cccc|at|
+Back to your hand.|
+pg||pc|d9ddc|at|
+Successful finesse the @dJ. If West covers, you take with K, come back to your 8 and cash the rest.|
+pg||pc|dddqc|mc|12|nt|clap clap clap|
+pg||
+
+
+%% --------------------------hand number 6 -------------------------------------------
+qx|o6|
+%% find the doubleton A
+%% source: 
+st||sk|S|%small text set kibbing South
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+md|4SAq3ha3dj864cakqj,st862hqjt9da7ct86,sk45hk54dKQ3c2345,|
+sv|e|%%set vulnerability
+rh||ah|KQx|ah|Jxxx| %%set description box
+mb|p2np6nppp| %% bidding
+pc|hq|nt|All hands in this lesson are similar in that way, that you must pay attention only to the @D-suit.|
+at| In the other suits you have your sure tricks from the top not more and not less.|
+at| It is not your goal to play the complete hand. Your only job is to work on the @ds correct.
+With 34 HCP 6NT is a reasonable contract. The bidding was straight forward. |
+%% questions 1) 2) and 3)
+pg||nt|You count exactly 9 tricks in @s, @h and @c, so you need 3 tricks from the @ds.|
+pg||pc|hhha|nt||
+pg||pc|dddkd|nt|There is no problem, if the @ds are distributed 3-3. 
+There is nothing to do, if one defender holds Axxx or East started with Ax.
+BUT if West started with Ax, you'll win with the correct technique.|
+pg||pc|cccc|nt|Come back to your hand and ...........|
+pg||pc|dddd|at|
+........ play the @d towards the dummy again.|sb|SBingo|mc|12|
+pg||sb|S|nt|Well done|
+pg||
+
+
+%% ------------------------General notes--------------------------------
+qx|intro|
+bt||
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^-{ Al teaching:  }
+
+{About this series of lessons}
+^-|
+cp||cs|2|fp||
+ht|g|
+at|^c@2{My target group are absolutely beginners}
+
+{My topic is the DECLARER PLAY; not the bidding not the defense}
+
+{I presuppose only a few things about bridge which you find e.g.:
+^d@2^*Hwww.rpbridge.net/1a00.htm^*N Learn to play bridge with Richard Pavlicek
+^*Hwww.rpbridge.net/1t05.htm ^*N Introduction to R. Pavlicek lessons
+^*Hwww.prairienet.org/bridge/start.htm^*N Getting started with Karen's bridge library
+^*Hwww.prairienet.org/bridge/glos.htm^*N Glossary for Beginners in Karen's bridge library
+}
+
+{^c@2 If you have any questions feel free to mail me to albrecht.hollstein@@freenet.de}
+|
+fp|2|at|
+{If you like my lessons, tell it to others, if you dislike something, tell it to me.}@0@1|
+ht|z|fp||
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon") and Mihailo Krstic ("Miksa")|
+pg||
+
+
+
+%%--------------------------summary-----------------------------------
+qx|conclusion|
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {This lesson is about how to play given simple suit-combinations}
+|
+cp||cs|8|fp||
+ht|d| %% Vertikale position
+at|^c@2{How to play a suit depends not only on probabilities but on the bidding, the scoring, 
+how many tricks you need, psychology and many other things.}
+
+{There are a lot of books written about this topic. It is a very wide field.
+In this lesson are demonstrated only a few basic examples.}
+
+{I recommend you not to be confused by the large amount of knowledge behind this topic,
+but to learn the basic principles and practice them by trial and error.}|
+cs|2|
+at|
+
+{How to play a certain suit depends on your plan of play and the complete analysis.}
+
+{Mostly it is a good idea to play ^*Blow towards an honor or honor combination.^*N}
+
+{Better yet is to force the opponents to play the suit for you.}|
+cs|7|
+at|
+
+{Two links you may be interested in:
+A great little DOS-program, which tells you the best line: ^*Hhome.planet.nl/~narcis45/SuitPlay/^*N
+Some about safety-plays: ^*Hwww.albrecht-hollstein.de/Bridge/Safety%20Plays.htm ^*N}|
+
+at|@0@1|
+ht|z|at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon") and Mihailo Krstic ("Miksa")|
+pg||
+
+
+
+%%--------------------recommendations----------------------------------
+qx|books|
+nt||
+bg|6|nt||cs|3|cp|4|fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {Recommendations}
+|
+
+cs|8|cp||fp|2|at|^e@2
+
+{
+^f@2Recommended books:
+|
+fp||at|
+1) Robert Berthe, Norbert Lebely: "Step by Step" Vol1 NT-declarer-play.   
+   This is the best book to learn the basics
+
+2) Victor Mollo, Nico Gardener: Card Play technique
+   A classical from 1955, but useful forever
+
+3) William S. Root: How to play a bridge hand.
+   12 easy chapters to winning bridge
+
+4) Louis H. Watson: Play of the hand at bridge
+   Another classical from 1934; very instructive, but you need time
+   }|
+cs|9|cp||fp|2|at|^e@2
+
+{
+^f@2Recommended software:
+|
+fp||at|
+1) Learn to play bridge; A great introduction and it is free.
+   ^*Hweb3.acbl.org/internet/websiteForms.nsf/ltpbForm?OpenForm^*N     
+
+2) Bridge Master 2000 by Fred Gitelman;
+   the best software to learn declarer play.
+   ^*Hbbi.bridgebase.com/software/bmdesc.html^*N
+   }|
+pg||
+
+
+%% ---------- HELP ----------
+qx|Help, Help notes|
+bt||nt||cs|2|fp|2|ht|b|at|^-{ Help }
+^-|
+fp||ht|e|at|
+Short instruction on how to navigate through the movie:
+
+ ^$6  Previous page, permits you to read the previous page of this movie.
+ ^$40  Next page, permits you to read the next page of this movie.
+ ^$7  Previous chapter, takes you back to the first page of the previous topic.
+ ^$41  Next chapter, takes you forward to the first page of the next topic.
+ ^$119  Takes you back to the first page of this movie.
+
+You can display any hand at any time if you click on the player's name. Double clicking the name will show all hands.|
+
+ht|u|
+fp|2|at|^-
+{If you like my lessons, tell it to others, if you dislike something, tell it to me.
+mail to: albrecht.hollstein@@freenet.de}
+^-|
+ht|z|fp||
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon") and Mihailo Krstic ("Miksa")|
+
+%% ------------------------------------------------------------------------
+
+0

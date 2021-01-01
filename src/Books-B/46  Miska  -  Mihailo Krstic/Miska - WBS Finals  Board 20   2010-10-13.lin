@@ -1,0 +1,251 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% File       : WBS_2010-10-13_F4_B20_b.lin
+%% Description: World Bridge Series Finals R4/4 2010-10-13, Board 20
+%% Programmer : Miksa
+%% Version    : b 2010-10-16: Corrected trick 4 in OR
+%%            : a 2010-10-16: Initial
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+mn| World Bridge Series Finals R4/4, 2010-10-05, Board 20 |tu||bt||
+
+%% --- Definitions ---
+cr|1040|cg|1040|cb|1140|         %% title background
+cr|2255|cg|2255|cb|2064|         %% title front
+cr|3194|cg|3203|cb|3231|         %% menu background 
+cr|4016|cg|4128|cb|4016|         %% table
+cr|5255|cb|5000|cg|5000|         %% enhance
+fh|130|ff|1Arial|fb|16|fm|1|     %% title (larger bold)
+fh|230|ff|2Arial|fb|24|fm|2|     %% subtitle (larger light)
+fh|320|ff|3Arial|fb|36|fm|3|     %% text (smaller bold)
+fh|420|ff|4Arial|fb|44|fm|4|     %% note (smaller light)
+%% --- End Definitions ---
+
+%% --- Main ---
+qx|Main|
+cs|1|cp|2|fp|1|
+at|
+^-{ World Bridge Series Finals R4/4
+ 2010-10-13, Board 20 }
+^-|
+fp|3|cp||ht|e|at|   @2This is the presentation of the Board 20 played at the last round of Finals of the World Bridge Series 2010, October 13.
+
+Diamond team: John Diamond, Brian Platnick, Fred Gitelman, Brad Moss, Eric Greco and Geoff Hampson.
+Nickell team: Nick Nickell, Ralph Katz, Bob Hamman, Zia Mahmood, Jeff Meckstroth and Eric Rodwell.
+
+When the hand was played, Diamond lead 105 : 70 with 13 boards to go. 
+
+Actual BBO vugraph comments are used, slightly rearranged.
+
+
+^e Open Room ^mFree play ^tClosed Room^*N|
+cs|4|ht|m|at|^*GB20o,^b@2{ |ht|q|at|^k
+ } |ht|n|cp|2|at|^e    Greco
+
+^b  Zia ^h     Hamman
+
+^e  Hampson ^*N @0 |
+
+cs|4|ht|m|at|^*GB20f,^l@2{ |ht|q|at|^p
+ } |ht|n|cp|2|at|^m    You
+
+^l  You           You  
+
+^m    You^*N @0 |
+
+ht|m|at|^*GB20c,^q@2{ |ht|q|at|^z
+ } |ht|n|cp|2|at|^t   Rodwell
+
+^q  Moss ^w     Gitelman
+
+^tMeckstroth ^*N @0 
+|
+fp|3|cp||ht|t|at|   @2Click on a table to see actual play or try it yourself double dummy (Free play).| 
+ht|y|fp|3|at|If you need help, ^*GHELP, click here^*N|
+ht|z|fp|3|at|
+(c) ^*Hwww.bridgebase.com^*N|fp|4|at|^rEnjoy... and share your knowledge :)   Miksa|pg||
+%% --- End Main ---
+
+%% --- Open Room - Endplay ---
+qx|B20o|
+nt||st||md|2ST975HQ92DT3CQJT6,SK8HAT7654DJ9CA75,SQJ42H83DQ8765C98,SA63HKJDAK42CK432|
+pn|Hampson,Zia,Greco,Hamman|
+rh||ah|WBS 2010 F4/4|ah|Open Room|ah|Board 20|
+sv|b|mb|1H|mb|p|mb|2C|
+fp|3|at| @2ahollan1: 2@C was 100% game force.|pg||
+mb|p|mb|2H|mb|p|mb|2N|mb|p|mb|3C|mb|p|mb|3H|mb|p|mb|4H|mb|p|
+at|
+vugraphzta: Hamman thinking now.|pg||
+mb|6H|mb|ppp|
+at|
+ahollan1: Can't blame him -- slam just depends on finding trump Q or underlead @DQ. Maybe some squeeze possibilities.
+algraves: @2Well good practical shot by Hamman, he knows he is stuck. Cowardly not to bid it really and he is anything if not fearless. @0
+ ahollan1: If misguess @HQ, does @S return kill a double squeeze?|pg||
+at| Specs have answered full spectrum: No, Yes, Maybe.|pg||
+pc|sQ|pc|s3|pc|s5|pc|sK|
+nt||fp|3|at| algraves: @2Well, there is always "Q lies over the J". That is an old rubber bridge saying as when the cards are scooped up sometimes the tricks stay in the old order for the next deal.|pg||
+pc|d9|pc|d5|pc|dA|pc|d3|at| And percentage is low to King for singleton Q.
+|pg||
+pc|sA|pc|s7|pc|s8|pc|s2|pg||
+pc|s6|pc|sT|pc|h4|pc|s4|pg||
+pc|dJ|pc|dQ|pc|dK|pc|dT|pg||
+pc|d2|at|Zia may not have to play them at all with this line. @0
+ @2ahollan1: Moss in 7@H!!
+stewball: Moss in 7 in the other room.
+pelu: so 17 IMP on stake here.|pg||
+pc|c6|pc|h5|pc|d6|pg||
+pc|cA|pc|c8|pc|c2|at|
+algraves: This shows the "power of the closed hand" in that defense had very hard time discarding on this.|
+pc|cT|pg||
+pc|c5|pc|c9|pc|cK|pc|cJ|pg||
+pc|d4|nt||fp|3|at| @2algraves: Now another @D and exit club for trump endplay. So Hampson has to ruff with 9.|pg||
+pc|s9|pc|h6|pc|d7|pg||
+pc|c7|mc|12|
+at|
+ahollan1: Nice line Zia! 
+Walddk2: Yes, pretty in 6.
+algraves: @2Elegant line. Hampson had to ruff with 9 to give him a guess but he would have gotten it correct. Well done by Hamman and Zia. @0
+|pg||
+at| @2ahollan1: Oh my, Rodwell lead against 7@H was .... @H
+pelu: Can Moss now find a double-squeeze?|pg||
+%% --- End Open Room: Endplay ---
+
+%% --- Closed Room: Squeeze ---
+qx|B20c|
+nt||st||md|2ST975HQ92DT3CQJT6,SK8HAT7654DJ9CA75,SQJ42H83DQ8765C98,SA63HKJDAK42CK432|
+pn|Meckstroth,Moss,Rodwell,Gitelman|
+rh||ah|WBS 2010 F4/4|ah|Closed Room|ah|Board 20|
+sv|b|mb|1H|fp|3|at| @2iceking: 35 imps 13 boards to go.
+athene: @2EW might well be in slam in the other room on these cards.
+|pg||
+mb|p|mb|2N|at|2NT is natural and game-forcing, right? @0
+ passell: Another slam on a queen guess.|pg||
+mb|p|nt||fp|3|at| @2iceking: 6@H probably in both rooms and both will guess it as its correct line to guess @H here.
+phil: Lots of squeeze chances too.|pg||
+mb|3H!|
+at|
+vugraphztb: Moss did not alert, I believe, the 3@H bid, but Gitelman did alert it to Rodwell.|pg||
+at|
+passell: Percentage to get it correct  all equal except sing Queen.
+iceking: Reason S might have stiff Q.
+vugraphztb: Meckstroth needs his system card.
+iceking: So this should be a push in 6@H.|pg||
+mb|p|nt||fp|3|at| @2phil: If he makes 6 he'll make 7, won't he?
+vugraphztb: Please have someone bring Meckstroth's system card.|pg||
+mb|3S|
+at|
+athene: Double squeeze around spades?|pg||
+mb|p|mb|4H|mb|p|
+at|
+phil: Right.
+passell: Yes.
+iceking: @2Right, there is also double squeeze. @S lead though breaks it and continue @S if he gets @H correct or if he gets heart incorrect i meant.|pg||
+mb|4N|mb|p|mb|5H|
+mb|p|mb|5S|
+nt||fp|3|at| athene: @25@S looks odd - doesn't east know by this point that the @HQ is missing? So 5@S (if it's a grand slam try) is a bit weird. |pg||
+mb|p|mb|5N|mb|p|mb|7H|mb|p|
+mb|p|at|
+Wow, this will be fun! @0
+ @2phil: WOW!
+iceking: Oh boy!|
+mb|p|pg||
+nt||fp|3|at| @2vugraphztb: Rodwell asking questions of Gitelman.
+athene: Now the double squeeze is for the contract, not the overtricks.
+iceking: Did 5@S ask for extras and 5nt showed extra trump?
+passell: Probably lead a trump now.
+phil: Not the call I would expected 35 up.
+athene: @2And once more we see just how bad it is to lead a trump against a grand slam. But of course if North doesn't lead a trump, Moss might decide there is only one reason for that... and play a heart to the jack.|pg||
+nt||fp|3|at| @2vugraphztb: Rodwell's convention card, I believe, was passed to Moss, but Meckstroth still needs his system card.
+phil: Been told 6@h next door so a lot riding on this one.
+passell: Can't imagine leading anything else unless you think opponents have screwed up.
+iceking: This could be brutal board for Nickell.|pg||
+nt||fp|3|at| athene: @2As a kibitzer suggests, it's just barely possible that they are bidding this to flatten the board thinking that EW in the other room will bid it. @0
+ @2iceking: Depends what info Rodwell got from Gitelman. They are screenmates, right?
+vugraphztb: Rodwell and Gitelman are screenmates.|pg||
+pc|h3|nt||fp|3|at| @2iceking: Oh boy!
+jkotor: Now even I would make it :).
+passell: Yes, once he later plays AK and a dia ruff he can't fall out of it.
+iceking: I wonder what he told him 5@S was. If it asked for extra trump you might lead something else.
+dburn: I imagine that Gitelman's 5@s was an effort to get Moss to bid seven with a seventh heart.
+iceking: If that's the case, is it still automatic to lead trumps?
+phil: Would love to know Fred's explanation of 5NT.|pg||
+nt||fp|3|at| athene: @2In case anyone is wondering about the double squeeze mechanism - the idea is, you can just cash the minor-suit ace-kings and @SK and run the trumps; now on the last trump North has to keep a diamond and South has to keep a club so no-one can keep a third spade.
+The ending is @Hx / @S8 / @C5 in West hand and @SAx / @Dx in East hand. @0
+|pg||
+at|
+ @2phil: Isn't this a classic compound once North has the diamond length - you can make even if North has the club length?
+jkotor: What about simple squeeze in minors?|pg||
+pc|hJ|pc|hQ|pc|hA|
+nt||fp|3|at| @2vugraphztb: Meckwell give no note that disaster has struck.
+dburn: But that jack of hearts was a bit odd. Suppose South had the singleton queen?
+iceking: Yes, should go up with Dummy's K.
+passell: Yes, pay off to trump lead from the queen agaist 7.
+athene: Only the Rueful Rabbit leads from @HQxx (he has the @HQ in with his diamonds).|pg||
+pc|h4|pc|h8|pc|hK|pc|h2|pg||
+pc|s3|pc|s5|pc|sK|pc|s2|pg||
+pc|hT|pc|s4|pc|c2|pc|h9|pg||
+pc|dJ|pc|d5|pc|dA|pc|d3|pg||
+pc|dK|pc|dT|pc|d9|pc|d6|pg||
+pc|d2|nt||fp|3|at| @2athene: Diamond ruff just to try to isolate the menace with North.
+vugraphztb: Meckstroth stops to think.
+Walddk4: This is just a "simple" double-squeeze now.
+athene: Yes, now he knows it will be a compound squeeze.
+passell: This was perfect for him catching North with long diamonds. Doesn't have to guess the squeeze.
+athene: Even if North had a club guard he is getting squeezed out of it very soon.|pg||
+pc|cQ|pc|h5|pc|d7|pg||
+nt||fp|3|at| athene: @2Zia solved the @HQ guess dilemma in a neat way in six in the other room. He just refused to play trumps. Ended up with a 3-card ending. Exited with a club and the defence had to find the @HQ. That is reminiscent of a famous Belladonna hand in "Bridge with the blue team" where he finds the queen of trumps exactly the same way.|pg||
+nt||fp|3|at| @2passell: After this board meckwell will know they are in big trouble. The gloves will come off.
+iceking: I am still little shocked about this 5@S bid from Gitelman.|
+pc|h6|pc|d8|pc|c3|pc|sT|pg||
+pc|c5|pc|c8|pc|cK|pc|c6|pg||
+pc|c4|pc|cT|mc|13|
+at|
+iceking: So 48 imps 12 boards to go.
+athene: If Meckwell take that board without a flicker they are tough competitors indeed.
+
+vugraphztb: Rodwell says that 3@H was not explained and Rodwell apologizes and then says I am sorry.|pg||
+%% --- End Closed Room: Squeeze ---
+
+%% --- Free play ---
+qx|B20f|
+nt||st||md|2ST975HQ92DT3CQJT6,SK8HAT7654DJ9CA75,SQJ42H83DQ8765C98,SA63HKJDAK42CK432|
+pn|You,You,You,You|
+rh||ah|WBS 2010 F4/4|ah|Board 20, CR|ah|Free play|
+sv|b|
+mb|1Hp2N|an|natural|mb|p3H!p3Sp4Hp4Np5Hp5Sp5Np7Hppp|
+fp|3|at| @2You can play double dummy now.|pf|y|pg||
+%% --- End Free Play ---
+
+%% --- Help ---
+qx|HELP, Help notes|
+bt||pf||nt||cs|1|cp|2|fp|1|
+at|
+^-{ Help }
+^-|
+fp|3|cp||ht|e|at|  @2You should set your BBO option for Wide Screen (Options > General > check the "Wide screen" box) and your display resolution should be higher than 800 x 600. 
+
+To navigate through the movie:
+
+ ^$6  Go back one page (Previous page).
+
+ ^$40  Go forward one page (Next page).
+
+ ^$7  Go back to the previous chapter (First page of previous topic).
+
+ ^$41  Go forward to the next chapter (First page of next topic).
+
+ ^$119  Main page (First page of this chapter).
+
+You can display any hand at any time if you click on the player's name.
+Double clicking the name will show all hands.
+
+Inspect a played trick by pointing at it with the mouse.
+
+"Free play" is the option to play "double dummy": you can play all four hands, trick by trick, and find a solution which requires optimal play by both sides, declarer and defenders. Just click on the card you wish to play. 
+
+The most recently played card may be taken back by clicking on  ^$6  (Take back last play). 
+
+Once a trick is complete, click on the first card of the next trick.|
+ht|z|fp|4|at|
+^rEnjoy... and share your knowledge :)   Miksa|pg||
+%% --- End Help ---
+%% --- EOF ---
+0

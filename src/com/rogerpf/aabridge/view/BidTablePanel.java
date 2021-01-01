@@ -107,6 +107,8 @@ public class BidTablePanel extends ClickPanel { /* Constructor */
 		scroller.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 		scroller.setBorder(BorderFactory.createEmptyBorder());
 
+		scroller.getVerticalScrollBar().setUnitIncrement(8); // 16 * n
+
 		if (floating) {
 			add(btph);
 			add(scroller);

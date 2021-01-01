@@ -1,0 +1,278 @@
+%% tags to identify the topic
+
+mn| Al (xx1943) teaching : How many HCP do you need for 13 tricks|
+tu|y|
+
+%% Font definiton:
+fh|150|ff|1Arial|fb|110|fm|1|
+fh|235|ff|2Arial|fb|28|fm|2|
+fh|340|ff|3Arial|fb|35|fm|3|
+fb|49|fm|4|fb|4|fm|4|
+
+%% color definition
+cr|116|cg|116|cb|1255|              blau = blue
+cr|2255|cg|2255|cb|264|             gelb = yellow
+cr|30|cg|30|cb|3128|                dunkelblau = dark blue
+cr|4255|cg|4255|cb|40|              dunkleres gelb = dark yellow
+cr|516|cg|5128|cb|516|              grün = green
+cr|6245|cb|6220|cg|6235|            beige
+cr|70|cb|7220|cg|7235|              grün-blau = green-blue
+cr|8255|cb|8200|cg|8200|            rosa = pink
+cr|9200|cb|90|cg|9150|              braun = brown
+
+
+
+%%% -----------------------------menu-------------------------------------------
+qx|Menu| 
+bg|6|  %set background color
+bt||nt||cp||fp||
+
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+^-
+3d|0|cp||fp||cs|2|ht|f|
+at|^c@2^x@3{
+^*Gintro,^e About this puzzle^*N. Please read this first. 
+
+{
+^*Go22,^e 7NT made with 22 HCP^*N refined to 21 HCP and 19HCP and even 17 HCP
+^*Go11,^e 7NT made with 11 HCP^*N 
+
+^*Go10,^e 7@s made with 10 HCP^*N
+ 
+^eAnd the winner is:
+^*Go05,^e 7@s made with only 5 HCP^*N
+
+{^x@3
+^*Ghelp,^e How to navigate in this movie ^*N
+}|
+
+ht|r|cs|8|
+fp|2|at|
+
+{
+  This movie is optimized for BBO "wide-screen"  
+  You can toggle between the wide and the small mode by keying CTRL+"W". 
+}|
+
+pg||
+
+
+
+%% -------------------------- 22HCP -------------------------------------------
+qx|o22|
+%% 
+pf|| %freeplay ausgeschaltet
+st||nt||sk||sc|| %small text; newtext = clear textbox; set kibbing all; don't show played cards
+md|1SAHAdACAKQJT98765,SKQJthkqjtdkqjtc4,S5432h5432d5432c2,|
+sv|0|%%set vulnerability
+rh||ah|How to make 7NT|ah|with 22 HCP| %%set description box
+mb|7nppp| %% bidding
+pc|sk| %% lead
+nt|This is the solution to the puzzle, which those of you had in mind, when they answered 22 HCP.
+BUT! Do you need the J really?|
+pg||
+qx|o21|md|1SAHAdACAKQT987654,SKQJthkqjtdkqjtcj,S5432h5432d5432c2,|
+sv|0|%%set vulnerability
+rh||ah|How to make 7NT|ah|with 21 HCP| %%set description box
+mb|7nppp| %% bidding
+pc|sk| %% lead
+sb|SI don't need the Club J really :).|
+pg||at|
+And what about the @cQ???|sb|s|
+pg||
+qx|o19|md|1SAHAdACAKT9876543,SKQJthkqjtdkqjtcj,S5432h5432d5432c2,|
+sv|0|%%set vulnerability
+rh||ah|How to make 7NT|ah|with 19 HCP| %%set description box
+mb|7nppp| %% bidding
+pc|sk| %% lead
+sb|sYou are right. I don't need the club Q either.|
+pg||at| You have 13 tricks from the top again, holding 19 HCP.
+BUT you can do better changing @cK and @cJ|sb|s|
+pg||
+qx|o17|md|1SAHAdACAjT9876543,SKQJthkqjtdkqjtck,S5432h5432d5432c2,|
+sv|0|%%set vulnerability
+rh||ah|How to make 7NT|ah|with 17 HCP| %%set description box
+mb|7nppp| %% bidding
+pc|sk| %% lead
+sb|sWOW! You are right. 17 HCP are enough.|
+pg||nt|You have 13 tricks from the top, holding 17 HCP.
+
+BUT there is a possible deal with  ^*G11,only 11 HCP^*N, which makes 7NT.
+If you don't like to find out yourself, go to the next page  ^$40"|sb|s|
+pg||
+
+%% -------------------------- 11HCP -------------------------------------------
+qx|o11|
+%% 
+pf|| %freeplay ausgeschaltet
+st||nt||sk||sc|| %small text; newtext = clear textbox; set kibbing all; don't show played cards
+md|1dACAQJT98765432,dkqjt98765432ck,S8765432h765432,|
+sv|0|%%set vulnerability
+rh||ah|How to make 13 tricks|ah|with 11 HCP| %%set description box
+mb|7nppp| %% bidding
+pc|dk| %% lead
+nt|Poor West has to lead into your minors. 
+Poor East has 13 tricks in @h, BUT your 7NT is higher.
+Btw. East cannot win 7@s.
+
+I admit it is not easy to find the 7NT-bid over 7@h. In real life East will play 7@h.|
+
+pg||
+
+
+
+%% -------------------------- 10HCP -------------------------------------------
+qx|o10|
+%% 
+pf|| %freeplay ausgeschaltet
+st||nt||sk||sc|| %small text; newtext = clear textbox; set kibbing all; don't show played cards
+md|1sAkQJT98765432,dkqjt98765432ck,c8765432h765432,|
+sv|0|%%set vulnerability
+rh||ah|How to make 13 tricks|ah|with 10 HCP| %%set description box
+mb|7sppp| %% bidding
+pc|dk| %% lead
+nt|If South holds 13 cards in the @s suit, the other cards may distributed randomly and 7@s by South cannot be defeated.
+
+But you'll be surprised to hear that 5 HCP is enough to win 7@s.
+
+Try to find out the deal yourself or click on ^$40 to see the solution.|
+pg||
+
+%% -------------------------- 5HCP -------------------------------------------
+qx|o05|
+%% Solution by amy44 aka Jackie
+pf|| %freeplay ausgeschaltet
+st||nt||sk||sc|| %small text; newtext = clear textbox; set kibbing all; don't show played cards
+md|1SAJT987Ht987654,SQHQJ3DAK642CAQ53,S65432Dt987Ct987,|
+sv|0|%%set vulnerability
+rh||ah|How to make 13 tricks|ah|with 5 HCP| %%set description box
+mb|7sppp| %% bidding
+pc|dA| %% lead
+nt|This is the correct solution to the puzzle.
+This was sent to me by Amy (amy44). Clap clap clap.
+
+Now let us see how the play goes:|
+pg||pc|dds|
+pg||pc|sasss|
+pg||pc|hhsh|
+pg||pc|ccsc|
+pg||pc|hhsh|
+pg||pc|ddsd|
+pg||pc|hhsh|
+pg||pc|ccsc|sb|SI can claim. My hand is high. Opponents are out of majors.|
+pg||mc|13|sc|y|nt|A final remark by Jackie: 
+
+Opponent's @hs don't need to be 3-3, you win in the shown matter if @hs are 4-2 too. But you need trumps to be 1-1 for sure.
+
+And you need 5 HCP at least, because missing K, Q and J opponents are bound take take a trick!!|sb|s|
+pg||
+
+%% -----------------INTRO-------------------------------------------------------
+
+qx|intro|nt||cs|2|ht|g|bt||
+at|
+
+^-
+{
+   I asked my students in the 102-class for beginners, how many HCP were needed at least to score 13 tricks.
+   
+   The first answer was ^*Go22,22^*N HCP. I show you, how this idea may be refined to 21 HCP, 19 HCP and even 17 HCP.
+   
+   Btw. to make 7NT you need at least ^*Go11,11^*N HCP.
+   
+   The next answer from some students was ^*Go10,10 HCP^*N to make 7@s. 
+   The example is easy to understand: Give South all 13 cards of the @s-suit.
+   
+   You'll be surprised to learn, that ^*Go05,5 HCP^*N are enough to make 7@s.
+   In "Moonraker" James Bond makes 7@c with 6 HCP.
+   
+   
+   
+   
+   You may click on the numbers to see the example.
+   }
+
+^-|
+pg||
+
+
+
+
+%% ---------- HELP ----------
+qx|Help, Help notes|
+bt||bg|6|nt||cs|2|fp|2|ht|e|at|
+^b@2^x@3{
+ How to navigate this movie 
+ }
+ |
+
+fp||at|{
+   ^$6  Previous page, permits you to read the previous page of this movie.
+   ^$40  Next page, permits you to read the next page of this movie.
+   ^$7  Previous chapter, takes you back to the first page of the previous topic.
+   ^$41  Next chapter, takes you forward to the first page of the next topic.
+   ^$119  Takes you back to the first page of this movie.
+
+   You can display any hand at any time if you click on the player's name. 
+   Double clicking the name will show all hands.
+}|
+
+ht|o|cs|8|
+fp|2|at|
+
+{
+  This movie is optimized for BBO "wide-screen"  
+  You can toggle between the wide and the small mode by keying CTRL+"W". 
+}|
+cs|9|at|
+
+
+
+
+%% ---------- HELP ----------
+qx|Help, Help notes|
+bt||bg|6|nt||cs|2|fp|2|ht|e|at|
+^b@2^x@3{
+ How to navigate this movie 
+ }
+ |
+
+fp||at|{
+   ^$6  Previous page, permits you to read the previous page of this movie.
+   ^$40  Next page, permits you to read the next page of this movie.
+   ^$7  Previous chapter, takes you back to the first page of the previous topic.
+   ^$41  Next chapter, takes you forward to the first page of the next topic.
+   ^$119  Takes you back to the first page of this movie.
+
+   You can display any hand at any time if you click on the player's name. 
+   Double clicking the name will show all hands.
+}|
+
+ht|o|cs|8|
+fp|2|at|
+
+{
+  This movie is optimized for BBO "wide-screen"  
+  You can toggle between the wide and the small mode by keying CTRL+"W". 
+}|
+cs|9|at|
+
+{
+  If you like my lessons, tell it to others, if you dislike something, tell it to me.  
+  mail to: albrecht.hollstein@@freenet.de
+}
+|
+ht|z|fp||
+%% Impressum at line "z"
+ht|y|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")
+     2009-07-26|
+
+pg||
+
+
+

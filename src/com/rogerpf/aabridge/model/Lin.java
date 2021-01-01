@@ -686,6 +686,7 @@ public class Lin {
 		pf_collection.put("show-all-always", pf_injector_text__show_all_always );
 		pf_collection.put("rem-button",      pf_injector_text__rem_button      );
 		pf_collection.put("enter-play",      pf_injector_text__enter_play      );
+		pf_collection.put("any-time",        pf_injector_text__any_time        );
 		// @formatter:on
 	}
 
@@ -723,10 +724,10 @@ public class Lin {
 			+ "using the  { ^*b Cont ^*n }  button.";
 	
 	static String pf_injector_text__first_button = 
-			"You can  PLAY  out the hand from near the opening lead by using the  { ^*b 1st ^*n }  button.";		
+			"You can  PLAY  out the hand from near the opening lead by clicking the light blue  { ^*b 1st ^*n }  button (below).";		
 	
 	static String pf_injector_text__mid_first = 
-			"You can  PLAY  out the hand from around the current position by using the  { ^*b 1st ^*n }  button.";
+			"You can  PLAY  out the hand from around the current position by clicking the light blue { ^*b 1st ^*n }  button (below).";
 	
 	static String pf_injector_text__show_all_always =
 			  "To see all 4 hands  check  the   {    }|cp|red|at|^*b Show ALL Always ^*n|"
@@ -738,6 +739,9 @@ public class Lin {
 	
 	static String pf_injector_text__enter_play = "  You can click the { ^*b Enter the Deal ^*n }  "
 			+ "button and ^*b THEN ^*n click  { ^*b Play ^*n }  on the LEFT,  to play the hand yourself.";
+	
+	static String pf_injector_text__any_time = "^c     With all these hands  - ^*b At any time ^*n|at| you can"
+			+ "|cp|red|at| ^*b Click ^*n |cp||at|the  { ^*b 1st ^*n }  button below to play out the deal.";
 	
 	// @formatter:on
 

@@ -1,0 +1,663 @@
+%% How to play a NT-contract lesson 1,The Basics,P,1,8,,0,,0
+%% This file is from a former series of lessons
+
+mn| Al (xx1943) teaching : Declarer play for beginners (8)|
+tu||
+
+%% Font definiton:
+fh|150|ff|1Arial|fb|110|fm|1|
+fh|235|ff|2Arial|fb|28|fm|2|
+fh|340|ff|3Arial|fb|35|fm|3|
+fb|49|fm|4|fb|4|fm|4|
+
+%% color definition
+cr|116|cg|116|cb|1255|              blau = blue
+cr|2255|cg|2255|cb|264|             gelb = yellow
+cr|30|cg|30|cb|3128|                dunkelblau = dark blue
+cr|4255|cg|4255|cb|40|              dunkleres gelb = dark yellow
+cr|516|cg|5128|cb|516|              grün = green
+cr|6245|cb|6220|cg|6235|            beige
+cr|70|cb|7220|cg|7235|              grün-blau = green-blue
+cr|8255|cb|8200|cg|8200|            rosa = pink
+cr|9200|cb|90|cg|9150|              braun = brown
+
+%% -----------------------------------menu-------------------------------------------
+qx|Menu|
+set background color
+bg|6|
+bt||nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^-{ Al teaching:  }
+
+{ Declarer play for beginners (8)}
+^-|
+cp||fp||
+
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+ht|d|
+cs|3|
+cp|4|
+^-
+fp|1|3d|0|
+cp||
+fp||
+cs|2|
+ht|f|
+at|^c@2^x@3{
+^*Go1,    1 Entries^*N
+^*Go2,    2 The Race, simple hold up^*N
+^*Go3,    3 The dangerous opponent^*N
+^*Go4,    4 Don't give the dangerous opponent the lead^*N
+^*Go12,  4a Don't give the dangerous opponent the lead^*N
+^*Go5,    5 Which suit to play first? Delayed hold-up^*N
+^*Go13,  5a Which suit to play first? Delayed hold-up^*N
+^*Go6,    6 Avoid a common mistake^*N
+^*Go7,    7 Simple Coup en blanc^*N
+^*Go8,    8 How to play KQxxxx - xx with only 1 entry to the long suit^*N
+
+{
+^*Gdiscussion,    Some remarks to ##4 and ##5 by Ronald^*N
+^*Ganswer,    Summary by Yvon to ##4 and ##5 ^*N
+
+{
+^x@3^*Gintro, ^c     About this series of lessons^*N ^o^*Gconclusion, What you'll learn in this lesson^*N
+^*Gbooks,     Recommendations^*N ^o^*Gcredits, Credits ^*N
+^*Ghelp,     How to navigate in this movie ^*N
+}|
+pg||
+
+%% --------------------------hand number 1 -------------------------------------
+qx|o1|st||sk|s|
+rh||ah|Board 1|ah|Entries|
+md|3SK2HKQ53D86CAK865,SQT65HJT98DA54CJ9,SA9743HA2DQJT92C2,|sv|0|nt||
+mb|1sp2cp2dp3nppp|
+pc|HJ|pg||
+sb|sI like the lead. :)|pg||
+nt|Yes. It could have been a tougher one, like a club lead. What is your plan?
+|pg||
+sb|sI count 7 sure tricks.|pg||
+at|True. 2@s, 3@h, 2@c = 7 sure tricks. You need 9 for your bid. Where will you find the 2 missing tricks?
+|pg||
+sb|sI have a choice between the spade or diamond suits.|pg||
+sb|sThe diamond seems best as it requires only to force out the Ace and King.|pg||
+at|Correct again. To set-up the spades for 2 tricks you would need it to be distributed 3-3 and this is only a 36% probability. So, diamond is a better choice.
+Now, last but not least... Do you take the lead in dummy or in your hand?|pg||
+sb|sThis is an easy one. In dummy of course, to unblock the suit.|pg||
+nt|Well, we may need to talk more about this later on.
+|pg||sb|s|
+pc|HAhh|pg||
+pc|DQddd|pg||
+pc|DJdddA|pg||
+pc|HThhhK|pg||
+pc|SssAs|pg||
+pc|DJdKcd|pg||sb|sNow the diamond suit is set-up but I can't reach the dummy...grrr|
+pg||sb|S|
+at|You needed to plan entries to dummy. Good defenders will always hold-up once before cashing their diamonds honours. Therefore, you needed 2 entries to dummy: one to force out the 2nd honour (Ace or King) and the second to reach the dummy once the @d suit is established.
+|pg||
+hc|hAh3dQd6DJd8h2hKs2sAd2c5|sc|y|at|Look at all cards played and answer the question: What are these 2 entries?|pg||
+sb|sSpade Ace and Heart Ace.|pg||
+nt|Correct! Now, let me ask you again... Should you take the J@h lead in dummy?
+|pg||
+sb|sI see now. I needed to preserve my entry to dummy.|pg||
+at|Correct! It is usually right to unblock with Kx or Ax except when you are in need of an entry. Then, you play against the "stomach". First, you do not expect a problem from blocking the heart suit. Second, the only way you can make your bid is by preserving the dummy entry. Wait a moment while I go back to the first trick...|sb|s|
+pg||ah||lc|hAh3dQd6DJd8h2hKs2sAd2c5|sc||up|23|at||
+sb|sThanks for the 2nd chance!|pg||sb|s|
+pc|Hhhk|pg||
+pc|D8ddd|pg||
+pc|Ddadd|pg||
+pc|Hhhh|pg||
+pc|DQdcd|pg||hc|sa|hs|nd|
+at| And now you have your @sA as third entry to dummy's @d's.|pg||
+mc|10|ls|nd|lc|sa|sk||sc|y|pg||
+
+%% --------------------------hand number 2 -------------------------------------
+qx|o2|st||sk|s|sc||
+rh||ah|Board 2|ah|The Race|
+md|4SAK43HAT8DK93CJ98,SQJ87HKQ764D654C3,S652H953DAQ2CKQT2,ST9HJ2DJT87CA7654|nt||sv|n|
+mb|p|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|mb|-|mb|-|mb|-|
+pc|H6|
+sb|sNot such a nice lead this time......|pg||
+nt|Count your tricks: 2@S+1@H+3@D=6. 3 more will come from @cs. 
+But there is a problem: Opponents may get 4@h-tricks along with the @c A. 
+Do you hold-up or not? Once, twice??|pg||
+sb|s'Rule of 7' tells me to hold-up once with 6 cards (7 - 6 = 1).|
+pg||nt|Very good! By holding-up once you will break the communication between the opps when the distribution of missing @Hs is 5-2. If the distribution is 4-3, then your bid is safe anyway since you may lose only 3@hs and 1@c. 
+So, hold-up the heart once and hope @cA is with East, if West has 5@hs.|pg||sb|s|
+pc|H3|pc|HJ|pc|H8|pg||
+pc|H2|pc|HA|pc|H4|pc|H5|pg||
+nt|Now you know West started with 5 @hs exactly.
+|pg||
+sb|sYes. I noted too that West's second card was smaller than the first card lead.|pg||
+sb|sLet's hope the club Ace is with East!|pg||sb|sYeah!!!!|
+pc|CJ|pc|C3|pc|C2|pc|CA|pg||sb|S|
+hc|ckqtdakqsak|
+at|You may now claim because the 8 highlighted cards + the 1 trick you already have are enough for contract.|
+pg||
+mc|9|sk||lc|ckqtdakqsak|sc|y|pg||
+
+
+
+%% --------------------------hand number 3 -------------------------------------
+qx|o3|st||sk|S|sc||
+rh||ah|Board 3|ah|The dangerous|ah|opponent|
+md|1SK654HKQ2DK9CA942,S987HAJT83D5CJ865,SA32H54DAQT432CK3,SQJTH976DJ876CQT7|
+sv|e|nt||mb|1N|mb|p|mb|3N|mb|ppp|
+pc|HJ|nt|Now, let us hear your analysis. Sure tricks?|
+pg||sb|s8 sure tricks.|
+pg||at|
+Right! Where can you get the missing trick?|
+pg||sb|sI will look for 1 trick in diamond.|
+pg||at|
+How will you play the @ds?|
+pg||sb|sI will hope for the likely 3-2 distribution.|
+pg||at|
+But you realize the @ds could be split 4-1. Would you not like to know how to ensure you make your bid against any distribution and increase the potential for over-tricks?|
+pg||sb|sOf course. What is the best way to play the suit?|
+pg||nt|We will discuss it but first tell me how you plan to handle the lead.|
+pg||sb|s'Rule of 7': hold-up twice with 5 cards (7 - 5 = 2).|
+pg||at|
+Actually, you could hold-up and it could work out well. But with KQx, the best play is to take the lead and plan the play of the diamonds in such a way that you avoid the dangerous opponent (East). Why is East a danger?
+|pg||do|e|sb|sBecause if East gets the lead he will play a heart through my tenace.|
+pg||at|Right you are! How can we prevent it? By making the @d finesse in such a way that if it loses, we do not lose it to East, the dangerous hand.|
+pg||sb|sI got it. I need to finesse through East.|
+pg||nt|So that it may only lose to West, if it loses.... Ok. Now you execute the plan.|
+pg||pc|H4|pc|H6|pc|HK|do|E|sb|s|
+pg||pc|S4|pc|S7|pc|SA|pc|SQ|
+pg||pc|D2|pc|D6|pc|D9|pc|D5|
+pg||at|
+Well done! You can see that even if the finesse fails, the contract is safe. West could cash his @hA but would need to give you back the lead...|pg||at||
+pc|DK|pc|S8|pc|D3|pc|D7|
+pg||pc|C2|pc|C6|pc|CK|pc|C7|
+pg||pc|DA|pc|DJ|pc|C4|pc|C5|
+pg||do||pc|DQ|pc|D8|pc|C9|pc|C8|
+pg||pc|DT|pc|H7|pc|S5|pc|CJ|
+pg||pc|D4|pc|H9|pc|S6|pc|S9|
+pg||pc|S2|pc|ST|pc|SK|pc|H3|
+pg||pc|CA|pc|H8|pc|C3|pc|CT|
+pg||mc|11|sk||sc|y|pg||
+
+
+%% --------------------------hand number 4 -------------------------------------
+qx|o4|
+st||do||sk|S|sc||
+rh||ah|Board 4|ah|Who is dangerous?|
+md|2SJ32HKQ76DA32CA54,S54HA543DQJT98C32,SAQT9HJT2DK54Ck76,SK876H98D76CQJT98|
+sv|b|nt||
+mb|p1cp1hp1sp3nppp|
+pc|DQ|
+pg||sb|sI have 5 sure tricks and I have to play both spades and hearts to get 4 more.|pg||
+nt|Yes. @ss may give you 2 or 3 more and @hs 3 more. So, one suit is not enough. Which suit should you tackle first?|pg||
+sb|sSpades?|pg||at|
+Why spades? If West has both a @h and @s entry, the contract is doomed. When West has a single entry, you need to tackle his entry first. Therefore, you need to first play @h, then @s, because in spades only East (the non dangerous opp) will be able to take the lead. 
+Now, what do you do with the lead? Hold up or not?|pg||
+sb|s'Rule of 7' tells me to hold up once (7 - 6 = 1).|pg||
+nt|It is correct to say that normally you need to hold up. However, here you need to worry about a shift to the club suit. You would then risk to lose 3@cs, 1@h, and 1@d. So, no immediate hold-up. But once you have removed West's entry, you will hold up (a delayed hold up) if opps play a second round of @ds. This way you make sure that if you lose the @s finesse to East, then East is not able to transfer the lead to West.
+Does it make sense?|pg||
+sb|sI think I got it. Thanks!|pg||at||
+pc|D4|pc|D6|pc|DA|pg||do|W|sb|s|
+pc|H6|pc|H3|pc|HT|pc|H8|pg||
+pc|HJ|pc|H9|pc|H7|pc|HA|pg||
+pc|DJ|pc|D5|pc|D7|pc|D2|pg||
+pc|D8|pc|DK|pc|C8|pc|D3|pg||
+pc|H2|pc|S6|pc|HQ|pc|H4|pg||
+pc|SJ|pc|S4|pc|S9|pc|S7|pg||
+pc|S2|pc|S5|pc|ST|pc|SK|
+at|
+Now East is defenseless because of your delayed hold-up. He can only give you back the lead... Claim 10 tricks. Well done!|pg||sb|sThanks!|pg||
+pc|CQCAcc|mc|10|sk||sc|y|sb|s|pg||
+
+%% --------------------- hand ##4 different distribution of opp's cards
+qx|o12|
+st||do||sk|S|sc||
+rh||ah|Board 4a|ah|Who is dangerous?|nt||
+md|2SJ32HKQ76DA32CA54,S765HA8543D86C932,SAQT9HJT2DK54CK76,SK84H9DQJT97CQJT8|mb|p|mb|1C1dxp1sp3nppp|
+pc|d8|nt|The N/S hands are identical to the previous example. 
+The bidding is all that makes the difference.|
+pg||at|
+Now we are sure, that East holds at least 5 cards in @d.|
+pg||at|
+Therefore East is the ^*Bdangerous^*N opponent.|do|E|
+pg||at|
+If East holds both crucial honors @hA and @sK, there is nothing you can do about.|
+pg||nt|If East holds only @hA, that means the @s finesse is on and you'll lose the lead only once and make your bid in comfort.|
+pg||at|
+The crucial situation, where win or loss depends on your good or bad play is when East holds @sK and West @hA. |
+pg||at|
+We remember the rule: Attack the dangerous opponents guard first and start with the @-finesse.|
+pg||pc|D4|pc|d9|pc|DA|
+pg||pc|SJ|pc|s5|pc|S9|pc|s4|
+pg||pc|S3|pc|s6|pc|ST|pc|sK|
+pg||pc|dQ|pc|D2|pc|d6|pc|D5|nt|You remember the "delayed hold-up"?|
+pg||pc|dJ|pc|D3|pc|h5|pc|DK|nt|Now hold your breath and hope the @hA is with WEST.|
+pg||pc|HT|pc|h9|pc|H6|pc|hA|sk||at|
+West has no more @d to return.|
+pg||sc|y|sk||mc|10|nt|BINGO. CLAP CLAP CLAP. Well done.|pg||
+
+
+
+%% --------------------------hand number 5 -------------------------------------
+qx|o5|st||do||sk|s|sc||
+rh||ah|Board 5|ah|Who is now|ah|dangerous?|
+md|3SAT32HkT4DA32CA52,SK54H765DQJT95C76,SqJ9HQj32DK4CK843,S876HA98D876CQJT9|
+sv|e|mb|pp1Np2cp2sp3nppp|nt||
+pc|DQ|pg||
+sb|sIt looks very much like the previous hand.|pg||
+nt|Yes. It is a similar problem. You are still missing 4 tricks to make your bid and as in hand ##4 you need to make these tricks in both the spades and heart suits. So, which suit should you tackle first this time?|pg||
+sb|sHearts?|pg||
+at|
+@hs? In your opinion the dangerous opponent is East or West?|pg||
+sb|sIt is West because he threatens to set-up possibly 3 diamond tricks.|pg||
+nt|Very good! So West being the dangerous one, we need to tackle his entry first. If West has both the @sK and the @HA, we are down. To make our bid, like it or not, we will need to make a @s finesse. Now, contrary to hand ##4, we are finessing into the dangerous hand, West.|pg||do|w|nt||sb|S|
+at|Therefore, in case the finesse should fail, we need to tackle the finesse first while we are still in control of the @d suit. If West holds the @sK, no problem, as long as we are still controlling the @d suit. If the finesse works, no problem, since we can then set-up the hearts while still controlling the @d suit. So, you need to tackle the @s first. 
+Have you decided how to handle the lead?
+|pg||
+sb|sYes.  I fear a club shift. So a delayed holdup is required.|pg||
+at|Good thinking! Now execute the plan...|pg||
+sb|sThanks!|pg||
+pc|DKdd|sb|s|pg||
+pc|SJsssK|pg||
+pc|DJddd|pg||
+pc|DTcddA|pg||
+pc|HKhhhA|pg||
+pc|S8sssq|
+nt|Well done! You can claim 10 tricks.|pg||
+mc|10|sk||sc|y|sb|s|pg||
+
+%% --------------------------hand number 5a ------------------------------------
+qx|o13|st||do||sk|s|sc||
+rh||ah|Board 5a|ah|Who is now|ah|dangerous?|
+md|3SAT32HkT4DA32CA52,SK8754H8765D95C76,SqJ9HQj32DK4CK843,|
+sv|e|mb|1c2dxp2hp3nppp|nt||
+pc|D9|pg||
+sb|sIt looks very much like the previous hand.|
+pg||nt|Yeah. The only difference is that now East is the dangerous opponent, who can cash the long @ds.|do|E|sb|S|
+pg||at|
+The analysis of the hand remains identical except that now the only possible entry for East is the @hA. If East holds @sK, he'll never score it.|
+pg||at|
+So your contract is 100% sure if you attack East's only possible entry first.|
+pg||sb|SI got it!
+I play the hearts first!!|
+pg||pc|dkd8d|nt|Take the first @d at the table to be able to hold up in the 2nd round just in case East bid weak 2 on a 5-carder.|
+pg||pc|hhhkh8|
+pg||pc|hthhh|sb|s|
+pg||pc|dqddd|at|
+Hold up to be guarded against a not serious East.|
+pg||pc|djds7c|
+pg||pc|hhhcq|
+pg||pc|hdch|
+pg||pc|sqsssk|
+pg||pc|c|mc|10|sk||
+pg||sc|y|mc|10|
+pg||
+
+
+
+
+%% --------------------------hand number 6 -------------------------------------
+qx|o6|st||do||sk|S|sc||
+rh||ah|Board 6|ah|Avoid a common|ah|mistake|
+md|4SA54HQJ65DAK5CK54,SQJT9H7DJ987CQ876,SK32HA432D432CA32,S876HKT98DQT6CJT9|nt||sv|b|mb|-|mb|-|nt||mb|p|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|mb|-|mb|-|mb|-|pc|SQ|pg||
+nt|What is your plan? How many sure tricks?|pg||
+sb|s7 sure tricks and hearts will provide 2 missing tricks.|pg||
+at|
+Correct! How will you play the @hs?|pg||
+sb|sPlay the Q to finesse the K??|pg||
+at|
+Bad idea. You need 2 more tricks from @hs. No problem if the @hs are 3-2 but what if they are 4-1? If you need 3 tricks never think of playing the Q or J to finesse missing KT98. 
+Never lead an honour when a small card would do. The proper method is to lead small towards your QJ combination. If the Q or J wins, you need to repeat the process. To increase your chances, think of playing the @hA first, just in case the missing King is a singleton.|pg||
+sb|sDo I need to hold-up the lead according to the 'Rule of 7' (7 - 6 = 1)?|pg||
+nt|Here it is not necessary. You have 2 @s stoppers and you should lose the lead only once to the @hK.
+Now show us the way to play Axxx opposite QJxx when missing KT98x.|pg||sb|s|
+pc|S2|pc|S6|pc|SA|pg||
+pc|H5|pc|H7|pc|HA|pc|H8|pg||
+pc|H2|pc|H9|pc|HJ|pc|D7|pg||
+pc|C4|pc|C6|pc|CA|pc|C9|pg||
+pc|H3|pc|HK|pc|H6|pc|D8|pg||
+pc|S7|pc|S4|pc|S9|pc|SK|at|
+Nicely done! You can claim 9 tricks!|pg||
+mc|9|sk||sc|y|sb|s|
+pg||
+
+
+%% --------------------------hand number 7 -------------------------------------
+qx|o7|st||do||sk|S|sc||
+rh||ah|Board 7|ah|Coup en blanc|
+md|1SAJ2HK74DA97CA432,SK76HAQT86DT86CT9,S543H532DK5432C65,SQT98HJ9DQJCKQJ87|
+nt||sv|0|
+mb|1N|mb|p|mb|p|mb|p|mb|-|mb|-|mb|-|pc|H8|sb|nSorry partner, I have a very poor hand.|pg||
+sb|sAbout what you promised with pass...|sb|n|pg||nt|How many sure tricks?|pg||
+sb|sOnly 5 sure tricks and I need to set-up the diamonds - no other choice.|pg||
+at|
+Right! With a single entry to your @ds in dummy you need/wish the suit to be 3-2. How will you play the suit?
+|pg||
+sb|sMissing QJT I think I need to start with a coup en blanc.|pg||
+at|Great idea! Conceding a trick up-front through a coup en blanc is indeed the only way to make your bid. 
+And about the lead, should you hold-up or not?|pg||
+sb|sCould West have underlead his Ace??|pg||
+at|
+Well, East should answer this by the card he chooses to play. Let's see!|pg||
+pc|hhj|
+nt|With only 3 small cards in dummy East would have played the Ace if he had it. So a holdup is not possible since this would allow East to continue the suit and lead through your heart tenace. In addition and more important is the fact that you have only 1 stopper in the other suits. By holding-up you risk a club or spade shift which would allow the opps to set-up their own long suit.|pg||
+pc|HK|sb|sOk Let's put your advice to test! <grin>|pg||
+pc|daddd|sb|sNext I play low from both hands.|
+pg||pc|dddd|sb|s|at|
+Now the opps are defenseless. They will cash their @h tricks but since you kept controls in all other suits your bid is assured.|
+pg||pc|hhhth|
+pg||pc|hahch|
+pg||pc|hssc|
+pg||pc|hscc|
+pg||pc|cccca|at|
+Well done! You made it with the help of the 'coup en blanc'.|
+mc|7|sk||sc|y|sb|s|
+pg||
+
+%% --------------------------hand number 8 -------------------------------------
+qx|o8|st||do||sk|s|sc||
+rh||ah|Board 8|ah|Coup en blanc|
+ah|KQxxxx vs xx|ah||
+md|2,S987HQ98D98CKJT54,S652HA4DKQ5432C98,SKJT4H7632DAJTC76|
+sv|n|mb|ppp|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|mb|-|mb|-|mb|-|
+nt||pc|S9|pg||nt|Make your plan!|pg||
+sb|s5 sure tricks and the missing tricks need to come from diamonds.|pg||
+at|
+Correct! How will you play the @d suit?|pg||
+sb|sI hope for A with West and lead low towards KQ.|pg||
+at|
+Well, give it a try. Should you hold-up on the lead?|pg||
+sb|sNo sir, I am afraid East would then lead a club through my tenace.|pg||
+at|
+You are 100% right.|pg||sb|s|
+pc|S2|pc|SK|pc|SA|pg||at||
+pc|d6|pc|d9|pc|dK|pc|dJ|pg||
+pc|C9|pc|C7|pc|CQ|pc|CK|pg||
+pc|s8|pc|s5|pc|sJ|pc|sQ|pg||
+pc|d7|pc|d9|pc|dQ|pc|dA|sb|sgrrrrrrrrrr|pg||
+at|
+Ok. Stop playing. Your contract is doomed.|sb|S|pg||
+sb|sI need help with the play.|at||pg||
+hc|s2sAd6dKc9cQs5sQd7dQ|sc|y|nt|You need to plan the play more carefully. Let's look at all cards played. First, to be able to set-up the long suit in dummy you need to assume a 3-2 distribution. With xx in your hand you can reach dummy only twice and you have only one more entry to dummy, the @HA. Whenever you are short of entries, think of doing a coup en blanc. 
+Now wait while I give you a 2nd chance at the play.|pg||at||
+lc|s2sAd6dKc9cQs5sQd7dQ|sc||sb|sThanks!|up|19|pg||sb|S|
+pc|S2|pc|SK|pc|SA|pg||
+pc|D2|pc|D9|pc|D5|pc|DT|pg||
+pc|H2|sb|sIt is tempting to try the finesse.|pg||
+nt|Think ahead to what will happen if it fails.|pg||
+sb|sThen the opps will remove my heart entry - better not finesse.|pg||at||sb|S|
+pc|HK|pc|H8|pc|H4|pg||
+pc|D7|pc|D8|pc|DQ|pc|DA|pg||
+pc|H3|pc|H5|pc|H9|pc|HA|pg||
+at|
+Now your contract is assured. You can claim.|pg||
+mc|9|sk||sc|y|sb|s|
+pg||
+
+
+%% ------------------------General notes--------------------------------
+qx|intro|
+bt||
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^-{ Al teaching:  }
+
+{About this series of lessons}
+^-|
+cp||cs|2|fp||
+ht|g|
+at|^c@2{My target group are absolutely beginners}
+
+{My topic is the DECLARER PLAY; not the bidding not the defense}
+
+{I presuppose only a few things about bridge which you find e.g.:
+^d@2^*Hwww.rpbridge.net/1a00.htm^*N Learn to play bridge with Richard Pavlicek
+^*Hwww.rpbridge.net/1t05.htm ^*N Introduction to R. Pavlicek lessons
+^*Hwww.prairienet.org/bridge/start.htm^*N Getting started with Karen's bridge library
+^*Hwww.prairienet.org/bridge/glos.htm^*N Glossary for Beginners in Karen's bridge library}
+
+{^c@2 If you have any questions feel free to mail me to albrecht.hollstein@@freenet.de}
+|
+fp|2|at|
+{If you like my lessons, tell it to others, if you dislike something, tell it to me.}@0@1|
+ht|z|fp||
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+pg||
+
+
+
+%%--------------------------summary-----------------------------------
+qx|conclusion|
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {This is what you'll learn in this lesson}
+|
+cp||cs|8|fp||
+ht|d| %% Vertikale position
+at|^c@2{Make your plan of play, BEFORE you touch a card in dummy!!!}
+
+{This lesson demonstrates most of the techniques you learned in the previous lessons.}
+
+
+@0@1|
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|pg||
+
+
+
+%%--------------------recommendations----------------------------------
+qx|books|
+nt||
+bg|6|nt||cs|3|cp|4|fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {Recommendations}
+|
+
+cs|8|cp||fp|2|at|^e@2
+
+{
+^f@2Recommended books:
+|
+fp||at|
+1) Robert Berthe, Norbert Lebely: "Step by Step" Vol1 NT-declarer-play.   
+   This is the best book to learn the basics
+
+2) Victor Mollo, Nico Gardener: Card Play technique
+   A classical from 1955, but useful forever
+
+3) William S. Root: How to play a bridge hand.
+   12 easy chapters to winning bridge
+
+4) Louis H. Watson: Play of the hand at bridge
+   Another classical from 1934; very instructive, but you need time
+   }|
+cs|9|cp||fp|2|at|^e@2
+
+{
+^f@2Recommended software:
+|
+fp||at|
+1) Learn to play bridge; A great introduction and it is free.
+   ^*Hweb3.acbl.org/internet/websiteForms.nsf/ltpbForm?OpenForm^*N     
+
+2) Bridge Master 2000 by Fred Gitelman;
+   the best software to learn declarer play.
+   ^*Hbbi.bridgebase.com/software/bmdesc.html^*N
+   }|
+pg||
+
+
+%% ------------------ credits ------------------------------------
+
+qx|credits|
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }    {Credits}
+|
+cs||cp||fp|2|at|^c@2
+
+|
+cp||cs||fp||
+ht|g|
+at|^c@2{{Example 1: Berthe/Lebeley "Pas a pas I" hand 4}
+
+{Example 2: Berthe/Lebeley "Pas a pas I" hand 1}
+
+{Example 6: Berthe/Lebeley "Pas a pas I" hand 6}
+
+{Example 7: Berthe/Lebeley "Pas a pas I" hand 3}
+
+
+
+
+
+
+{Many thanks to Mihailo, Yvon and Ronald for help and hints and suggestions.}@0@1|
+ht|z|
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|pg||
+
+
+%% ---------------discussion hands #4 and #5 -----------------------------
+qx|discussion|
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c{ Al teaching:  }    {Hand ##4 and ##5; Line of reasoning?}
+|
+cs||cp||fp||ht|e|
+at|^b@2In lesson 8 where the following two hands; both 3NT, declarer South. Lead @dQ.
+
+Hand ##4 ^mHand ##5|
+ht|h|at|{|ih|saqt9hjt2dk54c765,sj32hkq76da32cak4|at|}|
+ht|h|at|^m{|ih|sj93hqj32dk4ck843,saqt2hkt4da32ca52|at|}|
+
+ht|q|at|
+#4^b@2^z@3{|ht|z|at|
+}|ht|r|at|^b@2^z@3Both hands have in common they have 5 tricks from top and so you need to find 4 other tricks.|pg||
+at|
+In both hands the conclusion is you have to find them tricks in in spades and in hearts.|pg||
+at|
+A third common property of both hands is that West is the dangerous hand. |pg||
+at|
+If both diamond guards @dAK are gone West will have 3 tricks in diamonds + 2 for regaining the lead twice makes 5 tricks to West. Down 1 for North/South. |pg||
+at|
+The distribution of cards in both hands is higly the same, but for being reversed, upside-down, for North and South as far as hearts and spades are concerned.|
+pg||ht|g|at|^e@2^m@3 Technically spoken correct is leading ^*bspades from South^*n to the tenace in North; the ^*bhearts^*n would best be lead ^*bfrom the short North^*n hand to the long honoured South hand. @0@1
+|pg||
+ht|g|at|^q@2N^z@3 Now technically spoken it's correct to lead the ^*bspades from North^*n to the tenace in South and lead the ^*bhearts from shortness in South^*n to the honors in North|pg||
+ht|q|at|
+#4^b@2^z@3{|ht|z|at|
+}|ht|r|at|^b@2^z@3 The dangerous hand may get the lead as long as there is still a high diamond in North or South. |pg||at|
+So if the first finesse has to loose I would like it to loose it to West.|pg||at|
+Then I can still hope that the second finesse is going to East. |pg||at|
+So for both hands you play your first finesse into the dangerous hand WEST.|pg||at|
+Conclusion: in hand ##4 and ##5 you take the @dQ with @dK.|pg||at|
+In hand ##4 you start with @hJ and continue from there as long as the @hA does not come down.|pg||at|
+In hand ##5 you start @s9 (if @sK is held up the first time you can continue finessing with the @sJ and still are in North if the @sK is held up a second time.) |pg||
+ht|q|at|
+#4^b@2^z@3{|ht|z|at|
+}|ht|r|at|^b@2^z@3 If West or East comes to the lead it's wise to hold up this second time, but that was no problem to me.|pg||at|
+I hope I got it right this time. I am sure it was already in the lesson(8) movie, but I would like to check with you if there are no big errors in this more elaborate line of reasoning.
+
+Ronald
+|pg||
+
+
+%% ---------------------------- answer by Yvon ##4 and ##5 -----------------
+qx|answer|
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c{ Al teaching:  }    {Hand ##4 and ##5; Summary by Yvon}
+|
+cs||cp||fp||ht|e|
+
+at|^b@2Hi Ronald, hands ##4 and ##5 are the toughest, no doubt. This is my own summary for these 2 hands. I hope this helps.
+
+^iBoth contracts 3NT, declarer South, lead @dQ
+
+Hand ##4 ^mFacts: ^wHand ##5|
+ht|i|at|{|ih|saqt9hjt2dk54c765,sj32hkq76da32cak4|at|}|
+ht|i|at|^w{|ih|sj93hqj32dk4ck843,saqt2hkt4da32ca52|at|}|
+
+ht|h|at|^e@2^y@3
+
+1) The only issue here is which suit to lead first.
+|pg|| 
+at|
+2) In both hands West is the dangerous hand because West threatens to set-up @3 his long suit.
+|pg||
+at|
+3) The key difference between the 2 hands is that with hand ##4 you can finesse the spade suit into the Safe opponent East while in hand ##5 you cannot.
+|pg||
+at|
+4) We are concerned about the placement of two cards, the @SK and @HA. Let's call them the "concern" cards. 
+|pg||
+at|
+Principle (taken from book by Berthe and Lebely - Play at NT: When you are forced to set-up 2 suits and you hold 2 stoppers in the suit lead, you need to start by setting-up the suit which the dangerous opponent is most likely to have a winner. You will therefore remove his entry prematurely. 
+
+Therefore based on the above facts, you select which suit to lead first.|pg||
+
+ht|h|at|^e@2^z@3@4
+
+This is the easier of the two hands. Our priority is to work on removing relevant entry cards detained by West, the dangerous hand. Since the @SK can be finessed into the Safe opponent, it is clearly not a concern. Therefore the @hA is the "concern" card in hand ##4.
+|pg|| 
+at|
+If you were to finesse the @SK first and lose the finesse, you lose your bid when the @HA is with the West. However, playing on hearts first, you can't lose....... When you finesse the @SK later on after regaining the lead, you win 10 tricks if it wins. If it loses, you win 9 tricks. @0@1 |pg||
+
+ht|h|at|@4^a@2^z@3|
+ht|h|at|^wHand ##5|
+ht|i|at|^w{|ih|sj93hqj32dk4ck843,saqt2hkt4da32ca52|at|}|
+ht|h|at|^b@2^w@3
+
+Since you cannot afford to lose the spade finesse to the dangerous hand, you play it first. If the finesse wins, then you are OK. If you lose the finesse, then you need to have the @hA with East to make your bid. If West has both the @HA and @SK then you never had a chance anyway. In other words: you wish East to have both the @HA and @SK or West to have either the @HA or @SK.
+|pg||
+at|
+Since you have to try the spade finesse to set-up 2 spade tricks you need to play on spades first. If West happens to have the @SK then your only chance is to have the @HA with East. If East happens to have the @SK, you are making your bid, since you will remove the single entry with West (@HA) while still having control of all other suits.
+
+Yvon @0@1 |pg||
+
+%% ---------- HELP ----------
+qx|Help, Help notes|
+bt||nt||cs|2|fp|2|ht|b|at|^-{ Help }
+^-|
+fp||ht|e|at|
+Short instruction on how to navigate through the movie:
+
+ ^$6  Previous page, permits you to read the previous page of this movie.
+ ^$40  Next page, permits you to read the next page of this movie.
+ ^$7  Previous chapter, takes you back to the first page of the previous topic.
+ ^$41  Next chapter, takes you forward to the first page of the next topic.
+ ^$119  Takes you back to the first page of this movie.
+
+You can display any hand at any time if you click on the player's name. Double clicking the name will show all hands.|
+
+ht|u|
+fp|2|at|^-
+{If you like my lessons, tell it to others, if you dislike something, tell it to me.
+mail to: albrecht.hollstein@@freenet.de}
+^-|
+ht|z|fp||
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|pg||
+0

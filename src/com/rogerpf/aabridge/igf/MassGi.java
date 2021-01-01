@@ -2256,8 +2256,8 @@ public class MassGi {
 			App.deal.botExtra.clear_botInstructions();
 		}
 		else {
-			if (keyWord.contentEquals("swap") == false) { // minimal validation
-				System.out.println("  line: " + bb.lineNumber + "  bi  command  - ERROR -  first word 'Swap' is missing:   " + bb);
+			if (!keyWord.contentEquals("swap") && !keyWord.contentEquals("also")) { // minimal validation
+				System.out.println("  line: " + bb.lineNumber + "  bi  command  - ERROR -  first word 'Swap' or 'Also' is missing:   " + bb);
 			}
 			App.deal.botExtra.new_botInstruction(bb);
 		}
@@ -2483,6 +2483,14 @@ public class MassGi {
 	public void pdl__vp(BarBlock bb) { // visibility - played cards (feintly)
 		// =============================================================================
 		App.deal.setDealShowPlayedVis(bb);
+		App.deal.changed = true;
+	}
+
+	/**
+	 */
+	public void pdl__vh(BarBlock bb) { // visibility - played cards (feintly)
+		// =============================================================================
+		App.deal.setHandsShowTutorialVis(bb);
 		App.deal.changed = true;
 	}
 
@@ -2720,6 +2728,7 @@ public class MassGi {
 		App.deal.displayBoardId = "";
 		App.deal.signfBoardId = "";
 		App.deal.signfBoardId_is_quality = false;
+		App.deal.signfBoardId_is_hash_sig = false;
 		// App.deal.qx_number is left unchanged
 		int numb = Aaa.extractPositiveInt(bb.get(0));
 		if (numb > 0) {
@@ -2727,11 +2736,6 @@ public class MassGi {
 		}
 		new GraInfo(bb);
 	}
-
-//	private final static String[] brdSignfAy = { "board", "brd", "hand", "deal", "example", "ex", "student", "study", "stud", "practice", "practise", "prac",
-//		"teaching", "teach", "numb", "number", "variation", "var", "end", "block", "set", "group", "case", "problem", "prob", "solution", "sol", "item",
-//		"set", "body", "table", "open", "closed", "extra", "xtra", "page", "pg", "book", "volume", "vol", "answer", "ans", "core", "pos", "game", "roger",
-//		"find" };
 
 	private final static String[] brdSignfAy = { "board", "deal", "hand", "example", "ex", "diagram", "diag", "study", "problem", "prob", "answer", "ans",
 			"question", "quiz", "pattern", "throw-in", "end-play", "group", "table", "open", "closed", "traveler", "travel", "trav", "---" };
@@ -2781,6 +2785,24 @@ public class MassGi {
 		}
 
 		if (App.deal.signfBoardId_is_quality == false) {
+
+			// check for a # prefix signifier
+
+			String k = bb.get(0).trim() + "  ";
+			if (k.charAt(0) == '#' && k.charAt(1) != ' ') {
+				int end = k.indexOf(' ');
+				if (end > 1) {
+					App.deal.signfBoardId = k.substring(1, end);
+					App.deal.signfBoardId_is_quality = true;
+					App.deal.signfBoardId_is_hash_sig = true;
+					k = k.substring(end).trim() + " ";
+					end = k.indexOf(' ');
+					App.deal.displayBoardId = k.substring(0, end).trim();
+					App.deal.ahHeader += k.substring(end).trim();
+					return;
+				}
+				// otherwise ignore the #
+			}
 
 			String h = bb.get(0).toLowerCase();
 
@@ -3133,29 +3155,30 @@ public class MassGi {
 					continue;
 				}
 				if (rank == Rank.Invalid) {
-					System.out.println(bbinf + "pdl__pc - Invalid Rank: " + cds + " " + suit + " " + c);
+					System.out.println(bbinf + "pdl__pc - Invalid Rank: " + strip_the_added_2(cds) + " " + suit + " " + c);
 					continue;
 				}
 			}
 
 			if (rank != Rank.BelowAll) {
 				if (App.deal.checkCardExternal(suit, rank) == false) {
-					if (autoAdd_missing_playedCards == false) {
-						if (!lowestForced)
-							System.out.println(bbinf + "pdl__pc - Card played not in hand!: " + suit + " " + rank + "  will try to play lowest");
-						rank = Rank.BelowAll; // so it will try the lowest
-					}
-					else {
-						/* we know the card is not in the current hand 
-						   we will now try to add that card to the hand (but only if it is not yet played)
-						 */
-						Card cardX = App.deal.packPristine.getIfSuitAndRankExists(suit, rank);
+					Card cardX = null;
+					if (autoAdd_missing_playedCards) {
+						cardX = App.deal.packPristine.getIfSuitAndRankExists(suit, rank);
 						if (cardX != null) {
 							Hand hand = App.deal.getNextHandToPlay();
 							App.deal.packPristine.remove(cardX);
 							hand.fOrgs[suit.v].addDeltCard(cardX);
 							hand.frags[suit.v].addDeltCard(cardX);
+							lowestForced = false;
 						}
+					}
+					if (cardX == null) {
+						if (lowestForced == false) {
+							System.out.println(
+									bbinf + "pdl__pc - Card played not in hand!:  " + suit.toCharLower() + rank.toChar() + "  will try to play lowest");
+						}
+						rank = Rank.BelowAll; // so it will try the lowest
 					}
 				}
 			}
@@ -3163,16 +3186,16 @@ public class MassGi {
 			if (rank == Rank.BelowAll) {
 				Card card2 = App.deal.getLowestCardExternal(suit);
 				if (card2 == null) {
-					System.out.println(bbinf + "pdl__pc - No lowest card in suit: " + cds + " " + suit);
+					System.out.println(
+							bbinf + "pdl__pc - No lowest card in suit: " + suit + " but NONE are present. Originaly wanted: " + strip_the_added_2(cds));
 					suit = Suit.Invalid;
 					continue;
 				}
 				rank = card2.rank;
-				// System.out.println(bbinf + "pdl__pc - 'Below all' selected: " + suit + " " + rank);
 			}
 
 			if (App.deal.checkCardExternal(suit, rank) == false) {
-				System.out.println(bbinf + "pdl__pc - Card not found: " + cds + " " + rank + " " + suit);
+				System.out.println(bbinf + "pdl__pc - Card not found: " + strip_the_added_2(cds));
 				continue;
 			}
 			String oCard = suit.toLinStr() + rank.toStr();
@@ -3185,6 +3208,11 @@ public class MassGi {
 			// System.out.println(bbinf + "pdl__pc depart: " + oCard);
 		}
 
+	}
+
+	private String strip_the_added_2(String cds) {
+		int len = cds.length();
+		return (len > 1 && cds.charAt(len - 1) == '2') ? cds.substring(0, len - 1) : cds;
 	}
 
 	/** *********************************************************************************
@@ -3302,6 +3330,7 @@ public class MassGi {
 			if (t == q_.vi)  { pdl__vi(bb);                 	continue; } // visibility x'es show some cards as x'es inside a deal
 			if (t == q_.vj)  { pdl__vj(bb);                 	continue; } // visibility x'es show some cards as x'es inside a deal
 			if (t == q_.vp)  { pdl__vp(bb);                 	continue; } // visibility - played cards (feintly)
+			if (t == q_.vh)  { pdl__vh(bb);                 	continue; } // visibility - played cards (feintly)
 			if (t == q_.rt)  { pdl__rt(bb);                 	continue; } 
 			if (t == q_.zm)  { pdl__zm(bb);                 	continue; }	// study mode		
 			if (t == q_.zs)  { pdl__zs(bb);                 	continue; }	// show the Books-S menu	

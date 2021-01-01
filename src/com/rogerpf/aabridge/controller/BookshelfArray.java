@@ -27,10 +27,10 @@ public class BookshelfArray extends ArrayList<Bookshelf> {
 	public BookshelfArray() {
 		// ==============================================================================================
 
-		add(new Bookshelf("")); // always added even if empty
+		add(new Bookshelf("", "")); // always added even if empty
 
 		for (char c = 'A'; c <= 'Z'; c++) {
-			Bookshelf shelf = new Bookshelf("" + c);
+			Bookshelf shelf = new Bookshelf("" + c, "");
 			if (!shelf.isEmpty()) {
 				add(shelf);
 			}
@@ -47,6 +47,31 @@ public class BookshelfArray extends ArrayList<Bookshelf> {
 		});
 
 	}
+
+	public boolean makeBookshelfFromDroppedPath(String bookpath, boolean loadIfExists) {
+		// ==============================================================================================
+
+		Bookshelf shelf = new Bookshelf("E", bookpath);
+
+		if (shelf.size() == 0)
+			return false;
+
+		add(shelf);
+
+		App.frame.addDroppedShelfToMenu(shelf, loadIfExists /* also request menu display */);
+
+		if (!loadIfExists)
+			return true;
+
+		boolean chapterLoaded = shelf.getBookByIndex(0).loadChapterByIndex(0);
+
+		if (chapterLoaded == true)
+			App.aaBookPanel.matchToAppBook();
+
+		return chapterLoaded;
+
+	}
+	// ==============================================================================================
 
 	public LinChapter pickRandomLinFile() {
 		// ==============================================================================================

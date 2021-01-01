@@ -623,7 +623,7 @@ public class TricksFourDisplayPanel extends JPanel {
 
 			// Rank
 			if (Rank.Two.v <= rank.v && rank.v <= Rank.Ace.v) {
-				char showAsX = xesUseVaild ? (hand.frags[card.suit.v].showXes) : '-';
+				char showAsX = xesUseVaild && (card != null) ? (hand.frags[card.suit.v].showXes) : '-';
 				if (showAsX == '*')
 					showAsX = 'x'; // we do not support 'invisible' for displayed cards in a trick
 				g2.setColor((card == null) ? cardColor : suit.colorCd(Cc.Ce.Strong));

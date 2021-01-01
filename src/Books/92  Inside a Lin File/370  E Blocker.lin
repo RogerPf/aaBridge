@@ -709,10 +709,10 @@ sv|n|sk|s|
 mb|2S|mb|d|mb|p|mb|3H|mb|p|mb|3N|mb|p|mb|p|mb|p|
 pc|s7|
 nt|^b@2^z    @3^^^*b Companion 3 ^*n  ^f A ^*b Bot Instruction ^*n(bi)  Example   ^p no ^*b bi ^*n currently added |
-lg|f|n#|5|at|^c@2
+lg|f|n#|1|at|^c@2
 @. Declarer MUST always be South  -  unlike  Bot Hints (bh)  which work on  ANY deals.
 @. ^*bbi'^*ns tell the Bots (East or West) to ^*b SWAP ^*n a card when certain things happen.   (Hints tell Bots what to ^*bPlay^*n)
-|n#|3|at|^b@2It will help to see this example if you have the  "Study Deal visibility"  ON   -   see the Bot Hints doc in doc Collection.
+|n#|3|at|^b@2It will help to see this example if you have the  "Study Deal visibility"  ON   -   see the ^*b Hints for Bots^*n doc.
 |n#|2|at|You are in 3NT and need either the @d split  OR  the @h finesse.  As you can see, neither are right for you.|
 pg| ***** 85 ***** |
 
@@ -720,16 +720,16 @@ pg| ***** 85 ***** |
 qx|swap,hide|
 ht|f|at|^m@4@5^^|ht|e|at|^p ^*b bi ^*n  Bot Instruction  NOW  added|
 %
-bi|Swap, West, hK, h, p2, T4-9, Cond, Rnds D=3 Won=3, Played Dec h, and|
+bi|Swap, W, h, hK, p2, T4-9, Cond, Rnds D=3 Won=3, Played Dec h, and|
 %
 ht|f|at|@4^^|lg|g|
-n#|3|at|^c^*b  bi`Swap,  W,  hK,  h,  p2,  T4-9,  Cond,    Rnds D=3 Won=3,   Played Dec h,   and` ^*n 
-|n#|3|at|The above  Bot Instruction (bi)  swaps the @hK from East to West,  but ^*b ONLY ^*n once you have tested the @d's (and so found them NOT breaking) ^*b AND ^*n have just led a @h from declarer.     
-|n^|1|at|^o Click the  { ^*b 1st ^*n }  button to check that this is true.|
+n#|3|at|^c^*b  bi`Swap,  W,  h,  hK,  p2,  T4-9,  Cond,    Rnds D=3 Won=3,   Played Dec h,   and` ^*n 
+|n#|3|at|The above  Bot Instruction (bi)  swaps the @hK from East into West, swapping it for a low @h,  but ^*b ONLY ^*n once you have tested the @d's (and so found them NOT breaking) ^*b AND ^*n have just led a @h from declarer.     
+|n#|1|at|^o Click the  { ^*b 1st ^*n }  button to check that this is true.|
 pg| ***** 86 ***** |
 
 
-nt|^b@2^z^^  ^*b Additional Example              bi ^*n  Bot Instruction |
+nt|^b@2^z^^  ^*b Additional Example 1             bi ^*n  Bot Instruction|
 md|3sKQ6hA83dAJ95cA94,sAT753hJ9dQ76cT75,s84hK764dKT84cKQ6,sJ92hQT52d32cJ832|
 %
 bh|Play, W, sL, res, p3, T2,    always|
@@ -745,11 +745,36 @@ pc|dJ|pc|d6|
 tc|n|
 
 ht|f|at|@4^^|lg|g|
-n#|6|at|^c^*b  bi`Swap,  E,  dQ,  d,  p4,  NeededToWinP4` ^*n 
-|n#|3|at|The above  Bot Instruction (bi)  swaps the @dK from East to West,  but Only if it is needed to win the trick (AND next to play is 4th pos).    So if the @dK is played by north the @dQ will not be swapped.     
-|n^|1|at|^m Click the  { ^*b Cont ^*n }  button and play a @d to check that this is true.|
+n#|6|at|^c^*b  bi`Swap,  E,  dQ,   d,   p4,  NeededToWinP4` ^*n
+|n#|3|at|The above  Bot Instruction (bi)  swaps the @dQ from East to West,  but Only if it is needed to win the trick (AND next to play is 4th pos).    So if the @dK is played by north the @dQ will not be swapped.     
+|n#|1|at|^m Click the  { ^*b Cont ^*n }  button and play a @d to check that this is true.|
+bv|f,h|
 pg| ***** 87 ***** |
 
+
+nt|^b@2^z^^  ^*b Additional Example 2             bi ^*n  Bot Instruction|
+md|3sKQ6hA83dAJ95cA94,sAT753hJ9dQ76cT75,s84hK764dKT84cKQ6,sJ92hQT52d32cJ832|
+%
+bh|Play, W, sL, res, p3, T2,    always|
+bi|Swap, E, dQ,  d,  p4,  T2-11, cond, NeededToWinP4|
+bi|Also, E,  c,  d|
+%
+sv||sk|s|sk||
+mb|p|mb|p|mb|3N|mb|p|mb|p|mb|p|
+tc|c|
+pc|s3|
+pc|s8|pc|s9|pc|s6|
+pc|sJ|pc|sQ|pc|s5|pc|s4|
+pc|dJ|pc|d6|
+tc|n|
+
+ht|f|at|@4^^|lg|g|
+n#|6|at|^c^*b  bi`Swap,  E,  dQ,   d,   p4,  NeededToWinP4` ^*n
+|n^|2|at|^c^*b  bi`Also,    E,     c,   d`  ^*n 
+|n#|3|at|Identical to the previous example - except that the a low @c from West will ^*b ALSO ^*n be swapped for East's other @d.     
+|n#|3|at|^m Click the  { ^*b Cont ^*n }  button and play a @d to check that this is true.|
+bv|f,h|
+pg| ***** 88 ***** |
 
 qx|end,wide|
 

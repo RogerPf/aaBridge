@@ -1,0 +1,447 @@
+﻿mn| Al teaching: Lesson 23 SQUEEZE PLAY SUMMARY|
+tu||
+bt||
+sc|y|
+fh|150|ff|1Arial|fb|110|fm|1|
+fh|235|ff|2Arial|fb|28|fm|2|
+fh|340|ff|3Arial|fb|35|fm|3|
+fh|425|ff|4Arial|fb|43|fm|4|
+fb|49|fm|4|fb|4|fm|4|
+cr|116|cg|116|cb|1255|              blau
+cr|2255|cg|2255|cb|264|             gelb
+cr|30|cg|30|cb|3128|                dunkelblau
+cr|4255|cg|4255|cb|40|              dunkleres gelb
+cr|516|cg|5128|cb|516|              grün
+cr|6245|cb|6220|cg|6235|            beige
+cr|70|cb|7220|cg|7235|              grün-blau
+cr|8255|cb|80|cg|80|                rot
+cr|9128|cb|90|cg|950|               braun
+
+qx|Menu|
+cm|y|
+bg|6|
+nt||
+cs|3|
+cp|4|
+fp|1|3d|0|
+at|^-{ Al teaching:  Lesson 23 }
+
+{ Squeeze-play (4) }
+^-|
+cp||
+fp||
+at|
+|
+
+cp||
+fp||
+ht|y|
+at|(c) Albrecht Hollstein ("xx1943") ^s Powered by Bridge Base Inc
+     ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N ^s ^*Hwww.bilbridge.com^*N 
+     Yvon Vanasse ("Vanyvon") and Mihailo Krstic ("Miksa")|
+ht|d|
+
+cs|3|
+cp|4|
+^-
+fp|1|3d|0|
+cp||
+fp||
+cs|2|
+ht|j|
+at|^-{
+^g^*GHAND, The hand analyzed^*N
+^g^*GB00, The hand with all variants^*N
+^g^*GB01, Deal 1: positional WEST holds @s and @h^*N
+^g^*GB02, Deal 2: automatic WEST holds @s and @c^*N
+^g^*GB03, Deal 3: automatic WEST holds @h and @c^*N
+^g^*GB04, Deal 4: positional EAST holds @s and @h (Squeeze not possible)^*N  
+^g^*GB05, Deal 5: automatic EAST holds @s and @c^*N
+^g^*GB06, Deal 6: automatic EAST holds @h and @c^*N
+^h^*GPattern, Possible patterns^*N
+}|pg||
+
+qx|HAND|
+cm|y|
+bt||nt||ht|a|
+cs|3|cp|4|
+fp|1|3d|0|
+at|
+^-{ Al teaching:  Lesson 23 }
+
+{ Example hand }
+^-|
+cs|5|ht|g|fp||cp||
+at|
+^b{|ih|pSA52H543DJ42CAKQ5,,SKQ43HAKQ2DKQ3C32,|at|}|
+ht|i|at|^jYou are declarer in 6NT. Count your winners:
+|pg||
+at|^j3@s + 3@h + 2@d + 3@c = 11 |pg||
+at|
+^jThe 12. trick will be there if either major is distributed 3-3.
+^jIf no major does break, you must try for a squeeze.
+|pg||
+at|
+^jBecause you have threats in 3 suits, 
+^jthere are 6 squeeze-patterns thinkable:
+|pg||
+at|
+^j1) West must hold @s and @h. |at|^s{^*GB01, Deal 1 ^*N}|pg||
+at|
+^j2) West must hold @s and @c. |at|^s{^*GB02, Deal 2 ^*N}|pg||
+at|
+^j3) West must hold @h and @c. |at|^s{^*GB03, Deal 3 ^*N}|pg||
+at|
+^j4) East must hold @s and @h. |at|^s{^*GB04, Deal 4 ^*N}|pg||
+at|
+^j5) East must hold @s and @c. |at|^s{^*GB05, Deal 5 ^*N}|pg||
+at|
+^j6) East must hold @h and @c. |at|^s{^*GB06, Deal 6 ^*N}|pg||
+
+qx|B00|
+cm|y|
+rh||
+ah|Example hand|
+ah|Complete analyzis|
+sk|S|
+sc||
+st||
+cs|5|
+md|3SA52H543DJ42CAKQ5,SJT96HJT96DA65C76,SKQ43HAKQ2DKQ3C32,S87H87DT987CJT984|
+nt||
+sv|0|
+mb|1D|mb|p|mb|3N|mb|p|mb|6N|mb|ppp|
+pc|SJ|pg||
+nt|Drive out @dA...|
+pc|S3|pc|S7|pc|SA|pg||
+pc|D2|pc|D5|pc|DQ|pc|D7|pg||
+pc|DK|pc|D8|pc|D4|pc|DA|pg||
+pc|S6|
+at| and play 2 rounds of @s, 2 rounds of @h, 3 rounds of diamonds and 1 round of clubs. Both opponents follow suit but play the cards on the row not signaling.|
+pc|SQ|pc|S8|pc|S2|pg||
+pc|D3|pc|D9|pc|DJ|pc|D6|pg||
+pc|CA|pc|C6|pc|C3|pc|C4|pg||
+pc|H3|pc|H9|pc|HQ|pc|H8|pg||
+pc|HK|pc|H7|pc|H4|pc|H6|
+at| So we have a 5 card endposition to work on.|pg||
+at| Now assuming that no major is divided 3-3, there are 6 possibilities, how one of the defenders must guard 2 suits:|pg||
+nt|1. ^*GB01, West guards @s and @h ^*N|
+at|^q4. ^*GB01, East guards @s and @h ^*N|
+at|
+2. ^*GB02, West guards @s and @c ^*N|
+at|^q5. ^*GB02, East guards @s and @c ^*N|
+at|
+3. ^*GB02, West guards @h and @c ^*N|
+at|^q6. ^*GB02, East guards @h and @c ^*N
+|pg||
+at|Now let us try @hA. We play the suit that West did not lead and hope, if someone shows out, it is West, because in that case we will have no guess.|pg||
+pc|HA|pc|DT|pc|H5|pc|HT|
+nt|Alas East shows out. Now there are 2 possibilities left and we have to guess:|pg||
+sk||
+cs|5|
+at|
+West guards @s and @h  {^*GB01, Deal 1 ^*N} .  In that case we must play the @cs now.
+|
+hc|ST9HJ|pg||
+lc|ST9HJ|
+at|
+West guards @h and @c  {^*GB03, Deal 3 ^*N} .  In that case you must cash the @sK to squeeze him at once.
+You must decide at the table if West is capable to lead from Jx in @s holding J109x in @h.|
+md|0,CJT,,ST9|
+hc|HJCJt7|pg||
+lc|HJCJt7|
+md|0,ST9,,CJT|
+nt|Now let us look at the situation, when East throws a @c instead of @d10!|
+sk|S|up|3|
+pc|C8H5Ht|pg||
+nt|Now we have the same two possibilities as before:|
+sk||hs|WSWH|                                                   deal 1
+cs|5|
+at|
+West guards @s and @h  {^*GB01, Deal 1 ^*N} |pg||
+ls|WSWH|
+md|0,CJT,,ST9|hs|WHWC|                                         deal 3
+at| or West guards @h and @c  {^*GB03, Deal 3 ^*N} .
+|pg||
+ls|WHWC|md|0,ST9,,CJT|
+at|
+But it could also be that we had squeezed East just now  {^*GB05, Deal 5 ^*N} .|
+md|0,DTC9,,ST9|hs|ESEC|                                         deal 5
+pg||ls|ESEC|
+nt|Now what happens if East has the last 2 hearts and West throws @d10? We have two possibilities:|
+sk|S|up|3|
+md|0,DTCT98,,ST9HJT|
+pc|HTH5D10|pg||
+hs|ESEH|                                      deal 4
+sk||
+cs|5|
+at|
+East guards @s and @h  {^*GB04, Deal 4 ^*N} . We cannot squeeze him, because he plays after dummy, who holds both menaces. When you play clubs from your hand, East will discard the same suit as dummy does. Dummy is squeezed BEFORE East.|pg||
+ls|ESEH|
+md|0,ST9,,CT9|hs|EHEC|                                           deal 6
+at|
+East guards @h and @c   {^*GB06, Deal 6 ^*N} . To squeeze him, we must play @sK just now.|pg||
+ls|EHEC|
+SK|S|up|4|Md|0,Ct9,,St9|
+Nt|The situation is similar if West throws a @c at trick 9. Now there are 3 possibilities:|
+Pc|HAHTH5C7|pg||
+hs|ESEH|                                      deal 4
+cs|5|sk||
+at|
+East guards @s and @h  {^*GB04, Deal 4 ^*N} .|pg||
+ls|ESEH|
+md|0,ST9,,CT9|hs|EHEC|                                           deal 6
+at|
+East guards @h and @c  {^*GB06, Deal 6 ^*N} .|pg||
+ls|EHEC|
+Md|0,C9,,DT|hs|WSWC|
+At|
+Or East has just been squeezed in @s and @c  {^*GB02, Deal 2 ^*N} !! If this is the case, you can play your @S and @c winners in any order.|pg||
+ls|WSWC|
+
+qx|B01|
+cm|y|
+rh||
+ah|Deal 1: Positional|
+ah|WEST guards|
+ah|spades and hearts|
+sk|S|sc||
+st||
+md|3SA52H543DJ42CAKQ5,SJT96HJT96DA65C76,SKQ43HAKQ2DKQ3C32,S87H87DT987CJT984|
+nt|On this deal West guards both @s and @h.|
+sv|0|mb|1D|mb|p|mb|3N|mb|p|mb|6N|mb|p|mb|p|mb|p|pg||
+pc|SJ|pc|S3|pc|S7|pc|SA|pg||
+pc|D2|pc|D5|pc|DQ|pc|D7|pg||
+pc|DK|pc|D8|pc|D4|pc|DA|pg||
+pc|S6|pc|SQ|pc|S8|pc|S2|pg||
+pc|D3|pc|D9|pc|DJ|pc|D6|pg||
+pc|CA|pc|C6|pc|C3|pc|C4|pg||
+pc|H3|pc|H9|pc|HQ|pc|H8|pg||
+pc|HK|pc|H7|pc|H4|pc|H6|pg||
+pc|HA|pc|DT|pc|H5|pc|HT|pg||
+pc|C2C8CQC7|pg||
+pc|CK|
+at| West is helpless now. If he discards a @s, dummy throws a @h and vice versa.|
+sk||mc|12|pg||mc|12|sc|y|pg||
+
+qx|B02|
+cm|y|
+rh||
+ah|Deal 2: Automatic|
+ah|WEST guards|
+ah|spades and clubs|
+sk|S|sc||
+st||
+md|4SA52H543DJ42CAKQ5,SJT96H96DA87CJ976,SKQ43HAKQ2DKQ3C32,S87HJT87DT965CT84|
+nt||
+nt|On this deal West guards both @s and @c.|
+sv|n|
+mb|p|mb|1C|mb|p|mb|1H|mb|p|mb|1N|mb|p|mb|4N|mb|p|mb|6N|mb|p|mb|p|mb|p|pg||
+pc|SJ|pc|S3|pc|S8|pc|SA|pg||
+pc|D2|pc|D7|pc|DK|pc|D5|pg||
+pc|DQ|pc|D6|pc|D4|pc|DA|pg||
+pc|D8|pc|D3|pc|D9|pc|DJ|pg||
+pc|CAC6C2C4|pg||
+pc|S2|pc|S6|pc|SQ|pc|S7|pg||
+pc|HA|pc|H7|pc|H3|pc|H9|pg||
+pc|HK|pc|H8|pc|H4|pc|H6|pg||
+pc|HQHTH5|
+at| West is helpless now. If he discards a @s, dummy's 4 will become good; if he throws a @c, South will take 3 more @cs.|
+sk||mc|12|pg||mc|12|sc|y|pg||
+
+qx|B03|
+cm|y|
+rh||
+ah|Deal 3: automatic|
+ah|WEST guards|
+ah|hearts and clubs|
+sk|S|sc||
+st||md|1SA52H543DJ42CAKQ5,SJTHJT96DA87CJT76,SKQ43HAKQ2DKQ3C32,S9876H87DT965C984|
+nt|Here West guards both @s and @c.|
+sv|e|mb|1C|mb|p|mb|1H|mb|p|mb|1N|mb|p|mb|4N|mb|p|mb|6N|mb|p|mb|p|mb|p|pg||
+pc|HJ|pc|HQ|pc|H7|pc|H3|pg||
+pc|DK|pc|D6|pc|D2|pc|DA|pg||
+pc|HT|pc|HK|pc|H8|pc|H4|pg||
+pc|SQ|pc|S6|pc|S2|pc|ST|pg||
+pc|S3|pc|S7|pc|SA|pc|SJ|pg||
+pc|D4|pc|D8|pc|DQ|pc|D5|pg||
+pc|D3|pc|D9|pc|DJ|pc|D7|pg||
+pc|CA|pc|C6|pc|C2|pc|C4|pg||
+pc|S5|
+nt| Now West is helpless. If he discards a @h, dummy has 2 tricks in that suit and if he discards a @c, South will make 3 @c tricks.|
+sk||mc|12|pg||mc|12|sc|y|pg||
+
+qx|B04|
+cm|y|
+rh||
+ah|Deal 4: Impossible|
+ah|EAST guards|
+ah|spades and hearts|
+sk|S|sc||
+st||md|2SA52H543DJ42CAKQ5,SJTHJTDA8765C8764,SKQ43HAKQ2DKQ3C32,S9876H9876DT9CJT9|
+nt|Now East guards both @s and @h.|
+sv|b|mb|p|mb|1D|mb|p|mb|3N|mb|p|mb|6N|mb|p|mb|p|mb|p|mb|-|mb|-|mb|-|pg||
+pc|SJ|pc|S3|pc|S8|pc|SA|pg||
+pc|D2|pc|D5|pc|DK|pc|D9|pg||
+pc|DQ|pc|DT|pc|D4|pc|DA|pg||
+pc|ST|pc|SQ|pc|S6|pc|S2|pg||
+pc|HA|pc|H6|pc|H3|pc|HT|pg||
+pc|HK|pc|H7|pc|H4|pc|HJ|pg||
+pc|D3|pc|C9|pc|DJ|pc|D6|pg||
+pc|CA|pc|C4|pc|C2|pc|CT|pg||
+pc|H5|pc|D7|pc|HQ|pc|H8|
+cs|5|
+at| Now you know that East guards the @h. You must hope that he doesn't guard the @s as well, because in that case there is no squeeze due to the wrong position of both menaces. So you must play the @sK as squeeze-card. See how this works on  {^*GB06, Deal 6 ^*N} .|pg||
+at| There is no way if you play on @Cs:|pg||
+pc|C3|pc|CJ|pc|CQ|pc|C6|pg||
+pc|CK|pc|C7|
+at| Now dummy is helpless. If he discards a @s, EAST throws a @h and vice versa.|
+sk||mc|11|pg||mc|11|sc|y|pg||
+
+qx|B05|
+cm|y|
+rh||
+ah|Deal 5: automatic|
+ah|EAST guards|
+ah|spades and clubs|
+st||
+sk|S|sc||
+md|3SA52H543DJ42CAKQ5,SJTHJT96DA875CJ97,SKQ43HAKQ2DKQ3C32,S9876H87DT96CT864|
+nt|On this deal East guards both @s and @c.|
+sv|n|mb|1D|mb|p|mb|3N|mb|p|mb|6N|mb|p|mb|p|mb|p|pg||
+pc|HJ|pc|HA|pc|H7|pc|H3|pg||
+pc|DK|pc|D6|pc|D2|pc|DA|pg||
+pc|SJ|pc|SQ|pc|S6|pc|S2|pg||
+pc|S3|pc|S7|pc|SA|pc|ST|pg||
+pc|H4|pc|H6|pc|HK|pc|H8|pg||
+pc|DQ|pc|D9|pc|D4|pc|D5|pg||
+pc|D3|pc|DT|pc|DJ|pc|D7|pg||
+pc|CA|pc|C7|pc|C2|pc|C4|pg||
+pc|S5|pc|D8|pc|SK|pc|S8|pg||
+pc|HQ|
+at| East is helpless. If he discards a @s, dummy's 4 will become good, if he throws a @c, South will take 3 more @cs.|
+sk||mc|12|pg||mc|12|sc|y|pg||
+
+qx|B06|
+cm|y|
+rh||
+ah|Deal 6: automatic|
+ah|EAST guards|
+ah|hearts and clubs|
+sk|S|sc||
+st||
+md|4SA52H543DJ42CAKQ5,SJT96H96DA8765C76,SKQ43HAKQ2DKQ3C32,S87HJT87DT9CJT984|
+nt|Here East guards both @h and @c.|
+sv|e|mb|p|mb|1C|mb|p|mb|1H|mb|p|mb|1N|mb|p|mb|4N|mb|p|mb|6N|mb|ppp|pg||
+pc|SJ|
+pc|S3|pc|S7|pc|SA|pg||
+pc|D2|pc|D5|pc|DQ|pc|DT|pg||
+pc|DK|pc|D9|pc|D4|pc|DA|pg||
+pc|ST|pc|SQ|pc|S8|pc|S2|pg||
+pc|D3|pc|C4|pc|DJ|pc|D6|pg||
+pc|H3|pc|H6|pc|HA|pc|H8|pg||
+pc|HK|pc|H7|pc|H4|pc|H9|pg||
+pc|C2|pc|C8|pc|CA|pc|C6|pg||
+pc|H5|pc|D7|pc|HQ|pc|HT|pg||
+pc|SK|
+at| East is helpless. If he discards a @h, dummy has 2 tricks in that suit and if he discards a @c, South will make 3 @c tricks.|
+sk||mc|12|pg||mc|12|sc|y|pg||
+
+qx|Pattern|
+cm|y|
+bt||
+nt||
+cs|3|
+cp|4|
+fp|2|3d|0|
+at|^-{ Al teaching:  Lesson 23 }
+^-|
+fp|2|
+at|^-{ Squeeze patterns in this example hand }
+^-|
+fp||cp||
+ht|d|
+at|^bPositional squeeze 
+^bWest guards @s and @h|
+cs|5|
+at|
+^b{|ih|H5CK5,STHJT,S4HA2,CJT9|at|}|
+at|
+
+^bSouth plays @CK and
+^bWest cannot guard
+^b@s and @h. If he throws 
+^b@s10, dummy throws @h
+^band vice versa.|pg||
+at|
+^b2-card menace: @hA2|pg||
+at|
+^b1-card menace: @s4|pg||
+at|
+^bSqueeze-card: @cK  {^*GB01, Deal 1 ^*N}|pg||
+
+fp||cp||
+ht|d|
+at|^qPositional NO-squeeze
+^qEast guards @s and @h
+^q{|ih|H5CK5,CJT9,S4HA2,STHJT|at|}|
+at|
+
+^qSouth plays @CK and
+^qdummy cannot guard
+^q@s and @h. If he throws 
+^q@s4, East throws @s10
+^qIf dummy discards @h, 
+^qEast does likewise  {^*GB04, Deal 4 ^*N}|pg||
+
+ht|d|
+at|@4|
+fp||cp||
+at|^bAutomatic squeeze
+^bE or W guards @s and @c
+^b{|ih|H5CK5,STCJT,S4HA2,HJTC9|at|}|
+at|
+
+^bNorth plays @hA, South
+^bfollows and the defender
+^bwho holds @s/@c is
+^bsqueezed.|pg||
+at|
+^b2-card menace: @cK5|pg||
+at|
+^b1-card menace: @S4|pg||
+at|
+^bSqueeze card: @HA  {^*GB02, Deal 2 ^*N}|pg||
+fp||cp||
+at|
+
+^bIt also works against East  {^*GB05, Deal 5 ^*N}|
+ht|e|
+at|
+^b{|ih|H5CK5,HJTC9,S4HA2,STCJT|at|}|pg||
+
+fp||cp||
+ht|d|
+at|^qAutomatic squeeze
+^qE or W guards @h and @c
+^q{|ih|S5CK5,HTCJT,SA4H2,SjTC9|at|}|
+at|
+
+^qNorth plays @sA, South
+^qfollows and the defender
+^qwho holds @h/@c is
+^qsqueezed.|pg||
+at|
+^q2-card menace: @cK5|pg||
+at|
+^q1-card menace: @h2|pg||
+at|
+^qSqueeze card: @SA  {^*GB03, Deal 3 ^*N}|pg||
+fp||cp||
+at|
+
+^qIt also works against East  {^*GB06, Deal 6 ^*N}|
+ht|e|
+at|
+^q{|ih|S5CK5,SjTC9,SA4H2,HTCJT|at|}|
+cm|y|pg||0

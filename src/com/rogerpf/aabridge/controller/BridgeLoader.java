@@ -30,24 +30,30 @@ public class BridgeLoader {
 		// ==============================================================================================
 
 		/**
-		 *  if there are any directories the list then they are tried in order (no recursion)
+		 *  if there is a zip in the list
+		 *  note - deeper in  we can handle a '.jar' specifically ourselves BUT at this level .jars 
+		 *  are not dropable
 		 */
 		for (File file : files) {
-			if (file.isDirectory()) {
-				boolean success = makeBookFromPath(file.getPath(), null);
+			String low = file.getName().toLowerCase();
+			if (file.isFile() && (low.endsWith(".zip") || low.endsWith(".linzip"))) {
+
+				boolean success = App.bookshelfArray.makeBookshelfFromDroppedPath(file.getPath(), true /* we want the chapter loaded */);
+				if (success) {
+					return true; // really means DONT continue searching 
+				}
+
+				success = makeBookFromPath(file.getPath(), null);
 				if (success)
 					return true;
 			}
 		}
 
 		/**
-		 *  if there is a zip in the list
-		 *  note - deeper in  we can handle a .jar specifically ourselves BUT at this level .jars 
-		 *  are not dropable
+		 *  if there are any directories the list then they are tried in order (no recursion)
 		 */
 		for (File file : files) {
-			String low = file.getName().toLowerCase();
-			if (file.isFile() && (low.endsWith(".zip") || low.endsWith(".linzip"))) {
+			if (file.isDirectory()) {
 				boolean success = makeBookFromPath(file.getPath(), null);
 				if (success)
 					return true;
@@ -81,7 +87,7 @@ public class BridgeLoader {
 		/** 
 		 * Path should now not be empty
 		 */
-		Book b = new Book(bookPath, onlyThese);
+		Book b = new Book(null, bookPath, onlyThese);
 		boolean chapterLoaded = false;
 		if (b.size() > 0) {
 			chapterLoaded = b.loadChapterByIndex(0);

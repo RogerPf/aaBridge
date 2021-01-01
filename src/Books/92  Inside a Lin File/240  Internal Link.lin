@@ -5,6 +5,7 @@
 cr|516|cg|5128|cb|516|      5  green 
 cr|7255|cb|70|cg|70|        7  red
 
+qx|^*g..|
 bt||
 at|
 ^b@2^*bInternal Link    -       @^*g....^*n|
@@ -46,15 +47,13 @@ nt|
 ^b@2^*bInternal Link   (to another file in the book)  -       @^*g....^*n      this is an|cp|7|at| aaBridge only|cp||at| feature
 
 Write the <qx_label> in your link to as 
-
+|lg|f|n^|3|at|
 ^c <qx_label^*b^*n>                                 ^mto target a  qx_label in  THE SAME FILE
-
-^c <qx_label^*b:^*npart_filename>                   ^mto target a file in the  THE SAME FOLDER    (qx_label is optional)   
- 
-^c <qx_label^*b:^*npart_filename::part_foldername>  ^mto target a file in a    DIFFERENT FOLDER             ^w "
-
+^c <qx_label^*b:^*npart_filename>                   ^mto target a file in the   THE SAME FOLDER    (qx_label is optional)   
+^c <qx_label^*b:^*npart_filename^*b::^*npart_foldername>  ^mto target a file in a      DIFFERENT FOLDER             ^w "
+^c            ^g       <^*b::^*npart_foldername>  ^nFIRST file in      DIFFERENT FOLDER             ^w "        (no qx)
 ^c <qx_label^*b:::^*npart_filenname>  ^mto target a file in an    UNNAMED FOLDER                              ^w "
-
+|lg||at|
 where 'part_filename' matches ^*bany part^*n of the filename of another lin file in the current book.  The files are tested in alphabetic order so the early ones will match first.
 
 
@@ -76,19 +75,48 @@ The link above is written as   ^k ^*b@^*g|cp|7|at|deal:::down rabbit hole|cp||at
 at|
 As always in aaBridge if you follow a link to a different lin file you can return using the  |fp|1|n#|3|at|@L|fp||n^|3|at|   icon button, top left.
 |n#|5|at|^t   next the the   |fp|1|n#|3|at|@z|fp||n^|3|at|  button.|
+pg| ***** 1 ***** |
+
+
+nt||
+qx|::#|
+at|
+^x@3^b@2^*bInternal Link    -       @^*g|cp|red|at|::##42:1|cp||at|,^*n ... displayed text ... ^*n^*b@^*n^*n^*n|
+
+at|^^^^
+
+	^*bBooks-E  internal links^*n  
+	
+^c@2If you write an aaBridge "Book" the whole thing can be added to aaBridge by zipping up the file structure as a .zip or .linzip and draging and droping it on to an open aaBridge window.  It will remain on the menu bar as an option until you restart aaBridge.
+
+For more info see the  document collection doc ...  
+
+^d ^*bBooks-E  -  adding  'books'  to aaBridge^*n
+
+An index lin is often the first linfile in the first folder of such books.  The top folder name must start with the name  Books-E  (^*bE^*n for external) eg...
+
+^d ^*b Books-E___Goren's_Famous_Hands ^*n
+
+Within such books the Internal link format below can be useful     (no working example is provided here)
+
+^d^*b @^*g|cp|red|at|::##42:1|cp||at|,^*n Against Culbertson^*n^*b@^*n^*n
+
+The |cp|red|at|^*b 42 ^*n|cp||at| is the Book-Id (required at the front of very book folder) of the target folder in the zipped file.|lg|g|at|  
+The |cp|red|at|^*b :1 ^*n|cp||at| makes the jump to the 2nd lin file in that folder (the optional |cp|red|at|^*b :1 ^*n|cp||at|meaning skip ^*bone^*n),  This is useful when you plan to be adding more recent files to a folder and you want, for example, to skip over an index linfile at the front of the target folder and so arrive at your most recent addition.
+|n^|8|at| 
+ ^d ^*b Books-E|cp|red|at|^*b1^*n|cp||at|___Goren's_Famous_Hands ^*n     In the folder name, the red |cp|red|at|^*b 1 ^*n|cp||at| has the ^^^m same skip effect for that Book's menubar Menu.
 
 |
-pg| ***** 1 ***** |
+pg| ***** 2 ***** |
 
 
 nt||
 qx|qx_1|
 at|
-^b@2^*bInternal Link    -       @^*g....^*n|
+^x@3^b@2^*bInternal Link    -       @^*g....^*n|
 at|^^^^^^
-^dExtra Page 1
-|
-pg| ***** 2 ***** |
+^dExtra Page 1|
+pg| ***** 3 ***** |
 
 
 nt||
@@ -98,31 +126,31 @@ at|
 at|^^^^^^
 ^dExtra Page 2^^
 |
-pg| ***** 3 ***** |
+pg| ***** 4 ***** |
 
 
 at|
 some text  |
-pg| ***** 4 ***** |
-
-
-at|more text   |
 pg| ***** 5 ***** |
 
 
-qx|std|
 at|more text   |
 pg| ***** 6 ***** |
 
 
+qx|std|
+at|more text   |
+pg| ***** 7 ***** |
+
+
 qx|b,thin|
 at|more text     |
-pg| ***** 7 ***** |
+pg| ***** 8 ***** |
 
 
 qx|More,wide|
 at|more text       |
-pg| ***** 8 ***** |
+pg| ***** 9 ***** |
 
 
 nt||
@@ -132,7 +160,7 @@ at|
 at|^^^^^^
 ^dExtra Page 3
 |
-pg| ***** 9 ***** |
+pg| ***** 10 ***** |
 
 
 nt||
@@ -141,16 +169,16 @@ at|
 ^b@2^*bInternal Link    -       @^*g....^*n|
 at|^^^^^^^^|
 at|more text   |
-pg| ***** 10 ***** |
+pg| ***** 11 ***** |
 
 
 at|moreeee text     |
-pg| ***** 11 ***** |
+pg| ***** 12 ***** |
 
 
 qx||
 at|moreeeee text       |
-pg| ***** 12 ***** |
+pg| ***** 13 ***** |
 
 
 qx||

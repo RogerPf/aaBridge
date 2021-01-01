@@ -1,0 +1,455 @@
+%% Suit-contracts(1) THE BASICS
+%% For beginners(9)
+mn| Al (xx1943) teaching : Declarer play for beginners (Play a suit-contract 1)|
+tu||
+
+%% Font definiton:
+fh|150|ff|1Arial|fb|110|fm|1|
+fh|235|ff|2Arial|fb|28|fm|2|
+fh|340|ff|3Arial|fb|35|fm|3|
+fb|49|fm|4|fb|4|fm|4|
+
+%% color definition
+cr|116|cg|116|cb|1255|              blau = blue
+cr|2255|cg|2255|cb|264|             gelb = yellow
+cr|30|cg|30|cb|3128|                dunkelblau = dark blue
+cr|4255|cg|4255|cb|40|              dunkleres gelb = dark yellow
+cr|516|cg|5128|cb|516|              grün = green
+cr|6245|cb|6220|cg|6235|            beige
+cr|70|cb|7220|cg|7235|              grün-blau = green-blue
+cr|8255|cb|8200|cg|8200|            rosa = pink
+cr|9200|cb|90|cg|9150|              braun = brown
+
+%% -----------------------------------menu-------------------------------------------
+qx|Menu|
+set background color
+bg|6|
+bt||nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^-{ Al teaching:  Declarer play for beginners (suit contract 1)}
+
+{Introduction: Some examples}
+^-|
+cp||fp||
+
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+ht|d|
+cs|3|
+cp|4|
+^-
+fp|1|3d|0|
+cp||
+fp||
+cs|2|
+ht|f|
+at|^c@2^x@3{
+^*GIntroduction,     What you learn in this lesson - please read it first^*N
+
+{
+^*Go1,     Example 1 : Plan 1 Ruff losers^*N
+^*Go2,     Example 2 : Plan 2 Discard losers on dummy's high cards^*N
+^*Go3,     Example 3 : Easy? Or too easy??^*N
+^*Go4,     Example 4 : Avoid to be forced^*N
+^*Go5,     Example 5 : Avoid the @h loser; plan 2 again^*N
+
+{
+^*Gintro, ^c     About this series of lessons^*N 
+
+{^x@3
+^*Gbooks,     Recommendations^*N
+^*Ghelp,     How to navigate in this movie ^*N
+^*Gcredits,     Credits ^*N
+}|
+pg||
+%%--------------------------summary--What to learn in this lesson---------
+qx|Introduction|
+
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {This is what you'll learn in this lesson ^z}
+|
+cp||cs|8|fp||
+ht|c| %% Vertikale position
+at|
+The play of a suit contract is in general much more complicated than to play a NT-contract. 
+To get a better idea you might look up this page:
+^*Hwww.albrecht-hollstein.de/Bridge/Lessons/Play a suit contract/How to play Suit-contract summary.htm^*N|
+at|
+
+^c@2{This is a general rule in suit-contracts too: Make your plan of play, BEFORE you touch a card in dummy!!! ^z}
+|
+cs|2|
+at|
+{^c@2In suit contract we count primarily the number of losers, not the sure tricks. ^z}
+
+{^c@2You get to know the 2 most important ways to avoid a loser:
+^d Plan 1: Ruff with dummy's trumps
+^d Plan 2: Discard on dummy's long suit. ^z}
+
+{^c@2We confront you with the 2 most common dangers in a suit contract:
+^d To suffer a ruff by defenders.
+^d To be forced to ruff in the long hand too often. ^z}
+
+{^c@2Questions you should always ask yourself before playing the first card:
+^d 1. How many losers do I have?
+^d 2. Are those losers unavoidable or delayed?
+^d 3. How can I get rid of some losers?
+^d 4. Shall I draw the trumps right away and how many? (to make my bid safely)
+^d 5. What may be dangerous for my bid? ^z}
+
+{^c@2The most important decision declarer has to make is if he should draw opponent's trumps at once or if he must postpone this. This will be the topic of the next lesson. ^z}
+
+
+@0@1|
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+pg||
+%% --------------------------hand number 1 ------------------------------------
+qx|o1|
+st||sk|S|%small text set kibbing South
+md|3s975haqt754da9ca7,saq86h6dt64cjt894,s23hkj2d3578ck532,|
+sv|0|%%set vulnerability
+rh||ah|Board 1|ah|Plan 1|ah|Ruff losers| %%set description box
+mb|pp1hp2hp4hppp| %% bidding
+pc|cj|nt|Make your plan before you touch a card in dummy!!!!!!!!!!!!|
+pg||at|
+Reminder: In suit-contracts you count the losers in the master-hand (normally the hand with more trumps).|
+pg||at|
+Here the master-hand is South.|
+pg||at|
+South's losers are: 3@s|hc|s975|
+pg||at| + 1@d = 4.|hc|d9|
+pg||at|
+@c7 is not counted as loser because it is covered by the @cK in dummy.|hc|c7ck|
+pg||nt|Two @s losers and the @d loser are inevitable, but the third @s can be ruffed in dummy.|lc|ckc7s5|hc|s23|
+pg||sb|sOk I got it. I draw only 2 rounds of trumps and ruff the last spade.|
+pc|ccca|lc|s2379d9|
+pg||pc|hhhkh|sb|s|
+pg||pc|hhhad|
+pg||pc|sssst|
+pg||pc|hhdh|sb|sOuch!|nt|Don't forget: Opponents are allowed to draw trumps too.|
+pg||sb|s|up|19|at|
+Your plan to ruff a loser in dummy was the correct one. But you should have asked yourself if there was any danger to prevent from. How do you think you can make sure to be able to ruff a @s loser in dummy to make your bid?|
+pg||sb|sI need to delay playing on trumps - I cannot afford even a single trump round.|pg||
+at|
+True. As we saw in the play earlier, you need to give away the lead twice to the opponents. Then, good opponents that see through your ruffing plan will always try to counter you by playing trumps.
+Now let's play the hand once more, the correct way.|
+pg||sb|sI take the lead in dummy and play a spade.|
+pc|cKcc|pg||
+pc|SSss|
+pg||pc|Hhh9hT|sb|sI keep playing on spades.|
+pg||pc|SsssJ|pg||
+pc|HhAdh|
+pg||sb|sAnd opps are now defenseless as I ruff my spade loser.|
+pc|Sshs|pg||
+pc|ddKdAd|sb|s|
+pg||at|
+Well done! You can claim your bid.|
+pg||mc|10|sk||sc|y|
+pg||
+
+
+%% --------------------------hand number 2 ------------------------------------
+qx|o2|
+%% 
+%% 
+st||sk|s|sc||%small text set kibbing South
+md|4Sa42hkqt86dk6ck46,skqj97ha75d975c75,st86hj42daq84cqj8,|
+sv|n|%%set vulnerability
+rh||ah|Board 2|ah|Plan 2|ah|Discard on high card| %%set description box
+mb|p1hp2hp2np4hppp| %% bidding
+pc|sk|nt|Now make your plan before you touch a card in dummy!!!!!!!!!!!!|
+pg||at|
+How many losers do you have?|
+pg||sb|sI see 2 immediate and sure losers - Aces of hearts and clubs.|
+pg||sb|sI have also 2 immediate spade losers once they force out the Ace.|
+pg||at|
+Your analysis is correct. You see that to make your bid you must get rid of at least one spade loser. How could you do this?|
+pg||sb|sThe only way is to use my long diamond suit in dummy to discard a spade.|
+pg||at|
+Do you first play on trumps to avoid a ruff?|
+pg||sb|sNot possible. If I play on trumps, I give the lead away and opps will cash 2 quick spade tricks.|
+pg||at|
+Exactly. Therefore, you know what to do.|
+pg||sb|sYes. I play on diamonds right away and hope they are split 4-3.|
+pg||at|
+The likelyhood of a 4-3 split is a 62% probability, so it is a fair chance.|
+pg||pc|sssa|
+pg||pc|dkddd|
+pg||pc|dddad|sb|sNow is the moment of truth....|
+pg||pc|dqdsd|nt|Clap clap clap you can claim now.|sb|s|
+pg||mc|10|sk||sc|y|
+pg||
+
+%% --------------------------hand number 3 ------------------------------------
+qx|o3|
+%% 
+%% 
+st||sk|S|sc||%small text set kibbing South
+md|1Sq32haqt86daqt8c28,s5h975d9753ct9753,saj864hkj4dk86cqk,|
+sv|e|%%set vulnerability
+rh||ah|Board 3|ah|Easy?|ah|Or too easy??| %%set description box
+mb|1hp1sp1np4hppp| %% bidding
+pc|s5|nt|Now make your plan before you touch a card in dummy!!!!!!!!!!!!|
+pg||at|
+How many losers?|
+pg||sb|sOne club and at most 1 spade.|
+pg||at|
+Correct! Therefore this looks like an easy contract. What could be dangerous for your bid?|
+pg||sb|sThe only danger could come from being greedy and wishing West underlead the spade King.|
+pg||at|
+Yes. This lead looks very much like a singleton. Not overtaking it with the Ace would be suicidal. Please let's see what could happen from being 'greedy' and start by ducking the lead in dummy...|
+pg||pc|ssKs|sb|s|sb|eTerrible mistake by declarer - now we could also get 2 ruffs and the club Ace.|
+pg||pc|sshs|sb|eI lead my lowest spade to tell partner he can find me in the lowest of the 2 unplayed suits.|
+pg||pc|ccKcAc|sb|wPartner 'told' me to return a club, the lowest of the unplayed suits, excluding the trump suit.|sb|e|
+pg||
+nt|Note: signalling is an advanced subject and is only mentioned here for the purpose of showing how good defense could quickly defeat this otherwise safe contract if you give them the opportunity.|
+pg||pc|sshs|sb|w|sb|sOuch! It was clearly wrong to duck in dummy the 1st trick....|
+pg||at|
+Yes. I will now reset the cards so you can show us the correct and safe way to play this hand.|sb|s|
+pg||up|15|
+pg||sb|sI overtake the lead and remove trumps.|
+pc|sAss|pg||sb|s|
+pc|hKhhh|pg||
+pc|hJhhh|pg||
+pc|hchAh|pg||
+sb|sAnd cash the 3 diamond winners.|hs|nd|hs|sd|pg||
+sb|sFinally the opps cannot prevent me from cashing 1 club and 1 spade trick.|ls|nd|ls|sd|hc|cKQSQJ|pg||sb|S|
+at|
+Well done. This is a 100% sure contract if you make your plan and resist the lure of an extra trick. Please claim now.|
+pg||mc|10|sk||sc|y|lc|cKQSQJ|
+pg||
+
+
+%% --------------------------hand number 4 ------------------------------------
+qx|o4|
+%% 
+%% 
+st||sk|S|sc||%small text set kibbing South
+md|2SAKj32h2djt863ca4,s8764hakqt86d42c6,sqt9h97dkq5c98753,|
+sv|n|%%set vulnerability
+rh||ah|Board 4|ah|Avoid to be forced|ah|loser on loser| %%set description box
+mb|2hp4h4s|an|If they preempt, bid one more.|mb|ppp| %% bidding
+pc|ha|nt|Now make your plan before you touch a card in dummy!!!!!!!!!!!!|
+pg||at|
+How many losers?|
+pg||sb|sOne heart, one club and one diamond.|
+pg||at|
+Correct! Another hand that seems to be easy to make. But don't forget the next step in the plan: What could be dangerous for your bid?|
+pg||sb|SI see no danger, my diamonds will provide enough tricks when I remove trumps.|
+pg||at|
+OK, let's see what can happen.|
+pc|hhh|
+pg||pc|hkhhs|
+pg||pc|sssqs|
+pg||pc|scksks|
+pg||pc|sjssc|
+pg||pc|sasch|
+pg||pc|dddkda|
+pg||pc|hchqc|
+pg||pc|hcckd|sb|sOuch!|nt|Your plan was not good enough. Now you have no more trumps to stop West cashing his @hs. You'll lose 2 more @h-tricks and go down 2.|sk||
+pg||sb|SYou are right, but I got it. I know how to overcome.|
+pg||sb|SReset 6 tricks, please.|sk|s|
+pg||up|24|nt|Ok, here we go!|sb|SThank you.|
+pg||pc|sckjss|nt||sb|sWhen I see that trumps are 4-1, I must change my plan.|
+pg||pc|dd4dkd|nt|You try to establish @ds while dummy's last trumps prevents you from being forced in @hs. Nice idea ............|sb|s|
+pg||pc|dqdadd|at| BUT............|
+pg||pc|ddsd|at| defenders are allowed to use their trumps for ruffs too.
+You have to lose a @c-trick yet and you'll go down 1.|sb|sWhat a pity. Bad luck indeed.|
+pg||nt|No no no. Not bad luck.
+You played better but not good enough...................|sk||
+pg||nt|A loser on loser play is necessary at trick 2 and it costs nothing.
+Try it once more.|
+pg||up|24|sb|s|sk|s|
+pg||pc|hqhhc|nt|Note that by conceding the 2nd trick you have not lost anything since you always had a club loser anyway. So you played a dummy @h loser on a @c loser in your hand. However the main benefit of this play is that now your nice @s cards in dummy have been freed up or empowered. 
+Since it is void of @hs the dummy trumps can stop the forcing. The declarer is back in control as no return can hurt him. He has one more loser, the @dA, but his bid is safe if he plays carefully.|
+pg||nt|Remarks: 1) Declarer can ruff the second trick but after 2 rounds of trumps he has to establish the @d, if he gets the bad news that trumps are splitting 4-1.
+I prefer to discard the loser on loser at once. Especially with the intermediate trumps in dummy and no danger of an overruff in the 4th round of @h.
+2) Observe, that with 4 trumps it would be futile for West to lead his singleton @c. His hand cries for a forcing game.|
+pg||sb|wIt is useless to continue the heart suit now. I can only wish for a club winner in West.|
+pg||pc|cccQcA|sb|w|
+pg||sb|sI will now test the spade suit - hoping at worst for a 4-1 split.|pc|SssQs|
+pg||pc|Scss|sb|sSpades are 4-1. So I can pull trumps safely.|
+pg||pc|scsAs|sb|s|
+pg||pc|sKscc|sb|sNow time to set-up the diamonds.|
+pg||pc|ddAdKd|sb|sNow I can ruff any return other than diamond. Note that I had to unblock the diamonds in dummy.|
+pg||at|
+Clap clap clap you can claim now.|sb|s|
+pg||mc|10|sk||sc|y|
+pg||
+
+
+%% --------------------------hand number 5 ------------------------------------
+qx|o5|
+%% Berthe Leberly II,1
+%% 
+nt||sb|s|
+st||sk|S|sc||%small text set kibbing South
+md|3Sqjt75hak6dq3cqjt,sa2hqjT9dat765c83,s983h754dkj2cak94,|
+sv|n|%%set vulnerability
+rh||ah|Board 5|ah|Avoid the heart loser| %%set description box
+mb|pp1sp2cp2np4sppp| %% bidding
+pc|hq|nt|Now make your plan before you touch a card in dummy!!!!!!!!!!!!|
+pg||at|
+How many losers?|
+pg||sb|s3 inescapable losers: 2 spades and 1 diamond, also a delayer heart loser.|
+pg||at|
+You cannot do anything for the @ss and @d losers. This leaves the delayed @h loser. What can be done to get rid of it? But first, tell me what you think of the lead.|
+pg||sb|sWest found a great lead since it removes one of the 2 heart stoppers. I can't play on trumps...|
+pg||sb|swithout losing the lead twice, and a heart continuation (logical) would be fatal.|
+pg||sb|sSo, there is no future in playing on trumps.|
+pg||at|
+Good analysis. This hand is about judging the "timing". The heart lead is indeed very bad for the declarer. With any other lead you could afford to play on trumps, with 2 stoppers protecting the delayed heart loser. But following the @h lead, you need 'urgently' to find a discard for this small @h loser. What is your plan?|
+pg||sb|sThe club suit will provide a discard but I am afraid of a ruff. So it leaves the diamond suit.|
+pg||nt|Correct. The diamond suit is the correct choice as you only need to lose the lead once to the @dA to set-up the suit for a discard while your heart loser is still protected by your last stopper.  Now that you have a plan, show us the play.|
+pg||pc|HhhA|sb|sThe priority is to set-up the diamonds for a heart discard.|
+pg||pc|DQddd|sb|s|
+pg||pc|DdAdd|
+pg||pc|hJhhhK|
+pg||pc|cccAc|sb|sGoing to dummy to reach the diamond king.|
+pg||pc|dKdhd|sb|sGreat, our plan worked!!|
+pg||pc|s9sssA|sb|sAt last I can play on trumps.|
+pg||pc|hThcs|sb|s|
+pg||pc|ssssK|
+pg||pc|cccc|
+pg||pc|sdss|
+pg||at|
+Clap clap clap you can claim now.|
+pg||mc|10|sk||sc|y|
+pg||
+
+%% ------------------------General notes--------------------------------
+qx|intro|
+bt||
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {About this series of lessons ^z}
+|
+cp||cs|2|fp||
+ht|g|
+at|^c@2{My target group are absolutely beginners ^z}
+
+{My topic is the DECLARER PLAY; not the bidding not the defense ^z}
+
+{I presuppose only a few things about bridge which you find e.g.:
+^d@2^*Hwww.rpbridge.net/1a00.htm^*N Learn to play bridge with Richard Pavlicek
+^*Hwww.rpbridge.net/1t05.htm ^*N Introduction to R. Pavlicek lessons
+^*Hwww.prairienet.org/bridge/start.htm^*N Getting started with Karen's bridge library
+^*Hwww.prairienet.org/bridge/glos.htm^*N Glossary for Beginners in Karen's bridge library
+^z}
+
+{^c@2 If you have any questions feel free to mail me to albrecht.hollstein@@freenet.de ^z}
+|
+fp|2|at|
+{If you like my lessons, tell it to others, if you dislike something, tell it to me. ^z}@0@1|
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+pg||
+%%--------------------recommendations----------------------------------
+qx|books|
+nt||
+bg|6|nt||cs|3|cp|4|fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {Recommendations ^z}
+|
+
+cs|8|cp||fp|2|at|^e@2
+
+{
+^f@2Recommended books:
+|
+fp||at|
+1) Robert Berthe, Norbert Lebely: "Step by Step" Vol1 NT-declarer-play.   
+   This is the best book to learn the basics
+#32) Victor Mollo, Nico Gardener: Card Play technique
+   A classical from 1955, but useful forever
+#33) William S. Root: How to play a bridge hand.
+   12 easy chapters to winning bridge
+#34) Louis H. Watson: Play of the hand at bridge
+   Another classical from 1934; very instructive, but you need time
+   ^z}|
+cs|9|cp||fp|2|at|^e@2
+#4{
+^f@2Recommended software:
+|
+fp||at|#31) Learn to play bridge; A great introduction and it is free.
+   ^*Hweb3.acbl.org/internet/websiteForms.nsf/ltpbForm?OpenForm^*N     
+#32) Bridge Master 2000 by Fred Gitelman;
+   the best software to learn declarer play.
+   ^*Hbbi.bridgebase.com/software/bmdesc.html^*N
+   ^z}|
+pg||
+
+%% ------------------ credits ------------------------------------
+
+qx|credits|
+bg|6|nt||
+cs|3|cp|4|
+fp|2|3d|0|
+at|
+^c@2{ Al teaching:  }   {Credits ^z}
+|
+cs||cp||fp|2|at|^c@2
+
+|
+cp||cs||fp||
+ht|g|
+at|^c@2
+{Example 5: Berthe/Lebeley "Pas a pas II" page 12 hand 1}}
+
+
+
+{Many thanks to Mihailo, Yvon and Ronald for help and hints and suggestions}@0@1|
+ht|z|
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|pg||
+
+
+
+
+
+%% ---------- HELP ----------
+qx|Help, Help notes|
+bt||nt||cs|2|fp|2|ht|b|at|^-{ Help }
+^-|
+fp||ht|e|at|
+Short instruction on how to navigate through the movie:
+
+ ^$6  Previous page, permits you to read the previous page of this movie.
+ ^$40  Next page, permits you to read the next page of this movie.
+ ^$7  Previous chapter, takes you back to the first page of the previous topic.
+ ^$41  Next chapter, takes you forward to the first page of the next topic.
+ ^$119  Takes you back to the first page of this movie.
+
+You can display any hand at any time if you click on the player's name. Double clicking the name will show all hands.|
+
+ht|u|
+fp|2|at|^-
+{If you like my lessons, tell it to others, if you dislike something, tell it to me.
+mail to: albrecht.hollstein@@freenet.de}
+^-|
+%% Impressum at line "z"
+ht|z|
+at|(c) Albrecht Hollstein ("xx1943") ^*Hwww.albrecht-hollstein.de/Bridge/Bridge with Al.htm^*N 
+     Yvon Vanasse ("Vanyvon"), Ronald Pakker ("r_pakker") and Mihailo Krstic ("Miksa")|
+
+%% ------------------------------------------------------------------------
+
+
+
+0

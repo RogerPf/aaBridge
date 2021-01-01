@@ -247,9 +247,6 @@ public class BidButtsPanel extends ClickPanel implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		// =============================================================================
 
-//		if (!App.isSeatVisible(App.deal.getNextHandToBid().compass))
-//			return;
-
 		String a = e.getActionCommand();
 
 		int cmd = 0;

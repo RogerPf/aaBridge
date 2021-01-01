@@ -17,7 +17,7 @@ fp|6|at|^n    ^*nINDEX^*n   |fp||cp|red|at|^*bClick on^*n|cp||at|  any  ^*gindex
 
 ht|c|at|^b@2
 ^*g     :Make Deal         ,md rc ^*n|cp|9|at|@.^m|cp||at| ^d|at|Make  Deal,  |cp|5|at|Remove Card   |cp||at|    
-^*g   xs:Make Deal         ,rt  vx vp vi vj ^*n  |cp|5|at|Rotate, Visibility X's|cp||at|
+^*g   xs:Make Deal         ,rt  vx vp vi vj vh ^*n  |cp|5|at|Hand Visibility  and X's|cp||at|
 
 ^*g     :Add Header        ,ah rh ^*n ^d|at|Add / Remove Header
 ^*g     :Players Names     ,pn  px ^*n|cp|9|at|@.^m|cp||at| ^d|at|Players  Names  |cp|5|at|Hide numbs   |cp||at| 
@@ -35,7 +35,7 @@ ht|c|at|^b@2
 ^*g     :Make Claim        ,mc  ^*n ^d|at|Make  Claim       
 ^*g     :Hide Auction      ,ha       ^*n ^dHide  Auction
 
-^*g     :E Blocker         ,zm bh bi ^*n ^d Study Deal, |cp|green|at| Bot Hints  |cp||at|      
+^*g     :E Blocker         ,bh bi zm  ^*n ^d Bot Hints, |cp|green|at| Study Deal  |cp||at|      
 ^*g     :E Blocker         ,tc bv    ^*n ^dTable Conceal, |cp|5|at|Btn Visibility   |cp||at|    
 ^*g     :E Blocker         ,eb mx kc ^*n ^d   E Blocker,  |cp|5|at|Keep Cards|cp||at|
 ^*g     :pf msgs  pd def   ,pf df    ^*n ^dDisplay Msg, Define Msg    

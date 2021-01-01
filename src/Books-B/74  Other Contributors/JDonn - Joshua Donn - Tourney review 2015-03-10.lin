@@ -1,0 +1,990 @@
+fh|120|ff|1Arial|fb|14|fm|1|                       
+fh|230|ff|2Arial|fb|24|fm|2|
+fh|350|ff|3Times New Roman|fb|34|fm|3|
+fh|490|ff|4Times New Roman|fb|44|fm|4| 
+cr|164|cg|1255|cb|1255|           
+cr|2000|cg|2000|cb|2139|                 
+cr|3255|cg|3250|cb|3205|      
+cr|5065|cg|5105|cb|5255|
+cr|6238|cg|6106|cb|6080|       
+cr|8255|cg|8250|cb|8205|     
+cr|9176|cg|9048|cb|9096|  
+bt||
+bg|2|
+fp|2|cp|1|cs|3|ht|b|at|^b@h @h A BIL Event organized by SET (Special Event Team) @h @h|
+ht|j|
+
+fp|3|cs|1|cp|2|ht|h|AT|^g@2^t@3{^-
+"Tourney review" 
+
+ 
+with Joshua Donn
+
+"jdonn"
+
+2015 Mar 10|fp|2|at|
+
+^-}
+|
+ht|z|fp|1|cp|1|at|^bMoviemaker: Karen10                                     click  ^$40 below to start| 
+pg| ***** 0 ***** |
+
+
+nt||
+
+bg|3|
+qx|1|
+
+
+ht|d|fp|3|cs|1|cp|2|3d|3|at|^j{Table of Contents}|
+
+fp|2|cp|2|cs|1|at|
+
+
+^b{^*GIntro,^*B Movieplayer Intro   and    Introduction^*N }
+
+
+ 
+
+
+^b{^*GB1,^*B Board 1: Hint 1: If your trump position is precarious, and you have a side suit to set up, 
+^b                              set up the side suit BEFORE touching trumps^*N }
+
+^b{^*GB2,^*B Board 2: Declarer Play in a suit contract: Count losers and make a plan^*N }
+
+^b{^*GB3,^*B Board 3: Planning with a bad trump split^*N }
+
+^b{^*GB4,^*B Board 4: "Morton's fork coup"^*N }
+
+^b{^*GB5,^*B Board 5: A "free" finesse^*N }
+
+^b{^*GB6,^*B Board 6: Hint 2: 5332 hands are good for defense, bad for offense^*N }
+
+
+
+|fp|1|cp|2|at|^bYou can use the  ^$40  to turn the pages
+
+^buse ^$41  to go to the next board   and ^$7  to go back to first page current board
+
+^bthe board links here are for fast access
+|
+pg| ***** 1 ***** |
+
+
+nt||
+
+bg|3|
+qx|Intro,T|
+tu||
+mn|Settings|
+fp|3|cp|2|cs|1|ht|c|3d|3|at|{^f Settings for .lin presentations   }|
+fp|1|cp|9|cs|3|ht|e|at|
+^b@2
+MM: The recommended screen resolution for .lin movies is 1440 x 900 pixels 
+(rightclick on your desktop, select "personalize" "screen defenitions")
+Also, make sure you have "widescreen" checked in your windows BBO-version
+(If you're not sure about your settings log into your BBO windows version then:  
+click the yellow tool at bottom and under the "general" tab check "widescreen" and save)
+This will prevent the "cutting off" of the bottom parts or scrambling of your text in these presentations.
+
+If you downloaded BBO recently, you will not be able to get online with the windows version...
+You can still change or check your settings: 
+Go to your C disc, and under "programs" find the Bridge Base Online folder
+Open it and find the "profiles" folder
+Open and scroll to find: BBO_Default_Settings 
+line 71 should read: WIDE_CLIENT=1
+If your setting is 0, change it to 1 and save. This will change your settings to "widescreen".
+
+As an ALTERNATIVE: Open your aaBridge program   (an alternative movie player for Mac and Linux users as well!)
+and simply drag and drop the file of this presentation 
+on the aaBridge screen. 
+If you don't have aaBridge yet, here is a link for the download:  
+
+^*hrogerpf.com/aaBridge ^*n
+
+|fp|1|at|Roger kindly developed this program for those who are not, or can not use the BBO windows player.
+
+|
+pg| ***** 2 ***** |
+
+
+nt||
+bg|3|
+
+mn|INTRODUCTION|
+tu||
+fp|2|cp|2|cs|1|at|
+
+^b{^*Gamps,^*B Introduction^*N }|
+
+
+fp||cp|2|cs|1|ht|e|at|^b@2A BIL SPECIAL EVENT
+
+^bThe Special Event Team (SET) organised on March the 10th 2015 a Tourney Review with  ^*bJoshua Donn^*n
+
+
+EventHst4:  @D@D It gives me great pleasure to welcome Joshua Donn (jdonn) to the BILies Retreat.  
+Many of you may have kibbed Josh's excellent presentation on 'Responses to Weak 2 Bids'  earlier on BBO. 
+(Watch for a follow-up.)
+
+A Gold Life Master and professional bridge player, Josh won the World Junior Team Championships in 2006.
+He holds two national titles in the US: 
+^*bOpen Swiss champion 2008^*n, and the prestigious ^*bBlue Ribbon Pairs champion 2011^*n (with partner Roger Lee).  
+
+Josh is co-author of ^*b"More Breaking the Rules: Second Hand Play"^*n    with Barry Rigal.   
+Check it out at: 
+
+http://shop.chess.co.uk/More-Breaking-The-Rules-Second-Hand-Play-Barry-p/cb04964.htm   @d@d
+
+
+jdonn:  So I will go through the hands from the tourney, and what I think should be done on them. 
+We will have questions about each hand, but only after I'm done with the hand.
+
+
+^b|fp|1|cp|2|at|For board 1 click    ^$40
+|
+pg| ***** 3 ***** |
+
+
+nt||
+
+
+
+
+%%%%%%%%%%Board 1
+
+
+mn|Board 1|
+qx|B1,T|st||md|3S964HAK875D72CT32,SQJ32HT96DA83CKJ9,S75HJ2DKQJ65CA854,SAKT8HQ43DT94CQ76|sv|0|sk||rh||ah|Board 1|pn|jdonn,jdonn,jdonn,jdonn|
+mb|1D|mb|p|mb|1H|mb|p|mb|2C|mb|p|mb|p|mb|p|at|jdonn: North at my table opened 1@D, which I agree with. 
+But it's very close and if you prefer not to open, that's ok too.
+Then it proceeded normally, neither West nor East have quite enough to enter.  
+Now at my table the player rebid 2@D, but better to rebid 2@C and get both suits into play.|
+pg| ***** 4 ***** |
+
+
+at|
+South now has a very interesting decision.
+Sometimes it's right to go back to 2@D even with two diamonds and three clubs, because you want to keep the auction alive. But that would only be the case with a better hand than this.|
+pg| ***** 5 ***** |
+
+
+nt||at|jdonn:  Doing that is called a "false preference".
+Giving preference to partner's first suit, but "false" because you are longer in the second suit.
+Here, South is such a minimum hand that he can assume they don't have game. 
+Therefore passing 2@C is fine, to just end the auction.
+|
+pg| ***** 6 ***** |
+
+
+nt||sk|n|
+
+pc|SA|at|jdonn: It looks like a normal spade lead from East, Ace or King according to your agreements.|
+pg| ***** 7 ***** |
+
+
+nt||
+pc|S4|pc|S2|pc|S5|at|jdonn: And West would encourage, also according to your agreements, 
+so I'll have the defenders continue spades.|
+pg| ***** 8 ***** |
+
+
+nt||
+pc|SK|pc|S6|pc|S3|pc|S7|
+pg| ***** 9 ***** |
+
+
+pc|S8|pc|S9|pc|SJ|pc|C4|at|jdonn: This leaves declarer in a very precarious position because his trump holding is quite weak, and has been shortened.
+I am going to give sort of a useful hint, it's probably one you haven't heard before but it's ideal for a hand like this.
+If your trump position is precarious, and you have a side suit to set up (like the diamonds here), 
+set up the side suit BEFORE touching trumps.
+|
+pg| ***** 10 ***** |
+
+
+nt||sk||at|jdonn:  Let's see what would happen if we tried to get the trumps out before setting up the diamonds.  
+Suppose declarer ducks the first round of trumps, wins the second, and ducks the third to remove all opponents trumps.|
+pg| ***** 11 ***** |
+
+
+hc|c2c3c5c6c7c8c9ctcjcqckca|at|
+That has led to two bad things happening.  
+The first is the opponents can take their spade, because you have no trumps to stop them.  
+The second is that if they duck one round of diamonds, you will never get to all your diamond tricks later.|
+pg| ***** 12 ***** |
+
+
+nt||at|jdonn:  It might be hard to see all that coming, but you can avoid it by relying on the hint I just gave. 
+Set up your side suit BEFORE drawing trumps, if your trump position is precarious/weak.
+
+Suppose declarer knocks out the Ace of diamonds first.  I will even have the defenders be smart and duck one.|
+pg| ***** 13 ***** |
+
+
+lc|c2c3c5c6c7c8c9ctcjcqckca|nt||  
+pc|DK|pc|D4|pc|D2|pc|D3|
+pg| ***** 14 ***** |
+
+
+pc|DQ|pc|D9|pc|D7|pc|DA|at|jdonn: Now they can't take their spade.  
+And you still have the Ace of clubs, to hopefully reach those diamonds later on.
+Maybe the defenders will play trumps themselves now, and you can win the third round 
+...and you have the rest of the tricks.
+|
+pg| ***** 15 ***** |
+
+
+nt||
+pc|CJ|pc|C5|pc|C6|pc|C2|
+pg| ***** 16 ***** |
+
+
+pc|C9|pc|C8|pc|CQ|pc|C3|
+pg| ***** 17 ***** |
+
+
+pc|C7|pc|CT|pc|CK|pc|CA|
+pg| ***** 18 ***** |
+
+
+pc|DJ|pc|DT|pc|H5|pc|D8|
+pg| ***** 19 ***** |
+
+
+mc|8|at|jdonn:  All the diamonds then AK of hearts are good.|
+pg| ***** 20 ***** |
+
+
+nt||
+up|36|pf|y|at|jdonn:  There are other things the defenders can do that would make it tougher, 
+but the general point is that hint about setting up your sidesuit.|
+pg| ***** 21 ***** |
+
+
+nt||at|
+striving:  Is it wrong for South to bid 2@H?
+jdonn:  That is a good question, and it would not be "wrong", it's a very close decision.  
+At least by passing 2@C you know you have 7 trumps, 8 if partner has a fifth club.  
+Rebidding hearts may get you to a 5-1 fit with only 6 trumps.  
+So with my minimum hand I prefer passing 2@c, as I mentioned at least it ends the auction before you get even higher.|
+pg| ***** 22 ***** |
+
+
+nt||at|hawesum5:  What happens if East bids 1@S?
+jdonn:  If East were to overcall 1@S, South would make a negative double. 
+That shows either 4 hearts, or 5+ but not strong enough to bid 2@H (bidding 2@H over 1@S would be 10+ points).
+West would raise spades somehow, and E/W would play a spade contract.
+It looks like @hAK and a heart ruff, with still 2 @d's and 1 @c to come for the defenders, so E/W would go down.|
+pg| ***** 23 ***** |
+
+
+nt||at|
+jdonn:  Ok let's go to hand 2
+
+MM: You can play the hand Double Dummy if you wish by clicking on the cards 
+You can undo your play by clicking on the  ^$6  arrow
+To continue with the next hand click    ^$40   |
+pg| ***** 24 ***** |
+
+
+pf||nt||
+
+
+
+
+
+
+
+%%%%%%%%%%%hand 2
+mn|Board 2|
+qx|B2,T|st||md|4ST5HQ7DQJT7532C98,S9874HK432DK9CQT4,SQ62HA965D84CAJ53,SAKJ3HJT8DA6CK762|sv|n|sk||rh||ah|Board 2|pn|jdonn,jdonn,jdonn,jdonn|
+
+
+mb|1N|mb|p|mb|2C|mb|p|mb|2S|mb|p|mb|3S|mb|p|mb|4S|mb|p|mb|p|mb|p|at|jdonn: East opens 1NT, assuming they play 15-17 as I think most of us do.
+At my table South overcalled 2@D natural.
+That is a very aggressive bid, especially vulnerable.
+Also it depends what convention you are playing, you might have to double, or bid 2@C to show a single suited hand.
+Let's suppose South passes.|
+pg| ***** 25 ***** |
+
+
+nt||at|jdonn:  West has a hand that is very borderline strength to invite, usually you want 9 to invite, 8 is ok if it's good.
+Even though this 8 point hand isn't so great, I would invite anyway because there is an added benefit that I might find 
+a Major suit fit.
+So now we found a spade fit, and West can bid 3@S to invite game.
+East has 16, right in the middle of the range.  
+But in favor of being aggressive, has a doubleton, and has a @hJT working together.  So I think east should go to game.
+|
+pg| ***** 26 ***** |
+
+
+nt||sk|e|
+pc|DQ|at|jdonn:  South will lead the queen of diamonds.
+So how does this contract look?|
+pg| ***** 27 ***** |
+
+
+at|
+There are 1-2 clubs to lose, 1-2 hearts to lose, and 0-1 spades to lose if they break. 
+So between 2 and 5 losers depending on all the finesses.|
+pg| ***** 28 ***** |
+
+
+nt||
+lb|*mWith which suit should you start?^club finesse~trump~heart finesse^2|
+lb|*mTake the diamond lead in hand or dummy?^dummy~hand^2|
+lb|*mShould you finesse spades on first round trump?^Yes~No^2|at|
+jdonn: East wants to take the spade finesse first to get the trumps going, 
+but can play the @sA first just in case it's a singleton Queen offside.
+That means east will need an entry to dummy after the @sA play in order to take the spade finesse. 
+The easiest entry is the @dK, so east should save it for exactly that reason.|
+pg| ***** 32 ***** |
+
+
+nt||
+pc|D9|pc|D8|pc|DA|
+pg| ***** 33 ***** |
+
+
+pc|SA|pc|S5|pc|S4|pc|S2|
+pg| ***** 34 ***** |
+
+
+pc|D6|pc|D5|pc|DK|pc|D4|
+pg| ***** 35 ***** |
+
+
+pc|S7|pc|S6|pc|SJ|pc|ST|at|jdonn:  Good news, it works!
+We can draw the last trump.|
+pg| ***** 36 ***** |
+
+
+nt||
+pc|SK|pc|D2|pc|S8|pc|SQ|at|jdonn:  Now East wants to take a finesse, should it be hearts or clubs first?
+|
+pg| ***** 37 ***** |
+
+
+nt||
+lb|*mWith which suit should you finesse first?^club finesse~heart finesse^2|at|jdonn:  There is sort of a subtle reason to finesse the heart. 
+That can only be done from the East hand, but if you had to play clubs from the West hand, you could do so by leading one 
+to the King.
+In other words, playing hearts now is more convenient since it must be done from East's hand, which is where we are.|
+pg| ***** 39 ***** |
+
+
+nt||sk|s|
+pc|HJ|
+lb|*mShould South cover?^Yes,always cover~doesn't matter~No^3|sk||at|jdonn: Here is doesn't matter, if declarer guesses.
+If South doesn't cover, the Q will fall under the K and the T will be good.
+But if South does cover, there will be a finesse against the 9 later.
+When declarer gets to dummy he could lead a heart to the 8.
+So here it doesn't matter if South covers, but overall I think South should definitely NOT cover. 
+Why?|
+pg| ***** 41 ***** |
+
+
+nt||at|jdonn:  Count declarer's points.   @sAKJ, @dA.  
+He showed 15-17, and then a maximum, so he has 4-5 more points.
+What if he has @hAJT? 
+He might be trying to tempt you to cover and solve his guess for him.  
+So for that reason, South should play low.|
+pg| ***** 42 ***** |
+
+
+nt||
+pc|H7|pc|H2|pc|HA|at|jdonn: North can win, and can do no better than returning a heart.|
+pg| ***** 43 ***** |
+
+
+pc|H5|pc|H8|pc|HQ|pc|HK|at|
+Now the heart ten is good.
+But we have to get the clubs going.  There is really no guess in the suit.  
+We have to lead one to the 10 eventually to finesse the jack.
+We can start with a club to the King.  And try that finesse.|
+pg| ***** 44 ***** |
+
+
+nt||
+pc|C4|pc|C3|pc|CK|pc|C8|
+pg| ***** 45 ***** |
+
+
+pc|C2|pc|C9|pc|CT|pc|CJ|at|jdonn:  It loses, but all the defenders get is the ace of clubs. 
+Just making.|
+pg| ***** 46 ***** |
+
+
+nt||
+pc|CA|pc|C6|pc|D3|pc|CQ|mc|10|
+pg| ***** 47 ***** |
+
+
+up|40|at|trudean 24: I did not understand why should South not cover with @hQ?
+jdonn:  Ok, so let's think about what South knows about East's hand.  
+East has played the @sAKJ, and the @dA, that is 12 points. 
+East has 15-17, but accepted an invitation, so really should have 16-17. 
+That means East has 4-5 more points that we haven't seen yet.|
+pg| ***** 48 ***** |
+
+
+nt||at|jdonn: What if those points are the @hAJ10, giving East a hand like    @sAKJx   @hAJT   @dAx   @cxxxx?
+That is entirely possible.
+East would need to guess hearts to make, and has a two-way finesse. 
+He might try the @hJ to entice the defenders to cover.  So you don't want to oblige him.|
+pg| ***** 49 ***** |
+
+
+nt||at|btour:  I see at your table you double 3@D with only 2 cards...a bit risky for imps?
+jdonn:  Ok so at my table South overcalled 2@D like I said.
+I (west) bid 2NT, lebensohl, planning to bid 3@D next to show ^*bStayman with a diamond stopper^*n. 
+If you are not familiar with that convention it's no big deal to the story.
+My partner bid 3@C, which the 2NT bid asked her to do so that I could then describe my hand, and South bid 3@D.  
+What do I know?|
+pg| ***** 50 ***** |
+
+
+nt||at|jdonn: We have at least 23 points, and also I have a diamond trick over the overcaller.  And they are vulnerable, even better!
+So I don't think it's too risky to double, it looked to me like South had made a mistake.
+I understand the idea that it's risky to double a partscore at IMPs, but that doesn't mean never. 
+It looked right to me.|
+pg| ***** 51 ***** |
+
+
+nt||pf|y|at|
+jdonn:  Ok let's do hand 3
+
+MM: You can play the hand Double Dummy if you wish by clicking on the cards 
+To continue with the next hand click    ^$40   |
+pg| ***** 52 ***** |
+
+
+pf||nt||
+
+%%%%%%%%%%%hand 3
+
+
+
+mn|Board 3|
+qx|B3,T|st||md|1S8632H72DKT54CAKQ,SAKQ7HA98DQ2CT763,S9HKJ63DJ8763C852,SJT54HQT54DA9CJ94|sv|e|sk||rh||ah|Board 3|pn|jdonn,jdonn,jdonn,jdonn|
+mb|1D|mb|d|mb|1H|mb|1S|mb|p|mb|2S|mb|p|mb|p|mb|p|at|jdonn: South opens 1@D.
+At this point, I was West, and I had flashbacks to yesterday when I overcalled 1@S on AKQx and played a 4-1 fit. Ouch
+Luckily this time I had a better option, with support for the unbid suits I had an easy takeout double.|
+pg| ***** 53 ***** |
+
+
+at|
+North bid 1@H, which I think is fine. Better to get your bid in now while you have a chance.
+At this point East could bid 1@S. 
+As South now I would pass. I don't have a spade stopper, and they are in my long suit.|
+pg| ***** 54 ***** |
+
+
+nt||at|jdonn: West could raise with his nice support. 
+And even if he passes, North will bid 2@D and push them up. So either way East will probably declare 2@S.
+
+|
+pg| ***** 55 ***** |
+
+
+sk|s|nt||
+pc|CA|at|jdonn: When the gods of bridge deal me an AKQ on lead I jump at it.|
+pg| ***** 56 ***** |
+
+
+nt||
+pc|C3|pc|C2|pc|C4|
+pg| ***** 57 ***** |
+
+
+lb|*mWhat should south do next?^continue clubs~lead trump~small diamond~heart switch^4|at|jdonn: Now what should South do?
+He could continue clubs, but I think I would switch to hearts. 
+If my partner has the  @hKQ  I will need to lead them twice from my side. 
+And my club tricks really can't go anywhere.|
+pg| ***** 59 ***** |
+
+
+nt||sk|e|
+pc|H7|lb|*mWhat should declarer do?^low to the QT~rise with the Ace^2|at|jdonn: First, could south have a singleton heart? With a shape like 3=1=5=4 he would have bid 2@C over 1@s.
+So I think it's possible, but only if South has 4 spades, and in that case it's ok if he ruffs a heart 
+since we don't want to draw 4 rounds of trumps anyway.
+But I would go up Ace for a different reason.|
+pg| ***** 61 ***** |
+
+
+nt||at|jdonn:  I am worried about North winning the @hK and shifting to a diamond.
+I want to set up the diamond discard, so I want to win the Ace, draw trumps, and then continue with the hearts.|
+pg| ***** 62 ***** |
+
+
+nt||  
+pc|HA|pc|H6|pc|H4|
+pg| ***** 63 ***** |
+
+
+pc|SA|pc|S9|pc|S4|pc|S2|
+pg| ***** 64 ***** |
+
+
+pc|SK|pc|D3|pc|S5|pc|S3|at|jdonn: Uh oh a bad trump break!
+What next?|
+pg| ***** 65 ***** |
+
+
+at|
+I would play my other heart now, because if I draw trumps first I will never get to throw my diamond from dummy and 
+later ruff one.
+|
+pg| ***** 66 ***** |
+
+
+nt||sk|n|
+pc|H9|pc|HK|pc|H5|pc|H2|at|jdonn: Now North knows his partner might have the @dK, in which case he better lead one.
+A heart ruff is possible, but it looks like partner had 4 trumps (if he had only 3 declarer would have drawn them) 
+so I want him to keep them as a nuisance to declarer.
+|
+pg| ***** 67 ***** |
+
+
+nt||sk||
+pc|D6|pc|D9|pc|DK|pc|D2|at|jdonn: South still has 2 clubs to come but that looks like it.|
+pg| ***** 68 ***** |
+
+
+nt||
+pc|D4|pc|DQ|pc|D7|pc|DA|at|jdonn: Declarer might as well draw the last 2 trumps and take his 2 heart tricks. 
+|
+pg| ***** 69 ***** |
+
+
+nt||
+pc|SJ|pc|S6|pc|S7|pc|C5|
+pg| ***** 70 ***** |
+
+
+pc|ST|pc|S8|pc|SQ|pc|D8|
+pg| ***** 71 ***** |
+
+
+pc|H8|pc|H3|pc|HT|pc|D5|at|jdonn: The finesse is proven due to the 1@H bid.|
+pg| ***** 72 ***** |
+
+
+nt||
+pc|HQ|pc|DT|pc|C6|pc|HJ|mc|8|
+pg| ***** 73 ***** |
+
+
+up|44|at|CarlieG:  If North had not bid, should East bid @H or @S first?
+jdonn:  Good question, so if it went     1@D   X   Pass
+I would bid 1@S, the reason is if the auction comes back to me I can bid 2@H next. 
+Since I have a reasonable hand I can show both suits and let partner pick.
+wyoming33: North should give South a @H ruff then it's down one?
+jdonn:  If North gives the heart ruff it's not down 1.|
+pg| ***** 74 ***** |
+
+
+nt||at|jdonn:  If North gave the heart ruff, south would have only 1 trump left.  
+Declarer would draw it ending in dummy, and take his 2 heart tricks throwing the diamond loser. 
+Then he could ruff his small diamond in dummy.
+It's just a trade of tricks, a heart ruff or the diamond king. Unfortunately they can't get both.|
+pg| ***** 75 ***** |
+
+
+nt||pf|y|at|
+jdonn:  Ok let's go to 4
+
+MM: You can play the hand Double Dummy if you wish by clicking on the cards 
+To continue with the next hand click    ^$40   |
+pg| ***** 76 ***** |
+
+
+pf||nt||
+
+
+
+mn|Board 4|
+qx|B4,T|st||md|2S6H987642DK3CKT65,SKT53HJ3DJT96CAJ4,SAQ42HAKTDQ84CQ93,SJ987HQ5DA752C872|sv|b|sk||rh||ah|Board 4|pn|jdonn,jdonn,jdonn,jdonn|
+mb|p|mb|1N|mb|p|mb|2D|mb|p|mb|2H|mb|p|mb|3H|mb|p|mb|4H|mb|p|mb|p|mb|p|at|jdonn:  North has a nice 1NT opener.
+The main question here is, what is South's hand worth? 
+Transfer to 2@H seems like a good start, but then pass or invite with 3@H?
+I think it's worth an invite.
+It's only 6 points but the distribution is very nice, 6-4 hands usually play quite well. 
+There is an old saying - with 6-4, bid more!|
+pg| ***** 77 ***** |
+
+
+nt||at|jdonn:  Another way to think of it is, if we invite with balanced 8 point hands, 
+surely this distribution is worth an extra 2 points.
+North has 17 points and a very good heart holding, a clear acceptance.|
+pg| ***** 78 ***** |
+
+
+nt||sk|e|
+lb|*cWhat would be your opening lead?^^s7^hQ5sJ987dA752c872|
+pc|S7|at|jdonn:  With East's hand I think I would lead a spade. 
+Hearts and diamonds look risky, and I have a better hope of setting up spade tricks than club tricks.|
+pg| ***** 80 ***** |
+
+
+sk|n|nt||
+pc|S6|pc|SK|pc|SA|at|jdonn:  If trumps are 2-2 we won't lose one, but if they are 3-1 we probably will. 
+So let's find out.
+|
+pg| ***** 81 ***** |
+
+
+nt||
+pc|HA|pc|H5|pc|H2|pc|H3|
+pg| ***** 82 ***** |
+
+
+pc|HK|pc|HQ|pc|H4|pc|HJ|at|jdonn:  A good break for a change!
+So now we are sure to make since we can't lose more than 2 clubs and the @dA 
+We can try to find the @cJ for an overtrick.|
+pg| ***** 83 ***** |
+
+
+nt||
+lb|*mWhat would you as declarer do next?^small to diamond K~small to club K~small to club 10~continue trumps^1|
+at|jdonn: Actually there is a sneaky thing we can try first.  Since we have lots of trumps there is no risk.
+What if we lead a diamond to the King? 
+If it holds, we can go back to the ten of hearts, and throw our other diamond on the @sQ.|
+pg| ***** 85 ***** |
+
+
+at|
+If East goes up Ace, then we have 2 discards coming on the @dQ and the @sQ, and we can throw two clubs.
+So either way we can avoid needing to guess the @cJ right now.
+|
+pg| ***** 86 ***** |
+
+
+nt||sk||
+pc|D4|pc|DA|pc|D3|pc|D6|
+pg| ***** 87 ***** |
+
+
+pc|D2|pc|DK|pc|D9|pc|D8|
+pg| ***** 88 ***** |
+
+
+pc|H6|pc|S3|pc|HT|pc|C2|
+pg| ***** 89 ***** |
+
+
+pc|SQ|pc|S8|pc|C5|pc|S5|
+pg| ***** 90 ***** |
+
+
+pc|DQ|pc|D5|pc|C6|pc|DT|at|jdonn:  Declarer can just claim, giving up the @cA.|mc|11|
+pg| ***** 91 ***** |
+
+
+nt||up|32|at|jdonn:  This is a play with a fancy name called a "morton's fork coup."
+There is an old story about a King Morton.  He believed if you were rich you can afford to pay lots of taxes.  
+But if you are poor, you must be hiding all your money away so you can also afford to pay a lot of taxes.
+So whichever way you turned you were caught in morton's fork.|
+pg| ***** 92 ***** |
+
+
+at| 
+That's what a "Morton's fork" is. If East ducks the Ace he loses a trick. And if he goes up Ace he loses a trick.|
+pg| ***** 93 ***** |
+
+
+nt||
+at|jdonn:  That is East's situation here.  If he goes up Ace of diamonds, declarer gets 2 club discards. 
+If he ducks the diamond, he loses the diamond trick.      It's darned if you do, darned if you don't.
+So I believe declarer should make 5 without any need for guessing the @cJ.|
+pg| ***** 94 ***** |
+
+
+nt||at|jdonn: It's kind of a fancy play, but I like the story behind the name.
+Even if there wasn't the element of the "morton's fork", it would be a good idea to try and sneak a diamond to the King, 
+and if they duck you can throw the other diamond on a spade.  
+Throwing the diamond on the spade first won't work, because if the King is singleton they will never duck the Ace.|
+pg| ***** 95 ***** |
+
+
+nt||pf|y|at|
+jdonn:  Ok Board 5
+
+MM: You can play the hand Double Dummy if you wish by clicking on the cards 
+To continue with the next hand click    ^$40   |
+pg| ***** 96 ***** |
+
+
+pf||nt||
+
+
+
+
+
+mn|Board 5|
+qx|B5,T|pn|jdonn,jdonn,jdonn,jdonn|st||md|3S98653HA6DQ52CKT7,S42H92DA864CA9643,SAKQTHT843DKT3CQ2,SJ7HKQJ75DJ97CJ85|sv|0|sk||rh||ah|Board 5|pn|jdonn,jdonn,jdonn,jdonn|
+mb|1D|mb|1H|mb|1S|mb|p|mb|2S|mb|p|mb|p|mb|p|at|jdonn:  So North opens 1@D.
+East has a light 1@H overcall.  I like it with the good suit and not vulnerable.
+Now south can bid 1@S showing 5 spades.      Because if you had 4 you would make a negative double instead.
+West has an ok hand but no convenient bid.
+North will gladly raise with that ok trump support.|
+pg| ***** 97 ***** |
+
+
+nt||at|
+jdonn:  South is pretty close to worth an invitation, but I think not quite.  
+But it's 50-50, if you want to invite that's ok.
+One thing is, the heart holding is not that great. 
+If partner has any honor in hearts like the Queen, the lead is going right through it.
+|
+pg| ***** 98 ***** |
+
+
+nt||sk|s|
+pc|H9|at|jdonn:  West will lead a heart.
+It looks like with North and South both being maximum, a decent game was missed.
+It's pretty much down to needing the @dJ onside, or if the opponents play clubs for you, you might get a diamond discard.
+Let's draw trumps.|
+pg| ***** 99 ***** |
+
+
+nt||
+pc|HT|pc|HJ|pc|HA|
+pg| ***** 100 ***** |
+
+
+pc|S3|pc|S2|pc|SA|pc|S7|
+pg| ***** 101 ***** |
+
+
+pc|SK|pc|SJ|pc|S5|pc|S4|at|jdonn: I think what I would do now is lead a heart.  
+I want to get to my hand to try the clubs before relying on diamonds.
+|
+pg| ***** 102 ***** |
+
+
+nt||
+pc|H3|pc|H7|pc|H6|pc|H2|at|jdonn:  East can win this with the 7, remember all the spots that went on the first trick.
+|
+pg| ***** 103 ***** |
+
+
+nt||
+pc|HK|pc|S6|pc|C3|pc|H4|at|jdonn:  Now we can try a club to the Queen, if it wins we can try a club to the ten. 
+It's "free" since if it loses we can try diamonds next.  
+|
+pg| ***** 104 ***** |
+
+
+nt||
+pc|C7|pc|C4|pc|CQ|pc|C5|
+pg| ***** 105 ***** |
+
+
+pc|C2|pc|C8|pc|CT|pc|CA|at|jdonn: And it worked!
+If that had lost to the Jack, we would try the diamond to the T next.
+But here we don't have to, we have a discard for our third diamond.|
+pg| ***** 106 ***** |
+
+
+nt||
+pc|C6|pc|D3|pc|CJ|pc|CK|at|jdonn:  Now we can give up the Ace of diamonds and claim.|
+pg| ***** 107 ***** |
+
+
+nt||sk||
+pc|D2|pc|D4|pc|DK|pc|D7|at|jdonn:  West should duck in case declarer has the Jack instead of the Queen 
+- he would have to guess.
+But here there is no guess.
+|mc|10|
+pg| ***** 108 ***** |
+
+
+nt||up|36|pf|y|at|jdonn:  Ok last hand
+
+MM: You can play the hand Double Dummy if you wish by clicking on the cards 
+To continue with the next hand click    ^$40   |
+pg| ***** 109 ***** |
+
+
+pf||nt||
+
+
+
+mn|Board 6|
+qx|B6,T|st||md|4SAKHAJT8DKT82C765,SQ9864HK753D3CKQ2,S532H964D654CAJ83,SJT7HQ2DAQJ97CT94|sv|e|sk||rh||ah|Board 6|pn|jdonn,jdonn,jdonn,jdonn|
+mb|p|mb|1N|mb|p|mb|p|mb|p|at|jdonn:  East doesn't have enough to open, and South has a 1NT opener.
+If West has a bid to show the Majors he can consider it, but I see 3 danger signs.
+His partner is a passed hand, his suits are very weak, and he is vulnerable.  
+At the table I passed|
+pg| ***** 110 ***** |
+
+
+nt||at|jdonn:  Now East also has a hand that looks like he can bid with.
+But I will give you a very good hint.     5332 hands are good for defense, bad for offense.
+You should always be reluctant to overcall on the 2 level with a 5332 hand.
+And we see here, if East bids he will find a silly 5-1 diamond fit.   (East could bid spades but how would he know?)
+Whereas by passing, we have an ok holding in whatever suit partner leads.|
+pg| ***** 111 ***** |
+
+
+nt||sk|e|
+pc|S6|at|jdonn:  West will lead a spade, his long suit.|
+pg| ***** 112 ***** |
+
+
+pc|S2|pc|ST|
+at|
+East plays the ten, lowest from equals on partner's lead.|pc|SK|
+pg| ***** 113 ***** |
+
+
+nt||sk|s|at|jdonn:  South wins. Let's take stock.  We have the AK of spades and two other Aces.  
+And we could try to set up hearts or diamonds or clubs.  Hearts have the most potential with the strong holding. 
+The problem is we are short on entries to dummy to lead toward them.|
+pg| ***** 114 ***** |
+
+
+at|
+Clubs are a lot less likely to work, (but here the layout is very favorable).  
+I think the best chance is a club to the Ace and a heart toward my hand. 
+This works with KQ of hearts on my right, or with a doubleton Kx or Qx on my right. 
+Since after my finesse, the honor will fall under the Ace.|
+pg| ***** 115 ***** |
+
+
+nt||sk||
+pc|C5|pc|C2|pc|CA|pc|C4|at|jdonn:  Here a club to the jack would be a big winner, 
+but if it lost and they returned a spade we would have set up nothing yet and all their spades would be good already.
+West doesn't want to split the clubs, that would tell declarer what is going on. 
+If he wants to score the Jack you can never stop it anyway.|
+pg| ***** 116 ***** |
+
+
+nt||sk|w|
+pc|H4|pc|H2|pc|HJ|pc|HK|at|jdonn:  Now west can win this..|
+pg| ***** 117 ***** |
+
+
+nt||
+lb|*cWhat would you lead next?^^sq^sQ987h753cKQd3|at|jdonn:  ...and set up the spades.
+West knows his partner has the Jack because if declarer had it he would have taken his free finesse at trick 1.|
+pg| ***** 119 ***** |
+
+
+nt||at|jdonn: This is a bit tricky
+Often in this position you want to lead the Queen in case the Jack is partner's last spade.
+Declarer could duck if you led low, and partner wouldn't have another spade to play.|
+pg| ***** 120 ***** |
+
+
+sk||at|
+If partner has Jx left, like here, he has to figure out what you are doing and drop the Jack under the @sQ to unblock the suit|
+pg| ***** 121 ***** |
+
+
+at|
+Even if partner doesn't realize to unblock the Jack, he will get to us in clubs later, so it's ok.
+Just for the heck of it, let's assume he doesn't figure out to unblock his Jack.|
+pg| ***** 122 ***** |
+
+
+nt||sk|s|
+pc|SQ|pc|S3|pc|S7|pc|SA|at|jdonn:  Declarer has pretty much no choice but to keep going with hearts and hope the Queen falls.
+And if it doesn't, just play a third round to set up the last one.  
+|
+pg| ***** 123 ***** |
+
+
+nt||
+pc|HA|pc|H3|pc|H6|pc|HQ|at|
+and it falls
+Declarer should notice now the @h9 is a dummy entry, if he wants it (assuming he didn't lead it on the first round)
+|
+pg| ***** 124 ***** |
+
+
+nt||
+lb|*cWhich card would you play next?^^ht^sht8c76dkt82|at|jdonn: So it's possibly to go over to the heart and lead a diamond toward the King.
+But, that would be the wrong play.
+The defenders have 3 spades and 2 clubs to take, plus the Ace of diamonds.
+Maybe spades were 4-4 but I don't think it seems likely.
+If the diamond to the King lost to the Ace, declarer would never get his last heart trick.|
+pg| ***** 126 ***** |
+
+
+nt||at|jdonn:  And even if they went up Ace in front of the King, they would take all the tricks but the last one, 
+and you would have gained nothing.       They can unblock the spade and take all the tricks but 1.
+So I would just take my heart tricks, and exit with clubs, hoping (praying) they would have to give me the @dK at the end.|
+pg| ***** 127 ***** |
+
+
+nt||
+pc|HT|pc|H5|pc|H9|pc|D9|
+pg| ***** 128 ***** |
+
+
+pc|H8|pc|H7|pc|D4|pc|D7|
+pg| ***** 129 ***** |
+
+
+sk||
+pc|C7|pc|CQ|pc|C3|pc|C9|at|jdonn:  West has to be careful to play a spade right now, because they are still blocked.|
+pg| ***** 130 ***** |
+
+
+nt||
+pc|S4|pc|S5|pc|SJ|pc|D2|at|And now the defenders have the rest, down 1.|mc|6|
+pg| ***** 131 ***** |
+
+
+nt||up|36|at|wyllow:  Could you say more about why 5332 hands are bad for offense and good for defense?
+jdonn:  Ok there are a few reasons.  They are good for defense because no matter what partner leads, you can help him.  
+If you have a singleton and the opponents play a notrump contract, I can promise your partner will usually lead 
+a low card in that suit.
+Also you have only a 5-card suit, if partner has 0 or 1 you will be in a very tough fit.|
+pg| ***** 132 ***** |
+
+
+nt||at|jdonn: Usually to bid over 1NT, you want a 6-card suit, or a 5-4 or 5-5 hand. 
+Those are different since now partner will usually fit one of your suits.|
+pg| ***** 133 ***** |
+
+
+at|
+There is another thing.  Here your suit is a minor.  
+Sometimes when it goes 1NT p p the opponents had a 4-4 fit in a Major, but couldn't find it since responder wasn't 
+strong enough for Stayman.  But if you bid you might actually help them find it.|
+pg| ***** 134 ***** |
+
+
+nt||at|jdonn:  So I think here, there is one sign toward East bidding which is that he has a very good suit. 
+But there are lots of signs against bidding.
+
+hallway: Thank you so  very much JOSH  for an interesting and informative discussion - so much to take on board - we will definitely need to get movies  made so we can  revisit the  hands  many times.   We do appreciate you sharing your time and expertise with us.   We look forward to  having you do more sessions for us in the future.|
+pg| ***** 135 ***** |
+
+
+nt||pf|y|at| 
+
+MM: You can play the hand Double Dummy if you wish by clicking on the cards 
+This concluses this presentation, I hope you enjoyed, Karen10   |
+pg| ***** 136 ***** |
+
+
+pf||
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0

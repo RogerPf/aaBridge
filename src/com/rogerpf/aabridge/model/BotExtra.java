@@ -161,12 +161,16 @@ public class BotExtra {
 			return false;
 		if (swapOneOf.length() == 1)
 			return true;
-		// @formatter:off
+		if (Suit.charToSuit(swapOneOf.charAt(1)) != Suit.Invalid)
+			return true;
+
+		// @formatter:off		
 		char c = swapOneOf.charAt(1); 
 		switch (c) {
-		case 'U':; case 'u':; case 'H':; case 'h':; case 'M':; case 'm':; case 'L':; case'l': return true;
+		case 'U':; case 'u':; case 'M':; case 'm':; case 'L':; case'l': return true;
 		}
 		// @formatter:on
+
 		if (Rank.charToRank(swapOneOf.charAt(1)) == Rank.Invalid)
 			return false;
 		return true;
@@ -200,6 +204,27 @@ public class BotExtra {
 				default: list.clear(); return list;
 			}
 			// @formatter:on
+		}
+		return list;
+	}
+
+	private ArrayList<Hand> extractDirectionListBiReduced(String dirs_in) {
+
+		ArrayList<Hand> list = new ArrayList<Hand>();
+
+		String s = dirs_in.toLowerCase();
+
+		if (s.contains("west")) {
+			s = s.replace("west", "w");
+		}
+		if (s.contains("east")) {
+			s = s.replace("east", "e");
+		}
+		if (s.contains("w")) {
+			list.add(deal.hands[Dir.West.v]);
+		}
+		if (s.contains("e")) {
+			list.add(deal.hands[Dir.East.v]);
 		}
 		return list;
 	}
@@ -718,9 +743,11 @@ public class BotExtra {
 			if ((hand.compass.axis() != Dir.EW) || (hand.countUnplayedCards() < 1))
 				return false;
 			Boolean deal_changed = false;
+			Boolean prev_result = false;
 			int played = deal.countCardsPlayed();
 			for (RowBi actionBi : this) {
-				deal_changed |= actionBi.apply_botInstructions(hand, played);
+				prev_result = actionBi.apply_botInstructions(hand, played, prev_result);
+				deal_changed |= prev_result;
 			}
 			cardsMoved_by_bot_instructions |= deal_changed;
 			return deal_changed; // tell them we have made a change THIS TIME
@@ -751,7 +778,7 @@ public class BotExtra {
 
 			static final String infn = "  inside cardForHintCandidate() ";
 
-			public boolean apply_botInstructions(Hand hand, int played) {
+			public boolean apply_botInstructions(Hand hand, int played, boolean prev_Result) {
 
 				String lineOne = "  line:" + bb.lineNumber + infn + diagStr(hand, played);
 
@@ -760,18 +787,23 @@ public class BotExtra {
 
 				int ind = 0; //--------------------------------------------------
 				String swap_text = (bb.size() <= ind) ? "" : bb.get(ind).trim();
-				if (swap_text.equalsIgnoreCase("swap") == false) {
+				if (!swap_text.equalsIgnoreCase("swap") && !swap_text.equalsIgnoreCase("also")) {
 					System.out.println(lineOne);
-					System.out.println("    The word  'Swap'  not at front.  >>> " + swap_text + " <<< found");
+					System.out.println("     The word  'Swap' or 'Also'  not at front.  >>> " + swap_text + " <<< found");
+					return false;
+				}
+
+				boolean bi_Also = swap_text.equalsIgnoreCase("also");
+				if (bi_Also && prev_Result == false) {
 					return false;
 				}
 
 				ind = 1; //--------------------------------------------------				
 				String dirListStr = (bb.size() <= ind) ? "" : bb.get(ind).trim();
-				ArrayList<Hand> seats = extractDirectionList(dirListStr);
-				if (seats.isEmpty() || (seats.get(0).axis() != Dir.EW)) {
+				ArrayList<Hand> seats = extractDirectionListBiReduced(dirListStr);
+				if (seats.isEmpty()) {
 					System.out.println(lineOne);
-					System.out.println("    Need  East, E,  West, W,  E-W or W-E   >>> " + dirListStr + " <<< 'Direction List' at pos:" + (ind + 1));
+					System.out.println("      Need   West, East, or WE   >>> " + dirListStr + " <<< ''BI' Direction List' at pos:" + (ind + 1));
 					return false;
 				}
 				// @formatter:off
@@ -781,18 +813,16 @@ public class BotExtra {
 				if (seatMatch == false) {
 					return false;
 				}
-				Hand swapToHand = seats.get(0);
-				Hand swapFromHand = swapToHand.partner();
 
 				ind = 2; //--------------------------------------------------
-				String swapOneOf = (bb.size() <= ind) ? "" : bb.get(ind).trim();
-				if (hasAnyValidCardDesc(swapOneOf) == false) {
+				String cardForEastStr = (bb.size() <= ind) ? "" : bb.get(ind).trim();
+				if (hasAnyValidCardDesc(cardForEastStr) == false) {
 					System.out.println(lineOne);
-					System.out.println("    missing or invalid 'Swap one of' list  eg:  hKdQhL   >>> " + swapOneOf + " <<< at pos:" + (ind + 1));
+					System.out.println("    missing or invalid 'Swap one of' list  eg:  hKdQhL   >>> " + cardForEastStr + " <<< at pos:" + (ind + 1));
 					return false;
 				}
-				Card toSwap = swapFromHand.getUnplayedCardMatchingRaw(swapOneOf, bb, false /* selectableNeeded */);
-				if (toSwap == null) {
+				Card cardForEast = deal.west().getUnplayedCardMatchingRaw(cardForEastStr, bb, false /* selectableNeeded */);
+				if (cardForEast == null) {
 					// we do not report if the card cannot be played - the problem composer - is supposed to NOTICE :)	
 					return false;
 				}
@@ -801,17 +831,33 @@ public class BotExtra {
 //				}
 
 				ind = 3; //--------------------------------------------------
-				String swapForStr = (bb.size() <= ind) ? "" : bb.get(ind).trim();
-				if (hasAnyValidCardDesc(swapForStr) == false) {
+				String cardForWestStr = (bb.size() <= ind) ? "" : bb.get(ind).trim();
+				if (hasAnyValidCardDesc(cardForWestStr) == false) {
 					System.out.println(lineOne);
-					System.out.println("    missing  'Replace by card'  eg:  c5   >>> " + swapForStr + " <<< at pos:" + (ind + 1));
+					System.out.println("    missing  'Replace by card'  eg:  c5   >>> " + cardForWestStr + " <<< at pos:" + (ind + 1));
 					return false;
 				}
-				Card swapFor = swapToHand.getUnplayedCardMatchingRaw(swapForStr, bb, false /* selectableNeeded */);
-				if (swapFor == null) {
+				Card cardForWest = deal.east().getUnplayedCardMatchingRaw(cardForWestStr, bb, false /* selectableNeeded */);
+				if (cardForWest == null) {
 					// we do not report if the card cannot be played - the problem composer - is supposed to NOTICE :)
 					// it will often be already played by this hint.
 					return false;
+				}
+
+				if (bi_Also) {
+					assert (prev_Result); // prev_Result must be true to get here
+					deal.swapCards(cardForEast, cardForWest);
+					return true;
+				}
+
+				Card newCardFor4thToPlay = null;
+				if (posit == 4) { /* 4th hadn to play */
+					if (hand == deal.east()) {
+						newCardFor4thToPlay = cardForEast;
+					}
+					else if (hand == deal.west()) {
+						newCardFor4thToPlay = cardForWest;
+					}
 				}
 
 				ind = 4; //--------------------------------------------------
@@ -865,7 +911,7 @@ public class BotExtra {
 
 				ind = 7; //--------------------------------------------------
 				for (int i = ind; i < bb.size(); i++) {
-					boolean processed_OK = processToken(stack, i, lineOne, bb, hand, played, toSwap);
+					boolean processed_OK = processToken(stack, i, lineOne, bb, hand, played, newCardFor4thToPlay);
 					if (!processed_OK)
 						return false;
 				}
@@ -877,7 +923,7 @@ public class BotExtra {
 				}
 
 				if (stack.pop()) {
-					deal.swapCards(toSwap, swapFor);
+					deal.swapCards(cardForEast, cardForWest);
 					return true;
 				}
 

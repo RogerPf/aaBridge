@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "aaBridge"
-#define MyAppVersion "5.2.0.5230"
+#define MyAppVersion "6.0.0.6002"
 #define MyAppPublisher "RogerPf.com"
 #define MyAppURL "http://RogerPf.com/"
 #define MyAppExeName "aaBridge.exe"
@@ -41,15 +41,17 @@ Source: "C:\a\{#MyAppName}_{#MyAppVersion}.jar"; DestDir: "{app}"; Flags: ignore
 Source: "C:\c\e_wk\111_aab\aaBridge\yyy_other\build_extras\aaBridge_1402.exe"; DestDir: "{app}"; DestName: "aaBridge.exe"; Flags: ignoreversion
 Source: "C:\c\e_wk\111_aab\aaBridge\yyy_other\build_extras\lin.ico"; DestDir: "{app}";
 Source: "C:\c\e_wk\111_aab\aaBridge\yyy_other\build_extras\launch_aaBridge_showing_messages.cmd"; DestDir: "{app}";
+Source: "C:\c\e_wk\111_aab\aaBridge\yyy_other\build_extras\start_aabridge.cmd"; DestDir: "{app}";
+Source: "C:\c\e_wk\111_aab\aaBridge\yyy_other\build_extras\start_aabridge.command"; DestDir: "{app}";
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
-Name: "{group}\{#MyAppName} 5"; Filename: "{app}\{#MyAppExeName}"
-Name: "{commondesktop}\{#MyAppName} 5"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
+Name: "{group}\{#MyAppName} 6"; Filename: "{app}\{#MyAppExeName}"
+Name: "{commondesktop}\{#MyAppName} 6"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 
 [InstallDelete]
-Type: files; Name: "{userdesktop}\aaBridge 4.lnk"
-Type: files; Name: "{commondesktop}\aaBridge 4.lnk"
+Type: files; Name: "{userdesktop}\aaBridge 5.lnk"
+Type: files; Name: "{commondesktop}\aaBridge 5.lnk"
 
 
 [Run]

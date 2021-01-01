@@ -35,6 +35,14 @@ public class GreenBaizePanel extends ClickPanel {
 	JPanel c2 = new ClickPanel();
 	// App.bpr = see the constructor
 
+	public boolean isMainUndoBotVisible() {
+		return isVisible() && c0_2__blp.isMainUndoBotVisible();
+	}
+
+	public boolean isMainUndoStandardVisible() {
+		return isVisible() && c0_2__blp.isMainUndoStandardVisible();
+	}
+
 	// @formatter:off
 	public TopLeftPanel             c0_0__tlp  = new TopLeftPanel();
 	public BottomLeftPanel          c0_2__blp  = new BottomLeftPanel();
