@@ -1,0 +1,461 @@
+	  
+%%       Drury     with      2/1  and  Semi Forcing 1NT 
+
+%%
+%%  Date last Edited    2021-04-19          set by human hand (if at all)
+%%
+
+%%
+fh|s28|                    Font   s  s-small
+fh|t40|                    Font   t  t-title     
+fh|b50|                    Font   b  b-bigTitle
+fh|m64|                    Font   m  m-mastHead   size in banner 1
+fh|c60|                    Font   c  c-chapTitle  size in banner 2
+%
+cr|a230|cg|a040|cb|a130|   text   a  a-action
+cr|d255|cg|d240|cb|d240|   TEXT   d  d-feint      feint divider  feint pink
+cr|p255|cg|p000|cb|p255|   fill   p  p-pinkColor       fake pink button
+cr|m185|cg|m095|cb|m145|   fill   m  m-mastColor       on Title Pages
+cr|c188|cg|c195|cb|c199|   fill   c  c-chapterColor    on Title Pages
+%%
+%%
+bt||
+nt|^b@2^z@3|
+%%   Top bar header box and Text
+ht|b|cp|bGround|cs|m-mastColor|fp||at|^b{ ^^|
+ht|d|at|^z^^^z}|
+
+ht|c|n#|4|fp|m-mastHead|
+at|^-|at||at|Extra                       Extra                          Extra^*n^-^^|cs||fp||cp||
+%%   Chapter header box and Text
+ht|f|cs|c-chapterColor|fp||at|^b{ ^^|
+ht|h|at|^z^^^z}|
+ht|g|n#|6|fp|c-chapTitle|at|^-^*bDrury     with      2/1  and  Semi Forcing 1NT^*n^-^^|cs||fp||cp||at|^^|
+
+%%
+ht|j|at|^^|ih|sAQ5hK96dQT93c743|
+ht|j|at|^r @2^^|ia|---pp1hp?|
+ht|i|
+at|^^@0@1^r|n<|5|at|@3 ^e @2You sitting South playing  2/1 and in 1st or 2nd and seat pick up a maximum PASS,  for example 10-11 hcp that does NOT meet your agreed 'Rule of 20'.|
+n#|3|
+at| 
+After two passes partner opens 1 of a Major (here 1@h) which as a 3rd seat opening is allowed (for preemptive reasons) to be a little light.    After a pass by the Opps it is back to you ?|
+at|@0@1|
+at|^z@3^b@2^^
+Here it is common here to play ^k 1@h  -  3@h     ^q   showing (11 hcp) and  4  card support   
+and when playing 1NT forcing  you can bid ^k 1@h  -  1NT -  [2nd suit] -  3@h  ^q   showing (11 hcp) and  |cp|red|at|^*b3^*n|cp||at|  card support.   
+
+BUT when partner could be a little light and/or you are in a semi forcing situation (so not forcing here) you have to find other solutions.  Of course, in that case 3@h could easily be one too high.
+
+This write-up describes a treatment of   ^*bTwo Way Reverse Drury^*n   partly taken from a pdf, which at the time of writing is available from 
+
+^f   ^*h https://bridgeplay.webs.com/drury%20.pdf^*n
+ 
+many thanks to the Olympia Bridge Club.|
+
+ht|z|n#|7|at|^s^*bMovie Maker:^*n  Roger Pfister|pg|* 0 *|
+
+nt||
+at|^b@2^^|n#|7|
+lg|c|
+fp|t|at|^*bTwo Way Reverse Drury^*n|fp||at|
+
+After a 3rd (or 4th) seat opening of 1@h.  Responder bids ...  ^q   |fp|s|at| examples also apply to @s's  (some shown)|fp|s|at|
+^c@2|n^|5|at|
+  r           O        ^e     -     r       -     O       -      r         |
+n^|6|cp|d-feint|at|
+   ^c@-- ^d      @--         ^f  @-@-       @--            @- |cp||at|
+|n^|b|at|                       
+|fp|s|at|Pass|fp||at|  -  1@h   -   2@c  	^j   Max pass  ie: an invitational hand and ^r^*b3^*n  card  @h  support
+|fp|s|at|Pass|fp||at|  -  1@h   -   2@d     ^k"  ^n " ^p  " ^r^*b4^*n    ^s"      ^u "
+|n^|5|at|
+|fp|s|at|Pass|fp||at|  -  1@h   -   2@c/@d  -  2@h	   ^j   Light opener (sign-off)
+|fp|s|at|Pass|fp||at|  -  1@s   -   2@c/@d  -  2@s	   ^j        "                         "
+|n^|5|at|
+|fp|s|at|Pass|fp||at|  -  1@h   -   2@c      -   2@d	   ^j   Opening hand but  Opener  doubts game is possible
+|fp|s|at|Pass|fp||at|  -  1@h   -   2@d      -   2NT	   ^k"  ^n " ^p  " ^r    ^s"      ^u
+|n^|5|at|
+|fp|s|at|Pass|fp||at|  -  1@h   -   2@c      -   2@d     -   ^j 2@h         ^l      Sign-off
+|fp|s|at|Pass|fp||at|  -  1@h   -   2@c      -   2NT    -    ^j 3@h         ^l                 "
+|n^|5|at|
+|fp|s|at|Pass|fp||at|  -  1@h   -   2@c      -   2@d     -   ^j 2@s/3@c@d	^l      SHORT sgt  -  hoping opener has NO wasted values in this suit  
+|fp|s|at|Pass|fp||at|  -  1@h   -   2@d      -   2NT    -    ^j 3@c/3@d@s     ^n " ^p  " ^r    ^s"      ^u "   ^w   "
+|n^|5|at|
+|fp|s|at|Pass|fp||at|  -  1@h   -   2@c/@d  -  2@s/3@c@d	   ^j   SHORT suit game try  -  hoping responder has NO wasted values in this suit
+|fp|s|at|Pass|fp||at|  -  1@s   -   2@c/@d  -  2@h/3@c@d	   ^k"  ^n " ^p  " ^r    ^s"      ^u "   ^w   "
+|n^|5|at|
+|fp|s|at|Pass|fp||at|  -  1@h   -   2@c/@d  -  3@h	   ^j   Opener has worries mainly about the trump suit 
+|fp|s|at|Pass|fp||at|  -  1@s   -   2@c/@d  -  3@s	   ^k"  ^n " ^p  " ^r    ^s" 
+|n^|5|at|
+|fp|s|at|Pass|fp||at|  -  1@h   -   2@c/@d  -  4@h	   ^j   Good opening hand (14+)  -  invitation accepted
+|fp|s|at|Pass|fp||at|  -  1@s   -   2@c/@d  -  4@s	   ^k"  ^n " ^p  " ^r    ^s"
+
+^b@2If you look in the  aaBridge  menubar under   ^*b  Books-L   >   ^*n(bottom)^*b 1827 Hands...   >    nml 14 1HS - Drury ... ^*n
+you will find a set of practice hands that you can save (and operationally rotate) and upload to BBO.|pg|* 1 *|
+
+st||
+qx|e1|
+rh||ah|Example 1 | ####################################################################
+nt|^b@2^^|n^|5|
+at|^*bExample 1 ^*n   ^h   
+|lg|k|
+n^|7|at|^c@2
+North always passes and South will then bid 1 of a Major.
+^*bPlease bid  ^*n  (in your mind) before each stage of the auction after which each bid will be revealed.|
+%%
+md|3sAK7hJ9852d974cQ3,sQT432h7dKJ65cKT7,s865hAT43dAQ3cJ86,sJ9hKQ6dT82cA9542|
+%%
+sk|n|
+
+sj|c|mb|pp?|pg|* 2 *|
+
+mb|1h|an|1@h@s sub-minimum opening is allowed in 3rd seat|pg|* 3 *|
+
+sj|c|mb|p?|pg|* 4 *|
+
+mb|2d|an|4 card @h sup in an invitational hand|pg|* 5 *|
+
+sj|c|mb|p?|pg|* 6 *|
+
+mb|2h|an|less than a full opening hand|pg|* 7 *|
+
+sj|c|mb|p?|pg|* 8 *|
+
+mb|p|pg|* 9 *|
+
+mb|p| 
+sj|c|sk||pg|* 10 *|
+
+pc|s3|pg|* 11 *|
+
+md|3,,,|nt||n^|5|at|^^^bcleared|sk|s|pg|* 12 *|
+
+qx|e2|
+rh||ah|Example 2 | ####################################################################
+nt|^b@2^^|n^|5|
+at|^*bExample 2 ^*n   ^h   
+|lg|k|
+n^|7|at|^c@2
+|
+%%
+md|3sAQT52hQJ4dQ73c84,sJ743h96dA4cAQ532,s98hK753dJ962cKJ9,sK6hAT82dKT85cT76|
+%%
+sk|n|
+
+sj|c|mb|pp?|pg|* 13 *|
+
+mb|1s|pg|* 14 *|
+
+sj|c|mb|p?|pg|* 15 *|
+
+mb|1n|an|NOT forcing (no @s support)|pg|* 16 *|
+
+sj|c|mb|p?|pg|* 17 *|
+
+mb|p|pg|* 18 *|
+
+mb|p|
+sj|c|sk||pg|* 19 *|
+
+pc|h2|pg|* 20 *|
+
+md|3,,,|nt||n^|5|at|^^^bcleared|sk|s|pg|* 21 *|
+
+qx|e3|
+rh||ah|Example 3 | ####################################################################
+nt|^b@2^^|n^|5|
+at|^*bExample 3 ^*n   ^h   
+|lg|k|
+n^|7|at|^c@2
+|
+%%
+md|3sAQT52hA42dQ73c84,s4hQJ986dA95cAQT3,s986hK753dJ2cK975,sKJ73hTdKT864cJ62|
+%%
+sk|n|
+sj|c|mb|pp?|pg|* 22 *|
+
+mb|1s|pg|* 23 *|
+
+sj|c|mb|p?|pg|* 24 *|
+
+mb|2s|an|@s support LESS THAN an invitational hand|pg|* 25 *|
+
+sj|c|mb|p?|pg|* 26 *|
+
+mb|p|pg|* 27 *|
+
+mb|p| 
+sj|c|sk||pg|* 28 *|
+
+pc|hQ|pg|* 29 *|
+
+md|3,,,|nt||n^|5|at|^^^bcleared|sk|s|pg|* 30 *|
+
+qx|e4|
+rh||ah|Example 4 | ####################################################################
+nt|^b@2^^|n^|5|
+at|^*bExample 4 ^*n   ^h   
+|lg|k|
+n^|7|at|^c@2
+|
+%%
+md|3sAQT52hA42dQ73c84,sK4hQJ986d952cAQT,s986hK753dAJcK975,sJ73hTdKT864cJ632|
+%%
+sk|n|
+
+sj|c|mb|pp?|pg|* 31 *|
+
+mb|1s|pg|* 32 *|
+
+sj|c|mb|p?|pg|* 33 *|
+
+mb|2c|an|3 card @s sup in an invitational hand|pg|* 34 *|
+
+sj|c|mb|p?|pg|* 35 *|
+
+mb|2d|an|Minimum opening hand - unlikely to make game|pg|* 36 *|
+
+sj|c|mb|p?|pg|* 37 *|
+
+mb|2s|pg|* 38 *|
+
+sj|c|mb|p?|pg|* 39 *|
+
+mb|p|pg|* 40 *|
+
+mb|p|sj|c|sk||pg|* 41 *|
+
+pc|hQ|pg|* 42 *|
+
+md|3,,,|nt||n^|5|at|^^^bcleared|sk|s|pg|* 43 *|
+
+qx|e5|
+rh||ah|Example 5 | ####################################################################
+nt|^b@2^^|n^|5|
+at|^*bExample 5 ^*n   ^h   
+|lg|k|
+n^|7|at|^c@2
+|
+%%
+md|3sAQT52hQJ4dQ73c43,sKJ4hAT86dKT82c52,s9863hK753dAJcK97,s7h92d9654cAQJT86|
+%%
+sk|n|
+sj|c|mb|pp?|pg|* 44 *|
+
+mb|1s|pg|* 45 *|
+
+sj|c|mb|p?|pg|* 46 *|
+
+mb|2d|an|4 card @s sup in an invitational hand|pg|* 47 *|
+
+sj|c|mb|p?|pg|* 48 *|
+
+mb|2s|an|less than a full opening hand|pg|* 7 *|
+
+sj|c|mb|p?|pg|* 52 *|
+
+mb|p|pg|* 53 *|
+
+mb|p|sj|c|sk||pg|* 54 *|
+
+pc|c5|pg|* 55 *|
+
+md|3,,,|nt||n^|5|at|^^^bcleared|sk|s|pg|* 56 *|
+
+qx|e6|
+rh||ah|Example 6 | ####################################################################
+nt|^b@2^^|n^|5|
+at|^*bExample 6 ^*n   ^h   
+|lg|k|
+n^|7|at|^c@2
+|
+%%
+md|3sAQT52hA42dQ73c84,sK4hQJ986d952cAQT,s9863hK753dAJcK97,sJ7hTdKT864cJ6532|
+%%
+sk|n|
+sj|c|mb|pp?|pg|* 44 *|
+
+mb|1s|pg|* 45 *|
+
+sj|c|mb|p?|pg|* 46 *|
+
+mb|2d|an|4 card @s sup in an invitational hand|pg|* 47 *|
+
+sj|c|mb|p?|pg|* 48 *|
+
+at|^b@2This deal raises the question - 
+What is the minimum strength that it is safe for OPENER to respond ^*b 2NT ^*n to the 2@D (4 card support, invitation) ?
+as 3@s will not always be making.|
+mb|2n|an|Minimum opening hand - unlikely to make game|pg|* 49 *|
+
+sj|c|mb|p?|pg|* 50 *|
+
+mb|3s|pg|* 51 *|
+
+sj|c|mb|p?|pg|* 52 *|
+
+mb|p|pg|* 53 *|
+
+mb|p|sj|c|sk||pg|* 54 *|
+
+pc|hQ|pg|* 55 *|
+
+md|3,,,|nt||n^|5|at|^^^bcleared|sk|s|pg|* 56 *|
+
+qx|e7|
+rh||ah|Example 7 | ####################################################################
+nt|^b@2^^|n^|5|
+at|^*bExample 7 ^*n   ^h   
+|lg|k|
+n^|7|at|^c@2
+|
+%%
+md|3sAQT52hA42d753cQ8,sKJ4h98dA9642cT96,s9863hKJ73d8cAK54,s7hQT65dKQJTcJ732|
+
+%%
+sk|n|
+sj|c|mb|pp?|pg|* 44 *|
+
+mb|1s|pg|* 45 *|
+
+sj|c|mb|p?|pg|* 46 *|
+
+mb|2d|an|4 card @s sup in an invitational hand|pg|* 47 *|
+
+sj|c|mb|p?|pg|* 48 *|
+
+at|^b@2This deal raises the question - 
+What is the minimum strength that it is safe for OPENER to respond ^*b 2NT ^*n to the 2@D (4 card support, invitation) ?
+as 3@s will not always be making.|
+mb|2n|an|Minimum opening hand - unlikely to make game|pg|* 49 *|
+
+sj|c|mb|p?|pg|* 50 *|
+
+mb|3d|an|SHORT suit game try|pg|* 49 *|
+
+sj|c|mb|p?|pg|* 50 *|
+
+mb|4s|an|No duplication of values playing in a '30 hcp deck'|pg|* 49 *|
+
+sj|c|mb|p?|pg|* 52 *|
+
+mb|p|pg|* 53 *|
+
+mb|p|sj|c|sk||pg|* 54 *|
+
+pc|hQ|pg|* 55 *|
+
+md|3,,,|nt||n^|5|at|^^^bcleared|sk|s|pg|* 56 *|
+
+
+
+qx|e8|
+rh||ah|Example 8 | ####################################################################
+nt|^b@2^^|n^|5|
+at|^*bExample 8 ^*n   ^h   
+|lg|k|
+n^|7|at|^c@2
+|
+%%
+md|3sAQT52hA42d3cQJ84,sK4hQJ98dQ9752cT6,s9863hK753dAJcK92,sJ7hT6dKT864cA753|
+%%
+sk|n|
+sj|c|mb|pp?|pg|* 44 *|
+
+mb|1s|pg|* 45 *|
+
+sj|c|mb|p?|pg|* 46 *|
+
+mb|2d|an|4 card @s sup in an invitational hand|pg|* 47 *|
+
+sj|c|mb|p?|pg|* 48 *|
+
+at|^b@2This deal raises the question - 
+What is the minimum strength that it is safe for OPENER to respond ^*b 2NT ^*n to the 2@D (4 card support, invitation) ?
+as 3@s will not always be making.|
+mb|3d|an|SHORT suit game try|pg|* 49 *|
+
+sj|c|mb|p?|pg|* 50 *|
+
+mb|4s|an|like it|pg|* 51 *|
+
+sj|c|mb|p?|pg|* 52 *|
+
+mb|p|pg|* 53 *|
+
+mb|p|sj|c|sk||pg|* 54 *|
+
+pc|hQ|pg|* 55 *|
+
+md|3,,,|nt||n^|5|at|^^^bcleared|sk|s|pg|* 56 *|
+
+
+qx|e9|
+rh||ah|Example 9 | ####################################################################
+nt|^b@2^^|n^|5|
+at|^*bExample 9 ^*n   ^h   
+|lg|k|
+n^|7|at|^c@2
+|
+%%
+md|3sAQT52h6d8763cAQ3,s84hKQJ9dQ95cJT86,sK963h8753dAJcK92,sJ7hAT42dKT42c754|
+%%
+sk|n|
+sj|c|mb|pp?|pg|* 44 *|
+
+mb|1s|pg|* 45 *|
+
+sj|c|mb|p?|pg|* 46 *|
+
+mb|2d|an|4 card @s sup in an invitational hand|pg|* 47 *|
+
+sj|c|mb|p?|pg|* 48 *|
+
+at|^b@2A short suit game try in @h risks very little (here nothing, as @s are trumps) and pays off when you hit a '30 point deck'.|
+mb|2h|an|SHORT suit game try|pg|* 49 *|
+
+sj|c|mb|p?|pg|* 50 *|
+
+mb|4s|an|like it|pg|* 51 *|
+
+sj|c|mb|p?|pg|* 52 *|
+
+mb|p|pg|* 53 *|
+
+mb|p|sj|c|sk||pg|* 54 *|
+
+pc|hQ|pg|* 55 *|
+
+md|3,,,|nt||n^|5|at|^^^bcleared|sk|s|pg|* 56 *|
+
+
+bt||
+qx|intv,wide|
+nt||
+at|^b@2^^|n#|7|
+lg|c|
+fp|t|at|^*bIntervention^*n|fp||at|
+
+When both you and partner have a mere 10 hcp AND a fit it is highly likely that 4th seat will intervene, they will also have a fit.
+
+If the bidding goes 
+^c@2|n#|5|
+|n^|b|at|                       
+|fp|s|at|Pass|fp||at|   -   (|fp|s|at|Pass|fp||at|)   -  1@h   -   (1@s)    -    ?   ^L  You can still bid   2@c  or  2@d  regardless.
+
+^bBut after
+|fp|s|at|Pass|fp||at|   -   (|fp|s|at|Pass|fp||at|)   -  1@h   -   (2@c)    -    ?   ^L  2@d  will have to convey both  3 and 4  card support.
+
+
+^b@2As to what a double or a preemptive raise would mean after the intervention that is best (as always)  ...  left to partnership discussion.
+
+
+
+
+
+|fp|t|at|^*bPractice Bidding hands for BBO^*n|fp||at|
+
+^b@2If you look in the  aaBridge  menubar under   ^*b  Books-L   >   ^*n(bottom)^*b 1827 Hands...   >    nml 14 1HS - Drury ... ^*n
+you will find a set of practice hands that you can save (and operationally rotate) and upload to BBO.|
+
+ht|z|n#|7|at|^a^*bend^*n|pg|* 0 *|

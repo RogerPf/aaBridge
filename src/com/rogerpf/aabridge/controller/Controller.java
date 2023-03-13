@@ -296,16 +296,16 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 			case KeyEvent.VK_RIGHT: Right_keyPressed(); return true;
 			case KeyEvent.VK_UP: Up_keyPressed(); return true;
 			case KeyEvent.VK_DOWN: Down_keyPressed(); return true;
-			case KeyEvent.VK_F: F_keyPressed(); return true; // click 1st btn
+			case KeyEvent.VK_F: F_keyPressed(); return true; // click 1st btnu
 			case KeyEvent.VK_E: E_keyPressed(); return true; // click Enter the deal
 			case KeyEvent.VK_B: B_keyPressed(); return true; // click Back to movie
 			case KeyEvent.VK_I: I_keyPressed(); return true; // toggle kIbs
 			case KeyEvent.VK_O: O_keyPressed(); return true; // toggle DDS sOlver
-			case KeyEvent.VK_N: N_keyPressed(); return true; // toggle aNalyse
+			case KeyEvent.VK_Y: Y_keyPressed(); return true; // toggle analYse
 			case KeyEvent.VK_L: L_keyPressed(); return true; // click shuffLe op 
-			case KeyEvent.VK_P: P_keyPressed(); return true; // click Play
+			// case KeyEvent.VK_P: P_keyPressed(); return true; // NOT click Play -  now used as PASS 
 			case KeyEvent.VK_U: U_keyPressed(); return true; // click Undo 
-			case KeyEvent.VK_R: R_keyPressed(); return true; // click UB (undo Robot)
+			// case KeyEvent.VK_R: R_keyPressed(); return true; // NOT click UB (undo Robot) now used for Redouble
 			}
 		// @formatter:on
 
@@ -881,7 +881,7 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 			CmdHandler.ddsScoreOnOff();
 	}
 
-	public static void N_keyPressed() { // aNalyse toggle
+	public static void Y_keyPressed() { // analYse toggle
 		if (App.bpr.isAnalyserBtnVisible())
 			CmdHandler.ddsAnalyse();
 	}

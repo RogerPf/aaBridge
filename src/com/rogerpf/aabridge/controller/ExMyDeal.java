@@ -251,9 +251,9 @@ public class ExMyDeal { // Incoming played deal from BBO via html
 		}
 
 		pnames[0] = tds.get(0).text();
-		pnames[1] = "-";
-		pnames[2] = "-";
-		pnames[3] = "-";
+		pnames[1] = ""; // 2022-03-09  hyphen removed
+		pnames[2] = ""; // 2022-03-09  hyphen removed
+		pnames[3] = ""; // 2022-03-09  hyphen removed
 
 		handnum = tds.get(1).text();
 		contract_n_result = clean_contract_and_result(tds.get(3).text());

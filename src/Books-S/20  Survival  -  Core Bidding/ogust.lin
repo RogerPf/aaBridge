@@ -1,9 +1,14 @@
-Ogust.lin
-%%Kia 03-15-2013
+
+%%Ogust December 14-2022.lin
+%%Kia 09-17-2017
+%%%UPDATED DEC 19, 2022
+%%%%
+
+bt||				
 fh|155|ff|1Arial|fb|19|fm|1|       FONT SIZE AND TYPE FOR 1
 fh|235|ff|2Arial|fb|28|fm|2|                           FOR 2
 fh|340|ff|3Arial|fb|36|fm|3|                           FOR 3
-fh|430|ff|4Arial|fi|4y|fm|4|     %%Larger than default  -  italic
+fh|430|ff|4Arial|fi|4y|fm|4|     %%Larger than default — italic
 cr|116|cg|116|cb|1255|              blue 1
 cr|2255|cg|2255|cb|264|             gold 2
 cr|30|cg|30|cb|3128|                dark Blue 3
@@ -14,278 +19,266 @@ cr|70|cg|7235|cb|7235|              green/blue 7
 cr|8255|cg|80|cb|80|                red 8
 bt||
 %%%%%%%%%%%% Ogust
-qx|Ogust|CS|1|fp|1|cp|4|AT|^-
-{      The 2NT Response to a Weak Two Bid   -   Ogust |at|}|fp|2|at|
-
-{    Introduction    }
+%%%%%%%%%%%%%%B8
+qx|Ogust,The 2NT Response|CS|1|fp|2|cp|4|AT|^-
+{      The 2NT Ogust or Feature Responses to a Weak Two Bid    }
+{   Introduction - Last update DECEMBER 2022  }
 ^-|cp||fp||cs||AT|
-^B@2Although a Weak Two bid is very descriptive, beside being disruptive, there are times when responder needs more information to determine the best contract. Responder needs to know whether opener has a minimum or a maximum for the Weak Two Bid and whether there is a fit present. Let us look at two hands side by side:|
+^B@2Although a Weak Two bid is very descriptive, beside being disruptive, there are times when responder needs more information to determine the best contract. Responder needs to know whether opener has a minimum or a maximum for the Weak Two Bid and whether there is a fit present. Let us look at two hands side by side with 2@D bid.|
 PG| ***** 0 ***** |
 
 
-ht|i|at|^b  |ih|s8 7 dK Q T 7 4 3 hJ 7 6 c5 3|ht|i|at|^u|ih|s8 7 dK Q T 7 4 3 ha J 6 c5 3|
+ht|G|at|^c  |ih|s8 7 dK Q T 7 4 3 hJ 7 6 c5 3|ht|G|at|^u|ih|s8 7 dK Q T 7 4 3 ha J 6 c5 3|
 pg| ***** 1 ***** |
 
 
-HT|h|AT|^g@2^t@3Both are classic hands for opening Weak Two. However the hand on the left with 6 HCP is at the bottom and the hand on the right with 10 HCP is at the top of the 5-11 HCP range for Weak Two bids. Further, the hand on the right has a great side suit in hearts. This feature combined with 10 HCP could be a good fit for responder to be in a game - probably in 3N. But how can opener convey this information to the Responder ? |
+ht|G|at|^c  |ih|s8 7 dK Q T 7 4 3 hJ 7 6 c5 3|ht|G|at|^u|ih|s8 7 dK Q T 7 4 3 ha J 6 c5 3|HT|F|AT|^g@2^t@3Both are classic hands for opening Weak Two. However the hand on the left with 6 HCP is at the bottom and the hand on the right with 10 HCP is at the top of the 5-10 HCP range for Weak Two bids. Further, the hand on the right has a great side suit in hearts. This feature combined with 10 HCP could be a good fit for responder to be in a game probably in 3N. But how can opener convey this information to the Responder? |
 PG| ***** 2 ***** |
 
 
-ht|o|AT|^B@2There are two popular treatments or conventions to solve this problem:|
+ht|M|AT|^B@2There are two popular treatments or conventions to solve this problem:|
 pg| ***** 3 ***** |
 
 
-ht|o|AT|^B@2There are two popular treatments or conventions to solve this problem:|
-HT|p|at|^C2NT-Show a Feature|
+HT|N|at|^C2NT-Show a Feature|
 pg| ***** 4 ***** |
 
 
-ht|o|AT|^B@2There are two popular treatments or conventions to solve this problem:|
-HT|p|at|^C2NT-Show a Feature|
-ht|q|at|^C2NT-Ogust|
+ht|M|AT|^B@2There are two popular treatments or conventions to solve this problem:|
+HT|N|at|^C2NT-Show a Feature and 2NT-Ogust|
 PG| ***** 5 ***** |
 
 
-ht|r|at|^B@2^Z@3In both Responder with a suitable hand, assuming there is no interference, bids 2NT. Some partnerships use 2NT-easy Ogust or other conventions for the same purpose. However, I believe your partnership would do fine by playing either 2NT-Show a Feature or 2NT-Ogust. Regardless, the 2NT bid is 100% forcing.|
+ht|o|at|^B@2^Z@3In both Responder with a suitable hand, assuming there is no interference, bids 2NT. Some partnerships use 2NT-easy Ogust or other conventions for the same purpose. However, we believe your partnership would do fine by playing either 2NT-Show a Feature or 2NT-Ogust. Regardless, the 2NT bid is 100% forcing.|
 PG| ***** 6 ***** |
 
 
 cp||AT|
-
-^B@2^Z@3^*BMM:  ^*N|cp||at|In this presentation Howard Schutzman, BBO nickname "hondo717" explains the 2NT-Ogust. For a comprehensive review of Weak Two bids and responses please refer to |CP|1|at|^*Htiny.cc/3vc0tw^*N|CP||AT| which you can find it either at BIL library |CP|1|AT|^*Hwww.bilbridge.com^*N|CP||AT| or at Howard's web site at |CP|1|AT|^*Hwww.bridgesights.com/hondobridge/^*N|CP||AT|.|
+^B@2^Z@3^*BMM:  ^*N|cp||at|In this presentation Howard Schutzman, BBO nickname "hondo717" explains the 2NT-Ogust. Please review his |CP|1|fp|2|AT|^*Hwww.bridgesights.com/hondobridge/hondoviewer/hondoviewer.php?sf=weaktwobids,Weak Two bids and responses^*N|CP||fp||at| tutorial for additional information. |
 PG| ***** 7 ***** |
 
 
 NT||
 %%%
-qx|P1,wide|bt||CS|1|CP|4|FP|1|at|^-
-{      Simply Ogust by Howard Schutzman     }
-^-|CP||fp||ht|d|cp|8|AT|^B@2^*Bhondo717: ^*N|cp||at|If your partner opens a weak-2, and you bid 2N, that is a conventional bid asking partner for a further description of their weak-2. It asks both about suit quality and the hand strength-HCP. Let me define a few terms important to Ogust convention.|
+qx|,hide|bt||CS|1|CP|4|FP|1|at|^-
+
+^-|CP||fp||ht|b|va|6|cp|8|AT|^B@2^*Bhondo717: ^*N|cp||at|If your partner opens a weak-2, and you bid 2N, that is a conventional bid asking partner for a further description of their weak-2. It asks both about suit quality and the hand strength-HCP. Let me define a few terms important to Ogust convention.|
 PG| ***** 8 ***** |
 
 
-ht|g|AT|"Bad suit" is one lacking two of the top three honors. |
+ht|f|AT|"Bad suit" is one lacking two of the top three honors. |
 PG| ***** 9 ***** |
 
 
-ht|g|AT|"Bad suit" is one lacking two of the top three honors.| 
-ht|h|AT|"Good suit" is one with two of top three honors. A suit headed by AK AQ or KQ.|
+ht|f|AT|"Bad suit" is one lacking two of the top three honors.| 
+ht|g|AT|"Good suit" is one with two of top three honors. A suit headed by AK AQ or KQ.|
 PG| ***** 10 ***** |
 
 
-ht|g|AT|"Bad suit" is one lacking two of the top three honors.| 
-ht|h|AT|"Good suit" is one with two of top three honors. A suit headed by AK AQ or KQ.|
-ht|i|AT|"Bad  hand", has 5-7 HCP.|
+ht|f|AT|"Bad suit" is one lacking two of the top three honors.| 
+ht|g|AT|"Good suit" is one with two of top three honors. A suit headed by AK AQ or KQ.|
+ht|h|AT|"Bad  hand", has 5-7 HCP.|
 PG| ***** 11 ***** |
 
 
-ht|g|AT|"Bad suit" is one lacking two of the top three honors.| 
-ht|h|AT|"Good suit" is one with two of top three honors. A suit headed by AK AQ or KQ.|
-ht|i|AT|"Bad  hand", has 5-7 HCP.|
-ht|j|AT|"Good hand", has 8-10 HCP.|
+ht|f|AT|"Bad suit" is one lacking two of the top three honors.| 
+ht|g|AT|"Good suit" is one with two of top three honors. A suit headed by AK AQ or KQ.|
+ht|h|AT|"Bad  hand", has 5-7 HCP.|
+ht|i|AT|"Good hand", has 8-10 HCP.|
 PG| ***** 12 ***** |
 
 
-ht|k|AT|
+ht|j|AT|
 So, your suit either is "Bad" or "Good" and you either have "Bad" or "Good" hand. Therefore, there are 4 combinations you can talk about "good/bad hand" and "good/bad suit." And, thus there are four responses.|
 PG| ***** 13 ***** |
 
 
-ht|n|at|3@C bid promises a "Bad Hand" and a "Bad Suit" hand--Bad/Bad.|
+ht|m|at|3@C bid promises a "Bad Hand" and a "Bad Suit" hand--Bad/Bad.|
 PG| ***** 14 ***** |
 
 
-ht|n|at|3@C bid promises a "Bad Hand" and a "Bad Suit" hand--Bad/Bad.
+ht|m|at|3@C bid promises a "Bad Hand" and a "Bad Suit" hand--Bad/Bad.
 3@D bid promises a "Bad Hand" and a "Good Suit" hand-- Bad/Good.|
 PG| ***** 15 ***** |
 
 
-ht|n|at|3@C bid promises a "Bad Hand" and a "Bad Suit" hand--Bad/Bad.
+ht|m|at|3@C bid promises a "Bad Hand" and a "Bad Suit" hand--Bad/Bad.
 3@D bid promises a "Bad Hand" and a "Good Suit" hand-- Bad/Good.
 3@H bid promises a "Good Hand" and a "Bad Suit" hand--Good/Bad.|
 PG| ***** 16 ***** |
 
 
  
-ht|n|at|3@C bid promises a "Bad Hand" and a "Bad Suit" hand--Bad/Bad.
+ht|m|at|3@C bid promises a "Bad Hand" and a "Bad Suit" hand--Bad/Bad.
 3@D bid promises a "Bad Hand" and a "Good Suit" hand-- Bad/Good.
 3@H bid promises a "Good Hand" and a "Bad Suit" hand--Good/Bad.
-3@S bid promises a "Good Hand" and a "Good Suit" hand--Good/Good.
-^*b3NT^*n bid promises  AKQxxx in the suit opened.
-|
+3@S bid promises a "Good Hand" and a "Good Suit" hand--Good/Good.|
 PG| ***** 17 ***** |
 
 
-ht|s|at|So, a minor suit bid shows a bad hand, and a major suit bid shows a good hand point count wise.|
+ht|q|at|So, a minor suit bid shows a bad hand, and a major suit bid shows a good hand point count wise. However, there is another style of Ogust which simply reverses 3@D and 3@H. In this version 3@D shows a good hand and a bad suit and 3@H shows a bad hand and a good suit. In this variation the minors show a bad suit and the majors show a good suit. I don't think it matters which you play, although I believe, at least in the US, the version I play is more popular. But obviously you need to check with your partner.|
 PG| ***** 18 ***** |
-
-
-AT| 
-
-However, there is another style of Ogust which simply reverses 3@D and 3@H. In this version 3@D shows a good hand and a bad suit and 3@H shows a bad hand and a good suit. In this variation the minors show a bad suit and the majors show a good suit. I don't think it matters which you play, although I believe, at least in the US, the version I play is more popular. But obviously you need to check with your partner.|
-PG| ***** 19 ***** |
 
 
 cp||AT|
 
-^B@2^*BMovie Maker: ^*N|cp||at|What would be the openers response to 2NT had he pre-empted with     AKQxxx   xx  xx  xxx ?|
+^B@2^*BMovie Maker: ^*N|cp||at|What would be the openers response to 2NT had he pre-empted with AKQxxx,xx,xx,xxx?|
+PG| ***** 19 ***** |
+
+
+cp|8|AT|^^
+^B@2^*Bhondo717: ^*N|cp||at|The opener should bid 3NT. Next, let me illustrate several auctions related to we just discussed.|
 PG| ***** 20 ***** |
-
-
-cp|8|AT|
-
-^B@2^*Bhondo717: ^*N|cp||at|The opener should bid 3NT.     Next, let me illustrate several auctions we just discussed.|
-PG| ***** 21 ***** |
 
 
 NT||
 %%%
 %%%%%%%%%%%%%%% page
-CS|1|CP|4|FP|3|at|^-
-{      Ogust      }
-^-|fp||cp||cs|4|ht|g|at|^b{|ia|,2dp2np3c|at|}|HT|f|at|^m@2^z@3In this auction North promises a 5-7 HCP hand and a diamond suit lacking two of top three honors.|
+qx|,hide|CS|1|CP|4|FP|3|at|^-
+{      2NT Ogust      }
+^-|fp||cp||cs|4|ht|f|at|^b{|ia|,2dp2np3c|at|}|HT|f|at|^k@2^z@3In this auction North promises a 5-7 HCP hand and a diamond suit lacking two of top three honors.|
+PG| ***** 21 ***** |
+
+
+ht|j|at|^b{|ia|,2dp2np3d|at|}|HT|j|at|^k@2^z@3In this auction North promises a 5-7 HCP hand and a diamond suit with two top three honors.|
 PG| ***** 22 ***** |
 
 
-ht|l|at|^b{|ia|,2dp2np3d|at|}|HT|k|at|^m@2^z@3In this auction North promises a 5-7 HCP hand and a diamond suit with two top three honors.|
+ht|o|at|^b{|ia|,2dp2np3h|at|}|HT|o|at|^k@2^z@3In this auction North promises a 8-10 HCP hand and a diamond suit lacking two of the top three honors.|
 PG| ***** 23 ***** |
 
 
-ht|q|at|^b{|ia|,2dp2np3h|at|}|HT|p|at|^m@2^z@3In this auction North promises a 8-10 HCP hand and a diamond suit lacking two of the top three honors.|
+ht|s|at|^b{|ia|,2dp2np3s|at|}|HT|s|at|^k@2^z@3In this auction North promises a 8-10 HCP hand and a diamond suit with the two of the top three honors.|
 PG| ***** 24 ***** |
-
-
-ht|v|at|^b{|ia|,2dp2np3s|at|}|HT|u|at|^m@2^z@3In this auction North promises a 8-10 HCP hand and a diamond suit with the two of the top three honors.|
-PG| ***** 25 ***** |
 
 
 NT||
 %%%%%%%%%%%% Ogust
-CS|1|CP|4|FP|3|at|^-
+qx|,hide|CS|1|CP|4|FP|3|at|^-
 {      Ogust      }
 ^-|CP||fp||ht|d|cp||AT|
 ^B@2^*BMovie Maker: ^*N|cp||at|Howard, that was great explanation. But let us assume my partner opens a Weak Two (2@D for example) and the next opponent passes. What type of hand do I need to bid 2N?|
-PG| ***** 26 ***** |
+PG| ***** 25 ***** |
 
 
 cp|8|AT|
 
-^B@2^*Bhondo717: ^*N|cp||at|Before I get into specific let me give you a key messages of using Ogust convention. You should not overuse Ogust. The law of total tricks and your dummy points often tell you what to do. Ogust only should be used for those in-between hands, which do not occur all that often.|
-PG| ***** 27 ***** |
+^B@2^*Bhondo717: ^*N|cp||at|Before I get into specific let me give you a key message of using Ogust convention. You should not overuse Ogust. The law of total tricks and your dummy points often tell you what to do. Ogust only should be used for those in-between hands, which do not occur all that often.|
+PG| ***** 26 ***** |
 
 
 cp||AT|
 
 ^B@2^*BMovie Maker: ^*N|cp||at|Then, would you please give us your guideline.|
-PG| ***** 28 ***** |
+PG| ***** 27 ***** |
 
 
 cp|8|AT|
 
-^B@2^*Bhondo717: ^*N|cp||at|Let me first discuss what to do when partner opens 2@H or 2@S. In that case, your first thought should be whether or not you want to play in game in opener's suit. It is almost always easier to play in a suit, particularly when one hand is weak, than it is to play in NT. And your primary guideline should be the Law of Total Tricks. So, let us say you are on the table and partner bids let us say 2@H and you have the following hands. First, you choose your bid then I will give you my critique and recommendations. I will be your partner. For clarity we are not going to show the entire hand.|
-PG| ***** 29 ***** |
+^B@2^*Bhondo717: ^*N|cp||at|Let me first discuss what to do when partner opens 2@H or 2@S. In that case, your first thought should be whether or not you want to play in game in opener's suit. It is almost always easier to play in a suit, particularly when one hand is weak, than it is to play in NT. And your primary guideline should be the |CP|1|FP|2|AT|^*Hhttp://www.bridgesights.com/hondobridge/hondoviewer/hondoviewer.php?sf=lott,Law of Total Tricks^*N|CP||FP||at|. So, let us say you are on the table and partner bids let us say 2@H and you have the following hands--is presented next. First, you choose your bid then I will give you my critique and recommendations. I will be your partner. For clarity we are not going to show the entire hand.|
+PG| ***** 28 ***** |
 
 
 nt||
 %%%%%%%%%%%%%% Board G1
 st||pn|Movie Maker,Silent Opponent, Howard, Silent Opponent|sk|s|md|3hk432,,,|rh||ah|Board G1|ah|Ogust by Howard|sv|n|MB|2hp?|lb|*bWhat would be your bid Movie Maker?^^4h|mb|4h|cp|8|AT|
 ^B@2^*Bhondo717: ^*N|cp||at|If you have 4-card support, raise to 4, regardless of how many points you have. This is clear Law of Total Tricks bid, since you know your side has 10 trumps. This is the same reasoning as your jumping to 4 with 5-card support when your partner opens 1 of a major. Occasionally, you might have enough for slam, but that is rare enough that it is not worth worrying about.|
-PG| ***** 31 ***** |
+PG| ***** 30 ***** |
 
 
 NT||
 %%%%%%
 st||pn|Movie Maker,Silent Opponent, Howard, Silent Opponent|sk|s|md|3hk43,,,|rh||ah|Board G2|ah|Ogust by Howard|sv|n|MB|2hp?|lb|*bWhat would be your bid Movie Maker?^^3h|MB|3H|cp|8|AT|
 ^B@2^*Bhondo717: ^*N|cp||at|If you have 3-card support and at least 4 points, you should raise to 3 at least. Again, this is based on the Law of Total Tricks (you have 9 trumps, so you are safe bidding a 9 trick contract). Below I will discuss when you should think about bidding 4, but I want to emphasize that, if your partner opens a Weak Two and you have 3-card support, you must at a minimum bid 3 regardless of your point count. Bridge experts call this "furthering the preempt" and it is a very effective tactic.|
-PG| ***** 33 ***** |
+PG| ***** 32 ***** |
 
 
 NT||
 %%%%%%%%%%%%
-st||pn|Movie Maker,Silent Opponent, Howard, Silent Opponent|sk|s|md|3hk4,,,|rh||ah|Board G3|ah|Ogust by Howard|sv|n|MB|2hp?|lb|*bWhat would be your bid Movie Maker?^^p|MB|p|cp|8|AT|
-^B@2^*Bhondo717: ^*N|cp||at|If you have 2-card support, unless you have a very good hand, you should probably pass.|
-PG| ***** 35 ***** |
+st||pn|Movie Maker,Silent Opponent, Howard, Silent Opponent|sk|s|md|3hk4,,,|rh||ah|Board G3|ah|Ogust by Howard|sv|n|MB|2hp?|lb|*bWhat would be your bid Movie Maker?^^p|
+
+MB|p|cp|8|AT|^^^B@2^*Bhondo717: ^*N|cp||at|If you have 2-card support, unless you have a very good hand, you should pass.|
+PG| ***** 34 ***** |
 
 
 NT||cp|8|AT|
-^B@2^*Bhondo717: ^*N|cp||at|Ok, so the next question is, assuming you have 2-card or 3-card support, when should you think about bidding game? Well, let's first think about what partner can have and how many Bergen declarer points that translates to. We know for a fact that partner is promising 5-10 HCP and a 6-card suit. First of all, we can add 2 points for the six card length. So we are up to 7-12 Bergen starting points. Now we also have to take distribution into account. Let's look at the most common distributions for opener.|
-PG| ***** 36 ***** |
+^B@2^*Bhondo717: ^*N|cp||at|The next question is, assuming you have 2-card or 3-card support, when should you think about bidding game? Well, let's first think about what partner can have and how many |CP|1|FP|2|AT|^*Hhttp://www.bridgesights.com/hondobridge/hondoviewer/hondoviewer.php?sf=declarerpoints,Bergen Declarer Points^*N|CP||FP||at| that translates to. We know for a fact that partner is promising 5-10 HCP and a 6-card suit. First of all, we can add 2 points for the six card length. So we are up to 7-12 Bergen Starting Points. Now we also have to take distribution into account. Let's look at the most common distributions for opener.|
+PG| ***** 35 ***** |
 
 
 NT||
 %%%%%%%%
 st||pn|Movie Maker,Silent Opponent, Howard, Silent Opponent|sk||md|3hk4,,haq9865sqj6d98c98,|rh||ah|Board G4|ah|Ogust by Howard|sv|n|MB|2hp?|cp|8|AT|
 ^B@2^*Bhondo717: ^*N|cp||at|First is the 6-3-2-2 distribution as in this hand. In this case, you can add 1 for the doubleton and 1 for the sixth trump--12 Declarer Points. So, we are in the 9-14 declarer points range.|
-PG| ***** 37 ***** |
+PG| ***** 36 ***** |
 
 
 NT||
 %%%%%%%%%%%%%%%%%%%%%%555
 st||pn|Movie Maker,Silent Opponent, Howard, Silent Opponent|sk||md|3hk4,,haq9865sqt6d987c9,|rh||ah|Board G5|ah|Ogust by Howard|sv|n|MB|2hp?|cp|8|AT|
 ^B@2^*Bhondo717: ^*N|cp||at|Next is the 6-3-3-1 distribution. In this case, you can add 2 for the singleton and 1 for the sixth trump. So, we are in the 10-15 declarer points range.|
-PG| ***** 38 ***** |
+PG| ***** 37 ***** |
 
 
 NT||
 %%%%%%%%%%%%%%5
 st||pn|Movie Maker,Silent Opponent, Howard, Silent Opponent|sk||md|3hk4,,haq9865dqt86s98c9 ,|rh||ah|Board G6|ah|Ogust by Howard|sv|n|MB|2hp?|cp|8|AT|
 ^B@2^*Bhondo717: ^*N|cp||at|In the 6-4-2-1 distribution, you can add 2 for the singleton, 1 for the side 4 card suit, and 1 for the sixth trump. So, we are up to 11-16 declarer points range.|
-PG| ***** 39 ***** |
+PG| ***** 38 ***** |
 
 
 NT||
 %%%%%%%%%%%%
-st||pn|Movie Maker,Silent Opponent, Howard, Silent Opponent|sk||md|3hk4,,haqt865sqt6d98c98,|rh||ah|Board G7|ah|Ogust by Howard|sv|n|MB|2hp?|cp|8|AT|
+qx|,hide|st||pn|Movie Maker,Silent Opponent, Howard, Silent Opponent|sk||md|3hk4,,haqt865sqt6d98c98,|rh||ah|Board G7|ah|Ogust by Howard|sv|n|MB|2hp?|cp|8|AT|
 ^B@2^*Bhondo717: ^*N|cp||at|It might occur to some of you that opener can have a quality suit (or even 2 quality suits when 6-4-2-1). But I don't tend to worry about those, because if partner's hand is close to 10 HCP and he has some quality suits, he would often open 1 rather than 2. So here is what I do.|
-PG| ***** 40 ***** |
+PG| ***** 39 ***** |
 
 
 NT||
-st||pn|Movie Maker,Silent Opponent, Howard, Silent Opponent|sk||md|3shk74dc,,,|rh||ah|Board G8|ah|Ogust by Howard|sv|n|MB|2hp?|cp|8|AT|
-^B@2^*Bhondo717: ^*N|cp||at|If I have 3 trumps, I assume partner's range is 10-15 for the purposes of bidding. I am willing to play at the 3 level even if it turns out we do not have game.|MB|3h|
+qx|,hide|st||pn|Movie Maker,Silent Opponent, Howard, Silent Opponent|sk||md|3shk74dc,,,|rh||ah|Board G8|ah|Ogust by Howard|sv|n|MB|2hp?|cp|8|AT|
+^B@2^*Bhondo717: ^*N|cp||at|If I have 3 trumps, I assume partner's range is 10-15 for the purposes of bidding. I am willing to play at the 3 level even if it turns out we do not have game. |MB|3h|
+PG| ***** 40 ***** |
+
+
+at|But, with 3 trumps, if I have at least 14 dummy points,|md|3sajthk74dk98ckj98|mb|2hp?|AT| I just bid 4@H.|mb|4h|
 PG| ***** 41 ***** |
-
-
-at|
-But, with 3 trumps, if I have at least 14 dummy points,|md|3sajthk74dk98ckj98|mb|2hp?|AT| I just bid 4H.|mb|4h|
-PG| ***** 42 ***** |
 
 
 NT||
 st||pn|Movie Maker,Silent Opponent, Howard, Silent Opponent|sk|s|md|3hk74saktd7654cq76,,,|rh||ah|Board G9|ah|Ogust by Howard|sv|n|MB|2hp?|cp|8|AT|
 ^B@2^*Bhondo717: ^*N|cp||at|With 11-13 dummy points, I bid Ogust.|
-PG| ***** 43 ***** |
+PG| ***** 42 ***** |
 
 
 MB|2NT|An|Need more information|
-PG| ***** 44 ***** |
+PG| ***** 43 ***** |
 
 
 mb|P|at| and if partner shows 8-10 HCP (e.g 13-15 declarer points)|
-PG| ***** 45 ***** |
+PG| ***** 44 ***** |
 
 
 mb|3s|an|good suit good hand|
+PG| ***** 45 ***** |
+
+
+mb|p|at| I bid 4@H.|mb|4H|
 PG| ***** 46 ***** |
-
-
-mb|p|at| I bid 4H.|mb|4H|
-PG| ***** 47 ***** |
 
 
 NT||
 st||pn|Movie Maker,Silent Opponent, Howard, Silent Opponent|sk|s|md|3hk74sa9jd7654cq76,,,|rh||ah|Board G10|ah|Ogust by Howard|sv|n|MB|2hp?|cp|8|AT|
-^B@2^*Bhondo717: ^*N|cp||at|With less than 11 dummy points, I simply "further the preempt" by bidding 3.|
-PG| ***** 48 ***** |
+^B@2^*Bhondo717: ^*N|cp||at|With less than 11 dummy points, I simply "further the preempt" by bidding 3@H.|
+PG| ***** 47 ***** |
 
 
 mb|3H|
-PG| ***** 49 ***** |
+PG| ***** 48 ***** |
 
 
 NT||cp|8|AT|
 ^B@2^*Bhondo717: ^*N|cp||at|If I only have 2 trumps, |md|3hk7saktd7654cq764,,,|mb|2hp?|at|I am more cautious. I assume partner can have no more than 13 or so declarer points. Remember, a 9-card fit is much, much better than an 8-card fit; it is often worth an extra trick. With only 2 trumps, I won't even consider bidding game unless I have at least 16 dummy points. With 13-15 dummy points, I would bid Ogust only if my hand had lots of Aces and Kings and few quacks.|
-PG| ***** 50 ***** |
+PG| ***** 49 ***** |
 
 
 NT||
@@ -294,220 +287,225 @@ bt||CS|1|CP|4|FP|3|at|^-
 {      Ogust      }
 ^-|CP||fp||ht|d|cp||AT|
 ^B@2^*BMovie Maker: ^*N|cp||at|What about playing 3N? |
-PG| ***** 51 ***** |
+PG| ***** 50 ***** |
 
 
 cp|8|AT|
 ^B@2^*Bhondo717: ^*N|cp||at|Well, with 2+ card support, it is almost always better to play in a major suit. And with a singleton or void in partner's suit, NT will be difficult unless you have your own source of tricks. |CP|8|at|So, never try to "rescue" partner if you have a singleton or void in their suit.|cp||
-PG| ***** 52 ***** |
+PG| ***** 51 ***** |
 
 
 AT|
 
 There are a few instances where I favor 3N over 4 of a major. And that is when I can count 9 tricks. So, if I have a hand with a doubleton or tripleton honor (A, K, or Q), I might consider 3N when I can count 9 tricks based on the Ogust response. The most obvious example is when I have a doubleton or tripleton honor and 3 Aces. Then, if in response to 2N, partner shows a good suit (2 of the top 3 honors), I can count 9 tricks (six in opener's suit plus 3 aces). Of course, most hands are not that obvious. |
-PG| ***** 53 ***** |
+PG| ***** 52 ***** |
 
 
 AT|
 
 The general rule I use is I "picture" partner having AQxxxx of his suit and nothing else. If I am willing to play 3NT opposite that holding, I would bid Ogust. Similarly, if I am willing to play 3 of our suit with that holding, and 3N if partner has a max, then I also bid Ogust, bidding 3N if partner shows a good hand with a good suit.|
-PG| ***** 54 ***** |
+PG| ***** 53 ***** |
 
 
 AT|
 
 Of course, if I have a maximum opener (18+), I am willing to play game opposite just about any 6 point hand, so I might bid 3N with a balanced hand with 2 card support (or even a singleton if I can count 9 outside tricks). If I have 16 or 17, I would tend to favor 4 of the major over 3N, although if I were willing to play 3 of the major, I might bid Ogust just in case partner shows 8-10 HCP.|
-PG| ***** 55 ***** |
+PG| ***** 54 ***** |
 
 
 NT||
 %%%%%%%%%%%%%%%%
-CS|1|CP|4|FP|3|at|^-
+qx|,hide|CS|1|CP|4|FP|3|at|^-
 {      Ogust      }
-^-|CP||fp||ht|d|cp||AT|
-^B@2^*BMovie Maker: ^*N|cp||at|Howard, not all my opponents always are accommodating. For example what should our partnership do if I open 2H, for example, and the auction goes 2H-P-2N-3of a Suit-?|
-PG| ***** 56 ***** |
+^-|CP||fp||ht|b|cp||AT|
+^B@2^*BMovie Maker: ^*N|cp||at|Howard, not all my opponents always are accommodating. For example what should our partnership do if I open 2@H, for example, and the auction goes 2H-P-2N-3 of a Suit-?|
+PG| ***** 55 ***** |
 
 
 cp|8|AT|
 
-^B@2^*Bhondo717: ^*N|cp||at|Glad to explain. Many people have devised somewhat complicated systems over doubles (if interested, read about DOPI, DOPE, and DEPO), but I use a simple approach, based on stolen bid doubles. Generally speaking, pass means I would have responded with a bid below whatever the overcall was, double means the opponents "stole" my bid, and otherwise I bid what I would have without interference. There are some slight variations, depending on what is overcalled.|
+^B@2^*Bhondo717: ^*N|cp||at|Glad to explain. Many people have devised somewhat complicated systems over interference  but I use a simple approach, based on stolen bid doubles. Generally speaking, pass means I would have responded with a bid below whatever the overcall was, double means the opponents "stole" my bid, and otherwise I bid what I would have without interference. There are some slight variations, depending on what is overcalled.|
+PG| ***** 56 ***** |
+
+
+AT|
+
+1) Over 3@D, pass means I would have responded 3@C, double means I would have responded 3@D, and 3@H and 3@S mean the same as if there were no interference.|
 PG| ***** 57 ***** |
 
 
 AT|
 
-1) Over 3D, pass means I would have responded 3C, double means I would have responded 3D, and 3H and 3S mean the same as if there were no interference.|
+2) Over 3@H, pass means I would have responded 3@C or 3@D, double means I would have responded 3@H, and 3@S means the same as if there were no interference.|
 PG| ***** 58 ***** |
 
 
 AT|
 
-2) Over 3H, pass means I would have responded 3C or 3D, double means I would have responded 3H, and 3S means the same as if there were no interference.|
+3) Over 3@S, pass means I would have responded 3@C or 3@D, and double means I would have responded 3@H or 3@S.|
 PG| ***** 59 ***** |
 
 
 AT|
 
-3) Over 3S, pass means I would have responded 3C or 3D, and double means I would have responded 3H or 3S.|
+4) Over 3@C, you can just use the normal approach -- double means I would have responded 3@C and 3@D/3@H/3@S mean the same as if there were no interference. Since pass is also available, I play a small wrinkle, but it is certainly optional, and you need not play it. If I pass, that says I would have bid 3@C, but I have some defense and am willing to play 3@C. If I double, that says I opened the usual hondo trash with little defense.|
 PG| ***** 60 ***** |
 
 
-AT|
+cp||AT|^^
 
-4) Over 3C, you can just use the normal approach -- double means I would have responded 3C and 3D/3H/3S mean the same as if there were no interference. Since pass is also available, I play a small wrinkle, but it is certainly optional, and you need not play it. If I pass, that says I would have bid 3C, but I have some defense and am willing to play 3C. If I double, that says I opened the usual hondo trash with little defense.|
+^B@2^*BMovie Maker: ^*N|cp||at|BTW, I assume that the 2NT bid is forcing.|
 PG| ***** 61 ***** |
 
 
-cp||AT|
-
-^B@2^*BMovie Maker: ^*N|cp||at|BTW, I assume that the 2NT bid is forcing.|
+cp|8|AT|^^
+^B@2^*Bhondo717: ^*N|cp||at|Correct. It is forcing for one round.|
 PG| ***** 62 ***** |
 
 
-cp|8|AT|
-
-^B@2^*Bhondo717: ^*N|cp||at|Correct. It is forcing for one round.|
-PG| ***** 63 ***** |
-
-
-cp||AT|
+cp||AT|^^
 
 ^B@2^*BMovie Maker: ^*N|cp||at|Next are few quizzes.
 |
-PG| ***** 64 ***** |
+PG| ***** 63 ***** |
 
 
 NT||bt||tu||
 %%OgustRes.lin
 %% response to Weak Two Playing Ogust
 %%%Last Edited 03-14-2012
-%%%%%% By Kia BBO nickname nome
-%%%%%%%%%%%%%%%%%%%%
-qx|Hand,wide|st||pn|You,,Partner-Dealer,|sk|s|RH||ah|Responding to Weak Two|ah|You are playing Ogust|ah|Board O1 - Quiz Section C|sv|B|md|3h2 SKQ43 DAQJ53 CK53,,|mb|2sp?|lb|*bChoose your bid.^^4s|mb|4s|nt|
+
+qx|Quiz|st||pn|You,,Partner-Dealer,|sk|s|RH||ah|Responding to Weak Two|ah|You are playing Ogust|ah|Board O1 - Quiz Section C|sv|B|md|3h2 SKQ43 DAQJ53 CK53,,|mb|2sp?|lb|*bChoose your bid.^^4s|mb|4s|nt|
 ^b@2Support with support and the LAW tell you to bid 4@S. Don't even consider looking at your diamonds.|
-PG| ***** 66 ***** |
+PG| ***** 65 ***** |
 
 
 NT||
 %%%%%
 st||pn|You,,Partner-Dealer,|sk|s|RH||ah|Responding to Weak Two|ah|You are playing Ogust|ah|Board  O2|sv|b|md|3S83 d8 hAKQJ976 CAK4,,|mb|2dp?|lb|*bChoose your bid.^^3h|mb|3h|nt|
-^b@2Bid 3H. You have a great suit. New suit by responder being forcing is standard though not all Partnerships play it. Again man experts may bid 4H.|
-PG| ***** 68 ***** |
+^b@2Bid 3@H. You have a great suit. New suit by responder being forcing is standard though not all Partnerships play it. Again many experts may bid 4@H.|
+PG| ***** 67 ***** |
 
 
 NT||
 %%%%
 st||pn|You,,Partner,|sk|s|RH||ah|Responding to Weak Two|ah|You are playing Ogust|ah|Board  O3|sv|b|md|3SA65 HK72 DAK976 CK3,,|mb|2hp?|lb|*bChoose your bid.^^4h|mb|4h|nt|
-^b@24H contract is the best place to be. |
-PG| ***** 70 ***** |
+^b@24@H contract is the best place to be. |
+PG| ***** 69 ***** |
 
 
 NT||
  
 %%%%%%%%%%%%%% new quizzes
 st||sk|s|RH||ah|Rebid after Weak Two|ah|You are playing Ogust|ah|Board  O4|sv|b|md|1SKQJ932 H32 D876 C32,,|lb|*bChoose your bid.^^2s|mb|2s|
-PG| ***** 72 ***** |
+PG| ***** 71 ***** |
 
 
 mb|p2n|AN|I need more information partner|
-PG| ***** 73 ***** |
+PG| ***** 72 ***** |
 
 
 MB|p?|lb|*bChoose your bid.^^3d|mb|3d|NT| 
-^B@2Bid 3D. Your partnership plays Ogust after a Weak Two Bid. Your Weak Two hand is minimum but you have good suit.|
-PG| ***** 75 ***** |
+^B@2Bid 3@D. Your partnership plays Ogust after a Weak Two Bid. Your Weak Two hand is minimum but you have good suit.|
+PG| ***** 74 ***** |
 
 
 NT||
 %%%%%%%%%
 st||sk|s|RH||ah|Rebid after Weak Two|ah|You are playing Ogust|ah|Board  O5|sv|b|md|1SKQT932 H32 D987Ca2,,|lb|*bChoose your bid.^^2s|mb|2s|
-PG| ***** 77 ***** |
+PG| ***** 76 ***** |
 
 
 mb|p2n|AN|I need more information partner|
-PG| ***** 78 ***** |
+PG| ***** 77 ***** |
 
 
 MB|p?|lb|*bChoose your bid.^^3s|mb|3s|NT| 
-^B@2Bid 3S. Your partnership plays Ogust after a Weak Two Bid. You have a maximum ( 9-11) Weak Two hand and good quality suit.|
-PG| ***** 80 ***** |
+^B@2Bid 3@S. Your partnership plays Ogust after a Weak Two Bid. You have a maximum (9-10) Weak Two hand and good quality suit.|
+PG| ***** 79 ***** |
 
 
 NT||
 %%%%%%%%%
 st||sk|s|RH||ah|Rebid after Weak Two|ah|You are playing Ogust|ah|Board  O6|sv|b|md|1SAT9862 HKQ D432 C32,,|lb|*bChoose your bid.^^2s|mb|2s|
-PG| ***** 82 ***** |
+PG| ***** 81 ***** |
 
 
 mb|p2n|AN|I need more information partner|
-PG| ***** 83 ***** |
+PG| ***** 82 ***** |
 
 
 MB|p?|lb|*bChoose your bid.^^3H|mb|3H|NT| 
-^B@2Bid 3H. Your partnership plays Ogust after a Weak Two Bid. You have a maximum Weak Two hand and and low quality suit - bad suit|
-PG| ***** 85 ***** |
+^B@2Bid 3@H. Your partnership plays Ogust after a Weak Two Bid. You have a maximum Weak Two hand and low quality suit (bad suit).|
+PG| ***** 84 ***** |
 
 
 NT||
 %%%%%%%%%A
 st||sk|s|RH||ah|Rebid after Weak Two|ah|You are playing Ogust|ah|Board  O7|sv|o|md|1SK32 cT32 DQJT832 h2 ,,|lb|*bChoose your bid.^^2D|mb|2D|
-PG| ***** 87 ***** |
+PG| ***** 86 ***** |
 
 
 mb|p2n|AN|I need more information partner|
-PG| ***** 88 ***** |
+PG| ***** 87 ***** |
 
 
 MB|p?|lb|*bChoose your bid.^^3c|mb|3c|NT| 
-^B@2Bid 3C. Holding a minimum hand and and a low quality suit.|
-PG| ***** 90 ***** |
+^B@2Bid 3@C. Holding a minimum hand and and a low quality suit.|
+PG| ***** 89 ***** |
 
 
 NT||
 %%%%%%%%%B
 st||sk|s|RH||ah|Rebid after Weak Two|ah|You are playing Ogust|ah|Board  O8|sv|o|md|1ST32 HK32 DKQJ932 C2,,|lb|*bChoose your bid.^^2D|mb|2D|
-PG| ***** 92 ***** |
+PG| ***** 91 ***** |
 
 
 mb|p2n|AN|I need more information partner|
-PG| ***** 93 ***** |
+PG| ***** 92 ***** |
 
 
 MB|p?|lb|*bChoose your bid.^^3s|mb|3s|NT| 
-^B@2With a maximum hand and high quality suit bid 3S|
+^B@2With a maximum hand and high quality suit bid 3@S|
+PG| ***** 94 ***** |
+
+
+qx|Sum,wide|NT||bt||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+HT|c|CP|4|CS|1|AT|^-{    A Summary Responding to Ogust 2NT     }
+^-|CP||CS||HT|e|AT|^B@2After Partner responds 2NT to the Weak Two Bid the first priority of Opener is to re-evaluate the hand and determine whether the hand is minimum (bad) or maximum (good) along with the quality of the suit (low quality/bad and high quality/good.)  |
 PG| ***** 95 ***** |
 
 
-NT||bt||
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-HT|c|CP|4|CS|1|AT|^-{    A Summary Responding to 2NT  -  Ogust    }
-^-|CP||CS||HT|e|AT|^B@2After Partner responds 2NT to the Weak Two Bid the first priority of Opener is to re-evaluate the hand and determine whether the hand is minimum (bad) or maximum (good) along with the quality of the suit - low quality/bad and high quality/good.  |
-PG| ***** 96 ***** |
+ht|h|at|^bWith a minimum hand and low quality suit Opener bids 3@C.|
+pg| ***** 96 ***** |
 
 
-ht|h|at|^b@2^bWith a minimum hand and low quality suit Opener bids 3@C|
-pg| ***** 97 ***** |
+ht|h|at|^bWith a minimum hand and low quality suit Opener bids 3@C.|
+ht|j|AT|^bWith a minimum hand and high quality suit Opener bids 3@D.|
+PG| ***** 97 ***** |
 
 
-ht|j|AT|^bWith a minimum hand and high quality suit Opener bids 3@D|
+ht|h|at|^bWith a minimum hand and low quality suit Opener bids 3@C.|
+ht|j|AT|^bWith a minimum hand and high quality suit Opener bids 3@D.|
+HT|l|AT|^BWith a maximum hand and low quality suit Opener bids 3@H.|
 PG| ***** 98 ***** |
 
 
-HT|l|AT|^BWith a maximum hand and low quality suit Opener bids 3@H|
-PG| ***** 99 ***** |
+ht|h|at|^bWith a minimum hand and low quality suit Opener bids 3@C.|
+ht|j|AT|^bWith a minimum hand and high quality suit Opener bids 3@D.|
+HT|l|AT|^BWith a maximum hand and low quality suit Opener bids 3@H.|
+ht|n|at|^BWith a maximum hand and high quality suit Opener bids 3@S.|
+pg| ***** 99 ***** |
 
 
-ht|n|at|^BWith a maximum hand and high quality suit Opener bids 3@S|
+NT||
+%%%%
+bt||ht|i|cs|1|cp|4|fp||
+at|
+^-{    The End     }
+^-|
+CP||fp||
 pg| ***** 100 ***** |
-
-
-ht|p|at|^BWith AKQxxx ^j      Opener bids 3NT|
-pg| ***** 101 ***** |
-
-
-ht|r|cp|1|AT|
-^B@2^*BMM: ^*N|cp||at|This is the end of Weak Two Bids lesson. We have come a long way together.|
-PG| ***** 102 ***** |
 
 

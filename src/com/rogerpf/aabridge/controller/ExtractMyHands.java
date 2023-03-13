@@ -228,7 +228,7 @@ public class ExtractMyHands {
 		String body_text = "";
 		try {
 			body_text = doc.body().text();
-			if (body_text.contains("Group Challenge") || body_text.contains("Daylong")) {
+			if (body_text.contains("NABC") || body_text.contains("Group Challenge") || body_text.contains("Daylong")) {
 				table = doc.select("table").first();
 			}
 		} catch (Exception e) {

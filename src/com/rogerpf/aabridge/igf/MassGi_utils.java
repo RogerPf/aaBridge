@@ -289,7 +289,10 @@ public class MassGi_utils {
 		out += "sv|" + vulLetter + "|";
 
 		String kib = "";
-		if (kib_seat.length() > 0) {
+
+		boolean kibSeatValid = (Dir.directionFromChar((kib_seat + ' ').charAt(0)) != Dir.Invalid);
+
+		if (kibSeatValid) {
 			kib = kib_seat;
 		}
 		else if (deal.youSeatHint != Dir.Invalid) {
@@ -299,7 +302,7 @@ public class MassGi_utils {
 		out += "sk|" + kib + "|";
 
 		if (kib.isEmpty() == false) {
-			out += "sk|-|";
+			out += "sk||";
 		}
 
 		out += pg_bars;
@@ -496,7 +499,7 @@ public class MassGi_utils {
 		String s3 = deal.cardPlayForLinSave(3 /* stage 0, 1-3 */);
 		if (s3.isEmpty() == false) {
 			out += clearAllButNotTopLeft + EOL;
-			out += "sk|-|" + EOL;
+			out += "sk||" + EOL;
 			out += "ht|m|at|^e Play follows ...|" + EOL;
 			out += "bv|f,v|" + EOL;
 			out += "pf|first-button|" + EOL;
@@ -515,7 +518,7 @@ public class MassGi_utils {
 		}
 
 		out += clearAllButNotTopLeft + EOL;
-		out += "sk|-|";
+		out += "sk||";
 		out += "ht|" + L1 + "|at|^e Complete   -   to play out any remaining ";
 		out += "cards ^*b Click ^*n the blue  { ^*b Cont ^*n }  button.|" + EOL;
 
@@ -529,7 +532,7 @@ public class MassGi_utils {
 		out += "bv|c,v|" + EOL;
 		out += "pg||" + EOL + EOL;
 
-		out += "sk|-|eb||" + EOL;
+		out += "sk||eb||" + EOL;
 		out += clearAllButNotTopLeft + EOL;
 		out += "lg|c|ht|j|at|^c|" + EOL;
 		out += "%%" + EOL;
@@ -541,7 +544,7 @@ public class MassGi_utils {
 		out += "bv|a,v|" + EOL;
 		out += "pg||" + EOL + EOL;
 
-		out += "bv|a,h|md|1,,,|nt||n^|5|at|^^^bcleared|sk|-|pg||" + EOL;
+		out += "bv|a,h|md|1,,,|nt||n^|5|at|^^^bcleared|sk||pg||" + EOL;
 		out += "" + EOL;
 		out += "" + EOL;
 

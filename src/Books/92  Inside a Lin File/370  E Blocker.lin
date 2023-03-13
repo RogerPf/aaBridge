@@ -637,8 +637,9 @@ pc|d2|pc|dA|pc|d7|pc|d5|
 pc|sJ|eb|y___|
 tc||
 
+
 nt|^b@2^z@3^^^*bCompanion 2 ^*n ^f A finesse that you might want a student to play.|
-lg|d|n#|6|at|^^^^^^|
+lg|d|n#|6|at|^^^c(|cp|red|at|^*b Note^*n|cp||at|  The conditon  "^*bPlayed^*n"  used later,  means   "in current trick".  |fh|s28|fp|s|at| Added in Feb 2022 is  |fp|| at|  "^*bInAnyTrick^*n"  )^^^^|
 n#|9|at|When you click the ^*b { 1st } ^*n button  the bot (without hints) plays the @s5 and does  NOT  cover the @sJ with the @sQ.|
 pg| ***** 78 ***** |
 
@@ -745,7 +746,7 @@ pc|dJ|pc|d6|
 tc|n|
 
 ht|f|at|@4^^|lg|g|
-n#|6|at|^c^*b  bi`Swap,  E,  dQ,   d,   p4,  NeededToWinP4` ^*n
+n#|6|at|^c^*b  bi`Swap,  E,  dQ,   d,   p4,  T2-11,  cond,  NeededToWinP4` ^*n
 |n#|3|at|The above  Bot Instruction (bi)  swaps the @dQ from East to West,  but Only if it is needed to win the trick (AND next to play is 4th pos).    So if the @dK is played by north the @dQ will not be swapped.     
 |n#|1|at|^m Click the  { ^*b Cont ^*n }  button and play a @d to check that this is true.|
 bv|f,h|
@@ -769,7 +770,7 @@ pc|dJ|pc|d6|
 tc|n|
 
 ht|f|at|@4^^|lg|g|
-n#|6|at|^c^*b  bi`Swap,  E,  dQ,   d,   p4,  NeededToWinP4` ^*n
+n#|6|at|^c^*b  bi`Swap,  E,  dQ,   d,   p4,  T2-11,  cond,  NeededToWinP4` ^*n
 |n^|2|at|^c^*b  bi`Also,    E,     c,   d`  ^*n 
 |n#|3|at|Identical to the previous example - except that the a low @c from West will ^*b ALSO ^*n be swapped for East's other @d.     
 |n#|3|at|^m Click the  { ^*b Cont ^*n }  button and play a @d to check that this is true.|

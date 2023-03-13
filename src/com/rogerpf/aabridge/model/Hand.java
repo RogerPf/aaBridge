@@ -1185,6 +1185,7 @@ public class Hand implements Comparable<Hand> {
 			}
 
 			if (selectableNeeded && isSuitSelectable(suit) == false) {
+				i++; // skip the supposed rank character
 				continue;
 			}
 

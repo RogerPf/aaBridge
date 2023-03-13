@@ -20,12 +20,148 @@ import com.rogerpf.aabridge.controller.Aaa;
 public class VersionAndBuilt {
 	static int prob_fmt_req_numb = /* best to leave this alone ... best to leave THIS setting alone unless */6000;// compatibility needed
 	
-	static String ver = "6.0.0.";  public static String devExtra = "";    // extra is dev only, normally null
+	static String ver = "6.2.0.";  public static String devExtra = "";    // extra is dev only, normally null
 
-	public static int buildNo = 6003;    static String y = "2021", m = "Jan", d = "01";
+	public static int buildNo = 6210;     static String y = "2023", m = "Mar", d = "01";
 
-   
-	// 2021-01-01  6002  Release Candidate
+ 
+	// 2023-03-01  6210       release candidate   version 6.2
+
+	// 2023-02-27  6109  _b5n Hondo mentoring2302d
+	// 2023-02-20  6109  _b4n Hondo mentoring2302c
+	// 2023-02-14  6109  _b3n  new dds  com.rogerpf.aabridge.dds.dll  in  win32-x86-64   bo.haglund
+	// 2023-02-13  6109  _b2  Hondo mentoring2302b
+	// 2023-02-06  6109  _b1  Hondo mentoring2302a
+	// 2023-01-30  6109  _a5  Hondo mentoring2301e
+	// 2023-01-23  6109  _a4  Hondo mentoring2301d
+	// 2023-01-17  6109  _a3  Hondo mentoring2301c
+	// 2023-01-16  6109  _a2  Hondo mentoring2301b
+	// 2023-01-02  6109  _a1  Hondo mentoring2301a
+
+	// 2023-01-01  6108       release candidate   version 6.1
+
+	// 2023-01-01  6007  _p5  pre candidate build
+	// 2022-12-26  6007  _p4  Hondo mentoring2212d
+	// 2022-12-20  6007  _p3  Hondo mentoring2212c
+	// 2022-12-12  6007  _p2  Hondo mentoring2212b
+	// 2022-12-05  6007  _p1  Hondo mentoring2212a
+	// 2022-11-28  6007  _m4  Hondo mentoring2211d
+	// 2022-11-21  6007  _m3  Hondo mentoring2211c
+	// 2022-11-14  6007  _m2  Hondo mentoring2211b
+	// 2022-11-09  6007  _m1  Hondo mentoring2211a
+	// 2022-10-30  6007  _k4  Hondo mentoring2210d
+	// 2022-10-24  6007  _k3  Hondo mentoring2210c
+	// 2022-10-16  6007  _k2  Hondo mentoring2210b
+	// 2022-10-10  6007  _k1  Hondo mentoring2210a
+	// 2022-10-03  6007  _j3  Hondo mentoring2209c
+	// 2022-09-11  6007  _j2  Hondo mentoring2209b
+	// 2022-09-05  6007  _j1  Hondo mentoring2209a
+	// 2022-08-29  6007  _h5  Hondo mentoring2208d
+	// 2022-08-22  6007  _h4  Hondo mentoring2208c
+	// 2022-08-15  6007  _h3  Hondo mentoring2208b
+	// 2022-08-08  6007  _h2  Hondo mentoring2208a
+	// 2022-08-01  6007  _h1  Hondo mentoring2207e
+	// 2022-07-25  6007  _g4  Hondo mentoring2207d
+	// 2022-07-18  6007  _g3  Hondo mentoring2207c
+	// 2022-07-11  6007  _g2  Hondo mentoring2207b
+	// 2022-07-04  6007  _g1  Hondo mentoring2207a
+	// 2022-06-27  6007  _f4  Hondo mentoring2206d
+	// 2022-06-20  6007  _f3  Hondo mentoring2206c
+	// 2022-06-13  6007  _f2  Hondo mentoring2206b
+	// 2022-06-06  6007  _f1  Hondo mentoring2206a
+	// 2022-05-30  6007  _e5  Hondo mentoring2205d
+	// 2022-05-28  6007  _e4  restored bidding Keys  p = pass,  n = No trump,  r = Redouble
+	// 2022-05-23  6007  _e3  Hondo mentoring2205c
+	// 2022-05-16  6007  _e2  Hondo mentoring2205b
+	// 2022-05-11  6007  _e1  Hondo mentoring2205a
+	// 2022-04-24  6007  _d2  Hondo mentoring2204b
+	// 2022-04-18  6007  _d1  Hondo mentoring2204a
+	// 2022-03-28  6007  _c6  Hondo mentoring2203d
+	// 2022-03-20  6007  _c5  Hondo mentoring2203c
+	// 2022-03-14  6007  _c4  Hondo mentoring2203b
+	// 2022-03-09  6007  _c3  hyphen removed from empty - player names
+	// 2022-03-08  6007  _c2  "NABC"  added to  extractFromHtmlFile - Sanya request via Charlene
+	// 2022-03-07  6007  _c1  Hondo mentoring2203a
+	// 2022-02-28  6007  _b7  Hondo mentoring2202d
+	// 2022-02-27  6007  _b6  up|| now does NOTHING if there are no cards played
+	// 2022-02-26  6007  _b5  'Deal of the Week' moved to  Books-T
+	// 2022-02-23  6007  _b4  bot hint   "InAnyPlayed"   added for AG Deals support
+	// 2022-02-21  6007  _b3  Hondo mentoring2202c  (minor reformat of this years hondos)
+	// 2022-02-14  6007  _b2  Hondo mentoring2202b and RE-FIXED -  sk|| not showing all hands !!!  broken in _a5
+	// 2022-02-06  6007  _b1  Hondo mentoring2202a
+	// 2022-01-31  6007  _a8  Hondo mentoring2201e
+	// 2022-01-24  6007  _a7  Hondo mentoring2201d
+	// 2022-01-19  6007  _a6  reformat  - minor cosmetic changes in layout
+	// 2022-01-19  6007  _a6  Fixed   sk|-|   now saved as  sk||  and 125+ G-Slams added
+	// 2022-01-19  6007  _a5  Fixed   sk|-|   not showing kib seat correctly
+	// 2022-01-18  6007  _a4  Deal of the Week
+	// 2022-01-17  6007  _a3  Hondo mentoring2201c
+	// 2022-01-10  6007  _a2  Hondo mentoring2201b
+	// 2022-01-03  6007  _a1  Hondo mentoring2201a
+	
+	// 2022-01-01  6006       release candidate
+	
+	// 2022-01-01  6005  _n8  pre candidate build
+	// 2021-12-27  6005  _n7  Boldbida's official "Play of the Hand"  lin file  added
+	// 2021-12-27  6005  _n6  Hondo mentoring2112d  and updates to WIN and MAC install docs
+	// 2021-12-19  6005  _n5  Hondo mentoring2112c
+	// 2021-12-15  6005  _n4  fixed missing read_me in   203__aadm__package__v1.43.zip
+	// 2021-12-14  6005  _n3  fixes to remove goo.gl short cuts from docs
+	// 2021-12-13  6005  _n2  Hondo mentoring2112b  + sharing added to google link (minor)
+	// 2021-12-06  6005  _n1  Hondo mentoring2112a
+	// 2021-11-29  6005  _m3  Hondo mentoring2111c
+	// 2021-11-22  6005  _m2  Hondo mentoring2111b  + tiny fix
+	// 2021-11-08  6005  _m1  Hondo mentoring2111a
+	// 2021-11-02  6005  _k4  Hondo mentoring2110d
+	// 2021-10-18  6005  _k3  Hondo mentoring2110c
+	// 2021-10-11  6005  _k2  Hondo mentoring2110b
+	// 2021-10-04  6005  _k1  Hondo mentoring2110a
+	// 2021-09-27  6005  _j5  Hondo mentoring2109d
+	// 2021-09-25  6005  _j4  Added missing sources
+	// 2021-09-20  6005  _j3  Hondo mentoring2109c
+	// 2021-09-13  6005  _j2  Hondo mentoring2109b
+	// 2021-09-06  6005  _j1  Hondo mentoring2109a
+	// 2021-08-30  6005  _h5  Hondo mentoring2108e
+	// 2021-08-23  6005  _h4  Hondo mentoring2108d
+	// 2021-08-16  6005  _h3  Hondo mentoring2108c and puppetstayman 2021
+	// 2021-08-10  6005  _h2  Hondo mentoring2108b
+	// 2021-08-02  6005  _h1  Hondo mentoring2108a
+	// 2021-07-26  6005  _g3  Hondo mentoring2107c
+	// 2021-07-12  6005  _g2  Hondo mentoring2107b
+	// 2021-07-05  6005  _g1  Hondo mentoring2107a
+	
+	// 2021-07-01  6004       Release candidate
+	
+	// 2021-06-31  6003  _f4  pre major release test build
+	// 2021-06-21  6003  _f3  Hondo mentoring2106c
+	// 2021-06-14  6003  _f2  Hondo mentoring2106b
+	// 2021-06-07  6003  _f1  Hondo mentoring2106a 
+	// 2021-06-01  6003  _e5  Hondo mentoring2105e
+	// 2021-05-24  6003  _e4  Hondo mentoring2105d
+	// 2021-05-17  6003  _e3  Hondo mentoring2105c
+	// 2021-05-10  6003  _e2  Hondo mentoring2105b
+	// 2021-05-03  6003  _e1  Hondo mentoring2105a
+	// 2021-04-25  6003  _d5  Hondo mentoring2104d
+	// 2021-04-22  6003  _d4  Drury added to aadm and to 1827 hands
+	// 2021-04-19  6003  _d3  Hondo mentoring2104c
+	// 2021-04-11  6003  _d2  Hondo mentoring2104b
+	// 2021-04-04  6003  _d1  Hondo mentoring2104a  
+	// 2021-03-28  6003  _c6  Hondo mentoring2103d
+	// 2021-03-22  6003  _c5  Hondo mentoring2103c
+	// 2021-03-15  6003  _c4  Hondo mentoring2103b
+	// 2021-03-10  6003  _c3  aadm v1.36
+	// 2021-03-08  6003  _c2  Hondo mentoring2103a
+	// 2021-03-01  6003  _c1  Hondo mentoring2102c
+	// 2021-02-21  6003  _a7  Hondo mentoring2102b
+	// 2021-02-07  6003  _a6  Hondo mentoring2102a
+	// 2021-02-01  6003  _a5  Hondo mentoring2101e
+	// 2021-01-25  6003  _a4  Hondo mentoring2101d
+	// 2021-01-17  6003  _a3  Hondo mentoring2101c
+	// 2021-01-11  6003  _a2  Hondo mentoring2101b
+	// 2021-01-03  6003  _a1  Hondo mentoring2101a
+	
+	// 2021-01-01  6002       Release Candidate
+	
 	// 2021-01-01  6000       pre major release test build
 	// 2021-01-01  5229  _p8  Grouping Books and Menubar  -  a How To.doc  updated
 	// 2021-01-01  5229  _p7  More shortcuts added for buttons

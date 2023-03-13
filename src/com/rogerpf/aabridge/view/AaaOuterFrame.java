@@ -1852,7 +1852,8 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 
 		if (cmd == "web_ArchiveGoogleDrive") {
 			try {
-				Desktop.getDesktop().browse(new java.net.URI("https://drive.google.com/drive/folders/0B8ErhAQp22E4WjFZTGJwWVVUQ1U"));
+				Desktop.getDesktop().browse(new java.net.URI(
+						"https://drive.google.com/drive/folders/0B8ErhAQp22E4WjFZTGJwWVVUQ1U?resourcekey=0-3wVcg0NeRdJ0uvEVb13R3Q&usp=sharing"));
 			} catch (Exception ev) {
 			}
 			return;
@@ -2128,6 +2129,9 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 					}
 
 					int from = s.toLowerCase().indexOf("http://");
+					if (from == -1) {
+						from = s.toLowerCase().indexOf("https://");
+					}
 					int to = s.indexOf('\n', from);
 					if (to > 0 && (s.charAt(to - 1) == '\r')) {
 						to--;

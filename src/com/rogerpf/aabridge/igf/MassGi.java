@@ -2420,10 +2420,14 @@ public class MassGi {
 		// we are going to make the first letter of the list the you seat
 		App.deal.changed = true;
 		String s = bb.get(0);
-		if (s.length() > 0)
+		boolean directionValid = (Dir.directionFromChar((s + ' ').charAt(0)) != Dir.Invalid);
+		if (directionValid) {
 			App.deal.setYouSeatHint(s);
-
-		capEnv.pdl_allSeatsVisible = (Dir.directionFromChar((s + ' ').charAt(0)) == Dir.Invalid);
+			capEnv.pdl_allSeatsVisible = false;
+		}
+		else {
+			capEnv.pdl_allSeatsVisible = true;
+		}
 
 		// GraInfo gi = new GraInfo(bb);
 		// System.out.println("gi.index :" + gi.index + " s: " + s + "-");
@@ -3042,6 +3046,8 @@ public class MassGi {
 	 */
 	public void pdl__up(BarBlock bb) { // undo (last) play(s)
 		// =============================================================================
+		if (App.deal.countCardsPlayed() == 0)
+			return; // yes we do nothing if there is nothing to do RPf-2022-02-27
 		App.deal.changed = true;
 		App.deal.undoLastPlays_ignoreTooMany(Aaa.parseIntWithFallback(bb.get(0), 1));
 		App.deal.endedWithClaim = false;

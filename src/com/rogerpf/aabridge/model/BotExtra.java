@@ -234,6 +234,7 @@ public class BotExtra {
 		StringTokenizer st = new StringTokenizer(cond, " ");
 
 		boolean invert = false;
+		boolean incAllTricks = false;
 		try {
 			if (st.hasMoreTokens()) {
 				String typeStr = st.nextToken();
@@ -315,8 +316,10 @@ public class BotExtra {
 					break;
 				}
 
+				case 'i': /* InAnyTrick  (Played in) */
+					incAllTricks = true;
 				case 'p': /* Played */ {
-					if (this.getPositionInTrick() == 0) {
+					if (this.getPositionInTrick() == 0 && incAllTricks == false) {
 						stack.push(false /* ^ invert */); // We are the leader and are about to lead so false this condition
 						return null;
 					}
@@ -332,20 +335,30 @@ public class BotExtra {
 					Hand leader = deal.getCurTrickLeader();
 					int wantedSize = deal.getCurTrickIndex() + 1;
 
-					Cal cardsPlayedToTrickFiltered = new Cal();
+					Cal cardsPlayedFiltered = new Cal();
 
-					for (Hand hr : deal.rota[leader.compass.v]) {
-						if (hr.played.size() != wantedSize) {
-							break; // end of played card in the trick
-						}
-						for (Hand hd : handList) {
-							if (hd == hr) {
-								cardsPlayedToTrickFiltered.add(hd.played.getLast());
+					if (incAllTricks) {
+						for (Hand hr : deal.rota[leader.compass.v]) {
+							for (Hand hd : handList) {
+								if (hd == hr) {
+									cardsPlayedFiltered.add(hd.played.getLast());
+								}
 							}
 						}
 					}
+					else
+						for (Hand hr : deal.rota[leader.compass.v]) {
+							if (hr.played.size() != wantedSize) {
+								break; // end of played card in the trick
+							}
+							for (Hand hd : handList) {
+								if (hd == hr) {
+									cardsPlayedFiltered.add(hd.played.getLast());
+								}
+							}
+						}
 
-					if (cardsPlayedToTrickFiltered.isEmpty()) {
+					if (cardsPlayedFiltered.isEmpty()) {
 						stack.push(false ^ invert); // no player / hand / position match
 						return null;
 					}
@@ -381,7 +394,7 @@ public class BotExtra {
 							}
 						}
 
-						for (Card card : cardsPlayedToTrickFiltered) {
+						for (Card card : cardsPlayedFiltered) {
 							if (suit == card.suit && (rank == null || rank == card.rank)) {
 								matched = true;
 								break;

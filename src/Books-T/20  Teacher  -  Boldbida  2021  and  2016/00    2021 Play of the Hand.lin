@@ -1,0 +1,1725 @@
+%%   Euvid_2021-05-11.lin    last edited   2021-03-28
+
+%% Define fonts and colors
+
+fh|s28|   %%    s- =>  s-small
+fh|m34|   %%    m- =>  m-medium
+fh|b40|   %%    b- =>  b-big
+fh|vb80|   %%   vb- =>  vb-very_big
+
+cr|t064|cg|t255|cb|t255|   %%    t-  =>  t-turquoise
+cr|d000|cg|d000|cb|d139|   %%    d-  =>  d-darkblue
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title page %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+bt||            %% use bare table  (NOT st standard table)
+fp|b-big|       %% pick font #b- (defined above)
+cp|d-darkblue|  %% pick color for text
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^-Elements of Declarer`s Play (mostly suit contracts)  
+Boldbida (Fred Nlobe) mentoring for BIL members^^
+Spring 2021 ^-|  %% ^-  (in pairs) means  central vertical position
+fp|s-small|     %% use small default font
+
+ht|x|at|^bMany thanks to Roger Pfister for helping with the script and Sue (nasusX) for her editiorial work. |
+ht|z|at|^bMoviemaker: dorotaa (MM) |  %% horizontal zone=z;
+pg| ***** 0 ***** |
+
+
+nt||
+bv|f,v|  % 1st  button visible
+bv|c,v|  % Continue button visible
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Intro %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fp|m-medium|ht|f|at|^c@2
+There is one no-trump and seventeen suit contracts presented in this movie. In all of the deals you are the declarer and you join the table after the opening lead has been made. 
+
+Each deal is analysed using STOP procedure:
+S: Stop to consider your goal
+T: Tally your losers
+O: Organize your plan 
+P: Put your plan into action
+
+
+At any time you can declare a deal that you will be watching by pressing the '1st' or 'Cont' buttons in the lower right section of the screen. The buttons will become available once you watch the deal.  |
+pg| ***** 1 ***** |
+
+
+nt||
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 1 - a NT contract ^-|  %% ^-  (in pairs) means  central vertical position
+pg| ***** 2 ***** |
+
+
+nt||
+st||
+qx|1|pn|South, West, North, East|
+rh||ah|Board 1 |
+md|3sA8hKJ32d742cKQJ2,sQJT743hT86d5c974,sK2hQ4dAQJ98cA653,s965hA975DKT63cT8|
+sv||sk|s|
+mb|1d|mb|p|mb|1h|mb|p|mb|2c|mb|p|mb|3N|mb|ppp|
+pc|sQ|
+at|^b@2 
+STOP
+In a 3NT contract you can afford to lose 4 tricks.|
+pg| ***** 3 ***** |
+
+
+nt||
+at|^b@2
+TALLY
+The declarer has 7 sure tricks: 2@s+0@h+1@d+4@c and needs 2 more to make the contract.|
+pg| ***** 4 ***** |
+
+
+nt||
+at|^b@2
+ORGANIZE
+It is very tempting to start out with a finesse in diamonds. This will fail and the opponents will knock out your last stopper in the spade suit and when the diamonds don't split, you are down a bunch! However, it does not take any special wizardry to realize that if you just knock out the Ace of hearts, you will promote two heart tricks and make your contract, without having to resort to any finesse in diamonds!!!
+Only if promotion won't "do the trick" so to say, should you look at a finesse or suit development.|
+pg| ***** 5 ***** |
+
+
+nt||
+at|^b@2
+PUT THE PLAN INTO ACTION
+- Win the first trick.
+- Knock out the @hA.
+- Once you gain back the lead collect your remaining 7 tricks.|
+pg| ***** 6 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to the next deal. |
+pg| ***** 7 ***** |
+
+
+nt||
+
+%%%%%%%%%%%%%%%%%%%%%% MASTER HAND %%%%%%%%%%%%%%%%%
+bt||
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- All remaining boards are suit contracts^-|  %% ^-  (in pairs) means  central vertical position
+pg| ***** 8 ***** |
+
+
+nt||
+
+
+%%%%%%%%%%%%%%%%%%%%%% MASTER HAND %%%%%%%%%%%%%%%%%
+bt||
+nt||
+fp|b-big|       %% pick font #b- (defined above)
+ht|b|           %% place text in horizontal zone m (top of the page)
+cs|Mu|
+at| ^- {Master Hand and Counting Losers}^-| 
+fp|m-medium|
+ht|e|
+at|^b@2
+
+I would like to spend some time explaining what a Master Hand is and why it is important when declaring a bridge hand in a suit contract.^^
+In order to always try and maintain 'control' of the trump suit, one of the two hands -  declarer's or dummy, must initially be designated as the MASTER. It is not always the stronger or the declarer's hand. This, among other things, is the hand 
+- whose trump length you do not wilfully shorten unless you have a very good reason for doing so, and
+- whose looser count matters.^^
+In effect, after you have eliminated all possible losers from this Master hand, the rest of its cards become winners. In bridge terms, the hand 'reads'!^^
+The hand that is opposite to the Master Hand is referred to as the Supporting Hand.
+
+A loser is any card in the master hand that is not a sure winner and that can not be 'covered' by a high card in the supporting hand.
+
+Here are two examples where the choice of the Master hand may seem counterintuitive.
+|
+pg| ***** 9 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 2^^
+Selecting Master Hand - 1 ^-|  %% ^-  (in pairs) means  central vertical position
+pg| ***** 10 ***** |
+
+
+nt||
+st||
+qx|2|pn|South, West, North, East|
+rh||ah|Board 2 |
+md|1sK83hQ3dAJ42cAJ54,sA6h7652dKQT7cQT8,sQJT97hA84d853c32,s542hKJT9d96cK976|
+sv||sk|s|
+mb|1N|mb|p|mb|2h|mb|p|mb|2s|mb|ppp|
+pc|dK|
+nt||
+at|^b@2
+STOP
+Being in 2@s contract you can afford to lose 5 tricks.^^|
+pg| ***** 11 ***** |
+
+
+nt||
+at|^b@2
+TALLY
+Taking North as a Master hand (dummy hand has more trumps and becomes a Master hand) there are 6 losers:1@s + 2@h + 2@d + 1@c. 
+We need to eliminate one loser to make the contract.|
+pg| ***** 12 ***** |
+
+
+nt||
+at|^b@2
+ORGANIZE
+A heart ruff in hand would eliminate one loser.
+And so, thanks to opponents' failure to lead trumps at trick 1, that is her chosen approach.|
+pg| ***** 13 ***** |
+
+
+nt||
+at|^b@2
+PUT THE PLAN INTO ACTION
+Winning the Ace of diamonds in hand, she leads the Q of hearts and runs it (merely as a formality and an entry saving duck). Later, you will encounter many examples where this ducking play is very important in creating an extra entry to the hand, whose losers you would like to ruff. It is now too late for opponents to stop her from carrying on her plan. Best bet is to lead a trump won by West and back with another trump. But declarer still has a trump left in hand with which to ruff the heart loser.|
+PG| ***** 14 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to the next deal. |
+pg| ***** 15 ***** |
+
+
+nt||
+bt||
+at|^b@2
+This is a hand that many intermediate (and even Advanced) level players would struggle with. Not really knowing how to proceed and what to do and when to do it. And all because they are trained to look at making the hand from the perspective of their 'strong hand' and not dummy's.^^
+
+When trying to decide the 'Master hand', an 'acid test' is to count losers in each hand. The hand with fewer losers should be the Master hand. 
+
+From the North perspective her losers are: 1@s + 2@h +2@d + 1@c = 6 losers
+
+From the South perspective her losers are: 1@s + 1@h +3@d + 3@c = 8 losers
+
+Even though South is the 'BIG HAND', the North hand is the MASTER HAND. This, in essence, is the quintessential meaning of the term "MASTER HAND" - the hand that has fewer losers to eliminate and therefore should be easier to play is the BOSS hand!^^
+Think about this next time that you open 1NT and you end up playing in a heart or spade contract after partner has made a transfer bid into that major suit.^^
+
+At all times with (5-3), (6-3) or (5-4) trump split the hand with longer trumps should be chosen as the Master Hand.
+
+With (4-4) or (5-5) trump split either hand can be the Master hand. This is an advantage that these trump splits enjoy over other splits and because of this, a good declarer is often able to generate an additional trick (or two) when playing in a 4-4 fit versus a 5-3 fit.
+
+In order to choose the Master Hand when trump split evenly, one must consider a number of factors. But first, if the opponents' lead forces declarer to ruff in one or the other hand, then that hand automatically becomes the Support hand and the other hand still with four trumps intact, becomes the Master hand. Otherwise the other factors to consider are:
+
+- loser count from both sides
+- the length of side suits,
+- trump quality,
+- and entries.|
+pg| ***** 16 ***** |
+
+
+st||
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 3^^
+Selecting Master Hand - 2   ^-|  %% ^-  (in pairs) means  central vertical position
+pg| ***** 17 ***** |
+
+
+nt||
+st||
+qx|3|pn|South, West, North, East|
+rh||ah|Board 4 |
+md|1sAQJhK654d53cKJ97,sT984h872dJT7cT65,sK72hAQJTdK9862c4,s653h93dAQ4cAQ832|
+sv||sk|s|
+mb|1c|mb|p|mb|1d|mb|p|mb|1h|mb|p|mb|4h|mb|ppp|
+pc|sT|
+nt||
+at|^b@2
+STOP
+Being in a 4@h contract you can afford to lose 3 tricks.|
+pg| ***** 18 ***** |
+
+
+nt||
+at|^b@2
+SELECTION OF THE MASTER HAND
+It may seem like the intuitive thing to make dummy the support hand in view of the fact that it has a singleton club. However this would be a mistake. In trying to ruff out the club suit, declarer can easily lose control of the hand even with as 'robust' a trump suit as they have. Even though the loser count from each side is tied at 6, North should be the Master Hand based on two factors:
+- the length of the side suit, (5 versus 4) and
+- the quality of the trump suit.|
+pg| ***** 19 ***** |
+
+
+NT||
+at|^b@2
+TALLY
+With North as the MH there are six losers: 0@s + 0@h + 5@d + 1@c. We need to eliminate three to make the contract.^^ |
+pg| ***** 20 ***** |
+
+
+nt||
+at|^b@2
+ORGANIZE
+With 6 losers, three must be eliminated. The diamond suit meets the pre-condition for ruffing losers in the support hand. Hence that should be the play.|
+pg| ***** 21 ***** |
+
+
+nt||
+at|^b@2
+PUT THE PLAN INTO ACTION
+Win the spade in declarer's hand; Duck a diamond; Win the expected trump return and duck another diamond. Win the expected trump return in dummy.
+Lead a diamond and ruff low in declarer's hand, whether East follows or not.
+If diamonds don't split, lead a spade to dummy's K and lead a fourth round of diamonds ruffing with the K of trumps.
+Making 4 or going down depends on whether diamonds split or whomever has 4 diamonds also has 3 trumps.|
+PG| ***** 22 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to the next deal. |
+pg| ***** 23 ***** |
+
+
+%%%%%%%%%%%%%%%%%% Declarers techniques %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+bt||
+nt||
+fp|b-big|       %% pick font #b- (defined above)
+ht|b|           %% place text in horizontal zone m (top of the page)
+cs|Mu|
+at| ^- {Play Selection as Declarer in a Suit Contract} ^-| 
+fp||
+ht|e|
+at|^b@2
+It is more difficult to select your order of play in a suit contract than it is at notrump. The reason is that there are usually more ways to win tricks (and also to lose them!)
+In no trump, you can win tricks only with high cards or long cards, so the contracts are hard to fulfill but easy to plan.
+In suits, you can win extra tricks by trumping, so contracts are easier to make; but there are more decisions to be made before you come up with the correct line of attack.
+
+Roughly, there are four methods of playing suit contracts.
+Each one has its own problems and techniques, and we will examine them individually. 
+1. Ruff losers with dummy's trumps
+2. Establish a long side suit in your hand or dummy
+3. Win the honors which are nearly high
+4. Win small trumps in your own hand by ruffing.
+
+The single most important quality of a good declarer is that she knows which of these four campaigns she is embarked on.
+If she keeps her eye on the method she has selected for producing extra tricks, she is likely to make her contract.
+
+But if she adopts a common fifth approach, much favored by some of your partners-
+5. Try a little of each, and hope for the best. 
+She will probably go down..
+|
+pg| ***** 24 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 4A %%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 4^^^-|
+fp|b|
+at|^- Five different lines of play will be presented for this hand - four of them correct and one incorrect.^- |
+pg| ***** 25 ***** |
+
+
+nt||
+st||
+qx|4A|pn|South,West,North,East|
+rh||ah|Board 4A |
+md|1sAK876h2dAQcAQ852,sQJThKJ97dK42cT94,s953hA853dJT753c6,s42hQT64d986cKJ73|
+sv|n|sk|s|
+mb|1s|mb|p|mb|2s|mb|p|mb|4s|mb|ppp|
+pc|sQ|
+at|^b@2 
+STOP
+Being in 4@s contract you can afford to lose 3 tricks.|
+pg| ***** 26 ***** |
+
+
+nt||
+at|^b@2 
+TALLY
+Taking South as Master hand we have 6 losers: 4@c+1@d+0@h+1@s (assuming 3:2 trump split) and we must eliminate three.|
+pg| ***** 27 ***** |
+
+
+nt||
+at|^b@2
+ORGANIZE
+There are four lines of play available here, namely:
+- trumping in dummy
+- setting up a long suit
+- finessing
+- trumping in your hand^^|
+pg| ***** 28 ***** |
+
+
+nt||
+at|^b@2
+On this hand all four approaches work and we are going to look at them one by one.
+I do not propose to analyze which of these four lines of attack is the best, at least not yet!
+What I want you to realize is that you must adopt one of them, and YOU MUST KNOW WHICH ONE IT IS! Do not adopt a common fifth approach: Try a little of everything and hope for the best. ^^|
+pg| ***** 29 ***** |
+
+
+ 
+nt||
+at|^b@2
+ORGANIZE - 1st APPROACH  - TRUMPING IN DUMMY^^|
+pg| ***** 30 ***** |
+
+
+at|When we say trumping in dummy, we mean just that. 
+Ruffing our losers in dummy!
+Any ruffing back to our hand, should only be made as an entry in order to ruff some more losers in dummy, since we generate no additional tricks when we do so!|
+pg| ***** 31 ***** |
+
+
+nt||
+at|^b@2
+Since West has made a trump lead, that limits us to only two ruffs in dummy. There are 7 clubs missing and we expect these to split 4-3 more often than not. Hence if we can ruff two clubs in dummy, then we shall develop a length trick in clubs after giving up a trick. This should do the trick, since we shall now only have one loser in the club suit.^^|
+pg| ***** 32 ***** |
+
+
+at|Any precaution to be aware of? Yes!
+Since we have to give the lead to the opponents at least once towards the end of the hand, we cannot afford to risk losing control of the trump suit. Therefore we must be careful how we use the small trumps in our hand to create entries in order to ruff more clubs.
+|
+pg| ***** 33 ***** |
+
+
+nt||
+at|^b@2
+PUT THE PLAN INTO ACTION
+- Win the spade K
+- Cash the club ace and ruff a club.
+- Cash the @hA and come back to your hand by ruffing a heart, and ruff another club
+- Now, if all goes well, you can come to your hand again with a high diamond, and lay down the Ace of spades.
+- If the K of clubs has not dropped, you can concede a trick to it, and lose one trump, one club and one diamond. Making!|
+pg| ***** 34 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to see some additional comments and later move to the second playing technique for this hand. |
+pg| ***** 35 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% Additional comments %%%%%%%%%%%%%%%%%%%%%%
+bt||
+nt||
+fp|b-big|       %% pick font #b- (defined above)
+ht|c|           %% place text in horizontal zone m (top of the page)
+at|^- Additional comments to this line of play ^-|
+pg| ***** 36 ***** |
+
+
+fp||
+ht|f|
+at|^b@2
+- If we had ruffed the second heart in order to get to our hand and ruff another club, again we would be mixing the Ruffing line of play with the cross ruffing one.^^
+- Let's see what would happen if you tried the diamond finesse? It would lose to West who would immediately lead a trump. Now you won't be able to ruff another club. Down 1!!^^
+- If you ruffed a heart in your hand in order to ruff another club in dummy, then eventually when you gave up a club in order to establish your other club, East would simply win the club and lead diamonds! Again you are dead! Down 1!!^^^^
+|
+
+fp|b|
+at|
+^-A bit of this and a bit of that doesn't work!^-|
+pg| ***** 37 ***** |
+
+
+st||
+nt||
+qx|4B|pn|South,West,North,East|
+rh||ah|Board 4B |
+md|1sAK876h2dAQcAQ852,sQJThKJ97dK42cT94,s953hA853dJT753c6,s42hQT64d986cKJ73|
+sv|n|sk|s|
+mb|1s|mb|p|mb|2s|mb|p|mb|4s|mb|ppp|
+pc|sQ|
+nt||
+at|^b@2
+ORGANIZE - 2nd APPROACH  - SETTING UP A LONG SUIT^^|
+pg| ***** 38 ***** |
+
+
+at|In the previous line of play, you combined trumping in the dummy with establishing your long clubs.
+Instead, you could work on dummy's diamonds.!|
+pg| ***** 39 ***** |
+
+
+nt||
+at|^b@2
+PUT THE PLAN INTO ACTION^^|
+pg| ***** 40 ***** |
+
+
+at|- Win the spade king and cash the Ace.
+- Using the simple but always reliable technique of promotion, play the Ace and Q of diamonds, conceding the K.
+- Now you can go to dummy's heart Ace and run the diamond suit, discarding your low clubs.
+- This way you lose one spade and one diamond. Making  without having to take the club or diamond finesses!|
+pg| ***** 41 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to the third playing technique for this hand. |
+pg| ***** 42 ***** |
+
+
+nt||
+
+qx|4C|pn|South,West,North,East|
+rh||ah|Board 4C |
+md|1sAK876h2dAQcAQ852,sQJThKJ97dK42cT94,s953hA853dJT753c6,s42hQT64d986cKJ73|
+sv|n|sk|s|
+mb|1s|mb|p|mb|2s|mb|p|mb|4s|mb|ppp|
+pc|sQ|
+at|^b@2
+ORGANIZE - 3rd APPPROACH  - FINESSING^^|
+pg| ***** 43 ***** |
+
+
+at|Nothing can be gained by finessing in the diamond suit. Even if the finesses worked, only one loser would be eliminated and we would still have to look after out club losers. 
+
+If the finesse failed, surely the opponents would return another trump and wipe out any chance to ruff more that one club in dummy. You have to finesse @cQ instead.|
+pg| ***** 44 ***** |
+
+
+NT||
+at|^b@2
+PUT THE PLAN INTO ACTION^^|
+pg| ***** 45 ***** |
+
+
+at|- Win the spade K, and lead to dummy's heart Ace.
+- Play a club and finesse your Queen.
+- If it holds, ruff a low club in dummy and lead a diamond towards your Q.
+- If lucky, you may lose only one trump trick and make 12 tricks.
+|
+pg| ***** 46 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to the fourth playing technique for this hand. |
+pg| ***** 47 ***** |
+
+
+nt||
+qx|4D|pn|South,West,North,East|
+rh||ah|Board 4D |
+md|1sAK876h2dAQcAQ852,sQJThKJ97dK42cT94,s953hA853dJT753c6,s42hQT64d986cKJ73|
+sv|n|sk|s|
+mb|1s|mb|p|mb|2s|mb|p|mb|4s|mb|ppp|
+pc|sQ|
+
+at|^b@2
+ORGANIZE - 4th APPPROACH  - TRUMPING IN YOUR HAND^^|
+pg| ***** 48 ***** |
+
+
+at|^b@2Trumping in your own hand is usually ill-advised, as I have recently pointed out to you. The first three plans for playing suit contracts that we have just examined are by far the most common; one of them should be employed in close to 90% of all deals.
+However, there is a rare fourth approach
+- producing extra trumps by ruffing repeatedly in your own hand.
+It should only be used as an advanced technique if you understand it well and know what you are doing!|
+PG| ***** 49 ***** |
+
+
+nt||
+
+at|^b@2
+Explaining it within the context of this hand:
+After the trump opening lead, declarer stands to win 4 trump tricks in her own hand plus another 2 in dummy by ruffing clubs - for a total of 6, at most. However, if she can use the small trumps in her own hand to ruff the hearts then her tally of tricks will be 7. Together with her Aces in the other 3 suits, she would now have 10 tricks!
+Note that this is NOT a cross ruff operation because here the emphasis is on ruffing hearts, with the club ruffs simply being used as an incidental entry to dummy in order to ruff more hearts!|
+pg| ***** 50 ***** |
+
+
+nt||
+
+at|^b@2
+PUT THE PLAN INTO ACTION^^|
+pg| ***** 51 ***** |
+
+
+at|Win the spade K, lead to dummy's Ace and ruff a heart.
+Cash the Ace of clubs and ruff a club in dummy.
+Ruff another heart. 
+Ruff another club.
+Ruff the last heart.
+If no one overruffs at any stage, you have won 8 tricks, and can cash the Aces of diamonds and spades for 10.|
+pg| ***** 52 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to see how NOT to play this hand. |
+pg| ***** 53 ***** |
+
+
+nt||
+qx|4E|pn|South,West,North,East|
+rh||ah|Board 4E |
+md|1sAK876h2dAQcAQ852,sQJThKJ97dK42cT94,s953hA853dJT753c6,s42hQT64d986cKJ73|
+sv|n|sk|s|
+mb|1s|mb|p|mb|2s|mb|p|mb|4s|mb|ppp|
+pc|sQ|
+ht|k|
+at|^-@2 WHAT ACTUALLY HAPPENED  ^-|
+pg| ***** 54 ***** |
+
+
+nt||
+at|^b@2
+Note that all the four lines of play we have tried, work.
+However, the actual South declarer tried the fifth approach. You all remember what that is?
+Try a little of each and hope for the best!
+|
+pg| ***** 55 ***** |
+
+
+pc|s3s2sK|
+pg| ***** 56 ***** |
+
+
+pc|h2h7hAh4|
+pg| ***** 57 ***** |
+
+
+pc|h3h4s6h7|
+pg| ***** 58 ***** |
+
+
+pc|cAc4c6c3|
+pg| ***** 59 ***** |
+
+
+pc|c2c9s5c7|
+pg| ***** 60 ***** |
+
+
+pc|d3d6dQdK|
+pg| ***** 61 ***** |
+
+
+pc|sTs5s4sA|
+pg| ***** 62 ***** |
+
+
+pc|h2h7hAh4|
+pg| ***** 63 ***** |
+
+
+md|8|
+pg| ***** 64 ***** |
+
+
+%%%%%%%%%%%%%%%%%% Using dummy's shortness %%%%%%%%%%%%%%%%%%%%%%
+bt||
+nt||
+fp|b-big|       %% pick font #b- (defined above)
+ht|b|           %% place text in horizontal zone m (top of the page)
+cs|Mu|
+at| ^- {Using dummy's shortness - ruffing in dummy} ^-| 
+fp|m|
+ht|e|
+at|^b@2
+Let's quickly review what we saw.
+As already emphasized, usually, the greater trump length will be in declarer's hand. Thus, every ruff in dummy represents an extra winner, for declarer's own length is maintained.
+You can go through four simple steps when planning to get rid of losers in your hand by trumping them in dummy:
+1. Recognize the hand patterns where the opportunity exists.
+2. The trumps in dummy have to be carefully handled.
+3. You need to be aware that you might have to play the suit more than once, perhaps giving up the lead while doing it.
+4. Do you have to arrange transport, or entries, to anable your plan of action?
+
+Whenever there is a side suit in which your own hand is longer than dummy, you should consider this plan. This is obvious when you hold a real two suiter.
+
+In the next four boards we will be using the 'ruffing in dummy' technique. |
+pg| ***** 65 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 5A %%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 5A ^-|  %% ^-  (in pairs) means  central vertical position
+pg| ***** 66 ***** |
+
+
+nt||
+st||
+qx|5A|pn|South, West, North, East|
+rh||ah|Board 5A |
+md|1sAKQ96hAK742d5c83,s84hJT63dKQJT7cQ2,sJT5h85dA642cJ94,s732hQ9d983cAKT76|
+sv||sk|s|
+mb|1s|mb|p|mb|2s|mb|p|mb|4s|mb|ppp|
+pc|Dk|
+nt||at|^b@2
+STOP
+Being in a 4@s contract you can afford to lose 3 tricks.|
+pg| ***** 67 ***** |
+
+
+nt||
+at|^b@2
+TALLY
+Taking South as the Master hand we have 5 losers: @s(0)+@h(3)+@d(0)+@c(2) and we need to eliminate two.^^|
+pg| ***** 68 ***** |
+
+
+nt||
+at|^b@2
+ORGANIZE 
+Clearly you should make use of the fact your hearts are longer than dummy's. Not only will you win tricks with two of dummy's trumps by ruffing (in addition to your five), but in the process you will establish your fifth heart.^^|
+pg| ***** 69 ***** |
+
+
+nt||
+at|^b@2
+PUT THE PLAN INTO ACTION
+You win the lead, cash the Ace and K of hearts, and ruff a low heart with dummy's spade 10.
+If the hearts have not split evenly, return to your hand with a high trump and ruff the fourth round of hearts with the J.
+Almost surely, you will make an overtrick.|
+pg| ***** 70 ***** |
+
+
+nt||at|^b@2
+Two precautions were necessary:
+1. Do not draw trumps immediately as dummy needs trump length for this plan to work
+2. Trump the third round of hearts with an honor in dummy to protect against an over ruff.|
+pg| ***** 71 ***** |
+
+
+nt||
+at|^b@2
+Actually, a very cautious declarer would take a third precaution in case the enemy hearts were split 5-1. 
+The next deal is a variation of this one with opponents' hearts splitting 5-1.|
+pg| ***** 72 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to go to the second variation of this hand. |
+pg| ***** 73 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 5B %%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|vb-very_big|       %% pick font #vb- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 5B ^-|  %% ^-  (in pairs) means  central vertical position
+pg| ***** 74 ***** |
+
+
+nt||
+st||
+nt||
+qx|5B|pn|South, West, North, East|
+rh||ah|Board 5B |
+md|1sAKQ96hAK742d5c83,s84hQJT63dKQJT7c2,sJT5h85dA642cJ94,s732h9d983cAKQT76|
+sv||sk|s|
+mb|1s|mb|p|mb|2s|mb|p|mb|4s|mb|ppp|
+pc|Dk|
+nt||at|^b@2
+This deal is very similar to the previous one. The North-South hands are identical to the previous deal. Hearts and clubs in opponents hands are distributed differently.^^
+Play and see if you can adjust your plan in anticipation of the 5:1 heart split.|
+pg| ***** 75 ***** |
+
+
+nt||
+at|^b@2 
+You should cash only one heart honor and then lead a low heart, conceding a trick.
+Now are able to ruff her remaining low hearts in dummy.|
+pg| ***** 76 ***** |
+
+
+nt||
+at|^b@2 
+In this simple hand we saw 3 of the requirements associated with ruffing, namely:
+1. Leaving enough trumps in dummy
+2. Protecting, if possible, against over ruffs
+3. Protecting, if possible, against having your honors ruffed.|
+pg| ***** 77 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to go to the next hand. |
+pg| ***** 78 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 6 ^-|  %% ^-  (in pairs) means  central vertical position
+pg| ***** 79 ***** |
+
+
+nt||
+st||
+qx|6|pn|South,West,North,East|
+rh||ah|Board 6 |
+md|1sKQJ96hA862d54cAK,s43h54dKQJ97vQ963,sT75hK73dA2c87542,sA82hQJT9dT863cJT|
+sv|e|sk|s|
+mb|1s|mb|p|mb|2s|mb|p|mb|4s|mb|ppp|
+pc|dK|
+at|^b@2
+STOP
+We are in 4@s and can afford to lose three tricks.|
+pg| ***** 80 ***** |
+
+
+nt||at|^b@2
+TALLY
+Taking South as Master hand we have 4 losers: 0@c+1@d+2@h+1@s and we must eliminate one.^^|
+pg| ***** 81 ***** |
+
+
+NT||
+at|^b@2
+ORGANIZE
+The average declarer draws trumps, and complains about her bad luck when the hearts split 4-2 and she goes down!
+A slightly more sophisticated declarer might give herself the extra chance of setting up dummy's club suit.
+But after reading and perhaps rereading the transcript of this session, you, I trust, will realize that the contract can be made easily by ruffing a heart in dummy.
+But how??|
+pg| ***** 82 ***** |
+
+
+nt||
+at|^b@2
+PUT THE PLAN INTO ACTION
+Win the lead, cash the Ace and K of hearts, and give up a heart trick.
+Now if the hearts have not split, you can ruff the fourth heart with dummy's spades 10.^^|
+pg| ***** 83 ***** |
+
+
+NT||
+at|^b@2
+Observe that it is not necessary to have a very short side suit in dummy, or a very long one in your hand in order to adopt this plan. All you need is GREATER length in your own hand than in dummy.
+Once you look for this, the correct approach becomes obvious. All you need to do is to play hearts till you can ruff, and be sure to leave a trump in dummy to ruff with.|
+pg| ***** 84 ***** |
+
+
+nt||
+at|^b@2
+A precaution to note that was necessary when playing this hand, is for declarer not to draw EVEN one round of trumps, before clearing the hearts.
+If she did otherwise, the opponents might win the Ace and play a second round of trumps. Later when they win their heart trick, they may be nasty enough to play a third round of trumps - and there goes your ruff!!|
+pg| ***** 85 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to go to the next hand. |
+pg| ***** 86 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 7 ^-|  %% ^-  (in pairs) means  central vertical position
+pg| ***** 87 ***** |
+
+
+nt||
+st||
+qx|7|pn|South,West,North,East|
+rh||ah|Board 7 |
+md|1sKJT82hAK54dT3cA2,s765hQJT3dKQJc964,sQ94h972dA87c8753,sA3h86d96542cKQJT|
+mb|1s|mb|p|mb|2s|mb|p|mb|3s|mb|ppp|
+pc|dK|
+at|^b@2
+STOP
+We are in 3@s contract and can allow 4 losers.|
+pg| ***** 88 ***** |
+
+
+nt||
+at|^b@2
+TALLY
+Taking South as Master hand we have 5 losers: 1@c+1@d+2@h+1@s and we must eliminate one.^^|
+pg| ***** 89 ***** |
+
+
+nt||
+at|^b@2
+ORGANIZE
+To make 3 spades, declarer must hold her heart losers to just 1.
+If the suit breaks 3-3, you can win a trick with the 4th heart in your hand; but you can also survive a 4-2 break by trumping the fourth round with a high trump in dummy.|
+PG| ***** 90 ***** |
+
+
+NT||
+at|^b@2
+PUT THE PLAN INTO ACTION
+Win the first trick with the Ace of diamonds, cash the Ace of clubs and the A and K of hearts.
+Lead a third round of hearts before touching trumps (even one round of trumps could be fatal; the opponents might be able to eliminate all of dummy's trumps before you can ruff a heart).
+When you regain the lead, you will lead the 4th heart in dummy with the 9 or Q of spades.
+The contract is safe unless one of your top tricks is ruffed.|
+pg| ***** 91 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to go to the next hand. |
+pg| ***** 92 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 8 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 8 ^-|  %% ^-  (in pairs) means  central vertical position
+pg| ***** 93 ***** |
+
+
+nt||
+st||
+qx|8|pn|South,West,North,East|
+rh||ah|Board 8 |
+md|1sAK865hAK54dT3cA2,sQT9hQJT3dKQJc964,s743h972dA87c8753,sJ2h86d96542cKQJT|
+mb|1s|mb|p|mb|2s|mb|p|mb|3s|mb|ppp|
+pc|dK|
+at|^b@2
+STOP
+Being in 3 spades, you can only afford to lose four tricks.
+|
+pg| ***** 94 ***** |
+
+
+nt||
+at|^b@2
+TALLY
+Taking South as master hand there are 5 losers: 1 in @s +2 in @h +1 in @d + 1 in @c and need to eliminate one.|
+pg| ***** 95 ***** |
+
+
+nt||
+at|^b@2
+ORGANIZE
+Let's assume that spades divide 3-2 (otherwise the contract is hopeless).
+To make 3 spades, declarer must hold her heart losers to just one, even if the suit splits 4-2, by ruffing the fourth round of hearts in dummy. Again, if the suit breaks 3-3, you can win a trick with the 4th heart in your hand; but you can also survive a 4-2 break by playing carefully.|
+pg| ***** 96 ***** |
+
+
+nt||
+at|^b@2
+PUT THE PLAN INTO ACTION
+Win the first trick with the Ace of diamonds, cash one high spade (although this play is optional), and give up a heart to the enemy;
+DO NOT PLAY the Ace or King of hearts!!|
+pg| ***** 97 ***** |
+
+
+nt||
+at|^b@2
+When you regain the lead, cash the remaining high spade, then the Ace and K of hearts.
+If the hearts split 3-3, you are home free!
+If they don't, ruff your losing heart with dummy's remaining trump.
+Whomever has the outstanding high trump can over ruff you but will just be using up their good trick on your loser!!|
+pg| ***** 98 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to go to the next hand. |
+pg| ***** 99 ***** |
+
+
+%%%%%%%%%%%%%%%%%% Using dummy's length %%%%%%%%%%%%%%%%%%%%%%
+bt||
+nt||
+fp|b-big|       %% pick font #b- (defined above)
+ht|b|           %% place text in horizontal zone m (top of the page)
+cs|Mu|
+at| ^- {Using dummy's length} ^-| 
+fp|m|
+ht|e|
+at|^b@2
+We now turn our attention to PLAN TWO - USING DUMMY'S LENGTH.
+
+In most lines of play, declarer takes advantage of the distribution of dummy.
+We have seen her making use of a side suit in which dummy has fewer cards than she has, by ruffing her losers with dummy's trumps.
+
+Just as easily, she may use a suit in which dummy has more cards than her own hand
+- here, to discard losers instead of ruffing them.
+Of course, such a suit must have either extra honors which will be high when declarer has no cards remaining, or great length (usually 5 cards or more) so that the little cards can be established.|
+pg| ***** 100 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 9 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 9 ^-|  %% ^-  (in pairs) means  central vertical position
+pg| ***** 101 ***** |
+
+
+nt||
+st||
+qx|9|pn|South,West,North,East|
+rh||ah|Board 9 |
+md|1sT8643h84dAK65cA2,sJ5hKT52dJ742cKJ3,sAKQhQJ73d3cT9864,s972hA96dQT98cQ75|
+sv|n|sk|s|
+mb|1s|mb|p|mb|2c|mb|p|mb|2d|mb|p|mb|3s|mb|p|mb|4s|mb|ppp|
+pc|h2|
+nt||
+at|^b@2
+STOP
+Being in 4@s contract you can afford to lose 3 tricks.|
+pg| ***** 102 ***** |
+
+
+nt||
+at|^b@2
+TALLY
+Taking South as the Master hand we have 7 losers: 2 in @s + 2 in @h + 2 in @d  + 1 in @c so she needs to eliminate four. 
+In order to have any chance to make the hand, the trumps must be split 3-2, thus reducing your loser count to 5.|
+pg| ***** 103 ***** |
+
+
+nt||
+at|^b@2
+ORGANIZE 
+Dummy's J loses to East's Ace on your right and a spades is returned.
+Dummy's shortness in diamonds is of no use since you cannot afford to ruff with dummy's trump honors. Dummy's length though, may produce the extra winners you need. You might obtain a discard by leading towards the Q of hearts. However this is not a good line of attack, since, with 5 losers, you need to find a way to eliminate two and the heart play can only provide one discard. Two discards might be available in clubs though, if the suit breaks favorably.|
+pg| ***** 104 ***** |
+
+
+nt||
+at|^b@2
+PUT THE PLAN INTO ACTION
+Lead to your Ace of clubs and concede the second club.
+If the opponents lead another trump, win in dummy and lead the third round of clubs, ruffing in hand. If the enemy clubs split 3-3dummy's remaining two clubs are good.
+You lead to the last trump and cash them.
+What if the clubs don't split? Then you go down, but at least you tried.|
+pg| ***** 105 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to go to the next hand. |
+pg| ***** 106 ***** |
+
+
+nt||
+bt||
+fp|b|       %% pick font #b- (defined above)
+ht|c|           %% place text in horizontal zone m (top of the page)
+at| ^- Additional comments to this hand ^-| 
+fp|m|
+ht|e|
+at|^b@2
+In this example you saw both sorts of length in dummy which can be productive:
+- a 5 card or longer holding in which the small cards can be established as in the club suit,
+- or intermediate honors, as in the heart suit, which may provide discards.
+When such length is available, using it will often be your best plan.
+You should think about these hands much as you do about a NT contract.
+How many winners do I have?
+Will this suit provide the extra tricks that I need?
+Then go about establishing the winners, and cashing the tricks
+- usually in that order.
+
+Just as in notrump contracts, you may have to worry about cashing your tricks before the opponents get theirs - it may be a race.
+And many of the methods which help you win the race at notrump are important in suit contracts played according to this plan.|
+pg| ***** 107 ***** |
+
+
+st||
+nt||
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 10 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 10 ^-|  %% ^-  (in pairs) means  central vertical position
+pg| ***** 108 ***** |
+
+
+nt||
+st||
+qx|10|pn|South,West,North,East|
+rh||ah|Board 10|
+rh||ah|klkl|
+md|1s2hAKJ75dA65cA862,sA875hQ42d93cJT75,sKQJThT83dJT42cK9,s9643h96dKQ87cQ43|
+sv||sk|s|
+mb|1h|mb|p|mb|1s|mb|p|mb|2c|mb|p|mb|3h|mb|p|mb|4h|mb|ppp|
+pc|d9|
+at|^b@2
+STOP
+Being in 4@h contract you can afford to lose 3 tricks.|
+pg| ***** 109 ***** |
+
+
+nt||
+at|^b@2
+TALLY
+Taking South as Master hand we have 6 losers: 2@c+2@d+1@h+1@s and need to eliminate three.|
+pg| ***** 110 ***** |
+
+
+nt||
+at|^b@2
+ORGANIZE
+Dummy's shortness in clubs need not to be considered - this will only eliminate 2 losers. However dummy's length in spades will provide the 3 discards that you require, after the suit is set up. The danger is that the enemy will win two diamonds and one spade before you can take your discards and a losing heart finesse sets you. Obviously, from the lead, the K-Q of diamonds are behind dummy. If you play the 10 and win the Q with your Ace, you will likely go down, if the left hand opponent (LHO) has the spade Ace. Then she will lead through dummy's diamond J before you can take your discards.|
+pg| ***** 111 ***** |
+
+
+nt||
+at|^b@2
+PUT THE PLAN INTO ACTION
+The solution is to hold off your diamond Ace.
+Cover the lead with dummy's 10, and let the Q hold to your right. This does not gain a trick directly, as your right hand opponent will not lead from her diamond K. But it gains time. Now you can knock out the spade Ace while retaining control of the dangerous suit. You will win your ten tricks before the opponents take their four.
+|
+PG| ***** 112 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to go to the next hand. |
+pg| ***** 113 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 11 ^-|  %% ^-  (in pairs) means  central vertical position
+pg| ***** 114 ***** |
+
+
+nt||
+st||
+qx|11|pn|South,West,North,East|
+rh||ah|Board 11 |
+md|1sAT986hAJ5dA52cT5,s54hQT72d874cJ873,sKJ2h83dKQJT6cK62,sQ73hK964d32cAQ94|
+sv||sk|s|
+mb|1s|mb|p|mb|2d|mb|p|mb|3d|mb|p|mb|4s|mb|ppp|
+pc|h2|
+at|^b@2
+STOP
+Being in 4@s contract you can afford to lose 3 tricks.|
+pg| ***** 115 ***** |
+
+
+nt||
+at|^b@2
+TALLY
+Taking South as Master hand we have 5 losers: 2@c+0@d+2@h+1@s and need to eliminate two.|
+pg| ***** 116 ***** |
+
+
+nt||
+at|^b@2
+ORGANIZE
+You must reduce your loser count by 2. Dummy's diamonds will provide enough winners on which to discard the losers. You must draw trumps before you can run the diamonds. And if you lose a finesse to the Q of spades while attempting to draw trumps, the enemy may cash 4 tricks - one spade, one heart two clubs - before you can take your discards.
+Here however, this danger only exists if your left hand opponent regains the lead to play through dummy's club K. So you must use 'avoidance' technique to keep the 'danger hand' - the dangerous opponent off the lead.|
+pg| ***** 117 ***** |
+
+
+nt||
+at|^b@2
+When you play trumps, you will lead the 10 and pass it, so that the finesse, if it loses, will lose to East - the safe hand.
+Unfortunately, this likely not be enough, since the dangerous opponent West, might then gain the lead with a high heart.
+How to keep West off the lead? |
+pg| ***** 118 ***** |
+
+
+nt||
+at|^b@2
+PUT THE PLAN INTO ACTION
+You take care of this possibility by holding off on the opening lead, losing the heart trick also to the safe right-hand opponent (RHO).
+Win the second heart with the Ace, and lead your 10 of spades, finessing it if it is not covered.
+This way, you are virtually certain to win your tricks before the enemy can take theirs.^^|
+pg| ***** 119 ***** |
+
+
+nt||
+at|^b@2
+Note, incidentally, that you do not ruff a heart in dummy; this would jeopardize your chances. 
+Your plan is to use dummy's length, not its shortness!
+|
+PG| ***** 120 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to go to the next hand. |
+pg| ***** 121 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 12 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 12 ^-|  %% ^-  (in pairs) means  central vertical position
+pg| ***** 122 ***** |
+
+
+nt||
+st||
+qx|12|pn|South,West,North,East|
+rh||ah|Board 12 |
+md|1sAhAQJ762dA74cAKJ,sK964h93dQJT9cQT2,sQJ7hK84dK653c653,sT7532hT5d82c9874|
+sv||sk|s|
+mb|2c|mb|p|mb|2d|mb|p|mb|2h|mb|p|mb|3h|mb|p|mb|4c|mb|p|mb|4d|mb|p|mb|6h|mb|ppp|
+pc|dQ|
+at|^b@2
+STOP
+Being in 6@h contract you can afford to lose 1 trick.|
+pg| ***** 123 ***** |
+
+
+nt||
+at|^b@2
+TALLY
+Taking South as Master hand we have 2 losers: 1@c+1@d+0@h+0@s.|
+pg| ***** 124 ***** |
+
+
+nt||
+at|^b@2
+ORGANIZE
+You have 2 losers and so need to eliminate 1 in order to make your contract.
+I am sure you can all see that all declarer had to do was to promote a winner from dummy's long spade suit, on which to discard one of her losers - that is right, spades! The only pre-condition required is that the suit has more cards than there are in declarer's hand! Just as we saw with dummy's shortness!! .|
+pg| ***** 125 ***** |
+
+
+nt||
+at|^b@2
+PUT THE PLAN INTO ACTION
+- Win the diamond in hand.
+- Cash your Ace and Q of hearts and your Ace of spades.
+- Lead to dummy's K of hearts.
+- Play the Q of spades and discard your losing diamond, (unless the K covers). Now the J of spades is high in dummy and you can discard your losing club on it!|
+PG| ***** 126 ***** |
+
+
+nt||
+at|^b@2
+Thus by conceding an unnecessary spade trick, you get rid of two losers for the price of one!
+And if the spade K is to your right, you can ruff it out, setting up a discard at no cost whatever.^^
+To make this contract, you need only to realize that you can use dummy's spade 'length' (the spades there are not very long, but they are longer than yours, which is what counts), and take mild precautions to save entries to dummy.|
+pg| ***** 127 ***** |
+
+
+nt||
+at|^b@2
+In the next example, the principle of play is the same but a little harder to see.
+|
+pg| ***** 128 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to go to the next hand. |
+pg| ***** 129 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 13 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 13 ^-|  %% ^-  (in pairs) means  central vertical position
+pg| ***** 130 ***** |
+
+
+nt||
+st||
+qx|13|pn|South,West,North,East|
+rh||ah|Board 13 |
+md|1sAh8764dAKT75cT63,sQ743hQ953d96cAK4,sJT92hAT2dQJ4cJ85,sQ765hKJd832cQ972|
+sv||sk|s|
+mb|1d|mb|p|mb|1s|mb|p|mb|2d|mb|ppp|
+pc|cA|
+pg| ***** 131 ***** |
+
+
+at|^b@2
+STOP
+Being in 2@d contract you can afford to lose 5 tricks.|
+pg| ***** 132 ***** |
+
+
+nt||
+at|^b@2
+TALLY
+Taking South as Master hand we have 6 losers: 3@c+0@d+3@h+0@ and need to eliminate one.|
+pg| ***** 133 ***** |
+
+
+nt||
+at|^b@2
+ORGANIZE
+The opponents are going to cash their three club tricks. If, in trick four they don't switch to trump, you could use dummy's shortness in hearts. You could take the heart Ace and concede two heart tricks; If the suit did not split evenly, you could ruff the fourth round in dummy.|
+pg| ***** 134 ***** |
+
+
+nt||
+at|^b@2
+However, if they switch to trump (and they will) this will no longer work, since the enemy will have led three rounds of trumps by the time you have given up two heart tricks.
+The solution is to use dummy's length in @s.|
+pg| ***** 135 ***** |
+
+
+nt||
+at|^b@2
+PUT THE PLAN INTO ACTION
+Win the trump lead carefully in your hand, saving dummy's honors as entries.
+Cash the spade Ace and lead to the J of diamonds.
+Play the spade J from dummy, and discard a losing heart (unless it is covered - then ruff).
+Go back to dummy with the Q of trumps and lead the spade 10, throwing another heart.
+This way, you will promote a winner in dummy's spade suit on which to discard another heart loser. Making your contract.
+|
+PG| ***** 136 ***** |
+
+
+nt||
+pc|c5|pc|c2|pc|c3|
+pg| ***** 137 ***** |
+
+
+pc|cK|pc|c8|pc|c7|pc|c6|
+pg| ***** 138 ***** |
+
+
+pc|c4|pc|cJ|pc|cQ|pc|cT|
+pg| ***** 139 ***** |
+
+
+pc|2d|
+pg| ***** 140 ***** |
+
+
+cp|Bl|at|^b@2
+MM: DO NOT CLICK ON `1st` button. In order to continue playing this hand click the 'Enter the deal' button, then press 'Flow' button until East leads @d2 (4th trick). Now click the 'Play' button and continue.
+If you click on the `1st` button the play will start at trick one and robots will play it differently than Fred. |
+pg| ***** 141 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Comments %%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|b|
+ht|b|
+at|^b@2 ^- Additional comments^^ ^-|
+fp||
+at|Notice, though, that you must be sure to save three entries to dummy - two to lead spades, and one to get back to cash the trick that you have worked so hard to establish.
+
+Just as entries to your own hand should be your worry when you plan to use dummy's shortness in order to ruff losers, entries to dummy are your constant pre-occupation when you plan to use dummy's length. This is the main reason that these two lines of attack are, as we shall see soon, mutually exclusive - you can sometimes do either, but you can almost never do both at once. Again a little bit of this and a little bit of that, just does not work.
+
+In fact, the number of entries in a hand and how they are located between declarer's and dummy's hand is so important that you should study it carefully and always pay attention to this key factor, when attempting to determine which of the plans you should adopt as declarer: PLAN 1 - ruffing in dummy or PLAN 2 - using dummy's long suit.
+
+Recall when we were looking at examples of ruffing in dummy, I asked you to always be cognizant of the following key factors that determine whether it was feasible to attempt to ruff away declarer's hand losers with dummy's trumps. In order to employ the ruffing technique successfully, it becomes necessary to always take the following into consideration:
+
+1) A pre-condition is that the length of the side suit in declarer's hand that needs to be ruffed must be greater than dummy's by at least one card.
+
+2) Some precautions must also be observed, namely:
+     - taking care to leave enough trumps in dummy
+     - protecting, if possible, against over ruffs and
+     - protecting, if possible, against having your honors ruffed.
+
+3) Another key factor for success is ensuring that you have enough entries to your hand so that you can ruff as many times as is necessary. That number must be at least as many times that you plan to ruff +1, to get you back to your hand in order to draw any outstanding trumps. With fewer than the ideal number, you have to hope that the adverse suit splits in a favorable manner (for example 3-3 and not 4-2).|
+pg| ***** 142 ***** |
+
+
+nt||
+at|^b@2^^
+Simlarly, in order to employ the PLAN 2 technique successfully (using the length in dummy's side suit), it becomes necessary to always take the following into consideration:
+
+1) A pre-condition is that the length of the side suit in dummy that needs to be set up for extra winners, must be greater than that in declarer's hand by at least 1 card. The actual length itself is not important, just that this difference in length must exist.
+
+2) Some precautions must also be observed, namely:
+	- taking care to leave enough trumps in hand to ruff with
+	- protecting, if possible, against over ruffs in your hand, and
+	- protecting, if possible, against having any of your high honors ruffed.
+
+3) There is however, over and above all of these, another key factor that is required in order to be successful, namely: that you have enough entries from your hand to dummy so that you can ruff as many times as is necessary. Again that number must be at least as many times that you plan to ruff +1, in order to be able to get back to dummy to enjoy your winners. Likewise, with fewer than the ideal number, you have to hope that the adverse suit splits in a favorable manner (for example 3-3 and not 4-2).
+
+Because both of these plans rely so much on the availability of the proper number of entries, you usually must decide, often before playing to the first trick, which plan you will adopt. Although you cannot use both the length and shortness of dummy, (PLAN 2 and PLAN 1), occasionally you will be able to use either, or so it will seem. Then, your choice is made according to the location of entries:
+- with many entries to dummy and few in your hand, you plan to set up the length in dummy for discards; hence PLAN2, and
+- with many entries to your hand and few to dummy, you plan to use the shortness in dummy by ruffing losers from your hand; hence PLAN 1.
+
+This then is the answer to the question that you all must be asking:
+HOW TO DECIDE WHICH ONE TO USE!
+
+As we continue looking at some more examples, pay particular attention to the entry situation; I will also try and point it out. 
+
+Talking of entries, with enough entries you can occasionally set up the most anemic 5-card suit as we shall see in the following hand.|
+PG| ***** 143 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 14 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 14 ^-|  %% ^-  (in pairs) means  central vertical position
+pg| ***** 144 ***** |
+
+
+nt||
+st||
+qx|14|pn|South,West,North,East|
+rh||ah|Board 14 |
+md|1s3hAKQJ742dKJ2cAK,sKJ95d3dQT7cQJ986,s87642hT98dA84cT5,sAQTh65d9653c7432|
+sv||sk|s|
+mb|2c|mb|p|mb|2d|mb|p|mb|2h|mb|p|mb|3h|mb|p|mb|4NT|an|key cards?|mb|p|mb|5d|an|3014 RKC - 1 or 4 incuding @hK|
+mb|p|mb|6h|mb|ppp|
+pc|cQ|
+at|^b@2
+STOP
+Being in 6@h contract you can afford to lose 1 trick.|
+pg| ***** 145 ***** |
+
+
+nt||
+at|^b@2
+TALLY
+Taking South as Master hand we have 2 losers: 0@c+1@d+0@h+1@s and need to eliminate one.|
+pg| ***** 146 ***** |
+
+
+nt||
+at|^b@2
+ORGANIZE
+Since you need a successful finesse in the diamond suit in order to make your contract, your plan should be to first try and establish dummy's fifth spade on which you can discard your diamond loser.|
+pg| ***** 147 ***** |
+
+
+nt||
+at|^b@2
+PUT THE PLAN INTO ACTION
+Win the Ace, and lead a low spade.
+Win the club return and lead the 2 of hearts to dummy's 8, and ruff a spade with the trump Ace.
+Play the 4 of hearts to dummy's 9, ruff another spade high.
+Overtake the 7 of hearts with the 10 and ruff the 4th round of spades.
+Now dummy's last spade is probably good (if thet divided 4-3), and you have the diamond Ace as the entry to the good spade.
+|
+PG| ***** 148 ***** |
+
+
+nt||
+at|^b@2
+Notice the care that you had to take to keep four entries to dummy, ruffing with honors to save your more valuable little spots.
+
+This is a common entry saving method.
+Another device for producing an extra entry to dummy we have probably seen in NT play.|
+pg| ***** 149 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to go to the next hand. |
+pg| ***** 150 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 15 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 15 ^-|  %% ^-  (in pairs) means  central vertical position
+pg| ***** 151 ***** |
+
+
+nt||
+st||
+qx|15|pn|South,West,North,East|
+rh||ah|Board 15 |
+md|1sAKJT92hK65d84c86,s864hT873dJTcAK53,sQ3hA92dA9653cT72,s75hQJ4dKQ72cQJ94|
+sv||sk|s|
+mb|1s|mb|p|mb|1N|mb|p|mb|2s|mb|p|mb|3s|mb|p|mb|4s|mb|ppp|
+pc|cA|
+pg| ***** 152 ***** |
+
+
+at|^b@2
+Declarer's planning will be done after the opps take their two tricks.|
+pg| ***** 153 ***** |
+
+
+nt||
+pc|c2|pc|c4|pc|c6|
+pg| ***** 154 ***** |
+
+
+pc|cK|pc|c7|pc|c9|pc|c8|
+pg| ***** 155 ***** |
+
+
+pc|c3|pc|cT|pc|cQ|
+at|^b@2
+STOP
+Being in 4@s contract you can afford to lose 3 tricks.|
+pg| ***** 156 ***** |
+
+
+nt||
+at|^b@2
+TALLY
+Taking South as Master hand we have 4 losers: 2@c+1@d+1@h+0@s.|
+pg| ***** 157 ***** |
+
+
+nt||
+at|^b@2
+ORGANIZE
+Against your 4 spade contract, the defense cashes two club tricks and leads a third round which you ruff. 
+Since there is no shortness in dummy so that we can ruff any losers, we must try and establish a long diamond in dummy so that we can discard a heart loser.|
+pg| ***** 158 ***** |
+
+
+nt||
+at|^b@2
+If the missing diamonds are split 3-3, then all we would require is to ruff once and the suit will be set up. Hence, we would only need 2 entries to dummy (1 +1). 
+However if we are more realistic and expect a split of 4-2, then we shall need to ruff two diamonds and hence require 3 entries to dummy in order to accomplish this. Two to ruff in hand and the third to get back to dummy, to collect your diamond winner.
+|
+pg| ***** 159 ***** |
+
+
+nt||
+at|^b@2
+PUT THE PLAN INTO ACTION
+You have the entries that you need if you use the Ace of diamonds properly.
+Concede the first diamond.
+Then the Ace of diamonds becomes the entry for the first ruff.
+The spade is the entry for the second ruff .
+After drawing trumps, you can go to the Ace of hearts to cash the fifth diamond.
+|
+PG| ***** 160 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+
+MM: If you want to play this hand the way it was designed by Fred, press 'Enter the deal' button. Using the 'Step' button scroll to trick 3  when it is your turn to play the card. Press 'Play' button and continue declaring the hand.^^
+If you press '1st' the play will go differently as robots had a different idea on how to defend. |
+pg| ***** 161 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 16 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 16 ^-|  %% ^-  (in pairs) means  central vertical position
+pg| ***** 162 ***** |
+
+
+nt||
+st||
+qx|16|pn|South,West,North,East|
+rh||ah|Board 16 |
+md|1sAQ743hA2d2cAKT76,sKT8hKQJdK765c432,s2h853dAQJT43cQ95,sJ965hT9764d98cJ8|
+sv||sk|s|
+mb|1s|mb|p|mb|1N|mb|p|mb|3c|mb|p|mb|4c|mb|p|mb|4NT|mb|p|mb|5d|mb|p|mb|6c|mb|ppp|
+pc|hK|
+at|^b@2
+STOP
+Being in 6@c contract you can afford to lose 1 trick.|
+pg| ***** 163 ***** |
+
+
+nt||
+at|^b@2
+TALLY
+Taking South as Master hand we have 7 losers: 2@c+0@d+1@h+4@s and need to eliminate six.|
+pg| ***** 164 ***** |
+
+
+nt||
+at|^b@2
+ORGANIZE
+There is no realistic way to make the contract if the trumps don't split 3-2. Hence we can reduce the loser count by two in all our planning endeavours. So with 5 losers, we must find a way to eliminate 4 of them in order to make our contract.
+There is no feasible way to ruff enough spade losers in dummy,
+However, if the diamonds split no worse that 4-2, then by losing a diamond trick, we can set up 4 diamond winners.|
+pg| ***** 165 ***** |
+
+
+nt||
+at|^b@2
+Lets look at the entry situation to see if this Plan is feasible.
+We need lose only one diamond, hence we need two entries to dummy - one to lose a diamond and the other to cash our diamond winners, after trumps have been drawn.|
+pg| ***** 166 ***** |
+
+
+nt||
+at|^b@2
+PUT THE PLAN INTO ACTION
+Win the opening lead, play to the Ace of diamonds and lead the Q letting it ride for a finesse, if it is not covered. This way you can throw your heart loser on the diamond Q and may make your contract even though the finesse loses. If you finesse on the first round, you are down immediately should the finesse lose for a heart will be cashed.|
+pg| ***** 167 ***** |
+
+
+nt||
+at|^b@2
+Suppose that the diamond K wins to your left; you trump the heart return. Now you must draw trumps and get to dummy to run the diamonds. Cash your Ace of clubs and your K of clubs, and lead to dummy's club Q. If the trumps split reasonably, you are home free.|
+PG| ***** 168 ***** |
+
+
+nt||
+at|^b@2
+Observe that you do not need a ruff in dummy to take 12 tricks.
+In fact it would be fatal to ruff, for the minute you shorten dummy's trump holding, the diamond suit is dead for lack of an entry.
+You could no longer draw trumps ending up in dummy.
+This deal is a good example of knowing what your Plan is, from the start!|
+pg| ***** 169 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to go to the next hand. |
+pg| ***** 170 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 17 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 17 ^-|  %% ^-  (in pairs) means  central vertical position
+fp|b|
+ht|p|
+at|^b@2^-I have told you about how to decide which plan to use, if you have a decision to make.
+
+On the following hand, which would be your plan against a diamond lead?^-|
+pg| ***** 171 ***** |
+
+
+nt||
+st||
+qx|17|pn|South,West,North,East|
+rh||ah|Board 17 |
+md|3sKQJ84h64dK74c852,s963hKJdQJT6cKJ94,sA75hQ98753dA82cA,sT2hAT2d953cQT763|
+sv||sk|s|
+mb|1h|mb|p|mb|1s|mb|p|mb|2h|mb|p|mb|3d|mb|p|mb|3s|mb|p|mb|4s|mb|ppp|
+pc|dQ|
+
+at|^b@2
+STOP
+Being in 4@s contract you can afford to lose 3 tricks.|
+pg| ***** 172 ***** |
+
+
+nt||
+at|^b@2
+TALLY
+Taking South as Master hand we have 5 losers: 2@c+1@d+2@h+0@s.|
+pg| ***** 173 ***** |
+
+
+nt||
+at|^b@2
+ORGANIZE
+If you plan to ruff clubs in dummy, then you need three entries to your hand  - two to ruff the clubs and a third to draw trumps.
+But you only have two - the K of diamonds and a trump, since if you use both of dummy's two little trumps to get back to your hand, you will surely get so tangled up that you will end up going down.
+The better plan must therefore be to set up dummy's hearts for you have more entries in dummy.|
+pg| ***** 174 ***** |
+
+
+nt||
+at|^b@2
+PUT THE PLAN INTO ACTION
+Now, you must win the diamond opening in your hand to save dummy's honor. 
+Concede a heart.
+If the opponents continue diamond, win in dummy and conceded another heart.
+They will cash a diamond, and shift to clubs, knocking out dummy's side entry.
+Ruff a heart (with an honor if necessary).
+Then draw trumps ending in dummy, cashing the K and Q, finally leading to the Ace.|
+PG| ***** 175 ***** |
+
+
+nt||
+at|^b@2
+This approach requires only normal splits in the two long suits.|
+pg| ***** 176 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button to go to the next hand. |
+pg| ***** 177 ***** |
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Board 18 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+nt||
+bt||
+fp|vb-very_big|       %% pick font #b- (defined above)
+ht|m|           %% place text in horizontal zone m (top of the page)
+at| ^- Board 18^-|  
+fp|b|
+ht|p|
+at|^b@2 ^-
+Let us exchange dummy's Ace and declarer's 8 of clubs.^-|
+pg| ***** 178 ***** |
+
+
+nt||
+st||
+qx|18|pn|South,West,North,East|
+rh||ah|Board 18 |
+md|1sKQJ84h64dK74cA52,s963hKJdQJT6cKJ94,sA75hQ98753dA82c8,sT2hAT2d953cQT763|
+sv||sk|s|
+mb|1s|mb|p|mb|1N|mb|p|mb|2c|mb|p|mb|3s|mb|p|mb|4s|mb|ppp|
+pc|dQ|
+at|^b@2
+STOP
+Being in 4@s contract you can afford to lose 3 tricks.|
+pg| ***** 179 ***** |
+
+
+nt||
+at|^b@2
+TALLY
+Taking South as Master hand we have 5 losers: 2@c+1@d+2@h+0@s.|
+pg| ***** 180 ***** |
+
+
+nt||
+at|^b@2
+ORGANIZE
+You need to eliminate two losers. 
+Now to make 4 spades against a diamond lead now, your better plan is to use dummy's shortness, since you have an extra entry to your hand. 
+You are most unlikely to be able to use dummy's length, for you are short an entry there.|
+pg| ***** 181 ***** |
+
+
+nt||
+at|^b@2
+PUT THE PLAN INTO ACTION
+This time win the diamond lead in dummy with the A, in order to preserve an entry to declarer's hand.
+Lead a club to the Ace and ruff a club.
+Lead a diamond to your hand with the K and ruff your final club loser.
+
+The opponents can now only get a diamond and two heart tricks.
+|
+PG| ***** 182 ***** |
+
+
+nt||
+at|^b@2
+In the last two examples notice that you have to choose your plan, before playing even one card.
+If you intend to trump losers, you must win the opening in dummy, saving your own entry for later, and lead clubs.
+If you intend to discard losers, you must you must win the opening in your hand, saving dummy's entry, and lead hearts.
+Should you play to the first few tricks without a clear idea of what you plan to do, you will almost certainly go down.|
+pg| ***** 183 ***** |
+
+
+nt||
+cp|Bl|at|^b@2
+MM: play this hand by clicking the '1st' button or press 'Flow' button. |
+pg| ***** 184 ***** |
+
+
