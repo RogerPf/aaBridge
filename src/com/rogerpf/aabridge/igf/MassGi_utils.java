@@ -1865,6 +1865,15 @@ public class MassGi_utils {
 		if (qPos > 0)
 			in = in.substring(qPos + 1);
 
+		// 2023-05-27  RPf Issue FIX
+		// BBO have started SOMETIMES !!! UUencoding "{" and "}"
+		// this code needs them as characters so alerts and other comments
+		// can be spotted in the input so the are now hand decoded here
+		in = in.replace("%7B", "{");
+		in = in.replace("%7b", "{");
+		in = in.replace("%7D", "}");
+		in = in.replace("%7d", "}");
+
 		String low = in.toLowerCase();
 		if ((low.indexOf("s=") == -1) && (low.indexOf("w=") == -1) && (low.indexOf("n=") == -1) && (low.indexOf("e=") == -1)) {
 			return "";

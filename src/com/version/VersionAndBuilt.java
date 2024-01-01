@@ -20,10 +20,54 @@ import com.rogerpf.aabridge.controller.Aaa;
 public class VersionAndBuilt {
 	static int prob_fmt_req_numb = /* best to leave this alone ... best to leave THIS setting alone unless */6000;// compatibility needed
 	
-	static String ver = "6.2.0.";  public static String devExtra = "";    // extra is dev only, normally null
+	static String ver = "6.3.0.";  public static String devExtra = "";    // extra is dev only, normally null
 
-	public static int buildNo = 6210;     static String y = "2023", m = "Mar", d = "01";
+	public static int buildNo = 6312;     static String y = "2024", m = "Jan", d = "01";
 
+
+    // 2024-01-01  6312       release candidate   version 6.3
+
+	// 2024-01-01  6211  _n5  Hondo mentoring2312e
+	// 2023-12-26  6211  _n4  Hondo mentoring2312d
+	// 2023-12-18  6211  _n3  Hondo mentoring2312c
+	// 2023-12-11  6211  _n2  Hondo mentoring2312b
+	// 2023-12-04  6211  _n1  Hondo mentoring2312a & 11d
+	// 2023-11-20  6211  _m3  Hondo mentoring2311c
+	// 2023-11-13  6211  _m2  Hondo mentoring2311b
+	// 2023-11-06  6211  _m1  Hondo mentoring2311a
+	// 2023-10-30  6211  _k4  Hondo mentoring2310d
+	// 2023-10-23  6211  _k3  Hondo mentoring2310c
+	// 2023-10-16  6211  _k2  Hondo mentoring2310b
+	// 2023-10-02  6211  _k1  Hondo mentoring2310a
+	// 2023-09-25  6211  _j4  Hondo mentoring2309d
+	// 2023-09-20  6211  _j3  Hondo mentoring2309c
+	// 2023-09-11  6211  _j2  Hondo mentoring2309b
+	// 2023-09-04  6211  _j1  Hondo mentoring2309a
+	// 2023-08-28  6211  _h4  Hondo mentoring2308d
+	// 2023-08-21  6211  _h3  Hondo mentoring2308c
+	// 2023-08-14  6211  _h2  Hondo mentoring2308b
+	// 2023-08-07  6211  _h1  Hondo mentoring2308a
+	// 2023-07-31  6211  _g5  Hondo mentoring2307e
+	// 2023-07-24  6211  _g4  Hondo mentoring2307d
+	// 2023-07-17  6211  _g3  Hondo mentoring2307c
+	// 2023-07-10  6211  _g2  Hondo mentoring2307b
+	// 2023-07-03  6211  _g1  Hondo mentoring2307a
+	// 2023-06-25  6211  _f4  Hondo mentoring2306d
+	// 2023-06-18  6211  _f3  Hondo mentoring2306c
+	// 2023-06-11  6211  _f2  Hondo mentoring2306b
+	// 2023-06-04  6211  _f1  Hondo mentoring2306a
+	// 2023-05-29  6211  _e4  Hondo mentoring2305c & d
+	// 2023-05-27  6211  _e3  %7B %7D "{" "}" now pre-"decoded" bbo did not previously encode them
+	// 2023-05-15  6211  _e2  Hondo mentoring2305b
+	// 2023-05-08  6211  _e1  Hondo mentoring2305a
+	// 2023-05-01  6211  _d4  Hondo mentoring2304d
+	// 2023-04-24  6211  _d3  Hondo mentoring2304c
+	// 2023-04-17  6211  _d2  Hondo mentoring2304b
+	// 2023-04-03  6211  _d1  Hondo mentoring2304a
+	// 2023-03-27  6211  _c3  Hondo mentoring2303c
+	// 2023-03-13  6211  _c2  Hondo mentoring2303b
+	// 2023-03-06  6211  _c1  Hondo mentoring2303a
+	// 2023-03-02  6211  _b6  no changes
  
 	// 2023-03-01  6210       release candidate   version 6.2
 

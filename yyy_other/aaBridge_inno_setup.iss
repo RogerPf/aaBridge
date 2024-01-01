@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "aaBridge"
-#define MyAppVersion "6.2.0.6210"
+#define MyAppVersion "6.3.0.6312"
 #define MyAppPublisher "RogerPf.com"
 #define MyAppURL "http://RogerPf.com/"
 #define MyAppExeName "aaBridge.exe"
