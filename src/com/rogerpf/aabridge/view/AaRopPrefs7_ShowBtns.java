@@ -89,25 +89,61 @@ class AaRopPrefs7_ShowBtns extends ClickPanel implements ItemListener, ActionLis
 	        m_LTC_r.setBorder(bdr0);
 		add(m_Banzai = new QRadioButton(this, rbG_show2nd, null, App.show2ndMetric == App.Metric_Banzai, "", Aaf.gT("showTab.banzai")), "gapx 4");    
 	        m_Banzai.setBorder(bdr0);
-
 		    		    
-		add(applyDefaults = new QButton(this, Aaf.gT("cmnTab.applyDef")), "gapy40, gapx4");
+		add(applyDefaults = new QButton(this, Aaf.gT("cmnTab.applyDef")), "gapy20, gapx4");
 		if (App.onMac == false)
 			applyDefaults.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
 
-		add(anyLabel  = new QLabel("Java Version"), "gapy40, gapx 10");
-		add(anyLabel  = new QLabel(App.java_info), "gapx 4");
+		add(anyLabel  = new QLabel("Java Version"), "gapy40, gapx 5");
+	        anyLabel.setForeground(Aaa.optionsTitleGreen);
+		add(anyLabel  = new QLabel(App.java_info), "gapx 10");
 		
+		if ((App.java_info).startsWith("1.8.")) {
+			add(anyLabel  = new QLabel("1.8.        is now more often simply called  Java  8"), "gapx 10");
+		}
+		String os_arch = getOsArch();
+		add(anyLabel  = new QLabel("Other Info"), "gapy5, gapx 5");
+           anyLabel.setForeground(Aaa.optionsTitleGreen);
+		add(anyLabel  = new QLabel("architecture:   " + os_arch), "gapx 10");
+		add(anyLabel  = new QLabel("OS Name:         " + System.getProperty("os.name")), "gapx 10");
+		add(anyLabel  = new QLabel("OS Version:     " + System.getProperty("os.version")), "gapx 10");
 
-		add(anyLabel  = new QLabel(Aaf.gT("showTab.belowReset")), "gapy 20");
-	        anyLabel.setForeground(Cc.RedStrong);
+		if (App.wrong_java) {
+			add(anyLabel  = new QLabel(Aaf.get_wj1()), "gapy10, gapx 10");
+			anyLabel.setForeground(Cc.RedStrong);
+			add(anyLabel  = new QLabel(Aaf.get_wj2()), "gapx 10");
+			anyLabel.setForeground(Cc.RedStrong);
+			add(anyLabel  = new QLabel(Aaf.get_wj3()), "gapy4, gapx 10");
+			anyLabel.setForeground(Cc.RedStrong);
+			add(anyLabel  = new QLabel(Aaf.get_wj4()), "gapx 10");
+			anyLabel.setForeground(Cc.RedStrong);
+			add(anyLabel  = new QLabel(Aaf.get_wj5()), "gapx 10");
+			anyLabel.setForeground(Cc.RedStrong);
+			add(anyLabel  = new QLabel(Aaf.get_wj6()), "gapx 20");
+			anyLabel.setForeground(Cc.RedStrong);
+		}
+
+		add(anyLabel  = new QLabel(Aaf.gT("showTab.belowReset")), "gapy 35");
+	        anyLabel.setForeground(Aaa.optionsTitleGreen);
 		add(resetAllPrefs = new QButton(this, Aaf.gT("showTab.resetAll")), "gapx10");
 		    resetAllPrefs.setForeground(Cc.RedStrong);
 		if (App.onMac == false)
 		    resetAllPrefs.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
-		add(anyLabel  = new QLabel(Aaf.gT("showTab.takeCare")));
-            anyLabel.setForeground(Cc.RedStrong);		 			    
+		add(anyLabel  = new QLabel("Are you sure ?"));
+		anyLabel.setForeground(Cc.RedStrong);
+
 		// @formatter:on
+	}
+	
+	static String getOsArch() {
+	    String arch = System.getProperty("os.arch");
+	    String arch_low = arch.toLowerCase();
+	    if (arch_low.contains("i686")) {
+	        return arch + " . . . . . . . . . Intel 32 bit";
+	    } else if (arch_low.contains("amd64")) {
+	        return arch + " . . . . . . . . . includes  Intel 64 bit";
+	    }
+	    return arch;
 	}
 
 	public void actionPerformed(ActionEvent e) {

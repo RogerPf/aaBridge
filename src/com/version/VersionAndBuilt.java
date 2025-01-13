@@ -20,14 +20,62 @@ import com.rogerpf.aabridge.controller.Aaa;
 public class VersionAndBuilt {
 	static int prob_fmt_req_numb = /* best to leave this alone ... best to leave THIS setting alone unless */6000;// compatibility needed
 	
-	static String ver = "6.3.0.";  public static String devExtra = "";    // extra is dev only, normally null
+	static String ver = "6.4.0.";  public static String devExtra = "";    // extra is dev only, normally null
 
-	public static int buildNo = 6312;     static String y = "2024", m = "Jan", d = "01";
+	public static int buildNo = 6314;     static String y = "2025", m = "Jan", d = "01";
 
+
+    // 2024-01-01  6314       release candidate   version 6.4
+
+	// 2024-12-31  6313  _n6  "wrong java" message much cleaner
+	// 2024-12-30  6313  _n5  "wrong java" message added when macOS and aarch
+	// 2024-12-30  6313  _n4  Hondo mentoring2412d and fix to mentoring2415a
+	// 2024-12-23  6313  _n3  Hondo mentoring2412c
+	// 2024-12-18  6313  _p2x  as below and new values added to show tab eg OS_ARCH
+	// 2024-12-17  6313  _p1x build testing updated Launch4J includes aaBridgeLoader_1404
+	// 2024-12-16  6313  _n2  Hondo mentoring2412b
+	// 2024-12-09  6313  _n1  Hondo mentoring2412a & Analyser box re-spaced for longer MAC fonts
+	// 2024-11-24  6313  _m3  Hondo mentoring2411c
+	// 2024-11-17  6313  _m2  Hondo mentoring2411b
+	// 2024-11-10  6313  _m1  Hondo mentoring2411a 
+	// 2024-10-28  6313  _k4  Hondo mentoring2410c 
+	// 2024-10-21  6313  _k3  Hondo mentoring2410b 
+	// 2024-10-14  6313  _k2  Hondo mentoring2410a 
+	// 2024-10-10  6313  _k1                       _ aaBridge Introduction .doc added
+    // 2024-09-23  6313  _j4  Hondo mentoring2409d
+    // 2024-09-23  6313  _j3  Hondo mentoring2409c and BBO Helper workaround
+    // 2024-09-21  6313  _j2  Hondo mentoring2409b and zzz  aaBridgeInstallGuide_Mac__2024_edition.doc
+    // 2024-09-09  6313  _j1  Hondo mentoring2409a & Karen's many doc fixes
+    // 2024-08-26  6313  _h4  Hondo mentoring2408c
+    // 2024-08-19  6313  _h3  Hondo mentoring2408b
+    // 2024-08-11  6313  _h2  Hondo mentoring2408a
+    // 2024-08-04  6313  _h1  Hondo mentoring2407c
+    // 2024-07-15  6313  _g3  Hondo mentoring2407b
+    // 2024-07-15  6313  _g2  Hondo mentoring2407a
+    // 2024-07-01  6313  _g1  Hondo mentoring2406c & d
+    // 2024-06-17  6313  _f2  Hondo mentoring2406b
+    // 2024-06-10  6313  _f1  Hondo mentoring2406a
+    // 2024-05-27  6313  _e3  Hondo mentoring2405c
+    // 2024-05-20  6313  _e2  Hondo mentoring2405b
+    // 2024-05-13  6313  _e1  Hondo mentoring2405a
+    // 2024-04-29  6313  _d3  Hondo mentoring2404c
+    // 2024-04-22  6313  _d2  Hondo mentoring2404b
+    // 2024-04-15  6313  _d1  Hondo mentoring2404a
+    // 2024-04-01  6313  _c5  Hondo mentoring2403e
+    // 2024-03-25  6313  _c4  Hondo mentoring2403d
+    // 2024-03-18  6313  _c3  Hondo mentoring2403c
+    // 2024-03-12  6313  _c2  Hondo mentoring2403b
+    // 2024-03-04  6313  _c1  Hondo mentoring2403a
+    // 2024-02-25  6313  _b2  Hondo mentoring2402b
+    // 2024-02-05  6313  _b1  Hondo mentoring2402a
+    // 2024-01-29  6313  _a4  Hondo mentoring2401d
+    // 2024-01-22  6313  _a3  Hondo mentoring2401c
+    // 2024-01-15  6313  _a2  Hondo mentoring2401b
+    // 2024-01-08  6313  _a1  Hondo mentoring2401a
 
     // 2024-01-01  6312       release candidate   version 6.3
 
-	// 2024-01-01  6211  _n5  Hondo mentoring2312e
+	// 2023-13-31  6211  _n5  Hondo mentoring2312e
 	// 2023-12-26  6211  _n4  Hondo mentoring2312d
 	// 2023-12-18  6211  _n3  Hondo mentoring2312c
 	// 2023-12-11  6211  _n2  Hondo mentoring2312b

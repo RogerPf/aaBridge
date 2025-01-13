@@ -58,12 +58,12 @@ public class DdsAnalyserPanel extends ClickPanel implements ActionListener {
 //		setOpaque(true);
 //		setBackground(Aaa.baizeMustard);
 
-		setLayout(new MigLayout(App.simple + ", flowx", "7%[17%]3%[12%][12%][12%][12%]3%[16%]", "3%[10%]2%[8%]3%[14%][14%]1%[14%][14%][]"));
+		setLayout(new MigLayout(App.simple + ", flowx", "6%[17%]3%[12%]1%[12%]1%[12%]1%[12%]4%[9%]", "3%[10%]2%[8%]3%[14%][14%]1%[14%][14%][]"));
 
 		for (int j = 0; j < 7; j++) {
 			if (j == 0) {
-				add(new RpfResizeButton(Aaa.s_SelfLabel, "Par:", -2, 12, 0.95f), "span 7, split2");
-				add(topLine = new RpfResizeButton(Aaa.s_SelfLabel, "Top line goes here", -9, 13, 0.95f), ", wrap");
+				add(new RpfResizeButton(Aaa.s_SelfLabel, "Par:", -2, 12, 0.95f), "span 8, split2");
+				add(topLine = new RpfResizeButton(Aaa.s_SelfLabel, "Top line goes here", -10, 14, 0.85f), ", wrap");
 				continue;
 			}
 			else if (j == 6) {
@@ -245,13 +245,13 @@ public class DdsAnalyserPanel extends ClickPanel implements ActionListener {
 
 				String ddsParSeat_to_str[] = { "N", "E", "S", "W", "NS", "EW" };
 				int ddsParSeat_score_inv[] = { 1, -1, 1, -1, 1, -1 };
-				par += "  by " + ddsParSeat_to_str[ct0.seats];
-				par += "  " + r.score * ddsParSeat_score_inv[ct0.seats];
+				par += " by " + ddsParSeat_to_str[ct0.seats];
+				par += " " + r.score * ddsParSeat_score_inv[ct0.seats];
 
 			}
 			topLine.setText(par);
 
-			bottomLine.setText("Click on any contract above");
+			bottomLine.setText("     Click on any contract above");
 		}
 	});
 

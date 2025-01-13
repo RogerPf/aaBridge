@@ -34,6 +34,8 @@ public class Cc {  // Color Class
 
 	public static final Color NoChosenSuit       = new Color( 90,  90,  90);
 
+	public static final Color Yellowish          = new Color(223, 217, 49);
+
 	public static final Color BlueMenubar        = new Color( 40,  70, 190);
 
 	public static final Color BlackStrong        = new Color( 40,  40,  40);

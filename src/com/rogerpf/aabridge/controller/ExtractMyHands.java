@@ -72,12 +72,20 @@ public class ExtractMyHands {
 		String bboid_searched_on = "";
 
 		Element table = doc.select("table[class=body]").first();
+
 		if (table != null) {
 			/* ***********************************************************
 			 * this is (the norm) a list of  Single deals  OR  a Traveller
 			 * ***********************************************************/
-			Element what = table.select("tr > th[colspan=\"10\"]").first();
-
+			Element what = table.select("tr > th[colspan=\"10\"]").first(); // normal trav
+			if (what == null) {
+				try {
+				table = doc.select("table[class=body]").get(4);
+				} catch (Exception e ){
+				; // this will fail HERE if not a bbo helper chrome extention modified  traveller
+				}
+			    what = table.select("tr > th[colspan=\"12\"]").first(); // chrome add-on trav
+			}
 			if (what != null) {
 				type = "Trav";
 

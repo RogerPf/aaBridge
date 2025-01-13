@@ -155,6 +155,9 @@ public class App {
 	public static boolean onMacOrLinux = false; 
 	public static boolean using_java_6 = false;	
 	public static boolean runningExpanded = false;
+	public static boolean arch_is_aarch = false;
+	public static boolean wrong_java = false;
+
 	public static String bundleSep = "/";
 
 	public final static String hm0oneHun = "hidemode 0, width 100%, height 100%";

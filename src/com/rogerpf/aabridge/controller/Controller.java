@@ -178,7 +178,10 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 				App.frame.setExtendedState(java.awt.Frame.MAXIMIZED_VERT);
 			}
 
-			if (App.showMouseWheelSplash) {
+			if (App.wrong_java) {
+				App.frame.aaDragGlassPane.showOverlayScreen(AaDragGlassPane.wrong_java_found);
+			}
+			else if (App.showMouseWheelSplash) {
 				App.frame.aaDragGlassPane.showOverlayScreen(AaDragGlassPane.mouse_wheel);
 			}
 

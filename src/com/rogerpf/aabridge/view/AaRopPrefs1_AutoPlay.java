@@ -86,7 +86,7 @@ class AaRopPrefs1_AutoPlay extends ClickPanel implements ItemListener, ActionLis
 		    anyLabel.setForeground(Aaa.optionsTitleGreen);
 		}
 		else {
-			add(anyLabel  = new QLabel(Aaf.gT("autoPlayTab.not")), "gapx 10");
+			add(anyLabel  = new QLabel(Aaf.gT("autoPlayTab.not") + (App.wrong_java ? "  -  wrong Java ? - see under - 'Show'" : "")), "gapx 10");
 		    anyLabel.setForeground(Cc.RedStrong);			
 		}
 		add(useDDSwhenAvaialble_autoplay = new QCheckBox(this, App.useDDSwhenAvaialble_autoplay, Aaf.gT("autoPlayTab.use")), rbInset);

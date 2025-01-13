@@ -331,6 +331,8 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		App.using_java_6 = System.getProperty("java.version").startsWith("1.6");
 		App.runningExpanded = MassGi_utils.isRunningExpanded();
 
+		App.arch_is_aarch = System.getProperty("os.arch").contains("aarch") || System.getProperty("os.arch").contains("arm");
+
 		// App.default_downloads_folder
 		if (App.onWin) {
 			String homedrive = System.getenv("HOMEDRIVE");
@@ -378,6 +380,15 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 
 		// Active Bo Haglunds DDS
 		App.haglundsDDSavailable = Z_ddsCalculate.is_dds_available();
+
+//		// testing
+//		App.haglundsDDSavailable = false; // for testing
+//		App.arch_is_aarch = true; // for testing
+//		App.onMac = true; // for testing
+//		App.onWin = false; // for testing
+//		App.onLinux = false; // for testing
+
+		App.wrong_java = (App.haglundsDDSavailable == false) && App.arch_is_aarch;
 
 		/** The 'donehand' has already been constructed. Now we create the mg
 		 *  to match it.  From now on there will ALWAYS be a valid mg (and lin inside it)
@@ -1724,6 +1735,7 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		if (cmd == "youtube_aaBridgeVideos") {
 			try {
 				Desktop.getDesktop().browse(new java.net.URI("https://www.youtube.com/channel/UCjqx0Cofc7-TT-N0tfYR8rg"));
+				// Desktop.getDesktop().browse(new java.net.URI("https://www.youtube.com/@aaBridge"));
 			} catch (Exception ev) {
 			}
 			return;
@@ -1914,8 +1926,13 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 
 			String s = "      ";
 
-			String t = "aaBridge written by Roger Pfister\n\n" + "This is version -  " + VersionAndBuilt.getVer() + "\n" + "Build Number   -               "
-					+ VersionAndBuilt.getBuildNo() + "\n" + "Built on              -  " + VersionAndBuilt.getBuilt() + "\n\n\n" + "Thanks go to\n" + s
+			String t = "aaBridge written by Roger Pfister\n\n" + "This is version   " + VersionAndBuilt.getVer() + "  . . . .\n" 
+					+ "Build Number                 " + VersionAndBuilt.getBuildNo() + "\n"
+					+ "Built on                 " + VersionAndBuilt.getBuilt() + "\n\n"
+					+ "Thanks go to\n" + s
+					+ "Bo Haglund for the  DDS  code\n" + s
+					+ "    https://github.com/dds-bridge/dds\n"
+					+ "and \n" + s
 					+ "Charlene Gallaty\n" + s + "Sanja A\n" + s + "Filiz Sarıoğlu\n";
 
 			JOptionPane.showMessageDialog(this, t, "About - aaBridge", JOptionPane.INFORMATION_MESSAGE, icon);

@@ -96,7 +96,7 @@ public class DualDealListButtonsPanel extends ClickPanel implements ItemListener
 		else {
 			showDdAsMin.setBackground(SystemColor.control);
 			
-			add(showDdWithResults = new QCheckBox(this, App.showDdWithResults, ddAy.twoColumn ? "show results" : "rs"), "wrap");
+			add(showDdWithResults = new QCheckBox(this, App.showDdWithResults, (ddAy.twoColumn ? "show results" : "Sh Rs"), "show results"), "wrap");
 			add(showDdResultTots  = new QCheckBox(this, App.showDdResultTots, "", "Shows the running total Imp scores"),     "align left" + mw);
 			showDdResultTots.setVisible(ddAy.twoColumn && App.showDdWithResults);
 

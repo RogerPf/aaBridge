@@ -53,6 +53,7 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 	public final static int new_deal_levels = 2;
 	public final static int docCol_copied = 3;
 	public final static int docCol_error = 4;
+	public final static int wrong_java_found = 5;
 
 	private int splash_id = none;
 
@@ -75,6 +76,7 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 	/**
 	*/
 	public Timer splashScreenCompleteTimer = new Timer(5000, new ActionListener() {
+		@Override
 		public void actionPerformed(ActionEvent evt) {
 			splashScreenCompleteTimer.stop();
 			setVisible(false);
@@ -102,6 +104,7 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 	 * otherwise we return false to respect the cursors
 	 * for the underneath components
 	 */
+	@Override
 	public boolean contains(int x, int y) {
 		if (getMouseListeners().length == 0 && getMouseMotionListeners().length == 0 && getMouseWheelListeners().length == 0
 				&& getCursor() == Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR)) {
@@ -112,6 +115,7 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 
 	/**
 	 */
+	@Override
 	public void eventDispatched(AWTEvent event) {
 		if (event instanceof MouseEvent) {
 			MouseEvent me = (MouseEvent) event;
@@ -131,6 +135,7 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 
 	/**
 	 */
+	@Override
 	protected void paintComponent(Graphics g) {
 		Graphics2D g2 = (Graphics2D) g;
 		Aaa.commonGraphicsSettings(g2);
@@ -140,8 +145,8 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 		}
 		else if (splashScreenCompleteTimer.isRunning()) {
 
-			float panelWidth = (float) getWidth();
-			float panelHeight = (float) getHeight();
+			float panelWidth = getWidth();
+			float panelHeight = getHeight();
 
 			float marginLeft = panelWidth * 0.375f;
 			float marginRight = panelWidth * 0.375f;
@@ -152,12 +157,28 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 			float activityHeight = panelHeight - (marginTop + marginBottom);
 
 			float curve = panelHeight * 0.001f;
+			float boarderWidth = 0.03f;
 
 			RoundRectangle2D.Float rr = new RoundRectangle2D.Float();
 
 			// fill the lozenge ----------------------------------------------
 
 			switch (splash_id) {
+			case wrong_java_found:
+				marginLeft = panelWidth * 0.2f;
+				marginRight = panelWidth * 0.2f;
+				marginTop = panelHeight * 0.2f;
+				marginBottom = panelHeight * 0.4f;
+
+				activityWidth = panelWidth - (marginLeft + marginRight);
+				activityHeight = panelHeight - (marginTop + marginBottom);
+
+				curve = panelHeight * 0.001f;
+				boarderWidth = 0.015f;
+
+				g2.setColor(Cc.Yellowish);
+				break;
+
 			case docCol_error:
 			case mouse_wheel:
 				g2.setColor(Cc.RedWeak);
@@ -173,7 +194,7 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 			rr.setRoundRect(marginLeft, marginTop, activityWidth, activityHeight, curve, curve);
 			g2.fill(rr);
 
-			g2.setStroke(new BasicStroke(activityWidth * 0.03f));
+			g2.setStroke(new BasicStroke(activityWidth * boarderWidth));
 			g2.setColor(Color.darkGray);
 			g2.draw(rr);
 
@@ -183,6 +204,28 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 			String docC = "aaBridge - Doc Collection";
 
 			switch (splash_id) {
+
+			case wrong_java_found:
+				// mouse wheel message
+				g2.setColor(Color.black);
+				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.25f));
+				Aaa.drawCenteredString(g2, Aaf.get_wj1(), marginLeft, marginTop + activityHeight * 0.015f, activityWidth, activityHeight * 0.25f);
+
+				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.25f));
+				Aaa.drawCenteredString(g2, Aaf.get_wj2(), marginLeft, marginTop + activityHeight * 0.015f, activityWidth, activityHeight * 0.50f);
+
+				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.25f));
+				Aaa.drawCenteredString(g2, Aaf.get_wj3(), marginLeft, marginTop + activityHeight * 0.015f, activityWidth, activityHeight * 0.90f);
+
+				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.25f));
+				Aaa.drawCenteredString(g2, Aaf.get_wj4(), marginLeft, marginTop + activityHeight * 0.015f, activityWidth, activityHeight * 1.15f);
+
+				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.25f));
+				Aaa.drawCenteredString(g2, Aaf.get_wj5(), marginLeft, marginTop + activityHeight * 0.015f, activityWidth, activityHeight * 1.44f);
+
+				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.25f));
+				Aaa.drawCenteredString(g2, Aaf.get_wj6(), marginLeft, marginTop + activityHeight * 0.015f, activityWidth, activityHeight * 1.75f);
+				break;
 
 			case mouse_wheel:
 				// mouse wheel message
