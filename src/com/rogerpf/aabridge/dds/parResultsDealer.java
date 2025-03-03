@@ -22,7 +22,7 @@ public class parResultsDealer extends Structure {
 		super();
 	}
 
-	protected List<?> getFieldOrder() {
+	protected List<String> getFieldOrder() {
 		return Arrays.asList("number", "score", "contracts");
 	}
 

@@ -98,30 +98,40 @@ class AaRopPrefs7_ShowBtns extends ClickPanel implements ItemListener, ActionLis
 	        anyLabel.setForeground(Aaa.optionsTitleGreen);
 		add(anyLabel  = new QLabel(App.java_info), "gapx 10");
 		
-		if ((App.java_info).startsWith("1.8.")) {
+		if (App.using_java_8) {
 			add(anyLabel  = new QLabel("1.8.        is now more often simply called  Java  8"), "gapx 10");
 		}
-		String os_arch = getOsArch();
+		String os_arch = AaaOuterFrame.getOsArch();
 		add(anyLabel  = new QLabel("Other Info"), "gapy5, gapx 5");
            anyLabel.setForeground(Aaa.optionsTitleGreen);
-		add(anyLabel  = new QLabel("architecture:   " + os_arch), "gapx 10");
-		add(anyLabel  = new QLabel("OS Name:         " + System.getProperty("os.name")), "gapx 10");
-		add(anyLabel  = new QLabel("OS Version:     " + System.getProperty("os.version")), "gapx 10");
+		add(anyLabel  = new QLabel("H/W type:        " + os_arch), "gapx 10");
+		add(anyLabel  = new QLabel("OS Name:       " + System.getProperty("os.name")), "gapx 10");
+		add(anyLabel  = new QLabel("OS Version:   " + System.getProperty("os.version")), "gapx 10");
 
-		if (App.wrong_java) {
-			add(anyLabel  = new QLabel(Aaf.get_wj1()), "gapy10, gapx 10");
-			anyLabel.setForeground(Cc.RedStrong);
-			add(anyLabel  = new QLabel(Aaf.get_wj2()), "gapx 10");
-			anyLabel.setForeground(Cc.RedStrong);
-			add(anyLabel  = new QLabel(Aaf.get_wj3()), "gapy4, gapx 10");
-			anyLabel.setForeground(Cc.RedStrong);
-			add(anyLabel  = new QLabel(Aaf.get_wj4()), "gapx 10");
-			anyLabel.setForeground(Cc.RedStrong);
-			add(anyLabel  = new QLabel(Aaf.get_wj5()), "gapx 10");
-			anyLabel.setForeground(Cc.RedStrong);
-			add(anyLabel  = new QLabel(Aaf.get_wj6()), "gapx 20");
-			anyLabel.setForeground(Cc.RedStrong);
+		if (App.haglundsDDSavailable) {
+			add(anyLabel = new QLabel(Aaf.gT("autoPlayTab.avail")), "gapy4, gapx 20");
+		    anyLabel.setForeground(Aaa.optionsTitleGreen);
 		}
+		else {
+			add(anyLabel  = new QLabel(Aaf.gT("autoPlayTab.not") + Aaf.get_wj0()), "gapy4, gapx 20");	
+		    anyLabel.setForeground(Cc.RedStrong);
+		}
+
+
+//		if (App.wrong_java) {
+//			add(anyLabel  = new QLabel(Aaf.get_wj1()), "gapy20, gapx 10");
+//			anyLabel.setForeground(Cc.RedStrong);
+//			add(anyLabel  = new QLabel(Aaf.get_wj2()), "gapx 10");
+//			anyLabel.setForeground(Cc.RedStrong);
+//			add(anyLabel  = new QLabel(Aaf.get_wj3()), "gapy4, gapx 10");
+//			anyLabel.setForeground(Cc.RedStrong);
+//			add(anyLabel  = new QLabel(Aaf.get_wj4()), "gapx 10");
+//			anyLabel.setForeground(Cc.RedStrong);
+//			add(anyLabel  = new QLabel(Aaf.get_wj5()), "gapx 10");
+//			anyLabel.setForeground(Cc.RedStrong);
+//			add(anyLabel  = new QLabel(Aaf.get_wj6()), "gapx 20");
+//			anyLabel.setForeground(Cc.RedStrong);
+//		}
 
 		add(anyLabel  = new QLabel(Aaf.gT("showTab.belowReset")), "gapy 35");
 	        anyLabel.setForeground(Aaa.optionsTitleGreen);
@@ -135,17 +145,6 @@ class AaRopPrefs7_ShowBtns extends ClickPanel implements ItemListener, ActionLis
 		// @formatter:on
 	}
 	
-	static String getOsArch() {
-	    String arch = System.getProperty("os.arch");
-	    String arch_low = arch.toLowerCase();
-	    if (arch_low.contains("i686")) {
-	        return arch + " . . . . . . . . . Intel 32 bit";
-	    } else if (arch_low.contains("amd64")) {
-	        return arch + " . . . . . . . . . includes  Intel 64 bit";
-	    }
-	    return arch;
-	}
-
 	public void actionPerformed(ActionEvent e) {
 
 		Object source = e.getSource();

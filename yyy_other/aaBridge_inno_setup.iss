@@ -2,9 +2,9 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "aaBridge"
-#define MyAppVersion "6.3.0.6312"
+#define MyAppVersion "7.0.0.7032"
 #define MyAppPublisher "RogerPf.com"
-#define MyAppURL "http://RogerPf.com/"
+#define MyAppURL "https://sites.google.com/view/rogerpf-com/"
 #define MyAppExeName "aaBridge.exe"
 
 [Setup]
@@ -38,7 +38,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 Source: "C:\a\{#MyAppName}_{#MyAppVersion}.jar"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\c\e_wk\111_aab\aaBridge\yyy_other\build_extras\aaBridge_1402.exe"; DestDir: "{app}"; DestName: "aaBridge.exe"; Flags: ignoreversion
+Source: "C:\c\e_wk\111_aab\aaBridge\yyy_other\build_extras\aaBridge_1404.exe"; DestDir: "{app}"; DestName: "aaBridge.exe"; Flags: ignoreversion
 Source: "C:\c\e_wk\111_aab\aaBridge\yyy_other\build_extras\lin.ico"; DestDir: "{app}";
 Source: "C:\c\e_wk\111_aab\aaBridge\yyy_other\build_extras\launch_aaBridge_showing_messages.cmd"; DestDir: "{app}";
 Source: "C:\c\e_wk\111_aab\aaBridge\yyy_other\build_extras\start_aabridge.cmd"; DestDir: "{app}";
@@ -46,10 +46,12 @@ Source: "C:\c\e_wk\111_aab\aaBridge\yyy_other\build_extras\start_aabridge.comman
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
-Name: "{group}\{#MyAppName} 6"; Filename: "{app}\{#MyAppExeName}"
-Name: "{commondesktop}\{#MyAppName} 6"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
+Name: "{group}\{#MyAppName} 7"; Filename: "{app}\{#MyAppExeName}"
+Name: "{commondesktop}\{#MyAppName} 7"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 
 [InstallDelete]
+Type: files; Name: "{userdesktop}\aaBridge 6.lnk"
+Type: files; Name: "{commondesktop}\aaBridge 6.lnk"
 Type: files; Name: "{userdesktop}\aaBridge 5.lnk"
 Type: files; Name: "{commondesktop}\aaBridge 5.lnk"
 

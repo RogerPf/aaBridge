@@ -29,7 +29,7 @@ public class parTextResults extends Structure {
 		super();
 	}
 
-	protected List<?> getFieldOrder() {
+	protected List<String> getFieldOrder() {
 		return Arrays.asList("parText", "equal");
 	}
 

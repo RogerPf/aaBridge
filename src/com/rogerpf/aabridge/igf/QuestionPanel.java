@@ -169,7 +169,7 @@ public class QuestionPanel extends ConsumePanel {
 		Map<TextAttribute, Object> attributes = (Map<TextAttribute, Object>) fb.font.getAttributes();
 
 		scaleFrac = getWidth() / LIN_STANDARD_WIDTH;
-		fontScaleFrac = FONT_SCALE_FRAC * scaleFrac;
+		fontScaleFrac = FONT_SCALE_FRAC * scaleFrac * 1000 / App.fontShrink;
 
 		attributes.put(TextAttribute.SIZE, ((float) fb.linFontSize) * fontScaleFrac);
 		attributes.put(TextAttribute.FOREGROUND, Color.BLACK);

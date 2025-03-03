@@ -223,6 +223,7 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 			}
 
 			String j_vendor = System.getProperty("java.vendor");
+			App.oracle_java = j_vendor.toLowerCase().contains("oracle");
 
 			if (j_vendor.isEmpty() == false) {
 				j_vendor = "   From: " + j_vendor;
@@ -230,7 +231,9 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 			App.java_info += j_vendor;
 
 			System.out.println("");
-			System.out.println("aaBridge_" + VersionAndBuilt.verAndBuildNo() + "   Running on Java: " + App.java_info);
+			System.out.print("aaBridge_" + VersionAndBuilt.verAndBuildNo());
+			System.out.print("    Running on Java: " + App.java_info);
+			System.out.println("   H/W type: " + getOsArch());
 
 			// @formatter:off
 			if (      (App.runningInJar == false)
@@ -329,6 +332,7 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		App.onLinux = !App.onMac && !App.onWin;
 		App.onMacOrLinux = App.onMac || App.onLinux;
 		App.using_java_6 = System.getProperty("java.version").startsWith("1.6");
+		App.using_java_8 = System.getProperty("java.version").startsWith("1.8");
 		App.runningExpanded = MassGi_utils.isRunningExpanded();
 
 		App.arch_is_aarch = System.getProperty("os.arch").contains("aarch") || System.getProperty("os.arch").contains("arm");
@@ -381,14 +385,19 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		// Active Bo Haglunds DDS
 		App.haglundsDDSavailable = Z_ddsCalculate.is_dds_available();
 
+		System.out.print("   DDS: is " + (App.haglundsDDSavailable ? "" : "NOT ") + "available");
+		System.out.println(" ");
+
 //		// testing
 //		App.haglundsDDSavailable = false; // for testing
 //		App.arch_is_aarch = true; // for testing
-//		App.onMac = true; // for testing
+//		App.onMac = false; // for testing
 //		App.onWin = false; // for testing
-//		App.onLinux = false; // for testing
+//		App.onLinux = true; // for testing
+//		App.oracle_java = false; // for testing
+//		App.using_java_8 = false; // for testing
 
-		App.wrong_java = (App.haglundsDDSavailable == false) && App.arch_is_aarch;
+//		App.wrong_java = (App.haglundsDDSavailable == false) && App.arch_is_aarch;  // now not used
 
 		/** The 'donehand' has already been constructed. Now we create the mg
 		 *  to match it.  From now on there will ALWAYS be a valid mg (and lin inside it)
@@ -605,6 +614,21 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 		App.con.postContructionInitTimer.start();
 
 		setTransferHandler(handler);
+	}
+
+	static String getOsArch() {
+		String arch = System.getProperty("os.arch");
+		String arch_low = arch.toLowerCase();
+		if ((arch_low.contains("i686") || arch_low.contains("i586"))) {
+			return arch + " / intel32";
+		}
+		else if (arch_low.contains("amd64")) {
+			return arch + " / intel64";
+		}
+		else if (arch_low.contains("aarch")) {
+			return arch + " (ARM)";
+		}
+		return arch;
 	}
 
 	// @formatter:off
@@ -886,9 +910,6 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 				afterPlpShakerTimer.stop();
 				return;
 			}
-
-//			rjp.setVisible(odd);
-//			bjp.setVisible(odd);
 
 			if (resizeTicks <= 0 && !odd)
 				afterPlpShakerTimer.stop();
@@ -1886,7 +1907,7 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 				Date today = new Date();
 
-				String date_url_expires = "2025-11-01";
+				String date_url_expires = "2027-11-01";
 				// String date_url_expires = "2019-11-01";  // for testing only
 
 				if (today.after(sdf.parse(date_url_expires))) {
@@ -1926,13 +1947,9 @@ public class AaaOuterFrame extends JFrame implements ComponentListener, ActionLi
 
 			String s = "      ";
 
-			String t = "aaBridge written by Roger Pfister\n\n" + "This is version   " + VersionAndBuilt.getVer() + "  . . . .\n" 
-					+ "Build Number                 " + VersionAndBuilt.getBuildNo() + "\n"
-					+ "Built on                 " + VersionAndBuilt.getBuilt() + "\n\n"
-					+ "Thanks go to\n" + s
-					+ "Bo Haglund for the  DDS  code\n" + s
-					+ "    https://github.com/dds-bridge/dds\n"
-					+ "and \n" + s
+			String t = "aaBridge written by Roger Pfister\n\n" + "This is version   " + VersionAndBuilt.getVer() + "  . . . .\n"
+					+ "Build Number                 " + VersionAndBuilt.getBuildNo() + "\n" + "Built on                 " + VersionAndBuilt.getBuilt() + "\n\n"
+					+ "Thanks go to\n" + s + "Bo Haglund for the  DDS  code\n" + s + "    https://github.com/dds-bridge/dds\n" + "and \n" + s
 					+ "Charlene Gallaty\n" + s + "Sanja A\n" + s + "Filiz Sarıoğlu\n";
 
 			JOptionPane.showMessageDialog(this, t, "About - aaBridge", JOptionPane.INFORMATION_MESSAGE, icon);

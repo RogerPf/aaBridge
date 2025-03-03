@@ -18,14 +18,68 @@ import com.rogerpf.aabridge.controller.Aaa;
 //@formatter:off
 
 public class VersionAndBuilt {
-	static int prob_fmt_req_numb = /* best to leave this alone ... best to leave THIS setting alone unless */6000;// compatibility needed
-	
-	static String ver = "6.4.0.";  public static String devExtra = "";    // extra is dev only, normally null
+	static int prob_fmt_req_numb = /* best to leave this alone ... best to leave THIS setting alone unless */6000;// compatibility needed7
+	static String ver = "7.0.0.";  public static String devExtra = "";    // extra is dev only, normally null
 
-	public static int buildNo = 6314;     static String y = "2025", m = "Jan", d = "01";
+	public static int buildNo = 7032;     static String y = "2025", m = "Mar", d = "01";
 
 
-    // 2024-01-01  6314       release candidate   version 6.4
+	// 2025-03-01  7032    release candidate   version 7.0
+
+	// 2025-02-24  7025    Hondo mentoring2502d
+	// 2025-02-24  7024    No  DDS  !   lin file   added to Welcome page left column 
+	// 2025-02-23  7023    just added 2.8.1 removed was bad
+	// 2025-02-23  7022    2015 2.8.1 macos cleaned up but on in full dds collection
+	// 2025-02-23  7021    more BOH dds downloads added to collection
+	// 2025-02-22  7020            DEV removed & re-order in the enclosing git repo
+	// 2025-02-22  7019  __DEV     same as 7018 but built on older eclipse  back in pole position
+	// 2025-02-21  7018  __DEV     macos aarch64 now back to dds ver 2.8.2  2025-01-24
+	// 2025-02-17  7017  __DEV     cleaner  DDS not found  messages
+	// 2025-02-17  7016  __DEV     Hondo mentoring2502c  and only working dds libs are kept
+	// 2025-02-15  7015  __DEV     trying  again
+	// 2025-02-15  7014  __DEV     trying  new darwin_x64-86  dylib 2.8.4
+	// 2025-02-13  7013  __DEV     now   __DEV
+	// 2025-02-13  7012  __DEV     boh_dds.dll added for win32_aarch64
+	// 2025-02-10  7011  __DEV     Version 7 name adopted for the next release
+
+	// 2025-02-10  6315  _a7__Jna-47   p2 mouse hint now only shows 4 times and Yellow java messages commented out
+	// 2025-02-10  6315  _a7__Jna-46   p1 mouse hint now only shows 4 times and Yellow java messages commented out
+	// 2025-02-10  6315  _a7__Jna-45   Font Shrink now repaints when changed
+	// 2025-02-10  6315  _a7__Jna-44   more font shrink mainly for Linux
+	// 2025-02-10  6315  _a7__Jna-43   lin file  Lines Don't Fit re-written and mentoring2502b added
+	// 2025-02-09  6315  _a7__Jna-42   fontShrink added - still needs re=painter
+	// 2025-02-08  6315  _a7__Jna-41   fontShrink being added
+	// 2025-02-07  6315  _a7__Jna-40   dds builds 2.8.4 added - dds now also saved zipped so dates can be restored
+	// 2025-02-07  6315  _a7__Jna-39   not issued same as above
+	// 2025-02-02  6315  _a7__Jna-38   Hondo mentoring2502a
+	// 2025-02-02  6315  _a3__Jna-37   dll's now have good copy to source see yyy_built_dds_libs 2
+	// 2025-02-02  6315  _a3__Jna-36   dll's now have good copy to source see yyy_built_dds_libs
+	// 2025-02-01  6315  _a3__Jna-35   DDS Availability now also shown on SHOW page
+	// 2025-02-01  6315  _a3__Jna-34   welcome feb dated and hono mentorings added
+	// 2025-02-01  6315  _a3__Jna-33   repair stage 3 done
+	// 2025-02-01  6315  _a3__Jna-32   repair stage 2 - now competed
+	// 2025-02-01  6315  _a3__Jna-31   mess up with  yyy_built_dds_libs -  repair stage 1
+
+	// 2025-01-30  6315  _a3__Jna-18   copy bugs fixed - not saved to git repo
+	// 2025-01-30  6315  _a3__Jna-17    prefered dds libs for testung include win32-aarch64
+	// 2025-01-29  6315  _a3__Jna-16   linux_aarch  added  built on ubuntu vm on mac mini
+	// 2025-01-26  6315  _a3__Jna-15   dds 'lib' now renamed to    doh_dds  to be spread to repos i.e. mac and win 11 VM
+	// 2025-01-22  6315  _a3__Jna-14    rebuit on win for test on mac
+	// 2025-01-21  6315  _a3__Jna-13_mac   darwin-x86-64 works
+	// 2025-01-21  6315  _a3__Jna-12    darwin is now darwin-x86-64 and darwin-aarch64 (to be filled with its .dylib)
+	// 2025-01-21  6315  _a3__Jna-11    jna sources removed
+	//
+	//                   jna dev not needed JNA-5 now used
+	//
+	// 2025-01-14  6315  _a3  Hondo mentoring2501c  newer Java 23 deprecation fixes added & .project back in repo
+	// 2025-01-13  6315  _a2  Hondo mentoring2501b
+	// 2025-01-06  6315  _a1  Hondo mentoring2501a
+	//
+	//			migration to repo-19
+	//
+	// 2025-01-05  6315  _a0  all Hondo folders renumbered to allow for more years
+
+    // 2025-01-01  6314       release candidate   version 6.4
 
 	// 2024-12-31  6313  _n6  "wrong java" message much cleaner
 	// 2024-12-30  6313  _n5  "wrong java" message added when macOS and aarch
@@ -37,10 +91,10 @@ public class VersionAndBuilt {
 	// 2024-12-09  6313  _n1  Hondo mentoring2412a & Analyser box re-spaced for longer MAC fonts
 	// 2024-11-24  6313  _m3  Hondo mentoring2411c
 	// 2024-11-17  6313  _m2  Hondo mentoring2411b
-	// 2024-11-10  6313  _m1  Hondo mentoring2411a 
-	// 2024-10-28  6313  _k4  Hondo mentoring2410c 
-	// 2024-10-21  6313  _k3  Hondo mentoring2410b 
-	// 2024-10-14  6313  _k2  Hondo mentoring2410a 
+	// 2024-11-10  6313  _m1  Hondo mentoring2411a
+	// 2024-10-28  6313  _k4  Hondo mentoring2410c
+	// 2024-10-21  6313  _k3  Hondo mentoring2410b
+	// 2024-10-14  6313  _k2  Hondo mentoring2410a
 	// 2024-10-10  6313  _k1                       _ aaBridge Introduction .doc added
     // 2024-09-23  6313  _j4  Hondo mentoring2409d
     // 2024-09-23  6313  _j3  Hondo mentoring2409c and BBO Helper workaround
@@ -116,7 +170,7 @@ public class VersionAndBuilt {
 	// 2023-03-13  6211  _c2  Hondo mentoring2303b
 	// 2023-03-06  6211  _c1  Hondo mentoring2303a
 	// 2023-03-02  6211  _b6  no changes
- 
+
 	// 2023-03-01  6210       release candidate   version 6.2
 
 	// 2023-02-27  6109  _b5n Hondo mentoring2302d
@@ -190,9 +244,9 @@ public class VersionAndBuilt {
 	// 2022-01-17  6007  _a3  Hondo mentoring2201c
 	// 2022-01-10  6007  _a2  Hondo mentoring2201b
 	// 2022-01-03  6007  _a1  Hondo mentoring2201a
-	
+
 	// 2022-01-01  6006       release candidate
-	
+
 	// 2022-01-01  6005  _n8  pre candidate build
 	// 2021-12-27  6005  _n7  Boldbida's official "Play of the Hand"  lin file  added
 	// 2021-12-27  6005  _n6  Hondo mentoring2112d  and updates to WIN and MAC install docs
@@ -221,13 +275,13 @@ public class VersionAndBuilt {
 	// 2021-07-26  6005  _g3  Hondo mentoring2107c
 	// 2021-07-12  6005  _g2  Hondo mentoring2107b
 	// 2021-07-05  6005  _g1  Hondo mentoring2107a
-	
+
 	// 2021-07-01  6004       Release candidate
-	
+
 	// 2021-06-31  6003  _f4  pre major release test build
 	// 2021-06-21  6003  _f3  Hondo mentoring2106c
 	// 2021-06-14  6003  _f2  Hondo mentoring2106b
-	// 2021-06-07  6003  _f1  Hondo mentoring2106a 
+	// 2021-06-07  6003  _f1  Hondo mentoring2106a
 	// 2021-06-01  6003  _e5  Hondo mentoring2105e
 	// 2021-05-24  6003  _e4  Hondo mentoring2105d
 	// 2021-05-17  6003  _e3  Hondo mentoring2105c
@@ -237,7 +291,7 @@ public class VersionAndBuilt {
 	// 2021-04-22  6003  _d4  Drury added to aadm and to 1827 hands
 	// 2021-04-19  6003  _d3  Hondo mentoring2104c
 	// 2021-04-11  6003  _d2  Hondo mentoring2104b
-	// 2021-04-04  6003  _d1  Hondo mentoring2104a  
+	// 2021-04-04  6003  _d1  Hondo mentoring2104a
 	// 2021-03-28  6003  _c6  Hondo mentoring2103d
 	// 2021-03-22  6003  _c5  Hondo mentoring2103c
 	// 2021-03-15  6003  _c4  Hondo mentoring2103b
@@ -251,9 +305,9 @@ public class VersionAndBuilt {
 	// 2021-01-17  6003  _a3  Hondo mentoring2101c
 	// 2021-01-11  6003  _a2  Hondo mentoring2101b
 	// 2021-01-03  6003  _a1  Hondo mentoring2101a
-	
+
 	// 2021-01-01  6002       Release Candidate
-	
+
 	// 2021-01-01  6000       pre major release test build
 	// 2021-01-01  5229  _p8  Grouping Books and Menubar  -  a How To.doc  updated
 	// 2021-01-01  5229  _p7  More shortcuts added for buttons
@@ -275,7 +329,7 @@ public class VersionAndBuilt {
 	// 2020-12-22  5229  _n3  mass inclusion of BIL not sorted out fully
 	// 2020-12-20  5229  _n2  hondo mentoring2012c added
 	// 2020-12-17  5229  _n1  DEV_config file params added to help debug lin from xml
-	// 2020-12-15  5229  _n0  hondo mentoring2012b added 
+	// 2020-12-15  5229  _n0  hondo mentoring2012b added
 	// 2020-12-12  5229  _m9  rework of _m8 which is buggy like m3 !
 	// 2020-12-12  5229  _m8  auto add now does NOT stop attempt to play lowest card
 	// 2020-12-12  5229  _m7  fixed bug added _m3 single letter cards eg play a diamond   pg|d| would not play
@@ -288,13 +342,13 @@ public class VersionAndBuilt {
 	// 2020-12-05  5229  _k9  single missing cards (as delt) not now reported if in DEV mode
 	// 2020-12-02  5229  _k8  drag drop Books-E  book  appears   stable
 	// 2020-12-01  5229  _k7  dropped books book marks sort of working
-	// 2020-12-01  5229  _k6  Can drag and drop "books" well sort of 
+	// 2020-12-01  5229  _k6  Can drag and drop "books" well sort of
 	// 2020-11-30  5229  _k5  #text now preserves rh header id
 	// 2020-11-19  5229  _k4  bug fixed in 'Alo' handling
 	// 2020-11-16  5229  _k3  Testing the 'Also' extension to Bot Instructions 'bi'
 	// 2020-11-15  5229  _k2  Hondo mentoring2011c
 	// 2020-11-15  5229  _k1  BI Now stable first field is West's card the second is East's
-	// 2020-11-14  5229  _k0  Some stability now  -  BI bot instructions changed 
+	// 2020-11-14  5229  _k0  Some stability now  -  BI bot instructions changed
 	// 2020-11-13  5229  _j9  bi bot instruction bug fixed (fingers crossed)
 	// 2020-11-11  5229  _j8  changes to  pf 1st button message
 	// 2020-11-10  5229  _j7  tweek to the - fix the non-restore hidden - below
@@ -330,10 +384,10 @@ public class VersionAndBuilt {
 	// 2020-07-31  5227  _u4  tiny fix - Stop clearing the "y" of Sally
 	// 2020-07-30  5227  _u3  tiny fix
 	// 2020-07-30  5227  _u2  tiny fix
-	// 2020-07-30  5227  _u1  renamed and extended - Lin_Files_-_a_Starter__inc_Problem_Format.doc 
+	// 2020-07-30  5227  _u1  renamed and extended - Lin_Files_-_a_Starter__inc_Problem_Format.doc
 	// 2020-07-29  5227  _t   now usable
 	// 2020-07-28  5227  _t2  And more
-	// 2020-07-27  5227  _t1  More tweaks 
+	// 2020-07-27  5227  _t1  More tweaks
 	// 2020-07-27  5227  _s   Problem mode more tweaks
 	// 2020-07-27  5227  _r   Problem mode extended to include hidden places for user hints
 	// 2020-07-26  5227  _q   Hondo mentoring2007c added   and BOT Hints unzipped
@@ -400,7 +454,7 @@ public class VersionAndBuilt {
 	// 2020-01-21  5223  _d   Tourney options done but not documentation + hondo mentoring2001c
 	// 2020-01-20  5223  _d3  appears to be as wanted - hints to be fixed
 	// 2020-01-19  5223  _d2  some re-naming
-	// 2020-01-18  5223  _d1  More work on "tourney save" options 
+	// 2020-01-18  5223  _d1  More work on "tourney save" options
 	// 2020-01-17  5223  _c   discard players names option added
 	// 2020-01-16  5223  _b   Hondo mentoring2001b added + new BBO format save options
 	// 2020-01-06  5223  _a   Hondo mentoring2001a added
@@ -478,7 +532,7 @@ public class VersionAndBuilt {
 	// 2019-08-01  5215  _p4  pre-build
 	// 2019-07-31  5215  _p3  Two more throw-in example hands added e6 e7
 	// 2019-07-29  5215  _p2  Charlene's changes added
-	// 2019-07-29  5215  _p1  Techniques Throw-in  minor edits 
+	// 2019-07-29  5215  _p1  Techniques Throw-in  minor edits
 	// 2019-07-29  5215  _m9  Richard Pavlicek Throw-in material added with permission
 	// 2019-07-27  5215  _m8  Question marks now do not show on the bidding when inside a deal
 	// 2019-07-27  5215  _m7  Roger on Throw-ins is now a Techniques section
@@ -494,7 +548,7 @@ public class VersionAndBuilt {
 	// 2019-07-14  5215  _g   PaP revamped and documented can also peek Opps
 	// 2019-07-13  5215  _e   Peek at Partner - reasonable
 	// 2019-07-13  5215  _d4  Again
-	// 2019-07-13  5215  _d3  Peek at Partner working but not TIDY 
+	// 2019-07-13  5215  _d3  Peek at Partner working but not TIDY
 	// 2019-07-13  5215  _d2  Safety
 	// 2019-07-12  5215  _d1  Peek on Partner buttons added but no actions yet
 	// 2019-07-08  5215  _c   Central bidding not showing is hands incomplete in tutorial - bug fix
@@ -527,7 +581,7 @@ public class VersionAndBuilt {
 	// 2019-04-19  5211  _r2  Study mode now not so fierce and more work on - Probs for new players
 	// 2019-04-18  5211  _r1  Fix to rotate bug (Charlene bug report) and bi bot instruction fix
 	// 2019-04-17  5211  _p9  note _p8 was saved late
-	// 2019-04-17  5211  _p8  More moved in to the public sections and ndf= 
+	// 2019-04-17  5211  _p8  More moved in to the public sections and ndf=
 	// 2019-04-16  5211  _p7  PFNP  Study info added
 	// 2019-04-16  5211  _p6  Hondo added
 	// 2019-04-15  5211  _p5  Charlene's input and new player stuff cleaned
@@ -536,10 +590,10 @@ public class VersionAndBuilt {
 	// 2019-04-10  5211  _p2  More highlight card and lowlight card/suit removed
 	// 2019-04-09  5211  _p1  Some bot hints added to LTPB2 and fix
 	// 2019-04-09  5211  _n9  highlights and lowlights removed from LTPB1 and 2
-	// 2019-04-09  5211  _n8  os and hz cmds added va cmd supported all documented 
+	// 2019-04-09  5211  _n8  os and hz cmds added va cmd supported all documented
 	// 2019-04-08  5211  _n7  More on old hondo links
 	// 2019-04-07  5211  _n6  Watsons renamed
-	// 2019-04-07  5211  _n5  Hondo links now (almost) all forced internal 
+	// 2019-04-07  5211  _n5  Hondo links now (almost) all forced internal
 	// 2019-04-07  5211  _n4  Build before working on hondo
 	// 2019-04-06  5211  _n3  ltpb2  parse complete
 	// 2019-04-05  5211  _n2  6 and 7 left to do
@@ -548,7 +602,7 @@ public class VersionAndBuilt {
 	// 2019-04-03  5211  _k8  more Charlene fixes to LTPB1
 	// 2019-04-03  5211  _k7  Beginners link to LTPB1 in welcome menu
 	// 2019-04-02  5211  _k6  more bidding panel display correction
-	// 2019-04-02  5211  _k5  ltpb1 - Most bolding removed 
+	// 2019-04-02  5211  _k5  ltpb1 - Most bolding removed
 	// 2019-04-02  5211  _k4  ltpb1 Before BOLD removal
 	// 2019-04-02  5211  _k3  highlighted (alerted) floating bids better size
 	// 2019-04-02  5211  _k2  ltpb1 completed first parse
@@ -569,7 +623,7 @@ public class VersionAndBuilt {
 	//          version number increased to 5.1.0.
 
 	// 2019-03-06  5208  for making videos with a 'nice' name
-	// 2019-03-06  5207  _j4  Ariks cleaned up 
+	// 2019-03-06  5207  _j4  Ariks cleaned up
 	// 2019-03-04  5207  _j3  hondo added, new doc is about OK - videos needed
 	// 2019-03-02  5207  _j2  has new  BBO to aab doc
 	// 2019-03-01  5207  _j1  Working on the docs
@@ -612,7 +666,7 @@ public class VersionAndBuilt {
 	// 2018-10_27  5173  _n   doc from Charlene
 	// 2018-10_23  5173  _k   deal and merge flyer  updated
 	// 2018-10_22  5173  _j7  aadm doc back from Charlene and dealer scripts doc created
-	// 2018-10_18  5173  _j5  aadm comming along 
+	// 2018-10_18  5173  _j5  aadm comming along
 	// 2018-10_17  5173  _j4  Leading against NT scripts added
 	// 2018-10_15  5173  _j3  Charlene's corrections to Size Position GRID added
 	// 2018-10_14  5173  _j2  Hondo and Size Position GRID
@@ -653,9 +707,9 @@ public class VersionAndBuilt {
 	// 2018-08_28  5167  _v5  Small cleaning - lin files a starter
 	// 2018-08_28  5167  _v4  deleted more old dead (commented out) code
 	// 2018-08_28  5167  _v3  dlae seat now shows when in tutorial mode
-	// 2018-08_28  5167  _v2  much cleaning of commented out code 
+	// 2018-08_28  5167  _v2  much cleaning of commented out code
 	// 2018-08_28  5167  _v1  endplays 2 and copy doc collection now shows messages
-	// 2018-08_27  5167  _u9  Practice lin  is now  Practice 1827 lin  
+	// 2018-08_27  5167  _u9  Practice lin  is now  Practice 1827 lin
 	// 2018-08_27  5167  _u8  amber green & red green + better menus all very clean
 	// 2018-08_26  5167  _u7  Help and How do I tided-up
 	// 2018-08_26  5167  _u6  amber and square red option on right hand panel
@@ -669,14 +723,14 @@ public class VersionAndBuilt {
 	// 2018-08_21  5167  _s7  with java version in show options and arik endplay changes
 	// 2018-08_20  5167  _s6  same as s5 - built after install testing
 	// 2018-08_20  5166  _s5  Small tweaks
-	// 2018-08_20  5165  _s4  Twisters reasonable 
+	// 2018-08_20  5165  _s4  Twisters reasonable
 	// 2018-08_19  5165  _s3  starts from now show Bidding and play as options
 	// 2018-08_19  5165  _s2  many OLD Kib Seat settings commented out (were previously hidden)
 	// 2018-08_19  5164  _s1  test build of 5.0    to test the new inno scripts compiler
 	// 2018-08_19  5162  _s1  test build of 5.0
 
 	//          version number increased to 5.0.0.
-	
+
 	// 2018-08_18  3169  _r9  Playing a Hand  doc started
 	// 2018-08_18  3169  _r8  Show Hide in Left column now two "radio buttons"
 	// 2018-08_18  3169  _r7  Name changes of file and variables to match
@@ -688,9 +742,9 @@ public class VersionAndBuilt {
 	// 2018-08_16  3169  _r1  New multisave and Rotate layout works
 	// 2018-08_15  3169  _p9  tiny tweak to to OCP 14.2
 	// 2018-08_15  3169  _p8  Identical to p7  p7 p7
-	
+
 	//			migrated to  repo-16   (after crash)
-	
+
 	// 2018-08_15  3169  _p7  Identical to p6  p6 p6
 	// 2018-08_15  3169  _p6  new welcome lins added
 	// 2018-08_14  3169  _p5  Lesson 11 and 12 of basics and more changes to Doc Collection
@@ -710,7 +764,7 @@ public class VersionAndBuilt {
 	// 2018-07-31  3169  _k   More on the new - new user introduction
 	// 2018-07-30  3169  _h   Much cut from the Welcome menu
 	// 2018-07-29  3169  _g   hondo WeakNT sorted out
-	// 2018-07-29  3169  _f   Extra Settings on 'Seat Choice' now hidden 
+	// 2018-07-29  3169  _f   Extra Settings on 'Seat Choice' now hidden
 	// 2018-07-19  3169  _e   md should default to south and not inherit dealer dir
 	// 2018-07-18  3169  _d   Lin file Course added v1.10 added
 	// 2018-07-09  3169  _c   prob_fmt_req_numb  added
@@ -718,15 +772,15 @@ public class VersionAndBuilt {
 	// 2018-07-03  3169  _a   Settings
 	// 2018-07-03  3168  Release Candidate
 
-	
+
 	static String built = y + " " + m + " " + d;
 
 	static String status = "  built   " + built + "   ";
-	
+
 	static Date dateBuilt;
 	static Date dateExpires;
-	
-	public static int getProbFmtReqNumber() {		
+
+	public static int getProbFmtReqNumber() {
 		return prob_fmt_req_numb;
 	}
 
@@ -753,19 +807,19 @@ public class VersionAndBuilt {
 
 		int id = Aaa.extractPositiveInt(d);
 		assert (1 <= id && id <= 31);
-		
+
 		Calendar cal = Calendar.getInstance();
-		
+
 	    cal.set(Calendar.YEAR, iy);
 	    cal.set(Calendar.MONTH, im);
 	    cal.set(Calendar.DAY_OF_MONTH, id);
-	
+
 		dateBuilt = cal.getTime();
-		
-		int vaild_for_days = 60; 
-		
+
+		int vaild_for_days = 60;
+
 		cal.add(Calendar.DATE, vaild_for_days);
-		
+
 		dateExpires = cal.getTime();
 	}
 

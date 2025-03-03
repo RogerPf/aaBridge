@@ -16,9 +16,9 @@ import com.sun.jna.ptr.IntByReference;
  * For help, please visit <a href="http://nativelibs4java.googlecode.com/">NativeLibs4Java</a> , <a href="http://rococoa.dev.java.net/">Rococoa</a>, or <a href="http://jna.dev.java.net/">JNA</a>.
  */
 public interface ComRogerpfAabridgeDdsLibrary extends Library {
-	public static final String JNA_LIBRARY_NAME = "com.rogerpf.aabridge.dds";
+	public static final String JNA_LIBRARY_NAME = "boh_dds";
 	public static final NativeLibrary JNA_NATIVE_LIB = NativeLibrary.getInstance(ComRogerpfAabridgeDdsLibrary.JNA_LIBRARY_NAME);
-	public static final ComRogerpfAabridgeDdsLibrary INSTANCE = (ComRogerpfAabridgeDdsLibrary) Native.loadLibrary(ComRogerpfAabridgeDdsLibrary.JNA_LIBRARY_NAME,
+	public static final ComRogerpfAabridgeDdsLibrary INSTANCE = (ComRogerpfAabridgeDdsLibrary) Native.load(ComRogerpfAabridgeDdsLibrary.JNA_LIBRARY_NAME,
 			ComRogerpfAabridgeDdsLibrary.class);
 	public static final int DDS_VERSION = (int) 20801;
 	public static final int DDS_HANDS = (int) 4;

@@ -29,7 +29,7 @@ public class futureTricks extends Structure {
 		super();
 	}
 
-	protected List<?> getFieldOrder() {
+	protected List<String> getFieldOrder() {
 		return Arrays.asList("nodes", "cards", "suit", "rank", "equals$", "score");
 	}
 

@@ -53,7 +53,7 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 	public final static int new_deal_levels = 2;
 	public final static int docCol_copied = 3;
 	public final static int docCol_error = 4;
-	public final static int wrong_java_found = 5;
+//	public final static int wrong_java_found = 5;
 
 	private int splash_id = none;
 
@@ -164,20 +164,20 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 			// fill the lozenge ----------------------------------------------
 
 			switch (splash_id) {
-			case wrong_java_found:
-				marginLeft = panelWidth * 0.2f;
-				marginRight = panelWidth * 0.2f;
-				marginTop = panelHeight * 0.2f;
-				marginBottom = panelHeight * 0.4f;
-
-				activityWidth = panelWidth - (marginLeft + marginRight);
-				activityHeight = panelHeight - (marginTop + marginBottom);
-
-				curve = panelHeight * 0.001f;
-				boarderWidth = 0.015f;
-
-				g2.setColor(Cc.Yellowish);
-				break;
+//			case wrong_java_found:
+//				marginLeft = panelWidth * 0.2f;
+//				marginRight = panelWidth * 0.2f;
+//				marginTop = panelHeight * 0.2f;
+//				marginBottom = panelHeight * 0.4f;
+//
+//				activityWidth = panelWidth - (marginLeft + marginRight);
+//				activityHeight = panelHeight - (marginTop + marginBottom);
+//
+//				curve = panelHeight * 0.001f;
+//				boarderWidth = 0.015f;
+//
+//				g2.setColor(Cc.Yellowish);
+//				break;
 
 			case docCol_error:
 			case mouse_wheel:
@@ -205,27 +205,27 @@ public class AaDragGlassPane extends JPanel implements AWTEventListener {
 
 			switch (splash_id) {
 
-			case wrong_java_found:
-				// mouse wheel message
-				g2.setColor(Color.black);
-				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.25f));
-				Aaa.drawCenteredString(g2, Aaf.get_wj1(), marginLeft, marginTop + activityHeight * 0.015f, activityWidth, activityHeight * 0.25f);
-
-				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.25f));
-				Aaa.drawCenteredString(g2, Aaf.get_wj2(), marginLeft, marginTop + activityHeight * 0.015f, activityWidth, activityHeight * 0.50f);
-
-				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.25f));
-				Aaa.drawCenteredString(g2, Aaf.get_wj3(), marginLeft, marginTop + activityHeight * 0.015f, activityWidth, activityHeight * 0.90f);
-
-				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.25f));
-				Aaa.drawCenteredString(g2, Aaf.get_wj4(), marginLeft, marginTop + activityHeight * 0.015f, activityWidth, activityHeight * 1.15f);
-
-				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.25f));
-				Aaa.drawCenteredString(g2, Aaf.get_wj5(), marginLeft, marginTop + activityHeight * 0.015f, activityWidth, activityHeight * 1.44f);
-
-				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.25f));
-				Aaa.drawCenteredString(g2, Aaf.get_wj6(), marginLeft, marginTop + activityHeight * 0.015f, activityWidth, activityHeight * 1.75f);
-				break;
+//			case wrong_java_found:
+//				// mouse wheel message
+//				g2.setColor(Color.black);
+//				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.25f));
+//				Aaa.drawCenteredString(g2, Aaf.get_wj1(), marginLeft, marginTop + activityHeight * 0.015f, activityWidth, activityHeight * 0.25f);
+//
+//				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.25f));
+//				Aaa.drawCenteredString(g2, Aaf.get_wj2(), marginLeft, marginTop + activityHeight * 0.015f, activityWidth, activityHeight * 0.50f);
+//
+//				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.25f));
+//				Aaa.drawCenteredString(g2, Aaf.get_wj3(), marginLeft, marginTop + activityHeight * 0.015f, activityWidth, activityHeight * 0.90f);
+//
+//				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.25f));
+//				Aaa.drawCenteredString(g2, Aaf.get_wj4(), marginLeft, marginTop + activityHeight * 0.015f, activityWidth, activityHeight * 1.15f);
+//
+//				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.25f));
+//				Aaa.drawCenteredString(g2, Aaf.get_wj5(), marginLeft, marginTop + activityHeight * 0.015f, activityWidth, activityHeight * 1.44f);
+//
+//				g2.setFont(BridgeFonts.internatBoldFont.deriveFont(fontSize * 0.25f));
+//				Aaa.drawCenteredString(g2, Aaf.get_wj6(), marginLeft, marginTop + activityHeight * 0.015f, activityWidth, activityHeight * 1.75f);
+//				break;
 
 			case mouse_wheel:
 				// mouse wheel message

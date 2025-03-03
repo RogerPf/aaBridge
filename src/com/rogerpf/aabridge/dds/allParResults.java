@@ -20,7 +20,7 @@ public class allParResults extends Structure {
 		super();
 	}
 
-	protected List<?> getFieldOrder() {
+	protected List<String> getFieldOrder() {
 		return Arrays.asList("presults");
 	}
 

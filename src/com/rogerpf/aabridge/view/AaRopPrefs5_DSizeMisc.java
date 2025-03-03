@@ -195,7 +195,7 @@ class AaRopPrefs5_DSizeMisc extends ClickPanel implements ItemListener, ActionLi
 			size3.setSelected(App.tutorialDealSize == 3);
 			size4.setSelected(App.tutorialDealSize == 4);
 
-			App.mouseWheelSensitivity = (App.onMac ? 4 : 0);
+			App.mouseWheelSensitivity = (App.onMac ? 0 : 0);
 
 			dSize0.setSelected(App.mouseWheelSensitivity == 0);
 			dSize1.setSelected(App.mouseWheelSensitivity == 1);

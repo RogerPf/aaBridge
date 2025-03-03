@@ -34,7 +34,7 @@ public class contractType extends Structure {
 		super();
 	}
 
-	protected List<?> getFieldOrder() {
+	protected List<String> getFieldOrder() {
 		return Arrays.asList("underTricks", "overTricks", "level", "denom", "seats");
 	}
 

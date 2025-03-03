@@ -90,18 +90,23 @@ public class Aaf {
 	public static String  redArrow_4Cols      = "";
 	public static String  redArrow_dragDiv    = "";
 
-	public static final String  wj1m = "This is an  'M chip Mac'  running ARM Java,";
-	public static final String  wj1w = "This is an  'ARM chip Windows'  running ARM Java,";
-	public static final String  wj1l = "This is an  'ARM chip Linux'  running ARM Java,";
-	public static final String  wj2  = " this is the WRONG Java for aaBridge.";
-	public static final String  wj3m = "Google  'java macos'  &  download from Oracle";
-	public static final String  wj3w = "Google  'java windows'  &  download from Oracle";
-	public static final String  wj3l = "Google  'java linux'  &  download from Oracle";
-	public static final String  wj4 = " the INTEL Java 8,  NOT the ARM version.";
-	public static final String  wj5m = "eg:     jre-8u431-macosx-x64.dmg";
-	public static final String  wj5w = "eg:     jre-8u431-windows-x64.exe";
-	public static final String  wj5l = "eg:     jre-8u431-linux-x64.tar.gz";
-	public static final String  wj6 = "( once installed, the DDS should then work )";
+	public static final String  wj0 = "  -  reason unknown";
+	public static final String  wj02 = "  -  try using  Oracle Java 8";
+//	public static final String  wj0m = "  -  reason unknown";
+//	public static final String  wj0w = "  -  reason unknown";
+//	public static final String  wj0l = "  -  reason unknown";
+//	public static final String  wj1m = "This is an  'M chip Mac'  running ARM Java,";
+//	public static final String  wj1w = "This is an  'ARM chip Windows'  running ARM Java,";
+//	public static final String  wj1l = "This is an  'ARM chip Linux'  running ARM Java,";
+//	public static final String  wj2  = " this is the WRONG Java for aaBridge.";
+//	public static final String  wj3m = "Google  'java macos'  &  download from Oracle";
+//	public static final String  wj3w = "Google  'java windows'  &  download from Oracle";
+//	public static final String  wj3l = "Google  'java linux'  &  download from Oracle";
+//	public static final String  wj4 = " the INTEL Java 8,  NOT the ARM version.";
+//	public static final String  wj5m = "eg:     jre-8u431-macosx-x64.dmg";
+//	public static final String  wj5w = "eg:     jre-8u431-windows-x64.exe";
+//	public static final String  wj5l = "eg:     jre-8u431-linux-x64.tar.gz";
+//	public static final String  wj6 = "( once installed, the DDS should then work )";
                                               
 	// The three 'box' instructions		      
 	public static String  instruct_bid        = "";
@@ -198,41 +203,53 @@ public class Aaf {
 	public static String  numbersAsWords[]    = { "void", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "tweleve", "thirteen" };
 	public static String  box_text[]          = { "", "", "", "" };
 	
-	public static String get_wj1() {
-		if (App.onMac)
-			return wj1m;
-		else if (App.onWin)
-			return wj1w;
-		return wj1l;
+	public static String get_wj0() {
+		if (!App.oracle_java || !App.using_java_8)
+			return Aaf.wj0 + Aaf.wj02;
+		else
+			return Aaf.wj02;
+//		if (App.onMac)
+//			return wj0m;
+//		else if (App.onWin)
+//			return wj0w;
+//		return wj0l;
 	}
 	
-	public static String get_wj2() {
-		return wj2;
-	}
-
-	public static String get_wj3() {
-		if (App.onMac)
-			return wj3m;
-		else if (App.onWin)
-			return wj3w;
-		return wj3l;
-	}
-
-	public static String get_wj4() {
-		return wj4;
-	}
-
-	public static String get_wj5() {
-		if (App.onMac)
-			return wj5m;
-		else if (App.onWin)
-			return wj5w;
-		return wj5l;
-	}
-
-	public static String get_wj6() {
-		return wj6;
-	}
+//	public static String get_wj1() {
+//		if (App.onMac)
+//			return wj1m;
+//		else if (App.onWin)
+//			return wj1w;
+//		return wj1l;
+//	}
+//	
+//	public static String get_wj2() {
+//		return wj2;
+//	}
+//
+//	public static String get_wj3() {
+//		if (App.onMac)
+//			return wj3m;
+//		else if (App.onWin)
+//			return wj3w;
+//		return wj3l;
+//	}
+//
+//	public static String get_wj4() {
+//		return wj4;
+//	}
+//
+//	public static String get_wj5() {
+//		if (App.onMac)
+//			return wj5m;
+//		else if (App.onWin)
+//			return wj5w;
+//		return wj5l;
+//	}
+//
+//	public static String get_wj6() {
+//		return wj6;
+//	}
 
 	private static void readCachedStrings() {
 		// =============================================================
@@ -600,15 +617,17 @@ public class Aaf {
 			}
 		}
 
-		System.out.println("Language    OS: " + iso_lang_OS + "   Requested: " + iso_lang_req + "   Selected: " + iso_lang_active + "     Deck: " + iso_deck_lang);	
-		System.out.println(" ");
+		System.out.print("Language   OS: " + iso_lang_OS);	
+		System.out.print("    Requested: " + iso_lang_req);	
+		System.out.print("    Selected: " + iso_lang_active);	
+		System.out.print("    Deck: " + iso_deck_lang + "   ");	
 			
 		if (new File(App.downloads_folder).exists() == false) {
 			System.out.println("    WARNING  Using Downloads folder:    " + App.downloads_folder + "    which does NOT exist - will try to create it");
 			File dlf = new File(App.downloads_folder);
 			dlf.mkdir();
+		    System.out.println(" ");
 		}
-		System.out.println(" ");
 		
 		// Optermization for fast look up
 		App.isUsing__en_US = iso_lang_active.contentEquals("en_US");

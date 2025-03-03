@@ -27,7 +27,7 @@ public class boards extends Structure {
 		super();
 	}
 
-	protected List<?> getFieldOrder() {
+	protected List<String> getFieldOrder() {
 		return Arrays.asList("noOfBoards", "deals", "target", "solutions", "mode");
 	}
 

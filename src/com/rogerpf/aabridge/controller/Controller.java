@@ -178,10 +178,12 @@ public class Controller implements KeyEventDispatcher, ActionListener {
 				App.frame.setExtendedState(java.awt.Frame.MAXIMIZED_VERT);
 			}
 
-			if (App.wrong_java) {
-				App.frame.aaDragGlassPane.showOverlayScreen(AaDragGlassPane.wrong_java_found);
-			}
-			else if (App.showMouseWheelSplash) {
+//			if (App.wrong_java) {
+//				App.frame.aaDragGlassPane.showOverlayScreen(AaDragGlassPane.wrong_java_found);
+//			}
+//			else
+
+			if (App.showMouseWheelSplash) {
 				App.frame.aaDragGlassPane.showOverlayScreen(AaDragGlassPane.mouse_wheel);
 			}
 
@@ -1034,7 +1036,7 @@ class LinCacheAdmin extends Thread {
 			long when = 0;
 
 			try {
-				when = new Long(when_str);         // seconds since 1970 Jan 1st
+				when = Long.parseLong(when_str);         // seconds since 1970 Jan 1st
 			} catch (NumberFormatException e) {
 				mss.deleteFile();
 				continue;
@@ -1066,7 +1068,7 @@ class LinCacheAdmin extends Thread {
 				continue;  // already tried too many times so we do not bother again
 
 			try {
-				bbo_date_time = new Long(ayt[2]);
+				bbo_date_time = Long.parseLong(ayt[2]);
 			} catch (NumberFormatException e) {
 				continue;  // we ignore ones with invalid dates
 			}

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013 Roger Pfister.
+  * Copyright (c) 2013 Roger Pfister.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the GNU Public License v2.0
  * which accompanies this distribution, and is available at
@@ -112,6 +112,7 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 
 	QButton joinLinFiles;
 
+	JSlider fontShrink;
 	JSlider mainWidth;
 	JSlider playSpeed;
 	JSlider bidSpeed;
@@ -119,7 +120,7 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 
 	JLabel bidSpeelabel;
 
-	QButton resetSpeeds;
+	QButton resetSliderValues;
 
 	public void realSaves_folderNowAvailable() {
 		tfSavesFolderDisplay.setText(App.realSaves_folder);
@@ -371,8 +372,8 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 //		------- next column ---------------------------
 
 		Hashtable<Integer, JLabel> colLab = new Hashtable<Integer, JLabel>();
-		colLab.put(new Integer(-200), new JLabel(Aaf.gT("botPanel.dark")));
-		colLab.put(new Integer(+170), new JLabel(Aaf.gT("botPanel.pastel")));
+		colLab.put(Integer.valueOf(-200), new JLabel(Aaf.gT("botPanel.dark")));
+		colLab.put(Integer.valueOf(+170), new JLabel(Aaf.gT("botPanel.pastel")));
 
 		b3.add(new JLabel(Aaf.gT("botPanel.scrCols")), "gapy 2, center");
 		b3.add(colorIntensity = new JSlider(JSlider.HORIZONTAL, -255, +255, 0), "gapy 1, wmin 120, wmax 150");
@@ -384,8 +385,8 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 		b3.add(label = new QLabel(" ", ""), "center");
 
 		Hashtable<Integer, JLabel> tintLab = new Hashtable<Integer, JLabel>();
-		tintLab.put(new Integer(-25), new JLabel(Aaf.gT("botPanel.orange")));
-		tintLab.put(new Integer(+35), new JLabel(Aaf.gT("botPanel.blue")));
+		tintLab.put(Integer.valueOf(-25), new JLabel(Aaf.gT("botPanel.orange")));
+		tintLab.put(Integer.valueOf(+35), new JLabel(Aaf.gT("botPanel.blue")));
 
 		b3.add(new JLabel(Aaf.gT("botPanel.scrTint")), "gapy 10, center");
 		b3.add(colorTint = new JSlider(JSlider.HORIZONTAL, -50, +50, 0), "wmin 120, wmax 150");
@@ -419,30 +420,30 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 
 //		------- next column ---------------------------
 
-//		Hashtable<Integer, JLabel> labTab0 = new Hashtable<Integer, JLabel>();
-//		labTab0.put(new Integer(10), new JLabel(Aaf.gT("botPanel.std")));
-//		labTab0.put(new Integer(90), new JLabel(Aaf.gT("botPanel.wide")));
+		String mShrink_TT = Aaf.gT("botPanel.fontShrink_TT");	
+		b4.add(new QLabel(Aaf.gT("botPanel.fontShrink"), mShrink_TT), "gapy 2, center");
+		b4.add(fontShrink = new JSlider(1000, 1300, App.fontShrink), "gapy 1, center, wmin 130, wmax 130");
+		fontShrink.setToolTipText(mShrink_TT);
+		fontShrink.addChangeListener(this);
+		b4.add(label = new QLabel(Aaf.gT("botPanel.std"), mShrink_TT), "split2, gapx 7, flowx, left, grow");
+		b4.add(label = new QLabel(Aaf.gT("botPanel.smaller") + "  ", mShrink_TT), "right");
+
+		b4.add(label = new QLabel(" ", ""), "center");	
+
 
 		String mWidth_TT = Aaf.gT("botPanel.mainWidth_TT");
-
 		b4.add(new QLabel(Aaf.gT("botPanel.mainWidth"), mWidth_TT), "gapy 2, center");
 		b4.add(mainWidth = new JSlider(100, 120, App.ratioFiddle), "gapy 1, center, wmin 130, wmax 130");
 		mainWidth.setToolTipText(mWidth_TT);
 		mainWidth.addChangeListener(this);
-//		mainWidth.setLabelTable(labTab0);
-//		mainWidth.setPaintLabels(true);
-		mainWidth.setMinorTickSpacing(1);
-		mainWidth.setMajorTickSpacing(5);
-		mainWidth.setPaintTicks(true);
-		mainWidth.setSnapToTicks(true);
 		b4.add(label = new QLabel(Aaf.gT("botPanel.std"), mWidth_TT), "split2, gapx 7, flowx, left, grow");
 		b4.add(label = new QLabel(Aaf.gT("botPanel.wide") + "  ", mWidth_TT), "right");
 
 		b4.add(label = new QLabel(" ", ""), "center");
 
 		Hashtable<Integer, JLabel> labTab1 = new Hashtable<Integer, JLabel>();
-		labTab1.put(new Integer(10), new JLabel(Aaf.gT("botPanel.slow")));
-		labTab1.put(new Integer(90), new JLabel(Aaf.gT("botPanel.fast")));
+		labTab1.put(Integer.valueOf(10), new JLabel(Aaf.gT("botPanel.slow")));
+		labTab1.put(Integer.valueOf(90), new JLabel(Aaf.gT("botPanel.fast")));
 
 		b4.add(new JLabel(Aaf.gT("botPanel.playSpeed")), "gapy 10, center");
 		b4.add(playSpeed = new JSlider(JSlider.HORIZONTAL), "center, wmin 120, wmax 150");
@@ -457,8 +458,8 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 		// label.setForeground(Aaa.optionsTitleGreen);
 
 		Hashtable<Integer, JLabel> labTab2 = new Hashtable<Integer, JLabel>();
-		labTab2.put(new Integer(2), new JLabel(Aaf.gT("botPanel.noExtra")));
-		labTab2.put(new Integer(7), new JLabel(Aaf.gT("botPanel.longer")));
+		labTab2.put(Integer.valueOf(2), new JLabel(Aaf.gT("botPanel.noExtra")));
+		labTab2.put(Integer.valueOf(7), new JLabel(Aaf.gT("botPanel.longer")));
 
 		String ttext = Aaf.gT("botPanel.eotPause_TT");
 
@@ -476,9 +477,9 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 
 		b4.add(label = new QLabel(" ", ""), "center");
 
-		b4.add(resetSpeeds = new QButton(this, Aaf.gT("botPanel.resetEtc")), "gapy 12, center");
+		b4.add(resetSliderValues = new QButton(this, Aaf.gT("botPanel.resetEtc")), "gapy 12, center");
 		if (App.onMac == false)
-			resetSpeeds.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
+			resetSliderValues.setBorder(BorderFactory.createEmptyBorder(4, 4, 2, 4));
 
 		add(b4, "growy");
 
@@ -609,15 +610,19 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 			}
 		}
 
-		else if (e.getSource() == resetSpeeds) {
+		else if (e.getSource() == resetSliderValues) {
+			App.fontShrink  = (App.onLinux) ? App.defaultLinux_fontShrink : 1000;
+			fontShrink.setValue(App.fontShrink);
+
+			App.ratioFiddle = 100; // (App.onLinux) ? App.defaultLinux_ratioFiddle : 100;
+			mainWidth.setValue(App.ratioFiddle);
+			
 			App.playPluseTimerMs = App.defaultplayPluseTimerMs;
 			playSpeed.setValue(pluseToPercent(App.playPluseTimerMs));
 
 			App.eotExtendedDisplay = App.defaultEotExtendedDisplay;
 			eotDelay.setValue(App.eotExtendedDisplay);
 
-			App.ratioFiddle = (App.onLinux) ? App.defaultLinux_ratioFiddle : 100;
-			mainWidth.setValue(App.ratioFiddle);
 			App.frame.calcAllMigLayoutStrings();
 			App.aaBookPanel.playloadPanel_resized_check();
 			App.frame.payloadPanelShaker();
@@ -713,10 +718,22 @@ class AaLowerOptionsPanel extends ClickPanel implements ChangeListener, ActionLi
 			if (App.allConstructionComplete) {
 				App.frame.calcAllMigLayoutStrings();
 				App.aaBookPanel.playloadPanel_resized_check();
-//				App.dealMajorChange();
-//				App.gbp.matchPanelsToDealState();
-//				App.frame.invalidate();
-//				App.frame.repaint();
+				App.dealMajorChange();
+				App.gbp.matchPanelsToDealState();
+				App.frame.invalidate();
+				App.frame.repaint();
+				App.frame.payloadPanelShaker();
+			}
+		}
+		else if (source == fontShrink) {
+			App.fontShrink = source.getValue();
+			if (App.allConstructionComplete) {
+				App.frame.calcAllMigLayoutStrings();
+				App.aaBookPanel.playloadPanel_resized_check();
+				App.dealMajorChange();
+				App.gbp.matchPanelsToDealState();
+				App.frame.invalidate();
+				App.frame.repaint();
 				App.frame.payloadPanelShaker();
 			}
 		}

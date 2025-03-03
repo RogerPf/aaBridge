@@ -105,8 +105,11 @@ public class App {
 
 	static int mode = Aaa.NORMAL_ACTIVE;
 
+	public static int fontShrink; // 1000 - 1300 has an assumed divisor of 1000
+	public static final int defaultLinux_fontShrink = 1180;
+
 	public static int ratioFiddle; // 100 - 125 has an assumed divisor of 100
-	public static final int defaultLinux_ratioFiddle = 115;
+	// public static final int defaultLinux_ratioFiddle = 100;
 
 	// Visual Mode
 	public static final int Vm_InsideADeal = 1;
@@ -154,9 +157,10 @@ public class App {
 	public static boolean onLinux = false;  // later assumed if other two are false
 	public static boolean onMacOrLinux = false; 
 	public static boolean using_java_6 = false;	
+	public static boolean using_java_8 = false;	
 	public static boolean runningExpanded = false;
 	public static boolean arch_is_aarch = false;
-	public static boolean wrong_java = false;
+//	public static boolean wrong_java = false;
 
 	public static String bundleSep = "/";
 
@@ -222,13 +226,6 @@ public class App {
 	};
 
 	public static Color mnHeaderColor = mnHeaderColorAy[3]; // 3 is soft dark blue
-	
-	/**
-	 */
-	public static float now_always_one() {
-		// =============================================================================		
-		return /* (onLinux && fixLinuxLineSep) ? 1.125f :*/  1.0f;
-	}
 	
 	/**
 	 */
@@ -414,7 +411,9 @@ public class App {
 	public static int ropSelPrevTabIndex;	
 	public static int ropSelectedTabIndex;	
 
+	public static int showMouseWheelSpl_count;
 	public static boolean showMouseWheelSplash;
+	public static boolean showMouseWheelSp_Shows;
 	public static boolean showRedNewBoardArrow;
 	public static boolean showRedEditArrow;
 	public static boolean showRedDividerArrow;
@@ -607,12 +606,12 @@ public class App {
 
 		App.ratioFiddle = appPrefs.getInt("ratioFiddle", 99);
 		if (App.ratioFiddle < 100 || App.ratioFiddle > 120) {
-			if (App.onLinux) {
-				App.ratioFiddle = App.defaultLinux_ratioFiddle;
-			}
-			else {
-				App.ratioFiddle = 100;
-			}
+			App.ratioFiddle = 100;
+		}
+
+		App.fontShrink = appPrefs.getInt("fontShrink", 999);
+		if (App.fontShrink < 1000 || App.fontShrink > 1300) {
+			App.fontShrink  = (App.onLinux) ? App.defaultLinux_fontShrink : 1000;
 		}
 
 		int orig_width = 1008;
@@ -637,7 +636,14 @@ public class App {
 
 		ropSelPrevTabIndex = RopTab_2_KibSeat;  // We now always start in Kib Seat
 
-		showMouseWheelSplash= appPrefs.getBoolean("showMouseWheelSplash",true);
+		showMouseWheelSpl_count = appPrefs.getInt("showMouseWheelSpl_count",     0);
+		showMouseWheelSplash = appPrefs.getBoolean("showMouseWheelSplash", true);
+		if (showMouseWheelSpl_count > 3) {
+			showMouseWheelSplash = false;
+		}
+		else { 
+			showMouseWheelSpl_count++; 
+		}
 		showRedNewBoardArrow= appPrefs.getBoolean("showRedNewBoardArrow",true);
 		showRedEditArrow   = appPrefs.getBoolean("showRedEditArrow",   true);
 		showRedDividerArrow= appPrefs.getBoolean("showRedDividerArrow",false);
@@ -774,7 +780,7 @@ public class App {
 		if (mouseWheelDoes < WMouse_FLOW || mouseWheelDoes > WMouse_SINGLE)
 			mouseWheelDoes = WMouse_FLOW;
 
-		mouseWheelSensitivity = appPrefs.getInt("mouseWheelSensitivity",  (App.onMac ? 4 : 0));
+		mouseWheelSensitivity = appPrefs.getInt("mouseWheelSensitivity2",  (App.onMac ? 0 : 0));
 		if (mouseWheelSensitivity < 0 || mouseWheelSensitivity > 8)
 			mouseWheelSensitivity = 0;
 
@@ -856,8 +862,9 @@ public class App {
 
 		appPrefs.putBoolean("startedWithCleanSettings", false); //  always saved as false
 		
+		appPrefs.putInt("fontShrink", fontShrink);
 		appPrefs.putInt("ratioFiddle", ratioFiddle);
-
+		
 		maximized_both  = (App.frame.getExtendedState() == java.awt.Frame.MAXIMIZED_BOTH);
 		maximized_horiz = (App.frame.getExtendedState() == java.awt.Frame.MAXIMIZED_HORIZ);
 		maximized_vert  = (App.frame.getExtendedState() == java.awt.Frame.MAXIMIZED_VERT);
@@ -873,6 +880,7 @@ public class App {
 		appPrefs.putInt("vertDividerLocation", vertDividerLocation);
 		appPrefs.putInt("ropSelectedTabIndex", ropSelectedTabIndex);
 
+		appPrefs.putInt("showMouseWheelSpl_count",   showMouseWheelSpl_count);   
 		appPrefs.putBoolean("showMouseWheelSplash",  showMouseWheelSplash);
 		appPrefs.putBoolean("showRedNewBoardArrow",  showRedNewBoardArrow);
 		appPrefs.putBoolean("showRedEditArrow",  showRedEditArrow);
@@ -949,7 +957,7 @@ public class App {
 
 		appPrefs.putInt("mouseWheelDoes",        mouseWheelDoes);
 		
-		appPrefs.putInt("mouseWheelSensitivity", mouseWheelSensitivity);
+		appPrefs.putInt("mouseWheelSensitivity2", mouseWheelSensitivity);
 		appPrefs.putBoolean("mouseWheelInverted",    mouseWheelInverted);
 		appPrefs.putInt("seconds_between_bbo_call_attempts", seconds_between_bbo_call_attempts);
 
@@ -1084,15 +1092,14 @@ public class App {
 		// App.pbnAutoEnter = false;
 
 		App.ddsDeal = null;
-		// System.out.println(" App.setMode    ddsDeal  set to null");
+		// System.out.println(" App.setMode ddsDeal set to null");
 
 		int oldMode = mode;
 
 		if (oldMode == Aaa.EDIT_BIDDING) {
 			if (newMode == Aaa.NORMAL_ACTIVE) {
 				; // do nothing
-			}
-			else {
+			} else {
 				App.deal.finishBiddingIfIncomplete();
 			}
 		}
@@ -1226,7 +1233,8 @@ public class App {
 			return true;
 		}
 
-		if ((mode == Aaa.NORMAL_ACTIVE) && App.deal.isFinished() || ((mode == Aaa.REVIEW_BIDDING || mode == Aaa.REVIEW_PLAY) && localShowHidden)) {
+		if ((mode == Aaa.NORMAL_ACTIVE) && App.deal.isFinished()
+				|| ((mode == Aaa.REVIEW_BIDDING || mode == Aaa.REVIEW_PLAY) && localShowHidden)) {
 			return true;
 		}
 
@@ -1274,8 +1282,10 @@ public class App {
 
 		if (compass.v == dummy) {
 			int RHO = (declarer + 3) % 4;
-			if ((App.mg.lin.linType == Lin.SimpleDealVirgin) && (youSeat == declarer || youSeat == RHO) && App.youAutoplayAlways) {
-				return App.isVmode_InsideADeal(); // we need to see the full two hands before play starts (unless we are a tutorial)
+			if ((App.mg.lin.linType == Lin.SimpleDealVirgin) && (youSeat == declarer || youSeat == RHO)
+					&& App.youAutoplayAlways) {
+				return App.isVmode_InsideADeal(); // we need to see the full two hands before play starts (unless we are
+													// a tutorial)
 			}
 
 			if (App.isMode(Aaa.REVIEW_BIDDING)) {
@@ -1284,7 +1294,8 @@ public class App {
 
 			boolean partial_deal = (App.deal.countOrigCards() < 52);
 
-			if ((partial_deal == false) && App.isMode(Aaa.REVIEW_PLAY) && App.isVmode_InsideADeal() && (App.reviewCard == 0) && (App.reviewTrick == 0)) {
+			if ((partial_deal == false) && App.isMode(Aaa.REVIEW_PLAY) && App.isVmode_InsideADeal()
+					&& (App.reviewCard == 0) && (App.reviewTrick == 0)) {
 				return false;
 			}
 
@@ -1301,7 +1312,8 @@ public class App {
 	static public boolean isAutoPlay(Dir compass) {
 		// ========================================================================
 
-		if (isVmode_Tutorial() || (mode == Aaa.EDIT_HANDS) || (mode == Aaa.EDIT_BIDDING) || (mode == Aaa.EDIT_PLAY) || !App.deal.isPlaying()) {
+		if (isVmode_Tutorial() || (mode == Aaa.EDIT_HANDS) || (mode == Aaa.EDIT_BIDDING) || (mode == Aaa.EDIT_PLAY)
+				|| !App.deal.isPlaying()) {
 			return false;
 		}
 
@@ -1330,7 +1342,8 @@ public class App {
 	static public boolean isAutoBid(Dir compass) {
 		// ========================================================================
 
-		if ((mode == Aaa.EDIT_HANDS) || (mode == Aaa.EDIT_BIDDING) || (mode == Aaa.EDIT_PLAY) || !App.deal.isBidding()) {
+		if ((mode == Aaa.EDIT_HANDS) || (mode == Aaa.EDIT_BIDDING) || (mode == Aaa.EDIT_PLAY)
+				|| !App.deal.isBidding()) {
 			return false;
 		}
 
@@ -1367,8 +1380,7 @@ public class App {
 		if (App.mg.lin != null) {
 			if (!App.dlaeActive && App.deal.youSeatInLoadedLin) {
 				; // the youSeatHint was preset at (lin) load time
-			}
-			else {
+			} else {
 				if (App.dlaeActive) {
 					App.deal.youSeatHint = App.deal.contractCompass.rotate(App.dlaeValue - 2);
 				}
@@ -1383,11 +1395,9 @@ public class App {
 
 		if (App.mg.lin.linType == Lin.SimpleDealVirgin) {
 			App.setMode(Aaa.NORMAL_ACTIVE); // We will start in bidding or playing (if there is a pre set contract)
-		}
-		else if (App.deal.isBidding() || App.reviewFromPlay == false) {
+		} else if (App.deal.isBidding() || App.reviewFromPlay == false) {
 			App.setMode(Aaa.REVIEW_BIDDING);
-		}
-		else {
+		} else {
 			App.setMode(Aaa.REVIEW_PLAY);
 			if ((App.deal.countCardsPlayed() > 0) && App.showOpeningLead && !App.deal.suppress_autoshow_opening_lead) {
 				App.reviewCard = 1; // We like to show the first lead if there is one
@@ -1410,12 +1420,10 @@ public class App {
 				// do we need to start a play timer ?
 				App.gbp.c1_1__tfdp.clearAllCardSuggestions();
 				App.gbp.c1_1__tfdp.makeCardSuggestions(); // for the "test" file if loaded
-			}
-			else if (App.deal.isBidding()) {
+			} else if (App.deal.isBidding()) {
 				// do we need to start the bidding timer ?
 			}
-		}
-		else {
+		} else {
 			if (!App.dealEnteredOnce) {
 				App.dealEnteredOnce = true;
 				App.frame.executeCmd("rightPanelPrefs2_KibSeat");
@@ -1441,8 +1449,7 @@ public class App {
 			App.deal = deal;
 			App.switchToDeal(deal);
 
-		}
-		else if (App.mg.lin.linType == Lin.SimpleDealSingle) {
+		} else if (App.mg.lin.linType == Lin.SimpleDealSingle) {
 			App.youSeatHint = Dir.South;
 
 			App.setMode(Aaa.NORMAL_ACTIVE); // should this happen elsewhere !!! ?
@@ -1457,8 +1464,7 @@ public class App {
 				}
 			}
 
-		}
-		else { // we are a Tutorial mode (including vuGraph) or Other
+		} else { // we are a Tutorial mode (including vuGraph) or Other
 			App.youSeatHint = Dir.South;
 
 			App.localShowHidden = false;
@@ -1624,8 +1630,10 @@ public class App {
 		// this changes the co-ords if the window is not clearly on the main screen
 		int sideMinOverlap = 100;
 		boolean canBeSeen = false;
-		Rectangle aaBridgeInnerTop = new Rectangle(App.frameLocationX + sideMinOverlap, App.frameLocationY + 200, App.frameWidth - (2 * sideMinOverlap), 2);
-		Rectangle aaBridgeInnerBot = new Rectangle(App.frameLocationX + sideMinOverlap, App.frameLocationY + 12, App.frameWidth - (2 * sideMinOverlap), 2);
+		Rectangle aaBridgeInnerTop = new Rectangle(App.frameLocationX + sideMinOverlap, App.frameLocationY + 200,
+				App.frameWidth - (2 * sideMinOverlap), 2);
+		Rectangle aaBridgeInnerBot = new Rectangle(App.frameLocationX + sideMinOverlap, App.frameLocationY + 12,
+				App.frameWidth - (2 * sideMinOverlap), 2);
 		GraphicsDevice[] gs = GraphicsEnvironment.getLocalGraphicsEnvironment().getScreenDevices();
 		for (int j = 0; j < gs.length; j++) {
 			GraphicsConfiguration[] gc = gs[j].getConfigurations();
@@ -1745,13 +1753,17 @@ public class App {
 	public static MruCollection mruCollection = new MruCollection();
 
 	public static Boolean runningInJar = false; // set at boot time
-	public static String thisAppBaseFolder = ""; // set at boot time only one of these two can be set EXCEPT when using ghost jar
-	public static String thisAppBaseJar = ""; // set at boot time only one of these two can be set EXCEPT when using ghost jar
+	public static String thisAppBaseFolder = ""; // set at boot time only one of these two can be set EXCEPT when using
+													// ghost jar
+	public static String thisAppBaseJar = ""; // set at boot time only one of these two can be set EXCEPT when using
+												// ghost jar
 	public static String thisAppBaseJarIncPath = "";
 	public static String thisAppBaseJarIncPath_orig = "";
 
-	public static boolean debug_using_ghost_jar = false; // set true by having _aaBridge_d__debug_using_ghost_jar.txt etc
+	public static boolean debug_using_ghost_jar = false; // set true by having _aaBridge_d__debug_using_ghost_jar.txt
+															// etc
 	public static String java_info = "";
+	public static boolean oracle_java = false;
 	public static JMenuItem menuItemPollDLF;
 	public static boolean pollDownloadsFolder = true;
 	public static boolean poller_boss = false;

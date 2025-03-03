@@ -26,6 +26,7 @@ import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URI;
 import java.net.URLDecoder;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -1602,7 +1603,7 @@ public class MassGi_utils {
 		int resp;
 
 		try {
-			URL url = new URL(origUrl);
+			URL url = new URI(origUrl).toURL();
 			// System.out.println( "orignal url: " + origUrl );
 
 			// We know that this always fails with tiny.cc so we won't bother
@@ -1673,7 +1674,7 @@ public class MassGi_utils {
 		try {
 			StringBuilder sb = new StringBuilder();
 
-			URL url = new URL(linUrl);
+			URL url = new URI(linUrl).toURL();
 			BufferedReader in;
 			in = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"));
 			String str;
@@ -1684,7 +1685,7 @@ public class MassGi_utils {
 
 			return saveStringAsLinFile(sb.toString(), info);
 
-		} catch (IOException e) {
+		} catch (Exception e) {
 			return "";
 		}
 	}
@@ -1697,7 +1698,7 @@ public class MassGi_utils {
 		try {
 			StringBuilder sb = new StringBuilder();
 
-			URL url = new URL(linUrl);
+			URL url = new URI(linUrl).toURL();
 			BufferedReader in;
 			in = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"));
 			String str;
@@ -1708,7 +1709,7 @@ public class MassGi_utils {
 
 			return sb.toString();
 
-		} catch (IOException e) {
+		} catch (Exception e) {
 			return "";
 		}
 	}

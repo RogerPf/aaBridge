@@ -21,7 +21,7 @@ public class playTracePBN extends Structure {
 		super();
 	}
 
-	protected List<?> getFieldOrder() {
+	protected List<String> getFieldOrder() {
 		return Arrays.asList("number", "cards");
 	}
 

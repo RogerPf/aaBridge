@@ -10,15 +10,14 @@
  ******************************************************************************/
 package com.rogerpf.aabridge.controller;
 
-import java.applet.Applet;
-
 import com.rogerpf.aabridge.view.AaaOuterFrame;
 
 /**
  */
 
-public class AaBridge extends Applet {
+public class AaBridge extends App {
 
+	@SuppressWarnings("unused")
 	private static final long serialVersionUID = 1L;
 
 	public static void main(String[] args) {

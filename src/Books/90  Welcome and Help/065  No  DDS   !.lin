@@ -1,0 +1,74 @@
+%%
+%% No DDS !
+%% Last edited   2025 Feb 24
+%%%% by Roger Pfister
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<<--INSERT-START-->>=005__Common_Header.ins
+%%
+fh|v24|        v-24     very small
+fh|s28|        s-28     small
+fh|j32|        j-32
+fh|k35|        k-35
+fh|e37|        e-37
+fh|t40|        t-40     title
+fh|n42|        n-42
+fh|p45|        p-45
+fh|b50|        b-50     big
+fh|g60|        g-60     graphSuit 
+fh|m64|        m-64     mastHead
+fh|c70|        c-70     chapTitle
+%
+fh|x33|ff|xCourier|          FONT   x-33-Courier
+%
+cr|a230|cg|a040|cb|a130|     a  action
+cr|b100|cg|b100|cb|b255|     b  light Blue
+cr|f200|cg|f255|cb|f255|     f  fake-button
+cr|h000|cg|h095|cb|h169|     h  h-highlight
+cr|p255|cg|p000|cb|p255|     p  pink    fake pink button
+cr|u160|cg|u040|cb|u200|     u  pUrple
+cr|y170|cg|y190|cb|y255|     y  youtube border
+%
+bt||
+fp|b-50|at|^^^^^a   @s @h @d @c  ^v     @c @d @h @s|fp||
+at|^b@2^z@3^^|
+ht|f|        
+%%
+<<--INSERT-END**-->>=005__Common_Header.ins
+
+
+qx|DDS|
+mn|No  DDS  (Double Dummy Solver)   !|
+n^|8|
+at|Click the ^*b AutoPlay ^*n tab, top of the  right-hand  column.  You should then see, near the top, the words|
+n#|4|
+lg|k|
+
+at|
+|cp|green|fp|k-35|at|^cDDS - Double Dummy Solver |cp||fp||at|   ^k under that you should see
+|cp|green|fp|e-37|at|^c  ^*bDDS Available^*n| |cp||fp||at|   ^k if so then   ^*ball is well^*n.        If instead you see see
+|cp|red|fp|e-37|at|^c  ^*bDDS not Available  ^*n| |cp||fp||at|   ^k there is a small problem.
+|n#|6|lg||fp|t|at|Solution|fp||at|
+|n^|a|lg|f|at|^c@2
+To get the best out of aaBridge you need the DDS to be available.  Try installing|fp|t-40|at|^*b Java 8^*n|fp||at| from Oracle.
+At the time of writing (early 2025) the link below is a good place to look.|
+lg|k|at|
+^c    ^*Hhttps://www.java.com/en/download/manual.jsp^*n       links directly to Oracle Java 8.
+|lg|f|n#|4|at|To see which Java is powering aaBridge ^*b click ^*n on the ^*b Show ^*n tab, top of the  right-hand  column.
+Next look for |cp|green|at|^*b Java Version ^*n|cp||at| lower in that column. It also shows your H/W type e.g. |cp|blue|at|^*bintel64^*n|cp||at|  or  |cp|red|at|^*baarch^*n|cp||at| (ARM).
+|n#|8|at|The above link provides ^*bJava 8^*n for all Windows and all Macs and MOST Linux OSes. 
+The ^*bONE and ONLY^*n exception is that if you are running ^*bLINUX^*n on |cp|red|at|^*bARM^*n|cp||at| hardware. e.g. Mac M Chips or the Snapdragon processor then you will need a native Java 8 for that Linux OS. |
+lg|m|at|
+For example - if you are running ^*b Ubuntu 24 ^*n the terminal command
+       ^*bsudo apt-get install openjdk-8-jdk ^*n
+is what you need.
+
+^bNote - Newer Java's (the latest is v23) will also run the DDS just fine, (but some ^*bLinux^*n's, may have issues).|
+
+
+
+qx||
+ht|z|n#|9|cp||at|^x   ^*b End ^*n|
+pg| ***** 5 ***** |
+
+

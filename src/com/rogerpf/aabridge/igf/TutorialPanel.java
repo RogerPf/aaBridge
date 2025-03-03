@@ -191,13 +191,13 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 	public void action_lg(GraInfo gi) { // line gap (line Spacing)
 		// =============================================================================
 		if (gi.numb == 10) {
-			lineSpacing_multiplier = App.now_always_one(); // trying to avoid any rounding the reset case.
+			lineSpacing_multiplier = 1; // trying to avoid any rounding the reset case.
 		}
 		else if (gi.numb <= 0) {
 			lineSpacing_multiplier = 0;
 		}
 		else {
-			lineSpacing_multiplier = ((10 * App.now_always_one() + (float) gi.numb)) / 20f; // 9 = 90% etc 0 = stay on same line
+			lineSpacing_multiplier = (10f + (float) gi.numb) / 20f; // 9 = 90% etc 0 = stay on same line
 		}
 	}
 
@@ -397,9 +397,9 @@ public class TutorialPanel extends ConsumePanel implements MouseListener, MouseM
 		height = (float) wh.height;
 
 		scaleFrac = (width / LIN_STANDARD_WIDTH) * 100 / App.ratioFiddle;
-		fontScaleFrac = FONT_SCALE_FRAC * scaleFrac;
+		fontScaleFrac = FONT_SCALE_FRAC * scaleFrac * 1000 / App.fontShrink;
 		heightOfCurFontFrac = LINE_SEPARTATION_FRAC; // no mult this is a const // * scaleFrac;
-		lineSpacing_multiplier = App.now_always_one();
+		lineSpacing_multiplier = 1;
 		heightOfCurFont = 0;
 		maxHeightOnCurLine = 0; // set later by calc
 		nonFont_on_this_line = false;

@@ -110,6 +110,7 @@ class AaRopPrefs6_RedHints extends ClickPanel implements ItemListener, ActionLis
 
 		if (source == applyDefaults) {
 
+			App.showMouseWheelSpl_count = 0;
 			App.showMouseWheelSplash = true;
 			App.showBidPlayMsgs = true;
 			App.showRedNewBoardArrow = true;
@@ -143,6 +144,7 @@ class AaRopPrefs6_RedHints extends ClickPanel implements ItemListener, ActionLis
 		// @formatter:off
 		if      (source == showMouseWheelSplash) {
             App.showMouseWheelSplash = b;
+            App.showMouseWheelSpl_count = b ? 0 : 4;
         }
 		else if (source == showRedEditArrow) {
             App.showRedEditArrow = b;
